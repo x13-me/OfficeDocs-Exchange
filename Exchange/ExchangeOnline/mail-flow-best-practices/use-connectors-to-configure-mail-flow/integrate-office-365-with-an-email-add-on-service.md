@@ -236,7 +236,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
 ## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Office 365
 
-1. Go to the Microsoft 365 admin center at [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), and then click **Setup** \> **Domains**, and then click **Add domain**.
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), click **Setup** \> **Domains**, and then click **Add domain**.
 
    ![In the admin center, go to Setup \> Domains to add the certificate domain as an accepted domain.](../../media/5d4db406-5970-45f4-8955-2bc90d087b6f.png)
 

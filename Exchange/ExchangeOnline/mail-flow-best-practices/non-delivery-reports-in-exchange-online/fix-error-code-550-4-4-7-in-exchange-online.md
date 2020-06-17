@@ -69,7 +69,7 @@ If the admins in the destination domain determine the problem isn't on their end
 
 Here are some steps for you to try:
 
-- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://support.office.com/article/854b6b2b-0255-4089-8019-b765cff70377.aspx).
+- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/dns-basics).
 
 - **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
@@ -113,7 +113,7 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

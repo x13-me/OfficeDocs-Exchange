@@ -21,7 +21,7 @@ The Exchange admin center (EAC) is the web-based management console in Microsoft
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://technet.microsoft.com/library/jj200743\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
 
@@ -45,7 +45,7 @@ The section describes the user interface elements that are common across the EAC
 
 ## Cross-premises navigation
 
-The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581\(v=exchg.150\)).
+The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 ## Feature pane
 
@@ -113,7 +113,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 <tr class="even">
 <td><p><img src="images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif" title="Search icon" alt="Search icon" /></p></td>
 <td><p>Search</p></td>
-<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find. Check out <a href="https://technet.microsoft.com/library/jj156853(v=exchg.150)">[Recipients &gt; ] Advanced search</a> for more search options.</p></td>
+<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find.</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="Refresh Icon" alt="Refresh Icon" /></p></td>

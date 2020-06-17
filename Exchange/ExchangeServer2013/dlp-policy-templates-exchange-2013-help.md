@@ -38,9 +38,7 @@ You can create a DLP policy template file apart from Exchange that meets the spe
 
 You can incorporate DLP detection capabilities with traditional transport rules without creating a new DLP policy. If you have created a complex set of rules in a previous version of Exchange, and you want to duplicate them or add sensitive information detection in Exchange 2013, then you can use the transport rules editor in the Exchange admin center or the Exchange management shell to incorporate these two features. To get started with this, see the following information:
 
-- [Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
-
-- [Transport rules](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+- [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
 - [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 

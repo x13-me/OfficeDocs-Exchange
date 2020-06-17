@@ -66,9 +66,9 @@ This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ p
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
-- [WhatIf, Confirm, and ValidateOnly Switches](https://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx)
+- [WhatIf, Confirm, and ValidateOnly Switches](https://docs.microsoft.com/exchange/whatif-confirm-and-validateonly-switches-exchange-2013-help)
 
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 

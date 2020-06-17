@@ -26,7 +26,7 @@ Looking for other management tasks related to managing permissions? Check out [P
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Assignment policies" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -138,7 +138,7 @@ This procedure makes use of pipelining and the **Format-Table** cmdlet. For more
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
 To return a list of all assignment policies in your organization, use the following command.
 
@@ -168,7 +168,7 @@ This procedure makes use of pipelining and the **Format-List** cmdlet. For more 
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
 To view the details of a specific assignment policy, use the following syntax.
 
@@ -192,7 +192,7 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
 This example returns the default assignment policy.
 
@@ -210,7 +210,7 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
 Use the following syntax.
 
@@ -298,7 +298,7 @@ If you don't want end users to have permissions to manage certain features of th
 
 You can remove roles from assignment policies by retrieving the associated management role assignment using the **Get-ManagementRoleAssignment** cmdlet and then piping the role assignment returned to the **Remove-ManagementRoleAssignment** cmdlet.
 
-For more information about regular and delegating role assignments, see [Understanding Management Role Assignments](https://technet.microsoft.com/library/1dc33dd6-52fb-4852-a5ce-027bc73e1d8f.aspx).
+For more information about regular and delegating role assignments, see [Understanding Management Role Assignments](https://docs.microsoft.com/exchange/understanding-management-role-assignments-exchange-2013-help).
 
 This procedure uses pipelining. For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 

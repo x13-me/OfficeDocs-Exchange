@@ -43,9 +43,9 @@ Exchange 2016, SharePoint Server 2016, and Skype for Business Server use the sta
 
 With Exchange 2016 and Lync Server 2013 deployed in an organization, you can configure Skype for Business to archive instant message and on-line meeting content, including shared presentations or documents in the user's Exchange 2016 mailbox. Archiving Skype for Business data in Exchange 2016 allows you to apply retention policies to the data. Archived Skype for Business content also surfaces in any eDiscovery searches. For more details about Skype for Business archiving and how to deploy it, see the following topics:
 
-- [Planning for Archiving](https://go.microsoft.com/fwlink/p/?LinkId=265005)
+- [Planning for Archiving](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/archiving/archiving)
 
-- [Deploying Archiving](https://go.microsoft.com/fwlink/p/?LinkId=265006)
+- [Deploying Archiving](https://docs.microsoft.com/SkypeForBusiness/deploy/deploy-archiving/deploy-archiving)
 
 ## Preserve documents in SharePoint Server 2016
 
@@ -59,9 +59,9 @@ For more details on eDiscovery see the following topics:
 
 - [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md)
 
-- [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
+- [Configure eDiscovery in SharePoint Server](https://docs.microsoft.com/SharePoint/governance/configure-ediscovery-0)
 
-- [What's new in eDiscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkId=275091)
+- [What's new in eDiscovery in SharePoint Server](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2016)
 
 - [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help)
 
@@ -77,7 +77,7 @@ SharePoint Server 2016 provides the eDiscovery Center to help you locate and the
 
 If your organization adheres to legal discovery requirements, that is, anything related to organizational policy, compliance, or lawsuits, In-Place eDiscovery in Exchange Server 2016 can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 
-When you configure server-to-server authentication betweenExchange 2016 and SharePoint Server 2016 in on-premises deployments, administrators and compliance officers can use the eDiscovery Center. For more information, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). In hybrid deployments, for more information see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://technet.microsoft.com/library/b069f8db-fbe1-4047-ad97-d00172ee6a12.aspx)
+When you configure server-to-server authentication betweenExchange 2016 and SharePoint Server 2016 in on-premises deployments, administrators and compliance officers can use the eDiscovery Center. For more information, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). In hybrid deployments, for more information see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)
 
 You can identify and reduce your data set by using keyword syntax, property restrictions, and refinements. The query experience focuses on statistics for individual sources and query fragments to help you make decisions about the content you're searching across. You can also preview SharePoint 2016 and Exchange 2016 content to confirm that you have identified the right set of results.
 
@@ -142,7 +142,7 @@ You can provision and manage site mailboxes from SharePoint Server 2016. For mor
 
 - [Site Mailboxes](https://docs.microsoft.com/exchange/site-mailboxes-exchange-2013-help)
 
-- [Configure email integration for a SharePoint Server farm](hhttps://docs.microsoft.com/SharePoint/administration/configure-email-integration)
+- [Configure email integration for a SharePoint Server farm](https://docs.microsoft.com/SharePoint/administration/configure-email-integration)
 
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>
@@ -157,7 +157,7 @@ A user's contacts are automatically migrated to the Exchange 2016 server when th
 
 - Logs in by using a Skype for Business rich client.
 
-After you have installed SharePoint Server 2016 in an environment with Exchange 2016 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from SharePoint 2016 or Lync Server 2013 to Exchange 2016. For details, see [Planning and Deploying Unified Contact Store](https://go.microsoft.com/fwlink/p/?LinkId=275092).
+After you have installed SharePoint Server 2016 in an environment with Exchange 2016 and you have configured server-to-server authentication between the two, users can initiate the migration of existing contacts from SharePoint 2016 or Skype for Business Server 2015 to Exchange 2016. For details, see [Planning and Deploying Unified Contact Store](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/integrate-with-exchange/unified-contact-store).
 
 ## Manage access to high-resolution user photos
 <a name="BKMK_OAuth"> </a>
