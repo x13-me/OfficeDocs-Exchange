@@ -64,7 +64,7 @@ The SCP object contains the authoritative list of Autodiscover service URLs for 
 > [!IMPORTANT]
 > Before you run the <STRONG>Set-ClientAccessServer</STRONG> cmdlet, make sure the Authenticated Users account on the Client Access server has Read permissions for the SCP object. If users don't have the correct permissions, they can't search for and read items.
 
-For more information about SCP objects, see [Publishing with Service Connection Points](https://go.microsoft.com/fwlink/p/?linkid=72744).
+For more information about SCP objects, see [Publishing with Service Connection Points](https://docs.microsoft.com/windows/win32/ad/publishing-with-service-connection-points).
 
 For external access, or using DNS, the client locates the Autodiscover service on the Internet by using the primary SMTP domain address from the user's email address.
 
