@@ -114,7 +114,7 @@ Additional information you might want to know
 
 - You need to be assigned permissions for managing EAC. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -157,24 +157,24 @@ When you are setting up Exchange 2013 SP1, AD FS, and Web Application Proxy, fol
 
 - **Web Application Proxy**
 
-     - SSL certificate used for service communications
+  - SSL certificate used for service communications
 
-        - Subject name: **owa.contoso.com**
+    - Subject name: **owa.contoso.com**
 
-        - Subject Alternative Name (SAN): None
+    - Subject Alternative Name (SAN): None
 
-   > [!NOTE]
-   > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
+    > [!NOTE]
+    > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
 
-     - AD FS Proxy SSL certificate
+    - AD FS Proxy SSL certificate
 
-        - Subject name: **adfs.contoso.com** (AD FS deployment name)
+      - Subject name: **adfs.contoso.com** (AD FS deployment name)
 
-        - Subject Alternative Name (SAN): None
+      - Subject Alternative Name (SAN): None
 
-     - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
+    - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
 
-See the certificate requirements section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/?linkid=392699) for more information about certificates.
+See the certificate requirements section in [AD FS Requirements](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) for more information about certificates.
 
 > [!NOTE]
 > An SSL encryption certificate is still needed for Outlook Web App and EAC even if you have an SSL certificate for AD FS. The SSL certificate is used on the OWA and ECP virtual directories.
@@ -565,7 +565,7 @@ To test the AD FS claims for Outlook Web App:
 
 - In the browser window, if you get a certificate error, just continue on to the Outlook Web App website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-- Type your user name (domain\\user) and password, and then click **Sign in**.
+- Type your username (domain\\user) and password, and then click **Sign in**.
 
 Outlook Web App will load in the window.
 
@@ -575,7 +575,7 @@ To test the AD FS claims for EAC:
 
 2. In the browser window, if you get a certificate error, just continue on to the ECP website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-3. Type your user name (domain\\user) and password, and then click **Sign in**.
+3. Type your username (domain\\user) and password, and then click **Sign in**.
 
 4. EAC should load in the window.
 
@@ -591,7 +591,7 @@ For on-premises Exchange 2013 SP1 deployments, deploying and configuring Active 
 
 - Something only the user is (for example, a biometric characteristic, such as a fingerprint)
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392707) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
 
 In the Windows Server 2012 R2 AD FS role service, the federation service functions as a security token service, provides the security tokens that are used with claims, and gives you the ability to support multifactor authentication. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://go.microsoft.com/fwlink/?linkid=392709).
 

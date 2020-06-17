@@ -53,7 +53,7 @@ Once the app is installed, users can follow these steps to add their corporate e
 
 - [Set up email in the Outlook for Android app](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872)
 
-- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890)
+- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)
 
 > [!IMPORTANT]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
@@ -121,7 +121,7 @@ If you don't plan to leverage the Enterprise Mobility + Security suite, you can 
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+An global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
 1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
 

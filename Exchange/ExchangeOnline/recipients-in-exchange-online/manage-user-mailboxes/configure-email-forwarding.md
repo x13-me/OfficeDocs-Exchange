@@ -31,7 +31,7 @@ If your organization uses an on-premises Exchange or hybrid Exchange environment
 
 You can use the Exchange admin center (EAC) set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -69,7 +69,7 @@ To make sure that you've successfully configured email forwarding, do one of the
 
 This topic is for admins. If you want to forward your own email to another recipient, check out the following topics:
 
-- [Forward email to another email account](https://go.microsoft.com/fwlink/p/?LinkId=510866)
+- [Forward email to another email account](https://support.microsoft.com/office/ecafbc06-e812-4b9e-a7af-5074a9c7abd0)
 
 - [Manage email messages by using rules](https://go.microsoft.com/fwlink/p/?LinkId=510869)
 
