@@ -140,7 +140,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
    - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
 
      ```console
-     net stop was /y
+     net stop w3svc /y
      ```
 
      ```console
