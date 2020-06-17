@@ -187,7 +187,7 @@ For additional management tasks related to federation, see [Federation procedure
 
    Remember, any domain or subdomain that you add to the federation trust requires a proof of domain ownership TXT record,
 
-For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/New-ExchangeCertificate), [New-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/New-FederationTrust), [Get-FederatedDomainProof](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederatedDomainProof), [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederationTrust), [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederatedOrganizationIdentifier), and [Add-FederatedDomain](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Add-FederatedDomain).
+For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/New-ExchangeCertificate), [New-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/New-FederationTrust), [Get-FederatedDomainProof](https://docs.microsoft.com/powershell/module/exchange/Get-FederatedDomainProof), [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Set-FederationTrust), [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/Set-FederatedOrganizationIdentifier), and [Add-FederatedDomain](https://docs.microsoft.com/powershell/module/exchange/Add-FederatedDomain).
 
 ## How do you know this worked?
 
@@ -207,7 +207,7 @@ To further verify that you have successfully created and configured the federati
    Get-FederationInformation -DomainName <PrimarySharedDomain>
    ```
 
-For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederationTrust) and [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Get-FederationInformation).
+For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Get-FederationTrust) and [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/Get-FederationInformation).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

@@ -115,10 +115,10 @@ Remove-SiteMailboxProvisioningPolicy -Identity Default
 
 For detailed syntax and parameter information, see the following topics:
 
-[New-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/New-SiteMailboxProvisioningPolicy)
+[New-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/New-SiteMailboxProvisioningPolicy)
 
-[Get-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-SiteMailboxProvisioningPolicy)
+[Get-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-SiteMailboxProvisioningPolicy)
 
-[Set-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Set-SiteMailboxProvisioningPolicy)
+[Set-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-SiteMailboxProvisioningPolicy)
 
-[Remove-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Remove-SiteMailboxProvisioningPolicy)
+[Remove-SiteMailboxProvisioningPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-SiteMailboxProvisioningPolicy)
