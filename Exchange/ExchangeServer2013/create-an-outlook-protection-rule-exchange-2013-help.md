@@ -27,7 +27,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-- You must have an [AD RMS](https://technet.microsoft.com/library/hh831364.aspx) server deployed in the same Active Directory forest as your server running Microsoft Exchange Server 2013.
+- You must have an [AD RMS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)x) server deployed in the same Active Directory forest as your server running Microsoft Exchange Server 2013.
 
 - If you configure Outlook protection rules to IRM-protect messages, consider enabling transport decryption to allow transport agents, including the Transport Rules agent, to decrypt and access the message. If you use journaling, you should also consider enabling journal report decryption to allow the Journaling agent to save an unencrypted copy of the message in the journal report. For more information, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
 

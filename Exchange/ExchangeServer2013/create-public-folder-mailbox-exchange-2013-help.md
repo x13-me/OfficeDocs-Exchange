@@ -20,7 +20,7 @@ Before you can create a public folder, you must first create a public folder mai
 > [!NOTE]
 > For more information about the storage quotas and limits for public folders, see [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 
-For additional management tasks related to public folders in Exchange 2013, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
+For additional management tasks related to public folders in Exchange 2013, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -28,9 +28,9 @@ For additional management tasks related to public folders in Exchange 2013, see 
 
 - Exchange 2013 public folders and public folders on legacy Exchange servers can't exist in the same organization. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
 
-  Before you can create public folders in Exchange 2013, you need to migrate your legacy public folders to Exchange 2013. To do this, follow the steps in [Migrate Public Folders to Exchange 2013 From Previous Versions](https://technet.microsoft.com/library/16773895-e9c3-4013-983f-683e5d14b221.aspx). These steps will show you how to create a public folder mailbox that can be used to store your migrated public folders.
+  Before you can create public folders in Exchange 2013, you need to migrate your legacy public folders to Exchange 2013. To do this, follow the steps in [Migrate Public Folders to Exchange 2013 From Previous Versions](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)). These steps will show you how to create a public folder mailbox that can be used to store your migrated public folders.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

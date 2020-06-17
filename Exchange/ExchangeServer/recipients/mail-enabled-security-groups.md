@@ -18,7 +18,7 @@ manager: serdars
 
 # Manage mail-enabled security groups in Exchange Server
 
-You can use mail-enabled security groups to distribute messages as well as grant access permissions to resources in Exchange and Active Directory. You can create, modify, and remove mail-enabled security groups in the Exchange admin center (EAC) or in the Exchange Management Shell. For more information about mail-enabled security groups, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+You can use mail-enabled security groups to distribute messages as well as grant access permissions to resources in Exchange and Active Directory. You can create, modify, and remove mail-enabled security groups in the Exchange admin center (EAC) or in the Exchange Management Shell. For more information about mail-enabled security groups, see [Recipients](recipients.md).
 
 ## What do you need to know before you begin?
 
@@ -28,7 +28,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 - For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - If you add users to or remove users from a mail-enabled security group, the users need to log out and log in for the permission changes to take effect.
 
@@ -62,7 +62,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
    - **\* Display name**: This value should help users immediately recognize what the group is used for. This name appears in the global address list, on the To: line when email is sent to this group, and in the **Groups** list in the EAC. The maximum length in the EAC is 64 characters, and the value must be unique.
 
      > [!NOTE]
-     > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](https://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](https://technet.microsoft.com/library/9eb23fc9-3f59-4d09-9077-85c89a051ee0.aspx).
+     > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](https://docs.microsoft.com/Exchange/create-group-naming-policy-exchange-2013-help). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](https://docs.microsoft.com/Exchange/override-group-naming-policy-exchange-2013-help).
 
    - **\* Alias**: This value is used to generate the primary email address (_\<alias\>_@ _\<domain_\>). This value can contain letters, numbers and the characters !, #, $, %, &, ', \*, +, -, /, =, ?, ^, _, `, {, |, } and ~. Periods (.) are allowed, but each period must be surrounded by other valid characters (for example, help.desk). Unicode characters from U+00A1 to U+00FF are also allowed, but are mapped to best-fit US-ASCII text characters in the primary email address (for example, U+00F6 (ö) is changed to oe). The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
 
