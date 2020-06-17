@@ -34,7 +34,7 @@ As part of a Microsoft 365 or Office 365 deployment, you can migrate the content
 - Your on-premises Exchange organization has fewer than 2,000 mailboxes.
 
     > [!NOTE]
-    > Even though cutover migration supports moving up to 2000 mailboxes, due to length of time it takes to create and migrate 2000 users, it is more reasonable to migrate 150 users or less.
+    > Even though cutover migration supports moving up to 2000 mailboxes, due to length of time it takes to create and migrate 2000 users, it is more reasonable to migrate 150 users or fewer.
 
 ## Plan for migration
 
