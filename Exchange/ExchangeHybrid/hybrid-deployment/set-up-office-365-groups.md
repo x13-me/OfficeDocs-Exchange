@@ -56,7 +56,7 @@ Before you start, make sure that you've done the following:
 
 4. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**.
 
-5. Select **Group writeback (Preview)** and then click **Next**.
+5. Select **Group writeback** and then click **Next**.
 
 6. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
 
@@ -90,10 +90,10 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
 
    |**DNS record name**|**DNS record type**|**DNS record value**|
    |:-----|:-----|:-----|
-   |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1<sup/>|
+   |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group.
@@ -146,7 +146,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 ## Known issues
 <a name="KnownIssues"> </a>
 
-- **Older versions of Azure AD connect won't install DSACLS.exe**: You need to install RSAT or the lastest Version of Azure AD Connect to manage permissions on groups (if required).
+- **Older versions of Azure AD connect won't install DSACLS.exe**: You need to install RSAT or the latest Version of Azure AD Connect to manage permissions on groups (if required).
 
 - **Groups don't appear for mailboxes moved to Office 365**: When a user is moved from your on-premises Exchange organization to Office 365, groups won't appear in the left navigation pane in Outlook or Outlook on the web. To fix the issue, remove the mailbox from any groups of which it is a member, and re-add it to each group.
 
@@ -170,7 +170,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **On-premises users can't become an administrator of a group**: On-premises users can't access the group space directly. Because of this, they can't be added as an administrator of a group.
 
-- **Delivery of external mail to a group can fail if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows mails from external senders.
+- **Delivery of external mail to a group fails if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows email from external senders.
 
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as an Office 365 Group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 

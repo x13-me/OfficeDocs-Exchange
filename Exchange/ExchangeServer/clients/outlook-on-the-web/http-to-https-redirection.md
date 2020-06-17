@@ -168,7 +168,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 
 ```console
-net stop was /y
+net stop w3svc /y
 ```
 
 ```console
