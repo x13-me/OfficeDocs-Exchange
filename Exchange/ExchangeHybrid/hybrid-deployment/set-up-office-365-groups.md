@@ -96,7 +96,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
    <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
-   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group.
+   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work between users in the on-premises Exchange organization and the Office 365 Group.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
