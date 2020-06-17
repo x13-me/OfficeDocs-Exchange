@@ -219,7 +219,7 @@ Additional Hybrid Agents can be installed for redundancy, simply download the la
 
 6. Select Exchange **Modern Hybrid Topology, Next**.
 
-7. A page will be shown that will provide you with the status of your existing or previously installed agent(s). Make sure the status of the existing agent is accurate before proceeding to the next step. Select Install and additional agent option, **Next**.
+7. A page will be shown that will provide you with the status of your existing or previously installed agent(s). Make sure the status of the existing agent is accurate before proceeding to the next step. Select **Install an additional agent** option, **Next**.
 
    Example:
 
