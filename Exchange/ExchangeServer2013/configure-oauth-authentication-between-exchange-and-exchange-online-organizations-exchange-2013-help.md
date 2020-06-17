@@ -49,7 +49,7 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 ### Step 1: Create the authorization server objects for your Exchange Online organization
 
-For this procedure, you have to specify a verified domain for your Exchange Online organization. It should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.
+For this procedure, you have to specify a verified domain for your Exchange Online organization. It should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred to as *\<your verified domain\>* in the following procedure.
 
 Run the following command in the Exchange Management Shell (Exchange PowerShell) in your on-premises Exchange organization:
 
