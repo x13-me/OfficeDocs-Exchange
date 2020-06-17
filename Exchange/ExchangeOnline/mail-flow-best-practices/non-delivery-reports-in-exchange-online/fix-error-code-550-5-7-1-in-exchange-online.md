@@ -133,17 +133,17 @@ To remove the restriction on the sender's source email system, forward the NDR m
 
 If your domain isn't fully enrolled in Office 365, try the following steps:
 
-- Verify your domain appears as **Active** in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+- Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
 
 - For information about adding your domain to Office 365, see [Domains in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
 
-- To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://go.microsoft.com/fwlink/p/?LinkId=328237).
+- To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
 ### Your domain's MX record has a problem
 
 If you have an incorrect MX record, try the following steps:
 
-1. Check the sender and recipient domains for incorrect or stale MX records by using the **Advanced diagnostics** \> **Exchange Online** test in the [Microsoft Support and Recovery Assistant for Office 365](https://go.microsoft.com/fwlink/p/?linkid=402528). For more information about the Support and Recovery Assistant, see [Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365](https://support.office.com/article/12cd632c-d672-4782-b0ce-beb82b511525.aspx).
+1. Check the sender and recipient domains for incorrect or stale MX records by using the **Advanced diagnostics** \> **Exchange Online** test in the [Microsoft Support and Recovery Assistant for Office 365](https://go.microsoft.com/fwlink/p/?linkid=402528). For more information about the Support and Recovery Assistant, see [About the Microsoft Support and Recovery Assistant](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f).
 
 2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\>_.mail.protection.outlook.com.
 
@@ -187,7 +187,7 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

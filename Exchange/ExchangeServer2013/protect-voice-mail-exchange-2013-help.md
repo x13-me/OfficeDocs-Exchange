@@ -67,7 +67,7 @@ Using the IRM features and Protected Voice Mail, your organization and your user
 
 ## IRM requirements
 
-Before you can implement IRM in Exchange, you must first deploy and configure your AD RMS infrastructure. For detailed information, see [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=199439). To implement IRM to support Protected Voice Mail in your Exchange organization, your deployment must meet the following requirements.
+Before you can implement IRM in Exchange, you must first deploy and configure your AD RMS infrastructure. For detailed information, see [Active Directory Rights Management Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)). To implement IRM to support Protected Voice Mail in your Exchange organization, your deployment must meet the following requirements.
 
 <table>
 <colgroup>

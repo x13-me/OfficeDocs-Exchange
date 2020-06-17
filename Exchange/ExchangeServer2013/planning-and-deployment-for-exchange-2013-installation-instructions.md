@@ -57,7 +57,7 @@ Use the following links to access information to help you plan the deployment of
 
 - [Multi-tenancy in Exchange 2013](multi-tenancy-in-exchange-2013-exchange-2013-help.md): Read this topic to learn more about how you can configure Exchange 2013 to host multiple and discrete organizations or business units that ordinarily don't share email, data, users, global address lists (GALs), or other commonly used Exchange objects.
 
-- [Exchange Development Technologies](https://go.microsoft.com/fwlink/p/?linkid=268448): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
+- [Exchange Development Technologies](https://docs.microsoft.com/exchange/client-developer/exchange-server-development): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
 
 ## Establish a test environment
 
@@ -67,7 +67,7 @@ The test environment will act as your "proof of concept" for your new Exchange 2
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Windows Server 2008 R2 or Windows Server 2012 Hyper-V technologies. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://go.microsoft.com/fwlink/p/?linkid=117704). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
 ## Deploying an installation of Exchange 2013
 
@@ -103,7 +103,7 @@ You can use different types and modes of Exchange 2013 Setup to install and main
 
 ## Exchange editions and versions
 
-Exchange 2013 is available in two server editions: Standard Edition and Enterprise Edition. These are licensing editions that are defined by a product key. For more information, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+Exchange 2013 is available in two server editions: Standard Edition and Enterprise Edition. These are licensing editions that are defined by a product key. For more information, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 ## Types of Exchange Setup
 

@@ -39,7 +39,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 ![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
 
-In-Place eDiscovery uses Keyword Query Language (KQL). Users familiar with KQL can construct powerful search queries to search content indexes. For more information about KQL, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/p/?LinkId=269603).
+In-Place eDiscovery uses Keyword Query Language (KQL). Users familiar with KQL can construct powerful search queries to search content indexes. For more information about KQL, see [Keyword Query Language syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 ## In-Place eDiscovery permissions
 
@@ -72,7 +72,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
     To search for an exact match of a multiple word phrase, you must enclose the phrase in quotation marks. For example, searching for the phrase "plan and competition" returns messages that contain an exact match of the phrase, whereas specifying **plan AND competition** returns messages that contain the words **plan** and **competition** anywhere in the message.
 
-    Exchange Server also supports the Keyword Query Language (KQL) syntax for In-Place eDiscovery searches. For more information about KQL, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/p/?LinkId=269603).
+    Exchange Server also supports the Keyword Query Language (KQL) syntax for In-Place eDiscovery searches. For more information about KQL, see [Keyword Query Language syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
     > [!NOTE]
     > In-Place eDiscovery does not support regular expressions.
@@ -263,7 +263,7 @@ Before you can use eDiscovery Center in SharePoint Server to search Exchange mai
 
 In Exchange Server, the resources In-Place eDiscovery uses are controlled with throttling policies.
 
-The default throttling policy contains the following parameters. You can change the default values to meet your organization's requirements by creating a new throttling policy with an Organization scope.
+The default throttling policy contains the following parameters. You can change the default values to meet your organization's requirements by creating a new throttling policy with an Organization scope and name it as "DiscoveryThrottlingPolicy" only.
 
 |**Parameter**|**Description**|**Default value**|
 |:-----|:-----|:-----|

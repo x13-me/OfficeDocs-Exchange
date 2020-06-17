@@ -153,12 +153,12 @@ Although the **Original message headers** are omitted from this example due to t
 
 - **Received**: These fields can tell you what the path was for the message, and the last hop that generated the delivery status notification if it isn't easy to tell from the `Generating server` value in the NDR.
 
-- **Received-SPF**: If this value is anything other than `pass`, check the Sender Policy Framework (SPF) DNS record for your domain. For more information, see [Add or edit custom DNS records in Office 365](https://support.office.com/article/af00a516-dd39-4eda-af3e-1eaf686c8dc9.aspx).
+- **Received-SPF**: If this value is anything other than `pass`, check the Sender Policy Framework (SPF) DNS record for your domain. For more information, see [Add or edit custom DNS records in Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 ## Still need help with NDRs or other status notifications?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)

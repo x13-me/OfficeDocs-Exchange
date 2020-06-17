@@ -29,7 +29,7 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - When you create mail users in EOP PowerShell, you might encounter throttling. Also, the EOP PowerShell cmdlets use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
@@ -243,6 +243,14 @@ This example creates a mail user for Rene Valdes:
 ```PowerShell
 New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@fabrikam.com -FirstName Rene -LastName Valdes -MicrosoftOnlineServicesID renev@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force)
 ```
+
+For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser).
+
+### Use Exchange Online PowerShell to modify mail users
+
+In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
+
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
 - [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 

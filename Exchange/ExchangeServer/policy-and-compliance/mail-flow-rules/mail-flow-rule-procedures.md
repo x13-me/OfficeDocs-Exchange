@@ -29,7 +29,7 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
 
@@ -44,7 +44,7 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
   - [Use mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
-  - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help)
+  - [Organization-wide disclaimers, signatures, footers, or headers in Exchange Server](signatures.md)
 
   - [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help)
 

@@ -259,7 +259,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange Best Practice Analyzer</p></td>
-<td><p>In Exchange 2010, the Exchange Best Practice Analyzer examined your Exchange deployment and determined whether the configuration was in line with Microsoft best practices. In Exchange 2013, the Exchange Best Practice Analyzer has been replaced by the <a href="https://go.microsoft.com/fwlink/p/?linkid=391077">Office 365 Best Practices Analyzer for Exchange Server 2013</a>.</p></td>
+<td><p>In Exchange 2010, the Exchange Best Practice Analyzer examined your Exchange deployment and determined whether the configuration was in line with Microsoft best practices. In Exchange 2013, the Exchange Best Practice Analyzer has been replaced by the <a href="https://techcommunity.microsoft.com/t5/exchange-team-blog/beta-of-microsoft-office-365-best-practices-analyzer-for/ba-p/591294">Office 365 Best Practices Analyzer for Exchange Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Mail flow troubleshooter</p></td>

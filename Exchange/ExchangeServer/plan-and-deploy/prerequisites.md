@@ -73,7 +73,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -108,7 +108,7 @@ When you use one of these options, you don't need to restart the computer after 
 
 1. Install the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -187,7 +187,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 1. The computer requires the following software:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -222,17 +222,16 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
-   b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
+   b. [December 13, 2016 (KB3206632) security update](https://support.microsoft.com/help/4004227)
 
       > [!NOTE]
-      >
-      > You can only install this update if your Windows Server 2016 version is 14393.576 or earlier (circa December, 2016). You can check your Windows Server version by running the **winver** command. If your Windows Server 2016 version is greater than 14393.576, you don't need this update or its replacement [KB3213522](https://support.microsoft.com/help/3213522/cumulative-update-for-windows-10-version-1607-and-windows-server-2016), which was released one week later. Exchange 2016 Setup looks for the installation of this update, won't allow you to continue if this update is missing, and will clearly inform you if you need it.
+      > You can only install this update if your Windows Server 2016 version is 14393.576 or earlier (circa December, 2016). You can check your Windows Server version by running the **winver** command. If your Windows Server 2016 version is greater than 14393.576, you don't need this update or its replacement [KB3213522](https://support.microsoft.com/help/3213522), which was released one week later. Exchange 2016 Setup looks for the installation of this update, won't allow you to continue if this update is missing, and will clearly inform you if you need it.
 
    c. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-   d. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
+   d. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938)
 
       > [!NOTE]
       >
@@ -254,7 +253,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -278,7 +277,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -304,7 +303,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 2. Install the following software in order:
 
-   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+   a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
@@ -334,7 +333,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 ### Exchange 2016 management tools on Windows 8.1
 
-1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
 2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 

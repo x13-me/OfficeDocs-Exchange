@@ -139,7 +139,7 @@ To verify that the recipient exists and has an active license assigned:
 
 1. In the Microsoft 365 admin center, choose **Users** to go to the **Active users** page.
 
-2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec.aspx).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
+2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk to Office 365 - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
 
    ![Screenshot shows a section of the Active users page with a search term, "allie", typed in the search box adjacent to the Filters option, which is set to All users. Below, the complete display name and username are shown.](../../media/4b17dfe8-104c-4e8a-9325-3779a7d4bc5f.png)
 
@@ -270,7 +270,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
