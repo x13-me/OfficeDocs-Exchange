@@ -31,13 +31,13 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?linkid=299212).
 
-- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Microsoft 365 Groups after migration.
+- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Microsoft 365 or Office 365 for those users who need access to Microsoft 365 Groups after migration.
 
 - Outlook Anywhere needs to be enabled on the Exchange 2010 server that hosts your public folder databases. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?linkid=187249).
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Only public folders of type calendar and mail can be migrated to Microsoft 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
+- Only public folders of type calendar and mail can be migrated to Microsoft 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Microsoft 365 and Office 365 are expected to be created prior to the migration.
 
 - The batch migration process only copies messages and calendar items from public folders for migration to Microsoft 365 Groups. It doesn't copy other entities of public folders like policies, rules and permissions.
 
@@ -84,11 +84,11 @@ The following steps are necessary to prepare your organization for the migration
 
 1. Compile a list of public folders (mail and calendar types) that you want to migrate to Microsoft 365 Groups.
 
-2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) to understand the settings a group must have. If a public folder that you are migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
+2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Microsoft 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) to understand the settings a group must have. If a public folder that you are migrating has the default permission set to **Author** or above, you should create the corresponding group in Microsoft 365 or Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
 
 3. Rename any public folders that contain a backslash (**\\**) in their name. Otherwise, those public folders may not get migrated correctly.
 
-4. You need to have the migration feature **PAW** enabled for your Office 365 organization. To verify this, run the following command in Exchange Online PowerShell:
+4. You need to have the migration feature **PAW** enabled for your Microsoft 365 or Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
 
     ```powershell
     Get-MigrationConfig
@@ -106,7 +106,7 @@ The .csv file needs to contain the following columns:
 
 - **FolderPath**: Path of the public folder to be migrated.
 
-- **TargetGroupMailbox**: SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
+- **TargetGroupMailbox**: SMTP address of the target group in Microsoft 365 or Office 365. You can run the following command to see the primary SMTP address.
 
   ```powershell
   Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
@@ -183,7 +183,7 @@ In this step, you gather information from your Exchange environment, and then yo
 
     With the `-Authentication` parameter, be sure to set a value that matches the authentication method in your on-premises Exchange environment. If you use NTLM, for example, use `-Authentication NTLM`.
 
-4. Run the following command to create a new public folder-to-Office 365 group migration batch. In this command:
+4. Run the following command to create a new public folder-to-Microsoft 365 group migration batch. In this command:
 
    - *CSVData* is the .csv file created above in [Step 3: Create the .csv file](#step-3-create-the-csv-file). Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
@@ -203,7 +203,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Microsoft 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 
@@ -213,11 +213,11 @@ To view the mailbox migration page:
 
 3. Select the migration request that was just created and then, on the **Details** pane, select **View Details**.
 
-When the batch status is **Completed**, you can move on to Step 5 below.
+When the batch status is **Completed**, you can move on to the next step.
 
 ## Step 5: Add members to Microsoft 365 groups from public folders
 
-You can add members to the target group in Office 365 manually as required. However, if you want to add members to the group based on the permission entries in public folders, you need to do that by running the script `AddMembersToGroups.ps1` on the Exchange 2010 server as shown in the following command. User mailboxes must be synced to Exchange Online in order to be added as members of an Office 365 group. To know which public folder permissions are eligible to be added as members of a group in Office 365, see Migration scripts later in this article.
+You can add members to the target group in Microsoft 365 or Office 365 manually as required. However, if you want to add members to the group based on the permission entries in public folders, you need to do that by running the script `AddMembersToGroups.ps1` on the Exchange 2010 server as shown in the following command. User mailboxes must be synced to Exchange Online in order to be added as members of a Microsoft 365 group. To know which public folder permissions are eligible to be added as members of a group in Microsoft 365 or Office 365, see Migration scripts later in this article.
 
 In the following command:
 
@@ -233,14 +233,14 @@ In the following command:
 .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
-Once users have been added to a group in Office 365, they can begin using it.
+Once users have been added to a group in Microsoft 365 or Office 365, they can begin using it.
 
 ## Step 6: Lock down the public folders (public folder downtime required)
 
 When the majority of the data in your public folders has migrated to Microsoft 365 Groups, you can run the script `LockAndSavePublicFolderProperties.ps1` on the Exchange 2010 server to make the public folders read-only. This step ensures that no new data is added to public folders before the migration completes.
 
 > [!NOTE]
-> If there are mail-enabled public folders (MEPFs) among the public folders being migrated, this step will copy some properties of MEPFs, such as SMTP addresses, to the corresponding group in Office 365 and then mail-disable the public folder. Because the migrating MEPFs will be mail-disabled after the execution of this script, you will start seeing emails sent to MEPFs instead being received in the corresponding groups. For more details, see Migration scripts later in this article.
+> If there are mail-enabled public folders (MEPFs) among the public folders being migrated, this step will copy some properties of MEPFs, such as SMTP addresses, to the corresponding group in Microsoft 365 or Office 365 and then mail-disable the public folder. Because the migrating MEPFs will be mail-disabled after the execution of this script, you will start seeing emails sent to MEPFs instead being received in the corresponding groups. For more details, see Migration scripts later in this article.
 
 In the following command:
 
@@ -291,7 +291,7 @@ After you have finished this step (the batch status is **Completed**), verify th
 
 The following known issues can occur during a typical public folders to Microsoft 365 Groups migration.
 
-- The script that transfers SMTP address from mail-enabled public folders to Office 365 Group only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
+- The script that transfers SMTP address from mail-enabled public folders to Microsoft 365 Group only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
 
 - If the .csv mapping file has an entry with invalid public folder path, the migration batch displays as **Completed** without throwing an error, and no further data is copied.
 
@@ -303,13 +303,13 @@ For your reference, this section provides in-depth descriptions for three of the
 
 This script will read the permissions of the public folders being migrated and then add members and owners to Microsoft 365 Groups as follows:
 
-- Users with the following permission roles will be added as members to a group in Office 365. **Permission roles:** Owner, PublishingEditor, Editor, PublishingAuthor, Author
+- Users with the following permission roles will be added as members to a group in Microsoft 365. **Permission roles:** Owner, PublishingEditor, Editor, PublishingAuthor, Author.
 
-- In addition to the above, users with the following minimum access rights will also be added as members to a group in Office 365. **Access rights:** ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems
+- In addition to the above, users with the following minimum access rights will also be added as members to a group in Office 365. **Access rights:** ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems.
 
 - Users with access right "Owner" will be added as owners to a group and users with other eligible access rights will be added as members.
 
-- Security groups cannot be added as members to groups in Office 365. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
+- Security groups cannot be added as members to groups in Microsoft 365 or Office 365. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
 
 - When users in security groups that have access rights over a public folder have themselves explicit permissions over the same public folder, explicit permissions will be given preference. For example, consider a case in which a security group called "SG1" has members User1 and User2. Permission entries for the public folder "PF1" are as follows:
 
@@ -317,7 +317,7 @@ This script will read the permissions of the public folders being migrated and t
 
   User1: Owner in PF1
 
-  In this case, User1 will be added as an owner to the group in Office 365.
+  In this case, User1 will be added as an owner to the group in Microsoft 365 or Office 365.
 
 - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
 
@@ -325,7 +325,7 @@ This script can be run even after the lock-down of public folders, with paramete
 
 ### LockAndSavePublicFolderProperties.ps1
 
-This script makes the public folders being migrated read-only. When mail-enabled public folders are migrated, they will first be mail-disabled and their SMTP addresses will be added to the respective groups in Office 365. Then the permission entries will be modified to make them read-only. A back up of the mail properties of mail-enabled public folders, as well as the permission entries of all the public folders, will be copied, before performing any modification on them.
+This script makes the public folders being migrated read-only. When mail-enabled public folders are migrated, they will first be mail-disabled and their SMTP addresses will be added to the respective groups in Microsoft 365 or Office 365. Then the permission entries will be modified to make them read-only. A back up of the mail properties of mail-enabled public folders, as well as the permission entries of all the public folders, will be copied, before performing any modification on them.
 
 If there are multiple migration batches, a separate backup directory should be used with each mapping .csv file.
 
@@ -355,9 +355,9 @@ The following mail properties will be migrated to target group as part of lock d
 
 - GrantSendOnBehalfTo
 
-The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating mail-enabled public folders will be added as secondary SMTP addresses of the corresponding groups in Office 365. Also, SendAs and SendOnBehalfTo permissions of users on mail-enabled public folders will be given equivalent permission in the corresponding target groups.
+The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating mail-enabled public folders will be added as secondary SMTP addresses of the corresponding groups in Microsoft 365 or Office 365. Also, SendAs and SendOnBehalfTo permissions of users on mail-enabled public folders will be given equivalent permission in the corresponding target groups.
 
-**Access rights allowed**
+### Access rights allowed
 
 Only the following access rights will be allowed for users to ensure that the public folders are made read-only for all users.
 
@@ -371,12 +371,12 @@ Only the following access rights will be allowed for users to ensure that the pu
 
 The permission entries will be modified as follows:
 
-1. ###  
+1.
 
     <table>
     <colgroup>
     <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col stye="width: 50%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -440,7 +440,7 @@ There might be an interruption in sending emails to mail-enabled public folders 
 
 ### UnlockAndRestorePublicFolderProperties.ps1
 
-This script will re-assign permissions back to public folders, based on the back up file taken during public folder lock-down. This script will also mail-enable public folders that had been mail-disabled, after it removes the folders' SMTP addresses from their respective groups in Office 365. There might be slight downtime during this process.
+This script will re-assign permissions back to public folders, based on the back up file taken during public folder lock-down. This script will also mail-enable public folders that had been mail-disabled, after it removes the folders' SMTP addresses from their respective groups in Microsoft 365 or Office 365. There might be slight downtime during this process.
 
 ## How do I roll back to public folders from Microsoft 365 Groups?
 
@@ -458,8 +458,8 @@ On your Exchange 2010 server, run the following command. In this command:
 .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
-Be aware that any items added to the Office 365 group, or any edit operations performed in the groups, are not copied back to your public folders. Therefore there will be data loss, assuming new data was added while the public folder was a group.
+Be aware that any items added to the Microsoft 365 group, or any edit operations performed in the groups, are not copied back to your public folders. Therefore there will be data loss, assuming new data was added while the public folder was a group.
 
 Note also that it's not possible to restore a subset of public folders, which means all of the public folders there were migrated should be restored.
 
-The corresponding groups in Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
+The corresponding groups in Microsoft 365 or Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.

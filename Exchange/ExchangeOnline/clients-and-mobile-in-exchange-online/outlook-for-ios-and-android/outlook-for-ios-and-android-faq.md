@@ -62,11 +62,11 @@ See [Account setup with modern authentication in Exchange Online](https://docs.m
 
 Yes, Outlook for iOS and Android supports certificate-based authentication for modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://aka.ms/hmaom)). For more information, see:
 
-- [Configuring Active Directory Federation Services (ADFS) with Office 365](https://go.microsoft.com/fwlink/p/?linkid=849806)
+- [Configuring Active Directory Federation Services (ADFS) with Office 365](https://docs.microsoft.com/archive/blogs/samueld/adfs-certauth-aad-o365)
 
-- [Certificate-based authentication on iOS](https://go.microsoft.com/fwlink/p/?linkid=849807)
+- [Certificate-based authentication on iOS](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-ios)
 
-- [Certificate-based authentication on Android](https://go.microsoft.com/fwlink/p/?linkid=849808)
+- [Certificate-based authentication on Android](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-android)
 
 ### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been canceled.
 
