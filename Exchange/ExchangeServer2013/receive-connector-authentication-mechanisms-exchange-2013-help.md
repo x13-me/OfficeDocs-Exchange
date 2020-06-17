@@ -62,4 +62,4 @@ The Receive connector authentication mechanisms are the following:
 </tbody>
 </table>
 
-For more information about Receive Connector authentication mechanisms, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/New-ReceiveConnector).
+For more information about Receive Connector authentication mechanisms, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/New-ReceiveConnector).

@@ -50,7 +50,7 @@ Exchange supports moving your public folders from the following legacy versions 
 
 - Exchange 2007 SP3 RU15 or later
 
-If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://technet.microsoft.com/library/jj150486\(v=exchg.150\)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
+If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
 
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later, or to Exchange 2007 SP3 RU15 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2013 public folder can't be routed through an Exchange 2003 server.
 
@@ -163,19 +163,19 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig)
+- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig)
+- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2013 server
 
@@ -239,27 +239,27 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-PublicFolderMigrationRequest)
+- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderMigrationRequest)
 
-- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Remove-PublicFolderMigrationRequest)
+- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolderMigrationRequest)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolder)
 
-- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-MailPublicFolder)
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-MailPublicFolder)
 
-- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Disable-MailPublicFolder)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Disable-MailPublicFolder)
 
-- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Remove-PublicFolder)
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolder)
 
-- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-Mailbox)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-Mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -367,13 +367,13 @@ The progress and completion of the migration can be viewed and managed in the EA
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Get-PublicFolderDatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderDatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 
@@ -387,7 +387,7 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Set-OrganizationConfig).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 

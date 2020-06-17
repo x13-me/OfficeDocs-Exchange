@@ -28,7 +28,7 @@ When configuring a hybrid deployment in an Exchange 2016 organization, you don't
 
 Exchange 2016 only has one required server role, the Mailbox role. In addition to hosting the on-premises recipient mailboxes, the Mailbox role performs all of the functions necessary to support a hybrid deployment with Exchange Online. This includes handling secure mail messages between the on-premises and Exchange Online organizations, as well as handling transport rules, journaling policies, and message delivery to user mailboxes in a hybrid deployment. All client connectivity and organization relationship features, such as free/busy sharing, are also handled by the Mailbox server.
 
-Learn more about Exchange 2016 capacity planning at [Sizing Exchange 2016 Deployments](https://go.microsoft.com/fwlink/p/?LinkId=301990).
+Learn more about Exchange 2016 capacity planning at [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/exchange-team-blog/ask-the-perf-guy-sizing-exchange-2016-deployments/ba-p/603970).
 
 ## Exchange 2013 hybrid deployment
 

@@ -19,9 +19,9 @@ _**Applies to:** Exchange Server 2013_
 
 To successfully perform cross-premises eDiscovery searches in an Exchange 2013 hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication supports the following eDiscovery scenarios in an Exchange hybrid deployment:
 
-  - Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
+- Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
 
-  - Search on-premises and cloud-based mailboxes in the same eDiscovery search.
+- Search on-premises and cloud-based mailboxes in the same eDiscovery search.
 
 For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by a Microsoft 365 or Office 365 tenant administrator or a compliance officer signed in to a Microsoft 365 or Office 365 user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>
@@ -83,8 +83,8 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use eDi
 
 ## More information
 
-  - You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
+- You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
 
-  - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
+- You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
-  - You can configure an Exchange hybrid deployment using the Hybrid Configuration Wizard in Exchange 2013. For a customized, step-by-step hybrid deployment configuration checklist, see the [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
+- You can configure an Exchange hybrid deployment using the Mail migration advisor. For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).
