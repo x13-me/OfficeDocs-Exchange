@@ -45,7 +45,7 @@ The URL of the EAC is controlled by the Internet Information Services (IIS) virt
 
     **Note**: External users who connect to Outlook on the web (formerly known as Outlook Web App) also need access to the EAC to access their own **Options** page. You can disable external administrator access to the EAC while still allowing users to access their **Options** page in Outlook on the web. For more information, see [Turn off access to the Exchange admin center](disable-exchange-admin-center-access.md).
 
-The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 These examples show you how to find the internal and external URL values for the EAC virtual directories in your organization:
 
@@ -255,7 +255,7 @@ The levels of support for operating system and browser combinations that you can
 
   - **Supported**: All functionality and features are supported and have been fully tested.
 
-  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://go.microsoft.com/fwlink/p/?LinkId=823717).
+  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://docs.microsoft.com/lifecycle/announcements/internet-explorer-dotnet-framework-support).
 
   - **n/a**: The browser and operating system combination isn't possible. For example, an older browser on a newer operating system, or vice-versa.
 

@@ -20,7 +20,7 @@ You can develop data loss prevention (DLP) policy templates as XML files indepen
 Looking for management tasks related to DLP policy templates? See [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
 > [!NOTE]
-> Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+> Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 > [!IMPORTANT]
 > It's beyond the scope of this documentation to recommend a business model or information about file packaging or deployment guidelines for the sensitive information rules or to discuss how such rules would be distributed. Furthermore, this documentation does not discuss protection mechanisms, such as encryption, for custom developed rules, nor does it discuss how such mechanism would be employed.
