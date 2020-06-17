@@ -57,60 +57,56 @@ For this scenario, your organization's mail flow setup looks like the following 
 
      You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
 
-When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
+   When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
 
-![Example host name value](../media/ThirdPartyHostconfig.png)
+   ![Example host name value](../media/ThirdPartyHostconfig.png)
 
-In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
+   In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
 
-Next, you need to lock down your Exchange Online organization to only accept mail from your third-party service.
+4. Lock down your Exchange Online organization to only accept mail from your third-party service.
 
-Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
+   Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
 
-For example:
+   For example:
 
-```powershell
-New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
-```
+   ```powershell
+   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
+   ```
 
-or
+   or
 
-```powershell
-New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
-```
+   ```powershell
+   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
+   ```
 
-> [!NOTE]
-> If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
+   > [!NOTE]
+   > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
 
-There are two options for the next step that you may choose from; if you want to prevent double anti-spam check, you may choose option A, which will prevent most of EOP and Office 365 ATP controls through a bypass transport rule. If you want to take advantage of EOP and Office 365 ATP controls you should opt for option B, which consists of enabling Enhanced Filtering.
+5. There are two options for this step:
 
-> [!IMPORTANT]
-> As an alternative to bypassing spam filtering using a transport rule, we recommend you enable [Enhanced Filtering Connector (also known as Skip Listing)](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Most of the time third-party cloud anti-spam shares IPs across many customers. Bypassing IPs in this situation may result in spoofed and phishing messages being marked as legitimate from these IPs.
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Office 365 ATP scanning on the messages.
 
+     > [!NOTE]
+     > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
 
-#### Option A:
-Create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** > **Mail flow** > **Rules** to bypass the anti-spam check:
+   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Office 365 ATP controls and will therefore prevent a double anti-spam check.
 
-![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
+     ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
-#### Option B (recommended):
-Enable [Enhanced Filtering](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#procedures-for-enhanced-filtering-for-connectors) on the Inbound Connector type *Partner* that you created to receive messages from the third-party application.
-
-> [!NOTE]
-> For hybrid scenarios where third-party applications rely on Exchange on-premises to send to EXO, you need to enable Enhanced Filtering on the Inbound Connector type *OnPremises*. Even so, you can lock down inbound flow using Inbound Connector type *Partner*.
+     > [!IMPORTANT]
+     > Instead of bypassing spam filtering using a mail flow rule, we highly recommend that you enable [Enhanced Filtering for Connector (also known as Skip Listing)](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Most third-party cloud anti-spam proviers share IP addresses among many customers. Bypassing scanning on these IPs might allow spoofed and phishing messages from these IP addresses.
 
 ### Scenario 2 - MX record points to third-party solution without spam filtering
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
 
-If you choose to bypass inbound flow through transport rule, we cannot support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). 
-If you choose to enable Enhanced Filtering, your organization's mail flow setup looks like the following diagram:
+This scenario requires you to use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Microsoft 365 and outbound mail from Microsoft 365 to the third-party solution andt hen to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
-#### Best practices for using a third-party cloud service with Office 365
+#### Best practices for using a third-party cloud service with Microsoft 365
 
-Although it is possible to keep Enhanced Filtering in this scenario, it is not recommended. We strongly recommend that you use the archiving and auditing solutions that are provided by Office 365
+We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365.
 
 ## See also
 
