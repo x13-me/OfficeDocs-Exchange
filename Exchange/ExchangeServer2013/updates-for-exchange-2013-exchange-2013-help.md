@@ -23,7 +23,7 @@ With Microsoft Exchange Server 2013, we changed the way we deliver hotfixes and 
 
 Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
-To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CUs, you don't need to install any previous CUs or service packs first.
+To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/download/details.aspx?id=58392). Because each CU is a full installation of Exchange and includes updates and changes from all previous CUs, you don't need to install any previous CUs or service packs first.
 
 For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://techcommunity.microsoft.com/t5/exchange-team-blog/servicing-exchange-2013/ba-p/596398) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-rtm-cumulative-update-2/ba-p/593058).
 
@@ -39,15 +39,15 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |:-----|:-----|
 |Exchange 2013 CU23|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
 |Exchange 2013 CU22|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)|
-|Exchange 2013 CU21|[Released: June 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=2003013)|
-|Exchange 2013 CU20|[Released: March 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=870404)|
-|Exchange 2013 CU19|[Released: December 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=865293)|
-|Exchange 2013 CU18|[Released: September 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=858936)|
-|Exchange 2013 CU17|[Released: June 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=852170)|
-|Exchange 2013 CU16|[Released: March 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=845203)|
-|Exchange 2013 CU15|[Released: December 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=837801)|
-|Exchange 2013 CU14|[Released: September 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=827208)|
-|Exchange 2013 CU13|[Released: June 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=808655)|
+|Exchange 2013 CU21|[Released: June 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2018-quarterly-exchange-updates/ba-p/607964)|
+|Exchange 2013 CU20|[Released: March 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2018-quarterly-exchange-updates/ba-p/607750)|
+|Exchange 2013 CU19|[Released: December 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2017-quarterly-exchange-updates/ba-p/607541)|
+|Exchange 2013 CU18|[Released: September 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2017-quarterly-exchange-updates/ba-p/607155)|
+|Exchange 2013 CU17|[Released: June 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2017-quarterly-exchange-updates/ba-p/607004)|
+|Exchange 2013 CU16|[Released: March 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2017-quarterly-exchange-updates/ba-p/606533)|
+|Exchange 2013 CU15|[Released: December 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2016-quarterly-exchange-updates/ba-p/606193)|
+|Exchange 2013 CU14|[Released: September 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2016-quarterly-exchange-updates/ba-p/605402)|
+|Exchange 2013 CU13|[Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2016-quarterly-exchange-updates/ba-p/604877)|
 |Exchange 2013 CU12|[Released: March 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2016-quarterly-exchange-updates/ba-p/604375)|
 |Exchange 2013 CU11|[Released: December 2015 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2015-quarterly-exchange-updates/ba-p/604618)|
 |Exchange 2013 CU10|[Released: September 2015 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2015-quarterly-exchange-updates/ba-p/604159)|
@@ -176,4 +176,4 @@ For more information, see [High availability and site resilience](high-availabil
 
 ### UM Language Packs
 
-The UM language packs for Exchange 2013 SP1 are available. If you install SP1 on your Mailbox servers, you must install the Exchange 2013 SP1 UM language packs. See [Exchange Server 2013 SP1 UM Language Packs](https://go.microsoft.com/fwlink/?linkid=392817) to download them. UM language packs are specific to the version of Exchange and the Service Pack (SP) installed.
+The UM language packs for Exchange 2013 SP1 are available. If you install SP1 on your Mailbox servers, you must install the Exchange 2013 SP1 UM language packs. See [Exchange Server 2013 SP1 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=41997) to download them. UM language packs are specific to the version of Exchange and the Service Pack (SP) installed.
