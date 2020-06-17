@@ -50,7 +50,7 @@ This example removes the organization relationship Contoso.
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-organizationrelationship).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/remove-organizationrelationship).
 
 ## How do you know this worked?
 

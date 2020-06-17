@@ -38,9 +38,9 @@ It's important to note the terminology differences between Active Directory and 
 
 - To open the Exchange admin center, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use Exchange Online PowerShell to create or rename a distribution group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see:
 
@@ -56,7 +56,7 @@ It's important to note the terminology differences between Active Directory and 
 
 You can now create an Office 365 group instead of a distribution group, if you have an Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Office 365 group** to get started and check out [Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=800653).
 
-If you have existing distribution groups that you want to migrate to Microsoft 365 groups, check out [Migrate distribution lists to Microsoft 365 Groups - Admin help](https://go.microsoft.com/fwlink/p/?LinkId=824756).
+If you have existing distribution groups that you want to migrate to Microsoft 365 groups, check out [Migrate distribution lists to Microsoft 365 Groups - Admin help](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
 
 If you still want to create a distribution group, use the following steps:
 
@@ -101,11 +101,14 @@ If you still want to create a distribution group, use the following steps:
      - **Open**: Anyone can leave this group without being approved by the group owners. This is the default value.
 
      - **Closed**: Members can be removed only by the group owners. All requests to leave will be rejected automatically.
+    
+For more information about using Exchange Online PowerShell to create distribution groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 4. When you're finished, click **Save** to create the distribution group.
 
 > [!NOTE]
 > By default, new distribution groups only accept messages from authenticated (internal) senders, and messages from external senders are rejected. To configure a distribution group to accept messages from all senders, you need to modify the [message delivery restriction settings](#delivery-management) for the group.
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group) cmdlet using Exchange Online PowerShell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or Exchange Online PowerShell to manage these groups
 
 ### Use the EAC to modify distribution groups
 
@@ -265,15 +268,15 @@ This example creates a distribution group with an alias **itadmin** and the name
 New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestriction open
 ```
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
+For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 ### Use Exchange Online PowerShell to modify distribution groups
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup)
+- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup)
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change distribution group properties.
 
@@ -319,4 +322,4 @@ To verify that you've successfully created, modified, or removed a distribution 
   Get-DistributionGroupMember -Identity "<GroupIdentity>"
   ```
 
-  For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).
+  For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember).

@@ -53,7 +53,7 @@ This example enables the OrgID and re-enables federation and federated sharing f
 Set-FederatedOrganizationIdentifier -Enabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/Set-FederatedOrganizationIdentifier).
+For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/Set-FederatedOrganizationIdentifier).
 
 ## How do you know this worked?
 

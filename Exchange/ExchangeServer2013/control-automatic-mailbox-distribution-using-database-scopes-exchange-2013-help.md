@@ -65,7 +65,7 @@ This example creates a scope that applies only to the databases Database 1, Data
 New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementScope).
+For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope).
 
 ### Use a database filter scope
 
@@ -85,7 +85,7 @@ This example creates a scope that includes all the databases that contain the st
 New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter "Name -Like '*ACCT*'"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementScope).
+For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope).
 
 ## Step 2: Add the database scope to a management role assignment
 
@@ -112,7 +112,7 @@ New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "M
 New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment).
 
 ### Modify an existing role assignment
 
@@ -133,7 +133,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Ma
 Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-ManagementRoleAssignment) or [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment) or [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment).
 
 ## Step 3: Add members to a role group (if applicable)
 

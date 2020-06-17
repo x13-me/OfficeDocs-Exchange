@@ -119,7 +119,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 ### Attachments
 
-For more information about how mail flow rules inspect message attachments, see [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx).
+For more information about how mail flow rules inspect message attachments, see [Using mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help).
 
 |**Condition or exception in the EAC**|**Condition and exception parameters in the Exchange Management Shell**|**Property type**|**Description**|**Available in**|
 |:-----|:-----|:-----|:-----|:-----|

@@ -747,16 +747,16 @@ The following table lists all of the user-focused management role types and thei
 
 ## For more information
 
-[New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementRole)
+[New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRole)
 
-[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementRoleAssignment)
+[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-ManagementRoleAssignment)
+[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment)
 
-[New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementScope)
+[New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope)
 
-[Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-ManagementScope)
+[Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope)
 
-[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-ManagementRoleAssignment)
+[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Set-ManagementRoleAssignment)
+[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment)
