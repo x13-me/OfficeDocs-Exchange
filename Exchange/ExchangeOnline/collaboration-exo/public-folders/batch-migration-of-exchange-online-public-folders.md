@@ -80,11 +80,11 @@ The following steps are necessary to prepare your organization for the migration
 
 1. Compile a list of public folders (mail and calendar types) that you want to migrate to Microsoft 365 Groups.
 
-2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) to understand the settings a group must have. If a public folder that you are migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
+2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) to understand the settings a group must have. If a public folder that you are migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group.
 
 3. Rename any public folders that contain a backslash ( **\\**) in their name. Otherwise, those public folders may not get migrated correctly.
 
-4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
+4. You need to have the migration feature **PAW** enabled for your Office 365 organization. To verify this, run the following command in Exchange Online PowerShell:
 
    ```PowerShell
    Get-MigrationConfig
@@ -142,7 +142,7 @@ In this step, you gather information from your Exchange environment, and then yo
     Start-MigrationBatch PublicFolderToGroupMigration
     ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 

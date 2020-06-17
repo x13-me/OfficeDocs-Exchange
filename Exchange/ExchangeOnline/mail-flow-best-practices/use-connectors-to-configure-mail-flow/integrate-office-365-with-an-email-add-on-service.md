@@ -152,7 +152,7 @@ This example creates an outbound connector with these settings:
 New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-outboundconnector).
+For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-outboundconnector).
 
 ### How do you know this step worked?
 
@@ -220,7 +220,7 @@ This example creates the mail flow rule with these settings:
 New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ### How do you know this step worked?
 
@@ -236,7 +236,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
 ## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Office 365
 
-1. Go to the Microsoft 365 admin center at [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), and then click **Setup** \> **Domains**, and then click **Add domain**.
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), click **Setup** \> **Domains**, and then click **Add domain**.
 
    ![In the admin center, go to Setup \> Domains to add the certificate domain as an accepted domain.](../../media/5d4db406-5970-45f4-8955-2bc90d087b6f.png)
 
@@ -318,7 +318,7 @@ This example creates an inbound connector with these settings:
 New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-inboundconnector).
+For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-inboundconnector).
 
 ### How do you know this step worked?
 
