@@ -55,7 +55,7 @@ This command enables Exchange Search for a mailbox database named EXCH01.
 Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/Set-MailboxDatabase).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase).
 
 ## Disable or enable Exchange Search for a Mailbox server
 

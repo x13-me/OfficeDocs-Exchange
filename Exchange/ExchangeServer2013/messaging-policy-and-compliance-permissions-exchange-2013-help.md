@@ -58,7 +58,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <td><p><a href="compliance-management-exchange-2013-help.md">Compliance Management</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Delete mailbox content (using the <a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
+<td><p>Delete mailbox content (using the <a href="https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Discovery Management</a> <strong>and</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">Mailbox Import Export role</a></p>
 

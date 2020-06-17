@@ -30,7 +30,7 @@ As a result, you can readily access up-to-date mailbox data in the event of a fa
 
 
 > [!NOTE]
-> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661).
+> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [How to check Microsoft 365 service health](https://docs.microsoft.com/office365/enterprise/view-service-health).
 
 ## What happens if users accidentally delete data from their mailboxes?
 
@@ -83,4 +83,4 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 
 ## Offboard a user from Office 365
 
-For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+For more info what to do when a user in your organization leaves, check out [Remove a former employee](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.

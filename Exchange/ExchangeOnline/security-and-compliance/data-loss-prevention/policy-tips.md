@@ -33,7 +33,7 @@ Any time you use either the notify sender action or an override action within a 
 If email senders in your organization who are in the act of composing a message are made aware of your organizational expectations and standards in real time through Policy Tip notifications, then they are less likely to violate standards that your organization wants to enforce.
 
 > [!NOTE]
-> DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154).
+> DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Compare Exchange Online Licensing plans](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans).
 
 ## Default text for Policy Tips and rule options
 

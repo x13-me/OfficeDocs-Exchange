@@ -68,19 +68,19 @@ You manage throttling settings with the following cmdlets, which were introduced
 
 Manage throttling policies
 
-  - [Get-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-ThrottlingPolicy)
+  - [Get-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-ThrottlingPolicy)
 
-  - [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/New-ThrottlingPolicy)
+  - [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-ThrottlingPolicy)
 
-  - [Remove-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Remove-ThrottlingPolicy)
+  - [Remove-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-ThrottlingPolicy)
 
-  - [Set-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Set-ThrottlingPolicy)
+  - [Set-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-ThrottlingPolicy)
 
 Assign throttling policies
 
-  - [Get-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Get-ThrottlingPolicyAssociation)
+  - [Get-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/Get-ThrottlingPolicyAssociation)
 
-  - [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/Set-ThrottlingPolicyAssociation)
+  - [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/Set-ThrottlingPolicyAssociation)
 
 > [!NOTE]
 > The <STRONG>&#42;-ResourcePolicy</STRONG>, <STRONG>&#42;-WorkloadManagementPolicy</STRONG> and <STRONG>&#42;-WorkloadPolicy</STRONG> system workload management cmdlets have been deprecated. System workload management settings should be customized only under the direction of Microsoft Customer Service and Support.

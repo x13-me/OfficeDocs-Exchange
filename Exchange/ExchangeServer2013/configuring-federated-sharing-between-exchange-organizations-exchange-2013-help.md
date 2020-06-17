@@ -74,15 +74,15 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Prerequisites**: Make sure your organization meets the requirements for installing Active Directory synchronization.
 
-       To learn more, see [Prepare for Active Directory Synchronization](https://go.microsoft.com/fwlink/p/?linkid=247302)
+       To learn more, see [Prepare for Active Directory Synchronization](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 
-       To learn more, see [Install and Upgrade the Microsoft Online Services Directory Synchronization tool](https://go.microsoft.com/fwlink/p/?linkid=247303)
+       To learn more, see [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation).
 
   4. **Create an availability address space**
 
@@ -94,7 +94,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
      Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
      ```
 
-     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/Add-AvailabilityAddressSpace)
+     For detailed syntax and parameter information, see [Add-AvailabilityAddressSpace](https://docs.microsoft.com/powershell/module/exchange/Add-AvailabilityAddressSpace)
 
 ## Configure Free/Busy Sharing Between Exchange 2013 and Exchange 2003 Organizations
 
@@ -119,15 +119,15 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      - **Prerequisites**: Make sure your organization meets the requirements for installing Active Directory synchronization.
 
-       To learn more, see [Prepare for Active Directory Synchronization](https://go.microsoft.com/fwlink/p/?linkid=247302)
+       To learn more, see [Prepare for Active Directory Synchronization](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)
 
      - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
 
-       To learn more, see [Active Directory Synchronization: Roadmap](https://go.microsoft.com/fwlink/p/?linkid=203007)
+       To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
      - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
 
-       To learn more, see [Install and Upgrade the Microsoft Online Services Directory Synchronization tool](https://go.microsoft.com/fwlink/p/?linkid=247303)
+       [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation).
 
   4. **Configure public folders for free/busy sharing in your Exchange 2003 organization.**
 

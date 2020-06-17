@@ -77,7 +77,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios
 
-Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://technet.microsoft.com/library/hh534377\(v=exchg.150\)).
+Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory servers
 
@@ -367,7 +367,7 @@ Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
 - Outlook for Mac 2011
 
-For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://go.microsoft.com/fwlink/p/?linkid=513459).
+For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
 
 > [!IMPORTANT]
 > We strongly recommend that you install the latest available service packs and updates available so that your users receive the best possible experience when connecting to Exchange.

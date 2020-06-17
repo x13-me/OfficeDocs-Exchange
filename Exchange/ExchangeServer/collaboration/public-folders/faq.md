@@ -117,7 +117,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -135,11 +135,11 @@ There's no longer a database-level setting. Instead, Exchange has a mailbox-leve
 
 ## How are public folder metric tools being used in Exchange?
 
-You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help).
 
 ## Does mailbox audit logging work against public folders?
 
@@ -161,7 +161,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
+In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
 
 ```PowerShell
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"

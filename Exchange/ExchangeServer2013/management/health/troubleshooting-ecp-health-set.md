@@ -58,7 +58,7 @@ The EAC service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## User Action
 
@@ -128,8 +128,8 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help)
 
 [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
-[Exchange admin center in Exchange 2013](https://technet.microsoft.com/library/jj150562\(v=exchg.150\))
+[Exchange admin center in Exchange 2013](https://docs.microsoft.com/Exchange/exchange-admin-center-in-exchange-2013-exchange-2013-help)

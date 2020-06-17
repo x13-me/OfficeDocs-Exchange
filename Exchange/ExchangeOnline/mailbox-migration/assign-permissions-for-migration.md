@@ -57,6 +57,20 @@ The migration administrator must have the necessary administrative privileges in
 
   - Assigned the Receive As permission on the on-premises mailbox database that stores the user mailboxes.
 
+- **Remote move (Hybrid) Exchange migration**
+
+    For a remote move migration, the migration administrator account must be:
+
+  - A member of the Domain Admins group in Active Directory Domain Services (AD DS) in the on-premises organization.
+
+    or
+
+  - A member of the Exchange Recipients Administrators group in Active Directory in the on-premises organization.
+
+    or
+
+  - A member of the Organization Management or Recipient Management group in Exchange 2010 or above.
+  
 - **Internet Message Access Protocol 4 (IMAP4) migration**
 
     For an IMAP4 migration, the comma-separated value (.csv) file for the migration batch must contain:
@@ -78,7 +92,7 @@ For information about migrating mailboxes to Office 365 by using different migra
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipient Permissions](https://go.microsoft.com/fwlink/p/?LinkID=534105) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 ## Assign the FullAccess permission
 <a name="bkmk_fullaccess"> </a>
@@ -119,7 +133,7 @@ Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-MailboxPermission)
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
 
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
 
@@ -152,7 +166,7 @@ The following example shows how to use the Exchange Online PowerShell **Add-ADPe
 Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -ExtendedRights receive-as
 ```
 
-For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission).
+For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission).
 
 ### How do you know the assignment of permission worked?
 
@@ -201,7 +215,7 @@ Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/Add-ADPermission)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
 
