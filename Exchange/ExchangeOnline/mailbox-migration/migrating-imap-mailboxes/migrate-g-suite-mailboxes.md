@@ -68,7 +68,7 @@ Domain verification is a task you will go through as you set up Microsoft 365 or
 You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
 
 > [!IMPORTANT]
-> At this point you have verified that you own the domain and created your G Suite users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-office-365).
+> At this point you have verified that you own the domain and created your G Suite users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-microsoft-365-or-office-365).
 
 ### Step 3: Create a list of Gmail mailboxes to migrate
 
@@ -144,7 +144,7 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 ### Step 5: Create a migration batch and start migrating Gmail mailboxes
 
-You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 or Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Microsoft 365 or Office 365 to Gmail](#step-4-connect-office-365-to-gmail).
+You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 or Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Microsoft 365 or Office 365 to Gmail](#step-4-connect-microsoft-365-or-office-365-to-gmail).
 
 > [!TIP]
 > It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
