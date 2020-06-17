@@ -270,7 +270,7 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
 7. On the **IMAP migration configuration** page, click **Next**.
 
-8. On this page, select the migration endpoint that you created in [Step 3: Connect Microsoft 365 or Office 365 to your email system](#step-3-connect-office-365-to-your-email-system).
+8. On this page, select the migration endpoint that you created in [Step 3: Connect Microsoft 365 or Office 365 to your email system](#step-3-connect-microsoft-365-or-office-365-to-your-email-system).
 
 9. On the **Move configuration** page, type the *name (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
 
