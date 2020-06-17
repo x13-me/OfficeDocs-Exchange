@@ -71,7 +71,7 @@ Before you start, make sure that you've done the following:
     ```PowerShell
     $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
     Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
-    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountName $AzureADConnectSWritebackAccountDN
+    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
     ```
 
 ## Configure a group domain
