@@ -38,7 +38,7 @@ Note that if your organization uses a hybrid Exchange environment, you need to m
 
 Estimated time to complete: 5 minutes.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 This example converts the shared mailbox, MarketingDept1 to a user mailbox.
 

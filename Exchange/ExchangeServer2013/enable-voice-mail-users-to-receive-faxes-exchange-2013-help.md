@@ -251,7 +251,7 @@ Adding multiple extension numbers is useful when a UM-enabled user:
 
 Adding multiple extensions is more complex than using a single extension and may require additional configuration settings on a PBX or an IP PBX. To configure multiple extension numbers for a UM-enabled user, you must have DID extension numbers available that aren't being used in your organization. It isn't a good idea to use multiple numbers for a UM-enabled user if your organization has a limited number of DID extension numbers available.
 
-The benefit of using multiple DID extension numbers is that a UM-enabled user receives voice calls on one DID extension number and fax calls on the another DID extension number. Using separate DID numbers for voice mail and fax calls is easier for the user.
+The benefit of using multiple DID extension numbers is that a UM-enabled user receives voice calls on one DID extension number and fax calls on another DID extension number. Using separate DID numbers for voice mail and fax calls is easier for the user.
 
 If you configure two DID extension numbers for a specific user, the DID extension numbers can come from separate UM dial plans. To use two DID numbers, you can create a dial plan and use a Mailbox server as a dedicated server that will receive fax calls and forward fax messages to users. For more information, see [Create a UM dial plan](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 

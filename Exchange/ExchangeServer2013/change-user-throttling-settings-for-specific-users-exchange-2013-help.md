@@ -44,7 +44,7 @@ This example creates a non-default user throttling policy named ITStaffPolicy th
 New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
 ```
 
-This example associates a user with the user name tonysmith with the throttling policy ITStaffPolicy (which has higher limits).
+This example associates a user with the username tonysmith with the throttling policy ITStaffPolicy (which has higher limits).
 
 ```powershell
 Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy

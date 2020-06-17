@@ -35,7 +35,7 @@ Connectors are used to:
 - Avoid graylisting that would otherwise occur because of the large volume of mail that's regularly exchanged between your Microsoft 365 or Office 365 organization and your on-premises email server or partners.
 
 > [!NOTE]
-> Graylisting is a delay tactic that's used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/article/51356082-9fef-4639-a18a-fc7c5beae0c8).
+> Graylisting is a delay tactic that's used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online](../non-delivery-reports-in-exchange-online/fix-error-code-451-4-7-500-699-asxxx-in-exchange-online.md).
 
 ## What happened to inbound and outbound connectors?
 
