@@ -33,7 +33,7 @@ You can migrate the contents of user mailboxes from your source email system to 
 
 If this option won't work for you, see [Ways to migrate email to Office 365](../mailbox-migration.md) for other options.
 
-For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=615256).
+For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 ## Things to consider
 
@@ -125,7 +125,7 @@ If you're comfortable with what's involved in migrating mailboxes to Office 365,
 
 - [IMAP migration in the Admin center](imap-migration-in-the-admin-center.md)
 
-- [Use PowerShell to perform an IMAP migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615256)
+- [Use PowerShell to perform an IMAP migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365)
 
 ## See also
 

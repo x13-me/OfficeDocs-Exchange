@@ -215,7 +215,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 </tbody>
 </table>
 
-If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Disable-Mailbox) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
+If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Disable-Mailbox) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
 ## Planning for mailboxes
 
@@ -237,7 +237,7 @@ Exchange supports the following types of distribution groups:
 - **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
 
   > [!NOTE]
-  > To convert a domain-local or a global group to a universal group, you can use the <A href="https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-Group">Set-Group</A> cmdlet in the Shell.
+  > To convert a domain-local or a global group to a universal group, you can use the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-Group">Set-Group</A> cmdlet in the Shell.
 
 ## Dynamic distribution groups
 
@@ -294,7 +294,7 @@ The Microsoft Exchange recipient is a special recipient object that provides a u
 The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
 
 > [!NOTE]
-> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://docs.microsoft.com/powershell/module/exchange/mail-flow/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.
+> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.
 
 ## Recipients documentation
 
@@ -361,7 +361,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to add information about a recipient by using custom attributes.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters">Filters in recipient Shell commands</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/exchange/recipient-filters">Filters in recipient Shell commands</a></p></td>
 <td><p>Learn how to use precanned or custom filters with commands to filter a set of recipients.</p></td>
 </tr>
 <tr class="even">

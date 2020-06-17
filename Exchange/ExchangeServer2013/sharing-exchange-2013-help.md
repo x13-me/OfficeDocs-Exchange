@@ -41,7 +41,7 @@ The following sharing scenarios are supported in Exchange 2013:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Share calendars with an Microsoft 365 or Office 365 organization</p></td>
+<td><p>Share calendars with a Microsoft 365 or Office 365 organization</p></td>
 <td><p>Organization relationships</p></td>
 <td><p>The Microsoft 365 or Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
 </tr>
@@ -165,7 +165,7 @@ The following limitations apply when sharing free/busy information between Excha
 
     4. Stop and restart the Microsoft Internet Information Services (IIS) on all the Exchange 2007 CAS servers.
 
-4. **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can't query the Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
+4. **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft 365 or Office 365, free/busy availability lookups for Microsoft 365-based or Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Microsoft 365-based or Office 365-based Exchange Online organization, the free/busy request can't query the Microsoft 365-based or Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Microsoft 365 or Office 365 service.
 
 For details about how to configure free/busy sharing between common Exchange deployments, see [Configuring federated sharing between Exchange organizations](configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md).
 

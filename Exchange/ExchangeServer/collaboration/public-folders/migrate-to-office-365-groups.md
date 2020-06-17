@@ -36,7 +36,7 @@ Public folders are not recommended for the following situations:
 
 Groups in Office 365 let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
 
-For the full Groups story, see [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521).
+For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## Should you migrate your public folders to Microsoft 365 Groups?
 
@@ -60,7 +60,7 @@ While Microsoft 365 Groups offers many advantages, you should be aware of a few 
 
 - **Granular permission roles**: While public folders have a variety of permission roles, Microsoft 365 Groups only provides two: owner and member.
 
-Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) for more information.
+Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) for more information.
 
 ## Migrating public folders to Microsoft 365 Groups
 
@@ -121,8 +121,8 @@ Click one of the links below for step-by-step instructions on running a batch mi
 
 - [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md)
 
-- [Use batch migration to migrate your Exchange Online public folders to Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=859168)
+- [Use batch migration to migrate your Exchange Online public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders)
 
-- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=859170)
+- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help)
 
-- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=859169)
+- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help)

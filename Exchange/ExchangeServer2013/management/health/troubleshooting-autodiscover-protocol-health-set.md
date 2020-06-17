@@ -50,7 +50,7 @@ The Autodiscover.Protocol service is monitored by using the following probes and
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## Common issues
 
@@ -154,6 +154,6 @@ To troubleshoot this issue, follow these steps:
 
 ## For More Information
 
-[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help)
 
 [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
