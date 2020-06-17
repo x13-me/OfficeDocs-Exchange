@@ -32,7 +32,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 - Estimated time to complete: 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can't use the Exchange admin center (EAC) to place a mailbox on retention hold. You must use Exchange Online PowerShell.
 
@@ -63,7 +63,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 ## How do you know this worked?
 
-To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox.
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) cmdlet to retrieve the *RetentionHoldEnabled* property of the mailbox.
 
 This command retrieves the *RetentionHoldEnabled* property for Michael Allen's mailbox.
 

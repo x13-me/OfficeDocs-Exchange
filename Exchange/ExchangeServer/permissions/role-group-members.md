@@ -18,7 +18,7 @@ manager: serdars
 
 # Manage role group members
 
- To learn about role groups in Exchange Server, see [Understanding Management Role Groups](https://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
+ To learn about role groups in Exchange Server, see [Understanding Management Role Groups](https://docs.microsoft.com/exchange/understanding-management-role-groups-exchange-2013-help).
 
 For additional management tasks related to role groups, see [Permissions](permissions.md).
 
@@ -26,7 +26,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 

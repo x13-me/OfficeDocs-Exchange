@@ -308,7 +308,7 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 > [!IMPORTANT]
 > In a production environment, installing AD&nbsp;RMS and Exchange on the same server isn't supported.
 
-Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Independent Software Vendors](https://go.microsoft.com/fwlink/p/?linkid=210336).
+Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in the [Microsoft Partner Center](https://www.microsoft.com/solution-providers/).
 
 ## Configuring and testing IRM
 
