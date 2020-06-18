@@ -1,5 +1,4 @@
 ---
-localization_priority: Normal
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
 author: mattpennathe3rd

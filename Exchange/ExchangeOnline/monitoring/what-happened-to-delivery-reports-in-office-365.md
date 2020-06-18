@@ -9,7 +9,6 @@ ms.reviewer:
 f1.keywords:
 - NOCSH
 title: What happened to delivery reports in Office 365?
-ms.collection: exchange-online
 search.appverid:
 - BCS160
 - MET150
