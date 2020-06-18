@@ -118,7 +118,7 @@ To connect from the Internet, they'll need the following information:
 
 You can make these settings available to your users through email or other manual communication methods. You can also configure Exchange so that your users can use Outlook Web App to look up their own settings.
 
-**Configure Exchange so users can look up their POP3, IMAP4, and SMTP server settings**
+## Configure Exchange so users can look up their POP3, IMAP4, and SMTP server settings
 
 By default, users can't look up their POP3, IMAP4, and SMTP server settings through Outlook Web App. To allow your users to do this, you need to use the **Set-PopSettings** and **Set-ImapSettings** cmdlets. To allow your users to look up their SMTP (outgoing) server settings, you must use the **Set-ReceiveConnector** cmdlet.
 
@@ -138,6 +138,6 @@ Do the following to allow users to look up their own POP3, IMAP4, and SMTP setti
 
 After you change your default settings by running the **Set-POPSettings**, **Set-IMAPSettings**, and **Set-ReceiveConnector** cmdlets, your users can look up their external POP, IMAP, and SMTP server settings in Outlook Web App by clicking **Settings** \> **Options** \> **Account** \> **My account** \> **Settings for POP or IMAP access**.
 
-**Leave a copy of messages on the server**
+## Leave a copy of messages on the server
 
 The default setting on some email programs is to remove the messages on the server after they're retrieved. Be sure to recommend that your users set up their email program to keep a copy of all messages the client retrieves on the server. By keeping a copy of messages on the server, your users can access their messages from a different email program.

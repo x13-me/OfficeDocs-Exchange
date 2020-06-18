@@ -250,7 +250,9 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 - Exchange 2010 requires Windows PowerShell 2.0 on all supported versions of Windows.
 
-- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. If there are other installed versions of Windows PowerShell that support side-by-side operation, Exchange will use only the version that it requires.
+- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. 
+
+- If there are other installed versions of Windows PowerShell or PowerShell Core that support side-by-side operation, Exchange will use only the version that it requires.
 
 ## Microsoft Management Console
 
