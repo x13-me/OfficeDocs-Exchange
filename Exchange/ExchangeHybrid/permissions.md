@@ -33,7 +33,7 @@ You can add additional administrators in the Exchange Online organization, depen
 > [!IMPORTANT]
 > There is no transfer of permissions between the on-premises organization and the Microsoft 365 or Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Microsoft 365 or Office 365 organization.
 
-For more information, see [Manage Role Groups](https://docs.microsoft.com/Exchange/permissions/role-groups) and [Manage Role Group Members](https://docs.microsoft.com/Exchange/permissions/role-group-members.aspx).
+For more information, see [Manage Role Groups](https://docs.microsoft.com/Exchange/permissions/role-groups) and [Manage Role Group Members](https://docs.microsoft.com/Exchange/permissions/role-group-members).
 
 ## Delegate mailbox permissions
 

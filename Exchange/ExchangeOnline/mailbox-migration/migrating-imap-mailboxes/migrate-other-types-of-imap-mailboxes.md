@@ -66,7 +66,7 @@ Office 365 needs the name of the source email server to migrate mailboxes from. 
 
    ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
 
-For more information about IMAP connections in Office 365, see [POP and IMAP account settings](https://support.mcrosoft.com/office/cb41d2b8-98cb-4ab2-ad60-218349f37e2e).
+For more information about IMAP connections in Office 365, see [POP and IMAP account settings](https://support.microsoft.com/office/cb41d2b8-98cb-4ab2-ad60-218349f37e2e).
 
 ### Step 2: Create the list of mailboxes to migrate
 
