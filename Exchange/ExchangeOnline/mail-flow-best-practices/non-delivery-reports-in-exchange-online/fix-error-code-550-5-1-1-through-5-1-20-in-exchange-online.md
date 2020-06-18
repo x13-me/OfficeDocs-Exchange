@@ -103,7 +103,7 @@ Check your recent messages in the **Sent Items** folder for strange or unknown m
 
 If you believe that your account has been compromised, follow these steps:
 
-- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
+- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 - Notify your email admin. Your admin will need to unblock your account before you can send email again.
 
@@ -119,7 +119,7 @@ To learn more, see [Backscatter in EOP](https://docs.microsoft.com/microsoft-365
 
 ## I'm an email admin. What can I do to fix this?
 
-If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are 4 solutions you can try. You might not need to try all of them to get the message sent successfully.
+If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Microsoft 365 or Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are 4 solutions you can try. You might not need to try all of them to get the message sent successfully.
 
 ### Solution 1: Check the Microsoft 365 admin center for configuration problems or service-wide issues
 
@@ -129,9 +129,9 @@ Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the
 
 1. Check the **Message Center** to see if your organization has a known configuration issue.
 
-2. Go to **Health** \> **Service health** to see if there's a current service issue in Office 365 affecting the user's account.
+2. Go to **Health** \> **Service health** to see if there's a current service issue in Microsoft 365 or Office 365 affecting the user's account.
 
-3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Office 365.
+3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Microsoft 365 or Office 365.
 
 If there's a problem with the recipient's domain, contact the recipient or the recipient's email administrator to let them know about the problem. They'll have to resolve the issue in order to prevent NDR 5.1.x errors.
 
@@ -150,7 +150,7 @@ If external senders (senders outside your organization) receive this NDR when th
 
 - Test your MX record and your ability to send email from your Exchange Online organization by using the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the Microsoft Remote Connectivity Analyzer.
 
-For more information, see [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) and [Set up SPF in Office 365 to help prevent spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
+For more information, see [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) and [Set up SPF in Microsoft 365 or Office 365 to help prevent spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ### Solution 3: Update forwarding rules to remove incorrect email addresses
 
@@ -164,7 +164,7 @@ For more information, see [Configure email forwarding for a mailbox](../../recip
 
 ## Still need help with error code 5.1.1 to 5.1.20?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
