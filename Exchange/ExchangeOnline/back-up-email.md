@@ -77,9 +77,9 @@ After the expiration or removal of a Microsoft 365 or Office 365, Microsoft 365 
 
 ## How do users restore Outlook data?
 
-To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.mcrosoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
+To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
 
-To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook on the web](https://support.mcrosoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
+To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
 
 ## Offboard a user from Microsoft 365 or Office 365
 
