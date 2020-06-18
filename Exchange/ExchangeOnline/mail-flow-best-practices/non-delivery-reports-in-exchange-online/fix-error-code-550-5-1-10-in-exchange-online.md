@@ -53,7 +53,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    ![Screenshot shows the Report tab of a bounce message with the Send Again option and text in the body of the email message that says the message couldn't be delivered.](../../media/ecbdcf67-a13e-4d6c-bc56-ecd5c7ce9a4e.png)
 
-   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.mcrosoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088.aspx).
+   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 2. In the new copy of your message, select the recipient's email address in the **To** box and then press the **Delete** key.
 
