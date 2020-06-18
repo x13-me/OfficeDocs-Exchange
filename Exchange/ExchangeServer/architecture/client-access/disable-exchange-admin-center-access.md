@@ -235,7 +235,7 @@ New-OwaVirtualDirectory -Server <Server> -Role ClientAccess -WebSiteName EAC_Sec
 **Note**: To restart IIS from the command line, open an elevated command prompt (a Command Prompt window that you opened by selecting **Run as administrator**) and run the following commands:
 
 ```console
-net stop was /y
+net stop w3svc /y
 ```
 
 ```console

@@ -40,7 +40,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 17 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=404c2944-345b-410c-a523-6d964779c6f9). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 17 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?id=101448). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
@@ -53,15 +53,15 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2016 CU13|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
 |Exchange 2016 CU12|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)|
 |Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-October-2018-Quarterly-Exchange-Updates/ba-p/608455)|
-|Exchange 2016 CU10|[Released: June 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=2003013)|
-|Exchange 2016 CU9|[Released: March 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=870404)|
-|Exchange 2016 CU8|[Released: December 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=865293)|
-|Exchange 2016 CU7|[Released: September 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=858936)|
-|Exchange 2016 CU6|[Released: June 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=852170)|
-|Exchange 2016 CU5|[Released: March 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=845203)|
-|Exchange 2016 CU4|[Released: December 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=837801)|
-|Exchange 2016 CU3|[Released: September 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=827208)|
-|Exchange 2016 CU2|[Released: June 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=808655)|
+|Exchange 2016 CU10|[Released: June 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2018-quarterly-exchange-updates/ba-p/607964)|
+|Exchange 2016 CU9|[Released: March 2018 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2018-quarterly-exchange-updates/ba-p/607750)|
+|Exchange 2016 CU8|[Released: December 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2017-quarterly-exchange-updates/ba-p/607541)|
+|Exchange 2016 CU7|[Released: September 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2017-quarterly-exchange-updates/ba-p/607155)|
+|Exchange 2016 CU6|[Released: June 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2017-quarterly-exchange-updates/ba-p/607004)|
+|Exchange 2016 CU5|[Released: March 2017 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2017-quarterly-exchange-updates/ba-p/606533)|
+|Exchange 2016 CU4|[Released: December 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2016-quarterly-exchange-updates/ba-p/606193)|
+|Exchange 2016 CU3|[Released: September 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2016-quarterly-exchange-updates/ba-p/605402)|
+|Exchange 2016 CU2|[Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2016-quarterly-exchange-updates/ba-p/604877)|
 |Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2016-quarterly-exchange-updates/ba-p/604375)|
 |Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-2016-forged-in-the-cloud-now-available-on/ba-p/604085)|
 
