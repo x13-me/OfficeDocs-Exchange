@@ -101,4 +101,4 @@ Listed below are software load balancers that have been tested by the vendor and
 
 [Understanding load balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141))
 
-[Load balancing requirements of Exchange protocols](https://technet.microsoft.com/library/ff625248(exchg.141))
+[Load balancing requirements of Exchange protocols](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625248(v=exchg.141))
