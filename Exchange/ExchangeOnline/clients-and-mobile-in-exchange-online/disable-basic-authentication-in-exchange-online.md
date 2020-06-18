@@ -46,7 +46,7 @@ Basic authentication is also known as _proxy authentication_ because the email c
 
 - **Federated authentication**: The IdP is an on-premises solution like Active Directory Federation Services (AD FS).
 
-These authentication models are described in the following sections.
+These authentication models are described in the following sections. For more information, see [Choose the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 ### Cloud authentication
 
@@ -98,6 +98,8 @@ Because authentication policies operate at the user level, Exchange Online can o
 
 In this scenario, if contoso.com uses on-premises AD FS server for authentication, the on-premises AD FS server will still receive authentication requests for non-existent usernames from Exchange Online during a password spray attack.
 
+In an Exchange hybrid deployment, authentication for your on-premises mailboxes will be handled by your on-premises Exchange servers, and authentication policies won't apply. For mailboxes moved to Exchange Online, the Autodiscover service will redirect them to Exchange Online, and then some of the previous scenarios will apply.
+
 ## Authentication policy procedures in Exchange Online
 
 You manage all aspects of authentication policies in Exchange Online PowerShell. The protocols and services in Exchange Online that you can block Basic authentication for are described in the following table.
@@ -130,7 +132,7 @@ For email clients and apps that don't support modern authentication, you need to
 |Outlook 2010|• Autodiscover <br/>• MAPI over HTTP<br/>• Offline Address Book<br/>• Outlook Anywhere (RPC over HTTP)<br/>• Exchange Web Services (EWS)|
 
 > [!NOTE]
-> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
+> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.mcrosoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
 
 ### What do you need to know before you begin?
 

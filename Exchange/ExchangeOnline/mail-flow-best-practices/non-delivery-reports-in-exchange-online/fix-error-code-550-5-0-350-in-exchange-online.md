@@ -37,7 +37,7 @@ But, if the NDR also contains `x-dg-ref header is too long`, that's a specific p
 
 ## I got this bounce message. How do I fix it?
 
-If the NDR contains `x-dg-ref header is too long`, use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.office.com/article/338A389D-11DA-47FE-B693-CF41F792FEFA).
+If the NDR contains `x-dg-ref header is too long`, use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.mcrosoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 Otherwise, forward the NDR to your admin for help.
 
