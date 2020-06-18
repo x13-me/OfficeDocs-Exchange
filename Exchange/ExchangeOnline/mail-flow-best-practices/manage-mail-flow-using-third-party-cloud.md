@@ -24,7 +24,7 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 
 [Scenario 1 - MX record points to third-party spam filtering](#scenario-1---mx-record-points-to-third-party-spam-filtering)
 
-[Scenario 2 - MX record points to third-party solution without spam filtering](#scenario-2-unsupported---mx-record-points-to-third-party-solution-without-spam-filtering)
+[Scenario 2 - MX record points to third-party solution without spam filtering](#scenario-2---mx-record-points-to-third-party-solution-without-spam-filtering)
 
 > [!NOTE]
 > Examples in this topic use the fictitious organization, Contoso, which owns the domain contoso.com and is a tenant in Exchange Online. This is just an example. You can adapt this example to fit your organization's domain name and third-party service IP addresses where necessary.
@@ -57,47 +57,56 @@ For this scenario, your organization's mail flow setup looks like the following 
 
      You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
 
-When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
+   When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
 
-![Example host name value](../media/ThirdPartyHostconfig.png)
+   ![Example host name value](../media/ThirdPartyHostconfig.png)
 
-In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
+   In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
 
-Since the anti-spam service is external, you need to create a mail flow rule (also known as a transport rule) in the Exchange admin center (EAC) at **Exchange admin** \> **Mail flow** \> **Rules** to prevent a double anti-spam check, which would result in the followin rejection of the messages:
+4. Lock down your Exchange Online organization to only accept mail from your third-party service.
 
-![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
+   Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
 
-Next, you need to lock down your Exchange Online organization to only accept mail from your third-party service.
+   For example:
 
-Create and configure a **Partner** inbound connector using either *TlsSenderCertificateName* (preferred) or *SenderIpAddresses* parameters, then set the corresponding *RestrictDomainsToCertificate* or *RestrictDomainsToIPAddresses* parameters to $True. Any messages that are smart-host routed directly to Exchange Online will be rejected (because they didn't arrive over a connection using specified certificate or from the specified IP addresses). 
+   ```powershell
+   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
+   ```
 
-For example:
+   or
 
-```powershell
-New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
-```
+   ```powershell
+   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
+   ```
 
-or
+   > [!NOTE]
+   > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
 
-```powershell
-New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
-```
+5. There are two options for this step:
 
-> [!NOTE]
-> If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Office 365 ATP scanning on the messages.
 
+     > [!NOTE]
+     > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
 
-### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
+   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Office 365 ATP controls and will therefore prevent a double anti-spam check.
+
+     ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
+
+     > [!IMPORTANT]
+     > Instead of bypassing spam filtering using a mail flow rule, we highly recommend that you enable [Enhanced Filtering for Connector (also known as Skip Listing)](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Most third-party cloud anti-spam proviers share IP addresses among many customers. Bypassing scanning on these IPs might allow spoofed and phishing messages from these IP addresses.
+
+### Scenario 2 - MX record points to third-party solution without spam filtering
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
 
-We don't recommend or support this scenario because the inbound mail flow through the service causes Office 365 spam and phish filtering to not work properly (mail from all internet senders appears to originate from the third-party service, not the true email source on the internet). If you choose this scenario, your organization's mail flow setup looks like the following diagram:
+This scenario requires you to use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 and outbound mail from Office 365 to the third-party solution to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Microsoft 365 and outbound mail from Microsoft 365 to the third-party solution andt hen to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
-#### Best practices for using a third-party cloud service with Office 365
+#### Best practices for using a third-party cloud service with Microsoft 365
 
-Don't use this scenario because it isn't currently supported. We recommend that you use the archiving and auditing solutions that are provided by Office 365.
+We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365.
 
 ## See also
 

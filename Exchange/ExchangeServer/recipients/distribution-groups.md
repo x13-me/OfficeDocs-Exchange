@@ -131,7 +131,7 @@ To verify that you've successfully created a distribution group, do one of the f
 
    - [Ownership](#ownership)
 
-   - [Membership](#membership
+   - [Membership](#membership)
 
    - [Membership approval](#membership-approval)
 

@@ -71,7 +71,7 @@ Before you start, make sure that you've done the following:
     ```PowerShell
     $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
     Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
-    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountName $AzureADConnectSWritebackAccountDN
+    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
     ```
 
 ## Configure a group domain
@@ -96,7 +96,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
    <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
-   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group.
+   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work between users in the on-premises Exchange organization and the Office 365 Group.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
@@ -170,7 +170,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **On-premises users can't become an administrator of a group**: On-premises users can't access the group space directly. Because of this, they can't be added as an administrator of a group.
 
-- **Delivery of external mail to a group can fail if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows mails from external senders.
+- **Delivery of external mail to a group fails if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows email from external senders.
 
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as an Office 365 Group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 

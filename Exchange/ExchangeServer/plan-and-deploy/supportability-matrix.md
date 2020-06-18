@@ -198,14 +198,14 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework version**|**CU5, CU4**|**CU3, CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU6, CU5, CU4**|**CU3, CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
 
 ### Exchange 2016
 
-|**.NET Framework version**|**CU16, CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU17, CU16, CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |4.8|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
@@ -250,7 +250,9 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 - Exchange 2010 requires Windows PowerShell 2.0 on all supported versions of Windows.
 
-- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. If there are other installed versions of Windows PowerShell that support side-by-side operation, Exchange will use only the version that it requires.
+- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. 
+
+- If there are other installed versions of Windows PowerShell or PowerShell Core that support side-by-side operation, Exchange will use only the version that it requires.
 
 ## Microsoft Management Console
 
