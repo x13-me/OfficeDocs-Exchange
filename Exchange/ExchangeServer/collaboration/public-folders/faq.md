@@ -84,7 +84,7 @@ The currently supported Outlook clients for [Exchange Server](../../plan-and-dep
 
 Public folder access works from Outlook for Windows desktop and Outlook for Mac. However, smart phone client apps including Outlook for Android or Outlook for iOS do not support connecting to public folders.
 
-If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Microsoft 365 Groups](https://support.mcrosoft.com/office/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## Are there any limitations in the clients?
 
@@ -145,7 +145,7 @@ Starting in Exchange 2013, public folder permissions are managed by using role-b
 
 No. Not at this time. 
 
-If you would like to have functionality similar to public folders with audit logging, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with audit logging, consult [Learn about Microsoft 365 Groups](https://support.mcrosoft.com/office/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## What are the limits on public folders? What are the recommendations?
 
