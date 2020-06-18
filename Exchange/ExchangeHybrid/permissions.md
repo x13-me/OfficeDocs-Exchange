@@ -67,6 +67,8 @@ Not all mailbox permissions are fully supported in an Exchange hybrid environmen
   3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 
      ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
+     
+For more information, see [Overview of delegation in an Office 365 hybrid environment](https://docs.microsoft.com/exchange/troubleshoot/delegates/overview-delegation-office-365-hybrid).
 
 #### Mailbox permissions and capabilities NOT supported in hybrid environments
 

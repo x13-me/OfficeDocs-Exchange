@@ -108,7 +108,7 @@ To enable ACLs on mailboxes moved to Office 365, do the following.
 3. To enable ACLs on all mailboxes moved to Office 365, run the following command.
 
    ```PowerShell
-   Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
+   Get-RemoteMailbox -ResultSize unlimited | where {$_.RecipientTypeDetails -eq "RemoteUserMailbox"} | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
    ```
 
 4. To verify that the mailboxes have been successfully updated, run the following command.
