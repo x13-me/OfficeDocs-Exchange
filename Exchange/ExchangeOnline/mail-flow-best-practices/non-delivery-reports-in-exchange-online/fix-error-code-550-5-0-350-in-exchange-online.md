@@ -51,13 +51,13 @@ In Exchange Online, you can control TNEF (also known as the Transport Neutral En
 
 ### Other 5.0.350 errors
 
-Typically, there's nothing that Office 365 support can do for you, since the problem lies with the recipient's email system.
+Typically, there's nothing that support can do for you, since the problem lies with the recipient's email system.
 
-The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service. Use this information to help identify the issue, and to see if there's anything you can do to fix the problem.
+The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Microsoft 365 or Office 365 tried to send the message to the external email server or service. Use this information to help identify the issue, and to see if there's anything you can do to fix the problem.
 
 ## Still need help with error code 550 5.0.350?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
