@@ -94,7 +94,7 @@ There are several ways to move messages to archive mailboxes:
 
 - **Move or copy messages manually**: Mailbox users can manually move or copy messages from their primary mailbox or a .pst file to their archive mailbox. The archive mailbox appears as another mailbox or .pst file in Outlook and Outlook Web App.
 
-- **Move or copy messages using Inbox rules**: Mailbox users can create Inbox rules in Outlook or Outlook Web App to automatically move messages to a folder in their archive mailbox. To learn more, see [Manage email messages by using rules](https://support.mcrosoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
+- **Move or copy messages using Inbox rules**: Mailbox users can create Inbox rules in Outlook or Outlook Web App to automatically move messages to a folder in their archive mailbox. To learn more, see [Manage email messages by using rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
 
 - **Move messages using retention policies**: You can use retention policies to automatically move messages to the archive. Users can also apply a personal tag to move messages to the archive. For details about archive and retention policies, see Archive and retention policies later in this topic.
 

@@ -286,9 +286,9 @@ When you delete the migration batch, the migration service cleans up any records
 
 After your migrate their email, users can import their Gmail calendar and contacts to Outlook:
 
-- [Import contacts to Outlook](https://support.mcrosoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
 
-- [Import Google Calendar to Outlook](https://support.mcrosoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330.aspx)
+- [Import Google Calendar to Outlook](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
 
 ## Leave us a comment
 
