@@ -132,7 +132,7 @@ For email clients and apps that don't support modern authentication, you need to
 |Outlook 2010|• Autodiscover <br/>• MAPI over HTTP<br/>• Offline Address Book<br/>• Outlook Anywhere (RPC over HTTP)<br/>• Exchange Web Services (EWS)|
 
 > [!NOTE]
-> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.mcrosoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
+> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).
 
 ### What do you need to know before you begin?
 
