@@ -37,7 +37,7 @@ Here are some steps that you can try to fix the problem yourself.
 
 If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this topic so they can try to resolve the issue for you.
 
-- **Just wait**: It might seem strange, but this error might go away on its own after a few days. If your email admin made changes to your organization's domain name system (DNS) records, the change can prevent you from sending and receiving email for a brief period, even if they did everything correctly (it can take up to 72 hours for DNS changes to propagate on the internet). If you'd like more details about DNS records, see [DNS basics](https://support.office.com/article/854b6b2b-0255-4089-8019-b765cff70377.aspx).
+- **Just wait**: It might seem strange, but this error might go away on its own after a few days. If your email admin made changes to your organization's domain name system (DNS) records, the change can prevent you from sending and receiving email for a brief period, even if they did everything correctly (it can take up to 72 hours for DNS changes to propagate on the internet). If you'd like more details about DNS records, see [DNS basics](https://support.mcrosoft.com/office/854b6b2b-0255-4089-8019-b765cff70377.aspx).
 
 - **Service outage**: A problem with the whole Office 365 service could be causing the problem. Even your email admins can't do anything about service outages except wait for the problem to be resolved.
 
