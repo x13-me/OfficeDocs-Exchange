@@ -39,8 +39,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2019 CU5](https://support.microsoft.com/kb/4537677)|March 17, 2020|15.2.595.3|15.02.0595.003|
-|[Exchange Server 2019 CU4](https://support.microsoft.com/kb/4522149)|December 17, 2019|15.2.529.5|15.02.0529.005|
+|[Exchange Server 2019 CU6](https://support.microsoft.com/help/4556415)|June 16, 2020|15.2.659.4|15.02.0659.004|
+|[Exchange Server 2019 CU5](https://support.microsoft.com/help/4537677)|March 17, 2020|15.2.595.3|15.02.0595.003|
+|[Exchange Server 2019 CU4]|December 17, 2019|15.2.529.5|15.02.0529.005|
 |Exchange Server 2019 CU3|September 17, 2019|15.2.464.5|15.02.0464.005|
 |Exchange Server 2019 CU2|June 18, 2019|15.2.397.3|15.02.0397.003|
 |Exchange Server 2019 CU1|February 12, 2019|15.2.330.5|15.02.0330.005|
@@ -59,8 +60,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2016 CU16](https://www.microsoft.com/download/details.aspx?familyID=6f83a0e2-a1a3-4d46-882b-68de870db3f3)|March 17, 2020|15.1.1979.3|15.01.1979.003|
-|[Exchange Server 2016 CU15](https://www.microsoft.com/download/details.aspx?familyID=0d01ba8c-d415-4bc9-b5c7-3bce431d2e3b)|December 17, 2019|15.1.1913.5|15.01.1913.005|
+|[Exchange Server 2016 CU17](https://www.microsoft.com/download/details.aspx?id=101448)|June 16, 2020|15.1.2044.4|15.01.2044.004|
+|[Exchange Server 2016 CU16](https://www.microsoft.com/download/details.aspx?id=101060)|March 17, 2020|15.1.1979.3|15.01.1979.003|
+|[Exchange Server 2016 CU15]|December 17, 2019|15.1.1913.5|15.01.1913.005|
 |Exchange Server 2016 CU14|September 17, 2019|15.1.1847.3|15.01.1847.003|
 |Exchange Server 2016 CU13|June 18, 2019|15.1.1779.2|15.01.1779.002|
 |Exchange Server 2016 CU12|February 12, 2019|15.1.1713.5|15.01.1713.005|
@@ -325,7 +327,7 @@ The following table lists the build numbers and general release dates for each v
 
 |**Product name**|**Release date**|**Build number**|
 |:-----|:-----|:-----|
-|Exchange Server 4.0 SP5|May5, 1998|4.0.996|
+|Exchange Server 4.0 SP5|May 5, 1998|4.0.996|
 |Exchange Server 4.0 SP4|March 28, 1997|4.0.995|
 |Exchange Server 4.0 SP3|October 29, 1996|4.0.994|
 |Exchange Server 4.0 SP2|July 19, 1996|4.0.993|
