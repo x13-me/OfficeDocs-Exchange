@@ -214,7 +214,7 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
     Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
      ```console
-     net stop was /y
+     net stop w3svc /y
      ```
 
      ```console

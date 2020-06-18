@@ -48,7 +48,7 @@ Office 365 needs the name of the source email server to migrate mailboxes from. 
 
    **Note**: The IMAP server for Gmail is: **imap.gmail.com**.
 
-For more information about IMAP connections in Office 365, see [POP and IMAP email settings for Outlook](https://support.office.com/article/8361e398-8af4-4e97-b147-6c6c4ac95353.aspx).
+For more information about IMAP connections in Office 365, see [POP and IMAP email settings for Outlook](https://support.mcrosoft.com/office/8361e398-8af4-4e97-b147-6c6c4ac95353.aspx).
 
 ## Values for security and port
 
