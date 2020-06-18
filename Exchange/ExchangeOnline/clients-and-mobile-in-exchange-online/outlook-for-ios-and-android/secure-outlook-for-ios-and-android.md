@@ -49,9 +49,9 @@ For devices that are not enrolled in an MDM solution, users need to install:
 
 Once the app is installed, users can follow these steps to add their corporate email account and configure basic app settings:
 
-- [Set up email account in Outlook for iOS mobile app](https://support.mcrosoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
+- [Set up email account in Outlook for iOS mobile app](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
 
-- [Set up email in the Outlook for Android app](https://support.mcrosoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872)
+- [Set up email in the Outlook for Android app](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872)
 
 - [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)
 

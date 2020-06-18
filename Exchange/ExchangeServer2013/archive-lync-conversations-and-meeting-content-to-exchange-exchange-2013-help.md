@@ -40,7 +40,7 @@ For additional management tasks related to archiving, see [Manage In-Place Archi
 
 Additionally, in on-premises Exchange 2013 and Lync 2013 deployments:
 
-- You must configure OAuth authentication between Lync 2013 and Exchange 2013. For details, see [Integration with SharePoint and Lync](https://technet.microsoft.com/library/056b29f6-e0e9-4974-b763-002518857a93.aspx).
+- You must configure OAuth authentication between Lync 2013 and Exchange 2013. For details, see [Integration with SharePoint and Lync](https://docs.microsoft.com/Exchange/plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype).
 
 - You can also archive Lync 2013 content to Exchange 2013 regardless of whether a user is placed on hold. This is done by configuring the user's Exchange Archiving Policy. Use the `Set-CsUser` cmdlet on Lync 2013 server to set the Lync user's _ExchangeArchivingPolicy_ property to `ArchivingToExchange`.
 
