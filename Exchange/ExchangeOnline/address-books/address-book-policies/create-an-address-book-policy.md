@@ -26,7 +26,11 @@ In Exchange Online, you can only create ABPs in Exchange Online PowerShell.
 
 An ABP requires one global address list (GAL), one offline address book (OAB), one room list, and one or more address lists. To view the available objects, use the **Get-GlobalAddressList**, **Get-OfflineAddressBook**, and **Get-AddressList** cmdlets.
 
-  **Note**: The room list that's required for an ABP is an address list that specifies rooms (contains the filter `RecipientDisplayType -eq 'ConferenceRoomMailbox'`). It's not a room finder distribution group that you create with the _RoomList_ switch on the **New-DistributionGroup** or **Set-DistributionGroup** cmdlets.
+> [!NOTE]
+> 
+> - In Exchange Online, these cmdlets are available only in the Address Lists role, and by default, the role isn't assigned to any role groups. To use this cmdlet, add the Address Lists role to a role group (for example, to the Organization Management role group). For more information, see [Modify role groups in Exchange Online](../../permissions-exo/role-groups.md#modify-role-groups).
+> 
+> - The room list that's required for an ABP is an address list that specifies rooms (contains the filter `RecipientDisplayType -eq 'ConferenceRoomMailbox'`). It's not a room finder distribution group that you create with the _RoomList_ switch on the **New-DistributionGroup** or **Set-DistributionGroup** cmdlets.
 
 ## What do you need to know before you begin?
 

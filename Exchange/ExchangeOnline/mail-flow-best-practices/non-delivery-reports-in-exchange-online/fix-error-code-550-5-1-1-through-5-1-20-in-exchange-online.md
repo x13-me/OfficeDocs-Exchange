@@ -37,7 +37,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
 It sounds too simple, but the wrong email address is the most common issue that causes 5.1.x errors. Check for correct spelling and send the message again if you find an error in the email address.
 
-To resend the message in Outlook, see [Resend an email message](https://support.office.com/article/acd16ac4-c881-477d-b4aa-36168fa96088.aspx).
+To resend the message in Outlook, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 ### Solution 2: Remove the recipient's email address from your Auto-Complete list
 
@@ -45,7 +45,7 @@ You might have an invalid entry in your Auto-Complete list (also known as the _n
 
 #### Fix your Auto-Complete list entries in Outlook
 
-To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 #### Fix your Auto-Complete list entries in Outlook on the web
 
@@ -87,7 +87,7 @@ After you open your mailbox in the light version of Outlook on the web, do the f
 
 4. Log off and close your web browser. The next time you open your mailbox in a supported web browser, you'll use the full version of Outlook on the web.
 
-To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 ### Solution 3: Confirm that the recipient isn't auto-forwarding messages from you to another (and likely, invalid) email address
 

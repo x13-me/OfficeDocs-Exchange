@@ -188,7 +188,7 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
 ```console
-net stop was /y
+net stop w3svc /y
 ```
 
 ```console
