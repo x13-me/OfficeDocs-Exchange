@@ -56,7 +56,7 @@ To give a user the permissions that are granted by a role group, you need to add
 
 To add a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember#examples) section in [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
-To add multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
+To add multiple role group members or to replace the role group membership entirely, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -85,7 +85,7 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 To remove a role group member, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroupMember#Examples) section in [Remove-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroupMember).
 
-To remove multiple role group members or to replace the role group membership entirely, see the [Examples]https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember#examples section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
+To remove multiple role group members or to replace the role group membership entirely, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### How do you know this worked?
 

@@ -197,7 +197,7 @@ Here are some ways to verify if you've successfully implemented custom managemen
   Add-RoleGroupMember "Vancouver Discovery Management" -Member paralegal@vancouver.contoso.com
   ```
 
-  You can also use the EAC to add members to a role group. For more information, see the "Add members to a role group" section in [Manage Role Group Members](https://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx).
+  You can also use the EAC to add members to a role group. For more information, see the "Modify role groups" section in [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 - In Exchange Online, a custom management scope used for eDiscovery can't be used to search inactive mailboxes. This is because an inactive mailbox can't be a member of a distribution group. For example, let's say that a user is a member of a distribution group that was used to create a custom management scope for eDiscovery. Then that user leaves the organization and their mailbox is made inactive (by placing a Litigation Hold or In-Place hold on the mailbox and then deleting the corresponding user account). The result is that the user is removed as a member from any distribution group, including the group that was used to create the custom management scope used for eDiscovery. If a discovery manager (who is a member of the role group that's assigned the custom management scope) tries to search the inactive mailbox, the search will fail. To search inactive mailboxes, a discover manager must be a member of the Discovery Management role group or any role group that has permissions to search the entire organization.
 
