@@ -36,7 +36,7 @@ Public folders are not recommended for the following situations:
 
 Groups in Office 365 let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
 
-For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## Should you migrate your public folders to Microsoft 365 Groups?
 
@@ -46,7 +46,7 @@ Microsoft 365 Groups is the latest collaboration offering from Microsoft, which 
 
 - **Collaboration over documents**: In Outlook, Groups has a dedicated **Files** tab that displays all files from the group's SharePoint team site, as well as from mail attachments. You get one view of all the files, so you don't have to go searching for them like you would in public folders. Co-authoring also becomes easier. If you're using public folders for storing files meant to be consumed by multiple people, consider migrating to Groups.
 
-- **Shared calendar**: Upon creation every group gets a shared calendar (see [Calendar sharing in Office 365](https://support.office.com/article/b576ecc3-0945-4d75-85f1-5efafb8a37b4)). Any member of the group can create events on that calendar. When you favorite a group, that group's calendar can be displayed alongside your personal calendar. You can also subscribe to a group's events, in which case events created in that group appear in your personal calendar. If you're using public folders to host calendars for your team, such as a schedule or a timetable, Groups would be an improved experience.
+- **Shared calendar**: Upon creation every group gets a shared calendar (see [Calendar sharing in Office 365](https://support.mcrosoft.com/office/b576ecc3-0945-4d75-85f1-5efafb8a37b4)). Any member of the group can create events on that calendar. When you favorite a group, that group's calendar can be displayed alongside your personal calendar. You can also subscribe to a group's events, in which case events created in that group appear in your personal calendar. If you're using public folders to host calendars for your team, such as a schedule or a timetable, Groups would be an improved experience.
 
 - **Simplified permissions**: When you assign users to a group, they immediately get the permissions they need, whereas with public folders you need to manually assign the proper permissions. Members can be added as "owners" or "members." Owners have full rights in the group, including the ability to perform group management tasks. Members can also create content and edit files like owners, but members cannot delete content that they have not created. If the public folders' permissions model is too overwhelming for you and you want something simple and quick, Microsoft 365 Groups is the way to go.
 
@@ -60,7 +60,7 @@ While Microsoft 365 Groups offers many advantages, you should be aware of a few 
 
 - **Granular permission roles**: While public folders have a variety of permission roles, Microsoft 365 Groups only provides two: owner and member.
 
-Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) for more information.
+Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) for more information.
 
 ## Migrating public folders to Microsoft 365 Groups
 

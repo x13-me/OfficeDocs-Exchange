@@ -31,7 +31,7 @@ The following features help make Microsoft Exchange more accessible for people w
 
 - [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md)
 
-- [Keyboard Shortcuts in Outlook Web App](https://support.office.com/article/3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd)
+- [Keyboard Shortcuts in Outlook Web App](https://support.microsoft.com/office/3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd)
 
 In addition, some accessibility features and utilities of Windows may benefit Exchange users with disabilities. Also, Windows PowerShell size and color changes provide accessibility options when using the Exchange Management Shell. For more information about Windows PowerShell accessibility options, see [Accessibility in Windows PowerShell 2.0 ISE](https://docs.microsoft.com/powershell/scripting/components/ise/accessibility-in-windows-powershell-ise).
 

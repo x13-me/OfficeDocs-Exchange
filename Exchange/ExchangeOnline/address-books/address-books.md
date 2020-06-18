@@ -31,7 +31,7 @@ Exchange Online uses address books to organize and store email address informati
 
 **Note**: Email address policies are available in Exchange Online, but only for Microsoft 365 groups. For more information, see [Choose the domain to use when creating Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/choose-domain-to-create-groups).
 
-For help with everyday email tasks, such as organizing your contacts in Outlook, check the [Office 365 Learning Center](https://go.microsoft.com/fwlink/p/?LinkId=615390). You can find help including:
+For help with everyday email tasks, such as organizing your contacts in Outlook, check the [Microsoft 365 Training center](https://support.microsoft.com/training). You can find help including:
 
 - [Add an email contact](https://go.microsoft.com/fwlink/p/?LinkId=615396)
 
