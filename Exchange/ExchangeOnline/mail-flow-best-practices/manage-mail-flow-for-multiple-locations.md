@@ -23,13 +23,13 @@ title: Manage mail flow with mailboxes in multiple locations (Exchange Online an
 
 This topic covers the following complex mail flow scenarios using Microsoft 365 or Office 365:
 
-- [Scenario 1: MX record points to Microsoft 365 or Office 365 and Microsoft 365 or Office 365 filters all messages](#scenario-1-mx-record-points-to-office-365-and-office-365-filters-all-messages)
+- [Scenario 1: MX record points to Microsoft 365 or Office 365 and Microsoft 365 or Office 365 filters all messages](#scenario-1-mx-record-points-to-microsoft-365-and-office-365-filters-all-messages)
 
-- [Scenario 2: MX record points to Microsoft 365 or Office 365 and mail is filtered on-premises](#scenario-2-mx-record-points-to-office-365-and-mail-is-filtered-on-premises)
+- [Scenario 2: MX record points to Microsoft 365 or Office 365 and mail is filtered on-premises](#scenario-2-mx-record-points-to-microsoft-365-or-office-365-and-mail-is-filtered-on-premises)
 
 - [Scenario 3: MX record points to my on-premises servers](#scenario-3-mx-record-points-to-my-on-premises-servers)
 
-- [Scenario 4: MX record points to my on-premises server, which filters and provides compliance solutions for your messages. Your on-premises server needs to relay messages to the internet through Microsoft 365 or Office 365.](#scenario-4-mx-record-points-to-my-on-premises-server-which-filters-and-provides-compliance-solutions-for-your-messages-your-on-premises-server-needs-to-relay-messages-to-the-internet-through-office-365)
+- [Scenario 4: MX record points to my on-premises server, which filters and provides compliance solutions for your messages. Your on-premises server needs to relay messages to the internet through Microsoft 365 or Office 365.](#scenario-4-mx-record-points-to-my-on-premises-server-which-filters-and-provides-compliance-solutions-for-your-messages-your-on-premises-server-needs-to-relay-messages-to-the-internet-through-microsoft-365-or-office-365)
 
 > [!NOTE]
 > Examples in this topic use the fictitious organization, Contoso, which owns the domain contoso.com. The IP address of the Contoso email server is 131.107.21.231, and its third-party provider uses 10.10.10.1 for their IP address. These are just examples. You can adapt these examples to fit your organization's domain name and public-facing IP address where necessary.
