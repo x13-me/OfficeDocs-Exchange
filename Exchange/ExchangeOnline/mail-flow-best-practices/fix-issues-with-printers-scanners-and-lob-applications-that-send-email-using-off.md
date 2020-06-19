@@ -139,7 +139,7 @@ This can be caused by a number of issues.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Microsoft 365 or Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
+This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Microsoft 365 or Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-microsoft-365-or-office-365-direct-send).
 
 ### My emails are not sent to recipients who are not in my organization
 
@@ -165,7 +165,7 @@ This can be caused by a number of issues.
 
 ### Emails are no longer being sent to external recipients
 
-Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-3-configure-a-connector-to-send-mail-using-office-365-smtp-relay) to edit your existing connector settings.
+Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) to edit your existing connector settings.
 
 ### Emails from my device are marked as junk by Microsoft 365 or Office 365
 
