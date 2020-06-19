@@ -37,9 +37,9 @@ manager: serdars
 
 # Prepare your Gmail or G Suite account for connecting to Outlook and Office 365
 
-Before you [connect to your Gmail](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d.aspx) account from Outlook on the web, or [add a Gmail](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
+Before you [connect to your Gmail](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d) account from Outlook on the web, or [add a Gmail](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 
-You will also have to do this if your admin is planning to migrate your [Gmail](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Office 365.
+You will also have to do this if your admin is planning to migrate your [Gmail](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Office 365.
 
 ## Enable IMAP for Gmail and G Suite Accounts
 
@@ -113,9 +113,9 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 7. Now you're ready to add your Gmail account to Outlook. When you're prompted for a password, you *enter this app password for your Gmail account*. Don't enter your Gmail password. For instructions on adding your Gmail account to Outlook, see these articles:
 
-   - [Add an email account to Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)
+   - [Add an email account to Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
 
-   - [Connect email accounts in Outlook on the web (Office 365)](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d)
+   - [Connect email accounts in Outlook on the web (Office 365)](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d)
 
 ### Optionally revoke the app password
 

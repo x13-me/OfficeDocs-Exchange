@@ -33,7 +33,7 @@ You can add additional administrators in the Exchange Online organization, depen
 > [!IMPORTANT]
 > There is no transfer of permissions between the on-premises organization and the Microsoft 365 or Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Microsoft 365 or Office 365 organization.
 
-For more information, see [Manage Role Groups](https://docs.microsoft.com/Exchange/permissions/role-groups) and [Manage Role Group Members](https://docs.microsoft.com/Exchange/permissions/role-group-members.aspx).
+For more information, see [Manage Role Groups](https://docs.microsoft.com/Exchange/permissions/role-groups) and [Manage Role Group Members](https://docs.microsoft.com/Exchange/permissions/role-group-members).
 
 ## Delegate mailbox permissions
 
@@ -67,6 +67,8 @@ Not all mailbox permissions are fully supported in an Exchange hybrid environmen
   3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 
      ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
+     
+For more information, see [Overview of delegation in an Office 365 hybrid environment](https://docs.microsoft.com/exchange/troubleshoot/delegates/overview-delegation-office-365-hybrid).
 
 #### Mailbox permissions and capabilities NOT supported in hybrid environments
 

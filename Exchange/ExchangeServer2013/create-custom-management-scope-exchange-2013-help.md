@@ -192,4 +192,4 @@ Here are some ways to verify if you've successfully implemented custom managemen
   Add-RoleGroupMember "Vancouver Discovery Management" -Member paralegal@vancouver.contoso.com
   ```
 
-  You can also use the EAC to add members to a role group. For more information, see the "Add members to a role group" section in [Manage Role Group Members](https://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx).
+  You can also use the EAC to add members to a role group. For more information, see the "Add members to a role group" section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).

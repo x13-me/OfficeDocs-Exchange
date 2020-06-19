@@ -1,5 +1,4 @@
 ---
-localization_priority: Priority
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn

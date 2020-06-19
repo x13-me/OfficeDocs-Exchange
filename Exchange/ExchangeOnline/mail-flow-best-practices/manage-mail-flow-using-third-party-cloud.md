@@ -24,7 +24,7 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 
 [Scenario 1 - MX record points to third-party spam filtering](#scenario-1---mx-record-points-to-third-party-spam-filtering)
 
-[Scenario 2 - MX record points to third-party solution without spam filtering](#scenario-2-unsupported---mx-record-points-to-third-party-solution-without-spam-filtering)
+[Scenario 2 - MX record points to third-party solution without spam filtering](#scenario-2---mx-record-points-to-third-party-solution-without-spam-filtering)
 
 > [!NOTE]
 > Examples in this topic use the fictitious organization, Contoso, which owns the domain contoso.com and is a tenant in Exchange Online. This is just an example. You can adapt this example to fit your organization's domain name and third-party service IP addresses where necessary.

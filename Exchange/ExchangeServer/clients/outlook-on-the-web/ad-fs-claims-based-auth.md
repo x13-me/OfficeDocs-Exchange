@@ -853,7 +853,7 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
 ```console
-net stop was /y
+net stop w3svc /y
 ```
 
 ```console

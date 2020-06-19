@@ -962,7 +962,7 @@ The property types that are used in conditions and exceptions are described in t
 <p>In the Exchange Management Shell, use the syntax <code>&quot;AttributeName1:Value1,Value 2 with spaces,Value3...&quot;,&quot;AttributeName2:Word4,Value 5 with spaces,Value6...&quot;</code>, where <code>Value</code> is the word or text pattern that you want to match.</p>
 <p>For example, <code>&quot;City:San Francisco,Palo Alto&quot;</code> or <code>&quot;City:San Francisco,Palo Alto&quot;</code>,<code>&quot;Department:Sales,Finance&quot;</code>.</p>
 <p>When you specify multiple attributes, or multiple values for the same attribute, the <strong>or</strong> operator is used. Don't use values with leading or trailing spaces.</p>
-<p>Note that the <strong>Country</strong> attribute requires the two-letter ISO 3166-1 country code value (for example, DE for Germany). To search for values, see <a href="https://go.microsoft.com/fwlink/p/?linkid=331680">https://go.microsoft.com/fwlink/p/?LinkId=331680</a>.</p></td>
+<p>Note that the <strong>Country</strong> attribute requires the ISO 3166-1 two-letter country code value (for example, DE for Germany). For more information, see <a href="https://www.iso.org/iso-3166-country-codes.html">Country Codes - ISO 316</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><code>Addresses</code></p></td>

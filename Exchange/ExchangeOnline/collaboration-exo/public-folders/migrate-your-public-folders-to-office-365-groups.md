@@ -39,7 +39,7 @@ Public folders are not recommended for the following situations:
 
 Groups in Microsoft 365 and Office 365 let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
 
-For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## Should you migrate your public folders to Microsoft 365 Groups?
 
@@ -63,7 +63,7 @@ While Microsoft 365 Groups offers many advantages, you should be aware of a few 
 
 - **Granular permission roles**. While public folders have a variety of permission roles, Microsoft 365 Groups only provides two: owner and member.
 
-Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) for more information.
+Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?* in [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) for more information.
 
 ## Migrating public folders to Microsoft 365 Groups
 
