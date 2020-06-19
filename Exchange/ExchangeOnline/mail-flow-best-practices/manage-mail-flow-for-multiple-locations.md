@@ -23,7 +23,7 @@ title: Manage mail flow with mailboxes in multiple locations (Exchange Online an
 
 This topic covers the following complex mail flow scenarios using Microsoft 365 or Office 365:
 
-- [Scenario 1: MX record points to Microsoft 365 or Office 365 and Microsoft 365 or Office 365 filters all messages](#scenario-1-mx-record-points-to-microsoft-365-and-office-365-filters-all-messages)
+- [Scenario 1: MX record points to Microsoft 365 or Office 365 and Microsoft 365 or Office 365 filters all messages](#scenario-1-mx-record-points-to-microsoft-365-or-office-365-and-microsoft-365-or-office-365-filters-all-messages)
 
 - [Scenario 2: MX record points to Microsoft 365 or Office 365 and mail is filtered on-premises](#scenario-2-mx-record-points-to-microsoft-365-or-office-365-and-mail-is-filtered-on-premises)
 
