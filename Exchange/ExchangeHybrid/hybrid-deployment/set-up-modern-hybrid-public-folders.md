@@ -34,7 +34,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
 ## What do you need to know before you begin?
 
-1. These instructions assumes that Azure Active Directory Connect synchronization services (Azure AD Connect sync) is configured to synchronize public folder mailbox objects to Exchange Online. Ensure that your public folder mailbox objects are synchronized to Exchange Online and that they have auto-discoverable primary SMTP addresses.
+1. These instructions assume that Azure Active Directory Connect synchronization services (Azure AD Connect sync) is configured to synchronize public folder mailbox objects to Exchange Online. Ensure that your public folder mailbox objects are synchronized to Exchange Online and that they have auto-discoverable primary SMTP addresses.
 
     Here is an example of proper configuration in an on-premises environment:
 
@@ -44,17 +44,17 @@ Here is an example of proper configuration in Exchange Online:
 
 :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online":::  
 
-2. These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
+2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
-3. The public folders in this configuration cannot be accessed using Outlook Web app (Exchange 2013) or Outlook on the web (Exchange 2016 and Exchange 2019).
+3. The public folders in this configuration cannot be accessed using Outlook Web App (Exchange 2013) or Outlook on the web (Exchange 2016 and Exchange 2019).
 
-4. Implementing public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
+4. Implementing public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email addresses assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
 
 5. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later.
 
 6. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-7. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web app or Outlook on the web.
+7. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App or Outlook on the web.
 
     > [!NOTE]
     > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac).
