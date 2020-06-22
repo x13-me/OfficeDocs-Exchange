@@ -23,7 +23,7 @@ In Exchange Server 2013, the maximum size of the default discovery mailbox is 50
 
 - It's not supported.
 
-- It can't be migrated to Office 365.
+- It can't be migrated to Microsoft 365 or Office 365.
 
 - If it's the default discovery mailbox in Exchange Server 2010, it can't be upgraded to Exchange Server 2013.
 

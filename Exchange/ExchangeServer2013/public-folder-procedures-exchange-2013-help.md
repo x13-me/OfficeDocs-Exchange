@@ -33,7 +33,7 @@ Use one or more of the procedures listed below to get your public folder infrast
 
 [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)
 
-[Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
+[Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
 
 [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online)
 

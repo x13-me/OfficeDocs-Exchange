@@ -13,14 +13,14 @@ ms.collection:
 - M365-email-calendar
 ms:assetid: d5d77069-f70f-4e85-bbe0-d06bfa73b613
 ms.reviewer:
-description: "Learn about hybrid deployments with multiple on-premises forests and a single Office 365 organization."
+description: "Learn about hybrid deployments with multiple on-premises forests and a single Microsoft 365 or Office 365 organization."
 ---
 
 # Hybrid deployments with multiple forests
 
-Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Office 365 organization. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
+Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Microsoft 365 or Office 365 organization. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
-The migration of public folders from an on-premises environment to Office 365 is only supported from a single Active Directory forest. Similarly, accessing public folders in a hybrid state is only supported when the on-premises public folders are housed in a single Active Directory forest.
+The migration of public folders from an on-premises environment to Microsoft 365 or Office 365 is only supported from a single Active Directory forest. Similarly, accessing public folders in a hybrid state is only supported when the on-premises public folders are housed in a single Active Directory forest.
 
 For more information about hybrid deployments, see [Exchange Server hybrid deployments](hybrid-deployment.md).
 
@@ -54,13 +54,13 @@ Multi-forest hybrid deployment prerequisites are almost identical to the hybrid 
   
 - **Exchange servers**: At least one Exchange 2013 server with the Client Access server role, or one Exchange 2016 or later server with the Mailbox role, must be installed in each Active Directory forest configured for hybrid deployment.
 
-  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Office 365 organization service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
+  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Microsoft 365 or Office 365 organization service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
 
   In Exchange 2016 and later, the Mailbox server role handles all inbound and outbound secure transport between your on-premises organization and Exchange Online.
 
 - **Namespace planning**: Each forest in which you install Exchange requires its own unique externally-discoverable namespace. You will specify a forest's unique namespace in the Hybrid Configuration wizard when you run it in each forest.
 
-- **Active Directory synchronization**: All hybrid deployments require Active Directory synchronization with Office 365. If your company has already set up Active Directory synchronization between your multi-forest on-premises organization and Office 365 using Forefront Identity Manager, you can use [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+- **Active Directory synchronization**: All hybrid deployments require Active Directory synchronization with Microsoft 365 or Office 365. If your company has already set up Active Directory synchronization between your multi-forest on-premises organization and Microsoft 365 or Office 365 using Forefront Identity Manager, you can use [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
 - **Single sign-on**: Although not a requirement for hybrid deployments with single Active Directory forests, administrators can choose to configure an SSO server in each Active Directory forest, or to configure a single SSO server if there is a two-way forest trust configured between the on-premises forests. You use either AD FS or password sync to allow for a seamless user authentication experience.
 
@@ -74,7 +74,7 @@ Take a look at the following scenario. It's an example topology that provides an
 
 ![Before hybrid deployment with multiple forests](../media/JJ878063.af1f2a4b-8fe5-4e42-85d2-ef65b880b366.png)
 
-Let's say that you're the network administrator for Contoso and you're interested in configuring a hybrid deployment. You deploy and configure a required Active Directory Synchronization server in Forest A and you also decide to deploy an Active Directory Federation Services (AD FS) server as an option to minimize the number of prompts for account credentials for Contoso users and administrators accessing Office 365 services in Forest A. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
+Let's say that you're the network administrator for Contoso and you're interested in configuring a hybrid deployment. You deploy and configure a required Active Directory Synchronization server in Forest A and you also decide to deploy an Active Directory Federation Services (AD FS) server as an option to minimize the number of prompts for account credentials for Contoso users and administrators accessing Microsoft 365 or Office 365 services in Forest A. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
 
 - Users will use their existing network account credentials for logging on to the on-premises and Exchange Online organizations ("single sign-on").
 
