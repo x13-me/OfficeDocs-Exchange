@@ -120,7 +120,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook 2013
 
-- Outlook for Mac for Microsoft 365 or Office 365
+- Outlook for Mac for Office 365
 
 - Outlook 2016 for Mac
 
@@ -250,7 +250,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 - Outlook 2016 for Mac
 
-- Outlook for Mac for Microsoft 365 or Office 365
+- Outlook for Mac for Office 365
 ::: moniker-end
 
 ## Exchange third-party clients

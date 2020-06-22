@@ -129,7 +129,7 @@ For more information, see [MAPI over HTTP in Exchange Server](../clients/mapi-ov
 
 #### Document collaboration
 
-Exchange 2019, along with SharePoint Server 2019, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Microsoft 365 or Office 365.
+Exchange 2019, along with SharePoint Server 2019, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner.
 
 For more information about SharePoint Server 2019, see [New and improved features in SharePoint Server 2019](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2019).
 

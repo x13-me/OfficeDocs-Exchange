@@ -24,7 +24,7 @@ The information that's included in NDRs is designed to be easy to read and helpf
 
 For procedures related to NDRs in Exchange Server, see [Procedures for DSNs and NDRs in Exchange Server](ndr-procedures.md).
 
-If you need help with NDRs in Microsoft 365 or Office 365 or Exchange Online, see [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+If you need help with NDRs in Microsoft 365, Office 365, or Exchange Online, see [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 ## Information in NDRs
 

@@ -176,7 +176,7 @@ The following tables identify the mail clients that are supported for use togeth
 |Outlook 2013|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|
 |Outlook 2010|Not supported|Supported<sup>1</sup>|Supported<sup>2</sup>|Supported|
 |Outlook 2007|Not supported|Not supported|Supported<sup>3</sup>|Supported|
-|Outlook for Mac for Microsoft 365 or Office 365|Not supported|Supported<sup>1</sup>|Supported|Supported|
+|Outlook for Mac for Office 365|Not supported|Supported<sup>1</sup>|Supported|Supported|
 |Entourage 2008 (EWS)|Not supported|Supported<sup>4</sup>|Supported<sup>4</sup>|Supported<sup>4</sup>|
 
 <sup>1</sup> Requires the latest Office service pack and the latest public update.

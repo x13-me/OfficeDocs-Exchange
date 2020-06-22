@@ -28,7 +28,7 @@ The following table lists the client applications that can be used to access arc
 
 |**Client**|**Access to archive mailbox?**|
 |:-----|:-----|
-|Outlook for Mac for Microsoft 365 or Office 365 <br/><br/> Outlook 2016 for Mac or later <br/><br/> Microsoft 365 Apps for enterprise <br/><br/> Outlook 2013 or later <br/><br/> Outlook on the web|Yes. Users can copy or move items from their primary mailbox to their archive mailbox, and can also use retention policies to move items to the archive. <br/><br/> Outlook doesn't create a local copy of the archive mailbox on a user's computer, even if it's configured to use Cached Exchange Mode. Users can access an archive mailbox in online mode only.|
+|Outlook for Mac for Office 365 <br/><br/> Outlook 2016 for Mac or later <br/><br/> Microsoft 365 Apps for enterprise <br/><br/> Outlook 2013 or later <br/><br/> Outlook on the web|Yes. Users can copy or move items from their primary mailbox to their archive mailbox, and can also use retention policies to move items to the archive. <br/><br/> Outlook doesn't create a local copy of the archive mailbox on a user's computer, even if it's configured to use Cached Exchange Mode. Users can access an archive mailbox in online mode only.|
 |Exchange ActiveSync|No|
 
 > [!NOTE]

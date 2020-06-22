@@ -263,7 +263,7 @@ After you have finished this step (the batch status is **Completed**), verify th
 
 The following known issues can occur during a typical public folders to Microsoft 365 Groups migration.
 
-- The script that transfers SMTP address from mail-enabled public folders to Microsoft 365 or Office 365 group only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
+- The script that transfers SMTP address from mail-enabled public folders to Microsoft 365 or Office 365 groups only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
 
 - If the .csv mapping file has an entry with invalid public folder path, the migration batch displays as **Completed** without throwing an error, and no further data is copied.
 
@@ -281,7 +281,7 @@ This script will read the permissions of the public folders being migrated and t
 
 - Users with access right "Owner" will be added as owners to a group and users with other eligible access rights will be added as members.
 
-- Security groups cannot be added as members to groups in Microsoft 365 or Office 365. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
+- Security groups cannot be added as members of Microsoft 365 groups. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
 
 - When users in security groups that have access rights over a public folder have themselves explicit permissions over the same public folder, explicit permissions will be given preference. For example, consider a case in which a security group called "SG1" has members User1 and User2. Permission entries for the public folder "PF1" are as follows:
 
@@ -289,7 +289,7 @@ This script will read the permissions of the public folders being migrated and t
 
     User1: Owner in PF1
 
-    In this case, User1 will be added as an owner to the group in Microsoft 365 or Office 365.
+    In this case, User1 will be added as an owner to the Microsoft 365 group.
 
 - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
 
@@ -297,7 +297,7 @@ This script can be run even after the lock-down of public folders, with paramete
 
 ### LockAndSavePublicFolderProperties.ps1
 
-This script makes the public folders being migrated read-only. When mail-enabled public folders are migrated, they will first be mail-disabled and their SMTP addresses will be added to the respective groups in Microsoft 365 or Office 365. Then the permission entries will be modified to make them read-only. A back up of the mail properties of mail-enabled public folders, as well as the permission entries of all the public folders, will be copied, before performing any modification on them.
+This script makes the public folders being migrated read-only. When mail-enabled public folders are migrated, they will first be mail-disabled and their SMTP addresses will be added to the respective Microsoft 365 groups. Then the permission entries will be modified to make them read-only. A back up of the mail properties of mail-enabled public folders, as well as the permission entries of all the public folders, will be copied, before performing any modification on them.
 
  If there are multiple migration batches, a separate backup directory should be used with each mapping .csv file.
 
@@ -327,7 +327,7 @@ The following mail properties will be migrated to target groups as part of lock 
 
 - GrantSendOnBehalfTo
 
-The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating mail-enabled public folders will be added as secondary SMTP addresses of the corresponding groups in Microsoft 365 or Office 365. Also, SendAs and SendOnBehalfTo permissions of users on mail-enabled public folders will be given equivalent permission in the corresponding target groups.
+The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating mail-enabled public folders will be added as secondary SMTP addresses of the corresponding Microsoft 365 groups. Also, SendAs and SendOnBehalfTo permissions of users on mail-enabled public folders will be given equivalent permission in the corresponding target groups.
 
 ### Access rights allowed
 
@@ -365,7 +365,7 @@ There might be an interruption in sending emails to mail-enabled public folders 
 
 ### UnlockAndRestorePublicFolderProperties.ps1
 
-This script will re-assign permissions back to public folders, based on the back up file taken during public folder lock-down. This script will also mail-enable public folders that had been mail-disabled, after it removes the folders' SMTP addresses from their respective groups in Microsoft 365 or Office 365. There might be slight downtime during this process.
+This script will re-assign permissions back to public folders, based on the back up file taken during public folder lock-down. This script will also mail-enable public folders that had been mail-disabled, after it removes the folders' SMTP addresses from their respective Microsoft 365 groups. There might be slight downtime during this process.
 
 ## How do I roll back to public folders from Microsoft 365 Groups?
 <a name="rollback"> </a>
@@ -384,8 +384,8 @@ On your Exchange 2016 or Exchange 2019 server, run the following command. In thi
 .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
-Be aware that any items added to the Microsoft 365 or Office 365 group, or any edit operations performed in the groups, are not copied back to your public folders. Therefore there will be data loss, assuming new data was added while the public folder was a group.
+Be aware that any items added to the Microsoft 365 group, or any edit operations performed in the groups, are not copied back to your public folders. Therefore there will be data loss, assuming new data was added while the public folder was a group.
 
 Note also that it's not possible to restore a subset of public folders, which means all of the public folders there were migrated should be restored.
 
-The corresponding groups in Microsoft 365 or Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
+The corresponding Microsoft 365 groups won't be deleted as part of the roll back process. You must clean or delete those groups manually.
