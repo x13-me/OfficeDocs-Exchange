@@ -33,7 +33,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://support.microsoft.com/help/17479).
+Many tasks in the EAC require the use of pop-up windows. In your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -63,7 +63,7 @@ To cycle through EAC regions on the screen, press Ctrl+F6 (forward) or Ctrl+Shif
 
 - Details view in the right pane
 
-- Office 365 app launcher
+- Microsoft 365 or Office 365 app launcher
 
 ## Navigate in the EAC
 
