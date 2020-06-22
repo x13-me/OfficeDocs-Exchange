@@ -69,11 +69,11 @@ For more information about the licensing requirements for Exchange Online Archiv
 
 ## How your data is protected
 
-To learn how the service is protected using Data Resiliency, see [Office 365 Exchange data resiliency in Microsoft 365 and Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-exchange-data-resiliency).
+To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-exchange-data-resiliency).
 
 ## When Can I Restore Outlook data on a Microsoft 365 or Office 365 account without a license?
 
-After the expiration or removal of a Microsoft 365 or Office 365, Microsoft 365 or Office 365 doesn't **instantly** remove your data. The default retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from Microsoft 365 or Office 365.
+After the expiration or removal of a Microsoft 365 or Office 365 license, your data is not **instantly** removed. The default retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from Microsoft 365 or Office 365.
 
 ## How do users restore Outlook data?
 

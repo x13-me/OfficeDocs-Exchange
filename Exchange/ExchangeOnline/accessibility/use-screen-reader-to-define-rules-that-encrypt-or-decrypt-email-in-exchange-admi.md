@@ -88,7 +88,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
    1. In the **Do the following** drop-down box, to select the **Modify the message security** option, press the Down Arrow key until you hear "Modify the message security." Press Enter.
 
-   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Apply Microsoft 365 or Office 365 Message Encryption** option, press the Down Arrow key until you hear "Apply Microsoft 365 or Office 365 Message Encryption." Press Enter.
+   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Apply Office 365 Message Encryption** option, press the Down Arrow key until you hear "Apply Office 365 Message Encryption." Press Enter.
 
 10. To save the new rule, move the focus to the **Save** button by pressing the Tab key until you hear "Save button." Press Enter.
 
@@ -130,7 +130,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
    1. In the **Do the following** drop-down box, to select the **Modify the message security** option, press the Down Arrow key until you hear "Modify the message security." Press Enter.
 
-   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Remove Microsoft 365 or Office 365 Message Encryption** option, press the Down Arrow key until you hear "Remove Microsoft 365 or Office 365 Message Encryption." Press Enter.
+   2. As the focus moves to a list of message security options, you hear the first option in the list, "Apply rights protection." To select the **Remove Office 365 Message Encryption** option, press the Down Arrow key until you hear "Remove Office 365 Message Encryption." Press Enter.
 
 10. To save the new rule, move the focus to the **Save** button by pressing the Tab key until you hear "Save button." Press Enter.
 
