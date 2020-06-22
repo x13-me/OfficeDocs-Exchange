@@ -20,7 +20,7 @@ title: Use batch migration to migrate Exchange Server public folders to Microsof
 
 # Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups
 
-Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](migrate-to-office-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](migrate-to-microsoft-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
 
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange Server public folders.
 
@@ -48,7 +48,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them. The migration batch allows for a mapping of a maximum two sub-folders to a single Microsoft 365 or Office 365 Group mailbox.
 
-- The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Microsoft 365 Groups instead of public folders.
+- The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Microsoft 365 groups instead of public folders.
 
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
 
@@ -56,14 +56,14 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 ## Step 1: Get the scripts
 
-The batch migration to Microsoft 365 Groups requires running a number of scripts at different points in the migration, as described below in this article. Download the scripts and their supporting files [from this location](https://www.microsoft.com/download/details.aspx?id=55985). After all the scripts and files are downloaded, save them to the same location, such as `c:\PFtoGroups\Scripts`.
+The batch migration to Microsoft 365 groups requires running a number of scripts at different points in the migration, as described below in this article. Download the scripts and their supporting files [from this location](https://www.microsoft.com/download/details.aspx?id=55985). After all the scripts and files are downloaded, save them to the same location, such as `c:\PFtoGroups\Scripts`.
 
 Before proceeding, verify you have downloaded and saved all of the following scripts and files:
 
 > [!NOTE]
 > Make sure to save all scripts and files to the same location.
 
-- **AddMembersToGroups.ps1**. This script adds members and owners to Microsoft 365 Groups based on permission entries in the source public folders.
+- **AddMembersToGroups.ps1**. This script adds members and owners to Microsoft 365 groups based on permission entries in the source public folders.
 
 - **AddMembersToGroups.strings.psd1**. This support file is used by the script `AddMembersToGroups.ps1`.
 
@@ -209,7 +209,7 @@ Once users have been added to a group in Microsoft 365 or Office 365, they can b
 
 ## Step 6: Lock down the public folders (public folder downtime required)
 
-When the majority of the data in your public folders has migrated to Microsoft 365 or Microsoft 365 Groups, you can run the script `LockAndSavePublicFolderProperties.ps1` on the Exchange 2016  or Exchange 2019 server to make the public folders read-only. This step ensures that no new data is added to public folders before the migration completes.
+When the majority of the data in your public folders has migrated to Microsoft 365 Groups, you can run the script `LockAndSavePublicFolderProperties.ps1` on the Exchange 2016  or Exchange 2019 server to make the public folders read-only. This step ensures that no new data is added to public folders before the migration completes.
 
 > [!NOTE]
 > If there are mail-enabled public folders (MEPFs) among the public folders being migrated, this step will copy some properties of MEPFs, such as SMTP addresses, to the corresponding group in Microsoft 365 or Office 365 and then mail-disable the public folder. Because the migrating MEPFs will be mail-disabled after the execution of this script, you will start seeing emails sent to MEPFs instead being received in the corresponding groups. For more details, see [Migration scripts](#migration-scripts) later in this article.
@@ -273,7 +273,7 @@ For your reference, this section provides in-depth descriptions for three of the
 
 ### AddMembersToGroups.ps1
 
-This script will read the permissions of the public folders being migrated and then add members and owners to Microsoft 365 Groups as follows:
+This script will read the permissions of the public folders being migrated and then add members and owners to Microsoft 365 groups as follows:
 
 - Users with the following permission roles will be added as members to a group in Microsoft 365 or Office 365. **Permission roles**: Owner, PublishingEditor, Editor, PublishingAuthor, Author
 
