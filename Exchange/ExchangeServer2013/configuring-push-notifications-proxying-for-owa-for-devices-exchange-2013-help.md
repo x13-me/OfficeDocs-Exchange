@@ -29,7 +29,7 @@ In order to enable push notifications, the on-premises Exchange 2013 servers mus
 
 To enable push notifications, the admin must:
 
-1. Enroll your organization in Microsoft 365 or Office 365 for business.
+1. Enroll your organization in Microsoft 365 or Office 365.
 
 2. Update all on-premises servers to Exchange Server 2013 Cumulative Update 3 (CU3) or later.
 
@@ -37,9 +37,9 @@ To enable push notifications, the admin must:
 
 4. Enable push notifications from the on-premises Exchange Server 2013 to Microsoft 365 or Office 365 and verify that push notifications are working.
 
-## Enroll your organization in Microsoft 365 or Office 365 for business
+## Enroll your organization in Microsoft 365 or Office 365
 
-Microsoft 365 and Office 365 are cloud-based services that are designed to help meet your organization's needs for robust security, reliability, and user productivity. Microsoft 365 or Office 365 refers to subscription plans that include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
+Microsoft 365 and Office 365 are cloud-based services that are designed to help meet your organization's needs for robust security, reliability, and user productivity. A variety of available subscription plans include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
 
 Many Microsoft 365 and Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Microsoft 365 and Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Microsoft 365 for business?](https://support.microsoft.com/office/901e2522-c2cf-4b8c-894e-f482cda3347a). For more about each of the services offered through Microsoft 365 and Office 365, see [Microsoft 365 and Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
 

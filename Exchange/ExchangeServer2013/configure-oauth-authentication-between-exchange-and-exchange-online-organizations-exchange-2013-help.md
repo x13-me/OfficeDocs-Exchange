@@ -30,7 +30,9 @@ The new Exchange OAuth authentication process currently enables the following Ex
 We recommend that all mixed Exchange organizations that implement a hybrid deployment with Exchange 2013 and Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
 > [!IMPORTANT]
-> If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.<BR>This feature of Exchange Server 2013 isn't fully compatible with Microsoft 365 or Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Microsoft 365 or Office 365 operated by 21Vianet</A>.
+> - If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.
+>
+> - This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china)..
 
 ## What do you need to know before you begin?
 

@@ -20,14 +20,14 @@ _**Applies to:** Exchange Server 2013_
 There may be situations when you need to temporarily disable federated sharing for your organization. Instead of deleting the existing federation trust or deleting organization relationships and sharing policies that you may need in the future, you can simply disable the organization identifier (OrgID) for the federation trust.
 
 > [!WARNING]
-> For hybrid deployments with Microsoft 365 or Office&nbsp;365, disabling the federation trust for your on-premises servers will also disable hybrid features such as shared calendar free/busy information, MailTips, and message tracking. However, secure mail transport won't be disabled in the hybrid deployment if the federation trust for the on-premises organization is disabled.
+> For hybrid deployments with Microsoft 365 or Office 365, disabling the federation trust for your on-premises servers will also disable hybrid features such as shared calendar free/busy information, MailTips, and message tracking. However, secure mail transport won't be disabled in the hybrid deployment if the federation trust for the on-premises organization is disabled.
 
 To learn more about federation trusts, see [Federation](federation-exchange-2013-help.md). To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 
 For additional management tasks related to federated sharing, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Microsoft 365 or Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Microsoft 365 Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china).
 
 ## What do you need to know before you begin?
 

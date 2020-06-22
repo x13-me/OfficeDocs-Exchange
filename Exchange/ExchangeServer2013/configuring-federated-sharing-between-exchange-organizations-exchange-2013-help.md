@@ -32,7 +32,7 @@ This topic provides a summary of the requirements and configuration steps necess
 For additional management tasks related to federated sharing, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Microsoft 365 or Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Microsoft 365 or Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china)..
 
 ## What do you need to know before you begin?
 
@@ -80,7 +80,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
        To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
-     - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 tenant service organization.
+     - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 organization.
 
        To learn more, see [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation).
 
@@ -107,7 +107,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
      An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2003 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2003 organization, see [Exchange 2003 - Planning Roadmap for Upgrade and Coexistence](https://go.microsoft.com/fwlink/?linkid=268414).
 
      > [!WARNING]
-     > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see <A href="https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem">How to troubleshoot Free/Busy issues when you use Exchange Federation in the Microsoft 365 or Office 365 for enterprises environment</A>.
+     > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
   2. **Configure federated delegation**.
 
@@ -125,7 +125,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
        To learn more, see [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
-     - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 tenant service organization.
+     - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Microsoft 365 or Office 365 organization.
 
        [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation).
 

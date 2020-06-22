@@ -34,7 +34,8 @@ You can convert the following mailboxes to a different type:
 
 - Room or equipment mailbox to shared mailbox
 
- **Note:** If your organization uses a hybrid Exchange environment, you need to manage your mailboxes by using the on-premises Exchange management tools. To convert a mailbox in a hybrid environment, you might need to move the mailbox back to on-premises Exchange, convert the mailbox type, and then move it back to Microsoft 365 or Office 365.
+> [!NOTE]
+> If your organization uses a hybrid Exchange environment, you need to manage your mailboxes by using the on-premises Exchange management tools. To convert a mailbox in a hybrid environment, you might need to move the mailbox back to on-premises Exchange, convert the mailbox type, and then move it back to Microsoft 365 or Office 365.
 
 ## What do you need to know before you begin?
 

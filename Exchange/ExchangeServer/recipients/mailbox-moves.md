@@ -26,7 +26,8 @@ You use mailbox moves to move mailboxes to, from, and within your Exchange organ
 
 - **Remote mailbox moves in hybrid deployments**: In hybrid deployments between on-premises Exchange and Microsoft Office 365, you can move mailboxes from Exchange to Microsoft 365 or Office 365 (known as *onboarding remote move migrations*) and from Microsoft 365 or Office 365 to Exchange (know as *offboarding remote move migrations*). For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 
-    **Note**: For more information about migrating on-premises Exchange organizations to Office 365, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
+> [!NOTE]
+> For more information about migrating on-premises Exchange organizations to Microsoft 365 or Office 365, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 Mailbox moves in Exchange 2016 and Exchange 2019 use the batch move architecture that was introduced in Exchange 2013. The batch move architecture gives you the ability to move mailboxes in large batches. The enhanced management capabilities in the batch move architecture includes:
 
