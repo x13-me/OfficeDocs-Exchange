@@ -77,7 +77,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios
 
-Exchange 2013 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+Exchange 2013 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory servers
 
