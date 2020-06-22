@@ -23,7 +23,7 @@ title: Use batch migration to migrate Exchange Online public folders to Microsof
 
  **Summary**: How to move your Exchange Online public folders to Microsoft 365 Groups.
 
-Through a process known as batch migration, you can move some or all of your Exchange Online public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](migrate-your-public-folders-to-office-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as batch migration, you can move some or all of your Exchange Online public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](migrate-your-public-folders-to-microsoft-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
 
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange Online public folders.
 
