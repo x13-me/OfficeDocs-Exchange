@@ -53,7 +53,7 @@ Processing information in the Microsoft Cloud enables advanced features and capa
 
 With on-premises data being synchronized with Exchange Online, customers have questions about how the data is protected in Exchange Online. The white paper [Encryption in the Microsoft Cloud](https://aka.ms/office365ce) discusses how BitLocker is used for volume-level encryption.
 
-By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Microsoft 365 or Office 365. The white paper [Administrative Access Controls in Microsoft 365](https://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
+By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Microsoft 365 and Office 365. The white paper [Administrative Access Controls in Microsoft 365](https://aka.ms/office365aac) discusses personnel screening, background checks, Lockbox and Customer Lockbox, and more.
 
 [ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Microsoft 365 and Office 365 have implemented.
 
