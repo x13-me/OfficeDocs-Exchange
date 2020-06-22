@@ -54,7 +54,7 @@ Multi-forest hybrid deployment prerequisites are almost identical to the hybrid 
   
 - **Exchange servers**: At least one Exchange 2013 server with the Client Access server role, or one Exchange 2016 or later server with the Mailbox role, must be installed in each Active Directory forest configured for hybrid deployment.
 
-  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Office 365 organization service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
+  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Microsoft 365 or Office 365 organization service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
 
   In Exchange 2016 and later, the Mailbox server role handles all inbound and outbound secure transport between your on-premises organization and Exchange Online.
 
