@@ -23,7 +23,7 @@ manager: serdars
 
 Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 
-To give you an idea of some of the things you can do with PowerShell in Office 365, let's take a look at user mailboxes in Exchange Online PowerShell
+To give you an idea of some of the things you can do with PowerShell in Microsoft 365 and Office 365, let's take a look at user mailboxes in Exchange Online PowerShell.
 
 ## Before you begin
 
