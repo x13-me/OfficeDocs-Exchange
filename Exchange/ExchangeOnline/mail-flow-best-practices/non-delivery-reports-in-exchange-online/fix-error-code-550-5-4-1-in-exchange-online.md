@@ -37,7 +37,7 @@ Here are some steps that you can try to fix the problem yourself.
 
 If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this topic so they can try to resolve the issue for you.
 
-- **Just wait**: It might seem strange, but this error might go away on its own after a few days. If your email admin made changes to your organization's domain name system (DNS) records, the change can prevent you from sending and receiving email for a brief period, even if they did everything correctly (it can take up to 72 hours for DNS changes to propagate on the internet). If you'd like more details about DNS records, see [DNS basics](https://support.office.com/article/854b6b2b-0255-4089-8019-b765cff70377.aspx).
+- **Just wait**: It might seem strange, but this error might go away on its own after a few days. If your email admin made changes to your organization's domain name system (DNS) records, the change can prevent you from sending and receiving email for a brief period, even if they did everything correctly (it can take up to 72 hours for DNS changes to propagate on the internet). If you'd like more details about DNS records, see [DNS basics](https://support.microsoft.com/office/854b6b2b-0255-4089-8019-b765cff70377).
 
 - **Service outage**: A problem with the whole Office 365 service could be causing the problem. Even your email admins can't do anything about service outages except wait for the problem to be resolved.
 
@@ -57,7 +57,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 ### Domain configuration issues
 
-1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Domains** and verify your domain appears in the list as **Active**.
 
@@ -81,7 +81,7 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 - Verify the configuration of the Send connectors and Receive connectors in your on-premises Exchange organization that are used for hybrid. These connectors are configured automatically by the Hybrid Configuration Wizard, and the wizard might need to be run again by your Exchange administrator.
 
-For more information, see Microsoft Knowledge Base article [KB2827473](https://go.microsoft.com/fwlink/p/?LinkId=328236).
+For more information, see [this topic](https://docs.microsoft.com/office365/troubleshoot/antispam/relay-access-denied-ndr).
 
 For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
 
@@ -89,7 +89,7 @@ For more information about transport routing in hybrid deployments, see [Transpo
 
 A service issue in Office 365 might be causing the problem. To check the status of Office 365, do the following steps:
 
-1. Open the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Service health** to see an overview of any issues.
 
@@ -115,7 +115,7 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

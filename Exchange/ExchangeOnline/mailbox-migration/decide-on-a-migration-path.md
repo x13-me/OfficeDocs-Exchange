@@ -66,7 +66,7 @@ If the mailboxes you're migrating contain a large amount of data, you can also u
 
 If you have an extremely large number of mailboxes (5,000+), you might want to hire a partner to help you migrate your email data.
 
-You'll find a list of partners in the [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?LinkID=398254).
+You can search for partners on the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Exchange 2010, 2013 or 2016
 <a name="BK_2010_2013"> </a>
@@ -79,7 +79,7 @@ If your source system is Exchange 2010, Exchange 2013 , or Exchange Server 2016,
 |**Number of mailboxes**|**How quickly do you want to migrate?**|**Use**|
 |:-----|:-----|:-----|
 |Fewer than 150|Over a weekend or a few days.|[Cutover](cutover-migration-to-office-365.md) or [Express migration](use-minimal-hybrid-to-quickly-migrate.md).|
-|Fewer than 150|Slowly, by migrating a few users at a time.|[Exchange Hybrid]https://docs.microsoft.com/exchange/mail-migration-jump)|
+|Fewer than 150|Slowly, by migrating a few users at a time.|[Exchange Hybrid](https://docs.microsoft.com/exchange/mail-migration-jump)|
 |Over 150|Over a weekend or a few days.|[Exchange Hybrid](https://docs.microsoft.com/exchange/mail-migration-jump) <br/> If you have more than 150 mailboxes, the best method is to use an Exchange hybrid migration where you can migrate a limited number of users at a time. This is because cutover migration performance suffers when you try to migrate more than 150 mailboxes.|
 |Over 150|Slowly, by migrating a few users at a time.|[Exchange Hybrid](https://docs.microsoft.com/exchange/mail-migration-jump)|
 
@@ -87,7 +87,7 @@ If the mailboxes you're migrating contain a large amount of data, you can also u
 
 If you have an extremely large number of mailboxes (5,000+), you might want to hire a partner to help you migrate your email data.
 
-You'll find a list of partners in the [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?LinkID=398254).
+You can search for partners on the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Exchange Server 2000 or earlier versions
 <a name="BK_2000"> </a>
@@ -111,7 +111,7 @@ Depending on your source system, see one of the following:
 
 If the mailboxes you're migrating contain a large amount of data, you can also use the [Import service](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) to import PST files to Office 365. You can use the Office 365 Import Service to either ship the files or to import them across the network.
 
-You can also hire a partner to help you migrate your email data. You'll find a list of partners in the [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?LinkID=398254).
+You can also hire a partner to help you migrate your email data. You can search for partners on the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Leave us a comment
 <a name="BKMK_Comment"> </a>

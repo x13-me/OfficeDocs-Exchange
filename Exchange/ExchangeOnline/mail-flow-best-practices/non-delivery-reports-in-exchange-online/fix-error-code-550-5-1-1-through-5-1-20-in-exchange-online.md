@@ -37,7 +37,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
 It sounds too simple, but the wrong email address is the most common issue that causes 5.1.x errors. Check for correct spelling and send the message again if you find an error in the email address.
 
-To resend the message in Outlook, see [Resend an email message](https://support.office.com/article/acd16ac4-c881-477d-b4aa-36168fa96088.aspx).
+To resend the message in Outlook, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 ### Solution 2: Remove the recipient's email address from your Auto-Complete list
 
@@ -45,7 +45,7 @@ You might have an invalid entry in your Auto-Complete list (also known as the _n
 
 #### Fix your Auto-Complete list entries in Outlook
 
-To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 #### Fix your Auto-Complete list entries in Outlook on the web
 
@@ -87,7 +87,7 @@ After you open your mailbox in the light version of Outlook on the web, do the f
 
 4. Log off and close your web browser. The next time you open your mailbox in a supported web browser, you'll use the full version of Outlook on the web.
 
-To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 ### Solution 3: Confirm that the recipient isn't auto-forwarding messages from you to another (and likely, invalid) email address
 
@@ -103,7 +103,7 @@ Check your recent messages in the **Sent Items** folder for strange or unknown m
 
 If you believe that your account has been compromised, follow these steps:
 
-- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://go.microsoft.com/fwlink/p/?linkid=861995).
+- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 - Notify your email admin. Your admin will need to unblock your account before you can send email again.
 
@@ -125,21 +125,11 @@ If the steps in the previous section don't solve the issue for the sender, the s
 
 For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
 
-Log in to an administrator account on the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com), and from the **Dashboard**, do the following:
+Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the **Home** page, do the following items:
 
 1. Check the **Message Center** to see if your organization has a known configuration issue.
 
-   1. Choose **Message center**.
-
-   2. Select **View all**.
-
-   3. Select **Prevent or fix issues**, and perform any relevant suggested actions.
-
-2. Check if there's a current service issue in Office 365 affecting the user's account.
-
-   1. Choose **Service health** to see an overview of any issues.
-
-   2. Select **View all** to get more details about all known issues.
+2. Go to **Health** \> **Service health** to see if there's a current service issue in Office 365 affecting the user's account.
 
 3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Office 365.
 
@@ -176,7 +166,7 @@ For more information, see [Configure email forwarding for a mailbox](../../recip
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

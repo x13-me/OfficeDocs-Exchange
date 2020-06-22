@@ -53,7 +53,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    ![Screenshot shows the Report tab of a bounce message with the Send Again option and text in the body of the email message that says the message couldn't be delivered.](../../media/ecbdcf67-a13e-4d6c-bc56-ecd5c7ce9a4e.png)
 
-   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.office.com/article/acd16ac4-c881-477d-b4aa-36168fa96088.aspx).
+   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 2. In the new copy of your message, select the recipient's email address in the **To** box and then press the **Delete** key.
 
@@ -270,7 +270,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

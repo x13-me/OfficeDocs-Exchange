@@ -25,7 +25,7 @@ description: "With an Exchange-based hybrid deployment, you can choose to either
 
 With an Exchange-based hybrid deployment, you can choose to either move on-premises Exchange mailboxes to the Exchange Online organization or move Exchange Online mailboxes to the Exchange organization. When you move mailboxes between the on-premises and Exchange Online organizations, you use migration batches to perform the remote mailbox move request. This approach allows you to move existing mailboxes instead of creating new user mailboxes and importing user information. This approach is different than migrating user mailboxes from an on-premises Exchange organization to Exchange Online as part of a complete Exchange migration to the cloud. The mailbox moves discussed in this topic are part of administrative Exchange management in a longer-term coexistence relationship between on-premises Exchange and Exchange Online organizations.
 
-For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
+For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 > [!IMPORTANT]
 > You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md).
@@ -45,7 +45,7 @@ For more information about migrating on-premises Exchange organizations to Excha
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
-- The Office 365 Exchange license must be assigned only after the migration is complete. You then have 30 days to assign the license. 
+- The Microsoft 365 or Office 365 Exchange license must be assigned only after the migration is complete. You then have 30 days to assign the license.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -82,10 +82,10 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 
 3. On the **Select a migration type** page, select **Remote move migration** and then click **Next**.
 
-4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Office 365 and click **Add** and then click **OK**. Click **Next**.
+4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Microsoft 365 or Office 365 and click **Add** and then click **OK**. Click **Next**.
 
    > [!NOTE]
-   > If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Office 365 using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Microsoft 365 admin center and you will be able to select them from the user list.```
+   > If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Microsoft 365 or Office 365 by using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Microsoft 365 admin center and you will be able to select them from the user list.```
 
 5. On the **Enter the Windows user account credential** page, enter the on-premises administrator account name in the **On-premises administrator name** text field and enter the associated password for this account in the **On-premises administrator password** text field. For example, "corp\administrator" and a password. Click **Next**.
 
@@ -144,7 +144,7 @@ To remove a completed migration batch:
 ## Step 5: Re-enable offline access for Outlook on the web
 <a name="bkmk_step5owa"> </a>
 
-Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://go.microsoft.com/fwlink/p/?LinkId=286942).
+Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://support.microsoft.com/office/3214839c-0604-4162-8a97-6856b4c27b36).
 
 ## How do you know this worked?
 <a name="bkmk_how"> </a>
@@ -161,4 +161,4 @@ You can also run the following cmdlet in the Exchange Management Shell to verify
 Get-MigrationBatch -Identity <batch name>
 ```
 
-Having problems? Ask for help in the Office 365 forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Office 365 Forums](https://go.microsoft.com/fwlink/p/?linkId=201915)
+Having problems? Ask for help in the Microsoft 365 and Office forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://answers.microsoft.com/en-us/msoffice/forum)

@@ -18,7 +18,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 > [!NOTE]
-> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
+> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332">Deprecating support for SmartScreen in Outlook and Exchange</A>.
 
 The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through Microsoft Update.
 

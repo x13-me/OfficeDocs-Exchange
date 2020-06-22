@@ -31,7 +31,7 @@ To implement specific messaging policies by using transport rules, see these top
 
 - [Common attachment blocking scenarios for transport rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
-- [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
+- [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md)
 
 - [Use transport rules so messages can bypass Clutter](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 

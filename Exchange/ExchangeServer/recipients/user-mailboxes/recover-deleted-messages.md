@@ -139,8 +139,6 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
 
 - In Exchange Server, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
 
-  - [Change the Deleted Item Retention Period for a Mailbox in Exchange Online](https://technet.microsoft.com/library/ce17f1ec-b96c-4c9e-b20a-507fe0afc684.aspx)
-
   - [Configure Deleted Item retention and Recoverable Items quotas](deleted-item-retention-and-recoverable-items-quotas.md)
 
 - Users can recover a deleted item if it hasn't been purged and if the deleted item retention period for that item hasn't expired. If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
