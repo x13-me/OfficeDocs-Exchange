@@ -52,7 +52,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
     Hybrid deployments also support Exchange servers running the Edge Transport server role. Edge Transport servers also need to be updated to the latest CU or RU. We strongly recommend that you deploy Edge Transport servers in a perimeter network. You can't deploy Mailbox or Client Access servers in a perimeter network.
 
-- **Microsoft 365 or Office 365**: Hybrid deployments are supported in all Microsoft 365 and  plans that support Azure Active Directory synchronization. All Microsoft 365 Business Standard, Business Basic, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Microsoft 365 Apps for business and Home plans don't support hybrid deployments.
+- **Microsoft 365 or Office 365**: Hybrid deployments are supported in all Microsoft 365 and Office 365 plans that support Azure Active Directory synchronization. All Microsoft 365 Business Standard, Business Basic, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Microsoft 365 Apps for business and Home plans don't support hybrid deployments.
 
   Learn more at [Microsoft 365](https://www.microsoft.com/microsoft-365).
 
@@ -87,7 +87,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 - **Microsoft .NET Framework**: 4.6.2 or later is required to install Hybrid Configuration Wizard.
 
-- **Unified Messaging-enabled (UM) mailboxes**: If you have UM-enabled mailboxes and you want to move them to Office 365, you need to meet the following requirements **before** you move any UM-enabled mailboxes to Office 365:
+- **Unified Messaging-enabled (UM) mailboxes**: If you have UM-enabled mailboxes and you want to move them to Microsoft 365 or Office 365, you need to meet the following requirements **before** you move them:
 
   - Lync Server 2010, Lync Server 2013, or Skype for Business Server 2015 or later integrated with your on-premises telephony system.
   

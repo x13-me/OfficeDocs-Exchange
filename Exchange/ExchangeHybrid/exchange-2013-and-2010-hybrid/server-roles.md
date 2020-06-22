@@ -48,7 +48,7 @@ Learn more about Exchange capacity planning at [Understanding Multiple Server Ro
 
 Exchange servers provide several important functions for your on-premises organization in a hybrid deployment:
 
-- **Federation**: Exchange 2013 and Exchange 2010 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
+- **Federation**: Exchange 2013 and Exchange 2010 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Microsoft 365 or Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
     Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
 
@@ -76,7 +76,7 @@ The following table describes briefly the changes in services after configuring 
 
 |**Service**|**Before hybrid deployment**|**After hybrid deployment**|**Description**|
 |:-----|:-----|:-----|:-----|
-|Message transport (inbound and outbound)|Exchange 2010 Client Access server|Exchange 2013 Client Access server or Exchange Online Protection (EOP) included withMicrosoft 365 and Office 365|The MX (mail exchanger) record for the domain may remain unchanged or be updated to point to EOP.|
+|Message transport (inbound and outbound)|Exchange 2010 Client Access server|Exchange 2013 Client Access server or Exchange Online Protection (EOP) included with Microsoft 365 and Office 365|The MX (mail exchanger) record for the domain may remain unchanged or be updated to point to EOP.|
 |Outlook Web App public URL|Exchange 2010 Client Access server|Exchange 2013 Client Access server|Exchange 2013 Client Access servers proxy Outlook Web App requests for on-premises mailboxes to Exchange 2010 Client Access servers. Outlook Web App requests for mailboxes hosted on Exchange Online are provided with a link to the Exchange Online Outlook Web App URL.|
 
 ## Exchange server software

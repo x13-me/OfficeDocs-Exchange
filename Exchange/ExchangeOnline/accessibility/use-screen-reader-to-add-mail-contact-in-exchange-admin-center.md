@@ -33,7 +33,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
+Many tasks in the EAC require the use of pop-up windows. In your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -61,7 +61,7 @@ To add a new mail contact, [Use a screen reader to open the Exchange admin cente
 
 6. Tab to the following boxes, and complete the contact information:
 
-   **Note**: Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name..
+   **Note**: Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name.
 
    - **First name**. Type the contact's first name.
 
