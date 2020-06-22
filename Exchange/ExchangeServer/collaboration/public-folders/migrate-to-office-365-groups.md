@@ -119,10 +119,10 @@ The following prerequisites are required in your Exchange environment before you
 
 Click one of the links below for step-by-step instructions on running a batch migration.
 
-- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md)
+- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-microsoft-365-groups.md)
 
 - [Use batch migration to migrate your Exchange Online public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders)
 
-- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help)
+- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help)
 
-- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help)
+- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help)
