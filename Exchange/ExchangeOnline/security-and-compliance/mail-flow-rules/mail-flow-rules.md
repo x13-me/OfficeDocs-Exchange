@@ -26,17 +26,17 @@ This article explains the [components](#mail-flow-rule-components) of mail flow 
 
 For steps to create, copy, and manage mail flow rules, see [Manage mail flow rules](manage-mail-flow-rules.md). For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](test-mail-flow-rules.md) and [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md).
 
-For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
+For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
 
 To implement specific messaging policies by using mail flow rules, see these topics:
 
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+- [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
-- [Enable message encryption and decryption in Office 365](enable-encryption-and-decryption.md)
+- [Enable message encryption and decryption](enable-encryption-and-decryption.md)
 
 - [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
 
-- [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
+- [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 - [Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md)
 
@@ -105,7 +105,7 @@ There are several types of messages that pass through an organization. The follo
 |**Type of message**|**Can a rule be applied?**|
 |:-----|:-----|
 |**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
-|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Message Encryption**: Messages encrypted by Message Encryption in Microsoft 365 or Office 365. For more information, see [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME encrypted messages**|Rules can only access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> Rules with conditions that require inspection of the message's content, or actions that modify the message's content can't be processed.|
 |**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help).|
 |**Clear-signed messages**: Messages that have been signed but not encrypted.|Yes|
@@ -124,7 +124,7 @@ There are several types of messages that pass through an organization. The follo
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
-[Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+[Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
