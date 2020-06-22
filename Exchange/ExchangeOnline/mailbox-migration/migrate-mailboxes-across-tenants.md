@@ -1,5 +1,4 @@
 ---
-localization_priority: Normal
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
 author: mattpennathe3rd
@@ -29,7 +28,7 @@ localization_priority: Priority
    > [!NOTE]
    > At this time, a built-in tenant to tenant migration option is not available.
 
-This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
+This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
 
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 organizations. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 organization.
 
@@ -52,7 +51,7 @@ If using a third-party migration tool to migrate your users, purchase the needed
 
 #### Client considerations
 
-For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
+For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.microsoft.com/office/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.microsoft.com/office/f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
@@ -70,7 +69,7 @@ The source tenant is the Fabrikam Office 365 organization from which you are mig
 
 To create the resources in the target (Contoso) tenant:
 
-1. If the [Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=626003) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation.
+1. If the [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation.
 
    1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
 
@@ -84,7 +83,7 @@ To communicate the migration to the end users in your organization:
 
 1. Create a communication plan and begin to notify users of the upcoming migration and service changes.
 
-2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 3. Make users aware of how to connect to Outlook on the web (formerly known as Outlook Web App) with their new sign on information in case they have a problem after migration.
 
@@ -119,7 +118,7 @@ Next, you'll schedule the TTL test.
 
 1. In DNS, change the TTL value on the MX record for the primary email domain you wish to transfer to a small number (i.e. 5 minutes). If the TTL cannot be lowered to 5 minutes, make note of the lowest value. Example, if the lowest value is 4 hours, the MX record will have to be changed 4 hours before your migration begins.
 
-2. [Mx Lookup](https://go.microsoft.com/fwlink/p/?LinkId=393487) can be used to verify MX and DNS changes.
+2. [Mx Lookup](https://mxtoolbox.com/) can be used to verify MX and DNS changes.
 
 #### Disable directory sync in source tenant
 
@@ -136,7 +135,7 @@ Change your primary MX record from Office 365 to domain that is not reachable, i
 > [!TIP]
 > If your TTL is short, for example, five minutes, this step can be done at the end of the work day to cause less disruption. If you have a larger TTL, you must change the MX record ahead of time to allow the TTL to expire. Example, a four hour TTL must be changed before 2 PM if you plan to begin migrations at 6 PM.
 
-Verify your MX and DNS changes if necessary. Nslookup or a service like [MxToolbox](https://go.microsoft.com/fwlink/p/?LinkId=393487) can be used to verify MX and DNS changes.
+Verify your MX and DNS changes if necessary. Nslookup or a service like [MxToolbox](https://mxtoolbox.com/) can be used to verify MX and DNS changes.
 
 #### Source tenant preparation
 
@@ -156,7 +155,7 @@ The primary email domain, fabrikam.com, must be removed from all objects in the 
 
 7. Use Windows PowerShell command Get-MsolUser -DomainName Fabrikam.com to retrieve a list of all objects that are still using the domain and blocking removal.
 
-8. For common domain removal issues, see [You get an error message when you try to remove a domain from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=393489).
+8. For common domain removal issues, see [You get an error message when you try to remove a domain from Office 365](https://docs.microsoft.com/office365/troubleshoot/administration/error-remove-domain-from-office-365).
 
 #### Target tenant preparation
 
@@ -196,7 +195,7 @@ At the end of migration, Outlook 2007 and 2010 will sync the entire mailbox for 
 
 #### Post migration: Cleanup
 
-User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
+User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
 
 ## Sample Windows PowerShell scripts
 

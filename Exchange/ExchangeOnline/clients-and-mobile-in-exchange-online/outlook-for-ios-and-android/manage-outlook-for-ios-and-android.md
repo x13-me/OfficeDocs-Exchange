@@ -44,7 +44,7 @@ Microsoft recommends that customers use the features of the Enterprise Mobility 
 > [!IMPORTANT]
 > When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
 
-A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).
+A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.microsoft.com/office/c93d9ab9-efb2-4349-9b93-30c30562ee22).
 
 > [!NOTE]
 > When using mobile device cmdlets such as `Get-MobileDevice` to check the status of a device, the timestamp for Outlook for iOS and Android synchronization, indicated by the `LastSyncTime` property, may be up to 15 minutes behind the actual time of synchronization. While device synchronization does occur in real time, the returned time stamp may lag behind.
@@ -82,7 +82,7 @@ Outlook for iOS and Android fully supports the capabilities provided by MDM for 
 
 For detailed information on MDM, see the following resources:
 
-- [Overview built-in Mobile Device Management for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=623837).
+- [Overview built-in Mobile Device Management for Office 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 - [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 

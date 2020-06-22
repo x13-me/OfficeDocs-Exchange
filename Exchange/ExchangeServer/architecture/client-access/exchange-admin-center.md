@@ -255,7 +255,7 @@ The levels of support for operating system and browser combinations that you can
 
   - **Supported**: All functionality and features are supported and have been fully tested.
 
-  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://go.microsoft.com/fwlink/p/?LinkId=823717).
+  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://docs.microsoft.com/lifecycle/announcements/internet-explorer-dotnet-framework-support).
 
   - **n/a**: The browser and operating system combination isn't possible. For example, an older browser on a newer operating system, or vice-versa.
 

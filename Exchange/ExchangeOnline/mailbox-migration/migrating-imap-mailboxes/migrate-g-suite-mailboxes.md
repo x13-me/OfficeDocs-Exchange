@@ -88,9 +88,9 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
     ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
 
-4. [Sign in to the Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
+4. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Users** \> **Active users**. Keep an eye on the **Username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
-    ![username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
+    ![Username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
 
 5. Start Excel.
 
@@ -214,7 +214,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
 - Ask your migrated users to complete the following tasks:
 
-  - Go to the [Office 365 sign-in page](https://go.microsoft.com/fwlink/p/?LinkId=394559), and sign in with your username and temporary password.
+  - Go to the [Office 365 sign-in page](https://login.microsoftonline.com), and sign in with your username and temporary password.
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 
@@ -286,9 +286,9 @@ When you delete the migration batch, the migration service cleans up any records
 
 After your migrate their email, users can import their Gmail calendar and contacts to Outlook:
 
-- [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
 
-- [Import Google Calendar to Outlook](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330.aspx)
+- [Import Google Calendar to Outlook](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
 
 ## Leave us a comment
 

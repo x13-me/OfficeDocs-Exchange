@@ -37,7 +37,7 @@ But, if the NDR also contains `x-dg-ref header is too long`, that's a specific p
 
 ## I got this bounce message. How do I fix it?
 
-If the NDR contains `x-dg-ref header is too long`, use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.office.com/article/338A389D-11DA-47FE-B693-CF41F792FEFA).
+If the NDR contains `x-dg-ref header is too long`, use **HTML** formatting for messages in Outlook instead of **Rich Text Format**. For more information, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 Otherwise, forward the NDR to your admin for help.
 
@@ -59,7 +59,7 @@ The **Diagnostic information for administrators** section in the bounce message 
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
