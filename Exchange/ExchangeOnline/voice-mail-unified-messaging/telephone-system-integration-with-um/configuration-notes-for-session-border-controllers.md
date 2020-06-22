@@ -25,7 +25,7 @@ SBCs require the use of digital certificates to encrypt all traffic between your
 In hybrid or online deployments, a UM IP gateway represents an SBC. The subject common name in the certificate must match the fully qualified domain name (FQDN) value in the Address box on the UM IP gateway that you create. For example, if you specify the FQDN address sbcexternal.contoso.com on your UM IP gateway, make sure that the subject name and subject alternative name in the certificate contain the same value: sbcexternal.contoso.com. The name that you use is case-sensitive, so make sure the case is the same on both the certificate and the UM IP gateway. If you're using an Acme Packet SBC and the common name doesn't match the UM IP gateway's FQDN, the call will be rejected with a 403 error.
 
 > [!NOTE]
-> Because SBCs are designed to sit on the network edge, they also function as a firewall. If you set up an SBC behind your organization's firewall, it can cause configuration problems and is unsupported for connecting to Microsoft 365 or Office 365.
+> Because SBCs are designed to sit on the network edge, they also function as a firewall. If you set up an SBC behind your organization's firewall, it can cause configuration problems and is unsupported for connecting to Microsoft 365 and Office 365.
 
 ## Supported session border controllers
 

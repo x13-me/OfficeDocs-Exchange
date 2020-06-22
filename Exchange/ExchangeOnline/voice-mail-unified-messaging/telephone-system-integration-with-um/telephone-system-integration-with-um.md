@@ -30,7 +30,7 @@ To successfully deploy Unified Messaging (UM), you must have a good understandin
 
 - VoIP gateways
 
-In an on-premises, hybrid, or Microsoft 365 or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Skype for Business Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Skype for Business Server and UM.
+In an on-premises, hybrid, Microsoft 365, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Skype for Business Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Skype for Business Server and UM.
 
 Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Skype for Business Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging.
 

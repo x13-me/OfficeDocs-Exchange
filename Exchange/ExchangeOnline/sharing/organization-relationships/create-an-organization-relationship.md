@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 or Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
+description: Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 and Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Create an organization relationship in Exchange Online
 
-Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 or Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
+Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 and Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 
 ## What do you need to know before you begin?
 
@@ -41,7 +41,7 @@ Set up an organization relationship to share calendar information with an extern
 
 4. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
-5. In the **Domains to share with** box, type the domain for the external Microsoft 365 or Office 365 or Exchange on-premises organization you want to let see your calendars. If you need to enter more than one domain, separate the domain names with a comma. For example, contoso.com, service.contoso.com.
+5. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to enter more than one domain, separate the domain names with a comma. For example, contoso.com, service.contoso.com.
 
 6. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
 
