@@ -24,7 +24,7 @@ In Exchange Server 2013, we moved public folders from a traditional database arc
 The following table lists the limits for public folders in on-premises Exchange Server 2013. Unless the limits are specifically stated as recommended, the values listed in this table are the supported limits for public folders.
 
 > [!IMPORTANT]
-> Looking for Exchange Online limits for Office 365? See <A href="https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits">Exchange Online Limits</A>.
+> Looking for Exchange Online limits for Microsoft 365 or Office 365? See <A href="https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits">Exchange Online Limits</A>.
 
 <table>
 <colgroup>

@@ -20,7 +20,7 @@ description: "There are many paths to migrate data from an on-premises email org
 
 # Performance factors and best practices for hybrid migrations
 
-There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning a migration to Microsoft 365 or Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments. For performance information about other migration methods, see [Microsoft 365 and Office 365 migration performance and best practices](https://docs.microsoft.com/Exchange/mailbox-migration/office-365-migration-best-practices).
+There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning the migration, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments. For performance information about other migration methods, see [Microsoft 365 and Office 365 migration performance and best practices](https://docs.microsoft.com/Exchange/mailbox-migration/office-365-migration-best-practices).
 
 ## Performance factors and best practices for hybrid migrations
 
