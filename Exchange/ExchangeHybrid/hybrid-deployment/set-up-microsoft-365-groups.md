@@ -23,10 +23,10 @@ description: "Learn how to enable on-premises Exchange users to use Microsoft 36
 
 Learn how to enable on-premises Exchange users to use Microsoft 365 Groups in a hybrid deployment.
 
-Groups is a Microsoft 365 and Office 365 service that enables teams to communicate, schedule meetings, and collaborate on documents more easily. All information shared with a group, from email messages sent to the group, to files stored in the group's OneDrive for Business or SharePoint libraries, is available to any member of a group. If you've configured a hybrid deployment between your on-premises Exchange organization and Microsoft 365 or Office 365, you can make groups created in Microsoft 365 or Office 365 available to your on-premises users by following the steps in this topic.
+Microsoft 365 Groups service that enables teams to communicate, schedule meetings, and collaborate on documents more easily. All information shared with a group, from email messages sent to the group, to files stored in the group's OneDrive for Business or SharePoint libraries, is available to any member of a group. If you've configured a hybrid deployment between your on-premises Exchange organization and Microsoft 365 or Office 365, you can make groups created in Microsoft 365 or Office 365 available to your on-premises users by following the steps in this topic.
 
 > [!IMPORTANT]
-> Using Microsoft 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Be sure to check out the [Known issues](#known-issues) section at the end of this topic for fixes to issues you might run into.
+> Using Microsoft 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Check the [Known issues](#known-issues) section at the end of this topic for fixes to known issues.
 
 ## Prerequisites
 
@@ -76,9 +76,9 @@ Before you start, make sure that you've done the following:
 
 ## Configure a group domain
 
-The primary SMTP domain of an Microsoft 365 or Office 365 Group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
+The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
-1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Microsoft 365 or Office 365, check out [Add users and domains to Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Microsoft 365 or Office 365, check out [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Microsoft 365 or Office 365.
 
@@ -93,10 +93,10 @@ The primary SMTP domain of an Microsoft 365 or Office 365 Group is called a grou
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Microsoft 365 or Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
-   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 or Office 365 Group.
+   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 or Office 365 group.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
@@ -113,9 +113,9 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 ### Test using an on-premises mailbox
 
-1. Add an on-premises mailbox to a Microsoft 365 or Office 365 Group.
+1. Add an on-premises mailbox to a Microsoft 365 group.
 
-2. Add a Microsoft 365 or Office 365 mailbox to the same Microsoft 365 or Office 365 Group.
+2. Add a Microsoft 365 or Office 365 mailbox to the same Microsoft 365 group.
 
 3. Log in to the Microsoft 365 or Office 365 mailbox using Outlook on the web.
 
@@ -123,7 +123,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 5. Open the on-premises mailbox using Outlook 2016 or Outlook on the web.
 
-6. Verify that the mailbox received an email message containing the post sent to the Microsoft 365 or Office 365 Group.
+6. Verify that the mailbox received an email message containing the post sent to the Microsoft 365 group.
 
 7. In the same mailbox, compose a reply to the message and send it to the group.
 
@@ -133,7 +133,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 1. Move a mailbox from your on-premises Exchange organization to Microsoft 365 or Office 365.
 
-2. Add the mailbox to an Office Microsoft 365 or Office 365 Group.
+2. Add the mailbox to a Microsoft 365 group.
 
 3. In a new browser session, log into the mailbox that was moved to Microsoft 365 or Office 365.
 
@@ -156,7 +156,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
   Update-Recipient "<group name>"
   ```
 
-- **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to an Microsoft 365 or Office 365 Group when the following conditions are true:
+- **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to a Microsoft 365 group when the following conditions are true:
 
   - The group domain is configured as an authoritative domain in your on-premises Exchange organization.
 
@@ -172,6 +172,6 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **Delivery of external mail to a group fails if you've enabled centralized mail flow**: If centralized mail flow is enabled, mail sent by an external user to a group fails to be delivered, even though the group allows email from external senders.
 
-- **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as an Microsoft 365 or Office 365 Group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
+- **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as a Microsoft 365 group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
-- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to the Microsoft 365 or Office 365 AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to the Microsoft 365 or Office 365 AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to that AutoDiscover URL. Check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.
+- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to the Microsoft 365 or Office 365 AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to the Microsoft 365 or Office 365 AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to that AutoDiscover URL. Check out [Choose the domain to use when creating Microsoft 365 groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.
