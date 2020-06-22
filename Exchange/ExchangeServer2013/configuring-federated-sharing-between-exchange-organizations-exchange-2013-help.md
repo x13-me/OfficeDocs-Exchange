@@ -106,7 +106,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2003 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2003 organization, see [Exchange 2003 - Planning Roadmap for Upgrade and Coexistence](https://go.microsoft.com/fwlink/?linkid=268414).
 
-     > [!WARNING]
+     > [!IMPORTANT]
      > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
   2. **Configure federated delegation**.
