@@ -22,7 +22,7 @@ description: "Summary: How to allow your on-premises Exchange Server 2016 users 
 
  **Summary**: How to allow your on-premises Exchange Server 2016 users to take advantage of using document collaboration with OneDrive for Business and SharePoint Online while in a hybrid configuration.
 
-Recently a new attachment option has been made available in Microsoft 365 or Office 365. In Exchange 2016, this option, known as document collaboration, allows on-premises users to integrate attachments stored on OneDrive for Business directly in their Outlook on the web clients.
+Recently a new attachment option has been made available in Microsoft 365 and Office 365. In Exchange 2016, this option, known as document collaboration, allows on-premises users to integrate attachments stored on OneDrive for Business directly in their Outlook on the web clients.
 
 > [!NOTE]
 > Beginning with the release of Exchange Server 2016, Outlook Web App is now known as Outlook on the web.
@@ -72,7 +72,7 @@ Verify that the following prerequisite steps have been completed, and then use t
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
     > [!NOTE]
-    > See [Set up OneDrive for Business in Microsoft 365 or Office 365](https://docs.microsoft.com/onedrive/onedrive) for more information.
+    > See [OneDrive](https://docs.microsoft.com/onedrive/onedrive) for more information.
 
 Perform the following steps:
 

@@ -69,14 +69,14 @@ If the MRSProxy service isn't already enabled for your on-premises Exchange serv
 ## Step 3: Use the EAC to move mailboxes
 <a name="bkmk_eac"> </a>
 
-You can use the remote move migration wizard on the **Microsoft 365** or **Office 365** tab in the EAC on an Exchange server to either move existing user mailboxes in the on-premises organization to the Exchange Online organization or to move Exchange Online mailboxes to the on-premises organization. Choose one of the following procedures:
+You can use the remote move migration wizard on the **Office 365** tab in the EAC on an Exchange server to either move existing user mailboxes in the on-premises organization to the Exchange Online organization or to move Exchange Online mailboxes to the on-premises organization. Choose one of the following procedures:
 
 ### Move on-premises mailboxes to Exchange Online
 <a name="bkmk_step3Move"> </a>
 
 You can use the remote move migration wizard in the EAC in the on-premises Exchange organization to move existing user mailboxes from on-premises Exchange to Exchange Online:
 
-1. In the EAC, go to **Microsoft 365** or **Office 365** \> **Recipients** \> **Migration**.
+1. In the EAC, go to **Office 365** \> **Recipients** \> **Migration**.
 
 2. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate to Exchange Online**.
 
@@ -109,7 +109,7 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 
 You can use the remote move migration wizard in the EAC in Exchange Online to move existing cloud mailboxes to the on-premises Exchange organization:
 
-1. In the EAC, go to **Microsoft 365** or **Office 365** \> **Recipients** \> **Migration**.
+1. In the EAC, go to **Office 365** \> **Recipients** \> **Migration**.
 
 2. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate from Exchange Online**.
 
@@ -135,7 +135,7 @@ After your mailbox moves have completed, we recommend removing the completed mig
 
 To remove a completed migration batch:
 
-1. Open the EAC and navigate to **Microsoft 365** or **Office 365** \> **Recipients** \> **Migrations**.
+1. Open the EAC and navigate to **Office 365** \> **Recipients** \> **Migrations**.
 
 2. Click a completed migration batch, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
 
@@ -151,9 +151,9 @@ Offline access in Outlook on the web (formerly called Outlook Web App) lets user
 
 When you move existing user mailboxes between the on-premises and Exchange Online organizations, the successful completion of the remote move wizard will be your first indication that moving the mailbox will complete as expected.
 
-Because the mailbox move process takes several minutes to complete, you can also verify that the move is working correctly by opening the EAC and selecting **Microsoft 365** or **Office 365** \> **Recipients** \> **Migration** to display the move status for the mailboxes selected in the remote move wizard. The value of the **Status** is **Syncing** during the mailbox move, and it's **Completed** when the mailbox has successfully moved to either the on-premises or Exchange Online organization.
+Because the mailbox move process takes several minutes to complete, you can also verify that the move is working correctly by opening the EAC and selecting **Office 365** \> **Recipients** \> **Migration** to display the move status for the mailboxes selected in the remote move wizard. The value of the **Status** is **Syncing** during the mailbox move, and it's **Completed** when the mailbox has successfully moved to either the on-premises or Exchange Online organization.
 
-After the mailbox move has completed, you can check that the remote mailbox located on the on-premises or Exchange Online organization has been successfully moved by verifying the mailbox properties. To do this, navigate to **Recipients** \> **Mailboxes** in the EAC for either the on-premises organization or Exchange Online organization. The user mailbox should show a **Mailbox Type** of **Microsoft 365** or **Office 365** for Exchange Online mailboxes and **User** for on-premises mailboxes.
+After the mailbox move has completed, you can check that the remote mailbox located on the on-premises or Exchange Online organization has been successfully moved by verifying the mailbox properties. To do this, navigate to **Recipients** \> **Mailboxes** in the EAC for either the on-premises organization or Exchange Online organization. The user mailbox should show a **Mailbox Type** of **Office 365** for Exchange Online mailboxes and **User** for on-premises mailboxes.
 
 You can also run the following cmdlet in the Exchange Management Shell to verify the status of the migration batch.
 
@@ -161,4 +161,4 @@ You can also run the following cmdlet in the Exchange Management Shell to verify
 Get-MigrationBatch -Identity <batch name>
 ```
 
-Having problems? Ask for help in the Microsoft 365 and Office 365 forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://go.microsoft.com/fwlink/p/?linkId=201915)
+Having problems? Ask for help in the Microsoft 365 and Office forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://answers.microsoft.com/en-us/msoffice/forum)

@@ -142,7 +142,7 @@ You must run the HCW from the computer where you want the agent installed. After
    > [!NOTE]
    > If you don't complete this step before you run the HCW, the HCW will enable MRS proxy. However, we recommend that you complete this step before you run the HCW to ensure the IIS cache has time to clear before HCW validates the endpoint.
 
-3. Go to **Programs and Features** in Control Panel and verify that a previous version of the Microsoft 365 or Office 365 Hybrid Configuration wizard is not already installed. If it is, uninstall it.
+3. Go to **Programs and Features** in Control Panel and verify that a previous version of the Hybrid Configuration Wizard is not already installed. If it is, uninstall it.
 
 4. Install .NET Framework version 4.6.2 on the computer where the HCW is being run. You might need to install a later version of .NET Framework depending on the version of Exchange you have installed. Alternatively, if this version isn't installed, the HCW prompts you to install it or upgrade the version already installed on your computer.
 

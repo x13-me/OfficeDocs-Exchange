@@ -33,7 +33,7 @@ The EAC enables you to perform many deployment tasks and most common day-to-day 
 > [!IMPORTANT]
 > If you want to access the EAC using an account with a mailbox located on an Exchange 2010 Mailbox server (such as a domain administrator account), you must use the following address in your browser to access the EAC: > https://_\<FQDN of Exchange 2013 Client Access server\>_/ECP?ExchClientVer=15
 
-You access the Exchange Online organization in the EAC by selecting the Office 365 cross-premises navigation tab. The cross-premises navigation allows you to easily switch between your Exchange Online and your on-premises Exchange organizations. If you've configured a hybrid deployment, selecting the tab allows you to manage the Exchange Online organization and recipient objects. If you don't have an Exchange Online organization, selecting the Microsoft 365 or Office 365 link will direct you to the Microsoft 365 or Office 365 sign-up page.
+You access the Exchange Online organization in the EAC by selecting the Office 365 cross-premises navigation tab. The cross-premises navigation allows you to easily switch between your Exchange Online and your on-premises Exchange organizations. If you've configured a hybrid deployment, selecting the tab allows you to manage the Exchange Online organization and recipient objects. If you don't have an Exchange Online organization, selecting the Office 365 link will direct you to the sign-up page.
 
 For more information about the EAC, see [Exchange admin center in Exchange 2013](https://docs.microsoft.com/exchange/exchange-admin-center-in-exchange-2013-exchange-2013-help).
 
