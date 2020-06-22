@@ -32,7 +32,7 @@ To protect from accidental or malicious deletion and to facilitate discovery eff
 
 - eDiscovery hold
 
-- Microsoft 365 or Office 365 retention policies
+- Microsoft 365 and Office 365 retention policies
 
 - Mailbox audit logging
 

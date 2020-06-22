@@ -101,7 +101,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
    3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
-      Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The Microsoft 365 and Office 365 activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
+      Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
       > [!NOTE]
       > If you clear the **Audit this rule with severity level** checkbox, rule matches will not show up in the rule reports.
@@ -335,11 +335,11 @@ To learn more, see [View mail protection reports](../../monitoring/use-mail-prot
 
 2. If it is your first time using the Excel mail protection reports, a tab opens to the download page.
 
-   1. Select **Download** to download the Microsoft 365 or Office 365 Excel Plugin for Exchange Online Reporting.
+   1. Select **Download** to download the Excel Plugin for Exchange Online Reporting.
 
    2. Open the download.
 
-   3. In the **Mail Protection reports for Microsoft 365 or Office 365 Setup** dialog box, select **Next**, accept the terms of the license agreement, and then select **Next**.
+   3. In the **Mail Protection reports for Office 365 Setup** dialog box, select **Next**, accept the terms of the license agreement, and then select **Next**.
 
    4. Select the service you are using, and then select **Next**.
 
@@ -347,7 +347,7 @@ To learn more, see [View mail protection reports](../../monitoring/use-mail-prot
 
    6. Select **Install**. A shortcut to the reports is placed on your desktop.
 
-3. On your desktop, select **Microsoft 365 or Office 365 Mail Protection Reports**.
+3. On your desktop, select **Office 365 Mail Protection Reports**.
 
 4. In the report, select the **Rules** tab.
 

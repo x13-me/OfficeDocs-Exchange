@@ -20,7 +20,7 @@ manager: serdars
 
 # Mailbox plans in Exchange Online
 
-A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Microsoft 365 or Office 365 license types. When you assign a license to a new user, the corresponding mailbox plan is used to configure the settings on the new mailbox that's created. If you change the license that's assigned to an existing user, the settings in the mailbox plan that's associated with the new license are applied to the user's existing mailbox.
+A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Microsoft 365 and Office 365 license types. When you assign a license to a new user, the corresponding mailbox plan is used to configure the settings on the new mailbox that's created. If you change the license that's assigned to an existing user, the settings in the mailbox plan that's associated with the new license are applied to the user's existing mailbox.
 
 The following table describes the mailbox plans that you're likely to see in Exchange Online.
 

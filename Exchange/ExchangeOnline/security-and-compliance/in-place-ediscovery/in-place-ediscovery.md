@@ -142,7 +142,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 - **Mailboxes**: You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search.
 
-    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add a Microsoft 365 or Office 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
+    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add a Microsoft 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
 
 - **Search query**: You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query:
 

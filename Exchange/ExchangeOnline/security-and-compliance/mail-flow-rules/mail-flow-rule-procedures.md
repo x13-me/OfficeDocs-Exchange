@@ -24,7 +24,7 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md) Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using mail flow rules.
 
-[Create blocked sender lists in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365?view=o365-worldwide) Information to help you create domain or user-based blocked sender lists by using mail flow rules.
+[Create blocked sender lists in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365) Information to help you create domain or user-based blocked sender lists by using mail flow rules.
 
 [Manage message approval](manage-message-approval.md) Information to help you create moderated distribution groups, and forward messages matching a wide variety of criteria to specific approvers.
 
