@@ -172,9 +172,9 @@ If an administrator deletes a user account that has a mailbox, the Exchange Info
 
 3. Retain the mailbox until all data has been expunged, or until preserving the data is no longer required.
 
-## Migrating mailboxes on hold from Exchange 2013 to Office 365
+## Migrating mailboxes on hold from Exchange 2013 to Microsoft 365 or Office 365
 
-If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange 2013 mailbox to Exchange Online in Office 365:
+If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange 2013 mailbox to Exchange Online in Microsoft 365 or Office 365:
 
 - If the on-premises mailbox is on Litigation Hold or In-Place Hold, the hold settings are preserved after the mailbox is moved to Exchange Online.
 
@@ -183,11 +183,11 @@ If you have an Exchange hybrid deployment, the following conditions are true whe
 > [!NOTE]
 > Hold settings and content in the Recoverable Items folder are also preserved when you move (offboard) an Exchange Online mailbox to your on-premises Exchange 2013 organization.
 
-There are other ways to migrate on-premises email data to Office 365, such as using a Staged Exchange migration or a Cutover Exchange migration.
+There are other ways to migrate on-premises email data to Microsoft 365 or Office 365, such as using a Staged Exchange migration or a Cutover Exchange migration.
 
-- A staged migration can be used to migrate mailboxes from Exchange 2003 or Exchange 2007 to Office 365. In these versions of Exchange, the Recoverable Items folder (and its functionality) doesn't exist. So when you migrate Exchange 2003 or Exchange 2007 mailboxes to Office 365, there isn't any Recoverable Items folder content to move.
+- A staged migration can be used to migrate mailboxes from Exchange 2003 or Exchange 2007 to Office 365. In these versions of Exchange, the Recoverable Items folder (and its functionality) doesn't exist. So when you migrate Exchange 2003 or Exchange 2007 mailboxes to Microsoft 365 or Office 365, there isn't any Recoverable Items folder content to move.
 
-- A cutover migration can be used to migrate mailboxes from Exchange 2003, Exchange 2007, and Exchange 2010 to Office 365. As previously stated, Exchange 2003 and Exchange 2007 mailboxes don't have a Recoverable Items folder that can be migrated. Because the Recover Items folder was introduced in Exchange 2010, content in the Recoverable Items folder is migrated to Office 365 when you use a cutover migration to migrate Exchange 2010 mailboxes.
+- A cutover migration can be used to migrate mailboxes from Exchange 2003, Exchange 2007, and Exchange 2010 to Microsoft 365 or Office 365. As previously stated, Exchange 2003 and Exchange 2007 mailboxes don't have a Recoverable Items folder that can be migrated. Because the Recover Items folder was introduced in Exchange 2010, content in the Recoverable Items folder is migrated to Microsoft 365 or Office 365 when you use a cutover migration to migrate Exchange 2010 mailboxes.
 
 > [!TIP]
-> For Exchange 2013 and Exchange 2010, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
+> For Exchange 2013 and Exchange 2010, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Microsoft 365 or Office 365.
