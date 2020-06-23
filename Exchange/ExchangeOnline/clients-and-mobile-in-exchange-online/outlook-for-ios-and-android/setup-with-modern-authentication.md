@@ -74,7 +74,7 @@ Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) u
 
 For more information, see [How to enable cross-app SSO on iOS using ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-sso-ios).
 
-If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users adding an account in Outlook for iOS and Android will see the discovered account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen.
+If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS and Android will detect that token and use it for its own authentication. When such a token is detected, users adding an account in Outlook for iOS and Android will see the discovered account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen.
 
 The following images show an example of account configuration via single sign-on for a first-time user:
 

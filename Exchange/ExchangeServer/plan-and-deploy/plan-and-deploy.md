@@ -58,7 +58,7 @@ This topic contains links to topics and information about planning for and then 
 
 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
 
-> Learn about planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange organization.
+> Learn about planning a hybrid deployment with Microsoft 365 or Office 365 and your on-premises Exchange organization.
 
 [Exchange Server virtualization](../plan-and-deploy/virtualization.md)
 

@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Clutter is a feature in Office 365 designed to help users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
+description: Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,11 +20,11 @@ manager: serdars
 
 # Clutter notifications in Outlook
 
-Clutter is a feature in Office 365 designed to help users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
+Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 
 ## Clutter Notifications
 
- Clutter is enabled by users in their O365 **Settings** options. This article contains information for O365 administrators about notifications from Clutter to end-users.
+ Clutter is enabled by users in their Microsoft 365 or Office 365 **Settings** options. This article contains information for Microsoft 365 or Office 365 administrators about notifications from Clutter to end-users.
 
 These notifications are an integral part of the Clutter feature and therefore can't be suspended by administrators. Clutter is a user election, similar to someone opting to use Conversation view, and the notifications help the user understand the state of Clutter across all clients. There is no central reporting available at this time. For information on how to change the branding of the notifications see [Change the branding of Clutter notifications](change-clutter-notification-branding.md).
 

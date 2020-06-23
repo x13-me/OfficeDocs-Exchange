@@ -194,18 +194,18 @@ The following tables displays acceptable thresholds and information about common
 </tr>
 <tr class="odd">
 <td><p>TCPv6\Connection Failures</p></td>
-<td><p>Shows the number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. The number of TCP connections that can be established is constrained by the size of the nonpaged pool. When the nonpaged pool is depleted, no new connections can be established.</p></td>
-<td><p>Not applicable</p></td>
+<td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from the SYN-SENT state or the SYN-RCVD state, plus the number of times TCP connections have made a direct transition to the LISTEN state from the SYN-RCVD state.</p></td>
+<td><p>An increasing number of failures, or a consistently increasing rate of failures, can indicate a bandwidth shortage.</p></td>
 </tr>
 <tr class="even">
 <td><p>TCPv4\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 <tr class="odd">
 <td><p>TCPv6\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 </tbody>
 </table>

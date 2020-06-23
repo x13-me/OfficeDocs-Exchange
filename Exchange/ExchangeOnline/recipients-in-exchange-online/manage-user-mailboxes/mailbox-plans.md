@@ -20,7 +20,7 @@ manager: serdars
 
 # Mailbox plans in Exchange Online
 
-A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Office 365 license types. When you assign a license to a new user, the corresponding mailbox plan is used to configure the settings on the new mailbox that's created. If you change the license that's assigned to an existing user, the settings in the mailbox plan that's associated with the new license are applied to the user's existing mailbox.
+A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Microsoft 365 and Office 365 license types. When you assign a license to a new user, the corresponding mailbox plan is used to configure the settings on the new mailbox that's created. If you change the license that's assigned to an existing user, the settings in the mailbox plan that's associated with the new license are applied to the user's existing mailbox.
 
 The following table describes the mailbox plans that you're likely to see in Exchange Online.
 
@@ -33,7 +33,7 @@ The following table describes the mailbox plans that you're likely to see in Exc
 
 **Notes**:
 
-- The availability of a mailbox plan in your organization is determined by your selection when you enroll in Office 365. A subscription might contain multiple mailbox plans. A mailbox plan might not be available to you based on your subscription or the age of your organization.
+- The availability of a mailbox plan in your organization is determined by your selection when you enroll in Microsoft 365 or Office 365. A subscription might contain multiple mailbox plans. A mailbox plan might not be available to you based on your subscription or the age of your organization.
 
 - The name value of the mailbox plan is appended with `-<GUID>` (for example, `ExchangeOnlineEnterprise-44107b46-a8c4-4573-a7ba-bb004fde4d58`).
 
@@ -44,8 +44,8 @@ The _modifiable_ settings that are available in mailbox plans by using the **Set
 |**Setting**|**Default value**|**Description**|
 |:-----|:-----|:-----|
 |_IssueWarningQuota_|Varies by license.|The user receives a warning message when their mailbox reaches the specified size. <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_MaxReceiveSize_|Varies by license.|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
-|_MaxSendSize_|Varies by license.|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_MaxReceiveSize_|Varies by license.|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_MaxSendSize_|Varies by license.|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
 |_ProhibitSendQuota_|Varies by license.|The user receives a warning message and they can't send messages when their mailbox reaches the specified size (which must be greater than the _IssueWarningQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
 |_ProhibitSendReceiveQuota_|Varies by license.|The user receives a warning message and they can't send or receive messages when their mailbox reaches the specified size (which must be greater than the _ProhibitSendQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
 |_RetainDeletedItemsFor_|`14.00:00:00` (14 days)|Depending on your subscription, you can change this value up to 30 days. For more information, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md).|

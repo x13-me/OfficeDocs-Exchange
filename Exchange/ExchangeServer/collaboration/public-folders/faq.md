@@ -30,7 +30,7 @@ For more information on public folder migrations, see:
 - [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
 - [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
 - [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
-- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md)
+- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-microsoft-365-groups.md)
 
 ### What are the supported public folder migration scenarios?
 
@@ -84,7 +84,7 @@ The currently supported Outlook clients for [Exchange Server](../../plan-and-dep
 
 Public folder access works from Outlook for Windows desktop and Outlook for Mac. However, smart phone client apps including Outlook for Android or Outlook for iOS do not support connecting to public folders.
 
-If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## Are there any limitations in the clients?
 
@@ -145,7 +145,7 @@ Starting in Exchange 2013, public folder permissions are managed by using role-b
 
 No. Not at this time. 
 
-If you would like to have functionality similar to public folders with audit logging, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with audit logging, consult [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## What are the limits on public folders? What are the recommendations?
 

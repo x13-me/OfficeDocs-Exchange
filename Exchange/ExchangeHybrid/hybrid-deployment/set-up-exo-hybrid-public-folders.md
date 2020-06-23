@@ -23,7 +23,7 @@ description: "Summary: Instructions for enabling on-premises Exchange 2013 users
 
  **Summary**: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online.
 
-In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server 2013 on-premises environment. Similarly, Exchange 2013 users may need to access public folders in Office 365 or Exchange Online.
+In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server 2013 on-premises environment. Similarly, Exchange 2013 users may need to access public folders in Microsoft 365 or Office 365 or Exchange Online.
 
 This article describes how to enable users in your Exchange 2013 on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange 2013 public folders, see [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
 
@@ -36,7 +36,7 @@ This article describes how to enable users in your Exchange 2013 on-premises env
 
 2. These instructions assume that Outlook Anywhere is enabled and functional on the on-premises Exchange server(s). For information on how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
 
-3. Implementing public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
+3. Implementing public folder coexistence for a hybrid deployment of Exchange with Microsoft 365 or Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Microsoft 365 or Office 365, and other attributes.
 
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later.
 
@@ -76,7 +76,7 @@ Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize th
    Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
    ```
 
-   Where *Credential* is your Microsoft 365 Office 365 username and password.
+   Where *Credential* is your Microsoft 365 or Office 365 user name and password.
 
    > [!NOTE]
    > We recommend that you run this script daily to synchronize your mail-enabled public folders.
@@ -93,7 +93,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
    Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
    ```
 
-   Where *Credential* is your Microsoft 365 or Office 365 username and password.
+   Where *Credential* is your Microsoft 365 or Office 365 user name and password.
 
    > [!NOTE]
    > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud.

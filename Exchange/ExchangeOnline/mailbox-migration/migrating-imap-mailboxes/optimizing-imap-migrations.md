@@ -5,7 +5,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
 ms.reviewer: 
-description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Office 365, you have a few choices for optimizing the migration performance.
+description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Microsoft 365 or Office 365, you have a few choices for optimizing the migration performance.
 title: Tips for optimizing IMAP migrations
 ms.collection: 
 - exchange-online
@@ -26,7 +26,7 @@ manager: serdars
 
 # Tips for optimizing IMAP migrations
 
-When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Office 365, you have a few choices for optimizing the migration performance.
+When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Microsoft 365 or Office 365, you have a few choices for optimizing the migration performance.
 
 ## Optimize IMAP migrations
 
@@ -64,7 +64,7 @@ Here are some tips for optimizing an IMAP migration:
 
   - Determine the optimal number of simultaneous connections to the IMAP server that minimize the impact on your internet bandwidth.
 
-  - Verify that folders you exclude aren't migrated to Office 365 mailboxes.
+  - Verify that folders you exclude aren't migrated to Microsoft 365 or Office 365 mailboxes.
 
   - Determine how long it takes to migrate a batch of users.
 
@@ -73,9 +73,9 @@ Here are some tips for optimizing an IMAP migration:
 - **Use administrator credentials in the CSV file to migrate email**: This method is the least disruptive and inconvenient for users, and it will help minimize synchronization errors caused when users change the password on their on-premises account. It also saves you from having to obtain or change user passwords. If you use this method, be sure to verify that the administrator account you use has the necessary permissions to access the mailboxes you're migrating.
 
     > [!NOTE]
-    > If you decide to use user credentials in the CSV file, consider globally changing users' passwords, and then preventing users from changing their password on their on-premises account before you migrate their mailboxes. If users change their password before their mailbox is migrated to the cloud-based mailbox, the migration will fail. If they change their password after the mailbox is migrated, new email sent to their mailbox on the IMAP server won't be migrated to their Office 365 mailbox.
+    > If you decide to use user credentials in the CSV file, consider globally changing users' passwords, and then preventing users from changing their password on their on-premises account before you migrate their mailboxes. If users change their password before their mailbox is migrated to the cloud-based mailbox, the migration will fail. If they change their password after the mailbox is migrated, new email sent to their mailbox on the IMAP server won't be migrated to their Microsoft 365 or Office 365 mailbox.
 
-- **Don't delete mailboxes or change their SMTP addresses during migration**: The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of an Office 365 or on-premises mailbox that's been migrated.
+- **Don't delete mailboxes or change their SMTP addresses during migration**: The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of a Microsoft 365, Office 365, or on-premises mailbox that's been migrated.
 
 - **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Microsoft 365 or Office 365 organization. Consider the following:
 

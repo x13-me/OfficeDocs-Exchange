@@ -72,6 +72,4 @@ By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly 
 
 ## Keyboard shortcuts in other Microsoft products and services
 
-To learn about keyboard shortcuts for other Microsoft products, visit the [Keyboard Shortcuts](https://go.microsoft.com/fwlink/p/?linkid=248894) page on the Microsoft Accessibility Web site. There, you can search for the keyboard shortcuts for a specific product, such as Windows Server 2008.
-
-In addition, for information about accessibility features in Microsoft Office 365, including keyboard shortcuts, see [Office 365 - Microsoft accessibility](https://www.microsoft.com/Accessibility/office).
+To learn about accessibility features in Microsoft 365 or Office 365, including keyboard shortcuts, visit the [Microsoft Accessibility website](https://www.microsoft.com/accessibility/).

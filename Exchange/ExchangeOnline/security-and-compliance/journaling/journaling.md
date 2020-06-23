@@ -116,11 +116,11 @@ When you configure an alternate journaling mailbox, you should use the same crit
 
 ## Journal reports
 
-A journal report is the message that the Journaling agent generates when a message matches a journal rule and is to be submitted to the journaling mailbox. The original message that matches the journal rule is included unaltered as an attachment to the journal report. The body of a journal report contains information from the original message such as the sender email address, message subject, message-ID, and recipient email addresses. This is also referred to as envelope journaling, and is the only journaling method supported by Office 365.
+A journal report is the message that the Journaling agent generates when a message matches a journal rule and is to be submitted to the journaling mailbox. The original message that matches the journal rule is included unaltered as an attachment to the journal report. The body of a journal report contains information from the original message such as the sender email address, message subject, message-ID, and recipient email addresses. This is also referred to as envelope journaling, and is the only journaling method supported by Microsoft 365 and Office 365.
 
 ### Journal reports and IRM-protected messages
 
-When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
+When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
 
 > [!IMPORTANT]
 > The Journal Report Decryption feature currently does not support the use of custom OME templates. If you utilize a custom OME template, the Journal report will not contain a decrypted copy of the message. Journal Report Decryption currently only works with the default OME templates provided by Exchange Online (Encrypt and Do Not Forward).

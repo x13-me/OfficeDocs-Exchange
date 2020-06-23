@@ -46,7 +46,7 @@ Basic authentication is also known as _proxy authentication_ because the email c
 
 - **Federated authentication**: The IdP is an on-premises solution like Active Directory Federation Services (AD FS).
 
-These authentication models are described in the following sections.
+These authentication models are described in the following sections. For more information, see [Choose the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 ### Cloud authentication
 
@@ -97,6 +97,8 @@ Because authentication policies operate at the user level, Exchange Online can o
 4. The on-premises AD FS can either accept or reject the authentication request for ian@contoso.com. If the request is accepted, a SAML token is returned to Exchange Online. As long as the SAML token's **ImmutableId** value matches a user in Azure Active Directory, Azure AD will issue a user ticket to Exchange Online (the **ImmutableId** value is set during Azure Active Directory Connect setup).
 
 In this scenario, if contoso.com uses on-premises AD FS server for authentication, the on-premises AD FS server will still receive authentication requests for non-existent usernames from Exchange Online during a password spray attack.
+
+In an Exchange hybrid deployment, authentication for your on-premises mailboxes will be handled by your on-premises Exchange servers, and authentication policies won't apply. For mailboxes moved to Exchange Online, the Autodiscover service will redirect them to Exchange Online, and then some of the previous scenarios will apply.
 
 ## Authentication policy procedures in Exchange Online
 

@@ -1,12 +1,11 @@
 ---
-localization_priority: Normal
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 
-title: How to migrate mailboxes from one Office 365 organization to another
+title: How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,12 +23,12 @@ localization_priority: Priority
 
 ---
 
-# How to migrate mailboxes from one Office 365 organization to another
+# How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another
 
    > [!NOTE]
    > At this time, a built-in tenant to tenant migration option is not available.
 
-This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
+This article explains how to migrate mailboxes and service settings from one Microsoft 365 or Office 365 organization to another Microsoft 365 or Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with a [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
 
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 organizations. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 organization.
 
@@ -44,7 +43,7 @@ This scenario assumes that user, group and other objects from the Fabrikam Compa
 
 When complete, all Fabrikam accounts will exist in the Contoso.com Office 365 organization, and will all use @fabrikam.com for the UPN. The final addressing scheme was chosen for simplicity and brevity but can of course be modified to meet your requirements.
 
-![How mailbox data can be moved from one Office 365 organization to another](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
+![How mailbox data can be moved from one Microsoft 365 or Office 365 organization to another](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
 
 ### Planning: Two weeks before you migrate
 
@@ -52,7 +51,7 @@ If using a third-party migration tool to migrate your users, purchase the needed
 
 #### Client considerations
 
-For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
+For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.microsoft.com/office/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.microsoft.com/office/f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
@@ -84,7 +83,7 @@ To communicate the migration to the end users in your organization:
 
 1. Create a communication plan and begin to notify users of the upcoming migration and service changes.
 
-2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 3. Make users aware of how to connect to Outlook on the web (formerly known as Outlook Web App) with their new sign on information in case they have a problem after migration.
 
@@ -196,7 +195,7 @@ At the end of migration, Outlook 2007 and 2010 will sync the entire mailbox for 
 
 #### Post migration: Cleanup
 
-User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
+User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
 
 ## Sample Windows PowerShell scripts
 

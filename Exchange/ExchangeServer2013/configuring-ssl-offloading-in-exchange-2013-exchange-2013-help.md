@@ -318,7 +318,7 @@ To enable SSL offloading for the Autodiscover service, you need to remove the SS
 
 ## Configuring SSL Offloading for the Mailbox Replication Proxy Service (MRSProxy)
 
-The Mailbox Replication Proxy (MRSProxy) service is installed on every Exchange 2013 Client Access server. MRSProxy helps you to make cross-forest move requests on-premises as well as moving on-premises mailboxes to Office 365. However, by default, MRSProxy is disabled. If you are enabling it, you should enable it in the remote Exchange forest for cross-forest, on-premises mailbox moves or in the on-premises Exchange forest for moving a mailbox to Office 365. Although the MRSProxy service runs under Exchange Web Services (EWS), it's not supported to configure SSL offloading.
+The Mailbox Replication Proxy (MRSProxy) service is installed on every Exchange 2013 Client Access server. MRSProxy helps you to make cross-forest move requests on-premises as well as moving on-premises mailboxes to Microsoft 365 or Office 365. However, by default, MRSProxy is disabled. If you are enabling it, you should enable it in the remote Exchange forest for cross-forest, on-premises mailbox moves or in the on-premises Exchange forest for moving a mailbox to Microsoft 365 or Office 365. Although the MRSProxy service runs under Exchange Web Services (EWS), it's not supported to configure SSL offloading.
 
 The reason for this is that the MRSProxy service expects traffic to be signed/encrypted. Any hardware load balancer or firewall must reencrypt the MRSProxy traffic before sending it to Client Access servers. If this is the case, it is recommended that you configure SSL bridging for offloading to work.
 

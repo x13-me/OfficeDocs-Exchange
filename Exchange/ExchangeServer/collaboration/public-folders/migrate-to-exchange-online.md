@@ -7,11 +7,11 @@ ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
-description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
+description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Microsoft 365 or Office 365.'
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office 365, migrate Exchange public folders to Microsoft 365
+title: Batch migrate Exchange Server public folders to Microsoft 365 or Office 365
 
 ---
 
@@ -31,7 +31,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - When you upgrade to Exchange Server 2013 CU15 or later, or to Exchange Server 2016 CU4 or later, you must also prepare Active Directory or your public folder migration will fail. This Active Directory preparation ensures that all relevant PowerShell cmdlets and parameters are available to you for preparing for and running the migration. See [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md) for more information.
 
-- In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
+- In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Microsoft 365, Office 365, or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
 
 - In Exchange Server, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
 
@@ -40,9 +40,9 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
     > [!NOTE]
     > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters.
 
-- In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes. However, a maximum of 100 public folders is supported for migration from Exchange Server.
+- In Microsoft 365, Office 365, and Exchange Online, you can create a maximum of 1000 public folder mailboxes. However, a maximum of 100 public folders is supported for migration from Exchange Server.
 
-- If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
+- If you intend to migrate users to Microsoft 365 or Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 - MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://docs.microsoft.com/Exchange/architecture/mailbox-servers/mrs-proxy-endpoint) for details.
 
@@ -54,7 +54,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error. Also note that once the migration batch has a status of "Completed," no more data can be copied over from the source environment.
 
-- We recommend that you don't use Outlook's PST export feature to migrate public folders to Office 365 or Exchange Online. Public folder mailbox growth in Exchange Online is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders, and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that instead you use the cmdlet-based instructions in this article to migrate your public folders. If you still decide to migrate public folders using PST export, see [Migrate Public Folders to Office 365 by using Outlook PST export](#migrate-public-folders-to-office-365-by-using-outlook-pst-export)  later in this article.
+- We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365, Office 365, or Exchange Online. Public folder mailbox growth in Exchange Online is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders, and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that instead you use the cmdlet-based instructions in this article to migrate your public folders. If you still decide to migrate public folders using PST export, see [Migrate Public Folders to Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export)  later in this article.
 
 - Before you begin, please read this article in its entirety. For some steps there is downtime required. During this downtime, public folders will not be accessible by anyone. Please also review the list of [known issues](#known-issues).
 
@@ -63,7 +63,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855) and [Exchange 2010/2013/2016/EXO Public Folders to Office365 Pre-Migration Scripts](https://www.microsoft.com/download/details.aspx?id=100414).
+1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855) and [Exchange 2010/2013/2016/EXO Public Folders to Microsoft 365 or Office 365 Pre-Migration Scripts](https://www.microsoft.com/download/details.aspx?id=100414).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -71,7 +71,7 @@ The scripts and files you're downloading are:
 
 - `SourceSideValidations.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with actions required to fix the issues. You'll run this script on the Exchange server on-premises.
 
-- `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Office 365. You'll run this script on an on-premises Exchange server.
+- `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Microsoft 365 or Office 365. You'll run this script on an on-premises Exchange server.
 
 - `SyncModernMailPublicFolders.strings.psd1` This support file is used by the Sync-ModernMailPublicFolders.ps1 script and should be downloaded to the same location.
 
@@ -108,7 +108,7 @@ For your migration to be successful, you should:
 
 In Exchange Management Shell (on-premises) perform the following steps:
 
-1. Once your migration is complete, it will take some time for DNS caches across the Internet to direct messages to your mail-enabled public folders in their new location in Exchange Online. You can ensure that your newly migrated mail-enabled public folders receive messages during this DNS transition period by creating an accepted domain with a well-known name. To do this, run the following command in your Exchange on-premises environment. In this example, `target domain` is your Office 365 or Exchange Online domain, for which a send connector has already been configured by the Hybrid Configuration Wizard.
+1. Once your migration is complete, it will take some time for DNS caches across the Internet to direct messages to your mail-enabled public folders in their new location in Exchange Online. You can ensure that your newly migrated mail-enabled public folders receive messages during this DNS transition period by creating an accepted domain with a well-known name. To do this, run the following command in your Exchange on-premises environment. In this example, `target domain` is your Microsoft 365, Office 365, or Exchange Online domain, for which a send connector has already been configured by the Hybrid Configuration Wizard.
 
    ```PowerShell
    New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
@@ -245,7 +245,7 @@ In Exchange Online PowerShell, do the following steps:
       Get-PublicFolder -Recurse
       ```
 
-3. If you do have any public folders in Office 365 or Exchange Online, run the following PowerShell command to remove them (after confirming that they are not needed). Make sure that you've saved any information within these public folders before deleting them, because all information will be permanently deleted when you remove the public folders.
+3. If you do have any public folders in Microsoft 365 or Office 365 or Exchange Online, run the following PowerShell command to remove them (after confirming that they are not needed). Make sure that you've saved any information within these public folders before deleting them, because all information will be permanently deleted when you remove the public folders.
 
    ```PowerShell
    Get-MailPublicFolder -ResultSize Unlimited | where {$_.EntryId -ne $null}| Disable-MailPublicFolder -Confirm:$false
@@ -298,6 +298,9 @@ Note that the file generated by `ModernPublicFolderToMailboxMapGenerator.ps1` wi
 ```PowerShell
 .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 ```
+> [!NOTE]
+> The map.csv generated by the script uses generic names for the target public folder mailboxes that will be created in EXO during the next step (for example, Mailbox1 and Mailbox2). We encourage you to change the public folder mailbox names in the map.csv to suit your organization's naming policies. Also, if your on-premises organization already has mailboxes that match the generic names, you should edit the map.csv and provide unique names for the target public folder mailboxes in Exchange Online. Use Notepad or a similar editor to edit the TargetMailbox names in the map.csv
+
 
 > [!NOTE]
 > We don't support the migration of public folders to Exchange Online when there are more than 100 unique public folder mailboxes in Exchange Online. During migration, you can have up to 100 public folder mailboxes enabled.
@@ -330,6 +333,9 @@ A number of commands now need to be run both in your Exchange Server on-premises
    - `Credential` is your Exchange Online administrative username and password.
 
    - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
+
+> [!NOTE]
+> Use [Sync MEPF Script troubleshooting](https://aka.ms/SyncMEPF) if you see any errors during the `Sync-ModernMailPublicFolders.ps1` script.
 
 2. In Exchange Online PowerShell, pass the credential of a user who has administrator permissions in the Exchange 2013, Exchange 2016, or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
 
@@ -628,9 +634,9 @@ After the migration is complete and you have verified that your public folders i
 
 Be aware that this step is irreversible, because once public folder mailboxes are deleted, they cannot be recovered. Therefore we strongly recommend that, in addition to validating the success of your migration, that you also monitor your Exchange Online public folders for a few weeks before removing the on-premises public folder mailboxes.
 
-## Migrate Public Folders to Office 365 by using Outlook PST export
+## Migrate Public Folders to Microsoft 365 or Office 365 by using Outlook PST export
 
-We recommend that you don't use Outlook's PST export feature to migrate public folders to Office 365 or Exchange Online if your on-premises public folder hierarchy is greater than 30 GB. Office 365 online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. In addition, consider the following before using Outlook PST to export public folders to Office 365 or Exchange Online:
+We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 or Exchange Online if your on-premises public folder hierarchy is greater than 30 GB. Microsoft 365 and Office 365 online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. In addition, consider the following before using Outlook PST to export public folders to Microsoft 365 or Office 365 or Exchange Online:
 
 - Public folder permissions will be lost during this process. Capture the current permissions before migration and manually add them back once the migration is completed.
 
