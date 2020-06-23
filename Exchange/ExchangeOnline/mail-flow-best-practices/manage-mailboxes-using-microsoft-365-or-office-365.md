@@ -39,11 +39,11 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 #### Best practices for hosted mail flow scenarios
 
-To set up hosted mail flow, we recommend using the Microsoft 365 or Office 365 setup wizard. To get to the Microsoft 365 or Office 365 setup wizard, go to **Setup** in the Microsoft 365 admin center.
+To set up hosted mail flow, we recommend using the Microsoft 365 setup wizard. To get to the Microsoft 365 setup wizard, go to **Setup** in the Microsoft 365 admin center.
 
 ![Screenshot of the Setup option in the admin center navigation menu](../media/41bc173f-5a06-4325-b613-b307d3eb0873.png)
 
-The Microsoft 365 or Office 365 setup wizard walks you through the following steps.
+The Microsoft 365 setup wizard walks you through the following steps.
 
 1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
@@ -57,7 +57,7 @@ The Microsoft 365 or Office 365 setup wizard walks you through the following ste
 
    For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
 
-   - **SPF record** - This is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Microsoft 365 or Office 365 is sending all your messages, list only Microsoft 365 or Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
+   - **SPF record** - This is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Microsoft 365 and Office 365 are sending all your messages, list only Microsoft 365 or Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
 
    ```text
    v=spf1 include:spf.protection.outlook.com -all

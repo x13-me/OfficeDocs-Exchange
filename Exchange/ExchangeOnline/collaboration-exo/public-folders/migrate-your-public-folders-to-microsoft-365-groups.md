@@ -37,7 +37,6 @@ Public folders are not recommended for the following situations:
 
 ## What are Microsoft 365 Groups?
 
-
 Microsoft 365 groups let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
 
 For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).

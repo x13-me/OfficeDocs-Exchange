@@ -74,7 +74,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Edit icon](media/ITPro_EAC_EditIcon.gif)|Edit|Edit an object.|
 |![Delete icon](media/ITPro_EAC_DeleteIcon.gif)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
 |![Search icon](media/ITPro_EAC_.gif)|Search|Open a search box in which you can type the search phrase for an object you want to find.|
-|![Icon: Upgrade distribution group to Microsoft 365 or Office 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to a Microsoft 365 or Office 365 group. This icon can be used only for a distribution group.|
+|![Icon: Upgrade distribution group to Microsoft 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to a Microsoft 365 group. This icon can be used only for a distribution group.|
 |![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)|Refresh|Refresh the list view.|
 |![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects. <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
 |![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down. <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|

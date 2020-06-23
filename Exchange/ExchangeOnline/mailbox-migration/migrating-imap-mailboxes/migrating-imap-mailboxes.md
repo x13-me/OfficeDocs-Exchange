@@ -5,7 +5,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 3fe19996-29bc-4879-aab9-5a622b2f1481
 ms.reviewer: 
-description: 'You can migrate the contents of user mailboxes from your source email system to Microsoft 365 or Office 365. Use the Internet Message Access Protocol (IMAP) to migrate email when:'
+description: 'You can migrate the contents of user mailboxes from your source email system to Microsoft 365 or Office 365 using the Internet Message Access Protocol (IMAP).'
 title: What you need to know about migrating your IMAP mailboxes to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
@@ -79,7 +79,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
     You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users it is easier to use a CSV file to enter all the information for the accounts.
 
-6. Connect Microsoft 365 or Office 365 to email system.
+6. Connect Microsoft 365 or Office 365 to the source email system.
 
     To migrate email successfully, Microsoft 365 or Office 365 needs to connect and communicate with the source email system. To do this, Microsoft 365 or Office 365 uses a migration endpoint, the settings that are used to create the connection.
 

@@ -42,7 +42,7 @@ This topic covers the following complex mail flow scenarios using Microsoft 365 
 
 Most customers who need a hybrid mail flow setup should allow Microsoft 365 or Office 365 to perform all their filtering and routing. We recommend that you point your MX record to Microsoft 365 or Office 365 because this provides for the most accurate spam filtering. For this scenario, your organization's mail flow setup looks like the following diagram.
 
-![Mail flow diagram showing the scenario where your MX record points to Microsoft 365 or Office 365 and mail from the internet goes to Microsoft 365 or Office 365 and then to your on-premises servers. Mail travelling from your on-premises servers goes to Microsoft 365 or Office 365 and then to the internet.](../media/38bcffa1-3f75-42de-9c06-85b0938a8d6e.png)
+![Mail flow diagram showing the scenario where your MX record points to Microsoft 365 or Office 365 and mail from the internet goes to Microsoft 365 or Office 365 and then to your on-premises servers. Mail traveling from your on-premises servers goes to Microsoft 365 or Office 365 and then to the internet.](../media/38bcffa1-3f75-42de-9c06-85b0938a8d6e.png)
 
 #### Best practices
 
@@ -80,7 +80,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
    - Your organization relays non-delivery reports (also known as NDRs or bounce messages) to the internet through Microsoft 365 or Office 365.
 
-     To create the connector, choose the first option in the connector creation wizard on the **How should Microsoft 365 or Office 365 identify email for your email server** screen.
+     To create the connector, choose the first option in the connector creation wizard on the **How should Office 365 identify email for your email server** screen.
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
@@ -115,7 +115,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
     For example, if your domain is contoso.com, the MX record should be: contoso-com.mail.protection.outlook.com.
 
-   - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is 131.107.21.231, the SPF record for contoso.com should be:
 
      ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all

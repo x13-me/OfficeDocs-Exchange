@@ -32,7 +32,7 @@ This topic describes how to synchronize mail-enabled public folders if your user
 
 You will sync your mail-enabled public folders by using the following scripts, which are initiated by a Windows task that runs in the on-premises environment:
 
-- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Microsoft 365 or Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to Microsoft 365 or Office 365. The script will create, update, or delete mail-enabled public folder objects on Microsoft 365 or or Office 365 Active Directory based on what exists in the local on-premises Exchange deployment.
+- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Microsoft 365 or Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to Microsoft 365 or Office 365. The script will create, update, or delete mail-enabled public folder objects on Microsoft 365 or Office 365 Active Directory based on what exists in the local on-premises Exchange deployment.
 
 - `SyncMailPublicFolders.strings.psd1`: This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script.
 
@@ -151,7 +151,7 @@ Run the following command in **Exchange Online PowerShell**:
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes 'PFMailbox1','PFMailbox2','PFMailbox3'
 ```
 
-You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Method 1: Manually verify that the service is started and that the admin account can sign in](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-wa). Microsoft 365 or Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
+You must wait until Active Directory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Method 1: Manually verify that the service is started and that the admin account can sign in](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-wa). Microsoft 365 and Office 365 randomly select one of the public folder mailboxes that's supplied in this command.
 
 > [!IMPORTANT]
 > A Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2013 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618) for a solution.

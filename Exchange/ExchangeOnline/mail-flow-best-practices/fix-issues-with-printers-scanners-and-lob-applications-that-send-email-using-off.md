@@ -34,7 +34,7 @@ Below are the three configuration options to help you identify which one is in u
 
  **1. SMTP client submission (recommended)**
 
-- Your printer is connected to the Microsoft 365 or Office 365 server "smtp.office365.com."
+- Your printer is connected to the server "smtp.office365.com."
 
 - You entered an email address and password for the printer mailbox.
 
