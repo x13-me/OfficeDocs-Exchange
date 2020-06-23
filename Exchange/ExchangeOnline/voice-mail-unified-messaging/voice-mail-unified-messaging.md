@@ -25,7 +25,7 @@ Unified Messaging (UM) enables users to use voice mail features, including Outlo
 
 Today, messaging administrators in organizations frequently manage the voice mail and email systems for their organizations as separate systems. Voice mail and email messages are located in separate mailboxes that are hosted on separate servers. Users can access messages through the desktop for email and through the telephone for voice mail.
 
-UM in Office 365 makes it possible for online administrators to combine voice messaging and email messaging into one mailbox so their users can read or listen to their voice mail messages in their Inbox or by using Outlook Voice Access from any telephone. UM uses a user's mailbox to store both email and voice mail messages.
+UM in Microsoft 365 or Office 365 makes it possible for online administrators to combine voice messaging and email messaging into one mailbox so their users can read or listen to their voice mail messages in their Inbox or by using Outlook Voice Access from any telephone. UM uses a user's mailbox to store both email and voice mail messages.
 
 ## Unified Messaging features
 <a name="umfeatures"> </a>
@@ -65,7 +65,7 @@ When you configure UM for your organization, users can access voice mail, email,
 
 - **Message Waiting Indicator**: Message Waiting Indicator is a feature found in most legacy voice mail systems and can refer to any mechanism that indicates the existence of a new message. Enabling or disabling Message Waiting Indicator is done on the user's mailbox or on a UM mailbox policy.
 
-- **Missed call and voice mail notifications using SMS**: When users are part of a hybrid or Office 365 deployment, and they configure their voice mail settings with their mobile phone number and configure call forwarding, they can receive notifications about missed calls and new voice messages on their mobile phones in a text message through the Short Messaging Service (SMS). However, to receive these types of notifications, the users must first configure text messaging and also enable notifications on their account.
+- **Missed call and voice mail notifications using SMS**: When users are part of a hybrid or Microsoft 365 or Office 365 deployment, and they configure their voice mail settings with their mobile phone number and configure call forwarding, they can receive notifications about missed calls and new voice messages on their mobile phones in a text message through the Short Messaging Service (SMS). However, to receive these types of notifications, the users must first configure text messaging and also enable notifications on their account.
 
 - **Protected Voice Mail**: Protected Voice Mail is a feature that enables users to send private mail. This voice mail is protected and users are restricted from forwarding, copying, or extracting the voice file from email. Protected Voice Mail increases the confidentiality of voice mail messages, and lets users limit the audience for voice messages.
 
@@ -87,7 +87,7 @@ When you configure UM for your organization, users can access voice mail, email,
 
   - Search for users in the directory of the organization.
 
-- **Group addressing using Outlook Voice Access**: Users can send a single email message to a single user in their personal Contacts, to multiple recipients from the directory by adding each recipient individually, or by adding the name of a distribution list from the directory for your organization. In UM in Office 365, when a user signs in to their mailbox using Outlook Voice Access, they can also send email and voice messages to users in a group stored in their personal Contacts.
+- **Group addressing using Outlook Voice Access**: Users can send a single email message to a single user in their personal Contacts, to multiple recipients from the directory by adding each recipient individually, or by adding the name of a distribution list from the directory for your organization. In UM in Microsoft 365 or Office 365, when a user signs in to their mailbox using Outlook Voice Access, they can also send email and voice messages to users in a group stored in their personal Contacts.
 
 ### Administrative features
 <a name="admin"> </a>
@@ -102,9 +102,9 @@ Exchange administrators can manage UM using the same interface they use to manag
 
 - Build a highly available and reliable UM infrastructure.
 
-Office 365 UM offers administrators:
+Microsoft 365 or Office 365 UM offers administrators:
 
-- **Consolidation of voice mail systems**: Currently, most voice messaging systems require that all the voice messaging components be installed in every physical office location in an organization. In this kind of arrangement, the voice messaging systems in branch offices are located outside the central office and must be administered onsite. This frequently results in increased administration costs and complexity. UM lets you manage your voice mail system from a central location. To create a centralized management system for UM, you integrate your VoIP gateways, IP PBXs or PBXs, and your phone system and then deploy session border controllers (SBCs) to connect your phone system with your Office 365 deployment. Deploying a centralized voice messaging system this way can result in a significant savings in hardware and administrative costs.
+- **Consolidation of voice mail systems**: Currently, most voice messaging systems require that all the voice messaging components be installed in every physical office location in an organization. In this kind of arrangement, the voice messaging systems in branch offices are located outside the central office and must be administered onsite. This frequently results in increased administration costs and complexity. UM lets you manage your voice mail system from a central location. To create a centralized management system for UM, you integrate your VoIP gateways, IP PBXs or PBXs, and your phone system and then deploy session border controllers (SBCs) to connect your phone system with your Microsoft 365 or Office 365 deployment. Deploying a centralized voice messaging system this way can result in a significant savings in hardware and administrative costs.
 
     > [!NOTE]
     > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
@@ -142,12 +142,12 @@ Office 365 UM offers administrators:
 ## Planning and deploying UM
 <a name="planningum"> </a>
 
-Unified Messaging requires that you integrate your existing telephony system for your organization within Office 365 by using SBCs. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy and manage voice mail in UM.
+Unified Messaging requires that you integrate your existing telephony system for your organization within Microsoft 365 or Office 365 by using SBCs. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy and manage voice mail in UM.
 
 > [!NOTE]
 > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
-When you plan to use UM in Office 365, you need to consider design and other issues that may affect your ability to reach your organizational goals when you configure UM. Generally, the simpler the UM setup is, the easier UM is to configure and maintain. As a general rule, create as few UM components like UM dial plans, auto attendants, and UM mailbox policies as you need to support your business and organizational goals. Large enterprises with complex network and telephony environments, multiple business units, or other complexities will require more planning than smaller organizations with relatively straightforward UM needs.
+When you plan to use UM in Microsoft 365 or Office 365, you need to consider design and other issues that may affect your ability to reach your organizational goals when you configure UM. Generally, the simpler the UM setup is, the easier UM is to configure and maintain. As a general rule, create as few UM components like UM dial plans, auto attendants, and UM mailbox policies as you need to support your business and organizational goals. Large enterprises with complex network and telephony environments, multiple business units, or other complexities will require more planning than smaller organizations with relatively straightforward UM needs.
 
 You need to consider and evaluate many areas to be able to successfully deploy UM. You need to understand the different aspects of UM and each component and feature so that you can plan your UM infrastructure and deployment appropriately. Allocating time to plan and work through these issues will help prevent problems when you deploy UM in your organization. The following are some of the areas that you should consider and evaluate when planning for UM in your organization:
 
@@ -172,7 +172,7 @@ You need to consider and evaluate many areas to be able to successfully deploy U
 
 ### EAC management
 
-Office 365 provides a single unified management console for your organization that includes all UM components and features. The EAC provides a streamlined, optimized interface for management of Exchange Online deployments. Some of the EAC features include:
+Microsoft 365 or Office 365 provides a single unified management console for your organization that includes all UM components and features. The EAC provides a streamlined, optimized interface for management of Exchange Online deployments. Some of the EAC features include:
 
 - **List view**: The list view in the EAC has been designed to display recipients, mailboxes, and settings for features that you are using within your organization. Paging within the list view allows you to see results per page. You can also configure page size and the number of entries, and export entries to a CSV file.
 
@@ -182,9 +182,9 @@ Office 365 provides a single unified management console for your organization th
 
 - **Notifications**: The EAC now has a Notification viewer so that you can view the status of long-running processes and, if you choose, receive notification through an email message when the process completes.
 
-- **Role Based Access Control (RBAC) User Editor**: Within Office 365, the RBAC User Editor functionality is in the EAC, and you don't need a separate tool to manage RBAC.
+- **Role Based Access Control (RBAC) User Editor**: Within Microsoft 365 or Office 365, the RBAC User Editor functionality is in the EAC, and you don't need a separate tool to manage RBAC.
 
-- **UM tools**: In Office 365 you can use the Call Statistics and User Call Logs tools to help provide UM statistics and information about specific calls for a user.
+- **UM tools**: In Microsoft 365 or Office 365 you can use the Call Statistics and User Call Logs tools to help provide UM statistics and information about specific calls for a user.
 
 For more information about the EAC, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 

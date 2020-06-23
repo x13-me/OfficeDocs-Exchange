@@ -37,7 +37,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - [Best practices for configuring mail flow rules](configuration-best-practices.md)
 
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+- [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
 - [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
@@ -101,7 +101,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
    3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
-      Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The Office 365 activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
+      Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
       > [!NOTE]
       > If you clear the **Audit this rule with severity level** checkbox, rule matches will not show up in the rule reports.
@@ -335,7 +335,7 @@ To learn more, see [View mail protection reports](../../monitoring/use-mail-prot
 
 2. If it is your first time using the Excel mail protection reports, a tab opens to the download page.
 
-   1. Select **Download** to download the Microsoft Office 365 Excel Plugin for Exchange Online Reporting.
+   1. Select **Download** to download the Excel Plugin for Exchange Online Reporting.
 
    2. Open the download.
 

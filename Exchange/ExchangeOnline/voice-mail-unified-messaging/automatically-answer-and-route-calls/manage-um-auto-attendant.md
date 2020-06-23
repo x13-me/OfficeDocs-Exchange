@@ -71,7 +71,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      Although not required, we recommend that you configure the DTMF fallback auto attendant to have the same configuration as the speech-enabled auto attendant. The DTMF fallback auto attendant shouldn't be speech-enabled.
 
-   - **Language for automated voice interface**: Use this list to select the language that callers hear when they reach the auto attendant. For UM in Office 365, you don't need to install UM language packs.
+   - **Language for automated voice interface**: Use this list to select the language that callers hear when they reach the auto attendant. For UM in Microsoft 365 or Office 365, you don't need to install UM language packs.
 
      Although you can select a language other than the language selected on the UM dial plan associated with the auto attendant, we recommend that the language settings on the dial plan and the auto attendant match. If language settings don't match, when callers call an extension number defined on the dial plan, they will be presented with prompts in one language, and when they dial an extension number associated with an auto attendant, they will be presented with prompts in a different language.
 

@@ -33,7 +33,7 @@ After you have completed a staged migration, convert the mailboxes to mail-enabl
 
 ## Why convert mailboxes to mail-enabled users?
 
-If you've completed a staged Exchange migration to migrate your organization's Exchange 2007 on-premises mailboxes to Office 365 and you want to manage cloud-based users from your on-premises organization (using Active Directory) you should convert the on-premises mailboxes to mail-enabled users (MEUs). Why? Two things happen after a mailbox is migrated to the cloud in a staged Exchange migration:
+If you've completed a staged Exchange migration to migrate your organization's Exchange 2007 on-premises mailboxes to Microsoft 365 or Office 365 and you want to manage cloud-based users from your on-premises organization (using Active Directory) you should convert the on-premises mailboxes to mail-enabled users (MEUs). Why? Two things happen after a mailbox is migrated to the cloud in a staged Exchange migration:
 
 - A user has an on-premises mailbox and a cloud mailbox.
 

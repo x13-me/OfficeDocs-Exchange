@@ -31,7 +31,7 @@ Third-party online meeting integration is handled by add-ins that have enabled t
 
 The add-ins can be deployed using the following admin portals:
 
-- If all users are Microsoft 365 users, then use the [centralized deployment portal](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
+- If all users are Microsoft 365 or Office 365 users, then use the [centralized deployment portal](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
     
 - If a tenant has users' mailboxes in Exchange Server on premises, then use the ECP/EAC portal. More information is available [here](https://docs.microsoft.com/Exchange/install-or-remove-outlook-add-ins-2013-help).
 

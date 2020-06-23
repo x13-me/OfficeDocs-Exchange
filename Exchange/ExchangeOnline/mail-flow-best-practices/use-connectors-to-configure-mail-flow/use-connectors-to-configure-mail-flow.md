@@ -10,7 +10,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.exch.eac.ConnectorSelection
-title: Configure mail flow using connectors in Office 365
+title: Configure mail flow using connectors
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -18,15 +18,15 @@ manager: serdars
 
 ---
 
-# Configure mail flow using connectors in Office 365
+# Configure mail flow using connectors
 
-Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Actually, most Microsoft 365 or Office 365 organizations don't need connectors for regular mail flow. This topic describes the mail flow scenarios that require connectors.
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Actually, most Microsoft 365 and Office 365 organizations don't need connectors for regular mail flow. This topic describes the mail flow scenarios that require connectors.
 
 ## What do connectors do?
 
 Connectors are used to:
 
-- Enable mail flow between Office 365 and any email server that you have in your on-premises organization (also known as on-premises email servers).
+- Enable mail flow between Microsoft 365 or Office 365 and any email server that you have in your on-premises organization (also known as on-premises email servers).
 
 - Apply security restrictions or controls for to email exchanges between your Microsoft 365 or Office 365 organization and a business partner or service provider.
 
@@ -35,13 +35,13 @@ Connectors are used to:
 - Avoid graylisting that would otherwise occur because of the large volume of mail that's regularly exchanged between your Microsoft 365 or Office 365 organization and your on-premises email server or partners.
 
 > [!NOTE]
-> Graylisting is a delay tactic that's used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online](../non-delivery-reports-in-exchange-online/fix-error-code-451-4-7-500-699-asxxx-in-exchange-online.md).
+> Graylisting is a delay tactic that's used to protect email systems from spam. In Microsoft 365 and Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Microsoft 365 or Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online](../non-delivery-reports-in-exchange-online/fix-error-code-451-4-7-500-699-asxxx-in-exchange-online.md).
 
 ## What happened to inbound and outbound connectors?
 
 Nothing. We just don't call them "inbound" and "outbound" anymore (although the PowerShell cmdlet names still contains these terms). If you previously set up inbound and outbound connectors, they will still function in exactly the same way.
 
-The process for setting up connectors has changed; instead of using the terms "inbound" and "outbound", we ask you to specify the start and end points that you want to use. The way connectors work in the background is the same as before (inbound means into Office 365; outbound means sent from Office 365).
+The process for setting up connectors has changed; instead of using the terms "inbound" and "outbound", we ask you to specify the start and end points that you want to use. The way connectors work in the background is the same as before (inbound means into Microsoft 365 or Office 365; outbound means sent from Microsoft 365 or Office 365).
 
 ## When do I need a connector?
 
@@ -67,25 +67,25 @@ If you have Exchange Online or EOP and your own on-premises email servers, you d
 
 |**You're on-premises email organization is**|**Your service subscription is**|**Have you completed an Exchange hybrid deployment?**|**Do I need to set up connectors manually?**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2010 or later|Exchange Online Protection|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
-|Exchange 2010 or later|Exchange Online|No|Consider whether an Exchange hybrid deployment will better meet your organization's needs by reviewing the topic that matches your current situation in [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid). <br/><br/> If a hybrid deployment is the right option for your organization, use the [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to integrate Exchange Online with your on-premises Exchange organization. <br/><br/> If you don't want a hybrid deployment and you only want connectors that enable mail routing, follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
+|Exchange 2010 or later|Exchange Online Protection|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
+|Exchange 2010 or later|Exchange Online|No|Consider whether an Exchange hybrid deployment will better meet your organization's needs by reviewing the topic that matches your current situation in [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid). <br/><br/> If a hybrid deployment is the right option for your organization, use the [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to integrate Exchange Online with your on-premises Exchange organization. <br/><br/> If you don't want a hybrid deployment and you only want connectors that enable mail routing, follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
 |Exchange 2010 or later|Exchange Online|Yes|No. The Hybrid Configuration wizard creates connectors for you. To view or edit those connectors, go to the **Connectors** page in the Exchange admin center (EAC), or rerun the Hybrid Configuration wizard.|
-|Exchange 2007 or earlier|Exchange Online Protection or Exchange Online|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md). <br/><br/> In limited circumstances, you might have a hybrid configuration with Exchange Server 2007 and Office 365. Check whether connectors are already set up for your organization by going to the **Connectors** page in the EAC.|
-|Non-Microsoft SMTP server|Exchange Online Protection or Exchange Online|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
+|Exchange 2007 or earlier|Exchange Online Protection or Exchange Online|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md). <br/><br/> In limited circumstances, you might have a hybrid configuration with Exchange Server 2007 and Microsoft 365 or Office 365. Check whether connectors are already set up for your organization by going to the **Connectors** page in the EAC.|
+|Non-Microsoft SMTP server|Exchange Online Protection or Exchange Online|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
 
 ### How connectors work with my on-premises email servers
 
-Connectors enable mail flow in both directions (to Office 365 and from Office 365). You can enable mail flow with any SMTP server (for example, Microsoft Exchange or a third-party email server).
+Connectors enable mail flow in both directions (to and from Microsoft 365 or Office 365). You can enable mail flow with any SMTP server (for example, Microsoft Exchange or a third-party email server).
 
 The diagram below shows how connectors in Exchange Online or EOP work with your own email servers.
 
-![Connectors between Office 365 and your e-mail server](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
+![Connectors between Microsoft 365 or Office 365 and your e-mail server](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
 
 In this example, John and Bob are both employees at your company. John has a mailbox on an email server that you manage, and Bob has a mailbox in Exchange Online. John and Bob both exchange mail with Sun, a customer with an internet email account:
 
 - When email is sent between John and Bob, connectors are needed
 
-- When email is sent between John and Sun, connectors are needed. (All internet email is delivered via Office 365).
+- When email is sent between John and Sun, connectors are needed. (All internet email is delivered via Microsoft 365 or Office 365).
 
 - When email is sent between Bob and Sun, no connector is needed.
 
@@ -94,17 +94,17 @@ In this example, John and Bob are both employees at your company. John has a mai
 
 ### What if I've already run the Hybrid Configuration Wizard?
 
-If you've already run the Hybrid Configuration wizard, the required connectors are already configured for you. You can view your hybrid connectors on the **Connectors** page in the EAC. You can view, troubleshoot, and update these connectors using the procedures described in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md), or you can re-run the Hybrid Configuration wizard to make changes.
+If you've already run the Hybrid Configuration wizard, the required connectors are already configured for you. You can view your hybrid connectors on the **Connectors** page in the EAC. You can view, troubleshoot, and update these connectors using the procedures described in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md), or you can re-run the Hybrid Configuration wizard to make changes.
 
 ## Connectors for mail flow with a partner organization
 
-You can create connectors to add additional security restrictions for email sent between Office 365 and a partner organization. A partner can be an organization you do business with, such as a bank. It can also be a cloud email service provider that provides services such as archiving, antispam, and so on. You can create a partner connector that defines boundaries and restrictions for email sent to or received from your partners, including scoping the connector to receive email from specific IP addresses, or requiring TLS encryption.
+You can create connectors to add additional security restrictions for email sent between Microsoft 365 or Office 365 and a partner organization. A partner can be an organization you do business with, such as a bank. It can also be a cloud email service provider that provides services such as archiving, antispam, and so on. You can create a partner connector that defines boundaries and restrictions for email sent to or received from your partners, including scoping the connector to receive email from specific IP addresses, or requiring TLS encryption.
 
 ### Example use of connectors with a partner organization
 
-The diagram below shows an example where ContosoBank.com is a business partner that you share financial details with via email. Because you are sharing financial information, you want to protect the integrity of the mail flow between your businesses. Connectors with TLS encryption enable a secure and trusted channel for communicating with ContosoBank.com. In this example, two connectors are created in Office 365. TLS is required for mail flow in both directions, so ContosoBank.com must have a valid encryption certificate. A certificate from a commercial certification authority (CA)that's automatically trusted by both parties is recommended.
+The diagram below shows an example where ContosoBank.com is a business partner that you share financial details with via email. Because you are sharing financial information, you want to protect the integrity of the mail flow between your businesses. Connectors with TLS encryption enable a secure and trusted channel for communicating with ContosoBank.com. In this example, two connectors are created in Microsoft 365 or Office 365. TLS is required for mail flow in both directions, so ContosoBank.com must have a valid encryption certificate. A certificate from a commercial certification authority (CA)that's automatically trusted by both parties is recommended.
 
-![Connectors between Office 365 and a partner organization](../../media/0f9319ae-84bb-4b05-a79f-12fb988f1d10.png)
+![Connectors between Microsoft 365 or Office 365 and a partner organization](../../media/0f9319ae-84bb-4b05-a79f-12fb988f1d10.png)
 
 ### Additional partner organization connector options: specify a domain or IP address ranges
 
@@ -112,23 +112,23 @@ When you create a connector, you can also specify the domain or IP address range
 
 ## Connectors for mail notifications from printers and devices
 
-This scenario applies only to organizations that have all their mailboxes in Exchange Online (no on-premises email servers) and allows a program or a device, such as a printer, to send email. For example, if you want a printer to send notifications when a print job is ready, or you want your scanner to email documents, you can use this option to send mail through Office 365 (but there are other options that don't require connectors). For details, see [How to set up a multifunction device or application to send email using Office 365](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
+This scenario applies only to organizations that have all their mailboxes in Exchange Online (no on-premises email servers) and allows a program or a device, such as a printer, to send email. For example, if you want a printer to send notifications when a print job is ready, or you want your scanner to email documents, you can use this option to send mail through Microsoft 365 or Office 365 (but there are other options that don't require connectors). For details, see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
 
 ## How do I set up connectors?
 
-Before you set up a connector, you need to configure the accepted domains for Office 365. For more information, see [Manage accepted domains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md).
+Before you set up a connector, you need to configure the accepted domains for Microsoft 365 or Office 365. For more information, see [Manage accepted domains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md).
 
 Connector setup topics:
 
-- [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md)
+- [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md)
 
 - [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
 ## See also
 
-[Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md)
+[Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md)
 
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
+[Mail flow best practices for Exchange Online and Microsoft 365 or Office 365 (overview)](../mail-flow-best-practices.md)
 
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 

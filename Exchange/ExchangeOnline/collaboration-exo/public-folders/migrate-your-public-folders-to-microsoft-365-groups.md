@@ -37,7 +37,8 @@ Public folders are not recommended for the following situations:
 
 ## What are Microsoft 365 Groups?
 
-Groups in Microsoft 365 and Office 365 let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
+
+Microsoft 365 groups let you choose a set of people who you wish to collaborate with, and then easily set up a collection of resources for those people to share. You don't have to worry about manually assigning permissions to those resources, because adding members to your group automatically gives the members the permissions they need to access the tools and resources your group provides. Groups are also the new and improved experience for those tasks that were previously handled by distribution lists and shared mailboxes.
 
 For the full Groups story, see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
@@ -70,7 +71,7 @@ Before you move to Groups, it's also a good idea to make note of the various lim
 If you decide to switch to Microsoft 365 Groups, you can use a process known as batch migration to move your email and calendar content from your existing public folders to Groups. The specific steps for running a batch migration depends on which version of Exchange currently hosts your public folder hierarchy. At the end of this article, you will find links to instructions that walk you through the batch migration process.
 
 > [!NOTE]
-> When you finish migrating a mail-enabled public folder to a particular group in Microsoft 365 or Office 365, all the emails addressed to the public folder will at that point be received by the group.
+> When you finish migrating a mail-enabled public folder to a particular Microsoft 365 group, all the emails addressed to the public folder will at that point be received by the group.
 
 Key benefits of batch migrations are:
 
@@ -122,8 +123,8 @@ Select the appropriate link below for step-by-step instructions on running a bat
 
 - [Use batch migration to migrate Exchange Online public folders to Microsoft 365 Groups](batch-migration-of-exchange-online-public-folders.md)
 
-- [Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help)
+- [Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help)
 
-- [Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help)
+- [Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help)
 
-- [Use batch migration to migrate Exchange 2016 public folders to Microsoft 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups)
+- [Use batch migration to migrate Exchange 2016 public folders to Microsoft 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-microsoft-365-groups)
