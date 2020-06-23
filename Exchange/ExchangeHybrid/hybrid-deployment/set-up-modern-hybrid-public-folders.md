@@ -87,6 +87,8 @@ Where `Credential` is your Microsoft 365 or Office 365 admin username and passwo
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. <br/> We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
+Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](https://docs.microsoft.com/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
+
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
 
 The final step in this process is to configure the Exchange Online organization and to allow access to the Exchange Server public folders.
@@ -115,3 +117,5 @@ Next, log on to Outlook with the credentials of an Exchange Online user and perf
 - Create and delete public folders
 
 - Post content to and delete content from a public folder
+
+You can use [this article](https://support.microsoft.com/help/4549862/outlook-or-owa-cannot-connect-to-public-folders) to troubleshoot any Outlook connectivity issues with your public folders.  
