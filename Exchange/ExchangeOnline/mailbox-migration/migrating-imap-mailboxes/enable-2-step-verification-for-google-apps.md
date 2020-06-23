@@ -5,7 +5,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 4c70c606-5e95-4cf7-abce-cf85f1ac4179
 ms.reviewer: 
-description: If you want to migrate email for your google app users to Microsoft 365 or Office 365, the users need to create an app password that you will use together with their google apps password to connect to their Gmail. Before they can create an app password, you will have to allow them to turn on 2-step verification in the Google Admin console.
+description: If you want to migrate email for your Google app users to Microsoft 365 or Office 365, the users need to create an app password that you will use together with their Google apps password to connect to their Gmail. Before they can create an app password, you will have to allow them to turn on 2-step verification in the Google Admin console.
 title: Enable 2-step verification for your Google apps users
 ms.collection: 
 - exchange-online
@@ -26,7 +26,7 @@ manager: serdars
 
 # Enable 2-step verification for your Google apps users
 
-If you want to migrate email for your google app users to Microsoft 365 or Office 365, the users need to create an app password that you will use together with their google apps password to connect to their Gmail. Before they can create an app password, you will have to allow them to turn on 2-step verification in the Google Admin console.
+If you want to migrate email for your Google app users to Microsoft 365 or Office 365, the users need to create an app password that you will use together with their Google apps password to connect to their Gmail. Before they can create an app password, you will have to allow them to turn on 2-step verification in the Google Admin console.
 
 ## Enable 2-step verification
 

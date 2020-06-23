@@ -74,11 +74,11 @@ The important settings for the connector are:
 
 2. The new connector wizard opens. On the **Select your mail flow scenario** page, configure these settings:
 
-   - **From**: **Microsoft 365** or **Office 365**
+   - **From**: **Office 365**
 
    - **To**: **Your organization's email server**
 
-   ![In the new connector wizard, select From \> Microsoft 365 or Office 365 and To \> Your organization's email server.](../../media/852fbdf3-6829-413a-9d08-63421efd10c6.png)
+   ![In the new connector wizard, select From \> Office 365 and To \> Your organization's email server.](../../media/852fbdf3-6829-413a-9d08-63421efd10c6.png)
 
    When you're finished, click **Next**.
 
@@ -268,7 +268,7 @@ The important settings for the connector are:
 
    - **From** **Your organization's email server**
 
-   - **To** **Microsoft 365** or **Office 365**
+   - **To** **Office 365**
 
    ![In the new connector wizard, select From \> Your organization's email server and From \> Microsoft 365 or Office 365.](../../media/ec97de50-53a0-4392-9096-15a5c15fa238.png)
 
@@ -288,7 +288,7 @@ The important settings for the connector are:
 
    When you're finished, click **Next**.
 
-4. On the **How should Microsoft 365 or Office 365 identify email from your email server?** page, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+4. On the **How should Office 365 identify email from your email server?** page, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
    ![In the new connector wizard, specify the unique certificate domain name that the email add-on service gave to you.](../../media/ee7a3e8f-51de-4451-8563-0f25656bddc1.png)
 

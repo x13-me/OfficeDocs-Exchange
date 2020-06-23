@@ -60,9 +60,9 @@ The following table describes the different workloads involved in a typical migr
 
 |**Workload**|**Notes**|
 |:-----|:-----|
-|Onboarding (Migrating to Microsoft 365 or Office 365)|Microsoft offers data migration capability and tools for customers to use to migrate their data from Exchange Server on-premises to Exchange Online (M365). There are a number of methods for migrating mailboxes and mailbox data, starting with Cutover migrations and Staged migrations, which are based on merge and sync moves, and which are described earlier in this article. The other main migration method involves hybrid moves, which is currently the most common method. You can decide exactly when you'd like to migrate to Microsoft 365, based on your business needs.|
+|Onboarding (Migrating to Microsoft 365 or Office 365)|Microsoft offers data migration capability and tools for customers to use to migrate their data from Exchange Server on-premises to Exchange Online in Microsoft 365 or Office 365. There are a number of methods for migrating mailboxes and mailbox data, starting with Cutover migrations and Staged migrations, which are based on merge and sync moves, and which are described earlier in this article. The other main migration method involves hybrid moves, which is currently the most common method. You can decide exactly when you'd like to migrate to Microsoft 365, based on your business needs.|
 |Multi-Geo|Multinational companies with offices around the world often have a need to store their employee data at-rest in specific regions, in order to meet their data residency requirements. Multi-Geo enables a single Microsoft 365 or Office 365 organization to span across multiple Microsoft 365 or Office 365 datacenter geographies (geos), which gives you the ability to store Exchange data, at-rest, on a per-user basis, in your chosen geos. For more details, see [Get enterprise-grade global data location controls with Multi-Geo](https://products.office.com/business/multi-geo-capabilities).|
-|Encryption|Microsoft 365 or  or Office 365 Service Encryption with Customer Key is a feature that allows a customer to provision and manage the root keys that are used to encrypt data at-rest at the application layer in Microsoft 365 or Office 365. For a mailbox to become encrypted the first time, a mailbox move is required. For more details, see [Service encryption with Customer Key](https://docs.microsoft.com/office365/securitycompliance/service-encryption-with-customer-key-faq).|
+|Encryption|Service Encryption with Customer Key is a feature that allows a customer to provision and manage the root keys that are used to encrypt data at-rest at the application layer in Microsoft 365 or Office 365. For a mailbox to become encrypted the first time, a mailbox move is required. For more details, see [Service encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview).|
 |GoLocal|Microsoft continues to open new datacenters in new regions, or geos. Existing customers, when eligible, can request to have their customer data from their original datacenter moved to a new geo. The period of time in which you can make this request is usually one or two years, depending on the overall demand on the service. Note that this period of time during which you can request to have your customer data moved becomes shorter once a datacenter (DC) for the new geo launches (at that point you have approximately three to six months to request a move). Details are available in [Moving core data to new Microsoft 365 datacenter geos](https://docs.microsoft.com/Office365/Enterprise/moving-data-to-new-datacenter-geos).|
 
 When mailboxes are migrated within Microsoft 365 data centers, every mailbox move or bulk-mailbox move requires time for the operation to complete. There are a number of factors, such as Microsoft 365 service activity, that can affect exactly how much time. The service is designed to throttle discretionary workloads like mailbox moves, to ensure that the service runs optimally for all users. You can still expect mailbox moves to be processed, however, depending on the service's discretionary resource availability. More details about resource throttling can be found in [this blog post](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Resource-Based-Throttling-and-Prioritization-in-Exchange-Online/ba-p/608020).
@@ -139,7 +139,7 @@ Use the Exchange Analyzer to get a deeper understanding of your network connecti
 
 For a deeper analysis of migrations within your environment, check out our [move analysis blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134). The post includes a script to help you analyze move requests.
 
-## Microsoft 365 or Office 365 throttling
+## Microsoft 365 and Office 365 throttling
 
 Microsoft 365 and Office 365 use various throttling mechanisms to help ensure security and service availability. The following three types of throttling can affect migration performance:
 
@@ -156,9 +156,9 @@ Microsoft 365 and Office 365 use various throttling mechanisms to help ensure se
 
 User throttling affects most third-party migration tools and the client-uploading migration method. These migration methods use client access protocols, such as the Remote Procedure Call (RPC) over HTTP Protocol, to migrate mailbox data to Microsoft 365 or Office 365 mailboxes. These tools are used to migrate data from platforms such as IBM Lotus Domino and Novell GroupWise.
 
-User throttling is the most restrictive throttling method in Microsoft 365 or Office 365. Because user throttling is set up to work against an individual end user, any application-level usage will easily exceed the throttling policy and result in slower data migration.
+User throttling is the most restrictive throttling method in Microsoft 365 and Office 365. Because user throttling is set up to work against an individual end user, any application-level usage will easily exceed the throttling policy and result in slower data migration.
 
-### Microsoft 365 or Office 365 migration-service throttling
+### Microsoft 365 and Office 365 migration-service throttling
 
 Migration-service throttling affects all Microsoft 365 or Office 365 migration tools. Migration-service throttling manages migration concurrency and service resource allocation for Microsoft 365 or Office 365 migration solutions.
 
@@ -214,7 +214,7 @@ The following table describes the impact on migration by the source servers in y
 
 ### Factor 2: Migration server
 
-IMAP, cutover, and staged migrations are cloud-initiated data-pull migration methods, so there's no need for a dedicated migration server. The internet-facing protocol hosts ( IMAP or RPC over HTTP Protocol), however, function as the migration server for migrating mailboxes and mailbox data to Microsoft 365 or Office 365. Therefore, the migration performance factors and best practices, described in the previous section about the data source server for your current email organization, also apply to the internet edge servers. For Exchange 2007, Exchange 2010, and Exchange 2013, organizations, the client access server functions as a migration server.
+IMAP, cutover, and staged migrations are cloud-initiated data-pull migration methods, so there's no need for a dedicated migration server. The internet-facing protocol hosts (IMAP or RPC over HTTP Protocol), however, function as the migration server for migrating mailboxes and mailbox data to Microsoft 365 or Office 365. Therefore, the migration performance factors and best practices, described in the previous section about the data source server for your current email organization, also apply to the internet edge servers. For Exchange 2007, Exchange 2010, and Exchange 2013, organizations, the client access server functions as a migration server.
 
 For more information, see:
 
@@ -226,7 +226,7 @@ For more information, see:
 
 ### Factor 3: Migration engine
 
-IMAP, cutover, and staged Exchange migrations are performed by using the Migration dashboard in the Exchange admin center . This is subject to Microsoft 365 or Office 365 migration-service throttling.
+IMAP, cutover, and staged Exchange migrations are performed by using the Migration dashboard in the Exchange admin center. This is subject to Microsoft 365 or Office 365 migration-service throttling.
 
  **Solution and practice**
 

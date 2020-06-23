@@ -28,7 +28,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 1. In the EAC, go to **Mail flow** \> **Connectors**. click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
 
-2. In the **From:** drop-down box, choose Microsoft 365 or Office 365.
+2. In the **From:** drop-down box, choose Office 365.
 
 3. In the **To:** drop-down box, choose either Your organization's email server or Partner organization if you want to connect to a server other than your organizations.
 

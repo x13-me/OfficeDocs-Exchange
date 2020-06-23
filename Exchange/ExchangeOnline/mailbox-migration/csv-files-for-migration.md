@@ -42,7 +42,7 @@ You can use a comma-separated values (CSV) file to bulk migrate a large number o
   - **IMAP migration**: This onboarding migration type migrates mailbox data from an IMAP server (including Exchange) to Microsoft 365 or Office 365. For an IMAP migration, you must provision mailboxes in Microsoft 365 or Office 365 before you can migrate mailbox data.
 
 > [!NOTE]
-> A cutover Exchange migration doesn't support a using a CSV file because all on-premises user mailboxes are migrated to Microsoft 365 or Office 365 in a single batch.
+> A cutover Exchange migration doesn't support using a CSV file because all on-premises user mailboxes are migrated to Microsoft 365 or Office 365 in a single batch.
 
 ## Supported attributes for CSV files for bulk moves or migrations
 

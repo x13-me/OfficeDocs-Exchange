@@ -44,7 +44,7 @@ You can use the setup wizard in the Microsoft 365 admin center for an IMAP migra
 
  **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
-Before Microsoft 365 or Office 365 can connect to Gmail or G Suites, all the account owners need to create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your G Suite account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [G Suite users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
+Before Microsoft 365 or Office 365 can connect to Gmail or G Suites, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your G Suite account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [G Suite users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
 
 ### Gmail Migration tasks
 
@@ -55,9 +55,9 @@ The following list contains the migration tasks given in the order in which you 
 In this task, you'll first verify to Microsoft 365 or Office 365 that you own the domain you used for your G Suite accounts.
 
 > [!NOTE]
-> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Microsoft 365 or Office 365 or Microsoft 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) and omit this task. Most people, however, prefer to use their own domain.
+> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Microsoft 365 or Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) and omit this task. Most people, however, prefer to use their own domain.
 
-Domain verification is a task you will go through as you set up Microsoft 365 or Office 365. During setup, the Microsoft 365 or Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
+Domain verification is a task you will go through as you set up Microsoft 365 or Office 365. During setup, the setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
 
 - **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-godaddy).
 
@@ -214,7 +214,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 - Ask your migrated users to complete the following tasks:
 
-  - Go to the [Microsoft 365 or Office 365 sign-in page](https://login.microsoftonline.com), and sign in with your username and temporary password.
+  - Go to the [Microsoft 365 or Office 365 sign-in page](https://login.microsoftonline.com) and sign in with your username and temporary password.
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 

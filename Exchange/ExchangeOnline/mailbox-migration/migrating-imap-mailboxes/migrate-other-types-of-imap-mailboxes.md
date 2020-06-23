@@ -46,7 +46,7 @@ Here are the tasks to do when you're ready to get started with migrating your IM
 
 - If you use an email domain in your IMAP email environment, and you also want to use the email domain in Microsoft 365 or Office 365, you need to add the domain to Microsoft 365 or Office 365 as an accepted domain before you create users in Microsoft 365 or Office 365. For instructions, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-worldwide).
 
-- If you are using Microsoft 365 or Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet).
+- If you are using Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet).
 
 - To add users, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide).
 

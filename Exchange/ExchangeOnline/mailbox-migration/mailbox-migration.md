@@ -73,14 +73,14 @@ There are three types of email migrations that can be made from an Exchange Serv
 
     For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).
 
-## Use the Microsoft 365 or Office 365 Import Service to migrate PST-files
+## Use the Import Service to migrate PST files
 <a name="StagedorCutover"> </a>
 
-If your organization has many large PST files, you can use the Microsoft 365 or Office 365 Import Service to migrate email data to Microsoft 365 or Office 365.
+If your organization has many large PST files, you can use the Import Service to migrate email data to Microsoft 365 or Office 365.
 
 ![An administrator migrates PST files to Microsoft 365 or Office 365.](media/23459be8-cf49-41f9-85fc-14e4ad2c06f3.png)
 
-You can use the Microsoft 365 or Office 365 Import Service to either upload the PST files through a network, or to mail the PST files in a drive that you prepare.
+You can use the Import Service to either upload the PST files through a network, or to mail the PST files in a drive that you prepare.
 
 For instructions, see [Overview of importing your organization's PST files](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
 
@@ -89,7 +89,7 @@ For instructions, see [Overview of importing your organization's PST files](http
 
 You can use the Internet Message Access Protocol (IMAP) to migrate user email from Gmail, Exchange, Outlook.com, and other email systems that support IMAP migration. When you migrate the user's email by using IMAP migration, only the items in the users' inbox or other mail folders are migrated. Contacts, calendar items, and tasks can't be migrated with IMAP, but they can be by a user.
 
-IMAP migration also doesn't create mailboxes in Microsoft 365 or Office 365. You'll have to create a mailboxfor each user before you migrate their email.
+IMAP migration also doesn't create mailboxes in Microsoft 365 or Office 365. You'll have to create a mailbox for each user before you migrate their email.
 
 ![An administrator performs an IMAP migration to Microsoft 365 or Office 365. All email, but not contacts or calendar information, can be migrated for each mailbox.](media/624879f0-305f-4893-b4c2-c64736a40d94.png)
 

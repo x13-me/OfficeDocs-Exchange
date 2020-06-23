@@ -46,7 +46,7 @@ Setting up an email cutover migration to Microsoft 365 or Office 365 requires ca
 
 - The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Microsoft 365 or Office 365 organization.
 
-- After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Microsoft 365 or Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
+- After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Microsoft 365 or Office 365, but you must still assign licenses to users whose mailboxes are migrated.
 
     > [!NOTE]
     > When migrating from Exchange 2003, TCP port 6001, 6002 and 6004 need to be open on the Exchange 2003 side.
@@ -158,7 +158,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
    After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
-7. In the Microsoft 365 or Office 365 domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
+7. In the Office 365 domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
 
    If the verification fails at first, wait awhile, and try again.
 

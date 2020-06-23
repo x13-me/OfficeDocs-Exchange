@@ -73,7 +73,7 @@ If you want to create a secure channel with your partner organization in both di
 
 You can set up a connector to apply security restrictions to email that your partner organization sends to you. To start the wizard, click the plus symbol **+**. On the first screen, choose the following options:
 
-![Connector from partner irganization to Microsoft 365 or Office 365](../../media/e6d15001-989b-48b3-a848-427b800c2a70.png)
+![Connector from partner organization to Microsoft 365 or Office 365](../../media/e6d15001-989b-48b3-a848-427b800c2a70.png)
 
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, save your connector.
 
