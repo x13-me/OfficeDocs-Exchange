@@ -5,7 +5,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 
-title: How to migrate mailboxes from one Office 365 organization to another
+title: How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -23,12 +23,12 @@ localization_priority: Priority
 
 ---
 
-# How to migrate mailboxes from one Office 365 organization to another
+# How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another
 
    > [!NOTE]
    > At this time, a built-in tenant to tenant migration option is not available.
 
-This article explains how to migrate mailboxes and service settings from one Office 365 organization to another Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
+This article explains how to migrate mailboxes and service settings from one Microsoft 365 or Office 365 organization to another Microsoft 365 or Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
 
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 organizations. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 organization.
 
@@ -43,7 +43,7 @@ This scenario assumes that user, group and other objects from the Fabrikam Compa
 
 When complete, all Fabrikam accounts will exist in the Contoso.com Office 365 organization, and will all use @fabrikam.com for the UPN. The final addressing scheme was chosen for simplicity and brevity but can of course be modified to meet your requirements.
 
-![How mailbox data can be moved from one Office 365 organization to another](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
+![How mailbox data can be moved from one Microsoft 365 or Office 365 organization to another](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
 
 ### Planning: Two weeks before you migrate
 
