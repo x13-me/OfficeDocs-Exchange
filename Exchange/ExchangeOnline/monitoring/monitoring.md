@@ -23,7 +23,7 @@ manager: serdars
 Exchange Online offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements. The following table describes the reports and troubleshooting tools that are available to Exchange Online administrators.
 
 > [!NOTE]
-> For a mapping of reports from the old Microsoft 365 admin center, see [Where did my report go?](https://go.microsoft.com/fwlink/p/?linkid=817242)
+> For a mapping of reports from the old Microsoft 365 admin center, see [Where did my report go?](https://support.microsoft.com/office/4f7ce026-8be0-4800-849c-28071df0b85f)
 
 |**Feature**|**Description**|**Where you can find it**|**For more information**|
 |:-----|:-----|:-----|:-----|

@@ -25,9 +25,9 @@ Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. Yo
 > <LI>
 > <P><A href="https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417">Set up email on Windows Phone</A></P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=615414">Set up email on iPhone, iPad, or iPod Touch</A></P>
+> <P><A href="https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234">Set up email on iPhone, iPad, or iPod Touch</A></P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/?linkid=615417">Set up email on an Android phone or tablet</A></P></LI></UL>
+> <P><A href="https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872">Set up email on an Android phone or tablet</A></P></LI></UL>
 
 Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Microsoft Exchange 2013.
 

@@ -85,7 +85,7 @@ Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 <h2>To manage Exchange Online</h2>
 <p>As an administrator for your Microsoft 365 or Office 365 organization, you manage your organization's Exchange Online service in the Exchange admin center. Here's how you get there:
 <ol>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=529144">Sign in</a> to Microsoft 365 or Office 365 using your work or school account, and then choose the <b>Admin</b> tile. </p></li>
+<li><p><a href="https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4">Sign in</a> to Microsoft 365 or Office 365 using your work or school account, and then choose the <b>Admin</b> tile. </p></li>
 <li><p>In the Microsoft 365 admin center, choose <b>Admin centers</b> / <b>Exchange</b>.</p>
     <p>For an introduction, see <a href="/exchange/exchange-admin-center">Exchange admin center in Exchange Online</a></p></li>
 </ol>
