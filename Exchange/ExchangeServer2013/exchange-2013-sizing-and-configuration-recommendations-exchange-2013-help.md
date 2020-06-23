@@ -180,7 +180,7 @@ Configure the DB copy activation preference and the "MaximumPreferredActiveDatab
 
 The RedistributeActiveDatabases.ps1 script will rebalance active databases across the DAG nodes.
 
-Consider enforcing strict item count limits that match Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limit).
+Consider enforcing strict item count limits that match Microsoft 365 or Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limit).
 
 ## Pagefile
 

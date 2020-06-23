@@ -23,7 +23,7 @@ manager: serdars
 Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 
 > [!IMPORTANT]
-> If you're using Office 365 for business, you should configure email forwarding in the [Microsoft 365 admin center: Configure email forwarding in Office 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)
+> If you're using Microsoft 365 or Office 365 for business, you should configure email forwarding in the [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)
 
 If your organization uses an on-premises Exchange or hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
 

@@ -162,10 +162,10 @@ If you delete a user account that has a mailbox, the Exchange Information store 
 
 3. Retain the mailbox until all data has been removed or until preserving the data is no longer required.
 
-## Migrating mailboxes on hold from Exchange Server to Office 365
+## Migrating mailboxes on hold from Exchange Server to Microsoft 365 or Office 365
 <a name="migration"> </a>
 
-If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange Server mailbox to Exchange Online in Office 365:
+If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange Server mailbox to Exchange Online in Microsoft 365 or Office 365:
 
 - If the on-premises mailbox is on Litigation Hold or In-Place Hold, the hold settings are preserved after the mailbox is moved to Exchange Online.
 
@@ -174,4 +174,4 @@ If you have an Exchange hybrid deployment, the following conditions are true whe
 Hold settings and content in the Recoverable Items folder are also preserved when you move (offboard) an Exchange Online mailbox to your on-premises Exchange Server organization.
 
 > [!TIP]
-> For Exchange Server, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
+> For Exchange Server, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Microsoft 365 or Office 365.

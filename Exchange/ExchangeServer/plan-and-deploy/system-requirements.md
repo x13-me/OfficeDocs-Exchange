@@ -39,7 +39,7 @@ The supported coexistence scenarios between Exchange 2019 and earlier versions o
 
 ## Supported hybrid deployment scenarios for Exchange 2019
 
-Exchange 2019 supports hybrid deployments with Office 365 organizations that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites).
+Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory server requirements for Exchange 2019
 
@@ -150,7 +150,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios for Exchange 2016
 
-Exchange 2016 supports hybrid deployments with Office 365 organizations that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory server requirements for Exchange 2016
 
