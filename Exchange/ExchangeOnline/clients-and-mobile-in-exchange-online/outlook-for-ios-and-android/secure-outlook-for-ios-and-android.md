@@ -26,7 +26,7 @@ Protecting company or organizational data on users' mobile devices is extremely 
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Microsoft 365 or Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management](#leveraging-mobile-device-management), and use the Mobile Device Management (MDM) for Microsoft 365 or Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 
