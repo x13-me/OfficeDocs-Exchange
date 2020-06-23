@@ -27,7 +27,7 @@ manager: serdars
 
 # Add an SSL certificate to Exchange 2010
 
-Some services, such as Outlook Anywhere, Cutover migration to Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2010 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
+Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2010 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 
 ## What permissions do you need?
 
