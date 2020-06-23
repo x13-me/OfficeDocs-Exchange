@@ -223,7 +223,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
 [Mail flow best practices for Exchange Online, Microsoft 365, and Office 365 (overview)](mail-flow-best-practices.md)
 
-[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-with-microsoft-365-or-office-365.md)
+[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-using-microsoft-365-or-office-365.md)
 
 [Manage mail flow using a third-party cloud service with Microsoft 365 or Office 365](manage-mail-flow-using-third-party-cloud.md)
 
