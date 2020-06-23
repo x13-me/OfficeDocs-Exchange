@@ -340,7 +340,7 @@ After you change the MX record and verify that all email is being routed to Micr
 
 - All users in the batch are using their Microsoft 365 or Office 365 mailboxes. After the batch is deleted, mail sent to mailboxes on the on-premises Exchange Server isn't copied to the corresponding Microsoft 365 or Office 365 mailboxes.
 
-- Microsoft 365 or Office 365 mailboxes were synchronized at least once after mail began being sent directly to them. To do this, make sure that the value in the **Last Synced Time** box for the migration batch is more recent than when mail started being routed directly to Microsoft 365 or Office 365 mailboxes.
+- Microsoft 365 and Office 365 mailboxes were synchronized at least once after mail began being sent directly to them. To do this, make sure that the value in the **Last Synced Time** box for the migration batch is more recent than when mail started being routed directly to Microsoft 365 or Office 365 mailboxes.
 
 When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and then deletes the migration batch. The batch is removed from the list of migration batches on the migration dashboard.
 

@@ -63,7 +63,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
     After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
-7. In the Microsoft 365 or Office 365 domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
+7. In the domain wizard, choose **done, verify now**, and you'll see a verification page. Choose **Finish**.
 
     If the verification fails at first, wait awhile, and try again.
 
@@ -114,7 +114,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 ## Step 4: Give Microsoft 365 or Office 365 licences to your users
 <a name="licences"> </a>
 
-After Azure AD connect synchronizes your users and their passwords to Microsoft 365 or Office 365, you have to assign Microsoft 365 or Office 365 licenses them so that they have a cloud mailbox to which to migrate their on-premises mailbox data.
+After Azure AD connect synchronizes your users and their passwords to Microsoft 365 or Office 365, you have to assign licenses to them so that they have a cloud mailbox to which to migrate their on-premises mailbox data.
 
 The status on the **Data migration** page indicates that a license is needed as shown in the figure.
 
@@ -140,7 +140,7 @@ After you assign licences to your users you can go to the Data migration page to
 ## Step 6: Update DNS records
 <a name="DNS"> </a>
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 Admin center go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 admin center, go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
 
 ## See also
 <a name="DNS"> </a>

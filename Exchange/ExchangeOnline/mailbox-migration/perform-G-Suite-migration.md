@@ -65,7 +65,7 @@ After all migration batches have been completed, all users can use their migrate
 ## Migration limitations
 
 > [!NOTE]
-> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Microsoft 365 and Office 365 now support larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
 
 Throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google G Suite side.
 

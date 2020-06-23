@@ -5,7 +5,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
-description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 Office 365.
+description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 and Office 365.
 title: What you need to know about a cutover email migration
 ms.collection: 
 - exchange-online
@@ -77,7 +77,7 @@ The main steps you perform for a cutover migration are shown in the following il
 
 4. The administrator migrates the mailboxes and then verifies the migration.
 
-5. Grant Microsoft 365 or Office 365 licences to your users.
+5. Grant Microsoft 365 or Office 365 licenses to your users.
 
 6. The administrator configures the domain to begin routing email directly to Microsoft 365 or Office 365.
 

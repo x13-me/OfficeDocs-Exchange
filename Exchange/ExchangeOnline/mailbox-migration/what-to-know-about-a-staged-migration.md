@@ -31,7 +31,9 @@ As part of a Microsoft 365 or Office 365 deployment, you can migrate the content
 - Your source email system is Microsoft Exchange Server 2003 or Microsoft Exchange Server 2007.
 
   > [!NOTE]
-  > Microsoft Exchange Server 2003 and Microsoft Exchange Server 2007 are out of support. Support for Exchange 2003 ended on April 8, 2014. Support for Exchange 2007 ended on April 11, 2017. <br/><br/> You can't use a staged migration to migrate Exchange 2013 or Exchange 2010 mailboxes to Microsoft 365 or Office 365. Consider using a cutover migration or a hybrid email migration instead.
+  > - Microsoft Exchange Server 2003 and Microsoft Exchange Server 2007 are out of support. Support for Exchange 2003 ended on April 8, 2014. Support for Exchange 2007 ended on April 11, 2017.
+  >
+  > - You can't use a staged migration to migrate Exchange 2013 or Exchange 2010 mailboxes to Microsoft 365 or Office 365. Consider using a cutover migration or a hybrid email migration instead.
 
 - You have more than 2,000 mailboxes.
 

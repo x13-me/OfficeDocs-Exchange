@@ -278,7 +278,7 @@ To verify that you've successfully assigned or removed the Send on Behalf permis
      Get-DynamicDistributionGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
-   - Microsoft 365 or Office 365 group:
+   - Microsoft 365 group:
 
      ```PowerShell
      Get-UnifiedGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
