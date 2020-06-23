@@ -64,7 +64,7 @@ Microsoft is committed to helping protect the security of your information. We u
 
 In rare cases, such as problems that are especially difficult to solve, Microsoft may request additional data, including sections of memory (which may include memory shared by any or all applications running at the time the problem occurred), some registry settings, and one or more files from your computer. Your current documents may also be included. When additional data is requested, you will have an opportunity to view the information contained in the error report before choosing whether or not to send the report to Microsoft.
 
- **Important Information**: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting works on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you're an administrator and want to configure Group Policy for Microsoft Error Reporting, technical details are available at the [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?linkid=279978).
+ **Important Information**: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting works on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you're an administrator and want to configure Group Policy for Microsoft Error Reporting, technical details are available at the [Group Policy Settings Reference for Windows and Windows Server](https://www.microsoft.com/download/details.aspx?id=25250).
 
 ## Specific Feature: Online Feedback
 
@@ -154,4 +154,4 @@ Redmond, Washington 98052 USA
 
 425-882-8080
 
-To find the Microsoft subsidiary in your country or region, see [Microsoft office locations around the world](https://go.microsoft.com/fwlink/p/?linkid=848727).
+To find the Microsoft subsidiary in your country or region, see [Microsoft office locations around the world](https://www.microsoft.com/worldwide).

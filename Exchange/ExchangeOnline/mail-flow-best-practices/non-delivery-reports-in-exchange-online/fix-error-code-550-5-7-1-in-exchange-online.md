@@ -135,7 +135,7 @@ If your domain isn't fully enrolled in Microsoft 365 or Office 365, try the foll
 
 - Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
 
-- For information about adding your domain to Microsoft 365 or Office 365, see [Domains in Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
+- For information about adding your domain to Microsoft 365 or Office 365, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 - To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
