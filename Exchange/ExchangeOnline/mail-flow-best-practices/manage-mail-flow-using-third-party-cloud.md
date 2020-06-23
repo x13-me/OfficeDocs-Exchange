@@ -114,7 +114,7 @@ We strongly recommend that you use the archiving and auditing solutions that are
 
 [Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
-[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-with-office-365.md)
+[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-using-microsoft-365-or-office-365.md)
 
 [Manage mail flow with mailboxes in multiple locations (Microsoft 365 or Office 365 and on-premises Exchange)](manage-mail-flow-for-multiple-locations.md)
 
