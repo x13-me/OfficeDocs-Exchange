@@ -4,7 +4,7 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.reviewer: 
-description: 'Learn how to set up printers, scanners, LOB applications to send email using Microsoft 365 or Office 365. '
+description: 'Learn how to set up printers, scanners, LOB applications to send email using Microsoft 365 or Office 365.'
 title: How to set up a multifunction device or application to send email using Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
@@ -23,7 +23,7 @@ localization_priority: Priority
 
 ---
 
-# How to set up a multifunction device or application to send email using Microsoft 365 or Office 365 or 
+# How to set up a multifunction device or application to send email using Microsoft 365 or Office 365
 
 Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
