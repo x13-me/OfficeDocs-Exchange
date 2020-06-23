@@ -72,7 +72,7 @@ The following figure shows the relationship between users, role groups, and role
 Exchange Online includes several built-in role groups, each one providing permissions to manage specific areas in Exchange Online. Some role groups may overlap with other role groups. The following table lists each role group with a description of its use.
 
 |**Role group**|**Description**|**Default roles assigned**|
-| --- | --- | --- |
+|:---|:--- |:--- |
 |Compliance Management|Members can configure and manage compliance settings within Exchange in accordance with their policies.|Audit Logs <br/><br/> Compliance Admin <br/><br/> Data Loss Prevention <br/><br/> Information Rights Management <br/><br/> Journaling <br/><br/> Message Tracking <br/><br/> Retention Management <br/><br/> Transport Rules <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
 |Discovery Management|Members can perform searches of mailboxes in the Exchange Online organization for data that meets specific criteria and can also configure legal holds on mailboxes.|Legal Hold <br/><br/> Mailbox Search|
 |ExchangeServiceAdmins\_-\<unique value\>|Membership in this role group is synchronized across services and is managed centrally. You can't manage this role group in Exchange Online. <br/><br/> This role group doesn't have any roles assigned to it. However, it's a member of the Organization Management role group (as Exchange Service Administrator) and inherits the permissions provided by that role group. <br/><br/> You can add members to this role group by adding users to the Azure AD Exchange admin role in the Microsoft 365 admin center.|n/a|
