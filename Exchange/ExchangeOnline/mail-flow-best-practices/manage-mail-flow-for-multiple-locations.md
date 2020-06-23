@@ -84,7 +84,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
-     This enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+     This enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 
 5. You don't need connectors in the following scenarios unless one of your partners has a special requirement, such as enforcing TLS with a bank.
 
@@ -161,7 +161,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
-4. Because you're not relaying messages from your on-premises servers to the internet through Microsoft 365 or Office 365, you don't technically need to create connectors for the following scenarios. But if at some point you change your MX record to point to Microsoft 365 or Office 365, you'll need to create connectors; therefore, it's best to do it up front. In the Exchange admin center, use the connector wizard to [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) for the following scenarios, or use the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to create connectors:
+4. Because you're not relaying messages from your on-premises servers to the internet through Microsoft 365 or Office 365, you don't technically need to create connectors for the following scenarios. But if at some point you change your MX record to point to Microsoft 365 or Office 365, you'll need to create connectors; therefore, it's best to do it up front. In the Exchange admin center, use the connector wizard to [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365) for the following scenarios, or use the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to create connectors:
 
    - Sending mail from Microsoft 365 or Office 365 to your organization's email servers
 
@@ -215,7 +215,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
-     This allows Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+     This allows Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 
 5. [Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md) to make sure that messages are sent to your organization's on-premises servers via MX.
 
@@ -223,7 +223,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
 [Mail flow best practices for Exchange Online, Microsoft 365, and Office 365 (overview)](mail-flow-best-practices.md)
 
-[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-with-office-365.md)
+[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-with-microsoft-365-or-office-365.md)
 
 [Manage mail flow using a third-party cloud service with Microsoft 365 or Office 365](manage-mail-flow-using-third-party-cloud.md)
 
