@@ -102,11 +102,11 @@ I plan to use Exchange Online to host all my organization's mailboxes. All email
 
 This scenario requires you to use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Microsoft 365 and outbound mail from Microsoft 365 to the third-party solution and then to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 or Microsoft 365, and showing outbound mail from Microsoft 365 or Office 365 to the third-party solution and then to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
-#### Best practices for using a third-party cloud service with Microsoft 365
+#### Best practices for using a third-party cloud service with Microsoft 365 or Office 365
 
-We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365.
+We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365 and Office 365.
 
 ## See also
 
