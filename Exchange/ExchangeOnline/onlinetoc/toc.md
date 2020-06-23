@@ -86,7 +86,7 @@
 #### [Supported character sets](../mail-flow-best-practices/remote-domains/supported-character-sets.md)
 ### [Message format and transmission](../mail-flow-best-practices/message-format-and-transmission.md)
 ### [Configure external postmaster address](../mail-flow-best-practices/configure-external-postmaster-address.md)
-### [Manage mailboxes with Office 365](../mail-flow-best-practices/manage-mailboxes-with-office-365.md)
+### [Manage mailboxes using Microsoft 365 or Office 365](../mail-flow-best-practices/manage-mailboxes-using-microsoft-365-or-office-365.md)
 ### [Manage mail flow using third-party cloud](../mail-flow-best-practices/manage-mail-flow-using-third-party-cloud.md)
 ### [Manage mail flow for multiple locations](../mail-flow-best-practices/manage-mail-flow-for-multiple-locations.md)
 ### [Manage mail flow on Office 365 and on-prem](../mail-flow-best-practices/manage-mail-flow-on-office-365-and-on-prem.md)
