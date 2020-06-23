@@ -142,7 +142,7 @@ Microsoft is committed to helping protect the security of your information. We u
 
 ## For More Information
 
-Microsoft welcomes your comments regarding this privacy statement and its supplements. If you have questions or believe that we have not adhered to these documents, please contact us using this [Web form](https://go.microsoft.com/fwlink/p/?linkid=785778), or by email, at the following address:
+Microsoft welcomes your comments regarding this privacy statement and its supplements. If you have questions or believe that we have not adhered to these documents, please contact us using this [web form](https://www.microsoft.com/concern/privacy), or by email, at the following address:
 
 Microsoft Privacy
 
