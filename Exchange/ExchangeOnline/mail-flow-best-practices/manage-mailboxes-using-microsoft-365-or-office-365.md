@@ -35,7 +35,7 @@ For most organizations, we recommend using hosted mail flow because it's the sim
 
 For this scenario, your organization's mail flow setup looks like the following diagram:
 
-![Mail flow diagram showing mail going from the internet to Office 365 and from Office 365 to the internet.](../media/96ec9aca-fa95-4307-a992-479a1ed65e5c.png)
+![Mail flow diagram showing mail going from the internet to Microsoft 365 or Office 365, and from Microsoft 365 or Office 365 to the internet.](../media/96ec9aca-fa95-4307-a992-479a1ed65e5c.png)
 
 #### Best practices for hosted mail flow scenarios
 
