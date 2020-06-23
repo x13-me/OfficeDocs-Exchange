@@ -50,7 +50,7 @@ You can use the features in the following table to manage your Exchange Online o
 |Data loss prevention (DLP)|Organization Management <br/><br/> Compliance Management|
 |Discovery mailboxes - Create|Organization Management <br/> Recipient Management|
 |Distribution groups|Organization Management <br/> Recipient Management|
-|Office 365 connectors|Organization Management|
+|Microsoft 365 or Office 365 connectors|Organization Management|
 |In-Place eDiscovery|Discovery Management  <br/> **Note**: By default, the Discovery Management role group doesn't have any members. No users, including adminis, have the required permissions to search mailboxes. For more information, see [Assign eDiscovery permissions in Exchange](../security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions.md).|
 |In-Place Hold|Discovery Management <br/> Organization Management <br/> **Notes**:  <br/> • To create a query-based In-Place Hold, a user requires both the Mailbox Search and Legal Hold roles to be assigned via membership in a role group that has both roles assigned. To create an In-Place Hold without using a query, which places all mailbox items on hold, you must have the Legal Hold role assigned. The Discovery Management role group is assigned both roles.  <br/> • The Organization Management role group is assigned the Legal Hold role. Members of the Organization Management role group can place an In-Place Hold on all items in a mailbox, but can't create a query-based In-Place Hold.|
 |Journal archiving|Organization Management <br/><br/> Recipient Management|
@@ -59,7 +59,7 @@ You can use the features in the following table to manage your Exchange Online o
 |Mail flow|Organization Management|
 |Mail flow rules|Organization Management|
 |Mailbox settings|Organization Management <br/><br/> Recipient Management|
-|Microsoft Office 365 Message Encryption (OME)|Organization Management <br/><br/> Compliance Management <br/><br/> Records Management|
+|Message Encryption |Organization Management <br/><br/> Compliance Management <br/><br/> Records Management|
 |Message trace|Organization Management <br/><br/> Compliance Management <br/><br/> Help Desk|
 |Messaging records management|Compliance Management <br/> Organization Management <br/> Records Management|
 |Mobile devices|Organization Management <br/><br/> Recipient Management

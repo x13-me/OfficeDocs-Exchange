@@ -24,7 +24,7 @@ Protecting company or organizational data is extremely important. Outlook for iO
 
 2. Secure/Multipurpose Internet Mail Extension (S/MIME)
 
-Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Office 365 accounts using the native Microsoft sync technology.
+Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Microsoft 365 or Office 365 accounts using the native Microsoft sync technology.
 
 > [!NOTE]
 > Sensitvity labeling is not supported with Government Community Cloud accounts.
@@ -53,7 +53,7 @@ For information on the end user experience, see [Apply sensitivity labels to you
 
 ## Understanding S/MIME
 
-S/MIME provides encryption, which protects the content of e-mail messages, and it provides digital signatures, which verify the identity of the sender of an e-mail message. S/MIME in Outlook for iOS and Android is supported with Office 365 accounts using the native Microsoft sync technology.
+S/MIME provides encryption, which protects the content of e-mail messages, and it provides digital signatures, which verify the identity of the sender of an e-mail message. S/MIME in Outlook for iOS and Android is supported with Microsoft 365 or Office 365 accounts using the native Microsoft sync technology.
 
 Digital signatures are the more commonly used service of S/MIME. As the name suggests, digital signatures are the digital counterpart to the traditional, legal signature on a paper document. As with a legal signature, digital signatures provide the following security capabilities:
 

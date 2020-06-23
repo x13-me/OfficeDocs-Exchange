@@ -36,7 +36,7 @@ Typically, each line in an email message ends with a carriage return followed by
 
 If a message contains bare line feeds, the SMTP Chunking feature is required to transmit the message between email servers. Chunking uses the SMTP BDAT command as defined in [RFC 3030](https://go.microsoft.com/fwlink/p/?LinkId=784893). If the destination email server doesn't support BDAT, then it can't accept messages that contain bare line feeds.
 
-Office 365 used to remove bare line feeds from messages to enable delivery to older email servers that didn't support SMTP Chunking and the BDAT command. In an effort to better support security standards (for example, DomainKeys Identified Mail or DKIM), Office 365 no longer removes bare line feeds from messages.
+Microsoft 365 and Office 365 used to remove bare line feeds from messages to enable delivery to older email servers that didn't support SMTP Chunking and the BDAT command. In an effort to better support security standards (for example, DomainKeys Identified Mail or DKIM), Office 365 no longer removes bare line feeds from messages.
 
 ## I got this bounce message. How do I fix it?
 
@@ -66,7 +66,7 @@ A _bare line feed_ is a single line feed character (LF or ASCII 10) that isn't i
 
 ## Still need help?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

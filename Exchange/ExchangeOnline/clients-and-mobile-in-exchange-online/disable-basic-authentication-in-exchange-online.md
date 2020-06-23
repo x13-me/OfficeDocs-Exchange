@@ -34,7 +34,7 @@ Basic authentication in Exchange Online uses a username and a password for clien
 
 - Mail for iOS 11.3.1 or later
 
-If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using Office 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
 This topic explains how Basic authentication is used and blocked in Exchange Online, and the corresponding procedures for authentication policies.
 
@@ -90,7 +90,7 @@ Because authentication policies operate at the user level, Exchange Online can o
 
 1. An organization has the federated domain contoso.com and uses on-premises AD FS for authentication.
 
-2. The user ian@contoso.com exists in the on-premises organization, but not in Office 365 (there's no user account in Azure Active Directory and no recipient object in the Exchange Online global address list).
+2. The user ian@contoso.com exists in the on-premises organization, but not in Office 365 or Microsoft 365 (there's no user account in Azure Active Directory and no recipient object in the Exchange Online global address list).
 
 3. An email client sends a login request to Exchange Online with the username ian@contoso.com. An authentication policy can't be applied to the user, and the authentication request for ian@contoso.com is sent to the on-premises AD FS.
 
@@ -132,7 +132,7 @@ For email clients and apps that don't support modern authentication, you need to
 |Outlook 2010|• Autodiscover <br/>• MAPI over HTTP<br/>• Offline Address Book<br/>• Outlook Anywhere (RPC over HTTP)<br/>• Exchange Web Services (EWS)|
 
 > [!NOTE]
-> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).
+> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
 
 ### What do you need to know before you begin?
 
@@ -208,7 +208,7 @@ The methods that you can use to assign authentication policies to users are desc
    $Sales | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Basic Auth"}
    ```
 
-- **Use a list of specific user accounts**: This method requires a text file to identify the user accounts. Values that don't contain spaces (for example, the Office 365 work or school account) work best. The text file must contain one user account on each line like this:
+- **Use a list of specific user accounts**: This method requires a text file to identify the user accounts. Values that don't contain spaces (for example, the Office 365 or Microsoft 365 work or school account) work best. The text file must contain one user account on each line like this:
 
   > akol@contoso.com <br/> tjohnston@contoso.com <br/> kakers@contoso.com
 
@@ -435,7 +435,7 @@ Get-ADUser -Filter "Department -eq 'Developer'" -Properties Department
 ### Step 2: Disable legacy authentication in Exchange Online
 
 > [!NOTE]
-> The attribute values for on-premises users are synchronized to Exchange Online only for users that have a valid Exchange Online license. For more information, see [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+> The attribute values for on-premises users are synchronized to Exchange Online only for users that have a valid Exchange Online license. For more information, see [Assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
 
 The Exchange Online PowerShell syntax uses the following commands (two to identify the user accounts, and the other to apply the policy to those users):
 

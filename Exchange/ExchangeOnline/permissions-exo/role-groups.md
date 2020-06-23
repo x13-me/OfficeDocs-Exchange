@@ -28,7 +28,7 @@ A role group is a special kind of universal security group (USG) that's used in 
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To open Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- The procedures in this topic require the Role Management RBAC role in Exchange Online. Typically, you get this permission via membership in the Organization Management role group (the Office 365 Global administrator role).
+- The procedures in this topic require the Role Management RBAC role in Exchange Online. Typically, you get this permission via membership in the Organization Management role group (the Microsoft 365 or Office 365 Global administrator role).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 

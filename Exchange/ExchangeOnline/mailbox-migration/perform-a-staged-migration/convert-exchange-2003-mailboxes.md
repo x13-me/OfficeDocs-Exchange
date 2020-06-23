@@ -34,7 +34,7 @@ After you have completed a staged migration, convert the mailboxes to mail-enabl
 
 ## Why convert mailboxes to mail-enabled users?
 
-If you've completed a staged Exchange migration to migrate your organization's Exchange 2003 on-premises mailboxes to Office 365 and you want to manage cloud-based users from your on-premises organization (using Active Directory) you should convert the on-premises mailboxes to mail-enabled users (MEUs).
+If you've completed a staged Exchange migration to migrate your organization's Exchange 2003 on-premises mailboxes to Microsoft 365 or Office 365 and you want to manage cloud-based users from your on-premises organization (using Active Directory) you should convert the on-premises mailboxes to mail-enabled users (MEUs).
 
 This article includes a Windows PowerShell script that collects information from the cloud-based mailboxes and a Visual Basic (VB) script that you can run to convert Exchange 2003 mailboxes to MEUs. When you run this script, the proxy addresses from the cloud-based mailbox are copied to the MEU, which resides in Active Directory. Also, the properties of the MEU enable the Microsoft Online Services Directory Synchronization tool (DirSync) to match the MEU with its corresponding cloud mailbox
 
@@ -470,7 +470,7 @@ When you run the Exchange2003MBtoMEU.vbs script, it does the following for each 
   - **targetAddress**: Read from the on-premises mailbox; the value is the primary SMTP of the cloud mailbox.
 
     > [!IMPORTANT]
-    > To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value of msExchMailboxGuid on the MEU with the Guid from the cloud-based mailbox. To obtain the Guids for the mailboxes in your cloud organization and save them to a CSV file, run the following PowerShell command:
+    > To enable off-boarding from Microsoft 365 or Office 365 to Exchange 2003, you have to replace the value of msExchMailboxGuid on the MEU with the Guid from the cloud-based mailbox. To obtain the Guids for the mailboxes in your cloud organization and save them to a CSV file, run the following PowerShell command:
 
     ```PowerShell
     Get-Mailbox | Select PrimarySmtpAddress, Guid | Export-csv -Path .\guid.csv
@@ -554,4 +554,4 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
    - targetAddress
 
-    <sup>*</sup>As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox.
+    <sup>*</sup>As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Microsoft 365 or Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox.

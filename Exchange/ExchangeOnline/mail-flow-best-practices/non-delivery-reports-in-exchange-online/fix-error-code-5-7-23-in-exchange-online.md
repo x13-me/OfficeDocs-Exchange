@@ -43,17 +43,17 @@ To fix this issue, do the following steps:
 
 - Provision all of the domains you own. We limit the number of emails with unprovisioned domains that a tenant can send.
 
-- Add your on-premises IPs, if any, to the SPF record of any domains you send for. This would include any unprovisioned domains you might be relaying through Office 365.
+- Add your on-premises IPs, if any, to the SPF record of any domains you send for. This would include any unprovisioned domains you might be relaying through Microsoft 365 or Office 365.
 
-- Verify that the outbound message wasn't identified as spam by Office 365 and routed through the [High Risk Delivery Pool](https://docs.microsoft.com/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
+- Verify that the outbound message wasn't identified as spam by Microsoft 365 or Office 365 and routed through the [High Risk Delivery Pool](https://docs.microsoft.com/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
 
-  To receive Bcc copies of outbound messages that are determined to be spam, see [Configure outbound spam policy notifications in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/configure-the-outbound-spam-policy).
+  To receive Bcc copies of outbound messages that are determined to be spam, see [Configure outbound spam policy notifications](https://docs.microsoft.com/office365/SecurityCompliance/configure-the-outbound-spam-policy).
 
-  If you determine that the outbound message was incorrectly detected as spam by Office 365, contact support.
+  If you determine that the outbound message was incorrectly detected as spam by Microsoft 365 or Office 365, contact support.
 
 ## Still need help with error code 550 5.7.23?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

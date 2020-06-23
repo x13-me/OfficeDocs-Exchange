@@ -10,22 +10,22 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Instructions for migrating from G Suite to Microsoft Office 365 in stages by migrating users in batches.
+description: Instructions for migrating from G Suite to Microsoft 365 or Office 365 in stages by migrating users in batches.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Perform a G Suite migration
 
-You can migrate batches of users from G Suite to Office 365, allowing a migration project to be done in stages. This migration requires that you have Azure Active Directory (AD) Connect (formerly known as Office 365 Directory Synchronization, or DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
+You can migrate batches of users from G Suite to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you have Azure Active Directory (AD) Connect (formerly known as Office 365 Directory Synchronization, or DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
 
-If you don't have Azure AD Connect in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
+If you don't have Azure AD Connect in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
 
 To manually provision mail-enabled users without DirSync, see [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) for more information.
 
-All of the procedures in this article assume that your Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
    > [!NOTE]
-   > G Suite migration is not currently available for Office 365 US Government GCC High or DoD. 
+   > G Suite migration is not currently available for Office 365 US Government GCC High or DoD.
 
 ## Overview of the process
 
@@ -37,30 +37,30 @@ Prior to their migration, the MX record for the base "fabrikaminc.net" domain po
 
 ![Before the G Suite migration begins](../media/gsuite-mig-before-migration.png)
 
-The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes reside. To prepare for the migration, new routing domains have been created: the *gsuite.fabrikaminc.net* domain points to G Suite and the *o365.fabrikaminc.net* domain points to Office 365.
+The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes reside. To prepare for the migration, new routing domains have been created: the *gsuite.fabrikaminc.net* domain points to G Suite and the *o365.fabrikaminc.net* domain points to Microsoft 365 or Office 365.
 
-On the G Suite side, aliases have been added for all of the users in the G Suite routing domain.  On the Office 365 side, MailUsers have been provisioned for all of the users from the G Suite tenant. The ExternalEmailAddress field for MailUsers on the Office 365 side were configured to point back to the primary mailbox using the address at the routing domain for the G Suite side.  Additionally, there should be aliases for the user in the O365 routing domain.
+On the G Suite side, aliases have been added for all of the users in the G Suite routing domain.  On the Microsoft 365 or Office 365 side, MailUsers have been provisioned for all of the users from the G Suite tenant. The ExternalEmailAddress field for MailUsers on the Microsoft 365 or Office 365 side were configured to point back to the primary mailbox using the address at the routing domain for the G Suite side.  Additionally, there should be aliases for the user in the Microsoft 365 or Office 365 routing domain.
 
 The green arrow indicates how, at this point in the migration, User 2 still contacts User 1 through their G Suite email addresses.
 
 ![During a single batch of a G Suite migration](../media/gsuite-mig-during-batch.png)
 
-User 1 and User 2 are part of the first migration batch to Office 365, while User 3 and User 4 will be part of a later batch. The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes still reside. Because User 1 and User 2 have had their migrations started, they've been converted from MailUsers to Mailboxes on the Office 365 side.
+User 1 and User 2 are part of the first migration batch to Microsoft 365 or Office 365, while User 3 and User 4 will be part of a later batch. The MX record for the primary domain "fabrikaminc.net" still points to G Suite, where all the primary mailboxes still reside. Because User 1 and User 2 have had their migrations started, they've been converted from MailUsers to Mailboxes on the Microsoft 365 or Office 365 side.
 
-The ExternalEmailAddress for each user has been moved to a ForwardingSmtpAddress, so that messages sent to User 1 and User 2 will be delivered back to their source mailboxes on the G Suite side by rerouting the message back to the G Suite routing domain. This is indicated by the red arrows in the above diagram. Mail is still being synced from the source G Suite side to the Office 365 side.
+The ExternalEmailAddress for each user has been moved to a ForwardingSmtpAddress, so that messages sent to User 1 and User 2 will be delivered back to their source mailboxes on the G Suite side by rerouting the message back to the G Suite routing domain. This is indicated by the red arrows in the above diagram. Mail is still being synced from the source G Suite side to the Microsoft 365 or Office 365 side.
 
 ![After a single batch of a G Suite migration](../media/gsuite-mig-after-batch.png)
 
-The MX record for the primary domain "fabrikaminc.net" still points to G Suite. Now that User 1 and User 2 have been fully migrated to Office 365, they should start working out of Office 365. On the G Suite side, automatic mail forwarding has been set up for migrated users, so that new emails sent to their G Suite address will be delivered instead to the Office 365 address via the routing domain. This is shown by the green arrows in the above diagram.
+The MX record for the primary domain "fabrikaminc.net" still points to G Suite. Now that User 1 and User 2 have been fully migrated to Microsoft 365 or Office 365, they should start working out of Microsoft 365 or Office 365. On the G Suite side, automatic mail forwarding has been set up for migrated users, so that new emails sent to their G Suite address will be delivered instead to the Microsoft 365 or Office 365 address via the routing domain. This is shown by the green arrows in the above diagram.
 
 > [!IMPORTANT]
 > If your organization has disabled a user's ability to set a forwarding address, the G Suite migration tool will also be unable to set the forwarding address. You must enable permissions to set SMTP forwarding in order for forwarding to be set successfully during your migration.
 
-Meanwhile, the forwarding address has been removed from the Microsoft 365 or Office 365 user object, so emails will be delivered to that user in the Office 365 routing domain (as shown by the red arrows above).
+Meanwhile, the forwarding address has been removed from the Microsoft 365 or Office 365 user object, so emails will be delivered to that user in the Microsoft 365 or Office 365 routing domain (as shown by the red arrows above).
 
 ![After G Suite migration is complete](../media/gsuite-mig-after-migration.png)
 
-After all migration batches have been completed, all users can use their migrated mailboxes on Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Office 365 organization instead of the G Suite tenant.  The routing domains and extra aliases can now be removed, as can the G Suite tenant. The migration of mail, calendar, and contacts from G Suite to Office 365 is now complete.
+After all migration batches have been completed, all users can use their migrated mailboxes on Microsoft 365 or Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Microsoft 365 or Office 365 organization instead of the G Suite tenant.  The routing domains and extra aliases can now be removed, as can the G Suite tenant. The migration of mail, calendar, and contacts from G Suite to Microsoft 365 or Office 365 is now complete.
 
 ## Migration limitations
 
@@ -108,7 +108,7 @@ Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service 
 
    ![JSON key](../media/gsuite-mig-4-json.png)
 
-7. Keep track of the JSON keyfile that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Office 365](#create-a-migration-endpoint-in-office-365). Click **Done**.
+7. Keep track of the JSON keyfile that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Microsoft 365 or Office 365](#create-a-migration-endpoint-in-microsoft-365-or-office-365). Click **Done**.
 
 8. Click on the **Email** for the Service Account you just created to enter the details page. Alternately, you can click the dots under the **Actions** column and click on the **Edit** action. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
 
@@ -151,13 +151,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
    > [!NOTE]
    > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
 
-## Create a sub-domain for mail routing to Office 365
+## Create a sub-domain for mail routing to Microsoft 365 or Office 365
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as a G Suite admin for your tenant.
 
 2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
 
-3. Select **Add another domain**. Enter the domain that you will use for routing mails to Office 365. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Office 365](#create-a-migration-batch-in-office-365).
+3. Select **Add another domain**. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
    ![Add another domain](../media/gsuite-mig-11-sub-domain-gsuite.png)
 
@@ -165,9 +165,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Skip Google mx](../media/gsuite-mig-10-skip-google-mx.png)
 
-5. Click **Skip Google MX setup**, and then click **I use another mail server**. This other mail server will be Office 365.
+5. Click **Skip Google MX setup**, and then click **I use another mail server**. This other mail server will be Microsoft 365 or Office 365.
 
-6. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Office 365. Ensure that this domain that you created above is an accepted domain in Office 365. Follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) to add the Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Office 365.
+6. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Microsoft 365 or Office 365. Ensure that this domain that you created above is an accepted domain in Microsoft 365 or Office 365. Follow the instructions in [Add a domain to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) to add the Microsoft 365 or Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Microsoft 365 or Office 365.
 
 ## Create a sub-domain for mail routing to your G Suite domain
 
@@ -191,13 +191,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
    > [!IMPORTANT]
    > If you are using non-default Transport settings in your Microsoft 365 or Office 365 organization, you should check that mail flow will work from Office 365 to G Suite. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your G Suite routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
 
-## Provision users in O365
+## Provision users in Microsoft 365 or Office 365
 
 Once your G Suite environment has been properly configured, you can complete your migration in the Exchange admin center or through the Exchange Online PowerShell.
 
 Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
 
-We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between O365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Office 365 routing domain (such as "will@o365.fabrikaminc.net").
+We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
 ## Start a G Suite migration batch with the Exchange admin center (EAC)
 
@@ -211,7 +211,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 4. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
-   - EmailAddress (required). Contains the primary email address for an existing Office 365 mailbox.
+   - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
@@ -227,7 +227,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-7. Enter the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
+7. Enter the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365.
 
 8. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
@@ -236,7 +236,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-9. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-office-365) for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.
+9. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
@@ -251,15 +251,15 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
     ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
 
-During completion, another incremental sync is run to copy any changes that have been made to the G Suite mailbox. Additionally, the forwarding address that routes mail from O365 to G Suite is removed, and a forwarding address that routes mail from G Suite to O365 is added. This ensures that any  messages received by migrated users at their G Suite mailboxes will be sent to their new Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Office 365 address, the message will get routed to their G Suite mailbox.
+During completion, another incremental sync is run to copy any changes that have been made to the G Suite mailbox. Additionally, the forwarding address that routes mail from Microsoft 365 or Office 365 to G Suite is removed, and a forwarding address that routes mail from G Suite to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their G Suite mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their G Suite mailbox.
 
 ## Start a G Suite migration with Exchange Online Powershell
 
-### Create a migration endpoint in Office 365
+### Create a migration endpoint in Microsoft 365 or Office 365
 
 1. Connect to the service using Remote Powershell. See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for more information.
 
-2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365. The following steps use 'admin123' as an example.
+2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365. The following steps use 'admin123' as an example.
 
 3. Run the following command:
 
@@ -275,13 +275,13 @@ During completion, another incremental sync is run to copy any changes that have
    New-MigrationEndpoint -Gmail -ServiceAccountKeyFileData $([System.IO.File]::ReadAllBytes("C:\\somepath\\yourkeyfile.json")) -EmailAddress admin123@fabrikaminc.net -Name gmailEndpoint
    ```
 
-### Create a migration batch in Office 365
+### Create a migration batch in Microsoft 365 or Office 365
 
 1. Connect to the service using Remote Powershell.
 
 2. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
-   - EmailAddress (required). Contains the primary email address for an existing Office 365 mailbox.
+   - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
@@ -302,7 +302,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 4. Start the migration batch.
 
-### Complete the migration batch in Office 365
+### Complete the migration batch in Microsoft 365 or Office 365
 
 When the migration batch has reached the state of **Synced**, it can be completed by running the `Complete-MigrationBatch` cmdlet.
 
@@ -313,4 +313,4 @@ During completion, another incremental sync is run to copy any changes that have
 
 ## Finalizing your migration
 
-After you have successfully migrated all of your G Suite users to Office 365, you can switch your primary MX record to point to Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live).  At this point, you are free to decommission your source G Suite tenant.
+After you have successfully migrated all of your G Suite users to Microsoft 365 or Office 365, you can switch your primary MX record to point to Microsoft 365 or Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live).  At this point, you are free to decommission your source G Suite tenant.
