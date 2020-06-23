@@ -29,7 +29,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 You received this NDR because the source email server (the connecting IP address) changed its previous email sending patterns by sending a much higher volume of messages than in the past.
 
-This error code is part of anti-spam filtering in Office 365. You'll get this error when the source IP address that's sending you email changes **significantly** from its previously-established patterns. This part of a filtering technique known as _graylisting_: when new senders appear, they're treated more suspiciously than senders with a previously-established history of sending email messages (think of it as a probation period).
+This error code is part of anti-spam filtering in Microsoft 365 or Office 365. You'll get this error when the source IP address that's sending you email changes **significantly** from its previously-established patterns. This part of a filtering technique known as _graylisting_: when new senders appear, they're treated more suspiciously than senders with a previously-established history of sending email messages (think of it as a probation period).
 
 This error response is called _IP throttling_, and it can help reduce the amount of spam that you receive.
 
@@ -41,9 +41,9 @@ This error response is called _IP throttling_, and it can help reduce the amount
 
 If you received this NDR in response to a message that you sent, try the following steps:
 
-1. If your organization uses Exchange Online Protection (EOP) as part of Office 365 or standalone EOP subscription, an email admin can use the steps in the next section to fix the problem.
+1. If your organization uses Exchange Online Protection (EOP) as part of Microsoft 365 or Office 365 or standalone EOP subscription, an email admin can use the steps in the next section to fix the problem.
 
-2. If your organization does not use EOP (for example, if you provide a third-party service), the error will resolve itself as you establish an email sending history with Office 365 over a period of a few days.
+2. If your organization does not use EOP (for example, if you provide a third-party service), the error will resolve itself as you establish an email sending history with Microsoft 365 or Office 365 over a period of a few days.
 
 If the problem continues, send the bounce message to your email admin for assistance and refer them to the information in this topic.
 
@@ -51,18 +51,18 @@ If the problem continues, send the bounce message to your email admin for assist
 
 To remove throttling for these messages, you need to configure a connector:
 
-1. If you're trying to relay outbound email from your on-premises email server through Office 365, you need to configure a connector from your email server to Office 365. For more information, see [Set up connectors to route mail between Office 365 and your own email servers](../use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
+1. If you're trying to relay outbound email from your on-premises email server through Microsoft 365 or Office 365, you need to configure a connector from your email server to Microsoft 365 or Office 365. For more information, see [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](../use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
 
 2. If inbound email to your Microsoft 365 or Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](../use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md).
 
-After you set up a connector, you can [validate your connectors in Office 365](../use-connectors-to-configure-mail-flow/validate-connectors.md).
+After you set up a connector, you can [validate your connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md).
 
 > [!NOTE]
 > We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
 
 ## Still need help with error code 451 4.7.500-699 (ASxxx)?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the Microsoft 365 or Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

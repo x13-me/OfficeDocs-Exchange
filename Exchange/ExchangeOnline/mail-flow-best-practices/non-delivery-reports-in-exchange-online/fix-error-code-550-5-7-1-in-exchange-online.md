@@ -27,7 +27,7 @@ It's frustrating when you get an error after sending an email message. This topi
 |:-----|:-----|:-----|:-----|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this)|
 
-This information also applies to error codes 5.7.0 through 5.7.999 in Exchange Online and Office 365. There can be several causes for dsn error code 5.7.1, for which solutions are provided later in this topic.
+This information also applies to error codes 5.7.0 through 5.7.999 in Exchange Online and Microsoft 365 or Office 365. There can be several causes for dsn error code 5.7.1, for which solutions are provided later in this topic.
 
 ## Why did I get this bounce message?
 
@@ -129,13 +129,13 @@ In this cases, the NDR the sender receives would include information in the **Di
 
 To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com.
 
-### Your domain isn't fully enrolled in Office 365
+### Your domain isn't fully enrolled in Microsoft 365 or Office 365
 
-If your domain isn't fully enrolled in Office 365, try the following steps:
+If your domain isn't fully enrolled in Microsoft 365 or Office 365, try the following steps:
 
 - Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
 
-- For information about adding your domain to Office 365, see [Domains in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
+- For information about adding your domain to Microsoft 365 or Office 365, see [Domains in Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?LinkId=328438).
 
 - To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
@@ -143,7 +143,7 @@ If your domain isn't fully enrolled in Office 365, try the following steps:
 
 If you have an incorrect MX record, try the following steps:
 
-1. Check the sender and recipient domains for incorrect or stale MX records by using the **Advanced diagnostics** \> **Exchange Online** test in the [Microsoft Support and Recovery Assistant for Office 365](https://go.microsoft.com/fwlink/p/?linkid=402528). For more information about the Support and Recovery Assistant, see [About the Microsoft Support and Recovery Assistant](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f).
+1. Check the sender and recipient domains for incorrect or stale MX records by using the **Advanced diagnostics** \> **Exchange Online** test in the [Microsoft Support and Recovery Assistant](https://go.microsoft.com/fwlink/p/?linkid=402528). For more information about the Support and Recovery Assistant, see [About the Microsoft Support and Recovery Assistant](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f).
 
 2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\>_.mail.protection.outlook.com.
 
@@ -175,7 +175,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
   > Your message couldn't be delivered to the recipient because you don't have permission to send to it.
 Ask the recipient's email admin to add you to the accept list for the recipient.
-For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
+For more information, see DSN 5.7.129 Errors in Exchange Online and Microsoft 365 or Office 365.
 
   To cease all communication with the Exchange Online mailbox, you need to **delete** the on-premises user account instead of disabling it.
 
@@ -185,7 +185,7 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Office 365.
 
 ## Still need help?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

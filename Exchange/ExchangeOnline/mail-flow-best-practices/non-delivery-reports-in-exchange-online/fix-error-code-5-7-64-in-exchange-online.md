@@ -39,13 +39,13 @@ This problem happens when you use an inbound connector to receive messages from 
 
 - IP address of the source email server no longer matches the source IP address on the inbound connector.
 
-The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service.
+The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Microsoft 365 or Office 365 tried to send the message to the external email server or service.
 
 To fix this issue, see [this topic](https://docs.microsoft.com/exchange/troubleshoot/connectors/relay-access-denied-smtp).
 
 ## Still need help with error code 550 5.7.64?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
