@@ -26,7 +26,7 @@ manager: serdars
 
 Email clients provide actionable error messages when something goes wrong. Sending email from devices and applications is less easy to fix, and you might not get clear information to help you. This article can help you troubleshoot, and it uses printer configurations as examples.
 
- **As a first step to fixing any problems, check your configuration**. See [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md) for detailed information about the configuration options.
+ **As a first step to fixing any problems, check your configuration**. See [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md) for detailed information about the configuration options.
 
 ## My printer is already configured for email, but I don't know which configuration option it uses
 
@@ -120,7 +120,7 @@ This error indicates that the device is trying to send an email from an address 
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This error indicates that your printer connects to the SMTP client submission endpoint (smtp.office365.com). However, your printer must also logon to a mailbox to send a message. This error occurs when you have not entered mailbox logon credentials in the printer's settings. If there is no option to enter credentials, this printer does not support SMTP client submission; use either direct send or Microsoft 365 or Office 365 SMTP relay instead. See [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
+This error indicates that your printer connects to the SMTP client submission endpoint (smtp.office365.com). However, your printer must also logon to a mailbox to send a message. This error occurs when you have not entered mailbox logon credentials in the printer's settings. If there is no option to enter credentials, this printer does not support SMTP client submission; use either direct send or Microsoft 365 or Office 365 SMTP relay instead. See [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md).
 
 ### Error: 550 5.1.8 Bad outbound sender
 
@@ -139,7 +139,7 @@ This can be caused by a number of issues.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Microsoft 365 or Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-microsoft-365-or-office-365-direct-send).
+This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Microsoft 365 or Office 365 organization, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md#option-2-send-mail-directly-from-your-printer-or-application-to-microsoft-365-or-office-365-direct-send).
 
 ### My emails are not sent to recipients who are not in my organization
 
@@ -165,7 +165,7 @@ This can be caused by a number of issues.
 
 ### Emails are no longer being sent to external recipients
 
-Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) to edit your existing connector settings.
+Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) to edit your existing connector settings.
 
 ### Emails from my device are marked as junk by Microsoft 365 or Office 365
 
