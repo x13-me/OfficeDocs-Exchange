@@ -131,7 +131,7 @@ Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the
 
 2. Go to **Health** \> **Service health** to see if there's a current service issue in Microsoft 365 or Office 365 affecting the user's account.
 
-3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Microsoft 365 or Office 365.
+3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is available within Microsoft 365 and Office 365.
 
 If there's a problem with the recipient's domain, contact the recipient or the recipient's email administrator to let them know about the problem. They'll have to resolve the issue in order to prevent NDR 5.1.x errors.
 

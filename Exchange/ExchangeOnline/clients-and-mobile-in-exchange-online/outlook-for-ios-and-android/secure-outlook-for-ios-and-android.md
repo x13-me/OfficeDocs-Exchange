@@ -63,7 +63,7 @@ Once the app is installed, users can follow these steps to add their corporate e
 > [!IMPORTANT]
 > The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
-The richest and broadest protection capabilities for Microsoft 365 or Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
+The richest and broadest protection capabilities for Microsoft 365 and Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
 
 > [!NOTE]
 > While the Enterprise Mobility + Security suite subscription includes both Microsoft Intune and Azure Active Directory Premium, customers can purchase Microsoft Intune licenses and Azure Active Directory Premium licenses separately. All users must be licensed in order to leverage the conditional access and Intune app protection policies that are discussed in this article.
@@ -117,24 +117,24 @@ For more information on the available settings, see [Android app protection poli
 
 ## Leveraging Mobile Device Management
 
-If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM) for Microsoft 365 or Office 365. This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
+If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM). This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-A global admin must complete the following steps to activate and set up MDM for Microsoft 365 or Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+A global admin must complete the following steps to activate and set up MDM. See [Set up Mobile Device Management (MDM) in Microsoft 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
-1. Activating MDM for Microsoft 365 or Office 365 by following steps in the Security & Compliance Center.
+1. Activating MDM by following steps in the Microsoft 365 Security Center.
 
-2. Setting up MDM for Microsoft 365 or Office 365 by, for example, creating an APNs certificate to manage iOS devices, and by adding a Domain Name System (DNS) record for your domain to support Windows phones.
+2. Setting up MDM by, for example, creating an APNs certificate to manage iOS devices.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
 > [!NOTE]
-> Policies and access rules created in MDM for Microsoft 365 or Office 365 will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM for Microsoft 365 or Office 365, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
+> Policies and access rules created in MDM will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
 
 ## Leveraging Exchange Online mobile device policies
 
-If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM for Microsoft 365 or Office 365 functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
+If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
 
 ### Mobile device mailbox policy
 

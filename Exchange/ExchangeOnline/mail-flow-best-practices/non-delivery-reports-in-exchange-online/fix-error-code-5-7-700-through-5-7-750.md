@@ -67,7 +67,7 @@ To fix this error, you can:
 
 - Use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Microsoft 365 or Office 365. For more information, see [Configure mail flow using connectors](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
-- Look for unusual connectors and compromised accounts. Attackers will often create new inbound connectors in your Microsoft 365 or Office 365 organization to send spam. For mre information, see [Validate connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md), and [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+- Look for unusual connectors and compromised accounts. Attackers will often create new inbound connectors in your Microsoft 365 or Office 365 organization to send spam. For more information, see [Validate connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md), and [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 ## Still need help with error codes 5.7.700 through 5.7.750?
 

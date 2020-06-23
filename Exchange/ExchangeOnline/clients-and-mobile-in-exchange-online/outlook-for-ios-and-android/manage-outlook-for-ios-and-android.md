@@ -22,7 +22,7 @@ manager: serdars
 
  **Summary**: This article describes best practices for managing mobile devices with Outlook for iOS and Android in Exchange Online.
 
-Outlook for iOS and Android provides users the fast, intuitive email and calendar experience users expect from a modern mobile app, while being the only app to provide support for the best features of Microsoft 365 or Office 365. In addition, Microsoft provides a number of utilities for managing and protecting company data on mobile devices in your Exchange Online organization.
+Outlook for iOS and Android provides users the fast, intuitive email and calendar experience users expect from a modern mobile app, while being the only app to provide support for the best features of Microsoft 365 and Office 365. In addition, Microsoft provides a number of utilities for managing and protecting company data on mobile devices in your Exchange Online organization.
 
 ## Options for managing devices and applications
 
@@ -49,7 +49,7 @@ Microsoft recommends that customers use the features of the Enterprise Mobility 
 
 ### Using Enterprise Mobility + Security
 
-The richest and broadest protection capabilities for Microsoft 365 or Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune, Azure Information Protection, and Azure Active Directory Premium features, such as conditional access.
+The richest and broadest protection capabilities for Microsoft 365 and Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune, Azure Information Protection, and Azure Active Directory Premium features, such as conditional access.
 
 > [!NOTE]
 > While the Enterprise Mobility + Security suite subscription includes licenses for both Microsoft Intune and Azure Active Directory, customers can purchase Microsoft Intune licenses and Azure Active Directory Premium licenses separately. All users must be licensed to leverage the conditional access and Intune app protection policies discussed in this article.
@@ -72,7 +72,7 @@ Key features of the Enterprise Mobility + Security suite with Outlook for iOS an
 
 ### Using built-in Mobile Device Management (MDM)
 
-MDM for Microsoft 365 or Office 365 provides device management capabilities at no additional cost. Microsoft Intune powers these basic capabilities, providing a core set of controls in the Microsoft 365 admin center for organizations that need the basics.
+MDM provides device management capabilities at no additional cost. Microsoft Intune powers these basic capabilities, providing a core set of controls in the Microsoft 365 admin center for organizations that need the basics.
 
 Because this is a device management solution, there is no native capability to control which apps can be used, even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage conditional access policies.
 
@@ -96,7 +96,7 @@ In order to manage and protect corporate data within the app (such as restrictin
 
 ### Using Mobile Device Access and Mobile Device Mailbox Policies
 
-Microsoft recommends that customers use either the Enterprise Mobility + Security suite or the built-in MDM for Microsoft 365 or Office 365 to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange admin center.
+Microsoft recommends that customers use either the Enterprise Mobility + Security suite or the built-in MDM to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange admin center.
 
 Outlook for iOS and Android supports the following Exchange mobile device mailbox policy settings:
 

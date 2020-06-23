@@ -139,7 +139,7 @@ To verify that the recipient exists and has an active license assigned:
 
 1. In the Microsoft 365 admin center, choose **Users** to go to the **Active users** page.
 
-2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
+2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
 
    ![Screenshot shows a section of the Active users page with a search term, "allie", typed in the search box adjacent to the Filters option, which is set to All users. Below, the complete display name and username are shown.](../../media/4b17dfe8-104c-4e8a-9325-3779a7d4bc5f.png)
 

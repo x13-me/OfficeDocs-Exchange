@@ -22,7 +22,7 @@ manager: serdars
 
  **Summary**: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.
 
-Outlook for iOS and Android supports app settings that allow Microsoft 365 or Office 365 and mobile device management (MDM), like Microsoft Endpoint Manager, administrators to customize the behavior of the app.
+Outlook for iOS and Android supports app settings that allow mobile device management (MDM) administrators (using tools such as Microsoft Endpoint Manager) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
 
 App configuration can be delivered either through the MDM OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Intune App Protection Policy (APP) channel. Outlook for iOS and Android supports the following configuration scenarios:
 
