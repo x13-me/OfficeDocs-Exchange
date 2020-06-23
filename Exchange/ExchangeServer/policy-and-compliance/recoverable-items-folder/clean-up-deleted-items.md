@@ -98,10 +98,24 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
    ```
 
-4. Retrieve the current Managed Folder Assistant work cycle configuration. Be sure to note the setting for later.
+4. Retrieve the current Managed Folder Assistant work cycle configuration. The default value is one day, but you can set a custom value on specific Mailbox servers, or on all Exchange 2016 and Exchange 2019 Mailbox servers in the Active Directory forest. For details, see [Configure and run the Managed Folder Assistant in Exchange Server](../mrm/configure-managed-folder-assistant.md).
 
-   ```PowerShell
-   Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+   - **Specific server**: Replace \<ServerName\> with the name of the Mailbox server, run the following command, and verify the value of the **WorkCycle** property:
+
+     ```PowerShell
+     [xml]$diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=TimeBasedAssistants"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.TimeBasedAssistants.ElcAssistant
+     ```
+
+   - **AD forest**: Run the following command, and verify the value of the **WorkCycle** property:
+
+     ```PowerShell
+     [xml]$diag=Get-ExchangeDiagnosticInfo -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=TimeBasedAssistants"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.TimeBasedAssistants.ElcAssistant
+     ```
+
+   To find the specific override that's customizing the work cycle configuration, run the following command:
+
+   ```powershell
+   Get-SettingOverride
    ```
 
 5. Disable client access to the mailbox to make sure no changes can be made to mailbox data for the duration of this procedure.
