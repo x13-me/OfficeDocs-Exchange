@@ -68,13 +68,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\MSExchange OWA\InstantMessa
 
 This key should contain an **ImplementationDLLPath** string that points to the `Microsoft.Rtc.Internal.Ucweb` DLL. The default location is `C:\Program Files\Microsoft UCMA 4.0\Runtime\SSP\Microsoft.Rtc.Internal.Ucweb.dll`.
 
-To fix this issue, reinstall UCMA 4.0 or manually create the registry key. You can download UCMA 4.0 here: [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=260990).
+To fix this issue, reinstall UCMA 4.0 or manually create the registry key. You can download UCMA 4.0 here: [Unified Communications Managed API 4.0 Runtime](https://www.microsoft.com/download/details.aspx?id=34992).
 
 ## Recovery actions for error: "InstantMessageOCSProvider.InitializeEndpointManager. IM provider not found."
 
 This error indicates the `Microsoft.Rtc.Internal.Ucweb` DLL file is missing on the Mailbox server. This file should have been installed when UCMA 4.0 was installed on the server. The default location is `C:\Program Files\Microsoft UCMA 4.0\Runtime\SSP`.
 
-To fix this issue, reinstall UCMA 4.0. For more information, see [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=260990).
+To fix this issue, reinstall UCMA 4.0. For more information, see [Unified Communications Managed API 4.0 Runtime](https://www.microsoft.com/download/details.aspx?id=34992).
 
 ## Recovery actions for error: "Instant Messaging Server name is set to null or empty on web.config."
 
