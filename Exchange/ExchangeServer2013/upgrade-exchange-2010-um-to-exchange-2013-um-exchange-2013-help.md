@@ -46,7 +46,7 @@ By default, when you install an Exchange 2013 Mailbox server, the U.S. English (
 > [!NOTE]
 > If U.S. English is the only language that you want to provide for your dial plan, you can skip this step and go to step 2.
 
-You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 This example uses setup.exe to install the Japanese (ja-JP) UM language pack.
 

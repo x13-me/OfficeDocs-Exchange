@@ -61,8 +61,6 @@ To perform the following procedure in Exchange 2013, confirm the following:
 
 3. Create a GALSync management agent for each forest by using Forefront Identify Manager. This allows you to synchronize the users in each forest and create a common GAL. For detailed steps, see the following resources:
 
-   - [Configuring Global Address List (GAL) Synchronization with Forefront Identity Manager (FIM) 2010](https://go.microsoft.com/fwlink/p/?linkid=279869)
-
    - [Work with Management Agents](https://go.microsoft.com/fwlink/p/?linkid=279870)
 
    - [Forefront Identity Manager 2010 R2 Documentation Roadmap](https://go.microsoft.com/fwlink/p/?linkid=279871)

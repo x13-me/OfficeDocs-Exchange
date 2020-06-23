@@ -90,7 +90,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/?linkid=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\\PFScripts. Make sure all scripts are saved in the same location.
 

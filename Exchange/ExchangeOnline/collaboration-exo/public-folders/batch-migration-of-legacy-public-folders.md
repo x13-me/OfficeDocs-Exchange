@@ -91,11 +91,11 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?LinkId=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 
-3. Download the following files from [Mail-enabled Public Folders - directory sync script](https://go.microsoft.com/fwlink/p/?LinkId=532376):
+3. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
     - `Sync-MailPublicFolders.ps1`
 

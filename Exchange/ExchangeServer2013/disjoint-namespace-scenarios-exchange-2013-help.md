@@ -57,7 +57,7 @@ Exchange 2013 supports the following three scenarios for deploying Exchange in a
 These scenarios are detailed in the following sections.
 
 > [!NOTE]
-> It's supported to run Exchange 2013 in the disjoint namespace scenarios described in this topic. However, if you have a disjoint namespace scenario that isn't one of the scenarios described in this topic, you must work with Microsoft Services to deploy Exchange 2013. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft Services</A>.
+> It's supported to run Exchange 2013 in the disjoint namespace scenarios described in this topic. However, if you have a disjoint namespace scenario that isn't one of the scenarios described in this topic, you must work with Microsoft Services to deploy Exchange 2013. For more information, see <A href="https://www.microsoft.com/industry/services">Microsoft Services</A>.
 
 ## Scenario: Primary DNS suffix and DNS domain name are different
 
