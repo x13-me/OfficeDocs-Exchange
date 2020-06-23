@@ -22,7 +22,7 @@ description: "Summary: How to allow your on-premises Exchange Server 2016 users 
 
  **Summary**: How to allow your on-premises Exchange Server 2016 users to take advantage of using document collaboration with OneDrive for Business and SharePoint Online while in a hybrid configuration.
 
-Recently a new attachment option has been made available in Office 365. In Exchange 2016, this option, known as document collaboration, allows on-premises users to integrate attachments stored on OneDrive for Business directly in their Outlook on the web clients.
+Recently a new attachment option has been made available in Microsoft 365 and Office 365. In Exchange 2016, this option, known as document collaboration, allows on-premises users to integrate attachments stored on OneDrive for Business directly in their Outlook on the web clients.
 
 > [!NOTE]
 > Beginning with the release of Exchange Server 2016, Outlook Web App is now known as Outlook on the web.
@@ -37,7 +37,7 @@ After configuring your environment with the instructions below, Outlook on the w
 
 ![attachment dialog with modern attachments enabled](../media/89eeae65-ce3a-4c47-b57e-db734a1de95b.png)
 
-Users in your organization with on-premises mailboxes and who have a OneDrive for Business account in Office 365 are eligible to use the modern attachment method, which would allow them to share a document stored in OneDrive for Business with multiple recipients. The location of the recipients (online versus on-premises) won't matter.
+Users in your organization with on-premises mailboxes and who have a OneDrive for Business account in Microsoft 365 or Office 365 are eligible to use the modern attachment method, which would allow them to share a document stored in OneDrive for Business with multiple recipients. The location of the recipients (online versus on-premises) won't matter.
 
 Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../exchange-hybrid.md).
 
@@ -67,19 +67,19 @@ Verify that the following prerequisite steps have been completed, and then use t
 - The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
-    > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
+    > OAuth between Exchange 2016 and Microsoft 365 or Office 365 needs to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
 - Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
     > [!NOTE]
-    > See [Set up OneDrive for Business in Office 365](https://docs.microsoft.com/onedrive/onedrive) for more information.
+    > See [OneDrive](https://docs.microsoft.com/onedrive/onedrive) for more information.
 
 Perform the following steps:
 
 1. Configure the default Outlook on the web mailbox policy so that sets the OneDrive for Business host URL.
 
    > [!NOTE]
-   > You can go to the Office 365 SharePoint Online Tenant Admin to retrieve the OneDrive for Business host URL. For example, https://contoso-my.sharepoint.com is a My Site Host URL in Contoso's O365 tenant. > Even though the Outlook on the web mailbox policy that comes with Exchange 2016 is called "Default", it isn't automatically applied to any mailboxes unless you either make it the default policy, or assign it directly to a mailbox.
+   > You can go to the Microsoft 365 or Office 365 SharePoint Online Tenant Admin to retrieve the OneDrive for Business host URL. For example, https://contoso-my.sharepoint.com is a My Site Host URL in Contoso's Microsoft 365 or Office 365 organization. Even though the Outlook on the web mailbox policy that comes with Exchange 2016 is called "Default," it isn't automatically applied to any mailboxes unless you either make it the default policy, or assign it directly to a mailbox.
 
    Using the following example as a basis, use the Exchange Management Shell to configure the internal and external MySite URL on the Default Outlook on the web mailbox policy:
 

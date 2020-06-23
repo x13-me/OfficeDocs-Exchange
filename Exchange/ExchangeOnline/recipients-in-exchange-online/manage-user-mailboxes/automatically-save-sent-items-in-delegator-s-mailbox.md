@@ -23,7 +23,7 @@ manager: serdars
 
 # Automatically save sent items in delegator's mailbox
 
-Mailboxes in Office 365 can be set up so that someone (such as an executive assistant) can access the mailbox of another person (such as a manager) and send mail as them. These people are often called the delegate and the delegator, respectively. We'll call them "assistant" and "manager" for simplicity's sake. When an assistant is granted access to a manager's mailbox, it's called delegated access.
+Mailboxes in Microsoft 365 or Office 365 can be set up so that someone (such as an executive assistant) can access the mailbox of another person (such as a manager) and send mail as them. These people are often called the delegate and the delegator, respectively. We'll call them "assistant" and "manager" for simplicity's sake. When an assistant is granted access to a manager's mailbox, it's called delegated access.
 
 People often set up delegated access and send permissions to allow an assistant to manage a manager's calendar where they need to send and respond to meeting requests. By default, when an assistant sends mail as, or on behalf of, a manager, the sent message is stored in the assistant's Sent Items folder. You can use this article to change this behavior so that the sent message is stored in both the assistant and manager's Sent Items folders.
 
@@ -45,7 +45,7 @@ When you set up someone as a delegate on a manager's mailbox, you can choose whe
 
 - **Send on behalf** When someone has "Send on behalf" permissions on a mailbox, messages they send from the owner's mailbox will show that the message was sent by someone on behalf of the mailbox owner. In the example above, if Rob has "Send on behalf" permissions on Mary's mailbox, messages he sends from her mailbox will show **From: Rob on behalf of Mary** to recipients.
 
-The send permissions that someone has on another user's mailbox are important when thinking about how sent items should be handled. This is because you can decide, for each level of permissions, whether messages should be stored in just the assistant's Sent Items folder or in both the assistant and manager's Sent Items folders. Office 365 defaults to storing sent items for messages sent with "Send as" and "Send on behalf" permissions in the assistant's Sent Items only. You can change that default behavior using the steps below.
+The send permissions that someone has on another user's mailbox are important when thinking about how sent items should be handled. This is because you can decide, for each level of permissions, whether messages should be stored in just the assistant's Sent Items folder or in both the assistant and manager's Sent Items folders. Microsoft 365 and Office 365 default to storing sent items for messages sent with "Send as" and "Send on behalf" permissions in the assistant's Sent Items only. You can change that default behavior using the steps below.
 
 > [!TIP]
 > Managers might have multiple assistants with different levels of permissions. In the example above, while Rob may be able to send messages on behalf of Mary, she could have another assistant that can Send as Mary. If this was the case, Mary's IT department could do the steps for both "Send as" and "Send on behalf" permissions.
