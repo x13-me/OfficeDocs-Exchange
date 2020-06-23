@@ -170,7 +170,3 @@ Network or ISP changes might change your static IP address. This results in your
 ### Emails from my device are marked as junk by Microsoft 365 or Office 365
 
 Microsoft 365 or Office 365 SMTP relay requires your device to send email from a static IP address. Check that your SPF record is set up with your static IP address. A network or ISP change could change your static IP address. Update your SPF record to reflect this change. If you aren't sending from your own static IP address, consider SMTP client submission instead.
-
-## See also
-
-[How to configure IIS for relay with Microsoft 365 or Office 365](how-to-configure-iis-for-relay-with-office-365.md)
