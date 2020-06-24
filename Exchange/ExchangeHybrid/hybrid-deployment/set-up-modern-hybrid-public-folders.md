@@ -61,11 +61,14 @@ Here is an example of proper configuration in Exchange Online:
 
 ## Step 1: Download the scripts
 
-1. Download the following files from [Modern mail-enabled public folders - directory sync script](https://www.microsoft.com):
+1. Download the following files from [Exchange 2013/2016 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855):
 
    - `Sync-ModernMailPublicFolders.ps1`
 
    - `Sync-ModernMailPublicFolders.psd1`
+   
+    > [!NOTE]
+    > The download package at this location contains additional files. To follow the instructions in this article, you only need the two listed above. 
 
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
 
