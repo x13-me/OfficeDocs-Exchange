@@ -30,8 +30,6 @@ For information about setting up email on your mobile device, see these topics:
 
 - [Set up Office apps and email on Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)
 
-- [Set up Office apps and email on Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
-
 For additional management tasks related to user access to mailboxes, see these topics:
 
 - [Enable or disable Outlook on the web access to mailboxes in Exchange Server](../../clients/outlook-on-the-web/mailbox-access.md)

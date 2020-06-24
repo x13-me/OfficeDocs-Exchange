@@ -24,9 +24,9 @@ Shared mailboxes make it easy for a group of people in your company to monitor a
 
 **Notes**:
 
-- If you're using Microsoft 365 or Office 365, you should create your shared mailbox in the Microsoft 365 admin center. For more information, see [Create a shared mailbox](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox).
+- If you're using Microsoft 365 or Office 365, you should create your shared mailbox in the Microsoft 365 admin center. For more information, see [Create a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox).
 
-- Creating a shared mailbox in Exchange Online also creates an active user account with a system-generated (unknown) password. To block sign-in for this account, see [Block sign-in for the shared mailbox account](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
+- Creating a shared mailbox in Exchange Online also creates an active user account with a system-generated (unknown) password. To block sign-in for this account, see [Block sign-in for the shared mailbox account](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 - If your organization uses a hybrid Exchange environment, you should use the Exchange admin center (EAC) in your on-premises Exchange organization to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared mailboxes in Exchange Online](shared-mailboxes.md).
 
