@@ -149,18 +149,12 @@ The email client software that's used to listen to a Protected Voice Mail messag
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Windows Mobile or Windows Phone</p></td>
-<td><ul>
-<li><p>Windows Mobile doesn't support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
 <td><p>Exchange ActiveSync</p></td>
 <td><ul>
 <li><p>Protected Voice Mail is supported in Exchange 2010 SP1 and later versions.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Other email clients</p></td>
 <td><ul>
 <li><p>Protected Voice Mail isn't supported.</p></li>
