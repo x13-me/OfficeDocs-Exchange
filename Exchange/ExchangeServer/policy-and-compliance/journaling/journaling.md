@@ -121,7 +121,7 @@ The journaling mailbox is where the journaled messages are delivered. How you co
 
 - Journaling mailboxes contain sensitive information, so you need to secure access to them. Messages in the journaling mailbox may be part of legal proceedings or subject to regulatory requirements. We recommend that you create and enforce clearly-defined policies that indicate who has access to a journaling mailbox. Speak with your legal representatives to verify that your journaling solution complies with all the laws and regulations that apply to your organization.
 
-- An Office 365 mailbox can't be used as a journaling mailbox. If you're running a hybrid deployment between on-premises Exchange and Office 365, you can designate on-premises journaling mailboxes for your Office 365 and on-premises organizations. You can also deliver journaled messages to an on-premises email archiving system or a third-party email archiving service.
+- A Microsoft 365 or Office 365 mailbox can't be used as a journaling mailbox. If you're running a hybrid deployment between on-premises Exchange and Microsoft 365 or Office 365, you can designate on-premises journaling mailboxes for your Microsoft 365 or Office 365 and on-premises organizations. You can also deliver journaled messages to an on-premises email archiving system or a third-party email archiving service.
 
 - Journaling mailboxes need to accept messages that are at least as large as the maximum message size that's available in your organization. Be sure to account for any custom maximum message sizes that you've configured on individual mailboxes. For more information, see [Configure message size limits for a mailbox](../../recipients/user-mailboxes/mailbox-message-size-limits.md).
 

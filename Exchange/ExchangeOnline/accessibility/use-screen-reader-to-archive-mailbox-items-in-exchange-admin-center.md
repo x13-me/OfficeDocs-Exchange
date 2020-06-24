@@ -25,7 +25,7 @@ You can use your screen reader in the Exchange admin center (EAC) to enable or d
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Microsoft 365 or Office 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
 
 For more information about creating distribution groups, refer to Use a screen reader to create a new distribution group in the Exchange admin center.
 
@@ -35,7 +35,7 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://support.microsoft.com/help/17479).
+Many tasks in the EAC require the use of pop-up windows. In your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
@@ -71,9 +71,10 @@ With mailbox archiving in Exchange Online, also called "in-place archiving," use
 
 9. Press Enter. You hear "Are you sure you want to enable the archive?" With the focus on the **Yes** button, press Enter.
 
-   > **Tip**: If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9.
-
-    **Note**: For more information, go to [Enable archive mailboxes in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
+   > [!TIP]
+   > - If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9.
+   > 
+   > - For more information, go to [Enable archive mailboxes in the compliance center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Disable mailbox archiving for a user
 
@@ -125,10 +126,10 @@ You can apply the same retention policy to all users, or you can apply different
 
 ## Accessibility information
 
-The [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?LinkID=21487) website provides more information about assistive technology. A free monthly electronic newsletter is available to help you stay current with accessibility topics about Microsoft products. To subscribe, visit the [Microsoft Accessibility Update Newsletter Subscription](https://go.microsoft.com/fwlink/p/?LinkID=14920) page.
+The [Microsoft Accessibility](https://www.microsoft.com/accessibility/) website provides more information about assistive technology.
 
 ### Technical support for customers with disabilities
 
-Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
+Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) for technical assistance.
 
-The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) site to find the contact details for your region.

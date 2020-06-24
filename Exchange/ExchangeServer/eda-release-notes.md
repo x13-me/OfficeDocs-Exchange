@@ -49,9 +49,9 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
 - Release of additional scenarios:
 
-  - Exchange 2016-based hybrid deployment between Exchange 2013 and Office 365
+  - Exchange 2016-based hybrid deployment between Exchange 2013 and Microsoft 365 or Office 365
 
-  - Exchange 2016-based hybrid deployment between Exchange 2016 and Office 365
+  - Exchange 2016-based hybrid deployment between Exchange 2016 and Microsoft 365 or Office 365
 
 - Updated new and existing Exchange 2016-based hybrid deployment scenarios to support Microsoft 365 admin center classic and preview layouts.
 
@@ -71,7 +71,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
 - Release of additional scenarios:
 
-  - Exchange 2016-based hybrid deployment between Exchange 2010 and Office 365
+  - Exchange 2016-based hybrid deployment between Exchange 2010 and Microsoft 365 or Office 365
 
   - Minor updates throughout all scenarios
 
@@ -99,7 +99,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
   - On-premises upgrade from mixed Exchange 2007 and Exchange 2010 to Exchange 2013
 
-  - Hybrid deployment with Exchange 2010 and Exchange 2013 with Office 365
+  - Hybrid deployment with Exchange 2010 and Exchange 2013 with Microsoft 365 or Office 365
 
 **April 2013 (revision 1119)**
 
@@ -109,7 +109,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
   - On-premises upgrade from Exchange Server 2007 to Exchange Server 2013
 
-  - Hybrid deployment with Exchange 2007 and Exchange 2013 with Office 365
+  - Hybrid deployment with Exchange 2007 and Exchange 2013 with Microsoft 365 or Office 365
 
 **February 2013 (revision 672)**
 
@@ -117,9 +117,9 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
   - New installation of Microsoft Exchange Server 2013
 
-  - Hybrid deployment with Exchange Server 2013 and Office 365
+  - Hybrid deployment with Exchange Server 2013 and Microsoft 365 or Office 365
 
-  - Cloud only deployment of Exchange Online in Office 365
+  - Cloud only deployment of Exchange Online in Microsoft 365 or Office 365
 
 ## Known issues
 

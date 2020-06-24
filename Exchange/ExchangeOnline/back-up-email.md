@@ -47,11 +47,11 @@ For more information about how admins can recover deleted items in Exchange Onli
 > [!NOTE]
 > Point in time restoration of mailbox items is out of scope for the Exchange Online service, though there might be third-party solutions available that provide this functionality. Exchange Online offers great retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
 >
-> - [High Availability and Business Continuity](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
-> - [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
-> - [In-Place Hold and Litigation Hold](security-and-compliance/in-place-and-litigation-holds.md)
-> - [Office 365 retention policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-> - [Inactive mailboxes in Office 365](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)
+> - [High availability and business continuity](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
+> - [Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
+> - [In-place hold and litigation hold](security-and-compliance/in-place-and-litigation-holds.md)
+> - [Retention policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
+> - [Inactive mailboxes](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)
 
 ## How do users backup Outlook data?
 
@@ -61,26 +61,26 @@ However, if you need to provide additional storage for user emails, the best way
 
 For more information about Exchange Online Archiving, see:
 
-- [Enable archive mailboxes in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes)
+- [Enable archive mailboxes in the Microsoft 365 security and compliance centers](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes)
 
 - [Unlimited archiving in Office 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving)
 
-For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
+For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
 
 ## How your data is protected
 
-To learn how the service is protected using Data Resiliency, see [Office 365 Exchange Data Resiliency](https://docs.microsoft.com/Office365/securitycompliance/office-365-exchange-data-resiliency).
+To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-exchange-data-resiliency).
 
-## When Can I Restore Outlook data on an Office 365 account without a license?
+## When Can I Restore Outlook data on a Microsoft 365 or Office 365 account without a license?
 
-After the expiration or removal of an O365 License, Office 365 doesn't **instantly** remove your data. The default Office 365 retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from O365.
+After the expiration or removal of a Microsoft 365 or Office 365 license, your data is not **instantly** removed. The default retention time is 30 days; this means that you can renew or backup your data into PST before the data is entirely removed from Microsoft 365 or Office 365.
 
 ## How do users restore Outlook data?
 
-To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
+To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
 
 To learn how to restore deleted items in Outlook on the web (formerly known as Outlook Web App), see [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
 
-## Offboard a user from Office 365
+## Offboard a user from Microsoft 365 or Office 365
 
 For more info what to do when a user in your organization leaves, check out [Remove a former employee](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.

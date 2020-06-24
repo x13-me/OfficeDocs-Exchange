@@ -1354,7 +1354,7 @@
       - name: Accessing public folders with Outlook 2016 for Mac
         href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac
       - name: Migrate your public folders to Microsoft 365 Groups
-        href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups
+        href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups
       - name: Public folder procedures
         href: public-folder-procedures-exchange-2013-help.md
         items:
@@ -1378,9 +1378,9 @@
           - name: Roll back a public folder migration from Exchange 2013 to Exchange Online
             href: https://docs.microsoft.com/exchange/collaboration/public-folders/roll-back-exchange-online-migration
         - name: Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups
-          href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
+          href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help.md
         - name: Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups
-          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help.md
         - name: Create a public folder mailbox
           href: create-public-folder-mailbox-exchange-2013-help.md
         - name: Create a public folder
@@ -1572,8 +1572,6 @@
           href: add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md
         - name: Create or modify a mobile device mailbox policy
           href: create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help.md
-        - name: Supported mobile device mailbox policies for Windows Phones and devices
-          href: supported-mobile-device-mailbox-policies-for-windows-phones-and-devices-exchange-2013-help.md
       - name: Mobile devices
         href: mobile-devices-exchange-2013-help.md
         items:

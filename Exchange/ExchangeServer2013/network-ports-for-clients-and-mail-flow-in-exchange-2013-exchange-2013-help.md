@@ -272,7 +272,7 @@ DNS resolution of the next mail hop is a fundamental part of mail flow in any Ex
 
 ## Network ports required for hybrid deployments
 
-The network ports that are required for an organization that uses both Exchange 2013 and Microsoft Office 365 are covered in the "Hybrid deployment protocols, port and endpoints" section in [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+The network ports that are required for an organization that uses both Exchange 2013 and Microsoft 365 or Office 365 are covered in the "Hybrid deployment protocols, port and endpoints" section in [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network ports required for Unified Messaging
 
@@ -280,4 +280,4 @@ The network ports that are required for Unified Messaging are covered in the fol
 
 - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
-- [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
+- [Exchange Server 2013 SP1 Architecture Poster](https://www.microsoft.com/download/details.aspx?id=42542)

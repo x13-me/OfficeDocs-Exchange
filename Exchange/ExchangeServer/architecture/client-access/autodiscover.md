@@ -31,7 +31,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 - Outlook configures services with only the username and password.
 
 > [!NOTE]
-> If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
+> If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 ## Autodiscover services and Active Directory
 

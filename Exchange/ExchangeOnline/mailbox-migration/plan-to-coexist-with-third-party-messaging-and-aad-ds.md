@@ -23,7 +23,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# Plan for third-party email coexistence with Microsoft 365 and Azure Active Directory
+# Plan for third-party email coexistence with Microsoft 365 or Office 365 and Azure Active Directory
 
 Most Microsoft email migration information assumes that you're running Exchange Server in your on-premises organization. This topic is for organizations that use Active Directory as their on-premises identity platform and a third-party messaging system (for example, IBM Lotus Notes or Novell GroupWise) for email.
 
@@ -43,7 +43,7 @@ As you plan for this third-party email coexistence, consider the Azure Active Di
 
 **Requirements**:
 
-- A subscription to Microsoft 365 (must be an enterprise subscription).
+- A subscription to Microsoft 365 or Office 365 (must be an enterprise subscription).
 
 - The on-premises organization is running Active Directory with the Microsoft Exchange 2016 or later schema updates.
 
@@ -65,7 +65,7 @@ Otherwise, if your long-term goal is to maintain a cross-premises messaging envi
 
 Regardless of where your inbound mail enters the cross-premises deployment, mail-routing requires that users with mailboxes in your on premise messaging system are represented by mail-enabled users in the cloud messaging system. The mail-enabled user object in the cloud directory is has the target SMTP address of the corresponding recipient mailbox in the on-premises organization.
 
-The process of synchronizing mail-enabled users with the correct target address requires installing the [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts) tool in your on-premises Active Directory. The Azure Active Directory Connect tool synchronizes the on-premises mail-enabled user in the Active Directory with a target address value that matches the shared namespace and need to be a verified domain in Microsoft 365.
+The process of synchronizing mail-enabled users with the correct target address requires installing the [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts) tool in your on-premises Active Directory. The Azure Active Directory Connect tool synchronizes the on-premises mail-enabled user in the Active Directory with a target address value that matches the shared namespace and need to be a verified domain in Microsoft 365 or Office 365.
 
 For example, if you've verified the domain in your Microsoft 365 deployment (for example, domino.contoso.com), the Azure Active Directory Connect tool synchronizes mail-enabled user objects in your Active Directory that have a target address with domino.contoso.com in the target address property. This is used to route email cross premises. The user's primary SMTP address in this scenario would remain contoso.com, provided contoso.com is a verified domain in Microsoft 365.
 
@@ -81,9 +81,9 @@ By default, Exchange Online sends messages back to the on-premises email system 
 
 In many case, the links refer to configuration particulars for an on-premises Exchange messaging system. You will have to translate the goals of the Exchange Server configurations to specific configurations of your third-party messaging solution. As an example, mail-forwarding is a straightforward goal, but it's an area where configuration differs widely across messaging systems.
 
-The following steps outline the process for implementing third-party messaging coexistence with Microsoft 365:
+The following steps outline the process for implementing third-party messaging coexistence with Microsoft 365 or Office 365:
 
-- [Step 1: Sign up for Microsoft 365](#step-1-sign-up-for-microsoft-365)
+- [Step 1: Sign up for Microsoft 365 or Office 365](#step-1-sign-up-for-microsoft-365-or-office-365)
 
 - [Step 2: Install Exchange Server 2016](#step-2-install-exchange-server-2016)
 
@@ -91,17 +91,17 @@ The following steps outline the process for implementing third-party messaging c
 
 - [Step 4: Enable mail-enabled users in your on-premises Active Directory](#step-4-enable-mail-enabled-users-in-your-on-premises-active-directory)
 
-- [Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365)](#step-5-install-and-configure-azure-active-directory-connect-to-synchronize-mail-enabled-users-into-azure-active-directory-microsoft-365)
+- [Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365 or Office 365)](#step-5-install-and-configure-azure-active-directory-connect-to-synchronize-mail-enabled-users-into-azure-active-directory-microsoft-365-or-office-365)
 
 - [Step 6: Configure shared namespace routing](#step-6-configure-shared-namespace-routing)
 
 - [Step 7: Disable TNEF to your on-premises messaging system](#step-7-disable-tnef-to-your-on-premises-messaging-system)
 
-## Step 1: Sign up for Microsoft 365
+## Step 1: Sign up for Microsoft 365 or Office 365
 
-You need to subscribe to Microsoft 365 to create a service tenant that is used in the deployment with your on-premises email system. Microsoft 365 provides you with an Exchange Online organization in the cloud.
+You need to subscribe to Microsoft 365 or Office 365 to create a service tenant that is used in the deployment with your on-premises email system. Microsoft 365 and Office 365 provide you with an Exchange Online organization in the cloud.
 
-When you subscribe, be sure to verify the primary SMTP domain in your organization with Microsoft 365. The process of verifying a domain proves that you own the domain. The verified domain is also the domain that the Azure Active Directory Sync tool uses to provision objects in the cloud. Then add the mail routing domain representing the third-party system.
+When you subscribe, be sure to verify the primary SMTP domain in your organization with Microsoft 365 or Office 365. The process of verifying a domain proves that you own the domain. The verified domain is also the domain that the Azure Active Directory Sync tool uses to provision objects in the cloud. Then add the mail routing domain representing the third-party system.
 
 Learn more at [Sign up for Microsoft 365](https://products.office.com/business/enterprise-productivity-tools).
 
@@ -155,7 +155,7 @@ If you need to create or modify users in your on-premises Active Directory, see 
 
 - **Modify existing users**: [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
-## Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365)
+## Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365 or Office 365)
 
 1. [Download and install](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap) Azure AD Connect.
 
@@ -163,7 +163,7 @@ If you need to create or modify users in your on-premises Active Directory, see 
 
 3. In the optional features section, select **Exchange Hybrid Deployment**.
 
-The Exchange Hybrid Deployment feature allows for the co-existence of Exchange mailboxes in both on-premises and Microsoft 365. Azure AD Connect is synchronizing a specific set of [attributes](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback) from Azure AD back into your on-premises directory.
+The Exchange Hybrid Deployment feature allows for the co-existence of Exchange mailboxes in both on-premises and Microsoft 365 or Office 365. Azure AD Connect is synchronizing a specific set of [attributes](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback) from Azure AD back into your on-premises directory.
 
 ## Step 6: Configure shared namespace routing
 
@@ -173,7 +173,7 @@ The procedure for implementing a shared namespace depends on:
 
 - You on-premises email system.
 
-- Whether you will be configuring your MX record to point to your on-premises email system or to Microsoft 365.
+- Whether you will be configuring your MX record to point to your on-premises email system or to Microsoft 365 or Office 365.
 
 In either case, the cloud-based Exchange Online configurations are similar. After you've configured a shared namespace, you should be able to send email between the two messaging systems. If free busy is required as part of the coexistence strategy, ensure to work with the software vendor to ensure the namespace planning will work with their free busy application.
 
@@ -187,7 +187,7 @@ This section provides links to more information about migrating mailboxes from y
 
 ### Moving messaging-related data
 
-As previously stated, the majority of messaging migration tools that are included with Microsoft 365 are designed to work with Exchange Server. However, Microsoft 365 also includes the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
+As previously stated, the majority of messaging migration tools that are included with Microsoft 365 and Office 365 are designed to work with Exchange Server. However, Microsoft 365 and Office 365 also include the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
 
 For organizations that use Outlook as an email client, you can also use the [PST Capture tool](https://docs.microsoft.com/microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization) to migrate messaging data to the cloud.
 
@@ -199,7 +199,7 @@ Here are some third-party migration tools and partners that can assist with Exch
 
 - **[BitTitan](https://www.bittitan.com/)**: Provider of migration solutions to Exchange Online.
 
-- **[Quest](https://www.quest.com/)**: Provider of on-premises and hosted migration and coexistence software, including pre-migration analysis and complete user and application coexistence. Full-featured migrations from on-premises Microsoft Exchange, IBM Domino, Novell GroupWise, Zimbra and other environments to Microsoft Microsoft 365, Exchange Online, and SharePoint Online.
+- **[Quest](https://www.quest.com/)**: Provider of on-premises and hosted migration and coexistence software, including pre-migration analysis and complete user and application coexistence. Full-featured migrations from on-premises Microsoft Exchange, IBM Domino, Novell GroupWise, Zimbra and other environments to Microsoft 365, Office 365, Exchange Online, and SharePoint Online.
 
 - **[Transvault](http://www.transvault.com/)**: Provider of migration solutions to Exchange Online.
 

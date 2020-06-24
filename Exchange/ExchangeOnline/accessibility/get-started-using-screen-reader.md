@@ -33,17 +33,17 @@ Exchange Online, which includes the EAC, is a web-based application, so the keyb
 
 For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://support.microsoft.com/help/17479).
+Many tasks in the EAC require the use of pop-up windows. In your browser, be sure to [enable pop-up windows](https://support.microsoft.com/help/17479) for Microsoft 365 or Office 365.
 
 ### Confirm your Office 365 or Microsoft 365 subscription plan
 
 Exchange Online is included in several different business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 
-[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md)[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to any admin role group, for example, Organization Management. You know you are assigned to at least one admin role group if you can open the EAC. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+[Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to any admin role group, for example, Organization Management. You know you are assigned to at least one admin role group if you can open the EAC. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Work with screen readers
 
@@ -57,7 +57,7 @@ The EAC works with the Narrator and JAWS screen readers, among others. These scr
 
 - If your screen reader stops reading, press Alt+Tab to leave the current window, and then press Alt+Tab again to return to it. This resets the focus on the current window to get your screen reader to read the window properly.
 
-For more information about Narrator, refer to [Hear text read aloud with Narrator](https://support.microsoft.com/help/14234). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/p/?LinkId=787625).
+For more information about Narrator, refer to [Hear text read aloud with Narrator](https://support.microsoft.com/help/14234). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://www.freedomscientific.com/Products/software/JAWS/).
 
 ## Do more tasks with the EAC and a screen reader
 
@@ -115,6 +115,6 @@ Explore specific tasks that use the screen reader to work in the EAC.
 
 ## Technical support for customers with disabilities
 
-Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
+Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) for technical assistance.
 
-The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) site to find the contact details for your region.

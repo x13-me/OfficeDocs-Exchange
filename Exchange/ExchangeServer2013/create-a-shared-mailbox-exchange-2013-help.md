@@ -22,10 +22,7 @@ _**Applies to:** Exchange Server 2013_
 Shared mailboxes makes it easy for a group of people in your company to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user.
 
 > [!IMPORTANT]
-> If you're using Office 365 for business, you should create your shared mailbox in the Microsoft 365 admin center.
-> <UL>
-> <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=834766">Create shared mailboxes in Office 365</A></P></LI></UL>
+> If you're using Microsoft 365 or Office 365, you should create your shared mailbox in the Microsoft 365 admin center.
 
 If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared mailboxes](shared-mailboxes-exchange-2013-help.md).
 
@@ -65,9 +62,9 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 To learn how users can access and use shared mailboxes, check out the following:
 
-- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013](https://go.microsoft.com/fwlink/p/?linkid=834764)
+- [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-- [Open and use a shared mailbox in Outlook on the web for business](https://go.microsoft.com/fwlink/p/?linkid=834766)
+- [Open and use a shared mailbox in Outlook Web App](https://support.microsoft.com/office/bc127866-42be-4de7-92ae-1ef2f787fd5c)
 
 ## Use the Shell to create a shared mailbox
 

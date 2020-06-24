@@ -5,8 +5,8 @@ author: mattpennathe3rd
 ms.author: v-mapenn
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.reviewer: 
-description: When you migrate on-premises Exchange mailboxes to Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
-title: Assign Exchange permissions to migrate mailboxes to Office 365
+description: When you migrate on-premises Exchange mailboxes to Microsoft 365 or Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
+title: Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -23,11 +23,11 @@ manager: serdars
 
 ---
 
-# Assign Exchange permissions to migrate mailboxes to Office 365
+# Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365
 
-When you migrate on-premises Exchange mailboxes to Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
+When you migrate on-premises Exchange mailboxes to Microsoft 365 or Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
 
-The migration administrator must have the necessary administrative privileges in your on-premises Exchange organization to successfully create a migration endpoint. Those same administrative privileges are required if the migration administrator wants to create a migration batch if your organization has no migration endpoints. The following list shows the administrative privileges required for the migration administrator account to migrate mailboxes to Office 365 by using the different types of migration:
+The migration administrator must have the necessary administrative privileges in your on-premises Exchange organization to successfully create a migration endpoint. Those same administrative privileges are required if the migration administrator wants to create a migration batch if your organization has no migration endpoints. The following list shows the administrative privileges required for the migration administrator account to migrate mailboxes to Microsoft 365 or Office 365 by using the different types of migration:
 
 - **Staged Exchange migration**
 
@@ -81,7 +81,7 @@ The migration administrator must have the necessary administrative privileges in
 
   - The username and password for an account in your IMAP4 messaging system that has the necessary administrative privileges to access all user mailboxes. To learn whether your IMAP4 server supports this approach and how to enable it, see the documentation for your IMAP4 server.
 
-You can use Exchange Online PowerShell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
+You can use Exchange Online PowerShell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Microsoft 365 or Office 365.
 
 > [!NOTE]
 > Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission.

@@ -32,7 +32,7 @@ To protect from accidental or malicious deletion and to facilitate discovery eff
 
 - eDiscovery hold
 
-- Office 365 retention policies
+- Microsoft 365 and Office 365 retention policies
 
 - Mailbox audit logging
 
@@ -62,7 +62,7 @@ This architectural change provides the following key benefits:
 
 - When a mailbox is moved to another mailbox database, the Recoverable Items folder moves with it.
 
-- The Recoverable Items folder is indexed by Exchange Search and can be discovered by using In-Place eDiscovery or Content Search in the Microsoft 365 Compliance Center.
+- The Recoverable Items folder is indexed by Exchange Search and can be discovered by using In-Place eDiscovery or Content Search in the Microsoft 365 compliance centers.
 
 - The Recoverable Items folder has its own storage quota.
 
@@ -74,13 +74,13 @@ The Recoverable Items folder contains the following subfolders:
 
 - **Deletions**: This subfolder contains all items deleted from the Deleted Items folder. (In Outlook, a user can soft delete an item by pressing Shift+Delete.) This subfolder is available to users through the Recover Deleted Items feature in Outlook and Outlook on the web.
 
-- **Versions**: If In-Place Hold, Litigation Hold, or a Office 365 retention policy is enabled, this subfolder contains the original copy of the item and also if the item is modified multiple times, a copy of the item before modification is saved. To understand what action is considered as modification, refer the Copy-on-Write section later in this article. This folder isn't visible to end users.
+- **Versions**: If In-Place Hold, Litigation Hold, or a Microsoft 365 or Office 365 retention policy is enabled, this subfolder contains the original copy of the item and also if the item is modified multiple times, a copy of the item before modification is saved. To understand what action is considered as modification, refer the Copy-on-Write section later in this article. This folder isn't visible to end users.
 
 - **Purges**: If either Litigation Hold or single item recovery is enabled, this subfolder contains all items that are hard deleted. This folder isn't visible to end users.
 
 - **Audits**: If mailbox audit logging is enabled for a mailbox, this subfolder contains the audit log entries. To learn more about mailbox audit logging, see [Export mailbox audit logs in Exchange Online](../exchange-auditing-reports/export-mailbox-audit-logs.md).
 
-- **DiscoveryHolds**: If In-Place Hold is enabled or if an Office 365 retention policy is assigned to the mailbox, this subfolder contains all items that meet the hold query parameters and are hard deleted.
+- **DiscoveryHolds**: If In-Place Hold is enabled or if a Microsoft 365 or Office 365 retention policy is assigned to the mailbox, this subfolder contains all items that meet the hold query parameters and are hard deleted.
 
 - **Calendar Logging**: This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
 
@@ -98,9 +98,9 @@ An item is considered to be soft deleted in the following cases:
 
 Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items folder. This provides an additional layer of protection so users can recover deleted items without requiring Help desk intervention. Users can use the Recover Deleted Items feature in Outlook or Outlook on the web to recover a deleted item. Users can also use this feature to permanently delete an item. For more information, see:
 
-- [Recover deleted items in Outlook 2013 or Outlook 2016](https://go.microsoft.com/fwlink/p/?LinkId=821537)
+- [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-- [Recover deleted items or email messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+- [Recover deleted items or email messages in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
@@ -164,7 +164,7 @@ When a mailbox is no longer on In-Place Hold or Litigation Hold, copies of modif
 
 ## Recoverable Items mailbox quotas
 
-When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if an Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](https://docs.microsoft.com/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
+When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if a Microsoft 365 or Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](https://docs.microsoft.com/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
 
 If the Recoverable Items folder for a mailbox reaches the Recoverable Items quota, no more items can be stored in the folder. This impacts mailbox functionality in the following ways:
 
@@ -178,7 +178,7 @@ If the Recoverable Items folder for a mailbox reaches the Recoverable Items quot
 
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
 
-If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
 
 ## More information
 
@@ -186,6 +186,6 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an O
 
 - If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
 
-  - [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?linkId=821537)
+  - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-  - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+  - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
