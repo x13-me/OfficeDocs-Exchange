@@ -30,7 +30,7 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
 
 - Device encryption enabled
 
-- Min password length
+- Min password length (only on Android)
 
 - Password enabled
 
