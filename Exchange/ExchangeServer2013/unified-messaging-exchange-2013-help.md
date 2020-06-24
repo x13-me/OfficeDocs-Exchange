@@ -43,7 +43,7 @@ The voice mail features found in Unified Messaging offer benefits for both end u
 
 ## Features for end users
 
-When you deploy Unified Messaging, users can access voice mail, email, and calendar information that's located in their mailbox from an email client, for example, Outlook or Microsoft Outlook Web App, from a mobile phone with Microsoft Exchange ActiveSync set up. Additionally, users can use the following features:
+When you deploy Unified Messaging, users can access voice mail, email, and calendar information that's located in their mailbox from an email client, for example, Outlook or Microsoft Outlook Web App, from a mobile phone with Microsoft Exchange ActiveSync set up, or from a telephone. Additionally, users can use the following features:
 
 - **Access to Exchange information**: UM-enabled users can access a full set of voice mail features from Internet-capable mobile phones, Microsoft Office Outlook 2007 or later versions, and Outlook Web App. These features include many voice mail configuration options and the ability to play a voice message from either the Reading Pane, using an integrated Windows Media Player, or the message list, using computer speakers.
 
