@@ -20,7 +20,7 @@ manager: serdars
 
 # The Host record for the local computer cannot be found in the DNS database [HostRecordMissing]
 
-Exchange Setup can't continue because the Host (A) record for this computer can't be found in the DNS zone for the domain. Setup requires a vaild A record for the server, and Exchange uses email server A records to find the IP address of the next hop to send messages.
+Exchange Setup can't continue because the Host (A) record for this computer can't be found in the DNS zone for the domain. Setup requires a valid A record for the server, and Exchange uses email server A records to find the IP address of the next hop to send messages.
 
 To resolve this issue:
 

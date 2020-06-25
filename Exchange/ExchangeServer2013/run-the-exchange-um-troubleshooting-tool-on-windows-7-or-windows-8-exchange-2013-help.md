@@ -33,7 +33,7 @@ The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Sh
 
   - A UM IP gateway has been created. For detailed steps, see [Create a UM IP gateway](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
 
-  - An Exchange 2010 UM server has been added to UM dial plan. If you are using Exchange 2013 with Lync Server, add all Client Access and Mailbox servers to the SIP URI dial plans. For detailed steps, see [Add a UM Server to a Dial Plan](https://go.microsoft.com/fwlink/p/?linkid=313051) or [Add Mailbox and Client Access servers to a SIP URI dial plan](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
+  - An Exchange 2010 UM server has been added to UM dial plan. If you are using Exchange 2013 with Lync Server, add all Client Access and Mailbox servers to the SIP URI dial plans. For detailed steps, see [Add a UM Server to a Dial Plan](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa996399(v=exchg.141)) or [Add Mailbox and Client Access servers to a SIP URI dial plan](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
 
 - If you're running the UM Troubleshooting Tool on a local UM server with Exchange 2010 SP1 or later or on an Exchange 2013 Mailbox server, you may not have to install all the prerequisites listed below. They may have already been installed along with the UM server role. However, if you're installing the UM Troubleshooting Tool on a 64-bit computer other than a server that is running the UM server role, you will need to install the following components:
 
@@ -52,7 +52,7 @@ The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Sh
   - Install the tool. For details, see [Install the Exchange UM Troubleshooting Tool](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
 
     > [!IMPORTANT]
-    > If you will be using the UM Troubleshooting Tool in `SIPClient` mode, there are several other Office Communications Server 2007 R2 or Microsoft Lync Server requirements and prerequisites that must be met. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=311961">Checklist: Deploy Office Communications Server 2007 R2 and Exchange 2010 Unified Messaging</A>.
+    > If you will be using the UM Troubleshooting Tool in `SIPClient` mode, there are several other Office Communications Server 2007 R2 or Microsoft Lync Server requirements and prerequisites that must be met. For more information, see <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638120(v=exchg.141)">Checklist: Deploy Office Communications Server 2007 R2 and Exchange 2010 Unified Messaging</A>.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
