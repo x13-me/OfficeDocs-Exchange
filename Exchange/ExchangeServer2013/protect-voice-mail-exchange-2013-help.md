@@ -59,7 +59,7 @@ An AD RMS system has both a server and a client component, including the followi
 
 The server component is made up of several web services that run on a Microsoft server such as Windows Server 2008 or a later version. The client component can be run on either a client or server operating system and includes functions that enable an application to encrypt and decrypt content, retrieve templates and revocation lists, and acquire licenses and certificates from a server.
 
-By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information (such as financial reports, product specifications, customer data, and confidential email and voice mail messages) from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](https://go.microsoft.com/fwlink/p/?linkid=199436).
+By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information (such as financial reports, product specifications, customer data, and confidential email and voice mail messages) from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)).
 
 In Exchange UM you can use Information Rights Management (IRM) features to apply persistent protection to messages and attachments.
 

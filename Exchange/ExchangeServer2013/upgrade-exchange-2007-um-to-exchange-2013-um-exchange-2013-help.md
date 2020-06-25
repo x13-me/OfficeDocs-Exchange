@@ -448,7 +448,7 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch)
 
-- [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
+- [Moving Mailboxes](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124797(v=exchg.80))
 
 To move an Exchange 2007 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
