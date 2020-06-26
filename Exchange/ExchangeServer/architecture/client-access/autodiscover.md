@@ -80,7 +80,7 @@ Client applications use the Autodiscover service when the application starts for
 |https://contoso.com/autodiscover/autodiscover.exc|Derived from email address|
 |https://autodiscover.contoso.com/autodiscover/autodiscover|Derived from email address|
 
-For more information about SCP objects, see [Publishing Services in Active Directory](https://go.microsoft.com/fwlink/p/?linkId=845325)
+For more information about SCP objects, see [Publishing with Service Connection Points](https://docs.microsoft.com/windows/win32/ad/publishing-with-service-connection-points).
 
 ## Autodiscover in DNS
 
