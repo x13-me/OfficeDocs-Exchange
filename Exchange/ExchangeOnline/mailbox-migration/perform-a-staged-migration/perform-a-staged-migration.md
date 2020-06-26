@@ -137,7 +137,7 @@ You will need to license the users after they're created. You have 30 days to ad
 
 **To create new users**:
 
-You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Microsoft 365 or Office 365. After mailboxes are migrated to Microsoft 365 or Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) .
+You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Microsoft 365 or Office 365. After mailboxes are migrated to Microsoft 365 or Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ## Create a list of mailboxes to migrate
 
