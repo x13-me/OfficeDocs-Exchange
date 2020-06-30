@@ -29,13 +29,13 @@ It's frustrating when you get an error after sending an email message. This topi
 
 ## Why did I get this bounce message?
 
-When you connect to the smtp.office365.com endpoint to submit (relay) messages through Office 365, you need to authenticate with the credentials of a user who has an Exchange Online mailbox. This bounce message indicates a problem in the configuration of the connecting application or device.
+When you connect to the smtp.office365.com endpoint to submit (relay) messages through Microsoft 365 or Office 365, you need to authenticate with the credentials of a user who has an Exchange Online mailbox. This bounce message indicates a problem in the configuration of the connecting application or device.
 
 ## I got this bounce message. How do I fix it?
 
 - In the configuration of the connecting application or device, verify that the specified credentials are correct.
 
-- Verify that the application or device is able to negotiate TLS, as TLS is required in order to authenticate. For more information, see [How to set up a multifunction device or application to send email using Office 365](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
+- Verify that the application or device is able to negotiate TLS, as TLS is required in order to authenticate. For more information, see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md).
 
 ## I'm an email admin. How do I fix this?
 
@@ -43,7 +43,7 @@ The distinction between an end user and an admin is blurred for this bounce mess
 
 ## Still need help with error code 550 5.7.57?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

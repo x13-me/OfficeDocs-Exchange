@@ -124,4 +124,4 @@ There are several ways to verify that the remote wipe completed.
 - In Outlook on the web, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
 
 > [!NOTE]
-> In an Office 365-based environment, the result of a remote device wipe is not reported back to Exchange. Even when the wipe is successful, the status will display as **Pending**.
+> In a Microsoft 365 or Office 365-based environment, the result of a remote device wipe is not reported back to Exchange. Even when the wipe is successful, the status will display as **Pending**.

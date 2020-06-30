@@ -39,7 +39,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
 - **Just wait**: It might seem strange, but this error might go away on its own after a few days. If your email admin made changes to your organization's domain name system (DNS) records, the change can prevent you from sending and receiving email for a brief period, even if they did everything correctly (it can take up to 72 hours for DNS changes to propagate on the internet). If you'd like more details about DNS records, see [DNS basics](https://support.microsoft.com/office/854b6b2b-0255-4089-8019-b765cff70377).
 
-- **Service outage**: A problem with the whole Office 365 service could be causing the problem. Even your email admins can't do anything about service outages except wait for the problem to be resolved.
+- **Service outage**: A problem with the whole Microsoft 365 or Office 365 service could be causing the problem. Even your email admins can't do anything about service outages except wait for the problem to be resolved.
 
 ## I'm an email admin. How can I fix this?
 
@@ -63,7 +63,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 3. Select the domain and click **Troubleshoot**. Follow the troubleshooting wizard steps.
 
-If you control of the DNS records for your Office 365 domain, you can also check the status of the domain in the Exchange admin center (EAC) by following these steps:
+If you control of the DNS records for your Microsoft 365 or Office 365 domain, you can also check the status of the domain in the Exchange admin center (EAC) by following these steps:
 
 1. In the Microsoft 365 admin center, click **Admin** \> **Exchange**.
 
@@ -73,7 +73,7 @@ If you control of the DNS records for your Office 365 domain, you can also check
 
 ### Updated DNS records haven't propagated
 
-You updated your domain's DNS records correctly for Office 365, but the changes haven't propagated to all DNS servers on the internet. Changes to your domain's DNS records might take up to 72 hours to propagate to all DNS servers on the internet.
+You updated your domain's DNS records correctly for Microsoft 365 or Office 365, but the changes haven't propagated to all DNS servers on the internet. Changes to your domain's DNS records might take up to 72 hours to propagate to all DNS servers on the internet.
 
 ### Hybrid deployment configuration issues
 
@@ -87,7 +87,7 @@ For more information about transport routing in hybrid deployments, see [Transpo
 
 ### Service issues in Exchange Online
 
-A service issue in Office 365 might be causing the problem. To check the status of Office 365, do the following steps:
+A service issue in Microsoft 365 or Office 365 might be causing the problem. To check the status of Microsoft 365 or Office 365, do the following steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
@@ -113,7 +113,7 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 ## Still need help?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 

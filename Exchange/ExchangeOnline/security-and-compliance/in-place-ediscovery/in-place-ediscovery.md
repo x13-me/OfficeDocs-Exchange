@@ -90,7 +90,7 @@ SharePoint also uses Microsoft Search Foundation for content indexing and queryi
 
 In on-premises deployments, before you can use eDiscovery Center in SharePoint to search Exchange mailboxes, you must establish trust between the two applications. In Exchange Server and SharePoint 2013, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
 
-For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
+For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://support.microsoft.com/office/a18f8975-aa7f-43b4-a7d6-001d14744d8e).
 
 ## eDiscovery in an Exchange hybrid deployment
 <a name="oauth"> </a>
@@ -142,7 +142,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 - **Mailboxes**: You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search.
 
-    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add an Office 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
+    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add a Microsoft 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
 
 - **Search query**: You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query:
 
@@ -261,7 +261,7 @@ In Exchange Server, you can use the new **In-Place eDiscovery & Hold** wizard to
 When an employee leaves an organization, it's a common practice to disable or remove the mailbox. After you disable a mailbox, it is disconnected from the user account but remains in the mailbox for a certain period, 30 days by default. The Managed Folder Assistant does not process disconnected mailboxes and any retention policies are not applied during this period. You can't search content of a disconnected mailbox. Upon reaching the deleted mailbox retention period configured for the mailbox database, the mailbox is purged from the mailbox database.
 
 > [!IMPORTANT]
-> In Exchange Online, In-Place eDiscovery can search content in inactive mailboxes. Inactive mailboxes are mailboxes that are placed on In-Place Hold or litigation hold and then removed. Inactive mailboxes are preserved as long as they're placed on hold. When an inactive mailbox is removed from In-Place Hold or when litigation hold is disabled, it is permanently deleted. For details, see [Create and manage inactive mailboxes in Office 365](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+> In Exchange Online, In-Place eDiscovery can search content in inactive mailboxes. Inactive mailboxes are mailboxes that are placed on In-Place Hold or litigation hold and then removed. Inactive mailboxes are preserved as long as they're placed on hold. When an inactive mailbox is removed from In-Place Hold or when litigation hold is disabled, it is permanently deleted. For details, see [Create and manage inactive mailboxes](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 In on-premises deployments, if your organization requires that retention settings be applied to messages of employees who are no longer in the organization or if you may need to retain an ex-employee's mailbox for an ongoing or future eDiscovery search, do not disable or remove the mailbox. You can take the following steps to ensure the mailbox can't be accessed and no new messages are delivered to it.
 
@@ -323,4 +323,4 @@ The following table contains links to topics that will help you learn about and 
 |[Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)|Learn about the eDiscovery scenarios in an Exchange hybrid deployment that require you to configure OAuth authentication.|
 |[Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help)|Learn how to configure Exchange Server so that you can use the eDiscovery Center in SharePoint 2013 to search Exchange mailboxes.|
 
-For more information about eDiscovery in Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).
+For more information about eDiscovery in Microsoft 365, Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).

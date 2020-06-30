@@ -65,7 +65,7 @@ The available end-user roles that you can assign to mailbox plans are described 
 
 - Estimated time to complete each procedure: less than 5 minutes.
 
-- The procedures in this topic require the Role Management RBAC role in Exchange Online. Typically, you get this permission via membership in the Organization Management role group (the Office 365 Global administrator role). For more information, see [Manage role groups in Exchange Online](role-groups.md).
+- The procedures in this topic require the Role Management RBAC role in Exchange Online. Typically, you get this permission via membership in the Organization Management role group (the Microsoft 365 or Office 365 Global administrator role). For more information, see [Manage role groups in Exchange Online](role-groups.md).
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
