@@ -83,7 +83,7 @@ This example deletes the user account for Walter Harp from Azure AD.
 Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
 ```
 
-For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).
+For more details, check out, [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
 
 ### How do you know this worked?
 

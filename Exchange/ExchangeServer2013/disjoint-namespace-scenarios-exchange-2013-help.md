@@ -34,7 +34,7 @@ A computer running Windows in an Active Directory domain has both a DNS domain n
 
 A computer in an Active Directory domain also has a primary DNS suffix and can have additional DNS suffixes. By default, the primary DNS suffix is the same as the DNS domain name. For detailed steps about how to change the primary DNS suffix, see the procedures later in this topic.
 
-You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](https://go.microsoft.com/fwlink/p/?linkid=268367) and [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=268366).
+You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc786438(v=ws.10)) and [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=268366).
 
 ## Disjoint namespaces
 
