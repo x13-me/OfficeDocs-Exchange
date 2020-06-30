@@ -88,12 +88,12 @@ The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group
 
 3. Create the following public DNS records with your DNS provider.
 
-   |**DNS record name**|**DNS record type**|**DNS record value**|
+   |DNS record name|DNS record type|DNS record value|
    |:-----|:-----|:-----|
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 or Office 365 group.
@@ -153,7 +153,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 - **New groups don't appear in the on-premises Exchange global address list (GAL)**: When a new group is created in Microsoft 365 or Office 365, it won't appear in the on-premises GAL automatically. To fix this issue, open the Exchange Management Shell on an on-premises Exchange server and run the following command.
 
   ```PowerShell
-  Update-Recipient "<group name>"
+  Update-Recipient -Identity "[group Distinguished Name]"
   ```
 
 - **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to a Microsoft 365 group when the following conditions are true:
