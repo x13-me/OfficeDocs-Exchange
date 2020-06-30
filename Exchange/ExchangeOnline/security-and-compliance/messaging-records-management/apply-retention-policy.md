@@ -75,7 +75,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 This example applies the new retention policy New-Retention-Policy to all mailboxes that have the old policy Old-Retention-Policy.
 
 ```PowerShell
-$OldPolicy={Get-RetentionPolicy "Old-Retention-Policy"}.distinguishedName
+$OldPolicy=(Get-RetentionPolicy "Old-Retention-Policy").distinguishedName
 Get-Mailbox -Filter "RetentionPolicy -eq '$OldPolicy'" -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
 ```
 
