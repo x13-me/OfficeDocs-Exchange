@@ -63,7 +63,7 @@
     {
       "source_path": "Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/outlook-for-ios-and-android-exchange-2013-help.md",
@@ -153,7 +153,7 @@
     {
       "source_path": "Exchange/ExchangeServer/policy-and-compliance/smime.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/policy-and-compliance/smime/smime",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "outlook/mobile/resources.md",
@@ -163,12 +163,12 @@
     {
       "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/change-address-book-generation-schedule.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/change-address-book-generation-schedule-exchange-2013-help",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/create-virtual-directory.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/create-virtual-directory-exchange-2013-help",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeHybrid/about-exchange-documentation/index.md",
@@ -788,12 +788,12 @@
     {
       "source_path": "Exchange/ExchangeServer2013/what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
