@@ -1,8 +1,8 @@
 ---
 title: 'Set mailbox features for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Set mailbox features for Outlook Voice Access users
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 10960bf0-65cf-4d0b-bae5-d203c53662db

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: An overview of recovery databases in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
 ms.reviewer:
 title: Recovery databases

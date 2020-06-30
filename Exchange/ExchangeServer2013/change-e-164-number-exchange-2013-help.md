@@ -1,8 +1,8 @@
 ---
 title: 'Change an E.164 number: Exchange 2013 Help'
 TOCTitle: Change an E.164 number
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2a3da11b-bb9b-4d4d-9238-6a1a47ef63f2

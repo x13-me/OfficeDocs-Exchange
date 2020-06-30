@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
 ms.reviewer: 
 title: Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365

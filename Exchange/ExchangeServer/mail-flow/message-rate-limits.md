@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms.reviewer:
 title: Message rate limits and throttling

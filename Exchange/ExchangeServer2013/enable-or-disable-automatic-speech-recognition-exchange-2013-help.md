@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable automatic speech recognition for an Outlook Voice Access user: Exchange 2013 Help'
 TOCTitle: Enable or disable automatic speech recognition for an Outlook Voice Access user
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 58f41016-e725-432b-953e-415d61e0664c

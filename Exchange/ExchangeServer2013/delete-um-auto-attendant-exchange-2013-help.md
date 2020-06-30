@@ -1,8 +1,8 @@
 ---
 title: 'Delete a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Delete a UM auto attendant
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 92846bbc-e6b9-45fc-8702-ef5c92eeb08f

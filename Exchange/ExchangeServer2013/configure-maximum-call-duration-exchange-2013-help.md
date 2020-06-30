@@ -1,8 +1,8 @@
 ---
 title: 'Configure the maximum call duration: Exchange 2013 Help'
 TOCTitle: Configure the maximum call duration
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484

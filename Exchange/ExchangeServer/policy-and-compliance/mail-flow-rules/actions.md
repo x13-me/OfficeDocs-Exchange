@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
 ms.reviewer:
 title: Mail flow rule actions in Exchange Server

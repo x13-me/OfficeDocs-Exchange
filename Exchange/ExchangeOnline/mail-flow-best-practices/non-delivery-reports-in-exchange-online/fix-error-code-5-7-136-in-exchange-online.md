@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 5.7.136 in Exchange Online"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 audience: Admin

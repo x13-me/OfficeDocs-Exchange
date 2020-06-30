@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer:
 title: Apply a retention policy to mailboxes in Exchange Server

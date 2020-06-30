@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.reviewer: 
 title: Perform a remote wipe on a mobile phone

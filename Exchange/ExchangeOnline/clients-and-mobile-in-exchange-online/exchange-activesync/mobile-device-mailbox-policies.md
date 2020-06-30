@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
 ms.reviewer: 
 title: Mobile device mailbox policies in Exchange Online

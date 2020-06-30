@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms.reviewer:
 title: DSNs and NDRs in Exchange Server

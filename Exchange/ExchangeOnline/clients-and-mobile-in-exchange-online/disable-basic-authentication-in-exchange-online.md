@@ -1,11 +1,11 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 f1.keywords:
 - NOCSH
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: bba2059a-7242-41d0-bb3f-baaf7ec1abd7
 ms.reviewer: 

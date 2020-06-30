@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 
 ms.reviewer: 
 f1.keywords:

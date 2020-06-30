@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms.reviewer:
 title: Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover

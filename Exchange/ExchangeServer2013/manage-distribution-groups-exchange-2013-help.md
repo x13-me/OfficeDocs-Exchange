@@ -1,8 +1,8 @@
 ---
 title: 'Create and manage distribution groups: Exchange 2013 Help'
 TOCTitle: Create and manage distribution groups
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

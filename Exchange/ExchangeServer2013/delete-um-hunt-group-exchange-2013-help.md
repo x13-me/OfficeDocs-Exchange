@@ -1,8 +1,8 @@
 ---
 title: 'Delete a UM hunt group: Exchange 2013 Help'
 TOCTitle: Delete a UM hunt group
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d

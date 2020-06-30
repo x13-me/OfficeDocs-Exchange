@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can add retention tags to a retention policy when the policy is created or any time thereafter. For details about how to create a retention policy, including how to simultaneously add retention tags, see Create a Retention Policy.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms.reviewer: 
 f1.keywords:

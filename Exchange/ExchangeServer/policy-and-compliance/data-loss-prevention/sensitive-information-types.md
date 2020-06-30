@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange Server organization.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms.reviewer: 
 title: Sensitive information types in Exchange Server

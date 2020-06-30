@@ -1,8 +1,8 @@
 ---
 title: 'Set the default language on a dial plan: Exchange 2013 Help'
 TOCTitle: Set the default language on a dial plan
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4

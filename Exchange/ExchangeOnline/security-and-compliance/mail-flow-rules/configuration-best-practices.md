@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the recommendations for mail flow rules in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 ms.reviewer: 
 f1.keywords:

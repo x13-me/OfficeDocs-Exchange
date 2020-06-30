@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer:
 title: Create and manage room mailboxes

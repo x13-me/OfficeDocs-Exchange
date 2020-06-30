@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to create a Send connector in Exchange 2016 and Exchange 2019 that's configured to route outbound mail through a smart host.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 ms.reviewer:
 title: Create a Send connector to route outbound mail through a smart host

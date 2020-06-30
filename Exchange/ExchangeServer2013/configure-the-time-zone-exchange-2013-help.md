@@ -1,8 +1,8 @@
 ---
 title: 'Configure the time zone: Exchange 2013 Help'
 TOCTitle: Configure the time zone
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9

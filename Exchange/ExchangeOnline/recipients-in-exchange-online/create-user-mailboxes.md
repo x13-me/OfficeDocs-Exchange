@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to create mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
 ms.reviewer: 
 f1.keywords:

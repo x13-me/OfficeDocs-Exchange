@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A list of topic links for the procedures that admins uses to manage address lists in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 595e1f02-4398-4a7a-b4a4-768af8b9e42e
 ms.reviewer: 
 title: Address list procedures in Exchange Online

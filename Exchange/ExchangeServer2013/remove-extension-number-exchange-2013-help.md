@@ -1,8 +1,8 @@
 ---
 title: 'Remove an extension number: Exchange 2013 Help'
 TOCTitle: Remove an extension number
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c2b896cf-21f7-4453-a4e6-b23d236a6dd3

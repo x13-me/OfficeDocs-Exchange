@@ -1,8 +1,8 @@
 ---
 title: 'Navigating menus with Outlook Voice Access: Exchange 2013 Help'
 TOCTitle: Navigating menus with Outlook Voice Access
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b

@@ -1,8 +1,8 @@
 ---
 title: 'Create and manage room mailboxes: Exchange 2013 Help'
 TOCTitle: Create and manage room mailboxes
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
