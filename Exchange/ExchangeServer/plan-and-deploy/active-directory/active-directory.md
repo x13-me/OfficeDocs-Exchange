@@ -36,6 +36,6 @@ Exchange add new attributes to the Active Directory domain service schema and al
 
 To learn more about how Exchange stores and retrieves information in Active Directory so that you can plan for access to it, see [Access to Active Directory in Exchange Server](ad-access.md).
 
-For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?LinkId=264957).
+For more information about Active Directory forest design, see [AD DS Design Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754678(v=ws.10)).
 
 To learn more about computers running Windows in an Active Directory domain and deploying Exchange 2013 or later in a domain that has a disjoint namespace, see [Disjoint Namespace Scenarios](https://docs.microsoft.com/exchange/disjoint-namespace-scenarios-exchange-2013-help).

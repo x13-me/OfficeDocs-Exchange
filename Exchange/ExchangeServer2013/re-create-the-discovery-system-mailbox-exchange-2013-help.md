@@ -23,15 +23,15 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 
 ## What you should know before you begin
 
-  - Estimated time to complete: 10 minutes.
+- Estimated time to complete: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the Shell to re-create the Discovery system mailbox
 
-1. Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=215850).
+1. Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
 
 2. Use the Shell to enable the Discovery system mailbox.
 

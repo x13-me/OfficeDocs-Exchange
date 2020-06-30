@@ -67,7 +67,7 @@ After Lync Server 2013 is installed in an environment with Exchange 2013 and you
 
 ## User photos
 
-User photos is a feature that allows you to store high resolution user photos in Exchange 2013 that can be accessed by client applications, including Outlook, Outlook Web App, SharePoint 2013, Lync 2013, and mobile email clients. A low-resolution photo is also stored in Active Directory. As with Unified contact stores, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos using Outlook Web App, SharePoint 2013 or Lync 2013. For detail about managing photos on Outlook Web App, see [My account](https://go.microsoft.com/fwlink/p/?linkid=269646).
+User photos is a feature that allows you to store high resolution user photos in Exchange 2013 that can be accessed by client applications, including Outlook, Outlook Web App, SharePoint 2013, Lync 2013, and mobile email clients. A low-resolution photo is also stored in Active Directory. As with Unified contact stores, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos using Outlook Web App, SharePoint 2013 or Lync 2013. For detail about managing photos on Outlook Web App, see [Update your photo and account information in Outlook Web App](https://support.office.microsoft.com/client/82a97f4b-f87a-4ea0-bab1-d67592924392).
 
 ## Lync presence in Outlook Web App
 

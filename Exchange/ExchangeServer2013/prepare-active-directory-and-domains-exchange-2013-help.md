@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Before you install Microsoft Exchange Server 2013, you need to prepare your Active Directory forest and its domains. Exchange needs to prepare Active Directory so that it can store information about your users' mailboxes and the configuration of Exchange servers in the organization. If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=399226).
+Before you install Microsoft Exchange Server 2013, you need to prepare your Active Directory forest and its domains. Exchange needs to prepare Active Directory so that it can store information about your users' mailboxes and the configuration of Exchange servers in the organization. If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
 
 > [!NOTE]
 > Whether this is the first installation of Exchange in your environment, or you already have earlier versions of Exchange Server running, you need to prepare Active Directory for Exchange 2013. You can see <A href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Exchange 2013 Active Directory schema changes</A> for details on new schema classes and attributes that Exchange 2013 adds to Active Directory, including those made by Service Packs (SPs) and Cumulative Updates (CUs).
@@ -82,7 +82,7 @@ When you're ready, do the following to extend your Active Directory schema. If y
     Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
     ```
 
-After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `Repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. For more information about how to use it, see [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879).
+After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `Repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. For more information about how to use it, see [Repadmin](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770963(v=ws.10)).
 
 ## 2\. Prepare Active Directory
 
@@ -123,7 +123,7 @@ When you're ready, do the following to prepare Active Directory for Exchange. If
 > [!IMPORTANT]
 > If you've configured a hybrid deployment between your on-premises organization and Exchange Online, you need to include the `/TenantOrganizationConfig` switch when you run the above command.
 
-After Setup finishes preparing Active Directory for Exchange, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. For more information about how to use the tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879).
+After Setup finishes preparing Active Directory for Exchange, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. For more information about how to use the tool, see [Repadmin](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770963(v=ws.10)).
 
 ## 3\. Prepare Active Directory domains
 
