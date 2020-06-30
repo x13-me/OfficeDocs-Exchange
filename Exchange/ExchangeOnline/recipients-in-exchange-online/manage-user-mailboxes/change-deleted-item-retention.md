@@ -59,7 +59,7 @@ Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 > [!NOTE]
-> These commands only apply to existing mailboxes and will not affect new mailboxes that you create in the future. To change this setting on all new mailboxes, use a mailbox plan that has a new retention policy that applies to new mailboxes. See [Mailbox plans](mailbox-plans.md) and [Set-MailboxPlan](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailboxplan) for more information.
+> These commands only apply to existing mailboxes and will not affect new mailboxes that you create in the future. To change this setting on all new mailboxes, use a mailbox plan that has a new retention policy that applies to new mailboxes. See [Mailbox plans](mailbox-plans.md) and [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan) for more information.
 
 > [!TIP]
 > To keep deleted items for longer than 30 days, place the mailbox on In-Place Hold or Litigation Hold. This works because when a mailbox is placed on hold, deleted items are kept and retention settings for deleted items are ignored. See [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
