@@ -1,8 +1,8 @@
 ---
 title: 'Prevent users in the same dial plan from receiving faxes: Exchange 2013 Help'
 TOCTitle: Prevent users in the same dial plan from receiving faxes
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06

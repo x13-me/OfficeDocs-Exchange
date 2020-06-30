@@ -1,8 +1,8 @@
 ---
 title: 'Add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Add-ins for Outlook
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775

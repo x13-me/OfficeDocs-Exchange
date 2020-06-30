@@ -1,8 +1,8 @@
 ---
 localization_priority: Priority
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
@@ -57,7 +57,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=534121).
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do one of these steps:
 

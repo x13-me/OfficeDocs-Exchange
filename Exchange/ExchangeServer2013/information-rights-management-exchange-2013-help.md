@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638140(v=EXCHG.150)
 ms:contentKeyID: 49319921
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -97,7 +97,7 @@ However, IRM can't prevent information from being copied using the following met
 
 - Users remembering or manually transcribing the information
 
-To learn more about AD RMS, see [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=129823).
+To learn more about AD RMS, see [Active Directory Rights Management Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772403(v=ws.11)).
 
 ## AD RMS rights policy templates
 
@@ -105,9 +105,9 @@ AD RMS uses XrML-based rights policy templates to allow compatible IRM-enabled 
 
 IRM protection is applied by applying an AD RMS rights policy template. Using policy templates, you can control permissions that recipients have on a message. Actions such as replying, replying to all, forwarding, extracting information from a message, saving a message, or printing a message can be controlled by applying the appropriate rights policy template to the message.
 
-For more information about rights policy templates, see [AD RMS Policy Template Considerations](https://go.microsoft.com/fwlink/p/?linkid=179455).
+For more information about rights policy templates, see [AD RMS Policy Template Considerations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd996658(v=ws.10)).
 
-For more information about creating AD RMS rights policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?linkid=136593).
+For more information about creating AD RMS rights policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731070(v=ws.10)).
 
 ## Applying IRM protection to messages
 
@@ -154,7 +154,7 @@ Scenarios for IRM protection are described in the following table.
 <tr class="even">
 <td><p>Between different forests in an on-premises deployment</p></td>
 <td><p>Yes</p></td>
-<td><p>For requirements, see <a href="https://go.microsoft.com/fwlink/p/?linkid=199009">Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests</a>.</p></td>
+<td><p>For requirements, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff470287(v=ws.10)">Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Between an on-premises Exchange 2013 deployment and a cloud-based Exchange organization</p></td>
@@ -168,7 +168,7 @@ Scenarios for IRM protection are described in the following table.
 <tr class="even">
 <td><p>To external recipients</p></td>
 <td><p>No</p></td>
-<td><p>Exchange 2010 doesn't include a solution for sending IRM-protected messages to external recipients in a non-federated organization. AD RMS offers solutions using trust policies. You can configure a trust policy between your AD RMS cluster and Microsoft account (formerly known as Windows Live ID). For messages sent between two organizations, you can create a federated trust between the two Active Directory forests using Active Directory Federation Services (AD FS). To learn more, see <a href="https://go.microsoft.com/fwlink/p/?linkid=182909">Understanding AD RMS Trust Policies</a>.</p></td>
+<td><p>Exchange 2010 doesn't include a solution for sending IRM-protected messages to external recipients in a non-federated organization. AD RMS offers solutions using trust policies. You can configure a trust policy between your AD RMS cluster and Microsoft account (formerly known as Windows Live ID). For messages sent between two organizations, you can create a federated trust between the two Active Directory forests using Active Directory Federation Services (AD FS). To learn more, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755156(v=ws.10)">Understanding AD RMS Trust Policies</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -275,7 +275,7 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 <li><p>Exchange Servers group or individual Exchange servers</p></li>
 <li><p>AD RMS Service group on AD RMS servers</p></li>
 </ul>
-<p>By default, the ServerCertification.asmx file is located in the <code>\inetpub\wwwroot\_wmcs\certification\</code> folder on AD RMS servers. For details, see <a href="https://go.microsoft.com/fwlink/p/?linkid=186951">Set Permissions on the AD RMS Server Certification Pipeline</a>.</p></li>
+<p>By default, the ServerCertification.asmx file is located in the <code>\inetpub\wwwroot\_wmcs\certification\</code> folder on AD RMS servers. For details, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee849850(v=ws.10)">Set Permissions on the AD RMS Server Certification Pipeline</a>.</p></li>
 <li><p><strong>AD RMS super users</strong>   To enable transport decryption, journal report decryption, IRM in Outlook Web App, and IRM for Exchange Search, you must add the Federation mailbox, a system mailbox created by Exchange 2013 Setup, to the super users group on the AD RMS cluster. For details, see <a href="add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md">Add the Federation Mailbox to the AD RMS Super Users Group</a>.</p></li>
 </ul></td>
 </tr>

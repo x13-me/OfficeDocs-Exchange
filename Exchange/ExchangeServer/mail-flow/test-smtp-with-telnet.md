@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
 ms.reviewer: 
 title: Use Telnet to test SMTP communication on Exchange servers
@@ -50,7 +50,7 @@ You can use Telnet to test SMTP communication to:
 
 ## Step 1: Install the Telnet Client on your computer
 
-On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](https://go.microsoft.com/fwlink/p/?linkId=179054).
+On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
 ## Step 2: Find the FQDN or IP address of the destination SMTP server
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable and configure POP3 on an Exchange server 2016 or 2019 for access by POP3 clients.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
 ms.reviewer:
 title: Enable and configure POP3 on an Exchange server

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and Exchange 2019 and how to recreate them.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
 ms.reviewer: 
 title: Recreate missing arbitration mailboxes

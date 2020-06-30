@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 ms.reviewer: 
 f1.keywords:

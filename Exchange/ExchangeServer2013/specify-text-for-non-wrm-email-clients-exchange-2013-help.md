@@ -1,8 +1,8 @@
 ---
 title: 'Specify the text to display for email clients that do not support Windows Rights Management: Exchange 2013 Help'
 TOCTitle: Specify the text to display for email clients that don't support Windows Rights Management
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b

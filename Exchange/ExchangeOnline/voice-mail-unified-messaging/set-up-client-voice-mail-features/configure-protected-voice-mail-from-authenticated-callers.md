@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f69e94a7-9768-4445-9ded-e78d732bd623
 ms.reviewer: 
 f1.keywords:

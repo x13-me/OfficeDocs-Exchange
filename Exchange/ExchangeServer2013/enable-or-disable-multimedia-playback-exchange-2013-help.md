@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable multimedia playback of protected voice messages: Exchange 2013 Help'
 TOCTitle: Enable or disable multimedia playback of protected voice messages
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd

@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
 ms.reviewer: 
 description: Admin can learn how to migrate Exchange mailboxes, IMAP mailboxes, and G Suite mailboxes, calendars, and contacts to Microsoft 365 or Office 365.

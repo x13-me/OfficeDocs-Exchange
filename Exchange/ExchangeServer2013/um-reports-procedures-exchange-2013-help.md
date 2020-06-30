@@ -1,8 +1,8 @@
 ---
 title: 'UM reports procedures: Exchange 2013 Help'
 TOCTitle: UM reports procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 5b58a2ed-3780-4a0e-87f6-e19e6e49640c

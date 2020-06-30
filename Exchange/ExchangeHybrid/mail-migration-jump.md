@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft 365 and Office 365 mail migration advisor"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

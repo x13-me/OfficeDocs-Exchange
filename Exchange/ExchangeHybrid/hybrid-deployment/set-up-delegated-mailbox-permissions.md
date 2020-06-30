@@ -1,7 +1,7 @@
 ---
 title: "Configure Exchange to support delegated mailbox permissions in a hybrid deployment"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

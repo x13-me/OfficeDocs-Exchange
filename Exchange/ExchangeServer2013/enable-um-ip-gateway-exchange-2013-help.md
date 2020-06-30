@@ -1,8 +1,8 @@
 ---
 title: 'Enable a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Enable a UM IP gateway
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2706ae06-c45d-41b7-abbe-378a9fca104a

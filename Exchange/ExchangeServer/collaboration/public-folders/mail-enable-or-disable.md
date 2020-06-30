@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to mail-enable or mail-disable a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms.reviewer:
 title: Mail-enable or mail-disable a public folder

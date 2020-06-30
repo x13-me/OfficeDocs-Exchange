@@ -1,8 +1,8 @@
 ---
 title: 'Integrating sensitive information rules with transport rules: Exchange 2013 Help'
 TOCTitle: Integrating sensitive information rules with transport rules
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 ms.reviewer:
 title: Configure global address list properties in Exchange Online

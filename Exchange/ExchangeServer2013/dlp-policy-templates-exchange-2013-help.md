@@ -1,8 +1,8 @@
 ---
 title: 'DLP policy templates: Exchange 2013 Help'
 TOCTitle: DLP policy templates in Exchange
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c7b1a8e4-30d9-4409-85c5-f85ae023737d

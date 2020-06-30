@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms.reviewer: 
 title: Find queues and messages in queues in the Exchange Management Shell

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Learn about the Exchange admin center, the web-based management console that's available in Exchange Server."
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
 ms.reviewer:
 title: Exchange admin center in Exchange Server

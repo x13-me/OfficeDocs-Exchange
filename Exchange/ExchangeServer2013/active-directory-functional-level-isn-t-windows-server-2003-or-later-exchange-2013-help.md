@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.forestl
 ms:contentKeyID: 46628884
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the forest functional level of the current Active Directory forest isn't Windows Server 2003 native or later. Before you can install Exchange 2013, you must raise the forest functional level to Windows Server 2003 or later.
 
-For information about how to raise the forest functional level of the current Active Directory forest to Windows Server 2003 or later, see [Raise the Forest Functional Level](https://go.microsoft.com/fwlink/p/?linkid=294831).
+For information about how to raise the forest functional level of the current Active Directory forest to Windows Server 2003 or later, see [Raise the Forest Functional Level](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730985(v=ws.11)).
 
 For more information about Active Directory functional levels, see the following topics:
 

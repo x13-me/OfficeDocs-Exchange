@@ -2,10 +2,10 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because Active directory doesn't exist or can't be contacted.
 ms.topic: reference
-author: mattpennathe3rd
+author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.CannotAccessAD
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 56adb6fe-ecb8-4a7f-b440-89aa401c28b7
 ms.reviewer: 
 title: Active Directory does not exist or cannot be contacted [CannotAccessAD]
@@ -30,7 +30,7 @@ For more information about Active Directory troubleshooting and configuration fo
 
 - [Troubleshooting Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
 
-- [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?LinkId=272141)
+- [Configuring a Computer for Troubleshooting](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc990293(v=ws.10))
 
 - [Troubleshooting Active Directory Replication Problems](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 

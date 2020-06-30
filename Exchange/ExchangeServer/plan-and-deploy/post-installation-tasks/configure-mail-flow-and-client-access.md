@@ -2,8 +2,8 @@
 localization_priority: Critical
 description: 'Summary: How to set up mail flow and client access in Exchange 2016 and Exchange 2019.'
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms.reviewer:
 title: Configure mail flow and client access on Exchange servers
@@ -158,7 +158,7 @@ Before clients can connect to your new server from your internal network, you ne
 
 The procedure below lets you choose whether you want users to use the same URL on your intranet and on the internet to access your Exchange server or whether they should use a different URL. What you choose depends on the addressing scheme you have in place already or that you want to implement. If you're implementing a new addressing scheme, we recommend that you use the same URL for both internal and external URLs. Using the same URL makes it easier for users to access your Exchange server because they only have to remember one address.
 
-Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
+Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794771(v=ws.10)).
 
 For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help).
 

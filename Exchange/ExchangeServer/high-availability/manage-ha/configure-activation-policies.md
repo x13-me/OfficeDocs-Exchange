@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: About activation policies in Exchange Server, and how to configure them on mailbox database copies.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms.reviewer:
 title: Configure activation policy for a mailbox database copy

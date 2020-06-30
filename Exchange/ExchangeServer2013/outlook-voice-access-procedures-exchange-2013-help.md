@@ -1,8 +1,8 @@
 ---
 title: 'Outlook Voice Access procedures: Exchange 2013 Help'
 TOCTitle: Outlook Voice Access procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d

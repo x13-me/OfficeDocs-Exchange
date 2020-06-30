@@ -2,8 +2,8 @@
 localization_priority: Normal
 description:
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid:
 ms.reviewer:
 title: Enable or disable SMTP AUTH
@@ -45,7 +45,7 @@ Note these settings only apply to mailboxes that are hosted in Exchange Online (
 
 ## Disable SMTP AUTH in your organization
 
-You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 To disable SMTP AUTH globally in your organization, run the following command:
 
@@ -65,7 +65,7 @@ Get-TransportConfig | Format-List SmtpClientAuthenticationDisabled
 
 ## Enable SMTP AUTH for specific mailboxes
 
-The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Use the Microsoft 365 admin center to enable or disable SMTP AUTH on specific mailboxes
 

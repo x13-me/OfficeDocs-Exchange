@@ -1,7 +1,7 @@
 ---
 title: "Hybrid deployment prerequisites"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH
@@ -58,7 +58,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 - **Custom domains**: Register any custom domains you want to use in your hybrid deployment with Microsoft 365 or Office 365. You can do this by using the Microsoft 365 portal, or by optionally configuring Active Directory Federation Services (AD FS) in your on-premises organization.
 
-  Learn more at [Add your domain to Microsoft 365 or Office 365](https://go.microsoft.com/fwlink/p/?linkid=229238).
+  Learn more at [Add your domain to Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 - **Active Directory synchronization**: Deploy the Azure Active Directory Connect tool to enable Active Directory synchronization with your on-premises organization.
 

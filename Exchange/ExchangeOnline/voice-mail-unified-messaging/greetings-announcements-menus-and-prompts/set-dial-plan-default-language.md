@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can set the default language for a Unified Messaging (UM) dial plan. Each dial plan you create will initially use English (en-US) as the default language.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
 ms.reviewer: 
 f1.keywords:

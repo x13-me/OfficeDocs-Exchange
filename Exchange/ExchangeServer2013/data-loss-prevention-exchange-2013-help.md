@@ -1,8 +1,8 @@
 ---
 title: 'Data loss prevention: Exchange 2013 Help'
 TOCTitle: Data loss prevention
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730

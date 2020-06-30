@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms.reviewer:
 title: Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover
@@ -72,7 +72,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
    > [!NOTE]
    > If the DAG member being removed is offline and can't be brought online, you must add the `-ConfigurationOnly` parameter to the preceding command. If you use the `-ConfigurationOnly` switch, you must also manually evict the node from the cluster.
 
-4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://go.microsoft.com/fwlink/p/?linkId=167188).
+4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 5. Open a Command Prompt window. Using the original Setup media, run the following command:
 

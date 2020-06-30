@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.

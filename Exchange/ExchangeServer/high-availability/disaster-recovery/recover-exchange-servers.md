@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to recover a lost Exchange 2016 or Exchange 2019 server.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms.reviewer:
 title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery
@@ -65,7 +65,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 ## Recover a Lost Exchange Server
 
-1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](https://go.microsoft.com/fwlink/p/?linkId=165388).
+1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 2. Install the proper operating system and name the new server with the same name as the lost server. Recovery won't succeed if the target Windows server doesn't have the same name as the lost Exchange server.
 

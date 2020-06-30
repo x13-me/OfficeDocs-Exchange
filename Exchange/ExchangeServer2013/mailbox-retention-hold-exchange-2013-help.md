@@ -1,8 +1,8 @@
 ---
 title: 'Place a mailbox on retention hold: Exchange 2013 Help'
 TOCTitle: Place a mailbox on retention hold
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677

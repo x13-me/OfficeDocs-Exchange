@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638206(v=EXCHG.150)
 ms:contentKeyID: 48385683
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -67,7 +67,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
     > [!NOTE]
     > If the DAG member being removed is offline and can't be brought online, you must add the <EM>ConfigurationOnly</EM> parameter to the preceding command. If you use the <EM>ConfigurationOnly</EM> switch, you must also manually evict the node from the cluster.
 
-4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://go.microsoft.com/fwlink/p/?linkid=167188).
+4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 5. Open a Command Prompt window. Using the original Setup media, run the following command:
 

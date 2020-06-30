@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Microsoft Exchange Server Setup creates a discovery mailbox by default. In Exchange Online, a discovery mailbox is also created by default. Discovery mailboxes are used as target mailboxes for In-Place eDiscovery searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
 ms.reviewer: 
 f1.keywords:
@@ -44,7 +44,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-For instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Create a discovery mailbox
 

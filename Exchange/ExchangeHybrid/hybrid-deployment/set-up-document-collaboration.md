@@ -1,7 +1,7 @@
 ---
 title: "Configure document collaboration with OneDrive for Business and Exchange 2016 on-premises"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

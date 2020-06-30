@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
 ms.reviewer: 
 title: Mobile device mailbox policies in Exchange Online
@@ -106,7 +106,7 @@ The following table summarizes the settings you can specify using mobile device 
 |Device policy refresh interval|This setting specifies how often the mobile device mailbox policy is sent from the server to the mobile device.|
 |IRM enabled|This setting specifies whether Information Rights Management (IRM) is enabled on the mobile device.|
 |Max attachment size|This setting controls the maximum size of attachments that can be downloaded to the mobile device. The default value is Unlimited.|
-|Max calendar age filter| This setting specifies the maximum range of calendar days that can be synchronized to the mobile device. The following values are accepted:  <br/>  All  <br/>  OneDay  <br/>  ThreeDays  <br/>  OneWeek  <br/>  TwoWeeks  <br/>  OneMonth|
+|Max calendar age filter| This setting specifies the maximum range of calendar days that can be synchronized to the mobile device. The following values are accepted:  <br/>  All  <br/>  TwoWeeks  <br/>  OneMonth  <br/>  ThreeMonths  <br/>  SixMonths|
 |Max email age filter| This setting specifies the maximum number of days of email items to synchronize to the mobile device. The following values are accepted:  <br/>  All  <br/>  OneDay  <br/>  ThreeDays  <br/>  OneWeek  <br/>  TwoWeeks  <br/>  OneMonth|
 |Max email body truncation size|This setting specifies the maximum size at which email messages are truncated when synchronized to the mobile device. The value is in kilobytes (KB).|
 |Max email HTML body truncation size|This setting specifies the maximum size at which HTML email messages are truncated when synchronized to the mobile device. The value is in kilobytes (KB).|

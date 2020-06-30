@@ -1,8 +1,8 @@
 ---
 title: 'Voice mail-enabled user procedures: Exchange 2013 Help'
 TOCTitle: Voice mail-enabled user procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
 f1.keywords:
@@ -65,7 +65,7 @@ To delete a Microsoft 365 or Office 365 work or school account, see [Delete or r
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Microsoft 365 or Office 365 user is deleted and removed from the list of users in the Microsoft 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
 
@@ -119,7 +119,7 @@ To restore an user account, see [Delete or restore users](https://docs.microsoft
 
 You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cmdlet example below restores the mailbox for Allie Bellew.
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the **Undo-SoftDeletedMailbox** cmdlet.
 
@@ -145,7 +145,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
 
 For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure AD user that was associated with the mailbox has been hard-deleted from Azure AD, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Microsoft 365 Groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-office-365-groups) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the following cmdlet to identify the soft-deleted mailbox that you want to restore.
 

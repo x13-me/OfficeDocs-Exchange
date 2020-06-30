@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable Outlook Web App for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable Outlook Web App for a mailbox
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53

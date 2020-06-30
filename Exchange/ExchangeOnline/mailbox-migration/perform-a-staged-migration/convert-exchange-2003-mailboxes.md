@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
 ms.reviewer: 
 description: Convert Exchange 2007 mailboxes to mail enabled users.

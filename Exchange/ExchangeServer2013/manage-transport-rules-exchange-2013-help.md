@@ -1,8 +1,8 @@
 ---
 title: 'Manage transport rules: Exchange 2013 Help'
 TOCTitle: Manage transport rules
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
@@ -98,7 +98,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](view-dlp-policy-detection-reports-exchange-2013-help.md) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](view-dlp-policy-detection-reports-exchange-2013-help.md).
 
       Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 

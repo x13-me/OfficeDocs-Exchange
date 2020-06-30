@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 and Office 365.

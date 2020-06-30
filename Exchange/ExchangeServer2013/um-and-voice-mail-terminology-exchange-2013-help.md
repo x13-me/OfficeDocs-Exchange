@@ -1,8 +1,8 @@
 ---
 title: 'UM and voice mail terminology: Exchange 2013 Help'
 TOCTitle: UM and voice mail terminology
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c

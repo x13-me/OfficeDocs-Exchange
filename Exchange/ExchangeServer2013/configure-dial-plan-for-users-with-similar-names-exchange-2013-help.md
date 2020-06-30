@@ -1,8 +1,8 @@
 ---
 title: 'Configure a dial plan for users who have similar names: Exchange 2013 Help'
 TOCTitle: Configure a dial plan for users who have similar names
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 14783f45-95f5-49de-8215-0a3aef7dc034

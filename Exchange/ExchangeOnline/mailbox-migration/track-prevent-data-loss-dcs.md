@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Track and prevent migration data loss with DataConsistencyScore'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 
 ms.reviewer: 
 title: Track and Prevent Migration Data Loss

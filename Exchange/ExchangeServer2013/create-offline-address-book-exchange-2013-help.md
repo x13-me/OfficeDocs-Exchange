@@ -1,8 +1,8 @@
 ---
 title: 'Create an offline address book: Exchange 2013 Help'
 TOCTitle: Create an offline address book
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

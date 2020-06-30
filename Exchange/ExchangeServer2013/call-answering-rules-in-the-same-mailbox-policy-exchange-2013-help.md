@@ -1,8 +1,8 @@
 ---
 title: 'Call answering rules in the same mailbox policy: Exchange 2013 Help'
 TOCTitle: Call answering rules in the same mailbox policy
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391

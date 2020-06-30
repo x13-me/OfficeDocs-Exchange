@@ -1,8 +1,8 @@
 ---
 title: 'Create dialing rules for users: Exchange 2013 Help'
 TOCTitle: Create dialing rules for users
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df

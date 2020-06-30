@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or Exchange Server 2019 for messages that can't be successfully delivered."
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms.reviewer: 
 title: Message retry, resubmit, and expiration intervals

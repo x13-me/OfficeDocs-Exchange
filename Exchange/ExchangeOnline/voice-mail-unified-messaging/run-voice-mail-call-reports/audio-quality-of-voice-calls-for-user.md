@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: If a user reports problems with the audio quality of their Unified Messaging (UM) calls, you can use the User Call Logs report to help you understand what's causing the problems.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 ms.reviewer: 
 f1.keywords:

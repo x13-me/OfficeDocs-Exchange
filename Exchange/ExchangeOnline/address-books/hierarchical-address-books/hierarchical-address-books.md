@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
 ms.reviewer: 
 title: Hierarchical address books in Exchange Online

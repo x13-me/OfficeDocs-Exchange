@@ -1,8 +1,8 @@
 ---
 title: 'Create non-business hours navigation menus: Exchange 2013 Help'
 TOCTitle: Create non-business hours navigation menus
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
