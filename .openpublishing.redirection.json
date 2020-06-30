@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md",
-      "redirect_url": "/Exchange/ExchangeOnline/mail-flow-best-practices/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365",
+      "redirect_url": "https://docs.microsoft.com/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365",
       "redirect_document_id": false
     },
     {
