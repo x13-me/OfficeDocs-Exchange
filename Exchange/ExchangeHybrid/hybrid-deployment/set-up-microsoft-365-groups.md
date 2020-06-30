@@ -88,7 +88,7 @@ The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group
 
 3. Create the following public DNS records with your DNS provider.
 
-   |**DNS record name**|**DNS record type**|**DNS record value**|
+   |DNS record name|DNS record type|DNS record value|
    |:-----|:-----|:-----|
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
