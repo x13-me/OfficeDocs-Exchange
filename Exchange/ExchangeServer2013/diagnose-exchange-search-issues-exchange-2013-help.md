@@ -80,7 +80,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
     8. View the **Crawler: Mailboxes Remaining** counter. Any value of 1 or higher indicates that mailboxes in the database are still being crawled. When the crawl is complete, the value is **0**.
 
-    For information about using Performance Monitor, see [Performance and Reliability Monitoring Getting Started Guide for Windows Server 2008](https://go.microsoft.com/fwlink/p/?linkid=178005)
+    For information about using Performance Monitor, see [Performance and Reliability Monitoring Getting Started Guide for Windows Server 2008](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771692(v=ws.10))
 
 4. **Check the database copy indexing health**: Is the content index healthy? Use the **Get-MailboxDatabaseCopyStatus** cmdlet to check the content indexing health for a database copy.
 

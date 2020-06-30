@@ -27,7 +27,7 @@ For more information about Active Directory troubleshooting and configuration fo
 
 - [Troubleshooting Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
 
-- [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?linkid=272141)
+- [Configuring a Computer for Troubleshooting](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc990293(v=ws.10))
 
 - [Troubleshooting Active Directory Replication Problems](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 

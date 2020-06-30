@@ -88,7 +88,7 @@ Below are the three configuration options to help you identify which one is in u
 
 5. Next, test that you can connect to Microsoft 365 or Office 365 from your network by doing the following:
 
-   1. Follow the instructions to [install the Telnet Client tool](https://go.microsoft.com/fwlink/p/?linkId=179054) on a computer on the same network as the device or application.
+   1. Follow the instructions to [install the Telnet Client tool](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)) on a computer on the same network as the device or application.
 
    2. Run the tool from the command line by typing **telnet**.
 
@@ -102,7 +102,7 @@ Below are the three configuration options to help you identify which one is in u
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
-   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841).
+   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
 ### I receive an authentication error when my device tries to send email
 

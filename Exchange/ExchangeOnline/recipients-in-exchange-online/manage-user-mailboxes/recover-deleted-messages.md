@@ -50,7 +50,7 @@ Administrators can search for and recover deleted email messages in a user's mai
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-For instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Search for and recover missing items
 

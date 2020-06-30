@@ -57,7 +57,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=534121).
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do one of these steps:
 
