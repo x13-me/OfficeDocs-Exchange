@@ -5,8 +5,8 @@ ms:assetid: 96e1b096-9cb5-426f-a84e-50d5599e4bbb
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.fips(v=EXCHG.150)
 ms:contentKeyID: 49720857
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

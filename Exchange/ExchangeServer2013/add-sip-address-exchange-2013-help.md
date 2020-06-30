@@ -1,8 +1,8 @@
 ---
 title: 'Add a SIP address: Exchange 2013 Help'
 TOCTitle: Add a SIP address
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3

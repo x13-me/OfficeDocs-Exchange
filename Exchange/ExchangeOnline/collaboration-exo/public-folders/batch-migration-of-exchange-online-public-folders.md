@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: e0be0727-f27f-4673-8a6f-af6ab5dbdace
 ms.reviewer: 

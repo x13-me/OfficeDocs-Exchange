@@ -1,8 +1,8 @@
 ---
 title: 'Export mailbox audit logs: Exchange 2013 Help'
 TOCTitle: Export mailbox audit logs
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a

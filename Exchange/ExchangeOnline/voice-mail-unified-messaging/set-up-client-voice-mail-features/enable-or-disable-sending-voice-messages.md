@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable Outlook Voice Access users to send voice mail messages to other UM-enabled users who are associated with the same dial plan, or prevent them from doing so.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
 ms.reviewer: 
 f1.keywords:

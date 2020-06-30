@@ -1,8 +1,8 @@
 ---
 title: 'PIN security procedures: Exchange 2013 Help'
 TOCTitle: PIN security procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 58e4b02e-dc99-46b8-a65d-d441bbfee8a9

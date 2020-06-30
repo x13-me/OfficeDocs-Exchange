@@ -1,8 +1,8 @@
 ---
 title: 'Manage and troubleshoot message approval: Exchange 2013 Help'
 TOCTitle: Manage and troubleshoot message approval
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d

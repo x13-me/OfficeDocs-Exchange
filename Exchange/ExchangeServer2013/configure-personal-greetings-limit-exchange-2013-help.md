@@ -1,8 +1,8 @@
 ---
 title: 'Configure the limit on personal greetings for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Configure the limit on personal greetings for Outlook Voice Access users
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf

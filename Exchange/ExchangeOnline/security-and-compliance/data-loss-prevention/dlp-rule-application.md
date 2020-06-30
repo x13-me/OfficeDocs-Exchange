@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how data loss prevention (DLP) rules evaluate messages
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.reviewer: 
 f1.keywords:

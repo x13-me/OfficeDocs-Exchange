@@ -1,8 +1,8 @@
 ---
 title: 'Create an address book policy: Exchange 2013 Help'
 TOCTitle: Create an address book policy
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9

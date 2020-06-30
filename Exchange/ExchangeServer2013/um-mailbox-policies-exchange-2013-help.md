@@ -1,8 +1,8 @@
 ---
 title: 'UM mailbox policies: Exchange 2013 Help'
 TOCTitle: UM mailbox policies
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: dfae629e-ee89-4494-a3ed-9655b67eb87e

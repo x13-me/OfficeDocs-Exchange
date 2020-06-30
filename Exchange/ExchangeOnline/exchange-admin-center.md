@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You use the Exchange admin center to manage email settings for your organization.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
 ms.reviewer: 
 title: Exchange admin center in Exchange Online

@@ -1,8 +1,8 @@
 ---
 title: 'UM auto attendant procedures: Exchange 2013 Help'
 TOCTitle: UM auto attendant procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45

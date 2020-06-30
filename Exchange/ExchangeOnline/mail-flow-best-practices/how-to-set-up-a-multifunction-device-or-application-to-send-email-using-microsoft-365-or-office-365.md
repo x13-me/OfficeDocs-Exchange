@@ -1,7 +1,7 @@
 ---
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.reviewer: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Microsoft 365 or Office 365.'

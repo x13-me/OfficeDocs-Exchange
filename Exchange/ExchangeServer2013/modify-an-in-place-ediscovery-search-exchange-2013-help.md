@@ -1,8 +1,8 @@
 ---
 title: 'Modify an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Modify an In-Place eDiscovery search
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3162743c-cc12-4997-91e0-bcbfea8bcb17

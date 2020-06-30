@@ -1,8 +1,8 @@
 ---
 title: 'Change the audio codec: Exchange 2013 Help'
 TOCTitle: Change the audio codec
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 139b2ccd-28c5-46c0-9050-777f4f59aade

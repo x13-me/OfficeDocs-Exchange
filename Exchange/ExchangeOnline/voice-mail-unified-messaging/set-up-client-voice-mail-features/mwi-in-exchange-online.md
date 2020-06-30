@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Message Waiting Indicator (MWI) is a feature that's found in most voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
 ms.reviewer: 
 f1.keywords:

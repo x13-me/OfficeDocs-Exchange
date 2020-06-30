@@ -1,8 +1,8 @@
 ---
 title: 'Assign a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Assign a UM mailbox policy
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c

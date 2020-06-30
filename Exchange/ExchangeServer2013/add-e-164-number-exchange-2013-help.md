@@ -1,8 +1,8 @@
 ---
 title: 'Add an E.164 number: Exchange 2013 Help'
 TOCTitle: Add an E.164 number
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122

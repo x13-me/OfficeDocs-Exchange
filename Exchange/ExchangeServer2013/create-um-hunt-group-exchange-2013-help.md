@@ -1,8 +1,8 @@
 ---
 title: 'Create a UM hunt group: Exchange 2013 Help'
 TOCTitle: Create a UM hunt group
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

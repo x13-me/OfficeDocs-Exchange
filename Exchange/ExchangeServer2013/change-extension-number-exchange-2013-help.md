@@ -1,8 +1,8 @@
 ---
 title: 'Change an extension number: Exchange 2013 Help'
 TOCTitle: Change an extension number
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: ff22b366-3bfb-4bf7-9f11-62fba48f1caf

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to view the administrator audit log in Exchange Online
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.reviewer: 
 f1.keywords:

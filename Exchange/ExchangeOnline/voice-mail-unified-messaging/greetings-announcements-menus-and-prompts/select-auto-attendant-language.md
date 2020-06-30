@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can configure the default prompt language setting on a Unified Messaging (UM) auto attendant. The language setting available on a UM auto attendant enables you to configure the default prompt language on the auto attendant. When you're using the default system prompts for the auto attendant, this is the language that the caller hears when the auto attendant answers the incoming call. This language setting affects only the default system prompts. This setting doesn't affect custom prompts that are configured on an auto attendant.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609
 ms.reviewer: 
 f1.keywords:

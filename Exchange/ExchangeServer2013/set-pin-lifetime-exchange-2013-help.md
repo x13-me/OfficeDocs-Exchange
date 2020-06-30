@@ -1,8 +1,8 @@
 ---
 title: 'Set the PIN lifetime for voice mail: Exchange 2013 Help'
 TOCTitle: Set the PIN lifetime for voice mail
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d

@@ -1,8 +1,8 @@
 ---
 title: 'Messaging Records Management Procedures: Exchange 2013 Help'
 TOCTitle: Messaging Records Management Procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: bc2ff408-4a2b-4202-9515-e3e922a6320d

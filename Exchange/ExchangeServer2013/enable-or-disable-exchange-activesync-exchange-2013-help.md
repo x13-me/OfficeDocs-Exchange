@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable Exchange ActiveSync for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable Exchange ActiveSync for a mailbox
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4

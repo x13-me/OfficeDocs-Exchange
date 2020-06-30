@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 title: Sensitivity labeling and protection in Outlook for iOS and Android
 ms.reviewer: smithre4
 audience: ITPro

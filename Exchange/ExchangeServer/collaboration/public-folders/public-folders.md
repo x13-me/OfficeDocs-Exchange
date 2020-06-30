@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about public folders and how they work in Exchange 2016 and Exchange 2019.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
 ms.reviewer:
 title: Public folders
