@@ -4,7 +4,7 @@ description: 'Summary: All the information and resources you need to get started
 ms.topic: landing-page
 layout: LandingPage
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
 ms.reviewer: 
 title: Exchange Server

@@ -6,7 +6,7 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.setupreadiness.NoE14ServerWarning
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
 ms.reviewer: 
 title: No Exchange 2010 servers detected [NoE14ServerWarning]

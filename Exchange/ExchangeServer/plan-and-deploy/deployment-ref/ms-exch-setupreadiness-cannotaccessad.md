@@ -5,7 +5,7 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.setupreadiness.CannotAccessAD
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 56adb6fe-ecb8-4a7f-b440-89aa401c28b7
 ms.reviewer: 
 title: Active Directory does not exist or cannot be contacted [CannotAccessAD]

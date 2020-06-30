@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Microsoft Outlook Voice Access lets users who are enabled for Exchange Unified Messaging (UM) access their mailboxes by using analog, digital, or cellular telephones.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
 ms.reviewer: 
 f1.keywords:

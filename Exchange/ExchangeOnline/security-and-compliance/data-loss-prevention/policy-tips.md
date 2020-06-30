@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admin can learn about how policy tips can display compliance information to users as they compose email messages that contain sensitive content.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 ms.reviewer: 
 f1.keywords:

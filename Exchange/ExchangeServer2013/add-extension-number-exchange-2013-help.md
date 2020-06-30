@@ -1,7 +1,7 @@
 ---
 title: 'Add an extension number: Exchange 2013 Help'
 TOCTitle: Add an extension number
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

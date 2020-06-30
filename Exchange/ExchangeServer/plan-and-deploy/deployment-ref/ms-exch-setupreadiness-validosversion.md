@@ -5,7 +5,7 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.setupreadiness.ValidOSVersion
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: a3a948d9-4991-4088-9013-0a4c944295e4
 ms.reviewer: 
 title: An incompatible operating system was found [ValidOSVersion]

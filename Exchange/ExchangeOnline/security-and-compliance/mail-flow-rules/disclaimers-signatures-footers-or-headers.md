@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Exchange Online'
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.reviewer: 
 f1.keywords:

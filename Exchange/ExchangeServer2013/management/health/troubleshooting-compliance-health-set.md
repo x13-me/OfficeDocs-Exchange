@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.compliance(v=EXCH
 ms:contentKeyID: 49720898
 ms.reviewer:
 manager: serdars
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 f1.keywords:
 - NOCSH

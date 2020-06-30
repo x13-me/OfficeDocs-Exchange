@@ -1,7 +1,7 @@
 ---
 title: 'Create a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Create a UM mailbox policy
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

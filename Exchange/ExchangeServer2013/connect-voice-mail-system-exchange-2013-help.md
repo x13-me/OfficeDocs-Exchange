@@ -1,7 +1,7 @@
 ---
 title: 'Connect your voice mail system to your telephone network: Exchange 2013 Help'
 TOCTitle: Connect your voice mail system to your telephone network
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

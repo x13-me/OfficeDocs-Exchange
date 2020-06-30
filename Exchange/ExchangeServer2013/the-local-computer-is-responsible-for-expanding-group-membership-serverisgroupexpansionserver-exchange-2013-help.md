@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serveri
 ms:contentKeyID: 46628907
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 f1.keywords:
 - NOCSH

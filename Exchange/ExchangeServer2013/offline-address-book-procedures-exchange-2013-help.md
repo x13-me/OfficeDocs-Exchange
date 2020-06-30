@@ -1,7 +1,7 @@
 ---
 title: 'Offline address book procedures: Exchange 2013 Help'
 TOCTitle: Offline address book procedures
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

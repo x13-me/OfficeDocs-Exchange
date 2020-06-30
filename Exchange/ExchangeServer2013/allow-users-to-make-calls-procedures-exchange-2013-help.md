@@ -1,7 +1,7 @@
 ---
 title: 'Allowing users to make calls procedures: Exchange 2013 Help'
 TOCTitle: Allowing users to make calls procedures
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

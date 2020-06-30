@@ -5,7 +5,7 @@ ms.topic: article
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.eac.EditOwaMailboxPolicy_LinkedIn
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 54d9b046-4f36-4f36-b88a-95b1da4e1b4c
 ms.reviewer: 
 f1.keywords:

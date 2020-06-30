@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.outlook(v=EXCHG.1
 ms:contentKeyID: 49720798
 ms.reviewer:
 manager: serdars
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 f1.keywords:
 - NOCSH

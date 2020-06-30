@@ -1,7 +1,7 @@
 ---
 title: 'Set up a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Set up a UM auto attendant
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

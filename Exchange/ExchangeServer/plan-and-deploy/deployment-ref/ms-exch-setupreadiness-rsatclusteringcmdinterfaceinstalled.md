@@ -5,7 +5,7 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.setupreadiness.RsatClusteringCmdInterfaceInstalled
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 0d839514-5ab7-497d-8945-41392b4c3980
 ms.reviewer: 
 title: Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]

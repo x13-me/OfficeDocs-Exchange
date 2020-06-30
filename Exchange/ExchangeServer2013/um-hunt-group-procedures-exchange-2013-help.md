@@ -1,7 +1,7 @@
 ---
 title: 'UM hunt group procedures: Exchange 2013 Help'
 TOCTitle: UM hunt group procedures
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to create of global address lists (GALs) in Exchange Online.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 ms.reviewer:
 title: Create a global address list in Exchange Online

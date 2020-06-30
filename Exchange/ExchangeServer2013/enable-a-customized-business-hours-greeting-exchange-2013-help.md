@@ -1,7 +1,7 @@
 ---
 title: 'Enable a customized business hours greeting: Exchange 2013 Help'
 TOCTitle: Enable a customized business hours greeting
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

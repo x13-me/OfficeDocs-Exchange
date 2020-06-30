@@ -1,7 +1,7 @@
 ---
 title: 'Disable common PIN patterns for voice mail: Exchange 2013 Help'
 TOCTitle: Disable common PIN patterns for voice mail
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

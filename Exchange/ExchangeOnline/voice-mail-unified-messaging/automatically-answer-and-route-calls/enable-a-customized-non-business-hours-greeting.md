@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can enable a customized non-business hours greeting for a Unified Messaging (UM) auto attendant. The non-business hours greeting is the first thing callers hear when a UM auto attendant answers their call during non-business hours. You'll probably want to customize the greeting.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 ms.reviewer: 
 f1.keywords:

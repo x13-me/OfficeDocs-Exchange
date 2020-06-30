@@ -1,7 +1,7 @@
 ---
 title: 'Run a non-owner mailbox access report: Exchange 2013 Help'
 TOCTitle: Run a non-owner mailbox access report
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.7.134 in Exchange Online"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

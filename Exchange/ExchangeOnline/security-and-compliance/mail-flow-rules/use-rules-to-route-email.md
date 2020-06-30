@@ -1,7 +1,7 @@
 ---
 description: Learn how to use mail flow rules to route email messages based on their contents in Exchange Online.
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.topic: article
 author: mattpennathe3rd
 ms.service: exchange-online

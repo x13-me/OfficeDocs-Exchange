@@ -1,7 +1,7 @@
 ---
 title: 'Configure a fully qualified domain name: Exchange 2013 Help'
 TOCTitle: Configure a fully qualified domain name
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

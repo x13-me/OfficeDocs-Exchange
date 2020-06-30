@@ -1,7 +1,7 @@
 ---
 title: 'Setting up incoming faxing: Exchange 2013 Help'
 TOCTitle: Setting up incoming faxing
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

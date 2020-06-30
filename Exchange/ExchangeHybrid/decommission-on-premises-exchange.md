@@ -1,6 +1,6 @@
 ---
 title: "How and when to decommission your on-premises Exchange servers in a hybrid deployment"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 f1.keywords:

@@ -1,7 +1,7 @@
 ---
 title: 'Include text with the email message sent when a voice message Is received: Exchange 2013 Help'
 TOCTitle: Include text with the email message sent when a voice message Is received
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

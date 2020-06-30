@@ -5,7 +5,7 @@ ms.topic: reference
 author: mattpennathe3rd
 ms.custom:
 - ms.exch.setupreadiness.PowerShellExecutionPolicyCheckSet
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms.reviewer:
 title: ExecutionPolicy GPO is defined [PowerShellExecutionPolicyCheckSet]

@@ -1,6 +1,6 @@
 ---
 title: "Transport routing in Exchange 2013/Exchange 2010 hybrid deployments"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 f1.keywords:

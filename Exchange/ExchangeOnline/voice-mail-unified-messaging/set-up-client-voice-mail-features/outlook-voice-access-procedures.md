@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Enable or disable Outlook Voice Access for users
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d
 ms.reviewer: 
 f1.keywords:

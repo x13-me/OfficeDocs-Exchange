@@ -1,7 +1,7 @@
 ---
 title: 'Search the role group changes or administrator audit logs: Exchange 2013 Help'
 TOCTitle: Search the role group changes or administrator audit logs
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

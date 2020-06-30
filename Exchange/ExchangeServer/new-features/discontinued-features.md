@@ -3,7 +3,7 @@ localization_priority: Priority
 description: This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's discontinued in Exchange Server

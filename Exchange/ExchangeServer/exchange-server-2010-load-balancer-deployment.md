@@ -3,7 +3,7 @@ f1.keywords:
 - NOCSH
 audience: ITPro
 localization_priority: Priority
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: reference
 author: mattpennathe3rd

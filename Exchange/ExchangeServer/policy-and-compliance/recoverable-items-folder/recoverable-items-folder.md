@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder.'
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.reviewer:
 title: Recoverable Items folder in Exchange Server

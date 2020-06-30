@@ -1,7 +1,7 @@
 ---
 title: 'Delete a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Delete a UM IP gateway
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

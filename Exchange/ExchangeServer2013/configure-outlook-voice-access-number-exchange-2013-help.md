@@ -1,7 +1,7 @@
 ---
 title: 'Configure an Outlook Voice Access number: Exchange 2013 Help'
 TOCTitle: Configure an Outlook Voice Access number
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

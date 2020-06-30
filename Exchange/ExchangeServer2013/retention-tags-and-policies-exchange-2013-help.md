@@ -1,7 +1,7 @@
 ---
 title: 'Retention tags and retention policies: Exchange 2013 Help'
 TOCTitle: Retention tags and retention policies
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

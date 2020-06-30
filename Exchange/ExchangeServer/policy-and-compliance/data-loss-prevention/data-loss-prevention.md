@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about DLP policies in on-premises Exchange Server 2016 and Exchange Server 2019, including what they contain and how to test them.'
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.reviewer:
 title: Data loss prevention in Exchange Server

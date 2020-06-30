@@ -1,6 +1,6 @@
 ---
 title: "Certificate requirements for hybrid deployments"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 ms.reviewer:
 manager: serdars

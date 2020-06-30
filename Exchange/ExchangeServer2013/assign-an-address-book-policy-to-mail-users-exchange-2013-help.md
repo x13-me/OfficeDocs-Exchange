@@ -1,7 +1,7 @@
 ---
 title: 'Assign an address book policy to mail users: Exchange 2013 Help'
 TOCTitle: Assign an address book policy to mail users
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

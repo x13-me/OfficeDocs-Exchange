@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to use the Exchange admin center (EAC) to set up email forwarding.'
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer:
 title: Configure email forwarding for a mailbox

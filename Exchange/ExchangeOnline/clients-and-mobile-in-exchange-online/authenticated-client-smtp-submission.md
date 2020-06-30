@@ -3,7 +3,7 @@ localization_priority: Normal
 description:
 ms.topic: conceptual
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid:
 ms.reviewer:
 title: Enable or disable SMTP AUTH

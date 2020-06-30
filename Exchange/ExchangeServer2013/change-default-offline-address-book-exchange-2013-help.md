@@ -1,7 +1,7 @@
 ---
 title: 'Change the default offline address book: Exchange 2013 Help'
 TOCTitle: Change the default offline address book
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

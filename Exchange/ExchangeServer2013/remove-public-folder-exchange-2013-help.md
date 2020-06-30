@@ -1,7 +1,7 @@
 ---
 title: 'Remove a public folder: Exchange 2013 Help'
 TOCTitle: Remove a public folder
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

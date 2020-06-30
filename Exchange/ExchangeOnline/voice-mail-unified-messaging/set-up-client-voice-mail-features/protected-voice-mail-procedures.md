@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Configure Protected Voice Mail from authenticated callers
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 8547fc92-58f6-40f1-9685-3d43ba9b64a0
 ms.reviewer: 
 f1.keywords:

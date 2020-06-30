@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: An overview of the different collaboration methods available in Exchange 2016 and 2019: groups, site mailboxes, shared mailboxes, and public folders.'
 ms.topic: overview
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 3311562b-8fd3-4d66-a5f7-8e65a38c6b39
 ms.reviewer: 
 title: Collaboration

@@ -1,7 +1,7 @@
 ---
 title: 'Data loss prevention: Exchange 2013 Help'
 TOCTitle: Data loss prevention
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

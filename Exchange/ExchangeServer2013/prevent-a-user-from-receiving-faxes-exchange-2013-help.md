@@ -1,7 +1,7 @@
 ---
 title: 'Prevent a user from receiving faxes: Exchange 2013 Help'
 TOCTitle: Prevent a user from receiving faxes
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

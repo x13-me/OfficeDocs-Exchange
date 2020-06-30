@@ -1,7 +1,7 @@
 ---
 title: 'Enable or prevent transferring calls from Outlook Voice Access: Exchange 2013 Help'
 TOCTitle: Enable or prevent transferring calls from Outlook Voice Access
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

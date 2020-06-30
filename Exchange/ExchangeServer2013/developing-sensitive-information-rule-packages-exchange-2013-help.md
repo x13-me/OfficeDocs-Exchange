@@ -1,7 +1,7 @@
 ---
 title: 'Developing sensitive information rule packages: Exchange 2013 Help'
 TOCTitle: Developing sensitive information rule packages
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

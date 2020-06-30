@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.reviewer: 
 description: Learn how to prepare your hotmail.com or outlook.com account for migration to Microsoft 365 or Office 365

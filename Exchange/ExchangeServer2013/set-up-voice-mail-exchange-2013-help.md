@@ -1,7 +1,7 @@
 ---
 title: 'Set up voice mail for users: Exchange 2013 Help'
 TOCTitle: Set up voice mail for users
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

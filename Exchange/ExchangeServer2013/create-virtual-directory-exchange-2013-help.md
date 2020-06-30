@@ -1,7 +1,7 @@
 ---
 title: 'Create an offline address book virtual directory: Exchange 2013 Help'
 TOCTitle: Create an offline address book virtual directory
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

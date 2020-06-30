@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
 ms.reviewer: 
 description: Enable yor Gmail account for IMAP so you can view and edit your mail in Microsoft Outlook app.

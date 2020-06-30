@@ -1,7 +1,7 @@
 ---
 title: 'Add or remove email addresses for a mailbox: Exchange 2013 Help'
 TOCTitle: Add or remove email addresses for a mailbox
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn about offline address books (OABs) in Exchange Online.
 ms.topic: overview
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 3f4b2c64-6cbc-445f-bf65-05b8fdfe9a0b
 ms.reviewer: 
 title: Offline address books in Exchange Online

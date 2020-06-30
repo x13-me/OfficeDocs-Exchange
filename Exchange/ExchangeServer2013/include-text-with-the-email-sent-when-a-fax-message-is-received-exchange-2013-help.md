@@ -1,7 +1,7 @@
 ---
 title: 'Include text with the email message sent when a fax message is received: Exchange 2013 Help'
 TOCTitle: Include text with the email message sent when a fax message is received
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

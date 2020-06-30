@@ -1,7 +1,7 @@
 ---
 title: 'Voice Mail Preview advisor: Exchange 2013 Help'
 TOCTitle: Voice Mail Preview advisor
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

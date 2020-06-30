@@ -1,7 +1,7 @@
 ---
 title: 'Configure the number of sign-in failures before Outlook Voice Access users are disconnected: Exchange 2013 Help'
 TOCTitle: Configure the number of sign-in failures before Outlook Voice Access users are disconnected
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

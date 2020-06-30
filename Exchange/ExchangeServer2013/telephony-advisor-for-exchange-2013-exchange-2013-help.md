@@ -1,7 +1,7 @@
 ---
 title: 'Telephony advisor for Exchange: Exchange 2013 Help'
 TOCTitle: Telephony advisor for Exchange
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

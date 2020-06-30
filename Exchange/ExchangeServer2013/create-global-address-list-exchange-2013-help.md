@@ -1,7 +1,7 @@
 ---
 title: 'Create a global address list: Exchange 2013 Help'
 TOCTitle: Create a global address list
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

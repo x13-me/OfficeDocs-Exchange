@@ -1,7 +1,7 @@
 ---
 title: 'View a UM hunt group: Exchange 2013 Help'
 TOCTitle: View a UM hunt group
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

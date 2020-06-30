@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to view and modify Outlook on the web mailbox policies (formerly known as Outlook Web App mailbox policies) in Exchange Online.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.reviewer: 
 title: View or configure Outlook on the web mailbox policy properties in Exchange Online

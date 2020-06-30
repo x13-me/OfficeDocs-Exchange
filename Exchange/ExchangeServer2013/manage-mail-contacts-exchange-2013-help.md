@@ -1,7 +1,7 @@
 ---
 title: 'Manage mail contacts: Exchange 2013 Help'
 TOCTitle: Manage mail contacts
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: 'View statistics for public folders and public folder items: Exchange 2013 Help'
 TOCTitle: View statistics for public folders and public folder items
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

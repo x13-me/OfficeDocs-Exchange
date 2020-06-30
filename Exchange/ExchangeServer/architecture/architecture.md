@@ -3,7 +3,7 @@ localization_priority: Critical
 description: 'Summary: Learn about the architecture of Exchange Server 2016 and Exchange Server 2019'
 ms.topic: reference
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms.reviewer: 
 title: Exchange Server architecture

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms.reviewer:
 title: Organization-wide disclaimers, signatures, footers, or headers in Exchange Server

@@ -1,7 +1,7 @@
 ---
 title: 'Manage mail users: Exchange 2013 Help'
 TOCTitle: Manage mail users
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

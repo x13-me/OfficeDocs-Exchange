@@ -1,7 +1,7 @@
 ---
 title: 'Configure custom MailTips for recipients: Exchange 2013 Help'
 TOCTitle: Configure custom MailTips for recipients
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

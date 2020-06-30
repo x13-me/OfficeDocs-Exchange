@@ -3,7 +3,7 @@ localization_priority: Normal
 description: ""
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
 ms.reviewer: 
 f1.keywords:

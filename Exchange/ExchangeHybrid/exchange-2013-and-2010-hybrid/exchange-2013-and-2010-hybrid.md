@@ -1,6 +1,6 @@
 ---
 title: "Hybrid deployments with Exchange 2013 and Exchange 2010"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 f1.keywords:

@@ -1,7 +1,7 @@
 ---
 title: 'Call answering rules: Exchange 2013 Help'
 TOCTitle: Call answering rules
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

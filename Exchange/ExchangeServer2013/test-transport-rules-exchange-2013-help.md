@@ -1,7 +1,7 @@
 ---
 title: 'Test a transport rule: Exchange 2013 Help'
 TOCTitle: Test a transport rule
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

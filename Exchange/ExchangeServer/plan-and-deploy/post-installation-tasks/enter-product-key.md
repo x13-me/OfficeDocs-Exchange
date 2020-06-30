@@ -4,7 +4,7 @@ ms.topic: get-started-article
 author: mattpennathe3rd
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
 ms.reviewer:
 description: 'Summary: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019.'

@@ -1,6 +1,6 @@
 ---
 title: "ActiveSync device access rule attributes"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: dstrome

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 3d8f2b49-c27e-40c9-808b-4bc48f3cdb07
 ms.reviewer: 
 manager: serdars

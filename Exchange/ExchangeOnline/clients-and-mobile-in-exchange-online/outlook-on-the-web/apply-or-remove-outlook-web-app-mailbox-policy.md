@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 ms.reviewer: 
 title: Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online

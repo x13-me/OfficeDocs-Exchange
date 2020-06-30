@@ -1,7 +1,7 @@
 ---
 title: 'Export eDiscovery search results to a PST file: Exchange 2013 Help'
 TOCTitle: Export eDiscovery search results to a PST file
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

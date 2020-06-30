@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how administrators can track delivery information about messages sent or received from any mailbox in the organization.'
 ms.topic: overview
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
 ms.reviewer: 
 title: Delivery reports for administrators

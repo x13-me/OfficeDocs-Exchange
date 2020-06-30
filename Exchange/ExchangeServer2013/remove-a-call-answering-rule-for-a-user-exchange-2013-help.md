@@ -1,7 +1,7 @@
 ---
 title: 'Remove a call answering rule for a user: Exchange 2013 Help'
 TOCTitle: Remove a call answering rule for a user
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

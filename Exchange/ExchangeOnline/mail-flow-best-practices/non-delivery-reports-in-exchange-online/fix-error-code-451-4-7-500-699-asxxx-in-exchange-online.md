@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer: 

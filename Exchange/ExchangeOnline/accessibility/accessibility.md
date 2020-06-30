@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 0f716f4a-7213-44f1-b2d4-b7fd0a1a336b
 ms.reviewer: 
 manager: serdars

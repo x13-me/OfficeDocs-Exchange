@@ -1,7 +1,7 @@
 ---
 title: 'Fax advisor for Exchange UM: Exchange 2013 Help'
 TOCTitle: Fax advisor for Exchange UM
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

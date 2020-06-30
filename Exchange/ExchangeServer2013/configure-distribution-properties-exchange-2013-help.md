@@ -1,7 +1,7 @@
 ---
 title: 'Configure offline address book distribution properties: Exchange 2013 Help'
 TOCTitle: Configure offline address book distribution properties
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

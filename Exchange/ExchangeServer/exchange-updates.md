@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: get-started-article
 author: mattpennathe3rd

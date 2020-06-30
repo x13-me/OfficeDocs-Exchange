@@ -1,6 +1,6 @@
 ---
 title: "About Exchange documentation"
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 f1.keywords:

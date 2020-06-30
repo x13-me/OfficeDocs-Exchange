@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 3fe19996-29bc-4879-aab9-5a622b2f1481
 ms.reviewer: 
 description: 'You can migrate the contents of user mailboxes from your source email system to Microsoft 365 or Office 365 using the Internet Message Access Protocol (IMAP).'

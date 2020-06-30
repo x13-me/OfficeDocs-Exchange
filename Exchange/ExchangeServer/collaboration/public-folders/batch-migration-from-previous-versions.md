@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 monikerRange: exchserver-2016
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 author: mattpennathe3rd

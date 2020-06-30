@@ -1,7 +1,7 @@
 ---
 title: 'Configure Voice Mail Preview partner services for users: Exchange 2013 Help'
 TOCTitle: Configure Voice Mail Preview partner services for users
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

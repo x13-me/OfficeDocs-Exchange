@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online.
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 
 ms.reviewer: 
 f1.keywords:

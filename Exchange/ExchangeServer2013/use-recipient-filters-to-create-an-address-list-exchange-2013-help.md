@@ -1,7 +1,7 @@
 ---
 title: 'Create an address list by using recipient filters: Exchange 2013 Help'
 TOCTitle: Create an address list by using recipient filters
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

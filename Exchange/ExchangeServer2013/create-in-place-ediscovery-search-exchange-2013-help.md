@@ -1,7 +1,7 @@
 ---
 title: 'Create an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Create an In-Place eDiscovery search
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:

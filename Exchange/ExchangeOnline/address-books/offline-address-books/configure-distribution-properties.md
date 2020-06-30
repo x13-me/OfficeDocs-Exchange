@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 
 ms.topic: article
 author: mattpennathe3rd
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
 ms.reviewer: 
 title: Configure offline address book distribution properties

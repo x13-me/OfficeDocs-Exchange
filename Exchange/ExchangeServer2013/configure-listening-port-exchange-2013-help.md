@@ -1,7 +1,7 @@
 ---
 title: 'Configure the listening port: Exchange 2013 Help'
 TOCTitle: Configure the listening port
-ms.author: v-mapenn
+ms.author: dmaguire
 author: mattpennathe3rd
 manager: serdars
 ms.reviewer:
