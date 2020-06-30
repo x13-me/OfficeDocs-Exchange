@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Hybrid Agent"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

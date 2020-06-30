@@ -2,7 +2,7 @@
 title: 'Delete a UM dial plan: Exchange 2013 Help'
 TOCTitle: Delete a UM dial plan
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: "Email non-delivery reports in Exchange Online"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 audience: Admin

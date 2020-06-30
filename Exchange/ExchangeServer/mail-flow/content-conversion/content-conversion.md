@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
 ms.reviewer:

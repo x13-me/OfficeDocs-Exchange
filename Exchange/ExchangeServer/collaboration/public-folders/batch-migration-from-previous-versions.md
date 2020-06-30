@@ -4,7 +4,7 @@ monikerRange: exchserver-2016
 ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:

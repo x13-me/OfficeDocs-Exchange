@@ -2,7 +2,7 @@
 title: 'Include text with the email message sent when a user Is enabled for voice mail: Exchange 2013 Help'
 TOCTitle: Include text with the email message sent when a user Is enabled for voice mail
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63

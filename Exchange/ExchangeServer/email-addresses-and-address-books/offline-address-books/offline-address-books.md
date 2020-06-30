@@ -3,7 +3,7 @@ description: 'Summary: Learn how offline address books are created and distribut
 localization_priority: Normal
 ms.author: dmaguire
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
 ms.collection: exchange-server

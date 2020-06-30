@@ -3,7 +3,7 @@ localization_priority: Normal
 ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 description: 'Summary: How to assign "Send As" or "Send on Behalf" permissions to your Exchange Online public folders.'
 audience: ITPro

@@ -2,7 +2,7 @@
 title: 'Common attachment blocking scenarios for transport rules: Exchange 2013 Help'
 TOCTitle: Common attachment blocking scenarios for transport rules
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2

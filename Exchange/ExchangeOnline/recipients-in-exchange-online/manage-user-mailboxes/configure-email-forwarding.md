@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer: 

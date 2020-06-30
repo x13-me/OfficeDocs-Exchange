@@ -2,7 +2,7 @@
 title: 'Delete a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Delete a UM mailbox policy
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c8758464-3c52-4dd3-b2a6-142a99bb0628

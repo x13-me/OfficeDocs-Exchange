@@ -2,7 +2,7 @@
 title: 'Configure the IP address: Exchange 2013 Help'
 TOCTitle: Configure the IP address
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8

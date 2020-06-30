@@ -2,7 +2,7 @@
 title: 'Create a discovery mailbox: Exchange 2013 Help'
 TOCTitle: Create a discovery mailbox
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba

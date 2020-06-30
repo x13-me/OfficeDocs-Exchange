@@ -2,7 +2,7 @@
 title: 'Outlook Web App mailbox policies: Exchange 2013 Help'
 TOCTitle: Outlook Web App mailbox policies
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 213b8b7a-1c29-49ee-8c98-d0364ddf4f9d

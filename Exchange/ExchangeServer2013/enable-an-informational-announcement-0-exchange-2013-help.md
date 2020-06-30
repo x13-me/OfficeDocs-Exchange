@@ -2,7 +2,7 @@
 title: 'Enable an informational announcement: Exchange 2013 Help'
 TOCTitle: Enable an informational announcement
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259

@@ -2,7 +2,7 @@
 title: 'Enable an informational announcement for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Enable an informational announcement for Outlook Voice Access users
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: b69ed0e1-f978-498a-963e-42a047678db4

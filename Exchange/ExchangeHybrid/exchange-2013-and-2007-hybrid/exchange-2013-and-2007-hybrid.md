@@ -1,7 +1,7 @@
 ---
 title: "Hybrid deployments with Exchange 2013 and Exchange 2007"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

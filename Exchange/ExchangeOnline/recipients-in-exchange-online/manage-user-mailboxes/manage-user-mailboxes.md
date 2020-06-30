@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 f1.keywords:
 - CSH
 ms.custom:

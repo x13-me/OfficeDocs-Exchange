@@ -2,7 +2,7 @@
 title: 'Configure business hours: Exchange 2013 Help'
 TOCTitle: Configure business hours
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 96b4be99-af94-4fa4-959a-48413387a044

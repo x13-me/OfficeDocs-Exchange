@@ -3,7 +3,7 @@ description: 'Summary: Learn the tasks that administrators need to know to manag
 localization_priority: Normal
 ms.author: dmaguire
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.collection: exchange-server

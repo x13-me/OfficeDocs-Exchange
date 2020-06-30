@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn how to configure connectivity logging for the transport services in Exchange 2016 and Exchange 2019
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.reviewer:

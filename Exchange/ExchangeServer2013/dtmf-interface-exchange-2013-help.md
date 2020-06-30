@@ -2,7 +2,7 @@
 title: 'DTMF interface: Exchange 2013 Help'
 TOCTitle: DTMF interface
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2c7c9d8a-ed12-4dcf-a5b7-3cea0e785e49

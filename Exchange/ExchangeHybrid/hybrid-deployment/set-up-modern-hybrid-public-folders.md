@@ -1,7 +1,7 @@
 ---
 title: "Configure Exchange Server public folders for a hybrid deployment"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

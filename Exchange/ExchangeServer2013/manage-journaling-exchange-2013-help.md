@@ -2,7 +2,7 @@
 title: 'Manage journaling: Exchange 2013 Help'
 TOCTitle: Manage journaling
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d

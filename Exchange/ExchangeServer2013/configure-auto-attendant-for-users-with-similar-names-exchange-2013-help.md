@@ -2,7 +2,7 @@
 title: 'Configure an auto attendant for users who have similar names: Exchange 2013 Help'
 TOCTitle: Configure an auto attendant for users who have similar names
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2e7318a0-67f9-4d7b-8300-5f0ef77656a8

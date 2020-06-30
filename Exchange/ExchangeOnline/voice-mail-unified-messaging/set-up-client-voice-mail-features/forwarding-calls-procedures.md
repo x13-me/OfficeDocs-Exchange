@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Call answering rules
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
 ms.reviewer: 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about distribution groups and how to create and manage them.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8e98f141-81d3-4d07-b36e-fcd2dbcc9572
 ms.reviewer:

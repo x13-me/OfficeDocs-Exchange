@@ -2,7 +2,7 @@
 title: 'DLP policy templates supplied in Exchange: Exchange 2013 Help'
 TOCTitle: DLP policy templates supplied in Exchange
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198

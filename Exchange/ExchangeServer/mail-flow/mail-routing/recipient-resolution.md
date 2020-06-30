@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about recipient resolution in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms.reviewer:

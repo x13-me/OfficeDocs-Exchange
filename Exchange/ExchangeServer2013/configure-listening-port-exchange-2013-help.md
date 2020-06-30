@@ -2,7 +2,7 @@
 title: 'Configure the listening port: Exchange 2013 Help'
 TOCTitle: Configure the listening port
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1

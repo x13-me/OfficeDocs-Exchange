@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
 ms.reviewer:

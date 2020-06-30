@@ -2,7 +2,7 @@
 title: 'Disable Message Waiting Indicator (MWI) for users: Exchange 2013 Help'
 TOCTitle: Disable Message Waiting Indicator (MWI) for users
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 51cd6dc4-11d1-4eb9-a6c6-1965fcd24267

@@ -2,7 +2,7 @@
 title: 'Investigate the audio quality of voice calls for a user: Exchange 2013 Help'
 TOCTitle: Investigate the audio quality of voice calls for a user
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145

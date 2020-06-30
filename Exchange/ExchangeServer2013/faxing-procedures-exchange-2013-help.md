@@ -2,7 +2,7 @@
 title: 'Faxing procedures: Exchange 2013 Help'
 TOCTitle: Faxing procedures
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 6732a834-c9d2-4757-8ad9-44aeff6be9f7

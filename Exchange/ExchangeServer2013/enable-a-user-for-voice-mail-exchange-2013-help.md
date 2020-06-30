@@ -2,7 +2,7 @@
 title: 'Enable a user for voice mail: Exchange 2013 Help'
 TOCTitle: Enable a user for voice mail
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

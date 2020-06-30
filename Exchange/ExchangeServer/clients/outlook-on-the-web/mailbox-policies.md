@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.reviewer:

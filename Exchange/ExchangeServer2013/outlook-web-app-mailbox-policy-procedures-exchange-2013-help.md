@@ -2,7 +2,7 @@
 title: 'Outlook Web App mailbox policy procedures: Exchange 2013 Help'
 TOCTitle: Outlook Web App mailbox policy procedures
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about moving and migrating mailboxes in Exchange Server 2016 and Exchange Server 2019, and the enhanced capabilities in the batch move architecture.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
 ms.reviewer:

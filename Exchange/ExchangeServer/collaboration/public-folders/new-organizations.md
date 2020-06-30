@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to get public folders configured and running in Exchange Server 2016 or Exchange Server 2019 for a new organization or in an organization that has never previously had public folders.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer:

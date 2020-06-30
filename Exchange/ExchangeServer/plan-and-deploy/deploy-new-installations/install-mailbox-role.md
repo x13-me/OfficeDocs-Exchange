@@ -1,7 +1,7 @@
 ---
 localization_priority: Critical
 ms.topic: get-started-article
-author: mattpennathe3rd
+author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
 ms.author: dmaguire

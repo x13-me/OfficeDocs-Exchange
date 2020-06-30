@@ -2,7 +2,7 @@
 title: 'Enable or disable MAPI for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable MAPI for a mailbox
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592

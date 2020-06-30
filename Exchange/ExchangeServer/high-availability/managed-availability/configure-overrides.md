@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 ms.reviewer:

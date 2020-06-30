@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: The permissions required to perform tasks to manage Microsoft Exchange Online vary depending on the procedure being performed or the cmdlet you want to run.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 15073ce1-0917-403b-8839-02a2ebc96e16
 ms.reviewer:

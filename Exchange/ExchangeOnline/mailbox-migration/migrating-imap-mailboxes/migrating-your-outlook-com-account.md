@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.topic: get-started-article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.reviewer: 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: The most recent supported Exchange topologies that allow users to access public folders with Outlook 2016 for Mac.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bc9b8226-bd8b-4edc-882b-4f19cfe118eb
 ms.reviewer: 

@@ -2,7 +2,7 @@
 title: 'UM mailbox policy procedures: Exchange 2013 Help'
 TOCTitle: UM mailbox policy procedures
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: "Configure Microsoft 365 Groups with on-premises Exchange hybrid"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

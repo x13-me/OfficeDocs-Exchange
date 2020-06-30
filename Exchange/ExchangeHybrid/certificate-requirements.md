@@ -1,7 +1,7 @@
 ---
 title: "Certificate requirements for hybrid deployments"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 ms.reviewer:
 manager: serdars
 f1.keywords:

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Admins can learn about scenarios for mail flow rules in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ca8b52ef-0af7-4d3d-96df-13df297585e0
 ms.reviewer: 

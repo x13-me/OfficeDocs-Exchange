@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
 ms.reviewer: 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn about queues and messages in queues in Exchange 2016 and Exchange 2019
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms.reviewer:

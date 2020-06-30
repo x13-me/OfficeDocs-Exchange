@@ -2,7 +2,7 @@
 title: 'Manage a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Manage a UM auto attendant
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

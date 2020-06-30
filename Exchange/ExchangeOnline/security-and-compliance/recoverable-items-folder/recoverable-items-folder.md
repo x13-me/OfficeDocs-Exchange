@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Admins can learn how deleted items in mailboxes are protected in Exchange Online.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.reviewer:

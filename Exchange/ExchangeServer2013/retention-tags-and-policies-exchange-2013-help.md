@@ -2,7 +2,7 @@
 title: 'Retention tags and retention policies: Exchange 2013 Help'
 TOCTitle: Retention tags and retention policies
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89

@@ -3,7 +3,7 @@ description: 'Summary: Learn about address lists and global address lists (GALs)
 localization_priority: Normal
 ms.author: dmaguire
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.collection: exchange-server

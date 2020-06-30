@@ -2,7 +2,7 @@
 title: 'Disable Voice Mail Preview for users: Exchange 2013 Help'
 TOCTitle: Disable Voice Mail Preview for users
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 362fed13-3a9c-4111-bfa4-8c45ab6a3a01

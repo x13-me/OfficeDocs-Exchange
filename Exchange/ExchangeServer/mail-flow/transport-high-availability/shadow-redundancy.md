@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms.reviewer: 

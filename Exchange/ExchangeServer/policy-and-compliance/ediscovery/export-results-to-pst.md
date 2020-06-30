@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.reviewer: 

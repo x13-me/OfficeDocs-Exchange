@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Exchange Server 2016 or Exchange Server 2019 Setup detected that you're installing Exchange on a domain controller in an Active Directory split permissions organization.
 ms.topic: reference
-author: mattpennathe3rd
+author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.InstallOnDCInADSplitPermissionMode
 ms.author: dmaguire

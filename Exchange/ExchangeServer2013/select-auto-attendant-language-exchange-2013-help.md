@@ -2,7 +2,7 @@
 title: 'Select the language for an auto attendant: Exchange 2013 Help'
 TOCTitle: Select the language for an auto attendant
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3a1c1ec0-c726-41fb-a294-59faab205609

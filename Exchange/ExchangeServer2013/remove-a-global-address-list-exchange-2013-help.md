@@ -2,7 +2,7 @@
 title: 'Remove a global address list: Exchange 2013 Help'
 TOCTitle: Remove a global address list
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22

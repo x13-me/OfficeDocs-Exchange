@@ -2,7 +2,7 @@
 title: 'Manage dynamic distribution groups: Exchange 2013 Help'
 TOCTitle: Manage dynamic distribution groups
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

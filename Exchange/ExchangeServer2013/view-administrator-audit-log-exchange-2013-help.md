@@ -2,7 +2,7 @@
 title: 'View the administrator audit log: Exchange 2013 Help'
 TOCTitle: View the administrator audit log
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57

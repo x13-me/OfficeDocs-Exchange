@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Admins can learn how to remove offline address book (OAB) from Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
 ms.reviewer: 

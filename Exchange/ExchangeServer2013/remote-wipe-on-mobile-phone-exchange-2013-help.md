@@ -2,7 +2,7 @@
 title: 'Perform a remote wipe on a mobile phone: Exchange 2013 Help'
 TOCTitle: Perform a remote wipe on a mobile phone
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 f1.keywords:

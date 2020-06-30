@@ -1,7 +1,7 @@
 ---
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 

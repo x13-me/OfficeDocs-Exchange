@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn how to create and modify room mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer: 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019

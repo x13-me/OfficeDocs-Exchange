@@ -1,7 +1,7 @@
 ---
 title: "Single sign-on with hybrid deployments"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

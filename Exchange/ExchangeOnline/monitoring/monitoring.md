@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Exchange Online offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements. The following table describes the reports and troubleshooting tools that are available to Exchange Online administrators.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8
 ms.reviewer: 

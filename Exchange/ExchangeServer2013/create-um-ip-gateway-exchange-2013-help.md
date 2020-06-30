@@ -2,7 +2,7 @@
 title: 'Create a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Create a UM IP gateway
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

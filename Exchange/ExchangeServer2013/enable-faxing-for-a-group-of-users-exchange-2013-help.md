@@ -2,7 +2,7 @@
 title: 'Enable faxing for a group of users: Exchange 2013 Help'
 TOCTitle: Enable faxing for a group of users
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178

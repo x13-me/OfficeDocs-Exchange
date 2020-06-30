@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
 ms.reviewer: 

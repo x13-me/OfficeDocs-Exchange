@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about site mailboxes and how to use them.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
 ms.reviewer:

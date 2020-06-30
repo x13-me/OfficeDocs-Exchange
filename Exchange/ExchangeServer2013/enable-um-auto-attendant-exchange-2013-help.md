@@ -2,7 +2,7 @@
 title: 'Enable a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Enable a UM auto attendant
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 16667a8f-50ab-4bb8-9a05-0389511974b1

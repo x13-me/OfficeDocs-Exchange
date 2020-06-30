@@ -2,7 +2,7 @@
 title: 'Exchange auditing reports: Exchange 2013 Help'
 TOCTitle: Exchange auditing reports
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d

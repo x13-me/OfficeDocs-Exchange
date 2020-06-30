@@ -5,7 +5,7 @@ description: Learn about the conditions and exceptions (predicates) that are ava
 ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: 7235e5ed-f7f4-41b1-b1a0-47bb96223a2f
 ms.collection: 

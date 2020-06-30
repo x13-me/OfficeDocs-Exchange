@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: You can specify the number of seconds of silence that the system allows when a voice message is being recorded before the call is ended. For most organizations, this value should be set to the default of 5 seconds.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 ms.reviewer: 

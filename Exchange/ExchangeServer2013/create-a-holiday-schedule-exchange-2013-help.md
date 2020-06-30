@@ -2,7 +2,7 @@
 title: 'Create a holiday schedule: Exchange 2013 Help'
 TOCTitle: Create a holiday schedule
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96

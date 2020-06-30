@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 ms.reviewer: 

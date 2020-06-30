@@ -3,7 +3,7 @@ localization_priority: Normal
 ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: ccb62ce1-a822-4859-a0db-3d546c5c1f50
 ms.reviewer: 

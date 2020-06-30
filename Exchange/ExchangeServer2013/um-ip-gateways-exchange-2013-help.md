@@ -2,7 +2,7 @@
 title: 'UM IP gateways: Exchange 2013 Help'
 TOCTitle: UM IP gateways
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab

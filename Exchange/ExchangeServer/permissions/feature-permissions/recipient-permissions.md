@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
 ms.reviewer:

@@ -2,7 +2,7 @@
 ROBOTS: NOINDEX
 title: "The Best Practices Analyzer for Exchange Server is no longer available"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 ms.reviewer: 
 manager: serdars
 audience: Admin

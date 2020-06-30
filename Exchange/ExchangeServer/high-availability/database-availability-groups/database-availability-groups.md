@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about database availability groups (DAGs) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: cdaf6096-f23e-4e18-8130-40127e4a97be
 ms.reviewer:

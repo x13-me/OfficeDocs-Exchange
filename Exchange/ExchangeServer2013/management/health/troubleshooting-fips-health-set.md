@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.fips(v=EXCHG.150)
 ms:contentKeyID: 49720857
 manager: serdars
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

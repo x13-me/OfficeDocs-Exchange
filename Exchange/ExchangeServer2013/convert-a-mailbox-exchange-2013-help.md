@@ -2,7 +2,7 @@
 title: 'Convert a mailbox: Exchange 2013 Help'
 TOCTitle: Convert a mailbox
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79

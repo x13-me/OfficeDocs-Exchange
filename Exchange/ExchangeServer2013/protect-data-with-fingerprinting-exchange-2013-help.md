@@ -2,7 +2,7 @@
 title: 'Protect form data with document fingerprinting: Exchange 2013 Help'
 TOCTitle: Protect form data with document fingerprinting
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 110c839b-7693-42f6-aa5d-58ce64f4c357

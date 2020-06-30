@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: The list of Outlook on the web mailbox policy procedure topics in Exchange Online
 ms.topic: hub-page
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d
 ms.reviewer: 

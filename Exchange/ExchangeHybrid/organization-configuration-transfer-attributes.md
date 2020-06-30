@@ -1,7 +1,7 @@
 ---
 title: "Organization Configuration Transfer Attributes"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 f1.keywords:

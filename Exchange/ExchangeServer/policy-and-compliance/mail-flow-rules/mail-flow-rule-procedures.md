@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016 and Exchange 2019'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.reviewer:

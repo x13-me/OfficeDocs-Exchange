@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms.reviewer:

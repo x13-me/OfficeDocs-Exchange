@@ -2,7 +2,7 @@
 title: 'Play on Phone: Exchange 2013 Help'
 TOCTitle: Play on Phone
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 511e4950-340a-48cc-a020-35d11e76b993

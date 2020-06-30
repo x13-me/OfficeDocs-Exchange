@@ -2,7 +2,7 @@
 title: 'Authorize calls for a group of users: Exchange 2013 Help'
 TOCTitle: Authorize calls for a group of users
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c

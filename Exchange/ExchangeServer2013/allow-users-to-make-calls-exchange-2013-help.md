@@ -2,7 +2,7 @@
 title: 'Allow users to make calls: Exchange 2013 Help'
 TOCTitle: Allow users to make calls
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: b6e696ce-c848-475b-a598-9035677497e2

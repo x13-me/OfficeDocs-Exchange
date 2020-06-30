@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about the MetaCacheDatabase (MCDB) feature in Exchange Server 2019, and how to configure it in your organization.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 monikerRange: exchserver-2019
 title: MetaCacheDatabase (MCDB) setup

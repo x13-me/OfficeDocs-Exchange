@@ -2,7 +2,7 @@
 title: 'Enable a customized non-business hours menu prompt: Exchange 2013 Help'
 TOCTitle: Enable a customized non-business hours menu prompt
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 094c50b2-072b-4929-aaf8-f7db5b19e9b6

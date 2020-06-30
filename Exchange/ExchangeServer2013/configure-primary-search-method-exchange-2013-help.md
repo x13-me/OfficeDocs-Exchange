@@ -2,7 +2,7 @@
 title: 'Configure the primary way for Outlook Voice Access users to search: Exchange 2013 Help'
 TOCTitle: Configure the primary way for Outlook Voice Access users to search
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3d93a037-5820-41d3-9206-69f534414daf

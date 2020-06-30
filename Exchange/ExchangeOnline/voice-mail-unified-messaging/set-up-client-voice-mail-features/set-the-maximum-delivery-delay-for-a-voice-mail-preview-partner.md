@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: You can set the maximum delivery delay for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum delivery delay, the setting will apply to all UM-enabled users who are linked with that UM mailbox policy.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c9a07f6d-6f7f-4036-9a4a-d668d21e2c76
 ms.reviewer: 

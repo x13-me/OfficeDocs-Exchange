@@ -5,7 +5,7 @@ ms:assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:
 manager: serdars
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/library/Dn912663(v=EXCHG.150)
 ms:contentKeyID: 64568564
 f1.keywords:

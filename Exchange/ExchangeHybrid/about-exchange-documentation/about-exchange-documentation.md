@@ -1,7 +1,7 @@
 ---
 title: "About Exchange documentation"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

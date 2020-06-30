@@ -1,7 +1,7 @@
 ---
 title: "Hybrid deployments with multiple forests"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 audience: ITPro
 ms.topic: article

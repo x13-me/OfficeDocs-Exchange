@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
 ms.reviewer:

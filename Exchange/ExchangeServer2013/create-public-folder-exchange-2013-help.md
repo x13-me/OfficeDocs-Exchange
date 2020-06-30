@@ -2,7 +2,7 @@
 title: 'Create a public folder: Exchange 2013 Help'
 TOCTitle: Create a public folder
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

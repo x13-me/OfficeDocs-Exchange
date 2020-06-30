@@ -1,7 +1,7 @@
 ---
 title: "Edge Transport servers in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

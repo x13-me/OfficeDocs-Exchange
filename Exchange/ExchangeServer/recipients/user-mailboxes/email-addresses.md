@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to add or remove email addresses using the Exchange admin center (EAC) or by using the Exchange Management Shell.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer:

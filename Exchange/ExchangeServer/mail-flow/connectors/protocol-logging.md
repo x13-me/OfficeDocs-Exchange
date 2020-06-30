@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
 ms.reviewer: 

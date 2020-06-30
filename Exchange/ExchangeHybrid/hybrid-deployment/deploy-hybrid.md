@@ -1,7 +1,7 @@
 ---
 title: "Create a hybrid deployment with the Hybrid Configuration wizard"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

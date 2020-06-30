@@ -2,7 +2,7 @@
 title: 'Test a transport rule: Exchange 2013 Help'
 TOCTitle: Test a transport rule
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1

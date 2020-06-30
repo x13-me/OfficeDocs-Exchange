@@ -2,7 +2,7 @@
 title: 'Manage voice mail settings for a user: Exchange 2013 Help'
 TOCTitle: Manage voice mail settings for a user
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638

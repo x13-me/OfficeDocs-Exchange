@@ -2,7 +2,7 @@
 title: 'Delete and re-create the default discovery mailbox in Exchange: Exchange 2013 Help'
 TOCTitle: Delete and re-create the default discovery mailbox in Exchange
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2

@@ -2,7 +2,7 @@
 title: 'About Exchange documentation: Exchange 2013 Help'
 TOCTitle: About Exchange documentation
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.collection: Ent_O365_Hybrid

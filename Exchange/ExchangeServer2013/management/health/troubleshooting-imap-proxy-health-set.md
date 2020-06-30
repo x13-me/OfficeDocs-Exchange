@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap.proxy(v=EXCH
 ms:contentKeyID: 49720728
 manager: serdars
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

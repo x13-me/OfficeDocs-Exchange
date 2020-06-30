@@ -2,7 +2,7 @@
 localization_priority: Normal
 description:
 ms.topic: conceptual
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid:
 ms.reviewer:

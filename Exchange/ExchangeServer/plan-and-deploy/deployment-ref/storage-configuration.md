@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn about storage options in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
 ms.reviewer: 

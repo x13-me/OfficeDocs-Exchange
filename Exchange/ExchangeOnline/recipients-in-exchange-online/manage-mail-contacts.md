@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Admins can learn how to create, modify, and delete mail contacts in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 f1.keywords:
 - CSH
 ms.custom:

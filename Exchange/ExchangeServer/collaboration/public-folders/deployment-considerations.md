@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Important considerations to read before you deploy public folders in your organization.'
 ms.topic: reference
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
 ms.reviewer: 

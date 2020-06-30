@@ -2,7 +2,7 @@
 title: 'Create a public folder mailbox: Exchange 2013 Help'
 TOCTitle: Create a public folder mailbox
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f

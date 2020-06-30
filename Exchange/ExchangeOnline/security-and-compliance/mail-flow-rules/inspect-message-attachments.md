@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Admins can learn how to configure mail flow rules to inspect message attachments in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 874d1c78-a8ec-4938-b388-d3208c2fa971
 ms.reviewer: 

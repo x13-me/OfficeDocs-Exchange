@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create, modify, and remove accepted domains in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
 ms.reviewer:

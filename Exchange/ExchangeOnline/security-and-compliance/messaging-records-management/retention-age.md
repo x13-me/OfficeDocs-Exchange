@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Admins can learn how the Managed Folder Assistant (MFA) processes items in user mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 ms.reviewer: 

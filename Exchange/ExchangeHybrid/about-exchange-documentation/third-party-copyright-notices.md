@@ -1,7 +1,7 @@
 ---
 title: "Third-party copyright notices"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

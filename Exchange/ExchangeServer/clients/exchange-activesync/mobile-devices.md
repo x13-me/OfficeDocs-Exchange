@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: "Summary: Learn about how Exchange ActiveSync lets enabled mobile devices access a user's Microsoft Exchange mailbox data any time, anywhere."
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms.reviewer: 

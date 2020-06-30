@@ -2,7 +2,7 @@
 title: 'Manage permissions for recipients: Exchange 2013 Help'
 TOCTitle: Manage permissions for recipients
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52

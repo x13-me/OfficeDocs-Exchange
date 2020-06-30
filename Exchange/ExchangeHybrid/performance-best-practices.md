@@ -1,7 +1,7 @@
 ---
 title: "Performance factors and best practices for hybrid migrations"
 ms.author: dmaguire
-author: mattpennathe3rd
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH

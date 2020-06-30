@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.topic: get-started-article
-author: mattpennathe3rd
+author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
 ms.author: dmaguire

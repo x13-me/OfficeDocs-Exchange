@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: 'Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange Server.'
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
 ms.reviewer:

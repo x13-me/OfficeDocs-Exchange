@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see Recipients.
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 ms.reviewer: 
