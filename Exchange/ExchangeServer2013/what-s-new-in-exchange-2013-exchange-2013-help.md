@@ -227,7 +227,7 @@ For detailed information, see [What's new for transport rules](what-s-new-for-tr
 
 ## Information Rights Management
 
-Information Rights Management (IRM) is compatible with Cryptographic Mode 2, an Active Directory Rights Management Services (AD RMS) cryptography mode that supports stronger encryption by allowing you to use 2048-bit keys for RSA and 256-bit keys for SHA-1. Additionally, Mode 2 enables you to use the SHA-2 hashing algorithm. For more information about cryptographic modes in AD RMS, see [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?linkid=263219).
+Information Rights Management (IRM) is compatible with Cryptographic Mode 2, an Active Directory Rights Management Services (AD RMS) cryptography mode that supports stronger encryption by allowing you to use 2048-bit keys for RSA and 256-bit keys for SHA-1. Additionally, Mode 2 enables you to use the SHA-2 hashing algorithm. For more information about cryptographic modes in AD RMS, see [AD RMS Cryptographic Modes](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).
 
 ## Auditing
 

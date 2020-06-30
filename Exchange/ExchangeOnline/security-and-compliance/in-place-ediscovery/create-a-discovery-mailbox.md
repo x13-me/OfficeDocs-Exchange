@@ -44,7 +44,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-For instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Create a discovery mailbox
 

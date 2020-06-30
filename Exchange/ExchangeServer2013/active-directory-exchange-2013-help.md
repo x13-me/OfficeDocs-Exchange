@@ -33,6 +33,6 @@ Exchange 2013 adds new attributes to the Active Directory domain service schema 
 
 To learn more about how Exchange 2013 stores and retrieves information in Active Directory so that you can plan access to it, see [Access to Active Directory](access-to-active-directory-exchange-2013-help.md).
 
-For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?linkid=264957).
+For more information about Active Directory forest design, see [AD DS Design Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754678(v=ws.10)).
 
 To learn more about computers running Windows in an Active Directory domain and deploying Exchange 2013 in a domain that has a disjoint namespace, see [Disjoint namespace scenarios](disjoint-namespace-scenarios-exchange-2013-help.md).

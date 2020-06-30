@@ -97,7 +97,7 @@ Enhanced status codes are defined in RFC 3463, and use the syntax _\<class\>_. _
 The following tables contain the enhanced status codes that are returned in NDRs for the most common message delivery failures.
 
 > [!NOTE]
-> For information about enhanced status codes in Microsoft 365 or Office 365 and hybrid environments, see [Email non-delivery reports in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524931).
+> For information about enhanced status codes in Microsoft 365 or Office 365 and hybrid environments, see [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 ### Temporary delivery failures
 

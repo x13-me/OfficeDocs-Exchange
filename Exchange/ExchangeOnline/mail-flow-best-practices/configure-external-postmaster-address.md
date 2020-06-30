@@ -32,7 +32,7 @@ There's no mailbox associated with the postmaster@\<_Default accepted domain_\> 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-- You can only use Exchange Online PowerShell to perform this procedure. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can only use Exchange Online PowerShell to perform this procedure. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 
 ## Use Exchange Online PowerShell to configure the external postmaster address

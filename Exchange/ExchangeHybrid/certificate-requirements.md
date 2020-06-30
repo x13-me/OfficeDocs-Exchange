@@ -26,7 +26,7 @@ In a hybrid deployment, many services make use of certificates:
 
 - **Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS)**: If you choose to deploy Azure AD Connect with AD FS as part of your hybrid deployment, a certificate issued by a trusted third-party certificate authority (CA) is used to establish a trust between web clients and federation server proxies, to sign security tokens, and to decrypt security tokens.
 
-    Learn more at [Certificates](https://go.microsoft.com/fwlink/p/?linkId=205993).
+    Learn more at [Certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641701(v=ws.10)).
 
 - **Exchange federation**: A self-signed certificate is used to create a secure connection between the on-premises Exchange servers and the Azure Active Directory authentication system.
 

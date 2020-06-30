@@ -135,7 +135,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
 
-- [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
+- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 
@@ -217,7 +217,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
-- [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
+- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 

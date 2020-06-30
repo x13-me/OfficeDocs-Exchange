@@ -78,7 +78,7 @@ When you create the migration file, you need to know the app password of each Gm
 
 You don't have to migrate all Gmail mailboxes at once. You can do them in batches at your convenience. You can include up to 50,000 mailboxes (one row for each user) in your migration file. The file can be as large as 10 MB.
 
-1. Sign in to [G Suite admin console](https://go.microsoft.com/fwlink/p/?LinkId=394538) using your administrator username and password.
+1. Sign in to [G Suite admin console](http://admin.google.com/) using your administrator username and password.
 
 2. After you're signed in, choose **Users**.
 
