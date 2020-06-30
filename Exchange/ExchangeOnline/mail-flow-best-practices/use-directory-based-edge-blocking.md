@@ -69,6 +69,6 @@ If a message is sent to a valid email address in Microsoft 365 or Office 365, th
 4. Choose **Save** to save your changes, and confirm that you want to enable DBEB.
 
 > [!NOTE]
-> - Dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a work around in hybrid environments, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
+> - Dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a workaround in hybrid environments, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
 >
 > - Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**. Once the domain type has been changed to **Authoritative**, DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Microsoft 365 or Office 365 organization are allowed to relay through the service.
