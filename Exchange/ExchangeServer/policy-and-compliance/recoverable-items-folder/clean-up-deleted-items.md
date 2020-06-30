@@ -98,34 +98,28 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
    ```
 
-4. Retrieve the current Managed Folder Assistant work cycle configuration. Be sure to note the setting for later.
-
-   ```PowerShell
-   Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
-   ```
-
-5. Disable client access to the mailbox to make sure no changes can be made to mailbox data for the duration of this procedure.
+4. Disable client access to the mailbox to make sure no changes can be made to mailbox data for the duration of this procedure.
 
    ```PowerShell
    Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
    ```
 
-6. To make sure no items are deleted from the Recoverable Items folder, increase the Recoverable Items quota, increase the Recoverable Items warning quota, and set the deleted item retention period to a value higher than the current size of the user's Recoverable Items folder. This is particularly important for preserving messages for mailboxes placed on In-Place Hold or Litigation Hold. We recommend raising these settings to twice their current size.
+5. To make sure no items are deleted from the Recoverable Items folder, increase the Recoverable Items quota, increase the Recoverable Items warning quota, and set the deleted item retention period to a value higher than the current size of the user's Recoverable Items folder. This is particularly important for preserving messages for mailboxes placed on In-Place Hold or Litigation Hold. We recommend raising these settings to twice their current size.
 
    ```PowerShell
-   Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+   Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendReceiveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
    ```
 
-7. Disable the Managed Folder Assistant on the Mailbox server.
+6. Disable the Managed Folder Assistant on the Mailbox server by running the following command:
 
    ```PowerShell
-   Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+   net stop MSExchangeMailboxAssistants
    ```
 
    > [!IMPORTANT]
    > If the mailbox resides on a mailbox database in a database availability group (DAG), you must disable the Managed Folder Assistant on each DAG member that hosts a copy of the database. If the database fails over to another server, this prevents the Managed Folder Assistant on that server from deleting mailbox data.
 
-8. Disable single item recovery and remove the mailbox from Litigation Hold.
+7. Disable single item recovery and remove the mailbox from Litigation Hold.
 
    ```PowerShell
    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
@@ -134,7 +128,7 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    > [!IMPORTANT]
    > After you run this command, it may take up to one hour to disable single item recovery or Litigation Hold. We recommend that you perform the next step only after this period has elapsed.
 
-9. Copy items from the Recoverable Items folder to a folder in the Discovery Search Mailbox and delete the contents from the source mailbox.
+8. Copy items from the Recoverable Items folder to a folder in the Discovery Search Mailbox and delete the contents from the source mailbox.
 
    ```PowerShell
    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
@@ -149,7 +143,7 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    > [!NOTE]
    > It isn't required to copy items to the Discovery Search Mailbox. You can copy messages to any mailbox. However, to prevent access to potentially sensitive mailbox data, we recommend copying messages to a mailbox that has access restricted to authorized records managers. By default, access to the default Discovery Search Mailbox is restricted to members of the Discovery Management role group. For details, see [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md).
 
-10. If the mailbox was placed on Litigation Hold or had single item recovery enabled earlier, enable these features again.
+9. If the mailbox was placed on Litigation Hold or had single item recovery enabled earlier, enable these features again.
 
     ```PowerShell
     Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
@@ -158,7 +152,7 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
     > [!IMPORTANT]
     > After you run this command, it may take up to one hour to enable  single item recovery or Litigation Hold. We recommend that you enable the Managed Folder Assistant and allow client access (Steps 11 and 12) only after this period has elapsed.
 
-11. Revert the following quotas to the values noted in Step 1:
+10. Revert the following quotas to the values noted in Step 1:
 
     - _RecoverableItemsQuota_
 
@@ -180,13 +174,13 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
     Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
     ```
 
-12. Enable the Managed Folder Assistant by setting the work cycle back to the value you noted in Step 4. This example sets the work cycle to one day.
+11. Enable the Managed Folder Assistant on the Mailbox server by running the following command:
 
     ```PowerShell
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    net start MSExchangeMailboxAssistants
     ```
 
-13. Enable client access.
+12. Enable client access to the mailbox by running the following command:
 
     ```PowerShell
     Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
@@ -200,13 +194,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxfolderstatistics)
 
-- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/get-mailboxserver)
-
 - [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox)
 
 - [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
-
-- [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/set-mailboxserver)
 
 - [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox)
 
