@@ -1,8 +1,8 @@
 ---
 title: 'Disable missed call notifications for a user: Exchange 2013 Help'
 TOCTitle: Disable missed call notifications for a user
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: e54937d5-3074-454f-b561-e601fecfc6ad

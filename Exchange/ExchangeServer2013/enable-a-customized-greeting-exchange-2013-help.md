@@ -1,8 +1,8 @@
 ---
 title: 'Enable a customized greeting for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Enable a customized greeting for Outlook Voice Access users
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06

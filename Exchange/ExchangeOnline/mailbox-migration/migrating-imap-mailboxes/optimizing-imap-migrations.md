@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
 ms.reviewer: 
 description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Microsoft 365 or Office 365, you have a few choices for optimizing the migration performance.

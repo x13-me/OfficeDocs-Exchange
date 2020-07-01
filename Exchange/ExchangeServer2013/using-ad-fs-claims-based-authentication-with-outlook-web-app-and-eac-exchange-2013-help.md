@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn635116(v=EXCHG.150)
 ms:contentKeyID: 61200292
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -125,7 +125,7 @@ Additional information you might want to know
 
 Certificates play a critical role in securing communications between Exchange 2013 SP1 servers; web clients such as Outlook Web App; and EAC, Windows Server 2012 R2 servers, including Active Directory Federation Services (AD FS) servers and Web Application Proxy servers. The requirements for certificates vary depending on whether you are setting up an AD FS server, AD FS Proxy, or Web Application Proxy server. The certificates that are used for AD FS services including the SSL and token signing certificates must be imported into the Trust Root Certification Authorities store on all of your Exchange, AD FS and Web Application Proxy servers. The thumbprint for the certificate that is imported is also used on the Exchange 2013 SP1 servers when you use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
-In any AD FS design, various certificates must be used to secure communication between users on the Internet and AD FS servers. Each federation server must have a service communication certificate or Secure Socket Layer (SSL) certificate and a token-signing certificate before AD FS servers, Active Directory domain controllers, and Exchange 2013 servers can communicate and authenticate. Depending on your security and budget requirements, carefully consider which of your certificates will be obtained by a public CA or an Enterprise CA. If you want to install and configure an Enterprise Root or Subordinate CA, you can use Active Directory Certificate Services (AD CS). If you want to know more about AD CS, see [Active Directory Certificate Services Overview](https://go.microsoft.com/fwlink/?linkid=392697).
+In any AD FS design, various certificates must be used to secure communication between users on the Internet and AD FS servers. Each federation server must have a service communication certificate or Secure Socket Layer (SSL) certificate and a token-signing certificate before AD FS servers, Active Directory domain controllers, and Exchange 2013 servers can communicate and authenticate. Depending on your security and budget requirements, carefully consider which of your certificates will be obtained by a public CA or an Enterprise CA. If you want to install and configure an Enterprise Root or Subordinate CA, you can use Active Directory Certificate Services (AD CS). If you want to know more about AD CS, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11)).
 
 Although AD FS doesn't require certificates be issued by a CA, the SSL certificate (the SSL certificate that is also used by default as the service communications certificate) must be trusted by the AD FS clients. We recommend that you don't use self-signed certificates. Federation servers use an SSL certificate to secure web services traffic for SSL communication with web clients and with federation server proxies. Because the SSL certificate must be trusted by client computers, we recommend that you use a certificate that is signed by a trusted CA. All certificates that you select must have a corresponding private key. After you receive a certificate from a CA (Enterprise or public), make sure that all certificates are imported into the Trust Root Certification Authorities store on all servers. You can import certificates into the store with the **Certificates** MMC snap-in or distribute the certificates by using Active Directory Certificate Services. It's important that if the certificate that you imported expires, you manually import another valid certificate.
 
@@ -204,7 +204,7 @@ To install AD FS on Windows Server 2012 R2:
     > [!NOTE]
     > Do not close the wizard during the installation process.
 
-After you install the required AD FS servers and generate the required certificates, you must configure AD FS and then test that AD FS is working correctly. You can also use the checklist here to help you in setting up and configuring AD FS: [Checklist: Setting Up a Federation Server](https://go.microsoft.com/fwlink/?linkid=392700).
+After you install the required AD FS servers and generate the required certificates, you must configure AD FS and then test that AD FS is working correctly. You can also use the checklist here to help you in setting up and configuring AD FS: [Checklist: Setting Up a Federation Server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807086(v=ws.11)).
 
 To configure Active Directory Federation Services:
 
@@ -216,7 +216,7 @@ To configure Active Directory Federation Services:
 
 4. On the **Specify Service Properties** page, do the following, and then click **Next**:
 
-   - Import the SSL certificate that you obtained earlier from AD CS or a public CA. This certificate is the required service authentication certificate. Browse to the location of your SSL certificate. For details on creating and importing SSL certificates, see [Server Certificates](https://go.microsoft.com/fwlink/?linkid=392703).
+   - Import the SSL certificate that you obtained earlier from AD CS or a public CA. This certificate is the required service authentication certificate. Browse to the location of your SSL certificate. For details on creating and importing SSL certificates, see [Server Certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831637(v=ws.11)).
 
    - Enter a name for your federation service (for example, type **adfs.contoso.com**).
 
@@ -389,7 +389,7 @@ Alternatively, you can create relaying party trusts and claim rules by using Win
 > [!NOTE]
 > Step 4, Step 5, and Step 6 are for users want to publish Exchange OWA and ECP using Web Application Proxy, and who want to have Web Application Proxy perform the AD FS authentication. However, publishing Exchange with Web Application Proxy is not required, so you can skip to Step 7 if you don't use Web Application Proxy and you do want Exchange to perform the AD FS authentication itself.
 
-Web Application Proxy is a new Remote Access role service in Windows Server 2012 R2. Web Application Proxy provides reverse proxy functionality for web applications inside your corporate network to allow users on many devices to access them from outside the corporate network. Web Application Proxy preauthenticates access to web applications by using Active Directory Federation Services (AD FS) and also functions as an AD FS proxy. Although Web Application Proxy isn't required, it is recommended when AD FS is accessible to external clients. However, offline access in Outlook Web App isn't supported when using AD FS authentication through Web Application Proxy. You can find more information about integrating with Web Application Proxy by seeing [Installing and Configuring Web Application Proxy for Publishing Internal Applications](https://go.microsoft.com/fwlink/?linkid=392705)
+Web Application Proxy is a new Remote Access role service in Windows Server 2012 R2. Web Application Proxy provides reverse proxy functionality for web applications inside your corporate network to allow users on many devices to access them from outside the corporate network. Web Application Proxy preauthenticates access to web applications by using Active Directory Federation Services (AD FS) and also functions as an AD FS proxy. Although Web Application Proxy isn't required, it is recommended when AD FS is accessible to external clients. However, offline access in Outlook Web App isn't supported when using AD FS authentication through Web Application Proxy. You can find more information about integrating with Web Application Proxy by seeing [Installing and Configuring Web Application Proxy for Publishing Internal Applications](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11))
 
 > [!WARNING]
 > You can't install Web Application Proxy on the same server with AD FS installed.
@@ -517,7 +517,7 @@ Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudi
 > [!NOTE]
 > The <EM>-AdfsEncryptCertificateThumbprint</EM> parameter isn't supported for these scenarios.
 
-For details and syntax, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) and [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
+For details and syntax, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) and [Get-ADFSCertificate](https://docs.microsoft.com/powershell/module/adfs/get-adfscertificate).
 
 ## Step 8 - Enable AD FS authentication on the OWA and ECP virtual directories
 
@@ -591,7 +591,7 @@ For on-premises Exchange 2013 SP1 deployments, deploying and configuring Active 
 
 - Something only the user is (for example, a biometric characteristic, such as a fingerprint)
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn280946(v=ws.11)).
 
 In the Windows Server 2012 R2 AD FS role service, the federation service functions as a security token service, provides the security tokens that are used with claims, and gives you the ability to support multifactor authentication. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/the-role-of-claims).
 

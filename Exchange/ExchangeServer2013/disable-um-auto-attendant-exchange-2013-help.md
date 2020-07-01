@@ -1,8 +1,8 @@
 ---
 title: 'Disable a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Disable a UM auto attendant
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae

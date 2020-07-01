@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Enable a user for voice mail
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
 ms.reviewer: 
 f1.keywords:

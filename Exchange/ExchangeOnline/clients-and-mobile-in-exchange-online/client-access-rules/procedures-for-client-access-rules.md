@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
 ms.reviewer: 
 title: Procedures for Client Access Rules in Exchange Online
@@ -31,7 +31,7 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 - Estimated time to complete each procedure: less than 5 minutes.
 
-- The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 

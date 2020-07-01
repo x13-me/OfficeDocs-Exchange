@@ -1,8 +1,8 @@
 ---
 title: 'Disable faxing for a group of users: Exchange 2013 Help'
 TOCTitle: Disable faxing for a group of users
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 1c57c3ba-2b0e-43dd-9b28-43bada1592c5

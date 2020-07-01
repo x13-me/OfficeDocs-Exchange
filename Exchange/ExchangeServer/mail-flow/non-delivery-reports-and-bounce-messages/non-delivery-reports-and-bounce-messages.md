@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms.reviewer:
 title: DSNs and NDRs in Exchange Server
@@ -97,7 +97,7 @@ Enhanced status codes are defined in RFC 3463, and use the syntax _\<class\>_. _
 The following tables contain the enhanced status codes that are returned in NDRs for the most common message delivery failures.
 
 > [!NOTE]
-> For information about enhanced status codes in Microsoft 365 or Office 365 and hybrid environments, see [Email non-delivery reports in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524931).
+> For information about enhanced status codes in Microsoft 365 or Office 365 and hybrid environments, see [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 ### Temporary delivery failures
 

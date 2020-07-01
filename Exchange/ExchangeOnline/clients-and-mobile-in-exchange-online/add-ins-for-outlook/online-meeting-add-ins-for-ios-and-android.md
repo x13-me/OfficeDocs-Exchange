@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article describes how users of Outlook for iOS and Android can use third-party add-ins for online meetings'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 title: Using third-party add-ins for online meetings in Outlook for iOS and Android
 ms.custom: remotework 
 ms.reviewer: smithre4

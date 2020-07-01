@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn about MailTips that are presented to users in Outlook and Outlook on the web.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 ms.reviewer: 
 title: MailTips

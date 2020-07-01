@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create, configure, and manage database availability group (DAG) in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms.reviewer:
 title: Manage database availability groups

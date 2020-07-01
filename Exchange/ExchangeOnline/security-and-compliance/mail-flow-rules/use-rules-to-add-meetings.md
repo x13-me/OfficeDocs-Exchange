@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.reviewer: 
 f1.keywords:
@@ -47,7 +47,7 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 - For more information about opening and using the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 

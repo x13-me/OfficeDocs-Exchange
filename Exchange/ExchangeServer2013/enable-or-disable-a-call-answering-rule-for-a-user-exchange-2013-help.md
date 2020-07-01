@@ -1,8 +1,8 @@
 ---
 title: 'Enable or disable a call answering rule for a user: Exchange 2013 Help'
 TOCTitle: Enable or disable a call answering rule for a user
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac

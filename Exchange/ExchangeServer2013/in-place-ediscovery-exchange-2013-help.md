@@ -1,8 +1,8 @@
 ---
 title: 'In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: In-Place eDiscovery
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
 ms.reviewer: 
 f1.keywords:

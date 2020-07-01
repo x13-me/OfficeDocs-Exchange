@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Set up a UM auto attendant
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
 ms.reviewer: 
 f1.keywords:

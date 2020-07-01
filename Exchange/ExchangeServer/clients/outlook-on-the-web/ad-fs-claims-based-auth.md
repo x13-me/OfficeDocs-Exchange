@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web
@@ -40,7 +40,7 @@ Setting up AD FS claims-based authentication for Outlook on the web and the EAC 
 
 - Optionally, a Windows Server 2012 R2 or later Web Application Proxy server (Remote Access server role, Web Application Proxy role service).
 
-  - Web Application Proxy is a reverse proxy server for web applications that are inside the corporate network. Web Application Proxy allows users on many devices to access published web applications from outside the corporate network. For more information, see [Installing and Configuring Web Application Proxy for Publishing Internal Applications](https://go.microsoft.com/fwlink/p/?LinkId=392705).
+  - Web Application Proxy is a reverse proxy server for web applications that are inside the corporate network. Web Application Proxy allows users on many devices to access published web applications from outside the corporate network. For more information, see [Installing and Configuring Web Application Proxy for Publishing Internal Applications](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)).
 
   - Although Web Application Proxy is typically recommended when AD FS is accessible to external clients, offline access in Outlook on the web isn't supported when using AD FS authentication through Web Application Proxy.
 
@@ -71,7 +71,7 @@ AD FS requires two basic types of certificates:
 
 - A token-signing certificate for encrypted communication and authentication between the AD FS server, Active Directory domain controllers, and Exchange servers. We recommend that you use the default self-signed AD FS token signing certificate.
 
-For more information about creating and importing SSL certificates in Windows, see [Server Certificates](https://go.microsoft.com/fwlink/p/?LinkId=392703).
+For more information about creating and importing SSL certificates in Windows, see [Server Certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831637(v=ws.11)).
 
 Here's a summary of the certificates that we'll be using in this scenario:
 
@@ -140,7 +140,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
 
 ## Step 3: Configure and test the AD FS server
 
-You can also refer to this checklist to help you configure AD FS: [Checklist: Setting Up a Federation Server](https://go.microsoft.com/fwlink/p/?LinkId=392700).
+You can also refer to this checklist to help you configure AD FS: [Checklist: Setting Up a Federation Server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807086(v=ws.11)).
 
 ### Step 3a: Create a gMSA on a domain controller
 
@@ -896,7 +896,7 @@ Deploying and configuring AD FS for claims-based authentication allows Outlook o
 
 For example, a password and a security code that's sent to a mobile phone, or a PIN and a fingerprint.
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn280946(v=ws.11)).
 
 On the AD FS server, the federation service functions as a security token service, and provides the security tokens that are used with claims. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/the-role-of-claims).
 

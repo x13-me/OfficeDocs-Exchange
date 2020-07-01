@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: As an admin, you can set up both private and public attachment handling in Outlook on the web depending on how you configure your Outlook on the web mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook on the web on a computer that is part of a private or of a public network.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2b5b8f6a-1bce-4872-8989-bac53ffafaa4
 ms.reviewer: 
 title: Public attachment handling in Exchange Online
@@ -54,7 +54,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
   - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -79,7 +79,7 @@ Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 
 ## Task 2 - Add and create claim rules in AD FS 2.0
 
-You must create a custom claim rule because an AD FS server relies on the presence of the `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](https://go.microsoft.com/fwlink/p/?LinkId=329966)
+You must create a custom claim rule because an AD FS server relies on the presence of the `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807049(v=ws.11))
 
 1. On the **Start Screen**, type **AD FS Management**, and then press **Enter**.
 

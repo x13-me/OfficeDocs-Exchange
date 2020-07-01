@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.reviewer: 
 description: When you migrate on-premises Exchange mailboxes to Microsoft 365 or Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
@@ -135,7 +135,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
 
-- [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
+- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 
@@ -217,7 +217,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
-- [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
+- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 

@@ -1,8 +1,8 @@
 ---
 title: 'Configure the number of input failures before Outlook Voice Access users are disconnected: Exchange 2013 Help'
 TOCTitle: Configure the number of input failures before Outlook Voice Access users are disconnected
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a

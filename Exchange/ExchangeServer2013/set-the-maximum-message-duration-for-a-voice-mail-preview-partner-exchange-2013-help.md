@@ -1,8 +1,8 @@
 ---
 title: 'Set the maximum message duration for a Voice Mail Preview partner: Exchange 2013 Help'
 TOCTitle: Set the maximum message duration for a Voice Mail Preview partner
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 18f928ff-f4cc-4eed-a466-de13388780b3

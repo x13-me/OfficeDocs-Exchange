@@ -1,8 +1,8 @@
 ---
 title: 'Policy Tips: Exchange 2013 Help'
 TOCTitle: Policy Tips
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c

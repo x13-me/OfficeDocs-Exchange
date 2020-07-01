@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serveri
 ms:contentKeyID: 46628815
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -31,6 +31,6 @@ To resolve this issue, move or delete all Send connectors from the local compute
 
 For more information about modifying or removing Send connectors, see the following topics in the Exchange Server 2007 product documentation:
 
-  - "How to Remove a Send Connector" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80))).
+- "How to Remove a Send Connector" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80))).
 
-  - "How to Modify the Configuration of a Send Connector" ([https://go.microsoft.com/fwlink/?LinkId=86656](https://go.microsoft.com/fwlink/?linkid=86656)).
+- "How to Modify the Configuration of a Send Connector" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998836(v=exchg.80))).

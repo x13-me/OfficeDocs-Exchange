@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can configure a mobile phone to use Microsoft Exchange ActiveSync. You should perform this procedure on each mobile phone in your organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.reviewer: 
 title: Configure mobile phones to access email

@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124778(v=EXCHG.150)
 ms:contentKeyID: 48385623
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - CSH
 mtps_version: v=EXCHG.150

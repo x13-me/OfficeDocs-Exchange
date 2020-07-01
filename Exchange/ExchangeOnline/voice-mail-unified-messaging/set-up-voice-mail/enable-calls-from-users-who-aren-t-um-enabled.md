@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can enable or disable calls from users who aren't enabled for Unified Messaging (UM). By default, Unified Messaging allows incoming calls from unauthenticated callers through an auto attendant to be transferred to UM-enabled users. With this option enabled, users from outside an organization can transfer calls to UM-enabled users.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 ms.reviewer: 
 f1.keywords:

@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee332309(v=EXCHG.150)
 ms:contentKeyID: 50873999
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 ms.reviewer: 
 f1.keywords:
@@ -38,7 +38,7 @@ To get started implementing any of these scenarios to block certain message type
 
 5. Select the conditions and actions you want.
 
-**Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
+**Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
 

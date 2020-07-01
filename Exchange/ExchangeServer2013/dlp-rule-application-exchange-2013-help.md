@@ -1,8 +1,8 @@
 ---
 title: 'How DLP rules are applied to evaluate messages: Exchange 2013 Help'
 TOCTitle: How DLP rules are applied to evaluate messages
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1

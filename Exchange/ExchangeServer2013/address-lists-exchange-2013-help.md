@@ -1,8 +1,8 @@
 ---
 title: 'Address lists: Exchange 2013 Help'
 TOCTitle: Address lists
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9

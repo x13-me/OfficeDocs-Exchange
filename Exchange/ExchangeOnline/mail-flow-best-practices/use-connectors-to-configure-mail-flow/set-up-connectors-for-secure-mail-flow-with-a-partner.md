@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.reviewer: 
 f1.keywords:
@@ -33,7 +33,7 @@ If you use a third-party cloud service for email filtering and need instructions
 By default, Microsoft 365 or Office 365 sends mail using TLS encryption, provided that the destination server also supports TLS. If your partner organization supports TLS, you only need to create a connector if you want to enforce certain security restrictions - for example, you always want TLS applied, or you require certificate verification whenever mail is sent from your partner to your organization.
 
 > [!NOTE]
-> For information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841).
+> For information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
 When you set up a connector, email messages are checked to make sure they meet the security restrictions that you specify. If email messages don't meet the security restrictions that you specify, the connector will reject them, and those messages will not be delivered. This makes it possible to set up a secure communication channel with a partner organization.
 

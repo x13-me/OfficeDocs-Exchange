@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Admins can learn how to create mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
 ms.reviewer: 
 f1.keywords:
@@ -33,7 +33,7 @@ You have to use the Microsoft 365 admin center or Exchange Online PowerShell to 
 
 - It's a good idea to use strong passwords that are at least eight characters long, and combine uppercase and lowercase letters, numbers, and symbols.
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 

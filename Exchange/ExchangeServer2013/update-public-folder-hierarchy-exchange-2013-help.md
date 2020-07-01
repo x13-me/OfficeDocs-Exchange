@@ -1,8 +1,8 @@
 ---
 title: 'Update the public folder hierarchy: Exchange 2013 Help'
 TOCTitle: Update the public folder hierarchy
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90

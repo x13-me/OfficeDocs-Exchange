@@ -1,8 +1,8 @@
 ---
 title: 'Place a mailbox on Litigation Hold: Exchange 2013 Help'
 TOCTitle: Place a mailbox on Litigation Hold
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0

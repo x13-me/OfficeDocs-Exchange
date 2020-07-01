@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.reviewer: 
 title: Manage all mailboxes and mail flow using Microsoft 365 or Office 365

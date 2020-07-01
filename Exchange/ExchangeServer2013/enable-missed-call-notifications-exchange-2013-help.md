@@ -1,8 +1,8 @@
 ---
 title: 'Enable missed call notifications for a user: Exchange 2013 Help'
 TOCTitle: Enable missed call notifications for a user
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: aa0cbb60-5422-474f-af16-621aade31c1f

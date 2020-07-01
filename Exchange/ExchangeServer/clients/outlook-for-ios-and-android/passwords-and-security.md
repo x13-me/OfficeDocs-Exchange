@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server 2016 or Exchange Server 2019 when using Basic authentication with the Exchange ActiveSync protocol.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 title: Passwords and security in Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4

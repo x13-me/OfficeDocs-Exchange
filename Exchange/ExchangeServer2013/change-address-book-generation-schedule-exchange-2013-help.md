@@ -1,8 +1,8 @@
 ---
 title: 'Change the offline address book generation schedule: Exchange 2013 Help'
 TOCTitle: Change the offline address book generation schedule
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.custom:

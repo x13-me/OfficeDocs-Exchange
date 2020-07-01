@@ -1,8 +1,8 @@
 ---
 title: 'Configure global address list properties: Exchange 2013 Help'
 TOCTitle: Configure global address list properties
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37

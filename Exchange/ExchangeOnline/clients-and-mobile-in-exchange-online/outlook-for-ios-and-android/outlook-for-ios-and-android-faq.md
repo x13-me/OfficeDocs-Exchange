@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Microsoft 365 or Office 365.
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
 title: "Outlook for iOS and Android in Exchange Online: FAQ"
 ms.collection:
@@ -394,3 +394,7 @@ For initial folder synchronization, Outlook for iOS synchronizes 100 items per f
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
 Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
+
+### Q: Does Outlook for iOS and Android support moderator message approval or rejection scenarios?
+
+No, Outlok for iOS and Android does not support moderated message requests for approving or rejecting emails. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.

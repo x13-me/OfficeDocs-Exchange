@@ -1,8 +1,8 @@
 ---
 title: 'Remove an address book policy: Exchange 2013 Help'
 TOCTitle: Remove an address book policy
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: c20c6f82-2f75-4116-9be1-c5af10113f71

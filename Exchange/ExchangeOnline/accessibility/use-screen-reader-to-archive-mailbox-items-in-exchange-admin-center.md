@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 775bb2a2-5ada-489b-944f-422d56d94fbf
 ms.reviewer: 
 manager: serdars

@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn about changing a mailbox from one type to another in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.reviewer:
 manager: serdars
 ms.prod: exchange-server-it-pro

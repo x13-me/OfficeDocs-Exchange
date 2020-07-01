@@ -1,8 +1,8 @@
 ---
 title: 'Configure Protected Voice Mail from unauthenticated callers: Exchange 2013 Help'
 TOCTitle: Configure Protected Voice Mail from unauthenticated callers
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d

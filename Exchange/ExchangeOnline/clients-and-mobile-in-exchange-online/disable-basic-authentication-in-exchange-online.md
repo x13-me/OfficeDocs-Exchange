@@ -1,11 +1,11 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 f1.keywords:
 - NOCSH
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 ms.assetid: bba2059a-7242-41d0-bb3f-baaf7ec1abd7
 ms.reviewer: 
@@ -140,7 +140,7 @@ For email clients and apps that don't support modern authentication, you need to
 
 - Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
 
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Create and apply authentication policies
 

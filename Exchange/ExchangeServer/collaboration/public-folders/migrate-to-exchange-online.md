@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker
@@ -46,7 +46,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://docs.microsoft.com/Exchange/architecture/mailbox-servers/mrs-proxy-endpoint) for details.
 
-- To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
+- To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - To run the migration scripts in this article, you must use an account that has basic authentication enabled. Accounts that use multi-factor authentication (MFA) are currently not supported.
 

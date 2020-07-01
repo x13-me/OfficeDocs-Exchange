@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer: 
 f1.keywords:
@@ -75,7 +75,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 This example applies the new retention policy New-Retention-Policy to all mailboxes that have the old policy Old-Retention-Policy.
 
 ```PowerShell
-$OldPolicy={Get-RetentionPolicy "Old-Retention-Policy"}.distinguishedName
+$OldPolicy=(Get-RetentionPolicy "Old-Retention-Policy").distinguishedName
 Get-Mailbox -Filter "RetentionPolicy -eq '$OldPolicy'" -Resultsize Unlimited | Set-Mailbox -RetentionPolicy "New-Retention-Policy"
 ```
 

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or Exchange Server 2019 deployment plan.'
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms.reviewer: 
 title: Plan for high availability and site resilience
@@ -124,7 +124,7 @@ At any specific time, the cluster for the DAG will use only one of the assigned 
 
 ### Network adapter configuration for DAGs
 
-Each network adapter must be configured properly based on its intended use. A network adapter that's used for a MAPI network is configured differently from a network adapter that's used for a Replication network. In addition to configuring each network adapter correctly, you must also configure the network connection order in Windows so that the MAPI network is at the top of the connection order. For detailed steps about how to modify the network connection order, see [Modify the protocol bindings and network provider order](https://go.microsoft.com/fwlink/p/?linkId=179138).
+Each network adapter must be configured properly based on its intended use. A network adapter that's used for a MAPI network is configured differently from a network adapter that's used for a Replication network. In addition to configuring each network adapter correctly, you must also configure the network connection order in Windows so that the MAPI network is at the top of the connection order. For detailed steps about how to modify the network connection order, see [Modify the protocol bindings and network provider order](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732472(v=ws.10)).
 
 #### MAPI network adapter configuration
 

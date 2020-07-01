@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.diskspace(v=EXCHG
 ms:contentKeyID: 49720879
 ms.reviewer:
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

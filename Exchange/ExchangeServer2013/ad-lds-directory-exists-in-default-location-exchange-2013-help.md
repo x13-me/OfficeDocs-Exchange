@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adamdat
 ms:contentKeyID: 46629121
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -23,7 +23,7 @@ An older installation of AD LDS exists in the default location. Setup can't perf
 
 To resolve this issue, remove the existing AD LDS directory and then run Setup again.
 
-For more information about AD LDS directory management, see [Administering AD LDS Directory Partitions](https://go.microsoft.com/fwlink/p/?linkid=272302).
+For more information about AD LDS directory management, see [Administering AD LDS Directory Partitions](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816929(v=ws.10)).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

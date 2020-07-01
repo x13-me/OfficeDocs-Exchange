@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about message approval in Exchange Online
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 ms.reviewer: 
 f1.keywords:

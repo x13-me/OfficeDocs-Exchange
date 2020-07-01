@@ -6,8 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123686(v=EXCHG.150)
 ms:contentKeyID: 50934219
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -44,7 +44,7 @@ The procedure in this topic shows you how to use Telnet Client, which is a compo
 
 ## Step 1: Install the Telnet Client in Windows
 
-By default, the Telnet Client isn't installed in most client or server versions of the Microsoft Windows operating systems. To install it, see [Install Telnet Client](https://go.microsoft.com/fwlink/p/?linkid=179054).
+By default, the Telnet Client isn't installed in most client or server versions of the Microsoft Windows operating systems. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
 ## Step 2: Use Nslookup to find the FQDN or IP address in the MX record of the remote SMTP server
 

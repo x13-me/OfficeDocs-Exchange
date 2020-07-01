@@ -1,7 +1,7 @@
 ---
 title: "ActiveSync organization settings attributes"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: dstrome
 f1.keywords:

@@ -1,8 +1,8 @@
 ---
 title: 'Protected Voice Mail procedures: Exchange 2013 Help'
 TOCTitle: Protected Voice Mail procedures
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 8547fc92-58f6-40f1-9685-3d43ba9b64a0

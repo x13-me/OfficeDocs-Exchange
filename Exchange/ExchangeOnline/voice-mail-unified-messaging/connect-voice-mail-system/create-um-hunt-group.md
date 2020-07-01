@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: A Unified Messaging (UM) hunt group is a logical representation of a Private Branch eXchange (PBX) or IP PBX hunt group. A UM hunt group acts as a connection or link between a UM IP gateway and a UM dial plan.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 43ecb1ec-5f82-4516-9010-de8f954d3758
 ms.reviewer: 
 f1.keywords:

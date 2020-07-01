@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
 ms.reviewer:
 title: Clients and mobile devices permissions

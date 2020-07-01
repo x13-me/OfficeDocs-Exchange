@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
@@ -202,7 +202,7 @@ To verify that you've successfully configured anonymous relay, do the following 
   Get-ADPermission "Anonymous Relay" -User "MS Exchange\Externally Secured Servers" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 
-- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](https://go.microsoft.com/fwlink/p/?linkId=179054).
+- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
   For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
 

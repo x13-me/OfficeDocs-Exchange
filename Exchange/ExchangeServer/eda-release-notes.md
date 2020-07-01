@@ -1,7 +1,7 @@
 ---
 title: "Exchange Deployment Assistant release notes"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH
