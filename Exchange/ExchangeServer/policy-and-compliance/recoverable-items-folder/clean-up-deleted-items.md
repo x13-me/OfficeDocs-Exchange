@@ -176,7 +176,7 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
     Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
     ```
 
-11. Configure the Microsoft Exchange Mailbox Assistants service to start automatically and start it on the Mailbox server by running the following command from a Command Prompt:
+11. Configure the Microsoft Exchange Mailbox Assistants service to start automatically and start it on the Mailbox server by running the following commands:
 
     ```PowerShell
     Set-Service MSExchangeMailboxAssistants -StartupType Automatic; Start-Service MSExchangeMailboxAssistants
