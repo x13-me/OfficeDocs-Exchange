@@ -1,18 +1,22 @@
 ---
-title: "Interpret voice mail call records"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
-description: "To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Interpret voice mail call records in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Interpret voice mail call records
+# Interpret voice mail call records in Exchange Online
 
 To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization.
 
@@ -58,7 +62,7 @@ The UM call data that you export includes the following detailed information abo
 
   - **Fax**: A call was received in which a fax tone was detected. If you've configured fax partners, this call was sent to the fax partner.
 
-  - **PlayOnPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in either Microsoft Outlook Web App or Outlook.
+  - **PlayOnPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in either Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App).
 
   - **Find Me**: An outbound call was placed by UM as a result of a Find Me rule in a call answering rule.
 
@@ -142,5 +146,3 @@ The UM call data that you export includes the following detailed information abo
 - **Burst Gap duration**: The average duration of packet loss during bursts of losses for the selected call.
 
 - **Audio Codec**: The audio codec used during the call.
-
-

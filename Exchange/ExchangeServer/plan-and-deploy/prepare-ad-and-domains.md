@@ -1,17 +1,22 @@
 ---
-title: "Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
+ms.topic: get-started-article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
-description: "Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+ms.reviewer: 
+title: Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Prepare Active Directory and domains for Exchange Server
@@ -21,12 +26,12 @@ Exchange uses Active Directory to store information about mailboxes and the conf
 - **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
 
 - **Follow the steps in this topic**: If you have a large Active Directory deployment, or if a separate team manages Active Directory, this topic is for you. Following the steps in this topic gives you much more control over each stage of preparation, and who can do each step. For example, Exchange administrators might not have the required permissions to extend the Active Directory schema.
- 
+
 For details on new schema classes and attributes that Exchange adds to Active Directory, including those made by Cumulative Updates (CUs), see [Active Directory schema changes in Exchange Server](active-directory/ad-schema-changes.md).
 
 For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange is installed?](active-directory/ad-changes.md).
 
- If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=399226).
+ If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
 
 ## What do you need to know before you begin?
 
@@ -49,7 +54,7 @@ For details about what's happening when Active Directory is being prepared for E
 - The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
     1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](../new-features/updates.md).
-    
+
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
     3. Open a Windows Command Prompt window. For example:
@@ -78,17 +83,20 @@ When you extend the Active Directory schema for Exchange, the following requirem
 
 To extend the schema for Exchange, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
-After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
+> [!NOTE]
+> When you run this command, a prerequisite check is performed that will tell you which requirements are missing.
+
+After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770963(v=ws.10)).
 
 ## Step 2: Prepare Active Directory
 
@@ -98,27 +106,27 @@ When you prepare Active Directory for Exchange, the following requirements apply
 
 - Your account needs to be a member of the Enterprise Admins security group. If you skipped Step 1 because you want the _/PrepareAD_ command to extend the schema, the account also needs to be a member of the Schema Admins security group.
 
-- The computer needs to be needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
+- The computer needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
 
 - Wait until Active Directory has finished replicating the schema changes from Step 1 to all domain controllers before you try to prepare Active Directory.
 
 - You need to select a name for the Exchange organization. The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses.
 
   - The organization name can't contain more than 64 characters, and can't be blank.
-    
+
   - Valid characters are A to Z, a to z, 0 to 9, hyphen or dash (-), and space, but leading or trailing spaces aren't allowed.
-    
+
   - You can't change the organization name after it's set.
 
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD  /OrganizationName:"<Organization name>"
 ```
 
 This example uses the Exchange installation files on drive E: and names the Exchange organization "Contoso Corporation".
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Contoso Corporation"
 ```
 
@@ -148,13 +156,13 @@ When you prepare all domains in the Active Directory forest for Exchange, your a
 
 To prepare all domains in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
@@ -172,28 +180,28 @@ When you prepare specific domains in your Active Directory forest, the following
 - Your account needs to be a member of the Domain Admins group in the domain that you want to prepare.
 
 - If the domain that you want to prepare was created **after** you ran /PrepareAD in Step 2, your account also needs to be a member of the Organization Management role group in Exchange.
-  
+
 To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
-```
+```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
 ```
 
 **Notes**:
 
-- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain. 
+- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
 
 - You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain:engineering.corp.contoso.com
 ```
 
 This is the same example, but run on a computer that's a member of the engineering.corp.contoso.com domain:
 
-```
+```console
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 ```
 
@@ -201,7 +209,7 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 
 To verify that you successfully prepared Active Directory and domains for Exchange, use any of the following steps:
 
-- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?LinkId=294644).
+- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).
 
 > [!CAUTION]
 > Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.
@@ -223,6 +231,12 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU6|17001|13237|16754|
+|Exchange 2019 CU5|17001|13237|16754|
+|Exchange 2019 CU4|17001|13237|16754|
+|Exchange 2019 CU3|17001|13237|16754|
+|Exchange 2019 CU2|17001|13237|16754|
+|Exchange 2019 CU1|17000|13236|16752|
 |Exchange 2019 RTM|17000|13236|16751|
 |Exchange 2019 Preview|15332|13236|16213|
 ::: moniker-end
@@ -232,6 +246,12 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU17|15332|13237|16217|
+|Exchange 2016 CU16|15332|13237|16217|
+|Exchange 2016 CU15|15332|13237|16217|
+|Exchange 2016 CU14|15332|13237|16217|
+|Exchange 2016 CU13|15332|13237|16217|
+|Exchange 2016 CU12|15332|13236|16215|
 |Exchange 2016 CU11|15332|13236|16214|
 |Exchange 2016 CU10|15332|13236|16213|
 |Exchange 2016 CU9|15332|13236|16213|

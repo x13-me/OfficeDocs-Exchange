@@ -14,7 +14,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "**/common/**"
         ]
       },
       {
@@ -30,7 +31,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "**/common/**"
         ]
       },
       {
@@ -89,11 +91,13 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.pdf",
-          "**/*.svg"
+          "**/*.svg",
+          "**/*.docx"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "ExchangeServer/**"
         ]
       },
       {
@@ -102,12 +106,17 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.pdf",
-          "**/*.svg"
+          "**/*.svg",
+          "**/*.docx"
         ],
         "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "ExchangeHybrid/**",
+          "ExchangeOnline/**",
+          "ExchangeServer2013/**",
+          "Hub/**"
         ]
       }
     ],
@@ -133,7 +142,22 @@
         "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-Exchange/issues" 
     },
     "fileMetadata": {
-        
+        "feedback_system": {
+          "ExchangeServer/**/*.md": "none",
+          "ExchangeServer2013/**/*.md": ""
+         },
+        "feedback_github_repo": {
+          "ExchangeServer/**/*.md": "none",
+          "ExchangeServer2013/**/*.md": "none"        
+        },
+        "feedback_product_url": {
+          "ExchangeServer/**/*.md": "none",
+          "ExchangeServer2013/**/*.md": "none"        
+        },
+        "hideEdit": {
+          "ExchangeServer/**/*.md": true,
+          "ExchangeServer2013/**/*.md": true         
+        }       
     },
     "template": [],
     "dest": "OfficeDocs-Exchange",

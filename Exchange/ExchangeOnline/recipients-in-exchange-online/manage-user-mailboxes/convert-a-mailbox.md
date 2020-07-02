@@ -1,20 +1,26 @@
 ---
-title: "Convert a mailbox"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 4/26/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Converting a mailbox to a different type of mailbox is very similar to the experience in earlier versions of Exchange. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
-description: "Converting a mailbox to a different type of mailbox is very similar to the experience in Exchange 2010. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Convert a mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Convert a mailbox
 
-Converting a mailbox to a different type of mailbox is very similar to the experience in Exchange 2010. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
+Converting a mailbox to a different type of mailbox is very similar to the experience in earlier versions of Exchange. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
 
 You can convert the following mailboxes from one type to another:
 
@@ -28,20 +34,20 @@ You can convert the following mailboxes from one type to another:
 
 - Resource mailbox to shared mailbox
 
-Note that if your organization uses a hybrid Exchange environment, you need to manage your mailboxes by using the on-premises Exchange management tools. To convert a mailbox in a hybrid environment, you might need to move the mailbox back to on-premises Exchange, convert the mailbox type, and then move it back to Office 365.
+Note that if your organization uses a hybrid Exchange environment, you need to manage your mailboxes by using the on-premises Exchange management tools. To convert a mailbox in a hybrid environment, you might need to move the mailbox back to on-premises Exchange, convert the mailbox type, and then move it back to Microsoft 365 or Office 365.
 
 > [!IMPORTANT]
->  If you are converting a user mailbox to a shared mailbox, you should either remove any mobile devices from the mailbox before the conversion, or you should block mobile access to the mailbox after the conversion. This is because once the mailbox is converted to a shared mailbox, mobile functionality will not work properly. For more information on blocking access, see [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?linkid=847873).
+> If you are converting a user mailbox to a shared mailbox, you should either remove any mobile devices from the mailbox before the conversion, or you should block mobile access to the mailbox after the conversion. This is because once the mailbox is converted to a shared mailbox, mobile functionality will not work properly. Additionally, if you are trying to prevent access to the converted mailbox, you might have to reset the password. For more information on blocking access, see [Remove a former employee](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee). <br/><br/> Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't use the procedures in this topic to convert customer mailboxes. Only members of the Organization Management role group in Exchange Online (global admins) can convert mailboxes.
 
 ## Use Exchange Online PowerShell to convert a mailbox
 
 Estimated time to complete: 5 minutes.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 This example converts the shared mailbox, MarketingDept1 to a user mailbox.
 
-```
+```PowerShell
 Set-Mailbox MarketingDept1 -Type Regular
 ```
 
@@ -55,21 +61,19 @@ You can use the following values for the _Type_ parameter:
 
 - Shared
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
 To verify that you have successfully converted the mailbox, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-Mailbox -Identity MarketingDept1 | Format-List RecipientTypeDetails
 ```
 
 The value for _RecipientTypeDetails_ should be `UserMailbox`.
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-
-

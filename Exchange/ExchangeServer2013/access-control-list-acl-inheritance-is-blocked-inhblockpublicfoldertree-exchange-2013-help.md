@@ -1,44 +1,45 @@
-﻿---
+---
 title: 'Access control list (ACL) inheritance is blocked'
 TOCTitle: Access control list (ACL) inheritance is blocked_InhBlockPublicFolderTree
 ms:assetid: e3b89c8a-d6f8-4864-8bf0-35a78ce87cc4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.inhblockpublicfoldertree(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.inhblockpublicfoldertree(v=EXCHG.150)
 ms:contentKeyID: 46629148
-ms.date: 12/09/2016
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Access control list (ACL) inheritance is blocked\_InhBlockPublicFolderTree
 
- 
-
-_**Applies to:** Exchange Server_
-
+_**Applies to:** Exchange Server 2013_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 Microsoft Exchange Server 2007 or Exchange Server 2010 setup cannot continue because the required permissions have not been able to propagate.
 
 Exchange setup requires that inheritance for permissions be enabled on the following Exchange objects:
 
-  - Exchange Organization object
+- Exchange Organization object
 
-  - Exchange Administrative Group object
+- Exchange Administrative Group object
 
-  - Exchange Servers container object
+- Exchange Servers container object
 
-  - Exchange Address List object
+- Exchange Address List object
 
-  - Exchange Public Folder object
+- Exchange Public Folder object
 
-  - Exchange Public Folder tree object
+- Exchange Public Folder tree object
 
 Failure to enable inheritance for permissions on these objects may result in mail flow problems, store mounting issues, and other service outages.
 
 To resolve this issue, make sure that the "Allow permissions to propagate to this object and child objects" setting is enabled for the object, and then rerun Exchange Server 2007 or Exchange 2010 setup.
-
 
 <table>
 <colgroup>
@@ -66,7 +67,6 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 > [!NOTE]
 > By default, the <STRONG>Security</STRONG> tab is not enabled in the configuration object properties box.
 
-
 </li>
 <li><p>Open Exchange System Manager, find the object in question, right-click the object and select <strong>Properties</strong>.</p></li>
 <li><p>Select the <strong>Security</strong> tab and then click <strong>Advanced</strong>.</p></li>
@@ -77,13 +77,8 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 </tbody>
 </table>
 
-
-
 > [!WARNING]
 > If you incorrectly modify the attributes of Active Directory objects when you use ADSI Edit, the LDP tool, or another LDAP version&nbsp;3 client, you may cause serious problems. These problems may require that you reinstall Microsoft Windows&nbsp;Server™&nbsp;2003, Exchange&nbsp;Server, or both. Modify Active Directory object attributes at your own risk.
-
-
-
 
 <table>
 <colgroup>
@@ -101,9 +96,8 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 <li><p>Select the <strong>Security</strong> tab and then click <strong>Advanced</strong>.</p></li>
 <li><p>Select <strong>Allow inheritable permissions from the parent to propagate to this object and all child objects</strong> to re-enable permissions inheritance.</p></li>
 <li><p>Select <strong>Ok</strong> twice to apply the change.</p></li>
-<li><p>Wait for Active Directory replication to propagate the changes or force Active Directory replication by following the guidance in Microsoft Knowledge Base article 232072, &quot;Initiating Replication Between Active Directory Direct Replication Partners&quot; (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
+<li><p>Wait for Active Directory replication to propagate the changes or force Active Directory replication.</p></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
-

@@ -1,39 +1,37 @@
-﻿---
+---
 title: "What's discontinued in Exchange 2013: Exchange 2013 Help"
 TOCTitle: What's discontinued in Exchange 2013
 ms:assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619283(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619283(v=EXCHG.150)
 ms:contentKeyID: 49289156
-ms.date: 12/09/2016
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # What's discontinued in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Microsoft Exchange Server 2013.
 
-
 > [!NOTE]
-> The following topics may also interest you: 
+> The following topics may also interest you:
 > <UL>
 > <LI>
 > <P><A href="what-s-new-in-exchange-2013-exchange-2013-help.md">What's new in Exchange 2013</A>&nbsp;&nbsp;&nbsp;Information about new features and functionality in Exchange Server 2013.</P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=267479">Developer roadmap for Exchange 2013</A>&nbsp;&nbsp;&nbsp;&nbsp;See the "Development technologies removed from Exchange" section for information about the API and Development features discontinued in Exchange 2013.</P></LI></UL>
-
-
+> <P><A href="https://docs.microsoft.com/exchange/client-developer/exchange-server-development">Exchange Online and Exchange development</A></P></LI></UL>
 
 ## Discontinued features from Exchange 2010 to Exchange 2013
 
 This section lists the Exchange Server 2010 features that are no longer available in Exchange 2013.
 
 ## Architecture
-
 
 <table>
 <colgroup>
@@ -58,9 +56,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Management interfaces
-
 
 <table>
 <colgroup>
@@ -76,14 +72,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange Management Console and Exchange Control Panel</p></td>
-<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange Admin Center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
+<td><p>The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange admin center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Client access
-
 
 <table>
 <colgroup>
@@ -99,7 +93,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Outlook 2003 is not supported</p></td>
-<td><p>To connect Microsoft Outlook to Exchange 2013, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn’t support the use of the Autodiscover service.</p></td>
+<td><p>To connect Microsoft Outlook to Exchange 2013, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.</p></td>
 </tr>
 <tr class="even">
 <td><p>RPC/TCP access for Outlook clients</p></td>
@@ -108,9 +102,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Outlook Web App and Outlook
-
 
 <table>
 <colgroup>
@@ -134,7 +126,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>Message flags</p></td>
-<td><p>The ability to set a custom date on a message flag isn’t available in Outlook Web App. You can use Outlook to set custom dates.</p></td>
+<td><p>The ability to set a custom date on a message flag isn't available in Outlook Web App. You can use Outlook to set custom dates.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chat contact list</p>
@@ -143,14 +135,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>Search folders</p></td>
-<td><p>The ability for users to use Search folders isn’t currently available in Outlook Web App.</p></td>
+<td><p>The ability for users to use Search folders isn't currently available in Outlook Web App.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Mail flow
-
 
 <table>
 <colgroup>
@@ -166,14 +156,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Linked connectors</p></td>
-<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://technet.microsoft.com/en-us/library/aa998936(v=exchg.150)">New-SendConnector</a> and <a href="https://technet.microsoft.com/en-us/library/aa998294(v=exchg.150)">Set-SendConnector</a>.</p></td>
+<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector">Set-SendConnector</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Anti-spam and anti-malware
-
 
 <table>
 <colgroup>
@@ -198,15 +186,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 > [!NOTE]
 > You can't enable the anti-spam agents on an Exchange 2013 Client Access server. Therefore, the only way to get the Connection Filtering agent is to install an Edge Transport server in the perimeter network. For more information, see <A href="edge-transport-servers-exchange-2013-help.md">Edge Transport servers</A>.
 
-
 </td>
 </tr>
 </tbody>
 </table>
 
-
 ## Messaging policy and compliance
-
 
 <table>
 <colgroup>
@@ -222,24 +207,21 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Managed Folders</p></td>
-<td><p>In Exchange 2010, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren’t supported. You must use retention policies for MRM.</p>
+<td><p>In Exchange 2010, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren't supported. You must use retention policies for MRM.</p>
 
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
-
 
 </td>
 </tr>
 <tr class="even">
 <td><p>Port Managed Folder wizard</p></td>
-<td><p>In Exchange 2010, you use the Port Managed Folder wizard to create retention tags based on managed folder and managed content settings. In Exchange 2013, the Exchange admin center doesn’t include this functionality. You can use the <strong>New-RetentionPolicyTag</strong> cmdlet with the <em>ManagedFolderToUpgrade</em> parameter to create a retention tag based on a managed folder.</p></td>
+<td><p>In Exchange 2010, you use the Port Managed Folder wizard to create retention tags based on managed folder and managed content settings. In Exchange 2013, the Exchange admin center doesn't include this functionality. You can use the <strong>New-RetentionPolicyTag</strong> cmdlet with the <em>ManagedFolderToUpgrade</em> parameter to create a retention tag based on a managed folder.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Unified Messaging and voice mail
-
 
 <table>
 <colgroup>
@@ -256,14 +238,12 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tr class="odd">
 <td><p>Directory lookups using Automatic Speech Recognition (ASR)</p></td>
 <td><p>In Exchange 2010, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
-<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can’t search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
+<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can't search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Tools
-
 
 <table>
 <colgroup>
@@ -279,7 +259,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange Best Practice Analyzer</p></td>
-<td><p>In Exchange 2010, the Exchange Best Practice Analyzer examined your Exchange deployment and determined whether the configuration was in line with Microsoft best practices. In Exchange 2013, the Exchange Best Practice Analyzer has been replaced by the <a href="https://go.microsoft.com/fwlink/p/?linkid=391077">Office 365 Best Practices Analyzer for Exchange Server 2013</a>.</p></td>
+<td><p>In Exchange 2010, the Exchange Best Practice Analyzer examined your Exchange deployment and determined whether the configuration was in line with Microsoft best practices. In Exchange 2013, the Exchange Best Practice Analyzer has been replaced by the <a href="https://techcommunity.microsoft.com/t5/exchange-team-blog/beta-of-microsoft-office-365-best-practices-analyzer-for/ba-p/591294">Office 365 Best Practices Analyzer for Exchange Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Mail flow troubleshooter</p></td>
@@ -300,9 +280,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Mailbox database copies
-
 
 <table>
 <colgroup>
@@ -326,13 +304,11 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Discontinued features from Exchange 2007 to Exchange 2013
 
 This section lists the Exchange Server 2007 features that are no longer available in Exchange 2013.
 
 ## APIs and development
-
 
 <table>
 <colgroup>
@@ -348,14 +324,12 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange WebDAV</p></td>
-<td><p>Use <a href="https://go.microsoft.com/fwlink/p/?linkid=167197">Exchange Web Services</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=157179">EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=169474">Migrating from WebDAV</a>.</p></td>
+<td><p>Use <a href="https://docs.microsoft.com/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange">Exchange Web Services (EWS) or the EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Architecture
-
 
 <table>
 <colgroup>
@@ -379,14 +353,12 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>User Datagram Protocol (UDP) notifications</p></td>
-<td><p>Support for User Datagram Protocol (UDP) notifications is removed from Exchange 2013. This affects the user experience when Outlook 2003 clients connect to their mailboxes on an Exchange 2013 server. For more information, see Microsoft Knowledge Base article 2009942, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2009942">Folders take a long time to update when an Exchange Server 2010 user uses Outlook 2003 in online mode</a>.</p></td>
+<td><p>Support for User Datagram Protocol (UDP) notifications is removed from Exchange 2013. This affects the user experience when Outlook 2003 clients connect to their mailboxes on an Exchange 2013 server. For more information, see Microsoft Knowledge Base article 2009942, <a href="https://support.microsoft.com/help/2009942">Folders take a long time to update when an Exchange Server 2010 user uses Outlook 2003 in online mode</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## High availability
-
 
 <table>
 <colgroup>
@@ -427,9 +399,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Client access
-
 
 <table>
 <colgroup>
@@ -445,15 +415,13 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Client authentication using Integrated Windows authentication (NTLM) for POP3 and IMAP4 users</p></td>
-<td><p>NTLM isn't supported for POP3 or IMAP4 client connectivity in Exchange 2013. Connections from POP3 or IMAP4 client programs using NTLM will fail. If you’re running the RTM version of Exchange 2013, the recommended alternative to NTLM is to use Plain Text Authentication with SSL.</p>
-<p>If you’re using Exchange 2013, to use NTLM, you must retain an Exchange 2007 server in your Exchange 2013 organization.</p></td>
+<td><p>NTLM isn't supported for POP3 or IMAP4 client connectivity in Exchange 2013. Connections from POP3 or IMAP4 client programs using NTLM will fail. If you're running the RTM version of Exchange 2013, the recommended alternative to NTLM is to use Plain Text Authentication with SSL.</p>
+<p>If you're using Exchange 2013, to use NTLM, you must retain an Exchange 2007 server in your Exchange 2013 organization.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Outlook Web App and Outlook
-
 
 <table>
 <colgroup>
@@ -469,11 +437,11 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Document access</p></td>
-<td><p>Outlook Web App can’t be used to access Microsoft SharePoint document libraries and Windows file shares.</p></td>
+<td><p>Outlook Web App can't be used to access Microsoft SharePoint document libraries and Windows file shares.</p></td>
 </tr>
 <tr class="even">
 <td><p>Message flags</p></td>
-<td><p>The ability to set a custom date on a message flag isn’t available in Outlook Web App 2013. You can use Outlook to set custom dates.</p></td>
+<td><p>The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Spell check</p></td>
@@ -481,7 +449,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="even">
 <td><p>Search Folders</p></td>
-<td><p>The ability for users to use Search folders isn’t currently available in Outlook Web App.</p></td>
+<td><p>The ability for users to use Search folders isn't currently available in Outlook Web App.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Maximum Cached Views</p></td>
@@ -490,9 +458,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tbody>
 </table>
 
-
 ## Recipient-related features
-
 
 <table>
 <colgroup>
@@ -516,14 +482,12 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>ISInteg</p></td>
-<td><p>In Exchange 2013, use <a href="https://technet.microsoft.com/en-us/library/ff625226(v=exchg.150)">New-MailboxRepairRequest</a>.</p></td>
+<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Messaging policy and compliance
-
 
 <table>
 <colgroup>
@@ -539,20 +503,17 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Managed Folders</p></td>
-<td><p>In Exchange 2007, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren’t supported. You must use retention policies for MRM.</p>
+<td><p>In Exchange 2007, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren't supported. You must use retention policies for MRM.</p>
 
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
-
 
 </td>
 </tr>
 </tbody>
 </table>
 
-
 ## Unified Messaging and voice mail
-
 
 <table>
 <colgroup>
@@ -568,9 +529,8 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Directory lookups using Automatic Speech Recognition (ASR) for Outlook Voice Access</p></td>
-<td><p>In Exchange 2007, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) in English (US) – (en-US) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
-<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can’t search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
+<td><p>In Exchange 2007, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) in English (US) - (en-US) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
+<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can't search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
 </tr>
 </tbody>
 </table>
-

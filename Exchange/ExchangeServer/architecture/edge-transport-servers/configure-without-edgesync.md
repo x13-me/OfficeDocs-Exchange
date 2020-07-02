@@ -1,15 +1,19 @@
 ---
-title: "Configure internet mail flow through Edge Transport servers without using EdgeSync"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
-description: "Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription."
+ms.reviewer:
+title: Configure internet mail flow through Edge Transport servers without using EdgeSync
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure internet mail flow through Edge Transport servers without using EdgeSync
@@ -40,7 +44,7 @@ On a Mailbox server:
 
    - To provide encryption, you need to use a certificate. The self-signed certificate on the Edge Transport server won't be recognized by the internal Exchange Organization (again, the EdgeSync subscription usually takes care of this). You'll need to manually import the self-signed certificate on each Mailbox or use a certificate from a trusted third-party certification authority.
 
-- If you don't want the messages coming from the Edge Transport server to be identified as authenticated SMTP and therefore using the corresponding client Receive connectors, you can use Externally Secured as the authentication method, which means email traffic between the Edge Transport server and the internal Exchange organization isn't authenticated or encrypted _by Exchange_. If you use this method, you **must** configure and use an external encryption method (for example, IPsec or a VPN). 
+- If you don't want the messages coming from the Edge Transport server to be identified as authenticated SMTP and therefore using the corresponding client Receive connectors, you can use Externally Secured as the authentication method, which means email traffic between the Edge Transport server and the internal Exchange organization isn't authenticated or encrypted _by Exchange_. If you use this method, you **must** configure and use an external encryption method (for example, IPsec or a VPN).
 
 <sup>2</sup>Instead of a dedicated Receive connector, you can configure and use the default Receive connector on the Edge Transport server for both incoming internet messages and incoming messages from internal Mailbox servers (an EdgeSync subscription uses this Receive connector for both connections).
 
@@ -54,7 +58,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 
 - On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors.
 
-   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
    For information about opening and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
@@ -81,11 +85,11 @@ This Send connector requires the following configuration:
 
 To create a Send connector that's configured to send messages to the internet, run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](http://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 ### Step 2: Create a dedicated Send connector to only send messages to the Exchange organization
 
@@ -95,7 +99,7 @@ This Send connector requires the following configuration:
 
 - **Usage type**: Internal
 
-- **Address spaces**: `--` (indicates all accepted domains for the Exchange organization) 
+- **Address spaces**: `--` (indicates all accepted domains for the Exchange organization)
 
 - DNS routing disabled (smart host routing enabled)
 
@@ -107,11 +111,11 @@ This Send connector requires the following configuration:
 
 To create a Send connector configured to send messages to the Exchange organization, replace the smart host values with the Mailbox servers in your organization, and run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces "--" -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](http://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 ### Step 3: Modify the default Receive connector to only accept messages from the internet
 
@@ -121,13 +125,13 @@ Make the following configuration changes to the default Receive connector:
 
 - Change the network bindings to accept messages only from the network adapter that is accessible from the internet (for example, 10.1.1.1 and the standard SMTP TCP port value of 25).
 
-To modify the default Receive connector to only accept messages from the internet, replace \< _ServerName\>_ and bindings ith the name of your Edge Transport server and external network adapter configuration, and run this command: 
+To modify the default Receive connector to only accept messages from the internet, replace \< _ServerName\>_ and bindings ith the name of your Edge Transport server and external network adapter configuration, and run this command:
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default internal Receive connector ServerName>" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](http://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/set-receiveconnector).
 
 ### Step 4: Create a dedicated Receive connector to only accept messages from the Exchange organization
 
@@ -145,17 +149,17 @@ This Receive connector requires the following configuration:
 
 To create a Receive connector configured to only accept messages from the Exchange organization, replace the bindings and remote IP ranges with your values, and run this command.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](http://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
 To verify that you have successfully configured the required Send connectors and Receive connectors on the Edge Transport server, run this command on the Edge Transport server and verify the property values:
 
-```
+```PowerShell
 Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism; Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
 ```
 
@@ -195,7 +199,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values: 
+3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
 
    - **IP address**: For example, 10.1.1.2.
 
@@ -211,7 +215,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information: 
+5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
 
    - **Type**: Verify SMTP is selected.
 
@@ -221,7 +225,7 @@ This Send connector requires the following configuration:
 
    Click **Save**.
 
-6. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
+6. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites:
 
    - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2019 Mailbox servers, Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
@@ -235,11 +239,11 @@ This Send connector requires the following configuration:
 
 To create a Send connector to send outgoing messages to the Edge Transport server, replace the smart hosts and source Mailbox servers with your values, and run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](http://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 #### How do you know this worked?
 
@@ -249,6 +253,6 @@ To verify that you've successfully created a Send connector to send outgoing mes
 
 - In the Exchange Management Shell, run this command on a Mailbox server to verify the property values:
 
-   ```
+   ```PowerShell
    Get-SendConnector -Identity "To Edge" | Format-List Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
    ```

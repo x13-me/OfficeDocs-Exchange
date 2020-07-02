@@ -1,15 +1,21 @@
 ---
-title: "Hierarchical address books in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
-description: "Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online."
+ms.reviewer: 
+title: Hierarchical address books in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Hierarchical address books in Exchange Online
@@ -43,7 +49,7 @@ You can provide an additional level of hierarchical structure by using the _Seni
 
 Detailed instructions for creating HABs are included in the topic [Enable or disable hierarchical address books](enable-or-disable-hierarchical-address-books.md). The general steps are as follows:
 
-1. Create a distribution group that will be used for the root organization (top-level tier). If desired, you can use an existing organizational unit in your Exchange forest for the distribution group.
+1. Create a distribution group that will be used for the root organization (top-level tier).
 
 2. Create distribution groups for the child tiers and designate them as members of the HAB. Modify the _SeniorityIndex_ parameter of these groups so they're listed in the proper hierarchical order within the root organization.
 

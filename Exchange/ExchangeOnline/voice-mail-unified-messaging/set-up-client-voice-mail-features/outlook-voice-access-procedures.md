@@ -1,18 +1,22 @@
 ---
-title: "Outlook Voice Access procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Enable or disable Outlook Voice Access for users
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1cab0106-1ec2-4257-8911-32a1e73b185d
-description: "Enable or disable Outlook Voice Access for users"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Outlook Voice Access procedures in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Outlook Voice Access procedures
+# Outlook Voice Access procedures in Exchange Online
 
 [Enable or disable Outlook Voice Access for users](enable-or-disable-outlook-voice-access.md)
 
@@ -47,5 +51,3 @@ description: "Enable or disable Outlook Voice Access for users"
 [Configure the number of input failures before Outlook Voice Access users are disconnected](configure-number-of-input-failures.md)
 
 [Configure the limit on personal greetings for Outlook Voice Access users](configure-personal-greetings-limit.md)
-
-

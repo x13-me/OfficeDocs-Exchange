@@ -1,22 +1,26 @@
 ---
-title: "Configure Protected Voice Mail from unauthenticated callers"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice mail message is protected:'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d
-description: "You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice mail message is protected:"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Configure Protected Voice Mail from unauthenticated callers in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Configure Protected Voice Mail from unauthenticated callers
+# Configure Protected Voice Mail from unauthenticated callers in Exchange Online
 
 You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice mail message is protected:
 
-- The message is marked as Private in Microsoft Outlook and Outlook Web App.
+- The message is marked as Private in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
 - The voice message can be opened only by the intended recipient of the voice message.
 
@@ -30,7 +34,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 - Estimated time to complete: Less than 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
@@ -39,7 +43,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to configure Protected Voice Mail from unauthenticated callers
 
@@ -49,11 +53,11 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 3. On the **UM Mailbox Policy** page \> **Protected voice mail**, under **Protect voice message from unauthenticated callers**, select one of the following options:
 
-  - **None**: Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users.
+   - **None**: Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users.
 
-  - **Private**: Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller.
+   - **Private**: Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller.
 
-  - **All**: Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private.
+   - **All**: Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private.
 
 4. Click **Save**.
 
@@ -61,8 +65,6 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 
 This example protects all voice messages from all unauthenticated callers on the UM mailbox policy `MyUMMailboxPolicy`.
 
-```
+```PowerShell
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -ProtectUnauthenticatedVoiceMail -All
 ```
-
-

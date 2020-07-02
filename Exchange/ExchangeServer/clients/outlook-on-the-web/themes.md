@@ -1,15 +1,19 @@
 ---
-title: "Create a theme for Outlook on the web in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019."
+ms.reviewer: 
+title: Create a theme for Outlook on the web in Exchange Server
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a theme for Outlook on the web in Exchange Server
@@ -42,7 +46,7 @@ After you create a theme, you may also want to customize elements that are commo
 
 - The light version of Outlook on the web doesn't support themes.
 
-- To replace an existing color with a new color, you need the HTML RGB value of the new color. You can find HTML RGB values at [Color Table](https://go.microsoft.com/fwlink/p/?LinkId=280679). If you can't find the color there, you can use an image editing tool or an HTML color codes web site to determine its HTML RGB value.
+- To replace an existing color with a new color, you need the HTML RGB value of the new color. You can find HTML RGB values at [Color Table](https://developer.mozilla.org/docs/Web/CSS/color_value). If you can't find the color there, you can use an image editing tool or an HTML color codes web site to determine its HTML RGB value.
 
 - Don't delete the folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\base`, or any files in it.
 
@@ -91,7 +95,7 @@ After you've identified the theme that's closest to what you want (for example, 
 
 You need to configure a unique display name and sort order for the new theme, because the new theme has the same display name and sort order as the theme you copied. The theme's display name appears in the **Change theme** panel in Outlook on the web. The sort order determines where the theme appears in the list of themes.
 
-1. Use Notepad to open the file named `themeinfo.xml` in the new theme folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\<NewThemeFolder>` that you created in Step 1. The contents of the file look like this: 
+1. Use Notepad to open the file named `themeinfo.xml` in the new theme folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\<NewThemeFolder>` that you created in Step 1. The contents of the file look like this:
 
    `<theme displayname="__<CopiedThemeName>__" sortorder="<CopiedThemeSortOrder>"/>`
 
@@ -124,12 +128,12 @@ The image files that exist in these folders are described in the following table
 |headerbgmaing2.png|2000 x 50|32|The header image for themes that use a static header image. The size of the file varies. <br/><br/> If the theme doesn't use a static header image, the file is 1 x 1, and the size is 2815 bytes.|
 |headerbgmaing2.gif|2000 x 50|24|The header image for themes that use an animated header image. The size of the file varies. <br/><br/> If the theme doesn't use an animated header image, the file is 1 x 1, and the size is 43 bytes.|
 |themepreview.png|64 x 64|24 or 8|The small square image that represents the theme in the **Change theme** panel in Outlook on the web. <br/><br/> For the Default theme and the Black theme, this file 1 x 1, and the preview image is a black square.|
- 
+
 You can edit the existing image file, or replace the file with a new file that has the same name and dimensions.
 
 ### Colors
 
-Theme colors are defined in the following files in the `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\styles` folder: 
+Theme colors are defined in the following files in the `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\styles` folder:
 
 - `fabric.color.theme.<ThemeFolderName>.css`
 
@@ -143,13 +147,13 @@ Setting a new default theme only affects users who haven't manually selected the
 
 To set the default theme and prevent users from changing their theme in Outlook on the web, use the following syntax:
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity <VirtualDirectoryIdentity> -DefaultTheme <ThemeFolderName> -ThemeSelectionEnabled $false
 ```
 
 This example configures the theme folder named `fourthcoffee` as the default theme in Outlook on the web for the default website on the server named Mailbox01.
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" -DefaultTheme fourthcoffee -ThemeSelectionEnabled $false
 ```
 
@@ -183,11 +187,11 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
-```
-net stop was /y
+```console
+net stop w3svc /y
 ```
 
-```
+```console
 net start w3svc
 ```
 

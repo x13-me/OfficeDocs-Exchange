@@ -1,29 +1,23 @@
-﻿---
+---
 title: 'Exchange 2013 storage configuration options: Exchange 2013 Help'
 TOCTitle: Exchange 2013 storage configuration options
 ms:assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee832792(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee832792(v=EXCHG.150)
 ms:contentKeyID: 49685283
-ms.date: 12/15/2016
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Exchange 2013 storage configuration options
 
- 
-
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013_
 
 Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2013 is an important part of your Mailbox server storage design solution.
-
-**Contents**
-
-Storage architectures
-
-Physical disk types
-
-Best practices for supported storage configurations
 
 ## Storage architectures
 
@@ -67,14 +61,11 @@ The following table describes supported storage architectures and provides best 
 </tbody>
 </table>
 
-
 A network-attached storage (NAS) unit is a self-contained computer connected to a network, with the sole purpose of supplying file-based data storage services to other devices on the network. The operating system and other software on the NAS unit provide the functionality of data storage, file systems, and access to files, and the management of these functionalities (for example, file storage).
 
 All storage used by Exchange for storage of Exchange data must be block-level storage because Exchange 2013 doesn't support the use of NAS volumes, other than in the SMB 3.0 scenario outlined in the topic [Exchange 2013 virtualization](exchange-2013-virtualization-exchange-2013-help.md). Also, in a virtualized environment, NAS storage that's presented to the guest as block-level storage via the hypervisor isn't supported.
 
 Using storage tiers is not recommended, as it could adversely affect system performance. For this reason, do not allow the storage controller to automatically move the most accessed files to "faster" storage.
-
-Return to top
 
 ## Physical disk types
 
@@ -107,7 +98,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -124,7 +115,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -141,7 +132,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -157,7 +148,7 @@ The following table provides a list of supported physical disk types and provide
 </ul></td>
 <td><p>Supported:  512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following:</p>
 <ul>
-<li><p>The hotfix described in <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
+<li><p>The hotfix described in <a href="https://support.microsoft.com/help/982018">Microsoft Knowledge Base article 982018</a>, An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available.</p></li>
 <li><p>Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 and later supports native 4-kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk.</p>
@@ -166,7 +157,6 @@ The following table provides a list of supported physical disk types and provide
 </tr>
 </tbody>
 </table>
-
 
 ## Factors to consider when choosing disk types
 
@@ -336,9 +326,6 @@ From a performance perspective, using large, slower disks for Exchange storage i
 </tbody>
 </table>
 
-
-Return to top
-
 ## Best practices for supported storage configurations
 
 This section provides best practice information about supported disk and array controller configurations.
@@ -355,9 +342,9 @@ If you are deploying a standalone Mailbox server role architecture, RAID technol
 
 When using RAID-5 or RAID-6 configurations for the operating system, pagefile, or Exchange data volumes, note the following:
 
-  - RAID-5 configurations, including variations such as RAID-50 and RAID-51, should have no more than 7 disks per array group and array controller high-priority scrubbing and surface scanning enabled.
+- RAID-5 configurations, including variations such as RAID-50 and RAID-51, should have no more than 7 disks per array group and array controller high-priority scrubbing and surface scanning enabled.
 
-  - RAID-6 configurations should have array controller high-priority scrubbing and surface scanning enabled.
+- RAID-6 configurations should have array controller high-priority scrubbing and surface scanning enabled.
 
 While JBOD is supported in high availability architectures that have 3 or more highly available database copies, because the log and mailbox database volumes are separated, JBOD is not recommended.
 
@@ -365,9 +352,9 @@ While JBOD is supported in high availability architectures that have 3 or more h
 
 Mailbox database and log volume co-location is not recommended in standalone architectures. In high availability architectures, there are two possibilities for this scenario:
 
-1.  Single database per volume
+1. Single database per volume
 
-2.  Multiple databases per volume
+2. Multiple databases per volume
 
 **Single Database Per Volume**
 
@@ -414,7 +401,6 @@ From an Exchange perspective, JBOD means having both the database and its associ
 </tbody>
 </table>
 
-
 To deploy on JBOD with the primary datacenter servers, you need three or more highly available database copies within the DAG. If mixing lagged copies on the same server hosting highly available database copies (for example, not using dedicated lagged database copy servers), you need at least two lagged database copies.
 
 For the secondary datacenter servers to use JBOD, you should have at least two highly available database copies in the secondary datacenter. The loss of a copy in the secondary datacenter won't result in requiring a reseed across the WAN or having a single point of failure in the event the secondary datacenter is activated. If mixing lagged database copies on the same server hosting highly available database copies (for example, not using dedicated lagged database copy servers), you need at least two lagged database copies.
@@ -454,7 +440,6 @@ Multiple databases per volume is a new JBOD scenario available in Exchange 2013 
 </tbody>
 </table>
 
-
 The following table provides guidance about storage array configurations for Exchange 2013.
 
 ### Supported RAID types for the Exchange 2013 Mailbox server role
@@ -490,7 +475,6 @@ The following table provides guidance about storage array configurations for Exc
 </tr>
 </tbody>
 </table>
-
 
 The following table provides guidance about database and log file choices.
 
@@ -568,7 +552,6 @@ The following table provides guidance about database and log file choices.
 </tbody>
 </table>
 
-
 The following table provides guidance about Windows disk types.
 
 ### Windows disk types for the Exchange 2013 Mailbox server role
@@ -605,7 +588,6 @@ The following table provides guidance about Windows disk types.
 </tr>
 </tbody>
 </table>
-
 
 The following table provides guidance on volume configurations.
 
@@ -693,8 +675,8 @@ The following table provides guidance on volume configurations.
 <td><p>Windows BitLocker (volume encryption)</p></td>
 <td><p>Windows BitLocker is a data protection feature in Windows Server 2008. BitLocker protects against data theft or exposure on computers that are lost or stolen, and it offers more secure data deletion when computers are decommissioned.</p></td>
 <td><p>Supported: All Exchange database and log files.</p></td>
-<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1 and the following hotfix: <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">You cannot enable BitLocker on a disk volume in Windows Server 2008 R2 if the computer is a failover cluster node</a>. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
-<p>For more information about Windows 7 BitLocker encryption, see <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
+<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
+<p>For more information about Windows 7 BitLocker encryption, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee449438(v=ws.10)">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Server Message Block (SMB) 3.0</p></td>
@@ -714,26 +696,26 @@ The following table provides guidance on volume configurations.
 </tr>
 <tr class="even">
 <td><p>Storage Spaces</p></td>
-<td><p>Storage Spaces is a new storage solution that delivers virtualization capabilities for Windows Server 2012. Storage Spaces allow you to organize physical disks into storage pools, which can be easily expanded by simply adding disks. These disks can be connected either through USB, SATA or SAS. It also utilizes virtual disks (spaces), which behave just like physical disks, with associated powerful capabilities such as thin provisioning, as well as resiliency to failures of underlying physical media. For more information on Storage Spaces, see <a href="https://technet.microsoft.com/en-us/library/hh831739.aspx">Storage Spaces Overview</a>.</p></td>
+<td><p>Storage Spaces is a new storage solution that delivers virtualization capabilities for Windows Server 2012. Storage Spaces allow you to organize physical disks into storage pools, which can be easily expanded by simply adding disks. These disks can be connected either through USB, SATA or SAS. It also utilizes virtual disks (spaces), which behave just like physical disks, with associated powerful capabilities such as thin provisioning, as well as resiliency to failures of underlying physical media. For more information on Storage Spaces, see <a href="https://docs.microsoft.com/windows-server/storage/storage-spaces/overview">Storage Spaces Overview</a>.</p></td>
 <td><p>Supported. Same restrictions as for physical disk types outlined in this topic.</p></td>
 <td><p>Supported. Same restrictions as for physical disk types outlined in this topic.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Resilient File System (ReFS)</p></td>
-<td><p>ReFS is a newly engineered file system for Windows Server 2012 that is built on the foundations of NTFS. ReFS maintains high degree of compatibility with NTFS while providing enhanced data verification and auto-correction techniques as well as an integrated end-to-end resiliency to corruptions especially when used in conjunction with the storage spaces feature. For more information on ReFS, see <a href="https://technet.microsoft.com/en-us/library/hh831724.aspx">Resilient File System Overview</a>.</p></td>
+<td><p>ReFS is a newly engineered file system for Windows Server 2012 that is built on the foundations of NTFS. ReFS maintains high degree of compatibility with NTFS while providing enhanced data verification and auto-correction techniques as well as an integrated end-to-end resiliency to corruptions especially when used in conjunction with the storage spaces feature. For more information on ReFS, see <a href="https://docs.microsoft.com/windows-server/storage/refs/refs-overview">Resilient File System Overview</a>.</p></td>
 <td><p>Supported for volumes containing Exchange database files, log files and content indexing files. If deploying on Windows Server 2012, ensure the following hotfixes are installed on Windows Server 2012:</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717874">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717877">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717879">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2822241">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2884597">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2894875">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
 </ul>
 <p>ReFS is not supported for OS volumes.</p>
 <p>Best practice: Data integrity features must be disabled for the Exchange database (.edb) files or the volume that hosts these files.</p></td>
 <td><p>Supported for volumes containing Exchange database files, log files and content indexing files. If deploying on Windows Server 2012, ensure the following hotfixes are installed on Windows Server 2012:</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717874">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717877">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=717879">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2822241">Windows 8 and Windows Server 2012 update rollup: April 2013</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2884597">Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012</a></p></li>
+<li><p><a href="https://support.microsoft.com/help/2894875">Windows 8-based or Windows Server 2012-based computer freezes when you run the 'dir' command on an ReFS volume</a></p></li>
 </ul>
 <p>ReFS is not supported for OS volumes.</p>
 <p>Best practice: Data integrity features must be disabled for the Exchange database (.edb) files or the volume that hosts these files.</p></td>
@@ -746,7 +728,3 @@ The following table provides guidance on volume configurations.
 </tr>
 </tbody>
 </table>
-
-
-Return to top
-

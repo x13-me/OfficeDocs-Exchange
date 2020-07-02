@@ -1,19 +1,21 @@
-﻿---
+---
 title: 'Checklist: Upgrade from Exchange 2010: Exchange 2013 Help'
 TOCTitle: 'Checklist: Upgrade from Exchange 2010'
 ms:assetid: 06c1045a-5fcf-4e24-a901-1a979302fb8d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee332309(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee332309(v=EXCHG.150)
 ms:contentKeyID: 50873999
-ms.date: 05/13/2016
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Checklist: Upgrade from Exchange 2010
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Use this checklist to upgrade from Microsoft Exchange 2010 to Exchange 2013. Before you start working with this checklist, make sure you're familiar with the concepts discussed in:
 
@@ -23,14 +25,10 @@ Use this checklist to upgrade from Microsoft Exchange 2010 to Exchange 2013. Bef
 
 This checklist is generic in that it provides guidance for a typical upgrade scenario.
 
-
 > [!NOTE]
 > The Exchange Server Deployment Assistant provides you with customized step-by-step guidance about how to deploy Exchange Server. The Deployment Assistant can help you deploy a new installation of Exchange Server 2013, upgrade a previous version to Exchange 2013, or configure a hybrid deployment of Exchange 2013 and Exchange Online. To learn more, see <A href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server Deployment Assistant</A>.
 
-
-
 ## Checklist for upgrading from Exchange 2010 to Exchange 2013
-
 
 <table>
 <colgroup>
@@ -67,7 +65,6 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 > [!NOTE]
 > This step is optional. It's only necessary if your organization is running a disjoint namespace.
 
-
 </td>
 <td><p><a href="configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md">Configure the DNS suffix search list for a disjoint namespace</a></p></td>
 </tr>
@@ -95,7 +92,6 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 > [!NOTE]
 > This step is necessary if you want to use Exchange Web Services, Outlook Anywhere, or the offline address book. It also may be required if you need to change any of the default settings for Exchange Control Panel, Microsoft Office&nbsp;Outlook Web App, or Exchange ActiveSync.<BR>
 
-
 </td>
 <td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 Client Access server configuration</a></p></td>
 </tr>
@@ -117,7 +113,6 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 > [!NOTE]
 > This step is optional. It's only necessary if you want to use Unified Messaging in your organization.
 
-
 </td>
 <td><p><a href="upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md">Upgrade Exchange 2010 UM to Exchange 2013 UM</a></p>
 <p></p></td>
@@ -128,7 +123,6 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 
 > [!NOTE]
 > This step is optional. It's only necessary if your organization is uses an Edge Transport server.
-
 
 </td>
 <td><p><a href="configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md">Configure Internet mail flow through a subscribed Edge Transport server</a></p></td>
@@ -146,7 +140,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p> </p></td>
 <td><p>15. Configure DNS records</p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/dn307232(v=exchg.150)">Configure DNS records for Exchange 2010 multiple-server install</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn307232(v=exchg.150)">Configure DNS records for Exchange 2010 multiple-server install</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -157,7 +151,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <td><p> </p></td>
 <td><p>17. Move public folder data from Exchange 2013 to Exchange 2013</p></td>
 <td><p><a href="public-folders-exchange-2013-help.md">Public folders</a></p>
-<p><a href="https://technet.microsoft.com/en-us/library/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
+<p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -166,4 +160,3 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 </tr>
 </tbody>
 </table>
-

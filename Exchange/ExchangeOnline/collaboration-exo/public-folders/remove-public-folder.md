@@ -1,15 +1,21 @@
 ---
-title: "Remove a public folder"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
-description: "You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Remove a public folder
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Remove a public folder
@@ -20,7 +26,7 @@ You may need to remove public folders that are no longer being used in your orga
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can't delete a mail-enabled public folder. Before you can delete it, you must first disable email for the public folder. For more information, see [Mail-enable or mail-disable a public folder](enable-or-disable-mail-for-public-folder.md).
 
@@ -45,22 +51,20 @@ You may need to remove public folders that are no longer being used in your orga
 
 This example deletes the public folder Help Desk\Resolved. This command assumes that the Resolved public folder doesn't have any subfolders.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Help Desk\Resolved"
 ```
 
 This example tests the previous command without making any modifications.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\HelpDesk\Resolved" -WhatIf
 ```
 
 This example removes the public folder Marketing and all its subfolders because the command runs recursively.
 
-```
+```PowerShell
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx).
-
-
+For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder).

@@ -1,34 +1,35 @@
-﻿---
+---
 title: 'Checklist: Deploy Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: 'Checklist: Deploy Exchange 2013 UM'
 ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673520(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673520(v=EXCHG.150)
 ms:contentKeyID: 49315398
-ms.date: 05/13/2016
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Checklist: Deploy Exchange 2013 UM
 
- 
-
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 Use this checklist to help you install and deploy Unified Messaging (UM) in your organization.
 
 Before you start working with this checklist, make sure you're familiar with the concepts in:
 
-  - [Unified Messaging](unified-messaging-exchange-2013-help.md)
+- [Unified Messaging](unified-messaging-exchange-2013-help.md)
 
-  - [New voice mail features](new-voice-mail-features-exchange-2013-help.md)
+- [New voice mail features](new-voice-mail-features-exchange-2013-help.md)
 
-  - [Planning for Unified Messaging](planning-for-unified-messaging-exchange-2013-help.md)
+- [Planning for Unified Messaging](planning-for-unified-messaging-exchange-2013-help.md)
 
 For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see [Checklist: Integrate Exchange 2013 UM with Lync Server](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md).
 
 ## Checklist for deploying Unified Messaging
-
 
 <table>
 <colgroup>
@@ -66,7 +67,6 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 > [!WARNING]
 > You must deploy at least one Exchange 2013 Mailbox server in your organization before you configure the VoIP gateways or IP PBXs to send UM SIP and RTP traffic to the Exchange 2013 Client Access servers.
 
-
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">Install Exchange 2013 using the Setup wizard</a></p></td>
 </tr>
@@ -83,12 +83,12 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>Create the number of dial plans required for your organization.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Create a UM dial plan</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Create a UM dial plan</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Configure the dial plan security setting.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">Configure the VoIP security setting</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">Configure the VoIP security setting</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -104,24 +104,24 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 <tr class="odd">
 <td><p></p></td>
 <td><p>Configure Outlook Voice Access numbers and other settings.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Manage a UM dial plan</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Manage a UM dial plan</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Configure outbound dialing for Unified Messaging.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">Authorize calls using dialing rules</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">Authorize calls for users in a dial plan</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">Authorize calls for a group of users</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">Authorize calls using dialing rules</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">Authorize calls for users in a dial plan</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">Authorize calls for a group of users</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>Create the required number of auto attendants.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Create a UM auto attendant</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Create a UM auto attendant</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Set up and configure each of the UM auto attendants.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">Set up a UM auto attendant</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">Set up a UM auto attendant</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>
@@ -139,13 +139,13 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>Create a UM mailbox policy or configure the default UM mailbox policy.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Create a UM mailbox policy</a></p>
-<p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Manage a UM mailbox policy</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Create a UM mailbox policy</a></p>
+<p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Manage a UM mailbox policy</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>Enable users for Unified Messaging with an extension number and an E.164 number, if required.</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">Enable a user for voice mail</a></p></td>
+<td><p><a href="https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">Enable a user for voice mail</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -159,7 +159,3 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 </tr>
 </tbody>
 </table>
-
-
-Return to top
-

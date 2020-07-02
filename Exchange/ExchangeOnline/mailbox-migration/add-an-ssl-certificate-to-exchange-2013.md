@@ -1,35 +1,41 @@
 ---
-title: "Add an SSL certificate to Exchange 2013"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
+ms.reviewer: 
+description: Add an SSL certificate to your Exchange server 2013.
+title: Add an SSL certificate to Exchange 2013
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - GPA150
 - BCS160
-ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
-description: "Add an SSL certificate to your Exchange server 2013."
+audience: Admin
+f1.keywords:
+- CSH
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Add an SSL certificate to Exchange 2013
 
-Some services, such as Outlook Anywhere, Cutover migration to Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2013 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
+Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2013 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 
 ## What permissions do you need?
 
-In order to add certificates, you need to be assigned the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=614988) role group on the Exchange Server 2013.
+In order to add certificates, you need to be assigned the [Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) role group on the Exchange Server 2013.
 
 ## Tasks for adding an SSL certificate
 
-Adding an SSL certificate to Exchange Server 2013 is a threestep process.
+Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 
 1. Create a certificate request
 
@@ -38,9 +44,8 @@ Adding an SSL certificate to Exchange Server 2013 is a threestep process.
 3. Import the certificate
 
 ## Create a certificate request
-<a name="BK_Request"> </a>
 
- **To create a certificate request**
+**To create a certificate request**:
 
 1. Open the Exchange admin center (EAC) by browsing to the URL of your Client Access server, for example, https://Ex2013CAS/ECP.
 
@@ -54,13 +59,13 @@ Adding an SSL certificate to Exchange Server 2013 is a threestep process.
 
 6. If you want to request a wildcard certificate, select **Request a wild-card certificate**, and then specify the root domain of all subdomains in the **Root domain** field. If you don't want to request a wildcard certificate and instead want to specify each domain that you want to add to the certificate, leave this page blank. Choose **Next**.
 
-7. Choose **Browse**, and specify an Exchange server to store the certificate on. The server you select should be the Internet-facing Client Access server. Choose **Next**.
+7. Choose **Browse**, and specify an Exchange server to store the certificate on. The server you select should be the internet-facing Client Access server. Choose **Next**.
 
 8. For each service in the list shown, verify that the external or internal server names that users will use to connect to the Exchange server are correct. For example:
 
-  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the Internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the Internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
+   - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
 
-  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the Internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
+   - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
 
     These domains will be used to create the SSL certificate request. Choose **Next**.
 
@@ -73,16 +78,14 @@ Adding an SSL certificate to Exchange Server 2013 is a threestep process.
 12. Specify the network location where you want this certificate request to be saved. Choose **Finish**.
 
 ## Submit the request to certificate authority
-<a name="BK_Submit"> </a>
 
 After you've saved the certificate request, submit the request to your certificate authority (CA). This can be an internal CA or a third-party CA, depending on your organization. Clients that connect to the Client Access server must trust the CA that you use. You can search the CA website for the specific steps for submitting your request.
 
 ## Import the certificate
-<a name="BK_Import"> </a>
 
 After you receive the certificate from the CA, complete the following steps.
 
- **To import the certificate request**
+**To import the certificate request**:
 
 1. On the **Server** \> **Certificates** page in the EAC, select the certificate request you created in the previous steps.
 
@@ -97,5 +100,3 @@ After you receive the certificate from the CA, complete the following steps.
 6. Select the services you want to assign to this certificate. At a minimum, you should select SMTP and IIS. Choose **Save**.
 
 7. If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes**.
-
-

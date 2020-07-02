@@ -1,15 +1,21 @@
 ---
-title: "Procedures for Client Access Rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
-description: "Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online."
+ms.reviewer: 
+title: Procedures for Client Access Rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Procedures for Client Access Rules in Exchange Online
@@ -25,7 +31,7 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 - Estimated time to complete each procedure: less than 5 minutes.
 
-- The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 
@@ -38,41 +44,41 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 To return a summary list of all Client Access Rules, run this command:
 
-```
+```PowerShell
 Get-ClientAccessRule
 ```
 
 To return detailed information about a specific rule, use this syntax:
 
-```
+```PowerShell
 Get-ClientAccessRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
 ```
 
 This example returns all the property values for the rule named "Block Client Connections from 192.168.1.0/24".
 
-```
+```PowerShell
 Get-ClientAccessRule -Identity "Block Client Connections from 192.168.1.0/24" | Format-List
 ```
 
 This example returns only the specified properties for the same rule.
 
-```
+```PowerShell
 Get-ClientAccessRule -Identity "Block Client Connections from 192.168.1.0/24" | Format-List Name,Priority,Enabled,Scope,Action
 ```
 
-For detailed syntax and parameter information, see [Get-ClientAccessRule](https://technet.microsoft.com/library/4787d6dc-d38b-427a-83f8-7c57d604dff0.aspx).
+For detailed syntax and parameter information, see [Get-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/get-clutter).
 
 ## Use Exchange Online PowerShell to create Client Access Rules
 
 To create Client Access Rules in Exchange Online PowerShell, use this syntax:
 
-```
+```PowerShell
 New-ClientAccessRule -Name "<RuleName>" [-Priority <PriorityValue>] [-Enabled <$true | $false>] -Action <AllowAccess | DenyAccess> [<Conditions>] [<Exceptions>]
 ```
 
 This example creates a new Client Access Rule named Block ActiveSync that blocks access for Exchange ActiveSync clients, except for clients in the IP address range 192.168.10.1/24.
 
-```
+```PowerShell
 New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols ExchangeActiveSync -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24
 ```
 
@@ -86,11 +92,11 @@ New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols
 
 This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
 
-```
+```PowerShell
 New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
-For detailed syntax and parameter information, see [New-ClientAccessRule](https://technet.microsoft.com/library/f397cd16-dcd7-4929-8c9f-35415ca6b009.aspx).
+For detailed syntax and parameter information, see [New-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/new-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -98,13 +104,13 @@ To verify that you've successfully created a Client Access Rule, use any of thes
 
 - Run this command in Exchange Online PowerShell to see the new rule in the list of rules:
 
-  ```
+  ```PowerShell
   Get-ClientAccessRule
   ```
 
 - Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule:
 
-  ```
+  ```PowerShell
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
@@ -116,13 +122,13 @@ No additional settings are available when you modify a Client Access Rule. They'
 
 To modify a Client Access Rule in Exchange Online PowerShell, use this syntax:
 
-```
+```PowerShell
 Set-ClientAccessRule -Identity "<RuleName>" [-Name "<NewName>"] [-Priority <PriorityValue>] [-Enabled <$true | $false>] -Action <AllowAccess | DenyAccess> [<Conditions>] [<Exceptions>]
 ```
 
 This example disables the existing Client Access Rule named Allow IMAP4.
 
-```
+```PowerShell
 Set-ClientAccessRule -Identity "Allow IMAP4" -Enabled $false
 ```
 
@@ -134,11 +140,11 @@ An important consideration when you modify Client Access Rules is modifying cond
 
 This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow IMAP4 without affecting the existing IP address values.
 
-```
+```PowerShell
 Set-ClientAccessRule -Identity "Allow IMAP4" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
-For detailed syntax and parameter information, see [Set-ClientAccessRule](https://technet.microsoft.com/library/a4ba8627-b774-460f-9793-3d741c115b2e.aspx).
+For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/set-clutter).
 
 ### How do you know this worked?
 
@@ -146,7 +152,7 @@ To verify that you've successfully modified a Client Access Rule, use any of the
 
 - Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule:
 
-  ```
+  ```PowerShell
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
@@ -160,13 +166,13 @@ The highest priority you can set on a rule is 1. The lowest value you can set de
 
 To set the priority of a Client Access Rule in Exchange Online PowerShell, use this syntax:
 
-```
+```PowerShell
 Set-ClientAccessRule -Identity "<RuleName>" -Priority <Number>
 ```
 
 This example sets the priority of the rule named Disable IMAP4 to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
-```
+```PowerShell
 Set-ClientAccessRule -Identity "Disable IMAP" -Priority 2
 ```
 
@@ -178,13 +184,13 @@ To verify that you've successfully set the priority of a Client Access Rule, use
 
 - Run the this command in Exchange Online PowerShell to see the list of rules and their **Priority** values:
 
-  ```
+  ```PowerShell
   Get-ClientAccessRule
   ```
 
 - Replace _\<RuleName\>_ with the name of the rule, and run this command:
 
-  ```
+  ```PowerShell
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List Name,Priority
   ```
 
@@ -192,25 +198,25 @@ To verify that you've successfully set the priority of a Client Access Rule, use
 
 To remove Client Access Rules in Exchange Online PowerShell, use this syntax:
 
-```
+```PowerShell
 Remove-ClientAccessRule -Identity "<RuleName>"
 ```
 
 This example removes the Client Access Rule named Block POP3.
 
-```
+```PowerShell
 Remove-ClientAccessRule -Identity "Block POP3"
 ```
 
  **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet.
 
-For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://technet.microsoft.com/library/2ef2eabd-08bf-4f0d-879c-4e9a4c707903.aspx).
+For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/remove-clientaccessrule).
 
 ### How do you know this worked?
 
 To verify that you've successfully removed a Client Access Rule, run this command in Exchange Online PowerShell to verify that the rule is no longer listed:
 
-```
+```PowerShell
 Get-ClientAccessRule
 ```
 
@@ -218,7 +224,7 @@ Get-ClientAccessRule
 
 To see which Client Access Rules would affect a specific client connection to Exchange Online, use this syntax:
 
-```
+```PowerShell
 Test-ClientAccessRule -User <MailboxIdentity> -AuthenticationType <AuthenticationType> -Protocol <Protocol> -RemoteAddress <ClientIPAddress> -RemotePort <TCPPortNumber>
 ```
 
@@ -234,8 +240,8 @@ This example returns the Client Access Rules that would match a client connectio
 
 - **User**: julia@contoso.com
 
-```
+```PowerShell
 Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentication -Protocol OutlookWebApp -RemoteAddress 172.17.17.26 -RemotePort 443
 ```
 
-For detailed syntax and parameter information, see [Test-ClientAccessRule](https://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).
+For detailed syntax and parameter information, see [Test-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/test-clientaccessrule).

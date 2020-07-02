@@ -1,40 +1,38 @@
-﻿---
+---
 title: 'Exchange Management Shell quick reference for Exchange 2013'
 TOCTitle: Exchange Management Shell quick reference for Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619302(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ619302(v=EXCHG.150)
 ms:contentKeyID: 49352789
-ms.date: 03/23/2018
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Exchange Management Shell quick reference for Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
-
 This topic describes the most frequently used cmdlets available in the release to manufacturing (RTM) and later versions of Microsoft Exchange Server 2013 and provides examples of their use.
-
 
 > [!NOTE]
 > More content will be added about other areas of Exchange 2013 soon.
 
-
-
 For more information about the Exchange Management Shell in Exchange 2013 and all the available cmdlets, see the following topics:
 
-  - [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/en-us/library/bb123778\(v=exchg.150\))
+- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)
 
-  - [Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\))
+- [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
 ## What would you like to learn about?
 
 ## Common cmdlet actions
 
 The following verbs are supported by most cmdlets and are associated with a specific action.
-
 
 <table>
 <colgroup>
@@ -71,11 +69,9 @@ The following verbs are supported by most cmdlets and are associated with a spec
 </tbody>
 </table>
 
-
 ## Important parameters
 
 The following parameters help you control how your commands run and indicate exactly what a command will do before it affects data.
-
 
 <table>
 <colgroup>
@@ -103,11 +99,9 @@ The following parameters help you control how your commands run and indicate exa
 </tbody>
 </table>
 
-
 ## Tips and tricks
 
 The following commands are associated with various tasks that you can use when administering Exchange 2013.
-
 
 <table>
 <colgroup>
@@ -142,9 +136,7 @@ The following commands are associated with various tasks that you can use when a
 </tbody>
 </table>
 
-
 ## Permissions
-
 
 <table>
 <colgroup>
@@ -173,14 +165,14 @@ The following commands are associated with various tasks that you can use when a
 <td><p>This command retrieves a list of all users who can modify the mailbox of <em>kima</em>.</p></td>
 </tr>
 <tr class="even">
-<td><p>New-ManagementScope &quot;<em>Seattle Users</em>&quot; -RecipientRestrictionFilter { <em>City</em> -Eq &quot;<em>Seattle</em>&quot; }</p>
+<td><p>New-ManagementScope &quot;<em>Seattle Users</em>&quot; -RecipientRestrictionFilter "<em>City</em> -Eq '<em>Seattle</em>'"</p>
 <p>New-RoleGroup &quot;<em>Seattle Admins</em>&quot; -Roles &quot;<em>Mail Recipients</em>&quot;, &quot;<em>Mail Recipient Creation</em>&quot;, &quot;<em>Mailbox Import Export</em>&quot;, -CustomRecipientWriteScope &quot;<em>Seattle Users</em>&quot;</p></td>
 <td><p>This command creates a new management scope and management role group to enable members of the role group to manage recipients in Seattle.</p>
 <p>First, the <em>Seattle Users</em> management scope is created, which matches only recipients who have <em>Seattle</em> in the <em>City</em> attribute on their user object.</p>
 <p>Then, a new role group called <em>Seattle Admins</em> is created and the <em>Mail Recipients</em>, <em>Mail Recipient Creation</em>, and <em>Mailbox Import Export</em> roles are assigned. The role group is scoped so that its members can manage only users who match the <em>Seattle Users</em> recipient filter scope.</p></td>
 </tr>
 <tr class="odd">
-<td><p>New-ManagementScope &quot;<em>Vancouver Servers</em>&quot; -ServerRestrictionFilter { <em>ServerSite</em> -Eq &quot;<em>Vancouver</em>&quot; }</p>
+<td><p>New-ManagementScope &quot;<em>Vancouver Servers</em>&quot; -ServerRestrictionFilter "<em>ServerSite</em> -Eq '<em>Vancouver</em>'"</p>
 <p>$RoleGroup = Get-RoleGroup &quot;<em>Server Management</em>&quot;</p>
 <p>New-RoleGroup &quot;<em>Vancouver Server Management</em>&quot; -Roles $RoleGroup.Roles -CustomConfigWriteScope &quot;<em>Vancouver Servers</em>&quot;</p></td>
 <td><p>This command creates a new management scope and copies an existing role group to enable members of the new role group to manage only servers in the Vancouver Active Directory site.</p>
@@ -198,9 +190,7 @@ The following commands are associated with various tasks that you can use when a
 </tbody>
 </table>
 
-
 ## Remote Shell
-
 
 <table>
 <colgroup>
@@ -229,10 +219,9 @@ The following commands are associated with various tasks that you can use when a
 <p>The FileData parameter accepts data from a file on your local computer using this syntax on most cmdlets.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach { $_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
+<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach {$_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
 <td><p>This command shows an example of the syntax, shown in italics, required to export a file from a remote Exchange 2013 server. The syntax encapsulates the data stored in the FileData property on the object returned by the cmdlet and then streams the data to your local computer. The data is then stored in the <em>C:\tonysmith.wma</em> file.</p>
 <p>Most cmdlets that output objects with a FileData property use this syntax to export data to a file on your local computer.</p></td>
 </tr>
 </tbody>
 </table>
-

@@ -1,15 +1,21 @@
 ---
-title: "Mail flow rule procedures in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn about scenarios for mail flow rules in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ca8b52ef-0af7-4d3d-96df-13df297585e0
-description: "Admins can learn about scenarios for mail flow rules in Exchange Online."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Mail flow rule procedures in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mail flow rule procedures in Exchange Online
@@ -18,7 +24,7 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md) Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using mail flow rules.
 
-[Create organization-wide safe sender or blocked sender lists in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365) Information to help you create domain or user-based safe sender and blocked sender lists by using mail flow rules.
+[Create blocked sender lists in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365) Information to help you create domain or user-based blocked sender lists by using mail flow rules.
 
 [Manage message approval](manage-message-approval.md) Information to help you create moderated distribution groups, and forward messages matching a wide variety of criteria to specific approvers.
 
@@ -28,9 +34,9 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 Topics related to preventing spam:
 
-[Create a transport rule that sets the Spam Confidence Level (SCL) of a message](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
+[Use mail flow rules to set the spam confidence level (SCL) in messages](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
 
-[Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+[Use mail flow rules to inspect message attachments](inspect-message-attachments.md)
 
 [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
 https://docs.microsoft.com/office365/SecurityCompliance/use-transport-rules-to-configure-bulk-email-filtering)
@@ -43,4 +49,4 @@ https://docs.microsoft.com/office365/SecurityCompliance/use-transport-rules-to-c
 
 [Best practices for configuring mail flow rules](configuration-best-practices.md) Information to help you avoid common configuration errors.
 
-[Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md) Information on how to view summary and detail reports about mail flow rule matches.
+[Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md) Information on how to view summary and detail reports about mail flow rule matches.

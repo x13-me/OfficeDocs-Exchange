@@ -1,18 +1,22 @@
 ---
-title: "Voice mail-enabled user procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Enable a user for voice mail
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
-description: "Enable a user for voice mail"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Voice mail-enabled user procedures in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Voice mail-enabled user procedures
+# Voice mail-enabled user procedures in Exchange Online
 
 [Enable a user for voice mail](enable-a-user-for-voice-mail.md)
 
@@ -53,5 +57,3 @@ description: "Enable a user for voice mail"
 [Add an E.164 number](add-e-164-number.md)
 
 [Remove an E.164 number](remove-e-164-number.md)
-
-

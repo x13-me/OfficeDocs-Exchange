@@ -1,18 +1,22 @@
 ---
-title: "UM auto attendant procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set up a UM auto attendant
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
-description: "Set up a UM auto attendant"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: UM auto attendant procedures in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# UM auto attendant procedures
+# UM auto attendant procedures in Exchange Online
 
 [Set up a UM auto attendant](set-up-um-auto-attendant.md)
 
@@ -67,5 +71,3 @@ description: "Set up a UM auto attendant"
 [Configure the group of users that can be contacted](configure-users-that-can-be-contacted.md)
 
 [Configure an auto attendant for users who have similar names](configure-auto-attendant-for-users-with-similar-names.md)
-
-

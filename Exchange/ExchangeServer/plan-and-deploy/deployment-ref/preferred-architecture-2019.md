@@ -1,21 +1,25 @@
 ---
-title: "Exchange 2019 preferred architecture"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: 
-description: "Summary: Learn about the preferred architecure (PA) for Exchange Server 2019"
-monikerRange: "exchserver-2019"
+description: 'Summary: Learn about the preferred architecure (PA) for Exchange Server 2019'
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid:
+monikerRange: exchserver-2019
+title: Exchange 2019 preferred architecture
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.reviewer:
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange 2019 preferred architecture
 
-With each new release of Exchange Server for our on-premises customers we update our Preferred Architecture and discuss what changes we would like our customers to be aware of. Exchange Server 2013 brought us [the first of the Preferred Architectures](https://blogs.technet.microsoft.com/exchange/2014/04/21/the-preferred-architecture/) in modern Exchange history and was then followed [with a refresh](https://blogs.technet.microsoft.com/exchange/2015/10/12/the-exchange-2016-preferred-architecture/) for Exchange Server 2016 by providing refinements for the changes that came with the 2016 release. With this update for Exchange Server 2019 we will iterate on the previous PA to take advantage of new technologies and improvements.
+With each new release of Exchange Server for our on-premises customers we update our Preferred Architecture and discuss what changes we would like our customers to be aware of. Exchange Server 2013 brought us [the first of the Preferred Architectures](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/The-Preferred-Architecture/ba-p/586755) in modern Exchange history and was then followed [with a refresh](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/The-Exchange-2016-Preferred-Architecture/ba-p/604024) for Exchange Server 2016 by providing refinements for the changes that came with the 2016 release. With this update for Exchange Server 2019 we will iterate on the previous PA to take advantage of new technologies and improvements.
 
 ## The preferred architecture
 
@@ -35,7 +39,7 @@ The PA is designed with several business requirements in mind, such as the requi
 
 - Increase availability by optimizing around failure domains and reducing complexity
 
-The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Office 365 where you no longer must deploy or manage a large number of servers.
+The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Microsoft 365 or Office 365 where you no longer must deploy or manage a large number of servers.
 
 The PA removes complexity and redundancy where necessary to drive the architecture to a predictable recovery model: when a failure occurs, another copy of the affected database is activated.
 
@@ -43,7 +47,7 @@ The PA covers the following four areas of focus:
 
 1. [Namespace design](#namespace-design)
 
-2. [Site resilient datacenter pair design](#site-resilient-datacenter-pair-design) 
+2. [Site resilient datacenter pair design](#site-resilient-datacenter-pair-design)
 
 3. [Server design](#server-design)
 
@@ -55,7 +59,7 @@ The most noteworthy changes in the Exchange Server 2019 PA focus on the area of 
 
 ## Namespace design
 
-In the [Namespace Planning](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx) and [Load Balancing Principles](http://blogs.technet.com/b/exchange/archive/2015/10/08/load-balancing-in-exchange-2016.aspx) articles for Exchange Server 2016, Ross Smith IV outlined the various configuration choices that were available with Exchange 2016 and these concepts continue to apply for Exchange Server 2019. For the namespace, the choices are to either deploy a [bound namespace](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx#bound) (having a preference for the users to operate out of a specific datacenter) or an [unbound namespace](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx#unbound) (having the users connect to any datacenter without preference).
+In the [Namespace Planning](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Namespace-Planning-in-Exchange-2016/ba-p/604072) and [Load Balancing Principles](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Load-Balancing-in-Exchange-2016/ba-p/604048) articles for Exchange Server 2016, Ross Smith IV outlined the various configuration choices that were available with Exchange 2016 and these concepts continue to apply for Exchange Server 2019. For the namespace, the choices are to either deploy a [bound namespace](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Namespace-Planning-in-Exchange-2016/ba-p/604072#bound) (having a preference for the users to operate out of a specific datacenter) or an [unbound namespace](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Namespace-Planning-in-Exchange-2016/ba-p/604072#unbound) (having the users connect to any datacenter without preference).
 
 The recommended approach is to utilize the unbounded model, deploying a single Exchange namespace per client protocol for the site resilient datacenter pair (where each datacenter is assumed to represent its own Active Directory site - see more details on that below). For example:
 
@@ -85,7 +89,7 @@ While we support stretching an Active Directory site across multiple datacenters
 
 1. Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
 
-2. Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
+2. Active Directory has [published guidance](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/designing-the-site-topology) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
 
 ## Server design
 
@@ -95,7 +99,7 @@ In the PA, all servers are physical servers and use locally attached storage. Ph
 
 2. Virtualization comes with a slight performance penalty as well as adding an additional layer of management and complexity, which introduces additional recovery modes that do not add value, particularly since Exchange Server natively provides the same functionality.
 
-### Commodity servers 
+### Commodity servers
 
 Commodity server platforms are used in the PA. Current commodity platforms are and include:
 
@@ -165,11 +169,11 @@ In the example above, we have 120 TB of Exchange database storage and 7.68 TB of
 
 Whether Traditional or Solid-State, all disks that houses an Exchange data are formatted with [ReFS](https://docs.microsoft.com/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
-[BitLocker](https://technet.microsoft.com/library/dn306081.aspx) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement.  For more information, see [Enabling BitLocker on Exchange Servers](http://blogs.technet.com/b/exchange/archive/2015/10/20/enabling-bitlocker-on-exchange-servers.aspx).
+[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
 
 ## Database availability group design
 
@@ -197,7 +201,7 @@ The placement of the witness server determines whether the architecture can prov
 
 If your organization has a third location with a network infrastructure that is isolated from network failures that affect the site resilient datacenter pair in which the DAG is deployed, then the recommendation is to deploy the DAG's witness server in that third location. This configuration gives the DAG the ability to automatically failover databases to the other datacenter in response to a datacenter-level failure event, regardless of which datacenter has the outage.
 
-If your organization does not have a third location, consider placing the server witness in [Azure](http://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where the majority of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
+If your organization does not have a third location, consider placing the server witness in [Azure](https://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where the majority of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
 
 Exchange Server 2019 and all earlier versions do not support the use of the Cloud Witness feature first introduced in Windows Server 2016 Failover Cluster.
 
@@ -205,7 +209,7 @@ Exchange Server 2019 and all earlier versions do not support the use of the Clou
 
 Data resiliency is achieved by deploying multiple database copies. In the PA, database copies are distributed across the site resilient datacenter pair, thereby ensuring that mailbox data is protected from software, hardware and even datacenter failures.
 
-Each database has four copies, with two copies in each datacenter, which means at a minimum, the PA requires four servers. Out of these four copies, three of them are configured as highly available. The fourth copy (the copy with the highest Activation Preference number) is configured as a lagged database copy. Due to the server design, each copy of a database is isolated from its other copies, thereby reducing failure domains and increasing the overall availability of the solution as discussed in [DAG: Beyond the "A"](http://blogs.technet.com/b/exchange/archive/2011/09/16/dag-beyond-the-a.aspx).
+Each database has four copies, with two copies in each datacenter, which means at a minimum, the PA requires four servers. Out of these four copies, three of them are configured as highly available. The fourth copy (the copy with the highest Activation Preference number) is configured as a lagged database copy. Due to the server design, each copy of a database is isolated from its other copies, thereby reducing failure domains and increasing the overall availability of the solution as discussed in [DAG: Beyond the "A"](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/DAG-Beyond-the-8220-A-8221/ba-p/603150).
 
 The purpose of the lagged database copy is to provide a recovery mechanism for the rare event of system-wide, catastrophic logical corruption. It is not intended for individual mailbox recovery or mailbox item recovery.
 
@@ -223,6 +227,6 @@ At a minimum, you will want to deploy an Office Online Server (OOS) farm with at
 
 ## Summary
 
-Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Office 365.
+Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Microsoft 365 and Office 365.
 
 By aligning with the Preferred Architecture you will take advantage of these changes and provide the best on-premises user experience possible. You will continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.
