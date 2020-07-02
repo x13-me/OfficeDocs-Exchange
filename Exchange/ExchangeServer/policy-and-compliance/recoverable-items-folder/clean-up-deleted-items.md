@@ -110,11 +110,13 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendReceiveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
    ```
 
-6. Disable the Managed Folder Assistant on the Mailbox server by running the following command:
+6. Stop the Microsoft Exchange Mailbox Assistants service and prevent it from starting on the Mailbox server by running the following commands:
 
    ```PowerShell
-   net stop MSExchangeMailboxAssistants
+   Stop-Service MSExchangeMailboxAssistants; Set-Service MSExchangeMailboxAssistants -StartupType Disabled
    ```
+
+   The effect of this command is to stop the Managed Folder Assistant on the Mailbox server.
 
    > [!IMPORTANT]
    > If the mailbox resides on a mailbox database in a database availability group (DAG), you must disable the Managed Folder Assistant on each DAG member that hosts a copy of the database. If the database fails over to another server, this prevents the Managed Folder Assistant on that server from deleting mailbox data.
@@ -174,10 +176,10 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
     Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
     ```
 
-11. Enable the Managed Folder Assistant on the Mailbox server by running the following command:
+11. Configure the Microsoft Exchange Mailbox Assistants service to start automatically and start it on the Mailbox server by running the following command from a Command Prompt:
 
     ```PowerShell
-    net start MSExchangeMailboxAssistants
+    Set-Service MSExchangeMailboxAssistants -StartupType Automatic; Start-Service MSExchangeMailboxAssistants
     ```
 
 12. Enable client access to the mailbox by running the following command:
