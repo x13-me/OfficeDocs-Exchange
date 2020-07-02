@@ -1,15 +1,21 @@
 ---
-title: "Mail flow rules (transport rules) in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about mail flow rules in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 743bd525-0ca2-426d-b76c-b4a052bc8886
-description: "Learn about mail flow rules in Exchange Online."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Mail flow rules (transport rules) in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mail flow rules (transport rules) in Exchange Online
@@ -20,29 +26,27 @@ This article explains the [components](#mail-flow-rule-components) of mail flow 
 
 For steps to create, copy, and manage mail flow rules, see [Manage mail flow rules](manage-mail-flow-rules.md). For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](test-mail-flow-rules.md) and [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md).
 
-For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
+For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
 
 To implement specific messaging policies by using mail flow rules, see these topics:
 
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+- [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
-- [Enable message encryption and decryption in Office 365](enable-encryption-and-decryption.md)
+- [Enable message encryption and decryption](enable-encryption-and-decryption.md)
 
 - [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
 
-- [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
+- [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 - [Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md)
 
 - [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md)
 
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](hhttps://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
-
-- [Create organization-wide safe sender or blocked sender lists in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365)
+- [Use mail flow rules to set the spam confidence level (SCL) in messages](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
 
 - [Common message approval scenarios](common-message-approval-scenarios.md)
 
-- [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email))
 
 ## Mail flow rule components
 
@@ -81,11 +85,11 @@ The following table describes the rule properties that are available in mail flo
 |:-----|:-----|:-----|
 |**Priority**|_Priority_|Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules). <br/><br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority). <br/><br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules. <br/><br/> For more information, see [Set the priority of a mail flow rule](manage-mail-flow-rules.md#set-the-priority-of-a-mail-flow-rule).|
 |**Mode**|_Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <br/><br/> Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md). <br/><br/>  For more information about the modes, see [Test a mail flow rule](test-mail-flow-rules.md).|
-|**Activate this rule on the following date** <br/> **Deactivate this rule on the following date**|_ActivationDate_ <br/> _ExpiryDate_|Specifies the date range when the rule is active.|
-|**On** check box selected or not selected|New rules:_Enabled_ parameter on the **New-TransportRule** cmdlet.  <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets. <br/><br/> The value is displayed in the **State** property of the rule.|You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings.|
+|**Activate this rule on the following date** <br/><br/> **Deactivate this rule on the following date**|_ActivationDate_ <br/> _ExpiryDate_|Specifies the date range when the rule is active.|
+|**On** check box selected or not selected|New rules:_Enabled_ parameter on the **New-TransportRule** cmdlet. <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets. <br/><br/> The value is displayed in the **State** property of the rule.|You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings.|
 |**Defer the message if rule processing doesn't complete**|_RuleErrorAction_|You can specify how the message should be handled if the rule processing can't be completed. By default, the rule will be ignored, but you can choose to resubmit the message for processing.|
 |**Match sender address in message**|_SenderAddressLocation_|If the rule uses conditions or exceptions that examine the sender's email address, you can look for the value in the message header, the message envelope, or both.|
-|**Stop processing more rules**|_SenderAddressLocation_|This is an action for the rule, but it looks like a property in the EAC. You can choose to stop applying additional rules to a message after a rule processes a message.|
+|**Stop processing more rules**|_StopRuleProcessing_|This is an action for the rule, but it looks like a property in the EAC. You can choose to stop applying additional rules to a message after a rule processes a message.|
 |**Comments**|_Comments_|You can enter descriptive comments about the rule.|
 
 ## How mail flow rules are applied to messages
@@ -101,11 +105,10 @@ There are several types of messages that pass through an organization. The follo
 |**Type of message**|**Can a rule be applied?**|
 |:-----|:-----|
 |**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
-|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846).|
+|**Message Encryption**: Messages encrypted by Message Encryption in Microsoft 365 or Office 365. For more information, see [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME encrypted messages**|Rules can only access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> Rules with conditions that require inspection of the message's content, or actions that modify the message's content can't be processed.|
-|**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).|
+|**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help).|
 |**Clear-signed messages**: Messages that have been signed but not encrypted.|Yes|
-|**UM messages**: Messages that are created or processed by the Unified Messaging service, such as voice mail, fax, missed call notifications, and messages created or forwarded by using Microsoft Outlook Voice Access.|Yes|
 |**Anonymous messages**: Messages sent by anonymous senders.|Yes|
 |**Read reports**: Reports that are generated in response to read receipt requests by senders. Read reports have a message class of `IPM.Note*.MdnRead` or `IPM.Note*.MdnNotRead`.|Yes|
 
@@ -115,16 +118,18 @@ There are several types of messages that pass through an organization. The follo
 
 - After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to messages.
 
+- You can create a transport rule to bypass ATP and allow mail to flow without delay from internal senders such as scanners, faxes, and other trusted sources that send attachments that are known to be safe. Do not bypass filtering for all internal messages; in this situation, a compromised account could send malicious content.
+
 ## For more information
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
-[Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
+[Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
-[Organization-wide Disclaimers, Signatures, Footers, or Headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx)
+[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 [Manage message approval](manage-message-approval.md)
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
-[Transport and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

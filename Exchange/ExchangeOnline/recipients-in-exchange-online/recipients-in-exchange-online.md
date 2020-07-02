@@ -1,20 +1,26 @@
 ---
-title: "Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Exchange admin center (EAC) has replaced the Exchange Control Panel and the Exchange Management Console as the tool used to manage cloud-based recipients.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
-description: "In Exchange Online, the Exchange admin center (EAC) has replaced the Exchange Control Panel (ECP) as the GUI-based administrative tool used to manage cloud-based recipients. The EAC also replaces the Exchange Management Console in Exchange Server. For more information, see Exchange admin center."
+f1.keywords:
+- NOCSH
+title: Recipients in Exchange Online
+ms.reviewer: 
+ms.collection:
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+ms.custom: seo-marvel-apr2020
 ---
 
 # Recipients in Exchange Online
 
-In Exchange Online, the Exchange admin center (EAC) has replaced the Exchange Control Panel (ECP) as the GUI-based administrative tool used to manage cloud-based recipients. The EAC also replaces the Exchange Management Console in Exchange Server. For more information, see [Exchange admin center](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+In Exchange Online, the Exchange admin center (EAC) has replaced the Exchange Control Panel (ECP) as the GUI-based administrative tool used to manage cloud-based recipients. The EAC also replaces the Exchange Management Console in Exchange Server. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
 ## Managing recipients in Exchange Online
 
@@ -39,5 +45,3 @@ Although the EAC has a different look and feel than the ECP, managing Exchange O
 - [Manage equipment mailboxes](manage-equipment-mailboxes.md)
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
-
-

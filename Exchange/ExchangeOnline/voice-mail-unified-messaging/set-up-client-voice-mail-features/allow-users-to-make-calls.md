@@ -1,18 +1,22 @@
 ---
-title: "Allow users to make calls"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Outdialing is the process by which users call in to a UM dial plan using an Outlook Voice Access number and place or transfer a call to an internal or external telephone number. Unified Messaging uses many outdialing settings to dial calls for users. To configure outdialing, you must configure dialing rules, dialing rule groups, and dialing authorizations on Unified Messaging (UM) dial plans and then authorize outdialing on UM dial plans, UM mailbox policies, and auto attendants. You can also configure UM dial plans to have dialing or access codes, a national number prefix, and in-country/region or international number formats that enable you to control outdialing in your organization. This topic discusses dialing rules, dialing rule groups, and dialing authorizations and how they are used to authorize and control outdialing for your organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b6e696ce-c848-475b-a598-9035677497e2
-description: "Outdialing is the process by which users call in to a UM dial plan using an Outlook Voice Access number and place or transfer a call to an internal or external telephone number. Unified Messaging uses many outdialing settings to dial calls for users. To configure outdialing, you must configure dialing rules, dialing rule groups, and dialing authorizations on Unified Messaging (UM) dial plans and then authorize outdialing on UM dial plans, UM mailbox policies, and auto attendants. You can also configure UM dial plans to have dialing or access codes, a national number prefix, and in-country/region or international number formats that enable you to control outdialing in your organization. This topic discusses dialing rules, dialing rule groups, and dialing authorizations and how they are used to authorize and control outdialing for your organization."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Allow users to make calls in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Allow users to make calls
+# Allow users to make calls in Exchange Online
 
 Outdialing is the process by which users call in to a UM dial plan using an Outlook Voice Access number and place or transfer a call to an internal or external telephone number. Unified Messaging uses many outdialing settings to dial calls for users. To configure outdialing, you must configure dialing rules, dialing rule groups, and dialing authorizations on Unified Messaging (UM) dial plans and then authorize outdialing on UM dial plans, UM mailbox policies, and auto attendants. You can also configure UM dial plans to have dialing or access codes, a national number prefix, and in-country/region or international number formats that enable you to control outdialing in your organization. This topic discusses dialing rules, dialing rule groups, and dialing authorizations and how they are used to authorize and control outdialing for your organization.
 
@@ -21,7 +25,7 @@ Outdialing is the process by which users call in to a UM dial plan using an Outl
 
 Outdialing happens when:
 
--  A call is placed to an external telephone number.
+- A call is placed to an external telephone number.
 
 - A call is transferred to an auto attendant.
 
@@ -80,9 +84,9 @@ For you to successfully configure outdialing for your organization, you first ne
 |**Component**|**Description**|
 |:-----|:-----|
 |Dial codes, number prefixes, and number formats|UM uses dial codes, number prefixes, and number formats to determine the correct number to dial when placing an outgoing call. You can configure dial codes, number prefixes, and number formats to restrict outgoing calls for users who dial in to a UM auto attendant associated with a UM dial plan or for users who dial in to an Outlook Voice Access number configured on the dial plan.|
-|Dialing rule groups|Dialing rule groups are created to enable telephone numbers to be modified before they're sent to the PBX for outgoing calls. Dialing rule groups remove numbers from or add numbers to telephone numbers being called by UM. For example, you can create a dialing rule group that automatically adds a 9 as a prefix to a 7-digit telephone number to provide access to an outside line. In this example, users who place outgoing calls don't have to dial the 9 before the telephone number to reach someone external to the organization.  <br/> Each dialing rule group contains dialing rules that determine the types of in-country/region and international calls that users within a dialing rule group can make. Dialing rule groups apply to the users who are associated with a UM dial plan or to UM auto attendants and UM mailbox policies associated with the UM dial plan. Each dialing rule group must contain at least one dialing rule.|
-|Dialing rule entries|A dialing rule is used to determine the types of calls that users within a dialing rule group can make. When you create a dialing rule group, you configure one or more dialing rules.  <br/> When you configure each dialing rule, you must enter the dialing rule name, number pattern to transform (number mask), and dialed number. You can also enter a comment. Comments can be used to describe how the dialing rule will be used or to describe a group of users to whom the dialing rule will apply. When you add a number mask and the dialed number to a dialing rule, you can substitute the letter x for a digit in a telephone number, for example, 91425xxxxxxx. You can also use an asterisk (\*) symbol as a wildcard character, for example, 91425\*.|
-|Dialing authorizations|A dialing authorization uses dialing rule groups to apply dialing restrictions for users who are associated with a specific UM mailbox policy, dial plan, or auto attendant. They can also be used when you want to let users place calls to in-country/region or international telephone numbers.  <br/> After you create dialing rules on a UM dial plan, you add the dialing rule group to a UM mailbox policy, dial plan, or auto attendant. After the dialing rule group is added to a UM mailbox policy, all settings or rules defined will apply to UM-enabled users who are linked with the UM mailbox policy.|
+|Dialing rule groups|Dialing rule groups are created to enable telephone numbers to be modified before they're sent to the PBX for outgoing calls. Dialing rule groups remove numbers from or add numbers to telephone numbers being called by UM. For example, you can create a dialing rule group that automatically adds a 9 as a prefix to a 7-digit telephone number to provide access to an outside line. In this example, users who place outgoing calls don't have to dial the 9 before the telephone number to reach someone external to the organization. <br/> Each dialing rule group contains dialing rules that determine the types of in-country/region and international calls that users within a dialing rule group can make. Dialing rule groups apply to the users who are associated with a UM dial plan or to UM auto attendants and UM mailbox policies associated with the UM dial plan. Each dialing rule group must contain at least one dialing rule.|
+|Dialing rule entries|A dialing rule is used to determine the types of calls that users within a dialing rule group can make. When you create a dialing rule group, you configure one or more dialing rules. <br/> When you configure each dialing rule, you must enter the dialing rule name, number pattern to transform (number mask), and dialed number. You can also enter a comment. Comments can be used to describe how the dialing rule will be used or to describe a group of users to whom the dialing rule will apply. When you add a number mask and the dialed number to a dialing rule, you can substitute the letter x for a digit in a telephone number, for example, 91425xxxxxxx. You can also use an asterisk (\*) symbol as a wildcard character, for example, 91425\*.|
+|Dialing authorizations|A dialing authorization uses dialing rule groups to apply dialing restrictions for users who are associated with a specific UM mailbox policy, dial plan, or auto attendant. They can also be used when you want to let users place calls to in-country/region or international telephone numbers. <br/> After you create dialing rules on a UM dial plan, you add the dialing rule group to a UM mailbox policy, dial plan, or auto attendant. After the dialing rule group is added to a UM mailbox policy, all settings or rules defined will apply to UM-enabled users who are linked with the UM mailbox policy.|
 
 ## Configuring outdialing
 <a name="configuring"> </a>
@@ -112,13 +116,13 @@ You can use the EAC or Exchange Online PowerShell to create and configure single
 
 To import a list of dialing rule groups and dialing rules that you've defined in a .csv file, run the **Set-UMDialPlan** cmdlet, as follows.
 
-```
+```PowerShell
 Set-UMDialPlan "MyUMDialPlan" -ConfiguredInCountryOrRegionGroups $(IMPORT-CSV c:\dialrules\InCountryRegion.csv)
 ```
 
 To retrieve a list of the dialing rule groups configured on a UM dial plan, run the **Get-UMDialPlan** cmdlet, as follows.
 
-```
+```PowerShell
 (Get-UMDialPlan -Identity "MyUMDialPlan").ConfiguredInCountryOrRegionGroups | EXPORT-CSV C:\incountryorregion.csv
 ```
 
@@ -153,19 +157,19 @@ You can apply the dialing rule groups that you created on a UM dial plan to the 
 
 - **Same dial plan**: The settings will apply to all users who call in to an Outlook Voice Access number but don't sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to the same dial plan, use Exchange Online PowerShell **Set-UMDialPlan** cmdlet, as follows.
 
-  ```
+  ```PowerShell
   Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
   ```
 
 - **Single or multiple UM mailbox policies**: The settings that are configured on a UM mailbox policy will apply to all users who are linked with that UM mailbox policy. The settings configured on a UM mailbox policy apply to users who call in to an Outlook Voice Access number and sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM mailbox policy, use the **Dialing authorization** page on the UM mailbox policy in the EAC or use the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell, as follows.
 
-    ```
+    ```PowerShell
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
     ```
 
 - **Single or multiple auto attendants associated with the UM dial plan**: This will apply to all users who call in to a UM auto attendant. To apply the in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM auto attendant, use the **Dialing authorization** page on the auto attendant in the EAC or the **Set-UMAutoAttendant** cmdlet in Exchange Online PowerShell, as follows.
 
-    ```
+    ```PowerShell
     Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
     ```
 
@@ -187,12 +191,10 @@ The outdialing process happens when:
 
 - Unified Messaging places a call to an external telephone number for a caller.
 
--  Unified Messaging transfers a call to an auto attendant.
+- Unified Messaging transfers a call to an auto attendant.
 
--  Unified Messaging transfers a call to a user in your organization.
+- Unified Messaging transfers a call to a user in your organization.
 
 - A UM-enabled user uses the Play on Phone feature.
 
 In each outdialing scenario, UM will apply the dialing rules that have been configured, and then place the call for the user. However, depending on the scenario and how the call is initiated by the user, UM may apply only some of the dialing rules to the telephone number being dialed. In other outdialing scenarios, UM may apply all the outdialing rules configured to the telephone number being dialed.
-
-

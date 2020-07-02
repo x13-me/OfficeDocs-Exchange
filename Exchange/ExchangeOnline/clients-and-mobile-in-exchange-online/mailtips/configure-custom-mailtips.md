@@ -1,20 +1,26 @@
 ---
-title: "Configure custom MailTips for recipients"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'MailTips are informative messages displayed to users in the InfoBar in Outlook on the web and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
-description: "MailTips are informative messages displayed to users in the InfoBar in Outlook Web App and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:"
+ms.reviewer: 
+title: Configure custom MailTips for recipients
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Configure custom MailTips for recipients
 
-MailTips are informative messages displayed to users in the InfoBar in Outlook Web App and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:
+MailTips are informative messages displayed to users in the InfoBar in Outlook on the web (formerly known as Outlook Web App) and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:
 
 - Add a recipient
 
@@ -30,7 +36,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 - Estimated time to complete: 10 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can configure the primary MailTip in the Exchange admin center (EAC) or in Exchange Online PowerShell. However, you can only configure additional MailTip translations in Exchange Online PowerShell.
 
@@ -55,15 +61,15 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 2. Select any of the following recipient tabs based on the recipient type:
 
-  - **Mailboxes**
+   - **Mailboxes**
 
-  - **Groups**
+   - **Groups**
 
-  - **Resources**
+   - **Resources**
 
-  - **Contacts**
+   - **Contacts**
 
-  - **Shared**
+   - **Shared**
 
 3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -75,7 +81,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 To configure a MailTip for a recipient, use the following syntax.
 
-```
+```PowerShell
 Set-<RecipientType> <RecipientIdentity> -MailTip "<MailTip text>"
 ```
 
@@ -83,7 +89,7 @@ Set-<RecipientType> <RecipientIdentity> -MailTip "<MailTip text>"
 
 For example, suppose you have a mailbox named "Help Desk" for users to submit support requests, and the promised response time is two hours. To configure a custom MailTip that explains this, run the following command:
 
-```
+```PowerShell
 Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you within 2 hours."
 ```
 
@@ -91,7 +97,7 @@ Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you wi
 
 To configure additional MailTip translations without affecting the existing MailTip text or other existing MailTip translations, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> -MailTipTranslations @{Add="<culture1>:<localized text 1>","<culture2>:<localized text 2>"...; Remove="<culture1>:<localized text 1>","<culture2>:<localized text 2>"...}
 ```
 
@@ -99,7 +105,7 @@ Set-<RecipientType> -MailTipTranslations @{Add="<culture1>:<localized text 1>","
 
 For example, suppose the mailbox named Notifications currently has the MailTip: "This mailbox is not monitored." To add the Spanish translation, run the following command:
 
-```
+```PowerShell
 Set-Mailbox -MailTipTranslations @{Add="ES:Esta caja no se supervisa."}
 ```
 
@@ -107,10 +113,8 @@ Set-Mailbox -MailTipTranslations @{Add="ES:Esta caja no se supervisa."}
 
 To verify that you have successfully configured a MailTip for a recipient, do the following:
 
-1. In Outlook Web App or Outlook 2010 or later, compose an email message addressed to the recipient, but don't send it.
+1. In Outlook on the web or Outlook 2010 or later, compose an email message addressed to the recipient, but don't send it.
 
 2. Verify the MailTip appears in the InfoBar.
 
-3. If you configured additional MailTip translations, compose the message in Outlook Web App where the language setting matches the language of the MailTip translation to verify the results.
-
-
+3. If you configured additional MailTip translations, compose the message in Outlook on the web where the language setting matches the language of the MailTip translation to verify the results.

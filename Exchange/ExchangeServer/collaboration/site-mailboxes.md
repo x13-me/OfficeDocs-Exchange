@@ -1,28 +1,32 @@
 ---
-title: "Site mailboxes"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about site mailboxes and how to use them.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
-description: "Summary: Learn about site mailboxes and how to use them."
+ms.reviewer:
+title: Site mailboxes
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Site mailboxes
 
 Email and documents are traditionally kept in two unique and separate data repositories. Most organizations collaborate using both mediums. The challenge is that both email and documents are accessed using different clients. This usually results in a reduction in user productivity and a degraded user experience.
 
-The *site mailbox*, first introduced in Exchange 2013, is a solution for this problem. Site mailboxes improve collaboration and user productivity by allowing access to both Microsoft SharePoint 2013 documents and Exchange email using the same client interface. A site mailbox is functionally comprised of SharePoint 2013 site membership (owners and members), shared storage through an Exchange 2016 or Exchange 2019 mailbox for email messages and a SharePoint 2013 site for documents, and a management interface that addresses provisioning and lifecycle needs.
+The *site mailbox*, first introduced in Exchange 2013, is a solution for this problem. Site mailboxes improve collaboration and user productivity by allowing access to both Microsoft SharePoint documents and Exchange email using the same client interface. A site mailbox is functionally comprised of SharePoint site membership (owners and members), shared storage through an Exchange 2016 or Exchange 2019 mailbox for email messages and a SharePoint site for documents, and a management interface that addresses provisioning and lifecycle needs.
 
-Site mailboxes require Exchange 2016 or later and SharePoint Server 2013 integration and configuration. For more information about how to configure your Exchange Server organization to work with your SharePoint Server 2013 organization, see the following topics:
+Site mailboxes require Exchange 2016 or later and SharePoint Server 2013 or later integration and configuration. For more information about how to configure your Exchange Server organization to work with your SharePoint organization, see the following topics:
 
-- [Configure site mailboxes in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=258264).
+- [Configure site mailboxes in SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-site-mailboxes-in-sharepoint).
 
-- [Plan Exchange 2016 integration with SharePoint and Skype for Business](../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md)
+- [Plan Exchange Server integration with SharePoint and Skype for Business](../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md)
 
 For more information about collaboration features in Exchange Server, see [Collaboration](collaboration.md).
 
@@ -36,15 +40,15 @@ When one project member files mail or documents using the site mailbox, any proj
 ## Site mailbox provisioning policies
 <a name="policies"> </a>
 
-Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cmdlets in the Exchange Management Shell. The Site mailbox provisioning policies only apply to the email that is sent to and from the site mailbox and the size of the site mailbox on the Exchange server. The document repository settings are configured in SharePoint. Although you can create multiple site mailbox provisioning policies using the **New-SiteMailboxProvisioningPolicy** cmdlet, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization. The provisioning policies allow you to set the following quotas: 
+Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cmdlets in the Exchange Management Shell. The Site mailbox provisioning policies only apply to the email that is sent to and from the site mailbox and the size of the site mailbox on the Exchange server. The document repository settings are configured in SharePoint. Although you can create multiple site mailbox provisioning policies using the **New-SiteMailboxProvisioningPolicy** cmdlet, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization. The provisioning policies allow you to set the following quotas:
 
 |**Quota**|**Description**|**Default setting**|
 |:-----|:-----|:-----|
-|IssueWarningQuota  <br/> |The _IssueWarningQuota_ parameter specifies the site mailbox size that triggers a warning message to the site mailbox  <br/> |4.5 GB  <br/> |
-|MaxReceiveSize  <br/> |The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.  <br/> |36 MB  <br/> |
-|ProhibitSendReceiveQuota  <br/> |The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.  <br/> |5 GB  <br/> |
- 
-For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](http://technet.microsoft.com/library/2f160d1a-a031-461f-8d29-c9cd49ca1645.aspx).
+|IssueWarningQuota|The _IssueWarningQuota_ parameter specifies the site mailbox size that triggers a warning message to the site mailbox|4.5 GB|
+|MaxReceiveSize|The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.|36 MB|
+|ProhibitSendReceiveQuota|The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.|5 GB|
+
+For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](https://docs.microsoft.com/exchange/manage-site-mailbox-provisioning-policies-exchange-2013-help).
 
 ## Lifecycle policy and retention
 <a name="policies"> </a>
@@ -55,7 +59,7 @@ When the lifecycle application in SharePoint closes a site mailbox, the site mai
 
 You can use the following command to search for and remove site mailboxes that have been marked for deletion.
 
-```
+```PowerShell
 Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
 ```
 
@@ -69,8 +73,6 @@ Using the eDiscovery Console in SharePoint, site mailboxes can be part of the In
 ## Backup and restore
 <a name="policies"> </a>
 
-Backup and Restore for the Exchange site mailboxes housed on the mailbox server will use the same backup and restore method that you use for all Exchange mailboxes. For more information, see [Database Availability Groups](http://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
+Backup and Restore for the Exchange site mailboxes housed on the mailbox server will use the same backup and restore method that you use for all Exchange mailboxes. For more information, see [Database availability groups](../high-availability/database-availability-groups/database-availability-groups.md).
 
 For SharePoint documents, you should backup and restore into the same place. If you restore your SharePoint content to same URLs, then the site mailbox will continue to work and no additional configuration is needed. If you restore to a different URL, then you'll need to run **Set-SiteMailbox** cmdlet to update the _SharePointURL_ property. We recommend that you don't restore SharePoint to a new forest.
-
-

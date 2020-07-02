@@ -1,36 +1,41 @@
 ---
-title: "What happened to delivery reports in Office 365?"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: MiniMaven
+description: Delivery reports was a feature in Microsoft 365 and Office 365 that allowed users and administrators to discover and view delivery information about messages.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: What happened to delivery reports?
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
-description: "Delivery reports was a feature in Office 365 that allowed users and administrators to discover and view delivery information about messages."
+audience: Admin
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+- MiniMaven
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# What happened to delivery reports in Office 365?
+# What happened to delivery reports?
 
-Delivery reports was a feature in Office 365 that allowed users and administrators to discover and view delivery information about messages.
+Delivery reports in Microsoft 365 and Office 365 allowed users and administrators to discover and view delivery information about mail messages. Delivery reports for users have been discontinued and there is currently no direct replacement. Delivery reports for administrators have been replaced by the **Message Trace** feature.
 
-In Office 365, delivery reports for administrators has been replaced by message trace. For more information, see these topics:
+For more information, see these topics:
 
-- [Using Message Trace](https://support.office.com/article/bbf5a330-e83f-43d1-9d51-cfd17d576dd8.aspx)
+- [Trace an email message](trace-an-email-message/trace-an-email-message.md)
 
-- [Trace an email message](https://go.microsoft.com/fwlink/p/?linkid=282262)
+- [Message Trace in Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
 
-Currently, there's no direct replacement for delivery reports for users, so the delivery report links in Outlook and Outlook on the web don't go anywhere.
+- [Run a message trace and view the results in the Exchange admin center](trace-an-email-message/run-a-message-trace-and-view-results.md)
 
- **Notes**
-
-- Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://go.microsoft.com/fwlink/p/?linkid=282265).
-
-- Read receipts and delivery notifications aren't related to delivery reports, and are still available in Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.office.com/article/a34bf70a-4c2c-4461-b2a1-12e4a7a92141.aspx).
-
-
+> [!NOTE]
+>
+> - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/track-messages-with-delivery-reports).
+>
+> - Read receipts and delivery notifications are separate from delivery reports and are still available in Microsoft 365 and Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.microsoft.com/office/a34bf70a-4c2c-4461-b2a1-12e4a7a9214).

@@ -1,53 +1,58 @@
-﻿---
+---
 title: 'FAQ: Public folders: Exchange 2013 Help'
 TOCTitle: 'FAQ: Public folders'
 ms:assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552408(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ552408(v=EXCHG.150)
 ms:contentKeyID: 48679371
-ms.date: 03/27/2017
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # FAQ: Public folders
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 This topic provides you with a list of frequently asked questions regarding public folders in Exchange Server 2013. To learn more about public folders, see [Public folders](public-folders-exchange-2013-help.md).
 
-Have questions about public folders that aren’t answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).
+Have questions about public folders that aren't answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).
 
 ## FAQs about public folder migration
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders).
+This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online).
 
 ## What are the supported public folder migration scenarios?
 
 The following list details the available options for migrating public folders to Exchange 2013 or Exchange Online.
 
-  - Exchange 2007 public folders (SP3 RU15 or later) can be migrated to Exchange 2013 or Exchange Online.
+- Exchange 2007 public folders (SP3 RU15 or later) can be migrated to Exchange 2013 or Exchange Online.
 
-  - Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2013 or Exchange Online.
+- Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2013 or Exchange Online.
 
-  - Exchange 2013 public folders (CU15 or later) can be migrated to Exchange Online.
+- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange Online.
 
 Currently only migrations to Exchange 2013 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
 
 ## After migration, what happens to the hierarchy on the source Exchange 2010 servers?
 
-During the finalization stage in migration, a lock is placed on the source server to make it inaccessible to user. This lock remains in place to prevent users from accessing the source public folders after migration completes. Although you can release this lock, we don’t recommend doing so because the changes can’t be synced to Exchange 2013.
+During the finalization stage in migration, a lock is placed on the source server to make it inaccessible to user. This lock remains in place to prevent users from accessing the source public folders after migration completes. Although you can release this lock, we don't recommend doing so because the changes can't be synced to Exchange 2013.
 
 ## When you migrate public folders, what happens to existing public folder rules?
 
-Public folder rules are migrated along with the data and are kept as public folder rules. They aren’t converted to mailbox rules.
+Public folder rules are migrated along with the data and are kept as public folder rules. They aren't converted to mailbox rules.
 
 ## What happens if hierarchy changes are performed on the source after the initial .csv file was generated? How would these reflect on the destination?
 
-The .csv file is used to determine the mapping between the source hierarchy and the destination mailbox. It contains only the top-level folders. Child folders under the top-level folders are automatically migrated. Therefore, if a new child folder is added, it’s migrated during the process. If a new top-level folder is created, it will be created in the mailbox that contains the writable copy of the hierarchy.
+The .csv file is used to determine the mapping between the source hierarchy and the destination mailbox. It contains only the top-level folders. Child folders under the top-level folders are automatically migrated. Therefore, if a new child folder is added, it's migrated during the process. If a new top-level folder is created, it will be created in the mailbox that contains the writable copy of the hierarchy.
 
-## During migration to Exchange 2013 public folders, if there’s a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
+## During migration to Exchange 2013 public folders, if there's a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
+
+> [!NOTE]
+> Support for serial migration of public folders ended in Exchange 2013 Cumulative Update 8 (CU8). This step isn't relevant batch migrations.
 
 You can force a delta sync to occur before finalization (prior to locking the source) by running the following Shell command:
 
@@ -55,7 +60,7 @@ You can force a delta sync to occur before finalization (prior to locking the so
 Resume-PublicFolderMigrationRequest \PublicFolderMigration
 ```
 
-For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/en-us/library/jj218689\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-PublicFolderMigrationRequest).
 
 ## For the migration of a geo-distributed hierarchy, how can I make sure that the public folders are created in the location nearest to the target users?
 
@@ -64,12 +69,12 @@ As part of the migration process, a .csv file is generated (using the `publicfol
 The input .csv file can be generated by running the script `AggregatePFData.ps1`, located in the directory \<*Exchange Installation Directory*\>\\V15\\Scripts. Run the script as follows:
 
 ```powershell
-    .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+.\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
 ```
 
 ## Do existing public folder permissions migrate?
 
-Yes, permissions automatically migrate at the folder level with the data. You don’t have to perform this step separately.
+Yes, permissions automatically migrate at the folder level with the data. You don't have to perform this step separately.
 
 ## Are public folders going away?
 
@@ -77,25 +82,22 @@ No. Public folders are great for Outlook integration, simple sharing scenarios, 
 
 ## Which clients support public folders?
 
-Outlook 2007, Outlook 2010, and Outlook 2013, and Outlook 2011 for Mac users can access public folders. However, users whose mailboxes are on Exchange 2013 servers won’t be able to connect to Exchange 2007 or Exchange 2010 public folders from clients that use Exchange Web Services (EWS), such as Outlook for Mac. We recommend that you migrate legacy public folders to Exchange 2013 in order to maintain access for those users.
+Outlook 2007, Outlook 2010, and Outlook 2013, and Outlook 2011 for Mac users can access public folders. However, users whose mailboxes are on Exchange 2013 servers won't be able to connect to Exchange 2007 or Exchange 2010 public folders from clients that use Exchange Web Services (EWS), such as Outlook for Mac. We recommend that you migrate legacy public folders to Exchange 2013 in order to maintain access for those users.
 
 ## Are there any limitations in the clients?
 
-Outlook Web App is supported, but with some limitations. You can add and remove favorite public folders (if they are Mail, Post, Calendar, and Contact public folders) and perform item level operations, such as creating, editing, deleting posts, and replying to posts. But, you can’t do the following in Outlook Web App:
+Outlook Web App is supported, but with some limitations. You can add and remove favorite public folders (if they are Mail, Post, Calendar, and Contact public folders) and perform item level operations, such as creating, editing, deleting posts, and replying to posts. But, you can't do the following in Outlook Web App:
 
-  - Create or delete public folders
+- Create or delete public folders
 
-  - Drag-and-drop content
+- Drag-and-drop content
 
-  - Access public folders located on servers running previous versions of Exchange
-
+- Access public folders located on servers running previous versions of Exchange
 
 > [!NOTE]
 > You can only create public folder rules that contain the element <STRONG>reply using a specific template</STRONG> in mail-enabled public folders. It is possible that pre-existing rules containing <STRONG>reply using a specific template</STRONG> will continue to work on non-mail-enabled public folders, but on those folders you cannot create new rules with this template element, or edit existing rules with this element.
 
-
-
-In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren’t supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://technet.microsoft.com/en-us/library/jj200788\(v=exchg.150\).aspx) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
+In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-deployment) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
 
 ## How can I store a very large hierarchy in a public folder mailbox?
 
@@ -109,7 +111,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://technet.microsoft.com/en-us/library/aa997571\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -119,7 +121,7 @@ Run the following command to create the first master hierarchy public folder mai
 New-Mailbox -PublicFolder -Name <name of public folder>
 ```
 
-For more detail, see [Create a public folder](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder).
+For more detail, see [Create a public folder](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder).
 
 ## In previous versions of Exchange, for each mailbox database there was an option to specify its public folder database. How will this work in Exchange 2013?
 
@@ -127,11 +129,11 @@ There is no database-level setting in Exchange 2013. Exchange 2013 has a mailbox
 
 ## How are public folder metric tools being used in Exchange 2013?
 
-In Exchange 2013, you can use [Get-PublicFolderStatistics](https://technet.microsoft.com/en-us/library/aa998663\(v=exchg.150\)) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/en-us/library/ee332344\(v=exchg.150\)) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don’t require additional reporting add-ons.
+In Exchange 2013, you can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren’t used in Exchange 2013. You can use [Get-PublicFolderStatistics](https://technet.microsoft.com/en-us/library/aa998663\(v=exchg.150\)) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/en-us/library/ee332344\(v=exchg.150\)) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
+In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2013. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
 ## Does mailbox audit logging work against public folders?
 
@@ -151,21 +153,20 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet with the *DefaultPublicFolderMailbox* parameter.
+In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) cmdlet with the *DefaultPublicFolderMailbox* parameter.
 
 ```powershell
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
 ```
 
-## If the master hierarchy goes down, what’s the user impact?
+## If the master hierarchy goes down, what's the user impact?
 
 If the master hierarchy public folder mailbox goes down, users can view but not write to public folders. To help prevent the hierarchy from going down, we recommend that you include your public folders in a database availability group (DAG). To learn about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
 
 ## Can you change which public folder mailbox is the master hierarchy mailbox?
 
-No. If you try to change the master hierarchy mailbox, you’ll receive an error.
+No. If you try to change the master hierarchy mailbox, you'll receive an error.
 
 ## Do public folders have full text searching capabilities?
 
-Yes, full text search is available for public folders in Exchange 2013. However, you can’t search across multiple public folders.
-
+Yes, full text search is available for public folders in Exchange 2013. However, you can't search across multiple public folders.

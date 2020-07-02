@@ -1,15 +1,21 @@
 ---
-title: "Address book policies in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Online.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
-description: "Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Online."
+ms.reviewer: 
+title: Address book policies in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Address book policies in Exchange Online
@@ -32,7 +38,7 @@ For procedures involving ABPs, see [Address book policy procedures in Exchange O
 
 - ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
 
-- Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx).
+- Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 ## How ABPs Work
 
@@ -76,4 +82,4 @@ Entourage and Outlook for Mac clients that connect to their Exchange Online mail
 
 In hybrid environments where the user account is in your on-premises organization and the mailbox is in Exchange Online, ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to global a catalog server to query Active Directory (which bypasses the ABPs). Outside the corporate network, they can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP.
 
-To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://go.microsoft.com/fwlink/p/?LinkId=231878).
+To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://docs.microsoft.com/previous-versions/office/office-for-mac-2011/jj984221(v=office.14)).

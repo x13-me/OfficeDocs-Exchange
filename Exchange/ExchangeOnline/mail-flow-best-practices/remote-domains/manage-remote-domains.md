@@ -1,15 +1,21 @@
 ---
-title: "Manage remote domains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d3dca7b0-c84c-429a-9698-0e92a95a0985
-description: "Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online."
+ms.reviewer: 
+title: Manage remote domains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage remote domains in Exchange Online
@@ -24,7 +30,7 @@ The following table shows the default values for common settings:
 |Automatic replies|Allow automatic replies or automatically forwarded messages to be sent to people on the remote domain.|
 |Delivery and non-delivery reports|Allow delivery and non-delivery reports to be sent to people on the remote domain.|
 |Meeting forward notifications|Don't allow meeting forward notifications to be sent to people on the remote domain.|
-|Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook Web App when a message is sent to people on the remote domain.|
+|Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook on the web (formerly known as Outlook Web App) when a message is sent to people on the remote domain.|
 |Supported character set|Do not specify a MIME or non-MIME character set if the character set isn't specified in the message sent to the remote domain.|
 
 For information about when to configure remote domains, descriptions of the available settings, and information about how remote domain settings override per-user settings, see [Remote domains in Exchange Online](remote-domains.md).
@@ -35,7 +41,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -45,8 +51,6 @@ For information about when to configure remote domains, descriptions of the avai
 ## Create and configure remote domains
 
 **Notes**:
-
-- You can configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com.
 
 - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
 
@@ -58,29 +62,29 @@ For information about when to configure remote domains, descriptions of the avai
 
 2. To create a new domain:
 
-  1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
 
-  2. In the **Name** box, enter a descriptive name for the domain.
+   2. In the **Name** box, enter a descriptive name for the domain.
 
-  3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
+   3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
 
 3. To change settings for the default domain, select **Default**, and then select **Edit**.
 
 4. Select the options you want:
 
-  - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
+   - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
 
-  - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
+   - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
 
-  - In the **Message reporting** section, specify:
+   - In the **Message reporting** section, specify:
 
-  - Whether you want to allow delivery reports and non-delivery reports.
+   - Whether you want to allow delivery reports and non-delivery reports.
 
-  - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
+   - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
 
-  - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
+   - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
 
-  - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set.
+   - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set.
 
 5. Click **Save**. If you created a new remote domain, it is added to the list.
 
@@ -92,81 +96,81 @@ After you create the remote domain, you can configure the settings (you can't cr
 
 To create a new remote domain, use the following syntax:
 
-```
+```powershell
 New-RemoteDomain -Name "<Unique Name"> -DomainName <single SMTP domain | domain with subdomains>
 ```
 
 This example creates a remote domain for messages sent to the contoso.com domain.
 
-```
+```powershell
 New-RemoteDomain -Name Contoso -DomainName contoso.com
 ```
 
 This example creates a remote domain for messages sent to the contoso.com domain and all its subdomains.
 
-```
+```powershell
 New-RemoteDomain -Name "Contoso and subdomains" -DomainName *.contoso.com
 ```
 
-For detailed syntax and parameter information, see [New-RemoteDomain](https://technet.microsoft.com/library/31442c97-1813-43d9-b9d1-da487e6b00ea.aspx).
+For detailed syntax and parameter information, see [New-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/new-remotedomain).
 
 #### Step 2: Configure the remote domain settings
 
 To configure the settings for a remote domain, use the following syntax:
 
-```
+```powershell
 Set-RemoteDomain -Identity <Name> [-AllowedOOfType <External | InternalLegacy | ExternalLegacy | None>] [-AutoForwardEnabled <$true | $false>] [-AutoReplyEnabled <$true | $false>] [-CharacterSet <SupportedCharacterSet>] [-DeliveryReportEnabled <$true | $false>] [-NonMimeCharacterSet <SupportedCharacterSet>] [-TNEFEnabled <$true | $false>]
 ```
 
 This example disables automatic replies, automatic forwarding, and out-of-office replies to recipients at all remote domains that aren't specified with their own remote domain.
 
-```
-Set-Set-RemoteDomain -Identity  Default -AutoReplyEnabled $false -AutoForwardEnabled $false -AllowedOOFType None
+```powershell
+Set-RemoteDomain -Identity  Default -AutoReplyEnabled $false -AutoForwardEnabled $false -AllowedOOFType None
 ```
 
 This example sends internal out of office replies to users at the remote domain named Contoso.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -AllowedOOFType InternalLegacy
+```powershell
+Set-RemoteDomain -Identity Contoso -AllowedOOFType InternalLegacy
 ```
 
 This example disables prevents delivery reports and non-delivery reports from being sent to users at Contoso.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -DeliveryReportEnabled $false -NDREnabled $false
+```powershell
+Set-RemoteDomain -Identity Contoso -DeliveryReportEnabled $false -NDREnabled $false
 ```
 
 This example sends all messages to Contoso using Transport Neutral Encapsulation Formation (TNEF) encoding, rather than MIME encoding. This preserves Rich Text format in messages.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -TNEFEnabled $true
+```powershell
+Set-RemoteDomain -Identity Contoso -TNEFEnabled $true
 ```
 
 This example sends all messages to Contoso using MIME encoding, which means that all RTF messages are always converted to HTML or plain text.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -TNEFEnabled $false
+```powershell
+Set-RemoteDomain -Identity Contoso -TNEFEnabled $false
 ```
 
-This example uses the message format settings the user has defined in Outlook or Outlook Web App for encoding messages.
+This example uses the message format settings the user has defined in Outlook or Outlook on the web for encoding messages.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -TNEFEnabled $null
+```powershell
+Set-RemoteDomain -Identity Contoso -TNEFEnabled $null
 ```
 
 This example uses the Korean (ISO) character set for MIME messages sent to Contoso.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -CharacterSet iso-2022-kr
+```powershell
+Set-RemoteDomain -Identity Contoso -CharacterSet iso-2022-kr
 ```
 
 This example specifies using the Unicode character set for non-MIME messages sent to Contoso.
 
-```
-Set-Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
+```powershell
+Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
 ```
 
-For detailed syntax and parameter information, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
+For detailed syntax and parameter information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain).
 
 ### How do you know this worked?
 
@@ -176,9 +180,9 @@ To verify that you've successfully created and configured a remote domain, use e
 
 - In Exchange Online PowerShell, replace \<Remote Domain Name\> with the name of the remote domain and run the following command to verify the settings:
 
-    ```
-    Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
-    ```
+  ```powershell
+  Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
+  ```
 
 ## Remove remote domains
 
@@ -202,17 +206,17 @@ To verify that you've successfully created and configured a remote domain, use e
 
 To remove a remote domain, use the following syntax:
 
-```
+```powershell
 Remove-RemoteDomain -Identity <Remote Domain Name>
 ```
 
 This example removes the remote domain named Contoso.
 
-```
+```powershell
 Remove-RemoteDomain -Identity Contoso
 ```
 
-For detailed syntax and parameter information, see [Remove-RemoteDomain](https://technet.microsoft.com/library/7c17847a-310e-45df-8c0c-58b4297e6f8d.aspx).
+For detailed syntax and parameter information, see [Remove-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/remove-remotedomain).
 
 ### How do you know this worked?
 
@@ -222,6 +226,6 @@ To verify that you've successfully removed a remote domain, do either of the fol
 
 - In Exchange Online PowerShell, run the following command and verify that the remote domain isn't listed:
 
-    ```
-    Get-RemoteDomain
-    ```
+  ```powershell
+  Get-RemoteDomain
+  ```

@@ -1,18 +1,22 @@
 ---
-title: "Run reports for voice mail calls"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Unified Messaging (UM) call reports provide information about the calls forwarded to or placed by UM. Use these reports to monitor, troubleshoot, and report on UM for your organization. You can access Unified Messaging call statistic reports by using the Call Statistics tool and access call logs for UM-enabled users by using the User Call Logs tool.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3a292d85-ce0f-4c15-b8f2-d1fc92965437
-description: "Unified Messaging (UM) call reports provide information about the calls forwarded to or placed by UM. Use these reports to monitor, troubleshoot, and report on UM for your organization. You can access Unified Messaging call statistic reports by using the Call Statistics tool and access call logs for UM-enabled users by using the User Call Logs tool."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Run reports for voice mail calls in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Run reports for voice mail calls
+# Run reports for voice mail calls in Exchange Online
 
 Unified Messaging (UM) call reports provide information about the calls forwarded to or placed by UM. Use these reports to monitor, troubleshoot, and report on UM for your organization. You can access Unified Messaging call statistic reports by using the Call Statistics tool and access call logs for UM-enabled users by using the User Call Logs tool.
 
@@ -41,5 +45,3 @@ You can use the following topics to help you gather call statistics and reports 
 - [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md) If a user is experiencing problems with the audio quality of UM calls, use the audio quality details from the user call logs to help you understand what's causing the problems.
 
 - [Interpret voice mail call records](interpret-voice-mail-call-records.md) Export more detailed data to diagnose problems with audio quality or rejected calls, and to provide information for audits or reports about your UM service.
-
-

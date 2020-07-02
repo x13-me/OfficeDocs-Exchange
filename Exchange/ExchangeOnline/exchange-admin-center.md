@@ -1,16 +1,21 @@
 ---
-title: "Exchange admin center in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: You use the Exchange admin center to manage email settings for your organization.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
+ms.reviewer: 
+title: Exchange admin center in Exchange Online
+f1.keywords:
+- NOCSH
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
 
-description: "You use the Exchange admin center to manage email settings for your organization."
 ---
 
 # Exchange admin center in Exchange Online
@@ -19,18 +24,18 @@ You use the Exchange admin center to manage email settings for your organization
 
 ## Get to the Exchange admin center
 
-You must have [Office 365 admin permissions](https://go.microsoft.com/fwlink/p/?LinkID=255444) to access the Exchange admin center.
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Exchange admin center.
 
-1. [Sign in](https://go.microsoft.com/fwlink/p/?LinkID=529144) to Office 365 using your work or school account, and then choose the **Admin** tile.
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
-2. In the Office 365 admin center, choose **Admin centers** \> **Exchange**.
+2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
     ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
 
 You can also get to the Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
 
 > [!NOTE]
-> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or Internet Explorer or a Private Browsing session in Mozilla FireFox, press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.
+> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
 ## Exchange admin center features
 
@@ -46,7 +51,7 @@ Here are the features you'll find in the left-hand navigation.
 |:-----|:-----|
 |**Dashboard**|An overview of the admin center.|
 |**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations.|
-|**Permissions**|Manage administrator roles, user roles, and Outlook Web App policies.|
+|**Permissions**|Manage administrator roles, user roles, and Outlook on the web (formerly known as Outlook Web App) policies.|
 |**Compliance management**|Manage In-Place eDiscovery & Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.|
 |**Organization**|Manage organization sharing and apps for Outlook|
 |**Protection**|Manage malware filters, connection filters, content filters, outbound spam, and quarantine for your organization.|
@@ -69,12 +74,12 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Edit icon](media/ITPro_EAC_EditIcon.gif)|Edit|Edit an object.|
 |![Delete icon](media/ITPro_EAC_DeleteIcon.gif)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
 |![Search icon](media/ITPro_EAC_.gif)|Search|Open a search box in which you can type the search phrase for an object you want to find.|
-|![Icon: Upgrade distribution group to Office 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to an Office 365 group. This icon can be used only for a distribution group.|
+|![Icon: Upgrade distribution group to Microsoft 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to a Microsoft 365 group. This icon can be used only for a distribution group.|
 |![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)|Refresh|Refresh the list view.|
-|![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
-|![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down.  <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|
-|![Copy Icon](media/ITPro_EAC_CopyIcon.gif)|Copy|Copy an object so you can make changes to it without changing the original object.  <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
-|![Remove icon](media/ITPro_EAC_RemoveIcon.gif)|Remove|Remove an item from a list.  <br/> For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
+|![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects. <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
+|![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down. <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|
+|![Copy Icon](media/ITPro_EAC_CopyIcon.gif)|Copy|Copy an object so you can make changes to it without changing the original object. <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
+|![Remove icon](media/ITPro_EAC_RemoveIcon.gif)|Remove|Remove an item from a list. <br/> For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
 
 ### List view
 
@@ -97,19 +102,15 @@ The Centers tile allows you to change from one admin center to another. The Me t
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 
 ## Supported browsers
-<a name="SB"> </a>
 
 See the following articles:
 
-- [Office 365 System Requirements](https://go.microsoft.com/fwlink/p/?LinkID=402699): lists supported browsers for Office 365 and the Exchange admin center.
+- [Microsoft 365 and Office resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources): lists supported browsers for Microsoft 365, Office 365, and the Exchange admin center.
 
-- [Supported Browsers for Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=402700).
+- [Supported Browsers for Outlook on the web](https://support.microsoft.com/office/c89774d6-0722-4c93-a547-ef45e693e006).
 
 ## Related articles
-<a name="SB"> </a>
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
 
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
-
-
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).

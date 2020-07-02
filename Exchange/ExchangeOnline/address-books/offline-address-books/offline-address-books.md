@@ -1,15 +1,19 @@
 ---
-title: "Offline address books in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/19/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about offline address books (OABs) in Exchange Online.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3f4b2c64-6cbc-445f-bf65-05b8fdfe9a0b
-description: "Learn about offline address books (OABs) in Exchange Online."
+ms.reviewer: 
+title: Offline address books in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Offline address books in Exchange Online
@@ -21,8 +25,6 @@ Offline address books are generated every 8 hours.
 For more information about address lists in Exchange Online, see [Address lists](../../address-books/address-lists/address-lists.md).
 
 For OAB procedures, see [Offline address book procedures](offline-address-book-procedures.md).
-
-Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange Server](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx).
 
 ## How users download offline address books
 

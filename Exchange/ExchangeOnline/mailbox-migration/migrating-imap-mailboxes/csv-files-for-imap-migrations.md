@@ -1,21 +1,27 @@
 ---
-title: "CSV files for IMAP migration batches"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 187ce085-9a83-4612-80a2-f562b3049fc2
+ms.reviewer: 
+description: The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration.
+title: CSV files for IMAP migration batches
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: 187ce085-9a83-4612-80a2-f562b3049fc2
-description: "The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration."
+audience: Admin
+f1.keywords:
+- CSH
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # CSV files for IMAP migration batches
@@ -40,7 +46,7 @@ The migration will fail if any one of these attributes isn't included in the hea
 
 Here's an example of the format for the CSV file. In this example, user credentials are used to migrate three mailboxes:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso\terry.adams,1091990
 annb@contoso.edu,contoso\ann.beebe,2111991
@@ -64,7 +70,7 @@ The CSV file can contain up to 50,000 rows, one row for each user, and can be as
 If you plan to migrate lots of users, decide which ones to include in each batch. For example, if you have 10,000 accounts to migrate, you could run four batches with 2,500 users each. You could also divide the batches alphabetically; by user type, such as faculty, students, and alumni; by class, such as freshman, sophomore, junior, and senior; or in other ways that meet your organization's needs.
 
 > [!TIP]
-> One strategy is to create Office 365 mailboxes and migrate email for the same group of users. For example, if you import 100 new users to your Office 365 organization, create a migration batch for those same 100 users. This is an effective way to organize and manage your migration from an on-premises messaging system to Office 365.
+> One strategy is to create Office 365 mailboxes and migrate email for the same group of users. For example, if you import 100 new users to your Microsoft 365 or Office 365 organization, create a migration batch for those same 100 users. This is an effective way to organize and manage your migration from an on-premises messaging system to Office 365.
 
 ## Provide user or administrator credentials
 <a name="BK_Creds"> </a>
@@ -96,7 +102,7 @@ The following sections explain how to format the administrator credentials in th
 
 If you're migrating email from the IMAP implementation for Microsoft Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the CSV file. Let's say you're migrating email from Exchange for Terry Adams, Ann Beebe, and Paul Cannon. You have a mail administrator account, where the username is mailadmin and the password is P@ssw0rd. Here's what your CSV file would look like:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso-students/mailadmin/terry.adams,P@ssw0rd
 annb@contoso.edu,contoso-students/mailadmin/ann.beebe,P@ssw0rd
@@ -108,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
 For IMAP servers that support Simple Authentication and Security Layer (SASL), such as a Dovecot IMAP server, use the format **User_UserName\*Admin_UserName**, where the asterisk ( **\*** ) is a configurable separator character. Let's say you're migrating those same users' email from a Dovecot IMAP server using the administrator credentials mailadmin and P@ssw0rd. Here's what your CSV file would look like:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
@@ -120,7 +126,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
 If you're migrating email from Mirapoint Message Server, use the format **#user@domain#Admin_UserName#** for the administrator credentials. To migrate email from Mirapoint using the administrator credentials mailadmin and P@ssw0rd, your CSV file would look like this:
 
-```
+```CSV
 EmailAddress,UserName,Password
 terrya@contoso.edu,#terry.adams@contoso-students.edu#mailadmin#,P@ssw0rd
 annb@contoso.edu,#ann.beebe@contoso-students.edu#mailadmin#,P@ssw0rd
@@ -130,7 +136,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 ## Use the optional UserRoot attribute
 <a name="bi_Root"> </a>
 
-Some IMAP servers, such as Courier IMAP, don't support using administrator credentials to migrate mailboxes to Office 365. To use administrator credentials to migrate mailboxes, you can configure your IMAP server to use virtual shared folders. Virtual shared folders allow administrators to use the administrator's logon credentials to access user mailboxes on the IMAP server. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](http://www.courier-mta.org/imap/README.sharedfolders.mdl).
+Some IMAP servers, such as Courier IMAP, don't support using administrator credentials to migrate mailboxes to Office 365. To use administrator credentials to migrate mailboxes, you can configure your IMAP server to use virtual shared folders. Virtual shared folders allow administrators to use the administrator's logon credentials to access user mailboxes on the IMAP server. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](migrate-other-types-of-imap-mailboxes.md).
 
 To migrate mailboxes after you set up virtual shared folders on your IMAP server, you have to include the optional attribute **UserRoot** in the CSV file. This attribute specifies the location of each user's mailbox in the virtual shared folder structure on the IMAP server.
 
@@ -142,5 +148,3 @@ terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
 paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
-
-

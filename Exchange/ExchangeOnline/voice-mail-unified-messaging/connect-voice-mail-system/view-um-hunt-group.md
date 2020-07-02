@@ -1,18 +1,22 @@
 ---
-title: "View a UM hunt group"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: When you view the properties for a Unified Messaging (UM) hunt group, you can view the properties associated with a single UM hunt group or with all UM hunt groups associated with a single UM IP gateway. If neither parameter is specified, all UM hunt groups will be returned. You can't use the EAC to view UM hunt group properties; you must use Exchange Online PowerShell.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
-description: "When you view the properties for a Unified Messaging (UM) hunt group, you can view the properties associated with a single UM hunt group or with all UM hunt groups associated with a single UM IP gateway. If neither parameter is specified, all UM hunt groups will be returned. You can't use the EAC to view UM hunt group properties; you must use Exchange Online PowerShell."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: View a UM hunt group in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# View a UM hunt group
+# View a UM hunt group in Exchange Online
 
 When you view the properties for a Unified Messaging (UM) hunt group, you can view the properties associated with a single UM hunt group or with all UM hunt groups associated with a single UM IP gateway. If neither parameter is specified, all UM hunt groups will be returned. You can't use the EAC to view UM hunt group properties; you must use Exchange Online PowerShell.
 
@@ -24,7 +28,7 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 - Estimated time to complete: Less than 1 minute
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM hunt groups" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform this procedure, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan.md).
 
@@ -41,17 +45,15 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 This example displays all the UM hunt groups in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMHuntGroup
 ```
 
 This example displays the details of a UM hunt group named `MyUMHuntGroup` in a formatted list.
 
-```
+```PowerShell
 Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 ```
 
 > [!NOTE]
 > When you're using the **Get-UMHuntGroup** cmdlet, you can't enter only the name of the UM hunt group. You must also include the name of the UM IP gateway that's associated with the UM hunt group.
-
-

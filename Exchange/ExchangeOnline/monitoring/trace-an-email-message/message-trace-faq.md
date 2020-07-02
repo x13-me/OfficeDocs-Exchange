@@ -1,15 +1,21 @@
 ---
-title: "Message Trace FAQ"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Frequently asked questions about message trace.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
-description: "Frequently asked questions about message trace."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Message Trace FAQ
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Message Trace FAQ
@@ -20,7 +26,7 @@ This topic presents messaging questions that a user may have, along with possibl
 
 - In the Exchange admin center (EAC), the search results appear immediately for messages that are less than 7 days old.
 
-- In the Office 365 Security & Compliance Center, the search results appear immediately for messages that are less than 10 days old.
+- In the Microsoft 365 security center, the search results appear immediately for messages that are less than 10 days old.
 
 When you run a message trace for older messages, the results are returned within a few hours as a downloadable CSV file.
 
@@ -32,19 +38,19 @@ When a message is sent, it should take between 5-10 minutes for the message to a
 
 You can use the following cmdlets in Exchange Online PowerShell or Exchange Online Protection PowerShell to run a message trace:
 
-[Get-MessageTrace](https://technet.microsoft.com/library/5e5134f2-b887-4840-9dff-cea9ec8fde72.aspx): Trace messages that are less than 10 days old.
+[Get-MessageTrace](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace): Trace messages that are less than 10 days old.
 
-[Get-MessageTraceDetail](https://technet.microsoft.com/library/27e9b80c-66db-4038-b93e-edd68fe86a12.aspx): View the message trace event details for a specific message.
+[Get-MessageTraceDetail](https://docs.microsoft.com/powershell/module/exchange/get-messagetracedetail): View the message trace event details for a specific message.
 
-[Get-HistoricalSearch](https://technet.microsoft.com/library/70f2ec73-2733-4f87-ac89-1665d575a4dc.aspx): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
+[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
 
-[Start-HistoricalSearch](https://technet.microsoft.com/library/9688689c-2953-49de-bb38-eeea10b7f08e.aspx): Start a new historical search for messages that are less than 90 days old.
+[Start-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/start-historicalsearch): Start a new historical search for messages that are less than 90 days old.
 
-[Stop-HistoricalSearch](https://technet.microsoft.com/library/8868372f-842b-417d-acb2-8c08a914a779.aspx): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
+[Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
@@ -177,7 +183,7 @@ Possible reasons include the following:
 
 - Latency in the service may be causing delays
 
-- The message may have been blocked, in which case you should refer to [Why didn't someone receive my message or why did I get this non-delivery report (NDR)?](message-trace-faq.md#BKMB_Whydidntsomeonereceivemymessage)
+- The message may have been blocked
 
 To find out what happened:
 
@@ -189,7 +195,7 @@ The events section will tell you why the message was not yet delivered. When vie
 
 ## Was a message marked as spam?
 
-Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://technet.microsoft.com/library/d5c58b9d-c9a2-4f2e-b4aa-b202aa4d5e7d.aspx).
+Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-and-anti-malware-protection).
 
 To find out why a message was marked as spam:
 
@@ -236,5 +242,3 @@ You should be aware of the following when using the message trace tool:
 ## For more information
 
 [Trace an email message](trace-an-email-message.md)
-
-[Help and Support for EOP](https://technet.microsoft.com/library/64535a0a-1044-413f-8bc2-ed8e8a0bc54c.aspx)

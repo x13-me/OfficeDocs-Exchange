@@ -1,15 +1,22 @@
 ---
-title: "Manage and troubleshoot message approval in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
-description: "Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Manage and troubleshoot message approval in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+ROBOTS: NOINDEX, NOFOLLOW
+
 ---
 
 # Manage and troubleshoot message approval in Exchange Online
@@ -24,7 +31,7 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 - Estimated time to complete: 10 minutes
 
-- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -32,22 +39,22 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 Run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "<arbitration mailbox>" -Arbitration
 $AMDN = $AM.DistinguishedName
-Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
+Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 ```
 
 For example, to find all the recipients that use the arbitration mailbox named Arbitration Mailbox01, run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "Arbitration Mailbox01" -Arbitration
 $AMDN = $AM.DistinguishedName
-Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
+Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 ```
 
 > [!NOTE]
-> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`.
+> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '<DN>'"`.
 
 ## Step 2: Use Exchange Online PowerShell to specify a different arbitration mailbox or disable moderation for the recipients
 
@@ -55,25 +62,25 @@ To stop moderated recipients from using the arbitration mailbox you are trying t
 
 If you choose to specify a different arbitration mailbox for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ArbitrationMailbox <different arbitration mailbox>
 ```
 
 For example, to reconfigure the distribution group named All Employees to use the arbitration mailbox named Arbitration Mailbox02 for membership approval, run the following command:
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ArbitrationMailbox "Arbitration Mailbox02"
 ```
 
 If you choose to disable moderation for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModerationEanbled $false
 ```
 
 For example, to disable moderation for the mailbox named Human Resources, run the following command:
 
-```
+```PowerShell
 Set-Mailbox "Human Resources" -ModerationEanbled $false
 ```
 

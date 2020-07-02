@@ -1,15 +1,19 @@
 ---
-title: "Run a non-owner mailbox access report"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable mailbox audit logging in Exchange 2016 or Exchange 2019 so that you run reports on non-owner mailbox access.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-description: "Summary: Learn how to enable mailbox audit logging in Exchange 2016 or Exchange 2019 so that you run reports on non-owner mailbox access."
+ms.reviewer:
+title: Run a non-owner mailbox access report
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Run a non-owner mailbox access report
@@ -24,7 +28,7 @@ You enable mailbox audit logging in the Exchange Management Shell.
 
 - Estimated time to complete: 5 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions in Exchange Server](../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
 
@@ -39,23 +43,23 @@ You have to enable mailbox audit logging for each mailbox that you want to inclu
 
 To enable mailbox audit logging for a single mailbox, run the following command in the Exchange Management Shell:
 
-```
+```PowerShell
 Set-Mailbox <Identity> -AuditEnabled $true
 ```
 
 For example, to enable mailbox auditing for a user named Florence Flipo, run the following command.
 
-```
+```PowerShell
 Set-Mailbox "Florence Flipo" -AuditEnabled $true
 ```
 
 To enable mailbox auditing for all user mailboxes in your organization, run the following commands:
 
-```
-$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```PowerShell
+$UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 ```
 
-```
+```PowerShell
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 
@@ -63,7 +67,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 Run the following command to verify that you've successfully configured mailbox audit logging.
 
-```
+```PowerShell
 Get-Mailbox | Format-List Name,AuditEnabled
 ```
 
@@ -115,15 +119,13 @@ The following table describes the types of actions logged, and whether these act
 
 |**Action**|**Description**|**Administrators**|**Delegated users**|
 |:-----|:-----|:-----|:-----|
-|**Update** <br/> |A message was changed.  <br/> |Yes  <br/> |Yes  <br/> |
-|**Copy** <br/> |A message was copied to another folder.  <br/> |No  <br/> |No  <br/> |
-|**Move** <br/> |A message was moved to another folder.  <br/> |Yes  <br/> |No  <br/> |
-|**Move To Deleted Items** <br/> |A message was moved to the Deleted Items folder.  <br/> |Yes  <br/> |No  <br/> |
-|**Soft-delete** <br/> |A message was deleted from the Deleted Items folder.  <br/> |Yes  <br/> |Yes  <br/> |
-|**Hard-delete** <br/> |A message was purged from the Recoverable Items folder.  <br/> |Yes  <br/> |Yes  <br/> |
-|**FolderBind** <br/> |A mailbox folder was accessed.  <br/> |Yes  <br/> |No  <br/> |
-|**Send as** <br/> |A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.  <br/> |Yes  <br/> |Yes  <br/> |
-|**Send on behalf of** <br/> |A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.  <br/> |Yes  <br/> |No  <br/> |
-|**MessageBind** <br/> |A message was viewed in the preview pane or opened.  <br/> |No  <br/> |No  <br/> |
- 
-
+|**Update**|A message was changed.|Yes|Yes|
+|**Copy**|A message was copied to another folder.|No|No|
+|**Move**|A message was moved to another folder.|Yes|No|
+|**Move To Deleted Items**|A message was moved to the Deleted Items folder.|Yes|No|
+|**Soft-delete**|A message was deleted from the Deleted Items folder.|Yes|Yes|
+|**Hard-delete**|A message was purged from the Recoverable Items folder.|Yes|Yes|
+|**FolderBind**|A mailbox folder was accessed.|Yes|No|
+|**Send as**|A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.|Yes|Yes|
+|**Send on behalf of**|A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.|Yes|No|
+|**MessageBind**|A message was viewed in the preview pane or opened.|No|No|

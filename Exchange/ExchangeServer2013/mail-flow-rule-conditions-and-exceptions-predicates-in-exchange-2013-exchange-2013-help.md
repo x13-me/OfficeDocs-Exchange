@@ -1,31 +1,33 @@
-﻿---
-title: 'Mail flow rule conditions and exceptions (predicates) in Exchange 2013'
-TOCTitle: Mail flow rule conditions and exceptions (predicates)
+---
+title: 'Transport rule conditions and exceptions (predicates) in Exchange 2013'
+TOCTitle: Transport rule conditions and exceptions (predicates)
 ms:assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638183(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638183(v=EXCHG.150)
 ms:contentKeyID: 49361079
-ms.date: 01/02/2018
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Mail flow rule conditions and exceptions (predicates) in Exchange 2013
-
- 
+# Transport rule conditions and exceptions (predicates) in Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 
-
-Conditions and exceptions in mail flow rules (also known as transport rules) identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in mail flow rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.
+Conditions and exceptions in transport rules identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in transport rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.
 
 Most conditions and exceptions have one property that requires one or more values. For example, the **The sender is** condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Any attachment has executable content** condition simply looks for attachments in messages that have executable content.
 
-For more information about mail flow rules in Exchange Server 2013, see [Mail flow rules (transport rules) in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
+For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## Conditions and exceptions for mail flow rules on Mailbox servers
+## Conditions and exceptions for transport rules on Mailbox servers
 
-The tables in the following sections describe the conditions and exceptions that are available in mail flow rules on Mailbox servers. The properties types are described in the Property types section.
+The tables in the following sections describe the conditions and exceptions that are available in transport rules on Mailbox servers. The properties types are described in the Property types section.
 
 Senders
 
@@ -59,22 +61,21 @@ For conditions and exceptions that examine the sender's address, you can specify
 
 In the EAC, in the **Properties of this rule** section, click **Match sender address in message**. Note that you might need to click **More options** to see this setting. In the Exchange Management Shell, the parameter is *SenderAddressLocation*. The available values are:
 
-  - **Header**   Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value, and is the way mail flow rules worked before Exchange 2013 Cumulative Update 1 (CU1).
+  - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value, and is the way transport rules worked before Exchange 2013 Cumulative Update 1 (CU1).
 
-  - **Envelope**   Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
-    
+  - **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
+
       - **The sender is** (*From*)
-    
+
       - **The sender is a member of** (*FromMemberOf*)
-    
+
       - **The sender address includes** (*FromAddressContainsWords*)
-    
+
       - **The sender address matches** (*FromAddressMatchesPatterns*)
-    
+
       - **The sender's domain is** (*SenderDomainIs*)
 
   - **Header or envelope** (`HeaderOrEnvelope`)   Examine senders in the message header and the message envelope.
-
 
 <table>
 <colgroup>
@@ -166,7 +167,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>n/a</p></td>
-<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
+<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="odd">
@@ -191,11 +192,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 </tbody>
 </table>
 
-
-Return to top
-
 ## Recipients
-
 
 <table>
 <colgroup>
@@ -297,17 +294,10 @@ Return to top
 </tbody>
 </table>
 
-
-Return to top
-
 ## Message subject or body
-
 
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs <EM>after</EM> the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
-
-
-
 
 <table>
 <colgroup>
@@ -366,13 +356,9 @@ Return to top
 </tbody>
 </table>
 
-
-Return to top
-
 ## Attachments
 
-For more information about how mail flow rules inspect message attachments, see [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
-
+For more information about how transport rules inspect message attachments, see [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
 <table>
 <colgroup>
@@ -478,9 +464,6 @@ For more information about how mail flow rules inspect message attachments, see 
 </tbody>
 </table>
 
-
-Return to top
-
 ## Any recipients
 
 The conditions and exceptions in this section provide a unique capability that affects *all* recipients when the message contains at least one of the specified recipients. For example, let's say you have a rule that rejects messages. If you use a recipient condition from the Recipients section, the message is only rejected for those specified recipients. For example, if the rule finds the specified recipient in a message, but the message contains five other recipients. The message is rejected for that one recipient, and is delivered to the five other recipients.
@@ -489,8 +472,7 @@ If you add a recipient condition from this section, that same message is rejecte
 
 Conversely, a recipient exception from this section *prevents* the rule action from being applied to *all* recipients of the message, not just for the detected recipients.
 
-**Note:** This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
-
+**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
 <table>
 <colgroup>
@@ -531,15 +513,11 @@ Conversely, a recipient exception from this section *prevents* the rule action f
 </tbody>
 </table>
 
-
-Return to top
-
 ## Message sensitive information types, To and Cc values, size, and character sets
 
 The conditions in this section that look for values in the **To** and **Cc** fields behave like the conditions in the Any recipients section (*all* recipients of the message are affected by the rule, not just the detected recipients).
 
-**Note:** This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
-
+**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
 <table>
 <colgroup>
@@ -631,7 +609,7 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 <td><p><code>Size</code></p></td>
 <td><p>Messages where the total size (message plus attachments) is greater than or equal to the specified value.</p>
 <p>In the EAC, you can only specify the size in kilobytes (KB).</p>
-<p><strong>Note:</strong> Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.</p></td>
+<p><strong>Note:</strong> Message size limits on mailboxes are evaluated before transport rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="odd">
@@ -646,11 +624,7 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 </tbody>
 </table>
 
-
-Return to top
-
 ## Sender and recipient
-
 
 <table>
 <colgroup>
@@ -711,11 +685,7 @@ Return to top
 </tbody>
 </table>
 
-
-Return to top
-
 ## Message properties
-
 
 <table>
 <colgroup>
@@ -745,7 +715,6 @@ Return to top
 
 > [!NOTE]
 > When Outlook or Outlook Web App is configured to forward a message, the <STRONG>ForwardingSmtpAddress</STRONG> property is added to the message. The message type isn't changed to <CODE>AutoForward</CODE>.
-
 
 </td>
 <td><p>Exchange 2010 or later</p></td>
@@ -789,17 +758,10 @@ Return to top
 </tbody>
 </table>
 
-
-Return to top
-
 ## Message headers
-
 
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs <EM>after</EM> the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
-
-
-
 
 <table>
 <colgroup>
@@ -844,13 +806,9 @@ Return to top
 </tbody>
 </table>
 
+## Conditions and exceptions for transport rules on Edge Transport servers
 
-Return to top
-
-## Conditions and exceptions for mail flow rules on Edge Transport servers
-
-The conditions and exceptions that are available in mail flow rules on Edge Transport servers are a small subset of what's available on Mailbox servers. There's no EAC on Edge Transport servers, so you can only manage mail flow rules in the Exchange Management Shell on the local Edge Transport server. The conditions and exceptions are described in the following table. The properties types are described in the Property types section.
-
+The conditions and exceptions that are available in transport rules on Edge Transport servers are a small subset of what's available on Mailbox servers. There's no EAC on Edge Transport servers, so you can only manage transport rules in the Exchange Management Shell on the local Edge Transport server. The conditions and exceptions are described in the following table. The properties types are described in the Property types section.
 
 <table>
 <colgroup>
@@ -975,19 +933,12 @@ The conditions and exceptions that are available in mail flow rules on Edge Tran
 </tbody>
 </table>
 
-
-Return to top
-
 ## Property types
 
 The property types that are used in conditions and exceptions are described in the following table.
 
-
 > [!NOTE]
 > If the property is a string, trailing spaces are not allowed.
-
-
-
 
 <table>
 <colgroup>
@@ -1011,7 +962,7 @@ The property types that are used in conditions and exceptions are described in t
 <p>In the Exchange Management Shell, use the syntax <code>&quot;AttributeName1:Value1,Value 2 with spaces,Value3...&quot;,&quot;AttributeName2:Word4,Value 5 with spaces,Value6...&quot;</code>, where <code>Value</code> is the word or text pattern that you want to match.</p>
 <p>For example, <code>&quot;City:San Francisco,Palo Alto&quot;</code> or <code>&quot;City:San Francisco,Palo Alto&quot;</code>,<code>&quot;Department:Sales,Finance&quot;</code>.</p>
 <p>When you specify multiple attributes, or multiple values for the same attribute, the <strong>or</strong> operator is used. Don't use values with leading or trailing spaces.</p>
-<p>Note that the <strong>Country</strong> attribute requires the two-letter ISO 3166-1 country code value (for example, DE for Germany). To search for values, see <a href="https://go.microsoft.com/fwlink/p/?linkid=331680">https://go.microsoft.com/fwlink/p/?LinkId=331680</a>.</p></td>
+<p>Note that the <strong>Country</strong> attribute requires the ISO 3166-1 two-letter country code value (for example, DE for Germany). For more information, see <a href="https://www.iso.org/iso-3166-country-codes.html">Country Codes - ISO 316</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><code>Addresses</code></p></td>
@@ -1116,13 +1067,12 @@ The property types that are used in conditions and exceptions are described in t
 > [!NOTE]
 > When Outlook or Outlook Web App is configured to forward a message, the <STRONG>ForwardingSmtpAddress</STRONG> property is added to the message. The message type isn't changed to <CODE>AutoForward</CODE>.
 
-
 </td>
 </tr>
 <tr class="odd">
 <td><p><code>Patterns</code></p></td>
 <td><p>Array of regular expressions</p></td>
-<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=180327">Regular Expression Syntax</a>.</p>
+<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio">Regular Expression Syntax</a>.</p>
 <p>In the Exchange Management Shell, you specify multiple regular expressions separated by commas, and you enclose each regular expression in quotation marks (&quot;).</p></td>
 </tr>
 <tr class="even">
@@ -1137,7 +1087,7 @@ The property types that are used in conditions and exceptions are described in t
 <tr class="odd">
 <td><p><code>SensitiveInformationTypes</code></p></td>
 <td><p>Array of sensitive information types</p></td>
-<td><p>Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see <a href="what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md">What the sensitive information types in Exchange look for</a>.</p>
+<td><p>Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see <a href="what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md">What the sensitive information types in Exchange 2013 look for</a>.</p>
 <p>In the Exchange Management Shell, use the syntax <code>@{&lt;SensitiveInformationType1&gt;},@{&lt;SensitiveInformationType2&gt;},...</code>. For example, to look for content that contains at least two credit card numbers, and at least one ABA routing number, use the value <code>@{Name=&quot;Credit Card Number&quot;; minCount=&quot;2&quot;},@{Name=&quot;ABA Routing Number&quot;; minCount=&quot;1&quot;}</code>.</p></td>
 </tr>
 <tr class="even">
@@ -1171,7 +1121,6 @@ The property types that are used in conditions and exceptions are described in t
 
 > [!NOTE]
 > To determine whether mail contacts are considered to be inside or outside the organization, the sender's address is compared with the organization's accepted domains.
-
 
 </td>
 </tr>
@@ -1212,18 +1161,12 @@ The property types that are used in conditions and exceptions are described in t
 </tbody>
 </table>
 
-
-Return to top
-
 ## For more information
 
-[Mail flow rules (transport rules) in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Mail flow rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)
+[Transport rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)
 
-[Mail flow rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
+[Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) for Exchange Online
-
-[Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)) for Exchange Online Protection
-
+[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)

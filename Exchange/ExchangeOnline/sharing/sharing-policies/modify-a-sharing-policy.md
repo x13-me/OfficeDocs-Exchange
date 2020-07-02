@@ -1,15 +1,21 @@
 ---
-title: "Modify, disable, or remove a sharing policy in Exchange Online"
-ms.author: dstrome
-author: dstrome
-manager: scotv
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
-description: "Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Modify, disable, or remove a sharing policy in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Modify, disable, or remove a sharing policy in Exchange Online
@@ -27,7 +33,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to change a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -42,7 +48,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to set a sharing policy as the default sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -55,7 +61,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 ## Use the Exchange admin center to disable a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -69,7 +75,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 > [!IMPORTANT]
 > Before you remove a sharing policy, the sharing policy must be removed from all user mailboxes.
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -82,39 +88,37 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
   ```
 
 - This example adds a second domain to the sharing policy Contoso. When you're adding a domain to an existing policy, you must include any previously included domains.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
   ```
 
 - This example sets the sharing policy Contoso as the default sharing policy.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Default $True
   ```
 
 - This example disables the sharing policy Contoso.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity "Contoso" -Enabled $False
   ```
 
 - The first example removes the sharing policy Contoso. The second example removes the sharing policy Contoso and suppresses the confirmation that you want to remove the policy.
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso
   ```
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso -Confirm
 
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/library/42bab80c-62af-4b37-bb41-fa0173b27d86.aspx) and [Remove-SharingPolicy](https://technet.microsoft.com/library/b59d9faa-3418-4f4f-9f90-35cf12fde86e.aspx).
-
-
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/set-sharingpolicy) and [Remove-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-sharingpolicy).

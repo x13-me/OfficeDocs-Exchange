@@ -1,15 +1,19 @@
 ---
-title: "Understanding back pressure"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
-description: "Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages."
+ms.reviewer: 
+title: Understanding back pressure
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Understanding back pressure
@@ -35,7 +39,7 @@ The following system resources are monitored by back pressure:
 
 - **UsedVersionBuckets[%ExchangeInstallPath%TransportRoles\data\Queue\mail.que]**: The number of uncommitted message queue database transactions that exist in memory.
 
-For each monitored system resource on a Mailbox server or Edge Transport server, the following levels of resource utilization or *pressure* are defined: 
+For each monitored system resource on a Mailbox server or Edge Transport server, the following levels of resource utilization or *pressure* are defined:
 
 - **Low or Normal**: The resource isn't overused. The server accepts new connections and messages.
 
@@ -57,13 +61,13 @@ To change the default location of the message queue database, see [Change the lo
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 96 
+- **LowToMedium**: 96
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 97 
+- **HighToMedium**: 97
 
-- **MediumToLow**: 94 
+- **MediumToLow**: 94
 
  **Comments:**:
 
@@ -87,13 +91,13 @@ As you can see from the formula and the rounding down behavior, the hard drive n
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 72 
+- **LowToMedium**: 72
 
-- **MediumToHigh**: 75 
+- **MediumToHigh**: 75
 
-- **HighToMedium**: 73 
+- **HighToMedium**: 73
 
-- **MediumToLow**: 71 
+- **MediumToLow**: 71
 
  **Comments**:
 
@@ -109,13 +113,13 @@ Exchange keeps a history of the memory utilization of the EdgeTransport.exe proc
 
  **Pressure transitions**:
 
-- **LowToMedium**: 9999 
+- **LowToMedium**: 9999
 
-- **MediumToHigh**: 15000 
+- **MediumToHigh**: 15000
 
-- **HighToMedium**: 10000 
+- **HighToMedium**: 10000
 
-- **MediumToLow**: 2000 
+- **MediumToLow**: 2000
 
  **Comments**:
 
@@ -131,13 +135,13 @@ Exchange keeps a history of Submission queue utilization. If the Submission queu
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 88 
+- **LowToMedium**: 88
 
-- **MediumToHigh**: 94 
+- **MediumToHigh**: 94
 
-- **HighToMedium**: 89 
+- **HighToMedium**: 89
 
-- **MediumToLow**: 84 
+- **MediumToLow**: 84
 
  **Comments**:
 
@@ -151,13 +155,13 @@ When the server reaches the high level of memory utilization, *message dehydrati
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 89 
+- **LowToMedium**: 89
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 90 
+- **HighToMedium**: 90
 
-- **MediumToLow**: 80 
+- **MediumToLow**: 80
 
  **Comments:**:
 
@@ -186,13 +190,13 @@ The `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` application configuratio
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 89 
+- **LowToMedium**: 89
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 90 
+- **HighToMedium**: 90
 
-- **MediumToLow**: 80 
+- **MediumToLow**: 80
 
  **Comments**:
 
@@ -214,13 +218,13 @@ As you can see from the formula and the rounding down behavior, the hard drive n
 
  **Pressure transitions**:
 
-- **LowToMedium**: 999 
+- **LowToMedium**: 999
 
-- **MediumToHigh**: 1500 
+- **MediumToHigh**: 1500
 
-- **HighToMedium**: 1000 
+- **HighToMedium**: 1000
 
-- **MediumToLow**: 800 
+- **MediumToLow**: 800
 
  **Comments:**:
 
@@ -239,29 +243,29 @@ The following table summarizes the actions taken by back pressure when a monitor
 
 |**Resource under pressure**|**Utilization level**|**Actions taken**|
 |:-----|:-----|:-----|
-|**DatabaseUsedSpace** <br/> |Medium  <br/> |Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages. For more information about Shadow Redundancy, see [Shadow redundancy in Exchange Server](transport-high-availability/shadow-redundancy.md).  <br/> |
-|**DatabaseUsedSpace** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> |
-|**PrivateBytes** <br/> |Medium  <br/> |Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages.  <br/> Processing messages after a server or Transport service restart (also known as *boot scanning*) is paused.  <br/> Start message dehydration.  <br/> |
-|**PrivateBytes** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> |
-|**QueueLength[SubmissionQueue]** <br/> |Medium  <br/> |Introduce or increment the tarpitting delay to incoming messages. If normal level isn't reached for the entire Submission queue history depth, take the following actions:  <br/> • Reject incoming messages from non-Exchange servers.  <br/> • Reject message submissions from the Pickup directory and the Replay directory.  <br/> • Message resubmission is paused.  <br/> • Shadow Redundancy rejects messages.  <br/> • Boot scanning is paused.  <br/> |
-|**QueueLength[SubmissionQueue]** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> Flush enhanced DNS cache from memory.  <br/> Start message dehydration.  <br/> |
-|**SystemMemory** <br/> |Medium  <br/> |Start message dehydration.  <br/> Flush caches.  <br/> |
-|**SystemMemory** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> |
-|**UsedDiskSpace** (message queue database transaction logs)  <br/> |Medium  <br/> |Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages.  <br/> |
-|**UsedDiskSpace** (message queue database transaction logs)  <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> |
-|**UsedDiskSpace** (content conversion)  <br/> |Medium  <br/> |Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> |
-|**UsedDiskSpace** (content conversion)  <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> |
-|**UsedVersionBuckets** <br/> |Medium  <br/> |Introduce or increment the tarpitting delay to incoming messages. If normal level isn't reached for the entire version bucket history depth, take the following actions:  <br/> • Reject incoming messages from non-Exchange servers.  <br/> • Reject message submissions from the Pickup directory and the Replay directory.  <br/> |
-|**UsedVersionBuckets** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> Stop processing outgoing messages.  <br/> Remote delivery is paused.  <br/> |
- 
+|**DatabaseUsedSpace**|Medium|Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages. For more information about Shadow Redundancy, see [Shadow redundancy in Exchange Server](transport-high-availability/shadow-redundancy.md).|
+|**DatabaseUsedSpace**|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.|
+|**PrivateBytes**|Medium|Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages.  <br/> Processing messages after a server or Transport service restart (also known as *boot scanning*) is paused.  <br/> Start message dehydration.|
+|**PrivateBytes**|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.|
+|**QueueLength[SubmissionQueue]**|Medium|Introduce or increment the tarpitting delay to incoming messages. If normal level isn't reached for the entire Submission queue history depth, take the following actions:  <br/> • Reject incoming messages from non-Exchange servers.  <br/> • Reject message submissions from the Pickup directory and the Replay directory.  <br/> • Message resubmission is paused.  <br/> • Shadow Redundancy rejects messages.  <br/> • Boot scanning is paused.|
+|**QueueLength[SubmissionQueue]**|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> Flush enhanced DNS cache from memory.  <br/> Start message dehydration.|
+|**SystemMemory**|Medium|Start message dehydration.  <br/> Flush caches.|
+|**SystemMemory**|High|All actions taken at the medium utilization level.|
+|**UsedDiskSpace** (message queue database transaction logs)|Medium|Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.  <br/> Message resubmission is paused.  <br/> Shadow Redundancy rejects messages.|
+|**UsedDiskSpace** (message queue database transaction logs)|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.|
+|**UsedDiskSpace** (content conversion)|Medium|Reject incoming messages from non-Exchange servers.  <br/> Reject message submissions from the Pickup directory and the Replay directory.|
+|**UsedDiskSpace** (content conversion)|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.|
+|**UsedVersionBuckets**|Medium|Introduce or increment the tarpitting delay to incoming messages. If normal level isn't reached for the entire version bucket history depth, take the following actions:  <br/> • Reject incoming messages from non-Exchange servers.  <br/> • Reject message submissions from the Pickup directory and the Replay directory.|
+|**UsedVersionBuckets**|High|All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> Stop processing outgoing messages.  <br/> Remote delivery is paused.|
+
 ## View back pressure resource thresholds and utilization levels
 <a name="Pressure"> </a>
 
-You can use the **Get-ExchangeDiagnosticInfo** cmdlet in the Exchange Management Shell to view the resources that are being monitored, and the current utilization levels. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+You can use the **Get-ExchangeDiagnosticInfo** cmdlet in the Exchange Management Shell to view the resources that are being monitored, and the current utilization levels. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 To view the back pressure settings on an Exchange server, run the following command:
 
-```
+```PowerShell
 [xml]$bp=Get-ExchangeDiagnosticInfo [-Server <ServerIdentity> ] -Process EdgeTransport -Component ResourceThrottling; $bp.Diagnostics.Components.ResourceThrottling.ResourceTracker.ResourceMeter
 ```
 
@@ -279,56 +283,56 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 
 |**Key name**|**Default value**|
 |:-----|:-----|
-| _ResourceMeteringInterval_ <br/> | `00:00:02` (2 seconds)  <br/> |
-| _DehydrateMessagesUnderMemoryPressure_ <br/> |true  <br/> |
- 
+| _ResourceMeteringInterval_| `00:00:02` (2 seconds)|
+| _DehydrateMessagesUnderMemoryPressure_|true|
+
 **DatabaseUsedSpace settings**
 
 |**Key name**|**Default value (%)**|
 |:-----|:-----|
-| _DatabaseUsedSpace.LowToMedium_ <br/> |96  <br/> |
-| _DatabaseUsedSpace.MediumToHigh_ <br/> |99  <br/> |
-| _DatabaseUsedSpace.HighToMedium_ <br/> |97  <br/> |
-| _DatabaseUsedSpace.MediumToLow_ <br/> |94  <br/> |
- 
+| _DatabaseUsedSpace.LowToMedium_|96|
+| _DatabaseUsedSpace.MediumToHigh_|99|
+| _DatabaseUsedSpace.HighToMedium_|97|
+| _DatabaseUsedSpace.MediumToLow_|94|
+
 **PrivateBytes settings**
 
 |**Key name**|**Default value (%)**|
 |:-----|:-----|
-| _PrivateBytes.LowToMedium_ <br/> |72  <br/> |
-| _PrivateBytes.MediumToHigh_ <br/> |75  <br/> |
-| _PrivateBytes.HighToMedium_ <br/> |73  <br/> |
-| _PrivateBytes.MediumToLow_ <br/> |71  <br/> |
-| _PrivateBytesHistoryDepth_ <br/> |30  <br/> |
- 
+| _PrivateBytes.LowToMedium_|72|
+| _PrivateBytes.MediumToHigh_|75|
+| _PrivateBytes.HighToMedium_|73|
+| _PrivateBytes.MediumToLow_|71|
+| _PrivateBytesHistoryDepth_|30|
+
 **QueueLength[SubmissionQueue] settings**
 
 |**Key name**|**Default value**|
 |:-----|:-----|
-| _QueueLength[SubmissionQueue].LowToMedium_ <br/> |9999  <br/> |
-| _QueueLength[SubmissionQueue].MediumToHigh_ <br/> |15000  <br/> |
-| _QueueLength[SubmissionQueue].HighToMedium_ <br/> |10000  <br/> |
-| _QueueLength[SubmissionQueue].MediumToLow_ <br/> |2000  <br/> |
-| _SubmissionQueueHistoryDepth_ <br/> |300 (after 10 minutes)  <br/> |
- 
+| _QueueLength[SubmissionQueue].LowToMedium_|9999|
+| _QueueLength[SubmissionQueue].MediumToHigh_|15000|
+| _QueueLength[SubmissionQueue].HighToMedium_|10000|
+| _QueueLength[SubmissionQueue].MediumToLow_|2000|
+| _SubmissionQueueHistoryDepth_|300 (after 10 minutes)|
+
 **SystemMemory settings**
 
 |**Key name**|**Default value (%)**|
 |:-----|:-----|
-| _SystemMemory.LowToMedium_ <br/> |88  <br/> |
-| _SystemMemory.MediumToHigh_ <br/> |94  <br/> |
-| _SystemMemory.HighToMedium_ <br/> |89  <br/> |
-| _SystemMemory.MediumToLow_ <br/> |84  <br/> |
- 
+| _SystemMemory.LowToMedium_|88|
+| _SystemMemory.MediumToHigh_|94|
+| _SystemMemory.HighToMedium_|89|
+| _SystemMemory.MediumToLow_|84|
+
 **UsedDiskSpace settings (message queue database transaction logs)**
 
 |**Key name**|**Default value (%)**|
 |:-----|:-----|
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].LowToMedium_ <br/> |89  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToHigh_ <br/> |99  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].HighToMedium_ <br/> |90  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToLow_ <br/> |80  <br/> |
- 
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].LowToMedium_|89|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToHigh_|99|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].HighToMedium_|90|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToLow_|80|
+
 > [!NOTE]
 > Values that contain only `UsedDiskSpace` (for example, `UsedDiskSpace.MediumToHigh`) apply to the message queue database transaction logs and to content conversion.
 
@@ -336,22 +340,22 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 
 |**Key name**|**Default value (%)**|
 |:-----|:-----|
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].LowToMedium_ <br/> |89  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].MediumToHigh_ <br/> |99  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].HighToMedium_ <br/> |90  <br/> |
-| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].MediumToLow_ <br/> |80  <br/> |
-|TemporaryStoragePath  <br/> | `%ExchangeInstallPath%TransportRoles\data\Temp` <br/> |
- 
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].LowToMedium_|89|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].MediumToHigh_|99|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].HighToMedium_|90|
+| _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].MediumToLow_|80|
+|TemporaryStoragePath| `%ExchangeInstallPath%TransportRoles\data\Temp`|
+
 **UsedVersionBuckets settings**
 
 |**Key name**|**Default value**|
 |:-----|:-----|
-| _UsedVersionBuckets.LowToMedium_ <br/> |999  <br/> |
-| _UsedVersionBuckets.MediumToHigh_ <br/> |1500  <br/> |
-| _UsedVersionBuckets.HighToMedium_ <br/> |1000  <br/> |
-| _UsedVersionBuckets.MediumToLow_ <br/> |800  <br/> |
-| _VersionBucketsHistoryDepth_ <br/> |10  <br/> |
- 
+| _UsedVersionBuckets.LowToMedium_|999|
+| _UsedVersionBuckets.MediumToHigh_|1500|
+| _UsedVersionBuckets.HighToMedium_|1000|
+| _UsedVersionBuckets.MediumToLow_|800|
+| _VersionBucketsHistoryDepth_|10|
+
 ## Back pressure logging information
 <a name="Information"> </a>
 
@@ -404,5 +408,3 @@ The following list describes the event log entries that are generated by specifi
     Event ID: 15007
 
     Description: The Microsoft Exchange Transport service is rejecting message submissions because the service continues to consume more memory than the configured threshold. This may require that this service be restarted to continue normal operation.
-
-

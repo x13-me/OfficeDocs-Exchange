@@ -1,19 +1,21 @@
-﻿---
+---
 title: 'Overview of Exchange 2013 services: Exchange 2013 Help'
 TOCTitle: Overview of Exchange 2013 services
 ms:assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee423542(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee423542(v=EXCHG.150)
 ms:contentKeyID: 74479247
-ms.date: 10/20/2017
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Overview of Exchange 2013 services
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 During the installation of Exchange Server 2013, Setup runs a set of tasks that install new services in Microsoft Windows. A service is a background process that can be launched during the startup of the server by the Windows Service Control Manager. Services are executable files designed to operate independently and without administrative intervention. A service can run using either a graphical user interface (GUI) mode or a console mode.
 
@@ -24,7 +26,6 @@ The sections in this topic describe the various services that are installed by E
 ## Exchange services on Exchange 2013 Mailbox servers
 
 The following table describes the Exchange services that are installed on Mailbox servers.
-
 
 <table style="width:100%;">
 <colgroup>
@@ -63,8 +64,7 @@ The following table describes the Exchange services that are installed on Mailbo
 <td><p>Provides Exchange SmartScreen spam definition updates.</p>
 
 > [!NOTE]
-> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
-
+> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332">Deprecating support for SmartScreen in Outlook and Exchange</A>.
 
 </td>
 <td><p>Automatic</p></td>
@@ -94,7 +94,7 @@ The following table describes the Exchange services that are installed on Mailbo
 <tr class="odd">
 <td><p>Microsoft Exchange EdgeSync</p></td>
 <td><p>MSExchangeEdgeSync</p></td>
-<td><p>Replicates configuration and recipient data between the Mailbox server and UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) on subscribed Edge Transport servers over a secure LDAP channel.</p>
+<td><p>Replicates configuration and recipient data between the Mailbox server and Active Directory Lightweight Directory Services (AD LDS) on subscribed Edge Transport servers over a secure LDAP channel.</p>
 <p>If you don't have any subscribed Edge Transport servers, you can disable this service.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Local System</p></td>
@@ -276,11 +276,9 @@ The following table describes the Exchange services that are installed on Mailbo
 </tbody>
 </table>
 
-
 ## Exchange services on Exchange 2013 Client Access servers
 
 The following table describes the Exchange services that are installed on Client Access servers.
-
 
 <table style="width:100%;">
 <colgroup>
@@ -392,11 +390,9 @@ The following table describes the Exchange services that are installed on Client
 </tbody>
 </table>
 
-
 ## Exchange services on Exchange 2013 Edge Transport servers
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
-
 
 <table style="width:100%;">
 <colgroup>
@@ -423,7 +419,7 @@ The following table describes the Exchange services that are installed on Edge T
 <tr class="odd">
 <td><p>Microsoft Exchange ADAM</p></td>
 <td><p>ADAM_MSExchange</p></td>
-<td><p>Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) that's automatically created by Exchange Setup.</p></td>
+<td><p>Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the Active Directory Lightweight Directory Services (AD LDS) that's automatically created by Exchange Setup.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Network Service</p></td>
 <td><p>COM+ Event System</p></td>
@@ -435,8 +431,7 @@ The following table describes the Exchange services that are installed on Edge T
 <td><p>Provides Exchange SmartScreen spam definition updates.</p>
 
 > [!NOTE]
-> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
-
+> On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332">Deprecating support for SmartScreen in Outlook and Exchange</A>.
 
 </td>
 <td><p>Automatic</p></td>
@@ -447,7 +442,7 @@ The following table describes the Exchange services that are installed on Edge T
 <tr class="odd">
 <td><p>Microsoft Exchange Credential Service</p></td>
 <td><p>MSExchangeEdgeCredential</p></td>
-<td><p>Monitors credential changes in UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) and installs the changes on the Edge Transport server.</p></td>
+<td><p>Monitors credential changes in Active Directory Lightweight Directory Services (AD LDS) and installs the changes on the Edge Transport server.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Local System</p></td>
 <td><p>Microsoft Exchange ADAM</p></td>
@@ -501,4 +496,3 @@ The following table describes the Exchange services that are installed on Edge T
 </tr>
 </tbody>
 </table>
-

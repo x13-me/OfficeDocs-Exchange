@@ -1,19 +1,21 @@
-﻿---
+---
 title: 'Exchange 2013 Performance Counters: Exchange 2013 Help'
 TOCTitle: Exchange 2013 Performance Counters
 ms:assetid: 9143dd77-7c30-4769-8de1-28c717cfa9e9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn904093(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn904093(v=EXCHG.150)
 ms:contentKeyID: 63917938
-ms.date: 02/06/2017
+ms.reviewer: 
+manager: serdars
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
 # Exchange 2013 Performance Counters
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 ## Exchange 2013 Performance Counters
 
@@ -22,7 +24,6 @@ The following sections list helpful performance counters you can use when troubl
 ## Exchange Domain Controller Connectivity Counters
 
 The following tables displays acceptable thresholds and information about Exchange domain controller connectivity counters.
-
 
 <table>
 <colgroup>
@@ -61,11 +62,9 @@ The following tables displays acceptable thresholds and information about Exchan
 </tbody>
 </table>
 
-
 ## Processor and Process Counters
 
 The following tables displays acceptable thresholds and information about processors and process counters.
-
 
 <table>
 <colgroup>
@@ -109,11 +108,9 @@ The following tables displays acceptable thresholds and information about proces
 </tbody>
 </table>
 
-
 ## Memory Counters
 
 The following tables displays acceptable thresholds and information about memory counters.
-
 
 <table>
 <colgroup>
@@ -140,11 +137,9 @@ The following tables displays acceptable thresholds and information about memory
 </tbody>
 </table>
 
-
 ## .NET Framework Counters
 
 The following tables displays acceptable thresholds and information about .NET Framework counters.
-
 
 <table>
 <colgroup>
@@ -176,11 +171,9 @@ The following tables displays acceptable thresholds and information about .NET F
 </tbody>
 </table>
 
-
 ## Network Counters
 
 The following tables displays acceptable thresholds and information about common network counters.
-
 
 <table>
 <colgroup>
@@ -201,27 +194,25 @@ The following tables displays acceptable thresholds and information about common
 </tr>
 <tr class="odd">
 <td><p>TCPv6\Connection Failures</p></td>
-<td><p>Shows the number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. The number of TCP connections that can be established is constrained by the size of the nonpaged pool. When the nonpaged pool is depleted, no new connections can be established.</p></td>
-<td><p>Not applicable</p></td>
+<td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from the SYN-SENT state or the SYN-RCVD state, plus the number of times TCP connections have made a direct transition to the LISTEN state from the SYN-RCVD state.</p></td>
+<td><p>An increasing number of failures, or a consistently increasing rate of failures, can indicate a bandwidth shortage.</p></td>
 </tr>
 <tr class="even">
 <td><p>TCPv4\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 <tr class="odd">
 <td><p>TCPv6\Connections Reset</p></td>
 <td><p>Shows the number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state.</p></td>
-<td><p>An increasing number of resets or a consistently increasing rate of resets can indicate a bandwidth shortage.</p></td>
+<td><p>An increasing number of resets, or a consistently increasing rate of resets, can indicate a bandwidth shortage.</p></td>
 </tr>
 </tbody>
 </table>
 
-
 ## Netlogon Counters
 
-The following tables displays acceptable thresholds and information about common counters for monitoring NTLM authentication issues and MaxConcurrentAPI issues. See Microsoft Knowledge Base article 2688798 [How to do performance tuning for NTLM authentication by using the MaxConcurrentAPI setting](https://go.microsoft.com/fwlink/p/?linkid=389728) for more information.
-
+The following tables displays acceptable thresholds and information about common counters for monitoring NTLM authentication issues and MaxConcurrentAPI issues. See the Microsoft Knowledge Base article [KB2688798](https://support.microsoft.com/help/2688798) for more information.
 
 <table>
 <colgroup>
@@ -238,7 +229,7 @@ The following tables displays acceptable thresholds and information about common
 <tr class="even">
 <td><p>\Netlogon\Semaphore Waiters</p></td>
 <td><p>The number of the thread that is waiting to obtain the semaphore.</p></td>
-<td><p>See Microsoft Knowledge Base article 2688798 <a href="https://go.microsoft.com/fwlink/p/?linkid=389728">How to do performance tuning for NTLM authentication by using the MaxConcurrentAPI setting</a></p></td>
+<td><p>See the Microsoft Knowledge Base article <a href="https://support.microsoft.com/help/2688798">KB2688798</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>\Netlogon\Semaphore Holders</p></td>
@@ -263,17 +254,12 @@ The following tables displays acceptable thresholds and information about common
 </tbody>
 </table>
 
-
 ## Database Counters
 
 The following table shows active log I/O latency requirements counters and their acceptable thresholds. When thresholds are exceeded, the client experience degrades. For example, users may experience message delivery delays or slow system performance.
 
-
 > [!NOTE]
-> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional database counters can be found in <A href="https://go.microsoft.com/fwlink/p/?linkid=525622">Mailbox Server Counters</A>.
-
-
-
+> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional database counters can be found in <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff367871(v=exchg.141)">Mailbox Server Counters</A>.
 
 <table>
 <colgroup>
@@ -335,11 +321,9 @@ The following table shows active log I/O latency requirements counters and their
 </tbody>
 </table>
 
-
 ## ASP.NET
 
 The following tables displays acceptable thresholds and information about ASP.NET counters.
-
 
 <table>
 <colgroup>
@@ -386,11 +370,9 @@ The following tables displays acceptable thresholds and information about ASP.NE
 </tbody>
 </table>
 
-
 ## RPC Client Access Counters
 
 The following tables displays acceptable thresholds and information about RPC Client Access counters.
-
 
 <table>
 <colgroup>
@@ -437,11 +419,9 @@ The following tables displays acceptable thresholds and information about RPC Cl
 </tbody>
 </table>
 
-
 ## HTTP Proxy Counters
 
 The following tables displays information about HTTP Proxy counters.
-
 
 <table>
 <colgroup>
@@ -484,17 +464,12 @@ The following tables displays information about HTTP Proxy counters.
 </tbody>
 </table>
 
-
 ## Information Store Counters
 
 The following tables displays acceptable thresholds and information about Information Store counters.
 
-
 > [!NOTE]
-> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional Information Store counters can be found in <A href="https://go.microsoft.com/fwlink/p/?linkid=525622">Mailbox Server Counters</A>.
-
-
-
+> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional Information Store counters can be found in <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff367871(v=exchg.141)">Mailbox Server Counters</A>.
 
 <table>
 <colgroup>
@@ -536,11 +511,9 @@ The following tables displays acceptable thresholds and information about Inform
 </tbody>
 </table>
 
-
 ## Client Access Server Counters
 
 The following tables displays information about client connection counters and Internet Information Services (IIS) counters.
-
 
 <table>
 <colgroup>
@@ -603,11 +576,9 @@ The following tables displays information about client connection counters and I
 </tbody>
 </table>
 
-
 ## Workload Management Counters
 
 The following tables displays information about Exchange Workload Management counters. These counters are important to monitor because workload management may run tasks in the background during off-peak times.
-
 
 <table>
 <colgroup>
@@ -633,4 +604,3 @@ The following tables displays information about Exchange Workload Management cou
 </tr>
 </tbody>
 </table>
-

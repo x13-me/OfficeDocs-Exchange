@@ -1,26 +1,28 @@
 ---
-title: "Common attachment blocking scenarios for mail flow rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
-description: "Admins can learn how to use mail flow rules to block attachments in Exchange Online."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Common attachment blocking scenarios for mail flow rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Common attachment blocking scenarios for mail flow rules in Exchange Online
 
 Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
 
-For additional examples showing how to block specific attachments, see:
-
-- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server)
-
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection)
+For additional examples showing how to block specific attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
 
 The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) to add filters. In the Exchange Online portal, browse to **Protection**, and then select **Malware Filter**.
 
@@ -36,11 +38,11 @@ To get started implementing any of these scenarios to block certain message type
 
 5. Select the conditions and actions you want.
 
-**Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
+**Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
 
-```
+```PowerShell
 Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
 ```
 
@@ -105,7 +107,4 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
-[Mail flow rules (Exchange Server)](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
-
-[Mail flow rules (Exchange Online Protection)](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
-
+[Mail flow rules (Exchange Online Protection)](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

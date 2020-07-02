@@ -1,18 +1,22 @@
 ---
-title: "Create dialing rules for users"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 3/9/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
-description: "Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Create dialing rules for users in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Create dialing rules for users
+# Create dialing rules for users in Exchange Online
 
 Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:
 
@@ -40,7 +44,7 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 - Estimated time to complete: Less than 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md)) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
@@ -51,7 +55,7 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to create a dialing rule
 
@@ -63,14 +67,12 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 4. On the **New Dialing Rule** page, enter the following information:
 
-  - **Dialing rule name**: Enter the name of the dialing rule group you want this rule to be a part of. To combine it with other rules, use the same group name. To create a new dialing rule group, enter a new unique name.
+   - **Dialing rule name**: Enter the name of the dialing rule group you want this rule to be a part of. To combine it with other rules, use the same group name. To create a new dialing rule group, enter a new unique name.
 
-  - **Number pattern to transform (number mask)**: Enter the number pattern to transform before dialing, for example, 91425xxxxxxx. If a caller dials a number that matches, UM transforms it to the dialed number before placing the call. Enter only numbers and the wildcard (x). The number pattern is also called a number mask.
+   - **Number pattern to transform (number mask)**: Enter the number pattern to transform before dialing, for example, 91425xxxxxxx. If a caller dials a number that matches, UM transforms it to the dialed number before placing the call. Enter only numbers and the wildcard (x). The number pattern is also called a number mask.
 
-  - **Dialed number**: Enter the number to dial. Use only numbers and the wildcard (x), as in the number pattern 9xxxxxxx. Wildcards (x) are substituted with the digits from the original number dialed by the user. Make sure the number of wildcards in the dialed number is the same as the number of wildcards in the number pattern.
+   - **Dialed number**: Enter the number to dial. Use only numbers and the wildcard (x), as in the number pattern 9xxxxxxx. Wildcards (x) are substituted with the digits from the original number dialed by the user. Make sure the number of wildcards in the dialed number is the same as the number of wildcards in the number pattern.
 
-  - **Comment**: Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls."
+   - **Comment**: Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls."
 
 5. Click **OK** to save the dialing rule. You can continue to enter rules, using the same dialing rule group name for rules that you want to authorize together.
-
-

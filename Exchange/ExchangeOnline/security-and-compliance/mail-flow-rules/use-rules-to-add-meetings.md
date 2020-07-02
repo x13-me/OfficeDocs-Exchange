@@ -1,15 +1,21 @@
 ---
-title: "Use mail flow rules to automatically add meetings to calendars in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
-description: "Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Use mail flow rules to automatically add meetings to calendars in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use mail flow rules to automatically add meetings to calendars in Exchange Online
@@ -41,7 +47,7 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 - For more information about opening and using the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -56,7 +62,7 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 3. In the **New rule** page that opens, click **More options**.
 
-![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
+   ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 4. Configure these additional settings on the **New rule** page:
 
@@ -82,15 +88,15 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 7. Configure these additional settings on the **New rule** page:
 
-  - **Name**: Direct to Calendar triage action (or anything descriptive).
+   - **Name**: Direct to Calendar triage action (or anything descriptive).
 
-  - **Apply this rule if** \> **The sender** \> **is this person**: Select the same users as in step 3.
+   - **Apply this rule if** \> **The sender** \> **is this person**: Select the same users as in step 3.
 
-  - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
+   - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
 
-  - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-TriageAction`
+   - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-TriageAction`
 
-  - **to the value** `MoveToDeletedItems`
+   - **to the value** `MoveToDeletedItems`
 
    When you're finished, click **Save**.
 
@@ -100,29 +106,29 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 1. To create the mail flow rule that turns regular meeting invitations into Direct to Calendar meeting invitations, use the following syntax:
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar response" -From "<designated sender 1>","<designated sender 2>"... -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-Response" -SetHeaderValue Accept
    ```
 
    This example configures the rule using the dedicated mailbox named Direct to Calendar invites.
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar response" -From "Direct to Calendar invites" -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-Response" -SetHeaderValue Accept
    ```
 
 2. To create the mail flow rule that prevents Direct to Calendar meeting invitations from appearing in the Inbox of recipients, use the following syntax:
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar triage action" -From "<designated sender 1>","<designated sender 2>"... -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-TriageAction" -SetHeaderValue MoveToDeletedItems
    ```
 
    This example configures the rule using the dedicated mailbox named Direct to Calendar invites.
 
-   ```
+   ```PowerShell
    New-TransportRule -Name "Direct to Calendar triage action" -From "Direct to Calendar invites" -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-TriageAction" -SetHeaderValue MoveToDeletedItems
    ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ## How do you know this worked?
 
@@ -132,9 +138,9 @@ To verify that you have successfully configured Direct to Calendar meeting invit
 
 - The designated sender mailbox will receive meeting acceptance responses to Direct to Calendar meetings. Use the following strategies to help minimize the impact of these messages on the designated sender:
 
-   - In Outlook, enable the **Update tracking information, and then delete responses that don't contain comments** and **After updating tracking information, move receipt to \<Deleted Items\>** settings in **Mail** \> **Tracking** for the designated sender mailbox. For more information, see [Change how meeting requests, polls, and read or delivery receipts are processed](https://go.microsoft.com/fwlink/p/?linkid=847058).
+  - In Outlook, enable the **Update tracking information, and then delete responses that don't contain comments** and **After updating tracking information, move receipt to \<Deleted Items\>** settings in **Mail** \> **Tracking** for the designated sender mailbox. For more information, see [Change how meeting requests, polls, and read or delivery receipts are processed](https://support.microsoft.com/office/3e18ef46-57c0-4e49-ad89-b44ae75596ed).
 
-   - Clearing the **Request Responses** setting in Direct to Calendar meeting invitations doesn't prevent responses from being sent back to the designated sender mailbox.
+  - Clearing the **Request Responses** setting in Direct to Calendar meeting invitations doesn't prevent responses from being sent back to the designated sender mailbox.
 
 - If the designated mailbox sends a meeting cancellation for a Direct to Calendar meeting, the cancelled meeting title is always changed to **CANCELED: \<previous meeting title\>**, and the cancelled meeting remains in the calendars of attendees until they manually remove it.
 

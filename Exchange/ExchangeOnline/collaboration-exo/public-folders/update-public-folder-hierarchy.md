@@ -1,15 +1,21 @@
 ---
-title: "Update the public folder hierarchy"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You only need to update the public folder hierarchy if you want to manually invoke the hierarchy synchronizer and the mailbox assistant. Both these are invoked at least once every 24 hours for each public folder mailbox in the organization. The hierarchy synchronizer is invoked every 15 minutes if any users are logged on to a secondary mailbox through Microsoft Outlook or a Microsoft Exchange Web Services client.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
-description: "You only need to update the public folder hierarchy if you want to manually invoke the hierarchy synchronizer and the mailbox assistant. Both these are invoked at least once every 24 hours for each public folder mailbox in the organization. The hierarchy synchronizer is invoked every 15 minutes if any users are logged on to a secondary mailbox through Microsoft Outlook or a Microsoft Exchange Web Services client."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Update the public folder hierarchy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Update the public folder hierarchy
@@ -20,7 +26,7 @@ You only need to update the public folder hierarchy if you want to manually invo
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can't perform this procedure in the EAC. You must use Exchange Online PowerShell.
 
@@ -35,14 +41,12 @@ You only need to update the public folder hierarchy if you want to manually invo
 
 This example updates the public folder hierarchy on the public folder mailbox PF_marketing and suppresses the command's output.
 
-```
+```PowerShell
 Update-PublicFolderMailbox -Identity PF_marketing -InvokeSynchronizer -SuppressStatus
 ```
 
 This example updates all public folder mailboxes and suppresses the command's output.
 
-```
+```PowerShell
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
-
-

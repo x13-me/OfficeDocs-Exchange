@@ -1,15 +1,21 @@
 ---
-title: "Address book policy procedures in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: A list of links to the procedure topics for address book policies (ABPs) in Exchange Online
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 71e5dc2f-5de2-4089-8690-f2a0ed8ede0d
-description: "A list of links to the procedure topics for address book policies (ABPs) in Exchange Online"
+ms.reviewer: 
+title: Address book policy procedures in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Address book policy procedures in Exchange Online

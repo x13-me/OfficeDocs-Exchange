@@ -1,15 +1,19 @@
 ---
-title: "Procedures for Edge Subscriptions"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: After you've subscribed an Edge Transport server to an Active Directory site in your Exchange organization as described in Edge Subscriptions, you might need to perform maintenance tasks on the Edge Subscription. These tasks are described in this topic.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 27de4104-fb8e-4eab-9ad2-a64f81a4fb69
-description: "After you've subscribed an Edge Transport server to an Active Directory site in your Exchange organization as described in Edge Subscriptions, you might need to perform maintenance tasks on the Edge Subscription. These tasks are described in this topic."
+ms.reviewer: 
+title: Procedures for Edge Subscriptions
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for Edge Subscriptions
@@ -35,25 +39,25 @@ After you remove the Edge Subscription, synchronization of information from AD L
 
 1. To remove the Edge Subscription from the Edge Transport server, use the following syntax.
 
-   ```
+   ```PowerShell
    Remove-EdgeSubscription <EdgeTransportServerIdentity>
    ```
 
    For example, to remove the Edge Subscription on the Edge Transport server named Edge01, run the following command.
 
-   ```
+   ```PowerShell
    Remove-EdgeSubscription Edge01
    ```
 
 2. To remove the Edge Subscription from the Mailbox server, use the following syntax.
 
-   ```
+   ```PowerShell
    Remove-EdgeSubscription <EdgeTransportServerIdentity>
    ```
 
    For example, to remove the Edge Subscription for the Edge Transport server named Edge01 on a Mailbox server in the subscribed Active Directory site, run the following command.
 
-   ```
+   ```PowerShell
    Remove-EdgeSubscription Edge01
    ```
 
@@ -110,7 +114,7 @@ A manual EdgeSync resets the EdgeSync synchronization schedule. The next automat
 
 To manually run EdgeSync, use the following syntax.
 
-```
+```PowerShell
 Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
 ```
 
@@ -122,7 +126,7 @@ The following example starts EdgeSync with the following options:
 
 - Only the changes since the last replication are synchronized.
 
-```
+```PowerShell
 Start-EdgeSynchronization -Server Mailbox01
 ```
 
@@ -134,7 +138,7 @@ This example starts EdgeSync with the following options:
 
 - All recipient and configuration data are fully synchronized.
 
-```
+```PowerShell
 Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
 ```
 
@@ -150,14 +154,12 @@ You can use the _ExcludeRecipientTest_ parameter on the **Test-EdgeSynchronizati
 
 To verify EdgeSync results for a single recipient, use the following syntax on a Mailbox server in the subscribed Active Directory site.
 
-```
+```PowerShell
 Test-EdgeSynchronization -VerifyRecipient <emailaddress>
 ```
 
 This example verifies EdgeSync results for the user kate@contoso.com.
 
-```
+```PowerShell
 Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
 ```
-
-

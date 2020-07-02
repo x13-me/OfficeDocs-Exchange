@@ -1,18 +1,22 @@
 ---
-title: "UM and voice mail terminology"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: This topic contains the terms and definitions that are used with Unified Messaging.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
-description: "This topic contains the terms and definitions that are used with Unified Messaging."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: UM and voice mail terminology in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# UM and voice mail terminology
+# UM and voice mail terminology in Exchange Online
 
 This topic contains the terms and definitions that are used with Unified Messaging.
 
@@ -22,7 +26,7 @@ audio codec
 
 audio notes
 
-> Text-based notes that can be added to a voice mail message that has been received in Outlook or Outlook Web App.
+> Text-based notes that can be added to a voice mail message that has been received in Outlook or Outlook on the web (formerly known as Outlook Web App).
 
 auto attendant
 
@@ -62,7 +66,7 @@ dialing rule group
 
 fax partner
 
-> UM fax partners provide applications or services that can accept calls handed off by UM when a fax tone is detected. The partner's product or service then receives the fax data, creates a message, and delivers it to the UM-enabled user as an email message with a .tif attachment. These messages will appear in the Fax search folder in Outlook and Outlook Web App.
+> UM fax partners provide applications or services that can accept calls handed off by UM when a fax tone is detected. The partner's product or service then receives the fax data, creates a message, and delivers it to the UM-enabled user as an email message with a .tif attachment. These messages will appear in the Fax search folder in Outlook and Outlook on the web.
 
 hunt group
 
@@ -162,7 +166,7 @@ Protected Voice Mail
 
 public switched telephone network (PSTN)
 
-> PSTN is a grouping of the world's public circuit-switched telephone networks. This grouping resembles the way that the Internet is a grouping of the world's public IP-based packet-switched networks.
+> PSTN is a grouping of the world's public circuit-switched telephone networks. This grouping resembles the way that the internet is a grouping of the world's public IP-based packet-switched networks.
 
 reset
 
@@ -178,7 +182,7 @@ RTAudio codec
 
 SIP-enabled PBX
 
-> A SIP-enabled PBX is a telephony device that acts as a networking switch for switching calls in a telephony or circuit-switched network. However, the difference between a SIP-enabled PBX and a traditional PBX is that the SIP-enabled PBX can connect to the Internet and use the SIP protocol to make calls over the Internet.
+> A SIP-enabled PBX is a telephony device that acts as a networking switch for switching calls in a telephony or circuit-switched network. However, the difference between a SIP-enabled PBX and a traditional PBX is that the SIP-enabled PBX can connect to the internet and use the SIP protocol to make calls over the internet.
 
 SIP notification
 
@@ -253,5 +257,3 @@ VoIP gateway
 welcome greeting
 
 > A greeting that is played when an external caller calls in to a UM auto attendant or when an Outlook Voice Access user or another caller calls a subscriber access number that is configured on a UM dial plan. The default welcome greetings can be changed by a customer to make them specific to an organization or location.
-
-

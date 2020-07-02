@@ -1,15 +1,21 @@
 ---
-title: "Create a distribution group naming policy"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
-description: "A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Create a distribution group naming policy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Create a distribution group naming policy
@@ -36,27 +42,27 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 - Text strings, with underscore characters, used for a single prefix (DG) and suffix (Users):
 
-    DG_\<Group Name\>_Users
+  DG_\<Group Name\>_Users
 
 - Multiple prefixes (DG and Contoso) and one suffix (Users), using text strings:
 
-    DG_Contoso_\<Group Name\>_Users
+  DG_Contoso_\<Group Name\>_Users
 
 - An attribute (Department) used for the prefix:
 
-    Department_\<Group Name\>
+  Department_\<Group Name\>
 
-    For example, say that your school populates the Department attribute for faculty members. Here's an example of a group name created by a faculty member in the Psychology department:
+  For example, say that your school populates the Department attribute for faculty members. Here's an example of a group name created by a faculty member in the Psychology department:
 
-    **Psychology_Cognitive201**
+  **Psychology_Cognitive201**
 
-    In this example, the underscore character (_) is provided as the only text string in a second prefix to separate the department name from the group name.
+  In this example, the underscore character (_) is provided as the only text string in a second prefix to separate the department name from the group name.
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - The maximum length for a group name is 64 characters. This includes the combined number of characters in the prefix, the group name provided by the user, and the suffix.
 
@@ -69,7 +75,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to create a group naming policy
 
@@ -77,11 +83,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
-  - **Attribute**: Select the attribute and then click **OK**.
+   - **Attribute**: Select the attribute and then click **OK**.
 
-  - **Text**: Type the text string and click **OK**.
+   - **Text**: Type the text string and click **OK**.
 
-    Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
+   Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
 
 3. Click **Add** to add additional prefixes.
 
@@ -89,17 +95,17 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 5. Click **Add** to add additional suffixes.
 
-    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
+   After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
 6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
 7. Click **Blocked Words** to add or remove blocked words.
 
-  - To add a word to the list, type the word to block and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   - To add a word to the list, type the word to block and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-  - To remove a word from the list, select it and click **Remove**.
+   - To remove a word from the list, select it and click **Remove**.
 
-  - To edit an existing blocked word, select it and click **Edit**.
+   - To edit an existing blocked word, select it and click **Edit**.
 
 8. When you are finished, click **Save**.
 
@@ -109,12 +115,10 @@ To verify that you've successfully created a group naming policy, do the followi
 
 - In the EAC, select **Groups** \> **More** \> **Configure group naming policy**.
 
-    On the **Group naming policy** page, the group naming policy that you defined is displayed under **Preview of policy**.
+  On the **Group naming policy** page, the group naming policy that you defined is displayed under **Preview of policy**.
 
 - In Windows PowerShell, run the following command to display the group naming policy.
 
-  ```
+  ```PowerShell
   Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```
-
-

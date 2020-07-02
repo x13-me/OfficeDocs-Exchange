@@ -1,15 +1,19 @@
 ---
-title: "Manage mail contacts"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
-description: "Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization."
+ms.reviewer:
+title: Manage mail contacts
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail contacts
@@ -20,14 +24,14 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 - Estimated time to complete: 2 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Create a mail contact
 
@@ -37,25 +41,25 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
 
-3. Complete the following boxes on the **New mail contact** page: 
+3. Complete the following boxes on the **New mail contact** page:
 
-  - **First name**: Use this box to type the contact's first name.
+   - **First name**: Use this box to type the contact's first name.
 
-  - **Initials**: Use this box to type the contact's initials.
+   - **Initials**: Use this box to type the contact's initials.
 
-  - **Last name**: Use this box to type the contact's last name.
+   - **Last name**: Use this box to type the contact's last name.
 
-  - **\* Display name**: Use this box to type a display name for the contact. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - **\* Display name**: Use this box to type a display name for the contact. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
 
-  - **\* Name**: Use this box to type a name for the contact. This is the name that's listed in the directory service. Like the display name, this box is populated by default with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - **\* Name**: Use this box to type a name for the contact. This is the name that's listed in the directory service. Like the display name, this box is populated by default with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
 
-  - **\* Alias**: Use this box to type an alias (64 characters or less) for the contact. This box is required.
+   - **\* Alias**: Use this box to type an alias (64 characters or less) for the contact. This box is required.
 
-  - **\* External email address**: Use this box to type the outside email account of the contact. This box is required. Email sent to this contact is forwarded to this email address.
+   - **\* External email address**: Use this box to type the outside email account of the contact. This box is required. Email sent to this contact is forwarded to this email address.
 
-  - **Organizational unit**: You can select an organizational unit (OU) other than the default, which is the recipient scope. If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default, which is the recipient scope. If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
-    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
+     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
 4. When you've finished, click **Save**.
 
@@ -63,13 +67,13 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 This example creates a mail contact for Debra Garcia in Exchange Server 2016.
 
-```
+```PowerShell
 New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -OrganizationalUnit Users
 ```
 
 This example mail-enables an existing contact named Karen Toh in Exchange Server 2016.
 
-```
+```PowerShell
 Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
 ```
 
@@ -81,7 +85,7 @@ To verify that you've successfully created a mail contact, do one of the followi
 
 - In the Exchange Management Shell, run the following command to display information about the new mail contact.
 
-  ```
+  ```PowerShell
   Get-MailContact <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
@@ -148,7 +152,7 @@ Use the **Email Options** section to add or remove proxy addresses for the mail 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
->  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 ### Use the Exchange Management Shell to change mail contact properties
 
@@ -156,31 +160,31 @@ Properties for a mail contact are stored in both Active Directory and Exchange. 
 
 For more information, see the following topics:
 
-- [Get-Contact](http://technet.microsoft.com/library/59315afb-fab5-4984-b3a1-ba1f82df8a10.aspx)
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
 
-- [Set-Contact](http://technet.microsoft.com/library/c86ca5af-bb1d-4619-8af8-9f04c83d84c5.aspx)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
 
-- [Get-MailContact](http://technet.microsoft.com/library/d254bdd5-d497-424c-97ad-d7e8f7e73c27.aspx)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
 
-- [Set-MailContact](http://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using the Exchange Management Shell to change mail contact properties.
 
 This example configures the Title, Department, Company, and Manager properties for the mail contact Kai Axford.
 
-```
+```PowerShell
 Set-Contact "Kai Axford" -Title Consultant -Department "Public Relations" -Company Fabrikam -Manager "Karen Toh"
 ```
 
 This example sets the CustomAttribute1 property to a value of PartTime for all mail contacts and hides them from the organization's address book.
 
-```
+```PowerShell
 Get-MailContact | Set-MailContact -CustomAttribute1 PartTime -HiddenFromAddressListsEnabled $true
 ```
 
 This example sets the CustomAttribute15 property to a value of TemporaryEmployee for all mail contacts in the Public Relations department.
 
-```
+```PowerShell
 Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -CustomAttribute15 TemporaryEmployee
 ```
 
@@ -192,13 +196,13 @@ To verify that you've successfully changed properties for a mail contact, do the
 
 - In the Exchange Management Shell, use the **Get-Contact** and **Get-MailContact** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts. In the example above where all mail contacts had the CustomAttribute1 property set to PartTime and were hidden from the address book, run the following command to verify the changes.
 
-  ```
+  ```PowerShell
   Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
   ```
 
   In the example above where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
 
-  ```
+  ```PowerShell
   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
   ```
 
@@ -218,8 +222,8 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 2. In the list of contacts, select two or more mail contacts. You can't bulk edit a combination of mail contacts and mail users.
 
-    > [!TIP]
-    > You can select multiple adjacent mail contacts by holding down the Shift key and clicking the first mail contact, and then clicking the last mail contact you want to edit. You can also select multiple mail contacts by holding down the Ctrl key and clicking each one that you want to edit.
+   > [!TIP]
+   > You can select multiple adjacent mail contacts by holding down the Shift key and clicking the first mail contact, and then clicking the last mail contact you want to edit. You can also select multiple mail contacts by holding down the Ctrl key and clicking each one that you want to edit.
 
 3. In the Details pane, under **Bulk Edit**, click **Update** under **Contact Information** or **Organization**.
 
@@ -233,8 +237,6 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
 
 - In the Exchange Management Shell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell.
 
+  ```PowerShell
+  Get-Contact -ResultSize unlimited -Filter "Company -eq 'Adatum'" | Format-List Name,Office,Manager
   ```
-  Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
-  ```
-
-

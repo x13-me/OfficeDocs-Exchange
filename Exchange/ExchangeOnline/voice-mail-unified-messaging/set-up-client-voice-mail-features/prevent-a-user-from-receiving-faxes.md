@@ -1,18 +1,22 @@
 ---
-title: "Prevent a user from receiving faxes"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
-description: "Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Prevent a user from receiving faxes in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# Prevent a user from receiving faxes
+# Prevent a user from receiving faxes in Exchange Online
 
 Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
 
@@ -23,7 +27,7 @@ By default, the user's mailbox and the dial plan that is linked with the user al
 > [!NOTE]
 > You can use the EAC to configure fax settings on a Unified Messaging mailbox policy. However, you must use Exchange Online PowerShell to configure fax settings on dial plans or for individual users.
 
-For more information about fax partners, see [Microsoft PinPoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+For more information about fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 For additional management tasks related to faxing, see [Faxing procedures](faxing-procedures.md).
 
@@ -31,7 +35,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
@@ -42,14 +46,12 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to prevent a UM-enabled user from receiving faxes
 
 This example prevents a UM-enabled user named Tony from receiving fax messages in his mailbox.
 
-```
+```PowerShell
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```
-
-

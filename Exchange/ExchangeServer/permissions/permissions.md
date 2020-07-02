@@ -1,15 +1,19 @@
 ---
-title: "Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange Server 2019'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
-description: "Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange Server 2019"
+ms.reviewer:
+title: Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server permissions
@@ -64,22 +68,22 @@ Exchange Server includes several built-in role groups, each one providing permis
 
 |**Role group**|**Description**|
 |:-----|:-----|
-|[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|Administrators who are members of the Organization Management role group have administrative access to the entire Exchange Server organization and can perform almost any task against any Exchange Server object, with some exceptions, such as the `Discovery Management` role.  <br/> **Important**: Because the Organization Management role group is a powerful role, only users or USGs that perform organizational-level administrative tasks that can potentially impact the entire Exchange organization should be members of this role group.|
-|[View-Only Organization Management](http://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|Administrators who are members of the View Only Organization Management role group can view the properties of any object in the Exchange organization.|
-|[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx)|Administrators who are members of the Recipient Management role group have administrative access to create or modify Exchange Server recipients within the Exchange Server organization.|
-|[UM Management](http://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|Administrators who are members of the UM Management role group can manage features in the Exchange organization such as Unified Messaging (UM) service configuration, UM properties on mailboxes, UM prompts, and UM auto attendant configuration. (**Note**: UM is not available on Exchange 2019.)|
-|[Help Desk](http://technet.microsoft.com/library/e7958752-22e4-4155-a2fc-948099dec6f7.aspx)|The Help Desk role group, by default, enables members to view and modify the Outlook on the web (formerly known as Outlook Web App) options of any user in the organization. These options might include modifying the user's display name, address, and phone number. They don't include options that aren't available in Outlook on the web options, such as modifying the size of a mailbox or configuring the mailbox database on which a mailbox is located.|
-|[Hygiene Management](http://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|Administrators who are members of the Hygiene Management role group can configure the antivirus and antispam features of Exchange Server. Third-party programs that integrate with Exchange Server can add service accounts to this role group to grant those programs access to the cmdlets required to retrieve and configure the Exchange configuration.|
-|[Records Management](http://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|Users who are members of the Records Management role group can configure compliance features, such as retention policy tags, message classifications, and transport rules.|
-|[Discovery Management](http://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx)|Administrators or users who are members of the Discovery Management role group can perform searches of mailboxes in the Exchange organization for data that meets specific criteria and can also configure legal holds on mailboxes.|
-|[Public Folder Management](http://technet.microsoft.com/library/e167d95e-bb39-43fd-b960-204ab0de27da.aspx)|Administrators who are members of the Public Folder Management role group can manage public folders on servers running Exchange Server.|
-|[Server Management](http://technet.microsoft.com/library/30cbc4de-adb3-42e8-922f-7661095bdb8c.aspx)|Administrators who are members of the Server Management role group can configure server-specific configuration of transport, Unified Messaging, client access, and mailbox features such as database copies, certificates, transport queues and Send connectors, virtual directories, and client access protocols. (**Note**: UM is not available on Exchange 2019.)|
-|[Delegated Setup](http://technet.microsoft.com/library/49362059-e53f-4135-ad2b-9edfbfff9a1e.aspx)|Administrators who are members of the Delegated Setup role group can deploy servers running Exchange Server that have been previously provisioned by a member of the Organization Management role group.|
-|[Compliance Management](http://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx)|Users who are members of the Compliance Management role group can configure and manage Exchange compliance settings in accordance with their organization's policy.|
- 
+|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|Administrators who are members of the Organization Management role group have administrative access to the entire Exchange Server organization and can perform almost any task against any Exchange Server object, with some exceptions, such as the `Discovery Management` role.  <br/> **Important**: Because the Organization Management role group is a powerful role, only users or USGs that perform organizational-level administrative tasks that can potentially impact the entire Exchange organization should be members of this role group.|
+|[View-Only Organization Management](https://docs.microsoft.com/exchange/view-only-organization-management-exchange-2013-help)|Administrators who are members of the View Only Organization Management role group can view the properties of any object in the Exchange organization.|
+|[Recipient Management](https://docs.microsoft.com/exchange/recipient-management-exchange-2013-help)|Administrators who are members of the Recipient Management role group have administrative access to create or modify Exchange Server recipients within the Exchange Server organization.|
+|[UM Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|Administrators who are members of the UM Management role group can manage features in the Exchange organization such as Unified Messaging (UM) service configuration, UM properties on mailboxes, UM prompts, and UM auto attendant configuration. (**Note**: UM is not available on Exchange 2019.)|
+|[Help Desk](https://docs.microsoft.com/exchange/help-desk-exchange-2013-help)|The Help Desk role group, by default, enables members to view and modify the Outlook on the web (formerly known as Outlook Web App) options of any user in the organization. These options might include modifying the user's display name, address, and phone number. They don't include options that aren't available in Outlook on the web options, such as modifying the size of a mailbox or configuring the mailbox database on which a mailbox is located.|
+|[Hygiene Management](https://docs.microsoft.com/exchange/hygiene-management-exchange-2013-help)|Administrators who are members of the Hygiene Management role group can configure the antivirus and antispam features of Exchange Server. Third-party programs that integrate with Exchange Server can add service accounts to this role group to grant those programs access to the cmdlets required to retrieve and configure the Exchange configuration.|
+|[Records Management](https://docs.microsoft.com/exchange/records-management-exchange-2013-help)|Users who are members of the Records Management role group can configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|
+|[Discovery Management](https://docs.microsoft.com/exchange/discovery-management-exchange-2013-help)|Administrators or users who are members of the Discovery Management role group can perform searches of mailboxes in the Exchange organization for data that meets specific criteria and can also configure legal holds on mailboxes.|
+|[Public Folder Management](https://docs.microsoft.com/exchange/public-folder-management-exchange-2013-help)|Administrators who are members of the Public Folder Management role group can manage public folders on servers running Exchange Server.|
+|[Server Management](https://docs.microsoft.com/exchange/server-management-exchange-2013-help)|Administrators who are members of the Server Management role group can configure server-specific configuration of transport, Unified Messaging, client access, and mailbox features such as database copies, certificates, transport queues and Send connectors, virtual directories, and client access protocols. (**Note**: UM is not available on Exchange 2019.)|
+|[Delegated Setup](https://docs.microsoft.com/exchange/delegated-setup-exchange-2013-help)|Administrators who are members of the Delegated Setup role group can deploy servers running Exchange Server that have been previously provisioned by a member of the Organization Management role group.|
+|[Compliance Management](https://docs.microsoft.com/exchange/compliance-management-exchange-2013-help)|Users who are members of the Compliance Management role group can configure and manage Exchange compliance settings in accordance with their organization's policy.|
+
 If you work in a small organization that has only a few administrators, you might only ever use the Organization Management role group, and none of the others. If you work in a larger organization, you might have administrators who perform specific tasks administering Exchange, such as recipient or server management. In those cases, you might add one administrator to the Recipient Management role group, and another administrator to the Server Management role group. Those administrators can then manage their specific areas of Exchange Server but won't have permissions to manage areas they're not responsible for.
 
-If you can't find a built-in role group that fits the jobs your administrators need to do, you can create role groups and add roles to them. For more information, see [Work with role groups](#CustomRoleGroup.md) later in this topic.
+If you can't find a built-in role group that fits the jobs your administrators need to do, you can create role groups and add roles to them. For more information, see [Work with role groups](#work-with-role-groups) later in this topic.
 
 ### Role assignment policies
 
@@ -103,14 +107,13 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
 ![Role, role assignment policy, mailbox relationship](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
 
-The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#CustomRAP.md) later in this topic.
+The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
 ## Work with role groups
-<a name="CustomRoleGroup"> </a>
 
 To manage your permissions using role groups in Exchange Server, we recommend that you use the Exchange admin center (EAC). When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **new role group** dialog box, shown in the following figure, to perform these tasks.
 
- **New role group dialog box in the EAC**
+### New role group dialog box in the EAC
 
 ![New role group dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
 
@@ -134,11 +137,10 @@ Existing role groups can also be modified. You can add and remove roles from exi
 > Although you can change which roles are assigned to built-in role groups, we recommend that you copy built-in role groups, modify the role group copy, and then add members to the role group copy.
 
 ## Work with role assignment policies
-<a name="CustomRAP"> </a>
 
 To manage the permissions that you grant end users to manage their own mailbox in Exchange Server, we recommend that you use the EAC. When you use the EAC to manage end-user permissions, you can add roles, remove roles, and create role assignment policies with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **role assignment policy** dialog box, shown in the following figure, to perform these tasks.
 
- **Role assignment policy dialog box in the EAC**
+### Role assignment policy dialog box in the EAC
 
 ![Role assignment policy dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
 
@@ -164,7 +166,7 @@ If you want to assign different end-user permissions to the various types of use
 
 If you want to change which role assignment policy is the default, you needs to use the Exchange Management Shell. When you change the default role assignment policy, any mailboxes that are created will be associated with the new default role assignment policy if one wasn't explicitly specified. The role assignment policy associated with existing mailboxes doesn't change when you select a new default role assignment policy.
 
- **Notes**:
+**Notes**:
 
 - If you select a check box for a role that has child roles, the check boxes for the child roles are also selected. If you clear the check box for a role with child roles, the check boxes for the child roles are also cleared.
 
@@ -173,5 +175,3 @@ If you want to change which role assignment policy is the default, you needs to 
   - [Manage role assignment policies](role-assignment-policies.md)
 
   - [Change the assignment policy on a mailbox](policy-assignments-for-mailboxes.md)
-
-

@@ -1,15 +1,21 @@
 ---
-title: "Configure a moderated recipient in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: In your Exchange Online organization, you may need to restrict access to specific recipients. The most common scenario is the need to control messages sent to large distribution groups. Depending on your organization's requirements, you may also need to control the messages sent to executive mailboxes or partner contacts. You can use moderated recipients to accomplish these tasks. When you configure a recipient for moderation, all messages sent to that recipient are subject to approval by the designated moderators.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
-description: "In your Exchange Online organization, you may need to restrict access to specific recipients. The most common scenario is the need to control messages sent to large distribution groups. Depending on your organization's requirements, you may also need to control the messages sent to executive mailboxes or partner contacts. You can use moderated recipients to accomplish these tasks. When you configure a recipient for moderation, all messages sent to that recipient are subject to approval by the designated moderators."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Configure a moderated recipient in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Configure a moderated recipient in Exchange Online
@@ -20,9 +26,9 @@ In your Exchange Online organization, you may need to restrict access to specifi
 
 - Estimated time to complete: 15 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Moderated Transport" entry in the [Transport Permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Moderated Transport" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-- You can use the Exchange admin center (EAC) to configure a distribution group for moderation. All other recipient types can only be configured for moderation using PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can use the Exchange admin center (EAC) to configure a distribution group for moderation. All other recipient types can only be configured for moderation using PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -69,7 +75,7 @@ To accomplish the tasks in this example scenario, perform the following procedur
 
 Run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModerationEnabled $true -ModeratedBy <recipient1,recipient2...> -ByPassModerationFromSendersOrMembers <recipient1,recipient2...> -SendModerationNotifications <Never | Always | Internal>
 ```
 
@@ -85,13 +91,13 @@ This example configures the following moderation settings for the distribution g
 
 To accomplish the tasks in this example scenario, run the following command:
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ModerationEnabled $true -ModeratedBy "David Hamilton","Yossi Ran" -ByPassModerationFromSendersOrMembers HR -SendModerationNotifications Internal
 ```
 
 To add or remove users from the list of moderators or recipients who bypass moderation without affecting other entries, use the following syntax:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModeratedBy @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -ByPassModerationFromSendersOrMembers @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
 ```
 
@@ -101,7 +107,7 @@ This example configures the following moderation settings for the distribution g
 
 - Remove the user michelle@contoso.com from the list of existing senders who bypass moderation.
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ModeratedBy @{Add="chris@contoso.com"} -ByPassModerationFromSendersOrMembers @{Remove="michelle@contoso.com"
 ```
 
@@ -114,5 +120,3 @@ To verify that you have successfully configured a recipient for moderation, do t
 2. Verify the designated moderators receive notification.
 
 3. Verify the recipients who bypass moderation receive the message directly.
-
-

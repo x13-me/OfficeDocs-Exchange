@@ -1,15 +1,21 @@
 ---
-title: "Exchange ActiveSync in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your mailbox.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ff7f0d3d-1b9d-4c49-b7fe-1ab5d2805b00
-description: "Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your mailbox."
+ms.reviewer: 
+title: Exchange ActiveSync in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+f1.keywords:
+- NOCSH
+manager: serdars
+
 ---
 
 # Exchange ActiveSync in Exchange Online
@@ -81,7 +87,7 @@ You can control which mobile devices can synchronize. You do this by monitoring 
 
 In addition to the ability to configure security options for communications between the Exchange server and your mobile devices, Exchange ActiveSync offers the following features to enhance the security of mobile devices:
 
-- **Remote wipe**: If a mobile device is lost, stolen, or otherwise compromised, you can issue a remote wipe command from the Exchange Server computer or from any Web browser by using Outlook Web App. This command erases all data from the mobile device.
+- **Remote wipe**: If a mobile device is lost, stolen, or otherwise compromised, you can issue a remote wipe command from the Exchange Server computer or from any web browser by using Outlook on the web (formerly known as Outlook Web App). This command erases all data from the mobile device.
 
 - **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords. These options include the following:
 
@@ -95,7 +101,7 @@ In addition to the ability to configure security options for communications betw
 
   - **Enforce password history**: Select this check box to force the mobile phone to prevent the user from reusing their previous passwords. The number that you set determines the number of past passwords that the user won't be allowed to reuse.
 
-  - **Enable password recovery**: Select this check box to enable password recovery for the mobile device. Users can use Outlook Web App to look up their recovery password and unlock their mobile device. Administrators can use the Exchange admin center to look up a user's recovery password.
+  - **Enable password recovery**: Select this check box to enable password recovery for the mobile device. Users can use Outlook on the web to look up their recovery password and unlock their mobile device. Administrators can use the Exchange admin center to look up a user's recovery password.
 
   - **Wipe device after failed (attempts)**: This option lets you specify whether you want the phone's memory to be wiped after multiple failed password attempts.
 
@@ -106,4 +112,4 @@ In addition to the ability to configure security options for communications betw
   - **Require encryption on storage cards**: Select this check box to require encryption on the mobile device's removable storage card. This increases security by encrypting all information on the storage cards for the mobile device.
 
 > [!IMPORTANT]
-> Although the Exchange ActiveSync protocol provides support for the different features listed above, it is up to the mobile device operating system and manufacturers (OEMs) to build support for these features in their mobile operating system and email apps (default or third party). Not all EAS features listed above are supported by 3rd party mobile devices like iOS, Android, etc. Microsoft has no control over which EAS features are supported by these 3rd party mobile device manufacturers. Contact the manufactures directly for help with EAS features on 3rd party mobile devices.
+> Although the Exchange ActiveSync protocol provides support for the different features listed above, it is up to the mobile device operating system and manufacturers (OEMs) to build support for these features in their mobile operating system and email apps (default or third-party). Not all EAS features listed above are supported by third-party mobile devices such as iOS and Android. Microsoft has no control over which EAS features are supported by these third-party mobile device manufacturers. Contact the manufactures directly for help with EAS features on third-party mobile devices.

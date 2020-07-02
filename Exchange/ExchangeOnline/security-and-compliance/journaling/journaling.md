@@ -1,15 +1,21 @@
 ---
-title: "Journaling in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
-description: "Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more."
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: Journaling in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Journaling in Exchange Online
@@ -58,7 +64,7 @@ The following are key aspects of journal rules:
 
 - **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
 
-In Exchange Online, the maximum number of journal rules you can create is 10.
+In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
 
 ### Journal rule scope
 
@@ -75,6 +81,9 @@ You can use a journal rule to journal only internal messages, only external mess
 You can implement targeted journaling rules by specifying the SMTP address of the recipient you want to journal. The recipient can be a mailbox, distribution group, mail user, or contact. These recipients may be subject to regulatory requirements, or they may be involved in legal proceedings where email messages or other communications are collected as evidence. By targeting specific recipients or groups of recipients, you can easily configure a journaling environment that matches your organization's processes and meets regulatory and legal requirements. Targeting only the specific recipients that need to be journaled also minimizes storage and other costs associated with retention of large amounts of data.
 
 All messages sent to or from the journaling recipients you specify in a journaling rule are journaled. If you specify a distribution group as the journaling recipient, all messages sent to or from members of the distribution group are journaled. If you don't specify a journaling recipient, all messages sent to or from recipients that match the journal rule scope are journaled.
+
+> [!NOTE]
+> The SMTP address specified for the journaling recipient cannot contain a wildcard character. For example, the SMTP address cannot be listed as `*@contoso.com`. 
 
 ### Journaling mailbox
 
@@ -107,14 +116,25 @@ When you configure an alternate journaling mailbox, you should use the same crit
 
 ## Journal reports
 
-A journal report is the message that the Journaling agent generates when a message matches a journal rule and is to be submitted to the journaling mailbox. The original message that matches the journal rule is included unaltered as an attachment to the journal report. The body of a journal report contains information from the original message such as the sender email address, message subject, message-ID, and recipient email addresses. This is also referred to as envelope journaling, and is the only journaling method supported by Office 365.
+A journal report is the message that the Journaling agent generates when a message matches a journal rule and is to be submitted to the journaling mailbox. The original message that matches the journal rule is included unaltered as an attachment to the journal report. The body of a journal report contains information from the original message such as the sender email address, message subject, message-ID, and recipient email addresses. This is also referred to as envelope journaling, and is the only journaling method supported by Microsoft 365 and Office 365.
 
 ### Journal reports and IRM-protected messages
 
-When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
+When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
+
+> [!IMPORTANT]
+> The Journal Report Decryption feature currently does not support the use of custom OME templates. If you utilize a custom OME template, the Journal report will not contain a decrypted copy of the message. Journal Report Decryption currently only works with the default OME templates provided by Exchange Online (Encrypt and Do Not Forward).
 
 ## Troubleshooting
 
+When a message matches the scope of multiple journal rules, all matching rules will be triggered.
+
+- If the matching rules are configured with different journal mailboxes, a journal report will be sent to each journal mailbox.
+
+- If the matching rules are all configured with the same journal mailbox, only one journal report is sent to the journal mailbox.
+
+Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).

@@ -1,15 +1,22 @@
 ---
-title: "Use a screen reader to identify your admin role in the Exchange admin center"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fab999d3-2c8d-481d-be3a-d684c6402768
-description: "Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online."
+ms.reviewer: 
+manager: serdars
+description: Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to identify your admin role in the Exchange admin center
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+f1.keywords:
+- CSH
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to identify your admin role in the Exchange admin center
@@ -17,7 +24,7 @@ description: "Admins can learn how to use a screen reader to view admin role gro
 To complete administrative tasks in the Exchange admin center (EAC) in Exchange Online, you need the appropriate administrative permissions, which are grouped and assigned by role. By using a screen reader and keyboard shortcuts, you can identify your admin role, in addition to the role you must be assigned to complete particular tasks.
 
 > [!NOTE]
-> To learn how to open the EAC, refer to [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md). To learn more admin role groups, go to [Understanding management role groups](https://go.microsoft.com/fwlink/p/?LinkId=798789).
+> To learn how to open the EAC, refer to [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md). To learn more admin role groups, go to [Manage role groups in Exchange Online](../permissions-exo/role-groups.md).
 
 1. In the EAC, to move the focus to **Dashboard**, which is the first link in the navigation pane, press Ctrl+F6 twice. You hear "Dashboard, Primary navigation link..
 
@@ -46,4 +53,4 @@ To complete administrative tasks in the Exchange admin center (EAC) in Exchange 
 
    - If you're using JAWS, to hear the description of the admin role group, press the Down Arrow key, and then, to hear the rest of the text in the details pane, press Alt+Down Arrow.
 
-8. If you do not hear your name among the members, you have not been assigned the appropriate role to complete your task. Contact your Office 365 administrator.
+8. If you do not hear your name among the members, you have not been assigned the appropriate role to complete your task. Contact your Microsoft 365 or Office 365 administrator.

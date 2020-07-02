@@ -1,18 +1,22 @@
 ---
-title: "UM dial plan procedures [EXO]"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Create a UM dial plan
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
-description: "Create a UM dial plan"
+ms.reviewer: 
+f1.keywords:
+- NOCSH
+title: UM dial plan procedures [EXO] in Exchange Online
+ms.collection: exchange-online
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
-# UM dial plan procedures [EXO]
+# UM dial plan procedures [EXO] in Exchange Online
 
 [Create a UM dial plan](create-um-dial-plan.md)
 
@@ -31,5 +35,3 @@ description: "Create a UM dial plan"
 [Configure a dial plan for users who have similar names](configure-dial-plan-for-users-with-similar-names.md)
 
 [Delete a UM dial plan](delete-um-dial-plan.md)
-
-

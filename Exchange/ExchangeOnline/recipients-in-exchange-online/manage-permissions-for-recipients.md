@@ -1,15 +1,21 @@
 ---
-title: "Manage permissions for recipients in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to assign Full Access, Send As, and Send on Behalf permissions to mailboxes and groups in Exchange Online.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "Admins can learn how to assign Full Access, Send As, and Send on Behalf permissions to mailboxes and groups in Exchange Online."
+ms.reviewer:
+f1.keywords:
+- NOCSH
+title: Manage permissions for recipients in Exchange Online
+ms.collection:
+- exchange-online
+- M365-email-calendar
+audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage permissions for recipients in Exchange Online
@@ -22,9 +28,12 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 |**Permission**|**Description**|**Recipient types in the EAC**|**Additional recipient types in PowerShell**|**Available delegate types**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Full Access**| Allows the delegate to open the mailbox, and view, add and remove the contents of the mailbox. Doesn't allow the delegate to send messages from the mailbox. <br/><br/> If you assign the Full Access permission to a mailbox that's hidden from address lists, the delegate won't be able to open the mailbox. By default, discovery mailboxes are hidden from address lists. <br/><br/> By default, the mailbox auto-mapping feature uses Autodiscover to automatically open the mailbox in the delegate's Outlook profile (in addition to their own mailbox). If you don't want this to happen, you need to take one of the following actions: <br/><br/>• Use the **Add-MailboxPermission** cmdlet in Exchange Online PowerShell to assign the Full Access permission with the `-AutoMapping $false` setting. For more information, see the [Use Exchange Online PowerShell to assign the Full Access permission to mailboxes](#use-exchange-online-powershell-to-assign-the-full-access-permission-to-mailboxes) section in this topic. <br/><br/>• Assign the Full Access permission to a mail-enabled security group. The mailbox won't open in the Outlook profile of each member.|User mailboxes <br/><br/> Resource mailboxes <br/><br/> Shared mailboxes|Discovery mailboxes|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups|
-|**Send As**|Allows the delegate to send messages as if they came directly from the mailbox or group. There's no indication that the message was sent by the delegate. <br/><br/> Doesn't allow the delegate to read the contents of the mailbox. <br/><br/> If you assign the Send As permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox.|User mailboxes <br/><br/> Resource mailboxes <br/><br/> Shared mailboxes <br/><br/> Distribution groups <br/><br/> Dynamic distribution groups <br/><br/> Mail-enabled security groups <br/><br/> Office 365 groups|n/a|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups|
-|**Send on Behalf**|Allows the delegate to send messages from the mailbox or group. The From address of these messages clearly shows that the message was sent by the delegate (" _\<Delegate\>_ on behalf of _\<MailboxOrGroup\>_"). However, replies to these messages are sent to the mailbox or group, not to the delegate. <br/><br/> Doesn't allow the delegate to read the contents of the mailbox. <br/><br/> If you assign the Send on Behalf permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox. <br/><br/> If a user has both Send As and Send on Behalf permissions to a mailbox or group, the Send on Behalf permission is always used.|User mailboxes <br/><br/> Resource mailboxes <br/><br/> Distribution groups <br/><br/> Dynamic distribution groups <br/><br/> Mail-enabled security groups <br/><br/> Office 365 groups|Shared mailboxes|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups <br/><br/> Distribution groups|
+|**Full Access**| Allows the delegate to open the mailbox, and view, add and remove the contents of the mailbox. Doesn't allow the delegate to send messages from the mailbox. <br/><br/> If you assign the Full Access permission to a mailbox that's hidden from address lists, the delegate won't be able to open the mailbox. By default, discovery mailboxes are hidden from address lists. <br/><br/> By default, the mailbox auto-mapping feature uses Autodiscover to automatically open the mailbox in the delegate's Outlook profile (in addition to their own mailbox). Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group. If you don't want mailboxes to be auto-mapped, you need to take one of the following actions: <br/><br/>• Use the **Add-MailboxPermission** cmdlet in Exchange Online PowerShell to assign the Full Access permission with the `-AutoMapping $false` setting. For more information, see the [Use Exchange Online PowerShell to assign the Full Access permission to mailboxes](#use-exchange-online-powershell-to-assign-the-full-access-permission-to-mailboxes) section in this topic. <br/><br/>• Assign the Full Access permission to a mail-enabled security group. The mailbox won't open in the Outlook profile of each member.|User mailboxes <br/><br/> Resource mailboxes <br/><br/> Shared mailboxes|Discovery mailboxes|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups|
+|**Send As**|Allows the delegate to send messages as if they came directly from the mailbox or group. There's no indication that the message was sent by the delegate. <br/><br/> Doesn't allow the delegate to read the contents of the mailbox. <br/><br/> If you assign the Send As permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox.|User mailboxes <br/><br/> Resource mailboxes <br/><br/> Shared mailboxes <br/><br/> Distribution groups <br/><br/> Dynamic distribution groups <br/><br/> Mail-enabled security groups <br/><br/> Microsoft 365 groups|n/a|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups|
+|**Send on Behalf**|Allows the delegate to send messages from the mailbox or group. The From address of these messages clearly shows that the message was sent by the delegate (" _\<Delegate\>_ on behalf of _\<MailboxOrGroup\>_"). However, replies to these messages are sent to the mailbox or group, not to the delegate. <br/><br/> Doesn't allow the delegate to read the contents of the mailbox. <br/><br/> If you assign the Send on Behalf permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox. <br/><br/> |User mailboxes <br/><br/> Resource mailboxes <br/><br/> Distribution groups <br/><br/> Dynamic distribution groups <br/><br/> Mail-enabled security groups <br/><br/> Microsoft 365 groups|Shared mailboxes|Mailboxes with user accounts <br/><br/> Mail users with accounts <br/><br/> Mail-enabled security groups <br/><br/> Distribution groups|
+
+> [!NOTE]
+> If a user has both Send As and Send on Behalf permissions to a mailbox or group, the Send As permission is always used.
 
 ## What do you need to know before you begin?
 
@@ -32,7 +41,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-- To open and use the EAC, see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To open and use the EAC, see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - When a mailbox is added to Outlook using Advanced Settings, only the primary mailbox will be added; the archive mailbox won't be added. If a user needs to also access the archive mailbox, the mailbox should be added to Outlook as a second account in the same Outlook profile.
 
@@ -43,7 +52,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 ## Use the EAC to assign permissions to individual mailboxes
 
-1. In the EAC, click **Recipients** in the feature pane. Depending on the type of mailbox that you want to assign permissions for, click on one of the following tabs: 
+1. In the EAC, click **Recipients** in the feature pane. Depending on the type of mailbox that you want to assign permissions for, click on one of the following tabs:
 
    - **Mailboxes**: User or linked mailboxes.
 
@@ -53,7 +62,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions: 
+3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions:
 
    - **Send As**: Messages sent by a delegate appear to come from the mailbox.
 
@@ -87,7 +96,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions: 
+3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions:
 
    - **Send As**: Messages sent by a delegate appear to come from the group.
 
@@ -101,45 +110,45 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 ## Use Exchange Online PowerShell to assign the Full Access permission to mailboxes
 
-You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage the Full Access permission for mailboxes. These cmdlets use the same basic syntax: 
+You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage the Full Access permission for mailboxes. These cmdlets use the same basic syntax:
 
-```
+```PowerShell
 Add-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All [-AutoMapping $false]
 ```
 
-```
-Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All 
+```PowerShell
+Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All
 ```
 
 This example assigns the delegate Raymond Sam the Full Access permission to the mailbox of Terry Adams.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "Terry Adams" -User raymonds -AccessRights FullAccess -InheritanceType All
 ```
 
 This example assigns Esther Valle the Full Access permission to the organization's default discovery search mailbox, and prevents the mailbox from automatically opening in Esther Valle's Outlook.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -User estherv -AccessRights FullAccess -InheritanceType All -AutoMapping $false
 ```
 
 This example assigns members of the Helpdesk mail-enabled security group the Full Access permission to the shared mailbox named Helpdesk Tickets.
 
-```
+```PowerShell
 Add-MailboxPermission -Identity "Helpdesk Tickets" -User Helpdesk -AccessRights FullAccess -InheritanceType All
 ```
 
 This example removes Full Access permission for Jim Hance from Ayla Kol's mailbox.
 
-```
+```PowerShell
 Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAccess -InheritanceType All
 ```
 
 For detailed syntax and parameter information, see:
 
-- [Add-MailboxPermission](http://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
 
-- [Remove-MailboxPermission](http://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx).
+- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxpermission).
 
 ### How do you know this worked?
 
@@ -149,37 +158,37 @@ To verify that you've successfully assigned or removed the Full Access permissio
 
 - Replace _\<MailboxIdentity\>_ with the identity of the mailbox and run the following command in Exchange Online PowerShell to verify that the delegate is or isn't listed..
 
-   ```
-   Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table -Auto User,Deny,IsInherited,AccessRights
+   ```PowerShell
+   Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table User,Deny,IsInherited,AccessRights -Auto
    ```
 
-   For more information, see [Get-MailboxPermission](http://technet.microsoft.com/library/56bcc678-1598-4c9b-8b4f-4fa11c89ec41.aspx).
+   For more information, see [Get-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/get-mailboxpermission).
 
 ## Use Exchange Online PowerShell to assign the Send As permission to mailboxes and groups
 
-You use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets to manage the Send As permission for mailboxes and groups. These cmdlets use the same basic syntax: 
+You use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets to manage the Send As permission for mailboxes and groups. These cmdlets use the same basic syntax:
 
-```
+```PowerShell
 <Add-RecipientPermission | Remove-RecipientPermission> -Identity <MailboxOrGroupIdentity> -Trustee <DelegateIdentity> -AccessRights SendAs
 ```
 
 This example assigns the Send As permission to the Printer Support group on the shared mailbox named Contoso Printer Support.
 
-```
+```PowerShell
 Add-RecipientPermission -Identity "Contoso Printer Support" -Trustee "Printer Support" -AccessRights SendAs
 ```
 
 This example removes the Send As permission for the user Karen Toh on the mailbox for Yan Li.
 
-```
+```PowerShell
 Remove-RecipientPermission -Identity "Yan Li" -Trustee "Karen Toh" -AccessRights SendAs
 ```
 
 For detailed syntax and parameter information, see:
 
-- [Add-RecipientPermission](https://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
+- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)
 
-- [Remove-RecipientPermission](https://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
+- [Remove-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/remove-recipientpermission)
 
 ### How do you know this worked?
 
@@ -189,13 +198,13 @@ To verify that you've successfully assigned or removed the Send As permission fo
 
 - Replace _\<MailboxIdentity>_ and _\<DelegateIdentity>_ with the name, alias, or email address of the mailbox or group and run the following command in Exchange Online PowerShell to verify that the delegate is or isn't listed.
 
-   ```
+   ```PowerShell
    Get-RecipientPermission -Identity <MailboxIdentity> -Trustee <DelegateIdentity>
    ```
 
 ## Use Exchange Online PowerShell to assign the Send on Behalf permission to mailboxes and groups
 
-You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **Set-** cmdlets to manage the Send on Behalf permission for mailboxes and groups: 
+You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **Set-** cmdlets to manage the Send on Behalf permission for mailboxes and groups:
 
 - **Set-Mailbox**
 
@@ -203,11 +212,11 @@ You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **S
 
 - **Set-DynamicDistributionGroup**
 
-- **Set-UnifiedGroup**: Office 365 groups.
+- **Set-UnifiedGroup**: Microsoft 365 groups.
 
 The basic syntax for these cmdlets is:
 
-```
+```PowerShell
 <Cmdlet> -Identity <MailboxOrGroupIdentity> -GrantSendOnBehalfTo <Delegates>
 ```
 
@@ -221,25 +230,25 @@ The _GrantSendOnBehalfTo_ parameter has the following options for delegate value
 
 This example assigns the delegate Holly Holt the Send on Behalf permission to the mailbox of Sean Chai.
 
-```
+```PowerShell
 Set-Mailbox -Identity seanc@contoso.com -GrantSendOnBehalfTo hollyh
 ```
 
 This example adds the group tempassistants@contoso.com to the list of delegates that have Send on Behalf permission to the Contoso Executives shared mailbox.
 
-```
+```PowerShell
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{Add="tempassistants@contoso.com"}
 ```
 
 This example assigns the delegate Sara Davis the Send on Behalf permission to the Printer Support distribution group.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity printersupport@contoso.com -GrantSendOnBehalfTo sarad
 ```
 
 This example removes the Send on Behalf permission that was assigned to the administrator on the All Employees dynamic distribution group.
 
-```
+```PowerShell
 Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{Remove="Administrator"}
 ```
 
@@ -253,25 +262,25 @@ To verify that you've successfully assigned or removed the Send on Behalf permis
 
    - Mailbox:
 
-     ```
+     ```PowerShell
      Get-Mailbox -Identity <MailboxIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
    - Distribution group or mail-enabled security group:
 
-     ```
+     ```PowerShell
      Get-DistributionGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
    - Dynamic distribution group:
 
-     ```
+     ```PowerShell
      Get-DynamicDistributionGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
-   - Office 365 group:
+   - Microsoft 365 group:
 
-     ```
+     ```PowerShell
      Get-UnifiedGroup -Identity <GroupIdentity> | Format-List GrantSendOnBehalfTo
      ```
 
@@ -279,10 +288,10 @@ To verify that you've successfully assigned or removed the Send on Behalf permis
 
 For more information about how delegates can use the permissions that are assigned to them on mailboxes and groups, see the following topics:
 
-- [Access another person's mailbox](https://go.microsoft.com/fwlink/p/?LinkId=823179)
+- [Access another person's mailbox](https://support.microsoft.com/office/a909ad30-e413-40b5-a487-0ea70b763081)
 
-- [Open and use a shared mailbox in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=816868)
+- [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-- [Open and use a shared mailbox in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=816870)
+- [Open and use a shared mailbox in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
-- [Send email from another person or group in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=823180)
+- [Send email from or on behalf of an Office 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

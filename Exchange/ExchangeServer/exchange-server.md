@@ -1,16 +1,20 @@
 ---
-title: "Exchange Server"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: All the information and resources you need to get started with Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: landing-page
+layout: LandingPage
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
-description: "Summary: All the information and resources you need to get started with Exchange Server 2016 or Exchange Server 2019."
+ms.reviewer: 
+title: Exchange Server
+ms.collection: exchange-server
+f1.keywords:
+- NOCSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server
@@ -25,7 +29,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/sign-up-blue.svg" alt="Sign up" />
+                            <img src="https://docs.microsoft.com/office/media/icons/sign-up-blue.svg" alt="Sign up" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -43,7 +47,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/download-blue.svg" alt="Download" />
+                            <img src="https://docs.microsoft.com/office/media/icons/download-blue.svg" alt="Download" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -55,13 +59,13 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?linkId=836274">
+        <a href="/Exchange/new-features/build-numbers-and-release-dates">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success.svg" alt="Success" />
+                            <img src="https://docs.microsoft.com/office/media/icons/success.svg" alt="Success" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -79,7 +83,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" />
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,7 +101,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -115,7 +119,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/globe-internet.svg" alt="Community" />
+                            <img src="https://docs.microsoft.com/office/media/icons/globe-internet.svg" alt="Community" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -128,9 +132,9 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
     </li>
 </ul>
 
----  
+---
 <h2>Exchange Server Deployment Assistant</h2>
-<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://go.microsoft.com/fwlink/?linkid=626978">Exchange Server Deployment Assistant</a>.</p>
+<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://assistants.microsoft.com/">Exchange Server Deployment Assistant</a>.</p>
 
 <h2>Planning and deployment</h2>
 <ul class="panelContent cardsW">
@@ -173,7 +177,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
             </div>
         </div>
     </li>
-</ul>  
-  
-  
-<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://technet.microsoft.com/library/bb124558%28EXCHG.141%29.aspx">Exchange Server 2010</a> and <a href="https://technet.microsoft.com/library/bb124558%28v=exchg.150%29.aspx">Exchange Server 2013</a> is also available on TechNet.
+</ul>
+
+
+<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124558(v=exchg.141)">Exchange Server 2010</a> and <a href="https://docs.microsoft.com/Exchange/exchange-server-2013-exchange-2013-help">Exchange Server 2013</a> is also available.
