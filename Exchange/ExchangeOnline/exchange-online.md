@@ -1,7 +1,6 @@
 ---
 localization_priority: Normal
-ms.topic: landing-page
-layout: LandingPage
+ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d0f509be-ee4b-46a2-9dc6-3bc3512a0a2d
@@ -23,62 +22,9 @@ manager: serdars
 
 Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://support.office.com/">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="Users" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>End users - see Office help and training</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/key-permissions.svg" alt="Key permissions" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Assign admin permissions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/Exchange/exchange-admin-center">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/document.svg" alt="Document" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Learn about the Exchange admin center</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![users-people](https://docs.microsoft.com/office/media/icons/users-people.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](https://docs.microsoft.com/office/media/icons/key-permissions.svg) | [Assign admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) | ![document](https://docs.microsoft.com/office/media/icons/document.svg) | [Learn about the Exchange admin center](/Exchange/exchange-admin-center)
 
 ---
 
