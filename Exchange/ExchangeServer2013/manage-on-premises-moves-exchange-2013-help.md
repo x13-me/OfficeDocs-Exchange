@@ -88,7 +88,7 @@ For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.c
 
 ## Use the EAC to create a batch move request
 
-log in to the EAC and perform the following steps:
+Log in to the EAC and perform the following steps:
 
 1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
@@ -112,6 +112,9 @@ Start-MigrationBatch -Identity LocalMove1
 ```
 
 For detailed syntax and parameter information, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch) and [Start-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Start-MigrationBatch).
+
+> [!NOTE]
+> All mailboxes that are specified in the CSV file will be migrated, even if they are outside of the RBAC scope (for example, an OU) that gives the admin permissions to migrate mailboxes.
 
 ## How do you know this worked?
 

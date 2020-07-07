@@ -203,6 +203,9 @@ A local move request for mailboxes that are specified in a CSV file is known as 
 
 For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help).
 
+> [!NOTE]
+> All mailboxes that are specified in the CSV file will be migrated, even if they are outside of the RBAC scope (for example, an OU) that gives the admin permissions to migrate mailboxes.
+
 To create a migration batch, use this syntax:
 
 ```PowerShell
