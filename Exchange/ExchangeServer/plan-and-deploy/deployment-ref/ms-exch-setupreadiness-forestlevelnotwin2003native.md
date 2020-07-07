@@ -31,4 +31,4 @@ For more information about Active Directory functional levels, see the following
 
 - [How Active Directory Functional Levels Work](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739548(v=ws.10))
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
