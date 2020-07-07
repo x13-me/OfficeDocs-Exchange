@@ -80,6 +80,6 @@ To verify that you have successfully enabled or disabled IRM on Client Access se
 
 - Run the **Get-IRMConfiguration** cmdlet and check the value of the *ClientAccessServerEnabled* property.
 
-    For an example of how to retrieve the IRM configuration, see [Examples](https://technet.microsoft.com/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
+    For an example of how to retrieve the IRM configuration, see [Examples](https://docs.microsoft.com/powershell/module/exchange/get-irmconfiguration#examples) in **Get-IRMConfiguration**.
 
 - Use Outlook Web App to create or read an IRM-protected message.

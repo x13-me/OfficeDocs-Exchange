@@ -32,7 +32,7 @@ If you're an admin for an Exchange hybrid or Exchange Online deployment, you may
 
 Looking for more than just documentation? Check out these other Exchange resources:
 
-- [Exchange Server Forums](https://go.microsoft.com/fwlink/p/?linkId=60612): The forum provides a place to discuss Exchange with users and Exchange Team members.
+- [Exchange Server Forums](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver): The forum provides a place to discuss Exchange with users and Exchange Team members.
 
 - [Exchange and Exchange Online development](https://docs.microsoft.com/exchange/client-developer/exchange-server-development): You'll find Exchange developer documentation here.
 
