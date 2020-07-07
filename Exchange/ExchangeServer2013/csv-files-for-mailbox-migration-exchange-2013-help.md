@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can use a CSV file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the **New-MigrationBatch** cmdlet in the Exchange Management Shell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:
 
-  - **Moves in on-premises Exchange organizations**
+- **Moves in on-premises Exchange organizations**
 
   - **Local move:** A local move is where you move mailboxes from one mailbox database to another. A local move occurs within a single forest.
 
@@ -31,8 +31,8 @@ You can use a CSV file to bulk migrate a large number of user mailboxes. You can
 
   - **Offboarding remote move migration:** You can also perform an *offboarding* remote move migration, where you migrate Exchange Online mailboxes to your on-premises Exchange organization.
 
-> [!NOTE]
-> Both onboarding and offboarding remote move migrations are initiated from your Exchange Online organization.
+  > [!NOTE]
+  > Both onboarding and offboarding remote move migrations are initiated from your Exchange Online organization.
 
   - **Staged Exchange migration:** You can also migrate a subset of mailboxes from an on-premises Exchange organization to Exchange Online. This is another type of onboarding migration. You can migrate only Exchange 2003 and Exchange 2007 mailboxes using a staged Exchange migration. Migrating Exchange 2010 and Exchange 2013 mailboxes isn't supported using a staged migration. Prior to running a staged migration, you have to use directory synchronization or some other method to provision mail users in your Exchange Online organization.
 
@@ -48,12 +48,15 @@ The first row, or header row, of a CSV file used for migrating users lists the n
 Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or the Exchange Management Shell. For more information and examples, see the section Attribute values in the CSV file override the values for the migration batch.
 
 > [!TIP]
-> You can use any text editor to create the CSV file, but using an application like Microsoft&nbsp;Excel will make it easier to import data and configure and organize CSV files. Be sure to save CSV files as a .csv or .txt file.
+> You can use any text editor to create the CSV file, but using an application like Microsoft Excel will make it easier to import data and configure and organize CSV files. Be sure to save CSV files as a .csv or .txt file.
 
 The following sections describe the supported attributes for the header row of a CSV file for each migration type. Each section includes a table that lists each supported attribute, whether it's required, an example of a value to use for the attribute, and a description.
 
 > [!NOTE]
-> In the following sections, <EM>source environment</EM> denotes the current location of a user mailbox or a database. <EM>Target environment</EM> denotes the location that the mailbox will be migrated to or the database that the mailbox will be moved to.
+> 
+> - In the following sections, _source environment_ denotes the current location of a user mailbox or a database. _Target environment_ denotes the location that the mailbox will be migrated to or the database that the mailbox will be moved to.
+> 
+> - All mailboxes that are specified in the CSV file will be migrated, even if they are outside of the RBAC scope (for example, an OU) that gives the admin permissions to migrate mailboxes.
 
 ## Local moves
 
