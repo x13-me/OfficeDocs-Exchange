@@ -22,7 +22,7 @@ manager: serdars
 
 In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 
-Here's a [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
+Here's a [video](https://www.youtube.com/watch?v=EQRjaiPPXvA&feature=youtu.be) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
 
 For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
@@ -177,4 +177,4 @@ To verify that you have applied the retention policy, do the following:
 2. Log on to the mailbox using Outlook or Outlook on the web and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

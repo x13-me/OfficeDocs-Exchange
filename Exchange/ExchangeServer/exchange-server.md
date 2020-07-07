@@ -113,7 +113,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?linkId=60612">
+        <a href="https://social.technet.microsoft.com/forums/office/home?category=exchangeserver">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

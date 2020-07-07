@@ -31,4 +31,4 @@ Download and install the 64-bit update from the following URL, and then click **
 
 Microsoft Knowledge Base article KB2894875, [Windows 8-based or Windows Server 2012-based computer freezes when you run the "dir" command on an ReFS volume](https://support.microsoft.com/help/2894875).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

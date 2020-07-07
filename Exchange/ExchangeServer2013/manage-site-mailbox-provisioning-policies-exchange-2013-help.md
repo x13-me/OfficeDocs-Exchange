@@ -34,7 +34,7 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
 - You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Create a site mailbox provisioning policy
 
