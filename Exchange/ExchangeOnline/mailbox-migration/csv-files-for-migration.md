@@ -56,7 +56,10 @@ Attribute values in the CSV file override the value of the corresponding paramet
 The following sections describe the supported attributes for the header row of a CSV file for each migration type. Each section includes a table that lists each supported attribute, whether it's required, an example of a value to use for the attribute, and a description.
 
 > [!NOTE]
-> In the following sections, source environment denotes the current location of a user mailbox or a database. Target environment denotes the location that the mailbox will be migrated to or the database that the mailbox will be moved to.
+> 
+> - In the following sections, source environment denotes the current location of a user mailbox or a database. Target environment denotes the location that the mailbox will be migrated to or the database that the mailbox will be moved to.
+> 
+> - All mailboxes that are specified in the CSV file will be migrated, even if they are outside of the RBAC scope (for example, an OU) that gives the admin permissions to migrate mailboxes.
 
 ### Staged Exchange migrations
 

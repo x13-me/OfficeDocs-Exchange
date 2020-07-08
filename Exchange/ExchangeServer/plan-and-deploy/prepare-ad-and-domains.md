@@ -64,7 +64,7 @@ For details about what's happening when Active Directory is being prepared for E
     - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Extend the Active Directory schema
 

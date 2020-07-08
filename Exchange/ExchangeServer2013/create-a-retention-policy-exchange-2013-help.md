@@ -170,4 +170,4 @@ To verify that you have applied the retention policy, do the following:
 2. Log on to the mailbox using Outlook or Outlook Web App and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
