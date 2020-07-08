@@ -36,4 +36,4 @@ After you deal with the mailbox databases on the server, run Exchange Setup agai
 
 - For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

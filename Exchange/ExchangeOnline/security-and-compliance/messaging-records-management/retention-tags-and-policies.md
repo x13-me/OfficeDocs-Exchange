@@ -22,7 +22,7 @@ manager: serdars
 
 In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 
-Watch this [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) for a quick overview of how to apply retention tags and a retention policy to a mailbox in Exchange Online.
+Watch this [video](https://www.youtube.com/watch?v=EQRjaiPPXvA&feature=youtu.be) for a quick overview of how to apply retention tags and a retention policy to a mailbox in Exchange Online.
 
 ## Messaging Records Management strategy
 <a name="MRM"> </a>

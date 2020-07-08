@@ -22,6 +22,6 @@ Microsoft Exchange Server 2013 Setup can't continue because it detected one or m
 > [!IMPORTANT]
 > After you upgrade your Exchange 2010 Edge Transport servers to Exchange 2010 SP3, you must re-create the Edge subscription between your Exchange organization and each Edge Transport server to update their server version in Active Directory. For more information about re-creating Edge subscriptions in Exchange 2010, see <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124096(v=exchg.141)">Managing Edge Subscriptions</A>.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.

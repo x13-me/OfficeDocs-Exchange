@@ -55,7 +55,7 @@ A remote wipe action deletes the synchronization profile, so when the user adds 
 > If you are using Intune, you should be using Intune to trigger data removal, not Exchange. Depending on the scenario, it could be accomplished via [App Protection Policy selective wipe](https://docs.microsoft.com/intune/apps-selective-wipe), or [Device enrollment retire/wipe commands](https://docs.microsoft.com/intune/devices-wipe).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to wipe a user's phone
 
