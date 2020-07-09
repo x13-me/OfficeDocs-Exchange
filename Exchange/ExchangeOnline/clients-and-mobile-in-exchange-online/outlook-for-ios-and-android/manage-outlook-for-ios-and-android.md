@@ -30,7 +30,7 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 
 1. **Recommended**: The Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory conditional access.
 
-2. Mobile Device Management (MDM) for Microsoft 365 or Office 365.
+2. Basic Mobility and Security for Microsoft 365.
 
 3. Third-party Mobile Device Management solutions.
 
@@ -70,33 +70,33 @@ Key features of the Enterprise Mobility + Security suite with Outlook for iOS an
 
 - **Selective wipe**. Microsoft Intune can remove email data from Outlook for iOS and Android, while leaving any personal email accounts intact (whether the device is enrolled or not). This is an increasingly important requirement as more businesses adopt a "bring your own device" approach to phones and tablets.
 
-### Using built-in Mobile Device Management (MDM)
+### Using Basic Mobility and Security for Microsoft 365
 
-MDM provides device management capabilities at no additional cost. Microsoft Intune powers these basic capabilities, providing a core set of controls in the Microsoft 365 admin center for organizations that need the basics.
+Basic Mobility and Security for Microsoft 365 provides device management capabilities at no additional cost. Microsoft Intune powers these basic capabilities, providing a core set of controls in the Microsoft 365 admin center for organizations that need the basics.
 
 Because this is a device management solution, there is no native capability to control which apps can be used, even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage conditional access policies.
 
-Outlook for iOS and Android fully supports the capabilities provided by MDM.
+Outlook for iOS and Android fully supports the capabilities provided by Basic Mobility and Security for Microsoft 365.
 
-For detailed information on MDM, see the following resources:
+For detailed information, see the following resources:
 
-- [Overview built-in Mobile Device Management for Office 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+- [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 - [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
-- Instructions for your end-users to enroll a device in Office 365 MDM: [Enroll your mobile device in Office 365](https://support.microsoft.com/office/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
+- Instructions for your end-users to enroll a device in Basic Mobility and Security: [Enroll your mobile device using Basic Mobility and Security](https://support.microsoft.com/office/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
 
 ### Using Third-Party Mobile Device Management Solutions
 
-Third-party MDM providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android.
+Third-party mobile device management providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android.
 
-Third-party MDM providers can also deploy certain app configuration settings, like account setup, organization allowed accounts mode, and general app configuration settings, to Outlook for iOS and Android; for more information, please see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+Third-party providers can also deploy certain app configuration settings, like account setup, organization allowed accounts mode, and general app configuration settings, to Outlook for iOS and Android; for more information, please see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 In order to manage and protect corporate data within the app (such as restricting actions with corporate data like cut, copy, paste, and "save as"), customers will need to use Microsoft's Enterprise Mobility + Security suite.
 
 ### Using Mobile Device Access and Mobile Device Mailbox Policies
 
-Microsoft recommends that customers use either the Enterprise Mobility + Security suite or the built-in MDM to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange admin center.
+Microsoft recommends that customers use either the Enterprise Mobility + Security suite or the built-in Basic Mobility and Security for Microsoft 365 to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange admin center.
 
 Outlook for iOS and Android supports the following Exchange mobile device mailbox policy settings:
 

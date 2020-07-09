@@ -67,14 +67,13 @@ Throughput limitations for contacts and calendars completely depend on the quota
 
 Additional migration limitations are described in the following table:
 
-
-|Data type  |Limitations  |
-|---------|---------|
-|Mail     |Vacation settings, Automatic reply settings, Filters/Rules will not be migrated         |
-|Meeting rooms     |Room bookings will not be migrated         |
-|Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
-|Contacts     |A maximum of three email addresses per contact are migrated over         |
-|Contacts     |Gmail tags, contact URLs, and custom tags will not be migrated         |
+|Data type|Limitations|
+|---|---|
+|Mail|Vacation settings, Automatic reply settings, Filters/Rules will not be migrated|
+|Meeting rooms|Room bookings will not be migrated|
+|Calendar|Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated|
+|Contacts|A maximum of three email addresses per contact are migrated over|
+|Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
 
 > [!TIP]
 > If you will be [starting your migration batch with Exchange Online Powershell](#start-a-g-suite-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch?view=exchange-ps).  
@@ -90,7 +89,7 @@ Additional migration limitations are described in the following table:
 
    ![Create a project](../media/gsuite-mig-1-newproject.png)
 
-Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
+3. Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
 
    ![Create service account](../media/gsuite-mig-2-newservice.png)
 
@@ -125,9 +124,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 3. Search for the following APIs, and then for each one, if necessary, click **Enable** to enable them for your project:
 
    - Gmail API
-
    - Google Calendar API
-
    - Contacts API
 
 ## Grant access to the service account for your Google tenant

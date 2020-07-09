@@ -238,4 +238,4 @@ Set-ADServerSettings -ViewEntireForest $true; Get-Mailbox -Arbitration | Format-
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

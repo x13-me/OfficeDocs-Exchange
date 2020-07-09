@@ -28,7 +28,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
 - You can't use the EAC to move user mailboxes to a recovered or dial tone database using database portability.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Shell to move user mailboxes to a recovered or dial tone database using database portability
 

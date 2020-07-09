@@ -24,6 +24,51 @@ Exchange admin center now uses a new portal at [https://admin.exchange.microsoft
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
+## June 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in June 2020.
+
+### Manager and directs
+
+Microsoft 365 administrators can now add **Manager** and **Direct reports** for individual mailboxes. Admins can manage this organizational information in the **Accounts** tab in the **Detail** panel.
+
+:::image type="content" source="media/whats-new-2020-06-1-directs.png" alt-text="Screen capture of manager and direct reports":::
+
+### Custom attributes
+
+Admins can include fifteen extension attributes that they can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
+
+:::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes":::
+
+### G-Suite automation
+
+Admins can migrate batches of users from G Suite to Microsoft 365. In order to move the mailboxes from G Suite to Microsoft 365, there is a series of steps that admins need to perform in G Suite in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
+
+:::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of G-suite automation":::
+
+## May 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in May 2020.
+
+### Delete shared mailbox
+
+In the modern EAC, Microsoft 365 administrators can now delete an already existing shared mailbox. Admins can also select multiple shared mailboxes and choose the **Delete** button in the command bar to bulk delete them.
+
+:::image type="content" source="media/whats-new-2020-05-1-delete-shared.png" alt-text="Screen capture of deleting shared mailboxes":::
+
+### Set default message size restriction
+
+Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages. However, admins can use this control to set a default limit. This limit will be applied to any new mailboxes created in the Exchange environment.
+
+:::image type="content" source="media/whats-new-2020-05-2-msgsize-restriction.png" alt-text="Screen shot of setting message size restrictions":::
+
+### Export to .csv
+
+Admins can now click on the **Export** button in the command bar to prepare a .csv file lists all of the mailboxes residing in Exchange Online.
+
+:::image type="content" source="media/whats-new-2020-05-3-export-csv.png" alt-text="Screen capture of exporting a csv file":::
+
+
 ## April 2020
 
 Here are some of the changes and new features we introduced in the modern EAC in April 2020.
@@ -115,9 +160,9 @@ We are working hard to create modern experiences for Exchange admins. Here are s
       - Organization
       - Public Folders
   - New Value additions for customers
-      - Recommendations
+      - Cloud shell
+      - Tenant switcher
       - Search
-      - G-Suite Automation
 
 Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange admin center, as well as other Exchange Online improvements that we announced at Microsoft Ignite 2019.
 
