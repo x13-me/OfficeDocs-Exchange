@@ -100,7 +100,7 @@ Below are the three configuration options to help you identify which one is in u
 
    5. If you can't connect to Microsoft 365 or Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
 
-6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
+6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.2 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
    For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
@@ -112,7 +112,7 @@ This can be caused by a number of issues:
 
 2. Try logging into OWA with the printer's username and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
 
-3. Check that your device or application supports TLS version 1.0 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.0 or above.
+3. Check that your device or application supports TLS version 1.2 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.2 or above.
 
 ### Error: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
