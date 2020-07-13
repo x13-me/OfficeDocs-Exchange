@@ -38,7 +38,7 @@ For additional management tasks related to creating a custom DLP policy, see [DL
 > Due to the variances in customer environments, Microsoft Customer Support Services (CSS) cannot participate in the development or testing of custom Regular Expression scripts ("RegEx scripts"). For RegEX custom script development, testing and debugging, customers will need to rely upon internal IT resources. Alternatively, customers may choose to use an external consulting resource such as Microsoft Consulting Services (MCS). Regardless of the script development resource, CSS EXO and EOP support engineers are not available to assist customers with custom RegEx script inquiries.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to create a custom DLP policy without any existing rules
 

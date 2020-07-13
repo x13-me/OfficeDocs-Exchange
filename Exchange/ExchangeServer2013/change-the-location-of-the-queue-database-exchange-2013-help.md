@@ -125,7 +125,7 @@ To verify that you successfully created a new queue database and new transaction
 
 3. If you can delete the old queue database and transaction log files from the old location after the Microsoft Exchange Transport service has started, those files are no longer being used.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Command Prompt to move the existing queue database and transaction logs to a new location
 
@@ -185,4 +185,4 @@ To verify that you successfully moved the existing queue database and transactio
 
 3. Verify there are no queue database or transaction log files at the original location.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

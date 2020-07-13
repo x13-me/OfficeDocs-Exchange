@@ -77,4 +77,4 @@ To verify that you have successfully configured the external postmaster address,
 
 2. From an external email account, send a message to your Exchange organization that will generate a delivery status notification (DSN). For example, you can configure a transport rule to send a non-delivery report (NDR) for a message from that sender that contains specific keywords. Verify the sender's email address in the DSN matches the value you specified.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

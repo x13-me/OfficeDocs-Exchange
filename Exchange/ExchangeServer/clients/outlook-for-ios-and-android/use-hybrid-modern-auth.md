@@ -28,7 +28,7 @@ For Exchange Server mailboxes, Outlook for iOS and Android's architecture is bui
 
 ![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
 
-Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization which is protected by a TLS-secured connection end-to-end, between Microsoft 365 or Office 365 and the app.
+Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utilizes the native Microsoft sync technology for data synchronization which is protected by a TLS-secured connection end-to-end, between Microsoft 365 or Office 365 and the app.
 
 The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status in your Exchange Online tenant. This data will be removed automatically from Exchange Online after 30 days when the account is deleted in Azure Active Directory.
 
@@ -111,14 +111,14 @@ The hybrid Modern Authentication architecture has the following technical requir
     
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
 
-   - A hybrid Microsoft 365 or Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is set up as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
+   - A hybrid Microsoft 365 or Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is set up as specified in the [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
        > [!NOTE]
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
 
    - Requires a Microsoft 365 or Office 365 Enterprise, Business, or Education organization.
 
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up. For more information about where Microsoft 365 and Office 365 data is located, visit the Microsoft Trust Center.
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter).
 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
 
@@ -126,7 +126,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Ensure SSL or TLS offloading is not being used between the load balancer and your Exchange servers, as this will affect the use of the OAuth token. SSL and TLS bridging (termination and re-encryption) is supported.
 
-4. **Intune setup**: Both Intune standalone and [Co-Management](https://docs.microsoft.com/sccm/comanage/overview) deployments are supported (MDM for Microsoft 365 or Office 365 is not supported).
+4. **Intune setup**: Both Intune standalone and [Co-Management](https://docs.microsoft.com/sccm/comanage/overview) deployments are supported (Basic Mobility and Security for Microsoft 365 is not supported).
 
 5. **Microsoft 365 and Office 365 licensing**:
 

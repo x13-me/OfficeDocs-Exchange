@@ -151,4 +151,4 @@ To troubleshoot this issue, follow these steps:
 
 [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
-[Managing Outlook Web App](https://technet.microsoft.com/3814b665-01e8-4881-9a44-163f14789ee4\(exchg.150\)#managing)
+[Outlook Web App](https://docs.microsoft.com/Exchange/outlook-web-app-exchange-2013-help)
