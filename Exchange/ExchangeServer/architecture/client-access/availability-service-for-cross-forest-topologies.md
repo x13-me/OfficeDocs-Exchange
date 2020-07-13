@@ -50,7 +50,7 @@ To enable GAL synchronization, you create management agents that import mail-ena
 - There are additional considerations when the target forest is Exchange Server 2013 or Exchange Server 2016. See [Cross forest free/busy lookup fails when target forest is Exchange Server 2013 or Exchange Server 2016](https://support.microsoft.com/help/3010570/cross-forest-free-busy-lookup-fails-when-target-forest-is-exchange-ser) for more information.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/Forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Management Shell to configure per-user free/busy information in a trusted cross-forest topology
 

@@ -210,4 +210,4 @@ To further verify that you have successfully created and configured the federati
 For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Get-FederationTrust) and [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/Get-FederationInformation).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

@@ -16,11 +16,7 @@ ms.custom: seo-marvel-apr2020
 
 # Perform a G Suite migration
 
-You can migrate batches of users from G Suite to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you have Azure Active Directory (AD) Connect (formerly known as Office 365 Directory Synchronization, or DirSync) set up, or that you manually provision all of the MailUsers outside of the migration process. You must specify a list of users to migrate for each batch.
-
-If you don't have Azure AD Connect in your environment, see [Deploy Office 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for set up instructions.
-
-To manually provision mail-enabled users without DirSync, see [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) for more information.
+You can migrate batches of users from G Suite to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch.
 
 All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
@@ -71,14 +67,13 @@ Throughput limitations for contacts and calendars completely depend on the quota
 
 Additional migration limitations are described in the following table:
 
-
-|Data type  |Limitations  |
-|---------|---------|
-|Mail     |Vacation settings, Automatic reply settings, Filters/Rules will not be migrated         |
-|Meeting rooms     |Room bookings will not be migrated         |
-|Calendar     |Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated         |
-|Contacts     |A maximum of three email addresses per contact are migrated over         |
-|Contacts     |Gmail tags, contact URLs, and custom tags will not be migrated         |
+|Data type|Limitations|
+|---|---|
+|Mail|Vacation settings, Automatic reply settings, Filters/Rules will not be migrated|
+|Meeting rooms|Room bookings will not be migrated|
+|Calendar|Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated|
+|Contacts|A maximum of three email addresses per contact are migrated over|
+|Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
 
 > [!TIP]
 > If you will be [starting your migration batch with Exchange Online Powershell](#start-a-g-suite-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch?view=exchange-ps).  
@@ -94,7 +89,7 @@ Additional migration limitations are described in the following table:
 
    ![Create a project](../media/gsuite-mig-1-newproject.png)
 
-Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
+3. Navigate to **IAM & Admin** > **Service Accounts**, then click **Create Service Account** and, in **Service account name**, give the service account a name, such as "Gmail Onboarding." Click **Create**.
 
    ![Create service account](../media/gsuite-mig-2-newservice.png)
 
@@ -129,9 +124,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 3. Search for the following APIs, and then for each one, if necessary, click **Enable** to enable them for your project:
 
    - Gmail API
-
    - Google Calendar API
-
    - Contacts API
 
 ## Grant access to the service account for your Google tenant
@@ -195,7 +188,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 Once your G Suite environment has been properly configured, you can complete your migration in the Exchange admin center or through the Exchange Online PowerShell.
 
-Before proceeding with either method, make sure that MailUsers have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
+Before proceeding with either method, make sure that Mail Users have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
+
+You can also deploy Azure Active Directory (Azure AD) Connect to provision your Mail Users, see [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for setup instructions. Then, you need to deploy an Exchange server in your on-premises environment for user management, and mail-enable your users using this server. For more information, see [How and when to decommission your on-premises Exchange servers in a hybrid deployment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange) and [Manage mail users](/Exchange/ExchangeServer/recipients/mail-users.md).
 
 We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
