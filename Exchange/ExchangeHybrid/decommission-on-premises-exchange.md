@@ -260,6 +260,9 @@ The graphic below describes the actual end state:
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+      
+> [!NOTE]
+> It's recommended that you leave the Exchange Hybrid Deployment feature enabled in Azure AD Connect.
 
 ### Scenario three
 
