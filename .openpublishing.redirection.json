@@ -794,6 +794,11 @@
       "source_path": "Exchange/ExchangeServer2013/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups",
+      "redirect_url": "https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups",
+      "redirect_document_id": false
     }
   ]
 }
