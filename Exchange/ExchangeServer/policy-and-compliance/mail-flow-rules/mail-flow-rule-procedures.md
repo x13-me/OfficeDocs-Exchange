@@ -292,7 +292,7 @@ By default, mail flow rules are given a priority that's based on the order they 
 
 ### Use the EAC to set the priority of mail flow rules
 
-In the EAC, rules are processed in the order that they're displayed (the first rule has the **Priority** value 0). To change the priority of a rule, move the rule up or down in the list (you can't directly modify the **Priority** number in the EAC).
+In the EAC, rules are processed in the order that they're displayed (the first rule has the **Priority** value 0). To change the priority of a rule, move the rule up or down in the list (you can also directly modify the **Priority** number by editing the rule in the EAC).
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
