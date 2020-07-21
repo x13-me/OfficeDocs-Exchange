@@ -24,7 +24,7 @@ Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 
 |               |               |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![users-people](https://docs.microsoft.com/office/media/icons/users-people.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](https://docs.microsoft.com/office/media/icons/key-permissions.svg) | [Assign admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) | ![document](https://docs.microsoft.com/office/media/icons/document.svg) | [Learn about the Exchange admin center](/Exchange/exchange-admin-center)
+| ![users-people](https://docs.microsoft.com/office/media/icons/users-people_40x40.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](https://docs.microsoft.com/office/media/icons/key-permissions_40x40.svg) | [Assign admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) | ![document](https://docs.microsoft.com/office/media/icons/document_40x40.svg) | [Learn about the Exchange admin center](/Exchange/exchange-admin-center)
 
 ---
 
