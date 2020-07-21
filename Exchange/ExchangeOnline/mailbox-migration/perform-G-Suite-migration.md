@@ -95,23 +95,27 @@ Additional migration limitations are described in the following table:
 
 4. On the **Service account permissions (optional)** screen, click **Continue**.
 
-5. Under **Create key (optional)** click **Create Key**.
+5. On the **Grant users access to this service account (optional)** screen, click **Done**.
 
-   ![Create key](../media/gsuite-mig-3-createkey.png)
+6. Once you have been returned to the page listing the service accounts, click on the **Email** for the Service Account you just created to enter the details page, then click the **Edit** button. Alternatively, you can click the ellipsis under the **Actions** column and select the **Edit** action.
 
-6. Under **Key type**, make sure **JSON** is selected, and then click **Create**.
-
-   ![JSON key](../media/gsuite-mig-4-json.png)
-
-7. Keep track of the JSON keyfile that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Microsoft 365 or Office 365](#create-a-migration-endpoint-in-microsoft-365-or-office-365). Click **Done**.
-
-8. Click on the **Email** for the Service Account you just created to enter the details page. Alternately, you can click the dots under the **Actions** column and click on the **Edit** action. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
+7. On the Service account details page, note the **Unique ID**. This is the ClientId that you will provide later in the instructions for [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant).
 
    ![Unique ID](../media/gsuite-mig-6-unique-id.png)
 
-9. If you see an area that says **Show Domain-Wide Delegation**, click to expand that section. Then, enable the checkbox for **Enable G Suite Domain-wide Delegation**, and then click **Save**. Google is currently in the process of updating this UI, so you may not see such an option. If you don't see such an option, then this is enabled by default.
+8. If you see an area that says **Show Domain-Wide Delegation**, click to expand that section. Then, enable the checkbox for **Enable G Suite Domain-wide Delegation** and click **Save** at the bottom of the page.
 
    ![Domain-Wide Delegation](../media/gsuite-mig-7-enable-domain-delegation.png)
+
+9. On the Service account details page, click **Add Key** and select the **Create new key** option.
+
+   ![Create key](../media/gsuite-mig-3-createkey.png)
+
+10. Under **Key type**, make sure **JSON** is selected, and then click **Create**.
+
+    ![JSON key](../media/gsuite-mig-4-json.png)
+
+11. Keep track of the JSON key file that is automatically downloaded, as you will need its filename during the steps under [Create a migration endpoint in Microsoft 365 or Office 365](#create-a-migration-endpoint-in-microsoft-365-or-office-365). Close the pop-up dialog and click **Save**.
 
 ## Enable API usage in your project
 
@@ -131,15 +135,17 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as G Suite admin for your tenant.
 
-2. Click **Security**, then click **Advanced settings**, and then click **Manage API client access**.
+2. Click **Security**, then click **Advanced settings**, and then click **Manage Domain Wide Delegation**.
 
-3. In **Client Name**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
+3. Next to the **API Clients** list, click **Add new**.
 
-4. In **API Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example, `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`. If the API Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
+4. In **Client ID**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
 
-5. Click **Authorize**. Verify that the resulting list shows "Email (Read/Write/Send)", "Calendar (Read-Write)", "Contacts (Read/Write)", and "<https://www.googleapis.com/auth/gmail.settings.sharing>".
+   ![Add new API client](../media/gsuite-mig-8-grant-service-account-access.png)
 
-   ![Grant service account access](../media/gsuite-mig-8-grant-service-account-access.png)
+5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example, `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`. If the OAuth Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
+
+5. Click **Authorize**. Verify that the resulting list shows the expected four (4) OAuth scopes.
 
    > [!NOTE]
    > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
@@ -148,35 +154,33 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as a G Suite admin for your tenant.
 
-2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
+2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
 
-3. Select **Add another domain**. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
+3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
-   ![Add another domain](../media/gsuite-mig-11-sub-domain-gsuite.png)
+   ![Add domain](../media/gsuite-mig-9-sub-domain-O365.png)
 
-4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
-   ![Skip Google mx](../media/gsuite-mig-10-skip-google-mx.png)
+   ![Verify domain](../media/gsuite-mig-10-verify-domain.png)
 
-5. Click **Skip Google MX setup**, and then click **I use another mail server**. This other mail server will be Microsoft 365 or Office 365.
-
-6. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Microsoft 365 or Office 365. Ensure that this domain that you created above is an accepted domain in Microsoft 365 or Office 365. Follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) to add the Microsoft 365 or Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Microsoft 365 or Office 365.
+5. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Microsoft 365 or Office 365. Ensure that this domain that you created above is an accepted domain in Microsoft 365 or Office 365. Follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) to add the Microsoft 365 or Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Microsoft 365 or Office 365.
 
 ## Create a sub-domain for mail routing to your G Suite domain
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as a G Suite admin for your tenant.
 
-2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
+2. Click **Domains**, then **Manage domains**, and then click **Add a domain alias**.
 
-3. Select **Add a domain alias of...** your domain. Enter the domain that you will use for routing mails to G Suite. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
+3. Enter the domain that you will use for routing mails to G Suite, then click **Continue and verify domain ownership**. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
 
-   ![Add another domain](../media/gsuite-mig-9-sub-domain-0365.png)
+   ![Add domain alias](../media/gsuite-mig-11-sub-domain-gsuite.png)
 
-4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
-   ![Set up Google mx](../media/gsuite-mig-12-set-up-google-mx.png)
+   ![Verify domain](../media/gsuite-mig-10-verify-domain.png)
 
-5. Click **Set up Google MX records**, and then follow the instructions that are listed for your DNS provider.
+5. Follow Google's instructions to [Set up MX records for G Suite Gmail](https://support.google.com/a/answer/140034) for this domain.
 
    > [!NOTE]
    > It may take up to 24 hours for Google to propagate this setting to all of the users in your organization.
@@ -190,7 +194,7 @@ Once your G Suite environment has been properly configured, you can complete you
 
 Before proceeding with either method, make sure that Mail Users have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users).
 
-You can also deploy Azure Active Directory (Azure AD) Connect to provision your Mail Users, see [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for setup instructions. Then, you need to deploy an Exchange server in your on-premises environment for user management, and mail-enable your users using this server. For more information, see [How and when to decommission your on-premises Exchange servers in a hybrid deployment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange) and [Manage mail users](/Exchange/ExchangeServer/recipients/mail-users.md).
+You can also deploy Azure Active Directory (Azure AD) Connect to provision your Mail Users, see [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for setup instructions. Then, you need to deploy an Exchange server in your on-premises environment for user management, and mail-enable your users using this server. For more information, see [How and when to decommission your on-premises Exchange servers in a hybrid deployment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange) and [Manage mail users](/Exchange/ExchangeServer/recipients/mail-users.md). Once the Mail Users have been created in Microsoft 365, the Azure AD Connect will need to be disabled in order to allow the migration process to convert these users into mailboxes - see [Turn off directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
 
 We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
