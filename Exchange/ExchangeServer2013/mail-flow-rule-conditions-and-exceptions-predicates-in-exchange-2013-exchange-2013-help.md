@@ -186,7 +186,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 <p><em>ExceptIfSenderDomainIs</em></p></td>
 <td><p><code>DomainName</code></p></td>
 <td><p>Messages where the domain of the sender's email address matches the specified value.</p>
-<p>If you need to find sender domains that <em>contain</em> the specified domain (for example, any subdomain of a domain), use <strong>The sender address matches</strong> (<em>FromAddressMatchesPatterns</em>) condition and specify the domain by using the syntax: <code>'@domain\.com$'</code>.</p></td>
+<p>If you need to find sender domains that <em>contain</em> the specified domain (for example, any subdomain of a domain), use <strong>The sender address matches</strong> (<em>FromAddressMatchesPatterns</em>) condition and specify the domain by using the syntax: <code>'\.domain\.com$'</code>.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 </tbody>
@@ -288,7 +288,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 <p><em>ExceptIfRecipientDomainIs</em></p></td>
 <td><p><code>DomainName</code></p></td>
 <td><p>Messages where the domain of a recipient's email address matches the specified value.</p>
-<p>If you need to find recipient domains that <em>contain</em> the specified domain (for example, any subdomain of a domain), use <strong>The recipient address matches</strong> (<em>RecipientAddressMatchesPatterns</em>) condition, and specify the domain by using the syntax <code>'@domain\.com$'</code>.</p></td>
+<p>If you need to find recipient domains that <em>contain</em> the specified domain (for example, any subdomain of a domain), use <strong>The recipient address matches</strong> (<em>RecipientAddressMatchesPatterns</em>) condition, and specify the domain by using the syntax <code>'\.domain\.com$'</code>.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 </tbody>
