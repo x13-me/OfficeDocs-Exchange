@@ -18,7 +18,7 @@ manager: serdars
 
 # Create shared mailboxes in the Exchange admin center
 
-If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
+If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. Exchange admin center (EAC) is the single unified management console that allows for managing both your on-premises and Exchange Online organizations and allows you to connect and configure features for both organizations. For more information, see [Hybrid management in Exchange hybrid deployments](https://docs.microsoft.com/exchange/hybrid-management).
 
 ## Use the EAC to create a shared mailbox
 
