@@ -45,9 +45,9 @@ POP3 and IMAP4 email programs don't use POP3 and IMAP4 to send messages to the e
 
 ||**Server name**|**Port**|**Encryption method**|
 |:-----|:-----|:-----|:-----|
-|POP3|Outlook.office365.com|995|TLS|
-|IMAP4|Outlook.office365.com|993|TLS|
-|SMTP|Smtp.office365.com|587|TLS|
+|POP3|Outlook.office365.com|995|SSL/TLS|
+|IMAP4|Outlook.office365.com|993|SSL/TLS|
+|SMTP|Smtp.office365.com|587|STARTTLS|
 
 ## Understanding the differences between POP3 and IMAP4
 <a name="Differences"> </a>

@@ -53,7 +53,7 @@ The following messaging clients support MailTips:
 
 - Outlook on the web (formerly known as Outlook Web App)
 
-- Microsoft Outlook 2010 or later
+- Microsoft Outlook 2010 or later for Microsoft Windows
 
 ## MailTips in Exchange Online
 
