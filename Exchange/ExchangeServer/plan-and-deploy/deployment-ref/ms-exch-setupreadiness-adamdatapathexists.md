@@ -28,4 +28,4 @@ To resolve this issue, remove the existing AD LDS directory and then run Setup a
 
 For more information about AD LDS directory management, see [Administering AD LDS Directory Partitions](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816929(v=ws.10)).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

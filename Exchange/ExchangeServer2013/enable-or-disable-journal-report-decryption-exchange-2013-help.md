@@ -38,7 +38,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Shell to enable journal report decryption
 
@@ -64,4 +64,4 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 
 To verify that you have enabled or disabled journal report decryption, run the **Get-IRMConfiguration** cmdlet and check the value of the *JournalDecryptionEnabled* property.
 
-For an example of how to check the IRM configuration, see [Examples](https://technet.microsoft.com/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
+For an example of how to check the IRM configuration, see [Examples](https://docs.microsoft.com/powershell/module/exchange/get-irmconfiguration#examples) in **Get-IRMConfiguration**.

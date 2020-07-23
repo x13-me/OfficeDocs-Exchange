@@ -168,7 +168,7 @@ For detailed syntax and parameter information, see the following topics:
 
    - Run the following command to discover any existing batch migration requests:
 
-     ```
+     ```PowerShell
      $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
      ```
 
@@ -250,7 +250,7 @@ For detailed syntax and parameter information, see the following topics:
 
 Run the following command to create the target public folder mailboxes. The script will create a target mailbox for each mailbox in the .csv file that you generated previously in Step 3 by running the `PublicFoldertoMailboxMapGenerator.ps1` script.
 
-```
+```PowerShell
 .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
 ```
 
@@ -262,7 +262,7 @@ After you crate the batch migration request in the Exchange Management Shell, yo
 
 1. On the Exchange 2016 server, run the following command:
 
-   ```
+   ```PowerShell
    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
    ```
 
@@ -317,7 +317,6 @@ On the Exchange 2010 server, run the following command to lock the public folder
 ```PowerShell
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
-
 
 For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 

@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage mail contacts in Exchange Online
 
-In Exchange Online organizations, ail contacts are mail-enabled objects that contain information about people who exist outside your organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
+In Exchange Online organizations, mail contacts are mail-enabled objects that contain information about people who exist outside your organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes; standalone Exchange Online Protection (EOP) in organizations without Exchange Online mailboxes).
 
@@ -37,7 +37,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center to manage mail contacts
 

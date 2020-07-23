@@ -1,4 +1,4 @@
-# [Exchange Server](../exchange-server.md)
+# [Exchange Server](../exchange-server.yml)
 ## [Exchange content updates](../exchange-updates.md)
 ## [What's new in Exchange Server](../new-features/new-features.md)
 ### [What's discontinued in Exchange Server](../new-features/discontinued-features.md)

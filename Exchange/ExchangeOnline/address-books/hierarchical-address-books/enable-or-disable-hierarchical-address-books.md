@@ -43,7 +43,7 @@ The cmdlets and parameters that you use to configure a HAB are described in the 
 - After you create the HAB, you can use the EAC to manage the membership of the groups in the organizational hierarchy. However, you can only use Exchange Online PowerShell to configure the _SeniorityIndex_ parameter for any new groups or users that you create.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Enable and configure a hierarchical address book
 

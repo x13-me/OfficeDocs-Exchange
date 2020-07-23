@@ -37,7 +37,7 @@ To learn more about Internet calendar publishing and sharing policies, see [Shar
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Use the EAC or the Shell to disable or delete the sharing policy for Internet calendar publishing
 
@@ -88,7 +88,7 @@ If you've updated the default sharing policy, verify that the `Anonymous` domain
 For detailed syntax and parameter information, see [Get-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-SharingPolicy).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 2: Use the Shell to disable the Outlook Web App virtual directory Anonymous features
 
@@ -114,4 +114,4 @@ Get-OwaVirtualDirectory | format-list
 For detailed syntax and parameter information, see [Get-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-OwaVirtualDirectory).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
