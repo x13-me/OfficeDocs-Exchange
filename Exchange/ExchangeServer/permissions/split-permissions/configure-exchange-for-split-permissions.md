@@ -49,7 +49,7 @@ For more information about management role groups, management roles, and regular
 - To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) forums.
 
 ## Switch to RBAC split permissions
 

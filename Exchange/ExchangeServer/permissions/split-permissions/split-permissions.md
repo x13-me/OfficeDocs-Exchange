@@ -197,9 +197,9 @@ Active Directory split permissions is a good choice for your organization if the
 
 - If you have multiple domains within the same forest, you must also do one of the following steps:
 
-   - Specify the _/PrepareAllDomains_ switch when you apply Active Directory split permissions.
+  - Specify the _/PrepareAllDomains_ switch when you apply Active Directory split permissions.
 
-   - Run Setup.exe with the _/PrepareDomain_ switch in each domain. You must prepare every domain that contains Exchange servers, mail-enabled objects, or global catalog servers that could be accessed by an Exchange server.
+  - Run Setup.exe with the _/PrepareDomain_ switch in each domain. You must prepare every domain that contains Exchange servers, mail-enabled objects, or global catalog servers that could be accessed by an Exchange server.
 
 - You can't enable Active Directory split permissions if you've installed Exchange 2010 or later on a domain controller.
 

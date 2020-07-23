@@ -54,10 +54,10 @@ For more information about management role groups, management roles, and regular
 
 - To download the latest version of Exchange on the target computer, see [Updates for Exchange Server](../../new-features/updates.md).
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) forums.
 
 ## Switch from RBAC split permissions to shared permissions
 
@@ -71,7 +71,7 @@ To configure shared permissions on the Organization Management role group, do th
 
 1. Add delegating role assignments for the Mail Recipient Creation role and Security Group Creation and Membership role to the Organization Management role group using the following commands.
 
-   ```
+   ```powershell
    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
    ```
@@ -81,14 +81,14 @@ To configure shared permissions on the Organization Management role group, do th
 
 2. Add regular role assignments for the Mail Recipient Creation role to the Organization Management and Recipient Management role groups using the following commands.
 
-   ```
+   ```powershell
    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
    ```
 
 3. Add a regular role assignment for the Security Group Creation and Membership role to the Organization Management role group using the following command.
 
-   ```
+   ```powershell
     New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
    ```
 
@@ -105,19 +105,19 @@ To remove Exchange-related split permissions from Active Directory administrator
 
 1. Remove the regular and delegating role assignments that assign the Mail Recipient Creation role to the role group or universal security group (USG) that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
-   ```
+   ```powershell
    Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
    ```
 
 2. Remove the regular and delegating role assignments that assign the Security Group Creation and Membership role to the role group or USG that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
-   ```
+   ```powershell
    Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
    ```
 
 3. Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024.aspx) or [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351205.aspx).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment) or [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/remove-managementroleassignment).
 
 ## Switch from Active Directory split permissions to shared permissions
 
@@ -140,18 +140,18 @@ To switch from Active Directory split permissions to shared permissions, do the 
 
 3. In the Command Prompt window, run the following command:
 
-   ```
+   ```powershell
    Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /ActiveDirectorySplitPermissions:false
-    ```
-
-4.  In the Exchange Management Shell, run the following commands to add regular role assignments between the Mail Recipient Creation role and Security Group Creation and Management role and the Organization Management and Recipient Management role groups.
-
    ```
+
+4. In the Exchange Management Shell, run the following commands to add regular role assignments between the Mail Recipient Creation role and Security Group Creation and Management role and the Organization Management and Recipient Management role groups.
+
+   ```powershell
    New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
    New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
    New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
    ```
 
-5.  Restart all Exchange servers in your organization.
+5. Restart all Exchange servers in your organization.
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).

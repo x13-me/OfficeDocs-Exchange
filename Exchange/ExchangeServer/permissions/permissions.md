@@ -1,5 +1,4 @@
 ---
-title: "Exchange Server permissions"
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
@@ -8,15 +7,13 @@ description: 'Summary: Learn about Role Based Access Control in Exchange Server 
 ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
+manager: serdars
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 ms.reviewer:
 title: Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
-audience: ITPro
-ms.prod: exchange-server-it-pro
-manager: serdars
 
 ---
 
