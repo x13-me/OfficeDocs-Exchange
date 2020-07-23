@@ -41,7 +41,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 - After you install an Exchange CU, you need to restart the computer so that changes can be made to the registry and operating system.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Best Practices
 

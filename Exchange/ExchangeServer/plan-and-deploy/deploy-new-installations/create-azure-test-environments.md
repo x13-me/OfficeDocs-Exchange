@@ -416,7 +416,7 @@ Start-AZVM -Name exVM -ResourceGroupName $rgName
 
 [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md)
 
-[Exchange Server](../../exchange-server.md)
+[Exchange Server](../../exchange-server.yml)
 
 [What's new in Exchange Server](../../new-features/new-features.md)
 

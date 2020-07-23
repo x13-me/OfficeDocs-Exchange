@@ -157,7 +157,7 @@ In this step, you gather information from your Exchange environment, and then yo
 
 4. Run the following command to create a new public folder to Microsoft 365 or Office 365 group migration batch. In this command:
 
-   - **CSVData** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+   - **CSVData** is the .csv file created above in [Step 3: Create the .csv file](#step-3-create-the-csv-file). Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
    - **NotificationEmails** is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
 
@@ -175,7 +175,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Microsoft 365 or Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the **New-MigrationBatch** cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser) cmdlets. The **New-MigrationBatch** cmdlet initiates a migration user for each Microsoft 365 or Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 

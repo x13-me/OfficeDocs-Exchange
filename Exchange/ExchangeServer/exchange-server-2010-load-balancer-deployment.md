@@ -87,12 +87,6 @@ Listed below are software load balancers that have been tested by the vendor and
 |[Radware](http://www.radware.com/)|Alteon VA|27.0|[Radware Alteon Solution for Microsoft Exchange 2010](http://portals.radware.com/workarea/showcontent.aspx?ID=8293)|
 |Riverbed|Stingray Traffic Manager|8|[Stingray Traffic Manager - Deploy Microsoft Exchange 2010](http://community.brocade.com/t5/vADC-Docs/Stingray-Traffic-Manager-Solution-Guide-Microsoft-Exchange-2010/ta-p/73873)|
 
-## Featured resources
-
-[Exchange Server Deployment Assistant](https://assistants.microsoft.com/)
-
-[Experience Exchange Server 2010 through virtual labs](https://technet.microsoft.com/virtuallabs?id=y/gsi96hjlm)
-
 ## Downloads
 
 [Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=36768)

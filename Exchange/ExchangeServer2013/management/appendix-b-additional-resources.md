@@ -51,13 +51,13 @@ The following resources provide information about common tasks associated with S
 
 ## Other resources
 
-- [System Center Operations Manager community forum](https://go.microsoft.com/fwlink/?linkid=179635)
+- [System Center Operations Manager community forum](https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenteroperationsmanager)
 
 - [System Center Operations Manager Unleashed blog](https://opsmgrunleashed.wordpress.com/)
 
-- [System Center 2012 - Operations Manager Survival Guide](https://go.microsoft.com/fwlink/?linkid=246383)
+- [System Center 2012 - Operations Manager Survival Guide](https://social.technet.microsoft.com/wiki/contents/articles/7809.system-center-2012-operations-manager-survival-guide.aspx)
 
-- [Operations Manager 2007 Management Pack and Report Authoring Resources](https://go.microsoft.com/fwlink/?linkid=246388)
+- [Operations Manager 2007 Management Pack and Report Authoring Resources](https://social.technet.microsoft.com/wiki/contents/articles/1242.operations-manager-management-pack-and-report-authoring-resources.aspx)
 
 > [!IMPORTANT]
 > All information and content on non-Microsoft sites is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied, or statutory, as to the information on these websites.
