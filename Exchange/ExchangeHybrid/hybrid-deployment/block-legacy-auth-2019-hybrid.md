@@ -26,11 +26,11 @@ The following legacy authentication methods can be used to access Exchange serve
 
 - Windows authentication (NTLM and Kerberos)
 
-In Exchange Server 2019 Cumulative Update 1 (CU1) or later, we provide a way to block these legacy authentication methods in hybrid environments that use [Hybrid Modern Auth](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/).
+In Exchange Server 2019 Cumulative Update 1 (CU1) or later, we provide a way to block these legacy authentication methods in hybrid environments that use [Hybrid Modern Auth](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-hybrid-modern-authentication-for-exchange-on-premises/ba-p/607476/).
 
 When you disable legacy authentication for users in Exchange, their email clients and apps must support modern authentication. Those clients are:
 
-- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
+- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
@@ -63,14 +63,14 @@ Typically, when you block legacy authentication for a user, we recommend that yo
 
 - Estimated time to complete each procedure: 3 minutes.
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Verify that modern authentication is enabled in your Exchange environment.
 
-- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://support.office.com/article/472c2322-23a4-4014-8f02-bbc09ad62213).
+- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver),[Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create and apply authentication policies
 
@@ -86,13 +86,13 @@ These steps are described in the following sections.
 
 To create a policy that blocks legacy authentication for the specified client protocols, use the following syntax:
 
-```
+```powershell
 New-AuthenticationPolicy -Name "<Descriptive Name>" [-BlockLegacyAuthActiveSync] [-BlockLegacyAuthAutodiscover] [-BlockLegacyAuthImap] [-BlockLegacyAuthMapi] [-BlockLegacyAuthOfflineAddressBook] [-BlockLegacyAuthPop] [-BlockLegacyAuthRpc] [-BlockLegacyAuthWebServices]
 ```
 
 This example creates an authentication policy named "Block Legacy Auth" to block legacy authentication for all client protocols in Exchange 2019 (the recommended configuration).
 
-```
+```powershell
 New-AuthenticationPolicy -Name "Block Legacy Auth" -BlockLegacyAuthActiveSync -BlockLegacyAuthAutodiscover -BlockLegacyAuthImap -BlockLegacyAuthMapi -BlockLegacyAuthOfflineAddressBook -BlockLegacyAuthPop -BlockLegacyAuthRpc -BlockLegacyAuthWebServices
 ```
 
@@ -102,19 +102,19 @@ The methods that you can use to assign authentication policies to users are desc
 
 - **Individual user accounts**: Use the following syntax:
 
-  ```
+  ```powershell
   Set-User -Identity <UserIdentity> -AuthenticationPolicy <PolicyIdentity>
   ```
 
   This example assigns the policy named Block Legacy Auth to the user account laura@contoso.com.
 
-  ```
+  ```powershell
   Set-User -Identity laura@contoso.com -AuthenticationPolicy "Block Legacy Auth"
   ```
 
 - **Filter user accounts by attributes**: This method requires that the user accounts all share a unique filterable attribute (for example, Title or Department) that you can use to identify the users. The syntax uses the following commands (two to identify the user accounts, and the other to apply the policy to those users):
 
-   ```
+   ```powershell
    $<VariableName1> = Get-User -ResultSize unlimited -Filter <Filter>
    $<VariableName2> = $<VariableName1>.SamAccountName
    $<VariableName2> | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Legacy Auth"}
@@ -122,7 +122,7 @@ The methods that you can use to assign authentication policies to users are desc
 
    This example assigns the policy named Block Legacy Auth to all user accounts whose **Title** attribute contains the value "Sales Associate".
 
-   ```
+   ```powershell
    $SalesUsers = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Sales Associate*')}
    $Sales = $SalesUsers.SamAccountName
    $Sales | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Legacy Auth"}
@@ -138,14 +138,14 @@ The methods that you can use to assign authentication policies to users are desc
 
   The syntax uses the following two commands (one to identify the user accounts, and the other to apply the policy to those users):
 
-  ```
+  ```powershell
   $<VariableName> = Get-Content "<text file>"
   $<VariableName> | foreach {Set-User -Identity $_ -AuthenticationPolicy <PolicyIdentity>}
   ```
 
   This example assigns the policy named Block Legacy Auth to the user accounts specified in the file C:\My Documents\BlockLegacyAuth.txt.
 
-  ```
+  ```powershell
   $BLA = Get-Content "C:\My Documents\BlockLegacyAuth.txt"
   $BLA | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Legacy Auth"}
   ```
@@ -154,19 +154,19 @@ The methods that you can use to assign authentication policies to users are desc
 
 To view a summary list of the names of all existing authentication policies, run the following command:
 
-```
+```powershell
 Get-AuthenticationPolicy | Format-Table -Auto Name
 ```
 
 To view detailed information about a specific authentication policy, use this syntax:
 
-```
+```powershell
 Get-AuthenticationPolicy -Identity <PolicyIdentity>
 ```
 
 This example returns detailed information about the policy named Block Legacy Auth.
 
-```
+```powershell
 Get-AuthenticationPolicy -Identity "Block Legacy Auth"
 ```
 
@@ -174,13 +174,13 @@ Get-AuthenticationPolicy -Identity "Block Legacy Auth"
 
 The default authentication policy is assigned to all users who don't already have a specific policy assigned to them (a directly assigned policy takes precedence). To configure the default authentication policy for the organization, use this syntax:
 
-```
+```powershell
 Set-OrganizationConfig -DefaultAuthenticationPolicy \<PolicyIdentity\>
 ```
 
 This example configures the authentication policy named "Block Legacy Auth" as the default policy.
 
-```
+```powershell
 Set-OrganizationConfig -DefaultAuthenticationPolicy "Block Legacy Auth"
 ```
 
@@ -188,30 +188,30 @@ Set-OrganizationConfig -DefaultAuthenticationPolicy "Block Legacy Auth"
 
 To remove an existing authentication policy, use this syntax:
 
-```
+```powershell
 Remove-AuthenticationPolicy -Identity <PolicyIdentity>
 ```
 
 This example removes the policy named Test Auth Policy.
 
-```
+```powershell
 Remove-AuthenticationPolicy -Identity "Test Auth Policy"
 ```
 
-For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/remove-authenticationpolicy).
+For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-authenticationpolicy).
 
 ### How do you know that you've successfully disabled legacy authentication in Exchange?
 
 To confirm that the authentication policy was applied to users:
 
 1. Run the following command to find the distinguished name (DN) value of the authentication policy:
-   
-   ```
+
+   ```powershell
    Get-AuthenticationPolicy | Format-List Name,DistinguishedName
    ```
 
 2. Use the DN value of the authentication policy in the following command:
 
-   ```
+   ```powershell
    Get-User -Filter {AuthenticationPolicy -eq '<AuthPolicyDN>'}
    ```
