@@ -325,7 +325,7 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 
 1. In the [Security & Compliance Center](https://protection.office.com/), select **Reports** > **Dashboard**.
 
-2. The select **Exchange transport rule**.
+2. Then select **Exchange transport rule**.
 
 To learn more, see [View mail flow reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-mail-flow-reports).
 
