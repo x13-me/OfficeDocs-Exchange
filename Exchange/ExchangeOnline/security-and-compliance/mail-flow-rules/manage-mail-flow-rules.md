@@ -321,35 +321,17 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.
 
-### Use the Microsoft 365 admin center to generate a rules report
+### Use the Security & Compliance Center to generate a rules report
 
-1. In the Microsoft 365 admin center, select **Reports**.
+1. In the [Security & Compliance Center](https://protection.office.com/), select **Reports** > **Dashboard**.
 
-2. In the **Rules** section, select **Top rule matches for mail** or **Rule matches for mail**.
+2. The select **Exchange transport rule**.
 
-To learn more, see [View mail protection reports](../../monitoring/use-mail-protection-reports.md).
+To learn more, see [View mail flow reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-mail-flow-reports).
 
 ### Download an Excel version of the reports
 
-1. On the Reports page in the Microsoft 365 admin center, select **Mail protection reports (Excel)**.
-
-2. If it is your first time using the Excel mail protection reports, a tab opens to the download page.
-
-   1. Select **Download** to download the Excel Plugin for Exchange Online Reporting.
-
-   2. Open the download.
-
-   3. In the **Mail Protection reports for Office 365 Setup** dialog box, select **Next**, accept the terms of the license agreement, and then select **Next**.
-
-   4. Select the service you are using, and then select **Next**.
-
-   5. Verify the prerequisites, and then select **Next**.
-
-   6. Select **Install**. A shortcut to the reports is placed on your desktop.
-
-3. On your desktop, select **Office 365 Mail Protection Reports**.
-
-4. In the report, select the **Rules** tab.
+For steps to download reports, see [Download existing reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/download-existing-reports).
 
 ## Import or export a mail flow rule collection
 
