@@ -27,7 +27,7 @@ When there's a problem delivering an email message that you sent, Microsoft 365 
 The following table contains the NDR codes (also called enhanced status codes) for the most common bounce messages and NDRs that you might encounter in Exchange Online.
 
 |**NDR code**|**Description**|**Possible cause**|**Additional information**|
-|:-----|:-----|:-----|:-----|
+|---|---|---|---|
 |4.4.316|`Connection refused [Message=Socket error code 10061]`|Microsoft 365 or Office 365 is trying to send a message to an email server outside of Microsoft 365 or Office 365, but attempts to connect to it are failing due to a network connection issue at the external server's location.|This error almost always indicates an issue with the receiving server or network outside of Microsoft 365 or Office 365. The error should also include the IP address of the server or service that's generating the error, which you can use to identify the party responsible for fixing this.|
 |4.4.7|`Message expired`|The message in the queue has expired. The sending server tried to relay or deliver the message, but the action was not completed before the message expiration time occurred. This message can also indicate that a message header limit has been reached on a remote server, or some other protocol time-out occurred while communicating with the remote server.|This message usually indicates an issue on the receiving server. Check the validity of the recipient address, and determine if the receiving server is configured correctly to receive messages. <br/> You might have to reduce the number of recipients in the message header for the host about which you are receiving this error. If you send the message again, it is placed in the queue again. If the receiving server is available, the message is delivered. <br/> For more information, see [Fix email delivery issues for error code 4.4.7 in Exchange Online](fix-error-code-550-4-4-7-in-exchange-online.md).|
 |4.5.3|`Too many recipients`|The message has more than 200 SMTP envelope recipients from the same domain.|An envelope recipient is the original, unexpanded recipient that's used in the **RCPT TO** command to transmit the message between SMTP servers. When this error is returned by Microsoft 365 or Office 365, the sending server must break up the number of envelope recipients into smaller chunks (chunking) and resend the message.|
@@ -74,6 +74,7 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.606-649|`Access denied, banned sending IP [IP1.IP2.IP3.IP4]`|The IP that you are attempting to send from has been banned.|Verify that you are following the [best practices for email deliverability](https://docs.microsoft.com/dynamics365/marketing/get-ready-email-marketing), and ensure your IPs' reputations have not been degraded as a result of compromise or malicious traffic. If you believe you are receiving this message in error, you can use the self-service portal to request to be removed from this list. <br/><br/>For more information, see [Use the delist portal to remove yourself from the blocked senders list](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).|
 |5.7.700-749|`5.7.705 Access denied, tenant has exceeded threshold`, `5.7.708 Access denied, traffic not accepted from this IP`|The majority of traffic from this tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant.|Ensure that any compromises or open relays have been resolved, and then contact support through your regular channel. <br/><br/> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |5.7.750|`Service unavailable. Client blocked from sending from unregistered domains`|A suspicious amount of messages from unprovisioned domains is coming from this tenant.|Add and validate any and all domains that you use to send email from Microsoft 365 or Office 365.<br/><br/> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
+|n/a|`The message can't be submitted because the sender's submission quota was exceeded`|The user account has exceeded the recipient rate limit (10,000 recipients per day).|The account has likely been compromised.|See [Fix email delivery issues for error 'the sender's submission quota was exceeded' in Exchange Online](fix-error-for-submission-quota-exceeded-in-exchange-online.md).|
 
 ## What's included in an NDR?
 
@@ -84,7 +85,7 @@ Exchange NDRs are designed to be easy to read and understand by email users and 
 Information provided in the newest style NDRs is designed to help the typical email user solve their problem immediately. When that isn't possible, the NDR provides details for administrators and also a link to more help on the web. The following fields appear in the newest Office 365 NDRs.
 
 |**Field**|**Description**|
-|:-----|:-----|
+|---|---|
 |**Office 365 logo**|This indicates that Microsoft 365 or Office 365 generated the NDR. The logo doesn't mean that Microsoft 365 or Office 365 was responsible for the error. This tells which messaging endpoints or services are involved in the email transaction, which is not always clear in older style NDRs.|
 |**Cause**|This section provides the reason that the message wasn't delivered.|
 |**Fix-it owner indicator**|This section provides an at-a-glance view of the issue and who needs to fix it. The image shows the three basic parties in a Microsoft 365 or Office 365 email transaction: the sender, Microsoft 365 or Office 365, and the recipient. The area marked in red is where the problem usually must be fixed.|
@@ -104,7 +105,7 @@ The user information section appears first in some NDRs, and the main purpose is
 
 The **Diagnostic information for administrators** section provides deeper technical information to help administrators troubleshoot the message delivery problem. It contains detailed information about the specific error that occurred during delivery of the message, the server that generated the NDR, and the server that rejected the message. This section uses the following format:
 
-```
+```text
 Diagnostic information for administrators
 Generating server:
 <server name>
@@ -131,7 +132,7 @@ Original message headers
 
 Here's an example. Suppose you receive an Exchange NDR that contains the following information:
 
-```
+```text
 Delivery has failed to these recipients or groups:
 ronald@contoso.com
 Your message wasn't delivered due to a permission or security issue. It might have been rejected by a moderator, the address might only accept email from certain senders, or another restriction might be preventing delivery. The following organization rejected your message: mail.contoso.com.
