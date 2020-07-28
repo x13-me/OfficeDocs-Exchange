@@ -321,7 +321,7 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.
 
-### Use the Security & Compliance Center to view rules report
+### Use the Security & Compliance Center to view a rules report
 
 1. In the [Security & Compliance Center](https://protection.office.com/), select **Reports** > **Dashboard**.
 
