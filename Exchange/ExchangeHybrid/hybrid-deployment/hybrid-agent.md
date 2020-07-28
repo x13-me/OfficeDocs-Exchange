@@ -99,7 +99,7 @@ Keep the following issues in mind before you install the Hybrid Agent:
 
 - The Hybrid Agent supports a single migration endpoint with the service default limits. Multiple migration endpoints utilizing your custom endpoint/URL is not supported.
 
-- The Hybrid Agent supports a single Exchange Organization. Multiple Exchange Orgazation Hybrid is not supported.
+- The Hybrid Agent supports a single Exchange organization. Multiple Exchange organization hybrid is not supported.
 
 
 > [!NOTE]
