@@ -55,7 +55,7 @@ In rare cases, this could also happen if you renew your subscription after it ha
 
 ### 5.7.708 Access denied, traffic not accepted from this IP
 
-This error can happen when you are trying a Microsoft 365 Trial Tenant, if you receive this error before you can purchase licenses, contact support to request an exception for the low reputation IP address until you're able to purchase licenses.
+This error can happen when you are trying out a Microsoft 365 trial tenant. If you receive this error before you can purchase licenses, contact support to request an exception for the low reputation IP address until you're able to purchase licenses.
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 
