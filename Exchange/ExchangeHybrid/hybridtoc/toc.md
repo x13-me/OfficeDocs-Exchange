@@ -31,6 +31,7 @@
 ### [Create cloud-based archive](../hybrid-deployment/create-cloud-based-archive.md)
 ### [Simplify OWA URL](../hybrid-deployment/simplify-owa-url.md)
 ### [Troubleshoot a hybrid deployment](../hybrid-deployment/troubleshoot-a-hybrid-deployment.md)
+### [Block legacy authentication in Exchange 2019 hybrid](../hybrid-deployment/block-legacy-auth-2019-hybrid.md)
 ## [Exchange 2013 and 2007 hybrid](../exchange-2013-and-2007-hybrid/exchange-2013-and-2007-hybrid.md)
 ### [Server roles](../exchange-2013-and-2007-hybrid/server-roles.md)
 ### [Hybrid management](../exchange-2013-and-2007-hybrid/hybrid-management.md)
