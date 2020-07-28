@@ -171,7 +171,7 @@ Use the following steps to create and configure the Outlook for iOS and Android 
 3. Select **Apps** and then select **App configuration policies**.
 4. On the **App Configuration policies** blade, choose **Add** and select **Managed devices** to start the app configuration policy creation flow.
 5. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
-6. For **Platform**, choose **Android Enterprise** and for **Profile Type**, choose **Work Profile**.
+6. For **Platform**, choose **Android Enterprise** and for **Profile Type**, choose **All Profile Types**.
 7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
