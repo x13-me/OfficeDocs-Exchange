@@ -299,7 +299,7 @@ For detailed syntax and parameter information, see [Set-AuthenticationPolicy](ht
 
 ### Configure the default authentication policy
 
-The default authentication policy is assigned to all users who don't already have a specific policy assigned to them. Note that the authentication policies assigned to users take precedence to the default policy. To configure the default authentication policy for the organization, use this syntax:
+The default authentication policy is assigned to all users who don't already have a specific policy assigned to them. Note that the authentication policies assigned to users take precedence over the default policy. To configure the default authentication policy for the organization, use this syntax:
 
 ```PowerShell
 Set-OrganizationConfig -DefaultAuthenticationPolicy <PolicyIdentity>

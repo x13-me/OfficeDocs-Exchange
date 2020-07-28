@@ -292,7 +292,7 @@ The following steps allow you to create an app configuration policy. After the c
 
 5. For **Platform**, choose either **iOS/iPadOS** or **Android Enterprise**.
 
-6. If Android Enterprise is selected as the platform, for **Profile Type**, choose **Work Profile and Device Owner Profile**.
+6. If Android Enterprise is selected as the platform, for **Profile Type**, choose **All Profile Types**.
 
 7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
@@ -328,9 +328,9 @@ The following steps allow you to create an app configuration policy. After the c
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
-    
+
     - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
-    
+
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
@@ -341,13 +341,15 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
-12. When you are finished selecting settings, choose **Next**.
+12. If you want to configure S/MIME settings, see [Outlook for iOS Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-ios-automated-certificate-delivery) or [Outlook for Android Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-android-automated-certificate-delivery).
 
-13. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
+13. When you are finished selecting settings, choose **Next**.
 
-14. When you are finished with assignments, choose **Next**.
+14. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
 
-15. On the **Review + Create** section, review the settings configured and choose **Create**.
+15. When you are finished with assignments, choose **Next**.
+
+16. On the **Review + Create** section, review the settings configured and choose **Create**.
 
 The newly created configuration policy is displayed on the **App configuration** blade.
 
@@ -389,7 +391,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
     - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
-    
+
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
     - For **Block external images**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
@@ -401,24 +403,26 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
-    
+
 9. If you want to manage the data protection settings, configure the desired settings accordingly:
 
     - For **Org data on wearables**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
-     
+
     - For **Calendar Notifications**, choose from the available options: **Not configured** (default), **Allowed**. By default calendar notifications are allowed within the app and display sensitive information. **Allowed** only takes effect when the App Protection Policy setting **Org Data Notifications** is set to **Block org data**.
 
-10. If you want to manage which contact fields sync to the native contacts apps, configure the desired settings accordingly:
+    - If you want to manage which contact fields sync to the native contacts apps, configure the desired settings accordingly. For each contact field setting, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
-    - For each contact field setting, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+11. If you want to manage the app's S/MIME configuration, configure the desired settings accordingly:
 
-11. When you are finished configuring the settings, choose **Next**.
+    - For **Enable S/MIME**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-12. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
+12. When you are finished configuring the settings, choose **Next**.
 
-13. When you are finished with the assignments, choose **Next**.
+13. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
 
-14. On the **Create app configuration policy Review + Create** blade, review the settings configured and choose **Create**.
+14. When you are finished with the assignments, choose **Next**.
+
+15. On the **Create app configuration policy Review + Create** blade, review the settings configured and choose **Create**.
 
 The newly created configuration policy is displayed on the **App configuration** blade.
 

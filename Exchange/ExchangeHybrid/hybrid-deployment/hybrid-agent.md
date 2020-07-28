@@ -91,7 +91,7 @@ Keep the following issues in mind before you install the Hybrid Agent:
 
 - [Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) is not supported with the Hybrid Agent. Customers will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover, EWS, ActiveSync, MAPI and OAB endpoints for hybrid Modern Authentication to function with various Outlook clients.
 
-- Team's Calendaring features that require access to on premises mailboxes are not supported with the Hybrid Agent. You will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover and EWS to support these features.
+- For Teams' Calendaring features that require access to on-premises mailboxes, it's recommended that you leverage the full Classic Exchange Hybrid Topology. For more information, see [How Exchange and Microsoft Teams interact](https://docs.microsoft.com/microsoftteams/exchange-teams-interact).
 
 - Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features require the classic connectivity model where Exchange Web Services (EWS) and Autodiscover are published on-premises and are externally available to Microsoft 365 and Office 365.
 
