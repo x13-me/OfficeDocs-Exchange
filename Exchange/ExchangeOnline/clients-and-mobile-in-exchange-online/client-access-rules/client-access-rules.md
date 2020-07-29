@@ -101,7 +101,7 @@ New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOf
 
 Not all authentication types are supported for all protocols in Client Access Rules. The supported authentication types per protocol are described in this table:
 
-|  |AdfsAuthentication|BasicAuthentication|CertificateBasedAuthentication|NonBasicAuthentication|OAuthAuthentication|
+|&nbsp;|AdfsAuthentication|BasicAuthentication|CertificateBasedAuthentication|NonBasicAuthentication|OAuthAuthentication|
 |---|---|---|---|---|---|
 |`ExchangeActiveSync`|n/a|supported|supported|n/a|supported|
 |`ExchangeAdminCenter`|supported|supported|n/a|n/a|n/a|
