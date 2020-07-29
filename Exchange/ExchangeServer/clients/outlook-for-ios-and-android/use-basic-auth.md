@@ -75,9 +75,11 @@ The following features are not support for on-premises mailboxes using basic aut
 
 - Shared and delegate mailbox data access
 
-- Cortana Time to Leave
+- Cortana Time to Leave / Travel Time
 
 - Calendar attachments
+
+- Rich meeting locations
 
 - Task management with Microsoft To-Do
 
