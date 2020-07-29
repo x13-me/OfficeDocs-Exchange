@@ -106,7 +106,7 @@ Outlook for iOS and Android supports the following Exchange mobile device mailbo
 
 - Password enabled
 
-- Allow Bluetooth (used to manage the Outlook for Android wearable app when Intune App Protection Policies are not in use).
+- Allow Bluetooth (used to manage the Outlook for Android wearable app when Intune App Protection Policies are not in use)
 
   - When AllowBluetooth is enabled (default behavior) or configured for HandsfreeOnly, wearable synchronization between Outlook on the Android device and Outlook on the wearable is allowed for the work or school account.
 
