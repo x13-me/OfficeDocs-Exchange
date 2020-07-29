@@ -70,6 +70,8 @@
 ## [Mail flow best practices](../mail-flow-best-practices/mail-flow-best-practices.md)
 ### [Test mail flow](../mail-flow-best-practices/test-mail-flow.md)
 ### [Troubleshoot mail flow](../mail-flow-best-practices/troubleshoot-mail-flow.md)
+### [Mail flow insights in the modern Exchange admin center](../mail-flow-best-practices/mail-flow-insights/mail-flow-insights.md)
+#### [Email issues for priority accounts report in the modern EAC](../mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts.md)
 ### [Use connectors to configure mail flow](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md)
 #### [Do I need to create a connector?](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/do-i-need-to-create-a-connector.md)
 #### [Set up connectors to route mail](../mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md)
