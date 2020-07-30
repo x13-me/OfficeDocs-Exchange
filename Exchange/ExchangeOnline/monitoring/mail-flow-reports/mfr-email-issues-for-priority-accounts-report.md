@@ -30,7 +30,7 @@ The **Unhealthy email status** section shows the following information about mes
 
 To quickly filter the results by recipient, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing the recipient's email address.
 
-For more advanced filtering, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
+For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 
 - **Name your filter**: Enter a unique name.
 

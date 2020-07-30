@@ -17,7 +17,7 @@ description: "Admins can learn how to use the Auto forwarded messages report in 
 
 The **Auto-forwarded messages** report in the modern Exchange admin center (modern EAC) displays information on messages that are automatically forwarded from your organization to recipients in external domains. You can use this report to look for potential data leaks.
 
-The overview section contains the following information in charts:
+The overview section contains the following charts:
 
 - **Forwarding type** (almost always SMTP)
 - **Recipient domain**
@@ -25,7 +25,7 @@ The overview section contains the following information in charts:
 
 If you hover over a specific color in the chart, you'll see the associated numbers for that specific forwarding type, recipient domain, or forwarding user.
 
-![Overview of the Auto forwarded messages report](../../media/mfi-auto-forwarded-messages-report.png)
+![Overview of the Auto forwarded messages report](../../media/mfr-auto-forwarded-messages-report.png)
 
 The **Auto forwarded message details** section shows the following information about each specific forwarder (the user account that's doing the forwarding):
 
@@ -45,4 +45,4 @@ Two insights are generated based on the report data: **New domains being forward
 
 ## See also
 
-For more information about other mail flow reports and insights, see [Mail flow reports and insights in the modern Exchange admin center](mail-flow-insights.md).
+For more information about other mail flow reports, see [Mail flow reports in the modern EAC](mail-flow-reports.md).
