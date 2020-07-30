@@ -1,5 +1,5 @@
 ---
-title: "Mail flow reports in the modern Exchange admin center"
+title: "Mail flow reports in the modern EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ description: Admins can learn about the mail flow reports that are available in 
 ms.custom:
 ---
 
-## Mail flow insights in the modern Exchange admin center
+# Mail flow reports in the modern Exchange admin center
 
 Admins can use mail flow reports in the modern Exchange admin center (modern EAC) to establish baselines and discover trends to fix issues related to mail flow in their organization.
 

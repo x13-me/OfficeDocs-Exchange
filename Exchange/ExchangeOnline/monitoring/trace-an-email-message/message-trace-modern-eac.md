@@ -108,7 +108,7 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Pending**: Delivery of the message is being attempted or re-attempted.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantined email messages in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/quarantine-email-messages).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
