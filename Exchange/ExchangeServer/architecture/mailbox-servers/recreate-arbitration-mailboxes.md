@@ -18,7 +18,7 @@ manager: serdars
 
 # Recreate missing arbitration mailboxes
 
-Exchange Server contains five special system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
+Exchange Server contains five special system mailboxes (seven in Exchange 2016 CU8 and later) known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
 
 |**Arbitration mailbox Name**|**Display name**|**Persisted capabilities**|**Function**|
 |:-----|:-----|:-----|:-----|
@@ -27,6 +27,9 @@ Exchange Server contains five special system mailboxes known as *arbitration mai
 |SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX} <br/> (for example, SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}; most of the mailbox name is unique to your organization)|Microsoft Exchange Approval Assistant|none|This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.|
 |SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}|Microsoft Exchange|ClientExtensions <br/><br/> GMGen <br/><br/> MailRouting <br/><br/> MessageTracking <br/><br/> OABGen <br/><br/> PstProvider <br/><br/> UMGrammar <br/><br/> UMGrammarReady (Exchange 2016 only)|This is known as an organization mailbox. It is used for creating offline address books (OABs). To load-balance OAB generation across your organization, including across geographically separate sites, you can create additional organization mailboxes.|
 |SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}|Microsoft Exchange|UMDataStorage|Discovery system mailbox. <br/><br/> Provisioned for use by the e-Discovery feature, which is used by compliance officers to locate messages that match specified selection criteria. This mailbox is also used by Unified Messaging in Exchange 2016 for storing UM console attending files and other information.|
+|SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201} <br/> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
+|SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA} <br/> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
+
 
 If you need to re-create one of more of these arbitration mailboxes, see the instructions that follow.
 
