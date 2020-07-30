@@ -32,9 +32,7 @@ The Outlook on the web mailbox policy parameters in the following table should b
 |:-----|:-----|
 |_DirectFileAccessOnPublicComputersEnabled_|Specifies left-click and other options available for attachments when the user has signed in to Outlook on the web from a computer outside of a private or corporate network. If this parameter is set to `$true`, **Open** and other options are available. If it's set to `$false`, the **Open** option is disabled.|
 |_ForceWacViewingFirstOnPublicComputers_|Specifies whether a user who signed in to Outlook on the web from a computer outside of a private or corporate network can open an Office file directly without first viewing it as a webpage.|
-|_ForceWebReadyDocumentViewingFirstOnPublicComputers_|Specifies whether a user who has signed in to Outlook on the web can open a document directly without first viewing it as a webpage.|
 |_WacViewingOnPublicComputersEnabled_|Specifies whether a user who has signed into Outlook on the web from a computer outside of the corporate network can view supported Office files using Outlook on the web.|
-|_WebReadyDocumentViewingOnPublicComputersEnabled_|Specifies whether WebReady Document Viewing is enabled when the user has signed in from a computer outside of the corporate network.|
 
 ## What do you need to know before you begin?
 
@@ -103,7 +101,7 @@ You must create a custom claim rule because an AD FS server relies on the presen
 
 ### Use EAC to enable public attachment handling settings
 
-1. In the EAC, click **Permissions** \> **Outlook on the web policies**.
+1. In the EAC, click **Permissions** \> **Outlook Web App policies**.
 
 2. In the result pane, click the mailbox policy you want to view or configure, and click **Edit**.
 
@@ -113,10 +111,6 @@ You must create a custom claim rule because an AD FS server relies on the presen
 
   - **Direct file access**: Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages.
 
-  - **WebReady Document Viewing**: Select this check box if you want to enable supported documents to be converted to HTML and displayed in a web browser.
-
-  - **Force WebReady Document Viewing when a converter is available**: Select this check box if you want to force documents to be converted to HTML and displayed in a web browser before users can open them in the viewing application. Documents can be opened in the viewing application only if direct file access has been enabled.
-
 4. Click **Save** to update the policy.
 
 ### Use Exchange Online PowerShell to enable public attachment handling settings
@@ -124,7 +118,7 @@ You must create a custom claim rule because an AD FS server relies on the presen
 Run the following command:
 
 ```PowerShell
-Set-OwaMailboxPolicy -Identity MyOWAPublicPolicy -DirectFileAccessOnPublicComputersEnabled $true -ForceWacViewingFirstOnPublicComputers $true -WacViewingOnPublicComputersEnabled $true -WebReadyDocumentViewingOnPublicComputersEnabled $true
+Set-OwaMailboxPolicy -Identity MyOWAPublicPolicy -DirectFileAccessOnPublicComputersEnabled $true -ForceWacViewingFirstOnPublicComputers $true -WacViewingOnPublicComputersEnabled $true
 ```
 
 ## What you need to know about attachments?
