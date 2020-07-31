@@ -34,7 +34,7 @@ The **Non-Accepted domain details** section contains the following information:
 - **Count**
 - **Sample messages**: This field contains the internet message IDs (also known as the Client IDs) of a sample of the original messages. This value is stored in the **Message-ID** header field in the message header and is constant for the lifetime of the message.
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
 
 To filter the results by date range or connector name, use the boxes. You can specify a date range up to 90 days.
 

@@ -38,7 +38,7 @@ The **Messages sent using SMTP Auth** section shows the following information:
 - **TLS 1.2** (percentage)
 - **Messages sent**
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
 
 To filter the results by a date range, use the box. You can specify a date range up to 90 days.
 

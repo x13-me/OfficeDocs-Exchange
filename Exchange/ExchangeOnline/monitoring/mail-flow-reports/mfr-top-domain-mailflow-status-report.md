@@ -28,7 +28,7 @@ This report shows the following information for each domain:
 - **Current MX record**
 - **Email received (past 6 hours)**
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
 
 For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 

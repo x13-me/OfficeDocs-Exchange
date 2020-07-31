@@ -40,7 +40,7 @@ The **Connector report details** section shows the following information about e
 - **TLS 1.2**
 - **Volume**
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
 
 To filter the results by date range or connector name, use the boxes. You can specify a date range up to 90 days.
 
