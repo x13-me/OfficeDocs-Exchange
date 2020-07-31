@@ -106,7 +106,16 @@ Outlook for iOS and Android supports the following Exchange mobile device mailbo
 
 - Password enabled
 
-See [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md) for more information.
+- Allow Bluetooth (used to manage the Outlook for Android wearable app when Intune App Protection Policies are not in use)
+
+  - When AllowBluetooth is enabled (default behavior) or configured for HandsfreeOnly, wearable synchronization between Outlook on the Android device and Outlook on the wearable is allowed for the work or school account.
+
+  - When AllowBluetooth is disabled, Outlook for Android will disable synchronization between Outlook on the Android device and Outlook on the wearable for the specified work or school account (and delete any data previously synced for the account). Disabling the synchronization is controlled entirely within Outlook itself; Bluetooth is not disabled on the device or wearable nor is any other wearable app affected.
+
+> [!NOTE]
+> Outlook for Android will roll out support for the AllowBluetooth setting beginning at the end of August.
+
+For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
 
 Exchange administrators can also initiate a remote device wipe against Outlook for iOS and Android using Exchange admin center. Upon receiving the remote wipe request, the app will remove the Outlook profile and all data associated with it.
 
