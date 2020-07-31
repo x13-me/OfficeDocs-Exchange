@@ -56,10 +56,10 @@ You can create a new Azure virtual network with a domain controller with Azure P
 2. Get your subscription name using the following command.
 
    ```powershell
-   Get-AZSubscription | Sort SubscriptionName | Select SubscriptionName
+   Get-AZSubscription | Sort-Object Name | Select-Object Name
    ```
 
-3. Set your Azure subscription with the following commands. Set the **$subscr** variable by replacing everything within the quotes, including the \< and \> characters, with the correct name.
+3. Set your Azure subscription with the following commands. Set the **$subscrName** variable by replacing everything within the quotes, including the \< and \> characters, with the correct name.
 
    ```powershell
    $subscrName="<subscription name>"
@@ -69,7 +69,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
 4. Create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.
 
    ```powershell
-   Get-AZResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+   Get-AZResourceGroup | Sort-Object ResourceGroupName | Select-Object ResourceGroupName
    ```
 
    Create your new resource group with these commands. Set the variables by replacing everything within the quotes, including the \< and \> characters, with the correct names.
@@ -83,7 +83,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
 5. Resource Manager-based virtual machines require a Resource Manager-based storage account. You must pick a globally unique name for your storage account *that contains only lowercase letters and numbers*. You can use this command to list the existing storage accounts.
 
    ```powershell
-   Get-AZStorageAccount | Sort StorageAccountName | Select StorageAccountName
+   Get-AZStorageAccount | Sort-Object StorageAccountName | Select-Object StorageAccountName
    ```
 
    Use this command to test whether a proposed storage account name is unique.
@@ -95,17 +95,13 @@ You can create a new Azure virtual network with a domain controller with Azure P
    Create a new storage account for your new test environment with these commands.
 
    ```powershell
-   $rgName="<your new resource group name>"
    $saName="<storage account name>"
-   $locName=(Get-AZResourceGroup -Name $rgName).Location
    New-AZStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
    ```
 
 6. Create the EXSrvrVnet Azure Virtual Network that will host the EXSrvrSubnet subnet and protect it with a network security group.
 
    ```powershell
-   $rgName="<name of your new resource group>"
-   $locName=(Get-AZResourceGroup -Name $rgName).Location
    $exSubnet=New-AZVirtualNetworkSubnetConfig -Name EXSrvrSubnet -AddressPrefix 10.0.0.0/24
    New-AZVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/16 -Subnet $exSubnet -DNSServer 10.0.0.4
    $rule1 = New-AZNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
@@ -122,9 +118,8 @@ You can create a new Azure virtual network with a domain controller with Azure P
    First, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer to create an Azure virtual machine for adVM.
 
    ```powershell
-   $rgName="<resource group name>"
    # Create an availability set for domain controller virtual machines
-   New-AZAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+   New-AZAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
    # Create the domain controller virtual machine
    $vnet=Get-AZVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName
    $pip = New-AZPublicIpAddress -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
@@ -237,7 +232,6 @@ Next, fill in the variable values and run the resulting block at the PowerShell 
 ```powershell
 # Set up key variables
 $subscrName="<name of your Azure subscription>"
-$rgName="<your resource group name>"
 $vmDNSName="<unique, public DNS name for the Exchange server>"
 # Set the Azure subscription
 Select-AzSubscription -SubscriptionName $subscrName
