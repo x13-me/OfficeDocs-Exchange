@@ -284,7 +284,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 ### Prepare Windows Server AD
 
-1. At the PowerShell command prompt on your local computer, run the following command:
+1. At the Windows PowerShell command prompt on your local computer, run the following command:
 
    ```powershell
    Write-Host (Get-AZPublicIpaddress -Name "exVM-PublicIP" -ResourceGroup $rgName).DnsSettings.Fqdn
@@ -294,11 +294,11 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 3. If needed, connect to the adVM virtual machine with the Azure portal using the CORP\\<ADMIN_NAME\> account and password.
 
-4. From the Start screen of adVM, type **Active Directory**, and then click **Active Directory Domains and Trusts**.
+4. At the Windows PowerShell command prompt, run the following command:
 
-5. Right-click **Active Directory Domains and Trusts**, and then click **Properties**.
-
-6. In **Alternative UPN suffixes**, type or copy the Internet DNS name of the exVM virtual machine from step 2, click **Add**, and then click **OK**.
+   ```powershell
+   Get-ADForest | Set-ADForest -UPNSuffixes @{Add="<DNS Name of Exchange>"}
+   ```
 
 7. Close the remote desktop session with adVM.
 
