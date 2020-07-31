@@ -40,7 +40,7 @@ To get started implementing any of these scenarios to block certain message type
 
 > [!NOTE]
 > In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
-> The embedded images are treated as attachments, for this reason we do not recommend using a very small value since unexpected messages will be blocked. For example, messages with a picture in the signature.
+> The embedded images are treated as attachments (for example, messages with a picture in the signature), for this reason we do not recommend using a very small value since unexpected messages will be blocked.
 
 ## Example 1: Block messages with attachments, and notify the sender
 
