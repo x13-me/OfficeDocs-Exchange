@@ -17,6 +17,9 @@ description: "Admins can learn how to use the Auto forwarded messages report in 
 
 The **Auto-forwarded messages** report in the modern Exchange admin center (modern EAC) displays information on messages that are automatically forwarded from your organization to recipients in external domains. You can use this report to look for potential data leaks.
 
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
 The overview section contains the following charts:
 
 - **Forwarding type** (almost always SMTP)

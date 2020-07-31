@@ -19,7 +19,12 @@ The **Non-accepted domain** report in the modern Exchange admin center (modern E
 
 Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
-The overview section contains ???
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
+The overview section contains a chart that shows the number of messages sent per connector:
+
+![Overview of the Auto forwarded messages report](../../media/mfr-non-accepted-domain-report.png)
 
 The **Non-Accepted domain details** section contains the following information:
 
@@ -31,7 +36,7 @@ The **Non-Accepted domain details** section contains the following information:
 
 To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-filter-icon.png) and start typing a value.
 
-To filter the results by date range or ???, use the boxes. You can specify a date range up to 90 days.
+To filter the results by date range or connector name, use the boxes. You can specify a date range up to 90 days.
 
 For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 

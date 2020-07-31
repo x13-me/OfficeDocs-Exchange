@@ -17,6 +17,9 @@ description: "Admins can learn how to use the Outbound messages report in the mo
 
 The **Outbound messages report** report in the modern Exchange admin center (modern EAC) displays information about email leaving your organization to the internet and over connectors. The report also shows the TLS encryption level that's being used.
 
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
 The overview section contains the following charts:
 
 - **Message volume**: Shows the number of outbound messages to the internet and over connectors.

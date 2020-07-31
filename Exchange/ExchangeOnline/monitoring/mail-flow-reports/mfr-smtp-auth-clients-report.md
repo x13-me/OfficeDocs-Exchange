@@ -17,12 +17,15 @@ description: "Admins can learn how to use the SMTP AUTH report in the modern Exc
 
 The **SMTP AUTH clients** report in the modern Exchange admin center (modern EAC) highlights the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. This report allows you to check for unusual activity. It also shows the TLS usage data for clients or devices using SMTP AUTH.
 
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
 The overview section contains the following charts:
 
 - The volume of messages per day for each sending domain.
 - **Message volume by sender**<sup>\*</sup>
 - **Message sent by domain**<sup>\*</sup>
-- **Senders by TLS protoco**<sup>\*</sup>
+- **Senders by TLS protocol**<sup>\*</sup>
 
 <sup>\*</sup> If you hover over a specific color in the chart, you'll see the number of messages.
 

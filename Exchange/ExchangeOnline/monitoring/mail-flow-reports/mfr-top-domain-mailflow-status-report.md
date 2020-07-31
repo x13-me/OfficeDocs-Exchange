@@ -17,10 +17,13 @@ description: "Admins can learn how to use the Top domain mailflow status report 
 
 The **Top domain mailflow status** report in the modern Exchange admin center (modern EAC) returns information about whether your email domains are receiving or aren't receiving messages. Typically, these types of issues are related to MX record problems for the domain.
 
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
 This report shows the following information for each domain:
 
 - **Domain**
-- **Domain stauts**: The value will be **Healthy** or **Error**
+- **Domain status**: The value will be **Healthy** or **Error**
 - **Previous MX record**
 - **Current MX record**
 - **Email received (past 6 hours)**

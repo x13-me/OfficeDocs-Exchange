@@ -17,6 +17,9 @@ description: "Admins can learn how to use the Non-delivery details report in the
 
 The **Non-delivery details report** in the modern Exchange admin center (modern EAC) shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
 
+> [!NOTE]
+> By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+
 ![Overview of the Non-delivery details report](../../media/mfr-non-delivery-details-report.png)
 
 The chart in the overview section contains the most-encountered NDR error codes for a given day. If you hover over a specific color in the chart, you'll see the number of messages for that specific error code.
