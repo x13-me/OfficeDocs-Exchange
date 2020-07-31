@@ -24,6 +24,8 @@ Use one or more of the procedures listed below to get your public folder infrast
 
 [Configure legacy on-premises public folders for a hybrid deployment](configure-legacy-public-folders-for-hybrid.md)
 
+[Configure modern on-premises public folders for a hybrid deployment](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
+
 [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md)
 
 [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)

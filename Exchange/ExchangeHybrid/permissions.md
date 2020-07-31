@@ -90,7 +90,7 @@ Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
 
 **Note**:
 
-Send As permission is also needed to comply with the following on-premises Exchange server and AAD Connect requirements:
+Send As permission is also needed to comply with the following capabilities:
 
 - **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup. (Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group.)
 
