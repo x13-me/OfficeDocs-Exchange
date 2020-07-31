@@ -198,7 +198,7 @@ In addition to linking role assignees to roles, role assignments can also apply 
 
   - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-these roles are assigned to one or more role groups by default. For more information, see the "Default Management Role Assignments" section later in this topic.
+These roles are assigned to one or more role groups by default. For more information, see the "Default Management Role Assignments" section later in this topic.
 
 If you want to view a list of role groups, users, or USGs assigned to these roles, use the following command.
 
