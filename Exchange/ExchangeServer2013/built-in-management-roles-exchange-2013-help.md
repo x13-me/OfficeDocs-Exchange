@@ -252,7 +252,7 @@ By enabling or disabling a role assignment, you control whether that role assign
 
 ## Management role customization
 
-these roles has been configured to provide a role assignee with all necessary cmdlets and parameters to manage the features and components listed in the beginning of this topic. Other roles have also been provided to enable management of other features. By adding and removing roles to and from role groups, you can create a customized permissions model without the need to customize individual management roles. For a complete list of roles, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md). For more information about customizing role groups, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
+These roles have been configured to provide a role assignee with all necessary cmdlets and parameters to manage the features and components listed at the beginning of this topic. Other roles have also been provided to enable management of other features. By adding and removing roles to and from role groups, you can create a customized permissions model without the need to customize individual management roles. For a complete list of roles, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md). For more information about customizing role groups, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 If you decide that you need to create a customized version of these roles, you must create a role as a child of these roles, and customize the new role.
 
