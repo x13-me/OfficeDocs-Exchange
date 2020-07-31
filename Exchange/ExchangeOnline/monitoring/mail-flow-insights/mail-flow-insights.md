@@ -10,23 +10,23 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: Admins can learn how to use the mail flow insights dashboard in the modern Exchange admin center to view and fix mail flow related issues.
+description: Admins can learn how to use the mail flow insights dashboard in the modern Exchange admin center to find and fix mail flow related issues.
 ms.custom:
 ---
 
 # Mail flow insights in the modern Exchange admin center
 
-Admins can use the insights dashboard in the modern Exchange admin center (modern EAC) to discover issues with mail flow and take corrective action.
+Admins can use the insights dashboard in the modern Exchange admin center (modern EAC) to discover issues with mail flow and take corrective action. If an item appears in the mail flow insights dashboard, you need to investigate and likely fix the issue.
 
 The following mail flow insights are available:
 
-- Fix possible mail loop
+- [Fix possible mail loop insight](mfi-fix-possible-mail-loop-insight.md)
 
-- Fix slow mail flow rules
+- [Fix slow mail flow rules insight](mfi-fix-slow-mail-flow-rules-insight.md)
 
-- New domains being forwarded email
+- [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email-insight.md)
 
-- New users forwarding email
+- [New users forwarding email insight](mfi-new-users-forwarding-email-insight.md)
 
 ## Permissions required to view and use mail flow insights
 

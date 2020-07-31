@@ -41,7 +41,7 @@ Click **Export** to export the displayed results to a .csv file.
 
 ## Insights
 
-Two insights are generated based on the report data: **New domains being forwarded email** and **New users forwarding email**. Each insight provides a summary of the number of new forwarders or domains with a link back to this report.
+Two insights are generated based on the report data: [New domains being forwarded email](../mail-flow-insights/mfi-new-domains-being-forwarded-email-insight.md) and [New users forwarding email](../mail-flow-insights/mfi-new-users-forwarding-email-insight.md). Each insight provides a summary of the number of new forwarders or domains with a link back to this report.
 
 ## See also
 
