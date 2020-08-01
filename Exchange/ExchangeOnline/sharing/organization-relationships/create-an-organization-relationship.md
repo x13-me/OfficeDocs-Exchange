@@ -41,7 +41,7 @@ Set up an organization relationship to share calendar information with an extern
 
 4. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
-5. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to enter more than one domain, separate the domain names with a comma. For example, contoso.com, service.contoso.com.
+5. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to add more than one domain, you can do it after you create the organization relationship by editing it.
 
 6. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
 
