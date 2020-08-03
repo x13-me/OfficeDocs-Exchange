@@ -89,7 +89,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 11. On the **Federation Trust** page, click **Enable** and then click **Next**.
 
-12. On the **Domain Ownership** page, click **Click copy to clipboard** to copy the domain proof token information for the domains you've selected to include in the hybrid deployment. Open a text editor such as Notepad and paste the token information for these domains. Before continuing in the Hybrid Configuration wizard, you must use this info to create a TXT record for each domain in your public DNS. Refer to your DNS host's Help for information about how to add a TXT record to your DNS zone. Click **Next** after the TXT records have been created and the DNS records have replicated.
+12. On the **Domain Ownership** page, click **Click copy to clipboard** to copy the domain proof token information for the domains you've selected to include in the hybrid deployment. Open a text editor such as Notepad and paste the token information for these domains. Before continuing in the Hybrid Configuration Wizard, you must use this information to create a TXT record for each domain in your public DNS. Refer to your DNS host's Help for information about how to add a TXT record to your DNS zone. Click **Next** after the TXT records have been created and the DNS records have replicated.
 
 13. On the **Hybrid Topology** page, click **Use Exchange Classic Hybrid Topology** and click then **Next**.
 
