@@ -104,7 +104,7 @@ Use the following procedure to create and configure a hybrid deployment:
 18. The wizard displays a completion message and the **Close** button is displayed. Click **Close** to complete the hybrid deployment configuration process and to close the wizard.
 
 > [!NOTE]
-> For more information on the different HCW options, see [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](https://docs.microsoft.com/exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate), [Microsoft Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent), and [Hybrid Configuration Wizard options](https://docs.microsoft.com/exchange/hybrid-configuration-wizard-options).
+> For more information on the different Hybrid Configuration Wizard options, see [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](https://docs.microsoft.com/exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate), [Microsoft Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent), and [Hybrid Configuration Wizard options](https://docs.microsoft.com/exchange/hybrid-configuration-wizard-options).
 
 ## Configure OAuth authentication between Exchange and Exchange Online organizations
 
