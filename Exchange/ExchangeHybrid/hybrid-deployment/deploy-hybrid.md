@@ -70,7 +70,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 3. When you're prompted, click **Run** to open the Hybrid Configuration Wizard.
 
-4. Click **Next**, and then, in the **On-premises Exchange Server Organization** section, select **Detect the optimal Exchange server**. The wizard will attempt to detect an on-premises Exchange server. If the wizard doesn't detect an Exchange server, or if you want to use a different server, select **Specify a server running Exchange 2010, Exchange 2013 or 2016** and then specify the internal FQDN of an Exchange Client Access Server for Exchange 2010 and 2013, or an Exchange Mailbox server for Exchange 2016.
+4. Click **Next**, and then, in the **On-premises Exchange Server Organization** section, select **Detect the optimal Exchange server**. The wizard will attempt to detect an on-premises Exchange server. If the wizard doesn't detect an Exchange server, or if you want to use a different server, select **Specify a server running Exchange 2010, Exchange 2013, or Exchange 2016**. Then specify the internal FQDN of an Exchange Client Access Server for Exchange 2010 and Exchange 2013 or an Exchange Mailbox server for Exchange 2016.
 
 5. In the **Office 365 Exchange Online** section, select the location where your Microsoft 365 or Office 365 organization is hosted and then click **Next**.
 
