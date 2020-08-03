@@ -74,7 +74,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 5. In the **Office 365 Exchange Online** section, select the location where your Microsoft 365 or Office 365 organization is hosted and then click **Next**.
 
-6. On the **On-premises Exchange account** page, in the **Please provide your on-premises Exchange administrator account credentials** section, select **change** if you don't want that the wizard use the account you're logged into to access your on-premises Active Directory and Exchange servers. If you want to use the same credentials, continue to the next step.
+6. On the **On-premises Exchange account** page, in the **Please provide your on-premises Exchange administrator account credentials** section, select **change** if you don't want that the wizard to use the account you're logged into to access your on-premises Active Directory and Exchange servers. If you want to use the same credentials, continue to the next step.
 
 7. In the **Office 365 Exchange Online Account** credentials section, click **sign in** and specify the username and password of a Microsoft 365 or Office 365 account that has Global Administrator permissions. Click **Next**.
 
