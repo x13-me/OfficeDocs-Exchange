@@ -279,27 +279,6 @@ In on-premises deployments, if your organization requires that retention setting
 
 When planning to implement mailbox retention for messaging retention management (MRM) or In-Place eDiscovery, you must take employee turnover into consideration. Long-term retention of ex-employee mailboxes will require additional storage on Mailbox servers and also result in an increase in Active Directory database because it requires that the associated user account be retained for the same duration. Additionally, it may also require changes to your organization's account provisioning and management processes.
 
-## In-Place eDiscovery limits and throttling policies
-<a name="throttle"> </a>
-
-In Exchange Server and Exchange Online, the resources In-Place eDiscovery can consume are controlled using throttling policies.
-
-The default throttling policy contains the following throttling parameters.
-
-|**Parameter**|**Description**|**Default value**|
-|:-----|:-----|:-----|
-|DiscoveryMaxConcurrency|The maximum number of In-Place eDiscovery searches that can run at the same time in your organization.|2  <br/> **Note**: If an eDiscovery search is started while two previous searches are still running, the third search won't be queued and will instead fail. You have to wait until one of the previous searches finishes before you can successfully start a new search.|
-|DiscoveryMaxMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search.|Exchange Online: 10,000<sup>1</sup> <br/> Exchange Server: 5,000|
-|DiscoveryMaxStatsSearchMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search that still allows you to view keyword statistics.|100  <br/> **Note**: After you run an eDiscovery search estimate, you can view keyword statistics. These statistics show details about the number of items returned for each keyword used in the search query. If more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics.|
-|DiscoveryMaxKeywords|The maximum number of keywords that can be specified in a single In-Place eDiscovery search.|500|
-|DiscoveryMaxSearchResultsPageSize|The maximum number of items displayed on a single page when previewing In-Place eDiscovery search results.|200|
-|DiscoverySearchTimeoutPeriod|The number of minutes that an In-Place eDiscovery search will run before it times out.|10 minutes|
-
-> [!NOTE]
-> <sup>1</sup> If you initiate an eDiscovery search from the eDiscovery Center in SharePoint Online in a Microsoft 365 or Office 365 organization, you can search a maximum of 1,500 mailboxes in a single search.
-
-In Exchange Server, you can change the default values for these parameters to suit your requirements or create additional throttling policies and assign them to users with delegated Discovery Management permission. In Exchange Online, the default values for these throttling parameters can't be changed.
-
 ## In-Place eDiscovery documentation
 <a name="ediscoverydocumentation"> </a>
 
