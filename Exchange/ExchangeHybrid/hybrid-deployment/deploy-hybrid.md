@@ -60,7 +60,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the Exchange admin center and Hybrid Configuration wizard to create a full classic hybrid deployment
+## Use the Exchange admin center and Hybrid Configuration Wizard to create a full classic hybrid deployment
 
 Use the following procedure to create and configure a hybrid deployment:
 
