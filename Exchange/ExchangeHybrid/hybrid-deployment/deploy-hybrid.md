@@ -80,7 +80,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 8. On the **Gathering Configuration Information** page, the wizard will connect to both your on-premises organization and your Microsoft 365 or Office 365 organization to validate credentials and examine the current configuration of both organizations. Click **Next** when it's done.
 
-9. On the **Hybrid Features** page, select **Full Hybrid Configuration** and then click **Next**. On this page, you can also select **Organization Configuration Transfer** if you want to perform one-time transfer of organization objects from you on-premises environment to Exchange Online. For more information, see [Hybrid Organization Configuration Transfer V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-hybrid-organization-configuration-transfer-v2/ba-p/608762).
+9. On the **Hybrid Features** page, select **Full Hybrid Configuration** and then click **Next**. On this page, you can also select **Organization Configuration Transfer** if you want to perform a one-time transfer of organization objects from your on-premises environment to Exchange Online. For more information, see [Hybrid Organization Configuration Transfer V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-hybrid-organization-configuration-transfer-v2/ba-p/608762).
 
 10. On the **Hybrid Domains**, select the domains you want to include in your hybrid deployment. In most deployments you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain. Click **Next**.
 
