@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
-ms.date: 4/29/2016
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Modify, disable, or remove a sharing policy in Exchange Online
 ms.collection: 
 - exchange-online
@@ -87,37 +88,37 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
   ```
 
 - This example adds a second domain to the sharing policy Contoso. When you're adding a domain to an existing policy, you must include any previously included domains.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
   ```
 
 - This example sets the sharing policy Contoso as the default sharing policy.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity Contoso -Default $True
   ```
 
 - This example disables the sharing policy Contoso.
 
-  ```
+  ```PowerShell
   Set-SharingPolicy -Identity "Contoso" -Enabled $False
   ```
 
 - The first example removes the sharing policy Contoso. The second example removes the sharing policy Contoso and suppresses the confirmation that you want to remove the policy.
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso
   ```
 
-  ```
+  ```PowerShell
   Remove-SharingPolicy -Identity Contoso -Confirm
 
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-sharingpolicy) and [Remove-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-sharingpolicy).
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/set-sharingpolicy) and [Remove-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-sharingpolicy).

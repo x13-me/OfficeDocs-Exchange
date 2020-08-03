@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016 and Exchange 2019."
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 83358884-6036-4e91-87a8-35200541874d
-ms.date: 7/11/2018
 ms.reviewer:
 title: Procedures for messages in queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -51,7 +52,7 @@ For information about exporting messages from queues, see [Export messages from 
 
     When the shortcut appears in the results, you can select it.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For more information about using filters and identity values in the Exchange Management Shell, see [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
 
@@ -60,7 +61,7 @@ For information about exporting messages from queues, see [Export messages from 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Remove messages from queues
 <a name="Remove"> </a>
@@ -88,23 +89,23 @@ For information about exporting messages from queues, see [Export messages from 
 
 To remove messages from queues, use the following syntax.
 
-```
+```powershell
 Remove-Message <-Identity MessageIdentity | -Filter "MessageFilter"> -WithNDR <$true | $false>
 ```
 
 This example removes messages in the queues that have a subject of "Win Big" without sending an NDR.
 
-```
+```powershell
 Remove-Message -Filter "Subject -eq 'Win Big'" -WithNDR $false
 ```
 
 This example removes the message with the message ID 3 from the Unreachable queue on server named Mailbox01 and sends an NDR.
 
-```
+```powershell
 Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
 ```
 
-For more information, see [Remove-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-message)
+For more information, see [Remove-Message](https://docs.microsoft.com/powershell/module/exchange/remove-message)
 
 ### How do you know this worked?
 
@@ -114,17 +115,17 @@ To verify that you have successfully removed messages from queues, use either of
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify the messages no longer exist:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 ## Suspend messages in queues
 <a name="Suspend"> </a>
@@ -147,35 +148,35 @@ To verify that you have successfully removed messages from queues, use either of
 
 To suspend messages, use the following syntax:
 
-```
+```powershell
 Suspend-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example suspends the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
 
-```
+```powershell
 Suspend-Message -Identity Mailbox01\Unreachable\3
 ```
 
 This example suspends all messages in all queues on the local server that are from any sender in the domain contoso.com.
 
-```
+```powershell
 Suspend-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example suspends all messages in the delivery queue for contoso.com on the server named Mailbox01.
 
-```
+```powershell
 Get-Queue Mailbox01\contoso.com | Get-Message | Suspend-Message
 ```
 
 This example suspends all messages in all queues on the local server.
 
-```
+```powershell
 Get-Queue | Get-Message | Suspend-Message
 ```
 
-For more information, see [Suspend-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/suspend-message).
+For more information, see [Suspend-Message](https://docs.microsoft.com/powershell/module/exchange/suspend-message).
 
 ### How do you know this worked?
 
@@ -185,17 +186,17 @@ To verify that you have successfully suspended messages in queues, use either of
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are suspended:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 ## Resume messages in queues
 <a name="Resume"> </a>
@@ -228,19 +229,19 @@ To verify that you have successfully suspended messages in queues, use either of
 
 To resume messages, use the following syntax:
 
-```
+```powershell
 Resume-Message <-Identity MessageIdentity | -Filter "MessageFilter">
 ```
 
 This example resumes all messages being sent from any sender in the contoso.com domain.
 
-```
+```powershell
 Resume-Message -Filter "FromAddress -like '*contoso.com'"
 ```
 
 This example resumes the message with the message ID 3 in the Unreachable queue on server named Mailbox01.
 
-```
+```powershell
 Resume-Message -Identity Mailbox01\Unreachable\3
 ```
 
@@ -252,17 +253,17 @@ To verify that you have successfully resumed messages in queues, use either of t
 
 - In the Exchange Management Shell, replace _MessageFilter_ with the filter that you used, or _\<QueueIdentity\>_ with the identity of the queue, and run either of the following commands to verify that the messages are no longer suspended:
 
-  ```
+  ```powershell
   Get-Message -Filter "MessageFilter"
   ```
 
     Or
 
-  ```
+  ```powershell
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 If you can't find the messages in any queues on the server, this likely indicates the message was successfully delivered to the next hop.
 
@@ -285,17 +286,17 @@ Redirecting messages drains all active messages from delivery queues on the sour
 
 To redirect messages, use the following syntax:
 
-```
+```powershell
 Redirect-Message -Server <ServerIdentity> -Target <ServerFQDN>
 ```
 
 This example redirects messages from all delivery queues on the server named Mailbox01 to the server named Mailbox02.contoso.com.
 
-```
+```powershell
 Redirect-Message -Server Mailbox01 -Target Mailbox02.contoso.com
 ```
 
-For more information, see [Redirect-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/redirect-message).
+For more information, see [Redirect-Message](https://docs.microsoft.com/powershell/module/exchange/redirect-message).
 
 ### How do you know this worked?
 
@@ -305,6 +306,6 @@ To verify that you have successfully redirected messages in queues, use either o
 
 - In the Exchange Management Shell, run the following command to verify that the **MessageCount** property value for the delivery queues on the source server is decreasing or empty.
 
-  ```
+  ```powershell
   Get-Queue
   ```

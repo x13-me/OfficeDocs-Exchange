@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or Exchange Server 2019"
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
-ms.date: 7/5/2018
 ms.reviewer:
 title: Recover deleted messages in a user's mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -58,14 +59,14 @@ This example searches for messages in April Stewart's mailbox that meet the foll
 
 - Keyword: Seattle
 
-```
+```PowerShell
 Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
 ```
 
 > [!NOTE]
 > When using the **Search-Mailbox** cmdlet, you can scope the search by using the _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder.
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox).
+For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
 
 ### How do you know this worked?
 
@@ -84,11 +85,11 @@ After messages have been recovered to a discovery mailbox, you can restore them 
 
 This example restores messages to April Stewart's mailbox and deletes them from the Discovery Search Mailbox.
 
-```
+```PowerShell
 Search-Mailbox "Discovery Search Mailbox" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "April Stewart" -TargetFolder "Recovered Messages" -LogLevel Full -DeleteContent
 ```
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox).
+For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
 
  **How do you know this worked?**
 
@@ -108,11 +109,11 @@ This example uses the following settings to export messages from the folder Apri
 
 - **PST file path**: \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 
-```
+```PowerShell
 New-MailboxExportRequest -Mailbox "Discovery Search Mailbox" -SourceRootFolder "April Stewart Recovery" -ContentFilter "Subject -eq 'April travel plans'" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 ```
 
-For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxexportrequest).
+For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxexportrequest).
 
 This example uses the following settings to import messages from a .pst file to the folder Recovered By Helpdesk in April Stewart's mailbox:
 
@@ -122,11 +123,11 @@ This example uses the following settings to import messages from a .pst file to 
 
 - **PST file path**: \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 
-```
+```PowerShell
 New-MailboxImportRequest -Mailbox "April Stewart" -TargetRootFolder "Recovered By Helpdesk" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 ```
 
-For detailed syntax and parameter information, see [New-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboximportrequest).
+For detailed syntax and parameter information, see [New-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboximportrequest).
 
  **How do you know this worked?**
 
@@ -138,16 +139,14 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
 
 - In Exchange Server, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
 
-  - [Change the Deleted Item Retention Period for a Mailbox in Exchange Online](https://technet.microsoft.com/library/ce17f1ec-b96c-4c9e-b20a-507fe0afc684.aspx)
-
   - [Configure Deleted Item retention and Recoverable Items quotas](deleted-item-retention-and-recoverable-items-quotas.md)
 
 - Users can recover a deleted item if it hasn't been purged and if the deleted item retention period for that item hasn't expired. If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
 
-  - [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=821537)
+  - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-  - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+  - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
-- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) in the Exchange admin center (EAC) or the [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch) cmdlet in Windows PowerShell.
+- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) in the Exchange admin center (EAC) or the [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) cmdlet in Windows PowerShell.
 
 - In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search for and delete messages in Exchange Server](../../policy-and-compliance/ediscovery/delete-messages.md).

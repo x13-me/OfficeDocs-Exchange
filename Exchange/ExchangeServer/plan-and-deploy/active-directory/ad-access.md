@@ -2,13 +2,14 @@
 localization_priority: Priority
 description: 'Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory and how to recover deleted objects.'
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
-ms.date: 7/26/2018
 ms.reviewer: 
 title: Access to Active Directory by Exchange servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -112,8 +113,8 @@ The following guidelines will help you minimize problems or issues when you reco
 
 ## For more information
 
-[Active Directory Recycle Bin Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?linkId=178720)
+[Active Directory Recycle Bin Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10))
 
-[Introduction to Active Directory Administrative Center Enhancements (Level 100)](https://go.microsoft.com/fwlink/p/?linkId=267641)
+[Introduction to Active Directory Administrative Center Enhancements (Level 100)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-)
 
-[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](https://go.microsoft.com/fwlink/p/?LinkId=267642)
+[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/advanced-ad-ds-management-using-active-directory-administrative-center--level-200-)

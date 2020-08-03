@@ -2,10 +2,9 @@
 localization_priority: Normal
 description: This topic describes the recipient filter options that admins can use in custom address lists and global address lists (GALs) in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
-ms.date: 
 ms.reviewer: 
 title: Recipient filters for address lists in Exchange Online PowerShell
 ms.collection: 
@@ -13,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -33,7 +34,7 @@ Recipient filters identify the recipients that are included in address lists and
 
   - The basic OPATH filter syntax is `"<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'..."`.
 
-  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion..
+  - Double quotation marks `" "` are required around the whole OPATH filter. Although the filter is a string (not a system block), you can also use braces `{ }`, but only if the filter doesn't contain variables that require expansion.
 
   - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
 
@@ -47,7 +48,7 @@ Recipient filters identify the recipients that are included in address lists and
 
   - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `"(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')"`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
 
-  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).
+  - For more information, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/recipient-filters#additional-opath-syntax-information).
 
 For more information about address lists, see [Address lists in Exchange Online](address-lists.md).
 

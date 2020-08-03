@@ -4,11 +4,12 @@ TOCTitle: Benefits of anti-spam features in Exchange Online Protection over Exch
 ms:assetid: 00e37a3c-3fbc-488f-bdad-d52a3c80fd72
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673032(v=EXCHG.150)
 ms:contentKeyID: 49289144
-ms.date: 05/26/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

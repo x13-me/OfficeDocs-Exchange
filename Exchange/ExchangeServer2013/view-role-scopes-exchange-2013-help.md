@@ -4,11 +4,12 @@ TOCTitle: View role scopes
 ms:assetid: 0bb3a434-6651-473a-94eb-4eb9a34e6f70
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335084(v=EXCHG.150)
 ms:contentKeyID: 49289158
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,7 +40,7 @@ Looking for other management tasks related to role scopes? Check out [Advanced p
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## View a specific scope
 
@@ -57,7 +58,7 @@ This example retrieves the details of the Seattle Servers scope.
 Get-ManagementScope "Seattle Servers" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all scopes
 
@@ -69,7 +70,7 @@ Get-ManagementScope
 
 This cmdlet retrieves both exclusive and regular scopes. If you only want to return exclusive scopes or regular scopes, see "List all exclusive or regular scopes only" later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all orphaned scopes
 
@@ -81,7 +82,7 @@ This examples retrieves a list of orphaned scopes.
 Get-ManagementScope -Orphan
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all exclusive or regular scopes only
 
@@ -103,4 +104,4 @@ This example returns a list of regular scopes only.
 Get-ManagementScope -Exclusive $false
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).

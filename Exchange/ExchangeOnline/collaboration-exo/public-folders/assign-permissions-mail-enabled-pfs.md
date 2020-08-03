@@ -1,12 +1,14 @@
 ---
 localization_priority: Normal
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.service: exchange-online
 description: 'Summary: How to assign "Send As" or "Send on Behalf" permissions to your Exchange Online public folders.'
 audience: ITPro
+f1.keywords:
+- NOCSH
 title: Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
 
 ---
@@ -24,7 +26,7 @@ You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://go.microsoft.com/fwlink/p/?linkId=267542) or [**Exchange Online Protection**](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [**Exchange Online Protection**](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center (EAC) to assign permissions
 
@@ -50,6 +52,6 @@ The following example assigns "Send As" permissions for the mail-enabled public 
 
 For detailed syntax and parameter information, see the following articles:
 
-- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-mailpublicfolder?view=exchange-ps)
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder?view=exchange-ps)
 
-- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission?view=exchange-ps)
+- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission?view=exchange-ps)

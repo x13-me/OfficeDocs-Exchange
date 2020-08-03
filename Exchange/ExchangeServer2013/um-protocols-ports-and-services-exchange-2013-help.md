@@ -4,11 +4,12 @@ TOCTitle: UM protocols, ports, and services
 ms:assetid: 5997ce29-1755-48bb-8ff4-b08da549482a
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998265(v=EXCHG.150)
 ms:contentKeyID: 49315424
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

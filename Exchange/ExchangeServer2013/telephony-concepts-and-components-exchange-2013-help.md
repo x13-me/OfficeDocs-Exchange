@@ -4,11 +4,12 @@ TOCTitle: Telephony concepts and components
 ms:assetid: ce70bf6a-db85-411b-8b93-2987703963a9
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124606(v=EXCHG.150)
 ms:contentKeyID: 49315524
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

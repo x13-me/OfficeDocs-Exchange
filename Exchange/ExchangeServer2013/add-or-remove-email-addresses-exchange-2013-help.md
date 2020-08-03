@@ -1,12 +1,13 @@
 ---
 title: 'Add or remove email addresses for a mailbox: Exchange 2013 Help'
 TOCTitle: Add or remove email addresses for a mailbox
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -16,13 +17,13 @@ _**Applies to:** Exchange Server 2013_
 
 You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 
-For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+For additional management tasks related to managing recipients, see the "Recipients documentation" table in [Recipients](recipients-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -76,7 +77,7 @@ This example shows another way to add email addresses to a mailbox by specifying
 Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northamerica.contoso.com,danj@tailspintoys.com
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 
@@ -136,7 +137,7 @@ Set-Mailbox "Janet Schorr" -EmailAddresses SMTP:janets@contoso.com,janets@tailsp
 
 Because janets@corp.contoso.com was omitted in the previous command, it's removed from the mailbox.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 
@@ -196,4 +197,4 @@ Or
 - Verify that the new email address is included in the results for each mailbox.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

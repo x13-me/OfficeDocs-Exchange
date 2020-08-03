@@ -4,11 +4,12 @@ TOCTitle: Message size limits
 ms:assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124345(v=EXCHG.150)
 ms:contentKeyID: 49284660
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

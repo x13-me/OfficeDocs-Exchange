@@ -4,11 +4,12 @@ TOCTitle: MyVoiceMail role
 ms:assetid: 5c7310e9-742c-4bdf-90b6-0a0d17c3bda1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876890(v=EXCHG.150)
 ms:contentKeyID: 49289264
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

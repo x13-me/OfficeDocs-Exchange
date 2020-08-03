@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about Active Manager in Exchange Server 2016 and Exchange Server 2019 and how best copy and server selection (BCSS) works.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Active Manager
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

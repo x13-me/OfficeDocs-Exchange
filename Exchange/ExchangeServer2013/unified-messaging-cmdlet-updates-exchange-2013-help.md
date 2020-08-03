@@ -4,11 +4,12 @@ TOCTitle: Unified Messaging cmdlet updates
 ms:assetid: a42c6643-67ed-4003-854a-ac1d66efb965
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150557(v=EXCHG.150)
 ms:contentKeyID: 47560083
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -115,4 +116,4 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 </tbody>
 </table>
 
-For details about all UM cmdlets, see [Unified Messaging cmdlets](https://technet.microsoft.com/library/aa997665\(v=exchg.150\)).
+For details about all UM cmdlets, see [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/).

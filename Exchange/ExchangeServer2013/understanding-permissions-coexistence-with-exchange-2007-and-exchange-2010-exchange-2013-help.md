@@ -4,11 +4,12 @@ TOCTitle: Understanding permissions coexistence with Exchange 2007 and Exchange 
 ms:assetid: 28ab1433-23ee-4914-8f21-9a32578792e5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335157(v=EXCHG.150)
 ms:contentKeyID: 56278647
-ms.date: 07/14/2016
 ms.reviewer:
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

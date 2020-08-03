@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create a Retention Policy
 ms.collection: 
 - exchange-online
@@ -21,9 +22,9 @@ manager: serdars
 
 In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 
-Here's a [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
+Here's a [video](https://www.youtube.com/watch?v=EQRjaiPPXvA&feature=youtu.be) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
 
-For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -37,7 +38,7 @@ For additional management tasks related to retention policies, see [Messaging Re
 
 ## Step 1: Create a retention tag
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 ### Use the EAC to create a retention tag
 
@@ -88,37 +89,37 @@ Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different o
 
 This example creates a DPT to delete all messages in the mailbox after 7 years (2,556 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Delete" -Type All -AgeLimitForRetention 2556 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a DPT to move all messages to the In-Place Archive in 2 years (730 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Move" -Type All -AgeLimitForRetention 730 -RetentionAction MoveToArchive
 ```
 
 This example creates a DPT to delete voice mail messages after 20 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Voicemail" -Type All -MessageClass Voicemail -AgeLimitForRetention 20 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a RPT to permanently delete messages in the Junk EMail folder after 30 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "RPT-Corp-JunkMail" -Type JunkEmail -AgeLimitForRetention 30 -RetentionAction PermanentlyDelete
 ```
 
 This example creates a personal tag to never delete a message.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction DeleteAndAllowRecovery -RetentionEnabled $false
 ```
 
 ## Step 2: Create a retention policy
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 ### Use the EAC to create a retention policy
 
@@ -151,11 +152,11 @@ You can create a retention policy without adding any retention tags to it, but i
 
 This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy.
 
-```
+```PowerShell
 New-RetentionPolicy "RetentionPolicy-Corp"  -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentionpolicy).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 
@@ -169,11 +170,11 @@ To verify that you have applied the retention policy, do the following:
 
 1. Replace \<Mailbox Identity\> with the name, email address, or alias of the mailbox, and run the following command in Exchange Online PowerShell command to run the MRM assistant manually against a single mailbox:
 
-   ```
+   ```PowerShell
    Start-ManagedFolderAssistant -Identity "<Mailbox Identity>"
    ```
 
 2. Log on to the mailbox using Outlook or Outlook on the web and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

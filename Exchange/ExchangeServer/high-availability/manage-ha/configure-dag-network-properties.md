@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
-ms.date: 6/7/2018
 ms.reviewer:
 title: Configure database availability group network properties
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -32,7 +33,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to configure database availability group network properties
 <a name="UseEMC"> </a>
@@ -55,7 +56,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 This example adds a subnet of 10.0.0.0 and subnet mask of 255.0.0.0 to the DAG network MapiDagNetwork in the DAG DAG1.
 
-```
+```powershell
 Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
 ```
 
@@ -66,17 +67,17 @@ To verify that you've successfully configured the DAG network, do the following:
 
 - In the Exchange Management Shell, run the following command to display DAG network configuration settings and verify the DAG network was configured successfully.
 
-  ```
+  ```powershell
   Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
   ```
 
 ## For more information
 <a name="UseShell"> </a>
 
-[Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroupnetwork)
+[Set-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroupnetwork)
 
-[Get-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/get-databaseavailabilitygroupnetwork)
+[Get-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/get-databaseavailabilitygroupnetwork)
 
-[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/new-databaseavailabilitygroupnetwork)
+[New-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/new-databaseavailabilitygroupnetwork)
 
-[Remove-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/remove-databaseavailabilitygroupnetwork)
+[Remove-DatabaseAvailabilityGroupNetwork](https://docs.microsoft.com/powershell/module/exchange/remove-databaseavailabilitygroupnetwork)

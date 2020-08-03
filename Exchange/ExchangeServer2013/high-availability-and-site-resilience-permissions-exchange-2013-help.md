@@ -4,11 +4,12 @@ TOCTitle: High availability and site resilience permissions
 ms:assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638136(v=EXCHG.150)
 ms:contentKeyID: 48385175
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

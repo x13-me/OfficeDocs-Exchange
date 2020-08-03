@@ -4,11 +4,12 @@ TOCTitle: Edge Transport server planning
 ms:assetid: 3d34de82-58a5-4b30-9978-7d330102eb92
 ms:mtpsurl: https://technet.microsoft.com/library/Dn641596(v=EXCHG.150)
 ms:contentKeyID: 62221565
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: You can use the EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Configure message delivery restrictions for a mailbox
 ms.collection: 
 - exchange-online
@@ -24,7 +25,7 @@ You can use the EAC or Exchange Online PowerShell to place restrictions on wheth
 > [!IMPORTANT]
 > Message delivery restrictions do not impact mailbox permissions. A user with Full Access permissions on a mailbox will still be able to update the contents in that mailbox, such as by copying messages into the mailbox, even if that user has been restricted.
 
-The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients in Exchange Online](../recipients-in-exchange-online.md).
 
 For additional management tasks related to recipients, see the following topics:
 
@@ -42,12 +43,12 @@ For additional management tasks related to recipients, see the following topics:
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to configure message delivery restrictions
 
@@ -81,7 +82,7 @@ The following examples show how to use Exchange Online PowerShell to configure m
 
 This example configures the mailbox of Robin Wood to accept messages only from the users Lori Penor, Jeff Phillips, and members of the distribution group Legal Team 1.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 ```
 
@@ -90,25 +91,25 @@ Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Ph
 
 This example adds the user named David Pelton to the list of users whose messages will be accepted by the mailbox of Robin Wood.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom @{add="David Pelton"}
 ```
 
 This example configures the mailbox of Robin Wood to require all senders to be authenticated. This means the mailbox will only accept messages sent by other users in your Exchange organization.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RequireSenderAuthenticationEnabled $true
 ```
 
 This example configures the mailbox of Robin Wood to reject messages from the users Joe Healy, Terry Adams, and members of the distribution group Legal Team 2.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFrom "Joe Healy","Terry Adams" -RejectMessagesFromDLMembers "Legal Team 2"
 ```
 
 This example configures the mailbox of Robin Wood to also reject messages sent by members of the group Legal Team 3.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 ```
 
@@ -117,15 +118,15 @@ Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Tea
 
 For detailed syntax and parameter information related to configuring delivery restrictions for different types of recipients, see the following topics:
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 ## How do you know this worked?
 
@@ -143,6 +144,6 @@ Or
 
 Run the following command in Exchange Online PowerShell.
 
-```
+```PowerShell
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
 ```

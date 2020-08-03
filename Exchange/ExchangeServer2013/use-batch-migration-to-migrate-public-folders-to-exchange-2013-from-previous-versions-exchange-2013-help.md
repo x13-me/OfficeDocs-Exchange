@@ -4,10 +4,12 @@ TOCTitle: Use batch migration to migrate public folders to Exchange 2013 from pr
 ms:assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/library/Dn912663(v=EXCHG.150)
 ms:contentKeyID: 64568564
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -48,7 +50,7 @@ Exchange supports moving your public folders from the following legacy versions 
 
 - Exchange 2007 SP3 RU15 or later
 
-If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://technet.microsoft.com/library/jj150486\(v=exchg.150\)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
+If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
 
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later, or to Exchange 2007 SP3 RU15 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2013 public folder can't be routed through an Exchange 2003 server.
 
@@ -64,11 +66,11 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2013, you need to be a member of the Organization Management role group. For details about how to enable the Organization Management role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?linkid=299212).
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
-- In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://go.microsoft.com/fwlink/p/?linkid=81779).
+- In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998008(v=exchg.80)).
 
-- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://support.microsoft.com/help/968930).
 
 - Before you migrate, you should consider the [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
 
@@ -88,7 +90,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/?linkid=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -161,19 +163,19 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://technet.microsoft.com/library/aa998596\(v=exchg.150\))
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://technet.microsoft.com/library/aa998663\(v=exchg.150\))
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/bb124365\(v=exchg.150\))
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
+- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183213)
+- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2013 server
 
@@ -237,27 +239,27 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://technet.microsoft.com/library/jj219164\(v=exchg.150\))
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/remove-publicfoldermailboxmigrationrequest)
+- [Remove-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218718\(v=exchg.150\))
+- [Get-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderMigrationRequest)
 
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218625\(v=exchg.150\))
+- [Remove-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolderMigrationRequest)
 
-- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
 
-- [Get-PublicFolder](https://technet.microsoft.com/library/aa997615\(v=exchg.150\))
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolder)
 
-- [Get-MailPublicFolder](https://technet.microsoft.com/library/bb124772\(v=exchg.150\))
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Get-MailPublicFolder)
 
-- [Disable-MailPublicFolder](https://technet.microsoft.com/library/bb123781\(v=exchg.150\))
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/Disable-MailPublicFolder)
 
-- [Remove-PublicFolder](https://technet.microsoft.com/library/bb124894\(v=exchg.150\))
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/Remove-PublicFolder)
 
-- [Remove-Mailbox](https://technet.microsoft.com/library/aa995948\(v=exchg.150\))
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-Mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -365,13 +367,13 @@ The progress and completion of the migration can be viewed and managed in the EA
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/jj733416\(v=exchg.150\))
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderDatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 
@@ -385,7 +387,7 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
@@ -400,7 +402,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote
 Once that is done, you can complete the public folder migration by running the following command:
 
 ```powershell
-Complete-MigrationBatch PublicFolderMigration
+Complete-MigrationBatch PFMigration
 ```
 
 Or, in EAC, you can complete the migration by clicking **Complete this migration batch**.
@@ -481,9 +483,9 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 After the migration is complete, and you have verified that your Exchange 2013 public folders are working as expected, you should remove the public folder databases on the legacy Exchange servers.
 
-- For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](https://go.microsoft.com/fwlink/?linkid=123678).
+- For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/cc164367(v=exchg.80)).
 
-- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/?linkid=81409).
+- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration
 

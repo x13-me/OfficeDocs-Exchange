@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the network ports that are used by Exchange 2016 and Exchange 2019 for client access and mail flow.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
-ms.date:
 ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -41,7 +42,7 @@ The network ports that are required for email clients to access mailboxes and ot
 
 |**Purpose**|**Ports**|**Comments**|
 |:-----|:-----|:-----|
-|Encrypted web connections are used by the following clients and services: <br/>• Autodiscover service  <br/>• Exchange ActiveSync  <br/>• Exchange Web Services (EWS) <br/>• Offline address book (OAB) distribution <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Outlook MAPI over HTTP  <br/>• Outlook on the web (formerly known as Outlook Web App)|443/TCP (HTTPS)|For more information about these clients and services, see the following topics: <br/>• [Autodiscover service in Exchange Server](../../architecture/client-access/autodiscover.md) <br/>• [Exchange ActiveSync](../../clients/exchange-activesync/exchange-activesync.md) <br/>• [EWS reference for Exchange](https://go.microsoft.com/fwlink/p/?LinkId=529544) <br/>• [Offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/offline-address-books.md) <br/>• [Outlook Anywhere](https://technet.microsoft.com/library/bb123741(v=exchg.150).aspx) <br/>• [MAPI over HTTP in Exchange Server](../../clients/mapi-over-http/mapi-over-http.md)|
+|Encrypted web connections are used by the following clients and services: <br/>• Autodiscover service  <br/>• Exchange ActiveSync  <br/>• Exchange Web Services (EWS) <br/>• Offline address book (OAB) distribution <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Outlook MAPI over HTTP  <br/>• Outlook on the web (formerly known as Outlook Web App)|443/TCP (HTTPS)|For more information about these clients and services, see the following topics: <br/>• [Autodiscover service in Exchange Server](../../architecture/client-access/autodiscover.md) <br/>• [Exchange ActiveSync](../../clients/exchange-activesync/exchange-activesync.md) <br/>• [EWS reference for Exchange](https://docs.microsoft.com/exchange/client-developer/web-service-reference/ews-reference-for-exchange) <br/>• [Offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/offline-address-books.md) <br/>• [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help) <br/>• [MAPI over HTTP in Exchange Server](../../clients/mapi-over-http/mapi-over-http.md)|
 |Unencrypted web connections are used by the following clients and services: <br/>• Internet calendar publishing <br/>• Outlook on the web (redirect to 443/TCP) <br/>• Autodiscover (fallback when 443/TCP isn't available)|80/TCP (HTTP)|Whenever possible, we recommend using encrypted web connections on 443/TCP to help protect data and credentials. However, you may find that some services must be configured to use unencrypted web connections on 80/TCP to the Client Access services on Mailbox servers. <br/><br/> For more information about these clients and services, see the following topics: <br/>• [Enable Internet Calendar Publishing](https://docs.microsoft.com/exchange/enable-internet-calendar-publishing-exchange-2013-help) <br/>• [Autodiscover service in Exchange Server](../../architecture/client-access/autodiscover.md)|
 |IMAP4 clients|143/TCP (IMAP), 993/TCP (secure IMAP)|IMAP4 is disabled by default. For more information, see [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md). <br/><br/> The IMAP4 service in the Client Access services on the Mailbox server proxies connections to the IMAP4 Backend service on a Mailbox server.|
 |POP3 clients|110/TCP (POP3), 995/TCP (secure POP3)|POP3 is disabled by default. For more information, see [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md). <br/><br/> The POP3 service in the Client Access services on the Mailbox server proxies connections to the POP3 Backend service on a Mailbox server.|
@@ -98,8 +99,8 @@ DNS resolution of the next mail hop is a fundamental part of mail flow in any Ex
 
 ## Network ports required for hybrid deployments
 
-The network ports that are required for an organization that uses both on-premises Exchange and Microsoft Office 365 are covered in [Hybrid deployment protocols, ports, and endpoints](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites#hybrid-deployment-protocols-ports-and-endpoints).
+The network ports that are required for an organization that uses both on-premises Exchange and Microsoft 365 or Office 365 are covered in [Hybrid deployment protocols, ports, and endpoints](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites#hybrid-deployment-protocols-ports-and-endpoints).
 
 ## Network ports required for Unified Messaging in Exchange 2016
 
-The network ports that are required for Unified Messaging in Exchange 2013 and Exchange 2016 are covered in the topic [UM protocols, ports, and services](hhttps://docs.microsoft.com/exchange/um-protocols-ports-and-services-exchange-2013-help).
+The network ports that are required for Unified Messaging in Exchange 2013 and Exchange 2016 are covered in the topic [UM protocols, ports, and services](https://docs.microsoft.com/exchange/um-protocols-ports-and-services-exchange-2013-help).

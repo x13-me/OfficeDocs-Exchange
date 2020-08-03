@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Learn how to create and modify room mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create and manage room mailboxes
 ms.collection: 
 - exchange-online
@@ -19,7 +20,7 @@ manager: serdars
 
 # Create and manage room mailboxes
 
-A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 For info about another type of resource mailbox, check out [Manage equipment mailboxes](manage-equipment-mailboxes.md).
 
@@ -27,7 +28,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 > [!IMPORTANT]
 > If you're running Exchange Server in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
@@ -65,11 +66,11 @@ This example creates a room mailbox with the following configuration:
 
 - The _Room_ switch specifies that this mailbox will be created as a room mailbox.
 
-```
+```PowerShell
 New-Mailbox -Name ConfRoom1 -DisplayName "Conference Room 1" -Room
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 #### How do you know this worked?
 
@@ -79,7 +80,7 @@ You can make sure you've created the room mailbox correctly a couple of differen
 
 - In Exchange Online PowerShell, run the following command to display information about the new room mailbox.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
@@ -91,7 +92,7 @@ If you're planning to have more than a hundred rooms, or already have more than 
 
 This example creates a room list for building 32.
 
-```
+```PowerShell
 New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "contoso.com/rooms" -RoomList
 ```
 
@@ -99,7 +100,7 @@ New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "
 
 This example adds confroom3223 to the building 32 room list.
 
-```
+```PowerShell
 Add-DistributionGroupMember -Identity "Building 32 Conference Rooms" -Member confroom3223@contoso.com
 ```
 
@@ -109,7 +110,7 @@ You may already have created distribution groups in the past that contain your c
 
 This example converts the distribution group, building 34 conference rooms, to a room list.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 ```
 
@@ -230,35 +231,35 @@ Use the following sets of cmdlets to view and change room mailbox properties: **
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-calendarprocessing)
+- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
+- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using Exchange Online PowerShell to change room mailbox properties.
 
 This example changes the display name, the primary SMTP address (called the default reply address), and the room capacity. Also, the previous reply address is kept as a proxy address.
 
-```
+```PowerShell
 Set-Mailbox "Conf Room 123" -DisplayName "Conf Room 31/123 (12)" -EmailAddresses SMTP:Rm33.123@contoso.com,smtp:rm123@contoso.com -ResourceCapacity 12
 ```
 
 This example configures room mailboxes to allow booking requests to be scheduled only during working hours and sets a maximum duration of 9 hours.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Set-CalendarProcessing -ScheduleOnlyDuringWorkHours $true -MaximumDurationInMinutes 540
 ```
 
 This example uses the **Get-User** cmdlet to find all room mailboxes that correspond to private conference rooms, and then uses the **Set-CalendarProcessing** cmdlet to send booking requests to a delegate named Robin Wood to accept or decline.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'RoomMailbox') -and (DisplayName -like 'Private*')" | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Robin Wood"
 ```
 
@@ -270,11 +271,11 @@ To verify that you've successfully changed properties for a room mailbox, do the
 
 - In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

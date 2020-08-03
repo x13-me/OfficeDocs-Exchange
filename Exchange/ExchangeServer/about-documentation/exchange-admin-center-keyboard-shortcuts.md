@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange Server.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Keyboard shortcuts in the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -34,8 +35,4 @@ By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly 
 
 ## Keyboard shortcuts in other Microsoft products and services
 
-To learn about keyboard shortcuts for other Microsoft products, visit the [Keyboard Shortcuts](https://go.microsoft.com/fwlink/p/?LinkId=248894) page on the Microsoft Accessibility web site. On that page, you can search for the keyboard shortcuts for specific Microsoft products (for example, Windows Server 2012 R2).
-
-For information about keyboard shortcuts in Outlook on the web, see [Keyboard shortcuts in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=823540).
-
-For information about accessibility features in Office 365, including keyboard shortcuts, see [Accessibility in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=521946).
+To learn about accessibility features in Microsoft 365 or Office 365, including keyboard shortcuts, visit the [Microsoft Accessibility website](https://www.microsoft.com/accessibility/).

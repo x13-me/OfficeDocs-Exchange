@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-ms.date:
 ms.reviewer:
 title: Configure Kerberos authentication for load-balanced Client Access services
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -26,6 +27,9 @@ All Exchange servers that run Client Access services that share the same namespa
 > [!IMPORTANT]
 > Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016. <br/><br/> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
 
+> [!NOTE]
+> Group Managed Service Accounts (gMSA) are not supported in on-premises Exchange Server environments and thus cannot be used in this scenario.
+
 When you set up the ASA credential, keep these guidelines in mind:
 
 - **Account type**: We recommend that you create a computer account instead of a user account. A computer account doesn't allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn't expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you have to change the password. Although we recommend you use a computer account, you can create a user account.
@@ -42,19 +46,19 @@ When you set up the ASA credential, keep these guidelines in mind:
 
    Use the **Import-Module** cmdlet to import the Active Directory module.
 
-   ```
+   ```PowerShell
    Import-Module ActiveDirectory
    ```
 
 2. Use the **New-ADComputer** cmdlet to create a new Active Directory computer account using this cmdlet syntax:
 
-   ```
+   ```PowerShell
    New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
    ```
 
    **Example:**
 
-   ```
+   ```PowerShell
    New-ADComputer -Name EXCH2016ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2016ASA
    ```
 
@@ -62,23 +66,23 @@ When you set up the ASA credential, keep these guidelines in mind:
 
 3. Use the **Set-ADComputer** cmdlet to enable the AES 256 encryption cipher support used by Kerberos using this cmdlet syntax:
 
-   ```
+   ```PowerShell
    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
    ```
 
    **Example:**
 
-   ```
+   ```PowerShell
    Set-ADComputer EXCH2016ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
    ```
 
    Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://docs.microsoft.com/powershell/module/activedirectory/new-adcomputer).
 
 ## Cross-forest scenarios
 
-If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Managing forest trusts](https://technet.microsoft.com/library/cc772440.aspx).
+If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
 
 ## Identify the Service Principal Names to associate with the ASA credential
 
@@ -134,7 +138,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 
 - Deploy the ASA credential to subsequent Exchange servers running Client Access services
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://docs.microsoft.com/exchange/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
 
@@ -144,7 +148,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 
 3. Run the following command to deploy the ASA credential to the first Exchange 2016  or Exchange 2019 server running Client Access services:
 
-   ```
+   ```PowerShell
    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2016ASA$
    ```
 
@@ -152,7 +156,7 @@ The only supported method for deploying the ASA credential is to use the RollAlt
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:17:47 ==========
 Creating a new session for implicit remoting of "Get-ExchangeServer" command...
 Destination servers that will be updated:
@@ -198,7 +202,7 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 
 3. Run the following command to deploy the ASA credential to another Exchange 2016 or Exchange 2019 server running Client Access services:
 
-   ```
+   ```PowerShell
    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
    ```
 
@@ -206,7 +210,7 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the RollAlternateServiceAccountPassword.ps1 script.
 
-```
+```output
 ========== Starting at 01/12/2016 10:34:35 ==========
 Destination servers that will be updated:
 Name                                                        PSComputerName
@@ -242,7 +246,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 
 - Run the following command to check the settings on the server running Client Access services:
 
-  ```
+  ```PowerShell
   Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
   ```
 
@@ -250,7 +254,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and no previous ASA credential was set.
 
-```
+```output
 Name                                 : CAS-1
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: <Not set>
@@ -259,7 +263,7 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and an ASA credential was previously set. The previous ASA credential and the date and time it was set are returned.
 
-```
+```output
 Name                                 : CAS-3
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: 7/15/2015 12:58:35 PM, tailspin\oldSharedServiceAccountName$
@@ -279,13 +283,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -F -Q <SPN>
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -F -Q http/mail.corp.tailspintoys.com
    ```
 
@@ -297,13 +301,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -S <SPN> <Account>$
    ```
 
    Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
    ```
 
@@ -315,13 +319,13 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. At the command prompt, type the following command:
 
-   ```
+   ```console
    setspn -L <Account>$
    ```
 
    Where \<Account\> is the account associated with the ASA credential. For example:
 
-   ```
+   ```console
    setspn -L tailspin\EXCH2016ASA$
    ```
 
@@ -333,18 +337,18 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 
 2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
 
-   ```
+   ```PowerShell
    Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
    ```
 
 3. To enable Kerberos authentication for MAPI over HTTP clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
 
-   ```
+   ```PowerShell
    Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm,Negotiate
    ```
    In hybrid environments with Exchange Online or if you use OAuth internally, run the following commands on your Exchange 2016 or Exchange 2019 server that's running Client Access services:
 
-   ```
+   ```PowerShell
    $mapidir = Get-MapiVirtualDirectory -Server CAS-1
    $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods +='Negotiate')
    ```
@@ -397,7 +401,7 @@ To configure your servers that are running Client Access services to stop using 
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server, and run the following command:
 
-   ```
+   ```PowerShell
    Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
    ```
 

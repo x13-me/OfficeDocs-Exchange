@@ -4,11 +4,12 @@ TOCTitle: Troubleshooting ActiveSync.Proxy Health Set
 ms:assetid: f10acbb8-4d2e-43fb-b3a5-6dbb7a529e04
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.activesync.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720912
-ms.date: 
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -28,8 +29,8 @@ The ActiveSync service might have been able to recover after it issued the alert
 
 ## For More Information
 
-[Exchange ActiveSync](https://technet.microsoft.com/library/aa998357\(v=exchg.150\))
+[Exchange ActiveSync](https://docs.microsoft.com/exchange/exchange-activesync-exchange-2013-help)
 
-[Mobile devices](https://technet.microsoft.com/library/bb232129\(v=exchg.150\))
+[Mobile devices](https://docs.microsoft.com/exchange/mobile-devices-exchange-2013-help)
 
-[Exchange ActiveSync virtual directory management tasks](https://technet.microsoft.com/library/bb125170\(v=exchg.150\))
+[Exchange ActiveSync virtual directory management tasks](https://docs.microsoft.com/exchange/exchange-activesync-virtual-directory-management-tasks-exchange-2013-help)

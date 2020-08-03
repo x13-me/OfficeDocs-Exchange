@@ -4,11 +4,12 @@ TOCTitle: Message tracking
 ms:assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124375(v=EXCHG.150)
 ms:contentKeyID: 50646522
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -44,8 +45,6 @@ Message tracking logs contain vast amounts of data as messages move through an E
 - **Get-MessageTrackingLog**: Administrators can use this cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
 
 - **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
-
-- **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
 
 ## Structure of the message tracking log files
 
@@ -462,7 +461,7 @@ The values in the **source** field in the message tracking log indicate the tran
 </tr>
 <tr class="even">
 <td><p><strong>MAILBOXRULE</strong></p></td>
-<td><p>The event source was an Inbox rule. For more information, see <a href="https://go.microsoft.com/fwlink/?linkid=285479">Inbox rules</a>.</p></td>
+<td><p>The event source was an Inbox rule. For more information, see <a href="https://support.microsoft.com/office/edea3d17-00c9-434b-b9b7-26ee8d9f5622">Inbox rules</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MEETINGMESSAGEPROCESSOR</strong></p></td>

@@ -4,11 +4,12 @@ TOCTitle: Deploying Exchange 2013 UM and Lync Server overview
 ms:assetid: 96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1
 ms:mtpsurl: https://technet.microsoft.com/library/Bb676409(v=EXCHG.150)
 ms:contentKeyID: 49315469
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +22,7 @@ Unified Messaging (UM) and Microsoft Lync Server can be deployed together to pro
 > [!TIP]
 > Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging. In this topic, "Microsoft Lync Server" refers to Microsoft Lync Server 2010 or Microsoft Lync Server 2013.
 
-Looking for more information about Microsoft Lync Server? See [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+Looking for more information about Microsoft Lync Server? See [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 ## Deploying Exchange UM and Lync Server overview
 
@@ -109,7 +110,7 @@ The following table shows the certificate requirements for installing and config
 
 After you install the required servers in your organization, there's a recommended sequence of steps that you must perform in your Exchange Unified Messaging and Lync Server deployments to correctly deploy Enterprise Voice for your users.
 
-For details about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For details about Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 You must complete the following steps to configure Unified Messaging to work with the Enterprise Voice features in Lync Server:
 
@@ -169,7 +170,7 @@ You must complete the following steps to configure Unified Messaging to work wit
 
 8. Open the Exchange Management Shell and run the exchucutil.ps1 script located in the %Program Files%\\Microsoft\\Exchange Server\\V15\\Scripts folder. The exchucutil.ps1 script does the following:
 
-   - Grants Lync Server permission to read Exchange UM Active Directory components, specifically, the SIP URI dial plan that was created in the previous task. For details about how to configure permissions in Active Directory, see [How to Use ADSI Edit to Apply Permissions](https://go.microsoft.com/fwlink/p/?linkid=82751).
+   - Grants Lync Server permission to read Exchange UM Active Directory components, specifically, the SIP URI dial plan that was created in the previous task. For details about how to configure permissions in Active Directory, see [How to Use ADSI Edit to Apply Permissions](https://docs.microsoft.com/previous-versions/tn-archive/aa997502(v=exchg.65)).
 
    - Creates a UM IP gateway for each Lync Server pool or for each server running Lync Server Standard Edition that hosts users who will be enabled for Enterprise Voice. For details, see [Create a UM IP gateway](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
 
@@ -201,4 +202,4 @@ After you configure the Lync Server and the Unified Messaging servers, you must 
 
 ## For more information
 
-For more information about how to perform the tasks that must be completed for Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For more information about how to perform the tasks that must be completed for Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).

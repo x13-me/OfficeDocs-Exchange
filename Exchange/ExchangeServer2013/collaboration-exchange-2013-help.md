@@ -4,11 +4,12 @@ TOCTitle: Collaboration
 ms:assetid: f45c1be1-2a66-4610-a28d-4adc6d212769
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218725(v=EXCHG.150)
 ms:contentKeyID: 48385713
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

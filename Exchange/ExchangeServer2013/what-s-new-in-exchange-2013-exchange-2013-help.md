@@ -4,11 +4,12 @@ TOCTitle: What's new in Exchange 2013
 ms:assetid: 97501135-2149-4590-8373-98e638ac8eb1
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150540(v=EXCHG.150)
 ms:contentKeyID: 47560059
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -173,7 +174,7 @@ To learn more about these features see:
 
 [Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432)
+[Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)
 
 ## In-place Archiving, retention, and eDiscovery
 
@@ -226,7 +227,7 @@ For detailed information, see [What's new for transport rules](what-s-new-for-tr
 
 ## Information Rights Management
 
-Information Rights Management (IRM) is compatible with Cryptographic Mode 2, an Active Directory Rights Management Services (AD RMS) cryptography mode that supports stronger encryption by allowing you to use 2048-bit keys for RSA and 256-bit keys for SHA-1. Additionally, Mode 2 enables you to use the SHA-2 hashing algorithm. For more information about cryptographic modes in AD RMS, see [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?linkid=263219).
+Information Rights Management (IRM) is compatible with Cryptographic Mode 2, an Active Directory Rights Management Services (AD RMS) cryptography mode that supports stronger encryption by allowing you to use 2048-bit keys for RSA and 256-bit keys for SHA-1. Additionally, Mode 2 enables you to use the SHA-2 hashing algorithm. For more information about cryptographic modes in AD RMS, see [AD RMS Cryptographic Modes](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).
 
 ## Auditing
 
@@ -250,7 +251,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Routing**: Mail routing in Exchange 2013 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).
 
-- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://technet.microsoft.com/library/aa998294\(v=exchg.150\)) and [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
+- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector) and [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
     You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
 

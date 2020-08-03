@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Admin can learn how to setup inbound faxing in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5d3cae58-1690-424d-9bef-011911d0b608
-ms.date: 7/12/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Setting up incoming faxing in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -17,9 +18,12 @@ manager: serdars
 
 # Setting up incoming faxing in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes in Exchange Server 2019 or Exchange Online, and for Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange Online isn't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange Online redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
 
-For more information about fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+For more information about fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 ## Deploying and configuring faxing
 <a name="deployandconfigure"> </a>
@@ -49,7 +53,7 @@ Before you can set up faxing for your organization, you need to successfully con
 ### Step 2: Configure fax partner servers
 <a name="step2configurefax"> </a>
 
-Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238)
+Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/)
 
 > [!NOTE]
 > Because the fax partner server is external to your organization, firewall ports must be configured to allow the T.38 protocol ports that enable faxing over an IP-based network. By default, the T.38 protocol uses TCP port 6004. It can also use User Datagram Protocol (UDP) port 6044, but this will be defined by the hardware manufacturer. The firewall ports must be configured to allow fax data that uses the TCP or UDP ports or port ranges defined by the manufacturer.
@@ -84,7 +88,7 @@ To enable UM-enabled users to receive faxes, you must do the following:
 
 - Configure the UM mailbox policy that's associated with the UM-enabled user. The UM mailbox policy must be configured to allow incoming faxes, including the fax partner's URI and the name of the fax partner's server. The _FaxServerURI_ parameter must use the following form: sip:\<_fax server URI_\>:\<_port_\>;\<_transport_\>, where "fax server URI" is either a fully qualified domain name (FQDN) or an IP address of the fax partner server. The "port" is the port on which the fax server listens for incoming fax calls and "transport" is the transport protocol that's used for the incoming fax (UDP, TCP, or Transport Layer Security (TLS)). For example, you might configure a UM mailbox policy to receive a fax as follows.
 
-  ```
+  ```PowerShell
   Set-UMMailboxPolicy MyUMMailboxPolicy -AllowFax $true -FaxServerURI "sip:faxserver.abc.com:5060;transport=tcp"
   ```
 
@@ -112,7 +116,7 @@ To authenticate the connection from the fax partner server to Exchange Online, y
 
 An Inbound connector should be sufficient for authenticating the fax partner servers deployed in your organization. The connector will ensure that Exchange Online treats all traffic coming from the fax partner server as authenticated.
 
-For details, see [Configure mail flow using connectors in Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
+For details, see [Configure mail flow using connectors in Microsoft 365 or Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
 If the fax partner server hosted is in the cloud, it's a good idea to authenticate the fax partner server using a sender ID check. This type of authentication ensures that the IP address that the fax message came from is authorized to send email messages on behalf of the fax partner domain that the message claims to have come from. DNS is used to store the sender ID records (or sender policy framework (SPF) records) and fax partners must publish their SPF records in the DNS forward lookup zone. Exchange will validate the IP addresses by querying DNS. However, the sender ID agent must be running on a Mailbox server to be able to perform the DNS query.
 

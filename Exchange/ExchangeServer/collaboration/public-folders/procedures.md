@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Create and manage public folders with one or more of these articles.'
 ms.topic: hub-page
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
-ms.date: 3/27/2017
 ms.reviewer:
 title: Public folder procedures
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -23,15 +24,17 @@ Use one or more of the procedures listed below to get your public folder infrast
 
 [Configure legacy on-premises public folders for a hybrid deployment](configure-legacy-public-folders-for-hybrid.md)
 
+[Configure modern on-premises public folders for a hybrid deployment](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
+
 [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md)
 
-[Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
+[Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
 
 [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
 
 [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
 
-[Configure legacy public folders where user mailboxes are on Exchange 2016 servers](hhttps://docs.microsoft.com/exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help)
+[Configure legacy public folders where user mailboxes are on Exchange 2016 servers](https://docs.microsoft.com/exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help)
 
 [Create a public folder mailbox](create-public-folder-mailboxes.md)
 

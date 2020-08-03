@@ -4,11 +4,12 @@ TOCTitle: Using Outlook Web App Web parts
 ms:assetid: 7272e3ab-430c-4d6c-8621-9535236ce463
 ms:mtpsurl: https://technet.microsoft.com/library/Mt574711(v=EXCHG.150)
 ms:contentKeyID: 70319891
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -79,7 +80,7 @@ The following table lists the parameters of a Web Part and examples of how they'
 <tr class="even">
 <td><p>exsvurl</p></td>
 <td><p>This parameter must be included when using LiveID authentication</p>
-<p>All parameters will be discarded during LiveID authentication if &quot;exsvurl=1&quot; is not present. This parameter is for Office 365 mailboxes only.</p>
+<p>All parameters will be discarded during LiveID authentication if &quot;exsvurl=1&quot; is not present. This parameter is for Microsoft 365 and Office 365 mailboxes only.</p>
 </td>
 
 <td><p>https://&lt;server name&gt;/owa/?cmd=contents&amp;exsvurl=1</p></td>

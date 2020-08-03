@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and Exchange 2019 and how to recreate them.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
-ms.date:
 ms.reviewer: 
 title: Recreate missing arbitration mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -17,7 +18,7 @@ manager: serdars
 
 # Recreate missing arbitration mailboxes
 
-Exchange Server contains five special system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
+Exchange Server contains five special system mailboxes (seven in Exchange 2016 CU8 and later) known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
 
 |**Arbitration mailbox Name**|**Display name**|**Persisted capabilities**|**Function**|
 |:-----|:-----|:-----|:-----|
@@ -26,6 +27,9 @@ Exchange Server contains five special system mailboxes known as *arbitration mai
 |SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX} <br/> (for example, SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}; most of the mailbox name is unique to your organization)|Microsoft Exchange Approval Assistant|none|This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.|
 |SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}|Microsoft Exchange|ClientExtensions <br/><br/> GMGen <br/><br/> MailRouting <br/><br/> MessageTracking <br/><br/> OABGen <br/><br/> PstProvider <br/><br/> UMGrammar <br/><br/> UMGrammarReady (Exchange 2016 only)|This is known as an organization mailbox. It is used for creating offline address books (OABs). To load-balance OAB generation across your organization, including across geographically separate sites, you can create additional organization mailboxes.|
 |SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}|Microsoft Exchange|UMDataStorage|Discovery system mailbox. <br/><br/> Provisioned for use by the e-Discovery feature, which is used by compliance officers to locate messages that match specified selection criteria. This mailbox is also used by Unified Messaging in Exchange 2016 for storing UM console attending files and other information.|
+|SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201} <br/> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
+|SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA} <br/> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
+
 
 If you need to re-create one of more of these arbitration mailboxes, see the instructions that follow.
 
@@ -49,7 +53,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
      - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
-- For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For more information about running Exchange Setup in unattended mode, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
@@ -75,7 +79,7 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042" -Arbitration
    ```
 
@@ -97,13 +101,13 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management $true -Force
    ```
 
@@ -125,7 +129,7 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Get-User -ResultSize Unlimited | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
    ```
 
@@ -147,19 +151,19 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 
 2. In the Exchange Management Shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar $true -OABGen $true -GMGen $true -ClientExtensions $true -MessageTracking $true -PstProvider $true -MaxSendSize 1GB -Force
    ```
 
 4. In the Exchange Management Shell, add the required capabilities to the mailbox by running the following commands:
 
-   ```
+   ```PowerShell
    $OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration; Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
    ```
 
@@ -181,13 +185,13 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration -UMDataStorage $true -Force
    ```
 
@@ -209,14 +213,14 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 
 2. In the Exchange Management shell, run the following command:
 
-   ```
+   ```PowerShell
    Enable-Mailbox -Identity "SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}" -Arbitration
    Enable-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
    ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
 
-   ```
+   ```PowerShell
    $ShardMBX = Get-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration
    Set-Mailbox -Identity "SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}" -Arbitration 
    Set-ADUser $ShardMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="66"} 
@@ -230,11 +234,11 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 
 To verify that you've successfully re-created the arbitration mailbox, set the search scope to search the entire Active Directory forest, an then use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
 
-```
+```PowerShell
 Set-ADServerSettings -ViewEntireForest $true; Get-Mailbox -Arbitration | Format-Table Name,DisplayName
 ```
 
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

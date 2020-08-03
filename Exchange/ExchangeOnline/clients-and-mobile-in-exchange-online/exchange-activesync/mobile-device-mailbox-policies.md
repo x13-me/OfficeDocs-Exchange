@@ -1,11 +1,10 @@
 ---
 localization_priority: Normal
-description: In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+description: In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
-ms.date: 4/29/2016
 ms.reviewer: 
 title: Mobile device mailbox policies in Exchange Online
 ms.collection: 
@@ -13,13 +12,15 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
 
 # Mobile device mailbox policies in Exchange Online
 
-In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 
 ## Overview of mobile device mailbox policies
 
@@ -35,9 +36,39 @@ You can use mobile device mailbox policies to manage many different settings. Th
 
 - Wipe a device after a specific number of failed password attempts
 
-## Managing Exchange ActiveSync mailbox policies
+## Managing mobile device mailbox policies
 
 Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
+
+## Mobile device password settings and biometrics
+
+Many mobile devices support biometrics such as Apple Touch ID or Face ID. Exchange mobile device mailbox policies do not control whether biometrics can be used instead of typing the device PIN. Mobile device mailbox policies can be configured to require a device PIN, but then the users control whether they use biometrics after complying with the device PIN requirement.
+
+Customers that need advanced control over the use of biometrics should consider device enrollment solutions such as Microsoft Intune. See [Deploying Outlook for iOS and Android app configuration settings](../outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune.md) for more information.
+
+## Mobile device password settings and Android
+
+Android 9.0 and earlier versions utilize Android's device admin functionality to manage device password settings defined in a mobile device mailbox policy.
+
+With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
+
+|Password complexity level |Password requirements  |
+|---------|---------|
+|None     |No password requirements are configured         |
+|Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
+|Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
+|High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
+
+From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
+
+|Mobile device mailbox policy setting  |Android password complexity level  |
+|---------|---------|
+|Password enabled = false     | None        |
+|Allow simple password = true<br/>Min password length < 4      |Low         |
+|Allow simple password = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = true<br/>Min password length > 6      |High         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length >= 6      |High         |
 
 ## Mobile device mailbox policy settings
 
@@ -75,7 +106,7 @@ The following table summarizes the settings you can specify using mobile device 
 |Device policy refresh interval|This setting specifies how often the mobile device mailbox policy is sent from the server to the mobile device.|
 |IRM enabled|This setting specifies whether Information Rights Management (IRM) is enabled on the mobile device.|
 |Max attachment size|This setting controls the maximum size of attachments that can be downloaded to the mobile device. The default value is Unlimited.|
-|Max calendar age filter| This setting specifies the maximum range of calendar days that can be synchronized to the mobile device. The following values are accepted:  <br/>  All  <br/>  OneDay  <br/>  ThreeDays  <br/>  OneWeek  <br/>  TwoWeeks  <br/>  OneMonth|
+|Max calendar age filter| This setting specifies the maximum range of calendar days that can be synchronized to the mobile device. The following values are accepted:  <br/>  All  <br/>  TwoWeeks  <br/>  OneMonth  <br/>  ThreeMonths  <br/>  SixMonths|
 |Max email age filter| This setting specifies the maximum number of days of email items to synchronize to the mobile device. The following values are accepted:  <br/>  All  <br/>  OneDay  <br/>  ThreeDays  <br/>  OneWeek  <br/>  TwoWeeks  <br/>  OneMonth|
 |Max email body truncation size|This setting specifies the maximum size at which email messages are truncated when synchronized to the mobile device. The value is in kilobytes (KB).|
 |Max email HTML body truncation size|This setting specifies the maximum size at which HTML email messages are truncated when synchronized to the mobile device. The value is in kilobytes (KB).|

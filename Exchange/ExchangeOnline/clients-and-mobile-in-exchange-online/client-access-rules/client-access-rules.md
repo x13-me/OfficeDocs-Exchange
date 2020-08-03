@@ -2,10 +2,9 @@
 localization_priority: Normal
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
-ms.date: 6/11/2018
 ms.reviewer: 
 title: Client Access Rules in Exchange Online
 ms.collection: 
@@ -13,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -61,8 +62,8 @@ A rule is made of conditions, exceptions, an action, and a priority value.
 
 How multiple rules with the same condition are evaluated, and how a rule with multiple conditions, condition values, and exceptions are evaluated are described in the following table.
 
-|**Component**|**Logic**|**Comments**|
-|:-----|:-----|:-----|
+|Component|Logic|Comments|
+|---|---|---|
 |Multiple rules that contain the same condition|The first rule is applied, and subsequent rules are ignored|For example, if your highest priority rule blocks Outlook on the web connections, and you create another rule that allows Outlook on the web connections for a specific IP address range, all Outlook on the web connections are still blocked by the first rule. Instead of creating another rule for Outlook on the web, you need to add an exception to the existing Outlook on the web rule to allow connections from the specified IP address range.|
 |Multiple conditions in one rule|AND|A client connection must match all conditions in the rule. For example, EWS connections from users in the Accounting department.|
 |One condition with multiple values in a rule|OR|For conditions that allow more than one value, the connection must match any one (not all) of the specified conditions. For example, EWS or IMAP4 connections.|
@@ -92,7 +93,7 @@ You can only use remote PowerShell to manage Client Access Rules, so you need to
 
 As a best practice, create a Client Access Rule with the highest priority to preserve your access to remote PowerShell. For example:
 
-```
+```PowerShell
 New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1
 ```
 
@@ -100,8 +101,8 @@ New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOf
 
 Not all authentication types are supported for all protocols in Client Access Rules. The supported authentication types per protocol are described in this table:
 
-||**AdfsAuthentication**|**BasicAuthentication**|**CertificateBasedAuthentication**|**NonBasicAuthentication**|**OAuthAuthentication**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
+|&nbsp;|AdfsAuthentication|BasicAuthentication|CertificateBasedAuthentication|NonBasicAuthentication|OAuthAuthentication|
+|---|---|---|---|---|---|
 |`ExchangeActiveSync`|n/a|supported|supported|n/a|supported|
 |`ExchangeAdminCenter`|supported|supported|n/a|n/a|n/a|
 |`OutlookWebApp`|supported|supported|n/a|n/a|n/a|
@@ -113,11 +114,14 @@ Conditions and exceptions in Client Access Rules identify the client connections
 
 This table describes the conditions and exceptions that are available in Client Access Rules:
 
-|**Condition parameter in Exchange Online PowerShell**|**Exception parameter in Exchange Online PowerShell**|**Description**|
-|:-----|:-----|:-----|
+> [!NOTE]
+> Microsoft sync technology that's used in Outlook for iOS and Android and Windows Mail isn't available in Client Access Rules.
+
+|Condition parameter in Exchange Online PowerShell|Exception parameter in Exchange Online PowerShell|Description|
+|---|---|---|
 |_AnyOfAuthenticationTypes_|_ExceptAnyOfAuthenticationTypes_|Valid values are: <br/>• `AdfsAuthentication` <br/>• `BasicAuthentication` <br/>• `CertificateBasedAuthentication` <br/>• `NonBasicAuthentication` <br/>• `OAuthAuthentication` <br/> You can specify multiple values separated by commas. You can use quotation marks around each individual value ("_value1_","_value2_"), but not around all values (don't use "_value1_,_value2_").|
 |_AnyOfClientIPAddressesOrRanges_|_ExceptAnyOfClientIPAddressesOrRanges_|Valid values are: <br/>• **A single IP address**: For example, `192.168.1.1`. <br/>• **An IP address range**: For example, `192.168.0.1-192.168.0.254`. <br/>• **Classless Inter-Domain Routing (CIDR) IP**: For example, `192.168.3.1/24`. <br/> You can specify multiple values separated by commas.|
 |_AnyOfProtocols_|_ExceptAnyOfProtocols_|Valid values are: <br/>• `ExchangeActiveSync` <br/>• `ExchangeAdminCenter` <br/>• `ExchangeWebServices` <br/>• `IMAP4` <br/>• `OfflineAddressBook` <br/>• `OutlookAnywhere` (includes MAPI over HTTP) <br/>• `OutlookWebApp` (Outlook on the web) <br/>• `POP3` <br/>• `PowerShellWebServices` <br/>• `RemotePowerShell` <br/>• `REST` <br/> You can specify multiple values separated by commas. You can use quotation marks around each individual value (" _value1_","_value2_"), but not around all values (don't use "_value1_,_value2_"). <br/> **Note**: If you don't use this condition in a rule, the rule is applied to *all* protocols.|
 |_Scope_|n/a| Specifies the type of connections that the rule applies to. Valid values are: <br/>• `Users`: The rule only applies to end-user connections. <br/>• `All`: The rule applies to all types of connections (end-users and middle-tier apps).|
 |_UsernameMatchesAnyOfPatterns_|_ExceptUsernameMatchesAnyOfPatterns_|Accepts text and the wildcard character (\*) to identify the user's account name in the format `<Domain>\<UserName>` (for example, `contoso.com\jeff` or `*jeff*`, but not `jeff*`). Non-alphanumeric characters don't require an escape character. <br/> You can specify multiple values separated by commas.|
-|_UserRecipientFilter_|n/a| Uses OPath filter syntax to identify the user that the rule applies to. For example, `"City -eq 'Redmond'"`. The filterable attributes are: <br/>• `City` <br/>• `Company` <br/>• `CountryOrRegion` <br/>• `CustomAttribute1` to `CustomAttribute15` <br/>• `Department` <br/>• `Office` <br/>• `PostalCode` <br/>• `StateOrProvince` <br/>• `StreetAddress` <br/> The search criteria uses the syntax `"<Property> -<Comparison operator> '<Value>'"`. <br/>• `<Property>` is a filterable property. <br/>• `-<Comparison Operator>` is an OPATH comparison operator. For example `-eq` for exact matches (wildcards are not supported) and `-like` for string comparison (which requires at least one wildcard in the property value). For more information about comparison operators, see [about_Comparison_Operators](https://go.microsoft.com/fwlink/p/?LinkId=620712). <br/>• `<Value>` is the property value. Text values with or without spaces or values with wildcards (\*) need to be enclosed in quotation marks (for example, `'<Value>'` or `'*<Value>'`). Don't use quotation marks with the system value `$null` (for blank values). <br/> You can chain multiple search criteria together using the logical operators `-and` and `-or`. For example, `"<Criteria1> -and <Criteria2>"` or `"(<Criteria1> -and <Criteria2>) -or <Criteria3>"`. For more information about OPATH filter syntax, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/recipient-filters#additional-opath-syntax-information).|
+|_UserRecipientFilter_|n/a| Uses OPath filter syntax to identify the user that the rule applies to. For example, `"City -eq 'Redmond'"`. The filterable attributes are: <br/>• `City` <br/>• `Company` <br/>• `CountryOrRegion` <br/>• `CustomAttribute1` to `CustomAttribute15` <br/>• `Department` <br/>• `Office` <br/>• `PostalCode` <br/>• `StateOrProvince` <br/>• `StreetAddress` <br/> The search criteria uses the syntax `"<Property> -<Comparison operator> '<Value>'"`. <br/>• `<Property>` is a filterable property. <br/>• `-<Comparison Operator>` is an OPATH comparison operator. For example `-eq` for exact matches (wildcards are not supported) and `-like` for string comparison (which requires at least one wildcard in the property value). For more information about comparison operators, see [about_Comparison_Operators](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_comparison_operators). <br/>• `<Value>` is the property value. Text values with or without spaces or values with wildcards (\*) need to be enclosed in quotation marks (for example, `'<Value>'` or `'*<Value>'`). Don't use quotation marks with the system value `$null` (for blank values). <br/> You can chain multiple search criteria together using the logical operators `-and` and `-or`. For example, `"<Criteria1> -and <Criteria2>"` or `"(<Criteria1> -and <Criteria2>) -or <Criteria3>"`. For more information about OPATH filter syntax, see [Additional OPATH syntax information](https://docs.microsoft.com/powershell/exchange/recipient-filters#additional-opath-syntax-information).|

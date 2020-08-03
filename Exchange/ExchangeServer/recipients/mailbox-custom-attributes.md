@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-ms.date: 4/19/2018
 ms.reviewer:
 title: Custom attributes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -43,17 +44,17 @@ There are several advantages to using custom attributes:
 
 Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
-- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-mailpublicfolder)
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder)
 
-- [Set-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/set-remotemailbox)
+- [Set-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/set-remotemailbox)
 
 For more information about multivalued properties, see [Modifying multivalued properties](https://docs.microsoft.com/exchange/modifying-multivalued-properties-exchange-2013-help).
 
@@ -67,13 +68,13 @@ A common scenario in many Exchange deployments is that of creating an e-mail add
 
 If the recipients in a particular OU don't share any common properties that you can filter by, such as department or location, you can populate one of the custom attributes with a common value, as shown in this example.
 
-```
+```PowerShell
 Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 ```
 
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.
 
-```
+```PowerShell
 New-EmailAddressPolicy -Name "Sales" -RecipientFilter "CustomAttribute1 -eq 'SalesOU'" -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
 ```
 
@@ -84,7 +85,7 @@ When creating dynamic distribution groups, email address policies, or address li
 
 This example creates a dynamic distribution group based on the recipients whose _CustomAttribute1_ is set to SalesOU.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 ```
 
@@ -96,18 +97,18 @@ New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipient
 
 In this example, the mailbox for Kweku will have _ExtensionCustomAttribute1_ updated to reflect that he's enrolled in the following educational classes: MATH307, ECON202, and ENGL300.
 
-```
+```PowerShell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 ```
 
 Next, a dynamic distribution group for all students enrolled MATH307 is created by using the _RecipientFilter_ parameter where _ExtensionCustomAttribute1_ is equal to MATH307. When using the _ExtentionCustomAttributes_ parameters, you can use the `-eq` operator instead of the `-like` operator.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter "ExtensionCustomAttribute1 -eq 'MATH307'"
 ```
 
 In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to reflect that he's added the class ENGL210 and removed the class ECON202.
 
-```
+```PowerShell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```

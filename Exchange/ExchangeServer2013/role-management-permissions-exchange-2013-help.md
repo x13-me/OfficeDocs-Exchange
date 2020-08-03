@@ -4,11 +4,12 @@ TOCTitle: Role management permissions
 ms:assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638186(v=EXCHG.150)
 ms:contentKeyID: 48385542
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

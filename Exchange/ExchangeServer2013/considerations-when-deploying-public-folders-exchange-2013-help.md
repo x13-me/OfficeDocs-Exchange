@@ -4,11 +4,12 @@ TOCTitle: Considerations when deploying public folders
 ms:assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
 ms:mtpsurl: https://technet.microsoft.com/library/Dn957481(v=EXCHG.150)
 ms:contentKeyID: 64568563
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

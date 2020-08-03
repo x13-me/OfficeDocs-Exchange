@@ -2,14 +2,15 @@
 localization_priority: Critical
 description: 'Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
 monikerRange: exchserver-2016 || exchserver-2019
 title: Release notes for Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
-ms.date: 6/8/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -19,7 +20,7 @@ manager: serdars
 # Release notes for Exchange Server
 
 > [!TIP]
-> Looking for the Exchange 2013 release notes? See [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
+> Looking for the Exchange 2013 release notes? See [Release notes for Exchange 2013](https://docs.microsoft.com/exchange/release-notes-for-exchange-2013-exchange-2013-help).
 
 ::: moniker range="exchserver-2019"
 Welcome to Microsoft Exchange Server 2019! This topic contains important information that you need to know to successfully deploy Exchange 2019. Please read this topic completely before beginning your deployment.
@@ -28,7 +29,7 @@ Welcome to Microsoft Exchange Server 2019! This topic contains important informa
 
 When you attempt to uninstall Exchange Server from Windows 2019 Server Core using the Exchange Setup Wizard, the operation will fail. The wizard attempts to launch the Windows Control Panel to uninstall Exchange, but the Control Panel does not exist in Windows Server Core. To uninstall Exchange from Windows Server Core, run the following Setup command from the command line:
 
-    ```
+    ```PowerShell
     Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
     ```
 
@@ -58,13 +59,13 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   2. Run the following command to get a list of mailbox databases that are located on your Exchange 2016 servers. Copy the name of the mailbox database where you want to move the migration mailbox to the clipboard.
 
-      ```
+      ```PowerShell
       Get-MailboxDatabase | Where {$_.AdminDisplayVersion -Like "*15.1*"} | Format-Table Name, ServerName
       ```
 
   3. Run the following command to move the migration mailbox to your Exchange 2016 server. Paste the mailbox database name you copied in the previous step after _TargetDatabase_.
 
-      ```
+      ```PowerShell
       New-MoveRequest "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -TargetDatabase "<mailbox database name>"
       ```
 
@@ -90,7 +91,7 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   - Disable MAPI over HTTP on the mailbox by running the following command.
 
-    ```
+    ```PowerShell
     Set-CasMailbox <email address> -MapiHttpEnabled $False
     ```
 
@@ -112,13 +113,13 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
   - Disable recipient validation on the affected Edge Transport server(s) by running the following command.
 
-    ```
+    ```PowerShell
     Set-RecipientFilterConfig -RecipientValidationEnabled $False
     ```
 
   - Disable the recipient validation cache on the affected Edge Transport server(s) by running the following command.
 
-    ```
+    ```PowerShell
     Get-TransportService | Set-TransportService -RecipientValidationCacheEnabled $False
     ```
 

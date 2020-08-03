@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
-ms.date: 
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Manage and troubleshoot message approval in Exchange Online
 ms.collection: 
 - exchange-online
@@ -30,7 +31,7 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 - Estimated time to complete: 10 minutes
 
-- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -38,7 +39,7 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 Run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "<arbitration mailbox>" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
@@ -46,7 +47,7 @@ Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
 
 For example, to find all the recipients that use the arbitration mailbox named Arbitration Mailbox01, run the following commands:
 
-```
+```PowerShell
 $AM = Get-Mailbox "Arbitration Mailbox01" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter "ArbitrationMailbox -eq '$AMDN'"
@@ -61,25 +62,25 @@ To stop moderated recipients from using the arbitration mailbox you are trying t
 
 If you choose to specify a different arbitration mailbox for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ArbitrationMailbox <different arbitration mailbox>
 ```
 
 For example, to reconfigure the distribution group named All Employees to use the arbitration mailbox named Arbitration Mailbox02 for membership approval, run the following command:
 
-```
+```PowerShell
 Set-DistributionGroup "All Employees" -ArbitrationMailbox "Arbitration Mailbox02"
 ```
 
 If you choose to disable moderation for the recipients, run the following command:
 
-```
+```PowerShell
 Set-<RecipientType> <Identity> -ModerationEanbled $false
 ```
 
 For example, to disable moderation for the mailbox named Human Resources, run the following command:
 
-```
+```PowerShell
 Set-Mailbox "Human Resources" -ModerationEanbled $false
 ```
 
@@ -87,4 +88,4 @@ Set-Mailbox "Human Resources" -ModerationEanbled $false
 
 The procedure was successful if you can delete the arbitration mailbox without receiving the error that it's being used.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

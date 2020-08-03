@@ -2,12 +2,14 @@
 localization_priority: Normal
 description: Learn how to view the administrator audit log in Exchange Online
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View the administrator audit log
+search.appverid: MET150
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -28,26 +30,14 @@ In Exchange Online, you can use the Exchange admin center (EAC) to search for an
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View reports" entry in the [Feature Permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View reports" entry in the [Feature Permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
 
-- As previously stated, administrator audit logging is enabled by default. To verify that it's enabled, you can run the following command.
-
-  ```
-  Get-AdminAuditLogConfig | Format-List AdminAuditLogEnabled
-  ```
-
-    In Exchange Server, you can enable administrator audit logging if it's disabled by running the following command.
-
-  ```
-  Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
-  ```
-
-    In Exchange Online Protection and Exchange Online, administrator audit logging is always enabled. It can't be disabled.
+- In Exchange Online organizations, administrator audit logging is always enabled, and can't be disabled.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view the administrator audit log
 

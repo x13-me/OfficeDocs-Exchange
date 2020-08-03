@@ -2,10 +2,9 @@
 localization_priority: Normal
 description: Admins can learn about the different types of address lists that are available in Exchange Online.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-ms.date: 
 ms.reviewer: 
 title: Address lists in Exchange Online
 ms.collection: 
@@ -13,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -63,12 +64,12 @@ By default, Exchange Online comes with five built-in address lists and one GAL. 
 
 |**Name**|**Type**|**Description**|**Recipient filter used**|
 |:-----|:-----|:-----|:-----|
-|All Contacts|Address list|Includes all mail contacts in the organization. To learn more about mail contacts, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`{Alias -ne $null -and (ObjectCategory -like 'person' -and ObjectClass -eq 'contact')}`|
-|All Distribution Lists|Address list|Includes all distribution groups and mail-enabled security groups in the organization. To learn more about mail-enabled groups, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`{Alias -ne $null -and ObjectCategory -like 'group'}`|
-|All Rooms|Address list|Includes all room mailboxes. Equipment mailboxes aren't included. To learn more about room and equipment (resource) mailboxes, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`{Alias -ne $null -and (RecipientDisplayType -eq 'ConferenceRoomMailbox' -or RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}`|
-|All Users|Address list|Includes all user mailboxes, linked mailboxes, remote mailboxes (Office 365 mailboxes), shared mailboxes, room mailboxes, equipment mailboxes, and mail users in the organization. To learn more about these recipient types, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`{((Alias -ne $null) -and (((((((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (-not(Database -ne $null)) -and (-not(ServerLegacyDN -ne $null)))) -or (((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (((Database -ne $null) -or (ServerLegacyDN -ne $null))))))) -and (-not(RecipientTypeDetailsValue -eq 'GroupMailbox')))))}`|
-|Default Global Address List|GAL|Includes all mail-enabled recipient objects in the organization (users, contacts, groups, dynamic distribution groups, and public folders.|`{((Alias -ne $null) -and (((ObjectClass -eq 'user') -or (ObjectClass -eq 'contact') -or (ObjectClass -eq 'msExchSystemMailbox') -or (ObjectClass -eq 'msExchDynamicDistributionList') -or (ObjectClass -eq 'group') -or (ObjectClass -eq 'publicFolder'))))}`|
-|Public Folders|Address list|Includes all mail-enabled public folders in your organization. Access permissions determine who can view and use public folders. For more information about public folders, see [Public folders in Office 365 and Exchange Online](../../collaboration-exo/public-folders/public-folders.md).|`{Alias -ne $null -and ObjectCategory -like 'publicFolder'}`|
+|All Contacts|Address list|Includes all mail contacts in the organization. To learn more about mail contacts, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`"Alias -ne $null -and (ObjectCategory -like 'person' -and ObjectClass -eq 'contact')"`|
+|All Distribution Lists|Address list|Includes all distribution groups and mail-enabled security groups in the organization. To learn more about mail-enabled groups, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`"Alias -ne $null -and ObjectCategory -like 'group'"`|
+|All Rooms|Address list|Includes all room mailboxes. Equipment mailboxes aren't included. To learn more about room and equipment (resource) mailboxes, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`"Alias -ne $null -and (RecipientDisplayType -eq 'ConferenceRoomMailbox' -or RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')"`|
+|All Users|Address list|Includes all user mailboxes, linked mailboxes, remote mailboxes (Microsoft 365 or Office 365 mailboxes), shared mailboxes, room mailboxes, equipment mailboxes, and mail users in the organization. To learn more about these recipient types, see [Recipients in Exchange Online](../../recipients-in-exchange-online/recipients-in-exchange-online.md).|`"((Alias -ne $null) -and (((((((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (-not(Database -ne $null)) -and (-not(ServerLegacyDN -ne $null)))) -or (((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (((Database -ne $null) -or (ServerLegacyDN -ne $null))))))) -and (-not(RecipientTypeDetailsValue -eq 'GroupMailbox')))))"`|
+|Default Global Address List|GAL|Includes all mail-enabled recipient objects in the organization (users, contacts, groups, dynamic distribution groups, and public folders.|`"((Alias -ne $null) -and (((ObjectClass -eq 'user') -or (ObjectClass -eq 'contact') -or (ObjectClass -eq 'msExchSystemMailbox') -or (ObjectClass -eq 'msExchDynamicDistributionList') -or (ObjectClass -eq 'group') -or (ObjectClass -eq 'publicFolder'))))"`|
+|Public Folders|Address list|Includes all mail-enabled public folders in your organization. Access permissions determine who can view and use public folders. For more information about public folders, see [Public folders in Microsoft 365 or Office 365 and Exchange Online](../../collaboration-exo/public-folders/public-folders.md).|`"Alias -ne $null -and ObjectCategory -like 'publicFolder'"`|
 
 ## Custom Address Lists
 

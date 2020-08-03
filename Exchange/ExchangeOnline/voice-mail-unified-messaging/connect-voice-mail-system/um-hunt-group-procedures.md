@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Create a UM hunt group
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4251c24a-9616-4923-92da-ed783aa8d802
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: UM hunt group procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

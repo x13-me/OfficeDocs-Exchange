@@ -4,11 +4,12 @@ TOCTitle: Deploying voice mail and UM
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673519(v=EXCHG.150)
 ms:contentKeyID: 49315394
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,7 +46,7 @@ When you're deploying Unified Messaging, you have multiple options depending on 
 
   - Continuity of the user experience across multiple devices.
 
-For more information about Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For more information about Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 ## Deployment steps
 

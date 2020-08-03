@@ -4,11 +4,12 @@ TOCTitle: Understanding multiple-forest permissions
 ms:assetid: 8241033f-e201-4799-b17c-4f120c6e6445
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298099(v=EXCHG.150)
 ms:contentKeyID: 49289329
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

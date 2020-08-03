@@ -1,8 +1,10 @@
 ---
 title: "Server roles in Exchange hybrid deployments"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -26,7 +28,7 @@ When configuring a hybrid deployment in an Exchange 2016 organization, you don't
 
 Exchange 2016 only has one required server role, the Mailbox role. In addition to hosting the on-premises recipient mailboxes, the Mailbox role performs all of the functions necessary to support a hybrid deployment with Exchange Online. This includes handling secure mail messages between the on-premises and Exchange Online organizations, as well as handling transport rules, journaling policies, and message delivery to user mailboxes in a hybrid deployment. All client connectivity and organization relationship features, such as free/busy sharing, are also handled by the Mailbox server.
 
-Learn more about Exchange 2016 capacity planning at [Sizing Exchange 2016 Deployments](https://go.microsoft.com/fwlink/p/?LinkId=301990).
+Learn more about Exchange 2016 capacity planning at [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/exchange-team-blog/ask-the-perf-guy-sizing-exchange-2016-deployments/ba-p/603970).
 
 ## Exchange 2013 hybrid deployment
 
@@ -48,13 +50,13 @@ Depending on the hybrid deployment configuration that you want, an Exchange 2013
 
 - **More than one Exchange server**: If you choose to install more than one Exchange server in your on-premises organization, you can install the server roles on separate servers in your on-premises organization. For example, you could install one Exchange server that has the Mailbox and Client Access roles installed and also install another Exchange server that has only the Client Access server role installed. However, the best practice and recommended server configuration is to install both the Client Access and Mailbox server roles on each server deployed in your on-premises organization.
 
-Learn more about Exchange 2013 capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](https://go.microsoft.com/fwlink/?LinkId=266576).
+Learn more about Exchange 2013 capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](https://docs.microsoft.com/exchange/exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md).
 
 ## Exchange server functionality in hybrid deployments
 
 Exchange servers provide several important functions for your on-premises organization in a hybrid deployment:
 
-- **Federation**: Exchange servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
+- **Federation**: Exchange servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Microsoft 365 or Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
     Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
 
@@ -68,7 +70,7 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Message transport security**: Exchange servers with the Client Access and Mailbox server roles help to secure message communication between the on-premises and Exchange Online organizations by using the Domain Security functionality in Exchange. Security can be increased by using mutual transport layer security authentication and encryption for message communications.
 
-    Learn more at [Understanding Domain Security](https://go.microsoft.com/fwlink/p/?LinkId=266581).
+    Learn more at [Understanding Domain Security](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124392(v=exchg.141)).
 
 - **Outlook on the web (known as Outlook Web App in Exchange 2013)**: Exchange 2013 servers with the Client Access role and Exchange 2016 servers with the Mailbox role support configuring a single URL endpoint for external connections to on-premises and Exchange Online mailboxes. For on-premises mailboxes, Exchange servers are configured to service Outlook on the web requests. For Exchange Online organization mailboxes, Exchange servers are configured to automatically display a link to the Outlook on the web endpoint on the Exchange Online organization.
 

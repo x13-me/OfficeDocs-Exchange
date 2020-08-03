@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.'
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
-ms.date: 7/27/2018
 ms.reviewer: 
 title: Install the Exchange management tools
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -24,7 +25,7 @@ The management tools in Exchange Server 2016 and Exchange Server 2019 include th
 > [!NOTE]
 > The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
-For more information about the Exchange Management Shell and the Exchange Toolbox, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell) and [Exchange Toolbox](https://technet.microsoft.com/library/jj556600(v=exchg.150).aspx).
+For more information about the Exchange Management Shell, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## What do you need to know before you begin?
 
@@ -35,7 +36,7 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange 2016 Setup wizard to install the Exchange management tools
 
@@ -123,13 +124,13 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
 
 2. To install the Exchange management tools from the command line, use the following syntax in elevated command prompt (a Command Prompt window you opened by selecting **Run as administrator**):
 
-   ```
+   ```console
    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
    ```
 
    This example uses the Exchange Setup files on drive E: to install the management tools on the local server
 
-   ```
+   ```console
    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools
    ```
 

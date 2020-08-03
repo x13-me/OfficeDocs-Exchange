@@ -4,11 +4,12 @@ TOCTitle: Protocol logging
 ms:assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997624(v=EXCHG.150)
 ms:contentKeyID: 49287003
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

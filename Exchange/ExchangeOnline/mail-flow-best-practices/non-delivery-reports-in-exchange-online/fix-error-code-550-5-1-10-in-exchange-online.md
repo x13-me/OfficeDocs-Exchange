@@ -1,18 +1,20 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.10 in Exchange Online"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Priority
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 5a04a25a-a34f-476b-afc6-007fb92f86a1
 description: "Learn how to fix email issues for error code 550 5.1.10 in Exchange Online (invalid recipient or backscatter)."
 ---
@@ -35,7 +37,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
+  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## I got this bounce message. How do I fix it?
 
@@ -51,7 +53,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    ![Screenshot shows the Report tab of a bounce message with the Send Again option and text in the body of the email message that says the message couldn't be delivered.](../../media/ecbdcf67-a13e-4d6c-bc56-ecd5c7ce9a4e.png)
 
-   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.office.com/article/acd16ac4-c881-477d-b4aa-36168fa96088.aspx).
+   If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder. For more information, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 2. In the new copy of your message, select the recipient's email address in the **To** box and then press the **Delete** key.
 
@@ -99,13 +101,13 @@ Does the recipient's email address in your original message exactly match the re
 
 If the addresses don't match, contact the recipient (by phone, in person, etc.) and ask them if they've configured an email rule that forwards incoming email messages from you to another destination. Their rule could have tried to send a copy of your message to a bad email address. If the recipient has such a rule, they'll need to correct the destination email address or remove the rule in order to prevent 5.1.x message delivery errors.
 
-Office 365 supports multiple ways to forward messages automatically. If the intended recipient of your message is using Office 365, ask them to review the [Update, disable, or remove Inbox Rules forwarding](#update-disable-or-remove-inbox-rules-forwarding) and [Disable account forwarding](#disable-account-forwarding) sections below.
+Microsoft 365 and Office 365 support multiple ways to forward messages automatically. If the intended recipient of your message is using Microsoft 365 or Office 365, ask them to review the [Update, disable, or remove Inbox Rules forwarding](#update-disable-or-remove-inbox-rules-forwarding) and [Disable account forwarding](#disable-account-forwarding) sections below.
 
 If the problem persists after performing these steps, ask the recipient to refer their email admin to the [I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this) section below.
 
 #### Update, disable, or remove Inbox Rules forwarding
 
-1. In Office 365, sign in to your user account.
+1. In Microsoft 365 or Office 365, sign in to your user account.
 
 2. Click the gear icon in the top right corner to show the **Settings** pane.
 
@@ -121,7 +123,7 @@ If the problem persists after performing these steps, ask the recipient to refer
 
 #### Disable account forwarding
 
-1. Sign in to your Office 365 account, and from the same **Options** navigation as shown above, select **Mail** \> **Accounts** \> **Forwarding**.
+1. Sign in to your Microsoft 365 or Office 365 account, and from the same **Options** navigation as shown above, select **Mail** \> **Accounts** \> **Forwarding**.
 
     ![Screenshot shows the Forwarding option page with the Stop forwarding option selected.](../../media/5423f042-6cba-465d-b1cd-4ef1051eb9ed.png)
 
@@ -137,9 +139,9 @@ To verify that the recipient exists and has an active license assigned:
 
 1. In the Microsoft 365 admin center, choose **Users** to go to the **Active users** page.
 
-2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec.aspx).) If the recipient does exist, make sure the recipient's user name matches the email address the sender used.
+2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
 
-   ![Screenshot shows a section of the Active users page with a search term, "allie", typed in the search box adjacent to the Filters option, which is set to All users. Below, the complete display name and user name are shown.](../../media/4b17dfe8-104c-4e8a-9325-3779a7d4bc5f.png)
+   ![Screenshot shows a section of the Active users page with a search term, "allie", typed in the search box adjacent to the Filters option, which is set to All users. Below, the complete display name and username are shown.](../../media/4b17dfe8-104c-4e8a-9325-3779a7d4bc5f.png)
 
 3. If the user's mailbox is hosted in Exchange Online, click the user's record to review their details and verify that they've been assigned a valid license for email (for example, an Office 365 Enterprise E5 license).
 
@@ -151,7 +153,7 @@ To verify that the recipient exists and has an active license assigned:
 
 ### Fix or remove broken forwarding rules or settings
 
-Office 365 provides the following features for users and email admins to forward messages to another email address:
+Microsoft 365 or Office 365 provides the following features for users and email admins to forward messages to another email address:
 
 - Forwarding using Inbox rules (user)
 
@@ -205,11 +207,11 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
   - **If the accepted domain in Exchange Online is Internal Relay**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, the service relays the message to your on-premises Exchange Organization (assuming you've correctly set up the required connector to do so).
 
-- When setting an accepted domain to Internal Relay, you must set up a corresponding Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- When setting an accepted domain to Internal Relay, you must set up a corresponding Microsoft 365 or Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 **To change the Accepted Domain from Authoritative to Internal Relay**
 
-If you have a hybrid configuration with an Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
+If you have a hybrid configuration with an Microsoft 365 or Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
@@ -223,23 +225,23 @@ If you have a hybrid configuration with an Office 365 connector configured to ro
 
    ![Screenshot shows the Accepted Domain dialog with the Internal Relay option selected for the specified accepted domain.](../../media/0d2d80b9-66b8-474e-851b-700127c1c1d0.png)
 
-#### Manually synchronize on-premises and Office 365 directories
+#### Manually synchronize on-premises and Microsoft 365 or Office 365 directories
 
-If you have a hybrid configuration and the recipient is located in the on-premises Exchange organization, it's possible that the recipient's email address isn't properly synchronized with Office 365. Follow these steps to synchronize directories manually:
+If you have a hybrid configuration and the recipient is located in the on-premises Exchange organization, it's possible that the recipient's email address isn't properly synchronized with Microsoft 365 or Office 365. Follow these steps to synchronize directories manually:
 
 1. Log into the on-premises server that's running the Directory Synchronization Tools.
 
 2. Open Windows PowerShell on the server and run the following commands:
 
-   ```
+   ```powershell
    CD "C:\Program Files\Microsoft Online Directory Sync"
    ```
 
-   ```
+   ```powershell
    DirSyncConfigShell.psc1
    ```
 
-   ```
+   ```powershell
    Start-OnlineCoexistenceSync
    ```
 
@@ -259,29 +261,29 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 3. Verify that there's only one MX record configured for the recipient's domain. Microsoft doesn't support using more than one MX record for a domain that's enrolled in Exchange Online.
 
-4. If Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records for Office 365 at any DNS hosting provider](https://go.microsoft.com/fwlink/p/?LinkID=512839).
+4. If Microsoft 365 or Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
    > [!NOTE]
-   > Typically, your domain's MX record should point to the Office 365 fully qualified domain name: \<your domain\>.mail.protection.outlook.com. DNS record updates usually propagate across the Internet in a few hours, but they can take up to 72 hours.
+   > Typically, your domain's MX record should point to the Microsoft 365 or Office 365 fully qualified domain name: \<your domain\>.mail.protection.outlook.com. DNS record updates usually propagate across the Internet in a few hours, but they can take up to 72 hours.
 
 ## Still need help with a 5.1.10 bounce message?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Backscatter messages and EOP](https://go.microsoft.com/fwlink/p/?linkid=833530)
+[Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop)
 
-[Configure email forwarding for a mailbox](https://go.microsoft.com/fwlink/p/?linkid=833531)
+[Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md)
 
-[Synchronizing your directory with Office 365 is easy](https://go.microsoft.com/fwlink/p/?linkid=833532)
+[Synchronizing your directory with Microsoft 365 or Office 365 is easy](https://www.microsoft.com/microsoft-365/blog/2014/04/15/synchronizing-your-directory-with-office-365-is-easy/)
 
-[Create DNS records at any DNS hosting provider for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=512839)
+[Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
-[Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403)
+[Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)

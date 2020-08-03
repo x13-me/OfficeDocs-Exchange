@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Admins can learn how to create mailboxes in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
-ms.date: 12/9/2016
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create user mailboxes in Exchange Online
 ms.collection: 
 - exchange-online
@@ -28,34 +29,30 @@ You have to use the Microsoft 365 admin center or Exchange Online PowerShell to 
 
 - Estimated time to complete: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - It's a good idea to use strong passwords that are at least eight characters long, and combine uppercase and lowercase letters, numbers, and symbols.
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Microsoft 365 admin center to create a new mailbox
 
-You can use the Microsoft 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Microsoft 365 admin center, see the following topics:
-
-- [Create or edit users](https://go.microsoft.com/fwlink/p/?LinkId=276796)
-
-- [Add multiple users with a CSV file](https://go.microsoft.com/fwlink/p/?LinkId=279605)
+You can use the Microsoft 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ## Use Exchange Online PowerShell to create a new mailbox
 
-This example creates an Exchange Online mailbox and Office 365 user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365.
+This example creates an Exchange Online mailbox and user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Microsoft 365 or Office 365.
 
-```
+```PowerShell
 New-Mailbox -Alias hollyh -Name hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -MicrosoftOnlineServicesID hollyh@corp.contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
 ```
 
-After you create a mailbox by running the previous command, an Office 365 user account is also created. You have to activate this user account by assigning a license. To assign a license in the Microsoft 365 admin center, see [Assign or remove a license](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+After you create a mailbox by running the previous command, an user account is also created. You have to activate this user account by assigning a license. To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 ## How do you know this worked?
 
@@ -69,7 +66,7 @@ To verify that you've successfully created a new mailbox, do one of the followin
 
 - In Exchange Online PowerShell, run the following command to display information about the new user mailbox.
 
-  ```
+  ```PowerShell
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,SKUAssigned
   ```
 

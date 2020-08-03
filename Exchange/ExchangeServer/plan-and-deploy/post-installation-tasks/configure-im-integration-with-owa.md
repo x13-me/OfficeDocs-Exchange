@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.'
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
-ms.date: 
 ms.reviewer: 
 title: Configure instant messaging integration with Outlook on the web in Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -37,16 +38,16 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 
 - Estimated time to complete: 5 minutes
 
-- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](https://go.microsoft.com/fwlink/p/?linkid=282082). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
+- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
 
-- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access virtual directory settings" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
 - Depending on your Skype for Business Server topology, you may have multiple FrontEnd pools, you should pick the regional endpoint (closest pool to the exchange AD site): `IMServerName=<Skype Server\pool Name>`.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Management Shell to configure IM integration with Outlook on the web
 
@@ -54,7 +55,7 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 
 Use the following syntax in the Exchange Management Shell to specify the IM server and IM certificate thumbprint:
 
-```
+```powershell
 New-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
 ```
 
@@ -74,13 +75,13 @@ This example specifies the IM server and IM certificate thumbprint on all Exchan
 
 - **Override reason**: Configure IM
 
-```
+```powershell
 New-SettingOverride -Name "IM Override"  -Component OwaServer -Section IMSettings -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM"
 ```
 
 This example specifies the IM server and IM certificate thumbprint, but only on the server named Mailbox01.
 
-```
+```powershell
 New-SettingOverride -Name "Mailbox01 IM Override"  -Component OwaServer -Section IMSettings -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM" -Server Mailbox01
 ```
 
@@ -88,13 +89,13 @@ New-SettingOverride -Name "Mailbox01 IM Override"  -Component OwaServer -Section
 
 Use the following syntax in the Exchange Management Shell to refresh the IM settings on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Server <ServerName> -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
 This example refreshes the IM settings on the server named Mailbox01.
 
-```
+```powershell
 Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
@@ -102,7 +103,7 @@ Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directo
 
 Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
 
-```
+```powershell
 Restart-WebAppPool MSExchangeOWAAppPool
 ```
 
@@ -112,7 +113,7 @@ You'll know that you've successfully configured IM integration with Outlook on t
 
 To verify the values of the **IMServerName** and **IMCertificateThumbprint** properties on an Exchange server, replace _\<ServerName\>_ with the name of the server (not the FQDN), and run the following command:
 
-```
+```powershell
 [xml]$diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=OwaServer"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.OwaServer.IMSettings
 ```
 

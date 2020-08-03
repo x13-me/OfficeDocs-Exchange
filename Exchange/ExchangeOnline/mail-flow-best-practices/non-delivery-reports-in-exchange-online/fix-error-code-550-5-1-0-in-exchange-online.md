@@ -1,18 +1,20 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.0 in Exchange Online"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 477289e6-9150-4627-afce-f61fc7c4605b
 description: "Learn how to fix email issues for error code 550 5.5.0 or address rejected: SPF Permanent Error in Exchange Online (the destination email server won't accept messages from the sender or for the recipient)."
 ---
@@ -49,9 +51,9 @@ You might have an invalid entry in your Auto-Complete list (also known as the _n
 
 #### Fix your Auto-Complete list entries in Outlook
 
-To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
+To remove invalid recipients or all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.microsoft.com/office/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
-To resend the message in Outlook, see [Resend an email message](https://support.office.com/article/ACD16AC4-C881-477D-B4AA-36168FA96088).
+To resend the message in Outlook, see [Resend an email message](https://support.microsoft.com/office/acd16ac4-c881-477d-b4aa-36168fa96088).
 
 #### Fix your Auto-Complete list entries in Outlook on the web
 
@@ -93,7 +95,7 @@ After you open your mailbox in the light version of Outlook on the web, do the f
 
 ## I'm an email admin. How do I fix this?
 
-The Sender Policy Framework (SPF) record for your Exchange Online domain might be incomplete, and might not include all sources of mail for your domain. For more information, see [Set up SPF in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/p/?linkid=836403).
+The Sender Policy Framework (SPF) record for your Exchange Online domain might be incomplete, and might not include all sources of mail for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## Details for error code 5.1.0
 
@@ -105,11 +107,11 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 ## Still need help?
 
-[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

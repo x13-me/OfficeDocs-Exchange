@@ -4,11 +4,12 @@ TOCTitle: Recoverable Items folder
 ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -90,9 +91,9 @@ An item is considered to be permanently deleted in the following cases:
 
 Permanently deleted items are moved to the Deletions subfolder of the Recoverable Items folder. This provides an additional layer of protection so users can recover permanently deleted items without requiring Help desk intervention. Users can use the Recover Deleted Items feature in Outlook or Outlook Web App to recover a deleted item. Users can also use this feature to permanently delete an item. For more information, see:
 
-- [Restore deleted items in Outlook](https://go.microsoft.com/fwlink/p/?linkid=524923)
+- [Restore deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-- [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
+- [Recover deleted items or email in Outlook Web App](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4)
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see Recoverable Items Mailbox Quotas later in this topic.
 
@@ -309,7 +310,7 @@ The following table lists the events logged when the Recoverable Items folder re
 </tbody>
 </table>
 
-If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://technet.microsoft.com/library/dd298173\(v=exchg.150\)) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you must reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up the Recoverable Items folder](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
 ## More information
 
@@ -317,6 +318,6 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
 
 - If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
 
-  - [Restore deleted items in Outlook](https://go.microsoft.com/fwlink/p/?linkid=524923)
+  - [Restore deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-  - [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
+  - [Recover deleted items or email in Outlook Web App](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4)

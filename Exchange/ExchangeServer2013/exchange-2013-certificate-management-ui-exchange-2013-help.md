@@ -4,11 +4,12 @@ TOCTitle: Exchange 2013 certificate management UI
 ms:assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms:mtpsurl: https://technet.microsoft.com/library/JJ984582(v=EXCHG.150)
 ms:contentKeyID: 51541779
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -3,15 +3,16 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
-ms.date:
 ms.reviewer: 
 title: Active Directory schema changes in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -28,6 +29,18 @@ Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
+
+## Exchange 2019 CU6 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU6.
+
+## Exchange 2019 CU5 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU5.
+
+## Exchange 2019 CU4 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU4.
 
 ## Exchange 2019 CU3 Active Directory schema changes
 
@@ -1469,10 +1482,22 @@ The following table lists the extended rights that are added when you install Ex
 |Cumulative Update 2|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU3 schema updates.|
 |Cumulative Update 3|Cumulative Update 4 <br> through <br> Cumulative Update 6|**No**, no schema updates are required. <br> No schema changes are made in CU4 through CU6.|
 |Cumulative Update 6|Cumulative Update 7 <br> through <br> Cumulative Update 14|**Yes**, schema updates are required. <br> You need to apply the CU14 schema updates.|
-|Cumulative Update 7 or higher|Cumulative Update 8 <br> through <br> Cumulative Update 14|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU14.|
+|Cumulative Update 7 or higher|Cumulative Update 8 <br> through <br> Cumulative Update 17|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU17.|
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
+
+## Exchange 2016 CU17 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 in CU17.
+
+## Exchange 2016 CU16 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 in CU16.
+
+## Exchange 2016 CU15 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 in CU15.
 
 ## Exchange 2016 CU14 Active Directory schema changes
 

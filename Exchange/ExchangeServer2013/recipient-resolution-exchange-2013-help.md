@@ -4,11 +4,12 @@ TOCTitle: Recipient resolution
 ms:assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms:mtpsurl: https://technet.microsoft.com/library/Bb430743(v=EXCHG.150)
 ms:contentKeyID: 50934209
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

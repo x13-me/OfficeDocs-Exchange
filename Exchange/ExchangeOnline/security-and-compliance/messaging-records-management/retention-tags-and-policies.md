@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Retention tags and retention policies
 ms.collection: 
 - exchange-online
@@ -21,7 +22,7 @@ manager: serdars
 
 In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 
-Watch this [video](https://go.microsoft.com/fwlink/p/?LinkId=825854) for a quick overview of how to apply retention tags and a retention policy to a mailbox in Exchange Online.
+Watch this [video](https://www.youtube.com/watch?v=EQRjaiPPXvA&feature=youtu.be) for a quick overview of how to apply retention tags and a retention policy to a mailbox in Exchange Online.
 
 ## Messaging Records Management strategy
 <a name="MRM"> </a>
@@ -89,8 +90,8 @@ When creating or configuring a retention tag, you can select one of the followin
 
 |**Retention action**|**Action taken...**|**Except...**|
 |:-----|:-----|:-----|
-|**Move to Archive**<sup>1</sup>|Moves the message to the user's archive mailbox  <br/>  Only available for DPTs and personal tags  <br/>  For details about archiving, see:  <br/> [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) <br/> [Archive Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=825607)|If the user doesn't have an archive mailbox, no action is taken.|
-|**Delete and Allow Recovery**|Emulates the behavior when the user empties the Deleted Items folder. <br/>  Items are moved to the [Recoverable Items Folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx) in the mailbox and preserved until the deleted item retention period. <br/>  Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web|If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md).|
+|**Move to Archive**<sup>1</sup>|Moves the message to the user's archive mailbox  <br/>  Only available for DPTs and personal tags  <br/>  For details about archiving, see [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)|If the user doesn't have an archive mailbox, no action is taken.|
+|**Delete and Allow Recovery**|Emulates the behavior when the user empties the Deleted Items folder. <br/>  Items are moved to the [Recoverable Items folder in Exchange Online](../recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the deleted item retention period. <br/>  Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web|If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md).|
 |**Permanently Delete**|Permanently deletes messages. <br/>  You can't recover messages after they're permanently deleted.|If mailbox is placed on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) or Litigation Hold, items are preserved in the Recoverable Items folder based on hold parameters. [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) will still return these items in search results.|
 |**Mark as Past Retention Limit**|Marks a message as expired. In Outlook 2010 or later, and Outlook on the web, expired items are displayed with the notification stating 'This item has expired' and 'This item will expire in 0 days'. In Outlook 2007, items marked as expired are displayed by using strikethrough text.|N. A.|
 
@@ -119,7 +120,7 @@ A retention policy can contain both archive tags (tags that move items to the pe
 
 When planning to create retention policies, you must consider whether they'll include both archive and deletion tags. As mentioned earlier, a retention policy can have one DPT that uses the **Move to Archive** action and one DPT that uses either the **Delete and Allow Recovery** or **Permanently Delete** action. The DPT with the **Move to Archive** action must have a lower retention age than the DPT with a deletion action. For example, you can use a DPT with the **Move to Archive** action to move items to the archive mailbox in two years, and a DPT with a deletion action to remove items from the mailbox in seven years. Items in both primary and archive mailboxes will be deleted after seven years.
 
-For a list of management tasks related to retention policies, see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+For a list of management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ### Default retention policy
 
@@ -138,7 +139,7 @@ The Managed Folder Assistant applies the retention policy by inspecting items in
 
 The Managed Folder Assistant is a throttle-based assistant. Throttle-based assistants are always running and don't need to be scheduled. The system resources they can consume are throttled. You can configure the Managed Folder Assistant to process all mailboxes on a Mailbox server within a certain period (known as a work cycle). Additionally, at a specified interval (known as the work cycle checkpoint), the assistant refreshes the list of mailboxes to be processed. During the refresh, the assistant adds newly created or moved mailboxes to the queue. It also reprioritizes existing mailboxes that haven't been processed successfully due to failures and moves them higher in the queue so they can be processed during the same work cycle.
 
-You can also use the [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure the Managed Folder Assistant](https://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx).
+You can also use the [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox.
 
 > [!NOTE]
 > The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed. <br/><br/> MRM won't move items larger than the values of MaxSendSize and MaxReceiveSize set on the mailbox.
@@ -175,7 +176,7 @@ If you disable a retention tag, the Managed Folder Assistant ignores items that 
 When users are temporarily away from work and don't have access to their e-mail, retention settings can be applied to new messages before they return to work or access their e-mail. Depending on the retention policy, messages may be deleted or moved to the user's personal archive. You can temporarily suspend retention policies from processing a mailbox for a specified period by placing the mailbox on retention hold. When you place a mailbox on retention hold, you can also specify a retention comment that informs the mailbox user (or another user authorized to access the mailbox) about the retention hold, including when the hold is scheduled to begin and end. Retention comments are displayed in supported Outlook clients. You can also localize the retention hold comment in the user's preferred language.
 
 > [!NOTE]
-> Placing a mailbox on retention hold doesn't affect how mailbox storage quotas are processed. Depending on the mailbox usage and applicable mailbox quotas, consider temporarily increasing the mailbox storage quota for users when they're on vacation or don't have access to e-mail for an extended period. For more information about mailbox storage quotas, see [Configure Storage Quotas for a Mailbox](https://technet.microsoft.com/library/5f5fe292-c80e-4a0b-b3e6-e193ea5171d0.aspx).
+> Placing a mailbox on retention hold doesn't affect how mailbox storage quotas are processed. Depending on the mailbox usage and applicable mailbox quotas, consider temporarily increasing the mailbox storage quota for users when they're on vacation or don't have access to e-mail for an extended period. For more information about mailbox storage quotas, see [Mailbox storage limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
 
 During long absences from work, users may accrue a large amount of e-mail. Depending on the volume of e-mail and the length of absence, it may take these users several weeks to sort through their messages. In these cases, consider the additional time it may take the users to catch up on their mail before removing them from retention hold.
 

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the different versions of Exchange 2016 and Exchange 2019.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
-ms.date: 7/30/2018
 ms.reviewer: 
 title: Exchange Server editions and versions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -48,7 +49,7 @@ For a list of Exchange Server versions and how to download and upgrade to the la
 
 To view the Exchange version and edition information for all Exchange servers in your organization, run the following command in the Exchange Management Shell:
 
-```
+```powershell
 Get-ExchangeServer | Format-Table -Auto Name,Edition,AdminDisplayVersion
 ```
 
@@ -60,4 +61,4 @@ Exchange 2013 and all later versions use a licensing model that's similar to how
 
 - **Client Access licenses (CALs)**: Exchange also comes in two CAL editions, which are referred to as a Standard CAL and an Enterprise CAL. You can mix and match the Exchange server editions with the CAL types. For example, you can use Enterprise CALs with Standard Edition or Standard CALs with Enterprise Edition.
 
-For more information about Exchange license types, see [Licensing](https://go.microsoft.com/fwlink/p/?LinkId=392675).
+For more information about Exchange license types, see [Exchange Licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-licensing-faq-email-for-business).

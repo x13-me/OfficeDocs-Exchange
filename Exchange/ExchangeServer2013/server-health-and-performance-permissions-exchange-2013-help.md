@@ -4,11 +4,12 @@ TOCTitle: Server health and performance permissions
 ms:assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150479(v=EXCHG.150)
 ms:contentKeyID: 47559932
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

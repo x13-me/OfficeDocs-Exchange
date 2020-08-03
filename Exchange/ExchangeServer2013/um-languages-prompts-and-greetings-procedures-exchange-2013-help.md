@@ -4,11 +4,12 @@ TOCTitle: UM languages, prompts, and greetings procedures
 ms:assetid: 935bcf76-f27d-406e-962b-3adb014cf76e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863293(v=EXCHG.150)
 ms:contentKeyID: 50387248
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

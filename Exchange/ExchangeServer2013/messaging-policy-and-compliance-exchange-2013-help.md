@@ -4,11 +4,12 @@ TOCTitle: Messaging policy and compliance
 ms:assetid: 65f20a20-27a4-4f6e-9b27-f8705d65b8d9
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998599(v=EXCHG.150)
 ms:contentKeyID: 48385169
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -88,7 +89,7 @@ The following table provides an overview of the messaging policy and compliance 
 </tr>
 <tr class="odd">
 <td><p>S/MIME</p></td>
-<td><p>Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people who have Office 365 mailboxes and Exchange 2013 and Exchange Online to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for Office 365 mailboxes by synchronizing user certificates between Office 365 and their on-premises server and then configuring Outlook Online to support S/MIME.</p></td>
+<td><p>Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people who have Microsoft 365 or Office 365 mailboxes and Exchange 2013 and Exchange Online to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for these mailboxes by synchronizing user certificates between Microsoft 365 or Office 365 and their on-premises server and then configuring Outlook Online to support S/MIME.</p></td>
 <td><p><a href="https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption">S/MIME for message signing and encryption</a></p></td>
 </tr>
 <tr class="even">

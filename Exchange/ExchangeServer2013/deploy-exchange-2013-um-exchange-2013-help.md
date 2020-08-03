@@ -4,11 +4,12 @@ TOCTitle: Deploy Exchange 2013 UM
 ms:assetid: d147d4b1-32d7-476b-b76f-ee3c0b35ba49
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673564(v=EXCHG.150)
 ms:contentKeyID: 49315527
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -89,7 +90,7 @@ UM language packs enable callers and Outlook Voice Access users to interact with
 
 When you first install Exchange, U.S. English will be the default language, and the only available language option for your dial plan. After you install a UM language pack on a Mailbox server, the language associated with the language pack will be listed as an available option when you configure the default language for the dial plan. By default, because UM auto attendants are associated with a UM dial plan when they're created, they use the default language setting of the associated UM dial plan. However, this setting can be changed after the UM auto attendant is created.
 
-You can add UM language packs by using the Setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+You can add UM language packs by using the Setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 > [!NOTE]
 > By default, when you install a Mailbox server, the U.S. English language (en-US) is installed. It can't be removed unless you remove the Mailbox server from the computer.

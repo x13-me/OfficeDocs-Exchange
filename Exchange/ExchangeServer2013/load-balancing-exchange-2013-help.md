@@ -4,11 +4,12 @@ TOCTitle: Load balancing
 ms:assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms:mtpsurl: https://technet.microsoft.com/library/JJ898588(v=EXCHG.150)
 ms:contentKeyID: 50874017
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -38,7 +39,7 @@ In Exchange Server 2010, client connections and processing were handled by the C
 
 - Hardware load balancing
 
-Because of the differing needs of client protocols in Exchange 2010, we recommended using a Layer 7 load balancing solution. Layer 7, also known as application-level load balancing, allowed the load balancing solution to use complex rules to determine how to balance each request entering the system, given that the entire conversation between client and server would be available to the load balancer logic. These complex rules ensured that all requests from a specific client went to the same Client Access server endpoint. In Exchange 2010, if all requests from a specific client did not go to the same endpoint for protocols that required affinity, the user experience would be negatively affected. For more information about Exchange 2010 load balancing options, see [Understanding Load Balancing in Exchange 2010](https://go.microsoft.com/fwlink/p/?linkid=196447).
+Because of the differing needs of client protocols in Exchange 2010, we recommended using a Layer 7 load balancing solution. Layer 7, also known as application-level load balancing, allowed the load balancing solution to use complex rules to determine how to balance each request entering the system, given that the entire conversation between client and server would be available to the load balancer logic. These complex rules ensured that all requests from a specific client went to the same Client Access server endpoint. In Exchange 2010, if all requests from a specific client did not go to the same endpoint for protocols that required affinity, the user experience would be negatively affected. For more information about Exchange 2010 load balancing options, see [Understanding Load Balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141)).
 
 In Exchange Server 2013, there are two primary types of servers: the Client Access server and the Mailbox server. The Client Access servers in Exchange 2013 serve as lightweight, stateless proxy servers, allowing clients to connect to Exchange 2013 Mailbox servers. Exchange 2013 Client Access servers provide a unified namespace and authentication. In addition, Exchange 2013 Client Access servers:
 
@@ -54,7 +55,7 @@ In Exchange 2010, we introduced the concept of a Client Access array. After a Cl
 
 ## Load balancing solutions
 
-The use of hardware load balancers is still supported for Exchange 2013. For information about the hardware load balancing solutions that have completed solution testing with Exchange 2010 and will likely work just as well with Exchange 2013, see [Exchange Server 2010 load balancer deployment](https://go.microsoft.com/fwlink/p/?linkid=261834). Keep in mind that this page shows the more complex Layer-7 configuration of hardware load balancers with Exchange 2010. Load balancing Exchange 2013 traffic can be much simpler, given the architectural changes discussed earlier in this topic. Rather than configuring session affinity for each of the Exchange protocols, inbound connections to Exchange 2013 Client Access Servers can be directed to an available server by the load balancer with no additional affinity processing necessary. The hardware load balancer still has an important role in providing high availability of the Exchange service because it can detect when a specific Client Access server has become unavailable and remove it from the set of servers that will handle inbound connections.
+The use of hardware load balancers is still supported for Exchange 2013. For information about the hardware load balancing solutions that have completed solution testing with Exchange 2010 and will likely work just as well with Exchange 2013, see [Exchange Server 2010 load balancer deployment](https://docs.microsoft.com/exchange/exchange-server-2010-load-balancer-deployment). Keep in mind that this page shows the more complex Layer-7 configuration of hardware load balancers with Exchange 2010. Load balancing Exchange 2013 traffic can be much simpler, given the architectural changes discussed earlier in this topic. Rather than configuring session affinity for each of the Exchange protocols, inbound connections to Exchange 2013 Client Access Servers can be directed to an available server by the load balancer with no additional affinity processing necessary. The hardware load balancer still has an important role in providing high availability of the Exchange service because it can detect when a specific Client Access server has become unavailable and remove it from the set of servers that will handle inbound connections.
 
 ## Windows Network Load Balancing
 

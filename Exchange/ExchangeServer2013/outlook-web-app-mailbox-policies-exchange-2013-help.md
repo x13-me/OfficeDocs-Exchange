@@ -1,12 +1,13 @@
 ---
 title: 'Outlook Web App mailbox policies: Exchange 2013 Help'
 TOCTitle: Outlook Web App mailbox policies
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 213b8b7a-1c29-49ee-8c98-d0364ddf4f9d
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,4 +46,4 @@ Only one Outlook Web App mailbox policy can be applied to a mailbox.
 
 If there's no Outlook Web App mailbox policy applied to a mailbox, the settings defined on the virtual directory will be applied.
 
-An Outlook Web App mailbox policy can be applied to a mailbox by using the Exchange admin center (EAC) to modify an existing mailbox, or by using the Shell and the [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox) cmdlet to apply a mailbox policy. For more information, see [Apply or remove an Outlook Web App mailbox policy on a mailbox](apply-or-remove-outlook-web-app-mailbox-policy-exchange-2013-help.md).
+An Outlook Web App mailbox policy can be applied to a mailbox by using the Exchange admin center (EAC) to modify an existing mailbox, or by using the Shell and the [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox) cmdlet to apply a mailbox policy. For more information, see [Apply or remove an Outlook Web App mailbox policy on a mailbox](apply-or-remove-outlook-web-app-mailbox-policy-exchange-2013-help.md).

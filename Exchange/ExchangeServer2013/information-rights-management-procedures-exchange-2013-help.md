@@ -4,11 +4,12 @@ TOCTitle: Information Rights Management procedures
 ms:assetid: e5b3c7d1-31d6-481f-82e7-a3766da9a510
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351212(v=EXCHG.150)
 ms:contentKeyID: 49319936
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

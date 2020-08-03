@@ -4,11 +4,12 @@ TOCTitle: My ReadWriteMailbox Apps role
 ms:assetid: febb73fb-3a0b-4c67-b53b-9566d7c32cd2
 ms:mtpsurl: https://technet.microsoft.com/library/Mt793556(v=EXCHG.150)
 ms:contentKeyID: 74418060
-ms.date: 02/08/2017
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -4,11 +4,12 @@ TOCTitle: Mailbox audit logging procedures
 ms:assetid: dfc40110-f9e8-4737-a3b0-a56176daeec1
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461939(v=EXCHG.150)
 ms:contentKeyID: 49300728
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: 'Interpret voice mail call records: Exchange 2013 Help'
 TOCTitle: Interpret voice mail call records
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

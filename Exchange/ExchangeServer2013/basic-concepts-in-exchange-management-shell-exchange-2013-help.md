@@ -4,11 +4,12 @@ TOCTitle: Basic concepts in Exchange Management Shell
 ms:assetid: 87289884-7526-4f12-bf36-b252f4eff97e
 ms:mtpsurl: https://technet.microsoft.com/library/Dn659284(v=EXCHG.150)
 ms:contentKeyID: 62222299
-ms.date: 03/23/2018
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -16,25 +17,25 @@ mtps_version: v=EXCHG.150
 
 ## Getting help
 
-[Getting help](https://technet.microsoft.com/library/aa997174\(v=exchg.150\))
+[Getting help](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Get-Help)
 
 ## Cmdlets and parameters
 
 [Cmdlets](cmdlets-exchange-2013-help.md)
 
-[Parameters](https://technet.microsoft.com/library/bb124388\(v=exchg.150\))
+[Parameters](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters)
 
-[Structured data](https://technet.microsoft.com/library/aa996386\(v=exchg.150\))
+[Structured data](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_objects)
 
-[Syntax](https://technet.microsoft.com/library/bb123552\(v=exchg.150\))
+[Syntax](https://docs.microsoft.com/powershell/exchange/exchange-cmdlet-syntax)
 
 ## Running commands
 
-[Aliases](https://technet.microsoft.com/library/bb123977\(v=exchg.150\))
+[Aliases](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_aliases)
 
-[about_Arrays](https://technet.microsoft.com/library/aa998267\(v=exchg.150\))
+[about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-[Comparison operators](https://technet.microsoft.com/library/bb125229\(v=exchg.150\))
+[Comparison operators](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_comparison_operators)
 
 [Identity](identity-exchange-2013-help.md)
 
@@ -50,10 +51,10 @@ mtps_version: v=EXCHG.150
 
 ## Running scripts
 
-[Scripting with the Exchange Management Shell](https://technet.microsoft.com/library/bb123798\(v=exchg.150\))
+[Scripting with the Exchange Management Shell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_scripts)
 
-[Script security](https://technet.microsoft.com/library/bb125017\(v=exchg.150\))
+[Script security](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_signing)
 
-[Shell variables](https://technet.microsoft.com/library/bb124036\(v=exchg.150\))
+[Shell variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_automatic_variables)
 
-[about_Variables](https://technet.microsoft.com/library/bb123690\(v=exchg.150\))
+[about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)

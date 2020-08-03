@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
-ms.date: 7/5/2018
 ms.reviewer:
 title: Create and manage room mailboxes
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -23,7 +24,7 @@ A room mailbox is a resource mailbox that's assigned to a physical location, suc
 
 To create a room mailbox, you need to be an administrator who's a member of either the Organization Management or Recipient Management role groups.
 
-If you want to grant someone access to a room mailbox so they can directly manage its calendar (for example, an assistant who needs to make room for an executive meeting), you can do so using the instructions in [Manage permissions for recipients](mailbox-permissions.md). After a user's been granted permissions to access a room mailbox, they can open the mailbox using the instructions in [Open and use a shared mailbox in Outlook 2016 and Outlook 2013](https://go.microsoft.com/fwlink/p/?LinkId=816868).
+If you want to grant someone access to a room mailbox so they can directly manage its calendar (for example, an assistant who needs to make room for an executive meeting), you can do so using the instructions in [Manage permissions for recipients](mailbox-permissions.md). After a user's been granted permissions to access a room mailbox, they can open the mailbox using the instructions in [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 **IMPORTANT** Room mailboxes should never be set as the organizer of a meeting, nor should room mailboxes be accessed directly by users in order to make changes to a meeting. Rooms should only be added to meetings in the Attendee or Location fields. Otherwise you will override the Resource Booking Assistant (RBA), which manages and processes all calendar items sent to the room mailbox, and unexpected errors may occur. If your organization has one or more users who need to manage a room and its mailbox, then assign users to the room as resource delegates for the room mailbox, as described later in this article. When a delegate is assigned, all items sent to the room's mailbox will be directed to the booking delegate, who can then accept or decline from their own Inbox. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
 
@@ -33,16 +34,16 @@ If you want to learn about the types of recipients that are available in Exchang
 
 - Estimated time to complete: 5 minutes.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
-- If you're using room or equipment mailboxes in Office 365, see [this article](https://support.office.com/article/9f518a6d-1e2c-4d44-93f3-e19013a1552b).
+- If you're using room or equipment mailboxes in Microsoft 365 or Office 365, see [Room and equipment mailboxes(https://docs.microsoft.com/microsoft-365/admin/manage/room-and-equipment-mailboxes) for more information.
 
 > [!IMPORTANT]
-> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud. > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud. > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a room mailbox
 
@@ -65,7 +66,7 @@ If you want to learn about the types of recipients that are available in Exchang
 
 After you've created a room mailbox, you can [Change how a room mailbox handles meeting requests](#change-how-a-room-mailbox-handles-meeting-requests) (including whether it responds automatically or someone needs to decide what to do). By default, it'll automatically accept or decline requests depending on whether the requests conflict with any existing meetings on its calendar. It'll also allow meetings that repeat, and allow meetings up to 180 days from the current date (and decline any requests beyond that) that are up to 24 hours in duration. If you want to change other options, head down to [Change other room mailbox properties](#change-other-room-mailbox-properties).
 
-For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 ## Change how a room mailbox handles meeting requests
 
@@ -87,7 +88,7 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Allow repeating meetings**: This setting allows or prevents repeating meetings for the room.
 
-- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room, which are, by default, 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox either by logging into the mailbox using Outlook on the web and going to the **Options** \> **Calendar** \> **Calendar appearance** page, or by using [Set-MailboxCalendarConfiguration](https://docs.microsoft.com/powershell/module/exchange/client-access/set-mailboxcalendarconfiguration).
+- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room, which are, by default, 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox either by logging into the mailbox using Outlook on the web and going to the **Options** \> **Calendar** \> **Calendar appearance** page, or by using [Set-MailboxCalendarConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxcalendarconfiguration).
 
 - **Always decline if the end date is beyond this limit**: This setting controls the behavior of repeating meetings that extend beyond the date specified by the maximum booking lead time setting.
 
@@ -97,11 +98,83 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Maximum booking lead time (days)**: This setting specifies the maximum number of days in advance that the room can be booked. Valid input is an integer between 0 and 1080. The default value is 180 days.
 
-- **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
+- **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. A valid value is an integer from 0 through 35791394. The default value is 24 hours. When the value is set to 0, the maximum duration of a meeting is unlimited.
 
     For repeating booking requests, the maximum booking duration applies to the length of each instance of the repeating booking request.
 
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
+
+## Change resource scheduling settings
+
+An Admin or user with full access to the resource mailbox can make changes to the resource scheduling settings.
+
+1. Log in to [Outlook Web App](https://outlook.office365.com) and click on **Your name** in the top right corner.
+
+2. Click **Open another mailbox**. Locate the meeting room resource you want and click **Open**.
+
+3. Go to **settings** and click **Calendar**.
+
+4. Navigate to **Resource scheduling**.
+
+5. Configure the Scheduling Options and Scheduling Permissions as needed. (See the descriptions of all options in the following two sections for details.)
+
+6. Click **Save** after you have finished making your changes.
+
+## Scheduling Options
+
+- **Automatically process meeting requests and cancellations**
+
+Enables or disables all options below as well as the options under Scheduling Permissions. If not checked, the owner must manage every request manually. By default, this is not checked.
+
+- **Disable reminders**
+
+Enables or disables reminders for events in this calendar. This setting applies only to the resource; the organizer and attendees will still receive reminders if they have elected to do so.
+
+- **Maximum number of days in advance resources can be booked**
+
+Limits how far in advance an event can be scheduled. The default is 180 days.
+
+- **Always decline if the end date is beyond this limit**
+
+Requests beyond the maximum number of days specified will be automatically declined. Valid values are between 0 (today) and 1080 (about three years in the future).
+
+- **Limit meeting duration and Maximum allowed minutes**
+
+Limits the amount of time for which a room can be scheduled within a single day. Unchecking the box will mean a meeting has no limit. Checking the box allows for a limit between 0 to 1440 minutes.
+
+- **Allow scheduling only during working hours**
+
+If checked, an event can only be scheduled during the hours specified under Calendar Work Week in the Calendar tab. Events outside of working hours will be automatically declined.
+
+- **Allow repeating meetings**
+
+Allows booking of the resource room at a regular interval. The event can be set to repeat over a specified duration of time (also called recurring).
+
+- **Allow conflicts**
+
+Allow or prevent conflicting meeting requests (double booking). If repeating meetings are allowed as well, this setting will only apply to repeating meetings. When the resource is invited, it will need to be entered into the Attendees field as opposed to being chosen with the Add Rooms button.
+
+- **Allow up to this number of individual conflicts**
+
+This setting specifies the maximum number of conflicts that are allowed for new repeating meeting requests. When set to 0, a recurring event will fail to schedule if one or more conflicting appointments already appear. When set to a number greater than 0, a recurring event is allowed the specified number of conflicts before being denied.
+
+- **Allow up to this percentage of individual conflicts**
+
+This setting specifies the maximum percentage of meeting conflicts that are allowed for new repeating meeting requests. This is similar to specifying a number of individual conflicts (explained above), but in this case, a recurring event is allowed the specified percentage of conflicts before being denied.
+
+## Scheduling Permissions
+
+- **These users can schedule automatically if the resource is available**
+
+By default, everyone can schedule this resource without the manual approval of the resource owner. If **Select users and groups** is selected, only the users and groups specified can schedule automatically. All other users or groups will receive a decline message. If **Select users and groups** is selected but no users or groups are specified, this option will be ignored.
+
+- **These users can submit a request for owner approval if the resource is available**
+
+If everyone is selected, then all requests must receive manual approval by the resource owner. If **Select users and groups** is selected, only the specified users and groups require manual approval by the resource owner. **Select users and groups** is selected and left blank by default so that all requests are approved automatically.
+
+- **These users can schedule automatically if the resource is available and can submit a request for owner approval if the resource is unavailable**
+
+When everyone is selected (the default setting), any request during an open time frame will be automatically approved. If the room is booked at the requested time, a form is submitted to the resource owner for manual approval. If **Select users and groups** is selected, only those specified will have the option to have the request manually approved; all others will have a conflicting request denied without the option of manual approval by the resource owner.
 
 ## Change other room mailbox properties
 
@@ -199,35 +272,35 @@ Use the following sets of cmdlets to view and change room mailbox properties: **
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)
+- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)
+- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-calendarprocessing)
+- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
+- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using the Exchange Management Shell to change room mailbox properties.
 
 This example changes the display name, the primary SMTP address (called the default reply address), and the room capacity. Also, the previous reply address is kept as a proxy address.
 
-```
+```PowerShell
 Set-Mailbox "Conf Room 123" -DisplayName "Conf Room 31/123 (12)" -EmailAddresses SMTP:Rm33.123@contoso.com,smtp:rm123@contoso.com -ResourceCapacity 12
 ```
 
 This example configures room mailboxes to allow booking requests to be scheduled only during working hours and sets a maximum duration of 9 hours.
 
-```
+```PowerShell
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Set-CalendarProcessing -ScheduleOnlyDuringWorkHours $true -MaximumDurationInMinutes 540
 ```
 
 This example uses the **Get-User** cmdlet to find all room mailboxes that correspond to private conference rooms, and then uses the **Set-CalendarProcessing** cmdlet to send booking requests to a delegate named Robin Wood to accept or decline.
 
-```
+```PowerShell
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'RoomMailbox') -and (DisplayName -like 'Private*')" | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Robin Wood"
 ```
 
@@ -242,7 +315,7 @@ If you're planning to have more to have hundreds of rooms, use multiple room lis
 
 This example creates a room list for building 32.
 
-```
+```PowerShell
 New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "contoso.com/rooms" -RoomList
 ```
 
@@ -250,7 +323,7 @@ New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "
 
 This example adds confroom3223 to the building 32 room list.
 
-```
+```PowerShell
 Add-DistributionGroupMember -Identity "Building 32 Conference Rooms" -Member confroom3223@contoso.com
 ```
 
@@ -260,7 +333,7 @@ You may already have created distribution groups in the past that contain your c
 
 This example converts the distribution group, building 34 conference rooms, to a room list.
 
-```
+```PowerShell
 Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 ```
 
@@ -272,6 +345,6 @@ To verify that you've successfully changed properties for a room mailbox, do the
 
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 
-  ```
+  ```PowerShell
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'RoomMailbox'" | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```

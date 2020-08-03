@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-ms.date:
 ms.reviewer:
 title: Procedures for DSNs and NDRs in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -29,32 +30,32 @@ You can use the default NDRs that are included in Exchange, or you can use the E
 
 - The procedures in this topic are available on Mailbox servers and Edge Transport servers.
 
-- You can't use the Exchange admin center (EAC) for most of the procedures in this topic. You need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can't use the Exchange admin center (EAC) for most of the procedures in this topic. You need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "DSNs" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Management Shell to view all default NDRs
 
 To output the list of all default NDRs in all languages to an HTML file named C:\My Documents\Default NDRs.html, run this command:
 
-```
+```PowerShell
 Get-SystemMessage -Original | Select-Object -Property Identity,DsnCode,Language,Text | ConvertTo-Html | Set-Content -Path "C:\My Documents\Default NDRs.html"
 ```
 
  **Note**: You should output the list to a file, because the list is very long, and you'll receive errors if you don't have the required language packs installed.
 
-For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-systemmessage).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/get-systemmessage).
 
 ## Use the Exchange Management Shell to view custom NDRs
 
 To view a summary list of all custom NDRs in your organization, run this command:
 
-```
+```PowerShell
 Get-SystemMessage
 ```
 
@@ -62,7 +63,7 @@ Get-SystemMessage
 
 To view detailed information for a custom NDR, use this syntax:
 
-```
+```PowerShell
 Get-SystemMessage -Identity <NDRIdentity>
 ```
 
@@ -70,17 +71,17 @@ For an explanation of the available _\<NDRIdentity\>_ values, see the [Identity 
 
 This example returns detailed information for the custom NDR for the enhanced status code 5.1.2 that's sent to internal senders in English. If there's no custom NDR for this combination of language, audience, and enhanced status code, you'll receive an error.
 
-```
+```PowerShell
 Get-SystemMessage En\Internal\5.1.2 | Format-List
 ```
 
 This example returns detailed information for the custom English NDR for the **ProhibitSendReceive** quota on mailboxes. If there's no custom NDR for this combination of language and quota, you'll receive an error.
 
-```
+```PowerShell
 Get-SystemMessage En\ProhibitSendReceiveMailBox | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-systemmessage).
+For detailed syntax and parameter information, see [Get-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/get-systemmessage).
 
 ## Create custom NDRs
 
@@ -88,7 +89,7 @@ For detailed syntax and parameter information, see [Get-SystemMessage](https://d
 
 To create a custom NDR for an enhanced status code, use this syntax:
 
-```
+```PowerShell
 New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<NDR text>"
 ```
 
@@ -104,23 +105,23 @@ The values are:
 
 This example creates a custom plain text NDR for the enhanced status code 5.1.2 that's sent to external senders in English.
 
-```
+```PowerShell
 New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
 ```
 
  This example creates a custom HTML NDR for the enhanced status code 5.1.2 that's sent to internal senders in English.
 
-```
+```PowerShell
 New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="https://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-systemmessage).
+For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/new-systemmessage).
 
 ### Use the Exchange Management Shell to create custom NDRs for quotas
 
 To create a custom NDR for quotas, use this syntax:
 
-```
+```PowerShell
 New-SystemMessage -Language <Locale> -QuotaMessageType <Quota> -Text "<NDR text>"
 ```
 
@@ -134,11 +135,11 @@ The values are:
 
 This example creates a custom English plain text NDR for the **ProhibitSendReceive** quota on mailboxes.
 
-```
+```PowerShell
 New-SystemMessage -Language En -QuotaMessageType ProhibitSendReceiveMailBox -Text "Your mailbox is full, and can't send or receive messages. Delete any unwanted large messages (messages with attachments) and empty your Deleted Items folder"
 ```
 
-For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-systemmessage).
+For detailed syntax and parameter information, see [New-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/new-systemmessage).
 
 ### How do you know this worked?
 
@@ -146,7 +147,7 @@ To verify that you have successfully created a custom NDR, do these steps:
 
 - Run the following command and verify the property values:
 
-  ```
+  ```PowerShell
   Get-SystemMessage | Format-List Identity,DsnCode,Language,Text
   ```
 
@@ -156,7 +157,7 @@ To verify that you have successfully created a custom NDR, do these steps:
 
 To modify custom NDRs, use this syntax:
 
-```
+```PowerShell
 Set-SystemMessage -Identity <NDRIdentity> [-Text "<NDR text>"] [-Original]
 ```
 
@@ -164,31 +165,31 @@ For an explanation of the available _\<NDRIdentity\>_ values, see the [Identity 
 
 This example changes the text in the custom NDR for the enhanced status code 5.1.2 that's sent to internal senders in English.
 
-```
+```PowerShell
 Set-SystemMessage -Identity En\Internal\5.1.2 -Text "The mailbox you tried to send an email message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
 ```
 
 This example changes the text in the custom English NDR for the **ProhibitSendReceive** quota on mailboxes.
 
-```
+```PowerShell
 Set-SystemMessage -Identity En\ProhibitSendReceiveMailBox -Text "Your mailbox is full. Delete large messages and empty your Deleted Items folder."
 ```
 
 This example disables the specified custom NDR. The custom NDR is preserved, and appears in the results of **Get-SystemMessage**, but the default NDR is used instead.
 
-```
+```PowerShell
 Set-SystemMessage -Identity En\Internal\5.1.2 -Original
 ```
 
  **Note**: If there's no corresponding default NDR, you receive an error when you use the _Original_ switch.
 
-For detailed syntax and parameter information, see [Set-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-systemmessage).
+For detailed syntax and parameter information, see [Set-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/set-systemmessage).
 
 ### How do you know this worked?
 
 To verify that you have successfully modified a custom NDR, replace _\<NDRIdentity\>_ with the appropriate value, and run this command to verify the property values:
 
-```
+```PowerShell
 Get-SystemMessage -Identity <NDRIdentity> | Format-List
 ```
 
@@ -196,7 +197,7 @@ Get-SystemMessage -Identity <NDRIdentity> | Format-List
 
 To remove a custom NDR, use this syntax:
 
-```
+```PowerShell
 Remove-SystemMessage -Identity <NDRIdentity>
 ```
 
@@ -204,23 +205,23 @@ For an explanation of the available _\<NDRIdentity\>_ values, see the [Identity 
 
 This example removes the custom NDR for the enhanced status code 5.1.2 that's sent to internal senders in English.
 
-```
+```PowerShell
 Remove-SystemMessage -Identity En\Internal\5.1.2
 ```
 
 This example removes the custom English NDR for the **ProhibitSendReceive** quota on mailboxes.
 
-```
+```PowerShell
 Remove-SystemMessage -Identity En\ProhibitSendReceiveMailBox
 ```
 
-For detailed syntax and parameter information, see [Remove-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-systemmessage).
+For detailed syntax and parameter information, see [Remove-SystemMessage](https://docs.microsoft.com/powershell/module/exchange/remove-systemmessage).
 
 ### How do you know this worked?
 
 To verify that you have successfully removed a custom NDR, run this command to verify the custom NDR isn't listed:
 
-```
+```PowerShell
 Get-SystemMessage
 ```
 
@@ -238,13 +239,13 @@ You can configure your Exchange organization to send copies of NDRs to the Excha
 
 To assign a mailbox to the Exchange recipient, use this syntax:
 
-```
+```PowerShell
 Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
 ```
 
 This example assigns the existing mailbox named "Contoso System Mailbox" to the Exchange recipient.
 
-```
+```PowerShell
 Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
 ```
 
@@ -290,25 +291,25 @@ For more information about the EAC, see [Exchange admin center in Exchange Serve
 
 To add enhanced status codes to monitor, which replaces any existing values, use this syntax:
 
-```
+```PowerShell
 Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
 ```
 
 This example configures the Exchange organization to forward all NDRs for the enhanced status code values 5.7.1, 5.7.2, and 5.7.3 to the Exchange recipient.
 
-```
+```PowerShell
 Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
 ```
 
 To add or remove entries without modifying any existing values, use this syntax:
 
-```
+```PowerShell
 Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
 ```
 
 This example adds the enhanced status code 5.7.5 and removes 5.7.1 from the existing list of NDRs that are forwarded to the Exchange recipient.
 
-```
+```PowerShell
 Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
 ```
 
@@ -318,7 +319,7 @@ To verify that you've successfully configured copies of NDRs to be sent to the E
 
 - Run the following command and verify the property values:
 
-  ```
+  ```PowerShell
   Get-TransportConfig | Format-List GenerateCopyOfDSNFor
   ```
 

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Important considerations to read before you deploy public folders in your organization.'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Considerations when deploying public folders
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

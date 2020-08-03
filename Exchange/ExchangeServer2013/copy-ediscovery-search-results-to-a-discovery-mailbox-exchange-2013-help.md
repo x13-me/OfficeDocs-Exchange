@@ -4,11 +4,12 @@ TOCTitle: Copy eDiscovery search results to a discovery mailbox
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms:mtpsurl: https://technet.microsoft.com/library/Dn624163(v=EXCHG.150)
 ms:contentKeyID: 61200239
-ms.date: 12/10/2017
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to copy search results
 
@@ -67,7 +68,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-- [New-MailboxSearch](https://technet.microsoft.com/library/dd298064\(v=exchg.150\))
+- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/New-MailboxSearch)
 
 For example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the specified discovery mailbox.
 

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to mail-enable or mail-disable a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
-ms.date: 4/19/2018
 ms.reviewer:
 title: Mail-enable or mail-disable a public folder
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -34,7 +35,7 @@ For additional management tasks related to managing public folders, see [Public 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to mail-enable or mail-disable a public folder
 
@@ -52,29 +53,29 @@ If you want external users to send mail to this public folder, make sure you fol
 
 This example mail-enables the public folder Help Desk.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Help Desk"
 ```
 
 This example mail-enables the public folder Reports under the Marketing public folder, but hides the folder from address lists.
 
-```
+```PowerShell
 Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEnabled $True
 ```
 
 If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder).
 
-For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/enable-mailpublicfolder).
+For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/enable-mailpublicfolder).
 
 ## Use the Exchange Management Shell to mail-disable a public folder
 
 This example mail-disables the public folder Marketing\Reports.
 
-```
+```PowerShell
 Disable-MailPublicFolder -Identity "\Marketing\Reports"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder).
+For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder).
 
 ## Allow anonymous users to send email to a mail-enabled public folder
 <a name="CreateItems"> </a>
@@ -97,9 +98,9 @@ You can use either Outlook or the Exchange Management Shell to set permissions o
 
 This example sets the `CreateItems` permission for the Anonymous account on the "Customer Feedback" mail-enabled public folder.
 
-```
+```PowerShell
 Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems -User Anonymous
 
 ```
 
-For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/add-publicfolderclientpermission).
+For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission).

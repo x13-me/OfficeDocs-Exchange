@@ -2,10 +2,9 @@
 localization_priority: Normal
 description:
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid:
-ms.date:
 ms.reviewer:
 title: Enable or disable SMTP AUTH
 ms.collection:
@@ -13,13 +12,15 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
 
 # Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online
 
-Client SMTP email submissions (also known as _authenticated SMTP submissions_) are used in the following scenarios in Office 365:
+Client SMTP email submissions (also known as _authenticated SMTP submissions_) are used in the following scenarios in Office 365 and Microsoft 365:
 
 - POP3 and IMAP4 clients. These protocols only allow clients to _receive_ email messages, so they need to use authenticated SMTP to _send_ email messages.
 
@@ -27,7 +28,7 @@ Client SMTP email submissions (also known as _authenticated SMTP submissions_) a
 
 The SMTP AUTH protocol is used for client SMTP email submission (typically on TCP port 587). SMTP AUTH doesn't support modern authentication (Modern Auth), and only uses basic authentication, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
 
-Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't use SMTP AUTH to send email messages.
+Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 or Microsoft 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't use SMTP AUTH to send email messages.
 
 Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Online organization, and enable it only for the accounts (that is, mailboxes) that still require it. There are two settings that can help you do this:
 
@@ -35,18 +36,20 @@ Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Onlin
 
 - A per-mailbox setting that overrides the tenant-wide setting.
 
-Note these settings only apply to mailboxes that are hosted in Exchange Online (Office 365).
+Note these settings only apply to mailboxes that are hosted in Exchange Online (Office 365 or Microsoft 365).
 
 > [!NOTE]
-> If you've enabled _security defaults_ in your organization, SMTP AUTH is already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+> - If you've enabled _security defaults_ in your organization, SMTP AUTH is already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+>
+> - If your authentication policy disables basic authentication for SMTP, clients cannot use the SMTP AUTH protocol even if you enable the settings outlined in this article. For more information, see [Disable Basic authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online).
 
 ## Disable SMTP AUTH in your organization
 
-You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+You can only disable (or enable) SMTP AUTH globally for your organization by using [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 To disable SMTP AUTH globally in your organization, run the following command:
 
-```
+```PowerShell
 Set-TransportConfig -SmtpClientAuthenticationDisabled $true
 ```
 
@@ -56,13 +59,13 @@ Set-TransportConfig -SmtpClientAuthenticationDisabled $true
 
 To verify that you've globally disabled SMTP AUTH in your organization, run the following command and verify the value of the **SmtpClientAuthenticationDisabled** property is `True`:
 
-```
+```PowerShell
 Get-TransportConfig | Format-List SmtpClientAuthenticationDisabled
 ```
 
 ## Enable SMTP AUTH for specific mailboxes
 
-The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Microsoft 365 admin center or [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Use the Microsoft 365 admin center to enable or disable SMTP AUTH on specific mailboxes
 
@@ -80,7 +83,7 @@ The per-mailbox setting to enable (or disable) SMTP AUTH is available in the Mic
 
 Use the following syntax:
 
-```
+```PowerShell
 Set-CASMailbox -Identity <MailboxIdentity> -SmtpClientAuthenticationDisabled <$true | $false | $null>
 ```
 
@@ -88,13 +91,13 @@ The value `$null` indicates the setting for the mailbox is controlled by the glo
 
 This example enables SMTP AUTH for mailbox sean@contoso.com.
 
-```
+```PowerShell
 Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $false
 ```
 
 This example disables SMTP AUTH for mailbox chris@contoso.com.
 
-```
+```PowerShell
 Set-CASMailbox -Identity chris@contoso.com -SmtpClientAuthenticationDisabled $true
 ```
 
@@ -106,14 +109,14 @@ Use a text file to identify the mailboxes. Values that don't contain spaces (for
 
 The syntax uses the following two commands (one to identify the mailboxes, and the other to enable SMTP AUTH for those mailboxes):
 
-```
+```PowerShell
 $<VariableName> = Get-Content "<text file>"
 $<VariableName> | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled <$true | $false | $null>}
 ```
 
 This example enables SMTP AUTH for the mailboxes specified in the file C:\My Documents\Allow SMTP AUTH.txt.
 
-```
+```PowerShell
 $Allow = Get-Content "C:\My Documents\Allow SMTP AUTH.txt"
 $Allow | foreach {Set-CASMailbox -Identity $_ -SmtpClientAuthenticationDisabled $false}
 ```
@@ -128,27 +131,27 @@ To verify that you've enabled or disabled SMTP AUTH for a specific mailbox, do a
 
 - **Individual mailboxes in Exchange Online PowerShell**: Replace `<MailboxIdentity>`, with the name, alias, email address or account name of the mailbox, run the following command, and verify the value of the **SmtpClientAuthenticationDisabled** property (`False` = enabled, `True` = disabled, blank = use organization setting).
 
-  ```
+  ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>  | Format-List SmtpClientAuthenticationDisabled
   ```
 
 - **All mailboxes where SMTP AUTH is disabled**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $true}
   ```
 
 - **All mailboxes where SMTP AUTH is enabled**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $false}
   ```
 
 - **All mailboxes where SMTP AUTH is controlled by the organization setting**: Run the following command:
 
-  ```
+  ```PowerShell
   $Users = Get-CASMailbox -ResultSize unlimited
   $Users | where {$_.SmtpClientAuthenticationDisabled -eq $null}
   ```

@@ -4,11 +4,12 @@ TOCTitle: MyDistributionGroupMembership role
 ms:assetid: 6b288a4b-f717-4885-9c03-212de465161e
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876900(v=EXCHG.150)
 ms:contentKeyID: 49289293
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

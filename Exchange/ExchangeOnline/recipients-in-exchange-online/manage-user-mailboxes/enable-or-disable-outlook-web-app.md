@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Outlook on the web for a mailbox
 ms.collection: 
 - exchange-online
@@ -34,12 +35,12 @@ For additional management tasks related to managing email client access to a mai
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Clients and Mobile Devices Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to enable or disable Outlook on the web
 
@@ -66,17 +67,17 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables Outlook on the web for the mailbox of Yan Li.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Yan Li" -OWAEnabled $false
 ```
 
 This example enables Outlook on the web for the mailbox of Elly Nkya.
 
-```
+```PowerShell
 Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 
@@ -92,7 +93,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox <identity>
   ```
 

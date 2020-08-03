@@ -4,11 +4,12 @@ TOCTitle: Receive Connectors role
 ms:assetid: a7c5a086-5066-4ece-9b22-cc1048d2f2bc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876927(v=EXCHG.150)
 ms:contentKeyID: 49289368
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

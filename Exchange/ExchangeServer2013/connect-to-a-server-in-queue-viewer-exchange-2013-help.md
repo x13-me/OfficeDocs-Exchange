@@ -4,11 +4,12 @@ TOCTitle: Connect to a server in Queue Viewer
 ms:assetid: 6c1ad574-9ab5-4dcc-9398-ec10eca4fd11
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998669(v=EXCHG.150)
 ms:contentKeyID: 49286846
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Exchange Toolbox to specify the server you want to manage in Queue Viewer
 

@@ -1,11 +1,10 @@
 ---
 localization_priority: Normal
-description: Office 365 and Exchange Online provides several features that can help your end users easily collaborate in email.
+description: Microsoft 365 or Office 365 and Exchange Online provide several features that can help your end users easily collaborate in email.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7d433daa-c68f-4441-b2f5-1280991185c2
-ms.date: 
 ms.reviewer: 
 title: Collaboration in Exchange Online
 ms.collection: 
@@ -13,13 +12,15 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
 
 # Collaboration in Exchange Online
 
-Office 365 and Exchange Online provides several features that can help your end users easily collaborate in email.
+Microsoft 365 or Office 365 and Exchange Online provide several features that can help your end users easily collaborate in email.
 
 Each of these features, described in the following sections, has a different user experience and feature set and should be used based on what your users need to accomplish and what your organization can provide.
 
@@ -32,14 +33,14 @@ Public folders are designed for shared access and provide an easy and effective 
 
 Public folders organize content in a deep hierarchy that's easy to browse. Users discover interesting and relevant content by browsing through branches of the hierarchy that are relevant to them. Users always see the full hierarchy in their Outlook folder view. Public folders are a great technology for distribution group archiving. A public folder can be mail-enabled and added as a member of the distribution group. Email sent to the distribution group is automatically added to the public folder for later reference. Public folders also provide simple document sharing and don't require SharePoint to be installed in your organization. Finally, end users can use public folders with the following supported Outlook clients: Outlook 2010 or later and Outlook on the web (formerly known as Outlook Web App), but with some limitations.
 
-To learn more, see [Public folders in Office 365 and Exchange Online](public-folders/public-folders.md).
+To learn more, see [Public folders in Microsoft 365 or Office 365 and Exchange Online](public-folders/public-folders.md).
 
 ## Shared mailboxes
 <a name="Shared"> </a>
 
 A shared mailbox is a mailbox that multiple designated users can access to read and send email messages and to share a common calendar. Shared mailboxes can provide a generic email address (such as info@contoso.com or sales@contoso.com) that customers can use to inquire about your company. If the shared mailbox has the Send As permission assigned when a delegated user responds to the email message, it can appear as though the mailbox (for example, sales@contoso.com) is responding, not the actual user.
 
-To learn more, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+To learn more, see [Shared mailboxes in Exchange Online](shared-mailboxes.md).
 
 ## Groups
 <a name="Groups"> </a>

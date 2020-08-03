@@ -1,15 +1,17 @@
 ---
 localization_priority: Normal
 monikerRange: exchserver-2016
-ms.author: v-mapenn
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
-author: mattpennathe3rd
+author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:
 ms.collection: exchange-server
 description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
 
@@ -60,7 +62,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2016, you need to be a member of the Organization Management role group. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
 
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
 - Before you migrate, you should consider the [Limits for public folders](limits.md).
 
@@ -80,7 +82,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkId=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -94,19 +96,19 @@ Perform the following prerequisite steps before you begin the migration.
 
    - Run the following command to take a snapshot of the original source folder structure:
 
-     ```
+     ```PowerShell
      Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
      ```
 
    - Run the following command to take a snapshot of public folder statistics such as item count, size, and owner:
 
-     ```
+     ```PowerShell
      Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
      ```
 
    - Run the following command to take a snapshot of the permissions:
 
-     ```
+     ```PowerShell
      Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
      ```
 
@@ -114,19 +116,19 @@ Perform the following prerequisite steps before you begin the migration.
 
    To locate public folders in Exchange 2010 that have a backslash in the name, run the following command:
 
-   ```
+   ```PowerShell
    Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
    ```
 
    If any public folders are returned, you can rename them by running the following command:
 
-   ```
+   ```PowerShell
    Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
    ```
 
 3. Make sure there isn't a record of a previously successful migration by running the following command:
 
-   ```
+   ```PowerShell
    Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
    ```
 
@@ -134,7 +136,7 @@ Perform the following prerequisite steps before you begin the migration.
 
    If the property values are `True`, run the following command to change them to `False`:
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFoldersLockedforMigration $false -PublicFolderMigrationComplete $false
    ```
 
@@ -143,19 +145,19 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
+- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
+- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
+- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
+- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183213)
+- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2016 server
 
@@ -166,25 +168,25 @@ For detailed syntax and parameter information, see the following topics:
 
    - Run the following command to discover any existing batch migration requests:
 
-     ```
+     ```PowerShell
      $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
      ```
 
    - Run the following command to remove any existing public folder batch migration requests.
 
-     ```
+     ```PowerShell
      $batch | Remove-MigrationBatch -Confirm:$false
      ```
 
 2. Make sure no public folders or public folder mailboxes exist on the Exchange 2016 servers by running the following command:
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder
    ```
 
    If the command didn't return any public folder mailboxes, continue to [Step 3: Generate the .csv files](#step-3-generate-the-csv-files). If the command returned any public folders, run the following command to see if any public folders exist:
 
-   ```
+   ```PowerShell
    Get-PublicFolder
    ```
 
@@ -193,35 +195,35 @@ For detailed syntax and parameter information, see the following topics:
    > [!NOTE]
    > All information contained in the public folders will be permanently deleted when you remove them.
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
    ```
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
    ```
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolder)
+- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
 
-- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder)
+- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder)
 
-- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder)
+- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder)
 
-- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder)
+- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder)
 
-- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox)
+- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox)
 
 ## Step 3: Generate the .csv files
 
 1. On the Exchange 2010 server, run the `Export-PublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. This script needs to be run by a local administrator. The file will contain two columns: **FolderName** and **FolderSize**. The values for the **FolderSize** column will be displayed in bytes. For example, **\\PublicFolder01,10000**.
 
-   ```
+   ```PowerShell
    .\Export-PublicFolderStatistics.ps1 <Folder to size map path> <FQDN of source server>
    ```
 
@@ -234,7 +236,7 @@ For detailed syntax and parameter information, see the following topics:
    > [!NOTE]
    > If the name of a public folder contains a backslash **\**, the public folders will be created in the parent public folder. We recommend that you review the .csv file and edit any names that contain a backslash.
 
-   ```
+   ```PowerShell
    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
    ```
 
@@ -248,7 +250,7 @@ For detailed syntax and parameter information, see the following topics:
 
 Run the following command to create the target public folder mailboxes. The script will create a target mailbox for each mailbox in the .csv file that you generated previously in Step 3 by running the `PublicFoldertoMailboxMapGenerator.ps1` script.
 
-```
+```PowerShell
 .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
 ```
 
@@ -260,7 +262,7 @@ After you crate the batch migration request in the Exchange Management Shell, yo
 
 1. On the Exchange 2016 server, run the following command:
 
-   ```
+   ```PowerShell
    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
    ```
 
@@ -270,7 +272,7 @@ After you crate the batch migration request in the Exchange Management Shell, yo
 
    - In the Exchange Management Shell, run the following command:
 
-     ```
+     ```PowerShell
      Start-MigrationBatch PFMigration
      ```
 
@@ -296,13 +298,13 @@ Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the Exchange 2010 server for final migration (downtime required)
 
@@ -312,12 +314,11 @@ Before you run the `PublicFoldersLockedForMigration` command as described below,
 
 On the Exchange 2010 server, run the following command to lock the public folders for finalization.
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` property value and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
@@ -325,13 +326,13 @@ If your organization has multiple public folder databases, you'll need to wait u
 
 First, run the following cmdlet to change the Exchange 2016 deployment type to **Remote**:
 
-```
+```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote
 ```
 
 Once that is done, you can complete the public folder migration by running the following command:
 
-```
+```PowerShell
 Complete-MigrationBatch PFMigration
 
 ```
@@ -349,7 +350,7 @@ After you finalize the public folder migration, you should run the following tes
 
 1. In PowerShell, run the following command to assign some test mailboxes to use any newly migrated public folder mailbox as the default public folder mailbox.
 
-   ```
+   ```PowerShell
    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
    ```
 
@@ -365,7 +366,7 @@ After you finalize the public folder migration, you should run the following tes
 
 3. If you run into any issues, see [Roll back the migration](#roll-back-the-migration) later in this topic. If the public folder content and hierarchy is acceptable and functions as expected, run the following command to unlock the public folders for all other users.
 
-   ```
+   ```PowerShell
    Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
    ```
 
@@ -374,13 +375,13 @@ After you finalize the public folder migration, you should run the following tes
 
 4. On the Exchange 2010 server, run the following command to indicate that the public folder migration is complete:
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFolderMigrationComplete:$true
    ```
 
 5. After you've verified that the migration is complete, on the Exchange 2016 server, run the following command:
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFoldersEnabled Local
    ```
 
@@ -394,19 +395,19 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 1. Run the following command to take a snapshot of the new folder structure.
 
-   ```
+   ```PowerShell
    Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
    ```
 
 2. Run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
 
-   ```
+   ```PowerShell
    Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
    ```
 
 3. Run the following command to take a snapshot of the permissions.
 
-   ```
+   ```PowerShell
    Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
    ```
 
@@ -414,7 +415,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 After the migration is complete, and you have verified that your Exchange 2016 public folders are working as expected, you should remove the public folder databases on the Exchange 2010 servers.
 
-For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/p/?linkId=81409).
+For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration
 
@@ -425,22 +426,22 @@ If you run into issues with the migration and need to reactivate your Exchange 2
 
 1. On the Exchange 2010 server, run the following command to unlock the migrated public folders. This process may take several hours.
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFoldersLockedForMigration $false
    ```
 
 2. On the Exchange 2016 server, run the following commands to remove the public folder mailboxes.
 
-   ```
-   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   ```PowerShell
+   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
-   ```
-   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   ```PowerShell
+   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
 3. On the Exchange 2010 server, run the following command to set the `PublicFolderMigrationComplete` property value to `False`.
 
-   ```
+   ```PowerShell
    Set-OrganizationConfig -PublicFolderMigrationComplete $false
    ```

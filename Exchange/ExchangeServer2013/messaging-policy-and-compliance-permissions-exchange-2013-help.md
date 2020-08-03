@@ -4,11 +4,12 @@ TOCTitle: Messaging policy and compliance permissions
 ms:assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638205(v=EXCHG.150)
 ms:contentKeyID: 48385692
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -54,19 +55,10 @@ Users who are assigned the View-Only Management role group can view the configur
 <tbody>
 <tr class="odd">
 <td><p>Data loss prevention (DLP)</p></td>
-<td><p>If using Office 365:</p>
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 global admin</a>, which automatically includes Exchange <a href="organization-management-exchange-2013-help.md">Organization Management</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 service admin</a>, plus the <a href="organization-management-exchange-2013-help.md">Organization Management</a> admin role group in Exchange</p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=335814">Office 365 password admin</a></p></li>
-</ul>
-<p>If using Exchange Server 2013 or Exchange Online only:</p>
-<ul>
-<li><p><a href="compliance-management-exchange-2013-help.md">Compliance Management</a></p></li>
-</ul></td>
+<td><p><a href="compliance-management-exchange-2013-help.md">Compliance Management</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Delete mailbox content (using the <a href="https://technet.microsoft.com/library/dd298173(v=exchg.150)">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
+<td><p>Delete mailbox content (using the <a href="https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox">Search-Mailbox</a> cmdlet with the <em>DeleteContent</em> switch)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Discovery Management</a> <strong>and</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">Mailbox Import Export role</a></p>
 

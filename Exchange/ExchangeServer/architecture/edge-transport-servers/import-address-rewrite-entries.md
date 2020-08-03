@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create or import email address rewriting in bulk in Exchange Server.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
-ms.date: 7/3/2018
 ms.reviewer:
 title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -52,7 +53,7 @@ Each row under the header row represents an individual address rewrite entry. Th
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create the CSV file
 
@@ -64,7 +65,7 @@ When you create the CSV file, consider the following items:
 
 The following example shows how a CSV file can be populated with the optional _ExceptionList_ and _OutboundOnly_ parameters included:
 
-```
+```CSV
 Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
 "Wingtip UK",*.wingtiptoys.co.uk,tailspintoys.com,"legal.wingtiptoys.co.uk,finance.wingtiptoys.co.uk,support.wingtiptoys.co.uk",True
 "Wingtip USA",*.wingtiptoys.com,tailspintoys.com,"legal.wingtiptoys.com,finance.wingtiptoys.com,support.wingtiptoys.com,corp.wingtiptoys.com",True
@@ -75,13 +76,13 @@ Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
 
 To import the CSV file, use the following syntax:
 
-```
+```PowerShell
 Import-Csv <FileNameAndPath> | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
 ```
 
 This example imports the address rewrite entries from C:\My Documents\ImportAddressRewriteEntries.csv.
 
-```
+```CSV
 Import-Csv "C:\My Documents\ImportAddressRewriteEntries.csv" | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
 ```
 
@@ -91,12 +92,12 @@ To verify that you have successfully imported address rewrite entries from a CSV
 
 - To see all address rewrite entries, run the following command:
 
-  ```
+  ```PowerShell
   Get-AddressRewriteEntry
   ```
 
 - To see details about a specific address rewrite entry, replace _\<AddressRewriteIdentity\>_ with the name of the address rewrite entry, and run the following command:
 
-  ```
+  ```PowerShell
   Get-AddressRewriteEntry "<AddressRewriteIdentity>" | Format-List
   ```

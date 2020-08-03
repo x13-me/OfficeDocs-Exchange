@@ -1,12 +1,13 @@
 ---
 title: 'Remove a global address list: Exchange 2013 Help'
 TOCTitle: Remove a global address list
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,7 +23,7 @@ For additional management tasks related to address lists, see [Address list proc
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email address and address book permissions](email-address-and-address-book-permissions-exchange-2013-help.md) topic.
 
 - You can't remove the default GAL.
 
@@ -31,7 +32,7 @@ For additional management tasks related to address lists, see [Address list proc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Shell to remove a GAL
 
@@ -43,4 +44,4 @@ Remove-GlobalAddressList -Identity "Fourth Coffee" -DomainController ad-server.f
 
 To confirm that you want to remove the GAL, type Y, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-globaladdresslist).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/remove-globaladdresslist).

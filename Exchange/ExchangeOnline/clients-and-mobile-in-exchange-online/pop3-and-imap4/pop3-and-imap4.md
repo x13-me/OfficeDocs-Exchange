@@ -2,10 +2,9 @@
 localization_priority: Normal
 description: 'Summary: An overview of POP3 and IMAP4 in Exchange Online, and the differences between them.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
-ms.date: 6/24/2018
 ms.reviewer: 
 title: POP3 and IMAP4
 ms.collection: 
@@ -13,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -26,14 +27,14 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online.
 - To customize the POP3 or IMAP4 settings for a user, see [Set POP3 or IMAP4 settings for a user](pop3-or-imap4-settings.md).
 
 > [!NOTE]
-> If you've enabled _security defaults_ in your organization, POP3 and IMAP4 are automatically disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults). <br/><br/> To protect your Exchange Online tenant from brute force or password spray attacks, your organization will need to [Disable Basic authentication in Exchange Online](../disable-basic-authentication-in-exchange-online.md) and only use [Modern authentication in Exchange Online](../enable-or-disable-modern-authentication-in-exchange-online.md). Disabling Basic authentication will block legacy protocols, such as POP and IMAP.
+> If you've enabled _security defaults_ in your organization, POP3 and IMAP4 are automatically disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults). <br/><br/> To protect your Exchange Online tenant from brute force or password spray attacks, your organization will need to [Disable Basic authentication in Exchange Online](../disable-basic-authentication-in-exchange-online.md) and only use [Modern authentication for Outlook in Exchange Online](../enable-or-disable-modern-authentication-in-exchange-online.md). Disabling Basic authentication will block legacy protocols, such as POP and IMAP.
 
 Users can use any email programs that support POP3 and IMAP4 to connect to Exchange Online (for example, Outlook, Windows Mail, and Mozilla Thunderbird). The features supported by each email client programs vary. For information about features offered by specific POP3 and IMAP4 client programs, see the documentation that's included with each application.
 
 POP3 and IMAP4 provide access to the basic email features of Exchange Online and allow for offline email access, but don't offer rich email, calendaring, and contact management, or other features that are available when users connect with Outlook, Exchange ActiveSync, Outlook on the web (formerly known as Outlook Web App), or Outlook Voice Access.
 
 > [!NOTE]
-> Each time a person accesses a POP-based or IMAP-based email program to open his or her Office 365 email, that user will experience a delay of several seconds. The delay results from using a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (client access server) and then authenticates against that.
+> Each time a person accesses a POP-based or IMAP-based email program to open his or her Microsoft 365 or Office 365 email, that user will experience a delay of several seconds. The delay results from using a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (client access server) and then authenticates against that.
 
 ## Settings users use to set up POP3 or IMAP4 access to their Exchange Online mailboxes
 <a name="settings"> </a>
@@ -44,9 +45,9 @@ POP3 and IMAP4 email programs don't use POP3 and IMAP4 to send messages to the e
 
 ||**Server name**|**Port**|**Encryption method**|
 |:-----|:-----|:-----|:-----|
-|POP3|Outlook.office365.com|995|TLS|
-|IMAP4|Outlook.office365.com|993|TLS|
-|SMTP|Smtp.office365.com|587|TLS|
+|POP3|Outlook.office365.com|995|SSL/TLS|
+|IMAP4|Outlook.office365.com|993|SSL/TLS|
+|SMTP|Smtp.office365.com|587|STARTTLS|
 
 ## Understanding the differences between POP3 and IMAP4
 <a name="Differences"> </a>

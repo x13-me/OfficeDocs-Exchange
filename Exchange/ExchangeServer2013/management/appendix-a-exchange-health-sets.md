@@ -4,11 +4,12 @@ TOCTitle: 'Appendix A: Exchange health sets'
 ms:assetid: 29af464e-ae07-40f8-ac6e-28e876a91d90
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195906(v=EXCHG.150)
 ms:contentKeyID: 53181783
-ms.date: 
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

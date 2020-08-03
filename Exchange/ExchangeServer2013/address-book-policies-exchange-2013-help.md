@@ -1,12 +1,13 @@
 ---
 title: 'Address book policies: Exchange 2013 Help'
 TOCTitle: Address book policies
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -41,8 +42,8 @@ In the following figure, Address Book Policy A consists of a subset of the vario
 
 |**New or existing mailbox?**|**Shell**|
 |:-----|:-----|
-|New|[New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
-|Existing|[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
+|New|[New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
+|Existing|[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
 
 ABPs take effect when a user's client application connects to a Client Access server in Exchange 2013. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange 2013 Mailbox server.
 
@@ -84,7 +85,7 @@ The ABPs adhere to the following rules:
 
 ## Entourage, Outlook for Mac, and ABPs
 
-ABPs won't function for Entourage users or Outlook for Mac users who are connected to their corporate network. When inside the corporate network, Entourage and Outlook for Mac clients connect directly to the global catalog server and query Active Directory directly instead of using the Client Access server. However, Outlook for Mac 2011 clients that connect from the Internet can use an OAB or Exchange Web Services (EWS). As a result, these clients can search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://go.microsoft.com/fwlink/p/?LinkId=231878)
+ABPs won't function for Entourage users or Outlook for Mac users who are connected to their corporate network. When inside the corporate network, Entourage and Outlook for Mac clients connect directly to the global catalog server and query Active Directory directly instead of using the Client Access server. However, Outlook for Mac 2011 clients that connect from the Internet can use an OAB or Exchange Web Services (EWS). As a result, these clients can search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://docs.microsoft.com/previous-versions/office/office-for-mac-2011/jj984221(v=office.14))
 
 ## For more information
 

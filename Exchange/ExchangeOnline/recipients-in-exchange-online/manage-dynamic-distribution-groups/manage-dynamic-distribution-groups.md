@@ -2,12 +2,13 @@
 localization_priority: Normal
 description: Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 ms.topic: article
-author: mattpennathe3rd
-f1_keywords:
+author: msdmaguire
+f1.keywords:
+- CSH
+ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
-ms.author: v-mapenn
+ms.author: dmaguire
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
-ms.date: 6/24/2018
 ms.reviewer: 
 title: Manage dynamic distribution groups
 ms.collection: 
@@ -32,12 +33,12 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a dynamic distribution group
 
@@ -90,7 +91,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
    |**Department**|The specified value matches the recipient's Department property.|
    |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
 
-    **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
+    > [!IMPORTANT]
+    > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
 
 6. In the **Specify words or phrases** window, type the value in the text box. Click **Add** and then click **OK**.
 
@@ -108,23 +110,23 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -IncludedRecipients MailboxUsers -Name "Mailbox Users DDG" -OrganizationalUnit Users
 ```
 
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users on a server called Server1.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Mailbox Users on Server1" -OrganizationalUnit Users -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (ServerName -eq 'Server1')"
 ```
 
 This example creates a dynamic distribution group with a custom recipient filter. The dynamic distribution group contains all mailbox users that have a value of "FullTimeEmployee" in the **CustomAttribute10** property.
 
-```
+```PowerShell
 New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')"
 ```
 
-For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-dynamicdistributiongroup).
+For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-dynamicdistributiongroup).
 
 ### How do you know this worked?
 
@@ -134,7 +136,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
 - In Exchange Online PowerShell, run the following command to display information about the new dynamic distribution group.
 
-  ```
+  ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
 
@@ -251,9 +253,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-dynamicdistributiongroup)
+- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change dynamic distribution group properties.
 
@@ -267,13 +269,13 @@ This example changes the following parameters for all dynamic distribution group
 
 - Assign the administrator as the group moderator
 
-```
+```PowerShell
 Get-DynamicDistributionGroup -ResultSize unlimited | Set-DynamicDistributionGroup -HiddenFromAddressListsEnabled $true -MaxReceiveSize 5MB -ModerationEnabled $true -ModeratedBy administrator
 ```
 
 This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, to the All Employees group.
 
-```
+```PowerShell
 Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
 ```
 
@@ -285,12 +287,12 @@ To verify that you've successfully changed properties for a dynamic distribution
 
 - In Exchange Online PowerShell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
 
-  ```
+  ```PowerShell
   Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
   ```
 
     For the example above where the message limits were changed, run this command.
 
-  ```
+  ```PowerShell
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```

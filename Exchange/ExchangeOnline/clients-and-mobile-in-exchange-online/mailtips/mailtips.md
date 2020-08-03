@@ -2,17 +2,19 @@
 localization_priority: Normal
 description: Admins can learn about MailTips that are presented to users in Outlook and Outlook on the web.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
-ms.date: 
 ms.reviewer: 
 title: MailTips
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 audience: Admin
+search.appverid: MET150
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -51,7 +53,7 @@ The following messaging clients support MailTips:
 
 - Outlook on the web (formerly known as Outlook Web App)
 
-- Microsoft Outlook 2010 or later
+- Microsoft Outlook 2010 or later for Microsoft Windows
 
 ## MailTips in Exchange Online
 
@@ -64,7 +66,7 @@ The following table lists the available MailTips in Exchange Online.
 |Automatic Replies|Outlook <br/><br/> Outlook on the web|The sender adds an internal recipient<sup>\*</sup> who has turned on Automatic Replies. <br/><br/> The MailTip indicates the recipient has Automatic Replies turned on and also displays the first 175 characters of the automatic reply text. <br/><br/> The MailTip is accurate at the time of display. If the message isn't immediately sent, the MailTip is updated every two hours. This also applies to messages that were saved in the Drafts folder and reopened after two hours. <br/><br/> <sup>\*</sup>If the recipient is external, but the recipient's domain is configured as a remote domain, the AllowedOOFType and IsInternal settings determine whether the sender receives the internal automatic reply, the external automatic reply, or no automatic reply at all.|
 |Custom|Outlook <br/><br/> Outlook on the web|The sender adds an internal recipient that has a custom MailTip configured. <br/><br/> A custom MailTip can be useful for providing specific information about a recipient. For example, you can create a custom MailTip for a distribution group explaining its purpose to reduce its misuse. For more information, see [Configure custom MailTips for recipients](configure-custom-mailtips.md). <br/><br/> By default, custom MailTips aren't displayed if the sender isn't allowed to send messages to the recipient (the Restricted Recipient MailTip is displayed instead). However, you can change this configuration and have the custom MailTip also display.|
 |Restricted Recipient|Outlook <br/><br/> Outlook on the web|The sender adds a recipient that they're not allowed to send messages to (delivery restrictions are configured between the sender and the recipient). <br/><br/> The MailTip indicates the prohibited recipient and gives the sender the option to remove the recipient from the message. It also clearly informs the sender that the message can't be delivered to the restricted recipient. <br/><br/>  If the restricted recipient is external or is a distribution group that contains external recipients, this MailTip is also provided to the sender. However, the following MailTips aren't displayed (if applicable): <br/>• Automatic Replies <br/>•  Mailbox Full <br/>• Custom MailTip <br/>• Moderated Recipient <br/>• Oversize Message|
-|External Recipients|Outlook <br/><br/> Outlook on the web|The sender adds an external recipient<sup>\*</sup> or a distribution group that contains external recipients. <br/><br/> The MailTip informs the sender that the message will leave the organization, which can help them make the correct decisions about wording, tone, and content. <br/><br/> By default, this MailTip is turned off. You can turn it on using the **Set-OrganizationConfig** cmdlet. For details, see [MailTips over organization relationships](mailtips-over-organization-relationships.md). <br/><br/> <sup>\*</sup>If the recipient is external, but the recipient's domain is configured as a remote domain, the IsInternal setting determines whether the sender receives this MailTip (the External Recipients MailTip doesn't apply to internal recipients). <br/><br/> **Note**: The External Recipients MailTip isn't evaluated for external distribution group recipients where the distribution group is in a remote domain.|
+|External Recipients|Outlook <br/><br/> Outlook on the web <br/><br/> Outlook Mobile|The sender adds an external recipient<sup>\*</sup> or a distribution group that contains external recipients. <br/><br/> The MailTip informs the sender that the message will leave the organization, which can help them make the correct decisions about wording, tone, and content. <br/><br/> By default, this MailTip is turned off. You can turn it on using the **Set-OrganizationConfig** cmdlet. For details, see [MailTips over organization relationships](mailtips-over-organization-relationships.md). <br/><br/> <sup>\*</sup>If the recipient is external, but the recipient's domain is configured as a remote domain, the IsInternal setting determines whether the sender receives this MailTip (the External Recipients MailTip doesn't apply to internal recipients). <br/><br/> **Note**: The External Recipients MailTip isn't evaluated for external distribution group recipients where the distribution group is in a remote domain. <br/><br/> **Note 2**: Outlook Mobile only supports the External Recipients MailTip for Microsoft 365 or Office 365, and for on-premises Exchange mailboxes that use Hybrid Modern Authentication (HMA).|
 |Large Audience|Outlook <br/><br/> Outlook on the web|The sender adds a distribution group that has more members than the configured large audience size (the default size is more than 25 members). For details, see [Configure the large audience size for your organization](configure-large-audience-size.md). <br/><br/> The number of distribution group members isn't calculated each time. Instead, the distribution group information is read from group metrics data.|
 |Moderated Recipient|Outlook <br/><br/> Outlook on the web|The sender adds a moderated recipient (a recipient that requires message approval). <br/><br/> The MailTip identifies the moderated recipient and informs the sender that moderation might result in delayed delivery. <br/><br/> The MailTip is not displayed if: <br/>• The sender is a moderator for the recipient. <br/>• The sender has been explicitly allowed to send messages to the recipient (by adding the sender's name to the Accept Messages Only From list for the recipient). <br/><br/> To configure moderated recipients in Exchange Online, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md).|
 |Reply-All on Bcc|Outlook on the web|A Bcc recipient selects **Reply All** a message. The MailTip appears in the reply message. <br/><br/> Bcc recipients revealing themselves to other recipients is universally bad, and the MailTip explains this.|

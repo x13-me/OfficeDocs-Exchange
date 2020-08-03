@@ -4,11 +4,12 @@ TOCTitle: Discovery Management
 ms:assetid: b8bc5922-a8c9-4707-906d-fa38bb87da8f
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351080(v=EXCHG.150)
 ms:contentKeyID: 49289385
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

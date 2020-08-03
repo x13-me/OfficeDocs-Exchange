@@ -4,11 +4,12 @@ TOCTitle: Database Copies role
 ms:assetid: 71a95f5b-1f75-4ae9-9ee9-515c3a19d394
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876905(v=EXCHG.150)
 ms:contentKeyID: 49289302
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

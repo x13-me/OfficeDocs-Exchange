@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Export eDiscovery search results to a PST file
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -83,4 +84,4 @@ manager: serdars
 
 - The name of the search is the first part of the filename for each file that is exported. Also, the date and time of the export request is appended to the filename of each PST file and the results log.
 
-- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183).
+- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Microsoft 365](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).

@@ -4,11 +4,12 @@ TOCTitle: Security Group Creation and Membership role
 ms:assetid: 257eb517-339f-4895-9e08-f772408a41cf
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876860(v=EXCHG.150)
 ms:contentKeyID: 49289198
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

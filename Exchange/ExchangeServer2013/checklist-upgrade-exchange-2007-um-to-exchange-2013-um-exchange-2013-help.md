@@ -4,11 +4,12 @@ TOCTitle: 'Checklist: Upgrade Exchange 2007 UM to Exchange 2013 UM'
 ms:assetid: 99b1a081-4052-4516-b63c-77622cbdf962
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169229(v=EXCHG.150)
 ms:contentKeyID: 53382780
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -143,12 +144,12 @@ For step-by-step guidance about how to upgrade from Exchange 2010 UM to Exchange
 <tr class="odd">
 <td><p></p></td>
 <td><p>Disable call answering on the Exchange 2007 UM servers</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=296353">How to Disable Unified Messaging on Exchange 2007</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb123529(v=exchg.80)">How to Disable Unified Messaging on Exchange 2007</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Remove an Exchange 2007 UM server from a dial plan</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=194765">How to Remove a Unified Messaging Server from a Dial Plan</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997238(v=exchg.80)">How to Remove a Unified Messaging Server from a Dial Plan</a></p></td>
 </tr>
 </tbody>
 </table>

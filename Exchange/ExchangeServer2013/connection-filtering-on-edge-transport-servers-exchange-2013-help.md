@@ -4,11 +4,12 @@ TOCTitle: Connection Filtering on Edge Transport Servers
 ms:assetid: b513755c-5d3e-44fa-a6cb-771d48b544ac
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
 ms:contentKeyID: 61200295
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
-ms.date: 6/24/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Change the branding of Clutter notifications
 ms.collection: 
 - exchange-online
@@ -28,15 +29,15 @@ This article describes how to change the branding of Clutter notifications to ma
 > [!NOTE]
 > For more information about the types of Clutter notifications that end users in your organization receive, see [Clutter notifications in Outlook](clutter-notifications-in-outlook.md).
 
-To begin, you will need to sign in to Office 365 with your work or school account.
+To begin, you will need to sign in to Microsoft 365 or Office 365 with your work or school account.
 
-1. Once signed in to Office 365, go to the Microsoft 365 admin center.
+1. Once signed in to Microsoft 365 or Office 365, go to the Microsoft 365 admin center.
 
 2. Click to expand **Users**, then select **Active Users**.
 
 3. Select **Add** ![Add](../../media/ITPro_EAC_AddIcon.png) to add a user. The **Create a new user account** dialog will open.
 
-4. In the **Create a new user account** dialog, enter a **Display name** and a **username**. The display name will appear in the Sender field for all Clutter notifications sent to your users. Office 365 generates a new temporary password for the new user account. Click **Create** to create the account.
+4. In the **Create a new user account** dialog, enter a **Display name** and a **username**. The display name will appear in the Sender field for all Clutter notifications sent to your users. A new temporary password is generated for the new user account. Click **Create** to create the account.
 
 5. Go the Exchange admin center.
 
@@ -62,11 +63,11 @@ To begin, you will need to sign in to Office 365 with your work or school accoun
 
 You can also create a new shared mailbox as the branding mailbox using PowerShell. Follow these steps.
 
-1. [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Type the following commands:
 
-   ```
+   ```PowerShell
    New-Mailbox -Shared -Name branding@contoso.com -DisplayName "Branding Clutter Mailbox" -Alias branding
    Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
    ```

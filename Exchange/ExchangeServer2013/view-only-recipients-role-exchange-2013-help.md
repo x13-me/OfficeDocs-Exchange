@@ -4,11 +4,12 @@ TOCTitle: View-Only Recipients role
 ms:assetid: 37e66b92-81d3-412f-b7a9-e1bb8cbeb468
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876872(v=EXCHG.150)
 ms:contentKeyID: 49289230
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

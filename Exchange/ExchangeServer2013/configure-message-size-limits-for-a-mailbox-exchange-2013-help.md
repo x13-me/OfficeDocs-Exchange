@@ -4,11 +4,12 @@ TOCTitle: Configure message size limits for a mailbox
 ms:assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124708(v=EXCHG.150)
 ms:contentKeyID: 50383002
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -34,7 +35,7 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to configure message size limits
 
@@ -60,7 +61,7 @@ This example sets the maximum size for sent messages to 25 MB and the maximum s
 Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ## How do you know this worked?
 

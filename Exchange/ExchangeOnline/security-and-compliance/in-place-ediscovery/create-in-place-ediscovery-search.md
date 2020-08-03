@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Use In-Place eDiscovery to search across all mailbox content, including deleted items and original versions of modified items for users placed on In-Place Hold and Litigation Hold.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-ms.date: 7/20/2017
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Create an In-Place eDiscovery search
 ms.collection: 
 - exchange-online
@@ -19,8 +20,8 @@ manager: serdars
 
 # Create an In-Place eDiscovery search
 
-> [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/p/?linkid=847843) in the Office 365 Security & Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported.
+> [!IMPORTANT]
+> As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
 
 Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox content, including deleted items and original versions of modified items for users placed on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
 
@@ -28,22 +29,18 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. So in Exchange Online, you must have a licensed Exchange Online (Plan 2) mailbox to create eDiscovery searches. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Office 365 organization so that you can search Exchange Online mailboxes. Or, if you sign in with an account that only exists in Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online (Plan 2) license.
+- To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. So in Exchange Online, you must have a licensed Exchange Online (Plan 2) mailbox to create eDiscovery searches. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Microsoft 365 or Office 365 organization so that you can search Exchange Online mailboxes. Or, if you sign in with an account that only exists in Microsoft 365 or Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online (Plan 2) license.
 
 - Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. The Discovery Search Mailbox is also created by default in Exchange Online. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](create-a-discovery-mailbox.md).
 
-- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
-
-  - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
-
-  - [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
+- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to create an In-Place eDiscovery search
 
@@ -55,7 +52,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
 3. In **In-Place eDiscovery & Hold**, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
 
-4. On the **Mailboxes** page, select the mailboxes to search. You can search across all mailboxes or select specific ones to search. In Exchange Online, you can also select Office 365 groups as a content source for the search.
+4. On the **Mailboxes** page, select the mailboxes to search. You can search across all mailboxes or select specific ones to search. In Exchange Online, you can also select Microsoft 365 groups as a content source for the search.
 
    > [!IMPORTANT]
    > You can't use the **Search all mailboxes** option to place all mailboxes on hold. To create an In-Place Hold, you must select **Specify mailboxes to search**. For more details, see [Create or remove an In-Place Hold](../../security-and-compliance/create-or-remove-in-place-holds.md).
@@ -103,7 +100,7 @@ This example creates the In-Place eDiscovery search named Discovery-CaseId012 th
 > [!IMPORTANT]
 > If you don't specify additional search parameters when running an In-Place eDiscovery search, all items in the specified source mailboxes are returned in the results. If you don't specify mailboxes to search, all mailboxes in your Exchange or Exchange Online organization are searched.
 
-```
+```PowerShell
 New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 ```
 
@@ -112,13 +109,13 @@ New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/
 
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015.
 
-```
+```PowerShell
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
-After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
+After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the _TargetMailbox_ parameter.
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch).
 
 ## Use the EAC to estimate or preview search results
 
@@ -145,31 +142,27 @@ You can use the _EstimateOnly_ switch to return only get an estimate of the sear
 
 For example, you would run the following commands to create a new eDiscovery search and then display an estimate of the search results:
 
-```
+```PowerShell
 New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
 To display specific information about the estimated search results from the previous example, you could run the following command:
 
-```
+```PowerShell
 Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
 
 ## More information about eDiscovery searches
 
-- After you create a new eDiscovery search, you can copy search results to the discovery mailbox and export those search results to a PST file. For more information, see:
-
-  - [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
-
-  - [Export eDiscovery search results to a PST file](export-search-results.md)
+- After you create a new eDiscovery search, you can copy search results to the discovery mailbox and export those search results to a PST file. For more information, see [Export eDiscovery search results to a PST file](export-search-results.md).
 
 - After you run an eDiscovery search estimate (that includes keywords in the search criteria), you can view keyword statistics by clicking **View keyword statistics** in the details pane for the selected search. These statistics show details about the number of items returned for each keyword used in the search query. However, if more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics. To view keyword statistics, no more than 100 source mailboxes can be included in the search.
 

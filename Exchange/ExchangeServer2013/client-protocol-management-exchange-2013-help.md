@@ -4,11 +4,12 @@ TOCTitle: Client protocol management
 ms:assetid: 89ba6d24-d1d3-46d5-a0ae-61f0d4c6df21
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657727(v=EXCHG.150)
 ms:contentKeyID: 49300565
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

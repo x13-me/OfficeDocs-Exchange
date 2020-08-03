@@ -1,12 +1,13 @@
 ---
 title: 'Common message approval scenarios: Exchange 2013 Help'
 TOCTitle: Common message approval scenarios
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

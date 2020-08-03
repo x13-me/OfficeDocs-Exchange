@@ -4,11 +4,12 @@ TOCTitle: Server Management
 ms:assetid: 30cbc4de-adb3-42e8-922f-7661095bdb8c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876866(v=EXCHG.150)
 ms:contentKeyID: 49289215
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

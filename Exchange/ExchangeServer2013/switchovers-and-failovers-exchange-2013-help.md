@@ -4,11 +4,12 @@ TOCTitle: Switchovers and Failovers
 ms:assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298067(v=EXCHG.150)
 ms:contentKeyID: 62549505
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

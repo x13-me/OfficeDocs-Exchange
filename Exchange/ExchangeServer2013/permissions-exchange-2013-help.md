@@ -4,11 +4,12 @@ TOCTitle: Permissions
 ms:assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351175(v=EXCHG.150)
 ms:contentKeyID: 48385617
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

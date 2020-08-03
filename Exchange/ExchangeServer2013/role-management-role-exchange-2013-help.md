@@ -4,11 +4,12 @@ TOCTitle: Role Management role
 ms:assetid: 71d8553c-150d-4306-8de0-89be6efb5e40
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876906(v=EXCHG.150)
 ms:contentKeyID: 49289304
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

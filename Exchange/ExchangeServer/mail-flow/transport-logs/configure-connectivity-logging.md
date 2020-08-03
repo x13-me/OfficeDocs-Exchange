@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn how to configure connectivity logging for the transport services in Exchange 2016 and Exchange 2019
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
-ms.date: 7/10/2018
 ms.reviewer:
 title: Configure connectivity logging in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -23,7 +24,7 @@ Connectivity logging records outbound connection activity (source, destination, 
 
 - Estimated time to complete: 15 minutes
 
-- You can use the Exchange admin center (EAC) to enable or disable connectivity logging and set the log path for the Transport service on Mailbox servers only. For all other connectivity logging options in the other transport services, you need to use the Exchange Management Shell. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can use the Exchange admin center (EAC) to enable or disable connectivity logging and set the log path for the Transport service on Mailbox servers only. For all other connectivity logging options in the other transport services, you need to use the Exchange Management Shell. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - The folder for connectivity logging needs the following permissions:
 
@@ -40,7 +41,7 @@ Connectivity logging records outbound connection activity (source, destination, 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to configure connectivity logging in the Transport service on Mailbox servers
 
@@ -72,7 +73,7 @@ On Edge Transport servers, connectivity logging is available on the Transport se
 
 To configure connectivity logging, use the following syntax:
 
-```
+```powershell
 <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> -Identity <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
 ```
 
@@ -86,11 +87,11 @@ This example sets the following connectivity log settings in the Transport servi
 
 - **Maximum age of a connectivity log file**: Sets the maximum age of a connectivity log file to 45 days.
 
-```
+```powershell
 Set-TransportService -Identity Mailbox01 -ConnectivityLogPath "D:\Connectivity Log\Hub" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-mailboxtransportservice).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/set-mailboxtransportservice).
 
  **Notes**:
 
@@ -110,7 +111,7 @@ To verify that you've successfully configured connectivity logging, use these st
 
 1. Run the following command in the Exchange Management Shell to verify the connectivity log settings on the Exchange servers:
 
-   ```
+   ```powershell
    Write-Host "Front End Transport service:" -ForegroundColor yellow; Get-FrontEndTransportService | Format-List Name,ConnectivityLog*; Write-Host "Mailbox Transport Submission and Mailbox Transport Delivery services:" -ForegroundColor yellow; Get-MailboxTransportService | Format-List Name,ConnectivityLog*; Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | Format-List Name,ConnectivityLog*
    ```
 

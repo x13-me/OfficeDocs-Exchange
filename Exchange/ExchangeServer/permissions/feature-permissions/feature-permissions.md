@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: See a list of management role groups for managing Exchange 2016 or Exchange 2019 features'
 ms.topic: hub-page
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 48d06fa6-e4a2-4d5c-bdbd-718eeaade4be
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Feature permissions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

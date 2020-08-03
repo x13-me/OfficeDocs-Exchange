@@ -2,15 +2,16 @@
 localization_priority: Critical
 description: 'Summary: How to set up mail flow and client access in Exchange 2016 and Exchange 2019.'
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
-ms.date: 7/30/2018
 ms.reviewer:
 title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -34,12 +35,12 @@ For additional management tasks related to mail flow and clients and devices, se
 
 - You might receive certificate warnings when you connect to the Exchange admin center (EAC) website until you configure a secure sockets layer (SSL) certificate on the Mailbox server. You'll be shown how to do this later in this topic.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create an internet Send connector
 
@@ -62,7 +63,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 If you added an accepted domain in the previous step and you want that domain to be added to every recipient in the organization, you need to update the default email address policy. For instructions, see [Modify email address policies](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#modify-email-address-policies) and [Apply email address policies to recipients](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#apply-email-address-policies-to-recipients).
 
 > [!NOTE]
-> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\user name or UPN in addition to their email address. If their UPN matches their email address, Outlook on the web (formerly known as Outlook on the web), ActiveSync, and Outlook will automatically match their email address to their UPN.
+> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\username or UPN in addition to their email address. If their UPN matches their email address, Outlook on the web (formerly known as Outlook on the web), ActiveSync, and Outlook will automatically match their email address to their UPN.
 
 ## Step 4: Configure external URLs
 
@@ -157,9 +158,9 @@ Before clients can connect to your new server from your internal network, you ne
 
 The procedure below lets you choose whether you want users to use the same URL on your intranet and on the internet to access your Exchange server or whether they should use a different URL. What you choose depends on the addressing scheme you have in place already or that you want to implement. If you're implementing a new addressing scheme, we recommend that you use the same URL for both internal and external URLs. Using the same URL makes it easier for users to access your Exchange server because they only have to remember one address.
 
-Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
+Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794771(v=ws.10)).
 
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help).
 
 ### Configure internal and external URLs to be the same
 
@@ -167,33 +168,33 @@ For more information about internal and external URLs on virtual directories, se
 
 2. Store the host name of your Mailbox server in a variable that will be used in the next step. For example, Mailbox01.
 
-   ```
+   ```powershell
    $HostName = "Mailbox01"
    ```
 
 3. Run each of the following commands in the Exchange Management Shell to configure each internal URL to match the virtual directory's external URL.
 
-   ```
+   ```powershell
    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((Get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
    ```
 
-   ```
+   ```powershell
    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
    ```
 

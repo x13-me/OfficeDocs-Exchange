@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to change the management role assignment policy assigned to a mailbox.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
-ms.date: 7/5/2018
 ms.reviewer:
 title: Change the assignment policy on a mailbox
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -30,7 +31,7 @@ Looking for other management tasks related to permissions? Check out [Permission
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to change the assignment policy on a mailbox
 
@@ -46,13 +47,13 @@ Looking for other management tasks related to permissions? Check out [Permission
 
 To change the assignment policy that's assigned to a mailbox, use the following syntax.
 
-```
+```powershell
 Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
 ```
 
 This example sets the assignment policy to Engineering Users on the mailbox Brian.
 
-```
+```powershell
 Set-Mailbox Brian -RoleAssignmentPolicy "Engineering Users"
 ```
 
@@ -65,26 +66,26 @@ This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ p
 
 - [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://technet.microsoft.com/library/8320e1a5-d3f5-4615-878d-b23e2aaa6b1e.aspx)
+- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
 
-- [WhatIf, Confirm, and ValidateOnly Switches](https://technet.microsoft.com/library/a850eea7-431e-49c5-b877-1ebde2a2b48f.aspx)
+- [WhatIf, Confirm, and ValidateOnly Switches](https://docs.microsoft.com/exchange/whatif-confirm-and-validateonly-switches-exchange-2013-help)
 
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<assignment policy to find>"} | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
 ```
 
 This example finds all the mailboxes assigned to the Redmond Users - No Voicemail assignment policy and changes the assignment policy to Redmond Users - Voicemail Enabled.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
 ```
 
 This example includes the _WhatIf_ parameter so that you can see all the mailboxes that would be changed without committing any changes.
 
-```
+```powershell
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) or [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) or [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).

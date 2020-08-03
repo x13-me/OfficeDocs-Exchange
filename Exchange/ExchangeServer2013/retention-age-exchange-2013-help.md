@@ -1,12 +1,13 @@
 ---
 title: 'How retention age is calculated: Exchange 2013 Help'
 TOCTitle: How retention age is calculated
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

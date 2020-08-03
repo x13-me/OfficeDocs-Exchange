@@ -4,11 +4,12 @@ TOCTitle: Public Folders role
 ms:assetid: b858f04c-ac0b-495f-9193-8b9645781f73
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876930(v=EXCHG.150)
 ms:contentKeyID: 49289393
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

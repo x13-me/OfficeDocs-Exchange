@@ -4,11 +4,12 @@ TOCTitle: Disable or enable journaling of voice mail and missed call notificatio
 ms:assetid: 5164a92e-69e6-4339-b80c-0cfbf0dc0198
 ms:mtpsurl: https://technet.microsoft.com/library/Bb201690(v=EXCHG.150)
 ms:contentKeyID: 49354854
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ Looking for other management tasks related to journaling? Check out [Manage jour
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Shell to disable or enable journaling of voice mail and missed call notifications
 
@@ -47,7 +48,7 @@ This example enables the journaling of voice mail and missed call notifications 
 Set-TransportConfig -VoicemailJournalingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://technet.microsoft.com/library/bb124151\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig).
 
 ## For More Information
 

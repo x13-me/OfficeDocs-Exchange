@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: "Summary: Learn how to configure Exchange 2016 or Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange."
 ms.topic: get-started-article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
-ms.date:
 ms.reviewer: 
 title: Delegate the installation of Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -39,7 +40,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 - You can provision the Exchange server object in Active Directory from the target server itself, or from another computer.
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Command Prompt to provision Exchange 2019 servers
 
@@ -53,7 +54,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 3. In the Command Prompt window, use the following syntax:
 
-    ```
+    ```console
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer[:<ServerName>]
     ```
 
@@ -61,13 +62,13 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
     This example uses the Exchange installation files on drive E: to provision the server Mailbox01:
 
-    ```
+    ```console
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer:Mailbox01
     ```
 
     This example uses the Exchange installation files on drive E: to provision the local server where you're running the command:
 
-    ```
+    ```console
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer
     ```
 
@@ -85,7 +86,7 @@ To verify that you've successfully provisioned an Exchange server for a delegate
 
 If your server is listed as a member of the Exchange Servers security group, it was properly provisioned. Someone who's a member of the Delegated Setup role group can now install Exchange on that server.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## More information
 

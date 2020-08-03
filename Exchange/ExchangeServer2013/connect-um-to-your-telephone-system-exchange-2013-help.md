@@ -4,11 +4,12 @@ TOCTitle: Connect UM to your telephone system
 ms:assetid: 92c3e029-f732-4d6d-b147-2b3006d5f088
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673544(v=EXCHG.150)
 ms:contentKeyID: 49315464
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

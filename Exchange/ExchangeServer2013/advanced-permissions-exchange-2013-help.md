@@ -4,11 +4,12 @@ TOCTitle: Advanced permissions
 ms:assetid: 9e2d17be-5444-4323-ac9a-99eec479f4bc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638160(v=EXCHG.150)
 ms:contentKeyID: 49289357
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

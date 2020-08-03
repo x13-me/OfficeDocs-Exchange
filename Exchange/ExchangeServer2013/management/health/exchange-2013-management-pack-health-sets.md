@@ -4,11 +4,12 @@ TOCTitle: '@NoTitle'
 ms:assetid: 3a12acb0-a6b7-4452-9306-a3d000c94a50
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195892(v=EXCHG.150)
 ms:contentKeyID: 53181763
-ms.date: 
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -158,6 +159,6 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 ## For more information
 
-[Exchange Server 2013 Management Pack Guide](https://technet.microsoft.com/library/ee758046\(v=exchg.150\))
+[Exchange Server 2013 Management Pack Guide](https://docs.microsoft.com/exchange/management/exchange-server-2013-management-pack-guide)
 
-[Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\))
+[Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help)

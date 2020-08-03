@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Understanding back pressure
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -260,11 +261,11 @@ The following table summarizes the actions taken by back pressure when a monitor
 ## View back pressure resource thresholds and utilization levels
 <a name="Pressure"> </a>
 
-You can use the **Get-ExchangeDiagnosticInfo** cmdlet in the Exchange Management Shell to view the resources that are being monitored, and the current utilization levels. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+You can use the **Get-ExchangeDiagnosticInfo** cmdlet in the Exchange Management Shell to view the resources that are being monitored, and the current utilization levels. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 To view the back pressure settings on an Exchange server, run the following command:
 
-```
+```PowerShell
 [xml]$bp=Get-ExchangeDiagnosticInfo [-Server <ServerIdentity> ] -Process EdgeTransport -Component ResourceThrottling; $bp.Diagnostics.Components.ResourceThrottling.ResourceTracker.ResourceMeter
 ```
 

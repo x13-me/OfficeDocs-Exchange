@@ -4,11 +4,12 @@ TOCTitle: Automatic mailbox distribution
 ms:assetid: f4db4636-948c-466b-839c-300c1a3a9544
 ms:mtpsurl: https://technet.microsoft.com/library/Ff477621(v=EXCHG.150)
 ms:contentKeyID: 56474986
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

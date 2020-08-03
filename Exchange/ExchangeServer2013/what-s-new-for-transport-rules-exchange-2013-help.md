@@ -4,11 +4,12 @@ TOCTitle: What's new for transport rules
 ms:assetid: 0c2fc0b5-3cd2-4d79-aa2b-0c7622ae15a8
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150483(v=EXCHG.150)
 ms:contentKeyID: 47559940
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -40,7 +41,7 @@ For detailed information about using these new predicates and actions, see [Tran
 
 - **HasSenderOverride**: Used to detect messages where the sender has chosen to override a DLP policy restriction.
 
-- **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+- **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange 2013 look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md).
 
 - **MessageSizeOver**: Used to detect messages whose overall size is greater than or equal to the specified limit.
 

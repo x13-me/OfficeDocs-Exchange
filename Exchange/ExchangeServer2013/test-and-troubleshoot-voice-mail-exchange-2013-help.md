@@ -4,11 +4,12 @@ TOCTitle: Test and troubleshoot voice mail
 ms:assetid: eafb53fe-2fa9-437c-9369-aec324cc13ce
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351227(v=EXCHG.150)
 ms:contentKeyID: 55129215
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

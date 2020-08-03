@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the options that are available for message encoding in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
-ms.date: 7/6/2018
 ms.reviewer:
 title: Message encoding options in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -41,7 +42,7 @@ For more information about content conversion in Exchange, see [Content conversi
 
 ## Remote domain settings
 
-Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help).
 
 When you configure message encoding options for a remote domain, the settings are applied to all messages that are sent to recipients in that domain. Some settings are available in the Exchange admin center (EAC), but most are only available in the Exchange Management Shell. The message encoding settings are described in this table:
 
@@ -59,9 +60,9 @@ Mail contacts and mail users represent users that have external email addresses 
 
 When you configure message encoding options for a mail contact or a mail user, the settings are only applied to messages that are sent to that specific recipient. All settings are only available in the Exchange Management Shell in these cmdlets:
 
-- [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailcontact), [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailcontact), or [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact).
+- [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/enable-mailcontact), [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/new-mailcontact), or [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact).
 
-- [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/enable-mailuser), [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser), or [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser).
+- [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/enable-mailuser), [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser), or [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
 
 The message encoding settings for mail contacts and mail users are described in this list:
 
@@ -101,7 +102,7 @@ As a sender, you can specify the message encoding in Outlook by using any of the
 
 - Configure the message encoding options for messages sent to specific external recipients (Outlook 2010 or earlier). These options are called *Internet recipient message format* options, and they only apply to remote recipients in your Contacts folder (not to recipients in the Exchange organization).
 
-For instructions on configuring these settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://go.microsoft.com/fwlink/p/?linkid=397890).
+For instructions on configuring these settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 By default, Outlook uses automatic character set message encoding by scanning the whole text of the outgoing message to determine the appropriate encoding to use for the message. This setting applies to internal and external recipients. However, you can bypass the automatic selection and specify a preferred encoding for outgoing messages at **File** \> **Options** \> **Advanced** \> **International options**.
 

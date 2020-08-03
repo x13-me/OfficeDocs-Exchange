@@ -1,12 +1,13 @@
 ---
 title: 'Manage DLP policies: Exchange 2013 Help'
 TOCTitle: Manage DLP policies
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,13 +19,13 @@ You can view, change, or remove existing data loss prevention (DLP) policies in 
 
 For additional management tasks related to DLP, see [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
-For more information about the Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
+For more information about the Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 15-60 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 - For any DLP policy, you can select one of three modes:
 
@@ -39,7 +40,7 @@ For more information about the Exchange Management Shell, see [Exchange Manageme
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## View the details of an existing DLP policy
 
@@ -64,7 +65,7 @@ This example returns information about the fictitious DLP policy named Employee 
 Get-DlpPolicy "Employee Numbers" | Format-List
 ```
 
-For syntax and parameter information, see [Get-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlppolicy).
+For syntax and parameter information, see [Get-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlppolicy).
 
 ## Change a DLP policy
 
@@ -96,7 +97,7 @@ You can specify the action and notification level of a policy using the Exchange
 Set-DlpPolicy "Employee Numbers" -Mode Audit
 ```
 
-For syntax and parameter information, see [Set-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlppolicy).
+For syntax and parameter information, see [Set-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dlppolicy).
 
 ## Delete a DLP policy
 
@@ -118,7 +119,7 @@ This example removes the fictitious DLP policy named Employee Numbers.
 Remove-DlpPolicy "Employee Numbers"
 ```
 
-For syntax and parameter information, see [Remove-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlppolicy).
+For syntax and parameter information, see [Remove-DlpPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-dlppolicy).
 
 ## For more information
 

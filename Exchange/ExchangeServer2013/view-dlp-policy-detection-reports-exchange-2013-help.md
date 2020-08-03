@@ -4,11 +4,12 @@ TOCTitle: View DLP policy detection reports
 ms:assetid: 5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150520(v=EXCHG.150)
 ms:contentKeyID: 47560019
-ms.date: 06/13/2017
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +22,7 @@ Data loss prevention (DLP) policy detection management broadly defines the activ
 For information about creating an incident report along with a single policy detection event, see [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md). For more information about message logs, see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
 
 > [!NOTE]
-> Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see <A href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</A>.
+> Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see <A href="https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview">Exchange licensing FAQs</A>.
 
 ## Audit information
 

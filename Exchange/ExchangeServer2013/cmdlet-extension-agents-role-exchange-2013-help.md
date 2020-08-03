@@ -4,11 +4,12 @@ TOCTitle: Cmdlet Extension Agents role
 ms:assetid: 20f9f7c2-a8e5-468e-b1a8-c87c562a2be7
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876857(v=EXCHG.150)
 ms:contentKeyID: 49289191
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the default virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
-ms.date: 
 ms.reviewer: 
 title: Default settings for Exchange virtual directories
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -62,4 +63,4 @@ The following table lists the default settings in the back end services on Excha
 
 ## See also
 
-[Virtual directory management](https://technet.microsoft.com/library/ff952752(v=exchg.150).aspx)
+[Virtual directory management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help)

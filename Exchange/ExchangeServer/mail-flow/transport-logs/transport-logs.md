@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about transport logging in Exchange Server 2016 and Exchange Server 2019 and the kinds of logs and information that is logged.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-ms.date: 7/6/2018
 ms.reviewer:
 title: Transport logs in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

@@ -1,8 +1,10 @@
 ---
 title: "Edge Transport servers in Exchange 2013/Exchange 2010 hybrid deployments"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -24,7 +26,7 @@ Exchange 2013 organizations that want to use Edge Transport servers have the opt
 
 Learn more about the Exchange 2013 Edge Transport server role at [Edge Transport servers](https://docs.microsoft.com/exchange/edge-transport-servers-exchange-2013-help).
 
-Learn more about the Exchange 2010 Edge Transport server role at [Overview of the Edge Transport Server Role](https://go.microsoft.com/fwlink/p/?linkid=183473).
+Learn more about the Exchange 2010 Edge Transport server role at [Overview of the Edge Transport Server Role](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124701(v=exchg.141)).
 
 ## Edge Transport servers in Exchange 2013-based hybrid deployment organizations
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -187,4 +189,4 @@ Get-Mailbox -Arbitration | Format-Table Name, DisplayName
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

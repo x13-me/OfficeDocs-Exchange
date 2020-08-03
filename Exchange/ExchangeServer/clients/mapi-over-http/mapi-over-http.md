@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn about the benefits and requirements for MAPI over HTTP in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: conceptual
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
-ms.date: 7/10/2018
 ms.reviewer: 
 title: MAPI over HTTP in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

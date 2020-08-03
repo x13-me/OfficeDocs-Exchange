@@ -4,11 +4,12 @@ TOCTitle: Recipient Management
 ms:assetid: 669d602e-68e3-41f9-a455-b942d212d130
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298028(v=EXCHG.150)
 ms:contentKeyID: 49289275
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

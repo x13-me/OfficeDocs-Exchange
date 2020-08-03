@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Using a Microsoft Azure VM as a DAG witness server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -29,7 +30,7 @@ This configuration requires three separate physical locations: two datacenters f
 
 This configuration requires a multi-site VPN. It has always been possible to connect your organization's network to Microsoft Azure using a site-to-site VPN connection. However, in the past, Azure supported only a single site-to-site VPN. Since configuring a DAG and its witness across three datacenters required multiple site-to-site VPNs, placement of the DAG witness on an Azure VM wasn't initially possible.
 
-In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](https://go.microsoft.com/fwlink/p/?linkId=522621).
+In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
 
 > [!NOTE]
 > This configuration leverages Azure virtual machines and a multi-site VPN for deploying the witness server and does not use the Azure Cloud Witness.
@@ -41,11 +42,11 @@ The following diagram is an overview of using a Microsoft Azure file server VM a
 > [!NOTE]
 > It is technically possible to use a single Azure VM for this purpose and place the file witness share on the domain controller. However, this will result in an unnecessary elevation of privileges. Therefore, it is not a recommended configuration.
 
-**DAG witness server on Microsoft Azure**
+### DAG witness server on Microsoft Azure
 
 ![Exchange DAG witness on Azure overview](../../media/7cbda882-bbae-4be7-b0ea-60947b8aa4ef.png)
 
-The first thing you need to do in order to use a Microsoft Azure VM for your DAG witness is to get a subscription. See [How to buy Azure](https://go.microsoft.com/fwlink/p/?linkId=398989) for the best way to acquire an Azure subscription.
+The first thing you need to do in order to use a Microsoft Azure VM for your DAG witness is to get a subscription. See [How to buy Azure](https://azure.microsoft.com/pricing/purchase-options/) for the best way to acquire an Azure subscription.
 
 After you have your Azure subscription, you need to do the following in order:
 
@@ -66,7 +67,7 @@ After you have your Azure subscription, you need to do the following in order:
 
 - A public IP address that is not behind NAT for the VPN gateways in each site.
 
-- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://go.microsoft.com/fwlink/p/?linkId=522619) for more information about compatible devices.
+- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices.
 
 - Familiarity with DAG concepts and management.
 
@@ -150,7 +151,7 @@ The next step is to establish the VPN gateways to your on-premises sites. To do 
 
 6. Configure on-premises VPN devices.
 
-For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](https://go.microsoft.com/fwlink/p/?linkId=522621).
+For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
 
 #### Establish a VPN gateway to your first site
 
@@ -169,7 +170,7 @@ The Azure management portal doesn't currently allow you to configure a multi-sit
 
 Open the file you exported in any XML editor. The gateway connections to your on-premises sites are listed in the "ConnectionsToLocalNetwork" section. Search for that term in the XML file to locate the section. This section in the configuration file will look like the following (assuming the site name you created for your local site is "Site A").
 
-```
+```xml
 <ConnectionsToLocalNetwork>
     <LocalNetworkSiteRef name="Site A">
         <Connection type="IPsec" />
@@ -178,7 +179,7 @@ Open the file you exported in any XML editor. The gateway connections to your on
 
 To configure your second site, add another "LocalNetworkSiteRef" section under the "ConnectionsToLocalNetwork" section. The section in the updated configuration file will look like the following (assuming the site name for your second local site is "Site B").
 
-```
+```xml
 <ConnectionsToLocalNetwork>
     <LocalNetworkSiteRef name="Site A">
         <Connection type="IPsec" />
@@ -203,7 +204,7 @@ You need to use PowerShell to get the pre-shared keys. If you aren't familiar wi
 
 Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
-```
+```powershell
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" | Set-Content -Path C:\Keys\KeysForTunnelToSiteA.txt
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" | Set-Content -Path C:\Keys\KeysForTunnelToSiteB.txt
 ```
@@ -228,13 +229,13 @@ Other devices might require additional verifications. For example, the configura
 
 At this point, both of your sites are connected to your Azure virtual network through the VPN gateways. You can validate the status of the multi-site VPN by running the following command in PowerShell.
 
-```
+```powershell
 Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
 ```
 
 If both tunnels are up and running, the output of this command will look like the following.
 
-```
+```console
 LocalNetworkSiteName    ConnectivityState
 --------------------    -----------------
 Site A                  Connected
@@ -254,11 +255,11 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 2. Specify preferred IP addresses for both the domain controller and the file server using Azure PowerShell. When you specify a preferred IP address for a VM, it needs to be updated, which will require restarting the VM. The following example sets the IP addresses for Azure-DC and Azure-FSW to 10.0.0.10 and 10.0.0.11 respectively.
 
-   ```
+   ```powershell
    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
    ```
 
-   ```
+   ```powershell
    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
    ```
 
@@ -269,7 +270,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-   1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/library/ee662309.aspx) cmdlet.
+   1. Add the File Server role using the Add Roles and Features Wizard or the [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature) cmdlet.
 
    2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 
@@ -291,7 +292,7 @@ Finally, you need to configure your DAG to use the new witness server. By defaul
 
 2. Run the following command to configure the witness server for your DAGs.
 
-   ```
+   ```powershell
    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
    ```
 
@@ -299,7 +300,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 
@@ -307,7 +308,7 @@ At this point, you have configured your DAG to use the file server on Azure as y
 
 1. Validate the DAG configuration by running the following command.
 
-   ```
+   ```powershell
    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
    ```
 
@@ -315,13 +316,13 @@ At this point, you have configured your DAG to use the file server on Azure as y
 
 2. If the DAG has an even number of nodes, the file share witness will be configured. Validate the file share witness setting in cluster properties by running the following command. The value for the _SharePath_ parameter should point to the file server and display the correct path.
 
-   ```
+   ```powershell
    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
    ```
 
 3. Next, verify the status of the "File Share Witness" cluster resource by running the following command. The _State_ of the cluster resource should display **Online**.
 
-   ```
+   ```powershell
    Get-ClusterResource -Cluster MBX1
    ```
 

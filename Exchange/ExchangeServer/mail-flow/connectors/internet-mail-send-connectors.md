@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
-ms.date: 7/6/2018
 ms.reviewer:
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -30,7 +31,7 @@ When install your first Exchange Server 2016 or Exchange 2019 server, the server
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a Send connector to send mail to the internet
 
@@ -72,11 +73,11 @@ After you create the Send connector, it appears in the Send connector list. To c
 
 #### Use the Exchange Management Shell to create an internet Send connector
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    New-SendConnector -Name <Name> -AddressSpaces * -Internet [-SourceTransportServer <fqdn1>,<fqdn2>...]
    ```
 
@@ -92,11 +93,11 @@ After you create the Send connector, it appears in the Send connector list. To c
 
    - The Send connector isn't scoped to the local Active Directory site. We aren't using the _IsScopedConnector_ parameter, and the default value is `$false`.
 
-   ```
+   ```PowerShell
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 
-   For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+   For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 > [!NOTE]
 > To configure the Send connector to proxy outbound mail through the Front End Transport service, add `-FrontEndProxyEnabled $true` to the command. For more information, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).

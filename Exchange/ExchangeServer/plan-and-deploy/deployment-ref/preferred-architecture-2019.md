@@ -2,14 +2,15 @@
 localization_priority: Normal
 description: 'Summary: Learn about the preferred architecure (PA) for Exchange Server 2019'
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid:
 monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
-ms.date:
 ms.reviewer:
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -38,7 +39,7 @@ The PA is designed with several business requirements in mind, such as the requi
 
 - Increase availability by optimizing around failure domains and reducing complexity
 
-The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Office 365 where you no longer must deploy or manage a large number of servers.
+The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Microsoft 365 or Office 365 where you no longer must deploy or manage a large number of servers.
 
 The PA removes complexity and redundancy where necessary to drive the architecture to a predictable recovery model: when a failure occurs, another copy of the affected database is activated.
 
@@ -88,7 +89,7 @@ While we support stretching an Active Directory site across multiple datacenters
 
 1. Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
 
-2. Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
+2. Active Directory has [published guidance](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/designing-the-site-topology) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
 
 ## Server design
 
@@ -168,11 +169,11 @@ In the example above, we have 120 TB of Exchange database storage and 7.68 TB of
 
 Whether Traditional or Solid-State, all disks that houses an Exchange data are formatted with [ReFS](https://docs.microsoft.com/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
 
-```
+```powershell
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
-[BitLocker](https://technet.microsoft.com/library/dn306081.aspx) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement.  For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
+[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
 
 ## Database availability group design
 
@@ -226,6 +227,6 @@ At a minimum, you will want to deploy an Office Online Server (OOS) farm with at
 
 ## Summary
 
-Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Office 365.
+Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Microsoft 365 and Office 365.
 
 By aligning with the Preferred Architecture you will take advantage of these changes and provide the best on-premises user experience possible. You will continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.

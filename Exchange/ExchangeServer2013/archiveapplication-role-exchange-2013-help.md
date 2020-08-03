@@ -4,11 +4,12 @@ TOCTitle: ArchiveApplication role
 ms:assetid: 22d673cf-d3a3-43f0-be1e-e4fc74546e64
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673046(v=EXCHG.150)
 ms:contentKeyID: 49289194
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

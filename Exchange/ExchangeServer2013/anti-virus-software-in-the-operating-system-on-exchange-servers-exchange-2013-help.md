@@ -4,11 +4,12 @@ TOCTitle: Anti-Virus Software in the Operating System on Exchange Servers
 ms:assetid: 7cef6017-7a55-41f3-a636-1ca4fce575b1
 ms:mtpsurl: https://technet.microsoft.com/library/Bb332342(v=EXCHG.150)
 ms:contentKeyID: 48385271
-ms.date: 07/22/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

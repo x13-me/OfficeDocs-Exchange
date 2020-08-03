@@ -4,11 +4,12 @@ TOCTitle: 'Checklist: Perform a new installation of Exchange 2013'
 ms:assetid: f70d9dd3-7370-472e-b05e-1ea1671272b2
 ms:mtpsurl: https://technet.microsoft.com/library/Ff805042(v=EXCHG.150)
 ms:contentKeyID: 49289467
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

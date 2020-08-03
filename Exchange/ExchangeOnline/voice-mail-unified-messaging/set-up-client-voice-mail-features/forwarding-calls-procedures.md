@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Call answering rules
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Forwarding calls procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro

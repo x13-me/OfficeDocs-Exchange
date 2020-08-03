@@ -4,11 +4,12 @@ TOCTitle: MyTextMessaging role
 ms:assetid: 0e030bdb-8a72-4925-bb77-eaca249c36fc
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633454(v=EXCHG.150)
 ms:contentKeyID: 49289167
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

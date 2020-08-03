@@ -1,8 +1,10 @@
 ---
 title: "Third-party copyright notices"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: End User
 ms.topic: article
 ms.prod: exchange-server-it-pro

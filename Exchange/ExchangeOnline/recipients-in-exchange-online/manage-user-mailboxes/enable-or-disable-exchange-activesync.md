@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft Exchange ActiveSync for a user mailbox. Exchange ActiveSync is a client protocol that lets users synchronize a mobile device with their Exchange mailbox. Exchange ActiveSync is enabled by default when a user mailbox is created. To learn more, see Exchange ActiveSync.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable Exchange ActiveSync for a mailbox
 ms.collection: 
 - exchange-online
@@ -25,12 +26,12 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange ActiveSync settings" entry in the [Clients and Mobile Devices Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to enable or disable Exchange ActiveSync
 
@@ -57,17 +58,17 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 
 This example disables Exchange ActiveSync for the mailbox of Yan Li.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Yan Li" -ActiveSyncEnabled $false
 ```
 
 This example enables Exchange ActiveSync for the mailbox of Elly Nkya.
-
+PowerShell
 ```
 Set-CASMailbox -Identity Ellyn@contoso.com -ActiveSyncEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 
@@ -83,7 +84,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox <identity>
   ```
 

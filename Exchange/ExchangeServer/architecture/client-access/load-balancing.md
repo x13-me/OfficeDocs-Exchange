@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Load balancing in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -31,7 +32,7 @@ Using minimal server roles, Exchange 2016 and 2019 deliver:
 
 - High availability by deploying load balancers to distribute client traffic.
 
-The HTTP protocol standard introduced with Exchange 2013 means that session affinity is no longer required in Exchange 2016 and Exchange 2019. Session affinity allows a persistent connection for messaging-enabled services so that a user doesn't have to reenter their user name and password multiple times.
+The HTTP protocol standard introduced with Exchange 2013 means that session affinity is no longer required in Exchange 2016 and Exchange 2019. Session affinity allows a persistent connection for messaging-enabled services so that a user doesn't have to reenter their username and password multiple times.
 
 Previously, Exchange 2007 and Exchange 2010 supported RPC over HTTP for Outlook Anywhere. Exchange 2013 introduced MAPI over HTTP, although it wasn't enabled by default. It's now enabled by default in Exchange 2016 and Exchange 2019.
 

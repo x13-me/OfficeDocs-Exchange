@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-ms.date: 7/5/2018
 ms.reviewer:
 title: Assign certificates to Exchange Server services
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -42,14 +43,14 @@ The available Exchange services are described in the following table.
 
 - If you renew or replace a certificate that was issued by a CA on a subscribed Edge Transport server, you need to remove the old certificate, and then delete and recreate the Edge Subscription. For more information, see [Edge Subscription process](../edge-transport-servers/edge-subscriptions.md#edge-subscription-process).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access services security" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to assign a certificate to Exchange services
 
@@ -65,13 +66,13 @@ The available Exchange services are described in the following table.
 
 To assign a certificate to Exchange services, use the following syntax:
 
-```
+```PowerShell
 Enable-ExchangeCertificate -Thumbprint <Thumbprint> -Services <Service1>,<Service2>... [-Server <ServerIdentity>]
 ```
 
 This example assigns the certificate that has the thumbprint value `434AC224C8459924B26521298CE8834C514856AB` to the POP, IMAP, IIS, and SMTP services.
 
-```
+```PowerShell
 Enable-ExchangeCertificate -Thumbprint 434AC224C8459924B26521298CE8834C514856AB -Services POP,IMAP,IIS,SMTP
 ```
 
@@ -85,6 +86,6 @@ To verify that you have successfully assigned a certificate to one or more Excha
 
 - In the Exchange Management Shell on the server where you installed the certificate, run the following command to verify the Exchange services for the certificate:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,Services
   ```

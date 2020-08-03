@@ -4,11 +4,12 @@ TOCTitle: Configure legacy public folders where user mailboxes are on Exchange 2
 ms:assetid: 1d5ca19e-696e-4054-a634-15dd34d952b7
 ms:mtpsurl: https://technet.microsoft.com/library/Dn690134(v=EXCHG.150)
 ms:contentKeyID: 62380198
-ms.date: 03/27/2017
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -30,7 +31,7 @@ Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won't 
 1. If your public folders are on servers that are running Exchange Server 2010 or a later version, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. You must also enable Outlook Anywhere on all public folder servers. This allows the Microsoft Exchange RpcClientAccess service to run so that all clients can access public folders. For Exchange Server 2007 public folder servers, the CAS role isn't required, and this step isn't necessary. For more information, see [Install Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
 
     > [!NOTE]
-    > This server doesn't have to be part of the Client Access load balancing. For more information, see <A href="https://technet.microsoft.com/library/ff625247(v=exchg.141).aspx">Understanding Load Balancing in Exchange 2010</A>.
+    > This server doesn't have to be part of the Client Access load balancing. For more information, see <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141)">Understanding Load Balancing in Exchange 2010</A>.
 
 2. Create an empty mailbox database on each public folder server.
 

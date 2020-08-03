@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn about queues and messages in queues in Exchange 2016 and Exchange 2019
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
-ms.date: 7/10/2018
 ms.reviewer:
 title: Queues and messages in queues in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

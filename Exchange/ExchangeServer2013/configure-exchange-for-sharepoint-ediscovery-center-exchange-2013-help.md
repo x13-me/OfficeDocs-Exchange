@@ -4,11 +4,12 @@ TOCTitle: Configure Exchange for SharePoint eDiscovery Center
 ms:assetid: 795c1a3b-295c-4ee5-ade9-52cf3fda3f19
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218665(v=EXCHG.150)
 ms:contentKeyID: 48385255
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 includes features that work with Microsoft SharePoint Server 2013 and Microsoft Lync Server 2013, known as *partner applications*. To make sure these partner applications can access each other's resources, you need to configure server-to-server authentication.
 
-This topic shows you how to configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so users can use the eDiscovery Center in SharePoint 2013 to search Exchange Server 2013 mailbox content. To fully enable this functionality, you must complete additional steps in SharePoint 2013. For details, see [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=257727).
+This topic shows you how to configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so users can use the eDiscovery Center in SharePoint 2013 to search Exchange Server 2013 mailbox content. To fully enable this functionality, you must complete additional steps in SharePoint 2013. For details, see [Configure eDiscovery in SharePoint 2013](https://docs.microsoft.com/SharePoint/governance/configure-ediscovery-0).
 
 ## What do you need to know before you begin?
 
@@ -30,12 +31,12 @@ This topic shows you how to configure server-to-server authentication between Ex
 
 - The SharePoint 2013 site must be configured to use Secure Sockets Layer (SSL).
 
-- The [Exchange Web Services Managed API](https://go.microsoft.com/fwlink/?linkid=257726) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
+- The [Exchange Web Services Managed API](https://www.microsoft.com/download/details.aspx?id=35371) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Configure server-to-server authentication for Exchange 2013 on a server running SharePoint Server 2013
 

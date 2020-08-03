@@ -4,11 +4,12 @@ TOCTitle: Configure OAuth authentication between Exchange and Exchange Online or
 ms:assetid: f703e153-98e2-4268-8a6e-07a86b0a1d22
 ms:mtpsurl: https://technet.microsoft.com/library/Dn594521(v=EXCHG.150)
 ms:contentKeyID: 61200240
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -16,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Exchange 2013-only hybrid deployments configure OAuth authentication when using the Hybrid Configuration Wizard. For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features are only fully available across your organization by using the new Exchange OAuth authentication protocol.
+Exchange 2013-only hybrid deployments configure OAuth authentication when using the Hybrid Configuration Wizard. For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Microsoft 365 or Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features are only fully available across your organization by using the new Exchange OAuth authentication protocol.
 
 The new Exchange OAuth authentication process currently enables the following Exchange features:
 
@@ -29,7 +30,9 @@ The new Exchange OAuth authentication process currently enables the following Ex
 We recommend that all mixed Exchange organizations that implement a hybrid deployment with Exchange 2013 and Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
 > [!IMPORTANT]
-> If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.<BR>This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> - If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.
+>
+> - This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china)..
 
 ## What do you need to know before you begin?
 
@@ -37,24 +40,24 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- Completed configuration of your hybrid deployment using the Hybrid Deployment Wizard. For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581\(v=exchg.150\)).
+- Completed configuration of your hybrid deployment using the Hybrid Deployment Wizard. For more information, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## How do you configure OAuth authentication between your on-premises Exchange and Exchange Online organizations?
 
 ### Step 1: Create the authorization server objects for your Exchange Online organization
 
-For this procedure, you have to specify a verified domain for your Exchange Online organization and the Exchange Online Tenant Name. The first domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.  The second domain which is your actual tenant name like contoso.onmicrosoft.com is referred to as *\<your tenant domain\>*.
+For this procedure, you have to specify a verified domain for your Exchange Online organization. It should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred to as *\<your verified domain\>* in the following procedure.
 
 Run the following command in the Exchange Management Shell (Exchange PowerShell) in your on-premises Exchange organization:
 
 ```powershell
 New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
-New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your tenant domain>/federationmetadata/2007-06/federationmetadata.xml"
+New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"
 ```
 
 ### Step 2: Enable the partner application for your Exchange Online organization
@@ -158,9 +161,9 @@ Get-OABVirtualDirectory | FL server,*url*
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-### Step 6: Create an IntraOrganizationConnector from your on-premises organization to Office 365
+### Step 6: Create an IntraOrganizationConnector from your on-premises organization to Microsoft 365 or Office 365
 
-You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 tenant is created. For example, if your organization's domain hosted in the Office 365 tenant is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
+You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Microsoft 365 or Office 365 organization is created. For example, if your organization's domain hosted in the Microsoft 365 or Office 365 organization is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
 
 Using Exchange PowerShell, run the following cmdlet in your on-premises organization:
 
@@ -169,7 +172,7 @@ $ServiceDomain = Get-AcceptedDomain | where {$_.DomainName -like "*.mail.onmicro
 New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains $ServiceDomain
 ```
 
-### Step 7: Create an IntraOrganizationConnector from your Office 365 tenant to your on-premises Exchange organization
+### Step 7: Create an IntraOrganizationConnector from your Microsoft 365 or Office 365 organization to your on-premises Exchange organization
 
 You must define a target address for your mailboxes that are hosted in your on-premises organization. If you organization's primary SMTP adddress is "contoso.com", this would be "contoso.com".
 You must also define the external Autodiscover endpoint for your on-premises organization. If your company is "contoso.com" this is usually either of the following:
@@ -179,7 +182,7 @@ You must also define the external Autodiscover endpoint for your on-premises org
 - https://\<your primary SMTP domain\>/autodiscover/autodiscover.svc
 
 > [!NOTE]
-> You can use the [Get-IntraOrganizationConfiguration](https://technet.microsoft.com/library/dn551183(v=exchg.150)) cmdlet in both your on-premises and Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://technet.microsoft.com/library/dn551178(v=exchg.150)) cmdlet.
+> You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Microsoft 365 or Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/New-IntraOrganizationConnector) cmdlet.
 
 Using Windows PowerShell, run the following cmdlet:
 
@@ -194,20 +197,20 @@ New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -Discovery
 
 When you configure a hybrid deployment in a pre-Exchange 2013 organization, you have to install at least one Exchange 2013 SP1 or greater server with the Client Access and Mailbox server roles in your existing Exchange organization. The Exchange 2013 Client Access and Mailbox servers serve as frontend servers and coordinate communications between your existing Exchange on-premises organization and the Exchange Online organization. This communication includes message transport and messaging features between the on-premises and Exchange Online organizations. We highly recommend installing more than one Exchange 2013 server in your on-premises organization to help increase reliability and availability of hybrid deployment features.
 
-In a mixed deployment with Exchange 2013/2010 or Exchange 2013/2007, it is recommended that all the Internet-facing frontend servers for your on-premises organization are Client Access servers running Exchange 2013 SP1 or greater. All Exchange Web Services (EWS) requests originating from Office 365 and Exchange Online must connect to an Exchange 2013 Client Access server(s) in your on-premises deployment. Additionally, all EWS requests originating in your on-premises Exchange organizations for Exchange Online must be proxied through a Client Access server running Exchange 2013 SP1 or greater. Since these Exchange 2013 Client Access servers have to handle this additional incoming and outgoing EWS requests, it is important to have a sufficient number of Exchange 2013 Client Access servers available to handle the processing load and provide connection redundancy. The number of Client Access servers needed will depend on the average amount of EWS requests and will vary by organization.
+In a mixed deployment with Exchange 2013/2010 or Exchange 2013/2007, it is recommended that all the Internet-facing frontend servers for your on-premises organization are Client Access servers running Exchange 2013 SP1 or greater. All Exchange Web Services (EWS) requests originating from Microsoft 365 or Office 365 and Exchange Online must connect to an Exchange 2013 Client Access server(s) in your on-premises deployment. Additionally, all EWS requests originating in your on-premises Exchange organizations for Exchange Online must be proxied through a Client Access server running Exchange 2013 SP1 or greater. Since these Exchange 2013 Client Access servers have to handle this additional incoming and outgoing EWS requests, it is important to have a sufficient number of Exchange 2013 Client Access servers available to handle the processing load and provide connection redundancy. The number of Client Access servers needed will depend on the average amount of EWS requests and will vary by organization.
 
 Before you complete the following step, make sure:
 
 - The frontend hybrid servers are Exchange 2013 SP1 or greater
 
-- You have a unique external EWS URL for the Exchange 2013 server(s). The Office 365 tenant must connect to these servers in order for cloud-based requests for hybrid features to work correctly.
+- You have a unique external EWS URL for the Exchange 2013 server(s). The Microsoft 365 or Office 365 organization must connect to these servers in order for cloud-based requests for hybrid features to work correctly.
 
 - The servers have both the Mailbox and Client Access server roles
 
 - Any existing Exchange 2010/2007 Mailbox and Client Access servers have the latest Cumulative Update (CU) or Service Pack (SP) applied.
 
 > [!NOTE]
-> Existing Exchange 2010/2007 Mailbox servers can continue to use Exchange 2010/2007 Client Access servers for frontend servers for non-hybrid feature connections. Only hybrid deployment feature requests from the Office 365 tenant need to connect to Exchange 2013 servers.
+> Existing Exchange 2010/2007 Mailbox servers can continue to use Exchange 2010/2007 Client Access servers for frontend servers for non-hybrid feature connections. Only hybrid deployment feature requests from the Microsoft 365 or Office 365 organization need to connect to Exchange 2013 servers.
 
 An *AvailabilityAddressSpace* must be configured on pre-Exchange 2013 Client Access servers that points to the Exchange Web Services endpoint of your on-premises Exchange 2013 SP1 Client Access server(s). This endpoint is the same endpoint as previously outlined in Step 5 or can be determined by running the following cmdlet on your on-premises Exchange 2013 SP1 Client Access server:
 
@@ -221,12 +224,12 @@ Get-WebServicesVirtualDirectory | Format-List AdminDisplayVersion,ExternalUrl
 To configure the *AvailabilityAddressSpace*, use Exchange PowerShell and run the following cmdlet in your on-premises organization:
 
 ```powershell
-Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Microsoft 365 or Office 365 service target address> -UseServiceAccount $True
 ```
 
 ## How do you know this worked?
 
-You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://technet.microsoft.com/library/jj218623\(v=exchg.150\)) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
+You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
 
 > [!IMPORTANT]
 > When connecting to your Exchange Online organization using Remote PowerShell, you may have to use the <EM>AllowClobber</EM> parameter with the <STRONG>Import-PSSession</STRONG> cmdlet to import the latest commands in to the local PowerShell session.
@@ -237,7 +240,7 @@ To verify that your on-premises Exchange organization can successfully connect t
 Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
-To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\)) to connect to your Exchange Online organization and run the following command:
+To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to connect to your Exchange Online organization and run the following command:
 
 ```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List
@@ -249,4 +252,4 @@ So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://mail.c
 > You can ignore the "The SMTP address has no mailbox associated with it." error. It's only important that the <EM>ResultTask</EM> parameter returns a value of <STRONG>Success</STRONG>. For example, the last section of the test output should read:<BR><CODE>ResultType: Success</CODE><BR><CODE>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</CODE><BR><CODE>IsValid: True</CODE><BR><CODE>ObjectState: New</CODE>
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

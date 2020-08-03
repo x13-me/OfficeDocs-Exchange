@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Outside In HTML Export © 1991, 2011 Oracle
 ms.topic: reference
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
-ms.date: 4/19/2018
 ms.reviewer: 
 title: Third-party copyright notices
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

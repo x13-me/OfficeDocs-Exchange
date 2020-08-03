@@ -4,11 +4,12 @@ TOCTitle: Recipient Policies role
 ms:assetid: 81c76e5d-bc57-4326-93ca-5e673c9aa85e
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876916(v=EXCHG.150)
 ms:contentKeyID: 49289328
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

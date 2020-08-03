@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about the Managed Store in Exchange Server 2016 and 2019'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: efdaf80b-335c-491c-8eb5-1fafd297e8a2
-ms.date: 
 ms.reviewer: 
 title: Managed Store in Exchange 2016 and Exchange 2019
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp

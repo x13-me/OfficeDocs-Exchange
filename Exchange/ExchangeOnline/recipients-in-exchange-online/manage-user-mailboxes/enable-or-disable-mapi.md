@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook on the web, a POP email client, or an IMAP client.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
-ms.date: 12/31/2017
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Enable or disable MAPI for a mailbox
 ms.collection: 
 - exchange-online
@@ -34,12 +35,12 @@ For additional management tasks related to managing email client access to a mai
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Clients and Mobile Devices Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to enable or disable MAPI
 
@@ -63,17 +64,17 @@ For additional management tasks related to managing email client access to a mai
 
 This example disables MAPI for the mailbox of Ken Sanchez.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Ken Sanchez" -MAPIEnabled $false
 ```
 
 This example enables MAPI for the mailbox of Esther Valle.
 
-```
+```PowerShell
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 
@@ -89,7 +90,7 @@ Or
 
 - Run the following command in Exchange Online PowerShell.
 
-  ```
+  ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
 

@@ -4,11 +4,12 @@ TOCTitle: Organization Transport Settings role
 ms:assetid: ff4d032e-1b97-4a9d-b479-9b0d61832221
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876961(v=EXCHG.150)
 ms:contentKeyID: 49289473
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

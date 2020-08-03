@@ -4,11 +4,12 @@ TOCTitle: Upgrade Exchange 2007 UM to Exchange 2013 UM
 ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169227(v=EXCHG.150)
 ms:contentKeyID: 53382781
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ When you're upgrading a Microsoft Exchange 2007 organization with Unified Messag
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Download and install the required UM language packs
 
@@ -42,7 +43,7 @@ By default, when you install an Exchange 2013 Mailbox server, the U.S. English (
 > [!NOTE]
 > If U.S. English is the only language that you want to provide for your dial plan, you can skip this step and go to step 2.
 
-You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 This example uses setup.exe to install the Japanese (ja-JP) UM language pack.
 
@@ -443,11 +444,11 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-- [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest)
 
-- [New-MigrationBatch](https://technet.microsoft.com/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch)
 
-- [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
+- [Moving Mailboxes](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124797(v=exchg.80))
 
 To move an Exchange 2007 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 

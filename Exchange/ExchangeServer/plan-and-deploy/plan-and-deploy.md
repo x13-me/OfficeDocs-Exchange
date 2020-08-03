@@ -2,15 +2,16 @@
 localization_priority: Priority
 description: 'Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019.'
 ms.topic: hub-page
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
-ms.date: 7/27/2018
 ms.reviewer: 
 title: Planning and deployment for Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -43,7 +44,7 @@ This topic contains links to topics and information about planning for and then 
 
 > Learn about the Windows Server features and the other software that needs to be installed for a successful installation of Exchange.
 
-[Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=626978)
+[Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/)
 
 > Use this tool to generate a customized checklist for planning, installing, or upgrading Exchange. Guidance is available for multiple scenarios, including an on-premises, hybrid, or cloud deployment.
 
@@ -57,7 +58,7 @@ This topic contains links to topics and information about planning for and then 
 
 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
 
-> Learn about planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange organization.
+> Learn about planning a hybrid deployment with Microsoft 365 or Office 365 and your on-premises Exchange organization.
 
 [Exchange Server virtualization](../plan-and-deploy/virtualization.md)
 
@@ -75,7 +76,7 @@ The test environment will act as your "proof of concept" for your new Exchange d
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Hyper-V technologies in Windows Server. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://go.microsoft.com/fwlink/p/?LinkId=117704). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
+For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
 
 ## Deploy Exchange 2016 or Exchange 2019
 
@@ -117,7 +118,7 @@ You can use different types and modes of Exchange Setup to install and maintain 
 
 ### Exchange editions and versions
 
-Exchange is available in two server editions: Standard Edition and Enterprise Edition. The edition you install is defined by your product key (the only available download can install both versions). For more information, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+Exchange is available in two server editions: Standard Edition and Enterprise Edition. The edition you install is defined by your product key (the only available download can install both versions). For more information, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 ### Types of Exchange Setup
 

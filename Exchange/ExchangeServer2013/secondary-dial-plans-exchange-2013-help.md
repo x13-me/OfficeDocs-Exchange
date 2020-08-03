@@ -4,11 +4,12 @@ TOCTitle: Secondary dial plans
 ms:assetid: ecf474c2-042d-4aaf-9f5b-d5138c56ef39
 ms:mtpsurl: https://technet.microsoft.com/library/Ff629383(v=EXCHG.150)
 ms:contentKeyID: 54817012
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

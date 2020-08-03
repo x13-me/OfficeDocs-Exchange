@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
-ms.date: 7/5/2018
 ms.reviewer:
 title: Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -25,11 +26,9 @@ For more information about ActiveSync, see [Exchange ActiveSync](exchange-active
 
 For information about setting up email on your mobile device, see these topics:
 
-- [Set up Office apps and email on iOS devices](https://go.microsoft.com/fwlink/p/?linkid=396655)
+- [Set up Office apps and email on iOS devices](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f)
 
-- [Set up Office apps and email on Android](https://go.microsoft.com/fwlink/p/?linkid=525632)
-
-- [Set up Office apps and email on Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=396654)
+- [Set up Office apps and email on Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)
 
 For additional management tasks related to user access to mailboxes, see these topics:
 
@@ -45,14 +44,14 @@ For additional management tasks related to user access to mailboxes, see these t
 
 - For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange ActiveSync settings" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Enable or disable Exchange ActiveSync access to a single mailbox
 
@@ -86,23 +85,23 @@ For additional management tasks related to user access to mailboxes, see these t
 
 To enable or disable ActiveSync access to a single mailbox, use this syntax:
 
-```
+```powershell
 Set-CasMailbox -Identity <MailboxIdentity> -ActiveSyncEnabled <$true | $false>
 ```
 
 This example disables ActiveSync access to the mailbox named Yan Li.
 
-```
+```powershell
 Set-CasMailbox -Identity "Yan Li" -ActiveSyncEnabled $false
 ```
 
 This example enables ActiveSync access to the mailbox named Elly Nkya.
 
-```
+```powershell
 Set-CasMailbox -Identity "Elly Nkya" -ActiveSyncEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## Enable or disable Exchange ActiveSync access to multiple mailboxes
 
@@ -136,7 +135,7 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 - Use the _OrganizationalUnit_ parameter to filter the mailboxes by organizational unit (OU).
 
-- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/filter-properties).
+- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties).
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 
@@ -144,23 +143,23 @@ You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to iden
 
 This example disables ActiveSync access to all user mailboxes in the North America\Finance OU.
 
-```
+```powershell
 $NAFinance = Get-Mailbox -OrganizationalUnit "OU=Marketing,OU=North America,DC=contoso,DC=com" -Filter "RecipientTypeDetails -eq 'UserMailbox'" -ResultSize Unlimited; $NAFinance | foreach {Set-CasMailbox $_.Identity -ActiveSyncEnabled $false}
 ```
 
 This example disables ActiveSync access to all user mailboxes in the Engineering department in Washington state.
 
-```
+```powershell
 Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Set-CasMailbox -ActiveSyncEnabled $false
 ```
 
 This example uses the text file C:\My Documents\Accounts.txt to disable ActiveSync access to the specified mailboxes.
 
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-CasMailbox $_ -ActiveSyncEnabled $false}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ## How do you know this worked?
 
@@ -176,18 +175,18 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync acces
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
-  ```
+  ```powershell
   Get-CasMailbox -Identity "<MailboxIdentity>"
   ```
 
 - Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
-  ```
+  ```powershell
   Get-User -Filter "RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'" | Get-CasMailbox
   ```
 
 - In the Exchange Management Shell, run this command to show all mailboxes where ActiveSync access is disabled:
 
-  ```
+  ```powershell
   Get-CasMailbox -ResultSize unlimited -Filter "ActiveSyncEnabled -eq `$false"
   ```

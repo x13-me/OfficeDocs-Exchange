@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Receive connectors
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -259,30 +260,30 @@ The available Receive connector permissions are described in the following table
 
 To see the permissions that are assigned to security principals on a Receive connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ADPermission -Identity <ReceiveConnector> [-User <SecurityPrincipal>] | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 For example, to see the permissions that are assigned to all security principals on the Receive connector named Client Frontend Mailbox01, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "Client Frontend Mailbox01" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To see the permissions that are assigned only to the security principal `NT AUTHORITY\Authenticated Users` on the Receive connector named Default Mailbox01, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "Default Mailbox01" -User "NT AUTHORITY\Authenticated Users" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To add permissions to a security principal on a Receive connector, use the following syntax:
 
-```
+```PowerShell
 Add-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
 
 To remove permissions from a security principal on a Receive connector, use the following syntax:
 
-```
+```PowerShell
 Remove-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```

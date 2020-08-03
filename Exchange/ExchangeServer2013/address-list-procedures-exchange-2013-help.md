@@ -4,11 +4,12 @@ TOCTitle: Address list procedures
 ms:assetid: 44c87349-964b-4700-9ce9-87bd4cb2249e
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997686(v=EXCHG.150)
 ms:contentKeyID: 49289241
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

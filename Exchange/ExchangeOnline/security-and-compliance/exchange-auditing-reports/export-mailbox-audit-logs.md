@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Admins can learn how to use the Exchange admin center (EAC) to export mailbox audit logs in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Export mailbox audit logs
 ms.collection: 
 - exchange-online
@@ -38,7 +39,7 @@ When you export entries from mailbox audit logs, Exchange Online saves the entri
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Export the mailbox audit log
 
@@ -90,7 +91,7 @@ To save and view the SearchResult.xml file:
 
 The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the admin purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
 
-```
+```XML
 <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
   Owner="PPLNSL-dom\david50001-1363917750"
   LastAccessed="2010-04-30T11:01:55.140625-07:00"
@@ -123,7 +124,7 @@ Here's a description of useful fields in the mailbox audit log. They can help yo
 |:-----|:-----|
 |Owner|The owner of the mailbox that was accessed by a non-owner.|
 |LastAccessed|The date and time when the mailbox was accessed.|
-|Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](https://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).|
+|Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a non-owner mailbox access report in Exchange Online](non-owner-mailbox-access-report.md).|
 |OperationResult|Whether the action performed by the non-owner succeeded or failed.|
 |LogonType|The type of non-owner access. These include admin, delegate, and external.|
 |FolderPathName|The name of the folder that contained the message that was affected by the non-owner.|

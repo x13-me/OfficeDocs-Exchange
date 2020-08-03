@@ -4,11 +4,12 @@ TOCTitle: MyRetentionPolicies role
 ms:assetid: 65f49d19-cfb5-4142-8359-8368d5c48085
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876897(v=EXCHG.150)
 ms:contentKeyID: 49289283
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

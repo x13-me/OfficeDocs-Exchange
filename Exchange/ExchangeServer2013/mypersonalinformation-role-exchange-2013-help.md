@@ -4,11 +4,12 @@ TOCTitle: MyPersonalInformation role
 ms:assetid: 76848ea9-79db-4ac8-bdfa-eecc79394461
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461932(v=EXCHG.150)
 ms:contentKeyID: 49289309
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

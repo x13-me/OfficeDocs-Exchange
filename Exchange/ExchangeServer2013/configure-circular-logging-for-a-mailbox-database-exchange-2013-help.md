@@ -4,11 +4,12 @@ TOCTitle: Configure circular logging for a mailbox database
 ms:assetid: 29cbd7cd-382b-4e0d-8368-2e49e75df2fc
 ms:mtpsurl: https://technet.microsoft.com/library/Dn756374(v=EXCHG.150)
 ms:contentKeyID: 62524835
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -58,4 +59,4 @@ This example disables circular logging for database DB1.
 Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
 ```
 
-See [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)) for other mailbox database parameters you can configure.
+See [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase) for other mailbox database parameters you can configure.

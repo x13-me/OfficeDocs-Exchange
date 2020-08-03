@@ -4,11 +4,12 @@ TOCTitle: User Options role
 ms:assetid: fb4d58f5-cc62-4ce8-b2e4-c3cc91795a12
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876960(v=EXCHG.150)
 ms:contentKeyID: 49289475
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Use Telnet to test SMTP communication on Exchange servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -45,11 +46,11 @@ You can use Telnet to test SMTP communication to:
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Install the Telnet Client on your computer
 
-On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](https://go.microsoft.com/fwlink/p/?linkId=179054).
+On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
 ## Step 2: Find the FQDN or IP address of the destination SMTP server
 
@@ -139,7 +140,7 @@ In this example, we're going to use the following values. When you run the comma
 
 Here's what a successful session using the steps above looks like:
 
-```
+```console
 C:\Windows\System32> telnet
 Microsoft Telnet> set localecho
 Microsoft Telnet> set logfile c:\TelnetTest.txt
@@ -202,7 +203,7 @@ The first digit (X) is particularly important to understand because it indicates
 |4.y.z|The command wasn't accepted by the remote server for a reason that might be temporary. The sending server should try to connect again later to see if the remote server can successfully accept the command. The sending server will continue to retry the connection until either a successful connection is completed (indicated by a 2.y.z code) or fails permanently (indicated by a 5.y.z code).  <br/> An example of a temporary error is low storage space on the remote server. Once more space is made available, the remote server should be able to successfully accept the command.|
 |5.y.z|The command wasn't accepted by the remote server for a reason that is isn't recoverable. The sending server won't retry the connection and will send a non-delivery report back to the user who sent the message.  <br/> An example of an unrecoverable error is a message that's sent to an email address that doesn't exist.|
 
-The table above is based on information provided by [RFC 5321 (Simple Mail Transfer Protocol), section 4.2.1](https://go.microsoft.com/fwlink/p/?LinkID=824668). Additional information, including descriptions of the second (Y) and third (Z) digits of SMTP reply codes is included in this section, and in sections [4.2.2](https://go.microsoft.com/fwlink/p/?LinkId=824669) and [4.2.3](https://go.microsoft.com/fwlink/p/?LinkId=824670).
+The table above is based on information provided by [RFC 5321 (Simple Mail Transfer Protocol), section 4.2.1](https://tools.ietf.org/html/rfc5321#section-4.2.1). Additional information, including descriptions of the second (Y) and third (Z) digits of SMTP reply codes is included in this section, and in sections [4.2.2](https://tools.ietf.org/html/rfc5321#section-4.2.2) and [4.2.3](https://tools.ietf.org/html/rfc5321#section-4.2.3).
 
 ### OPEN command
 

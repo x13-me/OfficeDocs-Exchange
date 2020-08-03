@@ -4,11 +4,12 @@ TOCTitle: Disable or enable Exchange Search
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,7 +34,7 @@ For additional management tasks related to Exchange Search, see [Exchange Search
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Disable or enable Exchange Search for a mailbox database
 
@@ -54,7 +55,7 @@ This command enables Exchange Search for a mailbox database named EXCH01.
 Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase).
 
 ## Disable or enable Exchange Search for a Mailbox server
 

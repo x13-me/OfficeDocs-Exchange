@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Overview of the Client Access services on Mailbox servers in Exchange Server'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
-ms.date: 7/3/2018
 ms.reviewer: 
 title: Client Access services
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

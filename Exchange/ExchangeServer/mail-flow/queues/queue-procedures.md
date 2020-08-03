@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn how to view, retry, resubmit, suspend, and resume queues in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 37f11378-a884-4aff-ab55-689f40a46321
-ms.date: 7/11/2018
 ms.reviewer:
 title: Procedures for queues
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -53,7 +54,7 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
 
     When the shortcut appears in the results, you can select it.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For more information about using filters and identity values in the Exchange Management Shell, see [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
 
@@ -62,7 +63,7 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## View queues
 
@@ -78,23 +79,23 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
 
 To view queues, use the following syntax.
 
-```
+```powershell
 Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
 ```
 
 This example displays basic information about all non-empty queues on the server named Mailbox01.
 
-```
+```powershell
 Get-Queue -Server Mailbox01 -Exclude Empty
 ```
 
 This example displays detailed information for all queues on the local Exchange server that contain more than 100 messages.
 
-```
+```powershell
 Get-Queue -Filter "MessageCount -gt 100" | Format-List
 ```
 
-For more information, see [Get-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queue) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
+For more information, see [Get-Queue](https://docs.microsoft.com/powershell/module/exchange/get-queue) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
 
 ### Use the Exchange Management Shell to view queue summary information on multiple Exchange servers
 
@@ -110,23 +111,23 @@ By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain
 
 To view summary information about queues on multiple Exchange servers, run the following command:
 
-```
+```powershell
 Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2...> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
 ```
 
 This example displays summary information about the queues on all Exchange 2013 or later Mailbox servers in the Active Directory site named FirstSite where the message count is greater than 100.
 
-```
+```powershell
 Get-QueueDigest -Site FirstSite -Filter "MessageCount -gt 100"
 ```
 
 This example displays summary information about the queues on all Mailbox servers in the database availability group (DAG) named DAG01 where the queue status has the value **Retry**.
 
-```
+```powershell
 Get-QueueDigest -Dag DAG01 -Filter "Status -eq 'Retry'"
 ```
 
-For more information, see [Get-QueueDigest](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-queuedigest).
+For more information, see [Get-QueueDigest](https://docs.microsoft.com/powershell/module/exchange/get-queuedigest).
 
 ## Retry queues
 
@@ -160,19 +161,19 @@ When you retry a delivery queue, you force an immediate connection attempt and o
 
 To retry queues, use the following syntax.
 
-```
+```powershell
 Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
 ```
 
 This example retries all queues on the local server with the status of Retry.
 
-```
+```powershell
 Retry-Queue -Filter "Status -eq 'Retry'"
 ```
 
 This example retries the queue named contoso.com on the server named Mailbox01.
 
-```
+```powershell
 Retry-Queue -Identity Mailbox01\contoso.com
 ```
 
@@ -184,7 +185,7 @@ To verify that you have successfully retried a queue, use either of the followin
 
 - In the Exchange Management Shell, replace _\<QueueIdentity\>_ with the identity of the queue, and use the following syntax to verify the property values:
 
-  ```
+  ```powershell
   Get-Queue -Identity <QueueIdentity> | Format-Table -Auto Identity,Status,LastRetryTime,NextRetryTime
   ```
 
@@ -212,23 +213,23 @@ Resubmitting a queue sends all messages in the queue back to the Submission queu
 
 To resubmit queues, use the following syntax:
 
-```
+```powershell
 Retry-Queue <-Identity QueueIdentity | -Filter "Status -eq 'Retry'" -Server ServerIdentity> -Resubmit $true
 ```
 
 This example resubmits all messages located in any delivery queues with the status of Retry on the server named Mailbox01.
 
-```
+```powershell
 Retry-Queue -Filter "Status -eq 'Retry'" -Server Mailbox01 -Resubmit $true
 ```
 
 This example resubmits all messages located in the Unreachable queue on the server Mailbox01.
 
-```
+```powershell
 Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 ```
 
-For more information, see [Retry-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/retry-queue).
+For more information, see [Retry-Queue](https://docs.microsoft.com/powershell/module/exchange/retry-queue).
 
 ### How do you know this worked?
 
@@ -238,7 +239,7 @@ To verify that you have successfully resubmitted a queue, use either of the foll
 
 - In the Exchange Management Shell, replace _\<QueueIdentity\>_ with the identity of the queue, and run the following command to verify the property values:
 
-  ```
+  ```powershell
   Get-Queue -Identity <QueueIdentity>
   ```
 
@@ -270,23 +271,23 @@ To resubmit a message from the poison message queue, perform the following steps
 
 1. Find the identity of the message by running the following command on the local server.
 
-   ```
+   ```powershell
    Get-Message -Queue Poison | Format-Table Identity
    ```
 
 2. Use the identity of the message from the previous step in the following command.
 
-   ```
+   ```powershell
    Resume-Message <PoisonMessageIdentity>
    ```
 
    This example resumes a message from the poison message queue that has the message Identity value of 222.
 
-   ```
+   ```powershell
    Resume-Message 222
    ```
 
-For more information, see [Resume-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/resume-message).
+For more information, see [Resume-Message](https://docs.microsoft.com/powershell/module/exchange/resume-message).
 
 ### How do you know this worked?
 
@@ -296,7 +297,7 @@ To verify that you have successfully resubmitted a message from the poison messa
 
 - In the Exchange Management Shell, run the following command:
 
-  ```
+  ```powershell
   Get-Message -Queue Poison
   ```
 
@@ -330,23 +331,23 @@ You can suspend a queue to stop mail flow, and then suspend one or more messages
 
 To suspend a queue, use the following syntax:
 
-```
+```powershell
 Suspend-Queue <-Identity QueueIdentity | -Filter "QueueFilter" [-Server ServerIdentity]>
 ```
 
 This example suspends all queues on the local server that have a message count equal to or greater than 1,000 and that have a status of Retry.
 
-```
+```powershell
 Suspend-Queue -Filter "MessageCount -ge 1000 -and Status -eq 'Retry'"
 ```
 
 This example suspends the queue named contoso.com on the server named Mailbox01.
 
-```
+```powershell
 Suspend-Queue -Identity Mailbox01\contoso.com
 ```
 
-For more information, see [Suspend-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/suspend-queue).
+For more information, see [Suspend-Queue](https://docs.microsoft.com/powershell/module/exchange/suspend-queue).
 
 ### How do you know this worked?
 
@@ -356,7 +357,7 @@ To verify that you have successfully suspended a queue, use either of the follow
 
 - In the Exchange Management Shell, replace _\<QueueIdentity\>_ with the identity of the queue, and run the following command to verify the **Status** property value:
 
-  ```
+  ```powershell
   Get-Queue -Identity <QueueIdentity>
   ```
 
@@ -393,23 +394,23 @@ By resuming a queue, you restart outgoing message delivery from a queue that has
 
 To resume queues, use the following syntax:
 
-```
+```powershell
 Resume-Queue <-Identity QueueIdentity | -Filter "QueueFilter" [-Server ServerIdentity]>
 ```
 
 This example resumes all queues on the local server that have a status of Suspended.
 
-```
+```powershell
 Resume-Queue -Filter "Status -eq 'Suspended'"
 ```
 
 This example resumes the suspended delivery queue named contoso.com on the server named Mailbox01.
 
-```
+```powershell
 Resume-Queue -Identity Mailbox01\contoso.com
 ```
 
-For more information, see [Resume-Queue](https://docs.microsoft.com/powershell/module/exchange/mail-flow/resume-queue).
+For more information, see [Resume-Queue](https://docs.microsoft.com/powershell/module/exchange/resume-queue).
 
 ### How do you know this worked?
 
@@ -419,6 +420,6 @@ To verify that you have successfully resumed a queue, use either of the followin
 
 - In the Exchange Management Shell, replace _\<QueueIdentity\>_ with the identity of the queue, and run the following command to verify the **Status** property value:
 
-  ```
+  ```powershell
   Get-Queue -Identity <QueueIdentity>
   ```

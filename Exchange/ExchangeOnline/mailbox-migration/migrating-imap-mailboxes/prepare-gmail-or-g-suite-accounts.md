@@ -1,17 +1,12 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: mattpennathe3rd
-f1_keywords:
-- O365P_MigrationsIMAPGmailAppPass
-- O365M_MigrationsIMAPGmailAppPass
-- O365E_MigrationsIMAPGmailAppPass
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
-ms.date: 8/15/2018
 ms.reviewer: 
-description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
-title: Prepare your Gmail or G Suite account for connecting to Outlook and Office 365
+description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Microsoft 365 or Office 365 will use with your Gmail address to make the connection.
+title: Prepare your Gmail or G Suite account for connecting to Outlook and Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -28,17 +23,23 @@ search.appverid:
 - ZOL160
 - BCS160
 audience: Admin
-ms.custom: Adm_O365_Setup
+f1.keywords:
+- CSH
+ms.custom: 
+- Adm_O365_Setup
+- O365P_MigrationsIMAPGmailAppPass
+- O365M_MigrationsIMAPGmailAppPass
+- O365E_MigrationsIMAPGmailAppPass
 ms.service: exchange-online
 manager: serdars
 
 ---
 
-# Prepare your Gmail or G Suite account for connecting to Outlook and Office 365
+# Prepare your Gmail or G Suite account for connecting to Outlook and Microsoft 365 or Office 365
 
-Before you [connect to your Gmail](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d.aspx) account from Outlook on the web, or [add a Gmail](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
+Before you [connect to your Gmail](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d) account from Outlook on the web, or [add a Gmail](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 
-You will also have to do this if your admin is planning to migrate your [Gmail](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Office 365.
+You will also have to do this if your admin is planning to migrate your [Gmail](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Microsoft 365 or Office 365.
 
 ## Enable IMAP for Gmail and G Suite Accounts
 
@@ -58,7 +59,7 @@ To enable IMAP for Gmail or G Suite Accounts:
 
 6. Scroll to the bottom. Click **Save Changes**.
 
-## Enable your Gmail to be connected by Office 365
+## Enable your Gmail to be connected by Microsoft 365 or Office 365
 
 To use an app password with Gmail, you have to first turn on 2-step verification, and then obtain the app password. Once you have an app password you can use that in combination with your username to connect to Gmail.
 
@@ -112,9 +113,9 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 7. Now you're ready to add your Gmail account to Outlook. When you're prompted for a password, you *enter this app password for your Gmail account*. Don't enter your Gmail password. For instructions on adding your Gmail account to Outlook, see these articles:
 
-   - [Add an email account to Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)
+   - [Add an email account to Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
 
-   - [Connect email accounts in Outlook on the web (Office 365)](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d)
+   - [Connect email accounts in Outlook on the web (Microsoft 365)](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4)
 
 ### Optionally revoke the app password
 
@@ -136,6 +137,6 @@ If you need the Gmail connection for a brief time only, for example for an IMAP 
 
 ## Related Topics
 
-[Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e)
+[Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin)
 
-[Ways to migrate multiple email accounts to Office 365](../mailbox-migration.md)
+[Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../mailbox-migration.md)

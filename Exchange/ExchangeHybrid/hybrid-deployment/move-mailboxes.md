@@ -1,11 +1,13 @@
 ---
 title: "Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments"
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - 'O365E_HRCMoveRequest_FL312271'
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -23,19 +25,19 @@ description: "With an Exchange-based hybrid deployment, you can choose to either
 
 With an Exchange-based hybrid deployment, you can choose to either move on-premises Exchange mailboxes to the Exchange Online organization or move Exchange Online mailboxes to the Exchange organization. When you move mailboxes between the on-premises and Exchange Online organizations, you use migration batches to perform the remote mailbox move request. This approach allows you to move existing mailboxes instead of creating new user mailboxes and importing user information. This approach is different than migrating user mailboxes from an on-premises Exchange organization to Exchange Online as part of a complete Exchange migration to the cloud. The mailbox moves discussed in this topic are part of administrative Exchange management in a longer-term coexistence relationship between on-premises Exchange and Exchange Online organizations.
 
-For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
+For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 > [!IMPORTANT]
 > You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md).
 
 > [!IMPORTANT]
-> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy).
+> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-ummailboxpolicy).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 10 minutes to configure the migration batch, but total time to complete the migration depends on the number of mailboxes included in each migration batch.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/recipient-permissions) topic.
 
 - Hybrid deployment is configured between your on-premises and Exchange Online organizations.
 
@@ -43,10 +45,10 @@ For more information about migrating on-premises Exchange organizations to Excha
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
-- The Office 365 Exchange license must be assigned only after the migration is complete. You then have 30 days to assign the license. 
+- The Microsoft 365 or Office 365 Exchange license must be assigned only after the migration is complete. You then have 30 days to assign the license.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create a migration endpoint
 <a name="bkmk_create"> </a>
@@ -80,10 +82,10 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 
 3. On the **Select a migration type** page, select **Remote move migration** and then click **Next**.
 
-4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Office 365 and click **Add** and then click **OK**. Click **Next**.
+4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Microsoft 365 or Office 365 and click **Add** and then click **OK**. Click **Next**.
 
    > [!NOTE]
-   > If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Office 365 using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Office 365 portal and you will be able to select them from the user list.```
+   > If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Microsoft 365 or Office 365 by using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Microsoft 365 admin center and you will be able to select them from the user list.```
 
 5. On the **Enter the Windows user account credential** page, enter the on-premises administrator account name in the **On-premises administrator name** text field and enter the associated password for this account in the **On-premises administrator password** text field. For example, "corp\administrator" and a password. Click **Next**.
 
@@ -142,7 +144,7 @@ To remove a completed migration batch:
 ## Step 5: Re-enable offline access for Outlook on the web
 <a name="bkmk_step5owa"> </a>
 
-Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://go.microsoft.com/fwlink/p/?LinkId=286942).
+Offline access in Outlook on the web (formerly called Outlook Web App) lets users access their mailbox when they're not connected to a network. If you migrate Exchange mailboxes to Exchange Online, users have to reset the offline access setting in their browser to use Outlook on the web offline. For more information about offline access in Outlook on the web, the browsers that support it, and how to turn it on, see [Using Outlook Web App offline](https://support.microsoft.com/office/3214839c-0604-4162-8a97-6856b4c27b36).
 
 ## How do you know this worked?
 <a name="bkmk_how"> </a>
@@ -155,8 +157,8 @@ After the mailbox move has completed, you can check that the remote mailbox loca
 
 You can also run the following cmdlet in the Exchange Management Shell to verify the status of the migration batch.
 
-```
+```PowerShell
 Get-MigrationBatch -Identity <batch name>
 ```
 
-Having problems? Ask for help in the Office 365 forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Office 365 Forums](https://go.microsoft.com/fwlink/p/?linkId=201915)
+Having problems? Ask for help in the Microsoft 365 and Office forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://answers.microsoft.com/msoffice/forum)

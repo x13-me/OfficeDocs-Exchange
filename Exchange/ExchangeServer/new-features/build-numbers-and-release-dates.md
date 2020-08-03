@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+localization_priority: High
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
-ms.date:
 ms.reviewer: 
 title: Exchange Server build numbers and release dates
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -23,7 +24,8 @@ This topic is organized in sections that correspond to the major releases of Exc
 
 Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
 
-**Note**: In the following sections, RTM stands for release to manufacturing (the first version of the product).
+> [!NOTE]
+> In the following sections, RTM stands for release to manufacturing (the first version of the product).
 
 ## Exchange Server 2019
 
@@ -37,8 +39,11 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2019 CU3](https://support.microsoft.com/kb/4514141)|September 17, 2019|15.2.464.5|15.02.0464.005|
-|[Exchange Server 2019 CU2](https://support.microsoft.com/kb/4488401)|June 18, 2019|15.2.397.3|15.02.0397.003|
+|[Exchange Server 2019 CU6](https://support.microsoft.com/help/4556415)|June 16, 2020|15.2.659.4|15.02.0659.004|
+|[Exchange Server 2019 CU5](https://support.microsoft.com/help/4537677)|March 17, 2020|15.2.595.3|15.02.0595.003|
+|Exchange Server 2019 CU4|December 17, 2019|15.2.529.5|15.02.0529.005|
+|Exchange Server 2019 CU3|September 17, 2019|15.2.464.5|15.02.0464.005|
+|Exchange Server 2019 CU2|June 18, 2019|15.2.397.3|15.02.0397.003|
 |Exchange Server 2019 CU1|February 12, 2019|15.2.330.5|15.02.0330.005|
 |Exchange Server 2019 RTM|October 22, 2018|15.2.221.12|15.02.0221.012|
 |Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
@@ -55,8 +60,11 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2016 CU14](https://www.microsoft.com/download/details.aspx?id=100302)|September 17, 2019|15.1.1847.3|15.01.1847.003|
-|[Exchange Server 2016 CU13](https://www.microsoft.com/download/details.aspx?id=58395)|June 18, 2019|15.1.1779.2|15.01.1779.002|
+|[Exchange Server 2016 CU17](https://www.microsoft.com/download/details.aspx?id=101448)|June 16, 2020|15.1.2044.4|15.01.2044.004|
+|[Exchange Server 2016 CU16](https://www.microsoft.com/download/details.aspx?id=101060)|March 17, 2020|15.1.1979.3|15.01.1979.003|
+|Exchange Server 2016 CU15|December 17, 2019|15.1.1913.5|15.01.1913.005|
+|Exchange Server 2016 CU14|September 17, 2019|15.1.1847.3|15.01.1847.003|
+|Exchange Server 2016 CU13|June 18, 2019|15.1.1779.2|15.01.1779.002|
 |Exchange Server 2016 CU12|February 12, 2019|15.1.1713.5|15.01.1713.005|
 |Exchange Server 2016 CU11|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |Exchange Server 2016 CU10|June 19, 2018|15.1.1531.3|15.01.1531.003|
@@ -123,6 +131,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Update Rollup 30 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=100910)|February 11, 2020|14.3.496.0|14.03.0496.000|
 |[Update Rollup 29 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58476)|July 9, 2019|14.3.468.0|14.03.0468.000|
 |[Update Rollup 28 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58354)|June 7, 2019|14.3.461.1|14.03.0461.001|
 |[Update Rollup 27 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58196)|April 9, 2019|14.3.452.0|14.03.0452.000|
@@ -145,7 +154,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 10 for Exchange Server 2010 SP3|June 17, 2015|14.3.248.2|14.03.0248.002|
 |Update Rollup 9 for Exchange Server 2010 SP3|March 17, 2015|14.3.235.1|14.03.0235.001|
 |Update Rollup 8 v2 for Exchange Server 2010 SP3|December 12, 2014|14.3.224.2|14.03.0224.002|
-|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://go.microsoft.com/fwlink/p/?LinkId=518202))|December 9, 2014|14.3.224.1|14.03.0224.001|
+|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-releases-december-2014/ba-p/584630))|December 9, 2014|14.3.224.1|14.03.0224.001|
 |Update Rollup 7 for Exchange Server 2010 SP3|August 26, 2014|14.3.210.2|14.03.0210.002|
 |Update Rollup 6 for Exchange Server 2010 SP3|May 27, 2014|14.3.195.1|14.03.0195.001|
 |Update Rollup 5 for Exchange Server 2010 SP3|February 24, 2014|14.3.181.6|14.03.0181.006|
@@ -194,7 +203,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 The tables in this section provide build numbers and general release dates for each version of Microsoft Exchange Server 2007.
 
-**Note**: The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
+> [!NOTE]
+> The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 
@@ -317,7 +327,7 @@ The following table lists the build numbers and general release dates for each v
 
 |**Product name**|**Release date**|**Build number**|
 |:-----|:-----|:-----|
-|Exchange Server 4.0 SP5|May5, 1998|4.0.996|
+|Exchange Server 4.0 SP5|May 5, 1998|4.0.996|
 |Exchange Server 4.0 SP4|March 28, 1997|4.0.995|
 |Exchange Server 4.0 SP3|October 29, 1996|4.0.994|
 |Exchange Server 4.0 SP2|July 19, 1996|4.0.993|

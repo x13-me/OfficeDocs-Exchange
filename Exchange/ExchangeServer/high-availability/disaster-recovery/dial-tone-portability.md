@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: About dial tone portability, which enables users to have a temporary mailbox for sending and receiving email while their original mailbox is being restored or repaired.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
-ms.date: 7/9/2018
 ms.reviewer:
 title: Dial tone portability
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -45,6 +46,6 @@ All three options follow the same basic steps:
 
 4. **Merge the databases.**
 
-    To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxrestorerequest) cmdlet.
+    To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxrestorerequest) cmdlet.
 
 For detailed steps about how to perform a dial tone recovery, see [Perform a dial tone recovery](dial-tone-recovery.md).

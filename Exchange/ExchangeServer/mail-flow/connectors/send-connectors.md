@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
-ms.date: 7/10/2018
 ms.reviewer:
 title: Send connectors in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -50,7 +51,7 @@ These are the notable changes to Send connectors in Exchange 2016 or Exchange 20
 
 - The _LinkedReceiveConnector_ parameter is no longer available.
 
-- The default maximum message size is increased to 35 MB (approximately 25 MB due to Base64 encoding). For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
+- The default maximum message size is increased to 35 MB (approximately 25 MB due to Base64 encoding). For more information, see [Message size and recipient limits in Exchange Server](../../mail-flow/message-size-limits.md).
 
 - The _TlsCertificateName_ parameter allows you to specify the certificate issuer and the certificate subject. This helps minimize the risk of fraudulent certificates.
 
@@ -120,7 +121,7 @@ An important part of smart host routing is the authentication mechanism that the
 |**Authentication mechanism**|**Description**|
 |:-----|:-----|
 |**None** (`None`)|No authentication. For example, when access to the smart host is restricted by the source IP address.|
-|**Basic authentication** (`BasicAuth`)|Basic authentication. Requires a user name and password. The user name and password are sent in clear text.|
+|**Basic authentication** (`BasicAuth`)|Basic authentication. Requires a username and password. The username and password are sent in clear text.|
 |**Offer basic authentication only after starting TLS** (`BasicAuthRequireTLS`)|Basic authentication that's encrypted with TLS. This requires a server certificate on the smart host that contains the exact FQDN of the smart host that's defined on the Send connector. <br/><br/>  The Send connector attempts to establish the TLS session by sending the **STARTTLS** command to the smart host, and only performs Basic authentication after the TLS session is established.  <br/> A client certificate is also required to support mutual TLS authentication.|
 |**Exchange Server authentication** (`ExchangeServer`)|Generic Security Services application programming interface (GSSAPI) and Mutual GSSAPI authentication.|
 |**Externally secured** (`ExternalAuthoritative`)|The connection is presumed to be secured by using a security mechanism that's external to Exchange. The connection may be an Internet Protocol security (IPsec) association or a virtual private network (VPN). Alternatively, the servers may reside in a trusted, physically controlled network.|
@@ -180,30 +181,30 @@ The available Send connector permissions are described in the following table.
 
 To see the permissions that are assigned to security principals on a Send connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ADPermission -Identity <SendConnector> [-User <SecurityPrincipal>] | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 For example, to see the permissions that are assigned to all security principals on the Send connector named To Fabrikam.com, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "To Fabrikam.com" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To see the permissions that are assigned only to the security principal `NT AUTHORITY\ANONYMOUS LOGON` on the Send connector named To Fabrikam, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "To Fabrikam.com" -User "NT AUTHORITY\ANONYMOUS LOGON" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To add permissions to a security principal on a Send connector, use the following syntax:
 
-```
+```PowerShell
 Add-ADPermission -Identity <SendConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
 
 To remove permissions from a security principal on a Send connector, use the following syntax:
 
-```
+```PowerShell
 Remove-ADPermission -Identity <SendConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```

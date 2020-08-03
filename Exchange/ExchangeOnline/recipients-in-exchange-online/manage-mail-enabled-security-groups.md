@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-ms.date: 6/24/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Manage mail-enabled security groups
 ms.collection: 
 - exchange-online
@@ -19,18 +20,18 @@ manager: serdars
 
 # Manage mail-enabled security groups
 
-A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a mail-enabled security group
 
@@ -74,11 +75,11 @@ A mail-enabled security group can be used to distribute messages as well as to g
 
 This example creates a security group with an alias fsadmin and the name File Server Managers. The security group is created in the default OU, and anyone can join this group with approval by the group owners.
 
-```
+```PowerShell
 New-DistributionGroup -Name "File Server Managers" -Alias fsadmin -Type security
 ```
 
-For more information about using Exchange Online PowerShell to create mail-enabled security groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
+For more information about using Exchange Online PowerShell to create mail-enabled security groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -88,7 +89,7 @@ To verify that you've successfully created a mail-enabled security group, do one
 
 - In Exchange Online PowerShell, run the following command to display information about the new mail-enabled security group.
 
-  ```
+  ```PowerShell
   Get-DistributionGroup <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
@@ -215,27 +216,27 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroup)
+- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup)
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change security group properties.
 
 This example displays a list of all security groups in the organization.
 
-```
+```PowerShell
 Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'"
 ```
 
 This example changes the primary SMTP address (also called the reply address) for the Seattle Administrators security group from admins@contoso.com to seattle.admins@contoso.com. The previous reply address will be kept as a proxy address.
 
-```
+```PowerShell
 Set-DistributionGroup "Seattle Employees" -EmailAddresses SMTP:sea.admins@contoso.com,smtp:admins@contoso.com
 ```
 
 This example hides all security groups in the organization from the address book.
 
-```
+```PowerShell
 Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Set-DistributionGroup -HiddenFromAddressListsEnabled $true
 ```
 
@@ -247,6 +248,6 @@ To verify that you've successfully changed properties for a security group, do t
 
 - In Exchange Online PowerShell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
-  ```
+  ```PowerShell
   Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Format-List Name,HiddenFromAddressListsEnabled
   ```

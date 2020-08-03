@@ -4,11 +4,12 @@ TOCTitle: Mail Tips role
 ms:assetid: 74495ded-6097-4f10-a829-c8ed81f5ba3e
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876909(v=EXCHG.150)
 ms:contentKeyID: 49289308
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

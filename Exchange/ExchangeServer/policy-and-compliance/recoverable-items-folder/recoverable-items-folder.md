@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-ms.date: 7/9/2018
 ms.reviewer:
 title: Recoverable Items folder in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -94,9 +95,9 @@ An item is considered to be soft deleted in the following cases:
 
 Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items folder. This provides an additional layer of protection so users can recover deleted items without requiring Help desk intervention. Users can use the Recover Deleted Items feature in Outlook or Outlook on the web to recover a deleted item. Users can also use this feature to permanently delete an item. For more information, see:
 
-- [Recover deleted items in Outlook 2013 or Outlook 2016](https://go.microsoft.com/fwlink/p/?LinkId=821537)
+- [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-- [Recover deleted items or email messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+- [Recover deleted items or email messages in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
@@ -196,7 +197,7 @@ The following table lists the events logged when the Recoverable Items folder re
 |10023|Error|MSExchangeIS Mailbox Store|The mailbox for _\<mailbox user\>_ (_\<GUID\>_) has exceeded the maximum Recoverable Items Quota. Items cannot be deleted from this mailbox. The mailbox owner should be notified about the condition of the mailbox as soon as possible. Please remove items from Recoverable Items or increase the Recoverable Items Quota to restore functionality.|
 |10023|Warning|MSExchangeMailboxAssistants|The mailbox: _\<mailbox user\>_ Recoverable Items size has exceeded the warning quota limit. Items were deleted from Recoverable Items folders to prevent mailbox outage. Recoverable Items Warning Quota: 20 GB (21,474,836,480 bytes) Original Recoverable Items size: 21475005311 Current Recoverable Items size: 21474823820 Folder stats: - Folders processed: RecoverableItemsRoot, RecoverableItemsVersions, RecoverableItemsPurges, RecoverableItemsDeletions - Original folder sizes: 21391661934, 55190914, 1987247, 26157788 (item counts: 276828, 400, 84, 646) - Current folder sizes: 21391480443, 55190914, 1987247, 26157788 (item counts: 276817, 400, 84, 646)|
 
-If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. Alternatively, you can also raise the Recoverable Items quota for the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
 
 ## More information
 <a name="RIQuotas"> </a>
@@ -205,6 +206,6 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
 
 - If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
 
-  - [Restore deleted items in Outlook 2013 or Outlook Server](https://go.microsoft.com/fwlink/p/?linkId=821537)
+  - [Restore deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-  - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+  - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)

@@ -2,13 +2,14 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Server.'
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
-ms.date:
 ms.reviewer: 
 title: Address book policies in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -83,4 +84,4 @@ Based on this configuration, the ABPs help to enforce these requirements:
 
 ## ABPs for Entourage and Outlook for Mac users
 
-ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to a global catalog server to query Active Directory (which bypasses the ABPs). However, Entourage and Outlook for Mac clients that connect to their mailboxes from outside the corporate networks can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://go.microsoft.com/fwlink/p/?LinkId=231878).
+ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to a global catalog server to query Active Directory (which bypasses the ABPs). However, Entourage and Outlook for Mac clients that connect to their mailboxes from outside the corporate networks can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://docs.microsoft.com/previous-versions/office/office-for-mac-2011/jj984221(v=office.14)).

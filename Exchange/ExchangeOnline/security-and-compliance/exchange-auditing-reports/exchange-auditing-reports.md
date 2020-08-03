@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Learn about the auditing reports that are available in the Exchange admin center (EAC) in Exchange Online.
 ms.topic: overview
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
-ms.date: 7/11/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Exchange Online auditing reports
 ms.collection: 
 - exchange-online
@@ -54,17 +55,11 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
   - [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md)
 
-- **Run a per-mailbox litigation hold report**: Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see.
-
-  - [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md)
-
-  - [Place a mailbox on Litigation Hold](https://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
+- **Run a per-mailbox litigation hold report**: Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md).
 
 - **Run the admin audit log report**: Use this report to view entries from the administrator audit log. Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by admins in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see:
 
   - [View the administrator audit log](view-administrator-audit-log.md)
-
-  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
 
 - **Run the external admin audit log report**: Actions performed by Microsoft datacenter administrators or delegated admins are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
 
@@ -98,7 +93,7 @@ In the details pane, the user is listed under **Members** and can access the Aud
 
 Run the following command to assign the Audit Logs role to a user.
 
-```
+```PowerShell
 New-ManagementRoleAssignment -Role "Audit Logs" -User <Identity>
 ```
 
@@ -113,6 +108,6 @@ When you export the mailbox audit log or administrator audit log, Exchange Onlin
 
 Run the following command to allow XML attachments in Outlook on the web:
 
-```
+```PowerShell
 Set-OwaMailboxPolicy -Identity Default -AllowedFileTypes @{Add=".xml"}
 ```

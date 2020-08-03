@@ -4,11 +4,12 @@ TOCTitle: Performance counters for messaging records management
 ms:assetid: b59def6f-4249-4e0c-8057-8ae6eb7c5676
 ms:mtpsurl: https://technet.microsoft.com/library/Bb310790(v=EXCHG.150)
 ms:contentKeyID: 50873808
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

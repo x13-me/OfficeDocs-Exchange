@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: Admins can learn how to use the Exchange admin center (EAC) to run a non-owner mailbox access report in Exchange Online.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-ms.date: 6/23/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Run a non-owner mailbox access report
 ms.collection: 
 - exchange-online
@@ -36,7 +37,7 @@ When you enable mailbox audit logging for a mailbox, Exchange Online logs specif
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Run a non-owner mailbox access report
 

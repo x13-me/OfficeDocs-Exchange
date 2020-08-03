@@ -4,11 +4,12 @@ TOCTitle: Team Mailboxes role
 ms:assetid: b4591082-c4af-41bf-bbb1-ed2b931e62fb
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657485(v=EXCHG.150)
 ms:contentKeyID: 49289379
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

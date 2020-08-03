@@ -4,11 +4,12 @@ TOCTitle: Voice mail preview enhancements
 ms:assetid: 1fcccec1-4edc-40b8-948c-111647d7d770
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150501(v=EXCHG.150)
 ms:contentKeyID: 47559971
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

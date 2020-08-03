@@ -2,11 +2,12 @@
 localization_priority: Normal
 description: In Exchange Online, actions performed by Microsoft and delegated administrators are logged in the administrator audit log. You can use the EAC or Exchange Online PowerShell to search for and view audit log entries to determine if external administrators performed any actions on or changed the configuration of your Exchange Online organization. You can also use Exchange Online PowerShell to export these audit log entries.
 ms.topic: article
-author: mattpennathe3rd
-ms.author: v-mapenn
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 31892014-c921-45fd-9775-7a1ef40e3517
-ms.date: 6/23/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: View and export the external admin audit log
 ms.collection: 
 - exchange-online
@@ -25,18 +26,18 @@ In Exchange Online, actions performed by Microsoft and delegated administrators 
 
 - Estimated time to complete: This will vary based on whether you view or export entries from the admin audit log. See each procedure for its estimated time to complete.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - When you export the admin audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message that is sent to the specified recipients. However, Outlook on the web (formerly known as Outlook Web App) blocks XML attachments by default. If you want to use Outlook on the web to access these audit logs, you have to configure Outlook on the web to allow XML attachments. Run the following command to allow XML attachments in Outlook on the web.
 
-  ```
+  ```PowerShell
   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes '.rpmsg','.xlsx','.xlsm','.xlsb','.tiff','.pptx','.pptm','.ppsx','.ppsm','.docx','.docm','.zip','.xls','.wmv','.wma','.wav','.vsd','.txt','.tif','.rtf','.pub','.ppt','.png','.pdf','.one','.mp3','.jpg','.gif','.doc','.bmp','.avi','.xml'
   ```
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view the external admin audit log report
 
@@ -68,17 +69,17 @@ You can use the **Search-AdminAuditLog** cmdlet with the _ExternalAccess_ parame
 
 This command returns all entries in the administrator audit log for cmdlets run by external administrators.
 
-```
+```PowerShell
 Search-AdminAuditLog -ExternalAccess $true
 ```
 
 This command returns entries in the administrator audit log for cmdlets run by external administrators between September 17, 2013 and October 2, 2013.
 
-```
+```PowerShell
 Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/2013
 ```
 
-For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ## Use Exchange Online PowerShell to export the admin audit log
 
@@ -88,7 +89,7 @@ You can use the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ par
 
 The following command returns entries in the administrator audit log for cmdlets run by external administrators between September 25, 2013 and October 24, 2013. The search results are sent to the admin@contoso.com and pilarp@contoso.com SMTP addresses and the text "External admin audit log" is added to the subject line of the message.
 
-```
+```PowerShell
 New-AdminAuditLogSearch -ExternalAccess $true -EndDate 10/24/2013 -StartDate 07/25/2013 -StatusMailRecipients admin@contoso.com,pilarp@contoso.com -Name "External admin audit log"
 ```
 
@@ -97,13 +98,13 @@ New-AdminAuditLogSearch -ExternalAccess $true -EndDate 10/24/2013 -StartDate 07/
 
 To verify that the command to export the admin audit log entries performed by external administrators was successful, and to display information about current administrator audit log searches, run the following command:
 
-```
+```PowerShell
 Get-AuditLogSearch | Format-List
 ```
 
 ## More information
 
-- In Office 365, you can delegate the ability to perform certain administrative tasks to an authorized partner of Microsoft. These admin tasks include creating or editing users, resetting user passwords, managing user licenses, managing domains, and assigning admin permissions to other users in your organization. When you authorize a partner to take on this role, the partner is referred to as a delegated admin. The tasks performed by a delegated admin are logged in the admin audit log. As previously described, actions performed by delegated admins can be viewed by running the external admin audit log report or exported by using the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ parameter.
+- In Microsoft 365 and Office 365, you can delegate the ability to perform certain administrative tasks to an authorized partner of Microsoft. These admin tasks include creating or editing users, resetting user passwords, managing user licenses, managing domains, and assigning admin permissions to other users in your organization. When you authorize a partner to take on this role, the partner is referred to as a delegated admin. The tasks performed by a delegated admin are logged in the admin audit log. As previously described, actions performed by delegated admins can be viewed by running the external admin audit log report or exported by using the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ parameter.
 
 - The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Actions performed by external administrators are also logged. Entries in the admin audit log provide you with information about the cmdlet that was run, which parameters were used, and what objects were affected.
 

@@ -4,11 +4,12 @@ TOCTitle: Understanding management role assignment policies
 ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638100(v=EXCHG.150)
 ms:contentKeyID: 49289200
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: v-mapenn
-author: mattpennathe3rd
+ms.author: dmaguire
+author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
