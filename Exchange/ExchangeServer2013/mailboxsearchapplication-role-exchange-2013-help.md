@@ -1,3 +1,4 @@
+---
 title: 'MailboxSearchApplication role: Exchange 2013 Help'
 TOCTitle: MailboxSearchApplication role
 ms:assetid: 914b9132-e420-4b27-ab30-57f672166d24
