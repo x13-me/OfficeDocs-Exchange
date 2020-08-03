@@ -114,7 +114,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
     For more information about recipient filtering, see [Recipient filtering on Edge Transport servers](../../antispam-and-antimalware/antispam-protection/recipient-filtering.md).
 
-- Client applications that access Active Directory directly through LDAP will bypass the logic that's built into ABPs. Because Entourage and Outlook for Mac use direct LDAP queries to access Active Directory, those client applications won't function properly with ABPs if a domain controller or global catalog server is specified or provided to them by the Autodiscover service. Entourage and Outlook for Mac can use Exchange Web Services (EWS) or a local OAB to access directory information, but if they can directly access an LDAP service, they will attempt to do so.
+- Client applications that access Active Directory directly through LDAP will bypass the logic that's built into ABPs.
 
 - At a minimum, the GAL that's specified in an ABP must contain all address lists (including the room address list) that are specified in the ABP (it's OK if the ABP contains additional address lists). Don't create a GAL that contains fewer recipients than the address lists in the same ABP.
 
