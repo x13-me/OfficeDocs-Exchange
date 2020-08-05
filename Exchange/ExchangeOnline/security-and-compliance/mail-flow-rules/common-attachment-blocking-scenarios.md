@@ -38,21 +38,15 @@ To get started implementing any of these scenarios to block certain message type
 
 5. Select the conditions and actions you want.
 
-**Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
-
-Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
-
-```PowerShell
-Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
-```
-
-After you adjust the attachment size to 1 byte, the value that's displayed for the rule in the EAC is **0.00 KB**.
+> [!NOTE]
+> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+> The embedded images are treated as attachments (for example, messages with a picture in the signature); for this reason, we do not recommend using a very small value since unexpected messages will be blocked.
 
 ## Example 1: Block messages with attachments, and notify the sender
 
-If you don't want people in your organization to send or receive attachments, you can set up a mail flow rule to block all messages with attachments.
+If you don't want certain people in your organization to send or receive attachments greater than 10 Megabytes, you can set up a mail flow rule to block messages with attachments of this size.
 
-In this example, all messages sent to or from the organization with attachments are blocked.
+In this example, all messages sent to or from the organization with attachments greater than 10 Megabytes are blocked.
 
 ![Rule that blocks all attachments](../../media/38094183-166f-4ba5-a9cf-242e7d0f4e04.png)
 
