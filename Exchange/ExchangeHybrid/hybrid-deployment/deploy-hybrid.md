@@ -64,7 +64,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 
 Use the following procedure to create and configure a hybrid deployment:
 
-1. Download the latest Hybrid Configuration Wizard from [here](http://aka.ms/hybridwizard).
+1. Download the latest Hybrid Configuration Wizard from [here](https://aka.ms/hybridwizard).
 
 2. When you're prompted, click **Install** on the **Application Install** dialog.
 
