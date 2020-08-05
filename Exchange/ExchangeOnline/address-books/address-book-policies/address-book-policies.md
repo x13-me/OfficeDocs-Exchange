@@ -75,11 +75,3 @@ Based on this configuration, the ABPs help to enforce these requirements:
 - The CEO can see all Fabrikam and Tailspin Toys employees when she browses the GAL.
 
 - Users who view the CEO's group membership can see only groups that belong to their company. They can't see groups that belong to the other company.
-
-## ABPs for Entourage and Outlook for Mac users
-
-Entourage and Outlook for Mac clients that connect to their Exchange Online mailboxes can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP.
-
-In hybrid environments where the user account is in your on-premises organization and the mailbox is in Exchange Online, ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to global a catalog server to query Active Directory (which bypasses the ABPs). Outside the corporate network, they can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP.
-
-To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://docs.microsoft.com/previous-versions/office/office-for-mac-2011/jj984221(v=office.14)).
