@@ -156,7 +156,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 4. Wait while the HCW gathers information and configuration about your environments. When it's completed, click **Next**.
 
-5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Hybrid-Organization-Configuration-Transfer/ba-p/607944). Click **Next**.
+5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-hybrid-organization-configuration-transfer-v2/ba-p/608762). Click **Next**.
 
 6. Follow the steps to enable federation. Click **Next**.
 
