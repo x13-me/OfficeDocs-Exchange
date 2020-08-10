@@ -344,6 +344,8 @@ Exchange Web Services is the recommended protocol to use for migrating to Micros
 
 - Throttling under impersonation is isolated to each user migration session.
 
+- Exchange Web Services Throttling Policy can be temporarily (for a duration of 30, 60 or 90 days) changed in the tenant to allow migration to complete, this can be requested from the Help section of the Microsoft 365 admin center.
+
  **Best practices**
 
 - Migration performance for customers using third-party migration tools that use EWA impersonation competes with Exchange Web Services-based migrations and service resource usage by other tenants. Therefore, migration performance will vary.
