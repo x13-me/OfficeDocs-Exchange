@@ -481,6 +481,7 @@
 #### [Run a Message Trace and View Results](../monitoring/trace-an-email-message/run-a-message-trace-and-view-results.md)
 #### [Message Trace FAQ](../monitoring/trace-an-email-message/message-trace-faq.md)
 ### [Mail flow reports in the modern EAC](../monitoring/mail-flow-reports/mail-flow-reports.md)
+#### [Email issues for priority accounts report in the modern EAC](../monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report.md)
 #### [Auto forwarded messages report in the modern EAC](../monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report.md)
 #### [Email issues for priority accounts report in the modern EAC](../monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report.md)
 #### [Inbound messages report in the modern EAC](../monitoring/mail-flow-reports/mfr-inbound-messages-report.md)
