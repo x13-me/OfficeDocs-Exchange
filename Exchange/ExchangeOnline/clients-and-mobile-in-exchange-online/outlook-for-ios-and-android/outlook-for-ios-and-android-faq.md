@@ -389,7 +389,7 @@ If you do not have organization chart data exposed in the app, consult with your
 
 ### Q: How much of my mailbox data is synchronized with Outlook for iOS and Android?
 
-For initial folder synchronization, Outlook for iOS synchronizes 100 items per folder while Outlook for Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to the default number, in order to ensure optimal app performance.
+For initial folder synchronization, Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to the default number, in order to ensure optimal app performance.
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
