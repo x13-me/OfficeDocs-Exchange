@@ -24,6 +24,22 @@ Exchange admin center now uses a new portal at [https://admin.exchange.microsoft
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
+## July 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in July 2020. 
+
+### Mail flow Reports
+
+Exchange admins can now use the existing dashboard to choose from new variety of mail flow cards that personalize their experience for ease of use and better productivity. To access this dashboard, go to the Exchange Admin Center and select Add Card (+) to see the new cards.
+
+Discover and understand some more trends related to mail flow in your Microsoft 365 or Office 365 organization. The following report were already available in the Security & Compliance Center (SCC) portal but are now available in the EAC for added convenience.
+
+Top domain mail-flow status report: To identify and troubleshoot domains with mail flow issues. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight?view=o365-worldwide).
+
+Queued messages report: To check those messages that are queued for more than 1 hour and were sent through connectors from your Microsoft cloud org. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues?view=o365-worldwide).
+
+SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report?view=o365-worldwide).
+
 ## June 2020
 
 Here are some of the changes and new features we introduced in the modern EAC in June 2020.
