@@ -16,6 +16,13 @@ description: "Admins can learn how to use the Email issues for priority accounts
 
 # Email issues for priority accounts report in the modern EAC
 
+> [!NOTE]
+> The priority accounts feature that's described in this topic is available only to organizations that meet the following requirements:
+> 
+> - Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
+> 
+> - At least 10,000 licenses and at least 50 monthly active Exchange Online users.
+
 The **Email issues for priority accounts** report in the modern Exchange admin center (modern EAC) allows [admins or other users](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports) to view failed and delayed email messages that were sent to or sent from priority accounts.
 
 Priority users are people in your Microsoft 365 organization who have a high business impact, like your CEO, executives, or other users who have access to sensitive or high priority information. For more information about priority accounts, see [Manage and monitor priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
