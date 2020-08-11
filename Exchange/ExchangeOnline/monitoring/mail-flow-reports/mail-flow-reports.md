@@ -22,6 +22,24 @@ The following mail flow reports are available:
 
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
 
+- [Auto forwarded messages report](mfr-auto-forwarded-messages-report.md)
+
+- [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
+
+- [Inbound messages report](mfr-inbound-messages-report.md)
+
+- [Non-accepted domain report](mfr-non-accepted-domain-report.md)
+
+- [Non-delivery details report](mfr-non-delivery-details-report.md)
+
+- [Outbound messages report](mfr-outbound-messages-report.md)
+
+- [Queued messages report](mfr-queued-messages-report.md)
+
+- [SMTP AUTH clients report](mfr-smtp-auth-clients-report.md)
+
+- [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)t
+
 ## Permissions required to view mail flow reports
 
 To view and use mail flow reports, you need to be a member of one of the following role groups in Exchange Online:
