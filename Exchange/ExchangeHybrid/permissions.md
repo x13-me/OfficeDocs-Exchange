@@ -102,12 +102,15 @@ Any mailboxes that receive these permissions from another mailbox need to be mov
 
 To enable Full Access and Send on Behalf permissions in a hybrid deployment, additional configuration changes might be necessary depending on the version of Exchange you have installed. The following table shows which versions of Exchange support delegated mailbox permissions in a hybrid deployment with Microsoft 365 or Office 365 and what additional configuration is needed. For steps on how to configure Exchange 2013 and 2010 servers and mailboxes to support ACLs, see [Configure Exchange to support delegated mailbox permissions in a hybrid deployment](hybrid-deployment/set-up-delegated-mailbox-permissions.md).
 
-|**Exchange version**|**Prerequisites**|
-|:-----|:-----|
+****
+
+|Exchange version|Prerequisites|
+|---|---|
 |Exchange 2016|Enable ACLable object synchronization at the organization level. <br> Manually enable ACLs on each mailbox moved to Microsoft 365 or Office 365 before ACLable object synchronization was enabled at the organization level. <br> No additional configuration is needed for mailboxes moved to Microsoft 365 or Office 365 after ACLable object synchronization is enabled at the organization level.|
-|Exchange 2013|Exchange 2013 servers need the following: <br/>• The latest cumulative update (CU), or the immediately previous CU, installed. Exchange 2013 servers running older CUs aren't supported and may not work with delegated mailbox permissions in a hybrid deployment. <br/>• The Exchange organization is configured to allow access control lists (ACLs) to be stamped on mail objects and synchronized with Microsoft 365 or Office 365. <br/>• On-premises remote mailboxes associated with mailboxes moved to Microsoft 365 or Office 365 prior to Exchange 2013 CU10 need to be manually configured to support ACLs. Remote mailboxes, created on servers running Exchange 2013 CU10 or later, and after the Exchange organization is set to allow ACLs, are configured automatically.|
-|Exchange 2010|Exchange 2010 SP3 servers need the following: <br/>• The latest update rollup (RU), or the immediately previous RU, installed. Exchange 2010 SP3 servers running older RU aren't supported and may not work with delegated mailbox permissions in a hybrid deployment. <br/>• On-premises remote mailboxes associated with Microsoft 365 or Office 365 mailboxes need to be configured to support ACLs. This needs to be done for each on-premises remote mailbox that's associate with an Microsoft 365 or Office 365 mailbox.|
+|Exchange 2013|Exchange 2013 servers need the following: <ul><li>The latest cumulative update (CU), or the immediately previous CU, installed. Exchange 2013 servers running older CUs aren't supported and may not work with delegated mailbox permissions in a hybrid deployment.</li><li>The Exchange organization is configured to allow access control lists (ACLs) to be stamped on mail objects and synchronized with Microsoft 365 or Office 365.</li><li>On-premises remote mailboxes associated with mailboxes moved to Microsoft 365 or Office 365 prior to Exchange 2013 CU10 need to be manually configured to support ACLs. Remote mailboxes, created on servers running Exchange 2013 CU10 or later, and after the Exchange organization is set to allow ACLs, are configured automatically.</li></ul>|
+|Exchange 2010|Exchange 2010 SP3 servers need the following: <ul><li>The latest update rollup (RU), or the immediately previous RU, installed. Exchange 2010 SP3 servers running older RU aren't supported and may not work with delegated mailbox permissions in a hybrid deployment.</li><li> On-premises remote mailboxes associated with Microsoft 365 or Office 365 mailboxes need to be configured to support ACLs. This needs to be done for each on-premises remote mailbox that's associate with an Microsoft 365 or Office 365 mailbox.</ul</li>|
 |Exchange 2007 or earlier|Not supported.|
+|
 
 ### Enabling support for hybrid mailbox permissions in Azure Active Directory Connect
 
@@ -129,10 +132,10 @@ For more information, see [Manage Role Assignment Policies](https://docs.microso
 
 The following table lists the permissions granted by the default role assignment policies in the Exchange Online organization.
 
-**Default role assignment policy permissions**
+****
 
-|**Management role**|**Description**|
-|:-----|:-----|
+|Management role|Description|
+|---|---|
 |MyTeamMailboxes|The `MyTeamMailboxes` management role enables individual users to create site mailboxes and connect them to Microsoft SharePoint sites.|
 |My Marketplace Apps|The `My Marketplace Apps` management role enables individual users to view and modify their Microsoft Office marketplace apps.|
 |MyBaseOptions|The `MyBaseOptions` management role enables individual users to view and modify the basic configuration of their own mailbox and associated settings.|
@@ -146,3 +149,4 @@ The following table lists the permissions granted by the default role assignment
 |MyVoiceMail|The `MyVoiceMail` management role enables individual users to view and modify their voice mail settings.|
 |My ReadWriteMailbox Apps|The `My ReadWriteMailbox Apps` management role enables users to install apps with ReadWriteMailbox permissions.|
 |My Custom Apps|The `My Custom Apps` management role enables users to view and modify their custom apps.|
+|
