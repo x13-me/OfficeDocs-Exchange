@@ -339,13 +339,16 @@ Exchange 2013 only supports the version of Windows Management Framework that's b
 
 We strongly recommend that you use the latest version of .NET Framework that's supported by the release of Exchange you're installing.
 
-|**Exchange 2013 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
-|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
+***
+
+|Exchange 2013 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
+|---|:---:|:---:|:---:|:---:|:---:|
 |CU23|X|X|||
 |CU21, CU22||X|X||
 |CU19, CU20|||X|X||
 |CU16, CU17, CU18||||X|
 |CU15||||X|
+|
 
 **Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016#exchange-2013)
 
@@ -354,21 +357,13 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
 - Microsoft 365 Apps for enterprise
-
 - Outlook 2019
-
 - Outlook 2016
-
 - Outlook 2013
-
 - Outlook 2010
-
 - Outlook 2007
-
 - Entourage 2008 for Mac, Web Services Edition
-
 - Outlook for Mac for Office 365
-
 - Outlook for Mac 2011
 
 For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).

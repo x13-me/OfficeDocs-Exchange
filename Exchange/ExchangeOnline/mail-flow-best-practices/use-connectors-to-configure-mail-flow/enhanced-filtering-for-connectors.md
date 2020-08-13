@@ -54,9 +54,10 @@ In complex routing scenarios where you must point your MX record to something ot
 
 Using the previous example, you would configure the IP address of the third-party filter in Enhanced Filtering for Connectors, and Microsoft 365 or Office 365 will take care of the rest. The following table describes what connections look like before and after your enable Enhanced Filtering for Connector:
 
-||||
+****
+
+||Before Enhanced Filtering is enabled|After Enhanced Filtering is enabled|
 |---|---|---|
-||**Before Enhanced Filtering is enabled**|**After Enhanced Filtering is enabled**|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
 |**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
 |**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
