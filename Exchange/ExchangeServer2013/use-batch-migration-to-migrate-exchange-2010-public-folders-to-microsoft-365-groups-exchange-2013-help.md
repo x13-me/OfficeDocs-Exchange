@@ -90,13 +90,13 @@ The following steps are necessary to prepare your organization for the migration
 
 4. You need to have the migration feature **PAW** enabled for your Microsoft 365 or Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell:
 
-    ```powershell
-    Get-MigrationConfig
-    ```
+   ```powershell
+   Get-MigrationConfig
+   ```
 
-    If the output under **Features** lists **PAW**, then the feature is enabled and you can continue to [Step 3: Create the .csv file](#step-3-create-the-csv-file).
+   If the output under **Features** lists **PAW**, then the feature is enabled and you can continue to [Step 3: Create the .csv file](#step-3-create-the-csv-file).
 
-    If PAW is not yet enabled for your tenant, it could be because you have some existing migration batches, either public folder batches or user batches. These batches could be in any state, including Completed. If this is the case, please complete and remove any existing migration batches until no records are returned when you run `Get-MigrationBatch`. Once all existing batches are removed, PAW should get enabled automatically. Note that the change may not reflect in `Get-MigrationConfig` immediately, which is okay. Once this step is completed, you can continue creating new batches of user migrations.
+   If PAW is not yet enabled for your tenant, it could be because you have some existing migration batches, either public folder batches or user batches. These batches could be in any state, including Completed. If this is the case, please complete and remove any existing migration batches until no records are returned when you run `Get-MigrationBatch`. Once all existing batches are removed, PAW should get enabled automatically. Note that the change may not reflect in `Get-MigrationConfig` immediately, which is okay. Once this step is completed, you can continue creating new batches of user migrations.
 
 ## Step 3: Create the .csv file
 
@@ -114,7 +114,7 @@ The .csv file needs to contain the following columns:
 
 An example .csv:
 
-```powershell
+```text
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
 "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
@@ -130,58 +130,58 @@ In this step, you gather information from your Exchange environment, and then yo
 
 1. On the Exchange 2010 server, run the following commands to collect information necessary to create your migration batch:
 
-    1. Find the **LegacyExchangeDN** for the account of a user who is a member of the Public Folder Administrator role by typing the following command. Note that this is the same user whose credentials you will need later, in step 3 of this procedure.
+   1. Find the **LegacyExchangeDN** for the account of a user who is a member of the Public Folder Administrator role by typing the following command. Note that this is the same user whose credentials you will need later, in step 3 of this procedure.
 
-        ```powershell
-        Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
-        ```
+      ```powershell
+      Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+      ```
 
-    2. Find the **LegacyExchangeDN** of any mailbox server with a public folder database by typing the following command:
+   2. Find the **LegacyExchangeDN** of any mailbox server with a public folder database by typing the following command:
 
-        ```powershell
-        Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
-        ```
+      ```powershell
+      Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+      ```
 
-    3. Find the Fully-Qualified Domain Name (FQDN) of the Outlook Anywhere host. This is the External Host Name. If you have multiple instances of Outlook Anywhere, we recommend that you select the instance that is either closest to the migration endpoint or the one that is closest to the public folder replicas in your Exchange Server 2010 organization. The following command will find all instances of Outlook Anywhere:
+   3. Find the Fully-Qualified Domain Name (FQDN) of the Outlook Anywhere host. This is the External Host Name. If you have multiple instances of Outlook Anywhere, we recommend that you select the instance that is either closest to the migration endpoint or the one that is closest to the public folder replicas in your Exchange Server 2010 organization. The following command will find all instances of Outlook Anywhere:
 
-        ```powershell
-        Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
-        ```
+      ```powershell
+      Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+      ```
 
 2. In Exchange Online PowerShell, use the information that was returned above in step 1 to run the following commands. The variables in these commands will be the values from step 1.
 
-    1. Pass the credential of a user with administrator permissions in the Exchange 2010 environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2010 servers through Outlook Anywhere in order to copy the content over.
+   1. Pass the credential of a user with administrator permissions in the Exchange 2010 environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2010 servers through Outlook Anywhere in order to copy the content over.
 
-        ```powershell
-        $Source_Credential = Get-Credential
-        <source_domain>\<PublicFolder_Administrator_Account>
-        ```
+      ```powershell
+      $Source_Credential = Get-Credential
+      <source_domain>\<PublicFolder_Administrator_Account>
+      ```
 
-    2. Use the ExchangeLegacyDN of the migration user on the legacy Exchange server that you found above in step 1a and pass that value into the variable `$Source_RemoteMailboxLegacyDN`.
+   2. Use the ExchangeLegacyDN of the migration user on the legacy Exchange server that you found above in step 1a and pass that value into the variable `$Source_RemoteMailboxLegacyDN`.
 
-        ```powershell
-        $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
-        ```
+      ```powershell
+      $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+      ```
 
-    3. Use the ExchangeLegacyDN of the public folder server that you found above in step 1b above and pass that value into the variable `$Source_RemotePublicFolderServerLegacyDN`.
+   3. Use the ExchangeLegacyDN of the public folder server that you found above in step 1b above and pass that value into the variable `$Source_RemotePublicFolderServerLegacyDN`.
 
-        ```powershell
-        $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
-        ```
+      ```powershell
+      $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+      ```
 
-    4. Use the External Host Name of Outlook Anywhere that was returned in step 1c above and pass that value into the variable `$Source_OutlookAnywhereExternalHostName`.
+   4. Use the External Host Name of Outlook Anywhere that was returned in step 1c above and pass that value into the variable `$Source_OutlookAnywhereExternalHostName`.
 
-        ```powershell
-        $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
-        ```
+      ```powershell
+      $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+      ```
 
 3. In Exchange Online PowerShell, run the following command to create a migration endpoint:
 
-    ```powershell
-    $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
-    ```
+   ```powershell
+   $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+   ```
 
-    With the `-Authentication` parameter, be sure to set a value that matches the authentication method in your on-premises Exchange environment. If you use NTLM, for example, use `-Authentication NTLM`.
+   With the `-Authentication` parameter, be sure to set a value that matches the authentication method in your on-premises Exchange environment. If you use NTLM, for example, use `-Authentication NTLM`.
 
 4. Run the following command to create a new public folder-to-Microsoft 365 group migration batch. In this command:
 
@@ -362,79 +362,74 @@ The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating m
 Only the following access rights will be allowed for users to ensure that the public folders are made read-only for all users.
 
 - ReadItems
-
 - CreateSubfolders
-
 - FolderContact
-
 - FolderVisible
 
 The permission entries will be modified as follows:
 
-1.
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col stye="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Before lock down</th>
+<th>After lock down</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="even">
+<td><p>AvailabilityOnly</p></td>
+<td><p>AvailabilityOnly</p></td>
+</tr>
+<tr class="odd">
+<td><p>LimitedDetails</p></td>
+<td><p>LimitedDetails</p></td>
+</tr>
+<tr class="even">
+<td><p>Contributor</p></td>
+<td><p>FolderVisible</p></td>
+</tr>
+<tr class="odd">
+<td><p>Reviewer</p></td>
+<td><p>ReadItems, FolderVisible</p></td>
+</tr>
+<tr class="even">
+<td><p>NonEditingAuthor</p></td>
+<td><p>ReadItems, FolderVisible</p></td>
+</tr>
+<tr class="odd">
+<td><p>Aughor</p></td>
+<td><p>ReadItems, FolderVisible</p></td>
+</tr>
+<tr class="even">
+<td><p>Editor</p></td>
+<td><p>ReadItems, FolderVisible</p></td>
+</tr>
+<tr class="odd">
+<td><p>PublishingAuthor</p></td>
+<td><p>ReadItems, CreateSubfolders, FolderVisible</p></td>
+</tr>
+<tr class="even">
+<td><p>PublishingEditor</p></td>
+<td><p>ReadItems, CreateSubfolders, FolderVisible</p></td>
+</tr>
+<tr class="odd">
+<td><p>Owner</p></td>
+<td><p>ReadItems, CreateSubfolders, FolderContact, FolderVisible</p></td>
+</tr>
+</tbody>
+</table>
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col stye="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Before lock down</th>
-    <th>After lock down</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>None</p></td>
-    <td><p>None</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>AvailabilityOnly</p></td>
-    <td><p>AvailabilityOnly</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>LimitedDetails</p></td>
-    <td><p>LimitedDetails</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Contributor</p></td>
-    <td><p>FolderVisible</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Reviewer</p></td>
-    <td><p>ReadItems, FolderVisible</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>NonEditingAuthor</p></td>
-    <td><p>ReadItems, FolderVisible</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Aughor</p></td>
-    <td><p>ReadItems, FolderVisible</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Editor</p></td>
-    <td><p>ReadItems, FolderVisible</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>PublishingAuthor</p></td>
-    <td><p>ReadItems, CreateSubfolders, FolderVisible</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>PublishingEditor</p></td>
-    <td><p>ReadItems, CreateSubfolders, FolderVisible</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Owner</p></td>
-    <td><p>ReadItems, CreateSubfolders, FolderContact, FolderVisible</p></td>
-    </tr>
-    </tbody>
-    </table>
+Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
 
-2. Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
-
-3. For users with custom roles, if access rights are not ReadItems, CreateSubfolders, FolderContact, or FolderVisible, they will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to 'None'.
+For users with custom roles, if access rights are not ReadItems, CreateSubfolders, FolderContact, or FolderVisible, they will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to 'None'.
 
 There might be an interruption in sending emails to mail-enabled public folders during the time between when the folders are mail-disabled and their SMTP addresses are added to Microsoft 365 Groups.
 

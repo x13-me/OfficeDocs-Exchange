@@ -56,11 +56,11 @@ Using the previous example, you would configure the IP address of the third-part
 
 ****
 
-||Before Enhanced Filtering is enabled|After Enhanced Filtering is enabled|
+|Feature|Before Enhanced Filtering is enabled|After Enhanced Filtering is enabled|
 |---|---|---|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
-|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
-|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
+|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This header is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
+|**X-MS-Exchange-SkipListedInternetSender**|Not available|This header is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
 |
 
 ## Procedures for Enhanced Filtering for Connectors
@@ -106,7 +106,7 @@ Using the previous example, you would configure the IP address of the third-part
 
        - This option is only affective on the actual email address that you specify. For example, if a user has five email addresses associated with their mailbox (also known as _proxy addresses_), you'll need to specify all five of their email addresses here. Otherwise, messages that are sent to the four other email addresses will go through normal filtering.
 
-        - For a hybrid environment where the inbound mail flow is through on-premises Exchange, you must specify the *targetAddress* of the *MailUser* object. For example, *michelle@contoso.mail.onmicrosoft.com*.
+       - For a hybrid environment where the inbound mail flow is through on-premises Exchange, you must specify the *targetAddress* of the *MailUser* object. For example, *michelle@contoso.mail.onmicrosoft.com*.
 
    - **Apply to entire organization**: We recommend this option after you've tested the feature on a small number of recipients first.
 
@@ -151,7 +151,8 @@ Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true -EFU
 For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/set-inboundconnector).
 
 > [!IMPORTANT]
-> - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the mail systems that will handle your own organization's messages prior to Microsoft 365 or Office 365. >
+>
+> - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the mail systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
 >
 > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses.
 
