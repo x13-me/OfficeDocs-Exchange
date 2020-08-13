@@ -35,20 +35,21 @@ If your list of words, phrases, or patterns is long, you can put them in a text 
 ```powershell
 $keywords=Import-Content  .\misspelled_companyname.txt
 New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyContainsWords $keywords -SentToScope "NotInOrganization" -RejectMessageReasonText "Do not use internal acronyms, product names, or misspellings in external communications."
-
 ```
 
 ### Using phrases and patterns in the text file
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-|||
-|:-----|:-----|
-|**Expression**|**Matches**|
+****
+
+|Expression|Matches|
+|---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group* ]|Any single character in *character_group*.|
+|
 
 For example, this text file contains common misspellings of Microsoft.
 
@@ -57,7 +58,6 @@ For example, this text file contains common misspellings of Microsoft.
 [mn]icrosft
 [mn]icro soft
 [mn].crosoft
-
 ```
 
 To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
