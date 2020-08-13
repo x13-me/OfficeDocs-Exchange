@@ -85,7 +85,13 @@ Use the following procedure to create and configure a hybrid deployment:
 10. On the **Hybrid Domains** page, select the domains you want to include in your hybrid deployment. In most deployments, you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain. Click **Next**.
 
     > [!IMPORTANT]
-    > This domain selection step of the Hybrid Configuration wizard may or may not appear when you run the wizard. This step won't appear if: <br/>• You have only one on-premises accepted domain added to your Microsoft 365 or Office 365 organization. Because this is the only domain available for hybrid deployment configuration, the domain is automatically selected and the step is skipped in the wizard. <br/>• There aren't any on-premises accepted domains added to your Microsoft 365 or Office 365 organization. In this case, you'll receive an error and you'll need to add at least one domain to your Microsoft 365 or Office 365 organization before continuing. You can do this by using the Microsoft 365 Administrative portal, or by optionally configuring Active Directory Federation Services (AD FS) in your on-premises organization. <br/><br/> This step will appear if you have more than one on-premises accepted domain added to your Microsoft 365 or Office 365 organization.
+    > This domain selection step of the Hybrid Configuration wizard may or may not appear when you run the wizard. This step won't appear if:
+    >
+    > - You have only one on-premises accepted domain added to your Microsoft 365 or Office 365 organization. Because this is the only domain available for hybrid deployment configuration, the domain is automatically selected and the step is skipped in the wizard.
+    >
+    > - There aren't any on-premises accepted domains added to your Microsoft 365 or Office 365 organization. In this case, you'll receive an error and you'll need to add at least one domain to your Microsoft 365 or Office 365 organization before continuing. You can do this by using the Microsoft 365 Administrative portal, or by optionally configuring Active Directory Federation Services (AD FS) in your on-premises organization.
+    >
+    > This step will appear if you have more than one on-premises accepted domain added to your Microsoft 365 or Office 365 organization.
 
 11. On the **Federation Trust** page, click **Enable** and then click **Next**.
 
