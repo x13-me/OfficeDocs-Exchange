@@ -33,7 +33,7 @@ For additional management tasks related to public folders in Exchange Server, se
 
 - Public folders on Exchange 2010 servers can't exist in the same organization with Exchange 2016 or later public folders. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
 
-    Before you can create public folders in Exchange Server 2016 or later, you need to migrate your Exchange 2010 public folders by following the steps in [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md).
+  Before you can create public folders in Exchange Server 2016 or later, you need to migrate your Exchange 2010 public folders by following the steps in [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md).
 
 - To move your public folder mailboxes from Exchange 2013 to Exchange 2016 or Exchange 2019, see [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md).
 
@@ -52,14 +52,13 @@ For additional management tasks related to public folders in Exchange Server, se
 
 2. In the **New public folder mailbox** page that opens, enter the following information:
 
-    - **Name**: Enter the name for the public folder mailbox.
+   - **Name**: Enter the name for the public folder mailbox.
 
-    - **Organizational unit**: Click **Browse** to select the location in Active Directory where the mailbox object is created.
+   - **Organizational unit**: Click **Browse** to select the location in Active Directory where the mailbox object is created.
 
-    - **Mailbox database**: Click **Browse** to select the mailbox database where the mailbox is created.
+   - **Mailbox database**: Click **Browse** to select the mailbox database where the mailbox is created.
 
-    When you're finished, click **Save**.
-
+   When you're finished, click **Save**.
 
 ## Use the Exchange Management Shell to create a public folder mailbox
 
@@ -75,7 +74,7 @@ This example creates the primary hierarchy public folder mailbox named Master Hi
 New-Mailbox -PublicFolder -Name "Master Hierarchy"
 ```
 
-This example creates a secondary hierarcy public folder mailbox named Istanbul, because this isn't the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is a secondary hierarchy public folder mailbox).
+This example creates a secondary hierarchy public folder mailbox named Istanbul, because this isn't the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is a secondary hierarchy public folder mailbox).
 
 ```PowerShell
 New-Mailbox -PublicFolder -Name Istanbul
@@ -87,24 +86,24 @@ For detailed syntax and parameter information, see [New-Mailbox](https://docs.mi
 
 To verify that you've successfully created the a public folder mailbox, do any of these steps:
 
-- In the EAC, go to **Public folders** \> **Public folder mailboxes** and verify the public folder mailbox is listed. The primary hierarcy public folder mailbox has the value **Primary Hierarchy** for the **Contains** property. All other public folder mailboxes have the value **Secondary Hierarchy** for the **Contains** property.
+- In the EAC, go to **Public folders** \> **Public folder mailboxes** and verify the public folder mailbox is listed. The primary hierarchy public folder mailbox has the value **Primary Hierarchy** for the **Contains** property. All other public folder mailboxes have the value **Secondary Hierarchy** for the **Contains** property.
 
 - In the Exchange Management Shell, run the following command to verify the mailbox is listed, and check the value of the **IsRootPublicFolderMailbox** property to see if the mailbox is the primary hierarchy public folder mailbox (`True`) or a secondary hierarchy public folder mailbox (`False`):
 
-    ```PowerShell
-    Get-Mailbox -PublicFolder | Format-Table -Auto Name,ServerName,Database,IsRootPublicFolderMailbox
-    ```
+  ```PowerShell
+  Get-Mailbox -PublicFolder | Format-Table -Auto Name,ServerName,Database,IsRootPublicFolderMailbox
+  ```
 
 - In the Exchange Management Shell, run the following commands to verify the primary hierarchy public folder mailbox:
 
-    1. Run the following command:
+  1. Run the following command:
 
-      ```PowerShell
-      Get-OrganizationConfig | Format-List RootPublicFolderMailbox
-      ```
+     ```PowerShell
+     Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+     ```
 
-    2. Use the GUID value returned by the first command with **Get-Mailbox** to confirm the mailbox name. You can copy the GUID value by right-clicking in the Exchange Management Shell window, selecting **Mark**, highlighting the GUID value, and then pressing ENTER.
+  2. Use the GUID value returned by the first command with **Get-Mailbox** to confirm the mailbox name. You can copy the GUID value by right-clicking in the Exchange Management Shell window, selecting **Mark**, highlighting the GUID value, and then pressing ENTER.
 
-      ```PowerShell
-      Get-Mailbox -PublicFolder -Identity <GUID>
-      ```
+     ```PowerShell
+     Get-Mailbox -PublicFolder -Identity <GUID>
+     ```
