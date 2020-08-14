@@ -73,6 +73,6 @@ Click **Edit policy** to configure email notifications related to priority accou
 
 - **Daily notification limit**: Select from the following values: **No limit**, 1 (default), 5, 10, 25, 50, 150, or 200.
   
-- **Threshold**: An email notification is sent when the number of failed or delayed email messages for priority accounts exceeds the specified value. The default value is 20.
+- **Threshold**: An email notification is sent when the number of failed or delayed email messages for priority accounts exceeds the specified value. The default value is 100.
 
 When you're finished, click **Save**.
