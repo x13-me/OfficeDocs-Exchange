@@ -167,7 +167,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 5. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Microsoft 365 or Office 365. Ensure that this domain that you created above is an accepted domain in Microsoft 365 or Office 365. Follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) to add the Microsoft 365 or Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Microsoft 365 or Office 365.
 
 > [!NOTE]
-> The migration process won't be able to complete if a routing domain is used that is not verified as described above. Choosing the built-in "tenantname.onmicrosoft.com" domain for routing mail to Office 365 instead of a sub-domain of the primary G Suite domain occasionally causes issues that Microsoft is not able to assist with besides to recommend that the end-user manually verify the forwarding address or contact Google support.
+> The migration process won't be able to complete if a routing domain is used that is not verified as described above. Choosing the built-in "tenantname.onmicrosoft.com" domain for routing mail to Office 365 instead of a sub-domain of the primary G Suite domain occasionally causes issues that Microsoft is not able to assist with besides to recommend that the user manually verify the forwarding address or contact Google support.
 
 ## Create a sub-domain for mail routing to your G Suite domain
 
@@ -243,7 +243,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
    > [!NOTE]
-   > The target delivery domain you will want to use will not automatically show up in the dropdown - instead you should click within the text box and type it in. The target delivery domain must be different than the primary domain of the users in G Suite.
+   > The target delivery domain you will want to use will not automatically show up in the dropdown - instead you should click within the text box and type it in. The target delivery domain must be different from the primary domain of the users in G Suite.
 
 10. Under **Start the batch**, fill in the names or aliases of anyone who should be notified about the batch progress. Then select how you want to begin and complete the batch. When done, click **new**.
 
