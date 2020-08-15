@@ -26,23 +26,31 @@ To download the Hybrid Configuration wizard go to [https://aka.ms/HybridWizard](
 
 ## Questions frequently asked by customers
 
-Q: What versions of Exchange support the new Hybrid Configuration wizard?
+### Q: What versions of Exchange support the new Hybrid Configuration wizard?
 
-> A: You can use a combination of one or more of the following: <br/> • Exchange 2010 SP3 (latest RU strongly recommended) <br/>• Exchange 2013 CU1 or later <br/>• Exchange 2016 and Exchange 2019 <br/><br/> **Important note**: To remain in a supported hybrid configuration, you need to make sure you are running the latest available released CU for your Exchange version. Cumulative updates are released on a quarterly cadence. If you are unable to upgrade to the latest available CU, the previous CU is also supported. <br/><br/> For role specific requirements and prerequisites, see [Prerequisites for hybrid deployment](hybrid-deployment-prerequisites.md#prerequisites-for-hybrid-deployment).
+A: You can use a combination of one or more of the following versions of Exchange:
 
+- Exchange 2010 SP3 (latest RU strongly recommended)
+- Exchange 2013 CU1 or later
+- Exchange 2016 and Exchange 2019
 
-Q: Will this Hybrid Configuration wizard work with Exchange 2007?
+> [!IMPORTANT]
+> To remain in a supported hybrid configuration, you need to make sure you are running the latest available released CU for your Exchange version. Cumulative updates are released on a quarterly cadence. If you are unable to upgrade to the latest available CU, the previous CU is also supported.
+>
+> For role specific requirements and prerequisites, see [Prerequisites for hybrid deployment](hybrid-deployment-prerequisites.md#prerequisites-for-hybrid-deployment).
 
-> A: You can configure a hybrid deployment with Exchange 2007 in your organization. However, to do so you need to deploy at least one server running Exchange 2013 that meets the requirements above.
+### Q: Will this Hybrid Configuration wizard work with Exchange 2007?
 
-Q: Can I opt out of the new Hybrid Configuration wizard?
+A: You can configure a hybrid deployment with Exchange 2007 in your organization. However, to do so you need to deploy at least one server running Exchange 2013 that meets the requirements above.
 
-> A: No. The new Hybrid Configuration wizard is the only supported way in Exchange 2010/2013/2016/2019 to configure hybrid mode.
+### Q: Can I opt out of the new Hybrid Configuration wizard?
 
-Q: Can I upgrade my current Exchange 2010 hybrid configuration to Exchange 2013 or Exchange 2016 using the new Hybrid Configuration wizard?
+A: No. The new Hybrid Configuration wizard is the only supported way in Exchange 2010/2013/2016/2019 to configure hybrid mode.
 
-> A: Yes. Make sure you have at least one server that meets the current Hybrid Configuration wizard requirements and then run it. The wizard will know the current state of your hybrid configuration and seamlessly take you through the upgrade process.
+### Q: Can I upgrade my current Exchange 2010 hybrid configuration to Exchange 2013 or Exchange 2016 using the new Hybrid Configuration wizard?
 
-Q: Does the Exchange hybrid server in my on-premises organization require an Exchange license?
+A: Yes. Make sure you have at least one server that meets the current Hybrid Configuration wizard requirements and then run it. The wizard will know the current state of your hybrid configuration and seamlessly take you through the upgrade process.
 
-> A: Yes. You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](https://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.
+### Q: Does the Exchange hybrid server in my on-premises organization require an Exchange license?
+
+A: Yes. You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](https://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.
