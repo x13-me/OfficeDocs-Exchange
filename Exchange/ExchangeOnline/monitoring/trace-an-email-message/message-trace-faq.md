@@ -24,9 +24,9 @@ This topic presents messaging questions that a user may have, along with possibl
 
 ## How long does it take to see results when running a message trace?
 
-- In the Exchange admin center (EAC), the search results appear immediately for messages that are less than 7 days old.
+- In the classic Exchange admin center (classic EAC), the search results appear immediately for messages that are less than 7 days old.
 
-- In the Microsoft 365 security center, the search results appear immediately for messages that are less than 10 days old.
+- In the Security & Compliance center and the modern Exchange admin center (modern EAC), the search results appear immediately for messages that are less than 10 days old.
 
 When you run a message trace for older messages, the results are returned within a few hours as a downloadable CSV file.
 
@@ -48,9 +48,9 @@ You can use the following cmdlets in Exchange Online PowerShell or Exchange Onli
 
 [Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+To connect to Exchange Online Protection PowerShell in standalone EOP organizations without Exchange Online mailboxes, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
@@ -61,37 +61,24 @@ The likely cause of a timeout error is that the query is taking too long to proc
 Here are some possible reasons:
 
 - The message was detected as spam.
-
 - The message was sent to quarantine due to a rule match.
-
 - The message was rejected
 
   - By the malware filter
-
   - Because a file attached to the message contained malware
-
   - Because the message body contained malware
-
   - By a rule
-
   - Because the action was Reject
-
   - Because the action was Force TLS and TLS failed to be established
-
   - By a connector because TLS was required and failed to be established
 
 - The message was sent for moderation and is awaiting approval or was rejected by the moderator.
-
 - The message was never sent.
-
 - The message is still being processed because there was a previous failure and the service is re-attempting delivery.
-
 - The message failed to be delivered to your mailboxes
 
   - Because the destination is not reachable
-
   - Because the destination rejected the message
-
   - Because the message timed out during the delivery attempt
 
 To find out what happened:
@@ -107,13 +94,9 @@ Confirm that the message was sent, that it was successfully received by the serv
 Here are some possible reasons:
 
 - The message was released from quarantine.
-
 - The message was awaiting moderator approval and was released.
-
 - The message was spam that was not detected.
-
 - The message matched a rule that added you to the message.
-
 - The message was sent to a distribution list of which you are a member.
 
 To find out what happened:
@@ -122,45 +105,30 @@ To find out what happened:
 
 View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
-
 ## Why didn't someone receive my message or why did I get this non-delivery report (also known as an NDR or bounce message)?
 
 Possible reasons include the following:
 
 - The message was detected as spam.
-
 - The message was sent to quarantine due to a rule match.
-
 - The message was re-routed because a connector sent it to another destination.
-
-- The message was rejected
+- The message was rejected:
 
   - By the malware filter
-
   - Because a file attached to the message contained malware
-
   - Because the message body contained malware
-
   - By a rule
-
   - Because the action was Reject
-
   - Because the action was Force TLS and TLS failed to be established
-
   - By a connector because TLS was required and failed to be established
 
 - The message was sent for moderation and is awaiting approval or was rejected by the moderator.
-
 - The message was never sent.
-
 - The message is still being processed because there was a previous failure and the service is re-attempting delivery.
-
-- The message failed to be delivered to the destination
+- The message failed to be delivered to the destination:
 
   - Because the destination is not reachable
-
   - Because the destination rejected the message
-
   - Because the message timed out during the delivery attempt
 
 - The message was delivered to the destination but it was deleted before it was accessed (perhaps because it matched a rule).
@@ -178,11 +146,8 @@ Look for a delivery status of **Failed** or **Pending** to explain why the messa
 Possible reasons include the following:
 
 - The intended destination is not responsive. This is the most likely scenario.
-
 - It may be a large message that is taking a long time to process
-
 - Latency in the service may be causing delays
-
 - The message may have been blocked
 
 To find out what happened:
