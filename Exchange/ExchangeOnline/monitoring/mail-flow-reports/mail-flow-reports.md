@@ -36,7 +36,7 @@ The following mail flow reports are available:
 
 - [SMTP AUTH clients report](mfr-smtp-auth-clients-report.md)
 
-- [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)t
+- [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
 
 ## Permissions required to view mail flow reports
 
