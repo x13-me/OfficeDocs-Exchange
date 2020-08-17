@@ -68,15 +68,15 @@ New-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1
 
 This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions:
 
-> Sets the priority of the call answering rule to 2.
+- Sets the priority of the call answering rule to 2.
 
-> Creates key mappings for the call answering rule.
+- Creates key mappings for the call answering rule.
 
-> If the caller reaches the voice mail for the user and the status of the user is set to Busy, the caller can:
+- If the caller reaches the voice mail for the user and the status of the user is set to Busy, the caller can:
 
-    - Press the 1 key and be transferred to a receptionist at extension 45678.
+  - Press the 1 key and be transferred to a receptionist at extension 45678.
 
-    - Press the 2 key so the Find Me feature will be used for urgent issues, ring extension 23456 first, and then ring extension 45671.
+  - Press the 2 key so the Find Me feature will be used for urgent issues, ring extension 23456 first, and then ring extension 45671.
 
 ```PowerShell
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith -ScheduleStatus 0x4 - -KeyMappings "1,1,Receptionist,,,,,45678,","5,2,Urgent Issues,23456,23,45671,50,,"

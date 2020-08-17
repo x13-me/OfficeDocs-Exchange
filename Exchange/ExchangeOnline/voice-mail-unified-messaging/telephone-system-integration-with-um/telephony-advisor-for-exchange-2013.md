@@ -85,8 +85,10 @@ Interoperability was verified for the following VoIP gateway vendors:
 
 **Supported VoIP gateways for Unified Messaging**
 
-|**Vendor**|**Model**|**Supported protocols**|
-|:-----|:-----|:-----|
+****
+
+|Vendor|Model|Supported protocols|
+|---|---|---|
 |AudioCodes|MediaPack 114/8 FXO|Analog with In-Band DTMF <br/><br/> Analog with SMDI|
 |AudioCodes|Mediant 1000|Analog with In-Band DTMF <br/><br/> Analog with SMDI <br/><br/> BRI Q.SIG <br/><br/> T1/E1 Q.SIG <br/><br/> IP-to-IP|
 |AudioCodes|Mediant 2000|T1/E1 CAS <br/><br/> T1/E1 Q.SIG <br/><br/> IP-to-IP|
@@ -97,6 +99,7 @@ Interoperability was verified for the following VoIP gateway vendors:
 |NET|VX1200|T1 Q.SIG|
 |Sonus|SBC 1000/2000 2.2.1 or later|TDM Signaling (ISDN): AT&T 4ESS/5ESS, Nortel DMS- 100, Euro ISDN (ETSI 300-102), QSIG, NTT InsNet (Japan), ANSI National ISDN-2 (NI-2) <br/><br/> TDM Signaling (CAS): T1 CAS (E&M, Loop start); E1 CAS (R2)|
 |Quintum|Tenor DX Series|T1 Q.SIG|
+|
 
 ## Supported PBXs when using an AudioCodes VoIP gateway
 
@@ -104,8 +107,10 @@ The following table shows the PBXs that are supported using AudioCodes VoIP gate
 
 **PBXs supported with an AudioCodes VoIP gateway**
 
-|**PBX manufacturer**|**PBX model/type**|**AudioCodes model "x" - replace with 4 or 8 per need "y" - replace with 1, 2, 4, 8 or 16 per need**|
-|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|AudioCodes model "x" - replace with 4 or 8 per need "y" - replace with 1, 2, 4, 8 or 16 per need|
+|---|---|---|
 |Alcatel|OmniPCX 4400|MediaPack 11x/FXO/AC/SIP-0 <br/><br/> Mediant2000/ySpans/SIP|
 |Aastra|M1000, M2000|Mediant2000/ySpans/SIP|
 |Avaya|Definity G3|MediaPack 11x/FXO/AC/SIP-0 <br/><br/> Mediant1000/ySpans/SIP <br/><br/> Mediant2000/ySpans/SIP|
@@ -126,6 +131,7 @@ The following table shows the PBXs that are supported using AudioCodes VoIP gate
 |Siemens|HiPath 3550|MediaPack 11x/FXO/AC/SIP-0|
 |Siemens|HiPath 4000|MediaPack 11x/FXO/AC/SIP-0 <br/><br/> Mediant1000/ySpans/SIP <br/><br/> Mediant2000/ySpans/SIP|
 |Tadiran Telecom|Coral Flexicom, Coral IPX|MediaPack 11x/FXO/AC/SIP-0 <br/><br/> Mediant1000/ySpans/SIP <br/><br/> Mediant2000/ySpans/SIP|
+|
 
 ## Supported PBXs when using a Dialogic VoIP gateway
 
@@ -137,8 +143,10 @@ The following table shows the PBXs that are supported with the low-density Dialo
 
 **PBXs supported when using a low-density Dialogic DMG1000 series VoIP gateway**
 
-|**PBX manufacturer**|**PBX model/type**|**DMG model and additional signaling**|
-|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|DMG model and additional signaling|
+|---|---|---|
 |Aastra|Aastra MD110 (formerly Ericsson MD110)|DMG1008LSW <br/><br/> Analog connectivity using the MD110 RS232 protocol|
 |Alcatel|Omni PCX 4400|DMG1008LSW|
 |Avaya|Definity G3 S8100, S8300, S8700, and S8710 (Communications Mgr SW V2.0 or later versions)|DMG1008DNIW|
@@ -153,6 +161,7 @@ The following table shows the PBXs that are supported with the low-density Dialo
 |Siemens|HiPath 4000|DMG1008LSW|
 |Toshiba|CTX (SW version AR1ME021.00)|DMG1008LSW|
 |Others|Various|DMG1008LSW <br/><br/> Analog connectivity using either Inband DTMF or SMDI|
+|
 
 ### PBXs supported when using a DMG 2000 series Media Gateway
 
@@ -172,10 +181,12 @@ The following table shows the PBXs that are supported with the T1/E1 Dialogic Me
 
 If Channel Associated Signaling (CAS) signaling is used, supplemental signaling (RS232 SMDI, MD110, MCI protocols, or Inband DTMF signaling) is required. If Q.SIG signaling is used, the PBX must support the supplemental services that are associated with calling and called party information and the call transfer capabilities required by Unified Messaging.
 
-**PBXs supported with the DMG2000 Media Gateway**
+### PBXs supported with the DMG2000 Media Gateway
 
-|**PBX manufacturer**|**PBX model/type**|**Required software version**|**Protocol and additional signaling**|
-|:-----|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|Required software version|Protocol and additional signaling|
+|---|---|---|---|
 |Alcatel|Omni PCX 4400|Version 3.2.712.5|T1 Q.SIG <br/><br/> E1 Q.SIG|
 |Avaya|Definity G3|Version 3 or later|T1 CAS|
 |Avaya|S8500|Manager SW V2.0 or later versions|T1 CAS <br/><br/> T1 Q.SIG <br/><br/> E1 Q.SIG|
@@ -189,6 +200,7 @@ If Channel Associated Signaling (CAS) signaling is used, supplemental signaling 
 |Siemens|HiPath 4000|V2 SMR 9 SMPO|T1 Q.SIG <br/><br/> E1 Q.SIG|
 |Mitel|SX-2000 S, SX-2000 VS|LW 34|T1 Q.SIG <br/><br/> E1 Q.SIG|
 |Mitel|3300|Version 5.1.4.8|T1 Q.SIG <br/><br/> E1 Q.SIG|
+|
 
 ### PBXs supported when using a DMG4008BRI series Media Gateway
 
@@ -214,10 +226,13 @@ The following table shows the PBXs that are supported using a Dialogic 4000 Medi
 
 **PBXs supported using a DMG4008BRI Media Gateway**
 
-|**PBX manufacturer**|**PBX model/type**|**Required software version**|**Protocol and additional signaling**|
-|:-----|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|Required software version|Protocol and additional signaling|
+|---|---|---|---|
 |Siemens|HiCom 300|SA300-V3.05|BRI-Q.SIG (ECMAV2)|
 |Siemens|HiPath 4000|S.0 B4400|BRI-Q.SIG (ECMAV2)|
+|
 
 ## Supported IP PBXs
 
@@ -225,12 +240,15 @@ IP PBXs are also supported by Unified Messaging. The following table shows the I
 
 **IP PBXs supported when using a direct SIP connection**
 
-|**PBX manufacturer**|**PBX model/type**|**Required software version**|
-|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|Required software version|
+|---|---|---|
 |Aastra|MX-ONE|4.0|
 |Avaya|Aura|5.2.1 with Service Pack 5 (SP5)|
 |Avaya|Communication Server 2100|CS2100 SE13|
 |Cisco|Call Manager, Unified Communications Manager|5.1, 6.x, 7.0 and8.0|
+|
 
 ## IP PBXs supported when using SIP media gateways
 
@@ -238,9 +256,12 @@ IP PBXs using SIP media gateways are also supported by Unified Messaging. The fo
 
 **IP PBXs supported when using a SIP media gateway**
 
-|**PBX manufacturer**|**PBX model/type**|**SIP gateway model**|
-|:-----|:-----|:-----|
+****
+
+|PBX manufacturer|PBX model/type|SIP gateway model|
+|---|---|---|
 |Cisco|Call Manager 4.x|AudioCodes Mediant 1000/2000 (IP-to-IP enabled)|
+|
 
 ## Exchange Unified Messaging, Office Communications Server 2007 R2, and Microsoft Lync Server
 
