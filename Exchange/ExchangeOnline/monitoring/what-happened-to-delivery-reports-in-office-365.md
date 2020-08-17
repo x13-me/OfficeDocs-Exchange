@@ -32,6 +32,8 @@ For more information, see these topics:
 
 - [Message Trace in Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
 
+- [Message trace in the modern Exchange admin center](trace-an-email-message/message-trace-modern-eac.md)
+
 - [Run a message trace and view the results in the Exchange admin center](trace-an-email-message/run-a-message-trace-and-view-results.md)
 
 > [!NOTE]

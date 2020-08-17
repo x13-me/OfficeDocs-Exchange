@@ -480,6 +480,7 @@
 ### [Trace an email message](../monitoring/trace-an-email-message/trace-an-email-message.md)
 #### [Run a Message Trace and View Results](../monitoring/trace-an-email-message/run-a-message-trace-and-view-results.md)
 #### [Message Trace FAQ](../monitoring/trace-an-email-message/message-trace-faq.md)
+#### [Message trace in the modern Exchange admin center](../monitoring/trace-an-email-message/message-trace-modern-eac.md)
 ### [Mail flow reports in the modern EAC](../monitoring/mail-flow-reports/mail-flow-reports.md)
 #### [Email issues for priority accounts report in the modern EAC](../monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report.md)
 #### [Auto forwarded messages report in the modern EAC](../monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report.md)

@@ -65,9 +65,9 @@ The default values are **All** for **Senders** and **All** for **Recipients**, b
 - **Recipients**: Click in this box and start typing to enter or select one more recipient in your organization.
 
 > [!NOTE]
-> 
+>
 > - You can also type the email addresses of external senders and recipients. Wildcards are supported (for example, `*@contoso.com`), but you can't use multiple wildcard entries in the same field at the same time.
-> 
+>
 > - You can paste multiple senders or recipients lists separated by semicolons (`;`). spaces (`\s`), carriage returns (`\r`), or next lines (`\n`).
 
 ### Time range

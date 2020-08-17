@@ -21,7 +21,7 @@ manager: serdars
 # Run a message trace in the classic EAC
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc).
+> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
@@ -29,7 +29,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 
 ## What do you need to know before you begin?
 
-- For information about when data is available and for how long, see the [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency) section in [Reporting and message trace in Exchange Online Protection](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection).
+- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
 
 - To find and open the classic EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
