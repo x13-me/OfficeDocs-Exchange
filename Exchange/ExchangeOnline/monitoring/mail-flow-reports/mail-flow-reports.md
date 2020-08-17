@@ -20,8 +20,6 @@ Admins can use mail flow reports in the modern Exchange admin center (modern EAC
 
 The following mail flow reports are available:
 
-- [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
-
 - [Auto forwarded messages report](mfr-auto-forwarded-messages-report.md)
 
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
