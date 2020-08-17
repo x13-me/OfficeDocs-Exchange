@@ -50,4 +50,3 @@ For more information, see [Permissions in Exchange Online](../../permissions-exo
 To see the mail flow insights, open the modern EAC at <https://admin.exchange.microsoft.com> and select **Insights**.
 
 To go directly to the mail flow insights dashboard, open <https://admin.exchange.microsoft.com/#/insights>.
-
