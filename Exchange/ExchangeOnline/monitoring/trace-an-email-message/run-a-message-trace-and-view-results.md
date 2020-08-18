@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Learn how to use message trace in the Exchange admin center to find out what happened to email messages.
+description: Learn how to use message trace in the classic Exchange admin center to find out what happened to email messages.
 ms.topic: troubleshooting
 author: msdmaguire
 ms.author: dmaguire
@@ -18,21 +18,20 @@ manager: serdars
 
 ---
 
-# Run a message trace and view the results in the Exchange admin center
+# Run a message trace in the classic EAC
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 security center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc).
+> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
 For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
-
 ## What do you need to know before you begin?
 
-- For information about when data is available and for how long, see the [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency) section in [Reporting and message trace in Exchange Online Protection](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection).
+- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
 
-- To find and open the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
+- To find and open the classic EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Message trace" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
@@ -40,7 +39,6 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
-
 
 ## Run a message trace
 
@@ -232,8 +230,8 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
-|**Log Information**|**Description**|
-|:-----|:-----|
+|Log Information|Description|
+|---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
 |SFV=SPM|The message was marked as spam by the content filter.|
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
@@ -255,12 +253,12 @@ When a message is filtered for spam, a sample custom_data entry would look simil
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
- **Malware Filter Agent (S:AMA)**
+#### Malware Filter Agent (S:AMA)
 
 A string beginning with S:AMA is an entry from the anti-malware agent and provides the following key details:
 
-|**Log Information**|**Description**|
-|:-----|:-----|
+|Log Information|Description|
+|---|---|
 |AMA=SUM\|v=1\| <br/> or <br/> AMA=EV\|v=1\||The message was determined to contain malware. SUM denotes that the malware could've been detected by any number of engines. EV denotes that the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
 |Action=r|The message was replaced.|
 |Action=p|The message was bypassed.|
@@ -282,8 +280,8 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 
-|**Log Information**|**Description**|
-|:-----|:-----|
+|Log Information|Description|
+|---|---|
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
