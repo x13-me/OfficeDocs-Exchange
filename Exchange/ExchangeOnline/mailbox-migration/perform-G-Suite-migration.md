@@ -158,6 +158,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
+   > [!NOTE]
+   > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
+
    ![Add domain](../media/gsuite-mig-9-sub-domain-O365.png)
 
 4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
