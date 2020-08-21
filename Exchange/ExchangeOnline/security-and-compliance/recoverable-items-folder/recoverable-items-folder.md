@@ -42,17 +42,11 @@ To protect from accidental or malicious deletion and to facilitate discovery eff
 
 Knowledge of the following terms will help you understand the content in this topic.
 
- **Delete**
+ **Delete**: Describes when an item is deleted from any folder and placed in the Deleted Items default folder.
 
-Describes when an item is deleted from any folder and placed in the Deleted Items default folder.
+ **Soft delete**: Describes when an item is deleted from the Deleted Items default folder and placed in the Recoverable Items folder. Also describes when an Outlook user deletes an item by pressing Shift+Delete, which bypasses the Deleted Items folder and places the item directly in the Recoverable Items folder.
 
- **Soft delete**
-
-Describes when an item is deleted from the Deleted Items default folder and placed in the Recoverable Items folder. Also describes when an Outlook user deletes an item by pressing Shift+Delete, which bypasses the Deleted Items folder and places the item directly in the Recoverable Items folder.
-
- **Hard delete**
-
-Describes when an item is marked to be purged from the mailbox database. This is also known as a *store hard delete*.
+ **Hard delete**: Describes when an item is marked to be purged from the mailbox database. This is also known as a *store hard delete*.
 
 ## Recoverable Items folder
 
@@ -112,12 +106,13 @@ If an item is removed from the Deletions subfolder, either by a user purging the
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if single item recovery is enabled.
 
-**Recoverable Items folder and single item recovery**
+****
 
-|**State of single item recovery**|**Recoverable Items folder contains soft-deleted items**|**Recoverable Items folder contains hard-deleted items**|**Users can purge items from the Recoverable Items folder**|**Managed Folder Assistant automatically purges items from the Recoverable Items folder**|
-|:-----|:-----|:-----|:-----|:-----|
+|State of single item recovery|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
+|---|---|---|---|---|
 |Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, with the exception of calendar items, which are purged after 120 days.|
 |Disabled|Yes|No|Yes|Yes. By default, all items are purged after 14 days, with the exception of calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
+|
 
 ### In-Place Hold and Litigation Hold
 
@@ -130,12 +125,13 @@ Putting a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder A
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if Litigation Hold is enabled.
 
-**Recoverable Items folder and holds**
+****
 
-|**State of hold**|**Recoverable Items folder contains soft-deleted items**|**Recoverable Items folder contains modified and hard-deleted items**|**Users can purge items from the Recoverable Items folder**|**Managed Folder Assistant automatically purges items from the Recoverable Items folder**|
-|:-----|:-----|:-----|:-----|:-----|
+|State of hold|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains modified and hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
+|---|---|---|---|---|
 |Enabled|Yes|Yes|No|No|
 |Disabled|Yes|No|Yes|Yes|
+|
 
 To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see the following topics:
 
@@ -149,12 +145,12 @@ If a user who is placed on In-Place Hold or Litigation Hold modifies specific pr
 
 The following table lists the message properties that trigger copy-on-write page protection.
 
-**Properties that trigger copy-on-write page protection**
+****
 
-|**Item type**|**Properties that trigger copy-on-write page protection**|
-|:-----|:-----|
-|Messages (IPM.Note\*) <br/><br/> Posts (IPM.Post\*)|• Subject<br/>• Body <br/>• Attachments <br/>• Senders and recipients <br/>• Sent and received dates|
-|Items other than messages and posts|Any change to a visible property, except the following: <br/>• Item location (when an item is moved between folders) <br/>• Item status change (read or unread) <br/>• Changes to a retention tag applied to an item|
+|Item type|Properties that trigger copy-on-write page protection|
+|---|---|
+|Messages (IPM.Note\*) <br/><br/> Posts (IPM.Post\*)|Subject <br/><br/> Body <br/><br/> Attachments <br/><br/> Senders and recipients <br/><br/> Sent and received dates|
+|Items other than messages and posts|Any change to a visible property, except the following: <ul><li>Item location (when an item is moved between folders)</li><li>Item status change (read or unread)</li><li>Changes to a retention tag applied to an item</li></ul>|
 |Items in the Drafts default folder|None. Items in the Drafts folder are exempt from copy-on-write page protection.|
 
 > [!IMPORTANT]
