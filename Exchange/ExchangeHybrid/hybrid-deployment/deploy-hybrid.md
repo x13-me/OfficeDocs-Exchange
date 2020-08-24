@@ -98,7 +98,7 @@ Use the following procedure to create and configure a hybrid deployment:
 11. On the **Federation Trust** page, click **Enable** and then click **Next**.
 
     > [!NOTE]
-    > Step 11 and 12 will appear only if there are Exchange 2010 servers on-premises.
+    > Steps 11 and 12 will appear only if there are Exchange 2010 servers on-premises.
 
 12. On the **Domain Ownership** page, click **Click copy to clipboard** to copy the domain proof token information for the domains you've selected to include in the hybrid deployment. Open a text editor such as Notepad and paste the token information for these domains. Before continuing in the Hybrid Configuration Wizard, you must use this information to create a TXT record for each domain in your public DNS. Refer to your DNS host's Help for information about how to add a TXT record to your DNS zone. Click **Next** after the TXT records have been created and the DNS records have replicated.
 
