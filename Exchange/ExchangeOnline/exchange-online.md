@@ -35,6 +35,7 @@ Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 <li><p>In the Microsoft 365 admin center, choose <b>Admin centers</b> / <b>Exchange</b>.</p>
     <p>For an introduction, see <a href="/exchange/exchange-admin-center">Exchange admin center in Exchange Online</a></p></li>
 </ol>
+<p>Exchange admin center now uses a new portal at https://admin.exchange.microsoft.com. This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall Microsoft 365 admin experience.<p>
 
 <h2>Help for Microsoft 365 admins</h2>
 <p>We're consolidating our content on the <a href="https://support.office.com/">Office help and training site</a>. See the following:
