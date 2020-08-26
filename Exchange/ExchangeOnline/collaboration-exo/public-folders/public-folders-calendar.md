@@ -35,7 +35,7 @@ Before you create your public folder calendar, follow the prerequisites.
 
 2. Use the following command to see a list of any public folder mailboxes present in the organization:
 
-```
+```PowerShell
 Get-Mailbox -PublicFolder
 Get-PublicFolder \\
 ```
@@ -46,13 +46,13 @@ Get-PublicFolder \\
 
 - If you want the user to be able to create a public folder on the root of the public folder hierarchy, along with all other access rights, run the following command:
 
-  ```
+  ```PowerShell
   Add-PublicFolderClientPermission -Identity "\\" -AccessRights Owner -User User1
   ```
 
 - If you want the user to be able to create a public folder under the existing public folder named Marketing, then run the following command:
 
-  ```
+  ```PowerShell
    Add-PublicFolderClientPermission -Identity "\\Marketing" -AccessRights Editor -User User1
   ```
 
