@@ -20,59 +20,57 @@ manager: serdars
 
 # Public folder calendar
 
-Public folder calendar is a good solution for people looking for only shared calendar, without overhead of maintaining additional mailbox with it. This article explains how to setup and access public folder calendars in Exchange Online.
+A public folder calendar is a good solution for people looking for only shared calendar without having to maintain an additional mailbox along with it. This article explains how to set up and access public folder calendars in Microsoft Exchange Online.
 
-Prerequisites:
---------------
+> [!Important]
+> You must use the Microsoft Outlook desktop client to create the public folder calendar.
 
-### Ensure public folders are [deployed](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder-mailbox) in Exchange Online
+> [!Note]
+> The Calendar type of public folder can be accessed from Outlook Web App (OWA) and the Outlook desktop client. Public folders, including calendar, cannot be accessed from OWA or the Outlook app on mobile devices.
 
-> The following command should return any public folder mailboxes present in the organization:
->
-> Get-Mailbox -PublicFolder
->
-> Get-PublicFolder \\
->
-> If not, follow the steps [here](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder-mailbox) and create public folder mailboxes
+## Prerequisites
 
-### Client requirement
+Before you create your public folder calendar, follow the prerequisites.
 
-The Calendar type of public folder can be accessed from OWA as well as from Outlook desktop client. However, one can create the public folder calendar from Outlook desktop client only.
+1. Ensure public folders are [deployed](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox) in Exchange Online.
 
-Note:
+2. Use the following command to see a list of any public folder mailboxes present in the organization:
 
-Public folders, including calendar, cannot be accessed from OWA or Outlook app for mobile devices.
+```
+Get-Mailbox -PublicFolder
+Get-PublicFolder \\
+```
 
-### Rights required
+3. If you don't see a list of public folder mailboxes, then follow the steps to [create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
-Ensure your assigned necessary [access rights](https://support.microsoft.com/en-us/help/2573274/public-folder-permissions-for-exchange-server) to create the public folder.
+4. Verify that you have the necessary [access rights](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server) to create the public folder.
 
-> Example1:
->
-> If you want user to be able to create public folder on the root of the public folder hierarchy, along with all other access rights,:
->
-> Add-PublicFolderClientPermission -Identity “\\” -AccessRights Owner -User User1
->
-> Example2:
->
-> If you want user to be able to create public folder under existing public folder named Marketing:
->
-> Add-PublicFolderClientPermission -Identity “\\Marketing” -AccessRights Editor -User User1
+- If you want the user to be able to create a public folder on the root of the public folder hierarchy, along with all other access rights, run the following command:
 
--   Login to Outlook desktop client and ensure your able to access the public folder deployment.
+  ```
+  Add-PublicFolderClientPermission -Identity “\\” -AccessRights Owner -User User1
+  ```
 
-Creating a public folder calendar:
+- If you want the user to be able to create a public folder under the existing public folder named Marketing, then run the following command:
+
+  ```
+   Add-PublicFolderClientPermission -Identity “\\Marketing” -AccessRights Editor -User User1
+  ```
+
+5. Login to the Outlook desktop client and ensure you're able to access the public folder deployment.
+
+## Create a public folder calendar:
 ----------------------------------
 
-Once you have ensured the prerequisites are met, follow these steps:
+Once you have ensured the prerequisites are met, then you're read to get started creating a public folder calendar.
 
--   Login to Outlook desktop client with user account that has necessary [access rights](https://support.microsoft.com/en-us/help/2573274/public-folder-permissions-for-exchange-server) to create public folder
+1. Login to Outlook desktop client with user account that has necessary [access rights](https://support.microsoft.com/en-us/help/2573274/public-folder-permissions-for-exchange-server) to create public folder
 
--   Expand folders
+2. Expand folders
 
 > <img src="c:\Users\v-cichur\Documents\GitHub\OfficeDocs-Exchange-pr\Exchange\ExchangeOnline\collaboration-exo\public-folders/media/image1.png" style="width:3.12516in;height:1.02089in" alt="A screenshot of a cell phone Description automatically generated" />
 
--   Create new public folder
+3. Create new public folder
 
 > To create public folder calendar on the root hierarchy, right click on “All Public Folders” and select New Folder…
 >
@@ -82,7 +80,7 @@ Once you have ensured the prerequisites are met, follow these steps:
 >
 > <img src="c:\Users\v-cichur\Documents\GitHub\OfficeDocs-Exchange-pr\Exchange\ExchangeOnline\collaboration-exo\public-folders/media/image3.png" style="width:3.97243in;height:4.27105in" alt="A screenshot of a cell phone Description automatically generated" />
 
--   Type in the name of Public folder to be created and select Calendar Items from the “Folder contains” drop down list and click OK
+4. Type in the name of Public folder to be created and select Calendar Items from the “Folder contains” drop down list and click OK
 
 > <img src="c:\Users\v-cichur\Documents\GitHub\OfficeDocs-Exchange-pr\Exchange\ExchangeOnline\collaboration-exo\public-folders/media/image4.png" style="width:3.35434in;height:4.11827in" alt="A screenshot of a cell phone Description automatically generated" />
 
@@ -94,7 +92,7 @@ Once you have ensured the prerequisites are met, follow these steps:
 
 > <img src="c:\Users\v-cichur\Documents\GitHub\OfficeDocs-Exchange-pr\Exchange\ExchangeOnline\collaboration-exo\public-folders/media/image6.png" style="width:3.98632in;height:4.02798in" alt="A screenshot of a cell phone Description automatically generated" />
 
-Sharing public folder calendar
+## Share a public folder calendar
 ------------------------------
 
 By default, everyone in the organization can access public folder and create items on it:
@@ -103,7 +101,7 @@ By default, everyone in the organization can access public folder and create ite
 
 If you want to delegate additional access rights, add other users and provide required set of [permissions](https://support.microsoft.com/en-us/help/2573274/public-folder-permissions-for-exchange-server)
 
-Accessing public folder calendar in OWA:
+## Access a public folder calendar in OWA:
 ----------------------------------------
 
 -   Login to OWA
@@ -126,7 +124,7 @@ Accessing public folder calendar in OWA:
 
 > <img src="c:\Users\v-cichur\Documents\GitHub\OfficeDocs-Exchange-pr\Exchange\ExchangeOnline\collaboration-exo\public-folders/media/image10.png" style="width:3.17361in;height:6.46528in" />
 
- Receiving emails on public folder calendar
+ ## Receive emails to a public folder calendar
 ------------------------------------------
 
-Follow the steps on [mail enable public folder calendar](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder) to allow users email calendar invites/appointments to the calendar
+Follow the steps in [mail enable public folder calendar](enable-or-disable-mail-for-public-folder.md) to allow users email calendar invites/appointments to the calendar
