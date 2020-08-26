@@ -70,7 +70,7 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
 - To create a public folder calendar at the top level of the directories, right-click  **All Public Folders** and select **New Folder**.
 
-  ![Image](../../media/new-folder.png)
+  ![The image shows the new folder dialog box.](../../media/new-folder.png)
 
 - To create a public folder calendar under an existing public folder, right-click the folder, and select **New Folder**.
 
