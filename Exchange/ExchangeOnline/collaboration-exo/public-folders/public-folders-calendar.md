@@ -40,7 +40,7 @@ Get-Mailbox -PublicFolder
 Get-PublicFolder \\
 ```
 
-3. If you don't see a list of public folder mailboxes, then follow the steps to [create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
+3. If you don't see a list of the public folder mailboxes, then follow the steps to [create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
 4. Verify that you have the necessary [access rights](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server) to create the public folder.
 
@@ -62,7 +62,7 @@ Get-PublicFolder \\
 
 Once you have ensured the prerequisites are met, then you're ready to get started creating a public folder calendar.
 
-1. Login to Outlook desktop client with user account that has the necessary [access rights](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server) to create a public folder.
+1. Login to the Outlook desktop client with a user account that has the necessary [access rights](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server) to create a public folder.
 
 2. Expand the folders.
 
@@ -70,39 +70,36 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
 - To create a public folder calendar at the top level of the directories, right-click  **All Public Folders** and select **New Folder**.
 
-- To create a calendar under an existing public folder, right-click the folder and select **New Folder**.
+  ![Image](../../media/new-folder.png)
 
-4. Name the public folder to be created. Select **Calendar Items** from the **Folder contains** drop-down list and click **OK**.
+- To create a public folder calendar under an existing public folder, right-click the folder, and select **New Folder**.
 
-The calendar type folder shows up with different icon:
+4. Name the public folder, select **Calendar Items** from the **Folder contains** drop-down list and click **OK**.
 
--   For faster access, right click on the folder and select Add to favorites
+   The calendar type folder shows up with different icon.
+
+5. For faster access to the new public folder calendar, right-click the folder and select **Add to favorites**.
 
 ## Share a public folder calendar
 
-By default, everyone in the organization can access public folder and create items on it:
+By default, everyone in the organization can access the public folder and create items in it. If you want to delegate additional access rights, add other users, and provide a required set of permissions, then follow the instructions in [Public folder permissions](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server).
 
-If you want to delegate additional access rights, add other users and provide required set of [permissions](https://support.microsoft.com/en-us/help/2573274/public-folder-permissions-for-exchange-server)
+## Access a public folder calendar in the Outlook web app
 
-## Access a public folder calendar in OWA
+1. Login to the Outlook web app (OWA)
 
--   Login to OWA
+2. Right-click Folders and select **Add public folder to Favorites**.
 
--   Right click on Folders and select Add public folder to Favourites
+3. Browse the directory and select the desired public folder.
+ 
+4. Click **Add Public Folder**.
 
+5. Close the Add public folder menu
+   The calendar public folder show in Calendar area of the OWA
 
--   Browse through the hierarchy, select the desired public folder and click Add Public Folder
+6. Click the Calendar icon.
+   You'll see the public folder calendar under Other Calendars.
 
+## Receive emails to a public folder calendar
 
--   Close the Add public folder menu
-
--   The calendar public folder show in Calendar area of the OWA
-
--   Click on Calendar icon
-
--   And you should see the public folder calendar under Other Calendars
-
- ## Receive emails to a public folder calendar
-
-
-Follow the steps in [mail enable public folder calendar](enable-or-disable-mail-for-public-folder.md) to allow users email calendar invites/appointments to the calendar
+Follow the steps in [mail enable public folder calendar](enable-or-disable-mail-for-public-folder.md) to allow users email calendar invites/appointments to the calendar.
