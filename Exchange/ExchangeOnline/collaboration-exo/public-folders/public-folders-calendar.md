@@ -74,9 +74,15 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
 - To create a public folder calendar under an existing public folder, right-click the folder, and select **New Folder**.
 
-4. Name the public folder, select **Calendar Items** from the **Folder contains** drop-down list and click **OK**.
+4. Name the public folder, select **Calendar Items** from the **Folder contains** drop-down list.
+
+   ![Image shows the Calendar option highlighted.](../../media/folder-contains.png)
+
+5. Click **OK**.
 
    The calendar type folder shows up with different icon.
+
+   ![Image shows the Calendar option highlighted.](../../media/different-icon.png)
 
 5. For faster access to the new public folder calendar, right-click the folder and select **Add to favorites**.
 
