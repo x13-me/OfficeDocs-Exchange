@@ -91,7 +91,7 @@ Keep the following issues in mind before you install the Hybrid Agent:
 
 - [Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) is not supported with the Hybrid Agent. Customers will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover, EWS, ActiveSync, MAPI and OAB endpoints for hybrid Modern Authentication to function with various Outlook clients.
 
-- Team's Calendaring features that require access to on premises mailboxes are not supported with the Hybrid Agent. You will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover and EWS to support these features.
+- For Teams' Calendaring features that require access to on-premises mailboxes, it's recommended that you leverage the full Classic Exchange Hybrid Topology. For more information, see [How Exchange and Microsoft Teams interact](https://docs.microsoft.com/microsoftteams/exchange-teams-interact).
 
 - Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features require the classic connectivity model where Exchange Web Services (EWS) and Autodiscover are published on-premises and are externally available to Microsoft 365 and Office 365.
 
@@ -99,15 +99,15 @@ Keep the following issues in mind before you install the Hybrid Agent:
 
 - The Hybrid Agent supports a single migration endpoint with the service default limits. Multiple migration endpoints utilizing your custom endpoint/URL is not supported.
 
+- The Hybrid Agent supports a single Exchange organization. Multiple Exchange organizations hybrid is not supported.
+
+
 > [!NOTE]
 > SMTP doesn't traverse the Hybrid Agent and still requires a public certificate for mail flow between Microsoft 365 or Office 365 and your on-premises organization. SMTP traffic is out of scope for the Hybrid Agent.
 
 ## Running Setup
 
 You must run the HCW from the computer where you want the agent installed. After the Agent is installed and configured, the HCW will locate a preferred server to connect to and run the standard hybrid configuration steps. You do not have to run the HCW from the Exchange server directly, but as stated previously, the computer where the HCW is run must be able to connect to the Client Access Server on the ports specified in the [Ports and protocols](#port-and-protocol-requirements) section.
-
-> [!NOTE]
-> The Modern Hybrid option will only be presented if you have never run the Hybrid Configuration wizard. If you have successfully established Hybrid in either Minimal or Full in the "classic config" for your tenant, this new option won't be presented to you.
 
 ### Installation Prerequisites
 
@@ -156,7 +156,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 4. Wait while the HCW gathers information and configuration about your environments. When it's completed, click **Next**.
 
-5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Hybrid-Organization-Configuration-Transfer/ba-p/607944). Click **Next**.
+5. Select either **Minimal** or **Full Hybrid Configuration**. You can also choose **Organization Configuration Transfer**. For more information, see [Hybrid Organization Configuration Transfer V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-hybrid-organization-configuration-transfer-v2/ba-p/608762). Click **Next**.
 
 6. Follow the steps to enable federation. Click **Next**.
 

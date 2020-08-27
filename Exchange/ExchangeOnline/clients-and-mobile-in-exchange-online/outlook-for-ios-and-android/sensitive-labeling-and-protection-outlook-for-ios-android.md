@@ -171,7 +171,7 @@ Use the following steps to create and configure the Outlook for iOS and Android 
 3. Select **Apps** and then select **App configuration policies**.
 4. On the **App Configuration policies** blade, choose **Add** and select **Managed devices** to start the app configuration policy creation flow.
 5. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
-6. For **Platform**, choose **Android Enterprise** and for **Profile Type**, choose **Work Profile**.
+6. For **Platform**, choose **Android Enterprise** and for **Profile Type**, choose **All Profile Types**.
 7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
@@ -214,7 +214,7 @@ In the message view, users can view messages that are S/MIME signed or encrypted
 
 ![Screenshots of S/MIME usage in iOS.](../../media/sensitive-ios-s-mime.png)
 
-Users can install a sender's public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user's device, specifically in the Microsoft publisher [keychain in iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
+Users can install a sender's public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user's device, specifically in the Microsoft publisher [keychain in iOS](https://support.apple.com/guide/security/welcome/web) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
 
 ![Screenshots of Outlook for Android public key installation](../../media/sensitive-android-key-install.png)
 

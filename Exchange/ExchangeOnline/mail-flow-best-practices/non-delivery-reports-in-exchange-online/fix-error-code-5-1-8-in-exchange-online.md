@@ -21,11 +21,12 @@ description: "Learn how to fix email issues for error code 5.1.8 in Exchange Onl
 
 # Fix email delivery issues for error code 5.1.8 in Exchange Online
 
-Problems sending and receiving email messages can be frustrating. If you get a non-delivery report (also known as an NDR or bounce message) for error code 550 5.1.8, this article can help you fix the problem and get your message sent.
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.1.8 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 |||||
-|:-----|:-----|:-----|:-----|
+|---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-do-i-fix-this)|
+|
 
 ## Why did I get this bounce message?
 
@@ -41,11 +42,11 @@ Then, you need to tell your email admin that you think your account has been com
 
 The sending account might be compromised. You'll need to:
 
-- [Determine if the account is compromised](https://support.microsoft.com/help/2551603/how-to-determine-whether-your-office-365-account-has-been-compromised). If the account is compromised, follow the steps in [Responding to a Compromised Email Account in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/responding-to-a-compromised-email-account).
+- [Determine if the account is compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised). If the account is compromised, follow the steps in [Responding to a Compromised Email Account in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/responding-to-a-compromised-email-account).
 
-- [Go to the SCC Restricted Users page](https://protection.office.com/?hash=restrictedusers) to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
+- Go to the **Restricted users** portal in the Security & Compliance Center at <https://protection.office.com/?hash=restrictedusers> to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
 
-- To help prevent future account compromises, follow the recommendations in [Security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices).
+- To help prevent future account compromises, follow the recommendations in [Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data).
 
 ## Still need help with error code 5.1.8?
 

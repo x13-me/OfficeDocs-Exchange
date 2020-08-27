@@ -62,12 +62,15 @@ A rule is made of conditions, exceptions, an action, and a priority value.
 
 How multiple rules with the same condition are evaluated, and how a rule with multiple conditions, condition values, and exceptions are evaluated are described in the following table.
 
-|**Component**|**Logic**|**Comments**|
-|:-----|:-----|:-----|
+****
+
+|Component|Logic|Comments|
+|---|---|---|
 |Multiple rules that contain the same condition|The first rule is applied, and subsequent rules are ignored|For example, if your highest priority rule blocks Outlook on the web connections, and you create another rule that allows Outlook on the web connections for a specific IP address range, all Outlook on the web connections are still blocked by the first rule. Instead of creating another rule for Outlook on the web, you need to add an exception to the existing Outlook on the web rule to allow connections from the specified IP address range.|
 |Multiple conditions in one rule|AND|A client connection must match all conditions in the rule. For example, EWS connections from users in the Accounting department.|
 |One condition with multiple values in a rule|OR|For conditions that allow more than one value, the connection must match any one (not all) of the specified conditions. For example, EWS or IMAP4 connections.|
 |Multiple exceptions in one rule|OR|If a client connection matches any one of the exceptions, the actions are not applied to the client connection. The connection doesn't have to match all the exceptions. For example, IP address 19.2.168.1.1 or Basic authentication.|
+|
 
 You can test how a specific client connection would be affected by Client Access Rules (which rules would match and therefore affect the connection). For more information, see [Use Exchange Online PowerShell to test Client Access Rules](procedures-for-client-access-rules.md#use-exchange-online-powershell-to-test-client-access-rules).
 
@@ -101,7 +104,9 @@ New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOf
 
 Not all authentication types are supported for all protocols in Client Access Rules. The supported authentication types per protocol are described in this table:
 
-||**AdfsAuthentication**|**BasicAuthentication**|**CertificateBasedAuthentication**|**NonBasicAuthentication**|**OAuthAuthentication**|
+****
+
+|Protocol|AdfsAuthentication|BasicAuthentication|CertificateBasedAuthentication|NonBasicAuthentication|OAuthAuthentication|
 |---|:---:|:---:|:---:|:---:|:---:|
 |`ExchangeActiveSync`|n/a|supported|supported|n/a|supported|
 |`ExchangeAdminCenter`|supported|supported|n/a|n/a|n/a|
@@ -109,6 +114,7 @@ Not all authentication types are supported for all protocols in Client Access Ru
 |`OutlookWebApp`|supported|supported|n/a|n/a|n/a|
 |`POP3`|n/a|supported|n/a|n/a|supported|
 |`RemotePowerShell`|n/a|supported|n/a|supported|n/a|
+|
 
 ## Client Access Rule conditions and exceptions
 
@@ -116,8 +122,11 @@ Conditions and exceptions in Client Access Rules identify the client connections
 
 This table describes the conditions and exceptions that are available in Client Access Rules:
 
-|**Condition parameter in Exchange Online PowerShell**|**Exception parameter in Exchange Online PowerShell**|**Description**|
-|:-----|:-----|:-----|
+> [!NOTE]
+> Microsoft sync technology that's used in Outlook for iOS and Android and Windows Mail isn't available in Client Access Rules.
+
+|Condition parameter in Exchange Online PowerShell|Exception parameter in Exchange Online PowerShell|Description|
+|---|---|---|
 |_AnyOfAuthenticationTypes_|_ExceptAnyOfAuthenticationTypes_|Valid values are: <br/>• `AdfsAuthentication` <br/>• `BasicAuthentication` <br/>• `CertificateBasedAuthentication` <br/>• `NonBasicAuthentication` <br/>• `OAuthAuthentication` <br/> You can specify multiple values separated by commas. You can use quotation marks around each individual value ("_value1_","_value2_"), but not around all values (don't use "_value1_,_value2_").|
 |_AnyOfClientIPAddressesOrRanges_|_ExceptAnyOfClientIPAddressesOrRanges_|Valid values are: <br/>• **A single IP address**: For example, `192.168.1.1`. <br/>• **An IP address range**: For example, `192.168.0.1-192.168.0.254`. <br/>• **Classless Inter-Domain Routing (CIDR) IP**: For example, `192.168.3.1/24`. <br/> You can specify multiple values separated by commas.|
 |_AnyOfProtocols_|_ExceptAnyOfProtocols_|Valid values are: <br/>• `ExchangeActiveSync` <br/>• `ExchangeAdminCenter` <br/>• `ExchangeWebServices` <br/>• `IMAP4` <br/>• `OfflineAddressBook` <br/>• `OutlookAnywhere` (includes MAPI over HTTP) <br/>• `OutlookWebApp` (Outlook on the web) <br/>• `POP3` <br/>• `PowerShellWebServices` <br/>• `RemotePowerShell` <br/>• `REST` <br/> You can specify multiple values separated by commas. You can use quotation marks around each individual value (" _value1_","_value2_"), but not around all values (don't use "_value1_,_value2_"). <br/> **Note**: If you don't use this condition in a rule, the rule is applied to *all* protocols.|

@@ -74,6 +74,10 @@ You can use any member of the Active Directory domain to prepare Active Director
 1. The computer requires the following software:
 
    a. [.NET Framework 4.8](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe)
+   
+      > [!NOTE]
+      >
+      > - When installing on Windows Server Core, you must use key "/q" for install this package. Optionaly you can use "/log [PATH]" for logging.
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 

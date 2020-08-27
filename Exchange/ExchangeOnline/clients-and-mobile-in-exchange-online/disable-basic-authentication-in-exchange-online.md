@@ -299,7 +299,7 @@ For detailed syntax and parameter information, see [Set-AuthenticationPolicy](ht
 
 ### Configure the default authentication policy
 
-The default authentication policy is assigned to all users who don't already have a specific policy assigned to them. Note that the authentication policies assigned to users take precedence to the default policy. To configure the default authentication policy for the organization, use this syntax:
+The default authentication policy is assigned to all users who don't already have a specific policy assigned to them. Note that the authentication policies assigned to users take precedence over the default policy. To configure the default authentication policy for the organization, use this syntax:
 
 ```PowerShell
 Set-OrganizationConfig -DefaultAuthenticationPolicy <PolicyIdentity>
@@ -373,6 +373,11 @@ WWW-Authenticate: Basic Realm="",Basic Realm=""
 Date: Wed, 31 Jan 2018 05:15:08 GMT
 Content-Length: 0
 ```
+
+## Manage Basic authentication in the Microsoft 365 Admin Center
+
+In the Microsoft 365 Admin Center, under **Settings** > **Org Settings** > **Modern Authentication** you can designate the protocols in your tenant that no longer require Basic Authentication to be enabled.
+Behind the scenes, these options utilize Authentication Policies. If Authentication Policies were created in the past, modifying any of these selections will automatically create the first new Authentication Policy. This policy is visible only through PowerShell. For advanced customers that may already be utilizing Authentication Policies, changes within the Microsoft 365 Admin Center will modify their existing default policy. Look through [Azure AD Sign-in logs](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication#identify-legacy-authentication-use) to get a good idea of which protocols clients are using before making any changes.
 
 ## Filter on-premises Active Directory user accounts that are synchronized to Exchange Online
 

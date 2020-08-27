@@ -159,7 +159,7 @@ The following tables displays acceptable thresholds and information about .NET F
 <td><p>Should be below 10% on average.</p></td>
 </tr>
 <tr class="odd">
-<td><p>.NET CLR Exceptions(*)\# of Excepts Thrown / sec</p></td>
+<td><p>.NET CLR Exceptions(*)\# of Exceps Thrown / sec</p></td>
 <td><p>Displays the number of exceptions thrown per second. These include both .NET Framework exceptions and unmanaged exceptions that get converted into .NET Framework exceptions. For example, the null pointer reference exception in unmanaged code would get thrown again in managed code as a .NET Framework System.NullReferenceException. This counter includes both handled and unhandled exceptions.</p></td>
 <td><p>Should be less than 5% of total requests per second (RPS) (Web Server(_Total)\Connection Attempts/sec * .05).</p></td>
 </tr>
@@ -450,7 +450,7 @@ The following tables displays information about HTTP Proxy counters.
 <td><p>Shows the percentage of connectivity related failures between this Client Access Server and MBX servers over the last 200 samples.</p></td>
 </tr>
 <tr class="even">
-<td><p>MSExchange HttpProxy(*)\Outsanding Proxy Requests</p></td>
+<td><p>MSExchange HttpProxy(*)\Outstanding Proxy Requests</p></td>
 <td><p>Shows the number of concurrent outstanding proxy requests.</p></td>
 </tr>
 <tr class="odd">

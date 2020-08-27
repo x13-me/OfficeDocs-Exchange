@@ -98,7 +98,7 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Maximum booking lead time (days)**: This setting specifies the maximum number of days in advance that the room can be booked. Valid input is an integer between 0 and 1080. The default value is 180 days.
 
-- **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
+- **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. A valid value is an integer from 0 through 35791394. The default value is 24 hours. When the value is set to 0, the maximum duration of a meeting is unlimited.
 
     For repeating booking requests, the maximum booking duration applies to the length of each instance of the repeating booking request.
 

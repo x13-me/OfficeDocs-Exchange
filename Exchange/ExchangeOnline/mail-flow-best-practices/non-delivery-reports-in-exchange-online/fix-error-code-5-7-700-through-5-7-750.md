@@ -26,8 +26,9 @@ It's frustrating when you get an error after sending an email message. This topi
 Use the information in the NDR to help you decide how to fix the problem.
 
 |||||
-|:-----|:-----|:-----|:-----|
+|---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. What can I do to fix this?](#im-an-email-admin-what-can-i-do-to-fix-this)|
+|
 
 ## Why did I get this bounce message?
 
@@ -51,11 +52,11 @@ Common causes are compromised on-premises servers or compromised admin accounts 
 
 To remove this block, you need to understand and explain the cause to a support agent, as well as correct the underlying problem.
 
-In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire.
+In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire. For more information, please see ["Tenant has exceeded threshold" NDR when mail is sent from your organization](https://docs.microsoft.com/office365/troubleshoot/antispam/tenant-has-exceeded-threshold).
 
 ### 5.7.708 Access denied, traffic not accepted from this IP
 
-If you must send email from these low reputation IP addresses before you can purchase licenses, contact support to request an exception until you're able to purchase licenses.
+This error can happen when you are trying out a Microsoft 365 trial tenant. If you receive this error before you can purchase licenses, contact support to request an exception for the low reputation IP address until you're able to purchase licenses.
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 

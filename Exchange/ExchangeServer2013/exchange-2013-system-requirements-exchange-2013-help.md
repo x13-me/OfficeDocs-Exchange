@@ -47,7 +47,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Exchange 2007</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Update Rollup 10 for Exchange 2007 Service Pack 3 (SP3) on all Exchange 2007 servers in the organization, including Edge Transport servers (see Note 1 below).</p></li>
+<li><p>Update Rollup 10 for Exchange 2007 Service Pack 3 (SP3) on all Exchange 2007 servers in the organization, including Edge Transport servers.<sup>1</sup></p></li>
 <li><p>Exchange 2013 Cumulative Update 2 (CU2) or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
@@ -55,7 +55,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Exchange 2010</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers (see Note 2 below).</p></li>
+<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers).<sup>2</sup></p></li>
 <li><p>Exchange 2013 CU2 or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
@@ -63,17 +63,17 @@ The following table lists the scenarios in which coexistence between Exchange 20
 <td><p>Mixed Exchange 2010 and Exchange 2007 organization</p></td>
 <td><p>Supported with the following minimum versions of Exchange:</p>
 <ul>
-<li><p>Update Rollup 10 for Exchange 2007 SP3 on all Exchange 2007 servers in the organization, including Edge Transport servers (see Note 1 below).</p></li>
-<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers (see Note 2 below).</p></li>
+<li><p>Update Rollup 10 for Exchange 2007 SP3 on all Exchange 2007 servers in the organization, including Edge Transport servers.<sup>1</sup></p></li>
+<li><p>Exchange 2010 SP3 on all Exchange 2010 servers in the organization, including Edge Transport servers.<sup>2</sup></p></li>
 <li><p>Exchange 2013 CU2 or later on all Exchange 2013 servers in the organization.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-**Note 1**: If you want to create an EdgeSync Subscription between an Exchange 2007 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2007 SP3 Update Rollup 13 or later on the Exchange 2007 Hub Transport server.
+<sup>1</sup> If you want to create an EdgeSync Subscription between an Exchange 2007 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2007 SP3 Update Rollup 13 or later on the Exchange 2007 Hub Transport server.
 
-**Note 2**: If you want to create an EdgeSync Subscription between an Exchange 2010 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2010 SP3 Update Rollup 5 or later on the Exchange 2010 Hub Transport server.
+<sup>2</sup> If you want to create an EdgeSync Subscription between an Exchange 2010 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2010 SP3 Update Rollup 5 or later on the Exchange 2010 Hub Transport server.
 
 ## Supported hybrid deployment scenarios
 
@@ -101,7 +101,9 @@ The following table lists the requirements for the network and the directory ser
 <td><p>Schema master</p></td>
 <td><p>By default, the schema master runs on the first Active Directory domain controller installed in a forest. The schema master must be running one of the following:</p>
 <ul>
-<li><p>Windows Server 2012 R2 Standard or Datacenter1</p></li>
+<li><p>Windows Server 2016 Standard or Datacenter<sup>1</sup></p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
 <li><p>Windows Server 2012 Standard or Datacenter</p></li>
 <li><p>Windows Server 2008 R2 Standard or Enterprise</p></li>
 <li><p>Windows Server 2008 R2 Datacenter RTM or later</p></li>
@@ -115,7 +117,8 @@ The following table lists the requirements for the network and the directory ser
 <td><p>Global catalog server</p></td>
 <td><p>In each Active Directory site where you plan to install Exchange 2013, you must have at least one global catalog server running one of the following:</p>
 <ul>
-<li><p>Windows Server 2012 R2 Standard or Datacenter1</p></li>
+<li><p>Windows Server 2016 Standard or Datacenter<sup>1</sup></p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
 <li><p>Windows Server 2012 Standard or Datacenter</p></li>
 <li><p>Windows Server 2008 R2 Standard or Enterprise</p></li>
 <li><p>Windows Server 2008 R2 Datacenter RTM or later</p></li>
@@ -130,7 +133,8 @@ The following table lists the requirements for the network and the directory ser
 <td><p>Domain controller</p></td>
 <td><p>In each Active Directory site where you plan to install Exchange 2013, you must have at least one writeable domain controller running one of the following:</p>
 <ul>
-<li><p>Windows Server 2012 R2 Standard or Datacenter1</p></li>
+<li><p>Windows Server 2016 Standard or Datacenter<sup>1</sup></p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
 <li><p>Windows Server 2012 Standard or Datacenter</p></li>
 <li><p>Windows Server 2008 R2 Standard or Enterprise SP1 or later</p></li>
 <li><p>Windows Server 2008 R2 Datacenter RTM or later</p></li>
@@ -142,7 +146,7 @@ The following table lists the requirements for the network and the directory ser
 </tr>
 <tr class="even">
 <td><p>Active Directory forest</p></td>
-<td><p>Active Directory must be at Windows Server 2003 forest functionality mode or higher2.</p></td>
+<td><p>Active Directory must be at Windows Server 2003 forest functionality mode or higher.<sup>2</sup></p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS namespace support</p></td>
@@ -162,9 +166,9 @@ The following table lists the requirements for the network and the directory ser
 </tbody>
 </table>
 
-1   Windows Server 2012 R2 is supported only with Exchange 2013 SP1 or later.
+<sup>1</sup> Windows Server 2012 R2 and Windows Server 2016 are supported only with Exchange 2013 SP1 or later.
 
-2   Windows Server 2012 R2 forest functionality mode is supported only with Exchange 2013 SP1 or later.
+<sup>2</sup> Windows Server 2012 R2 or Windows Server 2016 forest functionality mode is supported only with Exchange 2013 SP1 or later.
 
 ## Directory server architecture
 
@@ -269,7 +273,7 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 The following table lists the supported operating systems for Exchange 2013.
 
 > [!IMPORTANT]
-> We don't support the installation of Exchange 2013 on a computer that's running in Windows Server Core mode. The computer must be running the full installation of Windows Server. If you want to install Exchange 2013 on a computer that's running in Windows Server Core mode, you must convert the server to a full installation of Windows Server by doing one of the following:
+> We don't support the installation of Exchange 2013 on a computer that's running in Windows Server Core mode. The computer must be running the full installation of Windows Server. If you want to install Exchange 2013 on a computer that's running in Windows Server Core mode, you must convert the server to a full installation of Windows Server by doing one of the following steps:
 > <UL>
 > <LI>
 > <P><STRONG>Windows Server 2008 R2</STRONG>: Reinstall Windows Server and select the <STRONG>Full Installation</STRONG> option.</P>
@@ -299,7 +303,7 @@ The following table lists the supported operating systems for Exchange 2013.
 <td><p>Mailbox, Client Access, and Edge Transport server roles</p></td>
 <td><p>One of the following:</p>
 <ul>
-<li><p>Windows Server 2012 R2 Standard or Datacenter1</p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
 <li><p>Windows Server 2012 Standard or Datacenter</p></li>
 <li><p>Windows Server 2008 R2 Standard with Service Pack 1 (SP1)</p></li>
 <li><p>Windows Server 2008 R2 Enterprise with Service Pack 1 (SP1)</p></li>
@@ -310,12 +314,12 @@ The following table lists the supported operating systems for Exchange 2013.
 <td><p>Management tools</p></td>
 <td><p>One of the following:</p>
 <ul>
-<li><p>Windows Server 2012 R2 Standard or Datacenter1</p></li>
+<li><p>Windows Server 2012 R2 Standard or Datacenter<sup>1</sup></p></li>
 <li><p>Windows Server 2012 Standard or Datacenter</p></li>
 <li><p>Windows Server 2008 R2 Standard with SP1</p></li>
 <li><p>Windows Server 2008 R2 Enterprise with SP1</p></li>
 <li><p>Windows Server 2008 R2 Datacenter RTM or later</p></li>
-<li><p>64-bit edition of Windows 8.12</p></li>
+<li><p>64-bit edition of Windows 8.1<sup>2</sup></p></li>
 <li><p>64-bit edition of Windows 8</p></li>
 <li><p>64-bit edition of Windows 7 with Service Pack 1</p></li>
 </ul></td>
@@ -323,9 +327,9 @@ The following table lists the supported operating systems for Exchange 2013.
 </tbody>
 </table>
 
-1   Windows Server 2012 R2 is supported only with Exchange 2013 SP1 or later.
+<sup>1</sup> Windows Server 2012 R2 is supported only with Exchange 2013 SP1 or later.
 
-2   Windows 8.1 is supported only with Exchange 2013 SP1 or later.
+<sup>2</sup> Windows 8.1 is supported only with Exchange 2013 SP1 or later.
 
 ### Supported Windows Management Framework versions for Exchange 2013
 
@@ -335,36 +339,31 @@ Exchange 2013 only supports the version of Windows Management Framework that's b
 
 We strongly recommend that you use the latest version of .NET Framework that's supported by the release of Exchange you're installing.
 
-|**Exchange 2013 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
-|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
+***
+
+|Exchange 2013 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
+|---|:---:|:---:|:---:|:---:|:---:|
 |CU23|X|X|||
 |CU21, CU22||X|X||
 |CU19, CU20|||X|X||
 |CU16, CU17, CU18||||X|
 |CU15||||X|
+|
 
-**Note**: For older versions, see [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#microsoft-net-framework)
+**Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016#exchange-2013)
 
 ## Supported clients
 
 Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 
 - Microsoft 365 Apps for enterprise
-
 - Outlook 2019
-
 - Outlook 2016
-
 - Outlook 2013
-
 - Outlook 2010
-
 - Outlook 2007
-
 - Entourage 2008 for Mac, Web Services Edition
-
 - Outlook for Mac for Office 365
-
 - Outlook for Mac 2011
 
 For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).

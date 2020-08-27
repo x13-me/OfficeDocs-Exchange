@@ -42,11 +42,14 @@ When you complete this procedure your on-premises and Microsoft 365 or Office 36
 
 The following table describes the version and location combinations of user mailboxes and public folders that are supported. "Hybrid not applicable" is still a supported scenario, but is not considered a hybrid scenario since both the public folders and the users are residing in the same location.
 
-||**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2013 User Mailbox**|**Exchange Online User Mailbox**|
-|:-----|:-----|:-----|:-----|
+****
+
+|Version|On-Premises Exchange 2010 User Mailbox|On-Premises Exchange 2013 User Mailbox|Exchange Online User Mailbox|
+|----|----|----|----|
 |On-Premises Exchange 2010 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |On-Premises Exchange 2013 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |Exchange Online Public Folders|Not supported|Supported|Hybrid not applicable|
+|
 
 > [!NOTE]
 > Outlook 2016 does not support accessing Exchange 2007 legacy public folders. If you have users who are using Outlook 2016, you must move your public folders to a more recent version of Exchange Server. More information about Outlook 2016 and Office 2016 compatibility with Exchange 2007 and earlier versions can be found in [this article](https://support.microsoft.com/office/2ab9e8ef-4cd9-4041-9426-73e8f6c5aacc).
@@ -69,7 +72,7 @@ The following table describes the version and location combinations of user mail
 
   1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-  2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007)and download in your preferred language from the dialouge box.
+  2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007)and download in your preferred language from the dialog box.
 
 - Outlook 2016 for Mac (and earlier versions) and Outlook for Mac for Office 365 are not supported for cross-premises legacy public folders. Users must be in the same location as the public folders to access them with Outlook for Mac or Outlook for Mac for Office 365. Additionally, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
 

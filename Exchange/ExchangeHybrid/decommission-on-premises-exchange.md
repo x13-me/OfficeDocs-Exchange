@@ -174,7 +174,12 @@ The graphic below describes the actual end state:
 ![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
 > [!TIP]
-> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently: <br/>• **Microsoft 365 identity services** will manage online requests <br/>• **Active directory** will manage the internal authentication <br/><br/> If you don't have any on-premises mailbox(es), you can safely decommission most of your exchange server(s), leaving one or more for user management purposes, because the source of authority is still defined as on-premises.
+> If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently:
+>
+> - **Microsoft 365 identity services** will manage online requests.
+> - **Active directory** will manage the internal authentication.
+>
+> If you don't have any on-premises mailbox(es), you can safely decommission most of your exchange server(s), leaving one or more for user management purposes, because the source of authority is still defined as on-premises.
 
 ### To keep AD FS and directory synchronization and decommission most of the Exchange servers
 
@@ -260,6 +265,9 @@ The graphic below describes the actual end state:
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+      
+> [!NOTE]
+> It's recommended that you leave the Exchange Hybrid Deployment feature enabled in Azure AD Connect.
 
 ### Scenario three
 

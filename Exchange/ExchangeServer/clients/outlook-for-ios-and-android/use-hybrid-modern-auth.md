@@ -246,9 +246,11 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - Shared and delegate mailbox data access
 
-- Cortana Time to Leave
+- Cortana Time to Leave / Travel Time
 
 - Calendar attachments
+
+- Rich meeting locations
 
 - Task management with Microsoft To-Do
 
@@ -259,6 +261,8 @@ The following features are not supported for on-premises mailboxes using hybrid 
 - Play My Emails
 
 - Sensitivity labeling
+
+- S/MIME
 
 ## Connection Flow FAQ
 
