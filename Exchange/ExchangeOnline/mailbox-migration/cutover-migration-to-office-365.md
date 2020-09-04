@@ -183,7 +183,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes:
 
-   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox. Make sure that this mailbox is NOT hidden from the address lists.
+   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox. Make sure that this mailbox is _not_ hidden from the address lists.
 
    - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Microsoft 365 or Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 
