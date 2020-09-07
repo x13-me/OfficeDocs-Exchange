@@ -30,7 +30,7 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-    image
+    ![New EAC](media/EAC-selection.PNG)
 
 You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
@@ -41,11 +41,22 @@ You can also get to the New Exchange admin center directly by using the URL [htt
 
 Here's what the New Exchange admin center looks like.
 
-image1
+![New EAC homepage](media/new-EAC-homepage-1.PNG)
 
-image2
+![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
 
-image3
+![New EAC tabs](media/new-EAC-homepage-tabs.PNG)
+
+### Homepage
+
+You can personalize your homepage by selecting a theme, setting your language, and timezone from the Settings bubble.
+
+1. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the New Exchange admin center.
+
+2. Click **+ Add card** and drag a card to the location you want on the dashboard.
+
+3. Select **Need help?**, if you need help from Microsoft 365 Support Assistant.
+
 
 ### Feature pane
 
@@ -55,10 +66,11 @@ Here are the features you'll find in the left-hand navigation.
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
 |**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
+|**Roles**|Add role groups to view data and complete tasks in New Exchange admin center.|
 |**Migration**|Migrate mailboxes in batches.|
 |**Reports**|View reports on mail flow and migrated batches.|
 |**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
-|**More features**|Access features and services from the classic exchange admin center.|
+|**More features**|Access features and services from the Classic Exchange admin center.|
 
 ### Tabs
 
