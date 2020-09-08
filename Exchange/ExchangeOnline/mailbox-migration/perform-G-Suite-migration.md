@@ -103,7 +103,7 @@ Additional migration limitations are described in the following table:
 
    ![Unique ID](../media/gsuite-mig-6-unique-id.png)
 
-8. If you see an area that says **Show Domain-Wide Delegation**, click to expand that section. Then, enable the checkbox for **Enable G Suite Domain-wide Delegation** and click **Save** at the bottom of the page.
+8. If you see an area that says **Show Domain-Wide Delegation**, click to expand that section. Next, click the **Edit** button at the top of the screen and enable the checkbox to **Enable G Suite Domain-wide Delegation**, and then click **Save** at the bottom of the page.
 
    ![Domain-Wide Delegation](../media/gsuite-mig-7-enable-domain-delegation.png)
 
