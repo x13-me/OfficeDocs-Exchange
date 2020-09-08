@@ -97,7 +97,7 @@ function Main
     $MailBoxList = $MigrationCSV | %{$_.EmailAddress} | Get-CloudMailbox
     $Users = @()
 
-    #Get LegacyDN, Tenant, and On-Premise Email addresses for the users
+    #Get LegacyDN, Tenant, and On-Premises Email addresses for the users
     foreach($user in $MailBoxList)
     {
         $UserInfo = New-Object System.Object
@@ -174,7 +174,7 @@ function Main
         Write-Host "Calling LookupADInformationFromSMTPAddress" -ForegroundColor Green
         $UserInfo = LookupADInformationFromSMTPAddress($User)
 
-        #Check existing proxies for On-Premise and Cloud Legacy DN's as x500 proxies. If not present add them.
+        #Check existing proxies for On-Premises and Cloud Legacy DN's as x500 proxies. If not present add them.
         if($UserInfo.ProxyAddresses -notcontains ("X500:"+$UserInfo.CloudLegacyDN))
         {
             $X500Proxy = "x500:" + $UserInfo.CloudLegacyDN
