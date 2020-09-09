@@ -24,7 +24,7 @@ A public folder calendar is a good solution for people looking for only a shared
 > You must use the Microsoft Outlook desktop client to create the public folder calendar.
 
 > [!Note]
-> The Calendar type of public folder can be accessed from Outlook Web App (OWA) and the Outlook desktop client. Public folders, including calendar, cannot be accessed from OWA or the Outlook app on mobile devices.
+> The Calendar type of public folder can be accessed from Outlook Web App (OWA) and the Outlook desktop client. Public folders, including calendar, cannot be accessed from mobile devices.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ Before you create your public folder calendar, follow the prerequisites.
 
    ```PowerShell
    Get-Mailbox -PublicFolder
-   Get-PublicFolder \\
+   Get-PublicFolder \
    ```
 
 3. If you don't see a list of the public folder mailboxes, then follow the steps to [create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
@@ -46,13 +46,13 @@ Before you create your public folder calendar, follow the prerequisites.
    - If you want the user to be able to create a public folder on the root of the public folder hierarchy, along with all other access rights, run the following command:
 
      ```PowerShell
-     Add-PublicFolderClientPermission -Identity "\\" -AccessRights Owner -User User1
+     Add-PublicFolderClientPermission -Identity "\" -AccessRights Owner -User User1
      ```
 
    - If you want the user to be able to create a public folder under the existing public folder, such as a folder named Marketing, then run the following command:
 
      ```PowerShell
-      Add-PublicFolderClientPermission -Identity "\\Marketing" -AccessRights Editor -User User1
+      Add-PublicFolderClientPermission -Identity "\Marketing" -AccessRights Editor -User User1
      ```
 
 5. Login to the Outlook desktop client and ensure you're able to access the public folder deployment.
