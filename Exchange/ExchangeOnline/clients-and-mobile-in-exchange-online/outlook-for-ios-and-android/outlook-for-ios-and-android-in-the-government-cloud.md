@@ -90,7 +90,7 @@ Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
 
 Changing this setting typically takes effect within 48 hours. As this setting is a tenant-based change, all Outlook for iOS and Android users in the GCC organization are affected.
 
-For more information on the cmdlet, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+For more information on the cmdlet, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 
 ## Services and features not available
 
@@ -106,4 +106,4 @@ Certain services and features of Outlook for iOS and Android are not available f
 
 - **To Do**: To Do is currently not available for GCC accounts.
 
-For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
