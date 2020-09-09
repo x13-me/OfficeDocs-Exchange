@@ -4,8 +4,9 @@ ms.author: v-cichur
 manager: serdars
 ms.topic: article
 author: cichur
-ms.service: 
+ms.collection: 
 - exchange-online
+- M365-email-calendar
 ms.assetid: b293b7e5-f9f7-4322-8d56-e30c75af6845
 ms.reviewer: batre
 description: This article describes how to create a public folder calendar.
