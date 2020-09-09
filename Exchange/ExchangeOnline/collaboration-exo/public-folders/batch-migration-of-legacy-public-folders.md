@@ -112,9 +112,6 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 Perform the following prerequisite steps before you begin the migration.
 
-> [!NOTE]
-> We recommend running the Source Side Validation script from an Exchange Server 2010 hosting public folder database. Please use the examples as documented [here](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622).
-
 ### General prerequisite steps
 
 - Make sure that there are no orphaned public folder mail objects in Active Directory, meaning objects in Active Directory without a corresponding Exchange object.
@@ -124,8 +121,6 @@ Perform the following prerequisite steps before you begin the migration.
 - Make sure that there are no duplicate public folder objects in Active Directory, to avoid a situation where two or more Active Directory objects are pointing to the same mail-enabled public folder.
 
 ### Prerequisite steps on the legacy Exchange server
-
-Add an additional step here suggesting to run Source Side Validation script at mailbox server on Exchange Server 2010. Please use the examples as documented here: https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Making-your-public-folder-migrations-faster-and-more-reliable/ba-p/917622
 
 1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Microsoft 365 or Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Microsoft 365, Office 365, or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Microsoft 365, Office 365, or Exchange Online domain.
 
