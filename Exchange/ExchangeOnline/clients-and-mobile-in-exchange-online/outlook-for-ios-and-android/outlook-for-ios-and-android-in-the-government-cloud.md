@@ -49,7 +49,7 @@ Remove any restrictions placed within your Exchange environment that may be bloc
 
  **2. Download and install Outlook for iOS and Android**
 
-End users need to install the app on their devices. How the installation happens depends on whether or not the devices are enrolled in a mobile device management (MDM) solution, such as Microsoft Intune. Users with enrolled devices can install the app through their MDM solution, like the Intune Company Portal. Users with devices that are not enrolled in an MDM solution can search for "Microsoft Outlook" in the Apple App Store or Google Play Store and download it from one of those locations.
+End users need to install the app on their devices. How the installation happens depends on whether or not the devices are enrolled in a unified endpoint management (UEM) solution, such as Microsoft Intune. Users with enrolled devices can install the app through their UEM solution, like the Intune Company Portal. Users with devices that are not enrolled in an UEM solution can search for "Microsoft Outlook" in the Apple App Store or Google Play Store and download it from one of those locations.
 
 > [!NOTE]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
@@ -90,7 +90,7 @@ Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
 
 Changing this setting typically takes effect within 48 hours. As this setting is a tenant-based change, all Outlook for iOS and Android users in the GCC organization are affected.
 
-For more information on the cmdlet, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+For more information on the cmdlet, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
 
 ## Services and features not available
 
@@ -106,4 +106,4 @@ Certain services and features of Outlook for iOS and Android are not available f
 
 - **To Do**: To Do is currently not available for GCC accounts.
 
-For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
