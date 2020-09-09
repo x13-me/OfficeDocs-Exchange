@@ -10,7 +10,6 @@ f1.keywords:
 - NOCSH
 title: Public folders calendars in Microsoft 365, Office 365, and Exchange Online
 ms.collection: 
-- exchange-online
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
@@ -82,7 +81,7 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
    The calendar type folder shows up with a different icon.
 
-   ![Image shows the Calendar option highlighted.](../../media/different-icon.png)
+   ![Image shows the Calendar icon highlighted.](../../media/different-icon.png)
 
 6. For faster access to the new public folder calendar, right-click the folder and select **Add to Favorites...**.
 
@@ -110,7 +109,7 @@ By default, everyone in the organization can access the public folder and create
 
    You'll see the public folder calendar under **Other Calendars**.
 
-![Image shows the Add Public Folder option highlighted.](../../media/public-folder-calendar-display.png)
+![Image shows the new public folder calendar highlighted.](../../media/public-folder-calendar-display.png)
 
 ## Receive emails to a public folder calendar
 
