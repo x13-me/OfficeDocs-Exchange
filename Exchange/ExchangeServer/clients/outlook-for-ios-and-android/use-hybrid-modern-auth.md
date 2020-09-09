@@ -268,7 +268,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 **Q**: My organization has a security policy that requires Internet inbound connections to be restricted to approved IP addresses or FQDNs. Is that possible with this architecture?
 
-**A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a co-existence period with another MDM solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the third-party MDM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are whitelisted:
+**A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a co-existence period with another third-party unified endpoint management (UEM) solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the UEM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are whitelisted:
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Additional endpoints not included in the Microsoft 365 or Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
@@ -276,13 +276,13 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Microsoft 365 and Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-**Q**: My organization currently uses a third-party MDM solution to control mobile device connectivity. If I expose the Exchange ActiveSync namespace on the Internet, that introduces a way for users to bypass the third-party MDM solution during the co-existence period. How can I prevent this?
+**Q**: My organization currently uses a third-party UEM solution to control mobile device connectivity. If I expose the Exchange ActiveSync namespace on the Internet, that introduces a way for users to bypass the third-party UEM solution during the co-existence period. How can I prevent this?
 
 **A**: There are three potential solutions to resolving this issue:
 
   1. Implement Exchange mobile device access rules to control which devices are approved to connect.
 
-  2. Some third-party MDM solutions integrate with Exchange mobile device access rules, blocking unapproved access, while adding approved devices in the user's ActiveSyncAllowedDeviceIDs property.
+  2. Some third-party UEM solutions integrate with Exchange mobile device access rules, blocking unapproved access, while adding approved devices in the user's ActiveSyncAllowedDeviceIDs property.
 
   3. Implement IP restrictions on the Exchange ActiveSync namespace.
 

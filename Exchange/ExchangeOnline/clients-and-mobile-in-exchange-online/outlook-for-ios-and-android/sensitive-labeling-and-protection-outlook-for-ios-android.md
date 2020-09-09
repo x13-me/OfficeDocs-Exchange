@@ -119,7 +119,7 @@ In order to deliver certificates to Outlook for iOS and Android, the following p
 - Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).
 - Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure).
 - Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
-- Devices must be MDM enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
+- Devices must be enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
 
 #### Outlook for iOS Automated Certificate Delivery
 
