@@ -49,7 +49,7 @@ Here's what the New Exchange admin center looks like.
 
 ### Homepage
 
-You can personalize your homepage by selecting a theme, setting your language, and timezone from the Settings bubble.
+You can personalize your homepage by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
 1. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the New Exchange admin center.
 
