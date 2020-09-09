@@ -1,24 +1,24 @@
 ---
 localization_priority: Normal
-description: Public folders calendars
-ms.topic: conceptual
-author: cichur
-ms.author: v-cichur
-ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
+ms.author: cichur
+manager: serdars
+ms.topic: article
+author: v-cichur
+ms.service: exchange-online
+ms.assetid: b293b7e5-f9f7-4322-8d56-e30c75af6845
 ms.reviewer: 
-f1.keywords:
-- NOCSH
-title: Public folders calendars in Microsoft 365, Office 365, and Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+description: This article describes how to create a public folder calendar.
 audience: ITPro
-ms.service: exchange-online
-manager: serdars
+f1.keywords:
+- NOCSH
+title: Create a public folder calendar
 
 ---
 
-# Public folder calendar
+# Create a Public Folder calendar
 
 A public folder calendar is a good solution for people looking for only a shared calendar without having to maintain an additional mailbox along with it. This article explains how to set up and access public folder calendars in Microsoft Exchange Online.
 
