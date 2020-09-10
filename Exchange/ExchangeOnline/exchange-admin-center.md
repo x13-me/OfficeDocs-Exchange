@@ -20,7 +20,7 @@ manager: serdars
 
 # Exchange admin center in Exchange Online
 
-You use the Exchange admin center to manage email settings for your organization.
+You can use the Exchange admin center to manage email settings for your organization.
 
 ## Get to the New Exchange admin center 
 
@@ -55,7 +55,7 @@ You can personalize your homepage by selecting a theme, setting your language, a
 
 2. Click **+ Add card** and drag a card to the location you want on the dashboard.
 
-3. Select **Need help?**, if you need help from Microsoft 365 Support Assistant.
+3. Click **Need help?**, if you need help from Microsoft 365 Support Assistant.
 
 
 ### Feature pane
