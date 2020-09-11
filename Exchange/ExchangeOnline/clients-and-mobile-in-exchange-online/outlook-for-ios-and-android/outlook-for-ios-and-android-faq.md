@@ -187,6 +187,10 @@ A shared mailbox is a special mailbox type that is created using the -Shared par
 
 Yes, Outlook for iOS and Android has extended the shared mailbox capability to now allow users to add another person's mailbox when the user has been granted FullAccess permissions to the other person's mailbox. Granting SendAs or Send on Behalf of permissions also allows the user to send messages as the other person's mailbox. For more information on permission assignment, please see [Manage permissions for recipients in Exchange Online](../../recipients-in-exchange-online/manage-permissions-for-recipients.md).
 
+### Q: How many accounts does Outlook for iOS and Android support?
+
+Outlook for iOS and Android supports a maximum of 25 accounts.
+
 ### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
 
 Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (e.g. FaceTime), etc. Integration with the operating system, and contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
@@ -341,7 +345,7 @@ Assuming authentication is not the issue, there are two areas you can check:
 
 For more information, see [Securing Outlook for iOS and Android in Exchange Online](secure-outlook-for-ios-and-android.md). If one of the above checks doesn't resolve the issue, please open an in-app support ticket.
 
-### Q: Will Outlook for iOS and Android support third-party EMM or MDM solutions?
+### Q: Will Outlook for iOS and Android support third-party unified endpoint management (MDM, EMM, or UEM) solutions?
 
 For more information, please see [Managing Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android).
 
@@ -389,7 +393,7 @@ If you do not have organization chart data exposed in the app, consult with your
 
 ### Q: How much of my mailbox data is synchronized with Outlook for iOS and Android?
 
-For initial folder synchronization, Outlook for iOS synchronizes 100 items per folder while Outlook for Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to the default number, in order to ensure optimal app performance.
+For initial folder synchronization, Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to the default number, in order to ensure optimal app performance.
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 

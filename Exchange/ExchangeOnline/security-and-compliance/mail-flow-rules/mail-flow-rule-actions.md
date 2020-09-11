@@ -40,9 +40,10 @@ The actions that are available in mail flow rules in Exchange Online are describ
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
 
-|||||
+****
+
+|Action in the EAC|Action parameter in PowerShell|Property|Description|
 |---|---|---|---|
-|**Action in the EAC**|**Action parameter in PowerShell**|**Property**|**Description**|
 |**Forward the message for approval to these people** <br/><br/> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <br/><br/>**Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**Forward the message for approval to the sender's manager** <br/><br/> **Forward the message for approval** \> **to the sender's manager**|_ModerateMessageByManager_|n/a|Forwards the message to the sender's manager for approval. <br/> This action only works if the sender's **Manager** attribute is defined. Otherwise, the message is delivered to the recipients without moderation. <br/><br/>**Note**: This action isn't available in standalone EOP environments.|
 |**Redirect the message to these recipients** <br/><br/> **Redirect the message to** \> **these recipients**|_RedirectMessageTo_|`Addresses`|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|
@@ -78,9 +79,10 @@ The actions that are available in mail flow rules in Exchange Online are describ
 
 The property values that are used for actions in mail flow rules are described in the following table.
 
-||||
+****
+
+|Property|Valid values|Description|
 |---|---|---|
-|**Property**|**Valid values**|**Description**|
 |`AddedManagerAction`| One of the following values: <br/> **To** <br/><br/> **Cc** <br/><br/> **Bcc** <br/><br/> **Redirect**| Specifies how to include the sender's manager in messages. <br/> If you select **To**, **Cc**, or **Bcc**, the sender's manager is added as a recipient in the specified field. <br/> If you select **Redirect**, the message is only delivered to the sender's manager without notifying the sender or the recipient. <br/> This action only works if the sender's **Manager** is defined.|
 |`Addresses`|Exchange recipients|Depending on the action, you might be able to specify any mail-enabled object in the organization, or you might be limited to a specific object type. Typically, you can select multiple recipients, but you can only send an incident report to one recipient.|
 |`AuditSeverityLevel`| One of the following values: <br/> Uncheck **Audit this rule with severity level**, or select **Audit this rule with severity level** with the value **Not specified** (`DoNotAudit`) <br/> **Low** <br/><br/> **Medium** <br/><br/> **High**|The values **Low**, **Medium**, or **High** specify the severity level that's assigned to the incident report and to the corresponding entry in the message tracking log. <br/> The other value prevents an incident report from being generated, and prevents the corresponding entry from being written to the message tracking log.|

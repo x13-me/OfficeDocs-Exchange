@@ -35,33 +35,33 @@ For information about the changes made to Exchange Server 2013 since release to 
 
 See the following sections for more information about what's new in Exchange 2013:
 
-Exchange admin center
+[Exchange admin center](#exchange-admin-center)
 
-Exchange 2013 architecture
+[Exchange 2013 architecture](#exchange-2013-architecture)
 
-Setup
+[Setup](#setup)
 
-Messaging policy and compliance
+[Messaging policy and compliance](#messaging-policy-and-compliance)
 
-Anti-malware protection
+[Anti-malware protection](#anti-malware-protection)
 
-Mail flow
+[Mail flow](#mail-flow)
 
-Recipients
+[Recipients](#recipients)
 
-Sharing and collaboration
+[Sharing and collaboration](#sharing-and-collaboration)
 
-Integration with SharePoint and Lync
+[Integration with SharePoint and Lync](#integration-with-sharepoint-and-lync)
 
-Clients and mobile
+[Clients and mobile](#clients-and-mobile)
 
-Unified Messaging
+[Unified Messaging](#unified-messaging)
 
-Batch mailbox moves
+[Batch mailbox moves](#batch-mailbox-moves)
 
 [High availability and site resilience](high-availability-and-site-resilience-exchange-2013-help.md)
 
-Exchange workload management
+[Exchange workload management](#exchange-workload-management)
 
 > [!NOTE]
 > For information about features in earlier versions of Exchange that have been removed, discontinued, or replaced in Exchange Server 2013, see <A href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">What's discontinued in Exchange 2013</A>. Also, you may be interested in <A href="release-notes-for-exchange-2013-exchange-2013-help.md">Release notes for Exchange 2013</A>.
@@ -154,7 +154,7 @@ Setup has been completely rewritten so that installing Exchange 2013 and making 
 
 - **Always up-to-date Setup**: When you run the Setup wizard, you'll be given the option to download and use the latest product rollups, security fixes, and language packs. This option doesn't just update the files that'll be used to run Exchange; Setup itself can be updated. This design enables us to continue to improve Setup post-release and include and update readiness checks as requirements are updated or changed.
 
-    If you're using unattended Setup mode, we can't automatically download updates. However, you can still take advantage of running the latest version of Setup by downloading the latest updates beforehand, and use the `/UpdatesDir: <path>` parameter to allow Setup to update itself before the installation process begins.
+  If you're using unattended Setup mode, we can't automatically download updates. However, you can still take advantage of running the latest version of Setup by downloading the latest updates beforehand, and use the `/UpdatesDir: <path>` parameter to allow Setup to update itself before the installation process begins.
 
 - **Improved readiness checks**: Readiness checks make sure that your computer and your organization are ready for Exchange 2013. After you've provided the necessary information about your installation to Setup, the readiness checks are run before installation begins. The new readiness check engine now runs through all checks before reporting back to you on what actions need to be performed before Setup can continue, and it does so faster than ever. As with previous versions of Exchange, you can tell Setup to install the Windows features required by Setup so you don't have to install them manually.
 
@@ -204,8 +204,8 @@ Exchange 2013 includes the following improvements to In-Place Archiving, retenti
 
   - **In-Place eDiscovery and Hold wizard**: Discovery Managers can use the new In-Place eDiscovery and Hold wizard to perform eDiscovery and hold operations.
 
-        > [!NOTE]
-        > If SharePoint 2013 isn't available, a subset of the eDiscovery functionality is available in the Exchange admin center.
+    > [!NOTE]
+    > If SharePoint 2013 isn't available, a subset of the eDiscovery functionality is available in the Exchange admin center.
 
 - **Search across primary and archive mailboxes in Outlook Web App**: Users can search across their primary and archive mailboxes in Outlook Web App. Two separate searches are no longer necessary.
 
@@ -253,7 +253,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector) and [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
-    You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
+  You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
 
 - **Edge Transport**: You can optionally install an Edge Transport server in your perimeter network to reduce your attack surface and provide message protection and security. For more information, see [Edge Transport servers](edge-transport-servers-exchange-2013-help.md).
 
@@ -263,11 +263,11 @@ This section describes the enhancements for managing recipients in Exchange 2013
 
 - **Group naming policy**: Administrators can now use the EAC to create a *group naming policy*, which lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This capability helps you minimize the use of inappropriate words in group names.
 
-    For more information, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+  For more information, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 - **Message tracking**: Administrators can also use the EAC to track delivery information for email messages sent to or received by any user in your organization. You just select a mailbox, and then search for messages sent to or received by a different user. You can narrow the search by searching for specific words in the subject line. The resulting delivery report tracks a message through the delivery process and specifies if the message was successfully delivered, pending delivery, or if it wasn't delivered.
 
-    For more information, see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
+  For more information, see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
 
 ## Sharing and collaboration
 
@@ -275,19 +275,19 @@ This section describes the sharing and collaboration enhancements in Exchange 20
 
 - **Public folders**: Public folders now take advantage of the existing high availability and storage technologies of the mailbox store. The public folder architecture uses specially designed mailboxes to store both the hierarchy and the public folder content. This new design also means that there is no longer a public folder database. Public folder replication now uses the continuous replication model. High availability for the hierarchy and content mailboxes is provided by the database availability group (DAG). With this design, we're moving away from a multi-master replication model to a single-master replication model.
 
-    Outlook Web App users in your organization now have the ability to add public folders to, or remove them from, their Favorites. Previously, this could only be done in Outlook.
+  Outlook Web App users in your organization now have the ability to add public folders to, or remove them from, their Favorites. Previously, this could only be done in Outlook.
 
-    For more information, see [Public folders](public-folders-exchange-2013-help.md).
+  For more information, see [Public folders](public-folders-exchange-2013-help.md).
 
 - **Site mailboxes**: Email and documents are traditionally kept in two unique and separate data repositories. Most teams would typically collaborate using both mediums. The challenge is that email and documents are accessed using different clients, which usually results in a reduction in user productivity and a degraded user experience.
 
-    The *site mailbox* is a new concept in Exchange 2013 that attempts to solve these problems. Site mailboxes improve collaboration and user productivity by allowing access to both documents in a SharePoint site and email messages in Outlook 2013, using the same client interface. A site mailbox is functionally comprised of SharePoint site membership (owners and members), shared storage through an Exchange mailbox for email messages and a SharePoint site for documents, and a management interface that addresses provisioning and lifecycle needs.
+  The *site mailbox* is a new concept in Exchange 2013 that attempts to solve these problems. Site mailboxes improve collaboration and user productivity by allowing access to both documents in a SharePoint site and email messages in Outlook 2013, using the same client interface. A site mailbox is functionally comprised of SharePoint site membership (owners and members), shared storage through an Exchange mailbox for email messages and a SharePoint site for documents, and a management interface that addresses provisioning and lifecycle needs.
 
-    For more information, see [Site mailboxes](site-mailboxes-exchange-2013-help.md).
+  For more information, see [Site mailboxes](site-mailboxes-exchange-2013-help.md).
 
 - **Shared mailboxes**: In previous versions of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to set the delegate permissions. In Exchange 2013, you can now create a shared mailbox in one step via the Exchange admin center. In the EAC, go to **Recipients** \> **Shared Mailboxes** to create a shared mailbox. Shared mailbox is now a recipient type, so you can easily search for your shared mailboxes in either the user interface or by using the Shell.
 
-    For more information, see [Shared mailboxes](shared-mailboxes-exchange-2013-help.md).
+  For more information, see [Shared mailboxes](shared-mailboxes-exchange-2013-help.md).
 
 ## Integration with SharePoint and Lync
 

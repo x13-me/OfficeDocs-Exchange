@@ -172,6 +172,9 @@ Migration-service throttling affects migrations performed by using the following
 
 - Hybrid migrations (MRSProxy service-based moves in a hybrid environment)
 
+> [!IMPORTANT]
+> The aforementioned migration methods are not affected by user throttling.
+
 An example of migration-service throttling is controlling the number of mailboxes that are migrated simultaneously during simple Exchange migrations and IMAP migrations. The default value is 10. This means that a maximum of 10 mailboxes from all migration batches are migrated at any particular time. You can increase the number of concurrent mailbox migrations for a migration batch in either the Exchange Control Panel or Windows PowerShell. To learn more about how to optimize this setting, see [Manage migration batches in Microsoft 365 or Office 365](manage-migration-batches.md).
 
 ### Microsoft 365 or Office 365 resource health-based throttling
@@ -343,6 +346,8 @@ Exchange Web Services is the recommended protocol to use for migrating to Micros
 - For each impersonation session, a shadow copy of the actual user's budget is created. All migrations for this particular session will consume this shadow copy.
 
 - Throttling under impersonation is isolated to each user migration session.
+
+- Exchange Web Services throttling policy can be temporarily changed in the tenant (for a duration of 30, 60, or 90 days) to allow migration to complete. This can be requested from the Help section of the Microsoft 365 admin center.
 
  **Best practices**
 
