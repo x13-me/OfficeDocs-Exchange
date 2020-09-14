@@ -130,7 +130,6 @@
     "externalReference": [],
     "globalMetadata": {
         "Manager": "serdars",
-        "ms.prod": "exchange",
         "ms.technology": "",
         "ms.devlang": "powershell",
         "ROBOTS": "INDEX,FOLLOW",
@@ -158,6 +157,9 @@
         "hideEdit": {
           "ExchangeServer/**/*.md": true,
           "ExchangeServer2013/**/*.md": true         
+        },
+        "ms.prod": {
+          "ExchangeServer/**/*.md": "exchange"
         }       
     },
     "template": [],
