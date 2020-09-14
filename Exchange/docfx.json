@@ -159,7 +159,8 @@
           "ExchangeServer2013/**/*.md": true         
         },
         "ms.prod": {
-          "ExchangeServer/**/*.md": "exchange"
+          "ExchangeServer/**/*.md": "exchange",
+          "ExchangeServer2013/**/*.md": "exchange"
         }       
     },
     "template": [],
