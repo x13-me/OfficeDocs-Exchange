@@ -53,18 +53,6 @@ What if you want to forward mail to an address outside your organization? Or for
 
 - **Multiple recipients**: Create a distribution group, add recipients to it, and then in the steps above, select the mail contact on the **Select Recipient** page. Need to know how to create a mail contact? Check out [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
 
-## How do you know this worked?
-
-To make sure that you've successfully configured email forwarding, do one of the following:
-
-1. In the EAC, go to **Recipients** \> **Mailboxes**.
-
-2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-3. On the mailbox properties page, click or tap **Mailbox Features**.
-
-4. Under **Mail Flow**, click or tap **View details** to view the mail forwarding settings.
-
 ## Additional information
 
 This topic is for admins. If you want to forward your own email to another recipient, check out the following topics:
