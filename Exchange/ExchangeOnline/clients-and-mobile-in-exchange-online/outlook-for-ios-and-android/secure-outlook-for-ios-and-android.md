@@ -26,7 +26,7 @@ Protecting company or organizational data on users' mobile devices is extremely 
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management](#leveraging-mobile-device-management), and use the Mobile Device Management (MDM) for Microsoft 365 or Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Basic Mobility and Security for Microsoft 365](#leveraging-basic-mobility-and-security-for-microsoft-365), and use the Basic Mobility and Security capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 
@@ -37,9 +37,9 @@ If, on the other hand, you don't want to use Outlook for iOS and Android in your
 
 ## Setting up Outlook for iOS and Android
 
-For devices enrolled in a mobile device management (MDM) solution, users will utilize the MDM solution, like the Intune Company Portal, to install the required apps: Outlook for iOS and Android and Microsoft Authenticator.
+For devices enrolled in a unified endpoint management (UEM) solution, users will utilize the UEM solution, like the Intune Company Portal, to install the required apps: Outlook for iOS and Android and Microsoft Authenticator.
 
-For devices that are not enrolled in an MDM solution, users need to install:
+For devices that are not enrolled in an UEM solution, users need to install:
 
 - Outlook for iOS and Android via the Apple App Store or Google Play Store
 
@@ -102,7 +102,7 @@ The APP data protection framework is organized into three distinct configuration
 
 To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
-Regardless of whether the device is enrolled in an MDM solution, an Intune app protection policy needs to be created for both iOS and Android apps, using the steps in [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). These policies, at a minimum, must meet the following conditions:
+Regardless of whether the device is enrolled in an UEM solution, an Intune app protection policy needs to be created for both iOS and Android apps, using the steps in [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). These policies, at a minimum, must meet the following conditions:
 
 1. They include all Microsoft mobile applications, such as Edge, OneDrive, Office, or Teams, as this will ensure that users can access and manipulate work or school data within any Microsoft app in a secure fashion.
 
@@ -115,26 +115,26 @@ For more information on the available settings, see [Android app protection poli
 > [!IMPORTANT]
 > To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/mem/intune/fundamentals/end-user-mam-apps-android).
 
-## Leveraging Mobile Device Management
+## Leveraging Basic Mobility and Security for Microsoft 365
 
-If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM). This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
+If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Basic Mobility and Security for Microsoft 365. This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-A global admin must complete the following steps to activate and set up MDM. See [Set up Mobile Device Management (MDM) in Microsoft 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+A global admin must complete the following steps to activate and set up enrollment. See [Set up Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
-1. Activating MDM by following steps in the Microsoft 365 Security Center.
+1. Activating Basic Mobility and Security by following the steps in the Microsoft 365 Security Center.
 
-2. Setting up MDM by, for example, creating an APNs certificate to manage iOS devices.
+2. Setting up mobile device management by, for example, creating an APNs certificate to manage iOS devices.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
 > [!NOTE]
-> Policies and access rules created in MDM will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
+> Policies and access rules created in Basic Mobility and Security will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
 
 ## Leveraging Exchange Online mobile device policies
 
-If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
+If you don't plan on leveraging either the Enterprise Mobility + Security suite or the Basic Mobility and Security functionality, you can implement an Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
 
 ### Mobile device mailbox policy
 
@@ -142,9 +142,15 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
 
 - Device encryption enabled
 
-- Min password length
+- Min password length (only on Android)
 
 - Password enabled
+
+- Allow Bluetooth (used to manage the Outlook for Android wearable app)
+
+  - When AllowBluetooth is enabled (default behavior) or configured for HandsfreeOnly, wearable synchronization between Outlook on the Android device and Outlook on the wearable is allowed for the work or school account.
+
+  - When AllowBluetooth is disabled, Outlook for Android will disable synchronization between Outlook on the Android device and Outlook on the wearable for the specified work or school account (and delete any data previously synced for the account). Disabling the synchronization is controlled entirely within Outlook itself; Bluetooth is not disabled on the device or wearable nor is any other wearable app affected.
 
 For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
 
@@ -314,7 +320,7 @@ New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-i
 
 ## Exchange Online controls
 
-Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can manage the access that mobile devices have to information in your organization through various Exchange Online controls, as well as, whether to allow users access to add-ins within Outlook for iOS and Android.
+Beyond Microsoft Endpoint Manager, Basic Mobility and Security for Microsoft 365, and Exchange mobile device policies, you can manage the access that mobile devices have to information in your organization through various Exchange Online controls, as well as, whether to allow users access to add-ins within Outlook for iOS and Android.
 
 ### Exchange Web Services (EWS) application policies
 
