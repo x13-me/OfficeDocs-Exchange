@@ -198,6 +198,7 @@
 ##### [Access public folders with Outlook 2016 for Mac](../collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md)
 ##### [Create public folder mailbox](../collaboration-exo/public-folders/create-public-folder-mailbox.md)
 ##### [Create public folder](../collaboration-exo/public-folders/create-public-folder.md)
+##### [Create a public folder calendar](../collaboration-exo/public-folders/public-folders-calendar.md)
 ##### [Recover deleted public folder mailbox](../collaboration-exo/public-folders/recover-deleted-public-folder-mailbox.md)
 ##### [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](../collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs.md)
 ##### [Use favorite public folders](../collaboration-exo/public-folders/use-favorite-public-folders.md)
