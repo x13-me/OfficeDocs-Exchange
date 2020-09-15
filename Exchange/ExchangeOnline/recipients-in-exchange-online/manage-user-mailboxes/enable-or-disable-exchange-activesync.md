@@ -70,22 +70,3 @@ Set-CASMailbox -Identity Ellyn@contoso.com -ActiveSyncEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
-## How do you know this worked?
-
-To verify that you've successfully enabled or disabled Exchange ActiveSync for a user mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Mailbox Features**.
-
-- Under **Mobile Devices**, verify whether Exchange ActiveSync is enabled or disabled.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-CASMailbox <identity>
-  ```
-
-  If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
