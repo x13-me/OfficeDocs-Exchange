@@ -76,22 +76,4 @@ Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
-## How do you know this worked?
 
-To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Mailbox Features**.
-
-- Under **Email Connectivity**, verify whether MAPI is enabled or disabled.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-CASMailbox -Identity <MailboxIdentity>
-  ```
-
-  If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.
