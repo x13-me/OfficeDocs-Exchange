@@ -87,26 +87,6 @@ Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northa
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-### How do you know this worked?
-
-To verify that you've successfully added an email address to a mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the new email address is included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-Mailbox <identity> | Format-List EmailAddresses
-  ```
-
-- Verify that the new email address is included in the results.
-
 ## Remove an email address from a user mailbox
 
 ### Use the EAC to remove an email address
@@ -147,26 +127,6 @@ Because janets@corp.contoso.com was omitted in the previous command, it's remove
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-### How do you know this worked?
-
-To verify that you've successfully removed an email address from a mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the email address isn't included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-Mailbox <identity> | Format-List EmailAddresses
-  ```
-
-- Verify that the email address isn't included in the results.
-
 ## Use Exchange Online PowerShell to add email addresses to multiple mailboxes
 
 You can add a new email address to multiple mailboxes at one time by using Exchange Online PowerShell and a comma separated values (CSV) file.
@@ -193,26 +153,6 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 
 > [!NOTE]
 > The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in Exchange Online PowerShell command.
-
-### How do you know this worked?
-
-To verify that you've successfully added an email address to multiple mailboxes, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click a mailbox that you added the address to, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the new email address is included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell, using the same CSV file that you used to add the new email address.
-
-  ```PowerShell
-  Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | Format-List Name,EmailAddresses}
-  ```
-
-- Verify that the new email address is included in the results for each mailbox.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
