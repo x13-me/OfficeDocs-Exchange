@@ -128,22 +128,3 @@ For detailed syntax and parameter information related to configuring delivery re
 
 - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
-## How do you know this worked?
-
-To verify that you've successfully configured message delivery restrictions for a user mailbox, do one the following:
-
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
-
-2. In the list of user mailboxes, click the mailbox that you want to verify the message delivery restrictions for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-3. On the mailbox properties page, click **Mailbox Features**.
-
-4. Under **Message Delivery Restrictions**, click **View details** to verify the delivery restrictions for the mailbox.
-
-Or
-
-Run the following command in Exchange Online PowerShell.
-
-```PowerShell
-Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
-```
