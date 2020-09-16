@@ -22,24 +22,24 @@ manager: serdars
 
 You can use the Exchange admin center to manage email settings for your organization.
 
-## Get to the New Exchange admin center 
+## Get to the new Exchange admin center 
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the New Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
-2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+2. In the Microsoft 365 admin center, choose **Admin centers** > **Exchange**.
 
     ![New EAC](media/EAC-selection.PNG)
 
-You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
+You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
 > [!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
-## New Exchange admin center features
+## new Exchange admin center features
 
-Here's what the New Exchange admin center looks like.
+Here's what the new Exchange admin center looks like.
 
 ![New EAC homepage](media/new-EAC-homepage-1.PNG)
 
@@ -51,12 +51,11 @@ Here's what the New Exchange admin center looks like.
 
 You can personalize your homepage by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
-1. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the New Exchange admin center.
+1. You can also personalize your dashboard, to do that click **+ Add card** and drag a card to the location you want on the dashboard.
 
-2. Click **+ Add card** and drag a card to the location you want on the dashboard.
+2. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
-3. Click **Need help?**, if you need help from Microsoft 365 Support Assistant.
-
+2. Click **Need help?**, if you need help from Microsoft 365 Support Assistant.
 
 ### Feature pane
 
@@ -65,10 +64,10 @@ Here are the features you'll find in the left-hand navigation.
 |**Area**|**What you do here**|
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
-|**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
-|**Roles**|Add role groups to view data and complete tasks in New Exchange admin center.|
+|**Mail flow**|Manage remote domains and accepted domains, add connectors, trace messages and manage alert and alert policies.|
+|**Roles**|Manage role groups and assign permissions to different users.|
 |**Migration**|Migrate mailboxes in batches.|
-|**Reports**|View reports on mail flow and migrated batches.|
+|**Reports**|View reports on mail flow and migration batches.|
 |**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
 |**More features**|Access features and services from the Classic Exchange admin center.|
 
@@ -82,15 +81,21 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 ### List view
 
-When you select a tab, in most cases you'll see a list view. The list view in the New Exchange admin center is designed to remove limitations that existed in Exchange Control Panel in the Classic Exchange admin center.
+When you select a tab, in most cases you'll see a list view. The list view in the new Exchange admin center is designed to remove limitations that existed in the Classic Exchange admin center and Exchange Control Panel.
 
 ### Details pane
 
 When you select an item from the list view, information about that object is displayed in the details pane.
 
-### Centers, Me tile, and Help
+ **To bulk edit several items**: select the objects you want to bulk edit, and use the options in toolbar.
+ 
+### Centers, My account tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the New Exchange admin center and sign in as a different user. The Help bubble displays contextual help for fields when you create or edit an object.
+The Centers tile allows you to change from one admin center to another. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
+
+- **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
+
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled.
 
 ## Get to the Classic Exchange admin center
 
