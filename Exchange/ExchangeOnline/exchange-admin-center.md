@@ -49,7 +49,7 @@ Here's what the new Exchange admin center looks like.
 
 ### Home page
 
-You can personalize your homepage by selecting a theme, setting your language, and timezone from the **Settings** bubble.
+You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
 1. You can also personalize your dashboard, to do that click **+ Add card** and drag a card to the location you want on the dashboard.
 
@@ -87,7 +87,7 @@ When you select a tab, in most cases you'll see a list view. The list view in th
 
 When you select an item from the list view, information about that object is displayed in the details pane.
 
- **To bulk edit several items**: select the objects you want to bulk edit, and use the options in toolbar.
+ **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
  
 ### Centers, My account tile, and Help
 
