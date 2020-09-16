@@ -47,7 +47,7 @@ Here's what the New Exchange admin center looks like.
 
 ![New EAC tabs](media/new-EAC-homepage-tabs.PNG)
 
-### Homepage
+### Home page
 
 You can personalize your homepage by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
