@@ -37,11 +37,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 - [Manage mail-enabled security groups](https://docs.microsoft.com/en-us/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 
-## Create a group in new Exchange admin center
-
-Use one of the following options:
-
-Option 1: Create a Microsoft 365 groups
+## Create a Microsoft 365 groups
 
 1. Navigate to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/).
 
@@ -70,7 +66,7 @@ Option 1: Create a Microsoft 365 groups
         
       -	Click **Next**.
         
-   d.	In **Settings** tab, do the following:
+   d. In **Settings** tab, do the following:
       -	Enter the **Group email address**.
       -	Set the **Privacy** status of the group as **Public** or **Private**.
       -	Under **Add Microsoft Teams to your group**, check the confirmation box to ensure a team is created for this group.
@@ -81,17 +77,13 @@ Option 1: Create a Microsoft 365 groups
         >[!NOTE]
         > Some settings like **Allow External Senders**, or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  For more information see, [Create a group]( https://docs.microsoft.com/en-US/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
         
-      -	Click **Next**.
+      - Click **Next**.
         
-   e.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
-    
-      The **New group created** message is displayed.
-
-      For more information see, [Use groups to collaborate effectively]( https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
+   e.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**. For more information see, [Use groups to collaborate effectively]( https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
 
 5. Click **Close**.
 
-Option 2: Create a Distribution group
+## Create a Distribution group
 
 1. Navigate to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/).
 
@@ -117,12 +109,10 @@ Option 2: Create a Distribution group
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
    d.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
-    
-      The **New group created** message is displayed.
 
 5. Click **Close**.
 
-Option 3: Create a Mail-enabled security group
+## Create a Mail-enabled security group
 
 1. Navigate to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/).
 
@@ -147,9 +137,7 @@ Option 3: Create a Mail-enabled security group
       -	Enter the **Group email address**.
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
-   d.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
-   
-      The **New group created** message is displayed.
+   d. In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
 
 5. Click **Close**.
 
