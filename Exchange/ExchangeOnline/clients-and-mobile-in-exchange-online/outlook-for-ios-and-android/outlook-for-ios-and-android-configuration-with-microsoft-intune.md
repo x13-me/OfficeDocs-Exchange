@@ -22,9 +22,9 @@ manager: serdars
 
  **Summary**: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.
 
-Outlook for iOS and Android supports app settings that allow mobile device management (MDM) administrators (using tools such as Microsoft Endpoint Manager) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
+Outlook for iOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Endpoint Manager) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
 
-App configuration can be delivered either through the MDM OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Intune App Protection Policy (APP) channel. Outlook for iOS and Android supports the following configuration scenarios:
+App configuration can be delivered either through the mobile device management OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Intune App Protection Policy (APP) channel. Outlook for iOS and Android supports the following configuration scenarios:
 
 - Account setup configuration
 - Organization allowed accounts mode
@@ -35,10 +35,10 @@ App configuration can be delivered either through the MDM OS channel on enrolled
 > [!IMPORTANT]
 > For configuration scenarios that require device enrollment on Android, the devices must be enrolled in Android Enterprise and Outlook for Android must be deployed via the managed Google Play store. For more information, please see [Set up enrollment of Android work profile devices](https://docs.microsoft.com/intune/android-work-profile-enroll) and [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
-Each configuration scenario highlights its specific requirements. For example, whether the configuration scenario requires device enrollment, and thus works with any MDM provider, or requires Intune App Protection Policies. The following flow chart outlines which channel needs to be used for the above configuration scenarios:
+Each configuration scenario highlights its specific requirements. For example, whether the configuration scenario requires device enrollment, and thus works with any UEM provider, or requires Intune App Protection Policies. The following flow chart outlines which channel needs to be used for the above configuration scenarios:
 
 > [!NOTE]
-> With Microsoft Endpoint Manager, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
+> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
 ![Flowchart of the process](../../media/acp_flowchart.png)
 
@@ -49,7 +49,7 @@ Outlook for iOS and Android offers administrators the following app configuratio
   - Account setup configuration
   - Organization allowed accounts mode
   
-These configuration scenarios only work with enrolled devices. However, any MDM provider is supported. If you are not using Microsoft Endpoint Manager, you need to consult with your MDM documentation on how to deploy these settings. For more information on the configuration keys, see [Configuration keys](#configuration-keys).
+These configuration scenarios only work with enrolled devices. However, any UEM provider is supported. If you are not using Microsoft Endpoint Manager, you need to consult with your UEM documentation on how to deploy these settings. For more information on the configuration keys, see [Configuration keys](#configuration-keys).
 
 ### Account setup configuration settings
 
@@ -61,7 +61,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 ## General app configuration scenarios
 
-Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any MDM provider and for devices that are not enrolled when Outlook for iOS and Android has an Intune App Protection Policy applied.
+Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any UEM provider and for devices that are not enrolled when Outlook for iOS and Android has an Intune App Protection Policy applied.
 
 > [!NOTE]
 > If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
@@ -93,60 +93,67 @@ Outlook supports the following settings for configuration:
 <td>Disable</td>
 </tr>
 <tr class="odd">
-<td>Save Contacts</td>
+<td>Save (or Sync) Contacts</td>
 <td>Off</td>
 <td><p>Saving contacts to the mobile device's native address book allows new calls and text messages to be linked with the user's existing Outlook contacts.</p>
 <p>The user must grant access to the native Contacts app for contact synchronization to occur.</td>
 <td>Enable</td>
 </tr>
 <tr class="even">
+<td>Sync Calendars</td>
+<td>Off</td>
+<td><p>Outlook for Android provides users the ability to synchronize Outlook calendar data to the native Calendar app.</p>
+<p>The user must grant access to the native Calendar app for calendar synchronization to occur.</p>
+<p>This feature is only supported with Outlook for Android.</p></td>
+<td>App default</td>
+</tr>
+<tr class="odd">
 <td>External Recipients MailTip</td>
 <td>On</td>
 <td><p>If the sender adds a recipient that's external or adds a distribution group that contains external recipients, the External Recipients MailTip is displayed. This MailTip informs senders if a message they're composing will leave the organization, helping them make the correct decisions about wording, tone, and content.</p>
 <p>Note that Exchange Online MailTipsExternalRecipientsTipsEnabled parameter must be set to $true in order for Outlook for iOS and Android to see the External Recipients MailTip. For more information, see <a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a>.</p></td>
 <td>App default</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Block external images</td>
 <td>Off</td>
 <td>When block external images is enabled, the app prevents the download of images hosted on the Internet that are embedded in the message body by default (the user can still choose to download the images).</td>
 <td>Enable</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Default app signature</td>
 <td>On</td>
 <td>Indicates whether the app uses its default signature, "Get Outlook for [OS]", during message composition. Users can add their own signature even when the default signature is disabled.</td>
 <td>App default</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Suggested replies</td>
 <td>On</td>
 <td>By default, Outlook for iOS and Android suggests replies in the quick reply compose window. If you select a suggested reply, you can edit the reply before sending it.</td>
 <td>App default</td>
 </tr>
-<tr class="even">
-<td>Discover Feed</td>
+<tr class="odd">
+<td>Office Feed</td>
 <td>On</td>
-<td><p>The Discover capability, powered by Microsoft Graph, provides a feed of your company's Office files connected to the people in your organization. This feature can be found in the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</p>
-<p>This setting is only available for Outlook for iOS.</p></td>
+<td>The Office Feed is powered by Microsoft Graph and provides a feed of your organization's Office files connected to the people in your organization. This feature is located in the Recommended section within the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</td>
 <td>App default</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Organize by thread</td>
 <td>On</td>
 <td><p>By default, Outlook for iOS and Android collates related emails into a single threaded conversation view.</p></td>
 <td>App default</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Play My Emails</td>
 <td>On</td>
-<td><p>By default, Play My Emails is promoted to eligible users via a banner in the inbox.</p><p>This setting is only available for Outlook for iOS.</p></td>
+<td>By default, Play My Emails is promoted to eligible users via a banner in the inbox.</td>
 <td>App default</td>
 </tr>
 </tbody>  
 </table>
 
-Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), administrators can prevent the user from changing the app's configuration. The administrator's configuration cannot be overridden.
+Settings that are security-related in nature have an additional option, **Allow user to change setting**. For these settings (*Save Contacts*, *Block external images*, and *Require Biometrics to access the app*), organizations can prevent the user from changing the app's configuration. The organization's configuration cannot be overridden.
 
 **Allow user to change setting** does not change the app's behavior. For example, if the admin enables *Block external images* and prevents user change, then by default external images are not downloaded in messages; however, the user can manually download the images for that message body.
 
@@ -197,6 +204,26 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 
     ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
 
+#### Calendar Sync
+
+> [!NOTE]
+> Calendar sync support will begin rolling out in October 2020.
+
+Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. Calendar sync is off by default and requires user participation.
+
+Like *Save Contacts*, the *Sync Calendars* setting is another special case scenario because this setting requires user interaction: the user needs to grant Outlook permissions to access the native Calendar app and the data stored within. If the user does not grant access, then calendar synchronization cannot be enabled.
+
+> [!NOTE]
+> With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CALENDAR and WRITE\_CALENDAR within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data. <br/><br/> When enabling Outlook for Android's Sync Calendar within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Calendar app within the work profile context; this provides a clear separation between work and personal profile data.
+
+Organizations have several controls for managing *Sync Calendars* with the work or school account:
+
+- With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Blocked**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account.
+
+- Independent of the Intune App Protection Policy setting **Sync policy managed app data with native apps**, organizations can choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
+
+- Finally, if organizations allow the availability of *Sync Calendars*, through an App Configuration Policy, organizations can define the default sync state of the setting. This setting removes the need for the user to enable calendar synchronization.
+
 ## S/MIME scenarios
 
 On enrolled devices, Outlook for iOS and Android supports automated certificate delivery. Outlook for iOS and Android also supports app configuration settings that enable or disable S/MIME in the app, as well as the user's ability to change the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Understanding S/MIME](sensitive-labeling-and-protection-outlook-for-ios-android.md#understanding-smime). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
@@ -210,6 +237,8 @@ Outlook for iOS and Android supports app configuration policies for the followin
 - Managing sensitive data in mail and calendar reminder notifications
 
 - Managing the contact fields synchronized to the native contacts app
+
+- Managing calendar sync availability
 
 These settings can be deployed to the app regardless of device enrollment status. For more information on the configuration keys, see [Configuration keys](#configuration-keys).
 
@@ -263,10 +292,14 @@ The following table outlines the notification experience in Outlook for iOS and 
 
 ### Configure Contact Field Sync to native Contacts for Outlook for iOS and Android
 
-The settings allow you to control the contact fields that synchronize between Outlook on iOS and Android and the native Contacts applications.
+The settings allow organizations to control the contact fields that synchronize between Outlook on iOS and Android and the native Contacts apps.
 
 > [!NOTE]
 > Outlook for Android supports bi-directional contact synchronization. However, if a user edits a field in the native contacts app that is restricted (such as the **Notes** field), then that data will not synchronize back into Outlook for Android.
+
+### Configure Calendar Sync availability with Outlook for Android
+
+Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account.
 
 ## Deploying configuration scenarios with Microsoft Endpoint Manager for enrolled devices
 
@@ -427,16 +460,16 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 The newly created configuration policy is displayed on the **App configuration** blade.
 
 ## Configuration keys
-The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the MDM OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
+The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the mobile device management OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
 
-### iOS devices and third-party MDM
-If the **Managed devices** device enrollment type configuration keys are deployed with a third-party MDM provider, then the following additional key must also be delivered for iOS devices:
+### iOS devices and third-party unified endpoint management solutions
+If the **Managed devices** device enrollment type configuration keys are deployed with a third-party unified endpoint management (UEM) provider, then the following additional key must also be delivered for iOS devices:
 
    **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-The exact syntax of the key/value pair may differ based on the third-party MDM provider used. The following table shows examples of some third-party MDM providers and the exact values for the key/value pair:
+The exact syntax of the key/value pair may differ based on the third-party UEM provider used. The following table shows examples of some third-party UEM providers and the exact values for the key/value pair:
 
-   |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
+   |Third-party UEM provider| Configuration Key | Value Type | Configuration Value|
    | ------- | ---- | ---- | ---- |
    |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
@@ -473,17 +506,19 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.FocusedInbox|This key specifies whether Focused Inbox is enabled. Setting the value to false will disable Focused Inbox. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Auth.Biometric|This key specifies whether FaceID or TouchID is required to access the app. Setting the value to true will enable biometric access. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Auth.Biometric.UserChangeAllowed|This key specifies whether the biometric setting can be changed by the end user. This key is only supported with Outlook for iOS. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: <br/><br/> true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Contacts.LocalSyncEnabled|This key specifies whether the app should sync Outlook contacts to the native Contacts app. Setting the value to true will enable contact sync. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed|This key specifies whether the contact sync setting can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Contacts.LocalSyncEnabled|By default, Outlook does not sync contact data to the native Contacts app. This key defines the default sync state behavior. Setting the value to true will enable contact sync. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed|This key specifies whether the contact sync state can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This key specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.BlockExternalImagesEnabled|This key specifies whether external images are blocked by default. Setting the value to true will enable blocking external images. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed|This key specifies whether the Block External Images setting can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.DefaultSignatureEnabled|This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.SuggestedRepliesEnabled|This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Discover Feed which shows the user's and the user's coworkers Office files. Setting the value to false will disable the Discover Feed. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SuggestedRepliesEnabled|This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed|This key specifies whether the Suggested Replies setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.officeFeedEnabled|This key specifies whether the app enables the Discover Feed which shows the user's and the user's coworkers Office files. Setting the value to false will disable the Discover Feed.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.OrganizeByThreadEnabled|This key specifies whether the app enables Organize by thread view. Setting the value to false will disable mail threaded conversation view.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.PlayMyEmailsEnabled|This key specifies whether the Play My Emails feature is promoted to eligible users via a banner in the inbox. When set to Off, this feature will not be promoted to eligible users in the app. Users can choose to manually enable Play My Emails from within the app, even when this feature is set to Off. When set as Not configured, the default app setting is On and the feature will be promoted to eligible users. .<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Calendar.NativeSyncEnabled|By default, Outlook does not sync calendar data to the native Calendar app. This key defines the default sync state behavior. Setting the value to true will enable calendar sync. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Calendar.NativeSyncEnabled.UserChangeAllowed|This key specifies whether the calendar sync state can be changed by the end user. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### S/MIME settings
 
@@ -500,6 +535,7 @@ Outlook for iOS and Android offers administrators additional data protection cap
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
+|com.microsoft.outlook.Calendar.NativeSyncAvailable.IntuneMAMOnly|This key specifies whether calendar sync between Outlook and the native Android Calendar app is available for the work or school account. If not defined, Outlook respects the setting value for "Sync policy managed app data with native apps" within the App Protection Policy. This key is only supported with Outlook for Android. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: No value specified <br/> **Example**: false|Managed apps|
 |com.microsoft.outlook.Calendar.Notifications.IntuneMAMOnly|This key specifies whether sensitive data is exposed in calendar notifications when the App Protection Policy **Org data notifications** is set to **Block Org Data**. Setting the value to Allowed (0) exposes sensitive data in the calendar notification. Leaving the value unset protects sensitive data in the calendar notification. <br/> **Accepted values**: 0  <br/> **Default if not specified**: No value specified <br/> **Example**: 0|Managed apps|
 |com.microsoft.intune.mam.areWearablesAllowed|This key specifies if Outlook data can be synchronized to a wearable device. Setting the value to false disables wearable synchronization. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
 |com.microsoft.outlook.ContactSync.AddressAllowed|This key specifies if the contact's address should be synchronized to native contacts. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
