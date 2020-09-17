@@ -7,7 +7,6 @@ f1.keywords:
 - NOCSH
 audience: ITPro
 ms.topic: conceptual
-ms.prod: exchange-server-itpro
 localization_priority: Normal
 description: "A list of updates made to the Exchange Deployment Assistant"
 ---
