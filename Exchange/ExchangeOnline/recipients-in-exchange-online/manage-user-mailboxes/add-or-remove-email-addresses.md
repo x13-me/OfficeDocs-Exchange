@@ -38,8 +38,30 @@ For additional management tasks related to managing recipients, see the "Recipie
 The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
 ## Add an email address to a user mailbox
+### Use the new EAC to add an email address
 
-### Use the EAC to add an email address
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to add an email address to. A flyout is displayed for the selected user mailbox.
+
+3. Under the Mailbox properties link, click **Email addresses**. Next, click **Manage email address types** under **Email addresses**.
+
+4. A flyout is displayed and you can view all the email addresses associated with the user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold. 
+    > [!NOTE]
+    > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
+
+5. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox. 
+    > [!NOTE]
+    > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
+
+6. Click **OK**.
+
+    The new address is displayed in the list of email addresses for the selected mailbox.
+
+7. Click **Save** to save the change.
+
+
+### Use the classic EAC to add an email address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -88,8 +110,19 @@ Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northa
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## Remove an email address from a user mailbox
+### Use the new EAC to remove an email address
 
-### Use the EAC to remove an email address
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to remove an email address from. A flyout is displayed for the selected user mailbox.
+
+3. Under the Mailbox properties link, click **Email addresses**. Next, click **Manage email address types** under **Email addresses**.
+
+4. In the list of email addresses, select the address you want to remove, and then click the delete button.
+
+5. Click **Save** to save the change.
+
+### Use the classic EAC to remove an email address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
