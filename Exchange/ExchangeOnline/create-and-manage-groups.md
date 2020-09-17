@@ -145,7 +145,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
    a.	In **Group type** tab, do the following:
    
-      -	Under **Choose a group type**, select ** Mail-enabled security group**.
+      -	Under **Choose a group type**, select **Mail-enabled security group**.
       
       -	Click **Next**.
 
