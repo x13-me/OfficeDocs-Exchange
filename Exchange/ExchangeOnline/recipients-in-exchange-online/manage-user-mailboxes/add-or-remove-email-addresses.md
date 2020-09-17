@@ -44,7 +44,7 @@ The procedures in this topic show how to add or remove email addresses for a use
 
 2. In the list of user mailboxes, click the mailbox that you want to add an email address to. A flyout is displayed for the selected user mailbox.
 
-3. Under the Mailbox properties link, click **Email addresses**. Next, click **Manage email address types** under **Email addresses**.
+3. Under the **Mailbox** properties link, click **Manage email address types** under **Email addresses**.
 
 4. A flyout is displayed and you can view all the email addresses associated with the user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold. 
     > [!NOTE]
@@ -116,7 +116,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 2. In the list of user mailboxes, click the mailbox that you want to remove an email address from. A flyout is displayed for the selected user mailbox.
 
-3. Under the Mailbox properties link, click **Email addresses**. Next, click **Manage email address types** under **Email addresses**.
+3. Under the **Mailbox** properties link, click **Manage email address types** under **Email addresses**.
 
 4. In the list of email addresses, select the address you want to remove, and then click the delete button.
 
