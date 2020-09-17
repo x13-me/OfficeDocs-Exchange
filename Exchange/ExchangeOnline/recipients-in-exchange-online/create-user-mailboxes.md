@@ -20,7 +20,7 @@ manager: serdars
 
 # Create user mailboxes in Exchange Online
 
-You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the new Exchange admin center (). However, after Exchange Online mailboxes are created, you can manage them using the new EAC. For more information on adding users in Microsoft 365 admin center, see [Add users and assign licenses](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the new Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the new EAC. For more information on adding users in Microsoft 365 admin center, see [Add users and assign licenses](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 > [!NOTE]
 > After you create a new mailbox using Exchange Online PowerShell, you have to assign it an Exchange Online license or it will be disabled when the 30-day grace period ends.
