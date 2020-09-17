@@ -14,7 +14,7 @@ ms.custom:
 description: Create and manage groups in the new Exchange admin center.
 ---
 
-# Create and Manage Groups in the new Exchange admin center
+# Create and manage groups in the new Exchange admin center
 
 Use the new Exchange admin center (EAC) to create, modify, export or remove groups in your Exchange Online organization.
 
