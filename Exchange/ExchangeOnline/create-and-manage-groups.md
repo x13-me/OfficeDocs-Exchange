@@ -149,7 +149,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 1.	Click **Filter** in the toolbar and choose from the drop-down list to apply **Standard filters**.
 2.	Click  ![view-op](media/view-option.PNG) > **Normal list**/**Compact list** to switch the list view.
 
-3.	Select the group from the list view, use the following options in the details pane:
+3.	click the group you want to edit from the list view, use the following options in the details pane:
     -	In **General** tab, you can edit the **Basic information** and the **Email address** of the group.
     -	In **Members** tab, you can view, manage, and add **Owners** and **Members** to the group.
     -	In **Settings** tab, you can edit/check the confirmation boxes under **General settings**, **Privacy** settings, and then **Save** the changes.
