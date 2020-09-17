@@ -144,19 +144,21 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 5. Click **Close**.
 
-## Group settings
+## Settings
  
+1.	Click **Filter** in the toolbar and choose from the drop-down list to apply **Standard filters**.
+2.	Click  ![view-op](media/view-option.PNG) > **Normal list**/**Compact list** to switch the list view.
+
+3.	Select the group from the list view, use the following options in the details pane:
+    -	In **General** tab, you can edit the **Basic information** and the **Email address** of the group.
+    -	In **Members** tab, you can view, manage, and add **Owners** and **Members** to the group.
+    -	In **Settings** tab, you can edit/check the confirmation boxes under **General settings**, **Privacy** settings, and then **Save** the changes.
+    -	In **Microsoft Teams** tab, you can manage your **Teams** settings.
+
+4.	Select the group from the list view, use the following options in the toolbar:
+    -	Click **Export groups** to export group details in csv file format and view them in **Excel**.
+    -	Click **Edit name and description** to edit the information.
+    -	Click **Edit email address** to edit **Primary**/ **Aliases** email address.
+    -	Click **…** > **Delete group** to delete the group.
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
