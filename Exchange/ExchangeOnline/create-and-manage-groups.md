@@ -49,7 +49,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 4. In **Add a group** details pane, under the following tabs:
 
-   a.	In **Group type** tab, do the following:
+   a. In **Group type** tab, do the following:
       -	Under **Choose a group type**, select **Microsoft 365 (recommended)**.
       -	Click **Next**.
 
