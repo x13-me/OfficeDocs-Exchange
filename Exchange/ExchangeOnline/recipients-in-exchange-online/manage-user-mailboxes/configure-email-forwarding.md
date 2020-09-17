@@ -29,7 +29,31 @@ If your organization uses an on-premises Exchange or hybrid Exchange environment
 
 ## Use the Exchange admin center to configure email forwarding
 
-You can use the Exchange admin center (EAC) set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
+You can use the Exchange admin center (EAC) to set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
+
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic
+
+1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+The fly-out page pertaining to the specific mailbox is displayed.
+
+3. Click **Manage mail flow settings** on the **Mail flow settingss** pane.
+**NOTE**: The **Mailbox** tab is selected by default on the fly-out page.
+
+The **Manage mail flow settings** page is launched.
+
+4. Click **Edit** corresponding to the **Email forwarding** row.
+The **Manage email forwarding** page is displayed.
+
+5. Enable the **Forward all emails sent to this mailbox** option (disabled by default).
+The **Forwarding address** text box is displayed, below in the page.
+
+6. Enter the email address of the recipient to whom you want to forward mails from the mailbox.
+
+## Use the Classic Exchange admin center to configure email forwarding
+
+You can use the Classis EAC to set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
