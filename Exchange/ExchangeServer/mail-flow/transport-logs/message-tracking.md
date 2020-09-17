@@ -184,6 +184,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |**PUBLICFOLDER**|The event source was a mail-enabled public folder.|
 |**QUEUE**|The event source was a queue.|
 |**REDUNDANCY**|The event source was Shadow Redundancy. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).|
+|**RESOLVER**|The event source was the recipient resolution component of the categorizer in the Transport service.|
 |**ROUTING**|The event source was the routing resolution component of the categorizer in the Transport service.|
 |**SAFETYNET**|The event source was Safety Net. For more information, see [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md).|
 |**SMTP**|The message was submitted by the SMTP send or SMTP receive component of the transport service.|
