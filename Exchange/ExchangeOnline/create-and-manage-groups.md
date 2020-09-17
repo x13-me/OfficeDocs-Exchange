@@ -75,11 +75,14 @@ See one of the following topics for managing groups in the new Exchange admin ce
         > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups.
         
         >[!NOTE]
-        > Some settings like **Allow External Senders**, or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  For more information see, [Create a group]( https://docs.microsoft.com/en-US/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
+        > Some settings like **Allow External Senders**, or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  
+        > For more information see, [Create a group]( https://docs.microsoft.com/en-US/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
         
       - Click **Next**.
         
-   e.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**. For more information see, [Use groups to collaborate effectively]( https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
+   e.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**. 
+      
+      For more information see, [Use groups to collaborate effectively]( https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
 
 5. Click **Close**.
 
