@@ -42,7 +42,24 @@ For additional management tasks related to managing email client access to a mai
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to enable or disable MAPI
+## Use the new EAC to enable or disable MAPI
+
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable MAPI. A flyout is displayed for the selected user mailbox.
+
+3. Under the **Mailbox** properties link, click **Manage email apps settings** under **Email apps**.
+
+4. A flyout **Manage settings for email apps** is displayed. Do one of the following.
+
+   - To disable MAPI, next to **Outlook desktop (MAPI)**, when the button is enabled, set to disabled. 
+
+   - To enable MAPI, next to **Outlook desktop (MAPI)**, when the button is disabled, set to enabled. 
+
+5. Click **Save** to save your change. A message appears stating **Email app settings updated successfully**.
+
+
+## Use the classic EAC to enable or disable MAPI
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
