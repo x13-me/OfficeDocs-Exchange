@@ -375,7 +375,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
    >
    > ```PowerShell
-   > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -AutoStart -NotificationEmails <email addresses for migration notifications>
+   > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -NotificationEmails <email addresses for migration notifications>
    > ```
 
 6. Finally, start the migration using the following command in Exchange Online PowerShell:
