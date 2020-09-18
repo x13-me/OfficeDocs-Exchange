@@ -74,14 +74,14 @@ See one of the following topics for managing groups in the new Exchange admin ce
         
    d. In **Settings** tab, do the following:
    
-      -	Enter the **Group email address**.
+      -	Enter the **Group email address** (mandatory).
       
       -	Set the **Privacy** status of the group as **Public** or **Private**.
       
       -	Under **Add Microsoft Teams to your group**, check the confirmation box to ensure a team is created for this group.
         
         >[!NOTE]
-        > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups.
+        > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups. To create a team, all group owners must have a license that includes Teams.
         
         >[!NOTE]
         > Some settings like **Allow External Senders**, or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  
@@ -123,7 +123,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
    c.	In **Settings** tab, do the following:
    
-      -	Enter the **Group email address**.
+      -	Enter the **Group email address** (mandatory).
       
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
@@ -159,7 +159,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
    c.	In **Settings** tab, do the following:
    
-      -	Enter the **Group email address**.
+      -	Enter the **Group email address** (mandatory).
       
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
