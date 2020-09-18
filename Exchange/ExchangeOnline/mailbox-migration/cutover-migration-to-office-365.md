@@ -135,7 +135,7 @@ To migrate the mailboxes, the admin must have one of the following permissions:
 
 7. **Create security groups and clean up delegates**: Because the email migration service can't detect whether on-premises Active Directory groups are security groups, it can't provision any migrated groups as security groups in Microsoft 365 or Office 365. If you want to have security groups in Microsoft 365 or Office 365, you must first provision an empty mail-enabled security group in Microsoft 365 or Office 365 before starting the cutover migration.
 
-   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
+   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups with their membership. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
 
 ## Step 1: Verify you own the domain
 
