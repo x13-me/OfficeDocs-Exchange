@@ -89,7 +89,11 @@ See one of the following topics for managing groups in the new Exchange admin ce
         
       - Click **Next**.
         
-   e.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**. 
+   e.	In **Finish** tab, do the following:
+   
+      - Review/edit the contents to ensure the provided information is correct. 
+      
+      - Click **Create group**.
       
       For more information see, [Use groups to collaborate effectively]( https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
 
@@ -127,7 +131,11 @@ See one of the following topics for managing groups in the new Exchange admin ce
       
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
-   d.	In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
+   d.	In **Finish** tab, do the following:
+   
+      - Review/edit the contents to ensure the provided information is correct. 
+      
+      - Click **Create group**.
 
 5. Click **Close**.
 
@@ -143,7 +151,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 4. In **Add a group** details pane, under the following tabs:
 
-   a.	In **Group type** tab, do the following:
+   a. In **Group type** tab, do the following:
    
       -	Under **Choose a group type**, select **Mail-enabled security group**.
       
@@ -163,7 +171,11 @@ See one of the following topics for managing groups in the new Exchange admin ce
       
       -	Under **Communication**, check the confirmation box to allow people from outside the organization send email to this distribution group.
 
-   d. In **Finish** tab, review/edit the contents to ensure the provided information is correct and then click **Create group**.
+   d. In **Finish** tab, do the following:
+   
+      - Review/edit the contents to ensure the provided information is correct. 
+      
+      - Click **Create group**.
 
 5. Click **Close**.
 
@@ -181,9 +193,19 @@ See one of the following topics for managing groups in the new Exchange admin ce
    
    - In **Settings** tab, you can do the following:
    
-      a. For **Microsoft 365** groups, you can edit/check the confirmation boxes under **General settings**, **Privacy** settings, and then **Save** the changes.
+      a. For **Microsoft 365** groups:
       
-      b. For **Distribution list** group and **Mail-enabled security** group, you can edit/check the confirmation box to allow external senders to email this group. The **Advanced Settings** option is available where you can edit/manage more settings in the **Exchange admin center**.
+         - You can edit/check the confirmation boxes under **General settings**.
+         
+         - Change the status in **Privacy** settings.
+         
+         - Click **Save** to save the changes.
+      
+      b. For **Distribution list** group and **Mail-enabled security** group:
+      
+         - You can edit/check the confirmation box to allow external senders to email this group. 
+         
+         - Click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
    
    - In **Microsoft Teams** tab, you can manage your **Teams** settings in **Microsoft Teams admin center**.
    
