@@ -25,7 +25,7 @@ There are three types of groups that can be used to distribute messages:
   >[!NOTE]
   > Microsoft 365 groups is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
 
-- Distribution groups is used for sending emails/notifications to a group of people.
+- Distribution list groups is used for sending emails/notifications to a group of people.
 
 - Mail-enabled security groups is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
@@ -95,7 +95,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 5. Click **Close**.
 
-## Create a Distribution group
+## Create a Distribution list group
 
 1. Navigate to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/).
 
@@ -179,9 +179,16 @@ See one of the following topics for managing groups in the new Exchange admin ce
    
    - In **Members** tab, you can view, manage, and add **Owners** and **Members** to the group.
    
-   - In **Settings** tab, you can edit/check the confirmation boxes under **General settings**, **Privacy** settings, and then **Save** the changes.
+   - In **Settings** tab, you can do the following:
    
-   - In **Microsoft Teams** tab, you can manage your **Teams** settings.
+      a. For **Microsoft 365** groups, you can edit/check the confirmation boxes under **General settings**, **Privacy** settings, and then **Save** the changes.
+      
+      b. For **Distribution list** group and **Mail-enabled security** group, you can edit/check the confirmation box to allow external senders to email this group. The **Advanced Settings** option is available where you can edit/manage more settings in the **Exchange admin center**.
+   
+   - In **Microsoft Teams** tab, you can manage your **Teams** settings in **Microsoft Teams admin center**.
+   
+     >[!NOTE]
+     > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups. To create a team, all group owners must have a license that includes Teams.
 
 4.	Select the group from the list view, use the following options in the toolbar:
 
