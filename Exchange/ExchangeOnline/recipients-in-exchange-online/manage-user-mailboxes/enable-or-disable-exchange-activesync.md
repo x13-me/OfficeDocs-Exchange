@@ -33,7 +33,23 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to enable or disable Exchange ActiveSync
+## Use the new Exchange admin center to enable or disable Exchange ActiveSync
+
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
+   The **Mailboxes** page is displayed.
+
+2. Select the mailbox for which you want to enable or disable Exchange ActiveSync, and click the display name.
+   The properties page is displayed.
+   
+3. Under **Email apps**, click **Manage email apps settings**.
+   The **Manage settings for email apps** page is displayed.
+   
+### To disable
+4. Disable the **Mobile (Exchange ActiveSync)** option which is enabled by default.
+
+5. Click **Save**.
+
+## Use the classic EAC to enable or disable Exchange ActiveSync
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
