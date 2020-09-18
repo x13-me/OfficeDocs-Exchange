@@ -187,9 +187,9 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
     -	Click **Export groups** to export group details in csv file format and view them in **Excel**.
     
-    -	Click **Edit name and description** to edit the information.
+    -	Click **…** > **Edit name and description** to edit the information.
     
-    -	Click **Edit email address** to edit **Primary**/ **Aliases** email address.
+    -	Click **…** > **Edit email address** to edit **Primary**/ **Aliases** email address.
     
     -	Click **…** > **Delete group** to delete the group.
 
