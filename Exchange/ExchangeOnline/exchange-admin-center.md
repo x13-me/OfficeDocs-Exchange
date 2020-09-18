@@ -68,7 +68,6 @@ Here are the features you'll find in the left-hand navigation.
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
 |**Mail flow**|Manage remote domains and accepted domains, add connectors, trace messages and manage alert and alert policies.|
-|**Roles**|Manage role groups and assign permissions to different users.|
 |**Migration**|Migrate mailboxes in batches.|
 |**Reports**|View reports on mail flow and migration batches.|
 |**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
