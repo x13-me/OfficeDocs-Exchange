@@ -39,14 +39,6 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 ## Create a group
 
-You can create a group under the following group types:
-
-  - **Microsoft 365** (recommended): To allow collaboration between teams by giving them the group email and a shared workspace.
-
-  - **Distribution**: To allow sending emails to all members of the list.
-
-  - **Mail-enabled security**: With functionality of a distribution list and access to OneDrive and SharePoint.
-
 1. Login to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Groups**.
   
      The **Active groups** page is displayed.
@@ -54,6 +46,12 @@ You can create a group under the following group types:
 2. Click **Add a group** and do the following in the details pane:
 
    a. In **Group type** tab, under **Choose a group type**, select one of the group types, and and then click **Next**.
+   
+      >[!NOTE]
+      > You can create a group under the following group types:
+      > - **Microsoft 365** (recommended): To allow collaboration between teams by giving them the group email and a shared workspace.
+      > - **Distribution**: To allow sending emails to all members of the list.
+      > - **Mail-enabled security**: With functionality of a distribution list and access to OneDrive and SharePoint.
       
    b. In **Basics** tab, under **Set up the basics**, enter **Name**, and **Description**, and then click **Next**.   
       
