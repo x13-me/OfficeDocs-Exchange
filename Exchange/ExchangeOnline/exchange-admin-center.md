@@ -55,7 +55,10 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 2. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
-2. Click **Need help?**, if you need help from Microsoft 365 Support Assistant.
+3. Click ![get help](media/get-help-icon.PNG), if you need help from Microsoft 365 Support Assistant.
+
+4. Click ![give feedback](media/give-feedback-icon.PNG), you give your feedback to help improve the new Exchange admin center.
+
 
 ### Feature pane
 
@@ -89,9 +92,9 @@ When you select an item from the list view, information about that object is dis
 
  **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
  
-### Centers, Me tile, and Help
+### Centers, My account tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the EAC and sign in as a different user. The Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) bubble allows you to perform the following actions:
+In Centers tile you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the EAC and sign in as a different user. The Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) bubble allows you to perform the following actions:
 
 - **Search** box: You can enter a topic/title and search for more information.
 
@@ -159,9 +162,9 @@ When you select an item from the list view, information about that object is dis
 
  **To bulk edit several items**: press the CTRL key, select the objects you want to bulk edit, and use the options in the details pane.
 
-### Centers, My account tile, and Help
+### Centers, Me tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
+The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the Classic Exchange admin center and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
 
 - **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
 
