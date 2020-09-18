@@ -45,7 +45,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 2. Click **Add a group** and do the following in the details pane:
 
-   a. In **Group type** tab, under **Choose a group type**, select one of the group types, and and then click **Next**.
+   - In **Group type** tab, under **Choose a group type**, select one of the group types, and and then click **Next**.
    
       >[!NOTE]
       > You can create a group under the following group types:
@@ -53,14 +53,14 @@ See one of the following topics for managing groups in the new Exchange admin ce
       > - **Distribution**: To allow sending emails to all members of the list.
       > - **Mail-enabled security**: With functionality of a distribution list and access to OneDrive and SharePoint.
       
-   b. In **Basics** tab, under **Set up the basics**, enter **Name**, and **Description**, and then click **Next**.   
+   - In **Basics** tab, under **Set up the basics**, enter **Name**, and **Description**, and then click **Next**.   
       
-   c. In **Owners** tab, under **Assign Owners**, you can either enter a name or email address or select the owners from the list, and then click **Next**.
+   - In **Owners** tab, under **Assign Owners**, you can either enter a name or email address or select the owners from the list, and then click **Next**.
    
       >[!NOTE]
       > This option is applicable only if **Microsoft 365** (recommended) is selected as a group type. It is recommended to have at least two owners in a group.
         
-   d. In **Settings** tab, under **Edit Settings**, provide the details. The details are displayed based on the group type you selected. 
+   - In **Settings** tab, under **Edit Settings**, provide the details. The details are displayed based on the group type you selected. 
            
       >[!NOTE]
       > **Microsoft Teams** can be added to only a **Microsoft 365 group**. This option is not available for the other groups. To create a team, all group owners must have a license that includes **Teams**.
@@ -70,7 +70,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
        
       For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
        
-   e. In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
+   - In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
             
       For more information see, [Use groups to collaborate effectively](https://support.microsoft.com/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
       
@@ -93,7 +93,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
      b. For **Distribution list** group and **Mail-enabled security** group, you can edit/check the confirmation box to allow external senders to email this group and    
           then click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
    
-3. In **Microsoft Teams** page, you can manage your **Teams** settings in **Microsoft Teams admin center**.
+   - In **Microsoft Teams** section, you can manage your **Teams** settings in **Microsoft Teams admin center**.
     
    >[!NOTE]
    > **Microsoft Teams** can be added to only a **Microsoft 365 group**. This option is not available for the other groups. To create a team, all group owners must have a license that includes **Teams**.
