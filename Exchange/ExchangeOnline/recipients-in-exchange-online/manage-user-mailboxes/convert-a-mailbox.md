@@ -18,7 +18,30 @@ manager: serdars
 
 ---
 
-# Convert a mailbox
+# Convert a mailbox using new Exchange admin center
+
+1. In the new EAC, select **Recipients > Mailboxes**.
+   The **Mailboxes** page is displayed.
+   
+2. Select a mailbox that you want to convert, and click on the display name.
+   The properties page is displayed.
+ 
+## In case of a user mailbox
+   
+3. Under **More actions**, click **Convert to shared mailbox**.
+   The **Convert mailbox from regular to shared** page is displayed.
+
+4. Click **Confirm**.
+   The notification message **Mailbox converted successfully** is displayed.
+
+## In case of a shared mailbox
+
+5. Under **More actions**, click **Convert to regular mailbox**.
+   The **Convert mailbox from shared to regular** page is displayed.
+
+6. Click **Confirm**.
+   The notification message **Mailbox converted successfully** is displayed.
+# Convert a mailbox using Powershell
 
 Converting a mailbox to a different type of mailbox is very similar to the experience in earlier versions of Exchange. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
 
