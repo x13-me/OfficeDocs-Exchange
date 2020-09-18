@@ -80,7 +80,7 @@ Use this section to specify who can send messages to this user.
 
 ### Senders (all or selected) authentication
 
-Select the radio button for **Check if all senders are authenticated** to ensure that there is no unauthenticated or unathorized sender sending messages to the user's mailbox.
+Select the radio button for **Check if all senders are authenticated** to ensure that there is no unauthenticated or unauthorized sender sending messages to the user's mailbox.
 **NOTE**: This option is not dependent on whether **All senders** or **Selected senders** is selected. This step is effectively a mandatory step.
 
 6. Under **Block messages from**, use the following options to change delivery restrictions:
