@@ -70,7 +70,7 @@ Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce0
 
 ### Step 3: Export the on-premises authorization certificate
 
-In this step, you have to run a PowerShell script to export the on-premises authorization certificate, which is then imported to your Exchange Online organization in the next step.
+In this step, you have to run a PowerShell script on the Exchange server directly to export the on-premises authorization certificate, which is then imported to your Exchange Online organization in the next step.
 
 1. Save the following text to a PowerShell script file named, for example, **ExportAuthCert.ps1**.
 
