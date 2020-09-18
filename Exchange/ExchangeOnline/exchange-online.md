@@ -33,7 +33,7 @@ As an administrator for your Microsoft 365 or Office 365 organization, you manag
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
  
-   For an introduction, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
+   For an introduction, see [Exchange admin center in Exchange Online](Exchange/ExchangeOnline/exchange-admin-center.md).
    
 Exchange admin center is now available at the new URL address [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience.
 
