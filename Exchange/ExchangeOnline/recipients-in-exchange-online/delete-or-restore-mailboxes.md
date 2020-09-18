@@ -61,6 +61,16 @@ When you delete an user account, the corresponding Exchange Online mailbox is de
 
 To delete a Microsoft 365 or Office 365 work or school account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
+### Use Windows PowerShell to permanently delete a user mailbox
+
+This example deletes the user account for Walter Harp from Azure AD.
+
+```PowerShell
+Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
+```
+
+For more details, check out, [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
+
 ### Use Exchange Online PowerShell to delete a mailbox
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
@@ -74,36 +84,6 @@ This example deletes an Exchange Online mailbox and the corresponding user accou
 ```PowerShell
 Remove-Mailbox -Identity "Walter Harp"
 ```
-
-### Use Windows PowerShell to permanently delete a user mailbox
-
-This example deletes the user account for Walter Harp from Azure AD.
-
-```PowerShell
-Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
-```
-
-For more details, check out, [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
-
-### How do you know this worked?
-
-To verify that you've successfully deleted an Exchange Online mailbox, do one of following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**. The deleted mailbox is removed from the mailbox list.
-
-  Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the deleted mailbox is still displayed.
-
-- If you deleted the user account, verify that the user account isn't listed on the **Active users** page in the Microsoft 365 admin center, and that it's listed on the **Deleted Users** page.
-
-- In Exchange Online PowerShell, use the following syntax to verify that the mailbox has been deleted.
-
-  ```PowerShell
-  Get-Mailbox <identity>
-  ```
-
-  The command returns an error stating that the mailbox couldn't be found, which verifies that the mailbox was deleted.
-
-- If you permanently deleted the user mailbox, verify that the user mailbox isn't still showing up in the recycle bin in Azure AD.
 
 ## Restore a user mailbox
 
@@ -126,21 +106,6 @@ You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cm
    ```PowerShell
    Undo-SoftDeletedMailbox allieb@contoso.com -WindowsLiveID allieb@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
    ```
-
-### How do you know this worked?
-
-To verify that you've successfully restored a mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**. The restored mailbox is displayed in the mailbox list.
-
-  Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the mailbox isn't displayed at first.
-
-- In Exchange Online PowerShell, use the following syntax to verify that the mailbox was restored.
-
-  ```PowerShell
-  Get-Mailbox <Identity>
-  ```
-
 ## Restoring a user in a hybrid deployment
 
 For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure AD user that was associated with the mailbox has been hard-deleted from Azure AD, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Microsoft 365 Groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
