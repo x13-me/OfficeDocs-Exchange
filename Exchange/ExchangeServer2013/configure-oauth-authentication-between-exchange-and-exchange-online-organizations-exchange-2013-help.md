@@ -184,14 +184,14 @@ You must also define the external Autodiscover endpoint for your on-premises org
 > [!NOTE]
 > You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Microsoft 365 or Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/New-IntraOrganizationConnector) cmdlet.
 
-Using Windows PowerShell, run the following cmdlet:
+Using Windows PowerShell, run the following cmdlet, remember to replace the UserPrincipalName:
 
 ```powershell
-$UserCredential = Get-Credential
-$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session
+Connect-ExchangeOnline -UserPrincipalName navin@contoso.com -ShowProgress $true
 New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
 ```
+> [!NOTE]
+> The above step uses Exchange Online PowerShell V2 module, for more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Step 8: Configure an AvailabilityAddressSpace for any pre-Exchange 2013 SP1 servers
 
