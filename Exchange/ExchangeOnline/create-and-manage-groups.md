@@ -20,14 +20,14 @@ Use the new Exchange admin center (EAC) to create, modify, export or remove grou
 
 There are three types of groups that can be used to distribute messages:
 
-- Microsoft 365 groups (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a   shared workspace for conversations, files, and calendars.
+- **Microsoft 365 groups** (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a   shared workspace for conversations, files, and calendars.
 
   >[!NOTE]
-  > Microsoft 365 groups is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
+  > **Microsoft 365 groups** is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
 
-- Distribution list groups is used for sending emails/notifications to a group of people.
+- **Distribution list groups** is used for sending emails/notifications to a group of people.
 
-- Mail-enabled security groups is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
+- **Mail-enabled security groups** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
 For more information see, [groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide).
 
@@ -38,6 +38,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 - [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 
 ## Create a group
+
 You can create a group under the following group types:
 
  - **Microsoft 365** (recommended): To allow collaboration between teams by giving them the group email and a shared workspace.
@@ -45,7 +46,7 @@ You can create a group under the following group types:
  - **Distribution**: To allow sending emails to all members of the list.
 
  - **Mail-enabled security**: With functionality of a distribution list and access to OneDrive and SharePoint.
-
+ 
 1. Login to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Groups**.
   
      The **Active groups** page is displayed.
@@ -59,26 +60,27 @@ You can create a group under the following group types:
    c. In **Owners** tab, under **Assign Owners**, you can either enter a name or email address or select the owners from the list, and then click **Next**.
    
       >[!NOTE]
-      > This option is applicable only if **Microsoft 365 (recommended)** is selected as a group type. It is recommended to have at least two owners in a group.
+      > This option is applicable only if **Microsoft 365** (recommended) is selected as a group type. It is recommended to have at least two owners in a group.
         
    d. In **Settings** tab, under **Edit Settings**, provide the details. The details are displayed based on the group type you selected. 
            
       >[!NOTE]
-      > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups. To create a team, all group owners must have a license           that includes Teams.
+      > **Microsoft Teams** can be added to only a **Microsoft 365 group**. This option is not available for the other groups. To create a team, all group owners must have a license that includes **Teams**.
         
       >[!NOTE]
-      > Some settings like **Allow External Senders**, or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  
-      > For more information see, [Create a group]( https://docs.microsoft.com/en-US/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
-        
-   e. In **Finish** tab, under **Review and finish adding group** verify all the details and then click **Create group**.
+      > Some settings like **Allow External Senders** or **Send Copies of Group Conversations to Members’ Inboxes** can only be set after the group is created.  
+       
+      For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
+       
+   e. In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
             
       For more information see, [Use groups to collaborate effectively](https://support.microsoft.com/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
-
+      
 3. Click **Close**.
 
 ## Edit a group
 
-1. From the list view, select the group that you want to edit, and click the selected **Group Name**.
+1. From the list view, select the group that you want to edit, and click the selected group name.
   
 2. In the details pane, do the following:
 
@@ -96,11 +98,11 @@ You can create a group under the following group types:
 3. In **Microsoft Teams** page, you can manage your **Teams** settings in **Microsoft Teams admin center**.
     
    >[!NOTE]
-   > Microsoft Teams can be added to only a Microsoft 365 group. This option is not available for the other groups. To create a team, all group owners must have a license that includes Teams.
+   > **Microsoft Teams** can be added to only a **Microsoft 365 group**. This option is not available for the other groups. To create a team, all group owners must have a license that includes **Teams**.
 
 ## Export a group
 
-You can export group details in a .csv file format and then view them in excel format.
+You can export group details in a .csv file format and then view them in **Excel**.
 
 1. Select the group from the list view that you want to export and click **Export groups**.
 
