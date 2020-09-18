@@ -95,7 +95,7 @@ This scenario is fully covered in the topic [Delete items in the Recoverable Ite
 
 ## How do you know this worked?
 
-To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use **Get-MailboxFolderStatistics** cmdlet in Exchange Online PowerShell to check the size and number of items in Recoverable Items folder.
+To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use the [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxfolderstatistics) cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) to check the size and number of items in Recoverable Items folder.
   
 Run the following command in to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
   
