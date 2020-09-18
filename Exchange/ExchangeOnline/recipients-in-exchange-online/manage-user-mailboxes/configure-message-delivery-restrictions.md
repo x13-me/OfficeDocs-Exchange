@@ -50,7 +50,35 @@ For additional management tasks related to recipients, see the following topics:
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to configure message delivery restrictions
+## Use the new EAC to configure message delivery restrictions
+
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to configure message delivery restrictions for.
+
+3. Under the **Mailbox** settings, click **Manage mail flow settings** under **Mail flow settings**.
+
+4. In the **Manage mail flow settings** display pane, click the **Edit** button next to **Message Delivery Restrictions**. The **Message delivery restrictions** display pane is shown. 
+
+- **Accept messages from**: Use this section to specify who can send messages to this user.
+
+   - **All senders**: This option specifies that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This is the default option. It includes external users only if you clear the **Check if all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
+   
+   - **Selected senders**: This specifies that the user can choose from a list of senders. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add sender** to display the list of all recipients in your Exchange organization. You can also search for a specific recipient by typing the recipient's name in the search box. Select the desired recipients and then click **Confirm**.
+
+   - **Check if all senders are authenticated**: This option prevents anonymous users from sending messages to the user. This includes external users that are outside of your Exchange organization.
+
+  
+- **Block messages from**: Use this section to block people from sending messages to this user.
+
+   - **None**: This option specifies that the mailbox won't reject messages from any senders in the Exchange organization. This is the default option.
+
+   - **Selected senders**: This specifies that the user can choose from a list of senders. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add sender** to display the list of all recipients in your Exchange organization. You can also search for a specific recipient by typing the recipient's name in the search box. Select the desired recipients and then click **Confirm**.
+
+5. Click **Save** to save your changes and then click **Close** to close the **Message Delivery Restrictions** page.
+
+
+## Use the classic EAC to configure message delivery restrictions
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
