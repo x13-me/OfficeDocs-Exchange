@@ -193,19 +193,9 @@ See one of the following topics for managing groups in the new Exchange admin ce
    
    - In **Settings** tab, you can do the following:
    
-      a. For **Microsoft 365** groups:
+      a. For **Microsoft 365** groups, you can edit/check the confirmation boxes under **General settings**, change the status in **Privacy** settings, and then click **Save**          to save the changes.
       
-         - You can edit/check the confirmation boxes under **General settings**.
-         
-         - Change the status in **Privacy** settings.
-         
-         - Click **Save** to save the changes.
-      
-      b. For **Distribution list** group and **Mail-enabled security** group:
-      
-         - You can edit/check the confirmation box to allow external senders to email this group. 
-         
-         - Click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
+      b. For **Distribution list** group and **Mail-enabled security** group, you can edit/check the confirmation box to allow external senders to email this group and then              click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
    
    - In **Microsoft Teams** tab, you can manage your **Teams** settings in **Microsoft Teams admin center**.
    
