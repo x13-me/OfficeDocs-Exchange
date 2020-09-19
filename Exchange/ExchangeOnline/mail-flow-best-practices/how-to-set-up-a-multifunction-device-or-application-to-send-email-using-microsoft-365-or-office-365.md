@@ -65,6 +65,9 @@ Enter the following settings directly on your device or in the application **as 
 |Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
 |
 
+> [!IMPORTANT]
+> Please see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-july-update/ba-p/1530163) for latest announcements that affect this option and [Announcing OAuth 2.0 support for IMAP and SMTP AUTH protocols in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-oauth-2-0-support-for-imap-and-smtp-auth-protocols-in/ba-p/1330432).
+
 #### TLS and other encryption options
 
 Determine what version of TLS your device supports by checking the device guide or with the vendor. If your device or application does not support TLS 1.2 or above:
