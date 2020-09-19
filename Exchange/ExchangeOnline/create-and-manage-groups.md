@@ -124,7 +124,7 @@ You can add prefixes and suffixes to your group names.
    
 3. Click **Save**.
 
-## Upgrade distribution group
+## Upgrade the Distribution list group
 
 You can upgrade a **Distribution list group** to **Microsoft 365 group**.
 
