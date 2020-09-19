@@ -20,14 +20,14 @@ Use the new Exchange admin center (EAC) to create, modify, export or remove grou
 
 There are three types of groups that can be used to distribute messages:
 
-- **Microsoft 365 groups** (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a   shared workspace for conversations, files, and calendars.
+- **Microsoft 365 group** (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a shared workspace for conversations, files, and calendars.
 
   >[!NOTE]
-  > **Microsoft 365 groups** is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
+  > **Microsoft 365 group** is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
 
-- **Distribution list groups** is used for sending emails/notifications to a group of people.
+- **Distribution list group** is used for sending emails/notifications to a group of people.
 
-- **Mail-enabled security groups** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
+- **Mail-enabled security group** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
 For more information see, [groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide).
 
@@ -88,9 +88,9 @@ See one of the following topics for managing groups in the new Exchange admin ce
    
    - In **Settings** section, you can do the following:
    
-     a. For **Microsoft 365** groups, you can edit/check the confirmation boxes under **General settings**, change the status in **Privacy** settings, and then click                   **Save** to save the changes.
+     a. For **Microsoft 365 group**, you can edit/check the confirmation boxes under **General settings**, change the status in **Privacy** settings, and then click                   **Save** to save the changes.
       
-     b. For **Distribution list** group and **Mail-enabled security** group, you can edit/check the confirmation box to allow external senders to email this group and    
+     b. For **Distribution list group** and **Mail-enabled security group**, you can edit/check the confirmation box to allow external senders to email this group and    
           then click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
    
    - In **Microsoft Teams** section, you can manage your **Teams** settings in **Microsoft Teams admin center**.
@@ -109,7 +109,20 @@ You can export group details in a .csv file format and then view them in **Excel
 2. Click **Continue**.
 
    The csv format of the group details file is downloaded.
+
+## Upgrade distribution group
+
+You can upgrade a **Distribution list group** to **Microsoft 365 group**.
+
+1. Select the group from the list view that you want to upgrade and click **Upgrade distribution group**.
+
+   The dialog box to confirm the export is displayed.
    
+2. Click **Continue**.
+
+   >[!NOTE]
+   > The upgrade is a permanent change and can not be reversed.
+ 
 ## Other actions
 
 1. Click **Refresh** to update the list of groups page after adding a group or editing the details of a group.
@@ -122,8 +135,8 @@ You can export group details in a .csv file format and then view them in **Excel
     
    - Click **Delete group** to delete the selected group.
   
-   - Click **Filter** to filter the groups based on the displayed options in the drop-down list.
+3. Click **Filter** to filter the groups based on the displayed options in the drop-down list.
   
-   - Enter information in the **Search** box to search a group, group email id, or other details.
+4. Enter information in the **Search** box to search a group, group email id, or other details.
 
 
