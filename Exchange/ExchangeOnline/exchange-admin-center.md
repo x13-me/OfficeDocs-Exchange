@@ -41,11 +41,11 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 
 Here's what the new Exchange admin center looks like.
 
-![New EAC homepage](media/new-EAC-homepage-1.PNG)
+![New EAC homepage](media/new-EAC-homepage.PNG)
 
 ![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
 
-![New EAC tabs](media/new-EAC-homepage-tabs.PNG)
+![New EAC tabs](media/new-EAC-homepage-details-pane.PNG)
 
 ### Home page
 
