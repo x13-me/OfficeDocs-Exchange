@@ -110,6 +110,20 @@ You can export group details in a .csv file format and then view them in **Excel
 
    The csv format of the group details file is downloaded.
 
+## Naming policy
+
+You can add prefixes and suffixes to your group names.
+
+1. Click **Add naming policy**.
+
+2. In **Edit group naming policy** details pane, do the following:
+
+   - In **Policy** section, provide the details. 
+   
+   - In **Blocked words**, add specific words that you want to block from being used in group names and aliases.
+   
+3. Click **Save**.
+
 ## Upgrade distribution group
 
 You can upgrade a **Distribution list group** to **Microsoft 365 group**.
