@@ -27,6 +27,37 @@ Email forwarding lets you to set up a mailbox to forward email messages sent to 
 
 If your organization uses an on-premises Exchange or hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
 
+## Use the new Exchange admin center to configure email forwarding
+
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
+
+   The **Mailboxes** page is displayed.
+   
+2. Select a mailbox for which you want to configure the email-forwarding property, and click on the display name.
+
+   The properties page is displayed.
+   
+3. Under **Mail flow settings**, click **Manage mail flow settings**.
+  
+   The **Manage mail flow settings** page is displayed.
+   
+4. In the **Email forwarding** row, click **Edit**.
+
+   The **Manage email forwarding** page is displayed.
+   
+5. Enable the **Forward all emails sent to this inbox** option, which is disabled by default.
+
+   The **Forwarding address** text box is displayed.
+   
+6. Enter the email address of the person to whom you want to forward the emails in the mailbox.
+
+7. Enable the **Keep a copy of forwarded email in this mailbox** option, which is disabled by default.
+
+   **NOTE**: This option can be enabled if you want the owner of the mailbox to receive a copy of the forwarded emails.
+   
+8. Click **Save**.
+
+
 ## Use the Exchange admin center to configure email forwarding
 
 You can use the Exchange admin center (EAC) set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
