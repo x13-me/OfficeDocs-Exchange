@@ -50,6 +50,30 @@ The send permissions that someone has on another user's mailbox are important wh
 > [!TIP]
 > Managers might have multiple assistants with different levels of permissions. In the example above, while Rob may be able to send messages on behalf of Mary, she could have another assistant that can Send as Mary. If this was the case, Mary's IT department could do the steps for both "Send as" and "Send on behalf" permissions.
 
+# Automatically save sent items in the delegator's mailbox using new Exchange admin center
+
+1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
+
+   The **Mailboxes** page is displayed.
+   
+2. Select the mailbox for which you want to configure the sent items to be saved for the delegator.
+
+3. Click the display name.
+
+   The properties page is displayed.
+   
+4. Under **Mailbox permissions**, click **Manage mailbox delegation**.
+
+   The **Manage mailbox delegation** page is displayed.
+   
+5. In the **Send on behalf** row, click **Edit**.
+
+6. Click **Add permissions.
+
+7. Check the checkbox of the person whom you want to configure as the delegate.
+
+8. Click **Save**.
+
 ## How do I set up a mailbox to save messages "Sent as" a manager when they're sent by an assistant?
 
 When you do these steps, any messages **sent as** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
