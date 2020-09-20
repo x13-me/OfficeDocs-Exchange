@@ -20,6 +20,9 @@ manager: serdars
 
 # Clutter notifications in Outlook
 
+> [!TIP]
+> [Focused Inbox](../setup/configure-focused-inbox.md) is going to replace Clutter. Learn more: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+
 Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 
 ## Clutter Notifications
