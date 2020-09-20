@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 # Recipients in Exchange Online
 
-In Exchange Online, the new Exchange admin center (EAC) has replaced the classic Exchange admin center (EAC) as the GUI-based administrative tool used to manage cloud-based recipients. The new EAC has a different look and feel than the classic EAC. In the new EAC, under **Recipients**, the **mailboxes** (User) and **shared** (mailboxes) tabs are now merged into a single tab, **Mailboxes**. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. **Migration** tab has been moved out of **Recipients**. It is available as a separate feature. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
+In Exchange Online, the new Exchange admin center (EAC) is introduced to enhance the user experience. The new EAC has a different look and feel than the Classic EAC. The user **mailboxes** and **shared** mailboxes tabs under **Recipients** (of the Classic EAC), are now merged into a single tab, **Mailboxes** in the new EAC. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. The **Migration** tab has been moved out of **Recipients**, and is available as a separate feature. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
 ## Managing recipients in Exchange Online
 
