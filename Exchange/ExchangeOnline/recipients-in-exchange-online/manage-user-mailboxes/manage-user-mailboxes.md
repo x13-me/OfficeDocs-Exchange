@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage user mailboxes
 
-After you create a user mailbox, you can make changes and set additional properties by using the new Exchange admin center(EAC) or Exchange Online PowerShell.
+After you create a user mailbox, you can make changes and set additional properties by using the new Exchange admin center (EAC) or Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
@@ -35,8 +35,7 @@ After you create a user mailbox, you can make changes and set additional propert
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Change user mailbox properties
-### Configure user mailbox properties in the new EAC
+## Use the new EAC to configure user mailbox properties
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
  
@@ -85,7 +84,7 @@ After you create a user mailbox, you can make changes and set additional propert
    
 5. Use the **Account** settings to edit the contact/organization information. 
 
-#### Email Addresses
+### Email Addresses
 
 Use the **Email Addresses** section to view or change the email addresses associated with the user mailbox. 
 
@@ -102,7 +101,7 @@ By clicking the **Manage email address types** link, you can view all the email 
 
    - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box  isn't available in the EAC in Exchange Server.
   
-#### Mail flow settings
+### Mail flow settings
 
 Use the **Mail flow settings** section for default message size and delivery settings. 
 
@@ -112,7 +111,7 @@ By clicking the **Manage mail flow settings** link, you can set the following op
 - **Message delivery restriction**: Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users, or to accept messages only from users in your Exchange organization. Click the **Edit** button and set the message delivery restrictions.
 
 
-#### Mailbox permissions
+### Mailbox permissions
 
 Use the **Mailbox permissions** section to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. By clicking the **Mailbox permissions** link, you can assign the following permissions:
 
@@ -124,7 +123,7 @@ Use the **Mailbox permissions** section to assign permissions to other users (al
 
 To assign permissions to delegates, click on the **Edit** button next to the appropriate permission. By clicking ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add permissions**, you can view a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **Save**. You can also search for a specific recipient by typing the recipient's name in the search box.
 
-#### Mailbox policies
+### Mailbox policies
 Use the **Mailbox policies** section to apply default mailbox policies for the organization. 
 On clicking **Manage mailbox policies**, you can view or change the mailbox policies. Click ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) and change the following mailbox policies.
 - **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The default sharing policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
@@ -135,7 +134,7 @@ On clicking **Manage mailbox policies**, you can view or change the mailbox poli
 
 - **Address book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy applied to the mailbox, select one from the drop-down list.
 
-#### More actions
+### More actions
 
 Use the **More actions** section to do the following changes:
 - **Convert to shared mailbox**: Use this option to convert a mailbox from regular to shared.
@@ -163,7 +162,7 @@ Use the **More actions** section to do the following changes:
 
 - **Custom attributes**: Custom attributes are extension attributes that you can use to add information about a recipient for which there isn't an existing attribute. You can add a maximum of 15 custom attributes to a mailbox. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add custom attribute** to add custom attributes.
 
-#### Automatic replies
+### Automatic replies
 
 Use these settings to create automatic reply (Out of Office) messages. By clicking **Manage automatic replies**, you can turn ON the **Automatic replies** option.
 
@@ -174,7 +173,7 @@ Specify the following information:
 
 - **Send automatic replies to senders outside the organizations from this mailbox** - Enable this check box to send automatic replies to senders outside the organizations from this mailbox. On enabling this check box, you can choose between the options, **Only reply to senders in the mailbox's contact list** or **Reply to all senders**. Enter the automatic reply message in the **Reply to all senders outside the organizations from this mailbox** text box.
 
-#### Email apps
+### Email apps
 
 Use this section to apply the default settings for Outlook on the web, IMAP, POP3, MAPI applied. By clicking **Manage email apps settings**, you can set the default settings for the following:
 - **Outlook on the web**
@@ -187,11 +186,11 @@ Use this section to apply the default settings for Outlook on the web, IMAP, POP
 > [!Note] 
 > All these fields are enabled by default.
 
-#### Mailbox Usage
+### Mailbox Usage
 
 The **Mailbox Usage** section displays the last time that the user signed in to their mailbox, the total size of the mailbox, and the percentage of the total mailbox quota that has been used.
 
-### Use the  Classic EAC to change user mailbox properties
+## Use the  Classic EAC to change user mailbox properties
 
 1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -217,7 +216,7 @@ The **Mailbox Usage** section displays the last time that the user signed in to 
 
    - **Mailbox Delegation**
 
-#### General
+### General
 
 Use the **General** section to view or change basic information about the user.
 
@@ -237,7 +236,7 @@ Click **More options** to view or change these additional properties:
 
 - **Custom attributes**: This section displays the custom attributes defined for the user mailbox. To specify custom attribute values, click **Edit**. You can specify up to 15 custom attributes for the recipient.
 
-#### Mailbox Usage
+### Mailbox Usage
 
 Use the **Mailbox Usage** section to view or change the mailbox storage quota and deleted item retention settings for the mailbox. These settings are configured by default when the mailbox is created. They use the values that are configured for the mailbox database and apply to all mailboxes in that database. You can customize these settings for each mailbox instead of using the mailbox database defaults.
 
@@ -248,7 +247,7 @@ Use the **Mailbox Usage** section to view or change the mailbox storage quota an
 > [!NOTE]
 > To obtain the information that's displayed in the previous two boxes, the EAC queries the mailbox database that hosts the mailbox. If the EAC is unable to communicate with the Exchange store that contains the mailbox database, these boxes will be blank. A warning message is displayed if the user hasn't signed in to the mailbox for the first time.
 
-#### Contact Information
+### Contact Information
 
 Use the **Contact Information** section to view or change the user's contact information. The information on this page is displayed in the address book. Click **More options** to display additional boxes.
 
@@ -257,7 +256,7 @@ Use the **Contact Information** section to view or change the user's contact inf
 
 Mailbox users can use Outlook or Outlook on the web (formerly known as Outlook Web App) to view and change their own contact information. But they can't change the information in the **Notes** and **Web page** boxes.
 
-#### Organization
+### Organization
 
 Use the **Organization** section to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that is accessible from email clients such as Outlook.
 
@@ -271,7 +270,7 @@ Use the **Organization** section to record detailed information about the user's
 
 - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari's mailbox is specified in the **Manager** box of Chris's mailbox and Kate's mailbox, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's mailbox.
 
-#### Email Address
+### Email Address
 
 Use the **Email Address** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -286,7 +285,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
   - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box isn't available in the EAC in Exchange Server.
 
-#### Mailbox Features
+### Mailbox Features
 
 Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
@@ -365,18 +364,18 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
 
-#### Member Of
+### Member Of
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they are used.
 
-#### MailTip
+### MailTip
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc boxes of a new email message.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-#### Mailbox Delegation
+### Mailbox Delegation
 
 Use the **Mailbox Delegation** section to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions:
 
@@ -388,7 +387,7 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
 
 To assign permissions to delegates, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
 
-### Use Exchange Online PowerShell to change user mailbox properties
+## Use Exchange Online PowerShell to change user mailbox properties
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using Exchange Online PowerShell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
