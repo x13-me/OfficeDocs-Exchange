@@ -35,11 +35,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to configure mail forwarding for.
+2. In the list of user mailboxes, click the mailbox that you want to configure mail forwarding for. A display pane is shown for the selected user mailbox.
 
-3. Under the **Mailbox** settings, click **Mail flow settings** \> **Manage mail flow settings**. 
+3. Under **Mailbox** settings \> **Mail flow settings**, click the **Manage mail flow settings** link.
 
-4. In the **Manage mail flow settings** display pane, click the **Edit** button next to **Email forwarding** to view or change the setting for forwarding email messages.
+4. In the **Manage mail flow settings** display pane, you will see the **Email forwarding** option. Click the **Edit** button next to this option to view or change the setting for forwarding email messages.
 
 5. The **Manage email forwarding** display pane is shown. By default the **Forward all emails sent to this mailbox** setting is OFF. Turn it ON.
 
@@ -47,12 +47,12 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 7. You can turn ON the **Keep a copy of forwarded email in this mailbox** option if you wish to keep a copy of the forwarded email.
 
-8. Click **Save** to save your changes and then click **Close** to exit from the **Manage mail flow settings** display pane.
+8. Click **Save** to save your changes. Click **Close** to exit from the **Manage mail flow settings** display pane.
 
 
-## Use the classic Exchange admin center to configure email forwarding
+## Use the Classic Exchange admin center to configure email forwarding
 
-You can use the classic Exchange admin center (EAC) to set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
+You can use the Classic Exchange admin center (EAC) to set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
