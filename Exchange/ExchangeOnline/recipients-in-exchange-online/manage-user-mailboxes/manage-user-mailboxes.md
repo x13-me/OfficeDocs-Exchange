@@ -39,32 +39,33 @@ After you create a user mailbox, you can make changes and set additional propert
 ### Configure user mailbox properties in the new EAC
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
-The **mailboxes** and **shared** tabs under **Recipients** (of the classic EAC) are now merged into a single tab, **Mailboxes** in the new EAC. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. On top of the list of shared and user mailboxes, the following options are provided:
+ 
+  The user **mailboxes** and **shared** mailboxes tabs (of the Classic EAC) under **Recipients**, are now merged into a single tab, **Mailboxes**. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. On top of the list of shared and user mailboxes, the following options are provided:
    - **Add a shared mailbox**: Use this option to create a new shared mailbox.
 
-   - **Set default message size restrictions**: Use this option to set a maximum size for messages that can be sent and received by the new mailboxes in your organization. These settings are applied by default to mailboxes you create.
+   - **Set default message size restrictions**: Use this option to set a maximum size for messages that can be sent and received by the mailboxes in your organization. These settings are applied by default to the mailboxes you create.
 
    - **Refresh**: Use this option to refresh the mailbox list.
 
-   - **Export**: Use this option to download a .csv file(excel sheet) with details of all the user mailboxes.
+   - **Export**: Use this option to download a .csv file (excel sheet) with details of all the mailboxes.
 
-   - **Search**: Use this option to search for any user mailbox by entering the suitable keyword.
+   - **Search**: Use this option to search for any mailbox by entering the suitable keyword.
 
-   - **Filter**: Use this detailed option for creating custom filters or using shared filters.
+   - **Filter**: Use this detailed option for creating custom filters or using pre-defined filters.
 
-   - **Normal List** and **Compact List** - The default view that you see when you open Mailboxes is the normal listing view. In the Compact List view you can see more number of columns with reduced spaces in between.
+   - **Normal List** and **Compact List** - The default view that you see when you open Mailboxes is the normal listing view. In the Compact List view, you can see more number of rows with reduced spaces in between.
    
-   - Also, when you select any mailbox by clicking on the radio button next to the display name(on any row), certain additional options are also available on top:
+   - Also, when you select any mailbox by clicking on the radio button next to the display name (on any row), certain additional options are also available on top:
    
       - **Hide from address list**: Select this option to prevent the recipient from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this option, users can still send messages to the recipient by using the email address.
       
-      - Other additional options such as Edit contact information, Manage mailbox delegation, Recover deleted items, Convert to shared mailbox, Edit email address, Refresh etc. are also displayed on clicking the more options (**...**) button on top.  
+      - Other additional options such as Edit contact information, Manage mailbox delegation, Recover deleted items, Convert to shared mailbox, Edit email address, Refresh, etc. are also displayed on clicking the more options (**...**) button on top.  
 
-2. In the list of user mailboxes, click the mailbox that you want to change the properties for. A flyout is displayed for the selected user mailbox.
+2. In the list of user mailboxes, click the mailbox that you want to change the properties for. A display pane is shown for the selected user mailbox.
 
-3. On this page, the **Mailbox** and **Account** links are provided for changing the properties. 
+3. On this page, the user can change the **Mailbox** and **Account** settings.
 
-4. Use the **Mailbox** link to change any of the following the properties. 
+4. Use the **Mailbox** settings for changing any of the following properties. 
 
    - **Email addresses**
 
@@ -82,12 +83,13 @@ The **mailboxes** and **shared** tabs under **Recipients** (of the classic EAC) 
 
    - **Mailbox Usage**
    
-5. Use the **Account** link to edit the contact/organization information. 
+5. Use the **Account** settings to edit the contact/organization information. 
 
 #### Email Addresses
 
-Use the **Email Addresses** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. Click **Manage email address types** under **Email addresses**. A flyout is displayed and you can view all the email addresses associated with the user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold. Use the **Edit** and **Delete** buttons for editing or deleting an email address. Click **Edit** on any row to edit the email address. A flyout is displayed and you can edit the email address. Click **OK** to save your changes.
-The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
+Use the **Email Addresses** section to view or change the email addresses associated with the user mailbox. 
+
+By clicking the **Manage email address types** link, you can view all the email addresses associated with the user mailbox. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list.
 
 **Add email address type**: Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type** to add a new email address for this mailbox. Select one of following address types:
 
@@ -98,19 +100,21 @@ The primary SMTP address (also known as the default reply address) is displayed 
      > [!NOTE]
      > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
-   - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box  isn't available in the EAC in Exchange Server. Click OK to save your changes.
+   - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box  isn't available in the EAC in Exchange Server.
   
 #### Mail flow settings
 
-Use the **Mail flow settings** section for default message size and delivery settings. Click **Manage mail flow settings** under **Mail flow settings**. A flyout is displayed and you can set the following options:
+Use the **Mail flow settings** section for default message size and delivery settings. 
+
+By clicking the **Manage mail flow settings** link, you can set the following options:
 - **Email forwarding**: Click the **Edit** button and turn the Email forwarding option to ON/OFF. Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 - **Message size restriction**: These settings control the size of messages that the user can send and receive. Click the **Edit** button and set a maximum size for messages sent and received by this mailbox.
 - **Message delivery restriction**: Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users, or to accept messages only from users in your Exchange organization. Click the **Edit** button and set the message delivery restrictions.
-Click **Save** when you are done.
+
 
 #### Mailbox permissions
 
-Use the **Mailbox permissions** section to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. Click **Manage mailbox delegation** under **Mailbox permissions**. You can assign the following permissions:
+Use the **Mailbox permissions** section to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. By clicking the **Mailbox permissions** link, you can assign the following permissions:
 
 - **Send As**: This permission allows users other than the mailbox owner to use the mailbox to send messages. After this permission is assigned to a delegate, any message that a delegate sends from this mailbox will appear as if it was sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox.
 
@@ -118,11 +122,12 @@ Use the **Mailbox permissions** section to assign permissions to other users (al
 
 - **Read and manage**: This permission allows a delegate to sign in to the user's mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can't send messages from the mailbox. To allow a delegate to send email from the user's mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
 
-To assign permissions to delegates click on the **Edit** button next to the appropriate permission. Next, click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add permissions** . This displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **Save**. You can also search for a specific recipient by typing the recipient's name in the search box.
+To assign permissions to delegates, click on the **Edit** button next to the appropriate permission. By clicking ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add permissions**, you can view a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **Save**. You can also search for a specific recipient by typing the recipient's name in the search box.
 
 #### Mailbox policies
-Use the **Mailbox policies** section to apply default mailbox policies for the organization. Click **Manage mailbox policies** under **Mailbox policies**. A flyout is displayed and you can view or change the mailbox policies. Click ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) and change the following mailbox policies.
-- **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
+Use the **Mailbox policies** section to apply default mailbox policies for the organization. 
+On clicking **Manage mailbox policies**, you can view or change the mailbox policies. Click ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) and change the following mailbox policies.
+- **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The default sharing policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 
 - **Role assignment policy**: This box shows the role assignment policy assigned to the mailbox. The role assignment policy specifies the role-based access control (RBAC) roles that are assigned to the user and control what specific mailbox and distribution group configuration settings users can modify. To change the role assignment policy that's assigned to the user, select a different one from the drop-down list.
 
@@ -152,7 +157,7 @@ Use the **More actions** section to do the following changes:
     
 - **Manage mailbox archive**: Use this option to enable or disable the archive mailbox.
 
-- **Set recipient limit**: This setting controls the maximum number of recipients the user can send a message to. Specify the maximum number of recipients in the Maximum recipients text box . In Exchange Online, the limit is 500 recipients.
+- **Set recipient limit**: This setting controls the maximum number of recipients the user can send a message to. Specify the maximum number of recipients in the **Maximum recipients** text box. In Exchange Online, the limit is 500 recipients.
 
 - **Recover deleted items**: Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired. Administrators can search for deleted items based on Time or Subject Line or Item type.
 
@@ -160,33 +165,35 @@ Use the **More actions** section to do the following changes:
 
 #### Automatic replies
 
-Use these settings to create automatic reply (Out of Office) messages. Click **Manage automatic replies** under **Automatic replies**. A flyout is displayed and you can turn ON the **Automatic replies** option.
+Use these settings to create automatic reply (Out of Office) messages. By clicking **Manage automatic replies**, you can turn ON the **Automatic replies** option.
+
 Specify the following information:
 - **Reply to all senders inside the organizations from this mailbox** - Enter the automatic reply message in this text box. 
-> [!Note] This field cannot be empty if automatic reply is on.
+> [!Note] 
+> This field cannot be empty if automatic reply is on.
 
-- **Send automatic replies to senders outside the organizations from this mailbox** - Enable this check box to send automatic replies to senders outside the organizations from this mailbox. On enabling this check box, you can choose between the options, **Only reply to senders in the mailbox's contact list** or **Reply to all sender**. Enter the automatic reply message in the **Reply to all senders outside the organizations from this mailbox** text box.
+- **Send automatic replies to senders outside the organizations from this mailbox** - Enable this check box to send automatic replies to senders outside the organizations from this mailbox. On enabling this check box, you can choose between the options, **Only reply to senders in the mailbox's contact list** or **Reply to all senders**. Enter the automatic reply message in the **Reply to all senders outside the organizations from this mailbox** text box.
 
 #### Email apps
 
-Use this section to apply the default settings for outlook for web, IMAP, POP3, MAPI applied. Click **Manage email apps settings** under **Email apps**. A flyout is displayed and you can set the default settings for the following:
-- Outlook on the web
-- Outlook desktop (MAPI)
-- Exchange web services
-- Mobile (Exchange ActiveSync)
-- IMAP
-- POP
+Use this section to apply the default settings for Outlook on the web, IMAP, POP3, MAPI applied. By clicking **Manage email apps settings**, you can set the default settings for the following:
+- **Outlook on the web**
+- **Outlook desktop (MAPI)**
+- **Exchange web services**
+- **Mobile (Exchange ActiveSync)**
+- **IMAP**
+- **POP**
 
-> [!Note] All these fields are enabled by default.
+> [!Note] 
+> All these fields are enabled by default.
 
 #### Mailbox Usage
 
 The **Mailbox Usage** section displays the last time that the user signed in to their mailbox, the total size of the mailbox, and the percentage of the total mailbox quota that has been used.
 
-
 ### Use the  Classic EAC to change user mailbox properties
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -283,7 +290,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
 Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
-- **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
+- **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The default sharing policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 
 - **Role assignment policy**: This box shows the role assignment policy assigned to the mailbox. The role assignment policy specifies the role-based access control (RBAC) roles that are assigned to the user and control what specific mailbox and distribution group configuration settings users can modify. To change the role assignment policy that's assigned to the user, select a different one from the drop-down list.
 
