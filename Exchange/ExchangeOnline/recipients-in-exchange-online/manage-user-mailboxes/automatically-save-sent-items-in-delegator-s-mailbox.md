@@ -56,7 +56,7 @@ The send permissions that someone has on another user's mailbox are important wh
    
 2. In the list of user mailboxes, click the mailbox that you want to configure the sent items to be saved for the delegator. A display pane is shown for the selected user mailbox.
    
-3. Under **Mailbox settings** > **Manage mailbox delegation**.
+3. Under **Mailbox settings**, click **Manage mailbox delegation**.
 
 4. In the **Manage mailbox delegation** settings, do the following. 
 
