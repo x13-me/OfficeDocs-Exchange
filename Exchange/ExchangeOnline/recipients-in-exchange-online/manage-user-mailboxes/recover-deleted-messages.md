@@ -48,20 +48,14 @@ Administrators can search for and recover deleted email messages in a user's mai
 
 - This topic focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox).
 
-## Recover deleted messages using new Exchange admin center
+## Use new EAC for recovering deleted messages
 
-1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
   
-   The **Mailboxes** page is displayed.
-   
 2. Select the mailbox for which you want to recover deleted messages, and click on the display name.
 
-   The properties page is displayed.
-   
 3. Under **More actions**, click **Recover deleted items**.
 
-   The **Mailboxes > Recover deleted items** page is displayed.
-   
 4. Enter values for each or either of the filter criteria from the drop-down lists.
 
 5. Click **Apply filter**.
