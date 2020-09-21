@@ -50,29 +50,21 @@ The send permissions that someone has on another user's mailbox are important wh
 > [!TIP]
 > Managers might have multiple assistants with different levels of permissions. In the example above, while Rob may be able to send messages on behalf of Mary, she could have another assistant that can Send as Mary. If this was the case, Mary's IT department could do the steps for both "Send as" and "Send on behalf" permissions.
 
-# Automatically save sent items in the delegator's mailbox using new Exchange admin center
+## Use the new EAC to automatically save sent items in the delegator's mailbox
 
-1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
-
-   The **Mailboxes** page is displayed.
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
    
-2. Select the mailbox for which you want to configure the sent items to be saved for the delegator.
-
-3. Click the display name.
-
-   The properties page is displayed.
+2. In the list of user mailboxes, click the mailbox that you want to configure the sent items to be saved for the delegator. A display pane is shown for the selected user mailbox.
    
-4. Under **Mailbox permissions**, click **Manage mailbox delegation**.
+3. Under **Mailbox settings** > **Manage mailbox delegation**.
 
-   The **Manage mailbox delegation** page is displayed.
-   
-5. In the **Send on behalf** row, click **Edit**.
+4. In the **Manage mailbox delegation** settings, do the following. 
 
-6. Click **Add permissions.
-
-7. Check the checkbox of the person whom you want to configure as the delegate.
-
-8. Click **Save**.
+   a. In the **Send on behalf** row, click **Edit**.
+   b. Click **Add permissions.
+   c. Check the checkbox of the person whom you want to configure as the delegate.
+  
+ 5. Click **Save** to save your change. A message Manage mailbox delegation settings updated successfully is displayed. Click **Close** to exit.
 
 ## How do I set up a mailbox to save messages "Sent as" a manager when they're sent by an assistant?
 
