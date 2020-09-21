@@ -44,23 +44,19 @@ For additional management tasks related to managing email client access to a mai
 
 ## Use the new Exchange admin center to enable or disable MAPI
 
-1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
-   The **Mailboxes** page is displayed.
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable MAPI. A display pane is shown for the selected user mailbox.
 
-2. Select the mailbox for which you want to enable or disable MAPI, and click the display name.
+3. Under **Mailbox** settings \> **Email apps**, click the **Manage email apps settings** link.
 
-   The properties page is displayed.
-   
-3. Under **Email apps**, click **Manage email apps settings**. 
+4. In the **Manage settings for email apps** display pane, do one of the following.
 
-   The **Manage settings for email apps** page is displayed.
+   - To disable MAPI, for the **Outlook desktop (MAPI)** option, when the button is **Enabled**, set to **Disabled**.
+ 
+   - To enable MAPI, for the **Outlook desktop (MAPI)** option, when the button is **Disabled**, set to **Enabled**.
 
-### To disable
-
-4. Disable the **Outlook desktop (MAPI)** option which is enabled by default.
-
-5. Click **Save**.
+5. Click **Save** to save your change. A message **Email app settings updated successfully** is displayed. Click **Close** to exit.
 
 ## Use the classic EAC to enable or disable MAPI
 
@@ -79,6 +75,16 @@ For additional management tasks related to managing email client access to a mai
    - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
 
 5. Click **Save** to save your change.
+
+## How do you know this worked?
+
+To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
+
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+
+- On the mailbox properties page, click **Mailbox Features**.
+
+- Under **Email Connectivity**, verify whether MAPI is enabled or disabled.
 
 ## Use Exchange Online PowerShell to enable or disable MAPI
 
@@ -99,14 +105,6 @@ For detailed syntax and parameter information, see [Set-CASMailbox](https://docs
 ## How do you know this worked?
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Mailbox Features**.
-
-- Under **Email Connectivity**, verify whether MAPI is enabled or disabled.
-
-Or
 
 - Run the following command in Exchange Online PowerShell.
 
