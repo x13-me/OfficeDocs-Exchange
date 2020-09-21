@@ -49,9 +49,9 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 
 5. Click **Save** to save your change. A message **Email app settings updated successfully** is displayed. Click **Close** to exit.
 
-## Use the classic EAC to enable or disable Exchange ActiveSync
+## Use the Classic EAC to enable or disable Exchange ActiveSync
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to enable or disable Exchange ActiveSync for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
