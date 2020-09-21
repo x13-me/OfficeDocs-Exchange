@@ -33,7 +33,7 @@ manager: serdars
    
  The notification message **Mailbox converted successfully** is displayed.
    
-# Convert a mailbox using Powershell
+## Convert a mailbox using Powershell
 
 Converting a mailbox to a different type of mailbox is very similar to the experience in earlier versions of Exchange. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
 
