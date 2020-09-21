@@ -40,9 +40,9 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Change how long permanently deleted items are kept using new Exhange admin center
+## Change how long permanently deleted items are kept using new Exchange admin center
 
-1. In the new EAC, navigate to **Recipients > Mailboxes**.
+1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
 
    The **Mailboxes** page is displayed.
    
