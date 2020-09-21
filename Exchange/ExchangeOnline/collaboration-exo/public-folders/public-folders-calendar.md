@@ -25,7 +25,7 @@ A public folder calendar is a good solution for people looking for only a shared
 > You must use the Microsoft Outlook desktop client to create the public folder calendar.
 
 > [!Note]
-> The Calendar type of public folder can be accessed from Outlook Web App (OWA) and the Outlook desktop client. Public folders, including calendar, cannot be accessed from mobile devices.
+> The Calendar type of public folder can be accessed from Outlook Web App and the Outlook desktop client. Public folders, including calendar, cannot be accessed from mobile devices.
 
 ## Prerequisites
 
@@ -90,9 +90,9 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
 By default, everyone in the organization can access the public folder and create items in it. If you want to delegate additional access rights, add other users, and provide a required set of permissions, then follow the instructions in [public folder permissions](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server).
 
-## Access a public folder calendar in the Outlook web app
+## Access a public folder calendar in the Outlook Web App
 
-1. Login to the Outlook web app (OWA).
+1. Login to the Outlook Web App.
 
 2. Right-click **Folders** and select **Add public folder to Favorites**.
 
@@ -104,7 +104,7 @@ By default, everyone in the organization can access the public folder and create
 
 5. Close the **Add Public Folder** menu.
 
-   The calendar public folder shows in Calendar area of the OWA.
+   The calendar public folder shows in Calendar area of the Outlook Web App.
 
 6. Click the Calendar icon.
 
