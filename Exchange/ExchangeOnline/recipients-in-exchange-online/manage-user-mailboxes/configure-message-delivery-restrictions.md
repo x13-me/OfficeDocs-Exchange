@@ -77,9 +77,9 @@ For additional management tasks related to recipients, see the following topics:
 
 5. Click **Save** to save your changes. Click **Close** to exit from the **Manage mail flow settings** display pane.
 
-## Use the classic EAC to configure message delivery restrictions
+## Use the Classic EAC to configure message delivery restrictions
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to configure message delivery restrictions for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
