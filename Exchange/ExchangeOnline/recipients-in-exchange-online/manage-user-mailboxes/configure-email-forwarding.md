@@ -58,9 +58,9 @@ If your organization uses an on-premises Exchange or hybrid Exchange environment
 8. Click **Save**.
 
 
-## Use the Exchange admin center to configure email forwarding
+## Use the Classic EAC to configure email forwarding
 
-You can use the Exchange admin center (EAC) set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
+You can use the Classic EAC set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
