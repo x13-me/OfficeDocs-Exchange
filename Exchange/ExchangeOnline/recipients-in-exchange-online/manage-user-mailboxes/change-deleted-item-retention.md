@@ -53,14 +53,8 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 3. Under **More actions**, click  **Recover deleted items** and perform the following actions:
 
    (a) To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**.
-   
-   
    (b) To customize the duration, select the **Custom date range**.
-   
-   
    (c) Select the time period from the **Start date** and **End date** fields.
-   
-   
    (d) Enter the subject of the deleted message in the **Subject line search**.
      **NOTE**: This option is used if you want to retrieve a message through its subject.
 
