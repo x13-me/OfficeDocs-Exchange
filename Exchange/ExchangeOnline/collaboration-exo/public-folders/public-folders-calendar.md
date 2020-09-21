@@ -70,19 +70,19 @@ Once you have ensured the prerequisites are met, then you're ready to get starte
 
   - To create a public folder calendar at the top level of the directories, right-click  **All Public Folders** and select **New Folder**.
 
-    ![The image shows the new folder dialog box.](../../media/new-folder.png)
+    ![The new folder dialog box.](../../media/new-folder.png)
 
   - To create a public folder calendar under an existing public folder, right-click the folder, and select **New Folder**.
 
 4. Name the new public folder and select **Calendar Items** from the **Folder contains** drop-down list.
 
-    ![Image shows the Calendar option highlighted.](../../media/folder-contains.png)
+    ![The Calendar option highlighted.](../../media/folder-contains.png)
 
 5. Click **OK**.
 
    The calendar type folder shows up with a different icon.
 
-   ![Image shows the Calendar icon highlighted.](../../media/different-icon.png)
+   ![The Calendar icon highlighted.](../../media/different-icon.png)
 
 6. For faster access to the new public folder calendar, right-click the folder and select **Add to Favorites...**.
 
@@ -100,7 +100,7 @@ By default, everyone in the organization can access the public folder and create
 
 4. Click **Add Public Folders**.
 
-![Image shows the Add Public Folder option highlighted.](../../media/holiday-folder-label.png)
+![The Add Public Folder option highlighted.](../../media/holiday-folder-label.png)
 
 5. Close the **Add Public Folder** menu.
 
@@ -110,7 +110,7 @@ By default, everyone in the organization can access the public folder and create
 
    You'll see the public folder calendar under **Other Calendars**.
 
-![Image shows the new public folder calendar highlighted.](../../media/public-folder-calendar-display.png)
+![The new public folder calendar highlighted.](../../media/public-folder-calendar-display.png)
 
 ## Receive emails to a public folder calendar
 
