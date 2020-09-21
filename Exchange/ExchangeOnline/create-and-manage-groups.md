@@ -131,7 +131,7 @@ You can upgrade a **Distribution list group** to **Microsoft 365 group**.
 
    The dialog box to confirm the upgrade is displayed.
    
-2. Click **Continue**.
+2. Click **Upgrade**.
 
    >[!NOTE]
    > The upgrade is a permanent change and can not be reversed.
