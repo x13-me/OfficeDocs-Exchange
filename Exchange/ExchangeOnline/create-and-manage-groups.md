@@ -41,7 +41,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 1. Login to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Groups**.
   
-     The **Active groups** page is displayed.
+     The **Groups** page is displayed.
 
 2. Click **Add a group** and do the following in the details pane:
 
@@ -90,8 +90,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
    
      a. For **Microsoft 365 group**, you can edit/check the confirmation boxes under **General settings**, change the status in **Privacy** settings, and then click                   **Save** to save the changes.
       
-     b. For **Distribution list group** and **Mail-enabled security group**, you can edit/check the confirmation box to allow external senders to email this group and    
-          then click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
+     b. For **Distribution list group** and **Mail-enabled security group**, you can edit/check the confirmation box to allow external senders to email this group and then click **Advanced Settings** to edit/manage more settings in the **Exchange admin center**.
    
    - In **Microsoft Teams** section, you can manage your **Teams** settings in **Microsoft Teams admin center**.
     
@@ -100,7 +99,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 ## Export a group
 
-You can export group details in a .csv file format and then view them in **Excel**.
+You can export group details in a .csv file format. 
 
 1. Select the group from the list view that you want to export and click **Export groups**.
 
@@ -108,7 +107,7 @@ You can export group details in a .csv file format and then view them in **Excel
    
 2. Click **Continue**.
 
-   The csv format of the group details file is downloaded.
+   The .csv format of the group details file is downloaded.
 
 ## Naming policy
 
