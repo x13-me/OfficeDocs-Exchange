@@ -14,7 +14,7 @@ audience: ITPro
 f1.keywords:
 - NOCSH
 title: Create a public folder calendar
-
+ms.service: exchange-online
 ---
 
 # Create a Public Folder calendar
