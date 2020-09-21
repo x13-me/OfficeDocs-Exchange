@@ -45,7 +45,7 @@ See one of the following topics for managing groups in the new Exchange admin ce
 
 2. Click **Add a group** and do the following in the details pane:
 
-   - In **Group type** tab, under **Choose a group type**, select one of the group types, and and then click **Next**.
+   - In **Group type** tab, under **Choose a group type**, select one of the group types, and then click **Next**.
    
       >[!NOTE]
       > You can create a group under the following group types:
