@@ -40,6 +40,8 @@ This article explains how you can send email from devices and business applicati
 > This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 >
 > You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md) for more information.
+>
+> Please see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-july-update/ba-p/1530163) for latest announcements concerning this option.
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
 
@@ -64,9 +66,6 @@ Enter the following settings directly on your device or in the application **as 
 |TLS/StartTLS|Enabled|
 |Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
 |
-
-> [!IMPORTANT]
-> Please see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-july-update/ba-p/1530163) for latest announcements that affect this option and [Announcing OAuth 2.0 support for IMAP and SMTP AUTH protocols in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-oauth-2-0-support-for-imap-and-smtp-auth-protocols-in/ba-p/1330432).
 
 #### TLS and other encryption options
 
