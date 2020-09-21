@@ -129,7 +129,7 @@ You can upgrade a **Distribution list group** to **Microsoft 365 group**.
 
 1. Select the group from the list view that you want to upgrade and click **Upgrade distribution group**.
 
-   The dialog box to confirm the export is displayed.
+   The dialog box to confirm the upgrade is displayed.
    
 2. Click **Continue**.
 
