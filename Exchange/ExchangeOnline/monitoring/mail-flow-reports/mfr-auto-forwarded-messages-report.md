@@ -22,7 +22,10 @@ The **Auto-forwarded messages** report in the modern Exchange admin center (mode
 
 The overview section contains the following charts:
 
-- **Forwarding type** (almost always SMTP)
+- **Forwarding type**: Typical values are:
+  - **Mail flow rules**
+  - **Inbox rules**
+  - **SMTP forwarding**: This is automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
 - **Recipient domain**
 - **Forwarding users**
 
