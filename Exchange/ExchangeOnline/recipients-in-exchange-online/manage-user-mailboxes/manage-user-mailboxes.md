@@ -40,7 +40,7 @@ After you create a user mailbox, you can make changes and set additional propert
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
  
   The user **mailboxes** and **shared** mailboxes tabs (of the Classic EAC) under **Recipients**, are now merged into a single tab, **Mailboxes**. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. On top of the list of shared and user mailboxes, the following options are provided:
-   - **Add a shared mailbox**: You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online shared mailbox. You can't create new shared mailboxes using the new Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the new EAC.
+   - **Add a shared mailbox**: Use this option to create a new shared mailbox. The new EAC allows you to create only shared mailboxes. If you want to create a user mailbox, you have to use the Microsoft 365 admin center or Exchange Online PowerShell. However, after Exchange Online mailboxes are created, you can manage them using the new EAC.
    
    - **Set default message size restrictions**: Use this option to set a maximum size for messages that can be sent and received by the mailboxes in your organization. These settings are applied by default to the mailboxes you create.
 
