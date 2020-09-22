@@ -57,15 +57,7 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 ### Centers, My account tile, and Help
 
-In Centers tile, you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user. The Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) bubble allows you to perform the following actions:
-
-- **Search** box: You can enter a topic/title and search for more information.
-
-- **Featured help**: Select the topics from the list for more information.
-
-- **No installation required**: You can use the **Office apps** online without any installation.
-
-- **Disable Help bubble**: You can turn off the Help bubble or turn it on if it has been disabled.
+In Centers tile, you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user.
 
 ![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
 
