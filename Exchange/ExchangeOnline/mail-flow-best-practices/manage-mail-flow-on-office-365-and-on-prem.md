@@ -59,7 +59,7 @@ In this scenario, your organization's mail flow setup looks like the following d
 
 ### More information
 
-There are additional considerations in hybrid deployments between on-premise Exchange and Microsoft 365 or Office 365. For more information, see [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+There are additional considerations in hybrid deployments between on-premises Exchange and Microsoft 365 or Office 365. For more information, see [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 ## See also
 
