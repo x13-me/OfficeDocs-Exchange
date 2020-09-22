@@ -49,15 +49,15 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 1. You can also personalize your dashboard, to do that click **+ Add card** and drag a card to the location you want on the dashboard.
 
-2. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
+2. Click **What's New?** to learn about the new updates in new Exchange admin center.
 
-3. Click ![get help](media/get-help-icon.PNG) , if you need help from Microsoft 365 Support Assistant.
+3. Click **My account tile** to sign out of the new Exchange admin center and sign in as a different user.
 
-4. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center.
+4. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
-### Centers, My account tile, and Help
+5. Click ![get help](media/get-help-icon.PNG) , if you need help from Microsoft 365 Support Assistant.
 
-In Centers tile, you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user.
+6. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center.
 
 ![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
 
