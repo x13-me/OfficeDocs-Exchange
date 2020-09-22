@@ -43,10 +43,6 @@ Here's what the new Exchange admin center looks like.
 
 ![New EAC homepage](media/new-EAC-homepage.PNG)
 
-![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
-
-![New EAC tabs](media/new-EAC-homepage-details-pane.PNG)
-
 ### Home page
 
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
@@ -59,6 +55,19 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 4. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center.
 
+### Centers, My account tile, and Help
+
+In Centers tile, you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user. The Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) bubble allows you to perform the following actions:
+
+- **Search** box: You can enter a topic/title and search for more information.
+
+- **Featured help**: Select the topics from the list for more information.
+
+- **No installation required**: You can use the **Office apps** online without any installation.
+
+- **Disable Help bubble**: You can turn off the Help bubble or turn it on if it has been disabled.
+
+![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
 
 ### Feature pane
 
@@ -85,23 +94,13 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 When you select a tab, in most cases you'll see a list view. The list view in the new Exchange admin center is designed to remove limitations that existed in the Classic Exchange admin center and Exchange Control Panel.
 
+![New EAC tabs](media/new-EAC-homepage-details-pane.PNG)
+
 ### Details pane
 
 When you select an item from the list view, information about that object is displayed in the details pane.
 
  **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
- 
-### Centers, My account tile, and Help
-
-In Centers tile, you can click **+Add Card** to add cards to your dashboard and click **What's New?** to learn about the new updates in new Exchange admin center. The My account tile allows you to sign out of the new Exchange admin center and sign in as a different user. The Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) bubble allows you to perform the following actions:
-
-- **Search** box: You can enter a topic/title and search for more information.
-
-- **Featured help**: Select the topics from the list for more information.
-
-- **No installation required**: You can use the **Office apps** online without any installation.
-
-- **Disable Help bubble**: You can turn off the Help bubble or turn it on if it has been disabled.
 
 ## Get to the Classic Exchange admin center
 
