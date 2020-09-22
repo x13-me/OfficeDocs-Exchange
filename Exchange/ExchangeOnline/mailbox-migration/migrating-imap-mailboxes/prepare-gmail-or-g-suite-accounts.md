@@ -115,7 +115,7 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
    - [Add an email account to Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
 
-   - [Connect email accounts in Outlook on the web (Microsoft 365)](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4)
+   - [Connect email accounts in Outlook on the web (Microsoft 365)](https://support.microsoft.com/office/connect-email-accounts-in-outlook-on-the-web-microsoft-365-d7012ff0-924f-4f78-8aca-c3912d886c4d)
 
 ### Optionally revoke the app password
 
