@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 
 # Recipients in Exchange Online
 
-In Exchange Online, the new Exchange admin center (EAC) is introduced to enhance the user experience. The new EAC has a different look and feel than the Classic EAC. The user **mailboxes** and **shared** mailboxes tabs under **Recipients** (of the Classic EAC), are now merged into a single tab, **Mailboxes** in the new EAC. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. The **Migration** tab has been moved out of **Recipients**, and is available as a separate feature. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
+In Exchange Online, the new Exchange admin center (EAC) is introduced to enhance the user experience. The new EAC has a different look and feel than the Classic EAC. The user **mailboxes** and **shared** mailboxes tabs under **Recipients** of the Classic EAC are now merged into a single **Mailboxes** tab in the new EAC. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. The **Migration** tab is no longer under **Recipients**, but instead is available as a separate feature. For more information, see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
 ## Managing recipients in Exchange Online
 
-Although the new EAC has a different look and feel, managing Exchange Online recipients in the new EAC is similar to managing recipients in the current version of Exchange Online.  And because you use the EAC in both Exchange Online and Exchange on-premises organizations, managing cloud-based recipients is similar to managing on-premises recipients. For more information about managing some of the different types of recipients in Exchange Online, see the following articles:
+Although the new EAC has a different look and feel, managing Exchange Online recipients in the new EAC is similar to managing recipients in the classic EAC.  For more information about managing some of the different types of recipients in Exchange Online, see the following articles:
 
 - [Create user mailboxes in Exchange Online](create-user-mailboxes.md)
 
