@@ -118,9 +118,8 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover m
 
    - Wait for the connection to automatically be tested when you connect Microsoft 365 or Office 365 to your email system later in this procedure.
 
-4. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you connect Microsoft 365 or Office 365 to your email system later in this procedure.
-
-5. To migrate the mailboxes, the admin must have one of the following permissions:
+4. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you connect Microsoft 365 or Office 365 to your email system later in this procedure. 
+To migrate the mailboxes, the admin must have one of the following permissions:
 
    - The migration administrator must be assigned the **FullAccess** permission for each on-premises mailbox.
 
@@ -129,12 +128,14 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover m
    - The migration administrator must be assigned the **Receive As** permission on the on-premises mailbox database that stores user mailboxes.
 
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365](assign-permissions-for-migration.md).
+    
+5. Verify that the mailboxes to be migrated are **not hidden from the address lists**.
 
 6. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. [Turn on Cloud Voicemail](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail) for your users after the migration is complete.
 
 7. **Create security groups and clean up delegates**: Because the email migration service can't detect whether on-premises Active Directory groups are security groups, it can't provision any migrated groups as security groups in Microsoft 365 or Office 365. If you want to have security groups in Microsoft 365 or Office 365, you must first provision an empty mail-enabled security group in Microsoft 365 or Office 365 before starting the cutover migration.
 
-   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
+   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups with their membership. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
 
 ## Step 1: Verify you own the domain
 
@@ -182,7 +183,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes:
 
-   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox.
+   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox. Make sure that this mailbox is _not_ hidden from the address lists.
 
    - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Microsoft 365 or Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 

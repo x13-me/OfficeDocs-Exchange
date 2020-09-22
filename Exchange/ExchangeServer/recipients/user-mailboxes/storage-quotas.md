@@ -15,7 +15,9 @@ f1.keywords:
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
+appliesto:
+- Exchange Server 2013
+- Exchange Server 2016
 ---
 
 # Configure storage quotas for a mailbox

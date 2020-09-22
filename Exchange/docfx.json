@@ -130,13 +130,13 @@
     "externalReference": [],
     "globalMetadata": {
         "Manager": "serdars",
-        "ms.prod": "exchange",
         "ms.technology": "",
         "ms.devlang": "powershell",
         "ROBOTS": "INDEX,FOLLOW",
         "searchScope": ["Exchange"],
         "breadcrumb_path": "/exchange/breadcrumb/toc.json",
         "extendBreadcrumb": "true",
+        "uhfHeaderId": "MSDocsHeader-M365-IT",
         "feedback_system": "GitHub",
         "feedback_github_repo": "MicrosoftDocs/OfficeDocs-Exchange",
         "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-Exchange/issues" 
@@ -157,6 +157,10 @@
         "hideEdit": {
           "ExchangeServer/**/*.md": true,
           "ExchangeServer2013/**/*.md": true         
+        },
+        "ms.prod": {
+          "ExchangeServer/**/*.md": "exchange",
+          "ExchangeServer2013/**/*.md": "exchange"
         }       
     },
     "template": [],
