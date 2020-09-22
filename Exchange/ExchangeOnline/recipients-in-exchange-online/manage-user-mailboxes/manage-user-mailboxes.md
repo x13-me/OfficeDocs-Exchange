@@ -40,8 +40,8 @@ After you create a user mailbox, you can make changes and set additional propert
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
  
   The user **mailboxes** and **shared** mailboxes tabs (of the Classic EAC) under **Recipients**, are now merged into a single tab, **Mailboxes**. On clicking the **Mailboxes** tab, you can view the shared and user mailboxes under one list view. On top of the list of shared and user mailboxes, the following options are provided:
-   - **Add a shared mailbox**: Use this option to create a new shared mailbox.
-
+   - **Add a shared mailbox**: You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online shared mailbox. You can't create new shared mailboxes using the new Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the new EAC.
+   
    - **Set default message size restrictions**: Use this option to set a maximum size for messages that can be sent and received by the mailboxes in your organization. These settings are applied by default to the mailboxes you create.
 
    - **Refresh**: Use this option to refresh the mailbox list.
@@ -54,11 +54,22 @@ After you create a user mailbox, you can make changes and set additional propert
 
    - **Normal List** and **Compact List** - The default view that you see when you open Mailboxes is the normal listing view. In the Compact List view, you can see more number of rows with reduced spaces in between.
    
-   - Also, when you select any mailbox by clicking on the radio button next to the display name (on any row), certain additional options are also available on top:
+   - When you select any mailbox by clicking on the radio button next to the display name (on any row), certain additional options are also available on top. If you are not able to view all the options, click the more options (**...**) menu.  
    
       - **Hide from address list**: Select this option to prevent the recipient from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this option, users can still send messages to the recipient by using the email address.
       
-      - Other additional options such as Edit contact information, Manage mailbox delegation, Recover deleted items, Convert to shared mailbox, Edit email address, Refresh, etc. are also displayed on clicking the more options (**...**) button on top.  
+      - **Edit contact information**: Select this option to edit the contact information
+      
+      - **Manage mailbox delegation**: Select this option to assign permissions to other users (also called delegates) to allow them to sign in to the user's mailbox or send messages on behalf of the user. For more information, see the section on "**Mailbox permissions**" explained later on in this topic.
+      
+      - **Recover deleted items**: Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired. Administrators can search for deleted items based on Time or Subject Line or Item type.
+      
+      - **Convert to shared mailbox**: Select this option to convert a mailbox from regular to shared.
+      
+      - **Edit email address**: Select this option to change the user's email information.
+      
+      - **Refresh**: Select this option to refresh the Mailboxes list.  
+    
 
 2. In the list of user mailboxes, click the mailbox that you want to change the properties for. A display pane is shown for the selected user mailbox.
 
@@ -188,7 +199,7 @@ Use this section to apply the default settings for Outlook on the web, IMAP, POP
 
 ### Mailbox Usage
 
-The **Mailbox Usage** section displays the last time that the user signed in to their mailbox, the total size of the mailbox, and the percentage of the total mailbox quota that has been used.
+The **Mailbox Usage** section displays the last time that the user signed in to their mailbox, the total size of the mailbox, and the percentage of the total mailbox quota that has been used. You can't change the Mailbox usage in this display pane. It is a read-only information for the admins. 
 
 ## Use the  Classic EAC to change user mailbox properties
 
