@@ -71,7 +71,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
    For more information and examples about running content searches that use the folder ID property, see [Use a folder ID or documentlink to perform a targeted collection](https://docs.microsoft.com/microsoft-365/compliance/use-content-search-for-targeted-collections#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
 
    > [!NOTE]
-   > If you use the **New-ComplianceSearch** cmdlet to search the Recoverable Items folder, be sure to use **Start-ComplianceSearch** cmdlet to run the search.
+   > If you use the **New-ComplianceSearch** cmdlet to search the Recoverable Items folder, be sure to use the **Start-ComplianceSearch** cmdlet to run the search.
 
 4. After you've created a content search and validated that it returns the items that you want to delete, use the `New-ComplianceSearchAction -Purge -PurgeType HardDelete` command (in Security & Compliance Center PowerShell) to permanently delete the items returned by the content search that you created in the previous step. For example, you can run a command similar to the following command:
 
