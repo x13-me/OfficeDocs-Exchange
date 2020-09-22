@@ -42,9 +42,25 @@ For additional management tasks related to managing email client access to a mai
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to enable or disable Outlook on the web
+## Use the new EAC to enable or disable Outlook on the web
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable Outlook on the web. A display pane is shown for the selected user mailbox.
+
+3. Under **Mailbox** settings > **Email apps**, click the **Manage email apps settings** link.
+
+4. In the **Manage settings for email apps** display pane, do one of the following.
+
+   -  To disable Outlook on the web, for the **Outlook on the web** option, when the button is **Enabled**, set to **Disabled**.
+
+   -  To enable Outlook on the web, for the **Outlook on the web** option, when the button is **Disabled**, set to **Enabled**.
+   
+5. Click **Save** to save your change. A message **Email app settings updated successfully** is displayed. Click **Close** to exit.
+
+## Use the Classic EAC to enable or disable Outlook on the web
+
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to enable or disable Outlook on the web for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -79,22 +95,3 @@ Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
-## How do you know this worked?
-
-To verify that you've successfully enabled or disabled Outlook on the web for a user mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Mailbox Features**.
-
-- Under **Email Connectivity**, verify whether Outlook on the web is enabled or disabled.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-CASMailbox <identity>
-  ```
-
-  If Outlook on the web is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook on the web is disabled, the value is `False`.
