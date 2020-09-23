@@ -262,7 +262,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 ### Create a migration endpoint in Microsoft 365 or Office 365
 
-1. Connect to the service using Remote Powershell. See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for more information.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365. The following steps use 'admin123' as an example.
 
@@ -282,7 +282,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 ### Create a migration batch in Microsoft 365 or Office 365
 
-1. Connect to the service using Remote Powershell.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
