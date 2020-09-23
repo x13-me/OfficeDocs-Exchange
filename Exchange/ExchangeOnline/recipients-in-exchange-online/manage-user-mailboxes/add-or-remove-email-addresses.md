@@ -38,10 +38,34 @@ For additional management tasks related to managing recipients, see the "Recipie
 The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
 ## Add an email address to a user mailbox
+### Use the new Exchange Admin Center (EAC) to add an email address
 
-### Use the EAC to add an email address
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+2. In the list of user mailboxes, click the mailbox that you want to add an email address to. A display pane is shown for the selected user mailbox.
+
+3. Under **Mailbox** settings \> **Email addresses**, click the **Manage email address types** link.
+
+4. The **Manage email address types** display pane is shown. You can view all the email addresses associated with this user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold. 
+    > [!NOTE]
+    > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
+
+5. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox. 
+    > [!NOTE]
+    > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
+
+6. Type the new SMTP address in the **Email address:\*** box, and then click **OK**.
+     The new address is displayed in the list of email addresses for the selected mailbox.
+     
+    > [!NOTE]
+    > You can select the **Make this the reply address** check box if you wish to make this address as the reply address.
+
+7. Click **Save** to save the change.
+
+
+### Use the Classic EAC to add an email address
+
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to add an email address to, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -87,31 +111,22 @@ Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northa
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-### How do you know this worked?
-
-To verify that you've successfully added an email address to a mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the new email address is included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-Mailbox <identity> | Format-List EmailAddresses
-  ```
-
-- Verify that the new email address is included in the results.
-
 ## Remove an email address from a user mailbox
+### Use the new EAC to remove an email address
 
-### Use the EAC to remove an email address
+1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+2. In the list of user mailboxes, click the mailbox that you want to remove an email address from. A display pane is shown for the selected user mailbox.
+
+3. Under **Mailbox** settings \> **Email addresses**, click the **Manage email address types** link.
+
+4. In the list of email addresses, select the address you want to remove, and then click the **Remove** icon.
+
+5. Click **Save** to save the change.
+
+### Use the Classic EAC to remove an email address
+
+1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to remove an email address from, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -147,26 +162,6 @@ Because janets@corp.contoso.com was omitted in the previous command, it's remove
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-### How do you know this worked?
-
-To verify that you've successfully removed an email address from a mailbox, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the email address isn't included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell.
-
-  ```PowerShell
-  Get-Mailbox <identity> | Format-List EmailAddresses
-  ```
-
-- Verify that the email address isn't included in the results.
-
 ## Use Exchange Online PowerShell to add email addresses to multiple mailboxes
 
 You can add a new email address to multiple mailboxes at one time by using Exchange Online PowerShell and a comma separated values (CSV) file.
@@ -193,26 +188,6 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 
 > [!NOTE]
 > The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in Exchange Online PowerShell command.
-
-### How do you know this worked?
-
-To verify that you've successfully added an email address to multiple mailboxes, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click a mailbox that you added the address to, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
-
-- On the mailbox properties page, click **Email Address**.
-
-- In the list of email addresses for the mailbox, verify that the new email address is included.
-
-Or
-
-- Run the following command in Exchange Online PowerShell, using the same CSV file that you used to add the new email address.
-
-  ```PowerShell
-  Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | Format-List Name,EmailAddresses}
-  ```
-
-- Verify that the new email address is included in the results for each mailbox.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
