@@ -109,7 +109,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
 
 ## How do I know this worked?
 
-1. Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
+1. Log on to Outlook for a user who is in Exchange On-premises and perform the following public folder tests:
 
    - View the hierarchy.
 
