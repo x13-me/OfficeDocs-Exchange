@@ -39,13 +39,13 @@ For more information see, [groups](https://docs.microsoft.com/microsoft-365/admi
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
-   For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide)
+   For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide).
        
    - In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
             
 3. Click **Close**.
 
-For more information see, [Use groups to collaborate effectively](https://support.microsoft.com/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US)
+For more information see, [Use groups to collaborate effectively](https://support.microsoft.com/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2?WT.mc_id=365AdminCSH&ui=en-US&rs=en-US&ad=US).
       
 ## Edit a group
 
