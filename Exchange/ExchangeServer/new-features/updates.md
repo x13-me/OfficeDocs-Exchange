@@ -27,6 +27,7 @@ Each CU is a full installation of Exchange that includes all updates and changes
 ::: moniker range="exchserver-2019"
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2019 CU7|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
 |Exchange 2019 CU6|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
 |Exchange 2019 CU5|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2019 CU4|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
@@ -40,12 +41,13 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 17 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?id=101448). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 18 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?FamilyID=42086856-b6eb-4c6c-96cd-1c9d33a07d04). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2016 CU18|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
 |Exchange 2016 CU17|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
 |Exchange 2016 CU16|[Released: March 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-March-2020-Quarterly-Exchange-Updates/ba-p/1231563)|
 |Exchange 2016 CU15|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|

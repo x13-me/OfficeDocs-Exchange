@@ -10,10 +10,8 @@ ms.collection: exchange-server
 f1.keywords:
 - NOCSH
 audience: ITPro
-ms.service: exchange-server-it-pro
 ms.reviewer: 
 manager: serdars
-
 ---
 
 # Client Access Rules in Exchange 2019
