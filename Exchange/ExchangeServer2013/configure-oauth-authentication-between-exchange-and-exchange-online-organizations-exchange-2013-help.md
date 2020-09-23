@@ -60,6 +60,14 @@ New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.access
 New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"
 ```
 
+> [!NOTE]
+> If you are in the GCC High or DOD instance then you will need to use the following:
+>
+> ```Powershell  
+> New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/metadata/json/1"  
+> New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"  
+> ```  
+
 ### Step 2: Enable the partner application for your Exchange Online organization
 
 Run the following command in the Exchange PowerShell in your on-premises Exchange organization.
