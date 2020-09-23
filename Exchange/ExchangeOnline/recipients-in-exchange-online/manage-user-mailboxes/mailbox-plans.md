@@ -156,22 +156,6 @@ Set-MailboxPlan -Identity ExchangeOnline -IsDefault
 
 For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan).
 
-### How do you know this worked?
-
-To verify that you've successfully specified the default mailbox plan, use any of the following steps:
-
-- In Exchange Online PowerShell, run the following command to verify the property values:
-
-   ```PowerShell
-   Get-MailboxPlan | Format-Table DisplayName,IsDefault -Auto
-   ```
-
-- Create a new mailbox without assigning a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md). Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following command in Exchange Online PowerShell to verify the **MailboxPlan** property value:
-
-   ```PowerShell
-   Get-Mailbox -Identity <MailboxIdentity> | Format-List MailboxPlan
-   ```
-
 ## Use Exchange Online PowerShell to modify mailbox plans
 
 To modify a mailbox plan, use the following syntax:
@@ -198,32 +182,4 @@ Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $
 
 For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan) and [Set-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-casmailboxplan).
 
-### How do you know this worked?
 
-To verify that you've successfully modified a mailbox plan, use any of the following steps:
-
-- In Exchange Online PowerShell, run the following commands to verify the property values:
-
-   ```PowerShell
-   Get-MailboxPlan | Format-List DisplayName,IsDefault,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
-   ```
-
-   ```PowerShell
-   Get-CasMailboxPlan | Format-List DisplayName,ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
-   ```
-
-- Using the license that corresponds to the modified mailbox plan, do one of the following steps:
-
-   - Create a new mailbox and assign the license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md).
-
-   - Assign the license to an existing mailbox user who currently has a different license (therefore, mailbox plan) assigned.
-
-   Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following commands in Exchange Online PowerShell to verify the property values:
-
-   ```PowerShell
-   Get-Mailbox -Identity "<MailboxIdentity>" | Format-List MailboxPlan,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
-   ```
-
-   ```PowerShell
-   Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
-   ```
