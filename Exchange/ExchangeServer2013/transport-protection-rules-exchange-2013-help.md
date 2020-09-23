@@ -28,7 +28,7 @@ For management tasks related to managing IRM, see [Information Rights Management
 Transport protection rules allow you to use transport rules to IRM-protect messages by applying an [Active Directory Rights Management Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772403(v=ws.11)) (AD RMS) rights policy template.
 
 > [!NOTE]
-> AD&nbsp;RMS is an information protection technology that works with Rights Management Service (RMS)-enabled applications and clients to protect sensitive information online and offline. To use IRM protection in an on-premise Exchange deployment, Exchange 2013 requires an on-premises deployment of AD&nbsp;RMS running on Windows Server 2008 or later.
+> AD&nbsp;RMS is an information protection technology that works with Rights Management Service (RMS)-enabled applications and clients to protect sensitive information online and offline. To use IRM protection in an on-premises Exchange deployment, Exchange 2013 requires an on-premises deployment of AD&nbsp;RMS running on Windows Server 2008 or later.
 
 AD RMS uses XML-based policy templates to allow compatible IRM-enabled applications to apply consistent protection policies. In Windows Server 2008 and later, the AD RMS server exposes a Web service that can be used to enumerate and acquire templates. Exchange 2013 ships with the Do Not Forward template.
 
