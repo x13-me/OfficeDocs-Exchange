@@ -799,6 +799,12 @@
       "source_path": "exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups",
       "redirect_url": "https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "exchange/recipients-in-exchange-online/message-and-recipient-limits",
+      "redirect_url": "https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits",
+      "redirect_document_id": false
     }
+    
   ]
 }
