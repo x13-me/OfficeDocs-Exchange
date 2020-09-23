@@ -48,7 +48,7 @@ For more information about the Exchange Management Shell, see [Exchange Server P
 
    - **Don't check for updates right now**
 
-   ![Exchange Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
+   ![Exchange Setup, Check for Updates page](../../media/exchange-install-checkupdates-no.jpg)
 
 3. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
 
