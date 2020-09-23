@@ -50,7 +50,7 @@ Customers that need advanced control over the use of biometrics should consider 
 
 Android 9.0 and earlier versions utilize Android's device admin functionality to manage device password settings defined in a mobile device mailbox policy.
 
-With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
+With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity using the [getPasswordComplexity](https://developer.android.com/reference/android/app/admin/DevicePolicyManager#getPasswordComplexity()) API. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
 
 |Password complexity level |Password requirements  |
 |---------|---------|
@@ -59,16 +59,16 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 |Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
 |High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
 
-From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
+Android's password complexity levels are mapped to the following Exchange mobile device mailbox policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
 |---------|---------|
 |Password enabled = false     | None        |
 |Allow simple password = true<br/>Min password length < 4      |Low         |
-|Allow simple password = true<br/>Min password length < 6      |Medium         |
-|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
-|Allow simple password = true<br/>Min password length > 6      |High         |
-|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length >= 6      |High         |
+|Alphanumeric password required = false<br/>Min password length >= 4<br/>Min password length < 8      |Medium         |
+|Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
+|Alphanumeric password required = false<br/>Min password length >= 8      |High         |
+|Alphanumeric password required = true<br/>Min password length >= 6      |High         |
 
 ## Mobile device mailbox policy settings
 
