@@ -82,7 +82,7 @@ function Main
 	#Get mailbox list based on email addresses from CSV file
 	$MailBoxList = $MigrationCSV | %{$_.EmailAddress} | Get-Mailbox
 	$Users = @()
-	#Get LegacyDN, Tenant, and On-Premise Email addresses for the users
+	#Get LegacyDN, Tenant, and On-Premises Email addresses for the users
 	foreach($user in $MailBoxList)
 	{
 		$UserInfo = New-Object System.Object
