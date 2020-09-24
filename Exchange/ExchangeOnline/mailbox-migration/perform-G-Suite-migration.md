@@ -76,7 +76,7 @@ Additional migration limitations are described in the following table:
 |Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
 
 > [!TIP]
-> If you will be [starting your migration batch with Exchange Online Powershell](#start-a-g-suite-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch?view=exchange-ps).  
+> If you will be [starting your migration batch with Exchange Online Powershell](#start-a-g-suite-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch).  
 
 ## Create a Google Service Account
 
@@ -262,7 +262,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 ### Create a migration endpoint in Microsoft 365 or Office 365
 
-1. Connect to the service using Remote Powershell. See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for more information.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Find the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365. The following steps use 'admin123' as an example.
 
@@ -282,7 +282,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 ### Create a migration batch in Microsoft 365 or Office 365
 
-1. Connect to the service using Remote Powershell.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
@@ -303,7 +303,7 @@ During completion, another incremental sync is run to copy any changes that have
    ```
 
    > [!TIP]
-   > See [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch?view=exchange-ps) for an explanation of all of the individual parameters you can use with this cmdlet.
+   > See [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) for an explanation of all of the individual parameters you can use with this cmdlet.
 
 4. Start the migration batch.
 

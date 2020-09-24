@@ -92,7 +92,7 @@ To improve overall performance, Client Access Rules use a cache, which means cha
 
 #### Administration
 
-You can only use remote PowerShell to manage Client Access Rules, so you need to be careful about rules that block your access to remote PowerShell. If you create a rule that blocks your access to remote PowerShell, or if you create a rule that blocks all protocols for everyone, you'll lose the ability to fix the rules yourself. You'll need to call Microsoft Customer Service and Support, and they will create a rule that gives you remote PowerShell access from anywhere so you can fix your own rules. Note that it can take up to one hour for this new rule to take effect.
+You can only use PowerShell to manage Client Access Rules, so you need to be careful about rules that block your access to remote PowerShell. If you create a rule that blocks your access to remote PowerShell, or if you create a rule that blocks all protocols for everyone, you'll lose the ability to fix the rules yourself. You'll need to call Microsoft Customer Service and Support, and they will create a rule that gives you remote PowerShell access from anywhere so you can fix your own rules. Note that it can take up to one hour for this new rule to take effect.
 
 As a best practice, create a Client Access Rule with the highest priority to preserve your access to remote PowerShell. For example:
 

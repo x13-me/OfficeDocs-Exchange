@@ -328,7 +328,7 @@ The **custom_data** field for an `AGENTINFO` event is used by a variety of Excha
 
 #### Spam filter agent
 
-A **custom_data** value that starts with `S:SFA` is from the spam filter agent. For more information, see [X-Forefront-Antispam-Report message header fields](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-message-headers?view=o365-worldwide#x-forefront-antispam-report-message-header-fields).
+A **custom_data** value that starts with `S:SFA` is from the spam filter agent. For more information, see [X-Forefront-Antispam-Report message header fields](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-message-headers#x-forefront-antispam-report-message-header-fields).
 
 An example **custom_data** value for a message that's filtered for spam like this:
 
