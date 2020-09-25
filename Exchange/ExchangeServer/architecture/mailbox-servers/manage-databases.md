@@ -65,7 +65,7 @@ For detailed syntax and parameter information, see [Get-MailboxDatabase](https:/
 
 ### Use the Exchange Management Shell to get mailbox database properties
 
-For an example of how to get mailbox database properties, see Example 3 in [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase?view=exchange-ps).
+For an example of how to get mailbox database properties, see Example 3 in [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase).
 
 ### How do you know this worked?
 
