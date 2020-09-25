@@ -27,7 +27,7 @@ To give you an idea of some of the things you can do with PowerShell in Microsof
 
 ## Before you begin
 
-To learn how to use remote PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Display mailbox information with Exchange Online PowerShell
 

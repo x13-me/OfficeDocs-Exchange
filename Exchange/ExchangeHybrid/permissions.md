@@ -28,7 +28,7 @@ Learn more about permissions in Exchange Online and on-premises Exchange at: [Ex
 
 By default, the user that was used to create the Office 365 organization is made a member of the Organization Management role group in the Exchange Online organization. This user can manage the entire Exchange Online organization, including configuration of organization-level settings and management of Exchange Online recipients.
 
-You can add additional administrators in the Exchange Online organization, depending on the management that needs to take place. For example, you can add additional organization administrators and recipient administrators, enable specialist users to perform compliance tasks such as discovery, configure custom permissions, and more. All Exchange Online permissions management for Microsoft 365 and Office 365 administrators must be performed in the Exchange Online organization using either the Exchange admin center (EAC) or remote PowerShell.
+You can add additional administrators in the Exchange Online organization, depending on the management that needs to take place. For example, you can add additional organization administrators and recipient administrators, enable specialist users to perform compliance tasks such as discovery, configure custom permissions, and more. All Exchange Online permissions management for Microsoft 365 and Office 365 administrators must be performed in the Exchange Online organization using either the Exchange admin center (EAC) or Exchange Online PowerShell.
 
 > [!IMPORTANT]
 > There is no transfer of permissions between the on-premises organization and the Microsoft 365 or Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Microsoft 365 or Office 365 organization.
@@ -124,7 +124,7 @@ In addition to configuring your on-premises Exchange servers, you also need to m
 
 As with administrator permissions, end users in Exchange Online can be granted permissions. By default, end users are granted permissions via the default role assignment policy. This policy is applied to every mailbox in the Exchange Online organization. If the permissions granted by default are sufficient, you don't need to change anything.
 
-If you do want to customize end user permissions, you can either modify the existing default role assignment policy, or you can create new assignment policies. If you create multiple assignment policies, you can assign different policies to different groups of mailboxes, enabling you to control permissions granted to each group depending on their requirements. All permissions management for Exchange Online end users must be performed in the Exchange Online organization using either the EAC or remote PowerShell.
+If you do want to customize end user permissions, you can either modify the existing default role assignment policy, or you can create new assignment policies. If you create multiple assignment policies, you can assign different policies to different groups of mailboxes, enabling you to control permissions granted to each group depending on their requirements. All permissions management for Exchange Online end users must be performed in the Exchange Online organization using either the EAC or Exchange Online PowerShell.
 
 Like administrator permissions, end user permissions aren't transferred between the on-premises organization and the Exchange Online organization. Any permissions that you've defined in the on-premises organization must be re-created in the Exchange Online organization.
 
