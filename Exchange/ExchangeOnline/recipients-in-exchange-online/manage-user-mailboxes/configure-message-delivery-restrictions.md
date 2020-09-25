@@ -50,7 +50,7 @@ For additional management tasks related to recipients, see the following topics:
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the new Exchange admin center to configure message delivery restrictions
+## Use the new EAC to configure message delivery restrictions
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -167,7 +167,6 @@ For detailed syntax and parameter information related to configuring delivery re
 
 - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
-
 ## How do you know this worked?
 
 To verify that you've successfully configured message delivery restrictions for a user mailbox using powershell, do one the following:
@@ -176,3 +175,4 @@ Run the following command in Exchange Online PowerShell.
 
 ```PowerShell
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
+```

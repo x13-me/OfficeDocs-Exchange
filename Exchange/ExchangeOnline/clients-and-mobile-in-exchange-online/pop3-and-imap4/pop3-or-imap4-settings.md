@@ -138,7 +138,7 @@ Get-CASMailbox USER01 | format-list *EnableExact*,*UseProtocolDefaults
 
 ## For more information
 
-[Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 [POP3 and IMAP4](pop3-and-imap4.md)
 
