@@ -400,11 +400,11 @@ Once these commands have run, you can proceed to the next step. Note that these 
 
 You can use the following cmdlets to monitor your migration:
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest?view=exchange-ps)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics?view=exchange-ps)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch?view=exchange-ps)
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch)
 
 ## Step 6: Lock down the public folders on the Exchange on-premises server (public folder downtime required)
 
