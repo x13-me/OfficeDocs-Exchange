@@ -105,5 +105,5 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync for a
   ```PowerShell
   Get-CASMailbox <identity>
   ```
-
   If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
+
