@@ -112,4 +112,3 @@ To verify that you've successfully enabled or disabled MAPI for a user mailbox, 
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
 
-  If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.

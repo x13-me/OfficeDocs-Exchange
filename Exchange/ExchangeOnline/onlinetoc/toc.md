@@ -136,6 +136,7 @@
 #### [Enable or disable single item recovery](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery.md)
 #### [Recover deleted messages](../recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages.md)
 #### [Use PowerShell to display mailbox information](../recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information.md)
+### [Create and manage groups](../recipients-in-exchange-online/create-and-manage-groups.md)
 ### [Manage distribution groups](../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 #### [Create group naming policy](../recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy.md)
 #### [Override group naming policy](../recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy.md)

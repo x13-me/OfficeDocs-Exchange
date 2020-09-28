@@ -20,11 +20,83 @@ manager: serdars
 
 # Exchange admin center in Exchange Online
 
-You use the Exchange admin center to manage email settings for your organization.
+You can use the Exchange admin center to manage email settings for your organization.
 
-## Get to the Exchange admin center
+## Get to the new Exchange admin center 
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
+
+2. In the Microsoft 365 admin center, choose **Admin centers** > **Exchange**.
+
+    ![New EAC](media/EAC-selection.PNG)
+
+You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
+
+>[!NOTE]
+> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
+
+## New Exchange admin center features
+
+Here's what the new Exchange admin center looks like.
+
+![New EAC homepage](media/new-EAC-homepage.PNG)
+
+### Home page
+
+You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
+
+1. You can also personalize your dashboard, to do that click **+ Add card** and drag a card to the location you want on the dashboard.
+
+2. Click **What's New?** to learn about the new updates in new Exchange admin center.
+
+3. Click **My account tile** to sign out of the new Exchange admin center and sign in as a different user.
+
+4. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
+
+5. Click ![get help](media/get-help-icon.PNG) , if you need help from Microsoft 365 Support Assistant.
+
+6. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center.
+
+![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
+
+### Feature pane
+
+Here are the features you'll find in the left-hand navigation.
+
+|**Area**|**What you do here**|
+|:-----|:-----|
+|**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
+|**Mail flow**|Manage remote domains and accepted domains, add connectors, trace messages and manage alert and alert policies.|
+|**Migration**|Migrate mailboxes in batches.|
+|**Reports**|View reports on mail flow and migration batches.|
+|**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
+|**More features**|Access features and services from the Classic Exchange admin center.|
+
+### Tabs
+
+The tabs are your second level of navigation. Each of the feature areas contains various tabs, each representing a complete feature.
+
+### Toolbar
+
+When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action.
+
+### List view
+
+When you select a tab, in most cases you'll see a list view. The list view in the new Exchange admin center is designed to remove limitations that existed in the Classic Exchange admin center and Exchange Control Panel.
+
+![New EAC tabs](media/new-EAC-homepage-details-pane.PNG)
+
+### Details pane
+
+When you select an item from the list view, information about that object is displayed in the details pane.
+
+ **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
+
+## Get to the Classic Exchange admin center
+
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Classic Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
@@ -32,14 +104,14 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
     ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
 
-You can also get to the Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
+You can also get to the Classic Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
 
 > [!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
-## Exchange admin center features
+## Classic Exchange admin center features
 
-Here's what the Exchange admin center looks like.
+Here's what the Classic Exchange admin center looks like.
 
 ![Common User Interface Elements of the EAC](media/ITPro_EXO_EAC_EACwCallouts.png)
 
@@ -53,7 +125,7 @@ Here are the features you'll find in the left-hand navigation.
 |**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations.|
 |**Permissions**|Manage administrator roles, user roles, and Outlook on the web (formerly known as Outlook Web App) policies.|
 |**Compliance management**|Manage In-Place eDiscovery & Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.|
-|**Organization**|Manage organization sharing and apps for Outlook|
+|**Organization**|Manage organization sharing and apps for Outlook.|
 |**Protection**|Manage malware filters, connection filters, content filters, outbound spam, and quarantine for your organization.|
 |**Mail flow**|Manage rules, message tracing, accepted domains, remote domains, and connectors.|
 |**Mobile**|Manage the mobile devices that you allow to connect to your organization. You can manage mobile device access and mobile device mailbox policies.|
@@ -66,26 +138,13 @@ The tabs are your second level of navigation. Each of the feature areas contains
 
 ### Toolbar
 
-When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the most common icons and their actions. To display the action associated with an icon, simply hover over the icon.
-
-|**Icon**|**Name**|**Action**|
-|:-----|:-----|:-----|
-|![Add Icon](media/ITPro_EAC_AddIcon.gif)|Add, New|Create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create. <br/> For example, in **Recipients** \> **Groups**, clicking the down arrow displays **Distribution group**, **Security group**, and **Dynamic distribution group** as additional options.|
-|![Edit icon](media/ITPro_EAC_EditIcon.gif)|Edit|Edit an object.|
-|![Delete icon](media/ITPro_EAC_DeleteIcon.gif)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
-|![Search icon](media/ITPro_EAC_.gif)|Search|Open a search box in which you can type the search phrase for an object you want to find.|
-|![Icon: Upgrade distribution group to Microsoft 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to a Microsoft 365 group. This icon can be used only for a distribution group.|
-|![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)|Refresh|Refresh the list view.|
-|![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects. <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
-|![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down. <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|
-|![Copy Icon](media/ITPro_EAC_CopyIcon.gif)|Copy|Copy an object so you can make changes to it without changing the original object. <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
-|![Remove icon](media/ITPro_EAC_RemoveIcon.gif)|Remove|Remove an item from a list. <br/> For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
+When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action.
 
 ### List view
 
-When you select a tab, in most cases you'll see a list view. The list view in Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
+When you select a tab, in most cases you'll see a list view. The list view in the Classic Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
 
-In Exchange Online, the viewable limit from within the Exchange admin center list view is approximately 10,000 objects. In addition, paging is included so you can page to the results. In the **Recipients** list view, you can also configure page size and export the data to a CSV file.
+In Exchange Online, the viewable limit from within the Classic Exchange admin center list view is approximately 10,000 objects. In addition, paging is included so you can page to the results. In the **Recipients** list view, you can also configure page size and export the data to a CSV file.
 
 ### Details pane
 
@@ -95,11 +154,11 @@ When you select an item from the list view, information about that object is dis
 
 ### Centers, Me tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
+The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the Classic Exchange admin center and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
 
 - **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
 
-- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been   disabled.
 
 ## Supported browsers
 
