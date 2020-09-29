@@ -275,7 +275,7 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p>Supervisory Review Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>4</p></td>
-<td><p>n/a</p></td>
+<td><p><strong></strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>Malware Agent</p></td>
