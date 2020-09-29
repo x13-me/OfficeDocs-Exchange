@@ -32,14 +32,14 @@ You can view a list of all the enabled transport agents that have encountered me
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](..//../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
-- You can only use the Shell to perform this procedure.
+- You can only use the Exchange Management Shell to perform this procedure.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit them at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
 
-## Use the Shell to view a list of transport agents in the transport pipeline
+## Use the Exchange Management Shell to view a list of transport agents in the transport pipeline
 
 To use the Shell to view a list of transport agents in the transport pipeline on an Exchange server, run the following command:
 
