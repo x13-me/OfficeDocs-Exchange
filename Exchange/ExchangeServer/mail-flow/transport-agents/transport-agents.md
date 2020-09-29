@@ -48,7 +48,7 @@ The following list explains the requirements for using transport agents in Excha
 
 The transport agent cmdlets need to distinguish between the Transport service and the Front End Transport service. Transport Agent management cmdlets manipulate the configuration file `agents.config` located at `%ExchangeInstallPath%TransportRoles\Shared`.
 
-For more information, see [Manage transport agents](manage-transport-agents.md).
+For more information, see [Manage transport agents in Exchange Server](manage-transport-agents.md).
 
 ## Transport agents and SMTP events
 
@@ -401,6 +401,6 @@ The more interesting built-in transport agents on Edge Transport servers are des
 
 To help you troubleshoot issues with transport agents, you can use the following features:
 
-- **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline.md).
+- **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline in Exchange Server](view-transport-agents-in-the-transport-pipeline.md).
 
 - **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](../../transport-logs/pipeline-tracing/pipeline-tracing.md).
