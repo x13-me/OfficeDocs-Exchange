@@ -30,7 +30,7 @@ You can view a list of all the enabled transport agents that have encountered me
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](../permissions/feature-permissions/mail-flow-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](..//../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - You can only use the Shell to perform this procedure.
 
