@@ -18,31 +18,31 @@ manager: serdars
 
 # Manage transport agents in Exchange Server
 
-Transport agents use SMTP events to operate on messages as the messages move through the transport pipeline. Most of the built-in transport agents that are included with Microsoft Exchange Server 2016 or 2019 are invisible and unmanageable. However, you can install and configure third-party transport agents on Exchange servers in your organization. For more information about transport agents, see [Transport agents](transport-agents.md).
+Transport agents use SMTP events to operate on messages as the messages move through the transport pipeline. Most of the built-in transport agents that are included with Microsoft Exchange Server 2016 or 2019 are invisible and unmanageable. However, you can install and configure third-party transport agents on Exchange servers in your organization. For more information about transport agents, see [Transport agents in Exchange Server](transport-agents.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 10 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](./permissions/feature-permissions/mail-flow-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - You can only use the Shell to perform this procedure.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](./about-documentation/exchange-admin-center-keyboard-shortcuts.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit them at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
 
-## About transport agent procedures in the Front End Transport service on Mailbox servers
+## About transport agent procedures in the Front End Transport service
 
-You can't use the Exchange Management Shell to manage transport agent in the Front End Transport service on Mailbox servers. Instead, you need to open Windows PowerShell, and then import the Exchange cmdlets into the Windows PowerShell session.
+You can't use the Exchange Management Shell to manage transport agent in the Front End Transport service. Instead, you need to open Windows PowerShell, and then import the Exchange cmdlets into the Windows PowerShell session.
 
 > [!WARNING]
-> Running Exchange cmdlets in Windows PowerShell for tasks other than managing transport agents in the Front End Transport service is not supported. There are serious consequences that can result if you bypass the Exchange Management Shell and role-based access control (RBAC) by running Exchange cmdlets in Windows PowerShell. You should always run Exchange cmdlets in the Exchange Management Shell. For more information, see [Release notes for Exchange Server](./release-notes.md).
+> Running Exchange cmdlets in Windows PowerShell for tasks other than managing transport agents in the Front End Transport service is not supported. There are serious consequences that can result if you bypass the Exchange Management Shell and role-based access control (RBAC) by running Exchange cmdlets in Windows PowerShell. You should always run Exchange cmdlets in the Exchange Management Shell. For more information, see [Release notes for Exchange Server](../release-notes.md).
 
 To perform any of the Transport Agent procedures described in this topic in the Front End Transport service, you need to perform the following additional steps:
 
-1. On the Mailbox server, open Windows PowerShell and run the following command:
+1. On the Exchange server, open Windows PowerShell and run the following command:
 
     ```powershell
     Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
@@ -50,7 +50,7 @@ To perform any of the Transport Agent procedures described in this topic in the 
 
 2. Run the command as described, but add the following value to the command: `-TransportService FrontEnd`.
 
-    For example, to view the transport agents in the Front End Transport service on a Mailbox server, run the following command:
+    For example, to view the transport agents in the Front End Transport service, run the following command:
 
     ```powershell
     Get-TransportAgent -TransportService FrontEnd
@@ -70,7 +70,7 @@ Use the following syntax to install a transport agent.
 Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
 ```
 
-This example installs a fictitious transport agent named Contoso Transport Agent in the Transport service on a Mailbox server.
+This example installs a fictitious transport agent named Contoso Transport Agent in the Transport service.
 
 ```powershell
 Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
@@ -88,7 +88,7 @@ Use the following syntax to enable a transport agent.
 Enable-TransportAgent <TransportAgentIdentity>
 ```
 
-This example enables the transport agent named Contoso Transport Agent in the Transport service on a Mailbox server.
+This example enables the transport agent named Contoso Transport Agent in the Transport service.
 
 ```powershell
 Enable-TransportAgent "Contoso Transport Agent"
@@ -106,7 +106,7 @@ Use the following syntax to disable a transport agent:
 Disable-TransportAgent <TransportAgentIdentity>
 ```
 
-This example disables the transport agent named Fabrikam Transport Agent in the Transport service on a Mailbox server.
+This example disables the transport agent named Fabrikam Transport Agent in the Transport service.
 
 ```powershell
 Disable-TransportAgent "Fabrikam Transport Agent"
@@ -146,7 +146,7 @@ To modify the priority of an existing transport agent, run the following command
 Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
 ```
 
-This example sets the priority agent value of 3 for the existing transport agent named Contoso Transport Agent in the Transport service on a Mailbox server.
+This example sets the priority agent value of 3 for the existing transport agent named Contoso Transport Agent in the Transport service.
 
 ```powershell
 Set-TransportAgent "Contoso Transport Agent" -Priority 3
@@ -166,7 +166,7 @@ To uninstall a transport agent, run the following command:
 Uninstall-TransportAgent <TransportAgentIdentity>
 ```
 
-This example uninstalls the transport agent named Fabrikam Transport Agent from the Transport service on a Mailbox server.
+This example uninstalls the transport agent named Fabrikam Transport Agent from the Transport service.
 
 ```powershell
 Uninstall-TransportAgent "Fabrikam Transport Agent"
