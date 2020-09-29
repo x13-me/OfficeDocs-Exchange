@@ -26,7 +26,7 @@ Transport agents let you install custom software that is created by Microsoft, b
 
 - The Transport service on Edge Transport servers
 
-For more information about the transport pipeline, see [Mail flow and the transport pipeline](./mail-flow.md)
+For more information about the transport pipeline, see [Mail flow and the transport pipeline](../mail-flow.md)
 
 Exchange transport provides extensibility through the Microsoft Exchange Server Transport Agents SDK. The Exchange version of the SDK is based on the Microsoft .NET Framework version 4.0 and allows third parties to implement the following predefined classes:
 
@@ -54,7 +54,7 @@ For more information, see [Manage transport agents](manage-transport-agents.md).
 
 Transport agents use SMTP events. These events are triggered as messages move through the transport pipeline. SMTP events give transport agents access to messages at specific points during the SMTP conversation and during routing of messages through the organization.
 
-SMTP Receive exists in the Front End Transport service, the Transport service and the Mailbox Transport Delivery service. The categorizer exists only in the Transport service. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](./mail-routing/mail-routing.md).
+SMTP Receive exists in the Front End Transport service, the Transport service and the Mailbox Transport Delivery service. The categorizer exists only in the Transport service. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](../mail-routing/mail-routing.md).
 
 The following tables list the SMTP events that provide access to messages in the transport pipeline.
 
@@ -395,7 +395,7 @@ The more interesting built-in transport agents on Edge Transport servers are des
 </tbody>
 </table>
 
-\* You can also install and configure these anti-spam agents on Mailbox servers. For more information, see [Enable antispam functionality on Mailbox servers](../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md).
+\* You can also install and configure these anti-spam agents on Mailbox servers. For more information, see [Enable antispam functionality on Mailbox servers](../../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md).
 
 ## Troubleshoot transport agents
 
@@ -403,4 +403,4 @@ To help you troubleshoot issues with transport agents, you can use the following
 
 - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline](view-transport-agents-in-the-transport-pipeline.md).
 
-- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](../transport-logs/pipeline-tracing/pipeline-tracing.md).
+- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](../../transport-logs/pipeline-tracing/pipeline-tracing.md).
