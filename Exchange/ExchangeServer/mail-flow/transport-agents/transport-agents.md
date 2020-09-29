@@ -260,22 +260,52 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p><strong>OnResolvedMessage</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>Malware Agent</p></td>
+<td><p>DLP Policy Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>2</p></td>
-<td><p><strong>OnSubmittedMessage</strong></p></td>
+<td><p><strong></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p>Text Messaging Routing Agent</p></td>
+<td><p>Retention Policy Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>3</p></td>
 <td><p><strong>OnSubmittedMessage</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>Text Messaging Delivery Agent</p></td>
+<td><p>Supervisory Review Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>4</p></td>
 <td><p>n/a</p></td>
+</tr>
+<tr class="odd">
+<td><p>Malware Agent</p></td>
+<td><p>Yes</p></td>
+<td><p>5</p></td>
+<td><p><strong></strong></p></td>
+</tr>
+<tr class="odd">
+<td><p>Text Messaging Routing Agent</p></td>
+<td><p>Yes</p></td>
+<td><p>6</p></td>
+<td><p><strong></strong></p></td>
+</tr>
+<tr class="odd">
+<td><p>Text Messaging Delivery Agent</p></td>
+<td><p>Yes</p></td>
+<td><p>7</p></td>
+<td><p><strong></strong></p></td>
+</tr>
+<tr class="odd">
+<td><p>System Probe Drop Smtp Agent</p></td>
+<td><p>Yes</p></td>
+<td><p>8</p></td>
+<td><p><strong></strong></p></td>
+</tr>
+<tr class="odd">
+<td><p>System Probe Drop Routing Agent</p></td>
+<td><p>Yes</p></td>
+<td><p>9</p></td>
+<td><p><strong></strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>Journal Agent</p></td>
