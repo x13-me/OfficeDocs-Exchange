@@ -26,37 +26,14 @@ Transport agents use SMTP events to operate on messages as the messages move thr
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
-- You can only use the Shell to perform this procedure.
+- You can only use the Exchange Management Shell to perform this procedure.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit them at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
 
-## About transport agent procedures in the Front End Transport service
-
-You can't use the Exchange Management Shell to manage transport agent in the Front End Transport service. Instead, you need to open Windows PowerShell, and then import the Exchange cmdlets into the Windows PowerShell session.
-
-> [!WARNING]
-> Running Exchange cmdlets in Windows PowerShell for tasks other than managing transport agents in the Front End Transport service is not supported. There are serious consequences that can result if you bypass the Exchange Management Shell and role-based access control (RBAC) by running Exchange cmdlets in Windows PowerShell. You should always run Exchange cmdlets in the Exchange Management Shell. For more information, see [Release notes for Exchange Server](../../release-notes.md).
-
-To perform any of the Transport Agent procedures described in this topic in the Front End Transport service, you need to perform the following additional steps:
-
-1. On the Exchange server, open Windows PowerShell and run the following command:
-
-    ```powershell
-    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-    ```
-
-2. Run the command as described, but add the following value to the command: `-TransportService FrontEnd`.
-
-    For example, to view the transport agents in the Front End Transport service, run the following command:
-
-    ```powershell
-    Get-TransportAgent -TransportService FrontEnd
-    ```
-
-## Use the Shell to install a transport agent
+## Use the Exchange Management Shell to install a transport agent
 
 When you install a transport agent, Exchange only registers the DLLs associated with the transport agent. You need to make sure all files, registry keys, and other objects that the transport agent depends on are installed correctly and configured. After Exchange loads the DLLs, it continues to reference the DLLs after the command has completed.
 
@@ -80,7 +57,7 @@ Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "v
 
 To verify that you have successfully installed the transport agent, run the command `Get-TransportAgent` and verify the transport agent is listed.
 
-## Use the Shell to enable a transport agent
+## Use the Exchange Management Shell to enable a transport agent
 
 Use the following syntax to enable a transport agent.
 
@@ -98,7 +75,7 @@ Enable-TransportAgent "Contoso Transport Agent"
 
 To verify that you have successfully enabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and verify the transport agent is enabled.
 
-## Use the Shell to disable a transport agent
+## Use the Exchange Management Shell to disable a transport agent
 
 Use the following syntax to disable a transport agent:
 
@@ -116,7 +93,7 @@ Disable-TransportAgent "Fabrikam Transport Agent"
 
 To verify that you have successfully disabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and verify the transport agent is disabled.
 
-## Use the Shell to view transport agents
+## Use the Exchange Management Shell to view transport agents
 
 To view a summary list of transport agents, run the following command:
 
@@ -136,7 +113,7 @@ This example provides detailed configuration of the transport agent named Transp
 Get-TransportAgent "Transport Rule Agent" | Format-List
 ```
 
-## Use the Shell to configure the priority of a transport agent
+## Use the Exchange Management Shell to configure the priority of a transport agent
 
 Transport agents with a priority closest to 0 process email messages first. However, the SMTP event in the transport pipeline where the transport agent is registered may cause a lower priority agent to act on the message before a higher priority agent.
 
@@ -156,7 +133,7 @@ Set-TransportAgent "Contoso Transport Agent" -Priority 3
 
 To verify that you have successfully configured the priority of a transport agent, run the command `Get-TransportAgent | Format-List Name,Priority` and verify the priority value of the transport agent.
 
-## Use the Shell to uninstall a transport agent
+## Use the Exchange Management Shell to uninstall a transport agent
 
 When the transport agent is uninstalled, Exchange unregisters the DLL files used with the agent. Exchange doesn't remove any files, registry keys, or other objects added by the installation of the transport agent.
 
