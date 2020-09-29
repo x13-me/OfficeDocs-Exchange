@@ -24,11 +24,11 @@ Transport agents use SMTP events to operate on messages as the messages move thr
 
 - Estimated time to complete each procedure: 10 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](../permissions/feature-permissions/mail-flow-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport agents" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - You can only use the Shell to perform this procedure.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit them at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
@@ -38,7 +38,7 @@ Transport agents use SMTP events to operate on messages as the messages move thr
 You can't use the Exchange Management Shell to manage transport agent in the Front End Transport service. Instead, you need to open Windows PowerShell, and then import the Exchange cmdlets into the Windows PowerShell session.
 
 > [!WARNING]
-> Running Exchange cmdlets in Windows PowerShell for tasks other than managing transport agents in the Front End Transport service is not supported. There are serious consequences that can result if you bypass the Exchange Management Shell and role-based access control (RBAC) by running Exchange cmdlets in Windows PowerShell. You should always run Exchange cmdlets in the Exchange Management Shell. For more information, see [Release notes for Exchange Server](../release-notes.md).
+> Running Exchange cmdlets in Windows PowerShell for tasks other than managing transport agents in the Front End Transport service is not supported. There are serious consequences that can result if you bypass the Exchange Management Shell and role-based access control (RBAC) by running Exchange cmdlets in Windows PowerShell. You should always run Exchange cmdlets in the Exchange Management Shell. For more information, see [Release notes for Exchange Server](../../release-notes.md).
 
 To perform any of the Transport Agent procedures described in this topic in the Front End Transport service, you need to perform the following additional steps:
 
