@@ -55,4 +55,4 @@ Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
 
 ## How do you know this worked?
 
-Only transport agents that have encountered messages in the transport pipeline between the time when the transport service was started and the time when the **Get-TransportPipeline** cmdlet was run are displayed by the cmdlet. A transport agent that hasn't encountered a message in the transport pipeline won't appear in the results displayed by the **Get-TransportPipeline** cmdlet, even if that transport agent is enabled.
+Only transport agents that have encountered messages in the transport pipeline between the time when the transport service was started and the time when the **Get-TransportPipeline** cmdlet was run are displayed by the cmdlet. A transport agent that hasn't encountered a message in the transport pipeline won't appear in the results shown by the **Get-TransportPipeline** cmdlet, even if that transport agent is enabled.
