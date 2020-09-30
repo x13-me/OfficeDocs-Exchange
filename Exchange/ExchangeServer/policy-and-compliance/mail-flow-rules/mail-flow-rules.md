@@ -85,7 +85,7 @@ Mail flow rules are applied by a transport agent on Mailbox servers and Edge Tra
 |**Transport Rule agent on Mailbox servers**|The **OnResolvedMessage** categorizer event. <br/> In Exchange 2010, the Transport Rule agent was invoked on the **OnRoutedMessage** categorizer event. The change to **OnResolvedMessage** allowed new rule actions that can change how a message is routed (for example, require TLS).|In Active Directory. Rules are available to all Mailbox servers in the Active Directory forest.|
 |**Edge Rule agent on Edge Transport servers**|The **OnEndOfData** SMTP event|In the local instance of Active Directory Lightweight Directory Services (AD LDS) on the server. Rules are only applied to messages that flow through the local server.|
 
-For more information about transport agents, see [Transport Agents in Exchange Server](../../mail-flow/transport-agents.md).
+For more information about transport agents, see [Transport Agents in Exchange Server](../../mail-flow/transport-agents/transport-agents.md).
 
 ### Differences in processing based on message type
 
