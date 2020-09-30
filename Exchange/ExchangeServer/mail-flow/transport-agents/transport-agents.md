@@ -219,7 +219,7 @@ The following tables list the SMTP events that provide access to messages in the
 
 ## Priority of transport agents
 
-There are two factors that determine the order that transport agents act on messages in the transport pipeline:
+Two factors determine the order that transport agents act on messages in the transport pipeline:
 
 1. The SMTP event where the transport agent is registered, and when that SMTP event encounters messages.
 
