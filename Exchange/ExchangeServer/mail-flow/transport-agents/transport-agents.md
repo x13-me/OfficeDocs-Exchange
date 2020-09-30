@@ -24,6 +24,8 @@ Transport agents let you install custom software that is created by Microsoft, b
 
 - The Transport service on Mailbox servers
 
+- The Mailbox Transport service on Mailbox servers
+
 - The Transport service on Edge Transport servers
 
 For more information about the transport pipeline, see [Mail flow and the transport pipeline](../mail-flow.md)
@@ -40,9 +42,11 @@ When complied against libraries in the SDK, the resulting assemblies are registe
 
 The following list explains the requirements for using transport agents in Exchange.
 
-- The Transport service fully supports all the predefined classes in the SDK.
+- The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK.
 
 - The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third-party agents can't operate on the **OnEndOfData** SMTP event.
+
+- The Mailbox Transport service doesn't support the SDK at all, so you can't use any third-party agents in the Mailbox Transport service.
 
 ## Transport agent management
 
@@ -54,7 +58,7 @@ For more information, see [Manage transport agents in Exchange Server](manage-tr
 
 Transport agents use SMTP events. These events are triggered as messages move through the transport pipeline. SMTP events give transport agents access to messages at specific points during the SMTP conversation and during routing of messages through the organization.
 
-SMTP Receive exists in the Front End Transport service, the Transport service and the Mailbox Transport Delivery service. The categorizer exists only in the Transport service. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](../mail-routing/mail-routing.md).
+SMTP Receive exists in the Front End Transport service on Mailbox servers, the Transport service on Mailbox servers and Edge Transport servers and the Mailbox Transport Delivery service on Mailbox servers. The categorizer exists only in the Transport service on Mailbox servers and Edge Transport servers. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](../mail-routing/mail-routing.md).
 
 The following tables list the SMTP events that provide access to messages in the transport pipeline.
 
