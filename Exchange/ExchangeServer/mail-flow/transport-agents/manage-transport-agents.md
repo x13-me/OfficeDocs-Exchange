@@ -55,7 +55,7 @@ Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "v
 
 ## How do you know this worked?
 
-To verify that you have successfully installed the transport agent, run the command `Get-TransportAgent` and verify the transport agent is listed.
+To verify that you have successfully installed the transport agent, run the command `Get-TransportAgent` and confirm the transport agent is listed.
 
 ## Use the Exchange Management Shell to enable a transport agent
 
@@ -73,7 +73,7 @@ Enable-TransportAgent "Contoso Transport Agent"
 
 ## How do you know this worked?
 
-To verify that you have successfully enabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and verify the transport agent is enabled.
+To verify that you have successfully enabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and confirm the transport agent is enabled.
 
 ## Use the Exchange Management Shell to disable a transport agent
 
@@ -91,7 +91,7 @@ Disable-TransportAgent "Fabrikam Transport Agent"
 
 ## How do you know this worked?
 
-To verify that you have successfully disabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and verify the transport agent is disabled.
+To verify that you have successfully disabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and confirm the transport agent is disabled.
 
 ## Use the Exchange Management Shell to view transport agents
 
@@ -107,7 +107,7 @@ To view the detailed configuration of a specific transport agent, run the follow
 Get-TransportAgent <TransportAgentIdentity> | Format-List
 ```
 
-This example provides detailed configuration of the transport agent named Transport Rule Agent.
+This example provides a detailed configuration of the transport agent named Transport Rule Agent.
 
 ```powershell
 Get-TransportAgent "Transport Rule Agent" | Format-List
@@ -115,7 +115,7 @@ Get-TransportAgent "Transport Rule Agent" | Format-List
 
 ## Use the Exchange Management Shell to configure the priority of a transport agent
 
-Transport agents with a priority closest to 0 process email messages first. However, the SMTP event in the transport pipeline where the transport agent is registered may cause a lower priority agent to act on the message before a higher priority agent.
+Transport agents with a priority closest to 0 process e-mail messages first. However, the SMTP event in the transport pipeline where the transport agent is registered may cause a lower priority agent to act on the message before a higher priority agent.
 
 To modify the priority of an existing transport agent, run the following command:
 
@@ -131,7 +131,7 @@ Set-TransportAgent "Contoso Transport Agent" -Priority 3
 
 ## How do you know this worked?
 
-To verify that you have successfully configured the priority of a transport agent, run the command `Get-TransportAgent | Format-List Name,Priority` and verify the priority value of the transport agent.
+To verify that you have successfully configured the priority of a transport agent, run the command `Get-TransportAgent | Format-List Name,Priority` and confirm the priority value of the transport agent.
 
 ## Use the Exchange Management Shell to uninstall a transport agent
 
