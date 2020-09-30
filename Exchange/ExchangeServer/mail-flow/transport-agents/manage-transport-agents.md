@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn about how to manage transport agents in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: 
+author: dariomws
 ms.author: 
 ms.assetid: 
 ms.reviewer: 
@@ -31,7 +31,7 @@ Transport agents use SMTP events to operate on messages as the messages move thr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Exchange Management Shell to install a transport agent
 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn about transport agents in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: 
+author: dariomws
 ms.author: 
 ms.assetid: 
 ms.reviewer: 
@@ -30,7 +30,7 @@ Transport agents let you install custom software that is created by Microsoft, b
 
 For more information about the transport pipeline, see [Mail flow and the transport pipeline](../mail-flow.md)
 
-Exchange transport provides extensibility through the Microsoft Exchange Server Transport Agents SDK. The Exchange version of the SDK is based on the Microsoft .NET Framework version 4.0 and allows third parties to implement the following predefined classes:
+Exchange transport provides extensibility through the Microsoft Exchange Server Transport Agents SDK. The Exchange version of the SDK allows third parties to implement the following predefined classes:
 
 - **SmtpReceiveAgent**
 
@@ -267,19 +267,19 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p>DLP Policy Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>2</p></td>
-<td><p><strong>OnSubmittedMessage</strong></p></td>
+<td><p><strong>OnResolvedMessage</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>Retention Policy Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>3</p></td>
-<td><p><strong>OnSubmittedMessage</strong></p></td>
+<td><p><strong>OnResolvedMessage</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>Supervisory Review Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>4</p></td>
-<td><p><strong>OnSubmittedMessage</strong></p></td>
+<td><p><strong>OnResolvedMessage</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>Malware Agent</p></td>
@@ -287,7 +287,7 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p>5</p></td>
 <td><p><strong>OnSubmittedMessage</strong></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Text Messaging Routing Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>6</p></td>
@@ -299,7 +299,7 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p>7</p></td>
 <td><p>n/a</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>System Probe Drop Smtp Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>8</p></td>
@@ -309,33 +309,33 @@ The more interesting built-in transport agents on Mailbox servers are described 
 <td><p>System Probe Drop Routing Agent</p></td>
 <td><p>Yes</p></td>
 <td><p>9</p></td>
-<td><p><strong>OnEndOfHeaders</strong></p></td>
+<td><p><strong>OnCategorizedMessage</strong></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Journal Agent</p></td>
 <td><p>No</p></td>
 <td><p>Not configurable</p></td>
 <td><p><strong>OnRoutedMessage</strong></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Journal Report Decryption Agent</p></td>
 <td><p>No</p></td>
 <td><p>Not configurable</p></td>
 <td><p><strong>OnCategorizedMessage</strong></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>RMS Decryption Agent</p></td>
 <td><p>No</p></td>
 <td><p>Not configurable</p></td>
 <td><p><strong>OnSubmittedMessage</strong></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>RMS Encryption Agent</p></td>
 <td><p>No</p></td>
 <td><p>Not configurable</p></td>
 <td><p><strong>OnSubmittedMessage</strong>, <strong>OnRoutedMessage</strong></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>RMS Protocol Decryption Agent</p></td>
 <td><p>No</p></td>
 <td><p>Not configurable</p></td>
