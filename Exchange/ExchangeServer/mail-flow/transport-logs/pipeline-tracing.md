@@ -18,7 +18,7 @@ manager: serdars
 
 # Pipeline tracing
 
-Pipeline tracing captures copies of email messages from a specific sender as they move through the Transport service, the Mailbox Transport Delivery service, and through Edge Transport servers. Pipeline tracing captures verbose information about the changes that each transport agent applies to messages in the transport pipeline in message snapshot files. By examining the contents of the message snapshot files, you can determine whether the transport agents have applied the changes to the messages in the transport pipeline that you expected. If you are troubleshooting a problem, you should determine which transport agent is at fault. Then you can focus your troubleshooting efforts on that agent to resolve the problem. You can then view the message snapshot files again to verify that your solution is successful.
+Pipeline tracing captures copies of email messages from a specific sender as they move through the Transport service on Mailbox servers, the Mailbox Transport Delivery service on Mailbox servers, and through Edge Transport servers. Pipeline tracing captures verbose information about the changes that each transport agent applies to messages in the transport pipeline in message snapshot files. By examining the contents of the message snapshot files, you can determine whether the transport agents have applied the changes to the messages in the transport pipeline that you expected. If you are troubleshooting a problem, you should determine which transport agent is at fault. Then you can focus your troubleshooting efforts on that agent to resolve the problem. You can then view the message snapshot files again to verify that your solution is successful.
 
 > [!WARNING]
 > <UL>
