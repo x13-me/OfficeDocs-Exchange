@@ -111,8 +111,8 @@ You need to configure the following protocols, ports, and connection endpoints i
   > [!NOTE]
   > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
   
-|**Source**|**Protocol/Port**|**Target**|**Comments**|
-|:-----|:-----|:-----|:-----|
+|**Source**|**Protocol/Port**|**Target**|
+|:-----|:-----|:-----|
 |Exchange Online endpoints|TCP/25 (SMTP)|Exchange 2019/2016 Mailbox/Edge <sup>1<sup> <br/><br/> Exchange 2013 CAS/Edge <sup>1<sup> <br/><br/> Exchange 2010 Hub/Edge <sup>1<sup>|
 |Exchange 2019/2016 Mailbox/Edge <sup>2<sup> <br/><br/> Exchange 2013 CAS/Edge <sup>2<sup> <br/><br/> Exchange 2010 Hub/Edge <sup>2<sup>|TCP/25 (SMTP)|Exchange Online endpoints|
 |Exchange Online endpoints|TCP/443 (HTTPS)|Exchange 2019/2016 Mailbox <sup>3<sup> <br/><br/> Exchange 2013/2010 CAS <sup>3<sup>|
