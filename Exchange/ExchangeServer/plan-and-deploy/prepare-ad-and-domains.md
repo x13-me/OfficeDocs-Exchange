@@ -41,9 +41,9 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Verify that your Active Directory meets the requirements for Exchange:
 
-  - **Exchange 2019**: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#network-and-directory-servers).
+  - **Exchange 2019**: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#network-and-directory-servers).
 
-  - **Exchange 2016**: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#network-and-directory-servers).
+  - **Exchange 2016**: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#network-and-directory-servers).
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 
