@@ -25,7 +25,7 @@ title: Configure Exchange Online public folders for a hybrid deployment
 
 In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server on-premises environment. Similarly, Exchange Server users may need to access public folders in Microsoft 365, Office 365, or Exchange Online.
 
-This article describes how to enable users in your Exchange Server on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange Server public folders, see [Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
+This article describes how to enable users in your Exchange Server on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange Server public folders, see [Configure Exchange Server public folders for a hybrid deployment](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders).
 
 > [!NOTE]
 > If you have Exchange 2010 public folders, see [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md).
