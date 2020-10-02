@@ -113,13 +113,13 @@ You need to configure the following protocols, ports, and connection endpoints i
   
 |**Source**|**Protocol/Port**|**Target**|
 |:-----|:-----|:-----|
-|Exchange Online endpoints|TCP/25 (SMTP)|Exchange 2019/2016 Mailbox/Edge <sup>1<sup> <br/><br/> Exchange 2013 CAS/Edge <sup>1<sup> <br/><br/> Exchange 2010 Hub/Edge <sup>1<sup>|
-|Exchange 2019/2016 Mailbox/Edge <sup>2<sup> <br/><br/> Exchange 2013 CAS/Edge <sup>2<sup> <br/><br/> Exchange 2010 Hub/Edge <sup>2<sup>|TCP/25 (SMTP)|Exchange Online endpoints|
-|Exchange Online endpoints|TCP/443 (HTTPS)|Exchange 2019/2016 Mailbox <sup>3<sup> <br/><br/> Exchange 2013/2010 CAS <sup>3<sup>|
-|Exchange 2019/2016 Mailbox <sup>3<sup> <br/><br/> Exchange 2013/2010 CAS <sup>3<sup>|TCP/443 (HTTPS)|Exchange Online endpoints|
-<sup>1<sup> These are the on-premises Exchange Servers configured to host receive connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard.
-<sup>2<sup> These are the on-premises Exchange Servers configured to host send connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard.
-<sup>3<sup> These are the on-premises Exchange Servers used to publish Exchange Web Services and Autodiscover to Internet.
+|Exchange Online endpoints|TCP/25 (SMTP)|Exchange 2019/2016 Mailbox/Edge <sup>1</sup> <br/><br/> Exchange 2013 CAS/Edge <sup>1</sup> <br/><br/> Exchange 2010 Hub/Edge <sup>1</sup>|
+|Exchange 2019/2016 Mailbox/Edge <sup>2</sup> <br/><br/> Exchange 2013 CAS/Edge <sup>2</sup> <br/><br/> Exchange 2010 Hub/Edge <sup>2</sup>|TCP/25 (SMTP)|Exchange Online endpoints|
+|Exchange Online endpoints|TCP/443 (HTTPS)|Exchange 2019/2016 Mailbox <sup>3</sup> <br/><br/> Exchange 2013/2010 CAS <sup>3</sup>|
+|Exchange 2019/2016 Mailbox <sup>3</sup> <br/><br/> Exchange 2013/2010 CAS <sup>3</sup>|TCP/443 (HTTPS)|Exchange Online endpoints|
+<sup>1</sup> These are the on-premises Exchange Servers configured to host receive connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard.
+<sup>2</sup> These are the on-premises Exchange Servers configured to host send connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard.
+<sup>3</sup> These are the on-premises Exchange Servers used to publish Exchange Web Services and Autodiscover to Internet.
   
 The following table provides more detailed information about the involved on-premises endpoints:
 
