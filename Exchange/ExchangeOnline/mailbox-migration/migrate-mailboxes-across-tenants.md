@@ -26,7 +26,7 @@ localization_priority: Priority
 # How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another
 
    > [!NOTE]
-   > At this time, a built-in tenant to tenant migration option is not available.
+   > At this time, we have a Public Preview of the native Cross-tenant mailbox migration located at <https://aka.ms/CrossTenantMailboxMigration>
 
 This article explains how to migrate mailboxes and service settings from one Microsoft 365 or Office 365 organization to another Microsoft 365 or Office 365 organization in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with a [Microsoft solution provider](https://www.microsoft.com/solution-providers/).
 

@@ -107,17 +107,17 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 ## Step 2: Install Exchange Server 2016
 
-1. Read the [system requirements](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) and [Active Directory Schema Prep/Domain Prep](https://docs.microsoft.com/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) information.
+1. Read the [system requirements](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) and [Active Directory Schema Prep/Domain Prep](https://docs.microsoft.com/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016&preserve-view=true) information.
 
 2. Complete the appropriate Schema and Domain Prep instructions.
 
-3. Prepare a server to support the [installation of an Exchange 2016 Mailbox Server](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role?view=exchserver-2016).
+3. Prepare a server to support the [installation of an Exchange 2016 Mailbox Server](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role?view=exchserver-2016&preserve-view=true).
 
-4. [Configure the Accepted Domains](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016#step-2-add-additional-accepted-domains) to match the existing SMTP address domains from the third-party system.
+4. [Configure the Accepted Domains](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016&preserve-view=true#step-2-add-additional-accepted-domains) to match the existing SMTP address domains from the third-party system.
 
 5. Configure a mail routing domain to share the namespace. Typically, a subdomain like domino.contoso.com is a common choice.
 
-6. [Create e-mail address policies](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016#step-3-configure-the-default-email-address-policy) to map the existing naming conventions of the company smtp addresses for primary domains and the mail routing domain.
+6. [Create e-mail address policies](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016&preserve-view=true#step-3-configure-the-default-email-address-policy) to map the existing naming conventions of the company smtp addresses for primary domains and the mail routing domain.
 
 ## Step 3: Execute the Exchange Hybrid Configuration Wizard
 
