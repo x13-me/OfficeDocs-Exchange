@@ -26,7 +26,7 @@ manager: serdars
 
 [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md)
 
-[Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
+[Configure Exchange Server public folders for a hybrid deployment](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders)
 
 [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
 
