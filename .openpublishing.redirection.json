@@ -806,7 +806,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "collaboration-exo/public-folders/set-up-modern-hybrid-public-folders",
+      "source_path": "exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders",
       "redirect_url": "https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders",
       "redirect_document_id": true
     }
