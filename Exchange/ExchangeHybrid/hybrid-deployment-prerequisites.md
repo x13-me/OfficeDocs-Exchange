@@ -48,7 +48,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   - **Exchange 2013**: At least one instance of Mailbox and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
 
-  - **Exchange 2010**: At least instance of Mailbox, Hub Transport, and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
+  - **Exchange 2010**: At least one instance of Mailbox, Hub Transport, and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
 
     Hybrid deployments also support Exchange servers running the Edge Transport server role. Edge Transport servers also need to be updated to the latest CU or RU. We strongly recommend that you deploy Edge Transport servers in a perimeter network. You can't deploy Mailbox or Client Access servers in a perimeter network.
 
