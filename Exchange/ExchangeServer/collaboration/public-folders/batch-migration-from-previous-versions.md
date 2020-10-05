@@ -242,7 +242,7 @@ For detailed syntax and parameter information, see the following topics:
 
    - _Maximum mailbox size in bytes_ equals the maximum size you want to set for the new public folder mailboxes. When specifying this setting, be sure to allow for expansion so the public folder mailbox has room to grow.
 
-   - _Folder to size map path_ equals to the full file path of the .csv file you created when running the `Export-PublicFolderStatistics.ps1` script.
+   - _Folder to size map path_ equals the full file path of the .csv file you created when running the `Export-PublicFolderStatistics.ps1` script.
 
    - _Folder to mailbox map path_ equals the file name and path of the folder-to-mailbox .csv file that you'll create with this step. If you specify only the file name, the file will be generated in the current PowerShell directory on the local computer.
 
