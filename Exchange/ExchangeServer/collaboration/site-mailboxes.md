@@ -33,7 +33,7 @@ For more information about collaboration features in Exchange Server, see [Colla
 >[!NOTE]
 > The site mailboxes are being retired and will be out of service and/or removed.
 
-For more information see, [Retirement of site mailboxes](https://github.com/MicrosoftDocs/OfficeDocs-SharePoint-pr/blob/Benny-54-draft-site-mailboxes/SharePoint/SharePointOnline/deprecation-of-site-mailboxes.md).
+For more information see, [Retirement of site mailboxes](https://docs.microsoft.com/en-us/sharepoint/deprecation-of-site-mailboxes).
 
 ## How do site mailboxes work?
 <a name="howwork"> </a>
