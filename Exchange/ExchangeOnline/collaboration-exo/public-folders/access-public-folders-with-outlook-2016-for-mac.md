@@ -50,6 +50,6 @@ The following articles describe how to deploy public folders in your Exchange or
 
 - [Configure legacy public folders where user mailboxes are on Exchange 2013 servers](https://docs.microsoft.com/exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help)
 
-- [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
+- [Configure Exchange 2013 public folders for a hybrid deployment](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders)
 
 - [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
