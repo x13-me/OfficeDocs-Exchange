@@ -21,7 +21,7 @@ You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled
 
 - Estimated time to complete this task: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions?view=exchserver-2019).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -52,6 +52,6 @@ The following example assigns "Send As" permissions for the mail-enabled public 
 
 For detailed syntax and parameter information, see the following articles:
 
-- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder?view=exchange-ps)
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder)
 
-- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission?view=exchange-ps)
+- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)

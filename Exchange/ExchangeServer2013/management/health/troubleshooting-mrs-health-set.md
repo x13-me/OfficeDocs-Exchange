@@ -227,7 +227,7 @@ Restart-Service msexchangemailboxreplication
 2. In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeServicesAppPool** application pool by running the following command from the Shell:
 
    ```powershell
-   %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeServicesAppPool
+   %SystemRoot%\System32\inetsrv\Appcmd recycle apppool MSExchangeServicesAppPool
    ```
 
 3. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.

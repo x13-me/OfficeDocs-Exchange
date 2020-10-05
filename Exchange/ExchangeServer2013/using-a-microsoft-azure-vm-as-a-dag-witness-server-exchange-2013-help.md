@@ -64,15 +64,15 @@ After you have your Azure subscription, you need to do the following in order:
 
 ## Prerequisites
 
-  - Two datacenters that are capable of supporting an Exchange high availability and site resilience deployment. See [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md) for more information
+- Two datacenters that are capable of supporting an Exchange high availability and site resilience deployment. See [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md) for more information
 
-  - A public IP address that is not behind NAT for the VPN gateways in each site
+- A public IP address that is not behind NAT for the VPN gateways in each site
 
-  - A VPN device in each site that is compatible with Microsoft Azure. See [About VPN devices and IPsec/IKE parameters for Site-to-Site VPN Gateway connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices
+- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN devices and IPsec/IKE parameters for Site-to-Site VPN Gateway connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices
 
-  - Familiarity with DAG concepts and management
+- Familiarity with DAG concepts and management
 
-  - Familiarity with Windows PowerShell
+- Familiarity with Windows PowerShell
 
 ## Phase 1: Prepare the Microsoft Azure virtual network
 
@@ -210,7 +210,7 @@ After the new network configuration settings are imported, the virtual network d
 
 You also will need to get the pre-shared IPsec/IKE keys for each tunnel that was created. You will use these keys along with the Azure gateway IP address to configure your on-premises VPN devices.
 
-You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.0.0).
+You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/).
 
 Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewayke) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 

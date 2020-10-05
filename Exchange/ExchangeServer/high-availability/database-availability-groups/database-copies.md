@@ -62,4 +62,4 @@ Optionally, you can also specify:
 
 - _SeedingPostponed_: This parameter specifies that the task shouldn't automatically seed the database copy on the specified Mailbox server. This option is typically used when you intend to seed a new mailbox database copy by using an existing passive copy of the database (for example, adding a second copy of a specific database to a remote location). When you use this parameter, you must manually seed the database copy using the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/update-mailboxdatabasecopy) cmdlet.
 
-For more information about creating, using, and managing mailbox database copies, see [Managing mailbox database copies](https://docs.microsoft.com/exchange/high-availability/manage-ha/manage-database-copies?view=exchserver-2019)
+For more information about creating, using, and managing mailbox database copies, see [Manage mailbox database copies](../manage-ha/manage-database-copies.md).
