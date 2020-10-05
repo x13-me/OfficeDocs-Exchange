@@ -8,7 +8,7 @@ ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create and manage room mailboxes
+title: Manage resource mailboxes
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,15 +18,50 @@ manager: serdars
 
 ---
 
-# Managing resource mailboxes in Classic Exchange admin center
+# Managing resource mailboxes in new Exchange admin center
+
+Use the new Exchange admin center (EAC) to create, modify, and manage your resources through email/delegation in your Exchange Online organization.
+
+There are two types of resources:
+
+- **Room mailbox** is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests.
+
+- **Equipment mailbox** is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the new Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. 
+
+For more information see, [Recipients in Exchange Online](recipients-in-exchange-online.md).
+
+## Create a resource
+
+1. Login to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Resources**.
+
+     The **Resources** page is displayed.
+
+2. Click **Add a resource** and follow the instructions in the details pane.
+
+   - In **Review resource** tab, under **Review the resource information you have entered**, verify all the details, and then click **Create**.
+
+3. Click **Done**.
+
+## Edit a resource
+
+1. From the list view, select the resource that you want to edit, and click the selected resource name.
+
+2. In the details pane, do the following:
+
+   - Click **Edit address**, to edit the resource address.
+   
+   - Click **Additional information**, to edit audio/display/video details.
+   
+     >[!NOTE]
+     > This is available only for **Room mailbox**.
+     
+   - Click **Manage settings**, to edit the settings for booking policy that defines when the resource can be scheduled.
+
+## Managing resource mailboxes in Classic Exchange admin center
 
 A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
-For info about another type of resource mailbox, check out [Manage equipment mailboxes](manage-equipment-mailboxes.md).
-
 An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the Classic Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
-
-For information about another type of resource mailbox, a room mailbox, see [Create and manage room mailboxes](manage-room-mailboxes.md).
 
 ## What do you need to know before you begin?
 
@@ -50,9 +85,9 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 
 #### Use the Classic Exchange admin center to create a room mailbox
 
-1. In the Classic Exchange admin center, navigate to **Recipients** \> **Resources**.
+1. In the Classic Exchange admin center, navigate to **Recipients** > **Resources**.
 
-2. To create a room mailbox, click **New** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **Room mailbox**.
+2. To create a room mailbox, click **New** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) > **Room mailbox**.
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
@@ -89,7 +124,7 @@ For detailed syntax and parameter information, see [New-Mailbox](https://docs.mi
 
 You can make sure you've created the room mailbox correctly a couple of different ways:
 
-- In the Classic Exchange admin center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
+- In the Classic Exchange admin center, navigate to **Recipients** > **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
 
 - In Exchange Online PowerShell, run the following command to display information about the new room mailbox.
 
@@ -133,7 +168,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 #### Use the Classic Exchange admin center to change room mailbox properties
 
-1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
+1. In the Exchange admin center, navigate to **Recipients** > **Resources**.
 
 2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
 
@@ -199,7 +234,7 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
 
-    For repeating booking requests, the maximum booking duration applies to the length of Exchange admin center instance of the repeating booking request.
+    For repeating booking requests, the maximum booking duration applies to the length of Classic Exchange admin center instance of the repeating booking request.
 
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
 
@@ -297,9 +332,9 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
 ### Use the Classic Exchange admin center to create an equipment mailbox
 
-1. In the Classic Exchange admin center, navigate to **Recipients** \> **Resources**.
+1. In the Classic Exchange admin center, navigate to **Recipients** > **Resources**.
 
-2. To create an equipment mailbox, click **New** \> **Equipment mailbox**. To create a room mailbox, click **New** \> **Room mailbox**.
+2. To create an equipment mailbox, click **New** > **Equipment mailbox**. To create a room mailbox, click **New** > **Room mailbox**.
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
@@ -338,7 +373,7 @@ For detailed syntax and parameter information, see [New-Mailbox](https://docs.mi
 
 To verify that you've successfully created a user mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Resources**. The new user mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Equipment**.
+- In the Classic Exchange admin center, navigate to **Recipients** > **Resources**. The new user mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Equipment**.
 
 - In Exchange Online PowerShell, run the following command to display information about the new equipment mailbox.
 
@@ -348,11 +383,11 @@ To verify that you've successfully created a user mailbox, do one of the followi
 
 ## Change equipment mailbox properties
 
-After you create an equipment mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
+After you create an equipment mailbox, you can make changes and set additional properties by using the Classic Exchange admin center or Exchange Online PowerShell.
 
 ### Use the Classic Exchange admin center to change equipment mailbox properties
 
-1. In the Classic Exchange admin center, navigate to **Recipients** \> **Resources**.
+1. In the Classic Exchange admin center, navigate to **Recipients** > **Resources**.
 
 2. In the list of resource mailboxes, click the equipment mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
 
@@ -372,7 +407,7 @@ Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the account for the equipment mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
 
-- **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the equipment mailbox. Use the **Migration** page in the EAC to move the mailbox to a different database.
+- **Mailbox database**: This read-only box displays the name of the mailbox database that hosts the equipment mailbox. Use the **Migration** page in the Classic Exchange admin center to move the mailbox to a different database.
 
 - **\* Alias**: Use this box to change the alias for the equipment mailbox.
 
@@ -499,7 +534,7 @@ Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'EquipmentMail
 
 To verify that you've successfully changed properties for an equipment mailbox, do the following:
 
-- In the EAC, select the mailbox and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
+- In the Classic Exchange admin center, select the mailbox and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
 
 - In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours, run the following command to verify the new value.
 
