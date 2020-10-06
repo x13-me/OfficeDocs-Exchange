@@ -115,7 +115,7 @@ Get-TransportAgent "Transport Rule Agent" | Format-List
 
 ## Use the Exchange Management Shell to configure the priority of a transport agent
 
-Transport agents with a priority closest to 0 process e-mail messages first. However, the SMTP event in the transport pipeline where the transport agent is registered may cause a lower priority agent to act on the message before a higher priority agent.
+Transport agents with a priority closest to 0 process email messages first. However, the SMTP event in the transport pipeline where the transport agent is registered may cause a lower priority agent to act on the message before a higher priority agent.
 
 To modify the priority of an existing transport agent, run the following command:
 
