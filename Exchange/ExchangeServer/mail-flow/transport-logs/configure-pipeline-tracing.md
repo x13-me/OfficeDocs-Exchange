@@ -24,7 +24,7 @@ Pipeline tracing captures copies of email messages as they move through the tran
 
 - Estimated time to complete this procedure: 15 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - You can only use the Exchange Management Shell to perform this procedure.
 
