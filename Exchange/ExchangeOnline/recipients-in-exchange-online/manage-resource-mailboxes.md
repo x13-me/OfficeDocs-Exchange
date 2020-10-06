@@ -38,9 +38,9 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
 
 2. Click **Add a resource** and follow the instructions in the details pane.
 
-   - In **Review resource** tab, under **Review the resource information you have entered**, verify all the details, and then click **Create**.
+3. In **Review resource** tab, under **Review the resource information you have entered**, verify all the details, and then click **Create**.
 
-3. Click **Done**.
+4. Click **Done**.
 
 ## Edit a resource
 
@@ -67,14 +67,14 @@ An equipment mailbox is a resource mailbox assigned to a resource that's not loc
 
 - Estimated time to complete a room mailbox: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You must be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 > [!IMPORTANT]
-> If you're running Exchange Server in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
+> If you're running Exchange Server in a hybrid scenario, ensure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
 
 - Estimated time to complete an equipment mailbox: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You must be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
