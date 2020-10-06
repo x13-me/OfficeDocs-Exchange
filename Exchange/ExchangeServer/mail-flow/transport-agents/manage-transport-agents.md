@@ -37,7 +37,7 @@ Transport agents use SMTP events to operate on messages as the messages move thr
 
 When you install a transport agent, Exchange only registers the DLLs associated with the transport agent. You need to make sure all files, registry keys, and other objects that the transport agent depends on are installed correctly and configured. After Exchange loads the DLLs, it continues to reference the DLLs after the command has completed.
 
-Transport agents have full access to all e-mail messages that they encounter. Exchange puts no restrictions on a transport agent's behavior. Transport agents that are unstable or contain security flaws may affect the stability and security of Exchange. Therefore, you should only install transport agents that you fully trust and that have been fully tested in a test environment.
+Transport agents have full access to all email messages that they encounter. Exchange puts no restrictions on a transport agent's behavior. Transport agents that are unstable or contain security flaws may affect the stability and security of Exchange. Therefore, you should only install transport agents that you fully trust and that have been fully tested in a test environment.
 
 Transport agents are installed in a disabled state to make sure mail flow isn't affected by transport agents that haven't been configured. Therefore, after a transport agent has been configured correctly, you need to enable the transport agent.
 
