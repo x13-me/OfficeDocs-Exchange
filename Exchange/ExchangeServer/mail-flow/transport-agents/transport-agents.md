@@ -58,7 +58,7 @@ For more information, see [Manage transport agents in Exchange Server](manage-tr
 
 Transport agents use SMTP events. These events are triggered as messages move through the transport pipeline. SMTP events give transport agents access to messages at specific points during the SMTP conversation and during routing of messages through the organization.
 
-SMTP Receive exists in the Front End Transport service on Mailbox servers, the Transport service on Mailbox servers and Edge Transport servers and the Mailbox Transport Delivery service on Mailbox servers. The categorizer exists only in the Transport service on Mailbox servers and Edge Transport servers. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](../mail-routing/mail-routing.md).
+SMTP Receive exists in the Front End Transport service on Mailbox servers, the Transport service on Mailbox servers and Edge Transport servers, and the Mailbox Transport Delivery service on Mailbox servers. The categorizer exists only in the Transport service on Mailbox servers and Edge Transport servers. For more information about transport services and the categorizer, see [Mail routing in Exchange Server](../mail-routing/mail-routing.md).
 
 The following tables list the SMTP events that provide access to messages in the transport pipeline.
 
