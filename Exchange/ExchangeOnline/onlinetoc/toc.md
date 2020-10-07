@@ -194,7 +194,7 @@
 ##### [Migrate your public folders to Microsoft 365 Groups](../collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups.md)
 ##### [Batch migration of Exchange Online public folders](../collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders.md)
 ##### [Set up legacy hybrid public folders](../collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders.md)
-##### [Set up modern hybrid public folders](../collaboration-exo/public-folders/set-up-modern-hybrid-public-folders.md)
+##### [Set up modern hybrid public folders](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders)
 ##### [Set up EXO hybrid public folders](../collaboration-exo/public-folders/set-up-exo-hybrid-public-folders.md)
 ##### [Set up public folders](../collaboration-exo/public-folders/set-up-public-folders.md)
 ##### [Access public folders with Outlook 2016 for Mac](../collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md)

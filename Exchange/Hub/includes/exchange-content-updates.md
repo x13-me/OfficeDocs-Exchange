@@ -181,3 +181,31 @@
 | 9/23/2020 | [Using a Microsoft Azure VM as a DAG witness server: Exchange 2013 Help](/Exchange/using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help) | modified |
 | 9/24/2020 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
 | 9/24/2020 | [Exchange Online](/Exchange/exchange-online) | modified |
+
+
+## Week of September 28, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/30/2020 | [How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another](/Exchange/mailbox-migration/migrate-mailboxes-across-tenants) | modified |
+| 9/30/2020 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 10/1/2020 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 10/2/2020 | [Accessing public folders with Outlook 2016 for Mac](/Exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac) | modified |
+| 10/2/2020 | [Public folder procedures in Microsoft 365, Office 365, and Exchange Online](/Exchange/collaboration-exo/public-folders/public-folder-procedures) | modified |
+| 10/2/2020 | [Configure Exchange Online public folders for a hybrid deployment](/Exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders) | modified |
+| 10/2/2020 | Configure Exchange Server public folders for a hybrid deployment | removed |
+| 10/2/2020 | [Hybrid Configuration wizard options](/Exchange/hybrid-configuration-wizard-options) | modified |
+| 10/2/2020 | [Assign an address book policy to users in Exchange Online](/Exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users) | modified |
+| 10/2/2020 | [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](/Exchange/collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs) | modified |
+| 10/2/2020 | [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes) | modified |
+| 10/2/2020 | [Plan to coexist with a third-party messaging system using Active Directory Domain Services](/Exchange/mailbox-migration/plan-to-coexist-with-third-party-messaging-and-aad-ds) | modified |
+| 10/2/2020 | [Create and manage groups in the new Exchange admin center](/Exchange/recipients-in-exchange-online/create-and-manage-groups) | modified |
+| 10/2/2020 | [MAPI over HTTP in Exchange Server](/Exchange/clients/mapi-over-http/mapi-over-http?view=exchserver-2016) | modified |
+| 10/2/2020 | [MetaCacheDatabase (MCDB) setup](/Exchange/high-availability/database-availability-groups/metacachedatabase-setup?view=exchserver-2019) | modified |
+| 10/2/2020 | [Mailbox database copies](/Exchange/high-availability/database-availability-groups/database-copies?view=exchserver-2016) | modified |
+| 10/2/2020 | [Use unattended mode in Exchange Setup](/Exchange/plan-and-deploy/deploy-new-installations/unattended-installs?view=exchserver-2016) | modified |
+| 10/2/2020 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
+| 10/2/2020 | [Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements](/Exchange/plan-and-deploy/prerequisites?view=exchserver-2016) | modified |
+| 10/2/2020 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
+| 10/2/2020 | [Exchange 2013 system requirements: Exchange 2013 Help](/Exchange/exchange-2013-system-requirements-exchange-2013-help) | modified |

@@ -133,9 +133,9 @@ Outlook supports the following settings for configuration:
 <td>App default</td>
 </tr>
 <tr class="odd">
-<td>Office Feed</td>
+<td>Recommendations feed</td>
 <td>On</td>
-<td>The Office Feed is powered by Microsoft Graph and provides a feed of your organization's Office files connected to the people in your organization. This feature is located in the Recommended section within the Search experience and only shows documents for which the user has access. This functionality is disabled if Delve is disabled for the user.</td>
+<td>The Recommendations feed is powered by Microsoft Graph and provides a feed of your organization's Office files connected to the people in your organization. This feature is located in the Recommended section within the Search experience and only shows documents for which the user has access. Recommendations based on insights from other users in the organization can be controlled through the <a href="https://docs.microsoft.com/graph/api/resources/iteminsights?view=graph-rest-beta">itemInsights</a> setting.</td>
 <td>App default</td>
 </tr>
 <tr class="even">
@@ -362,7 +362,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
-    - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
@@ -423,7 +423,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. This setting is only available in Outlook for iOS.
+    - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
