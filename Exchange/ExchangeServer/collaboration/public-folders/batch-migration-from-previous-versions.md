@@ -445,3 +445,11 @@ If you run into issues with the migration and need to reactivate your Exchange 2
    ```PowerShell
    Set-OrganizationConfig -PublicFolderMigrationComplete $false
    ```
+   
+4. On the Exchange 2016 server, run the following command to remove the public folder mailboxes.
+
+   ```PowerShell
+   Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes <ProxyMailbox1>,<ProxyMailbox2>,...,<ProxyMailboxN>
+   ```
+   
+   For more information about the remote Public Folder mailboxes you must use with this command, see [Configure legacy public folders where user mailboxes are on Exchange 2013 servers](../../../ExchangeServer2013/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md).
