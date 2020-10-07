@@ -350,7 +350,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU15||||X|
 |
 
-**Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016#exchange-2013)
+**Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#exchange-2013)
 
 ## Supported clients
 
