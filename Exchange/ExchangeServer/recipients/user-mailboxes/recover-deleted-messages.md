@@ -53,11 +53,11 @@ The first step in the recovery process is to search for messages in the source m
 
 ### Use the Exchange Management Shell to search for messages
 
-This example returns all of the available recoverable deleted messages with the specified subject in the mailbox laura@contoso.com for the specified date/time range.
-
 ```PowerShell
 Get-RecoverableItems -Identity laura@contoso.com -SubjectContains "FY17 Accounting" -FilterItemType IPM.Note -FilterStartTime "2/1/2018 12:00:00 AM" -FilterEndTime "2/5/2018 11:59:59 PM"
 ```
+
+This example returns all of the available recoverable deleted messages with the specified subject in the mailbox laura@contoso.com for the specified date/time range.
 
 > [!TIP]
 > Use the **Get-RecoverableItems** cmdlet to create a search query to find an Outlook item. Once you have a list of results you can use properties like last modified date, item type, etc. to narrow the amount of items restored or to restore a specific item.
@@ -79,6 +79,10 @@ After messages have been recovered to a discovery mailbox, you can restore them 
 
 ### Use the Exchange Management Shell to restore messages
 
+```PowerShell
+$mailboxes = Import-CSV "C:\My Documents\RestoreMessage.csv"; $mailboxes | foreach {Restore-RecoverableItems -Identity $_.SMTPAddress -SubjectContains Project X" -SourceFolder DeletedItems -FilterItemType IPM.Note}
+```
+
 This example restores the deleted email message "Project X" for the mailboxes that are specified in the comma-separated value (CSV) file C:\\My Documents\\RestoreMessage.csv. The CSV file uses the header value SMTPAddress, and contains the email address of each mailbox on a separate line like this:
 
 SMTPAddress
@@ -92,10 +96,6 @@ laura@contoso.com
 julia@contoso.com
 
 The first command reads the CSV file to the variable named $mailboxes. The second command restores the specified message from the Deleted Items folder in those mailboxes.
-
-```PowerShell
-$mailboxes = Import-CSV "C:\My Documents\RestoreMessage.csv"; $mailboxes | foreach {Restore-RecoverableItems -Identity $_.SMTPAddress -SubjectContains Project X" -SourceFolder DeletedItems -FilterItemType IPM.Note}
-```
 
 For detailed syntax and parameter information, see [Restore-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/restore-recoverableitems?view=exchange-ps).
 
