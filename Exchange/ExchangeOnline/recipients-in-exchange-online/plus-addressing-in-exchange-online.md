@@ -16,13 +16,17 @@ description: You use plus addressing to support dynamic, disposable recipient (n
 
 # Plus Addressing in Exchange Online
 
-In September 2020, support for plus addressing, also known as subaddressing, was added to Exchange Online. Subaddressing is defined as a way to support dynamic, disposable recipient (not sender) email addresses for mailboxes.
+From September 2020, Plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamic, disposable recipient (not sender) email addresses for mailboxes.
 
-An SMTP email address uses the basic syntax:`<local-part>@<domain>`. For example, sean@contoso.com. Plus addressing uses the syntax: `<local-part>+<tag>@<domain>`. For example, sean+newsletter@contoso.com. The original email address must be valid; the `+tag` value that you add is arbitrary, although regular character restrictions for SMTP email addresses apply (for example, no spaces). For more information about using plus addresses, see Using plus addresses section.
+An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For example, sean@contoso.com. 
 
-Plus addressing is already available in Outlook.com. By default, plus addressing support is disabled in Exchange Online, because Exchange has always supported regular email addresses that contain the plus sign. If you already use plus signs in email addresses, and you enable plus addressing, these email address might stop working.
+Plus addressing uses the syntax: `<local-part>+<tag>@<domain>`. For example, sean+newsletter@contoso.com. 
 
-Follow the instructions in this topic to enable plus addressing in Exchange Online. You can’t enable plus addressing in the Exchange admin center (EAC); you can only use Exchange Online PowerShell. If your organization’s emails are routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
+The original email address must be valid; the `+tag` value that you add is arbitrary, although regular character restrictions for SMTP email addresses apply (for example, no spaces). For more information about using plus addresses, see **Using plus addresses**.
+
+Plus addressing is available in [Outlook](https://outlook.live.com/owa/). By default, plus addressing support is disabled in Exchange Online, since Exchange has always supported regular email addresses that contain the plus sign. If you already use plus signs in email addresses, and you enable plus addressing, these email address might stop working.
+
+You can’t enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell. If your organization’s emails are routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
 
 ## Enable plus addressing in your Exchange Online organization
 
@@ -42,8 +46,14 @@ Set-OrganizationConfig -AllowPlusAddressInRecipients $true
 
 ## Using plus addresses
 
-You create new plus addresses simply by thinking up a new tag. You can use plus addresses as unique addresses for services that you sign up for. Note that some web forms don’t support plus signs in email addresses. Also note that some email list subscription services require you to send unsubscribe requests from the email address that you subscribed with. Because you can’t send email messages from plus addresses, you can’t unsubscribe using that method.
+You can create new plus addresses by adding a new tag. You can use plus addresses as unique addresses for services that you sign up for. 
 
-Because plus addresses are not aliases that are configured on the mailbox, they don’t resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the To or CC fields of messages. However, there might be scenarios where you can’t use a plus address for a Microsoft service that needs to be associated with your mailbox.
+>[!NOTE]
+> Some web forms don’t support plus signs in email addresses. For some email list subscription services, if you have subscribed with the email address that uses plus addressing then you need to send unsubscribe requests. As they can’t send email messages to email addresses that use plus addressing.
+
+As plus addresses are not aliases that are configured on the mailbox, they don’t resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can’t use a plus address for a Microsoft service that needs to be associated with your mailbox.
 
 To automatically identify and filter email messages that are sent to plus addresses, use Inbox rules to act on those messages. Using the condition *Recipient address includes*, you can specify an action for messages sent to a particular plus address, such as moving the messages to a folder.
+
+
+
