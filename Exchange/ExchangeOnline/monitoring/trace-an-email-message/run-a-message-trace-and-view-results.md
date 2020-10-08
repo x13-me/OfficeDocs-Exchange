@@ -148,6 +148,8 @@ In the events section, the following fields provide information about the events
   - **DEFER**: The message delivery was postponed and may be re-attempted later.
 
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
+  
+  - **DLP rule**: The message had a DLP rule or sensitivity label that was evaluated for this message.
 
     > [!TIP]
     > Additional events may appear. For more information about these events, see [Event types in the message tracking log](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log).

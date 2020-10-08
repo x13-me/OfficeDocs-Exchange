@@ -105,15 +105,24 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 You need to configure the following protocols, ports, and connection endpoints in the firewall that protects your on-premises organization as described in the following table.
 
-**Notes**:
+  > [!IMPORTANT]
+  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges - Exchange Online](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#exchange-online) and identify the endpoints for each port listed here.
+   
+  > [!NOTE]
+  > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
+  
+|**Source**|**Protocol/Port**|**Target**|**Comments**|
+|:-----|:-----|:-----|:-----|
+|Exchange Online endpoints|TCP/25 (SMTP/TLS)|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 Hub/Edge|On-premises Exchange Servers configured to host receive connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard|
+|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 Hub/Edge|TCP/25 (SMTP/TLS)|Exchange Online endpoints|On-premises Exchange Servers configured to host send connectors for secure mail transport with Exchange Online in the Hybrid Configuration wizard|
+|Exchange Online endpoints|TCP/443 (HTTPS)|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|On-premises Exchange Servers used to publish Exchange Web Services and Autodiscover to Internet|
+|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|TCP/443 (HTTPS)|Exchange Online endpoints|On-premises Exchange Servers used to publish Exchange Web Services and Autodiscover to Internet|
+ 
+The following table provides more detailed information about the involved on-premises endpoints:
 
-- The Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
-
-- The outbound ports required for mail flow and client connectivity in your on-premises Exchange organization are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
-
-|**Description**|**Port**|**On-premises endpoint**|**Authentication Provider**|**Authorization Method**|**Pre-Auth Supported?**|
+|**Description**|**Port and protocol**|**On-premises endpoint**|**Authentication Provider**|**Authorization Method**|**Pre-Auth Supported?**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|SMTP mail flow between Microsoft 365 or Office 365 and on-premises Exchange|TCP 25 (SMTP)|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 Hub/Edge|N/A|Certificate-based|No|
+|SMTP mail flow between Microsoft 365 or Office 365 and on-premises Exchange|TCP 25 (SMTP/TLS)|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 Hub/Edge|N/A|Certificate-based|No|
 |Autodiscover|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox server: /autodiscover/autodiscover.svc/wssecurity<br/><br/> Exchange 2013/2010 CAS: /autodiscover/autodiscover.svc|Azure AD authentication system|WS-Security Authentication|No|
 |Free/busy, MailTips, and message tracking (EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/> /ews/exchange.asmx/wssecurity|Azure AD authentication system|WS-Security Authentication|No|
 |Multi-mailbox search (EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/> /ews/exchange.asmx/wssecurity <br/> /autodiscover/autodiscover.svc/wssecurity <br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
