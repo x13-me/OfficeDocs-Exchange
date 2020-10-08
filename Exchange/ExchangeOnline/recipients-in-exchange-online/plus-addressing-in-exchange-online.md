@@ -34,15 +34,15 @@ You can’t enable plus addressing in the Exchange admin center (EAC); you can o
 
 2. The command uses the following syntax:
 
-```PowerShell
-Set-OrganizationConfig -AllowPlusAddressInRecipients <$true | $false>
-```
+   ```PowerShell
+   Set-OrganizationConfig -AllowPlusAddressInRecipients <$true | $false>
+   ```
 
 3. To enable plus addressing in your organization, run the following command:
 
-```PowerShell
-Set-OrganizationConfig -AllowPlusAddressInRecipients $true
-```
+   ```PowerShell
+   Set-OrganizationConfig -AllowPlusAddressInRecipients $true
+   ```
 
 ## Using plus addresses
 
