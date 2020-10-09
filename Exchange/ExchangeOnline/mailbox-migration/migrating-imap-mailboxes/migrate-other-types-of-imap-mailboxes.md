@@ -179,19 +179,19 @@ In the migration file, each cell in the **UserName** column consists of two comb
 
 If you're migrating email from the IMAP implementation for Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the migration file.
 
-Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P@ssw0rd**. Here's what your migration file would look like:
+Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Exchange](../media/5fbddcd8-1404-46e1-9493-a9b371e90de6.png)
 
 #### Dovecot
 
-Source email systems such as a Dovecot IMAP server that support Simple Authentication and Security Layer (SASL), use the format **User_UserName\*Admin_UserName**. Let's say you're migrating email from a Dovecot IMAP server using the mailbox admin credentials **mailadmin** and **P@ssw0rd**. Here's what your migration file would look like:
+Source email systems such as a Dovecot IMAP server that support Simple Authentication and Security Layer (SASL), use the format **User_UserName\*Admin_UserName**. Let's say you're migrating email from a Dovecot IMAP server using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Dovecot](../media/aae617c6-0a00-4c84-80ca-3f6e3b7cabc4.JPG)
 
 #### Mirapoint
 
-If you're migrating email from Mirapoint Message Server, use the format **#user@domain#Admin_UserName#**. Let's say you're migrating email using the mailbox admin credentials **mailadmin** and **P@ssw0rd**. Here's what your migration file would look like:
+If you're migrating email from Mirapoint Message Server, use the format **#user\@domain#Admin_UserName#**. Let's say you're migrating email using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Mirapoint](../media/1a59d14c-ea5f-4f5d-9bf1-647faef6a153.png)
 
