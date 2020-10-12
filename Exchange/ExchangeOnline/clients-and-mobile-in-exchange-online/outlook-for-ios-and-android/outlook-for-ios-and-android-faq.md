@@ -68,6 +68,10 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
 
 - [Certificate-based authentication on Android](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-android)
 
+### Q: What do I need to consider when my OnPremise Environment is running in a Resoruce Forest Scenario?
+
+You have to make sure the Trust between the Resource Forest and the Account Forest is configured as a two-way Trust.
+
 ### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been canceled.
 
 Background synchronization enables new message notifications, calendar reminders, badge count updates, and background synchronization of mailbox and calendar information for Outlook for iOS and Android.
