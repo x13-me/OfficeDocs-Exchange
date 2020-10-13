@@ -32,7 +32,7 @@ For more information see, [Exchange admin center](https://docs.microsoft.com/exc
 
 ## What's new when upgrading from Exchange Control Panel (ECP) to Exchange admin center (EAC)?
 
-1. **Personalised Dashboard** - Exchange admins can use the dashboard to choose from a wide variety of cards that personalize their experience for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select Add Card (+) to see the new cards.
+1. **Personalised Dashboard** - You can use the dashboard to choose from a wide variety of cards that personalize their experience for ease of use and better productivity. 
 
 2. **Training & Guide** - You can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
