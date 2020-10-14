@@ -81,7 +81,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 
    1. Select the connector that's responsible for receiving inbound mail from the third-party service, device, or on-premises Exchange.
    2. In the connector details fly out that opens, configure one of the following settings:
-     - **Automatically detect and skip the last IP address**: We recommend this option if you have only one message source to skip.
+     - **Automatically detect and skip the last IP address**: We recommend this option if you have to skip only the last message source.
      - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
      - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
 
