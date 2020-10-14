@@ -14,7 +14,7 @@ ms.custom:
 description: Differences between the old admin center (ECP) and the new admin center (EAC).
 ---
 
-# Differences between the old admin center (ECP) and the new admin center (EAC)
+# Differences between the old Exchange admin center (ECP) and the new Exchange admin center (EAC)
 
 The following are the differences between the old admin center (ECP) and the new admin center (EAC).
 
