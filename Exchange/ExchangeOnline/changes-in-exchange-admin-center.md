@@ -46,7 +46,7 @@ For more information see, [Exchange admin center](https://docs.microsoft.com/exc
 
 For more information see, [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
 
-## Related article
+## Related articles
 
 [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide)
 
