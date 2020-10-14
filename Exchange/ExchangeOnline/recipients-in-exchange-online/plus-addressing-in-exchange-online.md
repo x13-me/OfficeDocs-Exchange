@@ -55,5 +55,6 @@ As plus addresses are not aliases that are configured on the mailbox, they donâ€
 
 To automatically identify and filter email messages that are sent to plus addresses, use Inbox rules to act on those messages. Using the condition *Recipient address includes*, you can specify an action for messages sent to a particular plus address, such as moving the messages to a folder.
 
+## Related article
 
-
+[Add or remove email addresses for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses)
