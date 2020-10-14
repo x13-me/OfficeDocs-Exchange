@@ -20,7 +20,7 @@ The following are the differences between the old admin center (ECP) and the new
 
 |**Differences**|**Exchange Control Panel (ECP)**|**Exchange admin center (EAC)**|
 |:-----|:-----|:-----|
-|**User mailbox and Shared mailbox**|They are available as separate tabs, **Mailboxes** and **Shared**.|They are clubbed together under **Mailboxes**. For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)|
+|**User mailbox and Shared mailbox**|They are available as separate tabs, **Mailboxes** and **Shared**.|They are clubbed together under **Mailboxes**. For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 |**Migration**|It is under Recipients.|It is available as a separate tab in the feature pane.|
 |**Cross Tenant Migration**|Not available|New addition to the types of migration and is available under **Migration**.|
 |**Permissions tab**|Available|It is now known as **Roles** tab and is available in the feature pane.|
@@ -40,9 +40,9 @@ For more information see, [Exchange admin center](https://docs.microsoft.com/exc
 
 4. **Insights** - You can use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.
 
-5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information see, [Contact Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide)
+5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information see, [Contact Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide).
 
-6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information see, [Azure Cloud Shell}(https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0)
+6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information see, [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0).
 
 For more information see, [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
 
