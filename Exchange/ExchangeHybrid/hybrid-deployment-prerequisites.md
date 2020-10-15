@@ -131,6 +131,8 @@ The following table provides more detailed information about the involved on-pre
 |AD FS (Windows Server)|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server: /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 |AAD Connect|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server (AD FS): /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 
+For even more detail about this information, see [Deep Dive: How Hybrid Authentication Really Works](https://techcommunity.microsoft.com/t5/exchange-team-blog/deep-dive-how-hybrid-authentication-really-works/ba-p/606780), [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838), [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing), [Configure mail flow using connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow), and [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-for-multiple-locations).
+
 ## Recommended tools and services
 
 The following tools and services are beneficial when you're configuring hybrid deployments with the Hybrid Configuration wizard:
