@@ -209,3 +209,27 @@
 | 10/2/2020 | [Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements](/Exchange/plan-and-deploy/prerequisites?view=exchserver-2016) | modified |
 | 10/2/2020 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
 | 10/2/2020 | [Exchange 2013 system requirements: Exchange 2013 Help](/Exchange/exchange-2013-system-requirements-exchange-2013-help) | modified |
+
+
+## Week of October 05, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/5/2020 | [Troubleshoot a hybrid deployment](/Exchange/hybrid-deployment/troubleshoot-a-hybrid-deployment) | modified |
+| 10/5/2020 | [Disable Basic authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) | modified |
+| 10/5/2020 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
+| 10/5/2020 | [Recipients](/Exchange/recipients/recipients?view=exchserver-2016) | modified |
+| 10/6/2020 | [Site mailboxes](/Exchange/collaboration/site-mailboxes?view=exchserver-2016) | modified |
+| 10/7/2020 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
+| 10/7/2020 | [Run a message trace and view the results in the Exchange admin center](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
+| 10/7/2020 | [Content filtering](/Exchange/antispam-and-antimalware/antispam-protection/content-filtering?view=exchserver-2016) | modified |
+| 10/7/2020 | [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](/Exchange/collaboration/public-folders/batch-migration-from-previous-versions?view=exchserver-2016) | modified |
+| 10/7/2020 | [DSNs and NDRs in Exchange Server](/Exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2016) | modified |
+| 10/7/2020 | [Transport logs in Exchange Server](/Exchange/mail-flow/transport-logs/transport-logs?view=exchserver-2016) | modified |
+| 10/7/2020 | [Information Rights Management in Exchange Server](/Exchange/policy-and-compliance/information-rights-management?view=exchserver-2016) | modified |
+| 10/7/2020 | [Mail flow rules in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules?view=exchserver-2016) | modified |
+| 10/8/2020 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
+| 10/8/2020 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 10/8/2020 | [Recover deleted messages in a user's mailbox in Exchange Server](/Exchange/recipients/user-mailboxes/recover-deleted-messages?view=exchserver-2016) | modified |
+| 10/9/2020 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
