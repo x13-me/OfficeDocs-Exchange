@@ -175,7 +175,7 @@ Outlook for iOS and Android will consume the proxy configuration as defined by t
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
 
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a allow list range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ### Q: Does Outlook for iOS and Android support shared mailboxes?
 
