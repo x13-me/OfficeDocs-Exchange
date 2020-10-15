@@ -55,3 +55,22 @@ For detailed syntax and parameter information, see the following articles:
 - [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder)
 
 - [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)
+
+## Send As mail enabled public folder in Hybrid scenario
+
+For Exchange Online mailboxes accessing public folders deployed at On-Premises:
+
+1) Ensure Mail Enabled Public Folders are synced to Exchange Online 
+Use following EXO PowerShell command to ensure On-Premises mail public folder are synced:
+
+`Get-MailPublicFolder <MEPFName>`
+Example:
+Following example lists MEPF named OnPremPF
+
+`Get-MailPublicFolder OnPremPF`
+
+If the MEPF from On-Premises are not showing in EXO, use the Sync-MailPublicFolders.ps1 (for Exchange Server 2010) or Sync-ModernMailPublicFolders.ps1 (For Exchange 2013/2016/2019) to sync the MEPF's first.
+
+2) Use following command in EXO PowerShell to assign SendAs permission:
+
+`Add-RecipientPermission -Identity 'OnPremPF1' -Trustee "Richard" -AccessRights 'SendAs'`

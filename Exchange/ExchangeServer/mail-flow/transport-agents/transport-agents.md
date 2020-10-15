@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn about transport agents in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: dariomws
-ms.author: 
+ms.author: serdars
 ms.assetid: 
 ms.reviewer: 
 title: Transport agents in Exchange Server
