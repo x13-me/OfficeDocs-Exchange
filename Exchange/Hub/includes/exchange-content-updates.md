@@ -233,3 +233,17 @@
 | 10/8/2020 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
 | 10/8/2020 | [Recover deleted messages in a user's mailbox in Exchange Server](/Exchange/recipients/user-mailboxes/recover-deleted-messages?view=exchserver-2016) | modified |
 | 10/9/2020 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
+
+
+## Week of October 12, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/12/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
+| 10/12/2020 | [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](/Exchange/collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs) | modified |
+| 10/12/2020 | [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) | modified |
+| 10/12/2020 | [Mail flow rules in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules?view=exchserver-2016) | modified |
+| 10/15/2020 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
+| 10/15/2020 | [Use the Microsoft 365 and Office 365 mail migration advisor](/Exchange/mail-migration-jump) | modified |
+| 10/15/2020 | [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes) | modified |
