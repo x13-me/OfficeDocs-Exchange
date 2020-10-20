@@ -458,7 +458,7 @@ For more information about how transport rules inspect message attachments, see 
 <td><p><em>AttachmentIsPasswordProtected</em></p>
 <p><em>ExceptIfAttachmentIsPasswordProtected</em></p></td>
 <td><p>n/a</p></td>
-<td><p>Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents and .zip files.</p></td>
+<td><p>Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .zip files, and .7z files.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 </tbody>
