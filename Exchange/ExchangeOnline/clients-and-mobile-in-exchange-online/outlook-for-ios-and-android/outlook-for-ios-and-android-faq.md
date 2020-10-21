@@ -401,4 +401,4 @@ Microsoft's strategic direction for task management and note taking on mobile de
 
 ### Q: Does Outlook for iOS and Android support moderator message approval or rejection scenarios?
 
-No, Outlook for iOS and Android does not support moderated message requests for approving or rejecting emails. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
+No, Outlook for iOS and Android does not support moderated message requests for approving or rejecting email. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
