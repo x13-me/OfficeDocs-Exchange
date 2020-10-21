@@ -22,15 +22,15 @@ manager: serdars
 
 Use the new Exchange admin center (EAC) to create, modify, and manage your resources through email/delegation in your Exchange Online organization.
 
-There are two types of resources:
+There are two types of resources that admin can manage:
 
 - **Room mailbox** is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests.
 
-- **Equipment mailbox** is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the new Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. 
+- **Equipment mailbox** is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the new EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. 
 
 For more information see, [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
-## Create a resource
+## Create a resource mailbox (room or equipment mailbox) 
 
 1. Login to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Resources**.
 
@@ -44,7 +44,7 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
 
 ## Edit a resource
 
-1. From the list view, select the resource that you want to edit, and click the selected resource name.
+1. From the list view, select the resource that you want to edit, and click the selected resource.
 
 2. In the details pane, do the following:
 
@@ -56,25 +56,39 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
      > This is available only for **Room mailbox**.
      
    - Click **Manage settings**, to edit the settings for booking policy that defines when the resource can be scheduled.
+   
+   - Click **Manage delegates**, to add or remove delegates from the list.
+
+#### Booking Options
+
+Use the **Manage booking options** section to view or change the settings for the booking policy that defines when the room can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
+
+- **Allow repeated meetings**: This setting allows or prevents repeating meetings for the room. By default, this setting is enabled, so repeating meetings are allowed.
+
+- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room. By default, this setting is disabled, so meeting requests are allowed outside the working hours. By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. 
+
+- **Auto-accept meeting request**: This setting automatically accepts the meeting requests. By default, this setting is enabled, so you can set it to 'Off', if you want the delegates to accept the meetings manually.
+
+ - **Automatically decline meetings outside the limits below**: By default, this setting is enabled.
+  
+    - **Booking window (days)**: This setting specifies the maximum number of days in advance that the room can be booked. The default value is 180 days.
+
+    - **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
+
+#### Delegates
+
+In **Manage booking options** section, under **Booking delegates**, add the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
 
 ## Managing resource mailboxes in Classic Exchange admin center
 
-A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients in Exchange Online](recipients-in-exchange-online.md).
-
-An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the Classic Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
-
 ## What do you need to know before you begin?
 
-- Estimated time to complete a room mailbox: 5 minutes.
+- Estimated time to complete a room mailbox: 5 to 10 minutes.
 
 - You must be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 > [!IMPORTANT]
 > If you're running Exchange Server in a hybrid scenario, ensure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
-
-- Estimated time to complete an equipment mailbox: 2 to 5 minutes.
-
-- You must be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
