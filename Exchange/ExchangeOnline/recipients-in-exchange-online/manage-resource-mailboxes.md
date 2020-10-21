@@ -59,7 +59,7 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
    
    - Click **Manage delegates**, to add or remove delegates from the list.
 
-#### Booking Options
+### Booking Options
 
 Use the **Manage booking options** section to view or change the settings for the booking policy that defines when the room can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
 
@@ -75,7 +75,7 @@ Use the **Manage booking options** section to view or change the settings for th
 
     - **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
 
-#### Delegates
+### Delegates
 
 In **Manage booking options** section, under **Booking delegates**, add the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
 
