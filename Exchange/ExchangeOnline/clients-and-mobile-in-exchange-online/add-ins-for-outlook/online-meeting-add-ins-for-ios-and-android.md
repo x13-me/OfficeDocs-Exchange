@@ -20,7 +20,7 @@ manager: serdars
 Setting up an online meeting is a core experience for Outlook users. To meet the needs of an increasing number of remote workers and students, Outlook for iOS and Android has enabled add-ins to provide online meetings from third-party providers such as Zoom, BlueJeans, and Webex (among others). End-users in your organization will be able to use these add-ins to set up online meetings on third-party platforms.
 
 > [!NOTE]
-> Currently this functionality is only available in Outlook for Android. It will be available in Outlook for iOS soon.
+> Both Outlook for iOS and Android support joining meetings from third-party online meeting providers. In addition, Outlook for Android also supports creating meeting requests for third-party online meeting providers.
 
 ## How to enable third-party online meeting integration with Outlook for iOS and Android
 
