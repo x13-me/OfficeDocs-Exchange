@@ -14,25 +14,25 @@ ms.custom:
 description: Differences between the old admin center (ECP) and the new admin center (EAC).
 ---
 
-# Differences between the old Exchange admin center (ECP) and the new Exchange admin center (EAC)
+# Differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (New EAC)
 
 The following are the differences between the old admin center (ECP) and the new admin center (EAC).
 
-|**Differences**|**Exchange Control Panel (ECP)**|**Exchange admin center (EAC)**|
+|**Differences**|**Classic Exchange admin center**|**New Exchange admin center**|
 |:-----|:-----|:-----|
 |**User mailbox and Shared mailbox**|They are available as separate tabs, **Mailboxes** and **Shared**.|They are clubbed together under **Mailboxes**. For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 |**Migration**|It is under Recipients.|It is available as a separate tab in the feature pane.|
 |**Cross Tenant Migration**|Not available|New addition to the types of migration and is available under **Migration**.|
-|**Permissions tab**|Available|It is now known as **Roles** tab and is available in the feature pane.|
-|**Compliance Management and Protection tab**|Available|Not available and are currently a part of **Security & Compliance center**.|
-|**View Alerts and Alert policies**|Not available|New addition and are available under **Mail flow**.|
+|**Permissions tab**|Available|It is now known as **Roles** and is available in the feature pane.|
+|**Compliance Management and Protection tab**|Available|Not available and is now a part of **Security & Compliance center**.|
+|**View Alerts**|Not available|New addition and is available under **Mail flow**.|
 |**Unified Messaging tab**|Available|Deprecated|
 
 For more information see, [Exchange admin center](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## What's new when upgrading from Exchange Control Panel (ECP) to Exchange admin center (EAC)?
+## What's new when upgrading from Classic Exchange admin center (Classic EAC) to Exchange admin center (EAC)?
 
-1. **Personalised Dashboard** - You can use the dashboard to choose from a wide variety of cards that personalize their experience for ease of use and better productivity. 
+1. **Personalised Dashboard** - The admin can now customize the dashboard by choosing from a wide variety of cards using **+ Add Card** option. It allows the admin to quickly view reports that are of more importance to them. 
 
 2. **Training & Guide** - You can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
