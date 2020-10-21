@@ -68,10 +68,6 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
 
 - [Certificate-based authentication on Android](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-android)
 
-### Q: What do I need to consider when my OnPremise Environment is running in a Resoruce Forest Scenario?
-
-You have to make sure the Trust between the Resource Forest and the Account Forest is configured as a two-way Trust.
-
 ### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been canceled.
 
 Background synchronization enables new message notifications, calendar reminders, badge count updates, and background synchronization of mailbox and calendar information for Outlook for iOS and Android.
@@ -179,7 +175,7 @@ Outlook for iOS and Android will consume the proxy configuration as defined by t
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
 
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a allow list range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ### Q: Does Outlook for iOS and Android support shared mailboxes?
 
@@ -405,4 +401,4 @@ Microsoft's strategic direction for task management and note taking on mobile de
 
 ### Q: Does Outlook for iOS and Android support moderator message approval or rejection scenarios?
 
-No, Outlok for iOS and Android does not support moderated message requests for approving or rejecting emails. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
+No, Outlook for iOS and Android does not support moderated message requests for approving or rejecting email. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
