@@ -81,6 +81,10 @@ In **Manage booking options** section, under **Booking delegates**, add the dele
 
 ## Managing resource mailboxes in Classic Exchange admin center
 
+A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. After an administrator creates room mailboxes, users can easily reserve rooms by including room mailboxes in meeting requests. For more details, check out [Recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
+
+An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the Classic Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete a room mailbox: 5 to 10 minutes.
