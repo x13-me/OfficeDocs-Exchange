@@ -55,7 +55,7 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
      >[!NOTE]
      > This is available only for **Room mailbox**.
      
-   - Click **Manage settings**, to edit the settings for booking policy that defines when the resource can be scheduled.
+   - Click **Manage settings** > **Manage booking options**, to edit the settings for booking policy that defines when the resource can be scheduled.
    
    - Click **Manage delegates**, to add or remove delegates from the list.
 
@@ -77,7 +77,10 @@ Use the **Manage booking options** section to view or change the settings for th
 
 ### Booking delegates
 
-In **Manage booking options** section, under **Booking delegates**, add the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
+In **Manage booking options** section, under **Booking delegates**, add/remove the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
+
+> [!Note]
+> You can also provide the delegates the permission types as **Full access**, **Send as** or **Send on behalf**.
 
 ## Managing resource mailboxes in Classic Exchange admin center
 
