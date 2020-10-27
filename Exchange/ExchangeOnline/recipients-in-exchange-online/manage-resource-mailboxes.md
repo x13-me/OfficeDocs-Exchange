@@ -80,7 +80,7 @@ Use the **Manage booking options** section to view or change the settings for th
 In **Manage booking options** section, under **Booking delegates**, add/remove the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
 
 > [!Note]
-> You can also provide the delegates the permission types as **Full access**, **Send as** or **Send on behalf**.
+> For the delegates, you can also select the permission types from the following as **Full access**, **Send as** or **Send on behalf**.
 
 ## Managing resource mailboxes in Classic Exchange admin center
 
