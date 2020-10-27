@@ -359,17 +359,17 @@ The following questions concern end-users in your organization who are using Out
 
 ### Q: My users enabled the "Save Contacts" advanced settings option. However, they are complaining that not all contacts have synchronized on their iOS devices. Are there limitations with synchronization?
 
-The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (e.g., reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts may include:
+The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (e.g., reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
 
 - Outlook for iOS being suspended during sync.
-- Enabling “Save Contacts” simultaneously on multiple devices (such as an iPad and an iPhone).
+- Enabling "Save Contacts" simultaneously on multiple devices (such as an iPad and an iPhone).
 - Accrued sync errors over time.
 
-In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty-four hours and then restart the app to trigger the reconciliation process. If, that does not work, perform the following steps:
+In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty four hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
 
-1. Disable “Save Contacts” for the affected account.
-2. Check that all instances of the contacts are removed from the native iOS contacts app. If duplicates remain, go to Settings > Help & Feedback > Delete All Saved Contacts in order to remove any lingering duplicates.
-3. Re-enable “Save Contacts” for the affected account.
+1. Disable "Save Contacts" for the affected account.
+2. Check that all instances of the contacts are removed from the native iOS contacts app. If duplicates remain, go to Settings \> Help & Feedback \> Delete All Saved Contacts in order to remove any lingering duplicates.
+3. Re-enable "Save Contacts" for the affected account.
 4. Follow the on-screen prompts, which may instruct you to keep the phone open and plugged in during initial sync.
 
 ### Q: Why are the Office mobile apps required to be installed on Android in order to render attachments in Outlook, while iOS devices provide a preview of the attachments within Outlook?
