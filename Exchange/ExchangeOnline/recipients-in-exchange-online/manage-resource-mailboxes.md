@@ -88,7 +88,7 @@ A room mailbox is a resource mailbox that's assigned to a physical location, suc
 
 An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the Classic Exchange admin center and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. 
 
-For more information, see [Recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
+For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 
