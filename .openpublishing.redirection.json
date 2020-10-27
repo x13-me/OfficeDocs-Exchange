@@ -157,7 +157,7 @@
     },
     {
       "source_path": "outlook/mobile/resources.md",
-      "redirect_url": "https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/",
+      "redirect_url": "https://adoption.microsoft.com/outlook-mobile",
       "redirect_document_id": false
     },
     {
@@ -782,7 +782,7 @@
     },
     {
       "source_path": "Outlook/mobile/index.md",
-      "redirect_url": "resources",
+      "redirect_url": "https://adoption.microsoft.com/outlook-mobile",
       "redirect_document_id": false
     },
     {
