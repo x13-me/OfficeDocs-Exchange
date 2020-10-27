@@ -59,23 +59,23 @@ For more information see, [Recipients in Exchange Online](recipients-in-exchange
    
    - Click **Manage delegates**, to add or remove delegates from the list.
 
-### Booking Options
+### Booking options
 
 Use the **Manage booking options** section to view or change the settings for the booking policy that defines when the room can be scheduled, how long it can be reserved, and how far in advance it can be reserved.
 
-- **Allow repeated meetings**: This setting allows or prevents repeating meetings for the room. By default, this setting is enabled, so repeating meetings are allowed.
+- **Allow repeated meetings**: This setting allows or prevents repeated meetings for the room. By default, this setting is enabled, so repeated meetings are allowed.
 
-- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room. By default, this setting is disabled, so meeting requests are allowed outside the working hours. By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. 
+- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't scheduled during the working hours defined for the room. The default working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. By default, this setting is disabled, so meeting requests are allowed outside the working hours.  
 
-- **Auto-accept meeting request**: This setting automatically accepts the meeting requests. By default, this setting is enabled, so you can set it to 'Off', if you want the delegates to accept the meetings manually.
+- **Auto-accept meeting request**: When enabled, this setting allows automatic acceptance of the meeting requests. By default, this setting is enabled. You can set it as **Off**, to allow the delegates to accept the meetings manually.
 
  - **Automatically decline meetings outside the limits below**: By default, this setting is enabled.
   
-    - **Booking window (days)**: This setting specifies the maximum number of days in advance that the room can be booked. The default value is 180 days.
+    - **Booking window (days)**: This setting specifies the maximum number of days in advance that a room can be booked. The default value is 180 days.
 
     - **Maximum duration (hours)**: This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours.
 
-### Delegates
+### Booking delegates
 
 In **Manage booking options** section, under **Booking delegates**, add the delegates for the meeting requests. Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox.
 
