@@ -32,7 +32,7 @@ For more information see, [Exchange admin center](https://docs.microsoft.com/exc
 
 ## What's new when upgrading from Classic Exchange admin center (Classic EAC) to new Exchange admin center (New EAC)?
 
-1. **Personalised Dashboard** - The admin can now customize the dashboard by choosing from a wide variety of cards using **+ Add Card** option. It allows the admin to quickly view reports that are of more importance to them. 
+1. **Personalized Dashboard** - The admin can now customize the dashboard by choosing from a wide variety of cards using **+ Add Card** option. It allows the admin to quickly view reports that are of more importance to them. 
 
 2. **Training & Guide** - You can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
 
