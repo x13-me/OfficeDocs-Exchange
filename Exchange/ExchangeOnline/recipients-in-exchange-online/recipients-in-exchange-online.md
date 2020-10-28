@@ -40,7 +40,7 @@ Although the new EAC has a different look and feel, managing Exchange Online rec
 
 - [Manage mail users](manage-mail-users.md)
 
-- [Managing resource mailboxes](manage-resource-mailboxes.md)
+- [Manage resource mailboxes](manage-resource-mailboxes.md)
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
 
