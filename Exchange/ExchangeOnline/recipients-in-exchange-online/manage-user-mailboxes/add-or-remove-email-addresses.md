@@ -37,6 +37,9 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
+> [!NOTE]
+> You can use similar procedures to add or remove email addresses that use plus addressing. For more information about plus addressing, see [Plus Addressing](../../recipients-in-exchange-online/plus-addressing-in-exchange-online.md).
+
 ## Add an email address to a user mailbox
 ### Use the new Exchange Admin Center (EAC) to add an email address
 
