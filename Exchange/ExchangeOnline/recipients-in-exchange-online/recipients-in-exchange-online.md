@@ -44,4 +44,6 @@ Although the new EAC has a different look and feel, managing Exchange Online rec
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
 
+- [Plus Addressing](plus-addressing-in-exchange-online.md)
+
 To find information about message and recipient limits in Exchange Online, check out the new topic at [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
