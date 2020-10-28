@@ -20,7 +20,7 @@ manager: serdars
 
 # Address book policies in Exchange Online
 
-Address book policies (ABPs) lets admins segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in organizations that require multiple GALs.
+Address book policies (ABPs) let admins segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in organizations that require multiple GALs.
 
 An ABP contains these elements:
 
@@ -34,11 +34,11 @@ An ABP contains these elements:
 
 For procedures involving ABPs, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
- **Notes**:
-
-- ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
-
-- Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
+> [!NOTE]
+> 
+> - ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
+> 
+> - Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 ## How ABPs Work
 
