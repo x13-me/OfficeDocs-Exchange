@@ -467,7 +467,7 @@ You need to check the following items before you can complete your public folder
 
 When you run `Complete-MigrationBatch PublicFolderMigration`, Exchange will perform a final synchronization between your Exchange on-premises organization and Exchange Online. During this period, the status of the migration batch will change from **Synced** to **Completing**, and then finally to **Completed**. If the final synchronization is successful, the public folders in Exchange Online will be unlocked. However, it is strongly recommended that you complete Step 8 and Step 9 of this article before you open up public folders to your users.
 
-It's common for the status of migration batch to remain on **Synced** for a few hours before it switches to **Completing**. For migrations involving a large number of target mailboxes, it's normal to see the status remain in the **Synced** state for more than 24 hours, provided none of the underlying public folder migration requests have failed or were qurantined.
+It's common for the status of migration batch to remain on **Synced** for a few hours before it switches to **Completing**. For migrations involving a large number of target mailboxes, it's normal to see the status remain in the **Synced** state for more than 24 hours, provided none of the underlying public folder migration requests have failed or were quarantined.
 
 ## Step 8: Test and unlock public folders in Exchange Online
 
