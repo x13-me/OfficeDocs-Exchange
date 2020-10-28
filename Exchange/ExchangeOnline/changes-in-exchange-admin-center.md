@@ -40,17 +40,17 @@ For more information see, [Exchange admin center](https://docs.microsoft.com/exc
 
 4. **Insights** - You can use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.
 
-5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information see, [Contact Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide).
+5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information see, [Contact Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&preserve-view=true).
 
-6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information see, [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0).
+6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information see, [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0&preserve-view=true).
 
 For more information see, [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
 
 ## Related articles
 
-[Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide)
+[Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true)
 
-[Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
+[Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide&preserve-view=true)
 
 [About the Microsoft Support and Recovery Assistant](https://support.microsoft.com/office/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f)
 
