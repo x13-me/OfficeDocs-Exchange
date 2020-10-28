@@ -120,6 +120,7 @@
 ### [Message and recipient limits](../recipients-in-exchange-online/message-and-recipient-limits.md)
 ### [Create user mailboxes](../recipients-in-exchange-online/create-user-mailboxes.md)
 ### [Delete or restore mailboxes](../recipients-in-exchange-online/delete-or-restore-mailboxes.md)
+### [Plus Addressing](../recipients-in-exchange-online/plus-addressing-in-exchange-online.md)
 ### [Manage user mailboxes](../recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md)
 #### [Add or remove email addresses](../recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses.md)
 #### [Change deleted item retention](../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)
