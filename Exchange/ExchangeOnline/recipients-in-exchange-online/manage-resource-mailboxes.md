@@ -96,8 +96,8 @@ For more information, see [Recipients in Exchange Online](recipients-in-exchange
 
 - You must be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-> [!IMPORTANT]
-> If you're running Exchange Server in a hybrid scenario, ensure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
+  > [!IMPORTANT]
+  > If you're running Exchange Server in a hybrid scenario, ensure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -116,8 +116,8 @@ For more information, see [Recipients in Exchange Online](recipients-in-exchange
 
    - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Classic Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
 
-    > [!TIP]
-    > Although there are other fields that describe the details of the room, for example, Location and Capacity, consider summarizing the most important details in the room name using a consistent naming convention. Why? So users can easily see the details when they select the room from the address book in the meeting request.
+     > [!TIP]
+     > Although there are other fields that describe the details of the room, for example, Location and Capacity, consider summarizing the most important details in the room name using a consistent naming convention. Why? So users can easily see the details when they select the room from the address book in the meeting request.
 
    - **\* Email address**: A room mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
 
@@ -363,8 +363,8 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
    - **\* Equipment name**: Use this box to type a name for the equipment mailbox. This is the name that's listed in the resource mailbox list in the Classic Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
 
-   > [!TIP]
-   > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
+     > [!TIP]
+     > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
 
    - **\* Email address**: An equipment mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
 
