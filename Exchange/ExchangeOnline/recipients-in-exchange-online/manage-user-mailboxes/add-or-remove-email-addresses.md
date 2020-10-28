@@ -171,7 +171,7 @@ You can add a new email address to multiple mailboxes at one time by using Excha
 
 This example imports data from C:\Users\Administrator\Desktop\AddEmailAddress.csv, which has the following format.
 
-```PowerShell
+```console
 Mailbox,NewEmailAddress
 Dan Jump,danj@northamerica.contoso.com
 David Pelton,davidp@northamerica.contoso.com
