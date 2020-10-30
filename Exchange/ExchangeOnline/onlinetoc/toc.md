@@ -4,6 +4,7 @@
 # [Exchange Online](../exchange-online.md)
 ## [Exchange admin center](../exchange-admin-center.md)
 ## [What's new in Exchange admin center](../whats-new.md)
+## [Classic and New EAC differences](../changes-in-exchange-admin-center.md)
 ## [Permissions](../permissions-exo/permissions-exo.md)
 ### [Feature permissions](../permissions-exo/feature-permissions.md)
 ### [Role groups](../permissions-exo/role-groups.md)
