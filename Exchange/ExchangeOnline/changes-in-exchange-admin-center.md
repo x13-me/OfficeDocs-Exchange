@@ -20,13 +20,14 @@ The following are the differences between the Classic Exchange admin center (Cla
 
 |**Differences**|**Classic Exchange admin center**|**New Exchange admin center**|
 |:-----|:-----|:-----|
-|**User mailbox and Shared mailbox**|They are available as separate tabs, **Mailboxes** and **Shared**.|They are clubbed together under **Mailboxes**. For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|**User mailbox and Shared mailbox**|They are available as separate tabs, **Mailboxes** and **Shared**.|They are clubbed together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|**Compliance Management tab**|Available|Not available and is now a part of [**Microsoft 365 compliance center**](https://df.compliance.microsoft.com/homepage).|
+|**Protection tab**|Available|Not available and is now a part of [**Office 365 Security & Compliance**](https://df.protection.office.com/homepage).|
+|**Unified Messaging tab**|Available|Exchange Online Unified Messaging will be retiring in February 2021. |
 |**Migration**|It is under Recipients.|It is available as a separate tab in the feature pane.|
 |**Cross Tenant Migration**|Not available|New addition to the types of migration and is available under **Migration**.|
 |**Permissions tab**|Available|It is now known as **Roles** and is available in the feature pane.|
-|**Compliance Management and Protection tab**|Available|Not available and is now a part of **Security & Compliance center**.|
 |**View Alerts**|Not available|New addition and is available under **Mail flow**.|
-|**Unified Messaging tab**|Available|Deprecated|
 
 For more information see, [Exchange admin center](https://docs.microsoft.com/exchange/exchange-admin-center).
 
