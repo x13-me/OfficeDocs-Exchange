@@ -2,6 +2,26 @@
 
 
 
+## Week of October 26, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/26/2020 | [Certificate requirements for hybrid deployments](/Exchange/certificate-requirements) | modified |
+| 10/26/2020 | [Perform a G Suite migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 10/26/2020 | [Mailbox plans in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans) | modified |
+| 10/26/2020 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+| 10/27/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
+| 10/27/2020 | [Using Outlook for iOS and Android in the Government Community Cloud](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud) | modified |
+| 10/28/2020 | [Run a message trace and view the results in the Exchange admin center](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
+| 10/28/2020 | [Batch migrate Exchange Server public folders to Microsoft 365 or Office 365](/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2016) | modified |
+| 10/29/2020 | [Address book policies in Exchange Online](/Exchange/address-books/address-book-policies/address-book-policies) | modified |
+| 10/29/2020 | Manage equipment mailboxes | removed |
+| 10/29/2020 | Create and manage room mailboxes | removed |
+| 10/29/2020 | [Add or remove email addresses for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
+| 10/29/2020 | [Recipients in Exchange Online](/Exchange/recipients-in-exchange-online/recipients-in-exchange-online) | modified |
+
+
 ## Week of October 19, 2020
 
 
@@ -84,65 +104,3 @@
 | 10/2/2020 | [Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements](/Exchange/plan-and-deploy/prerequisites?view=exchserver-2016) | modified |
 | 10/2/2020 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
 | 10/2/2020 | [Exchange 2013 system requirements: Exchange 2013 Help](/Exchange/exchange-2013-system-requirements-exchange-2013-help) | modified |
-
-
-## Week of September 21, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/22/2020 | [Configure Exchange Online public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-exo-hybrid-public-folders) | modified |
-| 9/22/2020 | [Mobile device mailbox policies in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies) | modified |
-| 9/22/2020 | [Managing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android) | modified |
-| 9/22/2020 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
-| 9/22/2020 | [Add or remove email addresses for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
-| 9/22/2020 | [Enable or disable MAPI for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi) | modified |
-| 9/22/2020 | [Enable or disable Outlook on the web for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) | modified |
-| 9/22/2020 | [Manage user mailboxes](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) | modified |
-| 9/22/2020 | [Recipients in Exchange Online](/Exchange/recipients-in-exchange-online/recipients-in-exchange-online) | modified |
-| 9/22/2020 | [Message tracking](/Exchange/mail-flow/transport-logs/message-tracking?view=exchserver-2016) | modified |
-| 9/22/2020 | [Configure OAuth authentication between Exchange and Exchange Online](/Exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) | modified |
-| 9/23/2020 | [Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment](/Exchange/hybrid-deployment/create-cloud-based-archive) | modified |
-| 9/23/2020 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
-| 9/23/2020 | [Offline address books in Exchange Online](/Exchange/address-books/offline-address-books/offline-address-books) | modified |
-| 9/23/2020 | [Install or remove add-ins for Outlook for your Exchange Online organization](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins) | modified |
-| 9/23/2020 | [Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) | modified |
-| 9/23/2020 | [Disable Basic authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) | modified |
-| 9/23/2020 | [Set POP3 or IMAP4 settings for a user](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-or-imap4-settings) | modified |
-| 9/23/2020 | [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](/Exchange/collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs) | modified |
-| 9/23/2020 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 9/23/2020 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 9/23/2020 | [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes) | modified |
-| 9/23/2020 | [Perform a G Suite migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 9/23/2020 | [Monitoring, reporting, and message tracing in Exchange Online](/Exchange/monitoring/monitoring) | modified |
-| 9/23/2020 | [Message trace in the modern EAC](/Exchange/monitoring/trace-an-email-message/message-trace-modern-eac) | modified |
-| 9/23/2020 | [Permissions in Exchange Online](/Exchange/permissions-exo/permissions-exo) | modified |
-| 9/23/2020 | [Delete or restore user mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) | modified |
-| 9/23/2020 | [Change the branding of Clutter notifications](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-clutter-notification-branding) | modified |
-| 9/23/2020 | [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) | modified |
-| 9/23/2020 | [Configure message delivery restrictions for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions) | modified |
-| 9/23/2020 | [Enable or disable Exchange ActiveSync for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync) | modified |
-| 9/23/2020 | [Mailbox plans in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans) | modified |
-| 9/23/2020 | [Use Exchange Online PowerShell to display mailbox information](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information) | modified |
-| 9/23/2020 | [Enable or disable journaling of voice mail and missed call notifications](/Exchange/security-and-compliance/journaling/disable-enable-voicemail-missed-call-notifications) | modified |
-| 9/23/2020 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
-| 9/23/2020 | [Clean up or delete items from the Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/clean-up-deleted-items) | modified |
-| 9/23/2020 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
-| 9/23/2020 | [Digital certificates and encryption in Exchange Server](/Exchange/architecture/client-access/certificates?view=exchserver-2016) | modified |
-| 9/23/2020 | [Manage mailbox databases in Exchange Server](/Exchange/architecture/mailbox-servers/manage-databases?view=exchserver-2016) | modified |
-| 9/23/2020 | [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](/Exchange/collaboration/public-folders/batch-migration-to-microsoft-365-groups?view=exchserver-2016) | modified |
-| 9/23/2020 | [Limits for public folders](/Exchange/collaboration/public-folders/limits?view=exchserver-2016) | modified |
-| 9/23/2020 | [Batch migrate Exchange Server public folders to Microsoft 365 or Office 365](/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2016) | modified |
-| 9/23/2020 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 9/23/2020 | [Exchange infrastructure and PowerShell permissions](/Exchange/permissions/feature-permissions/infrastructure-permissions?view=exchserver-2016) | modified |
-| 9/23/2020 | [Configure OAuth authentication between Exchange and Exchange Online](/Exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) | modified |
-| 9/23/2020 | [Connect to a server in Queue Viewer: Exchange 2013 Help](/Exchange/connect-to-a-server-in-queue-viewer-exchange-2013-help) | modified |
-| 9/23/2020 | [Enable PIN-less sign-Ins for voice mail: Exchange 2013 Help](/Exchange/enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help) | modified |
-| 9/23/2020 | [Export and import retention tags: Exchange 2013 Help](/Exchange/export-and-import-retention-tags-exchange-2013-help) | modified |
-| 9/23/2020 | [Load balancing: Exchange 2013 Help](/Exchange/load-balancing-exchange-2013-help) | modified |
-| 9/23/2020 | [Troubleshooting MRS Health Set](/Exchange/management/health/troubleshooting-mrs-health-set) | modified |
-| 9/23/2020 | [Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups](/Exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help) | modified |
-| 9/23/2020 | [Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups](/Exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help) | modified |
-| 9/23/2020 | [Using a Microsoft Azure VM as a DAG witness server: Exchange 2013 Help](/Exchange/using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help) | modified |
-| 9/24/2020 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
-| 9/24/2020 | [Exchange Online](/Exchange/exchange-online) | modified |
