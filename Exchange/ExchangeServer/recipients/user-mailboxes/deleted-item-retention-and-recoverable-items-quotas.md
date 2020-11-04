@@ -103,7 +103,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 > [!NOTE]
 > You can't use the EAC to configure deleted item retention for a mailbox database.
 
-This example configures a deleted item retention period of 10 days for the mailbox database MDB2 and the setting to retain deleted item until the mailbox database has been backed up.
+This example configures a deleted item retention period of 10 days for the mailbox database MDB2 and the setting to retain deleted items until the mailbox database has been backed up.
 
 ```PowerShell
 Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10 -RetainDeletedItemsUntilBackup $true
