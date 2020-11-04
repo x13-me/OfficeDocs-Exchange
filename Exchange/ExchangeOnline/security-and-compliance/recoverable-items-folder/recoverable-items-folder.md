@@ -185,3 +185,7 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Mi
   - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
   - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
+  
+- If you need to change the default deleted item retention period for Exchange Online, read the following article:
+
+  - [Change how long permanently deleted items are kept for an Exchange Online mailbox](../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)
