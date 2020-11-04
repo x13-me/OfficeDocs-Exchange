@@ -188,4 +188,4 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Mi
   
 - If you need to change the default deleted item retention period for Exchange Online, read the following article:
 
-  - [Change how long permanently deleted items are kept for an Exchange Online mailbox](../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)
+  - [Change how long permanently deleted items are kept for an Exchange Online mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)
