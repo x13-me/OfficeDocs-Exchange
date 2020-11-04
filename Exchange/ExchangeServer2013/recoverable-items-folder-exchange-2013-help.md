@@ -97,7 +97,11 @@ Permanently deleted items are moved to the Deletions subfolder of the Recoverabl
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see Recoverable Items Mailbox Quotas later in this topic.
 
-After the deleted item retention period elapses, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant processes the mailbox, items in the Purges subfolder are purged from the mailbox database and can't be recovered.
+When the deleted item retention period expires, the item is completely removed from Exchange Online.
+
+_Don't permanently delete items until the database is backed up_ setting plays an important role here too. If this setting is not enabled (default), only the deleted item retention period is considered to remove items from the Deletions subfolder. If this setting is enabled and the deleted item retention period is reached, items are not deleted until after the mailbox database on which the mailbox is located has been backed up.
+
+For more information about these settings and how to modify them, see [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md).
 
 ## Single item recovery
 
