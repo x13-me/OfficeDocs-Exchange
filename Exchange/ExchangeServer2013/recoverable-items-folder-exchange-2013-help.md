@@ -154,7 +154,7 @@ In Exchange 2013, single item recovery isn't enabled by default for new mailboxe
 
 In Exchange 2013 and Exchange Online, discovery managers can use In-Place eDiscovery with delegated [Discovery Management](discovery-management-exchange-2013-help.md) permissions to perform eDiscovery searches of mailbox content. Exchange 2013 and Exchange Online also introduced In-Place Hold, which you can use to preserve mailbox items that match query parameters and protect the items from deletion by users or automated processes. You can also use Litigation Hold to preserve all items in user mailboxes and protect the items from deletion by users or automated processes.
 
-Placing a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder Assistant from automatically purging messages from the DiscoveryHolds and Purges subfolders. Additionally, copy-on-write page protection is also enabled for the mailbox. Copy-on-write page protection creates a copy of the original item before any modifications are written to the Exchange store. After mailbox is removed from hold, the Managed Folder Assistant resumes automated purging.
+Placing a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder Assistant from automatically purging messages from the DiscoveryHolds, Deletions and Purges subfolders. Additionally, copy-on-write page protection is also enabled for the mailbox. Copy-on-write page protection creates a copy of the original item before any modifications are written to the Exchange store. After mailbox is removed from hold, the Managed Folder Assistant resumes automated purging.
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if Litigation Hold is enabled.
 
