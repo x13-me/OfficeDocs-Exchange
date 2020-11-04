@@ -101,7 +101,9 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
-After the deleted item retention period expires, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant processes the mailbox, items in the Purges subfolder are purged from the mailbox database.
+When the deleted item retention period expires, the item is completely removed from Exchange Online if the mailbox was not put on In-Place Hold or Litigation Hold.
+
+_Don't permanently delete items until the database is backed up_ setting plays an important role here too. If this setting is not enabled (default), only the deleted item retention period is considered to remove items from the Deletions subfolder. If this setting is enabled and the deleted item retention period is reached, items are not deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 ### Single item recovery
 <a name="SIR"> </a>
@@ -209,3 +211,7 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
   - [Restore deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
   - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
+  
+- If you need to change the default deleted item retention period, recoverable items quotas, and the _Don't permanently delete items until the database is backed up_ setting for Exchange Server, read the following article:
+
+  - [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md)
