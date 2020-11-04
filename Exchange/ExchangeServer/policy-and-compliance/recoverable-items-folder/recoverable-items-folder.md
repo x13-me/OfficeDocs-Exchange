@@ -212,6 +212,6 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
 
   - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
   
-- If you need to change the default deleted item retention period, recoverable items quotas, and the _Don't permanently delete items until the database is backed up_ setting for Exchange Server, read the following article:
+- If you need to change the default deleted item retention period, recoverable items quotas, or the _Don't permanently delete items until the database is backed up_ setting for Exchange Server, read the following article:
 
   - [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md)
