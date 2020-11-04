@@ -98,7 +98,7 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
-After the deleted item retention period expires, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant (MFA) processes the mailbox, items in the Purges subfolder are purged from Exchange Online.
+When the deleted item retention period expires, the item is completely removed from Exchange Online if the mailbox was not put on In-Place Hold or Litigation Hold.
 
 ### Single item recovery
 
