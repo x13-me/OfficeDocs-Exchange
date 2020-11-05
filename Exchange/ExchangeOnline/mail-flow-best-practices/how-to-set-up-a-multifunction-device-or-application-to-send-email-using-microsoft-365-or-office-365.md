@@ -292,7 +292,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 6. In the new Exchange admin center, go to **Mail flow** \> **Connectors**. The **Connectors** page is depicted in the image below.
 
-:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="":::
+:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="A page on which existing connectors can be viewed and new ones can be created":::
  
 7. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
 
