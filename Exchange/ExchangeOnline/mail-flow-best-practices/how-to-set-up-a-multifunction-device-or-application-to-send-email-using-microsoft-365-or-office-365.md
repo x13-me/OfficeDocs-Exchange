@@ -285,11 +285,18 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 4. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
 
-5. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the Exchange admin center.
+5. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the new Exchange admin center.
 
-6. In the Exchange admin center, go to **Mail flow** \> **Connectors**.
+> [!NOTE]
+> On clicking **Exchange**, the new Exchange admin center is launched. If you want to navigate to the Classic Exchange admin center, click **Classic Exchange admin center** on the left pane of the new Exchange admin center home page.
 
+6. In the new Exchange admin center, go to **Mail flow** \> **Connectors**. The **Connectors** page is depicted in the image below.
+
+:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="":::
+ 
 7. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
+
+#### To create a connector on Classic Exchange admin center
 
    1. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
@@ -301,6 +308,17 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    3. Leave all the other fields with their default values, and select **Save**.
 
+#### To create a connector on New Exchange admin center
+
+   1. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
+   
+   2. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
+   
+   3. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+   
+   4. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
+   
+   
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
 9. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
