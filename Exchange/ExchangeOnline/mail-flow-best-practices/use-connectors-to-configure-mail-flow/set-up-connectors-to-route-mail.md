@@ -137,7 +137,7 @@ If there is no connector listed from your organization's mail server to Microsof
  
 2. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
    
-   :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="":::
+   :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
 3. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
 
