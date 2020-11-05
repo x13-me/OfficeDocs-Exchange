@@ -41,7 +41,7 @@ For more information see, [Manage user mailboxes](https://docs.microsoft.com/exc
 
  - In Classic EAC, it is available. 
  
- ![Compliance Management tab](media/compliance-management-tab.png)
+   ![Compliance Management tab](media/compliance-management-tab.png)
  
  - In new EAC, it is not available and is now a part of [**Microsoft 365 compliance center**](https://df.compliance.microsoft.com/homepage).
  
@@ -49,7 +49,7 @@ For more information see, [Manage user mailboxes](https://docs.microsoft.com/exc
 
  - In Classic EAC, it is available. 
  
- ![Compliance Management tab](media/compliance-management-tab.png)
+   ![Compliance Management tab](media/compliance-management-tab.png)
  
  - In new EAC, it is not available and is now a part of [**Office 365 Security & Compliance**](https://df.protection.office.com/homepage).
 
