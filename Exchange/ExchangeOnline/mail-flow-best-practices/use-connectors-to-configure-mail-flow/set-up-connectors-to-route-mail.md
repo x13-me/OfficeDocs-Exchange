@@ -123,15 +123,21 @@ Make sure you have completed the following in Microsoft 365 or Office 365:
 
 ### 2. Set up a connector from Microsoft 365 or Office 365 to your email server
 
-- **From the New Exchange admin center**
+Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. 
 
-Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
-
-You can see the listed connectors in the screen depicted in the below image.
+In **New Exchange admin center**, you can see the listed connectors in the screen depicted in the below image.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
 
+In **Classic Exchange admin center**, you can see the listed connectors in the screen depicted in the below image.
+
+:::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="":::
+
+If the connectors are already listed, you don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
+
 If there is no connector listed from your organization's mail server to Microsoft 365 or Office 365, create one.
+
+- **From the New Exchange admin center**
 
 1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
  
@@ -146,6 +152,9 @@ If there is no connector listed from your organization's mail server to Microsof
 5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
+
+#### From the Classic Exchange admin center
+
 
 ![Microsoft 365 or Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
@@ -168,7 +177,7 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 ### 1. Set up a connector from your email server to Microsoft 365 or Office 365
 
 To create a connector in Microsoft 365 or Office 365, click **Admin**, click **Exchange**, and then to go to the Exchange admin center. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
-
+5
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
 ![Choose from your organization's email server to Microsoft 365 or Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
