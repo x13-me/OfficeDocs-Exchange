@@ -24,11 +24,63 @@ The following are the differences between the Classic Exchange admin center (Cla
 |**Compliance Management tab**|Available ![Compliance Management tab](media/compliance-management-tab.png)|Not available and is now a part of [**Microsoft 365 compliance center**](https://df.compliance.microsoft.com/homepage).|
 |**Protection tab**|Available ![Protection tab](media/protection-tab.png)|Not available and is now a part of [**Office 365 Security & Compliance**](https://df.protection.office.com/homepage).|
 |**Unified Messaging tab**|Available|Exchange Online Unified Messaging as retired since February 2020. |
-|**Migration**|It is under Recipients.|It is available as a separate tab in the feature pane.|
+|**Migration**|It is under **Recipients.**|It is available as a separate tab in the feature pane.|
 |**Cross Tenant Migration**|Not available|New addition to the types of migration and is available under **Migration**.|
 |**Permissions tab**|Available|It is now known as **Roles** and is available in the feature pane.|
 |**View Alerts**|Not available|New addition and is available under **Mail flow**.|
 
+**User mailbox and Shared mailbox**
+
+ - In Classic EAC, they are available as separate tabs, **Mailboxes** and **Shared**. ![Classic EAC mailbox tab](media/classic-eac.png)
+ 
+ - In new EAC, they are merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes](media/um-sm.png)
+
+For more information see, [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+ 
+**Compliance Management tab**
+
+ - In Classic EAC, it is available. 
+ ![Compliance Management tab](media/compliance-management-tab.png)
+ 
+ - In new EAC, it is not available and is now a part of [**Microsoft 365 compliance center**](https://df.compliance.microsoft.com/homepage).
+ 
+**Protection tab**
+
+ - In Classic EAC, it is available. 
+ ![Compliance Management tab](media/compliance-management-tab.png)
+ 
+ - In new EAC, it is not available and is now a part of [**Office 365 Security & Compliance**](https://df.protection.office.com/homepage).
+
+**Unified Messaging tab**
+
+ - In Classic EAC, it is available.
+ 
+ - In new EAC, Exchange Online Unified Messaging as retired since February 2020.
+ 
+**Migration**
+
+- In Classic EAC, it is under **Recipients**.
+
+- In new EAC, it is available as a separate tab in the feature pane.
+
+**Cross Tenant Migration**
+
+- In Classic EAC, it is not available.
+
+- In new EAC, it is a new addition to the types of migration and is available under **Migration**.
+
+**Permissions tab**
+
+ - In Classic EAC, it is available.
+ 
+ - In new EAC, it is now known as **Roles** and is available in the feature pane.
+ 
+**View Alerts**
+
+ - In Classic EAC, it is not available.
+ 
+ - In new EAC, it is a new addition and is available under **Mail flow**.
+ 
 For more information see, [Exchange admin center](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 ## What's new when upgrading from Classic Exchange admin center (Classic EAC) to new Exchange admin center (New EAC)?
