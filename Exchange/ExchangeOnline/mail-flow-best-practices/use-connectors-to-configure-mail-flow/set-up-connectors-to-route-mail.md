@@ -131,7 +131,7 @@ In **New Exchange admin center**, you can see the listed connectors in the scree
 
 In **Classic Exchange admin center**, you can see the listed connectors in the screen depicted in the below image.
 
-:::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="":::
+:::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="The page that lists connectors already set up":::
 
 If the connectors are already listed, you don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
 
