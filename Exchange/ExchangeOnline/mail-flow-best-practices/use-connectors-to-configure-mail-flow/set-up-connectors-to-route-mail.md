@@ -129,7 +129,7 @@ Before you set up a new connector, check any connectors that are already listed 
 
 You can see the listed connectors in the screen depicted in the below image.
 
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="":::
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
 
 If there is no connector listed from your organization's mail server to Microsoft 365 or Office 365, create one.
 
@@ -137,7 +137,7 @@ If there is no connector listed from your organization's mail server to Microsof
  
 2. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
    
-   :::image type="content" source="../media/add-connector-new-eac.png" alt-text="":::
+   :::image type="content" source="../media/add-connector-new-eac.png" alt-text="A page on which new connectors can be added and existing connectors can be viewed":::
 
 3. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
 
