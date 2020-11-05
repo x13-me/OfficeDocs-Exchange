@@ -123,13 +123,27 @@ Make sure you have completed the following in Microsoft 365 or Office 365:
 
 ### 2. Set up a connector from Microsoft 365 or Office 365 to your email server
 
-To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the Exchange admin center. Next, click **mail flow**, and click **connectors**.
-
-If any connectors already exist for your organization, you can see them listed here.
-
-![Microsoft 365 or Office 365 example connectors to and from email server](../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png)
+- **From the New Exchange admin center**
 
 Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
+
+You can see the listed connectors in the screen depicted in the below image.
+
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="":::
+
+If there is no connector listed from your organization's mail server to Microsoft 365 or Office 365, create one.
+
+1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
+ 
+2. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
+   
+   :::image type="content" source="../media/add-connector-new-eac.png" alt-text="":::
+
+3. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
+
+4. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+
+5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
