@@ -141,15 +141,19 @@ If there is no connector listed from your organization's mail server to Microsof
 
 1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
  
-2. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
+2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
    
    :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
-3. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
+3. Select the **Office 365** radio button under **Connection from**, and select the **Your organization's email server** under **Connection to**, as shown in the following image.
 
-4. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+:::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="":::
 
-5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
+4. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
+
+5. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+
+6. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
@@ -176,8 +180,21 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 
 ### 1. Set up a connector from your email server to Microsoft 365 or Office 365
 
-To create a connector in Microsoft 365 or Office 365, click **Admin**, click **Exchange**, and then to go to the Exchange admin center. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
-5
+#### From New Exchange admin center
+
+1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
+ 
+2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
+   
+   :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
+
+3. Select the **Your organization's email server** radio button under **Connection from**, as shown in the following image.
+
+> [!NOTE]
+> Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
+
+#### From Classic Exchange admin center
+
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
 ![Choose from your organization's email server to Microsoft 365 or Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
