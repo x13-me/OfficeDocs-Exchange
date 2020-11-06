@@ -144,13 +144,13 @@ Mobile device mailbox policies can be created in the Exchange admin center (EAC)
 
 1. In the EAC, go to **mobile** \> **mobile device mailbox policies**.
 
-2. Click **Add** ![Edit icon](../../mediaITPro_EAC_AddIcon.png) to create a new policy, **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to modify an existing policy, or **Delete** ![Edit icon](../../media/ITPro_EAC_DeleteIcon.png) to remove a policy.
+2. Click **Add** ![Add icon](../../mediaITPro_EAC_AddIcon.png) to create a new policy, **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to modify an existing policy, or **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png) to remove a policy.
 
 3. Depending on the option selected, you will have the following options:
 
    - **Add**:
    
-     ![New mobile device mailbox policy](../../mediaITPro_EAC_AddIcon.png)
+     ![New mobile device mailbox policy](../../EAC-new-mobile-device-mailbox-policies.png)
    
    - **Edit**:
    
