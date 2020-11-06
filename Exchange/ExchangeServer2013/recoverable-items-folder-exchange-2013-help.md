@@ -99,7 +99,7 @@ Items remain in the Deletions subfolder until the deleted item retention period 
 
 When the deleted item retention period expires, the item is completely removed from Exchange 2013.
 
-_Don't permanently delete items until the database is backed up_ setting can affect this bevahior. If this setting is not enabled (default), only the deleted item retention period is considered to remove items from the Deletions subfolder. If this setting is enabled and the deleted item retention period is reached, items are not deleted until after the mailbox database on which the mailbox is located has been backed up.
+The _Don't permanently delete items until the database is backed up_ setting can affect this behavior. If this setting is not enabled (default), only the deleted item retention period is considered to remove items from the Deletions subfolder. If this setting is enabled and the deleted item retention period is reached, items are not deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 For more information about these settings and how to modify them, see [Configure Deleted Item retention and Recoverable Items quotas](configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md).
 
@@ -326,4 +326,3 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
 
   - [Recover deleted items or email in Outlook Web App](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4)
   
-
