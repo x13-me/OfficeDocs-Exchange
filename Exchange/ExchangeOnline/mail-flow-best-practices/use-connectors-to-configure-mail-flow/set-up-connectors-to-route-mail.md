@@ -147,7 +147,7 @@ If there is no connector listed from your organization's mail server to Microsof
 
 3. Select the **Office 365** radio button under **Connection from**, and select the **Your organization's email server** under **Connection to**, as shown in the following image.
 
-:::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="":::
+:::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
 4. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
 
