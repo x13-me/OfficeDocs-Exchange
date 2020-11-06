@@ -182,7 +182,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 **To create a migration endpoint**:
 
-1. Go to the Exchange admin center.
+1. Go to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Migration** > **Batch**.
 
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
