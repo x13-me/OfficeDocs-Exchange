@@ -125,7 +125,7 @@ Make sure you have completed the following in Microsoft 365 or Office 365:
 
 Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. 
 
-In **New Exchange admin center**, you can see the listed connectors in the screen depicted in the below image.
+In **New Exchange admin center**, you can see the listed connectors in the screen shown in the below image.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
 
@@ -182,9 +182,14 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 
 #### From New Exchange admin center
 
-1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
+1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**.
+
+> [!NOTE]
+> If any connectors already exist for your organization, it is listed on the screen that is displayed on clicking **Connectors**. See the image below.
+
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="":::
  
-2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
+2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
    :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
@@ -192,6 +197,8 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
+
+4. Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
 
 #### From Classic Exchange admin center
 
