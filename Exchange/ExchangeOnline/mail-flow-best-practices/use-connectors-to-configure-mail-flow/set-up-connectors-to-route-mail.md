@@ -187,7 +187,7 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 > [!NOTE]
 > If any connectors already exist for your organization, it is listed on the screen that is displayed on clicking **Connectors**. See the image below.
 
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="":::
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
