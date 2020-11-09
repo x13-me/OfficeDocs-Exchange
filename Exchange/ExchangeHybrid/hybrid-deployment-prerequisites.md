@@ -52,6 +52,9 @@ The following prerequisites are required for configuring a hybrid deployment:
 
     Hybrid deployments also support Exchange servers running the Edge Transport server role. Edge Transport servers also need to be updated to the latest CU or RU. We strongly recommend that you deploy Edge Transport servers in a perimeter network. You can't deploy Mailbox or Client Access servers in a perimeter network.
 
+> [!NOTE]
+  > If you already started a migration process with Exchange 2010 Hybrid endpoints and do not plan to keep on-premises mailboxes, continue your migration as-is. If you plan to keep some mailboxes on-premises, we strongly recommend that you introduce Exchange 2016 Hybrid endpoints (because Exchange 2010 has reached its end of support lifecycle). Continue your migration of Exchange 2010 mailboxes to Office 365, and then move the mailboxes that will stay on-premises to Exchange 2016 servers. After you have removed all of your Exchange 2010 servers, you can then introduce Exchange 2019 servers as your new Hybrid endpoints and also move your remaining on-premises mailboxes to Exchange 2019 servers.
+ 
 - **Microsoft 365 or Office 365**: Hybrid deployments are supported in all Microsoft 365 and Office 365 plans that support Azure Active Directory synchronization. All Microsoft 365 Business Standard, Business Basic, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Microsoft 365 Apps for business and Home plans don't support hybrid deployments.
 
   Learn more at [Microsoft 365](https://www.microsoft.com/microsoft-365).
