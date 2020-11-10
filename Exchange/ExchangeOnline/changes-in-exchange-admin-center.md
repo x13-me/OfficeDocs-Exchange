@@ -1,5 +1,5 @@
 ---
-title: "Differences between the old admin center (ECP) to the new admin center (EAC)"
+title: "Differences between the Classic admin center (Classic EAC) to the new admin center (new EAC)"
 ms.author: v-bshilpa
 author: Benny-54
 manager: Serdars
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 ms.collection:
 ms.custom:
-description: Differences between the old admin center (ECP) and the new admin center (EAC).
+description: Differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (new EAC).
 ---
 
-# Differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (New EAC)
+# Differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (new EAC)
 
-The following are the differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (New EAC).
+The following are the differences between the Classic Exchange admin center (Classic EAC) and the new Exchange admin center (new EAC).
 
 **User mailbox and Shared mailbox**
 
@@ -74,7 +74,7 @@ For more information see, [Manage user mailboxes](https://docs.microsoft.com/exc
  
 For more information see, [Exchange admin center](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## What's new when upgrading from Classic Exchange admin center (Classic EAC) to new Exchange admin center (New EAC)?
+## What's new when upgrading from Classic Exchange admin center (Classic EAC) to new Exchange admin center (new EAC)?
 
 1. **Personalized Dashboard** - The admin can now customize the dashboard by choosing from a wide variety of cards using **+ Add Card** option. It allows the admin to quickly view reports that are of more importance to them. 
 
