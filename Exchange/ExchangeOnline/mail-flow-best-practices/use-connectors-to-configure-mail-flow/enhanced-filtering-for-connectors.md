@@ -77,15 +77,36 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 
 1. In the Security and Compliance Center, go to **Threat Management** \> **Policy**, and then choose **Enhanced Filtering**.
 
-2. In the **Enhanced Filtering for Connectors** page that opens, do the following steps:
+2. In the **Enhanced Filtering for Connectors** page that opens, select the inbound connector that you want to configure.
 
-   1. Select the connector that's responsible for receiving inbound mail from the third-party service, device, or on-premises Exchange.
-   2. In the connector details fly out that opens, configure one of the following settings:
-     - **Automatically detect and skip the last IP address**: We recommend this option if you have to skip only the last message source.
-     - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
-     - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
+3. In the connector details flyout that opens, configure the following settings:
 
-   When you're finished, click **Save**.
+   - **IP addresses to skip**: Choose one of the following values:
+        - **Automatically detect and skip the last IP address**: We recommend this value if you have to skip only the last message source.
+        - **Skip these IP addresses that are associated with the connector**: Select this value to configure a list of IP addresses to skip.
+
+          > [!IMPORTANT]
+          >
+          > - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the email systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
+          >
+          > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses.
+
+        - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
+
+   - **Apply to these users**: Choose one of the following values:
+     - **Apply to a small set of users**: Select this value to configure a list of recipient email addresses that Enhanced Filtering for Connectors applies to. We recommend this value as an initial test of the feature.
+
+       > [!NOTE]
+       >
+       > - This value is only affective on the actual email addresses that you specify. For example, if a user has five email addresses associated with their mailbox (also known as _proxy addresses_), you'll need to specify all five of their email addresses here. Otherwise, messages that are sent to the four other email addresses will go through normal filtering.
+       >
+       > - In hybrid environments where inbound mail flows through on-premises Exchange, you must specify the *targetAddress* of the *MailUser* object. For example, *michelle@contoso.mail.onmicrosoft.com*.
+       >
+       > - This value is only affective on messages where **all** recipients are specified here. If a message contains **any** recipients that aren't specified here, normal filtering is applied to **all** recipients of the message.
+
+     - **Apply to entire organization**: We recommend this value after you've tested the feature on a small number of recipients first.
+
+4. When you're finished, click **Save**.
 
 ### Use Exchange Online PowerShell or Exchange Online Protection PowerShell to configure Enhanced Filtering for Connectors on an inbound connector
 
@@ -96,33 +117,30 @@ Set-InboundConnector -Identity <ConnectorIdentity> [-EFSkipLastIP <$true | $fals
 ```
 
 - _EFSkipLastIP_: Valid values are:
-
   - `$true`: Only the last message source is skipped.
   - `$false`: Skip the IP addresses specified by the _EFSkipIPs_ parameter. If no IP addresses are specified there, Enhanced Filtering for Connectors is disabled on the inbound connector. The default value is `$false`.
 
 - _EFSkipIPs_: The specific IP addresses to skip when the _EFSkipLastIP_ parameter value is `$false`. Valid values are:
-
   - **A single IP address**: For example, `192.168.1.1`.
   - **An IP address range**: For example, `192.168.1.0-192.168.1.31`.
   - **Classless Inter-Domain Routing (CIDR) IP**: For example, `192.168.1.0/25`.
 
-- _EFUsers_: The comma-separated email address of the recipients that you want to apply Enhanced Filtering for Connectors to. The default value is blank (`$null`), which means Enhanced Filtering for Connectors is applied to all recipients.
+  See the **Skip these IP addresses that are associated with the connector** description in the previous section for limitations on IP addresses.
 
-This example enables Enhanced Filtering for Connectors on the inbound connector named From Anti-spam Service:
+- _EFUsers_: The comma-separated email address of recipient email addresses that you want to apply Enhanced Filtering for Connectors to. See the **Apply to a small set of users** description in the previous section for limitations on individual recipients. The default value is blank (`$null`), which means Enhanced Filtering for Connectors is applied to all recipients.
+
+This example configures the inbound connector named From Anti-Spam Service with the following settings:
+
+- Enhanced Filtering for Connectors is enabled on the connector, and the IP address of the last message source is skipped.
+- Enhanced Filtering for Connectors only applies to the recipient email addresses michelle@contoso.com, laura@contoso.com, and julia@contoso.com.
 
 ```powershell
-Set-InboundConnector -Identity "From Anti-spam Service" -EFSkipLastIP $true
+Set-InboundConnector -Identity "From Anti-Spam Service" -EFSkipLastIP $true -EFUsers "michelle@contoso.com","laura@contoso.com","julia@contoso.com"
 ```
 
 **Note**: To disable Enhanced Filtering for Connectors, use the value `$false` for the _EFSkipLastIP_ parameter.
 
 For detailed syntax and parameter information, see [Set-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/set-inboundconnector).
-
-> [!IMPORTANT]
->
-> - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the mail systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
->
-> - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses.
 
 ## What happens when you enable Enhanced Filtering for Connectors?
 
