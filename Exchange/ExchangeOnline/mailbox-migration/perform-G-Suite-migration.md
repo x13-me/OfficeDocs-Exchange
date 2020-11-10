@@ -204,7 +204,58 @@ For more advanced scenarios, you may be able to deploy Azure Active Directory (A
 
 We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
-## Start a G Suite migration batch with the Exchange admin center (EAC)
+## Start a G Suite migration batch with the new Exchange admin center (New EAC)
+
+1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
+
+2. Click **New Migration batch** and follow the instructions in the details pane.
+
+3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
+
+4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
+
+5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
+
+6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
+
+7. Sign in to your Google account to validate your APIs.
+
+   Once the APIs are successfully validated, a link, client id, and a scope is provided to add scope for API access.
+   
+8. Click the API access link and verify your google account.
+
+9. In Google admin page, click **Add new**. 
+
+10. In **Add a new client ID** window, enter the client id and the scope provided after API validation and click **Authorize**.
+
+    > [!NOTE]
+    > For more information see the above topic **Grant access to the service account for your Google tenant**.
+    
+11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
+    
+    > [!NOTE]
+    > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
+    
+12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+
+   - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
+
+   - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+
+   ```CSV
+   EmailAddress
+   will@fabrikaminc.net
+   user123@fabrikaminc.net
+   ```
+13. In **Add user mailboxes** section, import the CSV file and click **Next**.
+
+14. In **Move configuration** section, enter the details and click **Next**.
+
+15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
+
+    The batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.
+
+## Start a G Suite migration batch with the Classic Exchange admin center (Classic EAC)
 
 1. In the Exchange Admin center, click **recipients**, and then click **migration**.
 
