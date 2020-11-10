@@ -58,7 +58,7 @@ This section describes the process of setting up a connector in both the New Exc
 If any connectors already exist for your organization, you can see them listed herez.
 
 (In New Exchange admin center)
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text=""::: 
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Existing list of connectors"::: 
 
 (In Classic Exchange admin center)
 ![Microsoft 365 and Office 365 connectors partner organization examples](../../media/9e8f0035-24b6-4d62-aecf-17f740530e31.png)
@@ -70,9 +70,9 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 
 To start the wizard, click **+Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
 
-:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="":::
+:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which a new connector is set up":::
 
-Click **Next**, and follow the instructions in the wizard. Click the Help or Learn More links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+Click **Next**, and follow the instructions in the wizard. Click the Help or Learn More links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic Exchange admin center
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **mail flow** and then **connectors**.
