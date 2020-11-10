@@ -212,10 +212,14 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
 
+   ![Migration Onboarding](../media/select-migration-type.png)
+
 4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
 
 5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
-
+   
+   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
+   
 6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
 
 7. Sign in to your Google account to validate your APIs.
@@ -233,27 +237,37 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
     
 11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
     
+    ![Set endpoint](../media/endpoint-selection-for-migration.png)
+    
     > [!NOTE]
     > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
     
 12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
-   - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
+    - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
-   - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-   ```CSV
-   EmailAddress
-   will@fabrikaminc.net
-   user123@fabrikaminc.net
-   ```
+    ```CSV
+    EmailAddress
+    will@fabrikaminc.net
+    user123@fabrikaminc.net
+    ```
 13. In **Add user mailboxes** section, import the CSV file and click **Next**.
 
 14. In **Move configuration** section, enter the details and click **Next**.
 
 15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
 
-    The batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.
+    ![Schedule batch migration](../media/schedule-gsuite-batch-migration.png)
+    
+    The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
+    
+16. To complete the batch, select the migration group.
+
+17. In the details pane, select the preferred option to complete the batch and click **Save**.
+
+    The batch status will then be **Completed**.
 
 ## Start a G Suite migration batch with the Classic Exchange admin center (Classic EAC)
 
