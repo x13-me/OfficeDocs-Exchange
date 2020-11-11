@@ -26,9 +26,41 @@ When the steps below are completed, a mail flow rule will redirect messages addr
 
 The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where messages it receives originate (such as a mailbox in your Microsoft 365 or Office 365 organization), the type of organization where the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors](use-connectors-to-configure-mail-flow.md).
 
-1. In the EAC, go to **Mail flow** \> **Connectors**. click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
+### New Exchange admin center
 
-2. In the **From:** drop-down box, choose Office 365.
+1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Connectors** and click **+ Add a new connector**  to create a new connector.
+
+2. Under **Connection from**, choose **Office 365**.
+
+3. Under **Connection to**, select either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
+
+:::image type="content" source="../../media/configuring-connector-365-to-partner-new.png" alt-text="connector from 365 to own or partner organization":::
+
+4. Click **Next**, and in the **Connector name** screen, name the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
+
+<insert an image - create-a-connector-new-eac.png>
+
+5. Click **Next**.
+
+6. In the **Use of connector** screen, select **Only when I have a transport rule set up that redirects messages to this connector**.
+
+<include an image - configuring-transport-rule.png>
+
+7. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages, and click **Next**.
+
+<inlcude an image - specifying-smart-host.png>
+
+8. Define your Transport Layer Security (TLS) settings depending on your security needs.
+
+<inlcude an image - define-tls-settings.png>
+
+9. Review your new connector configurations and click **Next** to validate the connector.
+
+### Classic Exchange admin center
+
+1. In the EAC, go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
+
+2. In the **From:** drop-down box, choose **Office 365**.
 
 3. In the **To:** drop-down box, choose either Your organization's email server or Partner organization if you want to connect to a server other than your organizations.
 
