@@ -212,10 +212,10 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
 
-   ![Migration Onboarding](../media/select-migration-type.png)
-
 4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
 
+   ![Migration Onboarding](../media/migration-onboarding-selection.png)
+   
 5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
    
    ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
@@ -237,7 +237,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
     
 11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
     
-    ![Set endpoint](../media/endpoint-selection-for-migration.png)
+    ![Set endpoint](../media/migration-endpoint-selection.png)
     
     > [!NOTE]
     > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
@@ -259,7 +259,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
 
-    ![Schedule batch migration](../media/schedule-gsuite-batch-migration.png)
+    ![Schedule batch migration](../media/schedule-batch1-migration.png)
     
     The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
     
