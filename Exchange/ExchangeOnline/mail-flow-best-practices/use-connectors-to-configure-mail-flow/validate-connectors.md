@@ -27,7 +27,7 @@ If your organization has its own email server (also called on-premises server), 
 
 ### For New Exchange admin center
 
-1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the Exchange admin center. Select **Mail flow** and then **Connectors**.
+1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the New Exchange admin center. Select **Mail flow** and then **Connectors**.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
@@ -39,7 +39,9 @@ If your organization has its own email server (also called on-premises server), 
 
 <include the image connector-validation-details.png>
 
-4. With the connector selected, choose **Validate this connector**. The **Validation email** dialog box opens. Enter one or more email addresses to start the validation. Microsoft 365 or Office 365 uses these addresses to make sure your mail flow is set up correctly. For example, if you want to validate a connector for mail flow from Microsoft 365 or Office 365 to your organization's email server, enter an email address for a mailbox located on that email server.
+4. With the connector selected, choose **Validate this connector**. The **Validation email** dialog box opens (the screenshot after this step). Enter one or more email addresses to start the validation. Microsoft 365 or Office 365 uses these addresses to make sure your mail flow is set up correctly. For example, if you want to validate a connector for mail flow from Microsoft 365 or Office 365 to your organization's email server, enter an email address for a mailbox located on that email server.
+
+<include the image validation-email-new-eac.png>
 
 5. Choose **Validate** to continue. To find out what issues validation examines, and for details about fixing any validation errors, see [Validate connectors](validate-connectors.md).
 
@@ -47,7 +49,7 @@ If your organization has its own email server (also called on-premises server), 
 
 ### For Classic Exchange admin center
 
-1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the Exchange admin center. Select **Mail flow** and then **Connectors**.
+1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the Classic Exchange admin center. Select **Mail flow** and then **Connectors**.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
@@ -55,7 +57,7 @@ If your organization has its own email server (also called on-premises server), 
 
    ![Shows a connector from Microsoft 365 or Office 365 to an Exchange Server that is turned off and has failed validation.](../../media/94d4c6ed-70d0-4a1d-915b-9d089f58d714.png)
 
-3. When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screen shot.
+3. When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the followig screen shot.
 
    ![Shows a connector that was previously validated and a link to validate the connector again.](../../media/e563a5dd-5e3c-4e78-8d3b-1e4b05a8e5d1.png)
 
