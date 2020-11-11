@@ -152,7 +152,10 @@ For detailed syntax and parameter information, see [Update-DistributionGroupMemb
 This example adds the users Amy Alberts, David Hamilton, and Rajesh M. Patel to the group named Corporate Office without affecting other existing members.
 
 ```PowerShell
-Update-DistributionGroupMember -Identity "Corporate Office" -Members @{Add="aalberts@contoso.com","dhamilton@contoso.com","rmpatel@contoso.com"}
+$members=@('aalberts@contoso.com','dhamilton@contoso.com','rmpatel@contoso.com')
+foreach($member in $members){
+	Add-DistributionGroupMember -Identity "Corporate Office" -Member $member
+}
 ```
 
 For detailed syntax and parameter information, see [Update-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-distributiongroupmember).
