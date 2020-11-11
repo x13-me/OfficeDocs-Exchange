@@ -159,6 +159,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 #### For Classic Exchange admin center
 
+click the plus symbol +. On the first screen, choose the options that are depicted in the following screenshot.
 
 ![Microsoft 365 or Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
@@ -276,7 +277,6 @@ In this example, your organization has four accepted domains, contoso.com, sales
 ![Shows the connector wizard page for Classic Exchange admin center: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.](../../media/313c3a28-a6f4-46fb-8d12-850216ab5046.png)
 
 ![Shows the connector wizard page for New Exchange admin center: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.]()
-
 
 
  **Connector 2** is set up specifically for your company domain Contoso.com. The following screen shot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **Only when email messages are sent to these domains**. For **Connector 2**, your company domain Contoso.com is specified.
