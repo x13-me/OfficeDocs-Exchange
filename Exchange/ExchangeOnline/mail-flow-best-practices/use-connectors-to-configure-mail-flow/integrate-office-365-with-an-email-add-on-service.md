@@ -68,6 +68,60 @@ The important settings for the connector are:
 
 ### Use the EAC to create the outbound connector to the email add-on service
 
+#### New Exchange admin center
+
+1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
+
+<include an image - add-connector-option.png>
+
+2. On the **Add a connector** screen, configure these settings:
+- **Connection from**: **Office 365**
+- **Connection to**: **Your organization's email server**
+
+<include an image - new-connector-configuration.png>.
+
+3. Click **Next**.
+
+4. On the **Connector name** screen, configure these settings:
+
+   - **Name**: Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+
+   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
+
+   - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages)
+
+<include an image - configuring-connector-name.png>
+
+5. Click **Next**.
+
+6. On the **Use of connector** screen, select the **Only when i have a transport rule set up that redirects messages to this connector** option, and click **Next**.
+
+:::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
+
+7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
+
+<include an image - configuration-of-routing.png>
+
+8. On the **Security restrictions** screen, configure these settings:
+
+   - Select the **Always use Transport Layer Security (TLS) to secure the connection (recommended)** option.
+
+   - Select the **Issued by a trusted certificate authority (CA)** option.
+
+   - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, myhost.contoso.com)
+   
+<include an image - configuring-security-restrictions.png>
+
+9. Click **Validate this connector**, and specify an email address of an active mailbox on your server. You can add multiple addresses if your organization has more than one domain.
+
+10. Click **Validate**. A progress window appears.
+
+<include an image that shows the validation progress>
+
+11. When the connector validation is complete, click **Close**.
+
+#### Classic Exchange admin center
+
 1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
@@ -172,6 +226,8 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
+#### For Classic Exchange admin center
+
 1. In the EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
    ![In the Exchange admin center, click Mal flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
@@ -259,6 +315,46 @@ The important settings for the connector are:
 - TLS encryption and certificate verification is based on the custom certificate domain name that you configured as an accepted domain in the previous step.
 
 ### Use the EAC to create an inbound connector to receive messages from the email add-on service
+
+#### For New Exchange admin center
+
+1. In the New EAC, go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
+
+<include an image - add-connector-option.png>
+
+2. On the **Add a connector** screen, configure these settings:
+- **Connection from**: **Your organization's email server**
+- **Connection to**: **Office 365**
+
+<include an image - your-org-server-to-365.png>
+
+3. Click **Next**.
+
+4. On the next page, configure these settings:
+
+   - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Office 365).
+
+   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
+
+   - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
+
+   - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
+   
+    <include the image - configuring-connector-name-to-365.png>
+
+5. Click **Next**.
+
+6. On the **Authenticating sent email** screen, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+
+    <include the image authenticate-sent-email.png>
+
+7. Click **Next**.
+
+8. On the **Review connector** page, verify the settings and click **Create connector**.
+
+    <include an image - review-a-connector.png>
+
+#### For Classic Exchange admin center
 
 1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
