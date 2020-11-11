@@ -58,7 +58,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 ### Classic Exchange admin center
 
-1. In the EAC, go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
+1. In the Classic Exchange admin center (EAC), go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
 
 2. In the **From:** drop-down box, choose **Office 365**.
 
@@ -88,7 +88,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 Now that we've created a connector, we need to create a mail flow rule that'll send mail to it based on the criteria you define. There are many conditions you can select from to control when messages should be sent to the connector.
 
-1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
+1. In the Classic EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 
 2. In the **New rule** window, name the rule. To see all the options available for the rule, click **More options...** at the bottom of the page.
 

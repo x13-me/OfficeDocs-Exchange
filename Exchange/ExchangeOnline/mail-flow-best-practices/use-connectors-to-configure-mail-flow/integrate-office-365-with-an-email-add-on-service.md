@@ -70,7 +70,7 @@ The important settings for the connector are:
 
 #### New Exchange admin center
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
+1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
 <include an image - add-connector-option.png>
 
@@ -122,7 +122,7 @@ The important settings for the connector are:
 
 #### Classic Exchange admin center
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the Classic Exchange admin center (EAC), go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
@@ -228,7 +228,7 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 #### For Classic Exchange admin center
 
-1. In the EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
+1. In the Classic EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
    ![In the Exchange admin center, click Mal flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
 
@@ -356,7 +356,7 @@ The important settings for the connector are:
 
 #### For Classic Exchange admin center
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
