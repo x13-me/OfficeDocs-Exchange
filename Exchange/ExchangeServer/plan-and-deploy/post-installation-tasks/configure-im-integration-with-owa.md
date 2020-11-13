@@ -132,13 +132,13 @@ This example updates the IM certificate thumbprint on all Exchange 2016 and Exch
 - **Override reason**: Configure IM
 
 ```powershell
-Set-SettingOverride -Identity "IM Override"  -Parameters @("IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM"
+Set-SettingOverride -Identity "IM Override"  -Parameters @("IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM"
 ```
 
 This example specifies the IM server and IM certificate thumbprint, but only on the server named Mailbox01.
 
 ```powershell
-Set-SettingOverride -Identity "Mailbox01 IM Override"  -Parameters @("IMCertificateThumbprint=CDF34A740E9D225A1A06193A9D44B2CE22775308") -Reason "Configure IM" -Server Mailbox01
+Set-SettingOverride -Identity "Mailbox01 IM Override"  -Parameters @("IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM" -Server Mailbox01
 ```
 
 ### Step 2: Refresh the IM settings on the Exchange server
