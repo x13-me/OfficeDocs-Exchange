@@ -79,7 +79,7 @@ By running the script the following section will be added to Microsoft.Online.EM
 ```xml
   <system.net>
     <defaultProxy>
-      <proxy proxyaddress="http://192.168.1.1:8080" bypassonlocal="True" usesystemdefault="True" />
+      <proxy proxyaddress="http://proxyserver:8080" bypassonlocal="True" usesystemdefault="True" />
     </defaultProxy>
   </system.net>
 ```
