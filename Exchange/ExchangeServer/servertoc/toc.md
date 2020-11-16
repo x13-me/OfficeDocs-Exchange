@@ -408,7 +408,6 @@
 #### [Connection filtering](../antispam-and-antimalware/antispam-protection/connection-filtering.md)
 ##### [Connection filtering procedures](../antispam-and-antimalware/antispam-protection/connection-filtering-procedures.md)
 #### [Recipient filtering](../antispam-and-antimalware/antispam-protection/recipient-filtering.md)
-##### [Recipient filtering procedures](../antispam-and-antimalware/antispam-protection/recipient-filtering-procedures.md)
 ### [Antimalware protection](../antispam-and-antimalware/antimalware-protection/antimalware-protection.md)
 #### [Antimalware procedures](../antispam-and-antimalware/antimalware-protection/antimalware-procedures.md)
 #### [Download antimalware updates](../antispam-and-antimalware/antimalware-protection/download-antimalware-updates.md)
