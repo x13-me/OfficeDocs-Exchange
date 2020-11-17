@@ -77,7 +77,6 @@ Click **Next**, and follow the instructions in the wizard. Click the Help or Lea
 ### For Classic Exchange admin center
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **mail flow** and then **connectors**.
 
-
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
 ![Microsoft 365 and Office 365 to partner organization connector options](../../media/93cb9e70-f8d8-4e63-bb92-caafd8b79ad7.png)
@@ -93,7 +92,7 @@ You can set up a connector to apply security restrictions to email that your par
 ### For New Exchange admin center
 To start the wizard, click **+Add a connector**. On the first screen, choose the following options:
 
-<image to be inserted here - partner-to-365-new-eac.png>
+:::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
 
 ### For Classic Exchange admin center
 To start the wizard, click the plus symbol **+**. On the first screen, choose the following options:
@@ -113,7 +112,7 @@ To change settings for a connector, perform the procedures specified below.
 ### For New Exchange admin center
 Select the connector you want to edit and then click on the connector. The screen as shown in the following screenshot is displayed.
 
-<to insert an image here - connector-editing-screen-new-eac.png>
+:::image type="content" source="../../media/connector-editing-screen-new-eac.png" alt-text="The screen on which the connector settings can be edited":::
 
 ### For Classic Exchange admin center
 Select the connector you want to edit and then select the edit icon as shown in the following screen shot.
@@ -134,7 +133,7 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 
 To start the wizard, click **+Add a new connector**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot:
 
-<insert an image - partner-to-365-new-eac.png>
+:::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which you create a connector to receive email from a partner organization":::
 
 **For Classic Exchange admin center**
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **mail flow** and then **connectors**.
@@ -155,12 +154,15 @@ Once you choose this mail flow scenario (for both, New and Classic Exchange admi
 1. Select **Mail flow** and then **Connectors**.
 2. Select the connector which is to be used when security restrictions are to be applied for the email sent from the partner organization server.
 3. Click on the connector.
-The screen as shown in the below screenshot is displayed.
+The connector details screen as shown in the below screenshot is displayed.
 
-<insert an image - connector-editing-screen-new-eac.png>
+:::image type="content" source="../../media/connector-editing-screen-new-eac.png" alt-text="The screen on which the connector details can be edited":::
 
 4. Click **Edit sent email identity**.
 5. Select the **By verifying that the sender domain matches one of the following domains** option, and enter **contosobank.com** in the text box.
+
+<include an image - security-restriction-for-connector>
+
 6. Click the plus icon next to the text box.
 7. Click **Save**. A notification message **Connector updated successfully** is displayed.
 8. Click **Edit restrictions**.
@@ -213,14 +215,14 @@ To do this, specify your partner organization domain name to identify mail from 
 2. Click **Edit restrictions**.
 3. Select the following options:
     - **Reject email messages if they aren't sent from within this IP address range**
-4. Enter the IP address or IP address range apart from which email messages originating from, should not be accepted.
+4. Enter the IP address range that determines which are the sent email messages to be accepted.
 5. Click the plus icon next to the text box.
 6. Click **Save**.
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
 When you set these restrictions, all email sent from your partner organization domain, ContosoBank.com, or from your on-premises environment must be sent from the IP address or an address range you specify. Any mail that does not meet these conditions will be rejected.
 
-### Example 4: Require that all email sent to your organByization from the internet is sent from a specific IP address (third-party email service scenario)
+### Example 4: Require that all email sent to your organization from the internet is sent from a specific IP address (third-party email service scenario)
 <a name="Example3"> </a>
 
 Mail flow from a third-party email service to Microsoft 365 or Office 365 works without a connector. However, in this scenario you can optionally use a connector to restrict all mail delivery to your organization. If you use the settings described in this example, they will apply to *all email sent to your organization*. When all email sent to your organization comes from a single third-party email service, you can optionally use a connector to restrict all mail delivery; only mail sent from a single IP address or address range will be delivered.
@@ -230,10 +232,13 @@ Mail flow from a third-party email service to Microsoft 365 or Office 365 works 
 2. Click **Edit sent email identity**.
 3. Select the **By verifying that the sender domain matches one of the following domains** option.
 4. Enter ***.contoso.com** as shown in the below screenshot.
+
+<include an image - configuration-of-sender-ip-address.png>
+
 5. Click the plus icon next to the text box.
 6. Click **Save**. A notification message **Connector updated successfully** is displayed.
 7. Click **Edit restrictions** and select the **Reject email messages if they aren't sent from within this IP address range** option.
-8. Enter the IP address range to determine the sent email messages that have to be accepted.
+8. Enter the IP address range that determines which are the sent email messages to be accepted.
 > [!NOTE]
 > Make sure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mail will not be delivered to your organization.
 
@@ -257,6 +262,9 @@ When you set these restrictions, all mail sent to your organization must be sent
 1. Use all the settings configured in Example 1 from Steps 1 through 4.
 2.  Click **Edit sent email identity**.
 3. Select the **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization** option.
+
+<include an image - encryption-mail-sent-from-org.png>
+
 4. Enter the IP address or IP address range apart from which email messages originating from, should not be accepted.
 5. Click the plus icon next to the text box.
 6. Click **Save**. A notification message **Connector updated successfully** is displayed.

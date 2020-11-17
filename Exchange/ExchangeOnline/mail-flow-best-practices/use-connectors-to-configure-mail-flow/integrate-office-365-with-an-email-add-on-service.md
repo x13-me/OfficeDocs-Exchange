@@ -72,13 +72,13 @@ The important settings for the connector are:
 
 1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
-<include an image - add-connector-option.png>
+:::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
 2. On the **Add a connector** screen, configure these settings:
 - **Connection from**: **Office 365**
 - **Connection to**: **Your organization's email server**
 
-<include an image - new-connector-configuration.png>.
+:::image type="content" source="../../media/new-connector-configuration.png" alt-text="The screen on which the connector configuration is set":::
 
 3. Click **Next**.
 
@@ -90,7 +90,7 @@ The important settings for the connector are:
 
    - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages)
 
-<include an image - configuring-connector-name.png>
+:::image type="content" source="../../media/configuring-connector-name.png" alt-text="The screen on which further configurations for the connector are set":::
 
 5. Click **Next**.
 
@@ -100,7 +100,7 @@ The important settings for the connector are:
 
 7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
 
-<include an image - configuration-of-routing.png>
+:::image type="content" source="../../media/configuration-of-routing.png" alt-text="A screen on which the routing path is configured":::
 
 8. On the **Security restrictions** screen, configure these settings:
 
@@ -110,7 +110,7 @@ The important settings for the connector are:
 
    - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, myhost.contoso.com)
    
-<include an image - configuring-security-restrictions.png>
+:::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
 9. Click **Validate this connector**, and specify an email address of an active mailbox on your server. You can add multiple addresses if your organization has more than one domain.
 
@@ -184,42 +184,6 @@ The important settings for the connector are:
 
 9. On the **Validation result** page, click **Save**.
 
-### Use Exchange Online PowerShell to create the outbound connector to the email add-on service
-
-To create the outbound connector to the email add-on service in Exchange Online PowerShell, use this syntax:
-
-```powershell
-New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts <SmartHost> -TlsSettings DomainValidation -TlsDomain <SmartHost> [-CloudServicesMailEnabled $true]
-```
-
-This example creates an outbound connector with these settings:
-
-- **Name**: Office 365 to Contoso Signature Service
-
-- **Smart host destination of the email add-on service**: smtp.contososignatureservice.com
-
-- **TLS domain for domain validation**: smtp.contososignatureservice.com
-
-- Internal Exchange message headers that identify messages as internal are preserved in the outbound messages.
-
-```powershell
-New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
-```
-
-For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-outboundconnector).
-
-### How do you know this step worked?
-
-To verify that you've successfully created an outbound connector to route messages to the email add-on service, use either of these procedures:
-
-- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
-
-- In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values:
-
-  ```powershell
-  Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,ConnectorType,IsTransportRuleScoped,UseMxRecord,SmartHosts,TlsSettings,TlsDomain,CloudServicesMailEnabled
-  ```
-
 ## Step 2: Create a mail flow rule to route unprocessed messages to the email add-on service
 
 The rule routes messages from internal senders to the outbound connector that you created in Step 1 if the messages haven't already been processed by the email add-on service (the custom header isn't stamped on the message).
@@ -256,40 +220,6 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 When you're finished, click **Save**.
 
-### Use Exchange Online PowerShell to create a mail flow rule to route unprocessed messages to the email add-on service
-
-To create the mail flow rule in Exchange Online PowerShell, use this syntax:
-
-```powershell
-New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMessageOutboundConnector "<Connector Name>" -ExceptIfHeaderContainsMessageHeader <HeaderName> -ExceptIfHeaderContainsWords <HeaderValue> -StopRuleProcessing $true
-```
-
-This example creates the mail flow rule with these settings:
-
-- **Name**: Route email to Contoso Signature Service
-
-- **Outbound connector name**: Office 365 to Contoso Signature Service
-
-- **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
-
-```powershell
-New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
-```
-
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
-
-### How do you know this step worked?
-
-To verify that you've successfully created a mail flow rule to route unprocessed messages to the email add-on service, use either of these procedures:
-
-- In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
-
-- In Exchange Online PowerShell, replace _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values:
-
-  ```powershell
-  Get-TransportRule -Identity "<Rule Name>" | Format-List Name,FromScope,RouteMessageOutboundConnector,ExceptIfHeaderContainsMessageHeader,ExceptIfHeaderContainsWords,StopRuleProcessing
-  ```
-
 ## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Microsoft 365 or Office 365
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), click **Setup** \> **Domains**, and then click **Add domain**.
@@ -320,13 +250,14 @@ The important settings for the connector are:
 
 1. In the New EAC, go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
 
-<include an image - add-connector-option.png>
+:::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
 2. On the **Add a connector** screen, configure these settings:
+
 - **Connection from**: **Your organization's email server**
 - **Connection to**: **Office 365**
 
-<include an image - your-org-server-to-365.png>
+:::image type="content" source="../../media/your-org-server-to-365.png" alt-text="SA screen on which the connector is configured from your organization's server to Office 365":::
 
 3. Click **Next**.
 
@@ -340,19 +271,19 @@ The important settings for the connector are:
 
    - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
    
-    <include the image - configuring-connector-name-to-365.png>
-
+:::image type="content" source="../../media/configuring-connector-name-to-365.png" alt-text="The screen on which connector configuration is set":::
+    
 5. Click **Next**.
 
 6. On the **Authenticating sent email** screen, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
-    <include the image authenticate-sent-email.png>
+:::image type="content" source="../../media/authenticate-sent-email.png" alt-text="The screen on sent mails are authenticated for eligibility of being transmitted":::
 
 7. Click **Next**.
 
 8. On the **Review connector** page, verify the settings and click **Create connector**.
 
-    <include an image - review-a-connector.png>
+    :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 
 #### For Classic Exchange admin center
 
@@ -394,6 +325,52 @@ The important settings for the connector are:
 
    ![In the new connector wizard, verify the settings and click Save.](../../media/a9b67424-159d-45b8-9296-d103ca8eac87.png)
 
+### Use Exchange Online PowerShell to create the outbound connector to the email add-on service
+
+To create the outbound connector to the email add-on service in Exchange Online PowerShell, use this syntax:
+
+```powershell
+New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts <SmartHost> -TlsSettings DomainValidation -TlsDomain <SmartHost> [-CloudServicesMailEnabled $true]
+```
+
+This example creates an outbound connector with these settings:
+
+- **Name**: Office 365 to Contoso Signature Service
+
+- **Smart host destination of the email add-on service**: smtp.contososignatureservice.com
+
+- **TLS domain for domain validation**: smtp.contososignatureservice.com
+
+- Internal Exchange message headers that identify messages as internal are preserved in the outbound messages.
+
+```powershell
+New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
+```
+
+For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-outboundconnector).
+
+### Use Exchange Online PowerShell to create a mail flow rule to route unprocessed messages to the email add-on service
+
+To create the mail flow rule in Exchange Online PowerShell, use this syntax:
+
+```powershell
+New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMessageOutboundConnector "<Connector Name>" -ExceptIfHeaderContainsMessageHeader <HeaderName> -ExceptIfHeaderContainsWords <HeaderValue> -StopRuleProcessing $true
+```
+
+This example creates the mail flow rule with these settings:
+
+- **Name**: Route email to Contoso Signature Service
+
+- **Outbound connector name**: Office 365 to Contoso Signature Service
+
+- **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
+
+```powershell
+New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
+```
+
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+
 ### Use Exchange Online PowerShell to create an inbound connector to receive messages from the email add-on service
 
 To create the inbound connector from the email add-on service in Exchange Online PowerShell, use this syntax:
@@ -416,14 +393,3 @@ New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDoma
 
 For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-inboundconnector).
 
-### How do you know this step worked?
-
-To verify that you've successfully created an inbound connector to receive messages from the email add-on service, use any of these procedures:
-
-- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
-
-- In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values:
-
-  ```powershell
-  Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled
-  ```
