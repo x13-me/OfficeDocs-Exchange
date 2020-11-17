@@ -74,7 +74,7 @@ The agent supports outbound unauthenticated proxy servers but requires additiona
 PS C:\Program Files\Microsoft Hybrid Service\>.\ConfigureOutBoundProxy.ps1 -ProxyAddress http://proxyserver:8080
 ```
 
-By running the script the following section will be added to Microsoft.Online.EME.Hybrid.Agent.Service.exe.config file located on the same folder:
+By running the script, the following section will be added to the Microsoft.Online.EME.Hybrid.Agent.Service.exe.config file located in the same folder:
 
 ```xml
   <system.net>
