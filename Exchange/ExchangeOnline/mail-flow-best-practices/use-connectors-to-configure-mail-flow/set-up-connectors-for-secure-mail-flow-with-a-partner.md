@@ -57,10 +57,10 @@ This section describes the process of setting up a connector in both the New Exc
 
 If any connectors already exist for your organization, you can see them listed herez.
 
-(In New Exchange admin center)
+(In New Exchange admin center [EAC])
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Existing list of connectors"::: 
 
-(In Classic Exchange admin center)
+(In Classic Exchange admin center [EAC])
 ![Microsoft 365 and Office 365 connectors partner organization examples](../../media/9e8f0035-24b6-4d62-aecf-17f740530e31.png)
 
 Below are the procedures to set up a new connector
@@ -233,7 +233,7 @@ Mail flow from a third-party email service to Microsoft 365 or Office 365 works 
 5. Click the plus icon next to the text box.
 6. Click **Save**. A notification message **Connector updated successfully** is displayed.
 7. Click **Edit restrictions** and select the **Reject email messages if they aren't sent from within this IP address range** option.
-8. Enter the IP address range apart from which sent email messages originating from, should not be accepted.
+8. Enter the IP address range to determine the sent email messages that have to be accepted.
 > [!NOTE]
 > Make sure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mail will not be delivered to your organization.
 
