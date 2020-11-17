@@ -44,7 +44,17 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 ## Use the EAC to set up match subdomains on a domain
 
-1. In the EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
+### New EAC
+
+1. In the New EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
+
+2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
+
+3. Select **Accept mail for all subdomains**.
+
+### Classic EAC
+
+1. In the Classic EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
 
