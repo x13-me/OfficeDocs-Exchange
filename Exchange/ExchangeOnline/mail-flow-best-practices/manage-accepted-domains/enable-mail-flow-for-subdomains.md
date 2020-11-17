@@ -62,7 +62,16 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 ## Use the EAC to add the domain to your outbound connector
 
-1. In the EAC, go to **Mail Flow** \> **Connectors**.
+### New EAC
+
+1. In the New EAC, go to **Mail Flow** \> **Connectors**.
+
+2. <need more inputs>
+
+
+### Classic EAC
+
+1. In the Classic EAC, go to **Mail Flow** \> **Connectors**.
 
 2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
