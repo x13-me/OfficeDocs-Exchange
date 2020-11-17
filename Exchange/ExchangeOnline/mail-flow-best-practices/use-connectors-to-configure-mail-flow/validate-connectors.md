@@ -33,15 +33,15 @@ If your organization has its own email server (also called on-premises server), 
 
 2. Choose the connector you want to validate or turn on. You can see information about the connector in the details pane as shown in the following screen shot.
 
-<include the image - details-pane.png>
+:::image type="content" source="../../media/details-pane.png" alt-text="The screen on which information about the connector is displayed":::
 
 3. When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screen shot.
 
-<include the image connector-validation-details.png>
+:::image type="content" source="../../media/connector-validation-details.png" alt-text="The screen displaying the validation history for the connector":::
 
 4. With the connector selected, choose **Validate this connector**. The **Validation email** dialog box opens (the screenshot after this step). Enter one or more email addresses to start the validation. Microsoft 365 or Office 365 uses these addresses to make sure your mail flow is set up correctly. For example, if you want to validate a connector for mail flow from Microsoft 365 or Office 365 to your organization's email server, enter an email address for a mailbox located on that email server.
 
-<include the image validation-email-new-eac.png>
+:::image type="content" source="../../media/validation-email-new-eac.png" alt-text="The screen on which validation email is entered":::
 
 5. Choose **Validate** to continue. To find out what issues validation examines, and for details about fixing any validation errors, see [Validate connectors](validate-connectors.md).
 
