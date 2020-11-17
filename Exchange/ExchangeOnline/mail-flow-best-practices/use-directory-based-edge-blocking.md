@@ -44,9 +44,37 @@ If a message is sent to a valid email address in Microsoft 365 or Office 365, th
 
 ## Configure DBEB
 
+This section describes the procedure to configure DBEB for both the New Exchange admin center (EAC) and Classic Exchange admin center (EAC).
+
+**For New Exchange admin center**
+
 1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
 
-   1. In the EAC, go to **Mail flow** \> **Accepted domains**.
+    1. In the New EAC, go to **Mail flow** \> **Accepted domains**.
+    
+    2. Click and select the domain.
+    
+    3. On the screen that appears, ensure that the domain type is set to **Internal relay**. If it's set to **Authoritative**, change it to **Internal relay** and click **Save**.
+
+2. Add users to Microsoft 365 or Office 365. For example:
+
+    - **Directory synchronization**: Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop)
+    
+    - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md).
+
+3. Set your accepted domain in Exchange Online to **Authoritative**:
+
+    1. In the New EAC, go to **Mail flow** \> **Accepted domains** 
+    
+    2. Click and select the domain.
+    
+    3. On the screen that appears, ensure that the domain type is set to **Authoritative**. If it's set to **Internal relay**, change it to **Authoritative** and click **Save**.
+
+**For Classic Exchange admin center**
+
+1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
+
+   1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
 
    2. Select the domain and click **Edit**.
 
@@ -60,7 +88,7 @@ If a message is sent to a valid email address in Microsoft 365 or Office 365, th
 
 3. Set your accepted domain in Exchange Online to **Authoritative**:
 
-   1. In the EAC, go to **Mail flow** \> **Accepted domains**.
+   1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
 
    2. Select the domain and click **Edit**.
 
@@ -68,7 +96,7 @@ If a message is sent to a valid email address in Microsoft 365 or Office 365, th
 
 4. Choose **Save** to save your changes, and confirm that you want to enable DBEB.
 
-> [!NOTE]
+> [!NOTE] (Applicable to both New Exchange admin center and Classic Exchange admin center)
 > - Dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a workaround in hybrid environments, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
 >
 > - Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**. Once the domain type has been changed to **Authoritative**, DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Microsoft 365 or Office 365 organization are allowed to relay through the service.
