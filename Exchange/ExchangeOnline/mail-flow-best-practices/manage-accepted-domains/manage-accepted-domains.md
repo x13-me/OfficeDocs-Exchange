@@ -61,9 +61,15 @@ There are two types of accepted domains in Exchange Online:
 
 ## View accepted domains
 
-### Use the EAC to view accepted domains
+### Use the New Exchange admin center to view accepted domains
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**.
+1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Accepted domains**.
+
+2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
+
+### Use the Classic Exchange admin center to view accepted domains
+
+1. In the Classic Exchange admin center (EAC), go to **Mail flow** \> **Accepted domains**.
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
@@ -93,7 +99,22 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 ### Use the EAC to change the domain type
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**.
+#### New EAC
+
+1. In the New EAC, go to **Mail flow** \> **Accepted domains**.
+
+2. Select and click the domain.
+
+3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+
+    - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+    
+    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md)
+
+4. When you're finished, click **Save**.
+#### Classic EAC
+
+1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
 
 2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
