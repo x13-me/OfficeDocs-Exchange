@@ -36,7 +36,7 @@ If you're an admin for an Exchange hybrid or Exchange Online deployment, you may
 
 Looking for more than just documentation? Check out these other Exchange resources:
 
-- [Exchange Online Forums](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange): The forum provides a place to discuss Exchange Online with users and Exchange Team members.
+- [Exchange Online Forums](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html): The forum provides a place to discuss Exchange Online with users and Exchange Team members.
 
 - [Exchange and Exchange Online development](https://docs.microsoft.com/exchange/client-developer/exchange-server-development): You'll find Exchange developer documentation here.
 
