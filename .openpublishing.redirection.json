@@ -157,7 +157,7 @@
     },
     {
       "source_path": "outlook/mobile/resources.md",
-      "redirect_url": "https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/",
+      "redirect_url": "https://adoption.microsoft.com/outlook-mobile",
       "redirect_document_id": false
     },
     {
@@ -782,7 +782,7 @@
     },
     {
       "source_path": "Outlook/mobile/index.md",
-      "redirect_url": "resources",
+      "redirect_url": "https://adoption.microsoft.com/outlook-mobile",
       "redirect_document_id": false
     },
     {
@@ -796,15 +796,19 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups",
+      "source_path": "exchange/ExchangeOnline/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups.md",
       "redirect_url": "https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups",
       "redirect_document_id": false
     },
     {
-      "source_path": "exchange/recipients-in-exchange-online/message-and-recipient-limits",
-      "redirect_url": "https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits",
-      "redirect_document_id": false
+      "source_path": "exchange/exchangeonline/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders.md",
+      "redirect_url": "https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "exchange/exchangeonline/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders.md",
+      "redirect_url": "https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online",
+      "redirect_document_id": true
     }
-    
-  ]
+]
 }

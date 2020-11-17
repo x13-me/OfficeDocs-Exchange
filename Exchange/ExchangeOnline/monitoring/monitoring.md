@@ -52,4 +52,4 @@ The following table describes when Exchange Online reporting and message trace d
 |
 
 > [!NOTE]
-> Data availability and latency is the same whether requested via the Microsoft 365 admin center or remote PowerShell.
+> Data availability and latency is the same whether requested via the Microsoft 365 admin center or Exchange Online PowerShell.

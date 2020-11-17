@@ -1,5 +1,5 @@
 ---
-localization_priority: High
+localization_priority: Priority
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
 author: msdmaguire
@@ -20,9 +20,9 @@ manager: serdars
 
 You can use the information in this topic to verify the version of Exchange that is running in your organization.
 
-This topic is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), or Update Rollup (UR) of the specific Exchange release.
+This topic is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), or Update Rollup (RU) of the specific Exchange release.
 
-Download links for the latest CU, UR, and SP for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
+Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
 
 > [!NOTE]
 > In the following sections, RTM stands for release to manufacturing (the first version of the product).

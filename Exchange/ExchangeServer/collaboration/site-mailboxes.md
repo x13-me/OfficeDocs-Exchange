@@ -30,6 +30,7 @@ Site mailboxes require Exchange 2016 or later and SharePoint Server 2013 or late
 
 For more information about collaboration features in Exchange Server, see [Collaboration](collaboration.md).
 
+
 ## How do site mailboxes work?
 <a name="howwork"> </a>
 

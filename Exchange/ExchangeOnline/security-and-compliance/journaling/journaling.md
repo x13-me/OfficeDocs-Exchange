@@ -123,7 +123,7 @@ A journal report is the message that the Journaling agent generates when a messa
 When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
 
 > [!IMPORTANT]
-> The Journal Report Decryption feature currently does not support the use of custom OME templates. If you utilize a custom OME template, the Journal report will not contain a decrypted copy of the message. Journal Report Decryption currently only works with the default OME templates provided by Exchange Online (Encrypt and Do Not Forward).
+> The Journal Report Decryption feature currently does not support the explicit use of OME templates. If you use a mail flow rule (also known as a transport rule) to apply an OME template, the journal report will not contain a decrypted copy of the message. Currently, journal report decryption only works with the default OME template that's implicitly applied by Exchange Online (on OME messages).
 
 ## Troubleshooting
 
@@ -135,6 +135,6 @@ When a message matches the scope of multiple journal rules, all matching rules w
 
 Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).
