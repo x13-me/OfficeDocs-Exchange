@@ -146,7 +146,7 @@ The important settings for the connector are:
 
    - **Unchecked**: Removes internal headers from messages before they're sent to the email add-on service. If you select this value, the value of this setting on the inbound connector that you create in Step 4 is meaningless (by definition, there will be no internal Exchange headers to keep or remove in returning messages).
 
-   ![In the new connector wizard, enter a descriptive name for the connector.](../../media/772699f4-1687-48d6-9482-72f2cc7c4ea5.png)
+   ![In new connector wizard, enter a descriptive name for the connector.](../../media/772699f4-1687-48d6-9482-72f2cc7c4ea5.png)
 
    When you're finished, click **Next**.
 
