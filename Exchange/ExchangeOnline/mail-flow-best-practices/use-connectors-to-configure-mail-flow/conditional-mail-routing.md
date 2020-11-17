@@ -38,13 +38,13 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 4. Click **Next**, and in the **Connector name** screen, name the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
 
-<insert an image - create-a-connector-new-eac.png>
+:::image type="content" source="../../media/create-a-connector-new-eac.png" alt-text="The screen on which details for the connector being created is provided":::
 
 5. Click **Next**.
 
 6. In the **Use of connector** screen, select **Only when I have a transport rule set up that redirects messages to this connector**.
 
-<include an image - configuring-transport-rule.png>
+:::image type="content" source="../../media/configuring-transport-rule.png" alt-text="A screen on which the transport rule is chosen as a condition":::
 
 7. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages, and click **Next**.
 
@@ -52,7 +52,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 8. Define your Transport Layer Security (TLS) settings depending on your security needs.
 
-<inlcude an image - define-tls-settings.png>
+:::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
 
 9. Review your new connector configurations and click **Next** to validate the connector.
 
