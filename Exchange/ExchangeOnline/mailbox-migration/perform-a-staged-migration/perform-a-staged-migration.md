@@ -49,7 +49,7 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 6. [Migrate your mailboxes](#migrate-your-mailboxes)
 
-7. [Start the staged migration batch](#start-the-staged-migration-batch)
+7. [Start the staged migration batch in Classic Exchange admin center](#start-the-staged-migration-batch-in-Classic-Exchange-admin-center)
 
 8. [Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email](#convert-on-premises-mailboxes-to-mail-enabled-users-so-that-migrated-users-can-get-to-their-email)
 
