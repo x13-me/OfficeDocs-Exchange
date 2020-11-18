@@ -222,17 +222,69 @@ A migration endpoint contains the settings and credentials needed to connect the
 
    To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
 
+> [!NOTE]
+> This is available for Classic EAC only. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
+
 ## Migrate your mailboxes
 
 You create and then run a migration batch to migrate mailboxes to Microsoft 365 or Office 365.
 
-### Create a staged migration batch
+### Create a staged migration batch in new Exchange admin center (New EAC)
+
+1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
+
+2. Click **New Migration batch** and follow the instructions in the details pane.
+
+3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
+
+4. Select the migration type as **Staged migration** from the drop-down list and click **Next**.
+
+   ![Migration Onboarding](../media/migration-onboarding-selection.png)
+   
+5. In **Prerequisites** section, read the following and click **Next**. 
+    
+6. In **Set endpoint** section, you can either create a new migration endpoint or select the migration endpoint from the drop-down list:
+
+    a. Select **Create a new migration endpoint** and follow the instructions to create the endpoints.
+    
+    b. Select the migration endpoint from the drop-down list and click **Next**.
+    
+    ![Set endpoint](../media/migration-endpoint-selection.png)
+    
+7. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+
+    - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
+
+    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+
+      ```CSV
+      EmailAddress
+      will@fabrikaminc.net
+      user123@fabrikaminc.net
+      ```
+8. In **Add user mailboxes** section, import the CSV file and click **Next**.
+
+9. In **Move configuration** section, enter the details and click **Next**.
+
+10. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
+
+    ![Schedule batch migration](../media/schedule-batch1-migration.png)
+    
+    The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
+    
+11. To complete the batch, select the migration group.
+
+12. In the details pane, select the preferred option to complete the batch and click **Save**.
+
+    The batch status will then be **Completed**.
+
+### Create a staged migration batch in Classic Exchange admin center (Classic EAC)
 
 For a staged migration, you migrate mailboxes in batches: one batch for each CSV file you created.
 
 **To create a staged migration batch**:
 
-1. In the Exchange admin center, navigate to **Recipients** \> **Migration**.
+1. In the Classic Exchange admin center, go to Recipients > Migration.
 
 2. Choose **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
 
@@ -274,7 +326,7 @@ For a staged migration, you migrate mailboxes in batches: one batch for each CSV
 
    The new migration batch is displayed on the migration dashboard.
 
-### Start the staged migration batch
+### Start the staged migration batch in Classic Exchange admin center (Classic EAC)
 
 If you created a migration batch and configured it to be manually started, you can start it by using the Exchange Admin center.
 
@@ -346,15 +398,9 @@ When you delete a staged migration batch, the migration service cleans up any re
 
 **To delete the staged migration batch**:
 
-1. In the Exchange admin center, go to **Recipients** \> **Migration**.
+1. In the new Exchange admin center, go to **Migration** > **Batch**. On the migration dashboard, select the batch, and then click **Delete**.
 
-2. On the migration dashboard, select the batch, and then choose **Delete**.
-
-   It might take a few minutes for the batch to get deleted.
-
-3. In the Exchange admin center, go to **Recipients** \> **Migration**.
-
-4. Verify that the migration batch is no longer listed on the migration dashboard.
+2. In the Classic Exchange admin center, go to **Recipients** \> **Migration**. On the migration dashboard, select the batch, and then click **Delete**.
 
 ## Complete post migration tasks
 
