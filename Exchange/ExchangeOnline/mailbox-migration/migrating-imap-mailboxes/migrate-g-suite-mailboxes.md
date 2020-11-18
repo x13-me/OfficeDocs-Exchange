@@ -142,7 +142,76 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 8. Click **New** to create the migration endpoint.
 
-### Step 5: Create a migration batch and start migrating Gmail mailboxes
+> [!NOTE]
+> This is available for Classic EAC only. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a G Suite migration batch with the new Exchange admin center (New EAC)**.
+
+### Step 5.0: Create a G Suite migration batch with the new Exchange admin center (New EAC)
+
+1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
+
+2. Click **New Migration batch** and follow the instructions in the details pane.
+
+3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
+
+4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
+
+   ![Migration Onboarding](../media/migration-onboarding-selection.png)
+   
+5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
+   
+   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
+   
+6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
+
+7. Sign in to your Google account to validate your APIs.
+
+   Once the APIs are successfully validated, a link, client id, and a scope is provided to add scope for API access.
+   
+8. Click the API access link and verify your google account.
+
+9. In Google admin page, click **Add new**. 
+
+10. In **Add a new client ID** window, enter the client id and the scope provided after API validation and click **Authorize**.
+
+    > [!NOTE]
+    > For more information see the above topic **Grant access to the service account for your Google tenant**.
+    
+11. In **Set endpoint** section, you can either create a new migration endpoint or select the migration endpoint from the drop-down list:
+
+    a. Select **Create a new migration endpoint** and follow the instructions to create the endpoints.
+    
+    b. Select the migration endpoint from the drop-down list and click **Next**.
+    
+    ![Set endpoint](../media/migration-endpoint-selection.png)
+    
+12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+
+    - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
+
+    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
+
+      ```CSV
+      EmailAddress
+      will@fabrikaminc.net
+      user123@fabrikaminc.net
+      ```
+13. In **Add user mailboxes** section, import the CSV file and click **Next**.
+
+14. In **Move configuration** section, enter the details and click **Next**.
+
+15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
+
+    ![Schedule batch migration](../media/schedule-batch1-migration.png)
+    
+    The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
+    
+16. To complete the batch, select the migration group.
+
+17. In the details pane, select the preferred option to complete the batch and click **Save**.
+
+    The batch status will then be **Completed**.
+
+### Step 5.1: Create a migration batch and start migrating Gmail mailboxes in Classic Exchange admin center (Classic EAC)
 
 You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 or Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Microsoft 365 or Office 365 to Gmail](#step-4-connect-microsoft-365-or-office-365-to-gmail).
 
@@ -206,7 +275,9 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 #### Verify that the migration worked
 
-- In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
+- In the new Exchange admin center, go to **Migration** > **Batch**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
+
+- In the Classic Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
 
 - If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
@@ -274,17 +345,13 @@ When you delete the migration batch, the migration service cleans up any records
 
 #### Delete a migration batch
 
-1. In the Exchange admin center, go to **Recipients** \> **Migration**.
+1. In the new Exchange admin center, go to **Migration** > **Batch**. On the migration dashboard, select the batch, and then click **Delete**.
 
-2. On the migration dashboard, select the batch, and then click **Delete**.
-
-#### How do you know this worked?
-
-- In the Exchange admin center, navigate to **Recipients** \> **Migration**. Verify that the migration batch no longer is listed on the migration dashboard.
+2. In the Classic Exchange admin center, go to **Recipients** \> **Migration**. On the migration dashboard, select the batch, and then click **Delete**.
 
 ### Step 8: Users migrate their calendar and contacts
 
-After your migrate their email, users can import their Gmail calendar and contacts to Outlook:
+After migration of mailboxes, you can import your Gmail calendar and contacts to Outlook:
 
 - [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
 
