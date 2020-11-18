@@ -42,10 +42,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1. 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
+<include an image - navigation-to-groups-tab.png>
+
    ![Finding groups in the Exchange admin center](../../media/8b57ae07-1a2c-4cb7-94a7-70f898be6276.png)
 
 2. In the group properties dialog box that opens, go to **Delivery management** \> select **Senders inside and outside of my organization**.
 
+<include the image - no-restriction-on-any-sender.png>
    ![Use the Exchange admin center to solve DSN 5.7.133 and allow senders](../../media/7223438f-9f43-4601-a457-2fa7dfc977cd.png)
 
 3. Click **Save**.
@@ -71,6 +74,10 @@ To configure the group's allowed senders list, open the EAC do the following ste
    - Select **Senders inside and outside of my organization**.
 
    - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+   
+<to include the image - option-to-add-sender.png>
+
+<to include the image - add-sender.png>
 
      ![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
 
