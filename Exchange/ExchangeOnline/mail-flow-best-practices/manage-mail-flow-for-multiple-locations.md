@@ -82,7 +82,9 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
      To create the connector, choose the first option in the connector creation wizard on the **How should Office 365 identify email for your email server** screen.
 
-     ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
+<include the image - connector-to-manage-mfml.png>
+
+     ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png) 
 
      This enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 
@@ -212,6 +214,8 @@ If the MX record for your domain needs to point to your on-premises IP address, 
    - The MX record for your domain, contoso.com, points to your on-premises server, and users in your organization automatically forward messages to email addresses outside your organization. For example, kate@contoso.com has forwarding enabled, and all messages go to kate@tailspintoys.com. If john@fabrikam.com sends a message to kate@contoso.com, by the time the message arrives at Microsoft 365 or Office 365, the sender domain is fabrikam.com and the recipient domain is tailspin.com. Neither the sender domain nor recipient domain belongs to your organization.
 
      To create the connector, choose the first option in the connector creation wizard on the **How should Microsoft 365 or Office 365 identify email for your email server** screen.
+
+<include the image - connector-to-manage-mfml.png>
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
