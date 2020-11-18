@@ -49,7 +49,7 @@ Here are the tasks to do when you're ready to get started with your staged migra
 
 6. [Migrate your mailboxes](#migrate-your-mailboxes)
 
-7. [Start the staged migration batch in Classic Exchange admin center](#start-the-staged-migration-batch-in-Classic-Exchange-admin-center)
+7. [Start the staged migration batch](#start-the-staged-migration-batch)
 
 8. [Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email](#convert-on-premises-mailboxes-to-mail-enabled-users-so-that-migrated-users-can-get-to-their-email)
 
@@ -326,9 +326,9 @@ For a staged migration, you migrate mailboxes in batches: one batch for each CSV
 
    The new migration batch is displayed on the migration dashboard.
 
-### Start the staged migration batch in Classic Exchange admin center (Classic EAC)
+### Start the staged migration batch
 
-If you created a migration batch and configured it to be manually started, you can start it by using the Exchange Admin center.
+In Classic Exchange admin center, if you created a migration batch and configured it to be manually started, you can start it by using the Exchange Admin center.
 
 **To start a staged migration batch**:
 
