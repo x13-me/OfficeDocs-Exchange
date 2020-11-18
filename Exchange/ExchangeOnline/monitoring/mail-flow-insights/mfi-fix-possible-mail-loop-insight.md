@@ -25,7 +25,6 @@ You can click **View details** to see the details in a flyout where we identify 
 
 ![Details flyout that appears after clicking View details in the Fix possible mail loop insight](../../media/mfi-fix-possible-mail-loop-insight-details.png)
 
-To fix the issue, click **Fix**. To mark the issue as resolved, click **Resolve insight**. If you change your mind, click **Activate insight**.
 
 ## Related topics
 
