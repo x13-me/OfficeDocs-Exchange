@@ -29,6 +29,8 @@ The overview section contains the following charts:
 
 <sup>\*</sup> If you hover over a specific color in the chart, you'll see the number of messages.
 
+![Overview of the SMTP AUTH clients report](../../media/mfr-smtp-auth-clients-report.png)
+
 The **Messages sent using SMTP Auth** section shows the following information:
 
 - **Sender address**
