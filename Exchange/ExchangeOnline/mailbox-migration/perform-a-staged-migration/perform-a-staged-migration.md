@@ -239,7 +239,7 @@ You create and then run a migration batch to migrate mailboxes to Microsoft 365 
 
 4. Select the migration type as **Staged migration** from the drop-down list and click **Next**.
 
-   ![Migration Onboarding](../media/migration-onboarding-selection.png)
+   ![Migration Onboarding](../media/migration-onbording-selection1.png)
    
 5. In **Prerequisites** section, read the following and click **Next**. 
     
