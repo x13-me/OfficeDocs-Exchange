@@ -332,9 +332,9 @@ In Classic Exchange admin center, if you created a migration batch and configure
 
 **To start a staged migration batch**:
 
-1. In the Exchange admin center, go to **Recipients**\> **Migration**.
+1. In the new Exchange admin center, go to **Migration** > **Batch**. On the migration dashboard, select the batch, and then click **Start Migration**.
 
-2. On the migration dashboard, select the batch, and then choose **Start**.
+2. In the Classic Exchange admin center, go to **Recipients** \> **Migration**. On the migration dashboard, select the batch, and then click **Start**.
 
 3. If a migration batch starts successfully, its status on the migration dashboard changes to **Syncing**.
 
