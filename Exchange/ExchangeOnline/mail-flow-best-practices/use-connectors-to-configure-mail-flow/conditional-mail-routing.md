@@ -48,7 +48,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 7. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages, and click **Next**.
 
-<inlcude an image - specifying-smart-host.png>
+:::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
 8. Define your Transport Layer Security (TLS) settings depending on your security needs.
 

@@ -66,6 +66,7 @@ If any connectors already exist for your organization, you can see them listed h
 Below are the procedures to set up a new connector
 
 ### For New Exchange admin center
+
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **Mail flow** and then **Connectors**. 
 
 To start the wizard, click **+Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
@@ -75,6 +76,7 @@ To start the wizard, click **+Add a connector**. On the first screen, choose the
 Click **Next**, and follow the instructions in the wizard. Click the Help or Learn More links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic Exchange admin center
+
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **mail flow** and then **connectors**.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
@@ -87,14 +89,17 @@ If you want to create a secure channel with your partner organization in both di
 
 ## Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365
 <a name="setupconnectorfrompartner"> </a>
+
 You can set up a connector to apply security restrictions to email that your partner organization sends to you. The procedure to set up a connector is described below.
 
 ### For New Exchange admin center
+
 To start the wizard, click **+Add a connector**. On the first screen, choose the following options:
 
 :::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
 
 ### For Classic Exchange admin center
+
 To start the wizard, click the plus symbol **+**. On the first screen, choose the following options:
 
 ![Connector from partner organization to Microsoft 365 or Office 365](../../media/e6d15001-989b-48b3-a848-427b800c2a70.png)
@@ -110,11 +115,13 @@ Ask your partner organization to send a test email. Make sure the email your par
 To change settings for a connector, perform the procedures specified below.
 
 ### For New Exchange admin center
+
 Select the connector you want to edit and then click on the connector. The screen as shown in the following screenshot is displayed.
 
 :::image type="content" source="../../media/connector-editing-screen-new-eac.png" alt-text="The screen on which the connector settings can be edited":::
 
 ### For Classic Exchange admin center
+
 Select the connector you want to edit and then select the edit icon as shown in the following screen shot.
 
 ![Shows a screen shot with a connector selected and the edit (pencil) icon highlighted.](../../media/9654b36f-40d2-4791-ae5c-ce3afd9bb683.png)
@@ -129,6 +136,7 @@ Review these connector examples to help you decide whether you want to apply sec
 ### Create a partner organization connector
 
 **For New Exchange admin center**
+
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **Mail flow** and then **Connectors**.
 
 To start the wizard, click **+Add a new connector**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot:
@@ -136,6 +144,7 @@ To start the wizard, click **+Add a new connector**. To create a connector for e
 :::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which you create a connector to receive email from a partner organization":::
 
 **For Classic Exchange admin center**
+
 To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the **Exchange admin center**. Next, select **mail flow** and then **connectors**.
 
 To start the wizard, click the plus symbol **+**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot:
@@ -151,6 +160,7 @@ Once you choose this mail flow scenario (for both, New and Classic Exchange admi
 <a name="example1"> </a>
 
 **For New Exchange admin center**
+
 1. Select **Mail flow** and then **Connectors**.
 2. Select the connector which is to be used when security restrictions are to be applied for the email sent from the partner organization server.
 3. Click on the connector.
@@ -161,7 +171,7 @@ The connector details screen as shown in the below screenshot is displayed.
 4. Click **Edit sent email identity**.
 5. Select the **By verifying that the sender domain matches one of the following domains** option, and enter **contosobank.com** in the text box.
 
-<include an image - security-restriction-for-connector>
+:::image type="content" source="../../media/security-restriction-for-connector.png" alt-text="The screen on which security restrictions are configured":::
 
 6. Click the plus icon next to the text box.
 7. Click **Save**. A notification message **Connector updated successfully** is displayed.
@@ -173,6 +183,7 @@ The connector details screen as shown in the below screenshot is displayed.
 When you choose these settings, all email from your partner organization's domain, ContosoBank.com, must be encrypted using TLS. Any mail that is not encrypted will be rejected.
 
 **For Classic Exchange admin center**
+
 Use the options shown in the below images for New Exchange admin center and Classic Exchange admin center, respectively:
 
 ![Choose to use the sender's domain name](../../media/3b3b0cc6-3928-4cab-a022-436821f9d559.png)
@@ -191,12 +202,14 @@ When you choose these settings, all email from your partner organization's domai
 <a name="example1"> </a>
 
 **For New Exchange admin center**
+
 1. Use all the settings configured in Example 1 from Steps 1 through 9.
 2. Select the **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name** option.
 3. Add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365 in the text box.
 4. Click **Save**. A notification message **Connector updated successfully** is displayed.
 
 **For Classic Exchange admin center**
+
 To do this, use all the settings shown in Example 1. Also, add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365. Use this option during setup:
 
 ![Enter your partner organization certificate name](../../media/46229d66-dcfd-4e3d-bc12-9f53a5572f81.png)
@@ -211,6 +224,7 @@ This email could be from a partner organization, such as ContosoBank.com, or fro
 To do this, specify your partner organization domain name to identify mail from that partner, and then restrict the IP addresses that you accept mail from. Using an IP address makes the connector more specific because it identifies a single address or an address range that your partner organization sends mail from. 
 
 **For New Exchange admin center**
+
 1. Use all the settings configured in Example 1 from Steps 1 through 7.
 2. Click **Edit restrictions**.
 3. Select the following options:
@@ -228,12 +242,13 @@ When you set these restrictions, all email sent from your partner organization d
 Mail flow from a third-party email service to Microsoft 365 or Office 365 works without a connector. However, in this scenario you can optionally use a connector to restrict all mail delivery to your organization. If you use the settings described in this example, they will apply to *all email sent to your organization*. When all email sent to your organization comes from a single third-party email service, you can optionally use a connector to restrict all mail delivery; only mail sent from a single IP address or address range will be delivered.
 
 **For New Exchange admin center**
+
 1. Use all the settings configured in Example 1 from Steps 1 through 4.
 2. Click **Edit sent email identity**.
 3. Select the **By verifying that the sender domain matches one of the following domains** option.
 4. Enter ***.contoso.com** as shown in the below screenshot.
 
-<include an image - configuration-of-sender-ip-address.png>
+:::image type="content" source="../../media/configuration-of-sender-ip-address.png" alt-text="The screen on which sender's IP address is entered":::
 
 5. Click the plus icon next to the text box.
 6. Click **Save**. A notification message **Connector updated successfully** is displayed.
@@ -259,9 +274,11 @@ When you set these restrictions, all mail sent to your organization must be sent
 <a name="Example3"> </a>
 
 **For New Exchange admin center**
+
 1. Use all the settings configured in Example 1 from Steps 1 through 4.
 2.  Click **Edit sent email identity**.
 3. Select the **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization** option.
+
 
 <include an image - encryption-mail-sent-from-org.png>
 

@@ -139,7 +139,7 @@ If there is no connector listed from your organization's mail server to Microsof
 
 - **For New Exchange admin center**
 
-1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**. 
+1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New Exchange admin center. Next, click **mail flow**, and click **connectors**. 
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
    
@@ -159,7 +159,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 #### For Classic Exchange admin center
 
-click the plus symbol +. On the first screen, choose the options that are depicted in the following screenshot.
+Click **+**. On the first screen, choose the options that are depicted in the following screenshot.
 
 ![Microsoft 365 or Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
@@ -183,10 +183,10 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 
 #### For New Exchange admin center
 
-1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the new Exchange admin center. Next, click **mail flow**, and click **connectors**.
+1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New Exchange admin center. Next, click **mail flow**, and click **connectors**.
 
 > [!NOTE]
-> If any connectors already exist for your organization, it is listed on the screen that is displayed on clicking **Connectors**. See the image below.
+> If any connectors already exist for your organization, it is listed on clicking **Connectors**. See the image below.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
  
@@ -276,14 +276,9 @@ In this example, your organization has four accepted domains, contoso.com, sales
 
 ![Shows the connector wizard page for Classic Exchange admin center: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.](../../media/313c3a28-a6f4-46fb-8d12-850216ab5046.png)
 
-![Shows the connector wizard page for New Exchange admin center: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.]()
-
-
  **Connector 2** is set up specifically for your company domain Contoso.com. The following screen shot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **Only when email messages are sent to these domains**. For **Connector 2**, your company domain Contoso.com is specified.
 
 ![Shows the connector wizard page in the Classic Exchange admin center: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain Contoso.com has been added.](../../media/c68671c2-d8df-4791-a538-481eae397673.png)
-
-![Shows the connector wizard page New Exchange admin center: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain Contoso.com has been added.]()
 
  **Connector 3** is also set up by using the option **Only when email messages are sent to these domains**. But, instead of the specific domain Contoso.com, the connector uses a wildcard: \*.Contoso.com as shown in the following screen shot.
 
