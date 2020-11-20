@@ -1,5 +1,5 @@
 ---
-title: "Inbound messages report in the modern EAC"
+title: "Inbound messages and Outbound messages reports in the modern EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,19 +10,19 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the Inbound messages report in the modern Exchange admin center to monitor message volume and TLS encryption for messages from the internet and inbound messages over connectors."
+description: "Admins can learn how to use the Inbound messages report and the Outbound Messages report in the modern Exchange admin center to monitor message volume and TLS encryption for messages to and from the internet and inbound and outbound messages over connectors."
 ---
 
-# Inbound messages report in the modern EAC
+# Inbound messages and Outbound messages reports in the modern EAC
 
-The **Inbound messages report** report in the modern Exchange admin center (modern EAC) displays information about email coming into your organization from the internet and over connectors. The report also shows the TLS encryption level that's being used.
+The **Inbound messages report** and the **Outbound messages report** in the modern Exchange admin center (modern EAC) display information about email entering and leaving your organization. Specifically, the **Inbound messages report** shows information about email coming into your organization from the internet and over connectors. The **Outbound messages report** displays information about email leaving your organization to the internet and over connectors. Both reports also show the TLS encryption level that's being used.
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
 
 The overview section contains the following charts:
 
-- **Message volume**: Shows the number of inbound messages from the internet and over connectors.
+- **Message volume**: Shows the number of inbound or outbound messages to or from the internet and over connectors.
 
 - **Messages by TLS used**: Shows the TLS encryption level. If you hover over a specific color in the chart, you'll see the number of messages for that specific version of TLS.
 

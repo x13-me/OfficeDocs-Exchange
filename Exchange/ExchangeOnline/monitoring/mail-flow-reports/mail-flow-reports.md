@@ -24,13 +24,13 @@ The following mail flow reports are available:
 
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
 
-- [Inbound messages report](mfr-inbound-messages-report.md)
+- [Inbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
 
 - [Non-accepted domain report](mfr-non-accepted-domain-report.md)
 
 - [Non-delivery details report](mfr-non-delivery-details-report.md)
 
-- [Outbound messages report](mfr-outbound-messages-report.md)
+- [Outbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
 
 - [Queued messages report](mfr-queued-messages-report.md)
 
