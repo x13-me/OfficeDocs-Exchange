@@ -28,6 +28,7 @@ manager: serdars
 ---
 
 # Migrate consumer G Suite mailboxes to Microsoft 365 or Office 365
+**Question - Shouldn;t Office 365 be removed**
 
 > [!NOTE]
 > This article explains how to migrate consumer Gmail mailboxes to Microsoft 365 or Office 365. For organizations and enterprises interested in migrating G Suite content, including calendar and contacts information in addition to mailbox data, see [Perform a G Suite migration](../perform-G-Suite-migration.md).
