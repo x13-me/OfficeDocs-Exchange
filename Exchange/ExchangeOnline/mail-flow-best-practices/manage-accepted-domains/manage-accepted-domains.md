@@ -73,6 +73,40 @@ There are two types of accepted domains in Exchange Online:
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
+## Configure the domain type
+
+After you add a domain to your Exchange Online organization in the Microsoft 365 admin center, you can configure the domain type.
+
+### Use the EAC to change the domain type
+
+#### New EAC
+
+1. In the New EAC, go to **Mail flow** \> **Accepted domains**.
+
+2. Select and click the domain.
+
+3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+
+    - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+    
+    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md)
+
+4. When you're finished, click **Save**.
+
+#### Classic EAC
+
+1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
+
+2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+
+3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+
+   - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+
+   - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
+
+4. When you're finished, click **Save**.
+
 ### Use Exchange Online PowerShell to view accepted domains
 
 To view summary information about all accepted domains, run the following command:
@@ -93,39 +127,6 @@ This example shows details about the accepted domain named contoso.com.
 Get-AcceptedDomain -Identity contoso.com | Format-List
 ```
 
-## Configure the domain type
-
-After you add a domain to your Exchange Online organization in the Microsoft 365 admin center, you can configure the domain type.
-
-### Use the EAC to change the domain type
-
-#### New EAC
-
-1. In the New EAC, go to **Mail flow** \> **Accepted domains**.
-
-2. Select and click the domain.
-
-3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
-
-    - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
-    
-    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md)
-
-4. When you're finished, click **Save**.
-#### Classic EAC
-
-1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
-
-2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
-
-3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
-
-   - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
-
-   - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
-
-4. When you're finished, click **Save**.
-
 ### Use Exchange Online PowerShell to change the domain type
 
 To configure the domain type, use the following syntax:
@@ -142,10 +143,3 @@ Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 
 For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
-### How do you know this worked?
-
-To verify that you've successfully configured the domain type, do either of the following steps:
-
-- In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.png). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
-
-- In Exchange Online PowerShell, run the command `Get-AcceptedDomain`. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.

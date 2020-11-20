@@ -100,10 +100,3 @@ Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 
 For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
-#### How do you know this worked?
-
-To verify that you've successfully added match subdomains to a domain using Exchange Online PowerShell, run the following command to verify the _MatchSubdomains_ property value:
-
-```powershell
-Get-AcceptedDomain | Format-List Name,MatchSubdomains
-```
