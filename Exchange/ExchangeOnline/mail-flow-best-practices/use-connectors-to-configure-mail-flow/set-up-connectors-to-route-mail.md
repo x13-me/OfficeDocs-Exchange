@@ -143,7 +143,7 @@ If there is no connector listed from your organization's mail server to Microsof
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
    
-   :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
+:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
 3. Select the **Office 365** radio button under **Connection from**, and select the **Your organization's email server** under **Connection to**, as shown in the following image.
 
@@ -192,7 +192,7 @@ Once you have completed Part 2, see the instructions at the end to check that yo
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
-   :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
+:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
 3. Select the **Your organization's email server** radio button under **Connection from**, as shown in the following image.
 
