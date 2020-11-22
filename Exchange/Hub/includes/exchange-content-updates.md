@@ -2,6 +2,26 @@
 
 
 
+## Week of November 16, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/16/2020 | [Enable or disable hierarchical address books in Exchange Online](/Exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books) | modified |
+| 11/16/2020 | [Message trace in the modern EAC](/Exchange/monitoring/trace-an-email-message/message-trace-modern-eac) | modified |
+| 11/16/2020 | [Mobile device mailbox policies in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies) | modified |
+| 11/17/2020 | [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) | modified |
+| 11/17/2020 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
+| 11/17/2020 | [Policy Tips in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/policy-tips) | modified |
+| 11/17/2020 | [Configure instant messaging integration with Outlook on the web in Exchange](/Exchange/plan-and-deploy/post-installation-tasks/configure-im-integration-with-owa?view=exchserver-2016) | modified |
+| 11/18/2020 | [Microsoft Hybrid Agent](/Exchange/hybrid-deployment/hybrid-agent) | modified |
+| 11/20/2020 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
+| 11/20/2020 | [Mail flow reports in the modern EAC](/Exchange/monitoring/mail-flow-reports/mail-flow-reports) | modified |
+| 11/20/2020 | [Monitoring, reporting, and message tracing in Exchange Online](/Exchange/monitoring/monitoring) | modified |
+| 11/20/2020 | [Use mail protection reports to view data about malware, spam, and rule detections](/Exchange/monitoring/use-mail-protection-reports) | modified |
+| 11/20/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
+
+
 ## Week of November 09, 2020
 
 
@@ -165,17 +185,3 @@
 | 10/21/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
 | 10/21/2020 | [Shared mailboxes in Exchange Online](/Exchange/collaboration-exo/shared-mailboxes) | modified |
 | 10/21/2020 | [Transport agents in Exchange Server](/Exchange/mail-flow/transport-agents/transport-agents?view=exchserver-2016) | modified |
-
-
-## Week of October 12, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/12/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 10/12/2020 | [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](/Exchange/collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs) | modified |
-| 10/12/2020 | [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) | modified |
-| 10/12/2020 | [Mail flow rules in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules?view=exchserver-2016) | modified |
-| 10/15/2020 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
-| 10/15/2020 | [Use the Microsoft 365 and Office 365 mail migration advisor](/Exchange/mail-migration-jump) | modified |
-| 10/15/2020 | [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes) | modified |
