@@ -77,9 +77,31 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to create a group naming policy
+## Use the new EAC to create a group naming policy
 
-1. In the EAC, select **Groups** \> **More** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
+1. Go to [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Recipients** > **Groups**.
+
+2. Click **Add naming policy** to add prefixes and suffixes to your group names.
+
+3. In **Edit group naming policy** details pane, under **Policy** section, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu 
+   
+4. Click **Add prefix** to add additional prefixes.
+
+5. For the suffix, in the pull-down menu, select either Attribute or Text, and configure the suffix.
+
+6. Click **Add suffix** to add additional prefixes.
+
+   After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
+   
+ 7. To delete a prefix or suffix from the policy, click **X**.
+ 
+ 8. Under **Blocked words** section, add block specific words from being used in group names and aliases.
+ 
+ 9. When you are finished, click **Save**.
+ 
+## Use the Classic EAC to create a group naming policy
+
+1. In the Classic EAC, select **Groups** \> **More** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
