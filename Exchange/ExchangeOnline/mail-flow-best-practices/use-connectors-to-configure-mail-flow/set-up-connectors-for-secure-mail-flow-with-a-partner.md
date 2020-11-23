@@ -70,7 +70,7 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 
 To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
 
-:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which a new connector is set up":::
+:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which a new connector is set up"::: <this image to be replaced with the image - office-365-to-partner.png>
 
 Click **Next**, and follow the instructions in the wizard. Click the Help or Learn More links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
@@ -83,6 +83,8 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 ![Microsoft 365 and Office 365 to partner organization connector options](../../media/93cb9e70-f8d8-4e63-bb92-caafd8b79ad7.png)
 
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](validate-connectors.md) for help resolving issues.
+
+**Applicable to New and Classic Exchange admin centers**
 
 If you want to create a secure channel with your partner organization in both directions, set up a connector that restricts mail flow from your partner organization to Microsoft 365 or Office 365.
 
@@ -106,6 +108,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, save your connector.
 
 **Applicable to New and Classic Exchange admin centers**
+
 Ask your partner organization to send a test email. Make sure the email your partner organization sends will cause the connector to be applied. For example, if you specified security restrictions for mail sent from a specific partner domain, make sure they send test mail from that domain. Check that the test email is delivered to confirm that the connector works correctly.
 
 ## Change a connector that Microsoft 365 or Office 365 is using for mail flow
@@ -146,7 +149,9 @@ To start the wizard, click the plus symbol **+**. To create a connector for emai
 
 ![Connector from partner organization to Microsoft 365 or Office 365](../../media/e6d15001-989b-48b3-a848-427b800c2a70.png)
 
-Once you choose this mail flow scenario (for both, New and Classic Exchange admin centers), you can set up a connector that will apply security restrictions to email that your partner organization sends to you. For some security restrictions, you might need to talk to your partner organization to obtain information to complete some settings. Look for the examples that best meet your needs to help you set up your partner connector.
+
+**Applicable to New and Classic Exchange admin centers**
+Once you choose this mail flow scenario, you can set up a connector that will apply security restrictions to email that your partner organization sends to you. For some security restrictions, you might need to talk to your partner organization to obtain information to complete some settings. Look for the examples that best meet your needs to help you set up your partner connector.
 
 > [!NOTE]
 > Any email sent from your partner organization that does not meet security restrictions that you specify will not be delivered.
@@ -183,6 +188,9 @@ Choose this setting to require encryption for all email from ContosoBank.com usi
 
 ![Choose TLS to encrypt email from partner organization](../../media/0de0e09c-8420-419f-87fc-cf66f10098ec.png)
 
+
+**Applicable to New and Classic Exchange admin centers**
+
 When you choose these settings, all email from your partner organization's domain, ContosoBank.com, must be encrypted using TLS. Any mail that is not encrypted will be rejected.
 
 ### Example 2: Require that email sent from your partner organization domain ContosoBank.com is encrypted and uses their domain certificate
@@ -215,6 +223,9 @@ To do this, specify your partner organization domain name to identify mail from 
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
+
+**Applicable to New and Classic Exchange admin centers**
+
 When you set these restrictions, all email sent from your partner organization domain, ContosoBank.com, or from your on-premises environment must be sent from the IP address or an address range you specify. Any mail that does not meet these conditions will be rejected.
 
 ### Example 4: Require that all email sent to your organization from the internet is sent from a specific IP address (third-party email service scenario)
@@ -244,6 +255,8 @@ To restrict all mail sent to your organization from a specific IP address or add
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
+**Applicable to New and Classic Exchange admin centers**
+
 When you set these restrictions, all mail sent to your organization must be sent from a specific IP address range. Any internet email that does not originate from this IP address range will be rejected.
 
 ### Example 5: Require that all mail sent from your partner organization IP address or address range is encrypted using TLS
@@ -272,6 +285,8 @@ Add the requirement for TLS encryption by using this setting:
 **In Classic Exchange admin center**
 
 ![Choose TLS to encrypt email from partner organization](../../media/0de0e09c-8420-419f-87fc-cf66f10098ec.png)
+
+**Applicable to New and Classic Exchange admin centers**
 
 When you set these restrictions, all mail from your partner organization sent from the IP address or address range you specify must be sent using TLS. Any mail that does not meet this restriction will be rejected.
 
