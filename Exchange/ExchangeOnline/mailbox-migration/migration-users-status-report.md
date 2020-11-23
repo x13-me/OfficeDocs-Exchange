@@ -56,7 +56,7 @@ The name of the migration batch and the following commands are displayed at the 
 |**Items Synced**|The number of items in the user's on-premises mailbox that were successfully migrated to the Microsoft 365 or Office 365 mailbox.|
 |**Items Skipped**|The number of items in the user's on-premises mailbox that weren't migrated to the Microsoft 365 or Office 365 mailbox.|
 
-## Migration user statistics for a specific user
+## Migration user statistics for a specific user in new Exchange admin center (New EAC)
 
 [image]
 
@@ -95,7 +95,7 @@ The name of the migration batch and the following commands are displayed at the 
 |**Items Synced**|The number of items in the user's on-premises mailbox that were successfully migrated to the Microsoft 365 or Office 365 mailbox.|
 |**Items Skipped**|The number of items in the user's on-premises mailbox that weren't migrated to the Microsoft 365 or Office 365 mailbox.|
 
-## Migration user statistics for a specific user
+## Migration user statistics for a specific user in Classic Exchange admin center (Classic EAC)
 <a name="BK_Userstats"> </a>
 
 To view status information (also called migration user statistics) for a specific mailbox, mail contact, or distribution group, click the mailbox, contact, or distribution group in the list. Status information for the selected mail object is displayed in the details pane. The following table describes each field displayed in the details pane.
