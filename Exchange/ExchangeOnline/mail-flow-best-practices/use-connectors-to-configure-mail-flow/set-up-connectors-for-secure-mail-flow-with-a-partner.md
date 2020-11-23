@@ -158,7 +158,7 @@ To do this, specify your partner organization domain name to identify mail from 
 
 **In New Exchange admin center**
 
-<include the image - connector-partner-to-365-encryption-tls.png>
+:::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which TLS encryption is done":::
 
 **In Classic Exchange admin center**
 ![Choose to use the sender's domain name](../../media/3b3b0cc6-3928-4cab-a022-436821f9d559.png)
@@ -167,7 +167,7 @@ Use this screen to enter your partner organization's domain name(s) so the conne
 
 **In New Exchange admin center**
 
-<include the image - domain-name-partner-to-365-encryption-tls.png>
+:::image type="content" source="../../media/domain-name-partner-to-365-encryption-tls.png" alt-text="The screen on which the domain name is set":::
 
 **In Classic Exchange admin center**
 
@@ -177,7 +177,7 @@ Choose this setting to require encryption for all email from ContosoBank.com usi
 
 **In New Exchange admin center**
 
-<include the image - requiring-tls-encryption.png>
+:::image type="content" source="../../media/requiring-tls-encryption.png" alt-text="YThe screen on which the mandatory TLS encryption is configured":::
 
 **In Classic Exchange admin center**
 
@@ -188,12 +188,11 @@ When you choose these settings, all email from your partner organization's domai
 ### Example 2: Require that email sent from your partner organization domain ContosoBank.com is encrypted and uses their domain certificate
 <a name="example1"> </a>
 
-
 To do this, use all the settings shown in Example 1. Also, add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365. Use this option during setup:
 
 **In New Exchange admin center**
 
-<include the image - encryption-using-certificate-new-eac.png>
+:::image type="content" source="../../media/encryption-using-certificate-new-eac.png" alt-text="The screen on which encryption is done using the domain certificate name":::
 
 **In Classic Exchange admin center**
 
@@ -210,7 +209,7 @@ To do this, specify your partner organization domain name to identify mail from 
 
 **In New Exchange admin center**
 
-<include the image - receive-email-from-specific-ip-address.png>
+:::image type="content" source="../../media/receive-email-from-specific-ip-address.png" alt-text="The screen on which email source IP address is set":::
 
 **In Classic Exchange admin center**
 
@@ -231,12 +230,11 @@ To restrict all mail sent to your organization from a specific IP address or add
 
 **In New Exchange admin center**
 
-<include the image - connector-partner-to-365-encryption-tls.png>
+:::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which the sender's domain name is configured to be used":::
 
-<include the image - specific-internet-ip-address.png>
+:::image type="content" source="../../media/specific-internet-ip-address.png" alt-text="The screen on which there is a configuration to apply the settings globally":::
 
-<include the image - configuring-receipt-from-specific-ip-address.png>
-
+:::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which the your partner organization's IP address range is defined":::
 
 **In Classic Exchange admin center**
 
@@ -256,7 +254,7 @@ To identify your partner organization by IP address, use these options during se
 
 **In New Exchange admin center**
 
-<include the image - identify-partner-by-ip-address.png>
+:::image type="content" source="../../media/identify-partner-by-ip-address.png" alt-text="The screen on which the mails by partner organization are identified by IP address of the sender":::
 
 **In Classic Exchange admin center**
 
@@ -268,6 +266,7 @@ Add the requirement for TLS encryption by using this setting:
 
 **In New Exchange admin center**
 
+:::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which IP addresses by which Partner organization will be identified is set":::
 <include the image - configuring-receipt-from-specific-ip-address.png>
 
 **In Classic Exchange admin center**
