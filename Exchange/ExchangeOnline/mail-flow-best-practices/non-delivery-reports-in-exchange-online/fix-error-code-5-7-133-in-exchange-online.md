@@ -40,7 +40,29 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Allow all internal and external senders to send messages to this group
 
-1. 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+**In New Exchange admin center (EAC)**
+
+ 1. In the New Exchage admin center (EAC), go to **Recipients** \> **Groups** \> select and click the group from the list.
+
+ 2. On the group-details screen, click **Settings**, as shown in the below screenshot.
+ 
+<inlcude the image group-screen.png>
+
+ 3. Under **Settings > Advanced Settings**, click **Manage more settings in the classic Exchange admin center**, as shown in the below screenshot.
+ 
+<include the image - settings-tab-in-group-screen.png>
+ 
+ 4. On the left pane, click **delivery management** and select **Senders inside and outside of my organization**, as shown in the screenshot below.
+ 
+<include the image - configuring-all-senders-to-send-email.png>
+ 
+ 5. Click **Save**.
+
+ 
+
+**In Classic Exchange admin center (EAC)**
+
+ 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![Finding groups in the Exchange admin center](../../media/8b57ae07-1a2c-4cb7-94a7-70f898be6276.png)
 
