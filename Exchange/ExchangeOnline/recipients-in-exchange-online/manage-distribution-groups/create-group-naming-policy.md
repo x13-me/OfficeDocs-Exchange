@@ -83,11 +83,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 2. Click **Add naming policy** to add prefixes and suffixes to your group names.
 
-3. In **Edit group naming policy** details pane, under **Policy** section, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu 
+3. In **Edit group naming policy** details pane, under **Policy** section, configure the prefix by selecting either **Attribute** or **Text** in the drop-down menu. 
    
 4. Click **Add prefix** to add additional prefixes.
 
-5. For the suffix, in the pull-down menu, select either Attribute or Text, and configure the suffix.
+5. For the suffix, in the drop-down menu, select either **Attribute** or **Text**, and configure the suffix.
 
 6. Click **Add suffix** to add additional prefixes.
 
@@ -95,7 +95,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
    
  7. To delete a prefix or suffix from the policy, click **X**.
  
- 8. Under **Blocked words** section, add block specific words from being used in group names and aliases.
+ 8. Under **Blocked words** section, add specific words that you want to block from being used in group names and aliases.
  
  9. When you are finished, click **Save**.
  
