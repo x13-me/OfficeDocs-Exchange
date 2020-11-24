@@ -40,7 +40,35 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Allow all internal and external senders to send messages to this mail user
 
-1. In the EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+**In New Exchange admin center**
+
+1. In the New Exchange admin center (EAC), go to **Recipients** \> **Mailboxes** > select the user mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+The screen as shown in the below screenshot is displayed.
+
+<include the image - editing-mailbox-details.png>
+
+2. Under **Mail flow settings** and then click **Manage mail flow settings**.
+
+3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+
+<include the image - manage-mail-flow-settings-screen.png>
+
+4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+
+   - Select **All senders**.
+   - Clear the check box for **Require that all senders are authenticated**.
+
+5. In the **Message delivery restrictions** dialog box, configure the following settings in the **Block messages from** section:
+
+   - Select **None**.
+
+<include the image settings-message-delivery-restrictions.png>
+6. Click **Save**.
+
+**In Classic Exchange admin center**
+
+1. In the Classic EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![View contacts to help fix DSN 5.7.136](../../media/de84fb82-f697-443b-87f6-b0621dcf8a44.png)
 
@@ -69,6 +97,31 @@ Instead of allowing all external senders to send messages to this mail user, you
 - The mail user's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the mail user's allowed senders list, open the EAC do the following steps:
+
+**In New EAC**
+
+1. In the New Exchange admin center (EAC), go to **Recipients** \> **Mailboxes** > select the user mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+The screen as shown in the below screenshot is displayed.
+
+<include the image - editing-mailbox-details.png>
+
+2. Under **Mail flow settings** and then click **Manage mail flow settings**.
+
+3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+
+<include the image - manage-mail-flow-settings-screen.png>
+
+4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+
+   - Clear the check box for **Require that all senders are authenticated**.
+   - Select **Selected senders**.
+   - Click **+ Add sender**.
+   - In the **Accept messages from** dialog box that opens, check the check box of the sender you want to add, and click **Confirm**.
+   
+<include the image - adding-specific-senders.png>
+
+**In Classic EAC**
 
 1. In the EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
