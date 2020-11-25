@@ -34,7 +34,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 3. Under **Connection to**, select either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
 
-:::image type="content" source="../../media/configuring-connector-365-to-partner-new.png" alt-text="connector from 365 to own or partner organization":::
+:::image type="content" source="../../media/365-to-your-organization.png" alt-text="The screen on which a connector is being created from Office 365 to your organization's mail server":::
 
 4. Click **Next**, and in the **Connector name** screen, name the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
 
