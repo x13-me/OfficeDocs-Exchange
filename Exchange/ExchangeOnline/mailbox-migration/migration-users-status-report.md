@@ -36,9 +36,9 @@ You can also use Exchange Online PowerShell to display migration user statistics
 
 ## Migration users report in new Exchange admin center (New EAC)
 
-To access the migration users report for a migration batch, go to new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch** and then in the details pane, under **Mailbox status**, click **View details**.
+To access the migration users report for a migration batch, go to new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under **Migration details**, click **View details**.
 
-[image]
+![Migration user report](../media/migration-user-report.png)
 
 The name of the migration batch and the following commands are displayed at the top of the window.
 
@@ -51,21 +51,19 @@ The name of the migration batch and the following commands are displayed at the 
 
 |**Column**|**Description**|
 |:-----|:-----|
-|**Identity**|The user's email address.|
+|**Name**|The user's email address.|
 |**Status**|The user's migration status. See the status descriptions in the table in the next section.|
 |**Items Synced**|The number of items in the user's on-premises mailbox that were successfully migrated to the Microsoft 365 or Office 365 mailbox.|
 |**Items Skipped**|The number of items in the user's on-premises mailbox that weren't migrated to the Microsoft 365 or Office 365 mailbox.|
 
 ## Migration user statistics for a specific user in new Exchange admin center (New EAC)
 
-[image]
-
 To view status information (also called migration user statistics) for a specific mailbox, mail contact, or distribution group, click the mailbox, contact, or distribution group in the list. Status information for the selected mail object is displayed in the details pane. The following table describes each field displayed in the details pane.
 
 |**Field**|**Description**|
 |:-----|:-----|
-|**Status**| Identifies the specific point in the migration process for each mail object in the migration batch. This status is more specific than the high-level status summary displayed in the list of migration users. The following list describes each status state. <br/>• **Queued**: The object is in a migration batch that is running, but the migration of the object hasn't started yet. Objects typically have a status of **Queued** when all of the connections in the migration endpoint associated with the migration batch are being used. <br/>• **Provisioning**: The migration process has started for the mail object, but it isn't provisioned yet. <br/>• **Provision updating**: The mail object has been provisioned, but not all the object's properties were migrated. For example, after a distribution group has been migrated, this state occurs when members of the group haven't been migrated yet or there's a problem migrating a user who is a member of the group. In this case, the status indicates the migration process can't update the group membership because not all group members have been migrated. <br/>• **Synced**: The migration process successfully provisioned the Microsoft 365 or Office 365 mailbox and completed the initial synchronization where all mailbox items were copied to the cloud-based mailbox. For cutover Exchange migrations and IMAP migrations, this status can also indicate that incremental synchronization completed successfully. <br/>• **Failed**: The provisioning or the initial synchronization of the mail object failed. If a Microsoft 365 or Office 365 mailbox is successfully created for a user, but the migration of mailbox items fails, the status for the user will be **Failed**.|
-|**Skipped item details**| Click **Skipped item details** to display information about each item that was skipped for the selected user. The following information about each skipped item is displayed: <br/>• **Date**: The time stamp of the mailbox item. <br/>• **Subject**: The subject line of the message. <br/>• **Kind**: The type of error that caused the item to be skipped. <br/>• **Folder name**: The folder where the skipped item is located.|
+|**Status**| Identifies the specific point in the migration process for each mail object in the migration batch. This status is more specific than the high-level status summary displayed in the list of migration users. The following list describes each status state. • **Completed**: The migration process is successfully completed and all mailbox items were migrated to the cloud-based mailbox. • **Queued**: The object is in a migration batch that is running, but the migration of the object hasn't started yet. Objects typically have a status of **Queued** when all of the connections in the migration endpoint associated with the migration batch are being used. • **Synced**: The migration process successfully provisioned the Microsoft 365 or Office 365 mailbox and completed the initial synchronization where all mailbox items were copied to the cloud-based mailbox. For cutover Exchange migrations and IMAP migrations, this status can also indicate that incremental synchronization completed successfully. • **Failed**: The provisioning or the initial synchronization of the mail object failed. If a Microsoft 365 or Office 365 mailbox is successfully created for a user, but the migration of mailbox items fails, the status for the user will be **Failed**.|
+|**Skipped item details**| Click **Skipped item details** to display information about each item that was skipped for the selected user. The following information about each skipped item is displayed: • **Date**: The time stamp of the mailbox item. • **Subject**: The subject line of the message. • **Kind**: The type of error that caused the item to be skipped. • **Folder name**: The folder where the skipped item is located.|
 |**Data migrated**|The total amount of data (in bytes and megabytes (MB)) for the mailbox items that have been migrated to the Microsoft 365 or Office 365 mailbox. This number includes items migrated in both the initial and incremental synchronizations. This field doesn't have a value for IMAP migrations.|
 |**Migration rate**|The average transfer rate (in bytes or MB per minute) of data copied to the Microsoft 365 or Office 365 mailbox. This field doesn't have a value for IMAP migrations.|
 |**Error**|If the migration for the user failed, this field displays a description of the error. This error description is also included in the Migration Errors report.|
