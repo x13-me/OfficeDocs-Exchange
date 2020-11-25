@@ -38,6 +38,12 @@ The two methods that will allow an external sender to send messages to the mail 
 
 To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
+> [!NOTE]
+> The EAC mentioned above refers to the New EAC.
+
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen. See <include the image - navigation-to-classic-eac.png>.
+
+
 ### Method 1: Allow all internal and external senders to send messages to this mail user
 
 **In New Exchange admin center**
