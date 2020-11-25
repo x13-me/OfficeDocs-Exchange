@@ -80,9 +80,9 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
    - Your organization relays non-delivery reports (also known as NDRs or bounce messages) to the internet through Microsoft 365 or Office 365.
 
-     To create the connector, choose the first option in the connector creation wizard on the **How should Office 365 identify email for your email server** screen.
-
-<include the image - connector-to-manage-mfml.png>
+     To create the connector, choose the first option in the connector creation wizard on the **How should Office 365 identify email for your email server** screen, as shown in the below two screenshots, for New EAC and Classic EAC, respectively.
+  
+:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations":::
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png) 
 
@@ -213,9 +213,9 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
    - The MX record for your domain, contoso.com, points to your on-premises server, and users in your organization automatically forward messages to email addresses outside your organization. For example, kate@contoso.com has forwarding enabled, and all messages go to kate@tailspintoys.com. If john@fabrikam.com sends a message to kate@contoso.com, by the time the message arrives at Microsoft 365 or Office 365, the sender domain is fabrikam.com and the recipient domain is tailspin.com. Neither the sender domain nor recipient domain belongs to your organization.
 
-     To create the connector, choose the first option in the connector creation wizard on the **How should Microsoft 365 or Office 365 identify email for your email server** screen.
+     To create the connector, choose the first option in the connector creation wizard on the **How should Microsoft 365 or Office 365 identify email for your email server** screen, as shown in the below two screenshots, for New EAC and Classic EAC, respectively.
 
-<include the image - connector-to-manage-mfml.png>
+:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations":::
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
