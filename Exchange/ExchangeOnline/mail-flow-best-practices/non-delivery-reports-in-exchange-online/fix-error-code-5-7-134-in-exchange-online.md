@@ -38,9 +38,32 @@ The two methods that will allow an external sender to send messages to the mailb
 
 To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
+> [!NOTE]
+> The EAC mentioned above refers to the New EAC.
+
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen. See <include the image - navigation-to-classic-eac.png>
+
 ### Method 1: Allow all internal and external senders to send messages to this mailbox
 
-1. In the EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+**In New EAC**
+
+1. In the New EAC, go to **Recipients** \> **Mailboxes** > select and click the user mailbox from the list.
+
+2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+
+<include the image - managing-mail-flow-settings.png>
+
+3. In the **Manage mail flow settings** dialog box that opens up, click **Edit** in the **Message delivery restriction** pane.
+
+:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
+
+4. In the Message delivery restrictions dialog box that opens, under **Accept messages from**, clear the check box for **Check if all senders are authenticated**
+
+5. Click **Save**.
+
+**In Classic Exchange admin center (EAC)**
+
+1. In the Classic EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![Find mailboxes in Exchange admin center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
 
@@ -64,9 +87,31 @@ Instead of allowing all external senders to send messages to this mailbox, you c
 
 - The mailbox's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
-To configure the mailbox's allowed senders list, open the EAC do the following steps:
 
-1. In the EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+To configure the mailbox's allowed senders list, do the following steps:
+
+**In New EAC**
+
+1. In the New EAC, go to **Recipients** \> **Mailboxes** > select and click the user mailbox from the list.
+
+2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+
+<include the image - managing-mail-flow-settings.png>
+
+3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+
+:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
+
+4. In the Message delivery restrictions dialog box that opens, configure the following settings in the **Accept messages from** section:
+  - Clear the check box for **Check if all senders are authenticated**
+  - Select **Selected senders**.
+  - Click **+ Add sender**.
+  - In the **Accept messages from** dialog box that opens, check the check box of the internal-senders group and the specific external users whom you want to add.
+  - Click **Confirm**.
+
+**In Classic EAC**
+
+1. In the Classic EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![Find mailboxes in Exchange admin center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
 
