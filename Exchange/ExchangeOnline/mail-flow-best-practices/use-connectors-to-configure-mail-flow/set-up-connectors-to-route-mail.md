@@ -250,7 +250,9 @@ Make sure both emails are received.
 
 ## Change a connector that Microsoft 365 or Office 365 is using for mail flow
 
-To change settings for a connector, select the connector you want to edit and then select the edit icon as shown in the following screen shot.
+To change settings for a connector, select the connector you want to edit and then select the edit icon as shown in the following screen shots, for New EAC and Classic EAC, respectively.
+
+<include the image - editing-connector-new-eac.png>
 
 ![Shows a screen shot with a connector selected and the edit (pencil) icon highlighted.](../../media/9654b36f-40d2-4791-ae5c-ce3afd9bb683.png)
 
