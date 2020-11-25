@@ -30,9 +30,9 @@ You can use the Migration dashboard in the Microsoft 365 or Office 365 Exchange 
 
 ## The Migration dashboard for new Exchange admin center (New EAC)
 
-To access the Migration dashboard in the EAC, go to new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
+To access the Migration dashboard in the new EAC, go to new [Exchange admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
 
-[image]
+![Migration dashboard part1](../media/migration-dashboard-part1.png)
 
 ### Migration batches
 
@@ -41,7 +41,7 @@ Migration batches that are created are listed in the migration queue. The follow
 |**Column**|**Description**|
 |:-----|:-----|
 |**Name**|The name of the migration batch that was defined when it was created.|
-|**Status**| The status of the migration batch. The following is a list of the different status states for migration batches, along with what you can do with migration batches in each of these states:  <br/> **Stopped**: Either the migration batch has been created but hasn't been started, or it has been stopped after running for some period of time. In this state, you can start, edit, or delete it. <br/> **Syncing**: The migration batch has been started, and mailboxes in the migration batch are being actively migrated. When a migration batch is in this state, you can stop it. <br/> **Stopping**: Immediately after you run [Stop-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Stop-MigrationBatch) cmdlet. <br/> **Starting**: Immediately after you run [Start-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Start-MigrationBatch) cmdlet. <br/> **Completing**: Immediately after you run [Complete-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Complete-MigrationBatch) cmdlet. <br/> **Removing:** Immediately after you run [Remove-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Remove-MigrationBatch) cmdlet. <br/> **Synced**: The migration batch has completed an initial sync of the data. A migration batch in this state may contain errors if mailboxes weren't migrated. For most types of migrations, the remote/on-premises mailboxes and the corresponding Microsoft 365 or Office 365 mailboxes are synchronized every 24 hours during incremental synchronization. <br/> **Completed**: The migration batch is complete. <br/> **Synced with errors**: The migration batch has completed an initial sync of the data, but some mailboxes failed migration. Mailboxes that were successfully migrated in migration batches with errors are still synchronized every 24 hours during incremental synchronization.|
+|**Status**| The status of the migration batch. The following is a list of the different status states for migration batches, along with what you can do with migration batches in each of these states: **Stopped**: Either the migration batch has been created but hasn't been started, or it has been stopped after running for some period of time. In this state, you can start, edit, or delete it. **Syncing**: The migration batch has been started, and mailboxes in the migration batch are being actively migrated. When a migration batch is in this state, you can stop it. **Stopping**: Immediately after you run [Stop-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Stop-MigrationBatch) cmdlet. **Starting**: Immediately after you run [Start-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Start-MigrationBatch) cmdlet. **Completing**: Immediately after you run [Complete-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Complete-MigrationBatch) cmdlet. **Removing:** Immediately after you run [Remove-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Remove-MigrationBatch) cmdlet. **Synced**: The migration batch has completed an initial sync of the data. A migration batch in this state may contain errors if mailboxes weren't migrated. For most types of migrations, the remote/on-premises mailboxes and the corresponding Microsoft 365 or Office 365 mailboxes are synchronized every 24 hours during incremental synchronization. **Completed**: The migration batch is complete. **Synced with errors**: The migration batch has completed an initial sync of the data, but some mailboxes failed migration. Mailboxes that were successfully migrated in migration batches with errors are still synchronized every 24 hours during incremental synchronization.|
 |**Percentage synced**|Indicates the percentage of mailboxes that were successfully migrated in migration batches.|
 |**Total**|Indicates the number of mailboxes in the migration batch.|
 |**Synced**|Indicates the number of mailboxes that were successfully migrated.|
@@ -51,7 +51,7 @@ Migration batches that are created are listed in the migration queue. The follow
 > [!IMPORTANT]
 > Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 60 days will be stopped. All batches with **Stopped** or **Failed** status will be removed after 90 days. All batches with **Completed** status will be removed after 60 days.
 
-The Migration dashboard contains a set of commands that you can use to manage migration batches. After you create a migration batch, you can select it, and then click one of the following commands. If a migration batch is in a status state that isn't supported by a command, the command is either dimmed or not displayed because it's unavailable.
+The Migration dashboard contains a set of commands that you can use to manage migration batches. After you create a migration batch, you can select it, and then click one of the following commands. 
 
 |**Command**|**Description**|
 |:-----|:-----|
@@ -67,18 +67,19 @@ The Migration dashboard contains a set of commands that you can use to manage mi
 
 The details pane in the Migration dashboard displays the following information about the selected migration batch.
 
+![Migration dashboard part2](../media/migration-dashboard-partt2.png)
+
 |**Field**|**Description**|
 |:-----|:-----|
-|**Type**| Indicates the migration type of the selected migration batch. The value of this field also denotes the type of migration endpoint associated with the migration batch. <br/> **Exchange Outlook Anywhere**: The migration batch is either a cutover Exchange migration or a staged Exchange migration. <br/> **IMAP**: The migration batch is an IMAP migration. <br/> **Remote move migration**: The migration batch is either an onboarding or offboarding remote move migration in an Exchange hybrid deployment. <br/> **Gmail**: The migration batch is a G Suite migration.|
-|**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. <br/> **Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, G Suite migrations, and onboarding remote move migrations. <br/> **Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
-|**Status**| The current state of the selected migration batch. <br/> **Completed** <br/> **Syncing** <br/> **Stopped** <br/> **Synced** <br/> **Synced with errors** <br/>  See the previous description of each of these states.|
+|**Type**| Indicates the migration type of the selected migration batch. The value of this field also denotes the type of migration endpoint associated with the migration batch. **Exchange Outlook Anywhere**: The migration batch is either a cutover Exchange migration or a staged Exchange migration. **ExchangeRemoteMove**: The migration batch is either an onboarding or offboarding remote move migration in an Exchange hybrid deployment. **Gmail**: The migration batch is a G Suite migration.|
+|**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. **Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, G Suite migrations, and onboarding remote move migrations. **Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
+|**Status**| The current state of the selected migration batch. **Completed** **Syncing** **Stopped** **Synced** **Synced with errors** See the previous description of each of these states.|
 |**View details**|Click **View details** to display status information for each mailbox in the migration batch. For more information, see [Migration users status report](migration-users-status-report.md).|
-|**Requested**|The number of mailboxes to be migrated in the migration batch. This number corresponds to the number of rows in the migration CSV file for IMAP, G Suite, staged, or remote move migrations, or the number of on-premises mailboxes in a cutover Exchange migration.|
 |**Synced mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
 |**Finalized mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
 |**Failed mailboxes**|The number of mailboxes that failed initial synchronization.|
 |**Created by**|The email address of the Microsoft 365 or Office 365 administrator who created the migration batch.|
-|**Create time**|The date and time when the migration batch was created.|
+|**Created time**|The date and time when the migration batch was created.|
 |**Start time**|The date and time when the migration batch was started.|
 |**Complete after**|The date and time when the migration batch is completed.|
 |**Last synced time**|The last time the migration batch was restarted or the last time that incremental synchronization was performed for the batch. As previously stated, incremental synchronization occurs every 24 hours.|
@@ -87,7 +88,7 @@ The details pane in the Migration dashboard displays the following information a
 ## The Migration dashboard for Classic Exchange admin center (Classic EAC)
 <a name="bk_dashboard"> </a>
 
-To access the Migration dashboard in the EAC, select **Recipients** \> **Migration**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
+To access the Migration dashboard in the Classic EAC, select **Recipients** \> **Migration**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
 
 ![Migration dashboard](media/f06294d1-1152-45ac-90a1-b711be9a4484.jpg)
 
