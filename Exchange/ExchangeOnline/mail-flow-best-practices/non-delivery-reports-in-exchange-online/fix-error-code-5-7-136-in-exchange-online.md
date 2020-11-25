@@ -46,13 +46,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 The screen as shown in the below screenshot is displayed.
 
-<include the image - editing-mailbox-details.png>
+:::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
 
 2. Under **Mail flow settings** and then click **Manage mail flow settings**.
 
 3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
 
-<include the image - manage-mail-flow-settings-screen.png>
+:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
 4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
 
@@ -63,7 +63,8 @@ The screen as shown in the below screenshot is displayed.
 
    - Select **None**.
 
-<include the image settings-message-delivery-restrictions.png>
+:::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which message delivery restriction settings are reset":::
+
 6. Click **Save**.
 
 **In Classic Exchange admin center**
@@ -104,13 +105,13 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 The screen as shown in the below screenshot is displayed.
 
-<include the image - editing-mailbox-details.png>
+:::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
 
 2. Under **Mail flow settings** and then click **Manage mail flow settings**.
 
 3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
 
-<include the image - manage-mail-flow-settings-screen.png>
+:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
 4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
 
@@ -119,6 +120,7 @@ The screen as shown in the below screenshot is displayed.
    - Click **+ Add sender**.
    - In the **Accept messages from** dialog box that opens, check the check box of the sender you want to add, and click **Confirm**.
    
+
 <include the image - adding-specific-senders.png>
 
 **In Classic EAC**
