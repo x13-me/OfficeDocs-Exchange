@@ -66,11 +66,11 @@ The important settings for the connector are:
 
 - Uses TLS to encrypt the connection based on the domain name of the email add-on service (smart host).
 
-### Use the EAC to create the outbound connector to the email add-on service
+### Use the Exchange admin center (EAC) to create the outbound connector to the email add-on service
 
-#### New Exchange admin center
+#### New EAC
 
-1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
+1. In the New EAC, go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
@@ -120,9 +120,9 @@ The important settings for the connector are:
 
 11. When the connector validation is complete, click **Close**.
 
-#### Classic Exchange admin center
+#### Classic EAC
 
-1. In the Classic Exchange admin center (EAC), go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
@@ -190,7 +190,7 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-#### For Classic Exchange admin center
+#### For Classic EAC
 
 1. In the Classic EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
@@ -209,7 +209,7 @@ The rule routes messages from internal senders to the outbound connector that yo
    - **Do the following**: Select **Redirect the message to** \> **The following connector** \> Select the outbound connector you created in Step 1, and then click **OK**.
 
    - **Except if**: Click **Add exception** \> Select **A message header** \> **Includes and of these words**.
-
+]
    - Click **Enter text**, enter the name of the custom header field that's applied by the email add-on service (for example, SignatureContoso), and then click **OK**.
 
    - Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
@@ -246,7 +246,7 @@ The important settings for the connector are:
 
 ### Use the EAC to create an inbound connector to receive messages from the email add-on service
 
-#### For New Exchange admin center
+#### For New EAC
 
 1. In the New EAC, go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
 
@@ -285,7 +285,7 @@ The important settings for the connector are:
 
     :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 
-#### For Classic Exchange admin center
+#### For Classic EAC
 
 1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 

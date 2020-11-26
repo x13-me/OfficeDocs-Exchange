@@ -25,9 +25,9 @@ If your organization has its own email server (also called on-premises server), 
 
 ## Validate and turn on connectors
 
-### For New Exchange admin center
+### For New Exchange admin center (EAC)
 
-1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the New Exchange admin center. Select **Mail flow** and then **Connectors**.
+1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the New Exchange admin center (EAC). Select **Mail flow** and then **Connectors**.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
@@ -47,9 +47,9 @@ If your organization has its own email server (also called on-premises server), 
 
 6. For each connector, check whether the connector is turned on. If a connector that you need for mail flow isn't turned on, under **Edit name or status** choose **Turn it on**.
 
-### For Classic Exchange admin center
+### For Classic EAC
 
-1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the Classic Exchange admin center. Select **Mail flow** and then **Connectors**.
+1. Navigate to the Classic EAC portal by clicking **Classic Exchange admin center**. Select **mail flow** and then **connectors**.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
