@@ -42,25 +42,23 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **In New Exchange admin center (EAC)**
 
- 1. In the New Exchage admin center (EAC), go to **Recipients** \> **Groups** \> select and click the group from the list.
+ 1. In the New Exchange admin center (EAC), go to **Recipients** \> **Groups** \> select and click the group from the list.
 
  2. On the group-details screen, click **Settings**, as shown in the below screenshot.
  
-<inlcude the image group-screen.png>
+:::image type="content" source="../../media/group-screen.png" alt-text="The screen on which the option to edit settings is available":::
 
  3. Under **Settings > Advanced Settings**, click **Manage more settings in the classic Exchange admin center**, as shown in the below screenshot.
  
-<include the image - settings-tab-in-group-screen.png>
+:::image type="content" source="../../media/settings-tab-in-group-screen.png" alt-text="The screen displaying the option to manage settings in Classic EAC":::
  
  4. On the left pane, click **delivery management** and select **Senders inside and outside of my organization**, as shown in the screenshot below.
  
-<include the image - configuring-all-senders-to-send-email.png>
+:::image type="content" source="../../media/configuring-all-senders-to-send-email.png" alt-text="The screen on which restrictions to mail senders are removed":::
  
  5. Click **Save**.
 
- 
-
-**In Classic Exchange admin center (EAC)**
+ **In Classic EAC**
 
  1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
