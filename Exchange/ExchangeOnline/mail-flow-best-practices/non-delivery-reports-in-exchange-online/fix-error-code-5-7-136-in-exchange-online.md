@@ -46,7 +46,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 ### Method 1: Allow all internal and external senders to send messages to this mail user
 
-**In New Exchange admin center**
+**In New Exchange admin center (EAC)**
 
 1. In the New Exchange admin center (EAC), go to **Recipients** \> **Mailboxes** > select the user mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -73,7 +73,7 @@ The screen as shown in the below screenshot is displayed.
 
 6. Click **Save**.
 
-**In Classic Exchange admin center**
+**In Classic EAC**
 
 1. In the Classic EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -126,8 +126,7 @@ The screen as shown in the below screenshot is displayed.
    - Click **+ Add sender**.
    - In the **Accept messages from** dialog box that opens, check the check box of the sender you want to add, and click **Confirm**.
    
-
-<include the image - adding-specific-senders.png>
+:::image type="content" source="../../media/adding-specific-senders.png" alt-text="The screen on which specific external senders are added":::
 
 **In Classic EAC**
 
