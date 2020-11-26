@@ -51,7 +51,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
 
-<include the image - managing-mail-flow-settings.png>
+:::image type="content" source="../../media/managing-mail-flow-settings.png" alt-text="The screen on which the option to manage mail flow settings is available":::
 
 3. In the **Manage mail flow settings** dialog box that opens up, click **Edit** in the **Message delivery restriction** pane.
 
@@ -61,7 +61,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 5. Click **Save**.
 
-**In Classic Exchange admin center (EAC)**
+**In Classic EAC**
 
 1. In the Classic EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -96,7 +96,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
 
-<include the image - managing-mail-flow-settings.png>
+:::image type="content" source="../../media/managing-mail-flow-settings.png" alt-text="The screen on which the option to manage mail flow settings is available":::
 
 3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
 
