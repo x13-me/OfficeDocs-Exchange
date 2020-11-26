@@ -44,9 +44,9 @@ If a message is sent to a valid email address in Microsoft 365 or Office 365, th
 
 ## Configure DBEB
 
-This section describes the procedure to configure DBEB for both the New Exchange admin center (EAC) and Classic Exchange admin center (EAC).
+This section describes the procedure to configure DBEB for both the New Exchange admin center (EAC) and Classic EAC.
 
-**For New Exchange admin center**
+**For New EAC**
 
 1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
 
@@ -70,7 +70,7 @@ This section describes the procedure to configure DBEB for both the New Exchange
     
     3. On the screen that appears, ensure that the domain type is set to **Authoritative**. If it's set to **Internal relay**, change it to **Authoritative** and click **Save**.
 
-**For Classic Exchange admin center**
+**For Classic EAC**
 
 1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
 

@@ -32,8 +32,8 @@ The following table describes the character sets that you can configure in remot
 
 - In the New Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **+ Add a remote domain** to create a remote domain. In the window that opens, enter a name for the domain and enter a name for the equivalent remote version of the domain and click **Next**. Configure the automatic email reply types and click **Next**. Configure the message-reporting settings and click **Next**. Use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set, and click **Next**.  Review the settings configured and click **Save**.
 
-## Classic Exchange admin center (EAC)
-- In the Classic Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
+## Classic EAC
+- In the Classic EAC, go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
 
 - In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain) cmdlet.
 

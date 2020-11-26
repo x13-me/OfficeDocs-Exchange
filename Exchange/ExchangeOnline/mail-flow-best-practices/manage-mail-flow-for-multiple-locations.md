@@ -68,7 +68,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
      v=spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
      ```
 
-4. In the Exchange admin center, use the connector wizard to [Configure mail flow using connectors in Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md) for the following scenarios:
+4. In the Exchange admin center (EAC), use the connector wizard to [Configure mail flow using connectors in Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md) for the following scenarios:
 
    - Sending messages from Microsoft 365 or Office 365 to your organization's email servers
 
@@ -199,7 +199,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
-4. In the Exchange admin center, use the connector wizard to [Configure mail flow using connectors in Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md) for the following scenarios:
+4. In the EAC, use the connector wizard to [Configure mail flow using connectors in Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md) for the following scenarios:
 
    - Sending mail from Microsoft 365 or Office 365 to your organization's email servers
 
