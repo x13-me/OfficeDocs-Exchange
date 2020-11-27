@@ -181,21 +181,32 @@ Once you have completed Part 2, see the instructions at the end to check that yo
 
 1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **mail flow**, and click **connectors**.
 
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
+
 > [!NOTE]
 > If any connectors already exist for your organization, it is listed on clicking **Connectors**. See the image below.
-
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
 :::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
 
-3. Select the **Your organization's email server** radio button under **Connection from**, as shown in the following image.
+3. Select the **Your organization's email server** radio button under **Connection from**.
 
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
 
-4. Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
+4. Click **Next**, and follow the instructions in the wizard.  
+
+> [!NOTE]
+> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
+
+5. At the end, click **Create connector**.
+
+:::image type="content" source="../../media/create-connector-option.png" alt-text="The screen on which the option to create a connector is available":::
+
+The notification message **Connector created** is displayed, as shown in the below screenshot.
+
+:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
 
 #### For Classic EAC
 

@@ -38,7 +38,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
 4. Click **Next**, and in the **Connector name** screen, name the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
 
-:::image type="content" source="../../media/create-a-connector-new-eac.png" alt-text="The screen on which details for the connector being created is provided":::<replace this image with providing-a-connector-name-and-turning-on.png>
+:::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
 5. Click **Next**.
 

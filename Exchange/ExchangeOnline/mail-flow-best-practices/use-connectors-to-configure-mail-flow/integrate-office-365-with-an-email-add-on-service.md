@@ -287,7 +287,7 @@ The important settings for the connector are:
 
 The notification message **Connector created** is displayed.
 
-<include the image - connector-creation-notification.png>
+:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message about the connector creation is displayed":::
 
 #### For Classic EAC
 

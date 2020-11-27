@@ -33,8 +33,7 @@ If your organization has its own email server (also called on-premises server), 
 
 2. Choose the connector you want to validate or turn on. You can see information about the connector in the details pane as shown in the following screen shot.
 
-:::image type="content" source="../../media/details-pane.png" alt-text="The screen on which information about the connector is displayed":::
-<to replace the above screenshot with - display-of-validation-details.png>
+:::image type="content" source="../../media/display-of-validation-details.png" alt-text="The screen on which the validation history details for the connector is displayed":::
 
 3. When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screen shot.
 

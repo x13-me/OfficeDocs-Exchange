@@ -112,7 +112,7 @@ You can set up a connector to apply security restrictions to email that your par
 
 4. At the end, click **Create connector**.
 
-<include the image - create-connector-option.png
+:::image type="content" source="../../media/create-connector-option.png" alt-text="The screen on which the option to create a connector is available":::
 
 ### For Classic EAC
 
