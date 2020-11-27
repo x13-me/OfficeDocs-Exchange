@@ -60,17 +60,22 @@ If any connectors already exist for your organization, you can see them listed h
 
 ![Microsoft 365 and Office 365 connectors partner organization examples](../../media/9e8f0035-24b6-4d62-aecf-17f740530e31.png)
 
-Below are the procedures to set up a new connector
+Below are the procedures to set up a new connector.
 
 ### For New EAC
 
-To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the  New EAC. Next, select **Mail flow** and then **Connectors**. 
+To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the New EAC. Next, select **Mail flow** and then **Connectors**. 
 
-To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
+1. To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
 
 :::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
 
-Click **Next**, and follow the instructions in the wizard. Click the Help or Learn More links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+2. Click **Next**, and follow the instructions in the wizard.  
+
+> [!NOTE]
+> If you need more information about the setup, click the **Help** or **Learn More** links.
+
+3. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 
@@ -91,9 +96,23 @@ You can set up a connector to apply security restrictions to email that your par
 
 ### For New EAC
 
-To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the below screenshot:
+1. To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the below screenshot:
 
 :::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
+
+2. Select the **Partner organization** radio button under **Connection from**.
+
+> [!NOTE]
+> Once you select the **Partner organization** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
+
+3. Click **Next**, and follow the instructions in the wizard.
+
+> [!NOTE]
+> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
+
+4. At the end, click **Create connector**.
+
+<include the image - create-connector-option.png
 
 ### For Classic EAC
 
@@ -129,11 +148,7 @@ Review these connector examples to help you decide whether you want to apply sec
 
 **For New EAC**
 
-To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the New EAC. Next, select **Mail flow** and then **Connectors**.
-
-To start the wizard, click **+Add a new connector**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot:
-
-:::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which you create a connector to receive email from a partner organization":::
+For details on this procedure, see **Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365** > **For New EAC** in this topic.
 
 **For Classic EAC**
 
@@ -157,26 +172,22 @@ To do this, specify your partner organization domain name to identify mail from 
 
 :::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which TLS encryption is done":::
 
+Use this screen to enter your partner organization's domain name(s) so the connector can identify mail sent by your partner:
+
+:::image type="content" source="../../media/domain-name-partner-to-365-encryption-tls.png" alt-text="The screen on which the domain name is set":::
+
+Choose this setting to require encryption for all email from ContosoBank.com using TLS:
+
+:::image type="content" source="../../media/requiring-tls-encryption.png" alt-text="YThe screen on which the mandatory TLS encryption is configured":::
+
 **In Classic EAC**
 ![Choose to use the sender's domain name](../../media/3b3b0cc6-3928-4cab-a022-436821f9d559.png)
 
 Use this screen to enter your partner organization's domain name(s) so the connector can identify mail sent by your partner:
 
-**In New EAC**
-
-:::image type="content" source="../../media/domain-name-partner-to-365-encryption-tls.png" alt-text="The screen on which the domain name is set":::
-
-**In Classic EAC**
-
 ![Add partner organization domain name](../../media/6ea7db5c-71ff-41cb-bfcd-89be4106f7e1.png)
 
 Choose this setting to require encryption for all email from ContosoBank.com using TLS:
-
-**In New EAC**
-
-:::image type="content" source="../../media/requiring-tls-encryption.png" alt-text="YThe screen on which the mandatory TLS encryption is configured":::
-
-**In Classic EAC**
 
 ![Choose TLS to encrypt email from partner organization](../../media/0de0e09c-8420-419f-87fc-cf66f10098ec.png)
 
@@ -222,7 +233,7 @@ Mail flow from a third-party email service to Microsoft 365 or Office 365 works 
 > [!NOTE]
 > Make sure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mail will not be delivered to your organization.
 
-To restrict all mail sent to your organization from a specific IP address or address range, use these options during setup:
+To restrict all mail sent to your organization from a specific IP address or address range, use the options during setup as shown in the following screenshots, for New EAC and Classic EAC, respectively:
 
 **In New EAC**
 
@@ -245,26 +256,25 @@ When you set these restrictions, all mail sent to your organization must be sent
 ### Example 5: Require that all mail sent from your partner organization IP address or address range is encrypted using TLS
 <a name="Example3"> </a>
 
+**In New EAC**
 
 To identify your partner organization by IP address, use these options during setup:
 
-**In New EAC**
-
 :::image type="content" source="../../media/identify-partner-by-ip-address.png" alt-text="The screen on which the mails by partner organization are identified by IP address of the sender":::
 
+Add the requirement for TLS encryption by using this setting:
+
+:::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which IP addresses by which Partner organization will be identified is set":::
+
 **In Classic EAC**
+
+To identify your partner organization by IP address, use these options during setup:
 
 ![Choose the IP address to identify your partner organization](../../media/d5d54819-2e69-4f76-be37-ba701876beb6.png)
 
 ![Enter your partner organization's IP address](../../media/4ad3f410-e49b-4c92-82f5-8a8a6ab9535c.png)
 
 Add the requirement for TLS encryption by using this setting:
-
-**In New EAC**
-
-:::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which IP addresses by which Partner organization will be identified is set":::
-
-**In Classic EAC**
 
 ![Choose TLS to encrypt email from partner organization](../../media/0de0e09c-8420-419f-87fc-cf66f10098ec.png)
 

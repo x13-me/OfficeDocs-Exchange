@@ -129,7 +129,9 @@ Before you set up a new connector, check any connectors that are already listed 
 
 :::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="The page that lists connectors already set up":::
 
-If the connectors are already listed, you don't need to set them up again, but you can edit them if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, or if no connector is listed from your organization's mail server to Microsoft 365 or Office 365, set up a connector using the wizard.
+If the connectors are already listed, you don't need to set them up again, but you can edit them if you need to. 
+
+If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, or if no connector is listed from your organization's mail server to Microsoft 365 or Office 365, set up a connector using the wizard, as described in the procedures below.
 
 - **For New EAC**
 
