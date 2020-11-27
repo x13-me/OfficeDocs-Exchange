@@ -40,4 +40,4 @@ For more information, see these topics:
 >
 > - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/track-messages-with-delivery-reports).
 >
-> - Read receipts and delivery notifications are separate from delivery reports and are still available in Microsoft 365 and Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.microsoft.com/office/a34bf70a-4c2c-4461-b2a1-12e4a7a9214).
+> - Read receipts and delivery notifications are separate from delivery reports and are still available in Microsoft 365 and Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.microsoft.com/office/add-and-request-read-receipts-and-delivery-notifications-a34bf70a-4c2c-4461-b2a1-12e4a7a92141).
