@@ -285,6 +285,10 @@ The important settings for the connector are:
 
     :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 
+The notification message **Connector created** is displayed.
+
+<include the image - connector-creation-notification.png>
+
 #### For Classic EAC
 
 1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
