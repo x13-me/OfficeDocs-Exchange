@@ -41,7 +41,7 @@ By default, all administrators who are in the **Organization Management** role g
  By default, all end users have all of the above user roles enabled.
 
 > [!NOTE]
->
+> 
 > If you are testing Outlook add-ins and none are showing up, then as a first troubleshooting step, use the **Get-OrganizationConfig** PowerShell cmdlet to query the *AppsForOfficeEnabled* parameter. If the query returns a value of False, set this parameter to True using the **Set-OrganizationConfig** cmdlet and then add-ins should appear as expected.
 >
 > We do not recommend that the *AppsForOfficeEnabled* parameter be set to False. A value of False will override all of the above Administrative and User role settings and prevent any new apps from being activated by any user in the organization.
@@ -83,7 +83,10 @@ The above steps will ensure that all end users with the default policy will no l
 4. Modify **Default Role Assignment Policy** by deselecting **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
 5. Click **Save**.
 
-
+> [!NOTE]
+>
+> If a User is assigned a single Admin Role i.e. Security Reader, removing the User Roles **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps** will not prevent add-in downloads for that user. The recommendedation is to have a separate account for elevated privileges such as Security Reader and an account for end-user day-to-day operations. 
+>
 ## How do you know this worked?
 
 To verify that you've successfully assigned permissions for a user, replace \<Role  Name\> with the name of the role to verify, and run the following command in Exchange Online PowerShell:
