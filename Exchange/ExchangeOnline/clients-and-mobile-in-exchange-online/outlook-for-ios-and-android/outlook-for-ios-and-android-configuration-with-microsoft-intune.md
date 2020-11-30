@@ -139,7 +139,7 @@ Outlook supports the following settings for configuration:
 <td>App default</td>
 </tr>
 <tr class="even">
-<td>Organize by thread</td>
+<td>Organize mail by thread</td>
 <td>On</td>
 <td><p>By default, Outlook for iOS and Android collates related emails into a single threaded conversation view.</p></td>
 <td>App default</td>
@@ -148,6 +148,12 @@ Outlook supports the following settings for configuration:
 <td>Play My Emails</td>
 <td>On</td>
 <td>By default, Play My Emails is promoted to eligible users via a banner in the inbox.</td>
+<td>App default</td>
+</tr>
+<tr class="even">
+<td>Smart Compose</td>
+<td>On</td>
+<td>By default, Outlook for iOS and Android can suggest words and phrases as you compose messages.</td>
 <td>App default</td>
 </tr>
 </tbody>  
@@ -360,9 +366,9 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+    - For **Suggested Replies**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Discover Feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+    - For **Recommendations feed**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
@@ -373,6 +379,10 @@ The following steps allow you to create an app configuration policy. After the c
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
+    - For **Sync Calendars**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for Android. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+    - For **Smart Compose**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 12. If you want to configure S/MIME settings, see [Outlook for iOS Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-ios-automated-certificate-delivery) or [Outlook for Android Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-android-automated-certificate-delivery).
 
@@ -423,19 +433,23 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-    - For **Discover Feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
-
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
     - For **Block external images**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
     - For **Default app signature**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
-    - For **Suggested Replies**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. 
+    - For **Suggested Replies**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
     - For **Organize mail by thread**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
+    - For **Recommendations feed**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+  
+    - For **Sync Calendars**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This feature is available only in Outlook for Android.
+  
+    - For **Smart Compose**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 9. If you want to manage the data protection settings, configure the desired settings accordingly:
 
@@ -443,7 +457,9 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Calendar Notifications**, choose from the available options: **Not configured** (default), **Allowed**. By default calendar notifications are allowed within the app and display sensitive information. **Allowed** only takes effect when the App Protection Policy setting **Org Data Notifications** is set to **Block org data**.
 
-    - If you want to manage which contact fields sync to the native contacts apps, configure the desired settings accordingly. For each contact field setting, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
+    - For **Allow Calendar Sync**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. For more information on the setting choices, see [Calendar Sync](#calendar-sync).
+
+    - If you want to manage which contact fields sync to the native contacts apps, configure the desired **Sync contact fields to native contacts app configuration** settings accordingly. For each contact field setting, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
 11. If you want to manage the app's S/MIME configuration, configure the desired settings accordingly:
 
@@ -519,6 +535,8 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Mail.PlayMyEmailsEnabled|This key specifies whether the Play My Emails feature is promoted to eligible users via a banner in the inbox. When set to Off, this feature will not be promoted to eligible users in the app. Users can choose to manually enable Play My Emails from within the app, even when this feature is set to Off. When set as Not configured, the default app setting is On and the feature will be promoted to eligible users. .<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Calendar.NativeSyncEnabled|By default, Outlook does not sync calendar data to the native Calendar app. This key defines the default sync state behavior. Setting the value to true will enable calendar sync. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Calendar.NativeSyncEnabled.UserChangeAllowed|This key specifies whether the calendar sync state can be changed by the end user. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.TextPredictionsEnabled|Outlook can suggest words and phrases as you compose messages. When set as not configured, the default app setting is set to On. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowe|This key specifies whether Smart Compose can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### S/MIME settings
 
@@ -528,6 +546,10 @@ Outlook for iOS offers administrators the ability to customize the default S/MIM
 |:-----|:-----|:-----|
 |com.microsoft.outlook.Mail.SMIMEEnabled|This key specifies whether the app enables S/MIME. Use of S/MIME requires certificates available to Outlook for iOS and Android. Setting the value to true will enable S/MIME support in the app.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​|This key specifies whether S/MIME encryption is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail|This key specifies whether S/MIME signing is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
 
 ### Data protection settings
 
