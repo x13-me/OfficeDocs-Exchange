@@ -2,6 +2,15 @@
 
 
 
+## Week of November 23, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/23/2020 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
+| 11/23/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
+
+
 ## Week of November 16, 2020
 
 
@@ -167,21 +176,3 @@
 | 10/29/2020 | Create and manage room mailboxes | removed |
 | 10/29/2020 | [Add or remove email addresses for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
 | 10/29/2020 | [Recipients in Exchange Online](/Exchange/recipients-in-exchange-online/recipients-in-exchange-online) | modified |
-
-
-## Week of October 19, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/19/2020 | [Use a screen reader to manage anti-spam protection in Exchange Online](/Exchange/accessibility/use-a-screen-reader-to-manage-anti-spam-protection) | modified |
-| 10/19/2020 | [CSV files for IMAP migration batches](/Exchange/mailbox-migration/migrating-imap-mailboxes/csv-files-for-imap-migrations) | modified |
-| 10/19/2020 | [Learn more about setting up your IMAP server connection](/Exchange/mailbox-migration/migrating-imap-mailboxes/setting-up-your-imap-server-connection) | modified |
-| 10/19/2020 | [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) | modified |
-| 10/19/2020 | [Use mail flow rules to inspect message attachments in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments) | modified |
-| 10/19/2020 | [Mail flow rule conditions and exceptions (predicates) in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions?view=exchserver-2016) | modified |
-| 10/19/2020 | [Transport rule conditions and exceptions (predicates) in Exchange 2013](/Exchange/mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help) | modified |
-| 10/21/2020 | [Using third-party add-ins for online meetings in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/online-meeting-add-ins-for-ios-and-android) | modified |
-| 10/21/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 10/21/2020 | [Shared mailboxes in Exchange Online](/Exchange/collaboration-exo/shared-mailboxes) | modified |
-| 10/21/2020 | [Transport agents in Exchange Server](/Exchange/mail-flow/transport-agents/transport-agents?view=exchserver-2016) | modified |
