@@ -140,7 +140,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 8. Click **S/MIME** to display the **Outlook S/MIME settings**.
-    ![Screenshot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/Outlook_mobile_SMIME_Settings_v2.png)
 
 9. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
