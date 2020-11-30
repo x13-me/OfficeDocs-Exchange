@@ -23,20 +23,20 @@ You can create connectors to apply security restrictions to mail exchanges with 
 You can create a connector to enforce encryption via transport layer security (TLS). You can also apply other security restrictions such as specifying domain names or IP address ranges that your partner organization sends mail from.
 
 > [!NOTE]
-> Setting up a connector to exchange mail with a partner organization is optional; mail flows to and from your partner organization without connectors.
+> Setting up a connector to exchange mail with a partner organization is optional; mail flows to and from your partner organization occur without connectors.
 
 If you use a third-party cloud service for email filtering and need instructions for making this work with Microsoft 365 or Office 365, see [Mail flow best practices for Exchange Online and Microsoft 365 or Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md).
 
 ## Using connectors to exchange email with a partner organization
 
-By default, Microsoft 365 or Office 365 sends mail using TLS encryption, provided that the destination server also supports TLS. If your partner organization supports TLS, you only need to create a connector if you want to enforce certain security restrictions - for example, you always want TLS applied, or you require certificate verification whenever mail is sent from your partner to your organization.
+By default, Microsoft 365 or Office 365 sends mails using TLS encryption, provided that the destination server also supports TLS. If your partner organization supports TLS, you only need to create a connector if you want to enforce certain security restrictions - for example, you always want TLS applied, or you require certificate verification whenever mail is sent from your partner to your organization.
 
 > [!NOTE]
 > For information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
-When you set up a connector, email messages are checked to make sure they meet the security restrictions that you specify. If email messages don't meet the security restrictions that you specify, the connector will reject them, and those messages will not be delivered. This makes it possible to set up a secure communication channel with a partner organization.
+When you set up a connector, email messages are checked to ensure they meet the security restrictions that you specify. If email messages don't meet the security restrictions that you specify, the connector rejects them, and those messages will not be delivered. This behavior of the connector makes it possible to set up a secure communication channel with a partner organization.
 
-You can set up one or both of the following depending on your requirements:
+You can set up one or both of the following, depending on your requirements:
 
 - [Set up a connector to apply security restrictions to mail sent from Microsoft 365 or Office 365 to your partner organization](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-microsoft-365-or-office-365-to-your-partner-organization)
 
@@ -52,9 +52,9 @@ Review this section to help you determine the specific settings you need for you
 
 ## Set up a connector to apply security restrictions to mail sent from Microsoft 365 or Office 365 to your partner organization
 <a name="setupaconnectortopartner"> </a>
-This section describes the process of setting up a connector in both the New Exchange admin center (EAC) and the Classic EAC. Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you already have a connector set up for a partner organization, you'll see it listed. Make sure you don't create duplicate connectors for a single organizational partner; when this happens, it can cause errors, and your mail might not be delivered.
+This section describes the process of setting up a connector in both the New Exchange admin center (EAC) and the Classic EAC. Before you set up a new connector, check for any connectors that are already listed here for your organization. For example, if you already have a connector set up for a partner organization, you'll see it listed. Ensure you don't create duplicate connectors for a single organizational partner; when this happens, it can cause errors, and your mail might not be delivered.
 
-If any connectors already exist for your organization, you can see them listed here, a shown in the below screenshots for New EAC and Classic EAC, respectively.
+If any connectors already exist for your organization, you can see them listed here, as shown in the below screenshots for New EAC and Classic EAC, respectively.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Existing list of connectors"::: 
 
@@ -75,7 +75,7 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-3. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+3. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 
@@ -85,7 +85,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Microsoft 365 and Office 365 to partner organization connector options](../../media/93cb9e70-f8d8-4e63-bb92-caafd8b79ad7.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [Validate connectors](validate-connectors.md) for help resolving issues.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](validate-connectors.md) for help resolving issues.
 
 If you want to create a secure channel with your partner organization in both directions, set up a connector that restricts mail flow from your partner organization to Microsoft 365 or Office 365.
 
@@ -122,16 +122,14 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, save your connector.
 
-Ask your partner organization to send a test email. Make sure the email your partner organization sends will cause the connector to be applied. For example, if you specified security restrictions for mail sent from a specific partner domain, make sure they send test mail from that domain. Check that the test email is delivered to confirm that the connector works correctly.
+Ask your partner organization to send a test email. Ensure the email your partner organization sends will cause the connector to be applied. For example, if you specified security restrictions for mail sent from a specific partner domain, ensure they send test mail from that domain. Check that the test email is delivered to confirm that the connector works correctly.
 
 ## Change a connector that Microsoft 365 or Office 365 is using for mail flow
 <a name="Changeaconnector"> </a>
 
 To change settings for a connector, perform the procedures specified below.
 
-Select the connector you want to edit and then click the **Edit** icon. 
-
-The following two screens show the connector settings being edited by clicking the **Edit** icon, on the New EAC and Classic EAC, respectively.
+Select the connector you want to edit and then click the **Edit** icon, as shown in the following two screens for New EAC and Classis EAC, respectively.
 
 :::image type="content" source="../../media/connector-editing-screen-new-eac.png" alt-text="The screen on which the connector settings can be edited":::
 
@@ -142,7 +140,7 @@ The connector wizard opens, and you can make changes to the existing connector s
 ## Example security restrictions you can apply to email sent from a partner organization
 <a name="examplesecurityrestrict"> </a>
 
-Review these connector examples to help you decide whether you want to apply security restrictions to email sent by a partner organization, and understand what settings will meet your business needs:
+Review these connector examples to help you decide whether you want to apply security restrictions to emails sent by a partner organization, and understand what settings will meet your business needs:
 
 ### Create a partner organization connector
 
@@ -158,17 +156,17 @@ To start the wizard, click the plus symbol **+**. To create a connector for emai
 
 ![Connector from partner organization to Microsoft 365 or Office 365](../../media/e6d15001-989b-48b3-a848-427b800c2a70.png)
 
-Once you choose this mail flow scenario, you can set up a connector that will apply security restrictions to email that your partner organization sends to you. For some security restrictions, you might need to talk to your partner organization to obtain information to complete some settings. Look for the examples that best meet your needs to help you set up your partner connector.
+Once you choose this mail flow scenario, you can set up a connector that will apply security restrictions to emails that your partner organization sends to you. For some security restrictions, you might need to talk to your partner organization to obtain information to complete some settings. Look for the examples that best meet your needs to help you set up your partner connector.
 
 > [!NOTE]
-> Any email sent from your partner organization that does not meet security restrictions that you specify will not be delivered.
+> Any email sent from your partner organization which does not meet security restrictions that you specify will not be delivered.
 
 ### Example 1: Require that email sent from your partner organization domain contosobank.com is encrypted using transport layer security (TLS)
 <a name="example1"> </a>
 
-To do this, specify your partner organization domain name to identify mail from that partner, and then choose transport layer security (TLS) encryption when you create your partner to Microsoft 365 or Office 365 connector. Use these options during setup:
+To do this, specify your partner organization domain name to identify mail from that partner, and then choose transport layer security (TLS) encryption when you create the connector for mail flow from your partner to Microsoft 365 or Office 365. 
 
-**In New EAC**
+During setup of the connector in the New EAC, use the options as shown in the following screenshots:
 
 :::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which TLS encryption is done":::
 
@@ -180,7 +178,8 @@ Choose this setting to require encryption for all email from ContosoBank.com usi
 
 :::image type="content" source="../../media/requiring-tls-encryption.png" alt-text="YThe screen on which the mandatory TLS encryption is configured":::
 
-**In Classic EAC**
+During setup of the connector in the Classic EAC, use the options as shown in the following screenshots:
+
 ![Choose to use the sender's domain name](../../media/3b3b0cc6-3928-4cab-a022-436821f9d559.png)
 
 Use this screen to enter your partner organization's domain name(s) so the connector can identify mail sent by your partner:
@@ -191,51 +190,57 @@ Choose this setting to require encryption for all email from ContosoBank.com usi
 
 ![Choose TLS to encrypt email from partner organization](../../media/0de0e09c-8420-419f-87fc-cf66f10098ec.png)
 
-When you choose these settings, all email from your partner organization's domain, ContosoBank.com, must be encrypted using TLS. Any mail that is not encrypted will be rejected.
+When you choose these settings, all emails from your partner organization's domain, ContosoBank.com, must be encrypted using TLS. Any mail that is not encrypted will be rejected.
 
 ### Example 2: Require that email sent from your partner organization domain ContosoBank.com is encrypted and uses their domain certificate
 <a name="example1"> </a>
 
-To do this, use all the settings shown in Example 1. Also, add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365. Use this option during setup:
+1. To do this in the New EAC, use all the settings shown in Example 1. 
 
-**In New EAC**
+2. Add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365, as shown in the screenshot below.
 
 :::image type="content" source="../../media/encryption-using-certificate-new-eac.png" alt-text="The screen on which encryption is done using the domain certificate name":::
 
-**In Classic EAC**
+1. To do this in the New EAC, use all the settings shown in Example 1.
+
+2. Add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365, as shown in the screenshot below.
 
 ![Enter your partner organization certificate name](../../media/46229d66-dcfd-4e3d-bc12-9f53a5572f81.png)
 
 When you set these restrictions, all mail from your partner organization domain must be encrypted using TLS, and sent from a server with the certificate name you specify. Any email that does not meet these conditions will be rejected.
 
-### Example 3: Require that all email is sent from a specific IP address range
+### Example 3: Require that all emails are sent from a specific IP address range
 <a name="Example3"> </a>
 
-This email could be from a partner organization, such as ContosoBank.com, or from your on-premises environment. For instance, the MX record for your domain, contoso.com, points to on-premises, and you want all email sent to contoso.com to come from your on-premises IP addresses only. This helps prevent spoofing and makes sure your compliance policies can be enforced for all messages.
+This email could be from a partner organization, such as ContosoBank.com, or from your on-premises environment. For instance, the MX record for your domain, contoso.com, points to on-premises, and you want all emails being sent to contoso.com to come from your on-premises IP addresses only. This helps prevent spoofing and ensures your compliance policies can be enforced for all messages.
 
-To do this, specify your partner organization domain name to identify mail from that partner, and then restrict the IP addresses that you accept mail from. Using an IP address makes the connector more specific because it identifies a single address or an address range that your partner organization sends mail from. Enter your partner domain as described in Example 1, then use this option during setup:
+To do this, specify your partner organization domain name to identify mail from that partner, and then restrict the IP addresses that you accept mail from. Using an IP address makes the connector more specific because it identifies a single address or an address range that your partner organization sends mails from. 
 
-**In New EAC**
+In the New EAC, the procedure is as described below:
+
+1. Enter your partner domain as described in Example 1.
+2. Use the options as shown in the screenshot below.
 
 :::image type="content" source="../../media/receive-email-from-specific-ip-address.png" alt-text="The screen on which email source IP address is set":::
 
-**In Classic EAC**
+In the Classic EAC, the procedure is as described below:\
+
+1. Enter your partner domain as described in Example 1.
+2. Use the options as shown in the screenshot below.
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
-When you set these restrictions, all email sent from your partner organization domain, ContosoBank.com, or from your on-premises environment must be sent from the IP address or an address range you specify. Any mail that does not meet these conditions will be rejected.
+When you set these restrictions, all emails that are sent from your partner organization domain, ContosoBank.com, or from your on-premises environment will be from the IP address or an address range you specify. Any mail that does not meet these conditions will be rejected.
 
 ### Example 4: Require that all email sent to your organization from the internet is sent from a specific IP address (third-party email service scenario)
 <a name="Example3"> </a>
 
-Mail flow from a third-party email service to Microsoft 365 or Office 365 works without a connector. However, in this scenario you can optionally use a connector to restrict all mail delivery to your organization. If you use the settings described in this example, they will apply to *all email sent to your organization*. When all email sent to your organization comes from a single third-party email service, you can optionally use a connector to restrict all mail delivery; only mail sent from a single IP address or address range will be delivered.
+Mail flow from a third-party email service to Microsoft 365 or Office 365 works without a connector. However, in this scenario, you can optionally use a connector to restrict all mail delivery to your organization. If you use the settings described in this example, they will apply to *all email sent to your organization*. When all emails sent to your organization comes from a single third-party email service, you can optionally use a connector to restrict all mail delivery; only mail sent from a single IP address or address range will be delivered.
 
 > [!NOTE]
-> Make sure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mail will not be delivered to your organization.
+> Ensure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mails will not be delivered to your organization.
 
-To restrict all mail sent to your organization from a specific IP address or address range, use the options during setup as shown in the following screenshots, for New EAC and Classic EAC, respectively:
-
-**In New EAC**
+In the New EAC, to restrict all mails sent to your organization from a specific IP address or address range, use the options during setup as shown in the following screenshots:
 
 :::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which the sender's domain name is configured to be used":::
 
@@ -243,7 +248,7 @@ To restrict all mail sent to your organization from a specific IP address or add
 
 :::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which the your partner organization's IP address range is defined":::
 
-**In Classic EAC**
+In the Classic EAC, to restrict all mails sent to your organization from a specific IP address or address range, use the options during setup as shown in the following screenshots:
 
 ![Choose to use the sender's domain name](../../media/3b3b0cc6-3928-4cab-a022-436821f9d559.png)
 
@@ -251,14 +256,12 @@ To restrict all mail sent to your organization from a specific IP address or add
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
-When you set these restrictions, all mail sent to your organization must be sent from a specific IP address range. Any internet email that does not originate from this IP address range will be rejected.
+When you set these restrictions, all mails sent to your organization will be from a specific IP address range. Any internet email that does not originate from this IP address range will be rejected.
 
 ### Example 5: Require that all mail sent from your partner organization IP address or address range is encrypted using TLS
 <a name="Example3"> </a>
 
-**In New EAC**
-
-To identify your partner organization by IP address, use these options during setup:
+To identify your partner organization by IP address, in the New EAC, use these options during setup:
 
 :::image type="content" source="../../media/identify-partner-by-ip-address.png" alt-text="The screen on which the mails by partner organization are identified by IP address of the sender":::
 
@@ -266,9 +269,8 @@ Add the requirement for TLS encryption by using this setting:
 
 :::image type="content" source="../../media/configuring-receipt-from-specific-ip-address.png" alt-text="The screen on which IP addresses by which Partner organization will be identified is set":::
 
-**In Classic EAC**
 
-To identify your partner organization by IP address, use these options during setup:
+To identify your partner organization by IP address, in the Classic EAC, use these options during setup:
 
 ![Choose the IP address to identify your partner organization](../../media/d5d54819-2e69-4f76-be37-ba701876beb6.png)
 

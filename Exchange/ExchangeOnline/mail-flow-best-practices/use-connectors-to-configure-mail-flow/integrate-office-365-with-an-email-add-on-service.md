@@ -18,7 +18,7 @@ manager: serdars
 
 # Scenario: Integrate Microsoft 365 or Office 365 with an email add-on service
 
-Many third-party cloud service solutions provide add-on services for Microsoft 365 or Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Microsoft 365 or Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so you can use the service.
+Many third-party cloud service solutions provide add-on services for Microsoft 365 or Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Microsoft 365 or Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so that you can use the service.
 
 This topic describes the best practices for how your organization can use a third-party email add-on service by examining a fictional service named Contoso Signature Service. This fictional service runs in Azure and provides custom email signatures (note that the service could be deployed in a cloud environment other than Azure). The mail flow and a high-level summary of the service are shown in the following diagram.
 
@@ -68,9 +68,9 @@ The important settings for the connector are:
 
 ### Use the Exchange admin center (EAC) to create the outbound connector to the email add-on service
 
-#### New EAC
+**New Exchange admin center (EAC)**
 
-1. In the New EAC, go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
+1. Go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
@@ -120,13 +120,15 @@ The important settings for the connector are:
 
 11. When the connector validation is complete, click **Close**.
 
-#### Classic EAC
+**Classic EAC**
 
-1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
-2. The new connector wizard opens. On the **Select your mail flow scenario** page, configure these settings:
+The new connector wizard opens.
+
+2. On the **Select your mail flow scenario** page, configure these settings:
 
    - **From**: **Office 365**
 
@@ -190,11 +192,11 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-#### For Classic EAC
+**For Classic EAC**
 
-1. In the Classic EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
+1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
-   ![In the Exchange admin center, click Mal flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
+   ![In the Exchange admin center, click Mail flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
 
 2. In the **New rule** page that opens, click **More options** near the bottom of the page.
 
@@ -246,9 +248,9 @@ The important settings for the connector are:
 
 ### Use the EAC to create an inbound connector to receive messages from the email add-on service
 
-#### For New EAC
+**In New EAC**
 
-1. In the New EAC, go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
+1. Go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
@@ -289,9 +291,9 @@ The notification message **Connector created** is displayed.
 
 :::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message about the connector creation is displayed":::
 
-#### For Classic EAC
+**In Classic EAC**
 
-1. In the Classic EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
