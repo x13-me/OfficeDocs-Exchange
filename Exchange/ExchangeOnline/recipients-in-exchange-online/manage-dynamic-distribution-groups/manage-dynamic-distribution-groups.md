@@ -189,7 +189,25 @@ Use this section to manage who can send email to this group.
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-#### Message approval
+#### Message approval in new EAC
+
+Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
+
+- **Require moderator approval for messages sent to this group**: This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
+
+- **Group moderators**: To add/remove group moderators, search/add users from the drop-down list. If you've selected **Require moderator approval for messages sent to this group** and you don't select a moderator, messages to the group are sent to the group owners for approval.
+
+- **Add senders who don't require message approval**: To add/remove users that can bypass moderation for this group, search/add users from the drop-down list.
+
+- **Notify a sender if their message isn't approved:**: Use this section to set how users are notified about message approval.
+
+  - **Only sender**: This is the default setting. Notify all senders, inside and outside your organization, when their message isn't approved.
+
+  - **Only senders in your organization**: When you select this option, only users or groups in your organization are notified when a message that they sent to the group isn't approved by a moderator.
+
+  - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
+
+#### Message approval in Classic EAC
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -205,9 +223,13 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Notify senders in your organization only when their messages aren't approved**: When you select this option, only people or groups in your organization are notified when a message that they sent to the group isn't approved by a moderator.
 
-  - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to message senders whose messages aren't approved by the group moderators.
+  - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-#### Email options
+#### Email options in Classic EAC
+
+Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**.
+
+#### Email options in Classic EAC
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -247,7 +269,9 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 - **Send on Behalf Of**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
-To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
+To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
+
+To assign permissions to delegates in Classic EAC, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
 #### Use Exchange Online PowerShell to change dynamic distribution group properties
 
