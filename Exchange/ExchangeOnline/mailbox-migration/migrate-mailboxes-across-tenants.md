@@ -34,7 +34,7 @@ The scenario in this article is based on two fictional companies - Contoso.com a
 
 ****
 
-||Tenant 1 (Target)|Tenant 2 (Source)|
+|Domain|Tenant 1 (Target)|Tenant 2 (Source)|
 |---|---|---|
 |**Custom email domain:**|contoso.com|fabrikam.com|
 |**Office 365 initial domain:**|contoso.onmicrosoft.com|fabrikam.onmicrosoft.com|
@@ -178,7 +178,7 @@ Complete the verification of the Fabrikam.com domain in the contoso.com tenant. 
 
 7. Perform verification testing of mail flow to/from new mailboxes in the target tenant.
 
-8. If you are using Exchange Online Protection (EOP): In the target tenant recreate mail flow rules (also known as transport rules), connectors, white/black lists etc. from source tenant.
+8. If you are using Exchange Online Protection (EOP): In the target tenant recreate mail flow rules (also known as transport rules), connectors, block lists, allow lists, etc. from source tenant.
 
 #### Begin migration
 
