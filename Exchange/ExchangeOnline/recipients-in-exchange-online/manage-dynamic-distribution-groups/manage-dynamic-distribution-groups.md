@@ -231,13 +231,17 @@ Under **General settings** section, select the checkbox **Hide from my organizat
 
 Use this section to manage who can send email to this group.
 
-- **Only senders inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
+- **Sender options**
 
-- **Senders inside and outside of my organization**: Select this option to allow anyone to send messages to the group.
+  By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send to this group.
+ 
+  - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
-  You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+  - **Allow messages from people inside and outside my organization**: Select this option to allow anyone to send messages to the group.
 
-  To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+- **Specified senders**
+
+  You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Select/remove one or more recipients/group from the drop-down list. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
 
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
