@@ -37,9 +37,15 @@ A role group is a special kind of universal security group (USG) that's used in 
 
 ## View role groups
 
-### Use the EAC to view role groups
+### Use the new EAC to view role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**. All of the role groups in your organization are listed here.
+1. In the new EAC, go to **Roles** \> **Admin Roles**. All of the role groups in your organization are listed here.
+
+2. Select a role group. The Details pane shows the **Name**, **Description**, **Managed by**, **Write scope**, **Assigned**, and **Permissions** of the role group. 
+
+### Use the Classic EAC to view role groups
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles**. All of the role groups in your organization are listed here.
 
 2. Select a role group. The Details pane shows the **Name**, **Description**, **Assigned roles**, **Members**, **Managed by**, and **Write scope** of the role group. You can also see this information by clicking **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
@@ -75,9 +81,27 @@ For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.
 
 When you create a new role group, you need to configure all of the settings yourself (during the creation of the group or after). To start with the configuration of an existing role group and modify it, see [Copy existing role groups](#copy-existing-role-groups).
 
-### Use the EAC to create role groups
+### Use the new EAC to create role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the new EAC, go to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+
+2. In the **New role group** window that appears, configure the following settings:
+
+    - **Name**: Enter a unique name for the role group.
+
+    - **Description**: Enter an optional description for the role group.
+
+    - **Write scope**: The default value is **Default**, but you can also select a custom recipient write scope that you've already created.
+
+    - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to select the roles that you want to be assigned to the role group in the new window that appears.
+
+    - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to select the members that you want to add to the role group in the new window that appears. You can select users, mail-enabled universal security groups (USGs), or other role groups (security principals).
+
+   When you're finished, click **Save** to create the role group.
+
+### Use the Classic EAC to create role groups
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New role group** window that appears, configure the following settings:
 
@@ -143,11 +167,33 @@ To verify that you've successfully created a role group, do either of the follow
 
 If an existing role group is close in terms of the permissions and settings that you want to assign to users, you can copy the existing role group and modify the copy to suit your needs.
 
-### Use the EAC to copy a role group
+### Use the new EAC to copy a role group
 
 **Note**: You can't use the EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**.
+1. In the new EAC, go to **Permissions** \> **Admin Roles**.
+
+2. Select the role group that you want to copy and then click **Copy** ![Copy icon](../media/ITPro_EAC_CopyIcon.png).
+
+3. In the **New role group** window that appears, configure the following settings:
+
+   - **Name**: The default value is "Copy of _\<Role Group Name\>_, but you can enter a unique name for the role group.
+
+   - **Description**: The existing description is present, but you can change it.
+
+   - **Write scope**: The existing write scope is selected, but you can select **Default** or another custom recipient write scope that you've already created.
+
+   - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the roles that are assigned to the role group.
+
+   - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the role group membership.
+
+   When you're finished, click **Save** to create the role group.
+
+### Use the Classic EAC to copy a role group
+
+**Note**: You can't use the EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles**.
 
 2. Select the role group that you want to copy and then click **Copy** ![Copy icon](../media/ITPro_EAC_CopyIcon.png).
 
