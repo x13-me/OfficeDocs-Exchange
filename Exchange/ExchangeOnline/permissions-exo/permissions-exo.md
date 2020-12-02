@@ -139,7 +139,7 @@ Users can be granted administrative rights in Exchange Online without adding the
 
 ## Work with role groups
 
-To manage your permissions using role groups in Exchange Online, we recommend that you use the EAC. When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **new role group** dialog box, shown in the following figure, to perform these tasks.
+To manage your permissions using role groups in Exchange Online, we recommend that you use the EAC. When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **Add role group** dialog box, shown in the following figure, to perform these tasks.
 
 ![New role group dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
 
