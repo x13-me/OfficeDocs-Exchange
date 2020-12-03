@@ -232,7 +232,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-7. Enter the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365.
+7. Enter the email address for the super admin within the G Suite environment. This is not the service account you just created, it should be the email address of the GSuite Admin. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365.
 
 8. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
