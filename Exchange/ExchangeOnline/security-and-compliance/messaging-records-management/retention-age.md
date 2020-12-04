@@ -20,6 +20,11 @@ manager: serdars
 
 # How retention age is calculated
 
+> [!NOTE]
+> To proactively retain or delete content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page.
+> 
+> If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+
 The Managed Folder Assistant (MFA) is one of many mailbox assistant processes that runs in Exchange Online. Its job is to process mailboxes that have a Retention Policy applied, add the Retention Tags included in the policy to the mailbox, and process items in the mailbox. If the items have a retention tag, the assistant tests the age of those items. If an item has exceeded its retention age, it takes the specified retention action. Retention actions include moving an item to the user's archive, deleting the item and allowing recovery, or deleting the item permanently.
 
 See [Retention tags and retention policies](retention-tags-and-policies.md) for more information.
