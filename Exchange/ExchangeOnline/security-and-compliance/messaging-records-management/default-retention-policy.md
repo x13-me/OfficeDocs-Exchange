@@ -34,7 +34,7 @@ You can modify tags included in the Default MRM Policy, for example by changing 
 
 The following table lists the default retention tags linked to the Default MRM Policy.
 
-|**Name**|**Type**|**Retention age (days)**|**Retention action**|
+| Name | Type | Retention age (days) | Retention action |
 |:-----|:-----|:-----|:-----|
 |Default 2 years move to archive|Default Policy Tag (DPT)|730|Move to Archive|
 |Recoverable Items 14 days move to archive|Recoverable Items folder|14|Move to Archive|
@@ -50,7 +50,7 @@ The following table lists the default retention tags linked to the Default MRM P
 
 ## What you can do with the Default MRM Policy
 
-|**You can...**|**In Exchange Online...**|**In Exchange Server...**|
+| You can... | In Exchange Online... | In Exchange Server... |
 |:-----|:-----|:-----|
 |Apply the Default MRM Policy automatically to new users|Yes, applied by default. No action is required.|Yes, applied by default if you also create an archive for the new user. <br/> If you create an archive for the user later, the policy is applied automatically only if the user doesn't have an existing Retention Policy.|
 |Modify the retention age or retention action of a retention tag linked to the policy|Yes|Yes|

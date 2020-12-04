@@ -35,7 +35,7 @@ A Retention Policy Tag (RPT) is a type of retention tag that you can apply to de
 
 You can create RPTs for the default folders shown in the following table.
 
-|**Folder name**|**Details**|
+| Folder name | Details |
 |:-----|:-----|
 |Archive|This folder is the default destination for messages archived with the Archive button in Outlook. The Archive feature provides a fast way for users to remove messages from their Inbox without deleting them. <br/> This RPT is available only in Exchange Online.|
 |Calendar|This default folder is used to store meetings and appointments.|

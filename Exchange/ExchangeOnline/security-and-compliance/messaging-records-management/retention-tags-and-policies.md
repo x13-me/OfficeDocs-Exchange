@@ -59,7 +59,7 @@ Retention tags allow users to tag their own mailbox folders and individual items
 
 Retention tags are classified into the following three types based on who can apply them and where in a mailbox they can be applied.
 
-|**Type of retention tag**|**Applied...**|**Applied by...**|**Available actions...**|**Details**|
+| Type of retention tag | Applied... | Applied by... | Available actions... | Details |
 |:-----|:-----|:-----|:-----|:-----|
 |Default policy tag (DPT)|Automatically to entire mailbox  <br/> A DPT applies to untagged items, which are mailbox items that don't have a retention tag applied directly or by inheritance from the folder.|Administrator|Move to archive  <br/>  Delete and allow recovery  <br/>  Permanently delete|Users can't change DPTs applied to a mailbox.|
 |Retention policy tag (RPT)|Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](default-folders.md).|Administrator|Delete and allow recovery  <br/>  Permanently delete|Users can't change the RPT applied to a default folder.|
@@ -93,7 +93,7 @@ You can also create retention tags with retention disabled or disable tags after
 
 When creating or configuring a retention tag, you can select one of the following retention actions to be taken when an item reaches its retention age:
 
-|**Retention action**|**Action taken...**|**Except...**|
+| Retention action | Action taken... | Except... |
 |:-----|:-----|:-----|
 |**Move to Archive**<sup>1</sup><sup>,2</sup>|Moves the message to the user's archive mailbox  <br/>  Only available for DPTs and personal tags  <br/>  For details about archiving, see [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)|If the user doesn't have an archive mailbox, no action is taken.|
 |**Delete and Allow Recovery**|Emulates the behavior when the user empties the Deleted Items folder. <br/>  Items are moved to the [Recoverable Items folder in Exchange Online](../recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the deleted item retention period. <br/>  Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web|If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md).|

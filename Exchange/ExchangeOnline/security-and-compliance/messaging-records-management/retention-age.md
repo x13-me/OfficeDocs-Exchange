@@ -35,7 +35,7 @@ The retention age of mailbox items is calculated from the date of delivery or in
 
 Items in the Deleted Items folder and items which may have a start and end date, such as calendar items (meetings and appointments) and tasks, are handled differently as shown in this table.
 
-|**If the item type is...**|**And the item is...**|**The retention age is calculated based on...**|
+| If the item type is... | And the item is... | The retention age is calculated based on... |
 |:-----|:-----|:-----|
 |Email message <br/><br/> Document <br/><br/> Fax <br/><br/> Journal item <br/><br/> Meeting request, response, or cancellation <br/><br/> Missed call <br/><br/> Notes|Not in the Deleted Items folder|Delivery date or date of creation|
 |Email message <br/><br/> Document <br/><br/> Fax <br/><br/> Journal item <br/><br/> Meeting request, response, or cancellation <br/><br/> Missed call <br/><br/> Notes|In the Deleted Items folder| Date of delivery or creation unless the item was deleted from a folder that does not have an inherited or implicit retention tag. <br/>  If an item is in a folder that doesn't have an inherited or implicit retention tag applied, the item isn't processed by the MFA and therefore doesn't have a start date stamped by it. When the user deletes such an item, and the MFA processes it for the first time in the Deleted Items folder, it stamps the current date as the start date.|
@@ -48,7 +48,7 @@ Items in the Deleted Items folder and items which may have a start and end date,
 
 ## Examples
 
-|**If the user...**|**The retention tags on folder...**|**The Managed Folder Assistant...**|
+| If the user... | The retention tags on folder... | The Managed Folder Assistant... |
 |:-----|:-----|:-----|
 |Receives a message in the Inbox on 01/26/2019. Deletes the message on 2/27/2019.|Inbox: Delete in 365 days <br/><br/> Deleted Items: Delete in 30 days|Processes the message in the Inbox on 1/26/2019; stamps it with a start date of 01/26/2019 and an expiration date of 01/26/2020. <br/><br/> Processes the message again in the Deleted Items folder on 2/27/2019. It recalculates the expiration date based on the same start date (01/26/2019). Because the item is older than 30 days, it is expired immediately.|
 |Receives a message in the Inbox on 01/26/2019. Deletes the message on 2/27/2019.|Inbox: None (inherited or implicit) <br/><br/> Deleted Items: Delete in 30 days|Processes the message in the Deleted Items folder on 02/27/2019 and determines the item doesn't have a start date. <br/><br/> It stamps the current date as the start date, and 03/27/2019 as the expiration date. The item is expired on 3/27/2019, which is 30 days after the user deleted or moved it to the Deleted Items folder.|
