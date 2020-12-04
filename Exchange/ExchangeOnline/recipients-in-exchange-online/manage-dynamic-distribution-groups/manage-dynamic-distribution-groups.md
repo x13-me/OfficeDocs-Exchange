@@ -193,11 +193,11 @@ To verify that you've successfully created a dynamic distribution group, do one 
   ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
-## Change dynamic distribution group properties in new EAC
+## Change dynamic distribution group properties
 
 ### Use the new EAC to change dynamic distribution group properties
 
-1. In the new EAC, navigate to **Recipients** \> **Groups**.
+1. In the new EAC, navigate to **Recipients** > **Groups** > **Dynamic distribution list**.
 
 2. In the list of groups, click the dynamic distribution group that you want to view or change.
 
@@ -213,7 +213,9 @@ Use this section to view or change basic information about the group.
 
 #### Email options in new EAC
 
-Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**. You can also select the group and then click **Edit email addresses** from the toolbar to change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**.
+Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**. 
+
+You can also select the group and then click **Edit email addresses** from the toolbar to change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**.
 
 #### Members
 
@@ -221,7 +223,7 @@ Use this section to change/edit the following:
 
 - Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The dynamic distribution group must have at least one owner. 
 
-- Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the new EAC to create a dynamic distribution group](#use-the-new-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the new EAC to create a new dynamic distribution group.
+- Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the new EAC to create a dynamic distribution group](#use-the-new-eac-to-create-a-dynamic-distribution-group).
 
 #### Settings
 
@@ -252,7 +254,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 - **Send As**: This permission allows the delegate to send messages as the group. After this permission is assigned, the delegate has the option to add the group to the **From** line to indicate that the message was sent by the group.
 
-- **Send on Behalf Of**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
+- **Send on Behalf**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
 To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
 
@@ -273,38 +275,6 @@ Use this section to set options for moderating the group. Moderators approve or 
   - **Only senders in your organization**: When you select this option, only users or groups in your organization are notified when a message that they sent to the group isn't approved by a moderator.
 
   - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
-
-#### Use Exchange Online PowerShell to change dynamic distribution group properties
-
-Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
-
-- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup)
-
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
-
-Here are some examples of using Exchange Online PowerShell to change dynamic distribution group properties.
-
-This example changes the following parameters for all dynamic distribution groups in the organization:
-
-- Hide all dynamic distribution groups from the address book
-
-- Set the maximum message size that can be sent to the group to 5MB
-
-- Enable moderation
-
-- Assign the administrator as the group moderator
-
-```PowerShell
-Get-DynamicDistributionGroup -ResultSize unlimited | Set-DynamicDistributionGroup -HiddenFromAddressListsEnabled $true -MaxReceiveSize 5MB -ModerationEnabled $true -ModeratedBy administrator
-```
-
-This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, to the All Employees group.
-
-```PowerShell
-Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
-```
-
-## Change dynamic distribution group properties in Classic EAC
 
 ### Use the Classic EAC to change dynamic distribution group properties
 
