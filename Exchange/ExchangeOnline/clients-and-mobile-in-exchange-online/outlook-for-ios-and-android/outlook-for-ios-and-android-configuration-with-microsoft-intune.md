@@ -151,7 +151,7 @@ Outlook supports the following settings for configuration:
 <td>App default</td>
 </tr>
 <tr class="even">
-<td>Smart Compose</td>
+<td>Text Predictions</td>
 <td>On</td>
 <td>By default, Outlook for iOS and Android can suggest words and phrases as you compose messages.</td>
 <td>App default</td>
@@ -177,7 +177,8 @@ The following conditions describe Outlook's behavior when implementing various a
 
 Users are alerted to configuration changes via a notification toast in the app:
 
-![notification toast in the app](../../media/outlook_mobile_Intune_1.png)
+> [!div class="mx-imgBorder"]
+> ![notification toast in the app](../../media/outlook_mobile_Intune_1.png)
 
 This notification toast will automatically dismiss after 10 seconds. There are two scenarios where this notification toast will not appear:
 
@@ -190,25 +191,31 @@ This notification toast will automatically dismiss after 10 seconds. There are t
 The *Save Contacts* setting is a special case scenario because unlike the other settings, this setting requires user interaction: the user needs to grant Outlook permissions to access the native Contacts app and the data stored within. If the user does not grant access, then contact synchronization cannot be enabled.
 
 > [!NOTE]
-> With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CONTACTS and WRITE\_CONTACTS within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data. <br/><br/> When enabling Outlook for Android's Save Contacts within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Contacts app within the work profile context; this provides a clear separation between work and personal profile data. However, Android Enterprise allows for the dialer and messaging apps within the personal profile to access the local contacts within the work profile. This behavior is enabled by default, but can be controlled via device restrictions; for more information, see [Android Enterprise device settings to allow or restrict features using Intune](https://docs.microsoft.com/intune/device-restrictions-android-for-work). It's possible that some dialer or messaging apps, whether pre-installed by the device manufacturer or installed from the Play Store, do not properly support this capability.
+> With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CONTACTS and WRITE\_CONTACTS within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data.
+> 
+> When enabling Outlook for Android's Save Contacts within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Contacts app within the work profile context; this provides a clear separation between work and personal profile data. However, Android Enterprise allows for the dialer and messaging apps within the personal profile to access the local contacts within the work profile. This behavior is enabled by default, but can be controlled via device restrictions; for more information, see [Android Enterprise device settings to allow or restrict features using Intune](https://docs.microsoft.com/intune/device-restrictions-android-for-work). It's possible that some dialer or messaging apps, whether pre-installed by the device manufacturer or installed from the Play Store, do not properly support this capability.
 
 The workflow for enabling Save Contacts is the same for new accounts and existing accounts.
 
 1. The user is notified that the administrator has enabled contact synchronization. In Outlook for iOS, the notification occurs within the app, whereas in Outlook for Android, a persistent notification is delivered via the Android notification center.
 
-    ![Contact sync notification](../../media/outlook_mobile_intune_2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Contact sync notification](../../media/outlook_mobile_intune_2.png)
 
 2. If the user taps on the notification, the user is prompted to grant access:
 
-    ![user is prompted for access to contacts](../../media/outlook_mobile_intune_3.png)
+   > [!div class="mx-imgBorder"]
+   > ![user is prompted for access to contacts](../../media/outlook_mobile_intune_3.png)
 
 3. If the user allows Outlook to access the native Contacts app, access is granted and contact synchronization is enabled. If the user denies Outlook access to the native Contacts app, then the user is prompted to go into the OS settings and enable contact synchronization:
-
-    ![user is prompted to allow Outlook to access the native Contacts app](../../media/outlook_mobile_intune_4.png)
+   
+   > [!div class="mx-imgBorder"]
+   > ![user is prompted to allow Outlook to access the native Contacts app](../../media/outlook_mobile_intune_4.png)
 
 4. In the event the user denies Outlook access to the native Contacts app and dismisses the previous prompt, the user may later enable access by navigating to the account configuration within Outlook and tapping **Open Settings**:
 
-    ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
+   > [!div class="mx-imgBorder"]
+   > ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
 
 #### Calendar Sync
 
@@ -380,9 +387,9 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
-    - For **Sync Calendars**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. This setting is only available in Outlook for Android. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - For **Sync Calendars**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This feature is only available in Outlook for Android.
 
-    - For **Smart Compose**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - For **Text Predictions**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 12. If you want to configure S/MIME settings, see [Outlook for iOS Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-ios-automated-certificate-delivery) or [Outlook for Android Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-android-automated-certificate-delivery).
 
@@ -449,7 +456,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
   
     - For **Sync Calendars**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This feature is available only in Outlook for Android.
   
-    - For **Smart Compose**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - For **Text Predictions**, choose from the available options: **Not configured** (default), **Yes** (app default), **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 9. If you want to manage the data protection settings, configure the desired settings accordingly:
 
@@ -497,7 +504,7 @@ The exact syntax of the key/value pair may differ based on the third-party UEM p
 
 Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Microsoft 365 and Office 365 users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
-|**Key**|**Value**|**Device Enrollment Type**|
+| Key | Value | Device Enrollment Type |
 |:-----|:-----|:-----|
 |com.microsoft.outlook.EmailProfile.EmailAddress|This key specifies the email address to be used for sending and receiving mail. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: Email address <br/><br/> **Default if not specified**: \<blank\> <br/><br/> **Required**: Yes <br/><br/> **Example**: user@companyname.com|Managed devices|
 |com.microsoft.outlook.EmailProfile.EmailUPN|This key specifies the User Principal Name or username for the email profile that is used to authenticate the account. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: UPN Address or username <br/><br/> **Default if not specified**: \<blank\> <br/><br/> **Required**: Yes <br/><br/> **Example**: userupn@companyname.com|Managed devices|
@@ -507,7 +514,7 @@ Outlook for iOS and Android offers administrators the ability to "push" account 
 
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
-|**Key**|**Value**|**Platform**|**Device Enrollment Type**|
+| Key | Value | Platform | Device Enrollment Type |
 |:-----|:-----|:-----|:-----|
 |IntuneMAMAllowedAccountsOnly|This key specifies whether organization allowed account mode is active. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: Enabled, Disabled <br/><br/> **Required**: Yes <br/><br/> **Value**: Enabled|iOS|Managed devices|
 |IntuneMAMUPN|This key specifies the User Principal Name for the account. <br/><br/> **Value type**: String <br/><br/> **Accepted values**: UPN Address <br/><br/> **Required**: Yes <br/><br/> **Example**: userupn@companyname.com|iOS|Managed devices|
@@ -517,7 +524,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings.
 
-|**Key**|**Value**|**Device Enrollment Type**|
+| Key | Value | Device Enrollment Type |
 |:-----|:-----|:-----|
 |com.microsoft.outlook.Mail.FocusedInbox|This key specifies whether Focused Inbox is enabled. Setting the value to false will disable Focused Inbox. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Auth.Biometric|This key specifies whether FaceID or TouchID is required to access the app. Setting the value to true will enable biometric access. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
@@ -542,7 +549,7 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 
 Outlook for iOS offers administrators the ability to customize the default S/MIME configuration in Outlook for iOS and Android.
 
-|**Key**|**Value**|**Device Enrollment Type**|
+| Key | Value | Device Enrollment Type |
 |:-----|:-----|:-----|
 |com.microsoft.outlook.Mail.SMIMEEnabled|This key specifies whether the app enables S/MIME. Use of S/MIME requires certificates available to Outlook for iOS and Android. Setting the value to true will enable S/MIME support in the app.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
@@ -555,7 +562,7 @@ Outlook for iOS offers administrators the ability to customize the default S/MIM
 
 Outlook for iOS and Android offers administrators additional data protection capabilities when Outlook is managed by Microsoft Endpoint Manager and has an Intune App Protection Policy.
 
-|**Key**|**Value**|**Device Enrollment Type**|
+| Key | Value | Device Enrollment Type |
 |:-----|:-----|:-----|
 |com.microsoft.outlook.Calendar.NativeSyncAvailable.IntuneMAMOnly|This key specifies whether calendar sync between Outlook and the native Android Calendar app is available for the work or school account. If not defined, Outlook respects the setting value for "Sync policy managed app data with native apps" within the App Protection Policy. This key is only supported with Outlook for Android. <br/> **Accepted values**: true, false  <br/> **Default if not specified**: No value specified <br/> **Example**: false|Managed apps|
 |com.microsoft.outlook.Calendar.Notifications.IntuneMAMOnly|This key specifies whether sensitive data is exposed in calendar notifications when the App Protection Policy **Org data notifications** is set to **Block Org Data**. Setting the value to Allowed (0) exposes sensitive data in the calendar notification. Leaving the value unset protects sensitive data in the calendar notification. <br/> **Accepted values**: 0  <br/> **Default if not specified**: No value specified <br/> **Example**: 0|Managed apps|

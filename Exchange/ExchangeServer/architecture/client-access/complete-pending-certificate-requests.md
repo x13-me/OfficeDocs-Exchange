@@ -86,13 +86,13 @@ Import-ExchangeCertificate -FileName "\\FileServer01\Data\Contoso Cert.cer" -Pas
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions), use the following syntax:
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))]
+Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))
 ```
 
 This example imports the text certificate file `\\FileServer01\Data\Chain of Certificates.p7b` on the local Exchange server.
 
 ```PowerShell
-Import-ExchangeCertificate -FileData "Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))]
+Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))
 ```
 
  **Notes:**
