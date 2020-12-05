@@ -461,6 +461,7 @@
 ###### [Remove Outlook on the web mailbox policy](../clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy.md)
 ###### [Configure Outlook on the web mailbox policy properties](../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md)
 #### [OWA for Devices contact sync](../clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md)
+#### [Remote wipe with Outlook on the web](../clients-and-mobile-in-exchange-online/outlook-on-the-web/remote-wipe-outlook-onweb.md)
 #### [Public attachment handling](../clients-and-mobile-in-exchange-online/outlook-on-the-web/public-attachment-handling.md)
 #### [Increase the space used by Inbox rules](../clients-and-mobile-in-exchange-online/outlook-on-the-web/increase-the-space-used-by-inbox-rules.md)
 ### [MailTips](../clients-and-mobile-in-exchange-online/mailtips/mailtips.md)
