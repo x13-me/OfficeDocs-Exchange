@@ -457,7 +457,7 @@ You need to check the following items before you can complete your public folder
    ```
 
 3. If your environment has multiple active directory domains, ensure the steps in the following article are followed before initiating completing.
-https://docs.microsoft.com/en-us/exchange/troubleshoot/public-folders/migrationbatch-fails-no-public-folder-mailboxes
+https://docs.microsoft.com/exchange/troubleshoot/public-folders/migrationbatch-fails-no-public-folder-mailboxes
 
 4. To complete the public folder migration, run the following command in Exchange Online PowerShell:
 
