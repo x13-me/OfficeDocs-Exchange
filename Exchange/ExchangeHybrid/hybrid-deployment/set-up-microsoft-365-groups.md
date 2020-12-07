@@ -159,6 +159,8 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 - **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to a Microsoft 365 group when the following conditions are true:
 
   - The group domain is configured as an authoritative domain in your on-premises Exchange organization.
+  
+  - The "Oubound to Office 365" Send-Connector is using an Edge Transport Server as the source server. Messages to Groups will end-up in a loop and NDR.
 
   - The group was recently created and its information hasn't been written back to your on-premises Active Directory yet.
 
