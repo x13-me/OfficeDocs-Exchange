@@ -65,6 +65,9 @@ Looking for other information related to lagged mailbox database copies? Check o
    ```powershell
    Eseutil.exe /r eXX /a
    ```
+Note: if the database being recovered is "out of place", make sure to specify the logfile,checkpoint and database paths in the eseutil command, for example:
+eseutil.exe /R E00 /a /l “c:\DBRecovery” /s “c:\DBRecovery” /d “c:\DBRecovery”
+
 
    > [!NOTE]
    > • In the preceding example, e _XX_ is the log generation prefix for the database (for example, E00, E01, E02, and so on). <br/><br/>• This step may take a considerable amount of time, depending on several factors, such as the length of the replay lag time, the number of log files generated during that period, and the speed at which your hardware can replay those logs into the database being recovered.
