@@ -2,6 +2,41 @@
 
 
 
+## Week of November 30, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/30/2020 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 11/30/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
+| 11/30/2020 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
+| 11/30/2020 | [How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another](/Exchange/mailbox-migration/migrate-mailboxes-across-tenants) | modified |
+| 11/30/2020 | [Convert Exchange 2003 mailboxes to mail-enabled users](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2003-mailboxes) | modified |
+| 11/30/2020 | [Convert Exchange 2007 mailboxes to mail-enabled users](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2007-mailboxes) | modified |
+| 11/30/2020 | [Monitoring, reporting, and message tracing in Exchange Online](/Exchange/monitoring/monitoring) | modified |
+| 12/1/2020 | [Hybrid Configuration wizard](/Exchange/hybrid-configuration-wizard) | modified |
+| 12/1/2020 | [Complete a pending Exchange Server certificate request](/Exchange/architecture/client-access/complete-pending-certificate-requests?view=exchserver-2016) | modified |
+| 12/1/2020 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 12/4/2020 | [Batch migrate Exchange Server public folders to Microsoft 365 or Office 365](/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2016) | modified |
+| 12/4/2020 | [Add retention tags to or remove retention tags from a retention policy](/Exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags) | modified |
+| 12/4/2020 | [Apply a retention policy to mailboxes](/Exchange/security-and-compliance/messaging-records-management/apply-retention-policy) | modified |
+| 12/4/2020 | [Create a Retention Policy](/Exchange/security-and-compliance/messaging-records-management/create-a-retention-policy) | modified |
+| 12/4/2020 | [Default folders that support Retention Policy Tags](/Exchange/security-and-compliance/messaging-records-management/default-folders) | modified |
+| 12/4/2020 | [Default Retention Policy in Exchange Online and Exchange Server](/Exchange/security-and-compliance/messaging-records-management/default-retention-policy) | modified |
+| 12/4/2020 | [Messaging records management](/Exchange/security-and-compliance/messaging-records-management/messaging-records-management) | modified |
+| 12/4/2020 | [How retention age is calculated](/Exchange/security-and-compliance/messaging-records-management/retention-age) | modified |
+| 12/4/2020 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+
+
+## Week of November 23, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/23/2020 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
+| 11/23/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
+
+
 ## Week of November 16, 2020
 
 
@@ -147,41 +182,3 @@
 | 11/6/2020 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
 | 11/6/2020 | [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) | modified |
 | 11/6/2020 | [Mail flow rule actions in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) | modified |
-
-
-## Week of October 26, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/26/2020 | [Certificate requirements for hybrid deployments](/Exchange/certificate-requirements) | modified |
-| 10/26/2020 | [Perform a G Suite migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 10/26/2020 | [Mailbox plans in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans) | modified |
-| 10/26/2020 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
-| 10/27/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 10/27/2020 | [Using Outlook for iOS and Android in the Government Community Cloud](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud) | modified |
-| 10/28/2020 | [Run a message trace and view the results in the Exchange admin center](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
-| 10/28/2020 | [Batch migrate Exchange Server public folders to Microsoft 365 or Office 365](/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2016) | modified |
-| 10/29/2020 | [Address book policies in Exchange Online](/Exchange/address-books/address-book-policies/address-book-policies) | modified |
-| 10/29/2020 | Manage equipment mailboxes | removed |
-| 10/29/2020 | Create and manage room mailboxes | removed |
-| 10/29/2020 | [Add or remove email addresses for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
-| 10/29/2020 | [Recipients in Exchange Online](/Exchange/recipients-in-exchange-online/recipients-in-exchange-online) | modified |
-
-
-## Week of October 19, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/19/2020 | [Use a screen reader to manage anti-spam protection in Exchange Online](/Exchange/accessibility/use-a-screen-reader-to-manage-anti-spam-protection) | modified |
-| 10/19/2020 | [CSV files for IMAP migration batches](/Exchange/mailbox-migration/migrating-imap-mailboxes/csv-files-for-imap-migrations) | modified |
-| 10/19/2020 | [Learn more about setting up your IMAP server connection](/Exchange/mailbox-migration/migrating-imap-mailboxes/setting-up-your-imap-server-connection) | modified |
-| 10/19/2020 | [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) | modified |
-| 10/19/2020 | [Use mail flow rules to inspect message attachments in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments) | modified |
-| 10/19/2020 | [Mail flow rule conditions and exceptions (predicates) in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions?view=exchserver-2016) | modified |
-| 10/19/2020 | [Transport rule conditions and exceptions (predicates) in Exchange 2013](/Exchange/mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help) | modified |
-| 10/21/2020 | [Using third-party add-ins for online meetings in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/online-meeting-add-ins-for-ios-and-android) | modified |
-| 10/21/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 10/21/2020 | [Shared mailboxes in Exchange Online](/Exchange/collaboration-exo/shared-mailboxes) | modified |
-| 10/21/2020 | [Transport agents in Exchange Server](/Exchange/mail-flow/transport-agents/transport-agents?view=exchserver-2016) | modified |
