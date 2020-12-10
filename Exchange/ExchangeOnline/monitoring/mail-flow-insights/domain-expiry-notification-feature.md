@@ -21,7 +21,7 @@ The **Domain expiring soon** insight in the **Insights** dashboard in the modern
 
 [image]
 
-You can click **View details** to see the identified domains that are about to expire listed in the details pane. From the list, select the domain to renew/delete and follow the instructions in the details pane.
+You can click **View details** to see the identified domains that are about to expire listed in the details pane.
 
 [image]
 
@@ -35,4 +35,4 @@ You can also view these alerts in [modern EAC](https://admin.exchange.microsoft.
 
 [Mail flow insights in the modern Exchange admin center](mail-flow-insights.md)
 
-[Manage accepted domains in Exchange Online](manage-accepted-domains.md)
+[Manage accepted domains in Exchange Online](../manage-accepted-domains/manage-accepted-domains.md)
