@@ -31,8 +31,6 @@ These notifications list the domains that are expiring and require necessary act
 
 You can also view these alerts in [modern EAC](https://admin.exchange.microsoft.com) (modern EAC), navigate to **Mail flow** > **View alerts**.
 
-## Related articles
+## Related article
 
 [Mail flow insights in the modern Exchange admin center](mail-flow-insights.md)
-
-[Manage accepted domains in Exchange Online](../manage-accepted-domains/manage-accepted-domains.md)
