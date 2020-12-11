@@ -1,5 +1,5 @@
 ---
-title: "Domain expiring insight in the modern Exchange admin center (modern EAC)"
+title: "Domain expiring insight in the new Exchange admin center (new EAC)"
 f1.keywords:
 ms.author: v-bshilpa
 author: Benny-54
@@ -13,11 +13,11 @@ description: This notification feature monitors the accepted domains per tenant 
 ms.custom:
 ---
 
-# Domain expiring insight in the modern EAC
+# Domain expiring insight in the new EAC
 
 When you add your domain to Microsoft 365 or Office 365, it's called an accepted domain. Users in this accepted domain can send and receive mail. To keep a healthy mail flow, domains owned by customers should be active. Once domains expire, users configured under that domain will no longer receive emails. 
 
-The **Domain expiring soon** insight in the **Insights** dashboard in the modern EAC reports the domains that are about to expire and need necessary action to be taken.
+The **Domain expiring soon** insight in the **Insights** dashboard in the new EAC reports the domains that are about to expire and need necessary action to be taken.
 
 [image]
 
@@ -29,7 +29,7 @@ If a domain is expiring within 90 days, 60 days, or 30 days and less, it trigger
 
 These notifications list the domains that are expiring and require necessary action to be taken to avoid disruption in your mail flow. You can ignore the notifications if you have renewed/deleted the domain. 
 
-You can also view these alerts in [modern EAC](https://admin.exchange.microsoft.com) (modern EAC), navigate to **Mail flow** > **View alerts**.
+You can also view these alerts in [new EAC](https://admin.exchange.microsoft.com) (new EAC), navigate to **Mail flow** > **View alerts**.
 
 ## Related article
 
