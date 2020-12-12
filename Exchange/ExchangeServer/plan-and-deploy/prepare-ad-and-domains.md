@@ -181,7 +181,7 @@ When you prepare specific domains in your Active Directory forest, the following
 
 - If the domain that you want to prepare was created **after** you ran /PrepareAD in Step 2, your account also needs to be a member of the Organization Management role group in Exchange.
 
-To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
+To prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
