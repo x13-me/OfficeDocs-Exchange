@@ -25,7 +25,7 @@ Critical product updates are packages that address a Microsoft-released security
 Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
 ::: moniker range="exchserver-2019"
-|**Version**|**Blog post**|
+| Version | Blog post |
 |:-----|:-----|
 |Exchange 2019 CU8|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
 |Exchange 2019 CU7|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
@@ -46,7 +46,7 @@ To get the latest version of Exchange 2016, download and install [Cumulative Upd
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
-|**Version**|**Blog post**|
+| Version | Blog post |
 |:-----|:-----|
 |Exchange 2016 CU19|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
 |Exchange 2016 CU18|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
