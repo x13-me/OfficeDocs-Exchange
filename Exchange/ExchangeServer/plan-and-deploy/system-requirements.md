@@ -95,13 +95,13 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 |Management tools|One of the following versions of Windows:  <br/>• Windows Server 2019 Standard or Datacenter <br/>• 64-bit edition of Windows 10|
 |
 
-**Notes**:
+> [!NOTE]
+> 
+> - Installing Exchange 2019 on a computer that's running Windows Server Core is fully supported and recommended. The Desktop Experience feature is no longer required.
+> 
+> - Installing Exchange 2019 on a computer that's running Nano Server isn't supported.
 
-- Installing Exchange 2019 on a computer that's running Windows Server Core is fully supported and recommended. The Desktop Experience feature is no longer required.
-
-- Installing Exchange 2019 on a computer that's running Nano Server isn't supported.
-
-### Supported Powershell versions for Exchange 2019 servers
+### Supported PowerShell versions for Exchange 2019 servers
 
 Exchange 2019 servers support the version of PowerShell that's included in the release of Windows Server where Exchange is installed. Don't install stand-alone downloads of WMF or PowerShell on Exchange servers.
 
@@ -263,7 +263,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU5, CU6, CU7||||Supported|
 |
 
-**Note**: For older versions, see [Exchange Server supportability matrix](supportability-matrix.md#microsoft-net-framework).
+> [!NOTE]
+> For older versions, see [Exchange Server supportability matrix](supportability-matrix.md#microsoft-net-framework).
 
 ## Supported clients (with latest updates) in Exchange 2016
 
