@@ -106,7 +106,7 @@ To help you plan your migration, the following tables present guidelines about w
    |\> 200|Not supported|Not supported|
    |
 
-   **Migration duration to complete 90% of mailbox moves based on tenant size profiles:**
+**Migration duration to complete 90% of mailbox moves based on tenant size profiles:**
 
    ****
 
@@ -120,7 +120,8 @@ To help you plan your migration, the following tables present guidelines about w
    |\> 1000,000|60|180|
    |
 
-Note that some outlier mailboxes would take longer to complete based on the mailbox profile. Also, if a tenant has larger mailboxes on average, this can also contribute to the extended duration of migration.
+> [!NOTE]
+> Some outlier mailboxes would take longer to complete based on the mailbox profile. Also, if a tenant has larger mailboxes on average, this can also contribute to the extended duration of migration.
 
 ## Migration performance factors
 
@@ -397,7 +398,8 @@ Many traditional migration solutions use the RPC over HTTP Protocol. This method
 |Outlook|201.9MB|3,297|0:29:47|15,775|36.9987|5.6447|
 |
 
-Note that the client and service process times are similar, but solution A takes a lot more RPC operations to migrate data. Because each operation consumes client-latency time and server-process time, solution A is much slower to migrate the same amount of data compared to Solution B and to Outlook.
+> [!NOTE]
+> the client and service process times are similar, but solution A takes a lot more RPC operations to migrate data. Because each operation consumes client-latency time and server-process time, solution A is much slower to migrate the same amount of data compared to Solution B and to Outlook.
 
 ### Factor 4: Network
 
