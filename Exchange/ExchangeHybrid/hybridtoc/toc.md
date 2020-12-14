@@ -35,7 +35,7 @@
 ## [Exchange 2013 and 2007 hybrid](../exchange-2013-and-2007-hybrid/exchange-2013-and-2007-hybrid.md)
 ### [Server roles](../exchange-2013-and-2007-hybrid/server-roles.md)
 ### [Hybrid management](../exchange-2013-and-2007-hybrid/hybrid-management.md)
-### [Edge Transport serverrs](../exchange-2013-and-2007-hybrid/edge-transport-serverrs.md)
+### [Edge Transport servers](../exchange-2013-and-2007-hybrid/edge-transport-serverrs.md)
 ### [Transport options](../exchange-2013-and-2007-hybrid/transport-options.md)
 ### [Transport routing](../exchange-2013-and-2007-hybrid/transport-routing.md)
 ## [Exchange 2013 and 2010 hybrid](../exchange-2013-and-2010-hybrid/exchange-2013-and-2010-hybrid.md)
