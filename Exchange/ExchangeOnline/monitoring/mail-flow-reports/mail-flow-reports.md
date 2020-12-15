@@ -1,5 +1,5 @@
 ---
-title: "Mail flow reports in the modern EAC"
+title: "Mail flow reports in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: Admins can learn about the mail flow reports that are available in the modern Exchange admin center.
+description: Admins can learn about the mail flow reports that are available in the new Exchange admin center.
 ms.custom:
 ---
 
-# Mail flow reports in the modern Exchange admin center
+# Mail flow reports in the new Exchange admin center
 
-Admins can use mail flow reports in the modern Exchange admin center (modern EAC) to establish baselines and discover trends to fix issues related to mail flow in their organization.
+Admins can use mail flow reports in the new Exchange admin center (new EAC) to establish baselines and discover trends to fix issues related to mail flow in their organization.
 
 The following mail flow reports are available:
 
@@ -54,6 +54,6 @@ For more information, see [Permissions in Exchange Online](../../permissions-exo
 
 ## Where to find mail flow reports
 
-Open the modern EAC at <https://admin.exchange.microsoft.com>, expand **Reports**, and then select **Mail flow**.
+Open the new EAC at <https://admin.exchange.microsoft.com>, expand **Reports**, and then select **Mail flow**.
 
 To go directly to the mail flow reports, open <https://admin.exchange.microsoft.com/#/reports/vipmailflowdetails>
