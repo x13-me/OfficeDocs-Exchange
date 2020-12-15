@@ -1,5 +1,5 @@
 ---
-title: "New users forwarding email insight in the modern EAC"
+title: "New users forwarding email insight in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,14 +10,14 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the New users forwarding email insight in the modern Exchange admin center to investigate when users in their organization are forwarding messages to new domains."
+description: "Admins can learn how to use the New users forwarding email insight in the new Exchange admin center to investigate when users in their organization are forwarding messages to new domains."
 ---
 
-# New users forwarding email insight in the modern EAC
+# New users forwarding email insight in the new EAC
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 
-The **New users fowarding email** insight in the Insights dashboard in the modern Exchange admin center (modern EAC) notifies you when new users accounts in your organization are forwarding messages to external domains.
+The **New users fowarding email** insight in the Insights dashboard in the new Exchange admin center (new EAC) notifies you when new users accounts in your organization are forwarding messages to external domains.
 
 ![New domains being forwarded email insight in the Insights dashboard](../../media/mfi-new-users-forwarding-email-insight.png)
 
@@ -29,4 +29,4 @@ If you suspect the accounts have been compromised, see [Responding to a compromi
 
 ## Related topics
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the modern Exchange admin center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the new Exchange admin center](mail-flow-insights.md).
