@@ -59,4 +59,4 @@ Click **Export** to export the displayed results to a .csv file.
 
 ## See also
 
-For more information about other mail flow reports, see [Mail flow reports in the modern EAC](mail-flow-reports.md).
+For more information about other mail flow reports, see [Mail flow reports in the new EAC](mail-flow-reports.md).
