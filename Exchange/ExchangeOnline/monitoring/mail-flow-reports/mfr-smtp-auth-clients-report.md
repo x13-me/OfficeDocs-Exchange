@@ -1,5 +1,5 @@
 ---
-title: "SMTP AUTH clients report in the modern EAC"
+title: "SMTP AUTH clients report in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the SMTP AUTH report in the modern Exchange admin center to monitor email senders in your organization that use authenticated SMTP (SMTP AUTH) to send email messages."
+description: "Admins can learn how to use the SMTP AUTH report in the new Exchange admin center to monitor email senders in your organization that use authenticated SMTP (SMTP AUTH) to send email messages."
 ---
 
-# SMTP AUTH clients report in the modern Exchange admin center
+# SMTP AUTH clients report in the new Exchange admin center
 
-The **SMTP AUTH clients** report in the modern Exchange admin center (modern EAC) highlights the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. This report allows you to check for unusual activity. It also shows the TLS usage data for clients or devices using SMTP AUTH.
+The **SMTP AUTH clients** report in the new Exchange admin center (new EAC) highlights the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. This report allows you to check for unusual activity. It also shows the TLS usage data for clients or devices using SMTP AUTH.
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
