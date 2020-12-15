@@ -1,5 +1,5 @@
 ---
-title: "Mail flow insights in the modern EAC"
+title: "Mail flow insights in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: Admins can learn how to use the mail flow insights dashboard in the modern Exchange admin center to find and fix mail flow related issues.
+description: Admins can learn how to use the mail flow insights dashboard in the new Exchange admin center to find and fix mail flow related issues.
 ms.custom:
 ---
 
-# Mail flow insights in the modern Exchange admin center
+# Mail flow insights in the new Exchange admin center
 
-Admins can use the insights dashboard in the modern Exchange admin center (modern EAC) to discover issues with mail flow and take corrective action. If an item appears in the mail flow insights dashboard, you need to investigate and likely fix the issue.
+Admins can use the insights dashboard in the new Exchange admin center (new EAC) to discover issues with mail flow and take corrective action. If an item appears in the mail flow insights dashboard, you need to investigate and likely fix the issue.
 
 The following mail flow insights are available:
 
@@ -47,6 +47,6 @@ For more information, see [Permissions in Exchange Online](../../permissions-exo
 
 ## Where to find mail flow insights
 
-To see the mail flow insights, open the modern EAC at <https://admin.exchange.microsoft.com> and select **Insights**.
+To see the mail flow insights, open the new EAC at <https://admin.exchange.microsoft.com> and select **Insights**.
 
 To go directly to the mail flow insights dashboard, open <https://admin.exchange.microsoft.com/#/insights>.
