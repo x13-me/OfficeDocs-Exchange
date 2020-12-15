@@ -1,5 +1,5 @@
 ---
-title: "Auto forwarded messages report in the modern EAC"
+title: "Auto forwarded messages report in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the Auto forwarded messages report in the modern Exchange admin center to see the internal senders and external recipients of forwarded messages from your organization."
+description: "Admins can learn how to use the Auto forwarded messages report in the new Exchange admin center to see the internal senders and external recipients of forwarded messages from your organization."
 ---
 
-# Auto forwarded messages report in the modern EAC
+# Auto forwarded messages report in the new EAC
 
-The **Auto-forwarded messages** report in the modern Exchange admin center (modern EAC) displays information on messages that are automatically forwarded from your organization to recipients in external domains. You can use this report to look for potential data leaks.
+The **Auto-forwarded messages** report in the new Exchange admin center (new EAC) displays information on messages that are automatically forwarded from your organization to recipients in external domains. You can use this report to look for potential data leaks.
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
