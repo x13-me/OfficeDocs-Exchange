@@ -1,5 +1,5 @@
 ---
-title: "Email issues for priority accounts report in the modern EAC"
+title: "Email issues for priority accounts report in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,10 +11,10 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
 ms.custom:
-description: "Admins can learn how to use the Email issues for priority accounts monitoring in the modern Exchange admin center to see delayed and failed email messages that were sent to or from priority accounts."
+description: "Admins can learn how to use the Email issues for priority accounts monitoring in the new Exchange admin center to see delayed and failed email messages that were sent to or from priority accounts."
 ---
 
-# Email issues for priority accounts report in the modern EAC
+# Email issues for priority accounts report in the new EAC
 
 > [!NOTE]
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:
@@ -23,7 +23,7 @@ description: "Admins can learn how to use the Email issues for priority accounts
 >
 > - At least 10,000 licensed users and at least 50 monthly active Exchange Online users.
 
-The **Email issues for priority accounts** report in the modern Exchange admin center (modern EAC) allows Exchange Admins and Global admins to view failed events from the last 15 minutes and delayed email messages from last 6 hours that were sent to or sent from priority accounts. If no issues are found, the report will be empty. Users can configure to receive email notifications for failed and delayed messages which will provide information at the time alert is fired.
+The **Email issues for priority accounts** report in the new Exchange admin center (new EAC) allows Exchange Admins and Global admins to view failed events from the last 15 minutes and delayed email messages from last 6 hours that were sent to or sent from priority accounts. If no issues are found, the report will be empty. Users can configure to receive email notifications for failed and delayed messages which will provide information at the time alert is fired.
 
 Priority users are people in your Microsoft 365 organization who have a high business impact, like your CEO, executives, or other users who have access to sensitive or high priority information. For more information about priority accounts, see [Manage and monitor priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
@@ -59,7 +59,7 @@ For more advanced filters that you can also save and use later, click **Filter**
 
 Select an entry in the list to be taken to the [message trace](../../monitoring/trace-an-email-message/message-trace-modern-eac.md) search results for the message. Select the message trace entry to view details about the message and what happened to it.
 
-![Message trace detail in message trace in the modern EAC](../../media/mfr-priority-users-message-trace-detail.png)
+![Message trace detail in message trace in the new EAC](../../media/mfr-priority-users-message-trace-detail.png)
 
 Click **Export** to export the displayed results to a .csv file.
 
@@ -69,7 +69,7 @@ Click **Edit policy** to configure email notifications related to priority accou
 
 - **Send email notification**: Select or clear this checkbox.
 
-- **Send email notifications ot these users or groups**: Click in the box to find or enter a user or group to receive email notifications.
+- **Send email notifications to these users or groups**: Click in the box to find or enter a user or group to receive email notifications.
 
 - **Daily notification limit**: Select from the following values: **No limit**, 1 (default), 5, 10, 25, 50, 150, or 200.
   
