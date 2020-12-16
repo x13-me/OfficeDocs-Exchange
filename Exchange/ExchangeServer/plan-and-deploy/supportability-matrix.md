@@ -28,7 +28,7 @@ In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulati
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). Each CU is a full installation of Exchange that includes updates and changes from all previous CUs, so you don't need to install any previous CUs or Exchange Server RTM first. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
-|**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
+| Servicing release model | Exchange 2019 | Exchange 2016 | Exchange 2013 | Exchange 2010 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Cumulative updates (CUs)|Yes|Yes|Yes|No|
 |Update rollups (RUs)|No|No|No|Yes|
@@ -54,7 +54,7 @@ The following tables identify the operating system platforms on which each versi
 
 <br/>
 
-|**Server operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Server operating system | Exchange 2019 | Exchange 2016 CU3 and later | Exchange 2016 CU2 and earlier | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
 |Windows Server 2019|Supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2016|Not supported|Supported|Not supported|Not supported|Not supported|
@@ -70,7 +70,7 @@ The following tables identify the operating system platforms on which each versi
 
 <br/>
 
-|**Client operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Client operating system | Exchange 2019 | Exchange 2016 CU3 and later | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Windows 10|Supported|Supported|Not supported|Not supported|
 |Windows 8.1|Not supported|Supported|Supported|Not supported|
@@ -82,7 +82,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 <br/>
 
-|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+| Operating system environment | Exchange 2019 | Exchange 2016 CU12 and later | Exchange 2016 CU7 and later | Exchange 2016 CU3 to CU6 | Exchange 2016 CU2 and earlier | Exchange 2013 SP1 and later | Exchange 2010 SP3 RU22 or later | Exchange 2010 SP3 RU5 - RU21 |
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |Windows Server 2019 Active Directory servers|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
@@ -94,7 +94,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 <br/>
 
-|**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+| AD forest functional level | Exchange 2019 | Exchange 2016 CU7 and later | Exchange 2016 CU3 to CU6 | Exchange 2016 CU2 and earlier | Exchange 2013 SP1 and later | Exchange 2010 SP3 RU22 or later | Exchange 2010 SP3 RU5 - RU21 |
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |Windows Server 2016|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
 |Windows Server 2012 R2|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
@@ -107,7 +107,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 The following table identifies the web browsers supported for use together with the premium version of Outlook Web App or Outlook on the web.
 
-|**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Browser | Exchange 2019 | Exchange 2016 | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Microsoft Edge|Supported|Supported|Not supported|Not supported|
 |Internet Explorer 11|Supported|Supported|Supported|Supported|
@@ -136,7 +136,7 @@ The following table identifies the web browsers supported for use together with 
 
 <br/>
 
-|**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010 SP3**|
+| Browser | Exchange 2019 | Exchange 2016 | Exchange 2013 | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Microsoft Edge|Supported|Supported|Not supported|Not supported|
 |Internet Explorer 11|Supported|Supported|Supported|Supported|
@@ -155,7 +155,7 @@ The following table identifies the web browsers supported for use together with 
 
 The following table identifies the web browsers supported for the use of S/MIME together with Outlook Web App or Outlook on the web.
 
-|**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Browser | Exchange 2019 | Exchange 2016 | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Microsoft Edge|Supported|Not supported|Not supported|Not supported|
 |Internet Explorer 11|Supported|Supported|Supported|Supported|
@@ -168,7 +168,7 @@ The following table identifies the web browsers supported for the use of S/MIME 
 
 The following tables identify the mail clients that are supported for use together with each version of Exchange.
 
-|**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Client | Exchange 2019 | Exchange 2016 | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Microsoft 365 Apps for enterprise|Supported|Supported|Supported|Not supported|
 |Outlook 2019|Supported|Supported|Supported|Not supported|
@@ -198,14 +198,14 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework version**|**CU7, CU6, CU5, CU4**|**CU3, CU2**|**CU1, RTM**|
+| .NET Framework version | CU8 to CU4 | CU3, CU2 | CU1, RTM |
 |:-----|:-----:|:-----:|:-----:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
 
 ### Exchange 2016
 
-|**.NET Framework version**|**CU18, CU17, CU16, CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
+| .NET Framework version | CU19 to CU15 | CU14, CU13 | CU12, CU11 | CU10 | CU9, CU8 | CU7, CU6, CU5 | CU4, CU3 | CU2 | CU1, RTM |
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |4.8|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
@@ -218,7 +218,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2013
 
-|**.NET Framework version**|**CU23**|**CU21, CU22**|**CU19, CU20**|**CU16, CU17, CU18**|**CU15**|**CU13, CU14**|**CU12 to SP1**|**CU3 to RTM**|
+| .NET Framework version | CU23 | CU21, CU22 | CU19, CU20 | CU16, CU17, CU18 | CU15 | CU13, CU14 | CU12 to SP1 | CU3 to RTM |
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |4.8|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
@@ -233,7 +233,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2010 SP3
 
-|**.NET Framework version**|**Exchange 2010 SP3**|
+| .NET Framework version | Exchange 2010 SP3 |
 |:-----|:-----:|
 |.NET Framework 4.5|Supported<sup>1,2</sup>|
 |.NET Framework 4.0|Supported<sup>1,2</sup>|
@@ -258,7 +258,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 The following table identifies the version of Microsoft Management Console (MMC) that can be used together with each version of Exchange.
 
-|**MMC**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| MMC | Exchange 2016 | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|
 |MMC 3.0|Supported|Supported|Supported|
 
@@ -266,7 +266,7 @@ The following table identifies the version of Microsoft Management Console (MMC)
 
 The following table identifies the version of Windows Installer that is used together with each version of Exchange.
 
-|**Windows Installer**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+| Windows Installer | Exchange 2016 | Exchange 2013 SP1 and later | Exchange 2010 SP3 |
 |:-----|:-----:|:-----:|:-----:|
 |Windows Installer 4.5|Supported|Supported|Supported|
 |Windows Installer 5.0|Supported|Supported|Not supported|
