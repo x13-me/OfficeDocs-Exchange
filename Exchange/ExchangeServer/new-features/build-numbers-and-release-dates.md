@@ -41,8 +41,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |Product name|Release date|Build number (short format)|Build number (long format)|
 |---|---|---|---|
+|[Exchange Server 2019 CU8](https://support.microsoft.com/kb/KB4588885)|December 15, 2020|15.2.792.3|15.02.0792.003|
 |[Exchange Server 2019 CU7](https://support.microsoft.com/kb/KB4571787)|September 15, 2020|15.2.721.2|15.02.0721.002|
-|[Exchange Server 2019 CU6](https://support.microsoft.com/help/4556415)|June 16, 2020|15.2.659.4|15.02.0659.004|
+|Exchange Server 2019 CU6|June 16, 2020|15.2.659.4|15.02.0659.004|
 |Exchange Server 2019 CU5|March 17, 2020|15.2.595.3|15.02.0595.003|
 |Exchange Server 2019 CU4|December 17, 2019|15.2.529.5|15.02.0529.005|
 |Exchange Server 2019 CU3|September 17, 2019|15.2.464.5|15.02.0464.005|
@@ -66,8 +67,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |Product name|Release date|Build number (short format)|Build number (long format)|
 |---|---|---|---|
+|[Exchange Server 2016 CU19](https://www.microsoft.com/download/details.aspx?familyID=2ef459a6-c8a5-417f-89a8-c8afa9ea00dd)|December 15, 2020|15.1.2176.2|15.01.2176.002|
 |[Exchange Server 2016 CU18](https://www.microsoft.com/download/details.aspx?familyID=42086856-b6eb-4c6c-96cd-1c9d33a07d04)|September 15, 2020|15.1.2106.2|15.01.2106.002|
-|[Exchange Server 2016 CU17](https://www.microsoft.com/download/details.aspx?id=101448)|June 16, 2020|15.1.2044.4|15.01.2044.004|
+|Exchange Server 2016 CU17|June 16, 2020|15.1.2044.4|15.01.2044.004|
 |Exchange Server 2016 CU16|March 17, 2020|15.1.1979.3|15.01.1979.003|
 |Exchange Server 2016 CU15|December 17, 2019|15.1.1913.5|15.01.1913.005|
 |Exchange Server 2016 CU14|September 17, 2019|15.1.1847.3|15.01.1847.003|
