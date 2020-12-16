@@ -60,6 +60,8 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 
       - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
 
+      - **Filtered as spam**: The message was delivered to the Junk Email folder.
+      
       - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
       <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
