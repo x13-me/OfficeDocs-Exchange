@@ -27,7 +27,7 @@ In Exchange Online, a default role assignment policy named Default Role Assignme
 > [!NOTE]
 > Currently **User roles** and **Outlook Web App** policies are not available in new Exchange admin center.
 
-Role assignment polices are how end-user roles (as opposed to management roles) are assigned to users in Exchange Online. There are several ways you can use role assignment policies to assign permissions to users:
+Role assignment policies are how end-user roles (as opposed to management roles) are assigned to users in Exchange Online. There are several ways you can use role assignment policies to assign permissions to users:
 
 - **New users**:
 
