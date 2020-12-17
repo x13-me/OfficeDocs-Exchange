@@ -73,7 +73,7 @@ To learn more about these new features, see [Integrating sensitive information r
 ## Installation prerequisites
 <a name="dlp_install"> </a>
 
-In order to make use of DLP features, you must have Exchange Online configured with at least one sender mailbox. Data Loss Prevention is a premium feature that requires an Enterprise Client Access License (CAL). For more information about getting started with Exchange Online, see [Exchange Online](../../exchange-online.md).
+In order to make use of DLP features, you must have at least one mailbox with an Exchange Online Plan 2 license configured. For more information, see [Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ## For more information
 <a name="dlp_moreinfo"> </a>
