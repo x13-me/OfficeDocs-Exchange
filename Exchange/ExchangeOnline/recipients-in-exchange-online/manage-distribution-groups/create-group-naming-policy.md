@@ -91,7 +91,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 6. Click **Add suffix** to add additional prefixes.
 
-   After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
+   After you add a prefix and suffix, notice that a preview of the group naming policy is displayed.
    
  7. To delete a prefix or suffix from the policy, click **X**.
  
