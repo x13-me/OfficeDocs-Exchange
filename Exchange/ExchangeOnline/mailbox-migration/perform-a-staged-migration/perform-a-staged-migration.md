@@ -414,9 +414,9 @@ After migrating mailboxes to Microsoft 365 or Office 365, there are post-migrati
 
    Microsoft 365 or Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
 
-   - **Alias**:autodiscover
+   - **Alias**: autodiscover
 
-   - **Target**:autodiscover.outlook.com
+   - **Target**: autodiscover.outlook.com
 
     For more information, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
