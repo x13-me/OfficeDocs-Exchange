@@ -65,7 +65,7 @@ If the migration fails with a grade of **Poor**, you cannot force the migration 
 
 Through the end of 2020, the [BadItemLimit and LargeItemLimit parameters](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) will remain available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
 
-If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter are specified, or if the boxes in the classic Exchange admin center wizard are left blank, then the new migration method and DataConsistencyScore are used.
+If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter is specified, or if the boxes in the classic Exchange admin center wizard are left blank, then the new migration method and DataConsistencyScore are used.
 
 > [!NOTE]
 > The BadItemLimit and LargeItemLimit parameters will be completely replaced by DataConsistencyScore in January 2021.
