@@ -93,7 +93,7 @@ When you create a new role group, you need to configure all of the settings your
 
     - **Write scope**: The default value is **Default**, but you can also select a custom recipient write scope from the drop-down list.
     
-3. In **Add permissons** section, select the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
+3. In **Add permissions** section, select the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
    
 4. In **Assign admins** section, select the users to assign to this role group and click **Next**. They'll have permissions to manage the roles that you assigned. 
 
@@ -173,7 +173,7 @@ If an existing role group is close in terms of the permissions and settings that
 
    - **Write scope**: The existing write scope is selected, but you can select **Default** or a custom recipient write scope from the drop-down list.
    
-4. In **Edit permissons** section, modify the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
+4. In **Edit permissions** section, modify the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
    
 5. In **Assign admins** section, modify the role group membership and click **Next**. They'll have permissions to manage the roles that you assigned. 
 
@@ -245,11 +245,11 @@ For detailed syntax and parameter information, [New-RoleGroup](https://docs.micr
 
 1. In the new EAC, go to **Roles** \> **Admin roles**, select the role group you want to modify, and then edit the following in the details pane:
 
-   - In **General** section, click **Edit bascis** to change the name and description.
+   - In **General** section, click **Edit basics** to change the name and description.
 
    - In **Assigned** section, add/delete users from this role group. 
 
-   - In **Permissons** section, add/remove roles assigned to the role group. 
+   - In **Permissions** section, add/remove roles assigned to the role group. 
 
 2. When you're finished, click **Save**.
 
@@ -269,7 +269,7 @@ The same options are available when you modify role groups as when you [Use the 
 
 **Notes**:
 
-- You can't use the EAC to modify the write scope, roles and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
+- You can't use the EAC to modify the write scope, roles, and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
 
 - Some role groups (for example, the Organization Management role group) restrict the roles that you can remove from group.
 
