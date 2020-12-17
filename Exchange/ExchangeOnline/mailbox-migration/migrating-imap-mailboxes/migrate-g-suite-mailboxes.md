@@ -28,7 +28,6 @@ manager: serdars
 ---
 
 # Migrate consumer G Suite mailboxes to Microsoft 365 or Office 365
-**Question - Shouldn;t Office 365 be removed**
 
 > [!NOTE]
 > This article explains how to migrate consumer Gmail mailboxes to Microsoft 365 or Office 365. For organizations and enterprises interested in migrating G Suite content, including calendar and contacts information in addition to mailbox data, see [Perform a G Suite migration](../perform-G-Suite-migration.md).
@@ -43,7 +42,7 @@ Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP 
 
 You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
- **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
+ **IMPORTANT**: IMAP migration will only migrate emails, not calendar, and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 Before Microsoft 365 or Office 365 can connect to Gmail or G Suites, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your G Suite account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [G Suite users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
 
@@ -66,7 +65,7 @@ Domain verification is a task you will go through as you set up Microsoft 365 or
 
 ### Step 2: Add users to Microsoft 365 or Office 365
 
-You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
+You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users, you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
 
 > [!IMPORTANT]
 > At this point you have verified that you own the domain and created your G Suite users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-microsoft-365-or-office-365).
@@ -166,7 +165,7 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 7. Sign in to your Google account to validate your APIs.
 
-   Once the APIs are successfully validated, a link, client id, and a scope is provided to add scope for API access.
+   Once the APIs are successfully validated, a link, client ID, and a scope is provided to add scope for API access.
    
 8. Click the API access link and verify your google account.
 
@@ -175,7 +174,7 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 10. In **Add a new client ID** window, enter the client id and the scope provided after API validation and click **Authorize**.
 
     > [!NOTE]
-    > For more information see the above topic **Grant access to the service account for your Google tenant**.
+    > For more information, see the above topic **Grant access to the service account for your Google tenant**.
     
 11. In **Set endpoint** section, you can either create a new migration endpoint or select the migration endpoint from the drop-down list:
 
