@@ -18,18 +18,18 @@ ms.custom: seo-marvel-apr2020
 
 You can migrate batches of users from G Suite to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch.
 
-All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information, see [Set up your domain (host-specific instructions)](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
    > [!NOTE]
    > G Suite migration is not currently available for Office 365 US Government GCC High or DoD.
 
 ## Overview of the process
 
-Before beginning your migration, please review the following diagrams to understand how a G Suite staged migration works. The diagrams show how a fictitious company named Fabrikam, Inc., with the domain name *fabrikaminc.net* performed their migration.
+Before beginning your migration, review the following diagrams to understand how a G Suite staged migration works. The diagrams show how a fictitious company named Fabrikam, Inc., with the domain name *fabrikaminc.net* performed their migration.
 
 ![Original setup before G Suite migration](../media/gsuite-mig-original-setup.png)
 
-Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the G Suite tenant or mail server where all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
+Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the G Suite tenant or mail server were all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
 
 ![Before the G Suite migration begins](../media/gsuite-mig-before-migration.png)
 
@@ -202,7 +202,7 @@ Before proceeding with either method, make sure that Mail Users have been provis
 
 For more advanced scenarios, you may be able to deploy Azure Active Directory (Azure AD) Connect to provision your Mail Users. See [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](https://docs.microsoft.com/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) for setup instructions. Then, you need to deploy an Exchange server in your on-premises environment for user management, and mail-enable your users using this server. For more information, see [How and when to decommission your on-premises Exchange servers in a hybrid deployment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange) and [Manage mail users](/Exchange/ExchangeServer/recipients/mail-users.md). Once the Mail Users have been created in Microsoft 365, the Azure AD Connect may need to be disabled in order to allow the migration process to convert these users into mailboxes - see [Turn off directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
 
-We recommend that the primary address (sometimes referred to as the "User Id") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
+We recommend that the primary address (sometimes referred to as the "User ID") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and G Suite. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their G Suite routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
 ## Start a G Suite migration batch with the new Exchange admin center (New EAC)
 
@@ -230,10 +230,10 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 9. In Google admin page, click **Add new**. 
 
-10. In **Add a new client ID** window, enter the client id and the scope provided after API validation and click **Authorize**.
+10. In **Add a new client ID** window, enter the client ID and the scope provided after API validation and click **Authorize**.
 
     > [!NOTE]
-    > For more information see the above topic **Grant access to the service account for your Google tenant**.
+    > For more information, see the above topic **Grant access to the service account for your Google tenant**.
     
 11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
     
@@ -299,7 +299,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 7. Enter the email address for the super admin within the G Suite environment. This email address will be used to test connectivity between G Suite and Microsoft 365 or Office 365.
 
-8. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
+8. Under **Specify the service account credentials using the JSON key file**, click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
    ![user email address](../media/gsuite-mig-15-eac-user.png)
 
@@ -323,7 +323,7 @@ We recommend that the primary address (sometimes referred to as the "User Id") f
 
 During completion, another incremental sync is run to copy any changes that have been made to the G Suite mailbox. Additionally, the forwarding address that routes mail from Microsoft 365 or Office 365 to G Suite is removed, and a forwarding address that routes mail from G Suite to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their G Suite mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their G Suite mailbox.
 
-## Start a G Suite migration with Exchange Online Powershell
+## Start a G Suite migration with Exchange Online PowerShell
 
 ### Create a migration endpoint in Microsoft 365 or Office 365
 
