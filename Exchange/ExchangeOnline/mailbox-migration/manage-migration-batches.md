@@ -56,8 +56,8 @@ The Migration dashboard contains a set of commands that you can use to manage mi
 |**Command**|**Description**|
 |:-----|:-----|
 |**New migration batch**|Create a new migration batch. Use this command to migrate on-premises mailboxes to Microsoft 365 or Office 365 (also called onboarding) or to migrate Microsoft 365 or Office 365 mailboxes back to your on-premises Exchange organization in a hybrid deployment.|
-|**Start migrtion**|Start a migration batch that's been created. After the batch is started, the status is changed to **Syncing**.|
-|**Stop migrtion**|Stop the migration of mailboxes. After the batch is stopped, the status is changed to **Stopped**.|
+|**Start migration**|Start a migration batch that's been created. After the batch is started, the status is changed to **Syncing**.|
+|**Stop migration**|Stop the migration of mailboxes. After the batch is stopped, the status is changed to **Stopped**.|
 |**Delete**|Delete a migration batch after you verify that all mailboxes in the migration batch have been successfully migrated. Verify also that mail is being routed directly to cloud-based mailboxes after you've configured your MX record to point to Microsoft 365 or Office 365. When you delete a migration batch, Microsoft 365 or Office 365 cleans up any records related to the migration batch and removes it from the list.|
 |**Edit Batch**|Edit an existing migration batch. You can change the finalization semantics of batches that support finalization. You can also change the migration endpoint used for the migration batch.|
 |**Resume migration**|Resume the running of a migration batch that was paused and has a status of **Stopped**. If there are errors for a migration batch, you can restart it with this command, and Microsoft 365 or Office 365 will attempt to migrate the mailboxes that failed.|
@@ -75,8 +75,8 @@ The details pane in the Migration dashboard displays the following information a
 |**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. <br/>**Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, G Suite migrations, and onboarding remote move migrations. <br/>**Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
 |**Status**| The current state of the selected migration batch. <br/>**Completed** <br/>**Syncing** <br/>**Stopped** <br/>**Synced** <br/>**Synced with errors** <br/>See the previous description of each of these states.|
 |**View details**|Click **View details** to display status information for each mailbox in the migration batch. For more information, see [Migration users status report](migration-users-status-report.md).|
-|**Synced mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
-|**Finalized mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
+|**Synced mailboxes**|The number of mailboxes out of the total number of mailboxes in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
+|**Finalized mailboxes**|The number of mailboxes out of the total number of mailboxes in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
 |**Failed mailboxes**|The number of mailboxes that failed initial synchronization.|
 |**Created by**|The email address of the Microsoft 365 or Office 365 administrator who created the migration batch.|
 |**Created time**|The date and time when the migration batch was created.|
@@ -145,8 +145,8 @@ The details pane in the Migration dashboard displays the following information a
 |**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. <br/> **Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, G Suite migrations, and onboarding remote move migrations. <br/> **Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
 |**Status**| The current state of the selected migration batch. <br/> **Completed** <br/> **Syncing** <br/> **Stopped** <br/> **Synced** <br/> **Synced with errors** <br/>  See the previous description of each of these states.|
 |**Requested**|The number of mailboxes to be migrated in the migration batch. This number corresponds to the number of rows in the migration CSV file for IMAP, G Suite, staged, or remote move migrations, or the number of on-premises mailboxes in a cutover Exchange migration.|
-|**Synced mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
-|**Finalized**|The number of mailboxes out of the total number in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
+|**Synced mailboxes**|The number of mailboxes out of the total number of mailboxes in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
+|**Finalized**|The number of mailboxes out of the total number of mailboxes in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
 |**Failed mailboxes**|The number of mailboxes that failed initial synchronization.|
 |**View details**|Click **View details** to display status information for each mailbox in the migration batch. For more information, see [Migration users status report](migration-users-status-report.md).|
 |**Created by**|The email address of the Microsoft 365 or Office 365 administrator who created the migration batch.|
