@@ -84,7 +84,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 5. There are two options for this step:
 
-   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
 
      > [!NOTE]
      > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
@@ -100,7 +100,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 I plan to use Exchange Online to host all my organization's mailboxes. All email that's sent to my domain from the internet must first flow through a third-party archiving or auditing service before arriving in Exchange Online. All outbound email that's sent from my Exchange Online organization to the internet must also flow through the service. However, the service doesn't provide a spam filtering solution.
 
-This scenario requires you to use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
+This scenario requires you to use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
 ![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 or Microsoft 365, and showing outbound mail from Microsoft 365 or Office 365 to the third-party solution and then to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
