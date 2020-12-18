@@ -46,3 +46,12 @@ Changing the Time, Type filters, or searching for a mailbox, will change both th
 
 > [!NOTE]
 > The chart is limited to showing the top 10 mailboxes. If you’d like to see more mailboxes, you’ll have to filter/search differently. 
+
+[image]
+
+1. Click **Export** to download the data as a csv.
+
+2. Click **Share** to share the details with others. 
+
+3. Select a mailbox address to view in detail the mailbox owner’s contact information. Contact the mailbox owner to understand why they are receiving so much email, so they can reduce their mail volume and have a better experience.
+
