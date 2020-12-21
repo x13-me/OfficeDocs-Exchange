@@ -84,7 +84,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 5. There are two options for this step:
 
-   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
 
      > [!NOTE]
      > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
