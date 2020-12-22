@@ -159,7 +159,7 @@ If an existing role group is close in terms of the permissions and settings that
 
 ### Use the new EAC to copy a role group
 
-**Note**: You can't use the EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
+**Note**: You can't use the new EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
 
 1. In the new EAC, go to **Roles** \> **Admin roles**.
 
@@ -183,7 +183,7 @@ If an existing role group is close in terms of the permissions and settings that
 
 ### Use the Classic EAC to copy a role group
 
-**Note**: You can't use the EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
+**Note**: You can't use the Classic EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
 
 1. In the Classic EAC, go to **Permissions** \> **Admin Roles**.
 
@@ -269,11 +269,11 @@ The same options are available when you modify role groups as when you [Use the 
 
 **Notes**:
 
-- You can't use the EAC to modify the write scope, roles, and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
+- You can't use the Classic EAC to modify the write scope, roles, and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
 
 - Some role groups (for example, the Organization Management role group) restrict the roles that you can remove from group.
 
-- You can add or remove delegates to a role group in the EAC. You can only use Exchange Online PowerShell.
+- You can add or remove delegates to a role group in the Classic EAC. You can only use Exchange Online PowerShell.
 
 ### Use Exchange Online PowerShell to add roles to role groups (create role assignments)
 
@@ -447,9 +447,9 @@ You can't remove built-in role groups, but you can remove custom role groups tha
 
 ### Use the new EAC to remove a role group
 
-1. In the new EAC, go to **Roles** \> **Admin roles**.
+1. In the new EAC, go to **Roles** > **Admin roles**.
 
-2. Select the role group you want to remove and then in the details pane of the role group, click **Delete role**.
+2. Select the role group and click **Delete**.
 
 3. Click **Confirm** in the confirmation window.
 
