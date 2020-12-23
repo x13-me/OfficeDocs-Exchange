@@ -135,7 +135,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 To verify that you've successfully created a group naming policy, do the following:
 
-- In the new EAC, select **Recipients** > **Groups** > **Add naming policy**
+- In the new EAC, select **Recipients** > **Groups** > **Add naming policy**.
 
   In **Edit group naming policy** details pane, the group naming policy that you defined is displayed under **Preview policy** section.
   
