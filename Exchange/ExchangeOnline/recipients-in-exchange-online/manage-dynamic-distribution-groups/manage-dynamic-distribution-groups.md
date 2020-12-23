@@ -44,7 +44,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 ### Use the new EAC to create a dynamic distribution group
 
-1. In the new EAC, navigate to **Recipients** \> **Groups** \> **Dynamic distribution list**.
+1. In the new EAC, navigate to **Recipients** > **Groups**.
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
@@ -70,14 +70,14 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
      - **Mail-enabled groups**: Select this check box if you want to include security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. Email messages that are sent to a mail-enabled group account will be delivered to several recipients.
 
-5. Select one of the following attributes from the drop-down list and provide a value to define the criteria for membership in this group. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
+5. Select one of the following attributes from the drop-down list and provide a value to define the criteria for membership in this group.
 
    |**Attribute**|**Send message to a recipient if...**|
    |:-----|:-----|
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
    |**Department**|The specified value matches the recipient's Department property.|
-   |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
+   |**Custom attribute N** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
 
     > [!IMPORTANT]
     > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
