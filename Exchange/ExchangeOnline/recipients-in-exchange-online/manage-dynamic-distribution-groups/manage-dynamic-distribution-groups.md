@@ -82,7 +82,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
     > [!IMPORTANT]
     > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
 
-6. To add another rule to define the criteria for membership, click **Add another rule**, when you've finished, click **Next**
+6. To add another rule to define the criteria for membership, click **Add another rule**, when you've finished, click **Next**.
 
    > [!IMPORTANT]
    > If you add multiple rules to define membership, a recipient must meet the criteria of each rule to receive a message sent to the group. In other words, each rule is connected with the Boolean operator **AND**.
@@ -141,7 +141,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
    |**Department**|The specified value matches the recipient's Department property.|
-   |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
+   |**Custom attribute N** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
 
     > [!IMPORTANT]
     > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
@@ -209,7 +209,7 @@ Use this section to view or change basic information about the group.
 
 - **\* Name**: This name appears in the address book, on the To: line when email is sent to this group, and in the Groups list. The display name is required and should be user-friendly so people recognize what it is. It also has to be unique in your domain.
 
-- **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the EAC.
+- **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
 
 #### Email options in new EAC
 
@@ -292,7 +292,7 @@ Use this section to view or change basic information about the group.
 
 - **\* Alias**: This is the portion of the email address that appears to the left of the at (@) symbol. If you change the alias, the primary SMTP address for the group will also be changed, and contain the new alias. Also, the email address with the previous alias will be kept as a proxy address for the group.
 
-- **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the EAC.
+- **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the Classic EAC.
 
 - **Hide this group from address lists**: Select this check box if you don't want users to see this group in the address book. To send email to this group, a sender has to type the group's alias or email address on the To: or Cc: lines.
 
@@ -306,7 +306,7 @@ You can add owners by clicking **Browse** and selecting the owner from the list.
 
 #### Membership
 
-Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the Classic EAC to create a dynamic distribution group](#use-the-classic-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
+Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the Classic EAC to create a dynamic distribution group](#use-the-classic-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the Classic EAC to create a new dynamic distribution group.
 
 #### Delivery management
 
@@ -397,7 +397,7 @@ This example changes the following parameters for all dynamic distribution group
 
 - Hide all dynamic distribution groups from the address book
 
-- Set the maximum message size that can be sent to the group to 5MB
+- Set the maximum message size that can be sent to the group to 5 MB
 
 - Enable moderation
 
