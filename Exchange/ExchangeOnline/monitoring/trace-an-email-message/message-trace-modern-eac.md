@@ -24,13 +24,8 @@ Message trace in the modern EAC improves upon the original message trace that wa
 
 - To run a message trace, you need to be a member of one of the following role groups:
 
-  - Organization Management
-  - Security Administrator
-  - Security Reader
-  - Compliance Management
-  - Help Desk
-  - Hygiene Management
-  - View-Only Organization Management
+  - Global Administrator
+  - Exchange Administrator
 
   For more information, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md) and [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md).
 
