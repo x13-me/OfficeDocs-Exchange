@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names.
+description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can add specific prefix and suffix to the name of a distribution group when it's created. And you can also block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
@@ -20,7 +20,7 @@ manager: serdars
 
 # Create a distribution group naming policy
 
-A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names.
+A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can add specific prefix and suffix to the name of a distribution group when it's created. And you can also block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 
 A group naming policy:
 
@@ -85,15 +85,15 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 3. In **Edit group naming policy** details pane, under **Policy** section, configure the prefix by selecting either **Attribute** or **Text** in the drop-down menu. 
    
-4. Click **Add prefix** to add additional prefixes.
+4. Click **Add prefix** to add more prefixes.
 
 5. For the suffix, in the drop-down menu, select either **Attribute** or **Text**, and configure the suffix.
 
-6. Click **Add suffix** to add additional prefixes.
+6. Click **Add suffix** to add more prefixes.
 
    After you add a prefix and suffix, notice that a preview of the group naming policy is displayed.
    
- 7. To delete a prefix or suffix from the policy, click **X**.
+ 7. To delete a prefix or suffix from the policy, select **X**.
  
  8. Under **Blocked words** section, add specific words that you want to block from being used in group names and aliases.
  
@@ -111,11 +111,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
    Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
 
-3. Click **Add** to add additional prefixes.
+3. Click **Add** to add more prefixes.
 
 4. For the suffix, in the pull-down menu, select either **Attribute** or **Text**, and configure the suffix.
 
-5. Click **Add** to add additional suffixes.
+5. Click **Add** to add more suffixes.
 
    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
@@ -135,7 +135,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 To verify that you've successfully created a group naming policy, do the following:
 
-- In the EAC, select **Groups** \> **More** \> **Configure group naming policy**.
+- In the new EAC, select **Recipients** > **Groups** > **Add naming policy**
+
+  In **Edit group naming policy** details pane, the group naming policy that you defined is displayed under **Preview policy** section.
+  
+- In the Classic EAC, select **Groups** \> **More** \> **Configure group naming policy**.
 
   On the **Group naming policy** page, the group naming policy that you defined is displayed under **Preview of policy**.
 
