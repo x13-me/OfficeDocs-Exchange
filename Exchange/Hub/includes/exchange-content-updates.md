@@ -2,6 +2,15 @@
 
 
 
+## Week of December 21, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/21/2020 | [Track and Prevent Migration Data Loss](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
+| 12/21/2020 | [Feature permissions in Exchange Online](/Exchange/permissions-exo/feature-permissions) | modified |
+
+
 ## Week of December 14, 2020
 
 
@@ -69,23 +78,3 @@
 |------|------------|--------|
 | 11/23/2020 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
 | 11/23/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
-
-
-## Week of November 16, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/16/2020 | [Enable or disable hierarchical address books in Exchange Online](/Exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books) | modified |
-| 11/16/2020 | [Message trace in the modern EAC](/Exchange/monitoring/trace-an-email-message/message-trace-modern-eac) | modified |
-| 11/16/2020 | [Mobile device mailbox policies in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies) | modified |
-| 11/17/2020 | [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) | modified |
-| 11/17/2020 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
-| 11/17/2020 | [Policy Tips in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/policy-tips) | modified |
-| 11/17/2020 | [Configure instant messaging integration with Outlook on the web in Exchange](/Exchange/plan-and-deploy/post-installation-tasks/configure-im-integration-with-owa?view=exchserver-2016) | modified |
-| 11/18/2020 | [Microsoft Hybrid Agent](/Exchange/hybrid-deployment/hybrid-agent) | modified |
-| 11/20/2020 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
-| 11/20/2020 | [Mail flow reports in the modern EAC](/Exchange/monitoring/mail-flow-reports/mail-flow-reports) | modified |
-| 11/20/2020 | [Monitoring, reporting, and message tracing in Exchange Online](/Exchange/monitoring/monitoring) | modified |
-| 11/20/2020 | [Use mail protection reports to view data about malware, spam, and rule detections](/Exchange/monitoring/use-mail-protection-reports) | modified |
-| 11/20/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
