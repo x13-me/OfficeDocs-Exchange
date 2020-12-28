@@ -67,7 +67,7 @@ Retention tags are classified into the following three types based on who can ap
 
 ### More about personal tags
 
-Personal tags are available to Outlook or later and Outlook on the web (formerly known as Outlook Web App) users as part of their retention policy. In Outlook and Outlook on the web, personal tags with the **Move to Archive** action appear as **Archive Policy**, and personal tags with the **Delete and Allow Recovery** or **Permanently Delete** actions appear as **Retention Policy**, as shown in the following figure.
+Personal tags are available to Outlook and Outlook on the web (formerly known as Outlook Web App) users as part of their retention policy. In Outlook and Outlook on the web, personal tags with the **Move to Archive** action appear as **Archive Policy**, and personal tags with the **Delete and Allow Recovery** or **Permanently Delete** actions appear as **Retention Policy**, as shown in the following figure.
 
 ![Personal tags in Outlook 2010 and Outlook on the web](../../media/ITPro_MRM_ArchiveAndRetentionPolicy.gif)
 
@@ -76,7 +76,7 @@ Users can apply personal tags to folders they create or to individual items. Mes
 > [!NOTE]
 > Users can apply archive policies to default folders, user-created folders or subfolders, and individual items. Users can apply a retention policy to user-created folders or subfolders and individual items (including subfolders and items in a default folder), but not to default folders.
 
-Users can also use the Exchange admin center (EAC) to select additional personal tags that aren't linked to their retention policy. The selected tags then become available in Outlook 2010 and Outlook on the web. To enable users to select additional tags from the EAC, you must add the MyRetentionPolicies Role to the user's role assignment policy. To learn more about role assignment policies for users, see [Role assignment policies in Exchange Online](../../permissions-exo/role-assignment-policies.md). If you allow users to select additional personal tags, all personal tags in your Exchange organization become available to them.
+Users can also use the [OWA settings dialog](https://outlook.office.com/mail/options/mail/retentionPolicies) to select additional personal tags that aren't linked to their retention policy. The selected tags then become available in Outlook and Outlook on the web. To enable users to select additional tags via OWA, you must add the MyRetentionPolicies Role to the user's role assignment policy. To learn more about role assignment policies for users, see [Role assignment policies in Exchange Online](../../permissions-exo/role-assignment-policies.md). If you allow users to select additional personal tags, all personal tags in your Exchange organization become available to them.
 
 > [!NOTE]
 > Personal tags are a premium feature. Mailboxes with policies that contain these tags (or as a result of users adding the tags to their mailbox) require an Exchange Enterprise client access license (CAL).
