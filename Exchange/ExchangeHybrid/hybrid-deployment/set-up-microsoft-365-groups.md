@@ -34,10 +34,8 @@ Before you start, make sure that you've done the following:
 
 - Purchased Azure Active Directory Premium licenses for your tenant. This is required to enable the Groups writeback feature in Azure Active Directory Connect.
 
-- Configured a hybrid deployment between your Exchange on-premises organization and Microsoft 365 or Office 365 and verified it's functioning correctly. For more information about Exchange hybrid deployments, see the following:
-
+- Configured a hybrid deployment between your Exchange on-premises organization and Microsoft 365 or Office 365 and verified it's functioning correctly. For more information about Exchange hybrid deployments, see the following articles:
   - [Exchange Server Hybrid Deployments](../exchange-hybrid.md)
-
   - [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md)
 
 - Installed a supported version of Exchange on-premises Exchange integration with Microsoft 365 Groups is available in CU1 and newer releases of Exchange 2016, and CU11 and newer releases of Exchange 2013. However, Exchange hybrid requires the latest Exchange 2013 or Exchange 2016 Cumulative Update (CU) to be installed on your on-premises Exchange servers. If you can't install the latest CU, the update released immediately prior to the current CU can be used.
@@ -89,14 +87,14 @@ The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group
 3. Create the following public DNS records with your DNS provider.
 
    |DNS record name|DNS record type|DNS record value|
-   |:-----|:-----|:-----|
+   |---|---|---|
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
    <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
-   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 or Office 365 group.
+   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 group.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
@@ -114,33 +112,21 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 ### Test using an on-premises mailbox
 
 1. Add an on-premises mailbox to a Microsoft 365 group.
-
 2. Add a Microsoft 365 or Office 365 mailbox to the same Microsoft 365 group.
-
 3. Log in to the Microsoft 365 or Office 365 mailbox using Outlook on the web.
-
 4. Post a message to the group using the Microsoft 365 or Office 365 mailbox.
-
 5. Open the on-premises mailbox using Outlook 2016 or Outlook on the web.
-
 6. Verify that the mailbox received an email message containing the post sent to the Microsoft 365 group.
-
 7. In the same mailbox, compose a reply to the message and send it to the group.
-
 8. Verify that the message can be viewed by all of the members of the group.
 
 ### Test using a mailbox moved to Microsoft 365 or Office 365
 
 1. Move a mailbox from your on-premises Exchange organization to Microsoft 365 or Office 365.
-
 2. Add the mailbox to a Microsoft 365 group.
-
 3. In a new browser session, log into the mailbox that was moved to Microsoft 365 or Office 365.
-
 4. In Outlook on the web, verify that the group is listed in the left navigation bar.
-
 5. Post a message to the group.
-
 6. Verify that the message can be viewed by all of the members of the group.
 
 ## Known issues
@@ -157,9 +143,8 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
   ```
 
 - **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to a Microsoft 365 group when the following conditions are true:
-
   - The group domain is configured as an authoritative domain in your on-premises Exchange organization.
-
+  - The "Oubound to Office 365" Send-Connector is using an Edge Transport Server as the source server. Messages to Groups will end-up in a loop and NDR.
   - The group was recently created and its information hasn't been written back to your on-premises Active Directory yet.
 
     This issue will resolve itself when Azure AD Connect performs its next synchronization between Microsoft 365 or Office 365 and your on-premises organization. Azure AD Connect synchronization occurs every thirty minutes.
