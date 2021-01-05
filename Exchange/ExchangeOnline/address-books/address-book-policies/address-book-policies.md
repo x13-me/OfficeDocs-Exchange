@@ -20,7 +20,7 @@ manager: serdars
 
 # Address book policies in Exchange Online
 
-Address book policies (ABPs) lets admins segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in organizations that require multiple GALs.
+Address book policies (ABPs) let admins segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in organizations that require multiple GALs.
 
 An ABP contains these elements:
 
@@ -28,17 +28,17 @@ An ABP contains these elements:
 
 - One offline address book (OAB). For more information about OABs, see [Offline address books in Exchange Online](../offline-address-books/offline-address-books.md).
 
-- One room list. Note that this room list is a custom address list that specifies rooms (contains the filter `RecipientDisplayType -eq 'ConferenceRoomMailbox'`). It's not a room finder that you create with the _RoomList_ switch on the **New-DistributionGroup** or **Set-DistributionGroup** cmdlet. For more information, see [Create and manage room mailboxes in Exchange Online](../../recipients-in-exchange-online/manage-room-mailboxes.md).
+- One room list. Note that this room list is a custom address list that specifies rooms (contains the filter `RecipientDisplayType -eq 'ConferenceRoomMailbox'`). It's not a room finder that you create with the _RoomList_ switch on the **New-DistributionGroup** or **Set-DistributionGroup** cmdlet. For more information, see [Managing resource mailboxes](../../recipients-in-exchange-online/manage-resource-mailboxes.md).
 
 - One or more address lists. For more information about address lists, see [Custom Address Lists in Exchange Online](../address-lists/address-lists.md#custom-address-lists).
 
 For procedures involving ABPs, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
- **Notes**:
-
-- ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
-
-- Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
+> [!NOTE]
+> 
+> - ABPs create only a virtual separation of users from a directory perspective, not a legal separation.
+> 
+> - Implementing an ABP is a multi-step process that requires planning. For more information, see [Address book policy procedures in Exchange Online](address-book-policy-procedures.md).
 
 ## How ABPs Work
 

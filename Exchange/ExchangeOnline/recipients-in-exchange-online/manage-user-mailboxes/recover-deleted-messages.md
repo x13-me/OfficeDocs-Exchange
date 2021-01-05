@@ -8,17 +8,16 @@ ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Recover deleted messages in a user's mailbox
+title: Recover deleted messages in a user's mailbox in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
-
 ---
 
-# Recover deleted messages in a user's mailbox
+# Recover deleted messages in a user's mailbox in Exchange Online
 
 (This topic is intended for Exchange administrators.)
 
@@ -40,9 +39,6 @@ Administrators can search for and recover deleted email messages in a user's mai
   - **Source mailbox**: This is the mailbox being searched.
 
   - **Target mailbox**: This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If required, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
-
-    > [!NOTE]
-    > When using the **Search-Mailbox** cmdlet, you can also specify a target mailbox that isn't a discovery mailbox. However, you can't specify the same mailbox as the source and target mailbox.
 
   - **Search criteria**: Criteria include sender or recipient, or keywords (words or phrases) in the message.
 
@@ -71,24 +67,19 @@ For instructions, see [Connect to Exchange Online PowerShell](https://docs.micro
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 > [!NOTE]
-> You can use In-Place eDiscovery in the Exchange admin center (EAC) to search for missing items. However, when using the EAC, you can't restrict the search to the Recoverable Items folder. Messages matching your search parameters will be returned even if they're not deleted. After they're recovered to the specified discovery mailbox, you may need to review the search results and remove unnecessary messages before recovering the remaining messages to the user's mailbox or exporting them to a .pst file. > For details about how to use the EAC to perform an In-Place eDiscovery search, see [Create an In-Place eDiscovery search](../../security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search.md).
+> You can use In-Place eDiscovery in the Exchange admin center (EAC) to search for missing items. However, when using the EAC, you can't restrict the search to the Recoverable Items folder. Messages matching your search parameters will be returned even if they're not deleted. After they're recovered to the specified discovery mailbox, you may need to review the search results and remove unnecessary messages before recovering the remaining messages to the user's mailbox or exporting them to a .pst file. For details about how to use the EAC to perform an In-Place eDiscovery search, see [Create an In-Place eDiscovery search](../../security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search.md).
 
-The first step in the recovery process is to search for messages in the source mailbox. Use one of the following methods to search a user mailbox and copy messages to a discovery mailbox.
-
-This example searches for messages in April Stewart's mailbox that meet the following criteria:
-
-- Sender: Ken Kwok
-
-- Keyword: Seattle
+### Use the Exchange Online PowerShell to search for messages
 
 ```PowerShell
-Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
+Get-RecoverableItems -Identity laura@contoso.com -SubjectContains "FY17 Accounting" -FilterItemType IPM.Note -FilterStartTime "2/1/2018 12:00:00 AM" -FilterEndTime "2/5/2018 11:59:59 PM"
 ```
+This example returns all of the available recoverable deleted messages with the specified subject in the mailbox laura@contoso.com for the specified date/time range.
 
-> [!NOTE]
-> When using the **Search-Mailbox** cmdlet, you can scope the search by using the _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder.
+> [!TIP]
+> Use the **Get-RecoverableItems** cmdlet to create a search query to find an Outlook item. Once you have a list of results you can use properties like last modified date, item type, etc. to narrow the amount of items restored or to restore a specific item.
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
+For detailed syntax and parameter information, see [Get-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/get-recoverableitems?view=exchange-ps).
 
 #### How do you know this worked?
 
@@ -101,17 +92,29 @@ You need to be assigned permissions before you can perform this procedure or pro
 > [!NOTE]
 > You can't use the EAC to restore recovered items.
 
-After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet.
+After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Restore-RecoverableItems** cmdlet.
 
 ### Use Exchange Online PowerShell to restore messages
 
-This example restores messages to April Stewart's mailbox and deletes them from the Discovery Search Mailbox.
-
 ```PowerShell
-Search-Mailbox "Discovery Search Mailbox" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "April Stewart" -TargetFolder "Recovered Messages" -LogLevel Full -DeleteContent
+Restore-RecoverableItems -Identity "malik@contoso.com","lillian@contoso.com" -FilterItemType IPM.Note -SubjectContains "COGS FY17 Review" -FilterStartTime "3/15/2019 12:00:00 AM" -FilterEndTime "3/25/2019 11:59:59 PM" -MaxParallelSize 2
 ```
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
+After using the Get-RecoverableItems cmdlet to verify the existence of the item, this example restores the specified deleted items in the specified mailboxes:
+
+Mailboxes: malik@contoso.com, lillian@contoso.com
+
+Item type: Email message
+
+Message subject: COGS FY17 Review
+
+Location: Recoverable Items\Deletions
+
+Date range: 3/15/2019 to 3/25/2019
+
+Number of mailboxes processed simultaneously: 2
+
+For detailed syntax and parameter information, see [Restore-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/restore-recoverableitems?view=exchange-ps).
 
 ### How do you know this worked?
 
@@ -131,6 +134,9 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
   - [Recover deleted email messages in Outlook on the web](https://support.microsoft.com/office/a8ca78ac-4721-4066-95dd-571842e9fb11)
 
-- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch) cmdlet in Windows PowerShell.
-
 - In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+
+## Related article
+
+Are you using Exchange Server? See [Recover deleted messages in a user's mailbox in Exchange Server](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/recover-deleted-messages?view=exchserver-2019).
+

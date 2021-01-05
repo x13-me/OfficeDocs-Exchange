@@ -24,7 +24,7 @@ manager: serdars
 ::: moniker range="exchserver-2019"
 Before you install Exchange Server 2019, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2019. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2019 and earlier versions of Exchange.
 
-To actually install Exchange 2019, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2019).
+To actually install Exchange 2019, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2019&preserve-view=true).
 
 ## Supported coexistence scenarios for Exchange 2019
 
@@ -95,13 +95,13 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 |Management tools|One of the following versions of Windows:  <br/>• Windows Server 2019 Standard or Datacenter <br/>• 64-bit edition of Windows 10|
 |
 
-**Notes**:
+> [!NOTE]
+> 
+> - Installing Exchange 2019 on a computer that's running Windows Server Core is fully supported and recommended. The Desktop Experience feature is no longer required.
+> 
+> - Installing Exchange 2019 on a computer that's running Nano Server isn't supported.
 
-- Installing Exchange 2019 on a computer that's running Windows Server Core is fully supported and recommended. The Desktop Experience feature is no longer required.
-
-- Installing Exchange 2019 on a computer that's running Nano Server isn't supported.
-
-### Supported Powershell versions for Exchange 2019 servers
+### Supported PowerShell versions for Exchange 2019 servers
 
 Exchange 2019 servers support the version of PowerShell that's included in the release of Windows Server where Exchange is installed. Don't install stand-alone downloads of WMF or PowerShell on Exchange servers.
 
@@ -117,13 +117,13 @@ We strongly recommend that you use the latest version of the .NET Framework that
 >
 > - **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
 >
-> - The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019).
+> - The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019&preserve-view=true).
 
 ****
 
 |Exchange 2019 version|.NET Framework 4.8|.NET Framework 4.7.2|
 |---|---|---|
-|CU4, CU5, CU6, CU7|Supported||
+|CU4 to CU8|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 |
@@ -148,7 +148,7 @@ If you're integrating Lync presence and instant messaging with Exchange Server, 
 ::: moniker range="exchserver-2016"
 Before you install Exchange Server 2016, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2016. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2016 and earlier versions of Exchange.
 
-To actually install Exchange 2016, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2016).
+To actually install Exchange 2016, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2016&preserve-view=true).
 
 ## Supported coexistence scenarios for Exchange 2016
 
@@ -249,13 +249,13 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 >
 > - **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
 >
-> - The complete prerequisite list for Exchange 2016 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016).
+> - The complete prerequisite list for Exchange 2016 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true).
 
 ****
 
 |Exchange 2016 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
 |---|:---:|:---:|:---:|:---:|
-|CU15, CU16, CU17, CU18|Supported||||
+|CU15 to CU19|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||
@@ -263,7 +263,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU5, CU6, CU7||||Supported|
 |
 
-**Note**: For older versions, see [Exchange Server supportability matrix](supportability-matrix.md#microsoft-net-framework).
+> [!NOTE]
+> For older versions, see [Exchange Server supportability matrix](supportability-matrix.md#microsoft-net-framework).
 
 ## Supported clients (with latest updates) in Exchange 2016
 

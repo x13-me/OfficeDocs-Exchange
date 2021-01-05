@@ -15,7 +15,6 @@ ms.collection:
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Recoverable Items folder in Exchange Online
@@ -98,11 +97,11 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
-After the deleted item retention period expires, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant (MFA) processes the mailbox, items in the Purges subfolder are purged from Exchange Online.
+When the deleted item retention period expires, the item is completely removed from Exchange Online.
 
 ### Single item recovery
 
-If an item is removed from the Deletions subfolder, either by a user purging the item by using the Recover Deleted Items feature or by an automated process such as the Managed Folder Assistant, the item can't be recovered by the user. When the Managed Folder Assistant processes the Recoverable Items folder for a mailbox that has single item recovery enabled, any item in the Purges subfolder isn't purged if the deleted item retention period hasn't expired for that item. This means that an admin can still recover the item by using an eDiscovery tool such as In-Place eDiscovery or Content Search.
+If an item is removed from the Deletions subfolder, either by a user purging the item by using the Recover Deleted Items feature or by an automated process such as the Managed Folder Assistant (retention tag set to permanently delete for example), the item is moved to the Purges subfolder, and it can't be recovered by the user. When the Managed Folder Assistant processes the Recoverable Items folder for a mailbox that has single item recovery enabled, any item in the Purges subfolder isn't purged if the deleted item retention period hasn't expired for that item. This means that an admin can still recover the item by using an eDiscovery tool such as In-Place eDiscovery or Content Search.
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if single item recovery is enabled.
 
@@ -118,7 +117,7 @@ The following table lists the contents of and actions that can be performed in t
 
 In Exchange Online, discovery managers can use In-Place eDiscovery with delegated [Discovery Management](../../permissions-exo/permissions-exo.md#role-groups) role group permissions to perform eDiscovery searches of mailbox content. In Exchange Online, you can use In-Place Hold to preserve mailbox items that match query parameters and protect the items from deletion by users or automated processes. You can also use Litigation Hold to preserve all items in user mailboxes and protect the items from deletion by users or automated processes.
 
-Putting a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder Assistant from automatically purging messages from the DiscoveryHolds and Purges subfolders. Additionally, copy-on-write page protection is also enabled for the mailbox. Copy-on-write page protection creates a copy of the original item before any modifications are written to the Exchange store. After the mailbox is removed from hold, the Managed Folder Assistant resumes automated purging.
+Putting a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder Assistant from automatically purging messages from the DiscoveryHolds, Deletions, and Purges subfolders. Additionally, copy-on-write page protection is also enabled for the mailbox. Copy-on-write page protection creates a copy of the original item before any modifications are written to the Exchange store. After the mailbox is removed from hold, the Managed Folder Assistant resumes automated purging.
 
 > [!NOTE]
 > If you put a mailbox on both In-Place Hold and Litigation Hold, Litigation Hold takes preference because this puts the entire mailbox on hold.
@@ -174,7 +173,7 @@ If the Recoverable Items folder for a mailbox reaches the Recoverable Items quot
 
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
 
-If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. For more information, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 ## More information
 
@@ -185,3 +184,7 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Mi
   - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
   - [Recover deleted items or email in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
+  
+- If you need to change the default deleted item retention period for Exchange Online, read the following article:
+
+  - [Change how long permanently deleted items are kept for an Exchange Online mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)

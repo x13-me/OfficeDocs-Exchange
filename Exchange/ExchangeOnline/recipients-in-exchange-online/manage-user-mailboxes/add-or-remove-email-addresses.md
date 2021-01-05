@@ -37,6 +37,9 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
+> [!NOTE]
+> You can use similar procedures to add or remove email addresses that use plus addressing. For more information about plus addressing, see [Plus Addressing](../../recipients-in-exchange-online/plus-addressing-in-exchange-online.md).
+
 ## Add an email address to a user mailbox
 ### Use the new Exchange Admin Center (EAC) to add an email address
 
@@ -168,7 +171,7 @@ You can add a new email address to multiple mailboxes at one time by using Excha
 
 This example imports data from C:\Users\Administrator\Desktop\AddEmailAddress.csv, which has the following format.
 
-```PowerShell
+```console
 Mailbox,NewEmailAddress
 Dan Jump,danj@northamerica.contoso.com
 David Pelton,davidp@northamerica.contoso.com
@@ -190,4 +193,4 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 > The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in Exchange Online PowerShell command.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
