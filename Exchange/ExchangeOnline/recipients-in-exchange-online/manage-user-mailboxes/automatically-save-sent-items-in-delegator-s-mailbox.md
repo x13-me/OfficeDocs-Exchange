@@ -59,10 +59,9 @@ The send permissions that someone has on another user's mailbox are important wh
 3. Under **Mailbox settings**, click **Manage mailbox delegation**.
 
 4. In the **Manage mailbox delegation** settings, do the following. 
-
-   a. In the **Send on behalf** row, click **Edit**.
-   b. Click **Add permissions.
-   c. Check the checkbox of the person whom you want to configure as the delegate.
+   - In the **Send on behalf** row, click **Edit**.
+   - Click **Add permissions**.
+   - Check the checkbox of the person whom you want to configure as the delegate.
   
  5. Click **Save** to save your change. A message Manage mailbox delegation settings updated successfully is displayed. Click **Close** to exit.
 
