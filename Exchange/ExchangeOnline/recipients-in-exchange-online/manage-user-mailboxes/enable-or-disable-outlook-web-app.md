@@ -100,7 +100,7 @@ Set-CASMailbox -Identity "Yan Li" -OWAEnabled $false
 This example enables Outlook on the web for the mailbox of Elly Nkya.
 
 ```PowerShell
-Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
+Set-CASMailbox -Identity "Elly Nkya" -OWAEnabled $true
 ```
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
@@ -112,7 +112,7 @@ To verify that you've successfully enabled or disabled Outlook on the web for a 
 - Run the following command in Exchange Online PowerShell.
 
   ```PowerShell
-  Get-CASMailbox <identity>
+  Get-CASMailbox -Identity <MailboxIdentity>
   ```
 
   If Outlook on the web is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook on the web is disabled, the value is `False`.
