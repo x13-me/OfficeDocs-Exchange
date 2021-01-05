@@ -40,7 +40,7 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Change how long permanently deleted items are kept using new Exchange admin center
+## Change how long permanently deleted items are kept using the new Exchange admin center
 
 1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
 
@@ -51,10 +51,10 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
    The properties page is displayed.
 
 3. Under **More actions**, click  **Recover deleted items** and perform the following actions:
-            a. To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**.
-            b. To customize the duration, select the **Custom date range**.
-            c. Select the time period from the **Start date** and **End date** fields.
-            d. Enter the subject of the deleted message in the **Subject line search**.
+    1. To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**
+    1. To customize the duration, select the **Custom date range**.
+    1. Select the time period from the **Start date** and **End date** fields.
+    1. Enter the subject of the deleted message in the **Subject line search**.
   
   >[!NOTE]
   >This option is used if you want to retrieve a message through its subject.
