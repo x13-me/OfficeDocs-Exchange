@@ -33,7 +33,7 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- You can use either the new EAC or the Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can use either the new EAC or Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -51,16 +51,13 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
    The properties page is displayed.
 
 3. Under **More actions**, click  **Recover deleted items** and perform the following actions:
-
-   (a) To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**.
-   
-   (b) To customize the duration, select the **Custom date range**.
-   
-   (c) Select the time period from the **Start date** and **End date** fields.
-   
-   (d) Enter the subject of the deleted message in the **Subject line search**.
-   
-     **NOTE**: This option is used if you want to retrieve a message through its subject.
+            a. To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**.
+            b. To customize the duration, select the **Custom date range**.
+            c. Select the time period from the **Start date** and **End date** fields.
+            d. Enter the subject of the deleted message in the **Subject line search**.
+  
+  >[!NOTE]
+  >This option is used if you want to retrieve a message through its subject.
 
 ## Change how long permanently deleted items are kept
 
