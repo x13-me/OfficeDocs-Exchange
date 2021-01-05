@@ -140,7 +140,7 @@ The built-in transport agents that are associated with IRM are described in this
 |RMS Protocol Decryption Agent|No|**OnEndOfData**|Decrypts IRM-protected messages to allow access to the message content by transport agents.|
 |Transport Rule Agent|Yes|**OnRoutedMessage**|Flags messages that match the conditions in a transport protection rule to be IRM-protected by the RMS Encryption agent.|
 
-For more information about transport agents, see [Transport Agents](https://docs.microsoft.com/exchange/transport-agents-exchange-2013-help).
+For more information about transport agents, see [Transport Agents in Exchange Server](../mail-flow/transport-agents/transport-agents.md).
 
 ## IRM requirements
 

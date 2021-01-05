@@ -72,12 +72,12 @@ To complete the steps for spam filter customizations covered in this topic, move
 
 3. As the focus moves to the **Name** box in the content area of the **Spam filter policy** pop-up window that opens, you hear "Spam filter policy, Name, Edit..
 
-4. In the **Spam filter policy **pop-up window, specify new filter settings such as name, description, spam and bulk actions, block lists, allow lists, international spam, and advanced options.
+4. In the **Spam filter policy** pop-up window, specify new filter settings such as name, description, spam and bulk actions, block lists, allow lists, international spam, and advanced options.
 
     > [!TIP]
     > This page doesn't contain a navigation pane. To move the focus to each setting that's listed on the page, press the Tab key. As you select each setting, you hear information about the setting. To open menus, press Spacebar. To move between and select menu options, press the arrow keys. To choose an option, press Enter. You can also press the Spacebar to select or clear a check box selection.
 
-5. After you've pressed the Tab key to tab through all the settings on the page, the last two elements on the page are the **Save** button and the **Cancel **button. To activate either button, press Enter.
+5. After you've pressed the Tab key to tab through all the settings on the page, the last two elements on the page are the **Save** button and the **Cancel** button. To activate either button, press Enter.
 
 6. As the **Spam filter policy** pop-up window closes and the focus moves back to the **New** button in the **spam filter** content area, you hear "Spam filter, New button..
 

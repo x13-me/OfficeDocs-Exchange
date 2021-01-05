@@ -36,10 +36,6 @@ You can use mobile device mailbox policies to manage many different settings. Th
 
 - Wipe a device after a specific number of failed password attempts
 
-## Managing mobile device mailbox policies
-
-Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
-
 ## Mobile device password settings and biometrics
 
 Many mobile devices support biometrics such as Apple Touch ID or Face ID. Exchange mobile device mailbox policies do not control whether biometrics can be used instead of typing the device PIN. Mobile device mailbox policies can be configured to require a device PIN, but then the users control whether they use biometrics after complying with the device PIN requirement.
@@ -126,3 +122,101 @@ The following table summarizes the settings you can specify using mobile device 
 |Require signed S/MIME messages|This setting specifies whether the mobile device must send signed S/MIME messages.|
 |Require storage card encryption|This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.|
 |Unapproved InROM application list|This setting specifies a list of applications that cannot be run in ROM.|
+
+## Managing mobile device mailbox policies
+
+Mobile device mailbox policies can be created, modified, or deleted in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
+
+### What do you need to know before you begin?
+
+- Estimated time to complete: 15 minutes.
+
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" feature in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+
+> [!TIP]
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange).
+
+### Create a new mobile device mailbox policy
+
+#### Use the EAC to create a new mobile device mailbox policy
+
+> [!NOTE]
+> You can only set a subset of mobile device mailbox policy settings in the EAC. To set all the mobile device mailbox policy settings, you need to use the Exchange Online PowerShell.
+
+1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+
+2. Use the various check boxes and drop-down lists to configure the settings for the mobile device mailbox policy.
+
+   ![New mobile device mailbox policy](../../media/EAC-new-mobile-device-mailbox-policies.png)
+
+    > [!WARNING]
+    > Select **This is the default policy** to make the new mobile mailbox policy the default mobile mailbox policy. After you make a mobile mailbox policy the default policy, all new users will be assigned this policy automatically when they are created.
+
+3. Click **Save**.
+
+#### Use the Exchange Online PowerShell to create a new mobile device mailbox policy
+
+You create a new mobile device mailbox policy using the [New-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-mobiledevicemailboxpolicy) cmdlet.
+
+1. In the Exchange Online PowerShell, run the following command.
+
+   ```powershell
+   New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+   ```
+
+#### How do you know this worked?
+
+To verify that you've successfully created a mobile device mailbox policy, use one of the following options:
+
+1. In the EAC, click **Mobile** \> **Mobile Device mailbox policies**, and verify that your new policy is displayed in the List view.
+
+2. In the Exchange Online PowerShell, run the following command.
+
+   ```powershell
+   Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+   ```
+   
+For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicemailboxpolicy).
+
+#### Use the EAC to edit a mobile device mailbox policy
+
+> [!NOTE]
+> You can only edit a subset of mobile device mailbox policy settings in the EAC. To edit all the mobile device mailbox policy settings, you need to use the Exchange Online PowerShell.
+
+1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**.
+
+2. Select a policy from the List view and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+
+3. Use the **General** and **Security** tabs to edit the mobile device mailbox policy settings.
+
+   ![Edit mobile device mailbox policy - General tab](../../media/EAC-edit-mobile-device-mailbox-policies-general.png)
+     
+   ![Edit mobile device mailbox policy - Security tab](../../media/EAC-edit-mobile-device-mailbox-policies-security.png)
+
+4. Click **Save** to update the policy.
+
+#### Use the Exchange Online PowerShell to edit mobile device mailbox policy settings
+
+You edit a mobile device mailbox policy using the [Set-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-mobiledevicemailboxpolicy) cmdlet.
+
+```powershell
+Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+```
+
+#### How do you know this worked?
+
+To verify that you've successfully edited a mobile device mailbox policy, do one of the following:
+
+1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policy**, and then choose a specific policy. In the Details pane, you'll see a number of the policy settings listed.
+
+2. In the Shell, run the following command.
+
+   ```powershell
+   Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+   ```
+
+For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicemailboxpolicy).
