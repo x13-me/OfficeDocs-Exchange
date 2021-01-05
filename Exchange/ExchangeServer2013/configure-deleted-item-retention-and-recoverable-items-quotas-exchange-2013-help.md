@@ -45,22 +45,34 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 2. In the list view, select a mailbox, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following
+3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following:
 
    - **Use the default retention settings from the mailbox database**: Use this setting to use the deleted item retention setting that's configured for the mailbox database.
 
    - **Customize the settings for this mailbox**: Use this setting to configure deleted item retention settings for the mailbox.
 
-     **Keep deleted items for (days)**: This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
+   - **Keep deleted items for (days)**: This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
 
-     **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+   - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+
+### Use the EAC to configure deleted item retention for a mailbox database
+
+1. Navigate to **Servers** \> **Databases**.
+
+2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+
+3. On the mailbox database property page, click **Limits**, and then select one of the following:
+
+   - **Keep deleted items for (days)**: This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When a mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
+
+   - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 ### Use the Shell to configure deleted item retention for a mailbox
 
-This example configures April Stewart's mailbox to retain deleted items for 30 days.
+This example configures April Stewart's mailbox to retain deleted items for 30 days and until after the mailbox database on which the mailbox is located has been backed up.
 
-```powershell
-Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```PowerShell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30 -RetainDeletedItemsUntilBackup $true
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
@@ -86,10 +98,10 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 > [!NOTE]
 > You can't use the EAC to configure deleted item retention for a mailbox database.
 
-This example configures a deleted item retention period of 10 days for the mailbox database MDB2.
+This example configures a deleted item retention period of 10 days for the mailbox database MDB2 and the setting to retain deleted items until the mailbox database has been backed up.
 
-```powershell
-Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```PowerShell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10 -RetainDeletedItemsUntilBackup $true
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase).

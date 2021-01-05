@@ -22,7 +22,7 @@ manager: serdars
 
 Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Online](address-book-policies.md).
 
-Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web. Furthermore, a user that's assigned an ABP needs to exist in the GAL that's specified for the ABP, see [Considerations and best practices for address book policies](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-book-policies/abp-scenarios?view=exchserver-2019#considerations-and-best-practices-for-address-book-policies).
+Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web. Furthermore, a user that's assigned an ABP needs to exist in the GAL that's specified for the ABP. For more information, see [Considerations and best practices for address book policies](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-book-policies/abp-scenarios#considerations-and-best-practices-for-address-book-policies).
 
 To identify your virtual organizations for ABPs, we recommend that you use the **CustomAttribute1** to **CustomAttribute15** attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types.
 
