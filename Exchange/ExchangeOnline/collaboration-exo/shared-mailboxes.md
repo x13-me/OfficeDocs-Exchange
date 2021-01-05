@@ -24,11 +24,13 @@ Shared mailboxes make it easy for a group of people in your company to monitor a
 
 **Notes**:
 
-- If you're using Microsoft 365 or Office 365, you should create your shared mailbox in the Microsoft 365 admin center. For more information, see [Create a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox).
+- You should create your shared mailbox in the Microsoft 365 admin center. For more information, see [Create a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox).
 
 - Creating a shared mailbox in Exchange Online also creates an active user account with a system-generated (unknown) password. To block sign-in for this account, see [Block sign-in for the shared mailbox account](https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 - If your organization uses a hybrid Exchange environment, you should use the Exchange admin center (EAC) in your on-premises Exchange organization to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared mailboxes in Exchange Online](shared-mailboxes.md).
+
+- When users move items from one folder to another in a shared mailbox, a copy of the item is stored in the [Recoverable Items](../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md) folder.
 
 ## Use the EAC to create a shared mailbox
 
@@ -41,7 +43,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 3. Fill-in the required fields:
 
    - **Display name**
-
    - **Email address**
 
 4. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
@@ -66,12 +67,10 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ## Use a shared mailbox
 
-To learn how users can access and use shared mailboxes, check out the following:
+To learn how users can access and use shared mailboxes, check out the following articles:
 
 - [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)
-
 - [Open and use a shared mailbox in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
-
 - [Open and use a shared mailbox in Outlook mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f)
 
 ## Use Exchange Online PowerShell to create a shared mailbox
@@ -104,4 +103,4 @@ You can use the following permissions with a shared mailbox.
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

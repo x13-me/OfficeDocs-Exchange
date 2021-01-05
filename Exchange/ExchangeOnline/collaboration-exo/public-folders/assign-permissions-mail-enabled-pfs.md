@@ -21,12 +21,12 @@ You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled
 
 - Estimated time to complete this task: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions?view=exchserver-2019).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [**Exchange Online Protection**](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [**Exchange Online Protection**](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center (EAC) to assign permissions
 
@@ -55,3 +55,22 @@ For detailed syntax and parameter information, see the following articles:
 - [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder)
 
 - [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)
+
+## Send As mail enabled public folder in Hybrid scenario
+
+For Exchange Online mailboxes accessing public folders deployed at On-Premises:
+
+1) Ensure Mail Enabled Public Folders are synced to Exchange Online 
+Use following EXO PowerShell command to ensure On-Premises mail public folder are synced:
+
+`Get-MailPublicFolder <MEPFName>`
+Example:
+Following example lists MEPF named OnPremPF
+
+`Get-MailPublicFolder OnPremPF`
+
+If the MEPF from On-Premises are not showing in EXO, use the Sync-MailPublicFolders.ps1 (for Exchange Server 2010) or Sync-ModernMailPublicFolders.ps1 (For Exchange 2013/2016/2019) to sync the MEPF's first.
+
+2) Use following command in EXO PowerShell to assign SendAs permission:
+
+`Add-RecipientPermission -Identity 'OnPremPF1' -Trustee "Richard" -AccessRights 'SendAs'`

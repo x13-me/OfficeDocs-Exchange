@@ -40,7 +40,7 @@ Microsoft 365 or Office 365 needs the name of the source email server to migrate
 
 2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
 
-3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and **IMAP**.
+3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and IMAP**.
 
 4. In **POP and IMAP settings**, your IMAP server name is listed in the **IMAP setting** section.
 

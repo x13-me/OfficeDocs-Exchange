@@ -127,3 +127,7 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
   You should see the following entry listed for your Exchange servers: `{[::]:25, 0.0.0.0:25}`
 
    If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/set-receiveconnector).
+   
+### Troubleshooting mail flow issues
+
+Refer to the following article: [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838).
