@@ -79,7 +79,7 @@ For additional management tasks related to managing email client access to a mai
 > [!NOTE]
 > You can enable and disable Outlook on the web for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes.md).
 
-## How do you know this worked?
+## How do you know it worked?
 
 To verify that you've successfully enabled or disabled Outlook on the web for a user mailbox, do one of the following:
 
