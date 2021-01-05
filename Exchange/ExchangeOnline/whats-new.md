@@ -24,6 +24,57 @@ Exchange admin center now uses a new portal at [https://admin.exchange.microsoft
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
+## September 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in September 2020. 
+
+### Groups – creation and management
+
+Admins can now create groups from the modern EAC. Currently, they can create and manage M365 groups, distribution groups, and mail-enabled security groups.
+
+:::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog":::
+
+The three types of groups that M365 administrators can now create and manage are:
+
+  - **M365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
+
+  - **Distribution groups** – These are the most commonly used group type, and they allow you to send email to all members of the distribution list.
+
+  - **Mail-enabled security groups** – These groups give members access to various resources like OneDrive, SharePoint, and various admin roles.
+
+### Normal/Compact list views in groups
+
+Administrators can now choose to view the list of groups in their organization in either normal or compact list view. The compact list option allows administrators to view more entries on a single page.
+
+### Naming policy for groups
+
+Administrators now have command over the group naming policy. They can now add prefixes and suffixes for future groups that will be created, and they can block specific words from being used in group names and aliases.
+
+### Upgrade distribution groups
+
+Administrators can now upgrade their distribution groups into the recommended Microsoft 365 groups (previously Office 365 groups) with a few clicks, as shown below:
+
+:::image type="content" source="media/exo_whatsnew_sept20_2.png" alt-text="Ready to upgrade dialog":::
+
+### Opt-in/out
+
+End-users now have a single-click opt-in toggle button, available in both the classic Exchange Admin Center and in the new EAC. This button provides easy navigation between the two portals, allowing users to switch to and explore the new portal seamlessly.
+
+### Support Assistant
+
+The admins can now get their queries resolved without going anywhere else. The support assistant feature allows users to resolve the queries without leaving the EAC window. In case the user is not satisfied with the provided solution, the user can even raise a ticket and register their issues.
+
+:::image type="content" source="media/exo_whatsnew_sept20_3.png" alt-text="Support Assistant in the new EAC":::
+
+### Educational navigation video
+
+An educational video is now available on the very first tile, **Training and Guide**, in the new EAC portal. The video walks users through the basic navigation of the new portal. You can also access the video [here](https://www.microsoft.com/videoplayer/embed/RE4FqDa).
+
+### Recipients – documentation updated
+
+As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
+
+
 ## July 2020
 
 Here are some of the changes and new features we introduced in the modern EAC in July 2020. 

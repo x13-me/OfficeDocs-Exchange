@@ -107,6 +107,64 @@ Run the following command in the Exchange Management Shell or in Windows PowerSh
 Restart-WebAppPool MSExchangeOWAAppPool
 ```
 
+## Use the Exchange Management Shell to update the existing IM integration with Outlook on the Web when the Exchange IIS Certificate is renewed or changed
+
+### Step 1: Update the IM certificate thumbprint on the existing Override
+
+Use the following syntax in the Exchange Management Shell to specify new IM certificate thumbprint:
+
+```powershell
+Set-SettingOverride -Name "<UniqueOverrideName>" -Parameters @("IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
+```
+
+ **Notes:**
+
+- To update the thumbprint on all Exchange 2016 and Exchange 2019 servers in the Active Directory forest, don't use the _Server_ parameter.
+
+- To update the thumbprint on a specific Exchange 2016 or Exchange 2019 server, use the _Server_ parameter and the name of the server (don't use the fully qualified domain name or FQDN). This method is useful when you need to specify different settings on different Exchange servers.
+
+This example updates the IM certificate thumbprint on all Exchange 2016 and Exchange 2019 servers in the organization.
+
+- **Setting override name**: "IM Override" (must use the one already in place from previous steps since we are updating, not creating new)
+
+- **Skype for Business server name**: skype01.contoso.com
+
+- **Certificate thumbprint**: NKT34A740E9D225A1A06193A9D44B2CE22771080
+
+- **Override reason**: Configure IM
+
+```powershell
+Set-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
+```
+
+This example specifies the IM server and IM certificate thumbprint, but only on the server named Mailbox01.
+
+```powershell
+Set-SettingOverride -Identity "Mailbox01 IM Override"  -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM" -Server Mailbox01
+```
+
+### Step 2: Refresh the IM settings on the Exchange server
+
+Use the following syntax in the Exchange Management Shell to refresh the IM settings on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
+
+```powershell
+Get-ExchangeDiagnosticInfo -Server <ServerName> -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
+```
+
+This example refreshes the IM settings on the server named Mailbox01.
+
+```powershell
+Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
+```
+
+### Step 3: Restart the Outlook on the web pool on the Exchange server
+
+Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
+
+```powershell
+Restart-WebAppPool MSExchangeOWAAppPool
+```
+
 ## How do you know this worked?
 
 You'll know that you've successfully configured IM integration with Outlook on the web when the error message goes away, and clients are able to sign in to IM.

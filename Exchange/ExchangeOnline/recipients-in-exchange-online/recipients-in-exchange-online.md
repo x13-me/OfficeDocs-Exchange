@@ -40,10 +40,10 @@ Although the new EAC has a different look and feel, managing Exchange Online rec
 
 - [Manage mail users](manage-mail-users.md)
 
-- [Create and manage room mailboxes](manage-room-mailboxes.md)
-
-- [Manage equipment mailboxes](manage-equipment-mailboxes.md)
+- [Manage resource mailboxes](manage-resource-mailboxes.md)
 
 - [Manage permissions for recipients](manage-permissions-for-recipients.md)
+
+- [Plus Addressing](plus-addressing-in-exchange-online.md)
 
 To find information about message and recipient limits in Exchange Online, check out the new topic at [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
