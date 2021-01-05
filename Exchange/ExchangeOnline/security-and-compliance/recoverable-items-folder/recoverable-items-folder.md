@@ -15,7 +15,6 @@ ms.collection:
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Recoverable Items folder in Exchange Online
@@ -174,7 +173,7 @@ If the Recoverable Items folder for a mailbox reaches the Recoverable Items quot
 
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
 
-If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. For more information, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 ## More information
 

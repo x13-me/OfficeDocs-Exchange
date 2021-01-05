@@ -15,14 +15,13 @@ ms.collection:
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
-
 ---
 
 # Recover deleted messages in a user's mailbox in Exchange Online
 
 (This topic is intended for Exchange administrators.)
 
-Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person (by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired.
+Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person (by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App)), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired.
 
 > [!NOTE]
 > In addition to using this procedure to search for and recover deleted items (which are moved to the Recoverable Items\Purges folder if either single item recovery or litigation hold is enabled), you can also use this procedure to search for items residing in other folders in the mailbox and to delete items from the source mailbox (also known as search and destroy).
@@ -41,18 +40,29 @@ Administrators can search for and recover deleted email messages in a user's mai
 
   - **Target mailbox**: This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If required, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
 
-    > [!NOTE]
-    > When using the **Search-Mailbox** cmdlet, you can also specify a target mailbox that isn't a discovery mailbox. However, you can't specify the same mailbox as the source and target mailbox.
-
   - **Search criteria**: Criteria include sender or recipient, or keywords (words or phrases) in the message.
 
 - This topic focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox).
 
-## Step 1: Connect to Exchange Online PowerShell
+## Use new EAC for recovering deleted messages
+
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
+  
+2. Select the mailbox for which you want to recover deleted messages, and click on the display name.
+
+3. Under **More actions**, click **Recover deleted items**.
+
+4. Enter values for each or either of the filter criteria from the drop-down lists.
+
+5. Click **Apply filter**.
+
+## Using Powershell to manage deleted items
+
+### Step 1: Connect to Exchange Online PowerShell
 
 For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-## Step 2: Search for and recover missing items
+### Step 2: Search for and recover missing items
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
@@ -71,18 +81,18 @@ This example returns all of the available recoverable deleted messages with the 
 
 For detailed syntax and parameter information, see [Get-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/get-recoverableitems?view=exchange-ps).
 
-### How do you know this worked?
+#### How do you know this worked?
 
 To verify that you have successfully searched the messages you want to recover, log on to the discovery mailbox you selected as the target mailbox and review the search results.
 
-## Step 3: Restore recovered items
+### Step 3: Restore recovered items
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 > [!NOTE]
 > You can't use the EAC to restore recovered items.
 
-After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet.
+After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Restore-RecoverableItems** cmdlet.
 
 ### Use Exchange Online PowerShell to restore messages
 
@@ -123,8 +133,6 @@ To verify that you have successfully recovered messages to the user's mailbox, h
   - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
   - [Recover deleted email messages in Outlook on the web](https://support.microsoft.com/office/a8ca78ac-4721-4066-95dd-571842e9fb11)
-
-- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch) cmdlet in Windows PowerShell.
 
 - In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
