@@ -124,7 +124,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 ### Mirapoint
 <a name="mirapoint"> </a>
 
-If you're migrating email from Mirapoint Message Server, use the format **#user@domain#Admin_UserName#** for the administrator credentials. To migrate email from Mirapoint using the administrator credentials mailadmin and P@ssw0rd, your CSV file would look like this:
+If you're migrating email from Mirapoint Message Server, use the format **#user\@domain#Admin_UserName#** for the administrator credentials. To migrate email from Mirapoint using the administrator credentials mailadmin and P@ssw0rd, your CSV file would look like this:
 
 ```CSV
 EmailAddress,UserName,Password

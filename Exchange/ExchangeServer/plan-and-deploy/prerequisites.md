@@ -38,11 +38,11 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 ## What do you need to know before you begin?
 
 ::: moniker range="exchserver-2019"
-- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#network-and-directory-servers).
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
-- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#network-and-directory-servers).
 
 - The full installation option of Windows Server 2012 and Windows Server 2012 R2 must be used for all servers running Exchange 2016 server roles or management tools.
 
@@ -52,7 +52,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
 ::: moniker-end
 
-- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#supported-operating-systems-for-exchange-2016).
+- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#supported-operating-systems-for-exchange-2016).
 
 ::: moniker range="exchserver-2019"
 > [!NOTE]
@@ -74,7 +74,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 1. The computer requires the following software:
 
    a. [.NET Framework 4.8](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe)
-   
+
       > [!NOTE]
       >
       > - When installing on Windows Server Core, you must use key "/q" for install this package. Optionaly you can use "/log [PATH]" for logging.

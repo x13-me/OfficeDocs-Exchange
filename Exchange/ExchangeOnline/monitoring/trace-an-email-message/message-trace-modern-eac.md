@@ -24,13 +24,8 @@ Message trace in the modern EAC improves upon the original message trace that wa
 
 - To run a message trace, you need to be a member of one of the following role groups:
 
-  - Organization Management
-  - Security Administrator
-  - Security Reader
-  - Compliance Management
-  - Help Desk
-  - Hygiene Management
-  - View-Only Organization Management
+  - Global Administrator
+  - Exchange Administrator
 
   For more information, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md) and [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md).
 
@@ -180,7 +175,7 @@ You can click on the column headers to sort the results by the values in that co
 
 You can click **Search** to filter the results.
 
-You can export the results after you've selected one or more rows by clicking **Export results** and then selecting **Export all results**, **Export loaded results**, or **Export selected**.
+You can export the results after you've selected one or more rows by clicking **Export results**.
 
 #### Find related records for this message
 
@@ -338,8 +333,10 @@ An example **custom_data** value for a message that's filtered for spam like thi
 
 A **custom_data** value that starts with `S:AMA` is from the malware filter agent. The key details are described in the following table:
 
-|**Value**|**Description**|
-|:-----|:-----|
+****
+
+|Value|Description|
+|---|---|
 |`AMA=SUM|v=1|` or `AMA=EV|v=1`|The message was determined to contain malware. `SUM` indicates the malware could've been detected by any number of engines. `EV` indicates the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
 |`Action=r`|The message was replaced.|
 |`Action=p`|The message was bypassed.|
@@ -352,6 +349,7 @@ A **custom_data** value that starts with `S:AMA` is from the malware filter agen
 |`Action=b`|The message was blocked.|
 |`Name=<malware>`|The name of the malware that was detected.|
 |`File=<filename>`|The name of the file that contained the malware.|
+|
 
 An example **custom_data** value for a message that contains malware looks like this:
 
@@ -361,12 +359,15 @@ An example **custom_data** value for a message that contains malware looks like 
 
 A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent for mail flow rules (also known as transport rules). The key details are described in the following table:
 
-|**Value**|**Description**|
-|:-----|:-----|
+****
+
+|Value|Description|
+|---|---|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
 |`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>* **Enforce**: All actions on the rule will be enforced. <br/>* **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>* **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|`Mode=<Mode>`|The mode of the rule. Valid values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li?</ul>|
+|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:
 

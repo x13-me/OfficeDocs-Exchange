@@ -175,7 +175,7 @@ Outlook for iOS and Android will consume the proxy configuration as defined by t
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
 
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a allow list range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ### Q: Does Outlook for iOS and Android support shared mailboxes?
 
@@ -359,7 +359,18 @@ The following questions concern end-users in your organization who are using Out
 
 ### Q: My users enabled the "Save Contacts" advanced settings option. However, they are complaining that not all contacts have synchronized on their iOS devices. Are there limitations with synchronization?
 
-The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (e.g., reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty-four hours and then restart the app to trigger the reconciliation process..
+The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (e.g., reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
+
+- Outlook for iOS being suspended during sync.
+- Enabling "Save Contacts" simultaneously on multiple devices (such as an iPad and an iPhone).
+- Accrued sync errors over time.
+
+In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty four hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
+
+1. Disable "Save Contacts" for the affected account.
+2. Check that all instances of the contacts are removed from the native iOS contacts app. If duplicates remain, go to Settings \> Help & Feedback \> Delete All Saved Contacts in order to remove any lingering duplicates.
+3. Re-enable "Save Contacts" for the affected account.
+4. Follow the on-screen prompts, which may instruct you to keep the phone open and plugged in during initial sync.
 
 ### Q: Why are the Office mobile apps required to be installed on Android in order to render attachments in Outlook, while iOS devices provide a preview of the attachments within Outlook?
 
@@ -397,8 +408,8 @@ For initial folder synchronization, Outlook for iOS and Android synchronizes 500
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
-Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
+Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. OneNote provides access to notes stored in an Exchange Online mailbox with Sticky Notes. To-Do provides integration with the tasks stored in Exchange Online mailboxes; however, Outlook for iOS and Android provides users the ability to create tasks from messages and exposes top tasks in the Zero Query search pane.
 
 ### Q: Does Outlook for iOS and Android support moderator message approval or rejection scenarios?
 
-No, Outlok for iOS and Android does not support moderated message requests for approving or rejecting emails. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
+No, Outlook for iOS and Android does not support moderated message requests for approving or rejecting email. Outlook for iOS and Android does not provide an **approve/reject** button, so a moderator cannot approve or reject moderated messages when using Outlook for iOS and Android.
