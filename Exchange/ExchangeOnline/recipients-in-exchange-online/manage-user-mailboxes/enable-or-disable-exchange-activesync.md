@@ -70,7 +70,7 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 > [!NOTE]
 > You can enable and disable Exchange ActiveSync for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes.md).
 
-## How do you know this worked?
+## How do you know it worked?
 
 To verify that you've successfully enabled or disabled Exchange ActiveSync for a user mailbox, do one of the following:
 
@@ -89,9 +89,9 @@ Set-CASMailbox -Identity "Yan Li" -ActiveSyncEnabled $false
 ```
 
 This example enables Exchange ActiveSync for the mailbox of Elly Nkya.
-PowerShell
-```
-Set-CASMailbox -Identity Ellyn@contoso.com -ActiveSyncEnabled $true
+
+```PowerShell
+Set-CASMailbox -Identity "Elly Nkya" -ActiveSyncEnabled $true
 ```
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
@@ -103,7 +103,7 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync for a
 - Run the following command in Exchange Online PowerShell.
 
   ```PowerShell
-  Get-CASMailbox <identity>
+  Get-CASMailbox -Identity <MailboxIdentity>
   ```
   If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.
 
