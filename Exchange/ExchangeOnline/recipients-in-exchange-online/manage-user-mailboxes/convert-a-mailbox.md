@@ -28,8 +28,9 @@ manager: serdars
    
 3. Under **More actions**, do the following:
 
-   a. To convert from regular to shared mailbox, click **Convert to shared mailbox** and then click **Confirm**.
-   b. To convert from shared to regular, click **Convert to regular mailbox** and then click **Confirm**.
+   - To convert from regular to shared mailbox, click **Convert to shared mailbox** and then click **Confirm**.
+   
+   - To convert from shared to regular, click **Convert to regular mailbox** and then click **Confirm**.
    
  The notification message **Mailbox converted successfully** is displayed.
    
