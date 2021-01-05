@@ -135,7 +135,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as G Suite admin for your tenant.
 
-2. Click **Security**, then click **Advanced settings**, and then click **Manage Domain Wide Delegation**.
+2. Click **Security**, then click **API Controls**, and then click **Manage Domain Wide Delegation**.
 
 3. Next to the **API Clients** list, click **Add new**.
 

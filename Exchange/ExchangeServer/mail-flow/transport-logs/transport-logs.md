@@ -102,9 +102,9 @@ Delivery reports for administrators is a targeted search of the message tracking
 
 Pipeline tracing records snapshots of messages before and after the message is affected by transport agents in the transport pipeline. For more information, see these topics:
 
-- [Pipeline Tracing](https://docs.microsoft.com/exchange/pipeline-tracing-exchange-2013-help)
+- [Pipeline Tracing](/pipeline-tracing/pipeline-tracing.md)
 
-- [Configure Pipeline Tracing](https://docs.microsoft.com/exchange/configure-pipeline-tracing-exchange-2013-help)
+- [Configure Pipeline Tracing](/pipeline-tracing/configure-pipeline-tracing.md)
 
  **Enabled by default?**: No
 
