@@ -46,7 +46,7 @@ Here are the tasks to do when you're ready to get started with migrating your IM
 
 - If you use an email domain in your IMAP email environment, and you also want to use the email domain in Microsoft 365 or Office 365, you need to add the domain to Microsoft 365 or Office 365 as an accepted domain before you create users in Microsoft 365 or Office 365. For instructions, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-- If you are using Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet).
+- If you are using Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true).
 
 - To add users, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
@@ -60,7 +60,7 @@ Microsoft 365 or Office 365 needs the name of the source email server to migrate
 
 2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
 
-3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and **IMAP**.
+3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and IMAP**.
 
 4. In **POP and IMAP settings**, your IMAP server name is listed in the **IMAP setting** section.
 
@@ -179,19 +179,19 @@ In the migration file, each cell in the **UserName** column consists of two comb
 
 If you're migrating email from the IMAP implementation for Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the migration file.
 
-Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P@ssw0rd**. Here's what your migration file would look like:
+Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Exchange](../media/5fbddcd8-1404-46e1-9493-a9b371e90de6.png)
 
 #### Dovecot
 
-Source email systems such as a Dovecot IMAP server that support Simple Authentication and Security Layer (SASL), use the format **User_UserName\*Admin_UserName**. Let's say you're migrating email from a Dovecot IMAP server using the mailbox admin credentials **mailadmin** and **P@ssw0rd**. Here's what your migration file would look like:
+Source email systems such as a Dovecot IMAP server that support Simple Authentication and Security Layer (SASL), use the format **User_UserName\*Admin_UserName**. Let's say you're migrating email from a Dovecot IMAP server using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Dovecot](../media/aae617c6-0a00-4c84-80ca-3f6e3b7cabc4.JPG)
 
 #### Mirapoint
 
-If you're migrating email from Mirapoint Message Server, use the format **#user@domain#Admin_UserName#**. Let's say you're migrating email using the mailbox admin credentials **mailadmin** and **P@ssw0rd**. Here's what your migration file would look like:
+If you're migrating email from Mirapoint Message Server, use the format **#user\@domain#Admin_UserName#**. Let's say you're migrating email using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
 ![A sample migration file for Mirapoint](../media/1a59d14c-ea5f-4f5d-9bf1-647faef6a153.png)
 
@@ -329,7 +329,7 @@ If you need some help configuring your DNS settings, head over to [Add DNS recor
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, we left your MX record pointing to your source email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. This helps ensure that email is delivered to your Microsoft 365 or Office 365 mailboxes. Moving the MX record will also let you turn off your old email system when you are ready.
 
-For many DNS providers, we have specific instructions to change your MX records, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided general MX record instructions as well, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), or for Office 365 in China, see this version of the article: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet).
+For many DNS providers, we have specific instructions to change your MX records, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided general MX record instructions as well, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), or for Office 365 in China, see this version of the article: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task to stop email synchronization.
 

@@ -68,7 +68,21 @@ If your network environment uses outbound proxy servers, additional configuratio
 
 #### Agent
 
-The agent supports outbound unauthenticated proxy servers but requires additional configuration after installation. For more information, see [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+The agent supports outbound unauthenticated proxy servers but requires additional configuration after installation by running the ConfigureOutBoundProxy.ps1 script located in \Program Files\Microsoft Hybrid Service\ on the computer where the agent is installed, for example:
+
+```PowerShell
+PS C:\Program Files\Microsoft Hybrid Service\>.\ConfigureOutBoundProxy.ps1 -ProxyAddress http://proxyserver:8080
+```
+
+By running the script, the following section will be added to the Microsoft.Online.EME.Hybrid.Agent.Service.exe.config file located in the same folder:
+
+```xml
+  <system.net>
+    <defaultProxy>
+      <proxy proxyaddress="http://proxyserver:8080" bypassonlocal="True" usesystemdefault="True" />
+    </defaultProxy>
+  </system.net>
+```
 
 > [!IMPORTANT]
 > A proxy server that prevents registration will cause the connector installation to fail. We recommend that you allow the connectors to bypass the proxy until app config changes can be made. A proxy server that prevents connector bootstrapping will fail **Test-Connectivity** after installation. We recommend that you allow the connectors to bypass the proxy until app config changes can be made.
