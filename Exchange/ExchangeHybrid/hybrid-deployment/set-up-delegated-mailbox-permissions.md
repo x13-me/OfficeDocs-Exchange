@@ -25,11 +25,11 @@ Delegated mailbox permissions enable someone to manage some part of another user
 
 - **Exchange 2013**: A supported Exchange 2013 cumulative update (CU) and additional configuration are required.
 
-- **Exchange 2010**: A supported Exchange 2010 update roll (RU) and additional configuration are required.
+- **Exchange 2010**: Not supported anymore.
 
 For more information about the specific requirements to support delegated mailbox permissions in a hybrid deployment, take a look at [Permissions in Exchange hybrid deployments](../permissions.md).
 
-The following sections step you through the configuration of Exchange 2013 and Exchange 2010 on-premises deployments to enable support for delegated mailbox permissions. Before you follow these steps, you need to make sure you're on the latest Exchange 2013 CU or Exchange SP3 RU. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
+The following sections step you through the configuration of Exchange 2013 and Exchange 2016 on-premises deployments to enable support for delegated mailbox permissions. Before you follow these steps, you need to make sure you're on the latest Exchange 2013/2016 CU. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 
 ## Exchange 2013 And Exchange 2016
 
@@ -89,30 +89,4 @@ To enable ACLs on mailboxes moved to Microsoft 365 or Office 365 before ACLable 
 > [!IMPORTANT]
 > The msExchRecipientDisplayType value -1073741818 should only be set for user mailboxes, not for resource mailboxes.
 
-## Exchange 2010
 
-Exchange 2010 SP3 servers support the configuration of ACLs on remote mailboxes; however, this configuration needs to be set manually on each user mailbox. Unlike newer versions of Exchange, Exchange 2010 doesn't provide the ability to set this feature at the organization level. You need to follow the upcoming steps on any user mailboxes that you've previously moved to Microsoft 365 or Office 365, and on any user mailboxes that you'll move from an Exchange 2010 SP3 server to Microsoft 365 or Office 365 in the future.
-
-### Enable ACLs on remote mailboxes
-
-To enable ACLs on mailboxes moved to Microsoft 365 or Office 365, do the following.
-
-1. Open the Exchange Management Shell on a server running the latest available Exchange 2010 SP3 RU, or the immediately previous RU.
-
-2. To enable ACLs on a single mailbox, run the following command.
-
-   ```PowerShell
-   Get-AdUser <Identity> | Set-AdObject -Replace @{msExchRecipientDisplayType=-1073741818}
-   ```
-
-3. To enable ACLs on all mailboxes moved to Microsoft 365 or Office 365, run the following command.
-
-   ```PowerShell
-   Get-RemoteMailbox -ResultSize unlimited | where {$_.RecipientTypeDetails -eq "RemoteUserMailbox"} | ForEach {Get-AdUser -Identity $_.Guid | Set-ADObject -Replace @{msExchRecipientDisplayType=-1073741818}}
-   ```
-
-4. To verify that the mailboxes have been successfully updated, run the following command.
-
-   ```PowerShell
-   Get-RemoteMailbox -ResultSize unlimited | ForEach {Get-AdUser -Identity $_.Guid -Properties msExchRecipientDisplayType | Format-Table DistinguishedName,msExchRecipientDisplayType -Auto}
-   ```

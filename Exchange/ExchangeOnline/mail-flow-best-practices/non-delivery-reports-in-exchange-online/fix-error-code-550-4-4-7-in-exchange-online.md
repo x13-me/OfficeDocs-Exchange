@@ -7,7 +7,7 @@ ms.reviewer:
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: High
+localization_priority: Priority
 f1.keywords:
 - CSH
 ms.custom: 

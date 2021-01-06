@@ -36,7 +36,7 @@ Modern authentication is enabled through the use of the Active Directory Authent
 
 ADAL-based authentication leverages OAuth for modern authentication-enabled accounts (Microsoft 365 or Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)). It also provides a secure mechanism for Outlook for iOS and Android  to access email, without requiring access to user credentials. At sign in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants Outlook for iOS and Android access to the appropriate resources in Microsoft 365 or Office 365 (e.g. the user's mailbox). A refresh token is used to obtain a new access or refresh token pair when the current access token expires. OAuth provides Outlook with a secure mechanism to access Microsoft 365 or Office 365, without needing or storing a user's credentials. For more information, see the Office Blog post [New access and security controls for Outlook for iOS and Android](https://www.microsoft.com/microsoft-365/blog/2015/06/10/new-access-and-security-controls-for-outlook-for-ios-and-android/).
 
-By default, the access token lifetime is one hour, and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configure authentication session management with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). Note that, if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+For information on token lifetimes, see [Configurable token lifetimes in Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes). Token lifetime values can be adjusted; for more information see [Configure authentication session management with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). Note that, if you choose to reduce token lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
 
 A previously granted access token is valid until it expires. The identity model being utilized for authentication will have an impact on how password expiration is handled. There are three scenarios:
 
@@ -56,11 +56,13 @@ For modern authentication, which is used by all Microsoft 365 or Office 365 acco
 
 The following images show an example of account configuration via AutoDetect:
 
-![Outlook for iOS and Android onboarding](../../media/67c22e0d-ba01-4923-bdb9-375f26ec90fb.png)
+> [!div class="mx-imgBorder"]
+> ![Outlook for iOS and Android onboarding](../../media/67c22e0d-ba01-4923-bdb9-375f26ec90fb.png)
 
 In the event that AutoDetect fails for a user, the following images show an alternative account configuration path using manual configuration:
 
-![Manaul account setup for Outlook for iOS and Android](../../media/fdb9b8e8-499d-4702-b362-4fe9a2e9c978.png)
+> [!div class="mx-imgBorder"]
+> ![Manaul account setup for Outlook for iOS and Android](../../media/fdb9b8e8-499d-4702-b362-4fe9a2e9c978.png)
 
 ## Single sign-on
 
@@ -78,17 +80,19 @@ If a user is already signed in to another Microsoft app on their device, like Wo
 
 The following images show an example of account configuration via single sign-on for a first-time user:
 
-![Single sign-on in Outlook for iOS and Android](../../media/d11691ca-49e9-4282-80f0-c73547ccc98e.png)
+> [!div class="mx-imgBorder"]
+> ![Single sign-on in Outlook for iOS and Android](../../media/d11691ca-49e9-4282-80f0-c73547ccc98e.png)
 
 If a user already has Outlook for iOS and Android, such as for a personal account, but an Microsoft 365 or Office 365 account is detected because they recently enrolled, the single-sign on path will look as follows:
 
-![Alternative single-sign on path for Outlook for iOS and Android](../../media/e24efc89-10e1-4a11-b80c-bbfc08033334.png)
+> [!div class="mx-imgBorder"]
+> ![Alternative single-sign on path for Outlook for iOS and Android](../../media/e24efc89-10e1-4a11-b80c-bbfc08033334.png)
 
 ## Account setup configuration via enterprise mobility management
 
 Outlook for iOS and Android offers IT administrators the ability to "push" account configurations to Microsoft 365 or Office 365 accounts or on-premises accounts leveraging hybrid modern authentication. This capability works with any Unified Endpoint Management (UEM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
 
-For users enrolled in Microsoft Intune, you can deploy the account configuration settings using Intune in the Azure Portal.
+For users enrolled in Microsoft Intune, you can deploy the account configuration settings using Intune in the Azure portal.
 
 Once account setup configuration has been setup in the UEM provider and the user enrolls their device, Outlook for iOS and Android will detect that an account is "Found" and will then prompt the user to add the account. The only information the user needs to enter to complete the setup process is their password. Then, the user's mailbox content will load and the user can begin using the app.
 

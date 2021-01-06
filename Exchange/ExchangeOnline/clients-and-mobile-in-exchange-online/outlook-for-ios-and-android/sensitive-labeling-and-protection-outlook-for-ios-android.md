@@ -140,27 +140,37 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 8. Click **S/MIME** to display the **Outlook S/MIME settings**.
-    ![Screenshot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/Outlook_mobile_SMIME_Settings_v2.png)
+
 9. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
-10. Set **Deploy S/MIME certificates from Intune** to **Yes**.
-11. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
+
+10. Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+11. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+12. Set **Deploy S/MIME certificates from Intune** to **Yes**.
+
+13. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
     - **SCEP** – Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](https://docs.microsoft.com/intune/protect/certificates-scep-configure). 
     - **PKCS imported certificates** – Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](https://docs.microsoft.com/mem/intune/protect/certficates-pfx-configure).
     - **Derived credentials** – Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
-12. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
+
+14. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
     - **PKCS imported certificates** – Delivers any encryption certificates that have been imported to Endpoint Manager by the administrator across any device a user enrolls. Endpoint Manager will automatically pick the imported certificate or certificates that support encryption and deliver to the enrolled user's devices.
     - **Derived credentials** – Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
-13. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
+
+15. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
 
     On iOS, users must use the Company Portal app to retrieve their S/MIME certificates. Endpoint Manager will inform the user that they need to launch the Company Portal to retrieve their S/MIME certificates via the Notifications section of Company Portal, a push notification, and/or an email. Clicking one of the notifications will take the user to a landing page that informs them of progress retrieving the certificates. Once the certificates are retrieved, the user can use S/MIME from within Microsoft Outlook for iOS to sign and encrypt email.
-    
+
     The end-user notifications include the following options:
        - **Company Portal** – If selected, users will receive a push notification on their device, which will take them to the landing page in Company Portal where S/MIME certificates will be retrieved.
        - **Email** – Sends an email to the end user informing them that they need to launch Company Portal to retrieve their S/MIME certificates. If the user is on their enrolled iOS device when they click the link in the email, they will be redirected to the Company Portal to retrieve their certificates.
-    
+
     End-users will see an experience similar to the following for automated certificate delivery:
     ![Screenshot showing automated certificate delivery.](../../media/all-in-one-certificate-delivery.png)
-14. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+
+16. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 #### Outlook for Android Automated Certificate Delivery
 

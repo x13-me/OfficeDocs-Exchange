@@ -20,6 +20,11 @@ manager: serdars
 
 # Apply a retention policy to mailboxes
 
+> [!NOTE]
+> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
+> 
+> If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+
 You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
 
 > [!CAUTION]
@@ -36,7 +41,7 @@ For additional management tasks related to messaging records management (MRM), s
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to apply a retention policy to a single mailbox
 
