@@ -98,7 +98,7 @@ For detailed syntax and parameter information, see [Set-CASMailbox](https://docs
 
 ## How do you know this worked?
 
-To verify that you've successfully enabled or disabled Exchange ActiveSync for a user mailbox using Powershell, do one of the following:
+To verify that you've successfully enabled or disabled Exchange ActiveSync for a user mailbox using PowerShell, do one of the following:
 
 - Run the following command in Exchange Online PowerShell.
 
