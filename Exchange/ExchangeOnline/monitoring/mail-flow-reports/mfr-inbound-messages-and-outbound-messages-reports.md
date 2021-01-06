@@ -1,5 +1,5 @@
 ---
-title: "Inbound messages and Outbound messages reports in the modern EAC"
+title: "Inbound messages and Outbound messages reports in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the Inbound messages report and the Outbound Messages report in the modern Exchange admin center to monitor message volume and TLS encryption for messages to and from the internet and inbound and outbound messages over connectors."
+description: "Admins can learn how to use the Inbound messages report and the Outbound Messages report in the new Exchange admin center to monitor message volume and TLS encryption for messages to and from the internet and inbound and outbound messages over connectors."
 ---
 
-# Inbound messages and Outbound messages reports in the modern EAC
+# Inbound messages and Outbound messages reports in the new EAC
 
-The **Inbound messages report** and the **Outbound messages report** in the modern Exchange admin center (modern EAC) display information about email entering and leaving your organization. Specifically, the **Inbound messages report** shows information about email coming into your organization from the internet and over connectors. The **Outbound messages report** displays information about email leaving your organization to the internet and over connectors. Both reports also show the TLS encryption level that's being used.
+The **Inbound messages report** and the **Outbound messages report** in the new Exchange admin center (new EAC) display information about email entering and leaving your organization. Specifically, the **Inbound messages report** shows information about email coming into your organization from the internet and over connectors. The **Outbound messages report** displays information about email leaving your organization to the internet and over connectors. Both reports also show the TLS encryption level that's being used.
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
@@ -68,4 +68,4 @@ Click **Export** to export the displayed results to a .csv file.
 
 ## See also
 
-For more information about other mail flow reports, see [Mail flow reports in the modern EAC](mail-flow-reports.md).
+For more information about other mail flow reports, see [Mail flow reports in the new EAC](mail-flow-reports.md).
