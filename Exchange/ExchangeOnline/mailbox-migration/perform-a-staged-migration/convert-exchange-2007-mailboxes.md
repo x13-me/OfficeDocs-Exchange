@@ -61,6 +61,12 @@ The following script collects information from your cloud mailboxes and saves it
 
 Copy the script below and give it a filename ExportO365UserInfo.ps1.
 
+> [!NOTE]
+>
+> - Before you run the following script, you need to install the Exchange Online PowerShell V2 module. For instructions, see [Install and maintain the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module). The EXO V2 module uses modern authentication.
+>
+> - Typically, you can use the script as-is if your organization is Microsoft 365 or Microsoft 365 GCC. If your organization is Office 365 Germany, Microsoft 365 GCC High, or Microsoft 365 DoD, you need to edit the `Connect-ExchangeOnline` line in the script. Specifically, you need to use the *ExchangeEnvironmentName* parameter and the appropriate value for your organization type. For more information, see the examples in [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa).
+
 ```PowerShell
 Param($migrationCSVFileName = "migration.csv")
 function O365Logon
@@ -69,18 +75,16 @@ function O365Logon
     $session = Get-PSSession | ?{$_.ConfigurationName -eq 'Microsoft.Exchange'}
     if($session -ne $null)
     {
-        $a = Read-Host "An open session to Office 365 already exists. Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
+        $a = Read-Host "An open session to Exchange Online PowerShell already exists. Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
         if($a.ToLower() -eq 'y')
         {
-            Write-Host "Using existing Office 365 Powershell Session." -ForeGroundColor Green
+            Write-Host "Using existing Exchange Online Powershell session." -ForeGroundColor Green
             return
         }
-        $session | Remove-PSSession
+        Disconnect-ExchangeOnline -Confirm:$false
     }
-    Write-Host "Please enter your Office 365 credentials" -ForeGroundColor Green
-    $cred = Get-Credential
-    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $cred -Authentication Basic -AllowRedirection
-    $importresults = Import-PSSession -Prefix "Cloud" $s
+    Import-Module ExchangeOnlineManagement
+    Connect-ExchangeOnline -Prefix "Cloud"
 }
 function Main
 {
@@ -298,11 +302,7 @@ Follow these steps to complete the process.
 8. Use Active Directory Users and Computers, ADSI Edit, or Ldp.exe to verify that the following MEU properties are populated with the correct information.
 
    - legacyExchangeDN
-
    - mail
-
    - msExchMailboxGuid
-
    - proxyAddresses
-
    - targetAddress

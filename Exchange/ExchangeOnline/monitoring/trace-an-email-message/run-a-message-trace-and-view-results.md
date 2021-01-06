@@ -60,6 +60,8 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 
       - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
 
+      - **Filtered as spam**: The message was delivered to the Junk Email folder.
+      
       - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
       <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
@@ -148,6 +150,8 @@ In the events section, the following fields provide information about the events
   - **DEFER**: The message delivery was postponed and may be re-attempted later.
 
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
+  
+  - **DLP rule**: The message had a DLP rule or sensitivity label match in this message.
 
     > [!TIP]
     > Additional events may appear. For more information about these events, see [Event types in the message tracking log](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log).
