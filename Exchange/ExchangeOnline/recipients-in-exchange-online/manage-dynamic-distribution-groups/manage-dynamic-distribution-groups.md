@@ -101,16 +101,16 @@ Unlike regular distribution groups that contain a defined set of members, the me
 2. On the **New dynamic distribution group** page, complete the following boxes:
 
    - **Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the Classic EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
-
-  > [!NOTE]
-  > Group naming policy isn't applied to dynamic distribution groups.
-
+   
+   > [!NOTE]
+   > Group naming policy isn't applied to dynamic distribution groups.
+   
    - **Alias**: Use this box to type the name of the alias for the group. The alias cannot exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name.
-
+   
    - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the shared address book.
-
+   
    - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the Classic EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
-
+   
 To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
    - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
