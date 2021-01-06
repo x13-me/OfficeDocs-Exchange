@@ -1,5 +1,5 @@
 ---
-title: "Non-accepted domain report in the modern EAC"
+title: "Non-accepted domain report in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the Non-accepted domain report in the modern Exchange admin center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
+description: "Admins can learn how to use the Non-accepted domain report in the new Exchange admin center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
 
-# Non-accepted domain report in the modern Exchange admin center
+# Non-accepted domain report in the new Exchange admin center
 
-The **Non-accepted domain** report in the modern Exchange admin center (modern EAC) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
+The **Non-accepted domain** report in the new Exchange admin center (new EAC) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
 
 Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
@@ -62,4 +62,4 @@ Click **Export** to export the displayed results to a .csv file.
 
 ## See also
 
-For more information about other mail flow reports, see [Mail flow reports in the modern EAC](mail-flow-reports.md).
+For more information about other mail flow reports, see [Mail flow reports in the new EAC](mail-flow-reports.md).

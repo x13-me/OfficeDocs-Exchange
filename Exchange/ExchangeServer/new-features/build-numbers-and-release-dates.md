@@ -39,8 +39,8 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |[Exchange Server 2019 CU8](https://support.microsoft.com/kb/KB4588885)|December 15, 2020|15.2.792.3|15.02.0792.003|
 |[Exchange Server 2019 CU7](https://support.microsoft.com/kb/KB4571787)|September 15, 2020|15.2.721.2|15.02.0721.002|
 |Exchange Server 2019 CU6|June 16, 2020|15.2.659.4|15.02.0659.004|
@@ -65,8 +65,8 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |[Exchange Server 2016 CU19](https://www.microsoft.com/download/details.aspx?familyID=2ef459a6-c8a5-417f-89a8-c8afa9ea00dd)|December 15, 2020|15.1.2176.2|15.01.2176.002|
 |[Exchange Server 2016 CU18](https://www.microsoft.com/download/details.aspx?familyID=42086856-b6eb-4c6c-96cd-1c9d33a07d04)|September 15, 2020|15.1.2106.2|15.01.2106.002|
 |Exchange Server 2016 CU17|June 16, 2020|15.1.2044.4|15.01.2044.004|
@@ -102,8 +102,8 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |[Exchange Server 2013 CU23](https://www.microsoft.com/download/details.aspx?id=58392)|June 18, 2019|15.0.1497.2|15.00.1497.002|
 |[Exchange Server 2013 CU22](https://www.microsoft.com/download/details.aspx?id=57826)|February 12, 2019|15.0.1473.3|15.00.1473.003|
 |Exchange Server 2013 CU21|June 19, 2018|15.0.1395.4|15.00.1395.004|
@@ -144,8 +144,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |[Update Rollup 30 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=100910)|February 11, 2020|14.3.496.0|14.03.0496.000|
 |[Update Rollup 29 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58476)|July 9, 2019|14.3.468.0|14.03.0468.000|
 |[Update Rollup 28 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58354)|June 7, 2019|14.3.461.1|14.03.0461.001|
@@ -184,8 +184,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |Update Rollup 8 for Exchange Server 2010 SP2|December 9, 2013|14.2.390.3|14.02.0390.003|
 |Update Rollup 7 for Exchange Server 2010 SP2|August 3, 2013|14.2.375.0|14.02.0375.000|
 |Update Rollup 6 Exchange Server 2010 SP2|February 12, 2013|14.2.342.3|14.02.0342.003|
@@ -233,8 +233,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |Update Rollup 23 for Exchange Server 2007 SP3|March 21, 2017|8.3.517.0|8.03.0517.000|
 |Update Rollup 22 for Exchange Server 2007 SP3|December 13, 2016|8.3.502.0|8.03.0502.000|
 |Update Rollup 21 for Exchange Server 2007 SP3|September 20, 2016|8.3.485.1|8.03.0485.001|
@@ -267,8 +267,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 ****
 
-|Product name|Release date|Build number (short format)|Build number (long format)|
-|---|---|---|---|
+|Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
+|---|---|:---:|:---:|
 |Update Rollup 5 for Exchange Server 2007 SP2|December 7, 2010|8.2.305.3|8.02.0305.003|
 |Update Rollup 4 for Exchange Server 2007 SP2|April 9, 2010|8.2.254.0|8.02.0254.000|
 |Update Rollup 3 for Exchange Server 2007 SP2|March 17, 2010|8.2.247.2|8.02.0247.002|
