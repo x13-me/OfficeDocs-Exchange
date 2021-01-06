@@ -68,7 +68,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 ## Use Exchange Online PowerShell to disable single item recovery
 
-You might need to disable single item recovery for a user's mailbox. For example, before you can use **Search-Mailbox -DeleteContent** to permanently delete content from a mailbox, you have to disable single item recovery.
+You might need to disable single item recovery for a user's mailbox. For example, before you can permanently delete content from a mailbox, you have to disable single item recovery.
 
 This example disables single item recovery for the mailbox of Ayla Kol.
 
