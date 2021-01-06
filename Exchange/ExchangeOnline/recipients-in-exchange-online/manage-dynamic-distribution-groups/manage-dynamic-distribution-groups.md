@@ -111,10 +111,10 @@ Unlike regular distribution groups that contain a defined set of members, the me
    
    - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the Classic EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
    
-To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
-
+   To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
+   
    - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
-
+   
 3. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
 
    - **All recipient types**: Choose this option to send messages that meet the criteria defined for this group to all recipient types.
