@@ -24,6 +24,47 @@ Exchange admin center now uses a new portal at [https://admin.exchange.microsoft
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
+## December 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in December 2020.
+
+### Groups - creating and management
+
+Admins can now create and manage four kinds of groups from the modern EAC: Microsoft 365 groups, distribution lists, mail-enabled security groups, and dynamic distribution lists. The groups experience has now reached parity with that of the classic EAC. The new group type that we recently introduced in the modern EAC is [dynamic distribution lists](#dynamic-distribution-lists).
+
+The pivot experience (different pivots for different group types) makes groups management even easier.
+
+:::image type="content" source="media/exo_whatsnew_dec20_1.png" alt-text="a dyamic distribution list in the modern EAC":::
+
+### Dynamic distribution lists
+
+Dynamic distribution lists are mail-enabled Active Directory group objects, created to expedite the mass sending of email messages and other information within an Exchange organization.
+
+The membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that are defined.
+
+:::image type="content" source="media/exo_whatsnew_dec20_2.png" alt-text="Assigning users in a dynamic distribution list in the modern EAC":::
+
+### Delivery management setting
+
+This setting allows admins to manage who can send email to any group. The user can define these settings once the group is created. This setting is available in all group types.
+
+:::image type="content" source="media/exo_whatsnew_dec20_3.png" alt-text="Delivery management setting in the modern EAC":::
+
+### Message approval setting
+
+Admins can use this setting to configure whether or not messages sent to a particular group need to be approved by a moderator. This setting also allows admins to define who the group moderators are, and it allows admins to define any message senders who do not require message approval. This setting is available in distribution groups, dynamic distribution groups, and mail-enabled security groups.
+
+### Membership approval setting in mail-enabled security groups
+
+For mail-enabled security groups, there is now a check box called **owner approval is required**. After this check box is selected, the owner of the mail-enabled security group needs to manually add or remove group members from that group.
+
+### Membership approval setting in distribution groups
+
+Admins can now mange the membership approval settings during or after the creation of a distribution group. It allows admins to configure the moderation settings for who can join the group, and for who can remove members from a group.
+
+:::image type="content" source="media/exo_whatsnew_dec20_4.png" alt-text="Membership approval setting in distribution groups":::
+
+
 ## September 2020
 
 Here are some of the changes and new features we introduced in the modern EAC in September 2020. 
