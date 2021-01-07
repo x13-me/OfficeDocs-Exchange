@@ -122,7 +122,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
 To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes. You create the migration endpoint in this task.
 
-1. Go to the Exchange admin center.
+1. Go to the Classic Exchange admin center.
 
 2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
