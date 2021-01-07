@@ -143,77 +143,14 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 8. Click **New** to create the migration endpoint.
 
 > [!NOTE]
-> This is available for Classic EAC only. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a G Suite migration batch with the new Exchange admin center (New EAC)**.
+> This is available for Classic EAC. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a G Suite migration batch with the new Exchange admin center (New EAC)**.
 
-### Step 5.0: Create a G Suite migration batch with the new Exchange admin center (New EAC)
-
-1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
-
-2. Click **New Migration batch** and follow the instructions in the details pane.
-
-3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
-
-4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
-
-   ![Migration Onboarding](../media/migration-onboarding-selection.png)
-   
-5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
-   
-   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
-   
-6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
-
-7. Sign in to your Google account to validate your APIs.
-
-   Once the APIs are successfully validated, a link, client ID, and a scope is provided to add scope for API access.
-   
-8. Click the API access link and verify your google account.
-
-9. In Google admin page, click **Add new**. 
-
-10. In **Add a new client ID** window, enter the client id and the scope provided after API validation and click **Authorize**.
-
-    > [!NOTE]
-    > For more information, see the above topic **Grant access to the service account for your Google tenant**.
-    
-11. In **Set endpoint** section, you can either create a new migration endpoint or select the migration endpoint from the drop-down list:
-
-    a. Select **Create a new migration endpoint** and follow the instructions to create the endpoints.
-    
-    b. Select the migration endpoint from the drop-down list and click **Next**.
-    
-    ![Set endpoint](../media/migration-endpoint-selection.png)
-    
-12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
-
-    - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
-
-    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
-
-      ```CSV
-      EmailAddress
-      will@fabrikaminc.net
-      user123@fabrikaminc.net
-      ```
-13. In **Add user mailboxes** section, import the CSV file and click **Next**.
-
-14. In **Move configuration** section, enter the details and click **Next**.
-
-15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
-
-    ![Schedule batch migration](../media/schedule-batch1-migration.png)
-    
-    The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
-    
-16. To complete the batch, select the migration group.
-
-17. In the details pane, select the preferred option to complete the batch and click **Save**.
-
-    The batch status will then be **Completed**.
-
-### Step 5.1: Create a migration batch and start migrating Gmail mailboxes in Classic Exchange admin center (Classic EAC)
+### Step 5: Create a migration batch and start migrating Gmail mailboxes in Classic Exchange admin center (Classic EAC)
 
 You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 or Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Microsoft 365 or Office 365 to Gmail](#step-4-connect-microsoft-365-or-office-365-to-gmail).
+
+> [!NOTE]
+> **IMAP migration** is not available for new EAC.
 
 > [!TIP]
 > It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
