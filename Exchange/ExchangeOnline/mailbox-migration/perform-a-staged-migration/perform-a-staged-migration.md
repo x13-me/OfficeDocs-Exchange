@@ -182,7 +182,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 **To create a migration endpoint**:
 
-1. Go to the [new Exchange admin center](https://admin.exchange.microsoft.com/#/), and navigate to **Migration** > **Batch**.
+1. Go to the Classic Exchange admin center, and navigate to **Migration** > **Batch**.
 
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
@@ -251,7 +251,7 @@ You create and then run a migration batch to migrate mailboxes to Microsoft 365 
     
     ![Set endpoint](../media/migration-endpoint-selection.png)
     
-7. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+7. Select and upload a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
     - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
