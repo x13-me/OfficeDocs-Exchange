@@ -28,7 +28,7 @@ For now, it is possible to switch back to the existing EAC (often called the "cl
 
 Here are some of the changes and new features we introduced in the modern EAC in December 2020.
 
-### Groups - creating and management
+### Groups – creation and management
 
 Admins can now create and manage four kinds of groups from the modern EAC: Microsoft 365 groups, distribution lists, mail-enabled security groups, and dynamic distribution lists. The groups experience has now reached parity with that of the classic EAC. The new group type that we recently introduced in the modern EAC is [dynamic distribution lists](#dynamic-distribution-lists).
 
