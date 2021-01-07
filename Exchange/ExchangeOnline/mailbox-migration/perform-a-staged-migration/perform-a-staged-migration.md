@@ -180,7 +180,7 @@ Use any text editor, or an application like Excel, to create the CSV file. Save 
 
 A migration endpoint contains the settings and credentials needed to connect the on-premises server that hosts the mailboxes you're migrating with Microsoft 365 or Office 365. For a staged migration, you create an Outlook Anywhere migration endpoint. One migration endpoint is created to use for all of your migration batches.
 
-**To create a migration endpoint**:
+**To create a migration endpoint in Classic Exchange admin center**:
 
 1. Go to the Classic Exchange admin center, and navigate to **Migration** > **Batch**.
 
@@ -223,7 +223,7 @@ A migration endpoint contains the settings and credentials needed to connect the
    To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
 
 > [!NOTE]
-> This is available for Classic EAC. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
+> For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
 
 ## Migrate your mailboxes
 
