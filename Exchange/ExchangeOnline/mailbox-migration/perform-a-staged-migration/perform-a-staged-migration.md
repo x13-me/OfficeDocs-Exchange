@@ -223,7 +223,7 @@ A migration endpoint contains the settings and credentials needed to connect the
    To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
 
 > [!NOTE]
-> This is available for Classic EAC only. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
+> This is available for Classic EAC. For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
 
 ## Migrate your mailboxes
 
