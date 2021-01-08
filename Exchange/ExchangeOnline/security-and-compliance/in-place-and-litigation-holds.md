@@ -125,7 +125,7 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 **Properties that trigger copy-on-write**
 
-|**Item type**|**Properties that trigger copy-on-write**|
+| Item type | Properties that trigger copy-on-write |
 |:-----|:-----|
 |Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)| Subject  <br/>  Body  <br/>  Attachments  <br/>  Senders/Recipients  <br/>  Sent/Received Dates|
 |Items other than messages and posts| Any change to a visible property, except the following:  <br/>  Item location (when an item is moved between folders)  <br/>  Item status change (read or unread)  <br/>  Changes to retention tag applied to an item|
@@ -142,11 +142,11 @@ Items in the Recoverable Items folder aren't calculated toward the user's mailbo
 
 - **Enable the archive mailbox and turn on auto-expanding archiving** - You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 110 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes in the Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes) and [Enable unlimited archiving - Admin help](https://docs.microsoft.com/microsoft-365/compliance/enable-unlimited-archiving).
 
-    **Notes**:
-
-  - After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. For instructions, see Step 4 in [Increase the Recoverable Items quota for mailboxes on hold](https://docs.microsoft.com/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings).
-
-  - Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this might happen after you enable the archive mailbox.
+  > [!NOTE]
+  > 
+  > - After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. For instructions, see Step 4 in [Increase the Recoverable Items quota for mailboxes on hold](https://docs.microsoft.com/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings).
+  >
+  > - Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this might happen after you enable the archive mailbox.
 
 - **Create a custom retention policy for mailboxes on hold** - In addition to enabling the archive mailbox and auto-expanding archiving for mailboxes on Litigation Hold or In-Place Hold, you might also want to create a custom MRM retention policy in Exchange Online for mailboxes on hold. This let's you apply a retention policy to mailboxes on hold that's different from the Default MRM Policy that's applied to mailboxes that aren't on hold. This lets you to apply retention tags that are specifically designed for mailboxes on hold. This includes creating a new retention tag for the Recoverable Items folder.
 
