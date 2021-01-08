@@ -60,7 +60,7 @@ For mail-enabled security groups, there is now a check box called **owner approv
 
 ### Membership approval setting in distribution groups
 
-Admins can now mange the membership approval settings during or after the creation of a distribution group. It allows admins to configure the moderation settings for who can join the group, and for who can remove members from a group.
+Admins can now manage the membership approval settings during or after the creation of a distribution group. It allows admins to configure the moderation settings for who can join the group, and for who can remove members from a group.
 
 :::image type="content" source="media/exo_whatsnew_dec20_4.png" alt-text="Membership approval setting in distribution groups":::
 
