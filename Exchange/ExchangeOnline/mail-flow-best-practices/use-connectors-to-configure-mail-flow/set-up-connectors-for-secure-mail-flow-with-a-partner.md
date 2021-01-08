@@ -82,7 +82,7 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 5. In the **Routing** screen, choose any of the two options and click **Next**.
 
 > [!NOTE]
-> If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the name of the smart host in the text box.
+> If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the domain name of the smart host in the text box.
 
 6. In the **Security restrictions** screen, check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
