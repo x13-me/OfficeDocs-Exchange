@@ -135,7 +135,7 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 - **For New EAC**
 
-1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **mail flow**, and click **connectors**. 
+1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **Mail flow**, and click **Connectors**. 
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
    
@@ -145,13 +145,39 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
-4. On the next screen, that is, the **Connector name** screen, give the connector a name, and click **Next**.
+4. On the **Connector name** screen, give the connector a name, and click **Next**.
 
-5. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+5. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**. (See the below image.)
 
-6. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
+<include image - 365-org-use-of-connector.png>
 
-To start the wizard, click the plus symbol **+**. On the first screen, choose the options as shown in the following screenshot:
+> [!NOTE]
+> For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
+
+6. On the **Routing** screen, provide the domain name or IP address of the host computer to which Office 365 will deliver email messages. (See the below image.)
+
+<include the image smart-host-routing-365-org.png>
+
+7. On the **Security restrictions** screen, choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+
+> [!NOTE]
+> It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
+<include the image no-value-security-restrictions.png>
+
+8. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
+
+> [!NOTE]
+> If you opt to define the TLS settings, it becomes mandatory to choose 
+
+9. On the **Validation email**, specify an email that belongs to the mailbox of your organization's domain. (See the image below).
+
+:::image type="content" source="../../media/validation-email-new-eac.png" alt-text="valid email":::
+
+10. On the **Review connector** page, review the settings you have configured and click **Create connector**.
+
+The connector is created, and the notification message is displayed. (See the image below.)
+
+:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
 
 #### For Classic EAC
 
@@ -177,7 +203,7 @@ There are two steps for this:
 
 #### For New EAC
 
-1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **mail flow**, and click **connectors**.
+1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **Mail flow**, and click **Connectors**.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
 
@@ -193,18 +219,25 @@ There are two steps for this:
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
 
-4. Click **Next**, and follow the instructions in the wizard.  
+4. Click **Next**.
+
+5. On the **Connector name** screen, provide a name for the connector and click **Next**.
+
+6. In the **Authenticating sent email** screen, choose either of the two options and click **Next**.
 
 > [!NOTE]
-> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
+> If you choose the first option, provide your domain name (if your organization has only one domain) or any one of the domains of your organization (in case of multiple domains). If you choose the second option, provide the IP address of organization's domain server.
 
-5. At the end, click **Create connector**.
+7. On the **Review connector** page, review the settings you have configured and click **Create connector**.
 
 :::image type="content" source="../../media/create-connector-option.png" alt-text="The screen on which the option to create a connector is available":::
 
-The notification message **Connector created** is displayed, as shown in the below screenshot.
+The connector is created, and the notification message is displayed. (See the image below.)
 
 :::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
+
+> [!NOTE]
+> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
 
 #### For Classic EAC
 

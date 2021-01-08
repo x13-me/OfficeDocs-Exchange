@@ -70,7 +70,33 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 
 :::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
 
-2. Click **Next**, and follow the instructions in the wizard.  
+2. Click **Next**.
+
+3. On the **Connector name** screen, provide a name for the connector and click **Next**.
+
+4. On the **Use of connector** screen, choose any one of the two options and click **Next**.
+
+> [!NOTE]
+> If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, provide its name.
+
+5. In the **Routing** screen, choose any of the two options and click **Next**.
+
+> [!NOTE]
+> If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the name of the smart host in the text box.
+
+6. In the **Security restrictions** screen, check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+
+7. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
+
+8. Click **Next**.
+
+9. In the **Validation email** screen, provide an email address that is part of the mailbox in your domain server, and click **Next**.
+
+10. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
+
+The connector is created, and the notification message is displayed. (See the image below.)
+
+:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
@@ -100,19 +126,38 @@ You can set up a connector to apply security restrictions to email that your par
 
 :::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
 
-2. Select the **Partner organization** radio button under **Connection from**.
+2. Select the **Partner organization** radio button under **Connection from**, and click **Next**.
 
 > [!NOTE]
 > Once you select the **Partner organization** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
 
-3. Click **Next**, and follow the instructions in the wizard.
+3. In the **Connector name** screen, provide a name for the connector and click **Next**.
+
+4. In the **Authenticating sent email** screen, choose one of the two options, and click **Next**.
+
+> [!NOTE]
+> If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, provide its name.
+>If you choose the second option, provide the IP address of the email server of the partner organization.
+
+5. In the **Security restrictions** screen, check the check box for **Reject email messages if they aren't sent over TLS**.
+
+> [!NOTE]
+> It is optional to choose the option of **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name**. If you choose this option, provide the domain name of the partner organization.
+
+6. Check the check box for **Reject email messages if they aren't sent from within this IP address range**.
+
+> [!IMPORTANT]
+>You can choose this option in addition to the option specified in Step 5; Else, you can choose either this option or the one in Step 5. Choosing atleast one of these options is mandatory.
+
+7. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
+
+The connector is created, and the notification message is displayed. (See the image below.)
+
+:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
+
 
 > [!NOTE]
 > If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
-
-4. At the end, click **Create connector**.
-
-:::image type="content" source="../../media/create-connector-option.png" alt-text="The screen on which the option to create a connector is available":::
 
 ### For Classic EAC
 
@@ -146,7 +191,7 @@ Review these connector examples to help you decide whether you want to apply sec
 
 **For New EAC**
 
-For details on this procedure, see **Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365** > **For New EAC** in this topic.
+For details on this procedure, see The **For New EAC** subsection in the **Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365** section in this topic.
 
 **For Classic EAC**
 
@@ -195,13 +240,13 @@ When you choose these settings, all emails from your partner organization's doma
 ### Example 2: Require that email sent from your partner organization domain ContosoBank.com is encrypted and uses their domain certificate
 <a name="example1"> </a>
 
-1. To do this in the New EAC, use all the settings shown in Example 1. 
+1. To do this in the New EAC, use all the settings shown in **Example 1** above. 
 
 2. Add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365, as shown in the screenshot below.
 
 :::image type="content" source="../../media/encryption-using-certificate-new-eac.png" alt-text="The screen on which encryption is done using the domain certificate name":::
 
-1. To do this in the New EAC, use all the settings shown in Example 1.
+1. To do this in the New EAC, use all the settings shown in **Example 1** above.
 
 2. Add the certificate domain name that your partner organization uses to connect with Microsoft 365 or Office 365, as shown in the screenshot below.
 
@@ -218,14 +263,14 @@ To do this, specify your partner organization domain name to identify mail from 
 
 In the New EAC, the procedure is as described below:
 
-1. Enter your partner domain as described in Example 1.
+1. Enter your partner domain as described in **Example 1** above.
 2. Use the options as shown in the screenshot below.
 
 :::image type="content" source="../../media/receive-email-from-specific-ip-address.png" alt-text="The screen on which email source IP address is set":::
 
 In the Classic EAC, the procedure is as described below:\
 
-1. Enter your partner domain as described in Example 1.
+1. Enter your partner domain as described in **Example 1** above.
 2. Use the options as shown in the screenshot below.
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)

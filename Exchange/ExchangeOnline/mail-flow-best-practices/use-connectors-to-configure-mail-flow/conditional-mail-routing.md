@@ -52,6 +52,9 @@ Below are the procedures for creating Outbound connectors in the New Exchange ad
 
 :::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
+> [!NOTE]
+> You must provide either the domain name or the IP address of the server.
+
 8. Define your Transport Layer Security (TLS) settings depending on your security needs.
 
 :::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
