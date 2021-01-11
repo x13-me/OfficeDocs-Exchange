@@ -2,6 +2,37 @@
 
 
 
+## Week of January 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/5/2021 | [Automatically save sent items in delegator's mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) | modified |
+| 1/5/2021 | [Change the branding of Clutter notifications](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-clutter-notification-branding) | modified |
+| 1/5/2021 | [Change how long permanently deleted items are kept for an Exchange Online mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention) | modified |
+| 1/5/2021 | [Configure message delivery restrictions for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions) | modified |
+| 1/5/2021 | [Convert a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox) | modified |
+| 1/5/2021 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
+| 1/5/2021 | [Enable or disable single item recovery for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-single-item-recovery-exchange-2013-help) | modified |
+| 1/6/2021 | [Permissions in Exchange Online](/Exchange/permissions-exo/permissions-exo) | modified |
+| 1/6/2021 | [Role assignment policies in Exchange Online](/Exchange/permissions-exo/role-assignment-policies) | modified |
+| 1/6/2021 | [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) | modified |
+| 1/6/2021 | [Create a distribution group naming policy](/Exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy) | modified |
+| 1/6/2021 | [Manage dynamic distribution group](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) | modified |
+| 1/6/2021 | [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) | modified |
+| 1/6/2021 | [Enable or disable Exchange ActiveSync for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync) | modified |
+| 1/6/2021 | [Enable or disable MAPI for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi) | modified |
+| 1/6/2021 | [Enable or disable Outlook on the web for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) | modified |
+| 1/7/2021 | [Address book policies in Exchange Online](/Exchange/address-books/address-book-policies/address-book-policies) | modified |
+| 1/7/2021 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
+| 1/8/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
+| 1/8/2021 | [Remove an In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds) | modified |
+| 1/8/2021 | [In-Place Hold and Litigation Hold](/Exchange/security-and-compliance/in-place-and-litigation-holds) | modified |
+| 1/8/2021 | Create an In-Place eDiscovery search | removed |
+| 1/8/2021 | [In-Place eDiscovery](/Exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) | modified |
+| 1/8/2021 | [Security and compliance for Exchange Online](/Exchange/security-and-compliance/security-and-compliance) | modified |
+
+
 ## Week of December 21, 2020
 
 
@@ -43,38 +74,3 @@
 | 12/18/2020 | [Queued messages report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-queued-messages-report) | modified |
 | 12/18/2020 | [SMTP AUTH clients report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report) | modified |
 | 12/18/2020 | [Top domain mailflow status report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-top-domain-mailflow-status-report) | modified |
-
-
-## Week of November 30, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/30/2020 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
-| 11/30/2020 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 11/30/2020 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
-| 11/30/2020 | [How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another](/Exchange/mailbox-migration/migrate-mailboxes-across-tenants) | modified |
-| 11/30/2020 | [Convert Exchange 2003 mailboxes to mail-enabled users](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2003-mailboxes) | modified |
-| 11/30/2020 | [Convert Exchange 2007 mailboxes to mail-enabled users](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2007-mailboxes) | modified |
-| 11/30/2020 | [Monitoring, reporting, and message tracing in Exchange Online](/Exchange/monitoring/monitoring) | modified |
-| 12/1/2020 | [Hybrid Configuration wizard](/Exchange/hybrid-configuration-wizard) | modified |
-| 12/1/2020 | [Complete a pending Exchange Server certificate request](/Exchange/architecture/client-access/complete-pending-certificate-requests?view=exchserver-2016) | modified |
-| 12/1/2020 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
-| 12/4/2020 | [Batch migrate Exchange Server public folders to Microsoft 365 or Office 365](/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2016) | modified |
-| 12/4/2020 | [Add retention tags to or remove retention tags from a retention policy](/Exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags) | modified |
-| 12/4/2020 | [Apply a retention policy to mailboxes](/Exchange/security-and-compliance/messaging-records-management/apply-retention-policy) | modified |
-| 12/4/2020 | [Create a Retention Policy](/Exchange/security-and-compliance/messaging-records-management/create-a-retention-policy) | modified |
-| 12/4/2020 | [Default folders that support Retention Policy Tags](/Exchange/security-and-compliance/messaging-records-management/default-folders) | modified |
-| 12/4/2020 | [Default Retention Policy in Exchange Online and Exchange Server](/Exchange/security-and-compliance/messaging-records-management/default-retention-policy) | modified |
-| 12/4/2020 | [Messaging records management](/Exchange/security-and-compliance/messaging-records-management/messaging-records-management) | modified |
-| 12/4/2020 | [How retention age is calculated](/Exchange/security-and-compliance/messaging-records-management/retention-age) | modified |
-| 12/4/2020 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
-
-
-## Week of November 23, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/23/2020 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 11/23/2020 | [What happened to delivery reports?](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
