@@ -42,7 +42,28 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Add the sender to the group's existing allowed senders list
 
-1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+**For New EAC**
+
+1.  In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
+
+<update the image add-sender-to-group-sender-list.png>
+
+2. In the group properties dialog box that opens, click the **Settings** tab.
+
+3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
+
+<include the image delivery-management-new-eac.png>
+
+4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **Only senders in the following list**.
+
+<include the image delivery-management-set-sender.png>
+
+5. Enter the name of the sender or the group to which the sender belongs to, and click **Save changes**.
+
+
+**For Classic EAC**
+
+1. In the Classic EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 2. In the group properties dialog box that opens, go to **Delivery management** and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
 
@@ -58,6 +79,30 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 ### Method 2: Allow all internal and external senders to send messages to this group
 
 If you decide that you don't need to restrict the message senders to this group, you can remove the restrictions so anyone can send messages to this group:
+
+**For New EAC**
+
+In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
+
+<update the image add-sender-to-group-sender-list.png>
+
+2. In the group properties dialog box that opens, click the **Settings** tab.
+
+3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
+
+<include the image delivery-management-new-eac.png>
+
+4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **All senders**; and under **Decline messages from**, choose 
+
+<include the image delivery-management-set-sender.png>
+
+> [!NOTE]
+> After you choose choose **All senders** under **Accept messages from**, you do not have to choose anything under **Decline messages from** and you can save the changes.
+
+5. Click **Save changes**.
+
+
+**For Classic EAC**
 
 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
