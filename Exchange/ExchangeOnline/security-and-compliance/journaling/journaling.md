@@ -135,6 +135,21 @@ When a message matches the scope of multiple journal rules, all matching rules w
 
 Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
 
+### Duplicate journal report scenarios in a hybrid Exchange environment
+In an Exchange hybrid environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
+
+>1. Cloud to Cloud: Any situations where email is forked will lead to duplicate journaling, such as:
+
+>>>a. Transport chipping (too many recipients on the message).
+
+>>>b. Internal + External recipients on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
+
+>>>c. Any future needs where cloud needs to fork the message.
+
+>2. OnPrem to Cloud: Once when onprem journals and once when cloud journals. This can be prevented by the PreventDupJournaling flight, which was enabled for your tenant. If duplicates are still being seen, then this scenario is not the issue.
+
+>3. Cloud to OnPrem: After cloud has journaled, then on-prem journaled. We cannot prevent this scenario.
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).
