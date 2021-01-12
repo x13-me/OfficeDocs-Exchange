@@ -42,11 +42,13 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to set up match subdomains on a domain
+## Use the Exchange admin center (EAC) to set up match subdomains on a domain
 
 ### New EAC
 
 1. In the New EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
+
+<insert the image accepted.domains.png>
 
 2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
@@ -55,8 +57,11 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 ### Classic EAC
 
 1. In the Classic EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
+The domain details dialox box is displayed.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
+
+<insert the image internal-relay-chosen.png>
 
 3. Select **Match subdomains for this domain for sending and receiving emails**.
 

@@ -61,15 +61,17 @@ There are two types of accepted domains in Exchange Online:
 
 ## View accepted domains
 
-### Use the New Exchange admin center to view accepted domains
+### Use the New Exchange admin center (EAC) to view accepted domains
 
 1. In the New Exchange admin center (EAC), go to **Mail flow** \> **Accepted domains**.
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
-### Use the Classic Exchange admin center to view accepted domains
+<include the image accepted-domains-ascending-detail.png>
 
-1. In the Classic Exchange admin center (EAC), go to **Mail flow** \> **Accepted domains**.
+### Use the Classic EAC to view accepted domains
+
+1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
@@ -85,7 +87,9 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 2. Select and click the domain.
 
-3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+3. In the **Accepted Domain** window, under the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+
+<include the image accepted-domain-type-being-chosen.png>
 
     - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
     

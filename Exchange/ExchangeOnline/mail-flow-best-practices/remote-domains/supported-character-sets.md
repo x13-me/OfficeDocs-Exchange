@@ -30,7 +30,24 @@ The following table describes the character sets that you can configure in remot
 
 ## New Exchange admin center (EAC)
 
-- In the New Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **+ Add a remote domain** to create a remote domain. In the window that opens, enter a name for the domain and enter a name for the equivalent remote version of the domain and click **Next**. Configure the automatic email reply types and click **Next**. Configure the message-reporting settings and click **Next**. Use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set, and click **Next**.  Review the settings configured and click **Save**.
+1. In the New Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. 
+2. Click **+ Add a remote domain** to create a remote domain. 
+<include the image add-remote-domain.png>
+
+3. In the window that opens, enter a name for the domain and enter a name for the equivalent remote version of the domain and click **Next**. 
+<include the image naming-remote-domain.png>
+
+4. Configure the automatic email reply types and click **Next**.
+<include the image configuring-automatic-reply-type.png
+
+5. Configure the message-reporting settings and click **Next**. 
+<include the image message-reporting-settings.png>
+
+6. Use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set, and click **Next**.  
+<include the image text-and-character-set.png>
+
+7. Review the settings configured and click **Save**.
+<include review-remote-domain.png>
 
 ## Classic EAC
 - In the Classic EAC, go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
