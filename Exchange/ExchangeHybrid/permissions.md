@@ -72,7 +72,7 @@ For more information, see [Overview of delegation in an Office 365 hybrid enviro
 
 #### Mailbox permissions and capabilities NOT supported in hybrid environments
 
-**Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments, using Exchange admin center (EAC) for on-premises Exchange and Exchange Online PowerShell for Microsoft 365 or Office 365.
+**Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments, using Exchange Management Shell for on-premises Exchange and Exchange Online PowerShell for Microsoft 365 or Office 365.
 
 For example, you want to grant Send As permission for an on-premises mailbox named ONPREM1 to a cloud mailbox name EXO1.
   
