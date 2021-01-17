@@ -2,6 +2,17 @@
 
 
 
+## Week of January 11, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/12/2021 | [Fix 'sender's submission quota exceeded' errors in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-for-submission-quota-exceeded-in-exchange-online) | modified |
+| 1/12/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
+| 1/14/2021 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 1/15/2021 | [Configure mobile phones to access email](/Exchange/clients/exchange-activesync/configure-email-access?view=exchserver-2016) | modified |
+
+
 ## Week of January 04, 2021
 
 
