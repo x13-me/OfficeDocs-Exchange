@@ -29,7 +29,7 @@ If a domain is expiring within 90 days, 60 days, or 30 days and less, it trigger
 
 These notifications list the domains that are expiring and require necessary action to be taken to avoid disruption in your mail flow. You can ignore the notifications if you've renewed/deleted the domain. 
 
-You can also view these alerts in [new EAC](https://admin.exchange.microsoft.com) (new EAC), navigate to **Mail flow** > **View alerts**.
+You can also view these alerts in [new EAC](https://admin.exchange.microsoft.com), navigate to **Mail flow** > **View alerts**.
 
 ## Related article
 
