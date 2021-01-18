@@ -13,7 +13,7 @@ description: This notification feature monitors the accepted domains per tenant 
 ms.custom:
 ---
 
-# Domain expiring insight in the new Exchange admin center
+# Domain expiring soon insight in the new Exchange admin center
 
 When you add your domain to Microsoft 365 or Office 365, it's called an accepted domain. Users in this accepted domain can send and receive mail. To keep a healthy mail flow, domains owned by customers should be active. Once domains expire, users configured under that domain will no longer receive emails. 
 
