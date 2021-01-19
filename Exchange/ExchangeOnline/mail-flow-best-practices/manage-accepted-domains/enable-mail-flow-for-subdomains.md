@@ -48,7 +48,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 1. In the New EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
 
-<insert the image accepted.domains.png>
+:::image type="content" source="../../media/accepted-domains.png" alt-text="The screen displaying accepted domains":::
 
 2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
@@ -61,7 +61,7 @@ The domain details dialox box is displayed.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
 
-<insert the image internal-relay-chosen.png>
+:::image type="content" source="../../media/internal-relay-chosen.png" alt-text="The screen showing the selection of the internal relay":::
 
 3. Select **Match subdomains for this domain for sending and receiving emails**.
 
