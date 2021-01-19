@@ -90,21 +90,21 @@ To configure the group's allowed senders list, perform the following steps:
 
 2. From the group details dialog box that opens up, click the **Settings** tab.
 
-<include the image settings-to-configure-senders-list.png>
+:::image type="content" source="../../media/settings-to-configure-senders-list.png" alt-text="The screen on which senders are configured":::
 
 3. Under **Delivery management**, click **Edit delivery management**.
 
-<include the image editing-delivery-management-settings.png>
+:::image type="content" source="../../media/editing-delivery-management-settings.png" alt-text="The screen on which delivery management settings are edited":::
 
 4. On the **Delivery management** dialog box that opens up, under **Accept messages from**, choose **Only senders in the following list**.
 
-<include the image configuring-list-external-senders.png>
+:::image type="content" source="../../media/configuring-list-external-senders.png" alt-text="The screen on which senders are added":::
 
 5. In the text box, enter the name or email address of the individual whom you want to add a sender to the group's **allowed senders** list.
 
 6. Choose the profile of the person whose details you had entered in the text box. The list of profiles populate after you enter the name of email address.
 
-<include the image choosing-profile-of-a-sender.png>
+:::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
 7. Click **Save changes**.
 
