@@ -46,7 +46,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 2. In the group properties dialog box that opens, go to **Delivery management** and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
 
-   ![Add an email address to the allowed senders list](../../media/bfa84c19-f972-4428-9001-47bebd8b9125.png)
+  ![Add an email address to the allowed senders list](../../media/bfa84c19-f972-4428-9001-47bebd8b9125.png)
 
 3. In the **Select Allowed Senders** dialog box that opens, select and add the sender or a group that the sender is a member of. When you're finished, click **OK**.
 
