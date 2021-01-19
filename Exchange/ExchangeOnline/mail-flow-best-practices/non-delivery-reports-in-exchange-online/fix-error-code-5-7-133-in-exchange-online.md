@@ -82,7 +82,33 @@ Instead of allowing all external senders to send messages to this group, you can
 
 - The group's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
-To configure the group's allowed senders list, open the EAC do the following steps:
+To configure the group's allowed senders list, perform the following steps:
+
+**For New EAC**
+
+1. Go to **Recipients** \> **Groups** \>, select and click on a group from the list.
+
+2. From the group details dialog box that opens up, click the **Settings** tab.
+
+<include the image settings-to-configure-senders-list.png>
+
+3. Under **Delivery management**, click **Edit delivery management**.
+
+<include the image editing-delivery-management-settings.png>
+
+4. On the **Delivery management** dialog box that opens up, under **Accept messages from**, choose **Only senders in the following list**.
+
+<include the image configuring-list-external-senders.png>
+
+5. In the text box, enter the name or email address of the individual whom you want to add a sender to the group's **allowed senders** list.
+
+6. Choose the profile of the person whose details you had entered in the text box. The list of profiles populate after you enter the name of email address.
+
+<include the image choosing-profile-of-a-sender.png>
+
+7. Click **Save changes**.
+
+**For Classic EAC**   
 
 1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
