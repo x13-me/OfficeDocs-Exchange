@@ -22,8 +22,8 @@ description: "Learn how to fix email issues for error code 5.7.133 in Exchange O
 # Fix email delivery issues for error code 5.7.133 in Exchange Online
 
 It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.133 in a non-delivery report also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a group that's configured to reject messages from external senders (senders from outside the organization).
-
-|||||
+|Icon|Message|Icon|Message|
+|-----|-----|-----|-----|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this?](#im-the-group-owner-or-email-admin-how-do-i-fix-this)|
 |
 
@@ -74,9 +74,9 @@ To configure the group's allowed senders list, open the EAC do the following ste
 
    - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
    - 
-   :::image type="content" source="../../media/option-to-add-sender.png" alt-text="":::
+   :::image type="content" source="../../media/option-to-add-sender.png" alt-text="The screen on which the option to add a sender is displayed":::
 
-:::image type="content" source="../../media/add-sender.png" alt-text="":::
+:::image type="content" source="../../media/add-sender.png" alt-text="The screen on which you can add a sender who is to be added into the":::
 
 ![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
 
