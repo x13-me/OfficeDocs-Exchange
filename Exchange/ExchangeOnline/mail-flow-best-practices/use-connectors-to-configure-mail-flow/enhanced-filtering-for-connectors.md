@@ -4,8 +4,8 @@ description: Learn how to use Enhanced Filtering for Connectors (also known as s
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 f1.keywords:
 - NOCSH
 title: Enhanced filtering for connectors
@@ -20,7 +20,7 @@ manager: serdars
 Properly configured inbound connectors are a trusted source of incoming mail to Microsoft 365 or Office 365. But in complex routing scenarios where email for your Microsoft 365 or Office 365 domain is routed somewhere else first, the source of the inbound connector is typically not the true indicator of where the message came from. Complex routing scenarios include:
 
 - Third-party cloud filtering services
-- Managed filtering appliance
+- Managed filtering appliances
 - Hybrid environments (e.g., on-premises Exchange)
 
 Mail routing in complex scenarios looks like this:
@@ -89,7 +89,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
           >
           > - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the email systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
           >
-          > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses.
+          > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses. If the previous hop is an email server that's behind a network address translation (NAT) device that assigns private IP addresses, we recommend that you configure NAT to assign a public IP address to the email server.
 
         - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
 
