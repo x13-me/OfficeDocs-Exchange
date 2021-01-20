@@ -65,7 +65,7 @@ After all migration batches have been completed, all users can use their migrate
 
 Throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google Workspace side.
 
-Additional migration limitations are described in the following table:
+Other migration limitations are described in the following table:
 
 |Data type|Limitations|
 |---|---|
@@ -150,13 +150,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
    > [!NOTE]
    > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
 
-## Create a sub-domain for mail routing to Microsoft 365 or Office 365
+## Create a subdomain for mail routing to Microsoft 365 or Office 365
 
 1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
 
 2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
 
-3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
+3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
    > [!NOTE]
    > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
@@ -172,13 +172,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
 > [!NOTE]
 > The migration process won't be able to complete if a routing domain is used that is not verified as described above. Choosing the built-in "tenantname.onmicrosoft.com" domain for routing mail to Office 365 instead of a sub-domain of the primary Google Workspace domain occasionally causes issues that Microsoft is not able to assist with besides to recommend that the user manually verify the forwarding address or contact Google support.
 
-## Create a sub-domain for mail routing to your G Suite domain
+## Create a subdomain for mail routing to your Google Workspace domain
 
 1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
 
 2. Click **Domains**, then **Manage domains**, and then click **Add a domain alias**.
 
-3. Enter the domain that you will use for routing mails to Google Workspace, then click **Continue and verify domain ownership**. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
+3. Enter the domain that you will use for routing mails to Google Workspace, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
 
    ![Add domain alias](../media/add-a-new-domain-alias-im10.png)
 
@@ -224,7 +224,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
 7. Sign in to your Google account to validate your APIs.
 
-   Once the APIs are successfully validated, a link, client id, and a scope is provided to add scope for API access.
+   Once the APIs are successfully validated, a link, client ID, and a scope is provided to add scope for API access.
    
 8. Click the API access link and verify your google account.
 
@@ -291,7 +291,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
    user123@fabrikaminc.net
    ```
 
-5. Under **Select the users**, click **Choose File** and navigate to the CSV file of all the users you are migrating in this batch. If your CSV file contains additional columns besides the two mentioned above, click to select **Allow unknown columns in the CSV file**.
+5. Under **Select the users**, click **Choose File** and navigate to the CSV file of all the users you are migrating in this batch. If your CSV file contains more columns besides the two mentioned above, click to select **Allow unknown columns in the CSV file**.
 
    ![Csv file](../media/gsuite-mig-14-eac-csv.png)
 
