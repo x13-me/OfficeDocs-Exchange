@@ -50,8 +50,6 @@ The sending account might be compromised. You'll need to:
 
 - [Determine if the account is compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised). If the account is compromised, follow the steps in [Responding to a Compromised Email Account in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/responding-to-a-compromised-email-account).
 
-- Go to the **Restricted users** portal in the Security & Compliance Center at <https://protection.office.com/?hash=restrictedusers> to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
-
 - To help prevent future account compromises, follow the recommendations in [Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data).
 
 ## Still need help?
