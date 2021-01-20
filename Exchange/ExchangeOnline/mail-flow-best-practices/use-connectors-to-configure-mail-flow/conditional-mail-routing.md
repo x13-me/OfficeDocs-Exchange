@@ -93,7 +93,12 @@ Below are the procedures for creating Outbound connectors in the New Exchange ad
 
 Now that we've created a connector, we need to create a mail flow rule that'll send mail to it based on the criteria you define. There are many conditions you can select from to control when messages should be sent to the connector.
 
-1. In the Classic EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
+To create a mail flow rule in the New and Classic EACs, perform the following steps:
+
+> [!NOTE]
+> The below procedure is the same for the New and Classic EACs.
+
+1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 
 2. In the **New rule** window, name the rule. To see all the options available for the rule, click **More options...** at the bottom of the page.
 
