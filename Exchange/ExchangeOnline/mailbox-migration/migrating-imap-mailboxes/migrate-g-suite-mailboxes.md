@@ -110,7 +110,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
    - **Column B** is the sign-in name for the user's Gmail mailbox (for example, aaronharper@lemonteatest.com).
 
-   - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from Google Workspace mailboxes using the Microsoft 365 admin center](#migration-from-g-suite-mailboxes-using-the-microsoft-365-admin-center).
+   - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from Google Workspace mailboxes using the Microsoft 365 admin center](#migration-from-google-workspace-mailboxes-using-the-microsoft-365-admin-center).
 
     ![A completed sample migration file.](../../media/excel-im15.png)
 
