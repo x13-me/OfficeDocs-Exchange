@@ -192,7 +192,10 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-**For Classic EAC**
+To create a mail flow rule in the New and Classic EACs, perform the following steps:
+
+> [!NOTE]
+> The below procedure is the same for the New and Classic EACs.
 
 1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
