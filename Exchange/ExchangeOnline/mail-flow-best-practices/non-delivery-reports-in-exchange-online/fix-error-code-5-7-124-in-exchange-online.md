@@ -46,17 +46,17 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1.  In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
 
-<update the image add-sender-to-group-sender-list.png>
+:::image type="content" source="../../media/add-sender-to-group-sender-list.png" alt-text="The screen on which a sender can be added to become a member of the senders list":::
 
 2. In the group properties dialog box that opens, click the **Settings** tab.
 
 3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
 
-<include the image delivery-management-new-eac.png>
+:::image type="content" source="../../media/delivery-management-new-eac.png" alt-text="The screen on which  the option to edit the deliver management settings is displayed":::
 
 4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **Only senders in the following list**.
 
-<include the image delivery-management-set-sender.png>
+:::image type="content" source="../../media/delivery-management-set-sender.png" alt-text="The screen on which the sender is added to become a member of the senders list":::
 
 5. Enter the name of the sender or the group to which the sender belongs to, and click **Save changes**.
 
@@ -84,17 +84,18 @@ If you decide that you don't need to restrict the message senders to this group,
 
 In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
 
-<update the image add-sender-to-group-sender-list.png>
+:::image type="content" source="../../media/add-sender-to-group-sender-list.png" alt-text="The screen on which a sender can be added to become a member of the senders list":::
 
 2. In the group properties dialog box that opens, click the **Settings** tab.
 
 3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
 
-<include the image delivery-management-new-eac.png>
+:::image type="content" source="../../media/delivery-management-new-eac.png" alt-text="The screen on which  the option to edit the deliver management settings is displayed":::
 
-4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **All senders**; and under **Decline messages from**, choose 
+4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **All senders**.
 
-<include the image delivery-management-set-sender.png>
+:::image type="content" source="../../media/delivery-management-set-sender.png" alt-text="The screen on which the sender is added to become a member of the senders list":::
+
 
 > [!NOTE]
 > After you choose choose **All senders** under **Accept messages from**, you do not have to choose anything under **Decline messages from** and you can save the changes.
