@@ -36,12 +36,10 @@ Only an email admin in the recipient's organization can fix this issue. Contact 
 
 The two methods that will allow an external sender to send messages to the mailbox in your organization are described in the following sections.
 
-To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+To open the New Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-> [!NOTE]
-> The EAC mentioned above refers to the New EAC.
 
-To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen. See <include the image - navigation-to-classic-eac.png>
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen. See :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The screen on the New EAC from which you can switch to Classic EAC":::
 
 ### Method 1: Allow all internal and external senders to send messages to this mailbox
 
@@ -55,7 +53,8 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 3. In the **Manage mail flow settings** dialog box that opens up, click **Edit** in the **Message delivery restriction** pane.
 
-:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
+<include the image manage-mail-flow-settings-screen.png>
+
 
 4. In the Message delivery restrictions dialog box that opens, under **Accept messages from**, clear the check box for **Check if all senders are authenticated**
 
