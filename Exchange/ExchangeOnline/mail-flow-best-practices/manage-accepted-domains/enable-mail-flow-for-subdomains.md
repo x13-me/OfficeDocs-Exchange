@@ -54,6 +54,12 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 3. Select **Accept mail for all subdomains**.
 
+<include the image setting-email-acceptance-for-all-subdomains.png>
+
+The notification message **Accepted domain updated successfully** is displayed, as shown in the image below.
+
+<include the image updating-settings-of-accepted-domain.png>
+
 ### Classic EAC
 
 1. In the Classic EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
