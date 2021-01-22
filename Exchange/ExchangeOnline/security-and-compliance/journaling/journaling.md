@@ -142,7 +142,7 @@ In a hybrid Exchange environment, the following scenarios are known to result in
 
 - Transport chipping (too many recipients on the message).
 
->>>b. Internal and External recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
+- Internal and external recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
 
 >>>c. Any future needs where cloud needs to fork the message.
 
