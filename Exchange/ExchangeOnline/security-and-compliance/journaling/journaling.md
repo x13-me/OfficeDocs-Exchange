@@ -136,7 +136,7 @@ When a message matches the scope of multiple journal rules, all matching rules w
 Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
 
 ### Duplicate journal report scenarios in a hybrid Exchange environment
-In an Exchange hybrid environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
+In a hybrid Exchange environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
 
 >1. Cloud to Cloud: Any situations where email is forked will lead to duplicate journaling, such as:
 
