@@ -140,7 +140,7 @@ In a hybrid Exchange environment, the following scenarios are known to result in
 
 1. **Cloud to cloud**: Any situations where email is forked will lead to duplicate journaling, such as:
 
->>>a. Transport chipping (too many recipients on the message).
+- Transport chipping (too many recipients on the message).
 
 >>>b. Internal and External recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
 
