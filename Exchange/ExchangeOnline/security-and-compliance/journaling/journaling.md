@@ -148,7 +148,7 @@ In a hybrid Exchange environment, the following scenarios are known to result in
 
 2. **On-premises to cloud**: Once when on-premises journals and once when the cloud journals. This can be prevented by implementing the PreventDupJournaling flight in a tenant.
 
->3. Cloud to OnPrem: After cloud has journaled, then on-prem journaled. We cannot prevent this scenario.
+3. **Cloud to on-premises**: After the cloud has journaled, on-premises journals. We cannot prevent this scenario.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
