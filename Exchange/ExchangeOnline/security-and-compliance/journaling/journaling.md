@@ -138,7 +138,7 @@ Journaling always identifies messages as internal if the email address in the SM
 ### Duplicate journal report scenarios in a hybrid Exchange environment
 In a hybrid Exchange environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
 
->1. Cloud to Cloud: Any situations where email is forked will lead to duplicate journaling, such as:
+1. **Cloud to cloud**: Any situations where email is forked will lead to duplicate journaling, such as:
 
 >>>a. Transport chipping (too many recipients on the message).
 
