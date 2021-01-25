@@ -75,7 +75,7 @@ There are two types of accepted domains in Exchange Online:
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
-<include the image accepted-domains-default-display-old-eac.png>
+:::image type="content" source="../../media/accepted-domains-default-display-old-eac.png" alt-text="The screen displaying the default-ascending format in which accepted domains information is shown":::
 
 ## Configure the domain type
 
