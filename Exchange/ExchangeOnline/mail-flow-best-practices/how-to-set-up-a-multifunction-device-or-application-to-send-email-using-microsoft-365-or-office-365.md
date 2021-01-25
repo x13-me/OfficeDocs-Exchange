@@ -320,13 +320,12 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
    
    3. On the next screen. that is, **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
 
-    <include the image use-of-connector-new-eac.png>
-   
+    :::image type="content" source="../media/use-of-connector-new-eac.png" alt-text="The screen on which the timing of the use of the connector is configured":::
+       
    4. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
-
-    <include the image configuration-of-routing.png>
-   
-   
+    
+    :::image type="content" source="../media/configuration-of-routing.png" alt-text="The screen on which the destination host is configured":::
+       
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
 9. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
