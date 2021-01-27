@@ -22,6 +22,9 @@ manager: serdars
 
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Microsoft 365 and Office 365, administrators can set up different levels of calendar access in Exchange Online to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating organization relationships. User-to-user calendar sharing is set up by applying sharing policies.
 
+> [!NOTE]
+> Organization Sharing functionality of the Classic Exchange admin center experience is available in the new Exchange admin center as we continue to work on updated versions. If you're using **Edge** incognito and this page isn't working, enable the [third-party cookies](https://support.microsoft.com/microsoft-edge/temporarily-allow-cookies-and-site-data-in-microsoft-edge-597f04f2-c0ce-f08c-7c2b-541086362bd2).
+
 ## Sharing Scenarios in Exchange Online
 
 The following sharing scenarios are supported in Exchange Online:
