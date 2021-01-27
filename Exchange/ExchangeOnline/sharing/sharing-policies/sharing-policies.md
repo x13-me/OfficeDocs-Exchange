@@ -22,6 +22,9 @@ manager: serdars
 
 People in your organization may want to share calendars with individual business associates, friends, or family members. Sharing policies control how your users share their calendars with people outside your organization. The sharing policy that an admin applies to the user's mailbox determines what level of access a user can share and with whom. If you don't change anything, then all users can invite anyone with an email address to view their calendar. You may decide to apply a more restrictive policy.
 
+> [!NOTE]
+> Organization Sharing functionality of the Classic Exchange admin center experience is available in the new Exchange admin center as we continue to work on updated versions. If you're using **Edge** incognito and this page isn't working, enable the [third-party cookies](https://support.microsoft.com/microsoft-edge/temporarily-allow-cookies-and-site-data-in-microsoft-edge-597f04f2-c0ce-f08c-7c2b-541086362bd2).
+
 An admin defines the rules that make up a sharing policy. You can specify the domains that users can share with, and the following levels of access to calendars:
 
 - Free/busy information with time only
