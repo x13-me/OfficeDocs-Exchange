@@ -15,7 +15,7 @@ ms.custom:
 
 # Mailboxes exceeding receiving limits report in the new EAC
 
-The Mailboxes exceeding receiving limits report in the new Exchange Admin Center (new EAC) displays information on mailboxes that are receiving large volumes of messages in a short amount of time.
+In the new Exchange Center (EAC), the Mailboxes exceeding receiving limits report displays information on mailboxes that are receiving large volumes of messages in a short amount of time.
 
 There are two sections to this report:
 
@@ -25,7 +25,7 @@ There are two sections to this report:
       
    2. Mailboxes will not receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
       
-2. And a chart that indicates when a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
+2. A chart that indicates when a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
 
 3. A table that shows, in the selected time window:
 
