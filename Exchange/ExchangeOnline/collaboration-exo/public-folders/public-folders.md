@@ -27,6 +27,9 @@ Public folders are designed for shared access and provide an easy and effective 
 
 Public folders can also be used as an archiving method for distribution groups. When you mail-enable a public folder and add it as a member of the distribution group, email sent to the group is automatically added to the public folder for later reference.
 
+> [!NOTE]
+> Public folders functionality of the Classic Exchange admin center experience is available in the new Exchange admin center as we continue to work on updated versions. If you're using **Edge** incognito and this page isn't working, enable the third-party cookies.
+
 Public folders aren't designed for the following purposes:
 
 - **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes) as your archiving solution.
