@@ -44,7 +44,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-<include the image editing-a-public-folder.png>
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
 
 2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
@@ -90,7 +90,7 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 
 1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-<include the image editing-a-public-folder.png>
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
 
 2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
@@ -98,7 +98,8 @@ To configure the public folder's allowed senders list, open the EAC do the follo
    - Select **Only senders in the following list**, and then click **Add**. 
    <include the image configuring-specific-senders-to-public-folders-new-eac.png>
 
-   - In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. 
+   - In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group.
+ 
    <include the image adding-specific-senders-to-public-folders-new-eac.png> 
    
    - When you're finished, click **OK**.
