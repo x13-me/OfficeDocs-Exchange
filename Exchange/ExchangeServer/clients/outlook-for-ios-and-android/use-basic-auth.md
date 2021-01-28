@@ -26,23 +26,23 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
 
 Outlook for iOS and Android is a cloud-backed application. This means your experience consists of a locally installed app powered by a secure and scalable service running in the Microsoft Cloud.
 
-For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud, providing  customers the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://www.microsoft.com/trust-center). 
+For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud, providing customers the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://www.microsoft.com/trust-center). 
 
 The following environments will take advantage of this Microsoft 365 or Office 365-based architecture:
 
 - In Exchange Server 2010 environments
 
-- When a hybrid relationship between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365 has not been configured
+- When a hybrid relationship between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365 hasn't been configured
 
-- When hybrid Modern Authentication has not been enabled between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365
+- When hybrid Modern Authentication hasn't been enabled between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365
 
 ![Basic authentication in Outlook for iOS and Android](../../media/outlook_mobile_basic_auth.png)
 
-Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization which is protected by TLS-secured connections end-to-end, between Microsoft 365 or Office 365 and the app.
+Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utilizes the native Microsoft sync technology for data synchronization that is protected by TLS-secured connections end-to-end, between Microsoft 365 or Office 365 and the app.
 
-The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status. The region in which this data is synchronized into depends on the IP address in use by the mobile device at the time synchronization is setup. If you have a hybrid setup with an Exchange Online tenant, the on-premises data is not synchronized into your tenant; instead, the data is synchronized into Outlook.com in the same way as if you had an Exchange Server without hybrid. If you want to control and manage your on-premises data from within your tenant, you need to enable [hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status. The region in which this data is synchronized into depends on the IP address in use by the mobile device at the time synchronization is set up. If you have a hybrid setup with an Exchange Online tenant, the on-premises data is not synchronized into your tenant; instead, the data is synchronized into Outlook.com in the same way as if you had an Exchange Server without hybrid. If you want to control and manage your on-premises data from within your tenant, you need to enable [hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
-Data synchronization between the Exchange on-premises environment and Exchange Online happens independent of user behavior. This ensures that new messages are delivered to the devices very quickly. For more information on how the user authentication model enables data synchronization independently of user behavior, see [Passwords and security in Outlook for iOS and Android for Exchange Server](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/passwords-and-security).
+Data synchronization between the Exchange on-premises environment and Exchange Online happens independent of user behavior. This ensures that new messages are delivered to the devices quickly. For more information on how the user authentication model enables data synchronization independently of user behavior, see [Passwords and security in Outlook for iOS and Android for Exchange Server](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/passwords-and-security).
 
 Processing information in the Microsoft Cloud enables advanced features and capabilities, such as the categorization of email for the Focused Inbox, customized experience for travel and calendar, and improved search speed. Relying on the cloud for intensive processing and minimizing the resources required from users' devices enhances the app's performance and stability. Lastly, it allows Outlook to build features that work across all email accounts, regardless of the technological capabilities of the underlying servers (such as different versions of Exchange Server, Microsoft 365, or Office 365).
 
@@ -67,7 +67,7 @@ Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveS
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Microsoft 365 or Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ## Client features that aren't supported
-The following features are not support for on-premises mailboxes using basic authentication with Outlook for iOS and Android:
+The following features aren't support for on-premises mailboxes using basic authentication with Outlook for iOS and Android:
 
 - Draft folder and Draft messages synchronization
 
