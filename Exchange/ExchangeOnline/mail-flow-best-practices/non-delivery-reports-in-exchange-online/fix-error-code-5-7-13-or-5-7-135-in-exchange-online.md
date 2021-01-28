@@ -40,7 +40,25 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Allow all internal and external senders to send messages to this public folder
 
-1. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
+**In New EAC**
+
+1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+<include the image editing-a-public-folder.png>
+
+2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
+
+    - Clear the check box for **Require that all senders are authenticated**.
+
+    - Select **All senders**.
+   
+    <include the image allow-all-senders-public-folder.png>
+
+3. Click **Save**.
+
+**In Classic EAC** 
+
+1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
    ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
@@ -68,7 +86,28 @@ Instead of allowing all external senders to send messages to this public folder,
 
 To configure the public folder's allowed senders list, open the EAC do the following steps:
 
-1. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
+**In New EAC**
+
+1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+<include the image editing-a-public-folder.png>
+
+2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
+
+   - Clear the check box for **Require that all senders are authenticated**.
+   - Select **Only senders in the following list**, and then click **Add**. 
+   <include the image configuring-specific-senders-to-public-folders-new-eac.png>
+
+   - In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. 
+   <include the image adding-specific-senders-to-public-folders-new-eac.png> 
+   
+   - When you're finished, click **OK**.
+
+3. Click **Save**.
+ 
+**In Classic EAC** 
+
+1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
    ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
