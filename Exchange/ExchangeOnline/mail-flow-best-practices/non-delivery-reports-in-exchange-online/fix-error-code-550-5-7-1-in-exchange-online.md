@@ -120,8 +120,8 @@ To configure the public folder to accept messages from external senders, follow 
 
     - Select **All senders**.
    
-    <include the image allow-all-senders-public-folder.png>
-
+:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configures all the senders to send messages to the public folder":::
+    
 4. Click **Save**.
 
 **In Classic EAC**
