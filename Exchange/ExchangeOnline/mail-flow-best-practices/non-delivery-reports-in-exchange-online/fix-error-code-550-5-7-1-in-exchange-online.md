@@ -106,6 +106,26 @@ When the recipient is a mail-enabled public folder in your Exchange Online organ
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
+**In New Exchange admin center (EAC)**
+
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange``/exchange-admin-center).
+
+2. In the New Exchange admin center (EAC), go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+
+3. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
+
+    - Clear the check box for **Require that all senders are authenticated**.
+
+    - Select **All senders**.
+   
+    <include the image allow-all-senders-public-folder.png>
+
+4. Click **Save**.
+
+**In Classic EAC**
+
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
 2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
