@@ -384,3 +384,4 @@ During completion, another incremental sync is run to copy any changes that have
 ## Finalizing your migration
 
 After you have successfully migrated all of your Google Workspace users to Microsoft 365 or Office 365, you can switch your primary MX record to point to Microsoft 365 or Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live). At this point, you are free to decommission your source Google Workspace tenant.
+

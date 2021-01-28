@@ -36,7 +36,7 @@ manager: serdars
 
 Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
-Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md) .
+Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md).
 
 ## Migration from Google Workspace mailboxes using the Microsoft 365 admin center
 

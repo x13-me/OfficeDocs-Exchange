@@ -72,7 +72,7 @@ For more information, see [Overview of delegation in an Office 365 hybrid enviro
 
 #### Mailbox permissions and capabilities NOT supported in hybrid environments
 
-**Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments.
+**Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments, using Exchange Management Shell for on-premises Exchange and Exchange Online PowerShell for Microsoft 365 or Office 365.
 
 For example, you want to grant Send As permission for an on-premises mailbox named ONPREM1 to a cloud mailbox name EXO1.
   
@@ -108,9 +108,9 @@ To enable Full Access and Send on Behalf permissions in a hybrid deployment, add
 |---|---|
 |Exchange 2016|Enable ACLable object synchronization at the organization level. <br> Manually enable ACLs on each mailbox moved to Microsoft 365 or Office 365 before ACLable object synchronization was enabled at the organization level. <br> No additional configuration is needed for mailboxes moved to Microsoft 365 or Office 365 after ACLable object synchronization is enabled at the organization level.|
 |Exchange 2013|Exchange 2013 servers need the following: <ul><li>The latest cumulative update (CU), or the immediately previous CU, installed. Exchange 2013 servers running older CUs aren't supported and may not work with delegated mailbox permissions in a hybrid deployment.</li><li>The Exchange organization is configured to allow access control lists (ACLs) to be stamped on mail objects and synchronized with Microsoft 365 or Office 365.</li><li>On-premises remote mailboxes associated with mailboxes moved to Microsoft 365 or Office 365 prior to Exchange 2013 CU10 need to be manually configured to support ACLs. Remote mailboxes, created on servers running Exchange 2013 CU10 or later, and after the Exchange organization is set to allow ACLs, are configured automatically.</li></ul>|
-|Exchange 2010|Exchange 2010 SP3 servers need the following: <ul><li>The latest update rollup (RU), or the immediately previous RU, installed. Exchange 2010 SP3 servers running older RU aren't supported and may not work with delegated mailbox permissions in a hybrid deployment.</li><li> On-premises remote mailboxes associated with Microsoft 365 or Office 365 mailboxes need to be configured to support ACLs. This needs to be done for each on-premises remote mailbox that's associate with an Microsoft 365 or Office 365 mailbox.</ul</li>|
+|Exchange 2010|Not supported anymore.<br> Previously, on-premises remote mailboxes associated with Microsoft 365 or Office 365 mailboxes needed to be configured to support ACLs. This was required to be done for each on-premises remote mailbox that's associated with a Microsoft 365 or Office 365 mailbox.|
 |Exchange 2007 or earlier|Not supported.|
-|
+
 
 ### Enabling support for hybrid mailbox permissions in Azure Active Directory Connect
 
