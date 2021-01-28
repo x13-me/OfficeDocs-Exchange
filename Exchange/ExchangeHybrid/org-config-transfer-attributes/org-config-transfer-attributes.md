@@ -19,7 +19,7 @@ description: 'Organization configuration transfer attributes can be copied by th
 
 # Organization configuration transfer attributes
 
-The attributes listed in the following articles can be copied from an on-premises Exchange organization to Exchange Online as soon as the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The attributes listed in the following articles are copied from an on-premises Exchange organization to Exchange Online. These attributes are copied as soon as the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 [Active Sync Device Access Rule](active-sync-device-access-rule.md)
 
