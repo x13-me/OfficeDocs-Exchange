@@ -51,9 +51,9 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
     - Clear the check box for **Require that all senders are authenticated**.
 
     - Select **All senders**.
-   
-    <include the image allow-all-senders-public-folder.png>
-
+    
+:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the user can configure all external senders to send messages to the public folder":::
+    
 3. Click **Save**.
 
 **In Classic EAC** 
@@ -95,12 +95,13 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
    - Clear the check box for **Require that all senders are authenticated**.
-   - Select **Only senders in the following list**, and then click **Add**. 
-   <include the image configuring-specific-senders-to-public-folders-new-eac.png>
-
+   - Select **Only senders in the following list**, and then click **Add**.
+   
+ :::image type="content" source="../../media/configuring-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the user can configure restriction on senders":::
+   
    - In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group.
  
-   <include the image adding-specific-senders-to-public-folders-new-eac.png> 
+:::image type="content" source="../../media/adding-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the specific senders can be added":::
    
    - When you're finished, click **OK**.
 
