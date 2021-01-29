@@ -1,5 +1,6 @@
 ---
 title: 'Connection Filtering on Edge Transport Servers: Exchange 2013 Help'
+description: 'Summary: This article describes the connection-filtering feature.'
 TOCTitle: Connection Filtering on Edge Transport Servers
 ms:assetid: b513755c-5d3e-44fa-a6cb-771d48b544ac
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
@@ -125,7 +126,7 @@ For absolute value types, the IP Block List provider returns explicit responses 
 
 ## IP Allow List providers
 
-IP Allow List providers are also known as *safe lists* or *white lists*. IP Allow List providers are configured just like IP Block List providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allow List provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Block List providers are used much more frequently than IP Allow List providers. Choose your IP Allow List providers carefully.
+IP Allow List providers are also known as *safe lists* or *allowlists*. IP Allow List providers are configured just like IP Block List providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allow List provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Block List providers are used much more frequently than IP Allow List providers. Choose your IP Allow List providers carefully.
 
 ## Test IP Block List providers and IP Allow List providers
 
