@@ -50,4 +50,6 @@ manager: serdars
 
 [Restore a deleted public folder](restore-deleted-public-folder.md)
 
+[Restore deleted items from public folder](restore-deleted-items-from-public-folder.md)
+
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)
