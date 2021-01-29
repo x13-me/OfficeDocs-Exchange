@@ -301,7 +301,7 @@ With ExpressRoute, there is no private IP space for ExpressRoute connections, no
 
 **Q**: How do I know that the email account is added correctly in Outlook for iOS and Android?
 
-**A**: On-premises mailboxes that are added via hybrid Modern Authentication are labelled as **Exchange (Hybrid)** in the account settings in Outlook for iOS and Android, similar to the following example:
+**A**: On-premises mailboxes that are added via hybrid Modern Authentication are labeled as **Exchange (Hybrid)** in the account settings in Outlook for iOS and Android, similar to the following example:
 
 ![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
 
