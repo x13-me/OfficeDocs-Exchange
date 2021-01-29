@@ -1,0 +1,42 @@
+---
+localization_priority: Normal
+ms.author: v-bshilpa
+manager: serdars
+ms.topic: article
+author: Benny-54
+ms.service: exchange-online
+ms.reviewer: 
+ms.collection: 
+- exchange-online
+description: 
+audience: ITPro
+f1.keywords:
+- NOCSH
+title: Restore deleted items from public folder in Exchange Online
+
+---
+
+# Restore deleted items from public folder in Exchange Online
+
+The items deleted from public folders are stored in the recycle bin of public folder till retention period is over.
+
+## Permissions required
+
+The user restoring items from the public folder must have the `Public Folders` role assigned. This role is assigned by default to users present in the `Organization Management` role group.
+
+## Restore delected items
+
+1. In outlook, select the public folder from which items were deleted, click on Folder and select **Recover Deleted Items**.
+
+[image]
+
+2. Select the item to be restored, ensure **Restore Selected Items** option is selected and click **Ok**.
+
+[image]
+
+3. The post is restored.
+
+[image]
+
+> [!NOTE]
+> To enable the **Recover Deleted Items** option for non-mail type of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/en-us/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
