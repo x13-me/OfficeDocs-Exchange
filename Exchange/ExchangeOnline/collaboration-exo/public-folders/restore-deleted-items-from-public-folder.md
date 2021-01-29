@@ -12,11 +12,11 @@ description:
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Restore deleted items from public folder in Exchange Online
+title: Restore deleted items from public folder 
 
 ---
 
-# Restore deleted items from public folder in Exchange Online
+# Restore deleted items from public folder 
 
 The items deleted from public folders are stored in the recycle bin of public folder until retention period is over.
 
