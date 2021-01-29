@@ -8,7 +8,7 @@ ms.service: exchange-online
 ms.reviewer: 
 ms.collection: 
 - exchange-online
-description: 
+description: Restore deleted items of public folder from the recycle bin of public folder.
 audience: ITPro
 f1.keywords:
 - NOCSH
