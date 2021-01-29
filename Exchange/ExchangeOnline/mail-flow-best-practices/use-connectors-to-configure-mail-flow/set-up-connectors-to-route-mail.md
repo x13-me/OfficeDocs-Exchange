@@ -149,20 +149,21 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 5. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**. (See the below image.)
 
-<include image - 365-org-use-of-connector.png>
+:::image type="content" source="../../media/365-org-use-of-connector.png" alt-text="The screen on which you can configure the timing of the use of connector":::
 
 > [!NOTE]
 > For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
 
 6. On the **Routing** screen, provide the domain name or IP address of the host computer to which Office 365 will deliver email messages. (See the below image.)
 
-<include the image smart-host-routing-365-org.png>
+:::image type="content" source="../../media/smart-host-routing-365-org.png" alt-text="The screen on which the user provides the domain name or IP address of the server to which Microsoft 365 delivers the email messages":::
 
 7. On the **Security restrictions** screen, choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
-<include the image no-value-security-restrictions.png>
+
+:::image type="content" source="../../media/no-value-security-restrictions.png" alt-text="The screen showing that the user has not defined any settings on the security restrictions page":::
 
 8. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
 
