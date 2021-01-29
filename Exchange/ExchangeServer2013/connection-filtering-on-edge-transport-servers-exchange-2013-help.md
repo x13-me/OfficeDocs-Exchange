@@ -1,5 +1,6 @@
 ---
 title: 'Connection Filtering on Edge Transport Servers: Exchange 2013 Help'
+description: 'Summary: This article describes the connection-filtering feature.'
 TOCTitle: Connection Filtering on Edge Transport Servers
 ms:assetid: b513755c-5d3e-44fa-a6cb-771d48b544ac
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
