@@ -32,7 +32,7 @@ manager: serdars
 
 [Set up public folders in a new organization](set-up-public-folders.md)
 
-[Accessing public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
+[Access public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
 
 [Create a public folder mailbox](create-public-folder-mailbox.md)
 
