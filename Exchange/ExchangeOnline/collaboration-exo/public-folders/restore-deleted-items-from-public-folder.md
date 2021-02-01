@@ -28,15 +28,15 @@ The user restoring items from the public folder must have the `Public Folders` r
 
 1. In outlook, under **Public Folders**, select the folder from which items were deleted, and click **Recover Deleted Items**.
 
-![recover deleted items](../../media/restore-pf-imag1.png)
+   ![recover deleted items](../../media/restore-pf-imag1.png)
 
 2. Select the item to be restored, ensure **Restore Selected Items** option is selected and click **Ok**.
 
-![restore selected items](../../media/restore-pf-imag2.png)
+   ![restore selected items](../../media/restore-pf-imag2.png)
 
 3. The item is restored.
 
-![restored](../../media/restore-pf-imag3.png)
+   ![restored](../../media/restore-pf-imag3.png)
 
 > [!NOTE]
 > To enable the **Recover Deleted Items** option for non-mail type of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
