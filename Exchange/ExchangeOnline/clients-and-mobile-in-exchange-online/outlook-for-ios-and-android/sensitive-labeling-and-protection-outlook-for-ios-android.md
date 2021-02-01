@@ -26,9 +26,6 @@ Protecting company or organizational data is extremely important. Outlook for iO
 
 Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Microsoft 365 or Office 365 accounts using the native Microsoft sync technology.
 
-> [!NOTE]
-> Sensitvity labeling is not supported with Government Community Cloud accounts.
-
 ## Understanding Sensitivity Labeling
 Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels). 
 
