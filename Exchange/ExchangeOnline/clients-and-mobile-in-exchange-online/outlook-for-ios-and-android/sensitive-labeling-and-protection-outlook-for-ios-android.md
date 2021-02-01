@@ -193,7 +193,9 @@ Use the following steps to create and configure the Outlook for iOS and Android 
 
 9. Click **S/MIME** to display the **Outlook S/MIME settings**.
 10. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
-11. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+11. Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+12. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
 
@@ -209,7 +211,9 @@ When the S/MIME setting is enabled, Outlook for iOS and Android will automatical
 
 Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate’s details, including information like key usage and the validity period.
 
-![Screenshot showing the Outlook for iOS cetificate details screen.](../../media/certdetails.png)
+![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
+
+Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
 ## Using S/MIME in Outlook for iOS and Android
 
@@ -238,7 +242,7 @@ Before a user can send a signed and/or encrypted message, Outlook for iOS and An
 
 ![Screenshots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
-When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
+When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate. Outlook for iOS and Android can send S/MIME signed and encrypted messages to distribution groups; Outlook for iOS and Android enumerates the certificates for the users defined in the distribution group, including those in nested distribution groups, though care should be taken on the limiting the number of nested distribution groups to minimize the processing impact.
 
 > [!NOTE]
 > Outlook for iOS and Android only supports sending clear-signed messages.
