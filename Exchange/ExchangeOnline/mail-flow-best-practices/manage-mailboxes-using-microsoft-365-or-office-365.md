@@ -41,7 +41,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 To set up hosted mail flow, we recommend using the Microsoft 365 setup wizard. To get to the Microsoft 365 setup wizard, go to **Setup** in the Microsoft 365 admin center.
 
-<include the image ms-365-admin-center.png>
+:::image type="content" source="../media/ms-365-admin-center.png" alt-text="interface of Microsoft 365 Admin center":::
 
 The Microsoft 365 setup wizard walks you through the following steps.
 
