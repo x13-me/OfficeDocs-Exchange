@@ -166,7 +166,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
-   ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
+   <include the image mx-record-ms-365-admin-center.png>
 
 4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.
 
@@ -281,7 +281,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
-   ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
+   <include the image mx-record-ms-365-admin-center.png>
 
 4. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
 
