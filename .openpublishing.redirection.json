@@ -356,6 +356,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/content-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Exchange/ExchangeOnline/security-and-compliance/index.md",
       "redirect_url": "security-and-compliance",
       "redirect_document_id": false
