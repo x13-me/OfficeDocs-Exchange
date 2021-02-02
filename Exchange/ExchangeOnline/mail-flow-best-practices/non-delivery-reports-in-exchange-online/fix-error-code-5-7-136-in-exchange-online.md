@@ -41,7 +41,9 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 > [!NOTE]
 > The EAC mentioned above refers to the New EAC.
 
-To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC** (New). See :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The interface from which the user can navigate to Classic EAC":::.
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC** (New). 
+
+See :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The interface from which the user can navigate to Classic EAC":::.
 
 
 ### Method 1: Allow all internal and external senders to send messages to this mail user
