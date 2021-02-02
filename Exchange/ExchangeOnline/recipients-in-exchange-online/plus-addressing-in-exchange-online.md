@@ -16,7 +16,7 @@ description: You use plus addressing to support dynamic, disposable recipient (n
 
 # Plus Addressing in Exchange Online
 
-From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamically-created recipient (not sender) email addresses for mailboxes.
+From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamically created recipient (not sender) email addresses for mailboxes.
 
 An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For example, sean@contoso.com. 
 
