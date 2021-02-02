@@ -41,9 +41,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 > [!NOTE]
 > The EAC mentioned above refers to the New EAC.
 
-To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC** (New). 
-
-See the below image.
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC** (New), as shown in the image below.
 
 :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The interface from which the user can navigate to Classic EAC":::.
 
