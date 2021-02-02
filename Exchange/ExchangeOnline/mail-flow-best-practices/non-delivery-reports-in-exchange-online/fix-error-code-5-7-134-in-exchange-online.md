@@ -39,7 +39,7 @@ The two methods that will allow an external sender to send messages to the mailb
 To open the New Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
 
-To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen. See the image below.
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen, as shown in the image below.
 
  :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The screen on the New EAC from which you can switch to Classic EAC":::
 
