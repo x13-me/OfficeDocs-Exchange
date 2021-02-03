@@ -314,13 +314,13 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
    
 <include the image from-your-server-to-365.png>
 
-     Click **Next**, and give the connector a name.
+   2. Click **Next**, and give the connector a name.
    
-   2. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+   3. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
        
-   3. Leave all the other fields with their default values, and select **Save**.
+   4. Leave all the other fields with their default values, and select **Save**.
        
-   4. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
+   5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
    
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
