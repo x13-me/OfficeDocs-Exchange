@@ -321,7 +321,8 @@ For detailed syntax and parameter information, see the following topics:
 
      In Exchange Online, the default value is 1.7 GB for **DefaultPublicFolderIssueWarningQuota** and 2 GB for **DefaultPublicFolderProhibitPostQuota**.
 
-   - _Maximum mailbox size in bytes_ equals the maximum size that you want to set for the new public folder mailboxes. In Exchange Online, the maximum size of public folder mailboxes is 100 GB. We recommend that you use a setting of 15 GB so that each public folder mailbox has room to grow. Exchange Online has a default public folder "prohibit post" quota of 2 GB. If you have individual public folders that are larger than 2 GB, you can use any of the following options to fix this issue:
+   - _Maximum mailbox size in bytes_ equals the maximum size that you want to set for the new public folder mailboxes. In Exchange Online, the maximum size of public folder mailboxes is 100 GB. We recommend that you use a setting of 75 GB so that each public folder mailbox has room to grow. Fewer public folder mailboxes will mean fewer connections for the Outlook clients, which might help to avoid performance issues; for the users it is transparent where the information is hosted, as they will further see the same hierarchy on the client side.
+   Exchange Online has a default public folder "prohibit post" quota of 2 GB. If you have individual public folders that are larger than 2 GB, you can use any of the following options to fix this issue:
 
    - Before you start the migration batch, increase the default public folder "prohibit post" quota by running the following command:
 
