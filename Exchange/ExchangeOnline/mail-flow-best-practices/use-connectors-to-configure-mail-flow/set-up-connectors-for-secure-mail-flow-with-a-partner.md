@@ -94,9 +94,7 @@ To create a connector in Microsoft 365 or Office 365, select **Admin**, and then
 
 10. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
 
-The connector is created, and the notification message is displayed. (See the image below.)
-
-:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
+The connector is created.
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
@@ -151,10 +149,7 @@ You can set up a connector to apply security restrictions to email that your par
 
 7. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
 
-The connector is created, and the notification message is displayed. (See the image below.)
-
-:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
-
+The connector is created.
 
 > [!NOTE]
 > If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.

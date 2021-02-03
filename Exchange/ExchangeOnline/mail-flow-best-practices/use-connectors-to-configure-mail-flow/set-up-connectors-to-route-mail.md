@@ -137,48 +137,34 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **Mail flow**, and click **Connectors**. 
  
-2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is depicted in the following screenshot:
-   
-:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
-
-3. Select the **Office 365** radio button under **Connection from**, and select the **Your organization's email server** under **Connection to**, as shown in the following image.
+2. Click **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot.
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
-4. On the **Connector name** screen, give the connector a name, and click **Next**.
+3. Click **Next**. On the **Connector name** screen, give the connector a name, and click **Next**.
 
-5. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**. (See the below image.)
-
-:::image type="content" source="../../media/365-org-use-of-connector.png" alt-text="The screen on which you can configure the timing of the use of connector":::
+4. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**. (See the below image.)
 
 > [!NOTE]
 > For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
 
-6. On the **Routing** screen, provide the domain name or IP address of the host computer to which Office 365 will deliver email messages. (See the below image.)
-
-:::image type="content" source="../../media/smart-host-routing-365-org.png" alt-text="The screen on which the user provides the domain name or IP address of the server to which Microsoft 365 delivers the email messages":::
+5. On the **Routing** screen, provide the domain name or IP address of the host computer to which Office 365 will deliver email messages.
 
 7. On the **Security restrictions** screen, choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
 
-:::image type="content" source="../../media/no-value-security-restrictions.png" alt-text="The screen showing that the user has not defined any settings on the security restrictions page":::
-
 8. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
 
 > [!NOTE]
 > If you opt to define the TLS settings, it becomes mandatory to choose 
 
-9. On the **Validation email**, specify an email that belongs to the mailbox of your organization's domain. (See the image below).
-
-:::image type="content" source="../../media/validation-email-new-eac.png" alt-text="valid email":::
+9. On the **Validation email**, specify an email that belongs to the mailbox of your organization's domain. 
 
 10. On the **Review connector** page, review the settings you have configured and click **Create connector**.
 
-The connector is created, and the notification message is displayed. (See the image below.)
-
-:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
+The connector is created.
 
 #### For Classic EAC
 
@@ -213,7 +199,7 @@ There are two steps for this:
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
-:::image type="content" source="../../media/add-connector-new-eac.png" alt-text="A page on which new connectors are created and existing ones are viewed":::
+<include the image from-your-server-to-365.png>
 
 3. Select the **Your organization's email server** radio button under **Connection from**.
 
@@ -231,11 +217,7 @@ There are two steps for this:
 
 7. On the **Review connector** page, review the settings you have configured and click **Create connector**.
 
-:::image type="content" source="../../media/create-connector-option.png" alt-text="The screen on which the option to create a connector is available":::
-
-The connector is created, and the notification message is displayed. (See the image below.)
-
-:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message regarding connector creation is displayed":::
+The connector is created.
 
 > [!NOTE]
 > If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.

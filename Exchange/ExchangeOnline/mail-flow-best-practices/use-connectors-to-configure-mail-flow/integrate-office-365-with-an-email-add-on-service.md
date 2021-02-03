@@ -68,7 +68,7 @@ The important settings for the connector are:
 
 ### Use the Exchange admin center (EAC) to create the outbound connector to the email add-on service
 
-**New Exchange admin center (EAC)**
+**New Exchange EAC**
 
 1. Go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
@@ -98,9 +98,9 @@ The important settings for the connector are:
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
 
-7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
+7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, myhpstcontoso.com), click **Save**, and then click **Next**.
 
-:::image type="content" source="../../media/configuration-of-routing.png" alt-text="A screen on which the routing path is configured":::
+<include the image defining-smart-host.png>
 
 8. On the **Security restrictions** screen, configure these settings:
 
@@ -112,13 +112,17 @@ The important settings for the connector are:
    
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
-9. Click **Validate this connector**, and specify an email address of an active mailbox on your server. You can add multiple addresses if your organization has more than one domain.
+9. On the **Validation email** screen, specify an email address of an active mailbox on your server and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
+
+<include the image validation-email-screen.png>
 
 10. Click **Validate**. A progress window appears.
 
-<include an image that shows the validation progress>
+11. When the connector validation is complete, click **Next**.
 
-11. When the connector validation is complete, click **Close**.
+12. On the **Review connector** screen, verify the settings, and then click **Create connector**.
+
+The outbound connecgtor is created.
 
 **Classic EAC**
 
@@ -290,9 +294,7 @@ The important settings for the connector are:
 
     :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 
-The notification message **Connector created** is displayed.
-
-:::image type="content" source="../../media/connector-creation-notification.png" alt-text="The screen on which the notification message about the connector creation is displayed":::
+The inbound connector is created.
 
 **In Classic EAC**
 
