@@ -100,7 +100,7 @@ The important settings for the connector are:
 
 7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, myhpstcontoso.com), click **Save**, and then click **Next**.
 
-<include the image defining-smart-host.png>
+:::image type="content" source="../../media/defining-smart-host.png" alt-text="The screen on which the domain name of the smart host is entered":::
 
 8. On the **Security restrictions** screen, configure these settings:
 
@@ -113,6 +113,8 @@ The important settings for the connector are:
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
 9. On the **Validation email** screen, specify an email address of an active mailbox on your server and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
+
+
 
 <include the image validation-email-screen.png>
 

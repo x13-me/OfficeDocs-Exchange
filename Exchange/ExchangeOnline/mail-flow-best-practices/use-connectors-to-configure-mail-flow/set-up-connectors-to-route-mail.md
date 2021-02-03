@@ -199,7 +199,7 @@ There are two steps for this:
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
    
-<include the image from-your-server-to-365.png>
+:::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
 
 3. Select the **Your organization's email server** radio button under **Connection from**.
 
