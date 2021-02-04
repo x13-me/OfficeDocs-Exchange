@@ -58,8 +58,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 :::image type="content" source="../../media/delivery-management-set-sender.png" alt-text="The screen on which the sender is added to become a member of the senders list":::
 
-5. Enter the name of the sender or the group to which the sender belongs to, and click **Save changes**.
+5. Click in the text box. The list of senders are displayed.
 
+6. Choose a sender from the list.
+
+<include the image list-of-senders-on-dm-screen.png> 
+
+7. Click **Save changes**.
 
 **For Classic EAC**
 
@@ -94,14 +99,12 @@ In the New EAC, go to **Recipients** \> **Groups** \> select the group from the 
 
 4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **All senders**.
 
-:::image type="content" source="../../media/delivery-management-set-sender.png" alt-text="The screen on which the sender is added to become a member of the senders list":::
-
+<include the image choose-all-senders.png>
 
 > [!NOTE]
 > After you choose choose **All senders** under **Accept messages from**, you do not have to choose anything under **Decline messages from** and you can save the changes.
 
 5. Click **Save changes**.
-
 
 **For Classic EAC**
 
