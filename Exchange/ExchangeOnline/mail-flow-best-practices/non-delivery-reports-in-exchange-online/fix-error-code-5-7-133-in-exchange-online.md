@@ -46,15 +46,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
  2. On the group-details screen, click **Settings**, as shown in the below screenshot.
  
-<include the image group-screen.png>
+:::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
  3. On the group's settings screen, under **Delivery management** pane, click **Edit delivery management**.
  
-<include the image edit-delivery-management-settings.png>
+:::image type="content" source="../../media/edit-delivery-management-settings.png" alt-text="The screen on which delivery management settings can be edited":::
  
  4. On the **Delivery management** screen, under **Accept messages from**, choose  the **All senders** radio button.
  
- 5. Click **Save**.
+ 5. Click **Save changes**.
 
  **In Classic EAC**
 
@@ -98,9 +98,11 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/configuring-list-external-senders.png" alt-text="The screen on which senders are added":::
 
-5. In the text box, enter the name or email address of the individual whom you want to add a sender to the group's **allowed senders** list.
+5. Click inside the text box. The list of senders (internal and external) are displayed.
 
-6. Choose the profile of the person whose details you had entered in the text box. The list of profiles populate after you enter the name of email address.
+:::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
+.
+6. Choose the external senders and the all-internal-users group to be added to the senders list.
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
