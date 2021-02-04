@@ -90,10 +90,7 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 2. Select and click the domain.
 
 3. In the **Accepted Domain** window, under the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
-
-    :::image type="content" source="../../media/accepted-domain-type-being-chosen.png" alt-text="The screen on which the accepted domain type is chosen":::
-
-
+    
     - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
     
     - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md)

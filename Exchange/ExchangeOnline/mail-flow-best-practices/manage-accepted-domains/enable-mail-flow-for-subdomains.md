@@ -56,9 +56,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 :::image type="content" source="../../media/setting-email-acceptance-for-all-subdomains.png" alt-text="The screen on which the user configures acceptance of emails from all subdomains":::
 
-The notification message **Accepted domain updated successfully** is displayed, as shown in the image below.
-
-:::image type="content" source="../../media/updating-settings-of-accepted-domain.png" alt-text="The screen on which the notification message regarding accepted domain's update is displayed":::
+The accepted domain is updated successfully.
 
 ### Classic EAC
 
