@@ -22,7 +22,7 @@ The items deleted from public folders are stored in the recoverable items (dumps
 
 ## Permissions required
 
-The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see[Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
+The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
 
 ## Restore deleted items
 
