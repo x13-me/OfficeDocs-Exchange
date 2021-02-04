@@ -106,7 +106,13 @@ To configure the mailbox's allowed senders list, do the following steps:
   - Clear the check box for **Check if all senders are authenticated**
   - Select **Selected senders**.
   - Click **+ Add sender**.
+  
+<include the image message-delivery-restrictions.png >
+
   - In the **Accept messages from** dialog box that opens, check the check box of the internal-senders group and the specific external users whom you want to add.
+
+<include the image setting-senders.png>
+
   - Click **Confirm**.
 
 **In Classic EAC**
