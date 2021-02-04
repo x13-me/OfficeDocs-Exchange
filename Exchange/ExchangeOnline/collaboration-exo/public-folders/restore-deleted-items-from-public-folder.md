@@ -18,11 +18,11 @@ title: Restore deleted items from public folder
 
 # Restore deleted items from public folder 
 
-The items deleted from public folders are stored in the recycle bin of public folder until retention period is over.
+The items deleted from public folders are stored in the recoverable items (dumpster) of public folder until the retention period is over.
 
 ## Permissions required
 
-The user restoring items from the public folder must have the `Public Folders` role assigned. This role is assigned by default to users present in the `Organization Management` role group.
+The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see[Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
 
 ## Restore deleted items
 
@@ -39,7 +39,7 @@ The user restoring items from the public folder must have the `Public Folders` r
    ![restored](../../media/restore-pf-imag3.png)
 
 > [!NOTE]
-> To enable the **Recover Deleted Items** option for non-mail type of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
+> To enable the **Recover Deleted Items** option for non-mail type (for example: Calendar, Contact, Tasks) of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
 
 See also
 
