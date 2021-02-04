@@ -2,6 +2,18 @@
 
 
 
+## Week of January 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/25/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 1/27/2021 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
+| 1/28/2021 | [Manage migration batches](/Exchange/mailbox-migration/manage-migration-batches) | modified |
+| 1/28/2021 | [Migration users status report](/Exchange/mailbox-migration/migration-users-status-report) | modified |
+| 1/28/2021 | [Perform a staged migration of email](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration) | modified |
+
+
 ## Week of January 18, 2021
 
 
