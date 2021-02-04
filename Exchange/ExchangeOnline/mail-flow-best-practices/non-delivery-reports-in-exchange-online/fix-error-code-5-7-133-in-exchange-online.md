@@ -46,15 +46,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
  2. On the group-details screen, click **Settings**, as shown in the below screenshot.
  
-:::image type="content" source="../../media/group-screen.png" alt-text="The screen on which the option to edit settings is available":::
+<include the image group-screen.png>
 
- 3. Under **Settings > Advanced Settings**, click **Manage more settings in the classic Exchange admin center**, as shown in the below screenshot.
+ 3. On the group's settings screen, under **Delivery management** pane, click **Edit delivery management**.
  
-:::image type="content" source="../../media/settings-tab-in-group-screen.png" alt-text="The screen displaying the option to manage settings in Classic EAC":::
+<include the image edit-delivery-management-settings.png>
  
- 4. On the left pane, click **delivery management** and select **Senders inside and outside of my organization**, as shown in the screenshot below.
- 
-:::image type="content" source="../../media/configuring-all-senders-to-send-email.png" alt-text="The screen on which restrictions to mail senders are removed":::
+ 4. On the **Delivery management** screen, under **Accept messages from**, choose  the **All senders** radio button.
  
  5. Click **Save**.
 
