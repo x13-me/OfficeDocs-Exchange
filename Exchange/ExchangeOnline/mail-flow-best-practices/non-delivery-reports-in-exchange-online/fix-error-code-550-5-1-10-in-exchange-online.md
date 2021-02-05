@@ -187,16 +187,16 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
-<include the image microsoft-365-admin-center.png>
+:::image type="content" source="../../media/microsoft-365-admin-center.png" alt-text="The Microsoft 365 Admin center home screen":::
 
 2. In the Exchange admin center (EAC), that is, New EAC or Classic EAC, go to **Mail flow** \> **Rules**.
 
 3. Look for any redirect rules that might be forwarding the sender's message to another address. 
 
     - An example of a redirect rule in New EAC is the below image.
+   
+    :::image type="content" source="../../media/redirect-rule-forwarding-sender-message.png" alt-text="The screen displaying a redirect rules that forwards sender's message to another address":::
     
-    <include the image redirect-rule-forwarding-sender-message.png>
-
     - An example of a redirect rule in Classic EAC is the below image.
 
    ![Screenshot shows the Rules page of the Mail flow area in the Exchange admin center. The On check box is selected for the Rule to redirect user Allie Bellew's mail.](../../media/de24b162-f8bc-416b-8a1f-4ad58c9f52c2.png)
@@ -225,13 +225,13 @@ If you have a hybrid configuration with an Microsoft 365 or Office 365 connector
 
 2. Choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
 
-<include the image choose-recipient-domain.png>
+:::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen":::
 
 3. Double-click the domain name.
 
 4. In the **Accepted Domain** screen, set the domain to **Internal Relay**.
 
-<include the image choosing-internal-relay.png>
+:::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay":::
  
 5. Click **Save**.
 
