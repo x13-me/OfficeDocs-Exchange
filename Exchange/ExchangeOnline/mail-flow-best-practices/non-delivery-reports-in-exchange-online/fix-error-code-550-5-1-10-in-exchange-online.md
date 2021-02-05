@@ -175,7 +175,7 @@ The recipient might have an Inbox rule that is forwarding messages to a problema
 
 3. From the user's profile page, select **Mail Settings** \> **Email forwarding** \> **Edit**.
 
-   ![Screenshot shows the user profile page for the user named Allie Bellew with  Email forwarding  set to Applied and an edit option available.](../../media/5762c3b7-5336-47c6-8a54-1b06fbff32c5.png)
+   ![Screenshot shows the user profile page for the user named Allie Bellew with  Email forwarding  set to the value Applied and an edit option available.](../../media/5762c3b7-5336-47c6-8a54-1b06fbff32c5.png)
 
 4. Turn off **Email forwarding** and select **Save**.
 
