@@ -179,7 +179,7 @@ The recipient might have an Inbox rule that is forwarding messages to a problema
 
 4. Turn off **Email forwarding** and select **Save**.
 
-   ![Screenshot shows the user profile page for the user named Allie Bellew with  Email forwarding  set to Applied and an edit option available.](../../media/96d62151-a740-414f-97b3-57b3e32ad76e.png)
+   ![Screenshot shows the user profile page for the user named Allie Bellew with  Email forwarding  set to the value Applied and an edit option being available.](../../media/96d62151-a740-414f-97b3-57b3e32ad76e.png)
 
 #### Forwarding using mail flow rules (email admin)
 
