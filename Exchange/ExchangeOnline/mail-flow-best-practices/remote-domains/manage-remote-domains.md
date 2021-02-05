@@ -118,6 +118,34 @@ For information about when to configure remote domains, descriptions of the avai
 
 5. Click **Save**. If you created a new remote domain, it is added to the list.
 
+## Remove remote domains
+
+**Notes:**
+
+- You can't remove the default remote domain.
+
+- When you remove a remote domain, the default remote domain settings will then apply to messages sent to that domain.
+
+- Removing a remote domain doesn't disable mail flow to the remote domain.
+
+### Use the EAC to remove a remote domain
+
+**New EAC**
+
+1. In the New EAC, go to **Mail flow** \> **Remote domains**.
+
+2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+
+3. In the warning dialog box, click **Confirm**
+
+**Classic EAC**
+
+1. In the Classic EAC, go to **Mail flow** \> **Remote domains**.
+
+2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+
+3. In the warning dialog box, select **Yes**.
+
 ### Use Exchange Online PowerShell to create and configure a remote domain
 
 After you create the remote domain, you can configure the settings (you can't create the remote domain and configure the settings in one step).
@@ -202,46 +230,6 @@ Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
 
 For detailed syntax and parameter information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain).
 
-### How do you know this worked?
-
-To verify that you've successfully created and configured a remote domain, use either of the following steps:
-
-- In the EAC, go to **Mail flow** \> **Remote domains**, select the remote domain, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to verify the settings.
-
-- In Exchange Online PowerShell, replace \<Remote Domain Name\> with the name of the remote domain and run the following command to verify the settings:
-
-  ```powershell
-  Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
-  ```
-
-## Remove remote domains
-
-**Notes:**
-
-- You can't remove the default remote domain.
-
-- When you remove a remote domain, the default remote domain settings will then apply to messages sent to that domain.
-
-- Removing a remote domain doesn't disable mail flow to the remote domain.
-
-### Use the EAC to remove a remote domain
-
-**New EAC**
-
-1. In the New EAC, go to **Mail flow** \> **Remote domains**.
-
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
-
-3. In the warning dialog box, click **Confirm**
-
-**Classic EAC**
-
-1. In the Classic EAC, go to **Mail flow** \> **Remote domains**.
-
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
-
-3. In the warning dialog box, select **Yes**.
-
 ### Use Exchange Online PowerShell to remove a remote domain
 
 To remove a remote domain, use the following syntax:
@@ -258,14 +246,4 @@ Remove-RemoteDomain -Identity Contoso
 
 For detailed syntax and parameter information, see [Remove-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/remove-remotedomain).
 
-### How do you know this worked?
 
-To verify that you've successfully removed a remote domain, do either of the following steps:
-
-- In the EAC, go to **Mail flow** \> **Remote domains** and verify the remote domain isn't listed.
-
-- In Exchange Online PowerShell, run the following command and verify that the remote domain isn't listed:
-
-  ```powershell
-  Get-RemoteDomain
-  ```
