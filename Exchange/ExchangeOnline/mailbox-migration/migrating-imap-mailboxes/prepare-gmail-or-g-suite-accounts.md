@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
 ms.reviewer: 
 description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Microsoft 365 or Office 365 will use with your Gmail address to make the connection.
-title: Prepare your Gmail or G Suite account for connecting to Outlook and Microsoft 365 or Office 365
+title: Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -35,19 +35,19 @@ manager: serdars
 
 ---
 
-# Prepare your Gmail or G Suite account for connecting to Outlook and Microsoft 365 or Office 365
+# Prepare your Gmail or Google Workspace (formerly G Suite) account for connecting to Outlook and Microsoft 365 or Office 365
 
 Before you [connect to your Gmail](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d) account from Outlook on the web, or [add a Gmail](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 
-You will also have to do this if your admin is planning to migrate your [Gmail](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Microsoft 365 or Office 365.
+You will also have to do this if your admin is planning to migrate your [Gmail](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7) or [Google Workspace Gmail](migrate-g-suite-mailboxes.md) to Microsoft 365 or Office 365.
 
-## Enable IMAP for Gmail and G Suite Accounts
+## Enable IMAP for Gmail and Google Workspace Accounts
 
 **Please make sure that you have enabled IMAP *before* you start the migration process.** Failure to do so will result in migration-related issues.
 
-To enable IMAP for Gmail or G Suite Accounts:
+To enable IMAP for Gmail or Google Workspace Accounts:
 
-1. Sign in to your Gmail/G Suite account using a supported browser.
+1. Sign in to your Gmail/Google Workspace account using a supported browser.
 
 2. Click the **gear icon** located at the top right of the screen.
 
@@ -78,7 +78,7 @@ To use an app password with Gmail, you have to first turn on 2-step verification
    ![Choose 2-step verification Off to start turning it on](../media/9c75b26b-e987-483b-af0a-82443801a428.PNG)
 
    > [!NOTE]
-   > If you have a google apps account and you can't see this setting, your admin has to first turn it on. For instructions (for admin), see [Enable 2-step verification for your G Suite users](enable-2-step-verification-for-google-apps.md).
+   > If you have a google apps account and you can't see this setting, your admin has to first turn it on. For instructions (for admin), see [Enable 2-step verification for your Google Workspace users](enable-2-step-verification-for-google-apps.md).
 
 5. On the **Signing in with 2-step verification** page, choose **Start setup**.
 

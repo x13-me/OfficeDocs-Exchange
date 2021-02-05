@@ -2,15 +2,37 @@
 
 
 
-## Week of January 11, 2021
+## Week of January 25, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/12/2021 | [Fix 'sender's submission quota exceeded' errors in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-for-submission-quota-exceeded-in-exchange-online) | modified |
-| 1/12/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
-| 1/14/2021 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
-| 1/15/2021 | [Configure mobile phones to access email](/Exchange/clients/exchange-activesync/configure-email-access?view=exchserver-2016) | modified |
+| 1/25/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 1/27/2021 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
+| 1/28/2021 | [Manage migration batches](/Exchange/mailbox-migration/manage-migration-batches) | modified |
+| 1/28/2021 | [Migration users status report](/Exchange/mailbox-migration/migration-users-status-report) | modified |
+| 1/28/2021 | [Perform a staged migration of email](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration) | modified |
+
+
+## Week of January 18, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/22/2021 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
+| 1/22/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 1/22/2021 | [Decide on a migration path](/Exchange/mailbox-migration/decide-on-a-migration-path) | modified |
+| 1/22/2021 | [Manage migration batches](/Exchange/mailbox-migration/manage-migration-batches) | modified |
+| 1/22/2021 | [Migrate consumer Google Workspace mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes) | modified |
+| 1/22/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
+| 1/22/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 1/22/2021 | [Track and Prevent Migration Data Loss](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
+| 1/22/2021 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
+| 1/22/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
+| 1/19/2021 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
+| 1/19/2021 | [Enable or disable single item recovery for a mailbox](/Exchange/recipients/user-mailboxes/single-item-recovery?view=exchserver-2016) | modified |
+| 1/19/2021 | [Enable or disable single item recovery for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-single-item-recovery-exchange-2013-help) | modified |
+| 1/21/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
 
 
 ## Week of January 04, 2021
@@ -44,22 +66,6 @@
 | 1/8/2021 | [Security and compliance for Exchange Online](/Exchange/security-and-compliance/security-and-compliance) | modified |
 
 
-## Week of December 28, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/28/2020 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
-| 12/28/2020 | [Hybrid deployments with multiple forests](/Exchange/hybrid-deployment/hybrid-with-multiple-forests) | modified |
-| 12/28/2020 | [Manage mail flow using a third-party cloud service with Exchange Online](/Exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) | modified |
-| 12/28/2020 | [Organization relationships in Exchange Online](/Exchange/sharing/organization-relationships/organization-relationships) | modified |
-| 12/28/2020 | [Running Windows antivirus software on Exchange servers](/Exchange/antispam-and-antimalware/windows-antivirus-software?view=exchserver-2016) | modified |
-| 12/28/2020 | [Using Basic authentication with Outlook for iOS and Android](/Exchange/clients/outlook-for-ios-and-android/use-basic-auth?view=exchserver-2016) | modified |
-| 12/29/2020 | [Enable or disable single item recovery for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) | modified |
-| 12/29/2020 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
-| 12/29/2020 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
-
-
 ## Week of December 21, 2020
 
 
@@ -67,3 +73,48 @@
 |------|------------|--------|
 | 12/21/2020 | [Track and Prevent Migration Data Loss](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
 | 12/21/2020 | [Feature permissions in Exchange Online](/Exchange/permissions-exo/feature-permissions) | modified |
+
+
+## Week of December 14, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/14/2020 | Hybrid Configuration wizard FAQs | removed |
+| 12/14/2020 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
+| 12/15/2020 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 12/15/2020 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
+| 12/15/2020 | [Active Directory schema changes in Exchange Server](/Exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016) | modified |
+| 12/15/2020 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
+| 12/15/2020 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
+| 12/15/2020 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
+| 12/16/2020 | [Configure Exchange to support delegated mailbox permissions in a hybrid deployment](/Exchange/hybrid-deployment/set-up-delegated-mailbox-permissions) | modified |
+| 12/16/2020 | [Message trace in the modern EAC](/Exchange/monitoring/trace-an-email-message/message-trace-modern-eac) | modified |
+| 12/16/2020 | [Run a message trace and view the results in the Exchange admin center](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
+| 12/16/2020 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 12/16/2020 | [Data loss prevention](/Exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) | modified |
+| 12/18/2020 | [Mail flow insights in the new EAC](/Exchange/monitoring/mail-flow-insights/mail-flow-insights) | modified |
+| 12/18/2020 | [Fix possible mail loop insight in the new EAC](/Exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight) | modified |
+| 12/18/2020 | [Fix slow mail flow rules insight in the new EAC](/Exchange/monitoring/mail-flow-insights/mfi-fix-slow-mail-flow-rules-insight) | modified |
+| 12/18/2020 | [New domains being forwarded email insight in the new EAC](/Exchange/monitoring/mail-flow-insights/mfi-new-domains-being-forwarded-email-insight) | modified |
+| 12/18/2020 | [New users forwarding email insight in the new EAC](/Exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight) | modified |
+| 12/18/2020 | [Mail flow reports in the new EAC](/Exchange/monitoring/mail-flow-reports/mail-flow-reports) | modified |
+| 12/18/2020 | [Auto forwarded messages report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
+| 12/18/2020 | [Email issues for priority accounts report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) | modified |
+| 12/18/2020 | [Inbound messages and Outbound messages reports in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) | modified |
+| 12/18/2020 | [Non-accepted domain report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-non-accepted-domain-report) | modified |
+| 12/18/2020 | [Non-delivery details report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-non-delivery-details-report) | modified |
+| 12/18/2020 | [Queued messages report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-queued-messages-report) | modified |
+| 12/18/2020 | [SMTP AUTH clients report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report) | modified |
+| 12/18/2020 | [Top domain mailflow status report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-top-domain-mailflow-status-report) | modified |
+
+
+## Week of January 11, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/12/2021 | [Fix 'sender's submission quota exceeded' errors in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-for-submission-quota-exceeded-in-exchange-online) | modified |
+| 1/12/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
+| 1/14/2021 | [Enhanced filtering for connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 1/15/2021 | [Configure mobile phones to access email](/Exchange/clients/exchange-activesync/configure-email-access?view=exchserver-2016) | modified |
