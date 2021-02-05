@@ -58,11 +58,41 @@ For information about when to configure remote domains, descriptions of the avai
 
 ### Use the EAC to create and configure a remote domain
 
-1. In the EAC, go to **Mail flow** \> **Remote domains**.
+**New EAC**
+
+1. In the New EAC, go to **Mail flow** \> **Remote domains**.
+
+2. Click **+ Add a remote domain**.
+
+3. In the **Name** box, enter a descriptive name for the domain.
+
+4. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
+
+5. Select the options you want:
+
+    - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
+    
+    - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
+    
+    - In the **Message reporting** section, specify:
+    
+       - Whether you want to allow delivery reports and non-delivery reports.
+
+       - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
+       
+    - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
+    
+    - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set by choosing from the **MIME character set** or **Non-MIME character set** drop-down list.
+
+6. Click **Save**. If you created a new remote domain, it is added to the list. 
+    
+**Classic EAC**
+
+1. In the Classic EAC, go to **Mail flow** \> **Remote domains**.
 
 2. To create a new domain:
 
-   1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
 
    2. In the **Name** box, enter a descriptive name for the domain.
 
@@ -196,9 +226,19 @@ To verify that you've successfully created and configured a remote domain, use e
 
 ### Use the EAC to remove a remote domain
 
-1. In the EAC, go to **Mail flow** \> **Remote domains**.
+**New EAC**
 
-2. Select a remote domain, and then select **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+1. In the New EAC, go to **Mail flow** \> **Remote domains**.
+
+2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+
+3. In the warning dialog box, click **Confirm**
+
+**Classic EAC**
+
+1. In the Classic EAC, go to **Mail flow** \> **Remote domains**.
+
+2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, select **Yes**.
 
