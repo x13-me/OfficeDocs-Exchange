@@ -187,11 +187,17 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
-   ![Screenshot shows the admin center with the Admin centers option expanded and Exchange selected.](../../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+<include the image microsoft-365-admin-center.png>
 
-2. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.
+2. In the Exchange admin center (EAC), that is, New EAC or Classic EAC, go to **Mail flow** \> **Rules**.
 
-3. Look for any redirect rules that might be forwarding the sender's message to another address. An example is shown below.
+3. Look for any redirect rules that might be forwarding the sender's message to another address. 
+
+    - An example of a redirect rule in New EAC is the below image.
+    
+    <include the image redirect-rule-forwarding-sender-message.png>
+
+    - An example of a redirect rule in Classic EAC is the below image.
 
    ![Screenshot shows the Rules page of the Mail flow area in the Exchange admin center. The On check box is selected for the Rule to redirect user Allie Bellew's mail.](../../media/de24b162-f8bc-416b-8a1f-4ad58c9f52c2.png)
 
@@ -213,7 +219,25 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 If you have a hybrid configuration with an Microsoft 365 or Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+**New Exchange admin center (EAC)**
+
+1. Open the New Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+
+2. Choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
+
+<include the image choose-recipient-domain.png>
+
+3. Double-click the domain name.
+
+4. In the **Accepted Domain** screen, set the domain to **Internal Relay**.
+
+<include the image choosing-internal-relay.png>
+ 
+5. Click **Save**.
+
+**Classic EAC**
+
+1. Open the Classic EAC. For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
 2. From the EAC, choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
 
