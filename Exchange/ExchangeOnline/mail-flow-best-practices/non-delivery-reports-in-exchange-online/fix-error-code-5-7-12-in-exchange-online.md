@@ -150,7 +150,12 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
     - Clear the check box for **Check if all senders are authenticated**.
     - Choose the radio button for **Selected senders**.
     - Click **+ Add sender**
+   
+<include the image specifying-senders.png>
+
     - In the **Accept messages from** screen, select and add the external senders and the all internal users group. 
+   
+<include the image confirming-the-specified-users.png>
     
    5. When you're finished, click **Confirm**.
 
