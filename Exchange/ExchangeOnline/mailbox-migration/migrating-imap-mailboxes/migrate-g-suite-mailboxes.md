@@ -42,7 +42,8 @@ Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP 
 
 You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
- **IMPORTANT**: IMAP migration will only migrate emails, not calendar, and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
+>![IMPORTANT]
+>IMAP migration will only migrate emails, not calendar, and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 Before Microsoft 365 or Office 365 can connect to Gmail or Google Workspace, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [Google Workspace users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
 
