@@ -20,11 +20,11 @@ manager: serdars
 
 # Message Trace FAQ
 
-This topic presents messaging questions that a user may have, along with possible answers. It also describes how to use the message trace tool in order to get those answers and troubleshoot specific mail delivery issues.
+This article presents messaging questions that a user may have, along with possible answers. It also describes how to use the message trace tool in order to get those answers and troubleshoot specific mail delivery issues.
 
 ## How long does it take to see results when running a message trace?
 
-- In the classic Exchange admin center (classic EAC), the search results appear immediately for messages that are less than 7 days old.
+- In the classic Exchange admin center (classic EAC), the search results appear immediately for messages that are less than seven days old.
 
 - In the Security & Compliance center and the modern Exchange admin center (modern EAC), the search results appear immediately for messages that are less than 10 days old.
 
@@ -74,7 +74,7 @@ Here are some possible reasons:
 
 - The message was sent for moderation and is awaiting approval or was rejected by the moderator.
 - The message was never sent.
-- The message is still being processed because there was a previous failure and the service is re-attempting delivery.
+- The message is still being processed because there was a previous failure and the service is reattempting delivery.
 - The message failed to be delivered to your mailboxes
 
   - Because the destination is not reachable
@@ -85,7 +85,7 @@ To find out what happened:
 
 [Run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. For example, you should know the sender and the intended recipient or recipients of the message, and the general time period when the message was sent.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)). Look for a delivery status of **Failed** or **Pending** to explain why the message was not received.
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)). Look for a delivery status of **Failed** or **Pending** to explain why the message was not received.
 
 Confirm that the message was sent, that it was successfully received by the service, that it was not filtered, redirected, or sent for moderation, and that it did not experience any delivery failures or delays.
 
@@ -103,7 +103,7 @@ To find out what happened:
 
 [Run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. For example, specify the recipient who received the message, set the delivery status to **Delivered**, and set the time period based on when the message was received.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
 ## Why didn't someone receive my message or why did I get this non-delivery report (also known as an NDR or bounce message)?
 
@@ -111,7 +111,7 @@ Possible reasons include the following:
 
 - The message was detected as spam.
 - The message was sent to quarantine due to a rule match.
-- The message was re-routed because a connector sent it to another destination.
+- The message was rerouted because a connector sent it to another destination.
 - The message was rejected:
 
   - By the malware filter
@@ -124,7 +124,7 @@ Possible reasons include the following:
 
 - The message was sent for moderation and is awaiting approval or was rejected by the moderator.
 - The message was never sent.
-- The message is still being processed because there was a previous failure and the service is re-attempting delivery.
+- The message is still being processed because there was a previous failure and the service is reattempting delivery.
 - The message failed to be delivered to the destination:
 
   - Because the destination is not reachable
@@ -137,9 +137,9 @@ To find out what happened:
 
 [Run a message trace](run-a-message-trace-and-view-results.md). Use as many search criteria as possible to narrow down the results. For example, you should know the sender and the intended recipient or recipients of the message, and the general time period when the message was sent.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
-Look for a delivery status of **Failed** or **Pending** to explain why the message was not delivered. Confirm that the message was sent, that it was successfully received by the service, that it was not filtered, redirected, or sent for moderation, and that it did not experience any delivery failures or delays. If the destination is not reachable, you can use the **To IP** to help troubleshoot connectivity issues.
+Look for a delivery status of **Failed** or **Pending** to explain why the message wasn't delivered. Confirm that the message was sent, that it was successfully received by the service, that it was not filtered, redirected, or sent for moderation, and that it did not experience any delivery failures or delays. If the destination is not reachable, you can use the **To IP** to help troubleshoot connectivity issues.
 
 ## Why is my message taking so long to arrive to its destination? Where is it in the pipeline?
 
@@ -154,9 +154,9 @@ To find out what happened:
 
 [Run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. For example, you should know the sender and the intended recipient or recipients of the message, and the general time period when the message was sent.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
-The events section will tell you why the message was not yet delivered. When viewing the events, the timestamp information will let you follow the message through the messaging pipeline, and tell you how long the service takes to process each event. The event details will also inform you if the message being delivered is extremely large or if the destination is not responsive.
+The events section will tell you why the message was not yet delivered. When viewing the events, the timestamp information will let you follow the message through the messaging pipeline, and tell you how long the service takes to process each event. The event details will also inform you if the message being delivered is large or if the destination is not responsive.
 
 ## Was a message marked as spam?
 
@@ -164,7 +164,7 @@ Messages can be marked as spam for several reasons. For example, the sending IP 
 
 To find out why a message was marked as spam:
 
-[Run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace), locate the message in the results, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+[Run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace), locate the message in the results, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
 When the content filter marks a message as spam, if it is sent to the Junk Email folder or the quarantine, it will have a status of **Delivered**. You can view the event details in order to see how the message arrived at its destination. For example, it may inform you that the message was determined to have a high spam confidence level, or that an advanced spam filtering option was matched. You will also be informed of the action that occurred as a result of the message being marked as spam, for example if it was sent to quarantine, stamped with an X-header, or if it was sent through the high risk delivery pool.
 
@@ -174,7 +174,7 @@ Messages are detected as malware when its properties, either in the message body
 
 To find out why a message was detected to contain malware, [run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. Set the delivery status to **Failed**.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
 If the message was not delivered because it was determined to contain malware, this information will be provided in the events section. For example, the following is a sample **Detail**: Malware: "*ZipBomb*" was detected in attachment *file*.*zip*. You will also be informed of the action that occurred as a result of the message containing malware, for example if the entire message was blocked or if all attachments were deleted and replaced with an alert text file.
 
@@ -182,13 +182,13 @@ If the message was not delivered because it was determined to contain malware, t
 
 To find out which mail flow rule (custom policy rule) or data loss prevention (DLP) policy (Exchange Online customers only) was applied to a message, [run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. Set the delivery status to **Failed**.
 
-View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
+View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than seven days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
 If the message was not delivered because its contents matched a rule, the events section will let you know the name of the mail flow rule that was matched. You will also be informed of the action that occurred as a result of the mail flow rule match, for example if the message was quarantined, rejected, redirected, sent for moderation, decrypted, or any number of other possible options. For information about how to create Exchange mail flow rules and set actions for them, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
 
-## When I run a message trace it returns rule ID-1. What does this mean?
+## When I run a message trace, it returns rule ID-1. What does this mean?
 
-Rule ID-1 is returned when the message trace encounters a mail flow rule that no longer exists. (The mail flow rule could have been modified or deleted after the original message was sent.)
+Rule ID-1 is returned when the message trace comes across a mail flow rule that no longer exists. (The mail flow rule could have been modified or deleted after the original message was sent.)
 
 ## Are there any known limitations or behavior clarifications that I should be aware of when using the message trace tool?
 
@@ -200,7 +200,7 @@ You should be aware of the following when using the message trace tool:
 
 - **MAIL FROM**: The message trace tool uses the MAIL FROM value presented at the initiation of the SMTP conversation as the Sender in a search, regardless of what the DATA section of the message shows. The message may show a Reply-to address or different From: or Sender values. If the email message was sent by a process and not by an email client, there is an increased likelihood that the sender in the MAIL FROM will not match the sender in the actual message.
 
-- **Mail flow rule updates**: When a message matches a mail flow rule, the rule ID is stored in the message trace and real time reporting databases. If you trace one of these messages, or drill down on rule details in a report, the message trace and real time reporting user interfaces dynamically pull the current rule information from the hosted services network based on the rule ID in the reporting database. If you have changed the attributes of that particular rule since the message was processed (changed it from Reject to Allow, for example), the rule ID stays the same in the message trace and real time reporting returned results, but the Exchange admin center will show the new mail flow rule properties. You can use the auditing reports feature in order to determine when the rule was changed and the properties that were changed.
+- **Mail flow rule updates**: When a message matches a mail flow rule, the rule ID is stored in the message trace and real time reporting databases. If you trace one of these messages, or drill down on rule details in a report, the message trace, and real time reporting user interfaces dynamically pull the current rule information from the hosted services network based on the rule ID in the reporting database. If you have changed the attributes of that particular rule since the message was processed (changed it from Reject to Allow, for example), the rule ID stays the same in the message trace and real time reporting returned results, but the Exchange admin center will show the new mail flow rule properties. You can use the auditing reports feature in order to determine when the rule was changed and the properties that were changed.
 
 - **Spam-filtered messages**: When the content filter marks a message as spam, if it is sent to the Junk Email folder or the quarantine, it will have a status of **Delivered**. Drill down to the event details in order to see how the message arrived at its destination.
 
