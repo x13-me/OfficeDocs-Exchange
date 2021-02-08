@@ -20,7 +20,7 @@ manager: serdars
 
 # Enable or disable single item recovery for a mailbox
 
-You can use Exchange Online PowerShell to enable or disable single item recovery on a mailbox. In Exchange Online, single item recovery is enabled by default when a new mailbox is created. In Exchange Server, single item recovery is disabled when a mailbox is created. If single item recovery is enabled, messages that are permanently deleted (purged) by the user are retained in the Recoverable Items folder of the mailbox until the deleted item retention period expires. This lets an administrator recover messages purged by the user before the deleted item retention period expires. Also, if a message is changed by a user or a process, copies of the original item are also retained when single item recovery is enabled.
+You can use Exchange Online PowerShell to enable or disable single item recovery on a mailbox. In Exchange Online, single item recovery is enabled by default when a new mailbox is created. In Exchange Server, single item recovery is disabled when a mailbox is created. If single item recovery is enabled, messages that are permanently deleted (purged) by the user are retained in the Recoverable Items folder of the mailbox until the deleted item retention period expires. This lets an administrator recover messages purged by the user before the deleted item retention period expires.
 
 ## What do you need to know before you begin?
 
