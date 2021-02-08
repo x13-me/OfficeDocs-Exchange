@@ -80,7 +80,7 @@ Determine what version of TLS your device supports by checking the device guide 
 
 #### How SMTP AUTH client submission works
 
-The following diagram gives you a conceptual overview of what your environment will look like.
+The following diagram gives you a conceptual overview of what you're environment will look like.
 
 ![Shows how a multifunction printer connects to Microsoft 365 or Office 365 using SMTP client submission.](../media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
 
@@ -296,31 +296,31 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
  
 7. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
 
-#### To create a connector on Classic Exchange admin center
+#### In Classic Exchange admin center (EAC)
 
-   1. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
+    1. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
-      ![Choose from your organization's email server to Microsoft 365 or Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
+![Choose from your organization's email server to Microsoft 365 or Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
 
-      Click **Next**, and give the connector a name.
+    2. Click **Next**, and give the connector a name.
 
-   2. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+    3. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
 
-   3. Leave all the other fields with their default values, and select **Save**.
+    4. Leave all the other fields with their default values, and select **Save**.
 
-#### To create a connector on New Exchange admin center
+**In New EAC**
 
-   1. To start the wizard, click the plus symbol **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
+    1. To start the wizard, click **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot:
    
-<include the image from-your-server-to-365.png>
+:::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
 
-   2. Click **Next**, and give the connector a name.
+    2. Click **Next**, and give the connector a name.
    
-   3. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+    3. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
        
-   4. Leave all the other fields with their default values, and select **Save**.
+    4. Leave all the other fields with their default values, and select **Save**.
        
-   5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
+    5. On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
    
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
