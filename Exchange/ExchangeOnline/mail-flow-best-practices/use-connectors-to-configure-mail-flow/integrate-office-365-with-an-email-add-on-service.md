@@ -114,9 +114,7 @@ The important settings for the connector are:
 
 9. On the **Validation email** screen, specify an email address of an active mailbox on your server and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
 
-
-
-<include the image validation-email-screen.png>
+:::image type="content" source="../../media/validation-email-screen.png" alt-text="The screen on which the user can enter the validation email":::
 
 10. Click **Validate**. A progress window appears.
 
@@ -124,7 +122,9 @@ The important settings for the connector are:
 
 12. On the **Review connector** screen, verify the settings, and then click **Create connector**.
 
-The outbound connecgtor is created.
+:::image type="content" source="../../media/connector-settings-display.png" alt-text="The screen on which the settings of the connector are displayed":::
+
+The outbound connector is created.
 
 **Classic EAC**
 
