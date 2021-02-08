@@ -86,7 +86,11 @@ When an organization decides to standardize how users access Exchange data, usin
 > [!NOTE]
 > After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
 > 
-> When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access), then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates in Outlook for iOS and Android, Exchange Online mobile device access rules (allow, block, or quarantine) are skipped if there are any Azure Active Directory conditional access policies applied to the user that include:
+> - Cloud app condition: Exchange Online or Office 365
+> - Device platform condition: iOS and/or Android
+> - Client apps condition: Mobile apps and desktop client
+> - One of the following Grant access controls: [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 > 
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
