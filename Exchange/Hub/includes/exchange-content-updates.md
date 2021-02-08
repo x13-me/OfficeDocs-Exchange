@@ -2,6 +2,24 @@
 
 
 
+## Week of February 01, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/2/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
+| 2/2/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 2/3/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 2/4/2021 | [Enable or disable single item recovery for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) | modified |
+| 2/4/2021 | [Account setup with modern authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication) | modified |
+| 2/4/2021 | [Enable 2-step verification for your Google apps users](/Exchange/mailbox-migration/migrating-imap-mailboxes/enable-2-step-verification-for-google-apps) | modified |
+| 2/4/2021 | [Migrating your Outlook.com account to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-your-outlook-com-account) | modified |
+| 2/4/2021 | [Message Trace FAQ](/Exchange/monitoring/trace-an-email-message/message-trace-faq) | modified |
+| 2/4/2021 | [Use mail flow rules to inspect message attachments in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments) | modified |
+| 2/4/2021 | [Create a holiday schedule in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule) | modified |
+| 2/4/2021 | [Configuration notes for supported session border controllers in Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | modified |
+
+
 ## Week of January 25, 2021
 
 
