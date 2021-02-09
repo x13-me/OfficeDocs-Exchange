@@ -65,9 +65,11 @@ The domain details dialox box is displayed.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
 
-:::image type="content" source="../../media/internal-relay-chosen.png" alt-text="The screen showing the selection of the internal relay":::
+:::image type="content" source="../../media/choosing-internal-relay-old-eac.png" alt-text="The screen on which it is ensured that Internal Relay type is chosen":::
 
-3. Select **Match subdomains for this domain for sending and receiving emails**.
+3. Select **Accept mail for all subdomains**.
+
+:::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
 
 ## Use the EAC to add the domain to your outbound connector
 
