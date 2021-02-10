@@ -28,7 +28,7 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account.
 
-2. In the Microsoft 365 admin center, navigate to **Admin centers** tile in the left navigation panel and then choose **Exchange**.
+2. In the left navigation pane, navigate to **Admin centers** > **Exchange**.
 
     ![New EAC](media/EAC-selection.png)
 
