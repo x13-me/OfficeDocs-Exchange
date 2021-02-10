@@ -1,5 +1,5 @@
 ---
-title: "New domains being forwarded email insight in the modern EAC"
+title: "New domains being forwarded email insight in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,14 +10,14 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the New domains being forwarded email insight in the modern Exchange admin center to investigate when users in their organization are forwarding messages to external domains that have never been been forwarded to."
+description: "Admins can learn how to use the New domains being forwarded email insight in the new Exchange admin center to investigate when users in their organization are forwarding messages to external domains that have never been been forwarded to."
 ---
 
-# New domains being forwarded email insight in the modern EAC
+# New domains being forwarded email insight in the new EAC
 
 Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains (new domains).
 
-The **New domains being forwarded email** insight in the Insights dashboard in the modern Exchange admin center (modern EAC) notifies you when users in your organization are forwarding messages to new domains.
+The **New domains being forwarded email** insight in the Insights dashboard in the new Exchange admin center (new EAC) notifies you when users in your organization are forwarding messages to new domains.
 
 ![New domains being forwarded email insight in the Insights dashboard](../../media/mfi-new-domains-being-forwarded-email-insight.png)
 
@@ -31,4 +31,4 @@ If you suspect the accounts have been compromised, see [Responding to a compromi
 
 ## Related topics
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the modern Exchange admin center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the new Exchange admin center](mail-flow-insights.md).
