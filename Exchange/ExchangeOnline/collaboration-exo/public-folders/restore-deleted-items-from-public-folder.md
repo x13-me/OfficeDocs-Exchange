@@ -41,7 +41,7 @@ The user restoring items from the public folder must have atleast the `Author` p
 > [!NOTE]
 > To enable the **Recover Deleted Items** option for non-mail type (for example: Calendar, Contact, Tasks) of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
 
-See also
+## Related articles
 
 [Recover a deleted public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/recover-deleted-public-folder-mailbox)
 
