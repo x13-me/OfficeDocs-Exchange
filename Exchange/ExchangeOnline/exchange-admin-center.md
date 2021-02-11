@@ -47,23 +47,23 @@ Here's what the new Exchange admin center looks like.
 
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
-1. You can also personalize your dashboard. To do that, click **+ Add card** on top of the homepage and drag any card onto the dashboard to the location you want.
+1. To personalize your dashboard, click **+ Add card** on top of the homepage and drag any card onto the dashboard to the location you want.
 
-2. Click **What's New?** to learn about the new updates in new Exchange admin center.
+2. To learn about the new updates in the new Exchange admin center, click **What's New?**.
 
-3. Click **My account tile** to sign out of the new Exchange admin center and sign in as a different user. You can also sign in with another account.
+3. To sign out of the new Exchange admin center and sign in as a different user, click **My account tile**. You can also sign in with another account.
 
-4. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
+4. To learn about the new Exchange admin center, in **Training & guide**, select **Training for admins** for a video tutorial and **Documentation**.
 
-5. Click ![get help](media/get-help-icon.PNG) , if you need help from Microsoft 365 Support Assistant.
+5. To get help from Microsoft 365 Support assistant, click ![get help](media/get-help-icon.PNG).
 
-6. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center. It's not necessary to provide your email ID. But by clicking on the checkbox **You can contact me about this feedback** and providing your email ID helps the team to resolve your concerns faster.
+6. To give feedback to help improve the new Exchange admin center, click ![give feedback](media/give-feedback-icon.PNG). While it's not necessary to provide your email ID, you can click **You can contact me about this feedback** checkbox and provide your email ID to help the team to resolve your concerns faster.
 
 ![New EAC feature pane](media/new-EAC-homepage-feature-pane.png)
 
 ### Feature pane
 
-Here are the features you'll find in the left-hand navigation.
+Here are the features available in the left-hand navigation.
 
 |**Area**|**What you do here**|
 |:-----|:-----|
