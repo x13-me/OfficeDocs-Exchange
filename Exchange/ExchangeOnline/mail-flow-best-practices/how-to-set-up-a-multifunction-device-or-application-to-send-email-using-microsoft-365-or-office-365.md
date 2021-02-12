@@ -18,7 +18,7 @@ f1.keywords:
 - CSH
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: serdarsg
 localization_priority: Priority
 
 ---
@@ -290,10 +290,16 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 > [!NOTE]
 > On clicking **Exchange**, the new Exchange admin center is launched. If you want to navigate to the Classic Exchange admin center, click **Classic Exchange admin center** on the left pane of the new Exchange admin center home page.
 
-6. In the new Exchange admin center, go to **Mail flow** \> **Connectors**. The **Connectors** page is depicted in the image below.
+6. In the Exchange admin center, go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the image below.
+
+(**Connectors** screen in New EAC is shown in the image below)
 
 :::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
- 
+
+(**Connectors** screen in Classic EAC is shown in the image below)
+
+:::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed":::
+
 7. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
 
 **In Classic Exchange admin center (EAC)**
