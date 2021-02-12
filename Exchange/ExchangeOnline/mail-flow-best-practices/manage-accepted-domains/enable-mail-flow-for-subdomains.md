@@ -52,7 +52,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
-<include the image setting-internal-relay.png>
+:::image type="content" source="../../media/setting-internal-relay.png" alt-text="The screen on which the INTERNAL RELAY option is chosen":::
 
 3. Select **Accept mail for all subdomains**.
 
