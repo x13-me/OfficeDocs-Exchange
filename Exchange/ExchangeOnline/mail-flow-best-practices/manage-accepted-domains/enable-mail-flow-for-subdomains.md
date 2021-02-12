@@ -52,6 +52,8 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
+<include the image setting-internal-relay.png>
+
 3. Select **Accept mail for all subdomains**.
 
 :::image type="content" source="../../media/setting-email-acceptance-for-all-subdomains.png" alt-text="The screen on which the user configures acceptance of emails from all subdomains":::
