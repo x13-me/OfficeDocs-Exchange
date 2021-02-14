@@ -2,6 +2,19 @@
 
 
 
+## Week of February 08, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/8/2021 | [Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes) | modified |
+| 2/8/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 2/10/2021 | [Restore deleted items from public folder](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | added |
+| 2/10/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 2/10/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 2/11/2021 | [Restore deleted items from public folder](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | modified |
+
+
 ## Week of February 01, 2021
 
 
