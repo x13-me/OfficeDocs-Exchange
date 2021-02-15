@@ -98,20 +98,20 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/managing-mail-flow-settings.png" alt-text="The screen on which the option to manage mail flow settings is available":::
 
-3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+3. In the **Manage mail flow settings** screen, click **Edit** in the **Message delivery restriction** pane.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-4. In the Message delivery restrictions dialog box that opens, configure the following settings in the **Accept messages from** section:
+4. In the **Message delivery restrictions** screen, configure the following settings in the **Accept messages from** section:
   - Clear the check box for **Check if all senders are authenticated**
   - Select **Selected senders**.
   - Click **+ Add sender**.
-  
-<include the image message-delivery-restrictions.png >
+
+:::image type="content" source="../../media/message-delivery-restrictions.png" alt-text="The screen on which settings related to message delivery are configured":::
 
   - In the **Accept messages from** dialog box that opens, check the check box of the internal-senders group and the specific external users whom you want to add.
 
-<include the image setting-senders.png>
+:::image type="content" source="../../media/setting-senders.png" alt-text="The screen on which the senders to be added to the group are chosen":::
 
   - Click **Confirm**.
 
