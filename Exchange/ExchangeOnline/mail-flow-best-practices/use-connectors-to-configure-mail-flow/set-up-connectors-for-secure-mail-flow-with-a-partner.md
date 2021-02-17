@@ -52,7 +52,9 @@ Review this section to help you determine the specific settings you need for you
 
 ## Set up a connector to apply security restrictions to mail sent from Microsoft 365 or Office 365 to your partner organization
 <a name="setupaconnectortopartner"> </a>
-This section describes the process of setting up a connector in both the New Exchange admin center (EAC) and the Classic EAC. Before you set up a new connector, check for any connectors that are already listed here for your organization. For example, if you already have a connector set up for a partner organization, you'll see it listed. Ensure you don't create duplicate connectors for a single organizational partner; when this happens, it can cause errors, and your mail might not be delivered.
+This section describes the process of setting up a connector in both the New Exchange admin center (EAC) and the Classic EAC. Before you set up a new connector, do the following:
+
+- Check for any connectors that are already listed here for your organization. For example, if you already have a connector set up for a partner organization, you'll see it listed. Ensure you don't create duplicate connectors for a single organizational partner; when this happens, it can cause errors, and your mail might not be delivered.
 
 If any connectors already exist for your organization, you can see them listed here, as shown in the below screenshots for New EAC and Classic EAC, respectively.
 
@@ -60,49 +62,48 @@ If any connectors already exist for your organization, you can see them listed h
 
 ![Microsoft 365 and Office 365 connectors partner organization examples](../../media/9e8f0035-24b6-4d62-aecf-17f740530e31.png)
 
-Below are the procedures to set up a new connector.
+- Navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
 
-> [!NOTE]
-> Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
+Below are the procedures to set up a new connector.
 
 ### For New EAC
 
 1. Click **Mail flow** and then **Connectors**. 
 
-1. On the **Connectors** screen, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
+2. On the **Connectors** screen, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
 
 :::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
 
-2. Click **Next**.
+3. Click **Next**.
 
-3. On the **Connector name** screen, provide a name for the connector and click **Next**.
+4. On the **Connector name** screen, provide a name for the connector and click **Next**.
 
-4. On the **Use of connector** screen, choose any one of the two options and click **Next**.
+5. On the **Use of connector** screen, choose any one of the two options and click **Next**.
 
 > [!NOTE]
 > If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, provide its name.
 
-5. In the **Routing** screen, choose any of the two options and click **Next**.
+6. In the **Routing** screen, choose any of the two options and click **Next**.
 
 > [!NOTE]
 > If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the domain name of the smart host in the text box.
 
-6. In the **Security restrictions** screen, check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+7. In the **Security restrictions** screen, check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
-7. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
+8. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
 
-8. Click **Next**.
+9. Click **Next**.
 
-9. In the **Validation email** screen, provide an email address that is part of the mailbox in your domain server, and click **Next**.
+10. In the **Validation email** screen, provide an email address that is part of the mailbox in your domain server, and click **Next**.
 
-10. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
+11. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
 
 The connector is created.
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-3. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+12. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 
@@ -125,14 +126,20 @@ You can set up a connector to apply security restrictions to email that your par
 
 1. To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the below screenshot:
 
-:::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
+<include the image home-screen-to-add-a-new-connector.png>
+
 
 2. Select the **Partner organization** radio button under **Connection from**, and click **Next**.
 
 > [!NOTE]
 > Once you select the **Partner organization** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
 
+:::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
+
+
 3. In the **Connector name** screen, provide a name for the connector and click **Next**.
+
+<include the image providing-name-to-connector.png>
 
 4. In the **Authenticating sent email** screen, choose one of the two options, and click **Next**.
 
@@ -140,17 +147,25 @@ You can set up a connector to apply security restrictions to email that your par
 > If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, provide its name.
 >If you choose the second option, provide the IP address of the email server of the partner organization.
 
+<include the image screen-for-365-to-identify-partner-org.png>
+
 5. In the **Security restrictions** screen, check the check box for **Reject email messages if they aren't sent over TLS**.
 
 > [!NOTE]
 > It is optional to choose the option of **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name**. If you choose this option, provide the domain name of the partner organization.
 
-6. Check the check box for **Reject email messages if they aren't sent from within this IP address range**.
+<include the image security-restrictions-screen.png>
+
+6. Check the check box for **Reject email messages if they aren't sent from within this IP address range**, and provide the IP address range.
 
 > [!IMPORTANT]
 >You can choose this option in addition to the option specified in Step 5; Else, you can choose either this option or the one in Step 5. Choosing atleast one of these options is mandatory.
 
+<include the image defining-ip-address-range.png>
+
 7. In the **Review connector** screen, review the settings you have configured and click **Create connector**.
+
+<include the image creating-a-connector.png>
 
 The connector is created.
 
