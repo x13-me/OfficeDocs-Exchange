@@ -126,7 +126,8 @@ You can set up a connector to apply security restrictions to email that your par
 
 1. To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the below screenshot:
 
-<include the image home-screen-to-add-a-new-connector.png>
+:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
+
 
 
 2. Select the **Partner organization** radio button under **Connection from**, and click **Next**.
@@ -146,6 +147,7 @@ You can set up a connector to apply security restrictions to email that your par
 > [!NOTE]
 > If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, provide its name.
 >If you choose the second option, provide the IP address of the email server of the partner organization.
+
 
 <include the image screen-for-365-to-identify-partner-org.png>
 
