@@ -26,7 +26,7 @@ When the steps below are completed, a mail flow rule will redirect messages addr
 
 The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where received messages originate from (such as a mailbox in your Microsoft 365 or Office 365 organization), the type of organization to which the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors](use-connectors-to-configure-mail-flow.md).
 
-Below are the procedures for creating Outbound connectors in the New Exchange admin center (EAC) and Classic EAC.
+The subsequent two procedures are for creating Outbound connectors in the New Exchange admin center (EAC) and Classic EAC, respectively.
 
 ### New EAC
 
@@ -93,10 +93,10 @@ Below are the procedures for creating Outbound connectors in the New Exchange ad
 
 Now that we've created a connector, we need to create a mail flow rule that'll send mail to it based on the criteria you define. There are many conditions you can select from to control when messages should be sent to the connector.
 
-To create a mail flow rule in the New and Classic EACs, perform the following steps:
+To create a mail flow rule in EAC, perform the following steps:
 
 > [!NOTE]
-> The below procedure is the same for the New and Classic EACs.
+> The below procedure is appicable for New and Classic EACs.
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 

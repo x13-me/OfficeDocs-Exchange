@@ -133,17 +133,27 @@ If the connectors are already listed, you don't need to set them up again, but y
 
 If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, or if no connector is listed from your organization's mail server to Microsoft 365 or Office 365, set up a connector using the wizard, as described in the procedures below.
 
+> [!NOTE]
+> Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
+
 - **For New EAC**
 
-1. To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **Mail flow**, and click **Connectors**. 
+1. Click **Mail flow**, and click **Connectors**. 
  
-2. Click **+ Add a connector**. On the first screen, choose the options that are depicted in the following screenshot.
+2. On the **Connectors** screen, click **+ Add a connector**. The screen that then appears is shown in the following screenshot.
+
+:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
+
+3. Choose the following options:
+
+    - **Office 365** under the **Connection from** pane
+    - **Your organization's email server** under the **Connection to** pane
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
 3. Click **Next**. On the **Connector name** screen, give the connector a name, and click **Next**.
 
-4. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**. (See the below image.)
+4. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
 
 > [!NOTE]
 > For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
@@ -190,7 +200,7 @@ There are two steps for this:
 
 #### For New EAC
 
-1.  To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the New EAC. Next, click **Mail flow**, and click **Connectors**.
+1.  Click **Mail flow**, and click **Connectors**.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
 
@@ -198,10 +208,12 @@ There are two steps for this:
 > If any connectors already exist for your organization, it is listed on clicking **Connectors**.
  
 2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
-   
-:::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
+
+:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
 3. Select the **Your organization's email server** radio button under **Connection from**.
+
+:::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
 
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.

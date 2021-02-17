@@ -290,13 +290,9 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 > [!NOTE]
 > On clicking **Exchange**, the new Exchange admin center is launched. If you want to navigate to the Classic Exchange admin center, click **Classic Exchange admin center** on the left pane of the new Exchange admin center home page.
 
-6. In the Exchange admin center, go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the image below.
-
-(**Connectors** screen in New EAC is shown in the image below)
+6. In the Exchange admin center (EAC), go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the subsequent two images below, for New EAC and Classic EAC, respectively.
 
 :::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
-
-(**Connectors** screen in Classic EAC is shown in the image below)
 
 :::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed":::
 
@@ -310,7 +306,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 - Click **Next**, and give the connector a name.
 
-- On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+- On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from Step-1.
 
 - Leave all the other fields with their default values, and select **Save**.
 
@@ -322,12 +318,10 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 - Click **Next**, and give the connector a name.
    
-- On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+- On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses which belong exclusively to your organization**, and add the IP address from step 1.
        
-- Leave all the other fields with their default values, and select **Save**.
-       
-- On the next screen, that is, **Routing** screen, provide the IP address of the host computer to which Office 365 will deliver email messages.
-   
+- Click **Save**.
+
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
 9. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.

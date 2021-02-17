@@ -62,11 +62,14 @@ If any connectors already exist for your organization, you can see them listed h
 
 Below are the procedures to set up a new connector.
 
+> [!NOTE]
+> Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
+
 ### For New EAC
 
-To create a connector in Microsoft 365 or Office 365, select **Admin**, and then select **Exchange** to go to the New EAC. Next, select **Mail flow** and then **Connectors**. 
+1. Click **Mail flow** and then **Connectors**. 
 
-1. To start the wizard, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
+1. On the **Connectors** screen, click **+Add a connector**. On the first screen, choose the options as shown in the following screenshot:
 
 :::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
 
@@ -190,7 +193,7 @@ For details on this procedure, see The **For New EAC** subsection in the **Set u
 
 **For Classic EAC**
 
-Navigate to the Classic EAC portal by clicking **Classic Exchange admin center**. Select **mail flow** and then **connectors**.
+From the new EAC portal, navigate to the Classic EAC portal by clicking **Classic Exchange admin center**. Select **mail flow** and then **connectors**.
 
 To start the wizard, click the plus symbol **+**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot:
 
@@ -281,8 +284,6 @@ Mail flow from a third-party email service to Microsoft 365 or Office 365 works 
 > Ensure you identify the full range of IP addresses that your third-party email service sends mail from. If you miss an IP address, or if one gets added without your knowledge, some mails will not be delivered to your organization.
 
 In the New EAC, to restrict all mails sent to your organization from a specific IP address or address range, use the options during setup as shown in the following screenshots:
-
-:::image type="content" source="../../media/connector-partner-to-365-encryption-tls.png" alt-text="The screen on which the sender's domain name is configured to be used":::
 
 :::image type="content" source="../../media/specific-internet-ip-address.png" alt-text="The screen on which there is a configuration to apply the settings globally":::
 

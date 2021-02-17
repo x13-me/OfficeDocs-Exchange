@@ -68,13 +68,13 @@ The important settings for the connector are:
 
 ### Use the Exchange admin center (EAC) to create the outbound connector to the email add-on service
 
-**New Exchange EAC**
+To create an outbound connector from the EAC, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
 
 1. Go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
-2. On the **Add a connector** screen, configure these settings:
+2. On the **New connector** screen, configure these settings:
 - **Connection from**: **Office 365**
 - **Connection to**: **Your organization's email server**
 
@@ -126,7 +126,9 @@ The important settings for the connector are:
 
 The outbound connector is created.
 
-**Classic EAC**
+**From Classic EAC**
+
+To create an outbound connector from the Classic EAC, You need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
 
 1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
@@ -198,10 +200,10 @@ The rule routes messages from internal senders to the outbound connector that yo
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-To create a mail flow rule in the New and Classic EACs, perform the following steps:
+To create a mail flow rule in the EAC, perform the following steps:
 
 > [!NOTE]
-> The below procedure is the same for the New and Classic EACs.
+> The below procedure is applicable for both New EAC and Classic EAC.
 
 1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
@@ -263,7 +265,7 @@ The important settings for the connector are:
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
-2. On the **Add a connector** screen, configure these settings:
+2. On the **New connector** screen, configure these settings:
 
 - **Connection from**: **Your organization's email server**
 - **Connection to**: **Office 365**
