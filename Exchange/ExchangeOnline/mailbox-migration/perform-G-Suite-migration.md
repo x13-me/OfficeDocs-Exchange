@@ -206,6 +206,9 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
 
+> [!IMPORTANT]
+> Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
+
 1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
 
 2. Click **New Migration batch** and follow the instructions in the details pane.
@@ -271,9 +274,6 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
 ## Start a Google Workspace migration batch with the Classic Exchange admin center (Classic EAC)
 
-> [!IMPORTANT]
-> Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
-
 1. In the Exchange Admin center, click **recipients**, and then click **migration**.
 
 2. Click "New"  ![New](../media/ITPro_EAC_AddIcon.gif) to create a new migration batch, and then click **Migrate to Exchange Online**.
@@ -309,7 +309,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
+9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
