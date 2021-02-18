@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."
-title: Migrate consumer Google Workspace mailboxes to Microsoft 365 or Office 365 
+title: Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365 
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -42,7 +42,8 @@ Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP 
 
 You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
- **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
+>[!IMPORTANT]
+>IMAP migration will only migrate emails, not calendar, and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 Before Microsoft 365 or Office 365 can connect to Gmail or Google Workspace, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [Google Workspace users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
 
@@ -65,7 +66,7 @@ Domain verification is a task you will go through as you set up Microsoft 365 or
 
 ### Step 2: Add users to Microsoft 365 or Office 365
 
-You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
+You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users, you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
 
 > [!IMPORTANT]
 > At this point you have verified that you own the domain and created your Google Workspace users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-microsoft-365-or-office-365).
@@ -82,15 +83,15 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
 2. After you're signed in, choose **Users**.
 
-    ![List of users in the Google admin center.](../media/1e0d579d-8629-44cb-9f1d-e04642899889.PNG)
+    ![List of users in the Google admin center.](../../media/google-users-im11.png)
 
 3. Select each user to identify each user's email address. Write down the address.
 
-    ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
+    ![User details in the Google apps admin center](../../media/google-users-account-im12.png)
 
 4. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Users** \> **Active users**. Keep an eye on the **Username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
-    ![Username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
+    ![Username column in the Microsoft 365 admin center.](../../media/microsoft365-accounts-im12.png)
 
 5. Start Excel.
 
@@ -102,27 +103,27 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
    - **Password** in cell C1.
 
-    ![Cell headings in the Excel migration file.](../media/acec70dd-4789-46b5-aa15-74e597dbe71c.JPG)
+    ![Cell headings in the Excel migration file.](../../media/excel-im14.png)
 
 7. Next enter the email address, username, and app password for each mailbox you want to migrate. Enter one mailbox per row.
 
    - **Column A** is the email address of the Microsoft 365 or Office 365 mailbox. This is what's shown in the **username** column in **Users** \> **Active users** in the Microsoft 365 admin center.
 
-   - **Column B** is the sign-in name for the user's Gmail mailbox (for example, alberta@contoso.com).
+   - **Column B** is the sign-in name for the user's Gmail mailbox (for example, aaronharper@lemonteatest.com).
 
    - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from Google Workspace mailboxes using the Microsoft 365 admin center](#migration-from-google-workspace-mailboxes-using-the-microsoft-365-admin-center).
 
-    ![A completed sample migration file.](../media/f2b5e8b7-b9c2-402c-b2bb-2e3a5a4eb64c.JPG)
+    ![A completed sample migration file.](../../media/excel-im15.png)
 
 8. Save the file as a CSV file type, and then close Excel.
 
-    ![Shows the Save As CSV option in Excel.](../media/25ff1f1f-5e5a-46dc-95d3-2ff42d819a4a.gif)
+    ![Shows the Save As CSV option in Excel.](../../media/excel-im16.png)
 
 ### Step 4: Connect Microsoft 365 or Office 365 to Gmail
 
-To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes. You create the migration endpoint in this task.
+To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes. Do the following to create the migration endpoint in Classic Exchange admin center.
 
-1. Go to the Exchange admin center.
+1. Go to the Classic Exchange admin center.
 
 2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
@@ -142,9 +143,15 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 8. Click **New** to create the migration endpoint.
 
-### Step 5: Create a migration batch and start migrating Gmail mailboxes
+> [!NOTE]
+> For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch.
+
+### Step 5: Create a migration batch and start migrating Gmail mailboxes in Classic Exchange admin center (Classic EAC)
 
 You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 or Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Microsoft 365 or Office 365 to Gmail](#step-4-connect-microsoft-365-or-office-365-to-gmail).
+
+> [!NOTE]
+> **IMAP migration** is not available for new EAC.
 
 > [!TIP]
 > It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
@@ -206,7 +213,9 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 #### Verify that the migration worked
 
-- In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
+- In the new Exchange admin center, go to **Migration** > **Batch**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
+
+- In the Classic Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
 
 - If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
@@ -274,17 +283,13 @@ When you delete the migration batch, the migration service cleans up any records
 
 #### Delete a migration batch
 
-1. In the Exchange admin center, go to **Recipients** \> **Migration**.
+1. In the new Exchange admin center, go to **Migration** > **Batch**. On the migration dashboard, select the batch, and then click **Delete**.
 
-2. On the migration dashboard, select the batch, and then click **Delete**.
-
-#### How do you know this worked?
-
-- In the Exchange admin center, navigate to **Recipients** \> **Migration**. Verify that the migration batch no longer is listed on the migration dashboard.
+2. In the Classic Exchange admin center, go to **Recipients** \> **Migration**. On the migration dashboard, select the batch, and then click **Delete**.
 
 ### Step 8: Users migrate their calendar and contacts
 
-After your migrate their email, users can import their Gmail calendar and contacts to Outlook:
+After migration of mailboxes, you can import your Gmail calendar and contacts to Outlook:
 
 - [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
 

@@ -201,7 +201,7 @@ Here are some third-party migration tools and partners that can assist with Exch
 
 - **[Quest](https://www.quest.com/)**: Provider of on-premises and hosted migration and coexistence software, including pre-migration analysis and complete user and application coexistence. Full-featured migrations from on-premises Microsoft Exchange, IBM Domino, Novell GroupWise, Zimbra and other environments to Microsoft 365, Office 365, Exchange Online, and SharePoint Online.
 
-- **[Transvault](http://www.transvault.com/)**: Provider of migration solutions to Exchange Online.
+- **[Transvault](https://www.transvault.com/cloud-office-migrations/email-archive-migrations/)**: Provider of cloud office migration solutions to Microsoft 365 from Exchange and Notes. Transvault supports 23 different sources for migration and has products that deliver any size of project, complex email archive migrations, and PST management. The enterprise migration solutions are secure, compliant, efficient, and user-focused, and can be run both on-premises and in the cloud.
 
 ### Converting cloud users to mailbox-enabled users
 
