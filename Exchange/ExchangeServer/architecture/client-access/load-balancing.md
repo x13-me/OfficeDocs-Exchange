@@ -181,6 +181,6 @@ Exchange 2016 and Exchange 2019 include a built-in monitoring solution, known as
 
 Managed Availability includes an offline responder. When the offline responder is invoked, the affected protocol (or server) is removed from service.
 
-To ensure that load balancers do not route traffic to a Mailbox server that Managed Availability has marked as offline, load balancer health probes must be configured to check \<virtualdirectory\>/healthcheck.htm, for example, https://mail.contoso.com/owa/healthcheck.htm.
+To ensure that load balancers do not route traffic to a Mailbox server that Managed Availability has marked as offline, load balancer health probes must be configured to check \<virtualdirectory\>/healthcheck.htm, for example, `<https://mail.contoso.com/owa/healthcheck.htm>`.
 
 Read more about managed availability in [Managed availability](../../high-availability/managed-availability/managed-availability.md).

@@ -65,7 +65,7 @@ When Outlook for iOS and Android is enabled with hybrid Modern Authentication, t
 
 ![Authentication flow in hybrid modern authentication](../../media/d4262a39-bf40-4bbb-b63e-c06306fd70e3.PNG)
 
-1. After the user enters their email address, Outlook for iOS and Android connects to the AutoDetect service. AutoDetect determines the mailbox type by starting an AutoDiscover query to Exchange Online. Exchange Online determines that the user's mailbox is on-premises and returns a 302-redirect to AutoDetect with the on-premises Autodiscover URL. AutoDetect starts a query against the on-premises AutoDiscover service to determine the ActiveSync endpoint for the email address. The URL attempted on-premises is similar to this example: https://autodiscover.contoso.com/autodiscover/autodiscover.json?Email=test%40contoso.com&Protocol=activesync&RedirectCount=3.
+1. After the user enters their email address, Outlook for iOS and Android connects to the AutoDetect service. AutoDetect determines the mailbox type by starting an AutoDiscover query to Exchange Online. Exchange Online determines that the user's mailbox is on-premises and returns a 302-redirect to AutoDetect with the on-premises Autodiscover URL. AutoDetect starts a query against the on-premises AutoDiscover service to determine the ActiveSync endpoint for the email address. The URL attempted on-premises is similar to this example: `<https://autodiscover.contoso.com/autodiscover/autodiscover.json?Email=test%40contoso.com&Protocol=activesync&RedirectCount=3>`.
 
 2. AutoDetect starts a connection to the on-premises ActiveSync URL returned in Step 1 above with an empty bearer challenge. The empty bearer challenge tells the on-premises ActiveSync that the client supports Modern Authentication. On-premises ActiveSync responds with a 401-challenge response and includes the *WWW-Authenticate: Bearer* header. Within the WWW-Authenticate: Bearer header is the authorization_uri value that identifies the Azure Active Directory (AAD) endpoint that should be used to obtain an OAuth token.
 
@@ -134,7 +134,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Use of advanced Exchange Online features (for example, [Service Encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-set-up) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 or Microsoft 365 subscription license within the Microsoft 365 Admin Center.
 
-   For more information on how to assign a license, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users.
+   For more information on how to assign a license, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 6. **EMS licensing**: Each on-premises user must have one of the following licenses:
 
@@ -199,7 +199,7 @@ Create Intune app protection policies for both iOS and Android using the steps d
 
    - Blocking managed apps from running on "jailbroken" and rooted devices
 
-3. Their assigned to all users. This ensures that all users are protected, regardless of whether they use Outlook for iOS and Android.
+3. They're assigned to all users. This ensures that all users are protected, regardless of whether they use Outlook for iOS and Android.
 
 In addition to the above minimum policy requirements, you should consider deploying advanced protection policy settings like **Restrict cut, copy, and paste with other apps** to further prevent corporate data leakage. For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
@@ -268,7 +268,7 @@ The following features aren't supported for on-premises mailboxes using hybrid M
 
 **Q**: My organization has a security policy that requires Internet inbound connections to be restricted to approved IP addresses or FQDNs. Is that possible with this architecture?
 
-**A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a coexistence period with another third-party unified endpoint management (UEM) solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the UEM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are inculded on your allowlist:
+**A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a coexistence period with another third-party unified endpoint management (UEM) solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the UEM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are included on your allow list:
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Additional endpoints not included in the Microsoft 365 or Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
