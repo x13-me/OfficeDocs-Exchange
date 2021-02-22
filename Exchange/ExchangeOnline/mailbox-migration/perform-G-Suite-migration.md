@@ -204,6 +204,9 @@ For more advanced scenarios, you may be able to deploy Azure Active Directory (A
 
 We recommend that the primary address (sometimes referred to as the "User ID") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and Google Workspace. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their Google Workspace routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
+> [!NOTE]
+> We recommend that the Default MRM Policy and Archive policies be disabled for these users until after their migration has been completed.  When such features remain enabled during migration, there is a chance that some messages will end up being considered "missing" during the content verification process.
+
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
 
 1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
@@ -384,4 +387,3 @@ During completion, another incremental sync is run to copy any changes that have
 ## Finalizing your migration
 
 After you have successfully migrated all of your Google Workspace users to Microsoft 365 or Office 365, you can switch your primary MX record to point to Microsoft 365 or Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live). At this point, you are free to decommission your source Google Workspace tenant.
-
