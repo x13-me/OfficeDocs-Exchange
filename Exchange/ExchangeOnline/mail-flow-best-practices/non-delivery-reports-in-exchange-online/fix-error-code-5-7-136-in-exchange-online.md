@@ -56,7 +56,7 @@ The screen as shown in the below screenshot is displayed.
 
 :::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
 
-2. Under **Mail flow settings** and then click **Manage mail flow settings**.
+2. Under **Mail flow settings**, click **Manage mail flow settings**.
 
 3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
 
