@@ -3,7 +3,6 @@ localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
-ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
 ms.reviewer: 
 description: There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning a migration to Microsoft 365 or Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 title: Microsoft 365 and Office 365 migration performance and best practices
@@ -47,7 +46,7 @@ For more information about Microsoft 365 or Office 365 networking and performanc
 |Cutover migration|Using a cutover migration, you migrate all on-premises mailboxes to Microsoft 365 or Office 365 over a few days. Use cutover migration if you plan to move your entire email organization to Microsoft 365 or Office 365 and manage user accounts in Microsoft 365 or Office 365. You can migrate a maximum of 2,000 mailboxes from your on-premises Exchange organization to Microsoft 365 or Office 365 using a cutover migration. The recommended number of mailboxes, however, is **150**. Performance suffers with numbers higher than that. The mail contacts and distribution groups in your on-premises Exchange organization are also migrated.|[Cutover migration to Microsoft 365 or Office 365](cutover-migration-to-office-365.md)|
 |Staged migration|You use a staged migration if you plan to eventually migrate all your organization's mailboxes to Microsoft 365 or Office 365. Using a staged migration, you migrate batches of on-premises mailboxes to Microsoft 365 or Office 365 over the course of a few weeks or months.|[What you need to know about a staged email migration to Microsoft 365 or Office 365](what-to-know-about-a-staged-migration.md)|
 |Hybrid deployment|A hybrid deployment offers organizations the ability to extend the feature-rich experience and administrative control they have with their existing on-premises Exchange organization to the cloud. A hybrid deployment provides the seamless look and feel of a single Exchange organization between an on-premises Exchange organization and Exchange Online in Microsoft 365 or Office 365. In addition, a hybrid deployment can serve as an intermediate step to moving completely to a Microsoft 365 or Office 365 organization.|[Mail migration advisor](https://docs.microsoft.com/Exchange/mail-migration-jump)<br><br>[Exchange Deployment Assistant for Exchange on-premises 2013/2016/2019](https://docs.microsoft.com/exchange/exchange-deployment-assistant)<br><br>[Exchange Server 2013 hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid)<br><br>[Minimal Hybrid Configuration](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/HCW-Improvement-The-Minimal-Hybrid-Configuration-option/ba-p/605072)|
-|Third-party migration|There are many tools available from third parties. They use distinctive protocols and approaches to conduct email migrations from email platforms like IBM Lotus Notes and Novell GroupWise.|Here are some third-party migration tools and partners that can assist with Exchange migrations from third-party platforms: <br/><br/> [Binary Tree](https://binarytree.com): Provider of cross-platform messaging migration and coexistence software, with products that provide for the analysis of and the coexistence and migration between on-premises and online enterprise messaging and collaboration environments based on IBM Lotus Notes and Domino and Exchange and SharePoint. <br/><br/> [BitTitan](https://www.bittitan.com): Provider of migration solutions to Microsoft 365 or Office 365. <br/><br/> [CodeTwo](https://www.codetwo.com/): Provider of Microsoft 365 and Office 365 migration solutions. Migrate mailboxes and public folders from any on-premises Exchange and email from IMAP (Gmail, IBM Notes, etc.) to the cloud or perform tenant to tenant migrations. Transfer all data at once or in batches and automate the entire migration process, with zero downtime. <br/><br/> [Quadrotech](https://www.quadrotech-it.com): Provider of migration solutions to Microsoft 365 or Office 365. <br/><br/> [Quest](https://www.quest.com/solutions/office-365/): Provider of migration solutions from Exchange, Microsoft 365, Office 365, Gmail, GroupWise, Notes, POP/IMAP, Zimbra, Sun ONE/iPlanet, PSTs and email archives to Microsoft 365 or Office 365 and Exchange. Quest solutions synchronize mailboxes, public folders and calendar information while maintaining coexistence throughout the migration. <br/><br/> [SkyKick](https://www.skykick.com/): Provider of automated migration solutions to move on-premises Exchange, Gmail, POP3, IMAP, Lotus Notes to Microsoft 365 or Office 365. The end-to-end migration tools help partners with the sales, planning, migration, management, and onsite phases of the migration project. <br/><br/> [TransVault](http://www.transvault.com/): Provider of migration solutions to Microsoft 365 or Office 365.|
+|Third-party migration|There are many tools available from third parties. They use distinctive protocols and approaches to conduct email migrations from email platforms like IBM Lotus Notes and Novell GroupWise.|Here are some third-party migration tools and partners that can assist with Exchange migrations from third-party platforms: <br/><br/> [Binary Tree](https://binarytree.com): Provider of cross-platform messaging migration and coexistence software, with products that provide for the analysis of and the coexistence and migration between on-premises and online enterprise messaging and collaboration environments based on IBM Lotus Notes and Domino and Exchange and SharePoint. <br/><br/> [BitTitan](https://www.bittitan.com): Provider of migration solutions to Microsoft 365 or Office 365. <br/><br/> [CodeTwo](https://www.codetwo.com/): Provider of Microsoft 365 and Office 365 migration solutions. Migrate mailboxes and public folders from any on-premises Exchange and email from IMAP (Gmail, IBM Notes, etc.) to the cloud or perform tenant to tenant migrations. Transfer all data at once or in batches and automate the entire migration process, with zero downtime. <br/><br/> [Quadrotech](https://www.quadrotech-it.com): Provider of migration solutions to Microsoft 365 or Office 365. <br/><br/> [Quest](https://www.quest.com/solutions/office-365/): Provider of migration solutions from Exchange, Microsoft 365, Office 365, Gmail, GroupWise, Notes, POP/IMAP, Zimbra, Sun ONE/iPlanet, PSTs and email archives to Microsoft 365 or Office 365 and Exchange. Quest solutions synchronize mailboxes, public folders and calendar information while maintaining coexistence throughout the migration. <br/><br/> [Transvault](https://www.transvault.com/cloud-office-migrations/email-archive-migrations/): Provider of Cloud Office migration solutions to Microsoft 365 from Exchange and Notes. Transvault supports 23 different sources for migration and has products which deliver any size of project, complex email archive migrations and PST management. The enterprise migration solutions are secure, compliant, efficient and user-focused, and can be run both on-premises and in the Cloud. <br/><br/> [SkyKick](https://www.skykick.com/): Provider of automated migration solutions to move on-premises Exchange, Gmail, POP3, IMAP, Lotus Notes to Microsoft 365 or Office 365. The end-to-end migration tools help partners with the sales, planning, migration, management, and onsite phases of the migration project. <br/><br/> [BCC Collaboration Company](http://www.bcchub.com/): Helping companies by supporting their collaboration migration strategy. Best in class supplier of migration tools based on Domino platform, for migrating to Microsoft Exchange, Microsoft 365, and Office 365.|
 |
 
 ## Performance for migration methods
@@ -107,7 +106,7 @@ To help you plan your migration, the following tables present guidelines about w
    |\> 200|Not supported|Not supported|
    |
 
-   **Migration duration to complete 90% of mailbox moves based on tenant size profiles:**
+**Migration duration to complete 90% of mailbox moves based on tenant size profiles:**
 
    ****
 
@@ -121,7 +120,8 @@ To help you plan your migration, the following tables present guidelines about w
    |\> 1000,000|60|180|
    |
 
-Note that some outlier mailboxes would take longer to complete based on the mailbox profile. Also, if a tenant has larger mailboxes on average, this can also contribute to the extended duration of migration.
+> [!NOTE]
+> Some outlier mailboxes would take longer to complete based on the mailbox profile. Also, if a tenant has larger mailboxes on average, this can also contribute to the extended duration of migration.
 
 ## Migration performance factors
 
@@ -333,6 +333,9 @@ For example, if a test migration was completed four hours before the start of a 
 
 Third-party tools are mostly used in migration scenarios that don't involve Exchange, such as those from Google Mail, IBM Lotus, Domino, and Novell GroupWise. This section focuses on the migration protocols used by third-party migration tools, rather than on the actual products and migration tools. The following table provides a list of factors that apply to third-party tools for Microsoft 365 or Office 365 migration scenarios.
 
+> [!IMPORTANT]
+> For issues with data consistency or integrity after performing a migration using third-party tools, please contact the vendor who provided the tool for support.
+
 ### Factor 1: Data source
 
 ****
@@ -398,7 +401,8 @@ Many traditional migration solutions use the RPC over HTTP Protocol. This method
 |Outlook|201.9MB|3,297|0:29:47|15,775|36.9987|5.6447|
 |
 
-Note that the client and service process times are similar, but solution A takes a lot more RPC operations to migrate data. Because each operation consumes client-latency time and server-process time, solution A is much slower to migrate the same amount of data compared to Solution B and to Outlook.
+> [!NOTE]
+> the client and service process times are similar, but solution A takes a lot more RPC operations to migrate data. Because each operation consumes client-latency time and server-process time, solution A is much slower to migrate the same amount of data compared to Solution B and to Outlook.
 
 ### Factor 4: Network
 

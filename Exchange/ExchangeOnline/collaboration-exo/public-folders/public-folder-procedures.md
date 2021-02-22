@@ -32,7 +32,7 @@ manager: serdars
 
 [Set up public folders in a new organization](set-up-public-folders.md)
 
-[Accessing public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
+[Access public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
 
 [Create a public folder mailbox](create-public-folder-mailbox.md)
 
@@ -49,5 +49,7 @@ manager: serdars
 [Remove a public folder](remove-public-folder.md)
 
 [Restore a deleted public folder](restore-deleted-public-folder.md)
+
+[Restore deleted items from public folder](restore-deleted-items-from-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)

@@ -408,7 +408,7 @@ For initial folder synchronization, Outlook for iOS and Android synchronizes 500
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
-Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
+Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. OneNote provides access to notes stored in an Exchange Online mailbox with Sticky Notes. To-Do provides integration with the tasks stored in Exchange Online mailboxes; however, Outlook for iOS and Android provides users the ability to create tasks from messages and exposes top tasks in the Zero Query search pane.
 
 ### Q: Does Outlook for iOS and Android support moderator message approval or rejection scenarios?
 
