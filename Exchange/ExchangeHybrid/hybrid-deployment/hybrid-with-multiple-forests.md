@@ -18,14 +18,14 @@ description: "Learn about hybrid deployments with multiple on-premises forests a
 
 # Hybrid deployments with multiple forests
 
-Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Microsoft 365 or Office 365 organization. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
+Exchange 2013 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Microsoft 365 or Office 365 organization. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
 The migration of public folders from an on-premises environment to Microsoft 365 or Office 365 is only supported from a single Active Directory forest. Similarly, accessing public folders in a hybrid state is only supported when the on-premises public folders are housed in a single Active Directory forest.
 
 For more information about hybrid deployments, see [Exchange Server hybrid deployments](hybrid-deployment.md).
 
 > [!IMPORTANT]
-> For Exchange 2013 and later, hybrid deployments require the latest cumulative update (CU) available for the version of Exchange you have installed in your on-premises organization. For Exchange 2010, hybrid deployments require the latest update rollup (RU).
+> For Exchange 2013 and later, hybrid deployments require the latest cumulative update (CU) available for the version of Exchange you have installed in your on-premises organization.
 >
 > If you can't install the latest update, the immediately previous release is also supported. Previous CUs and RUs are not supported. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 

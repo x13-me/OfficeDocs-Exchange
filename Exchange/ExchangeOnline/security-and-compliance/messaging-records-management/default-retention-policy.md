@@ -21,6 +21,11 @@ manager: serdars
 
 # Default Retention Policy in Exchange Online and Exchange Server
 
+> [!NOTE]
+> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
+> 
+> If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+
 Exchange creates the retention policy Default MRM Policy in your Exchange Online and on-premises Exchange organization. The policy is automatically applied to new users in Exchange Online. In on-premises organizations, the policy is applied when you create an archive for the mailbox. You can change the retention policy applied to a user at any time.
 
 You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention actions, disable a tag, or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the Managed Folder Assistant
@@ -29,7 +34,7 @@ You can modify tags included in the Default MRM Policy, for example by changing 
 
 The following table lists the default retention tags linked to the Default MRM Policy.
 
-|**Name**|**Type**|**Retention age (days)**|**Retention action**|
+| Name | Type | Retention age (days) | Retention action |
 |:-----|:-----|:-----|:-----|
 |Default 2 years move to archive|Default Policy Tag (DPT)|730|Move to Archive|
 |Recoverable Items 14 days move to archive|Recoverable Items folder|14|Move to Archive|
@@ -45,7 +50,7 @@ The following table lists the default retention tags linked to the Default MRM P
 
 ## What you can do with the Default MRM Policy
 
-|**You can...**|**In Exchange Online...**|**In Exchange Server...**|
+| You can... | In Exchange Online... | In Exchange Server... |
 |:-----|:-----|:-----|
 |Apply the Default MRM Policy automatically to new users|Yes, applied by default. No action is required.|Yes, applied by default if you also create an archive for the new user. <br/> If you create an archive for the user later, the policy is applied automatically only if the user doesn't have an existing Retention Policy.|
 |Modify the retention age or retention action of a retention tag linked to the policy|Yes|Yes|
