@@ -44,27 +44,30 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **For New EAC**
 
-1.  In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
+1.  Navigate to **Recipients** \> **Groups** \>.
 
-:::image type="content" source="../../media/add-sender-to-group-sender-list.png" alt-text="The screen on which a sender can be added to become a member of the senders list":::
+2. Select a group from the list and click it. The group properties dialog box appears.
 
-2. In the group properties dialog box that opens, click the **Settings** tab.
+<include the image group-properties.png>
 
-3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
+2. Click the **Settings** tab.
 
-:::image type="content" source="../../media/delivery-management-new-eac.png" alt-text="The screen on which  the option to edit the deliver management settings is displayed":::
+3. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **Only senders in the following list**.
+<include the image delivery-management-screen.png>
 
-:::image type="content" source="../../media/delivery-management-set-sender.png" alt-text="The screen on which the sender is added to become a member of the senders list":::
+4. Configure the following settings:
 
-5. Click in the text box. The list of senders are displayed.
-
-6. Choose a sender from the list.
-
+    - Under **Accept messages from**, choose **Only senders in the following list**.
+    - Click in the text box. The list of senders are displayed.
+   
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
-7. Click **Save changes**.
+5. Choose a sender from the list.
+
+6. Click **Save**.
+
+<include the image setting-sender-as-group-member.png>
 
 **For Classic EAC**
 
@@ -87,25 +90,26 @@ If you decide that you don't need to restrict the message senders to this group,
 
 **For New EAC**
 
-In the New EAC, go to **Recipients** \> **Groups** \> select the group from the list.
+1. Navigate to **Recipients** \> **Groups** \>.
 
-:::image type="content" source="../../media/add-sender-to-group-sender-list.png" alt-text="The screen on which a sender can be added to become a member of the senders list":::
+2. Select a group from the list and click it. The group properties dialog box appears.
 
-2. In the group properties dialog box that opens, click the **Settings** tab.
+<include the image group-properties.png>
 
-3. On the settings screen that opens, under **Delivery management**, click **Edit delivery management**.
+3. Click the **Settings** tab.
 
-:::image type="content" source="../../media/delivery-management-new-eac.png" alt-text="The screen on which  the option to edit the deliver management settings is displayed":::
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-4. On the **Delivery management** screen that opens up, under **Accept messages from**, choose **All senders**.
+<include the delivery-management-screen.png>
+
+5. Under **Accept messages from**, choose **All senders**.
 
 :::image type="content" source="../../media/choose-all-senders.png" alt-text="The screen on which all senders are chosen to be added to the group":::
-
 
 > [!NOTE]
 > After you choose choose **All senders** under **Accept messages from**, you do not have to choose anything under **Decline messages from** and you can save the changes.
 
-5. Click **Save changes**.
+6. Click **Save**.
 
 **For Classic EAC**
 
