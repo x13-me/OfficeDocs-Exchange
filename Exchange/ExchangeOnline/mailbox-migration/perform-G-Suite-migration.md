@@ -61,7 +61,7 @@ After all migration batches have been completed, all users can use their migrate
 ## Migration limitations
 
 > [!NOTE]
-> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
 
 Throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google Workspace side.
 
@@ -160,6 +160,8 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    > [!NOTE]
    > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
+   >
+   > The option to Add a domain will not be available if using the legacy free edition of G Suite. 
 
    ![Add domain](../media/add-a-new-domain-im8.png)
 
