@@ -47,17 +47,21 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 **In New EAC**
 
-1. In the New EAC, go to **Recipients** \> **Mailboxes** > select and click the user mailbox from the list.
+1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+2. Select a user mailbox from the list and click it. The user mailbox properties dialog box appears.
 
-:::image type="content" source="../../media/managing-mail-flow-settings.png" alt-text="The screen on which the option to manage mail flow settings is available":::
+<include the image user-mailboxes-properties.png>
 
-3. In the **Manage mail flow settings** dialog box that opens up, click **Edit** in the **Message delivery restriction** pane.
+2. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
-:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which the mail flow settings can be edited":::
+3. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-4. In the Message delivery restrictions dialog box that opens, under **Accept messages from**, clear the check box for **Check if all senders are authenticated**
+4. Configure the following settings:
+    - Choose **All senders**.
+    - Under **Accept messages from**, clear the check box for **Check if all senders are authenticated**.
+
+<include the image settings-message-delivery-restrictions.png>
 
 5. Click **Save**.
 
@@ -92,28 +96,34 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 **In New EAC**
 
-1. In the New EAC, go to **Recipients** \> **Mailboxes** > select and click the user mailbox from the list.
+1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+2. Select the user mailbox from the list and click it. The user mailbox properties dialog box appears.
 
-:::image type="content" source="../../media/managing-mail-flow-settings.png" alt-text="The screen on which the option to manage mail flow settings is available":::
+<include the image user-mailboxes-properties.png>
 
-3. In the **Manage mail flow settings** screen, click **Edit** in the **Message delivery restriction** pane.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
-:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
+<include the image manage-mail-flow-settings-screen.png>
 
-4. In the **Message delivery restrictions** screen, configure the following settings in the **Accept messages from** section:
+4. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
+
+<include the image message-delivery-restrictions-screen.png>
+
+5. Configure the following settings in the **Accept messages from** section:
   - Clear the check box for **Check if all senders are authenticated**
   - Select **Selected senders**.
-  - Click **+ Add sender**.
+  - Click **+ Add sender**. The **Accept messages from** dialog box appears.
 
-:::image type="content" source="../../media/message-delivery-restrictions.png" alt-text="The screen on which settings related to message delivery are configured":::
+<include the image accept-messages-from-screen.png>
 
-  - In the **Accept messages from** dialog box that opens, check the check box of the internal-senders group and the specific external users whom you want to add.
+  - Check the check box of the internal-senders group and the specific external users whom you want to add.
 
 :::image type="content" source="../../media/setting-senders.png" alt-text="The screen on which the senders to be added to the group are chosen":::
 
   - Click **Confirm**.
+
+<include the image configuring-accept-messages-from-settings.png>
 
 **In Classic EAC**
 
