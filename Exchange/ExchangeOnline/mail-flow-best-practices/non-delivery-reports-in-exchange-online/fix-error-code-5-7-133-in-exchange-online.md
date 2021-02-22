@@ -42,21 +42,25 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **In New Exchange admin center (EAC)**
 
- 1. In the New Exchange admin center (EAC), go to **Recipients** \> **Groups** \> select and click the group from the list.
+ 1. Navigate to **Recipients** \> **Groups** \> 
+  
+ 2. Select the group from the list and click it. The group properties dialog box appears, as shown in the image below.
+ 
+<include the image group-properties.png>
 
- 2. On the group-details screen, click **Settings**, as shown in the below screenshot.
+ 2. On the group-details screen, click the **Settings** tab.
  
 :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
- 3. On the group's settings screen, under **Delivery management** pane, click **Edit delivery management**.
+ 3. Under **Delivery management** pane, click **Edit delivery management**. The **Delivery management** dialog box appears.
  
-:::image type="content" source="../../media/edit-delivery-management-settings.png" alt-text="The screen on which delivery management settings can be edited":::
+<include the image delivery-management-screen.png>
  
- 4. On the **Delivery management** screen, under **Accept messages from**, choose  the **All senders** radio button.
+ 4. Under **Accept messages from**, choose  the **All senders** radio button.
  
-<include the image adding-all-senders-to-group.png>
+:::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
- 5. Click **Save changes**.
+ 5. Click **Save**.
 
  **In Classic EAC**
 
@@ -86,19 +90,19 @@ To configure the group's allowed senders list, perform the following steps:
 
 **For New EAC**
 
-1. Go to **Recipients** \> **Groups** \>, select and click on a group from the list.
+1. Navigate to **Recipients** \> **Groups** \>.
 
-2. From the group details dialog box that opens up, click the **Settings** tab.
+2. Select a group from the list and click it. The group properties dialog box appears.
 
-:::image type="content" source="../../media/settings-to-configure-senders-list.png" alt-text="The screen on which senders are configured":::
+<include the image group-properties.png>
 
-3. Under **Delivery management**, click **Edit delivery management**.
+3. Click the **Settings** tab.
 
-:::image type="content" source="../../media/editing-delivery-management-settings.png" alt-text="The screen on which delivery management settings are edited":::
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-4. On the **Delivery management** dialog box that opens up, under **Accept messages from**, choose **Only senders in the following list**.
+<include the image delivery-management-screen.png>
 
-:::image type="content" source="../../media/configuring-list-external-senders.png" alt-text="The screen on which senders are added":::
+4. Under **Accept messages from**, choose **Only senders in the following list**.
 
 5. Click inside the text box. The list of senders (internal and external) are displayed.
 
@@ -108,7 +112,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
-7. Click **Save changes**.
+7. Click **Save**.
 
 **For Classic EAC**   
 
