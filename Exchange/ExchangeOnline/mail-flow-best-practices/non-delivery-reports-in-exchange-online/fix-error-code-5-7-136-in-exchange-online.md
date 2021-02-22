@@ -50,26 +50,25 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 **In New Exchange admin center (EAC)**
 
-1. In the New Exchange admin center (EAC), go to **Recipients** \> **Mailboxes** > select the user mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. In the New Exchange admin center (EAC), navigate to **Recipients** \> **Mailboxes**.
 
-The screen as shown in the below screenshot is displayed.
+2. Select the user mailbox from the list and click it. The mailbox properties dialog box appears, as shown in the screenshot below.
 
-:::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
+<include the image  mailbox-properties.png>
 
-2. Under **Mail flow settings**, click **Manage mail flow settings**.
-
-3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+4. Click **Edit** in the **Message delivery restriction** pane. The **Message delivery restrictions** dialog box appears.
 
-   - Select **All senders**.
-   - Clear the check box for **Require that all senders are authenticated**.
+5. Execute the following actions:
+    a. Configure the following settings in the **Accept messages from** section:
+    - Select **All senders**.
+    - Clear the check box for **Require that all senders are authenticated**.
 
-5. In the **Message delivery restrictions** dialog box, configure the following settings in the **Block messages from** section:
-
-   - Select **None**.
+    b. Configure the following settings in the **Block messages from** section:
+    - Select **None**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which message delivery restriction settings are reset":::
 
@@ -109,24 +108,27 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 **In New EAC**
 
-1. In the New Exchange admin center (EAC), go to **Recipients** \> **Mailboxes** > select the user mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. Navigate to **Recipients** \> **Mailboxes** >.
+
+2. Select the user mailbox from the list and click it.
 
 The screen as shown in the below screenshot is displayed.
 
+<include the image  mailbox-properties.png>
+
 :::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
 
-2. Under **Mail flow settings** and then click **Manage mail flow settings**.
+2. Under **Mail flow settings**, click **Manage mail flow settings**. the **Manage mail flow settings** dialog box appears.
 
-3. In the **Manage mail flow settings** dialog box that opens, click **Edit** in the **Message delivery restriction** pane.
+3. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-4. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
-
-   - Clear the check box for **Require that all senders are authenticated**.
-   - Select **Selected senders**.
-   - Click **+ Add sender**.
-   - In the **Accept messages from** dialog box that opens, check the check box of the sender you want to add, and click **Confirm**.
+4. Configure the following settings in the **Accept messages from** section:
+       - Clear the check box for **Check if all senders are authenticated**.
+       - Select **Selected senders**.
+       - Click **+ Add sender**. The **Accept messages from** dialog box appears.
+       - Check the check box of the sender you want to add, and click **Confirm**.
    
 :::image type="content" source="../../media/adding-specific-senders.png" alt-text="The screen on which specific external senders are added":::
 
