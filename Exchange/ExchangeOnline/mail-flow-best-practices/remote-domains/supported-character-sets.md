@@ -30,30 +30,39 @@ The following table describes the character sets that you can configure in remot
 
 ## New Exchange admin center (EAC)
 
-1. In the New Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. 
-2. Click **+ Add a remote domain** to create a remote domain. 
+1. Navigate to **Mail flow** > **Remote domains**. The **Remote domains** screen appears.
+
+2. Click **+ Add a remote domain**. The **Name the domain** screen appears.
 
 :::image type="content" source="../../media/add-remote-domain.png" alt-text="The screen on which the user can add a new remote domain":::
 
-3. In the window that opens, enter a name for the domain and enter a name for the equivalent remote version of the domain and click **Next**. 
+3. Provide a name for the domain and a name for the equivalent remote version of the domain.
 
 :::image type="content" source="../../media/naming-remote-domain.png" alt-text="The screen on which a name is provided for the remote domain being added":::
 
-4. Configure the automatic email reply types and click **Next**.
+4. Click **Next**. The **Email reply types** screen appears.
+
+5. Configure the automatic email reply types' settings by choosing options as shown in the screenshot below.
 
 :::image type="content" source="../../media/configuring-automatic-reply-type.png" alt-text="The screen on which the user can configure the automatic email reply type":::
 
-5. Configure the message-reporting settings and click **Next**. 
+6. Click **Next**. The **Message reporting** screen appears.
+
+7. Configure the message-reporting settings by choosing options as shown in the screenshot below.
 
 :::image type="content" source="../../media/message-reporting-settings.png" alt-text="The screen on which the message reporting settings are defined":::
 
-6. Use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set, and click **Next**.
+8. Click **Next**. The **Text and character set** screen appears.
+
+9. Configure the format of email messages the method in which they are sent by choosing options as shown in the screenshot below.
 
 :::image type="content" source="../../media/text-and-character-set.png" alt-text="The screen on which the character sets are chosen":::
 
-7. Review the settings configured and click **Save**.
+10. Click **Next**. The **Review** screen appears.
 
 :::image type="content" source="../../media/review-remote-domain.png" alt-text="The screen on which the defined settings for the remote domain are displayed for a review":::
+
+11. Review the settings configured and click **Save**. The new review domain is created successfully.
 
 ## Classic EAC
 - In the Classic EAC, go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
