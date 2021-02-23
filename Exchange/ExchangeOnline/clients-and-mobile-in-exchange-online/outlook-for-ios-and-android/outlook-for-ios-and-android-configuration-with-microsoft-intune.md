@@ -156,6 +156,12 @@ Outlook supports the following settings for configuration:
 <td>By default, Outlook for iOS and Android can suggest words and phrases as you compose messages.</td>
 <td>App default</td>
 </tr>
+<tr class="odd">
+<td>Themes</td>
+<td>On</td>
+<td>By default, Outlook for iOS and Android supports visual themes that can be enabled for certain beliefs or events.</td>
+<td>App default</td>
+</tr>
 </tbody>  
 </table>
 
@@ -387,6 +393,8 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
+    - For **Themes**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
     - For **Sync Calendars**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This feature is only available in Outlook for Android.
 
     - For **Text Predictions**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
@@ -554,7 +562,9 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Calendar.NativeSyncEnabled|By default, Outlook does not sync calendar data to the native Calendar app. This key defines the default sync state behavior. Setting the value to true will enable calendar sync. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Calendar.NativeSyncEnabled.UserChangeAllowed|This key specifies whether the calendar sync state can be changed by the end user. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.TextPredictionsEnabled|Outlook can suggest words and phrases as you compose messages. When set as not configured, the default app setting is set to On. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowe|This key specifies whether Smart Compose can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowed|This key specifies whether Smart Compose can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Settings.ThemesEnabled|Outlook supports custom visual themes. When set as not configured, the default app setting is set to On. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+
 
 ### S/MIME settings
 
