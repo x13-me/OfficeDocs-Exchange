@@ -138,9 +138,9 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 - **For New EAC**
 
-1. Click **Mail flow**, and click **Connectors**. 
+1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
  
-2. On the **Connectors** screen, click **+ Add a connector**. The screen that then appears is shown in the following screenshot.
+2. Click **+ Add a connector**. The **New connector** screen appears.
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
@@ -151,28 +151,42 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
-3. Click **Next**. On the **Connector name** screen, give the connector a name, and click **Next**.
+3. Click **Next**. The **Connector name** screen appears. 
 
-4. On the **Use of connector** screen, choose an option that determines when you want to use the connector, and click **Next**.
+4. Enter a name for the connector and click **Next**. The **Use of connector** screen appears.
+
+5. Choose an option that determines when you want to use the connector, and click **Next**. The **Routing** screen appears.
 
 > [!NOTE]
 > For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
 
-5. On the **Routing** screen, provide the domain name or IP address of the host computer to which Office 365 will deliver email messages.
+6. Provide the domain name or IP address of the host computer to which Office 365 will deliver email messages.
 
-7. On the **Security restrictions** screen, choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+7. Click **Next**. The **Security restrictions** screen appears.
+
+8. Configure the following settings:
+
+    a. Choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
+> 
+> If you opt to define the TLS settings, it becomes mandatory to choose.
 
-8. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
+    b. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
 
 > [!NOTE]
-> If you opt to define the TLS settings, it becomes mandatory to choose 
+> If you are choosing the **Issue by a trusted certificate authority (CA)** option, the **Add the subject name or subject alternative name (SAN) matches this domain name** option is activated.
+> 
+> It is optional to choose the **Add the subject name or subject alternative name (SAN) matches this domain name** option. However, if you choose it, you must enter the domain name to which the certificate name matches.
 
-9. On the **Validation email**, specify an email that belongs to the mailbox of your organization's domain. 
+    c. Click **Next**. The **Validation email** screen appears.
 
-10. On the **Review connector** page, review the settings you have configured and click **Create connector**.
+9. Specify an email that belongs to the mailbox of your organization's domain.
+
+10. Click **Next**. The **Review connector** screen appears.
+
+10. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 
@@ -200,14 +214,14 @@ There are two steps for this:
 
 #### For New EAC
 
-1.  Click **Mail flow**, and click **Connectors**.
+1.  Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
 
 :::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
 
 > [!NOTE]
 > If any connectors already exist for your organization, it is listed on clicking **Connectors**.
  
-2. To start the wizard, click **+ Add a connector**. The first screen that is displayed is shown in the following screenshot:
+2. Click **+ Add a connector**. The **New connector** screen appears:
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
@@ -218,16 +232,16 @@ There are two steps for this:
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
 
-4. Click **Next**.
+4. Click **Next**. The **Connector name** screen appears.
 
-5. On the **Connector name** screen, provide a name for the connector and click **Next**.
+5. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-6. In the **Authenticating sent email** screen, choose either of the two options and click **Next**.
+6. Choose either of the two options and click **Next**. The **Review connector** screen appears. 
 
 > [!NOTE]
 > If you choose the first option, provide your domain name (if your organization has only one domain) or any one of the domains of your organization (in case of multiple domains). If you choose the second option, provide the IP address of organization's domain server.
 
-7. On the **Review connector** page, review the settings you have configured and click **Create connector**.
+7. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 

@@ -68,59 +68,71 @@ The important settings for the connector are:
 
 ### Use the Exchange admin center (EAC) to create the outbound connector to the email add-on service
 
-To create an outbound connector from the EAC, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
+To create an outbound connector from the new EAC, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
 
-1. Go to **Mail flow** \> **Connectors**, and then click **+Add a connector**.
+1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears. 
+
+2. Click **+Add a connector**. The **New connector** screen appears.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
-2. On the **New connector** screen, configure these settings:
-- **Connection from**: **Office 365**
-- **Connection to**: **Your organization's email server**
+2. Configure the following settings:
+    a. Under **Connection from**, choose **Office 365**.
+    b. Under **Connection to**, choose **Your organization's email server**.
 
 :::image type="content" source="../../media/new-connector-configuration.png" alt-text="The screen on which the connector configuration is set":::
 
-3. Click **Next**.
+3. Click **Next**. The **Connector name** screen appears.
 
-4. On the **Connector name** screen, configure these settings:
+4. Perform the following tasks:
 
-   - **Name**: Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+    a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+    b. Under **What do you want to do after connector is saved?**, do the following:
+    
+        - Choose **Turn it on**
+        - Choose **Retain internal Exchange email headers (recommended)**.
 
-   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
 
-   - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages)
+> [!NOTE]
+> > If **Retain internal Exchange email headers (recommended)** is chosen, it provides the following functionality:
+> 
+> Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages)
 
 :::image type="content" source="../../media/configuring-connector-name.png" alt-text="The screen on which further configurations for the connector are set":::
 
-5. Click **Next**.
+5. Click **Next**. The **Use of connector** screen appears.
 
-6. On the **Use of connector** screen, select the **Only when i have a transport rule set up that redirects messages to this connector** option, and click **Next**.
+6. Choose **Only when i have a transport rule set up that redirects messages to this connector** option.
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
 
-7. On the **Routing** screen, enter the smart host value for the email add-on service (for example, myhpstcontoso.com), click **Save**, and then click **Next**.
+7. Click **Next**. The **Routing** screen appears.
+
+8. Enter the smart host value for the email add-on service (for example, myhpstcontoso.com).
 
 :::image type="content" source="../../media/defining-smart-host.png" alt-text="The screen on which the domain name of the smart host is entered":::
 
-8. On the **Security restrictions** screen, configure these settings:
+9. Click **Next**. The **Security restrictions** screen appears.
 
-   - Select the **Always use Transport Layer Security (TLS) to secure the connection (recommended)** option.
+10. Configure these settings:
 
-   - Select the **Issued by a trusted certificate authority (CA)** option.
-
-   - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, myhost.contoso.com)
+    a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+    b. Choose **Issued by a trusted certificate authority (CA)**.
+    c. Choose **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the Step-8 (for example, myhost.contoso.com)
    
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
-9. On the **Validation email** screen, specify an email address of an active mailbox on your server and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
+11. Click **Next**. The **Validation email** screen appears.
+
+12. Specify an email address of an active mailbox on your server and click **+**. 
 
 :::image type="content" source="../../media/validation-email-screen.png" alt-text="The screen on which the user can enter the validation email":::
 
-10. Click **Validate**. A progress window appears.
+10. Click **Validate**. The validation process starts.
 
-11. When the connector validation is complete, click **Next**.
+11. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-12. On the **Review connector** screen, verify the settings, and then click **Create connector**.
+12. Verify the settings, and then click **Create connector**.
 
 :::image type="content" source="../../media/connector-settings-display.png" alt-text="The screen on which the settings of the connector are displayed":::
 
@@ -259,48 +271,54 @@ The important settings for the connector are:
 
 ### Use the EAC to create an inbound connector to receive messages from the email add-on service
 
-**In New EAC**
+To create an inbound connector from the new EAC, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
 
-1. Go to **Mail flow** \> **Connectors** and click **+Add a new connector**.
+1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
+
+2. Click **+Add a new connector**. The **New connector** screen appears.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
-2. On the **New connector** screen, configure these settings:
-
-- **Connection from**: **Your organization's email server**
-- **Connection to**: **Office 365**
+3. Under **Connection from**, choose **Your organization's email server**. The **Office 365** option is then chosen by default.
 
 :::image type="content" source="../../media/your-org-server-to-365.png" alt-text="SA screen on which the connector is configured from your organization's server to Office 365":::
 
-3. Click **Next**.
+4. Click **Next**. The **Connector name** screen appears.
 
-4. On the next page, configure these settings:
+5. Perform the following actions:
 
-   - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Office 365).
-
-   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
-
-   - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
-
-   - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
+    a. Enter a descriptive name (for example, Contoso Signature Service to Office 365).
+    b. Choose **Turn it on**.
+    c. Choose **Retain internal Exchange email headers (recommended)**.
+    
+> [!NOTE]
+> The **Retain internal Exchange email headers (recommended)** option provides the following functionality:
+>  
+> **If checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
+> 
+> **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
    
 :::image type="content" source="../../media/configuring-connector-name-to-365.png" alt-text="The screen on which connector configuration is set":::
     
-5. Click **Next**.
+5. Click **Next**. The **Authenticating sent email** screen appears.
 
-6. On the **Authenticating sent email** screen, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+6. Verify that **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** option is chosen.
+
+7. Enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
 :::image type="content" source="../../media/authenticate-sent-email.png" alt-text="The screen on sent mails are authenticated for eligibility of being transmitted":::
 
-7. Click **Next**.
+7. Click **Next**. The **Review connector** screen appears.
 
-8. On the **Review connector** page, verify the settings and click **Create connector**.
+8. Verify the settings and click **Create connector**.
 
-    :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
+:::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 
 The inbound connector is created.
 
-**In Classic EAC**
+**From Classic EAC**
+
+To create an inbound connector from the Classic EAC, You need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
 
 1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
