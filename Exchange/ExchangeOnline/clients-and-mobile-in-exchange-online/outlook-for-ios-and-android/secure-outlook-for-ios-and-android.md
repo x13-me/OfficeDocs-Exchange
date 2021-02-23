@@ -129,7 +129,7 @@ A global admin must complete the following steps to activate and set up enrollme
 
 1. Activating Basic Mobility and Security by following the steps in the Microsoft 365 Security Center.
 
-2. Setting up mobile device management by, for example, creating an APNs certificate to manage iOS devices.
+2. Setting up unified endpoint management by, for example, creating an APNs certificate to manage iOS devices.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
