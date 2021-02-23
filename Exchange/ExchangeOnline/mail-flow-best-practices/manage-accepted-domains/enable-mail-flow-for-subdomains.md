@@ -46,17 +46,21 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 ### New EAC
 
-1. In the New EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
+1. Navigate to **Mail Flow** \> **Accepted domains**. The **Accepted domains** screen appears.
 
 :::image type="content" source="../../media/accepted-domains.png" alt-text="The screen displaying accepted domains":::
 
-2. In the Details pane, Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
+2. Select an accepted domain and click it. The accepted domain's details screen appears.
+
+3. Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
 :::image type="content" source="../../media/setting-internal-relay.png" alt-text="The screen on which the INTERNAL RELAY option is chosen":::
 
-3. Select **Accept mail for all subdomains**.
+4. Select **Accept mail for all subdomains**.
 
 :::image type="content" source="../../media/setting-email-acceptance-for-all-subdomains.png" alt-text="The screen on which the user configures acceptance of emails from all subdomains":::
+
+5. Click **Save**.
 
 The accepted domain is updated successfully.
 
