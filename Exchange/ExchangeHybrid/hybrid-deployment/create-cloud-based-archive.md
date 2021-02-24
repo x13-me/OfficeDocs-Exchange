@@ -1,5 +1,5 @@
 ---
-title: "Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment"
+title: "Create a cloud-based archive in an Exchange hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: ecc0a687-6c05-47bd-a079-a43d83cba9ea
 ms.reviewer:
-description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox with a cloud-based archive mailbox in Exchange Online."
+description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or a migrated mailbox with a cloud-based archive mailbox in Exchange Online."
 ---
 
-# Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment
+# Create a cloud-based archive in an Exchange hybrid deployment
 
-In an Exchange hybrid deployment, you can configure an on-premises primary mailbox with a cloud-based archive mailbox in Exchange Online.
+In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or a migrated mailbox with a cloud-based archive mailbox in Exchange Online.
 
 ## Before you begin
 
@@ -31,9 +31,9 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 - After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Microsoft 365 or Office 365. By default, directory synchronization runs once every 30 minutes.
 
-## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox
+## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or a mailbox located on Exchange Online
 
-Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
+Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or a mailbox located in Exchange Online. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
 
 - [Create a cloud-based archive mailbox for a new user](#create-a-cloud-based-archive-mailbox-for-a-new-user)
 
@@ -43,42 +43,48 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 1. In the EAC in your on-premises organization, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox**.
+2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox** or **Office 365 mailbox** depending on where you want to create the mailbox.
 
 3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://docs.microsoft.com/Exchange/recipients/create-user-mailboxes).
 
-4. Click **More options** to enable a cloud-based archive mailbox.
+4. If you want to create the mailbox in Exchange Online:
 
-5. Under **Archive**, click the **Create an in-place archive for this user** check box, and then click **Cloud-based archive**. The name of the domain that the archive mailbox will be provisioned in is displayed.
+   4a. Click the **Create an archive mailbox** check box.
+    
+   If you want to create the mailbox on-premises:
+   
+   4a. Click **More options** to enable a cloud-based archive mailbox.
+
+   4b. Under **Archive**, click the **Create an in-place archive for this user** check box, and then click **Cloud-based archive**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
     ![Under Archive, click the checkbox and then click Cloud-based archive](../media/43d0473e-30ad-4021-94bc-a9c5449f43ba.png)
 
-6. Click **Save** to create the mailbox and the cloud-based archive.
+5. Click **Save** to create the mailbox and the cloud-based archive.
 
    Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
-7. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Microsoft 365 or Office 365.
+6. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Microsoft 365 or Office 365.
 
     > [!TIP]
     > In the Microsoft 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
 
-8. After verifying that directory synchronization has occurred after you created the new on-premises mailbox, in the admin center, go to **Users** \> **Active users**, and then select the new user account that was created for the new on-premises mailbox.
+7. After verifying that directory synchronization has occurred after you created the new mailbox, in the Microsoft 365 admin center, go to **Users** \> **Active users**, and then select the new user account that was created for the new on-premises mailbox.
 
-9. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
+8. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
     ![Click Edit in the details pane to assign a license to the selected user](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
 
-10. Under the **Location** drop-down menu, select a location for the user.
+9. Under the **Location** drop-down menu, select a location for the user.
 
-11. Expand the list of Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
+10. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
 
     In the **Status** column in the list of users, notice that a license is assigned to the user.
 
-12. Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+11. Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
 ### Create a cloud-based archive mailbox for an existing user
 
-1. In the admin center, go to **Users** \> **Active users**, and then select the user account that you want to create a cloud-base archive mailbox for.
+1. In the Microsoft 365 admin center, go to **Users** \> **Active users**, and then select the user account that you want to create a cloud-base archive mailbox for.
 
 2. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
@@ -86,7 +92,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 3. Under the **Location** drop-down menu, select a location for the user.
 
-4. Expand the list of Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
+4. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
 
     In the **Status** column in the list of users, notice that a license is now assigned to the user.
 
@@ -98,7 +104,13 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
     ![Click Enable in the details pane to enable the archive mailbox for the selected user](../media/17ce99f7-d154-4e21-bec1-c938af1d4a0a.png)
 
-8. On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
+8. If the mailbox is located in Exchange online:
+
+   - Click **yes** to enable the In-Place Archive.
+
+   If the mailbox is located on-premises:
+ 
+   - On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
     ![On the Create in-place archive page, click Cloud-based archive](../media/9ad047c9-ef47-47df-93cc-0fab872f1ae1.png)
 
