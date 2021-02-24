@@ -31,7 +31,7 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 - After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Microsoft 365 or Office 365. By default, directory synchronization runs once every 30 minutes.
 
-## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or a mailbox located on Exchange Online
+## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or a mailbox located in Exchange Online
 
 Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or a mailbox located in Exchange Online. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
 
