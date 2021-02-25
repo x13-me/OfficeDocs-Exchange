@@ -51,9 +51,9 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 2. Select a user mailbox from the list and click it. The user mailbox properties dialog box appears.
 
-<include the image user-mailboxes-properties.png>
+:::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
-2. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
 3. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
@@ -61,7 +61,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
     - Choose **All senders**.
     - Under **Accept messages from**, clear the check box for **Check if all senders are authenticated**.
 
-<include the image settings-message-delivery-restrictions.png>
+:::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="":::
 
 5. Click **Save**.
 
@@ -100,22 +100,22 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 2. Select the user mailbox from the list and click it. The user mailbox properties dialog box appears.
 
-<include the image user-mailboxes-properties.png>
+:::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
 3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
-<include the image manage-mail-flow-settings-screen.png>
+:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage Mail Flow Settings screen":::
 
 4. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-<include the image message-delivery-restrictions-screen.png>
+:::image type="content" source="../../media/message-delivery-restrictions-screen.png" alt-text="The Message Delivery Restrictions screen":::
 
 5. Configure the following settings in the **Accept messages from** section:
   - Clear the check box for **Check if all senders are authenticated**
   - Select **Selected senders**.
   - Click **+ Add sender**. The **Accept messages from** dialog box appears.
 
-<include the image accept-messages-from-screen.png>
+:::image type="content" source="../../media/accept-messages-from-screen.png" alt-text="The screen displaying the Accept Messages From pane":::
 
   - Check the check box of the internal-senders group and the specific external users whom you want to add.
 
@@ -123,7 +123,9 @@ To configure the mailbox's allowed senders list, do the following steps:
 
   - Click **Confirm**.
 
-<include the image configuring-accept-messages-from-settings.png>
+:::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="":::
+
+6. Click **Save**.
 
 **In Classic EAC**
 
