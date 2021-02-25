@@ -47,11 +47,11 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://docs.microsoft.com/Exchange/recipients/create-user-mailboxes).
 
-4. If you want to create the mailbox in _Exchange Online_:
+4. If you want to create the mailbox in **Exchange Online**:
 
    4a. Click the **Create an archive mailbox** check box.
     
-   If you want to create the mailbox _on-premises_:
+   If you want to create the mailbox **on-premises**:
    
    4a. Click **More options** to enable a cloud-based archive mailbox.
 
@@ -104,11 +104,11 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
     ![Click Enable in the details pane to enable the archive mailbox for the selected user](../media/17ce99f7-d154-4e21-bec1-c938af1d4a0a.png)
 
-8. If the mailbox is located in _Exchange online_:
+8. If the mailbox is located in **Exchange online**:
 
    - Click **yes** to enable the In-Place Archive.
 
-   If the mailbox is located _on-premises_:
+   If the mailbox is located **on-premises**:
  
    - On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
