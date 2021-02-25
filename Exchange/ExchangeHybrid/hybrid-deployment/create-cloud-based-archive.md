@@ -127,19 +127,24 @@ As previously explained, there might be a delay between the time that you enable
 
 In your Exchange Online organization, run the following PowerShell command to display properties related to an on-premises user's cloud-based archive mailbox. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
+If it's an on-premises mailbox:
 ```PowerShell
 Get-MailUser <cloud mail user> | FL *archive*
+```
+If it's a Exchange Online mailbox:
+```PowerShell
+Get-Mailbox <cloud mailbox> | FL *archive*
 ```
 
 The following screenshots show the properties that are returned when the provisioning of the cloud-based archive mailbox is pending and after the cloud-based archive mailbox has been created.
 
-### Mail user properties before the cloud-based archive mailbox is provisioned by directory synchronization
+### Properties before the cloud-based archive mailbox is provisioned by directory synchronization
 
 ![Property of cloud-based mailuser before the cloud-based archive is provisioned](../media/c6a42713-f061-4761-93c1-2b5478953e46.png)
 
 Before directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `None`. Also note that the _ArchiveGuid_ and _ArchiveName_ properties are empty.
 
-### Mail user properties after the cloud-based archive mailbox is provisioned by directory synchronization
+### Properties after the cloud-based archive mailbox is provisioned by directory synchronization
 
 ![Cloud-based mail user properties after the cloud-based archive is provisioned](../media/005fcc87-6253-4218-aafc-50f212de54fa.png)
 
@@ -149,17 +154,22 @@ After directory synchronization provisions the cloud-based archive, the _Archive
 
 You can also run the following PowerShell command in your on-premises Exchange organization to display properties related to the cloud-based archive mailbox of an on-premises user.
 
+If it's an on-premises mailbox:
 ```PowerShell
 Get-Mailbox <on-premises user mailbox> | FL *archive*
 ```
+If it's a Exchange Online mailbox:
+```PowerShell
+Get-MailUser <on-premises mail user> | FL *archive*
+```
 
-#### On-premises mailbox properties before the cloud-based archive mailbox is provisioned by directory synchronization**
+#### Properties before the cloud-based archive mailbox is provisioned by directory synchronization**
 
 ![Mailbox property before the cloud-based archive is provisioned](../media/d5625bc8-03de-439a-8a0a-051ff537a0bf.png)
 
 Before directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `None` and the _ArchiveState_ property is set to `HostedPending`.
 
-#### On-premises mailbox properties after the cloud-based archive mailbox is provisioned by directory synchronization**
+#### Properties after the cloud-based archive mailbox is provisioned by directory synchronization**
 
 ![Mailbox properties after the cloud-based archive is provisioned](../media/9b42d562-1b0a-4722-97aa-35d0ef6f9372.png)
 
