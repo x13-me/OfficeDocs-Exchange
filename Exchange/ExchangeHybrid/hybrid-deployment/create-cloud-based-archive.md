@@ -49,13 +49,13 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 4. If you want to create the mailbox in **Exchange Online**:
 
-   4a. Click the **Create an archive mailbox** check box.
+   1. Click the **Create an archive mailbox** check box.
     
    If you want to create the mailbox **on-premises**:
    
-   4a. Click **More options** to enable a cloud-based archive mailbox.
+   1. Click **More options** to enable a cloud-based archive mailbox.
 
-   4b. Under **Archive**, click the **Create an in-place archive for this user** check box, and then click **Cloud-based archive**. The name of the domain that the archive mailbox will be provisioned in is displayed.
+   2. Under **Archive**, click the **Create an in-place archive for this user** check box, and then click **Cloud-based archive**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
     ![Under Archive, click the checkbox and then click Cloud-based archive](../media/43d0473e-30ad-4021-94bc-a9c5449f43ba.png)
 
