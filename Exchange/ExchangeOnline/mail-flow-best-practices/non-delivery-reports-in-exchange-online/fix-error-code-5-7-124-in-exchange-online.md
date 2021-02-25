@@ -48,6 +48,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 2. Select a group from the list and click it. The group properties dialog box appears.
 
+
 <include the image group-properties.png>
 
 2. Click the **Settings** tab.
@@ -65,7 +66,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 5. Choose a sender from the list.
 
-6. Click **Save**.
+6. Click **Save changes**.
 
 <include the image setting-sender-as-group-member.png>
 
@@ -109,7 +110,7 @@ If you decide that you don't need to restrict the message senders to this group,
 > [!NOTE]
 > After you choose choose **All senders** under **Accept messages from**, you do not have to choose anything under **Decline messages from** and you can save the changes.
 
-6. Click **Save**.
+6. Click **Save changes**.
 
 **For Classic EAC**
 
