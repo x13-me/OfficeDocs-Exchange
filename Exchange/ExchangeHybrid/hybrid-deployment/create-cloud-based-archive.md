@@ -27,7 +27,7 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 - The user with the on-premises primary mailbox must have a user account in your Microsoft 365 or Office 365 organization.
 
-- The user account must be assigned an Exchange Online Archiving for Exchange Server license. The steps for assigning a license are included in the procedures in Step 1.
+- The user account must be assigned an Exchange Online Archiving license. For more information about the different options, see [Exchange Online Archiving plans](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description#exchange-online-archiving-plans). The steps for assigning a license are included in the procedures in Step 1.
 
 - After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Microsoft 365 or Office 365. By default, directory synchronization runs once every 30 minutes.
 
@@ -76,7 +76,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 9. Under the **Location** drop-down menu, select a location for the user.
 
-10. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
+10. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign an Exchange Online Archiving license, and then save the changes.
 
     In the **Status** column in the list of users, notice that a license is assigned to the user.
 
@@ -92,7 +92,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 3. Under the **Location** drop-down menu, select a location for the user.
 
-4. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign the **Exchange Online Archiving for Exchange Server** license, and then save the changes.
+4. Expand the list of Microsoft 365 or Office 365 Enterprise licenses, and then assign an Exchange Online Archiving license, and then save the changes.
 
     In the **Status** column in the list of users, notice that a license is now assigned to the user.
 
