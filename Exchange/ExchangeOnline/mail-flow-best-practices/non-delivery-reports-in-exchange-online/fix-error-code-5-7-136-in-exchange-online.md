@@ -86,9 +86,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
    - Clear the check box for **Require that all senders are authenticated**.
 
-   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
-
-     ![Steps to solve DSN 5.7.136 and manage recipient settings](../../media/25299311-e399-443f-a8fd-ce225d178969.png)
+   - Select **All senders**.
 
 4. Click **OK**, and then click **Save**.
 
@@ -127,9 +125,10 @@ The screen as shown in the below screenshot is displayed.
        - Select **Selected senders**.
        - Click **+ Add sender**. The **Accept messages from** dialog box appears.
        - Check the check box of the sender you want to add, and click **Confirm**.
-6. Click **Save**.
-   
+
 :::image type="content" source="../../media/adding-specific-senders.png" alt-text="The screen on which specific external senders are added":::
+
+6. Click **Save**.
 
 **In Classic EAC**
 
