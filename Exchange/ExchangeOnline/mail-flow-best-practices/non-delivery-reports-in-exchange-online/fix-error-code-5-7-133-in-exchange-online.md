@@ -46,16 +46,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
   
  2. Select the group from the list and click it. The group properties dialog box appears, as shown in the image below.
  
+:::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
-<include the image group-properties.png>
-
- 2. On the group-details screen, click the **Settings** tab.
+ 3. On the group-details screen, click the **Settings** tab.
  
 :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
- 3. Under **Delivery management** pane, click **Edit delivery management**. The **Delivery management** dialog box appears.
+ 4. Under **Delivery management** pane, click **Edit delivery management**. The **Delivery management** dialog box appears.
  
-<include the image delivery-management-screen.png>
+:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
  
  4. Under **Accept messages from**, choose  the **All senders** radio button.
  
@@ -95,17 +94,17 @@ To configure the group's allowed senders list, perform the following steps:
 
 2. Select a group from the list and click it. The group properties dialog box appears.
 
-<include the image group-properties.png>
+:::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
 3. Click the **Settings** tab.
 
 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-<include the image delivery-management-screen.png>
+:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
 
-4. Under **Accept messages from**, choose **Only senders in the following list**.
+5. Under **Accept messages from**, choose **Only senders in the following list**.
 
-5. Click inside the text box. The list of senders (internal and external) are displayed.
+6. Click inside the text box. The list of senders (internal and external) are displayed.
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
