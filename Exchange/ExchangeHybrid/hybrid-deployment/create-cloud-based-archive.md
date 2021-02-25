@@ -131,7 +131,7 @@ If it's an on-premises mailbox:
 ```PowerShell
 Get-MailUser <cloud mail user> | FL *archive*
 ```
-If it's a Exchange Online mailbox:
+If it's an online mailbox:
 ```PowerShell
 Get-Mailbox <cloud mailbox> | FL *archive*
 ```
@@ -158,7 +158,7 @@ If it's an on-premises mailbox:
 ```PowerShell
 Get-Mailbox <on-premises user mailbox> | FL *archive*
 ```
-If it's a Exchange Online mailbox:
+If it's an online mailbox:
 ```PowerShell
 Get-MailUser <on-premises mail user> | FL *archive*
 ```
