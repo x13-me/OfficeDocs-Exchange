@@ -54,7 +54,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 2. Select the user mailbox from the list and click it. The mailbox properties dialog box appears, as shown in the screenshot below.
 
-<include the image  mailbox-properties.png>
+:::image type="content" source="../../media/mailbox-properties.png" alt-text="The screen displaying the properties of the chosen mailbox":::
 
 3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
@@ -114,21 +114,20 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 The screen as shown in the below screenshot is displayed.
 
-<include the image  mailbox-properties.png>
+:::image type="content" source="../../media/mailbox-properties.png" alt-text="The screen displaying the properties of the chosen mailbox":::
 
-:::image type="content" source="../../media/editing-mailbox-details.png" alt-text="The screen on which mailbox details can be edited":::
+3. Under **Mail flow settings**, click **Manage mail flow settings**. the **Manage mail flow settings** dialog box appears.
 
-2. Under **Mail flow settings**, click **Manage mail flow settings**. the **Manage mail flow settings** dialog box appears.
-
-3. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
+4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-4. Configure the following settings in the **Accept messages from** section:
+5. Configure the following settings in the **Accept messages from** section:
        - Clear the check box for **Check if all senders are authenticated**.
        - Select **Selected senders**.
        - Click **+ Add sender**. The **Accept messages from** dialog box appears.
        - Check the check box of the sender you want to add, and click **Confirm**.
+6. Click **Save**.
    
 :::image type="content" source="../../media/adding-specific-senders.png" alt-text="The screen on which specific external senders are added":::
 
