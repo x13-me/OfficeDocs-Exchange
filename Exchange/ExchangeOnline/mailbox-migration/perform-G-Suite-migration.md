@@ -156,12 +156,13 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
 
+   > [!NOTE]
+   > The option _Add a domain_ will not be available if using the legacy free edition of G Suite. 
+
 3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
    > [!NOTE]
    > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
-   >
-   > The option to Add a domain will not be available if using the legacy free edition of G Suite. 
 
    ![Add domain](../media/add-a-new-domain-im8.png)
 
