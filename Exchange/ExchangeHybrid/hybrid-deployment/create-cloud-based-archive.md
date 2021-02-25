@@ -163,13 +163,13 @@ If it's an online mailbox:
 Get-MailUser <on-premises mail user> | FL *archive*
 ```
 
-#### Properties before the cloud-based archive mailbox is provisioned by directory synchronization**
+#### Properties before the cloud-based archive mailbox is provisioned by directory synchronization
 
 ![Mailbox property before the cloud-based archive is provisioned](../media/d5625bc8-03de-439a-8a0a-051ff537a0bf.png)
 
 Before directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `None` and the _ArchiveState_ property is set to `HostedPending`.
 
-#### Properties after the cloud-based archive mailbox is provisioned by directory synchronization**
+#### Properties after the cloud-based archive mailbox is provisioned by directory synchronization
 
 ![Mailbox properties after the cloud-based archive is provisioned](../media/9b42d562-1b0a-4722-97aa-35d0ef6f9372.png)
 
