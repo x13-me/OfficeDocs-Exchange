@@ -46,6 +46,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
   
  2. Select the group from the list and click it. The group properties dialog box appears, as shown in the image below.
  
+
 <include the image group-properties.png>
 
  2. On the group-details screen, click the **Settings** tab.
@@ -60,7 +61,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
- 5. Click **Save**.
+ 5. Click **Save changes**.
 
  **In Classic EAC**
 
@@ -112,7 +113,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
-7. Click **Save**.
+7. Click **Save changes**.
 
 **For Classic EAC**   
 
