@@ -231,7 +231,7 @@ Dell Equallogic PS Series 75,000 Mailbox Exchange 2010 Mailbox Resiliency Storag
 
 ### Huawei: Greater than 5000 mailboxes
 
-[HUAWEI OceanStor S5500T 20,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (July 2012)](http://www.huawei.com/minisite/t-series/download/HUAWEI%20OceanStor%20S5500T%20Exchange%20Server%202010%20Solution.pdf)
+HUAWEI OceanStor S5500T 20,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (July 2012)
 
 ### IBM: 1001-5000 mailboxes
 
