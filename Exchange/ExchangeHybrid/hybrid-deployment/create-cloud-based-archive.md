@@ -112,9 +112,9 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
  
    - On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
-    ![On the Create in-place archive page, click Cloud-based archive](../media/9ad047c9-ef47-47df-93cc-0fab872f1ae1.png)
+     ![On the Create in-place archive page, click Cloud-based archive](../media/9ad047c9-ef47-47df-93cc-0fab872f1ae1.png)
 
-    Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
+     Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
 9. Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
