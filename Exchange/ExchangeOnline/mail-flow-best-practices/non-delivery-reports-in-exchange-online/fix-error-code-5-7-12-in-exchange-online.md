@@ -90,6 +90,9 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 - **Mail users**:
 
+> [!IMPORTANT]
+> The feature of editing mail flow settings for a mail user is available only for Classic EAC, currently.
+
    1. Go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    2. In the mail user properties dialog box that opens, go to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
@@ -204,6 +207,9 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
    3. Click **Save**.
 
 - **Mail users**:
+
+> [!IMPORTANT]
+> The feature of editing mail flow settings for a mail user is available only for Classic EAC, currently.
 
    1. Go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
