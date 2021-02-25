@@ -16,12 +16,12 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: ecc0a687-6c05-47bd-a079-a43d83cba9ea
 ms.reviewer:
-description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or a migrated mailbox with a cloud-based archive mailbox in Exchange Online."
+description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or an online mailbox with a cloud-based archive mailbox in Exchange Online."
 ---
 
 # Create a cloud-based archive in an Exchange hybrid deployment
 
-In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or a migrated mailbox with a cloud-based archive mailbox in Exchange Online.
+In an Exchange hybrid deployment, you can configure an on-premises primary mailbox or an online mailbox with a cloud-based archive mailbox in Exchange Online.
 
 ## Before you begin
 
@@ -31,9 +31,9 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 - After you enable the cloud-based archive mailbox in Step 1, it might take up to 30 minutes for the cloud-based archive mailbox to be provisioned. This is because the cloud-base archive mailbox is created by the process of directory synchronization, where your on-premises Active Directory is synchronized with Azure Active Directory (Azure AD) in Microsoft 365 or Office 365. By default, directory synchronization runs once every 30 minutes.
 
-## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or a mailbox located in Exchange Online
+## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or an online mailbox
 
-Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or a mailbox located in Exchange Online. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
+Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or an online mailbox. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
 
 - [Create a cloud-based archive mailbox for a new user](#create-a-cloud-based-archive-mailbox-for-a-new-user)
 
@@ -47,11 +47,11 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](https://docs.microsoft.com/Exchange/recipients/create-user-mailboxes).
 
-4. If you want to create the mailbox in **Exchange Online**:
+4. If you want to create an **online mailbox**:
 
    1. Click the **Create an archive mailbox** check box.
     
-   If you want to create the mailbox **on-premises**:
+   If you want to create an **on-premises mailbox**:
    
    1. Click **More options** to enable a cloud-based archive mailbox.
 
@@ -104,11 +104,11 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
     ![Click Enable in the details pane to enable the archive mailbox for the selected user](../media/17ce99f7-d154-4e21-bec1-c938af1d4a0a.png)
 
-8. If the mailbox is located in **Exchange online**:
+8. If it's an **online mailbox**:
 
    - Click **yes** to enable the In-Place Archive.
 
-   If the mailbox is located **on-premises**:
+   If it's an **on-premises mailbox**:
  
    - On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
