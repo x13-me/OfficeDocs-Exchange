@@ -163,7 +163,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add domain](../media/add-a-new-domain-im8.png)
 
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
    ![Verify domain](../media/verify-ownership-im9.png)
 
@@ -182,7 +182,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add domain alias](../media/add-a-new-domain-alias-im10.png)
 
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
    ![Verify domain](../media/verify-ownership-im9.png)
 
@@ -205,6 +205,9 @@ For more advanced scenarios, you may be able to deploy Azure Active Directory (A
 We recommend that the primary address (sometimes referred to as the "User ID") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and Google Workspace. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their Google Workspace routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
+
+> [!IMPORTANT]
+> Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
 1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
 
@@ -306,7 +309,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-9. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
+9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
