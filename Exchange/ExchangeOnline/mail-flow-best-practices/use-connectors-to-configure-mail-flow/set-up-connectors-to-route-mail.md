@@ -144,10 +144,10 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
-3. Choose the following options:
+3. Configure the following settings:
 
-    - **Office 365** under the **Connection from** pane
-    - **Your organization's email server** under the **Connection to** pane
+    - Under the **Connection from** pane, choose **Office 365**.
+    - Under the **Connection to** pane, choose **Your organization's email server**.
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
@@ -186,7 +186,7 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 10. Click **Next**. The **Review connector** screen appears.
 
-10. Review the settings you have configured and click **Create connector**.
+11. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 
@@ -225,7 +225,7 @@ There are two steps for this:
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
-3. Select the **Your organization's email server** radio button under **Connection from**.
+3. Under **Connection from**, choose **Your organization's email server**.
 
 :::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
 
