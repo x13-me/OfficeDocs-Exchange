@@ -76,7 +76,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
     In the **Status** column in the list of users, notice that a license is assigned to the user.
 
-11. Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to [Step 2](#step-2:-verify-that-the-cloud-based-archive-mailbox-is-created) to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+11. Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
 ### Use the Exchange Management Shell to create a cloud-based archive mailbox for a new user
 
@@ -97,7 +97,7 @@ New-RemoteMailbox -Name "Kim Akers" -UserPrincipalName kima@contoso.com -Passwor
 For detailed syntax and parameter information, see [New-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/new-remotemailbox).
 
 After you create the primary and cloud-based archive mailboxes, wait up to 30 minutes for directory synchronization to create a corresponding user account in Microsoft 365 or Office 365. Then assign the product license as we described in the steps 8 to 10 of [Use the EAC to create a cloud-based archive mailbox for a new user](#use-the-eac-to-create-a-cloud-based-archive-mailbox-for-a-new-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
-Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to [Step 2](#step-2:-verify-that-the-cloud-based-archive-mailbox-is-created) to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
 > [!TIP]
 > In the Microsoft 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
@@ -136,7 +136,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
 
      Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
-9. Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to [Step 2](#step-2:-verify-that-the-cloud-based-archive-mailbox-is-created) to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+9. Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
     > [!TIP]
     > In the admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
@@ -161,7 +161,7 @@ Enable-Mailbox -Identity laura@contoso.com -Archive
 
 For detailed syntax and parameter information, see [Enable-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/enable-remotemailbox).
 
-Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to [Step 2](#step-2:-verify-that-the-cloud-based-archive-mailbox-is-created) to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
 > [!TIP]
 > In the admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
