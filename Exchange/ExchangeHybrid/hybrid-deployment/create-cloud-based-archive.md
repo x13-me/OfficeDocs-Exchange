@@ -80,7 +80,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 ### Use the Exchange Management Shell to create a cloud-based archive mailbox for a new user
 
-The following example creates a new **on-premises mailbox** and Active Directory user account for Pilar Pinilla with a cloud-based archive mailbox:
+The following example creates a new primary **on-premises mailbox** and Active Directory user account for Pilar Pinilla with a cloud-based archive mailbox:
 
 ```PowerShell
 New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ArchiveDomain archive.contoso.com -RemoteArchive -FirstName Pilar -LastName Pinilla
@@ -88,7 +88,7 @@ New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Passwor
 
 For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
-The following example creates a new **online mailbox** and Active Directory user account for Kim Akers with a cloud-based archive mailbox:
+The following example creates a new primary **online mailbox** and Active Directory user account for Kim Akers with a cloud-based archive mailbox:
 
 ```PowerShell
 New-RemoteMailbox -Name "Kim Akers" -UserPrincipalName kima@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -Archive -FirstName Kim -LastName Akers
@@ -145,7 +145,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
 
 Before you create the cloud-based archive mailbox, you need to assign the product license as we described in the steps 1 to 4 of [Use the EAC to create a cloud-based archive mailbox for an existing user](#use-the-EAC-to-create-a-cloud-based-archive-mailbox-for-an-existing-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
-The following example creates a cloud-based archive mailbox for Ayla who has an **on-premises mailbox**:
+The following example creates a cloud-based archive mailbox for Ayla who has a primary **on-premises mailbox**:
 
 ```PowerShell
 Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "archive.contoso.com"
@@ -153,7 +153,7 @@ Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "archive
 
 For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/enable-mailbox).
 
-The following example creates a cloud-based archive mailbox for Laura who has an **online mailbox**:
+The following example creates a cloud-based archive mailbox for Laura who has a primary **online mailbox**:
 
 ```PowerShell
 Enable-Mailbox -Identity laura@contoso.com -Archive
