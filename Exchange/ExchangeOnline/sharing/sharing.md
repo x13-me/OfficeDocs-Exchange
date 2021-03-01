@@ -39,7 +39,7 @@ The following sharing scenarios are supported in Exchange Online:
 ## Sharing documentation
 <a name="docs"> </a>
 
-The following table contains links to topics that will help you learn about and manage sharing in Exchange Online.
+The following table contains links to articles that will help you learn about and manage sharing in Exchange Online.
 
 |**Topic**|**Description**|
 |:-----|:-----|
