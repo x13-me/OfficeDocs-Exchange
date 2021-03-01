@@ -87,7 +87,7 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 4. Perform the following tasks:
 
     a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
-    b. Under **What do you want to do after connector is saved?**, do the following:
+    b. Under **What do you want to do after connector is saved?**:
     
         - Choose **Turn it on**
         - Choose **Retain internal Exchange email headers (recommended)**.
@@ -124,7 +124,7 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 11. Click **Next**. The **Validation email** screen appears.
 
-12. Specify an email address of an active mailbox on your server and click **+**. 
+12. Specify an email address of an active mailbox on your organization's email server and click **+**. 
 
 :::image type="content" source="../../media/validation-email-screen.png" alt-text="The screen on which the user can enter the validation email":::
 
@@ -300,17 +300,17 @@ To create an inbound connector from the new EAC, navigate from the Microsoft 365
    
 :::image type="content" source="../../media/configuring-connector-name-to-365.png" alt-text="The screen on which connector configuration is set":::
     
-5. Click **Next**. The **Authenticating sent email** screen appears.
+6. Click **Next**. The **Authenticating sent email** screen appears.
 
-6. Verify that **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** option is chosen.
+7. Verify that **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** option is chosen.
 
-7. Enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+8. Enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
 :::image type="content" source="../../media/authenticate-sent-email.png" alt-text="The screen on sent mails are authenticated for eligibility of being transmitted":::
 
-7. Click **Next**. The **Review connector** screen appears.
+9. Click **Next**. The **Review connector** screen appears.
 
-8. Verify the settings and click **Create connector**.
+10. Verify the settings and click **Create connector**.
 
 :::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
 

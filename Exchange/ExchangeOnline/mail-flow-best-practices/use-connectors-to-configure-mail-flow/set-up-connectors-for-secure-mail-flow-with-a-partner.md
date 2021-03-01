@@ -160,39 +160,39 @@ You can set up a connector to apply security restrictions to email that your par
 
 4. Click **Next**. The **Connector name** screen appears.
 
-4. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
+:::image type="content" source="../../media/providing-name-to-connector.png" alt-text="The screen on which the connector is given a name":::
 
-<include the image providing-name-to-connector.png>
+5. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-4. Choose one of the two options.
+6. Choose one of the two options.
 
 > [!NOTE]
 > If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, provide its name.
 > If you choose the second option, provide an IP address of any of the recipients who are part of your organization's mailbox.
 
-<include the image screen-for-365-to-identify-partner-org.png>
+:::image type="content" source="../../media/screen-for-365-to-identify-partner-org.png" alt-text="The screen on which the partner organization is identified by domain name":::
 
-5. Click **Next**. The **Security restrictions** screen appears.
+7. Click **Next**. The **Security restrictions** screen appears.
 
-6. Choose **Reject email messages if they aren't sent over TLS**.
+8. Choose **Reject email messages if they aren't sent over TLS**.
 
 > [!NOTE]
 > It is optional to choose the option of **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name**. If you choose this option, provide the domain name of the partner organization.
 
-<include the image security-restrictions-screen.png>
+:::image type="content" source="../../media/security-restrictions-screen.png" alt-text="The csreen on which settings that define security restrictions are set":::
 
-7. Check the check box for **Reject email messages if they aren't sent from within this IP address range**, and provide the IP address range.
+9. Check the check box for **Reject email messages if they aren't sent from within this IP address range**, and provide the IP address range.
 
 > [!IMPORTANT]
 >You can choose this option in addition to the option specified in Step 5; Else, you can choose either this option or the one in Step 5. Choosing atleast one of these options is mandatory.
 
-<include the image defining-ip-address-range.png>
+:::image type="content" source="../../media/defining-ip-address-range.png" alt-text="The screen on which the sender's ID address is defined as a criteria":::
 
-8. Click **Next**. The **Review connector** screen appears.
+10. Click **Next**. The **Review connector** screen appears.
 
-9. Review the settings you have configured and click **Create connector**.
+11. Review the settings you have configured and click **Create connector**.
 
-<include the image creating-a-connector.png>
+:::image type="content" source="../../media/creating-a-connector.png" alt-text="The screen on which the connector creation process is completed":::
 
 The connector is created.
 

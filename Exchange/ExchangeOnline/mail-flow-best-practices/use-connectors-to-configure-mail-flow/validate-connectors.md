@@ -34,7 +34,7 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
  **For New EAC**
 
-1. Navigate to **Mail flow > Connectors**. The **Connectors** screen is displayed.
+1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
@@ -59,7 +59,7 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
 7. Click **Next**. The **Validation email** screen appears.
 
-8. Enter an email address that is part of the active mailbox on an email server of your organization.
+8. Enter an email address that is part of the active mailbox on your organization's email server.
 
 9. Click **+**, and then click **Validate**. The validation process starts.
 

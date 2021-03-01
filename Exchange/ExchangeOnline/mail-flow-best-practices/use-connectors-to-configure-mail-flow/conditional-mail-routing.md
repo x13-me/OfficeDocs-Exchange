@@ -74,7 +74,8 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 13. Click **+**. The email address is listed for validation.
 
-<include the image email-listed-for-validation.png>
+:::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
+
 
 14. Click **Validate**. The validation process starts.
 
@@ -117,7 +118,7 @@ Now that we've created a connector, we need to create a mail flow rule that'll s
 To create a mail flow rule in EAC, perform the following steps:
 
 > [!NOTE]
-> The below procedure is appicable for New and Classic EACs.
+> The below procedure is applicable for New and Classic EACs.
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 
