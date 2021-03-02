@@ -88,6 +88,8 @@ For more information, see [Exchange admin center](https://docs.microsoft.com/exc
 
 6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information, see [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0&preserve-view=true).
 
+7. **Give feedback** - You can select the Give feedback icon to provide your feedback and let us know what you think. You can also share your email address for us to reach out to you for more information.
+
 For more information, see [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
 
 ## Related articles
