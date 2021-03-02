@@ -22,7 +22,7 @@ The following are the differences between the Classic Exchange admin center (Cla
 
  - In Classic EAC, they are available as separate tabs, **Mailboxes**, and **Shared**. ![Classic EAC mailbox tab](media/classic-eac.png)
  
- - In new EAC, they are merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes](media/um-sm.png)
+ - In new EAC, they're merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes](media/um-sm.png)
 
 For more information, see [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
  
@@ -46,7 +46,7 @@ For more information, see [Manage user mailboxes](https://docs.microsoft.com/exc
 
  - In Classic EAC, it is available.
  
- - In new EAC, Exchange Online Unified Messaging as retired since February 2020.
+ - In new EAC, Exchange Online Unified Messaging is retired.
  
 **Migration**
 
