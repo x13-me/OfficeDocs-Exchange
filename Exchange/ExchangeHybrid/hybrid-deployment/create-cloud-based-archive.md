@@ -156,7 +156,7 @@ For detailed syntax and parameter information, see [Enable-Mailbox](https://docs
 The following example creates a cloud-based archive mailbox for Laura who has a primary **online mailbox**:
 
 ```PowerShell
-Enable-Mailbox -Identity laura@contoso.com -Archive
+Enable-RemoteMailbox -Identity laura@contoso.com -Archive
 ```
 
 For detailed syntax and parameter information, see [Enable-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/enable-remotemailbox).
