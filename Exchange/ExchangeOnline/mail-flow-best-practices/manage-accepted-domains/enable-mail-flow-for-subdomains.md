@@ -66,8 +66,8 @@ The accepted domain is updated successfully.
 
 ### Classic EAC
 
-1. In the Classic EAC, go to **Mail Flow** \> **Accepted domains**, and select the domain.
-The domain details dialox box is displayed.
+1. Navigate to **Mail Flow** \> **Accepted domains**, and select the domain.
+The domain details dialog box is displayed.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
 
@@ -81,14 +81,14 @@ The domain details dialox box is displayed.
 
 ### New EAC
 
-1. In the New EAC, go to **Mail Flow** \> **Connectors**.
+1. Navigate to **Mail Flow** \> **Connectors**.
 
 2. <need more inputs>
 
 
 ### Classic EAC
 
-1. In the Classic EAC, go to **Mail Flow** \> **Connectors**.
+1. Navigate to **Mail Flow** \> **Connectors**.
 
 2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
