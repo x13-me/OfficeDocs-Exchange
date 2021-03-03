@@ -27,6 +27,9 @@ Public folders are designed for shared access and provide an easy and effective 
 
 Public folders can also be used as an archiving method for distribution groups. When you mail-enable a public folder and add it as a member of the distribution group, email sent to the group is automatically added to the public folder for later reference.
 
+> [!NOTE]
+> Public folders functionality of the Classic Exchange admin center experience is available in the new Exchange admin center as we continue to work on updated versions. If you're using **Edge** incognito and this page isn't working, enable the [third-party cookies](https://support.microsoft.com/microsoft-edge/temporarily-allow-cookies-and-site-data-in-microsoft-edge-597f04f2-c0ce-f08c-7c2b-541086362bd2).
+
 Public folders aren't designed for the following purposes:
 
 - **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes) as your archiving solution.
@@ -35,13 +38,13 @@ Public folders aren't designed for the following purposes:
 
 For more information about public folders and other collaboration methods in Microsoft 365, Office 365, and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
 
-For more information about public folder quotas in Microsoft 365, Office 365, and Exchange Online, see the service description topics [Sharing and collaboration](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/sharing-and-collaboration) and [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+For more information about public folder quotas in Microsoft 365, Office 365, and Exchange Online, see the service description articles [Sharing and collaboration](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/sharing-and-collaboration) and [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 For a list of public folder management tasks, see [Public folder procedures in Microsoft 365, Office 365, and Exchange Online](public-folder-procedures.md).
 
 For more information about the public folder limits in Microsoft 365, Office 365, and Exchange Online, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
-Looking for the Exchange Server version of this topic? See [Public folders in Microsoft 365, Office 365, and Exchange Online](public-folders.md).
+Looking for the Exchange Server version of this article? See [Public folders in Microsoft 365, Office 365, and Exchange Online](public-folders.md).
 
 ## Public folder architecture
 
@@ -74,7 +77,7 @@ The public folder hierarchy contains the folders' properties and organizational 
 
 #### Hierarchy synchronization
 
-The public folder hierarchy synchronization process uses Incremental Change Synchronization (ICS), which provides a mechanism to monitor and synchronize changes to an Exchange store hierarchy or content. The changes include creating, modifying, and deleting folders and messages. When users are connected to and using content mailboxes, synchronization occurs every 15 minutes. If no users are connected to content mailbox, synchronization will be triggered less often (every 24 hours).If a write operation such as a creating a folder is performed on the primary hierarchy, synchronization is triggered immediately (synchronously) to the content mailbox.
+The public folder hierarchy synchronization process uses Incremental Change Synchronization (ICS), which provides a mechanism to monitor and synchronize changes to an Exchange store hierarchy or content. The changes include creating, modifying, and deleting folders and messages. When users are connected to and using content mailboxes, synchronization occurs every 15 minutes. If no users are connected to content mailbox, synchronization will be triggered less often (every 24 hours). If a write operation such as a creating a folder is performed on the primary hierarchy, synchronization is triggered immediately (synchronously) to the content mailbox.
 
 > [!IMPORTANT]
 > Because there's only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.

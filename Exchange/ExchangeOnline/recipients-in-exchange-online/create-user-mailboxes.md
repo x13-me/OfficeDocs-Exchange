@@ -20,7 +20,7 @@ manager: serdars
 
 # Create user mailboxes in Exchange Online
 
-You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the new Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the new EAC. For more information on adding users in Microsoft 365 admin center, see [Add users and assign licenses](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. **You can't create new user mailboxes using the new Exchange admin center (EAC)**. However, after Exchange Online mailboxes are created, you can manage them using the new EAC. For more information on adding users in Microsoft 365 admin center, see [Add users and assign licenses](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 > [!NOTE]
 > After you create a new mailbox using Exchange Online PowerShell, you have to assign it an Exchange Online license or it will be disabled when the 30-day grace period ends.
@@ -29,13 +29,13 @@ You have to use the Microsoft 365 admin center or Exchange Online PowerShell to 
 
 - Estimated time to complete: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) article.
 
 - It's a good idea to use strong passwords that are at least eight characters long, and combine uppercase and lowercase letters, numbers, and symbols.
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
