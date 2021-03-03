@@ -22,6 +22,9 @@ manager: serdars
 
 There are several things you should consider before you decide to delete a user mailbox. There are different kinds of deletions that you can do on a user mailbox and some of them won't allow you to restore or recover the mailbox. This article walks you through the deleted mailbox scenarios, and how to delete, recover or permanently remove a mailbox from Exchange Online.
 
+> [!NOTE]
+> You can't use EAC to delete or restore user mailboxes.
+
 ## Soft-deleted user mailboxes
 
 A soft-deleted user mailbox is a mailbox that has been deleted using the Microsoft 365 admin center or the **Remove-Mailbox** cmdlet in Exchange Online PowerShell, and has still been in the Azure Active Directory (Azure AD) recycle bin for less than 30 days.
@@ -57,7 +60,7 @@ The above scenarios assume that the user mailbox isn't in any of the hold states
 
 ### Use the Microsoft 365 admin center to delete a user account
 
-When you delete an user account, the corresponding Exchange Online mailbox is deleted and removed from the list of mailboxes in the EAC. After the user account is deleted, it's listed on the **Deleted Users** page in the Microsoft 365 admin center. It can be recovered within 30 days after being deleted. After 30 days, the user account and mailbox are permanently deleted and not recoverable.
+When you delete a user account, the corresponding Exchange Online mailbox is deleted and removed from the list of mailboxes in the EAC. After the user account is deleted, it's listed on the **Deleted Users** page in the Microsoft 365 admin center. It can be recovered within 30 days after being deleted. After 30 days, the user account and mailbox are permanently deleted and not recoverable.
 
 To delete a Microsoft 365 or Office 365 work or school account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
@@ -73,7 +76,7 @@ For more details, check out, [Remove-MsolUser](https://docs.microsoft.com/powers
 
 ### Use Exchange Online PowerShell to delete a mailbox
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) article.
 
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -93,7 +96,7 @@ When you delete a mailbox, Exchange Online retains the mailbox and all its conte
 
 If the mailbox was deleted by deleting the corresponding user account, you can restore the mailbox by restoring the user account in the Microsoft 365 admin center.
 
-To restore an user account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
+To restore a user account, see [Delete or restore users](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 ### Use Exchange Online PowerShell to restore a user account
 
