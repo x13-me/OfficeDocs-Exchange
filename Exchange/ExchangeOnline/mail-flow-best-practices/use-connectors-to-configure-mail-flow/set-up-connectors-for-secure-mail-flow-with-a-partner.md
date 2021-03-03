@@ -83,17 +83,17 @@ Below are the procedures to set up a new connector.
 
 5. Provide a name for the connector and click **Next**. The **Use of connector** screen appears.
 
-5. Choose any one of the two options and click **Next**. The **Routing** screen appears.
+6. Choose any one of the two options and click **Next**. The **Routing** screen appears.
 
 > [!NOTE]
 > If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, provide its name.
 
-6. Choose any of the two options and click **Next**. The **Security restrictions** screen appears.
+7. Choose any of the two options and click **Next**. The **Security restrictions** screen appears.
 
 > [!NOTE]
 > If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the domain name of the smart host in the text box.
 
-7. Configure the following settings:
+8. Configure the following settings:
 
     a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
@@ -109,22 +109,22 @@ Below are the procedures to set up a new connector.
 >  
 > It is optional to choose the **Add the subject name or subject alternative name (SAN) matches this domain name** option. However, if you choose it, you must enter the domain name to which the certificate name matches.
 
-8. Click **Next**. The **Validation email** screen appears.
+9. Click **Next**. The **Validation email** screen appears.
 
-9. Provide an email address that is part of the mailbox in your domain server, and click **+**
+10. Provide an email address that is part of the mailbox in your domain server, and click **+**
 
-10. Click **Validate**. The validation process starts.
+11. Click **Validate**. The validation process starts.
 
-11. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+12. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-12. Review the settings you have configured and click **Create connector**.
+13. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-12. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+14. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 

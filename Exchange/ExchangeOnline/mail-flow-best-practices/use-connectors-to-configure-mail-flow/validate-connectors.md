@@ -63,7 +63,7 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
 9. Click **+**, and then click **Validate**. The validation process starts.
 
-5. Once the validation process is completed, click **Save**.
+10. Once the validation process is completed, click **Save**.
 
 The connector is updated successfully from **being turned off** to **being turned on**
 

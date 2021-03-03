@@ -34,54 +34,54 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 2. Click **+ Add a new connector**. The **New connector** screen appears.
 
-2. Configure the following settings:
+3. Configure the following settings:
 
     a. Under **Connection from**, choose **Office 365**.
     b. Under **Connection to**, select either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
 
 :::image type="content" source="../../media/365-to-your-organization.png" alt-text="The screen on which a connector is being created from Office 365 to your organization's mail server":::
 
-3. Click **Next**. The **Connector name** screen appears.
+4. Click **Next**. The **Connector name** screen appears.
 
-4. Provide a name for the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
+5. Provide a name for the connector and add a description. If you want to turn the connector on immediately, select **Turn it on** under **What do you want to do after connector is saved?**.
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
-5. Click **Next**. The **Use of connector** screen appears.
+6. Click **Next**. The **Use of connector** screen appears.
 
-6. Choose **Only when I have a transport rule set up that redirects messages to this connector**.
+7. Choose **Only when I have a transport rule set up that redirects messages to this connector**.
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="A screen on which the transport rule is chosen as a condition":::
 
-7. Click **Next**. The **Routing** screen appears.
+8. Click **Next**. The **Routing** screen appears.
 
-8. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
+9. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
 
 :::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
 > [!NOTE]
 > You must provide either the domain name or the IP address of the server.
 
-9. Click **Next**. The **Security restrictions** screen appears.
+10. Click **Next**. The **Security restrictions** screen appears.
 
-10. Define your Transport Layer Security (TLS) settings depending on your security needs, as shown in the screenshot below.
+11. Define your Transport Layer Security (TLS) settings depending on your security needs, as shown in the screenshot below.
 
 :::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
 
-11. Click **Next**. The **Validation email** screen appears.
+12. Click **Next**. The **Validation email** screen appears.
 
-12. Provide an email address that is valid on the mailbox of your organization's email server.
+13. Provide an email address that is valid on the mailbox of your organization's email server.
 
-13. Click **+**. The email address is listed for validation.
+14. Click **+**. The email address is listed for validation.
 
 :::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
 
 
-14. Click **Validate**. The validation process starts.
+15. Click **Validate**. The validation process starts.
 
-15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+16. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-16. Review the settings for the new connector and click **Create connector**. The connector is created.
+17. Review the settings for the new connector and click **Create connector**. The connector is created.
 
 ### Classic EAC
 

@@ -76,15 +76,15 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
-2. Configure the following settings:
+3. Configure the following settings:
     a. Under **Connection from**, choose **Office 365**.
     b. Under **Connection to**, choose **Your organization's email server**.
 
 :::image type="content" source="../../media/new-connector-configuration.png" alt-text="The screen on which the connector configuration is set":::
 
-3. Click **Next**. The **Connector name** screen appears.
+4. Click **Next**. The **Connector name** screen appears.
 
-4. Perform the following tasks:
+5. Perform the following tasks:
 
     a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
     b. Under **What do you want to do after connector is saved?**:
@@ -100,21 +100,21 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 :::image type="content" source="../../media/configuring-connector-name.png" alt-text="The screen on which further configurations for the connector are set":::
 
-5. Click **Next**. The **Use of connector** screen appears.
+6. Click **Next**. The **Use of connector** screen appears.
 
-6. Choose **Only when i have a transport rule set up that redirects messages to this connector** option.
+7. Choose **Only when i have a transport rule set up that redirects messages to this connector** option.
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
 
-7. Click **Next**. The **Routing** screen appears.
+8. Click **Next**. The **Routing** screen appears.
 
-8. Enter the smart host value for the email add-on service (for example, myhpstcontoso.com).
+9. Enter the smart host value for the email add-on service (for example, myhpstcontoso.com).
 
 :::image type="content" source="../../media/defining-smart-host.png" alt-text="The screen on which the domain name of the smart host is entered":::
 
-9. Click **Next**. The **Security restrictions** screen appears.
+10. Click **Next**. The **Security restrictions** screen appears.
 
-10. Configure these settings:
+11. Configure these settings:
 
     a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
     b. Choose **Issued by a trusted certificate authority (CA)**.
@@ -122,17 +122,17 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
    
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
-11. Click **Next**. The **Validation email** screen appears.
+12. Click **Next**. The **Validation email** screen appears.
 
-12. Specify an email address of an active mailbox on your organization's email server and click **+**. 
+13. Specify an email address of an active mailbox on your organization's email server and click **+**. 
 
 :::image type="content" source="../../media/validation-email-screen.png" alt-text="The screen on which the user can enter the validation email":::
 
-10. Click **Validate**. The validation process starts.
+14. Click **Validate**. The validation process starts.
 
-11. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-12. Verify the settings, and then click **Create connector**.
+16. Verify the settings, and then click **Create connector**.
 
 :::image type="content" source="../../media/connector-settings-display.png" alt-text="The screen on which the settings of the connector are displayed":::
 
