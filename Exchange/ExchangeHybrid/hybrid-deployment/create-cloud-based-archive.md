@@ -143,7 +143,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
 
 ### Use the Exchange Management Shell to create a cloud-based archive mailbox for an existing user
 
-Before you create the cloud-based archive mailbox, you need to assign the product license as we described in the steps 1 to 4 of [Use the EAC to create a cloud-based archive mailbox for an existing user](#use-the-EAC-to-create-a-cloud-based-archive-mailbox-for-an-existing-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+Before you create the cloud-based archive mailbox, you need to assign the product license as we described in Steps 1 to 4 of [Use the EAC to create a cloud-based archive mailbox for an existing user](#use-the-EAC-to-create-a-cloud-based-archive-mailbox-for-an-existing-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 The following example creates a cloud-based archive mailbox for Ayla who has a primary **on-premises mailbox**:
 
