@@ -71,7 +71,7 @@ There are two types of accepted domains in Exchange Online:
 
 ### Use the Classic EAC to view accepted domains
 
-1. In the Classic EAC, go to **Mail flow** \> **Accepted domains**.
+1. Navigate to **Mail flow** \> **Accepted domains**.
 
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order.
 
