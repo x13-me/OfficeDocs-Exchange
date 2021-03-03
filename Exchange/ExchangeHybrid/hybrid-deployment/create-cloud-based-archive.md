@@ -33,13 +33,9 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 ## Step 1: Enable a cloud-based archive mailbox for a primary on-premises mailbox or an online mailbox
 
-Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or an online mailbox. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Microsoft 365 admin center.
+Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox or an online mailbox. Perform these steps in the Exchange admin center or Exchange Management Shell in your on-premises Exchange organization and in the Microsoft 365 admin center.
 
-- [Create a cloud-based archive mailbox for a new user](#create-a-cloud-based-archive-mailbox-for-a-new-user)
-
-- [Create a cloud-based archive mailbox for an existing user](#create-a-cloud-based-archive-mailbox-for-an-existing-user)
-
-### Create a cloud-based archive mailbox for a new user
+### Use the EAC to create a cloud-based archive mailbox for a new user
 
 1. In the EAC in your on-premises organization, go to **Recipients** \> **Mailboxes**.
 
@@ -82,7 +78,31 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 11. Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
 
-### Create a cloud-based archive mailbox for an existing user
+### Use the Exchange Management Shell to create a cloud-based archive mailbox for a new user
+
+The following example creates a new primary **on-premises mailbox** and Active Directory user account for Pilar Pinilla with a cloud-based archive mailbox:
+
+```PowerShell
+New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ArchiveDomain archive.contoso.com -RemoteArchive -FirstName Pilar -LastName Pinilla
+```
+
+For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
+
+The following example creates a new primary **online mailbox** and Active Directory user account for Kim Akers with a cloud-based archive mailbox:
+
+```PowerShell
+New-RemoteMailbox -Name "Kim Akers" -UserPrincipalName kima@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -Archive -FirstName Kim -LastName Akers
+```
+
+For detailed syntax and parameter information, see [New-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/new-remotemailbox).
+
+After you create the primary and cloud-based archive mailboxes, wait up to 30 minutes for directory synchronization to create a corresponding user account in Microsoft 365 or Office 365. Then assign the product license as we described in Steps 8 to 10 of [Use the EAC to create a cloud-based archive mailbox for a new user](#use-the-eac-to-create-a-cloud-based-archive-mailbox-for-a-new-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+Once again, wait up to 30 minutes for directory synchronization to provision a cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+
+> [!TIP]
+> In the Microsoft 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
+
+### Use the EAC to create a cloud-based archive mailbox for an existing user
 
 1. In the Microsoft 365 admin center, go to **Users** \> **Active users**, and then select the user account that you want to create a cloud-base archive mailbox for.
 
@@ -121,17 +141,42 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
     > [!TIP]
     > In the admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
 
+### Use the Exchange Management Shell to create a cloud-based archive mailbox for an existing user
+
+Before you create the cloud-based archive mailbox, you need to assign the product license as we described in Steps 1 to 4 of [Use the EAC to create a cloud-based archive mailbox for an existing user](#use-the-EAC-to-create-a-cloud-based-archive-mailbox-for-an-existing-user). To use PowerShell to assign the license, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+
+The following example creates a cloud-based archive mailbox for Ayla who has a primary **on-premises mailbox**:
+
+```PowerShell
+Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "archive.contoso.com"
+```
+
+For detailed syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/enable-mailbox).
+
+The following example creates a cloud-based archive mailbox for Laura who has a primary **online mailbox**:
+
+```PowerShell
+Enable-RemoteMailbox -Identity laura@contoso.com -Archive
+```
+
+For detailed syntax and parameter information, see [Enable-RemoteMailbox](https://docs.microsoft.com/powershell/module/exchange/enable-remotemailbox).
+
+Wait up to 30 minutes for directory synchronization to create the cloud-based archive mailbox. Go to Step 2 to see how to verify that the cloud-based archive mailbox has been created. After the archive mailbox is created, the user can access it by using Outlook or Outlook on the web.
+
+> [!TIP]
+> In the admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
+
 ## Step 2: Verify that the cloud-based archive mailbox is created
 
 As previously explained, there might be a delay between the time that you enable a cloud-based archive mailbox and when the cloud-based archive mailbox is created. This is because directory synchronization has to run to create the cloud-based archive mailbox. Here are some ways to verify that the cloud-based archive mailbox has been created.
 
 In your Exchange Online organization, run the following PowerShell command to display properties related to an on-premises user's cloud-based archive mailbox. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-If it's an on-premises mailbox:
+If it's an **on-premises mailbox**:
 ```PowerShell
 Get-MailUser <cloud mail user> | FL *archive*
 ```
-If it's an online mailbox:
+If it's an **online mailbox**:
 ```PowerShell
 Get-Mailbox <cloud mailbox> | FL *archive*
 ```
@@ -154,11 +199,11 @@ After directory synchronization provisions the cloud-based archive, the _Archive
 
 You can also run the following PowerShell command in your on-premises Exchange organization to display properties related to the cloud-based archive mailbox of an on-premises user.
 
-If it's an on-premises mailbox:
+If it's an **on-premises mailbox**:
 ```PowerShell
 Get-Mailbox <on-premises user mailbox> | FL *archive*
 ```
-If it's an online mailbox:
+If it's an **online mailbox**:
 ```PowerShell
 Get-MailUser <on-premises mail user> | FL *archive*
 ```
