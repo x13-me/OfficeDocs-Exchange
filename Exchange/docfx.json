@@ -148,7 +148,7 @@
           "jborsecnik",
           "tiburd",
           "garycentric"
-        ],
+        ]
     },
     "fileMetadata": {
         "feedback_system": {
@@ -170,7 +170,12 @@
         "ms.prod": {
           "ExchangeServer/**/*.md": "exchange",
           "ExchangeServer2013/**/*.md": "exchange"
-        }       
+        },
+        "exchange_zero_day_banner": {
+          "ExchangeHybrid/**/*": true,
+          "ExchangeServer/**/*": true,
+          "ExchangeServer2013/**/*": true
+        }
     },
     "template": [],
     "dest": "OfficeDocs-Exchange",

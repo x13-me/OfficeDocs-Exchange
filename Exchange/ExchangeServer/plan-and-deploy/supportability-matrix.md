@@ -196,6 +196,48 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 >
 > If you are upgrading Exchange Server from an unsupported CU to the current CU and no intermediate CUs are available, you should first upgrade to the latest version of .NET that's supported by your version of Exchange Server and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported CU. Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
+To upgrade the .NET Framework on an existing Exchange Server, do the following steps:
+
+1. Put DAG member servers into [maintenance mode](../high-availability/manage-ha/manage-dags.md#performing-maintenance-on-dag-members) by replacing \<ServerName\> with the name of the server and running the following command in the Exchange Management Shell:
+
+   ```powershell
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
+   ```
+
+2. Stop all Exchange services. For example:
+   - Use services.msc
+   - Run the following Windows PowerShell command twice:
+
+     ```powershell
+     Get-Service *exch* | Stop-Service
+     ```
+
+     **Note**: We do not recommend using the *Force* switch in the command to stop all Exchange services.
+
+3. Download and install the latest supported version of the .NET Framework as described in the tables in the next section.
+
+4. Reboot the server after the .NET Framework installation is complete.
+
+5. Install the latest available CU as described in [Updates for Exchange Server](../new-features/updates.md).
+
+   For Exchange 2013, see [Updates for Exchange 2013](/exchange/updates-for-exchange-2013-exchange-2013-help)
+
+6. Reboot the server after the CU installation is complete.
+
+7. Verify that all Exchange services are in their normal start mode and started. For example:
+   - Use services.msc
+   - Run the following Windows PowerShell command:
+
+     ```powershell
+     Get-Service *exch*
+     ```
+
+8. Take DAG member servers out of [maintenance mode](../high-availability/manage-ha/manage-dags.md#performing-maintenance-on-dag-members) by replacing \<ServerName\> with the name of the server and running the following command in the Exchange Management Shell:
+
+   ```powershell
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active - Requester Maintenance
+   ```
+
 ### Exchange 2019
 
 | .NET Framework version | CU8 to CU4 | CU3, CU2 | CU1, RTM |
@@ -250,7 +292,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 - Exchange 2010 requires Windows PowerShell 2.0 on all supported versions of Windows.
 
-- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. 
+- Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows.
 
 - If there are other installed versions of Windows PowerShell or PowerShell Core that support side-by-side operation, Exchange will use only the version that it requires.
 

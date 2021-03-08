@@ -28,7 +28,7 @@ Learn more about permissions in Exchange Online and on-premises Exchange at: [Ex
 
 By default, the user that was used to create the Office 365 organization is made a member of the Organization Management role group in the Exchange Online organization. This user can manage the entire Exchange Online organization, including configuration of organization-level settings and management of Exchange Online recipients.
 
-You can add additional administrators in the Exchange Online organization, depending on the management that needs to take place. For example, you can add additional organization administrators and recipient administrators, enable specialist users to perform compliance tasks such as discovery, configure custom permissions, and more. All Exchange Online permissions management for Microsoft 365 and Office 365 administrators must be performed in the Exchange Online organization using either the Exchange admin center (EAC) or Exchange Online PowerShell.
+You can add more administrators in the Exchange Online organization, depending on the management that needs to take place. For example, you can add other organization administrators and recipient administrators, enable specialist users to perform compliance tasks such as discovery, configure custom permissions, and more. All Exchange Online permissions management for Microsoft 365 and Office 365 administrators must be performed in the Exchange Online organization using either the Exchange admin center (EAC) or Exchange Online PowerShell.
 
 > [!IMPORTANT]
 > There is no transfer of permissions between the on-premises organization and the Microsoft 365 or Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Microsoft 365 or Office 365 organization.
@@ -37,7 +37,7 @@ For more information, see [Manage Role Groups](https://docs.microsoft.com/Exchan
 
 ## Delegate mailbox permissions
 
-In on-premises Exchange deployments, users can be granted a variety of permissions to other users' mailboxes. This is called delegated mailbox permissions and it's useful when an administrative assistant needs to manage some part of another user's mailbox; for example, managing an executive's calendar. Exchange hybrid deployments support the use of some, but not all, mailbox permissions between mailboxes located in an on-premises Exchange organization and mailboxes located in Microsoft 365 or Office 365. The following sections detail which permission are, and aren't, supported; additional configuration required to support hybrid mailbox permissions; and how mailbox permissions are synchronized between your on-premises organization and Microsoft 365 or Office 365.
+In on-premises Exchange deployments, users are granted various permissions to other users' mailboxes. This is called delegated mailbox permissions and it's useful when an administrative assistant needs to manage some part of another user's mailbox; for example, managing an executive's calendar. Exchange hybrid deployments support the use of some, but not all, mailbox permissions between mailboxes located in an on-premises Exchange organization and mailboxes located in Microsoft 365 or Office 365. The following sections detail which permissions are, and aren't, supported; other configurations required to support hybrid mailbox permissions; and how mailbox permissions are synchronized between your on-premises organization and Microsoft 365 or Office 365.
 
 ### Mailbox permissions in hybrid environments
 
@@ -52,17 +52,17 @@ Not all mailbox permissions are fully supported in an Exchange hybrid environmen
 
 - **Send on Behalf**: A mailbox on an on-premises Exchange server can be granted the **Send on Behalf** permission to a Microsoft 365 or Office 365 mailbox, and vice versa. For example, a Microsoft 365 or Office 365 mailbox can be granted the **Send on Behalf** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client; cross-premises mailbox permissions aren't supported in Outlook on the web.
 
-  Some changes are needed on your Azure Active Directory Connect server for Send on Behalf permissions to sync between your on-premises Exchange servers and Exchange Online. For details, see the [Enabling support for hybrid mailbox permissions in Azure Active Directory Connect](#enabling-support-for-hybrid-mailbox-permissions-in-azure-active-directory-connect) section later in this topic.
+  Some changes are needed on your Azure Active Directory Connect server for Send on Behalf permissions to sync between your on-premises Exchange servers and Exchange Online. For details, see the [Enabling support for hybrid mailbox permissions in Azure Active Directory Connect](#enabling-support-for-hybrid-mailbox-permissions-in-azure-active-directory-connect) section later in this article.
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
 
-  To share private items with a delegate, use the the following procedure in Outlook:
+  To share private items with a delegate, use the following procedure in Outlook:
 
   1. Go to **File** > **Account Settings** > **Delegate Access**
 
      ![Delegate Access setting in Outlook](media/Private_Item_Menu1.png)
 
-  2. On the next window, click on **Add**. A new menu will appear listing the people in your organization. Select a delegate and click **OK**.
+  2. On the next window, click on **Add**. A new menu appears to list the people in your organization. Select a delegate and click **OK**.
 
   3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 
@@ -100,7 +100,7 @@ Any mailboxes that receive these permissions from another mailbox need to be mov
 
 ### Configuring your on-premises Exchange servers to support hybrid mailbox permissions
 
-To enable Full Access and Send on Behalf permissions in a hybrid deployment, additional configuration changes might be necessary depending on the version of Exchange you have installed. The following table shows which versions of Exchange support delegated mailbox permissions in a hybrid deployment with Microsoft 365 or Office 365 and what additional configuration is needed. For steps on how to configure Exchange 2013 and 2010 servers and mailboxes to support ACLs, see [Configure Exchange to support delegated mailbox permissions in a hybrid deployment](hybrid-deployment/set-up-delegated-mailbox-permissions.md).
+To enable Full Access and Send on Behalf permissions in a hybrid deployment, more configuration changes might be necessary depending on the version of Exchange you have installed. The following table shows which versions of Exchange support delegated mailbox permissions in a hybrid deployment with Microsoft 365 or Office 365 and what additional configuration is needed. For steps on how to configure Exchange 2013 and 2010 servers and mailboxes to support ACLs, see [Configure Exchange to support delegated mailbox permissions in a hybrid deployment](hybrid-deployment/set-up-delegated-mailbox-permissions.md).
 
 ****
 
@@ -124,7 +124,7 @@ In addition to configuring your on-premises Exchange servers, you also need to m
 
 As with administrator permissions, end users in Exchange Online can be granted permissions. By default, end users are granted permissions via the default role assignment policy. This policy is applied to every mailbox in the Exchange Online organization. If the permissions granted by default are sufficient, you don't need to change anything.
 
-If you do want to customize end user permissions, you can either modify the existing default role assignment policy, or you can create new assignment policies. If you create multiple assignment policies, you can assign different policies to different groups of mailboxes, enabling you to control permissions granted to each group depending on their requirements. All permissions management for Exchange Online end users must be performed in the Exchange Online organization using either the EAC or Exchange Online PowerShell.
+If you do want to customize, end user permissions, you can either modify the existing default role assignment policy, or you can create new assignment policies. If you create multiple assignment policies, you can assign different policies to different groups of mailboxes, enabling you to control permissions granted to each group depending on their requirements. All permissions management for Exchange Online end users must be performed in the Exchange Online organization using either the EAC or Exchange Online PowerShell.
 
 Like administrator permissions, end user permissions aren't transferred between the on-premises organization and the Exchange Online organization. Any permissions that you've defined in the on-premises organization must be re-created in the Exchange Online organization.
 
@@ -140,7 +140,7 @@ The following table lists the permissions granted by the default role assignment
 |My Marketplace Apps|The `My Marketplace Apps` management role enables individual users to view and modify their Microsoft Office marketplace apps.|
 |MyBaseOptions|The `MyBaseOptions` management role enables individual users to view and modify the basic configuration of their own mailbox and associated settings.|
 |MyContactInformation|The `MyContactInformation` management role enables individual users to modify their contact information, including address and phone numbers.|
-|MyDistributionGroupMembership|The `MyDistributionGroupMembership` management role enables individual users to view and modify their membership in distribution groups in an organization, provided that those distribution groups allow manipulation of group membership.|
+|MyDistributionGroupMembership|The `MyDistributionGroupMembership` management role enables individual users to view and modify their membership in distribution groups in an organization, if those distribution groups allow manipulation of group membership.|
 |MyDistributionGroups|The `MyDistributionGroups` management role enables individual users to create, modify, and view distribution groups, and to modify, view, remove, and add members to distribution groups they own.|
 |MyMailSubscription|The `MyMailSubscription` role enables individual users to view and modify their e-mail subscription settings such as message format and protocol defaults.|
 |MyProfileInformation|The `MyProfileInformation` management role enables individual users to modify their name.|
