@@ -70,15 +70,15 @@ The important settings for the connector are:
 
 To create an outbound connector from the new EAC, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
 
-1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears. 
+1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
 
 2. Click **+Add a connector**. The **New connector** screen appears.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
 
 3. Configure the following settings:
-    a. Under **Connection from**, choose **Office 365**.
-    b. Under **Connection to**, choose **Your organization's email server**.
+a. Under **Connection from**, choose **Office 365**.
+b. Under **Connection to**, choose **Your organization's email server**.
 
 :::image type="content" source="../../media/new-connector-configuration.png" alt-text="The screen on which the connector configuration is set":::
 
@@ -86,29 +86,28 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 5. Perform the following tasks:
 
-    a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
-    b. Under **What do you want to do after connector is saved?**:
-    
-        - Choose **Turn it on**
-        - Choose **Retain internal Exchange email headers (recommended)**.
+a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+b. Under **What do you want to do after connector is saved?**:
+- Choose **Turn it on**
+- Choose **Retain internal Exchange email headers (recommended)**.
 
 
 > [!NOTE]
 > > If **Retain internal Exchange email headers (recommended)** is chosen, it provides the following functionality:
 > 
-> Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages)
+> Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4. Otherwise, the inbound connector will remove the internal Exchange headers from the returning messages.
 
 :::image type="content" source="../../media/configuring-connector-name.png" alt-text="The screen on which further configurations for the connector are set":::
 
 6. Click **Next**. The **Use of connector** screen appears.
 
-7. Choose **Only when i have a transport rule set up that redirects messages to this connector** option.
+7. Choose **Only when i have a transport rule set up that redirects messages to this connector** option, as shown in the following screenshot:
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
 
 8. Click **Next**. The **Routing** screen appears.
 
-9. Enter the smart host value for the email add-on service (for example, myhpstcontoso.com).
+9. Enter the smart host value (for example, myhpstcontoso.com) for the email add-on service, as shown in the following screenshot.
 
 :::image type="content" source="../../media/defining-smart-host.png" alt-text="The screen on which the domain name of the smart host is entered":::
 
@@ -132,7 +131,7 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-16. Verify the settings, and then click **Create connector**.
+16. Verify the settings, and then click **Create connector**, as shown in the following screenshot:
 
 :::image type="content" source="../../media/connector-settings-display.png" alt-text="The screen on which the settings of the connector are displayed":::
 
@@ -275,11 +274,13 @@ To create an inbound connector from the new EAC, navigate from the Microsoft 365
 
 1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
 
-2. Click **+Add a new connector**. The **New connector** screen appears.
+2. Click **+Add a new connector**. The **New connector** screen appears, as shown in the following screenshot:
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
-3. Under **Connection from**, choose **Your organization's email server**. The **Office 365** option is then chosen by default.
+3. Under **Connection from**, choose **Your organization's email server**. 
+
+The **Office 365** option is then chosen by default, as shown in the following screenshot:
 
 :::image type="content" source="../../media/your-org-server-to-365.png" alt-text="SA screen on which the connector is configured from your organization's server to Office 365":::
 
@@ -294,7 +295,7 @@ To create an inbound connector from the new EAC, navigate from the Microsoft 365
 > [!NOTE]
 > The **Retain internal Exchange email headers (recommended)** option provides the following functionality:
 >  
-> **If checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
+> **If checked**: Preserves internal headers in messages that are returning from the email add-on service. If you had selected this value on this setting for the outbound connector that you created, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
 > 
 > **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
    

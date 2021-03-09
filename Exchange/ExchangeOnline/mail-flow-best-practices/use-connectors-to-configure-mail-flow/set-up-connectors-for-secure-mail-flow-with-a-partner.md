@@ -86,12 +86,12 @@ Below are the procedures to set up a new connector.
 6. Choose any one of the two options and click **Next**. The **Routing** screen appears.
 
 > [!NOTE]
-> If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, provide its name.
+> If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, enter its name.
 
 7. Choose any of the two options and click **Next**. The **Security restrictions** screen appears.
 
 > [!NOTE]
-> If you choose the first option, there is no need for details of smart host to be mentioned. If you choose second option, provide the domain name of the smart host in the text box.
+> If you choose the first option, you need not mention the details of smart host. If you choose second option, enter the domain name of the smart host in the text box.
 
 8. Configure the following settings:
 
@@ -99,8 +99,6 @@ Below are the procedures to set up a new connector.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
-> 
-> If you opt to define the TLS settings, it becomes mandatory to choose.
 
     b. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
 
@@ -111,7 +109,7 @@ Below are the procedures to set up a new connector.
 
 9. Click **Next**. The **Validation email** screen appears.
 
-10. Provide an email address that is part of the mailbox in your domain server, and click **+**
+10. Provide an email address that is part of the mailbox in your organization's email server, and click **+**
 
 11. Click **Validate**. The validation process starts.
 
@@ -147,18 +145,18 @@ You can set up a connector to apply security restrictions to email that your par
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
 
-2. Click **+Add a connector**. The **New conenctor** screen appears.
+2. Click **+Add a connector**. The **New conenctor** screen appears, as shown in the following screenshot.
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
 3. Select the **Partner organization** radio button under **Connection from**.
 
 > [!NOTE]
-> Once you select the **Partner organization** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
+> Once you select the **Partner organization** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that **Office 365** is chosen by default.
 
 :::image type="content" source="../../media/partner-to-365-new-eac.png" alt-text="The screen on which a connector is set up to apply security restrictions":::
 
-4. Click **Next**. The **Connector name** screen appears.
+4. Click **Next**. The **Connector name** screen appears, as shown in the following screenshot:
 
 :::image type="content" source="../../media/providing-name-to-connector.png" alt-text="The screen on which the connector is given a name":::
 
@@ -167,7 +165,7 @@ You can set up a connector to apply security restrictions to email that your par
 6. Choose one of the two options.
 
 > [!NOTE]
-> If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, provide its name.
+> If you choose the first option, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, enter its name.
 > If you choose the second option, provide an IP address of any of the recipients who are part of your organization's mailbox.
 
 :::image type="content" source="../../media/screen-for-365-to-identify-partner-org.png" alt-text="The screen on which the partner organization is identified by domain name":::
@@ -177,14 +175,14 @@ You can set up a connector to apply security restrictions to email that your par
 8. Choose **Reject email messages if they aren't sent over TLS**.
 
 > [!NOTE]
-> It is optional to choose the option of **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name**. If you choose this option, provide the domain name of the partner organization.
+> It is optional to choose the option of **And require that the subject name of the certificate that the partner uses to authenticate with Office 365 matches this domain name**. If you choose this option, enter the domain name of the partner organization.
 
-:::image type="content" source="../../media/security-restrictions-screen.png" alt-text="The csreen on which settings that define security restrictions are set":::
+:::image type="content" source="../../media/security-restrictions-screen.png" alt-text="The screen on which settings that define security restrictions are set":::
 
-9. Check the check box for **Reject email messages if they aren't sent from within this IP address range**, and provide the IP address range.
+9. Check the **Reject email messages if they aren't sent from within this IP address range** check box, and provide the IP address range, as shown in the following screenshot.
 
 > [!IMPORTANT]
->You can choose this option in addition to the option specified in Step 5; Else, you can choose either this option or the one in Step 5. Choosing atleast one of these options is mandatory.
+>You can choose this option in addition to the option specified in Step 5; Else, you can choose either this option or the one in Step 5. Choosing at least one of these options is mandatory.
 
 :::image type="content" source="../../media/defining-ip-address-range.png" alt-text="The screen on which the sender's ID address is defined as a criteria":::
 
@@ -197,7 +195,7 @@ You can set up a connector to apply security restrictions to email that your par
 The connector is created.
 
 > [!NOTE]
-> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through setup.
+> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through the setup.
 
 ### For Classic EAC
 

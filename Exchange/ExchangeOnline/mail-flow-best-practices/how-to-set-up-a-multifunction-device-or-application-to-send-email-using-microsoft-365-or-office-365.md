@@ -300,27 +300,27 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 **In Classic Exchange admin center (EAC)**
 
-    a. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
+a. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
 ![Choose from your organization's email server to Microsoft 365 or Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
 
-    b. Click **Next**, and give the connector a name.
+b. Click **Next**, and give the connector a name.
 
-    c. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from Step-1.
+c. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from Step-1.
 
-    d. Leave all the other fields with their default values, and select **Save**.
+d. Leave all the other fields with their default values, and select **Save**.
 
 **In New EAC**
 
-    a. To start the wizard, click **+ Add a connector**. The **New connector** screen appears.
-    b. Choose the options that are depicted in the following screenshot:
+a. To start the wizard, click **+ Add a connector**. The **New connector** screen appears.
+b. Choose the options that are depicted in the following screenshot:
    
 :::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
 
-    c. Click **Next**. The **Connector name** screen appears.
-    d. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen is displayed.
-    e. Choose the option **By verifying that the IP address of the sending server matches one of these IP addresses which belong exclusively to your organization**, and add the IP address from Step 1 of **Step-by-step configuration instructions for SMTP relay** section.
-    f. Click **Save**.
+c. Click **Next**. The **Connector name** screen appears.
+d. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen is displayed.
+e. Choose the option **By verifying that the IP address of the sending server matches one of these IP addresses which belong exclusively to your organization**, and add the IP address from Step 1 of **Step-by-step configuration instructions for SMTP relay** section.
+f. Click **Save**.
 
 8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
