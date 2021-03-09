@@ -151,20 +151,20 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
-3. Click **Next**. The **Connector name** screen appears. 
+4. Click **Next**. The **Connector name** screen appears. 
 
-4. Enter a name for the connector and click **Next**. The **Use of connector** screen appears.
+5. Enter a name for the connector and click **Next**. The **Use of connector** screen appears.
 
-5. Choose an option that determines when you want to use the connector, and click **Next**. The **Routing** screen appears.
+6. Choose an option that determines when you want to use the connector, and click **Next**. The **Routing** screen appears.
 
 > [!NOTE]
 > For information on choosing one of the three option on the **Use of connector** screen and the reasons for choosing that option, see **Options determining use of connector**, below in this article.
 
-6. Provide the domain name or IP address of the host computer to which Office 365 will deliver email messages.
+7. Provide the domain name or IP address of the host computer to which Office 365 will deliver email messages.
 
-7. Click **Next**. The **Security restrictions** screen appears.
+8. Click **Next**. The **Security restrictions** screen appears.
 
-8. Configure the following settings:
+9. Configure the following settings:
 
     a. Choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
@@ -182,11 +182,11 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
     c. Click **Next**. The **Validation email** screen appears.
 
-9. Specify an email that belongs to the mailbox of your organization's domain.
+10. Specify an email that belongs to the mailbox of your organization's domain.
 
-10. Click **Next**. The **Review connector** screen appears.
+11. Click **Next**. The **Review connector** screen appears.
 
-11. Review the settings you have configured and click **Create connector**.
+12. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 
