@@ -61,7 +61,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
       - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
 
       - **Filtered as spam**: The message was delivered to the Junk Email folder.
-      
+
       - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
       <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
@@ -177,7 +177,10 @@ In the EAC, you can click **View pending or completed traces** in order to view 
 When you select a specific message trace, additional information appears in the right pane. Depending on what search criteria you specified, this may include details such as the date range for which the trace was run, and the sender and intended recipients of the message.
 
 > [!NOTE]
-> Message traces containing data that is more than 7 days old are automatically deleted in the EAC after 10 days. They can't be manually deleted.
+>
+> - Message traces containing data that is more than 7 days old are automatically deleted in the EAC after 10 days. They can't be manually deleted.
+>
+> - The maximum size for a downloadable report is 500 MB. If a downloadable report exceeds 500 MB, you can't open the report in Excel or Notepad.
 
 ### View report details about a specific message more than 7 days old
 
@@ -234,6 +237,10 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
@@ -252,6 +259,7 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |H=[helostring]|The HELO or EHLO string of the connecting mail server.|
 |PTR=[ReverseDNS]|The PTR record of the sending IP address, also known as the reverse DNS address.|
+|
 
 When a message is filtered for spam, a sample custom_data entry would look similar to the following:
 
@@ -261,9 +269,13 @@ When a message is filtered for spam, a sample custom_data entry would look simil
 
 A string beginning with S:AMA is an entry from the anti-malware agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
-|AMA=SUM\|v=1\| <br/> or <br/> AMA=EV\|v=1\||The message was determined to contain malware. SUM denotes that the malware could've been detected by any number of engines. EV denotes that the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
+|AMA=SUM\|v=1\| <p> or <p> AMA=EV\|v=1\||The message was determined to contain malware. SUM denotes that the malware could've been detected by any number of engines. EV denotes that the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
 |Action=r|The message was replaced.|
 |Action=p|The message was bypassed.|
 |Action=d|The message was deferred.|
@@ -275,6 +287,7 @@ A string beginning with S:AMA is an entry from the anti-malware agent and provid
 |Action=b|The message was blocked.|
 |Name=\<*malware*\>|The name of the malware that was detected.|
 |File=\<*filename*\>|The name of the file that contained the malware.|
+|
 
 When a message contains malware, a sample custom_data entry would look similar to the following:
 
@@ -284,12 +297,17 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
-|Mode=Enforce|The mode of the rule. Possible values are:  <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|Mode=Enforce|The mode of the rule. Possible values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li></ul>|
+|
 
 When a message matches a mail flow rule, a sample custom_data entry would look similar to the following:
 
