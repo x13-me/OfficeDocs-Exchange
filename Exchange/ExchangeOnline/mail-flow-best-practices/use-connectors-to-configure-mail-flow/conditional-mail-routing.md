@@ -37,6 +37,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 3. Configure the following settings:
 
     a. Under **Connection from**, choose **Office 365**.
+    
     b. Under **Connection to**, choose either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
 
 :::image type="content" source="../../media/365-to-your-organization.png" alt-text="The screen on which a connector is being created from Office 365 to your organization's mail server":::
