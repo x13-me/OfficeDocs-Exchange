@@ -96,12 +96,12 @@ Below are the procedures to set up a new connector.
 
 8. Configure the following settings:
 
-  a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+- Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
 
-  b. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
+- Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
 
 > [!NOTE]
 > If you are choosing the **Issue by a trusted certificate authority (CA)** option, the **Add the subject name or subject alternative name (SAN) matches this domain name** option is activated.
