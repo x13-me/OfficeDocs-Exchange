@@ -87,6 +87,7 @@ b. Under **Connection to**, choose **Your organization's email server**.
 5. Perform the following tasks:
 
 a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+
 b. Under **What do you want to do after connector is saved?**:
 - Choose **Turn it on**
 - Choose **Retain internal Exchange email headers (recommended)**.
@@ -116,7 +117,9 @@ b. Under **What do you want to do after connector is saved?**:
 11. Configure these settings:
 
     a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+    
     b. Choose **Issued by a trusted certificate authority (CA)**.
+    
     c. Choose **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the Step-8 (for example, myhost.contoso.com)
    
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
@@ -288,9 +291,11 @@ The **Office 365** option is then chosen by default, as shown in the following s
 
 5. Perform the following actions:
 
-    a. Enter a descriptive name (for example, Contoso Signature Service to Office 365).
-    b. Choose **Turn it on**.
-    c. Choose **Retain internal Exchange email headers (recommended)**.
+   a. Enter a descriptive name (for example, Contoso Signature Service to Office 365).
+   
+   b. Choose **Turn it on**.
+   
+   c. Choose **Retain internal Exchange email headers (recommended)**.
     
 > [!NOTE]
 > The **Retain internal Exchange email headers (recommended)** option provides the following functionality:

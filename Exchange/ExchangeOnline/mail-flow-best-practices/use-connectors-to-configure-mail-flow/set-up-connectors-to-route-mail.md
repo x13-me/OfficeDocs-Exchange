@@ -166,21 +166,21 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 9. Configure the following settings:
 
-    a. Choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+a. Choose the box **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
 > 
 > If you opt to define the TLS settings, it becomes mandatory to choose.
 
-    b. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
+b. Choose any one of the two options under **Connect only if the recipient's email server certificate matches this criteria**.
 
 > [!NOTE]
 > If you are choosing the **Issue by a trusted certificate authority (CA)** option, the **Add the subject name or subject alternative name (SAN) matches this domain name** option is activated.
 > 
 > It is optional to choose the **Add the subject name or subject alternative name (SAN) matches this domain name** option. However, if you choose it, you must enter the domain name to which the certificate name matches.
 
-    c. Click **Next**. The **Validation email** screen appears.
+c. Click **Next**. The **Validation email** screen appears.
 
 10. Specify an email that belongs to the mailbox of your organization's domain.
 
