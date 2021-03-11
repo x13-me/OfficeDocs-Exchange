@@ -86,11 +86,11 @@ b. Under **Connection to**, choose **Your organization's email server**.
 
 5. Perform the following tasks:
 
-a. Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
+- Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
 
-b. Under **What do you want to do after connector is saved?**:
-- Choose **Turn it on**
-- Choose **Retain internal Exchange email headers (recommended)**.
+- Under **What do you want to do after connector is saved?**:
+    - Choose **Turn it on**
+    - Choose **Retain internal Exchange email headers (recommended)**.
 
 
 > [!NOTE]
