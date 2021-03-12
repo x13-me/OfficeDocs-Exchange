@@ -127,18 +127,20 @@ This example updates the IM certificate thumbprint on all Exchange 2016 and Exch
 
 - **Setting override name**: "IM Override" (must use the one already in place from previous steps since we are updating, not creating new)
 
+- **Skype for Business server name**: skype01.contoso.com
+
 - **Certificate thumbprint**: NKT34A740E9D225A1A06193A9D44B2CE22771080
 
 - **Override reason**: Configure IM
 
 ```powershell
-Set-SettingOverride -Identity "IM Override"  -Parameters @("IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM"
+Set-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section IMSettings -Parameters @("IMServerName=<Skype server/pool  name>","IMCertificateThumbprint=<Certificate Thumbprint>") -Reason "<DescriptiveReason>" [-Server <ServerName>]
 ```
 
 This example specifies the IM server and IM certificate thumbprint, but only on the server named Mailbox01.
 
 ```powershell
-Set-SettingOverride -Identity "Mailbox01 IM Override"  -Parameters @("IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM" -Server Mailbox01
+Set-SettingOverride -Identity "Mailbox01 IM Override"  -Parameters @("IMServerName=skype01.contoso.com","IMCertificateThumbprint=NKT34A740E9D225A1A06193A9D44B2CE22771080") -Reason "Configure IM" -Server Mailbox01
 ```
 
 ### Step 2: Refresh the IM settings on the Exchange server

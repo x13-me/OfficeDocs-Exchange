@@ -229,20 +229,12 @@ If you have a hybrid configuration with an Microsoft 365 or Office 365 connector
 
 If you have a hybrid configuration and the recipient is located in the on-premises Exchange organization, it's possible that the recipient's email address isn't properly synchronized with Microsoft 365 or Office 365. Follow these steps to synchronize directories manually:
 
-1. Log into the on-premises server that's running the Directory Synchronization Tools.
+1. Log into the on-premises server that's running Azure AD Connect sync.
 
 2. Open Windows PowerShell on the server and run the following commands:
 
    ```powershell
-   CD "C:\Program Files\Microsoft Online Directory Sync"
-   ```
-
-   ```powershell
-   DirSyncConfigShell.psc1
-   ```
-
-   ```powershell
-   Start-OnlineCoexistenceSync
+   Start-ADSyncSyncCycle -PolicyType Delta
    ```
 
 When synchronization completes, repeat the steps in the [Verify that the recipient exists and has an active license assigned](#verify-that-the-recipient-exists-and-has-an-active-license-assigned) section to verify that the recipient address exists in Exchange Online.

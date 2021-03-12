@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Microsoft Exchange Server and Exchange Online can help you perform discovery searches for relevant content within mailboxes. Exchange Server and Exchange Online also offer federated search capability and integration with Microsoft SharePoint 2013 and Microsoft SharePoint Online. Using the eDiscovery Center in SharePoint, you can search for and hold all content related to a case, including SharePoint 2013 and SharePoint Online websites, documents, file shares indexed by SharePoint (SharePoint 2013 only), mailbox content in Exchange, and archived Lync 2013 content. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
+description: If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
@@ -15,7 +15,6 @@ ms.collection:
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
-
 ---
 
 # In-Place eDiscovery
@@ -23,10 +22,10 @@ manager: serdars
 > [!IMPORTANT]
 >  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
 
-If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Microsoft Exchange Server and Exchange Online can help you perform discovery searches for relevant content within mailboxes. Exchange Server and Exchange Online also offer federated search capability and integration with Microsoft SharePoint 2013 and Microsoft SharePoint Online. Using the eDiscovery Center in SharePoint, you can search for and hold all content related to a case, including SharePoint 2013 and SharePoint Online websites, documents, file shares indexed by SharePoint (SharePoint 2013 only), mailbox content in Exchange, and archived Lync 2013 content. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
+If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 
 > [!IMPORTANT]
-> In-Place eDiscovery is a powerful feature that allows a user with the correct permissions to potentially gain access to all messaging records stored throughout the Exchange Server or Exchange Online organization. It's important to control and monitor discovery activities, including addition of members to the Discovery Management role group, assignment of the Mailbox Search management role, and assignment of mailbox access permission to discovery mailboxes.
+> In-Place eDiscovery is a powerful feature that allows a user with the correct permissions to potentially gain access to all messaging records stored throughout the Exchange Online organization. It's important to control and monitor discovery activities, including addition of members to the Discovery Management role group, assignment of the Mailbox Search management role, and assignment of mailbox access permission to discovery mailboxes.
 
 ## How In-Place eDiscovery works
 <a name="howitworks"> </a>
@@ -71,26 +70,9 @@ Auditing of RBAC role changes, which is enabled by default, makes sure that adeq
 ## Custom management scopes for In-Place eDiscovery
 <a name="customscopes"> </a>
 
-You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Server or Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You do this by creating a custom management scope that uses a custom recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties.
+You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You do this by creating a custom management scope that uses a custom recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties.
 
 For In-Place eDiscovery, the only property on a user mailbox that you can use to create a recipient filter for a custom scope is distribution group membership. If you use other properties, such as _CustomAttributeN_, _Department_, or _PostalCode_, the search fails when it's run by a member of the role group that's assigned the custom scope. For more information, see [Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md).
-
-## Integration with SharePoint Server and SharePoint Online
-<a name="SP"> </a>
-
-Exchange Server and Exchange Online offer integration with SharePoint Server and SharePoint Online, allowing a discovery manager to use eDiscovery Center in SharePoint to perform the following tasks:
-
-- **Search and preserve content from a single location**: An authorized discovery manager can search and preserve content across SharePoint and Exchange, including Lync content such as instant messaging conversations and shared meeting documents archived in Exchange mailboxes.
-
-- **Case management** eDiscovery Center uses a case management approach to eDiscovery, allowing you to create cases and search and preserve content across different content repositories for each case.
-
-- **Export search results**: A discovery manager can use eDiscovery Center to export search results. Mailbox content included in search results is exported to a PST file.
-
-SharePoint also uses Microsoft Search Foundation for content indexing and querying. Regardless of whether a discovery manager uses the EAC or the eDiscovery Center to search Exchange content, the same mailbox content is returned.
-
-In on-premises deployments, before you can use eDiscovery Center in SharePoint to search Exchange mailboxes, you must establish trust between the two applications. In Exchange Server and SharePoint 2013, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
-
-For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://support.microsoft.com/office/a18f8975-aa7f-43b4-a7d6-001d14744d8e).
 
 ## eDiscovery in an Exchange hybrid deployment
 <a name="oauth"> </a>
@@ -106,6 +88,8 @@ OAuth authentication supports the following eDiscovery scenarios in an Exchange 
 - Search on-premises mailboxes by using the eDiscovery Center in SharePoint Online.
 
 For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
+
+For information about running an In-Place eDiscovery search in Exchange Server, see [Create an In-Place eDiscovery search in Exchange Server](../../../ExchangeServer/policy-and-compliance/ediscovery/create-searches.md).
 
 ## Discovery mailboxes
 <a name="discmbxs"> </a>
@@ -124,77 +108,13 @@ Exchange Setup creates one discovery mailbox with the display name **Discovery S
 
 In-Place eDiscovery also uses a system mailbox with the display name **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}** to hold In-Place eDiscovery metadata. System mailboxes aren't visible in the EAC or in Exchange address lists. In on-premises organizations, before removing a mailbox database where the In-Place eDiscovery system mailbox is located, you must move the mailbox to another mailbox database. If the mailbox is removed or corrupted, your discovery managers are unable to perform eDiscovery searches until you re-create the mailbox. For details, see [Delete and re-create the default discovery mailbox in Exchange](delete-and-re-create-default-discovery-mailbox.md).
 
-## Using In-Place eDiscovery
-<a name="using"> </a>
-
-Users who have been added to the Discovery Management role group can perform In-Place eDiscovery searches. You can perform a search using the web-based interface in the EAC. This makes it easier for non-technical users such as records managers, compliance officers, or legal and HR professionals to use In-Place eDiscovery. You can also use Exchange Online PowerShell to perform a search. For more information, see [Create an In-Place eDiscovery search](create-in-place-ediscovery-search.md)
-
-> [!NOTE]
-> In on-premises organizations, you can use In-Place eDiscovery to search mailboxes located on Exchange Server Mailbox servers. To search mailboxes located on Exchange 2010 Mailbox servers, use Multi-Mailbox Search on an Exchange 2010 server. > > In a hybrid deployment, which is an environment where some mailboxes exist on your on-premises Mailbox servers and some mailboxes exist in a cloud-based organization, you can perform In-Place eDiscovery searches of your cloud-based mailboxes using the EAC in your on-premises organization. If you intend to copy messages to a discovery mailbox, you must select an on-premises discovery mailbox. Messages from cloud-based mailboxes that are returned in search results are copied to the specified on-premises discovery mailbox. To learn more about hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
-
-The **In-Place eDiscovery & Hold** wizard in the EAC allows you to create an In-Place eDiscovery search and also use In-Place Hold to place search results on hold. When you create an In-Place eDiscovery search, a search object is created in the In-Place eDiscovery system mailbox. This object can be manipulated to start, stop, modify, and remove the search. After you create the search, you can choose to get an estimate of search results, which includes keyword statistics that help you determine query effectiveness. You can also do a live preview of items returned in the search, allowing you to view message content, the number of messages returned from each source mailbox and the total number of messages. You can use this information to further fine-tune your query if required.
-
-When satisfied with the search results, you can copy them to a discovery mailbox. You can also use the EAC or Outlook to export a discovery mailbox or some of its content to a PST file.
-
-When creating an In-Place eDiscovery search, you must specify the following parameters:
-
-- **Name**: The search name is used to identify the search. When you copy search results to a discovery mailbox, a folder is created in the discovery mailbox using the search name and the timestamp to uniquely identify search results in a discovery mailbox.
-
-- **Mailboxes**: You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search.
-
-    In Exchange Online, you can also specify Microsoft 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add a Microsoft 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched.
-
-- **Search query**: You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query:
-
-  - **Keywords**: You can specify keywords and phrases to search message content. You can also use the logical operators **AND**, **OR**, and **NOT**. Additionally, Exchange Server also supports the **NEAR** operator, allowing you to search for a word or phrase that's in proximity to another word or phrase.
-
-    To search for an exact match of a multiple word phrase, you must enclose the phrase in quotation marks. For example, searching for the phrase "plan and competition" returns messages that contain an exact match of the phrase, whereas specifying **plan AND competition** returns messages that contain the words **plan** and **competition** anywhere in the message.
-
-    Exchange Server also supports the Keyword Query Language (KQL) syntax for In-Place eDiscovery searches.
-
-    > [!NOTE]
-    > In-Place eDiscovery does not support regular expressions.
-
-    You must capitalize logical operators such as **AND** and **OR** for them to be treated as operators instead of keywords. We recommend that you use explicit parenthesis for any query that mixes multiple logical operators to avoid mistakes or misinterpretations. For example, if you want to search for messages that contain either WordA or WordB AND either WordC or WordD, you must use **(WordA OR WordB) AND (WordC OR WordD)**.
-
-  - **Start and End dates**: By default, In-Place eDiscovery doesn't limit searches by a date range. To search messages sent during a specific date range, you can narrow the search by specifying the start and end dates. If you don't specify an end date, the search will return the latest results every time you restart it.
-
-  - **Senders and recipients**: To narrow down the search, you can specify the senders or recipients of messages. You can use email addresses, display names, or the name of a domain to search for items sent to or from everyone in the domain. For example, to find email sent by or sent to anyone at Contoso, Ltd, specify **\@contoso.com** in the **From** or the **To/cc** field in the EAC. You can also specify **\@contoso.com** in the _Senders_ or _Recipients_ parameters in Exchange Online PowerShell.
-
-  - **Message types**: By default, all message types are searched. You can restrict the search by selecting specific message types such as email, contacts, documents, journal, meetings, notes and Lync content.
-
-The following screenshot shows an example of a search query in the EAC.
-
-![Configure eDiscovery Search Query](../../media/TA_MRM_SearchQuery.png)
-
-When using In-Place eDiscovery, also consider the following:
-
-- **Attachments**: In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [File Formats Indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
-
-- **Unsearchable items**: Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items.
-
-- **Encrypted items**: Because messages encrypted using S/MIME aren't indexed by Exchange Search, In-Place eDiscovery doesn't search these messages. If you select the option to include unsearchable items in search results, these S/MIME encrypted messages are copied to the discovery mailbox.
-
-- **IRM-protected items**: Messages protected using Information Rights Management (IRM) are indexed by Exchange Search and therefore included in the search results if they match query parameters. Messages must be protected by using an Active Directory Rights Management Services (AD RMS) cluster in the same Active Directory forest as the Mailbox server. For more information, see [Information Rights Management](https://docs.microsoft.com/Exchange/policy-and-compliance/information-rights-management).
-
-    > [!IMPORTANT]
-    > When Exchange Search fails to index an IRM-protected message, either due to a decryption failure or because IRM is disabled, the protected message isn't added to the list of failed items. If you select the option to include unsearchable items in search results, the results may not include IRM-protected messages that could not be decrypted. > > To include IRM-protected messages in a search, you can create another search to include messages with .rpmsg attachments. You can use the query string `attachment:rpmsg` to search all IRM-protected messages in the specified mailboxes, whether successfully indexed or not. This may result in some duplication of search results in scenarios where one search returns messages that match the search criteria, including IRM-protected messages that have been indexed successfully. The search doesn't return IRM-protected messages that couldn't be indexed. > > Performing a second search for all IRM-protected messages also includes the IRM-protected messages that were successfully indexed and returned in the first search. Additionally, the IRM-protected messages returned by the second search may not match the search criteria such as keywords used for the first search.
-
-- **De-duplication**: When copying search results to a discovery mailbox, you can enable de-duplication of search results to copy only one instance of a unique message to the discovery mailbox. De-duplication has the following benefits:
-
-  - Lower storage requirement and smaller discovery mailbox size due to reduced number of messages copied.
-
-  - Reduced workload for discovery managers, legal counsel, or others involved in reviewing search results.
-
-  - Reduced cost of eDiscovery, depending on the number of duplicate items excluded from search results.
-
 ## Estimate, preview, and copy search results
 <a name="estimate"> </a>
 
 After an In-Place eDiscovery search is completed, you can view search result estimates in the Details pane in the EAC. The estimate includes number of items returned and total size of those items. You can also view keyword statistics, which returns details about number of items returned for each keyword used in the search query. This information is helpful in determining query effectiveness. If the query is too broad, it may return a much bigger data set, which could require more resources to review and raise eDiscovery costs. If the query is too narrow, it may significantly reduce the number of records returned or return no records at all. You can use the estimates and keyword statistics to fine-tune the query to meet your requirements.
 
 > [!NOTE]
-> In Exchange Server and Exchange Online, keyword statistics also include statistics for non-keyword properties such as dates, message types, and senders/recipients specified in a search query.
+> Keyword statistics also include statistics for non-keyword properties such as dates, message types, and senders/recipients specified in a search query.
 
 You can also preview the search results to further ensure that messages returned contain the content you're searching for and further fine-tune the query if required. eDiscovery Search Preview displays the number of messages returned from each mailbox searched and the total number of messages returned by the search. The preview is generated quickly without requiring you to copy messages to a discovery mailbox.
 
@@ -247,9 +167,9 @@ Besides the search log included when copying search results to a discovery mailb
 ## In-Place eDiscovery and In-Place Hold
 <a name="hold"> </a>
 
-As part of eDiscovery requests, you may be required to preserve mailbox content until a lawsuit or investigation is disposed. Messages deleted or altered by the mailbox user or any processes must also be preserved. In Exchange Server, this is accomplished by using In-Place Hold. For details, see [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
+As part of eDiscovery requests, you may be required to preserve mailbox content until a lawsuit or investigation is disposed. Messages deleted or altered by the mailbox user or any processes must also be preserved. This is accomplished by using In-Place Hold. For details, see [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
 
-In Exchange Server, you can use the new **In-Place eDiscovery & Hold** wizard to search items and preserve them for as long as they're required for eDiscovery or to meet other business requirements. When using the same search for both In-Place eDiscovery and In-Place Hold, be aware of the following:
+Be aware of the following:
 
 - You can't use the option to search all mailboxes. You must select the mailboxes or distribution groups.
 
@@ -288,18 +208,13 @@ The following table contains links to topics that will help you learn about and 
 |:-----|:-----|
 |[Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions.md)|Learn how to give a user access to use In-Place eDiscovery in the EAC to search Exchange mailboxes. Adding a user to the Discovery Management role group also allows the person to use the eDiscovery Center in SharePoint 2013 and SharePoint Online to search Exchange mailboxes.|
 |[Create a discovery mailbox](create-a-discovery-mailbox.md)|Learn how to use Exchange Online PowerShell to create a discovery mailbox and assign access permissions.|
-|[Create an In-Place eDiscovery search](create-in-place-ediscovery-search.md)|Learn how to create an In-Place eDiscovery search, and how to estimate and preview eDiscovery search results.|
 |[Message properties and search operators for In-Place eDiscovery](message-properties-and-search-operators.md)|Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.|
-|[Search limits for In-Place eDiscovery in Exchange Online](search-limits.md)|Learn In-Place eDiscovery limits in Exchange Online that help maintain the health and quality of eDiscovery services for Microsoft 365 or Office 365 organizations.|
-|[Start or Stop an In-Place eDiscovery Search](https://docs.microsoft.com/microsoft-365/compliance/content-search)|Learn how to start, stop, and restart eDiscovery searches.|
-|[Modify an In-Place eDiscovery Search](https://docs.microsoft.com/microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log)|Learn how to modify an existing eDiscovery search.|
+|[Search limits for In-Place eDiscovery](search-limits.md)|Learn In-Place eDiscovery limits in Exchange Online that help maintain the health and quality of eDiscovery services for Microsoft 365 or Office 365 organizations.|
 |[Export eDiscovery search results to a PST file](export-search-results.md)|Learn how to export the results of an eDiscovery search to a PST file.|
 |[Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md)|Learn how to use custom management scopes to limit the mailboxes that a discovery manager can search.|
-|[Create and run queries in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center)|Learn how to delete an eDiscovery search.|
 |[Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)|Learn how to use Content Search to search for and then delete email messages.|
 |[Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md)|Use this process to reduce the size of a discovery mailbox that's larger than 50 GB.|
 |[Delete and re-create the default discovery mailbox in Exchange](delete-and-re-create-default-discovery-mailbox.md)|Learn how to delete the default discovery mailbox, re-create it, and then reassign permissions to it. Use this procedure if this mailbox has exceeded the 50 GB limit and you don't need the search results.|
 |[Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)|Learn about the eDiscovery scenarios in an Exchange hybrid deployment that require you to configure OAuth authentication.|
-|[Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help)|Learn how to configure Exchange Server so that you can use the eDiscovery Center in SharePoint 2013 to search Exchange mailboxes.|
 
-For more information about eDiscovery in Microsoft 365, Office 365, Exchange Server, SharePoint 2013, and Lync 2013, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).
+For more information about eDiscovery in Microsoft 365, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery).

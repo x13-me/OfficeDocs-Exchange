@@ -181,7 +181,7 @@ When you prepare specific domains in your Active Directory forest, the following
 
 - If the domain that you want to prepare was created **after** you ran /PrepareAD in Step 2, your account also needs to be a member of the Organization Management role group in Exchange.
 
-To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
+To prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```console
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
@@ -211,8 +211,8 @@ To verify that you successfully prepared Active Directory and domains for Exchan
 
 - Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).
 
-> [!CAUTION]
-> Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.
+  > [!CAUTION]
+  > Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.
 
 - Check the Exchange setup log to verify that Active Directory preparation has completed successfully. For more information, see [Verify an Exchange installation](post-installation-tasks/verify-installation.md). Note that you can't use the **Get-ExchangeServer** cmdlet as described in the topic until you've completed the installation of at least one Exchange Mailbox server in an Active Directory site.
 
@@ -229,8 +229,9 @@ The tables in the following sections contain the Exchange objects in Active Dire
 ::: moniker range="exchserver-2019"
 ### Exchange 2019 Active Directory versions
 
-|**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
+| Exchange 2019 version | rangeUpper | objectVersion (Default) | objectVersion (Configuration) |
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU8|17002|13239|16756|
 |Exchange 2019 CU7|17001|13238|16755|
 |Exchange 2019 CU6|17001|13237|16754|
 |Exchange 2019 CU5|17001|13237|16754|
@@ -245,8 +246,9 @@ The tables in the following sections contain the Exchange objects in Active Dire
 ::: moniker range="exchserver-2016"
 ### Exchange 2016 Active Directory versions
 
-|**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
+| Exchange 2016 version | rangeUpper | objectVersion (Default) | objectVersion (Configuration) |
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU19|15333|13239|16219|
 |Exchange 2016 CU18|15332|13238|16218|
 |Exchange 2016 CU17|15332|13237|16217|
 |Exchange 2016 CU16|15332|13237|16217|

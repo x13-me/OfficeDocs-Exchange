@@ -24,13 +24,8 @@ Message trace in the modern EAC improves upon the original message trace that wa
 
 - To run a message trace, you need to be a member of one of the following role groups:
 
-  - Organization Management
-  - Security Administrator
-  - Security Reader
-  - Compliance Management
-  - Help Desk
-  - Hygiene Management
-  - View-Only Organization Management
+  - Global Administrator
+  - Exchange Administrator
 
   For more information, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md) and [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md).
 
@@ -145,10 +140,12 @@ The available report types are:
 - **Enhanced summary** or **Extended**: These reports are only available as downloadable CSV files, and require one or more of the following filtering options regardless of the time range: **Senders**, **Recipients**, or **Message ID**. You can use wildcards for the senders or the recipients (for example, \*@contoso.com). The Enhanced summary report returns up to 50000 results. The Extended report returns up to 1000 results.
 
 > [!NOTE]
-> 
+>
 > - Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available to download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before your queued request starts to be processed.
-> 
+>
 > - While you can select an Enhanced summary or Extended report for any date/time range, commonly the last four hours of archived data will not yet be available for these two types of reports.
+>
+> - The maximum size for a downloadable report is 500 MB. If a downloadable report exceeds 500 MB, you can't open the report in Excel or Notepad.
 
 When you click **Next**, you're presented with a summary page that lists the filtering options that you selected, a unique (editable) title for the report, and the email address that receives the notification when the message trace completes (also editable, and must be in one of your organization's accepted domains). Click **Prepare report** to submit the message trace. On the main **Message trace** page, you can see the status of the report in the **Downloadable reports** section.
 
