@@ -61,7 +61,7 @@ After all migration batches have been completed, all users can use their migrate
 ## Migration limitations
 
 > [!NOTE]
-> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
+> The largest single email message that can be migrated is based on the transport configuration for your configuration. The default limit is 35 MB. To increase this limit, see [Office 365 now supports larger email messages](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb/).
 
 Throughput limitations for contacts and calendars completely depend on the quota restrictions for your tenant's service account on the Google Workspace side.
 
@@ -156,6 +156,9 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
 
+   > [!NOTE]
+   > The option _Add a domain_ will not be available if using the legacy free edition of G Suite. 
+
 3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
    > [!NOTE]
@@ -163,7 +166,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add domain](../media/add-a-new-domain-im8.png)
 
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
    ![Verify domain](../media/verify-ownership-im9.png)
 
@@ -182,7 +185,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add domain alias](../media/add-a-new-domain-alias-im10.png)
 
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
+4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
 
    ![Verify domain](../media/verify-ownership-im9.png)
 
@@ -204,7 +207,13 @@ For more advanced scenarios, you may be able to deploy Azure Active Directory (A
 
 We recommend that the primary address (sometimes referred to as the "User ID") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and Google Workspace. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their Google Workspace routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
 
+> [!NOTE]
+> We recommend that the Default MRM Policy and Archive policies be disabled for these users until after their migration has been completed.  When such features remain enabled during migration, there is a chance that some messages will end up being considered "missing" during the content verification process.
+
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
+
+> [!IMPORTANT]
+> Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
 1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
 
@@ -261,7 +270,10 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
     ![Schedule batch migration](../media/schedule-batch1-migration.png)
     
-    The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
+    Once the batch status changes from **Syncing** to **Synced**, you can complete the batch.
+    
+    > [!NOTE]
+    > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
     
 16. To complete the batch, select the migration group.
 
@@ -306,7 +318,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-9. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
+9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
@@ -320,6 +332,9 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 11. After the batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.
 
     ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
+    
+    > [!NOTE]
+    > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
 
 During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, the forwarding address that routes mail from Microsoft 365 or Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their Google Workspace mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their Google Workspace mailbox.
 
@@ -372,6 +387,9 @@ During completion, another incremental sync is run to copy any changes that have
 
 4. Start the migration batch.
 
+   > [!NOTE]
+   > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
+
 ### Complete the migration batch in Microsoft 365 or Office 365
 
 When the migration batch has reached the state of **Synced**, it can be completed by running the `Complete-MigrationBatch` cmdlet.
@@ -384,4 +402,3 @@ During completion, another incremental sync is run to copy any changes that have
 ## Finalizing your migration
 
 After you have successfully migrated all of your Google Workspace users to Microsoft 365 or Office 365, you can switch your primary MX record to point to Microsoft 365 or Office 365. The update to the MX record will propagate slowly, taking up to the length of time in the record's previous TTL (time to live). At this point, you are free to decommission your source Google Workspace tenant.
-
