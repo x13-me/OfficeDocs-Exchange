@@ -26,11 +26,11 @@ You can use the Exchange admin center to manage email settings for your organiza
 
 You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
-1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account.
 
-2. In the Microsoft 365 admin center, choose **Admin centers** > **Exchange**.
+2. In the left navigation pane, navigate to **Admin centers** > **Exchange**.
 
-    ![New EAC](media/EAC-selection.PNG)
+    ![New EAC](media/new-eac-selection.png)
 
 You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
@@ -41,38 +41,43 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 
 Here's what the new Exchange admin center looks like.
 
-![New EAC homepage](media/new-EAC-homepage.PNG)
+![New EAC homepage](media/new-eac-home-page.png)
 
 ### Home page
 
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
-1. You can also personalize your dashboard, to do that click **+ Add card** and drag a card to the location you want on the dashboard.
+1. To personalize your dashboard, click **+ Add card** on top of the homepage and drag any card onto the dashboard to the location you want.
 
-2. Click **What's New?** to learn about the new updates in new Exchange admin center.
+2. To learn about the new updates in the new Exchange admin center, click **What's New?**.
 
-3. Click **My account tile** to sign out of the new Exchange admin center and sign in as a different user.
+3. To sign out of the new Exchange admin center and sign in as a different user, click **My account tile**. You can also sign in with another account.
 
-4. In **Training & guide**, you can select **Training for admins** for a video tutorial and **Documentation** to learn about the new Exchange admin center.
+4. To learn about the new Exchange admin center, in **Training & guide**, select **Training for admins** for a video tutorial and **Documentation**.
 
-5. Click ![get help](media/get-help-icon.PNG) , if you need help from Microsoft 365 Support Assistant.
+5. To get help from Microsoft 365 Support assistant, click ![get help](media/get-help-icon.PNG).
 
-6. Click ![give feedback](media/give-feedback-icon.PNG) , if you want to give feedback to help improve the new Exchange admin center.
+6. To give feedback to help improve the new Exchange admin center, click ![give feedback](media/give-feedback-icon.PNG). While it's not necessary to provide your email ID, you can click **You can contact me about this feedback** checkbox and provide your email ID to help the team to resolve your concerns faster.
 
-![New EAC feature pane](media/new-EAC-homepage-feature-pane.PNG)
+![New EAC feature pane](media/new-eac-home-page-feature-pane.png)
 
 ### Feature pane
 
-Here are the features you'll find in the left-hand navigation.
+Here are the features available in the left-hand navigation.
 
 |**Area**|**What you do here**|
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
-|**Mail flow**|Manage remote domains and accepted domains, add connectors, trace messages and manage alert and alert policies.|
+|**Mail flow**|Trace messages, create rules, manage remote domains and accepted domains, add connectors, manage alert, and alert policies.|
+|**Roles**|Manage administrator roles.|
 |**Migration**|Migrate mailboxes in batches.|
 |**Reports**|View reports on mail flow and migration batches.|
 |**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
-|**More features**|Access features and services from the Classic Exchange admin center.|
+|**Organization**|Manage organization sharing and apps for Outlook.|
+|**Public folders**|Manage public folders and public folder mailboxes.|
+
+> [!NOTE]
+> You can also access **Classic Exchange admin center** and **Microsoft 365 admin center**, by selecting them at the bottom of left navigation panel.
 
 ### Tabs
 
@@ -86,7 +91,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 When you select a tab, in most cases you'll see a list view. The list view in the new Exchange admin center is designed to remove limitations that existed in the Classic Exchange admin center and Exchange Control Panel.
 
-![New EAC tabs](media/new-EAC-homepage-details-pane.PNG)
+![New EAC tabs](media/new-eac-home-page-details-pane.png)
 
 ### Details pane
 

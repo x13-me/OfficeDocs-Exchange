@@ -32,15 +32,15 @@ The following environments will take advantage of this Microsoft 365 or Office 3
 
 - In Exchange Server 2010 environments
 
-- When a hybrid relationship between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365 has not been configured
+- When a hybrid relationship between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365 hasn't been configured
 
-- When hybrid Modern Authentication has not been enabled between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365
+- When hybrid Modern Authentication hasn't been enabled between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365
 
 ![Basic authentication in Outlook for iOS and Android](../../media/outlook_mobile_basic_auth.png)
 
 Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utilizes the native Microsoft sync technology for data synchronization which is protected by TLS-secured connections end-to-end, between Microsoft 365 or Office 365 and the app.
 
-The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status. The region in which this data is synchronized into depends on the IP address in use by the mobile device at the time synchronization is setup. If you have a hybrid setup with an Exchange Online tenant, the on-premises data is not synchronized into your tenant; instead, the data is synchronized into Outlook.com in the same way as if you had an Exchange Server without hybrid. If you want to control and manage your on-premises data from within your tenant, you need to enable [hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status. The region in which this data is synchronized into depends on the IP address in use by the mobile device at the time synchronization is set up. If you have a hybrid setup with an Exchange Online tenant, the on-premises data is not synchronized into your tenant; instead, the data is synchronized into Outlook.com in the same way as if you had an Exchange Server without hybrid. If you want to control and manage your on-premises data from within your tenant, you need to enable [hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 Data synchronization between the Exchange on-premises environment and Exchange Online happens independent of user behavior. This characteristic ensures that new messages are delivered to the devices very quickly. For more information on how the user authentication model enables data synchronization independently of user behavior, see [Passwords and security in Outlook for iOS and Android for Exchange Server](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/passwords-and-security).
 
@@ -58,6 +58,7 @@ By default, Microsoft engineers have zero standing administrative privileges and
 [ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Microsoft 365 and Office 365 have implemented.
 
 ## Connectivity Requirements
+
 Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are included in your allowlist:
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Microsoft 365 and Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
@@ -67,7 +68,7 @@ Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveS
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Microsoft 365 or Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ## Client features that aren't supported
-The following features are not support for on-premises mailboxes using basic authentication with Outlook for iOS and Android:
+The following features aren't support for on-premises mailboxes using basic authentication with Outlook for iOS and Android:
 
 - Draft folder and Draft messages synchronization
 
