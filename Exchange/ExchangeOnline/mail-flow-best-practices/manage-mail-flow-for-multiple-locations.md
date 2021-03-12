@@ -12,7 +12,8 @@ ms.collection:
 description: Learn how to manage mail flow in an Exchange hybrid environment (some mailboxes are on-premises and some are in Exchange Online).
 f1.keywords:
 - NOCSH
-ms.reviewer: 
+ms.reviewer:
+audience: ITPro
 title: Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
 
 ---
