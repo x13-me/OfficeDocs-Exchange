@@ -135,6 +135,21 @@ When a message matches the scope of multiple journal rules, all matching rules w
 
 Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
 
+### Duplicate journal report scenarios in a hybrid Exchange environment
+In a hybrid Exchange environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
+
+1. **Cloud to cloud**: Any situations where email is forked will lead to duplicate journaling, such as:
+
+- Transport chipping (too many recipients on the message).
+
+- Internal and external recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
+
+- Any future needs where the cloud needs to fork the message.
+
+2. **On-premises to cloud**: Once when on-premises journals and once when the cloud journals. This can be prevented by implementing the PreventDupJournaling flight in a tenant.
+
+3. **Cloud to on-premises**: After the cloud has journaled, on-premises journals. We cannot prevent this scenario.
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).
