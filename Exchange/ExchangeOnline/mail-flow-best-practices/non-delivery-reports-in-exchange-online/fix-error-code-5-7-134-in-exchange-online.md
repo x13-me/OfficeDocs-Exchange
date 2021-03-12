@@ -61,7 +61,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
     - Choose **All senders**.
     - Under **Accept messages from**, clear the check box for **Check if all senders are authenticated**.
 
-:::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="":::
+:::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
 5. Click **Save**.
 
@@ -123,7 +123,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
   - Click **Confirm**.
 
-:::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="":::
+:::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="The screen on which the senders of email messages are set":::
 
 6. Click **Save**.
 
