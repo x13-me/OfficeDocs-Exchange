@@ -95,7 +95,10 @@ To verify that you have successfully retrieved your mailbox database information
 
    - **Mounted on server**: This read-only field displays which server the database is mounted on.
 
-   - **Master**: This read-only field displays the master server for the mailbox database. The Mailbox server that hosts the active copy of a database is referred to as the mailbox database master.
+     > [!NOTE]
+     > This article contains references to the term *master*, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
+
+   - **Master**: This read-only field displays the primary server for the mailbox database. The Mailbox server that hosts the active copy of a database is referred to as the mailbox database master.
 
    - **Master type**: This read-only field displays the type of mailbox database master.
 
