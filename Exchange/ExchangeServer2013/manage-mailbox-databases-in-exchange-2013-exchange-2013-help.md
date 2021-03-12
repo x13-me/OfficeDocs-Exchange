@@ -9,8 +9,10 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+audience: ITPro
 f1.keywords:
 - NOCSH
+ms.topic: article
 mtps_version: v=EXCHG.150
 ---
 
