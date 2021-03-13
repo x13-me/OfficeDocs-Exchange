@@ -187,11 +187,10 @@ To prepare a specific domain in your Active Directory forest, run the following 
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
 ```
 
-**Notes**:
-
-- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
-
-- You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
+> [!NOTE]
+> - If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
+> 
+> - You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
