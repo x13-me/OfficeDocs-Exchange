@@ -239,7 +239,8 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
      Get-Service *exch* | Stop-Service
      ```
 
-     **Note**: We do not recommend using the *Force* switch in the command to stop all Exchange services.
+     > [!NOTE]
+     > We do not recommend using the *Force* switch in the command to stop all Exchange services.
 
 3. Download and install the latest supported version of the .NET Framework as described in the tables in the next section.
 
