@@ -24,13 +24,13 @@ Connection filtering is an anti-spam feature in Microsoft Exchange Server 2013 t
 
 By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is there in the list of allowed IP addresses, no more processing is needed. The message is then sent. If the source IP address is specifically blocked, the SMTP connection is dropped. If the source IP address isn't specifically allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
 
-Connection filtering compares the IP address of the source mail server with the values in: 
+Connection filtering compares the IP address of the source mail server with the values in the following data stores: 
 - IP Allowlist
 - IP Blocklist
 - IP Allowlist providers
 - IP Blocklist providers
 
-You need to configure at least one of these four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+You need to configure at least one of the four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 ## IP Blocklist
 
