@@ -9,6 +9,8 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+audience: ITPro
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
