@@ -29,6 +29,7 @@ Connection filtering compares the IP address of the source mail server with the 
 - IP Block list
 - IP Allow list providers
 - IP Block list providers
+
 You need to configure at least one of these four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 ## IP Block list
