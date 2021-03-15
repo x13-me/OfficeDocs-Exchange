@@ -14,7 +14,6 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
-description: Learn about the connection filtering which is an anti-spam feature in Microsoft Exchange Server.
 ---
 
 # Connection Filtering on Edge Transport Servers
