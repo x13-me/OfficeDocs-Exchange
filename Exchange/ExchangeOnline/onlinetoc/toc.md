@@ -208,6 +208,7 @@
 ##### [Update public folder hierarchy](../collaboration-exo/public-folders/update-public-folder-hierarchy.md)
 ##### [Remove public folder](../collaboration-exo/public-folders/remove-public-folder.md)
 ##### [Restore deleted public folder](../collaboration-exo/public-folders/restore-deleted-public-folder.md)
+##### [Restore deleted items from public folder](../collaboration-exo/public-folders/restore-deleted-items-from-public-folder.md)
 ##### [View public folder statistics](../collaboration-exo/public-folders/view-public-folder-statistics.md)
 ### [Shared mailboxes](../collaboration-exo/shared-mailboxes.md)
 ## [Address books](../address-books/address-books.md)

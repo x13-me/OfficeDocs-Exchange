@@ -39,6 +39,8 @@ For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration t
 
 Here are a few limitations to be aware of:
 
+- Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
+
 - You can only migrate items in a user's inbox or other mail folders. This type of migration doesn't migrate contacts, calendar items, or tasks.
 
 - You can migrate a maximum of 500,000 items from a user's mailbox (emails are migrated from newest to oldest).
@@ -65,7 +67,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
 2. Prepare your IMAP source email system and get the information you need to migrate. If you plan to migrate your domain to Microsoft 365 or Office 365, verify that you own your domain with your domain registrar.
 
-    Depending on which type of email service you are migrating from, you might need to configure some settings or simply record the name of your email server or service to use later. You also need to verify your domain in your domain registry system if you have a custom domain.
+    Depending on which type of email service you are migrating from, you might need to configure some settings or record the name of your email server or service to use later. You also need to verify your domain in your domain registry system if you have a custom domain.
 
 3. Communicate changes to users.
 
@@ -77,7 +79,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
 5. If you are using the steps described in [Migrate Google Apps mailboxes to Microsoft 365 or Office 365](migrate-g-suite-mailboxes.md) or [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, usernames, and passwords for the mailboxes you want to migrate.
 
-    You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users it is easier to use a CSV file to enter all the information for the accounts.
+    You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com, or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users, it is easier to use a CSV file to enter all the information for the accounts.
 
 6. Connect Microsoft 365 or Office 365 to the source email system.
 

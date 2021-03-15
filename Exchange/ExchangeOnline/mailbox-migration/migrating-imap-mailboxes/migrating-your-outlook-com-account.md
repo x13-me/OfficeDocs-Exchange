@@ -36,7 +36,7 @@ Two-step verification helps protect you by making it more difficult for someone 
 
 You set up two-step verification with an email address, phone number, or authenticator app. When you sign in on a new device or from a new location, we'll send you a security code that you enter on the sign-in page as a second form of authentication in addition to your password.
 
-After you have setup two-step verification, you can also obtain an app password that you will have to use in order to use Internet Message Access Protocol (IMAP) migration to copy email from your Outlook.com or Hotmail.com account to your Microsoft 365 or Office 365 for business account. If your Microsoft 365 or Office 365 admin is moving email messages from your Outlook.com or Hotmail.com account to Microsoft 365 or Office 365 on your behalf, you'll need to give him your app password.
+After you have setup two-step verification, you can also obtain an app password that you will have to use in order to use Internet Message Access Protocol (IMAP) migration to copy email from your Outlook.com or Hotmail.com account to your Microsoft 365 or Office 365 for business account. If your Microsoft 365 or Office 365 admin is moving email messages from your Outlook.com or Hotmail.com account to Microsoft 365 or Office 365 on your behalf, you'll need to give them your app password.
 
 ## Turn on two-step verification and create an app password in Outlook.com or Hotmail.com
 
@@ -67,10 +67,10 @@ After you have setup two-step verification, you can also obtain an app password 
 
 7. Open the Microsoft Authenticator app on your mobile device, and choose **+**. Scan the code on the **Set up an authenticator app** page.
 
-8. In step **4** on the **Set up an authenticator app** page, type the 6-digit code that's displayed on your mobile device (for example, 555111; you don't need to include any spaces).
+8. In step **4** on the **Set up an authenticator app** page, type the six-digit code that's displayed on your mobile device (for example, 555111; you don't need to include any spaces).
 
-    You don't need to memorize this password; it changes constantly and a new ones are sent to you via the Microsoft Authenticator app. This is why it's so secure. Whenever you sign in to your email account from a new device or location, look at your Microsoft Authenticator app and sign in using latest app password that's been sent to you instead of using your old static password.
+    You don't need to memorize this password; it changes constantly and a new one is sent to you via the Microsoft Authenticator app. This is why it's so secure. Whenever you sign in to your email account from a new device or location, look at your Microsoft Authenticator app and sign in using latest app password that's been sent to you instead of using your old static password.
 
-9. You'll get a message that two-step verification is turned on. Print your new *recovery code* (this isn't your app password). If you ever need to recover access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place.
+9. You'll get a message that two-step verification is turned on. Print your new *recovery code* (this isn't your app password). If you ever need to recover, access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place.
 
 10. Choose **Next**.

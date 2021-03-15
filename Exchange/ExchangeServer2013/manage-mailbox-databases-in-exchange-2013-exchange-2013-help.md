@@ -14,6 +14,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Learn how to manage mailbox databases in Exchange Server.
 ---
 
 # Manage mailbox databases in Exchange 2013
