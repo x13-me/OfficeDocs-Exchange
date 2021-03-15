@@ -361,7 +361,7 @@ And here's an example of what users see when AutoDetect isn't able to discover t
 
 ![A dialog that users see when AutoDetect is not able to discover the configuration of their on-premises mailboxes](../../media/035bb20d-c67b-4b7f-a5f9-fd15ffc29d3e.png)
 
-In either scenario, verify that your on-premises environment is correctly configured. To do this: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://gallery.technet.microsoft.com/scriptcenter/Validating-Hybrid-Modern-ad4c2b16).
+In either scenario, verify that your on-premises environment is correctly configured. To do this: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://aka.ms/OLHMAScript).
 
 When you review the output from the script, you should be seeing the following from AutoDiscover:
 
