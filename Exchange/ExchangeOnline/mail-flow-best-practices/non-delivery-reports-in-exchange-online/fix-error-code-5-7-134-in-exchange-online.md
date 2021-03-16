@@ -57,9 +57,9 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 3. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-4. Configure the following settings:
+4. Under **Accept messages from**:
     - Choose **All senders**.
-    - Under **Accept messages from**, clear the check box for **Check if all senders are authenticated**.
+    - Clear the check box for **Check if all senders are authenticated**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
@@ -91,14 +91,13 @@ Instead of allowing all external senders to send messages to this mailbox, you c
 
 - The mailbox's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
-
 To configure the mailbox's allowed senders list, do the following steps:
 
 **In New EAC**
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. Select the user mailbox from the list and click it. The user mailbox properties dialog box appears.
+2. Select a user mailbox from the list and click it. The user mailbox properties dialog box appears.
 
 :::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
@@ -110,7 +109,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/message-delivery-restrictions-screen.png" alt-text="The Message Delivery Restrictions screen":::
 
-5. Configure the following settings in the **Accept messages from** section:
+5. Under **Accept messages from** section:
   - Clear the check box for **Check if all senders are authenticated**
   - Select **Selected senders**.
   - Click **+ Add sender**. The **Accept messages from** dialog box appears.
