@@ -52,7 +52,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
- 4. Under **Delivery management** pane, click **Edit delivery management**. The **Delivery management** dialog box appears.
+ 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
  
 :::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
  
