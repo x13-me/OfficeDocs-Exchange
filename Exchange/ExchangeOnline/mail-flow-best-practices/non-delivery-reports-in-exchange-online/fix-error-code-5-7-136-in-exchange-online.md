@@ -121,13 +121,13 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 5. Configure the following settings in the **Accept messages from** section:
 
-       - Clear the check box for **Check if all senders are authenticated**.
+- Clear the check box for **Check if all senders are authenticated**.
+
+- Select **Selected senders**.
        
-       - Select **Selected senders**.
+- Click **+ Add sender**. The **Accept messages from** dialog box appears.
        
-       - Click **+ Add sender**. The **Accept messages from** dialog box appears.
-       
-       - Check the check box of the sender you want to add, and click **Confirm**.
+- Check the check box of the sender you want to add, and click **Confirm**.
 
 :::image type="content" source="../../media/adding-specific-senders.png" alt-text="The screen on which specific external senders are added":::
 
