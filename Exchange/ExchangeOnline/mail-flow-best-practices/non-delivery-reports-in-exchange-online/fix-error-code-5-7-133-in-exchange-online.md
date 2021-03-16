@@ -42,7 +42,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **In New Exchange admin center (EAC)**
 
- 1. Navigate to **Recipients** \> **Groups** \> 
+ 1. Navigate to **Recipients** \> **Groups**.
   
  2. Select the group from the list and click it. The group properties dialog box appears, as shown in the image below.
  
@@ -90,7 +90,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 **For New EAC**
 
-1. Navigate to **Recipients** \> **Groups** \>.
+1. Navigate to **Recipients** \> **Groups**.
 
 2. Select a group from the list and click it. The group properties dialog box appears.
 
