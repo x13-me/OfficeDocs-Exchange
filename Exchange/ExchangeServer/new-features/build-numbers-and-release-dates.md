@@ -68,7 +68,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
-|[Exchange Server 2016 CU20](https://www.microsoft.com/download/details.aspx?familyID=2104c33b-430e-4b3e-95ec-ca42585053ba)|March 16, 2021|15.1.2242.4|15.01.2242.004|
+|[Exchange Server 2016 CU20](https://www.microsoft.com/download/details.aspx?familyID=64a4da8c-89f0-49ba-b122-c0e53ef095c5)|March 16, 2021|15.1.2242.4|15.01.2242.004|
 |[Exchange Server 2016 CU19](https://www.microsoft.com/download/details.aspx?familyID=2ef459a6-c8a5-417f-89a8-c8afa9ea00dd)|December 15, 2020|15.1.2176.2|15.01.2176.002|
 |Exchange Server 2016 CU18|September 15, 2020|15.1.2106.2|15.01.2106.002|
 |Exchange Server 2016 CU17|June 16, 2020|15.1.2044.4|15.01.2044.004|
