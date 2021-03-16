@@ -52,7 +52,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 1. In the New Exchange admin center (EAC), navigate to **Recipients** \> **Mailboxes**.
 
-2. Select the user mailbox from the list and click it. The mailbox properties dialog box appears, as shown in the screenshot below.
+2. Select a user mailbox from the list and click it. The mailbox properties dialog box appears.
 
 :::image type="content" source="../../media/mailbox-properties.png" alt-text="The screen displaying the properties of the chosen mailbox":::
 
@@ -67,7 +67,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
     - Select **All senders**.
     - Clear the check box for **Require that all senders are authenticated**.
 
-    b. Configure the following settings in the **Block messages from** section:
+    b. Configure the following setting in the **Block messages from** section:
     - Select **None**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which message delivery restriction settings are reset":::
@@ -106,15 +106,15 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 **In New EAC**
 
-1. Navigate to **Recipients** \> **Mailboxes** >.
+1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. Select the user mailbox from the list and click it.
+2. Select a user mailbox from the list and click it.
 
 The screen as shown in the below screenshot is displayed.
 
 :::image type="content" source="../../media/mailbox-properties.png" alt-text="The screen displaying the properties of the chosen mailbox":::
 
-3. Under **Mail flow settings**, click **Manage mail flow settings**. the **Manage mail flow settings** dialog box appears.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
 4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
