@@ -55,15 +55,15 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
 
-3. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
+4. From **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-4. Under **Accept messages from**:
+5. Under **Accept messages from**:
     - Choose **All senders**.
     - Clear the check box for **Check if all senders are authenticated**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
-5. Click **Save**.
+6. Click **Save**.
 
 **In Classic EAC**
 
@@ -105,7 +105,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage Mail Flow Settings screen":::
 
-4. Under **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
+4. From **Message delivery restriction**, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
 :::image type="content" source="../../media/message-delivery-restrictions-screen.png" alt-text="The Message Delivery Restrictions screen":::
 
