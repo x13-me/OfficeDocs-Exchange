@@ -44,11 +44,11 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
  1. Navigate to **Recipients** \> **Groups**.
   
- 2. Select the group from the list and click it. The group properties dialog box appears, as shown in the image below.
+ 2. Select a group from the list and click it. The group properties dialog box appears.
  
 :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
- 3. On the group-details screen, click the **Settings** tab.
+ 3. Click the **Settings** tab.
  
 :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
@@ -56,11 +56,11 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
  
- 4. Under **Accept messages from**, choose  the **All senders** radio button.
+ 5. Under **Accept messages from**, choose  the **All senders** radio button.
  
 :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
- 5. Click **Save changes**.
+ 6. Click **Save changes**.
 
  **In Classic EAC**
 
@@ -108,11 +108,11 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
-6. Choose the external senders and the all-internal-users group to be added to the senders list.
+7. Choose the external senders and the all-internal-users group to be added to the senders list.
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
-7. Click **Save changes**.
+8. Click **Save changes**.
 
 **For Classic EAC**   
 
