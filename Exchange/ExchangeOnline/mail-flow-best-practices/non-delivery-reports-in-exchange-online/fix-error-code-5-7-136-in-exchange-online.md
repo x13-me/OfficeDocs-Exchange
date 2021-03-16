@@ -50,7 +50,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 **In New Exchange admin center (EAC)**
 
-1. In the New Exchange admin center (EAC), navigate to **Recipients** \> **Mailboxes**.
+1. Navigate to **Recipients** \> **Mailboxes**.
 
 2. Select a user mailbox from the list and click it. The mailbox properties dialog box appears.
 
@@ -60,16 +60,13 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-4. Click **Edit** in the **Message delivery restriction** pane. The **Message delivery restrictions** dialog box appears.
+4. In **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-5. Execute the following actions:
+5. Under **Accept messages from**:
 
-    a. Configure the following settings in the **Accept messages from** section:
-    - Select **All senders**.
-    - Clear the check box for **Require that all senders are authenticated**.
+- Select **All senders**.
 
-    b. Configure the following setting in the **Block messages from** section:
-    - Select **None**.
+- Clear the check box for **Require that all senders are authenticated**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which message delivery restriction settings are reset":::
 
@@ -119,7 +116,7 @@ To configure the mail user's allowed senders list, open the EAC do the following
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The screen on which message delivery restriction settings can be edited":::
 
-5. Configure the following settings in the **Accept messages from** section:
+5. Under **Accept messages from**:
 
 - Clear the check box for **Check if all senders are authenticated**.
 
