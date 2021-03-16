@@ -30,7 +30,7 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 - To avoid multiple disclaimers being added in an email conversation, add an exception that looks for unique text in your disclaimer. This ensures that the disclaimer is only added to the original message.
 
-- Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately ( **Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
+- Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately (**Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
 
 ## What do you need to know before you begin?
 
