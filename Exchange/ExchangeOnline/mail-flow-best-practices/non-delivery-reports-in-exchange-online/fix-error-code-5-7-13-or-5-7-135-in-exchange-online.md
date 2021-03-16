@@ -42,11 +42,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **In New EAC**
 
-1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. Navigate to **Public folders** \> **Public folders**.
+ 
+2. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties dialog box appears.
 
 :::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
 
-2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
+3. Click **Mail flow settings**. 
+
+4. Under **Message delivery Restrictions** \> **Accept messages from**, perform the following tasks:
 
     - Clear the check box for **Require that all senders are authenticated**.
 
@@ -54,7 +58,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
     
 :::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the user can configure all external senders to send messages to the public folder":::
     
-3. Click **Save**.
+5. Click **Save**.
 
 **In Classic EAC** 
 
@@ -88,11 +92,13 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 
 **In New EAC**
 
-1. In the New EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. Navigate to **Public folders** \> **Public folders**.
+
+2. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties dialog box appears.
 
 :::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
 
-2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
+3. Under **Message delivery Restrictions** \> **Accept messages from**, perform the following tasks::
 
    - Clear the check box for **Require that all senders are authenticated**.
    - Select **Only senders in the following list**, and then click **Add**.
@@ -105,7 +111,7 @@ To configure the public folder's allowed senders list, open the EAC do the follo
    
    - When you're finished, click **OK**.
 
-3. Click **Save**.
+4. Click **Save**.
  
 **In Classic EAC** 
 
