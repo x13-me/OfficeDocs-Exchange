@@ -91,6 +91,10 @@ Use the information at the following links to help you deploy Exchange.
 [Install Exchange Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md)
 
 > Learn about using the Setup wizard to install Mailbox servers.
+  
+  Always install the **latest Exchange Cumulative Update** (CU) ([Exchange Server build numbers and release dates | Microsoft Docs](https://docs.microsoft.com/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)). There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because each Cumulative Update is a full build of the product.
+
+  Update with **latest Exchange Security Update** (SU) **before** bringing the server online. Verify with the Exchange Health Checker script: https://aka.ms/ExchangeHealthChecker.
 
 [Use unattended mode in Exchange Setup](deploy-new-installations/unattended-installs.md)
 
@@ -103,6 +107,18 @@ Use the information at the following links to help you deploy Exchange.
 [Upgrade Exchange to the latest Cumulative Update](install-cumulative-updates.md)
 
 > Learn about finding and installing the latest Cumulative Update (CU) for the Exchange servers in your organization.
+  
+  Keep your servers as **up to date** as possible. Always be either on latest released Exchange Cumulative Update (CU) or latest released -1 CU.
+
+   1. This page contains links to the latest Exchange CU bits: [Exchange Server build numbers and release dates | Microsoft Docs](https://docs.microsoft.com/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019).
+   
+   2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](https://docs.microsoft.com/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019).
+ 
+  Ensure **Windows Update/Microsoft Update** (WU/MU) is turned on and consider further turning on **Automatic Update** to pick up Security Updates (SU’s).
+
+  Use an **elevated command prompt** to run [any Cumulative Update or Security Update](https://docs.microsoft.com/exchange/troubleshoot/setup/ex2019-setup-does-not-run-correctly-started-powershell). If you run into any problems when running update setup, please see https://aka.ms/exupdatefaq. 
+  
+  Periodically, run the **Exchange Health Checker** script will check if the latest Exchange SUs are in place: https://aka.ms/ExchangeHealthChecker.
 
 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
 
