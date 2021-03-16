@@ -44,31 +44,30 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 **For New EAC**
 
-1.  Navigate to **Recipients** \> **Groups** \>.
+1.  Navigate to **Recipients** \> **Groups**.
 
 2. Select a group from the list and click it. The group properties dialog box appears.
 
+:::image type="content" source="../../media/group-properties.png" alt-text="The screen on which the properties information of the chosen group is displayed":::
 
-<include the image group-properties.png>
+3. Click the **Settings** tab.
 
-2. Click the **Settings** tab.
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-3. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
+:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
 
-<include the image delivery-management-screen.png>
+5. Under **Accept messages from**:
 
-4. Configure the following settings:
-
-    - Under **Accept messages from**, choose **Only senders in the following list**.
-    - Click in the text box. The list of senders are displayed.
+- Choose **Only senders in the following list**.
+- Click in the text box. The list of senders are displayed.
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
-5. Choose a sender from the list.
+- Choose a sender from the list.
 
 6. Click **Save changes**.
 
-<include the image setting-sender-as-group-member.png>
+:::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
 
 **For Classic EAC**
 
@@ -91,17 +90,17 @@ If you decide that you don't need to restrict the message senders to this group,
 
 **For New EAC**
 
-1. Navigate to **Recipients** \> **Groups** \>.
+1. Navigate to **Recipients** \> **Groups**.
 
 2. Select a group from the list and click it. The group properties dialog box appears.
 
-<include the image group-properties.png>
+:::image type="content" source="../../media/group-properties.png" alt-text="The screen on which the properties information of the chosen group is displayed":::
 
 3. Click the **Settings** tab.
 
 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-<include the delivery-management-screen.png>
+:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
 
 5. Under **Accept messages from**, choose **All senders**.
 
