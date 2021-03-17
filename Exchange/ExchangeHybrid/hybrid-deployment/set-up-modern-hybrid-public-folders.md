@@ -54,7 +54,7 @@ Here is an example of proper configuration in Exchange Online:
 
 6. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-7. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App or Outlook on the web.
+7. Outlook 2011 for Mac is not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App or Outlook on the web.
 
     > [!NOTE]
     > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac).
