@@ -128,9 +128,27 @@ Perform the following prerequisite steps before you begin the migration.
 1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Microsoft 365 or Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Microsoft 365, Office 365, or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Microsoft 365, Office 365, or Exchange Online domain.
 
    ```PowerShell
-   New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName contoso.onmicrosoft.com -DomainType InternalRelay
+   New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName <target domain> -DomainType InternalRelay
    ```
 
+   Example:
+
+   ```PowerShell
+   New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName 'contoso.mail.onmicrosoft.com' -DomainType InternalRelay
+   ```
+   If the accepted domain already exists in your on-premises environment, rename it to PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 and leave the other attributes intact.
+
+   To check if the accepted domain is already present in your on-premises environment, run the following:
+
+   ```PowerShell
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
+   ```
+   To rename the accepted domain to PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99, run the following:
+
+   ```PowerShell
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
+   ```
+    
    If you're expecting your mail-enabled public folders in Exchange Online to receive external emails from the Internet, you have to disable Directory Based Edge Blocking (DBEB) in Exchange Online and Exchange Online Protection (EOP). See [Use Directory Based Edge Blocking](../../mail-flow-best-practices/use-directory-based-edge-blocking.md) to reject messages sent to invalid recipients for more information.
 
    If the name of a public folder contains a backslash ( **\\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name.
