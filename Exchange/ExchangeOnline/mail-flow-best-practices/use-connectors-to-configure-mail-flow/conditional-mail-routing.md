@@ -30,62 +30,60 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 ### New EAC
 
-1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears. 
+1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
 
 2. Click **+ Add a new connector**. The **New connector** screen appears.
 
-3. Configure the following settings:
-
-    a. Under **Connection from**, choose **Office 365**.
+3. Under **Connection from**, choose **Office 365**.
     
-    b. Under **Connection to**, choose either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
+4. Under **Connection to**, choose either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
 
 :::image type="content" source="../../media/365-to-your-organization.png" alt-text="The screen on which a connector is being created from Office 365 to your organization's mail server":::
 
-4. Click **Next**. The **Connector name** screen appears.
+5. Click **Next**. The **Connector name** screen appears.
 
-5. Provide a name for the connector and add a description.
+6. Provide a name for the connector and add a description.
 
-6. Choose **Turn it on** under **What do you want to do after connector is saved?**, as shown in the following screenshot:
+7. Choose **Turn it on** under **What do you want to do after connector is saved?**, as shown in the following screenshot:
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
-7. Click **Next**. The **Use of connector** screen appears.
+8. Click **Next**. The **Use of connector** screen appears.
 
-8. Choose **Only when I have a transport rule set up that redirects messages to this connector**, as shown in the following screenshot.
+9. Choose **Only when I have a transport rule set up that redirects messages to this connector**.
 
 :::image type="content" source="../../media/configuring-transport-rule.png" alt-text="A screen on which the transport rule is chosen as a condition":::
 
-9. Click **Next**. The **Routing** screen appears.
+10. Click **Next**. The **Routing** screen appears.
 
-10. Specify one or more smart hosts a shown in the screenshot below. These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
+11. Enter one or more smart hosts a shown in the screenshot below. These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
 
 :::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
 > [!NOTE]
 > You must provide either the domain name or the IP address of the server.
 
-11. Click **Next**. The **Security restrictions** screen appears.
+12. Click **Next**. The **Security restrictions** screen appears.
 
-12. Define your Transport Layer Security (TLS) settings, as shown in the screenshot below.
+13. Define your Transport Layer Security (TLS) settings.
 
 :::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
 
-13. Click **Next**. The **Validation email** screen appears.
+14. Click **Next**. The **Validation email** screen appears.
 
-14. Enter an email address that is valid on the mailbox of your organization's email server.
+15. Enter an email address that is valid on the mailbox of your organization's email server.
 
-15. Click **+**. The email address is listed for validation, as shown in the following screenshot:
+16. Click **+**. The email address is listed for validation.
 
 :::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
 
 
-16. Click **Validate**. The validation process starts.
+17. Click **Validate**. The validation process starts.
 
-17. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+18. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-18. Review the settings for the new connector and click **Create connector**. The connector is created.
-
+19. Review the settings for the new connector and click **Create connector**. The connector is created.
+,
 ### Classic EAC
 
 1. Go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
