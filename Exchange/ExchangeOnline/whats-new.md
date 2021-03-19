@@ -32,7 +32,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (https://admin.exchange.microsoft.com) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
 
-:::image type="content" source="media/exo_whatsnew_feb21_1.png" alt-text="Three new features in the modern EAC":::
+:::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC":::
 
 ### One portal to meet all Exchange IT admin needs
 
