@@ -30,13 +30,13 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 ### Three more reasons to love the modern Exchange Admin Center (EAC)
 
-Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (https://admin.exchange.microsoft.com) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all our delegated admins.
+Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (https://admin.exchange.microsoft.com) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
 
 :::image type="content" source="media/exo_whatsnew_feb21_1.png" alt-text="Three new features in the modern EAC":::
 
 ### One portal to meet all Exchange IT admin needs
 
-Having access to the tools we need without context switching is essential. The power of new features introduced in the new EAC is tremendous and exciting.
+Having access to the tools we need without context switching is essential. The power of new features we've introduced in the modern EAC is tremendous and exciting.
 
 **1. Rules, Organization, and Public Folders**
 
@@ -159,7 +159,7 @@ Queued messages report: To check those messages that are queued for more than 1 
 
 SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
 
-:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of manager and direct reports":::
+:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of mail flow reports":::
 
 ## June 2020
 
