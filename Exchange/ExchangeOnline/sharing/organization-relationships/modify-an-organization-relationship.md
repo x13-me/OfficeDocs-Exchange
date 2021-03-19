@@ -109,7 +109,7 @@ To learn more about organization relationships, see [Organization relationships 
 
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) and [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](/powershell/module/exchange/get-organizationrelationship) and [Set-OrganizationRelationship](/powershell/module/exchange/set-organizationrelationship).
 
 ## How do you know this worked?
 

@@ -133,7 +133,7 @@ Mobile device mailbox policies can be created, modified, or deleted in the Excha
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" feature in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -160,7 +160,7 @@ Mobile device mailbox policies can be created, modified, or deleted in the Excha
 
 #### Use the Exchange Online PowerShell to create a new mobile device mailbox policy
 
-You create a new mobile device mailbox policy using the [New-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-mobiledevicemailboxpolicy) cmdlet.
+You create a new mobile device mailbox policy using the [New-MobileDeviceMailboxPolicy](/powershell/module/exchange/new-mobiledevicemailboxpolicy) cmdlet.
 
 1. In the Exchange Online PowerShell, run the following command.
 
@@ -180,7 +180,7 @@ To verify that you've successfully created a mobile device mailbox policy, use o
    Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
    ```
    
-For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicemailboxpolicy).
+For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](/powershell/module/exchange/get-mobiledevicemailboxpolicy).
 
 #### Use the EAC to edit a mobile device mailbox policy
 
@@ -201,7 +201,7 @@ For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](http
 
 #### Use the Exchange Online PowerShell to edit mobile device mailbox policy settings
 
-You edit a mobile device mailbox policy using the [Set-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-mobiledevicemailboxpolicy) cmdlet.
+You edit a mobile device mailbox policy using the [Set-MobileDeviceMailboxPolicy](/powershell/module/exchange/set-mobiledevicemailboxpolicy) cmdlet.
 
 ```powershell
 Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
@@ -219,4 +219,4 @@ To verify that you've successfully edited a mobile device mailbox policy, do one
    Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
    ```
 
-For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicemailboxpolicy).
+For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](/powershell/module/exchange/get-mobiledevicemailboxpolicy).

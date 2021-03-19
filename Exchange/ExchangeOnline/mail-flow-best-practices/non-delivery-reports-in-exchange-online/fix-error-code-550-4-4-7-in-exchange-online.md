@@ -70,17 +70,17 @@ If the admins in the destination domain determine the problem isn't on their end
 
 Here are some steps for you to try:
 
-- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/dns-basics).
+- **Solution 1**: The MX record for your domain might be missing or incorrect. Get more information about how MX records work at [DNS basics](/microsoft-365/admin/get-help-with-domains/dns-basics).
 
 - **Solution 2**: Test your MX record and your organization's ability to send mail by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
-- **Solution 3**: The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+- **Solution 3**: The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 - **Solution 4**: Your domain might have expired due to non-payment. Verify with your domain registrar that your domain is active and not expired.
 
 - **Solution 5**: If the recipient is in your on-premises Exchange organization in a hybrid deployment, there might be a problem with your hybrid configuration. Give the information in the NDR to your on-premises Exchange administrators. They might need to rerun the Hybrid Configuration Wizard due to changes in their on-premises IP addresses or firewall rules.
 
-For more information about message routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing).
+For more information about message routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](../../../ExchangeHybrid/transport-routing.md).
 
 ## Causes for error code 4.4.7
 
@@ -116,7 +116,7 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

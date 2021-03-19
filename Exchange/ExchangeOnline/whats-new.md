@@ -113,7 +113,7 @@ An educational video is now available on the very first tile, **Training and Gui
 
 ### Recipients – documentation updated
 
-As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
+As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](./recipients-in-exchange-online/recipients-in-exchange-online.md).
 
 
 ## July 2020
@@ -126,11 +126,11 @@ Exchange admins can now use the existing dashboard to choose from new variety of
 
 Discover and understand some more trends related to mail flow in your Microsoft 365 or Office 365 organization. The following report were already available in the Security & Compliance Center (SCC) portal but are now available in the EAC for added convenience.
 
-Top domain mail-flow status report: To identify and troubleshoot domains with mail flow issues. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight).
+Top domain mail-flow status report: To identify and troubleshoot domains with mail flow issues. [Learn more](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight).
 
-Queued messages report: To check those messages that are queued for more than 1 hour and were sent through connectors from your Microsoft cloud org. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues).
+Queued messages report: To check those messages that are queued for more than 1 hour and were sent through connectors from your Microsoft cloud org. [Learn more](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues).
 
-SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
+SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
 
 :::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of manager and direct reports":::
 
@@ -207,10 +207,10 @@ Exchange admins can now use a dashboard to choose from a wide variety of cards t
 
 - **Migration report**: Learn about the status of the migration batches in your Exchange environment.
 - **Mail flow reports**: Discover and understand trends related to mail flow in your Microsoft 365 or Office 365 organization. These reports were already available in the Security & Compliance Center (SCC) portal, but are now available in the EAC for added convenience.
-  - **Auto-forwarded messages**: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as a personal email address. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
-  - **Inbound & outbound messages details**: Monitor message volume and TLS encryption for each connector. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
-  - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Microsoft 365 or Office 365. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-accepted-domain-report).
-  - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-delivery-report).
+  - **Auto-forwarded messages**: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as a personal email address. [Learn more](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
+  - **Inbound & outbound messages details**: Monitor message volume and TLS encryption for each connector. [Learn more](/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
+  - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Microsoft 365 or Office 365. [Learn more](/office365/securitycompliance/mfi-non-accepted-domain-report).
+  - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](/office365/securitycompliance/mfi-non-delivery-report).
 
 ![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
 

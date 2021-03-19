@@ -254,7 +254,7 @@ The available Receive connector permissions are described in the following table
 
   - `ms-Exch-SMTP-Send-XMessageContext-FastIndex`
 
-- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://docs.microsoft.com/exchange/header-firewall-exchange-2013-help).
+- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](../../../ExchangeServer2013/header-firewall-exchange-2013-help.md).
 
 ### Receive connector permission procedures
 

@@ -133,9 +133,9 @@ Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
+- [Add-MailboxPermission](/powershell/module/exchange/Add-MailboxPermission)
 
-- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
+- [Filterable Properties for the Filter Parameter](/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 
@@ -166,7 +166,7 @@ The following example shows how to use the Exchange Online PowerShell **Add-ADPe
 Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -ExtendedRights receive-as
 ```
 
-For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission).
+For detailed syntax and parameter information, see [Add-ADPermission](/powershell/module/exchange/Add-ADPermission).
 
 ### How do you know the assignment of permission worked?
 
@@ -215,9 +215,9 @@ Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
+- [Add-ADPermission](/powershell/module/exchange/Add-ADPermission)
 
-- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
+- [Filterable Properties for the Filter Parameter](/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 

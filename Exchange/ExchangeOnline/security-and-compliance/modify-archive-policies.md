@@ -26,7 +26,7 @@ Exchange Setup creates a retention policy called **Default MRM Policy**. This po
 
 You can modify retention tags included in the default policy to meet your business requirements. For example, you can modify the archive DPT to move items to the archive after three years instead of two. You can also create additional personal tags and either add them to a retention policy, including the **Default MRM Policy**, or allow users to add personal tags to their mailboxes from Outlook on the web (formerly known as Outlook Web App) Options.
 
-For additional management tasks related to archives, see [Enable archive mailboxes in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
+For additional management tasks related to archives, see [Enable archive mailboxes in the Security & Compliance Center](/microsoft-365/compliance/enable-archive-mailboxes).
 
 > [!NOTE]
 > In an Exchange hybrid deployment, you can enable a cloud-based archive mailbox for an on-premises primary mailbox. If you assign an archive policy to an on-premises mailbox, items are moved to the cloud-based archive. If an item is moved to the archive mailbox, a copy of it isn't retained in the on-premises mailbox. If the on-premises mailbox is placed on hold, an archive policy will still move items to the cloud-based archive mailbox where they are preserved for the duration specified by the hold.
@@ -93,11 +93,11 @@ This example retrieves all archive DPTs and personal tags and disables them.
 Get-RetentionPolicyTag | ? {$_.RetentionAction -eq "MoveToArchive"} | Set-RetentionPolicyTag -RetentionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/set-retentionpolicytag) and [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicytag).
+For detailed syntax and parameter information, see [Set-RetentionPolicyTag](/powershell/module/exchange/set-retentionpolicytag) and [Get-RetentionPolicyTag](/powershell/module/exchange/get-retentionpolicytag).
 
 ## How do you know this worked?
 
-Use the [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicytag) cmdlet to retrieve settings of the retention tag.
+Use the [Get-RetentionPolicyTag](/powershell/module/exchange/get-retentionpolicytag) cmdlet to retrieve settings of the retention tag.
 
 This command retrieves properties of the `Default 2 year move to archive` retention tag and pipes the output to the **Format-List** cmdlet to display all properties in a list format.
 

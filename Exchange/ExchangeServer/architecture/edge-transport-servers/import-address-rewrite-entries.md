@@ -48,7 +48,7 @@ Each row under the header row represents an individual address rewrite entry. Th
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address Rewriting agent" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
-- If you have more than one Edge Transport server, we recommend that you use the procedures in this topic to import the address rewrite entries into a single Edge Transport server and then clone the configuration of that Edge Transport server to the other Edge Transport servers in your organization. For more information about how to clone an Edge Transport server, see [Using Edge Transport Server Cloned Configuration](https://docs.microsoft.com/exchange/edge-transport-server-cloned-configuration-exchange-2013-help).
+- If you have more than one Edge Transport server, we recommend that you use the procedures in this topic to import the address rewrite entries into a single Edge Transport server and then clone the configuration of that Edge Transport server to the other Edge Transport servers in your organization. For more information about how to clone an Edge Transport server, see [Using Edge Transport Server Cloned Configuration](../../../ExchangeServer2013/edge-transport-server-cloned-configuration-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 

@@ -56,7 +56,7 @@ This topic contains links to topics and information about planning for and then 
 
 > Learn about the built-in antispam and antimalware protection options in Exchange.
 
-[Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
+[Exchange Server Hybrid Deployments](../../ExchangeHybrid/exchange-hybrid.md)
 
 > Learn about planning a hybrid deployment with Microsoft 365 or Office 365 and your on-premises Exchange organization.
 
@@ -64,7 +64,7 @@ This topic contains links to topics and information about planning for and then 
 
 > Learn how you can deploy Exchange in a virtualized environment.
 
-[Exchange Online and Exchange development](https://docs.microsoft.com/exchange/client-developer/exchange-server-development)
+[Exchange Online and Exchange development](/exchange/client-developer/exchange-server-development)
 
 > Learn about the application programming interfaces (APIs) that are available for applications that use Exchange 2019.
 
@@ -76,7 +76,7 @@ The test environment will act as your "proof of concept" for your new Exchange d
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Hyper-V technologies in Windows Server. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
+For more detailed information about Hyper-V, see [Server Virtualization](/windows-server/virtualization/virtualization). For information about the Microsoft support of production Exchange servers on hardware virtualization software, see [Exchange Server virtualization](virtualization.md).
 
 ## Deploy Exchange 2016 or Exchange 2019
 
@@ -92,7 +92,7 @@ Use the information at the following links to help you deploy Exchange.
 
 > Learn about using the Setup wizard to install Mailbox servers.
   
-  Always install the **latest Exchange Cumulative Update** (CU) ([Exchange Server build numbers and release dates | Microsoft Docs](https://docs.microsoft.com/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)). There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because each Cumulative Update is a full build of the product.
+  Always install the **latest Exchange Cumulative Update** (CU) ([Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md?view=exchserver-2019)). There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because each Cumulative Update is a full build of the product.
 
   Update with **latest Exchange Security Update** (SU) **before** bringing the server online. Verify with the Exchange Health Checker script: https://aka.ms/ExchangeHealthChecker.
 
@@ -110,17 +110,17 @@ Use the information at the following links to help you deploy Exchange.
   
   Keep your servers as **up to date** as possible. Always be either on latest released Exchange Cumulative Update (CU) or latest released -1 CU.
 
-   1. This page contains links to the latest Exchange CU bits: [Exchange Server build numbers and release dates | Microsoft Docs](https://docs.microsoft.com/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019).
+   1. This page contains links to the latest Exchange CU bits: [Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md?view=exchserver-2019).
    
-   2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](https://docs.microsoft.com/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019).
+   2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](./install-cumulative-updates.md?view=exchserver-2019).
  
   Ensure **Windows Update/Microsoft Update** (WU/MU) is turned on and consider further turning on **Automatic Update** to pick up Security Updates (SU’s).
 
-  Use an **elevated command prompt** to run [any Cumulative Update or Security Update](https://docs.microsoft.com/exchange/troubleshoot/setup/ex2019-setup-does-not-run-correctly-started-powershell). If you run into any problems when running update setup, please see https://aka.ms/exupdatefaq. 
+  Use an **elevated command prompt** to run [any Cumulative Update or Security Update](/exchange/troubleshoot/setup/ex2019-setup-does-not-run-correctly-started-powershell). If you run into any problems when running update setup, please see https://aka.ms/exupdatefaq. 
   
   Periodically, run the **Exchange Health Checker** script will check if the latest Exchange SUs are in place: https://aka.ms/ExchangeHealthChecker.
 
-[Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
+[Exchange Server Hybrid Deployments](../../ExchangeHybrid/exchange-hybrid.md)
 
 > Read this topic for information that will help you deploy Exchange in an existing hybrid deployment.
 

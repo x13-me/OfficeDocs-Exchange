@@ -171,17 +171,17 @@ To configure RBAC split permissions, do the following:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)
+- [New-RoleGroup](/powershell/module/exchange/New-RoleGroup)
 
-- [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment)
+- [New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment)
 
-- [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)
+- [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember)
 
-- [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Set-RoleGroup)
+- [Set-RoleGroup](/powershell/module/exchange/Set-RoleGroup)
 
-- [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment)
+- [Get-ManagementRoleAssignment](/powershell/module/exchange/Get-ManagementRoleAssignment)
 
-- [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRoleAssignment)
+- [Remove-ManagementRoleAssignment](/powershell/module/exchange/Remove-ManagementRoleAssignment)
 
 ## Switch to Active Directory split permissions
 
