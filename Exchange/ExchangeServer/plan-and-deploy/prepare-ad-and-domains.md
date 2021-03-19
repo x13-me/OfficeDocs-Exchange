@@ -2,7 +2,7 @@
 localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
-ms.topic: get-started-article
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
@@ -187,11 +187,10 @@ To prepare a specific domain in your Active Directory forest, run the following 
 <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
 ```
 
-**Notes**:
-
-- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
-
-- You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
+> [!NOTE]
+> - If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
+> 
+> - You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
@@ -231,6 +230,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 | Exchange 2019 version | rangeUpper | objectVersion (Default) | objectVersion (Configuration) |
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 CU9|17002|13240|16757|
 |Exchange 2019 CU8|17002|13239|16756|
 |Exchange 2019 CU7|17001|13238|16755|
 |Exchange 2019 CU6|17001|13237|16754|
@@ -248,6 +248,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 | Exchange 2016 version | rangeUpper | objectVersion (Default) | objectVersion (Configuration) |
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU20|15333|13240|16220|
 |Exchange 2016 CU19|15333|13239|16219|
 |Exchange 2016 CU18|15332|13238|16218|
 |Exchange 2016 CU17|15332|13237|16217|
