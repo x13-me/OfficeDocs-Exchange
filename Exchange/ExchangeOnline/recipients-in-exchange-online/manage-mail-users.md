@@ -29,7 +29,7 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - When you create mail users in EOP PowerShell, you might encounter throttling. Also, the EOP PowerShell cmdlets use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
@@ -38,7 +38,7 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center to manage mail users
 
@@ -208,21 +208,21 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 
 In Exchange Online PowerShell, you use the following cmdlets to manage mail users:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
-- [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser)
-- [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
+- [Get-User](/powershell/module/exchange/get-user)
+- [Set-User](/powershell/module/exchange/set-user)
+- [Get-MailUser](/powershell/module/exchange/get-mailuser)
+- [New-MailUser](/powershell/module/exchange/new-mailuser)
+- [Remove-MailUser](/powershell/module/exchange/remove-mailuser)
+- [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
 In standalone EOP PowerShell, you use the following cmdlets:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
-- **[Set-EOPUser](https://docs.microsoft.com/powershell/module/exchange/set-eopuser)**
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
-- **[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)**
-- **[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)**
-- **[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)**
+- [Get-User](/powershell/module/exchange/get-user)
+- **[Set-EOPUser](/powershell/module/exchange/set-eopuser)**
+- [Get-MailUser](/powershell/module/exchange/get-mailuser)
+- **[New-EOPMailUser](/powershell/module/exchange/new-eopmailuser)**
+- **[Remove-EOPMailUser](/powershell/module/exchange/remove-eopmailuser)**
+- **[Set-EOPMailUser](/powershell/module/exchange/set-eopmailuser)**
 
 The examples in this section are written for Exchange Online PowerShell, but you can use them in standalone EOP PowerShell by substituting the corresponding EOP cmdlet.
 
@@ -244,7 +244,7 @@ This example creates a mail user for Rene Valdes:
 New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@fabrikam.com -FirstName Rene -LastName Valdes -MicrosoftOnlineServicesID renev@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force)
 ```
 
-For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser).
+For detailed syntax and parameter information, see [New-MailUser](/powershell/module/exchange/new-mailuser).
 
 ### Use Exchange Online PowerShell to modify mail users
 
@@ -252,13 +252,13 @@ In general, use the **Get-User** and **Set-User** cmdlets to view and change org
 
 Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Get-User](/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Set-User](/powershell/module/exchange/set-user)
 
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- [Get-MailUser](/powershell/module/exchange/get-mailuser)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
+- [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
 Here are some examples of using Exchange Online PowerShell to change mail user properties.
 
@@ -303,7 +303,7 @@ This example remove the mail user for Pilar Pinilla:
 Remove-MailUser -Identity "Pilar Pinilla"
 ```
 
-For detailed syntax and parameter information, see [Remove-MailUser](https://docs.microsoft.com/powershell/module/exchange/remove-mailuser)
+For detailed syntax and parameter information, see [Remove-MailUser](/powershell/module/exchange/remove-mailuser)
 
 ## How do you know these procedures worked?
 
@@ -339,29 +339,29 @@ In standalone EOP, directory synchronization is available for customers with on-
 
 - Using directory synchronization is recommended for use with the following features:
 
-  - **Outlook Safe Sender lists and Blocked Sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own Safe Sender list and Blocked Sender list with individual sender and domain entries. For more information, see [Configure junk email settings on Exchange Online mailboxes](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - **Outlook Safe Sender lists and Blocked Sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own Safe Sender list and Blocked Sender list with individual sender and domain entries. For more information, see [Configure junk email settings on Exchange Online mailboxes](/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
   - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
-  - **End user access to quarantine**: To access their quarantined messages, recipients must have a valid user ID and password in the service. For more information about quarantine, see [Find and release quarantined messages as a user](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **End user access to quarantine**: To access their quarantined messages, recipients must have a valid user ID and password in the service. For more information about quarantine, see [Find and release quarantined messages as a user](/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
 
   - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them in the service. Note that [dynamic distribution groups](manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) can't be synchronized via directory synchronization.
 
-Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### Synchronize directories with Azure Active Directory Connect (AAD Connect)
 
-1. Activate directory synchronization as described in [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+1. Activate directory synchronization as described in [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-2. Install and configure an on-premises computer to run AAD Connect as described in [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+2. Install and configure an on-premises computer to run AAD Connect as described in [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
-3. [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
+3. [Select which installation type to use for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-select-installation):
 
-   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](/azure/active-directory/hybrid/how-to-connect-install-express)
 
-   - [Custom](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+   - [Custom](/azure/active-directory/hybrid/how-to-connect-install-custom)
 
-   - [Pass-through authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
+   - [Pass-through authentication](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
 > When you finish the Azure Active Directory Sync Tool Configuration Wizard, the **MSOL_AD_SYNC** account is created in your Active Directory forest. This account is used to read and synchronize your on-premises Active Directory information. In order for directory synchronization to work correctly, make sure that TCP 443 on your local directory synchronization server is open.

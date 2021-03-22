@@ -86,7 +86,7 @@ If you're not sure which domains Contoso has set up for cloud-based authenticati
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/get-federationinformation) and [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/new-organizationrelationship).
+For detailed syntax and parameter information, see [Get-FederationInformation](/powershell/module/exchange/get-federationinformation) and [New-OrganizationRelationship](/powershell/module/exchange/new-organizationrelationship).
 
 If you're setting up an organization relationship with an on-premises Exchange organization, you may want to provide the connection settings. This example creates an organization relationship with Fourth Coffee and specifies the connection settings to use. The following conditions apply:
 
@@ -104,7 +104,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/new-organizationrelationship).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](/powershell/module/exchange/new-organizationrelationship).
 
 ## How do you know this worked?
 
@@ -117,4 +117,4 @@ Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

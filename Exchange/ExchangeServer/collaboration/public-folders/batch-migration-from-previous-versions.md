@@ -62,7 +62,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2016, you need to be a member of the Organization Management role group. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
 
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
 - Before you migrate, you should consider the [Limits for public folders](limits.md).
 
@@ -145,19 +145,19 @@ Perform the following prerequisite steps before you begin the migration.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
+- [Get-PublicFolder](/powershell/module/exchange/get-publicfolder)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-publicfolder)
+- [Set-PublicFolder](/powershell/module/exchange/set-publicfolder)
 
-- [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics)
+- [Get-PublicFolderStatistics](/powershell/module/exchange/get-publicfolderstatistics)
 
-- [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderclientpermission)
+- [Get-PublicFolderClientPermission](/powershell/module/exchange/get-publicfolderclientpermission)
 
-- [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)
+- [Get-OrganizationConfig](/powershell/module/exchange/Get-OrganizationConfig)
 
-- [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig)
+- [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2016 server
 
@@ -205,19 +205,19 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch)
+- [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Get-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-publicfolder)
+- [Get-PublicFolder](/powershell/module/exchange/get-publicfolder)
 
-- [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder)
+- [Get-MailPublicFolder](/powershell/module/exchange/get-mailpublicfolder)
 
-- [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder)
+- [Disable-MailPublicFolder](/powershell/module/exchange/disable-mailpublicfolder)
 
-- [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder)
+- [Remove-PublicFolder](/powershell/module/exchange/remove-publicfolder)
 
-- [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox)
+- [Remove-Mailbox](/powershell/module/exchange/remove-mailbox)
 
 ## Step 3: Generate the .csv files
 
@@ -298,13 +298,13 @@ Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
+- [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch)
 
-- [Get-PublicFolderDatabase](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderdatabase)
+- [Get-PublicFolderDatabase](/powershell/module/exchange/get-publicfolderdatabase)
 
-- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
+- [Get-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
 
-- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the Exchange 2010 server for final migration (downtime required)
 
@@ -318,7 +318,7 @@ On the Exchange 2010 server, run the following command to lock the public folder
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig).
 
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the `PublicFoldersLockedForMigration` property value and any pending changes users recently made to folders have converged across the organization. This may take several hours.
 
@@ -415,7 +415,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 After the migration is complete, and you have verified that your Exchange 2016 public folders are working as expected, you should remove the public folder databases on the Exchange 2010 servers.
 
-For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
+For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration
 

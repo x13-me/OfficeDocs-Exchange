@@ -26,9 +26,9 @@ The transport logs in Exchange Server are described in the following sections.
 
 Agent logging records the actions that are performed on messages by specific antispam transport agents on the Exchange server. For more information, see these topics:
 
-- [Antispam Agent Logging](https://docs.microsoft.com/exchange/anti-spam-agent-logging-exchange-2013-help)
+- [Antispam Agent Logging](../../../ExchangeServer2013/anti-spam-agent-logging-exchange-2013-help.md)
 
-- [Configure Antispam Agent Logging](https://docs.microsoft.com/exchange/configure-anti-spam-agent-logging-exchange-2013-help)
+- [Configure Antispam Agent Logging](../../../ExchangeServer2013/configure-anti-spam-agent-logging-exchange-2013-help.md)
 
 - [Enable antispam functionality on Mailbox servers](../../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md)
 
@@ -170,9 +170,9 @@ For more information about these connectors, see [Default Receive connectors cre
 
 Routing table logging periodically records snapshots of the routing table that Exchange servers uses to deliver messages. For more information, see these topics:
 
-- [Understanding Routing Table Logging](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb125148(v=exchg.141))
+- [Understanding Routing Table Logging](/previous-versions/office/exchange-server-2010/bb125148(v=exchg.141))
 
-- [Configure Routing Table Logging](https://docs.microsoft.com/exchange/configure-routing-table-logging-exchange-2013-help)
+- [Configure Routing Table Logging](../../../ExchangeServer2013/configure-routing-table-logging-exchange-2013-help.md)
 
  **Enabled by default?**: Yes
 

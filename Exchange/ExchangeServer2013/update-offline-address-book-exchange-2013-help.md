@@ -40,4 +40,4 @@ This example updates the OAB named My OAB.
 Update-OfflineAddressBook -Identity "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Update-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/update-offlineaddressbook).
+For detailed syntax and parameter information, see [Update-OfflineAddressBook](/powershell/module/exchange/update-offlineaddressbook).

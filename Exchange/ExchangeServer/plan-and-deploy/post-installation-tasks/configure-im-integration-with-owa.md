@@ -32,15 +32,15 @@ Also, the following health set errors are generated on the Exchange server:
 
 - **Message**: `Owa InstantMessaging provider failed to initialize due to incorrect IM configuration on the server. Signin attempts to OWA IM will fail. Error Message: {Instant Messaging Certificate Thumbprint is null or empty on web.config).`
 
-Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported. For details on setting up Skype for Business Server with Outlook on the web (formerly known as Outlook Web App), see [Configure integration between on-premises Skype for Business Server and Outlook Web App](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/outlook-web-app)
+Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported. For details on setting up Skype for Business Server with Outlook on the web (formerly known as Outlook Web App), see [Configure integration between on-premises Skype for Business Server and Outlook Web App](/skypeforbusiness/deploy/integrate-with-exchange-server/outlook-web-app)
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes
 
-- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
+- Exchange and Skype for Business integration requires server certificates that are trusted by all of the servers involved. The procedures in this topic assume that you already have the required certificates. For more information, see [Plan to integrate Skype for Business Server 2015 and Exchange](/skypeforbusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange). The required IM certificate thumbprint refers to the Exchange Server certificate assigned to the IIS service.
 
-- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access virtual directory settings" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 

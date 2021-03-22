@@ -56,4 +56,4 @@ Remove-EmailAddressPolicy -Identity "South East Offices"
 
 Type **Y** to confirm that you want to remove the policy, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-EmailAddressPolicy).
+For detailed syntax and parameter information, see [Remove-EmailAddressPolicy](/powershell/module/exchange/Remove-EmailAddressPolicy).
