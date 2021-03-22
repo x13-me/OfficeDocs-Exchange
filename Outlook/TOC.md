@@ -1,4 +1,4 @@
-# [Exchange Server 2016](//Exchange/exchange-server)
+# [Exchange Server 2016](/Exchange/exchange-server)
 
 # Outlook 2016 deployment
 ## [Planning considerations](/outlook/troubleshoot/deployment/plan-outlook-2016-deployment)
