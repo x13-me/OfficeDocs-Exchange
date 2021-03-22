@@ -22,7 +22,7 @@ manager: serdars
 
 If you want to be sure that you receive particular messages, you can create a mail flow rule (also known as a transport rule) that makes sure that these messages bypass your Clutter folder. Check out [Use Clutter to sort low-priority messages in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) for more info on Clutter.
 
-For additional management tasks related to mail flow rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule) PowerShell topic. If you're new to Exchange Online PowerShell, check out [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+For additional management tasks related to mail flow rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](/powershell/module/exchange/new-transportrule) PowerShell topic. If you're new to Exchange Online PowerShell, check out [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## What do you need to know before you begin?
 
@@ -32,7 +32,7 @@ For additional management tasks related to mail flow rules, check out [Mail flow
 
 - For more information about opening and using the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -57,7 +57,7 @@ New-TransportRule -Name "<Unique rule name>" -SubjectContainsWords "Meeting" -Se
 > [!IMPORTANT]
 > In this example, both `X-MS-Exchange-Organization-BypassClutter` and `true` are case sensitive.
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## How do you know this worked?
 

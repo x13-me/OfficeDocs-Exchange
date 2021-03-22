@@ -66,7 +66,7 @@ Once the upgrade is successful, AdminDisplayVersion in EMS or msExchVersion attr
 
 ## Recover a Lost Exchange Server
 
-1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
+1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 2. Install the proper operating system and name the new server with the same name as the lost server. Recovery won't succeed if the target Windows server doesn't have the same name as the lost Exchange server.
 

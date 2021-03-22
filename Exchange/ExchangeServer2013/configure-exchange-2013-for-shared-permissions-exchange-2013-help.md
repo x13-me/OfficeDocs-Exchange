@@ -97,7 +97,7 @@ To configure shared permissions on the Organization Management role group, do th
     New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
     ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment).
 
 ## Remove permissions from Active Directory administrators (Optional)
 
@@ -122,7 +122,7 @@ To remove Exchange-related split permissions from Active Directory administrator
 
 3. Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment) or [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](/powershell/module/exchange/Get-ManagementRoleAssignment) or [Remove-ManagementRoleAssignment](/powershell/module/exchange/Remove-ManagementRoleAssignment).
 
 ## Switch from Active Directory split permissions to shared permissions
 
@@ -154,4 +154,4 @@ To switch from Active Directory split permissions to shared permissions, do the 
    > [!NOTE]
    > If you have Exchange 2010 servers in your organization, you also need to restart those servers.
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment).

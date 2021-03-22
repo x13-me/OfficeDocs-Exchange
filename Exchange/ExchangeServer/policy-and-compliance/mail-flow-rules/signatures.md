@@ -119,4 +119,4 @@ To gain these and other capabilities, use a third-party tool. Do an internet sea
 
 ## For more information
 
-[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help)
+[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](../../../ExchangeServer2013/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md)

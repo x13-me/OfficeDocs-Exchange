@@ -44,4 +44,4 @@ Although the new EAC has a different look and feel, managing Exchange Online rec
 
 - [Plus Addressing](plus-addressing-in-exchange-online.md)
 
-To find information about message and recipient limits in Exchange Online, check out the new article at [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+To find information about message and recipient limits in Exchange Online, check out the new article at [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).

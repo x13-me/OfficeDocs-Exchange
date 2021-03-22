@@ -84,7 +84,7 @@ Each domain controller contains a complete replica of the domain partition for t
 
 Exchange uses an Active Directory API to access information that's stored in Active Directory. This service reads information from all Active Directory partitions. The data that is retrieved is cached and is used by Exchange servers to discover the Active Directory site location of all Exchange services in the organization.
 
-For more information about topology and service discovery in Exchange 2013 or later, see [Planning to use Active Directory sites for routing Mail](https://docs.microsoft.com/exchange/planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help).
+For more information about topology and service discovery in Exchange 2013 or later, see [Planning to use Active Directory sites for routing Mail](../../../ExchangeServer2013/planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help.md).
 
 Exchange is an Active Directory site-aware application that prefers to communicate with the directory servers that are located in the same site as the Exchange server to optimize network traffic. Each Exchange server must communicate with Active Directory to retrieve information about recipients and information about the other Exchange servers. Mailbox servers store configuration information about mailbox users and mailbox stores in Active Directory. Additionally, the Mailbox server stores information in Active Directory for the Client Access protocols, Transport service, Mailbox databases, and so on. The Mailbox server handles all activity for the active mailboxes on that server.
 
@@ -113,8 +113,8 @@ The following guidelines will help you minimize problems or issues when you reco
 
 ## For more information
 
-[Active Directory Recycle Bin Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10))
+[Active Directory Recycle Bin Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10))
 
-[Introduction to Active Directory Administrative Center Enhancements (Level 100)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-)
+[Introduction to Active Directory Administrative Center Enhancements (Level 100)](/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-)
 
-[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/advanced-ad-ds-management-using-active-directory-administrative-center--level-200-)
+[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](/windows-server/identity/ad-ds/get-started/adac/advanced-ad-ds-management-using-active-directory-administrative-center--level-200-)

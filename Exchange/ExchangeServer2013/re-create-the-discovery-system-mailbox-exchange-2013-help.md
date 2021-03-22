@@ -31,7 +31,7 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 
 ## Use the Shell to re-create the Discovery system mailbox
 
-1. Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
+1. Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
 
 2. Use the Shell to enable the Discovery system mailbox.
 

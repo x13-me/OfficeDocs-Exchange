@@ -29,7 +29,7 @@ If you don't enter a product key, your server is automatically licensed as a tri
 > <LI>
 > <P><A href="https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658">Install Office</A></P>
 > <LI>
-> <P><A href="https://support.microsoft.com/office/0a82e5ae-739e-4b92-a6f4-2ec780c185db">Need help with your Office product key?</A></P></LI></UL>If you want to enter a product key on an Exchange 2010 server, go to <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124582(v=exchg.141)">Enter an Exchange 2010 product key</A>.<BR>If you want to enter a product key on an Exchange 2013 server, you're in the right place! Read on.
+> <P><A href="https://support.microsoft.com/office/0a82e5ae-739e-4b92-a6f4-2ec780c185db">Need help with your Office product key?</A></P></LI></UL>If you want to enter a product key on an Exchange 2010 server, go to <A href="/previous-versions/office/exchange-server-2010/bb124582(v=exchg.141)">Enter an Exchange 2010 product key</A>.<BR>If you want to enter a product key on an Exchange 2013 server, you're in the right place! Read on.
 
 ## What do you need to know before you begin?
 
@@ -79,7 +79,7 @@ This example uses the **set-ExchangeServer** cmdlet to enter the product key.
 Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer).
+For detailed syntax and parameter information, see [Set-ExchangeServer](/powershell/module/exchange/Set-ExchangeServer).
 
 If you licensed an Exchange server running the Mailbox server role, do the following to restart the Microsoft Exchange Information Store service:
 

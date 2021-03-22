@@ -54,7 +54,7 @@ The following prerequisites are required for successful configuration and use of
 
    - [Configure AutoReseed for a database availability group](../manage-ha/configure-dag-autoreseed.md)
 
-2. RAW SSD drives are installed with the same SSD count and size for each server in the DAG. Make sure that all SSDs are completely empty, unformatted, and not write-protected. To verify this, you can use use [DiskPart](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart) or [Clear-Disk](https://docs.microsoft.com/powershell/module/storage/clear-disk).
+2. RAW SSD drives are installed with the same SSD count and size for each server in the DAG. Make sure that all SSDs are completely empty, unformatted, and not write-protected. To verify this, you can use use [DiskPart](/windows-server/administration/windows-commands/diskpart) or [Clear-Disk](/powershell/module/storage/clear-disk).
 
 3. Exchange Server 2019.
 

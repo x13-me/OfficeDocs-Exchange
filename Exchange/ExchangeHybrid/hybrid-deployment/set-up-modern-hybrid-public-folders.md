@@ -57,7 +57,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 7. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App or Outlook on the web.
 
    > [!NOTE]
-   > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac).
+   > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](../../ExchangeOnline/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md).
 
 ## Step 1: Download the scripts
 
@@ -77,7 +77,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 Azure AD Connect sync doesn't synchronize mail-enabled public folders to Exchange Online. Running the following script will synchronize the mail-enabled public folders across your on-premises environment and Exchange Online. Special permissions assigned to mail-enabled public folders, such as **Send As**, will need to be recreated in Office 365 since cross-premise permissions are not supported in hybrid deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
 > [!NOTE]
-> Synchronized mail-enabled public folders will not be visible in the Exchange admin center (EAC). Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder) cmdlet. To recreate Send As permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission) cmdlet.
+> Synchronized mail-enabled public folders will not be visible in the Exchange admin center (EAC). Instead, use the [Get-MailPublicFolder](/powershell/module/exchange/get-mailpublicfolder) cmdlet. To recreate Send As permissions in the cloud, use the [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) cmdlet.
 
 On the Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to Office 365.
 
@@ -92,7 +92,7 @@ Where `Credential` is your Microsoft 365 or Office 365 admin username and passwo
 >
 > We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
-Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](https://docs.microsoft.com/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
+Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
 
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
 
@@ -105,7 +105,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 ```
 
 > [!NOTE]
-> You must wait until Azure Active Directory (AAD) synchronization is complete before you can see the changes. This process can take up to three hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).
+> You must wait until Azure Active Directory (AAD) synchronization is complete before you can see the changes. This process can take up to three hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).
 
 ## How do I know this worked?
 
@@ -125,4 +125,4 @@ Next, log on to Outlook with the credentials of an Exchange Online user and perf
 
 - Post content to and delete content from a public folder
 
-You can use [this article](https://support.microsoft.com/help/4549862/outlook-or-owa-cannot-connect-to-public-folders) to troubleshoot any Outlook connectivity issues with your public folders.  
+You can use [this article](https://support.microsoft.com/help/4549862/outlook-or-owa-cannot-connect-to-public-folders) to troubleshoot any Outlook connectivity issues with your public folders.

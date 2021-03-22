@@ -47,4 +47,4 @@ Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
 
 When the command is completed, use the *InternalURL* or *ExternalURL* values in your web browser to launch the EAC.
 
-For detailed syntax and parameter information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory).
+For detailed syntax and parameter information, see [Get-EcpVirtualDirectory](/powershell/module/exchange/Get-EcpVirtualDirectory).

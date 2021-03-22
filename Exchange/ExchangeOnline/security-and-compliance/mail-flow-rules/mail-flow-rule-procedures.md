@@ -24,7 +24,7 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md) Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using mail flow rules.
 
-[Create blocked sender lists in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365) Information to help you create domain or user-based blocked sender lists by using mail flow rules.
+[Create blocked sender lists in EOP](/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365) Information to help you create domain or user-based blocked sender lists by using mail flow rules.
 
 [Manage message approval](manage-message-approval.md) Information to help you create moderated distribution groups, and forward messages matching a wide variety of criteria to specific approvers.
 
@@ -34,14 +34,14 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 Topics related to preventing spam:
 
-[Use mail flow rules to set the spam confidence level (SCL) in messages](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
+[Use mail flow rules to set the spam confidence level (SCL) in messages](/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
 
 [Use mail flow rules to inspect message attachments](inspect-message-attachments.md)
 
 [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
 https://docs.microsoft.com/office365/SecurityCompliance/use-transport-rules-to-configure-bulk-email-filtering)
 
-[Additional considerations when configuring IP Allow lists](https://docs.microsoft.com/office365/SecurityCompliance/configure-the-connection-filter-policy#additional-considerations-when-configuring-ip-allow-lists)
+[Additional considerations when configuring IP Allow lists](/office365/SecurityCompliance/configure-the-connection-filter-policy#additional-considerations-when-configuring-ip-allow-lists)
 
 [Manage mail flow rules](manage-mail-flow-rules.md) Information to help you create, view, modify, enable, disable, or remove a mail flow rule, and information about importing and exporting mail flow rule collections.
 
