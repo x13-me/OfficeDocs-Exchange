@@ -24,6 +24,33 @@ Exchange admin center now uses a new portal at [https://admin.exchange.microsoft
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
 
+## February 2021
+
+Here are some of the changes and new features we introduced in the modern EAC in February 2021.
+
+### Three more reasons to love the modern Exchange Admin Center (EAC)
+
+Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (https://admin.exchange.microsoft.com) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
+
+:::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC":::
+
+### One portal to meet all Exchange IT admin needs
+
+Having access to the tools we need without context switching is essential. The power of new features we've introduced in the modern EAC is tremendous and exciting.
+
+**1. Rules, Organization, and Public Folders**
+
+Rules, Organization, and Public Folders from the classic EAC are now available in the modern EAC. Admins can take actions on messages that flow through their Exchange Online organization through Rules. They can set up organization relationships to share calendar information with external business partners through Organization sharing. In addition, admins can collect, organize, and share information with other people in their workgroup or organization through Public Folders. 
+
+**2. Another user**
+
+The new, modern EAC now has an **Open another user’s mailbox** option, which adjusts Inbox rules and out-of-office messages on behalf of a user, without requiring that user to grant full admin access to their mailboxes.
+
+**3. Delegated admin support**
+
+A delegated admin now has access to the modern EAC portal. Currently, admins need to log in to https://partner.microsoft.com, where they will be directed to the classic EAC portal, and from there they can access the modern EAC.
+
+
 ## December 2020
 
 Here are some of the changes and new features we introduced in the modern EAC in December 2020.
@@ -132,7 +159,7 @@ Queued messages report: To check those messages that are queued for more than 1 
 
 SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
 
-:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of manager and direct reports":::
+:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of mail flow reports":::
 
 ## June 2020
 

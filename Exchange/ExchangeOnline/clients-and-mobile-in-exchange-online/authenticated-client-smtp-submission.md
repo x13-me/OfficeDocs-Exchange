@@ -23,17 +23,18 @@ manager: serdars
 Client SMTP email submissions (also known as _authenticated SMTP submissions_) are used in the following scenarios in Office 365 and Microsoft 365:
 
 - POP3 and IMAP4 clients. These protocols only allow clients to _receive_ email messages, so they need to use authenticated SMTP to _send_ email messages.
-
 - Applications, reporting servers, and multifunction devices that generate and send email messages.
 
-The SMTP AUTH protocol is used for client SMTP email submission (typically on TCP port 587). SMTP AUTH doesn't support modern authentication (Modern Auth), and only uses basic authentication, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
+> [!NOTE]
+> As of February 2020, OAuth authentication is available for POP3, IMAP4, and SMTP AUTH connections to Exchange Online. For more information, see [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
+
+The SMTP AUTH protocol is used for client SMTP email submission, typically on TCP port 587. SMTP AUTH doesn't support modern authentication (Modern Auth), and only uses basic authentication, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
 
 Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 or Microsoft 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't use SMTP AUTH to send email messages.
 
 Therefore, we highly recommend that you disable SMTP AUTH in your Exchange Online organization, and enable it only for the accounts (that is, mailboxes) that still require it. There are two settings that can help you do this:
 
 - An organization-wide setting to disable (or enable) SMTP AUTH.
-
 - A per-mailbox setting that overrides the tenant-wide setting.
 
 Note these settings only apply to mailboxes that are hosted in Exchange Online (Office 365 or Microsoft 365).
@@ -41,7 +42,7 @@ Note these settings only apply to mailboxes that are hosted in Exchange Online (
 > [!NOTE]
 > - If you've enabled _security defaults_ in your organization, SMTP AUTH is already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 >
-> - If your authentication policy disables basic authentication for SMTP, clients cannot use the SMTP AUTH protocol even if you enable the settings outlined in this article. For more information, see [Disable Basic authentication in Exchange Online](./disable-basic-authentication-in-exchange-online.md).
+> - If your authentication policy disables basic authentication for SMTP, clients cannot use the SMTP AUTH protocol even if you enable the settings outlined in this article. For more information, see [Disable Basic authentication in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online).
 
 ## Disable SMTP AUTH in your organization
 
@@ -55,7 +56,7 @@ Set-TransportConfig -SmtpClientAuthenticationDisabled $true
 
 **Note**: To enable SMTP AUTH if it's already disabled, use the value `$false`.
 
-### How do you know this worked?
+### How do you know this procedure worked?
 
 To verify that you've globally disabled SMTP AUTH in your organization, run the following command and verify the value of the **SmtpClientAuthenticationDisabled** property is `True`:
 

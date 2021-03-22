@@ -77,6 +77,10 @@ The Recoverable Items folder contains the following subfolders:
 
 - **Calendar Logging**: This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
 
+- **SubstrateHolds**: If In-Place Hold, Litigation Hold, or a Microsoft 365 or Office 365 Teams Chat retention policy is enabled, this subfolder contains the original copy of the Teams message if the message has been modified or deleted. A copy of the item before modification is saved. This folder isn't visible to end users.
+
+
+
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 
 ![Recoverable Items folder](../../media/ITPro_RecoverableItems.gif)
