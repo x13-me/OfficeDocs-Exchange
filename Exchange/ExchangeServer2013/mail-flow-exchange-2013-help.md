@@ -161,7 +161,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Transport logs record what happens to messages as they flow through the transport pipeline.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Manage message approval</a></p></td>
+<td><p><a href="/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Manage message approval</a></p></td>
 <td><p>Moderated transport requires approval for messages sent to specific recipients.</p></td>
 </tr>
 <tr class="even">

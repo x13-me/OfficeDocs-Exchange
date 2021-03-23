@@ -30,9 +30,9 @@ You can use the Migration dashboard in the Exchange administration center (EAC) 
 
 You can also use Exchange Online PowerShell to display migration user statistics. For more information, see:
 
-- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUser)
+- [Get-MigrationUser](/powershell/module/exchange/Get-MigrationUser)
 
-- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUserStatistics)
+- [Get-MigrationUserStatistics](/powershell/module/exchange/Get-MigrationUserStatistics)
 
 ## Migration users report in new Exchange admin center (New EAC)
 

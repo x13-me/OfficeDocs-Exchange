@@ -38,19 +38,19 @@ When a message is sent, it should take between 5-10 minutes for the message to a
 
 You can use the following cmdlets in Exchange Online PowerShell or Exchange Online Protection PowerShell to run a message trace:
 
-[Get-MessageTrace](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace): Trace messages that are less than 10 days old.
+[Get-MessageTrace](/powershell/module/exchange/get-messagetrace): Trace messages that are less than 10 days old.
 
-[Get-MessageTraceDetail](https://docs.microsoft.com/powershell/module/exchange/get-messagetracedetail): View the message trace event details for a specific message.
+[Get-MessageTraceDetail](/powershell/module/exchange/get-messagetracedetail): View the message trace event details for a specific message.
 
-[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
+[Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
 
-[Start-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/start-historicalsearch): Start a new historical search for messages that are less than 90 days old.
+[Start-HistoricalSearch](/powershell/module/exchange/start-historicalsearch): Start a new historical search for messages that are less than 90 days old.
 
-[Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
+[Stop-HistoricalSearch](/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-To connect to Exchange Online Protection PowerShell in standalone EOP organizations without Exchange Online mailboxes, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+To connect to Exchange Online Protection PowerShell in standalone EOP organizations without Exchange Online mailboxes, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
@@ -160,7 +160,7 @@ The events section will tell you why the message was not yet delivered. When vie
 
 ## Was a message marked as spam?
 
-Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-and-anti-malware-protection).
+Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](/office365/SecurityCompliance/anti-spam-and-anti-malware-protection).
 
 To find out why a message was marked as spam:
 
@@ -170,7 +170,7 @@ When the content filter marks a message as spam, if it is sent to the Junk Email
 
 ## Was a message detected to contain malware?
 
-Messages are detected as malware when its properties, either in the message body or in an attachment, match a malware definition in of one of the anti-malware engines. For more detailed information about malware filtering, see [Anti-Malware protection](https://docs.microsoft.com/office365/SecurityCompliance/anti-malware-protection).
+Messages are detected as malware when its properties, either in the message body or in an attachment, match a malware definition in of one of the anti-malware engines. For more detailed information about malware filtering, see [Anti-Malware protection](/office365/SecurityCompliance/anti-malware-protection).
 
 To find out why a message was detected to contain malware, [run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. Set the delivery status to **Failed**.
 

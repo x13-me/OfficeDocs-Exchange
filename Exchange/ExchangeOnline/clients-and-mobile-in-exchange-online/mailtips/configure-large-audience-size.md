@@ -43,4 +43,4 @@ You use the **Set-OrganizationConfig** cmdlet to configure the large audience si
 Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
 ```
 
-For detailed syntax and parameter information, see [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
+For detailed syntax and parameter information, see [set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig).

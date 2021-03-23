@@ -79,7 +79,7 @@ This command returns entries in the administrator audit log for cmdlets run by e
 Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/2013
 ```
 
-For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
+For more information, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
 
 ## Use Exchange Online PowerShell to export the admin audit log
 

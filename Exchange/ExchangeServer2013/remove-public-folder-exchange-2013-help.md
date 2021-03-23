@@ -62,4 +62,4 @@ This example removes the public folder Marketing and all its subfolders because 
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder).
+For detailed syntax and parameter information, see [Remove-PublicFolder](/powershell/module/exchange/remove-publicfolder).

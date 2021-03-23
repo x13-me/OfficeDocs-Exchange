@@ -32,13 +32,13 @@ You can configure your Exchange organization for shared permissions if you've pr
 
 For more information about management role groups, management roles, and regular and delegating management role assignments, see the following topics:
 
-- [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)
+- [Understanding Role Based Access Control](../../../ExchangeServer2013/understanding-role-based-access-control-exchange-2013-help.md)
 
-- [Understanding management role groups](https://docs.microsoft.com/exchange/understanding-management-role-groups-exchange-2013-help)
+- [Understanding management role groups](../../../ExchangeServer2013/understanding-management-role-groups-exchange-2013-help.md)
 
-- [Understanding management roles](https://docs.microsoft.com/exchange/understanding-management-roles-exchange-2013-help)
+- [Understanding management roles](../../../ExchangeServer2013/understanding-management-roles-exchange-2013-help.md)
 
-- [Understanding management role assignments](https://docs.microsoft.com/exchange/understanding-management-role-assignments-exchange-2013-help)
+- [Understanding management role assignments](../../../ExchangeServer2013/understanding-management-role-assignments-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
@@ -54,7 +54,7 @@ For more information about management role groups, management roles, and regular
 
 - To download the latest version of Exchange on the target computer, see [Updates for Exchange Server](../../new-features/updates.md).
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) forums.
@@ -92,7 +92,7 @@ To configure shared permissions on the Organization Management role group, do th
     New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
    ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193.aspx).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/new-managementroleassignment).
 
 ## Remove permissions from Active Directory administrators (Optional)
 
@@ -115,9 +115,9 @@ To remove Exchange-related split permissions from Active Directory administrator
    Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
    ```
 
-3. Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+3. Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](../../../ExchangeServer2013/manage-role-groups-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment) or [Remove-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/remove-managementroleassignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](/powershell/module/exchange/get-managementroleassignment) or [Remove-ManagementRoleAssignment](/powershell/module/exchange/remove-managementroleassignment).
 
 ## Switch from Active Directory split permissions to shared permissions
 
@@ -154,4 +154,4 @@ To switch from Active Directory split permissions to shared permissions, do the 
 
 5. Restart all Exchange servers in your organization.
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/new-managementroleassignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/new-managementroleassignment).

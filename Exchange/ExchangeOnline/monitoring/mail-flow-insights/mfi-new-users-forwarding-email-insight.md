@@ -25,7 +25,7 @@ When you click **View details**, a flyout appears where you can find more detail
 
 ![Details flyout that appears after clicking View details in the New domains being forwarded email insight](../../media/mfi-new-users-forwarding-email-insight-details.png)
 
-If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+If you suspect the accounts have been compromised, see [Responding to a compromised email account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 ## Related topics
 

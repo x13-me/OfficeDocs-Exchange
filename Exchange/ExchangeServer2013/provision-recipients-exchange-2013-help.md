@@ -48,7 +48,7 @@ This example sets up the web-based distribution of My OAB for the default mailbo
 Set-MailboxDatabase -Identity "Mailbox Database" -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](/powershell/module/exchange/set-mailboxdatabase).
 
 ## Use the Shell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
 
@@ -69,7 +69,7 @@ This example specifies that the user Kim will download the OAB My OAB.
 Set-Mailbox -Identity Kim -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## Use the Shell to specify the OAB that multiple recipients will download
 
@@ -81,4 +81,4 @@ This example specifies that all user mailboxes in the United States for Contoso 
 Get-User -ResultSize Unlimited -Filter "Company -eq 'Contoso' -and RecipientType -eq 'UserMailbox'" | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
 ```
 
-For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Get-User](/powershell/module/exchange/get-user) and [Set-Mailbox](/powershell/module/exchange/set-mailbox).
