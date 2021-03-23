@@ -25,7 +25,7 @@ description: "Admins can learn how to use the Email issues for priority accounts
 
 The **Email issues for priority accounts** report in the new Exchange admin center (new EAC) allows Exchange Admins and Global admins to view failed events from the last 15 minutes and delayed email messages from last 6 hours that were sent to or sent from priority accounts. If no issues are found, the report will be empty. Users can configure to receive email notifications for failed and delayed messages which will provide information at the time alert is fired.
 
-Priority users are people in your Microsoft 365 organization who have a high business impact, like your CEO, executives, or other users who have access to sensitive or high priority information. For more information about priority accounts, see [Manage and monitor priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+Priority users are people in your Microsoft 365 organization who have a high business impact, like your CEO, executives, or other users who have access to sensitive or high priority information. For more information about priority accounts, see [Manage and monitor priority account](/microsoft-365/admin/setup/priority-accounts).
 
 The **Unhealthy email status** section shows the following information about messages where a priority user is a sender or a recipient:
 

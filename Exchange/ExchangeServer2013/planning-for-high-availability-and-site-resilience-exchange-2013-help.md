@@ -120,7 +120,7 @@ At any specific time, the cluster for the DAG will use only one of the assigned 
 
 ## Network adapter configuration for DAGs
 
-Each network adapter must be configured properly based on its intended use. A network adapter that's used for a MAPI network is configured differently from a network adapter that's used for a Replication network. In addition to configuring each network adapter correctly, you must also configure the network connection order in Windows so that the MAPI network is at the top of the connection order. For detailed steps about how to modify the network connection order, see [Modify the protocol bindings and network provider order](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732472(v=ws.10)).
+Each network adapter must be configured properly based on its intended use. A network adapter that's used for a MAPI network is configured differently from a network adapter that's used for a Replication network. In addition to configuring each network adapter correctly, you must also configure the network connection order in Windows so that the MAPI network is at the top of the connection order. For detailed steps about how to modify the network connection order, see [Modify the protocol bindings and network provider order](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732472(v=ws.10)).
 
 ## MAPI network adapter configuration
 

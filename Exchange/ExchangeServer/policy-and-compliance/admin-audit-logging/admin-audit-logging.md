@@ -129,7 +129,7 @@ The **Auditing** page in the EAC has several reports that provide information ab
 
 - **Admin audit log report**: This report enables you to view entries in the admin audit log recorded within a specified time frame. You can also export admin audit log entries to a XML file and then send the file via email to a recipient you specify. For more information about the contents of the XML file, see [Administrator audit log structure](log-structure.md).
 
-For information about how to use these reports, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
+For information about how to use these reports, see [Search the role group changes or administrator audit logs](../../../ExchangeServer2013/search-role-group-changes-exchange-2013-help.md).
 
 ### Search-AdminAuditLog cmdlet
 
@@ -151,7 +151,7 @@ When you run the **Search-AdminAuditLog** cmdlet, all the audit log entries that
 
 Each audit log entry contains the information described in the table in [Audit log contents](#audit-log-contents). By default, only the first 1,000 log entries that match the search criteria are returned. However, you can override this default and return more or fewer entries using the _ResultSize_ parameter. You can specify a value of `Unlimited` with the _ResultSize_ parameter to return all log entries that match the specified criteria.
 
-For information about how to use the **Search-AdminAuditLog** cmdlet, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
+For information about how to use the **Search-AdminAuditLog** cmdlet, see [Search the role group changes or administrator audit logs](../../../ExchangeServer2013/search-role-group-changes-exchange-2013-help.md).
 
 ### New-AdminAuditLogSearch cmdlet
 
@@ -164,7 +164,7 @@ After you run the **New-AdminAuditLogSearch** cmdlet, Exchange may take up to 15
 > [!NOTE]
 > Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see [View or configure Outlook on the web virtual directories in Exchange Server](../../clients/outlook-on-the-web/virtual-directories.md).
 
-For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
+For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the role group changes or administrator audit logs](../../../ExchangeServer2013/search-role-group-changes-exchange-2013-help.md).
 
 ## Manual admin audit log entries
 
@@ -180,7 +180,7 @@ With the **Write-AdminAuditLog** cmdlet, you specify a string of text to include
 
 You can retrieve manual audit log entries the same way as any other log entry, using the EAC **Auditing** page or using the **Search-AdminAuditLog** or **New-AdminAuditLogSearch** cmdlets.
 
-To view the contents of the _Comment_ parameter on the **Write-AdminAuditLog** cmdlet in a manual audit log entry, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
+To view the contents of the _Comment_ parameter on the **Write-AdminAuditLog** cmdlet in a manual audit log entry, see [Search the role group changes or administrator audit logs](../../../ExchangeServer2013/search-role-group-changes-exchange-2013-help.md).
 
 ## Active Directory replication
 
@@ -190,4 +190,4 @@ Administrator audit logging relies on Active Directory replication to replicate 
 
 The Admin Audit Log built-in cmdlet extension agent performs admin audit logging of cmdlet operations in Exchange Server. This agent reads the audit log configuration and then performs an evaluation of each cmdlet run in your organization. If the criteria you've specified in the admin audit log configuration matches the cmdlet that's being run, the agent generates an audit log entry.
 
-The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](https://docs.microsoft.com/exchange/cmdlet-extension-agents-exchange-2013-help).
+The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](../../../ExchangeServer2013/cmdlet-extension-agents-exchange-2013-help.md).

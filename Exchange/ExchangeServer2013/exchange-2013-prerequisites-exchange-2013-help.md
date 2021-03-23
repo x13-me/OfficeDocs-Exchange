@@ -25,7 +25,7 @@ This topic provides the steps for installing the necessary Windows Server 2012 R
 
 - The Edge Transport server role is available starting with Exchange 2013 SP1.
 
-- Make sure that the functional level of your forest is at least Windows Server 2003, and that the schema master is running Windows Server 2003 with Service Pack 2 or later. For more information about the Windows functional level, see [Managing Domains and Forests](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)).
+- Make sure that the functional level of your forest is at least Windows Server 2003, and that the schema master is running Windows Server 2003 with Service Pack 2 or later. For more information about the Windows functional level, see [Managing Domains and Forests](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)).
 
 - The full installation option of Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 SP1 must be used for all servers running Exchange 2013 server roles or management tools.
 

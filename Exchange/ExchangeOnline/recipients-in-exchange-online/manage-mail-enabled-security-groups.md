@@ -31,7 +31,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a mail-enabled security group
 
@@ -79,7 +79,7 @@ This example creates a security group with an alias fsadmin and the name File Se
 New-DistributionGroup -Name "File Server Managers" -Alias fsadmin -Type security
 ```
 
-For more information about using Exchange Online PowerShell to create mail-enabled security groups, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
+For more information about using Exchange Online PowerShell to create mail-enabled security groups, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -216,9 +216,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup)
+- [Get-DistributionGroup](/powershell/module/exchange/get-distributiongroup)
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
+- [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change security group properties.
 

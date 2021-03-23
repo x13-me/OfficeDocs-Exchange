@@ -177,4 +177,4 @@ To help you troubleshoot issues with transport agents, you can use the following
 
 - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline in Exchange Server](view-transport-agents-in-the-transport-pipeline.md).
 
-- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](https://docs.microsoft.com/exchange/pipeline-tracing-exchange-2013-help).
+- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](../../../ExchangeServer2013/pipeline-tracing-exchange-2013-help.md).

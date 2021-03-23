@@ -30,7 +30,7 @@ As a result, you can readily access up-to-date mailbox data in the event of a fa
 
 
 > [!NOTE]
-> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [How to check Microsoft 365 service health](https://docs.microsoft.com/office365/enterprise/view-service-health).
+> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [How to check Microsoft 365 service health](/office365/enterprise/view-service-health).
 
 ## What happens if users accidentally delete data from their mailboxes?
 
@@ -47,11 +47,11 @@ For more information about how admins can recover deleted items in Exchange Onli
 > [!NOTE]
 > Point in time restoration of mailbox items is out of scope for the Exchange Online service, though there might be third-party solutions available that provide this functionality. Exchange Online offers great retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
 >
-> - [High availability and business continuity](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
-> - [Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
+> - [High availability and business continuity](/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
+> - [Exchange Online service description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
 > - [In-place hold and litigation hold](security-and-compliance/in-place-and-litigation-holds.md)
-> - [Retention policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-> - [Inactive mailboxes](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)
+> - [Retention policies](/office365/securitycompliance/retention-policies)
+> - [Inactive mailboxes](/office365/securitycompliance/inactive-mailboxes-in-office-365)
 
 ## How do users backup Outlook data?
 
@@ -61,15 +61,15 @@ However, if you need to provide additional storage for user emails, the best way
 
 For more information about Exchange Online Archiving, see:
 
-- [Enable archive mailboxes in the Microsoft 365 security and compliance centers](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes)
+- [Enable archive mailboxes in the Microsoft 365 security and compliance centers](/office365/securitycompliance/enable-archive-mailboxes)
 
-- [Unlimited archiving in Office 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving)
+- [Unlimited archiving in Office 365](/office365/securitycompliance/unlimited-archiving)
 
-For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
+For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving service description](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
 
 ## How your data is protected
 
-To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-exchange-data-resiliency).
+To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](/Office365/securitycompliance/office-365-exchange-data-resiliency).
 
 ## When Can I Restore Outlook data on a Microsoft 365 or Office 365 account without a license?
 
@@ -83,4 +83,4 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 
 ## Offboard a user from Microsoft 365 or Office 365
 
-For more info what to do when a user in your organization leaves, check out [Remove a former employee](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+For more info what to do when a user in your organization leaves, check out [Remove a former employee](/microsoft-365/admin/add-users/remove-former-employee). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
