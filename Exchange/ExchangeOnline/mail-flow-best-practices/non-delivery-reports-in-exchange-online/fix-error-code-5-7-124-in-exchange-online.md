@@ -60,6 +60,8 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 6. Under **Sender options** pane, choose **Only allow messages from people inside my organization**.
 
+<include the image delivery-management-specific-senders.png>
+
 7. Click on the text box. The list of senders to choose are displayed.
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
@@ -106,6 +108,8 @@ If you decide that you don't need to restrict the message senders to this group,
 :::image type="content" source="../../media/delivery-management-dialog-box.png" alt-text="The delivery management screen":::
 
 6. Under **Sender options** pane, choose **Allow messages from people inside and outside my organization**.
+
+<include the image delivery-management-all-senders.png>
 
 7. Click on the text box. The list of senders to choose are displayed.
    
