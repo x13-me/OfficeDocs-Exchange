@@ -72,6 +72,6 @@ If you want to configure the Voice Mail Preview partner service for some, but no
 
 - [Assign a UM mailbox policy](assign-um-mailbox-policy-exchange-2013-help.md)
 
-- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/set-ummailbox)
+- [Set-UMMailbox](/powershell/module/exchange/set-ummailbox)
 
 For more information about the Voice Mail Preview partner program, see [Voice Mail Preview advisor](voice-mail-preview-advisor-exchange-2013-help.md).

@@ -22,7 +22,7 @@ title: Troubleshoot mail flow
 
 Can't send or receive email? Microsoft 365 and Office 365 for business offer admins several ways to troubleshoot. We recommend using the automated solutions because they are typically easier and faster than manual troubleshooting.
 
-For instructions about troubleshooting options, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
+For instructions about troubleshooting options, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 ## Troubleshoot mail flow caused by connectors
 
@@ -36,12 +36,12 @@ For more information, see [Validate connectors](use-connectors-to-configure-mail
 
 ## Troubleshoot mail flow issues caused by incorrect SPF records or MX records
 
- [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing#troubleshooting-best-practices-for-spf-in-office-365) gives tips on how to fix several SPF record errors. The beginning of that article also provides an explanation of what SPF records are and how Microsoft 365 and Office 365 use them to prevent spoofing.
+ [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing#troubleshooting-best-practices-for-spf-in-office-365) gives tips on how to fix several SPF record errors. The beginning of that article also provides an explanation of what SPF records are and how Microsoft 365 and Office 365 use them to prevent spoofing.
 
-Mail flow issues can also happen when your MX record is not setup correctly. To verify your MX record, see [Find and fix issues after adding your domain or DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues).
+Mail flow issues can also happen when your MX record is not setup correctly. To verify your MX record, see [Find and fix issues after adding your domain or DNS records](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues).
 
 ## For more information
 
 [Mail flow best practices for Exchange Online and Microsoft 365 or Office 365 (overview)](mail-flow-best-practices.md)
 
-[Mail flow in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-in-eop)
+[Mail flow in EOP](/microsoft-365/security/office-365-security/mail-flow-in-eop)

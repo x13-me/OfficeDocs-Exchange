@@ -33,12 +33,12 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- You can use either the new EAC or Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can use either the new EAC or Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Change how long permanently deleted items are kept using the new Exchange admin center
 
@@ -75,10 +75,10 @@ Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
-Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 > [!NOTE]
-> These commands only apply to existing mailboxes and will not affect new mailboxes that you create in the future. To change this setting on all new mailboxes, use a mailbox plan that has a new retention policy that applies to new mailboxes. See [Mailbox plans](mailbox-plans.md) and [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan) for more information.
+> These commands only apply to existing mailboxes and will not affect new mailboxes that you create in the future. To change this setting on all new mailboxes, use a mailbox plan that has a new retention policy that applies to new mailboxes. See [Mailbox plans](mailbox-plans.md) and [Set-MailboxPlan](/powershell/module/exchange/set-mailboxplan) for more information.
 
 > [!TIP]
 > To keep deleted items for longer than 30 days, place the mailbox on In-Place Hold or Litigation Hold. This works because when a mailbox is placed on hold, deleted items are kept and retention settings for deleted items are ignored. See [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).

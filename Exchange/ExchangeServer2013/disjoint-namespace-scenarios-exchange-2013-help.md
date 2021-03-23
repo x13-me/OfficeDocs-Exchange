@@ -34,7 +34,7 @@ A computer running Windows in an Active Directory domain has both a DNS domain n
 
 A computer in an Active Directory domain also has a primary DNS suffix and can have additional DNS suffixes. By default, the primary DNS suffix is the same as the DNS domain name. For detailed steps about how to change the primary DNS suffix, see the procedures later in this topic.
 
-You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc786438(v=ws.10)) and [Active Directory Domain Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
+You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](/previous-versions/windows/it-pro/windows-server-2003/cc786438(v=ws.10)) and [Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
 
 ## Disjoint namespaces
 
@@ -77,9 +77,9 @@ In this scenario, the NetBIOS domain name of the domain controller isn't the sam
 
 ## Allow Exchange 2013 servers to access domain controllers that are disjoint
 
-To allow Exchange 2013 servers to access domain controllers that are disjoint, you must modify the **msDS-AllowedDNSSuffixes** Active Directory attribute on the domain object container. You must add both of the DNS suffixes to the attribute. For detailed steps about how to modify the attribute, see [The computer's primary DNS suffix does not match the FQDN of the domain where it resides](https://docs.microsoft.com/previous-versions/office/exchange-server-analyzer/aa998420(v=exchg.80)).
+To allow Exchange 2013 servers to access domain controllers that are disjoint, you must modify the **msDS-AllowedDNSSuffixes** Active Directory attribute on the domain object container. You must add both of the DNS suffixes to the attribute. For detailed steps about how to modify the attribute, see [The computer's primary DNS suffix does not match the FQDN of the domain where it resides](/previous-versions/office/exchange-server-analyzer/aa998420(v=exchg.80)).
 
-In addition, to make sure that the DNS suffix search list contains all DNS namespaces that are deployed within the organization, you must configure the search list for each computer in the domain that is disjoint. The list of namespaces should include not only the primary DNS suffix of the domain controller and the DNS domain name, but also any additional namespaces for other servers with which Exchange may interoperate (such as monitoring servers or servers for third-party applications). You can do this by setting Group Policy for the domain. For more information about Group Policy, see [Group Policy Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
+In addition, to make sure that the DNS suffix search list contains all DNS namespaces that are deployed within the organization, you must configure the search list for each computer in the domain that is disjoint. The list of namespaces should include not only the primary DNS suffix of the domain controller and the DNS domain name, but also any additional namespaces for other servers with which Exchange may interoperate (such as monitoring servers or servers for third-party applications). You can do this by setting Group Policy for the domain. For more information about Group Policy, see [Group Policy Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
 For detailed steps about how to configure the DNS suffix search list Group Policy, see [Configure the DNS suffix search list for a disjoint namespace](configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md).
 

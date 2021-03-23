@@ -33,7 +33,7 @@ After you create a user mailbox, you can make changes and set additional propert
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the new EAC to configure user mailbox properties
 
@@ -402,9 +402,9 @@ To assign permissions to delegates, click **Add** ![Add Icon](../../media/ITPro_
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using Exchange Online PowerShell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
 Here are some examples of using Exchange Online PowerShell to change user mailbox properties.
 
@@ -477,5 +477,3 @@ Here's a list of the user mailbox properties and features that can be bulk edite
 3. In the Details pane, under **Bulk Edit**, select the mailbox properties or feature that you want to edit.
 
 4. Make the changes on the properties page and then save your changes.
-
-

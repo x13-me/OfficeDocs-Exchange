@@ -46,19 +46,19 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 ## Use Setup /m:RecoverServer to recover a server
 
-1. Retrieve any replay lag or truncation lag settings for any mailbox database copies that exist on the server being recovered by using the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase) cmdlet:
+1. Retrieve any replay lag or truncation lag settings for any mailbox database copies that exist on the server being recovered by using the [Get-MailboxDatabase](/powershell/module/exchange/Get-MailboxDatabase) cmdlet:
 
     ```powershell
     Get-MailboxDatabase DB1 | Format-List *lag*
     ```
 
-2. Remove any mailbox database copies that exist on the server being recovered by using the [Remove-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxDatabaseCopy) cmdlet:
+2. Remove any mailbox database copies that exist on the server being recovered by using the [Remove-MailboxDatabaseCopy](/powershell/module/exchange/Remove-MailboxDatabaseCopy) cmdlet:
 
     ```powershell
     Remove-MailboxDatabaseCopy DB1\MBX1
     ```
 
-3. Remove the failed server's configuration from the DAG by using the [Remove-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/Remove-DatabaseAvailabilityGroupServer) cmdlet:
+3. Remove the failed server's configuration from the DAG by using the [Remove-DatabaseAvailabilityGroupServer](/powershell/module/exchange/Remove-DatabaseAvailabilityGroupServer) cmdlet:
 
     ```powershell
     Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
@@ -67,7 +67,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
     > [!NOTE]
     > If the DAG member being removed is offline and can't be brought online, you must add the <EM>ConfigurationOnly</EM> parameter to the preceding command. If you use the <EM>ConfigurationOnly</EM> switch, you must also manually evict the node from the cluster.
 
-4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
+4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 5. Open a Command Prompt window. Using the original Setup media, run the following command:
 
@@ -75,13 +75,13 @@ Looking for other management tasks related to DAGs? Check out [Managing database
     Setup /m:RecoverServer
     ```
 
-6. When the Setup recovery process is complete, add the recovered server to the DAG by using the [Add-DatabaseAvailabilityGroupServer](https://docs.microsoft.com/powershell/module/exchange/Add-DatabaseAvailabilityGroupServer) cmdlet:
+6. When the Setup recovery process is complete, add the recovered server to the DAG by using the [Add-DatabaseAvailabilityGroupServer](/powershell/module/exchange/Add-DatabaseAvailabilityGroupServer) cmdlet:
 
     ```powershell
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
     ```
 
-7. After the server has been added back to the DAG, you can reconfigure mailbox database copies by using the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet. If any of the database copies being added previously had replay lag or truncation lag times greater than 0, you can use the *ReplayLagTime* and *TruncationLagTime* parameters of the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet to reconfigure those settings:
+7. After the server has been added back to the DAG, you can reconfigure mailbox database copies by using the [Add-MailboxDatabaseCopy](/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet. If any of the database copies being added previously had replay lag or truncation lag times greater than 0, you can use the *ReplayLagTime* and *TruncationLagTime* parameters of the [Add-MailboxDatabaseCopy](/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet to reconfigure those settings:
 
     ```powershell
     Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1

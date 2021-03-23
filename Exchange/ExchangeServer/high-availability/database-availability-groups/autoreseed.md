@@ -64,7 +64,7 @@ In this configuration, if MDB1 or MDB2 is to experience a failure, a copy of the
 
 The AutoReseed component that allocates and formats spare disks is called the *Disk Reclaimer*. The Disk Reclaimer component automatically formats spare disks in preparation for automatic reseeding at different intervals, depending on the state of the disk. In order for the Disk Reclaimer to format a disk, certain conditions must be met:
 
-- The Disk Reclaimer must be enabled. It's enabled by default, but it can be disabled using [Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup).
+- The Disk Reclaimer must be enabled. It's enabled by default, but it can be disabled using [Set-DatabaseAvailabilityGroup](/powershell/module/exchange/set-databaseavailabilitygroup).
 
 - The volume must have a mount point in the root volumes path (by default, C:\ExchangeVolumes).
 

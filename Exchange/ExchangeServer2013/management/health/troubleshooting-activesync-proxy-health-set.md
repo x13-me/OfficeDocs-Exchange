@@ -29,8 +29,8 @@ The ActiveSync service might have been able to recover after it issued the alert
 
 ## For More Information
 
-[Exchange ActiveSync](https://docs.microsoft.com/exchange/exchange-activesync-exchange-2013-help)
+[Exchange ActiveSync](../../exchange-activesync-exchange-2013-help.md)
 
-[Mobile devices](https://docs.microsoft.com/exchange/mobile-devices-exchange-2013-help)
+[Mobile devices](../../mobile-devices-exchange-2013-help.md)
 
-[Exchange ActiveSync virtual directory management tasks](https://docs.microsoft.com/exchange/exchange-activesync-virtual-directory-management-tasks-exchange-2013-help)
+[Exchange ActiveSync virtual directory management tasks](../../exchange-activesync-virtual-directory-management-tasks-exchange-2013-help.md)
