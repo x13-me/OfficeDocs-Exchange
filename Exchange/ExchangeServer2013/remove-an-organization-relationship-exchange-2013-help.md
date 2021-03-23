@@ -45,7 +45,7 @@ This example removes the organization relationship Contoso from the Exchange org
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/Remove-OrganizationRelationship).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](/powershell/module/exchange/Remove-OrganizationRelationship).
 
 ## How do you know this worked?
 

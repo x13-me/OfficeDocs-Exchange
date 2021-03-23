@@ -59,7 +59,7 @@ An AD RMS system has both a server and a client component, including the followi
 
 The server component is made up of several web services that run on a Microsoft server such as Windows Server 2008 or a later version. The client component can be run on either a client or server operating system and includes functions that enable an application to encrypt and decrypt content, retrieve templates and revocation lists, and acquire licenses and certificates from a server.
 
-By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information (such as financial reports, product specifications, customer data, and confidential email and voice mail messages) from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)).
+By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information (such as financial reports, product specifications, customer data, and confidential email and voice mail messages) from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)).
 
 In Exchange UM you can use Information Rights Management (IRM) features to apply persistent protection to messages and attachments.
 
@@ -67,7 +67,7 @@ Using the IRM features and Protected Voice Mail, your organization and your user
 
 ## IRM requirements
 
-Before you can implement IRM in Exchange, you must first deploy and configure your AD RMS infrastructure. For detailed information, see [Active Directory Rights Management Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)). To implement IRM to support Protected Voice Mail in your Exchange organization, your deployment must meet the following requirements.
+Before you can implement IRM in Exchange, you must first deploy and configure your AD RMS infrastructure. For detailed information, see [Active Directory Rights Management Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)). To implement IRM to support Protected Voice Mail in your Exchange organization, your deployment must meet the following requirements.
 
 <table>
 <colgroup>
@@ -95,9 +95,9 @@ Before you can implement IRM in Exchange, you must first deploy and configure yo
 
 ## Configuring and testing IRM
 
-You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
+You must use the Shell to configure IRM features. To configure individual IRM features, use the [Set-IRMConfiguration](/powershell/module/exchange/Set-IRMConfiguration) cmdlet. For more information about how to configure IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
-After you've set up an Exchange server, you can use the [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Test-IRMConfiguration) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
+After you've set up an Exchange server, you can use the [Test-IRMConfiguration](/powershell/module/exchange/Test-IRMConfiguration) cmdlet to perform end-to-end tests of your IRM deployment. This cmdlet verifies the IRM configuration for an organization and should be run before enabling Protected Voice Mail. The **Test-IRMConfiguration** cmdlet performs the following tests:
 
 - Inspects the IRM configuration for your Exchange organization.
 
@@ -203,7 +203,7 @@ There are two situations in which protected voice messages can be created:
 
 ## UM mailbox policies
 
-You can create a Unified Messaging mailbox policy to apply a common set of UM policy settings, such as PIN policy settings, dialing restrictions, and Protected Voice Mail settings, to a collection of UM-enabled mailboxes. To learn more about UM mailbox policies, see [Manage a UM mailbox policy](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
+You can create a Unified Messaging mailbox policy to apply a common set of UM policy settings, such as PIN policy settings, dialing restrictions, and Protected Voice Mail settings, to a collection of UM-enabled mailboxes. To learn more about UM mailbox policies, see [Manage a UM mailbox policy](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md).
 
 You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to configure Protected Voice Mail options. The following table lists the settings that can be configured for Protected Voice Mail.
 
@@ -251,7 +251,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 </tbody>
 </table>
 
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) or [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-UMMailboxPolicy).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](../ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures.md) or [Set-UMMailboxPolicy](/powershell/module/exchange/Set-UMMailboxPolicy).
 
 ## Text message notifications and Protected Voice Mail
 

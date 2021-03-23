@@ -25,7 +25,7 @@ This topic discusses the components, features, or functionality that have been r
 > <LI>
 > <P><A href="what-s-new-in-exchange-2013-exchange-2013-help.md">What's new in Exchange 2013</A>&nbsp;&nbsp;&nbsp;Information about new features and functionality in Exchange Server 2013.</P>
 > <LI>
-> <P><A href="https://docs.microsoft.com/exchange/client-developer/exchange-server-development">Exchange Online and Exchange development</A></P></LI></UL>
+> <P><A href="/exchange/client-developer/exchange-server-development">Exchange Online and Exchange development</A></P></LI></UL>
 
 ## Discontinued features from Exchange 2010 to Exchange 2013
 
@@ -156,7 +156,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Linked connectors</p></td>
-<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="https://docs.microsoft.com/powershell/module/exchange/New-SendConnector">New-SendConnector</a> and <a href="https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector">Set-SendConnector</a>.</p></td>
+<td><p>The ability to link a Send connector to a Receive connector has been removed. Specifically, the <em>LinkedReceiveConnector</em> parameter has been removed from <a href="/powershell/module/exchange/New-SendConnector">New-SendConnector</a> and <a href="/powershell/module/exchange/Set-SendConnector">Set-SendConnector</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -324,7 +324,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange WebDAV</p></td>
-<td><p>Use <a href="https://docs.microsoft.com/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange">Exchange Web Services (EWS) or the EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV.</p></td>
+<td><p>Use <a href="/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange">Exchange Web Services (EWS) or the EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV.</p></td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +482,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>ISInteg</p></td>
-<td><p>In Exchange 2013, use <a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
+<td><p>In Exchange 2013, use <a href="/powershell/module/exchange/New-MailboxRepairRequest">New-MailboxRepairRequest</a>.</p></td>
 </tr>
 </tbody>
 </table>

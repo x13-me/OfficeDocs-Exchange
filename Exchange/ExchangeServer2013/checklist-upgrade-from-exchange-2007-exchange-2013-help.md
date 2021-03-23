@@ -71,12 +71,12 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p></p></td>
 <td><p>5. Select an offline address book for all Exchange 2007 mailbox databases</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa996345(v=exchg.80)">How to Provision Recipients for Offline Address Book Downloads</a></p></td>
+<td><p><a href="/previous-versions/office/exchange-server-2007/aa996345(v=exchg.80)">How to Provision Recipients for Offline Address Book Downloads</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>6. Create legacy Exchange hostname</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn130105(v=exchg.150)">Create a legacy Exchange host name</a></p></td>
+<td><p><a href="/previous-versions/exchange-server/exchange-150/dn130105(v=exchg.150)">Create a legacy Exchange host name</a></p></td>
 </tr>
 <tr class="even">
 <td> </td>
@@ -110,7 +110,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p></p></td>
 <td><p>11. Configure Exchange 2007 certificates</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb310795(v=exchg.80)">Managing SSL for a Client Access Server</a></p></td>
+<td><p><a href="/previous-versions/office/exchange-server-2007/bb310795(v=exchg.80)">Managing SSL for a Client Access Server</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -146,12 +146,12 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="odd">
 <td><p></p></td>
 <td><p>16. Configure Exchange 2007 URLs</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn282262(v=exchg.150)">Configure Exchange 2007 external URLs</a></p></td>
+<td><p><a href="/previous-versions/exchange-server/exchange-150/dn282262(v=exchg.150)">Configure Exchange 2007 external URLs</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>17. Configure DNS records</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn283988(v=exchg.150)">Configure DNS records for Exchange 2007 multiple-server install</a></p></td>
+<td><p><a href="/previous-versions/exchange-server/exchange-150/dn283988(v=exchg.150)">Configure DNS records for Exchange 2007 multiple-server install</a></p></td>
 </tr>
 <tr class="odd">
 <td> </td>
@@ -167,7 +167,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 
 </td>
 <td><p><a href="public-folders-exchange-2013-help.md">Public folders</a></p>
-<p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
+<p><a href="/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
 </tr>
 <tr class="odd">
 <td> </td>

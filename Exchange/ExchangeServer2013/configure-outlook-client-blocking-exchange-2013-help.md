@@ -21,7 +21,7 @@ In Exchange Server 2013, you can use retention policies or managed folders for m
 
 You can block users who are running older versions of Outlook from accessing their Exchange mailboxes. You can also block access on a per-mailbox or on a per-Client Access server basis.
 
-For other management tasks related to MRM, see [Messaging Records Management Procedures](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
+For other management tasks related to MRM, see [Messaging Records Management Procedures](/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## MRM Feature Availability by Client Application and Version
 
@@ -157,7 +157,7 @@ This example restores access to a mailbox that's blocked by a version of Outlook
 Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/Set-CASMailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/Set-CASMailbox).
 
 ## Block Outlook versions on a Client Access server
 
@@ -172,4 +172,4 @@ This example blocks Outlook clients prior to version 12.0.0 from accessing the m
 Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
 ```
 
-For detailed syntax and parameter definition, see [Set-RpcClientAccess](https://docs.microsoft.com/powershell/module/exchange/Set-RpcClientAccess).
+For detailed syntax and parameter definition, see [Set-RpcClientAccess](/powershell/module/exchange/Set-RpcClientAccess).

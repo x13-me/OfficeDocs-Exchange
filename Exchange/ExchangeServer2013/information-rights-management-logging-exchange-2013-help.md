@@ -223,8 +223,8 @@ On each server role that has IRM features enabled, IRM logging is enabled by def
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer)
+- [Set-MailboxServer](/powershell/module/exchange/Set-MailboxServer)
 
-- [Set-ClientAccessServer](https://docs.microsoft.com/powershell/module/exchange/Set-ClientAccessServer)
+- [Set-ClientAccessServer](/powershell/module/exchange/Set-ClientAccessServer)
 
-- [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/Set-TransportService)
+- [Set-TransportService](/powershell/module/exchange/Set-TransportService)

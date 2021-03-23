@@ -23,7 +23,7 @@ ms.service: exchange-online
 
 In the Exchange admin center (EAC) in Exchange Online, you can create mail flow rules (also known as transport rules) to enable or disable Microsoft 365 or Office 365 Message Encryption. This lets you encrypt outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
- **Note**: To learn more about message encryption, go to [Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption). Your organization must have [Set up new Message Encryption capabilities](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities) to complete the tasks in this topic.
+ **Note**: To learn more about message encryption, go to [Encryption](/microsoft-365/compliance/encryption). Your organization must have [Set up new Message Encryption capabilities](/microsoft-365/compliance/set-up-new-message-encryption-capabilities) to complete the tasks in this topic.
 
 ## Get started
 
@@ -41,7 +41,7 @@ Many tasks in the EAC require the use of pop-up windows. In your browser, be sur
 
 Exchange Online is included in several different subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 Apps for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 Apps for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 

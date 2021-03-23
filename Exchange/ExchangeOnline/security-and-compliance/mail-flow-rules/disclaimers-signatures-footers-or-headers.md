@@ -30,20 +30,20 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 - To avoid multiple disclaimers being added in an email conversation, add an exception that looks for unique text in your disclaimer. This ensures that the disclaimer is only added to the original message.
 
-- Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately ( **Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
+- Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately (**Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 7 minutes.
 
-- For information about how to access the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- For information about how to access the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to add a disclaimer or other email header or footer
 
@@ -59,7 +59,7 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 5. Next to the **Do the following** box, select **Enter text** to enter the text of your disclaimer.
 
-6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#fallback-options-for-disclaimer-rules).
+6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](../../../ExchangeServer/policy-and-compliance/mail-flow-rules/signatures.md#fallback-options-for-disclaimer-rules).
 
 7. Specify the audit severity level to assign the severity level that appears in the message log.
 
@@ -71,7 +71,7 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 ## Use Exchange Online PowerShell to add a disclaimer or other email header or footer
 
-Use the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
+Use the [New-TransportRule](/powershell/module/exchange/new-transportrule) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
 This example creates a new mail flow rule that adds a disclaimer with an image to the end of all email messages that are sent outside the organization.
 

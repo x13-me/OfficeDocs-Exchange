@@ -31,9 +31,9 @@ Third-party online meeting integration is handled by add-ins that have enabled t
 
 The add-ins can be deployed using the following admin portals:
 
-- If all users are Microsoft 365 or Office 365 users, then use the [centralized deployment portal](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
+- If all users are Microsoft 365 or Office 365 users, then use the [centralized deployment portal](/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
     
-- If a tenant has users' mailboxes in Exchange Server on premises, then use the ECP/EAC portal. More information is available [here](https://docs.microsoft.com/Exchange/install-or-remove-outlook-add-ins-2013-help).
+- If a tenant has users' mailboxes in Exchange Server on premises, then use the ECP/EAC portal. More information is available [here](../../../ExchangeServer2013/install-or-remove-outlook-add-ins-2013-help.md).
 
 
 ## Creating an online meeting with a third-party add-in
@@ -53,7 +53,7 @@ On a user's New Event screen, only a single meeting provider will be shown. If t
 
   - Priority 2: An online meeting add-in that was installed by an administrator.
 
-  - Default selection: If there are no admin-installed online Web conferencing add-ins, the default option of Teams and Skype will be shown, as described [in this article](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+  - Default selection: If there are no admin-installed online Web conferencing add-ins, the default option of Teams and Skype will be shown, as described [in this article](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 > [!NOTE]
 > Installing multiple add-in providers for online meetings on a user's device isn't supported and may result in unexpected behavior.
@@ -63,7 +63,7 @@ On a user's New Event screen, only a single meeting provider will be shown. If t
 
 Add-in developers need to add the MobileOnlineMeetingCommandSurface extension point in their add-in manifest. 
 
-Information for add-in developers is available in [Create an Outlook mobile add-in for an online-meeting provider](https://docs.microsoft.com/office/dev/add-ins/outlook/online-meeting).
+Information for add-in developers is available in [Create an Outlook mobile add-in for an online-meeting provider](/office/dev/add-ins/outlook/online-meeting).
 
 Capabilities exposed to online meeting add-ins include:
 
@@ -71,7 +71,7 @@ Capabilities exposed to online meeting add-ins include:
 
   - Display dialogue. Login flow can be handled using full-screen dialog.
 
-  - The specific APIs that are exposed are [listed here](https://docs.microsoft.com/office/dev/add-ins/outlook/online-meeting\#available-apis).
+  - The specific APIs that are exposed are [listed here](/office/dev/add-ins/outlook/online-meeting\#available-apis).
 
 
 ## How users join meetings

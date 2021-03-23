@@ -62,7 +62,7 @@ Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2013 , run the [Get-PartnerApplication](https://docs.microsoft.com/powershell/module/exchange/Get-PartnerApplication) cmdlet in the Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OAuthConnectivity) cmdlet to test OAuth connectivity with a partner application for a user.
+To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2013 , run the [Get-PartnerApplication](/powershell/module/exchange/Get-PartnerApplication) cmdlet in the Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](/powershell/module/exchange/Test-OAuthConnectivity) cmdlet to test OAuth connectivity with a partner application for a user.
 
 ## More information
 

@@ -89,7 +89,7 @@ While we support stretching an Active Directory site across multiple datacenters
 
 1. Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
 
-2. Active Directory has [published guidance](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/designing-the-site-topology) that states that subnets should be placed in different Active Directory sites when the round-trip latency is greater than 10 ms between the subnets.
+2. Active Directory has [published guidance](/windows-server/identity/ad-ds/plan/designing-the-site-topology) that states that subnets should be placed in different Active Directory sites when the round-trip latency is greater than 10 ms between the subnets.
 
 ## Server design
 
@@ -167,13 +167,13 @@ In the example above, we have 120 TB of Exchange database storage and 7.68 TB of
 
 #### Common storage settings
 
-Whether Traditional or Solid-State, all disks that house an Exchange data are formatted with [ReFS](https://docs.microsoft.com/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
+Whether Traditional or Solid-State, all disks that house an Exchange data are formatted with [ReFS](/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
 
 ```powershell
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
-[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
+[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
 
 ## Database availability group design
 
@@ -201,7 +201,7 @@ The placement of the witness server determines whether the architecture can prov
 
 If your organization has a third location with a network infrastructure that is isolated from network failures that affect the site resilient datacenter pair in which the DAG is deployed, then the recommendation is to deploy the DAG's witness server in that third location. This configuration gives the DAG the ability to automatically fail over databases to the other datacenter in response to a datacenter-level failure event, regardless of which datacenter has the outage.
 
-If your organization doesn't have a third location, consider placing the server witness in [Azure](https://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where most of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
+If your organization doesn't have a third location, consider placing the server witness in [Azure](../../../ExchangeServer2013/using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where most of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
 
 Exchange Server 2019 and all earlier versions don't support the use of the Cloud Witness feature first introduced in Windows Server 2016 Failover Cluster.
 

@@ -30,7 +30,7 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
 The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Government, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Microsoft 365 or Office 365. Data simply stays in its current Exchange Online mailbox, and it's secured with TLS version 1.2 over HTTPS connections end-to-end, between Microsoft 365 or Office 365 and the app. Outlook for iOS and Android is fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
 
 The Microsoft 365- or Office 365-based architecture provides the following benefits:
-1. **Data locality**: User mailbox data stays in place, and therefore continues to respect the data locality and regionality promises of Microsoft 365 or Office 365 for data at rest. In other words, the user's mailbox data is stored within the region in which the tenant (or mailbox in the case of a [Multi-Geo](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online) tenant) is located.
+1. **Data locality**: User mailbox data stays in place, and therefore continues to respect the data locality and regionality promises of Microsoft 365 or Office 365 for data at rest. In other words, the user's mailbox data is stored within the region in which the tenant (or mailbox in the case of a [Multi-Geo](/office365/enterprise/multi-geo-capabilities-in-exchange-online) tenant) is located.
 
 2. **Device ID**: Each Outlook for iOS and Android connection registers in the Microsoft 365 or Office 365 Admin console and is able to be managed as a unique connection.
 
