@@ -26,7 +26,7 @@ manager: serdars
 
 # CSV files for Mailbox migration
 
-You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch) cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:
+You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:
 
 - **Onboarding and offboarding in Microsoft 365 or Office 365**
 
@@ -94,7 +94,7 @@ The following table describes the supported attributes for a CSV file for an IMA
 
 Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or Exchange Online PowerShell. If you want the migration batch value to be applied to a user, you would leave that cell blank in the CSV file. This lets you mix and match certain attribute values for selected users in one migration batch.
 
-In this example, let's say you create a batch for an onboarding remote move migration in a hybrid deployment to move archive mailboxes to Microsoft 365 or Office 365 with the following [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch) command.
+In this example, let's say you create a batch for an onboarding remote move migration in a hybrid deployment to move archive mailboxes to Microsoft 365 or Office 365 with the following [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) command.
 
 ```PowerShell
 New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -ArchiveOnly:$true -AutoStart

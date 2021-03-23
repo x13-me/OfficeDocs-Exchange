@@ -36,7 +36,7 @@ This article explains how you can send email from devices and business applicati
 
 > [!NOTE]
 >
-> This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+> This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 >
 > You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md) for more information.
 >
@@ -93,7 +93,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 
@@ -104,7 +104,7 @@ The following diagram gives you a conceptual overview of what you're environment
 - **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Microsoft 365 or Office 365 server, as IP Addresses are not supported.
 
 > [!NOTE]
-> For information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
+> For information about TLS, see [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
 #### Limitations of SMTP AUTH client submission
 
@@ -331,7 +331,7 @@ f. Click **Save**.
 
 If your devices or applications are capable of using a certificate for mail flow, you can configure a certificate-based connector to relay email through Microsoft 365 or Office 365.
 
-To do this, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](https://docs.microsoft.com/exchange/troubleshoot/connectors/office-365-notice).
+To do this, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](/exchange/troubleshoot/connectors/office-365-notice).
 
 ### How Microsoft 365 or Office 365 SMTP relay works
 
@@ -343,7 +343,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes as well as external recipients. Microsoft 365 or Office 365 SMTP relay is very similar to direct send except that it can send mail to external recipients.
 
-- Due to the added complexity of configuring a connector, direct send is recommended over Microsoft 365 or Office 365 SMTP relay, unless you must send email to external recipients. To send email using Microsoft 365 or Office 365 SMTP relay, your device or application server must have a static IP address or address range. You can't use SMTP relay to send email directly to Microsoft 365 or Office 365 from a third-party hosted service, such as Microsoft Azure. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](https://docs.microsoft.com/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
+- Due to the added complexity of configuring a connector, direct send is recommended over Microsoft 365 or Office 365 SMTP relay, unless you must send email to external recipients. To send email using Microsoft 365 or Office 365 SMTP relay, your device or application server must have a static IP address or address range. You can't use SMTP relay to send email directly to Microsoft 365 or Office 365 from a third-party hosted service, such as Microsoft Azure. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
 
 ### Features of Microsoft 365 or Office 365 SMTP relay
 
@@ -365,7 +365,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - Sent mail can be disrupted if your IP addresses are blocked by a spam list.
 
-- Reasonable limits are imposed for sending. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).
+- Reasonable limits are imposed for sending. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).
 
 - Requires static unshared IP addresses (unless a certificate is used).
 
@@ -390,16 +390,16 @@ Here's a comparison of each configuration option and the features they support.
 
 |Limitations|SMTP client submission|Direct send|SMTP relay|
 |---|---|---|---|
-|Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Microsoft 365 or Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
+|Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Microsoft 365 or Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |
 
 ## Use your own email server to send email from multifunction devices and applications
 
 If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following topics:
 
-- [Allow anonymous relay on Exchange servers](https://docs.microsoft.com/Exchange/mail-flow/connectors/allow-anonymous-relay)
+- [Allow anonymous relay on Exchange servers](../../ExchangeServer/mail-flow/connectors/allow-anonymous-relay.md)
 
-- [Receive messages from a server, service, or device that doesn't use Exchange](https://docs.microsoft.com/Exchange/mail-flow/connectors/custom-receive-connectors#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
+- [Receive messages from a server, service, or device that doesn't use Exchange](../../ExchangeServer/mail-flow/connectors/custom-receive-connectors.md#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
 
 ## Related Topics
 

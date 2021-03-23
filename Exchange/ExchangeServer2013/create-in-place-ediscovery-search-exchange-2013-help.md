@@ -111,7 +111,7 @@ New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -
 
 After using the Shell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the _TargetMailbox_ parameter. For details, see [Copy eDiscovery search results to a discovery mailbox](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch).
+For detailed syntax and parameter information, see [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch).
 
 ## Use the EAC to estimate or preview search results
 

@@ -25,7 +25,7 @@ The overview section contains the following charts:
 - **Forwarding type**: Typical values are:
   - **Mail flow rules**
   - **Inbox rules**
-  - **SMTP forwarding**: This is automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **SMTP forwarding**: This is automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md).
 - **Recipient domain**
 - **Forwarding users**
 

@@ -76,4 +76,4 @@ This example shows you how to verify whom you've assigned permissions to install
 
 2. In the results, review the entries in the **Effective Users** column.
 
-For more information about syntax and parameters, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/get-managementroleassignment).
+For more information about syntax and parameters, see [Get-ManagementRoleAssignment](/powershell/module/exchange/get-managementroleassignment).

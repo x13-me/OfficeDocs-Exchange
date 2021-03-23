@@ -17,4 +17,4 @@ manager: serdars
 
 # Unified Messaging in Exchange Server 2016
 
-Unified Messaging in Exchange Server 2016 is basically unchanged from Exchange Server 2013. For information about Exchange 2013 Unified Messaging, see [Unified Messaging](https://docs.microsoft.com/Exchange/unified-messaging-exchange-2013-help).
+Unified Messaging in Exchange Server 2016 is basically unchanged from Exchange Server 2013. For information about Exchange 2013 Unified Messaging, see [Unified Messaging](../../ExchangeServer2013/unified-messaging-exchange-2013-help.md).

@@ -35,7 +35,7 @@ In Exchange Online, when you create a journal rule to journal email messages sen
 
 Estimated time to complete: 5 minutes.
 
-Use PowerShell to disable or enable journaling of voice mail and missed call notifications. For information about how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Use PowerShell to disable or enable journaling of voice mail and missed call notifications. For information about how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 The following command disables journaling of voice mail and missed call notifications by setting the `VoicemailJournalingEnabled` parameter to `$false`.
 
@@ -49,4 +49,4 @@ The following command enables the journaling of voice mail and missed call notif
 Set-TransportConfig -VoicemailJournalingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/set-transportconfig).
+For detailed syntax and parameter information, see [Set-TransportConfig](/powershell/module/exchange/set-transportconfig).

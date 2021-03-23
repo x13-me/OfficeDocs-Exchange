@@ -24,7 +24,7 @@ You'll be asked to install an application on your machine and agree to the end u
 
 ## Prerequisites
 
-We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain Microsoft .NET Framework 4.5, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=30653). See additional perquisite details [here](https://docs.microsoft.com/connectivity-analyzer/microsoft-connectivity-analyzer-tool).
+We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain Microsoft .NET Framework 4.5, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=30653). See additional perquisite details [here](/connectivity-analyzer/microsoft-connectivity-analyzer-tool).
 
 ## Outlook Check
 
