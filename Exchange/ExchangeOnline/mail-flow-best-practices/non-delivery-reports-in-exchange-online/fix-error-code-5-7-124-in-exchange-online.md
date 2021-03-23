@@ -50,13 +50,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 3. Select a group from the list and click it. The group properties dialog box appears.
 
-<include the image distribution-list-group-details.png>
+:::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
 
 4. Click the **Settings** tab.
 
 5. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-<include the image delivery-management-dialog-box.png>
+:::image type="content" source="../../media/delivery-management-dialog-box.png" alt-text="The delivery management screen":::
 
 6. Under **Sender options** pane, choose **Only allow messages from people inside my organization**.
 
@@ -97,13 +97,13 @@ If you decide that you don't need to restrict the message senders to this group,
 
 3. Select a group from the list and click it. The group properties dialog box appears.
 
-<include the image distribution-list-group-details.png>
+:::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
 
 4. Click the **Settings** tab.
 
 5. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-<include the image delivery-management-dialog-box.png>
+:::image type="content" source="../../media/delivery-management-dialog-box.png" alt-text="The delivery management screen":::
 
 6. Under **Sender options** pane, choose **Allow messages from people inside and outside my organization**.
 
@@ -114,7 +114,6 @@ If you decide that you don't need to restrict the message senders to this group,
 - Choose senders (internal and external) from the list.
 
 8. Click **Save changes**.
-
 
 **For Classic EAC**
 
