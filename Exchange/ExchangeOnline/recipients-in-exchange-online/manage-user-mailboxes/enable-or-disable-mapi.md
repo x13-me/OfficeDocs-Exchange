@@ -40,7 +40,7 @@ For additional management tasks related to managing email client access to a mai
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the new Exchange admin center to enable or disable MAPI
 
@@ -100,7 +100,7 @@ This example enables MAPI for the mailbox of Esther Valle.
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 
@@ -111,4 +111,3 @@ To verify that you've successfully enabled or disabled MAPI for a user mailbox, 
   ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
-

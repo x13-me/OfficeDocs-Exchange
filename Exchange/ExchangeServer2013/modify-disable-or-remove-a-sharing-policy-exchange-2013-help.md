@@ -111,4 +111,4 @@ For details about how to create a sharing policy, see [Create a sharing policy](
   Remove-SharingPolicy -Identity Contoso -Confirm
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-SharingPolicy) and [Remove-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-SharingPolicy).
+For detailed syntax and parameter information, see [Set-SharingPolicy](/powershell/module/exchange/Set-SharingPolicy) and [Remove-SharingPolicy](/powershell/module/exchange/Remove-SharingPolicy).

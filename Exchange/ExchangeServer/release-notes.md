@@ -20,7 +20,7 @@ manager: serdars
 # Release notes for Exchange Server
 
 > [!TIP]
-> Looking for the Exchange 2013 release notes? See [Release notes for Exchange 2013](https://docs.microsoft.com/exchange/release-notes-for-exchange-2013-exchange-2013-help).
+> Looking for the Exchange 2013 release notes? See [Release notes for Exchange 2013](../ExchangeServer2013/release-notes-for-exchange-2013-exchange-2013-help.md).
 
 ::: moniker range="exchserver-2019"
 Welcome to Microsoft Exchange Server 2019! This topic contains important information that you need to know to successfully deploy Exchange 2019. Please read this topic completely before beginning your deployment.

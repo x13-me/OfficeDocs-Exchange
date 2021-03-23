@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **OWA.Protocol.DEP** health set monitors the overall health of instant messaging (IM) services in Outlook Web App that are integrated between Lync 2013 and Exchange 2013. For more information about enabling instant messaging in Outlook Web App, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://docs.microsoft.com/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
+The **OWA.Protocol.DEP** health set monitors the overall health of instant messaging (IM) services in Outlook Web App that are integrated between Lync 2013 and Exchange 2013. For more information about enabling instant messaging in Outlook Web App, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
 
 If you receive an alert that indicates that the **OWA.Protocol.DEP** health set is unhealthy, this indicates an issue that may prevent instant messaging from working correctly in Outlook Web App.
 
@@ -52,7 +52,7 @@ The **OWA.Protocol.DEP** service is monitored using the following probes and mon
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
+For more information about probes and monitors, see [Server health and performance](../../server-health-and-performance-exchange-2013-help.md).
 
 ## User Action
 
@@ -146,7 +146,7 @@ To fix this issue, follow these steps:
 
 ## Recovery actions for error: "IM Certificate with thumbprint \&lt;value\&gt; could not be found."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App isn't found on the Mailbox server. This certificate must be installed on the Mailbox server and the Lync 2013 server, and must be trusted by both servers. For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://docs.microsoft.com/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App isn't found on the Mailbox server. This certificate must be installed on the Mailbox server and the Lync 2013 server, and must be trusted by both servers. For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
 
 You can match he thumbprint value in the error to the certificate by using the **Get-ExchangeCertificate** cmdlet, or in the Exchange admin center (EAC) at **Servers** \> **Certificates**.
 
@@ -158,8 +158,8 @@ You can match he thumbprint value in the error to the certificate by using the *
 
 ## Recovery actions for error: "IM Certificate has not become valid yet."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App has invalid dates. To resolve this error, you need to configure a new certificate, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://docs.microsoft.com/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App has invalid dates. To resolve this error, you need to configure a new certificate, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
 
 ## Recovery actions for error: "IM Certificate does not have a private key."
 
-This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App does not have a private key. To resolve this error, you need to configure a new certificate that has a private key, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://docs.microsoft.com/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).
+This error indicates the certificate that's used to integrate Lync 2013 and Outlook Web App does not have a private key. To resolve this error, you need to configure a new certificate that has a private key, and you need to add the new thumbprint value in the **IMCertificateThumbprint** key in `%ExchangeInstallPath%ClientAccess\Owa\web.config` . For more information about the certificate requirements, see the Enabling Instant Messaging on Outlook Web App section in [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](/lyncserver/lync-server-2013-integrating-lync-server-and-outlook-web-app-2013).

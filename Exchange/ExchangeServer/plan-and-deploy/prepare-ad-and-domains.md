@@ -31,7 +31,7 @@ For details on new schema classes and attributes that Exchange adds to Active Di
 
 For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange is installed?](active-directory/ad-changes.md).
 
- If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
+ If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)).
 
 ## What do you need to know before you begin?
 
@@ -41,9 +41,9 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Verify that your Active Directory meets the requirements for Exchange:
 
-  - **Exchange 2019**: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#network-and-directory-servers).
+  - **Exchange 2019**: [Exchange 2019 Network and directory servers](./system-requirements.md?preserve-view=true&view=exchserver-2019#network-and-directory-servers).
 
-  - **Exchange 2016**: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#network-and-directory-servers).
+  - **Exchange 2016**: [Exchange 2016 Network and directory servers](./system-requirements.md?preserve-view=true&view=exchserver-2016#network-and-directory-servers).
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 
@@ -96,7 +96,7 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 > [!NOTE]
 > When you run this command, a prerequisite check is performed that will tell you which requirements are missing.
 
-After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770963(v=ws.10)).
+After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770963(v=ws.10)).
 
 ## Step 2: Prepare Active Directory
 
@@ -208,7 +208,7 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 
 To verify that you successfully prepared Active Directory and domains for Exchange, use any of the following steps:
 
-- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).
+- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).
 
   > [!CAUTION]
   > Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.

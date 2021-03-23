@@ -24,7 +24,7 @@ Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 
 |               |               |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![users-people](https://docs.microsoft.com/office/media/icons/users-people_40x40.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](https://docs.microsoft.com/office/media/icons/key-permissions_40x40.svg) | [Assign admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) | ![document](https://docs.microsoft.com/office/media/icons/document_40x40.svg) | [Learn about the Exchange admin center](/Exchange/exchange-admin-center)
+| ![users-people](/office/media/icons/users-people_40x40.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](/office/media/icons/key-permissions_40x40.svg) | [Assign admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) | ![document](/office/media/icons/document_40x40.svg) | [Learn about the Exchange admin center](./exchange-admin-center.md)
 
 ---
 
@@ -43,6 +43,6 @@ Exchange admin center is now available at the new URL address [https://admin.exc
 ## Help for Microsoft 365 admins
 We're consolidating our content on the [Office help and training site](https://support.office.com/). See the following:
 
-- [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin): how to get started with the Microsoft  365 admin center, reset passwords, and more.
+- [Microsoft 365 admin center help](/microsoft-365/admin): how to get started with the Microsoft  365 admin center, reset passwords, and more.
 
-- [Manage email and calendars](https://docs.microsoft.com/microsoft-365/admin/email/): how to set up email, fix problems, and import email.
+- [Manage email and calendars](/microsoft-365/admin/email/): how to set up email, fix problems, and import email.

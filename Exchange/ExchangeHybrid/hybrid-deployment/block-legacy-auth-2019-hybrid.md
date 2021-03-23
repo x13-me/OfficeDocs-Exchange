@@ -30,7 +30,7 @@ In Exchange Server 2019 Cumulative Update 1 (CU1) or later, we provide a way to 
 
 When you disable legacy authentication for users in Exchange, their email clients and apps must support modern authentication. Those clients are:
 
-- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication))
+- Outlook 2013 or later (Outlook 2013 [requires a registry key change](/microsoft-365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
@@ -63,11 +63,11 @@ Typically, when you block legacy authentication for a user, we recommend that yo
 
 - Estimated time to complete each procedure: 3 minutes.
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - Verify that modern authentication is enabled in your Exchange environment.
 
-- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
+- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](/officeupdates/outlook-updates-msi).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -198,7 +198,7 @@ This example removes the policy named Test Auth Policy.
 Remove-AuthenticationPolicy -Identity "Test Auth Policy"
 ```
 
-For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-authenticationpolicy).
+For detailed syntax and parameter information, see [Remove-AuthenticationPolicy](/powershell/module/exchange/remove-authenticationpolicy).
 
 ### How do you know that you've successfully disabled legacy authentication in Exchange?
 

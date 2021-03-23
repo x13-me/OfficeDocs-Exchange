@@ -80,13 +80,13 @@ Prepare your on-premises email server so that it's ready to connect with Microso
 
 2. Check that your on-premises email server has Transport Layer Security (TLS) enabled, with a valid certification authority-signed (CA-signed) certificate. We recommend that the certificate subject name includes the domain name that matches the primary email server in your organization. Buy a CA-signed digital certificate that matches this description, if necessary.
 
-3. If you want to use certificates for secure communication between Microsoft 365 or Office 365 and your email server, update the connector your email server uses to receive mail. This connector must recognize the right certificate when Microsoft 365 or Office 365 attempts a connection with your server. If you're using Exchange, see [Receive Connectors](https://docs.microsoft.com/exchange/mail-flow/connectors/receive-connectors) for more information. On the Edge Transport Server or Client Access Server (CAS), configure the default certificate for the Receive connector. Update the *TlsCertificateName* parameter on the **Set-ReceiveConnector** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+3. If you want to use certificates for secure communication between Microsoft 365 or Office 365 and your email server, update the connector your email server uses to receive mail. This connector must recognize the right certificate when Microsoft 365 or Office 365 attempts a connection with your server. If you're using Exchange, see [Receive Connectors](../../../ExchangeServer/mail-flow/connectors/receive-connectors.md) for more information. On the Edge Transport Server or Client Access Server (CAS), configure the default certificate for the Receive connector. Update the *TlsCertificateName* parameter on the **Set-ReceiveConnector** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 4. Make a note of the name or IP address of your external-facing email server. If you're using Exchange, this is the Fully Qualified Domain Name (FQDN) of your Edge Transport server or CAS that will receive email from Microsoft 365 or Office 365.
 
 5. Open port 25 on your firewall so that Microsoft 365 or Office 365 can connect to your email servers.
 
-6. Make sure that your firewall accepts connections from all Microsoft 365 or Office 365 IP addresses. See [Exchange Online IP addresses and URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#exchange-online) for the published IP address ranges.
+6. Make sure that your firewall accepts connections from all Microsoft 365 or Office 365 IP addresses. See [Exchange Online IP addresses and URLs](/office365/enterprise/urls-and-ip-address-ranges#exchange-online) for the published IP address ranges.
 
 7. Make a note of an email address for each domain in your organization. You'll need this later to test that your connector is working properly.
 
@@ -104,7 +104,7 @@ There are three steps for this:
 
 Make sure you have completed the following in Microsoft 365 or Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 
@@ -129,7 +129,7 @@ If any connectors already exist for your organization, you can see them listed h
 
 ![Microsoft 365 or Office 365 example connectors to and from email server](../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png)
 
-Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
+Before you set up a new connector, check any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](../../../ExchangeHybrid/hybrid-configuration-wizard.md), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here. You don't need to set them up again, but you can edit them here if you need to. If you don't plan to use the hybrid configuration wizard, or if you're running Exchange Server 2007 or earlier, or if you're running a non-Microsoft SMTP mail server, set up connectors using the wizard.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
@@ -139,7 +139,7 @@ Click **Next**, and follow the instructions in the wizard. Click the **Help** or
 
 ### 3. Change your MX record to redirect your mail flow from the Internet to Microsoft 365 or Office 365
 
-To redirect email flow to Microsoft 365 or Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-mx-record-to-route-email).
+To redirect email flow to Microsoft 365 or Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-mx-record-to-route-email).
 
 ## Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365
 
@@ -159,15 +159,15 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Choose from your organization's email server to Microsoft 365 or Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
 
 ### 2. Set up your email server to relay mail to the Internet via Microsoft 365 or Office 365
 
 Next, you must prepare your email server to send mail to Microsoft 365 or Office 365. This enables mail flow from your email servers to the Internet via Microsoft 365 or Office 365.
 
-If your on-premises email environment is Microsoft Exchange, you create a Send connector that uses smart host routing to send messages to Microsoft 365 or Office 365. For more information, see [Create a Send connector to route outbound email through a smart host](https://docs.microsoft.com/exchange/mail-flow/connectors/outbound-smart-host-routing).
+If your on-premises email environment is Microsoft Exchange, you create a Send connector that uses smart host routing to send messages to Microsoft 365 or Office 365. For more information, see [Create a Send connector to route outbound email through a smart host](../../../ExchangeServer/mail-flow/connectors/outbound-smart-host-routing.md).
 
-To create the Send connector in Exchange Server, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+To create the Send connector in Exchange Server, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 > [!NOTE]
 > In the following procedures, the _CloudServicesMailEnabled_ parameter is available in Exchange 2013 or later.

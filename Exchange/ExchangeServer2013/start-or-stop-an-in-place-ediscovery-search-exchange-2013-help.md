@@ -41,6 +41,6 @@ You can stop or restart an In-Place eDiscovery search at any time. For example, 
 
 ## Use the Shell to start or stop an In-Place eDiscovery search
 
-For an example of how to start an In-Place eDiscovery search, see "Example 1" in [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/start-mailboxsearch).
+For an example of how to start an In-Place eDiscovery search, see "Example 1" in [Start-MailboxSearch](/powershell/module/exchange/start-mailboxsearch).
 
-For an example of how to stop an In-Place eDiscovery search, see "Example 1" in [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/stop-mailboxsearch).
+For an example of how to stop an In-Place eDiscovery search, see "Example 1" in [Stop-MailboxSearch](/powershell/module/exchange/stop-mailboxsearch).
