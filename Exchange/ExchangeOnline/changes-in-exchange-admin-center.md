@@ -24,7 +24,7 @@ The following are the differences between the Classic Exchange admin center (Cla
  
  - In new EAC, they're merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes](media/um-sm.png)
 
-For more information, see [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+For more information, see [Manage user mailboxes](./recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
  
 **Compliance Management tab**
 
@@ -72,7 +72,7 @@ For more information, see [Manage user mailboxes](https://docs.microsoft.com/exc
  
  - In new EAC, it is a new addition and is available under **Mail flow**.
  
-For more information, see [Exchange admin center](https://docs.microsoft.com/exchange/exchange-admin-center).
+For more information, see [Exchange admin center](./exchange-admin-center.md).
 
 ## What's new when upgrading from Classic Exchange admin center (Classic EAC) to new Exchange admin center (new EAC)?
 
@@ -84,19 +84,18 @@ For more information, see [Exchange admin center](https://docs.microsoft.com/exc
 
 4. **Insights** - You can use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.
 
-5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information, see [Contact Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&preserve-view=true).
+5. **Support Assistant** - You can get help from Microsoft 365 Support Assistant. For more information, see [Contact Support](/microsoft-365/admin/contact-support-for-business-products?preserve-view=true&view=o365-worldwide).
 
-6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information, see [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azps-4.8.0&preserve-view=true).
+6. **Cloud Shell** - You can select the Cloud Shell icon to access a browser-based command-line experience built with Azure management tasks. It also securely authenticates automatically for instant access to your resources through Azure PowerShell cmdlets. For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview?preserve-view=true&view=azps-4.8.0).
 
 7. **Give feedback** - You can select the Give feedback icon to provide your feedback and let us know what you think. You can also share your email address for us to reach out to you for more information.
 
-For more information, see [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
+For more information, see [What's new in Exchange admin center](./whats-new.md).
 
 ## Related articles
 
-[Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true)
+[Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center?preserve-view=true&view=o365-worldwide)
 
-[Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide&preserve-view=true)
+[Microsoft 365 security center](/microsoft-365/security/mtp/overview-security-center?preserve-view=true&view=o365-worldwide)
 
 [About the Microsoft Support and Recovery Assistant](https://support.microsoft.com/office/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f)
-

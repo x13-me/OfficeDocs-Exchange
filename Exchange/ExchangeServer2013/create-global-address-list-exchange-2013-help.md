@@ -43,7 +43,7 @@ New-GlobalAddressList -Name "GAL_Contoso" -IncludedRecipients MailboxUsers -Cond
 > [!NOTE]
 > If you're using precanned conditional filter properties, the _IncludedRecipients_ parameter can't be blank.
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/new-globaladdresslist).
+For detailed syntax and parameter information, see [New-GlobalAddressList](/powershell/module/exchange/new-globaladdresslist).
 
 ## Use the Shell create a GAL using a recipient filter
 
@@ -53,4 +53,4 @@ This example creates a GAL named GAL_AgencyA that includes recipients for which 
 New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter "CustomAttribute15 -like 'AgencyA'"
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/new-globaladdresslist).
+For detailed syntax and parameter information, see [New-GlobalAddressList](/powershell/module/exchange/new-globaladdresslist).

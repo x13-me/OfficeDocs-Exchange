@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-In Microsoft Exchange Server 2013, messaging records management (MRM) is performed by using retention tags and retention policies. A retention policy is a group of retention tags that can be applied to a mailbox. For more details, see [Retention tags and retention policies](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). Managed folders, the MRM technology introduced in Exchange Server 2007, aren't supported.
+In Microsoft Exchange Server 2013, messaging records management (MRM) is performed by using retention tags and retention policies. A retention policy is a group of retention tags that can be applied to a mailbox. For more details, see [Retention tags and retention policies](../ExchangeOnline/security-and-compliance/messaging-records-management/retention-tags-and-policies.md). Managed folders, the MRM technology introduced in Exchange Server 2007, aren't supported.
 
 A mailbox that has a managed folder mailbox policy applied can be migrated to use a retention policy. To do so, you must create retention tags that are equivalent to the managed folders linked to the user's managed folder mailbox policy.
 
@@ -25,9 +25,9 @@ A mailbox that has a managed folder mailbox policy applied can be migrated to us
 > Before you migrate from managed folders to retention policies in your production environment, we recommend that you test the process in a test environment.
 
 > [!TIP]
-> You can place mailboxes on retention hold to halt processing of retention policies or managed folder mailbox policies. Placing mailboxes on retention hold can be helpful in migration scenarios to avoid deleting messages or moving them to archive until new policy settings have been tested on test mailboxes or a small number of production mailboxes. For details, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Place a mailbox on retention hold</A>.
+> You can place mailboxes on retention hold to halt processing of retention policies or managed folder mailbox policies. Placing mailboxes on retention hold can be helpful in migration scenarios to avoid deleting messages or moving them to archive until new policy settings have been tested on test mailboxes or a small number of production mailboxes. For details, see <A href="/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Place a mailbox on retention hold</A>.
 
-For other management tasks related to MRM, see [Messaging Records Management Procedures](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
+For other management tasks related to MRM, see [Messaging Records Management Procedures](/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## Comparing retention tags to managed folders
 
@@ -250,12 +250,12 @@ New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
 New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/New-RetentionPolicyTag).
+For detailed syntax and parameter information, see [New-RetentionPolicyTag](/powershell/module/exchange/New-RetentionPolicyTag).
 
 ### Create retention tags manually
 
 > [!NOTE]
-> You can also use the EAC to create retention tags manually (not based on settings in managed folders). For details, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
+> You can also use the EAC to create retention tags manually (not based on settings in managed folders). For details, see <A href="/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
 
 This example creates retention tags based on the managed folders and corresponding managed content settings shown in the Contoso managed folder mailbox policy. The retention settings are specified manually without using the *ManagedFolderToUpgrade* parameter.
 
@@ -269,14 +269,14 @@ New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitFo
 New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/New-RetentionPolicyTag).
+For detailed syntax and parameter information, see [New-RetentionPolicyTag](/powershell/module/exchange/New-RetentionPolicyTag).
 
 ## Step 2: Create a retention policy
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 > [!NOTE]
-> You can also use the EAC to create a retention policy and add retention tags to the policy. For details, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
+> You can also use the EAC to create a retention policy and add retention tags to the policy. For details, see <A href="/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
 
 This example creates the retention policy RP-Corp and links the newly created retention tags to the policy.
 
@@ -284,7 +284,7 @@ This example creates the retention policy RP-Corp and links the newly created re
 New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/New-RetentionPolicy).
+For detailed syntax and parameter information, see [New-RetentionPolicy](/powershell/module/exchange/New-RetentionPolicy).
 
 ## Step 3: Remove the managed folder mailbox policy from user mailboxes
 
@@ -301,7 +301,7 @@ Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Applying retention policies" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 > [!NOTE]
-> You can also use the EAC to apply a retention policy to users. For details, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Apply a retention policy to mailboxes</A>.
+> You can also use the EAC to apply a retention policy to users. For details, see <A href="/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Apply a retention policy to mailboxes</A>.
 
 This example applies the newly created retention policy RP-Corp to the mailbox user Ken Kwok.
 
@@ -309,7 +309,7 @@ This example applies the newly created retention policy RP-Corp to the mailbox u
 Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/Set-Mailbox).
 
 ## How do you know this task worked?
 
@@ -323,7 +323,7 @@ To verify that you have migrated from managed folders to retention policies, do 
   Get-Mailbox -ResultSize unlimited -Filter "Name -NotLike 'DiscoverySearch*'" | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
   ```
 
-- After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicyTag) cmdlet to retrieve the retention tags provisioned in the user mailbox.
+- After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](/powershell/module/exchange/Get-RetentionPolicyTag) cmdlet to retrieve the retention tags provisioned in the user mailbox.
 
   This command retrieves the retention tags actually applied to April Stewart's mailbox.
 

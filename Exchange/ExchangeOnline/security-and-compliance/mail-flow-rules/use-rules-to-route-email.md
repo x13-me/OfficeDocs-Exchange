@@ -61,4 +61,4 @@ For example, this text file contains common misspellings of Microsoft.
 [mn].crosoft
 ```
 
-To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+To learn how to specify patterns using regular expressions, see [Regular Expression Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).

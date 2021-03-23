@@ -45,6 +45,6 @@ All three options follow the same basic steps:
 
 4. **Merge the databases.**
 
-    To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest) cmdlet.
+    To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](/powershell/module/exchange/New-MailboxRestoreRequest) cmdlet.
 
 For detailed steps about how to perform a dial tone recovery, see [Perform a dial tone recovery](perform-a-dial-tone-recovery-exchange-2013-help.md).

@@ -82,7 +82,7 @@ The IMAP4 service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
+For more information about probes and monitors, see [Server health and performance](../../server-health-and-performance-exchange-2013-help.md).
 
 ## User Action
 
@@ -124,7 +124,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## ImapTestDeepMonitor and ImapSelfTestMonitor Recovery Actions
 
-1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help).
+1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](../../start-and-stop-the-imap4-services-exchange-2013-help.md).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -154,7 +154,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This monitor alert is typically issued on CAS servers.
 
-1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
+1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](../../start-and-stop-the-imap4-services-exchange-2013-help.md)
 
 2. Rerun the associated probe as shown in step 2.c. in the Verifying the issue still exists section.
 
@@ -166,7 +166,7 @@ This monitor alert is typically issued on CAS servers.
       Set-ImapSettings -server <CAS server name> -ProtocolLoggingEnabled $true
       ```
 
-   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
+   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](../../start-and-stop-the-imap4-services-exchange-2013-help.md)
 
    3. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -218,7 +218,7 @@ This monitor alert is typically issued on CAS servers.
 
 This monitor alert is typically issued on CA and Mailbox servers.
 
-1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
+1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](../../start-and-stop-the-imap4-services-exchange-2013-help.md)
 
 2. Wait 10 minutes to see whether the monitor stays healthy. After 10 minutes, run the following command:
 
@@ -260,8 +260,8 @@ This monitor alert is typically issued on CA and Mailbox servers.
 
 ## For More Information
 
-[POP3 and IMAP4](https://docs.microsoft.com/exchange/pop3-and-imap4-in-exchange-server-2013-exchange-2013-help)
+[POP3 and IMAP4](../../pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)
 
-[Enable IMAP4 in Exchange 2013](https://docs.microsoft.com/exchange/enable-imap4-in-exchange-2013-exchange-2013-help)
+[Enable IMAP4 in Exchange 2013](../../enable-imap4-in-exchange-2013-exchange-2013-help.md)
 
-[Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-ImapConnectivity)
+[Test-ImapConnectivity](/powershell/module/exchange/Test-ImapConnectivity)

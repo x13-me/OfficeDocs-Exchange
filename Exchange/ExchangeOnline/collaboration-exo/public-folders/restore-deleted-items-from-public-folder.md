@@ -22,7 +22,7 @@ The items deleted from public folders are stored in the recoverable items (dumps
 
 ## Permissions required
 
-The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
+The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
 
 ## Restore deleted items
 
@@ -39,10 +39,10 @@ The user restoring items from the public folder must have atleast the `Author` p
    ![restored](../../media/restore-pf-imag3.png)
 
 > [!NOTE]
-> To enable the **Recover Deleted Items** option for non-mail type (for example: Calendar, Contact, Tasks) of public folders, see [Can't recover deleted items from a non-mail public folder](https://docs.microsoft.com/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
+> To enable the **Recover Deleted Items** option for non-mail type (for example: Calendar, Contact, Tasks) of public folders, see [Can't recover deleted items from a non-mail public folder](/outlook/troubleshoot/user-interface/cannot-recover-deleted-items-from-non-mail-public-folder).
 
 ## Related articles
 
-[Recover a deleted public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/recover-deleted-public-folder-mailbox)
+[Recover a deleted public folder mailbox](./recover-deleted-public-folder-mailbox.md)
 
-[Restore a deleted public folder](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/restore-deleted-public-folder)
+[Restore a deleted public folder](./restore-deleted-public-folder.md)

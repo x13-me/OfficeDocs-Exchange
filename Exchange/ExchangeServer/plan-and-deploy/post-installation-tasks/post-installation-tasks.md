@@ -41,4 +41,4 @@ If you've enabled the Scripting Agent in your Exchange organization, and you kee
 
 - The default name of the file on a new Exchange server is %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml.sample. As part of enabling the Scripting Agent in your organization, you need to rename this file to ScriptingAgentConfig.xml and customize it or replace it with your existing ScriptingAgentConfig.xml file.
 
-For more information about the Scripting Agent in Exchange 2013 (which still applies to Exchange 2016 and 2019), see [Scripting Agent](https://docs.microsoft.com/Exchange/cmdlet-extension-agents-exchange-2013-help#scripting-agent).
+For more information about the Scripting Agent in Exchange 2013 (which still applies to Exchange 2016 and 2019), see [Scripting Agent](../../../ExchangeServer2013/cmdlet-extension-agents-exchange-2013-help.md#scripting-agent).
