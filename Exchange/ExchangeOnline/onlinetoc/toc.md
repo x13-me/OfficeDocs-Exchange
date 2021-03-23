@@ -498,6 +498,7 @@
 #### [Fix slow mail flow rules insight in the new EAC](../monitoring/mail-flow-insights/mfi-fix-slow-mail-flow-rules-insight.md)
 #### [New domains being forwarded email insight in the new EAC](../monitoring/mail-flow-insights/mfi-new-domains-being-forwarded-email-insight.md)
 #### [New users forwarding email insight in the new EAC](../monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight.md)
+#### [Domain expiring insight in the new EAC](../monitoring/mail-flow-insights/domain-expiry-notification-feature.md)
 ## [Back up email](../back-up-email.md)
 ## [About Exchange documentation](../about-exchange-documentation.md)
 ## [Accessibility](../accessibility/accessibility.md)
