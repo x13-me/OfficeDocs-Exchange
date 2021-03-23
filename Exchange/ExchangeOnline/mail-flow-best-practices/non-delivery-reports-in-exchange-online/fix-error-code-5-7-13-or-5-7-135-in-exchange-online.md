@@ -101,11 +101,12 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 3. Under **Message delivery Restrictions** \> **Accept messages from**, perform the following tasks::
 
    - Clear the check box for **Require that all senders are authenticated**.
-   - Select **Only senders in the following list**, and then click **Add**.
+   - Select **Only senders in the following list**, and then click **+**.
    
  :::image type="content" source="../../media/configuring-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the user can configure restriction on senders":::
    
-   - In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group.
+   - In the **Select Members** dialog box that opens, select the external senders and the all-internal-users group.
+   - Click **Add**.
  
 :::image type="content" source="../../media/adding-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the specific senders can be added":::
    
