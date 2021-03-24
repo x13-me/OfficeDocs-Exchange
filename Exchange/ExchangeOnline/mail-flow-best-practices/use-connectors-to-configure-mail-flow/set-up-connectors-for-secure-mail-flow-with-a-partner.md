@@ -142,7 +142,7 @@ You can set up a connector to apply security restrictions to email that your par
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
 
-2. Click **+Add a connector**. The **New conenctor** screen appears.
+2. Click **+Add a connector**. The **New connector** screen appears.
 
 :::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
 
