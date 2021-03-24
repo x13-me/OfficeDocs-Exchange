@@ -80,7 +80,7 @@ The following sections describe how to utilize the `Manage-MetaCacheDatabase.ps1
 
 These DAG parameters are used to calculate the proper MCDB size on your SSD drives:
 
-- *AutoDagTotalNumberOfDatabases*: Maximum number of possible active database copies per server that will use MCDB.
+- *AutoDagTotalNumberOfDatabases*: The number of databases in your DAG. i.e. 50.
 
 - *AutoDagDatabaseCopiesPerDatabase*: The number of active and passive copies each individual database has.
 
