@@ -109,7 +109,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
 
-<include the image message-delivery-restrictions-new-eac.png>
+:::image type="content" source="../../media/message-delivery-restrictions-new-eac.png" alt-text="The message delivery restrictions dialog box":::
 
 5. Under **Accept messages from** section:
   - Clear the check box for **Check if all senders are authenticated**
