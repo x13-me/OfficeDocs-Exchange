@@ -29,6 +29,6 @@ The account being used to run the **setup /PrepareAD** command has insufficient 
 
 To resolve this issue, verify that the logged-on user account is valid and belongs to the Enterprise Admins group, or log on with an account that has those permissions and rerun **setup /PrepareAD**.
 
-For more information about how to perform the PrepareAD process, see "How to Prepare Active Directory and Domains" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80))).
+For more information about how to perform the PrepareAD process, see "How to Prepare Active Directory and Domains" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80)](/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80))).
 
-For more information about Active Directory permissions that are needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65)](https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65))).
+For more information about Active Directory permissions that are needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65)](/previous-versions/tn-archive/bb124223(v=exchg.65))).

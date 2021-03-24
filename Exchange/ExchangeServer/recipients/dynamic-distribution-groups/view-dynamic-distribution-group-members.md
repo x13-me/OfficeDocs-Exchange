@@ -46,4 +46,4 @@ $group = "Full Time Employees"
 Get-Recipient -RecipientPreviewFilter (Get-DynamicDistributionGroup $group).RecipientFilter
 ```
 
-For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup) and [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient).
+For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](/powershell/module/exchange/get-dynamicdistributiongroup) and [Get-Recipient](/powershell/module/exchange/get-recipient).

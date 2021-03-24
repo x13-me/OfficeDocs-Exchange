@@ -28,7 +28,7 @@ To run the **New-MoveRequest** and **New-MigrationBatch** cmdlets, a mail user m
 
 The sample Exchange PowerShell script described in this topic supports this task by synchronizing mailbox users from an Exchange source forest to Exchange target forests as mail users (also known as mail-enabled users). The script copies the Active Directory attributes of the mailbox users in the source forest to the target forest, and then uses the **Update-Recipient** cmdlet to turn the target objects into mail users.
 
-For more information about using and writing scripts, see [About Scripts](https://docs.microsoft.com//powershell/module/microsoft.powershell.core/about/about_scripts). For more information about preparing for cross-forest moves, see [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md).
+For more information about using and writing scripts, see [About Scripts](//powershell/module/microsoft.powershell.core/about/about_scripts). For more information about preparing for cross-forest moves, see [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md).
 
 Looking for other management tasks related to remote move requests? Check out [Manage on-premises mailbox moves in Exchange Server](manage-mailbox-moves.md).
 
@@ -53,7 +53,7 @@ Looking for other management tasks related to remote move requests? Check out [M
 
 Run the script from the Exchange Management Shell on a Mailbox server in the target Exchange 2016 or Exchange 2019 forest. The script copies the mailbox attributes from the source forest.
 
-To assign a specific authentication credential for the remote forest domain controller, you must first run the Windows PowerShell **Get-Credential** cmdlet and store the user input in a temporary variable. When you run the **Get-Credential** cmdlet, the cmdlet asks for the user name and password of the account used during authentication with the remote forest domain controller. You can then use the temporary variable in the Prepare-MoveRequest.ps1 script. For more information about the **Get-Credential** cmdlet, see [Get-Credential](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/get-credential).
+To assign a specific authentication credential for the remote forest domain controller, you must first run the Windows PowerShell **Get-Credential** cmdlet and store the user input in a temporary variable. When you run the **Get-Credential** cmdlet, the cmdlet asks for the user name and password of the account used during authentication with the remote forest domain controller. You can then use the temporary variable in the Prepare-MoveRequest.ps1 script. For more information about the **Get-Credential** cmdlet, see [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential).
 
 > [!NOTE]
 > Make sure that you use two separate credentials for the local forest and the remote forest when calling this script.

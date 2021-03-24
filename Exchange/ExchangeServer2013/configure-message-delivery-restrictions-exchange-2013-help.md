@@ -110,15 +110,15 @@ Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Tea
 
 For detailed syntax and parameter information related to configuring delivery restrictions for different types of recipients, see the following topics:
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
+- [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](/powershell/module/exchange/set-dynamicdistributiongroup)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
+- [Set-MailContact](/powershell/module/exchange/set-mailcontact)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
+- [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
 ## How do you know this worked?
 

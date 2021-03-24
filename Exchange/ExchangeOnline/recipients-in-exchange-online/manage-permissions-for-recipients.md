@@ -41,14 +41,14 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
-- To open and use the EAC, see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To open and use the EAC, see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - When a mailbox is added to Outlook using Advanced Settings, only the primary mailbox will be added; the archive mailbox won't be added. If a user needs to also access the archive mailbox, the mailbox should be added to Outlook as a second account in the same Outlook profile.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to assign permissions to individual mailboxes
 
@@ -146,9 +146,9 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
+- [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission).
 
-- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxpermission).
+- [Remove-MailboxPermission](/powershell/module/exchange/remove-mailboxpermission).
 
 ### How do you know this worked?
 
@@ -162,7 +162,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
    Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table User,Deny,IsInherited,AccessRights -Auto
    ```
 
-   For more information, see [Get-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/get-mailboxpermission).
+   For more information, see [Get-MailboxPermission](/powershell/module/exchange/get-mailboxpermission).
 
 ## Use Exchange Online PowerShell to assign the Send As permission to mailboxes and groups
 
@@ -186,9 +186,9 @@ Remove-RecipientPermission -Identity "Yan Li" -Trustee "Karen Toh" -AccessRights
 
 For detailed syntax and parameter information, see:
 
-- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)
+- [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-- [Remove-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/remove-recipientpermission)
+- [Remove-RecipientPermission](/powershell/module/exchange/remove-recipientpermission)
 
 ### How do you know this worked?
 

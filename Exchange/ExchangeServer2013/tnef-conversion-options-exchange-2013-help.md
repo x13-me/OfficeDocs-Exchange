@@ -61,7 +61,7 @@ For remote domains in your organization, you have the following configuration op
 </tbody>
 </table>
 
-For more information about remote domains, see [Remote domains](remote-domains-exchange-2013-help.md) or [Remote domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains).
+For more information about remote domains, see [Remote domains](remote-domains-exchange-2013-help.md) or [Remote domains in Exchange Online](../ExchangeOnline/mail-flow-best-practices/remote-domains/remote-domains.md).
 
 ## TNEF conversion options for mail users and mail contacts
 

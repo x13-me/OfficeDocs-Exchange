@@ -43,4 +43,4 @@ In this example, the offline address book is generated every six hours each day 
 Set-MailboxServer -Identity MBXServer01 -OABGeneratorWorkCycle 01.00:00:00 -OABGeneratorWorkCycleCheckpoint 06:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](/powershell/module/exchange/set-offlineaddressbook).

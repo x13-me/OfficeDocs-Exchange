@@ -22,11 +22,15 @@ Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) 
 
 Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
-Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
-
 ::: moniker range="exchserver-2019"
+
+To get the latest version of Exchange 2019, download and install [Cumulative Update 9 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=24b09ec4-48c7-4c1c-87d8-4c2c0f56bfb8). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
+
+The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
+
 | Version | Blog post |
 |:-----|:-----|
+|Exchange 2019 CU9|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2019 CU8|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
 |Exchange 2019 CU7|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
 |Exchange 2019 CU6|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
@@ -42,12 +46,13 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 19 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=2ef459a6-c8a5-417f-89a8-c8afa9ea00dd). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 20 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=64a4da8c-89f0-49ba-b122-c0e53ef095c5). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
 | Version | Blog post |
 |:-----|:-----|
+|Exchange 2016 CU20|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2016 CU19|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
 |Exchange 2016 CU18|[Released: September 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2020-quarterly-exchange-updates/ba-p/1649072)|
 |Exchange 2016 CU17|[Released: June 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2020-quarterly-exchange-updates/ba-p/1458993)|
@@ -74,4 +79,4 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).
 
-- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates).
+- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](./build-numbers-and-release-dates.md).

@@ -21,15 +21,15 @@ manager: serdars
 # Run a message trace in the classic EAC
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
+> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
-For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
+For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 ## What do you need to know before you begin?
 
-- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
+- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
 
 - To find and open the classic EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -38,7 +38,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](/microsoft-365/admin/contact-support-for-business-products).
 
 ## Run a message trace
 
@@ -154,7 +154,7 @@ In the events section, the following fields provide information about the events
   - **DLP rule**: The message had a DLP rule or sensitivity label match in this message.
 
     > [!TIP]
-    > Additional events may appear. For more information about these events, see [Event types in the message tracking log](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log).
+    > Additional events may appear. For more information about these events, see [Event types in the message tracking log](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#event-types-in-the-message-tracking-log).
 
 - **Action**: This field shows the action that was performed if the message was filtered due to a malware or spam detection or a rule match. For example, it will let you know if the message was deleted or if it was sent to the quarantine.
 
@@ -227,7 +227,7 @@ If you didn't include routing details when running the message trace, the follow
 
 #### View a message trace report with routing details
 
-If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in [Fields in the message tracking log files](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#fields-in-the-message-tracking-log-files).
+If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in [Fields in the message tracking log files](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#fields-in-the-message-tracking-log-files).
 
 #### The custom_data field
 
@@ -247,13 +247,13 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |SFV=SPM|The message was marked as spam by the content filter.|
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |SFV=SKS|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a mail flow rule to automatically mark it as spam and bypass all additional filtering.|
-|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levels).|
-|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
+|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](/microsoft-365/security/office-365-security/spam-confidence-levels).|
+|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
 |DI=SB|The sender of the message was blocked.|
 |DI=SQ|The message was quarantined.|
 |DI=SD|The message was deleted.|
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
-|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
+|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
 |SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|

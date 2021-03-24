@@ -36,7 +36,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Configure deleted item retention for a mailbox
 
@@ -80,7 +80,7 @@ This example configures April Stewart's mailbox to retain deleted items for 30 d
 Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30 -RetainDeletedItemsUntilBackup $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## Use the Exchange Management Shell to configure recoverable items quotas for a mailbox
 
@@ -96,7 +96,7 @@ Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -Recove
 > [!NOTE]
 > To configure a mailbox to use different recoverable items quotas than the mailbox database in which it resides, you must set the _UseDatabaseQuotaDefaults_ parameter to `$false`.
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## Use the Exchange Management Shell to configure deleted item retention for a mailbox database
 
@@ -109,7 +109,7 @@ This example configures a deleted item retention period of 10 days for the mailb
 Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10 -RetainDeletedItemsUntilBackup $true
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](/powershell/module/exchange/set-mailboxdatabase).
 
 ## Use the Exchange Management Shell to configure recoverable items quotas for a mailbox database
 
@@ -122,4 +122,4 @@ This example configures a recoverable items warning quota of 15 GB and a recover
 Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](/powershell/module/exchange/set-mailboxdatabase).

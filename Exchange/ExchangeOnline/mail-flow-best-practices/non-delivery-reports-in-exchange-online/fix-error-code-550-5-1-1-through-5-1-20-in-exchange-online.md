@@ -104,7 +104,7 @@ Check your recent messages in the **Sent Items** folder for strange or unknown m
 
 If you believe that your account has been compromised, follow these steps:
 
-- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
+- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your account has been compromised](/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 - Notify your email admin. Your admin will need to unblock your account before you can send email again.
 
@@ -116,7 +116,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 Check your recent messages in the **Sent Items** folder for strange or unknown messages (messages that you didn't send). If you don't see any suspicious messages, it's likely that the NDR you received is backscatter. If you've already changed your password and run an anti-malware scan, you can ignore these backscatter NDRs.
 
-To learn more, see [Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop).
+To learn more, see [Backscatter in EOP](/microsoft-365/security/office-365-security/backscatter-messages-and-eop).
 
 ## I'm an email admin. What can I do to fix this?
 
@@ -132,7 +132,7 @@ Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the
 
 2. Go to **Health** \> **Service health** to see if there's a current service issue in Microsoft 365 or Office 365 affecting the user's account.
 
-3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is available within Microsoft 365 and Office 365.
+3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](../troubleshoot-mail-flow.md) tool that is available within Microsoft 365 and Office 365.
 
 If there's a problem with the recipient's domain, contact the recipient or the recipient's email administrator to let them know about the problem. They'll have to resolve the issue in order to prevent NDR 5.1.x errors.
 
@@ -151,7 +151,7 @@ If external senders (senders outside your organization) receive this NDR when th
 
 - Test your MX record and your ability to send email from your Exchange Online organization by using the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the Microsoft Remote Connectivity Analyzer.
 
-For more information, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) and [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) and [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ### Solution 3: Update forwarding rules to remove incorrect email addresses
 
@@ -169,7 +169,7 @@ For more information, see [Configure email forwarding for a mailbox](../../recip
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

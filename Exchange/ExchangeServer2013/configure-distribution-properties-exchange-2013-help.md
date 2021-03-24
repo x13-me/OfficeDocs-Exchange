@@ -49,7 +49,7 @@ This example sets the external distribution point to https://contoso.com/OAB for
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 
-For detailed syntax and parameter information, see [Set-OabVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory).
+For detailed syntax and parameter information, see [Set-OabVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory).
 
 ## For More Information
 <a name="UseShell"> </a>
