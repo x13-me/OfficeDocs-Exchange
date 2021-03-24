@@ -34,7 +34,7 @@ Only an email admin in the recipient's organization can fix this issue. Contact 
 
 ## I'm an email admin. How do I fix this?
 
-The two methods that will allow an external sender to send messages to the mail user in your organization are described in the following sections.
+The two methods that will allow an external sender to send messages to the mail user in your organization are described in the following sections. These two methods can be implemented using the Classic EAC.
 
 > [!NOTE]
 > Currently, there is no support for the two methods in the New EAC.
@@ -45,13 +45,17 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 ### Method 1: Allow all internal and external senders to send messages to this mail user
 
-1. In the Classic EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. Navigate to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![View contacts to help fix DSN 5.7.136](../../media/de84fb82-f697-443b-87f6-b0621dcf8a44.png)
 
-2. In the mail user properties dialog box that opens, go to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+The mail user properties dialog box opens.
 
-3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+2. Navigate to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+
+The **Message delivery restrictions** dialog box opens.
+
+3. Configure the following settings in the **Accept messages from** section:
 
    - Clear the check box for **Require that all senders are authenticated**.
 
@@ -73,13 +77,17 @@ Instead of allowing all external senders to send messages to this mail user, you
 
 To configure the mail user's allowed senders list, open the Classic EAC do the following steps:
 
-1. In the EAC, go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. Navigate to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![View contacts to help fix DSN 5.7.136](../../media/de84fb82-f697-443b-87f6-b0621dcf8a44.png)
 
-2. In the mail user properties dialog box that opens, go to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+The mail user properties dialog box opens.
 
-3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+2. Navigate to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+
+The **Message delivery restrictions** dialog box opens.
+
+3. Configure the following settings in the **Accept messages from** section:
 
    - Clear the check box for **Require that all senders are authenticated**.
 
