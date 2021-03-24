@@ -20,7 +20,7 @@ manager: serdars
 
 # Manage accepted domains in Exchange Online
 
-When you add your domain to Microsoft 365 or Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Microsoft 365 or Office 365 using the Microsoft 365 admin center, see [Add a domain to Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+When you add your domain to Microsoft 365 or Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Microsoft 365 or Office 365 using the Microsoft 365 admin center, see [Add a domain to Microsoft 365 or Office 365](/microsoft-365/admin/setup/add-domain).
 
 After you add your domain using the Microsoft 365 admin center, you can use the Exchange admin center (EAC) to view your accepted domains and configure the domain type.
 
@@ -34,7 +34,7 @@ There are two types of accepted domains in Exchange Online:
 
     - **Exchange Online**: [Manage mail users](../../recipients-in-exchange-online/manage-mail-users.md)
 
-    - **Exchange Online Protection**: [Manage mail users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop)
+    - **Exchange Online Protection**: [Manage mail users in EOP](/microsoft-365/security/office-365-security/manage-mail-users-in-eop)
 
   - Setting this option enables Directory Based Edge Blocking (DBEB), which rejects messages for invalid recipients at the service network perimeter. For more information about configuring DBEB during a migration, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
@@ -52,12 +52,12 @@ There are two types of accepted domains in Exchange Online:
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## View accepted domains
 
@@ -145,5 +145,6 @@ This example configures the accepted domain named contoso.com as an internal rel
 Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](/powershell/module/exchange/set-accepteddomain).
+
 

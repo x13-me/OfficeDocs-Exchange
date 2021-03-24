@@ -59,7 +59,7 @@ To remove throttling for these messages, you need to configure a connector:
 After you have set up a connector, you can monitor if IP throttling has stopped.
 
 > [!NOTE]
-> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
+> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](/microsoft-365/admin/setup/domains-faq).
 
 ## Still need help with error code 451 4.7.500-699 (ASxxx)?
 
@@ -67,7 +67,7 @@ After you have set up a connector, you can monitor if IP throttling has stopped.
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

@@ -23,7 +23,7 @@ manager: serdars
 Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 
 > [!IMPORTANT]
-> If you're using Microsoft 365 or Office 365 for business, you should configure email forwarding in the [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)
+> If you're using Microsoft 365 or Office 365 for business, you should configure email forwarding in the [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding)
 
 ## Use the new Exchange admin center (EAC) to configure email forwarding
 
@@ -46,7 +46,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 7. You can turn ON the **Keep a copy of forwarded email in this mailbox** option if you wish to keep a copy of the forwarded email.
 
 8. Click **Save** to save your changes. Click **Close** to exit from the **Manage mail flow settings** display pane.
-
 
 ## Use the Classic Exchange admin center to configure email forwarding
 
@@ -84,4 +83,4 @@ This topic is for admins. If you want to forward your own email to another recip
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

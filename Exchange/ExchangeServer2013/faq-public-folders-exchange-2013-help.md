@@ -23,7 +23,7 @@ Have questions about public folders that aren't answered here? Send us an email 
 
 ## FAQs about public folder migration
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online).
+This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, and Exchange Online](../ExchangeOnline/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders.md), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](../ExchangeServer/collaboration/public-folders/migrate-to-exchange-online.md).
 
 ## What are the supported public folder migration scenarios?
 
@@ -60,7 +60,7 @@ You can force a delta sync to occur before finalization (prior to locking the so
 Resume-PublicFolderMigrationRequest \PublicFolderMigration
 ```
 
-For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-PublicFolderMigrationRequest).
+For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](/powershell/module/exchange/Resume-PublicFolderMigrationRequest).
 
 ## For the migration of a geo-distributed hierarchy, how can I make sure that the public folders are created in the location nearest to the target users?
 
@@ -97,7 +97,7 @@ Outlook Web App is supported, but with some limitations. You can add and remove 
 > [!NOTE]
 > You can only create public folder rules that contain the element <STRONG>reply using a specific template</STRONG> in mail-enabled public folders. It is possible that pre-existing rules containing <STRONG>reply using a specific template</STRONG> will continue to work on non-mail-enabled public folders, but on those folders you cannot create new rules with this template element, or edit existing rules with this element.
 
-In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-deployment) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
+In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](../ExchangeHybrid/hybrid-deployment/hybrid-deployment.md) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
 
 ## How can I store a very large hierarchy in a public folder mailbox?
 
@@ -111,7 +111,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](/powershell/module/exchange/Get-OrganizationConfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -121,7 +121,7 @@ Run the following command to create the first master hierarchy public folder mai
 New-Mailbox -PublicFolder -Name <name of public folder>
 ```
 
-For more detail, see [Create a public folder](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder).
+For more detail, see [Create a public folder](../ExchangeOnline/collaboration-exo/public-folders/create-public-folder.md).
 
 ## In previous versions of Exchange, for each mailbox database there was an option to specify its public folder database. How will this work in Exchange 2013?
 
@@ -129,11 +129,11 @@ There is no database-level setting in Exchange 2013. Exchange 2013 has a mailbox
 
 ## How are public folder metric tools being used in Exchange 2013?
 
-In Exchange 2013, you can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+In Exchange 2013, you can use [Get-PublicFolderStatistics](/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2013. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
+In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2013. You can use [Get-PublicFolderStatistics](/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
 ## Does mailbox audit logging work against public folders?
 
@@ -153,7 +153,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) cmdlet with the *DefaultPublicFolderMailbox* parameter.
+In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](/powershell/module/exchange/Set-Mailbox) cmdlet with the *DefaultPublicFolderMailbox* parameter.
 
 ```powershell
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"

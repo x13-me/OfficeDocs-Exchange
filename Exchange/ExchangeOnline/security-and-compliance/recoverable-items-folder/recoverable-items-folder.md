@@ -15,7 +15,6 @@ ms.collection:
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Recoverable Items folder in Exchange Online
@@ -77,6 +76,10 @@ The Recoverable Items folder contains the following subfolders:
 - **DiscoveryHolds**: If In-Place Hold is enabled or if a Microsoft 365 or Office 365 retention policy is assigned to the mailbox, this subfolder contains all items that meet the hold query parameters and are hard deleted.
 
 - **Calendar Logging**: This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
+
+- **SubstrateHolds**: If In-Place Hold, Litigation Hold, or a Microsoft 365 or Office 365 Teams Chat retention policy is enabled, this subfolder contains the original copy of the Teams message if the message has been modified or deleted. A copy of the item before modification is saved. This folder isn't visible to end users.
+
+
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 
@@ -160,7 +163,7 @@ When a mailbox is no longer on In-Place Hold or Litigation Hold, copies of modif
 
 ## Recoverable Items mailbox quotas
 
-When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if a Microsoft 365 or Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](https://docs.microsoft.com/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
+When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if a Microsoft 365 or Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
 
 If the Recoverable Items folder for a mailbox reaches the Recoverable Items quota, no more items can be stored in the folder. This impacts mailbox functionality in the following ways:
 
@@ -174,7 +177,7 @@ If the Recoverable Items folder for a mailbox reaches the Recoverable Items quot
 
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
 
-If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. You can use the [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet to copy messages from the Recoverable Items folder of a mailbox to a discovery mailbox, and then delete the items from the mailbox. For details, see [Clean up or delete items from the Recoverable Items folder](clean-up-deleted-items.md).
+If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Microsoft 365 or Office 365 retention policy, copy-on-write page protection can't maintain versions of modified items. To maintain versions of modified items, you need to reduce the size of the Recoverable Items folder. For more information, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 ## More information
 

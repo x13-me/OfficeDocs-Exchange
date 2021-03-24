@@ -11,6 +11,7 @@ author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Learn about the connection filtering which is an anti-spam feature in Microsoft Exchange Server.
 ---
 
 # Connection Filtering on Edge Transport Servers
@@ -125,7 +126,7 @@ For absolute value types, the IP Block List provider returns explicit responses 
 
 ## IP Allow List providers
 
-IP Allow List providers are also known as *safe lists* or *white lists*. IP Allow List providers are configured just like IP Block List providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allow List provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Block List providers are used much more frequently than IP Allow List providers. Choose your IP Allow List providers carefully.
+IP Allow List providers are also known as *safe lists* or *allowlist*. IP Allow List providers are configured just like IP Block List providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allow List provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Block List providers are used much more frequently than IP Allow List providers. Choose your IP Allow List providers carefully.
 
 ## Test IP Block List providers and IP Allow List providers
 

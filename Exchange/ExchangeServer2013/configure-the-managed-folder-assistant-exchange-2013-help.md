@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 The *Managed Folder Assistant* is a Microsoft Exchange Mailbox Assistant that applies message retention settings configured in retention policies.
 
-For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
+For additional management tasks related to messaging records management (MRM), see [Messaging Records Management Procedures](/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -44,11 +44,11 @@ This example configures the Managed Folder Assistant to process all mailboxes wi
 Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer).
+For detailed syntax and parameter information, see [Set-MailboxServer](/powershell/module/exchange/Set-MailboxServer).
 
 ## How do I know this worked?
 
-To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxServer) cmdlet to check the *ManagedFolderWorkCycle* parameter.
+To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](/powershell/module/exchange/Get-MailboxServer) cmdlet to check the *ManagedFolderWorkCycle* parameter.
 
 This command retrieves all Mailbox servers in the organization and outputs the Managed Folder Assistant's workcycle properties from each server in a table format. The *Auto* switch is used to automatically fit column width.
 
@@ -64,4 +64,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/Start-ManagedFolderAssistant).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](/powershell/module/exchange/Start-ManagedFolderAssistant).

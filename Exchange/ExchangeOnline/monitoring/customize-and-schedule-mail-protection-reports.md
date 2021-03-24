@@ -26,12 +26,12 @@ As an Exchange Online or Exchange Online Protection (EOP) admin, you probably wa
 
 You can choose to either schedule mail protection reports to be sent to your inbox automatically, or you can view them any time in the Microsoft 365 Security Center.
 
-To get started customizing and downloading reports, see [View reports for Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
+To get started customizing and downloading reports, see [View reports for Advanced Threat Protection](/microsoft-365/security/office-365-security/view-reports-for-atp).
 
 ## Related topics
 
-[Smart reports and insights in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[Smart reports and insights in the Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
-[View email security reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports)
+[View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports)
 
-[Mail flow insights in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-insights-v2)
+[Mail flow insights in the Office 365 Security & Compliance Center](/microsoft-365/security/office-365-security/mail-flow-insights-v2)

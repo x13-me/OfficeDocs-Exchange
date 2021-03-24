@@ -18,7 +18,7 @@ manager: serdars
 # Managing devices for Outlook for iOS and Android for Exchange Server
 
 > [!IMPORTANT]
-> Outlook for iOS and Android supports hybrid Modern Authentication for on-premises mailboxes which eliminates the need to leverage basic authentication. The information contained in this article only pertains to basic authentication. For more information, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+> Outlook for iOS and Android supports hybrid Modern Authentication for on-premises mailboxes which eliminates the need to leverage basic authentication. The information contained in this article only pertains to basic authentication. For more information, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](./use-hybrid-modern-auth.md).
 
 Microsoft recommends Exchange ActiveSync for managing the mobile devices that are used to access Exchange mailboxes in your on-premises environment. Exchange ActiveSync is a Microsoft Exchange synchronization protocol that lets mobile phones access an organization's information on a server that's running Microsoft Exchange.
 
@@ -43,7 +43,7 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
 > [!NOTE]
 > Outlook for Android will roll out support for the AllowBluetooth setting beginning at the end of August.
 
-For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies](https://docs.microsoft.com/Exchange/clients/exchange-activesync/mobile-device-mailbox-policies).
+For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies](../exchange-activesync/mobile-device-mailbox-policies.md).
 
 ### PIN lock and device encryption
 
@@ -140,11 +140,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 **Additional resources**:
 
-- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/new-activesyncdeviceaccessrule)
+- [New-ActiveSyncDeviceAccessRule](/powershell/module/exchange/new-activesyncdeviceaccessrule)
 
-- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevice)
+- [Get-MobileDevice](/powershell/module/exchange/get-mobiledevice)
 
-- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/set-activesyncorganizationsettings)
+- [Set-ActiveSyncOrganizationSettings](/powershell/module/exchange/set-activesyncorganizationsettings)
 
 ## Blocking Outlook for iOS and Android
 

@@ -34,7 +34,7 @@ manager: serdars
 
 As part of the process of deploying Microsoft 365 or Office 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Microsoft 365 or Office 365.
 
-Looking for PowerShell commands for general IMAP migrations? See [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
+Looking for PowerShell commands for general IMAP migrations? See [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 ## Migration tasks for IMAP mailboxes
 
@@ -44,11 +44,11 @@ Here are the tasks to do when you're ready to get started with migrating your IM
 
 - You need to create your users in Microsoft 365 or Office 365 before you migrate their IMAP mailboxes from the source email environment. Each user must have a target Microsoft 365 or Office 365 mailbox for the IMAP migration.
 
-- If you use an email domain in your IMAP email environment, and you also want to use the email domain in Microsoft 365 or Office 365, you need to add the domain to Microsoft 365 or Office 365 as an accepted domain before you create users in Microsoft 365 or Office 365. For instructions, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+- If you use an email domain in your IMAP email environment, and you also want to use the email domain in Microsoft 365 or Office 365, you need to add the domain to Microsoft 365 or Office 365 as an accepted domain before you create users in Microsoft 365 or Office 365. For instructions, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-- If you are using Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true).
+- If you are using Office 365 operated by 21Vianet in China, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain?preserve-view=true&view=o365-21vianet).
 
-- To add users, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+- To add users, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
 ### Step 1: Find the full name of your current email server
 
@@ -323,13 +323,13 @@ The place to change the TTL setting is on your email system's mail exchanger rec
 
 Don't worry if you skip this task. It might take longer for email to start showing up in your new Microsoft 365 or Office 365 mailboxes, but it will get there.
 
-If you need some help configuring your DNS settings, head over to [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records).
+If you need some help configuring your DNS settings, head over to [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records).
 
 ### Step 5: Route your email directly to Microsoft 365 or Office 365
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, we left your MX record pointing to your source email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. This helps ensure that email is delivered to your Microsoft 365 or Office 365 mailboxes. Moving the MX record will also let you turn off your old email system when you are ready.
 
-For many DNS providers, we have specific instructions to change your MX records, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided general MX record instructions as well, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), or for Office 365 in China, see this version of the article: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+For many DNS providers, we have specific instructions to change your MX records, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). If you are using Office 365 operated by 21Vianet in China, see this version of the article instead: [Create DNS records for Office 365 when you manage your DNS records](/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided general MX record instructions as well, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), or for Office 365 in China, see this version of the article: [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task to stop email synchronization.
 

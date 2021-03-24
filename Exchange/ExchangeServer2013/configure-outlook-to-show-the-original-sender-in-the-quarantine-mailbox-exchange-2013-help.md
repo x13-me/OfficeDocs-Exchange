@@ -123,7 +123,7 @@ By default, you can't select these fields in Microsoft Outlook. Before you can a
 
      - *\<OfficeVersion\>*: For Outlook 2007, the value is `Office12`. For Outlook 2010, the value is `Office14`. For Outlook 2013, the value is `Office15`.
 
-     - *\<LCID\>*: This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [Language identifiers and OptionState Id values in Office](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016).
+     - *\<LCID\>*: This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [Language identifiers and OptionState Id values in Office](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016).
 
    - **Name**: For the rest of this procedure, assume the file is named `QTNE.cfg`. The name of the file isn't important, but be sure to enclose the value in quotation marks so the file is saved as QTNE.cfg and not QTNE.cfg.txt.
 

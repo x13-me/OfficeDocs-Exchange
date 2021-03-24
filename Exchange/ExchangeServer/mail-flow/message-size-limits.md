@@ -52,7 +52,7 @@ The following list describes the basic types of message size limits, and the mes
 
 ## Scope of limits
 
-The following tables show the message limits at the Organization, Connector, Server, and Mailbox levels, including information about how to configure the limits in the Exchange admin center (EAC) or the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+The following tables show the message limits at the Organization, Connector, Server, and Mailbox levels, including information about how to configure the limits in the Exchange admin center (EAC) or the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 ### Organizational limits
 
@@ -120,7 +120,7 @@ Server limits apply to specific Mailbox servers or Edge Transport servers. You c
 |Maximum size for a message sent by Exchange ActiveSync clients|10 MB|Not available|You configure this value in web.config XML application configuration files on the Mailbox server. For more information, see [Configure client-specific message size limits](../architecture/client-access/client-message-size-limits.md).|
 |Maximum size for a message sent by Exchange Web Services clients|64 MB|Not available|You configure this value in web.config XML application configuration files on the Mailbox server. For more information, see [Configure client-specific message size limits](../architecture/client-access/client-message-size-limits.md).|
 
-The pickup directory that's available on Edge Transport servers and Mailbox servers also has messages size limits that you can configure. Typically, the pickup directory isn't used in everyday mail flow. It's is used by administrators for mail flow testing, or by applications that need to create and submit their own messages files. For more information, see [Configure the Pickup Directory and the Replay Directory](https://docs.microsoft.com/exchange/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help).
+The pickup directory that's available on Edge Transport servers and Mailbox servers also has messages size limits that you can configure. Typically, the pickup directory isn't used in everyday mail flow. It's is used by administrators for mail flow testing, or by applications that need to create and submit their own messages files. For more information, see [Configure the Pickup Directory and the Replay Directory](../../ExchangeServer2013/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md).
 
 - Maximum size of all header fields in a message file placed in the pickup directory: 64 KB.
 

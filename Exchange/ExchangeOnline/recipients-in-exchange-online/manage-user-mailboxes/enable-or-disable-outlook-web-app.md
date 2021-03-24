@@ -40,7 +40,7 @@ For additional management tasks related to managing email client access to a mai
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the new EAC to enable or disable Outlook on the web
 
@@ -79,6 +79,16 @@ For additional management tasks related to managing email client access to a mai
 > [!NOTE]
 > You can enable and disable Outlook on the web for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes.md).
 
+## How do you know it worked?
+
+To verify that you've successfully enabled or disabled Outlook on the web for a user mailbox, do one of the following:
+
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+
+- On the mailbox properties page, click **Mailbox Features**.
+
+- Under **Email Connectivity**, verify whether Outlook on the web is enabled or disabled.
+
 ## Use Exchange Online PowerShell to enable or disable Outlook on the web
 
 This example disables Outlook on the web for the mailbox of Yan Li.
@@ -90,8 +100,19 @@ Set-CASMailbox -Identity "Yan Li" -OWAEnabled $false
 This example enables Outlook on the web for the mailbox of Elly Nkya.
 
 ```PowerShell
-Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
+Set-CASMailbox -Identity "Elly Nkya" -OWAEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
+## How do you know this worked?
+
+To verify that you've successfully enabled or disabled Outlook on the web for a user mailbox, do one of the following:
+
+- Run the following command in Exchange Online PowerShell.
+
+  ```PowerShell
+  Get-CASMailbox -Identity <MailboxIdentity>
+  ```
+
+  If Outlook on the web is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook on the web is disabled, the value is `False`.

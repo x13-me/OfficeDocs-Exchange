@@ -35,11 +35,11 @@ To perform the following procedure in Exchange 2013, confirm you have the follow
 
   - One forest does not contain user accounts and does not yet have Exchange installed. In this procedure, this forest is called the *Exchange forest*. You will use the procedure to install Exchange 2013 in this forest.
 
-- You have correctly configured Domain Name System (DNS) for name resolution across forests in your organization. To check that you have DNS configured correctly, ping each forest from the other forest or forests in your organization. For more information about configuring DNS, see the [DNS Servers Operations Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816603(v=ws.10)).
+- You have correctly configured Domain Name System (DNS) for name resolution across forests in your organization. To check that you have DNS configured correctly, ping each forest from the other forest or forests in your organization. For more information about configuring DNS, see the [DNS Servers Operations Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816603(v=ws.10)).
 
 ## Deploy Exchange 2013 in an Exchange resource forest topology
 
-1. From a domain controller in the Exchange forest, create a one-way outgoing trust so that the Exchange forest trusts the accounts forest. For detailed steps, see [Create a one-way, outgoing, forest trust for both sides of the trust](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc779840(v=ws.10)).
+1. From a domain controller in the Exchange forest, create a one-way outgoing trust so that the Exchange forest trusts the accounts forest. For detailed steps, see [Create a one-way, outgoing, forest trust for both sides of the trust](/previous-versions/windows/it-pro/windows-server-2003/cc779840(v=ws.10)).
 
     > [!NOTE]
     > Although we recommend that you create a forest trust, you can create either a forest trust or an external trust. If you create an external trust, when you create linked mailboxes in Step&nbsp;3, on the <STRONG>Master Account</STRONG> page of the New Mailbox wizard, you must specify a user account that can access the domain controller in the trusted forest. You can't use the credentials with which you are currently logged on. If you create linked mailboxes by using the <STRONG>New-Mailbox</STRONG> cmdlet, you must specify a user account that can access the domain controller in the trusted forest by using the <EM>LinkedCredential</EM> parameter.
