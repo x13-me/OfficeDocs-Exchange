@@ -40,7 +40,7 @@ Depending on your organization's needs, a hybrid deployment is the best option f
 
 ## Other methods to migrate to Exchange Online
 
-A hybrid deployment is not for everyone; in fact there are usually better options. Many of the tenants that have chosen to deploy a hybrid configuration are under fifty seats. While the list of advantages of a hybrid deployment may sound attractive, it comes with a hefty price with regards to complexity. Some of the smaller tenants require the features of a hybrid deployment, but, for most tenants, it would be a much better experience to use either a cutover, staged, or IMAP migration option. There is a program called FastTrack you can use when deciding on the migration approach to take. Information on FastTrack is described on the [Microsoft 365 FastTrack page](https://www.microsoft.com/fasttrack/microsoft-365).
+A hybrid deployment is not for everyone; in fact there are usually better options. Many of the tenants that have chosen to deploy a hybrid configuration are under fifty seats. While the list of advantages of a hybrid deployment may sound attractive, it comes with a hefty price, regarding complexity. Some of the smaller tenants require the features of a hybrid deployment, but, for most tenants, it would be a much better experience to use either a cutover, staged, or IMAP migration option. There is a program called FastTrack you can use when deciding on the migration approach to take. Information on FastTrack is described on the [Microsoft 365 FastTrack page](https://www.microsoft.com/fasttrack/microsoft-365).
 
 Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../ExchangeOnline/mailbox-migration/mailbox-migration.md).)
 
@@ -69,7 +69,7 @@ The question of whether a third-party management tool or ADSIEDIT can be used is
 
 It is not simple to move from a hybrid configuration to the cloud. The process for getting into a hybrid configuration is one that we have taken a lot of time to get right. While there are issues, we feel we have done a pretty good job of making the almost impossible task of going hybrid a fairly easy wizard-based process.
 
-However, we have put little effort into how to get you from a hybrid configuration to the cloud only. Depending on your immediate goals, this process can be fairly simple with some guidance. The following are three common hybrid scenarios along with our recommendation for how to properly achieve the end goal of the customer.
+Depending on your immediate goals, however, getting from a hybrid configuration to the cloud only can be a fairly straight-forward process, with some guidance. The following are three common hybrid scenarios along with our recommendation for how to properly achieve the end goal of the customer.
 
 Since the hybrid customer base is very diverse, trying to fit all of them into "common" scenarios is difficult. We attempted to provide some high-level scenarios for on-premises Exchange Server decommissioning below, so as you read through these scenarios and form a plan to decommission, you will need to determine the scenario that best fits your needs.
 
