@@ -100,7 +100,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
 
-   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](../ExchangeOnline/address-books/address-book-policies/address-book-policies.md).
 
         In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -126,7 +126,7 @@ This example creates a new user account and mailbox for Pilar Pinilla with the f
 New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/New-Mailbox).
+For syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/New-Mailbox).
 
 ## How do you know this worked?
 
@@ -174,7 +174,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
 
-   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](../ExchangeOnline/address-books/address-book-policies/address-book-policies.md).
 
         In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -196,9 +196,9 @@ For example, the following command mailbox-enables users who aren't already mail
 Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$Null" | Enable-Mailbox
 ```
 
-For syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Enable-Mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/Get-User).
+For syntax and parameter information, see [Enable-Mailbox](/powershell/module/exchange/Enable-Mailbox) and [Get-User](/powershell/module/exchange/Get-User).
 
-For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
+For more information about pipelining, see [about_Pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 ## How do you know this worked?
 

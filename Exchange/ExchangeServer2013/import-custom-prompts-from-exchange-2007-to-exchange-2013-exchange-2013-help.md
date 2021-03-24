@@ -34,7 +34,7 @@ By default, the MigrateUMCustomPrompts.ps1 script is located in the \<Program Fi
 
 For additional management tasks related to UM dial plans, see [UM dial plan procedures](um-dial-plan-procedures-exchange-2013-help.md).
 
-For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
+For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](../ExchangeOnline/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures.md).
 
 ## What do you need to know before you begin?
 
@@ -42,11 +42,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" and "UM auto attendants" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-- Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+- Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
-- Before you perform these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant).
+- Before you perform these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](../ExchangeOnline/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant.md).
 
-- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

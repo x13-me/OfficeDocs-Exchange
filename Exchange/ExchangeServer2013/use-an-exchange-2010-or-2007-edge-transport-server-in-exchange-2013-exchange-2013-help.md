@@ -27,6 +27,6 @@ Here are the things you need to know:
 
 - The procedures to deploy a new Exchange 2007 or Exchange 2010 Edge Transport server in your Exchange 2013 organization are basically the same as in previous versions of Exchange. However, any procedures that are performed on the Hub Transport server are performed on the Mailbox server in Exchange 2013. The procedures are:
 
-  - [Configure Internet Mail Flow Through a Subscribed Edge Transport Server](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb738158(v=exchg.141))
+  - [Configure Internet Mail Flow Through a Subscribed Edge Transport Server](/previous-versions/office/exchange-server-2010/bb738158(v=exchg.141))
 
-  - [Configure Mail Flow Between an Edge Transport Server and Hub Transport Servers Without Using EdgeSync](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb232082(v=exchg.141))
+  - [Configure Mail Flow Between an Edge Transport Server and Hub Transport Servers Without Using EdgeSync](/previous-versions/office/exchange-server-2010/bb232082(v=exchg.141))

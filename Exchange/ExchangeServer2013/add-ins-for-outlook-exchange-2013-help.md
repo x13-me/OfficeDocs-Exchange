@@ -60,7 +60,7 @@ There are a couple of common scenarios that Exchange administrators manage in th
 
   - Next, use the `Remove-App` cmdlet to remove any add-ins from one or more users.
 
-  For more information, see [Get-App](https://docs.microsoft.com/powershell/module/exchange/get-app) and [Remove-App](https://docs.microsoft.com/powershell/module/exchange/remove-app) for Exchange 2013.
+  For more information, see [Get-App](/powershell/module/exchange/get-app) and [Remove-App](/powershell/module/exchange/remove-app) for Exchange 2013.
 
 ## Allow administrators and users to install add-ins
 

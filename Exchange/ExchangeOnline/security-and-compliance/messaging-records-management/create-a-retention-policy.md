@@ -21,7 +21,7 @@ manager: serdars
 # Create a Retention Policy
 
 > [!NOTE]
-> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
+> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
 > 
 > If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
@@ -29,7 +29,7 @@ In Exchange Online, you can use retention policies to manage email lifecycle. Re
 
 Here's a [video](https://www.youtube.com/watch?v=EQRjaiPPXvA&feature=youtu.be) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online.
 
-For additional management tasks related to retention policies, see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+For additional management tasks related to retention policies, see [Messaging Records Management Procedures](/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## What do you need to know before you begin?
 
@@ -161,7 +161,7 @@ This example creates the retention policy RetentionPolicy-Corp and uses the _Ret
 New-RetentionPolicy "RetentionPolicy-Corp"  -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentionpolicy).
+For detailed syntax and parameter information, see [New-RetentionPolicy](/powershell/module/exchange/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 

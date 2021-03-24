@@ -50,7 +50,7 @@ This example removes the organization relationship Contoso.
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/remove-organizationrelationship).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](/powershell/module/exchange/remove-organizationrelationship).
 
 ## How do you know this worked?
 
@@ -65,4 +65,4 @@ To verify that you have successfully removed the organization relationship, do o
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

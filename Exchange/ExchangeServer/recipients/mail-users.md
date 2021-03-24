@@ -24,14 +24,14 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 
 - Estimated time to complete: 2 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a mail user
 
@@ -110,7 +110,7 @@ This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Se
 New-MailUser -Name "Jeffrey Zeng" -Alias jeffreyz -ExternalEmailAddress jzeng@tailspintoys.com -FirstName Jeffrey -LastName Zeng -UserPrincipalName jeffreyz@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For detailed syntax and parameter information, see [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser).
+For detailed syntax and parameter information, see [New-MailUser](/powershell/module/exchange/new-mailuser).
 
 ### How do you know this worked?
 
@@ -256,13 +256,13 @@ Properties for a mail user are stored in both Active Directory and Exchange. In 
 
 Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Get-User](/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Set-User](/powershell/module/exchange/set-user)
 
-- [Get-MailUser](https://docs.microsoft.com/powershell/module/exchange/get-mailuser)
+- [Get-MailUser](/powershell/module/exchange/get-mailuser)
 
-- [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
+- [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
 Here are some examples of using the Exchange Management Shell to change mail user properties.
 
@@ -290,7 +290,7 @@ This example sets the CustomAttribute1 property to a value of ContosoEmployee fo
 Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')" | Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
-For detailed syntax and parameter information, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
+For detailed syntax and parameter information, see [Set-MailUser](/powershell/module/exchange/set-mailuser).
 
 ### How do you know this worked?
 

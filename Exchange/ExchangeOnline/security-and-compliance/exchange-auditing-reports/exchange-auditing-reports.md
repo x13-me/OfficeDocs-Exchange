@@ -65,7 +65,7 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
 ## Configure audit logging
 
-As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
 
 ### Give users access to Auditing reports
 

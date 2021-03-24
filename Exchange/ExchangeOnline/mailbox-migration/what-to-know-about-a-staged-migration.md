@@ -156,4 +156,4 @@ If you're ready to begin a staged email migration, you can use the steps given i
 
 [Ways to migrate email to Microsoft 365 or Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a staged migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365)
+[Use PowerShell to perform a staged migration to Microsoft 365 or Office 365](/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365)

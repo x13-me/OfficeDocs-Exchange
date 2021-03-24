@@ -65,7 +65,7 @@ This example creates a scope that applies only to the databases Database 1, Data
 New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope).
+For detailed syntax and parameter information, see [New-ManagementScope](/powershell/module/exchange/New-ManagementScope).
 
 ### Use a database filter scope
 
@@ -85,7 +85,7 @@ This example creates a scope that includes all the databases that contain the st
 New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter "Name -Like '*ACCT*'"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope).
+For detailed syntax and parameter information, see [New-ManagementScope](/powershell/module/exchange/New-ManagementScope).
 
 ## Step 2: Add the database scope to a management role assignment
 
@@ -112,13 +112,13 @@ New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "M
 New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment).
 
 ### Modify an existing role assignment
 
 Use this procedure if you have an existing role group that already has role assignments between it and the roles you want to apply the new database scope to.
 
-This procedure uses pipelining. For more information, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
+This procedure uses pipelining. For more information, see [about_Pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
 Use the following syntax to modify a role assignment between the management role that you want to apply the database scope to, and an existing role group.
 
@@ -133,7 +133,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Ma
 Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment) or [Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](/powershell/module/exchange/Get-ManagementRoleAssignment) or [Set-ManagementRoleAssignment](/powershell/module/exchange/Set-ManagementRoleAssignment).
 
 ## Step 3: Add members to a role group (if applicable)
 

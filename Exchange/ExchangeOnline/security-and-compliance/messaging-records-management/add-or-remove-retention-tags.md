@@ -21,7 +21,7 @@ manager: serdars
 # Add retention tags to or remove retention tags from a retention policy
 
 > [!NOTE]
-> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
+> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
 > 
 > If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
@@ -47,7 +47,7 @@ For more information about retention tags, see [Retention tags and retention pol
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. Use the [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox.
+- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. Use the [Start-ManagedFolderAssistant](/powershell/module/exchange/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -93,11 +93,11 @@ $TagList.Remove((Get-RetentionPolicyTag 'VPs-Inbox').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
 ```
 
-For detailed syntax and parameter information, see [set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentionpolicy) and [get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicy).
+For detailed syntax and parameter information, see [set-RetentionPolicy](/powershell/module/exchange/set-retentionpolicy) and [get-RetentionPolicy](/powershell/module/exchange/get-retentionpolicy).
 
 ## How do you know this worked?
 
-To verify that you have successfully added or removed a retention tag from a retention policy, use the [get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicy) cmdlet to verify the _RetentionPolicyTagLinks_ property.
+To verify that you have successfully added or removed a retention tag from a retention policy, use the [get-RetentionPolicy](/powershell/module/exchange/get-retentionpolicy) cmdlet to verify the _RetentionPolicyTagLinks_ property.
 
 This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags added to the Default MRM Policy and pipes them to the **Format-Table** cmdlet to output only the name property of each tag.
 

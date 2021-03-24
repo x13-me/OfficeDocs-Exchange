@@ -41,7 +41,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
-|[Exchange Server 2019 CU9](https://support.microsoft.com/kb/KB4602570)|March 16, 2021|15.2.858.5|15.02.0858.005|
+|[Exchange Server 2019 CU9](https://www.microsoft.com/download/details.aspx?familyID=24b09ec4-48c7-4c1c-87d8-4c2c0f56bfb8)|March 16, 2021|15.2.858.5|15.02.0858.005|
 |[Exchange Server 2019 CU8](https://support.microsoft.com/kb/KB4588885)|December 15, 2020|15.2.792.3|15.02.0792.003|
 |Exchange Server 2019 CU7|September 15, 2020|15.2.721.2|15.02.0721.002|
 |Exchange Server 2019 CU6|June 16, 2020|15.2.659.4|15.02.0659.004|

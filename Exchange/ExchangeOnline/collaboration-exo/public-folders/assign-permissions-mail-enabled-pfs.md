@@ -21,12 +21,12 @@ You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled
 
 - Estimated time to complete this task: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/sharing-and-collaboration-permissions).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in [Sharing and collaboration permissions](../../../ExchangeServer/permissions/feature-permissions/sharing-and-collaboration-permissions.md).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [**Exchange Online Protection**](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [**Exchange Online**](/answers/topics/office-exchange-server-itpro.html) or [**Exchange Online Protection**](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center (EAC) to assign permissions
 
@@ -52,9 +52,9 @@ The following example assigns "Send As" permissions for the mail-enabled public 
 
 For detailed syntax and parameter information, see the following articles:
 
-- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder)
+- [Set-MailPublicFolder](/powershell/module/exchange/set-mailpublicfolder)
 
-- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission)
+- [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
 ## Send As mail enabled public folder in Hybrid scenario
 

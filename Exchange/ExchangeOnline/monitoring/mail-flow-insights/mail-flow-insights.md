@@ -28,6 +28,8 @@ The following mail flow insights are available:
 
 - [New users forwarding email insight](mfi-new-users-forwarding-email-insight.md)
 
+- [Domain expiring soon insight](domain-expiry-notification-feature.md)
+
 ## Permissions required to view and use mail flow insights
 
 To use the mail flow insights to take corrective action, you need to be a member of one of the following role groups:

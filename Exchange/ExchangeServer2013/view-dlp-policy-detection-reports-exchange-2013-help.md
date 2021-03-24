@@ -264,7 +264,7 @@ The following is a complete list of the data fields. All data in the MTL is type
 
 ## For more information
 
-[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention](../ExchangeOnline/security-and-compliance/data-loss-prevention/data-loss-prevention.md)
 
 [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 
