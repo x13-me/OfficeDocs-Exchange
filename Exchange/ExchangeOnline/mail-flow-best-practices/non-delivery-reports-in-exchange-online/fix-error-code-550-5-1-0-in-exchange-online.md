@@ -96,7 +96,7 @@ After you open your mailbox in the light version of Outlook on the web, do the f
 
 ## I'm an email admin. How do I fix this?
 
-The Sender Policy Framework (SPF) record for your Exchange Online domain might be incomplete, and might not include all sources of mail for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+The Sender Policy Framework (SPF) record for your Exchange Online domain might be incomplete, and might not include all sources of mail for your domain. For more information, see [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## Details for error code 5.1.0
 
@@ -112,7 +112,7 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

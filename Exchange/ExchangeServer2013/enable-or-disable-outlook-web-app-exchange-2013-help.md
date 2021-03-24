@@ -74,7 +74,7 @@ This example enables Outlook Web App for the mailbox of Elly Nkya.
 Set-CASMailbox -Identity Ellyn@contoso.com -OWAEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 

@@ -30,7 +30,7 @@ This configuration requires three separate physical locations: two datacenters f
 
 This configuration requires a multi-site VPN. It has always been possible to connect your organization's network to Microsoft Azure using a site-to-site VPN connection. However, in the past, Azure supported only a single site-to-site VPN. Since configuring a DAG and its witness across three datacenters required multiple site-to-site VPNs, placement of the DAG witness on an Azure VM wasn't initially possible.
 
-In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
+In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](/azure/vpn-gateway/vpn-gateway-multi-site).
 
 > [!NOTE]
 > This configuration leverages Azure virtual machines and a multi-site VPN for deploying the witness server and does not use the Azure Cloud Witness.
@@ -67,7 +67,7 @@ After you have your Azure subscription, you need to do the following in order:
 
 - A public IP address that is not behind NAT for the VPN gateways in each site.
 
-- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices.
+- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices.
 
 - Familiarity with DAG concepts and management.
 
@@ -79,7 +79,7 @@ Configuring the Microsoft Azure network is the most crucial part of the deployme
 
 #### Register DNS servers
 
-Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution for resources in Azure virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) topic provides an overview of name resolution in Azure.
+Because this configuration requires name resolution between the on-premises servers and Azure VMs, you will need to configure Azure to use your own DNS servers. [Name resolution for resources in Azure virtual networks](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) topic provides an overview of name resolution in Azure.
 
 Do the following to register your DNS servers:
 
@@ -151,7 +151,7 @@ The next step is to establish the VPN gateways to your on-premises sites. To do 
 
 6. Configure on-premises VPN devices.
 
-For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
+For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](/azure/vpn-gateway/vpn-gateway-multi-site).
 
 #### Establish a VPN gateway to your first site
 
@@ -164,7 +164,7 @@ To establish the VPN gateway on the Azure side, see [VPN Gateway](https://azure.
 
 #### Export virtual network configuration settings
 
-The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://docs.microsoft.com/azure/virtual-network/virtual-networks-using-network-configuration-file) to export your settings.
+The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](/azure/virtual-network/virtual-networks-using-network-configuration-file) to export your settings.
 
 #### Modify the network configuration settings for the multi-site VPN
 
@@ -192,7 +192,7 @@ Save the updated configuration settings file.
 
 #### Import virtual network configuration settings
 
-The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Create a virtual network (classic) by using the Azure portal](https://docs.microsoft.com/azure/virtual-network/virtual-networks-create-vnet-classic-pportal). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
+The second site reference you've added to the configuration file will trigger Microsoft Azure to create a new tunnel. Import the updated file using the instructions in [Create a virtual network (classic) by using the Azure portal](/azure/virtual-network/virtual-networks-create-vnet-classic-pportal). After you complete the import, the virtual network dashboard will show the gateway connections to both of your local sites.
 
 #### Record the Azure gateway IP address and pre-shared keys
 
@@ -200,9 +200,9 @@ After the new network configuration settings are imported, the virtual network d
 
 You also will need to get the pre-shared IPsec/IKE keys for each tunnel that was created. You will use these keys along with the Azure gateway IP address to configure your on-premises VPN devices.
 
-You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](https://docs.microsoft.com/powershell/azure/).
+You need to use PowerShell to get the pre-shared keys. If you aren't familiar with using PowerShell to manage Azure, see [Azure PowerShell](/powershell/azure/).
 
-Use the [Get-AzureVNetGatewayKey](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
+Use the [Get-AzureVNetGatewayKey](/powershell/module/servicemanagement/azure/get-azurevnetgatewaykey) cmdlet to extract the pre-shared keys. Run this cmdlet once for each tunnel. The following example shows the commands you need to run to extract the keys for tunnels between the virtual network "Azure Site" and sites "Site A" and "Site B." In this example, the outputs are saved into separate files. Alternatively, you can pipeline these keys to other PowerShell cmdlets or use them in a script.
 
 ```powershell
 Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" | Set-Content -Path C:\Keys\KeysForTunnelToSiteA.txt
@@ -270,7 +270,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-   1. Add the File Server role using the Add Roles and Features Wizard or the [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature) cmdlet.
+   1. Add the File Server role using the Add Roles and Features Wizard or the [Install-WindowsFeature](/powershell/module/servermanager/install-windowsfeature) cmdlet.
 
    2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 
@@ -300,7 +300,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](/powershell/module/exchange/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 

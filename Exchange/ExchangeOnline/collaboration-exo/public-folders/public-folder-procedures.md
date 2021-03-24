@@ -22,11 +22,11 @@ manager: serdars
 
 [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md)
 
-[Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online)
+[Use batch migration to migrate Exchange Server public folders to Exchange Online](../../../ExchangeServer/collaboration/public-folders/migrate-to-exchange-online.md)
 
 [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md)
 
-[Configure Exchange Server public folders for a hybrid deployment](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders)
+[Configure Exchange Server public folders for a hybrid deployment](../../../ExchangeHybrid/hybrid-deployment/set-up-modern-hybrid-public-folders.md)
 
 [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
 

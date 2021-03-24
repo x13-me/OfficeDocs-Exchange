@@ -67,7 +67,7 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
    > 
    > - The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL.
    > 
-   > - You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
+   > - You can use the [Get-OrganizationRelationship](/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
    
 After you apply this setting, the users can continue using the current Outlook on the web URL to access their on-premises mailboxes. In the previous example, the value is <https://mail.contoso.com/owa>.
 

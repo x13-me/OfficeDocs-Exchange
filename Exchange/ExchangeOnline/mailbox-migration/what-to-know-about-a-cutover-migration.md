@@ -105,4 +105,4 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 
 [Ways to migrate email to Microsoft 365 or Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a cutover migration](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)
+[Use PowerShell to perform a cutover migration](/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)

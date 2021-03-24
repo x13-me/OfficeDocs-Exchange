@@ -30,7 +30,7 @@ description: "Single sign-on enables users to access both the on-premises and Mi
 
 You have three options when deploying single sign-on: password hash synchronization, pass-through authentication and federation, for example, Active Directory Federation Services (AD FS). All options are implemented by Azure Active Directory Connect. We strongly recommend using the password hash synchronization method unless you have a specific need that requires federation. Password hash synchronization provides many of the same benefits of federation without the complexity of its deployment.
 
-To learn more about each option, see [Choose the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
+To learn more about each option, see [Choose the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn).
 
  > [!IMPORTANT]
  > We strongly recommend using MFA for all logins of users or admins in case of Hybrid Deployments.

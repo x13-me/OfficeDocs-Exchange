@@ -65,10 +65,10 @@ This procedure uses the `Configure-EnterpriseApplication.ps1` script to configur
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2016 , run the [Get-PartnerApplication](https://docs.microsoft.com/powershell/module/exchange/get-partnerapplication) cmdlet in the Exchange Management Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/test-oauthconnectivity) cmdlet to test OAuth connectivity with a partner application for a user.
+To verify that you have successfully configured an enterprise partner application to authenticate to Exchange 2016 , run the [Get-PartnerApplication](/powershell/module/exchange/get-partnerapplication) cmdlet in the Exchange Management Shell to retrieve the configuration. You can also run the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) cmdlet to test OAuth connectivity with a partner application for a user.
 
 ## Hybrid and on-premises deployments
 
-- In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2016 organization and the Exchange Online organization. For more information, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help).
+- In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2016 organization and the Exchange Online organization. For more information, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](../../../ExchangeServer2013/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md).
 
-- In on-premises deployments, you can configure server-to-server authentication between Exchange 2016 and SharePoint 2016 so administrators and compliance officers can search Exchange 2016 by using the SharePoint 2016 eDiscovery Center.. For more information, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help).
+- In on-premises deployments, you can configure server-to-server authentication between Exchange 2016 and SharePoint 2016 so administrators and compliance officers can search Exchange 2016 by using the SharePoint 2016 eDiscovery Center.. For more information, see [Configure Exchange for SharePoint eDiscovery Center](../../../ExchangeServer2013/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).

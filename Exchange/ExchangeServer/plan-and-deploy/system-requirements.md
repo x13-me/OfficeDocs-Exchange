@@ -24,7 +24,7 @@ manager: serdars
 ::: moniker range="exchserver-2019"
 Before you install Exchange Server 2019, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2019. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2019 and earlier versions of Exchange.
 
-To actually install Exchange 2019, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2019&preserve-view=true).
+To actually install Exchange 2019, see [Deploy new installations of Exchange](./deploy-new-installations/deploy-new-installations.md?preserve-view=true&view=exchserver-2019).
 
 ## Supported coexistence scenarios for Exchange 2019
 
@@ -42,7 +42,7 @@ The supported coexistence scenarios between Exchange 2019 and earlier versions o
 
 ## Supported hybrid deployment scenarios for Exchange 2019
 
-Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites).
+Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](../../ExchangeHybrid/hybrid-deployment-prerequisites.md).
 
 ## Network and directory server requirements for Exchange 2019
 
@@ -56,7 +56,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
-|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help).|
+|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 |
 
 ## Directory server architecture for Exchange 2019
@@ -117,7 +117,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 >
 > - **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
 >
-> - The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019&preserve-view=true).
+> - The complete prerequisite list for Exchange 2019 is available [here](./prerequisites.md?preserve-view=true&view=exchserver-2019).
 
 ****
 
@@ -148,7 +148,7 @@ If you're integrating Lync presence and instant messaging with Exchange Server, 
 ::: moniker range="exchserver-2016"
 Before you install Exchange Server 2016, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2016. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2016 and earlier versions of Exchange.
 
-To actually install Exchange 2016, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2016&preserve-view=true).
+To actually install Exchange 2016, see [Deploy new installations of Exchange](./deploy-new-installations/deploy-new-installations.md?preserve-view=true&view=exchserver-2016).
 
 ## Supported coexistence scenarios for Exchange 2016
 
@@ -166,7 +166,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios for Exchange 2016
 
-Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](../../ExchangeHybrid/hybrid-deployment-prerequisites.md).
 
 ## Network and directory server requirements for Exchange 2016
 
@@ -180,7 +180,7 @@ The following table lists the requirements for the network and the directory ser
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|• The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. <br/>• Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
-|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help).|
+|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 |
 
 ## Directory server architecture for Exchange 2016
@@ -249,7 +249,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 >
 > - **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
 >
-> - The complete prerequisite list for Exchange 2016 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true).
+> - The complete prerequisite list for Exchange 2016 is available [here](./prerequisites.md?preserve-view=true&view=exchserver-2016).
 
 ****
 
