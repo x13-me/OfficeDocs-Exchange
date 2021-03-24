@@ -270,7 +270,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
     ![Schedule batch migration](../media/schedule-batch1-migration.png)
     
-    Once the batch status changes from **Syncing** to **Synced**, you can complete the batch.
+    Once the batch status changes from **Syncing** to **Synced**, you need to complete the batch.
     
     > [!NOTE]
     > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
@@ -280,6 +280,8 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 17. In the details pane, select the preferred option to complete the batch and click **Save**.
 
     The batch status will then be **Completed**.
+	
+During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, during completion, the forwarding address that routes mail from Microsoft 365 or Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their Google Workspace mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their Google Workspace mailbox.
 
 ## Start a Google Workspace migration batch with the Classic Exchange admin center (Classic EAC)
 
@@ -329,14 +331,14 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
     ![start the batch](../media/gsuite-mig-17-eac-start.png)
 
-11. After the batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.
+11. After the batch status changes from **Syncing** to **Synced**, you need to complete the batch. The batch status will then be **Completed**.
 
     ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
     
     > [!NOTE]
     > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
 
-During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, the forwarding address that routes mail from Microsoft 365 or Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their Google Workspace mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their Google Workspace mailbox.
+During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, during completion, the forwarding address that routes mail from Microsoft 365 or Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Microsoft 365 or Office 365 is added. This ensures that any  messages received by migrated users at their Google Workspace mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their Google Workspace mailbox.
 
 ## Start a Google Workspace migration with Exchange Online PowerShell
 
@@ -392,7 +394,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 ### Complete the migration batch in Microsoft 365 or Office 365
 
-When the migration batch has reached the state of **Synced**, it can be completed by running the `Complete-MigrationBatch` cmdlet.
+When the migration batch has reached the state of **Synced**, it needs to be completed by running the `Complete-MigrationBatch` cmdlet.
 
 During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, the forwarding address that routes mail from O365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to O365 is added.
 
