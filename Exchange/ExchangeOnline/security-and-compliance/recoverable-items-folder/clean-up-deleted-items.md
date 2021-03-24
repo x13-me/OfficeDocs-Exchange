@@ -32,23 +32,23 @@ To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Li
 
 ## What do you need to know before you begin?
 
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](/microsoft-365/compliance/assign-ediscovery-permissions).
 
 - Because incorrectly cleaning up the Recoverable Items folder can result in data loss, it's important that you're familiar with the Recoverable Items folder and the impact of removing its contents. Before performing this procedure, we recommend that you review the information in [Recoverable Items folder in Exchange Online](recoverable-items-folder.md).
 
-- You can only use Security & Compliance Center PowerShell to perform the procedures in this topic. To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+- You can only use Security & Compliance Center PowerShell to perform the procedures in this topic. To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 > [!TIP]
 > Having problems? Ask for help in the Microsoft Tech Community. Visit it at [Microsoft Tech Community - Exchange](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
 
 ## Use Security & Compliance Center PowerShell to delete items from the Recoverable Items folder for mailboxes that aren't placed on hold or don't have single item recovery enabled
-You can delete items in the Recoverable Items folder by using the [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) and [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) cmdlets in Security & Compliance Center PowerShell.
+You can delete items in the Recoverable Items folder by using the [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) and [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) cmdlets in Security & Compliance Center PowerShell.
 
-To search for items that are located in the Recoverable Items folder, we recommend that you perform a *targeted collection*. This means you narrow the scope of your search only to items located in the Recoverable Items folder. You can do this by running the script in the [Use Content Search for targeted collections](https://docs.microsoft.com/microsoft-365/compliance/use-content-search-for-targeted-collections) article. This script returns the value of the folder ID property for all the subfolders in the target Recoverable Items folder. Then you use the folder ID in a search query to return items located in that folder.
+To search for items that are located in the Recoverable Items folder, we recommend that you perform a *targeted collection*. This means you narrow the scope of your search only to items located in the Recoverable Items folder. You can do this by running the script in the [Use Content Search for targeted collections](/microsoft-365/compliance/use-content-search-for-targeted-collections) article. This script returns the value of the folder ID property for all the subfolders in the target Recoverable Items folder. Then you use the folder ID in a search query to return items located in that folder.
 
 Here's an overview of the process to search for and delete items in a user's Recoverable Items folder:
 
-1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session. For more information, see [Run the script to get a list of folders for a mailbox or site](https://docs.microsoft.com/microsoft-365/compliance/use-content-search-for-targeted-collections#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
+1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session. For more information, see [Run the script to get a list of folders for a mailbox or site](/microsoft-365/compliance/use-content-search-for-targeted-collections#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
 
 2. Copy the folder IDs for all subfolders in the Recoverable Items folder. Alternatively, you can redirect the output of the script to a text file.
 
@@ -68,7 +68,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
-   For more information and examples about running content searches that use the folder ID property, see [Use a folder ID or documentlink to perform a targeted collection](https://docs.microsoft.com/microsoft-365/compliance/use-content-search-for-targeted-collections#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
+   For more information and examples about running content searches that use the folder ID property, see [Use a folder ID or documentlink to perform a targeted collection](/microsoft-365/compliance/use-content-search-for-targeted-collections#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
 
    > [!NOTE]
    > If you use the **New-ComplianceSearch** cmdlet to search the Recoverable Items folder, be sure to use the **Start-ComplianceSearch** cmdlet to run the search.
@@ -91,11 +91,11 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
 ## Use Exchange Online and Security & Compliance Center PowerShell to clean up the Recoverable Items folder for mailboxes that are placed on hold or have single item recovery enabled
 
-This scenario is fully covered in the topic [Delete items in the Recoverable Items folder of cloud mailbox's on hold](https://docs.microsoft.com/office365/securitycompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
+This scenario is fully covered in the topic [Delete items in the Recoverable Items folder of cloud mailbox's on hold](/office365/securitycompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 ## How do you know this worked?
 
-To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use the [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxfolderstatistics) cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) to check the size and number of items in the Recoverable Items folder. You can compare these statistics with the ones you collected in Step 1.
+To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use the [Get-MailboxFolderStatistics](/powershell/module/exchange/get-mailboxfolderstatistics) cmdlet in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) to check the size and number of items in the Recoverable Items folder. You can compare these statistics with the ones you collected in Step 1.
   
 Run the following command to get the current size and the total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
   

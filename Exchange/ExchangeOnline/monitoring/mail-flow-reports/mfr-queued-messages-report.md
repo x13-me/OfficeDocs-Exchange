@@ -32,7 +32,7 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 
 - Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
 
-  For more information about alert policies, see [Alert policies in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+  For more information about alert policies, see [Alert policies in the Security & Compliance Center](/microsoft-365/compliance/alert-policies).
 
 ## Customize queue alerts
 

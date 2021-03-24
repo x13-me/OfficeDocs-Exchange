@@ -32,17 +32,17 @@ Public folders can also be used as an archiving method for distribution groups. 
 
 Public folders aren't designed for the following purposes:
 
-- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes) as your archiving solution.
+- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](/microsoft-365/compliance/enable-archive-mailboxes) as your archiving solution.
 
 - **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://products.office.com/SharePoint/sharepoint-online-collaboration-software) as your documentation sharing solution.
 
 For more information about public folders and other collaboration methods in Microsoft 365, Office 365, and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
 
-For more information about public folder quotas in Microsoft 365, Office 365, and Exchange Online, see the service description articles [Sharing and collaboration](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/sharing-and-collaboration) and [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+For more information about public folder quotas in Microsoft 365, Office 365, and Exchange Online, see the service description articles [Sharing and collaboration](/office365/servicedescriptions/exchange-online-service-description/sharing-and-collaboration) and [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 For a list of public folder management tasks, see [Public folder procedures in Microsoft 365, Office 365, and Exchange Online](public-folder-procedures.md).
 
-For more information about the public folder limits in Microsoft 365, Office 365, and Exchange Online, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+For more information about the public folder limits in Microsoft 365, Office 365, and Exchange Online, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 Looking for the Exchange Server version of this article? See [Public folders in Microsoft 365, Office 365, and Exchange Online](public-folders.md).
 
@@ -86,7 +86,7 @@ For more information, see [Update the public folder hierarchy](update-public-fol
 
 #### Public folder content
 
-Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders (except when using the [Content Search eDiscovery tool](https://docs.microsoft.com/microsoft-365/compliance/content-search) in the Microsoft 365 compliance center) and the content isn't indexed by Exchange Search.
+Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders (except when using the [Content Search eDiscovery tool](/microsoft-365/compliance/content-search) in the Microsoft 365 compliance center) and the content isn't indexed by Exchange Search.
 
 ## Considerations
 
@@ -110,9 +110,9 @@ Exchange supports moving your public folders to Microsoft 365 or Office 365 and 
 
 - Exchange Server 2010 SP3 RU8 or later
 
-See [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online) to migrate your Exchange Server public folders.
+See [Use batch migration to migrate Exchange Server public folders to Exchange Online](../../../ExchangeServer/collaboration/public-folders/migrate-to-exchange-online.md) to migrate your Exchange Server public folders.
 
-We recommend that you use batch migration instead of Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 and Exchange Online. Microsoft 365 and Office 365 public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you might have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We provide batch migration instructions in [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md) and [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online). However, if you've elected to do a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
+We recommend that you use batch migration instead of Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 and Exchange Online. Microsoft 365 and Office 365 public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you might have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We provide batch migration instructions in [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md) and [Use batch migration to migrate Exchange Server public folders to Exchange Online](../../../ExchangeServer/collaboration/public-folders/migrate-to-exchange-online.md). However, if you've elected to do a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
 
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
 

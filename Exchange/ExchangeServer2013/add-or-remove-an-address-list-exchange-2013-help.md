@@ -42,7 +42,7 @@ When using the _AddressLists_ parameter, any address lists that currently exist 
 Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList2,AddressList3
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](/powershell/module/exchange/set-offlineaddressbook).
 
 ## Use the Shell to remove an address list from an OAB
 
@@ -52,4 +52,4 @@ To remove an address list from an OAB, simply omit that address list from the li
 Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList2
 ```
 
-For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/set-offlineaddressbook).
+For detailed syntax and parameter information, see [Set-OfflineAddressBook](/powershell/module/exchange/set-offlineaddressbook).

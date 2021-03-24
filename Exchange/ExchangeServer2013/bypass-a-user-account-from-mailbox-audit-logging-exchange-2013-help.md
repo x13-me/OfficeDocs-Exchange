@@ -43,12 +43,12 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## Use the Shell to enable or disable mailbox audit logging bypass for an account
 
-For an example of how to enable mailbox audit logging bypass for an account, see [Example 1](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxAuditBypassAssociation#examples) in [Set-MailboxAuditBypassAssociation](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxAuditBypassAssociation).
+For an example of how to enable mailbox audit logging bypass for an account, see [Example 1](/powershell/module/exchange/Set-MailboxAuditBypassAssociation#examples) in [Set-MailboxAuditBypassAssociation](/powershell/module/exchange/Set-MailboxAuditBypassAssociation).
 
-For an example of how to disable mailbox audit logging bypass for an account, see [Example 2](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxAuditBypassAssociation#examples) in [Set-MailboxAuditBypassAssociation](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxAuditBypassAssociation).
+For an example of how to disable mailbox audit logging bypass for an account, see [Example 2](/powershell/module/exchange/Set-MailboxAuditBypassAssociation#examples) in [Set-MailboxAuditBypassAssociation](/powershell/module/exchange/Set-MailboxAuditBypassAssociation).
 
 ## How do you know this worked?
 
-After you have bypassed a user account from mailbox audit logging, you can check the bypass settings by running the [Get-MailboxAuditBypassAssociation](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxAuditBypassAssociation) cmdlet.
+After you have bypassed a user account from mailbox audit logging, you can check the bypass settings by running the [Get-MailboxAuditBypassAssociation](/powershell/module/exchange/Get-MailboxAuditBypassAssociation) cmdlet.
 
-For examples of how to check mailbox audit bypass associations, see the [Examples](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxAuditBypassAssociation#examples) section in that topic.
+For examples of how to check mailbox audit bypass associations, see the [Examples](/powershell/module/exchange/Get-MailboxAuditBypassAssociation#examples) section in that topic.

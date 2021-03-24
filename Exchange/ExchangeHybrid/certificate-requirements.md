@@ -26,11 +26,11 @@ In a hybrid deployment, many services make use of certificates:
 
 - **Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS)**: If you choose to deploy Azure AD Connect with AD FS as part of your hybrid deployment, a certificate issued by a trusted third-party certificate authority (CA) is used to establish a trust between web clients and federation server proxies, to sign security tokens, and to decrypt security tokens.
 
-    Learn more at [Certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641701(v=ws.10)).
+    Learn more at [Certificates](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641701(v=ws.10)).
 
 - **Exchange federation**: A self-signed certificate is used to create a secure connection between the on-premises Exchange servers and the Azure Active Directory authentication system.
 
-    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+    Learn more at [Sharing](../ExchangeServer2013/sharing-exchange-2013-help.md).
 
 - **Exchange services**: Certificates issued by a trusted third-party CA are used to help secure Secure Sockets Layer (SSL) communication between Exchange servers and clients. Services that use certificates include Outlook on the web, Exchange ActiveSync, Outlook Anywhere, and secure message transport.
 
@@ -67,4 +67,4 @@ The following table outlines the minimum suggested FQDNs that should be included
 |Autodiscover|Label that matches the external Autodiscover FQDN of your Exchange 2013 Client Access server, such as autodiscover.contoso.com|Subject alternative name|
 |Transport|Label that matches the external FQDN of your Edge Transport servers, such as edge.contoso.com|Subject alternative name|
 
-If you don't have to relay email messages to the Internet through Office 365, you can use the transport service name in the subject name instead of the primary shared SMTP domain. For more information, see [Configure a certificate-based connector to relay email messages through Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/office-365-notice).
+If you don't have to relay email messages to the Internet through Office 365, you can use the transport service name in the subject name instead of the primary shared SMTP domain. For more information, see [Configure a certificate-based connector to relay email messages through Office 365](/exchange/troubleshoot/email-delivery/office-365-notice).

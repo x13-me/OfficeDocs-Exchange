@@ -109,7 +109,7 @@ In Exchange 2013, you can apply archive policies to a mailbox to automatically m
 
 Messages are moved to a folder in the archive mailbox that has the same name as the source folder in the primary mailbox. If a folder with the same name doesn't exist in the archive mailbox, it's created when the Managed Folder Assistant moves a message. Re-creating the same folder hierarchy in the archive mailbox allows users to find messages easily.
 
-To learn more about retention policies, retention tags, and the **Move to Archive** retention action, see [Retention tags and retention policies](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+To learn more about retention policies, retention tags, and the **Move to Archive** retention action, see [Retention tags and retention policies](../ExchangeOnline/security-and-compliance/messaging-records-management/retention-tags-and-policies.md).
 
 ## Default MRM policy
 
@@ -175,7 +175,7 @@ Before provisioning archive mailboxes for your users, we recommend that you info
 > [!NOTE]
 > If you apply a retention policy to users who have an archive mailbox, the retention policy replaces the default MRM policy. You can create one or more retention tags with the <STRONG>Move to Archive</STRONG> action, and then link the tags to the retention policy. You can also add the default <STRONG>Move to Archive</STRONG> tags (which are created by Setup and linked to the Default MRM Policy) to any retention policies you create.
 
-For information about compliance and archiving in Outlook 2010 and later, see [Plan for compliance and archiving in Outlook 2010](https://docs.microsoft.com/previous-versions/office/office-2010/ff800883(v=office.14)).
+For information about compliance and archiving in Outlook 2010 and later, see [Plan for compliance and archiving in Outlook 2010](/previous-versions/office/office-2010/ff800883(v=office.14)).
 
 ## Archive quotas
 
@@ -232,12 +232,12 @@ This section explains the functionality between In-Place Archives and various Ex
 
 - **Exchange Search**: The ability to quickly search messages becomes even more critical with archive mailboxes. For Exchange Search, there's no difference between the primary and archive mailbox. Content in both mailboxes is indexed. Because the archive mailbox isn't cached on a user's computer (even when using Outlook in Cached Exchange Mode), search results for the archive are always provided by Exchange Search. When searching the entire mailbox in Outlook 2010 and later and Outlook Web App, search results include the users' primary and archive mailbox.
 
-- **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange admin center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/New-MailboxSearch). To learn more, see [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
+- **In-Place eDiscovery**: When a discovery manager performs an In-Place eDiscovery search, users' archive mailboxes are also searched. There's no option to exclude archive mailboxes when creating a discovery search from the Exchange admin center (EAC). When using the Exchange Management Shell to create a discovery search, you can exclude the archive by using the *DoNotIncludeArchive* switch. For details, see [New-MailboxSearch](/powershell/module/exchange/New-MailboxSearch). To learn more, see [In-Place eDiscovery](../ExchangeOnline/security-and-compliance/in-place-ediscovery/in-place-ediscovery.md).
 
     > [!IMPORTANT]
     > You can't use In-Place eDiscovery to search a disconnected mailbox.
 
-- **In-Place Hold and litigation hold**: When you put a mailbox on In-Place Hold or litigation hold, the hold is placed on both the primary and the archive mailbox. To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
+- **In-Place Hold and litigation hold**: When you put a mailbox on In-Place Hold or litigation hold, the hold is placed on both the primary and the archive mailbox. To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](../ExchangeOnline/security-and-compliance/in-place-and-litigation-holds.md).
 
 - **Recoverable Items folder**: The archive mailbox contains its own Recoverable Items folder and is subject to the same Recoverable Items folder quotas as the primary mailbox. To learn more about recoverable items, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
@@ -256,6 +256,6 @@ In Exchange 2013, creating and managing archive mailboxes is integrated with com
 
 - **Disabling an archive mailbox**: You may want to disable a user's archive mailbox for troubleshooting purposes or if you're moving the primary mailbox to a version of Exchange that doesn't support In-Place Archiving. Disabling an archive is similar to disabling a primary mailbox. For details, see [Manage In-Place Archives in Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md). In on-premises deployments, a disabled archive mailbox is retained in the mailbox database until the deleted mailbox retention period for that database is reached. During this period, you can reconnect the archive to a mailbox user. When the deleted mailbox retention period is reached, the disconnected archive mailbox is purged from the mailbox database.
 
-- **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxStatistics) and [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics) cmdlets.
+- **Retrieving mailbox statistics and folder statistics**: You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](/powershell/module/exchange/Get-MailboxStatistics) and [Get-MailboxFolderStatistics](/powershell/module/exchange/Get-MailboxFolderStatistics) cmdlets.
 
-- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-ArchiveConnectivity) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.
+- **Test archive connectivity**: In Exchange 2013, you can use the [Test-ArchiveConnectivity](/powershell/module/exchange/Test-ArchiveConnectivity) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.

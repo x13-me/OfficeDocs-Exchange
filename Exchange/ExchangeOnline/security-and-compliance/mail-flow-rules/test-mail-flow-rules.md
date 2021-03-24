@@ -149,4 +149,4 @@ To learn more, see [View mail protection reports](../../monitoring/use-mail-prot
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
-[Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)
+[Mail flow rules (transport rules) in Exchange Online Protection](/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

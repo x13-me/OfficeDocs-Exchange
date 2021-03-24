@@ -21,16 +21,16 @@ _**Applies to:** Exchange Server 2013_
 
 [Update an address list](update-an-address-list-exchange-2013-help.md)
 
-[Create an address list by using recipient filters](https://docs.microsoft.com/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
+[Create an address list by using recipient filters](../ExchangeOnline/address-books/address-lists/use-recipient-filters-to-create-an-address-list.md)
 
 [Move an address list](move-an-address-list-exchange-2013-help.md)
 
 [Remove an address list](remove-an-address-list-exchange-2013-help.md)
 
-[Create a global address list](https://docs.microsoft.com/exchange/address-books/address-lists/create-global-address-list)
+[Create a global address list](../ExchangeOnline/address-books/address-lists/create-global-address-list.md)
 
-[Configure global address list properties](https://docs.microsoft.com/exchange/address-books/address-lists/configure-global-address-list-properties)
+[Configure global address list properties](../ExchangeOnline/address-books/address-lists/configure-global-address-list-properties.md)
 
-[Remove a global address list](https://docs.microsoft.com/exchange/address-books/address-lists/remove-a-global-address-list)
+[Remove a global address list](../ExchangeOnline/address-books/address-lists/remove-a-global-address-list.md)
 
 [Update a global address list](update-a-global-address-list-exchange-2013-help.md)

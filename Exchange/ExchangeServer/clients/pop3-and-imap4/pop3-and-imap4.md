@@ -67,7 +67,7 @@ The POP3 and IMAP4 protocols have the following benefits and limitations:
 
   - Doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
 
- **Note**: POP3 and IMAP4 clients have limited access to Exchange calendar information. For more information, see [Configure Calendar Options for POP3](https://docs.microsoft.com/exchange/configure-calendar-options-for-pop3-exchange-2013-help) and [Configure Calendar Options for IMAP4](https://docs.microsoft.com/exchange/configure-calendar-options-for-imap4-exchange-2013-help).
+ **Note**: POP3 and IMAP4 clients have limited access to Exchange calendar information. For more information, see [Configure Calendar Options for POP3](../../../ExchangeServer2013/configure-calendar-options-for-pop3-exchange-2013-help.md) and [Configure Calendar Options for IMAP4](../../../ExchangeServer2013/configure-calendar-options-for-imap4-exchange-2013-help.md).
 
 ## POP3 and IMAP4 applications and settings
 <a name="SendReceive"> </a>

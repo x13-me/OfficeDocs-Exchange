@@ -46,7 +46,7 @@ This example turns off the access to the EAC on server CAS01.
 Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-EcpVirtualDirectory).
+For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](/powershell/module/exchange/Set-EcpVirtualDirectory).
 
 ## How do you know this worked?
 

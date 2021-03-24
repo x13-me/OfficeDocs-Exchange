@@ -33,7 +33,7 @@ By default, plus addressing support is disabled in Exchange Online. Since Exchan
 
 ## Enable plus addressing in your Exchange Online organization
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. The command uses the following syntax:
 
@@ -63,4 +63,4 @@ To automatically identify and filter email messages that are sent to plus addres
 
 ## Related article
 
-[Add or remove email addresses for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses)
+[Add or remove email addresses for a mailbox](./manage-user-mailboxes/add-or-remove-email-addresses.md)

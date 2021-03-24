@@ -53,7 +53,7 @@ Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | 
 ```
 
 > [!NOTE]
-> The Pickup directory and the Replay directory that are available on Edge Transport servers and Mailbox servers also have messages rate limits that you can configure. Typically, the Pickup directory and the Replay directory aren't used in everyday mail flow. For more information, see [Configure the Pickup Directory and the Replay Directory](https://docs.microsoft.com/exchange/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help). The maximum number of message files per minute that can be processed by the Pickup directory and the Replay directory is 100. Each directory can independently process message files at this rate.
+> The Pickup directory and the Replay directory that are available on Edge Transport servers and Mailbox servers also have messages rate limits that you can configure. Typically, the Pickup directory and the Replay directory aren't used in everyday mail flow. For more information, see [Configure the Pickup Directory and the Replay Directory](../../ExchangeServer2013/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md). The maximum number of message files per minute that can be processed by the Pickup directory and the Replay directory is 100. Each directory can independently process message files at this rate.
 
 ## Message throttling on Send connectors
 <a name="SendConn"> </a>
@@ -104,6 +104,6 @@ For more information, see the following topics:
 
 - [User workload management in Exchange Server](../server-health/workload-management.md)
 
-- [Change User Throttling Settings for Specific Users](https://docs.microsoft.com/exchange/change-user-throttling-settings-for-specific-users-exchange-2013-help)
+- [Change User Throttling Settings for Specific Users](../../ExchangeServer2013/change-user-throttling-settings-for-specific-users-exchange-2013-help.md)
 
-- [Change User Throttling Settings for All Users in Your Organization](https://docs.microsoft.com/exchange/change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help)
+- [Change User Throttling Settings for All Users in Your Organization](../../ExchangeServer2013/change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md)
