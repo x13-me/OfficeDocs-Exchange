@@ -57,7 +57,7 @@ This example searches all mailboxes in the organization for messages that have a
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
 ```
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/search-mailbox).
 
 ## Search and delete messages
 
@@ -82,7 +82,7 @@ This example searches all mailboxes in the organization for messages with the su
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
 ```
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox).
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/search-mailbox).
 
 ## Using the -LogLevel Full parameter
 

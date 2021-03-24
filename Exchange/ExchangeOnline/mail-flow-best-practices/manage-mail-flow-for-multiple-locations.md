@@ -46,11 +46,11 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
 #### Best practices
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to Microsoft 365 or Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com
 
@@ -84,7 +84,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
-     This enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
+     This enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 
 5. You don't need connectors in the following scenarios unless one of your partners has a special requirement, such as enforcing TLS with a bank.
 
@@ -93,7 +93,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
    - Sending mail from a partner organization to Microsoft 365 or Office 365
 
 > [!NOTE]
-> If your organization's uses Exchange 2010 or later, we recommend that you use the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to configure connectors in Microsoft 365 or Office 365 as well as on your on-premises Exchange servers. For this scenario, your domain's MX record can't point to your organization's email server.
+> If your organization's uses Exchange 2010 or later, we recommend that you use the [Hybrid Configuration Wizard](../../ExchangeHybrid/hybrid-configuration-wizard.md) to configure connectors in Microsoft 365 or Office 365 as well as on your on-premises Exchange servers. For this scenario, your domain's MX record can't point to your organization's email server.
 
 ### Scenario 2: MX record points to Microsoft 365 or Office 365 and mail is filtered on-premises
 
@@ -105,11 +105,11 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
 #### Best practices
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to Microsoft 365 or Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com
 
@@ -127,7 +127,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
    - Mail that comes from Exchange Online and is destined for the internet is first sent to your on-premises servers, then comes back to Exchange Online, and is then delivered to the internet. Line 4 represents this path in the scenario 2 diagram.
 
-   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-options).
+   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](../../ExchangeHybrid/hybrid-configuration-wizard.md) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](../../ExchangeHybrid/transport-options.md).
 
 You don't need connectors in the following scenarios unless one of your partners has special requirements, such as enforcing TLS with a bank.
 
@@ -149,11 +149,11 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 If the MX record for your domain needs to point to your on-premises IP address, use the following best practices:
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365s](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365s](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
@@ -161,7 +161,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
-4. Because you're not relaying messages from your on-premises servers to the internet through Microsoft 365 or Office 365, you don't technically need to create connectors for the following scenarios. But if at some point you change your MX record to point to Microsoft 365 or Office 365, you'll need to create connectors; therefore, it's best to do it up front. In the Exchange admin center, use the connector wizard to [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365) for the following scenarios, or use the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) to create connectors:
+4. Because you're not relaying messages from your on-premises servers to the internet through Microsoft 365 or Office 365, you don't technically need to create connectors for the following scenarios. But if at some point you change your MX record to point to Microsoft 365 or Office 365, you'll need to create connectors; therefore, it's best to do it up front. In the Exchange admin center, use the connector wizard to [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365) for the following scenarios, or use the [Hybrid Configuration Wizard](../../ExchangeHybrid/hybrid-configuration-wizard.md) to create connectors:
 
    - Sending mail from Microsoft 365 or Office 365 to your organization's email servers
 
@@ -181,11 +181,11 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 If the MX record for your domain needs to point to your on-premises IP address, use the following best practices:
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to your on-premises server in the following format: mail.\<domainKey\>.com
 
@@ -215,7 +215,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
      ![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
-     This allows Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
+     This allows Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more details, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 
 5. [Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md) to make sure that messages are sent to your organization's on-premises servers via MX.
 

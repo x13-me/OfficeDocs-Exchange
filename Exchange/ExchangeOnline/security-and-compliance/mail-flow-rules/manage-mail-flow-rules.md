@@ -39,7 +39,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
 
-- [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Define rules to encrypt email messages](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 ## What do you need to know before you begin?
 
@@ -52,7 +52,7 @@ Interested in scenarios where these procedures are used? See the following topic
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a mail flow rule
 
@@ -99,7 +99,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](/microsoft-365/compliance/view-the-dlp-reports) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
       Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
@@ -144,7 +144,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
 ### Use Exchange Online PowerShell to create a mail flow rule
 
-This example uses the [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule) cmdlet to create a new mail flow rule that prepends "`External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
+This example uses the [New-TransportRule](/powershell/module/exchange/new-transportrule) cmdlet to create a new mail flow rule that prepends "`External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
 
 ```PowerShell
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
@@ -189,7 +189,7 @@ To view the properties of a specific mail flow rule, you provide the name of tha
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
-To modify the properties of an existing rule, use the [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
+To modify the properties of an existing rule, use the [Set-TransportRule](/powershell/module/exchange/set-transportrule) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
 
 ```PowerShell
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
@@ -209,7 +209,7 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 ## Mail flow rule properties
 
-You can also use the Set-TransportRule cmdlet to modify existing mail flow rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule)
+You can also use the Set-TransportRule cmdlet to modify existing mail flow rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](/powershell/module/exchange/set-transportrule)
 
 |**Condition Name in the EAC**|**Condition name in Exchange Online PowerShell**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -327,17 +327,17 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 
 2. Then select **Exchange transport rule**.
 
-To learn more, see [View mail flow reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-mail-flow-reports).
+To learn more, see [View mail flow reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-mail-flow-reports).
 
 ### Download an Excel version of the reports
 
-For steps to download reports, see [Download existing reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/download-existing-reports).
+For steps to download reports, see [Download existing reports in the Security & Compliance Center](/microsoft-365/compliance/download-existing-reports).
 
 ## Import or export a mail flow rule collection
 
-You must use Exchange Online PowerShell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/import-transportrulecollection).
+You must use Exchange Online PowerShell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](/powershell/module/exchange/import-transportrulecollection).
 
-For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/export-transportrulecollection).
+For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](/powershell/module/exchange/export-transportrulecollection).
 
 ## Need more help?
 
@@ -347,4 +347,4 @@ For information about how to export a mail flow rule collection to an XML file, 
 
 [Mail flow rule actions in Exchange Online](mail-flow-rule-actions.md)
 
-[Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
+[Journal, transport, and inbox rule limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -26,14 +26,14 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
 
 - Estimated time to finish: two minutes.
 
-- If you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+- If you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 settings" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to enable or disable POP3 or IMAP4 for a user
 

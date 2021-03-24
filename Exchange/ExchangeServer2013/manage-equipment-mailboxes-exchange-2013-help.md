@@ -69,7 +69,7 @@ This example creates an equipment mailbox with the following configuration:
 New-Mailbox -Database "Mailbox Database 1" -Name MotorVehicle2 -OrganizationalUnit Equipment -DisplayName "Motor Vehicle 2" -Equipment
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/new-mailbox).
 
 ### How do you know this worked?
 
@@ -205,17 +205,17 @@ Use the following sets of cmdlets to view and change equipment mailbox propertie
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Get-User](/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Set-User](/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
+- [Get-CalendarProcessing](/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
+- [Set-CalendarProcessing](/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using the Shell to change equipment mailbox properties.
 

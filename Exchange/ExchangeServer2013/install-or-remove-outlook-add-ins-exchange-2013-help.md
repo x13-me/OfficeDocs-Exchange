@@ -73,7 +73,7 @@ New-App -OrganizationApp -FileData <File location for add-in manifest file>
 > [!TIP]
 > When you use the Shell to install an add-in for your organization, you can install the add-in and configure settings for it at the same time.
 
-For syntax and parameters, see [New-App](https://docs.microsoft.com/powershell/module/exchange/new-app).
+For syntax and parameters, see [New-App](/powershell/module/exchange/new-app).
 
 ## Remove an add-in for Outlook
 
@@ -100,7 +100,7 @@ Run the following command to remove the custom add-in Finance Test Add-in from t
 Remove-App -OrganizationApp -Identity <GUID for Finance Test Add-in>
 ```
 
-For syntax and parameters, see [Remove-App](https://docs.microsoft.com/powershell/module/exchange/remove-app).
+For syntax and parameters, see [Remove-App](/powershell/module/exchange/remove-app).
 
 ## How do you know this worked?
 

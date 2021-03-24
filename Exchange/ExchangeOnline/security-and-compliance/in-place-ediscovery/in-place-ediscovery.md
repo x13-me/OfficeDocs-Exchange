@@ -20,7 +20,7 @@ manager: serdars
 # In-Place eDiscovery
 
 > [!IMPORTANT]
->  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement).
+>  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement).
 
 If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 
@@ -53,7 +53,7 @@ With a single content indexing engine, no additional resources are used to crawl
 
 In-Place eDiscovery uses Keyword Query Language (KQL), a querying syntax similar to the Advanced Query Syntax (AQS) used by Instant Search in Microsoft Outlook and Outlook on the web. Users familiar with KQL can easily construct powerful search queries to search content indexes.
 
-For more information about the file formats indexed by Exchange search, see [File Formats Indexed By Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help).
+For more information about the file formats indexed by Exchange search, see [File Formats Indexed By Exchange Search](../../../ExchangeServer2013/file-formats-indexed-by-exchange-search-exchange-2013-help.md).
 
 ## Discovery Management role group and management roles
 <a name="roles"> </a>
@@ -87,7 +87,7 @@ OAuth authentication supports the following eDiscovery scenarios in an Exchange 
 
 - Search on-premises mailboxes by using the eDiscovery Center in SharePoint Online.
 
-For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
+For more information about the eDiscovery scenarios that require OAuth authentication to be configured in an Exchange hybrid deployment, see [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](../../../ExchangeServer2013/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md). For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](../../../ExchangeServer2013/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
 For information about running an In-Place eDiscovery search in Exchange Server, see [Create an In-Place eDiscovery search in Exchange Server](../../../ExchangeServer/policy-and-compliance/ediscovery/create-searches.md).
 
@@ -181,7 +181,7 @@ Be aware of the following:
 When an employee leaves an organization, it's a common practice to disable or remove the mailbox. After you disable a mailbox, it is disconnected from the user account but remains in the mailbox for a certain period, 30 days by default. The Managed Folder Assistant does not process disconnected mailboxes and any retention policies are not applied during this period. You can't search content of a disconnected mailbox. Upon reaching the deleted mailbox retention period configured for the mailbox database, the mailbox is purged from the mailbox database.
 
 > [!IMPORTANT]
-> In Exchange Online, In-Place eDiscovery can search content in inactive mailboxes. Inactive mailboxes are mailboxes that are placed on In-Place Hold or litigation hold and then removed. Inactive mailboxes are preserved as long as they're placed on hold. When an inactive mailbox is removed from In-Place Hold or when litigation hold is disabled, it is permanently deleted. For details, see [Create and manage inactive mailboxes](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+> In Exchange Online, In-Place eDiscovery can search content in inactive mailboxes. Inactive mailboxes are mailboxes that are placed on In-Place Hold or litigation hold and then removed. Inactive mailboxes are preserved as long as they're placed on hold. When an inactive mailbox is removed from In-Place Hold or when litigation hold is disabled, it is permanently deleted. For details, see [Create and manage inactive mailboxes](/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 In on-premises deployments, if your organization requires that retention settings be applied to messages of employees who are no longer in the organization or if you may need to retain an ex-employee's mailbox for an ongoing or future eDiscovery search, do not disable or remove the mailbox. You can take the following steps to ensure the mailbox can't be accessed and no new messages are delivered to it.
 
@@ -212,9 +212,9 @@ The following table contains links to topics that will help you learn about and 
 |[Search limits for In-Place eDiscovery](search-limits.md)|Learn In-Place eDiscovery limits in Exchange Online that help maintain the health and quality of eDiscovery services for Microsoft 365 or Office 365 organizations.|
 |[Export eDiscovery search results to a PST file](export-search-results.md)|Learn how to export the results of an eDiscovery search to a PST file.|
 |[Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md)|Learn how to use custom management scopes to limit the mailboxes that a discovery manager can search.|
-|[Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)|Learn how to use Content Search to search for and then delete email messages.|
+|[Search for and delete email messages](/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)|Learn how to use Content Search to search for and then delete email messages.|
 |[Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md)|Use this process to reduce the size of a discovery mailbox that's larger than 50 GB.|
 |[Delete and re-create the default discovery mailbox in Exchange](delete-and-re-create-default-discovery-mailbox.md)|Learn how to delete the default discovery mailbox, re-create it, and then reassign permissions to it. Use this procedure if this mailbox has exceeded the 50 GB limit and you don't need the search results.|
-|[Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)|Learn about the eDiscovery scenarios in an Exchange hybrid deployment that require you to configure OAuth authentication.|
+|[Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](../../../ExchangeServer2013/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md)|Learn about the eDiscovery scenarios in an Exchange hybrid deployment that require you to configure OAuth authentication.|
 
-For more information about eDiscovery in Microsoft 365, see the [Get started with Core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery).
+For more information about eDiscovery in Microsoft 365, see the [Get started with Core eDiscovery](/microsoft-365/compliance/ediscovery).

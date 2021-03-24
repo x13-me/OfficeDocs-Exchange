@@ -63,7 +63,7 @@ Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogM
 > <LI>
 > <P>Setting the <EM>AgentLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of agent log files because of their age.</P></LI></UL>
 
-For detailed syntax and parameter information, see the *AgentLog* parameters in [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/Set-TransportService).
+For detailed syntax and parameter information, see the *AgentLog* parameters in [Set-TransportService](/powershell/module/exchange/Set-TransportService).
 
 ## How do you know this worked?
 

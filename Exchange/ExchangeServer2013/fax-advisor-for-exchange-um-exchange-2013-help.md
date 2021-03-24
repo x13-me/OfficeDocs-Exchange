@@ -28,9 +28,9 @@ To become a fax partner certified for interoperability with Exchange UM, the par
 
 Correctly configuring VoIP gateways for your organization is a difficult deployment task that must be completed to successfully deploy Exchange Unified Messaging with incoming faxing. To help answer questions and get the most up-to-date VoIP gateway configuration information, see [Telephony advisor for Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md). [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](configuration-notes-for-voip-gateways-exchange-2013-help.md) provides VoIP gateway configuration notes and files that you must have to correctly configure your organization's VoIP gateways, IP PBXs, and SBCs to work with Exchange Unified Messaging.
 
-Interoperability testing of Exchange Unified Messaging with VoIP gateways is now integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](https://docs.microsoft.com/SkypeForBusiness/lync-cert/qualified-lync-apps).
+Interoperability testing of Exchange Unified Messaging with VoIP gateways is now integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](/SkypeForBusiness/lync-cert/qualified-lync-apps).
 
-The [Microsoft Unified Communications Open Interoperability Program](https://docs.microsoft.com/SkypeForBusiness/lync-cert/qualified-lync-apps) qualification program for VoIP gateways and IP PBXs ensures that customers have a seamless setup and support experience when they're using qualified telephony gateways and IP PBXs with Microsoft Unified Communications software.
+The [Microsoft Unified Communications Open Interoperability Program](/SkypeForBusiness/lync-cert/qualified-lync-apps) qualification program for VoIP gateways and IP PBXs ensures that customers have a seamless setup and support experience when they're using qualified telephony gateways and IP PBXs with Microsoft Unified Communications software.
 
 > [!IMPORTANT]
 > Sending and receiving faxes using T.38 or G.711 isn't supported in an environment where Unified Messaging and Communications Server 2007 R2 or Microsoft Lync Server are integrated.

@@ -86,7 +86,7 @@ Set-ImapSettings -MaxCommandSize Value
 
 After you set connection limits, you must restart the IMAP4 services. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ImapSettings).
+For more information about syntax and parameters, see [Set-ImapSettings](/powershell/module/exchange/Set-ImapSettings).
 
 ## How do you know this worked?
 

@@ -31,7 +31,7 @@ As mentioned earlier, you can't use product keys to downgrade from Enterprise Ed
 
 For a list of Exchange 2013 versions and information on how to download and upgrade to the latest version of Exchange 2013, see the following topics:
 
-- [Exchange Server Updates: build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates)
+- [Exchange Server Updates: build numbers and release dates](../ExchangeServer/new-features/build-numbers-and-release-dates.md)
 
 - [Upgrade Exchange 2013 to the latest cumulative update or service pack](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md)
 
