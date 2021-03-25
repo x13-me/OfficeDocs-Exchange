@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange, Microsoft 365, or Office 365 organization and can access resources. For more information, see Recipients.
+description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has sign in credentials in your Exchange, Microsoft 365, or Office 365 organization and can access resources. For more information, see Recipients.
 ms.topic: article
 author: msdmaguire
 f1.keywords:
@@ -21,7 +21,7 @@ manager: serdars
 
 # Manage mail users in Exchange Online
 
-In Exchange Online organizations, mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Microsoft 365 organization and can access resources. For more information about mail contacts and mail users, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
+In Exchange Online organizations, mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has sign in credentials in your Microsoft 365 organization and can access resources. For more information about mail contacts and mail users, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 You manage mail users in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes.
 
@@ -33,9 +33,9 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 - When you create mail users in EOP PowerShell, you might encounter throttling. Also, the EOP PowerShell cmdlets use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) article.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -302,7 +302,7 @@ This example creates a mail user for Rene Valdes:
 
 - The external email address is renevaldes@fabrikam.com.
 
-- The logon name is renev@contoso.onmicrosoft.com.
+- The sign in name is renev@contoso.onmicrosoft.com.
 
 - The password is Pa$$word1.
 
@@ -316,7 +316,7 @@ For detailed syntax and parameter information, see [New-MailUser](/powershell/mo
 
 In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
 
-Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following articles:
 
 - [Get-User](/powershell/module/exchange/get-user)
 
@@ -363,7 +363,7 @@ To remove a mail user, use the following syntax:
 Remove-MailUser -Identity <MailUserIdentity>
 ```
 
-This example remove the mail user for Pilar Pinilla:
+This example removes the mail user for Pilar Pinilla:
 
 ```powershell
 Remove-MailUser -Identity "Pilar Pinilla"
