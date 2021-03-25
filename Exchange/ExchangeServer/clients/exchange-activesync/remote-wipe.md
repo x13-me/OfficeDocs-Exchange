@@ -52,7 +52,7 @@ Since Outlook for iOS and Android appears as a single mobile device association 
 A remote wipe action deletes the synchronization profile, so when the user adds his or her account to Outlook for iOS and Android, a new Device ID is generated and reported to Exchange on-premises.
 
 > [!NOTE]
-> If you are using Intune, you should be using Intune to trigger data removal, not Exchange. Depending on the scenario, it could be accomplished via [App Protection Policy selective wipe](https://docs.microsoft.com/intune/apps-selective-wipe), or [Device enrollment retire/wipe commands](https://docs.microsoft.com/intune/devices-wipe).
+> If you are using Intune, you should be using Intune to trigger data removal, not Exchange. Depending on the scenario, it could be accomplished via [App Protection Policy selective wipe](/intune/apps-selective-wipe), or [Device enrollment retire/wipe commands](/intune/devices-wipe).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -85,7 +85,7 @@ If the device connects to Exchange using a mail app other than Outlook, you can 
 Clear-MobileDevice -AccountOnly -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
-The **-AccountOnly** switch has no effect on Outlook devices because an account-only remote wipe is the only type of wipe that is supported by Outlook. See [Clear-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/clear-mobiledevice) for more information.
+The **-AccountOnly** switch has no effect on Outlook devices because an account-only remote wipe is the only type of wipe that is supported by Outlook. See [Clear-MobileDevice](/powershell/module/exchange/clear-mobiledevice) for more information.
 
 ## Use Outlook on the web to wipe a user's phone
 

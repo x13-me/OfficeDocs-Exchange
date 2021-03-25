@@ -28,7 +28,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 - For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - If you add users to or remove users from a mail-enabled security group, the users need to log out and log in for the permission changes to take effect.
 
@@ -62,7 +62,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
    - **\* Display name**: This value should help users immediately recognize what the group is used for. This name appears in the global address list, on the To: line when email is sent to this group, and in the **Groups** list in the EAC. The maximum length in the EAC is 64 characters, and the value must be unique.
 
      > [!NOTE]
-     > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](https://docs.microsoft.com/Exchange/create-group-naming-policy-exchange-2013-help). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](https://docs.microsoft.com/Exchange/override-group-naming-policy-exchange-2013-help).
+     > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](../../ExchangeServer2013/create-group-naming-policy-exchange-2013-help.md). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](../../ExchangeServer2013/override-group-naming-policy-exchange-2013-help.md).
 
    - **\* Alias**: This value is used to generate the primary email address (_\<alias\>_@ _\<domain_\>). This value can contain letters, numbers and the characters !, #, $, %, &, ', \*, +, -, /, =, ?, ^, _, `, {, |, } and ~. Periods (.) are allowed, but each period must be surrounded by other valid characters (for example, help.desk). Unicode characters from U+00A1 to U+00FF are also allowed, but are mapped to best-fit US-ASCII text characters in the primary email address (for example, U+00F6 (ö) is changed to oe). The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
 
@@ -134,7 +134,7 @@ This example creates a security group with these settings:
 New-DistributionGroup -Type Security -Name "File Server Managers" -Alias fsadmin -Members "Bishamon Tamura","Valeria Barrios" -CopyOwnerToMember
 ```
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
+For detailed syntax and parameter information, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -317,7 +317,7 @@ Use this tab to view or change the email addresses that are configured for the g
 
 #### MailTip
 
-Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](https://docs.microsoft.com/exchange/configure-custom-mailtips-exchange-2013-help).
+Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](../../ExchangeServer2013/configure-custom-mailtips-exchange-2013-help.md).
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
@@ -348,7 +348,7 @@ You use the **Set-DistributionGroup** cmdlet to modify mail-enabled security gro
 
 - Instead of specifying the internal recipients who *are* allowed to send messages to the group, you can specify the internal recipients who *aren't* allowed to send messages to the group (the _RejectMessagesFromSendersOrMembers_ parameter).
 
-For detailed syntax and parameter information, see [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup).
+For detailed syntax and parameter information, see [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup).
 
 This example configures the value DoNotMigrate for the **CustomAttribute5** property of the group named Experimental Project.
 
@@ -390,7 +390,7 @@ This example returns detailed information for the mail-enabled security group na
 Get-DistributionGroup -Identity "Help Desk" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroup).
+For detailed syntax and parameter information, see [Get-DistributionGroup](/powershell/module/exchange/get-distributiongroup).
 
 ## Remove mail-enabled security groups
 
@@ -474,7 +474,7 @@ Enable-DistributionGroup -Identity "Help Desk" -Alias hdesk
 
 After you mail-enable the security group, the group will be visible to all other **\*-DistributionGroup** cmdlets.
 
-For detailed syntax and parameter information, see [Enable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/enable-distributiongroup).
+For detailed syntax and parameter information, see [Enable-DistributionGroup](/powershell/module/exchange/enable-distributiongroup).
 
 #### How do you know this worked?
 
@@ -514,7 +514,7 @@ Disable-DistributionGroup -Identity "Human Resources"
 
 - After you mail-disable the security group, the group will be invisible to all **\*-DistributionGroup** cmdlets except **Enable-DistributionGroup**.
 
-For detailed syntax and parameter information, see [Disable-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/disable-distributiongroup).
+For detailed syntax and parameter information, see [Disable-DistributionGroup](/powershell/module/exchange/disable-distributiongroup).
 
 #### How do you know this worked?
 

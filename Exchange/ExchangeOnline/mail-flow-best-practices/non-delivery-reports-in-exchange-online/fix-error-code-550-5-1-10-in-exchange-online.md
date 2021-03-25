@@ -37,7 +37,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## I got this bounce message. How do I fix it?
 
@@ -139,7 +139,7 @@ To verify that the recipient exists and has an active license assigned:
 
 1. In the Microsoft 365 admin center, choose **Users** to go to the **Active users** page.
 
-2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
+2. In the **Active users** \> **Filters** search field, type part of the recipient's name, and then press Enter to locate the recipient. If the recipient doesn't exist, then you must create a new mailbox or contact for this user. (For more information, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).) If the recipient does exist, make sure the recipient's username matches the email address the sender used.
 
    ![Screenshot shows a section of the Active users page with a search term, "allie", typed in the search box adjacent to the Filters option, which is set to All users. Below, the complete display name and username are shown.](../../media/4b17dfe8-104c-4e8a-9325-3779a7d4bc5f.png)
 
@@ -213,7 +213,7 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
   - **If the accepted domain in Exchange Online is Internal Relay**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, the service relays the message to your on-premises Exchange Organization (assuming you've correctly set up the required connector to do so).
 
-- When setting an accepted domain to Internal Relay, you must set up a corresponding Microsoft 365 or Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- When setting an accepted domain to Internal Relay, you must set up a corresponding Microsoft 365 or Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
 **To change the Accepted Domain from Authoritative to Internal Relay**
 
@@ -277,7 +277,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 3. Verify that there's only one MX record configured for the recipient's domain. Microsoft doesn't support using more than one MX record for a domain that's enrolled in Exchange Online.
 
-4. If Microsoft 365 or Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+4. If Microsoft 365 or Office 365 detects any issues with your Exchange Online DNS record settings, follow the recommended steps to fix them. You might be prompted to make the changes directly within the Microsoft 365 admin center. Otherwise, you must update the MX record from your DNS host provider's portal. For more information, see [Create DNS records at any DNS hosting provider](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
    > [!NOTE]
    > Typically, your domain's MX record should point to the Microsoft 365 or Office 365 fully qualified domain name: \<your domain\>.mail.protection.outlook.com. DNS record updates usually propagate across the Internet in a few hours, but they can take up to 72 hours.
@@ -288,18 +288,18 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop)
+[Backscatter in EOP](/microsoft-365/security/office-365-security/backscatter-messages-and-eop)
 
 [Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md)
 
 [Synchronizing your directory with Microsoft 365 or Office 365 is easy](https://www.microsoft.com/microsoft-365/blog/2014/04/15/synchronizing-your-directory-with-office-365-is-easy/)
 
-[Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+[Create DNS records at any DNS hosting provider](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
-[Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
+[Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)

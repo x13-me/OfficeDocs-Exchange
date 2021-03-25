@@ -45,7 +45,7 @@ Managing custom templates and their related policies is similar to managing the 
 
 4. Update your custom template by repeating steps 1 and 2.
 
-5. Remove your custom template. To learn more, see [Remove-DlpPolicyTemplate](https://docs.microsoft.com/powershell/module/exchange/remove-dlppolicytemplate).
+5. Remove your custom template. To learn more, see [Remove-DlpPolicyTemplate](/powershell/module/exchange/remove-dlppolicytemplate).
 
 For more information about the XML schema definition and concepts related to developing your own templates, see [Developing DLP policy template files](developing-dlp-policy-template-files-exchange-2013-help.md).
 
@@ -55,13 +55,13 @@ You can write your own sensitive information definitions in a classification rul
 
 1. Create your own sensitive information types, a custom XML file. To learn more, see [Developing sensitive information rule packages](developing-sensitive-information-rule-packages-exchange-2013-help.md).
 
-2. Import your sensitive information type. To learn more, see [New-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/new-classificationrulecollection).
+2. Import your sensitive information type. To learn more, see [New-ClassificationRuleCollection](/powershell/module/exchange/new-classificationrulecollection).
 
 3. Create custom template based on your information types. To learn more, see [Developing sensitive information rule packages](developing-sensitive-information-rule-packages-exchange-2013-help.md)
 
 4. Update your custom template by repeating steps 1 and 2.
 
-5. Remove your custom template. To learn more, see [Remove-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/remove-classificationrulecollection)
+5. Remove your custom template. To learn more, see [Remove-ClassificationRuleCollection](/powershell/module/exchange/remove-classificationrulecollection)
 
 For more information about the rule packages, see [Developing sensitive information rule packages](developing-sensitive-information-rule-packages-exchange-2013-help.md) and [Matching methods and techniques for rule packages](matching-methods-and-techniques-for-rule-packages-exchange-2013-help.md).
 
@@ -79,8 +79,8 @@ Affinity rules are targeted toward a certain type of document such as a corporat
 
 [Import a custom DLP policy template from a file](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 
-[New-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/new-classificationrulecollection)
+[New-ClassificationRuleCollection](/powershell/module/exchange/new-classificationrulecollection)
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
+[Sensitive information types in Exchange Server](../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md)

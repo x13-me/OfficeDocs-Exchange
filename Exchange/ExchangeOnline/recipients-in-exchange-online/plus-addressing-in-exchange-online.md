@@ -16,7 +16,7 @@ description: You use plus addressing to support dynamic, disposable recipient (n
 
 # Plus Addressing in Exchange Online
 
-From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamically-created recipient (not sender) email addresses for mailboxes.
+From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamically created recipient (not sender) email addresses for mailboxes.
 
 An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For example, sean@contoso.com. 
 
@@ -26,14 +26,14 @@ The original email address must be valid; the `+tag` value that you add is arbit
 
 By default, plus addressing support is disabled in Exchange Online. Since Exchange Online has always supported regular email addresses that already contain the plus sign, if you enable plus addressing, these email addresses might stop working. See the note below in **Enable plus addressing in your Exchange Online organization**.
 
-You can't enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell. 
+**You can't enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell**. 
 
 >[!NOTE]
 > Currently, plus addresses are only supported for mailboxes but support for Groups and DLs is being rolled out and will be available by the end of December 2020. 
 
 ## Enable plus addressing in your Exchange Online organization
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. The command uses the following syntax:
 
@@ -63,4 +63,4 @@ To automatically identify and filter email messages that are sent to plus addres
 
 ## Related article
 
-[Add or remove email addresses for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses)
+[Add or remove email addresses for a mailbox](./manage-user-mailboxes/add-or-remove-email-addresses.md)

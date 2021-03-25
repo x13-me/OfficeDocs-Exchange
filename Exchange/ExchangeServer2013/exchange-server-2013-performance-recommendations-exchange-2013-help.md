@@ -62,10 +62,10 @@ More about Exchange 2013 architectural changes, and background information on ot
 
 [Load balancing](load-balancing-exchange-2013-help.md)
 
-[Exchange Server Updates: build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates)
+[Exchange Server Updates: build numbers and release dates](../ExchangeServer/new-features/build-numbers-and-release-dates.md)
 
 [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md)
 
 [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md)
 
-[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](https://docs.microsoft.com/archive/blogs/tmarq/asp-net-thread-usage-on-iis-7-5-iis-7-0-and-iis-6-0)
+[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](/archive/blogs/tmarq/asp-net-thread-usage-on-iis-7-5-iis-7-0-and-iis-6-0)

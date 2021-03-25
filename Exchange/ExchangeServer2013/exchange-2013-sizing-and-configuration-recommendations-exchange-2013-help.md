@@ -180,7 +180,7 @@ Configure the DB copy activation preference and the "MaximumPreferredActiveDatab
 
 The RedistributeActiveDatabases.ps1 script will rebalance active databases across the DAG nodes.
 
-Consider enforcing strict item count limits that match Microsoft 365 or Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limit).
+Consider enforcing strict item count limits that match Microsoft 365 or Office 365. You can do this with the Set-Mailbox cmdlet and the information provided in [Mailbox folder limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limit).
 
 ## Pagefile
 
@@ -190,17 +190,17 @@ The pagefile should not be hosted on the same drive as Exchange database files o
 
 It is imperative that you use a fixed size pagefile and not allow Windows to manage the size. Growing the page file can be a very performance-intensive task and can cause issues when Exchange is under stress.
 
-If you need to get a full kernel dump, see [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump).
+If you need to get a full kernel dump, see [Generate a kernel or complete crash dump](/windows/client-management/generate-kernel-or-complete-crash-dump).
 
 ## Outlook Mode
 
-Cached mode is recommended. To understand the benefit of using cached mode, see [Choose between Cached Exchange Mode and Online Mode for Outlook 2013](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode).
+Cached mode is recommended. To understand the benefit of using cached mode, see [Choose between Cached Exchange Mode and Online Mode for Outlook 2013](/outlook/troubleshoot/deployment/cached-exchange-mode).
 
 It is important to note that performance can be affected by both server add-ins and Outlook third-party add-ins. When using online mode, clients can expect some performance issues from third-party add-ins, high item counts, restricted views, the number of users accessing the mailbox, among other factors. Legacy clients can experience more impact by high item counts and performance than Outlook 2013 will.
 
 If the primary reason that an organization has Outlook configured in online mode is for security concerns, consider using BitLocker instead.
 
-Outlook 2013 offers a new "Sync Slider" feature to minimize the download time and the size of the OST file. Please refer to [Configure Cached Exchange Mode in Outlook 2013](https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode) for more information.
+Outlook 2013 offers a new "Sync Slider" feature to minimize the download time and the size of the OST file. Please refer to [Configure Cached Exchange Mode in Outlook 2013](/outlook/troubleshoot/deployment/cached-exchange-mode) for more information.
 
 Check monthly for Outlook clients updates that are supported in your environment.
 

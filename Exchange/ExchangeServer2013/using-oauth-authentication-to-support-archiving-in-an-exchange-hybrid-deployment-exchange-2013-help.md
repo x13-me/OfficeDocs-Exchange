@@ -41,4 +41,4 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use arc
 
 - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
-- You can configure an Exchange hybrid deployment using the Mail migration advisor. For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).
+- You can configure an Exchange hybrid deployment using the Mail migration advisor. For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](../ExchangeHybrid/mail-migration-jump.md).

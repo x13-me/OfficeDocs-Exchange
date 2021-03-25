@@ -29,13 +29,13 @@ You can inspect email attachments in your organization by setting up transport r
 
 - Create notifications that alert users if they send a message that has matched a transport rule.
 
-- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
+- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios](../ExchangeOnline/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios.md).
 
 Exchange administrators can create transport rules by going to **Exchange admin center** \> **Mail flow** \> **Rules**. You need to be assigned permissions before you can perform this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
 
 ![Dialog box to select attachment-related rules](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "Dialog box to select attachment-related rules")
 
-For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop). If you're ready to start creating rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
+For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](/microsoft-365/security/office-365-security/best-practices-for-configuring-eop). If you're ready to start creating rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 ## Inspect the content within attachments
 
@@ -70,7 +70,7 @@ You can use the transport rule conditions in the following table to examine the 
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+- Learn more about the cmdlet at [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -205,7 +205,7 @@ The following transport rule conditions inspect the properties of a file that is
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+- Learn more about the cmdlet at [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -304,7 +304,7 @@ To help you manage important business information in email, you can include any 
 
 - Define an action to take on mail that contains passport numbers that are not in the protected file.
 
-DLP policies and attachment-related conditions can help you enforce your business needs by defining those needs as transport rule conditions, exceptions, and actions. When you include the sensitive information inspection in a DLP policy, any attachments to messages are scanned for that information only. However, attachment-related conditions such as size or file type are not included until you add the conditions listed in this topic. DLP is not available with all versions of Exchange; learn more at [Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
+DLP policies and attachment-related conditions can help you enforce your business needs by defining those needs as transport rule conditions, exceptions, and actions. When you include the sensitive information inspection in a DLP policy, any attachments to messages are scanned for that information only. However, attachment-related conditions such as size or file type are not included until you add the conditions listed in this topic. DLP is not available with all versions of Exchange; learn more at [Data loss prevention](../ExchangeOnline/security-and-compliance/data-loss-prevention/data-loss-prevention.md).
 
 ## For more information
 

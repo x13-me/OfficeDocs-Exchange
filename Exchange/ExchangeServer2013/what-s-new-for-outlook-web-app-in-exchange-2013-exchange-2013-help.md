@@ -32,7 +32,7 @@ Apps for Outlook aren't dependent on the version of Exchange Server that you're 
 
 Administrators can use the Exchange admin center (EAC) to manage the apps available to users in the organization. Users can then manage their apps. Administrators can also allow users to download apps from Office.com. For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 
-In addition, we encourage third-party developers to create additional apps for Outlook and then offer them at Office.com. To learn more, see [Deploy and publish Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/publish/publish) for background information and [Outlook add-ins overview](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview) for detailed information about building apps for Outlook.
+In addition, we encourage third-party developers to create additional apps for Outlook and then offer them at Office.com. To learn more, see [Deploy and publish Office Add-ins](/office/dev/add-ins/publish/publish) for background information and [Outlook add-ins overview](/office/dev/add-ins/outlook/outlook-add-ins-overview) for detailed information about building apps for Outlook.
 
 ## People
 

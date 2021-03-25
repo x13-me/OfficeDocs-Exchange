@@ -77,7 +77,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios
 
-Exchange 2013 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+Exchange 2013 supports hybrid deployments with Microsoft 365 or Office 365 organizations that have been upgraded to the latest version of Microsoft 365 or Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](../ExchangeHybrid/hybrid-deployment-prerequisites.md).
 
 ## Network and directory servers
 
@@ -127,7 +127,7 @@ The following table lists the requirements for the network and the directory ser
 <li><p>Windows Server 2003 Standard Edition with Service Pack 2 (SP2) or later (32-bit or 64-bit)</p></li>
 <li><p>Windows Server 2003 Enterprise Edition with SP2 or later (32-bit or 64-bit)</p></li>
 </ul>
-<p>For more information about global catalog servers, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc728188(v=ws.10)">What is the Global Catalog</a>.</p></td>
+<p>For more information about global catalog servers, see <a href="/previous-versions/windows/it-pro/windows-server-2003/cc728188(v=ws.10)">What is the Global Catalog</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Domain controller</p></td>
@@ -350,7 +350,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |CU15||||X|
 |
 
-**Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix#exchange-2013)
+**Note**: For older versions of the .NET Framework, see the [Exchange Server supportability matrix](../ExchangeServer/plan-and-deploy/supportability-matrix.md#exchange-2013)
 
 ## Supported clients
 
@@ -366,7 +366,7 @@ Exchange 2013 supports the following versions of Outlook and Entourage for Mac:
 - Outlook for Mac for Office 365
 - Outlook for Mac 2011
 
-For a list of Outlook releases that Exchange supports, see [Outlook Updates](https://docs.microsoft.com/officeupdates/outlook-updates-msi).
+For a list of Outlook releases that Exchange supports, see [Outlook Updates](/officeupdates/outlook-updates-msi).
 
 > [!IMPORTANT]
 > We strongly recommend that you install the latest available service packs and updates available so that your users receive the best possible experience when connecting to Exchange.

@@ -21,15 +21,15 @@ manager: serdars
 # Run a message trace in the classic EAC
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
+> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
-For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
+For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 ## What do you need to know before you begin?
 
-- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](https://docs.microsoft.com/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
+- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
 
 - To find and open the classic EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -38,7 +38,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE). If you're a Microsoft 365 or Office 365 for business admin, see [Contact support for business products - Admin Help](/microsoft-365/admin/contact-support-for-business-products).
 
 ## Run a message trace
 
@@ -61,7 +61,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
       - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
 
       - **Filtered as spam**: The message was delivered to the Junk Email folder.
-      
+
       - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
       <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
@@ -154,7 +154,7 @@ In the events section, the following fields provide information about the events
   - **DLP rule**: The message had a DLP rule or sensitivity label match in this message.
 
     > [!TIP]
-    > Additional events may appear. For more information about these events, see [Event types in the message tracking log](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log).
+    > Additional events may appear. For more information about these events, see [Event types in the message tracking log](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#event-types-in-the-message-tracking-log).
 
 - **Action**: This field shows the action that was performed if the message was filtered due to a malware or spam detection or a rule match. For example, it will let you know if the message was deleted or if it was sent to the quarantine.
 
@@ -177,7 +177,10 @@ In the EAC, you can click **View pending or completed traces** in order to view 
 When you select a specific message trace, additional information appears in the right pane. Depending on what search criteria you specified, this may include details such as the date range for which the trace was run, and the sender and intended recipients of the message.
 
 > [!NOTE]
-> Message traces containing data that is more than 7 days old are automatically deleted in the EAC after 10 days. They can't be manually deleted.
+>
+> - Message traces containing data that is more than 7 days old are automatically deleted in the EAC after 10 days. They can't be manually deleted.
+>
+> - The maximum size for a downloadable report is 500 MB. If a downloadable report exceeds 500 MB, you can't open the report in Excel or Notepad.
 
 ### View report details about a specific message more than 7 days old
 
@@ -224,7 +227,7 @@ If you didn't include routing details when running the message trace, the follow
 
 #### View a message trace report with routing details
 
-If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in [Fields in the message tracking log files](https://docs.microsoft.com/exchange/mail-flow/transport-logs/message-tracking#fields-in-the-message-tracking-log-files).
+If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in [Fields in the message tracking log files](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#fields-in-the-message-tracking-log-files).
 
 #### The custom_data field
 
@@ -234,24 +237,29 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
 |SFV=SPM|The message was marked as spam by the content filter.|
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |SFV=SKS|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a mail flow rule to automatically mark it as spam and bypass all additional filtering.|
-|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levels).|
-|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
+|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](/microsoft-365/security/office-365-security/spam-confidence-levels).|
+|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
 |DI=SB|The sender of the message was blocked.|
 |DI=SQ|The message was quarantined.|
 |DI=SD|The message was deleted.|
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
-|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
+|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
 |SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |H=[helostring]|The HELO or EHLO string of the connecting mail server.|
 |PTR=[ReverseDNS]|The PTR record of the sending IP address, also known as the reverse DNS address.|
+|
 
 When a message is filtered for spam, a sample custom_data entry would look similar to the following:
 
@@ -261,9 +269,13 @@ When a message is filtered for spam, a sample custom_data entry would look simil
 
 A string beginning with S:AMA is an entry from the anti-malware agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
-|AMA=SUM\|v=1\| <br/> or <br/> AMA=EV\|v=1\||The message was determined to contain malware. SUM denotes that the malware could've been detected by any number of engines. EV denotes that the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
+|AMA=SUM\|v=1\| <p> or <p> AMA=EV\|v=1\||The message was determined to contain malware. SUM denotes that the malware could've been detected by any number of engines. EV denotes that the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
 |Action=r|The message was replaced.|
 |Action=p|The message was bypassed.|
 |Action=d|The message was deferred.|
@@ -275,6 +287,7 @@ A string beginning with S:AMA is an entry from the anti-malware agent and provid
 |Action=b|The message was blocked.|
 |Name=\<*malware*\>|The name of the malware that was detected.|
 |File=\<*filename*\>|The name of the file that contained the malware.|
+|
 
 When a message contains malware, a sample custom_data entry would look similar to the following:
 
@@ -284,12 +297,17 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 
+<br>
+
+****
+
 |Log Information|Description|
 |---|---|
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
-|Mode=Enforce|The mode of the rule. Possible values are:  <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|Mode=Enforce|The mode of the rule. Possible values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li></ul>|
+|
 
 When a message matches a mail flow rule, a sample custom_data entry would look similar to the following:
 

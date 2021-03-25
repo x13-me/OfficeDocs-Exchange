@@ -25,7 +25,7 @@ For more information about transport rules in Exchange Server 2013, see [Transpo
 
 For more information about conditions and exceptions in transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
-For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/-exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Mail flow rule actions in Exchange Online](/-exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 ## Actions for transport rules on Mailbox servers
 
@@ -60,7 +60,7 @@ The actions that are available in transport rules on Mailbox servers are describ
 <p><strong>Forward the message for approval</strong> &gt; <strong>to these people</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">Common message approval scenarios</a>. You can't use a distribution group as a moderator.</p></td>
+<td><p>Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see <a href="/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">Common message approval scenarios</a>. You can't use a distribution group as a moderator.</p></td>
 <td><p>Exchange 2010 or later</p></td>
 </tr>
 <tr class="even">
