@@ -77,7 +77,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 #### Contact Information
 
-Use the **Contact information** section, to view or edit the user's contact information. The information on this page is displayed in the address book.
+Use the **Contact information** section, to view, or edit the user's contact information. The information on this page is displayed in the address book.
 
 - **Web site**
 - **Fax phone**
@@ -245,7 +245,7 @@ For detailed syntax and parameter information, see [New-MailContact](/powershell
 
 In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Get-Contact](/powershell/module/exchange/get-contact)
 - [Set-Contact](/powershell/module/exchange/set-contact)
@@ -282,7 +282,7 @@ To remove a mail contact, use the following syntax:
 Remove-MailContact -Identity <MailUserIdentity>
 ```
 
-This example remove the mail contact for Pilar Pinilla:
+This example removes the mail contact for Pilar Pinilla:
 
 ```powershell
 Remove-MailContact -Identity "Pilar Pinilla"
