@@ -18,7 +18,7 @@ manager: serdars
 
 # Change the assignment policy on a mailbox
 
-When you change a mailbox's assignment policy, the change takes effect as soon as the user refreshes the connection, such as the next time they log into their mailbox or open the mailbox options page. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](https://docs.microsoft.com/exchange/understanding-management-role-assignment-policies-exchange-2013-help).
+When you change a mailbox's assignment policy, the change takes effect as soon as the user refreshes the connection, such as the next time they log into their mailbox or open the mailbox options page. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](../../ExchangeServer2013/understanding-management-role-assignment-policies-exchange-2013-help.md).
 
 Looking for other management tasks related to permissions? Check out [Permissions](permissions.md).
 
@@ -64,11 +64,11 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Engineering Users"
 
 This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ parameter. For more information about these concepts, see the following topics:
 
-- [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
+- [about_Pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-- [Working with Command Output](https://docs.microsoft.com/exchange/working-with-command-output-exchange-2013-help)
+- [Working with Command Output](../../ExchangeServer2013/working-with-command-output-exchange-2013-help.md)
 
-- [WhatIf, Confirm, and ValidateOnly Switches](https://docs.microsoft.com/exchange/whatif-confirm-and-validateonly-switches-exchange-2013-help)
+- [WhatIf, Confirm, and ValidateOnly Switches](../../ExchangeServer2013/whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
 
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 
@@ -88,4 +88,4 @@ This example includes the _WhatIf_ parameter so that you can see all the mailbox
 Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) or [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](/powershell/module/exchange/get-mailbox) or [Set-Mailbox](/powershell/module/exchange/set-mailbox).

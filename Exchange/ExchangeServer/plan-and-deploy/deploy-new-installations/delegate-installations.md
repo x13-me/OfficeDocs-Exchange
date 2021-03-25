@@ -22,7 +22,7 @@ manager: serdars
 
 In large companies, people who install and configure new Windows servers often aren't Exchange administrators. In Exchange 2016 and Exchange 2019, these users can still install Exchange on Windows servers, but only _after_ an Exchange administrator *provisions* the Exchange server object in Active Directory. Provisioning an Exchange server object makes all of the required Active Directory changes independently of the actual installation of Exchange on a server. An Exchange administrator can provision a new Exchange server object hours or even days before Exchange is installed.
 
-After an Exchange administrator provisions the Exchange server object, the only requirement for installing Exchange on the server is membership in the [Delegated Setup](https://docs.microsoft.com/exchange/delegated-setup-exchange-2013-help) role group, which allows members to install Exchange on provisioned servers. If this sounds like something you want to do, then this topic is for you.
+After an Exchange administrator provisions the Exchange server object, the only requirement for installing Exchange on the server is membership in the [Delegated Setup](../../../ExchangeServer2013/delegated-setup-exchange-2013-help.md) role group, which allows members to install Exchange on provisioned servers. If this sounds like something you want to do, then this topic is for you.
 
 ## What do you need to know before you begin?
 
@@ -36,7 +36,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 - Download and use the latest available release of [Updates for Exchange Server](../../new-features/updates.md).
 
-- To provision an Exchange server object, you need to be a member of the [Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) role group.
+- To provision an Exchange server object, you need to be a member of the [Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md) role group.
 
 - You can provision the Exchange server object in Active Directory from the target server itself, or from another computer.
 

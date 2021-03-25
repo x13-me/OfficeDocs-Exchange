@@ -28,13 +28,13 @@ For more information about shared and split permissions, see [Split permissions 
 
 For more information about management role groups, management roles, and regular and delegating management role assignments, see the following topics:
 
-- [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)
+- [Understanding Role Based Access Control](../../../ExchangeServer2013/understanding-role-based-access-control-exchange-2013-help.md)
 
-- [Understanding management role groups](https://docs.microsoft.com/exchange/understanding-management-role-groups-exchange-2013-help)
+- [Understanding management role groups](../../../ExchangeServer2013/understanding-management-role-groups-exchange-2013-help.md)
 
-- [Understanding management roles](https://docs.microsoft.com/exchange/understanding-management-roles-exchange-2013-help)
+- [Understanding management roles](../../../ExchangeServer2013/understanding-management-roles-exchange-2013-help.md)
 
-- [Understanding management role assignments](https://docs.microsoft.com/exchange/understanding-management-role-assignments-exchange-2013-help)
+- [Understanding management role assignments](../../../ExchangeServer2013/understanding-management-role-assignments-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
@@ -46,7 +46,7 @@ For more information about management role groups, management roles, and regular
 
 - To download the latest version of Exchange, see [Updates for Exchange Server](../../new-features/updates.md).
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) forums.
@@ -169,17 +169,17 @@ To configure RBAC split permissions, do the following steps:
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://technet.microsoft.com/library/dd638181.aspx)
+- [New-RoleGroup](/powershell/module/exchange/new-rolegroup)
 
-- [New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193.aspx)
+- [New-ManagementRoleAssignment](/powershell/module/exchange/new-managementroleassignment)
 
-- [Add-RoleGroupMember](https://technet.microsoft.com/library/dd638207.aspx)
+- [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-- [Set-RoleGroup](https://technet.microsoft.com/library/dd638182.aspx)
+- [Set-RoleGroup](/powershell/module/exchange/set-rolegroup)
 
-- [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024.aspx)
+- [Get-ManagementRoleAssignment](/powershell/module/exchange/get-managementroleassignment)
 
-- [Remove-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351205.aspx)
+- [Remove-ManagementRoleAssignment](/powershell/module/exchange/remove-managementroleassignment)
 
 ## Switch to Active Directory split permissions
 

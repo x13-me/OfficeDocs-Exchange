@@ -28,7 +28,7 @@ When you export entries from mailbox audit logs, Exchange Online saves the entri
 
 - Estimated time to complete each procedure: varies. The mailbox audit log is sent within a few days after you export it.
 
-- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
 
 - If you're going to use Outlook on the web (formerly known as Outlook Web App) to view the exported entries, you need to enable .xml attachments in Outlook on the web. For details, see [Configure Outlook on the web to allow XML attachments](exchange-auditing-reports.md#configure-outlook-on-the-web-to-allow-xml-attachments).
 

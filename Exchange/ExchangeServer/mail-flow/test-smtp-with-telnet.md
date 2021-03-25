@@ -50,7 +50,7 @@ You can use Telnet to test SMTP communication to:
 
 ## Step 1: Install the Telnet Client on your computer
 
-On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
+On most versions of Windows, you'll need to install the Telnet client before you can use it. To install it, see [Install Telnet Client](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
 ## Step 2: Find the FQDN or IP address of the destination SMTP server
 

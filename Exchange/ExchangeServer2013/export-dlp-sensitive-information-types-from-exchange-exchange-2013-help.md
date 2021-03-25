@@ -23,7 +23,7 @@ For additional management tasks related to DLP, see [Manage DLP policies](manage
 
 - Estimated time to complete: 15 minutes
 
-- The EAC doesn't provide a way to export DLP policies or templates to an external file. To use the Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- The EAC doesn't provide a way to export DLP policies or templates to an external file. To use the Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 

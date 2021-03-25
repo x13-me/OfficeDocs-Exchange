@@ -59,7 +59,7 @@ Ultimately, you need to decide on the approach that best fits the needs of your 
 
 - Estimated time to complete this task: 10 minutes.
 
-- Some of these procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- Some of these procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
@@ -202,7 +202,7 @@ To verify that you've successfully configured anonymous relay, do the following 
   Get-ADPermission "Anonymous Relay" -User "MS Exchange\Externally Secured Servers" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 
-- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
+- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
   For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
 
