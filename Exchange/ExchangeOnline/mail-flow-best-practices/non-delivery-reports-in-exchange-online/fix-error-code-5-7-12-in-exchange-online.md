@@ -46,23 +46,25 @@ Open the EAC and use one of the following procedures based on the recipient type
 
     - **New EAC**
     
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it.
+   1. Navigate to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it. The mailbox properties dialog box opens.
    
-   2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+   2. Under **Mail flow settings**, click **Manage mail flow settings**.
     
-   3. In the **Manage mail flow settings**, click **Edit** next to **Message delivery restriction**.
+   3. In the ****Message delivery restriction** pane, click **Edit**. The **message delivery restrictions** screen appears.
     
-   4. In the **message delivery restrictions** screen, clear the check box for **Check if all senders are authenticated** and choose the **All senders** radio button.
+   4. Clear the check box for **Check if all senders are authenticated** and choose the **All senders** radio button.
     
    5. Click **Save**.
    
    - **Classic EAC**
 
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Mailboxes**.
+   . 
+   2. Select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties dialog box opens.
 
-   2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+   3. Navigate to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **Message delivery restrictions** dialog box opens.
 
-   3. In the **Message delivery restrictions** dialog box that opens, clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
+   4. Clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
 
    4. Click **OK**, and then click **Save**.
 
@@ -70,19 +72,21 @@ Open the EAC and use one of the following procedures based on the recipient type
 
     - **New EAC**
    
-   1. Go to **Recipients** \> **Groups** \>, select the group from the list and click it.
+   1. Navigate to **Recipients** \> **Groups** \>.
     
-   2. In the group properties dialog box that opens, click the **Settings** tab.
+   2. Select the group from the list and click it. The group properties dialog box opens.
+       
+   3. Click the **Settings** tab. The group settings dialog box opens.
     
-   3. In the group settings dialog box that opens, click **Edit delivery management** under the **Delivery management** pane. 
+   3. Under the **Delivery management** pane, click **Edit delivery management**. The **Delivery management** screen appears.
     
-   4. In the **Delivery management** screen, choose the radio button for **Allow messages from people inside and outside my organization.
+   4. Choose the radio button for **Allow messages from people inside and outside my organization**.
    
    5. Click **Save changes**.
     
     - **Classic EAC**
 
-   1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    2. In the group properties dialog box that opens, go to **Delivery management** \> select **Senders inside and outside of my organization**.
 
@@ -93,11 +97,11 @@ Open the EAC and use one of the following procedures based on the recipient type
 > [!IMPORTANT]
 > The feature of editing mail flow settings for a mail user is available only for Classic EAC, currently.
 
-   1. Go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mail user properties dialog box opens.
 
-   2. In the mail user properties dialog box that opens, go to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+   2. Navigate to **Mailbox flow settings** \> **Message Delivery Restrictions** and click **View details**. The **Message delivery restrictions** dialog box opens.
 
-   3. In the **Message delivery restrictions** dialog box that opens, clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
+   3. Clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
 
    4. Click **OK**, and then click **Save**.
 
@@ -105,23 +109,25 @@ Open the EAC and use one of the following procedures based on the recipient type
 
     - **New EAC**
     
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it.
+   1. Navigate to **Recipients** \> **Mailboxes**.
+    
+   2. Select a mailbox from the list and click it. The mailbox properties dialog box opens.
    
-   2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+   2. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box opens.
     
-   3. In the **Manage mail flow settings**, click **Edit** next to **Message delivery restriction**.
+   3. In the **Message delivery restriction** pane, click **Edit**. The **message delivery restrictions** screen appears.
     
-   4. In the **message delivery restrictions** screen, clear the check box for **Check if all senders are authenticated** and choose the **All senders** radio button.
+   4. Clear the check box for **Check if all senders are authenticated** and choose the **All senders** radio button.
     
    5. Click **Save**.
  
     - **Classic EAC**
 
-   1. Go to **Recipients** \> **Shared** \> select the shared mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Shared** \> select the shared mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The shared mailbox properties dialog box opens.
 
-   2. In the shared mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+   2. Navigate to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **Message delivery restrictions** screen appears.
 
-   3. In the **Message delivery restrictions** dialog box that opens, clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
+   3. Clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
 
    4. Click **OK**, and then click **Save**.
 
@@ -143,30 +149,37 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
 - **New EAC**
    
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it.
+   1. Navigate to **Recipients** \> **Mailboxes**.
+    
+   2. Select the mailbox from the list and click it. The mailbox properties screen appears.
    
-   2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+   3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
     
-   3. In the **Manage mail flow settings**, click **Edit** next to **Message delivery restriction**.
+   3. Click **Edit** next to **Message delivery restriction**. The **message delivery restrictions** screen appears.
     
-   4. In the **message delivery restrictions** screen, configure the following settings under the **Accept messages from** section:
+   4. Configure the following settings under the **Accept messages from** section:
    
        - Clear the check box for **Check if all senders are authenticated**.
        - Choose the radio button for **Selected senders**.
-       - Click **+ Add sender**
+       - Click **+ Add sender**.
+       
        :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set":::
+
        - In the **Accept messages from** screen, select and add the external senders and the all internal users group.
+       
        :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen":::
     
    5. When you're finished, click **Confirm**.
 
     - **Classic EAC**
 
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Mailboxes**.
+    
+   2. Select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties screen appears.
 
-   2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+   2. Navigate to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **Message delivery restrictions** screen appears.
 
-   3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+   3. Configure the following settings in the **Accept messages from** section:
 
       - Clear the check box for **Require that all senders are authenticated**.
 
@@ -180,23 +193,27 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
     -**New EAC**
 
-   1. Go to **Recipients** \> **Groups** \>, select the group from the list and click it.
+   1. Navigate to **Recipients** \> **Groups** \>.
     
-   2. In the group properties dialog box that opens, click the **Settings** tab.
+   2. Select the group from the list and click it. The group properties screen appears.
     
-   3. In the group settings dialog box that opens, click **Edit delivery management** under the **Delivery management** pane. 
+   3. Click the **Settings** tab. The group settings screen appears.
     
-   4. In the **Delivery management** screen, choose the radio button for **Allow messages from people inside and outside my organization**.
+   4. In the **Delivery management** pane, click **Edit delivery management**. The **Delivery management** screen appears.
+    
+   5. Choose the radio button for **Allow messages from people inside and outside my organization**.
    
-   5. Under **Specific senders**, select and add the external senders and the all internal users group from the text box.
+   6. Under **Specific senders**, select and add the external senders and the all internal users group from the text box.
     
-   6.  When you're finished, click **Save changes**.
+   7.  When you're finished, click **Save changes**.
 
     - **Classic EAC**
 
-   1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Groups**.
+   
+   2. Select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The group properties screen appears.
 
-   2. In the group properties dialog box that opens, go to **Delivery management** and configure the following settings:
+   3. Go to **Delivery management** and configure the following settings:
 
       - Select **Senders inside and outside of my organization**.
 
@@ -209,11 +226,13 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 > [!IMPORTANT]
 > The feature of editing mail flow settings for a mail user is available only for Classic EAC, currently.
 
-   1. Go to **Recipients** \> **Contacts** > select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Contacts**.
+    
+   2. Select a mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mail user properties screen appears.
 
-   2. In the mail user properties dialog box that opens, go to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section.
+   3. Navigate to **Mailbox flow settings** and then click **View details** in the **Message Delivery Restrictions** section. The **Message delivery restrictions** screen appears.
 
-   3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+   4. Configure the following settings in the **Accept messages from** section:
 
       - Clear the check box for **Require that all senders are authenticated**.
 
@@ -225,33 +244,38 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
     - **New EAC**
     
-   1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it.
+   1. Navigate to **Recipients** \> **Mailboxes**.
+    
+   2. Select the mailbox from the list and click it. The mailbox properties screen appears.
    
-   2. In the mailbox properties dialog box that opens, under **Mail flow settings**, click **Manage mail flow settings**.
+   3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
     
-   3. In the **Manage mail flow settings**, click **Edit** next to **Message delivery restriction**.
+   4. Click **Edit** next to **Message delivery restriction**. The **message delivery restrictions** screen appears.
     
-   4. In the **message delivery restrictions** screen, configure the following settings under the **Accept messages from** section:
+   5. Configure the following settings under the **Accept messages from** section:
+   
     - Clear the check box for **Check if all senders are authenticated**.
     - Choose the radio button for **Selected senders**.
     - Click **+ Add sender**
     - In the **Accept messages from** screen, select and add the external senders and the all internal users group. 
     
-   5. When you're finished, click **Confirm**.
+   6. When you're finished, click **Confirm**.
     
     - **Classic EAC**
 
-   1. Go to **Recipients** \> **Shared** \> select the shared mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+   1. Navigate to **Recipients** \> **Shared**.
+    
+   2. Select the shared mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The shared mailbox properties screen appears.
 
-   2. In the shared mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+   3. Navigate to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **Message delivery restrictions** screen appears.
 
-   3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+   4. Configure the following settings in the **Accept messages from** section:
 
       - Clear the check box for **Require that all senders are authenticated**.
 
       - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
 
-   4. Click **OK**, and then click **Save**.
+   5. Click **OK**, and then click **Save**.
 
 ## Still need help with error code 550 5.7.12?
 
