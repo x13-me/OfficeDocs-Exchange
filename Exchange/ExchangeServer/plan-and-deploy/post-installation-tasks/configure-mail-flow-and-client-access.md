@@ -35,12 +35,12 @@ For additional management tasks related to mail flow and clients and devices, se
 
 - You might receive certificate warnings when you connect to the Exchange admin center (EAC) website until you configure a secure sockets layer (SSL) certificate on the Mailbox server. You'll be shown how to do this later in this topic.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create an internet Send connector
 
@@ -158,9 +158,9 @@ Before clients can connect to your new server from your internal network, you ne
 
 The procedure below lets you choose whether you want users to use the same URL on your intranet and on the internet to access your Exchange server or whether they should use a different URL. What you choose depends on the addressing scheme you have in place already or that you want to implement. If you're implementing a new addressing scheme, we recommend that you use the same URL for both internal and external URLs. Using the same URL makes it easier for users to access your Exchange server because they only have to remember one address.
 
-Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794771(v=ws.10)).
+Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794771(v=ws.10)).
 
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](../../../ExchangeServer2013/virtual-directory-management-exchange-2013-help.md).
 
 ### Configure internal and external URLs to be the same
 

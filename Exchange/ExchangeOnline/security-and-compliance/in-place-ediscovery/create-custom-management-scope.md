@@ -26,9 +26,9 @@ For In-Place eDiscovery, the only property on a user mailbox that you can use to
 
 To learn more about management scopes, see:
 
-- [Understanding management role scopes](https://docs.microsoft.com/exchange/understanding-management-role-scopes-exchange-2013-help)
+- [Understanding management role scopes](../../../ExchangeServer2013/understanding-management-role-scopes-exchange-2013-help.md)
 
-- [Understanding management role scope filters](https://docs.microsoft.com/exchange/understanding-management-role-scope-filters-exchange-2013-help)
+- [Understanding management role scope filters](../../../ExchangeServer2013/understanding-management-role-scope-filters-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
@@ -201,4 +201,4 @@ Here are some ways to verify if you've successfully implemented custom managemen
 
 - In Exchange Online, a custom management scope used for eDiscovery can't be used to search inactive mailboxes. This is because an inactive mailbox can't be a member of a distribution group. For example, let's say that a user is a member of a distribution group that was used to create a custom management scope for eDiscovery. Then that user leaves the organization and their mailbox is made inactive (by placing a Litigation Hold or In-Place hold on the mailbox and then deleting the corresponding user account). The result is that the user is removed as a member from any distribution group, including the group that was used to create the custom management scope used for eDiscovery. If a discovery manager (who is a member of the role group that's assigned the custom management scope) tries to search the inactive mailbox, the search will fail. To search inactive mailboxes, a discover manager must be a member of the Discovery Management role group or any role group that has permissions to search the entire organization.
 
-  For more information about inactive mailboxes, see [Create and manage inactive mailboxes](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+  For more information about inactive mailboxes, see [Create and manage inactive mailboxes](/microsoft-365/compliance/create-and-manage-inactive-mailboxes).

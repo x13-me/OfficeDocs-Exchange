@@ -77,4 +77,4 @@ Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
 
 ## For more information
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/set-addressbookpolicy).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](/powershell/module/exchange/set-addressbookpolicy).

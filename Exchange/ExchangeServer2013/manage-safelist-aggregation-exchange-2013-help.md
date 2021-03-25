@@ -74,7 +74,7 @@ This example writes the safe senders list for the mailbox john@contoso.com to Ac
 Update-Safelist john@contoso.com -Type SafeSenders
 ```
 
-For detailed syntax and parameter information, see [Update-SafeList](https://docs.microsoft.com/powershell/module/exchange/Update-SafeList).
+For detailed syntax and parameter information, see [Update-SafeList](/powershell/module/exchange/Update-SafeList).
 
 ## How do you know this worked?
 

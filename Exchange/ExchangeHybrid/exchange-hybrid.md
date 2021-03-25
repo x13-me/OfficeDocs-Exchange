@@ -47,7 +47,7 @@ A hybrid deployment enables the following features:
 
 - Message tracking, MailTips, and multi-mailbox search between on-premises and Exchange Online organizations.
 
-- Cloud-based message archiving for on-premises Exchange mailboxes. Exchange Online Archiving can be used with a hybrid deployment. Learn more about Exchange Online Archiving at [Archive Features in Exchange Online Archiving](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features).
+- Cloud-based message archiving for on-premises Exchange mailboxes. Exchange Online Archiving can be used with a hybrid deployment. Learn more about Exchange Online Archiving at [Archive Features in Exchange Online Archiving](/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features).
 
 ## Exchange hybrid deployment considerations
 
@@ -63,7 +63,7 @@ Consider the following before you implement an Exchange hybrid deployment:
 
 - **Offboarding**: As part of ongoing recipient management, you might have to move Exchange Online mailboxes back to your on-premises environment.
 
- For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](https://docs.microsoft.com/previous-versions/exchange-server/exchange-141/hh882527(v=exchg.141)).
+ For more information about how to move mailboxes in an Exchange 2010-based hybrid deployment, see [Move an Exchange Online mailbox to the on-premises organization](/previous-versions/exchange-server/exchange-141/hh882527(v=exchg.141)).
 
    For more information about how to move mailboxes in hybrid deployments based on Exchange 2013 or newer, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](hybrid-deployment/move-mailboxes.md).
 
@@ -78,6 +78,9 @@ A hybrid deployment involves several different services and components:
    > [!NOTE]
    > We don't support the installation of Exchange servers running the Mailbox or Client Access server roles in a perimeter network.
 
+   > [!IMPORTANT]
+   > We recommend using the Exchange Server with the latest CU and SU for configuring Hybrid.
+
 - **Office 365 or Microsoft 365**: Several Office 365 and Microsoft 365 service subscriptions include an Exchange Online organization. Organizations configuring a hybrid deployment need to purchase a license for each mailbox that's migrated to or created in the Exchange Online organization.
 
 - **Hybrid Configuration wizard**: Exchange includes the Hybrid Configuration wizard which provides you with a streamlined process to configure a hybrid deployment between on-premises Exchange and Exchange Online organizations.
@@ -86,11 +89,11 @@ A hybrid deployment involves several different services and components:
 
 - **Azure AD authentication system**: The Azure Active Directory (AD) authentication system is a free cloud-based service that acts as the trust broker between your on-premises Exchange 2016 organization and the Exchange Online organization. On-premises organizations configuring a hybrid deployment must have a federation trust with the Azure AD authentication system. The federation trust can either be created manually as part of configuring federated sharing features between an on-premises Exchange organization and other federated Exchange organizations or as part of configuring a hybrid deployment with the Hybrid Configuration wizard. A federation trust with the Azure AD authentication system for your Exchange Online tenant is automatically configured when you activate your Microsoft 365 or Office 365 service account.
 
-   Learn more at: [What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).
+   Learn more at: [What is Azure AD Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 
 - **Azure Active Directory synchronization**: Azure AD synchronization uses Azure AD Connect to replicate on-premises Active Directory information for mail-enabled objects to the cloud to support the unified global address list (GAL) and user authentication. Organizations configuring a hybrid deployment need to deploy Azure AD Connect on a separate, on-premises server to synchronize your on-premises Active Directory with Microsoft 365 or Office 365.
 
-   Learn more at: [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+   Learn more at: [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
 ## Hybrid deployment example
 
@@ -133,7 +136,7 @@ Now that you're a little more familiar with what a hybrid deployment is, you nee
 Active Directory synchronization between the on-premises organization and the cloud, which is performed every 30 minutes by a server running Azure Active Directory Connect, is a requirement for configuring a hybrid deployment. Directory synchronization enables recipients in either organization to see each other in the global address list. It also synchronizes usernames and passwords which enables users to log in with the same credentials in both your on-premises organization and in Microsoft 365 or Office 365.
 
 > [!NOTE]
-> If you choose to configure Azure AD Connect with AD FS, usernames and passwords of on-premises users will still be synchronized to the cloud by default. However, users will authenticate with your on-premises Active Directory via AD FS as their primary method of authentication. If you wish to configure AD FS to fall back and authenticate against usernames and passwords that you have synchronized to the cloud in the event AD FS can't connect to your on-premises Active Directory, see [Setting up PHS as backup for AD FS in Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tutorial-phs-backup).
+> If you choose to configure Azure AD Connect with AD FS, usernames and passwords of on-premises users will still be synchronized to the cloud by default. However, users will authenticate with your on-premises Active Directory via AD FS as their primary method of authentication. If you wish to configure AD FS to fall back and authenticate against usernames and passwords that you have synchronized to the cloud in the event AD FS can't connect to your on-premises Active Directory, see [Setting up PHS as backup for AD FS in Azure AD Connect](/azure/active-directory/hybrid/tutorial-phs-backup).
 
 All customers of Azure Active Directory and Microsoft 365 or Office 365 have a default limit of 50,000 objects (users, mail-enabled contacts, and groups) that determines how many objects you can create in your Microsoft 365 or Office 365 organization. After you verify your first domain, this limit is automatically increased to 500,000 objects for Azure Active Directory Free, or an unlimited number of objects for Azure Active Directory Basic or Premium. For more information, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -161,7 +164,7 @@ Before moving mailboxes to the cloud, you should:
 
 - Calculate the average expected transfer speed, and plan your mailbox moves accordingly.
 
-Learn more at: [Networking](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/networking).
+Learn more at: [Networking](/office365/servicedescriptions/office-365-platform-service-description/networking).
 
 ### Unified Messaging
 
@@ -184,7 +187,7 @@ Learn more at: [IRM in Exchange hybrid deployments](irm.md)
 
 Mobile devices are supported in a hybrid deployment. If Exchange ActiveSync is already enabled on your existing servers, they'll continue to redirect requests from mobile devices to mailboxes located on the on-premises Mailbox server. For mobile devices connecting to existing mailboxes that are moved from the on-premises organization to the cloud, Exchange ActiveSync profiles will automatically be updated to connect to the cloud on most phones. All mobile devices that support Exchange ActiveSync should be compatible with a hybrid deployment.
 
-Learn more at: [Exchange ActiveSync](https://docs.microsoft.com/Exchange/clients/exchange-activesync/exchange-activesync).
+Learn more at: [Exchange ActiveSync](../ExchangeServer/clients/exchange-activesync/exchange-activesync.md).
 
 ### Client requirements
 
@@ -198,17 +201,17 @@ To create mailboxes in, or move mailboxes to, Microsoft 365 or Office 365, you n
 
 Mailboxes moved to the cloud are automatically provided with antivirus and anti-spam protection by Exchange Online Protection (EOP), a service provided by Microsoft 365 and Office 365. You may need to purchase additional EOP licenses for your on-premises users if you chose to route all incoming Internet mail through the EOP service. We recommend that you carefully evaluate whether the EOP protection in your Microsoft 365 or Office 365 is also appropriate to meet the antivirus and anti-spam needs of your on-premises organization. If you have protection in place for your on-premises organization, you may need to upgrade or configure your on-premises antivirus and anti-spam solutions for maximum protection across your organization.
 
-Learn more at: [Anti-spam and anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+Learn more at: [Anti-spam and anti-malware protection in EOP](/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ### Public folders
 
 Public folders are supported in the cloud and on-premises public folders can be migrated to the cloud. Additionally, public folders in the cloud can be moved to the on-premises Exchange organization. Both on-premises and cloud users can access public folders located in either organization using Outlook on the web, Outlook 2016, Outlook 2013, or Outlook 2010 SP2 or newer. Existing on-premises public folder configuration and access for on-premises mailboxes doesn't change when you configure a hybrid deployment.
 
-Learn more at: [Public folders](https://docs.microsoft.com/Exchange/collaboration/public-folders/public-folders).
+Learn more at: [Public folders](../ExchangeServer/collaboration/public-folders/public-folders.md).
 
 ### Accessibility
 
-For information about keyboard shortcuts that may apply to the procedures in this checklist, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+For information about keyboard shortcuts that may apply to the procedures in this checklist, see [Keyboard shortcuts for the Exchange admin center](../ExchangeOnline/accessibility/keyboard-shortcuts-in-admin-center.md).
 
 ## Key terminology
 

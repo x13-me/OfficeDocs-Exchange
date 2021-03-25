@@ -45,7 +45,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
     > [!IMPORTANT]
     > Configuring the requirements for a hybrid deployment will take considerably longer than the estimated time to complete the Hybrid Configuration wizard procedures outlined in this topic. For example, signing up for Microsoft 365 or Office 365 for enterprises, configuring Active Directory synchronization, and assigning Exchange Online licenses require a larger time investment and may also include network topology changes. You should plan for more than the time listed to complete this procedure for the overall time to complete the end-to-end hybrid deployment configuration.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/infrastructure-permissions) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](../../ExchangeServer/permissions/feature-permissions/infrastructure-permissions.md) topic.
 
 - You need to run the Hybrid Configuration Wizard from a computer running the latest release of a supported version of on-premises Exchange, or from any domain-joined server or workstation capable of establishing remote PowerShell connections to the Client Access Server or Mailbox Server chosen for hybrid configuration. 
 
@@ -57,10 +57,10 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 
 - The Microsoft Remote Connectivity Analyzer tool checks the external connectivity of your on-premises Exchange organization and makes sure that you're ready to configure your hybrid deployment. We strongly recommend that you check your on-premises organization with the Remote Connectivity Analyzer tool prior to configuring your hybrid deployment with the Hybrid Configuration wizard. Learn more at [Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../ExchangeOnline/accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center and Hybrid Configuration Wizard to create a full classic hybrid deployment
 
@@ -84,7 +84,7 @@ Use the following procedure to create and configure a hybrid deployment:
 
 9. On the **Hybrid Features** page, select **Full Hybrid Configuration** and then click **Next**. On this page, you can also select **Organization Configuration Transfer** if you want to perform a one-time transfer of organization objects from your on-premises environment to Exchange Online. For more information, see [Hybrid Organization Configuration Transfer V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-hybrid-organization-configuration-transfer-v2/ba-p/608762).
 
-10. On the **Hybrid Domains** page, select the domains you want to include in your hybrid deployment. In most deployments, you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain. Click **Next**.
+10. On the **Hybrid Domains** page, select the domains you want to include in your hybrid deployment. In most deployments, you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain for all selected hybrid domains. Click **Next**.
 
     > [!IMPORTANT]
     > This domain selection step of the Hybrid Configuration wizard may or may not appear when you run the wizard. This step won't appear if:
@@ -115,19 +115,19 @@ Use the following procedure to create and configure a hybrid deployment:
 18. The wizard displays a completion message and the **Close** button is displayed. Click **Close** to complete the hybrid deployment configuration process and to close the wizard.
 
 > [!NOTE]
-> For more information on the different Hybrid Configuration Wizard options, see [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](https://docs.microsoft.com/exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate), [Microsoft Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent), and [Hybrid Configuration Wizard options](https://docs.microsoft.com/exchange/hybrid-configuration-wizard-options).
+> For more information on the different Hybrid Configuration Wizard options, see [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](../../ExchangeOnline/mailbox-migration/use-minimal-hybrid-to-quickly-migrate.md), [Microsoft Hybrid Agent](./hybrid-agent.md), and [Hybrid Configuration Wizard options](../hybrid-configuration-wizard-options.md).
 
 ## Configure OAuth authentication between Exchange and Exchange Online organizations
 
 For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Microsoft 365 or Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration Wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features such as Message Records Management (MRM), Exchange In-place Archiving, and In-place eDiscovery are only fully available across your organization by using the new Exchange OAuth authentication protocol. We recommend that all mixed Exchange 2013/2010 and Exchange 2013/2007 organizations that wish to implement these features as part of a new hybrid deployment with Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
-For detailed configuration steps, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
+For detailed configuration steps, see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](../../ExchangeServer2013/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md)
 
 For more information about Exchange security and compliance features that use OAuth authentication, see:
 
-- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help)
+- [Using OAuth authentication to support Archiving in an Exchange hybrid deployment](../../ExchangeServer2013/using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md)
 
-- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](https://docs.microsoft.com/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help)
+- [Using Oauth Authentication to Support eDiscovery in an Exchange Hybrid Deployment](../../ExchangeServer2013/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md)
 
 ## How do you know this worked?
 
