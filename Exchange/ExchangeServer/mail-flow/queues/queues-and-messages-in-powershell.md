@@ -98,7 +98,7 @@ The **Get-QueueDigest** cmdlet allows you to view information about some or all 
 Note that queues on a subscribed Edge Transport server aren't included in the results. Also, **Get-QueueDigest** is available on an Edge Transport server, but the results are restricted to local queues on the Edge Transport server.
 
 > [!NOTE]
-> By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](https://docs.microsoft.com/exchange/configure-get-queuedigest-exchange-2013-help).
+> By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](../../../ExchangeServer2013/configure-get-queuedigest-exchange-2013-help.md).
 
 The following table describes the filtering and sorting parameters that are available on the **Get-QueueDigest** cmdlet.
 

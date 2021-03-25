@@ -42,7 +42,7 @@ Before you start, make sure that you've done the following:
 
 - Configured single sign-on using Azure Active Directory Connect (Azure AD Connect). This is needed to allow users to click on the **View group files** or cloud attachment links in group email messages.
 
-  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Microsoft 365 or Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Choose a solution for integrating on-premises Active Directory with Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/).
+  When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Microsoft 365 or Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Choose a solution for integrating on-premises Active Directory with Azure](/azure/architecture/reference-architectures/identity/).
 
 ## Enable Group writeback in Azure AD Connect
 
@@ -62,7 +62,7 @@ Before you start, make sure that you've done the following:
 
 8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
 
-9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
 
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 
@@ -74,9 +74,9 @@ Before you start, make sure that you've done the following:
 
 ## Configure a group domain
 
-The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
+The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
-1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Microsoft 365 or Office 365, check out [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Microsoft 365 or Office 365, check out [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Microsoft 365 or Office 365.
 
@@ -91,7 +91,7 @@ The primary SMTP domain of a Microsoft 365 or Office 365 group is called a group
    |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1</sup>|
    |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-   <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   <sup>1</sup> The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create DNS records](/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    > [!CAUTION]
    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Microsoft 365 group.
@@ -159,4 +159,4 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as a Microsoft 365 group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
-- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to the Microsoft 365 or Office 365 AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to the Microsoft 365 or Office 365 AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to that AutoDiscover URL. Check out [Choose the domain to use when creating Microsoft 365 groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.
+- **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to the Microsoft 365 or Office 365 AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix the issue, groups can be provisioned with a primary address in a domain that points to the Microsoft 365 or Office 365 AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to that AutoDiscover URL. Check out [Choose the domain to use when creating Microsoft 365 groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.

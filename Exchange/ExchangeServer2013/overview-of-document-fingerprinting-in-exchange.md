@@ -17,11 +17,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Information workers in your organization handle many kinds of sensitive information during a typical day. *Document Fingerprinting* makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting. If you'd like to learn how to create a document fingerprint, see [Protect form data with document fingerprinting](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting).
+Information workers in your organization handle many kinds of sensitive information during a typical day. *Document Fingerprinting* makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting. If you'd like to learn how to create a document fingerprint, see [Protect form data with document fingerprinting](/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting).
 
 ## Basic scenario for Document Fingerprinting
 
-Document Fingerprinting is a Data Loss Prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use to define transport rules and DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [Policy Tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) to notify senders that they might be sending sensitive information, and the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
+Document Fingerprinting is a Data Loss Prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use to define transport rules and DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [Policy Tips](../ExchangeOnline/security-and-compliance/data-loss-prevention/policy-tips.md) to notify senders that they might be sending sensitive information, and the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
 
   - Government forms
 
@@ -61,8 +61,8 @@ The Document Fingerprinting DLP agent won't detect sensitive information in the 
 
 ## For more information
 
-[Protect form data with document fingerprinting](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting)
+[Protect form data with document fingerprinting](/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting)
 
-[Integrating sensitive information rules with transport rules](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
+[Integrating sensitive information rules with transport rules](../ExchangeOnline/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules.md)
 
 [DLP procedures](dlp-procedures-exchange-2013-help.md)

@@ -202,7 +202,7 @@ The following example creates a new English-language Policy Tip that will block 
 New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain restricted content and will not be delivered."
 ```
 
-For detailed syntax and parameter information, see [New-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/new-policytipconfig).
+For detailed syntax and parameter information, see [New-PolicyTipConfig](/powershell/module/exchange/new-policytipconfig).
 
 ### Use the Shell to modify custom Policy Tip notification text
 
@@ -212,7 +212,7 @@ The following example modifies an existing English-language, notify-only Policy 
 Set-PolicyTipConfig en\NotifyOnly "Sending bank account numbers in email is not recommended."
 ```
 
-For detailed syntax and parameter information, see [Set-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/set-policytipconfig).
+For detailed syntax and parameter information, see [Set-PolicyTipConfig](/powershell/module/exchange/set-policytipconfig).
 
 ### How do you know this worked?
 
@@ -234,4 +234,4 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Exchange 2010 MailTips](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd297974(v=exchg.141))
+[Exchange 2010 MailTips](/previous-versions/office/exchange-server-2010/dd297974(v=exchg.141))

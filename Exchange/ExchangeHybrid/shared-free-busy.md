@@ -28,15 +28,15 @@ Several components in a hybrid deployment are required to enable the shared free
 
     A federation trust with the system is automatically configured for your Microsoft 365 or Office 365 service organization when the account is created. The Hybrid Configuration wizard automatically checks to see if there is an existing federation trust with the Azure AD authentication system for the on-premises organization. If present, the existing federation trust is used to support the hybrid deployment. If not present, the wizard creates a federation trust for the on-premises organization with the Azure AD authentication system. The wizard also adds any domains selected within the Hybrid Configuration wizard to the on-premises organization federation trust.
 
-    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+    Learn more at [Sharing](../ExchangeServer2013/sharing-exchange-2013-help.md).
 
 - **Organization relationships**: Organization relationships are needed for both the on-premises and Exchange Online organization and are configured automatically by the Hybrid Configuration wizard. An organization relationship defines the level of free/busy information shared for an organization.
 
     By default, the free/busy data access sharing level is **Free/busy access with time, plus subject and location** for both the on-premises and Exchange Online organization relationships. If you want to modify the free/busy sharing access between your on-premises and Exchange Online organization users, you can manually configure the organization relationship access level after the Hybrid Configuration wizard has completed.
 
-    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+    Learn more at [Sharing](../ExchangeServer2013/sharing-exchange-2013-help.md).
 
-When configuring your organization for a hybrid deployment, configuring shared free/busy calendar access is automatically configured by the Hybrid Configuration wizard in all scenarios. Creating a federation trust with the Azure AD authentication system and configuring organization relationships for the on-premises and Exchange Online organization are hybrid deployment requirements. If you don't want to allow free/busy sharing between your on-premises and Exchange Online organization users in the hybrid deployment, you can manually disable free/busy sharing by using the Exchange Management Shell and the [Set-HybridConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-hybridconfiguration) cmdlet after the Hybrid Configuration wizard has completed.
+When configuring your organization for a hybrid deployment, configuring shared free/busy calendar access is automatically configured by the Hybrid Configuration wizard in all scenarios. Creating a federation trust with the Azure AD authentication system and configuring organization relationships for the on-premises and Exchange Online organization are hybrid deployment requirements. If you don't want to allow free/busy sharing between your on-premises and Exchange Online organization users in the hybrid deployment, you can manually disable free/busy sharing by using the Exchange Management Shell and the [Set-HybridConfiguration](/powershell/module/exchange/set-hybridconfiguration) cmdlet after the Hybrid Configuration wizard has completed.
 
 The hybrid deployment features shown in the following table have a dependency on federation trusts and organization relationships.
 

@@ -20,8 +20,8 @@ manager: serdars
 
 # Enable message encryption and decryption
 
-Microsoft 365 and Office 365 Message Encryption lets email users send encrypted messages to people inside or outside their organization. For information, see [Set up new Message Encryption capabilities](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities). To learn how to create mail flow rules (also known as transport rules) for encryption, see [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
+Microsoft 365 and Office 365 Message Encryption lets email users send encrypted messages to people inside or outside their organization. For information, see [Set up new Message Encryption capabilities](/microsoft-365/compliance/set-up-new-message-encryption-capabilities). To learn how to create mail flow rules (also known as transport rules) for encryption, see [Define rules to encrypt email messages](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ## See also
 
-[Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption)
+[Encryption](/microsoft-365/compliance/encryption)
