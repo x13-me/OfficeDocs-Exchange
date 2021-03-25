@@ -105,13 +105,11 @@ If you decide that you don't need to restrict the message senders to this group,
 
 5. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
 
-:::image type="content" source="../../media/delivery-management-dialog-box.png" alt-text="The delivery management screen":::
-
 6. Under **Sender options** pane, choose **Allow messages from people inside and outside my organization**.
 
 :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
 
-7. Click on the text box. The list of senders to choose are displayed.
+7. Under **Specified senders**, click on the text box. The list of senders to choose are displayed.
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
