@@ -396,7 +396,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 When the migration batch has reached the state of **Synced**, it needs to be completed by running the `Complete-MigrationBatch` cmdlet.
 
-During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, the forwarding address that routes mail from O365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to O365 is added.
+During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, the forwarding address that routes mail from Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Office 365 is added.
 
 > [!NOTE]
 > Forwarding addresses are not needed when doing a cutover migration from Google Workspace to Exchange Online.
