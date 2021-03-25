@@ -96,7 +96,7 @@ The new remote domain is created and added to the list.
     
 **Classic EAC**
 
-1. In the Classic EAC, go to **Mail flow** \> **Remote domains**.
+1. Navigate to **Mail flow** \> **Remote domains**.
 
 2. To create a new domain:
 
