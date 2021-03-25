@@ -132,7 +132,7 @@ Use the **Organization** section, to record detailed information about the user'
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
+2. In the list of contacts, select the mail user that you want to modify, and then click **Edit** ![Edit tooltip](../media/ITPro_EAC_AddIcon.png).
 
 3. On the mail user properties page that opens, click one of the following tabs to view or change properties.
 
