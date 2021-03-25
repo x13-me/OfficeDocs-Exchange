@@ -42,7 +42,67 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 ## Use the Exchange admin center to manage mail users
 
-### Use the EAC to create mail users
+### Use the new EAC to create mail users
+
+1. In the EAC, go to **Recipients** \> **Contacts**
+
+2. Click **+ Add a contact** and configure the following settings in the details pane. Settings marked with an <sup>\*</sup> are required.
+
+   - **Contact type**: Select **Mail user** from the drop-down list.
+
+   - **First name**
+   
+   - **Last name**
+
+   - <sup>\*</sup>**Display name**: By default, this box shows the values from the **First name**, and **Last name** boxes. You can accept this value or change it.
+
+   - <sup>\*</sup>**Email**: Enter the user's email address. The domain should be external to your cloud-based organization.
+   
+   - <sup>\*</sup>**Alias**: Enter a unique alias, using up to 64 characters for the user.
+   
+   - <sup>\*</sup>**User ID** and **Domain**: Enter the account that the person will use to sign in to the service. The user ID consists of a username on the left side of the at (@) symbol and a domain on the right side. Select the domain from the drop-down list.
+   
+   - **Password**
+   
+   - **Confirm**
+   
+4. When you're finished, click **Add** and then click **Close**.
+
+### Use the new EAC to modify mail users
+
+1. In the EAC, go to **Recipients** \> **Contacts**.
+
+2. In the list of contacts, select the mail user that you want to modify.
+
+3. In the details pane, click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's details.
+
+4. When you're finished, click **Save**.
+
+#### Contact Information
+
+Use the **Contact information** section, to view, or edit the user's information. The information on this page is displayed in the address book.
+
+- **Web site**
+- **Fax phone**
+- **Street**
+- **City**
+- **State/Province**
+- **ZIP/Postal code**
+- **Country/Region**
+   
+#### Organization
+
+Use the **Organization** section, to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
+
+- **Title**: Use this box to view or change the recipient's title.
+
+- **Department**: Use this box to view or change the department in which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
+
+- **Manager**: To add a manager, enter the name and select from the drop-down list.
+
+- **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
+
+### Use the Classic EAC to create mail users
 
 1. In the EAC, go to **Recipients** \> **Contacts**
 
@@ -198,7 +258,13 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 
 4. Make the changes on the properties page and then save your changes.
 
-### Use the EAC to remove mail users
+### Use the new EAC to remove mail users
+
+1. In the EAC, go to **Recipients** \> **Contacts**.
+
+2. Select the mail user that you want to remove, and then click **Delete**.
+
+### Use the Classic EAC to remove mail users
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
