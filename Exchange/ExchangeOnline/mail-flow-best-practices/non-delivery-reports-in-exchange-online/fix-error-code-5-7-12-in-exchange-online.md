@@ -141,7 +141,7 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
 - **User mailboxes**:
 
-    - **New EAC**
+- **New EAC**
    
    1. Go to **Recipients** \> **Mailboxes** > select the mailbox from the list and click it.
    
@@ -150,15 +150,13 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
    3. In the **Manage mail flow settings**, click **Edit** next to **Message delivery restriction**.
     
    4. In the **message delivery restrictions** screen, configure the following settings under the **Accept messages from** section:
-    - Clear the check box for **Check if all senders are authenticated**.
-    - Choose the radio button for **Selected senders**.
-    - Click **+ Add sender**
-    
-    :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set":::
-
-    - In the **Accept messages from** screen, select and add the external senders and the all internal users group.
-      
-    :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen":::
+   
+       - Clear the check box for **Check if all senders are authenticated**.
+       - Choose the radio button for **Selected senders**.
+       - Click **+ Add sender**
+       :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set":::
+       - In the **Accept messages from** screen, select and add the external senders and the all internal users group.
+       :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen":::
     
    5. When you're finished, click **Confirm**.
 
