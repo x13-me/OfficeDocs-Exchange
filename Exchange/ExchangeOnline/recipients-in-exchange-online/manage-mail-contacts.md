@@ -71,7 +71,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 2. In the list of contacts, select the mail contact that you want to modify.
 
-3. In the details pane, click [im] to view or edit the user's contact details.
+3. In the details pane, click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's contact details.
 
 4. When you're finished, click **Save**.
 
@@ -125,7 +125,7 @@ Use the **Organization** section, to record detailed information about the user'
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
+2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit image](../media/ITPro_EAC_AddIcon.png).
 
 3. On the mail contact properties page that opens, click one of the following tabs to view or change properties.
 
@@ -294,7 +294,7 @@ For detailed syntax and parameter information, see [Remove-MailContact](/powersh
 
 To verify that you've successfully created, modified, or removed mail contacts, do any of the following steps:
 
-- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is list (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click lick **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties.
+- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is list (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click lick **Edit** ![Edit tooltip](../media/ITPro_EAC_EditIcon.png) to view the properties.
 
 - In Exchange Online PowerShell, replace \<MailContactIdentity\> with the name, email address, or alias of the mail contact, and run the following command to verify that the mail contact is listed (or not listed).
 
