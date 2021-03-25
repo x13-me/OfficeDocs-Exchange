@@ -264,10 +264,10 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
     
    5. Configure the following settings under the **Accept messages from** section:
    
-    - Clear the check box for **Require all senders to be authenticated**.
-    - Choose the radio button for **Selected senders**.
-    - Click **+ Add sender**
-    - In the **Accept messages from** screen, select and add the external senders and the all internal users group. 
+      - Clear the check box for **Require all senders to be authenticated**.
+      - Choose the radio button for **Selected senders**.
+      - Click **+ Add sender**
+      - In the **Accept messages from** screen, select and add the external senders and the all internal users group. 
     
    6. When you're finished, click **Confirm**.
     
@@ -297,6 +297,6 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
 
-## See also
+## See also    
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
