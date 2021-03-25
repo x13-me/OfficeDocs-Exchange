@@ -223,13 +223,15 @@ If you have a hybrid configuration with an Microsoft 365 or Office 365 connector
 
 1. Open the New Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-2. Choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
+2. Choose **Mail flow** \> **Accepted domains**. The **Accepted domains** screen appears.
+
+3. Select a recipient's domain and double-click it.
 
 :::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen":::
 
-3. Double-click the domain name.
+The accepted's domain details screen appears.
 
-4. In the **Accepted Domain** screen, set the domain to **Internal Relay**.
+4. Click the radio button for **Internal Relay**.
 
 :::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay":::
  
