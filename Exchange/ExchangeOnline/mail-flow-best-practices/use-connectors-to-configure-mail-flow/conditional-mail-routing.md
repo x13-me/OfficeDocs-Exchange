@@ -83,7 +83,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 18. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
 19. Review the settings for the new connector and click **Create connector**. The connector is created.
-,
+
 ### Classic EAC
 
 1. Go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.

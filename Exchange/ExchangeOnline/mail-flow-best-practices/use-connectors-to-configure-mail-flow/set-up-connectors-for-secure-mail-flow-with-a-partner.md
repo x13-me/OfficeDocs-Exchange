@@ -159,7 +159,7 @@ You can set up a connector to apply security restrictions to email that your par
 
 5. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-6. Choose one of the two options.
+6. Choose one of the two options shown in the screenshot below.
 
 > [!NOTE]
 > If you choose **By verifying that the sender domain matches one of the following domains**, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, enter its name.
