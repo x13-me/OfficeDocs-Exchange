@@ -102,6 +102,12 @@ Use the **Organization** section, to record detailed information about the user'
 
 - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
 
+### Use the new EAC to remove mail users
+
+1. In the EAC, go to **Recipients** \> **Contacts**.
+
+2. Select the mail user that you want to remove, and then click **Delete**.
+
 ### Use the Classic EAC to create mail users
 
 1. In the EAC, go to **Recipients** \> **Contacts**
@@ -128,7 +134,7 @@ Use the **Organization** section, to record detailed information about the user'
 
 4. When you've finished, click **Save** to create the mail user.
 
-### Use the EAC to modify mail users
+### Use the Classic EAC to modify mail users
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
@@ -257,12 +263,6 @@ When you bulk edit mail users in the EAC, you can change the following types of 
 3. In the Details pane, under **Bulk Edit**, click **Update** under **Contact Information** or **Organization**.
 
 4. Make the changes on the properties page and then save your changes.
-
-### Use the new EAC to remove mail users
-
-1. In the EAC, go to **Recipients** \> **Contacts**.
-
-2. Select the mail user that you want to remove, and then click **Delete**.
 
 ### Use the Classic EAC to remove mail users
 
