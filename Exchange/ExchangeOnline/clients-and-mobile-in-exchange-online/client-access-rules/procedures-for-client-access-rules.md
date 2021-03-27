@@ -33,6 +33,8 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 - The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
+- Client Access Rules support IPv4 and IPv6 addresses. For more information about IPv6 addresses and syntax, see this Exchange 2013 topic: [IPv6 address basics](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help#ipv6-address-basics).
+
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
@@ -85,9 +87,7 @@ New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols
  **Notes**:
 
 - As a best practice, create a Client Access Rule with the highest priority to preserve your administrator access to remote PowerShell. For example: `New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1`.
-
 - The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](#use-exchange-online-powershell-to-set-the-priority-of-client-access-rules)  section later in this topic.
-
 - The rule is enabled, because we didn't use the _Enabled_ parameter, and the default value is `$true`.
 
 This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
@@ -135,7 +135,6 @@ Set-ClientAccessRule -Identity "Allow IMAP4" -Enabled $false
 An important consideration when you modify Client Access Rules is modifying conditions or exceptions that accept multiple values:
 
 - The values that you specify will *replace* any existing values.
-
 - To add or remove values without affecting other existing values, use this syntax: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`
 
 This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow IMAP4 without affecting the existing IP address values.
@@ -231,13 +230,9 @@ Test-ClientAccessRule -User <MailboxIdentity> -AuthenticationType <Authenticatio
 This example returns the Client Access Rules that would match a client connection to Exchange Online that has these properties:
 
 - **Authentication type**: Basic
-
 - **Protocol**: `OutlookWebApp`
-
 - **Remote address**: 172.17.17.26
-
 - **Remote port**: 443
-
 - **User**: julia@contoso.com
 
 ```PowerShell
