@@ -43,7 +43,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 ### Use the new EAC to create mail contacts
 
-1. In the EAC, go to **Recipients** \> **Contacts**
+1. In the EAC, go to **Recipients** \> **Contacts**.
 
 2. Click **+ Add a contact** and configure the following settings in the details pane. Settings marked with an <sup>\*</sup> are required.
 
@@ -294,7 +294,7 @@ For detailed syntax and parameter information, see [Remove-MailContact](/powersh
 
 To verify that you've successfully created, modified, or removed mail contacts, do any of the following steps:
 
-- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is list (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click lick **Edit** ![Edit tooltip](../media/ITPro_EAC_EditIcon.png) to view the properties.
+- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click **Edit** ![Edit tooltip](../media/ITPro_EAC_EditIcon.png) to view the properties.
 
 - In Exchange Online PowerShell, replace \<MailContactIdentity\> with the name, email address, or alias of the mail contact, and run the following command to verify that the mail contact is listed (or not listed).
 
