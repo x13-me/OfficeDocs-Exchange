@@ -93,7 +93,7 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
     
     - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
     
-    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md)
+    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
 
 4. Click **Save**.
 

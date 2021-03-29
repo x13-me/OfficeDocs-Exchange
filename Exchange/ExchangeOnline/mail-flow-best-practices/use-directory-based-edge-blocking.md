@@ -50,9 +50,13 @@ This section describes the procedure to configure DBEB for both the New Exchange
 **For New EAC**
 
 1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
+
     a. Navigate to **Mail flow** \> **Accepted domains**. The **Accepted domains** screen appears.
+    
     b. Select an accepted domain and click it. The accepted domain's details screen appears.
-    c. Ensure that the domain type is set to **Internal relay**. If it's set to **Authoritative**, change it to **Internal relay**
+    
+    c. Ensure that the domain type is set to **Internal relay**. If it's set to **Authoritative**, change it to **Internal relay**.
+    
     d. Click **Save**.
 
 2. Add users to Microsoft 365 or Office 365. For example:
@@ -60,17 +64,25 @@ This section describes the procedure to configure DBEB for both the New Exchange
     - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md).
 
 3. Set your accepted domain in Exchange Online to **Authoritative**:
+
     a. Navigate to **Mail flow** \> **Accepted domains**. The **Accepted domains** screen appears.
+    
     b. Select an accepted domain and click it. The accepted domain's details screen appears.
+    
     c. Ensure that the domain type is set to **Authoritative**. If it's set to **Internal relay**, change it to **Authoritative**.
+    
     d. Click **Save**.
 
 **For Classic EAC**
 
 1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
+
     a. Navigate to **Mail flow** \> **Accepted domains**.
+    
     b. Select an accepted domain and click **Edit**.
+    
     c. Ensure that the domain type is set to **Internal relay**. If it's set to **Authoritative**, change it to **Internal relay**.
+    
     d. Click **Save**.
 
 2. Add users to Microsoft 365 or Office 365. For example:
@@ -78,9 +90,13 @@ This section describes the procedure to configure DBEB for both the New Exchange
    - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](/microsoft-365/security/office-365-security/manage-mail-users-in-eop) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md).
 
 3. Set your accepted domain in Exchange Online to **Authoritative**:
+
     a. Navigate to **Mail flow** \> **Accepted domains**.
+    
     b. Select an accepted domain and click **Edit**.
+    
     c. Set the domain type to **Authoritative**.
+    
     d. Click **Save**.
 
 4. Choose **Save** to save your changes, and confirm that you want to enable DBEB.
