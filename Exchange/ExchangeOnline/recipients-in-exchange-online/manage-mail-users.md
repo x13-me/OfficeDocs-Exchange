@@ -44,7 +44,7 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 ### Use the new EAC to create mail users
 
-1. In the EAC, go to **Recipients** \> **Contacts**
+1. In the EAC, go to **Recipients** \> **Contacts**.
 
 2. Click **+ Add a contact** and configure the following settings in the details pane. Settings marked with an <sup>\*</sup> are required.
 
