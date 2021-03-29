@@ -44,7 +44,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 6. Provide a name for the connector and add a description.
 
-7. Choose **Turn it on** under **What do you want to do after connector is saved?**, as shown in the following screenshot:
+7. Choose **Turn it on** under **What do you want to do after connector is saved?**
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
@@ -76,7 +76,6 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 16. Click **+**. The email address is listed for validation.
 
 :::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
-
 
 17. Click **Validate**. The validation process starts.
 
@@ -136,6 +135,6 @@ To create a mail flow rule in EAC, perform the following steps:
 
 4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously.
 
-   You can choose additional properties for the rule, such as the test mode and when to activate the rule.
+You can choose additional properties for the rule, such as the test mode and when to activate the rule.
 
 5. To save the connector, click **Save**.

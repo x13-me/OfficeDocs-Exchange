@@ -64,7 +64,7 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
 10. Once the validation process is completed, click **Save**.
 
-The connector is updated successfully from **being turned off** to **being turned on**
+The connector is updated successfully from **being turned off** to **being turned on**.
 
 **For Classic EAC**
 

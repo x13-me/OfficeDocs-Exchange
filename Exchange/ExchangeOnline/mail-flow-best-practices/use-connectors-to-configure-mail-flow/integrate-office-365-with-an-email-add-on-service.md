@@ -72,9 +72,11 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
 
-2. Click **+Add a connector**. The **New connector** screen appears.
-
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
+
+2. Click **+Add a connector**.
+
+The **New connector** screen appears.
 
 3. Under **Connection from**, choose **Office 365**.
 
@@ -89,11 +91,11 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 7. Under **What do you want to do after connector is saved?**:
 
     - Choose **Turn it on**
-    - Choose **Retain internal Exchange email headers (recommended)**.
+    - Choose **Retain internal Exchange email headers (recommended)**
 
 
 > [!NOTE]
-> > If **Retain internal Exchange email headers (recommended)** is chosen, it provides the following functionality:
+> > If **Retain internal Exchange email headers (recommended)** is chosen, it provides the following functionality9
 > 
 > Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4. Otherwise, the inbound connector will remove the internal Exchange headers from the returning messages.
 
@@ -107,13 +109,13 @@ To create an outbound connector from the new EAC, navigate from the Microsoft 36
 
 10. Click **Next**. The **Routing** screen appears.
 
-11. Enter the smart host value (for example, myhpstcontoso.com) for the email add-on service.
+11. Enter the smart host value (for example, myhostcontoso.com) for the email add-on service.
 
 :::image type="content" source="../../media/defining-smart-host.png" alt-text="The screen on which the domain name of the smart host is entered":::
 
 12. Click **Next**. The **Security restrictions** screen appears.
 
-13. Define the settings by:
+13. Do the following:
 
     a. Choosing **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
     
@@ -235,7 +237,7 @@ To create a mail flow rule in the EAC, perform the following steps:
    - **Do the following**: Select **Redirect the message to** \> **The following connector** \> Select the outbound connector you created in Step 1, and then click **OK**.
 
    - **Except if**: Click **Add exception** \> Select **A message header** \> **Includes and of these words**.
-]
+   
    - Click **Enter text**, enter the name of the custom header field that's applied by the email add-on service (for example, SignatureContoso), and then click **OK**.
 
    - Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
@@ -276,13 +278,16 @@ To create an inbound connector from the new EAC, navigate from the Microsoft 365
 
 1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
 
-2. Click **+Add a new connector**. The **New connector** screen appears.
+2. Click **+Add a new connector**.
 
 :::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
 
+The **New connector** screen appears.
+
 3. Under **Connection from**, choose **Your organization's email server**.
 
-The **Office 365** option is then chosen by default.
+> [!NOTE]
+> Once you choose **Your organization's email server** under **Connection from**, the **Office 365** option is then chosen by default.
 
 :::image type="content" source="../../media/your-org-server-to-365.png" alt-text="SA screen on which the connector is configured from your organization's server to Office 365":::
 
