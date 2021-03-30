@@ -44,7 +44,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
  1. Navigate to **Recipients** \> **Groups**.
   
- 2. Select a group from the list and click it. The group properties dialog box appears.
+ 2. Select a group from the list and click it. The group properties screen appears.
  
 :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
@@ -52,7 +52,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
 
- 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
+ 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
  
 :::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
  
@@ -92,13 +92,13 @@ To configure the group's allowed senders list, perform the following steps:
 
 1. Navigate to **Recipients** \> **Groups**.
 
-2. Select a group from the list and click it. The group properties dialog box appears.
+2. Select a group from the list and click it. The group properties screen appears.
 
 :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
 3. Click the **Settings** tab.
 
-4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** dialog box appears.
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
 
 :::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
 
