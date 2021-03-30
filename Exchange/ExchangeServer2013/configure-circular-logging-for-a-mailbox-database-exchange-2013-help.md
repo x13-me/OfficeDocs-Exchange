@@ -59,4 +59,4 @@ This example disables circular logging for database DB1.
 Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
 ```
 
-See [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase) for other mailbox database parameters you can configure.
+See [Set-MailboxDatabase](/powershell/module/exchange/Set-MailboxDatabase) for other mailbox database parameters you can configure.

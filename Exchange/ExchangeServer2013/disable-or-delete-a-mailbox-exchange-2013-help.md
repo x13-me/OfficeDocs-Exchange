@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013 SP1_
 
 You can use the EAC or the Shell to disable or delete a mailbox in Exchange 2013. When a mailbox is disabled or deleted, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. Disabled and deleted mailboxes are retained in the mailbox database until the deleted mailbox retention period expires, which is 30 days by default. After the retention period expires, the mailbox is permanently deleted or *purged*.
 
-If you need to delete a mailbox in Exchange Online, see [Delete or restore user mailboxes in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes).
+If you need to delete a mailbox in Exchange Online, see [Delete or restore user mailboxes in Exchange Online](../ExchangeOnline/recipients-in-exchange-online/delete-or-restore-mailboxes.md).
 
 > [!NOTE]
 > Disabled or deleted mailboxes are referred to as <EM>disconnected mailboxes</EM>.

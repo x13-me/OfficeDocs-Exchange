@@ -48,4 +48,4 @@ This example creates an address list for all users with Exchange mailboxes who h
 New-AddressList -Name "AgencyB" -RecipientFilter "(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/new-addresslist).
+For detailed syntax and parameter information, see [New-AddressList](/powershell/module/exchange/new-addresslist).

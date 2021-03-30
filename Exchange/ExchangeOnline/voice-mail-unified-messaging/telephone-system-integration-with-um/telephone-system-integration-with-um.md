@@ -79,7 +79,7 @@ The Exchange UM routing component handles voice mail routing between Skype for B
 
 - Queues missed call notifications, and then uploads them to the Exchange server when the WAN link is restored.
 
-For more information about Microsoft Skype for Business Server, see [Microsoft Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-server-2019).
+For more information about Microsoft Skype for Business Server, see [Microsoft Skype for Business Server](/SkypeForBusiness/skype-for-business-server-2019).
 
 > [!CAUTION]
 > When you're integrating Unified Messaging and Skype for Business Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.

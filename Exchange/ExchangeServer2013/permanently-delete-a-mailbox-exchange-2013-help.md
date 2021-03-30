@@ -58,7 +58,7 @@ Remove-Mailbox -Identity <identity> -Permanent $true
 > [!NOTE]
 > If you don't include the <EM>Permanent</EM> parameter, the deleted mailbox is retained in the mailbox database for 30 days, by default, before it's permanently deleted.
 
-For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-Mailbox).
+For detailed syntax and parameter information, see [Remove-Mailbox](/powershell/module/exchange/Remove-Mailbox).
 
 ## How do you know this worked?
 
@@ -120,7 +120,7 @@ This example permanently deletes all soft-deleted mailboxes from mailbox databas
 Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
 ```
 
-For detailed syntax and parameter information, see [Remove-StoreMailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-StoreMailbox) and [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxStatistics).
+For detailed syntax and parameter information, see [Remove-StoreMailbox](/powershell/module/exchange/Remove-StoreMailbox) and [Get-MailboxStatistics](/powershell/module/exchange/Get-MailboxStatistics).
 
 ## How do you know this worked?
 

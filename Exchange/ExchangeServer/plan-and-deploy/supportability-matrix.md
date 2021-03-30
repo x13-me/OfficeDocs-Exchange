@@ -24,7 +24,7 @@ The Exchange Server supportability matrix provides a central source for Exchange
 
 The following table identifies the release model for each supported version of Exchange.
 
-In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulative. An RU for Exchange Server 2010 includes all fixes for Exchange Server from all previous update rollup packages, so you only need to install the latest RU to apply all of the fixes that were released up to that point. However, individual updates or hotfixes for Exchange 2010 or earlier do not contain all previous fixes for Exchange Server. The updated files that are included in an individual update or hotfix include all updates that were applied only to those specific files by all previous updates, but any other files on Exchange Server will not be updated. For more information, see [Exchange 2010 Servicing](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/).
+In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulative. An RU for Exchange Server 2010 includes all fixes for Exchange Server from all previous update rollup packages, so you only need to install the latest RU to apply all of the fixes that were released up to that point. However, individual updates or hotfixes for Exchange 2010 or earlier do not contain all previous fixes for Exchange Server. The updated files that are included in an individual update or hotfix include all updates that were applied only to those specific files by all previous updates, but any other files on Exchange Server will not be updated. For more information, see [Exchange 2010 Servicing](/previous-versions/office/exchange-server-2010/).
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). Each CU is a full installation of Exchange that includes updates and changes from all previous CUs, so you don't need to install any previous CUs or Exchange Server RTM first. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
@@ -248,7 +248,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 5. Install the latest available CU as described in [Updates for Exchange Server](../new-features/updates.md).
 
-   For Exchange 2013, see [Updates for Exchange 2013](/exchange/updates-for-exchange-2013-exchange-2013-help)
+   For Exchange 2013, see [Updates for Exchange 2013](../../ExchangeServer2013/updates-for-exchange-2013-exchange-2013-help.md)
 
 6. Reboot the server after the CU installation is complete.
 

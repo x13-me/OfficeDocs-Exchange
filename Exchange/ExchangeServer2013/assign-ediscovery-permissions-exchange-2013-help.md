@@ -60,7 +60,7 @@ This example adds the user Bsuneja to the Discovery Management role group.
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
-For detailed syntax and parameter information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
+For detailed syntax and parameter information, see [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

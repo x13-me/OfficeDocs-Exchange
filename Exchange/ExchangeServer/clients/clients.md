@@ -25,10 +25,10 @@ The following table contains links to topics that will help you learn about and 
 |**Topic**|**Description**|
 |:-----|:-----|
 |[MAPI over HTTP in Exchange Server](mapi-over-http/mapi-over-http.md)|Learn about the latest client access method that provides connectivity to Outlook.|
-|[Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help)|Learn about the earlier client access method that provides connectivity to Outlook. (This feature was formerly known as RPC/HTTP.)|
+|[Outlook Anywhere](../../ExchangeServer2013/outlook-anywhere-exchange-2013-help.md)|Learn about the earlier client access method that provides connectivity to Outlook. (This feature was formerly known as RPC/HTTP.)|
 |[Exchange ActiveSync](exchange-activesync/exchange-activesync.md)|Learn about the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
 |[POP3 and IMAP4 in Exchange Server](pop3-and-imap4/pop3-and-imap4.md)|Learn about how users can access their Exchange mailbox by using email programs that use POP3 or IMAP4.|
 |[Outlook for iOS and Android](outlook-for-ios-and-android/outlook-for-ios-and-android.md)|Learn about the Outlook for iOS and Android app and how it allows your users to securely access their mailbox data remotely with their iOS and Android devices.|
 |[Install Office Online Server in an Exchange organization](../plan-and-deploy/install-office-online-server.md)|Learn about how the integration of Office Online Server helps provide rich attachment preview functionality in Outlook on the web.|
 |[Outlook on the web in Exchange Server](outlook-on-the-web/outlook-on-the-web.md)|Learn about Outlook on the web, which provides users access to their Exchange mailbox through a web browser.|
-|[MailTips in Exchange](https://docs.microsoft.com/exchange/mailtips-exchange-2013-help)|Learn about MailTips, the informative messages displayed to users while they're composing a message.|
+|[MailTips in Exchange](../../ExchangeServer2013/mailtips-exchange-2013-help.md)|Learn about MailTips, the informative messages displayed to users while they're composing a message.|
