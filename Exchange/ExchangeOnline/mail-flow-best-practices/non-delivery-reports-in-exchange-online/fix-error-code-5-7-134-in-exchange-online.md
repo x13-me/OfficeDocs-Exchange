@@ -49,15 +49,15 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. Select a user mailbox from the list and click it. The user mailbox properties dialog box appears.
+2. Select a user mailbox from the list and click it. The user mailbox properties screen appears.
 
 :::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
-3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage mail flow settings screen":::
 
-4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
+4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
 
 5. Under **Accept messages from**:
     - Choose **All senders**.
@@ -99,25 +99,25 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. Select a user mailbox from the list and click it. The user mailbox properties dialog box appears.
+2. Select a user mailbox from the list and click it. The user mailbox properties screen appears.
 
 :::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
-3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** dialog box appears.
+3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
 
 :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage Mail Flow Settings screen":::
 
-4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** dialog box appears.
+4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
 
-:::image type="content" source="../../media/message-delivery-restrictions-new-eac.png" alt-text="The message delivery restrictions dialog box":::
+:::image type="content" source="../../media/message-delivery-restrictions-new-eac.png" alt-text="The message delivery restrictions screen":::
 
 5. Under **Accept messages from** section:
-  - Clear the check box for **Check if all senders are authenticated**
+  - Clear the check box for **Check if all senders are authenticated**.
   - Select **Selected senders**.
   
 :::image type="content" source="../../media/mdr-screen-select-senders.png" alt-text="The Message delivery restrictions screen on which specific people are configured as senders":::
 
-  - Click **+ Add sender**. The **Accept messages from** dialog box appears.
+  - Click **+ Add sender**. The **Accept messages from** screen appears.
 
 :::image type="content" source="../../media/accept-messages-from-screen.png" alt-text="The screen displaying the Accept Messages From pane":::
 
