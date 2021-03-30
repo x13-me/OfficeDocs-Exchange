@@ -57,7 +57,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center to export In-Place eDiscovery search results to a PST
 
@@ -101,12 +101,12 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - For more information about de-duplication and unsearchable items, see [Estimate, preview, and copy search results](in-place-ediscovery.md#estimate-preview-and-copy-search-results).
 
-- To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center).
+- To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center).
 
 ## Troubleshooting
 
 |**Symptom**|**Possible cause**|
 |:-----|:-----|
-|Cannot export to a PST file.| There is no active mailbox attached to the account. To export the PST, you must have an active account. <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser. <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](https://docs.microsoft.com/microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log).|
+|Cannot export to a PST file.| There is no active mailbox attached to the account. To export the PST, you must have an active account. <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser. <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](/microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log).|
 |Unable to export search results on a specific machine. Export works as expected on a different machine.|The wrong Windows credentials were saved in the **Credential Manager**. Clear your credentials and log in again.|
 |eDiscovery PST Export Tool won't start.|Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites. <br/> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/windows/security-zones-adding-removing-websites#1TC=windows-7).|

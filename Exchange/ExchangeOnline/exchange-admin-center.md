@@ -24,7 +24,7 @@ You can use the Exchange admin center to manage email settings for your organiza
 
 ## Get to the new Exchange admin center 
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account.
 
@@ -101,7 +101,7 @@ When you select an item from the list view, information about that object is dis
 
 ## Get to the Classic Exchange admin center
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Classic Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the Classic Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
@@ -175,6 +175,6 @@ See the following articles:
 
 ## Related articles
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](../ExchangeServer/architecture/client-access/exchange-admin-center.md).
 
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).

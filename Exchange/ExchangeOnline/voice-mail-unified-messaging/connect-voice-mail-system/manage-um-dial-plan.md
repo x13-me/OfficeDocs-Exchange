@@ -261,7 +261,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
    - **Allow calls to any extension**: When this setting is disabled, users who call in to an Outlook Voice Access number on the dial plan can't place calls to users who aren't UM-enabled or to other extension numbers not associated with a UM-enabled user. However, they can place a call or transfer a call to extension numbers associated with UM-enabled users. This is because the **Calls in the same UM dial plan** setting is enabled by default. The **Allow calls to any extension** setting is disabled by default.
 
      > [!NOTE]
-     > To avoid attempted fraud and other potential threats to your UM environment, follow the guidance in the blog post [Is your Exchange Unified Messaging protected against telecommunication fraud?](https://blogs.msdn.microsoft.com/mahmoud_badran/2017/02/15/is-your-exchange-unified-messaging-protected-against-telecommunication-fraud/)
+     > To avoid attempted fraud and other potential threats to your UM environment, follow the guidance in the blog post [Is your Exchange Unified Messaging protected against telecommunication fraud?](/archive/blogs/mahmoud_badran/is-your-exchange-unified-messaging-protected-against-telecommunication-fraud)
 
      When this setting is enabled, users who call in to an Outlook Voice Access number configured on the dial plan can place calls to users who aren't UM-enabled, to other extension numbers not associated with a UM-enabled user, and to UM-enabled users. This is because the **Calls in the same UM dial plan** setting is enabled by default.
 

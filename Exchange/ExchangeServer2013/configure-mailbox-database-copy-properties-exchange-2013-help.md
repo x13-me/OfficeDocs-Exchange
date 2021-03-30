@@ -92,8 +92,8 @@ To verify that you've successfully configured a mailbox database copy, do one of
 
 ## For more information
 
-[Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabaseCopy)
+[Set-MailboxDatabaseCopy](/powershell/module/exchange/Set-MailboxDatabaseCopy)
 
-[Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus)
+[Get-MailboxDatabaseCopyStatus](/powershell/module/exchange/Get-MailboxDatabaseCopyStatus)
 
-[Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase)
+[Get-MailboxDatabase](/powershell/module/exchange/Get-MailboxDatabase)

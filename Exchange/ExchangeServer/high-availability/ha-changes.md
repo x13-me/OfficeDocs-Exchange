@@ -96,7 +96,7 @@ Another challenge with a single Store instance is the lack of processor scalabil
 
 The Store.exe process has evolved considerably throughout the years as Exchange Server itself evolved, but as a single process, ultimately its scalability is limited, and it represents a single point of failure. Because of these limits, Store.exe was removed in Exchange 2013 and replaced by the Managed Store.
 
-For more information, see [Managed Store](https://docs.microsoft.com/exchange/managed-store-exchange-2013-help).
+For more information, see [Managed Store](../../ExchangeServer2013/managed-store-exchange-2013-help.md).
 
 ## Multiple databases per volume
 

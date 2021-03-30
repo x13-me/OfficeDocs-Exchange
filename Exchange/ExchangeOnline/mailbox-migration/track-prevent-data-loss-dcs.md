@@ -75,7 +75,7 @@ If the migration fails with a grade of **Poor**, you cannot force the migration 
 
 ### Using Exchange Online PowerShell
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Determine the identity of the user you wish to investigate.
 
@@ -90,7 +90,7 @@ If the migration fails with a grade of **Poor**, you cannot force the migration 
 
 ## How to opt in or opt out of using DataConsistencyScore
 
-Through March 2021, the [BadItemLimit and LargeItemLimit parameters](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) will remain available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
+Through March 2021, the [BadItemLimit and LargeItemLimit parameters](/powershell/module/exchange/new-moverequest) will remain available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
 
 If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter is specified, or if the boxes in the classic Exchange admin center wizard are left blank, then the new migration method and DataConsistencyScore are used.
 

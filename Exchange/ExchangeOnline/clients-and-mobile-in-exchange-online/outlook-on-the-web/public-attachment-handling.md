@@ -24,7 +24,7 @@ As an admin, you can set up both private and public attachment handling in Outlo
 
 ## How can I control public attachment handling?
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
 
 The Outlook on the web mailbox policy parameters in the following table should be set to `$true` to enable an admin to control attachment handling for public computers and networks.
 
@@ -46,13 +46,13 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
 - Set up and configure single sign on using AD FS:
 
-  - [Checklist: Use AD FS to implement and manage single sign-on](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--implementing-a-federated-web-sso-design)
+  - [Checklist: Use AD FS to implement and manage single sign-on](/windows-server/identity/ad-fs/deployment/checklist--implementing-a-federated-web-sso-design)
 
-  - [Set up ADFS for Single Sign-On](https://docs.microsoft.com/office365/troubleshoot/active-directory/set-up-adfs-for-single-sign-on)
+  - [Set up ADFS for Single Sign-On](/office365/troubleshoot/active-directory/set-up-adfs-for-single-sign-on)
 
-  - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
+  - [Configure single sign on](/azure/active-directory/hybrid/how-to-connect-sso)
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -77,7 +77,7 @@ Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 
 ## Task 2 - Add and create claim rules in AD FS 2.0
 
-You must create a custom claim rule because an AD FS server relies on the presence of the `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807049(v=ws.11))
+You must create a custom claim rule because an AD FS server relies on the presence of the `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807049(v=ws.11))
 
 1. On the **Start Screen**, type **AD FS Management**, and then press **Enter**.
 

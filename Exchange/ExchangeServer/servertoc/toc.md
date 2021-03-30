@@ -266,7 +266,7 @@
 ##### [Batch migration from previous versions](../collaboration/public-folders/batch-migration-from-previous-versions.md)
 ##### [Migrate to Exchange Online](../collaboration/public-folders/migrate-to-exchange-online.md)
 ###### [Roll back Exchange Online migration](../collaboration/public-folders/roll-back-exchange-online-migration.md)
-###### [Migrate Exchange 2010 public folders to Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
+###### [Migrate Exchange 2010 public folders to Exchange Online](../../ExchangeOnline/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders.md)
 ##### [Batch migration to Microsoft 365 Groups](../collaboration/public-folders/batch-migration-to-microsoft-365-groups.md)
 ##### [Migrate from Exchange 2013](../collaboration/public-folders/migrate-from-exchange-2013.md)
 ##### [New organizations](../collaboration/public-folders/new-organizations.md)
@@ -418,4 +418,3 @@
 ### [Third-party copyrights](../about-documentation/third-party-copyrights.md)
 ### [Exchange admin center keyboard shortcuts](../about-documentation/exchange-admin-center-keyboard-shortcuts.md)
 ### [Privacy statement](../about-documentation/privacy-statement.md)
-

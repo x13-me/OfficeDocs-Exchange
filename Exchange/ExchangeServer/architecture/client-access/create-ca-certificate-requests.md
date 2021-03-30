@@ -30,18 +30,18 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
 - You need to plan carefully to choose the type of certificate that you want, and the host names that are required in the certificate. For more information, see [Digital certificates and encryption in Exchange Server](certificates.md).
 
-- Verify the certificate request requirements of the CA. Exchange generates a PKCS #10 request (.req) file that uses Base64 (default) or Distinguished Encoding Rules (DER) encoding, with an RSA public key that's 1024, 2048 (default), or 4096 bits. Note that encoding and public key options are only available in the Exchange Management Shell. For more information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/new-exchangecertificate).
+- Verify the certificate request requirements of the CA. Exchange generates a PKCS #10 request (.req) file that uses Base64 (default) or Distinguished Encoding Rules (DER) encoding, with an RSA public key that's 1024, 2048 (default), or 4096 bits. Note that encoding and public key options are only available in the Exchange Management Shell. For more information, see [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
 
 - In the EAC, you need to store the certificate request file on a UNC path (`\\<Server>\<Share>\` or `\\<LocalServerName>\c$\`). In the Exchange Management Shell, you can specify a local path.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access services security" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to create a new certificate request
 
@@ -189,7 +189,7 @@ New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.
 
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
 
-- For more information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/new-exchangecertificate).
+- For more information, see [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
 
 ## How do you know this worked?
 
