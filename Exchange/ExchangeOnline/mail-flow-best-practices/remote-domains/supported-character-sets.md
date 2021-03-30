@@ -32,9 +32,11 @@ The following table describes the character sets that you can configure in remot
 
 1. Navigate to **Mail flow** > **Remote domains**. The **Remote domains** screen appears.
 
-2. Click **+ Add a remote domain**. The **Name the domain** screen appears.
+2. Click **+ Add a remote domain**.
 
 :::image type="content" source="../../media/add-remote-domain.png" alt-text="The screen on which the user can add a new remote domain":::
+
+The **Name the domain** screen appears.
 
 3. Provide a name for the domain and the equivalent remote version of the domain.
 
