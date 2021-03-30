@@ -72,12 +72,12 @@ Below are the procedures to set up a new connector.
 
 2. Click **+Add a connector**. The **New connector** screen appears.
 
-:::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
-
 3. Under **Connection from**, choose **Office 365**.
     
 4. Under **Connection to**, choose **Partner Organization**.
-  
+
+:::image type="content" source="../../media/office-365-to-partner.png" alt-text="The screen on which a connector for Office 365 is added":::
+
 5. Click **Next**. The **Connector name** screen appears.
 
 6. Provide a name for the connector and click **Next**. The **Use of connector** screen appears.

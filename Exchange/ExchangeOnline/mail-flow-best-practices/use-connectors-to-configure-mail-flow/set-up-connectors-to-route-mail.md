@@ -150,7 +150,7 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 :::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
 
-5. Click **Next**. The **Connector name** screen appears. 
+5. Click **Next**. The **Connector name** screen appears.
 
 6. Provide a name for the connector and click **Next**. The **Use of connector** screen appears.
 
@@ -161,9 +161,14 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 8. Enter the domain name or IP address of the host computer to which Office 365 will deliver email messages.
 
-9. Click **Next**. The **Security restrictions** screen appears.
+9. Click **+**.
 
-10. Define the settings by:
+> [!NOTE]
+> It is mandatory to click **+** after entering the smart host name to navigate to the next screen.
+
+10. Click **Next**. The **Security restrictions** screen appears.
+
+11. Define the settings by:
 
 - Checking the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
@@ -181,11 +186,18 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 
 - Clicking **Next**, on which the **Validation email** screen appears.
 
-11. Enter an email that belongs to the mailbox of your organization's domain.
+12. Enter an email that belongs to the mailbox of your organization's domain.
 
-12. Click **Next**. The **Review connector** screen appears.
+13. Click **+**.
 
-13. Review the settings you have configured and click **Create connector**.
+> [!NOTE]
+> It is mandatory to click **+** for the **Validate** button to be enabled.
+
+14. Click **Validate**. The connector validation process starts.
+
+15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+
+16. Review the settings you have configured and click **Create connector**.
 
 The connector is created.
 

@@ -36,7 +36,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 3. Under **Connection from**, choose **Office 365**.
     
-4. Under **Connection to**, choose either **Your organization's email server** or **Partner organization** if you want to connect to a server other than your organizations.
+4. Under **Connection to**, choose either **Your organization's email server** or **Partner organization** (if you want to connect to a server other than your organizations).
 
 :::image type="content" source="../../media/365-to-your-organization.png" alt-text="The screen on which a connector is being created from Office 365 to your organization's mail server":::
 
@@ -44,7 +44,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 6. Provide a name for the connector and add a description.
 
-7. Choose **Turn it on** under **What do you want to do after connector is saved?**
+7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
@@ -56,32 +56,37 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 10. Click **Next**. The **Routing** screen appears.
 
-11. Enter one or more smart hosts a shown in the screenshot below. These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
+11. Enter one or more smart hosts in the text box. (These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.)
 
 :::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
 > [!NOTE]
 > You must provide either the domain name or the IP address of the server.
 
-12. Click **Next**. The **Security restrictions** screen appears.
+12. Click **+**.
 
-13. Define your Transport Layer Security (TLS) settings.
+> [!NOTE]
+> It is mandatory to click **+** after entering the smart host name to navigate to the next screen.
+
+13. Click **Next**. The **Security restrictions** screen appears.
+
+14. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended).
 
 :::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
 
-14. Click **Next**. The **Validation email** screen appears.
+15. Click **Next**. The **Validation email** screen appears.
 
-15. Enter an email address that is valid on the mailbox of your organization's email server.
+16. Enter an email address that is valid on the mailbox of your organization's email server.
 
-16. Click **+**. The email address is listed for validation.
+17. Click **+**. The email address is displayed below the text box, indicating it is ready to be validated.
 
 :::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
 
-17. Click **Validate**. The validation process starts.
+18. Click **Validate**. The validation process starts.
 
-18. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+19. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-19. Review the settings for the new connector and click **Create connector**. The connector is created.
+20. Review the settings for the new connector and click **Create connector**. The connector is created.
 
 ### Classic EAC
 
