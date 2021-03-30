@@ -44,7 +44,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 6. Provide a name for the connector and add a description.
 
-7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**
+7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**.
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
