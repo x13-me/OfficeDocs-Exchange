@@ -28,7 +28,7 @@ There are four types of groups that can be used to distribute messages:
 - **Distribution list group** is used for sending emails/notifications to a group of people.
 
 - **Dynamic distribution list group** is used to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
-- 
+
 - **Mail-enabled security group** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
 For more information see, [groups](/microsoft-365/admin/create-groups/compare-groups).
