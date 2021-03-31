@@ -52,7 +52,7 @@ It's important to note the terminology differences between Active Directory and 
 
 ### Use the new EAC to create distribution list groups
 
-1. In the new EAC, navigate to **Recipients** > **Groups**.
+1. In the new EAC, navigate to **Recipients** > **Groups** > **Distribution list**.
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
@@ -62,7 +62,7 @@ It's important to note the terminology differences between Active Directory and 
    
 3. In **Assign owners** section, click **+ Assign owners**, select the group owner from the list, and click **Next**.
 
-4. Under **Add members**, click **+ Add members**, select the group owner from the list, and click **Next**.
+4. Under **Add members**, click **+ Add members**, select the group members from the list, and click **Next**.
 
 5. In **Edit settings** section, enter the group email address, select the following boxes and then click **Next**:
 
