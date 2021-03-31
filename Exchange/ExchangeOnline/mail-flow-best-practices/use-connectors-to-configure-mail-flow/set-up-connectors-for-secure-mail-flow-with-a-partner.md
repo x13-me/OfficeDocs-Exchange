@@ -216,7 +216,7 @@ Review these connector examples to help you decide whether you want to apply sec
 
 **For New EAC**
 
-For details on this procedure, see The **For New EAC** subsection in the **Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365** section in this topic.
+For details on this procedure, see the **[For New EAC](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-your-partner-organization-to-microsoft-365-or-office-365)** subsection in the **Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365** section in this topic.
 
 **For Classic EAC**
 
