@@ -71,4 +71,4 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## Use the Shell to create a mailbox audit log search
 
-For an example of how to use the Shell to create a mailbox audit log search, see Example 1 in [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch).
+For an example of how to use the Shell to create a mailbox audit log search, see Example 1 in [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch).

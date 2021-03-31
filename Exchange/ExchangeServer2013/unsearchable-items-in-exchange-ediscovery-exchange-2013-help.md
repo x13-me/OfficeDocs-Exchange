@@ -33,9 +33,9 @@ For a successful eDiscovery search, your organization may be required to review 
 
 ## File types not supported for search
 
-Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, Exchange Search doesn't perform full-text indexing on these types of files. These types of files are considered as unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are considered unsearchable items in eDiscovery searches. These types of files, which are typically attached to an email message, are included in the result set when you include unsearchable items when copying or exporting search results. For a list of supported and disabled file formats, see [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md). In Exchange Server 2013, administrators can disable indexing for a supported file format by using the [Set-SearchDocumentFormat](https://docs.microsoft.com/powershell/module/exchange/Set-SearchDocumentFormat) cmdlet. This cmdlet isn't available in Exchange Online.
+Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, Exchange Search doesn't perform full-text indexing on these types of files. These types of files are considered as unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are considered unsearchable items in eDiscovery searches. These types of files, which are typically attached to an email message, are included in the result set when you include unsearchable items when copying or exporting search results. For a list of supported and disabled file formats, see [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md). In Exchange Server 2013, administrators can disable indexing for a supported file format by using the [Set-SearchDocumentFormat](/powershell/module/exchange/Set-SearchDocumentFormat) cmdlet. This cmdlet isn't available in Exchange Online.
 
-To identify the unsearchable items in a specific mailbox, you can run the [Get-FailedContentIndexDocuments](https://docs.microsoft.com/powershell/module/exchange/Get-FailedContentIndexDocuments) cmdlet to get a list of items that would be copied or exported when you choose to include unsearchable items with the search results.
+To identify the unsearchable items in a specific mailbox, you can run the [Get-FailedContentIndexDocuments](/powershell/module/exchange/Get-FailedContentIndexDocuments) cmdlet to get a list of items that would be copied or exported when you choose to include unsearchable items with the search results.
 
 ## Messages with unsupported file types returned in search results
 
@@ -63,11 +63,11 @@ Keep the following in mind when copying or exporting unsearchable items:
 
 For more information about including unsearchable items in search results, see:
 
-- [Create an In-Place eDiscovery search](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
+- [Create an In-Place eDiscovery search](/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-- [Export eDiscovery search results to a PST file](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
+- [Export eDiscovery search results to a PST file](../ExchangeOnline/security-and-compliance/in-place-ediscovery/export-search-results.md)
 
-- [SharePoint: Export eDiscovery content and create reports](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
+- [SharePoint: Export eDiscovery content and create reports](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
 
 ## More information about unsearchable items
 

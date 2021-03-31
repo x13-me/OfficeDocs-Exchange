@@ -17,25 +17,25 @@ mtps_version: v=EXCHG.150
 
 ## Getting help
 
-[Getting help](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Get-Help)
+[Getting help](/powershell/module/Microsoft.PowerShell.Core/Get-Help)
 
 ## Cmdlets and parameters
 
 [Cmdlets](cmdlets-exchange-2013-help.md)
 
-[Parameters](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters)
+[Parameters](/powershell/module/microsoft.powershell.core/about/about_parameters)
 
-[Structured data](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_objects)
+[Structured data](/powershell/module/microsoft.powershell.core/about/about_objects)
 
-[Syntax](https://docs.microsoft.com/powershell/exchange/exchange-cmdlet-syntax)
+[Syntax](/powershell/exchange/exchange-cmdlet-syntax)
 
 ## Running commands
 
-[Aliases](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_aliases)
+[Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)
 
-[about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+[about_Arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-[Comparison operators](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_comparison_operators)
+[Comparison operators](/powershell/module/microsoft.powershell.core/about/about_comparison_operators)
 
 [Identity](identity-exchange-2013-help.md)
 
@@ -43,7 +43,7 @@ mtps_version: v=EXCHG.150
 
 [Modifying multivalued properties](modifying-multivalued-properties-exchange-2013-help.md)
 
-[about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines)
+[about_Pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
 
@@ -51,10 +51,10 @@ mtps_version: v=EXCHG.150
 
 ## Running scripts
 
-[Scripting with the Exchange Management Shell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_scripts)
+[Scripting with the Exchange Management Shell](/powershell/module/microsoft.powershell.core/about/about_scripts)
 
-[Script security](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_signing)
+[Script security](/powershell/module/microsoft.powershell.core/about/about_signing)
 
-[Shell variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_automatic_variables)
+[Shell variables](/powershell/module/microsoft.powershell.core/about/about_automatic_variables)
 
-[about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+[about_Variables](/powershell/module/microsoft.powershell.core/about/about_variables)

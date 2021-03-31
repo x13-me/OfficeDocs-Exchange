@@ -2,73 +2,41 @@
 
 
 
-## Week of February 15, 2021
+## Week of March 22, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 2/17/2021 | [Plan to coexist with a third-party messaging system using Active Directory Domain Services](/Exchange/mailbox-migration/plan-to-coexist-with-third-party-messaging-and-aad-ds) | modified |
+| 3/22/2021 | [Enable or disable SMTP AUTH](/Exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) | modified |
+| 3/23/2021 | [Domain expiring insight in the new Exchange admin center (new EAC)](/Exchange/monitoring/mail-flow-insights/domain-expiry-notification-feature) | added |
+| 3/23/2021 | [Mail flow insights in the new EAC](/Exchange/monitoring/mail-flow-insights/mail-flow-insights) | modified |
+| 3/24/2021 | [How and when to decommission your on-premises Exchange servers in a hybrid deployment](/Exchange/decommission-on-premises-exchange) | modified |
+| 3/24/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
+| 3/24/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
+| 3/26/2021 | [Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) | modified |
+| 3/26/2021 | [Procedures for Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules) | modified |
+| 3/26/2021 | [Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/client-access-rules?view=exchserver-2019) | modified |
+| 3/26/2021 | [Procedures for Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/procedures-for-client-access-rules?view=exchserver-2019) | modified |
 
 
-## Week of February 08, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/8/2021 | [Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes) | modified |
-| 2/8/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 2/10/2021 | [Restore deleted items from public folder](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | added |
-| 2/10/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 2/10/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 2/11/2021 | [Restore deleted items from public folder](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | modified |
-
-
-## Week of February 01, 2021
+## Week of March 15, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 2/2/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 2/2/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 2/3/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 2/4/2021 | [Enable or disable single item recovery for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) | modified |
-| 2/4/2021 | [Account setup with modern authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication) | modified |
-| 2/4/2021 | [Enable 2-step verification for your Google apps users](/Exchange/mailbox-migration/migrating-imap-mailboxes/enable-2-step-verification-for-google-apps) | modified |
-| 2/4/2021 | [Migrating your Outlook.com account to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-your-outlook-com-account) | modified |
-| 2/4/2021 | [Message Trace FAQ](/Exchange/monitoring/trace-an-email-message/message-trace-faq) | modified |
-| 2/4/2021 | [Use mail flow rules to inspect message attachments in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments) | modified |
-| 2/4/2021 | [Create a holiday schedule in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule) | modified |
-| 2/4/2021 | [Configuration notes for supported session border controllers in Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | modified |
-
-
-## Week of January 25, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/25/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 1/27/2021 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
-| 1/28/2021 | [Manage migration batches](/Exchange/mailbox-migration/manage-migration-batches) | modified |
-| 1/28/2021 | [Migration users status report](/Exchange/mailbox-migration/migration-users-status-report) | modified |
-| 1/28/2021 | [Perform a staged migration of email](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration) | modified |
-
-
-## Week of January 18, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/22/2021 | [Permissions in Exchange hybrid deployments](/Exchange/permissions) | modified |
-| 1/22/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 1/22/2021 | [Decide on a migration path](/Exchange/mailbox-migration/decide-on-a-migration-path) | modified |
-| 1/22/2021 | [Manage migration batches](/Exchange/mailbox-migration/manage-migration-batches) | modified |
-| 1/22/2021 | [Migrate consumer Google Workspace mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes) | modified |
-| 1/22/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
-| 1/22/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 1/22/2021 | [Track and Prevent Migration Data Loss](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
-| 1/22/2021 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
-| 1/22/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
-| 1/19/2021 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
-| 1/19/2021 | [Enable or disable single item recovery for a mailbox](/Exchange/recipients/user-mailboxes/single-item-recovery?view=exchserver-2016) | modified |
-| 1/19/2021 | [Enable or disable single item recovery for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-single-item-recovery-exchange-2013-help) | modified |
-| 1/21/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 3/15/2021 | [Exchange Server hybrid deployments](/Exchange/exchange-hybrid) | modified |
+| 3/15/2021 | [Single sign-on with hybrid deployments](/Exchange/single-sign-on) | modified |
+| 3/15/2021 | [Planning and deployment for Exchange Server](/Exchange/plan-and-deploy/plan-and-deploy?view=exchserver-2016) | modified |
+| 3/16/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 3/16/2021 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
+| 3/16/2021 | [Active Directory schema changes in Exchange Server](/Exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016) | modified |
+| 3/16/2021 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
+| 3/16/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
+| 3/16/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
+| 3/18/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 3/18/2021 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
+| 3/19/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
+| 3/19/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
+| 3/19/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
+| 3/19/2021 | [MailTips: Exchange 2013 Help](/Exchange/mailtips-exchange-2013-help) | modified |
+| 3/19/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
