@@ -80,8 +80,6 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 17. Click **+**. The email address is displayed below the text box, indicating it is ready to be validated.
 
-:::image type="content" source="../../media/email-listed-for-validation.png" alt-text="The screen on which the destination email is listed for validation":::
-
 18. Click **Validate**. The validation process starts.
 
 19. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
