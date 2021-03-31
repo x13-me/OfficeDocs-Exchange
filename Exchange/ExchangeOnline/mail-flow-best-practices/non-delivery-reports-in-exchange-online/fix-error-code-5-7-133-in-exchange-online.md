@@ -56,7 +56,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
  
- 5. Under **Accept messages from**, choose  the **All senders** radio button.
+ 5. Under **Accept messages from**, choose **All senders**.
  
 :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
