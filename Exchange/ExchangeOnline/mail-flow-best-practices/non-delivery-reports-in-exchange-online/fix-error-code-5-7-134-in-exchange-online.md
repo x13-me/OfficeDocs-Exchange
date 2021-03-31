@@ -121,7 +121,7 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/accept-messages-from-screen.png" alt-text="The screen displaying the Accept Messages From pane":::
 
-  - Check the check box of the internal-senders group and the specific external users whom you want to add.
+  - Check the check boxes of the internal-senders group and the specific external users you want to add.
 
 :::image type="content" source="../../media/setting-senders.png" alt-text="The screen on which the senders to be added to the group are chosen":::
 
