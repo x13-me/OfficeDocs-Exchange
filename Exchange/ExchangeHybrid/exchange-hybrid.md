@@ -96,7 +96,7 @@ A hybrid deployment involves several different services and components:
    Learn more at: [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
 > [!NOTE]
-   > Azure Active Directory Cloud Connect does not support hybrid migrations due to the inability to handle Exchange hybrid writeback.
+   > Azure AD Connect cloud sync does not support hybrid migrations due to its inability to handle Exchange hybrid writeback.
 
 ## Hybrid deployment example
 
