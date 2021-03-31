@@ -34,35 +34,23 @@ The following table describes the character sets that you can configure in remot
 
 2. Click **+ Add a remote domain**.
 
-:::image type="content" source="../../media/add-remote-domain.png" alt-text="The screen on which the user can add a new remote domain":::
-
 The **Name the domain** screen appears.
 
 3. Provide a name for the domain and the equivalent remote version of the domain.
-
-:::image type="content" source="../../media/naming-remote-domain.png" alt-text="The screen on which a name is provided for the remote domain being added":::
 
 4. Click **Next**. The **Email reply types** screen appears.
 
 5. Configure the automatic email reply types' settings by choosing options shown in the following screenshot:
 
-:::image type="content" source="../../media/configuring-automatic-reply-type.png" alt-text="The screen on which the user can configure the automatic email reply type":::
-
 6. Click **Next**. The **Message reporting** screen appears.
 
 7. Configure the message-reporting settings by choosing options shown in the following screenshot:
-
-:::image type="content" source="../../media/message-reporting-settings.png" alt-text="The screen on which the message reporting settings are defined":::
 
 8. Click **Next**. The **Text and character set** screen appears.
 
 9. Configure the format and delivery method of email messages. Do this by choosing options shown in the following screenshot:
 
-:::image type="content" source="../../media/text-and-character-set.png" alt-text="The screen on which the character sets are chosen":::
-
 10. Click **Next**. The **Review** screen appears.
-
-:::image type="content" source="../../media/review-remote-domain.png" alt-text="The screen on which the defined settings for the remote domain are displayed for a review":::
 
 11. Review the settings configured and click **Save**. The new review domain is created successfully.
 
