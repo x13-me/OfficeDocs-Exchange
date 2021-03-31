@@ -60,11 +60,11 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 :::image type="content" source="../../media/delivery-management-specific-senders.png" alt-text="The Delivery management screen on which specific internal members of the organization are chosen as senders":::
 
-7. Click on the text box. The list of senders to choose are displayed.
+7. Click on the text box. The list of senders are displayed.
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
-- Choose a sender from the list.
+- Choose senders from the list.
 
 8. Click **Save changes**.
 
@@ -107,7 +107,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
 :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
 
-7. Under **Specified senders**, click on the text box. The list of senders to choose are displayed.
+7. Under **Specified senders**, click on the text box. The list of senders are displayed.
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
