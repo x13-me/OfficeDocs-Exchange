@@ -112,7 +112,7 @@ Use this section to change/edit the following:
 
 - Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The distribution list group must have at least one owner. 
 
-- Use **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The distribution list group must have at least one owner. 
+- Under **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The distribution list group must have at least one member. 
 
 #### Settings
 
@@ -124,7 +124,7 @@ Use this section to manage who can send email to this group.
 
 - **Sender options**
 
-  By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send to this group.
+  By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send message to this group.
  
   - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
