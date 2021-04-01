@@ -95,6 +95,9 @@ A hybrid deployment involves several different services and components:
 
    Learn more at: [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
+> [!NOTE]
+   > Azure AD Connect cloud sync does not support hybrid migrations due to its inability to handle Exchange hybrid writeback.
+
 ## Hybrid deployment example
 
 Take a look at the following scenario. It's an example topology that provides an overview of a typical Exchange 2016 deployment. Contoso, Ltd. is a single-forest, single-domain organization with two domain controllers and one Exchange 2016 server installed. Remote Contoso users use Outlook on the web to connect to Exchange 2016 over the Internet to check their mailboxes and access their Outlook calendar.
