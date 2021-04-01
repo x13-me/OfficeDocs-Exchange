@@ -61,7 +61,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 5. Under **Accept messages from**:
     - Choose **All senders**.
-    - Clear the check box for **Check if all senders are authenticated**.
+    - Clear the check box for **Require senders to be authenticated**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
@@ -111,8 +111,8 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/message-delivery-restrictions-new-eac.png" alt-text="The message delivery restrictions screen":::
 
-5. Under **Accept messages from** section:
-  - Clear the check box for **Check if all senders are authenticated**.
+5. Under **Accept messages from**:
+  - Clear the check box for **Require senders to be authenticated**.
   - Select **Selected senders**.
   
 :::image type="content" source="../../media/mdr-screen-select-senders.png" alt-text="The Message delivery restrictions screen on which specific people are configured as senders":::
@@ -123,13 +123,15 @@ To configure the mailbox's allowed senders list, do the following steps:
 
   - Check the check boxes of the internal-senders group and the specific external users you want to add.
 
-:::image type="content" source="../../media/setting-senders.png" alt-text="The screen on which the senders to be added to the group are chosen":::
-
   - Click **Confirm**.
 
 :::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="The screen on which the senders of email messages are set":::
 
+The **Message delivery restrictions** screen re-appears.
+
 6. Click **Save**.
+
+<include the image saving-settings-after-choosing-sender.png>
 
 **In Classic EAC**
 
