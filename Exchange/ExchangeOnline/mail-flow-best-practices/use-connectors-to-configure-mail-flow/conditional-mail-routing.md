@@ -70,7 +70,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 13. Click **Next**. The **Security restrictions** screen appears.
 
-14. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended).
+14. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 :::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
 

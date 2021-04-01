@@ -106,20 +106,22 @@ Below are the procedures to set up a new connector.
 
 11. Click **Next**. The **Validation email** screen appears.
 
-12. Enter an email address that is part of the mailbox in your organization's email server, and Click **+**.
+12. Enter an email address that is part of the mailbox in your organization's email server.
 
-13. Click **Validate**. The validation process starts.
+13. Click **+**.
 
-14. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+14. Click **Validate**. The validation process starts.
 
-15. Review the settings you have configured, and click **Create connector**.
+15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+
+16. Review the settings you have configured, and click **Create connector**.
 
 The connector is created.
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-16. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+17. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 
@@ -157,7 +159,7 @@ You can set up a connector to apply security restrictions to email that your par
 
 5. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-6. Choose one of the two options shown in the screenshot below.
+6. Choose one of the two options between **By verifying that the sender domain matches one of the following domains** and **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization**.
 
 > [!NOTE]
 > If you choose **By verifying that the sender domain matches one of the following domains**, you can provide the name of any one domain from the list of domains for your organization. If you have only one domain for your organization, enter its name.
