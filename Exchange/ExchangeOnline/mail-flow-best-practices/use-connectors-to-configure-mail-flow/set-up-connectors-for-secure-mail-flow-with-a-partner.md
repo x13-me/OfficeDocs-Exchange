@@ -82,46 +82,54 @@ Below are the procedures to set up a new connector.
 
 6. Provide a name for the connector and click **Next**. The **Use of connector** screen appears.
 
-7. Choose any one of the two options and click **Next**. The **Routing** screen appears.
+7. Choose any one of the two options between **Only when i have a transport rule set up that redirects messages to this connector** and **Only when email messages are sent to these domains**.
 
 > [!NOTE]
 > If you choose the second option, provide the name of any one of the domains that are part of your organization. If there is only one domain for your organization, enter its name.
 
-8. Choose any of the two options and click **Next**. The **Security restrictions** screen appears.
+8. Click **+** (after entering the domain name, if you have chosen **Only when email messages are sent to these domains**)
+
+The domain name is displayed under the text box.
+
+9. Click **Next**. The **Routing** screen appears.
+
+10. Choose any of the two options  between **Use the MX record associated with the partner's domain** and **Route email through these smart hosts**.
+
+11. Click **Next**. The **Security restrictions** screen appears.
 
 > [!NOTE]
 > If you choose the first option, you need not mention the details of smart host. If you choose second option, enter the domain name of the smart host in the text box.
 
-9. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+12. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
 > [!NOTE]
 > It is not mandatory to configure the Transport Layer Security (TLS) settings on the **Security restrictions** page. You can navigate to the next screen without choosing anything on this screen. The need to define TLS settings on this page depends on whether the destination server supports TLS or not.
 
-10. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
+13. Choose one of the options under **Connect only if the recipient's email server certificate matches this criteria**.
 
 > [!NOTE]
 > If you are choosing the **Issue by a trusted certificate authority (CA)** option, the **Add the subject name or subject alternative name (SAN) matches this domain name** option is activated.
 >  
 > It is optional to choose the **Add the subject name or subject alternative name (SAN) matches this domain name** option. However, if you choose it, you must enter the domain name to which the certificate name matches.
 
-11. Click **Next**. The **Validation email** screen appears.
+14. Click **Next**. The **Validation email** screen appears.
 
-12. Enter an email address that is part of the mailbox in your organization's email server.
+15. Enter an email address that is part of the mailbox in your organization's email server.
 
-13. Click **+**.
+16. Click **+**.
 
-14. Click **Validate**. The validation process starts.
+17. Click **Validate**. The validation process starts.
 
-15. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+18. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
 
-16. Review the settings you have configured, and click **Create connector**.
+19. Review the settings you have configured, and click **Create connector**.
 
 The connector is created.
 
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-17. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+20. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 ### For Classic EAC
 

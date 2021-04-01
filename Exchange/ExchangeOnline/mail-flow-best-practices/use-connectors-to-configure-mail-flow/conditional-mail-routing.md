@@ -58,12 +58,12 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 11. Enter one or more smart hosts in the text box. (These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.)
 
-:::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
-
 > [!NOTE]
 > You must provide either the domain name or the IP address of the server.
 
-12. Click **+**.
+12. Click **+**. The smart host value is displayed under the text box.
+
+:::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
 
 > [!NOTE]
 > It is mandatory to click **+** after entering the smart host name to navigate to the next screen.

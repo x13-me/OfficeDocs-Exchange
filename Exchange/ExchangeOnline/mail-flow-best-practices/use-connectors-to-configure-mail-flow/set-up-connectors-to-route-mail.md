@@ -247,7 +247,7 @@ There are two steps for this:
 
 5. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-6. Choose either of the two options between **By verifying that the sender domain matches one of the following domains** and **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization**.
+6. Choose either of the two options between **By verifying that the subject name on the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** and **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong exclusively to your organization**.
 
 > [!NOTE]
 > If you choose the first option, provide your domain name (if your organization has only one domain) or any one of the domains of your organization (in case of multiple domains). If you choose the second option, provide the IP address of organization's domain server.

@@ -51,7 +51,7 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
 When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screenshot.
 
-<include the image connector-validation-link.png>
+:::image type="content" source="../../media/connector-validation-link.png" alt-text="The screen on which the link that enables connector validation is displayed":::
 
 5. Under **Status**, if **Off** is displayed, click **Edit name or status**. The **Connector name** screen appears.
 

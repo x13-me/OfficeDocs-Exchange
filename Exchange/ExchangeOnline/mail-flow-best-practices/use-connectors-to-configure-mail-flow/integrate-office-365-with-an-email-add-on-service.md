@@ -122,11 +122,11 @@ The **New connector** screen appears.
 
 14. Do the following:
 
-    a. Choosing **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
+    a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
     
-    b. Choosing **Issued by a trusted certificate authority (CA)**.
+    b. Choose **Issued by a trusted certificate authority (CA)**.
     
-    c. Choosing **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the Step-8 (for example, myhost.contoso.com)
+    c. Choose **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the Step-8 (for example, myhost.contoso.com).
    
 :::image type="content" source="../../media/configuring-security-restrictions.png" alt-text="A screen on which the security restrictions are configured":::
 
