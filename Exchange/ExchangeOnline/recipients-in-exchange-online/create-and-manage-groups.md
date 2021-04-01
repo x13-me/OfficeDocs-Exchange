@@ -16,7 +16,7 @@ description: Create and manage groups in the new Exchange admin center.
 
 # Create and manage groups in the new Exchange admin center
 
-Use the new Exchange admin center (EAC) to create, modify, export or remove groups in your Exchange Online organization.
+Use the new Exchange admin center (EAC) to create, modify, export, or remove groups in your Exchange Online organization.
 
 There are four types of groups that can be used to distribute messages:
 
