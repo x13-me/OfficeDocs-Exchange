@@ -61,7 +61,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 
 1. In the new EAC, navigate to **Recipients** > **Groups** > **Mail-enabled security**.
 
-2. In the list of groups, click the distribution list group that you want to view or change.
+2. In the list of groups, click the mail-enabled security group that you want to view or change.
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
@@ -83,9 +83,9 @@ You can also select the group and then click **Edit email address** from the too
 
 Use this section to change/edit the following:
 
-- Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The distribution list group must have at least one owner. 
+- Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one owner. 
 
-- Use **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The distribution list group must have at least one owner. 
+- Under **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one member. 
 
 #### Settings
 
@@ -97,7 +97,7 @@ Use this section to manage who can send email to this group.
 
 - **Sender options**
 
-  By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send to this group.
+  By default, only people inside your organization can send messages to this group. You can also allow people outside the organization to send messages to this group.
  
   - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
@@ -140,21 +140,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 #### Membership approvals
 
-Use this section to edit membership approvals and to specify if group owner approval is needed for users to join or leave this group.
-
-- **Joining the group**: View/Edit who are allowed to join the group.
-   
-    1. **Open**: Anyone can join this group without owner approval.
-   
-    2. **Closed**: Only group owners can add members. All requests to join are automatically denied.
-   
-   3. **Owner approval**: Anyone can request to join this group and owners must approve the request.
-   
-   - **Leaving the group**: View/Edit who are allowed to leave the group.
-   
-   1. **Open**: Anyone can leave this group without group owner approval.
-   
-   2. **Closed**: Only group owners can remove members. All requests to leave are automatically denied.
+Use this section to specify if group owner approval is needed for users to join this group.
 
 ### Use the Classic EAC to create a security group
 
