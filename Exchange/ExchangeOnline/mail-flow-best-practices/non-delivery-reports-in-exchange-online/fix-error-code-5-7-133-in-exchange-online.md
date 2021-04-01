@@ -108,7 +108,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
-7. Choose the external senders and the all-internal-users group to be added to the senders list.
+7. Choose external senders (individuals) and the all-internal-users group which you want to add to the senders list.
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
