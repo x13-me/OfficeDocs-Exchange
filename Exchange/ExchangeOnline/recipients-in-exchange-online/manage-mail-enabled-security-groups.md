@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients.
+description: A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory. For more information, see Recipients.
 ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
@@ -20,15 +20,15 @@ manager: serdars
 
 # Manage mail-enabled security groups
 
-A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
+A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) article.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -323,7 +323,7 @@ To verify that you've successfully created a mail-enabled security group, do one
 
 ### Use Exchange Online PowerShell to change security group properties
 
-Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following topics:
+Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following articles:
 
 - [Get-DistributionGroup](/powershell/module/exchange/get-distributiongroup)
 
