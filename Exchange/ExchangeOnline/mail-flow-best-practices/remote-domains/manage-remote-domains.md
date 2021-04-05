@@ -64,19 +64,19 @@ For information about when to configure remote domains, descriptions of the avai
 
 2. Click **+ Add a remote domain**. The **Name the domain** screen appears.
 
-3. In the **Name** box, enter a descriptive name for the domain.
+3. In the **Name** text box, enter a descriptive name for the domain.
 
-4. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
+4. In the **Remote Domain** text box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
  
 5. Click **Next**. The **Email reply types** screen appears.
 
 6. Define the following settings:
 
-- In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
+- In the **Out of Office reply types** section, specify which type of out-of-office replies should be sent to people at this domain.
  
 - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
 
-7. Click **Next**. The **Message reporting** screen appears. 
+7. Click **Next**. The **Message reporting** screen appears.
     
 8. Specify whether you want to allow delivery reports and non-delivery reports by checking the respective check boxes.
 
@@ -84,13 +84,13 @@ For information about when to configure remote domains, descriptions of the avai
 
 10. Define the following settings:
      
-    - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
+    - In the **Use Rich-text format** pane, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
     
-    - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set by choosing from the **MIME character set** or **Non-MIME character set** drop-down list.
+    - In the **Supported Character Set** pane, specify which character set to use (if the message doesn't specify the character set) by choosing from the **MIME character set** or **Non-MIME character set** drop-down list.
 
 11. Click **Next**. The **Review** screen appears.
 
-6. Review the remote domain settings, and click **Save**.
+12. Review the remote domain settings, and click **Save**.
 
 The new remote domain is created and added to the list.
     
@@ -144,7 +144,7 @@ The new remote domain is created and added to the list.
 
 2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
 
-3. In the warning dialog box, click **Confirm**
+3. In the warning dialog box, click **Confirm**. The remote domain is deleted.
 
 **Classic EAC**
 
