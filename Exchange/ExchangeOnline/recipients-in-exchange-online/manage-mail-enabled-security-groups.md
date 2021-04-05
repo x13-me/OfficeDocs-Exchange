@@ -73,7 +73,7 @@ Use this section to view or change basic information about the group.
 
 - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
 
-#### Email options in new EAC
+#### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases**, and then click **Save changes**. 
 
