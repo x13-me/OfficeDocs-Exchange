@@ -83,8 +83,12 @@ Open the EAC and use one of the following procedures based on the recipient type
    4. Under the **Delivery management** pane, click **Edit delivery management**. The **Delivery management** screen appears.
     
    5. Choose the radio button for **Allow messages from people inside and outside my organization**.
+    
+   6. Under **Specified senders**, click on the text box. The list of users (internal and external) are displayed.
+    
+   7. Select and add the external senders and the all internal users group.
    
-   6. Click **Save changes**.
+   8. Click **Save changes**.
     
     - **Classic EAC**
 
