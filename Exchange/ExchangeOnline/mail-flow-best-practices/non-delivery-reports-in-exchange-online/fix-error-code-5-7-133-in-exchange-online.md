@@ -54,9 +54,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
  4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
  
-:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
- 
- 5. Under **Accept messages from**, choose **All senders**.
+ 5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
  
 :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
@@ -100,15 +98,13 @@ To configure the group's allowed senders list, perform the following steps:
 
 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
 
-:::image type="content" source="../../media/delivery-management-screen.png" alt-text="The Delivery Management screen":::
+5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
 
-5. Under **Accept messages from**, choose **Only senders in the following list**.
-
-6. Click inside the text box. The list of senders (internal and external) are displayed.
+6. Under **Specified senders**, click inside the text box. The list of senders (internal and external) are displayed.
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
-7. Choose external senders (individuals) and the all-internal-users group which you want to add to the senders list.
+7. Choose the senders you want to add to the senders list.
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
 
