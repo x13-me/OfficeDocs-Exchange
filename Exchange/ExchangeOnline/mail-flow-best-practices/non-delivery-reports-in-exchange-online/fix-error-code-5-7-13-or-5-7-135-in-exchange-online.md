@@ -107,7 +107,7 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 
 The **Select members** screen appears.
 
-- Check the check boxes of the specific external senders and the all-internal-users group.
+- Check the check boxes of the specific external senders and the all-internal-users group you want to add to the senders list.
 - Click **add**.
  
 :::image type="content" source="../../media/adding-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the specific senders can be added":::
