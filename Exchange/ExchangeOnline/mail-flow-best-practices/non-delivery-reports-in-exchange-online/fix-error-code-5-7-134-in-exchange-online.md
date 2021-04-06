@@ -131,7 +131,7 @@ The **Message delivery restrictions** screen re-appears.
 
 6. Click **Save**.
 
-<include the image saving-settings-after-choosing-sender.png>
+<include the image mdr-screen-after-adding-sender.png>
 
 **In Classic EAC**
 
