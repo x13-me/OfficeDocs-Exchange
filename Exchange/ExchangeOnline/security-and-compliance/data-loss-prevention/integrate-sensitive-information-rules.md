@@ -50,7 +50,7 @@ The rules can also be used in the exception part of a rule definition. Their use
 
 [Data loss prevention](data-loss-prevention.md)
 
-[Sensitive information types entity definitions] (https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-worldwide)
+[Sensitive information type entity definitions](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-worldwide)
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
