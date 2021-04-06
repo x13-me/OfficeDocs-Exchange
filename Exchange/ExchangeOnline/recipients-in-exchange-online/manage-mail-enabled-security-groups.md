@@ -37,7 +37,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 ### Use the new EAC to create a security group
 
-1. In the new EAC, navigate to **Recipients** > **Groups** > **Mail-enabled security**.
+1. In the [new EAC](https://admin.exchange.microsoft.com/), navigate to **Recipients** > **Groups** > **Mail-enabled security**.
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
@@ -63,84 +63,86 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 2. In the list of groups, click the mail-enabled security group that you want to view or change.
 
-3. On the group's properties page, click one of the following sections to view or change properties.
+3. On the group's properties page, click one of the following sections to view or change properties. 
+   
+   When you're finished, click **Save**.
 
-#### General
+   #### General
 
-Use this section to view or change basic information about the group.
+   Use this section to view or change basic information about the group.
 
-- **Name**: This name appears in the address book, on the To: line when email is sent to this group, and in the Groups list. The display name is required and should be user-friendly so people recognize what it is. It also has to be unique in your domain.
+    - **Name**: This name appears in the address book, on the To: line when email is sent to this group, and in the Groups list. The display name is required and should be user-friendly so people recognize what it is. It also has to be unique in your domain.
 
-- **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
+    - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
 
-#### Email options
+   #### Email options
 
-Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases**, and then click **Save changes**. 
+   Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases**, and then click **Save changes**. 
 
-You can also select the group and then click **Edit email address** from the toolbar to change/edit the **Primary email address**, add/delete **Aliases**, and then click **Save changes**.
+   You can also select the group and then click **Edit email address** from the toolbar to change/edit the **Primary email address**, add/delete **Aliases**, and then click **Save changes**.
 
-#### Members
+   #### Members
 
-Use this section to change/edit the following:
+   Use this section to change/edit the following:
 
-- Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one owner. 
+    - Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one owner. 
 
-- Under **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one member. 
+    - Under **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one member. 
 
-#### Settings
+   #### Settings
 
-Under **General settings** section, select the checkbox **Allow external senders to email this group** if you want to allow the external users to send email to this group.
+   Under **General settings** section, select the checkbox **Allow external senders to email this group** if you want to allow the external users to send email to this group.
 
-#### Delivery management
+   #### Delivery management
 
-Use this section to manage who can send email to this group.
+   Use this section to manage who can send email to this group.
 
-- **Sender options**
+    - **Sender options**
 
-  By default, only people inside your organization can send messages to this group. You can also allow people outside the organization to send messages to this group.
+      By default, only people inside your organization can send messages to this group. You can also allow people outside the organization to send messages to this group.
  
-  - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
+       - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
-  - **Allow messages from people inside and outside my organization**: Select this option to allow anyone to send messages to the group.
+       - **Allow messages from people inside and outside my organization**: Select this option to allow anyone to send messages to the group.
 
-- **Specified senders**
+    - **Specified senders**
 
-  You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Select/remove one or more recipients/group from the drop-down list. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+      You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Select/remove one or more recipients/group from the drop-down list. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
 
-  > [!IMPORTANT]
-  > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
+      > [!IMPORTANT]
+      > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-#### Manage delegates
+   #### Manage delegates
 
-Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
+   Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
-- **Send As**: This permission allows the delegate to send messages as the group. After this permission is assigned, the delegate has the option to add the group to the **From** line to indicate that the message was sent by the group.
+    - **Send As**: This permission allows the delegate to send messages as the group. After this permission is assigned, the delegate has the option to add the group to the **From** line to indicate that the message was sent by the group.
 
-- **Send on Behalf**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
+    - **Send on Behalf**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
-To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
+   To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
 
-#### Message approval 
+   #### Message approval 
 
-Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
+   Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
-- **Require moderator approval for messages sent to this group**: This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
+    - **Require moderator approval for messages sent to this group**: This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
 
-- **Group moderators**: To add/remove group moderators, search/add users from the drop-down list. If you've selected **Require moderator approval for messages sent to this group** and you don't select a moderator, messages to the group are sent to the group owners for approval.
+    - **Group moderators**: To add/remove group moderators, search/add users from the drop-down list. If you've selected **Require moderator approval for messages sent to this group** and you don't select a moderator, messages to the group are sent to the group owners for approval.
 
-- **Add senders who don't require message approval**: To add/remove users that can bypass moderation for this group, search/add users from the drop-down list.
+    - **Add senders who don't require message approval**: To add/remove users that can bypass moderation for this group, search/add users from the drop-down list.
 
-- **Notify a sender if their message isn't approved**: Use this section to set how users are notified about message approval.
+    - **Notify a sender if their message isn't approved**: Use this section to set how users are notified about message approval.
 
-  - **Only sender**: This is the default setting. Notify all senders, inside and outside your organization, when their message isn't approved.
+      - **Only sender**: This is the default setting. Notify all senders, inside and outside your organization, when their message isn't approved.
 
-  - **Only senders in your organization**: When you select this option, only users or groups in your organization are notified when a message that they sent to the group isn't approved by a moderator.
+      - **Only senders in your organization**: When you select this option, only users or groups in your organization are notified when a message that they sent to the group isn't approved by a moderator.
 
-  - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
+      - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-#### Membership approvals
+   #### Membership approvals
 
-Use this section to specify if group owner approval is needed for users to join this group.
+   Use this section to specify if group owner approval is needed for users to join this group.
 
 ### Use the Classic EAC to create a security group
 
