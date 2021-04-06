@@ -115,6 +115,8 @@ If you decide that you don't need to restrict the message senders to this group,
 
 8. Click **Save changes**.
 
+:::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
+
 **For Classic EAC**
 
 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
