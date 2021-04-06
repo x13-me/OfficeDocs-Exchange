@@ -58,7 +58,7 @@ This example resumes the copy of the database DB1 on the server MBX2 for activat
 Resume-MailboxDatabaseCopy -Identity DB1\MBX2
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Suspend-MailboxDatabaseCopy) or [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxDatabaseCopy).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](/powershell/module/exchange/Suspend-MailboxDatabaseCopy) or [Resume-MailboxDatabaseCopy](/powershell/module/exchange/Resume-MailboxDatabaseCopy).
 
 ## Use the Shell to configure the activation policy for a server
 
@@ -80,7 +80,7 @@ This example configures the database copies on server MBX4 as unblocked for acti
 Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Suspend-MailboxDatabaseCopy), [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxDatabaseCopy), or [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](/powershell/module/exchange/Suspend-MailboxDatabaseCopy), [Resume-MailboxDatabaseCopy](/powershell/module/exchange/Resume-MailboxDatabaseCopy), or [Set-MailboxServer](/powershell/module/exchange/Set-MailboxServer).
 
 ## How do you know this worked?
 

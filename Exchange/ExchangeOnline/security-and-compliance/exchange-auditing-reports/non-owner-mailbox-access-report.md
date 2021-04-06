@@ -28,7 +28,7 @@ When you enable mailbox audit logging for a mailbox, Exchange Online logs specif
 
 - Estimated time to complete: 5 minutes.
 
-- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
 
 - To find and open the Exchange admin center (EAC), see, [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -37,7 +37,7 @@ When you enable mailbox audit logging for a mailbox, Exchange Online logs specif
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Run a non-owner mailbox access report
 
@@ -80,4 +80,4 @@ When you run a non-owner mailbox access report, entries from the mailbox audit l
 
 - Whether the action was successful
 
-For detailed information, see [Mailbox actions for user mailboxes and shared mailboxes](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-actions-for-user-mailboxes-and-shared-mailboxes).
+For detailed information, see [Mailbox actions for user mailboxes and shared mailboxes](/office365/securitycompliance/enable-mailbox-auditing#mailbox-actions-for-user-mailboxes-and-shared-mailboxes).

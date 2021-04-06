@@ -96,7 +96,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 
 These are the important issues to consider when you use ABPs in your organization:
 
-- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books).
+- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](../../../ExchangeOnline/address-books/hierarchical-address-books/hierarchical-address-books.md).
 
 - A user that's assigned an ABP needs to exist in the GAL that's specified for the ABP.
 
@@ -144,13 +144,13 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 
 
-- To configure a feature that's similar to address book policies in the Skype for Business or Lync client, you can set the **msRTCSIP-GroupingID** attribute for specific users. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://docs.microsoft.com/previous-versions/office/skype-server-2010/gg429725(v=ocs.14)).
+- To configure a feature that's similar to address book policies in the Skype for Business or Lync client, you can set the **msRTCSIP-GroupingID** attribute for specific users. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](/previous-versions/office/skype-server-2010/gg429725(v=ocs.14)).
 
 ## Detailed deployment steps for Scenario 2: Two companies sharing a CEO in one Exchange organization
 
 This section walks you through the deployment steps for [Scenario 2: Two companies sharing a CEO in one Exchange organization](#scenario-2-two-companies-sharing-a-ceo-in-one-exchange-organization). If you recall, Fabrikam and Tailspin Toys are separate companies that share the same CEO.
 
-To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 ### Step 1: Install and configure the Address Book Policy Routing Agent
 

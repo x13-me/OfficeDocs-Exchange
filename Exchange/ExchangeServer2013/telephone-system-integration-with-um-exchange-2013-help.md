@@ -71,7 +71,7 @@ The Exchange UM routing component handles voice mail routing between Lync Server
 
 - Queues missed call notifications, and then uploads them to the Exchange server when the WAN link is restored.
 
-For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
+For more information about Microsoft Lync Server, see [Microsoft Lync Server](/lyncserver/microsoft-lync-server-2013).
 
 > [!CAUTION]
 > When you're integrating Unified Messaging and Lync Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.

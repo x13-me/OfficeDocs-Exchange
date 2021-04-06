@@ -113,7 +113,7 @@ The following prerequisites are required in your Exchange environment before you
 
    - Exchange 2019
 
-2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) for more information.
+2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](../../../ExchangeHybrid/exchange-hybrid.md) for more information.
 
 ### Migration instructions
 
@@ -121,8 +121,8 @@ Click one of the links below for step-by-step instructions on running a batch mi
 
 - [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-microsoft-365-groups.md)
 
-- [Use batch migration to migrate your Exchange Online public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders)
+- [Use batch migration to migrate your Exchange Online public folders to Microsoft 365 Groups](../../../ExchangeOnline/collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders.md)
 
-- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help)
+- [Use batch migration to migrate your Exchange 2013 public folders to Microsoft 365 Groups](../../../ExchangeServer2013/use-batch-migration-to-migrate-exchange-2013-public-folders-to-microsoft-365-groups-exchange-2013-help.md)
 
-- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help)
+- [Use batch migration to migrate your Exchange 2010 public folders to Microsoft 365 Groups](../../../ExchangeServer2013/use-batch-migration-to-migrate-exchange-2010-public-folders-to-microsoft-365-groups-exchange-2013-help.md)

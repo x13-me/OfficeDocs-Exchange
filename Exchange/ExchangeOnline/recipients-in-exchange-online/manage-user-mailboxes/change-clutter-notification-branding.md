@@ -98,7 +98,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
 You can also create a new shared mailbox as the branding mailbox using PowerShell. Follow these steps.
 
-1. [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Type the following commands:
 

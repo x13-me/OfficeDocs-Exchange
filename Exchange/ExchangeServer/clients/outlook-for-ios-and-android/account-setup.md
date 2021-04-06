@@ -48,7 +48,7 @@ If you're using Microsoft Intune as your mobile device management provider, the 
 6. For **Associated app**, choose **Select the required app**, and then, on the **Targeted apps** blade, choose **Microsoft Outlook**.
 
     > [!NOTE]
-    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
+    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](/intune/store-apps-ios).
 
 7. Click **OK** to return to the **Add app configuration** blade.
 
@@ -114,4 +114,4 @@ When you create an app configuration policy in the Azure Portal or through your 
 |com.microsoft.outlook.EmailProfile.AccountDomain|This value specifies the user's account domain.  <br/> **Value type**: String  <br/> **Accepted values**: Domain  <br/> **Default if not specified**: \<blank\>  <br/> **Required**: No  <br/>**Example**: companyname|
 |com.microsoft.outlook.EmailProfile.AccountType|This value specifies the account type being configured based on the authentication model.  <br/> **Value type**: String  <br/> **Accepted values**: BasicAuth  <br/> **Default if not specified**: BasicAuth  <br/> **Required**: No  <br/> **Example**: BasicAuth|
 
- <sup>*</sup> Microsoft Intune users can use tokens that will expand to the correct value according to the enrolled user. See [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) for more information.
+ <sup>*</sup> Microsoft Intune users can use tokens that will expand to the correct value according to the enrolled user. See [Add app configuration policies for managed iOS devices](/intune/app-configuration-policies-use-ios) for more information.

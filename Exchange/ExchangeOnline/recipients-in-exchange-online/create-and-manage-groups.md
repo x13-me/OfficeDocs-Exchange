@@ -29,7 +29,7 @@ There are three types of groups that can be used to distribute messages:
 
 - **Mail-enabled security group** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
-For more information see, [groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups).
+For more information see, [groups](/microsoft-365/admin/create-groups/compare-groups).
 
 ## Create a group
 
@@ -39,7 +39,7 @@ For more information see, [groups](https://docs.microsoft.com/microsoft-365/admi
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
-   For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
+   For more information see, [Create a group](/microsoft-365/admin/create-groups/create-groups).
 
    - In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
 
@@ -125,6 +125,6 @@ You can upgrade a **Distribution list group** to **Microsoft 365 group**.
 
 See one of the following topics for managing groups in the Classic Exchange admin center:
 
-- [Create and manage distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Create and manage distribution groups](./manage-distribution-groups/manage-distribution-groups.md)
 
-- [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Manage mail-enabled security groups](./manage-mail-enabled-security-groups.md)

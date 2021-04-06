@@ -23,26 +23,26 @@ manager: serdars
 
 This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
 
-After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](../../ExchangeHybrid/exchange-hybrid.md).
 
 To actually install Exchange 2016 and Exchange 2019, see [Deploy new installations of Exchange](deploy-new-installations/deploy-new-installations.md).
 
 > [!TIP]
 >
-> - Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help).
+> - Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](../../ExchangeServer2013/exchange-2013-prerequisites-exchange-2013-help.md).
 >
-> - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
+> - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
 >
 > - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/).
 
 ## What do you need to know before you begin?
 
 ::: moniker range="exchserver-2019"
-- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](./system-requirements.md?preserve-view=true&view=exchserver-2019#network-and-directory-servers).
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
-- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](./system-requirements.md?preserve-view=true&view=exchserver-2016#network-and-directory-servers).
 
 - The full installation option of Windows Server 2012 and Windows Server 2012 R2 must be used for all servers running Exchange 2016 server roles or management tools.
 
@@ -52,7 +52,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
 ::: moniker-end
 
-- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#supported-operating-systems-for-exchange-2016).
+- Verify the [Supported operating systems for Exchange 2019](./system-requirements.md?preserve-view=true&view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](./system-requirements.md?preserve-view=true&view=exchserver-2016#supported-operating-systems-for-exchange-2016).
 
 ::: moniker range="exchserver-2019"
 > [!NOTE]

@@ -73,4 +73,4 @@ The following conditions are required for clients and servers to support MAPI ov
 
 - Supported Outlook clients (see the table in the previous section).
 
-- .NET Framework 4.5.2 or later. Note that this is no longer an issue for Exchange 2016 CU5 or later. For more information about the .NET Framework requirements for Exchange 2016, see [Supported .NET Framework versions for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#supported-net-framework-versions-for-exchange-2016).
+- .NET Framework 4.5.2 or later. Note that this is no longer an issue for Exchange 2016 CU5 or later. For more information about the .NET Framework requirements for Exchange 2016, see [Supported .NET Framework versions for Exchange 2016](../../plan-and-deploy/system-requirements.md?preserve-view=true&view=exchserver-2016#supported-net-framework-versions-for-exchange-2016).
