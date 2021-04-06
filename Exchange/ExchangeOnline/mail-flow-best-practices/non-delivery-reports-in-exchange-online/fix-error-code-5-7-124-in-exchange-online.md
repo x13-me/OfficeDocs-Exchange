@@ -111,9 +111,9 @@ If you decide that you don't need to restrict the message senders to this group,
    
 :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
 
-- Choose senders (internal and external) from the list.
+8. Choose senders (internal and external) from the list.
 
-8. Click **Save changes**.
+9. Click **Save changes**.
 
 :::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
 
