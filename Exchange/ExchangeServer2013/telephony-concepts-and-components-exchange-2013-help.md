@@ -130,4 +130,4 @@ For more information about IP PBX and PBX configurations, see [PBX and IP PBX co
 
 [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Telephony advisor for Exchange 2013](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
+[Telephony advisor for Exchange 2013](../ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013.md)

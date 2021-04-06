@@ -22,7 +22,7 @@ A federation trust establishes a trust relationship between a Microsoft Exchange
 For additional management tasks related to federation trusts, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 
@@ -52,7 +52,7 @@ This example removes the federation trust.
 Remove-FederationTrust
 ```
 
-For detailed syntax and parameter information, see [Remove-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Remove-FederationTrust).
+For detailed syntax and parameter information, see [Remove-FederationTrust](/powershell/module/exchange/Remove-FederationTrust).
 
 ## How do you know this worked?
 
@@ -66,6 +66,6 @@ To verify that you have successfully removed the federation trust, do one of the
   Get-FederationTrust
   ```
 
-  For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Get-FederationTrust).
+  For detailed syntax and parameter information, see [Get-FederationTrust](/powershell/module/exchange/Get-FederationTrust).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

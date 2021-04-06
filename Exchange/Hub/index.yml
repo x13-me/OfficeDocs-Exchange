@@ -26,19 +26,19 @@ additionalContent:
         # Card
         - title: Exchange Server 2016 and Exchange Server 2019
           summary: Deploy and manage Exchange 2016 and Exchange 2019 for your organization.
-          url: /Exchange/exchange-server
+          url: ../ExchangeServer/exchange-server.yml
         # Card
         - title: Exchange Server 2013
           summary: Deploy and manage Exchange 2013 for your organization.
-          url: /Exchange/exchange-server-2013-exchange-2013-help
+          url: ../ExchangeServer2013/exchange-server-2013-exchange-2013-help.md
         # Card
         - title: Exchange Online
           summary: Find resources for managing Exchange Online in your Office 365 environment.
-          url: /Exchange/exchange-online
+          url: ../ExchangeOnline/exchange-online.md
         # Card
         - title: Hybrid deployments
           summary: Learn about solutions for Exchange hybrid environments, and how to connect Exchange Server and Office 365.
-          url: /Exchange/exchange-hybrid
+          url: ../ExchangeHybrid/exchange-hybrid.md
         # Card
         - title: PowerShell Reference for Exchange
           summary: Learn about the PowerShell cmdlets you need to manage Exchange Server, Exchange Online, Office 365 Security &amp; Compliance Center, and Exchange Online Protection.
@@ -61,4 +61,3 @@ additionalContent:
         - title: Developers
           summary: Guidance for developing solutions for Exchange.
           url: /Exchange/client-developer/exchange-server-development
-

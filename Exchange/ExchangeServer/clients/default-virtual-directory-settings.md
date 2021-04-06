@@ -63,4 +63,4 @@ The following table lists the default settings in the back end services on Excha
 
 ## See also
 
-[Virtual directory management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help)
+[Virtual directory management](../../ExchangeServer2013/virtual-directory-management-exchange-2013-help.md)

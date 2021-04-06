@@ -73,7 +73,7 @@ To create a Send connector that's configured to send messages to the Internet, r
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/New-SendConnector).
 
 ## Step 2: Create a Send connector configured to send messages to the Exchange organization
 
@@ -105,7 +105,7 @@ $MailboxCredentials = Get-Credential
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/New-SendConnector).
 
 ## Step 3: Modify the default Receive connector to only accept messages from the Internet
 
@@ -121,7 +121,7 @@ To modify the default Receive connector to only accept messages from the Interne
 Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](/powershell/module/exchange/Set-ReceiveConnector).
 
 ## Step 4: Create a Receive connector configured to only accept messages from the Exchange organization
 
@@ -143,7 +143,7 @@ To create a Receive connector configured to only accept messages from the Exchan
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/New-ReceiveConnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](/powershell/module/exchange/New-ReceiveConnector).
 
 ## How do you know these steps worked?
 
@@ -187,7 +187,7 @@ $EdgeCredentials = Get-Credential
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/New-SendConnector).
 
 ## How do you know this step worked?
 

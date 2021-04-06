@@ -26,7 +26,7 @@ The following figure illustrates the relationship between the linked user accoun
 ![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
 
 > [!NOTE]
-> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see <A href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156983(v=exchg.150)">Learn more about setting up a forest trust to support linked mailboxes</A>.
+> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see <A href="/previous-versions/exchange-server/exchange-150/jj156983(v=exchg.150)">Learn more about setting up a forest trust to support linked mailboxes</A>.
 
 ## What do you need to know before you begin?
 
@@ -90,7 +90,7 @@ The following figure illustrates the relationship between the linked user accoun
 
    - **Mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to choose a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
 
-   - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](../ExchangeOnline/address-books/address-book-policies/address-book-policies.md).
 
      In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -104,7 +104,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/New-Mailbox).
+For syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/New-Mailbox).
 
 ## How do you know this worked?
 
@@ -122,7 +122,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 After you create a linked mailbox, you can make changes and set additional properties by using the Exchange admin center (EAC) or the Exchange Management Shell.
 
-You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) topic.
+You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage user mailboxes](../ExchangeOnline/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md) topic.
 
 > [!IMPORTANT]
 > The estimated time to complete this task will vary based on the number of properties you want to view or change.
@@ -235,7 +235,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address Book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a user for voice mail](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a user for voice mail](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail.md).
 
   > [!NOTE]
   > A UM dial plan and a UM mailbox policy must exist before you can enable UM.
@@ -335,9 +335,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
+- [Get-Mailbox](/powershell/module/exchange/Get-Mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox)
+- [Set-Mailbox](/powershell/module/exchange/Set-Mailbox)
 
 Here are some examples of using the Shell to change linked mailbox properties.
 

@@ -116,4 +116,4 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 </tbody>
 </table>
 
-For details about all UM cmdlets, see [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/).
+For details about all UM cmdlets, see [Exchange PowerShell](/powershell/exchange/).

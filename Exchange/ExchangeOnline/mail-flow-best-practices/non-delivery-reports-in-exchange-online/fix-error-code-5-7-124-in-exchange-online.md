@@ -38,7 +38,7 @@ You might have to wait for the group's owner to approve your request to join the
 
 The two methods that will allow the sender to send messages to the group are described in the following sections.
 
-To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 ### Method 1: Add the sender to the group's existing allowed senders list
 
@@ -83,7 +83,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 4. Click **Save**.
 
 > [!NOTE]
-> To add an external sender to a group's allowed senders list, you must first create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
+> To add an external sender to a group's allowed senders list, you must first create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
 
 ### Method 2: Allow all internal and external senders to send messages to this group
 
@@ -139,7 +139,7 @@ Groups with more than 5,000 members have the following restrictions automaticall
 
 - Messages sent to the group require the approval of a moderator. To configure moderation for a group, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md).
 
-- Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
+- Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
 ## Still need help with error code 550 5.7.124?
 
@@ -147,7 +147,7 @@ Groups with more than 5,000 members have the following restrictions automaticall
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 
