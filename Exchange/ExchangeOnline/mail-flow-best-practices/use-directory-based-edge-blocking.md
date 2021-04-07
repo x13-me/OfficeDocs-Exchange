@@ -60,7 +60,7 @@ This section describes the procedure to configure DBEB for both the New Exchange
     d. Click **Save**.
 
 2. Add users to Microsoft 365 or Office 365. For example:
-    - **Directory synchronization**: Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop).
+    - **Directory synchronization**: Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) in the cloud. For more information about how to set up directory synchronization, see **Use directory synchronization to manage mail users** section in [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop).
     - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md).
 
 3. Set your accepted domain in Exchange Online to **Authoritative**:

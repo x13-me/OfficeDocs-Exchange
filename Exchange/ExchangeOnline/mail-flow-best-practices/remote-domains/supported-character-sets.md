@@ -36,19 +36,33 @@ The following table describes the character sets that you can configure in remot
 
 The **Name the domain** screen appears.
 
-3. Provide a name for the domain and the equivalent remote version of the domain.
+3. Provide a name for the domain and the remote domain in their respective text boxes.
 
 4. Click **Next**. The **Email reply types** screen appears.
 
-5. Configure the automatic email reply types' settings by choosing options shown in the following screenshot:
+5. Configure the 'automatic email reply types' settings by choosing one of the following options:
+
+    - None
+    - Allow only external out of office replies
+    - Allow internal out of office replies
 
 6. Click **Next**. The **Message reporting** screen appears.
 
-7. Configure the message-reporting settings by choosing options shown in the following screenshot:
+7. Configure the message-reporting settings by choosing the following options:
+
+    - Allow delivery options
+    - Allow non-delivery options
+    - Allow meeting forward notifications
+    
+> [!NOTE]
+> You can choose one of more options.
 
 8. Click **Next**. The **Text and character set** screen appears.
 
-9. Configure the format and delivery method of email messages. Do this by choosing options shown in the following screenshot:
+9. Configure the format and delivery method of email messages. Do this by choosing any of the options in the following panes:
+
+    - Use rich-text format
+    - Supported Character Set
 
 10. Click **Next**. The **Review** screen appears.
 
