@@ -42,17 +42,17 @@ The **Name the domain** screen appears.
 
 5. Configure the 'automatic email reply types' settings by choosing one of the following options:
 
-    - None
-    - Allow only external out of office replies
-    - Allow internal out of office replies
+    - **None**
+    - **Allow only external out of office replies**
+    - **Allow internal out of office replies**
 
 6. Click **Next**. The **Message reporting** screen appears.
 
 7. Configure the message-reporting settings by choosing the following options:
 
-    - Allow delivery options
-    - Allow non-delivery options
-    - Allow meeting forward notifications
+    - **Allow delivery options**
+    - **Allow non-delivery options**
+    - **Allow meeting forward notifications**
     
 > [!NOTE]
 > You can choose one of more options.
@@ -61,8 +61,8 @@ The **Name the domain** screen appears.
 
 9. Configure the format and delivery method of email messages. Do this by choosing any of the options in the following panes:
 
-    - Use rich-text format
-    - Supported Character Set
+    - **Use rich-text format**
+    - **Supported Character Set**
 
 10. Click **Next**. The **Review** screen appears.
 
