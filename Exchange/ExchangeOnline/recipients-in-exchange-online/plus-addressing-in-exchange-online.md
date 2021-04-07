@@ -29,11 +29,11 @@ By default, plus addressing support is disabled in Exchange Online. Since Exchan
 **You can't enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell**. 
 
 >[!NOTE]
-> Currently, plus addresses are only supported for mailboxes but support for Groups and DLs is being rolled out and will be available by the end of December 2020. 
+> Plus addresses are only supported for mailboxes and Groups. 
 
 ## Enable plus addressing in your Exchange Online organization
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. The command uses the following syntax:
 
