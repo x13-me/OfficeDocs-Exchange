@@ -66,7 +66,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 3. In the **Name** text box, enter a descriptive name for the domain.
 
-4. In the **Remote Domain** text box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
+4. In the **Remote Domain** text box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \***.contoso.com**.
  
 5. Click **Next**. The **Email reply types** screen appears.
 
