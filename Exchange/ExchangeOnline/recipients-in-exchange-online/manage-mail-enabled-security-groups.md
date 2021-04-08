@@ -20,6 +20,9 @@ manager: serdars
 
 # Manage mail-enabled security groups
 
+> [!NOTE]
+> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
