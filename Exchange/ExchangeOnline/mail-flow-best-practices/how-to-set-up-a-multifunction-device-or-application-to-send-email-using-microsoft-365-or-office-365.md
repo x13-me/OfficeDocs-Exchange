@@ -24,6 +24,9 @@ localization_priority: Priority
 
 # How to set up a multifunction device or application to send email using Microsoft 365 or Office 365
 
+> [!IMPORTANT]
+> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+
 Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Microsoft 365 or Office 365. For example:
