@@ -131,7 +131,7 @@ The **Message delivery restrictions** screen re-appears.
 
 6. Click **Save**.
 
-<include the image mdr-screen-after-adding-sender.png>
+:::image type="content" source="../../media/mdr-screen-after-adding-sender.png" alt-text="The Message delivery restrictions screen on which senders have been added to be saved into the group":::
 
 **In Classic EAC**
 
