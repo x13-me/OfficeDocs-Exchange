@@ -20,6 +20,9 @@ manager: serdars
 
 # Clean up or delete items from the Recoverable Items folder in Exchange Online
 
+> [!IMPORTANT]
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliances features. They are no longer available in the [Exchange Admin Center](https://admin.exchange.microsoft.com).
+
 The Recoverable Items folder (known in earlier versions of Exchange as *the dumpster*) exists to protect from accidental or malicious deletions and to facilitate discovery efforts commonly undertaken before or during litigation or investigations.
 
 How you clean up or delete items from a user's Recoverable Items folder depends on whether the mailbox is placed on In-Place Hold or Litigation Hold, or had single item recovery enabled:
