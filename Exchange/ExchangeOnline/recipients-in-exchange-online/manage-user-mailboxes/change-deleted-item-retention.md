@@ -20,6 +20,9 @@ manager: serdars
 
 # Change how long permanently deleted items are kept for an Exchange Online mailbox
 
+> [!NOTE]
+> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), the item is moved to a folder ( **Recoverable Items** \> **Deletions**) and kept there for 14 days, by default. You can change how long items are kept, up to a maximum of 30 days.
 
 > [!NOTE]
