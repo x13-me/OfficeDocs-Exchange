@@ -27,6 +27,9 @@ description: "Learn how to fix email issues for error code 550 4.4.7 in Exchange
 
 # Fix email delivery issues for error code 550 4.4.7 in Exchange Online
 
+> [!IMPORTANT]
+> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+
 It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 4.4.7 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 ## Why did I get this bounce message?
