@@ -19,6 +19,9 @@ manager: serdars
 
 # Recover deleted messages in a user's mailbox in Exchange Online
 
+> [!NOTE]
+> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 (This topic is intended for Exchange administrators.)
 
 Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person (by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App)), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired.
