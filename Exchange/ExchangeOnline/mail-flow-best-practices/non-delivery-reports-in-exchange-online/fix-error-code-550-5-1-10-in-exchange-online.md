@@ -21,6 +21,9 @@ description: "Learn how to fix email issues for error code 550 5.1.10 in Exchang
 
 # Fix email delivery issues for error code 550 5.1.10 in Exchange Online
 
+> [!IMPORTANT]
+> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+
 Problems sending and receiving email messages can be frustrating. If you get a non-delivery report (NDR), also called a bounce message, for error code 550 5.1.10, this article can help you fix the problem and get your message sent.
 
 ![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png) [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)
