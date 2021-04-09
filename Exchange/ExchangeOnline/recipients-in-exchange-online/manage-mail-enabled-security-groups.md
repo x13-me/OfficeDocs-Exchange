@@ -35,7 +35,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 ## Use the Exchange admin center to manage a mail-enabled security group
 
-### Use the new EAC to create a security group
+### Use the new EAC to create a mail-enabled security group
 
 1. In the [new EAC](https://admin.exchange.microsoft.com/), navigate to **Recipients** > **Groups** > **Mail-enabled security**.
 
