@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.7.133 in Exchange Online"
-ms.author: dmaguire
+ms.author: msdmaguire
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -58,6 +58,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
  
 :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
  
+
  6. Click **Save changes**.
 
  **In Classic EAC**
@@ -104,11 +105,9 @@ To configure the group's allowed senders list, perform the following steps:
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
-7. Choose the senders you want to add to the senders list.
+7. Choose the senders you want to add to the senders list, and click **Save changes**.
 
 :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
-
-8. Click **Save changes**.
 
 **For Classic EAC**   
 
