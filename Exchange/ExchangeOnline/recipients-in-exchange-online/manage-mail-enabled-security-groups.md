@@ -144,7 +144,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
    Use this section to specify if group owner approval is needed for users to join this group.
 
-### Use the Classic EAC to create a security group
+### Use the Classic EAC to create a mail-enabled security group
 
 1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
 
@@ -325,7 +325,7 @@ To verify that you've successfully created a mail-enabled security group, do one
   Get-DistributionGroup <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
-### Use Exchange Online PowerShell to change security group properties
+### Use Exchange Online PowerShell to change mail-enabled security group properties
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following articles:
 
