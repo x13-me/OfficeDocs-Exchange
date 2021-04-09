@@ -144,7 +144,6 @@ Enter the following settings on the device or in the application directly.
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
 |Email address|Any email address for one of your Microsoft 365 or Office 365 accepted domains. This email address does not need to have a mailbox.|
-|
 
 We recommend adding an SPF record to avoid having messages flagged as spam. If you are sending from a static IP address, add it to your SPF record in your domain registrar's DNS settings as follows:
 
@@ -153,7 +152,6 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 |DNS entry|Value|
 |---|---|
 |SPF|`v=spf1 ip4:<Static IP Address> include:spf.protection.outlook.com ~all`|
-|
 
 ### Step-by-step instructions for direct send
 
@@ -165,16 +163,16 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    The MX record will have a **Points to address or value** value that looks similar to `contoso-com.mail.protection.outlook.com`.
 
-   Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
+4. Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 
-4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.
+5. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 4.
 
    > [!NOTE]
    > Do NOT use an IP address for the Microsoft 365 or Office 365 server connection, as IP addresses are not supported.
 
-5. Now that you are done configuring your device settings, go to your domain registrar's website to update your DNS records. Edit your sender policy framework (SPF) record. In the entry, include the IP address that you noted in step 1. The finished string looks similar to this:
+6. Now that you are done configuring your device settings, go to your domain registrar's website to update your DNS records. Edit your sender policy framework (SPF) record. In the entry, include the IP address that you noted in step 1. The finished string looks similar to this:
 
    `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`
 
@@ -183,7 +181,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
    > [!NOTE]
    > Skipping this step might cause email to be sent to recipients' junk mail folders.
 
-6. To test the configuration, send a test email from your device or application, and confirm that the recipient received it.
+7. To test the configuration, send a test email from your device or application, and confirm that the recipient received it.
 
 ### How direct send works
 
@@ -248,7 +246,6 @@ SMTP relay lets Microsoft 365 or Office 365 relay emails on your behalf by using
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
 |Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|
-|
 
 If you already have a connector that's configured to deliver messages from your on-premises organization to Microsoft 365 or Office 365 (for example, a hybrid environment), you probably don't need to create a dedicated connector for Microsoft 365 or Office 365 SMTP relay. If you need to create a connector, use the following settings to support this scenario:
 
@@ -259,7 +256,6 @@ If you already have a connector that's configured to deliver messages from your 
 |From|Your organization's email server|
 |To|Microsoft 365 or Office 365|
 |Domain restrictions: IP address/range|Your on-premises IP address or address range that the device or application will use to connect to Microsoft 365 or Office 365|
-|
 
 We recommend adding an SPF record to avoid having messages flagged as spam. If you are sending from a static IP address, add it to your SPF record in your domain registrar's DNS settings as follows:
 
@@ -268,7 +264,6 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 |DNS entry|Value|
 |---|---|
 |SPF|`v=spf1 ip4:<Static IP Address> include:spf.protection.outlook.com ~all`|
-|
 
 ### Step-by-step configuration instructions for SMTP relay
 
@@ -280,33 +275,35 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    The MX record will have a **Points to address or value** value that looks similar to `contoso-com.mail.protection.outlook.com`.
 
-   Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
+4. Make a note of the MX record **Points to address or value** value, which we refer to as your MX endpoint.
 
    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 
-4. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
+5. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
 
-5. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the Exchange admin center.
+6. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the Exchange admin center.
 
-6. In the Exchange admin center, go to **Mail flow** \> **Connectors**.
+7. In the Exchange admin center, go to **Mail flow** \> **Connectors**.
 
-7. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
+8. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
 
-   1. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
+   a. To start the wizard, click the plus symbol **+**. 
+   
+   b. On the first screen, choose the options that are depicted in the following screenshot:
 
       ![Choose from your organization's email server to Microsoft 365 or Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
 
-      Click **Next**, and give the connector a name.
+    c. Click **Next**, and give the connector a name.
 
-   2. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
+    d. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and          add the IP address from step 1.
 
-   3. Leave all the other fields with their default values, and select **Save**.
+    e. Leave all the other fields with their default values, and select **Save**.
 
-8. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
+9. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
 
-9. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
+10. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
 
-10. To test the configuration, send a test email from your device or application, and confirm that it was received by the recipient.
+11. To test the configuration, send a test email from your device or application, and confirm that it was received by the recipient.
 
 ### Configure a certificate-based connector to relay email through Microsoft 365 or Office 365
 
@@ -365,14 +362,12 @@ Here's a comparison of each configuration option and the features they support.
 |Open network port|Port 587 or port 25|Port 25|Port 25|
 |Device or application server must support TLS|Required|Optional|Optional|
 |Requires authentication|Microsoft 365 or Office 365 username and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Microsoft 365 or Office 365.|
-|
 
 ****
 
 |Limitations|SMTP client submission|Direct send|SMTP relay|
 |---|---|---|---|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Microsoft 365 or Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
-|
 
 ## Use your own email server to send email from multifunction devices and applications
 
