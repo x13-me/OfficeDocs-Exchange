@@ -48,10 +48,10 @@ The topics in the following table contain procedures that use Queue Viewer:
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Connect to a Server in Queue Viewer](https://docs.microsoft.com/exchange/connect-to-a-server-in-queue-viewer-exchange-2013-help)|By default, Queue Viewer opens the queue database on the server where you opened Queue Viewer. However, you can connect to a different server.|
-|[Set Queue Viewer Options](https://docs.microsoft.com/exchange/set-queue-viewer-options-exchange-2013-help)|You can configure the queue and message refresh intervals, and the number of items that are displayed on each page.|
+|[Connect to a Server in Queue Viewer](../../../ExchangeServer2013/connect-to-a-server-in-queue-viewer-exchange-2013-help.md)|By default, Queue Viewer opens the queue database on the server where you opened Queue Viewer. However, you can connect to a different server.|
+|[Set Queue Viewer Options](../../../ExchangeServer2013/set-queue-viewer-options-exchange-2013-help.md)|You can configure the queue and message refresh intervals, and the number of items that are displayed on each page.|
 |[View queued message properties in Queue Viewer](queued-message-properties.md)|Explains how to use Queue Viewer to view messages, and explains the message properties.|
-|[Export Lists from Queue Viewer](https://docs.microsoft.com/exchange/export-lists-from-queue-viewer-exchange-2013-help)|You can use the **Export List** link in the action pane to export the list of queues or a list of messages for troubleshooting and diagnostics.|
+|[Export Lists from Queue Viewer](../../../ExchangeServer2013/export-lists-from-queue-viewer-exchange-2013-help.md)|You can use the **Export List** link in the action pane to export the list of queues or a list of messages for troubleshooting and diagnostics.|
 |[Queue properties](queue-properties.md)|Describes the queue properties, and shows the properties that are available in Queue View versus the Exchange Management Shell.|
 |[Properties of messages in queues](message-properties.md)|Describes the message properties, and shows the properties that are available in Queue View versus the Exchange Management Shell.|
 |[Procedures for queues](queue-procedures.md)|Explains how to view, retry, resubmit, suspend, and resume queues.|

@@ -78,4 +78,4 @@ The following table lists the DLP policy templates in Exchange.
 
 [Create a DLP policy from a template](create-dlp-policy-from-template.md)
 
-[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
+[Sensitive information types in Exchange Server](../../../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md)

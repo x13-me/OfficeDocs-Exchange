@@ -58,7 +58,7 @@ To create a dedicated spam quarantine mailbox, follow these steps:
 
 - **Create a dedicated mailbox and user account**: We recommend that you create a dedicated mailbox and Active Directory user account for the spam quarantine mailbox. For more information, see [Create user mailboxes](create-user-mailboxes-exchange-2013-help.md).
 
-  You may apply recipient policies, such as messaging records management, mailbox quotas, and delegation rights, according to your organization's compliance policies and needs. For more information, see [Messaging records management](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
+  You may apply recipient policies, such as messaging records management, mailbox quotas, and delegation rights, according to your organization's compliance policies and needs. For more information, see [Messaging records management](../ExchangeOnline/security-and-compliance/messaging-records-management/messaging-records-management.md).
 
   > [!NOTE]
   > If a quarantined message is rejected because of a storage quota, the message will be lost. Exchange doesn't generate NDRs for quarantined messages because the quarantined messages are wrapped as NDRs.

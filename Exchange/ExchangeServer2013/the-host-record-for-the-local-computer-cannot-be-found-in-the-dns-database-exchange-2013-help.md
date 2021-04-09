@@ -25,15 +25,15 @@ Exchange depends on DNS Host (A) records for the IP Address of its next internal
 
 To resolve this issue:
 
-- Verify that the local TCP/IP configuration points to the correct DNS server. For more information, see [Configure TCP/IP settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731673(v=ws.10)).
+- Verify that the local TCP/IP configuration points to the correct DNS server. For more information, see [Configure TCP/IP settings](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731673(v=ws.10)).
 
-- Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772976(v=ws.10)).
+- Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](/previous-versions/orphan-topics/ws.10/cc772976(v=ws.10)).
 
 For information about DNS name resolution, troubleshooting, and Host (A) records, see the following:
 
-- [Troubleshooting DNS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753041(v=ws.11))
+- [Troubleshooting DNS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753041(v=ws.11))
 
-- [Managing resource records](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754308(v=ws.11))
+- [Managing resource records](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754308(v=ws.11))
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 

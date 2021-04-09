@@ -70,7 +70,7 @@ To set up Office Online Server, you will need the following:
 
 ## Install Office Online Server
 
-1. To install Office Online Server, follow Steps 1 through 3 in the section **Prepare servers to run Office Online Server** of the article [Deploy Office Online Server](https://docs.microsoft.com/officeonlineserver/deploy-office-online-server#prepare-servers-to-run-office-online-server) before proceeding.
+1. To install Office Online Server, follow Steps 1 through 3 in the section **Prepare servers to run Office Online Server** of the article [Deploy Office Online Server](/officeonlineserver/deploy-office-online-server#prepare-servers-to-run-office-online-server) before proceeding.
 
 5. Obtain and import an SSL certificate with the fully qualified domain name(s) (FQDN) of the Office Online Server server. If your organization is configured for split DNS, you only need to configure one FQDN on the certificate. For example, oos.contoso.com. If you have different internal and external FQDNs, you'll need to configure both FQDNs on the certificate. For example, oos.internal.contoso.com and oos.contoso.com.
 

@@ -60,7 +60,7 @@ Multi-forest hybrid deployment prerequisites are almost identical to the hybrid 
 
 - **Namespace planning**: Each forest in which you install Exchange requires its own unique externally-discoverable namespace. You will specify a forest's unique namespace in the Hybrid Configuration wizard when you run it in each forest.
 
-- **Active Directory synchronization**: All hybrid deployments require Active Directory synchronization with Microsoft 365 or Office 365. If your company has already set up Active Directory synchronization between your multi-forest on-premises organization and Microsoft 365 or Office 365 using Forefront Identity Manager, you can use [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+- **Active Directory synchronization**: All hybrid deployments require Active Directory synchronization with Microsoft 365 or Office 365. If your company has already set up Active Directory synchronization between your multi-forest on-premises organization and Microsoft 365 or Office 365 using Forefront Identity Manager, you can use [Azure Active Directory Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
 - **Single sign-on**: Although not a requirement for hybrid deployments with single Active Directory forests, administrators can choose to configure an SSO server in each Active Directory forest, or to configure a single SSO server if there is a two-way forest trust configured between the on-premises forests. You use either AD FS or password sync to allow for a seamless user authentication experience.
 

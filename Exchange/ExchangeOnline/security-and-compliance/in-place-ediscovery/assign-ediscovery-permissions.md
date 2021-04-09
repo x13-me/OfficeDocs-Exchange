@@ -29,7 +29,7 @@ To learn more about the Discovery Management role group and role based access co
 
 Interested in scenarios where this procedure is used? See the following topics:
 
-- [Create an In-Place eDiscovery search](create-in-place-ediscovery-search.md)
+- [Create an In-Place eDiscovery search](/microsoft-365/compliance/content-search)
 
 - [Create or remove an In-Place Hold](../../security-and-compliance/create-or-remove-in-place-holds.md)
 
@@ -65,7 +65,7 @@ This example adds the user Bsuneja to the Discovery Management role group.
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
-For detailed syntax and parameter information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
+For detailed syntax and parameter information, see [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

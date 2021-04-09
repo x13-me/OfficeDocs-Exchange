@@ -26,26 +26,23 @@ Protecting company or organizational data is extremely important. Outlook for iO
 
 Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Microsoft 365 or Office 365 accounts using the native Microsoft sync technology.
 
-> [!NOTE]
-> Sensitvity labeling is not supported with Government Community Cloud accounts.
-
 ## Understanding Sensitivity Labeling
-Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels). 
+Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels). 
 
 From a classification perspective, a sensitivity label is applied to a message and is retained throughout the message's lifecycle (assuming the label is not removed). In addition, sensitivity labels can be configured to mark content by adding a header or footer to the message body. 
 
 Sensitivity labels can also be configured to protect messages with access restrictions or encryption. Access restrictions include ensuring only users within the organization can open the message, restricting editing rights, preventing forwarding, printing, or copying the contents of the message. Encryption provides at-rest encryption and ensures only authorized users can decrypt the message. 
 
-When a sensitivity label is configured with encryption, the encryption process depends on the client platform. With Outlook for iOS and Android, encryption occurs within Exchange Online transport after the message is sent from the sender, prior to recipient delivery. Encryption does not occur within the app. For more information, see [How sensitivity labels work in Office apps](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps).
+When a sensitivity label is configured with encryption, the encryption process depends on the client platform. With Outlook for iOS and Android, encryption occurs within Exchange Online transport after the message is sent from the sender, prior to recipient delivery. Encryption does not occur within the app. For more information, see [How sensitivity labels work in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps).
 
-Likewise, Outlook for iOS and Android does not perform decryption of received messages, either. Exchange Online performs the decryption prior to delivering the message to Outlook for iOS and Android. For more information, see [Outlook for iOS and Android in Exchange Online: FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Likewise, Outlook for iOS and Android does not perform decryption of received messages, either. Exchange Online performs the decryption prior to delivering the message to Outlook for iOS and Android. For more information, see [Outlook for iOS and Android in Exchange Online: FAQ](./outlook-for-ios-and-android-faq.md).
 
 ## Deploying Sensitivity Labeling with Outlook for iOS and Android
 
-For information on how to create and define sensitivity labels, as well as, publishing a label policy, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels).
+For information on how to create and define sensitivity labels, as well as, publishing a label policy, see [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 > [!IMPORTANT]
-> If your organization has previously deployed Azure Information Protection labels, you must migrate from Azure Information Protection to Microsoft Information Protection. To determine which platform is being used, see [Frequently asked questions for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). To complete the migration, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+> If your organization has previously deployed Azure Information Protection labels, you must migrate from Azure Information Protection to Microsoft Information Protection. To determine which platform is being used, see [Frequently asked questions for Azure Information Protection](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). To complete the migration, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 ## Using Sensitivity Labeling with Outlook for iOS and Android
 
@@ -57,20 +54,20 @@ S/MIME provides encryption, which protects the content of e-mail messages, and i
 
 Digital signatures are the more commonly used service of S/MIME. As the name suggests, digital signatures are the digital counterpart to the traditional, legal signature on a paper document. As with a legal signature, digital signatures provide the following security capabilities:
 
-  - **Authentication:** A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP e-mail, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
+- **Authentication:** A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP e-mail, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
 
-  - **Nonrepudiation:** The uniqueness of a signature prevents the owner of the signature from disowning the signature. This capability is called nonrepudiation. Thus, the authentication that a signature provides gives the means to enforce nonrepudiation. The concept of nonrepudiation is most familiar in the context of paper contracts: a signed contract is a legally binding document, and it is impossible to disown an authenticated signature. Digital signatures provide the same function and, increasingly in some areas, are recognized as legally binding, similar to a signature on paper. Because SMTP e-mail does not provide a means of authentication, it cannot provide nonrepudiation. It is easy for a sender to disavow ownership of an SMTP e-mail message.
+- **Nonrepudiation:** The uniqueness of a signature prevents the owner of the signature from disowning the signature. This capability is called nonrepudiation. Thus, the authentication that a signature provides gives the means to enforce nonrepudiation. The concept of nonrepudiation is most familiar in the context of paper contracts: a signed contract is a legally binding document, and it is impossible to disown an authenticated signature. Digital signatures provide the same function and, increasingly in some areas, are recognized as legally binding, similar to a signature on paper. Because SMTP e-mail does not provide a means of authentication, it cannot provide nonrepudiation. It is easy for a sender to disavow ownership of an SMTP e-mail message.
 
-  - **Data integrity:** An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed e-mail message validates the digital signature, the recipient is assured that the e-mail message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
+- **Data integrity:** An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed e-mail message validates the digital signature, the recipient is assured that the e-mail message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
 
 > [!IMPORTANT]
 > Although digital signatures provide data integrity, they don't provide confidentiality. Messages with only a digital signature are sent in cleartext, like SMTP messages and can be read by others. In the case where the message is opaque-signed, a level of obfuscation is achieved because the message is base64-encoded, but it is still cleartext. To protect the contents of e-mail messages, encryption must be used.
 
 Message encryption provides a solution to information disclosure. SMTP-based Internet e-mail does not secure messages. An SMTP Internet e-mail message can be read by anyone who sees it as it travels or views it where it is stored. These problems are addressed by S/MIME using encryption. Encryption is a way to change information so that it cannot be read or understood until it is changed back into a readable and understandable form. Message encryption provides two specific security services:
 
-  - **Confidentiality**: Message encryption serves to protect the contents of an e-mail message. Only the intended recipient can view the contents, and the contents remain confidential and cannot be known by anyone else who might receive or view the message. Encryption provides confidentiality while the message is in transit and in storage.
+- **Confidentiality**: Message encryption serves to protect the contents of an e-mail message. Only the intended recipient can view the contents, and the contents remain confidential and cannot be known by anyone else who might receive or view the message. Encryption provides confidentiality while the message is in transit and in storage.
 
-  - **Data** **integrity:** As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
+- **Data** **integrity:** As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
 
 > [!IMPORTANT]
 > Although message encryption provides confidentiality, it doesn't authenticate the message sender in any way. An unsigned, encrypted message is as susceptible to sender impersonation as a message that isn't encrypted. Because nonrepudiation is a direct result of authentication, message encryption also doesn't provide nonrepudiation. Although encryption does provide data integrity, an encrypted message can show only that the message hasn't been altered since it was sent. No information about who sent the message is provided. To prove the identity of the sender, the message must use a digital signature.
@@ -83,9 +80,9 @@ In order to leverage S/MIME in Outlook for iOS and Android, the Exchange Online 
 2. Automated certificate delivery
 
 ### S/MIME Prerequisites
-Ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). Specifically, this includes:
+Ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). Specifically, this includes:
 
-1. Setting up the [virtual certificate collection](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime).
+1. Setting up the [virtual certificate collection](/microsoft-365/security/office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime).
 
 2. Publishing the certificate revocation list to the Internet.
 
@@ -116,9 +113,9 @@ With Endpoint Manager, organizations can import encryption certificate histories
 
 In order to deliver certificates to Outlook for iOS and Android, the following prerequisites must be completed:
 
-- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).
-- Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure).
-- Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
+- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](/intune/protect/certificates-configure#create-trusted-certificate-profiles).
+- Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](/intune/protect/certificates-imported-pfx-configure).
+- Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](/intune/protect/certificates-imported-pfx-configure#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 - Devices must be enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
 
 #### Outlook for iOS Automated Certificate Delivery
@@ -133,11 +130,11 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 6. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
-   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
+   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](/intune/store-apps-ios).
 
 7. Click **Configuration settings** to add configuration settings. 
 
-    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](./outlook-for-ios-and-android-configuration-with-microsoft-intune.md).
 
 8. Click **S/MIME** to display the **Outlook S/MIME settings**.
     ![Screenshot showing Outlook S/MIME settings.](../../media/Outlook_mobile_SMIME_Settings_v2.png)
@@ -151,8 +148,8 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 12. Set **Deploy S/MIME certificates from Intune** to **Yes**.
 
 13. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
-    - **SCEP** – Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](https://docs.microsoft.com/intune/protect/certificates-scep-configure). 
-    - **PKCS imported certificates** – Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](https://docs.microsoft.com/mem/intune/protect/certficates-pfx-configure).
+    - **SCEP** – Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](/intune/protect/certificates-scep-configure). 
+    - **PKCS imported certificates** – Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](/mem/intune/protect/certficates-pfx-configure).
     - **Derived credentials** – Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
 
 14. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
@@ -170,14 +167,14 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     End-users will see an experience similar to the following for automated certificate delivery:
     ![Screenshot showing automated certificate delivery.](../../media/all-in-one-certificate-delivery.png)
 
-16. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+16. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
 #### Outlook for Android Automated Certificate Delivery
 
 Use the following steps to create and configure the Outlook for iOS and Android S/MIME policy in Endpoint Manager. These settings provide automated delivery of the signing and encryption certificates.
 
 1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
-2. Create a [SCEP certificate profile](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep) or [PKCS certificate profile](https://docs.microsoft.com/mem/intune/protect/certificates-imported-pfx-configure#create-a-pkcs-imported-certificate-profile) and assign it to your mobile users.
+2. Create a [SCEP certificate profile](/mem/intune/protect/certificates-profile-scep) or [PKCS certificate profile](/mem/intune/protect/certificates-imported-pfx-configure#create-a-pkcs-imported-certificate-profile) and assign it to your mobile users.
 3. Select **Apps** and then select **App configuration policies**.
 4. On the **App Configuration policies** blade, choose **Add** and select **Managed devices** to start the app configuration policy creation flow.
 5. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
@@ -185,15 +182,17 @@ Use the following steps to create and configure the Outlook for iOS and Android 
 7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
-   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
+   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](/intune/store-apps-ios).
 
 8. Click **Configuration settings** to add configuration settings. 
 
-    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](./outlook-for-ios-and-android-configuration-with-microsoft-intune.md).
 
 9. Click **S/MIME** to display the **Outlook S/MIME settings**.
 10. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
-11. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+11. Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+12. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
 
@@ -209,7 +208,9 @@ When the S/MIME setting is enabled, Outlook for iOS and Android will automatical
 
 Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate’s details, including information like key usage and the validity period.
 
-![Screenshot showing the Outlook for iOS cetificate details screen.](../../media/certdetails.png)
+![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
+
+Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
 ## Using S/MIME in Outlook for iOS and Android
 
@@ -238,7 +239,9 @@ Before a user can send a signed and/or encrypted message, Outlook for iOS and An
 
 ![Screenshots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
-When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
+When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate. 
+
+Outlook for iOS and Android can send S/MIME signed and encrypted messages to distribution groups. Outlook for iOS and Android enumerates the certificates for the users defined in the distribution group, including those in nested distribution groups, though care should be taken on limiting the number of nested distribution groups to minimize the processing impact.
 
 > [!NOTE]
 > Outlook for iOS and Android only supports sending clear-signed messages.

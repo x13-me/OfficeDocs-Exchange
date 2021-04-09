@@ -38,7 +38,7 @@ In Microsoft Exchange Server 2013, you can use In-Place eDiscovery to search mai
 
 ## Use the Shell to remove an In-Place eDiscovery search
 
-For an example of how to remove an In-Place eDiscovery search, see the "Examples" section in [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch).
+For an example of how to remove an In-Place eDiscovery search, see the "Examples" section in [Remove-MailboxSearch](/powershell/module/exchange/remove-mailboxsearch).
 
 ## How do you know this worked?
 
@@ -46,7 +46,7 @@ To verify that you have successfully removed an In-Place eDiscovery search, do o
 
 - Use the EAC to verify that the search is no longer displayed in the list view of the **In-place eDiscovery & hold** tab.
 
-- Use the **Get-MailboxSearch** cmdlet to retrieve In-Place eDiscovery searches. For an example of how to retrieve In-Place eDiscovery searches, see the "Examples" section in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch).
+- Use the **Get-MailboxSearch** cmdlet to retrieve In-Place eDiscovery searches. For an example of how to retrieve In-Place eDiscovery searches, see the "Examples" section in [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

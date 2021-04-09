@@ -56,7 +56,7 @@ To support these scenarios, you need to create an accepted domain that's configu
 
 If an organization contains more than one forest and has configured global address list (GAL) synchronization, the SMTP domain for one forest may be configured as an internal relay domain in a second forest. Messages from the Internet that are addressed to recipients in internal relay domains are relayed to the Mailbox servers in the same organization. The receiving Mailbox servers then route the messages to the Mailbox servers in the recipient forest. You configure the SMTP domain as an internal relay domain to make sure that email that's addressed to that domain is accepted by the Exchange organization. The connector configuration of your organization determines how messages are routed.
 
-To learn more, see [Configure an accepted domain for a business unit with mailboxes outside your Exchange organization](configure-an-accepted-domain-for-a-business-unit-with-mailboxes-outside-your-exchange-organization-exchange-2013-help.md).
+To learn more, see [Configure an accepted domain for a business unit with mailboxes outside your Exchange organization](./config-accepted-domain-business-unit-outside-org-exchange-2013-help.md).
 
 ## External relay domain
 
