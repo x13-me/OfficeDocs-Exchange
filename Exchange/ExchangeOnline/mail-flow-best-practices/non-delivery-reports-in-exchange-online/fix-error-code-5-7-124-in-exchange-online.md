@@ -107,15 +107,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
 :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
 
-7. Under **Specified senders**, click on the text box. The list of senders are displayed.
-   
-:::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
-
-8. Choose senders (internal and external) from the list. The chosen senders' names are displayed below the text box.
-
-:::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
-
-9. Click **Save changes**.
+7. Click **Save changes**.
 
 **For Classic EAC**
 
