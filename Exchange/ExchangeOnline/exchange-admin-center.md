@@ -20,7 +20,8 @@ manager: serdars
 
 # Exchange admin center in Exchange Online
 
-You can use the Exchange admin center to manage email settings for your organization.
+The Exchange admin center (EAC) is the web-based management console in Exchange Online that's optimized for on-premises, online, and hybrid Exchange deployments. It replaces 
+the Exchange Control Panel (ECP) to manage email settings for your organization.
 
 ## Get to the new Exchange admin center 
 
@@ -164,6 +165,16 @@ The Centers tile allows you to change from one admin center to another. The Me t
 - **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
 
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been   disabled.
+
+For more information on new EAC and Classic EAC:
+
+ - To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](https://docs.microsoft.com/en-us/exchange/changes-in-exchange-admin-center).
+
+- New EAC - Navigation and Features
+
+- Classic EAC - Navigation and Features
+
+- To get an update on the journey of the new EAC, see [What's new in Exchange admin center](https://docs.microsoft.com/en-us/exchange/whats-new).
 
 ## Supported browsers
 
