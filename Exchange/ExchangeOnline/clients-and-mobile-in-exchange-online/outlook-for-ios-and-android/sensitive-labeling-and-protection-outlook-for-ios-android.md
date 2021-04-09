@@ -26,9 +26,6 @@ Protecting company or organizational data is extremely important. Outlook for iO
 
 Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported with Microsoft 365 or Office 365 accounts using the native Microsoft sync technology.
 
-> [!NOTE]
-> Sensitvity labeling is not supported with Government Community Cloud accounts.
-
 ## Understanding Sensitivity Labeling
 Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels). 
 
@@ -57,20 +54,20 @@ S/MIME provides encryption, which protects the content of e-mail messages, and i
 
 Digital signatures are the more commonly used service of S/MIME. As the name suggests, digital signatures are the digital counterpart to the traditional, legal signature on a paper document. As with a legal signature, digital signatures provide the following security capabilities:
 
-  - **Authentication:** A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP e-mail, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
+- **Authentication:** A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP e-mail, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
 
-  - **Nonrepudiation:** The uniqueness of a signature prevents the owner of the signature from disowning the signature. This capability is called nonrepudiation. Thus, the authentication that a signature provides gives the means to enforce nonrepudiation. The concept of nonrepudiation is most familiar in the context of paper contracts: a signed contract is a legally binding document, and it is impossible to disown an authenticated signature. Digital signatures provide the same function and, increasingly in some areas, are recognized as legally binding, similar to a signature on paper. Because SMTP e-mail does not provide a means of authentication, it cannot provide nonrepudiation. It is easy for a sender to disavow ownership of an SMTP e-mail message.
+- **Nonrepudiation:** The uniqueness of a signature prevents the owner of the signature from disowning the signature. This capability is called nonrepudiation. Thus, the authentication that a signature provides gives the means to enforce nonrepudiation. The concept of nonrepudiation is most familiar in the context of paper contracts: a signed contract is a legally binding document, and it is impossible to disown an authenticated signature. Digital signatures provide the same function and, increasingly in some areas, are recognized as legally binding, similar to a signature on paper. Because SMTP e-mail does not provide a means of authentication, it cannot provide nonrepudiation. It is easy for a sender to disavow ownership of an SMTP e-mail message.
 
-  - **Data integrity:** An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed e-mail message validates the digital signature, the recipient is assured that the e-mail message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
+- **Data integrity:** An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed e-mail message validates the digital signature, the recipient is assured that the e-mail message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
 
 > [!IMPORTANT]
 > Although digital signatures provide data integrity, they don't provide confidentiality. Messages with only a digital signature are sent in cleartext, like SMTP messages and can be read by others. In the case where the message is opaque-signed, a level of obfuscation is achieved because the message is base64-encoded, but it is still cleartext. To protect the contents of e-mail messages, encryption must be used.
 
 Message encryption provides a solution to information disclosure. SMTP-based Internet e-mail does not secure messages. An SMTP Internet e-mail message can be read by anyone who sees it as it travels or views it where it is stored. These problems are addressed by S/MIME using encryption. Encryption is a way to change information so that it cannot be read or understood until it is changed back into a readable and understandable form. Message encryption provides two specific security services:
 
-  - **Confidentiality**: Message encryption serves to protect the contents of an e-mail message. Only the intended recipient can view the contents, and the contents remain confidential and cannot be known by anyone else who might receive or view the message. Encryption provides confidentiality while the message is in transit and in storage.
+- **Confidentiality**: Message encryption serves to protect the contents of an e-mail message. Only the intended recipient can view the contents, and the contents remain confidential and cannot be known by anyone else who might receive or view the message. Encryption provides confidentiality while the message is in transit and in storage.
 
-  - **Data** **integrity:** As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
+- **Data** **integrity:** As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
 
 > [!IMPORTANT]
 > Although message encryption provides confidentiality, it doesn't authenticate the message sender in any way. An unsigned, encrypted message is as susceptible to sender impersonation as a message that isn't encrypted. Because nonrepudiation is a direct result of authentication, message encryption also doesn't provide nonrepudiation. Although encryption does provide data integrity, an encrypted message can show only that the message hasn't been altered since it was sent. No information about who sent the message is provided. To prove the identity of the sender, the message must use a digital signature.
@@ -193,7 +190,9 @@ Use the following steps to create and configure the Outlook for iOS and Android 
 
 9. Click **S/MIME** to display the **Outlook S/MIME settings**.
 10. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
-11. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
+11. Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+12. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
 
@@ -209,7 +208,9 @@ When the S/MIME setting is enabled, Outlook for iOS and Android will automatical
 
 Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate’s details, including information like key usage and the validity period.
 
-![Screenshot showing the Outlook for iOS cetificate details screen.](../../media/certdetails.png)
+![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
+
+Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
 ## Using S/MIME in Outlook for iOS and Android
 
@@ -238,7 +239,9 @@ Before a user can send a signed and/or encrypted message, Outlook for iOS and An
 
 ![Screenshots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
-When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
+When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate. 
+
+Outlook for iOS and Android can send S/MIME signed and encrypted messages to distribution groups. Outlook for iOS and Android enumerates the certificates for the users defined in the distribution group, including those in nested distribution groups, though care should be taken on limiting the number of nested distribution groups to minimize the processing impact.
 
 > [!NOTE]
 > Outlook for iOS and Android only supports sending clear-signed messages.
