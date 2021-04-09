@@ -59,9 +59,7 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
 
-5. Under **Accept messages from**:
-    - Choose **All senders**.
-    - Clear the check box for **Require senders to be authenticated**.
+5. Under **Accept messages from**, clear the check box for **Require senders to be authenticated**.
 
 :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
