@@ -71,7 +71,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
    Use this section to view or change basic information about the group.
 
-    - **Name**: This name appears in the address book, on the To: line when email is sent to this group, and in the Groups list. The display name is required and should be user-friendly so people recognize what it is. It also has to be unique in your domain.
+    - **Name**: This name appears in the address book, on the **To** line when email is sent to this group, and in the Groups list. The display name is required and should be user-friendly so people recognize what it is. It also has to be unique in your domain.
 
     - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
 
@@ -87,7 +87,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
     - Under **Owners** section, click **View all and manage owners** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one owner. 
 
-    - Under **Members** section, click **View all and manage members** to add/remove group owners from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one member. 
+    - Under **Members** section, click **View all and manage members** to add/remove group members from the drop-down list and then click **Save changes**. The mail-enabled security group must have at least one member. 
 
    #### Settings
 
@@ -118,7 +118,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
     - **Send As**: This permission allows the delegate to send messages as the group. After this permission is assigned, the delegate has the option to add the group to the **From** line to indicate that the message was sent by the group.
 
-    - **Send on Behalf**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
+    - **Send on Behalf**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group to the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
    To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
 
