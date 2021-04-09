@@ -86,7 +86,11 @@ When an organization decides to standardize how users access Exchange data, usin
 > [!NOTE]
 > After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
 > 
-> When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates in Outlook for iOS and Android, Exchange Online mobile device access rules (allow, block, or quarantine) are skipped if there are any Azure Active Directory conditional access policies applied to the user that include:
+> - Cloud app condition: Exchange Online or Office 365
+> - Device platform condition: iOS and/or Android
+> - Client apps condition: Mobile apps and desktop client
+> - One of the following Grant access controls: [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 > 
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](/intune/app-based-conditional-access-intune).
 
@@ -125,7 +129,7 @@ A global admin must complete the following steps to activate and set up enrollme
 
 1. Activating Basic Mobility and Security by following the steps in the Microsoft 365 Security Center.
 
-2. Setting up mobile device management by, for example, creating an APNs certificate to manage iOS devices.
+2. Setting up unified endpoint management by, for example, creating an APNs certificate to manage iOS devices.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
