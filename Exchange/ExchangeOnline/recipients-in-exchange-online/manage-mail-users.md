@@ -72,7 +72,7 @@ You manage mail users in the Exchange admin center (EAC) or in PowerShell (Excha
 
 1. In the new EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail user that you want to modify.
+2. In the list of users, select the mail user that you want to modify.
 
 3. In the details pane, click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's details.
 
