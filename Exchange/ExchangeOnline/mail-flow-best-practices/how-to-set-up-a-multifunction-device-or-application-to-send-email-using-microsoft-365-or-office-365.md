@@ -67,7 +67,6 @@ Enter the following settings directly on your device or in the application **as 
 |Port|Port 587 (recommended) or port 25|
 |TLS/StartTLS|Enabled|
 |Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
-|
 
 #### TLS and other encryption options
 
@@ -96,7 +95,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a username and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 
