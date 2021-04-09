@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.7.133 in Exchange Online"
-ms.author: v-msdmaguire
+ms.author: msdmaguire
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
