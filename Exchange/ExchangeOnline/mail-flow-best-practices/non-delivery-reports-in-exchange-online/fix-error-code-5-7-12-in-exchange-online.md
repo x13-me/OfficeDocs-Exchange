@@ -54,7 +54,7 @@ Open the EAC and use one of the following procedures based on the recipient type
     
    4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
     
-   5. Clear the check box for **Require senders to be authenticated** and click the radio button for **All senders**.
+   5. Clear the check box for **Require senders to be authenticated** in the **Accept messages from** section.
     
    6. Click **Save**.
    
@@ -83,12 +83,8 @@ Open the EAC and use one of the following procedures based on the recipient type
    4. Under the **Delivery management** pane, click **Edit delivery management**. The **Delivery management** screen appears.
     
    5. Choose the radio button for **Allow messages from people inside and outside my organization**.
-    
-   6. Under **Specified senders**, click on the text box. The list of users (internal and external) are displayed.
-    
-   7. Select and add the external senders and the all internal users group.
    
-   8. Click **Save changes**.
+   6. Click **Save changes**.
     
     - **Classic EAC**
 
@@ -127,7 +123,7 @@ Open the EAC and use one of the following procedures based on the recipient type
     
    4. In the **Message delivery restriction** pane, click **Edit**. The **message delivery restrictions** screen appears.
     
-   5. Clear the check box for **Require senders to be authenticated** and choose the **All senders** radio button.
+   5. Clear the check box for **Require senders to be authenticated** in the **Accept messages from** section.
     
    6. Click **Save**.
  
