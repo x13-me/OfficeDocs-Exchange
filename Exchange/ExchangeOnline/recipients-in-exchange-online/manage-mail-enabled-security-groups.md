@@ -146,13 +146,13 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 ### Use the Classic EAC to create a security group
 
-1. In the EAC, navigate to **Recipients** \> **Groups**.
+1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
 
 2. Click **New** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **Security group**.
 
 3. On the **New security group** page, complete the following fields:
 
-   - **\* Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
+   - **\* Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the Classic EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
 
     > [!NOTE]
     > If a group naming policy is applied, you must follow the naming constraints enforced for your organization. For more information, see [Create a distribution group naming policy](manage-distribution-groups/create-group-naming-policy.md). If you want to override your organization's group naming policy, see [Override the distribution group naming policy](manage-distribution-groups/override-group-naming-policy.md).
@@ -161,7 +161,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
    - **Description**: Use this box to describe the security group so people know what the purpose of the group is.
 
-   - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the Classic EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
      To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the desired OU, and then click **OK**.
 
@@ -182,7 +182,7 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 ### Use the Classic EAC to change mail-enabled security group properties
 
-1. In the EAC, navigate to **Recipients** \> **Groups**.
+1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
 
 2. In the list of groups, click the security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
 
