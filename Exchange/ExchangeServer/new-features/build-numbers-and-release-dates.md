@@ -27,7 +27,9 @@ Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange 
 > [!NOTE]
 > In the following sections, RTM stands for release to manufacturing (the first version of the product).
 
-## To view the build number of an Exchange server you can run one of the following:
+## View the build number of an Exchange server you can run one of the following:
+
+This section describes the various methods that you can use to view the build number of Exchange servers.
 
 ### Option 1 (Recommended)
 
@@ -37,7 +39,7 @@ Run the [HealthChecker script](https://aka.ms/exchangehealthchecker) and check t
 
 ### Option 2
 
-Open the Exchange Management Shell and run the following command.
+Open the Exchange Management Shell and run the following command:
 
 ```powershell
 Get-Command Exsetup.exe | ForEach {$_.FileVersionInfo}
@@ -45,7 +47,7 @@ Get-Command Exsetup.exe | ForEach {$_.FileVersionInfo}
 
 ### Option 3
 
-Open the Exchange Management Shell and run the following command.
+Open the Exchange Management Shell and run the following command:
 
 ```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
