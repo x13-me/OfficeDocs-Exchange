@@ -44,7 +44,7 @@ Rules, Organization, and Public Folders from the classic EAC are now available i
 
 **2. Another user**
 
-The new, modern EAC now has an **Open another user’s mailbox** option, which adjusts Inbox rules and out-of-office messages on behalf of a user, without requiring that user to grant full admin access to their mailboxes.
+The new, modern EAC now has a **View another mailbox** option, which adjusts Inbox rules and out-of-office messages on behalf of a user, without requiring that user to grant full admin access to their mailboxes.
 
 **3. Delegated admin support**
 
