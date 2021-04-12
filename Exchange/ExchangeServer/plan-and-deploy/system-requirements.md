@@ -52,11 +52,11 @@ The requirements for the network and the directory servers in your Exchange 2019
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
-|DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
-|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
+|DNS namespace|Exchange 2019 supports the following DNS namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
+|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <p> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 |
 
 ## Directory server architecture for Exchange 2019
@@ -77,12 +77,12 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 |Component|Requirement|Notes|
 |---|---|---|
-|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/><br/> **Notes**: <br/>• Intel Itanium IA64 processors are not supported. <br/>• Recommended supported processor sockets is up to 2 on physical machines.|See the [Supported operating systems for Exchange 2019](#supported-operating-systems-for-exchange-2019) section later in this topic for supported operating systems.|
-|Memory|Varies by Exchange server role: <br/>• **Mailbox**: 128 GB minimum recommended <br/>• **Edge Transport**: 64 GB minimum recommended.|Exchange 2019 has large memory support (up to 256 GB).|
+|Processor|Either of the following types of 64-bit processors: <ul><li>Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T).</li><li>AMD processor that supports the AMD64 platform.</li></ul> <p> **Notes**: <ul><li>Intel Itanium IA64 processors are not supported.</li><li>Recommended supported processor sockets is up to 2 on physical machines.</li></ul>|See the [Supported operating systems for Exchange 2019](#supported-operating-systems-for-exchange-2019) section later in this topic for supported operating systems.|
+|Memory|Varies by Exchange server role: <ul><li>**Mailbox**: 128 GB minimum recommended</li><li>**Edge Transport**: 64 GB minimum recommended.|Exchange 2019 has large memory support (up to 256 GB).</li></ul>|
 |Paging file size|Set the paging file minimum and maximum value to the same size: 25% of installed memory.|None|
-|Disk space|• At least 30 GB of free space on the drive where you're installing Exchange. <br/>• At least 200 MB of free space on the system drive. <br/>• At least 500 MB of free space on the drive that contains the message queue database.|None|
+|Disk space|<ul><li>At least 30 GB of free space on the drive where you're installing Exchange.</li><li>At least 200 MB of free space on the system drive.</li><li>At least 500 MB of free space on the drive that contains the message queue database.</li></ul>|None|
 |Screen resolution|1024 x 768 pixels (XGA) or higher|None|
-|File system|**NTFS**: Required on partitions that contain the following types of files: <br/> • The System partition. <br/> • Exchange binaries. <br/>• Files generated by Exchange diagnostic logging. <br/> • Transport database files (for example, the mail queue database). <br/><br/> **ReFS**: Supported on partitions that contain the following types of Exchange files: <br/> • Mailbox databases. <br/>• Transaction logs.|None|
+|File system|**NTFS**: Required on partitions that contain the following types of files: <ul><li>The System partition.</li><li>Exchange binaries.</li><li>Files generated by Exchange diagnostic logging.</li><li>Transport database files (for example, the mail queue database).</li></ul> <p> **ReFS**: Supported on partitions that contain the following types of Exchange files: <ul><li>Mailbox databases.</li><li>Transaction logs.</li></ul>|None|
 |
 
 ## Supported operating systems for Exchange 2019
@@ -92,13 +92,13 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 |Exchange component|Requirement|
 |---|---|
 |Mailbox and Edge Transport server roles|Windows Server 2019 Standard or Datacenter|
-|Management tools|One of the following versions of Windows:  <br/>• Windows Server 2019 Standard or Datacenter <br/>• 64-bit edition of Windows 10|
+|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>64-bit edition of Windows 10</li></ul>|
 |
 
 > [!NOTE]
-> 
+>
 > - Installing Exchange 2019 on a computer that's running Windows Server Core is fully supported and recommended. The Desktop Experience feature is no longer required.
-> 
+>
 > - Installing Exchange 2019 on a computer that's running Nano Server isn't supported.
 
 ### Supported PowerShell versions for Exchange 2019 servers
@@ -122,7 +122,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 ****
 
 |Exchange 2019 version|.NET Framework 4.8|.NET Framework 4.7.2|
-|---|---|---|
+|---|:---:|:---:|
 |CU4 to CU9|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
@@ -161,7 +161,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 |Exchange 2007 and earlier versions|Not supported|
 |Exchange 2010|Supported with Update Rollup 11 for Exchange 2010 SP3 or later on all Exchange 2010 servers in the organization, including Edge Transport servers.|
 |Exchange 2013|Supported with Exchange 2013 Cumulative Update 10 or later on all Exchange 2013 servers in the organization, including Edge Transport servers.|
-|Mixed Exchange 2010 and Exchange 2013 organization|Supported with the following minimum versions of Exchange: <br/>• Update Rollup 11 Exchange 2010 SP3 or later on all Exchange 2010 servers in the organization, including Edge Transport servers. <br/>• Exchange 2013 Cumulative Update 10 or later on all Exchange 2013 servers in the organization, including Edge Transport servers.|
+|Mixed Exchange 2010 and Exchange 2013 organization|Supported with the following minimum versions of Exchange: <ul><li>Update Rollup 11 Exchange 2010 SP3 or later on all Exchange 2010 servers in the organization, including Edge Transport servers.</li><li>Exchange 2013 Cumulative Update 10 or later on all Exchange 2013 servers in the organization, including Edge Transport servers.</li></ul>|
 |
 
 ## Supported hybrid deployment scenarios for Exchange 2016
@@ -176,10 +176,10 @@ The following table lists the requirements for the network and the directory ser
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
-|Active Directory site|• The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. <br/>• Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
-|DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
+|Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
+|DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
 |IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 |
 
@@ -202,18 +202,18 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 |Component|Requirement|Notes|
 |---|---|---|
-|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/><br/> **Note**: Intel Itanium IA64 processors are not supported.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970). <br/> See the [Supported operating systems for Exchange 2016](#supported-operating-systems-for-exchange-2016) section later in this topic for supported operating systems.|
-|Memory|Varies by Exchange server role: <br/>• **Mailbox**: 8 GB minimum. <br/>• **Edge Transport**: 4 GB minimum.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
-|Paging file size|Set the paging file minimum and maximum value to the same size: <br/>• **Less than 32 GB of RAM installed**: Physical RAM plus 10MB, up to a maximum value of 32GB (32,778MB). <br/>• **32 GB of RAM or more installed**: 32GB plus 10MB (32,778MB)|None|
-|Disk space|• At least 30 GB of free space on the drive where you're installing Exchange, plus an additional 500 MB for each Unified Messaging (UM) language pack that you plan to install. <br/>• At least 200 MB of free space on the System drive. <br/>• At least 500 MB of free space on the drive that contains the message queue database.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
+|Processor|Either of the following types of 64-bit processors: <ul><li>Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T).</li><li>AMD processor that supports the AMD64 platform.</li></ul> <p> **Note**: Intel Itanium IA64 processors are not supported.|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970). <p> See the [Supported operating systems for Exchange 2016](#supported-operating-systems-for-exchange-2016) section later in this topic for supported operating systems.|
+|Memory|Varies by Exchange server role: <ul><li>**Mailbox**: 8 GB minimum.</li><li>**Edge Transport**: 4 GB minimum.</li></ul>|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
+|Paging file size|Set the paging file minimum and maximum value to the same size: <ul><li>**Less than 32 GB of RAM installed**: Physical RAM plus 10 MB, up to a maximum value of 32 GB (32,778MB).</li><li>**32 GB of RAM or more installed**: 32 GB plus 10 MB (32,778MB)</li></ul>|None|
+|Disk space|<ul><li>At least 30 GB of free space on the drive where you're installing Exchange, plus an additional 500 MB for each Unified Messaging (UM) language pack that you plan to install.</li><li>At least 200 MB of free space on the System drive.</li><li>At least 500 MB of free space on the drive that contains the message queue database.</li></ul>|For more information, see [Sizing Exchange 2016 Deployments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Ask-the-Perf-Guy-Sizing-Exchange-2016-Deployments/ba-p/603970).|
 |Drive|DVD-ROM drive, local or network accessible.|None|
 |Screen resolution|1024 x 768 pixels (XGA) or higher|None|
-|File format|NTFS**: Required on partitions that contain the following types of files: <br/> • The System partition. <br/> • Exchange binaries. <br/>• Files generated by Exchange diagnostic logging. <br/> • Transport database files (for example, the mail queue database). <br/><br/> **ReFS**: Supported on partitions that contain the following types of Exchange files: <br/> • Mailbox databases. <br/>• Transaction logs. <br/>• Content indexing files.|None|
+|File format|**NTFS**: Required on partitions that contain the following types of files: <ul><li>The System partition.</li><li>Exchange binaries.</li><li>Files generated by Exchange diagnostic logging.</li><li>Transport database files (for example, the mail queue database).</li></ul> <p> **ReFS**: Supported on partitions that contain the following types of Exchange files: <ul><li>Mailbox databases.</li><li>Transaction logs.</li><li>Content indexing files.</li></ul>|None|
 |
 
 ## Supported operating systems for Exchange 2016
 
-**Important**: We don't support the installation of Exchange 2016 on a computer that's running Windows Server Core or Nano Server. The Windows Server Desktop Experience feature needs to be installed. To install Exchange 2016, you need to do one of the following to install the Desktop Experience on Windows Server prior to starting Exchange 2016 Setup:
+**Important**: We don't support the installation of Exchange 2016 on a computer that's running Windows Server Core or Nano Server. The Windows Server Desktop Experience feature needs to be installed. To install Exchange 2016, you need to do one of the following steps to install the Desktop Experience on Windows Server prior to starting Exchange 2016 Setup:
 
 - **Windows Server 2012 and Windows Server 2012 R2**: Run the following command in Windows PowerShell
 
@@ -227,8 +227,8 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 |Component|Requirement|
 |---|---|
-|Mailbox and Edge Transport server roles|• Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter|
-|Management tools|One of the following versions of Windows: <br/>• Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• 64-bit edition of Windows 10 <br/>• 64-bit edition of Windows 8.1|
+|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2016 Standard or Datacenter<sup>\*</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li></ul>|
+|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2016 Standard or Datacenter<sup>\*</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>64-bit edition of Windows 10</li><li>64-bit edition of Windows 8.1</li></ul>|
 |
 
 <sup>\*</sup> Requires Exchange Server 2016 Cumulative Update 3 or later.
