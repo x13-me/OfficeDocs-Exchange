@@ -40,7 +40,7 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 4. Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
 
 > [!IMPORTANT]
-> If the computer that you want to rename is a domain controller, see "Rename a domain controller" (<A href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)">https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)</A>).
+> If the computer that you want to rename is a domain controller, see "Rename a domain controller" (<A href="/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)">https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)</A>).
 
 ## To modify the recipient policy SMTP address
 

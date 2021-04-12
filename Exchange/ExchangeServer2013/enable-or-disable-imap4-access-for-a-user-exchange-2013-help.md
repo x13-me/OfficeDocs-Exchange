@@ -22,7 +22,7 @@ You can enable or disable IMAP4 for a user.
 > [!NOTE]
 > After you've enabled or disabled IMAP4 for a user, you must restart the Microsoft Exchange IMAP4 service and the Microsoft Exchange IMAP4 Backend service. For more information about how to restart the IMAP4 service, see <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
 
-For additional information related to managing user mailboxes, see [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+For additional information related to managing user mailboxes, see [Manage user mailboxes](../ExchangeOnline/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
 
 For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
 

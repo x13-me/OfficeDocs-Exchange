@@ -29,6 +29,6 @@ For detailed information about the POP health set, see [Troubleshooting POP Heal
 
 ## For More Information
 
-[Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-PopConnectivity)
+[Test-PopConnectivity](/powershell/module/exchange/Test-PopConnectivity)
 
-[POP3 and IMAP4](https://docs.microsoft.com/exchange/pop3-and-imap4-in-exchange-server-2013-exchange-2013-help)
+[POP3 and IMAP4](../../pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)

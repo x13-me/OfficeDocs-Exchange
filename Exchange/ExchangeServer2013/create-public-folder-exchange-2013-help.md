@@ -64,7 +64,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 > [!IMPORTANT]
 > Don't use a backslash (\) in the name when creating a public folder.
 
-For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/new-publicfolder).
+For detailed syntax and parameter information, see [New-PublicFolder](/powershell/module/exchange/new-publicfolder).
 
 ## How do you know this worked?
 

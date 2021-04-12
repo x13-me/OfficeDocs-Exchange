@@ -44,4 +44,4 @@ Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Us
 
 Type **Y** to confirm that you want to move this address list, and then press ENTER.
 
-For detailed syntax and parameter information, see [Move-AddressList](https://docs.microsoft.com/powershell/module/exchange/Move-AddressList).
+For detailed syntax and parameter information, see [Move-AddressList](/powershell/module/exchange/Move-AddressList).

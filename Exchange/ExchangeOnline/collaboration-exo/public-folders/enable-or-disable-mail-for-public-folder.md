@@ -37,7 +37,7 @@ For additional management tasks related to public folders, see [Public folder pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to mail-enable or mail-disable a public folder
 
@@ -67,7 +67,7 @@ Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEn
 
 If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder).
 
-For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/enable-mailpublicfolder).
+For detailed syntax and parameter information, see [Enable-MailPublicFolder](/powershell/module/exchange/enable-mailpublicfolder).
 
 ## Use Exchange Online PowerShell to mail-disable a public folder
 
@@ -77,7 +77,7 @@ This example mail-disables the public folder Marketing\Reports.
 Disable-MailPublicFolder -Identity "\Marketing\Reports"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder).
+For detailed syntax and parameter information, see [Disable-MailPublicFolder](/powershell/module/exchange/disable-mailpublicfolder).
 
 ## Allow anonymous users to send email to a mail-enabled public folder
 
@@ -103,4 +103,4 @@ This example sets the `CreateItems` permission for the Anonymous account on the 
 Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems -User Anonymous
 ```
 
-For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission).
+For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission).

@@ -26,7 +26,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
 
 - See [Deploy a new installation of Exchange Server](../../plan-and-deploy/deploy-new-installations/deploy-new-installations.md) if you're beginning your installation. After the installation you can use the steps in this topic to create your outbound connector.
 
-- The smart host described in this topic needs to use SMTP to transmit messages. If it doesn't, you need to use a Delivery Agent connector or a Foreign connector. For more information, see[Delivery Agents and Delivery Agent Connectors](https://docs.microsoft.com/exchange/delivery-agents-and-delivery-agent-connectors-exchange-2013-help) and [Foreign Connectors](https://docs.microsoft.com/exchange/foreign-connectors-exchange-2013-help).
+- The smart host described in this topic needs to use SMTP to transmit messages. If it doesn't, you need to use a Delivery Agent connector or a Foreign connector. For more information, see[Delivery Agents and Delivery Agent Connectors](../../../ExchangeServer2013/delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md) and [Foreign Connectors](../../../ExchangeServer2013/foreign-connectors-exchange-2013-help.md).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
@@ -93,7 +93,7 @@ After you create the Send connector, it appears in the Send connector list.
 
 ## Use the Exchange Management Shell to create a Send connector that uses smart host routing
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
@@ -117,7 +117,7 @@ After you create the Send connector, it appears in the Send connector list.
    New-SendConnector -Name "Smart host to Internet" -AddressSpaces * -Custom -DNSRoutingEnabled $false -SmartHosts 192.168.3.2 -SmartHostAuthMechanism None
    ```
 
-For information about other options, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
+For information about other options, see [New-SendConnector](/powershell/module/exchange/new-sendconnector).
 
 ## How do you know this worked?
 
