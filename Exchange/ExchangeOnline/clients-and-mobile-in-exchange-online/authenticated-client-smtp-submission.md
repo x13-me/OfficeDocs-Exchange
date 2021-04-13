@@ -28,7 +28,7 @@ Client SMTP email submissions (also known as _authenticated SMTP submissions_) a
 > [!NOTE]
 > As of February 2020, OAuth authentication is available for POP3, IMAP4, and SMTP AUTH connections to Exchange Online. For more information, see [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
 
-The SMTP AUTH protocol is used for client SMTP email submission, typically on TCP port 587. SMTP AUTH doesn't support modern authentication (Modern Auth), and only uses basic authentication, so all you need to send email messages is a username and password. This makes SMTP AUTH a popular choice for attackers to send spam or phishing messages using compromised credentials.
+The SMTP AUTH protocol is used for client SMTP email submission, typically on TCP port 587. SMTP AUTH supports modern authentication (Modern Auth).
 
 Virtually all modern email clients that connect to Exchange Online mailboxes in Office 365 or Microsoft 365 (for example, Outlook, Outlook on the web, iOS Mail, Outlook for iOS and Android, etc.) don't use SMTP AUTH to send email messages.
 
