@@ -22,7 +22,7 @@ manager: serdars
 
 # Create and manage distribution groups in Exchange Online
 
-> [!NOTE]
+> [!IMPORTANT]
 > Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Use the Exchange admin center (EAC) or Exchange Online PowerShell to create, modify, or remove distribution groups in your Exchange Online organization.

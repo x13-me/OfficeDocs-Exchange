@@ -20,7 +20,7 @@ manager: serdars
 
 # Configure email forwarding for a mailbox
 
-> [!NOTE]
+> [!IMPORTANT]
 > Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
