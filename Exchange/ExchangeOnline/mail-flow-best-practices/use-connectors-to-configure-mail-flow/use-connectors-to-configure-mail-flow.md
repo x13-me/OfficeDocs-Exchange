@@ -65,7 +65,7 @@ Exchange Online is ready to send and receive email from the internet right away.
 
 If you have Exchange Online or EOP and your own on-premises email servers, you definitely need connectors. This is more complicated and has more options as described in the following table:
 
-|**You're on-premises email organization is**|**Your service subscription is**|**Have you completed an Exchange hybrid deployment?**|**Do I need to set up connectors manually?**|
+|**Your on-premises email organization is**|**Your service subscription is**|**Have you completed an Exchange hybrid deployment?**|**Do I need to set up connectors manually?**|
 |:-----|:-----|:-----|:-----|
 |Exchange 2010 or later|Exchange Online Protection|Not available|Yes. Follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
 |Exchange 2010 or later|Exchange Online|No|Consider whether an Exchange hybrid deployment will better meet your organization's needs by reviewing the topic that matches your current situation in [Exchange Server Hybrid Deployments](../../../ExchangeHybrid/exchange-hybrid.md). <br/><br/> If a hybrid deployment is the right option for your organization, use the [Hybrid Configuration wizard](../../../ExchangeHybrid/hybrid-configuration-wizard.md) to integrate Exchange Online with your on-premises Exchange organization. <br/><br/> If you don't want a hybrid deployment and you only want connectors that enable mail routing, follow the instructions in [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md).|
