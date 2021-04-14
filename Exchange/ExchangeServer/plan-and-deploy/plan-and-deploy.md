@@ -92,7 +92,7 @@ Use the information at the following links to help you deploy Exchange.
 
 > Learn about using the Setup wizard to install Mailbox servers.
 
-  Always install the **latest Exchange Cumulative Update** (CU) ([Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md?view=exchserver-2019)). There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because each Cumulative Update is a full build of the product.
+  Always install the **latest Exchange Cumulative Update** (CU) ([Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md)). There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because each Cumulative Update is a full build of the product.
 
   Update with **latest Exchange Security Update** (SU) **before** bringing the server online. Verify with the Exchange Health Checker script: <https://aka.ms/ExchangeHealthChecker>.
 
@@ -110,9 +110,9 @@ Use the information at the following links to help you deploy Exchange.
 
   Keep your servers as **up to date** as possible. Always be either on latest released Exchange Cumulative Update (CU) or latest released -1 CU.
 
-   1. This page contains links to the latest Exchange CU bits: [Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md?view=exchserver-2019).
+   1. This page contains links to the latest Exchange CU bits: [Exchange Server build numbers and release dates | Microsoft Docs](../new-features/build-numbers-and-release-dates.md).
 
-   2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](./install-cumulative-updates.md?view=exchserver-2019).
+   2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](./install-cumulative-updates.md).
 
   Ensure **Windows Update/Microsoft Update** (WU/MU) is turned on and consider further turning on **Automatic Update** to pick up Security Updates (SU’s).
 
