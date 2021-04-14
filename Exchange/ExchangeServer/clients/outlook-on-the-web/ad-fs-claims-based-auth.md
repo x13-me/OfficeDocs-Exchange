@@ -75,13 +75,16 @@ For more information about creating and importing SSL certificates in Windows, s
 
 Here's a summary of the certificates that we'll be using in this scenario:
 
+<br>
+
 ****
 
-|**Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)**|**Type**|**Required on servers**|**Comments**|
-|:-----|:-----|:-----|:-----|
-|`adfs.contoso.com`|Issued by a CA|AD FS server <br/><br/> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
-|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <br/><br/> Exchange servers <br/><br/> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <br/><br/> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <br/><br/> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](/powershell/module/adfs/set-adfsproperties). <br/><br/> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
-| `mail.contoso.com`|Issued by a CA|Exchange servers <br/><br/> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
+|Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)|Type|Required on servers|Comments|
+|---|---|---|---|
+|`adfs.contoso.com`|Issued by a CA|AD FS server <p> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
+|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <p> Exchange servers <p> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <p> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <p> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](/powershell/module/adfs/set-adfsproperties). <p> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
+| `mail.contoso.com`|Issued by a CA|Exchange servers <p> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
+|
 
 For more information, see the "Certificate requirements" section in [AD FS Requirements](/windows-server/identity/ad-fs/overview/ad-fs-requirements).
 
@@ -322,7 +325,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
    - **Display Name**: Type Outlook on the web.
 
-   - **Notes**: Enter a description. For example, This is a trust for https://mail.contoso.com/owa/.
+   - **Notes**: Enter a description. For example, This is a trust for <https://mail.contoso.com/owa/>.
 
      ![The Specify Display Name page in the Add Relying Party Trust Wizard.](../../media/589b606e-7a25-4ca2-8d94-a7874a3904af.png)
 
@@ -330,7 +333,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
    - **Display Name**: Type EAC.
 
-   - **Notes**: Enter a description. For example, This is a trust for https://mail.contoso.com/ecp/.
+   - **Notes**: Enter a description. For example, This is a trust for <https://mail.contoso.com/ecp/>.
 
    ![Details for the EAC in the Select Data Source page in the Add Relying Party Trust Wizard.](../../media/b4c2461d-db39-45ac-869d-d70fb9581adc.png)
 
@@ -346,11 +349,11 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 8. On the **Configure URL** page, select **Enable support for the WS-Federation Passive protocol**, and in **Relying party WS-Federation Passive protocol URL**, enter the following information:
 
-   - **Outlook on the web**: Type your external Outlook on the web URL (for example, https://mail.contoso.com/owa/).
+   - **Outlook on the web**: Type your external Outlook on the web URL (for example, <https://mail.contoso.com/owa/>).
 
      ![The settings for Outlook on the web on the Configure URL page in the Add Relying Party Trust Wizard.](../../media/71783750-5070-4719-8c17-bbc515fcb135.png)
 
-   - **EAC**: Type your external EAC URL (for example, https://mail.contoso.com/ecp/).
+   - **EAC**: Type your external EAC URL (for example, <https://mail.contoso.com/ecp/>).
 
    When you're finished, click **Next**.
 
@@ -393,12 +396,9 @@ To use Windows PowerShell prompt to create the relying party trusts, follow thes
 This example creates a relying party trust for Outlook on the web using the following values:
 
 - **Name**: Outlook on the web
-
-- **Notes**: This is a trust for https://mail.contoso.com/owa/
-
-- **Identifier**: https://mail.contoso.com/owa/
-
-- **WSFedEndpoint**: https://mail.contoso.com/owa/
+- **Notes**: This is a trust for <https://mail.contoso.com/owa/>
+- **Identifier**: <https://mail.contoso.com/owa/>
+- **WSFedEndpoint**: <https://mail.contoso.com/owa/>
 
 ```powershell
 Add-AdfsRelyingPartyTrust -Name "Outlook on the web" -Notes "This is a trust for https://mail.contoso.com/owa/" -Identifier https://mail.contoso.com/owa/ -WSFedEndpoint https://mail.contoso.com/owa/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
@@ -407,12 +407,9 @@ Add-AdfsRelyingPartyTrust -Name "Outlook on the web" -Notes "This is a trust for
 This example creates a relying party trust for the EAC using the following values:
 
 - **Name**: EAC
-
-- **Notes**: This is a trust for https://mail.contoso.com/ecp/
-
-- **Identifier**: https://mail.contoso.com/ecp/
-
-- **WSFedEndpoint**: https://mail.contoso.com/ecp/
+- **Notes**: This is a trust for <https://mail.contoso.com/ecp/>
+- **Identifier**: <https://mail.contoso.com/ecp/>
+- **WSFedEndpoint**: <https://mail.contoso.com/ecp/>
 
 ```powershell
 Add-AdfsRelyingPartyTrust -Name EAC -Notes "This is a trust for https://mail.contoso.com/ecp/" -Identifier https://mail.contoso.com/ecp/ -WSFedEndpoint https://mail.contoso.com/ecp/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
@@ -474,7 +471,7 @@ To add the required claims rules:
 
    - **Custom rule**: Copy and paste the following text:
 
-     ```
+     ```text
      c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
      ```
 
@@ -702,7 +699,7 @@ To use the Remote Access Management console, follow these steps:
 
      - **Name**: For example, `EAC`. This name is only visible in the Remote Access Management console.
 
-     - **External URL**: The external URL for the EAC. For example, https://mail.contoso.com/ecp/.
+     - **External URL**: The external URL for the EAC. For example, <https://mail.contoso.com/ecp/>.
 
      - **External certificate**: Select an installed certificate that contains the host name of the external URL for the EAC (for example, `mail.contoso.com`). The certificate is likely a wildcard certificate or SAN certificate. You can select a certificate in the drop down list, and then click **View** \> **Details** to see more information about the certificate.
 
@@ -737,14 +734,10 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
    This example publishes Outlook on the web in Web Application Proxy with the following settings:
 
    - **AD FS relying party**: Outlook on the web
-
    - **Name**: Outlook on the web
-
-   - **External URL**: https://mail.contoso.com/owa/
-
+   - **External URL**: <https://mail.contoso.com/owa/>
    - **External certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
-
-   - **Backend server URL**: https://mail.contoso.com/owa/
+   - **Backend server URL**: <https://mail.contoso.com/owa/>
 
    ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName "Outlook on the web" -Name "Outlook on the web" -ExternalUrl https://mail.contoso.com/owa/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE056093 -BackendServerUrl https://mail.contoso.com/owa/
@@ -753,12 +746,9 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
    This example publishes the EAC in Web Application Proxy with the following settings:
 
    - **Name**: EAC
-
-   - **External URL**: https://external.contoso.com/ecp/
-
+   - **External URL**: <https://external.contoso.com/ecp/>
    - **External certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
-
-   - **Backend server URL**: https://mail.contoso.com/ecp/
+   - **Backend server URL**: <https://mail.contoso.com/ecp/>
 
    ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName EAC -Name EAC -ExternalUrl https://external.contoso.com/ecp/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609 -BackendServerUrl https://mail.contoso.com/ecp/
@@ -864,7 +854,7 @@ net start w3svc
 
 To test the AD FS claims for Outlook on the web:
 
-1. In a web browser, open Outlook on the web (for example, https://mail.contoso.com/owa).
+1. In a web browser, open Outlook on the web (for example, <https://mail.contoso.com/owa>).
 
 2. If you get a certificate error in the web browser, just continue on to the Outlook on the web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
@@ -874,7 +864,7 @@ To test the AD FS claims for Outlook on the web:
 
 To test the AD FS claims for EAC:
 
-1. In a web browser, open EAC (for example, https://mail.contoso.com/ecp).
+1. In a web browser, open EAC (for example, <https://mail.contoso.com/ecp>).
 
 2. If you get a certificate error in the web browser, just continue on to the EAC web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 

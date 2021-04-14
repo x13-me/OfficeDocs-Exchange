@@ -44,11 +44,16 @@ In Exchange 2016 or later, MAPI over HTTP is enabled by default at the organizat
 
 The scenarios where MAPI over HTTP is enabled or disabled by default at the organization level are described in the following table:
 
-||**Exchange 2019**|**Exchange 2016**|
-|:-----|:-----|:-----|
+<br>
+
+****
+
+|Scenario|Exchange 2019|Exchange 2016|
+|---|---|---|
 |**Upgrading from an Exchange 2016 environment**|MAPI over HTTP is enabled by default|n/a|
 |**Upgrading from an environment that contains any Exchange 2013 servers**|MAPI over HTTP is disabled by default|MAPI over HTTP is disabled by default|
 |**Upgrading from an Exchange 2010 environment**|n/a|MAPI over HTTP is enabled by default|
+|
 
 During the upgrade from an organization that contains Exchange 2013 servers, administrators will receive the [MAPI over HTTP isn't enabled [WarnMapiHttpNotEnabled]](../../plan-and-deploy/deployment-ref/ms-exch-setupreadiness-warnmapihttpnotenabled.md) readiness check warning, and enabling MAPI over HTTP post-installation is recommended. In any organization that contains Exchange 2013 servers, MAPI over HTTP won't be enabled by default, and administrators will need to follow the steps in [Configure MAPI over HTTP](configure-mapi-over-http.md) to enable it.
 
