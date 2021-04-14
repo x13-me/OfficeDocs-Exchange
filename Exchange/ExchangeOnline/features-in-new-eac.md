@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# New Exchange admin center features
+# New Exchange admin center 
 
 Here's what the new Exchange admin center looks like.
 
@@ -78,7 +78,7 @@ When you select a tab, in most cases you'll see a list view. The list view in th
 
 When you select an item from the list view, information about that object is displayed in the details pane.
 
- **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
+ **To bulk edit several items**: Select the objects you want to bulk edit, and use the options in the toolbar.
  
 ## Related articles
 
