@@ -58,7 +58,10 @@ End users need to install the app on their devices. How the installation happens
 
 By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
 
-- **In-app support**: Users are not able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
+- **In-app support**: Users are not able to submit support tickets from within the app or upload diagnostic data using Collect Diagnostics. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
+
+    > [!IMPORTANT]
+    > Setting *OutlookMobileGCCRestrictionsEnabled* to false allows submission of support, diagnostic, or crash data to be sent to Microsoft through in-app support or by using Collect Diagnostics. The data are uploaded to Microsoft systems that are outside of the Office 365 GCC compliance boundary, including the Office 365 FedRAMP boundary. Customers should update organizational training and policy materials to instruct users to avoid including any sensitive US government information as part of the in-app support submission.
 
 - **In-app feature requests**: Users are not able to submit in-app feature requests. Instead, users are directed to use [Outlook UserVoice](http://outlook.uservoice.com).
 
