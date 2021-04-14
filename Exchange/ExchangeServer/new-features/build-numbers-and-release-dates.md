@@ -35,7 +35,7 @@ This section describes the various methods that you can use to view the build nu
 
 Run the [HealthChecker script](https://aka.ms/exchangehealthchecker) and check the build number.
 
-![Screenshot of the result of HealthChecker](/media/e95bdff4-0c0c-4186-9030-d4b7bfa9dd12.png)
+![Screenshot of the result of HealthChecker](../media/e95bdff4-0c0c-4186-9030-d4b7bfa9dd12.png)
 
 ### Option 2
 
