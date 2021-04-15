@@ -3,7 +3,7 @@ localization_priority: Normal
 description: In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.reviewer: 
 f1.keywords:

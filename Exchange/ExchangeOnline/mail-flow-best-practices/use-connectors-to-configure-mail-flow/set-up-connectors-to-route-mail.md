@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use connectors to route mail between Microsoft 365, Office 365, or Exchange Online and on-premises email servers.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.reviewer: 
 f1.keywords:

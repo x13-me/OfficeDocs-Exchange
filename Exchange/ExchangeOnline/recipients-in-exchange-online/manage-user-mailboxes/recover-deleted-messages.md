@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Administrators can search for and recover deleted email messages in a user's mailbox.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms.reviewer: 
 f1.keywords:

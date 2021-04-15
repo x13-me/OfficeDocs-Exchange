@@ -3,7 +3,7 @@ localization_priority: Normal
 description: With Unified Messaging (UM), users in an Exchange organization can receive all their email and voice messages in one mailbox. The Unified Messaging functionality and voice mail features increase user productivity and enable more flexible messaging throughout an organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
 ms.reviewer: 
 f1.keywords:
