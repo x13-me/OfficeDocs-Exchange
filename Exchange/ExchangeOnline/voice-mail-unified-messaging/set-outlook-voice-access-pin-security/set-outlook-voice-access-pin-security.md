@@ -3,7 +3,7 @@ localization_priority: Normal
 description: When Unified Messaging (UM) users connect to the voice mail system by telephone, they use Outlook Voice Access to navigate the menu system. Before users can access the voice mail system, the system prompts them to enter their PIN. As the administrator, you can configure PIN settings and requirements and perform PIN management tasks. After a user has been enabled for voice mail and a PIN has been generated, the user's PIN is stored encrypted in the user's mailbox.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: ef6d9151-d333-4f52-9338-273f7a291e54
 ms.reviewer: 
 f1.keywords:

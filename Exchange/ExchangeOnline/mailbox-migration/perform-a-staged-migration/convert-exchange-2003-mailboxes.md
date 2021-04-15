@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
 ms.reviewer: 
 description: Convert Exchange 2003 mailboxes to mail enabled users.

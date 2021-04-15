@@ -3,7 +3,7 @@ localization_priority: Normal
 description: When you enable a user for UM and link them to a telephone extension dial plan, an EUM proxy address is created for the user that contains the user's extension number. You must define at least one extension number for UM to use so voice mail can be sent to the user's mailbox. The extension number is also used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c2b896cf-21f7-4453-a4e6-b23d236a6dd3
 ms.reviewer: 
 f1.keywords:
