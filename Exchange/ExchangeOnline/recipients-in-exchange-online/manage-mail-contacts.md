@@ -41,9 +41,76 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 ## Use the Exchange admin center to manage mail contacts
 
-### Use the EAC to create mail contacts
+### Use the new EAC to create mail contacts
 
-1. In the EAC, go to **Recipients** \> **Contacts**
+1. In the new [EAC](https://admin.exchange.microsoft.com), go to **Recipients** \> **Contacts**.
+
+2. Click **+ Add a contact** and configure the following settings in the details pane. Settings marked with an <sup>\*</sup> are required.
+
+   - **Contact type**: Select **Mail contact** from the drop-down list.
+
+   - **First name**
+   
+   - **Last name**
+
+   - <sup>\*</sup>**Display name**: By default, this box shows the values from the **First name**, and **Last name** boxes. You can accept this value or change it.
+
+   - <sup>\*</sup>**Email**: Enter the user's email address. The domain should be external to your cloud-based organization.
+   
+   - **Company**
+   
+   - **Work phone**
+   
+   - **Mobile phone**
+   
+4. When you're finished, click **Add** and then click **Close**.
+
+### Use the new EAC to modify mail contacts
+
+1. In the new EAC, go to **Recipients** \> **Contacts**.
+
+2. In the list of contacts, select the mail contact that you want to modify.
+
+3. In the details pane, click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's contact details.
+
+   When you're finished, click **Save**.
+
+   #### Contact Information
+
+   Use the **Contact information** section, to view, or edit the user's contact information. The information on this page is displayed in the address book.
+
+    - **Web site**
+    - **Fax phone**
+    - **Street**
+    - **City**
+    - **State/Province**
+    - **ZIP/Postal code**
+    - **Country/Region**
+   
+   #### Organization
+
+   Use the **Organization** section, to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
+
+   - **Title**: Use this box to view or change the recipient's title.
+
+   - **Department**: Use this box to view or change the department in which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
+
+   - **Manager**: To add a manager, enter the name and select from the drop-down list.
+
+   - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
+
+### Use the new EAC to remove mail contacts
+
+1. In the new EAC, go to **Recipients** \> **Contacts**.
+
+2. Select the mail contact that you want to remove, and then click **Delete**.
+
+ > [!NOTE]
+ > New EAC doesn't allow bulk edit of mail contacts yet.
+
+### Use the Classic EAC to create mail contacts
+
+1. In the Classic EAC, go to **Recipients** \> **Contacts**
 
 2. Click **New** ![New icon](../media/ITPro_EAC_AddIcon.png) and then select **Mail contact**.
 
@@ -63,88 +130,88 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 4. When you're finished, click **Save**.
 
-### Use the EAC to modify mail contacts
+### Use the Classic EAC to modify mail contacts
 
-1. In the EAC, go to **Recipients** \> **Contacts**.
+1. In the Classic EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
+2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit image](../media/ITPro_EAC_AddIcon.png).
 
 3. On the mail contact properties page that opens, click one of the following tabs to view or change properties.
 
    When you're finished, click **Save**.
 
-#### General
+   #### General
 
-Use the **General** section to view or change basic information about the mail contact.
+   Use the **General** section to view or change basic information about the mail contact.
 
-- **First name**
+    - **First name**
 
-- **Initials**
+    - **Initials**
 
-- **Last name**
+    - **Last name**
 
-- **Display name**: This name appears in your organization's address book, on the To: and From: lines in email, and in the list of contacts in the EAC. This name can't contain empty spaces before or after the display name.
+    - **Display name**: This name appears in your organization's address book, on the To: and From: lines in email, and in the list of contacts in the EAC. This name can't contain empty spaces before or after the display name.
 
-- **Alias**: This is the mail contact's alias. If you change it, it must be unique in the organization and must be 64 characters or less.
+    - **Alias**: This is the mail contact's alias. If you change it, it must be unique in the organization and must be 64 characters or less.
 
-- **External email address**: This is mail contact's primary SMTP address in their external email organization. Email sent to this contact is forwarded to this email address.
+    - **External email address**: This is mail contact's primary SMTP address in their external email organization. Email sent to this contact is forwarded to this email address.
 
-- **Hide from address lists**: Select this check box to prevent the mail contact from appearing in the address book and other address lists that are defined in your organization. After you select this check box, users can still send messages to the recipient by using the email address.
+    - **Hide from address lists**: Select this check box to prevent the mail contact from appearing in the address book and other address lists that are defined in your organization. After you select this check box, users can still send messages to the recipient by using the email address.
 
-#### Contact Information
+   #### Contact Information
 
-Use the **Contact information** tab to view or change the user's contact information. The information on this page is displayed in the address book.
+   Use the **Contact information** tab to view or change the user's contact information. The information on this page is displayed in the address book.
 
-- **Street**
-- **City**
-- **State/Province**
-- **ZIP/Postal code**
-- **Country/Region**
-- **Office**
-- **Work phone**
-- **Fax**
-- **Home phone**
-- **Mobile phone**
-- **Notes**
+    - **Street**
+    - **City**
+    - **State/Province**
+    - **ZIP/Postal code**
+    - **Country/Region**
+    - **Office**
+    - **Work phone**
+    - **Fax**
+    - **Home phone**
+    - **Mobile phone**
+    - **Notes**
 
-> [!TIP]
-> You can use the **State/Province** value to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
+   > [!TIP]
+   > You can use the **State/Province** value to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-#### Organization
+   #### Organization
 
-Use the **Organization** tab to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
+   Use the **Organization** tab to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
-- **Title**: Use this box to view or change the recipient's title.
+    - **Title**: Use this box to view or change the recipient's title.
 
-- **Department**: Use this box to view or change the department in which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
+    - **Department**: Use this box to view or change the department in which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-- **Company**: Use this box to view or change the company for which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
+    - **Company**: Use this box to view or change the company for which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-- **Manager**: To add a manager, click **Browse**. In **Select Manager**, select a person, and then click **OK**.
+    - **Manager**: To add a manager, click **Browse**. In **Select Manager**, select a person, and then click **OK**.
 
-- **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
+    - **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
 
-#### Email Options
+   #### Email Options
 
-Use the **Email Options** section to add or remove proxy addresses for the mail contact or edit existing proxy addresses. The mail contact's primary SMTP address is also displayed in this section, but you can't change it. To change it, you have to change the contact's external email address in the **General** section.
+   Use the **Email Options** section to add or remove proxy addresses for the mail contact or edit existing proxy addresses. The mail contact's primary SMTP address is also displayed in this section, but you can't change it. To change it, you have to change the contact's external email address in the **General** section.
 
-> [!NOTE]
-> The **Email Options** section is only available in Exchange Server. It's not available in Exchange Online.
+   > [!NOTE]
+   > The **Email Options** section is only available in Exchange Server. It's not available in Exchange Online.
 
-#### MailTip
+   #### MailTip
 
-Use the **MailTip** tab to add an alert for potential issues before a user sends messages to this recipient. The text is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
+   Use the **MailTip** tab to add an alert for potential issues before a user sends messages to this recipient. The text is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
-MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+   MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-### Use the EAC to bulk edit mail contacts
+### Use the Classic EAC to bulk edit mail contacts
 
 When you bulk edit mail contacts in the EAC, you can change the following types of properties:
 
 - [Contact information](#contact-information)
 - [Organization](#organization)
 
-1. In the EAC, navigate to **Recipients** \> **Contacts**.
+1. In the Classic EAC, navigate to **Recipients** \> **Contacts**.
 
 2. In the list of contacts, select two or more mail contacts. You can't bulk edit a combination of mail contacts and mail users.
 
@@ -155,9 +222,9 @@ When you bulk edit mail contacts in the EAC, you can change the following types 
 
 4. Make the changes on the properties page and then save your changes.
 
-### Use the EAC to remove mail contacts
+### Use the Classic EAC to remove mail contacts
 
-1. In the EAC, go to **Recipients** \> **Contacts**.
+1. In the Classic EAC, go to **Recipients** \> **Contacts**.
 
 2. Select the mail contact that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
 
@@ -181,7 +248,7 @@ For detailed syntax and parameter information, see [New-MailContact](/powershell
 
 In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Get-Contact](/powershell/module/exchange/get-contact)
 - [Set-Contact](/powershell/module/exchange/set-contact)
@@ -218,7 +285,7 @@ To remove a mail contact, use the following syntax:
 Remove-MailContact -Identity <MailUserIdentity>
 ```
 
-This example remove the mail contact for Pilar Pinilla:
+This example removes the mail contact for Pilar Pinilla:
 
 ```powershell
 Remove-MailContact -Identity "Pilar Pinilla"
@@ -230,7 +297,9 @@ For detailed syntax and parameter information, see [Remove-MailContact](/powersh
 
 To verify that you've successfully created, modified, or removed mail contacts, do any of the following steps:
 
-- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is list (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click lick **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties.
+- In the new EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **MailContact**. Select the mail contact from the list, and click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's details.
+
+- In the Classic EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click **Edit** ![Edit tooltip](../media/ITPro_EAC_EditIcon.png) to view the properties.
 
 - In Exchange Online PowerShell, replace \<MailContactIdentity\> with the name, email address, or alias of the mail contact, and run the following command to verify that the mail contact is listed (or not listed).
 
