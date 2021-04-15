@@ -61,7 +61,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **General** tab:
 
-     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is https:// _\<Server FQDN\>_/owa (for example, https://mailbox01.contoso.com/owa).
+     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is `https:// _<Server FQDN>_/owa` (for example, <https://mailbox01.contoso.com/owa>).
 
      - **External URL**: The URL that's used to access Outlook on the web from the Internet. The default value is blank.
 
