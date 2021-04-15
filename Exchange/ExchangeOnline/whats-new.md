@@ -3,7 +3,7 @@ localization_priority: Normal
 description: What's new in Exchange admin center
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid:
 ms.reviewer: 
 title: What's new in Exchange admin center

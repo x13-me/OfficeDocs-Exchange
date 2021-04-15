@@ -7,7 +7,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
 ms.reviewer: 
 title: Manage user mailboxes

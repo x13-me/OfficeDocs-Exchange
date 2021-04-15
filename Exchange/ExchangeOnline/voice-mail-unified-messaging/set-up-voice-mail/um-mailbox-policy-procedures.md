@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Create a UM mailbox policy
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
 ms.reviewer: 
 f1.keywords:

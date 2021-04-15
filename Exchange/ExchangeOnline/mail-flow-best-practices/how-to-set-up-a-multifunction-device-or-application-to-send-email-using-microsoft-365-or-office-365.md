@@ -1,7 +1,7 @@
 ---
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.reviewer: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Microsoft 365 or Office 365.'
 title: How to set up a multifunction device or application to send email using Microsoft 365 or Office 365

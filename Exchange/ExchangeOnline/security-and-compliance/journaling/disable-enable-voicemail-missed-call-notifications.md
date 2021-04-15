@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to enable or disable the journaling of voice mail and missed call notifications in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.reviewer: 
 f1.keywords:
 - NOCSH

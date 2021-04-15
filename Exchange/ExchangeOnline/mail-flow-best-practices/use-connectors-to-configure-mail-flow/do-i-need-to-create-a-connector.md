@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Find your mail flow scenario to see if you need to create a connector for your Exchange Online or Exchange Online Protection organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
 ms.reviewer: 
 f1.keywords:

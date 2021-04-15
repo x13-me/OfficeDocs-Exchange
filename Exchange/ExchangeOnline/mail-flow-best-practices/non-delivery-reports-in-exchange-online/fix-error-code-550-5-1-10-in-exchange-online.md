@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.10 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
