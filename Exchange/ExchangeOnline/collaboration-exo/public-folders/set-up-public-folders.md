@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to set up public folders, including assigning permissions to them in the EAC.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer: 
 f1.keywords:

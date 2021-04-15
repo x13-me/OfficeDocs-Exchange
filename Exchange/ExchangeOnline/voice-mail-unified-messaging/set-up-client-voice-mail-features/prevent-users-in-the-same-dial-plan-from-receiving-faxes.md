@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can prevent UM-enabled users who are linked with a Unified Messaging (UM) dial plan from receiving fax messages. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. However, there may be times when you want to prevent users who are associated with a specific UM dial plan from receiving faxes.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
 ms.reviewer: 
 f1.keywords:

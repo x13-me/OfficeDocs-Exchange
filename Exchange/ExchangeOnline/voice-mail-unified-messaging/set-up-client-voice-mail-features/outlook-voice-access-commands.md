@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Outlook Voice Access lets Unified Messaging (UM)-enabled users access their mailbox using analog, digital, or mobile telephones. Using the menu system found in Outlook Voice Access, UM-enabled users can read email, listen to voice messages, interact with their Outlook calendar, access their personal contacts, and manage personal options such as configuring their Outlook Voice Access PIN or recording their voice mail messages. This topic contains a list of the Outlook Voice Access commands and how users can use them when they access their mailbox by calling an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b
 ms.reviewer: 
 f1.keywords:

@@ -22,11 +22,16 @@ In Exchange 2016 and Exchange 2019, you can configure MAPI over HTTP at the orga
 
 The scenarios where MAPI over HTTP is enabled or disabled by default at the organization level are described in the following table:
 
-||**Exchange 2019**|**Exchange 2016**|
-|:-----|:-----|:-----|
+<br>
+
+****
+
+|Scenario|Exchange 2019|Exchange 2016|
+|---|---|---|
 |**Upgrading from an Exchange 2016 environment**|MAPI over HTTP is enabled by default|n/a|
 |**Upgrading from an environment that contains any Exchange 2013 servers**|MAPI over HTTP is disabled by default|MAPI over HTTP is disabled by default|
 |**Upgrading from an Exchange 2010 environment**|n/a|MAPI over HTTP is enabled by default|
+|
 
 > [!NOTE]
 > When MAPI over HTTP is enabled at the organization level, the _MapiHttpEnabled_ property value that's returned by the **Get-OrganizationConfig** cmdlet is `True`.
@@ -41,10 +46,10 @@ Complete the following steps to configure MAPI over HTTP for your organization. 
 
 1. **Virtual directory configuration**: By default, Exchange creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You need to configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory).
 
-    For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to https://contoso.com/mapi, and the authentication method to `Negotiate`, run the following command:
+    For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to <https://contoso.com/mapi>, and the authentication method to `Negotiate`, run the following command:
 
     ```powershell
-    Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl   https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+    Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
     ```
 
 2. **Certificate configuration**: The digital certificate used by your Exchange environment must include the same _InternalURL_ and _ExternalURL_ values that are defined on the MAPI virtual directory. For more information on Exchange certificate management, see [Digital certificates and encryption in Exchange Server](../../architecture/client-access/certificates.md). Make sure the Exchange certificate is trusted on the Outlook client workstation and that there are no certificate errors, especially when you access the URLs configured on the MAPI virtual directory.

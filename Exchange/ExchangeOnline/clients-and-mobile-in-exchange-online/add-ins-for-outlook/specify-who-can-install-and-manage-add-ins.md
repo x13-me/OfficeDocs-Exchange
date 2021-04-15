@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 ms.reviewer: 
 title: Specify the administrators and users who can install and manage add-ins for Outlook

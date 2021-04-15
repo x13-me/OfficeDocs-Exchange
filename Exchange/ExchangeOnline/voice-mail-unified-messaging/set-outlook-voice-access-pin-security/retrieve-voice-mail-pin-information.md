@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can retrieve PIN information for a user who is enabled for Unified Messaging (UM). After a user has been enabled for UM-enabled and a PIN is generated or created, the PIN is encrypted and stored in the user's mailbox.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 01517cca-99fe-46b2-b586-19e8d2707728
 ms.reviewer: 
 f1.keywords:
