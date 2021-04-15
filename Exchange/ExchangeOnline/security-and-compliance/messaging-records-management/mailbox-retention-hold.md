@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Placing a mailbox on retention hold suspends the processing of a retention policy or managed folder mailbox policy for that mailbox. Retention hold is designed for situations such as a user being on vacation or away temporarily.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 ms.reviewer: 
 f1.keywords:

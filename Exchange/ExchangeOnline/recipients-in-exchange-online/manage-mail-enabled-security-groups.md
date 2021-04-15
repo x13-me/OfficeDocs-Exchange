@@ -3,7 +3,7 @@ localization_priority: Normal
 description: A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.reviewer: 
 f1.keywords:

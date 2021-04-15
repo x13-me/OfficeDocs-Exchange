@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: An overview of SMTP AUTH in Exchange Online.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid:
 ms.reviewer:
 title: Enable or disable SMTP AUTH

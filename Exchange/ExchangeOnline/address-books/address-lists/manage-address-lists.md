@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to create, view the membership of, update, modify, remove, and hide recipients from address lists in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
 ms.reviewer:
 title: Manage address lists in Exchange Online
