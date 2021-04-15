@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can create an Outlook on the web mailbox policy to apply a common set of policy settings. Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms.reviewer: 
 title: Create an Outlook on the web mailbox policy in Exchange Online

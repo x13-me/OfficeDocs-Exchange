@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.reviewer: 
 f1.keywords:
