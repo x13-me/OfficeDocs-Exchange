@@ -7,7 +7,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
 ms.reviewer: 
 title: Manage mail users

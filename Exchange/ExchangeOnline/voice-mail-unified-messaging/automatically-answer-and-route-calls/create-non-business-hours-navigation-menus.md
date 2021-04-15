@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can enable non-business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the non-business hours main menu prompt greeting that callers hear after the non-business hours welcome greeting is played. The default non-business hours main menu prompt says,Welcome to the Microsoft Exchange after hours auto attendant.Because no key mappings are defined by default, no menu options are available to callers and they hear only the default non-business hours main menu prompt.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
 ms.reviewer: 
 f1.keywords:

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
 ms.reviewer: 
 title: Back up email in Exchange Online

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can set a Voice Mail Preview partner address on a Unified Messaging (UM) mailbox policy. After you've set the Voice Mail Preview partner address on a UM mailbox policy, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 57fbed1e-1b14-4939-95e6-ef7c072f32a9
 ms.reviewer: 
 f1.keywords:
