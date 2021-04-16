@@ -22,7 +22,7 @@ manager: serdars
 # Default Retention Policy in Exchange Online and Exchange Server
 
 > [!IMPORTANT]
-> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliances features. They are no longer available in the [Exchange Admin Center](https://admin.exchange.microsoft.com).
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
