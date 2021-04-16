@@ -25,7 +25,7 @@ localization_priority: Priority
 # How to set up a multifunction device or application to send email using Microsoft 365 or Office 365
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com/#/transportrules).
+> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
 Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
@@ -41,9 +41,9 @@ This article explains how you can send email from devices and business applicati
 >
 > This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 >
-> You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md) for more information.
+> You must also verify that SMTP AUTH is enabled for the mailbox being used. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
 >
-> Please see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) for the latest announcements concerning this option.
+> See [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) for the latest announcements concerning this option..
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
 
@@ -87,7 +87,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Features of SMTP AUTH client submission
 
-- SMTP AUTH client submission allows you to send email to people in your organization as well as outside your company.
+- SMTP AUTH client submission allows you to send email to people in your organization and outside your company.
 
 - This method bypasses most spam checks for email sent to people in your organization. This can help protect your company IP addresses from being blocked by a spam list.
 
@@ -95,7 +95,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a username and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a username and password to send email on the device. You cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 
@@ -242,7 +242,7 @@ SMTP relay lets Microsoft 365 or Office 365 relay emails on your behalf by using
 
 |Device or application setting|Value|
 |---|---|
-|Server/smart host|Your MX endpoint, e.g. _yourdomain_-com.mail.protection.outlook.com|
+|Server/smart host|Your MX endpoint, for example, _yourdomain_-com.mail.protection.outlook.com|
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
 |Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|
@@ -319,7 +319,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - The Microsoft 365 or Office 365 connector that you configure authenticates your device or application with Microsoft 365 or Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. The email address doesn't need to be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
 
-- Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes as well as external recipients. Microsoft 365 or Office 365 SMTP relay is very similar to direct send except that it can send mail to external recipients.
+- Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes and external recipients. Microsoft 365 or Office 365 SMTP relay is similar to direct send except that it can send mail to external recipients.
 
 - Due to the added complexity of configuring a connector, direct send is recommended over Microsoft 365 or Office 365 SMTP relay, unless you must send email to external recipients. To send email using Microsoft 365 or Office 365 SMTP relay, your device or application server must have a static IP address or address range. You can't use SMTP relay to send email directly to Microsoft 365 or Office 365 from a third-party hosted service, such as Microsoft Azure. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
 
@@ -371,13 +371,13 @@ Here's a comparison of each configuration option and the features they support.
 
 ## Use your own email server to send email from multifunction devices and applications
 
-If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following topics:
+If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following articles:
 
 - [Allow anonymous relay on Exchange servers](../../ExchangeServer/mail-flow/connectors/allow-anonymous-relay.md)
 
 - [Receive messages from a server, service, or device that doesn't use Exchange](../../ExchangeServer/mail-flow/connectors/custom-receive-connectors.md#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
 
-## Related Topics
+## Related articles
 
 [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 

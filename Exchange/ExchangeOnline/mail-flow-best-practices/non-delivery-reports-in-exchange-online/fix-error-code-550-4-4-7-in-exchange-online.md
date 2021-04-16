@@ -28,13 +28,13 @@ description: "Learn how to fix email issues for error code 550 4.4.7 in Exchange
 # Fix email delivery issues for error code 550 4.4.7 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com/#/transportrules).
+> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 4.4.7 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
+It's frustrating when you get an error after sending an email message. This article describes what you can do if you see error code 550 4.4.7 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 ## Why did I get this bounce message?
 
-For more information, see the [Causes for error code 4.4.7](#causes-for-error-code-447) section later in this topic.
+For more information, see the [Causes for error code 4.4.7](#causes-for-error-code-447) section later in this article.
 
 Use the information in the NDR to help you decide how to fix the problem.
 
@@ -46,7 +46,7 @@ Use the information in the NDR to help you decide how to fix the problem.
 
 This section contains the steps that you can try to fix the problem yourself.
 
-If the steps in this section don't fix the problem for you, contact your email admin and refer them to this topic so they can try to resolve the issue for you.
+If the steps in this section don't fix the problem for you, contact your email admin and refer them to this article so they can try to resolve the issue for you.
 
 If you get this error only for messages that you sent to a specific domain (for example, only recipients in the @fabrikam.com domain), the problem is likely with that destination domain. For example:
 
@@ -86,7 +86,7 @@ For more information about message routing in hybrid deployments, see [Transport
 
 ## Causes for error code 4.4.7
 
-When Exchange Online attempts to deliver a message, the destination email might be unable or unwilling to accept the message. This can result in a temporary 4_.x.x_ error code from the destination email server (instead of a permanent 5._x.x_ error code that indicates the message was rejected). Exchange Online repeatedly tries to deliver the message over 24 hours. Only after two days of unsuccessful delivery attempts does the recipient receive this NDR.
+When Exchange Online attempts to deliver a message, the destination email might be unable or unwilling to accept the message. This can result in a temporary 4_.x.x_ error code from the destination email server (instead of a permanent 5._x.x_ error code that indicates the message was rejected). Exchange Online repeatedly tries to deliver the message over 24 hours. Only after two days of unsuccessful delivery attempts do the recipient receive this NDR.
 
 The possible causes of this error are:
 
@@ -94,7 +94,7 @@ The possible causes of this error are:
 
 - The server won't accept delivery of the message.
 
-- A network problem is causing message delivery to time-out.
+- A network problem is causing message delivery to time out.
 
 ## Details for error code 5.1.0
 
@@ -102,7 +102,7 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 - **User information section**
 
-  - The server has tried to deliver this message, without success, and has stopped trying. Please try sending this message again. If the problem continues, contact your help desk.
+  - The server has tried to deliver this message, without success, and has stopped trying. Try sending this message again. If the problem continues, contact your help desk.
 
 - **Diagnostic information for administrators section**
 

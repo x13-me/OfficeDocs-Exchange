@@ -22,9 +22,9 @@ description: "Learn how to fix email issues for error code 5.1.1 through 5.1.20 
 # Fix email delivery issues for error code 550 5.1.1 through 5.1.20 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com/#/transportrules).
+> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error codes 550 5.1.1 through 5.1.20 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
+It's frustrating when you get an error after sending an email message. This article describes what you can do if you see error codes 550 5.1.1 through 5.1.20 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
 |||||
 |---|---|---|---|
@@ -34,7 +34,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 Here are some steps that you can try to fix the problem yourself.
 
-If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this topic so they can try to resolve the issue for you.
+If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this article so they can try to resolve the issue for you.
 
 ### Solution 1: Confirm the recipient's email address
 
@@ -122,11 +122,11 @@ To learn more, see [Backscatter in EOP](/microsoft-365/security/office-365-secur
 
 ## I'm an email admin. What can I do to fix this?
 
-If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Microsoft 365 or Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are 4 solutions you can try. You might not need to try all of them to get the message sent successfully.
+If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Microsoft 365 or Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are four solutions you can try. You might not need to try all of them to get the message sent successfully.
 
 ### Solution 1: Check the Microsoft 365 admin center for configuration problems or service-wide issues
 
-For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
+For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for various tools, notifications, and information that you can use to troubleshoot this and other issues.
 
 Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the **Home** page, do the following items:
 
