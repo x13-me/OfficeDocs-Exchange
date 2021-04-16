@@ -38,6 +38,21 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 >[!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
+## Explore the videos to understand the new Exchange admin center
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBJbk]  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGF]  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGs]  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBGra]  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]  
+
+
 ## For more information on new EAC and Classic EAC
 
 - To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md)
