@@ -53,17 +53,6 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 ### Feature pane
 
-
-    
-          
-            
-          
-          
-            
-          
-    
-    @@ -91,7 +91,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
-  
 Here are the features available in the left-hand navigation.
 |**Area**|**What you do here**|
 |:-----|:-----|
@@ -88,14 +77,6 @@ When you select a tab, in most cases you'll see a list view. The list view in th
 ![New EAC tabs](media/new-eac-home-page-details-pane.png)
 
 ### Details pane
-
-
-    
-          
-            
-          
-    
-    
   
 When you select an item from the list view, information about that object is displayed in the details pane.
  **To bulk edit several items**: select the objects you want to bulk edit, and use the options in the toolbar.
