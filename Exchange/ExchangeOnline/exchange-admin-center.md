@@ -54,6 +54,7 @@ You can personalize your home page by selecting a theme, setting your language, 
 ### Feature pane
 
 Here are the features available in the left-hand navigation.
+
 |**Area**|**What you do here**|
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
@@ -91,8 +92,11 @@ You can also get to the Classic Exchange admin center directly by using a URL. T
 ## Classic Exchange admin center features
 Here's what the Classic Exchange admin center looks like.
 ![Common User Interface Elements of the EAC](media/ITPro_EXO_EAC_EACwCallouts.png)
+
 ### Feature pane
+
 Here are the features you'll find in the left-hand navigation.
+
 |**Area**|**What you do here**|
 |:-----|:-----|
 |**Dashboard**|An overview of the admin center.|
