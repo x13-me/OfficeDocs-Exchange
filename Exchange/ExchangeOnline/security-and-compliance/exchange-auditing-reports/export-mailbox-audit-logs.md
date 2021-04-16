@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use the Exchange admin center (EAC) to export mailbox audit logs in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 ms.reviewer: 
 f1.keywords:

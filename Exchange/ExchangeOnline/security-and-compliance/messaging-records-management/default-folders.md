@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can use Retention tags and retention policies to manage email lifecycle. Retention Policies contain Retention Tags, which are settings you can use to specify when a message should be automatically moved to the archive or when it should be deleted.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms.reviewer: 
 f1.keywords:

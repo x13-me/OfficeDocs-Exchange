@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'User call logs are used to view the following information about specific Unified Messaging (UM) users:'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 ms.reviewer: 
 f1.keywords:

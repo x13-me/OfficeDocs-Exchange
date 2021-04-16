@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer: 
 f1.keywords:
