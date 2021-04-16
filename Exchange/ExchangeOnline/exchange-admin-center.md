@@ -20,8 +20,7 @@ manager: serdars
 
 # Exchange admin center in Exchange Online
 
-The Exchange admin center (EAC) is the web-based management console in Exchange Online that's optimized for on-premises, online, and hybrid Exchange deployments. It replaces 
-the Exchange Control Panel (ECP) to manage email settings for your organization.
+The Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
 
 ## Get to the new Exchange admin center 
 
@@ -40,22 +39,22 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 
 ## Explore the videos to experience the new Exchange admin center
 
-- For improved support for groups
+- Improved support for groups
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBJbk]  
 
-- For personalized dashboard, reports, and insights
+- Personalized dashboard, reports, and insights
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
 
-- For a new navigation panel
+- New navigation panel
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGF]  
 
-- For migration capabilities
+- Migration capabilities
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGs]  
 
-- For improved mailbox management
+- Improved mailbox management
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBGra]  
 
-- For Azure cloud shell support
+- Azure cloud shell support
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]  
 
 ## For more information on new EAC and Classic EAC
