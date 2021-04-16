@@ -59,6 +59,8 @@ After your on-premises and Microsoft 365 or Office 365 organizations are set up 
 
 - **Potential delay in email routing**: Email sent to on-premises users whose mailboxes were migrated to Microsoft 365 or Office 365 are routed to their on-premises Exchange mailboxes until the MX record is changed.
 
+- **Potential Outlook connection issues**: See [After migration to Office 365, Outlook doesn't connect or web services don't work](https://support.microsoft.com/topic/after-migration-to-office-365-outlook-doesn-t-connect-or-web-services-don-t-work-3d9df009-597b-5d75-460c-4b7c64c833a1).
+
 ## How does cutover migration work?
 
 The main steps you perform for a cutover migration are shown in the following illustration.
