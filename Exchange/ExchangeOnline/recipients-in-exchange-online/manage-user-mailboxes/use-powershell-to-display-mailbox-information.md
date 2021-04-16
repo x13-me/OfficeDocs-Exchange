@@ -22,7 +22,7 @@ manager: serdars
 # Use Exchange Online PowerShell to display Microsoft 365 or Office 365 mailbox information
 
 > [!IMPORTANT]
-> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 
@@ -100,7 +100,7 @@ Some commonly used comparison operators are:
 
 For a complete list of comparison operators, see [Where-Object](/powershell/module/microsoft.powershell.core/where-object).
 
-Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and `$Null` don't require quotation marks around the value.
+Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values, and `$Null` don't require quotation marks around the value.
 
 Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is `"LitigationHoldEnabled -eq $True"`:
 

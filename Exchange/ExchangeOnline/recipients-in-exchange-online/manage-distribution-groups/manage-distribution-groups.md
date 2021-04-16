@@ -23,7 +23,7 @@ manager: serdars
 # Create and manage distribution list groups in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Use the Exchange admin center (EAC) or Exchange Online PowerShell to create, modify, or remove distribution list groups in your Exchange Online organization.
 
@@ -43,7 +43,7 @@ It's important to note the terminology differences between Active Directory and 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
+- You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
 - If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution list groups, the group naming policy is ignored and isn't applied to the group name. However, if you use Exchange Online PowerShell to create or rename a distribution list group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see:
 
@@ -246,13 +246,13 @@ If you still want to create distribution list groups, use the following steps:
 
      - **Closed**: Members can be removed only by the group owners. All requests to leave will be rejected automatically.
     
-For more information about using Exchange Online PowerShell to create distribution groups, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
+   For more information about using Exchange Online PowerShell to create distribution groups, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
 4. When you're finished, click **Save** to create the distribution list group.
 
-> [!NOTE]
-> By default, new distribution groups only accept messages from authenticated (internal) senders, and messages from external senders are rejected. To configure a distribution group to accept messages from all senders, you need to modify the [message delivery restriction settings](#delivery-management) for the group.
-> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](/powershell/module/exchange/set-group) cmdlet using Exchange Online PowerShell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the Classic EAC or Exchange Online PowerShell to manage these groups
+   > [!NOTE]
+   > - By default, new distribution groups only accept messages from authenticated (internal) senders, and messages from external senders are rejected. To configure a distribution group to accept messages from all senders, you need to modify the [message delivery restriction settings](#delivery-management) for the group.
+   > - You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](/powershell/module/exchange/set-group) cmdlet using Exchange Online PowerShell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the Classic EAC or Exchange Online PowerShell to manage these groups
 
 ### Use the Classic EAC to modify distribution list groups
 
@@ -364,7 +364,9 @@ For more information about using Exchange Online PowerShell to create distributi
    - **Add**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
 
      - **Email address type**: Verify **SMTP** is selected.
+     
      - **Email address**: Enter the email address to add.
+     
      - **Make this the reply address**
 
      When you're finished, click **OK**.
@@ -372,6 +374,7 @@ For more information about using Exchange Online PowerShell to create distributi
    - **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon2](../../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
 
      - **Email address**: Modify the existing email address.
+     
      - **Make this the reply address**: This setting only appears if the email address you selected isn't already the reply address.
 
      When you're finished, click **OK**.
@@ -392,9 +395,9 @@ For more information about using Exchange Online PowerShell to create distributi
 
     - **Send on Behalf**: Allows the delegate to send messages from the group. The From address of these messages clearly shows that the message was sent by the delegate ("_\<Delegate\>_ on behalf of _\<Group\>_"). However, replies to these messages are sent to the group, not to the delegate. After this permission is assigned, the delegate has the option to add the group in the From: line.
 
-  To add senders, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+   To add senders, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-  To remove a sender from the list, select the sender, and then click **Remove** ![Remove icon4](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove a sender from the list, select the sender, and then click **Remove** ![Remove icon4](../../media/ITPro_EAC_RemoveIcon.png).
 
 ### Use the Classic EAC to remove distribution list groups
 
