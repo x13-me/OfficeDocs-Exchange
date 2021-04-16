@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: You use the Exchange admin center to manage email settings for your organization.
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
 ms.reviewer: 
 title: Exchange admin center in Exchange Online
@@ -28,13 +28,6 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
 You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
-
-    
-        
-          
-        
-    
-    @@ -41,7 +41,7 @@ You can also get to the new Exchange admin center directly by using the URL [htt
   
 >[!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
@@ -46,13 +39,6 @@ Here's what the new Exchange admin center looks like.
 
 ### Home page
 
-
-    
-        
-          
-        
-    
-    @@ -59,7 +59,7 @@ You can personalize your home page by selecting a theme, setting your language,
   
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 1. To personalize your dashboard, click **+ Add card** on top of the homepage and drag any card onto the dashboard to the location you want.
