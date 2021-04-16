@@ -42,22 +42,32 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBJbk]  
 
+
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
+
+
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGF]  
 
+
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGs]  
 
+
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBGra]  
+
+
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]  
 
 
 ## For more information on new EAC and Classic EAC
 
-- To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md)
+- To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md).
 
-- To explore features in Classic EAC, see [Classic Exchange admin center](features-in-classic-eac.md)
+- To explore features in Classic EAC, see [Classic Exchange admin center](features-in-classic-eac.md).
 
 - To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](https://docs.microsoft.com/exchange/changes-in-exchange-admin-center).
 
