@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can specify the group of users that callers can contact when calling into a Unified Messaging (UM) auto attendant. By default, callers can contact users within the same dial plan that's associated with the UM auto attendant. However, you can change the grouping of users to allow callers to transfer calls or send voice messages to users who are located in the organization's address book or to a specific set of users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 ms.reviewer: 
 f1.keywords:

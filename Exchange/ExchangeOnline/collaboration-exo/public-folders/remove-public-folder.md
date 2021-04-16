@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.reviewer: 
 f1.keywords:

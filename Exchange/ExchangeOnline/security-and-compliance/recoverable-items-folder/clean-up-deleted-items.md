@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Admins can learn how to remove items from the Recoverable Items folder in Exchange Online.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms.reviewer:
 f1.keywords:

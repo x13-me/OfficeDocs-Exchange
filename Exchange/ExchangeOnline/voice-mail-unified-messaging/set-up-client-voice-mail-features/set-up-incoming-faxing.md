@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admin can learn how to setup inbound faxing in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5d3cae58-1690-424d-9bef-011911d0b608
 ms.reviewer: 
 f1.keywords:

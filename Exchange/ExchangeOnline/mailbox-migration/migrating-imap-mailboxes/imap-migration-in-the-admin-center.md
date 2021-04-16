@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
 ms.reviewer: 
 description: Learn how to perform an IMAP migration in the Admin Center preview.

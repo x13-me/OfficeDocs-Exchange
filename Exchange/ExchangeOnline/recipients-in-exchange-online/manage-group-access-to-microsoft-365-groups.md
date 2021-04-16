@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Learn how to allow or block guest access to Microsoft 365 Groups.
 ms.topic: article
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
