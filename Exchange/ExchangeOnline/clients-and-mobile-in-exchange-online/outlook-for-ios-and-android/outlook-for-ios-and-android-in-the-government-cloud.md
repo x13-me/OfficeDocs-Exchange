@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
 title: Using Outlook for iOS and Android in the Government Community Cloud
 ms.collection: 

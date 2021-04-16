@@ -2,7 +2,7 @@
 audience: ITPro
 localization_priority: Normal
 description: Learn about the conditions and exceptions (predicates) that are available for mail flow rules in Exchange Online and Exchange Online Protection.
-ms.author: dmaguire
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: msdmaguire

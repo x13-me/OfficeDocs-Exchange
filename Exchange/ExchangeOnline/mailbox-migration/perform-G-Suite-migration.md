@@ -1,6 +1,6 @@
 ---
 title: "Perform a Google Workspace migration"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 audience: Admin

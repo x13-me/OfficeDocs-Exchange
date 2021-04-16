@@ -2,6 +2,23 @@
 
 
 
+## Week of April 05, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/6/2021 | [Transport options in Exchange hybrid deployments](/Exchange/transport-options) | modified |
+| 4/6/2021 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
+| 4/6/2021 | [Integrating sensitive information rules with mail flow rules in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules) | modified |
+| 4/8/2021 | [Configure mail flow using connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
+| 4/8/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
+| 4/8/2021 | [Managing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android) | modified |
+| 4/8/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 4/8/2021 | [Using Outlook for iOS and Android in the Government Community Cloud](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud) | modified |
+| 4/8/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
+| 4/8/2021 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
+
+
 ## Week of March 29, 2021
 
 
