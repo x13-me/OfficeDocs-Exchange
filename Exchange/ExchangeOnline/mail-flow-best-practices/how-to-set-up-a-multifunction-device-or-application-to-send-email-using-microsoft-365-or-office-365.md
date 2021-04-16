@@ -295,7 +295,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
     c. Click **Next**, and give the connector a name.
 
-    d. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and          add the IP address from step 1.
+    d. On the next screen, choose the option **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from step 1.
 
     e. Leave all the other fields with their default values, and select **Save**.
 
