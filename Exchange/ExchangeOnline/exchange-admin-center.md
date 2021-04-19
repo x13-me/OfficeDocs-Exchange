@@ -18,30 +18,48 @@ manager: serdars
 ---
 # Exchange admin center in Exchange Online
 
-The Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
+The new Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
 
 You can get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials. You can also access the [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials. 
 
 ## Explore the videos to experience the new Exchange admin center
 
-Check out the following videos to experience the new exchange admin feature:
+Check out the following videos to experience the new Exchange admin center features:
 
 - Improved support for groups
+
+  The new EAC enables you to create and manage four types of groups: Microsoft 365 Groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists.
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBJbk]  
 
 - Personalized dashboard, reports, and insights
+
+  The new EAC offers actionable insights and includes reports for mail flow, migration, and priority monitoring. 
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
 
 - New navigation panel
+
+  The new EAC includes a left navigation panel to make it easier to find features.
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGF]  
 
 - Migration capabilities
+
+  The new EAC supports various kinds of migrations, including cross-tenant migrations for M&A scenarios, and automation Google Workspace (G-Suite) migrations. 
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGs]  
 
 - Improved mailbox management
+
+  Recipient management is one of the most crucial tasks that admins perform. The new EAC now includes easier mailbox management.
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBGra]  
 
 - Azure cloud shell support
+
+  Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their working lifestyle.
+  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]  
 
 ## For more information on new EAC and Classic EAC
