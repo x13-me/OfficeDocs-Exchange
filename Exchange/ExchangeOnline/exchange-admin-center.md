@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: You use the Exchange admin center to manage email settings for your organization.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
 ms.reviewer: 
@@ -15,9 +15,7 @@ ms.collection:
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
-
 ---
-
 # Exchange admin center in Exchange Online
 
 The Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
@@ -48,11 +46,11 @@ Check out the following videos to experience the new exchange admin feature:
 
 ## For more information on new EAC and Classic EAC
 
+- To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](https://docs.microsoft.com/exchange/changes-in-exchange-admin-center).
+
 - To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md).
 
 - To explore features in Classic EAC, see [Classic Exchange admin center](features-in-classic-eac.md).
-
-- To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](https://docs.microsoft.com/exchange/changes-in-exchange-admin-center).
 
 - To get an update on the journey of the new EAC, see [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
 
@@ -66,6 +64,6 @@ See the following articles:
 
 ## Related articles
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](../ExchangeServer/architecture/client-access/exchange-admin-center.md).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
 
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
