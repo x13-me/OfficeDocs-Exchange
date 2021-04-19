@@ -22,22 +22,11 @@ manager: serdars
 
 The Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
 
-## Get to the new Exchange admin center 
-
-You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
-
-1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account.
-
-2. In the left navigation pane, navigate to **Admin centers** > **Exchange**.
-
-    ![New EAC](media/new-eac-selection.png)
-
-You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
-
->[!NOTE]
-> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
+You can get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials. You can also access the [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials. 
 
 ## Explore the videos to experience the new Exchange admin center
+
+Check out the following videos to experience the new exchange admin feature:
 
 - Improved support for groups
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBJbk]  
