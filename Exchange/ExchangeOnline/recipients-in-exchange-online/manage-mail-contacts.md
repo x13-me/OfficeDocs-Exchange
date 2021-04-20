@@ -22,6 +22,9 @@ manager: serdars
 
 # Manage mail contacts in Exchange Online
 
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 In Exchange Online organizations, mail contacts are mail-enabled objects that contain information about people who exist outside your organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes; standalone Exchange Online Protection (EOP) in organizations without Exchange Online mailboxes).
@@ -32,9 +35,9 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) article.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -80,11 +83,17 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
    Use the **Contact information** section, to view, or edit the user's contact information. The information on this page is displayed in the address book.
 
     - **Web site**
+    
     - **Fax phone**
+    
     - **Street**
+    
     - **City**
+    
     - **State/Province**
+    
     - **ZIP/Postal code**
+    
     - **Country/Region**
    
    #### Organization
@@ -105,8 +114,8 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 2. Select the mail contact that you want to remove, and then click **Delete**.
 
- > [!NOTE]
- > New EAC doesn't allow bulk edit of mail contacts yet.
+   > [!NOTE]
+   > New EAC doesn't allow bulk edit of mail contacts yet.
 
 ### Use the Classic EAC to create mail contacts
 
@@ -163,15 +172,25 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
    Use the **Contact information** tab to view or change the user's contact information. The information on this page is displayed in the address book.
 
     - **Street**
+    
     - **City**
+    
     - **State/Province**
+    
     - **ZIP/Postal code**
+    
     - **Country/Region**
+    
     - **Office**
+    
     - **Work phone**
+    
     - **Fax**
+    
     - **Home phone**
+    
     - **Mobile phone**
+    
     - **Notes**
 
    > [!TIP]
@@ -208,8 +227,9 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 When you bulk edit mail contacts in the EAC, you can change the following types of properties:
 
-- [Contact information](#contact-information)
-- [Organization](#organization)
+ - [Contact information](#contact-information)
+
+ - [Organization](#organization)
 
 1. In the Classic EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -251,8 +271,11 @@ In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and chan
 For more information, see the following articles:
 
 - [Get-Contact](/powershell/module/exchange/get-contact)
+
 - [Set-Contact](/powershell/module/exchange/set-contact)
+
 - [Get-MailContact](/powershell/module/exchange/get-mailcontact)
+
 - [Set-MailContact](/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using Exchange Online PowerShell to change mail contact properties:
