@@ -227,8 +227,6 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
    
 5. In **G Suite migration prerequisites** section, manually configure G-Suite for migration. 
    
-   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
-   
 6. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
     
     ![Set endpoint](../media/migration-endpoint-selection.png)
