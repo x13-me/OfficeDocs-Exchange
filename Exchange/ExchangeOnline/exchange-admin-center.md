@@ -20,11 +20,11 @@ manager: serdars
 
 The new Exchange admin center (EAC) is a modern, web-based management console for managing Exchange that is designed to provide an experience more in line with the overall Microsoft 365 admin experience. It replaces the Exchange Control Panel (ECP) to manage email settings for your organization.
 
-You can get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials. You can also access the [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials. 
-
 ## Experience the new Exchange admin center
 
-To experience the new Exchange admin center features, see the following:
+Try the new Exchange adminn center using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your credentials. You can also continue to access the Classic Exchange admin center using the URL [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials.
+
+To experience some of the new Exchange admin center features, see the following:
 
 - **Personalized dashboard, reports, and insights**
 
