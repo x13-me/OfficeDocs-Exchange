@@ -225,33 +225,16 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
    ![Migration Onboarding](../media/migration-onboarding-selection.png)
    
-5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
+5. In **G Suite migration prerequisites** section, manually configure G-Suite for migration. 
    
-   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
-   
-6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
-
-7. Sign in to your Google account to validate your APIs.
-
-   Once the APIs are successfully validated, a link, client ID, and a scope is provided to add scope for API access.
-   
-8. Click the API access link and verify your google account.
-
-9. In Google admin page, click **Add new**. 
-
-10. In **Add a new client ID** window, enter the client ID and the scope provided after API validation and click **Authorize**.
-
-    > [!NOTE]
-    > For more information, see the above topic **Grant access to the service account for your Google tenant**.
-    
-11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
+6. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
     
     ![Set endpoint](../media/migration-endpoint-selection.png)
     
     > [!NOTE]
     > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
     
-12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+7. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
     - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
@@ -262,11 +245,11 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
     will@fabrikaminc.net
     user123@fabrikaminc.net
     ```
-13. In **Add user mailboxes** section, import the CSV file and click **Next**.
+8. In **Add user mailboxes** section, import the CSV file and click **Next**.
 
-14. In **Move configuration** section, enter the details and click **Next**.
+9. In **Move configuration** section, enter the details and click **Next**.
 
-15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
+10. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
 
     ![Schedule batch migration](../media/schedule-batch1-migration.png)
     
@@ -275,9 +258,9 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
     > [!NOTE]
     > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
     
-16. To complete the batch, select the migration group.
+11. To complete the batch, select the migration group.
 
-17. In the details pane, select the preferred option to complete the batch and click **Save**.
+12. In the details pane, select the preferred option to complete the batch and click **Save**.
 
     The batch status will then be **Completed**.
 	
