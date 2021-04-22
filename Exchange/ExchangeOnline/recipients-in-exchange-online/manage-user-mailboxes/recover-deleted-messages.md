@@ -19,7 +19,10 @@ manager: serdars
 
 # Recover deleted messages in a user's mailbox in Exchange Online
 
-(This topic is intended for Exchange administrators.)
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
+(This article is intended for Exchange administrators.)
 
 Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person (by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App)), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired.
 
@@ -30,7 +33,7 @@ Administrators can search for and recover deleted email messages in a user's mai
 
 - Estimated time to complete: 15-30 minutes.
 
-- Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this article require specific permissions. See each procedure for its permissions information.
 
 - Single item recovery must be enabled for a mailbox before the item you want to recover is deleted. In Exchange Online, single item recovery is enabled by default when a new mailbox is created. In Exchange Server, single item recovery is disabled when a mailbox is created. For more information, see [Enable or disable single item recovery for a mailbox](enable-or-disable-single-item-recovery.md).
 
@@ -38,11 +41,11 @@ Administrators can search for and recover deleted email messages in a user's mai
 
   - **Source mailbox**: This is the mailbox being searched.
 
-  - **Target mailbox**: This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If required, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
+  - **Target mailbox**: This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If necessary, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
 
   - **Search criteria**: Criteria include sender or recipient, or keywords (words or phrases) in the message.
 
-- This topic focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](/office365/enterprise/recover-deleted-items-in-a-mailbox).
+- This article focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](/office365/enterprise/recover-deleted-items-in-a-mailbox).
 
 ## Use new EAC for recovering deleted messages
 
@@ -56,7 +59,7 @@ Administrators can search for and recover deleted email messages in a user's mai
 
 5. Click **Apply filter**.
 
-## Using Powershell to manage deleted items
+## Using PowerShell to manage deleted items
 
 ### Step 1: Connect to Exchange Online PowerShell
 
@@ -64,7 +67,7 @@ For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchan
 
 ### Step 2: Search for and recover missing items
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
 > [!NOTE]
 > You can use In-Place eDiscovery in the Exchange admin center (EAC) to search for missing items. However, when using the EAC, you can't restrict the search to the Recoverable Items folder. Messages matching your search parameters will be returned even if they're not deleted. After they're recovered to the specified discovery mailbox, you may need to review the search results and remove unnecessary messages before recovering the remaining messages to the user's mailbox or exporting them to a .pst file. For details about how to use the EAC to perform an In-Place eDiscovery search, see [Create an In-Place eDiscovery search](/microsoft-365/compliance/content-search).
@@ -79,7 +82,7 @@ This example returns all of the available recoverable deleted messages with the 
 > [!TIP]
 > Use the **Get-RecoverableItems** cmdlet to create a search query to find an Outlook item. Once you have a list of results you can use properties like last modified date, item type, etc. to narrow the amount of items restored or to restore a specific item.
 
-For detailed syntax and parameter information, see [Get-RecoverableItems](/powershell/module/exchange/get-recoverableitems?view=exchange-ps).
+For detailed syntax and parameter information, see [Get-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/get-recoverableitems?).
 
 #### How do you know this worked?
 
@@ -87,7 +90,7 @@ To verify that you have successfully searched the messages you want to recover, 
 
 ### Step 3: Restore recovered items
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
 > [!NOTE]
 > You can't use the EAC to restore recovered items.
@@ -114,7 +117,7 @@ Date range: 3/15/2019 to 3/25/2019
 
 Number of mailboxes processed simultaneously: 2
 
-For detailed syntax and parameter information, see [Restore-RecoverableItems](/powershell/module/exchange/restore-recoverableitems?view=exchange-ps).
+For detailed syntax and parameter information, see [Restore-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/restore-recoverableitems?).
 
 ### How do you know this worked?
 
@@ -128,7 +131,7 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
 - As previously explained, you can also use the In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](/office365/enterprise/recover-deleted-items-in-a-mailbox).
 
-- Users can recover a deleted item if it hasn't been purged and if the deleted item retention period for that item hasn't expired. If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
+- Users can recover a deleted item if it hasn't been purged and if the deleted item retention period for that item hasn't expired. If users need to recover deleted items from the Recoverable Items folder, point them to the following articles:
 
   - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
@@ -138,4 +141,4 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
 ## Related article
 
-Are you using Exchange Server? See [Recover deleted messages in a user's mailbox in Exchange Server](../../../ExchangeServer/recipients/user-mailboxes/recover-deleted-messages.md?view=exchserver-2019).
+Are you using Exchange Server? See [Recover deleted messages in a user's mailbox in Exchange Server](https://docs.microsoft.com/exchange/recipients/user-mailboxes/recover-deleted-messages?).

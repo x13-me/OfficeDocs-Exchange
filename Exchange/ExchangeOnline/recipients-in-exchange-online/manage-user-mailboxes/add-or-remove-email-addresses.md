@@ -20,6 +20,9 @@ manager: serdars
 
 # Add or remove email addresses for a mailbox
 
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 
 > [!IMPORTANT]
@@ -31,11 +34,11 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
-The procedures in this topic show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
+The procedures in this article show how to add or remove email addresses for a user mailbox. You can use similar procedures to add or remove email addresses for other recipient types.
 
 > [!NOTE]
 > You can use similar procedures to add or remove email addresses that use plus addressing. For more information about plus addressing, see [Plus Addressing](../../recipients-in-exchange-online/plus-addressing-in-exchange-online.md).
