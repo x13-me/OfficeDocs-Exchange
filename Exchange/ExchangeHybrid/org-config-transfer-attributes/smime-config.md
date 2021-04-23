@@ -36,7 +36,7 @@ The following attributes of Smime Config are copied from an on-premises Exchange
 |OWAClearSign|Exchange 2010, 2013, 2016, 2019|
 |OWAIncludeCertificateChainWithoutRootCertificate|Exchange 2010, 2013, 2016, 2019|
 |OWAIncludeCertificateChainAndRootCertificate|Exchange 2010, 2013, 2016, 2019|
-|OWAEncryptTemporaryBuffers	Exchange|2010, 2013, 2016, 2019|
+|OWAEncryptTemporaryBuffers|Exchange 2010, 2013, 2016, 2019|
 |OWASignedEmailCertificateInclusion|Exchange 2010, 2013, 2016, 2019|
 |OWABCCEncryptedEmailForking|Exchange 2010, 2013, 2016, 2019|
 |OWAIncludeSMIMECapabilitiesInMessage|Exchange 2010, 2013, 2016, 2019|
