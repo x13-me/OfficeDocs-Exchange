@@ -21,6 +21,9 @@ description: "Learn how to fix email issues for error code 550 5.1.10 in Exchang
 
 # Fix email delivery issues for error code 550 5.1.10 in Exchange Online
 
+> [!IMPORTANT]
+> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+
 Problems sending and receiving email messages can be frustrating. If you get a non-delivery report (NDR), also called a bounce message, for error code 550 5.1.10, this article can help you fix the problem and get your message sent.
 
 ![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png) [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)
@@ -31,19 +34,19 @@ Problems sending and receiving email messages can be frustrating. If you get a n
 
 You received this NDR with error code 5.1.10 for one of the following reasons:
 
-- The recipient's email address doesn't exist or couldn't be found. Go to the [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it) section in this topic.
+- The recipient's email address doesn't exist or couldn't be found. Go to the [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it) section in this article.
 
 Typically, if a message can't be delivered, the recipient's email system will use the sender's email address in the **From** field to notify the sender in an NDR like this one. But what if the message was sent by a spammer who falsified the **From** address so it appears the message came from your email address? The resulting NDR that you'll receive is useless because it creates the false impression that you did something wrong. This type of useless NDR is called _backscatter_. It's annoying, but if this NDR is backscatter, your account hasn't been compromised.
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this article: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## I got this bounce message. How do I fix it?
 
 Here are some steps that you can try to fix the problem yourself.
 
-If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this topic so they can try to resolve the issue for you.
+If the steps in this section don't fix the problem for you, contact your email admin and refer them to the information in this article so they can try to resolve the issue for you.
 
 ### Verify recipient's email address and resend your message
 
@@ -183,7 +186,7 @@ The recipient might have an Inbox rule that is forwarding messages to a problema
 
 #### Forwarding using mail flow rules (email admin)
 
-Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (also known as transport rules) are organization-wide settings and can only be created and edited by email admins.
+Unlike Inbox rules that are associated with a user's mailbox, mail flow rules (also known as transport rules) are organization-wide settings and can only be created and edited by email admins.
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
@@ -211,7 +214,7 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 **To change the Accepted Domain from Authoritative to Internal Relay**
 
-If you have a hybrid configuration with an Microsoft 365 or Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
+If you have a hybrid configuration with a Microsoft 365 or Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 

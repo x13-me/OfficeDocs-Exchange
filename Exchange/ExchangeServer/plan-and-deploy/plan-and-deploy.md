@@ -114,7 +114,7 @@ Use the information at the following links to help you deploy Exchange.
 
    2. See: [Upgrade Exchange to the latest Cumulative Update | Microsoft Docs](./install-cumulative-updates.md).
 
-  Ensure **Windows Update/Microsoft Update** (WU/MU) is turned on and consider further turning on **Automatic Update** to pick up Security Updates (SU’s).
+  Ensure **Windows Update/Microsoft Update** (WU/MU) is turned on and consider further turning on **Automatic Update** to pick up Security Updates (SU's).
 
   Use an **elevated command prompt** to run [any Cumulative Update or Security Update](/exchange/troubleshoot/setup/ex2019-setup-does-not-run-correctly-started-powershell). If you run into any problems when running update setup, please see <https://aka.ms/exupdatefaq>.
 
