@@ -27,13 +27,13 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 >
 > - In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md).
 >
-> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the outbound connector. For instructions, see [Use the EAC to add the domain to your outbound connector](enable-mail-flow-for-subdomains.md#use-the-eac-to-add-the-domain-to-your-outbound-connector).
+> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that originates from Office 365 to your organization. For instructions, see [Use the EAC to add the domain to connector from Office 365 to your organization](#use-the-eac-to-add-the-domain-to-connector-from-office-365-to-your-organization).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -42,7 +42,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the Exchange admin center (EAC) to set up match subdomains on a domain
+## Use the Exchange admin center (EAC) to set up match-subdomains on a domain
 
 ### New EAC
 
@@ -77,33 +77,67 @@ The domain details dialog box is displayed.
 
 :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
 
-## Use the EAC to add the domain to your outbound connector
+## Use the EAC to add the domain to connector from Office 365 to your organization
 
 ### New EAC
 
 1. Navigate to **Mail Flow** \> **Connectors**.
 
-2. <need more inputs>
+2. Select a connector that originates from Office 365 to your organization's email server, and click it.
 
+The connector properties screen appears.
+
+3. Under **Use of connector**, click **Edit use**. The **Use of connector** screen appears.
+
+4. Click the radio button for **Only when email messages are sent to these domains**.
+
+<include the image determining-timing-of-connector-new-eac.png>
+
+5. In the text box, enter the name of the domain to which you want to apply the connector. For example, ***.contoso.com**.
+
+6. Click **+**.
+
+7. Click **Next**. The **Validation email** screen appears.
+
+8. In the text box, enter the email of an active mailbox on your organization or your partner organization's server.
+
+9. Click **+**.
+
+10. Click **Validate**. The validation process starts.
+
+11. Once the validation process is completed, click **Save**.
 
 ### Classic EAC
 
 1. Navigate to **Mail Flow** \> **Connectors**.
 
-2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select a connector that originates from Office 365 to your organization's email server.
+ 
+3. Click the "Edit" icon ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The **Edit Connector** screen appears.
 
-3. Select **Scope**, and then select one of the following:
+4. Click **Next**. The **When do you want to use this connector** section appears.
 
-   - Select **Route all accepted domains through this connector**.
+5. Select the radio button for **Only when email messages are sent to these domains**.
 
-   - In the **Recipient domains** section, select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** box, enter a wildcard domain entry for the domain for which you enabled match subdomains. For example, if you enabled match subdomains for contoso.com, enter \*.contoso.com as a recipient domain.
+<include the image determining-timing-of-connector-old-eac.png>
 
-> [!NOTE]
-> If you don't yet have an outbound connector, see [Configure mail flow using connectors](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
+6. Click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
 
-## Use Exchange Online PowerShell to set up match subdomains on a domain
+7. In the text box, enter the name of the domain to which you want to apply the connector. For example, \*.contoso.com.
 
-To add match subdomains to a domain that is set up as an internal relay, use this syntax:
+8. Click **OK**. The **Edit Connector** screen re-appears. The value *.contoso.com is listed in the text field.
+
+9. Click **Next**. The section **How do you want to want to route email messages** appears.
+
+10. Select the radio button for **Route email through these smart hosts**, and click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add smart host** screen appears.
+ 
+11. In the text box, enter the name of the smart host to which Office 365 delivers messages. For example, **myhost.contoso.com**.
+
+12.  Click **Save**.
+
+## Use Exchange Online PowerShell to set up match-subdomains on a domain
+
+To add the match subdomains to a domain that is set up as an internal relay, use this syntax:
 
 ```powershell
 Set-AcceptedDomain -Identity <Domain Name> -MatchSubdomains $true
