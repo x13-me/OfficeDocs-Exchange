@@ -56,15 +56,38 @@ If your domain is part of a hybrid deployment between Exchange and Exchange Onli
 
 #### You route all incoming mail for your hybrid domain through Exchange Online
 
-This error can happen when the MX record for your hybrid domain points to Exchange Online, and the outbound connector that's used to route email from Exchange Online to your on-premises Exchange organization is configured to use DNS routing instead of smart host routing.
+This error can happen when the MX record for your hybrid domain points to Exchange Online, and the connector that's used to route email from Exchange Online to your on-premises Exchange organization is configured to use DNS routing instead of smart host routing.
 
-To fix the problem, configure a dedicated outbound connector that uses smart host routing and that has your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
+To fix the problem, configure a dedicated connector to be used for hybrid. This connector will use smart host routing and will have your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
+
+**New EAC**
+
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first). The New EAC screen appears.
+
+2. In the Exchange admin center (EAC), click **Mail Flow** \> **Connectors**. 
+
+3. Select the connector that's used for hybrid, and then click it.
+
+The connector properties screen appears.
+
+4. Under **Routing**, click **Edit routing**. The **Routing** screen appears.
+
+<include the image connector-for-hybrid-new-eac.png>
+
+5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
+
+**Old EAC**
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
-2. In the Exchange admin center (EAC), click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and then click **Edit**.
+2. Click **Classic Exchange admin center** on the left pane of the New EAC screen.
 
-3. On the **Delivery** tab, verify that **Route mail through smart hosts** is selected and that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
+3. Select the connector that's used for hybrid, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+
+4. Navigate to the screen that displays **How do you want to route email messages**.
+
+5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
+
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
