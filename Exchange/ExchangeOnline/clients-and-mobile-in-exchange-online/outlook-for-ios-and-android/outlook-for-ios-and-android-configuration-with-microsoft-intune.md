@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
 title: Deploying Outlook for iOS and Android app configuration settings
 mms.collection: 
@@ -51,11 +51,11 @@ Outlook for iOS and Android offers administrators the following app configuratio
   
 These configuration scenarios only work with enrolled devices. However, any UEM provider is supported. If you are not using Microsoft Endpoint Manager, you need to consult with your UEM documentation on how to deploy these settings. For more information on the configuration keys, see [Configuration keys](#configuration-keys).
 
-### Account setup configuration settings
+### Account setup configuration scenario
 
 Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 and on-premises users leveraging hybrid Modern Authentication users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](./setup-with-modern-authentication.md#account-setup-configuration-via-enterprise-mobility-management).
 
-### Organization allowed accounts mode settings
+### Organization allowed accounts mode scenario
 
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](./setup-with-modern-authentication.md#organization-allowed-accounts-mode).
 
@@ -156,6 +156,12 @@ Outlook supports the following settings for configuration:
 <td>By default, Outlook for iOS and Android can suggest words and phrases as you compose messages.</td>
 <td>App default</td>
 </tr>
+<tr class="odd">
+<td>Themes</td>
+<td>On</td>
+<td>By default, Outlook for iOS and Android supports visual themes that can be enabled for certain beliefs or events.</td>
+<td>App default</td>
+</tr>
 </tbody>  
 </table>
 
@@ -165,15 +171,15 @@ Settings that are security-related in nature have an additional option, **Allow 
 
 The following conditions describe Outlook's behavior when implementing various app configurations:
 
-  - If the admin configures a setting with its default value, and the app is configured with the default, then the admin's configuration doesn't have any effect. For example, if the admin sets *External recipients MailTip*=on, the default value is also on, so Outlook's configuration doesn't change.
+- If the admin configures a setting with its default value, and the app is configured with the default, then the admin's configuration doesn't have any effect. For example, if the admin sets *External recipients MailTip*=on, the default value is also on, so Outlook's configuration doesn't change.
 
-  - If the admin configures a setting with the non-default value and the app is configured with the default, then the admin's configuration is applied. For example, the admin sets *Focused Inbox*=off, but app default is on, so Outlook's configuration for Focused Inbox is off.
+- If the admin configures a setting with the non-default value and the app is configured with the default, then the admin's configuration is applied. For example, the admin sets *Focused Inbox*=off, but app default is on, so Outlook's configuration for Focused Inbox is off.
 
-  - If the user has configured a non-default value, but the admin has configured a default value and allows user choice, then Outlook retains the user's configured value. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and allows user choice, so Outlook keeps contact synchronization on and does not break caller-ID for user.
+- If the user has configured a non-default value, but the admin has configured a default value and allows user choice, then Outlook retains the user's configured value. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and allows user choice, so Outlook keeps contact synchronization on and does not break caller-ID for user.
 
-  - If the admin disables user choice, Outlook always enforces the admin-defined configuration, regardless of the user's configuration or default app configuration. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and disables user choice, so contact synchronization gets disabled and the user is prevented from enabling it.
+- If the admin disables user choice, Outlook always enforces the admin-defined configuration, regardless of the user's configuration or default app configuration. For example, the user has enabled contact synchronization, but the admin sets *Save Contacts*=off and disables user choice, so contact synchronization gets disabled and the user is prevented from enabling it.
 
-  - If after the app configuration is applied, if the user changes the setting value to not match the admin desired value (and user choice is allowed), then the user's configuration is retained. For example, block external images is off by default, admin set *Block external images*=on, but afterwards, user changes block external images back to off. In this scenario, block external images remains off the next time the policy is applied.
+- If after the app configuration is applied, if the user changes the setting value to not match the admin desired value (and user choice is allowed), then the user's configuration is retained. For example, block external images is off by default, admin set *Block external images*=on, but afterwards, user changes block external images back to off. In this scenario, block external images remains off the next time the policy is applied.
 
 Users are alerted to configuration changes via a notification toast in the app:
 
@@ -182,9 +188,8 @@ Users are alerted to configuration changes via a notification toast in the app:
 
 This notification toast will automatically dismiss after 10 seconds. There are two scenarios where this notification toast will not appear:
 
-  - If the app has previously shown the notification in the last hour.
-
-  - If the app has been installed in less than 24 hours.
+- If the app has previously shown the notification in the last hour.
+- If the app has been installed in less than 24 hours.
 
 #### Save Contacts
 
@@ -192,7 +197,7 @@ The *Save Contacts* setting is a special case scenario because unlike the other 
 
 > [!NOTE]
 > With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CONTACTS and WRITE\_CONTACTS within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data.
-> 
+>
 > When enabling Outlook for Android's Save Contacts within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Contacts app within the work profile context; this provides a clear separation between work and personal profile data. However, Android Enterprise allows for the dialer and messaging apps within the personal profile to access the local contacts within the work profile. This behavior is enabled by default, but can be controlled via device restrictions; for more information, see [Android Enterprise device settings to allow or restrict features using Intune](/intune/device-restrictions-android-for-work). It's possible that some dialer or messaging apps, whether pre-installed by the device manufacturer or installed from the Play Store, do not properly support this capability.
 
 The workflow for enabling Save Contacts is the same for new accounts and existing accounts.
@@ -208,7 +213,7 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
    > ![user is prompted for access to contacts](../../media/outlook_mobile_intune_3.png)
 
 3. If the user allows Outlook to access the native Contacts app, access is granted and contact synchronization is enabled. If the user denies Outlook access to the native Contacts app, then the user is prompted to go into the OS settings and enable contact synchronization:
-   
+
    > [!div class="mx-imgBorder"]
    > ![user is prompted to allow Outlook to access the native Contacts app](../../media/outlook_mobile_intune_4.png)
 
@@ -387,6 +392,8 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
+    - For **Themes**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
     - For **Sync Calendars**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This feature is only available in Outlook for Android.
 
     - For **Text Predictions**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
@@ -472,6 +479,12 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - For **Enable S/MIME**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
+    > [!IMPORTANT]
+    > S/MIME certificates must be available within Outlook for iOS and Android for the user sign or encrypt messages. For more information, see [Deploying S/MIME certificates with Outlook for iOS and Android](sensitive-labeling-and-protection-outlook-for-ios-android.md#deploying-smime-certificates-with-outlook-for-ios-and-android).
+
+    - Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
 12. When you are finished configuring the settings, choose **Next**.
 
 13. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
@@ -483,25 +496,27 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 The newly created configuration policy is displayed on the **App configuration** blade.
 
 ## Configuration keys
+
 The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the mobile device management OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
 
 > [!IMPORTANT]
 > App configuration keys are case sensitive. Use the proper casing to ensure the configuration takes affect.
 
 ### iOS devices and third-party unified endpoint management solutions
+
 If the **Managed devices** device enrollment type configuration keys are deployed with a third-party unified endpoint management (UEM) provider, then the following additional key must also be delivered for iOS devices:
 
-   **key** = IntuneMAMUPN, **value** = <username@company.com>
+**key** = IntuneMAMUPN, **value** = <username@company.com>
 
 The exact syntax of the key/value pair may differ based on the third-party UEM provider used. The following table shows examples of some third-party UEM providers and the exact values for the key/value pair:
 
-   |Third-party UEM provider| Configuration Key | Value Type | Configuration Value|
-   | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
-   |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-   |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
-   |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
-   |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
+|Third-party UEM provider| Configuration Key | Value Type | Configuration Value|
+| ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
+|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
+|Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
+|ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
 
 ### Account setup configuration
 
@@ -546,7 +561,9 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 |com.microsoft.outlook.Calendar.NativeSyncEnabled|By default, Outlook does not sync calendar data to the native Calendar app. This key defines the default sync state behavior. Setting the value to true will enable calendar sync. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Calendar.NativeSyncEnabled.UserChangeAllowed|This key specifies whether the calendar sync state can be changed by the end user. This key is only supported with Outlook for Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.TextPredictionsEnabled|Outlook can suggest words and phrases as you compose messages. When set as not configured, the default app setting is set to On. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowe|This key specifies whether Smart Compose can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowed|This key specifies whether Smart Compose can be changed by the end user. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Settings.ThemesEnabled|Outlook supports custom visual themes. When set as not configured, the default app setting is set to On. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+
 
 ### S/MIME settings
 
@@ -556,10 +573,10 @@ Outlook for iOS offers administrators the ability to customize the default S/MIM
 |:-----|:-----|:-----|
 |com.microsoft.outlook.Mail.SMIMEEnabled|This key specifies whether the app enables S/MIME. Use of S/MIME requires certificates available to Outlook for iOS and Android. Setting the value to true will enable S/MIME support in the app.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​|This key specifies whether S/MIME encryption is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
-|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
-|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail|This key specifies whether S/MIME signing is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
-|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​|This key specifies whether S/MIME encryption is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail​​.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail|This key specifies whether S/MIME signing is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### Data protection settings
 
