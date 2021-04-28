@@ -33,7 +33,7 @@ The most likely cause is the message hop count being exceeded or the route throu
 
  The information here applies to a range of error codes 5.4.6 through 5.4.20. Use the information in the NDR to help you decide how to fix the problem.
 
-|||||
+|Icon|Description|Icon|Description|
 |---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
@@ -72,7 +72,7 @@ The connector properties screen appears.
 
 4. Under **Routing**, click **Edit routing**. The **Routing** screen appears.
 
-<include the image connector-for-hybrid-new-eac.png>
+:::image type="content" source="../../media/connector-for-hybrid-new-eac.png" alt-text="Routing emails using hybrid connectors in New EAC":::
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
@@ -89,7 +89,7 @@ The connector properties screen appears.
 
 4. Navigate to **How do you want to route email messages** screen.
 
-<include the image routing-through-smart-hosts-old-eac.png>
+:::image type="content" source="../../media/routing-through-smart-hosts-old-eac.png" alt-text="Routing emails using hybrid connectors in Old EAC":::
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
