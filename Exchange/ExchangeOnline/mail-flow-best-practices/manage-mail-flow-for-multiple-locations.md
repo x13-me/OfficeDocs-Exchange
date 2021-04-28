@@ -51,13 +51,13 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this task? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to Microsoft 365 or Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com
 
      For example, if your domain is contoso.com, the MX record should be: contoso-com.mail.protection.outlook.com.
 
-   - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: This record should list Microsoft 365 or Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
      ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
@@ -152,13 +152,13 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 If the MX record for your domain needs to point to your on-premises IP address, use the following best practices:
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365s](/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this task? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
-   - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: This record should list Microsoft 365 or Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
      ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
@@ -188,13 +188,13 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this task? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to your on-premises server in the following format: mail.\<domainKey\>.com
 
      For example, if your domain is contoso.com, the MX record should be: .mail.contoso.com.
 
-   - **SPF record**: This should list Microsoft 365 or Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is 131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: This record should list Microsoft 365 or Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is 131.107.21.231, the SPF record for contoso.com should be:
 
      ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
