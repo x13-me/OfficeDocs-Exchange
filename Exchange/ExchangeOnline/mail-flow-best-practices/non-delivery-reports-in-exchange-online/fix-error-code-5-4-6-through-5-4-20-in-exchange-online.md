@@ -25,7 +25,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 ## Why did I get this bounce message?
 
-The most likely cause is if the message hop count is exceeded or the route the message is delivered through is broken. Some causes and solutions are provided in this topic.
+The most likely cause is the message hop count being exceeded or the route through which the  message is delivered being broken. Some causes and solutions are provided in this topic.
 
 5.4.6 indicates a mail loop or routing problem in on-premises Exchange Server, which you would likely encounter in a hybrid environment.
 
@@ -35,14 +35,14 @@ The most likely cause is if the message hop count is exceeded or the route the m
 
 |||||
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-do-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix it?
 
-Typically, these can only be fixed by an Exchange Online admin and not the average email sender. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
+Typically, these issues can only be fixed by an Exchange Online admin and not the average email sender. Contact your email admin and refer them to this information so they can try to resolve the issue for you.
 
-## I'm an email admin. How do I fix this?
+## I'm an email admin. How do I fix this issue?
 
 The most common issues and fixes are described in the following sections.
 
@@ -58,7 +58,7 @@ If your domain is part of a hybrid deployment between Exchange and Exchange Onli
 
 This error can happen when the MX record for your hybrid domain points to Exchange Online, and the connector that's used to route email from Exchange Online to your on-premises Exchange organization is configured to use DNS routing instead of smart host routing.
 
-To fix the problem, configure a dedicated connector to be used for hybrid. This connector will use smart host routing and will have your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
+To fix the problem, configure a dedicated connector to be used for hybrid. This connector will use smart host routing and will have your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
 
 **New EAC**
 
@@ -87,7 +87,7 @@ The connector properties screen appears.
 
 3. Select the connector that's used for hybrid, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
-4. Navigate to the screen that displays **How do you want to route email messages**.
+4. Navigate to **How do you want to route email messages** screen.
 
 <include the image routing-through-smart-hosts-old-eac.png>
 
@@ -107,7 +107,7 @@ In this configuration, the error is caused by either of the following issues on 
 
 - The inbound connector is scoped to one or more accepted domains.
 
-To fix the problem, configure a dedicated inbound connector that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the Inbound connector that's used for hybrid by following these steps:
+To fix the problem, configure a dedicated inbound connector that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the Inbound connector that's used for hybrid by following these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
