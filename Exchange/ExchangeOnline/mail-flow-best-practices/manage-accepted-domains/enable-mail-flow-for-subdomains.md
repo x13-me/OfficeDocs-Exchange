@@ -27,7 +27,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 >
 > - In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md).
 >
-> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that originates from Office 365 to your organization. For instructions, see [Use the EAC to add the domain to connector from Office 365 to your organization](#use-the-eac-to-add-the-domain-to-connector-from-office-365-to-your-organization).
+> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that originates from Office 365 to your organization. For instructions, see [Use the EAC to add the domain to connector that originates from Office 365 to your organization](#use-the-eac-to-add-the-domain-to-connector-that-originates-from-office-365-to-your-organization).
 
 ## What do you need to know before you begin?
 
