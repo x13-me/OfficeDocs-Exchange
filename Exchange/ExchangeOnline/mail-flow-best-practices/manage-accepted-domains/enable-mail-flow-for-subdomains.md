@@ -77,7 +77,7 @@ The domain details dialog box is displayed.
 
 :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
 
-## Use the EAC to add the domain to connector from Office 365 to your organization
+## Use the EAC to add the domain to connector that originates from Office 365 to your organization
 
 ### New EAC
 
@@ -99,7 +99,7 @@ The connector properties screen appears.
 
 7. Click **Next**. The **Validation email** screen appears.
 
-8. In the text box, enter the email of an active mailbox on your organization or your partner organization's server.
+8. In the text box, enter the email of an active mailbox on your organization's server.
 
 9. Click **+**.
 
@@ -127,13 +127,9 @@ The connector properties screen appears.
 
 8. Click **OK**. The **Edit Connector** screen re-appears. The value *.contoso.com is listed in the text field.
 
-9. Click **Next**. The section **How do you want to want to route email messages** appears.
+9. Click **Next** and navigate through the other screens in the wizard.
 
-10. Select the radio button for **Route email through these smart hosts**, and click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add smart host** screen appears.
- 
-11. In the text box, enter the name of the smart host to which Office 365 delivers messages. For example, **myhost.contoso.com**.
-
-12.  Click **Save**.
+10.  Click **Save** on the last screen.
 
 ## Use Exchange Online PowerShell to set up match-subdomains on a domain
 
