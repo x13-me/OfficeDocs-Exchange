@@ -20,11 +20,30 @@ manager: serdars
 
 # New Exchange admin center 
 
+The new Exchange admin center is simple and accessible, and it enables you to perform tasks like restoring mailboxes, migrating data, and much more. 
+
+## Get to the new Exchange admin center 
+
+You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the new Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account.
+
+2. In the left navigation pane, navigate to **Admin centers** > **Exchange**.
+
+    ![New EAC](media/new-eac-selection.png)
+
+You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
+
+>[!NOTE]
+> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
+
+## New Exchange admin center features
+
 Here's what the new Exchange admin center looks like.
 
 ![New EAC homepage](media/new-eac-home-page.png)
 
-## Home page
+### Home page
 
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** bubble.
 
@@ -87,3 +106,6 @@ When you select an item from the list view, information about that object is dis
 [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)
 
 [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new)
+
+[Classic and New Exchange admin center](https://review.docs.microsoft.com/exchange/changes-in-exchange-admin-center?branch=pr-en-us-1828)
+
