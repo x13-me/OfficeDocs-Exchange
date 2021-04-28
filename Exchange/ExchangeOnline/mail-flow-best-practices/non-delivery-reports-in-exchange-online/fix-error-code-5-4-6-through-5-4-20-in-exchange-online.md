@@ -111,7 +111,7 @@ To fix the problem, configure a dedicated inbound connector that has the **Conne
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
-2. In the EAC, click **Mail Flow** \> **Connectors**. In the **Inbound connectors** section, select the connector that's used for hybrid, and then click **Edit** ![Edit icon](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
+2. In the EAC, click **Mail Flow** \> **Connectors**. In the **Inbound connectors** section, select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
    - **General**: Verify that **On-premises** is selected.
 
