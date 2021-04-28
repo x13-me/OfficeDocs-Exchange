@@ -91,7 +91,7 @@ The connector properties screen appears.
 
 4. Click the radio button for **Only when email messages are sent to these domains**.
 
-<include the image determining-timing-of-connector-new-eac.png>
+:::image type="content" source="../../media/determining-timing-of-connector-new-eac.png" alt-text="The option on the New EAC screen to choose when the connector can be used":::
 
 5. In the text box, enter the name of the domain to which you want to apply the connector. For example, ***.contoso.com**.
 
@@ -119,7 +119,7 @@ The connector properties screen appears.
 
 5. Select the radio button for **Only when email messages are sent to these domains**.
 
-<include the image determining-timing-of-connector-old-eac.png>
+:::image type="content" source="../../media/determining-timing-of-connector-old-eac.png" alt-text="The option on the Classic EAC screen to choose when the connector can be used":::
 
 6. Click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
 
