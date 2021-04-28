@@ -125,7 +125,7 @@ The connector properties screen appears.
 
 7. In the text box, enter the name of the domain to which you want to apply the connector. For example, \*.contoso.com.
 
-8. Click **OK**. The **Edit Connector** screen re-appears. The value *.contoso.com is listed in the text field.
+8. Click **OK**. The **Edit Connector** screen reappears. The value *.contoso.com is listed in the text field.
 
 9. Click **Next** and navigate through the other screens in the wizard.
 
