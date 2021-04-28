@@ -76,22 +76,27 @@ The connector properties screen appears.
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
-**Old EAC**
+**Classic EAC**
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
 2. Click **Classic Exchange admin center** on the left pane of the New EAC screen.
 
+> [!NOTE]
+> You can navigate to the Classic EAC screen only from the New EAC screen.
+
 3. Select the connector that's used for hybrid, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
 4. Navigate to the screen that displays **How do you want to route email messages**.
+
+<include the image routing-through-smart-hosts-old-eac.png>
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
-This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
 ```powershell
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises
