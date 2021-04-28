@@ -36,7 +36,7 @@ There are two types of accepted domains in Exchange Online:
 
     - **Exchange Online Protection**: [Manage mail users in EOP](/microsoft-365/security/office-365-security/manage-mail-users-in-eop)
 
-  - Setting this option enables Directory Based Edge Blocking (DBEB), which rejects messages for invalid recipients at the service network perimeter. For more information about configuring DBEB during a migration, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
+  - Setting this option enables Directory Based Edge Blocking (DBEB), which rejects messages for invalid recipients at the service network perimeter. For more information about configuring DBEB during a migration, see [Use Directory-Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 
 - **Internal relay (also known as non-authoritative**): Recipients for this domain can be in Microsoft 365 or Office 365 or your own email servers. Email is delivered to known recipients in Office 365 or is relayed to your own email server if the recipients aren't known to Microsoft 365 or Office 365.
 
@@ -91,9 +91,9 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 3. Under the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
     
-    - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+    - If you select **Authoritative**, you must confirm that you want to enable Directory-Based Edge Blocking.
     
-    - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
+    - If you select **Internal Relay**, you can enable the match-subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
 
 4. Click **Save**.
 
@@ -103,11 +103,11 @@ After you add a domain to your Exchange Online organization in the Microsoft 365
 
 2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
-3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
+3. In the **Accepted Domain** window, under **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
 
-   - If you select **Authoritative**, you must confirm that you want to enable Directory Based Edge Blocking.
+   - If you select **Authoritative**, you must confirm that you want to enable Directory-Based Edge Blocking.
 
-   - If you select **Internal Relay**, you can enable match subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
+   - If you select **Internal Relay**, you can enable the match-subdomains to enable mail flow to all subdomains. For more information, see [Enable mail flow for subdomains in Exchange Online](enable-mail-flow-for-subdomains.md).
 
 4. When you're finished, click **Save**.
 
