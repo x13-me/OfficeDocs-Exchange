@@ -93,7 +93,6 @@ The connector properties screen appears.
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
-
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
 This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
