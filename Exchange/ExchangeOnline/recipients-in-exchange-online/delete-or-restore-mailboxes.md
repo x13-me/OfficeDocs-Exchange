@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
 f1.keywords:
@@ -19,6 +19,9 @@ manager: serdars
 ---
 
 # Delete or restore user mailboxes in Exchange Online
+
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 There are several things you should consider before you decide to delete a user mailbox. There are different kinds of deletions that you can do on a user mailbox and some of them won't allow you to restore or recover the mailbox. This article walks you through the deleted mailbox scenarios, and how to delete, recover or permanently remove a mailbox from Exchange Online.
 

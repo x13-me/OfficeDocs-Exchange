@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can enable or disable common Unified Messaging (UM) PIN patterns for Outlook Voice Access users. If you enable or disable the common PIN patterns setting on a UM mailbox policy, the setting will apply to all UM-enabled users associated with the UM mailbox policy. By default, UM-enabled users can't use common patterns when they create a PIN.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: eecc40ae-fac7-41e4-a1e1-16330f4462a3
 ms.reviewer: 
 f1.keywords:
