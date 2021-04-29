@@ -107,7 +107,7 @@ The next step is to run a script that will convert an existing compliance search
 
 - Creates a new In-Place eDiscovery search, with the following properties. Note that the new search isn't started. You'll start it in step 4.
 
-  - **Name**: The name of the new search uses this format: *\<Name of compliance search\>* _MBSearch1. If you run the script again and use the same source compliance search, the search will be named *\<Name of compliance search\>* _MBSearch2.
+  - **Name**: The name of the new search uses this format: *\<Name of compliance search\>*\_MBSearch1. If you run the script again and use the same source compliance search, the search will be named *\<Name of compliance search\>*\_MBSearch2.
 
   - **Source mailboxes**: All mailboxes from the compliance search that contain search results.
 
@@ -128,15 +128,15 @@ The next step is to run a script that will convert an existing compliance search
    $search = Get-ComplianceSearch $SearchName
    if ($search.Status -ne "Completed")
    {
-   	"Please wait until the search finishes";
-   	break;
+      "Please wait until the search finishes";
+      break;
    }
    $results = $search.SuccessResults;
    if (($search.Items -le 0) -or ([string]::IsNullOrWhiteSpace($results)))
    {
-   	"The compliance search " + $SearchName + " didn't return any useful results";
-   	"A mailbox search object wasn't created";
-   	break;
+      "The compliance search " + $SearchName + " didn't return any useful results";
+      "A mailbox search object wasn't created";
+      break;
    }
    $mailboxes = @();
    $lines = $results -split '[\r\n]+';
@@ -175,11 +175,11 @@ The next step is to run a script that will convert an existing compliance search
    }
    if ([string]::IsNullOrWhiteSpace($query))
    {
-   	New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -EstimateOnly;
+      New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -EstimateOnly;
    }
    else
    {
-   	New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
+      New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
    }
    ```
 
@@ -194,7 +194,6 @@ The next step is to run a script that will convert an existing compliance search
    If the script is successful, a new In-Place eDiscovery search is created with a status of **NotStarted**. Run the command `Get-MailboxSearch <Name of compliance search>_MBSearch1 | FL` to display the properties of the new search.
 
 ## Step 4: Start the In-Place eDiscovery search
-
 
 The script that you run in Step 3 creates a new In-Place eDiscovery search, but doesn't start it. The next step is to start the search so you can get an estimate of the search results.
 
