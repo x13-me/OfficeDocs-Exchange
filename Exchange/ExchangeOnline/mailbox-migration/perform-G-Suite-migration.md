@@ -29,7 +29,7 @@ Before beginning your migration, review the following diagrams to understand how
 
 ![Original setup before G Suite migration](../media/gsuite-mig-original-setup.png)
 
-Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server were all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
+Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server where all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
 
 ![Before the G Suite migration begins](../media/gsuite-mig-before-migration.png)
 
@@ -76,7 +76,7 @@ Other migration limitations are described in the following table:
 |Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
 
 > [!TIP]
-> If you will be [starting your migration batch with Exchange Online Powershell](#start-a-google-workspace-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).  
+> If you will be [starting your migration batch with Exchange Online Powershell](#start-a-google-workspace-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
 
 ## Create a Google Service Account
 
@@ -157,7 +157,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
 
    > [!NOTE]
-   > The option _Add a domain_ will not be available if using the legacy free edition of G Suite. 
+   > The option _Add a domain_ will not be available if using the legacy free edition of G Suite.
 
 3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](#create-a-migration-batch-in-microsoft-365-or-office-365).
 
@@ -213,7 +213,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
 
 > [!IMPORTANT]
-> Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
+> Microsoft's data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
 1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
 
@@ -224,63 +224,47 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
 
    ![Migration Onboarding](../media/migration-onboarding-selection.png)
-   
-5. In **G Suite migration prerequisites** section, you can either automate the configuration of your G-Suite for migration or manually configure G-Suite for migration. 
-   
-   ![G Suite migration prerequisites](../media/g-suite-migration-prerequisite.png)
-   
-6. Under **Automate the configuration of your G-Suite for migration**, click **Start** to automate the four required prerequisite steps.
 
-7. Sign in to your Google account to validate your APIs.
+5. In **G Suite migration prerequisites** section, manually configure G-Suite for migration.
 
-   Once the APIs are successfully validated, a link, client ID, and a scope is provided to add scope for API access.
-   
-8. Click the API access link and verify your google account.
+6. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
 
-9. In Google admin page, click **Add new**. 
-
-10. In **Add a new client ID** window, enter the client ID and the scope provided after API validation and click **Authorize**.
-
-    > [!NOTE]
-    > For more information, see the above topic **Grant access to the service account for your Google tenant**.
-    
-11. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
-    
     ![Set endpoint](../media/migration-endpoint-selection.png)
-    
+
     > [!NOTE]
     > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
-    
-12. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+
+7. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
     - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
     - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-    ```CSV
-    EmailAddress
-    will@fabrikaminc.net
-    user123@fabrikaminc.net
-    ```
-13. In **Add user mailboxes** section, import the CSV file and click **Next**.
+      ```CSV
+      EmailAddress
+      will@fabrikaminc.net
+      user123@fabrikaminc.net
+      ```
 
-14. In **Move configuration** section, enter the details and click **Next**.
+8. In **Add user mailboxes** section, import the CSV file and click **Next**.
 
-15. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
+9. In **Move configuration** section, enter the details and click **Next**.
+
+10. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
 
     ![Schedule batch migration](../media/schedule-batch1-migration.png)
-    
+
     Once the batch status changes from **Syncing** to **Synced**, you need to complete the batch.
-    
+
     > [!NOTE]
     > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
-    
-16. To complete the batch, select the migration group.
 
-17. In the details pane, select the preferred option to complete the batch and click **Save**.
+11. To complete the batch, select the migration group.
+
+12. In the details pane, select the preferred option to complete the batch and click **Save**.
 
     The batch status will then be **Completed**.
-	
+
 During completion, another incremental sync is run to copy any changes that have been made to the Google Workspace mailbox. Additionally, during completion, the forwarding address that routes mail from Microsoft 365 or Office 365 to Google Workspace is removed, and a forwarding address that routes mail from Google Workspace to Microsoft 365 or Office 365 is added. This ensures that any messages received by migrated users at their Google Workspace mailboxes will be sent to their new Microsoft 365 or Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Microsoft 365 or Office 365 address, the message will get routed to their Google Workspace mailbox.
 
 ## Start a Google Workspace migration batch with the Classic Exchange admin center (Classic EAC)
@@ -334,7 +318,7 @@ During completion, another incremental sync is run to copy any changes that have
 11. After the batch status changes from **Syncing** to **Synced**, you need to complete the batch. The batch status will then be **Completed**.
 
     ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
-    
+
     > [!NOTE]
     > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
 

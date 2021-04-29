@@ -20,6 +20,9 @@ manager: serdars
 
 # Manage mail-enabled security groups
 
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 
 ## What do you need to know before you begin?
@@ -154,8 +157,8 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
    - **\* Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the Classic EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
 
-    > [!NOTE]
-    > If a group naming policy is applied, you must follow the naming constraints enforced for your organization. For more information, see [Create a distribution group naming policy](manage-distribution-groups/create-group-naming-policy.md). If you want to override your organization's group naming policy, see [Override the distribution group naming policy](manage-distribution-groups/override-group-naming-policy.md).
+     > [!NOTE]
+     > If a group naming policy is applied, you must follow the naming constraints enforced for your organization. For more information, see [Create a distribution group naming policy](manage-distribution-groups/create-group-naming-policy.md). If you want to override your organization's group naming policy, see [Override the distribution group naming policy](manage-distribution-groups/override-group-naming-policy.md).
 
    - **\* Alias**: Use this box to type the alias for the security group. The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
 
@@ -177,8 +180,8 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
 4. When you've finished, click **Save** to create the security group.
 
-> [!NOTE]
-> By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups. To configure a mail-enabled security group to accept messages from all senders, you must modify the message delivery restriction settings for that group.
+   > [!NOTE]
+   > By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups. To configure a mail-enabled security group to accept messages from all senders, you must modify the message delivery restriction settings for that group.
 
 ### Use the Classic EAC to change mail-enabled security group properties
 
@@ -202,8 +205,8 @@ A mail-enabled security group can be used to distribute messages and to grant ac
 
     - **Hide this group from address lists**: Select this check box if you don't want users to see this group in the address book. If this check box is selected, a sender has to type the group's alias or email address on the To: or Cc: lines to send mail to the group.
 
-     > [!TIP]
-     > Consider hiding security groups because they're typically used to assign permissions to group members and not to send email.
+      > [!TIP]
+      > Consider hiding security groups because they're typically used to assign permissions to group members and not to send email.
 
     - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the security group. You have to use Active Directory Users and Computers to move the group to a different OU.
 
