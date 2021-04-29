@@ -142,7 +142,7 @@ Enter the following settings on the device or in the application directly.
 |---|---|
 |Server/smart host|Your MX endpoint, for example, contoso-com.mail.protection.outlook.com|
 |Port|Port 25|
-|TLS/StartTLS|Enabled|
+|TLS/StartTLS|Optional|
 |Email address|Any email address for one of your Microsoft 365 or Office 365 accepted domains. This email address does not need to have a mailbox.|
 
 We recommend adding an SPF record to avoid having messages flagged as spam. If you are sending from a static IP address, add it to your SPF record in your domain registrar's DNS settings as follows:
