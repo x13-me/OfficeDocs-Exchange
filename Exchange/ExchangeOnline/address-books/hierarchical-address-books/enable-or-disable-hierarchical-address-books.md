@@ -24,11 +24,16 @@ The hierarchical address book (HAB) allows users to look for recipients in their
 
 The cmdlets and parameters that you use to configure a HAB are described in the following table:
 
-|**Cmdlet**|**Parameter**|**Description**|
-|:-----|:-----|:-----|
-|[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)|_HierarchicalAddressBookRoot_|Enables or disables the HAB in the organization. <br/><br/> A valid value is a distribution group or mail-enabled security group. You can't use a dynamic distribution group or an Office 35 group.|
+<br>
+
+****
+
+|Cmdlet|Parameter|Description|
+|---|---|---|
+|[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)|_HierarchicalAddressBookRoot_|Enables or disables the HAB in the organization. <p> A valid value is a distribution group or mail-enabled security group. You can't use a dynamic distribution group or an Office 35 group.|
 |[Set-Group](/powershell/module/exchange/set-group)|_IsHierarchicalGroup_|Specifies whether the distribution group or mail-enabled security group is used in the hierarchy of the HAB. Valid values are `$true` or `$false` (the default value is `$false`).|
-|[Set-Contact](/powershell/module/exchange/set-contact) <br/> [Set-Group](/powershell/module/exchange/set-group) <br/> [Set-User](/powershell/module/exchange/set-user)|_SeniorityIndex_ <br/> _PhoneticDisplayName_|_SeniorityIndex_: A numerical value that sorts users, contacts, or groups in descending order in the HAB (higher values are shown before lower values). <br/><br/>  _PhoneticDisplayName_: When multiple users, contacts or groups have the same _SeniorityIndex_ value or the value isn't set, the users, contacts, or groups are listed in ascending alphabetical order. If _PhoneticDisplayName_ isn't configured, the users, contacts, or groups are listed in ascending alphabetical order based on the _DisplayName_ parameter value (which is also the default sort order without the HAB).|
+|[Set-Contact](/powershell/module/exchange/set-contact) <br> [Set-Group](/powershell/module/exchange/set-group) <br> [Set-User](/powershell/module/exchange/set-user)|_SeniorityIndex_ <br> _PhoneticDisplayName_|_SeniorityIndex_: A numerical value that sorts users, contacts, or groups in descending order in the HAB (higher values are shown before lower values). <p> _PhoneticDisplayName_: When multiple users, contacts or groups have the same _SeniorityIndex_ value or the value isn't set, the users, contacts, or groups are listed in ascending alphabetical order. If _PhoneticDisplayName_ isn't configured, the users, contacts, or groups are listed in ascending alphabetical order based on the _DisplayName_ parameter value (which is also the default sort order without the HAB).|
+|
 
 ## What do you need to know before you begin?
 
@@ -154,7 +159,7 @@ This example adds the users Amy Alberts, David Hamilton, and Rajesh M. Patel to 
 ```PowerShell
 $members=@('aalberts@contoso.com','dhamilton@contoso.com','rmpatel@contoso.com')
 foreach($member in $members){
-	Add-DistributionGroupMember -Identity "Corporate Office" -Member $member
+   Add-DistributionGroupMember -Identity "Corporate Office" -Member $member
 }
 ```
 
@@ -251,3 +256,7 @@ To verify that you've successfully disabled hierarchical address book, use any o
 - Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. Verify that the entries in the address book are displayed in alphabetical order.
 
 - In Exchange Online PowerShell, run the following command to verify that the **HierarchicalAddressBookRoot** property value is blank:
+
+   ```PowerShell
+   Get-OrganizationConfig | Format-List HierarchicalAddressBookRoot
+   ```
