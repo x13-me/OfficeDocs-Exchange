@@ -47,15 +47,15 @@ Set up an organization relationship to share calendar information with an extern
 
     To set the free/busy access level, select one of the following:
 
-  - **Calendar free/busy information with time only**
+      - **Calendar free/busy information with time only**
 
-  - **Calendar free/busy with time, subject, and location**
+      - **Calendar free/busy with time, subject, and location**
 
     To set which users will share calendar free/busy information, select one of the following:
 
-  - **Everyone in your organization**
+     - **Everyone in your organization**
 
-  - **A specified security group**
+     - **A specified security group**
 
     Click **browse** to pick the security group from a list, then click **ok**.
 
@@ -63,16 +63,6 @@ Set up an organization relationship to share calendar information with an extern
 
 > [!NOTE]
 > Cross-tenant configurations do not support personal contacts for free/busy lookup. Contacts must be included in the global address list for free/busy lookup to work.
-
-### To create relationships between GCC-H (government cloud) and WW tenants:
-
-Set the following configurations manually:
-
-| |**OrgRel in MT for GCC-H Tenant**|**OrgRel in GCC-H for MT Tenant**|
-|:--|:-----|:-----|
-|**DomainNames**| All the domains for the remote org. You need to collect and add these manually. | All the domains for the remote org. You need to collect and add these manually. | 
-|**TargetApplicationUri**| Office365.us| Outlook.com |
-|**TargetAutodiscoverEpr**| https://autodiscover-s.office365.us/autodiscover/autodiscover.svc/WSSecurity| https://autodiscover-s.outlook.com/autodiscover/autodiscover.svc/WSSecurity |
 
 ## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
@@ -124,6 +114,48 @@ You can also run the following command to verify the organization relationship i
 ```PowerShell
 Get-OrganizationRelationship | format-list
 ```
+
+## Organization Relationships with GCC High
+
+Tenants in the [GCC High](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud can now create organization relationships with tenants in the World Wide and the [GCC](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) clouds.
+
+> [!IMPORTANT]
+> Organization relationships between the [DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud and other clouds is not supported.
+
+### Create cross-cloud organization relationships
+
+Using PowerShell is the best way to create organization relationships between clouds.
+
+This example creates an organization relationship between Contoso, Ltd in the WorldWide cloud and Fourth Coffee in the GCC-H cloud with the following conditions:
+
+ - Contoso's domains are contoso.com, northamerica.contoso.com, and europe.contoso.com.
+ 
+ - Fourth Coffee's domains are fourthcoffee.com
+ 
+ - Free/busy access is enabled.
+ 
+ - Each tenant gets free/busy time, subject, and location information from the other tenant
+
+In Fourth Coffee, run the following command:
+
+```PowerShell
+New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails -TargetApplicationUri "outlook.com" -TargetAutodiscoverEpr "https://autodiscover-s.outlook.com/autodiscover/autodiscover.svc/WSSecurity"
+```
+In Contoso, run the following command:
+
+```PowerShell
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails -TargetApplicationUri "office365.us" -TargetAutodiscoverEpr "https://autodiscover-s.office365.us/autodiscover/autodiscover.svc/WSSecurity"
+```
+
+You cannot use the `get-federationinformation` command to automatically discover the domains and other configurations needed for cross-cloud organization relationship setup.
+
+This table summarizes the configurations you need to specifically set:
+
+| |**OrgRel in WW/GCC for GCC-H Tenant**|**OrgRel in GCC-H for WW/GCC Tenant**|
+|:--|:-----|:-----|
+|**DomainNames**| All the domains for the remote org. You need to collect and add these manually. | All the domains for the remote org. You need to collect and add these manually. | 
+|**TargetApplicationUri**| Office365.us| Outlook.com |
+|**TargetAutodiscoverEpr**| https://autodiscover-s.office365.us/autodiscover/autodiscover.svc/WSSecurity| https://autodiscover-s.outlook.com/autodiscover/autodiscover.svc/WSSecurity |
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
