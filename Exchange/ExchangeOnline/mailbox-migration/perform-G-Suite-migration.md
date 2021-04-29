@@ -29,7 +29,7 @@ Before beginning your migration, review the following diagrams to understand how
 
 ![Original setup before G Suite migration](../media/gsuite-mig-original-setup.png)
 
-Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server were all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
+Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server where all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
 
 ![Before the G Suite migration begins](../media/gsuite-mig-before-migration.png)
 
