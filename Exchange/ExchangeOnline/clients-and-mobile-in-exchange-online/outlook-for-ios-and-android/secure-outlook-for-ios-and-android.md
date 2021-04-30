@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
 title: Securing Outlook for iOS and Android in Exchange Online
 ms.collection: 

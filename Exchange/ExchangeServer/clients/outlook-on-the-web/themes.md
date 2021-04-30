@@ -199,7 +199,7 @@ net start w3svc
 
 To verify that you've successfully created an Outlook on the web theme, perform the following steps:
 
-1. Open a mailbox in Outlook on the web. On the Exchange server, you can test your theme by opening the URL https://localhost/owa or https://127.0.0.1/owa.
+1. Open a mailbox in Outlook on the web. On the Exchange server, you can test your theme by opening the URL <https://localhost/owa> or <https://127.0.0.1/owa>.
 
 2. Depending on the settings you configured, verify the new theme is used by default, or verify that you can see and select the new theme at **Settings** \> **Change theme**.
 
@@ -209,8 +209,12 @@ To verify that you've successfully created an Outlook on the web theme, perform 
 
 The built-in Outlook on the web themes are located in the folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes`, and are described in the following table.
 
-|**Folder name**|**Display name in Outlook on the web**|**Sort order in Outlook on the web (lower listed first)**|**Header image type**|
-|:-----|:-----|:-----|:-----|
+<br>
+
+****
+
+|Folder name|Display name in Outlook on the web|Sort order in Outlook on the web (lower listed first)|Header image type|
+|---|---|---|---|
 |angular|Angular 80's|110|Static|
 |balloons|Balloons|240|Static|
 |base|Default|0|None|
@@ -261,3 +265,4 @@ The built-in Outlook on the web themes are located in the folder `%ExchangeInsta
 |whimsical|Whimsical|220|Static|
 |wntrlnd|Winterland|260|Static|
 |wrld|One World|270|Static|
+|

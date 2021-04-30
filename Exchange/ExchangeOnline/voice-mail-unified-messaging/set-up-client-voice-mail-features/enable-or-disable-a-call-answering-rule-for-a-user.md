@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can use Exchange Online PowerShell to enable or disable one or more call answering rules for a user. You can also use the Enable-UMCallAnsweringRule or Disable-UMCallAnsweringRule cmdlets in a PowerShell script to enable or disable one or more call answering rules for multiple users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac
 ms.reviewer: 
 f1.keywords:
