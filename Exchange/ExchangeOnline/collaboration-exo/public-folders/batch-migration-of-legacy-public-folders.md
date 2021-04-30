@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: msdmaguire
@@ -513,7 +513,7 @@ Complete-MigrationBatch PublicFolderMigration
 > [!IMPORTANT]
 > After a migration batch is completed, no additional data can be synchornized from Exchange servers on-premises and Exchange Online.
 
-When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the status of migration batch to remain on "Synced" for few hours before it switches to Completing. For migrations involving large number of target mailboxes, it is normal to see the status remain “Synced” state for more than 24 hours, provided none of underlying public folder migration requests have Failed or were quarantined.
+When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the status of migration batch to remain on "Synced" for few hours before it switches to Completing. For migrations involving large number of target mailboxes, it is normal to see the status remain "Synced" state for more than 24 hours, provided none of underlying public folder migration requests have Failed or were quarantined.
 
 If you've configured a hybrid deployment between your on-premises Exchange servers and Microsoft 365 or Office 365, you need to run the following command in Exchange Online PowerShell after migration is complete:
 

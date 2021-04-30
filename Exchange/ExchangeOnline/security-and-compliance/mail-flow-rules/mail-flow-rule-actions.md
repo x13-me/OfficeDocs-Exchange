@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn about the actions that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.reviewer: 
 f1.keywords:

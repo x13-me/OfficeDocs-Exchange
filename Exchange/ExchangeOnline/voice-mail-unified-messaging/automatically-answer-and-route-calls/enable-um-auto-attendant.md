@@ -3,7 +3,7 @@ localization_priority: Normal
 description: By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to enable it to answer incoming calls.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 16667a8f-50ab-4bb8-9a05-0389511974b1
 ms.reviewer: 
 f1.keywords:

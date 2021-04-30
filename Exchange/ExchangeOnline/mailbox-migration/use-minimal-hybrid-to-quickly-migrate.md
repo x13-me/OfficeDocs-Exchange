@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
 ms.reviewer: 
 description: Learn how to do an Express migration of on-premises Exchange mailboxes to Microsoft 365 or Office 365.

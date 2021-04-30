@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b5cf21f4-57d2-4bfc-abc6-1f0689826af8
 title: Outlook for iOS and Android in Exchange Online
 ms.collection: 
