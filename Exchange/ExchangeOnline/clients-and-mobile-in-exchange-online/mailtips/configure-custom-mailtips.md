@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'MailTips are informative messages displayed to users in the InfoBar in Outlook on the web and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms.reviewer: 
 title: Configure custom MailTips for recipients

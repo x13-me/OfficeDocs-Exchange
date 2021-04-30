@@ -3,7 +3,7 @@ localization_priority: Normal
 description: As an admin, you can set up both private and public attachment handling in Outlook on the web depending on how you configure your Outlook on the web mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook on the web on a computer that is part of a private or of a public network.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 2b5b8f6a-1bce-4872-8989-bac53ffafaa4
 ms.reviewer: 
 title: Public attachment handling in Exchange Online

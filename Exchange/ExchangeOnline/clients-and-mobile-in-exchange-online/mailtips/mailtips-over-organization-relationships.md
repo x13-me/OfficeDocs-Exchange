@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 1784256f-abe1-4503-b8c4-26d544b73452
 ms.reviewer: 
 title: MailTips over organization relationships
