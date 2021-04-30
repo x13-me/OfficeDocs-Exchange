@@ -66,7 +66,7 @@ Enter the following settings directly on your device or in the application **as 
 |Server/smart host|smtp.office365.com|
 |Port|Port 587 (recommended) or port 25|
 |TLS/StartTLS|Enabled|
-|Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
+|Username/email address and password|Enter the sign-in credentials of the hosted mailbox being used|
 
 #### TLS and other encryption options
 
@@ -81,7 +81,7 @@ Determine what version of TLS your device supports by checking the device guide 
 
 #### How SMTP AUTH client submission works
 
-The following diagram gives you a conceptual overview of what you're environment will look like.
+The following diagram gives you a conceptual overview of what your environment will look like.
 
 ![Shows how a multifunction printer connects to Microsoft 365 or Office 365 using SMTP client submission.](../media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
 
@@ -273,7 +273,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 3. Go to **Settings** \> **Domains**, select your domain (for example, contoso.com), and find the MX record.
 
-   The MX record will have a **Points to address or value** data that looks similar to `contoso-com.mail.protection.outlook.com`.
+   The MX record will have data for **Points to address or value** which looks similar to `contoso-com.mail.protection.outlook.com`.
 
 4. Make a note of data of **Points to address or value** for the MX record, which we refer to as your MX endpoint.
 
