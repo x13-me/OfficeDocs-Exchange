@@ -20,13 +20,13 @@ manager: serdars
 
 There might be times you need to route mail differently depending on whom the mail is sent to or from, where it's being sent, the contents of the message, and so on. For example, if you have multiple sites around the world, you might want to route mails to a specific site. You can do this using connectors and mail flow rules (also known as transport rules).
 
-When the steps below are completed, a mail flow rule will redirect messages addressed to users whose City property is set to New Orleans to the IP address specified by the Outbound connector.
+When the steps below are completed, a mail flow rule will redirect messages addressed to users whose City property is set to New Orleans to the IP address specified by the connector from Office 365 to your organization's email server.
 
 ## Step 1: Use the Exchange admin center to create the connector
 
-The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where received messages originate from (such as a mailbox in your Microsoft 365 or Office 365 organization), the type of organization to which the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors](use-connectors-to-configure-mail-flow.md).
+The first thing we need to do is create a connector from Office 365 to your organization's email server. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where received messages originate from (such as a mailbox in your Microsoft 365 or Office 365 organization), the type of organization to which the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors](use-connectors-to-configure-mail-flow.md).
 
-The subsequent two procedures are for creating Outbound connectors in the New Exchange admin center (EAC) and Classic EAC, respectively.
+The subsequent two procedures are for creating connectors from Office 365 to your organization's email server. These connectors are to be created in the New Exchange admin center (EAC) and Classic EAC.
 
 ### New EAC
 
@@ -134,9 +134,9 @@ To create a mail flow rule in EAC, perform the following steps:
    ![apply rule if](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
 
    > [!IMPORTANT]
-   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that outbound connector changes may take time to replicate.
+   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that changes made in the connector from Office 365 to your organization's email server take time to replicate.
 
-4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously.
+4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the connector from Office 365 to your organization's email server which you created previously.
 
 You can choose more properties for the rule, such as the test mode and when to activate the rule.
 
