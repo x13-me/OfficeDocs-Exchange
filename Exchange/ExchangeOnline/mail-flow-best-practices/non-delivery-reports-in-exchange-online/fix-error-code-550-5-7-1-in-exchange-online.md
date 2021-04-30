@@ -188,7 +188,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
   1. Open the Microsoft 365 admin center at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
 
-  2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
+  2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. Select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
 
      - **Delivery**: If **Route mail through smart hosts** is selected, confirm the correct IP address or FQDN is specified. If **MX record associated with the recipient domain** is selected, confirm the MX record for the domain points to the correct mail server.
 
