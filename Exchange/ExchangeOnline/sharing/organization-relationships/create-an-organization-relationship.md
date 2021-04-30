@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create an organization relationship in Exchange Online
+# Set up an organization relationship in Exchange Online
 
 Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 and Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 
@@ -33,31 +33,29 @@ Set up an organization relationship to share calendar information with an extern
 ## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
-1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, navigate to **Admin** \> **Exchange** \> **organization** \> **sharing**.
 
-2. Go to **organization** \> **sharing**.
+2. Under **Organization Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-3. Under **Organization Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
-4. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
+4. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to add more than one domain, you can do it after you create the organization relationship by editing it.
 
-5. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to add more than one domain, you can do it after you create the organization relationship by editing it.
+5. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
 
-6. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
-
-    To set the free/busy access level, select one of the following:
+    a. To set the free/busy access level, select one of the following:
 
       - **Calendar free/busy information with time only**
 
       - **Calendar free/busy with time, subject, and location**
 
-    To set which users will share calendar free/busy information, select one of the following:
+    b. To set which users will share calendar free/busy information, select one of the following:
 
      - **Everyone in your organization**
 
      - **A specified security group**
 
-    Click **browse** to pick the security group from a list, then click **ok**.
+    c. Click **browse** to pick the security group from a list, then click **ok**.
 
 7. Click **save** to create the organization relationship.
 
@@ -115,7 +113,7 @@ You can also run the following command to verify the organization relationship i
 Get-OrganizationRelationship | format-list
 ```
 
-## Organization Relationships with GCC High
+## Organization relationships with GCC High
 
 Tenants in the [GCC High](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud can now create organization relationships with tenants in the World Wide and the [GCC](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) clouds.
 
