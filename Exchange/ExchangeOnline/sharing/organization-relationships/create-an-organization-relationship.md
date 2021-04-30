@@ -33,11 +33,11 @@ Set up an organization relationship to share calendar information with an extern
 ## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
-1. From the Microsoft 365 admin center dashboard, navigate to **Admin** \> **Exchange** \> **organization** \> **sharing**.
+1. From the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home/?#/homepage) dashboard, navigate to **Admin centers** \> **Exchange** \> **Organization** \> **Sharing**.
 
-2. Under **Organization Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. Under **Organization Sharing** section, click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-3. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
+3. In **new organization relationship** window, in the **Relationship name** box, type a friendly name for the organization relationship.
 
 4. In the **Domains to share with** box, type the domain for the external Microsoft 365, Office 365, or Exchange on-premises organization you want to let see your calendars. If you need to add more than one domain, you can do it after you create the organization relationship by editing it.
 
