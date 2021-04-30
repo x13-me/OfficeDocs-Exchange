@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can configure the number of sign-in failures allowed before an Outlook Voice Access user is locked out of their mailbox. The number of sign-in failures allowed before a voice mail user is locked out is configured on a Unified Messaging (UM) mailbox policy, and applies to all UM-enabled users associated with the UM mailbox policy. By default it is set to 15.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 855e1980-2868-4983-b097-0b5f63f202b8
 ms.reviewer: 
 f1.keywords:

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
 ms.reviewer: 
 description: Admins can learn how to migrate mailboxes from email systems other than Exchange to Microsoft 365 or Office 365.
