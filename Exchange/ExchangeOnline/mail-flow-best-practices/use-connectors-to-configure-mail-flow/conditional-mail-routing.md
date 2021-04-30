@@ -44,7 +44,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 6. Provide a name for the connector and add a description.
 
-7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**.
+7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**
 
 :::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
 
@@ -56,7 +56,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 10. Click **Next**. The **Routing** screen appears.
 
-11. Enter one or more smart hosts in the text box. (These are the smart hosts to which Microsoft 365 or Office 365 will deliver email messages.)
+11. Enter one or more smart hosts in the text box. (These smart hosts are the ones to which Microsoft 365 or Office 365 will deliver email messages.)
 
 > [!NOTE]
 > You must provide either the domain name or the IP address of the server.
@@ -96,7 +96,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
    ![route to and from options](../../media/eaa1aabd-31fa-4598-921b-7803182f7b5f.png)
 
-4. Name the connector and add a description. If you want to turn the connector on immediately, check **Turn it on**. Click **Next**.
+4. Name the connector and add a description. If you want to turn on the connector immediately, check **Turn it on**. Click **Next**.
 
    ![name connector](../../media/f4b47d74-3251-4d04-83aa-7978ba5cd0e4.png)
 
@@ -116,7 +116,7 @@ The subsequent two procedures are for creating Outbound connectors in the New Ex
 
 ## Step 2: Use the EAC to create a mail flow rule
 
-Now that we've created a connector, we need to create a mail flow rule that'll send mail to it based on the criteria you define. There are many conditions you can select from to control when messages should be sent to the connector.
+Now that we've created a connector, we need to create a mail flow rule that will send mail to it based on the criteria you define. There are many conditions you can select from to control when messages should be sent to the connector.
 
 To create a mail flow rule in EAC, perform the following steps:
 
@@ -129,7 +129,7 @@ To create a mail flow rule in EAC, perform the following steps:
 
    ![click more options](../../media/96c2ca71-32b2-423c-99f6-1ee35c63af5c.png)
 
-3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:**, choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box.
+3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:** choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box.
 
    ![apply rule if](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
 
@@ -138,6 +138,6 @@ To create a mail flow rule in EAC, perform the following steps:
 
 4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously.
 
-You can choose additional properties for the rule, such as the test mode and when to activate the rule.
+You can choose more properties for the rule, such as the test mode and when to activate the rule.
 
 5. To save the connector, click **Save**.

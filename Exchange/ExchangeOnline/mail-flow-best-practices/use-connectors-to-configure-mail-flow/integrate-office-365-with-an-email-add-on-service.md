@@ -120,7 +120,7 @@ The **New connector** screen appears.
  
 13. Click **Next**. The **Security restrictions** screen appears.
 
-14. Do the following:
+14. Do the following tasks:
 
     a. Choose **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
     
@@ -148,7 +148,7 @@ The outbound connector is created.
 
 **From Classic EAC**
 
-To create an outbound connector from the Classic EAC, You need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
+To create an outbound connector from the Classic EAC, you need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
 
 1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
@@ -180,7 +180,7 @@ The new connector wizard opens.
 
    When you're finished, click **Next**.
 
-4. On the **When do you want to use this connector?** page, select **Only when I have a transport rule set up that redirects messages to this connector**, and then click **Next**.
+4. On **When do you want to use this connector?** page, select **Only when I have a transport rule set up that redirects messages to this connector**, and then click **Next**.
 
    ![In the new connector wizard, select the option to only use the connector for messages redirected by a mail flow rule.](../../media/c02fc961-6227-4c23-ba54-9cce05e6689e.png)
 
@@ -313,7 +313,7 @@ The **New connector** screen appears.
     
 7. Click **Next**. The **Authenticating sent email** screen appears.
 
-8. Verify that the option **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** is chosen.
+8. Verify that **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** is chosen.
 
 9. Enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
@@ -329,7 +329,7 @@ The inbound connector is created.
 
 **From Classic EAC**
 
-To create an inbound connector from the Classic EAC, You need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
+To create an inbound connector from the Classic EAC, you need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
 
 1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 

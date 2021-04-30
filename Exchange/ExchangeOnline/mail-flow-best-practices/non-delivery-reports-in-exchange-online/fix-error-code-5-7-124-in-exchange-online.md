@@ -21,20 +21,20 @@ description: "Learn how to fix email issues for error code 5.7.124 in Exchange O
 
 # Fix email delivery issues for error code 5.7.124 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see status code 550 5.7.124 or 5.7.124 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the sender sender isn't specified in the group's allowed senders list (directly or as a member of a group). Depending how the group is configured, even the group's owner might need to be in the group's allowed senders list in order to send messages to the group.
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see status code 550 5.7.124 or 5.7.124 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the sender isn't specified in the group's allowed senders list (directly or as a member of a group). Depending how the group is configured, even the group's owner might need to be in the group's allowed senders list in order to send messages to the group.
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix I it?](#i-got-this-bounce-message-how-do-fix-i-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this?](#im-the-group-owner-or-email-admin-how-do-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
 |
 
-## I got this bounce message. How do fix I it?
+## I got this bounce message. How do I fix it?
 
 Typically, members of a group can send messages to the group. If the group is in your Exchange Online organization, you can try to join the group in Outlook or Outlook on the web (formerly known as Outlook Web App). For instructions, see [Join a group in Outlook](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d).
 
 You might have to wait for the group's owner to approve your request to join the group before you can successfully send messages to it. If the group isn't in your organization, or if the group doesn't allow requests to join, then you'll need to ask the group owner to add you to the allowed senders list. You'll find instructions for finding the group owner in the NDR.
 
-## I'm the group owner or email admin. How do I fix this?
+## I'm the group owner or email admin. How do I fix this issue?
 
 The two methods that will allow the sender to send messages to the group are described in the following sections.
 
@@ -63,7 +63,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
 2. In the group properties dialog box that opens, go to **Delivery management**.
 
-3. In the **Distribution Group** box select **Delivery management** and configure the following settings:
+3. In the **Distribution Group** box, select **Delivery management** and configure the following settings:
 
    - Remove any entries in the allowed senders list by selecting one entry, pressing CTRL + A to select all entries, and then clicking **Remove** ![Remove icon](../../media/adf01106-cc79-475c-8673-065371c1897b.gif).
 
