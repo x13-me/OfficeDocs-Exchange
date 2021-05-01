@@ -20,7 +20,12 @@ manager: serdars
 
 # Common message approval scenarios in Exchange Online
 
-Your organization may require certain types of messages be approved in order to meet legal or compliance requirements, or to implement a specific business workflow. This article discusses examples of common scenarios that you can set up by using Exchange.
+> [!NOTE]
+> This article does not apply to standalone Exchange Online Protection (EOP) organizations.
+
+In Exchange Online organizations, certain types of messages might require approval by a moderator in order to meet legal or compliance requirements, or to meet specific business needs.
+
+This article discusses examples of common scenarios that you can set up by using Exchange Online.
 
 ## Example 1: Avoid mail storms to a large distribution group
 
@@ -37,13 +42,9 @@ To require that messages to a specific distribution group be approved, in the Ex
 Here are some common types of messages for which you might want to require manager approval:
 
 - Messages sent from a user to certain distribution groups or recipients
-
 - Messages sent to external users or partners
-
 - Message sent between two groups
-
 - Messages sent with specific content, such as the name of a specific customer
-
 - Messages sent by a trainee
 
 To require that a message be sent for approval, first, create a mail flow rule (also known as a transport rule) using the **Send messages to a moderator** template, and select that the messages should go to the sender's manager, as shown in the following screenshots.
@@ -68,11 +69,8 @@ You can require multiple levels of approval for messages. For example, you can r
 To create this type of multiple-level approval, create one mail flow rule for each level of approval. Each rule detects the same patterns in the messages, as follows:
 
 - The first rule forwards the message to the first approver. When the first approver accepts the message, the message automatically goes to the approver in the second rule.
-
 - If all approvers in the chain select **Approve** when they receive the approval request, when the last approval in the chain is complete, the original message is sent to the intended recipients.
-
 - If anyone in the approval chain selects **Reject** when they receive the approval request, the sender receives a rejection message.
-
 - If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online, 5 days for Exchange Server), the sender receives an expiration message.
 
 The following example assumes that you have a customer called Blue Yonder Airlines, and you want both the customer relationship manager and the compliance officer to approve all messages that go to this customer. You create two rules, one for each approver. The first rule goes to the first-level approver. The second rule goes to the second-level approver.

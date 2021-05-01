@@ -21,6 +21,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage and troubleshoot message approval in Exchange Online
 
+> [!NOTE]
+> This article does not apply to standalone Exchange Online Protection (EOP) organizations.
+
 You may receive the following error when you attempt to remove an arbitration mailbox:
 
  `Can't remove the arbitration mailbox <mailbox> because it's being used for the approval workflow for existing recipients that have either membership restrictions or moderation enabled. You should either disable the approval features on those recipients or specify a different arbitration mailbox for those recipients before removing this arbitration mailbox.`

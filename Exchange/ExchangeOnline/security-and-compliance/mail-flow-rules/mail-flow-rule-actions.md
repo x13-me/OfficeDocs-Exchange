@@ -20,11 +20,11 @@ manager: serdars
 
 # Mail flow rule actions in Exchange Online
 
-Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
 
 Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
 
-For more information about mail flow rules in Exchange Online, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
+For more information about mail flow rules, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
@@ -32,13 +32,15 @@ For more information about actions in mail flow rules in Exchange Server, see or
 
 ## Actions for mail flow rules in Exchange Online
 
-The actions that are available in mail flow rules in Exchange Online are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
+The actions that are available in mail flow rules in Exchange Online and standalone EOP are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
 
 **Notes**:
 
 - After you select an action in the Exchange admin center (EAC), the value that's ultimately shown in the **Do the following** field is often different from the click path you selected. Also, when you create new rules, you can sometimes (depending on the selections you make) select a short action name from a template (a filtered list of actions) instead of following the complete click path. The short names and full click path values are shown in the EAC column in the table.
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
+
+<br>
 
 ****
 
@@ -78,6 +80,8 @@ The actions that are available in mail flow rules in Exchange Online are describ
 ## Property values
 
 The property values that are used for actions in mail flow rules are described in the following table.
+
+<br>
 
 ****
 

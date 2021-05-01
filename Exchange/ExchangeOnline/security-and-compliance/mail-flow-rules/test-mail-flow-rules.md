@@ -20,12 +20,15 @@ manager: serdars
 
 # Test a mail flow rule in Exchange Online
 
-Each time you create a mail flow rule (also known as a transport rule) you should test it before turning it on. This way, if you accidentally create a condition that doesn't do exactly what you want or interacts with other rules in unexpected ways, you won't have any unintended consequences.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you should test new mail flow rules (also known as transport rules) before you turn them on. This way, if you accidentally create a condition that doesn't do exactly what you want or interacts with other rules in unexpected ways, you won't have any unintended consequences.
 
 > [!IMPORTANT]
-> Wait 30 minutes after creating a rule before you test it. If you test immediately after you create the rule, you may get inconsistent behavior. If you're using Exchange Server and have multiple Exchange servers, it may take even longer for all the servers to receive the rule.
+> Wait at least 30 minutes after creating a rule before you test it. If you test immediately after you create the rule, you may get inconsistent behavior.
 
 ## Step 1: Create a rule in test mode
+
+> [!NOTE]
+> DLP and policy tips are not available in standalone EOP.
 
 You can evaluate the conditions for a rule without taking any actions that impact mail flow by choosing a test mode. You can set up a rule so that you get an email notification any time the rule is matched, or you can look at the [Look at the message trace](#look-at-the-message-trace) for messages that might match the rule. There are two test modes:
 
@@ -62,15 +65,10 @@ Here's what you'll see when a rule is matched if you include the incident report
 To test a rule, you can either send enough test messages to confirm that what you expect happens, or look at the message trace for messages that people in your organization send. Be sure to evaluate the following types of messages:
 
 - Messages that you expect to match the rule
-
 - Messages that you don't expect to match the rule
-
 - Messages sent to and from people in your organization
-
 - Messages sent to and from people outside your organization
-
 - Replies to messages that match the rule
-
 - Messages that might cause interactions between multiple rules
 
 ### Tips for sending test messages

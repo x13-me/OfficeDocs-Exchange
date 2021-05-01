@@ -20,7 +20,7 @@ manager: serdars
 
 # Best practices for configuring mail flow rules in Exchange Online
 
-Follow these best practice recommendations for mail flow rules (also known as transport rules) in order to avoid common configuration errors. Each recommendation links to a topic with an example and step-by-step instructions.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, follow these best practice recommendations for mail flow rules (also known as transport rules) in order to avoid common configuration errors. Each recommendation links to a article with an example and step-by-step instructions.
 
 ## Test your rules
 
@@ -62,12 +62,17 @@ For example, you might want to prevent emails from being sent if they contain a 
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-|**Expression**|**Matches**|
-|:-----|:-----|
+<br>
+
+****
+
+|Expression|Matches|
+|---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group*]|Any single character in *character_group*.|
+|
 
 For an example that shows a text file with regular expressions and the Exchange module Windows PowerShell commands to use, see [Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online](use-rules-to-route-email.md).
 

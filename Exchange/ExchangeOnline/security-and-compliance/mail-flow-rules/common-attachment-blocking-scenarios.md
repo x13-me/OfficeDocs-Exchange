@@ -20,7 +20,7 @@ manager: serdars
 
 # Common attachment blocking scenarios for mail flow rules in Exchange Online
 
-Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might need to block or reject certain types of messages in order to meet legal or compliance requirements, or to meet specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
 
 For additional examples showing how to block specific attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
 
@@ -39,8 +39,9 @@ To get started implementing any of these scenarios to block certain message type
 5. Select the conditions and actions you want.
 
 > [!NOTE]
-> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
-> The embedded images are treated as attachments (for example, messages with a picture in the signature); for this reason, we do not recommend using a very small value since unexpected messages will be blocked.
+> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To connect to PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+>
+> Embedded images are treated as attachments (for example, messages with a picture in the signature). For this reason, we do not recommend using a very small value for the attachment size since unexpected messages will be blocked.
 
 ## Example 1: Block messages with attachments, and notify the sender
 
@@ -58,15 +59,19 @@ If you want to reject a message but let the intended recipient know what happene
 
 You can include placeholders in the notification message so that it includes information about the original message. The placeholders must be enclosed in two percent signs (%%), and when the notification message is sent, the placeholders are replaced with information from the original message. You can also use basic HTML such as \<br\>, \<b\>, \<i\>, and \<img\> in the message.
 
+<br>
 
-|**Type of information**|**Placeholder**|
-|:-----|:-----|
+****
+
+|Type of information|Placeholder|
+|---|---|
 |Sender of the message.|%%From%%|
 |Recipients listed on the "To" line.|%%To%%|
 |Recipients listed on the "Cc" line.|%%Cc%%|
 |Subject of the original message.|%%Subject%%|
 |Headers from the original message. This is similar to the list of headers in a delivery status notification (DSN) generated for the original message.|%%Headers%%|
 |Date the original message was sent.|%%MessageDate%%|
+|
 
 In this example, all messages that contain attachments and are sent to people inside your organization are blocked, and the recipient is notified.
 
