@@ -25,14 +25,14 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-do-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix it?
 
  Only an email admin in the recipient's organization can fix this issue. Contact the email admin and refer them to this information so they can try to resolve the issue for you.
 
-## I'm an email admin. How do I fix this?
+## I'm an email admin. How do I fix this issue?
 
 The two methods that will allow an external sender to send messages to the recipient in your organization are described in the following sections.
 
@@ -173,7 +173,8 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
        
        :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set":::
 
-       - In the **Accept messages from** screen, select and add the external senders and the all internal users group.
+       - In the **Accept messages from** screen, select the external senders and the "all internal users" group.
+       - Add the external senders and the "all internal users" group to the list of the allowed senders of the recipient.
        
        :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen":::
     
@@ -193,7 +194,9 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Clear the check box for **Require that all senders are authenticated**.
 
-      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select external senders and the "all internal users" group. 
+      - Add the external senders and the "all internal users" group to the list of the allowed senders of the recipient.
+      - When you're finished, click **OK**.
 
          ![Add an allowed sender in the Admin center to help solve DSN 5.7.136](../../media/7306dda2-69dc-4d47-9d40-0fffaea881d6.png)
 
@@ -213,7 +216,7 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
     
    5. Choose the radio button for **Allow messages from people inside and outside my organization**.
    
-   6. Under **Specific senders**, select and add the external senders and the all internal users group from the text box.
+   6. Under **Specific senders**, select and add the external senders and the "all internal users" group from the text box.
     
    7.  When you're finished, click **Save changes**.
 
@@ -227,7 +230,8 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Select **Senders inside and outside of my organization**.
 
-      - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+      - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select the external senders and the "all internal users" group. When you're finished, click **OK**.
+      - Add the external senders and the "all internal users" group to the list of the allowed senders of the recipient.
 
    4. Click **Save**.
 
@@ -246,7 +250,7 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Clear the check box for **Require that all senders are authenticated**.
 
-      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.
 
    5. Click **OK**, and then click **Save**.
 
@@ -267,7 +271,7 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
       - Clear the check box for **Require all senders to be authenticated**.
       - Choose the radio button for **Selected senders**.
       - Click **+ Add sender**
-      - In the **Accept messages from** screen, select and add the external senders and the all internal users group. 
+      - In the **Accept messages from** screen, select and add the external senders and the "all internal users" group. 
     
    6. When you're finished, click **Confirm**.
     
@@ -285,7 +289,7 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Clear the check box for **Require that all senders are authenticated**.
 
-      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.
 
    5. Click **OK**, and then click **Save**.
 
