@@ -101,21 +101,23 @@ This configuration is controlled by the value of the _RouteAllMessagesViaOnPremi
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises
 ```
 
-In this configuration, the error is caused by either of the following issues on the inbound connector from your on-premises Exchange organization to Exchange Online:
+In this configuration, the error is caused by either of the following issues on the connector from your on-premises Exchange organization to Exchange Online:
 
-- You don't have an inbound connector that has the **Connector Type** value **On-premises**.
+- You don't have a connector from Office 365 to your organization's email server which has the **Connector Type** value **On-premises**.
 
-- The inbound connector is scoped to one or more accepted domains.
+- The connector from Office 365 to your organization's email server is scoped to one or more accepted domains.
 
-To fix the problem, configure a dedicated inbound connector that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the Inbound connector that's used for hybrid by following these steps:
+To fix the problem, configure a dedicated connector from Office 365 to your organization's email server which has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the connector from Office 365 to your organization's email server which is used for hybrid by following these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
-2. In the EAC, click **Mail Flow** \> **Connectors**. In the **Inbound connectors** section, select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
+2. In the EAC, click **Mail Flow** \> **Connectors**.
 
-   - **General**: Verify that **On-premises** is selected.
+3. Select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
-   - **Scope**: Verify that **Accepted domains** is empty.
+   - **General**: Verify that the option **On-premises** is selected.
+
+   - **Scope**: Verify that the option **Accepted domains** is empty.
 
 For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](../../../ExchangeHybrid/transport-routing.md).
 
@@ -123,7 +125,7 @@ For more information about mail routing in hybrid deployments, see [Transport ro
 
 There are two likely possibilities:
 
-- Based on the domain in the recipient's email address, your Exchange Online organization accepted the message, but then couldn't correctly route the message to the recipient. This is likely caused by accepted domain configuration issues.
+- Based on the domain in the recipient's email address, your Exchange Online organization accepted the message, but then couldn't correctly route the message to the recipient. This failure is likely caused by accepted domain configuration issues.
 
 - In hybrid environments, there are misconfigured connectors in your Exchange Online organization.
 
