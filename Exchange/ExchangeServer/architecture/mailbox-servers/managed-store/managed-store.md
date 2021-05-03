@@ -24,7 +24,7 @@ The multi-process model that's used by the Managed Store consists of the followi
 
 - A single store service controller process for the whole Exchange server (Microsoft.Exchange.Store.Service.exe, also known as MSExchangeIS).
 
-- Ane worker process for each mounted database (Microsoft.Exchange.Store.Worker.exe). When a database is mounted, a new worker process is instantiated that services only that database. When a database is dismounted, the worker process for that database is terminated.
+- One worker process for each mounted database (Microsoft.Exchange.Store.Worker.exe). When a database is mounted, a new worker process is instantiated that services only that database. When a database is dismounted, the worker process for that database is terminated.
 
 For example, if you have 40 mailbox databases mounted on a Mailbox server, there will be 41 processes running for the Managed Store: one for each database, and one for the store service process controller. The store process controller monitors the health of all store worker processes on the server. A forcible or unexpected termination the Microsoft.Exchange.Store.Service.exe causes an immediate failover of all active database copies on the server.
 

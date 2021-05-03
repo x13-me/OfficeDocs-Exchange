@@ -32,7 +32,7 @@ In Microsoft Exchange Server 2013, you can use the Queue Viewer in the Exchange 
 
 ## Remove messages from queues
 
-A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. You can select whether to send a non-delivery report (NDR) when you remove messages from a queue. You can't remove a message from the Submission queue.
+A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. You can select whether to send a non-delivery report (NDR) when you remove messages from a queue.
 
 ## Use Queue Viewer in the Exchange Toolbox to remove messages
 

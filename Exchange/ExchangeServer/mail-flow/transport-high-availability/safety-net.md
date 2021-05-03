@@ -64,7 +64,7 @@ In Microsoft Exchange Server 2019 and 2016, the maximum supported database size 
 
 When a Hub-and-spoke topology is used, the transport Safety Net JET database can grow beyond 2 TB. To stay within the supported limit of 2 TB, follow these guidelines:
 
-- Hub servers that are used for message relay can’t be configured to deliver messages to mailboxes.
+- Hub servers that are used for message relay can't be configured to deliver messages to mailboxes.
 
 - Disable Safety Net on hub servers that are used for message relay. To do this, follow these steps:
 

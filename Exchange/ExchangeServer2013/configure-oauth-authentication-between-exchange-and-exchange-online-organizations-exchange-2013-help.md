@@ -165,7 +165,7 @@ Get-OABVirtualDirectory | FL server,*url*
    .\RegisterEndpoints.ps1
    ```
 
-3. To verify that all the records were added we need to run the following. We’re looking for https://namespace entries for all the URL’s, not 00000002-0000-0ff1-ce00-000000000000/namespace entries.
+3. To verify that all the records were added we need to run the following. We're looking for https://namespace entries for all the URL's, not 00000002-0000-0ff1-ce00-000000000000/namespace entries.
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
