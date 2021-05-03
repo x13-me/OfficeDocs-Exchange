@@ -26,7 +26,7 @@ The following table shows the default values for common settings:
 
 |**Setting**|**Default**|
 |:-----|:-----|
-|Out of office replies|Send external out of office replies to people on the remote domain.|
+|Out of office replies|Send external out-of-office replies to people on the remote domain.|
 |Automatic replies|Allow automatic replies or automatically forwarded messages to be sent to people on the remote domain.|
 |Delivery and non-delivery reports|Allow delivery and non-delivery reports to be sent to people on the remote domain.|
 |Meeting forward notifications|Don't allow meeting forward notifications to be sent to people on the remote domain.|
@@ -39,7 +39,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -110,7 +110,7 @@ The new remote domain is created and added to the list.
 
 4. Select the options you want:
 
-   - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
+   - In the **Out of Office reply types** section, specify which type of out-of-office replies should be sent to people at this domain.
 
    - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
 
@@ -194,19 +194,19 @@ This example disables automatic replies, automatic forwarding, and out-of-office
 Set-RemoteDomain -Identity  Default -AutoReplyEnabled $false -AutoForwardEnabled $false -AllowedOOFType None
 ```
 
-This example sends internal out of office replies to users at the remote domain named Contoso.
+This example sends internal out-of-office replies to users at the remote domain named Contoso.
 
 ```powershell
 Set-RemoteDomain -Identity Contoso -AllowedOOFType InternalLegacy
 ```
 
-This example disables prevents delivery reports and non-delivery reports from being sent to users at Contoso.
+This example prevents delivery reports and non-delivery reports from being sent to users at Contoso.
 
 ```powershell
 Set-RemoteDomain -Identity Contoso -DeliveryReportEnabled $false -NDREnabled $false
 ```
 
-This example sends all messages to Contoso using Transport Neutral Encapsulation Formation (TNEF) encoding, rather than MIME encoding. This preserves Rich Text format in messages.
+This example sends all messages to Contoso using Transport Neutral Encapsulation Formation (TNEF) encoding, rather than MIME encoding. This usage of TNEF preserves Rich Text format in messages.
 
 ```powershell
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $true
@@ -218,7 +218,7 @@ This example sends all messages to Contoso using MIME encoding, which means that
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $false
 ```
 
-This example uses the message format settings the user has defined in Outlook or Outlook on the web for encoding messages.
+This example uses the message-format settings the user has defined in Outlook or Outlook on the web for encoding messages.
 
 ```powershell
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $null
