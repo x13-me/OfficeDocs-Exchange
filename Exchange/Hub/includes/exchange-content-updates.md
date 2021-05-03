@@ -2,6 +2,85 @@
 
 
 
+## Week of April 26, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/26/2021 | [Differences between the Classic admin center (Classic EAC) to the new admin center (new EAC)](/Exchange/changes-in-exchange-admin-center) | modified |
+| 4/26/2021 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
+| 4/26/2021 | [Classic EAC - Get to classic and features](/Exchange/features-in-classic-eac) | modified |
+| 4/26/2021 | [New EAC - Get to new EAC and Features](/Exchange/features-in-new-eac) | modified |
+| 4/26/2021 | [Manage permissions for recipients in Exchange Online](/Exchange/recipients-in-exchange-online/manage-permissions-for-recipients) | modified |
+| 4/29/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 4/29/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 4/29/2021 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
+| 4/29/2021 | [Data loss prevention](/Exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) | modified |
+
+
+## Week of April 19, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/19/2021 | [Keyboard shortcuts in the Exchange admin center](/Exchange/about-documentation/exchange-admin-center-keyboard-shortcuts?view=exchserver-2016) | modified |
+| 4/19/2021 | [Running Windows antivirus software on Exchange servers](/Exchange/antispam-and-antimalware/windows-antivirus-software?view=exchserver-2016) | modified |
+| 4/19/2021 | [Procedures for DSNs and NDRs in Exchange Server](/Exchange/mail-flow/non-delivery-reports-and-bounce-messages/ndr-procedures?view=exchserver-2016) | modified |
+| 4/20/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 4/20/2021 | [Fix email delivery issues for error code 550 4.4.7 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-4-4-7-in-exchange-online) | modified |
+| 4/20/2021 | [Fix email delivery issues for error code 550 5.1.1 through 5.1.20 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-1-through-5-1-20-in-exchange-online) | modified |
+| 4/20/2021 | [Fix email delivery issues for error code 550 5.1.10 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-10-in-exchange-online) | modified |
+| 4/20/2021 | [Fix email delivery issues for error code 550 5.7.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-7-1-in-exchange-online) | modified |
+| 4/20/2021 | [Migrate email using the Exchange cutover method](/Exchange/mailbox-migration/cutover-migration-to-office-365) | modified |
+| 4/20/2021 | [Delete or restore user mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) | modified |
+| 4/20/2021 | [Create and manage distribution groups](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) | modified |
+| 4/20/2021 | [Manage mail contacts](/Exchange/recipients-in-exchange-online/manage-mail-contacts) | modified |
+| 4/20/2021 | [Manage mail-enabled security groups](/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) | modified |
+| 4/20/2021 | [Manage permissions for recipients in Exchange Online](/Exchange/recipients-in-exchange-online/manage-permissions-for-recipients) | modified |
+| 4/20/2021 | [Add or remove email addresses for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
+| 4/20/2021 | [Change how long permanently deleted items are kept for an Exchange Online mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention) | modified |
+| 4/20/2021 | [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) | modified |
+| 4/20/2021 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
+| 4/20/2021 | [Use Exchange Online PowerShell to display mailbox information](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information) | modified |
+| 4/20/2021 | [In-Place Hold and Litigation Hold](/Exchange/security-and-compliance/in-place-and-litigation-holds) | modified |
+| 4/20/2021 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
+| 4/20/2021 | [Default Retention Policy in Exchange Online and Exchange Server](/Exchange/security-and-compliance/messaging-records-management/default-retention-policy) | modified |
+| 4/20/2021 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+| 4/20/2021 | [Clean up or delete items from the Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/clean-up-deleted-items) | modified |
+| 4/20/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
+| 4/20/2021 | [Understanding back pressure](/Exchange/mail-flow/back-pressure?view=exchserver-2016) | modified |
+| 4/20/2021 | [Content conversion](/Exchange/mail-flow/content-conversion/content-conversion?view=exchserver-2016) | modified |
+| 4/20/2021 | [Mail flow and the transport pipeline](/Exchange/mail-flow/mail-flow?view=exchserver-2016) | modified |
+| 4/20/2021 | [Recipient resolution in Exchange Server](/Exchange/mail-flow/mail-routing/recipient-resolution?view=exchserver-2016) | modified |
+| 4/20/2021 | [Export messages from queues](/Exchange/mail-flow/queues/export-messages?view=exchserver-2016) | modified |
+| 4/20/2021 | [Message retry, resubmit, and expiration intervals](/Exchange/mail-flow/queues/message-intervals?view=exchserver-2016) | modified |
+| 4/20/2021 | [Procedures for messages in queues](/Exchange/mail-flow/queues/message-procedures?view=exchserver-2016) | modified |
+| 4/20/2021 | [Properties of messages in queues](/Exchange/mail-flow/queues/message-properties?view=exchserver-2016) | modified |
+| 4/20/2021 | [Procedures for queues](/Exchange/mail-flow/queues/queue-procedures?view=exchserver-2016) | modified |
+| 4/20/2021 | [Queue properties in Exchange Server](/Exchange/mail-flow/queues/queue-properties?view=exchserver-2016) | modified |
+| 4/20/2021 | [View queued message properties in Queue Viewer](/Exchange/mail-flow/queues/queued-message-properties?view=exchserver-2016) | modified |
+| 4/20/2021 | [Queues and messages in queues in Exchange Server](/Exchange/mail-flow/queues/queues?view=exchserver-2016) | modified |
+| 4/20/2021 | [Transport agents in Exchange Server](/Exchange/mail-flow/transport-agents/transport-agents?view=exchserver-2016) | modified |
+| 4/20/2021 | [Manage messages in queues: Exchange 2013 Help](/Exchange/manage-messages-in-queues-exchange-2013-help) | modified |
+| 4/22/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 4/23/2021 | [Smime Config attributes](/Exchange/org-config-transfer-attributes/smime-config) | modified |
+| 4/23/2021 | [Enable or disable hierarchical address books in Exchange Online](/Exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books) | modified |
+| 4/23/2021 | [Perform a remote wipe on a mobile phone](/Exchange/clients-and-mobile-in-exchange-online/mobile-access/remote-wipe-on-mobile-phone) | modified |
+| 4/23/2021 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
+| 4/23/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
+| 4/23/2021 | [What you need to know about migrating your IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes) | modified |
+| 4/23/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 4/23/2021 | [Configure Kerberos authentication for load-balanced Client Access services](/Exchange/architecture/client-access/kerberos-auth-for-load-balanced-client-access?view=exchserver-2016) | modified |
+| 4/23/2021 | [Manage mailbox databases in Exchange Server](/Exchange/architecture/mailbox-servers/manage-databases?view=exchserver-2016) | modified |
+| 4/23/2021 | [Perform a remote wipe on a mobile phone](/Exchange/clients/exchange-activesync/remote-wipe?view=exchserver-2016) | modified |
+| 4/23/2021 | [Activate a lagged mailbox database copy](/Exchange/high-availability/manage-ha/activate-lagged-db-copies?view=exchserver-2016) | modified |
+| 4/23/2021 | [Safety Net in Exchange Server](/Exchange/mail-flow/transport-high-availability/safety-net?view=exchserver-2016) | modified |
+| 4/23/2021 | [Planning and deployment for Exchange Server](/Exchange/plan-and-deploy/plan-and-deploy?view=exchserver-2016) | modified |
+| 4/23/2021 | [Use Compliance Search to search all mailboxes in Exchange Server](/Exchange/policy-and-compliance/ediscovery/compliance-search?view=exchserver-2016) | modified |
+| 4/23/2021 | [Configure OAuth authentication between Exchange and Exchange Online](/Exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) | modified |
+| 4/23/2021 | [Manage mailbox databases in Exchange 2013: Exchange 2013 Help](/Exchange/manage-mailbox-databases-in-exchange-2013-exchange-2013-help) | modified |
+
+
 ## Week of April 12, 2021
 
 
@@ -562,43 +641,3 @@
 | 3/30/2021 | [Procedures related to deployment](/Exchange/management/procedures-related-to-deployment) | modified |
 | 3/31/2021 | [Exchange Server hybrid deployments](/Exchange/exchange-hybrid) | modified |
 | 3/31/2021 | [Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid](/Exchange/hybrid-deployment/simplify-owa-url) | modified |
-
-
-## Week of March 22, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/22/2021 | [Enable or disable SMTP AUTH](/Exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) | modified |
-| 3/23/2021 | [Domain expiring insight in the new Exchange admin center (new EAC)](/Exchange/monitoring/mail-flow-insights/domain-expiry-notification-feature) | added |
-| 3/23/2021 | [Mail flow insights in the new EAC](/Exchange/monitoring/mail-flow-insights/mail-flow-insights) | modified |
-| 3/24/2021 | [How and when to decommission your on-premises Exchange servers in a hybrid deployment](/Exchange/decommission-on-premises-exchange) | modified |
-| 3/24/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
-| 3/24/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 3/26/2021 | [Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) | modified |
-| 3/26/2021 | [Procedures for Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules) | modified |
-| 3/26/2021 | [Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/client-access-rules?view=exchserver-2019) | modified |
-| 3/26/2021 | [Procedures for Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/procedures-for-client-access-rules?view=exchserver-2019) | modified |
-
-
-## Week of March 15, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/15/2021 | [Exchange Server hybrid deployments](/Exchange/exchange-hybrid) | modified |
-| 3/15/2021 | [Single sign-on with hybrid deployments](/Exchange/single-sign-on) | modified |
-| 3/15/2021 | [Planning and deployment for Exchange Server](/Exchange/plan-and-deploy/plan-and-deploy?view=exchserver-2016) | modified |
-| 3/16/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 3/16/2021 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
-| 3/16/2021 | [Active Directory schema changes in Exchange Server](/Exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016) | modified |
-| 3/16/2021 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
-| 3/16/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
-| 3/16/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
-| 3/18/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 3/18/2021 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
-| 3/19/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
-| 3/19/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
-| 3/19/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
-| 3/19/2021 | [MailTips: Exchange 2013 Help](/Exchange/mailtips-exchange-2013-help) | modified |
-| 3/19/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |

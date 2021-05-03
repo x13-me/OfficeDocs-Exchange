@@ -21,7 +21,7 @@ manager: serdars
 # Classic Exchange admin center
 
 > [!IMPORTANT]
-> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever.  Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. Try it now!
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 ## Get to the Classic Exchange admin center
 
