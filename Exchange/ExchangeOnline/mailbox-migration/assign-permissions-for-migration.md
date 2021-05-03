@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.reviewer: 
 description: When you migrate on-premises Exchange mailboxes to Microsoft 365 or Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.

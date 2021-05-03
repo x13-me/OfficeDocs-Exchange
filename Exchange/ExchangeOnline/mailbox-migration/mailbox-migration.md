@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0a4913fe-60fb-498f-9155-a86516418842
 ms.reviewer: 
 description: Learn all the ways admins can use to migrate user mailboxes to Microsoft 365 or Office 365.

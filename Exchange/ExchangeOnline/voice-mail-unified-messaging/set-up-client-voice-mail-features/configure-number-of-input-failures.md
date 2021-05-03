@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can configure the number of times that users who call in to an Outlook Voice Access number can enter incorrect data before they're disconnected. This setting applies to both Outlook Voice Access users and unauthenticated callers who use directory search.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
 ms.reviewer: 
 f1.keywords:

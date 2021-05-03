@@ -153,11 +153,11 @@ You need to set up a special DNS record for your domain name that points to the 
 
 The Autodiscover service uses one of these four methods to configure the email client. The first two work for small, single SMTP namespace organizations. The last two serve multiple-SMTP namespaces.
 
-- Connect to: https://contoso.com/AutoDiscover/AutoDiscover.xml
+- Connect to: <https://contoso.com/AutoDiscover/AutoDiscover.xml>
 
-- Connect to: https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+- Connect to: <https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml>
 
-- Autodiscover redirect URL for redirection: http://autodiscover.contoso.com/autodiscover/autodiscover.xml
+- Autodiscover redirect URL for redirection: <http://autodiscover.contoso.com/autodiscover/autodiscover.xml>
 
 - Search for DNS SRV record
 
@@ -182,7 +182,7 @@ You'll need to make sure that you have configured the correct external URLs for 
 |[Offline Address Book](/powershell/module/exchange/Set-OabVirtualDirectory)|`Get-OabVirtualDirectory | Set-OabVirtualDirectory -ExternalURL https://mail.companycontoso.com/oab`|OAB virtual directories used in IIS|
 |[Exchange Web Sevices](/powershell/module/exchange/Set-WebServicesVirtualDirectory)|`Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -ExternalURL https://mail.companycontoso.com/ews/exchange.asmx`|Exchange Web Services virtual directories in IIS|
 |[Outlook Anywhere (RPC over HTTP)](/powershell/module/exchange/Set-OutlookAnywhere)|`Get-OutlookAnywhere | Set-OutlookAnywhere -ExternalHostname mail.contoso.com -ExternalClientsRequireSsl $true`|Outlook Anywhere virtual directories in IIS|
-|[Messaging Application Programming Interface (MAPI) over HTTP](/powershell/module/exchange/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <br/><br/> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
+|[Messaging Application Programming Interface (MAPI) over HTTP](/powershell/module/exchange/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <p> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
 
 
 Click the Service name in the preceding table for more information about how to obtain or reconfigure these URLs.
