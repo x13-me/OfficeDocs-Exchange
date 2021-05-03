@@ -216,9 +216,11 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
     
    5. Choose the radio button for **Allow messages from people inside and outside my organization**.
    
-   6. Under **Specific senders**, select and add the external senders and the "all internal users" group from the text box.
+   6. Under **Specific senders**, select the external senders and the "all internal users" group from the text box.
+   
+   7. Add the external senders and the "all internal users" group to the list of allowed senders for the recipient.
     
-   7.  When you're finished, click **Save changes**.
+   8.  When you're finished, click **Save changes**.
 
     - **Classic EAC**
 
@@ -250,7 +252,8 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Clear the check box for **Require that all senders are authenticated**.
 
-      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.
+      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group. 
+      - When you're finished, click **OK**.
 
    5. Click **OK**, and then click **Save**.
 
@@ -271,7 +274,8 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
       - Clear the check box for **Require all senders to be authenticated**.
       - Choose the radio button for **Selected senders**.
       - Click **+ Add sender**
-      - In the **Accept messages from** screen, select and add the external senders and the "all internal users" group. 
+      - In the **Accept messages from** screen, select the external senders and the "all internal users" group.
+      - Add the external senders and the "all internal users" group to the list of allowed senders for the recipient.
     
    6. When you're finished, click **Confirm**.
     
@@ -289,7 +293,8 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
       - Clear the check box for **Require that all senders are authenticated**.
 
-      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.
+      - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group. When you're finished, click **OK**.
+      - Add the external senders and the "all internal users" group to the list of allowed senders for the recipient.
 
    5. Click **OK**, and then click **Save**.
 
