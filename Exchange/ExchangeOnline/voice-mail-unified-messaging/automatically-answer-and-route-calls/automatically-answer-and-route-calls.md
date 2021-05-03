@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Microsoft Exchange Unified Messaging (UM) enables you to create a single or multiple UM auto attendants, depending on the needs of your organization. Unlike other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them. This topic discusses the UM auto attendant feature found in Unified Messaging.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: d3dcd488-bd57-44cc-bdd4-ddee42a69dde
 ms.reviewer: 
 f1.keywords:

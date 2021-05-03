@@ -23,11 +23,8 @@ In Exchange Server, you can use the Queue Viewer in the Exchange Toolbox or the 
 This topic describes how to perform the following procedures on messages in queues:
 
 - **Remove messages**: You can remove messages from queues with our without a non-delivery report to the sender (also known as an NDR, delivery status notification, DSN, or bounce message).
-
 - **Suspend messages**: When you suspend a message, you prevent delivery of the message. The message won't leave the queue until you resume the message.
-
 - **Resume messages**: You can resume a message that currently has a status of Suspended. By resuming a message, you enable delivery of the message.
-
 - **Redirect messages**: You can drain messages from all the delivery queues on a Mailbox server, and transfer those messages to another Mailbox server.
 
 For information about exporting messages from queues, see [Export messages from queues](export-messages.md).
@@ -39,16 +36,11 @@ For information about exporting messages from queues, see [Export messages from 
 - To find and open the Exchange Toolbox, use one of the following procedures:
 
   - **Windows 10**: Click **Start** \> **All Apps** \> **Microsoft Exchange Server  \<Version\> \>** **Exchange Toolbox**.
-
   - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **Microsoft Exchange Server \<Version\>**.
-
   - **Windows Server 2012**: Use any of the following methods:
-
-  - On the Start screen, click an empty area, and type Exchange Toolbox.
-
-  - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
-
-  - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
+    - On the Start screen, click an empty area, and type Exchange Toolbox.
+    - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
+    - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
 
     When the shortcut appears in the results, you can select it.
 
@@ -66,11 +58,9 @@ For information about exporting messages from queues, see [Export messages from 
 ## Remove messages from queues
 <a name="Remove"> </a>
 
- **Notes**:
+**Note**:
 
-- A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#message-filtering-parameters).
-
-- You can't remove messages from the Submission queue.
+A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#message-filtering-parameters).
 
 ### Use Queue Viewer to remove messages from queues
 
@@ -204,7 +194,6 @@ To verify that you have successfully suspended messages in queues, use either of
  **Notes**:
 
 - You can only resume messages that have a status of Suspended.
-
 - The status of the queue that holds the messages affects the delivery of the message. For example, if you resume suspended messages in a queue that has a status of Suspended, the messages can't be delivered until you resume the queue. For more information about resuming queues, see [Resume queues](queue-procedures.md#resume-queues).
 
 ### Use Queue Viewer to resume messages
@@ -214,11 +203,8 @@ To verify that you have successfully suspended messages in queues, use either of
 2. In Queue Viewer, click the **Messages** tab. A list of all messages on the server that you're connected to is displayed. To adjust the action to focus on a single queue, click the **Queues** tab, double-click the queue name, and then click the _Server\Queue_ tab that appears.
 
 3. Click **Create Filter**, and enter your filter expression as follows:
-
     1. Select **Status** from the message property drop-down list.
-
     2. Select **Equals** from the comparison operator drop-down list.
-
     3. Select **Suspended** from the value drop-down list.
 
 4. Click **Apply Filter**. All messages that have a status of Suspended are displayed.
@@ -275,11 +261,8 @@ Redirecting messages drains all active messages from delivery queues on the sour
  **Notes**:
 
 - Only active messages are redirected.
-
 - Shadow queues and messages in the poison message queue aren't redirected.
-
 - The source Mailbox server doesn't accept new messages while messages are being redirected.
-
 - You can only use the Exchange Management Shell to redirect messages.
 
 ### Use the Exchange Management Shell to redirect messages

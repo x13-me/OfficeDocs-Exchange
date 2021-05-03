@@ -3,7 +3,7 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
 ms.reviewer: 
 f1.keywords:
