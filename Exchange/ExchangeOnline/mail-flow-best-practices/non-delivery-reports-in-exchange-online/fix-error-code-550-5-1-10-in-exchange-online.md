@@ -37,7 +37,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+  Backscatter itself is harmless, but if you're getting much of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ## I got this bounce message. How do I fix it?
 
@@ -103,7 +103,7 @@ If the addresses don't match, contact the recipient (by phone, in person, etc.) 
 
 Microsoft 365 and Office 365 support multiple ways to forward messages automatically. If the intended recipient of your message is using Microsoft 365 or Office 365, ask them to review the [Update, disable, or remove Inbox Rules forwarding](#update-disable-or-remove-inbox-rules-forwarding) and [Disable account forwarding](#disable-account-forwarding) sections below.
 
-If the problem persists after performing these steps, ask the recipient to refer their email admin to the [I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this) section below.
+If the problem persists after performing these steps, ask the recipient to refer their email admin to the [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue) section below.
 
 #### Update, disable, or remove Inbox Rules forwarding
 
@@ -129,7 +129,7 @@ If the problem persists after performing these steps, ask the recipient to refer
 
 2. Select **Stop forwarding** and click **Save** to disable account forwarding.
 
-## I'm an email admin. How can I fix this?
+## I'm an email admin. How can I fix this issue?
 
 If the sender can't fix the issue themselves, the problem might be that an email system on the receiving side isn't configured correctly. If you're the email admin for the recipient, try one or more of the following fixes and then ask the sender to resend the message.
 
