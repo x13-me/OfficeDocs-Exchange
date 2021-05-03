@@ -149,7 +149,7 @@ Instead of allowing all external senders to send messages to this recipient, you
 
 - To add everyone in your organization to a recipient's allowed sender's list, you can create a [distribution group](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md) or a [dynamic distribution group](../../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) that contains everyone in your organization. After you create this group, you can add it to the recipient's allowed senders list.
 
-- The recipient's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
+- The recipient's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the recipient's allowed senders list, open the EAC and use one of the following procedures based on the recipient type:
 
