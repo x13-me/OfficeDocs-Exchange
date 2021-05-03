@@ -40,11 +40,7 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 - A spammer sent a message to a non-existent recipient, and they falsified the **From** address so it appears the message was sent by your email address. The resulting bounce message that you get is called _backscatter_, and you can safely ignore or delete the bounce message.
 
-<<<<<<< HEAD
   Backscatter itself is harmless, but if you're getting much of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this topic: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
-=======
-  Backscatter itself is harmless, but if you're getting a lot of it, it's possible that your computer or device is infected with spam-sending malware. Consider running an anti-malware scan. Additionally, to help prevent spammers from impersonating you or others in your organization, ask your email admin to read this article: [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
->>>>>>> 97f878c761ad9eb2916047d5990d096f180e0880
 
 ## I got this bounce message. How do I fix it?
 
