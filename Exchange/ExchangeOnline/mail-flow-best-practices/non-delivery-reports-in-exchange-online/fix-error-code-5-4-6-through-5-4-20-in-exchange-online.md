@@ -107,7 +107,7 @@ In this configuration, the error is caused by either of the following issues on 
 
 - The connector from Office 365 to your organization's email server is scoped to one or more accepted domains.
 
-To fix the problem, configure a dedicated connector from Office 365 to your organization's email server which has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the connector from Office 365 to your organization's email server which is used for hybrid by following these steps:
+To fix the problem, configure a dedicated connector (from Office 365 to your organization's email server) that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the connector (from Office 365 to your organization's email server) that is used for hybrid by following these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
@@ -115,9 +115,9 @@ To fix the problem, configure a dedicated connector from Office 365 to your orga
 
 3. Select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
-   - **General**: Verify that the option **On-premises** is selected.
+   - **General**: Verify that the **On-premises** option is selected.
 
-   - **Scope**: Verify that the option **Accepted domains** is empty.
+   - **Scope**: Verify that the  **Accepted domains** option is empty with no data.
 
 For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](../../../ExchangeHybrid/transport-routing.md).
 
