@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: jhendr
 f1.keywords:
 - NOCSH
 manager: serdars

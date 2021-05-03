@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 3fe19996-29bc-4879-aab9-5a622b2f1481
 ms.reviewer: 
 description: 'You can migrate the contents of user mailboxes from your source email system to Microsoft 365 or Office 365 using the Internet Message Access Protocol (IMAP).'
@@ -39,7 +39,7 @@ For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration t
 
 Here are a few limitations to be aware of:
 
-- Microsoft’s data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
+- Microsoft's data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
 - You can only migrate items in a user's inbox or other mail folders. This type of migration doesn't migrate contacts, calendar items, or tasks.
 

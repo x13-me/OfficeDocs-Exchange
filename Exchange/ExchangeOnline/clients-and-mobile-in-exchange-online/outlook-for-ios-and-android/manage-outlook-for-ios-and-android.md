@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: This article describes best practices for managing mobile devices with Outlook for iOS and Android in Exchange Online.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 30e8c819-4d41-4458-a746-a9ba9a84a7c0
 title: Managing Outlook for iOS and Android in Exchange Online
 ms.collection: 
@@ -32,7 +32,7 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 
 2. Basic Mobility and Security for Microsoft 365.
 
-3. Third-party Mobile Device Management solutions.
+3. Third-party Unified Endpoint Management solutions.
 
 4. Mobile Device Access and Mobile Device Mailbox Policies.
 
@@ -42,7 +42,11 @@ Customers looking to manage Outlook for iOS and Android have the following optio
 Microsoft recommends that customers use the features of the Enterprise Mobility + Security suite to protect corporate data on mobile devices, due to the advanced capabilities provided by these services.
 
 > [!IMPORTANT]
-> When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates in Outlook for iOS and Android, Exchange Online mobile device access rules (allow, block, or quarantine) are skipped if there are any Azure Active Directory conditional access policies applied to the user that include:
+> - Cloud app condition: Exchange Online or Office 365
+> - Device platform condition: iOS and/or Android
+> - Client apps condition: Mobile apps and desktop client
+> - One of the following Grant access controls: [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 
 > [!NOTE]
 > When using mobile device cmdlets such as `Get-MobileDevice` to check the status of a device, the timestamp for Outlook for iOS and Android synchronization, indicated by the `LastSyncTime` property, may be up to 15 minutes behind the actual time of synchronization. While device synchronization does occur in real time, the returned time stamp may lag behind.
@@ -86,9 +90,9 @@ For detailed information, see the following resources:
 
 - Instructions for your end-users to enroll a device in Basic Mobility and Security: [Enroll your mobile device using Basic Mobility and Security](https://support.microsoft.com/office/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
 
-### Using Third-Party Mobile Device Management Solutions
+### Using Third-Party Unified Endpoint Management Solutions
 
-Third-party mobile device management providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android.
+Third-party unified endpoint management providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android.
 
 Third-party providers can also deploy certain app configuration settings, like account setup, organization allowed accounts mode, and general app configuration settings, to Outlook for iOS and Android; for more information, please see [Deploying Outlook for iOS and Android app configuration settings](./outlook-for-ios-and-android-configuration-with-microsoft-intune.md).
 

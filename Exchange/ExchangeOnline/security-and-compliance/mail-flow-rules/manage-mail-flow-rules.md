@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.reviewer: 
 f1.keywords:

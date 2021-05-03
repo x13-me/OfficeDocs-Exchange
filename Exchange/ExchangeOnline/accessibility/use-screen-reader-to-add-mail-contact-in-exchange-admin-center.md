@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 723ab221-3abe-40ee-8143-eee45e9d0519
 ms.reviewer: 
 manager: serdars

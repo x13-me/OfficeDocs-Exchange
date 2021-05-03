@@ -3,7 +3,7 @@ localization_priority: Normal
 description: When you enable a user for UM and link them to a SIP URI dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains a SIP address for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 33f4f464-9baa-48af-bf5e-a0d55bb45f60
 ms.reviewer: 
 f1.keywords:

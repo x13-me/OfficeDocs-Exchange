@@ -3,7 +3,7 @@ localization_priority: Normal
 description: A basic overview of Outlook on the web in Exchange Online.
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c30ff7b8-0f12-455b-a70e-3447634f17ce
 ms.reviewer: 
 title: Outlook on the web in Exchange Online

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."

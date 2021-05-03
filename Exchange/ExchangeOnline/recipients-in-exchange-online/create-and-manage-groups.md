@@ -16,9 +16,9 @@ description: Create and manage groups in the new Exchange admin center.
 
 # Create and manage groups in the new Exchange admin center
 
-Use the new Exchange admin center (EAC) to create, modify, export or remove groups in your Exchange Online organization.
+Use the new Exchange admin center (EAC) to create, modify, export, or remove groups in your Exchange Online organization.
 
-There are three types of groups that can be used to distribute messages:
+There are four types of groups that can be used to distribute messages:
 
 - **Microsoft 365 group** (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a shared workspace for conversations, files, and calendars.
 
@@ -26,6 +26,8 @@ There are three types of groups that can be used to distribute messages:
   > **Microsoft 365 group** is the recommended group as it provides the teams a shared workspace to communicate, share files, appointments, emails, contacts and other mailbox items.
 
 - **Distribution list group** is used for sending emails/notifications to a group of people.
+
+- **Dynamic distribution list group** is used to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 
 - **Mail-enabled security group** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
