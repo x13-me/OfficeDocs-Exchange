@@ -2,6 +2,22 @@
 
 
 
+## Week of April 26, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/26/2021 | [Differences between the Classic admin center (Classic EAC) to the new admin center (new EAC)](/Exchange/changes-in-exchange-admin-center) | modified |
+| 4/26/2021 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
+| 4/26/2021 | [Classic EAC - Get to classic and features](/Exchange/features-in-classic-eac) | modified |
+| 4/26/2021 | [New EAC - Get to new EAC and Features](/Exchange/features-in-new-eac) | modified |
+| 4/26/2021 | [Manage permissions for recipients in Exchange Online](/Exchange/recipients-in-exchange-online/manage-permissions-for-recipients) | modified |
+| 4/29/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 4/29/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 4/29/2021 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
+| 4/29/2021 | [Data loss prevention](/Exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) | modified |
+
+
 ## Week of April 19, 2021
 
 
@@ -625,20 +641,3 @@
 | 3/30/2021 | [Procedures related to deployment](/Exchange/management/procedures-related-to-deployment) | modified |
 | 3/31/2021 | [Exchange Server hybrid deployments](/Exchange/exchange-hybrid) | modified |
 | 3/31/2021 | [Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid](/Exchange/hybrid-deployment/simplify-owa-url) | modified |
-
-
-## Week of March 22, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/22/2021 | [Enable or disable SMTP AUTH](/Exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) | modified |
-| 3/23/2021 | [Domain expiring insight in the new Exchange admin center (new EAC)](/Exchange/monitoring/mail-flow-insights/domain-expiry-notification-feature) | added |
-| 3/23/2021 | [Mail flow insights in the new EAC](/Exchange/monitoring/mail-flow-insights/mail-flow-insights) | modified |
-| 3/24/2021 | [How and when to decommission your on-premises Exchange servers in a hybrid deployment](/Exchange/decommission-on-premises-exchange) | modified |
-| 3/24/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
-| 3/24/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 3/26/2021 | [Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) | modified |
-| 3/26/2021 | [Procedures for Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules) | modified |
-| 3/26/2021 | [Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/client-access-rules?view=exchserver-2019) | modified |
-| 3/26/2021 | [Procedures for Client Access Rules in Exchange 2019](/Exchange/clients/client-access-rules/procedures-for-client-access-rules?view=exchserver-2019) | modified |

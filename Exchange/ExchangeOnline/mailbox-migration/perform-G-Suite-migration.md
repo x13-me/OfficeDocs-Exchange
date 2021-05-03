@@ -29,7 +29,7 @@ Before beginning your migration, review the following diagrams to understand how
 
 ![Original setup before G Suite migration](../media/gsuite-mig-original-setup.png)
 
-Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server were all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
+Prior to their migration, the MX record for the base "fabrikaminc.net" domain points to the Google Workspace tenant or mail server where all or most of Fabrikam, Inc.'s users are. Note that users have their primary email addresses at that domain.
 
 ![Before the G Suite migration begins](../media/gsuite-mig-before-migration.png)
 
@@ -371,7 +371,11 @@ During completion, another incremental sync is run to copy any changes that have
    > [!TIP]
    > See [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) for an explanation of all of the individual parameters you can use with this cmdlet.
 
-4. Start the migration batch.
+4. Run the following command to start the migration batch:
+
+   ```CSV
+   Start-MigrationBatch -Identity gmailBatch
+   ```
 
    > [!NOTE]
    > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
