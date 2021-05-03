@@ -103,7 +103,7 @@ Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMe
 
 In this configuration, the error is caused by either of the following issues on the connector from your on-premises Exchange organization to Exchange Online:
 
-- You don't have a connector from Office 365 to your organization's email server which has the **Connector Type** value **On-premises**.
+- You don't have a connector (from Office 365 to your organization's email server) that has the **Connector Type** value **On-premises**.
 
 - The connector from Office 365 to your organization's email server is scoped to one or more accepted domains.
 
