@@ -161,7 +161,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 3. Go to **Settings** \> **Domains**, select your domain (for example, contoso.com), and find the MX record.
 
-   The MX record will have data for **Points to address or value** which looks similar to `contoso-com.mail.protection.outlook.com`.
+   The MX record will have data for **Points to address or value** that looks similar to `contoso-com.mail.protection.outlook.com`.
 
 4. Make a note of the data of **Points to address or value** for the MX record, which we refer to as your MX endpoint.
 
@@ -340,7 +340,7 @@ In the following diagram, the application or device in your organization's netwo
 
 ![Shows how a multifunction printer connects to Microsoft 365 or Office 365 using SMTP relay.](../media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
 
-- The Microsoft 365 or Office 365 connector that you configure authenticates your device or application with Microsoft 365 or Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. The email address need not be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
+- The Microsoft 365 or Office 365 connector that you configure authenticates your device or application with Microsoft 365 or Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. It is not mandatory for the email address  to be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
 
 - Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This authentication method allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes and external recipients. Microsoft 365 or Office 365 SMTP relay is similar to direct send except that it can send mail to external recipients.
 
@@ -358,7 +358,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - **Connector**: Set up a connector in Exchange Online for email sent from your device or application.
 
-- **Port**: Port 25 is required and it must not be blocked on your network or by your ISP.
+- **Port**: Port 25 is required. Ensure this port is not blocked on your network or by your ISP.
 
 - **Licensing**: SMTP relay doesn't use a specific Microsoft 365 or Office 365 mailbox to send email. Therefore, the users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Microsoft 365 or Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This license is the least expensive and it allows you to send email via Microsoft 365 or Office 365.
 

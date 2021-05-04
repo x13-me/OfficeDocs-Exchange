@@ -136,7 +136,7 @@ To create a mail flow rule in EAC, perform the following steps:
    > [!IMPORTANT]
    > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that changes made in the connector from Office 365 to your organization's email server take time to replicate.
 
-4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the connector from Office 365 to your organization's email server which you created previously.
+4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the connector (from Office 365 to your organization's email server) that you created previously.
 
 You can choose more properties for the rule, such as the test mode and when to activate the rule.
 

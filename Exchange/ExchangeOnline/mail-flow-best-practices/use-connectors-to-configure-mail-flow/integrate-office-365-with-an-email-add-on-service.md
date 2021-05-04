@@ -47,7 +47,7 @@ The rest of this topic explains how to configure mail flow in Microsoft 365 or O
 
 - Estimated time to complete: 15 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -88,7 +88,7 @@ The **New connector** screen appears.
 
 6. Enter a descriptive name (for example, Office 365 to Contoso Signature Service) for the connector.
 
-7. Under **What do you want to do after connector is saved?**:
+7. Under **What do you want to do after connector is saved?**, perform the following tasks:
 
     - Choose **Turn it on**
     - Choose **Retain internal Exchange email headers (recommended)**
