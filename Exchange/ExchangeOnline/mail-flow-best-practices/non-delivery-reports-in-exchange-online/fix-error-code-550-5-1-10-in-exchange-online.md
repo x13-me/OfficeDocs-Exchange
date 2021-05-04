@@ -108,7 +108,7 @@ Microsoft 365 and Office 365 support multiple ways to forward messages automatic
 
 If the problem persists after performing these steps, ask the recipient to refer their email admin to the [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue) section below.
 
-#### Update, disable, or remove Inbox Rules forwarding
+#### Update, disable, or remove Inbox rules forwarding
 
 1. In Microsoft 365 or Office 365, sign in to your user account.
 
@@ -224,7 +224,7 @@ If you have a hybrid configuration with a Microsoft 365 or Office 365 connector 
 
 **New Exchange admin center (EAC)**
 
-1. Open the New Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+1. Open the New Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 2. Choose **Mail flow** \> **Accepted domains**. The **Accepted domains** screen appears.
 
@@ -242,7 +242,7 @@ The accepted's domain details screen appears.
 
 **Classic EAC**
 
-1. Open the Classic EAC. For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+1. Open the Classic EAC. For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 2. From the EAC, choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
 
