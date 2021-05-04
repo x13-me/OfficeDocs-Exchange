@@ -23,80 +23,154 @@ manager: serdars
 > [!NOTE]
 > This article does not apply to standalone Exchange Online Protection (EOP) organizations.
 
-Sometimes it makes sense to have a second set of eyes on a message before the message is delivered. As an Exchange Online admin, you can set this up. This process is called moderation, and the approver is called the moderator. Depending on which messages need approval, you can use one of two approaches:
+Sometimes it makes sense to have a second set of eyes on a message before the message is delivered. As an Exchange Online admin, you can set this up. This process is called _moderation_, and the approver of the message is called the _moderator_.
 
-- Change the distribution group properties
-- Create a mail flow rule
+There are two basic ways to do moderated mail flow in Exchange Online:
 
-This article explains:
+- **Require the approval of a moderator for messages sent to a specific recipient**: For instructions, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md)
 
-- [How to decide which approval approach to use](#how-to-decide-which-approval-approach-to-use)
-- [How the approval process works](#how-the-approval-process-works)
+- **Require approval for messages that match specific criteria**: You use mail flow rules (also known as transport rule) to specify the message criteria, which might include the message content, the message sender, or recipients. For instruction about how to create mail flow rules, and the conditions, exceptions, and actions that are available, see the following topics:
+  - [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md)
+  - [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md)
+  - [Mail flow rule actions in Exchange Server](../../../ExchangeServer/policy-and-compliance/mail-flow-rules/actions.md)
 
-To learn how to implement common scenarios, see [Common message approval scenarios](common-message-approval-scenarios.md).
+The rest of this article describes scenarios that might require moderation, and which method to use.
 
-## How to decide which approval approach to use
+## Message approval scenarios
 
-Here's a comparison of the two approaches to message approval.
+This section discusses examples of common scenarios that you can set up by using Exchange Online.
 
-<br>
+### Avoid mail storms to a large distribution group
 
-****
+**Summary**: Configure the distribution group as a moderated recipient.
 
-|What do you want to do?|Approach|First step|
-|---|---|---|
-|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
-|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a mail flow rule (also known as a transport rule) using the **Forward the message for approval** action. <p> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
-|
+To control messages that are sent to a large distribution group, you can require moderator approval for messages that are sent to the group. As long as the message properties don't determine whether moderation is required (all messages need approval), the simplest way to set this up is to configure the group as a moderated recipient.
 
-## How the approval process works
+In this example, all messages that are sent to the All Employees group must be approved, except if the sender is a member of the distribution group named Legal Team.
 
-When someone sends a message to a person or group that requires approval, if they're using Outlook on the web (formerly known as Outlook Web App), they're notified that their message might be delayed.
+- **Messages sent to this group have to be approved by a moderator**: Selected
+- **Group moderators**: Bonnie Kearney and Rob Young
+- **Senders who don't require message approval**: Legal Team
 
-![Message showing message approval notification](../../media/TA_Mod_Sender_Notification.png)
+![Message approval settings for a distribution group](../../media/TA_Mod_Scenario1_AllEmployes.png)
 
-The moderator receives an email with a request to approve or reject the message. The text of the message includes buttons to approve or reject the message, and the attachment includes the original message to review.
+For detailed instructions, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md)
 
-![Approval request message, including attachment](../../media/TA_Mod_Approval_Request.png)
+### Forward messages to a sender's manager for approval
 
- The moderator can take one of three actions:
+**Summary**: Use one mail flow rule with as many conditions or exceptions as required.
 
-![Workflow showing options for approving a message](../../media/TA_ModerationWorkflow.png)
+Here are some common types of messages that might require manager approval:
 
-1. If approved, the message goes to the original intended recipients. The original sender isn't notified.
+- Messages sent from a user to certain distribution groups or recipients
+- Messages sent to external users or partners
+- Message sent between two groups
+- Messages sent with specific content, such as the name of a specific customer
+- Messages sent by a trainee
 
-2. If rejected, a rejection message is sent to the sender. The moderator can add an explanation:
+To require that messages need to be sent to the sender's manager for approval, follow these steps:
 
-    ![Rejection notice, with comments from moderator](../../media/TA_Mod_Rejection.png)
+1. Create a mail flow rule using the **Send messages to a moderator** template.
 
-3. If the approver either deletes or ignores the approval message, an expiration message is sent to the sender. This happens after two days in Exchange Online, and after five days in Exchange Server. (In Exchange Server, you can change this time period).
+   ![Use the Send messages to a moderator template to create a new rule](../../media/TA_Mod_Scenario2_Template.png)
 
-The message that's waiting for approval gets temporarily stored in a system mailbox called the arbitration mailbox. Until the moderator decides to approve or reject the message, deletes the approval message, or lets the approval message expire, the original message is kept in the arbitration mailbox.
+2. Configure the action to send messages to the sender's manager for approval: **Do the following** \> **Forward to the sender's manager for approval**.
 
-## Questions and answers
+3. Configure the conditions that define the messages that require approval in **Apply this rule if**.
 
-### What's the difference between the approver and owner of a distribution group?
+Here's an example where all external messages sent by the trainee named Garth Fort require approval by their manager.
 
-The owner of a distribution group is responsible for managing the distribution group membership. For example, a person in IT might be the owner of a distribution group called All Employees, but only the Human Resources manager might be set up as the moderator. Also, messages that the owner sends to the distribution group do not need to be approved by a moderator.
+- **Apply this rule if** \> **The sender is** \> **Garth Fort**
 
-### What happens when the moderator or approver sends a message to the distribution group?
+  and
 
-The message goes directly to the group, bypassing the approval process.
+- **Apply this rule if** \> **The recipient is located** \> **Outside the organization**
+- **Do the following** \> **Forward to the sender's manager for approval**
 
-### What happens when only a subset of recipients needs approval?
+![Rule that forwards messages to the user's manager](../../media/TA_Mod_Scenario2_rule.png)
 
-You can send a message to a group of recipients where only a subset of the recipients requires approval. Consider a message that's sent to 12 recipients, one of which is a moderated distribution group. The message is automatically split into two copies. One message is delivered immediately to the 11 recipients that don't require approval, and the second message is submitted to the approval process for the moderated distribution group. If a message is intended for more than one moderated recipient, a separate copy of the message is automatically created for each moderated recipient and each copy goes through the appropriate approval process.
+> [!NOTE]
+> Some rule settings, including the ability to add multiple conditions or exceptions to the rule as in this example, are hidden by default. To see them, click **More options**.
 
-### What if my distribution group contains moderated recipients that require approval?
+### Set up a message approval chain
 
-A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup) cmdlet.
+**Summary**: Use multiple mail flow rules.
 
-### Is this process different if we have our own Exchange servers?
+You can require multiple levels of approval for messages. For example, you can require that messages to a specific customer be approved first by a customer relationship manager and then by a compliance officer, or you can require that expense reports be approved by two levels of managers.
 
-By default, one arbitration mailbox is used for each on-premises Exchange organization. If you have your own Exchange servers and need more arbitration mailboxes for load balancing, follow the instructions for adding arbitration mailboxes in [Manage and troubleshoot message approval](ttroubleshoot-message-approval.md). Arbitration mailboxes are system mailboxes and don't require an Exchange license.
+To create this type of multiple-level approval, create one mail flow rule for each level of approval. Each rule detects the same patterns in the messages, as follows:
 
-## Need more info?
+- The first rule forwards the message to the first moderator. After the first moderator approves the message, a second rule forwards the message to the second rule, and so on.
+- If all moderators in the chain approve the message, the original message is sent to the intended recipients.
+- If any of the moderators in the chain reject the approval request, the sender receives a rejection message.
+- If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online), the sender receives an expiration message.
 
-[Manage mail flow rules](manage-mail-flow-rules.md)
+The following example assumes that you have a customer named Blue Yonder Airlines, and you want both the customer relationship manager and the compliance officer to approve all messages that go to this customer.
 
-[Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+As shown in the following screenshot, you create two rules. The first rule goes to the first-level approver. The second rule goes to the second-level approver.
+
+![Two rules used for two levels of approval](../../media/TA_Mod_Scenario3_2rules.png)
+
+The first rule identifies all messages with the company name Blue Yonder Airlines in the subject or message, and it sends these messages to the internal customer relationship manager named Garret Vargas.
+
+- **Name**: Blue Yonder Airlines: Approval #1 Relationship Manager
+- **Priority**: Before the second rule.
+- **Apply this rule if** \> **The sender is located** \> **Inside the organization**.
+
+  and
+
+- **Apply this rule if** \> **The subject or boy matches** > 'B.Y.A' or 'BYA' or 'Blue Yonder Airlines' or 'Blue Yonder'.
+- **Do the following** \> **Forward the message for approval to** \> Garret Vargas.
+
+![Rule for first-level approver](../../media/TA_Mod_Scenario3_Rule1.png)
+
+The second rule sends these messages to the compliance officer, Tony Krijnen for approval:
+
+- **Name**: Blue Yonder Airlines: Approval #2 Compliance Manager
+- **Priority**: After the first rule.
+- **Apply this rule if** \> **The sender is located** \> **Inside the organization**.
+
+  and
+
+- **Apply this rule if** \> **The subject or boy matches** > 'B.Y.A' or 'BYA' or 'Blue Yonder Airlines' or 'Blue Yonder'.
+- **Do the following** \> **Forward the message for approval to** \> Tony Krijnen.
+
+![Second-level approval rule, with same criteria](../../media/TA_Mod_Scenario3_Rule2.png)
+
+### Forward messages that match one of several criteria
+
+**Summary**: Use multiple mail flow rules.
+
+Within a mail flow rule, all conditions in the rule must be true for the rule to match (Condition1 AND Condition2). If you want the same action applied for multiple conditions (Condition1 OR Condition2), you need to create a separate rule for each condition.
+
+To do this, on the **Rules** page in EAC, create a rule for the first condition. Then select the rule, select **Copy**, and change the conditions in the new rule to match the second condition.
+
+For approval scenarios, be careful when you create multiple rules with the same action so the same message isn't sent to the moderator multiple times. Add an exception to the second rule so it ignores messages that matched the first rule.
+
+For example, you want to send a message to a moderator if the message has "sales quote" in the subject line or message body **or** in the content of any attachments.
+
+You need two rules. If the first rule checks the subject line or message body, the second rule that checks the attachment content needs an exception that checks for "sales quote" in the subject line or message body (the condition of the first rule).
+
+- **Name**: Sales quote approval: Rule 2
+- **Priority**: Lower than the first rule.
+- **Apply this rule if** \> **Any attachment's content includes** \> Sales quote.
+- **Do the following** \> **Forward to the sender's manager for approval**
+- **Except if** \> **The subject or body matches** \> Sales quote.
+
+![Use an exception for the second rule](../../media/TA_Mod_Scenario4.png)
+
+> [!NOTE]
+> As described previously, some rule settings, including the ability to add multiple conditions or exceptions to the rule as in this example, are hidden by default. To see them, click **More options**.
+
+### Forward a message that contains sensitive information
+
+**Summary**: Use a mail flow rule.
+
+If you have the [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md)(DLP) feature, many types of sensitive information are predefined. With DLP, you see that the message contains a sensitive information condition. Whether or not you have DLP, you can create conditions that identify specific sensitive information patterns that are unique to your organization.
+
+Here's an example where messages that contain a credit card number require approval.
+
+- **Apply this rule if** \> **The message contains sensitive information** \> **Credit Card Number**
+- **Do the following** \> **Forward to the sender's manager for approval**
+
+![Rule that forwards mail with sensitive information](../../media/TA_Mod_Scenario5.png)

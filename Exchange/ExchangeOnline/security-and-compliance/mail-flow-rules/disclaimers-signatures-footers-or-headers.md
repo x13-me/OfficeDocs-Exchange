@@ -90,9 +90,7 @@ New-TransportRule -Name "March Special" -Enabled $true -SentToScope NotInOrganiz
 To verify that you've successfully created a disclaimer, and that the disclaimer works as expected, do the following steps:
 
 - Send yourself both a plain text email and an HTML email that match the conditions and exceptions you defined, and verify that the text appears as you intended.
-
 - If you added an exception to avoid adding the disclaimer to successive messages in a conversation, forward your test messages to yourself to make sure that they don't get an extra copy of the disclaimer.
-
 - Send yourself some messages that should not get the disclaimer and verify that the disclaimer is not included.
 
 ## For more information

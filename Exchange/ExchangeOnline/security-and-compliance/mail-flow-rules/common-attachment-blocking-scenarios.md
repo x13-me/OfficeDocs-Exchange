@@ -20,22 +20,20 @@ manager: serdars
 
 # Common attachment blocking scenarios for mail flow rules in Exchange Online
 
-In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might need to block or reject certain types of messages in order to meet legal or compliance requirements, or to meet specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might need to block or reject certain types of messages in order to meet legal or compliance requirements, or to meet specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules).
 
-For additional examples showing how to block specific attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
+**Notes**:
 
-The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) to add filters. In the Exchange Online portal, browse to **Protection**, and then select **Malware Filter**.
+- For additional examples showing how to block specific attachments by using mail flow rules, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
 
-To get started implementing any of these scenarios to block certain message types:
+- [Anti-malware polices EOP](/microsoft-365/security/office-365-security/anti-malware-protection#anti-malware-policies) allow you to block specific file types by turning on and configuring the **common attachment types** filter. For instructions, see [Configure anti-malware policies in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+
+To get started using mail flow rules to block certain message types, do the following steps:
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
-
 2. Go to **Mail flow** \> **Rules**.
-
-3. Click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
-
+3. Click **New** (![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
 4. In the **Name** box, specify a name for the rule, and then click **More options**.
-
 5. Select the conditions and actions you want.
 
 > [!NOTE]
@@ -105,5 +103,3 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 ## See also
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
-
-[Mail flow rules (Exchange Online Protection)](/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

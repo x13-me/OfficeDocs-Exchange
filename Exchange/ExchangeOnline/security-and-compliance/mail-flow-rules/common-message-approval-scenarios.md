@@ -57,7 +57,7 @@ Here's an example where all messages sent out by a trainee, Garth Fort, to recip
 
 ![Rule that forwards messages to the user's manager](../../media/TA_Mod_Scenario2_rule.png)
 
-To get started, go to EAC \> **Mail flow** \> **Rules**, and create a new rule using the **Send messages to a moderator** template. To open the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
+To get started, open the EAC and go to **Mail flow** \> **Rules**, and create a new rule using the **Send messages to a moderator** template. To open the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 > [!IMPORTANT]
 > Some conditions and actions, including forwarding to the sender's manager, are hidden by default in the **New rule** page. To see all the conditions and actions, select **More options**.

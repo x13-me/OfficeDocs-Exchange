@@ -111,8 +111,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md)
 
-[Manage mail flow rules](manage-mail-flow-rules.md)
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
-
-[Encryption](/microsoft-365/compliance/encryption)
+[Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)

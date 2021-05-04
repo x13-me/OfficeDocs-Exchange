@@ -78,17 +78,17 @@ Set-DistributionGroup "All Employees" -ArbitrationMailbox "Arbitration Mailbox02
 If you choose to disable moderation for the recipients, run the following command:
 
 ```PowerShell
-Set-<RecipientType> <Identity> -ModerationEanbled $false
+Set-<RecipientType> <Identity> -ModerationEnabled $false
 ```
 
 For example, to disable moderation for the mailbox named Human Resources, run the following command:
 
 ```PowerShell
-Set-Mailbox "Human Resources" -ModerationEanbled $false
+Set-Mailbox "Human Resources" -ModerationEnabled $false
 ```
 
 ## How do you know this worked?
 
 The procedure was successful if you can delete the arbitration mailbox without receiving the error that it's being used.
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+Having problems? Ask for help in the Exchange forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange).

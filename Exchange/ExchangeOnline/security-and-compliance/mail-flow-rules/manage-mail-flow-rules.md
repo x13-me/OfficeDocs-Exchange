@@ -27,15 +27,7 @@ This article shows you how to [create](#create-a-mail-flow-rule), [copy](#create
 > [!TIP]
 > To make sure your rules work the way you expect, be sure to thoroughly test each rule and interactions between rules.
 
-Interested in scenarios where these procedures are used? See the following articles:
-
-- [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
-- [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md)
-- [Common message approval scenarios](common-message-approval-scenarios.md)
-- [Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md)
-- [Best practices for configuring mail flow rules](configuration-best-practices.md)
-- [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
-- [Define rules to encrypt email messages](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+Interested in scenarios where these procedures are used? See [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
 ## What do you need to know before you begin?
 
@@ -52,7 +44,7 @@ Interested in scenarios where these procedures are used? See the following artic
 
 ## Create a mail flow rule
 
-You can create a mail flow rule by setting up a Data Loss Prevention (DLP) policy, creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or Exchange Online PowerShell.
+You can create a mail flow rule by setting up a Data Loss Prevention (DLP) policy (in Exchange Online only; not in standalone EOP), creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or PowerShell.
 
 > [!NOTE]
 > After you create or modify a mail flow rule, it can take up to 30 minutes or more in some cases for the new or updated rule to be applied to email.

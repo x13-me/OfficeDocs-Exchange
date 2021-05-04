@@ -20,7 +20,7 @@ manager: serdars
 
 # Use mail flow rules to inspect message attachments in Exchange Online
 
-In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can inspect email attachments by setting up mail flow rules (also known as transport rules). Mail flow rules allow you to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using mail flow rules:
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can inspect email attachments by setting up mail flow rules (also known as transport rules). Mail flow rules allow you to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages based on the content or characteristics of the attachments. Here are some attachment-related tasks you can do by using mail flow rules:
 
 - Search for files with text that matches a pattern you specify, and add a disclaimer to the end of the message.
 - Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it's delivered.

@@ -30,17 +30,7 @@ For steps to create, copy, and manage mail flow rules, see [Manage mail flow rul
 
 For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
 
-To implement specific messaging policies by using mail flow rules, see these articles:
-
-- [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
-- [Enable message encryption and decryption](enable-encryption-and-decryption.md)
-- [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
-- [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
-- [Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md)
-- [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md)
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
-- [Common message approval scenarios](common-message-approval-scenarios.md)
-- [Define rules to encrypt email messages](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email))
+To implement specific messaging policies by using mail flow rules, see [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md).
 
 ## Mail flow rule components
 
@@ -131,10 +121,6 @@ There are several types of messages that pass through an organization. The follo
 ## For more information
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
-
-[Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md)
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 [Manage message approval](manage-message-approval.md)
 
