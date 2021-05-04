@@ -103,7 +103,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 - **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25.
 
-- **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Microsoft 365 or Office 365 server, as IP Addresses are not supported.
+- **DNS**: Use the DNS name smtp.office365.com. Do not use an IP address for the Microsoft 365 or Office 365 server, as IP Addresses are not supported.
 
 > [!NOTE]
 > For information about TLS, see [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
@@ -273,7 +273,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 3. Go to **Settings** \> **Domains**, select your domain (for example, contoso.com), and find the MX record.
 
-   The MX record will have data for **Points to address or value** which looks similar to `contoso-com.mail.protection.outlook.com`.
+   The MX record will have data for **Points to address or value** that looks similar to `contoso-com.mail.protection.outlook.com`.
 
 4. Make a note of data of **Points to address or value** for the MX record, which we refer to as your MX endpoint.
 
