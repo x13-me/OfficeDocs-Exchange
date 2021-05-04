@@ -192,7 +192,7 @@ In the following diagram, the application or device in your organization's netwo
 You can configure your device to send email direct to Microsoft 365 or Office 365. Use direct send to relay email to recipients with Microsoft 365 or Office 365 mailboxes in your organization. Direct send also works for external recipients with mailboxes in Microsoft 365 or Office 365. If your device uses direct send to try to relay an email for a recipient who doesn't have a Microsoft 365 or Office 365 mailbox, the email will be rejected.
 
 > [!NOTE]
-> If your device or application has the ability to act as a email server to deliver messages to Microsoft 365 or Microsoft 365 or Office 365 as well as other email providers, there are no Microsoft 365 or Office 365 settings needed for this scenario. For more information, consult your device or application instructions.
+> If your device or application has the ability to act as a email server to deliver messages to Microsoft 365 or Microsoft 365 or Office 365 as well as other email providers, there are no Microsoft 365 or Office 365 settings needed for this scenario. For more information, see your device or application instructions.
 
 ### Features of direct send
 
@@ -332,7 +332,7 @@ f. Click **Save**.
 
 If your devices or applications are capable of using a certificate for mail flow, you can configure a certificate-based connector to relay email through Microsoft 365 or Office 365.
 
-To do this, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](/exchange/troubleshoot/connectors/office-365-notice).
+To do this task, verify the subject name on the certificate used by the sending device or application. The common name (CN) or subject alternative name (SAN) in the certificate should contain a domain name that you have registered in Microsoft 365 or Office 365. Also, you must create a certificate-based connector in Microsoft 365 or Office 365 with this same domain name to accept and relay emails coming from these devices, applications, or any other on-premises server. For more information about this method, see [important notice for email customers who have configured connectors](/exchange/troubleshoot/connectors/office-365-notice).
 
 ### How Microsoft 365 or Office 365 SMTP relay works
 
@@ -340,9 +340,9 @@ In the following diagram, the application or device in your organization's netwo
 
 ![Shows how a multifunction printer connects to Microsoft 365 or Office 365 using SMTP relay.](../media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
 
-- The Microsoft 365 or Office 365 connector that you configure authenticates your device or application with Microsoft 365 or Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. The email address doesn't need to be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
+- The Microsoft 365 or Office 365 connector that you configure authenticates your device or application with Microsoft 365 or Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. The email address need not be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
 
-- Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes and external recipients. Microsoft 365 or Office 365 SMTP relay is similar to direct send except that it can send mail to external recipients.
+- Microsoft 365 or Office 365 SMTP relay uses a connector to authenticate the mail sent from your device or application. This authentication method allows Microsoft 365 or Office 365 to relay those messages to your own mailboxes and external recipients. Microsoft 365 or Office 365 SMTP relay is similar to direct send except that it can send mail to external recipients.
 
 - Due to the added complexity of configuring a connector, direct send is recommended over Microsoft 365 or Office 365 SMTP relay, unless you must send email to external recipients. To send email using Microsoft 365 or Office 365 SMTP relay, your device or application server must have a static IP address or address range. You can't use SMTP relay to send email directly to Microsoft 365 or Office 365 from a third-party hosted service, such as Microsoft Azure. For more information, see [Troubleshoot outbound SMTP connectivity issues in Azure](/azure/virtual-network/troubleshoot-outbound-smtp-connectivity).
 
@@ -356,11 +356,11 @@ In the following diagram, the application or device in your organization's netwo
 
 - **Static IP address or address range**: Most devices or applications are unable to use a certificate for authentication. To authenticate your device or application, use one or more static IP addresses that are not shared with another organization.
 
-- **Connector**: You must set up a connector in Exchange Online for email sent from your device or application.
+- **Connector**: Set up a connector in Exchange Online for email sent from your device or application.
 
-- **Port**: Port 25 is required and must not be blocked on your network or by your ISP.
+- **Port**: Port 25 is required and it must not be blocked on your network or by your ISP.
 
-- **Licensing**: SMTP relay doesn't use a specific Microsoft 365 or Office 365 mailbox to send email. This means that users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Microsoft 365 or Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Microsoft 365 or Office 365.
+- **Licensing**: SMTP relay doesn't use a specific Microsoft 365 or Office 365 mailbox to send email. Therefore, the users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Microsoft 365 or Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This license is the least expensive and it allows you to send email via Microsoft 365 or Office 365.
 
 ### Limitations of Microsoft 365 or Office 365 SMTP relay
 
@@ -394,7 +394,7 @@ Here's a comparison of each configuration option and the features they support.
 
 ## Use your own email server to send email from multifunction devices and applications
 
-If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following articles:
+If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this configuration depends on your on-premises email server. For Exchange Server, see the following articles:
 
 - [Allow anonymous relay on Exchange servers](../../ExchangeServer/mail-flow/connectors/allow-anonymous-relay.md)
 
