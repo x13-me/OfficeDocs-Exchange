@@ -48,7 +48,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 4. Click **Create** to save your changes and create the shared mailbox.
 
-5. Under **Next steps** section, Click the **Add users to this mailbox** link.
+5. Under the **Next steps** section, click the **Add users to this mailbox** link.
 
 6. To grant Full Access or Send As permissions, click **Add users** button, and then select or search the users you want to grant permissions to. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
