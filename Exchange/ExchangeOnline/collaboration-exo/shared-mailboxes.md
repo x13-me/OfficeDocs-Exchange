@@ -61,7 +61,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**. Select the shared mailbox, and then click **Manage mailbox delegation** ![Delegation icon](../media/new-eac-shared-mailbox-delegation.png).
 
-2. To grant or remove Full Access (Read and manage) and Send As permissions, click **Edit** next to the permision type.
+2. To grant or remove Full Access (Read and manage) and Send As permissions, click **Edit** next to the permission type.
 
 3. On the Manage mailbox delegation page, you can remove permissions already added by clicking on the users listed (if any) or grant the permission by clicking **Add permissions** and then select the users you want to grant permissions to.
 
