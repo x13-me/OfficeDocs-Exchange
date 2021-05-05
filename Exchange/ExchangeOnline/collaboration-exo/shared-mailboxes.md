@@ -50,7 +50,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 5. Under the **Next steps** section, click the **Add users to this mailbox** link.
 
-6. To grant Full Access or Send As permissions, click **Add users** button, and then select or search the users you want to grant permissions to. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
+6. To grant Full Access or Send As permissions, click the **Add users** button, and then select or search the users you want to grant permissions to. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
