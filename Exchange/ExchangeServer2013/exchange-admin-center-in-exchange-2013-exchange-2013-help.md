@@ -23,7 +23,7 @@ One advantage a web-based EAC provides is that you can partition Internet and in
 
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](../ExchangeOnline/exchange-admin-center.md).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
 
 ## Accessing the EAC
 

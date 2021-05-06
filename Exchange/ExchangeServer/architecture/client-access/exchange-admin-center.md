@@ -24,7 +24,7 @@ The Exchange admin center (EAC) is the web-based management console in Exchange 
 
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](../../../ExchangeOnline/exchange-admin-center.md).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
 
 ## Accessing the EAC
 <a name="access"> </a>
