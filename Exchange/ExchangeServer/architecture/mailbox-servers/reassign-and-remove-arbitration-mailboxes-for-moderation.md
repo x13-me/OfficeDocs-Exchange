@@ -11,7 +11,7 @@ f1.keywords:
 title: Reassign and remove arbitration mailboxes that are used for moderated recipients
 ms.collection: exchange-server
 audience: ITPro
-ms.service: exchange-online
+ms.prod: exchange-server-it-pro
 manager: serdars
 ROBOTS: NOINDEX, NOFOLLOW
 

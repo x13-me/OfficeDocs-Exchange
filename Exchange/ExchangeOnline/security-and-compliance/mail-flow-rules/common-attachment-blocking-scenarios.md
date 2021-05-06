@@ -26,7 +26,7 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 
 - For additional examples showing how to block specific attachments by using mail flow rules, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
 
-- [Anti-malware polices EOP](/microsoft-365/security/office-365-security/anti-malware-protection#anti-malware-policies) allow you to block specific file types by turning on and configuring the **common attachment types** filter. For instructions, see [Configure anti-malware policies in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+- [Anti-malware polices EOP](/microsoft-365/security/office-365-security/anti-malware-protection#anti-malware-policies) allow you to block specific file types by turning on and configuring the **common attachment types** filter. For instructions, see [Configure anti-malware policies in EOP](/microsoft-365/security/office-365-security/configure-anti-malware-policies).
 
 To get started using mail flow rules to block certain message types, do the following steps:
 
