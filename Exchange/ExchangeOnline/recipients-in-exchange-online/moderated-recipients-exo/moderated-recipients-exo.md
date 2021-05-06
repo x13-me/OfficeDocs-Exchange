@@ -77,4 +77,4 @@ A: A distribution group can include moderated recipients that also require appro
 
 ### Q: Is this process different if we have our own Exchange servers?
 
-A: By default, one arbitration mailbox is used for each on-premises Exchange organization. If you have your own Exchange servers and need more arbitration mailboxes for load balancing, follow the instructions for adding arbitration mailboxes in [Manage and troubleshoot message approval](ttroubleshoot-message-approval.md). Arbitration mailboxes are system mailboxes and don't require an Exchange license.
+A: By default, one arbitration mailbox is used for each on-premises Exchange organization. If you have your own Exchange servers and need more arbitration mailboxes for load balancing, follow the instructions for adding arbitration mailboxes in [Reassign and remove arbitration mailboxes that are used for moderated recipients](/exchange/architecture/mailbox-servers/reassign-and-remove-arbitration-mailboxes-for-moderation). Arbitration mailboxes are system mailboxes and don't require an Exchange license.
