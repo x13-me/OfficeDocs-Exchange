@@ -131,7 +131,7 @@ You need two rules. If the first rule checks the subject line or message body, t
 
 ## Forward a message that contains sensitive information
 
-If you have the [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md)(DLP) feature, many types of sensitive information are predefined. With DLP, you see that the message contains a sensitive information condition. Whether or not you have DLP, you can create conditions that identify specific sensitive information patterns that are unique to your organization.
+If you have the [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) (DLP) feature, many types of sensitive information are predefined. With DLP, you see that the message contains a sensitive information condition. Whether or not you have DLP, you can create conditions that identify specific sensitive information patterns that are unique to your organization.
 
 Here's an example where messages that contain a credit card number require approval.
 
