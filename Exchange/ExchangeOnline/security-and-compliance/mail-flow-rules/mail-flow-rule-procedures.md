@@ -24,35 +24,33 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 
 To learn about concepts and objectives for mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
-## Mail flow rule procedures for features in Exchange Online and standalone EOP
+## Mail flow rule procedures for anti-spam features in Exchange Online and standalone EOP
 
-[Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md): Learn how to use mail flow rules to block all attachments.
+[Use mail flow rules for attachment blocking scenarios](common-attachment-blocking-scenarios.md): Learn how to use mail flow rules to block all attachments.
 
 [Use mail flow rules to inspect message attachments](inspect-message-attachments.md): Learn how to use mail flow rule conditions that allow you to inspect the content of message attachments.
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md): Learn how to set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using mail flow rules.
-
-[Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md): Information to help you make sure messages are sent to an inbox instead of the **Clutter** folder.
-
-[Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md): Information to help you comply with your organization's email policies.
-
-[Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft): Receive copies of messages that users report as junk, not junk or phishing to Microsoft.
 
 [Use mail flow rules to set the spam confidence level (SCL) in messages](/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages): Learn how to use mail flow rules to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering.
 
 [Use mail flow rules to filter bulk email](/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering): Examples describing how to mark messages that contain specific bulk indicator content as spam.
 
+[Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft): Receive copies of messages that users report as junk, not junk or phishing to Microsoft.
+
+## Mail flow rule procedures for other features in Exchange Online and standalone EOP
+
+[Organization-wide message disclaimers, signatures, footers, or headers](disclaimers-signatures-footers-or-headers.md): Learn how to set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using mail flow rules.
+
+[Use mail flow rules so messages can bypass Clutter](use-rules-to-bypass-clutter.md): Information to help you make sure messages are sent to an inbox instead of the **Clutter** folder.
+
+[Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md): Information to help you comply with your organization's email policies.
+
 ### Mail flow rule procedures for features in Exchange Online only
 
-[Common message approval scenarios in Exchange Online](common-message-approval-scenarios.md):
-
-[Manage message approval](manage-message-approval.md): Information to help you create moderated distribution groups, and forward messages matching a wide variety of criteria to specific approvers.
-
-[Manage and troubleshoot message approval in Exchange Online](ttroubleshoot-message-approval.md):
+[Use mail flow rules for message approval scenarios in Exchange Online](common-message-approval-scenarios.md): Use mail flow rules instead of enabling moderation on recipients to meet message approval scenarios.
 
 [Use mail flow rules to automatically add meetings to calendars in Exchange Online](use-rules-to-add-meetings.md): Use the Direct to Calendar feature in Exchange Online to add meetings directly to calendars in Exchange Online.
 
-[Define rules to encrypt email messages](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email): Learn how to use mail flow rules to encrypt messages using Office 365 Message Encryption (OME).
+[Define rules to encrypt email messages in Exchange Online](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email): Learn how to use mail flow rules to encrypt messages using Office 365 Message Encryption (OME).
 
 ### For more information
 
@@ -62,6 +60,6 @@ To learn about concepts and objectives for mail flow rules, see [Mail flow rules
 
 [Best practices for configuring mail flow rules in Exchange Online](configuration-best-practices.md)
 
-[Test a mail flow rule](test-mail-flow-rules.md)
+[Test mail flow rules in Exchange Online](test-mail-flow-rules.md)
 
 [Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md)

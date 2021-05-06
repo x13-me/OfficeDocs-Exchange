@@ -28,7 +28,7 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 - Check for attachments that exceed a certain size and then notify the sender of the issue, if you choose to prevent the message from being delivered.
 - Check whether the properties of an attached Office document match the values that you specify. With this condition, you can integrate the requirements of your mail flow rules and DLP policies with a third-party classification system, such as SharePoint or the Windows Server File Classification Infrastructure (FCI).
 - Create notifications that alert users if they send a message that has matched a mail flow rule.
-- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md).
+- Block all messages containing attachments. For examples, see [Use mail flow rules for attachment blocking scenarios in Exchange Online](common-attachment-blocking-scenarios.md).
 
 > [!NOTE]
 > All of these conditions will scan compressed archive attachments.

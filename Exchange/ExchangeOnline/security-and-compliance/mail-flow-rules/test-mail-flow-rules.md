@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Test a mail flow rule in Exchange Online
+# Test mail flow rules in Exchange Online
 
 In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you should test new mail flow rules (also known as transport rules) before you turn them on. This way, if you accidentally create a condition that doesn't do exactly what you want or interacts with other rules in unexpected ways, you won't have any unintended consequences.
 

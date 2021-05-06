@@ -24,13 +24,13 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 
 ## Test your rules
 
-To make sure unexpected things don't happen to email messages, and to make sure you're really meeting the business, legal, or compliance intentions of your rule, be sure to test it thoroughly. There are many options, and rules can interact with each other, so it's important to test messages that you expect both will match the rule and won't match the rule in case you inadvertently made a rule too general. To learn all the options for testing rules, see [Test a mail flow rule](test-mail-flow-rules.md).
+To make sure unexpected things don't happen to email messages, and to make sure you're really meeting the business, legal, or compliance intentions of your rule, be sure to test it thoroughly. There are many options, and rules can interact with each other, so it's important to test messages that you expect both will match the rule and won't match the rule in case you inadvertently made a rule too general. To learn all the options for testing rules, see [Test mail flow rules in Exchange Online](test-mail-flow-rules.md).
 
 ## Scope your rule
 
 Make sure your rule applies only to the messages you intend it to. For example:
 
-- **Restrict a rule to messages either coming into or going out of the organization**: By default, a new rule applies to messages that are sent by **and** received by people in your organization. So if you want the rule to apply only one way, be sure to specify that in the conditions for the rule. For an example, see [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
+- **Restrict a rule to messages either coming into or going out of the organization**: By default, a new rule applies to messages that are sent by **and** received by people in your organization. So if you want the rule to apply only one way, be sure to specify that in the conditions for the rule. For examples, see [Use mail flow rules for attachment blocking scenarios in Exchange Online](common-attachment-blocking-scenarios.md)
 - **Restrict a rule based on the sender's or receiver's domain**: By default, a new rule applies to messages sent from or received by any domain. Sometimes you want a rule to apply to all domains except for one, or to just one domain. See [Create blocked sender lists in EOP](/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365).
 
 For a complete list of all the conditions and exceptions that are available for mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
@@ -41,7 +41,7 @@ Sometimes it takes two rules to do what you want. Mail flow rules are processed 
 
 If you use two rules like this, be sure that the conditions are identical. For example:
 
-- [Set up a message approval chain](common-message-approval-scenarios.md#example-3-set-up-a-message-approval-chain)
+- [Set up a message approval chain](common-message-approval-scenarios.md#set-up-a-message-approval-chain)
 - [Modify the subject line for notifications](common-attachment-blocking-scenarios.md#example-3-modify-the-subject-line-for-notifications)
 
 ## Don't repeat an action on every email in a conversation

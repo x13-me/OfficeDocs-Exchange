@@ -26,7 +26,7 @@ Mail flow rules are similar to the Inbox rules that are available in Outlook and
 
 This article explains the [components](#mail-flow-rule-components) of mail flow rules, and [how they work](#how-mail-flow-rules-are-applied-to-messages).
 
-For steps to create, copy, and manage mail flow rules, see [Manage mail flow rules](manage-mail-flow-rules.md). For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](test-mail-flow-rules.md) and [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md) (policy tips aren't available in standalone EOP).
+For steps to create, copy, and manage mail flow rules, see [Manage mail flow rules](manage-mail-flow-rules.md). For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test mail flow rules in Exchange Online](test-mail-flow-rules.md) and [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md) (policy tips aren't available in standalone EOP).
 
 For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports to view data about malware, spam, and rule detections](../../monitoring/use-mail-protection-reports.md).
 
@@ -78,7 +78,7 @@ The following table describes the rule properties that are available in mail flo
 |---|---|---|
 |**Priority**|_Priority_|Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules). <p> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority). <p> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules. <p> For more information, see [Set the priority of a mail flow rule](manage-mail-flow-rules.md#set-the-priority-of-a-mail-flow-rule).|
 |**Audit this rule with severity level**|_SetAuditSeverity_|Sets the severity level of the incident report and the corresponding entry that's written to the message tracking log when messages violate DLP policies. Valid values are DoNotAudit, Low, Medium, and High.|
-|**Mode**|_Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <p> Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md). <p>  For more information about the modes, see [Test a mail flow rule](test-mail-flow-rules.md).|
+|**Mode**|_Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <p> Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](../../security-and-compliance/data-loss-prevention/policy-tips.md). <p>  For more information about the modes, see [Test mail flow rules in Exchange Online](test-mail-flow-rules.md).|
 |**Activate this rule on the following date** <p> **Deactivate this rule on the following date**|_ActivationDate_ <br/> _ExpiryDate_|Specifies the date range when the rule is active.|
 |**On** check box selected or not selected|New rules:_Enabled_ parameter on the **New-TransportRule** cmdlet. <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets. <p> The value is displayed in the **State** property of the rule.|You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings.|
 |**Defer the message if rule processing doesn't complete**|_RuleErrorAction_|You can specify how the message should be handled if the rule processing can't be completed. By default, the rule will be ignored, but you can choose to resubmit the message for processing.|
@@ -121,8 +121,6 @@ There are several types of messages that pass through an organization. The follo
 ## For more information
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
-
-[Manage message approval](manage-message-approval.md)
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
