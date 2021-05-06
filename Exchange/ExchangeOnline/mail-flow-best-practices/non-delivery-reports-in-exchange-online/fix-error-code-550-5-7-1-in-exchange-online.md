@@ -26,7 +26,7 @@ description: "Learn how to fix email issues for error code 5.7.1 (and also 5.7.0
 
 It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 5.7.1 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). This information also applies to error codes 5.7.0 through 5.7.999.
 
-|||||
+|Icon|Message|Icon|Message|
 |---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this)|
 
@@ -108,7 +108,31 @@ When the recipient is a mail-enabled public folder in your Exchange Online organ
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
+**In New Exchange admin center (EAC)**
+
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+
+2. Navigate to **Public folders** \> **Public folders**.
+
+3. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+
+4. Click **Mail flow settings**.
+
+5. Under **Message Delivery Restrictions** \> **Accept messages from**, perform the following tasks:
+
+    - Clear the check box for **Require that all senders are authenticated**.
+
+    - Select **All senders**.
+   
+:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configures all the senders to send messages to the public folder":::
+    
+6. Click **Save**.
+
+**In Classic EAC**
+
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
 2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
@@ -164,7 +188,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
   1. Open the Microsoft 365 admin center at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
 
-  2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
+  2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. Select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
 
      - **Delivery**: If **Route mail through smart hosts** is selected, confirm the correct IP address or FQDN is specified. If **MX record associated with the recipient domain** is selected, confirm the MX record for the domain points to the correct mail server.
 
