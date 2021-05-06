@@ -22,19 +22,19 @@ manager: serdars
 
 If you want to be sure that you receive particular messages, you can create a mail flow rule (also known as a transport rule) that makes sure that these messages bypass your Clutter folder. Check out [Use Clutter to sort low-priority messages in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) for more info on Clutter.
 
-For additional management tasks related to mail flow rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](/powershell/module/exchange/new-transportrule) PowerShell topic. If you're new to Exchange Online PowerShell, check out [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+For additional management tasks related to mail flow rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](/powershell/module/exchange/new-transportrule) PowerShell article. If you're new to Exchange Online PowerShell, check out [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
 - For more information about opening and using the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 ## Use the Exchange admin center to create a mail flow rule to bypass the clutter folder
 
@@ -61,7 +61,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 ## How do you know this worked?
 
-You can check email message headers to see if the email messages are landing in the Inbox due to the Clutter mail flow rule bypass. Pick an email message from a mailbox in your organization that has the Clutter bypass mail flow rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassClutter: true** header. This means the bypass is working. Check out the [View the internet header information for an email message](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c) topic for info on how to find the header information.
+You can check email message headers to see if the email messages are landing in the Inbox due to the Clutter mail flow rule bypass. Pick an email message from a mailbox in your organization that has the Clutter bypass mail flow rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassClutter: true** header. This means the bypass is working. Check out the [View the internet header information for an email message](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c) article for info on how to find the header information.
 
 > [!NOTE]
 > Calendar items (accepted, sent, or declined meetings notifications) won't contain this header.
