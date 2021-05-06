@@ -814,6 +814,21 @@
       "source_path": "exchange/exchangeonline/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders.md",
       "redirect_url": "/exchange/collaboration/public-folders/migrate-to-exchange-online",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/manage-message-approval.md",
+      "redirect_url": "/exchange/recipients-in-exchange-online/moderated-recipients-exo/moderated-recipients-exo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/recipients-in-exchange-online/configure-a-moderated-recipient.md",
+      "redirect_url": "/exchange/recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval.md",
+      "redirect_url": "/exchange/architecture/mailbox-servers/reassign-and-remove-arbitration-mailboxes-for-moderation",
+      "redirect_document_id": false
     }
 ]
 }
