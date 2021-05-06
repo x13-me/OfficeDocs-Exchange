@@ -40,11 +40,18 @@ For additional management tasks related to mail flow rules, check out [Mail flow
 
 This example allows all messages with title "Meeting" to bypass clutter.
 
-1. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then choose **Create a new rule...**.
+1. In the EAC, go to **Mail flow** \> **Rules**.
+
+2. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+
+3. In the **New rule** page that opens, configure the following settings:
+   - **Name**: Enter something descriptive. For example, Bypass Clutter if the subject contains "meeting".
+   - **Apply this rule if** \> **The subject includes** \> meeting
+   - **Do the following** \> **Set the message header to this value** \> X-MS-Exchange-Organization-BypassClutter: true.
 
    ![Art example: If subject contains meeting, bypass clutter](../../media/75957aa4-4b2a-4142-92ff-07f8ccc64d82.png)
 
-2. After you're done creating the new rule, click **Save** to start the rule.
+4. When you're finished, click **Save**.
 
 ## Use Exchange Online PowerShell to create a mail flow rule to bypass the clutter folder
 
