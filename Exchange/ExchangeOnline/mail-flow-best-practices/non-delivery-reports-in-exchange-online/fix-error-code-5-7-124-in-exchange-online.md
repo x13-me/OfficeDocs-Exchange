@@ -80,9 +80,7 @@ If you decide that you don't need to restrict the message senders to this group,
 Groups with more than 5,000 members have the following restrictions automatically applied to them:
 
 - Senders to the group must be members of the group.
-
-- Messages sent to the group require the approval of a moderator. To configure moderation for a group, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md).
-
+- Messages sent to the group require the approval of a moderator. To configure moderation for a group, see [Configure moderated recipients in Exchange Online](../../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md).
 - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
 ## Still need help with error code 550 5.7.124?
