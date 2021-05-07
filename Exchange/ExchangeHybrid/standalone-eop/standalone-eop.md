@@ -69,4 +69,4 @@ To learn more about EOP, check out the [Exchange Online Protection service descr
 
 [Move domains and settings from one EOP organization to another](move-domains-and-settings-between-eop-orgs.md)
 
-[Sample script for applying standalone EOP settings to multiple tenants](sample-script-eop-settings-to-multiple-tenants.md)
+[Sample script for applying standalone EOP settings to multiple tenants](sample-script-standalone-eop-settings-to-multiple-tenants.md)
