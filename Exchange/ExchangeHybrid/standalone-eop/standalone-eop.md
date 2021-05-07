@@ -16,14 +16,14 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-## Standalone Exchange Online Protection
+# Standalone Exchange Online Protection
 
 Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes. For more information, see [Exchange Online Protection overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview).
 
 However, EOP is also available in the following on-premises scenarios:
 
 - **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email solution.
-- **In a hybrid deployment**: EOP can be configured to protect your on-premises Exchange environment and control mail routing when you have a mix of on-premises and cloud mailboxes.
+- **In a hybrid deployment**: EOP can be configured to protect your on-premises Exchange environment and control mail routing when you have a mix of on-premises and cloud mailboxes. For more information about hybrid, see [Exchange Server hybrid deployments](../exchange-hybrid.md).
 
 In these scenarios, EOP can simplify the management of your email environment and alleviate many of the burdens that come with maintaining on-premises hardware and software.
 
@@ -69,4 +69,4 @@ To learn more about EOP, check out the [Exchange Online Protection service descr
 
 [Move domains and settings from one EOP organization to another](move-domains-and-settings-between-eop-orgs.md)
 
-[Sample script for applying standalone EOP settings to multiple tenants](sample-script-for-applying-standalone-eop-settings-to-multiple-tenants.md)
+[Sample script for applying standalone EOP settings to multiple tenants](sample-script-eop-settings-to-multiple-tenants.md)

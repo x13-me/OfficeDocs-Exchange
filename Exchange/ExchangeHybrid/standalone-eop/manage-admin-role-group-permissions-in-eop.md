@@ -41,7 +41,7 @@ For more information about roles and role groups, see [Permissions in standalone
 
 1. In the EAC, go to **Permissions** \> **Admin roles**. All of the role groups in your organization are listed here.
 
-2. Select a role group. The Details pane shows the **Name**, **Description**, **Assigned roles**, and **Managed by** of the role group. You can also see this information by clicking **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.png).
+2. Select a role group. The Details pane shows the **Name**, **Description**, **Assigned roles**, and **Managed by** of the role group. You can also see this information by clicking **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
 
 ### Use the EAC to create role groups
 
@@ -49,9 +49,9 @@ When you create a new role group, you can configure all of the settings yourself
 
 1. In the EAC, go to **Permissions** \> **Admin roles**, and then do one of the following steps:
 
-   - **Manually create a new role group**: Click **Add** ![Add icon](media/ITPro-EAC-AddIcon.png).
+   - **Manually create a new role group**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png).
 
-   - **Copy an existing role group**: Select the role group that you want to copy and then click **Copy** ![Copy icon](media/ITPro-EAC-CopyIcon.png).
+   - **Copy an existing role group**: Select the role group that you want to copy and then click **Copy** ![Copy icon](../media/ITPro-EAC-CopyIcon.png).
 
 2. In the **New role group** window that appears, configure the following settings:
 
@@ -59,15 +59,15 @@ When you create a new role group, you can configure all of the settings yourself
 
     - **Description**: Enter an optional description for the role group.
 
-    - **Roles**: Click **Add** ![Add icon](media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](media/ITPro-EAC-RemoveIcon.gif) to select or modify the roles that are assigned to the role group.
+    - **Roles**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to select or modify the roles that are assigned to the role group.
 
-    - **Members**: Click **Add** ![Add icon](media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](media/ITPro-EAC-RemoveIcon.gif) to modify the role group membership.
+    - **Members**: Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to modify the role group membership.
 
 3. When you're finished, click **Save** to create the role group.
 
 ### Use the EAC to modify role groups
 
-In the EAC, go to **Permissions** \> **Admin roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.png).
+In the EAC, go to **Permissions** \> **Admin roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
 
 The same options are available when you modify role groups as when you create role groups. You can:
 
@@ -81,13 +81,13 @@ The same options are available when you modify role groups as when you create ro
 
 #### Use the EAC modify the list of members in role groups
 
-1. In the EAC, go to **Permissions** \> **Admin roles**, select the role group that you want to modify, and then click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.png).
+1. In the EAC, go to **Permissions** \> **Admin roles**, select the role group that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
 
 2. In the role group properties page that opens, in the **Members** section, do either of the following steps:
 
-   - Click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.png). In the page that appears, find the user that wou want to add, and then click **add ->**. Select users and click **add ->** many times as necessary. When you're finished, click **OK**.
+   - Click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.png). In the page that appears, find the user that wou want to add, and then click **add ->**. Select users and click **add ->** many times as necessary. When you're finished, click **OK**.
 
-   - Select the users that you want to remove, and then click **Remove** ![Remove icon](media/ITPro-EAC-RemoveIcon.gif).
+   - Select the users that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
 
 3. When you're finished, click **Save**.
 
@@ -100,7 +100,7 @@ You can't remove built-in role groups, but you can remove custom role groups tha
 
 1. In the EAC, go to **Permissions** \> **Admin roles**.
 
-2. Select the role group you want to remove and then click **Delete** ![Delete icon](media/ITPro-EAC-DeleteIcon.png).
+2. Select the role group you want to remove and then click **Delete** ![Delete icon](../media/ITPro-EAC-DeleteIcon.png).
 
 3. Click **Yes** in the confirmation window that appears.
 
@@ -235,7 +235,7 @@ For detailed syntax and parameter information, see [Remove-RoleGroup](/powershel
 
 To verify that you've successfully copied a role group, do either of the following steps:
 
-- In the EAC, go to **Permissions** \> **Admin roles**, and verify the role group is listed (or not listed). Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.png) to verify the settings.
+- In the EAC, go to **Permissions** \> **Admin roles**, and verify the role group is listed (or not listed). Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png) to verify the settings.
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the role group exists (or doesn't exist) and verify the settings:
 

@@ -62,7 +62,7 @@ This article describes how to create these mail flow rules the Exchange admin ce
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](media/ITPro-EAC-AddIcon.png) and select **Create a new rule** in the drop-down that appears.
+2. Click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png) and select **Create a new rule** in the drop-down that appears.
 
 3. In the **New rule** page that opens, configure the following settings:
 
@@ -78,7 +78,7 @@ This article describes how to create these mail flow rules the Exchange admin ce
      In the **Enter text header includes Enter words** sentence that appears, do the following steps:
 
      - Click **Enter text**. In the **Specify header name** dialog that appears, enter **X-Forefront-Antispam-Report** and then click **OK**.
-     - Click  **Enter words**. In the **Specify words or phrases** dialog that appears, enter one of the EOP spam header values (**SFV:SPM**, **SFV:SKS**, or **SFV:SKB**), click **Add** ![Add icon](media/ITPro-EAC-AddIcon.png), and then click **OK**.
+     - Click  **Enter words**. In the **Specify words or phrases** dialog that appears, enter one of the EOP spam header values (**SFV:SPM**, **SFV:SKS**, or **SFV:SKB**), click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png), and then click **OK**.
 
    - **Do the following**: Select **Modify the message properties** \> **Set the spam confidence level (SCL)**.
 
@@ -116,7 +116,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 To verify that you've successfully configured standalone EOP to deliver spam to the Junk Email folder in hybrid environment, do any of the following steps:
 
-- In the EAC, go to **Mail flow** \> **Rules**, select the rule, and then click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.png) to verify the settings.
+- In the EAC, go to **Mail flow** \> **Rules**, select the rule, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png) to verify the settings.
 - In the Exchange Management Shell, replace \<RuleName\> with the name of the mail flow rule, and rul the following command to verify the settings:
 
   ```powershell
