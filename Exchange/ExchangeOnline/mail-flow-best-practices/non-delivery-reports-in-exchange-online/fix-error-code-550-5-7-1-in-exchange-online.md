@@ -88,7 +88,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Managing distribution groups**
 
-  - [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md)
+  - [Configure moderated recipients in Exchange Online](../../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md)
 
   - [Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 

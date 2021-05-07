@@ -73,6 +73,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -91,6 +93,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 |
 
 ### Recipients
+
+<br>
 
 ****
 
@@ -112,6 +116,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -125,6 +131,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 ### Attachments
 
 For more information about how mail flow rules inspect message attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
+
+<br>
 
 ****
 
@@ -152,6 +160,8 @@ Conversely, a recipient exception from this section *prevents* the rule action f
 
  **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -169,11 +179,13 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 - The recipient conditions in this section do not consider messages that are sent to recipient proxy addresses. They only match messages that are sent to the recipient's primary email address.
 - For more information about using Microsoft 365 groups with the recipient conditions in this section, see the Addresses entry in the [Property types](#property-types) section.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
 |---|---|---|---|
-|**The message contains sensitive information** <p> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <p> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action. <p>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**The message contains sensitive information** <p> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <p> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action. <p>**Note**: This condition/exception isn't available in standalone EOP environments.|
 |**The To box contains** <p> **The message** \> **To box contains this person**|_AnyOfToHeader_ <br/> _ExceptIfAnyOfToHeader_|`Addresses`|Messages where the **To** field includes any of the specified recipients.|
 |**The To box contains a member of** <p> **The message** \> **To box contains a member of this group**|_AnyOfToHeaderMemberOf_ <br/> _ExceptIfAnyOfToHeaderMemberOf_|`Addresses`|Messages where the **To** field contains a recipient who is a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
 |**The Cc box contains** <p> **The message** \> **Cc box contains this person**|_AnyOfCcHeader_ <br/> _ExceptIfAnyOfCcHeader_|`Addresses`|Messages where the **Cc** field includes any of the specified recipients.|
@@ -185,6 +197,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 |
 
 ### Sender and recipient
+
+<br>
 
 ****
 
@@ -198,13 +212,15 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 ### Message properties
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
 |---|---|---|---|
 |**The message type is** <p> **The message properties** \> **include the message type**|_MessageTypeMatches_ <br/> _ExceptIfMessageTypeMatches_|`MessageType`|Messages of the specified type. <br/> **Note**: When Outlook or Outlook on the web (formerly known as Outlook Web App) is configured to forward a message, the **ForwardingSmtpAddress** property is added to the message. The message type isn't changed to `AutoForward`.|
-|**The message is classified as** <p> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet. <p> **Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
-|**The message isn't marked with any classifications** <p> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification. <p> **Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**The message is classified as** <p> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet. <p> **Note**: This condition/exception isn't available in standalone EOP environments.|
+|**The message isn't marked with any classifications** <p> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification. <p> **Note**: This condition/exception isn't available in standalone EOP environments.|
 |**The message importance is set to** <p> **The message properties** \> **include the importance level**|_WithImportance_ <br/> _ExceptIfWithImportance_|`Importance`|Messages that are marked with the specified Importance level.|
 |
 
@@ -212,6 +228,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
+
+<br>
 
 ****
 
@@ -227,6 +245,8 @@ The property types that are used in conditions and exceptions are described in t
 
 > [!NOTE]
 > If the property is a string, trailing spaces are not allowed.
+
+<br>
 
 ****
 
