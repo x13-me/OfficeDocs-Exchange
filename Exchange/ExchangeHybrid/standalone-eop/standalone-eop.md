@@ -37,8 +37,6 @@ To learn more about EOP, check out the [Exchange Online Protection service descr
 
 [Best practices for configuring standalone EOP](best-practices-for-configuring-eop.md)
 
-[Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](configure-eop-spam-protection-hybrid.md)
-
 [Exchange admin center in standalone EOP](exchange-admin-center-eop.md)
 
 [Protect on-premises mailboxes in China with standalone EOP](standalone-eop-china.md)
@@ -64,6 +62,10 @@ To learn more about EOP, check out the [Exchange Online Protection service descr
 [View the admin audit log in standalone EOP](view-the-admin-audit-log-eop.md)
 
 [Run an administrator role group report in standalone EOP](admin-role-group-report-eop.md)
+
+**Anti-spam**:
+
+[Configure EOP to deliver spam to Junk Email folders in hybrid environments](configure-eop-spam-protection-hybrid.md)
 
 **Scripts**:
 

@@ -21,22 +21,25 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Configure EOP to deliver spam to the Junk Email folder in hybrid environments
+# Configure EOP to deliver spam to Junk Email folders in hybrid environments
 
 > [!IMPORTANT]
-> This article is only for EOP customers in hybrid environments with mailboxes in an on-premises Exchange environment. This article does not apply to Microsoft 365 customers with Exchange Online mailboxes.
+> This article is only for EOP customers in hybrid environments with mailboxes in on-premises Exchange environments. This article does not apply to Microsoft 365 customers with Exchange Online mailboxes.
 
-If you're an Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP, so the junk email rule in the on-premises mailbox can move messages to the Junk Email folder.
+If you're an Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP. Doing so allows the junk email rule in on-premises mailboxes to correctly move messages from the Inbox to the Junk Email folder.
 
-Specifically, you need to create mail flow rules (also known as transport rules) in your on-premises Exchange organization with conditions that find messages with any of the following EOP anti-spam headers and values, and actions that set the spam confidence level (SCL) of those messages to 6:
+Specifically, you need to create mail flow rules (also known as transport rules) in your on-premises Exchange organization with the following settings:
 
-- `X-Forefront-Antispam-Report: SFV:SPM` (message marked as spam by spam filtering)
-- `X-Forefront-Antispam-Report: SFV:SKS` (message marked as spam by mail flow rules in EOP before spam filtering)
-- `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the blocked sender list or the blocked domain list in EOP)
+- **Conditions**: Find messages with the following EOP anti-spam headers and values:
+  - `X-Forefront-Antispam-Report: SFV:SPM` (message marked as spam by spam filtering)
+  - `X-Forefront-Antispam-Report: SFV:SKS` (message marked as spam by mail flow rules in EOP before spam filtering)
+  - `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the blocked sender list or the blocked domain list in EOP)
 
-For more information about these header values, see [Anti-spam message headers](/microsoft-365/security/office-365-security/anti-spam-message-headers).
+  For more information about these header values, see [Anti-spam message headers](/microsoft-365/security/office-365-security/anti-spam-message-headers).
 
-This article describes how to create these mail flow rules the Exchange admin center (EAC) and in the Exchange Management Shell (Exchange PowerShell) in the on-premises Exchange organization.
+- **Action**: Set the spam confidence level (SCL) of these messages to 6 (spam).
+
+This article describes how to create the required mail flow rules the Exchange admin center (EAC) and in the Exchange Management Shell (Exchange PowerShell) in the on-premises Exchange organization.
 
 > [!TIP]
 > Instead of delivering the messages to the on-premises user's Junk Email folder, you can configure anti-spam policies in EOP to quarantine spam messages in EOP. For more information, see [Configure anti-spam policies in EOP](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies).
@@ -51,7 +54,7 @@ This article describes how to create these mail flow rules the Exchange admin ce
   For details, see [Exchange spam confidence level (SCL) thresholds](/Exchange/antispam-and-antimalware/antispam-protection/scl).
   - Whether the junk email rule is enabled on the mailbox (the _Enabled_ parameter value is $true on the [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) cmdlet in the Exchange Management Shell). It's the junk email rule that actually moves the message to the Junk Email folder after delivery. By default, the junk email rule is enabled on mailboxes. For more information, see [Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
 
-- To open the EAC on an Exchange Server, see [Exchange admin center in Exchange Server](/Exchange/architecture/client-access/exchange-admin-center). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
+- To open the EAC on an Exchange Server, see [Exchange admin center in Exchange Server](/Exchange/architecture/client-access/exchange-admin-center). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell) or [Connect to Exchange servers using remote PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
 
 - For more information about mail flow rules in on-premises Exchange, see the following articles:
   - [Mail flow rules in Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
