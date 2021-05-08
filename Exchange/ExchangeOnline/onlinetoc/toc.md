@@ -86,6 +86,7 @@
 #### [Manage journaling](../security-and-compliance/journaling/manage-journaling.md)
 #### [Configure Journaling](../security-and-compliance/journaling/configure-journaling.md)
 #### [Enable or disable journaling of voice mail and missed call notifications](../security-and-compliance/journaling/disable-enable-voicemail-missed-call-notifications.md)
+### [S/MIME for message signing and encryption](../../ExchangeServer/policy-and-compliance/smime/smime.md)
 ## [Mail flow rules](../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 ### [Conditions and exceptions](../security-and-compliance/mail-flow-rules/conditions-and-exceptions.md)
 ### [Mail flow rule actions](../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md)
