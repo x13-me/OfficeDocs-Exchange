@@ -110,7 +110,7 @@ To configure the public folder to accept messages from external senders, follow 
 
 **In New Exchange admin center (EAC)**
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange``/exchange-admin-center).
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md#exchange-admin-center-in-exchange-online.md) .
 
 2. Navigate to **Public folders** \> **Public folders**.
 
@@ -132,7 +132,7 @@ To configure the public folder to accept messages from external senders, follow 
 
 **In Classic EAC**
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md#exchange-admin-center-in-exchange-online.md).
 
 2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
