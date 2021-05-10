@@ -113,7 +113,7 @@ To fix the problem, configure a dedicated connector (from Office 365 to your org
 
 2. In the EAC, click **Mail Flow** \> **Connectors**.
 
-3. Select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
+3. Select the connector that's used for hybrid, and then click **Edit** ![Icon that enables to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
    - **General**: Verify that the **On-premises** option is selected.
 
