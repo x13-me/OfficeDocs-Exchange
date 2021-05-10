@@ -20,9 +20,11 @@ title: Use mail flow rules to route email based on a list of words, phrases, or 
 
 # Use mail flow rules to route email based on a list of words, phrases, or patterns
 
-To help your users comply with your organization's email policies, you can use Exchange mail flow rules (also known as transport rules) to determine how email containing specific words or patterns is routed. For a short list of words or phrases, you can use the Exchange admin center (EAC). For a longer list, you might want to use Exchange Online PowerShell to read the list from a text file.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use mail flow rules (also known as transport rules) to find and act on messages that contains specific words. This action can help your users comply with your organization's email policies.
 
-If your organization uses Data Loss Prevention (DLP), see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) for additional options for identifying and routing email that contains sensitive information.
+For a short list of words or phrases, you can use the Exchange admin center (EAC). For a longer list, you can use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone EOP PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) to import the words from a text file.
+
+If your Exchange Online organization uses Data Loss Prevention (DLP), see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) for additional options for identifying and routing email that contains sensitive information (DLP is not available in standalone EOP).
 
 ## Example 1: Use a short list of unacceptable words
 
@@ -45,16 +47,21 @@ New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyC
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-|:-----|:-----|
-|**Expression**|**Matches**|
+<br>
+
+****
+
+|Expression|Matches|
+|---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group*]|Any single character in *character_group*.|
+|
 
 For example, this text file contains common misspellings of Microsoft.
 
-```
+```text
 [mn]sft
 [mn]icrosft
 [mn]icro soft

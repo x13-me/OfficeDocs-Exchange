@@ -20,21 +20,15 @@ manager: serdars
 
 # Use mail flow rules to inspect message attachments in Exchange Online
 
-You can inspect email attachments in your Exchange Online organization by setting up mail flow rules (also known as transport rules). Exchange Online offers mail flow rules that allow you to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using mail flow rules:
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can inspect email attachments by setting up mail flow rules (also known as transport rules). Mail flow rules allow you to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages based on the content or characteristics of the attachments. Here are some attachment-related tasks you can do by using mail flow rules:
 
 - Search for files with text that matches a pattern you specify, and add a disclaimer to the end of the message.
-
 - Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it's delivered.
-
 - Check for messages with attachments that can't be inspected and then block the entire message from being sent.
-
 - Check for attachments that exceed a certain size and then notify the sender of the issue, if you choose to prevent the message from being delivered.
-
 - Check whether the properties of an attached Office document match the values that you specify. With this condition, you can integrate the requirements of your mail flow rules and DLP policies with a third-party classification system, such as SharePoint or the Windows Server File Classification Infrastructure (FCI).
-
 - Create notifications that alert users if they send a message that has matched a mail flow rule.
-
-- Block all messages containing attachments. For examples, see [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md).
+- Block all messages containing attachments. For examples, see [Use mail flow rules for attachment blocking scenarios in Exchange Online](common-attachment-blocking-scenarios.md).
 
 > [!NOTE]
 > All of these conditions will scan compressed archive attachments.
@@ -51,6 +45,10 @@ You can use the mail flow rule conditions in the following table to examine the 
 
 To start using these conditions when inspecting messages, you need to add them to a mail flow rule. Learn about creating or changing rules at [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md).
 
+<br>
+
+****
+
 |Condition name in the EAC|Condition name in Exchange Online PowerShell|Description|
 |---|---|---|
 |**Any attachment's content includes** <br/> **Any attachment** \> **content includes any of these words**|_AttachmentContainsWords_|This condition matches messages with supported file type attachments that contain a specified string or group of characters.|
@@ -61,14 +59,18 @@ To start using these conditions when inspecting messages, you need to add them t
 > [!NOTE]
 >
 > - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
-> 
+>
 > - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
-> 
+>
 > - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Supported file types for mail flow rule content inspection
 
 The following table lists the file types supported by mail flow rules. The system automatically detects file types by inspecting file properties rather than the actual file name extension, thus helping to prevent malicious hackers from being able to bypass mail flow rule filtering by renaming a file extension. A list of file types with executable code that can be checked within the context of mail flow rules is listed later in this article.
+
+<br>
+
+****
 
 |Category|File extension|Notes|
 |---|---|---|
@@ -89,6 +91,10 @@ The following table lists the file types supported by mail flow rules. The syste
 
 The following conditions can be used in mail flow rules to inspect different properties of files that are attached to messages. To start using these conditions when inspecting messages, you need to add them to a mail flow rule. For more information about creating or changing rules, see [Manage mail flow rules](manage-mail-flow-rules.md).
 
+<br>
+
+****
+
 |Condition name in the EAC|Condition name in Exchange Online PowerShell|Description|
 |---|---|---|
 |**Any attachment's file name matches** <p> **Any attachment** \> **file name matches these text patterns**|_AttachmentNameMatchesPatterns_|This condition matches messages with attachments whose file name contains the characters you specify.|
@@ -101,16 +107,20 @@ The following conditions can be used in mail flow rules to inspect different pro
 |
 
 > [!NOTE]
-> 
+>
 > - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
-> 
+>
 > - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
-> 
+>
 > - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### Supported executable file types for mail flow rule inspection
 
 The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that isn't listed here, the `AttachmentIsUnsupported` condition is triggered.
+
+<br>
+
+****
 
 |Type of file|Native extension|
 |---|---|
@@ -129,9 +139,12 @@ The mail flow rules use true type detection to inspect file properties rather th
 |
 
 > [!IMPORTANT]
-> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure anti-malware policies in EOP](/microsoft-365/security/office-365-security/configure-anti-malware-policies).
+> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this article, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure anti-malware policies in EOP](/microsoft-365/security/office-365-security/configure-anti-malware-policies).
 
 ## Data loss prevention policies and attachment mail flow rules
+
+> [!NOTE]
+> This section does not apply to standalone EOP organizations.
 
 To help you manage important business information in email, you can include any of the attachment-related conditions along with the rules of a data loss prevention (DLP) policy.
 
