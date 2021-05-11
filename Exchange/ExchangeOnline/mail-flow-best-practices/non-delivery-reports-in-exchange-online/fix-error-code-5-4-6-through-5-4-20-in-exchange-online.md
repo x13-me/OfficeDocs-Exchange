@@ -34,7 +34,7 @@ The most likely cause is the message hop count being exceeded or the route throu
  The information here applies to a range of error codes 5.4.6 through 5.4.20. Use the information in the NDR to help you decide how to fix the problem.
 
 |Icon|Description|Icon|Description|
-
+| :------------ | :------------ | :------------ | :------------ |
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
@@ -85,7 +85,7 @@ The connector properties screen appears.
 > [!NOTE]
 > You can navigate to the Classic EAC screen only from the New EAC screen.
 
-3. Select the connector that's used for hybrid, and click **Edit** ![Icon to edit](../../media/ITPro_EAC_EditIcon.png).
+3. Select the connector that's used for hybrid, and click **Edit** ![Icon](../../media/ITPro_EAC_EditIcon.png).
 
 4. Navigate to **How do you want to route email messages** screen.
 
@@ -113,7 +113,7 @@ To fix the problem, configure a dedicated connector (from Office 365 to your org
 
 2. In the EAC, click **Mail Flow** \> **Connectors**.
 
-3. Select the connector that's used for hybrid, and then click **Edit** ![Icon that enables to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
+3. Select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
    - **General**: Verify that the **On-premises** option is selected.
 
