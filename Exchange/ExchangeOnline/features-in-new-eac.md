@@ -101,11 +101,11 @@ When you select an item from the list view, information about that object is dis
  
 ## Related articles
 
-[Exchange Online](https://docs.microsoft.com/exchange/exchange-online)
+[Exchange Online](/exchange/exchange-online)
 
-[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
 
-[What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new)
+[What's new in Exchange admin center](/exchange/whats-new)
 
 [Classic and New Exchange admin center](https://review.docs.microsoft.com/exchange/changes-in-exchange-admin-center?branch=pr-en-us-1828)
 

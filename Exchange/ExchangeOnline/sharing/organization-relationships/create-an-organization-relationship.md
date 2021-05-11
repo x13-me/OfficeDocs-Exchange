@@ -115,10 +115,10 @@ Get-OrganizationRelationship | format-list
 
 ## Organization relationships with GCC High
 
-Tenants in the [GCC High](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud can now create organization relationships with tenants in the World Wide and the [GCC](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) clouds.
+Tenants in the [GCC High](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud can now create organization relationships with tenants in the World Wide and the [GCC](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) clouds.
 
 > [!IMPORTANT]
-> Organization relationships between the [DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud and other clouds is not supported.
+> Organization relationships between the [DoD](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) cloud and other clouds is not supported.
 
 ### Create cross-cloud organization relationships
 
