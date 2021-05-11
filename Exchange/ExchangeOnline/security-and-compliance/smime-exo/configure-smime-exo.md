@@ -1,5 +1,5 @@
 ---
-title: S/MIME for encryption in Exchange Online - Office 365
+title: Configure S/MIME
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -13,19 +13,17 @@ localization_priority: Normal
 search.appverid: 
   - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: Admins can learn about using S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online to encrypt emails and digitally sign them.
+description: Admins can learn about the basic steps for configuring S/MIME in Exchange Online for message encryption and digitally signed messages.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# S/MIME for message signing and encryption in Exchange Online
+# Configure S/MIME in Exchange Online
 
-S/MIME (Secure/Multipurpose Internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages. S/MIME in Exchange Online helps to ensure that the sent message is exactly what the recipients received, and that the message sender is really who they claim to be.
+S/MIME (Secure/Multipurpose Internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages. For more information, see [S/MIME for message signing and encryption in Exchange Online](smime-exo.md).
 
-To do this, S/MIME provides for cryptographic security services such as authentication, message integrity, and non-repudiation of origin (using digital signatures). It also helps enhance privacy and data security (using encryption) for email. For a more complete background about the history and architecture of S/MIME in the context of email, see [Understanding S/MIME](/previous-versions/tn-archive/aa995740(v=exchg.65)).
-
-S/MIME in Exchange Online is available with the following types of email clients:
+S/MIME is available in Exchange Online with the following types of email clients:
 
 - [Supported versions of Outlook](/deployoffice/endofsupport/office-365-services-connectivity).
 - Outlook on the web (formerly known as Outlook Web App) **on Windows clients**. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
@@ -38,6 +36,8 @@ As an Exchange Online admin, you can enable S/MIME-based security for the mailbo
 3. Sync user certificates for S/MIME into Microsoft 365.
 4. Configure policies to install S/MIME extensions in web browsers for Outlook on the web.
 5. Configure email clients to use S/MIME.
+
+For end-to-end S/MIME configuration instructions for Outlook for iOS and Android, see [S/MIME for Outlook for iOS and Android](../../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android.md).
 
 ## Step 1: Set up and publish S/MIME certificates
 
@@ -98,7 +98,7 @@ For details about the policies, see the following topics:
 - [ExtensionInstallForcelist - Edge](/deployedge/microsoft-edge-policies#extensioninstallforcelist)
 - [ExtensionInstallForcelist - Chrome](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionInstallForcelist)
 
-The policy is a prerequisite for using S/MIME in Outlook on the web. It does not replace the S/MIME control that's installed by users. Users are prompted to download and install the S/MIME control in Outlook on the web during their first use of S/MIME. Or, users can proactively go to **S/MIME** in their Outlook on the web settings to get the download link for the control.
+The policy is a prerequisite for using S/MIME in Outlook on the web. It **does not replace** the S/MIME control that's installed by users. Users are prompted to download and install the S/MIME control in Outlook on the web during their first use of S/MIME. Or, users can proactively go to **S/MIME** in their Outlook on the web settings to get the download link for the control.
 
 ## Step 5: Configure email clients to use S/MIME
 
@@ -107,7 +107,7 @@ If an email client supports S/MIME, the next consideration is access to the user
 For more information about S/MIME in email clients, see the following topics:
 
 - **Outlook**: See the "Encrypting with S/MIME" section in [Encrypt email messages](https://support.microsoft.com/office/373339cb-bf1a-4509-b296-802a39d801dc).
-- **Outlook for iOS and Android**: [Deploying S/MIME certificates with Outlook for iOS and Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android#deploying-smime-certificates-with-outlook-for-ios-and-android)
+- **Outlook for iOS and Android**: [Enabling S/MIME in the client](../../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android.md#enabling-smime-in-the-client)
 - **Mail in iOS**: [Use S/MIME to send encrypted messages in an Exchange environment in iOS](https://support.apple.com/HT202345)
 
 You can also use the following parameters on the [New-MobileDeviceMailboxPolicy](/powershell/module/exchange/new-mobiledevicemailboxpolicy) and [Set-MobileDeviceMailboxPolicy](/powershell/module/exchange/set-mobiledevicemailboxpolicy) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to configure S/MIME settings for mobile devices:
@@ -118,18 +118,3 @@ You can also use the following parameters on the [New-MobileDeviceMailboxPolicy]
 - _RequireEncryptionSMIMEAlgorithm_
 - _RequireSignedSMIMEAlgorithm_
 - _RequireSignedSMIMEMessages_
-
-## Related message encryption technologies
-
-Other encryption technologies work together to provide protection for messages at rest and in-transit. S/MIME can work simultaneously with the technologies in the following list, but is not dependent on them:
-
-- **Transport Layer Security (TLS) which replaces Secure Sockets Layer (SSL)**:
-  - Encrypts the tunnel or the route between email servers in order to help prevent snooping and eavesdropping.
-  - Encrypts the connection between email clients and email servers.
-- **BitLocker**: Encrypts data on hard drives in client computers and servers. If an unauthorized party somehow gains access, they can't read the data on the drives.
-
-[Office 365 Message Encryption](/microsoft-365/compliance/email-encryption) is a direct competitor to S/MIME, and has the following advantages over S/MIME:
-
-- It's a policy-based encryption service that's configured by an admin to encrypt messages that are sent to anyone inside or outside of the organization. In contrast, users are required to decide whether to apply or not apply S/MIME to messages that they send.
-- It's an online service that's built on Azure Rights Management (Azure RMS) and does not rely on a public key infrastructure. In contrast, S/MIME requires a certificate and certificate publishing infrastructure.
-- Office 365 Message Encryption provides additional capabilities. For example, you can customize messages with your organization's brand.
