@@ -90,7 +90,7 @@ When an organization decides to standardize how users access Exchange data, usin
 > - Cloud app condition: Exchange Online or Office 365
 > - Device platform condition: iOS and/or Android
 > - Client apps condition: Mobile apps and desktop client
-> - One of the following Grant access controls: [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+> - One of the following Grant access controls: [Require device to be marked as compliant](/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 > 
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](/intune/app-based-conditional-access-intune).
 
