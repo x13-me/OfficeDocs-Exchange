@@ -86,7 +86,7 @@
 #### [Manage journaling](../security-and-compliance/journaling/manage-journaling.md)
 #### [Configure Journaling](../security-and-compliance/journaling/configure-journaling.md)
 #### [Enable or disable journaling of voice mail and missed call notifications](../security-and-compliance/journaling/disable-enable-voicemail-missed-call-notifications.md)
-### [S/MIME for message signing and encryption](../../ExchangeServer/policy-and-compliance/smime/smime.md)
+### [S/MIME](../security-and-compliance/smime-exo/smime-exo.md)
 #### [Configure S/MIME](../security-and-compliance/smime-exo/configure-smime-exo.md)
 #### [Configure S/MIME for Outlook for iOS and Android](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android.md)
 ## [Mail flow rules](../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
