@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
 ms.reviewer: 
 title: Procedures for Client Access Rules in Exchange Online
@@ -33,7 +33,7 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 - The procedures in this topic are only available in Exchange Online PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Client Access Rules support IPv4 and IPv6 addresses. For more information about IPv6 addresses and syntax, see this Exchange 2013 topic: [IPv6 address basics](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help#ipv6-address-basics).
+- Client Access Rules support IPv4 and IPv6 addresses. For more information about IPv6 addresses and syntax, see this Exchange 2013 topic: [IPv6 address basics](/exchange/ipv6-support-in-exchange-2013-exchange-2013-help#ipv6-address-basics).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
 ms.reviewer: 
 description: "As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:"

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 title: Sensitivity labeling and protection in Outlook for iOS and Android
 ms.reviewer: smithre4
 audience: ITPro
@@ -206,7 +206,7 @@ When the S/MIME setting is enabled, Outlook for iOS and Android will automatical
 
 ![Screenshot showing the Outlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
 
-Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate’s details, including information like key usage and the validity period.
+Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate's details, including information like key usage and the validity period.
 
 ![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
 

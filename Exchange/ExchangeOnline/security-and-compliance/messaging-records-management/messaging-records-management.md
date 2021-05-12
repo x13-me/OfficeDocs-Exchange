@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.reviewer: 
 f1.keywords:

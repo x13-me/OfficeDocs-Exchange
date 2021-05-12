@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to modify address book policies (ABPs) in Exchange Online
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms.reviewer:
 title: Change the settings of an address book policy in Exchange Online
