@@ -119,7 +119,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
 2. In the group properties dialog box that opens, go to **Delivery management**.
 
-3. In the **Distribution Group** box select **Delivery management** and configure the following settings:
+3. In the **Distribution Group** box, select **Delivery management** and configure the following settings:
 
    - Remove any entries in the allowed senders list by selecting one entry, pressing CTRL + A to select all entries, and then clicking **Remove** ![Remove icon](../../media/adf01106-cc79-475c-8673-065371c1897b.gif).
 
