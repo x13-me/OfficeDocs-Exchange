@@ -62,7 +62,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 
 - You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Microsoft 365 or Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
 
-- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
+- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](../../security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
 
 - To open the Security & Compliance Center, got to <https://protection.office.com>. To go directly to the **Enhanced Filtering for Connectors** page, open <https://protection.office.com/skiplisting>.
 
