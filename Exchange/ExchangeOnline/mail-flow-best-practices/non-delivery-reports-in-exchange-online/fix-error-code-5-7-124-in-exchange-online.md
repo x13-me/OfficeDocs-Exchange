@@ -62,7 +62,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 7. Under **Specified senders**, click on the text box. The list of senders is displayed.
    
-:::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a sender is chosen to be added to the group":::
+:::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a chosen sender is added to the group":::
 
 - Choose senders from the list. The chosen sender's name is displayed below the text box.
 
@@ -78,9 +78,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
    ![Add an email address to the allowed senders list](../../media/bfa84c19-f972-4428-9001-47bebd8b9125.png)
 
-3. In the **Select Allowed Senders** dialog box that opens, select and add the sender or a group that the sender is a member of. When you're finished, click **OK**.
+3. In the **Select Allowed Senders** dialog box that opens, select the sender or a group that the sender is a member of.
 
-4. Click **Save**.
+4. Add the sender or a group to the existing allowed senders list.
+
+5. When you're finished, click **OK**.
+
+6. Click **Save**.
 
 > [!NOTE]
 > To add an external sender to a group's allowed senders list, you must first create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
