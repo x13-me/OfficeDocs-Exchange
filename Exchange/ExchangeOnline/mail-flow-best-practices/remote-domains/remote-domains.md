@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about remote domains (message formatting settings for external domains) in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: f191e052-658d-4c74-bfe7-bcb1d525e4e3
 ms.reviewer: 
 title: Remote domains in Exchange Online

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to search the administrator audit logs to discover who made changes to your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
 ms.reviewer: 
 f1.keywords:

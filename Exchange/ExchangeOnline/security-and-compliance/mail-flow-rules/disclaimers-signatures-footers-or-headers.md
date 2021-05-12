@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Exchange Online'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.reviewer: 
 f1.keywords:
@@ -20,7 +20,7 @@ manager: serdars
 
 # Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
 
-You can add an HTML or plain text legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. To do this, you create a mail flow rule (also known as a transport rule) that adds the required information to messages.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can add an HTML or plain text legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. To do this, you create a mail flow rule (also known as a transport rule) that adds the required information to messages.
 
 **Notes**:
 
@@ -36,14 +36,14 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 
 - Estimated time to complete each procedure: 7 minutes.
 
-- For information about how to access the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- For information about how to access the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/articles/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to add a disclaimer or other email header or footer
 
@@ -90,9 +90,7 @@ New-TransportRule -Name "March Special" -Enabled $true -SentToScope NotInOrganiz
 To verify that you've successfully created a disclaimer, and that the disclaimer works as expected, do the following steps:
 
 - Send yourself both a plain text email and an HTML email that match the conditions and exceptions you defined, and verify that the text appears as you intended.
-
 - If you added an exception to avoid adding the disclaimer to successive messages in a conversation, forward your test messages to yourself to make sure that they don't get an extra copy of the disclaimer.
-
 - Send yourself some messages that should not get the disclaimer and verify that the disclaimer is not included.
 
 ## For more information
