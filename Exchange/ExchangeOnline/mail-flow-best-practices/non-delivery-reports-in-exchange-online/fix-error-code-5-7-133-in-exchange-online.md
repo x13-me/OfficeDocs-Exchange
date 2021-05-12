@@ -118,7 +118,7 @@ To configure the group's allowed senders list, perform the following steps:
    - Select **Senders inside and outside of my organization**.
 
    - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select the external senders and the all internal users group. 
-   - Add the external senders and the all internal users group to the allowed sender's list.
+   - Add the external senders and the "all internal users" group to the allowed sender's list.
    - When you're finished, click **OK**.
 
      ![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
