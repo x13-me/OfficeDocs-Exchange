@@ -3,7 +3,7 @@ localization_priority: Normal
 description: A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.reviewer: 
 f1.keywords:
@@ -25,7 +25,7 @@ A custom data loss prevention (DLP) policy allows you to establish conditions, r
 The rule conditions that are available to you in a single policy include all the traditional mail flow rules (also known as transport rules) in addition to the sensitive information types presented in [Sensitive information types in Exchange Server](../../../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md). For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
 
 > [!CAUTION]
-> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. for more information about testing, see [Test a mail flow rule](../../security-and-compliance/mail-flow-rules/test-mail-flow-rules.md).
+> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. for more information about testing, see [Test mail flow rules in Exchange Online](../../security-and-compliance/mail-flow-rules/test-mail-flow-rules.md).
 
 ## What do you need to know before you begin?
 
@@ -38,7 +38,7 @@ The rule conditions that are available to you in a single policy include all the
 > [!NOTE]
 > Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content matching definitions; e.g., defining Custom Classifications and/or Regular Expression patterns ("RegEx"). For custom content matching development, testing, and debugging, customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content matching development will fulfill the customer's requirements or obligations. As an example of the type of support which can be provided, sample regular expression patterns may be provided for testing purposes, or support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
-For additional information on the .NET regex engine which is used for processing the text, see https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions.
+For additional information on the .NET regex engine which is used for processing the text, see /dotnet/standard/base-types/regular-expressions.
 
 ## Create custom DLP policies
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can use Exchange Online PowerShell to configure custom settings for MailTips between various organizations.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 6e6b48ef-c41c-47ad-8063-66901765c2a5
 ms.reviewer: 
 title: Manage MailTips for organization relationships
