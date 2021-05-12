@@ -25,14 +25,14 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this?](#im-the-group-owner-or-email-admin-how-do-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
 |
 
-## I got this bounce message. How do I fix it?
+## I got this bounce message. How do I fix this issue?
 
 Only the group owner or an email admin in the recipient's organization can fix this issue. Contact the group owner or email admin and refer them to this information so they can try to resolve the issue for you.
 
-## I'm the group owner or email admin. How do I fix this?
+## I'm the group owner or email admin. How do I fix this issue?
 
 The two methods that will allow an external sender to send messages to the distribution group in your organization are described in the following sections.
 
@@ -83,7 +83,7 @@ Instead of allowing all external senders to send messages to this group, you can
 
 - To add everyone in your organization to a group's allowed sender's list, you can create a [distribution group](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md) or a [dynamic distribution group](../../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) that contains everyone in your organization. After you create this group, you can add it to the group's allowed senders list.
 
-- The group's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
+- The group's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the group's allowed senders list, perform the following steps:
 
@@ -107,7 +107,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 7. Choose the senders you want to add to the senders list, and click **Save changes**.
 
-:::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a sender is chosen to be added to the senders group":::
+:::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a chosen sender is added to the senders group":::
 
 **For Classic EAC**   
 
@@ -117,7 +117,9 @@ To configure the group's allowed senders list, perform the following steps:
 
    - Select **Senders inside and outside of my organization**.
 
-   - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+   - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select the external senders and the all internal users group. 
+   - Add the external senders and the all internal users group to the allowed sender's list.
+   - When you're finished, click **OK**.
 
      ![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
 
