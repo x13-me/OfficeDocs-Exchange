@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
 ms.reviewer: 
 f1.keywords:

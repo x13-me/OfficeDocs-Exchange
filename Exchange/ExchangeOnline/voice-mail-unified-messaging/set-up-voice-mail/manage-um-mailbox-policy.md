@@ -3,7 +3,7 @@ localization_priority: Normal
 description: After you create a Unified Messaging (UM) mailbox policy, you can view and configure a variety of settings. For example, you can configure UM features like Voice Mail Preview or Play on Phone and other security-related options such as Protected Voice Mail and PIN policy settings.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
 ms.reviewer: 
 f1.keywords:

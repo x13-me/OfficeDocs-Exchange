@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."
@@ -61,7 +61,6 @@ In this task, you'll first verify to Microsoft 365 or Office 365 that you own th
 Domain verification is a task you will go through as you set up Microsoft 365 or Office 365. During setup, the setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
 
 - **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](/microsoft-365/admin/dns/create-dns-records-at-godaddy).
-
 - **You purchased your domain from another domain registrar**: If you purchased your domain from a different company, we provide [instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) for many popular domain hosting providers.
 
 ### Step 2: Add users to Microsoft 365 or Office 365
@@ -96,21 +95,15 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 5. Start Excel.
 
 6. Use the following screenshot as a template to create the migration file in Excel. Start with the headings in row 1. Make sure they match the picture exactly and don't contain spaces. The exact heading names are:
-
    - **EmailAddress** in cell A1.
-
    - **UserName** in cell B1.
-
    - **Password** in cell C1.
 
     ![Cell headings in the Excel migration file.](../../media/excel-im14.png)
 
 7. Next enter the email address, username, and app password for each mailbox you want to migrate. Enter one mailbox per row.
-
    - **Column A** is the email address of the Microsoft 365 or Office 365 mailbox. This is what's shown in the **username** column in **Users** \> **Active users** in the Microsoft 365 admin center.
-
    - **Column B** is the sign-in name for the user's Gmail mailbox (for example, aaronharper@lemonteatest.com).
-
    - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from Google Workspace mailboxes using the Microsoft 365 admin center](#migration-from-google-workspace-mailboxes-using-the-microsoft-365-admin-center).
 
     ![A completed sample migration file.](../../media/excel-im15.png)
@@ -127,7 +120,7 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
-    ![Select Migration endpoint.](../media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
+   ![Select Migration endpoint.](../media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
 
 3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
 
@@ -139,7 +132,7 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 7. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 
-    ![Migration endpoint name.](../media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
+   ![Migration endpoint name.](../media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
 
 8. Click **New** to create the migration endpoint.
 
@@ -169,22 +162,17 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 4. Choose **IMAP migration** \> **Next**.
 
 5. On the **Select the users** page, click **Browse** to specify the migration file you created. After you select your migration file, Microsoft 365 or Office 365 checks it to make sure:
-
    - It isn't empty.
-
    - It uses comma-separated formatting.
-
    - It doesn't contain more than 50,000 rows.
-
    - It includes the required attributes in the header row.
-
    - It contains rows with the same number of columns as the header row.
 
     If any one of these checks fails, you'll get an error that describes the reason for the failure. If you get an error, you must fix the migration file and resubmit it to create a migration batch.
 
 6. After Microsoft 365 or Office 365 validates the migration file, it displays the number of users listed in the file as the number of Gmail mailboxes to migrate.
 
-    ![New migration batch with CSV file](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
+   ![New migration batch with CSV file](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
 
 7. Click **Next**.
 
@@ -209,7 +197,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
     ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 > [!NOTE]
-> If you have large user mailboxes and the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518) and [Sync limits](https://support.google.com/a/answer/2751577). You can try to unlock the Gmail user or use alternative method to migrate the users. For more information, see [Use network upload to import your organization PST files to Microsoft 365 or Office 365](/office365/securitycompliance/use-network-upload-to-import-pst-files) and [Third-party tools for Microsoft 365 or Office 365 migrations](../office-365-migration-best-practices.md#third-party-tools-for-office-365-migrations).
+> If you have large user mailboxes and the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518) and [Sync limits](https://support.google.com/a/answer/2751577). You can try to unlock the Gmail user or use alternative method to migrate the users. For more information, see [Use network upload to import your organization PST files to Microsoft 365 or Office 365](/office365/securitycompliance/use-network-upload-to-import-pst-files) and [Third-party tools for Microsoft 365 or Office 365 migrations](../office-365-migration-best-practices.md#third-party-tools-for-microsoft-365-or-office-365-migrations).
 
 #### Verify that the migration worked
 
@@ -222,13 +210,9 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 #### Verify a successful mailbox migration to Microsoft 365 or Office 365
 
 - Ask your migrated users to complete the following tasks:
-
   - Go to the [Microsoft 365 or Office 365 sign-in page](https://login.microsoftonline.com) and sign in with your username and temporary password.
-
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
-
   - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Microsoft 365 or Office 365 user to verify that you can send email.
-
   - Choose **Outlook**, and check that your email messages and folders are all there.
 
 ### Optional: Reduce email delays
@@ -274,9 +258,7 @@ During the last task, you updated the MX record for your domain. Now it's time t
 - Make sure that your users are using Microsoft 365 or Office 365 exclusively for email. After you delete the migration batch, email that is sent to Gmail mailboxes isn't copied to Microsoft 365 or Office 365. This means your users can't get that email, so make sure that all users are on the new system.
 
 - Let the migration batch run for at least 72 hours before you delete it. This makes the following two things more likely:
-
   - Your Gmail mailboxes and Microsoft 365 or Office 365 mailboxes have synchronized at least once (they synchronize once a day).
-
   - The email systems of your customers and partners have recognized the changes to your MX records and are now properly sending email to your Microsoft 365 or Office 365 mailboxes.
 
 When you delete the migration batch, the migration service cleans up any records related to the migration batch and removes it from the migration dashboard.

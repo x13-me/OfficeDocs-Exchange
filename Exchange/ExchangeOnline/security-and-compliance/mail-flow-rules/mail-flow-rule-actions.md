@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn about the actions that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.reviewer: 
 f1.keywords:
@@ -20,11 +20,11 @@ manager: serdars
 
 # Mail flow rule actions in Exchange Online
 
-Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
 
 Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
 
-For more information about mail flow rules in Exchange Online, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
+For more information about mail flow rules, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
@@ -32,7 +32,7 @@ For more information about actions in mail flow rules in Exchange Server, see or
 
 ## Actions for mail flow rules in Exchange Online
 
-The actions that are available in mail flow rules in Exchange Online are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
+The actions that are available in mail flow rules in Exchange Online and standalone EOP are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
 
 **Notes**:
 
@@ -40,11 +40,13 @@ The actions that are available in mail flow rules in Exchange Online are describ
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
 
+<br>
+
 ****
 
 |Action in the EAC|Action parameter in PowerShell|Property|Description|
 |---|---|---|---|
-|**Forward the message for approval to** <p> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <p>**Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**Forward the message for approval to** <p> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Use mail flow rules for message approval scenarios in Exchange Online](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <p> **Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**Forward the message for approval to the sender's manager** <p> **Forward the message for approval** \> **to the sender's manager**|_ModerateMessageByManager_|n/a|Forwards the message to the sender's manager for approval. <p> This action only works if the sender's **Manager** attribute is defined. Otherwise, the message is delivered to the recipients without moderation. <p>**Note**: This action isn't available in standalone EOP environments.|
 |**Redirect the message to** <p> **Redirect the message to** \> **these recipients**|_RedirectMessageTo_|`Addresses`|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|
 |**Deliver the message to the hosted quarantine** <p> **Redirect the message to** \> **hosted quarantine**|_Quarantine_|n/a|Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
@@ -79,6 +81,8 @@ The actions that are available in mail flow rules in Exchange Online are describ
 
 The property values that are used for actions in mail flow rules are described in the following table.
 
+<br>
+
 ****
 
 |Property|Valid values|Description|
@@ -107,8 +111,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md)
 
-[Manage mail flow rules](manage-mail-flow-rules.md)
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
-
-[Encryption](/microsoft-365/compliance/encryption)
+[Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
