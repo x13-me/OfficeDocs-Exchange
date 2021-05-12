@@ -25,14 +25,14 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-do-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
-### I got this bounce message. How do I fix it?
+### I got this bounce message. How do I fix this issue?
 
 Only an email admin in the recipient's organization can fix this issue. Contact the email admin and refer them to this information so they can try to resolve the issue for you.
 
-## I'm an email admin. How do I fix this?
+## I'm an email admin. How do I fix this issue?
 
 The two methods that will allow an external sender to send messages to the mailbox in your organization are described in the following sections.
 
@@ -89,7 +89,7 @@ Instead of allowing all external senders to send messages to this mailbox, you c
 
 - To add everyone in your organization to a mailbox's allowed sender's list, you can create a [distribution group](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md) or a [dynamic distribution group](../../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) that contains everyone in your organization. After you create this group, you can add it to the mailbox's allowed senders list.
 
-- The mailbox's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
+- The mailbox's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the mailbox's allowed senders list, do the following steps:
 
@@ -123,11 +123,11 @@ To configure the mailbox's allowed senders list, do the following steps:
 
 :::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="The screen on which the senders of email messages are set":::
 
-The **Message delivery restrictions** screen re-appears.
+The **Message delivery restrictions** screen reappears.
 
 6. Click **Save**.
 
-:::image type="content" source="../../media/mdr-screen-after-adding-sender.png" alt-text="The Message delivery restrictions screen on which senders have been added to be saved into the group":::
+:::image type="content" source="../../media/mdr-screen-after-adding-sender.png" alt-text="The screen on which the added senders are saved into the group":::
 
 **In Classic EAC**
 
@@ -141,7 +141,9 @@ The **Message delivery restrictions** screen re-appears.
 
    - Clear the check box for **Require that all senders are authenticated**.
 
-   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group.
+   - Add the external senders and the "all internal users" group.
+   - When you're finished, click **OK**.
 
      ![Add an allowed sender in the Admin center to help solve DSN 5.7.136](../../media/7306dda2-69dc-4d47-9d40-0fffaea881d6.png)
 
