@@ -36,7 +36,7 @@ Only an email admin in the recipient's organization can fix this issue. Contact 
 
 The two methods that will allow an external sender to send messages to the mailbox in your organization are described in the following sections.
 
-To open the New Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+To open the New Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 
 To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the **Exchange admin center** (New) home screen, as shown in the image below.
