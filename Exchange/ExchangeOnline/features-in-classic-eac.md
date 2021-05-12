@@ -91,8 +91,8 @@ The Centers tile allows you to change from one admin center to another. The Me t
 
 ## Related articles
 
-[Exchange Online](https://docs.microsoft.com/exchange/exchange-online)
+[Exchange Online](/exchange/exchange-online)
 
-[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
 
-[What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new)
+[What's new in Exchange admin center](/exchange/whats-new)
