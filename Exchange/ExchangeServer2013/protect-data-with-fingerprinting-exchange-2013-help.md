@@ -33,7 +33,7 @@ If your organization uses forms to collect sensitive information, users might tr
 
 5. To upload a form, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
-6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [Supported file types for transport rule content inspection](./use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md#supported-file-types-for-transport-rule-content-inspection). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
+6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [Use transport rules to inspect message attachments](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md#supported-file-types-for-transport-rule-content-inspection). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
 
 7. Click **Save**.
 
