@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Create a UM IP gateway
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 298e51f5-9e42-4395-b9ea-6f16c28a8422
 ms.reviewer: 
 f1.keywords:

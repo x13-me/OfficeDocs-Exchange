@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can define the dates and times your organization will be closed for holidays and other occasions. Between the start dates and the end date you specify, callers who reach the Unified Messaging (UM) auto attendant will hear a holiday greeting you specify when you configure the holiday schedule. After the caller hears the holiday greeting you've specified, the non-business hours greeting and menu prompts will be played for the caller.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96
 ms.reviewer: 
 f1.keywords:

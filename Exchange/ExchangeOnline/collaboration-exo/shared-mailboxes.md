@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
 ms.reviewer: 
 title: Shared mailboxes in Exchange Online

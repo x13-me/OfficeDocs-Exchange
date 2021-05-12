@@ -40,7 +40,7 @@ For more information, see [Manage user mailboxes](./recipients-in-exchange-onlin
  
    ![Protection tab](media/protection-tab.png)
  
- - In new EAC, it is not available and is now a part of [**Office 365 Security & Compliance**](https://df.protection.office.com/homepage).
+ - In new EAC, it is not available and is now a part of [**Microsoft 365 security center**](https://df.security.microsoft.com/homepage).
 
 **Unified Messaging tab**
 

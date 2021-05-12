@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
 ms.reviewer: 
 description: Steps to add an SSL certificate to Exchange 2010.

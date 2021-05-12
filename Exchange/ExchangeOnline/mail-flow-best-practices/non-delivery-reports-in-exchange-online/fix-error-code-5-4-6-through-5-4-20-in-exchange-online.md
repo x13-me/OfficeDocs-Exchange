@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
