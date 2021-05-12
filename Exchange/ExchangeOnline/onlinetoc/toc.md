@@ -98,7 +98,7 @@
 ### [Use rules to inspect message attachments](../security-and-compliance/mail-flow-rules/inspect-message-attachments.md)
 ### [Use rules to set the SCL](../security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 ### [Use rules to filter bulk email](../security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)
-### [Use rules to see what users are reporting to Microsoft](../security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)
+### [Use rules to see what users are reporting to Microsoft](../security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft.md)
 ### [Use rules to add disclaimers, signatures, footers, or headers](../security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers.md)
 ### [Use rules to bypass Clutter](../security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter.md)
 ### [Use rules to route email based on content](../security-and-compliance/mail-flow-rules/use-rules-to-route-email.md)
