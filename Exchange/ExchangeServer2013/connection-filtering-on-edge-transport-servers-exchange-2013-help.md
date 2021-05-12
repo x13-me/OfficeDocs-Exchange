@@ -30,7 +30,7 @@ Connection filtering compares the IP address of the source mail server with the 
 - IP Allowlist providers
 - IP Blocklist providers
 
-You need to configure at least one of the four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+Configure at least one of the four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 ## IP Blocklist
 
@@ -56,15 +56,15 @@ The Connection Filtering agent checks the source IP address at the IP Allowlist 
 
 If the IP address isn't defined at any of the IP Blocklist providers, the Content Filtering agent hands the message off to the next transport agent on the Edge Transport server.
 
-For each IP Blocklist provider, you can customize the `SMTP 550` error that's returned to the sender when a message is blocked. You should identify the IP Blocklist provider that identified the message source as spam. If a legitimate source mail server is erroneously identified as a spam source, the administrator can then contact the IP Blocklist provider and take the steps necessary to remove the mail server from the IP Blocklist provider.
+For each IP Blocklist provider, you can customize the `SMTP 550` error that's returned to the sender when a message is blocked. Identify the IP Blocklist provider that identified the message source as spam. If a legitimate source mail server is erroneously identified as a spam source, the administrator can then contact the IP Blocklist provider and take the steps necessary to remove the mail server from the IP Blocklist provider.
 
 IP Blocklist providers can return different codes to identify why an IP address is defined in their lists. Most IP Blocklist providers return bitmask or absolute value data types. Within these data types, the IP Blocklist provider can use multiple values to classify the IP address by threat type.
 
 There are issues to consider when using IP Blocklist providers:
 
-- Outages or delays at the IP Blocklist provider service can cause delays in the processing of messages on the Edge Transport server. You should always select reliable IP Blocklist providers.
+- Outages or delays at the IP Blocklist provider service can cause delays in the processing of messages on the Edge Transport server. Select reliable IP Blocklist providers.
 
-- Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. You should always select IP Blocklist providers that provide clear procedures for evaluation and removal from their services.
+- Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. Select IP Blocklist providers that provide clear procedures for evaluation and removal from their services.
 
 ## Bitmask and absolute value examples
 
