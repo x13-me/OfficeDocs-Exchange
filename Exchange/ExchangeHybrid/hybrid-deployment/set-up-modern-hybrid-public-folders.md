@@ -54,7 +54,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
 6. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-7. Outlook 2016 for Mac (and higher versions) are supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 or higher update installed. For more information, see [Accessing public folders with Outlook 2016 for Mac](../../ExchangeOnline/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md).
+7. Outlook 2016 for Mac (and higher versions) are supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have the April 2016 or higher update installed. For more information, see [Accessing public folders with Outlook 2016 for Mac](../../ExchangeOnline/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md).
 
 ## Step 1: Download the scripts
 
