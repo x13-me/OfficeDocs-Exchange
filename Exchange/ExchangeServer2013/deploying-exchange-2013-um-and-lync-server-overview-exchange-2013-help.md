@@ -45,7 +45,7 @@ The following list shows the simplified deployment steps for UM and Lync Server.
 7. Run the ExchUcUtil.ps1 script from the \<Exchange Installation folder\>\\Exchange Server\\Script folder on a Mailbox server.
 
    > [!IMPORTANT]
-   > The ExchUcUtil.ps1 script creates one or more UM IP gateways for Lync integration. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. To disable outgoing calls on a UM IP gateway, see <A href="./disable-outgoing-calls-on-/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">Disable outgoing calls on UM IP gateways</A>.
+   > The ExchUcUtil.ps1 script creates one or more UM IP gateways for Lync integration. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. To disable outgoing calls on a UM IP gateway, see [Disable outgoing calls on UM IP gateways in Exchange Server](disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md).
 
 8. Run **OcsUmUtil.exe** from the %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support folder on a Lync Server.
 
