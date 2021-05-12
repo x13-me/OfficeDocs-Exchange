@@ -244,7 +244,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to create UM auto attendants and manage settings for navigation menus, greetings, and business and non-business hours.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="./set-up-/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">Set up voice mail for users</a></p></td>
+<td><p><a href="/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">Set up voice mail for users</a></p></td>
 <td><p>Learn how to create and manage UM mailbox policies and how to enable users for UM.</p></td>
 </tr>
 <tr class="odd">
