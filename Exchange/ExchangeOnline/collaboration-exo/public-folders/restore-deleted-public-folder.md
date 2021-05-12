@@ -24,7 +24,7 @@ Public folders that have been deleted by users or administrators are stored in t
 
 For scenarios where public folder contents are put on hold using retention policy, the folders removed from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` until the retention hold period is over.
 
-Any folders preserved in the public folder dumpster or under DiscoverHolds folder can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
+Any folders preserved in the public folder dumpster or under the DiscoverHolds folder can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
 
 > [!NOTE]
 > The folders in the dumpster are permanently deleted after the retention period is over. After a public folder is permanently deleted, it cannot be restored, unless it is preserved under DiscoveryHolds by a retention policy.
