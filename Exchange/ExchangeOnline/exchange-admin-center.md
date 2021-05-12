@@ -66,13 +66,13 @@ To experience some of the new Exchange admin center features, see the following:
 
 See the following articles:
 
-- To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](https://docs.microsoft.com/exchange/changes-in-exchange-admin-center).
+- To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](/exchange/changes-in-exchange-admin-center).
 
 - To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md).
 
 - To explore features in Classic EAC, see [Classic Exchange admin center](features-in-classic-eac.md).
 
-- To get an update on the journey of the new EAC, see [What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new).
+- To get an update on the journey of the new EAC, see [What's new in Exchange admin center](/exchange/whats-new).
 
 ## Supported browsers
 
@@ -84,6 +84,6 @@ See the following articles:
 
 ## Related articles
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center).
 
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-eop).
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
