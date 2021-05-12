@@ -103,7 +103,7 @@
 ### [Use rules to see what users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft)
 ### [Use rules for message approval scenarios](../security-and-compliance/mail-flow-rules/common-message-approval-scenarios.md)
 ### [Use rules to add meetings to calendars](../security-and-compliance/mail-flow-rules/use-rules-to-add-meetings.md)
-### [Use rules to enable message encryption and decryption](../security-and-compliance/mail-flow-rules/enable-encryption-and-decryption.md)
+### [Use rules for message encryption and decryption](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 ### [Recoverable Items folder in Exchange Online](../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md)
 #### [Clean up or delete items from the Recoverable Items folder in Exchange Online](../security-and-compliance/recoverable-items-folder/clean-up-deleted-items.md)
 ## [Mail flow best practices](../mail-flow-best-practices/mail-flow-best-practices.md)
