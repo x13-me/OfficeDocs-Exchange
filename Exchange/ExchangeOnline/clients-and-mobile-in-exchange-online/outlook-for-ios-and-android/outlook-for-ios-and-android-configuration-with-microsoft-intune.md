@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
 title: Deploying Outlook for iOS and Android app configuration settings
 mms.collection: 
@@ -135,7 +135,7 @@ Outlook supports the following settings for configuration:
 <tr class="odd">
 <td>Recommendations feed</td>
 <td>On</td>
-<td>The Recommendations feed is powered by Microsoft Graph and provides a feed of your organization's Office files connected to the people in your organization. This feature is located in the Recommended section within the Search experience and only shows documents for which the user has access. Recommendations based on insights from other users in the organization can be controlled through the <a href="/graph/api/resources/iteminsights?view=graph-rest-beta">itemInsights</a> setting.</td>
+<td>The Recommendations feed is powered by Microsoft Graph and provides a feed of your organization's Office files connected to the people in your organization. This feature is located in the Recommended section within the Search experience and only shows documents for which the user has access. Recommendations based on insights from other users in the organization can be controlled through the <a href="/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true">itemInsights</a> setting.</td>
 <td>App default</td>
 </tr>
 <tr class="even">

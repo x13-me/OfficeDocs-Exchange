@@ -66,7 +66,7 @@ Looking for other information related to lagged mailbox database copies? Check o
    Eseutil.exe /r eXX /a
    ```
 Note: if the database being recovered is "out of place", make sure to specify the logfile,checkpoint and database paths in the eseutil command, for example:
-eseutil.exe /R E00 /a /l “c:\DBRecovery” /s “c:\DBRecovery” /d “c:\DBRecovery”
+eseutil.exe /R E00 /a /l "c:\DBRecovery" /s "c:\DBRecovery" /d "c:\DBRecovery"
 
 
    > [!NOTE]
