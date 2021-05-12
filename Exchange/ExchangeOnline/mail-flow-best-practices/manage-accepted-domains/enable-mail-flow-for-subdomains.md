@@ -146,4 +146,3 @@ Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
 
 For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
-
