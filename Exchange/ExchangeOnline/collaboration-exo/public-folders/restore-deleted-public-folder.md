@@ -22,7 +22,7 @@ In some cases, you can restore a public folder that has been deleted.
 
 Public folders that have been deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. Deleted folders are preserved here until the time retention period is over.
 
-For scenarios where public folder contents are put on hold using retention policy, the folders reomved from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` till the time retention hold is over.
+For scenarios where public folder contents are put on hold using retention policy, the folders removed from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` until the retention hold period is over.
 
 Any folders preserved in the public folder dumpster or under DiscoverHolds folder can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
 
