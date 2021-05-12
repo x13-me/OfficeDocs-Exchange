@@ -27,7 +27,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 >
 > - In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md).
 > 
-> - In order to send mails to Modern Public Folders within your Exchange Online Environment you need to set the domain type to internal relay if the domain contains recipientaddresses assigned to Public Folders. Directory Based Edge Blocking is cannot be used for Modern Public Folders. 
+> - In order to send email to public folders within your Exchange Online environment, you need to set the domain type to internal relay if the domain contains recipient addresses assigned to public folders. Directory-Based Edge Blocking cannot be used for public folders. 
 >
 > - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the outbound connector. For instructions, see [Use the EAC to add the domain to your outbound connector](enable-mail-flow-for-subdomains.md#use-the-eac-to-add-the-domain-to-your-outbound-connector).
 
