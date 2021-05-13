@@ -8,7 +8,7 @@ ms:contentKeyID: 47560127
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: mssserdar
+author: ms.sserdar
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -198,7 +198,7 @@ For an example of how to dismount a mailbox database, see Example 1 in [Dismount
 
 ## How do you know if this process worked?
 
-To verify that you have successfully dismounted the database, do the following:
+To verify that you have successfully dismounted the database, implement the following steps:
 
 1. From EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
@@ -228,7 +228,7 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](/pow
 
 ## How do you know if this process has worked?
 
-To verify that you have successfully removed the mailbox database, do the following:
+To verify that you have successfully removed the mailbox database, implement the following tasks:
 
 - From the EAC, select **Servers** \> **Databases**.
 

@@ -8,7 +8,7 @@ ms:contentKeyID: 61200295
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: mssserdar
+author: ms.sserdar
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ _**Applies to:** Exchange Server 2013_
 
 Connection filtering is an anti-spam feature in Microsoft Exchange Server 2013 that allows or blocks email based on the message source. Connection filtering is performed by the Connection Filtering agent that's available only on Edge Transport servers. The Connection Filtering agent relies on the IP address of the connecting mail server to determine what action, if any, to take on an inbound message.
 
-By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is there in the list of allowed IP addresses, no more processing is needed. The message is then sent. If the source IP address is specifically blocked, the SMTP connection is dropped. If the source IP address isn't specifically allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
+By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is there in the list of allowed IP addresses, no more processing is needed. The message is then sent. If the source IP address is blocked, the SMTP connection is dropped. If the source IP address isn't allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
 
 Connection filtering compares the IP address of the source mail server with the values in the following data stores: 
 - IP Allowlist
@@ -48,7 +48,7 @@ You manually maintain the IP addresses in the IP Allowlist. You can add individu
 
 ## IP Blocklist providers
 
-IP Blocklist providers are frequently referred to as *real-time blocklists*, or RBLs. IP Block List providers compile lists of mail server IP addresses that send spam. Many IP Blocklist providers also compile lists of mail server IP addresses that could be used for spam. Examples include mail servers that are configured for open relay, Internet service providers (ISPs) that assign dynamic IP addresses, and ISPs that allow SMTP mail server traffic from dial-up accounts.
+IP Blocklist providers are frequently referred to as *real-time blocklists*, or RBLs. IP Blocklist providers compile lists of mail server IP addresses that send spam. Many IP Blocklist providers also compile lists of mail server IP addresses that could be used for spam. Examples include mail servers that are configured for open relay, Internet service providers (ISPs) that assign dynamic IP addresses, and ISPs that allow SMTP mail server traffic from dial-up accounts.
 
 When you configure connection filtering to use an IP Blocklist provider, the Connection Filtering agent compares the IP address of the connecting mail server to the list of IP addresses at the IP Blocklist provider. If there's a match, the message isn't allowed in your organization. You can configure connection filtering to use multiple IP Blocklist providers, and you assign different priority values to each provider.
 
@@ -142,8 +142,8 @@ After you configure connection filtering to use an IP Blocklist provider or an I
 
 ## Configure connection filtering on Edge Transport servers that aren't directly connected to the Internet
 
-You can use connection filtering on Edge Transport servers that don't directly receive email from the Internet. In this scenario, the Edge Transport server is behind another mail server that receives and processes messages directly from the Internet. For example, your organization might send email traffic through an anti-spam server, service, or appliance before the messages reach the Edge Transport server. In this scenario, the Connection Filtering agent needs to extract the correct source IP address from the message. To extrat source IP address from the message, the Connection Filtering agent needs to parse the **Received** header field values in the message header and compare those values to the known IP addresses of the mail server that sits between the Edge Transport server and the Internet.
+You can use connection filtering on Edge Transport servers that don't directly receive email from the Internet. In this scenario, the Edge Transport server is behind another mail server that receives and processes messages directly from the Internet. For example, your organization might send email traffic through an anti-spam server, service, or appliance before the messages reach the Edge Transport server. In this scenario, the Connection Filtering agent needs to extract the correct source IP address from the message. To extract source IP address from the message, the Connection Filtering agent needs to parse the **Received** header field values in the message header and compare those values to the known IP addresses of the mail server that sits between the Edge Transport server and the Internet.
 
 Every mail server that accepts and relays an SMTP message along the delivery path adds its own **Received** header field in the message header. The **Received** header typically contains the domain name and IP address of the mail server that processed the message.
 
-If the Edge Transport server doesn't accept messages directly from the Internet, you need to use the *InternalSMTPServers* parameter on the **Set-TransportConfig** cmdlet on an Exchange 2013 Mailbox server to identify the IP address of the mail server that sit between the Edge Transport server and the Internet. The IP address data is replicated to Edge Transport servers by EdgeSync. When messages are received by the Edge Transport server, the Connection Filtering agent assumes an IP address in a **Received** header field that doesn't match a value specified by the *InternalSMTPServers* parameter is the source IP address that needs to be checked. Therefore, you need specify all internal SMTP servers in order for connection filtering to function correctly.
+If the Edge Transport server doesn't accept messages directly from the Internet, you need to use the *InternalSMTPServers* parameter on the **Set-TransportConfig** cmdlet on an Exchange 2013 Mailbox server to identify the IP address of the mail server that sits between the Edge Transport server and the Internet. The IP address data is replicated to Edge Transport servers by EdgeSync. When messages are received by the Edge Transport server, the Connection Filtering agent assumes an IP address in a **Received** header field that doesn't match a value specified by the *InternalSMTPServers* parameter is the source IP address that needs to be checked. Therefore, you need specify all internal SMTP servers in order for connection filtering to function correctly.
