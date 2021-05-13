@@ -50,7 +50,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
 - **If the recipient is external (outside of your organization)**: Contact the recipient (by phone, in person, etc.) and ask them to tell their email admin about your email delivery problem. Their email admin might need to reconfigure the recipient's mailbox so it accepts email from you.
 
-- **If the recipient is an internal group**: You might not have permission to send to the group or to one of its subgroups. In this case, the NDR will include the names of the restricted groups that you don't have permission to send to. Ask the owner of the restricted group to grant you permission to send messages to the. If you don't know the group's owner, you can find it in Outlook or Outlook on the web (formerly known as Outlook Web App) by doing the following steps:
+- **If the recipient is an internal group**: You might not have permission to send to the group or to one of its subgroups. In this case, the NDR will include the names of the restricted groups that you don't have permission to send to. Ask the owner of the restricted group to grant you permission to send messages. If you don't know the group's owner, you can find it in Outlook or Outlook on the web (formerly known as Outlook Web App) by doing the following steps:
 
   - **Outlook**: Select the NDR, double-click the group name on the **To** line, and then choose **Contact**.
 
@@ -76,7 +76,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
 
-  - If you've configured a mail flow rule (also known a a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
+  - If you've configured a mail flow rule (also known as a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
 
 - **Restrictions on large groups**: Groups with more than 5,000 members have the following restrictions automatically applied:
 
@@ -126,7 +126,7 @@ To configure the public folder to accept messages from external senders, follow 
 
     - Select **All senders**.
    
-:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configures all the senders to send messages to the public folder":::
+:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder":::
     
 6. Click **Save**.
 
@@ -150,7 +150,7 @@ To configure the public folder to accept messages from external senders, follow 
 
 ### The sender is external and their source IP address is on Microsoft's blocklist
 
-In this cases, the NDR the sender receives would include information in the **Diagnostics for administrators** section similar to this:
+In this case, the NDR the sender receives would include information in the **Diagnostics for administrators** section similar to this:
 
    `5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
 
@@ -172,7 +172,7 @@ If you have an incorrect MX record, try the following steps:
 
 1. Check the sender and recipient domains for incorrect or stale MX records by using the **Advanced diagnostics** \> **Exchange Online** test in the Microsoft Support and Recovery Assistant. For more information about the Support and Recovery Assistant, see [About the Microsoft Support and Recovery Assistant](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f).
 
-2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\>_.mail.protection.outlook.com.
+2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\ >_.mail.protection.outlook.com.
 
 3. Verify **MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
@@ -194,7 +194,7 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
        You can test your MX record and your ability to send mail from your Exchange Online organization by using the **Outbound SMTP Email** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
-     - **Scope**: If you need to route inbound internet mail to your on-premises Exchange organization, **Domains** needs to include all email domains that are used in your on-premises organization. You can use the value asterisk (\*) to also route all outbound internet mail through the on-premises organization.
+     - **Scope**: If you need to route inbound internet mail to your on-premises Exchange organization, **Domains** need to include all email domains that are used in your on-premises organization. You can use the value asterisk (\*) to also route all outbound internet mail through the on-premises organization.
 
   If the connectors are configured incorrectly, your Exchange administrator needs to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization.
 
