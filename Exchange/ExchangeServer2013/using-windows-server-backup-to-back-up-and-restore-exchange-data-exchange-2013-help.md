@@ -37,7 +37,7 @@ Before using WSB to back up Exchange data, we recommend that you familiarize you
 
   - When restoring Exchange data, all backed up databases must be restored together. You can't restore a single database.
 
-  - Bare metal restores are supported when using WSB; however, the recommended recovery approach for Exchange servers is to recover the Exchange server and then restore the data. If you are using a third-party backup application (e.g., non-Microsoft), then support for bare metal restores of Exchange may be available from your backup application vendor.
+  - Bare metal restores are supported when using WSB; however, the recommended recovery approach for Exchange servers is to recover the Exchange server and then restore the data. If you are using a third-party backup application (for example, non-Microsoft), then support for bare metal restores of Exchange may be available from your backup application vendor.
 
 The following table describes the supportability of the backup and recovery options available for Exchange 2013 with WSB.
 

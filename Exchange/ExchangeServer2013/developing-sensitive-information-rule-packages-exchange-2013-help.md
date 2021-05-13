@@ -259,9 +259,9 @@ One of the key aspects of the rule authoring process is the tuning of confidence
 
 ![Table with rule match evidence comparison](images/ITPro_MRM_DlpPatternEvidenceTuningTable.gif)
 
-If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (e.g. 75%), the match expression is complete and it can be moved to the next step.
+If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (for example, 75%), the match expression is complete and it can be moved to the next step.
 
-If the Pattern or Evidence do not meet the confidence level, then re-author it (e.g. add more corroborative evidence; remove or add additional Patterns/Evidences; etc.) and repeat this step.
+If the Pattern or Evidence do not meet the confidence level, then re-author it (for example, add more corroborative evidence; remove or add additional Patterns/Evidences; etc.) and repeat this step.
 
 Next, tune the confidence level for each Pattern or Evidence in your rules based on the results from the previous step. For each Pattern or Evidence, aggregate the number of True Positives (TP), subset of the documents that contain the entity or affinity for which the rule is being authored and that resulted in a match and the number of False Positives (FP), a subset of documents that do not contain the entity or affinity for which the rule is being authored and that also returned a match. Set confidence level for each Pattern/Evidence using the following calculation:
 

@@ -21,7 +21,7 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 - Third-party cloud filtering services
 - Managed filtering appliances
-- Hybrid environments (e.g., on-premises Exchange)
+- Hybrid environments (for example, on-premises Exchange)
 
 Mail routing in complex scenarios looks like this:
 

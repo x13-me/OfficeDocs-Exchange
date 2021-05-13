@@ -193,7 +193,7 @@ Outlook for iOS and Android supports a maximum of 25 accounts.
 
 ### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
 
-Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (e.g. FaceTime), etc. Integration with the operating system, and contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
+Yes, Outlook for iOS and Android supports contact management. Within the app, users can initiate phone calls, text messages, video chat (for example, FaceTime), etc. Integration with the operating system, and contact management functionality, depend on the client platform, where the mailbox resides, and the authentication type used:
 
 <table>
 <thead>
@@ -246,7 +246,7 @@ Yes, Outlook for iOS and Android supports contact management. Within the app, us
 
 For information on consumer accounts, see Outlook's in-app support FAQ on [People](https://acompli.helpshift.com/a/outlook-mobile/?l=en&s=people).
 
-By enabling contact synchronization between Outlook and the native contacts app, users receive the rich experience that the native operating system provides (e.g. inbound and outbound caller-ID, text messaging name resolution, etc.). Only Outlook for iOS should be used for managing contact data and not the native iOS Contacts app. With Outlook for Android, users can utilize either the native Contacts app or Outlook for managing contact data, as contact changes are synchronized bi-directionally.
+By enabling contact synchronization between Outlook and the native contacts app, users receive the rich experience that the native operating system provides (for example, inbound and outbound caller-ID, text messaging name resolution, and so on). Only Outlook for iOS should be used for managing contact data and not the native iOS Contacts app. With Outlook for Android, users can utilize either the native Contacts app or Outlook for managing contact data, as contact changes are synchronized bi-directionally.
 
 > [!NOTE]
 > In order to manage contacts (add/edit/delete) in Outlook for Android, contact sync must be enabled. This is because Outlook for Android delegates CRUD operations to the native Contacts app.
@@ -359,7 +359,7 @@ The following questions concern end-users in your organization who are using Out
 
 ### Q: My users enabled the "Save Contacts" advanced settings option. However, they are complaining that not all contacts have synchronized on their iOS devices. Are there limitations with synchronization?
 
-The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (e.g., reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
+The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (for example, reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
 
 - Outlook for iOS being suspended during sync.
 - Enabling "Save Contacts" simultaneously on multiple devices (such as an iPad and an iPhone).
