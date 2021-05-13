@@ -7,8 +7,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150580(v=EXCHG.150)
 ms:contentKeyID: 47560127
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: mssserdar
 audience: ITPro
 f1.keywords:
 - NOCSH

@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: mssserdar
+ms.author: serdars
 title: Using Basic authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -42,7 +42,7 @@ Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and A
 
 The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status. The region in which this data is synchronized into depends on the IP address in use by the mobile device at the time synchronization is set up. If you have a hybrid setup with an Exchange Online tenant, the on-premises data is not synchronized into your tenant; instead, the data is synchronized into Outlook.com in the same way as if you had an Exchange Server without hybrid. If you want to control and manage your on-premises data from within your tenant, you need to enable [hybrid Modern Authentication with Outlook for iOS and Android](./use-hybrid-modern-auth.md).
 
-Data synchronization between the Exchange on-premises environment and Exchange Online happens independent of user behavior. This characteristic ensures that new messages are delivered to the devices very quickly. For more information on how the user authentication model enables data synchronization independently of user behavior, see [Passwords and security in Outlook for iOS and Android for Exchange Server](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/passwords-and-security).
+Data synchronization between the Exchange on-premises environment and Exchange Online happens independent of user behavior. This characteristic ensures that new messages are delivered to the devices very quickly. For more information on how the user authentication model enables data synchronization independently of user behavior, see [Passwords and security in Outlook for iOS and Android for Exchange Server](passwords-and-security.md).
 
 Processing information in the Microsoft Cloud enables advanced features and capabilities, such as the categorization of email for the Focused Inbox, customized experience for travel and calendar, and improved search speed. Relying on the cloud for intensive processing and minimizing the resources required from users' devices enhances the app's performance and stability. Lastly, it allows Outlook to build features that work across all email accounts, regardless of the technological capabilities of the underlying servers (such as different versions of Exchange Server, Microsoft 365, or Office 365).
 
@@ -63,7 +63,7 @@ Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveS
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Microsoft 365 and Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges).
 
-- The AutoDetect FQDNs and IP subnet ranges defined in [Additional Microsoft 365 or Office 365 IP Addresses and URLs not included in the web services](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls). These ranges are required because the AutoDetect service establishes connections to the on-premises infrastructure.
+- The AutoDetect FQDNs and IP subnet ranges defined in [Additional Microsoft 365 or Office 365 IP Addresses and URLs not included in the web services](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls). These ranges are required because the AutoDetect service establishes connections to the on-premises infrastructure.
 
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Microsoft 365 or Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges).
 

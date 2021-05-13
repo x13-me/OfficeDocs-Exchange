@@ -7,8 +7,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
 ms:contentKeyID: 61200295
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: mssserdar
 audience: ITPro
 f1.keywords:
 - NOCSH
