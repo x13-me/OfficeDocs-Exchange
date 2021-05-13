@@ -231,7 +231,7 @@ Confidence level for the Affinity equals the combination of found Evidences with
 
 where k is the number of Evidence elements for the Affinity matched within the proximity window.
 
-Referring back to Figure 4 Example Affinity rule structure, if all three evidences are matched within the proximity sliding window, the affinity confidence level is 85.6% based on the calculation below. This exceeds the Affinity rule threshold of 65 which results in the rule matching.
+Referring back to Figure 4 Example Affinity rule structure, if all three evidences are matched within the proximity sliding window, the affinity confidence level is 85.6% based on the calculation below. This exceeds the Affinity rule threshold of 65, which results in the rule matching.
 
 CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Evidence 2</sub>) X (1 - CL<sub>Evidence 2</sub>)]
 
@@ -263,7 +263,7 @@ One of the key aspects of the rule authoring process is the tuning of confidence
 
 If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (for example, 75%), the match expression is complete and it can be moved to the next step.
 
-If the Pattern or Evidence do not meet the confidence level, then re-author it (for example, add more corroborative evidence; remove or add additional Patterns/Evidences; etc.) and repeat this step.
+If the Pattern or Evidence do not meet the confidence level, then re-author it (for example, add more corroborative evidence; remove or add extra Patterns/Evidences; etc.) and repeat this step.
 
 Next, tune the confidence level for each Pattern or Evidence in your rules based on the results from the previous step. For each Pattern or Evidence, aggregate the number of True Positives (TP), subset of the documents that contain the entity or affinity for which the rule is being authored and that resulted in a match and the number of False Positives (FP), a subset of documents that do not contain the entity or affinity for which the rule is being authored and that also returned a match. Set confidence level for each Pattern/Evidence using the following calculation:
 
@@ -277,7 +277,7 @@ Confidence Level = True Positives / (True Positives + False Positives)
 
 ## Using local languages in your XML file
 
-The rule schema supports storing of localized name and description for each of Entity and Affinity elements. Each Entity and Affinity element must contain a corresponding element in the LocalizedStrings section. To localize each element, include a Resource element as a child of the LocalizedStrings element to store name and descriptions for multiple locales for each element. The Resource element includes a required idRef attribute which matches the corresponding idRef attribute for each element that is being localized. The Locale child elements of the Resource element contains the localized name and descriptions for each specified locale.
+The rule schema supports storing of localized name and description for each of Entity and Affinity elements. Each Entity and Affinity element must contain a corresponding element in the LocalizedStrings section. To localize each element, include a Resource element as a child of the LocalizedStrings element to store name and descriptions for multiple locales for each element. The Resource element includes a required idRef attribute that matches the corresponding idRef attribute for each element that is being localized. The Locale child elements of the Resource element contains the localized name and descriptions for each specified locale.
 
 ```powershell
 <LocalizedStrings>

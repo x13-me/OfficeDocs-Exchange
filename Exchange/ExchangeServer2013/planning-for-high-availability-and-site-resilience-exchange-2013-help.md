@@ -8,9 +8,11 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Identification of requirements about high availability and site resilience
 ---
 
 # Planning for high availability and site resilience
