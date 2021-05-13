@@ -6,11 +6,13 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn482056(v=EXCHG.150)
 ms:contentKeyID: 59888992
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: msserdars
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: The manner in which administrators ensure availability of Exchange Server 2013 organization
 ---
 
 # Managed Availability
@@ -37,9 +39,9 @@ Managed availability is an internal process that runs on every Exchange 2013 ser
 
 Managed availability implemented in the form of two services:
 
-- **Exchange Health Manager Service (MSExchangeHMHost.exe)**: This is a controller process used to manage worker processes. It's used to build, execute, and start and stop the worker process, as needed. It's also used to recover the worker process in case that process fails, to prevent the worker process from being a single point of failure.
+- **Exchange Health Manager Service (MSExchangeHMHost.exe)**: This service is a controller process used to manage worker processes. It's used to build, execute, and start and stop the worker process, as needed. It's also used to recover the worker process in case that process fails, to prevent the worker process from being a single point of failure.
 
-- **Exchange Health Manager Worker process (MSExchangeHMWorker.exe)**: This is the worker process responsible for performing run-time tasks within the managed availability framework.
+- **Exchange Health Manager Worker process (MSExchangeHMWorker.exe)**: This service is the worker process responsible for performing run-time tasks within the managed availability framework.
 
 Managed availability uses persistent storage to perform its functions:
 
@@ -59,9 +61,9 @@ As illustrated in the following drawing, managed availability includes three mai
 
 ![Managed Availability in Exchange Server 2013](images/Dn482056.7a54dcb5-1e28-4bd4-87e6-0d496b4ab796(EXCHG.150).gif "Managed Availability in Exchange Server 2013")
 
-The first component is called a *Probe*. Probes are responsible for taking measurements on the server and collecting data. The results of those measurements flow into the second component, the *Monitor*. The monitor contains all of the business logic used by the system based on what is considered healthy on the data collected. Similar to a pattern recognition engine, the monitor looks for the various different patterns on all the collected measurements, and then it decides whether something is considered healthy. Finally, there are *Responders*, which are responsible for recovery and escalation actions. When something is unhealthy, the first action is to attempt to recover that component. This could include multi-stage recovery actions; for example, the first attempt may be to restart the application pool, the second may be to restart the service, the third attempt may be to restart the server, and the subsequent attempt may be to take the server offline so that it no longer accepts traffic. If the recovery actions are unsuccessful, the system escalates the issue to a human through event log notifications.
+The first component is called a *Probe*. Probes are responsible for taking measurements on the server and collecting data. The results of those measurements flow into the second component, the *Monitor*. The monitor contains all of the business logic used by the system based on what is considered healthy on the data collected. Similar to a pattern recognition engine, the monitor looks for the various different patterns on all the collected measurements, and then it decides whether something is considered healthy. Finally, there are *Responders*, which are responsible for recovery and escalation actions. When something is unhealthy, the first action is to attempt to recover that component. This recovery effort could include multi-stage recovery actions; for example, the first attempt may be to restart the application pool, the second may be to restart the service, the third attempt may be to restart the server, and the subsequent attempt may be to take the server offline so that it no longer accepts traffic. If the recovery actions are unsuccessful, the system escalates the issue to a human through event log notifications.
 
-There are three primary categories of probes: recurrent probes, notifications, and checks. Recurrent probes are synthetic transactions performed by the system to test the end-to-end user experience. Checks are the infrastructure that perform the collection of performance data, including user traffic, and measure the collected data against thresholds that are set to determine spikes in user failures. This enables the checks infrastructure to become aware when users are experiencing issues. Finally, the notification logic enables the system to take action immediately based on a critical event, without having to wait for the results of the data collected by a probe. These are typically exceptions or conditions that can be detected and recognized without a large sample set.
+There are three primary categories of probes: recurrent probes, notifications, and checks. Recurrent probes are synthetic transactions performed by the system to test the end-to-end user experience. Checks are the infrastructure that perform the collection of performance data, including user traffic, and measure the collected data against thresholds that are set to determine spikes in user failures. This measurement capability enables the checks infrastructure to become aware when users are experiencing issues. Finally, the notification logic enables the system to take action immediately based on a critical event, without having to wait for the results of the data collected by a probe. These exceptions or conditions can be detected and recognized without a large sample set.
 
 Recurrent probes run every few minutes and check some aspect of service health. These probes might transmit an email via Exchange ActiveSync to a monitoring mailbox, they might connect to an RPC endpoint, or they might verify Client Access-to-Mailbox connectivity.
 
@@ -73,7 +75,7 @@ All probes are defined on Health Manager service startup in the Microsoft.Exchan
 
 - **ServiceName**: The name of the health set that contains this probe.
 
-- **TargetResource**: The object the probe is validating. This is appended to the name of the probe when it is executed to become a probe result *ResultName*
+- **TargetResource**: The object the probe is validating. This property name is appended to the name of the probe when it is executed to become a probe result *ResultName*
 
 - **RecurrenceIntervalSeconds**: How often the probe executes.
 

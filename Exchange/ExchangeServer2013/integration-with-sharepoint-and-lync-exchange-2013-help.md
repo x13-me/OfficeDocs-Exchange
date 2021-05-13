@@ -8,9 +8,11 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Features that sync with SharePoint and Lync
 ---
 
 # Integration with SharePoint and Lync

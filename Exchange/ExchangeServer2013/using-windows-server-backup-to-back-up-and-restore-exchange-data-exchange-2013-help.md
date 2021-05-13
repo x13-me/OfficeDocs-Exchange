@@ -8,12 +8,14 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Usage of Windows Server BackUp to back up and restore Exchange data 
 ---
 
-# Using Windows Server Backup to back up and restore Exchange data
+# Using Windows Server Backup to back up and to restore data in Exchange
 
 _**Applies to:** Exchange Server 2013_
 

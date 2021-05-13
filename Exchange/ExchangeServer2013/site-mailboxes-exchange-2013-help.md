@@ -8,12 +8,14 @@ ms.reviewer:
 manager: serdars
 ms.author: dmaguire
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Elaborating on site mailboxes
 ---
 
-# Site mailboxes
+# Site mailboxes in Microsoft Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 

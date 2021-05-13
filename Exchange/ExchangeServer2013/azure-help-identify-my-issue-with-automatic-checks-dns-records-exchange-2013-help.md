@@ -6,12 +6,14 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793619(v=EXCHG.150)
 ms:contentKeyID: 62631020
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: msserdars
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ms.custom: SaRA-Download_ExRCA
+description: Azure role in helping to identify issue with automatic checks
 ---
 
 # Azure: Help Identify My issue with Automatic Checks - DNS Records
