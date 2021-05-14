@@ -363,7 +363,7 @@ And here's an example of what users see when AutoDetect isn't able to discover t
 
 In either scenario, verify that your on-premises environment is correctly configured. To do this task: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://aka.ms/OLHMAScript).
 
-When you review the output from the script, you should be seeing the following from AutoDiscover:
+When you review the output from the script, you should be seeing the following output from AutoDiscover:
 
 ```json
 {
