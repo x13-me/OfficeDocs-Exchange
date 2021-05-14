@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
 ms.reviewer: 
 description: "As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
@@ -81,7 +81,7 @@ The main steps you perform for a cutover migration are shown in the following il
 
 8. The administrator completes post-migration tasks in Microsoft 365 or Office 365 (assigns licenses to users and creates an Autodiscover Domain Name System (DNS) record), and optionally decommissions the on-premises Exchange servers.
 
-9. The administrator sends a welcome letter to users to tell them about Microsoft 365 or Office 365 and to describe how to sign in to their new mailboxes.
+9. The administrator sends a welcome letter to users to tell them about Microsoft 365 or Office 365 and to describe how to sign in to their new mailboxes. (See [Overview of Outlook e-mail profile](https://support.microsoft.com/office/overview-of-outlook-e-mail-profiles-9073a8ac-c3d6-421d-b5b9-fcedff7642fc) for information on creating new Outlook profiles).
 
 ## Ready to run a cutover migration?
 
