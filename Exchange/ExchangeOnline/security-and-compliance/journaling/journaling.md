@@ -101,9 +101,9 @@ Journaling mailboxes contain sensitive information. You must secure journaling m
 
 #### Alternate journaling mailbox
 
-When the journaling mailbox is unavailable, you may not want the undeliverable journal reports to collect in mail queues on Mailbox servers. Instead, you can configure an alternate journaling mailbox to store those journal reports. The alternate journaling mailbox receives the journal reports as attachments in the non-delivery reports (also known as NDRs or bounce messages) generated when the journaling mailbox or the server on which it's located refuses delivery of the journal report or becomes unavailable.
+When the journaling mailbox is unavailable, you may not want the undeliverable journal reports to collect in mail queues on Mailbox servers. Instead, you can configure an alternate journaling mailbox to store those journal reports. The alternate journaling mailbox receives the journal reports as attachments in the non-delivery reports (also known as NDRs or bounce messages) generated when the journaling mailbox or the server on which it's located refuses delivery of the journal report or becomes unavailable. As with the journaling mailbox, you can't designate an Exchange Online mailbox as an alternate journaling mailbox.
 
-When the journaling mailbox becomes available again, you can use the **Send Again** feature of OfficeOutlook to submit journal reports for delivery to the journaling mailbox.
+When the journaling mailbox becomes available again, you can use the **Send Again** feature in Outlook to submit journal reports for delivery to the journaling mailbox.
 
 When you configure an alternate journaling mailbox, all the journal reports that are rejected or can't be delivered across your entire Exchange organization are delivered to the alternate journaling mailbox. Therefore, it's important to make sure that the alternate journaling mailbox and the Mailbox server where it's located can support many journal reports.
 
