@@ -46,7 +46,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
 2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
-3. The public folders in this configuration cannot be accessed using OWA (also referred as Outlook Web App or Outlook on the web).
+3. The public folders in this configuration cannot be accessed using OWA (also referred to as Outlook Web App or Outlook on the web).
 
 4. Implementing public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email addresses assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
 
