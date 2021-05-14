@@ -22,9 +22,9 @@ _**Applies to:** Exchange Server 2013_
 
 Connection filtering is an anti-spam feature in Microsoft Exchange Server 2013 that allows or blocks email based on the message source. Connection filtering is performed by the Connection Filtering agent that's available only on Edge Transport servers. The Connection Filtering agent relies on the IP address of the connecting mail server to determine what action, if any, to take on an inbound message.
 
-By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is specifically allowed, the message is sent to the recipients in your organization without additional processing by other anti-spam agents. If the source IP address is specifically blocked, the SMTP connection is dropped. If the source IP address isn't specifically allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
+By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is allowed, the message is sent to the recipients in your organization without further processing by other anti-spam agents. If the source IP address is blocked, the SMTP connection is dropped. If the source IP address isn't allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
 
-Connection filtering compares the IP address of the source mail server to the values in the IP Allowlist, the IP Blocklist, IP Allowlist providers, and IP Block list providers. You need to configure at least one of these four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+Connection filtering compares the IP address of the source mail server to the values in the IP Allowlist, the IP Blocklist, IP Allowlist providers, and IP Blocklist providers. Configure at least one of these four IP address data stores for connection filtering to function. If you don't specify any IP address data, you should disable the Connection Filtering agent. For more information, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 ## IP Blocklist
 
@@ -50,15 +50,15 @@ The Connection Filtering agent checks the source IP address at the IP Allowlist 
 
 If the IP address isn't defined at any of the IP Blocklist providers, the Content Filtering agent hands the message off to the next transport agent on the Edge Transport server.
 
-For each IP Blocklist provider, you can customize the `SMTP 550` error that's returned to the sender when a message is blocked. You should identify the IP Blocklist provider that identified the message source as spam. If a legitimate source mail server is erroneously identified as a spam source, the administrator can then contact the IP Blocklist provider and take the steps necessary to remove the mail server from the IP Blocklist provider.
+For each IP Blocklist provider, you can customize the `SMTP 550` error that's returned to the sender when a message is blocked. Identify the IP Blocklist provider that identified the message source as spam. If a legitimate source mail server is erroneously identified as a spam source, the administrator can then contact the IP Blocklist provider and take the steps necessary to remove the mail server from the IP Blocklist provider.
 
 IP Blocklist providers can return different codes to identify why an IP address is defined in their lists. Most IP Blocklist providers return bitmask or absolute value data types. Within these data types, the IP Blocklist provider can use multiple values to classify the IP address by threat type.
 
 There are issues to consider when using IP Blocklist providers:
 
-- Outages or delays at the IP Blocklist provider service can cause delays in the processing of messages on the Edge Transport server. You should always select reliable IP Blocklist providers.
+- Outages or delays at the IP Blocklist provider service can cause delays in the processing of messages on the Edge Transport server. Select reliable IP Blocklist providers.
 
-- Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. You should always select IP Blocklist providers that provide clear procedures for evaluation and removal from their services.
+- Source servers that you know to be legitimate can be erroneously identified as spam sources. For example, the mail server can be unintentionally configured to act as an open relay. Select IP Blocklist providers that provide clear procedures for evaluation and removal from their services.
 
 ## Bitmask and absolute value examples
 
@@ -128,15 +128,15 @@ For absolute value types, the IP Blocklist provider returns explicit responses t
 
 ## IP Allowlist providers
 
-IP Allowlist providers are also known as *safe lists* or *allowlists*. IP Allowlist providers are configured just like IP Blocklist providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allow List provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Blocklist providers are used much more frequently than IP Allowlist providers. Choose your IP Allowlist providers carefully.
+IP Allowlist providers are also known as *safe lists* or *allowlists*. IP Allowlist providers are configured just like IP Blocklist providers, but the results are the opposite: they define mail server IP addresses that are definitely not associated with spam activity. If the IP address of the connecting mail server is defined at an IP Allowlist provider, the message is exempt from processing by other Exchange anti-spam agents. For this reason, IP Blocklist providers are used much more frequently than IP Allowlist providers. Choose your IP Allowlist providers carefully.
 
 ## Test IP Blocklist providers and IP Allowlist providers
 
-After you configure connection filtering to use an IP Block List provider or an IP Allow List provider, you can run tests to verify that the providers are working correctly. Most providers provide test IP addresses that you can use to test their services. When you test a provider, the Connection Filtering agent issues a DNS query that should result in a specific response from the provider. For more information about how to test IP addresses against an IP Block List provider service or an IP Allow List provider service, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+After you configure connection filtering to use an IP Blocklist provider or an IP Allowlist provider, you can run tests to verify that the providers are working correctly. Most providers provide test IP addresses that you can use to test their services. When you test a provider, the Connection Filtering agent issues a DNS query that should result in a specific response from the provider. For more information about how to test IP addresses against an IP Blocklist provider service or an IP Allowlist provider service, see [Manage Connection Filtering on Edge Transport Servers](manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 ## Configure connection filtering on Edge Transport servers that aren't directly connected to the Internet
 
-You can use connection filtering on Edge Transport servers that don't directly receive email from the Internet. In this scenario, the Edge Transport server is behind another mail server that receives and processes messages directly from the Internet. For example, your organization might send email traffic through an anti-spam server, service, or appliance before the messages reach the Edge Transport server. In this scenario, the Connection Filtering agent needs to extract the correct source IP address from the message. To do this, the Connection Filtering agent needs to parse the **Received** header field values in the message header and compare those values to the known IP addresses of the mail server that sits between the Edge Transport server and the Internet.
+You can use connection filtering on Edge Transport servers that don't directly receive email from the Internet. In this scenario, the Edge Transport server is behind another mail server that receives and processes messages directly from the Internet. For example, your organization might send email traffic through an anti-spam server, service, or appliance before the messages reach the Edge Transport server. In this scenario, the Connection Filtering agent needs to extract the correct source IP address from the message. To extract source IP address, the Connection Filtering agent needs to parse the **Received** header field values in the message header and compare those values to the known IP addresses of the mail server that sits between the Edge Transport server and the Internet.
 
 Every mail server that accepts and relays an SMTP message along the delivery path adds its own **Received** header field in the message header. The **Received** header typically contains the domain name and IP address of the mail server that processed the message.
 

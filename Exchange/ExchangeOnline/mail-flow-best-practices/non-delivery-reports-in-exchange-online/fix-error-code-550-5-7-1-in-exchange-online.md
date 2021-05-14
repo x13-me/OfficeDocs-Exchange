@@ -28,7 +28,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this)|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue)|
 
 This information also applies to error codes 5.7.0 through 5.7.999 in Exchange Online and Microsoft 365 or Office 365. There can be several causes for dsn error code 5.7.1, for which solutions are provided later in this topic.
 
@@ -44,7 +44,7 @@ Typically, this error indicates a security setting in your organization or the r
 
 - Your message was routed to the wrong email server.
 
-## I got this bounce message. How do I fix it?
+## I got this bounce message. How do I fix this issue?
 
 Typically, you can't fix the problem yourself. You'll need the recipient or the recipient's email admin to fix the configuration on their end. However, here are some steps that you can try:
 
@@ -64,7 +64,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
    To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
-If none of the previous steps apply or solve your issue, contact the recipient's email administrator, and refer them to the [I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this) section later in this topic.
+If none of the previous steps apply or solve your issue, contact the recipient's email administrator, and refer them to the [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue) section later in this topic.
 
 ### I'm the owner of a restricted group. What can I do?
 
@@ -72,7 +72,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Remove the sender restriction**: Change your group settings to unblock the sender in one of the following ways:
 
-  - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
+  - Add the sender to the group's allowed senders list. You must create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
 
   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
 
@@ -92,7 +92,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
   - [Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 
-## I'm an email admin. How can I fix this?
+## I'm an email admin. How can I fix this issue?
 
 If the steps in the earlier sections don't solve the issue for the sender, the solution likely requires action by the **recipient's** email admin. The scenarios and solutions are described in this section.
 

@@ -49,9 +49,9 @@ This topic shows you how to perform configuration tasks related to managing your
 
 For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](/powershell/module/exchange/New-MailboxDatabase).
 
-## How do you know this worked?
+## How do you know this process worked?
 
-To verify that you have successfully created a database, do the following:
+To verify that you have successfully created a database, implement the following tasks:
 
 - From the EAC, verify that the mailbox database you created is listed in the **Databases** page.
 
@@ -69,9 +69,9 @@ For detailed syntax and parameter information, see [Get-MailboxDatabase](/powers
 
 For an example of how to get mailbox database properties, see Example 2 in [New-MailboxDatabase](/powershell/module/exchange/New-MailboxDatabase).
 
-## How do you know that this worked?
+## How do you know that this process worked?
 
-To verify that you have successfully retrieved your mailbox database information, do the following:
+To verify that you have successfully retrieved your mailbox database information, implement the following task:
 
 From the Shell, verify that all your mailbox database information is represented correctly.
 
@@ -144,9 +144,9 @@ From the Shell, verify that all your mailbox database information is represented
 
 For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](/powershell/module/exchange/Set-MailboxDatabase).
 
-## How do you know that this has worked?
+## How do you know that this process has worked?
 
-To verify that you have successfully set the attributes, do the following:
+To verify that you have successfully set the attributes, implement the following tasks:
 
 - Verify that your changes are saved in the EAC.
 
@@ -164,9 +164,9 @@ For detailed syntax and parameter information, see [Move-DatabasePath](/powershe
 
 For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](/powershell/module/exchange/Move-DatabasePath).
 
-## How do you know if this worked?
+## How do you know if this process worked?
 
-To verify that you have successfully moved the database path, do the following:
+To verify that you have successfully moved the database path, implement the following steps:
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
@@ -180,7 +180,7 @@ For detailed syntax and parameter information, see [Mount-Database](/powershell/
 
 For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](/powershell/module/exchange/Mount-Database).
 
-## How do you know if this has worked?
+## How do you know if this process has worked?
 
 From the Shell, run the following command to retrieve mailbox database properties for all mailbox databases.
 
@@ -196,9 +196,9 @@ For detailed syntax and parameter information, see [Dismount-Database](/powershe
 
 For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](/powershell/module/exchange/Dismount-Database).
 
-## How do you know whether this worked?
+## How do you know whether this process worked?
 
-To verify that you have successfully dismounted the database, do the following:
+To verify that you have successfully dismounted the database, implement the following steps:
 
 1. From EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
@@ -226,9 +226,9 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](/pow
 
 3. When the dialog box appears stating that the database was removed successfully, note the location of the Exchange 2013 database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
 
-## How do you know whether this has worked?
+## How do you know whether this process has worked?
 
-To verify that you have successfully removed the mailbox database, do the following:
+To verify that you have successfully removed the mailbox database, implement the following tasks:
 
 - From the EAC, select **Servers** \> **Databases**.
 
