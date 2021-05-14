@@ -23,17 +23,11 @@ manager: serdars
 In Exchange Online, you can create DLP policies that contain rules for not only traditional message classifications and existing mail flow rules (also known as transport rules) but also combine these with rules for sensitive information found within messages. The existing mail flow rules framework offers rich capabilities to define messaging policies, covering the entire spectrum of soft to hard controls. Examples include:
 
 - Limiting the interaction between recipients and senders, including interactions between departmental groups inside an organization.
-
 - Applying separate policies for communications within and outside of an organization.
-
 - Preventing inappropriate content from entering or leaving an organization.
-
 - Filtering confidential information.
-
 - Tracking or archiving messages that are sent to or received from specific individuals.
-
 - Redirecting inbound and outbound messages for inspection before delivery.
-
 - Applying disclaimers to messages as they pass through the organization.
 
 Mail flow rules allow you to apply messaging policies to email messages that flow through the mail flow pipeline in the Transport service on Mailbox servers and on Edge Transport servers. These rules allow system administrators to enforce messaging policies, help keep messages more secure, help to protect messaging systems, and help prevent accidental information loss. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
@@ -50,7 +44,7 @@ The rules can also be used in the exception part of a rule definition. Their use
 
 [Data loss prevention](data-loss-prevention.md)
 
-[Sensitive information type entity definitions](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-worldwide)
+[Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 

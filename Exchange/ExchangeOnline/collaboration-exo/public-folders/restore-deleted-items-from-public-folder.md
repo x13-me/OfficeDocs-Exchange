@@ -5,24 +5,24 @@ manager: serdars
 ms.topic: article
 author: Benny-54
 ms.service: exchange-online
-ms.reviewer: 
-ms.collection: 
+ms.reviewer:
+ms.collection:
 - exchange-online
 description: Restore deleted items of public folder from the recycle bin of public folder.
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Restore deleted items from public folder 
+title: Restore deleted items from public folder
 
 ---
 
-# Restore deleted items from public folder 
+# Restore deleted items from public folder
 
 The items deleted from public folders are stored in the recoverable items (dumpster) of public folder until the retention period is over.
 
 ## Permissions required
 
-The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission?view=exchange-ps). 
+The user restoring items from the public folder must have atleast the `Author` public folder client permission assigned. For more information on public folder client permissions, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission).
 
 ## Restore deleted items
 
