@@ -57,6 +57,8 @@
 ### [Auditing reports in standalone EOP](../standalone-eop/auditing-reports-in-eop.md)
 ### [View the admin audit log in standalone EOP](../standalone-eop/view-the-admin-audit-log-eop.md)
 ### [Run an administrator role group report in standalone EOP](../standalone-eop/admin-role-group-report-eop.md)
+### [Mail flow rules (transport rules) in EOP](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+### [Message trace in EOP](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)
 ### [Configure EOP for hybrid environments](../standalone-eop/configure-eop-spam-protection-hybrid.md)
 ### [Move domains and settings between standalone EOP organizations](../standalone-eop/move-domains-and-settings-between-eop-orgs.md)
 ### [Sample script for applying standalone EOP settings to multiple tenants](../standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants.md)
