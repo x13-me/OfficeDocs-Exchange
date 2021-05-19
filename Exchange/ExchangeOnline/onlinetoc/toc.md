@@ -38,7 +38,7 @@
 ### [Moderated recipients](../recipients-in-exchange-online/moderated-recipients-exo/moderated-recipients-exo.md)
 #### [Configure moderated recipients](../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md)
 ### [Manage mail-enabled security groups](../recipients-in-exchange-online/manage-mail-enabled-security-groups.md)
-### [Manage group access to Microsoft 365 groups](../recipients-in-exchange-online/manage-group-access-to-microsoft-365-groups.md)
+### [Manage guest access to Microsoft 365 groups](../recipients-in-exchange-online/manage-group-access-to-microsoft-365-groups.md)
 ### [Manage mail contacts](../recipients-in-exchange-online/manage-mail-contacts.md)
 ### [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md)
 ### [Manage resource mailboxes](../recipients-in-exchange-online/manage-resource-mailboxes.md)
