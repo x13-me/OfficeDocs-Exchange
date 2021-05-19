@@ -269,7 +269,7 @@ When you're finished, click **Save**.
 
    ![The TXT proof of domain ownership record for the custom certificate domain.](../../media/fd0ab875-925d-46ea-96fd-00924e6f298f.png)
 
-For more information, see [Add your domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+For more information, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 ## Step 4: Create a connector from your organization's email server to Office 365 to receive messages from the email add-on service
 
@@ -393,7 +393,7 @@ This example creates a connector from Office 365 to your organization's email se
 New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-outboundconnector).
+For detailed syntax and parameter information, see [New-OutboundConnector](/powershell/module/exchange/new-outboundconnector).
 
 ### Use Exchange Online PowerShell to create a mail flow rule to route unprocessed messages to the email add-on service
 
@@ -415,7 +415,7 @@ This example creates the mail flow rule with these settings:
 New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ### Use Exchange Online PowerShell to create a connector (from your organization's email server to Office 365) to receive messages from the email add-on service
 

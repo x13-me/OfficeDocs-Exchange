@@ -129,7 +129,7 @@ The connector is created.
 > [!NOTE]
 > If you need more information about the setup, click the **Help** or **Learn More** links.
 
-20. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+20. At the end, ensure your connector validates. If the connector does not validate, see [Validate connectors](validate-connectors.md) for help resolving issues.
 
 ### For Classic EAC
 
@@ -192,7 +192,7 @@ You can set up a connector to apply security restrictions to email that your par
 The connector is created.
 
 > [!NOTE]
-> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through the setup.
+> If you need more information, you can click the **Help** or **Learn More** links. In particular, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help in configuring certificate or IP address settings for this connector. The wizard will guide you through the setup.
 
 ### For Classic EAC
 
