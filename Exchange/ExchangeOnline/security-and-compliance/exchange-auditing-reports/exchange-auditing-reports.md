@@ -63,11 +63,11 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
 - **Run an administrator role group report**<sup>\*</sup>: Use this report to search for changes made to administrator role groups. For more information, see [Search the role group changes or admin audit logs](search-role-group-changes.md).
 
-- **Run an in-place discovery and hold report**: Use this report to find mailboxes that have been put on, or removed from, In-Place Hold. For more information, see:
+- **Run an In-Place eDiscovery & Hold report**: Use this report to find mailboxes that have been put on, or removed from, In-Place Hold. For more information, see:
   - [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md)
   - [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md)
 
-- **Run a per-mailbox litigation hold report**: Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md).
+- **Run a per-mailbox Litigation Hold report**: Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md).
 
 - **Run the admin audit log report**<sup>\*</sup>: Use this report to view entries from the admin audit log. Instead of exporting the admin audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by admins in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see [View the admin audit log](view-administrator-audit-log.md).
 
