@@ -73,7 +73,7 @@ To verify that you've disabled access to the EAC on the server, replace _\<Serve
  -Identity "MBX01\ecp (Default Web Site)" | Format-List AdminEnabled
 ```
 
-When you open https://\<servername\>/ecp or from the internal network, your own **Settings** \> **Options** page in Outlook on the web opens instead of the EAC.
+When you open `https://<servername>/ecp` or from the internal network, your own **Settings** \> **Options** page in Outlook on the web opens instead of the EAC.
 
 ## Step 2: Give access to the EAC on the internal network
 
@@ -246,11 +246,11 @@ net start w3svc
 
 To verify that you have successfully disabled access to the EAC on an Exchange server, perform the following steps:
 
-1. Test your organization's internal and external URL for Outlook on the web. For example, if the external URL is https://mail.contoso.com/owa, and the internal URL is https://mbx01.contoso.com/owa use the following procedures to verify your configuration:
+1. Test your organization's internal and external URL for Outlook on the web. For example, if the external URL is <https://mail.contoso.com/owa>, and the internal URL is <https://mbx01.contoso.com/owa> use the following procedures to verify your configuration:
 
    - Verify that internal and external users can open their mailboxes by using Outlook on the web, including the **Settings** \> **Options** page.
 
-   - Verify that https://mail.contoso.com/ecp and https://mbx01.contoso.com/ecp return either of the following results:
+   - Verify that <https://mail.contoso.com/ecp> and <https://mbx01.contoso.com/ecp> return either of the following results:
 
      - **404 - website not found**
 
@@ -258,7 +258,7 @@ To verify that you have successfully disabled access to the EAC on an Exchange s
 
 2. Verify that administrators can access the EAC on the internal network based on your configuration selection:
 
-   - **Second Exchange server**: If the second Exchange server is named MBX02, verify that https://mbx02.contoso.com/ecp opens the EAC.
+   - **Second Exchange server**: If the second Exchange server is named MBX02, verify that <https://mbx02.contoso.com/ecp> opens the EAC.
 
-   - **New EAC web site on the existing Exchange server**: If the IP address of the new EAC web site is 10.1.1.12, verify that https://10.1.1.12/ecp opens the EAC.
+   - **New EAC web site on the existing Exchange server**: If the IP address of the new EAC web site is 10.1.1.12, verify that <https://10.1.1.12/ecp> opens the EAC.
 ::: moniker-end

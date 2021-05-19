@@ -3,7 +3,7 @@ localization_priority: Normal
 description: In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer: 
 f1.keywords:
@@ -19,6 +19,9 @@ manager: serdars
 ---
 
 # Retention tags and retention policies
+
+> [!IMPORTANT]
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
@@ -122,7 +125,7 @@ A retention policy can have the following retention tags:
 > [!NOTE]
 > Although a retention policy doesn't need to have any retention tags linked to it, we don't recommend using this scenario. If mailboxes with retention policies don't have retention tags linked to them, this may cause mailbox items to never expire.
 
-A retention policy can contain both archive tags (tags that move items to the personal archive mailbox) and deletion tags (tags that delete items). A mailbox item can also have both types of tags applied. Archive mailboxes don't have a separate retention policy. The same retention policy is applied to the primary and archive mailbox.
+A retention policy can contain both archive tags (tags that move items to the personal archive mailbox) and deletion tags (tags that delete items). A mailbox item can also have both types of tags applied.  From a retention perspective, the primary mailbox and online archive should not be looked at as separate entities.  Retention settings are applied to the primary mailbox, and by design, extend to the online archive. The online archive is an extension of the primary mailbox.  
 
 When planning to create retention policies, you must consider whether they'll include both archive and deletion tags. As mentioned earlier, a retention policy can have one DPT that uses the **Move to Archive** action and one DPT that uses either the **Delete and Allow Recovery** or **Permanently Delete** action. The DPT with the **Move to Archive** action must have a lower retention age than the DPT with a deletion action. For example, you can use a DPT with the **Move to Archive** action to move items to the archive mailbox in two years, and a DPT with a deletion action to remove items from the mailbox in seven years. Items in both primary and archive mailboxes will be deleted after seven years.
 
@@ -134,7 +137,7 @@ Exchange Setup creates the retention policy **Default MRM Policy**. The Default 
 
 You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention action, disable a tag or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the [Managed Folder Assistant](retention-tags-and-policies.md#MFA).
 
-For more details, including a list of retention tags linked to the policy, see [Default Retention Policy in Exchange Online and Exchange Server](default-retention-policy.md).
+For more information, including a list of retention tags linked to the policy, see [Default Retention Policy in Exchange Online and Exchange Server](default-retention-policy.md).
 
 ## Managed Folder Assistant
 <a name="MFA"> </a>
@@ -156,7 +159,7 @@ A mailbox item moved from one folder to another inherits any tags applied to the
 
 ### Applying a retention tag to a folder in the archive
 
-When the user applies a personal tag to a folder in the archive, if a folder with the same name exists in the primary mailbox and has a different tag, the tag on that folder in the archive changes to match the one in the primary mailbox. This is by design to avoid any confusion about items in a folder in the archive having a different expiry behavior than the same folder in the user's primary mailbox. For example, the user has a folder named Project Contoso in the primary mailbox with a Delete - 3 years tag and a Project Contoso folder also exists in the archive mailbox. If the user applies a Delete - 1 year personal tag to delete items in the folder after 1 year. When the mailbox is processed again, the folder reverts to the Delete - 3 Years tag.
+When the user applies a personal tag to a folder in the archive, if a folder with the same name exists in the primary mailbox and has a different tag, the tag on that folder in the archive changes to match the one in the primary mailbox. This is by design to avoid any confusion about items in a folder in the archive having a different expiry behavior than the same folder in the user's primary mailbox. For example, the user has a folder named Project Contoso in the primary mailbox with a Delete - three years tag and a Project Contoso folder also exists in the archive mailbox. If the user applies a Delete - one year personal tag to delete items in the folder after one year. When the mailbox is processed again, the folder reverts to the Delete - three Years tag.
 
 ### Removing or deleting a retention tag from a retention policy
 
