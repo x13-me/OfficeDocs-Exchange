@@ -190,9 +190,9 @@ If an existing role group is close in terms of the permissions and settings that
 
    - **Write scope**: The existing write scope is selected, but you can select **Default** or another custom recipient write scope that you've already created.
 
-   - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the roles that are assigned to the role group.
+   - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png) to modify the roles that are assigned to the role group.
 
-   - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the role group membership.
+   - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png) to modify the role group membership.
 
    When you're finished, click **Save** to create the role group.
 
