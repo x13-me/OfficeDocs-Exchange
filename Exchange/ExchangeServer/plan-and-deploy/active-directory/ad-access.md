@@ -107,7 +107,7 @@ The following guidelines will help you minimize problems or issues when you reco
 
 - If you deleted an Exchange configuration object using Exchange management tools, don't restore the object. Instead, create the object again using the Exchange management tools (the Exchange admin center or the Exchange Management Shell).
 
-- If you deleted an Exchange configuration object without using the Exchange management tools, recover the object as soon as possible. The more administrative and configuration changes that are mae after the deletion, the more likely that restoring the objects will result in misconfiguration.
+- If you deleted an Exchange configuration object without using the Exchange management tools, recover the object as soon as possible. The more administrative and configuration changes that are made after the deletion, the more likely that restoring the objects will result in misconfiguration.
 
 - If you recover deleted Exchange recipients (contacts, users, or distribution groups), monitor closely for collisions and errors relating to the recovered objects. If Exchange policies or other recipient configuration settings were modified after the deletion, re-apply the current policies to the restored recipients to ensure that they're configured correctly.
 
