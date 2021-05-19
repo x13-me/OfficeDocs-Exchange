@@ -26,6 +26,8 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > - If you have a limited number of subdomains, and know all the subdomain names, we recommend setting up each subdomain as an accepted domain in the Microsoft 365 admin center, instead of using the procedures in this topic. By setting up each subdomain separately, you can have finer control over mail flow and can include unique mail flow rules (also known transport rules) for each subdomain. For more information about adding a domain in the Microsoft 365 admin center, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 >
 > - In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md).
+> 
+> - In order to send email to public folders within your Exchange Online environment, you need to set the domain type to internal relay if the domain contains recipient addresses assigned to public folders. Directory-Based Edge Blocking cannot be used for public folders. 
 >
 > - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that originates from Office 365 to your organization. For instructions, see [Use the EAC to add the domain to connector that originates from Office 365 to your organization](#use-the-eac-to-add-the-domain-to-connector-that-originates-from-office-365-to-your-organization).
 
@@ -144,5 +146,12 @@ This example sets up match subdomains for the contoso.com domain.
 ```powershell
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
-
 For detailed syntax and parameter information, see [Set-AcceptedDomain](/powershell/module/exchange/set-accepteddomain).
+
+#### How do you know this worked?
+
+To verify that you've successfully added match subdomains to a domain using Exchange Online PowerShell, run the following command to verify the _MatchSubdomains_ property value:
+
+```powershell
+Get-AcceptedDomain | Format-List Name,MatchSubdomains
+```
