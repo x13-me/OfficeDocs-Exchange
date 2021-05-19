@@ -2,6 +2,34 @@
 
 
 
+## Week of May 10, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/11/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 5/12/2021 | [Procedures for Client Access Rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules) | modified |
+| 5/12/2021 | [Managing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android) | modified |
+| 5/12/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 5/12/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
+| 5/12/2021 | [Account setup with modern authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication) | modified |
+| 5/12/2021 | [Restore deleted items from public folder](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | modified |
+| 5/12/2021 | [Shared mailboxes in Exchange Online](/Exchange/collaboration-exo/shared-mailboxes) | modified |
+| 5/12/2021 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
+| 5/12/2021 | [Classic EAC - Get to classic and features](/Exchange/features-in-classic-eac) | modified |
+| 5/12/2021 | [New EAC - Get to new EAC and Features](/Exchange/features-in-new-eac) | modified |
+| 5/12/2021 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
+| 5/12/2021 | [Create a custom DLP policy](/Exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy) | modified |
+| 5/12/2021 | [Data loss prevention](/Exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) | modified |
+| 5/12/2021 | [Create an organization relationship in Exchange Online](/Exchange/sharing/organization-relationships/create-an-organization-relationship) | modified |
+| 5/12/2021 | [Retention tags and retention policies](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+| 5/12/2021 | [Create and manage room mailboxes](/Exchange/recipients/room-mailboxes?view=exchserver-2016) | modified |
+| 5/14/2021 | [Configure Exchange Server public folders for a hybrid deployment](/Exchange/hybrid-deployment/set-up-modern-hybrid-public-folders) | modified |
+| 5/14/2021 | [Perform a Google Workspace migration](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 5/14/2021 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
+| 5/14/2021 | [Access to Active Directory by Exchange servers](/Exchange/plan-and-deploy/active-directory/ad-access?view=exchserver-2016) | modified |
+
+
 ## Week of May 03, 2021
 
 
@@ -670,20 +698,3 @@
 | 4/15/2021 | [What's new in Exchange admin center](/Exchange/whats-new) | modified |
 | 4/16/2021 | [Managed Store in Exchange 2016 and Exchange 2019](/Exchange/architecture/mailbox-servers/managed-store/managed-store?view=exchserver-2016) | modified |
 | 4/16/2021 | [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center) | modified |
-
-
-## Week of April 05, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/6/2021 | [Transport options in Exchange hybrid deployments](/Exchange/transport-options) | modified |
-| 4/6/2021 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
-| 4/6/2021 | [Integrating sensitive information rules with mail flow rules in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules) | modified |
-| 4/8/2021 | [Configure mail flow using connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
-| 4/8/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
-| 4/8/2021 | [Managing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android) | modified |
-| 4/8/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
-| 4/8/2021 | [Using Outlook for iOS and Android in the Government Community Cloud](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud) | modified |
-| 4/8/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
-| 4/8/2021 | [Sensitivity labeling and protection in Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
