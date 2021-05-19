@@ -364,14 +364,18 @@ During completion, another incremental sync is run to copy any changes that have
 
 3. Run the following command:
 
-   ```CSV
+   ```PowerShell
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
 
    > [!TIP]
    > See [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) for an explanation of all of the individual parameters you can use with this cmdlet.
 
-4. Start the migration batch.
+4. Run the following command to start the migration batch:
+
+   ```PowerShell
+   Start-MigrationBatch -Identity gmailBatch
+   ```
 
    > [!NOTE]
    > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
