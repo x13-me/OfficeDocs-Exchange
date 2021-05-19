@@ -22,7 +22,7 @@ Exchange Online Protection (EOP) is the cloud-based filtering service that helps
 
 However, EOP is also available in the following on-premises scenarios:
 
-- **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email solution.
+- **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email environment.
 - **In a hybrid deployment**: EOP can be configured to protect your on-premises Exchange environment and control mail routing when you have a mix of on-premises and cloud mailboxes. For more information about hybrid, see [Exchange Server hybrid deployments](../exchange-hybrid.md).
 
 In these scenarios, EOP can simplify the management of your email environment and alleviate many of the burdens that come with maintaining on-premises hardware and software.
@@ -59,9 +59,9 @@ To learn more about EOP, check out the [Exchange Online Protection service descr
 
 [Auditing reports in standalone EOP](auditing-reports-in-eop.md)
 
-[View the admin audit log in standalone EOP](view-the-admin-audit-log-eop.md)
+[View the admin audit log](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
 
-[Run an administrator role group report in standalone EOP](admin-role-group-report-eop.md)
+[Run an administrator role group report](/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)
 
 **Anti-spam**:
 

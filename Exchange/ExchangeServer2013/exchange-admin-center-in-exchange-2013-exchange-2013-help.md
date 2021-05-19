@@ -21,9 +21,9 @@ The Exchange admin center (EAC) is the web-based management console in Microsoft
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](../ExchangeOnline/exchange-admin-center.md).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
+Looking for the standalone Exchange Online Protection (EOP) version of this topic? See [Exchange admin center in EOP](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
 
 ## Accessing the EAC
 
