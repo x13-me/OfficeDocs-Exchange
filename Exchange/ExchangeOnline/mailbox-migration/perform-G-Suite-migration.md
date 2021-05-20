@@ -364,7 +364,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 3. Run the following command:
 
-   ```CSV
+   ```PowerShell
    New-MigrationBatch -SourceEndpoint gmailEndpoint -Name gmailBatch -CSVData $([System.IO.File]::ReadAllBytes("C:\\somepath\\gmail.csv")) -TargetDeliveryDomain "o365.fabrikaminc.net"
    ```
 
@@ -373,7 +373,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 4. Run the following command to start the migration batch:
 
-   ```CSV
+   ```PowerShell
    Start-MigrationBatch -Identity gmailBatch
    ```
 
