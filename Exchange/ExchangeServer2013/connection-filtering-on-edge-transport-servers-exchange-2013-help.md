@@ -8,7 +8,7 @@ ms:contentKeyID: 61200295
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: msserdars
+author: serdars
 audience: ITPro
 f1.keywords:
 - NOCSH

@@ -2,7 +2,7 @@
 title: 'Developing sensitive information rule packages: Exchange 2013 Help'
 TOCTitle: Developing sensitive information rule packages
 ms.author: serdars
-author: msserdars
+author: serdars
 manager: serdars
 ms.topic: article
 ms.reviewer: 
