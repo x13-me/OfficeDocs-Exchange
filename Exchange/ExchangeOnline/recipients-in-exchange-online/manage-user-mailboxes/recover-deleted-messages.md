@@ -82,7 +82,7 @@ This example returns all of the available recoverable deleted messages with the 
 > [!TIP]
 > Use the **Get-RecoverableItems** cmdlet to create a search query to find an Outlook item. Once you have a list of results you can use properties like last modified date, item type, etc. to narrow the amount of items restored or to restore a specific item.
 
-For detailed syntax and parameter information, see [Get-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/get-recoverableitems?).
+For detailed syntax and parameter information, see [Get-RecoverableItems](/powershell/module/exchange/get-recoverableitems?).
 
 #### How do you know this worked?
 
@@ -117,7 +117,7 @@ Date range: 3/15/2019 to 3/25/2019
 
 Number of mailboxes processed simultaneously: 2
 
-For detailed syntax and parameter information, see [Restore-RecoverableItems](https://docs.microsoft.com/powershell/module/exchange/restore-recoverableitems?).
+For detailed syntax and parameter information, see [Restore-RecoverableItems](/powershell/module/exchange/restore-recoverableitems?).
 
 ### How do you know this worked?
 
@@ -141,4 +141,4 @@ To verify that you have successfully recovered messages to the user's mailbox, h
 
 ## Related article
 
-Are you using Exchange Server? See [Recover deleted messages in a user's mailbox in Exchange Server](https://docs.microsoft.com/exchange/recipients/user-mailboxes/recover-deleted-messages?).
+Are you using Exchange Server? See [Recover deleted messages in a user's mailbox in Exchange Server](/exchange/recipients/user-mailboxes/recover-deleted-messages?).
