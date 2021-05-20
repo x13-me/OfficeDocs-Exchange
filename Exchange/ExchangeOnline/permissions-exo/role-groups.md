@@ -41,7 +41,7 @@ A role group is a special kind of universal security group (USG) that's used in 
 
 1. In the new EAC, go to **Roles** \> **Admin roles**. All of the role groups in your organization are listed here.
 
-2. Select a role group. The details pane shows the **Name**, **Description**, **Managed by**, **Write scope**, **Assigned**, and **Permissions** of the role group. 
+2. Select a role group. The details pane shows the **Name**, **Description**, **Managed by**, **Write scope**, **Assigned**, and **Permissions** of the role group.
 
 ### Use the Classic EAC to view role groups
 
@@ -92,10 +92,10 @@ When you create a new role group, you need to configure all of the settings your
     - **Description**: Enter an optional description for the role group.
 
     - **Write scope**: The default value is **Default**, but you can also select a custom recipient write scope from the drop-down list.
-    
+
 3. In **Add permissions** section, select the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
-   
-4. In **Assign admins** section, select the users to assign to this role group and click **Next**. They'll have permissions to manage the roles that you assigned. 
+
+4. In **Assign admins** section, select the users to assign to this role group and click **Next**. They'll have permissions to manage the roles that you assigned.
 
 5. In **Review role group and finish** section, verify all the details, and then click **Add role group**.
 
@@ -127,18 +127,14 @@ To create a new role group, use the following syntax:
 New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...> -ManagedBy <Managers> -Members <Members> -CustomRecipientWriteScope "<Existing Write Scope Name>"
 ```
 
-  - The _Roles_ parameter specifies the management roles to assign to the role group by using the following syntax `"Role1","Role1",..."RoleN"`. You can see the available roles by using the **Get-ManagementRole** cmdlet.
-
-  - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).
-
-  - The _ManagedBy_ parameter specifies the delegates who can modify and remove the role group by using the following syntax: `"Delegate1","Delegate2",..."DelegateN"`. Note that this setting isn't available in the EAC.
-
-  - The _CustomRecipientWriteScope_ parameter specifies the existing custom recipient write scope to apply to the role group. You can see the available custom recipient write scopes by using the **Get-ManagementScope** cmdlet.
+- The _Roles_ parameter specifies the management roles to assign to the role group by using the following syntax `"Role1","Role1",..."RoleN"`. You can see the available roles by using the **Get-ManagementRole** cmdlet.
+- The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).
+- The _ManagedBy_ parameter specifies the delegates who can modify and remove the role group by using the following syntax: `"Delegate1","Delegate2",..."DelegateN"`. Note that this setting isn't available in the EAC.
+- The _CustomRecipientWriteScope_ parameter specifies the existing custom recipient write scope to apply to the role group. You can see the available custom recipient write scopes by using the **Get-ManagementScope** cmdlet.
 
 This example creates a new role group named "Limited Recipient Management" with the following settings:
 
 - The Mail Recipients and Mail Enabled Public Folders roles are assigned to the role group.
-
 - The users Kim and Martin are added as members. Because no custom recipient write scope was specified, Kim and Martin can manage any recipient in the organization.
 
 ```PowerShell
@@ -166,20 +162,17 @@ If an existing role group is close in terms of the permissions and settings that
 2. Select the role group that you want to copy and then click **Copy role group**.
 
 3. In the **Copy role group** window, under **Set up the basics** section, configure the following settings and click **Next**:
-
    - **Name**: The default value is "Copy of _\<Role Group Name\>_, but you can enter a unique name for the role group.
-
    - **Description**: The existing description is present, but you can change it.
-
    - **Write scope**: The existing write scope is selected, but you can select **Default** or a custom recipient write scope from the drop-down list.
-   
+
 4. In **Edit permissions** section, modify the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
-   
-5. In **Assign admins** section, modify the role group membership and click **Next**. They'll have permissions to manage the roles that you assigned. 
+
+5. In **Assign admins** section, modify the role group membership and click **Next**. They'll have permissions to manage the roles that you assigned.
 
 6. In **Review role group and finish** section, verify all the details, and then click **Copy role group**.
 
-7. Click **Done**.   
+7. Click **Done**.
 
 ### Use the Classic EAC to copy a role group
 
@@ -197,9 +190,9 @@ If an existing role group is close in terms of the permissions and settings that
 
    - **Write scope**: The existing write scope is selected, but you can select **Default** or another custom recipient write scope that you've already created.
 
-   - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the roles that are assigned to the role group.
+   - **Roles**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png) to modify the roles that are assigned to the role group.
 
-   - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![ITPro_EAC_RemoveIcon.png](../media/ITPro_EAC_RemoveIcon.png) to modify the role group membership.
+   - **Members**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png) to modify the role group membership.
 
    When you're finished, click **Save** to create the role group.
 
@@ -218,9 +211,7 @@ If an existing role group is close in terms of the permissions and settings that
    ```
 
    - The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`. You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).
-
    - The _ManagedBy_ parameter specifies the delegates who can modify and remove the role group by using the following syntax: `"Delegate1","Delegate2",..."DelegateN"`. Note that this setting isn't available in the EAC.
-
    - The _CustomRecipientWriteScope_ parameter specifies the existing custom recipient write scope to apply to the role group. You can see the available custom recipient write scopes by using the **Get-ManagementScope** cmdlet.
 
 This example copies the Organization Management role group to the new role group named "Limited Organization Management". The role group members are Isabelle, Carter, and Lukas and the role group delegates are Jenny and Katie.
@@ -244,12 +235,9 @@ For detailed syntax and parameter information, [New-RoleGroup](/powershell/modul
 ### Use the new EAC to modify role groups
 
 1. In the new EAC, go to **Roles** \> **Admin roles**, select the role group you want to modify, and then edit the following in the details pane:
-
    - In **General** section, click **Edit basics** to change the name and description.
-
-   - In **Assigned** section, add/delete users from this role group. 
-
-   - In **Permissions** section, add/remove roles assigned to the role group. 
+   - In **Assigned** section, add/delete users from this role group.
+   - In **Permissions** section, add/remove roles assigned to the role group.
 
 2. When you're finished, click **Save**.
 
@@ -260,19 +248,14 @@ For detailed syntax and parameter information, [New-RoleGroup](/powershell/modul
 The same options are available when you modify role groups as when you [Use the Classic EAC to create role groups](#use-the-classic-eac-to-create-role-groups). You can:
 
 - Change the name and description.
-
 - Change the write scope (if you've created custom recipient write scopes).
-
 - Add and remove management roles (create or remove role assignments).
-
 - Add and remove members.
 
 **Notes**:
 
 - You can't use the Classic EAC to modify the write scope, roles, and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
-
 - Some role groups (for example, the Organization Management role group) restrict the roles that you can remove from group.
-
 - You can add or remove delegates to a role group in the Classic EAC. You can only use Exchange Online PowerShell.
 
 ### Use Exchange Online PowerShell to add roles to role groups (create role assignments)
@@ -284,11 +267,8 @@ New-ManagementRoleAssignment [-Name "<Unique Name>"] -SecurityGroup "<Role Group
 ```
 
 - The role assignment name is created automatically if you don't specify one.
-
 - If you don't use the _RecipientRelativeWriteScope_ parameter, the implicit read scope and implicit write scope of the role is applied to the role assignment.
-
 - If a predefined scope meets your business requirements, you can use the _RecipientRelativeWriteScope_ parameter to apply the scope to the role assignment.
-
 - To apply a custom recipient write scope, use the _CustomRecipientWriteScope_ parameter.
 
 This example assigns the Transport Rules management role to the Seattle Compliance role group.
@@ -320,7 +300,6 @@ Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" -Role "<Role Name
 ```
 
 - To remove _regular_ role assignments that grant permissions to users, use the value `$false` for the _Delegating_ parameter.
-
 - To remove _delegating_ role assignments that allow the role to be assigned to others, use the value `$true` for the _Delegating_ parameter.
 
 This example removes the Distribution Groups role from the Seattle Recipient Administrators role group.
@@ -336,9 +315,7 @@ For detailed syntax and parameter information, see [Remove-ManagementRoleAssignm
 The write scope of a role assignment in a role group defines the objects that the members of the role group can operate on (for example, all users, or only the users whose **City** property has the value Vancouver). You can modify the write scope of the roles assigned to a role group to:
 
 - The implicit scope from the roles themselves. This means you didn't specify any custom scopes when you created the role group, or you set the value of all role assignments in an existing role group to the value `$null`.
-
 - The same custom scope for all role assignments.
-
 - Different custom scopes for each individual role assignment.
 
 To set the scope on all of the role assignments on a role group at the same time, use the following syntax:
@@ -418,7 +395,6 @@ Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members> [-Bypass
 ```
 
 - To _replace_ the existing list of members with the values you specify, use the following syntax: `"Member1","Member2",..."MemberN"`.
-
 - To _selectively modify_ the existing list of members, use the following syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}`.
 
 This example replaces all current members of the Help Desk role group with the specified users.
@@ -442,23 +418,18 @@ You can't remove built-in role groups, but you can remove custom role groups tha
 **Notes**:
 
 - When you remove a role group, the management role assignments between the role group and the management roles are deleted. Any management roles that are assigned to the role group aren't deleted.
-
 - If a user depends on the role group for access to a feature, the user will no longer have access to the feature after you delete the role group.
 
 ### Use the new EAC to remove a role group
 
 1. In the new EAC, go to **Roles** > **Admin roles**.
-
 2. Select the role group and click **Delete**.
-
 3. Click **Confirm** in the confirmation window.
 
 ### Use the EAC to remove a role group
 
 1. In the EAC, go to **Permissions** \> **Admin Roles**.
-
 2. Select the role group you want to remove and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.png).
-
 3. Click **Yes** in the confirmation window that appears.
 
 ### Use Exchange Online PowerShell to remove a role group
