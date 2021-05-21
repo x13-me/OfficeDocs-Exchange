@@ -342,7 +342,7 @@ For detailed syntax and parameter information, see [Remove-AuthenticationPolicy]
 To confirm that an authentication policy was directly applied to users:
 
 > [!NOTE]
-> Take into account that a default authentication policy could be already configured, see [Configure the default authentication policy](#configure-the-default-authentication-policy) for details.
+> Take into account that a default authentication policy could be already configured. See [Configure the default authentication policy](#configure-the-default-authentication-policy) for details.
 
 1. Run the following command to find the distinguished name (DN) value of the authentication policy:
 
