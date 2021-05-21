@@ -23,7 +23,11 @@ Exchange Online Protection (EOP) is the cloud-based filtering service that helps
 However, EOP is also available in the following on-premises scenarios:
 
 - **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email environment.
+
 - **In a hybrid deployment**: EOP can be configured to protect your on-premises Exchange environment and control mail routing when you have a mix of on-premises and cloud mailboxes. For more information about hybrid, see [Exchange Server hybrid deployments](../exchange-hybrid.md).
+
+> [!NOTE]
+> If you have an on-premises Exchange organization and you've purchased additional Exchange Enterprise CAL (EECAL) with Services licenses , EOP is part of the included services.
 
 In these scenarios, EOP can simplify the management of your email environment and alleviate many of the burdens that come with maintaining on-premises hardware and software.
 
