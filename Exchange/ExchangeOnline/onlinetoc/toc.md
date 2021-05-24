@@ -66,7 +66,7 @@
 #### [Create custom DLP policy](../security-and-compliance/data-loss-prevention/create-custom-dlp-policy.md)
 #### [Policy Tips](../security-and-compliance/data-loss-prevention/policy-tips.md)
 #### [Manage policy tips](../security-and-compliance/data-loss-prevention/manage-policy-tips.md)
-### [Exchange auditing reports](../security-and-compliance/exchange-auditing-reports/exchange-auditing-reports.md)
+### [Auditing reports](../security-and-compliance/exchange-auditing-reports/exchange-auditing-reports.md)
 #### [Export mailbox audit logs](../security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs.md)
 #### [Non-owner mailbox access report](../security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report.md)
 #### [Per-mailbox litigation hold report](../security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report.md)
