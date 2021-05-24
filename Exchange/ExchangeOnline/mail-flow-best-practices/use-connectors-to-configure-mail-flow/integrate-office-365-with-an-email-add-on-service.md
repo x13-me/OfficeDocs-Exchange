@@ -60,10 +60,8 @@ The rest of this topic explains how to configure mail flow in Microsoft 365 or O
 
 The important settings for the connector are:
 
-- From Microsoft 365 or Office 365 to the email add-on service.
-
+- From Office 365 to the email add-on service.
 - Uses smart host routing to the email add-on service.
-
 - Uses TLS to encrypt the connection based on the domain name of the email add-on service (smart host).
 
 ### Use the Exchange admin center (EAC) to create the connector from Office 365 to your organization's email server to the email add-on service
@@ -159,7 +157,6 @@ The new connector wizard opens.
 2. On the **Select your mail flow scenario** page, configure these settings:
 
    - **From**: **Office 365**
-
    - **To**: **Your organization's email server**
 
    ![In the new connector wizard, select From \> Office 365 and To \> Your organization's email server.](../../media/852fbdf3-6829-413a-9d08-63421efd10c6.png)
@@ -191,11 +188,8 @@ The new connector wizard opens.
    ![In the new connector wizard, enter the smart host destination for the connector.](../../media/d24e4a9f-bab4-4300-9a8c-c17432fedb5c.png)
 
 6. On the **How should Microsoft 365 or Office 365 connect to your email server?** page, configure these settings:
-
    - Verify **Always use Transport Layer Security (TLS) to secure the connection (recommended)** is selected.
-
    - Verify **Issued by a trusted certificate authority (CA)** is selected.
-
    - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, smtp.contososignatureservice.com).
 
    ![In the new connector wizard, use TLS and identify the certificate domain name for connections to Microsoft 365 or Office 365](../../media/2ce67ff7-c6d1-49ae-9790-28c27396ab18.png)
@@ -340,7 +334,6 @@ From the Classic EAC, to create a connector that originates from your organizati
 2. The new connector wizard opens. On the **Select your mail flow scenario** page, configure these settings:
 
    - **From** **Your organization's email server**
-
    - **To** **Office 365**
 
    ![In the new connector wizard, select From \> Your organization's email server and From \> Microsoft 365 or Office 365.](../../media/ec97de50-53a0-4392-9096-15a5c15fa238.png)
@@ -428,9 +421,7 @@ New-InboundConnector -Name "<Descriptive Name>" -SenderDomains * -ConnectorType 
 This example creates a connector from your organization's email server to Office 365 with these settings:
 
 - **Name**: Contoso Signature Service to Office 365
-
 - **Domain name used by the email add-on service's certificate to authenticate with your Microsoft 365 or Office 365 organization**: S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com
-
 - Internal Exchange message headers that identify messages returning from the email add-on service as internal messages are preserved.
 
 ```powershell
@@ -440,3 +431,6 @@ New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDoma
 For detailed syntax and parameter information, see [New-InboundConnector](/powershell/module/exchange/new-inboundconnector).
 
 
+  ```powershell
+  Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled
+  ```
