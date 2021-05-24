@@ -146,6 +146,8 @@ For detailed syntax and parameter information, see [Set-InboundConnector](/power
 
 The following table describes what connections look like before and after you enable Enhanced Filtering for Connectors:
 
+<br>
+
 ****
 
 |Feature|Before Enhanced Filtering is enabled|After Enhanced Filtering is enabled|
