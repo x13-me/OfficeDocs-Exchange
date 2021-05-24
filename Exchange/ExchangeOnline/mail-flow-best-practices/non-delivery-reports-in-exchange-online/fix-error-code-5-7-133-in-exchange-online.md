@@ -21,7 +21,7 @@ description: "Learn how to fix email issues for error code 5.7.133 in Exchange O
 
 # Fix email delivery issues for error code 5.7.133 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.133 in a non-delivery report also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a group that's configured to reject messages from external senders (senders from outside the organization).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.133 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a group that's configured to reject messages from external senders, that is, senders from outside the organization.
 
 |Icon|Message|Icon|Message|
 |-----|-----|-----|-----|
@@ -42,13 +42,14 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1. 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-<include an image - navigation-to-groups-tab.png>
+:::image type="content" source="../../media/navigation-to-groups-tab.png" alt-text="The screen that displays the groups option":::
 
    ![Finding groups in the Exchange admin center](../../media/8b57ae07-1a2c-4cb7-94a7-70f898be6276.png)
 
 2. In the group properties dialog box that opens, go to **Delivery management** \> select **Senders inside and outside of my organization**.
 
-<include the image - no-restriction-on-any-sender.png>
+:::image type="content" source="../../media/no-restriction-on-any-sender.png" alt-text="The Delivery Management screen to configure all senders to send mails":::
+
    ![Use the Exchange admin center to solve DSN 5.7.133 and allow senders](../../media/7223438f-9f43-4601-a457-2fa7dfc977cd.png)
 
 3. Click **Save**.
@@ -63,7 +64,7 @@ Instead of allowing all external senders to send messages to this group, you can
 
 - To add everyone in your organization to a group's allowed sender's list, you can create a [distribution group](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md) or a [dynamic distribution group](../../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) that contains everyone in your organization. After you create this group, you can add it to the group's allowed senders list.
 
-- The group's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
+- The group's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the group's allowed senders list, open the EAC do the following steps:
 

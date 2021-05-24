@@ -9,7 +9,7 @@ ms.assetid: e1da5f2f-c732-4010-85c9-878b2cef3fb3
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-description: Learn how to manage mail flow in an Exchange hybrid environment (some mailboxes are on-premises and some are in Exchange Online).
+description: Learn how to manage mail flow in an Exchange hybrid environment - some mailboxes are on-premises and some are in Exchange Online.
 f1.keywords:
 - NOCSH
 ms.reviewer:
@@ -57,7 +57,7 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
      For example, if your domain is contoso.com, the MX record should be: contoso-com.mail.protection.outlook.com.
 
-   - **SPF record**: This record should list Microsoft 365 or Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
+   - **SPF record**: This record should list Microsoft 365 or Office 365 as a valid sender; any IP addresses from your on-premises servers that connect to EOP; and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
      ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all

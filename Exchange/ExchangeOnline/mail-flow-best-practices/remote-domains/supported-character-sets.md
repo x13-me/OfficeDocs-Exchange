@@ -59,7 +59,7 @@ The **Name the domain** screen appears.
 
 8. Click **Next**. The **Text and character set** screen appears.
 
-9. Configure the format and delivery method of email messages. Do this by choosing any of the options in the following panes:
+9. Configure the format and delivery method of email messages. Do this task by choosing any of the options in the following panes:
 
     - **Use rich-text format**
     - **Supported Character Set**
