@@ -21,7 +21,7 @@ description: "Learn how to fix email issues for error code 5.7.136 in Exchange O
 
 # Fix email delivery issues for error code 5.7.136 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.136 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a mail user that's configured to reject messages from external senders (senders from outside the organization).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.136 in a non-delivery report, also known as an NDR, bounce message, delivery status notification, or DSN. You'll see this automated notification when the recipient is a mail user that's configured to reject messages from external senders, that is,senders from outside the organization.
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
@@ -39,7 +39,7 @@ The two methods that will allow an external sender to send messages to the mail 
 > [!NOTE]
 > Currently, there is no support for the two methods in the New EAC.
 
-To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC** (New), as shown in the image below.
+To open the Classic EAC, click **Classic Exchange admin center** on the left pane of the home screen of the **New EAC**.
 
 :::image type="content" source="../../media/navigation-to-classic-eac.png" alt-text="The interface from which the user can navigate to Classic EAC":::.
 
