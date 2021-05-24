@@ -16,7 +16,7 @@ ms.custom: seo-marvel-apr2020
 
 # Perform a Google Workspace (formerly G Suite) migration
 
-You can migrate batches of users from Google Workspace to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch.
+You can migrate batches of users from Google Workspace to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. Specify a list of users to migrate for each batch.
 
 All procedures in this article assume that your Microsoft 365 or Office 365 domain is verified and that your TXT records have been set up. For more information, see [Set up your domain (host-specific instructions)](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
@@ -219,7 +219,7 @@ We recommend that the primary address (sometimes referred to as the "User ID") f
 
 2. Click **New Migration batch** and follow the instructions in the details pane.
 
-3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path and click **Next**.
+3. In **Migration Onboarding** section, enter the batch name, select the mailbox migration path, and click **Next**.
 
 4. Select the migration type as **G Suite (Gmail) migration** from the drop-down list and click **Next**.
 
@@ -295,7 +295,7 @@ During completion, another incremental sync is run to copy any changes that have
 
 6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-7. Enter the email address for the super admin within the Google Workspace environment. This is not the service account you just created, it should be the email address of the Google Workspace admin. This email address will be used to test connectivity between Google Workspace and Microsoft 365 or Office 365.
+7. Enter the email address for the super admin within the Google Workspace environment. This is not the service account you created, it should be the email address of the Google Workspace admin. This email address will be used to test connectivity between Google Workspace and Microsoft 365 or Office 365.
 
 8. Under **Specify the service account credentials using the JSON key file**, click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 

@@ -28,7 +28,7 @@ The Outlook for iOS and Android app is designed to enable users in your organiza
 
 - Managing and maintaining Outlook for iOS and Android in your Exchange organization after it has been deployed
 
-- Common questions from end-users who access information in your Exchange organization with the Outlook for iOS and Android app on their mobile devices
+- Common questions from end users who access information in your Exchange organization with the Outlook for iOS and Android app on their mobile devices
 
 ## Architecture and security
 
@@ -107,7 +107,7 @@ If the mobile operating system prevents background synchronization, users will e
 
 ### Q: Does each user's instance of Outlook for iOS and Android have a unique device ID in the Microsoft 365- or Office 365-based architecture? How is the device ID generated and is this same device ID used in Intune?
 
-Upon initial account login, Outlook for iOS and Android establishes a connection to the Microsoft 365- or Office 365-based architecture. A unique device ID is generated, and this device ID is what appears in Active Directory device records (which can be retrieved with cmdlets such as `Get-MobileDevice` in Exchange Online Powershell) and which appears in HTTP request headers.
+Upon initial account login, Outlook for iOS and Android establishes a connection to the Microsoft 365- or Office 365-based architecture. A unique device ID is generated, and this device ID is what appears in Active Directory device records (which can be retrieved with cmdlets such as `Get-MobileDevice` in Exchange Online PowerShell) and which appears in HTTP request headers.
 
 Intune uses a different device ID. The basic workflow for how Intune assigns a device ID is described in [App-based conditional access with Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune). In Intune, the device ID is assigned when the device workplace joins for all device-conditional access scenarios. This ID is an AAD-generated unique ID for the device. Intune uses that unique ID when sending compliance information, and ADAL uses that unique ID when authenticating to services.
 
@@ -115,10 +115,10 @@ Intune uses a different device ID. The basic workflow for how Intune assigns a d
 
 Yes. Outlook for iOS and Android supports reading protected messages. Outlook for iOS and Android works differently than desktop versions of Outlook when it comes to RMS. For desktop versions of Outlook, once a protected message is received and access is attempted, and Outlook verifies that the user can read RM messages, Outlook connects to Exchange to request an encryption key. The Outlook desktop client uses that encryption key to decrypt the message in front of the user (client-side). Mobile clients operate differently. When Outlook for iOS and Android sets up its initial relationship with Exchange, it notifies Exchange that it supports RMS. Exchange decrypts any protected messages before passing them to the client. In other words, decryption is performed server-side. Outlook for iOS and Android doesn't perform any decryption itself.
 
-In cases where Outlook for iOS and Android receives protected messages and prompts end-users to use an RM client to open the file, it means that Exchange hasn't decrypted the message, which is due to an issue on the Exchange side.
+In cases where Outlook for iOS and Android receives protected messages and prompts end users to use an RM client to open the file, it means that Exchange hasn't decrypted the message, which is due to an issue on the Exchange side.
 
 > [!NOTE]
-> Outlook for iOS leverages iOS's native preview technology to quickly expose attachments to end users. iOS's preview technology does not support rights management and will report error "The operation couldn't be completed. (OfficeImportErrorDomain error 912)" when a user attempts to open a rights-protected attachment. Users will need to tap the respective Word, Excel, or PowerPoint app icon to open the rights-protected attachment in the native app.
+> Outlook for iOS uses iOS's native preview technology to quickly expose attachments to end users. iOS's preview technology does not support rights management and will report error "The operation couldn't be completed. (OfficeImportErrorDomain error 912)" when a user attempts to open a rights-protected attachment. Users will need to tap the respective Word, Excel, or PowerPoint app icon to open the rights-protected attachment in the native app.
 
 ### Q: Does Outlook for iOS and Android support Teams meetings?
 
@@ -175,7 +175,7 @@ Outlook for iOS and Android will consume the proxy configuration as defined by t
 
 For tenants that have not been migrated to the native Microsoft sync technology, the following extra requirement applies:
 
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a allow list range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no extra custom settings are supported.
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Microsoft 365- or Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define an allowlist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no extra custom settings are supported.
 
 ### Q: Does Outlook for iOS and Android support shared mailboxes?
 
@@ -285,7 +285,7 @@ Assuming the user is running a supported version of Outlook for iOS and Android,
 
 ### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
 
-No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Microsoft 365 or Office 365 mailboxes first before we migrate on-premises mailbox accounts. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remain on-premises, the on-premises users leveraging [hybrid modern authentication](../../../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md) will be migrated to the native Microsoft sync technology at a later date. This means that your Microsoft 365 and Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
+No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Microsoft 365 or Office 365 mailboxes first before we migrate on-premises mailbox accounts. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remains on-premises, the on-premises users using [hybrid modern authentication](../../../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md) will be migrated to the native Microsoft sync technology at a later date. This means that your Microsoft 365 and Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
 
 Once your tenant is migrated, a user will not switch to the native Microsoft sync technology, until after they launch/resume Outlook for iOS and Android.
 
@@ -295,7 +295,7 @@ No, the user will continue to connect using the existing REST-based data sync pr
 
 ### Q: Will my Intune App Protection Policies or Azure AD Conditional Access policies be affected by this migration?
 
-No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol leveraged by Outlook for iOS and Android.
+No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol used by Outlook for iOS and Android.
 
 ### Q: Will I have to update my Exchange mobile device access policies (allow block quarantine (ABQ) rules)?
 
@@ -311,7 +311,7 @@ Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Fo
 
 The `ClientType` property indicates which data sync protocol is in use. If the value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology.
 
-Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. Like the cmdlet, the user can see the value for the `ClientType` property.
+Alternatively, a user can log in to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. Like the cmdlet, the user can see the value for the `ClientType` property.
 
 ## Administrating and monitoring Outlook for iOS and Android in your organization
 
@@ -321,7 +321,7 @@ The following questions are about managing and monitoring the Outlook for iOS an
 
 Yes, if you want to troubleshoot and resolve the issue, or if you want to inform us of a product defect or limitation, you will need to file an in-app support ticket. Only through filing an in-app support ticket can the Outlook app's logs get collected and analyzed by our product engineers.
 
-Customers with a Microsoft Premier agreement can open support cases with Customer Service & Support (CSS). Instead of having the user initiate an in-app support ticket, the user can leverage Collect Diagnostics to upload the logs and share the incident ID with CSS/Premier. Collect Diagnostics will capture data from Outlook for iOS and Android, Authenticator, and the Company Portal and upload all the relevant logs to Microsoft. Microsoft Support Escalation Engineers can use the incident ID to access the diagnostic logs and troubleshoot the user's issue.
+Customers with a Microsoft Premier agreement can open support cases with Customer Service & Support (CSS). Instead of having the user initiate an in-app support ticket, the user can use Collect Diagnostics to upload the logs and share the incident ID with CSS/Premier. Collect Diagnostics will capture data from Outlook for iOS and Android, Authenticator, and the Company Portal and upload all the relevant logs to Microsoft. Microsoft Support Escalation Engineers can use the incident ID to access the diagnostic logs and troubleshoot the user's issue.
 
 To gather the logs:
 
@@ -353,9 +353,9 @@ For more information, see [Managing Outlook for iOS and Android in Exchange Onli
 
 Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 or Microsoft 365 subscription that includes the Office desktop applications: Microsoft 365 Apps for Business, Microsoft 365 Business Standard, Microsoft 365 Apps for enterprise, Office 365 Enterprise E3, Office 365 Enterprise E5, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 A1, Microsoft 365 Business Basic, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
 
-## Common questions from end-users
+## Common questions from end users
 
-The following questions concern end-users in your organization who are using Outlook for iOS and Android on their devices to access their Exchange mailboxes.
+The following questions concern end users in your organization who are using Outlook for iOS and Android on their devices to access their Exchange mailboxes.
 
 ### Q: My users enabled the "Save Contacts" advanced settings option. However, they are complaining that not all contacts have synchronized on their iOS devices. Are there limitations with synchronization?
 
@@ -365,7 +365,7 @@ The initial export of contacts can only begin when Outlook is in the foreground.
 - Enabling "Save Contacts" simultaneously on multiple devices (such as an iPad and an iPhone).
 - Accrued sync errors over time.
 
-In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty four hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
+In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty-four hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
 
 1. Disable "Save Contacts" for the affected account.
 2. Check that all instances of the contacts are removed from the native iOS contacts app. If duplicates remain, go to Settings \> Help & Feedback \> Delete All Saved Contacts in order to remove any lingering duplicates.
@@ -400,7 +400,7 @@ If you do not have organization chart data exposed in the app, consult with your
 
 1. Your company has a hybrid topology where an on-premises directory is synchronized with Azure Active Directory. You will need to update Active Directory with the organization chart information, either directly in the directory or via your Human Resources system. Data will be synchronized into AAD automatically and will be accessible via the Global Address List in Exchange Online.
 
-2. Your company only leverages Azure Active Directory for directory management. You will need to update Azure Active Directory with the organization chart information, either directly in the directory or via your Human Resources system. This data will be accessible via the Global Address List in Exchange Online.
+2. Your company only uses Azure Active Directory for directory management. You will need to update Azure Active Directory with the organization chart information, either directly in the directory or via your Human Resources system. This data will be accessible via the Global Address List in Exchange Online.
 
 ### Q: How much of my mailbox data is synchronized with Outlook for iOS and Android?
 
