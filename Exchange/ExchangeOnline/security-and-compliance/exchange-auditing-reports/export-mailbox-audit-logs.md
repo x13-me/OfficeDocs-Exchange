@@ -39,7 +39,7 @@ When you export entries from mailbox audit logs, Exchange Online saves the entri
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) forum.
 
 ## Export the mailbox audit log
 
@@ -48,21 +48,13 @@ When you export entries from mailbox audit logs, Exchange Online saves the entri
 2. Click **Export mailbox audit logs**.
 
 3. Configure the following search criteria for exporting the entries from the mailbox audit log:
-
    - **Start and end dates**: Select the date range for the entries to include in the exported file.
-
    - **Mailboxes to search audit log for**: Select the mailboxes to retrieve audit log entries for.
-
    - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for:
-
      - **All non-owners**: Search for access by admins and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
-
      - **External users**: Search for access by Microsoft datacenter administrators.
-
      - **Administrators and delegated users**: Search for access by admins and delegated users inside your organization.
-
      - **Administrators**: Search for access by admins in your organization.
-
    - **Recipients**: Select the users to send the mailbox audit log to.
 
 4. Click **Export**.
@@ -71,30 +63,27 @@ Exchange Online retrieves entries in the mailbox audit log that meet your search
 
 ### How do you know this worked?
 
-Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. It mmight take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook on the web to allow XML attachments, you can download the attached XML file.
+Sign in to the mailbox where the mailbox audit log was sent. If you've successfully exported the audit log, you'll receive a message sent from Exchange. It might take a few days to receive this message. The mailbox audit log (named SearchResult.xml) will be attached to this message. If you've correctly configured Outlook on the web to allow XML attachments, you can download the attached XML file.
 
 ## View the mailbox audit log
 
 To save and view the SearchResult.xml file:
 
 1. Sign in to the mailbox where the mailbox audit log was sent.
-
 2. In the Inbox, open the message with the XML file attachment sent by Exchange Online. Notice that the body of the email message contains the search criteria.
-
 3. Click the attachment and select to download the XML file.
-
 4. Open the SearchResult.xml in Microsoft Excel.
 
 ## More information
 
 ### Entries in the mailbox audit log
 
-The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the admin purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
+The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the admin purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2021.
 
 ```XML
 <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
   Owner="PPLNSL-dom\david50001-1363917750"
-  LastAccessed="2010-04-30T11:01:55.140625-07:00"
+  LastAccessed="2021-04-30T11:01:55.140625-07:00"
   Operation="HardDelete"
   OperationResult="Succeeded"
   LogonType="Admin"
@@ -120,8 +109,12 @@ The following example shows an entry from the mailbox audit log contained in the
 
 Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox.
 
-|**Field**|**Description**|
-|:-----|:-----|
+<br>
+
+****
+
+|Field|Description|
+|---|---|
 |Owner|The owner of the mailbox that was accessed by a non-owner.|
 |LastAccessed|The date and time when the mailbox was accessed.|
 |Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a non-owner mailbox access report in Exchange Online](non-owner-mailbox-access-report.md).|
@@ -134,3 +127,4 @@ Here's a description of useful fields in the mailbox audit log. They can help yo
 |MailboxOwnerUPN|The email address of the mailbox owner.|
 |LogonUserDN|The display name of the non-owner.|
 |Subject|The subject line of the email message that was affected by the non-owner.|
+|
