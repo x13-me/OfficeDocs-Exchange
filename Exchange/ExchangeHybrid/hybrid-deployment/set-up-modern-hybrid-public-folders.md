@@ -46,7 +46,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
 2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
-3. The public folders in this configuration cannot be accessed using Outlook Web App (Exchange 2013) or Outlook on the web (Exchange 2016 and Exchange 2019).
+3. The public folders in this configuration cannot be accessed using Outlook on the web (formerly known as Outlook Web App).
 
 4. Implementing public folder coexistence for a hybrid deployment of Exchange with Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email addresses assigned to mail enabled public folders, conflicts with other users and groups in Office 365, and other attributes.
 
@@ -54,10 +54,7 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
 6. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-7. Outlook 2011 for Mac is not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App or Outlook on the web.
-
-   > [!NOTE]
-   > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](../../ExchangeOnline/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac.md).
+7. Outlook 2016 for Mac (and higher versions) are supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have the April 2016 or higher update installed. For more information, see [Accessing public folders with Outlook 2016 for Mac](/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac).
 
 ## Step 1: Download the scripts
 
@@ -118,11 +115,6 @@ Get-Mailbox |ft name,EffectivePublicFolderMailbox
 Next, log on to Outlook with the credentials of an Exchange Online user and perform the following public folder tests:
 
 - View the hierarchy
-
 - Check permissions
-
 - Create and delete public folders
-
 - Post content to and delete content from a public folder
-
-You can use [this article](https://support.microsoft.com/help/4549862/outlook-or-owa-cannot-connect-to-public-folders) to troubleshoot any Outlook connectivity issues with your public folders.
