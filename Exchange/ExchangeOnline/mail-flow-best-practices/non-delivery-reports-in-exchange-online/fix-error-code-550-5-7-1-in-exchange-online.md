@@ -72,7 +72,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Remove the sender restriction**: Change your group settings to unblock the sender in one of the following ways:
 
-  - Add the sender to the group's allowed senders list. You must create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
+  - Add the sender to the group's allowed senders list. Create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
 
   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
 
