@@ -57,7 +57,7 @@ You can create new plus addresses by adding a new tag. You can use plus addresse
 > [!NOTE]
 > Some web forms don't support plus signs in email addresses. If you have subscribed to some email list subscription services using an SMTP email address, and you need to unsubscribe from them, you must use the email address that you subscribed with. You cannot unsubscribe by sending emails with plus addresses. You also cannot unsubscribe from some email subscriptions using unsubscribe email messages with plus addresses if you have subscribed to them. 
 
-As plus addresses are not aliases that are configured on the mailbox, they don't resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can't use a plus address for a Microsoft service that needs to be associated with your mailbox.
+As plus addresses are not aliases that are configured on the mailbox, they don't resolve to a user's name in Outlook clients. This limitation results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can't use a plus address for a Microsoft service that needs to be associated with your mailbox.
 
 To automatically identify and filter email messages that are sent to plus addresses, use Inbox rules to act on those messages. Using the condition *Recipient address includes*, you can specify an action for messages sent to a particular plus address, such as moving the messages to a folder.
 
