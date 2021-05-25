@@ -52,7 +52,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 >
 > - We always recommend that you point your MX record to Microsoft 365 or Office 365 in order to reduce complexity. For example, some hosts might invalidate DKIM signatures, causing false positives. When two systems are responsible for email protection, determining which one acted on the message is more complicated.
 >
-> - The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premises mailboxes (outbound mail) will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
+> - The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premises mailboxes (outbound mail) will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](/exchange/standalone-eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
 >
 > - Do not put another scanning service or host _after_ EOP. Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization. When the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](../../../ExchangeHybrid/transport-options.md) should not be used to introduce non-Exchange servers into the mail flow path.  
 
@@ -62,7 +62,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 
 - You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Microsoft 365 or Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
 
-- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
+- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](../../security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
 
 - To open the Security & Compliance Center, got to <https://protection.office.com>. To go directly to the **Enhanced Filtering for Connectors** page, open <https://protection.office.com/skiplisting>.
 
@@ -145,6 +145,8 @@ For detailed syntax and parameter information, see [Set-InboundConnector](/power
 ## What happens when you enable Enhanced Filtering for Connectors?
 
 The following table describes what connections look like before and after you enable Enhanced Filtering for Connectors:
+
+<br>
 
 ****
 
