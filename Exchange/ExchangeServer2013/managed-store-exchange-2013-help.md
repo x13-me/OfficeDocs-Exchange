@@ -21,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 All previous versions of Exchange Server, from Exchange Server 4.0 to Exchange Server 2010, have supported running a single instance of the Information Store process (Store.exe) on the Mailbox server role. This single Store instance hosts all databases on the server: active, passive, lagged, and recovery. In the previous Exchange architectures, there is little, if any, isolation between the different databases hosted on a Mailbox server. An issue with a single mailbox database has the potential to negatively affect all other databases, and crashes resulting from a mailbox corruption can affect service for all users whose databases are hosted on that server.
 
-Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that threshold, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
+Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that threshold, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean imposing the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
 
 The Store.exe process has evolved considerably throughout the years as Exchange Server itself evolved, but as a single process, ultimately its scalability is limited, and it represents a single point of failure. Because of these limits, Store.exe is gone in Exchange 2013 and replaced by the Managed Store.
 
@@ -65,7 +65,7 @@ The store service process controller is thin and reliable, but if it dies or is 
 
 The database caching algorithm known as dynamic buffer allocation that was introduced in Exchange Server 5.5 and also used by the Information Store in Exchange 2000 Server, Exchange Server 2003, Exchange Server 2007, and Exchange Server 2010, is also gone from Exchange 2013. Exchange 2013 uses a simple and straightforward algorithm for determining database cache. The Managed Store no longer dynamically reallocates cache between databases when failover occurs, which greatly simplifies internal cache management. Instead, the memory allocated for each database cache (for example, each store worker process) is based on number of local database copies and value of *MaximumActiveDatabases*, if configured. If the value of *MaximumActiveDatabases* is greater than number of current database copies, then the cache calculation is based on the number of database copies.
 
-The static algorithm used by Exchange 2013 allocates memory for each store worker process' ESE cache based on physical RAM. This memory is referred to as a database's *Max Cache Target*. 25% of total server memory is allocated to the ESE cache. This proprotion of memory is referred to as the *Server Cache Size Target*.
+The static algorithm used by Exchange 2013 allocates memory for each store worker process' ESE cache based on physical RAM. This memory is referred to as a database's *Max Cache Target*. 25% of total server memory is allocated to the ESE cache. This proportion of memory is referred to as the *Server Cache Size Target*.
 
 > [!NOTE]
 > The Server Cache Size Target, and therefore the amount of memory allocated to the Store for ESE cache, can be overridden using <EM>msExchESEParamCacheSizeMax</EM> attribute of the <EM>InformationStore</EM> object in Active Directory (the value configured is the number of 32 KB pages to allocate across all store processes).
@@ -104,7 +104,7 @@ To get the Server Cache Size Target, multiply the amount memory by 25%:
 
 48 GB X 25% = 12 GB
 
-To get the Database Max Cache Target, divide the Server Cache Size Target by the total number of active database plus the total number of passive databases multiplied by 20%:
+To get the Database Max Cache Target, divide the Server Cache Size Target by the total number of active databases plus the total number of passive databases multiplied by 20%:
 
 12 GB / (2A + (2P X 20%)) = 5 GB
 

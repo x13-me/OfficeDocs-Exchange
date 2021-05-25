@@ -63,7 +63,7 @@ Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveS
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Microsoft 365 and Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges).
 
-- The AutoDetect FQDNs and IP subnet ranges defined in [Additional Microsoft 365 or Office 365 IP Addresses and URLs not included in the web services](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls). These ranges are required because the AutoDetect service establishes connections to the on-premises infrastructure.
+- The AutoDetect FQDNs and IP subnet ranges defined in [More Microsoft 365 or Office 365 IP Addresses and URLs not included in the web services](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls). These ranges are required because the AutoDetect service establishes connections to the on-premises infrastructure.
 
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Microsoft 365 or Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges).
 

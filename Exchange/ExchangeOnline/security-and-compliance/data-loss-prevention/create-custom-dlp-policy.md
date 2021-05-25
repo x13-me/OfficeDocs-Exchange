@@ -70,13 +70,13 @@ For additional information on the .NET regex engine which is used for processing
 
    Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
 
-   In order to avoid confusion, supply a unique name for each part of your policy or rule when you have the option to provide your own character string. There are several options additional options available to you:
+   In order to avoid confusion, supply a unique name for each part of your policy or rule. You can provide this unique name when you have the option to provide your own character string. There are more options available to you:
 
    1. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
 
    2. To remove a rule, highlight the rule and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
 
-   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add additional conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
+   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add more conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
 
 7. Click **Save** to finish modifying the policy and save your changes.
 

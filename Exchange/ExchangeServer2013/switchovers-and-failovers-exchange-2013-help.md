@@ -25,7 +25,7 @@ Switchovers and failovers are the two forms of outages in Microsoft Exchange Ser
 
   - A *failover* refers to unexpected events that result in the unavailability of services, data, or both. A failover involves the system automatically recovering from the failure by activating a passive mailbox database copy to make it the active mailbox database copy. If no healthy target is found during a failover, the mailbox database will be dismounted.
 
-Exchange 2013 is specifically designed to handle both switchovers and failovers.
+Exchange 2013 is designed to handle both switchovers and failovers.
 
 Looking for management tasks related to high availability and site resilience? See [Managing high availability and site resilience](managing-high-availability-and-site-resilience-exchange-2013-help.md).
 
@@ -111,15 +111,15 @@ For detailed steps about how to perform a server switchover, see [Perform a Serv
 
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
 
-If you don't have three locations, or even if you do have three locations, but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery in the event of a site-level failure. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.
+If you don't have three locations, or even if you do have three locations, but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery if a site-level failure occurs. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.
 
-Because of the numerous architectural changes in Exchange 2013, including the consolidation of server roles, performing a datacenter switchover in Exchange 2013 is significantly easier than it was in Exchange 2010. For detailed steps to performing a datacenter switchover, see [Datacenter Switchovers](datacenter-switchovers-exchange-2013-help.md).
+Because of the numerous architectural changes in Exchange 2013, including the consolidation of server roles, performing a datacenter switchover in Exchange 2013 is easier than it was in Exchange 2010. For detailed steps to performing a datacenter switchover, see [Datacenter Switchovers](datacenter-switchovers-exchange-2013-help.md).
 
 ## Failovers
 
 A failover is an automatic activation process that can occur at the database, server, or datacenter level. Failovers occur in response to a failure that affects an individual database (for example, an isolated storage loss) an entire server (for example, a motherboard failure or a loss of power), or an entire site (for example, the loss of all DAG members in a site).
 
-DAGs and mailbox database copies provide full redundancy and rapid recovery of both the data and the services that provide access to the data. The following table lists the expected recovery actions for a variety of failures. Some failures require the administrator to initiate the recovery, and other failures are automatically handled by the system.
+DAGs and mailbox database copies provide full redundancy and rapid recovery of both the data and the services that provide access to the data. The following table lists the expected recovery actions for various failures. Some failures require the administrator to initiate the recovery, and other failures are automatically handled by the system.
 
 <table style="width:100%;">
 <colgroup>
@@ -159,7 +159,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>ESE &quot;<em>semi-soft&quot;</em> database failure: The drives storing the database are returning errors on some writes.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>Automatic volume/disk rebuilt after possible drive replacement.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>RAID rebuild may solve the problem.</p>
 <p>Copy and repair, restore and run recovery, or volume/disk rebuilt after possible replacement.</p></td>
@@ -170,7 +170,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>ESE &quot;semi-soft&quot; log failure: The drives storing the log data are returning non-recovered errors on some reads or writes.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>Automatic volume/disk rebuilt after possible drive replacement.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>RAID rebuild may solve the problem.</p>
 <p>Copy and repair, restore and run recovery, or volume/disk rebuilt after possible replacement.</p></td>
@@ -181,7 +181,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>ESE software error or resource exhaustion: An error where ESE terminates instance (for example, Event ID 1022, checkpoint depth too deep).</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>None.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>Fix underlying resource issue.</p></td>
 <td><p>This failure could be the surfaced error of other cases.</p></td>
@@ -189,18 +189,18 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <tr class="odd">
 <td><p>NTFS block failures: The drives storing the database or logs experiences a read or write error to an NTFS control structure.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
-<td><p>Volume completely rebuilt after possible drive replacement.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Volume rebuilt after possible drive replacement.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>RAID rebuild may solve the problem. NTFS utilities may solve the NTFS problems. Exchange recovery may be required.</p></td>
-<td><p>This is more likely to occur when RAID isn't in use. If this impacts the active log volume, some recent log files will be lost.</p>
+<td><p>This event is more likely to occur when RAID isn't in use. If this event impacts the active log volume, some recent log files will be lost.</p>
 <p>Doesn't include errors automatically corrected by NTFS or its underlying software or hardware stack.</p></td>
 </tr>
 <tr class="even">
-<td><p>Database or log drive failure: A drive storing the database or logs has completely failed and is inaccessible.</p></td>
+<td><p>Database or log drive failure: A drive storing the database or logs has failed and is inaccessible.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>Drive reformatted or replaced, followed by complete volume rebuild.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>Drive replacement followed by possible RAID rebuild.</p>
 <p>Drive replacement followed by complete volume rebuild.</p>
@@ -208,10 +208,10 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>Not applicable.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Database or log volume failure: The volume fails due to NTFS or lower level volume issues.</p></td>
+<td><p>Database or log volume failure: The volume fails due to NTFS or lower-level volume issues.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>Drive reformatted or replaced.</p></td>
-<td><p>Dismounted if can't be recovered.</p></td>
+<td><p>Dismounted if it can't be recovered.</p></td>
 <td><p>Failed</p></td>
 <td><p>Drive replacement followed by possible RAID rebuild.</p>
 <p>Drive replacement followed by complete volume rebuild.</p>
@@ -321,7 +321,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>A passive database copy will be in the state that existed when the Microsoft Exchange Information Store service failed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Partial Microsoft Exchange Information Store service failure; some part of the Exchange store stops functioning, but it's not identified as completely failed.</p></td>
+<td><p>Partial Microsoft Exchange Information Store service failure; some part of the Exchange store stops functioning, but it's not identified as failed.</p></td>
 <td><p>Possible short outage during automatic failover.</p></td>
 <td><p>None.</p></td>
 <td><p>Mounted and partially functional.</p></td>
@@ -373,7 +373,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>Resiliency impacted by failure.</p></td>
 </tr>
 <tr class="even">
-<td><p>Multiple network communication failure: The server can't receive heartbeats, log copies, or seed through multiple networks.</p></td>
+<td><p>Multiple network communication failures: The server can't receive heartbeats, log copies, or seed through multiple networks.</p></td>
 <td><p>Short outage during automatic failover; must be lossless.</p></td>
 <td><p>None. Communication continues to be attempted.</p></td>
 <td><p>Dismounted.</p></td>
@@ -391,7 +391,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>Network experiences higher than normal error rates.</p></td>
 </tr>
 <tr class="even">
-<td><p>Undetected operating system hang: Operating system stops responding but it's not detected by monitoring or clustering.</p></td>
+<td><p>Undetected operating systems hang: Operating system stops responding but it's not detected by monitoring or clustering.</p></td>
 <td><p>None.</p></td>
 <td><p>None.</p></td>
 <td><p>Any.</p></td>
@@ -419,7 +419,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 <td><p>Not applicable.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Drive containing Exchange binaries experiences a volume or drive failure.</p></td>
+<td><p>Drives containing Exchange binaries experience a volume or drive failure.</p></td>
 <td><p>Short outage during automatic failover.</p></td>
 <td><p>None.</p></td>
 <td><p>Dismounted.</p></td>
@@ -459,7 +459,7 @@ DAGs and mailbox database copies provide full redundancy and rapid recovery of b
 
 ## Database Failovers
 
-A database failover occurs when a database copy that was active is no longer able to remain active. The following occurs as part of a database failover:
+A database failover occurs when a database copy that was active is no longer able to remain active. The following occurrences are part of a database failover:
 
 1. The database failure is detected by the Microsoft Exchange Information Store service.
 
@@ -487,7 +487,7 @@ A database failover occurs when a database copy that was active is no longer abl
 
 ## Server Failovers
 
-A server failover occurs when the DAG member is no longer able to service the MAPI network, or when the Cluster service on a DAG member is no longer able to contact the remaining DAG members. The following occurs as part of a server failover:
+A server failover occurs when the DAG member is no longer able to service the MAPI network, or when the Cluster service on a DAG member is no longer able to contact the remaining DAG members. The following occurrences are part of a server failover:
 
 1. The Cluster service on the PAM sends a notification to the PAM for one of two conditions:
 
@@ -523,14 +523,14 @@ For more information about Active Manager's best copy selection process, see [Ac
 
 ## Datacenter Failovers
 
-Significant changes have been made in Exchange 2013 that address the challenges with an Exchange 2010 site resilience configuration. With the namespace simplification, consolidation of server roles, separation of Client Access server and DAG recovery (in Exchange 2013, the namespace does not need to move with the DAG), and the changes around load balancing, Exchange 2013 provides new site resilience options, such as the ability to use a single global namespace. In addition, if you have more than two locations in which to deploy messaging service components, Exchange 2013 also provides the ability to configure the messaging service for automatic failover in response to failures that required manual intervention in Exchange 2010.
+Significant changes have been made in Exchange 2013 that address the challenges with an Exchange 2010 site resilience configuration. With the namespace simplification, consolidation of server roles, separation of Client Access server and DAG recovery (in Exchange 2013, the namespace does not need to move with the DAG), and the changes around load balancing, Exchange 2013 provides new site resilience options, such as the ability to use a single global namespace. In addition, if you have more than two locations in which to deploy messaging service components, Exchange 2013 also enables configuration of the messaging service for automatic failover in response to failures that required manual intervention in Exchange 2010.
 
-Site resilience has been operationally simplified in Exchange 2013. Exchange leverages fault tolerance built into the namespace through multiple IP addresses, load balancing (and if need be, the ability to take servers in and out of service). One of the most significant changes we made in Exchange 2013 was to leverage the clients' ability to cache multiple IP addresses returned from a DNS server in response to a name resolution request. Assuming the client has the ability to cache multiple IP addresses (which almost all HTTP clients do, and since almost all of the client access protocols in Exchange 2013 are HTTP based (Outlook, Outlook Anywhere, EAS, EWS, OWA, EAC, RPS, etc.), all supported HTTP clients have the ability to use multiple IP addresses), thereby providing failover on the client side. You can configure DNS to hand multiple IP addresses to a client during name resolution. The client asks for mail.contoso.com and gets back two IP addresses, or four IP addresses, for example. However many IP addresses the client gets back will be used reliably by the client. This makes the client a lot better off because if one of the IP addresses fails, the client has one or more others to try to connect to. If a client tries one and it fails, it waits around 20 seconds and then tries the next one in the list. Thus, if you lose connectivity to your primary CAS array, and you have a second published IP address for a second CAS array, recovery for the clients happens automatically (and in about 21 seconds).
+Site resilience has been operationally simplified in Exchange 2013. Exchange applies fault tolerance built into the namespace through multiple IP addresses, load balancing (and if need be, the ability to take servers in and out of service). One of the most significant changes we made in Exchange 2013 was to use the clients' ability to cache multiple IP addresses returned from a DNS server in response to a name resolution request. Assuming the client has the ability to cache multiple IP addresses (which almost all HTTP clients do, and since almost all of the client access protocols in Exchange 2013 are HTTP based (Outlook, Outlook Anywhere, EAS, EWS, OWA, EAC, RPS, etc.), all supported HTTP clients have the ability to use multiple IP addresses), thereby providing failover on the client side. You can configure DNS to hand multiple IP addresses to a client during name resolution. The client asks for mail.contoso.com and gets back two IP addresses, or four IP addresses, for example. However, many IP addresses the client gets back will be used reliably by the client. This optimum utilization makes the client a lot better off because if one of the IP addresses fails, the client has one or more others to try to connect to. If a client tries one and it fails, it waits around 20 seconds and then tries the next one in the list. Thus, if you lose connectivity to your primary CAS array, and you have a second published IP address for a second CAS array, recovery for the clients happens automatically (and in about 21 seconds).
 
-Modern HTTP clients (operating systems and Web browsers that are ten years old or less) simply work with this redundancy automatically. The HTTP stack can accept multiple IP addresses for an FQDN, and if the first IP it tries fails hard (for example, cannot connect), it will try the next IP in the list. In a soft failure (connect lost after session established, perhaps due to an intermittent failure in the service where, for example, a device is dropping packets and needs to be taken out of service), the user might need to refresh their browser.
+Modern HTTP clients (operating systems and Web browsers that are ten years old or less) work with this redundancy automatically. The HTTP stack can accept multiple IP addresses for an FQDN, and if the first IP it tries fails hard (for example, cannot connect), it will try the next IP in the list. In a soft failure (connect lost after session established, due to an intermittent failure in the service where, for example, a device is dropping packets and needs to be taken out of service), the user might need to refresh their browser.
 
 With the proper configuration, failover can happen at the client level and clients will be automatically redirected to a second datacenter that has operating Client Access servers, and those operating Client Access servers will proxy the communication back to the user's Mailbox server, which remains unaffected by the outage (because you don't do a switchover). Instead of working to recover service, the service recovers itself and you can focus on fixing the core issue (for example, replacing a failed load balancer).
 
-Since you can failover the namespace between datacenters, all that is needed to achieve a datacenter failover is a mechanism for failover of the Mailbox role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. The key is that third location is isolated from network failures that affect the locations containing the DAG members.
+Since you can fail over the namespace between datacenters, all that is needed to achieve a datacenter failover is a mechanism for failover of the Mailbox role across datacenters. To get automatic failover for the DAG, you architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. The key is that third location is isolated from network failures that affect the locations containing the DAG members.
 
 If you only have two datacenters and would like to be able to configure automatic failover, you can utilize Microsoft Azure as your third location. You will need to create an Azure virtual network and connect it to your two datacenters using a multi-point VPN. You will then be able to place your witness server on a Microsoft Azure virtual machine. For more information, see [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md).
