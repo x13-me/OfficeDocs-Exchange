@@ -152,4 +152,4 @@ DLP policies and attachment-related conditions can help you enforce your busines
 
 ## For more information
 
-For information on broadly blocking email with attachments, regardless of malware status, see [Use mail flow rules to block messages with executable attachments in EOP](/microsoft-365/security/office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro).
+For information on broadly blocking email with attachments, regardless of malware status, see [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md).

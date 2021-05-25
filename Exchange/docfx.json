@@ -153,7 +153,7 @@
     "fileMetadata": {
         "feedback_system": {
           "ExchangeServer/**/*.md": "none",
-          "ExchangeServer2013/**/*.md": ""
+          "ExchangeServer2013/**/*.md": "none"
          },
         "feedback_github_repo": {
           "ExchangeServer/**/*.md": "none",
@@ -164,7 +164,7 @@
           "ExchangeServer2013/**/*.md": "none"        
         },
         "hideEdit": {
-          "ExchangeServer/**/*.md": true,
+          "ExchangeServer/**/*.md": false,
           "ExchangeServer2013/**/*.md": true         
         },
         "ms.prod": {
