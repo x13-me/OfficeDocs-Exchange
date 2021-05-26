@@ -398,7 +398,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Text Predictions**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-12. If you want to configure S/MIME settings, see [Outlook for iOS Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-ios-automated-certificate-delivery) or [Outlook for Android Automated Certificate Delivery](sensitive-labeling-and-protection-outlook-for-ios-android.md#outlook-for-android-automated-certificate-delivery).
+12. If you want to configure S/MIME settings, see [Outlook for iOS automated certificate delivery](smime-outlook-for-ios-and-android.md#outlook-for-ios-automated-certificate-delivery) or [Outlook for Android automated certificate delivery](smime-outlook-for-ios-and-android.md#outlook-for-android-automated-certificate-delivery).
 
 13. When you are finished selecting settings, choose **Next**.
 
@@ -475,23 +475,23 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - If you want to manage which contact fields sync to the native contacts apps, configure the desired **Sync contact fields to native contacts app configuration** settings accordingly. For each contact field setting, choose from the available options: **Not configured** (default), **Yes** (app default), **No**.
 
-11. If you want to manage the app's S/MIME configuration, configure the desired settings accordingly:
+10. If you want to manage the app's S/MIME configuration, configure the desired settings accordingly:
 
     - For **Enable S/MIME**, choose from the available options: **Not configured** (default), **Yes**, **No** (app default). When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
     > [!IMPORTANT]
-    > S/MIME certificates must be available within Outlook for iOS and Android for the user sign or encrypt messages. For more information, see [Deploying S/MIME certificates with Outlook for iOS and Android](sensitive-labeling-and-protection-outlook-for-ios-android.md#deploying-smime-certificates-with-outlook-for-ios-and-android).
+    > S/MIME certificates must be available within Outlook for iOS and Android for the user sign or encrypt messages. For more information, see [S/MIME for Outlook for iOS and Android](smime-outlook-for-ios-and-android.md).
 
     - Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
     - Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-12. When you are finished configuring the settings, choose **Next**.
+11. When you are finished configuring the settings, choose **Next**.
 
-13. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
+12. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
 
-14. When you are finished with the assignments, choose **Next**.
+13. When you are finished with the assignments, choose **Next**.
 
-15. On the **Create app configuration policy Review + Create** blade, review the settings configured and choose **Create**.
+14. On the **Create app configuration policy Review + Create** blade, review the settings configured and choose **Create**.
 
 The newly created configuration policy is displayed on the **App configuration** blade.
 
