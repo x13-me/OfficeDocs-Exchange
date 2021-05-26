@@ -285,7 +285,7 @@ Assuming the user is running a supported version of Outlook for iOS and Android,
 
 ### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
 
-No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Microsoft 365 or Office 365 mailboxes first before we migrate on-premises mailbox accounts. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remains on-premises, the on-premises users using [hybrid modern authentication](../../../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md) will be migrated to the native Microsoft sync technology at a later date. This means that your Microsoft 365 and Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
+No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Microsoft 365 or Office 365 mailboxes first before we migrate on-premises mailbox accounts. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remains on-premises, the on-premises users using [hybrid modern authentication](../../../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md) will be migrated to the native Microsoft sync technology at a later date. This system means that your Microsoft 365 and Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
 
 Once your tenant is migrated, a user will not switch to the native Microsoft sync technology, until after they launch/resume Outlook for iOS and Android.
 
@@ -359,13 +359,13 @@ The following questions concern end users in your organization who are using Out
 
 ### Q: My users enabled the "Save Contacts" advanced settings option. However, they are complaining that not all contacts have synchronized on their iOS devices. Are there limitations with synchronization?
 
-The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (for example, reconciliation will remove duplicates in the event that Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
+The initial export of contacts can only begin when Outlook is in the foreground. A user can switch between apps and the export will continue while Outlook is active in memory. There are iOS limitations when syncing with iCloud that may result in data inconsistency, but Outlook will automatically trigger a reconciliation to ensure that the contacts are always consistently exported (for example, reconciliation will remove duplicates if Outlook detects exported contacts from a previous export activity). Reasons for missing/duplicate contacts might include:
 
 - Outlook for iOS being suspended during sync.
 - Enabling "Save Contacts" simultaneously on multiple devices (such as an iPad and an iPhone).
 - Accrued sync errors over time.
 
-In the event you are seeing an inconsistency and it has not been resolved after a short period of time, wait twenty-four hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
+If you are seeing an inconsistency and it has not been resolved after a short period of time, wait for 24 hours and then restart the app to trigger the reconciliation process. If that does not work, perform the following steps:
 
 1. Disable "Save Contacts" for the affected account.
 2. Check that all instances of the contacts are removed from the native iOS contacts app. If duplicates remain, go to Settings \> Help & Feedback \> Delete All Saved Contacts in order to remove any lingering duplicates.
@@ -374,11 +374,11 @@ In the event you are seeing an inconsistency and it has not been resolved after 
 
 ### Q: Why are the Office mobile apps required to be installed on Android in order to render attachments in Outlook, while iOS devices provide a preview of the attachments within Outlook?
 
-This is due to the differences in the base operating systems. iOS provides native content rendering for known attachment types, which Outlook for iOS uses to provide basic attachment rendering. Android provides nothing similar. Android users have to install the Office apps and/or third-party apps in order to render attachment content.
+This requirement is due to the differences in the base operating systems. iOS provides native content rendering for known attachment types, which Outlook for iOS uses to provide basic attachment rendering. Android provides nothing similar. Android users have to install the Office apps and/or third-party apps in order to render attachment content.
 
 ### Q: A new message included an attachment, but while I was offline I couldn't open the attachment. Why is that?
 
-Outlook (like other mobile clients) does not download attachments automatically. This is by design, in order to conserve device space. Attachments are only downloaded at the request of the user.
+Outlook (like other mobile clients) does not download attachments automatically. This behavior is by design, in order to conserve device space. Attachments are only downloaded at the request of the user.
 
 ### Q: A week ago I accessed an attachment in a message, but now that I'm offline I can no longer access that attachment on my iOS device. However, I can access it on my Android device. Why is that?
 
@@ -386,9 +386,9 @@ Outlook for iOS stores attachments in our own database. As a result, every attac
 
 Unlike iOS, Android uses an accessible file system, so when Outlook for Android downloads an attachment, it doesn't go into the database, rather it is stored as a temporary file.
 
-### Q: Why does data within Outlook for iOS disappear and then re-appear after I toggle the Focused Inbox or the Organize by Thread settings?
+### Q: Why does data within Outlook for iOS disappear and then reappear after I toggle the Focused Inbox or the Organize by Thread settings?
 
-Whenever those options are changed, Outlook for iOS performs a soft reset. This wipes the existing data that has been downloaded to the app and requires a re-synchronization.
+Whenever those options are changed, Outlook for iOS performs a soft reset. This operation wipes the existing data that has been downloaded to the app and requires a resynchronization.
 
 ### Q: Can I view organization chart information in Outlook for iOS?
 
