@@ -28,7 +28,7 @@ Shared mailboxes make it easy for a group of people in your company to monitor a
 
 - Creating a shared mailbox in Exchange Online also creates an active user account with a system-generated (unknown) password. To block sign-in for this account, see [Block sign-in for the shared mailbox account](/microsoft-365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
-- If your organization uses a hybrid Exchange environment, you should use the Exchange admin center (EAC) in your on-premises Exchange organization to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared mailboxes](../../collaboration/shared-mailboxes/shared-mailboxes.md).
+- If your organization uses a hybrid Exchange environment, you should use the Exchange admin center (EAC) in your on-premises Exchange organization to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared mailboxes](../../ExchangeServer/collaboration/shared-mailboxes/shared-mailboxes.md).
 
 - When users move items from one folder to another in a shared mailbox, a copy of the item is stored in the [Recoverable Items](../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md) folder.
 
