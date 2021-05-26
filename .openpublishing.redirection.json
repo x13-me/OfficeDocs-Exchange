@@ -829,6 +829,11 @@
       "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval.md",
       "redirect_url": "/exchange/architecture/mailbox-servers/reassign-and-remove-arbitration-mailboxes-for-moderation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/enable-encryption-and-decryption.md",
+      "redirect_url": "/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email",
+      "redirect_document_id": false
     }
 ]
 }
