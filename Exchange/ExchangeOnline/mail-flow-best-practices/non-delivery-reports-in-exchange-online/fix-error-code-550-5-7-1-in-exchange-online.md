@@ -150,7 +150,7 @@ To configure the public folder to accept messages from external senders, follow 
 
 ### The sender is external and their source IP address is on Microsoft's blocklist
 
-In this case, the NDR the sender receives would include information in the **Diagnostics for administrators** section similar to this:
+In this case, the NDR the sender receives would include information in the **Diagnostics for administrators** section similar to the following information:
 
    `5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
 
