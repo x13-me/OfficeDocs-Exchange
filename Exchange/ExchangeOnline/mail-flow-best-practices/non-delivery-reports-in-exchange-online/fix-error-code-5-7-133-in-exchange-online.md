@@ -101,7 +101,7 @@ To configure the group's allowed senders list, perform the following steps:
 
 5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
 
-6. Under **Specified senders**, click inside the text box. The list of senders (internal and external) are displayed.
+6. Under **Specified senders**, click inside the text box. The list of senders (internal and external) is displayed.
 
 :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
