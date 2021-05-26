@@ -86,4 +86,4 @@ See the following articles:
 
 Are you using Exchange Server? See [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center).
 
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Are you using standalone Exchange Online Protection (EOP)? See [Exchange admin center in Exchange Online Protection](/exchange/standalone-eop/exchange-admin-center-eop).
