@@ -315,6 +315,12 @@ Set-OrganizationConfig -DefaultAuthenticationPolicy "Block Basic Auth"
 > [!NOTE]
 > To remove the default authentication policy designation, use the value `$null` for the *DefaultAuthenticationPolicy* parameter.
 
+Use the following example to verify that a default authentication policy is configured.
+
+```PowerShell
+Get-OrganizationConfig | Format-Table DefaultAuthenticationPolicy
+```
+
 ### Remove authentication policies
 
 To remove an existing authentication policy, use this syntax:
@@ -333,7 +339,10 @@ For detailed syntax and parameter information, see [Remove-AuthenticationPolicy]
 
 ### How do you know that you've successfully disabled Basic authentication in Exchange Online?
 
-To confirm that the authentication policy was applied to users:
+To confirm that an authentication policy was directly applied to users:
+
+> [!NOTE]
+> Take into account that a default authentication policy could be already configured. See [Configure the default authentication policy](#configure-the-default-authentication-policy) for details.
 
 1. Run the following command to find the distinguished name (DN) value of the authentication policy:
 

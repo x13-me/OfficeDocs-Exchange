@@ -28,13 +28,15 @@ To learn about concepts and objectives for mail flow rules, see [Mail flow rules
 
 [Use mail flow rules for attachment blocking scenarios](common-attachment-blocking-scenarios.md): Learn how to use mail flow rules to block all attachments.
 
+[Use mail flow rules to block messages with executable attachments](use-rules-to-block-executable-attachments.md): Learn how to use mail flow rules to block messages that contain executable attachments.
+
 [Use mail flow rules to inspect message attachments](inspect-message-attachments.md): Learn how to use mail flow rule conditions that allow you to inspect the content of message attachments.
 
-[Use mail flow rules to set the spam confidence level (SCL) in messages](/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages): Learn how to use mail flow rules to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering.
+[Use mail flow rules to set the spam confidence level (SCL) in messages](use-rules-to-set-scl.md): Learn how to use mail flow rules to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering.
 
-[Use mail flow rules to filter bulk email](/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering): Examples describing how to mark messages that contain specific bulk indicator content as spam.
+[Use mail flow rules to filter bulk email](use-rules-to-filter-bulk-mail.md): Examples describing how to mark messages that contain specific bulk indicator content as spam.
 
-[Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft): Receive copies of messages that users report as junk, not junk or phishing to Microsoft.
+[Use mail flow rules to see what users are reporting to Microsoft](use-rules-to-see-what-users-are-reporting-to-microsoft.md): Receive copies of messages that users report as junk, not junk or phishing to Microsoft.
 
 ## Mail flow rule procedures for other features in Exchange Online and standalone EOP
 
