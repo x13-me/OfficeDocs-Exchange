@@ -130,7 +130,7 @@ In this cases, the NDR the sender receives would include information in the **Di
 
    `5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
 
-To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com.
+To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com and please also see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).
 
 ### Your domain isn't fully enrolled in Microsoft 365 or Office 365
 
