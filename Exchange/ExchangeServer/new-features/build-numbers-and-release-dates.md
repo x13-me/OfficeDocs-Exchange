@@ -18,17 +18,17 @@ manager: serdars
 
 # Exchange Server build numbers and release dates
 
-You can use the information in this topic to verify the version of Exchange that is running in your organization.
+You can use the information in this article to verify the version of Exchange that is running in your organization.
 
-This topic is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), Security Update (SU) or Update Rollup (RU) of the specific Exchange release.
+This article is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), Security Update (SU), or Update Rollup (RU) of the specific Exchange release.
 
-> [!NOTE]
-> Starting with the March 2021 Security Update (SU), we will also publish the build numbers for this type of updates.
-
-Download links for the latest CU, RU, SP and SU for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
+Links for the avaialble downloads are also included.
 
 > [!NOTE]
-> In the following sections, RTM stands for release to manufacturing (the first version of the product).
+>
+> Starting with the March 2021 Security Update (SU), we will also include build numbers for Security Updates.
+>
+> RTM stands for release to manufacturing (the first version of the product).
 
 ## View the build number of an Exchange server you can run one of the following:
 
@@ -59,6 +59,8 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 ## Exchange Server 2019
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2019.
+
+<br>
 
 ****
 
@@ -93,6 +95,8 @@ The table in this section provides build numbers and general release dates for e
 ## Exchange Server 2016
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2016.
+
+<br>
 
 ****
 
@@ -142,6 +146,8 @@ The table in this section provides build numbers and general release dates for e
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2013.
 
+<br>
+
 ****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
@@ -184,6 +190,8 @@ The tables in this section provide build numbers and general release dates for e
 
 ### Exchange Server 2010 SP3 build numbers
 
+<br>
+
 ****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
@@ -225,6 +233,8 @@ The tables in this section provide build numbers and general release dates for e
 |
 
 ### Build numbers for previous releases of Exchange Server 2010
+
+<br>
 
 ****
 
@@ -269,6 +279,8 @@ The tables in this section provide build numbers and general release dates for e
 > [!NOTE]
 > The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
 
+<br>
+
 ****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
@@ -302,6 +314,8 @@ The tables in this section provide build numbers and general release dates for e
 |
 
 ### Build numbers for previous releases of Exchange Server 2007
+
+<br>
 
 ****
 
@@ -340,6 +354,8 @@ The tables in this section provide build numbers and general release dates for e
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server 2003. To view the build number of Exchange Server 2003, open the **Properties** dialog box of the server object.
 
+<br>
+
 ****
 
 |Product name|Release date|Build number|
@@ -354,6 +370,8 @@ The following table lists the build numbers and general release dates for each v
 ## Exchange 2000 Server
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange 2000 Server. To view the build number of Exchange 2000 Server, open the **Properties** dialog box of the server object.
+
+<br>
 
 ****
 
@@ -374,6 +392,8 @@ The following table lists the build numbers and general release dates for each v
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server version 5.5.
 
+<br>
+
 ****
 
 |Product name|Release date|Build number|
@@ -387,6 +407,8 @@ The following table lists the build numbers and general release dates for each v
 
 ## Exchange Server 5.0
 
+<br>
+
 ****
 
 |Product name|Release date|Build number|
@@ -399,6 +421,8 @@ The following table lists the build numbers and general release dates for each v
 ## Exchange Server 4.0
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server 4.0.
+
+<br>
 
 ****
 
