@@ -20,9 +20,12 @@ manager: serdars
 
 You can use the information in this topic to verify the version of Exchange that is running in your organization.
 
-This topic is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), or Update Rollup (RU) of the specific Exchange release.
+This topic is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), Security Update (SU) or Update Rollup (RU) of the specific Exchange release.
 
-Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
+> [!NOTE]
+> Starting with the March 2021 Security Update (SU), we will also publish the build numbers for this type of updates.
+
+Download links for the latest CU, RU, SP and SU for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
 
 > [!NOTE]
 > In the following sections, RTM stands for release to manufacturing (the first version of the product).
@@ -167,7 +170,7 @@ The table in this section provides build numbers and general release dates for e
 |Exchange Server 2013 CU7|December 9, 2014|15.0.1044.25|15.00.1044.025|
 |Exchange Server 2013 CU6|August 26, 2014|15.0.995.29|15.00.0995.029|
 |Exchange Server 2013 CU5|May 27, 2014|15.0.913.22|15.00.0913.022|
-|&nbsp;&nbsp;&nbsp;[Exchange Server 2013 SP1 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.0.847.64|15.00.847.064|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2013 SP1 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.0.847.64|15.00.0847.064|
 |Exchange Server 2013 SP1|February 25, 2014|15.0.847.32|15.00.0847.032|
 |Exchange Server 2013 CU3|November 25, 2013|15.0.775.38|15.00.0775.038|
 |Exchange Server 2013 CU2|July 9, 2013|15.0.712.24|15.00.0712.024|
