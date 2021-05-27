@@ -33,6 +33,9 @@ Client Access Rules help you control access to your Exchange Online organization
 
 For Client Access Rule procedures, see [Procedures for Client Access Rules in Exchange Online](procedures-for-client-access-rules.md).
 
+> [!NOTE]
+> EWS Impersonation is not affected by Client Access Rules.
+
 ## Client Access Rule components
 
 A rule is made of conditions, exceptions, an action, and a priority value.
