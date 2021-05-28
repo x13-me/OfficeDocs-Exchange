@@ -49,6 +49,7 @@
       "searchScope": ["Exchange"],
       "feedback_system": "None",
       "hideEdit": true,
+      "recommendations": true,
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
