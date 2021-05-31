@@ -29,7 +29,7 @@ The following are experiences that on-premises mailbox users can expect after al
 
 - Expand a Microsoft 365 group and view the members, just like in a distribution group, in Outlook on the web and Outlook desktop client while composing a new email.
 - Send and receive emails and calendar invites to and from Microsoft 365 groups.
-3) Collaborate on ODB documents sent by Microsoft 365 Users
+- Collaborate on ODB documents sent by Microsoft 365 users.
 - Access a SharePoint site, Planner, and OneNote associated with the Microsoft 365 group.
 
 > [!IMPORTANT]
