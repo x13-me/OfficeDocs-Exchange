@@ -28,7 +28,7 @@ Microsoft 365 Groups service that enables teams to communicate, schedule meeting
 The following are experiences that on-premises mailbox users can expect after all the steps in this document have been performed:
 
 - Expand a Microsoft 365 group and view the members, just like in a distribution group, in Outlook on the web and Outlook desktop client while composing a new email.
-2) Send/receive emails, calendar invites to Microsoft 365 group 
+- Send and receive emails and calendar invites to and from Microsoft 365 groups.
 3) Collaborate on ODB documents sent by Microsoft 365 Users
 4) Access SharePoint site, Planner, OneNote associated with Microsoft 365 Group
 
