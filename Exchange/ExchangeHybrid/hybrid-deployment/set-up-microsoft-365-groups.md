@@ -108,7 +108,7 @@ The primary SMTP domain of a Microsoft 365 group is called a group domain. By de
    ```
 
 > [!IMPORTANT]
-Ensure On-Premises servers can resolve the MX entry added for the groups domain in step 2. The groups domain must be added as InternalRelay, otherwise it will cause mailflow issues.
+> Ensure that on-premises servers can resolve the MX entry added for the group's domain in step 2. The group's domain must be added as InternalRelay, otherwise, it will cause mail flow issues.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
