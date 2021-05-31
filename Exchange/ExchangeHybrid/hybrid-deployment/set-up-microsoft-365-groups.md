@@ -55,7 +55,7 @@ Before you start, make sure that you've done the following:
 
 ## Enable Group writeback in Azure AD Connect
 
-This step synchronizes Microsoft 365 Group from Exchange Online to Exchange On-Premises.
+This step synchronizes Microsoft 365 Groups from Exchange Online to Exchange on-premises.
 
 1. Open the Azure AD Connect wizard, select **Configure** and then click **Next**.
 
