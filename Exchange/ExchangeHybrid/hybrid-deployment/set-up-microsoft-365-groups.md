@@ -33,7 +33,7 @@ The following are experiences that on-premises mailbox users can expect after al
 - Access a SharePoint site, Planner, and OneNote associated with the Microsoft 365 group.
 
 > [!IMPORTANT]
-After the steps in this article have been successfully performed, the on-premises mailbox can perform above mentioned tasks. However, the Microsoft 365 group will not appear in the navigation bar of Outlook on the web or Outlook desktop client. For a full-fledged Microsoft 365 Groups experience, the mailbox must be present in Microsoft 365. 
+> After the steps in this article have been successfully performed, the on-premises mailbox can perform the previously mentioned tasks. However, the Microsoft 365 group will not appear in the navigation bar of Outlook on the web or Outlook desktop client. For a fully-fledged Microsoft 365 Groups experience, the mailbox must be present in Microsoft 365. 
 
 Check the [Known issues](#known-issues) section at the end of this topic for fixes to known issues.
 
