@@ -25,7 +25,7 @@ Learn how to enable on-premises Exchange users to use Microsoft 365 Groups in a 
 
 Microsoft 365 Groups service that enables teams to communicate, schedule meetings, and collaborate on documents more easily. All information shared with a group, from email messages sent to the group, to files stored in the group's OneDrive for Business or SharePoint libraries, is available to any member of a group. If you've configured a hybrid deployment between your on-premises Exchange organization and Microsoft 365 or Office 365, you can make groups created in Microsoft 365 or Office 365 available to your on-premises users by following the steps in this topic.
 
-Following are experiences that On-Premises mailbox can expect after all the steps in this document have been performed:
+The following are experiences that on-premises mailbox users can expect after all the steps in this document have been performed:
 
 1) Expand Microsoft 365 Group and view members, just like a distribution group, in Outlook/OWA client while composing new email
 2) Send/receive emails, calendar invites to Microsoft 365 group 
