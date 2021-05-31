@@ -174,7 +174,7 @@ If you have an incorrect MX record, try the following steps:
 
 2. Check with your domain registrar or DNS hosting service to verify the MX record for your domain is correct. The MX record for a domain that's enrolled in Exchange Online uses the syntax  _\<domain\ >_.mail.protection.outlook.com.
 
-3. Verify **MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
+3. Verify **Inbound SMTP Email** and **Outbound SMTP Email** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 4. Verify you have only one MX record configured for your domain. Microsoft doesn't support using more than one MX record for a domain that's enrolled in Exchange Online.
 
