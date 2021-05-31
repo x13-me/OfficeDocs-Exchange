@@ -85,7 +85,7 @@ This step synchronizes Microsoft 365 Group from Exchange Online to Exchange On-P
 
 ## Configure a group domain
 
-The primary SMTP domain of a Microsoft 365 group is called a group domain. By default, the default accepted domain in your Exhange Online organization is chosen as the group domain. For better interoperation with On-Premises servers, it is recommended to add a dedicated groups domain. You can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
+The primary SMTP domain of a Microsoft 365 group is called a group domain. By default, the default accepted domain in your Exchange Online organization is chosen as the group domain. For better interoperation with on-premises servers, we recommended adding a dedicated groups domain. You can add a domain using the following steps. For more information about multi-domain support for Microsoft 365 Groups, check out [Multi-domain support for Microsoft 365 Groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
 1. Add your new domain to your Microsoft 365 or Office 365 organization. If you need help adding a domain to Microsoft 365 or Office 365, check out [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
