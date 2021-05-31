@@ -156,7 +156,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
   Update-Recipient -Identity "[group Distinguished Name]"
   ```
 
-- If the "Oubound to Office 365" Send-Connector is using an Edge Transport Server as the source server. Messages to Groups will end-up in a loop and NDR. Please check (this)[https://docs.microsoft.com/en-us/Exchange/mail-flow/accepted-domains/accepted-domains?view=exchserver-2019] article for more details
+- **If the _Outbound to Office 365_ Send connector is using an Edge transport server as the source server**: Messages to Microsoft 365 Groups will end up in a loop, resulting in a non-delivery report. Check out [Accepted domains in Exchange Server](/Exchange/mail-flow/accepted-domains/accepted-domains?view=exchserver-2019) for more details.
 
 - **On-premises users can't use links included in group message footers**: On-premises users can't use the **View group conversations** or **Unsubscribe** links that are included in the footer of each group message sent to them. To unsubscribe from a group, on-premises users need to contact a group administrator.
 
