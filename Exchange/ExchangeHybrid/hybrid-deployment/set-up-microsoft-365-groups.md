@@ -125,7 +125,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 ### Test using an on-premises mailbox
 
-1. Add an on-premises mailbox to a Microsoft 365 group
+1. Add an on-premises mailbox to a Microsoft 365 group.
 2. Add a Microsoft 365 or Office 365 mailbox to the same Microsoft 365 group.
 3. Log in to the Microsoft 365 or Office 365 mailbox using Outlook on the web.
 4. Post a message to the group using the Microsoft 365 or Office 365 mailbox.
