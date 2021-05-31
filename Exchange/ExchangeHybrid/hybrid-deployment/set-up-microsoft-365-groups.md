@@ -167,7 +167,6 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as a Microsoft 365 group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
 - **By default, when an email is sent from an on-premises mailbox to an Outlook group that the user is a member of, the user doesn't receive a copy of that email in their Inbox**: The Exchange Online tenant admin can use the following Exchange Online shell command to ensure the on-premises mailbox user can receive a copy of the email in their Inbox:
-EXO Tenan Admin can use following EXO shell command to ensure On-Premises mailbox can receive copy of email in Inbox, for above mentioned scenario:
 
   ```PowerShell
   
