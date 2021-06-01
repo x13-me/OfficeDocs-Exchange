@@ -124,6 +124,8 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 - **Versions** - When a user placed on In-Place Hold or Litigation Hold, mailbox items must be protected from tampering or modification by the user or a process. This is accomplished using a copy-on-write process. When a user or a process changes specific properties of a mailbox item, a copy of the original item is saved in the Versions folder before the change is committed. The process is repeated for subsequent changes. Items captured in the Versions folder are also indexed and returned in eDiscovery searches. After the hold is removed, copies in the Versions folder are removed by the Managed Folder Assistant.
 
+- **SubstrateHolds** - If In-Place Hold, Litigation Hold, or a Microsoft 365 or Office 365 Teams Chat retention policy is enabled, this subfolder contains the original copy of the Teams message if the message has been modified or deleted. A copy of the item before modification is saved. This folder isn't visible to end users.
+
 **Properties that trigger copy-on-write**
 
 | Item type | Properties that trigger copy-on-write |

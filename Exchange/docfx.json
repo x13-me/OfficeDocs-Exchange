@@ -136,6 +136,7 @@
         "searchScope": ["Exchange"],
         "breadcrumb_path": "/exchange/breadcrumb/toc.json",
         "extendBreadcrumb": "true",
+        "recommendations": true,
         "uhfHeaderId": "MSDocsHeader-M365-IT",
         "feedback_system": "GitHub",
         "feedback_github_repo": "MicrosoftDocs/OfficeDocs-Exchange",
