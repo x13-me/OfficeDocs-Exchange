@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
 ms.reviewer: 
 description: Learn how to do an Express migration of on-premises Exchange mailboxes to Microsoft 365 or Office 365.
@@ -59,7 +59,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 6. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify ownership.
 
-    You can also find the instructions in [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    You can also find the instructions in [Create DNS records at any DNS hosting provider for Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
     After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
@@ -103,7 +103,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
     At this point you are prompted to download and install the **Azure AD Connect wizard** to synchronize your users from on-premises to Microsoft 365 or Office 365.
 
-2. Once Azure AD Connect has downloaded, run it and choose the **default options for [Express settings](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)**.
+2. Once Azure AD Connect has downloaded, run it and choose the **default options for [Express settings](/azure/active-directory/hybrid/how-to-connect-install-express)**.
 
     After synchronization is completed, you will be taken to the **Data migration** page where you can see all of your users that were synchronized to Microsoft 365 or Office 365.
 
@@ -118,7 +118,7 @@ After Azure AD connect synchronizes your users and their passwords to Microsoft 
 
 The status on the **Data migration** page indicates that a license is needed as shown in the figure.
 
-In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
 ![User status on the Data migration page indicate if a user needs a license](media/f0f211f2-be43-493e-bf6b-e9279c76d03e.png)
 
@@ -140,15 +140,15 @@ After you assign licences to your users you can go to the Data migration page to
 ## Step 6: Update DNS records
 <a name="DNS"> </a>
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 admin center, go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 admin center, go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
 
 ## See also
 <a name="DNS"> </a>
 
 [Microsoft 365 and Office 365 migration performance and best practices](office-365-migration-best-practices.md)
 
-[How to decommission Exchange servers in a Hybrid environment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange)
+[How to decommission Exchange servers in a Hybrid environment](../../ExchangeHybrid/decommission-on-premises-exchange.md)
 
-[Modify or remove Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
+[Modify or remove Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-[How to remove an Exchange 2007 organization](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
+[How to remove an Exchange 2007 organization](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))

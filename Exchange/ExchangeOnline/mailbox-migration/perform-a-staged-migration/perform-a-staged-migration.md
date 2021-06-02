@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 83bc0b69-de47-4cc4-a57d-47e478e4894e
 ms.reviewer: 
 description: You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Microsoft 365 or Office 365 over time by using a staged migration.
@@ -31,7 +31,7 @@ You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange
 
 This article walks you through the tasks involved with for a staged email migration. [What you need to know about a staged email migration](../what-to-know-about-a-staged-migration.md) gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
 
-For Windows PowerShell steps, see [Use PowerShell to perform a staged migration](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365).
+For Windows PowerShell steps, see [Use PowerShell to perform a staged migration](/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365).
 
 ## Migration Tasks
 
@@ -67,18 +67,18 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a staged mi
 
 1. **Configure Outlook Anywhere on your on-premises Exchange Server**: The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange 2007, and Exchange 2003, see the following:
 
-   - [Exchange 2007: How to Enable Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
+   - [Exchange 2007: How to Enable Outlook Anywhere](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-   - [How to configure Outlook Anywhere with Exchange 2003](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
+   - [How to configure Outlook Anywhere with Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
     > [!IMPORTANT]
-    > You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
+    > You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
 
 2. **(Optional) Verify that you can connect to your Exchange organization using Outlook Anywhere**: Try one of the following methods to test your connection settings.
 
    - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
 
-   - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://docs.microsoft.com/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
+   - Use the [Microsoft Exchange Remote Connectivity Analyzer](/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
    - Wait for the connection to automatically be tested when you [Connect Microsoft 365 or Office 365 to your email system](#connect-microsoft-365-or-office-365-to-your-email-system) later in this procedure.
 
@@ -94,7 +94,7 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a staged mi
 
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365](../assign-permissions-for-migration.md).
 
-5. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
+5. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
 
 ## Verify you own the domain
 
@@ -119,7 +119,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 7. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify domain ownership.
 
-   You can also find the TXT or MX value specific to your Microsoft 365 or Office 365 organization by following instructions in [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+   You can also find the TXT or MX value specific to your Microsoft 365 or Office 365 organization by following instructions in [Gather the information you need to create Office 365 DNS records](/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
    After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
@@ -137,7 +137,7 @@ You will need to license the users after they're created. You have 30 days to ad
 
 **To create new users**:
 
-You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Microsoft 365 or Office 365. After mailboxes are migrated to Microsoft 365 or Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Microsoft 365 or Office 365. After mailboxes are migrated to Microsoft 365 or Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Microsoft 365 or Office 365 organization. For more information, see [What is hybrid identity with Azure Active Directory?](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ## Create a list of mailboxes to migrate
 
@@ -220,7 +220,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 9. Choose **New** to create the migration endpoint.
 
-   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
+   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability).
 
 > [!NOTE]
 > For new EAC, the **Migration endpoints** can be created during the creation of a new migration batch. For more information, continue to the section, **Create a staged migration batch in new Exchange admin center (New EAC)**.
@@ -376,13 +376,13 @@ Using a short interval, such as 3,600 seconds (one hour) or less, means that mos
 
 *The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*. This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less.
 
-If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## Route your email directly to Microsoft 365 or Office 365
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises email system. Now that the email migration to Microsoft 365 or Office 365 is complete for all of your users, it's time to point your MX record to Microsoft 365 or Office 365. This helps ensure that incoming email is delivered to your Microsoft 365 or Office 365 mailboxes. Moving the MX record also let you turn off your old email system when you are ready.
 
-For many DNS providers, we have [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided [general MX record instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
+For many DNS providers, we have [host-specific instructions](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions). If your DNS provider isn't included, or you want to get a sense of the general directions, we've provided [general MX record instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
 
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task.
 
@@ -408,7 +408,7 @@ After migrating mailboxes to Microsoft 365 or Office 365, there are post-migrati
 
 **To complete post-migration tasks**:
 
-1. **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+1. **Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
 2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Microsoft 365 or Office 365, you can configure an Autodiscover DNS record for your Microsoft 365 or Office 365 organization to enable users to easily connect to their new Microsoft 365 or Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 or Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
@@ -418,15 +418,15 @@ After migrating mailboxes to Microsoft 365 or Office 365, there are post-migrati
 
    - **Target**: autodiscover.outlook.com
 
-    For more information, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 3. **Decommission on-premises Exchange servers**: After you've verified that all email is being routed directly to the Microsoft 365 or Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange.
 
    For more information, see the following:
 
-   - [How to Remove an Exchange 2007 Organization](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
+   - [How to Remove an Exchange 2007 Organization](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
-   - [How to Uninstall Exchange Server 2003](https://docs.microsoft.com/previous-versions/tn-archive/bb125110(v=exchg.65))
+   - [How to Uninstall Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))
 
    > [!NOTE]
    > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support.

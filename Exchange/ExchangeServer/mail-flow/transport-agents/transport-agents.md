@@ -21,11 +21,8 @@ manager: serdars
 Transport agents let you install custom software that is created by Microsoft, by third-party vendors, or by your organization, on an Exchange server. This software can then process email messages that pass through the transport pipeline. In Microsoft Exchange Server 2016 or 2019, the transport pipeline is made of the following processes:
 
 - The Front End Transport service on Mailbox servers
-
 - The Transport service on Mailbox servers
-
 - The Mailbox Transport service on Mailbox servers
-
 - The Transport service on Edge Transport servers
 
 For more information about the transport pipeline, see [Mail flow and the transport pipeline](../mail-flow.md)
@@ -33,9 +30,7 @@ For more information about the transport pipeline, see [Mail flow and the transp
 Exchange transport provides extensibility through the Microsoft Exchange Server Transport Agents SDK. The Exchange version of the SDK allows third parties to implement the following predefined classes:
 
 - **SmtpReceiveAgent**
-
 - **RoutingAgent**
-
 - **DeliveryAgent**
 
 When complied against libraries in the SDK, the resulting assemblies are registered with Exchange, which loads the agents and invokes their event handlers during specific stages of the SMTP sessions or message processing. These stages, or events, are part of the agent definitions. The agent registration information is stored in an XML configuration file.
@@ -43,9 +38,7 @@ When complied against libraries in the SDK, the resulting assemblies are registe
 The following list explains the requirements for using transport agents in Exchange.
 
 - The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK.
-
 - The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third-party agents can't operate on the **OnEndOfData** SMTP event.
-
 - The Mailbox Transport service doesn't support the SDK at all, so you can't use any third-party agents in the Mailbox Transport service.
 
 ## Transport agent management
@@ -64,10 +57,12 @@ The following tables list the SMTP events that provide access to messages in the
 
 ### SMTP Receive events
 
+<br>
+
 ****
 
 |Sequence|SMTP event|Description|
-|---|---|---|
+|:---:|---|---|
 |1|**OnConnectEvent**|This event is triggered by the initial connection from a remote SMTP host.|
 |2|**OnHeloCommand**|This event is triggered when the `HELO` command is issued by the remote SMTP host.|
 |3|**OnEhloCommand**|This event is triggered when the `EHLO` command is issued by the remote SMTP host.|
@@ -93,6 +88,8 @@ The following tables list the SMTP events that provide access to messages in the
 
 ### Categorizer events
 
+<br>
+
 ****
 
 |Sequence|Categorizer event|Description|
@@ -108,13 +105,11 @@ The following tables list the SMTP events that provide access to messages in the
 Two factors determine the order that transport agents act on messages in the transport pipeline:
 
 1. The SMTP event where the transport agent is registered, and when that SMTP event encounters messages.
-
 2. The priority value that's assigned to the transport agent if there are multiple agents registered to the same SMTP event. The highest priority is 1. A higher integer value indicates a lower agent priority.
 
 For example, suppose you configured the following transport agents:
 
 - Transport Agent A with a priority of 1 and Transport Agent C with a priority of 2 are registered to the **OnEndOfHeaders** SMTP event.
-
 - Transport Agent B with a priority of 4 is registered to the **OnMailCommand** SMTP event.
 
 Transport Agent B is applied to messages first because the **OnMailCommand** event encounters messages before the **OnEndOfHeaders** event. When messages reach the **OnEndOfHeaders** event, Transport Agent A is applied before Transport Agent C because Transport Agent A has a higher priority (lower integer value) than Transport Agent C.
@@ -143,7 +138,7 @@ The more interesting built-in transport agents on Mailbox servers are described 
 |Journal Agent|No|Not configurable|**OnRoutedMessage**|
 |Journal Report Decryption Agent|No|Not configurable|**OnCategorizedMessage**|
 |RMS Decryption Agent|No|Not configurable|**OnSubmittedMessage**|
-|RMS Encryption Agent|No|Not configurable|**OnSubmittedMessage** <br/> **OnRoutedMessage**|
+|RMS Encryption Agent|No|Not configurable|**OnSubmittedMessage** <p> **OnRoutedMessage**|
 |RMS Protocol Decryption Agent|No|Not configurable|**OnEndOfData**|
 |
 
@@ -153,20 +148,22 @@ On Edge Transport servers, most of the built-in transport agents are visible and
 
 The more interesting built-in transport agents on Edge Transport servers are described in the following table. Note that this table doesn't include invisible or unmanageable transport agents.
 
+<br><br>
+
 ****
 
 |Agent name|Manageable?|Priority|SMTP or categorizer events|
 |---|:---:|:---:|---|
-|Connection Filtering Agent|Yes|1|**OnConnectEvent** <br/> **OnMailCommand** <br/> **OnRcptCommand** <br/> **OnEndOfHeaders**|
-|Address Rewriting Inbound Agent|Yes|2|**OnRcptCommand** <br/> **OnEndOfHeaders**|
+|Connection Filtering Agent|Yes|1|**OnConnectEvent** <p> **OnMailCommand** <p> **OnRcptCommand** <p> **OnEndOfHeaders**|
+|Address Rewriting Inbound Agent|Yes|2|**OnRcptCommand** <p> **OnEndOfHeaders**|
 |Edge Rule Agent|Yes|3|**OnEndOfData**|
 |Content Filter Agent<sup>\*</sup>|Yes|4|**OnEndOfData**|
 |Sender ID Agent<sup>\*</sup>|Yes|5|**OnEndOfHeaders**|
-|Sender Filter Agent<sup>\*</sup>|Yes|6|**OnMailCommand** <br/> **OnEndOfHeaders**|
+|Sender Filter Agent<sup>\*</sup>|Yes|6|**OnMailCommand** <p> **OnEndOfHeaders**|
 |Recipient Filter Agent|Yes|7|**OnRcptCommand**|
-|Protocol Analysis Agent<sup>\*</sup>|Yes|8|**OnConnectEvent** <br/> **OnEndOfHeaders** <br/> **OnEndOfData** <br/> **OnReject** <br/> **OnRsetCommand** <br/> **OnDisconnectEvent**|
+|Protocol Analysis Agent<sup>\*</sup>|Yes|8|**OnConnectEvent** <p> **OnEndOfHeaders** <p> **OnEndOfData** <p> **OnReject** <p> **OnRsetCommand** <p> **OnDisconnectEvent**|
 |Attachment Filtering Agent|Yes|9|**OnEndOfData**|
-|Address Rewriting Outbound Agent|Yes|10|**OnSubmittedMessage** <br/> **OnRoutedMessage**|
+|Address Rewriting Outbound Agent|Yes|10|**OnSubmittedMessage** <p> **OnRoutedMessage**|
 |
 
 <sup>\*</sup> You can also install and configure these anti-spam agents on Mailbox servers. For more information, see [Enable antispam functionality on Mailbox servers](../../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md).
@@ -177,4 +174,4 @@ To help you troubleshoot issues with transport agents, you can use the following
 
 - **Get-TransportPipeline**: This cmdlet shows the SMTP events and the corresponding transport agents that encounter messages on the Exchange server. For more information, see [View transport agents in the transport pipeline in Exchange Server](view-transport-agents-in-the-transport-pipeline.md).
 
-- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](https://docs.microsoft.com/exchange/pipeline-tracing-exchange-2013-help).
+- **Pipeline Tracing**: Pipeline tracing creates an exact snapshot of a message before and after it encounters each transport agent. This allows you to find a transport agent that's causing unexpected results. For more information, see [Pipeline tracing](../../../ExchangeServer2013/pipeline-tracing-exchange-2013-help.md).

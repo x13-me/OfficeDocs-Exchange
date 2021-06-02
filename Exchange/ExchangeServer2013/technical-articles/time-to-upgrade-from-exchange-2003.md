@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 As many of you may already know, support for Microsoft Exchange Server 2003 will soon be coming to an end. Each product that Microsoft releases has a lifecycle that determines how long we maintain and support the product. Exchange 2003 mainstream support is already over. And, **Exchange Server 2003 extended support ends on April 8, 2014**.
 
-April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](https://docs.microsoft.com/previous-versions/office/exchange-server-2010-technical-article/hh145599(v=exchg.141)). Since then, we've released Exchange Server 2013 and released more new features in Microsoft 365 and Office 365.
+April 2014 will be here before you know it, so now is the time to start planning your upgrade. Back in 2011, we gave you a heads-up about Exchange 2003 support coming to an end in [Time to Move from Exchange 2003](/previous-versions/office/exchange-server-2010-technical-article/hh145599(v=exchg.141)). Since then, we've released Exchange Server 2013 and released more new features in Microsoft 365 and Office 365.
 
 To help you plan, this article discusses the recommended steps to either upgrade to Exchange 2013 or move to Microsoft 365 or Office 365. We also include links to the appropriate documentation that provides detailed information about each stage in the process.
 
@@ -54,7 +54,7 @@ Before we get into the planning steps for your upgrade to Exchange 2013, let's f
 
 - Exchange 2013 introduces the concept of batch moves, which allows the ability to move multiple mailboxes in large batches. The new move architecture is built on top of MRS (Mailbox Replication service) moves with enhanced management capability.
 
-These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help).
+These improvements have pleased our customers because they've helped to make managing an Exchange organization easier than ever. For more information about the new features in Exchange 2013, see [What's New in Exchange 2013](../what-s-new-in-exchange-2013-exchange-2013-help.md).
 
 ## Planning your upgrade
 
@@ -62,17 +62,17 @@ Now that we've talked about the new features in Exchange 2013, it's time to star
 
 For detailed information about how to develop a strong planning strategy, see:
 
-- [Planning and deployment](https://docs.microsoft.com/exchange/planning-and-deployment-for-exchange-2013-installation-instructions)
+- [Planning and deployment](../planning-and-deployment-for-exchange-2013-installation-instructions.md)
 
-- [Active Directory](https://docs.microsoft.com/Exchange/active-directory-exchange-2013-help)
+- [Active Directory](../active-directory-exchange-2013-help.md)
 
-- [Exchange 2013 Storage Configuration Options](https://docs.microsoft.com/exchange/exchange-2013-storage-configuration-options-exchange-2013-help)
+- [Exchange 2013 Storage Configuration Options](../exchange-2013-storage-configuration-options-exchange-2013-help.md)
 
 Before you can upgrade to Exchange 2013, your organization must meet certain requirements. Don't worry, we've automated the installation of some of the Windows prerequisites, so all you have to do is select a check box in the Setup wizard and it will be completed for you. For more information about Exchange 2013 requirements, see the following resources:
 
-- [Exchange 2013 System Requirements](https://docs.microsoft.com/exchange/exchange-2013-system-requirements-exchange-2013-help)
+- [Exchange 2013 System Requirements](../exchange-2013-system-requirements-exchange-2013-help.md)
 
-- [Exchange 2013 Prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help)
+- [Exchange 2013 Prerequisites](../exchange-2013-prerequisites-exchange-2013-help.md)
 
 ## Upgrading from Exchange 2003 to Exchange 2013
 
@@ -88,7 +88,7 @@ To help simplify your deployment, whether you're moving your organization to the
 
 Have you heard of Microsoft 365 or Office 365 yet? It delivers the power of cloud productivity to businesses of all sizes, helping to save time and money and free up valued resources. It combines the familiar Office desktop suite with online versions of Microsoft next-generation communications and collaboration services: Exchange Online, SharePoint Portal Server Online, and Lync Online. With Microsoft 365 and Office 365, we provide services that are easy to administer and simple to use, always backed by robust security, reliability, and control to run your business.
 
-To use Microsoft 365 or Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](https://docs.microsoft.com/exchange/exchange-server-deployment-assistant-exchange-2013-help). To learn more, see [Powerful tools to support your enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+To use Microsoft 365 or Office 365, you'll need to upgrade your organization to Exchange 2013. You can use Exchange 2013 ExDeploy to migrate from Exchange 2003 to the cloud. To learn more about the ExDeploy tool, see [Exchange Server 2013 Deployment Assistant](../exchange-server-deployment-assistant-exchange-2013-help.md). To learn more, see [Powerful tools to support your enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
 
 ## Upgrade to Exchange 2013 on-premises
 

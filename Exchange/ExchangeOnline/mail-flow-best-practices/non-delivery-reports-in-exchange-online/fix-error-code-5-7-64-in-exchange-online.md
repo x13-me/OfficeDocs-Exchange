@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.7.64 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -42,7 +42,7 @@ This problem happens when you use an inbound connector to receive messages from 
 
 The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Microsoft 365 or Office 365 tried to send the message to the external email server or service.
 
-To fix this issue, see [this topic](https://docs.microsoft.com/exchange/troubleshoot/connectors/relay-access-denied-smtp).
+To fix this issue, see [this topic](/exchange/troubleshoot/connectors/relay-access-denied-smtp).
 
 ## Still need help with error code 550 5.7.64?
 
@@ -50,7 +50,7 @@ To fix this issue, see [this topic](https://docs.microsoft.com/exchange/troubles
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

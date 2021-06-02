@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 775bb2a2-5ada-489b-944f-422d56d94fbf
 ms.reviewer: 
 manager: serdars
@@ -21,7 +21,7 @@ ms.service: exchange-online
 
 # Use a screen reader to archive mailbox items in the Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
+You can use your screen reader in the Exchange admin center (EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Get started
 
@@ -41,7 +41,7 @@ Many tasks in the EAC require the use of pop-up windows. In your browser, be sur
 
 Exchange Online is included in several different subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 
@@ -74,7 +74,7 @@ With mailbox archiving in Exchange Online, also called "in-place archiving," use
    > [!TIP]
    > - If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9.
    > 
-   > - For more information, go to [Enable archive mailboxes in the compliance center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
+   > - For more information, go to [Enable archive mailboxes in the compliance center](/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Disable mailbox archiving for a user
 

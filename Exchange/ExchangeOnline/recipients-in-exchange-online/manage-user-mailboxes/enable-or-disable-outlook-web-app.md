@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer: 
 f1.keywords:
@@ -40,7 +40,7 @@ For additional management tasks related to managing email client access to a mai
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the new EAC to enable or disable Outlook on the web
 
@@ -103,7 +103,7 @@ This example enables Outlook on the web for the mailbox of Elly Nkya.
 Set-CASMailbox -Identity "Elly Nkya" -OWAEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
 ## How do you know this worked?
 
@@ -116,4 +116,3 @@ To verify that you've successfully enabled or disabled Outlook on the web for a 
   ```
 
   If Outlook on the web is enabled, the value for the _OWAEnabled_ property is `True`. If Outlook on the web is disabled, the value is `False`.
-

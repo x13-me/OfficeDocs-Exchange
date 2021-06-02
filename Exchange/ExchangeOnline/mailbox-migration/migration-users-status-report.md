@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: acbc7b28-6a20-4390-a6b0-107e4cddb999
 ms.reviewer: 
 description: You can use the Migration dashboard in the Exchange administration center (EAC) to display the migration status information for all users in a migration batch. You can also display detailed migration information for each user in a migration batch. This information, also called migration user statistics, can help you troubleshoot issues that might prevent the migration of a user's mailbox or mailbox items. You can display this migration status information for migration batches that are currently running, that have been stopped, or that are complete.
@@ -30,9 +30,9 @@ You can use the Migration dashboard in the Exchange administration center (EAC) 
 
 You can also use Exchange Online PowerShell to display migration user statistics. For more information, see:
 
-- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUser)
+- [Get-MigrationUser](/powershell/module/exchange/Get-MigrationUser)
 
-- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUserStatistics)
+- [Get-MigrationUserStatistics](/powershell/module/exchange/Get-MigrationUserStatistics)
 
 ## Migration users report in new Exchange admin center (New EAC)
 

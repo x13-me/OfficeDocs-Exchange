@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
 ms.reviewer: 
 description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Microsoft 365 or Office 365 will use with your Gmail address to make the connection.
@@ -137,6 +137,6 @@ If you need the Gmail connection for a brief time only, for example for an IMAP 
 
 ## Related Topics
 
-[Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin)
+[Migrate email and contacts to Microsoft 365](/microsoft-365/admin/setup/migrate-email-and-contacts-admin)
 
 [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../mailbox-migration.md)

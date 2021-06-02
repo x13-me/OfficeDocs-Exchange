@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.7.23 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -34,7 +34,7 @@ Only an email admin in your Microsoft 365 or Office 365 organization can fix thi
 
 ## I'm an email admin. How do I fix this?
 
-This bounce message most likely indicates a [Sender policy framework (SPF)](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) configuration issue in your Microsoft 365 or Office 365 organization.
+This bounce message most likely indicates a [Sender policy framework (SPF)](/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) configuration issue in your Microsoft 365 or Office 365 organization.
 
 The **Diagnostic information for administrators** section in the bounce message will contain the original error message when Office 365 tried to send the message to the external email server or service.
 
@@ -46,9 +46,9 @@ To fix this issue, do the following steps:
 
 - Add your on-premises IPs, if any, to the SPF record of any domains you send for. This would include any unprovisioned domains you might be relaying through Microsoft 365 or Office 365.
 
-- Verify that the outbound message wasn't identified as spam by Microsoft 365 or Office 365 and routed through the [High Risk Delivery Pool](https://docs.microsoft.com/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
+- Verify that the outbound message wasn't identified as spam by Microsoft 365 or Office 365 and routed through the [High Risk Delivery Pool](/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
 
-  To receive Bcc copies of outbound messages that are determined to be spam, see [Configure outbound spam policy notifications](https://docs.microsoft.com/office365/SecurityCompliance/configure-the-outbound-spam-policy).
+  To receive Bcc copies of outbound messages that are determined to be spam, see [Configure outbound spam policy notifications](/office365/SecurityCompliance/configure-the-outbound-spam-policy).
 
   If you determine that the outbound message was incorrectly detected as spam by Microsoft 365 or Office 365, contact support.
 
@@ -58,7 +58,7 @@ To fix this issue, do the following steps:
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

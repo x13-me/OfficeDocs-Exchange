@@ -43,9 +43,9 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at [Excha
 
 You can place mailboxes on retention hold to turn off MRM temporarily (for example when users are on vacation). This suspends the processing of retention policies for the mailbox until retention hold is disabled. This is different from placing mailboxes on In-Place Hold or litigation hold.
 
-For details about how to place a mailbox on retention hold, see [Place a mailbox on retention hold](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
+For details about how to place a mailbox on retention hold, see [Place a mailbox on retention hold](../ExchangeOnline/security-and-compliance/messaging-records-management/mailbox-retention-hold.md).
 
-To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
+To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Litigation Hold](../ExchangeOnline/security-and-compliance/in-place-and-litigation-holds.md).
 
 ## Remove retention tags from mailboxes
 
@@ -61,7 +61,7 @@ $tags -= "Deleted Items - 3 Days"
 Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
 ```
 
-For detailed syntax and parameter information, see [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicy) and [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-RetentionPolicy).
+For detailed syntax and parameter information, see [Get-RetentionPolicy](/powershell/module/exchange/Get-RetentionPolicy) and [Set-RetentionPolicy](/powershell/module/exchange/Set-RetentionPolicy).
 
 ## Remove retention policies from mailboxes
 
@@ -87,7 +87,7 @@ This Shell example removes the retention policy Corp-Finance from all mailbox us
 Get-Mailbox -ResultSize unlimited -Filter "RetentionPolicy -eq 'Corp-Finance'" | Set-Mailbox -RetentionPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/Set-Mailbox) and [Get-Mailbox](/powershell/module/exchange/Get-Mailbox).
 
 ## Turn off MRM permanently for an entire organization
 
@@ -121,8 +121,8 @@ Remove-RetentionPolicy Corp-Users
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicyTag)
+- [Get-RetentionPolicyTag](/powershell/module/exchange/Get-RetentionPolicyTag)
 
-- [Remove-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicyTag)
+- [Remove-RetentionPolicyTag](/powershell/module/exchange/Remove-RetentionPolicyTag)
 
-- [Remove-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicy)
+- [Remove-RetentionPolicy](/powershell/module/exchange/Remove-RetentionPolicy)

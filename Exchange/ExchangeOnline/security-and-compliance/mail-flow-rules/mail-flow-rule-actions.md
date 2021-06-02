@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn about the actions that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.reviewer: 
 f1.keywords:
@@ -20,19 +20,19 @@ manager: serdars
 
 # Mail flow rule actions in Exchange Online
 
-Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
 
 Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
 
-For more information about mail flow rules in Exchange Online, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
+For more information about mail flow rules, including how multiple actions are handled, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 
-For more information about actions in mail flow rules in Exchange Server, see or [Mail flow rule actions in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions).
+For more information about actions in mail flow rules in Exchange Server, see or [Mail flow rule actions in Exchange Server](../../../ExchangeServer/policy-and-compliance/mail-flow-rules/actions.md).
 
 ## Actions for mail flow rules in Exchange Online
 
-The actions that are available in mail flow rules in Exchange Online are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
+The actions that are available in mail flow rules in Exchange Online and standalone EOP are described in the following table. Valid values for each property are described in the [Property values](#property-values) section.
 
 **Notes**:
 
@@ -40,14 +40,16 @@ The actions that are available in mail flow rules in Exchange Online are describ
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
 
+<br>
+
 ****
 
 |Action in the EAC|Action parameter in PowerShell|Property|Description|
 |---|---|---|---|
-|**Forward the message for approval to** <p> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <p>**Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**Forward the message for approval to** <p> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Use mail flow rules for message approval scenarios in Exchange Online](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <p> **Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
 |**Forward the message for approval to the sender's manager** <p> **Forward the message for approval** \> **to the sender's manager**|_ModerateMessageByManager_|n/a|Forwards the message to the sender's manager for approval. <p> This action only works if the sender's **Manager** attribute is defined. Otherwise, the message is delivered to the recipients without moderation. <p>**Note**: This action isn't available in standalone EOP environments.|
 |**Redirect the message to** <p> **Redirect the message to** \> **these recipients**|_RedirectMessageTo_|`Addresses`|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|
-|**Deliver the message to the hosted quarantine** <p> **Redirect the message to** \> **hosted quarantine**|_Quarantine_|n/a|Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|**Deliver the message to the hosted quarantine** <p> **Redirect the message to** \> **hosted quarantine**|_Quarantine_|n/a|Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |**Use the following connector** <p> **Redirect the message to** \> **the following connector**|_RouteMessageOutboundConnector_|`OutboundConnector`|Uses the specified outbound connector to deliver the message. For more information about connectors, see [Configure mail flow using connectors](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).|
 |**Reject the message with the explanation** <p> **Block the message** \> **reject the message and include an explanation**|_RejectMessageReasonText_|`String`|Returns the message to the sender in a non-delivery report (also known as an NDR or bounce message) with the specified text as the rejection reason. The recipient doesn't receive the original message or notification. <p> The default enhanced status code that's used is `5.7.1`. <p> When you create or modify the rule in PowerShell, you can specify the DSN code by using the _RejectMessageEnhancedStatusCode_ parameter.|
 |**Reject the message with the enhanced status code** <p> **Block the message** \> **reject the message with the enhanced status code of**|_RejectMessageEnhancedStatusCode_|`DSNEnhancedStatusCode`|Returns the message to the sender in an NDR with the specified enhanced delivery status notification (DSN) code. The recipient doesn't receive the original message or notification. <p> Valid DSN codes are `5.7.1` or `5.7.900` through `5.7.999`. <p> The default reason text that's used is `Delivery not authorized, message refused`. <p> When you create or modify the rule in PowerShell, you can specify the rejection reason text by using the _RejectMessageReasonText_ parameter.|
@@ -62,9 +64,9 @@ The actions that are available in mail flow rules in Exchange Online are describ
 |**Set the message header to this value** <p> **Modify the message properties** \> **set a message header**|_SetHeaderName_ <br/> _SetHeaderValue_|First property: `MessageHeaderField` <br/> Second property: `String`|Adds or modifies the specified header field in the message header, and sets the header field to the specified value.|
 |**Apply a message classification** <p> **Modify the message properties** \> **apply a message classification**|_ApplyClassification_|`MessageClassification`|Applies the specified message classification to the message. <p>**Note**: This action isn't available in standalone EOP environments.|
 |**Set the spam confidence level (SCL) to** <p> **Modify the message properties** \> **set the spam confidence level (SCL)**|_SetSCL_|`SCLValue`|Sets the spam confidence level (SCL) of the message to the specified value.|
-|**Apply Office 365 Message Encryption and rights protection** <p> **Apply Message Encryption and rights protection to the message with** <p> **Modify the message security** \> **Message Encryption and rights protection**|_ApplyRightsProtectionTemplate_|`RMSTemplate`|Applies the specified Azure Rights Management (Azure RMS) template to the message. Azure RMS is part of Azure Information Protection. For more information, see [Set up new Message Encryption capabilities](https://docs.microsoft.com/office365/securitycompliance/set-up-new-message-encryption-capabilities).|
+|**Apply Office 365 Message Encryption and rights protection** <p> **Apply Message Encryption and rights protection to the message with** <p> **Modify the message security** \> **Message Encryption and rights protection**|_ApplyRightsProtectionTemplate_|`RMSTemplate`|Applies the specified Azure Rights Management (Azure RMS) template to the message. Azure RMS is part of Azure Information Protection. For more information, see [Set up new Message Encryption capabilities](/office365/securitycompliance/set-up-new-message-encryption-capabilities).|
 |**Require TLS encryption** <p> **Modify the message security** \> **require TLS encryption**|_RouteMessageOutboundRequireTls_|n/a|Forces the outbound messages to be routed over a TLS encrypted connection.|
-|**Encrypt the messages with the previous version of OME** <p> **Modify the message security** \> **Apply Office the previous version of OME**|_ApplyOME_|n/a|If you haven't moved your Microsoft 365 or Office 365 organization to Office 365 Message Encryption (OME) that's built on Azure Information Protection, this action encrypts the message and attachments with the previous version of OME. <br/> **Notes**: <br/>* We recommend that you make a plan to move to OME on Azure Information Protection as soon as it's reasonable for your organization. For instructions, see [Set up new Message Encryption capabilities](https://docs.microsoft.com/office365/securitycompliance/set-up-new-message-encryption-capabilities). <br/>* If you receive an error stating that IRM licensing isn't enabled, you can't setup the previous version of OME. If you setup OME now, you'll setup the OME capabilities that are built on Azure Information Protection.|
+|**Encrypt the messages with the previous version of OME** <p> **Modify the message security** \> **Apply Office the previous version of OME**|_ApplyOME_|n/a|If you haven't moved your Microsoft 365 or Office 365 organization to Office 365 Message Encryption (OME) that's built on Azure Information Protection, this action encrypts the message and attachments with the previous version of OME. <br/> **Notes**: <br/>* We recommend that you make a plan to move to OME on Azure Information Protection as soon as it's reasonable for your organization. For instructions, see [Set up new Message Encryption capabilities](/office365/securitycompliance/set-up-new-message-encryption-capabilities). <br/>* If you receive an error stating that IRM licensing isn't enabled, you can't setup the previous version of OME. If you setup OME now, you'll setup the OME capabilities that are built on Azure Information Protection.|
 |**Remove the previous version of OME from the message** <p> **Modify the message security** \> **Remove the previous version of OME**|_RemoveOME_|n/a|Decrypt the message and attachments from the previous version of OME so users don't need to sign in to the encryption portal in order to view them. This action is only available for messages that are sent within your organization.|
 |**Remove Office 365 Message Encryption and rights protection** <p> **Modify the message security** \> **Message Encryption and rights protection**|_RemoveOMEv2_|n/a|Remove the Azure RMS template from the message.|
 |**Prepend the subject of the message with**|_PrependSubject_|`String`|Adds the specified text to the beginning of the **Subject** field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text. <br/> To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the **The subject includes** (_ExceptIfSubjectContainsWords_) exception to the rule.|
@@ -78,6 +80,8 @@ The actions that are available in mail flow rules in Exchange Online are describ
 ## Property values
 
 The property values that are used for actions in mail flow rules are described in the following table.
+
+<br>
 
 ****
 
@@ -96,7 +100,7 @@ The property values that are used for actions in mail flow rules are described i
 |`NotificationMessageText`|Any combination of plain text, HTML tags, and keywords|Specified the text to use in a recipient notification message. <p> In addition to plain text and HTML tags, you can specify the following keywords that use values from the original message: <ul><li>`%%From%%`</li><li>`%%To%%`</li><li>`%%Cc%%`</li><li>`%%Subject%%`</li><li>`%%Headers%%`</li><li>`%%MessageDate%%`</li></ul>|
 |`NotifySenderType`|One of the following values: <ul><li>**Notify the sender, but allow them to send** (`NotifyOnly`)</li><li>**Block the message** (`RejectMessage`)</li><li>**Block the message unless it's a false positive** (`RejectUnlessFalsePositiveOverride`)</li><li>**Block the message, but allow the sender to override and send** (`RejectUnlessSilentOverride`)</li><li>**Block the message, but allow the sender to override with a business justification and send** (`RejectUnlessExplicitOverride`)</li></ul>|Specifies the type of Policy Tip that the sender receives if the message violates a DLP policy. The settings are described in the following list: <ul><li>**Notify the sender, but allow them to send**: The sender is notified, but the message is delivered normally.</li><li>**Block the message**: The message is rejected, and the sender is notified.</li><li>**Block the message unless it's a false positive**: The message is rejected unless it's marked as a false positive by the sender.</li><li>**Block the message, but allow the sender to override and send**: The message is rejected unless the sender has chosen to override the policy restriction.</li><li>**Block the message, but allow the sender to override with a business justification and send**: This is similar to **Block the message, but allow the sender to override and send** type, but the sender also provides a justification for overriding the policy restriction.</li></ul> <p> When you use this action, you need to use the **The message contains sensitive information** (_MessageContainsDataClassification_) condition.|
 |`OutboundConnector`|Single outbound connector|Specifies the identity of outbound connector that's used to deliver messages. For more information about connectors, see [Configure mail flow using connectors](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md). <p> In the EAC, you select the connector from a list. <p> In PowerShell, use the **Get-OutboundConnector** cmdlet to see the connectors that are available.|
-|`RMSTemplate`|Single Azure RMS template object|Specifies the Azure Rights Management (Azure RMS) template that's applied to the message. <p> In the EAC, you select the RMS template from a list. <p> In PowerShell, use the **Get-RMSTemplate** cmdlet to see the RMS templates that are available. <p> For more information about RMS in Microsoft 365 or Office 365, see [What is Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection).|
+|`RMSTemplate`|Single Azure RMS template object|Specifies the Azure Rights Management (Azure RMS) template that's applied to the message. <p> In the EAC, you select the RMS template from a list. <p> In PowerShell, use the **Get-RMSTemplate** cmdlet to see the RMS templates that are available. <p> For more information about RMS in Microsoft 365 or Office 365, see [What is Azure Information Protection?](/azure/information-protection/what-is-information-protection).|
 |`SCLValue`|One of the following values: <ul><li>**Bypass spam filtering** (`-1`)</li><li>Integers 0 through 9</li></ul>|Specifies the spam confidence level (SCL) that's assigned to the message. A higher SCL value indicates that a message is more likely to be spam.|
 |`String`|Single string|Specifies the text that's applied to the specified message header field, NDR, or event log entry. <p> In PowerShell, if the value contains spaces, enclose the value in quotation marks (").|
 |
@@ -107,8 +111,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md)
 
-[Manage mail flow rules](manage-mail-flow-rules.md)
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
-
-[Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption)
+[Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)

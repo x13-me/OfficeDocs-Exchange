@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 ms.reviewer: 
 f1.keywords:
@@ -67,9 +67,9 @@ The send permissions that someone has on another user's mailbox are important wh
 
 ## How do I set up a mailbox to save messages "Sent as" a manager when they're sent by an assistant?
 
-When you do these steps, any messages **sent as** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
+When you do these steps, any messages **sent as** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 2. Get the email address of the manager.
 
@@ -92,9 +92,9 @@ That's it! The manager will now automatically get a copy of any messages sent by
 
 ## How do I set up a mailbox to save messages "Sent on behalf" of a manager when they're sent by an assistant?
 
-When you do these steps, any messages **sent on behalf** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
+When you do these steps, any messages **sent on behalf** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 2. Get the email address of the manager.
 

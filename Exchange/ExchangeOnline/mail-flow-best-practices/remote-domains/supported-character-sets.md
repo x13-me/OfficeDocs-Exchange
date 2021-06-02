@@ -3,7 +3,7 @@ localization_priority: Normal
 description: MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 ms.reviewer: 
 title: Supported character sets for remote domains in Exchange Online
@@ -30,7 +30,7 @@ The following table describes the character sets that you can configure in remot
 
 - In the Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
 
-- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain) cmdlet.
+- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](/powershell/module/exchange/set-remotedomain) cmdlet.
 
 |**Name**|**Description**|
 |:-----|:-----|

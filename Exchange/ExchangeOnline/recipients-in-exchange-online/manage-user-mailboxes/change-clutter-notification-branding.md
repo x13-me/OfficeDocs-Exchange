@@ -3,7 +3,7 @@ localization_priority: Normal
 description: The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
 ms.reviewer: 
 f1.keywords:
@@ -98,7 +98,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
 You can also create a new shared mailbox as the branding mailbox using PowerShell. Follow these steps.
 
-1. [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Type the following commands:
 

@@ -24,9 +24,9 @@ Edge Transport servers in Microsoft Exchange are deployed in an organization's o
 
 Exchange 2013 organizations that want to use Edge Transport servers have the option of deploying either Exchange Server 2013 Edge Transport servers or Exchange 2010 Edge Transport servers running Service Pack 3 (SP3) for Exchange 2010. Use Edge Transport servers if you don't want to expose internal Exchange 2013 Client Access or Mailbox servers directly to the Internet.
 
-Learn more about the Exchange 2013 Edge Transport server role at [Edge Transport servers](https://docs.microsoft.com/exchange/edge-transport-servers-exchange-2013-help).
+Learn more about the Exchange 2013 Edge Transport server role at [Edge Transport servers](../../ExchangeServer2013/edge-transport-servers-exchange-2013-help.md).
 
-Learn more about the Exchange 2010 Edge Transport server role at [Overview of the Edge Transport Server Role](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124701(v=exchg.141)).
+Learn more about the Exchange 2010 Edge Transport server role at [Overview of the Edge Transport Server Role](/previous-versions/office/exchange-server-2010/bb124701(v=exchg.141)).
 
 ## Edge Transport servers in Exchange 2013-based hybrid deployment organizations
 

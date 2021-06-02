@@ -33,7 +33,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 - For information about the new features you'll get when you upgrade to Exchange 2013 from previous versions of Exchange, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates).
+- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](../ExchangeServer/new-features/build-numbers-and-release-dates.md).
 
 |**Version**|**Blog pst**|
 |:-----|:-----|
@@ -74,17 +74,17 @@ Edge Transport servers minimize attack surface by handling all Internet-facing m
 
 ### OWA Junk Email Reporting
 
-Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](https://docs.microsoft.com/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop).
+Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop).
 
 ### S/MIME for Message Signing and Encryption
 
-Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/Get-SmimeConfig) cmdlet reference.
+Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](/powershell/module/exchange/Get-SmimeConfig) cmdlet reference.
 
 ### DLP Policy Tips available in the desktop and mobile version of Outlook Web App
 
-Data loss prevention (DLP) [Policy Tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) are informative notices that are displayed to senders in Outlook when they try sending sensitive information. In Exchange 2013 SP1, this functionality has been extended to both the desktop version of Outlook Web App and the mobile version (named OWA for Devices). You'll see it in action if you have an existing DLP policy with Policy Tips turned on for Outlook. If your policy already includes Policy Tips for Outlook, you don't need to set up anything else. Go ahead and try it out\!
+Data loss prevention (DLP) [Policy Tips](../ExchangeOnline/security-and-compliance/data-loss-prevention/policy-tips.md) are informative notices that are displayed to senders in Outlook when they try sending sensitive information. In Exchange 2013 SP1, this functionality has been extended to both the desktop version of Outlook Web App and the mobile version (named OWA for Devices). You'll see it in action if you have an existing DLP policy with Policy Tips turned on for Outlook. If your policy already includes Policy Tips for Outlook, you don't need to set up anything else. Go ahead and try it out\!
 
-Not currently using Policy Tips? To get started, [Create a DLP policy from a template](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template), then add a policy tip by editing the policy and adding a **Notify the sender with a Policy Tip** action.
+Not currently using Policy Tips? To get started, [Create a DLP policy from a template](../ExchangeOnline/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template.md), then add a policy tip by editing the policy and adding a **Notify the sender with a Policy Tip** action.
 
 ### DLP Classification based on Document Fingerprints
 
@@ -98,7 +98,7 @@ Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information
 
 Deploying and configuring Active Directory Federation Services (AD FS) using claims means multifactor authentication can be used with Exchange 2013 SP1 including supporting smartcard and certificate-based authentication in Outlook Web App. In a nutshell, to implement AD FS to support multifactor authentication:
 
-- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
+- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](/windows-server/identity/active-directory-federation-services).
 
 - Create relying party trusts and the required AD FS claims.
 

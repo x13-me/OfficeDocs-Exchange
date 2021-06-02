@@ -29,26 +29,26 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](../../../ExchangeOnline/permissions-exo/feature-permissions.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create mail flow rules
 
 - Creating mail flow rules is mostly about the scenarios that you want to fulfill. For examples, see the following topics:
 
-  - [Use mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
+  - [Use mail flow rules to inspect message attachments](../../../ExchangeServer2013/use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
   - [Organization-wide disclaimers, signatures, footers, or headers in Exchange Server](signatures.md)
 
-  - [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help)
+  - [Manage message approval](../../../ExchangeServer2013/manage-message-approval-exchange-2013-help.md)
 
-- Data Loss Prevention (DLP) policies are collections of mail flow rules. To create DLP policies, see [Exchange Server DLP Procedures](https://docs.microsoft.com/exchange/dlp-procedures-exchange-2013-help).
+- Data Loss Prevention (DLP) policies are collections of mail flow rules. To create DLP policies, see [Exchange Server DLP Procedures](../../../ExchangeServer2013/dlp-procedures-exchange-2013-help.md).
 
 ### Use the EAC to create mail flow rules
 
@@ -72,13 +72,13 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
 
    Optional properties:
 
-   - **Audit this rule with severity level**: For DLP policies, this setting specifies how rule match data is displayed in the DLP policy detection reports. For more information, [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help). If you clear the check box, or select the value **Not specified**, rule matches won't appear in the rule reports.
+   - **Audit this rule with severity level**: For DLP policies, this setting specifies how rule match data is displayed in the DLP policy detection reports. For more information, [View DLP policy detection reports](../../../ExchangeServer2013/view-dlp-policy-detection-reports-exchange-2013-help.md). If you clear the check box, or select the value **Not specified**, rule matches won't appear in the rule reports.
 
    - **Choose a mode for this rule**: You can use one of the two test modes to test the rule without impacting mail flow. In both test modes, when the conditions are met, an entry is added to the message tracking log. Select one of the following values:
 
    - **Enforce**: This turns on the rule and it starts processing messages immediately. All actions on the rule will be performed. This is the default value.
 
-   - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions (**Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. DLP is required to use this mode. To learn more, see [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).
+   - **Test with Policy Tips**: This turns on the rule, and any Policy Tip actions (**Notify the sender with a Policy Tip**) will be sent, but no actions related to message delivery will be performed. DLP is required to use this mode. To learn more, see [Policy Tips](../../../ExchangeServer2013/policy-tips-exchange-2013-help.md).
 
    - **Test without Policy Tips**: For DLP policies, only the **Generate incident report and send it to** action will be enforced. No actions related to message delivery are performed.
 
@@ -136,7 +136,7 @@ This example creates a new rule with the following settings:
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG: "
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
  **Note**: The conditions and actions in the example are for illustrative purposes only. Review the available mail flow rule conditions, exceptions, and actions to determine which ones meet your requirements.
 
@@ -200,7 +200,7 @@ This example returns only the specified properties for the same rule.
 Get-TransportRule -Identity "Sender is a member of marketing" | Format-List Name,State,Mode,Priority,Comments,Conditions,Exceptions,RuleVersion
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRule](https://docs.microsoft.com/powershell/module/exchange/get-transportrule).
+For detailed syntax and parameter information, see [Get-TransportRule](/powershell/module/exchange/get-transportrule).
 
 ### Use the Exchange Management Shell to view the available conditions and exceptions (predicates) for mail flow rules
 
@@ -212,7 +212,7 @@ To view the conditions and exceptions that are available in mail flow rules, run
 Get-TransportRulePredicate
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRulePredicate](https://docs.microsoft.com/powershell/module/exchange/get-transportrulepredicate).
+For detailed syntax and parameter information, see [Get-TransportRulePredicate](/powershell/module/exchange/get-transportrulepredicate).
 
  **Notes**:
 
@@ -232,7 +232,7 @@ To view the actions that are available in mail flow rules, run the following com
 Get-TransportRuleAction
 ```
 
-For detailed syntax and parameter information, see [Get-TransportRuleAction](https://docs.microsoft.com/powershell/module/exchange/get-transportruleaction).
+For detailed syntax and parameter information, see [Get-TransportRuleAction](/powershell/module/exchange/get-transportruleaction).
 
  **Notes**:
 
@@ -266,7 +266,7 @@ This example adds an exception to the rule named "Sender is a member of marketin
 Set-TransportRule -Identity "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
 ```
 
-For detailed syntax and parameter information, see [Set-TransportRule](https://docs.microsoft.com/powershell/module/exchange/set-transportrule).
+For detailed syntax and parameter information, see [Set-TransportRule](/powershell/module/exchange/set-transportrule).
 
 ### How do you know this worked?
 
@@ -372,7 +372,7 @@ This example enables the mail flow rule named "Sender is a member of marketing".
 Enable-TransportRule "Sender is a member of marketing"
 ```
 
-For detailed syntax and parameter information, see [Enable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/enable-transportrule) and [Disable-TransportRule](https://docs.microsoft.com/powershell/module/exchange/disable-transportrule).
+For detailed syntax and parameter information, see [Enable-TransportRule](/powershell/module/exchange/enable-transportrule) and [Disable-TransportRule](/powershell/module/exchange/disable-transportrule).
 
 ### How do you know this worked?
 
@@ -416,7 +416,7 @@ This example removes the mail flow rule named "Sender is a member of marketing":
 Remove-TransportRule -Identity "Sender is a member of marketing"
 ```
 
-For detailed syntax and parameter information, see [Remove-TransportRule](https://docs.microsoft.com/powershell/module/exchange/remove-transportrule).
+For detailed syntax and parameter information, see [Remove-TransportRule](/powershell/module/exchange/remove-transportrule).
 
 ### How do you know this worked?
 
@@ -460,7 +460,7 @@ You can import a mail flow rule collection that you've previously exported as a 
    Set-Content -Path "C:\My Documents\Exported Rules.xml" -Value $file.FileData -Encoding Byte
    ```
 
-For detailed syntax and parameter information, see [Export-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/export-transportrulecollection).
+For detailed syntax and parameter information, see [Export-TransportRuleCollection](/powershell/module/exchange/export-transportrulecollection).
 
 ### Use the Exchange Management Shell to import a mail flow rule collection
 
@@ -482,7 +482,7 @@ For detailed syntax and parameter information, see [Export-TransportRuleCollecti
    Import-TransportRuleCollection -FileData $Data
    ```
 
-For detailed syntax and parameter information, see [Import-TransportRuleCollection](https://docs.microsoft.com/powershell/module/exchange/import-transportrulecollection).
+For detailed syntax and parameter information, see [Import-TransportRuleCollection](/powershell/module/exchange/import-transportrulecollection).
 
 ## Need more help?
 
