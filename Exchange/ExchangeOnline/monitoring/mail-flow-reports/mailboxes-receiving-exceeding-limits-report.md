@@ -47,7 +47,7 @@ Changing the Time, Type filters, or searching for a mailbox, will change both th
 > [!NOTE]
 > The chart is limited to showing the top 10 mailboxes. If you’d like to see more mailboxes, you’ll have to filter/search differently. 
 
-[image]
+ ![Report](../../media/heatmap-sample.png)
 
 1. Click **Export** to download the data as a csv.
 
