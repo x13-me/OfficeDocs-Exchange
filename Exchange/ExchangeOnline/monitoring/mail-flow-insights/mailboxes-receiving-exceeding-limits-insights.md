@@ -36,11 +36,11 @@ The insight will only appear if:
 
 The insight will appear in the dashboard: 
 
-[image]
+ ![Insight](../../media/mailbox-exceeding-insight.png)
 
 When you click on **View details**, the following flyout will appear:
 
-[image]
+ ![Detailed insight](../../media/mailboxes-exceeding-limit-insight.png)
 
 1. Select **Learn more about receiving limits** to view documentation about Exchange’s limits. 
 
