@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description:  
+description: This article is about mailboxes that receive large volumes of messages.
 ms.custom:
 ---
 
@@ -21,9 +21,9 @@ There are two sections to this report:
 
 1. A chart that indicates when a mailbox exceeded their receiving limit (see Exchange Online limits), which means they can no longer receive mail until the limit is reset (that is 1 hour after the threshold is exceeded).
 
-   1. Mailboxes will not receive any mail at all if the overall receiving limit is exceeded.
+   1. Mailboxes won't receive any mail at all if the overall receiving limit is exceeded.
       
-   2. Mailboxes will not receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
+   2. Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
       
 2. A chart that indicates when a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
 
@@ -53,5 +53,5 @@ Changing the Time, Type filters, or searching for a mailbox, will change both th
 
 2. Click **Share** to share the details with others. 
 
-3. Select a mailbox address to view in detail the mailbox owner’s contact information. Contact the mailbox owner to understand why they are receiving so much email, so they can reduce their mail volume and have a better experience.
+3. Select a mailbox address to view in detail the mailbox owner’s contact information. Contact the mailbox owner to understand why their receiving so much email, so they can reduce their mail volume and have a better experience.
 

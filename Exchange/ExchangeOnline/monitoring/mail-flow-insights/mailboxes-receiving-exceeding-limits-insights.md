@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description:  
+description: This article describes the delays due to mailboxes exceeding their limits.
 ms.custom:
 ---
 
@@ -18,11 +18,11 @@ ms.custom:
 Mailboxes that receive large volumes of messages in a short amount of time can lead to mail flow delays for those mailboxes, and mailboxes in your organization. 
 The mailboxes exceeding receiving limits insight in the Insights dashboard in the new Exchange Admin Center (new EAC) highlights:
 
-1. Mailboxes that have exceeded their receiving limit (For more information, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (which is 1 hour after the threshold is exceeded).
+1. Mailboxes that have exceeded their receiving limit (For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (which is 1 hour after the threshold is exceeded).
 
-   - Mailboxes will not receive any mail at all if the overall receiving limit is exceeded
+   - Mailboxes won't receive any mail at all if the overall receiving limit is exceeded
    
-   - Mailboxes will not receive any mail from a specific sender, if the mailbox has received too many messages from the sender
+   - Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender
    
 2. Mailboxes that are at risk. They haven’t exceeded their limit but are receiving large volumes of messages regularly. 
 
@@ -52,4 +52,4 @@ When you click on **View details**, the following flyout will appear:
 
 5. Mailboxes that appear in the **Mailboxes repeatedly at risk** section are mailboxes that have received large volumes of mail for > 12 hours of the past 24 hours.  
 
-6. Select the email address of the mailbox to view the contact information of the owner of the mailbox. Contact the mailbox owner to understand why they are receiving so much email, so they can reduce their mail volume and have a better experience.
+6. Select the email address of the mailbox to view the contact information of the owner of the mailbox. Contact the mailbox owner to understand why their receiving so much email, so they can reduce their mail volume and have a better experience.
