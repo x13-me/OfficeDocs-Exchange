@@ -15,7 +15,7 @@ ms.custom:
 
 # Mailboxes exceeding receiving limits insight in the new EAC
 
-Mailboxes that receive large volumes of messages in a short amount of time can lead to mail flow delays for those mailboxes, and mailboxes in your organization. 
+Mailboxes that receive large volumes of messages in a short amount of time can lead to mail flow delays for those mailboxes, and other mailboxes in your organization. 
 The mailboxes exceeding receiving limits insight in the Insights dashboard in the new Exchange Admin Center (new EAC) highlights:
 
 1. Mailboxes that have exceeded their receiving limit (For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (which is 1 hour after the threshold is exceeded).
