@@ -19,17 +19,19 @@ In the new Exchange Center (EAC), the Mailboxes exceeding receiving limits repor
 
 There are two sections to this report:
 
-1. A chart that indicates when a mailbox exceeded their receiving limit (see Exchange Online limits), which means they can no longer receive mail until the limit is reset (that is 1 hour after the threshold is exceeded).
+1. A heatmap that indicates:
 
-   1. Mailboxes won't receive any mail at all if the overall receiving limit is exceeded.
+    - When a mailbox exceeded their receiving limit (see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (that is 1 hour after the threshold is exceeded).
+
+      1. Mailboxes won't receive any mail at all if the overall receiving limit is exceeded.
       
-   2. Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
+      2. Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
       
-2. A chart that indicates when a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
+   - When a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
 
-3. A table that shows, in the selected time window:
+2. A table that shows, in the selected time window:
 
-   - The number of hours a mailbox as exceeded
+   - The number of hours a mailbox has exceeded the limit
    
    - The number of hours a mailbox is at risk
    
@@ -39,7 +41,7 @@ There are two sections to this report:
    
    - The percentage of mail that was spam
    
-Changing the Time, Type filters, or searching for a mailbox, will change both the chart and the table. 
+Changing the filters or searching for a mailbox will change both the heatmap and table. 
 
 > [!NOTE]
 > The default view is for the last 24 hours for all types. If no data is showing, that means you had no mailboxes exceeding the limit (or at risk) in the last 24 hours.
