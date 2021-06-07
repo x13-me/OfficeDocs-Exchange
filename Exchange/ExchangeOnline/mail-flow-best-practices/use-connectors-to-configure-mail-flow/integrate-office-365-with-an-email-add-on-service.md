@@ -402,6 +402,9 @@ This example creates the mail flow rule with these settings:
 
 - **Outbound connector name**: Office 365 to Contoso Signature Service
 
+> [!IMPORTANT]
+> The Outbound connector in the New EAC is **Office 365 to Your organization's email server**.
+
 - **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
 
 ```powershell
