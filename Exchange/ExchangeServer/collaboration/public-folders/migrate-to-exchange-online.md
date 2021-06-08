@@ -552,6 +552,9 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you t
    Get-MailPublicFolder -ResultSize Unlimited | Export-CliXML Cloud_MEPF.xml
    ```
 
+    Note:
+Post migration, if external emails fail to MEPF in EXO with error 5.7.13 or 5.4.1, ensure the public folder has "CreateItems" permission enabled for anonymous user and [Domain Based Edge Blocking (DBEB)] (https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) is disabled for the email domain configured on the public folder.
+      
 ## Known issues
 
 The following are common public folder migration issues that you may encounter in your organization.
