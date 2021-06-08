@@ -37,7 +37,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
 - Do you want to route outbound mail to external recipients from your Exchange Online organization through your on-premises organization (centralized mail transport), or do you want to route it directly to the Internet?
 
-    With centralized mail transport, you can route all mail from mailboxes in the Exchange Online organization through the on-premises organization before they're delivered to the Internet. In the same way, incoming Internet messages will be routed to an on-premises organization before being delivered to any Exchange Online recipient. Possible scenarios are detailed in [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-worldwide).
+    With centralized mail transport, you can route all mail from mailboxes in the Exchange Online organization through the on-premises organization before they're delivered to the Internet. In the same way, incoming Internet messages will be routed to an on-premises organization before being delivered to any Exchange Online recipient. Possible scenarios are detailed in [Transport routing in Exchange hybrid deployments](/exchange/transport-routing).
 This approach is helpful in compliance scenarios where all mail to and from the Internet must be processed by on-premises servers. Alternately, you can configure Exchange Online to deliver messages for external recipients directly to the Internet.
 
     > [!NOTE]
