@@ -129,7 +129,10 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    - Gmail API
    - Google Calendar API
-   - Contacts API
+   - People API
+
+   > [!NOTE]
+   > The Google Contacts API is deprecated. For more information, see [Google Contacts API](https://developers.google.com/contacts/).
 
 ## Grant access to the service account for your Google tenant
 
