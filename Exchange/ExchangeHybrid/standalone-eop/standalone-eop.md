@@ -27,7 +27,7 @@ However, EOP is also available in the following on-premises scenarios:
 - **In a hybrid deployment**: EOP can be configured to protect your on-premises Exchange environment and control mail routing when you have a mix of on-premises and cloud mailboxes. For more information about hybrid, see [Exchange Server hybrid deployments](../exchange-hybrid.md).
 
 > [!NOTE]
-> If you have an on-premises Exchange organization and you've purchased additional Exchange Enterprise CAL (EECAL) with Services licenses , EOP is part of the included services.
+> If you have an on-premises Exchange organization and you've purchased additional Exchange Enterprise CAL with Services licenses, EOP is part of the included services. EOP in this environment also includes [Data loss prevention (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
 
 In these scenarios, EOP can simplify the management of your email environment and alleviate many of the burdens that come with maintaining on-premises hardware and software.
 
