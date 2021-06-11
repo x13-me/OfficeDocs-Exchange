@@ -97,7 +97,7 @@ Here's a list of the unsupported characters for an In-Place eDiscovery search qu
 
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
-- You can use only prefix wildcard searches (for example, **cat\*** or **set\***). Suffix wildcard searches (\*cat) or substring wildcard searches (\*cat\*) aren't supported.
+- You can use only prefix wildcard searches (for example, **\*cat** or **\*set**). Suffix wildcard searches (cat\*) or substring wildcard searches (\*cat\*) aren't supported.
 
 - When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
 
