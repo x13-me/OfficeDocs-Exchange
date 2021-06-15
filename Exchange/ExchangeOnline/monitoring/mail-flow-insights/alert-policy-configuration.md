@@ -32,8 +32,14 @@ To create and customize an alert policy, perform the following steps:
 
 1. Choose **Mail flow > Alert policies** from the New Exchange Admin Center (EAC). 
    The **Alert policies** screen appears.
+
+:::image type="content" source="../../media/alert-policies-screen.png" alt-text="Alert policies screen":::
+
 2. Click **New alert policy**.
    The **Name your policy** screen appears.
+
+:::image type="content" source="../../media/name-your-policy-screen.png" alt-text="Name your policy screen":::
+
 3. Provide a name for your policy in the **Name** text box.
 
 > [!NOTE]
@@ -41,10 +47,16 @@ To create and customize an alert policy, perform the following steps:
 
 4. Click **Next**.
    The **Edit settings** screen appears.
+
+:::image type="content" source="../../media/edit-settings-screen.png" alt-text="Edit settings screen":::
+
 5. Choose the severity level from the **Severity** drop-down list.
 6. Choose an insight type from the **Trigger an alert when the following insight is generated** drop-down list.
 7. Click **Next**. 
    The **Recipients** screen appears.
+
+:::image type="content" source="../../media/recipients-screen.png" alt-text="Recipients screen":::
+
 8. Provide the name or email address of the alert notification recipients in the **Email recipients** text box.
 9. Choose the daily-notification count from the **Daily notification limit** drop-down list.
 
@@ -52,8 +64,10 @@ To create and customize an alert policy, perform the following steps:
 > Choosing te daily-notification count value is optional.
 
 10. Click **Next**.
-  The **Review policy and finish** screen appears.
+    The **Review policy and finish** screen appears.
+
+:::image type="content" source="../../media/review-policy-and-finish-screen.png" alt-text="Review and policy finish screen":::
 
 11. Review the alert-policy settings and click **Create**.
-   The alert policy is created.
+    The alert policy is created.
 
