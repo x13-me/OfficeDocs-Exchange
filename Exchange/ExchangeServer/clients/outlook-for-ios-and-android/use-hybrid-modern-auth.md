@@ -341,6 +341,10 @@ With ExpressRoute, there's no private IP space for ExpressRoute connections, nor
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```
 
+**Q**: What happens when an organization moves from basic authentication with Outlook for iOS and Android to hybrid Modern authentication?
+
+**A**: After an organization enables hybrid modern authentication following the above [Implementation steps](#implementation-steps), end users need to delete their existing account profile in Outlook for iOS and Android as the profile uses basic authentication. End users can then create a new profile which will use hybrid Modern authentication.
+
 ## Troubleshooting
 
 Below are the most common issues or errors with on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
