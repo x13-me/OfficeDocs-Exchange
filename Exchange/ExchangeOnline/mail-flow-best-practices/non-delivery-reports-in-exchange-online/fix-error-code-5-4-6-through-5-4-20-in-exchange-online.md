@@ -85,13 +85,17 @@ The connector properties screen appears.
 > [!NOTE]
 > You can navigate to the Classic EAC screen only from the New EAC screen.
 
-3. Select the connector that's used for hybrid, and click **Edit** ![Icon](../../media/ITPro_EAC_EditIcon.png).
+3. Click **mail flow** on the left pane. The **mail flow** home screen appears.
 
-4. Navigate to **How do you want to route email messages** screen.
+4. Click the **conenctors** tab. 
+
+5. Select the connector that's used for hybrid, and click **Edit** ![Icon](../../media/ITPro_EAC_EditIcon.png).
+
+6. Navigate to **How do you want to route email messages** screen.
 
 :::image type="content" source="../../media/routing-through-smart-hosts-old-eac.png" alt-text="Routing emails using hybrid connectors in Old EAC":::
 
-5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
+7. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
