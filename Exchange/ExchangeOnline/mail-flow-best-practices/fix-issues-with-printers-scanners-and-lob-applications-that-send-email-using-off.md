@@ -129,7 +129,8 @@ There are a few things you should check:
       - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
 
       - Go to the Mail tab.
-   In the “Email apps” section, click on “Manage email apps”
+
+      - In the **Email apps** section, select **Manage email apps**.
    Verify the “Authenticated SMTP” setting is checked (enabled)
    Click Save changes.
    
