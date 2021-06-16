@@ -22,7 +22,7 @@ An alert policy is the mechanism by which you can track the following events in 
 - Malware threats
 - Data loss incidents
 
-After you have identified the activity on which you want to receive alerts, you can create and customize the alert New Exchange Admin Center (EAC). This task includes the following activities:
+After you have identified the activity on which you want to receive alerts, you can create and customize the alert in the New Exchange Admin Center (EAC). This task includes the following activities:
 - Making the alert to trigger at a specified time
 - Setting the recipients who have to receive the alerts
 
