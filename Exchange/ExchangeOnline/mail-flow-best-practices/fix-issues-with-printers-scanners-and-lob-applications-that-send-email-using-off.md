@@ -116,7 +116,7 @@ This can be caused by a number of issues:
 
 ### Error: Authentication unsuccessful
 
-If you are getting one of the following erros- 
+If you are getting one of the following errors: 
 
 535 5.7.3 Authentication unsuccessful
 5.7.57 Client not authenticated to send mail
