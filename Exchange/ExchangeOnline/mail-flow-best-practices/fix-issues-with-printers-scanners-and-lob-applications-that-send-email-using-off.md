@@ -124,7 +124,8 @@ If you are getting one of the following errors:
 There are a few things you should check:
 
 1. Enable Client SMTP submission on the licensed mailbox being used:
-   From Microsoft 365 Admin Center, go to Active Users and select the user
+
+      - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
    Go to Mail tab
    In the “Email apps” section, click on “Manage email apps”
    Verify the “Authenticated SMTP” setting is checked (enabled)
