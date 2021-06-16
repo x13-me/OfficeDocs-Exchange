@@ -136,7 +136,7 @@ There are a few things you should check:
 
       - Select **Save changes**.
    
-2. Disable Multi Factor Authentication (MFA) on the licensed mailbox being used:
+2. Disable Multi-Factor Authentication (MFA) on the licensed mailbox being used:
    In the Microsoft 365 Admin Center, in the left navigation menu choose Users > Active users.
    On the Active users page, choose Multi-factor authentication.
    On the multi-factor authentication page, select the user and disable the Multi-Factor auth status.
