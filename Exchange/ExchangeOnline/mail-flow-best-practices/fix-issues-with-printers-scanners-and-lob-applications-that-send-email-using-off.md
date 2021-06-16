@@ -131,7 +131,8 @@ There are a few things you should check:
       - Go to the Mail tab.
 
       - In the **Email apps** section, select **Manage email apps**.
-   Verify the “Authenticated SMTP” setting is checked (enabled)
+
+      - Verify that the **Authenticated SMTP** setting is checked (enabled).
    Click Save changes.
    
 2. Disable Multi Factor Authentication (MFA) on the licensed mailbox being used:
