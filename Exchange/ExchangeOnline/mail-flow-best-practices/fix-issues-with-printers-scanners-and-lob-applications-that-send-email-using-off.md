@@ -133,7 +133,8 @@ There are a few things you should check:
       - In the **Email apps** section, select **Manage email apps**.
 
       - Verify that the **Authenticated SMTP** setting is checked (enabled).
-   Click Save changes.
+
+      - Select **Save changes**.
    
 2. Disable Multi Factor Authentication (MFA) on the licensed mailbox being used:
    In the Microsoft 365 Admin Center, in the left navigation menu choose Users > Active users.
