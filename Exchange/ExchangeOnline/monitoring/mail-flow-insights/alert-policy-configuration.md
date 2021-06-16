@@ -34,12 +34,12 @@ To create and customize an alert policy, perform the following steps:
 2. Choose **Mail flow > Alert policies** on the left pane. 
    The **Alert policies** screen appears.
 
-:::image type="content" source="../../media/alert-policies-screen.png" alt-text="Alert policies screen":::
+   :::image type="content" source="../../media/alert-policies-screen.png" alt-text="Alert policies screen":::
 
 3. Click **New alert policy**.
    The **Name your policy** screen appears.
 
-:::image type="content" source="../../media/name-your-policy-screen.png" alt-text="Name your policy screen":::
+   :::image type="content" source="../../media/name-your-policy-screen.png" alt-text="Name your policy screen":::
 
 4. Provide a name for your policy in the **Name** text box.
 
@@ -49,14 +49,14 @@ To create and customize an alert policy, perform the following steps:
 5. Click **Next**.
    The **Edit settings** screen appears.
 
-:::image type="content" source="../../media/edit-settings-screen.png" alt-text="Edit settings screen":::
+   :::image type="content" source="../../media/edit-settings-screen.png" alt-text="Edit settings screen":::
 
 6. Choose the severity level from the **Severity** drop-down list.
 7. Choose an insight type from the **Trigger an alert when the following insight is generated** drop-down list.
 8. Click **Next**. 
    The **Recipients** screen appears.
 
-:::image type="content" source="../../media/recipients-screen.png" alt-text="Recipients screen":::
+   :::image type="content" source="../../media/recipients-screen.png" alt-text="Recipients screen":::
 
 9. Provide the name or email address of the alert notification recipients in the **Email recipients** text box.
 10. Choose the daily-notification count from the **Daily notification limit** drop-down list.
@@ -67,7 +67,7 @@ To create and customize an alert policy, perform the following steps:
 11. Click **Next**.
     The **Review policy and finish** screen appears.
 
-:::image type="content" source="../../media/review-policy-and-finish-screen.png" alt-text="Review and policy finish screen":::
+    :::image type="content" source="../../media/review-policy-and-finish-screen.png" alt-text="Review and policy finish screen":::
 
 12. Review the alert-policy settings and click **Create**.
     The alert policy is created.
