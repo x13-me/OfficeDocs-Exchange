@@ -144,7 +144,7 @@ There are a few things you should check:
 
       - On the Multi-Factor Authentication page, select the user and disable the Multi-Factor Authentication status.
    
-3. Disable the [Azure Security Defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) by toggling the “Enable Security Defaults” to “No”:
+3. Disable the [Azure Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) by toggling the **Enable Security Defaults** to **No**:
    Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
    Browse to Azure Active Directory > Properties.
    Select Manage security defaults.
