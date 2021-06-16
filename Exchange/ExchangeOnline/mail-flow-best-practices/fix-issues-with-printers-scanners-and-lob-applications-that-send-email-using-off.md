@@ -137,9 +137,12 @@ There are a few things you should check:
       - Select **Save changes**.
    
 2. Disable Multi-Factor Authentication (MFA) on the licensed mailbox being used:
-   In the Microsoft 365 Admin Center, in the left navigation menu choose Users > Active users.
-   On the Active users page, choose Multi-factor authentication.
-   On the multi-factor authentication page, select the user and disable the Multi-Factor auth status.
+
+      - In the Microsoft 365 admin center, in the left navigation menu, choose **Users** > **Active users**.
+
+      - On the Active users page, choose **Multi-Factor Authentication**.
+
+      - On the Multi-Factor Authentication page, select the user and disable the Multi-Factor Authentication status.
    
 3. Disable the [Azure Security Defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) by toggling the “Enable Security Defaults” to “No”:
    Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
