@@ -360,7 +360,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    > 91edc6dd-478a-497c-8731-b0b793f5a986
 
    > [!NOTE]
-The PF mailbox GUID mentioned in prvious command must be obtained from On-Premises server, if it is obtained from Exchange Online, the migration batch will fail with error "Cannot find a recipient that has mailbox GUID"
+The public folder mailbox GUID mentioned in the previous command must be obtained from the on-premises server; if it is obtained from Exchange Online, the migration batch will fail with the error "Cannot find a recipient that has mailbox GUID".
 
 5. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
