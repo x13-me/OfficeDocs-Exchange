@@ -169,7 +169,7 @@ Network or ISP changes might change your static IP address. This results in your
 
 ### 5.7.64 TenantAttribution; Relay Access Denied or 4.4.62 Mail sent to the wrong Office 365 region
 
-This error indicates that email sent from your application or device is not being correctly [attributed](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-message-attribution/ba-p/749143) to your tenant. A common cause of this issue is change in your dedicated and static IP address or change in the certificate used by your application or device. Update the inbound connector with the new IP address or new Certificate information. 
+This error indicates that email sent from your application or device is not correctly [attributed](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-message-attribution/ba-p/749143) to your tenant. A common cause of this issue is a change in your dedicated and static IP address or a change in the certificate used by your application or device. Update the inbound connector with the new IP address or new certificate information. 
 
 ### Emails from my device are marked as junk by Microsoft 365 or Office 365
 
