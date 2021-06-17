@@ -33,7 +33,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
 - Do you want to route inbound Internet mail for both your on-premises and Exchange Online mailboxes through Exchange Online or through your on-premises organization?
 
-    The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Microsoft 365 and Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
+  The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Microsoft 365 and Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
 
 - Do you want to route outbound mail to external recipients from your Exchange Online organization through your on-premises organization (centralized mail transport), or do you want to route it directly to the Internet?
 

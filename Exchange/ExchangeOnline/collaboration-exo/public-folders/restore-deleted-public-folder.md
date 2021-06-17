@@ -22,10 +22,12 @@ In some cases, you can restore a public folder that has been deleted.
 
 Public folders that have been deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. Deleted folders are preserved here until the time retention period is over.
 
-Any folders preserved in the public folder dumpster can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
+For scenarios where public folder contents are put on hold using retention policy, the folders removed from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` until the retention hold period is over.
+
+Any folders preserved in the public folder dumpster or under the DiscoverHolds folder can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
 
 > [!NOTE]
-> The folders in the dumpster are permanently deleted after the retention period is over. After a public folder is permanently deleted, it cannot be restored.
+> The folders in the dumpster are permanently deleted after the retention period is over. After a public folder is permanently deleted, it cannot be restored, unless it is preserved under DiscoveryHolds by a retention policy.
 
 ## Permissions required
 
@@ -49,6 +51,12 @@ The user restoring the public folder must have the `Public Folders` role assigne
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -like "Marketing"}
     ```
 
+    You can also search for public folders present under `\NON_IPM_SUBTREE\DiscoverHolds`. For example, the following command searches for a deleted public folder that was named `Sales`:
+    
+    ```PowerShell
+    Get-PublicFolder \NON_IPM_SUBTREE\DiscoveryHolds -Recurse |?{$_.Name -like "Sales"}
+    ```
+
 1. Use the following command to restore the desired public folder:
 
     ```PowerShell
@@ -59,6 +67,12 @@ The user restoring the public folder must have the `Public Folders` role assigne
 
     ```PowerShell
     Set-PublicFolder -Identity \NON_IPM_SUBTREE\DUMPSTER_ROOT\DUMPSTER_EXTEND\RESERVED_1\RESERVED_1\9f32c468-4bc2-42aa-b979-16a057394b2f\PF1 -Path \
+    ```
+
+    The following alternate example restores a public folder named `Sales` to the root of the public folder tree:
+
+    ```PowerShell
+    Set-PublicFolder -Identity \NON_IPM_SUBTREE\DiscoveryHolds\Sales -Path \
     ```
 
 ### Restore a specific subfolder
