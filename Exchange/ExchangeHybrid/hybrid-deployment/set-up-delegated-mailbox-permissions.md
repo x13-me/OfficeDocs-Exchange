@@ -60,7 +60,7 @@ To enable ACLable object synchronization at the organization level, do the follo
 After you do this, any mailboxes that you move to Microsoft 365 or Office 365 will be properly configured to support delegated mailbox permissions. If mailboxes were moved to Microsoft 365 or Office 365 prior to you completing these steps, you'll need to manually enable ACLs on those mailboxes using the steps in [Enable ACLs on remote mailboxes](#enable-acls-on-remote-mailboxes).
 
 > [!IMPORTANT]
-> ACLs aren't enabled on remote mailboxes created in Microsoft 365 or Office 365. If you create a remote mailbox in Microsoft 365 or Office 365, you'll need to follow the steps in the Enable ACLs on remote mailboxes section to enable ACLs on that remote mailbox. To avoid this extra step, we recommend that you create the mailbox on an on-premises Exchange server and then move the mailbox to Microsoft 365 or Office 365.
+> ACLs aren't enabled on remote mailboxes created in Microsoft 365 or Office 365. If you create a remote mailbox in Microsoft 365 or Office 365 via Exchange on-premises, you'll need to use the ACLableSyncedObjectEnabled parameter when running New-RemoteMailbox or Enable-RemoteMailbox.
 
 ### Enable ACLs on remote mailboxes
 
