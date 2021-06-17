@@ -125,10 +125,11 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Select the project that you used above.
 
-3. Search for the following APIs, and then for each one, if necessary, click **Enable** to enable them for your project:
+3. Search for the following APIs; each one must be enabled. Select **Enable** to enable them for your project:
 
    - Gmail API
    - Google Calendar API
+
    - People API
 
    > [!NOTE]
@@ -146,12 +147,14 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    ![Add new API client](../media/add-a-new-client-id-im7.png)
 
-5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example, `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`. If the OAuth Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
+5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example: </br></br> `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing,https://www.googleapis.com/auth/contacts` 
+
+    If the OAuth Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
 
 6. Click **Authorize**. Verify that the resulting list shows the expected four (4) OAuth scopes.
 
-   > [!NOTE]
-   > It may take a substantial length of time for these settings to propagate (anywhere from 15 minutes to 24 hours).
+   > [!Important]
+   > It may take anywhere from 15 minutes to 24 hours for these settings to propogate.
 
 ## Create a subdomain for mail routing to Microsoft 365 or Office 365
 
