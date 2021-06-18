@@ -18,7 +18,7 @@ manager: serdars
 
 # Scenario: Conditional mail routing in Exchange Online
 
-There might be times you need to route mail differently depending on whom the mail is sent to or from, where it's being sent, the contents of the message, and so on. For example, if you have multiple sites around the world, you might want to route mails to a specific site. You can do this using connectors and mail flow rules (also known as transport rules).
+There might be times you need to route mail differently. These different routes depend on the recipient or sender of the mail, where it's being sent, the contents of the message, and so on. For example, if you have multiple sites around the world, you might want to route mails to a specific site. You can do this using connectors and mail flow rules (also known as transport rules).
 
 When the steps below are completed, a mail flow rule will redirect messages addressed to users whose City property is set to New Orleans to the IP address specified by the connector from Office 365 to your organization's email server.
 

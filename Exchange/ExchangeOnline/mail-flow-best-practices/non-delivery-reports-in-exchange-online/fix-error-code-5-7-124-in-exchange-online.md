@@ -21,7 +21,11 @@ description: "Learn how to fix email issues for error code 5.7.124 in Exchange O
 
 # Fix email delivery issues for error code 5.7.124 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see status code 550 5.7.124 or 5.7.124 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the sender isn't specified in the group's allowed senders list (directly or as a member of a group). Depending how the group is configured, even the group's owner might need to be in the group's allowed senders list in order to send messages to the group.
+It's frustrating when you get an error after sending an email message. This topic describes what the remedies if you see status code 550 5.7.124 or 5.7.124 in a non-delivery report.
+> [!NOTE]
+> Non-delivery report is also known as an NDR, bounce message, delivery status notification, or DSN. 
+
+You'll see this automated notification when the sender isn't specified in the group's allowed senders list (directly or as a member of a group). Depending how the group is configured, even the group's owner might need to be in the group's allowed senders list in order to send messages to the group.
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
