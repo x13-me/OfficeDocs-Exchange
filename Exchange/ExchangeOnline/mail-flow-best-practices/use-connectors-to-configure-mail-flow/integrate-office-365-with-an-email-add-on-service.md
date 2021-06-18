@@ -206,7 +206,7 @@ The important settings for the connector are:
 
    - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
 
-   ![In the new connector wizard, enter a descriptive name for the connector.](../../media/945fa373-d19a-43b5-9b17-4763e21b2370.png)
+   ![In the new connector wizard, provide a descriptive name for the connector.](../../media/945fa373-d19a-43b5-9b17-4763e21b2370.png)
 
    When you're finished, click **Next**.
 
