@@ -90,7 +90,7 @@ New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols
 - The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](#use-exchange-online-powershell-to-set-the-priority-of-client-access-rules)  section later in this topic.
 - The rule is enabled, because we didn't use the _Enabled_ parameter, and the default value is `$true`.
 
-This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
+This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Classic Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
 
 ```PowerShell
 New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
