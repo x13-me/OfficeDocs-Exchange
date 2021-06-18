@@ -87,7 +87,7 @@ The connector properties screen appears.
 
 3. Click **mail flow** on the left pane. The **mail flow** home screen appears.
 
-4. Click the **conenctors** tab. 
+4. Click the **connectors** tab. 
 
 5. Select the connector that's used for hybrid, and click **Edit** ![Icon](../../media/ITPro_EAC_EditIcon.png).
 
