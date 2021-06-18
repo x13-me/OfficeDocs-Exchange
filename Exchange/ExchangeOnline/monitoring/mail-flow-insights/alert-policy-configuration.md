@@ -39,14 +39,14 @@ To create and customize an alert policy, perform the following steps:
 
 4. From the **Severity** drop-down list, select the severity level.
 5. From the **Trigger an alert when the following insight is generated** drop-down list, select the insight type.
-6. Click **Next**. The **Recipients** screen appears.
+6. Click **Next**.
 7. Provide the name or email address of the alert notification recipients in the **Email recipients** box.
 8. From the **Daily notification limit** drop-down list, select daily-notification count.
 
 > [!NOTE] 
 > Choosing te daily-notification count value is optional.
 
-11. Click **Next**.
-12. Review the alert-policy settings and click **Create**.
+9. Click **Next**.
+10. Review the alert-policy settings and click **Create**.
     The alert policy is created.
 
