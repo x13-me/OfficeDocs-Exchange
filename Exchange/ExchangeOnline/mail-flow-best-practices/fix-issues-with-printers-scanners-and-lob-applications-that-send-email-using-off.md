@@ -114,6 +114,48 @@ This can be caused by a number of issues:
 
 3. Check that your device or application supports TLS version 1.2 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.2 or above.
 
+### Error: Authentication unsuccessful
+
+If you are getting one of the following errors: 
+
+- 535 5.7.3 Authentication unsuccessful
+
+- 5.7.57 Client not authenticated to send mail
+
+There are a few things you should check:
+
+1. Enable Client SMTP submission on the licensed mailbox being used:
+
+      - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
+
+      - Go to the Mail tab.
+
+      - In the **Email apps** section, select **Manage email apps**.
+
+      - Verify that the **Authenticated SMTP** setting is checked (enabled).
+
+      - Select **Save changes**.
+   
+2. Disable Multi-Factor Authentication (MFA) on the licensed mailbox being used:
+
+      - In the Microsoft 365 admin center, in the left navigation menu, choose **Users** > **Active users**.
+
+      - On the Active users page, choose **Multi-Factor Authentication**.
+
+      - On the Multi-Factor Authentication page, select the user and disable the Multi-Factor Authentication status.
+   
+3. Disable the [Azure Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) by toggling the **Enable Security Defaults** to **No**:
+
+      - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+
+      - Browse to **Azure Active Directory** > **Properties**.
+
+      - Select **Manage security defaults**.
+
+      - Set the **Enable security defaults** toggle to **No**.
+
+      - Select **Save**.
+
 ### Error: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
 This error indicates that the device is trying to send an email from an address that doesn't match the logon credentials. An example would be if your entered login credentials for sales@contoso.com in your application settings but the application tries to send emails from salesperson1@contoso.com. If your application or printer behaves this way, use Microsoft 365 or Office 365 SMTP relay because SMTP client submission does not support this scenario.
