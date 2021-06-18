@@ -29,7 +29,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > 
 > - In order to send email to public folders within your Exchange Online environment, you need to set the domain type to internal relay if the domain contains recipient addresses assigned to public folders. Directory-Based Edge Blocking cannot be used for public folders. 
 >
-> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that is used for transmitting messages from Office 365 to your organization's email server. For instructions, see [Use the EAC to add the domain to connector used for transmitting messages from Office 365 to your organization's email server](#use-the-eac-to-add-the-domain-to-connector-used-for-transmitting-messages-from-office-365-to-your-organizations-email-server).
+> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that is used for transmitting messages from Office 365 to your organization's email server. For instructions, see [Use the EAC to add the domain to the connector used for transmitting messages from Office 365 to your organization's email server](#use-the-eac-to-add-the-domain-to-the-connector-used-for-transmitting-messages-from-office-365-to-your-organizations-email-server).
 
 ## What do you need to know before you begin?
 
@@ -79,7 +79,7 @@ The domain details dialog box is displayed.
 
 :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
 
-## Use the EAC to add the domain to connector used for transmitting messages from Office 365 to your organization's email server
+## Use the EAC to add the domain to the connector used for transmitting messages from Office 365 to your organization's email server
 
 ### New EAC
 
