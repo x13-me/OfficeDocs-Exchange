@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: Priority
 description: 'Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server.'
 ms.topic: overview
 author: msdmaguire

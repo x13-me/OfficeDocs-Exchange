@@ -109,7 +109,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 You need to configure the following protocols, ports, and connection endpoints in the firewall that protects your on-premises organization as described in the following table.
 
   > [!IMPORTANT]
-  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges - Exchange Online](/microsoft-365/enterprise/urls-and-ip-address-ranges#exchange-online) and identify the endpoints for each port listed here.
+  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see the sections _Exchange Online_ and _Microsoft 365 Common and Office Online_ in [Microsoft 365 and Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to identify the endpoints for each port listed here.
    
   > [!NOTE]
   > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](../ExchangeServer/plan-and-deploy/deployment-ref/network-ports.md).
