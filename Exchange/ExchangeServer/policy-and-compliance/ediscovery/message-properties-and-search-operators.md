@@ -99,6 +99,6 @@ Here's a list of the unsupported characters for an In-Place eDiscovery search qu
 
 - You can use only prefix wildcard searches (for example, **\*cat** or **\*set**). Suffix wildcard searches (cat\*) or substring wildcard searches (\*cat\*) aren't supported.
 
-- When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
+- When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
 
 - To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, **-from:"Sara Davis"** will exclude any messages sent by Sara Davis.
