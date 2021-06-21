@@ -13,7 +13,7 @@ description: This alert policy allows you to track and manage your activities.
 ms.custom:
 ---
 
-# Configuring alert policy
+# Configuring an alert policy
 
 
 An alert policy is the mechanism by which you can track the following events in your organization:
@@ -22,13 +22,13 @@ An alert policy is the mechanism by which you can track the following events in 
 - Malware threats
 - Data loss incidents
 
-After you have identified the activity on which you want to receive alerts, you can create and customize the alert in the New Exchange Admin Center (EAC). This task includes the following activities:
+After you have identified the activity on which you want to receive alerts, you can create and customize the alert in the new Exchange Admin Center (EAC). This task includes: 
 - Making the alert to trigger at a specified time
 - Setting the recipients who have to receive the alerts
 
 ## Create and customize alert policy
 
-To create and customize an alert policy, perform the following steps:
+**Create and customize an alert policy:**
 
 1. Launch the URL https://admin.exchange.microsoft.com.
 2. In the left pane, navigate to **Mail flow > Alert policies**, and click **New alert policy**. 
