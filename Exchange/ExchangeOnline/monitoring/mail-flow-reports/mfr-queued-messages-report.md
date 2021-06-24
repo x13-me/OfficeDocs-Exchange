@@ -26,36 +26,33 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 
 - The **Queued messages report** report in the new Exchange admin center (new EAC). For more information, see the [Queues](#queues) section in this topic.
   
-- An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
-
-  ![Recent alerts in the Alerts dashboard in the Security & Compliance Center](../../media/mfr-queued-messages-alert.png)
+- An alert is displayed on the **Alerts** page in the Microsoft 365 Defender portal (<https://security.microsoft.com> \> **Incidents & alerts** \> **Alerts** or <https://security.microsoft.com/alerts>).
 
 - Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
 
-  For more information about alert policies, see [Alert policies in the Security & Compliance Center](/microsoft-365/compliance/alert-policies).
+  For more information about alert policies, see [Alert policies in the Microsoft 365 compliance center](/microsoft-365/compliance/alert-policies).
 
 ## Customize queue alerts
 
-1. In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Incidents & alerts** \> **Alerts** \> **Alert policy** or go directly to <https://security.microsoft.com/alertpolicies>.
 
-2. On the **Alert policies** page, find and select the policy named **Messages have been delayed**.
+2. On the **Alert policies** page, find and select the policy named **Messages have been delayed** by clicking on the name. You can sort the policies by name or use the **Search** box.
 
-3. In the **Message have been delayed** flyout that opens, you can turn the alert on or off and configure the notification settings.
+3. In the **Message have been delayed** flyout that appears, you can turn the alert on or off and configure the notification settings.
 
-   ![Messages have been delayed alert policy details the Security & Compliance Center](../../media/mfr-queued-messages-alert-policy.png)
+   ![Messages have been delayed alert policy details the Microsoft 365 Defender portal](../../media/mfr-queued-messages-alert-policy.png)
 
    - **Status**: You can toggle the alert on or off.
+   - **Email recipients** and **Daily notification limit**: Click the **Edit** link or the **Edit policy** button to configure the settings as described in the next step.
 
-   - **Email recipients** and **Daily notification limit**: Click **Edit** to configure the following settings:
+4. In the **Edit policy** flyout that appears, configure the following settings:
 
-4. To configure the notification settings, click **Edit**. In the **Edit policy** flyout that appears, configure the following settings:
-
-   - **Send email notifications**: The default value is on.
+   - **Send email notifications**: The default value is **On** (selected).
    - **Email recipients**: The default value is **TenantAdmins**.
    - **Daily notification limit**: The default value is **No limit**.
-   - **Threshold**: The default value is 200.
+   - **Threshold**: The default value is 2000.
 
-   ![Notification settings in the Messages have been delayed alert policy details the Security & Compliance Center](../../media/mfr-queued-messages-alert-policy-notification-settings.png)
+   ![Notification settings in the Messages have been delayed alert policy details](../../media/mfr-queued-messages-alert-policy-notification-settings.png)
 
 5. When you're finished, click **Save** and **Close**.
 
@@ -66,8 +63,6 @@ Even if the queued message volume hasn't exceeded the threshold and generated an
 ![Queued messages report in the new EAC](../../media/mfr-queued-messages-report.png)
 
 The same information and fix option is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.
-
-![Messages have been delayed alert details in the Security & Compliance Center](../../media/mfr-queued-messages-alert-details.png)
 
 ## See also
 
