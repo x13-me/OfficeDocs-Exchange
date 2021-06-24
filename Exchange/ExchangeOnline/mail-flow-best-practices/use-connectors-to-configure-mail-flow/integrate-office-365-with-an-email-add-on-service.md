@@ -116,6 +116,7 @@ The important settings for the connector are:
 
 8. When you're finished, click **Next**. The **Validation email** screen appears.
 
+
 <include the image screen-validation-email.png>
 
 9. Enter an email address that is valid on the mailbox of your organization's email server.
@@ -256,7 +257,7 @@ The important settings for the connector are:
 
 1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-:::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
+   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
 
 The **New connector** screen appears.
 
@@ -265,7 +266,7 @@ The **New connector** screen appears.
    - **From** **Your organization's email server**
    - **To** **Office 365**
 
-<include the image org-to-365.png>
+:::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured":::
 
 3. When you're finished, click **Next**. The **Connector name** screen appears.
 
@@ -279,17 +280,17 @@ The **New connector** screen appears.
 
    - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
 
-<include the image screen-connector-name.png>
+   :::image type="content" source="../../media/screen-connector-name.png" alt-text="The screen on which you provide a name to the connector":::
 
 5. When you're finished, click **Next**. The **Authenticating sent email** screen appears.
 
 6. Verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
-<include the image authenticating-sent-email.png>
+   :::image type="content" source="../../media/authenticating-sent-email.png" alt-text="The authenticating sent email screen":::
 
 7. When you're finished, click **Next**. The **Review connector** screen appears.
 
-<include the image screen-review-connector-org-365.png>
+   :::image type="content" source="../../media/screen-review-connector-org-365.png" alt-text="The review connector screen":::
 
 8. Verify the settings, and then click **Create connector**. The new connector is created.
 
