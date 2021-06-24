@@ -21,15 +21,13 @@ manager: serdars
 # Run a message trace in the classic EAC
 
 > [!NOTE]
-> Message trace is available in the Microsoft 365 security center and in the modern Exchange admin center. For more information, see [Message trace in the Security & Compliance Center](/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](message-trace-modern-eac.md).
+> Message trace is available in the modern Exchange admin center. For more information, see [Message trace in the modern Exchange admin center](message-trace-modern-eac.md). The **Exchange message trace** link in the Microsoft 365 Defender portal opens message trace in the modern EAC.
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
 For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as a Microsoft 365 or Office 365 for business admin](/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 ## What do you need to know before you begin?
-
-- For information about when data is available and for how long, see [Reporting and message trace data availability and latency](/office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection#reporting-and-message-trace-data-availability-and-latency).
 
 - To find and open the classic EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -51,17 +49,11 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
    1. **Date range**: Using the drop-down list, select to search for messages sent or received within the past 24 hours, 48 hours, or 7 days. You can also select a custom time frame that includes any range within the past 90 days. For custom searches you can also change the time zone, in Coordinated Universal Time (UTC).
 
    2. **Delivery status**: Using the drop-down list, select the status of the message you want to view information about. Leave the default value of **All** to cover all statuses. Other possible values are:
-
       - **Delivered**: The message was successfully delivered to the intended destination.
-
       - **Failed**: The message was not delivered. Either it was attempted and failed or it was not delivered as a result of actions taken by the filtering service. For example, if the message was determined to contain malware.
-
       - **Pending**<sup>*</sup>: Delivery of the message is being attempted or re-attempted.
-
       - **Expanded**: The message was sent to a distribution list and was expanded so the members of the list can be viewed individually.
-
       - **Filtered as spam**: The message was delivered to the Junk Email folder.
-
       - **Unknown**<sup>*</sup>: The message delivery status is unknown at this time. When the results of the query are listed, the delivery details fields will not contain any information.
 
       <sup>*</sup>If you're searching for messages that are older than 7 days, you can't select **Pending** or **Unknown**.
@@ -101,13 +93,9 @@ After running your message trace, proceed to one of the next sections to read ab
 After you run a message trace in the EAC, the results will be listed, sorted by date, with the most recent message appearing first. You can sort on any of the listed fields by clicking their headers. Clicking a column header a second time will reverse the sort order. When viewing message trace results, the following information is provided about each message:
 
 - **Date**: The date and time at which the message was received by the service, using the configured UTC time zone.
-
 - **Sender**: The email address of the sender in the form `alias@domain`.
-
 - **Recipient**: The email address of the recipient or recipients. For messages sent to more than one recipient, there is one line per recipient. If the recipient is a distribution list, the distribution list will be the first recipient, and then each member of the distribution list will be included on a separate line so that you can check the status for all recipients.
-
 - **Subject**: The subject line text of the message. If necessary, this is truncated to the first 256 characters.
-
 - **Status**: This field specifies whether the message was **Delivered** to the recipient or the intended destination, **Failed** to be delivered to the recipient (either because it failed to reach its destination or because it was filtered), is **Pending** delivery (it is either in the process of being delivered or the delivery was deferred but is being re-attempted), was **Expanded** (there was no delivery because the message was sent to a distribution list (DL) that was expanded to the recipients of the DL), or has a status of **None** (there is no status of delivery for the message to the recipient because the message was either rejected or redirected to a different recipient).
 
 > [!NOTE]
@@ -134,23 +122,14 @@ In the events section, the following fields provide information about the events
 - **Date**: The date and time that the event occurred.
 
 - **Event**: This field briefly informs you of what happened, for example if the message was received by the service, if it was delivered or failed to be delivered to the intended recipient, and so on. The following are examples of events that may be listed:
-
   - **RECEIVE**: The message was received by the service.
-
   - **SEND**: The message was sent by the service.
-
   - **FAIL**: The message failed to be delivered.
-
   - **DELIVER**: The message was delivered to a mailbox.
-
   - **EXPAND**: The message was sent to a distribution group that was expanded.
-
   - **TRANSFER**: Recipients were moved to a bifurcated message because of content conversion, message recipient limits, or agents.
-
   - **DEFER**: The message delivery was postponed and may be re-attempted later.
-
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
-  
   - **DLP rule**: The message had a DLP rule or sensitivity label match in this message.
 
     > [!TIP]
@@ -167,11 +146,8 @@ If you run a message trace for items that are older than 7 days, when you click 
 In the EAC, you can click **View pending or completed traces** in order to view a list of traces that were run for items that older than 7 days. In the resulting UI, the list of traces is sorted based on the date and time that they were submitted, with the most recent submissions appearing first. In addition to the report title, the date and time the trace was submitted, and the number of messages in the report, the following status values are listed:
 
 - **Not started**: The trace was submitted but is not yet running. At this point, you have the option to cancel the trace.
-
 - **Cancelled**: The trace was submitted but was cancelled.
-
 - **In progress**: The trace is running and you can't cancel the trace or download the results.
-
 - **Completed**: The trace has completed and you can click **Download this report** to retrieve the results in a .CSV file. Note that if your message trace results exceed 50000 messages for a summary report, it will be truncated to the first 50000 messages. If your message trace results exceed 1000 messages for a detailed report, it will be truncated to the first 1000 messages. If you do not see all the results that you need, we recommend that break your search out into multiple queries.
 
 When you select a specific message trace, additional information appears in the right pane. Depending on what search criteria you specified, this may include details such as the date range for which the trace was run, and the sender and intended recipients of the message.
@@ -198,11 +174,8 @@ If you didn't include routing details when running the message trace, the follow
 - **sender_address**: The email address of the sender in the form *alias*@*domain*.
 
 - **Recipient_status**: The status of the delivery of the message to the recipient. If the message was sent to multiple recipients, it will show all the recipients and the corresponding status against each, in the format: \<*email address*\>##\<*status*\>. For example, a status of:
-
   - **##Receive, Send**: means that the message was received by the service and sent to the intended destination.
-
   - **##Receive, Fail**: means that the message was received by the service but failed to be delivered to the intended destination.
-
   - **##Receive, Deliver**: means that the message was received by the service and delivered to the recipient's mailbox.
 
 - **message_subject**: The subject line text of the message. If necessary, this is truncated to the first 256 characters.
