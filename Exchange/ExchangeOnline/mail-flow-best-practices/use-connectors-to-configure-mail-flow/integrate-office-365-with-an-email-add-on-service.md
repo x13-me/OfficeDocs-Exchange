@@ -116,7 +116,7 @@ The important settings for the connector are:
 
 8. When you're finished, click **Next**. The **Validation email** screen appears.
 
-:::image type="content" source="../../media/screen-validation-email.png" alt-text="The Validation email screen":::
+   :::image type="content" source="../../media/screen-validation-email.png" alt-text="The Validation email screen":::
 
 9. Enter an email address that is valid on the mailbox of your organization's email server.
 
