@@ -28,7 +28,7 @@ When you enable mailbox audit logging for a mailbox, Exchange Online logs specif
 
 - Estimated time to complete: 5 minutes.
 
-- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
+- As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/microsoft-365/compliance/enable-mailbox-auditing).
 
 - To find and open the Exchange admin center (EAC), see, [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -74,4 +74,4 @@ When you run a non-owner mailbox access report, entries from the mailbox audit l
 - The affected message and its folder location
 - Whether the action was successful
 
-For detailed information, see [Mailbox actions for user mailboxes and shared mailboxes](/office365/securitycompliance/enable-mailbox-auditing#mailbox-actions-for-user-mailboxes-and-shared-mailboxes).
+For detailed information, see [Mailbox actions for user mailboxes and shared mailboxes](/microsoft-365/compliance/enable-mailbox-auditing#mailbox-actions-for-user-mailboxes-and-shared-mailboxes).
