@@ -27,7 +27,8 @@ Dynamic distribution groups are mail-enabled Active Directory group objects that
 Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
 
 > [!IMPORTANT]
-> A dynamic distribution group includes any recipient in Active Directory with attribute values that match its filter. If a recipient's properties are modified to match the filter, the recipient could inadvertently become a group member and start receiving messages that are sent to the group. Well-defined, consistent account provisioning processes will reduce the chances of this issue occurring.
+> - A dynamic distribution group includes any recipient in Active Directory with attribute values that match its filter. If a recipient's properties are modified to match the filter, the recipient could inadvertently become a group member and start receiving messages that are sent to the group. Well-defined, consistent account provisioning processes will reduce the chances of this issue occurring.
+> - Dynamic distribution groups are not synced from Exchange Online to Azure Active Directory or to your on-premises Active Directory. Therefore, features such as Azure Conditional Access do not support being scoped to an Exchange Online dynamic distribution group.
 
 ## What do you need to know before you begin?
 
