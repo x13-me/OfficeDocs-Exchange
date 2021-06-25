@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 ms.reviewer: 
 f1.keywords:
@@ -20,27 +20,26 @@ manager: serdars
 
 # Common attachment blocking scenarios for mail flow rules in Exchange Online
 
-Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
+In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might need to block or reject certain types of messages in order to meet legal or compliance requirements, or to meet specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules).
 
-For additional examples showing how to block specific attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
+**Notes**:
 
-The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) to add filters. In the Exchange Online portal, browse to **Protection**, and then select **Malware Filter**.
+- For additional examples showing how to block specific attachments by using mail flow rules, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
 
-To get started implementing any of these scenarios to block certain message types:
+- [Anti-malware polices EOP](/microsoft-365/security/office-365-security/anti-malware-protection#anti-malware-policies) allow you to block specific file types by turning on and configuring the **common attachment types** filter. For instructions, see [Configure anti-malware policies in EOP](/microsoft-365/security/office-365-security/configure-anti-malware-policies).
+
+To get started using mail flow rules to block certain message types, do the following steps:
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
-
 2. Go to **Mail flow** \> **Rules**.
-
-3. Click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
-
+3. Click **New** (![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
 4. In the **Name** box, specify a name for the rule, and then click **More options**.
-
 5. Select the conditions and actions you want.
 
 > [!NOTE]
-> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
-> The embedded images are treated as attachments (for example, messages with a picture in the signature); for this reason, we do not recommend using a very small value since unexpected messages will be blocked.
+> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To connect to PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [Connect to standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+>
+> Embedded images are treated as attachments (for example, messages with a picture in the signature). For this reason, we do not recommend using a very small value for the attachment size since unexpected messages will be blocked.
 
 ## Example 1: Block messages with attachments, and notify the sender
 
@@ -58,15 +57,19 @@ If you want to reject a message but let the intended recipient know what happene
 
 You can include placeholders in the notification message so that it includes information about the original message. The placeholders must be enclosed in two percent signs (%%), and when the notification message is sent, the placeholders are replaced with information from the original message. You can also use basic HTML such as \<br\>, \<b\>, \<i\>, and \<img\> in the message.
 
+<br>
 
-|**Type of information**|**Placeholder**|
-|:-----|:-----|
+****
+
+|Type of information|Placeholder|
+|---|---|
 |Sender of the message.|%%From%%|
 |Recipients listed on the "To" line.|%%To%%|
 |Recipients listed on the "Cc" line.|%%Cc%%|
 |Subject of the original message.|%%Subject%%|
 |Headers from the original message. This is similar to the list of headers in a delivery status notification (DSN) generated for the original message.|%%Headers%%|
 |Date the original message was sent.|%%MessageDate%%|
+|
 
 In this example, all messages that contain attachments and are sent to people inside your organization are blocked, and the recipient is notified.
 
@@ -100,5 +103,3 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 ## See also
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
-
-[Mail flow rules (Exchange Online Protection)](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

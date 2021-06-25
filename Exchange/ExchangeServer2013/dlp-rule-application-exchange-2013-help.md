@@ -95,7 +95,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/get-classificationrulecollection) cmdlet in the Exchange Management Shell in the following manner:
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](/powershell/module/exchange/get-classificationrulecollection) cmdlet in the Exchange Management Shell in the following manner:
 
 ```powershell
 $rule_collection = Get-ClassificationRuleCollection
@@ -111,4 +111,4 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 
 [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)
+[Exchange Management Shell](/powershell/exchange/exchange-management-shell)

@@ -21,33 +21,33 @@ The following resources provide information about common tasks associated with S
 
 ## System Center 2012 - Operations Manager
 
-- [Management Pack Life Cycle](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh212732(v=sc.12))
+- [Management Pack Life Cycle](/previous-versions/system-center/system-center-2012-R2/hh212732(v=sc.12))
 
-- [How to Import an Operations Manager Management Pack](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh212691(v=sc.12))
+- [How to Import an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh212691(v=sc.12))
 
-- [Tuning Monitoring by Using Targeting and Overrides](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh230704(v=sc.12))
+- [Tuning Monitoring by Using Targeting and Overrides](/previous-versions/system-center/system-center-2012-R2/hh230704(v=sc.12))
 
-- [How to Create a Run As Account](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh321655(v=sc.12))
+- [How to Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655(v=sc.12))
 
-- [How to Export an Operations Manager Management Pack](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh320149(v=sc.12))
+- [How to Export an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh320149(v=sc.12))
 
-- [How to Remove an Operations Manager Management Pack](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh230746(v=sc.12))
+- [How to Remove an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh230746(v=sc.12))
 
 ## Operations Manager 2007 R2
 
-- [Administering the Management Pack Life Cycle](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/cc974486(v=technet.10))
+- [Administering the Management Pack Life Cycle](/previous-versions/system-center/operations-manager-2007-r2/cc974486(v=technet.10))
 
-- [How to Import a Management Pack in Operations Manager 2007](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/cc974494(v=technet.10))
+- [How to Import a Management Pack in Operations Manager 2007](/previous-versions/system-center/operations-manager-2007-r2/cc974494(v=technet.10))
 
-- [How to Monitor Using Overrides](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/bb309719(v=technet.10))
+- [How to Monitor Using Overrides](/previous-versions/system-center/operations-manager-2007-r2/bb309719(v=technet.10))
 
-- [How to Create a Run As Account in Operations Manager 2007](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/bb309445(v=technet.10))
+- [How to Create a Run As Account in Operations Manager 2007](/previous-versions/system-center/operations-manager-2007-r2/bb309445(v=technet.10))
 
-- [How to Modify an Existing Run As Profile](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/dd891202(v=technet.10))
+- [How to Modify an Existing Run As Profile](/previous-versions/system-center/operations-manager-2007-r2/dd891202(v=technet.10))
 
-- [How to Export Management Pack Customizations](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/cc974487(v=technet.10))
+- [How to Export Management Pack Customizations](/previous-versions/system-center/operations-manager-2007-r2/cc974487(v=technet.10))
 
-- [How to Remove a Management Pack](https://docs.microsoft.com/previous-versions/system-center/operations-manager-2007-r2/cc974489(v=technet.10))
+- [How to Remove a Management Pack](/previous-versions/system-center/operations-manager-2007-r2/cc974489(v=technet.10))
 
 ## Other resources
 

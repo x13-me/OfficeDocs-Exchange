@@ -26,11 +26,11 @@ In a hybrid deployment, many services make use of certificates:
 
 - **Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS)**: If you choose to deploy Azure AD Connect with AD FS as part of your hybrid deployment, a certificate issued by a trusted third-party certificate authority (CA) is used to establish a trust between web clients and federation server proxies, to sign security tokens, and to decrypt security tokens.
 
-    Learn more at [Certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641701(v=ws.10)).
+    Learn more at [Certificates](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641701(v=ws.10)).
 
 - **Exchange federation**: A self-signed certificate is used to create a secure connection between the on-premises Exchange servers and the Azure Active Directory authentication system.
 
-    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+    Learn more at [Sharing](../ExchangeServer2013/sharing-exchange-2013-help.md).
 
 - **Exchange services**: Certificates issued by a trusted third-party CA are used to help secure Secure Sockets Layer (SSL) communication between Exchange servers and clients. Services that use certificates include Outlook on the web, Exchange ActiveSync, Outlook Anywhere, and secure message transport.
 
@@ -57,7 +57,7 @@ Whether you choose to use the same certificate for all services or dedicate a ce
 
 We recommend that you use a dedicated third-party certificate for any optional AD FS server, another certificate for the Exchange services for your hybrid deployment, and if needed, another certificate on your Exchange servers for other needed services or features. The on-premises federation trust configured as part of federated sharing in a hybrid deployment uses a self-signed certificate by default. Unless you have specific requirements, there's no need to use a third-party certificate with the federation trust configured as part of a hybrid deployment.
 
-The services that are installed on a single server may require that you configure multiple fully qualified domain names (FQDNs) for the server. You should purchase a certificate that allows for the maximum required number of FQDNs. Certificates consist of the subject (also called a principal name) and one or more subject alternative names (SAN). The subject name is the FQDN that the certificate is issued to and should use the primary SMTP domain that is shared between the on-premises and Exchange Online organizations. SANs are additional FQDNs that can be added to a certificate in addition to the subject name. If you need a certificate to support five FQDNs, purchase a certificate that allows for five domains to be added to the certificate: one subject name and four SANs.
+The services that are installed on a single server may require that you configure multiple fully qualified domain names (FQDNs) for the server. You should purchase a certificate that allows for the maximum required number of FQDNs. Certificates consist of the subject (also called a principal name) and one or more subject alternative names (SAN). The subject name is the primary SMTP domain that is shared between the on-premises and Exchange Online organizations. SANs are additional FQDNs that can be added to a certificate in addition to the subject name. If you need a certificate to support five FQDNs, purchase a certificate that allows for five domains to be added to the certificate: one subject name and four SANs.
 
 The following table outlines the minimum suggested FQDNs that should be included on certificates configured for use in a hybrid deployment.
 
@@ -66,3 +66,5 @@ The following table outlines the minimum suggested FQDNs that should be included
 |Primary shared SMTP domain|contoso.com|Subject name|
 |Autodiscover|Label that matches the external Autodiscover FQDN of your Exchange 2013 Client Access server, such as autodiscover.contoso.com|Subject alternative name|
 |Transport|Label that matches the external FQDN of your Edge Transport servers, such as edge.contoso.com|Subject alternative name|
+
+If you don't have to relay email messages to the Internet through Office 365, you can use the transport service name in the subject name instead of the primary shared SMTP domain. For more information, see [Configure a certificate-based connector to relay email messages through Office 365](/exchange/troubleshoot/email-delivery/office-365-notice).

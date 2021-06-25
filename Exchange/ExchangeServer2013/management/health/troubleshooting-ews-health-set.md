@@ -67,7 +67,7 @@ EWS is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-This probe performs a full EWS logon from the Client Access server (CAS) to a Mailbox server by using a monitoring account. This probe calls the **GetFolder** method on EWS. For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
+This probe performs a full EWS logon from the Client Access server (CAS) to a Mailbox server by using a monitoring account. This probe calls the **GetFolder** method on EWS. For more information about probes and monitors, see [Server health and performance](../../server-health-and-performance-exchange-2013-help.md).
 
 ## Common issues
 
@@ -203,6 +203,6 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## For More Information
 
-[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
+[Exchange PowerShell](/powershell/exchange/)
 
-[What's new in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help)
+[What's new in Exchange 2013](../../what-s-new-in-exchange-2013-exchange-2013-help.md)

@@ -44,4 +44,4 @@ Remove-OfflineAddressBook -Identity "My OAB"
 
 Type Y to confirm that you want to remove the OAB, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/remove-offlineaddressbook).
+For detailed syntax and parameter information, see [Remove-OfflineAddressBook](/powershell/module/exchange/remove-offlineaddressbook).

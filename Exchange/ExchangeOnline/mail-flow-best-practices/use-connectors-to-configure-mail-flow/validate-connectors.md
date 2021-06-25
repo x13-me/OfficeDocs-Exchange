@@ -3,7 +3,7 @@ localization_priority: Normal
 description: If your organization has its own email server (also called on-premises server), you must set up connectors to enable mail flow between Microsoft 365 or Office 365 and your email server. For mail flow to work correctly, your connectors must be validated and turned on. Connector validation runs as part of the connector setup process. This article helps if you want to validate your connectors at a different time, or if you want to understand more about the process. Use built-in connector validation to test whether a connector is set up correctly and fix any mail flow issues before you turn the connector on.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7805c2f9-302d-4409-a57f-2b4d8296cd5e
 ms.reviewer: 
 f1.keywords:
@@ -44,7 +44,9 @@ If your organization has its own email server (also called on-premises server), 
 6. For each connector, check whether the connector is turned on. If a connector that you need for mail flow isn't turned on, under **Status** choose **Turn it on**.
 
 > [!NOTE]
-> If you continue to have mail flow issues after validating a connector, check whether you have set up multiple connectors that might apply in a single scenario. For example, problems can occur if you have more than one connector set up for mail flow from Microsoft 365 or Office 365 to your email server. If you need multiple connectors for mail flow from Microsoft 365 or Office 365 to your email server (or to a partner), make sure you validate and turn on each connector. > If you want to change a connector, Microsoft 365 or Office 365 uses the existing connector settings for mail flow until you save your changes. For more information, see [Change a connector that Microsoft 365 or Office 365 is using for mail flow](set-up-connectors-to-route-mail.md#change-a-connector-that-microsoft-365-or-office-365-is-using-for-mail-flow)
+> If you continue to have mail flow issues after validating a connector, check whether you have set up multiple connectors that might apply in a single scenario. For example, problems can occur if you have more than one connector set up for mail flow from Microsoft 365 or Office 365 to your email server. If you need multiple connectors for mail flow from Microsoft 365 or Office 365 to your email server (or to a partner), make sure you validate and turn on each connector.
+>
+> If you want to change a connector, Microsoft 365 or Office 365 uses the existing connector settings for mail flow until you save your changes. For more information, see [Change a connector that Microsoft 365 or Office 365 is using for mail flow](set-up-connectors-to-route-mail.md#change-a-connector-that-microsoft-365-or-office-365-is-using-for-mail-flow)
 
 ## See also
 

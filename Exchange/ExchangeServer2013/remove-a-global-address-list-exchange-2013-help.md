@@ -44,4 +44,4 @@ Remove-GlobalAddressList -Identity "Fourth Coffee" -DomainController ad-server.f
 
 To confirm that you want to remove the GAL, type Y, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/remove-globaladdresslist).
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](/powershell/module/exchange/remove-globaladdresslist).

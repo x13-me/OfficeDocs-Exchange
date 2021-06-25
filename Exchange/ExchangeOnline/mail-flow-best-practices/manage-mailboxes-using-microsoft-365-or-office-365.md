@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.reviewer: 
 title: Manage all mailboxes and mail flow using Microsoft 365 or Office 365
@@ -45,11 +45,11 @@ To set up hosted mail flow, we recommend using the Microsoft 365 setup wizard. T
 
 The Microsoft 365 setup wizard walks you through the following steps.
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).)
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).)
 
    The following DNS records control mail flow:
 
@@ -63,7 +63,7 @@ The Microsoft 365 setup wizard walks you through the following steps.
    v=spf1 include:spf.protection.outlook.com -all
    ```
 
-For a full list of setup instructions, check out [Set up Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/setup/setup) or [Deploy Office 365 Enterprise for your organization](https://docs.microsoft.com/office365/enterprise/setup-overview-for-enterprises).
+For a full list of setup instructions, check out [Set up Microsoft 365 for business](/microsoft-365/admin/setup/setup) or [Deploy Office 365 Enterprise for your organization](/office365/enterprise/setup-overview-for-enterprises).
 
 ## See also
 <a name="BKMK_HostedMailFlow"> </a>

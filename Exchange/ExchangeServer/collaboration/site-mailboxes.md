@@ -24,11 +24,12 @@ The *site mailbox*, first introduced in Exchange 2013, is a solution for this pr
 
 Site mailboxes require Exchange 2016 or later and SharePoint Server 2013 or later integration and configuration. For more information about how to configure your Exchange Server organization to work with your SharePoint organization, see the following topics:
 
-- [Configure site mailboxes in SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-site-mailboxes-in-sharepoint).
+- [Configure site mailboxes in SharePoint Server](/SharePoint/administration/configure-site-mailboxes-in-sharepoint).
 
 - [Plan Exchange Server integration with SharePoint and Skype for Business](../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md)
 
 For more information about collaboration features in Exchange Server, see [Collaboration](collaboration.md).
+
 
 ## How do site mailboxes work?
 <a name="howwork"> </a>
@@ -48,7 +49,7 @@ Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cm
 |MaxReceiveSize|The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.|36 MB|
 |ProhibitSendReceiveQuota|The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.|5 GB|
 
-For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](https://docs.microsoft.com/exchange/manage-site-mailbox-provisioning-policies-exchange-2013-help).
+For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](../../ExchangeServer2013/manage-site-mailbox-provisioning-policies-exchange-2013-help.md).
 
 ## Lifecycle policy and retention
 <a name="policies"> </a>

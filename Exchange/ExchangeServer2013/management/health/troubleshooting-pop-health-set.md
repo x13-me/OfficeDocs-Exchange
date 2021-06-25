@@ -115,7 +115,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This monitor alert is typically issued on Mailbox servers.
 
-1. Restart the POP3 back-end service. For more information, see [Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help).
+1. Restart the POP3 back-end service. For more information, see [Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -141,7 +141,7 @@ This monitor alert is typically issued on Mailbox servers.
 
 This monitor alert is typically issued on CA servers (CAS).
 
-1. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help).
+1. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -181,13 +181,13 @@ This monitor alert is typically issued on CA servers (CAS).
    Set-PopSettings -server <CAS server name> -ProtocolLoggingEnabled $false
    ```
 
-7. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help).
+7. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md).
 
 8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## PopProxyTestMonitor recovery actions
 
-1. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help).
+1. Restart the POP3 service on the servers that are running the CAS role. For more information, see [Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -201,7 +201,7 @@ This monitor alert is typically issued on CA servers (CAS).
 
 This monitor alert is typically issued on CA or Mailbox servers.
 
-1. Restart the POP3 service on the CA or Mailbox servers. For more information, see [Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help).
+1. Restart the POP3 service on the CA or Mailbox servers. For more information, see [Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md).
 
 2. Wait 10 minutes to see whether the monitor stays healthy. After 10 minutes, run the following command (the example uses server1.contoso.com).
 
@@ -239,6 +239,6 @@ This monitor alert is typically issued on CA or Mailbox servers.
 
 ## For More Information
 
-[Start and stop the POP3 services](https://docs.microsoft.com/exchange/start-and-stop-the-pop3-services-exchange-2013-help)
+[Start and stop the POP3 services](../../start-and-stop-the-pop3-services-exchange-2013-help.md)
 
-[Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-PopConnectivity)
+[Test-PopConnectivity](/powershell/module/exchange/Test-PopConnectivity)

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 ms.reviewer: 
 f1.keywords:
@@ -50,11 +50,26 @@ The send permissions that someone has on another user's mailbox are important wh
 > [!TIP]
 > Managers might have multiple assistants with different levels of permissions. In the example above, while Rob may be able to send messages on behalf of Mary, she could have another assistant that can Send as Mary. If this was the case, Mary's IT department could do the steps for both "Send as" and "Send on behalf" permissions.
 
+## Use the new EAC to automatically save sent items in the delegator's mailbox
+
+1. In the new EAC, navigate to **Recipients > Mailboxes**.
+   
+2. In the list of user mailboxes, click the mailbox that you want to configure the sent items to be saved for the delegator. A display pane is shown for the selected user mailbox.
+   
+3. Under **Mailbox settings**, click **Manage mailbox delegation**.
+
+4. In the **Manage mailbox delegation** settings, do the following.
+    1. In the **Send on behalf** row, click **Edit**.
+    1. Click **Add permissions**.
+    1. Check the checkbox of the person whom you want to configure as the delegate.
+  
+ 5. Click **Save** to save your change. A message Manage mailbox delegation settings updated successfully is displayed. Click **Close** to exit.
+
 ## How do I set up a mailbox to save messages "Sent as" a manager when they're sent by an assistant?
 
-When you do these steps, any messages **sent as** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
+When you do these steps, any messages **sent as** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 2. Get the email address of the manager.
 
@@ -77,9 +92,9 @@ That's it! The manager will now automatically get a copy of any messages sent by
 
 ## How do I set up a mailbox to save messages "Sent on behalf" of a manager when they're sent by an assistant?
 
-When you do these steps, any messages **sent on behalf** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
+When you do these steps, any messages **sent on behalf** the manager whose mailbox you're configuring, will be saved to the manager's Sent Items folder. To set this up, just follow the steps below. You'll need to use Windows PowerShell to complete the steps; if you haven't used it before, go to [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) for instructions on how to get connected. There's a great video too!
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 2. Get the email address of the manager.
 

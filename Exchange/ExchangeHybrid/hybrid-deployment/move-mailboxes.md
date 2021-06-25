@@ -25,30 +25,30 @@ description: "With an Exchange-based hybrid deployment, you can choose to either
 
 With an Exchange-based hybrid deployment, you can choose to either move on-premises Exchange mailboxes to the Exchange Online organization or move Exchange Online mailboxes to the Exchange organization. When you move mailboxes between the on-premises and Exchange Online organizations, you use migration batches to perform the remote mailbox move request. This approach allows you to move existing mailboxes instead of creating new user mailboxes and importing user information. This approach is different than migrating user mailboxes from an on-premises Exchange organization to Exchange Online as part of a complete Exchange migration to the cloud. The mailbox moves discussed in this topic are part of administrative Exchange management in a longer-term coexistence relationship between on-premises Exchange and Exchange Online organizations.
 
-For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
+For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../../ExchangeOnline/mailbox-migration/mailbox-migration.md).
 
 > [!IMPORTANT]
 > You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md).
 
 > [!IMPORTANT]
-> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-ummailboxpolicy).
+> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](/powershell/module/exchange/set-ummailboxpolicy).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 10 minutes to configure the migration batch, but total time to complete the migration depends on the number of mailboxes included in each migration batch.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/recipient-permissions) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions" section in the [Recipients permissions](../../ExchangeServer/permissions/feature-permissions/recipient-permissions.md) topic.
 
 - Hybrid deployment is configured between your on-premises and Exchange Online organizations.
 
 - If you're running Exchange 2013, make sure the Mailbox Replication Proxy Service (MRSProxy) is enabled on your on-premises Exchange 2013 Client Access servers.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../ExchangeOnline/accessibility/keyboard-shortcuts-in-admin-center.md).
 
 - The Microsoft 365 or Office 365 Exchange license must be assigned only after the migration is complete. You then have 30 days to assign the license.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create a migration endpoint
 <a name="bkmk_create"> </a>
@@ -95,7 +95,7 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 6. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
 
     > [!NOTE]
-    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://docs.microsoft.com/exchange/mail-flow/message-rate-limits).
+    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](../../ExchangeServer/mail-flow/message-rate-limits.md).
 
 7. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Use the down arrow ![Down Arrow Icon](../media/ITPro_EAC_DownArrowIcon.gif) to select the **Target delivery domain for the mailboxes that are migrating to Office 365**. In most hybrid deployments, this is the primary SMTP domain used for the Exchange Online organization mailboxes. For example, contoso.mail.onmicrosoft.com. Verify that the **Move primary mailbox along with archive mailbox** option is selected, and then click **Next**.
 
@@ -120,7 +120,7 @@ You can use the remote move migration wizard in the EAC in Exchange Online to mo
 5. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
 
     > [!NOTE]
-    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the properties of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](https://docs.microsoft.com/exchange/mail-flow/message-rate-limits).
+    > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the properties of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](../../ExchangeServer/mail-flow/message-rate-limits.md).
 
 6. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Then enter the target delivery domain in the **Target delivery domain for the mailboxes that are migrating to Office 365** field. In most hybrid deployments, this is the primary SMTP domain used for both on-premises and Exchange Online organization mailboxes. For example, contoso.com.
 

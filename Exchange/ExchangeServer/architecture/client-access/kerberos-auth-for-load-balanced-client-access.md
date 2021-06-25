@@ -25,7 +25,9 @@ In order for you to use Kerberos authentication with load-balanced Mailbox serve
 All Exchange servers that run Client Access services that share the same namespaces and URLs must use the same *alternate service account credential* or (ASA credential). In general, it's sufficient to have a single account for a forest for each version of Exchange.
 
 > [!IMPORTANT]
-> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016. <br/><br/> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
+> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016.
+>
+> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
 
 > [!NOTE]
 > Group Managed Service Accounts (gMSA) are not supported in on-premises Exchange Server environments and thus cannot be used in this scenario.
@@ -78,11 +80,11 @@ When you set up the ASA credential, keep these guidelines in mind:
 
    Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://docs.microsoft.com/powershell/module/activedirectory/new-adcomputer).
+For more information about these cmdlets, see [Import-Module](/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](/powershell/module/activedirectory/new-adcomputer).
 
 ## Cross-forest scenarios
 
-If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
+If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
 
 ## Identify the Service Principal Names to associate with the ASA credential
 
@@ -107,7 +109,6 @@ If you have a single Active Directory site, your environment may resemble the on
 Based on the FQDNs that are used by the internal Outlook clients in the preceding figure, you have to associate the following SPNs with the ASA credential:
 
 - http/mail.corp.tailspintoys.com
-
 - http/autodiscover.corp.tailspintoys.com
 
 ### Multiple Active Directory sites
@@ -119,13 +120,11 @@ If you have multiple Active Directory sites, your environment may resemble the o
 Based on the FQDNs that are used by the Outlook clients in the preceding figure, you would have to associate the following SPNs with the ASA credential that is used by the Mailbox servers running Client Access services in ADSite 1:
 
 - http/mail.corp.tailspintoys.com
-
 - http/autodiscover.corp.tailspintoys.com
 
 You would also have to associate the following SPNs with the ASA credential that is used by the Mailbox servers running Client Access services in ADSite 2:
 
 - http/mailsdc.corp.tailspintoys.com
-
 - http/autodiscoversdc.corp.tailspintoys.com
 
 ## Configure and then verify configuration of the ASA credential on each server running Client Access services
@@ -135,10 +134,9 @@ After you've created the account, you have to verify that the account has replic
 You configure the ASA credential by using the Exchange Management Shell as described in one of these procedures:
 
 - Deploy the ASA credential to the first Exchange server running Client Access services
-
 - Deploy the ASA credential to subsequent Exchange servers running Client Access services
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://docs.microsoft.com/exchange/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](../../../ExchangeServer2013/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
 
@@ -258,7 +256,7 @@ The following is an example of the output that's shown when you run the Get-Clie
 Name                                 : CAS-1
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: <Not set>
-	                                       ...
+                                          ...
 ```
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and an ASA credential was previously set. The previous ASA credential and the date and time it was set are returned.
@@ -267,7 +265,7 @@ The following is an example of the output that's shown when you run the Get-Clie
 Name                                 : CAS-3
 AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
                                        Previous: 7/15/2015 12:58:35 PM, tailspin\oldSharedServiceAccountName$
- 	                                       ...
+                                          ...
 ```
 
 ## Associate Service Principal Names (SPNs) with the ASA credential

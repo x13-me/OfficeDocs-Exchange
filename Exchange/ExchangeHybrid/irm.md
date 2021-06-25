@@ -26,15 +26,15 @@ Information Rights Management (IRM) helps you to protect against leakage of sens
 
 IRM uses Active Directory Rights Management Services (AD RMS), which is a component of Windows Server 2008 and later. AD RMS allows users to create rights-protected content, such as email messages and attachments, and then control how that content is used, and to whom it's distributed. Users can specify templates that determine how content can be used. For example, a user may specify that an email message can't be forwarded to other recipients or that information in the message can't be copied.
 
-Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638140(v=exchg.141)).
+Learn more about IRM in Exchange 2010 at: [Understanding Information Rights Management](/previous-versions/office/exchange-server-2010/dd638140(v=exchg.141)).
 
-Learn more about IRM in Exchange Server at [Information Rights Management](https://docs.microsoft.com/Exchange/policy-and-compliance/information-rights-management).
+Learn more about IRM in Exchange Server at [Information Rights Management](../ExchangeServer/policy-and-compliance/information-rights-management.md).
 
-Learn more about AD RMS at [Active Directory Rights Management Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771627(v=ws.10)).
+Learn more about AD RMS at [Active Directory Rights Management Services Overview](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771627(v=ws.10)).
 
 ## Differences between IRM in Exchange On-premises and Exchange Online
 
-IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Information Rights Management](https://docs.microsoft.com/Exchange/policy-and-compliance/information-rights-management))
+IRM functionality that's available in your on-premises Exchange organization may be different than the functionality available in your Exchange Online organization. The following table provides a summary of features and functionality available in each organization. (Learn more about these features at: [Information Rights Management](../ExchangeServer/policy-and-compliance/information-rights-management.md))
 
 **Available IRM features**
 
@@ -89,7 +89,7 @@ The Exchange Online organization provides several additional IRM-related feature
 
 IRM in Exchange relies on AD RMS being deployed in the Active Directory forest in which the Exchange server resides. AD RMS configuration isn't automatically synchronized between the on-premises and Exchange Online organizations. You must manually export the AD RMS configuration, known as a trusted publishing domain (TPD), from your on-premises AD RMS server, and import that configuration into the Exchange Online organization. The TPD contains the AD RMS configuration, including templates, which the Exchange Online organization needs to use IRM.
 
-Learn more at [AD RMS Trusted Publishing Domain Considerations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772677(v=ws.10)).
+Learn more at [AD RMS Trusted Publishing Domain Considerations](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772677(v=ws.10)).
 
 In addition to applying your on-premises AD RMS configuration to the Exchange Online organization, you must ensure that your AD RMS servers can be contacted by Outlook and ActiveSync clients outside of your on-premises network. You must do this if you want these clients to access rights-protected messages outside of your on-premises network.
 
@@ -111,13 +111,13 @@ If you use IRM in your on-premises Exchange organization and you want your Excha
 
 ### How do I configure on-premises AD RMS servers?
 
-To configure IRM in a hybrid deployment, you need to use Windows PowerShell to access your on-premises AD RMS server. Learn more at: [Using Windows PowerShell to Administer AD RMS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221079(v=ws.10))
+To configure IRM in a hybrid deployment, you need to use Windows PowerShell to access your on-premises AD RMS server. Learn more at: [Using Windows PowerShell to Administer AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221079(v=ws.10))
 
 Do the following to export trusted publishing domain (TPD) data from your on-premises AD RMS server and then configure access to the AD RMS server for external clients.
 
-1. Export TPD data from your on-premises organization. Learn more at: [Exporting a Trusted Publishing Domain](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221062(v=ws.10))
+1. Export TPD data from your on-premises organization. Learn more at: [Exporting a Trusted Publishing Domain](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221062(v=ws.10))
 
-2. Configure access to AD RMS servers from external clients. Learn more at: [Adding an Extranet Cluster URL](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221093(v=ws.10))
+2. Configure access to AD RMS servers from external clients. Learn more at: [Adding an Extranet Cluster URL](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee221093(v=ws.10))
 
 ### How do I enable IRM in the Exchange Online organization?
 
@@ -176,4 +176,4 @@ Run the following command in the Exchange Online organization:
 Get-RMSTemplate
 ```
 
-Learn more at: [Information Rights Management in Outlook Web App](https://docs.microsoft.com/exchange/information-rights-management-in-outlook-web-app-exchange-2013-help)
+Learn more at: [Information Rights Management in Outlook Web App](../ExchangeServer2013/information-rights-management-in-outlook-web-app-exchange-2013-help.md)
