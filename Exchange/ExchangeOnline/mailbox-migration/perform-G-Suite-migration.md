@@ -132,8 +132,8 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    - People API
 
-   > [!NOTE]
-   > The Google Contacts API is deprecated. For more information, see [Google Contacts API](https://developers.google.com/contacts/).
+   > [!Important]
+   > The Google Contacts API is deprecated. For more information, see [Google Contacts API](https://developers.google.com/contacts/). </br></br>While transitioning from the Contacts API to the People API, tenants running migrations may see errors indicating "ContactsSyncClientException"‎ with a status of "BadRequest". Simply resuming should allow the migration to continue.
 
 ## Grant access to the service account for your Google tenant
 
