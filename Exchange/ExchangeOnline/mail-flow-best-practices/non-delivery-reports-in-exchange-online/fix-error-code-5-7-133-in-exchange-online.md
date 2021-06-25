@@ -40,30 +40,29 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Allow all internal and external senders to send messages to this group
 
-**In New Exchange admin center (EAC)**
+#### New Exchange admin center (EAC)
 
- 1. Navigate to **Recipients** \> **Groups**.
-  
- 2. Select a group from the list and click it. The group properties screen appears.
+1. Go to **Recipients** \> **Groups**.
+
+2. Select a group from the list and click it. The group properties screen appears.
+
+   :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
+
+3. Click the **Settings** tab.
+
+   :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
+
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
  
-:::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
-
- 3. Click the **Settings** tab.
+5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
  
-:::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
+   :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
 
- 4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
- 
- 5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
- 
-:::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
- 
+6. Click **Save changes**.
 
- 6. Click **Save changes**.
+#### Classic EAC
 
- **In Classic EAC**
-
- 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
    ![Finding groups in the Exchange admin center](../../media/8b57ae07-1a2c-4cb7-94a7-70f898be6276.png)
 
@@ -87,13 +86,13 @@ Instead of allowing all external senders to send messages to this group, you can
 
 To configure the group's allowed senders list, perform the following steps:
 
-**For New EAC**
+#### New EAC
 
-1. Navigate to **Recipients** \> **Groups**.
+1. Go to **Recipients** \> **Groups**.
 
 2. Select a group from the list and click it. The group properties screen appears.
 
-:::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
+   :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
 
 3. Click the **Settings** tab.
 
@@ -103,20 +102,18 @@ To configure the group's allowed senders list, perform the following steps:
 
 6. Under **Specified senders**, click inside the text box. The list of senders (internal and external) is displayed.
 
-:::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
+   :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
 
 7. Choose the senders you want to add to the senders list, and click **Save changes**.
 
-:::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a chosen sender is added to the senders group":::
+   :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a chosen sender is added to the senders group":::
 
-**For Classic EAC**   
+#### Classic EAC
 
 1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 2. In the group properties dialog box that opens, go to **Delivery management** and configure the following settings:
-
    - Select **Senders inside and outside of my organization**.
-
    - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select the external senders and the "all internal users" group. 
    - Add the external senders and the "all internal users" group to the allowed sender's list.
    - When you're finished, click **OK**.
