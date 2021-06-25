@@ -55,10 +55,10 @@ For information about when to configure remote domains, descriptions of the avai
 
 ## Create and configure remote domains
 
-**Notes**:
-
-- If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
-- Once you've created a remote domain, you can't change or replace the domain inside the remote domain. Instead, create and configure a new remote domain with the new domain name.
+> [!NOTE]
+> 
+> - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
+> - Once you've created a remote domain, you can't change or replace the domain inside the remote domain. Instead, create and configure a new remote domain with the new domain name.
 
 ### Use the EAC to create and configure a remote domain
 
@@ -120,11 +120,11 @@ The new remote domain is created and added to the list.
 
 ## Remove remote domains
 
-**Notes:**
-
-- You can't remove the default remote domain.
-- When you remove a remote domain, the default remote domain settings will then apply to messages sent to that domain.
-- Removing a remote domain doesn't disable mail flow to the remote domain.
+> [!NOTE]
+> 
+> - You can't remove the default remote domain.
+> - When you remove a remote domain, the default remote domain settings will then apply to messages sent to that domain.
+> - Removing a remote domain doesn't disable mail flow to the remote domain.
 
 ### Use the EAC to remove a remote domain
 
