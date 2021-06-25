@@ -26,7 +26,11 @@ To create a room mailbox, you need to be an administrator who's a member of eith
 
 If you want to grant someone access to a room mailbox so they can directly manage its calendar (for example, an assistant who needs to make room for an executive meeting), you can do so using the instructions in [Manage permissions for recipients](mailbox-permissions.md). After a user's been granted permissions to access a room mailbox, they can open the mailbox using the instructions in [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
-**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting, nor should room mailboxes be accessed directly by users in order to make changes to a meeting. Rooms should only be added to meetings in the Attendee or Location fields. Otherwise you will override the Resource Booking Assistant (RBA), which manages and processes all calendar items sent to the room mailbox, and unexpected errors may occur. If your organization has one or more users who need to manage a room and its mailbox, then assign users to the room as resource delegates for the room mailbox, as described later in this article. When a delegate is assigned, all items sent to the room's mailbox will be directed to the booking delegate, who can then accept or decline from their own Inbox. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
+**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting. Rooms should only be added to meetings by including them in the Attendee or Location fields.  
+
+It is also not recommended to use Full Access permissions to directly manage resource calendars’ response to a meeting invite. In cases where a user needs to manage a resource calendar, the calendar should be directly shared to the user as a shared calendar. The user can accept the sharing invitation to add the calendar to begin managing the room’s meetings. If the room calendar is shared with Delegate permissions, the user will also receive copies of all meeting invitations sent to the room in their own inbox.
+
+Sharing a room calendar to a user does not prevent a room from having the *Auto-accept* setting enabled. If the room calendar is shared and *Auto-accept* is enabled, requests will be accepted by default but the response can always be changed by any user with Editor or Delegate permissions to the room calendar. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
 
 If you want to learn about the types of recipients that are available in Exchange Server, check out [Recipients](recipients.md). For info about another type of resource mailbox, check out [Manage equipment mailboxes](equipment-mailboxes.md).
 
@@ -43,7 +47,8 @@ If you want to learn about the types of recipients that are available in Exchang
 - If you're using room or equipment mailboxes in Microsoft 365 or Office 365, see [Room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes) for more information.
 
 > [!IMPORTANT]
-> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud. > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a room mailbox
 

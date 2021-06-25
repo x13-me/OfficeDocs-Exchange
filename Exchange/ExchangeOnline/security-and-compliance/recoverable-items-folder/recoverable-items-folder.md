@@ -19,7 +19,10 @@ manager: serdars
 
 # Recoverable Items folder in Exchange Online
 
-To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Exchange Online use the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The following Exchange features use the Recoverable Items folder:
+> [!IMPORTANT]
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+
+To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Exchange Online uses the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The following Exchange features use the Recoverable Items folder:
 
 - Deleted item retention
 
@@ -39,7 +42,7 @@ To protect from accidental or malicious deletion and to facilitate discovery eff
 
 ## Terminology
 
-Knowledge of the following terms will help you understand the content in this topic.
+Knowledge of the following terms will help you understand the content in this article.
 
  **Delete**: Describes when an item is deleted from any folder and placed in the Deleted Items default folder.
 
@@ -99,9 +102,9 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 - [Recover deleted items or email messages in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
-Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
+Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this article.
 
-When the deleted item retention period expires, the item is completely removed from Exchange Online.
+When the deleted item retention period expires, the item is removed from Exchange Online.
 
 ### Single item recovery
 
@@ -113,8 +116,8 @@ The following table lists the contents of and actions that can be performed in t
 
 |State of single item recovery|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
 |---|---|---|---|---|
-|Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, with the exception of calendar items, which are purged after 120 days.|
-|Disabled|Yes|No|Yes|Yes. By default, all items are purged after 14 days, with the exception of calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
+|Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days.|
+|Disabled|Yes|No|Yes|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
 |
 
 ### In-Place Hold and Litigation Hold
@@ -136,7 +139,7 @@ The following table lists the contents of and actions that can be performed in t
 |Disabled|Yes|No|Yes|Yes|
 |
 
-To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see the following topics:
+To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see the following articles:
 
 - [In-Place eDiscovery in Exchange Online](../in-place-ediscovery/in-place-ediscovery.md)
 
@@ -163,7 +166,7 @@ When a mailbox is no longer on In-Place Hold or Litigation Hold, copies of modif
 
 ## Recoverable Items mailbox quotas
 
-When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if a Microsoft 365 or Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
+When an item is moved to the Recoverable Items folder, its size is deducted from the mailbox quota and added to the size of the Recoverable Items folder. In Exchange Online, the default limits for the Recoverable Items quota are: a soft limit of 20 GB and a hard limit of 30 GB. However, the quotas for the Recoverable Items folder are automatically increased to 90 GB and 100 GB, respectively, when you place a mailbox on Litigation Hold or In-Place Hold or if a Microsoft 365 or Office 365 retention policy is applied to the mailbox. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](/microsoft-365/compliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
 
 If the Recoverable Items folder for a mailbox reaches the Recoverable Items quota, no more items can be stored in the folder. This impacts mailbox functionality in the following ways:
 
@@ -183,7 +186,7 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to a Mi
 
 - Copy-on-write is only enabled when a mailbox is on In-Place Hold or Litigation Hold.
 
-- If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
+- If users need to recover deleted items from the Recoverable Items folder, point them to the following articles:
 
   - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 

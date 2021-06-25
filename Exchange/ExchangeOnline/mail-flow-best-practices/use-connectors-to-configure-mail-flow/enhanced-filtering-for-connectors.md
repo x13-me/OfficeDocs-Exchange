@@ -52,7 +52,7 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 >
 > - We always recommend that you point your MX record to Microsoft 365 or Office 365 in order to reduce complexity. For example, some hosts might invalidate DKIM signatures, causing false positives. When two systems are responsible for email protection, determining which one acted on the message is more complicated.
 >
-> - The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premises mailboxes (outbound mail) will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](/Office365/SecurityCompliance/eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
+> - The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premises mailboxes (outbound mail) will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](/exchange/standalone-eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
 >
 > - Do not put another scanning service or host _after_ EOP. Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization. When the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](../../../ExchangeHybrid/transport-options.md) should not be used to introduce non-Exchange servers into the mail flow path.  
 
@@ -62,49 +62,43 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 
 - You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Microsoft 365 or Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
 
-- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
+- If you have mail flow rules (also known as transport rules) that set the [SCL to -1](../../security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md) for messages that flow through this connector, you need to [disable those mail flow rules](../../security-and-compliance/mail-flow-rules/manage-mail-flow-rules.md#enable-or-disable-a-mail-flow-rule) after you enable Enhanced Filtering for Connectors.
 
-- To open the Security & Compliance Center, got to <https://protection.office.com>. To go directly to the **Enhanced Filtering for Connectors** page, open <https://protection.office.com/skiplisting>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Enhanced Filtering for Connectors** page, use <https://security.microsoft.com/skiplisting>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - To configure Enhanced Filtering for Connectors, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center).
   - **Organization Management** in [Exchange Online](../../permissions-exo/permissions-exo.md#role-groups).
 
-### Use the Security & Compliance Center to configure Enhanced Filtering for Connectors on an inbound connector
+### Use the Microsoft 365 Defender portal to configure Enhanced Filtering for Connectors on an inbound connector
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Policy**, and then choose **Enhanced Filtering**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **Enhanced filtering**.
 
-2. In the **Enhanced Filtering for Connectors** page that opens, select the inbound connector that you want to configure.
+2. On the **Enhanced Filtering for Connectors** page, select the inbound connector that you want to configure by clicking on the name.
 
-3. In the connector details flyout that opens, configure the following settings:
-
+3. In the connector details flyout that appears, configure the following settings:
    - **IP addresses to skip**: Choose one of the following values:
-        - **Automatically detect and skip the last IP address**: We recommend this value if you have to skip only the last message source.
-        - **Skip these IP addresses that are associated with the connector**: Select this value to configure a list of IP addresses to skip.
+     - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
+     - **Automatically detect and skip the last IP address**: We recommend this value if you have to skip only the last message source.
+     - **Skip these IP addresses that are associated with the connector**: Select this value to configure a list of IP addresses to skip.
 
-          > [!IMPORTANT]
-          >
-          > - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the email systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
-          >
-          > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses. If the previous hop is an email server that's behind a network address translation (NAT) device that assigns private IP addresses, we recommend that you configure NAT to assign a public IP address to the email server.
+       > [!IMPORTANT]
+       >
+       > - Entering the IP addresses of Microsoft 365 or Office 365 is not supported. Do not use this feature to compensate for issues introduced by unsupported email routing paths. Use caution and limit the IP ranges to only the email systems that will handle your own organization's messages prior to Microsoft 365 or Office 365.
+       > - Entering any private IP address defined by RFC 1918 (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16) is not supported. Enhanced Filtering automatically detects and skips private IP addresses. If the previous hop is an email server that's behind a network address translation (NAT) device that assigns private IP addresses, we recommend that you configure NAT to assign a public IP address to the email server.
 
-        - **Disable Enhanced Filtering for Connectors**: Turn off Enhanced Filtering for Connectors on the connector.
-
-   - **Apply to these users**: Choose one of the following values:
+   - If you selected **Automatically detect and skip the last IP address** or **Skip these IP addresses that are associated with the connector**, the **Apply to these users** section appears:
+     - **Apply to entire organization**: We recommend this value after you've tested the feature on a small number of recipients first.
      - **Apply to a small set of users**: Select this value to configure a list of recipient email addresses that Enhanced Filtering for Connectors applies to. We recommend this value as an initial test of the feature.
 
        > [!NOTE]
        >
        > - This value is only affective on the actual email addresses that you specify. For example, if a user has five email addresses associated with their mailbox (also known as _proxy addresses_), you'll need to specify all five of their email addresses here. Otherwise, messages that are sent to the four other email addresses will go through normal filtering.
-       >
        > - In hybrid environments where inbound mail flows through on-premises Exchange, you must specify the *targetAddress* of the *MailUser* object. For example, *michelle@contoso.mail.onmicrosoft.com*.
-       >
        > - This value is only affective on messages where **all** recipients are specified here. If a message contains **any** recipients that aren't specified here, normal filtering is applied to **all** recipients of the message.
-
-     - **Apply to entire organization**: We recommend this value after you've tested the feature on a small number of recipients first.
 
 4. When you're finished, click **Save**.
 
@@ -146,19 +140,18 @@ For detailed syntax and parameter information, see [Set-InboundConnector](/power
 
 The following table describes what connections look like before and after you enable Enhanced Filtering for Connectors:
 
+<br>
+
 ****
 
 |Feature|Before Enhanced Filtering is enabled|After Enhanced Filtering is enabled|
 |---|---|---|
-|**Email domain authentication**|[Implicit](/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
+|**Email domain authentication**|[Implicit](/microsoft-365/security/office-365-security/email-validation-and-authentication#composite-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
 |**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This header is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
 |**X-MS-Exchange-SkipListedInternetSender**|Not available|This header is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
 |
 
-You can view the improvements in filtering and reporting by using the following email security reports in the Security & Compliance Center:
-
-- [Threat Protection Status report](/office365/securitycompliance/view-email-security-reports#threat-protection-status-report)
-- [Spam Detections report](/office365/securitycompliance/view-email-security-reports#spam-detections-report)
+You can view the improvements in filtering and reporting by using the Threat protection status report in the Microsoft 365 Defender portal. For more information, see [Threat protection status report](/microsoft-365/security/office-365-security/view-email-security-reports#threat-protection-status-report).
 
 ## See also
 

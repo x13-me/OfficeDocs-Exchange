@@ -21,7 +21,7 @@ manager: serdars
 # Classic Exchange admin center
 
 > [!IMPORTANT]
-> Check out the new [Exchange Admin Center](https://admin.exchange.microsoft.com)! The experience is modern and better than ever.  Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. Try it now!
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 ## Get to the Classic Exchange admin center
 
@@ -91,8 +91,8 @@ The Centers tile allows you to change from one admin center to another. The Me t
 
 ## Related articles
 
-[Exchange Online](https://docs.microsoft.com/exchange/exchange-online)
+[Exchange Online](/exchange/exchange-online)
 
-[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
 
-[What's new in Exchange admin center](https://docs.microsoft.com/exchange/whats-new)
+[What's new in Exchange admin center](/exchange/whats-new)

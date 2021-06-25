@@ -19,6 +19,8 @@ The **Inbound messages report** and the **Outbound messages report** in the new 
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 The overview section contains the following charts:
 

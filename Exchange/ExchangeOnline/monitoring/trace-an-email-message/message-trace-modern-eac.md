@@ -143,7 +143,7 @@ The available report types are:
 >
 > - Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available to download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before your queued request starts to be processed.
 >
-> - While you can select an Enhanced summary or Extended report for any date/time range, commonly the last four hours of archived data will not yet be available for these two types of reports.
+> - While you can select an Enhanced summary or Extended report for any date/time range, commonly the last 24 hours of archived data will not yet be available for these two types of reports.
 >
 > - The maximum size for a downloadable report is 500 MB. If a downloadable report exceeds 500 MB, you can't open the report in Excel or Notepad.
 
