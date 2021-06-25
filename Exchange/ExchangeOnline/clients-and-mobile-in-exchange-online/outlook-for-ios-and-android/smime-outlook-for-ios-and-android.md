@@ -169,8 +169,8 @@ Outlook for iOS and Android supports accessing public user certificate keys from
 - The LDAP endpoint does not require authentication.
 - The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
 - The LDAP endpoint configuration is supported using the following formats:
-    - ldaps://contoso.com
-    - ldaps://contoso.com:636
+    - <ldaps://contoso.com>
+    - <ldaps://contoso.com:636>
     - contoso.com
     - contoso.com:636
 
