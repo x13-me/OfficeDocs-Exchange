@@ -45,27 +45,27 @@ To open the Classic EAC, click **Classic Exchange admin center** on the left pan
 
 ### Method 1: Allow all internal and external senders to send messages to this mailbox
 
-**In New EAC**
+#### New EAC
 
-1. Navigate to **Recipients** \> **Mailboxes**.
+1. Go to **Recipients** \> **Mailboxes**.
 
 2. Select a user mailbox from the list and click it. The user mailbox properties screen appears.
 
-:::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
+   :::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
 3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
 
-:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage mail flow settings screen":::
+   :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage mail flow settings screen":::
 
 4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
 
 5. Under **Accept messages from**, clear the check box for **Require senders to be authenticated**.
 
-:::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
+   :::image type="content" source="../../media/settings-message-delivery-restrictions.png" alt-text="The screen on which the user can define settings for message delivery restrictions":::
 
 6. Click **Save**.
 
-**In Classic EAC**
+#### Classic EAC
 
 1. In the Classic EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -86,50 +86,50 @@ Instead of allowing all external senders to send messages to this mailbox, you c
 **Notes**:
 
 - To add an external sender to a mailbox's allowed senders list, you must first create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
-
 - To add everyone in your organization to a mailbox's allowed sender's list, you can create a [distribution group](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md) or a [dynamic distribution group](../../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) that contains everyone in your organization. After you create this group, you can add it to the mailbox's allowed senders list.
-
 - The mailbox's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
 To configure the mailbox's allowed senders list, do the following steps:
 
-**In New EAC**
+#### New EAC
 
-1. Navigate to **Recipients** \> **Mailboxes**.
+1. Go to **Recipients** \> **Mailboxes**.
 
 2. Select a user mailbox from the list and click it. The user mailbox properties screen appears.
 
-:::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
+   :::image type="content" source="../../media/user-mailboxes-properties.png" alt-text="The screen displaying the properties of the chosen user mailbox":::
 
 3. Under **Mail flow settings**, click **Manage mail flow settings**. The **Manage mail flow settings** screen appears.
 
-:::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage Mail Flow Settings screen":::
+   :::image type="content" source="../../media/manage-mail-flow-settings-screen.png" alt-text="The Manage Mail Flow Settings screen":::
 
 4. In the **Message delivery restriction** pane, click **Edit**. The **Message delivery restrictions** screen appears.
 
 5. Under **Accept messages from**:
-  - Clear the check box for **Require senders to be authenticated**.
-  - Select **Selected senders**.
-  
-:::image type="content" source="../../media/mdr-screen-select-senders.png" alt-text="The Message delivery restrictions screen on which specific people are configured as senders":::
 
-  - Click **+ Add sender**. The **Accept messages from** screen appears.
+   - Clear the check box for **Require senders to be authenticated**.
 
-:::image type="content" source="../../media/accept-messages-from-screen.png" alt-text="The screen displaying the Accept Messages From pane":::
+   - Select **Selected senders**.
+
+     :::image type="content" source="../../media/mdr-screen-select-senders.png" alt-text="The Message delivery restrictions screen on which specific people are configured as senders":::
+
+   - Click **+ Add sender**. The **Accept messages from** screen appears.
+
+    :::image type="content" source="../../media/accept-messages-from-screen.png" alt-text="The screen displaying the Accept Messages From pane":::
 
   - Check the check boxes of the internal-senders group and the specific external users you want to add.
 
   - Click **Confirm**.
 
-:::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="The screen on which the senders of email messages are set":::
+    :::image type="content" source="../../media/configuring-accept-messages-from-settings.png" alt-text="The screen on which the senders of email messages are set":::
 
-The **Message delivery restrictions** screen reappears.
+    The **Message delivery restrictions** screen reappears.
 
 6. Click **Save**.
 
-:::image type="content" source="../../media/mdr-screen-after-adding-sender.png" alt-text="The screen on which the added senders are saved into the group":::
+   :::image type="content" source="../../media/mdr-screen-after-adding-sender.png" alt-text="The screen on which the added senders are saved into the group":::
 
-**In Classic EAC**
+#### Classic EAC
 
 1. In the Classic EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -138,9 +138,7 @@ The **Message delivery restrictions** screen reappears.
 2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
 
 3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
-
    - Clear the check box for **Require that all senders are authenticated**.
-
    - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group.
    - Add the external senders and the "all internal users" group.
    - When you're finished, click **OK**.
