@@ -37,11 +37,8 @@ This information also applies to error codes 5.7.0 through 5.7.999 in Exchange O
 Typically, this error indicates a security setting in your organization or the recipient's organization is preventing your message from reaching the recipient. For example:
 
 - You don't have permission to send to the recipient.
-
 - The recipient is a group, and you don't have permission to send to the group or one of its subgroups.
-
 - You don't have permission to send email through an email server that's between you and the recipient.
-
 - Your message was routed to the wrong email server.
 
 ## I got this bounce message. How do I fix this issue?
@@ -87,9 +84,7 @@ If a message sender received this NDR when they attempted to send a message to y
    To resolve the issue for the sender, approve their message, or add them to the group.
 
 - **Managing distribution groups**
-
   - [Configure moderated recipients in Exchange Online](../../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md)
-
   - [Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 
 ## I'm an email admin. How can I fix this issue?
@@ -108,29 +103,27 @@ When the recipient is a mail-enabled public folder in your Exchange Online organ
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
-**In New Exchange admin center (EAC)**
+#### New EAC
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center).
 
-2. Navigate to **Public folders** \> **Public folders**.
+2. Go to **Public folders** \> **Public folders**.
 
 3. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+   :::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
 
 4. Click **Mail flow settings**.
 
 5. Under **Message Delivery Restrictions** \> **Accept messages from**, perform the following tasks:
-
-    - Clear the check box for **Require that all senders are authenticated**.
-
-    - Select **All senders**.
+   - Clear the check box for **Require that all senders are authenticated**.
+   - Select **All senders**.
    
-:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder":::
+   :::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder":::
     
 6. Click **Save**.
 
-**In Classic EAC**
+#### Classic EAC
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center).
 
@@ -140,9 +133,9 @@ To configure the public folder to accept messages from external senders, follow 
 
 3. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
-    - Clear the check box for **Require that all senders are authenticated**.
+   - Clear the check box for **Require that all senders are authenticated**.
 
-    - Select **All senders**.
+   - Select **All senders**.
 
    ![Public folder delivery restrictions to help fix DSN 5.7.135](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
 
@@ -152,7 +145,7 @@ To configure the public folder to accept messages from external senders, follow 
 
 In this case, the NDR the sender receives would include information in the **Diagnostics for administrators** section similar to the following information:
 
-   `5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
+`5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
 
 To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com. Also see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).
 
@@ -161,9 +154,7 @@ To remove the restriction on the sender's source email system, forward the NDR m
 If your domain isn't fully enrolled in Microsoft 365 or Office 365, try the following steps:
 
 - Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
-
 - For information about adding your domain to Microsoft 365 or Office 365, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
-
 - To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
 ### Your domain's MX record has a problem
