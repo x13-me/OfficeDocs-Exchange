@@ -28,7 +28,7 @@ The following table shows the default values for common settings:
 
 ****
 
-|**Setting**|**Default**|
+| Setting | Default |
 |---|---|
 |Out of office replies|Send external out-of-office replies to people on the remote domain.|
 |Automatic replies|Allow automatic replies or automatically forwarded messages to be sent to people on the remote domain.|
