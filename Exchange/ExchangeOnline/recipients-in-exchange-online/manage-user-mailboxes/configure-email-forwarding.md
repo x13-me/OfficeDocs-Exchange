@@ -8,7 +8,7 @@ ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Configure email forwarding for a mailbox
+title: Configure email forwarding for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Configure email forwarding for a mailbox
+# Configure email forwarding for a mailbox in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Email forwarding lets you set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 
@@ -34,7 +34,7 @@ You can use the new Exchange admin center (EAC) to set up email forwarding to a 
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
-1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the new EAC, go to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click the mailbox that you want to configure mail forwarding for. A display pane is shown for the selected user mailbox.
 
@@ -56,7 +56,7 @@ You can use the Classic Exchange admin center (EAC) to set up email forwarding t
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
-1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
 2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
 
@@ -64,7 +64,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 4. Under **Mail Flow**, select **View details** to view or change the setting for forwarding email messages.
 
-    On this page, you can set the maximum number of recipients that the user can send a message to. For on-premises Exchange organizations, the recipient limit is unlimited. For Exchange Online organizations, the limit is 500 recipients.
+   On this page, you can set the maximum number of recipients that the user can send a message to. For on-premises Exchange organizations, the recipient limit is unlimited. For Exchange Online organizations, the limit is 500 recipients.
 
 5. Check the **Enable forwarding** check box, and then click or tap **Browse**.
 
@@ -73,15 +73,25 @@ You need to be assigned permissions before you can perform this procedure or pro
 What if you want to forward mail to an address outside your organization? Or forward mail to multiple recipients? You can do that, too!
 
 - **External addresses**: Create a mail contact and then, in the steps above, select the mail contact on the **Select Recipient** page. Need to know how to create a mail contact? Check out [Manage mail contacts](../../recipients-in-exchange-online/manage-mail-contacts.md).
-
 - **Multiple recipients**: Create a distribution group, add recipients to it, and then in the steps above, select the mail contact on the **Select Recipient** page. Need to know how to create a mail contact? Check out [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
+
+## How do you know this worked?
+
+To verify that you've successfully configured email forwarding, do one of the following:
+
+1. In the EAC, go to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+
+3. On the mailbox properties page, click or tap **Mailbox Features**.
+
+4. Under **Mail Flow**, click or tap **View details** to view the mail forwarding settings.
 
 ## Additional information
 
 This article is for admins. If you want to forward your own email to another recipient, check out the following articles:
 
 - [Forward email to another email account](https://support.microsoft.com/office/ecafbc06-e812-4b9e-a7af-5074a9c7abd0)
-
 - [Manage email messages by using rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)
 
 For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
