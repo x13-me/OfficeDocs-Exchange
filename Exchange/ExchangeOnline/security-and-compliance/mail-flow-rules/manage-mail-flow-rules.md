@@ -287,16 +287,18 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.
 
-### Use the Security & Compliance Center to view a rules report
+### Use the Microsoft 365 Defender portal to view a rules report
 
-1. In the [Security & Compliance Center](https://protection.office.com/), select **Reports** > **Dashboard**.
-2. Then select **Exchange transport rule**.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.
+2. On the **Email & collaboration reports** page, find and select **Exchange transport rule**.
 
-To learn more, see [View mail flow reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-mail-flow-reports).
+Or, to go directly to the report, use <https://security.microsoft.com/reports/ETRRuleReport>.
+
+To learn more, see [Exchange transport rule report](/microsoft-365/security/office-365-security/view-email-security-reports#exchange-transport-rule-report).
 
 ### Download an Excel version of the reports
 
-For steps to download reports, see [Download existing reports in the Security & Compliance Center](/microsoft-365/compliance/download-existing-reports).
+For steps to download reports, see [Download existing reports in the Microsoft 365 compliance center](/microsoft-365/compliance/download-existing-reports).
 
 ## Import or export a mail flow rule collection
 

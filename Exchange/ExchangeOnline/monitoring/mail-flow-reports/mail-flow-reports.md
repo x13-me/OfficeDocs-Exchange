@@ -21,21 +21,13 @@ Admins can use mail flow reports in the new Exchange admin center (new EAC) to e
 The following mail flow reports are available:
 
 - [Auto forwarded messages report](mfr-auto-forwarded-messages-report.md)
-
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
-
 - [Inbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
-
 - [Non-accepted domain report](mfr-non-accepted-domain-report.md)
-
 - [Non-delivery details report](mfr-non-delivery-details-report.md)
-
 - [Outbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
-
 - [Queued messages report](mfr-queued-messages-report.md)
-
 - [SMTP AUTH clients report](mfr-smtp-auth-clients-report.md)
-
 - [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
 
 ## Permissions required to view mail flow reports
@@ -50,7 +42,7 @@ To view and use mail flow reports, you need to be a member of one of the followi
 
 For more information, see [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md) and [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
-<sup\>*</sup> You manage these role groups in the [Azure Active Directory admin center](https://aad.portal.azure.com).
+<sup\>*</sup> You manage these role groups in the Azure Active Directory admin center (<https://aad.portal.azure.com>).
 
 ## Where to find mail flow reports
 
