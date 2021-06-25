@@ -20,18 +20,23 @@ manager: serdars
 
 # Manage remote domains in Exchange Online
 
-Remote domains define settings based on the destination domain of each email message. All organizations have a default remote domain named "Default" that's applied to the domain "*". The default remote domain applies the same settings to all email messages regardless of the destination domain. However, you can configure specific settings for a specific destination domain.
+Remote domains define settings based on the destination domain of each email message. All organizations have a default remote domain named "Default" that's applied to the domain "\*". The default remote domain applies the same settings to all email messages regardless of the destination domain. However, you can configure specific settings for a specific destination domain.
 
 The following table shows the default values for common settings:
 
+<br>
+
+****
+
 |**Setting**|**Default**|
-|:-----|:-----|
+|---|---|
 |Out of office replies|Send external out-of-office replies to people on the remote domain.|
 |Automatic replies|Allow automatic replies or automatically forwarded messages to be sent to people on the remote domain.|
 |Delivery and non-delivery reports|Allow delivery and non-delivery reports to be sent to people on the remote domain.|
 |Meeting forward notifications|Don't allow meeting forward notifications to be sent to people on the remote domain.|
 |Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook on the web (formerly known as Outlook Web App) when a message is sent to people on the remote domain.|
 |Supported character set|Do not specify a MIME or non-MIME character set if the character set isn't specified in the message sent to the remote domain.|
+|
 
 For information about when to configure remote domains, descriptions of the available settings, and information about how remote domain settings override per-user settings, see [Remote domains in Exchange Online](remote-domains.md).
 
@@ -53,14 +58,13 @@ For information about when to configure remote domains, descriptions of the avai
 **Notes**:
 
 - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
-
 - Once you've created a remote domain, you can't change or replace the domain inside the remote domain. Instead, create and configure a new remote domain with the new domain name.
 
 ### Use the EAC to create and configure a remote domain
 
-**New EAC**
+#### New EAC
 
-1. Navigate to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
+1. Go to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
 
 2. Click **+ Add a remote domain**. The **Name the domain** screen appears.
 
@@ -83,9 +87,7 @@ For information about when to configure remote domains, descriptions of the avai
 9. Click **Next**. The **Text and character set** screen appears.
 
 10. Define the following settings:
-     
     - In the **Use Rich-text format** pane, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
-    
     - In the **Supported Character Set** pane, specify which character set to use (if the message doesn't specify the character set) by choosing from the **MIME character set** or **Non-MIME character set** drop-down list.
 
 11. Click **Next**. The **Review** screen appears.
@@ -94,34 +96,24 @@ For information about when to configure remote domains, descriptions of the avai
 
 The new remote domain is created and added to the list.
     
-**Classic EAC**
+#### Classic EAC
 
-1. Navigate to **Mail flow** \> **Remote domains**.
+1. Go to **Mail flow** \> **Remote domains**.
 
 2. To create a new domain:
-
    1. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
-
    2. In the **Name** box, enter a descriptive name for the domain.
-
    3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
 
 3. To change settings for the default domain, select **Default**, and then select **Edit**.
 
 4. Select the options you want:
-
    - In the **Out of Office reply types** section, specify which type of out-of-office replies should be sent to people at this domain.
-
    - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
-
    - In the **Message reporting** section, specify:
-
    - Whether you want to allow delivery reports and non-delivery reports.
-
    - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
-
    - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
-
    - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set.
 
 5. Click **Save**. If you created a new remote domain, it is added to the list.
@@ -131,24 +123,22 @@ The new remote domain is created and added to the list.
 **Notes:**
 
 - You can't remove the default remote domain.
-
 - When you remove a remote domain, the default remote domain settings will then apply to messages sent to that domain.
-
 - Removing a remote domain doesn't disable mail flow to the remote domain.
 
 ### Use the EAC to remove a remote domain
 
-**New EAC**
+#### New EAC
 
-1. Navigate to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
+1. Go to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
 
 2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, click **Confirm**. The remote domain is deleted.
 
-**Classic EAC**
+#### Classic EAC
 
-1. Navigate to **Mail flow** \> **Remote domains**.
+1. Go to **Mail flow** \> **Remote domains**.
 
 2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
 
@@ -253,5 +243,3 @@ Remove-RemoteDomain -Identity Contoso
 ```
 
 For detailed syntax and parameter information, see [Remove-RemoteDomain](/powershell/module/exchange/remove-remotedomain).
-
-
