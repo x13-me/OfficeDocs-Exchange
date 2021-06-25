@@ -87,14 +87,14 @@ For this scenario, your organization's mail flow setup looks like the following 
    - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
 
      > [!NOTE]
-     > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
+     > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the On-Premises inbound connector.
 
    - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Microsoft 365 or Office 365 ATP controls and will therefore prevent a double anti-spam check.
 
      ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
      > [!IMPORTANT]
-     > Instead of bypassing spam filtering using a mail flow rule, we highly recommend that you enable [Enhanced Filtering for Connector (also known as Skip Listing)](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Most third-party cloud anti-spam proviers share IP addresses among many customers. Bypassing scanning on these IPs might allow spoofed and phishing messages from these IP addresses.
+     > Instead of bypassing spam filtering using a mail flow rule, we highly recommend that you enable [Enhanced Filtering for Connector (also known as Skip Listing)](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Most third-party cloud anti-spam providers share IP addresses among many customers. Bypassing scanning on these IPs might allow spoofed and phishing messages from these IP addresses.
 
 ### Scenario 2 - MX record points to third-party solution without spam filtering
 

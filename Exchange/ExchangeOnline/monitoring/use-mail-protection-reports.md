@@ -22,30 +22,23 @@ manager: serdars
 
 If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules (also known as transport rules) are being matched. With the interactive mail protection reports in the Microsoft 365 security center, you can quickly get a visual report of summary data, and drill-down into details about individual messages, for as far back as 90 days.
 
+## Reports in the Microsoft 365 Defender portal
 
-
-## Reports in the Security & Compliance Center
-
-To get to the Security & Compliance Center, visit <https://protection.office.com>, and sign in using your work or school account.
+In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. and sign in using your work or school account. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>
 
 > [!NOTE]
-> You must be a global administrator or have appropriate permissions assigned in order to use the Security & Compliance Center. For details, see [Permissions in the Security & Compliance Centers](/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
+> You must be a global administrator or have appropriate permissions assigned in order to use the Microsoft 365 Defender portal. For details, see [Permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center).
 
 ## Reporting overview
 
 The following table describes the types of reports that are available, how to find them, and where to go to learn more.
 
+<br>
+
 ****
 
-|Type of information|Location in the Security & Compliance Center|Learn more|
+|Type of information|Learn more|
 |---|---|---|
-|**Threat management dashboard** (this is also referred to as the **Security dashboard** and the **Threat Intelligence dashboard**): Threat detections, malware trends, top targeted users, details about sent and received email messages, and more.|**Threat management** \> **Dashboard**|[Security dashboard overview](/office365/securitycompliance/security-dashboard)|
-|**Email security reports**: Malware, spam, spoof and other protection reports for all Exchange Online organizations.|**Reports** > **Dashboard**|[View email security reports in the Security & Compliance Center](/office365/securitycompliance/view-email-security-reports)|
-|**Mail flow reports**: Reports about mail flow rules (transport rules), email forwarding, and other mail flow reports.|**Reports** > **Dashboard**|[View mail flow reports in the Reports dashboard in Security & Compliance Center](/microsoft-365/security/office-365-security/view-mail-flow-reports)|
-|**Mail flow insights**: Information about sent and received email messages, recent alerts, top senders and recipients, email forwarding reports, and more .|**Mail flow** > **Dashboard**|[Mail flow insights in the Microsoft 365 security and compliance centers](/office365/securitycompliance/mail-flow-insights-v2)|
-|**Microsoft Defender for Office 365 reports**: Mail latency, threat protection and other reports that are available to organizations with Defender for Office 365 (include in a subscription or as an add-on).|**Reports** > **Dashboard**|[View reports for Microsoft Defender for Office 365](/office365/securitycompliance/view-reports-for-atp)|
+|**Email security reports**: Malware, spam, spoof and other protection reports for all Exchange Online organizations.|[View email security reports in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/view-email-security-reports)|
+|**View Defender for Office 365 reports in the Microsoft 365 Defender portal**: Mail latency, threat protection and other reports that are available to organizations with Defender for Office 365 (include in a subscription or as an add-on).|[View reports for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/view-reports-for-mdo)|
 |
-
-## Related topics
-
-[Reports and insights in the Microsoft 365 security and compliance centers](/office365/securitycompliance/reports-and-insights-in-security-and-compliance)
