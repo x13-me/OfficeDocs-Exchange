@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
@@ -31,7 +31,7 @@ Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or O
 
 ## What permissions do you need?
 
-In order to add certificates, you need to be assigned the [Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) role group on the Exchange Server 2013.
+In order to add certificates, you need to be assigned the [Organization Management](../../ExchangeServer2013/organization-management-exchange-2013-help.md) role group on the Exchange Server 2013.
 
 ## Tasks for adding an SSL certificate
 

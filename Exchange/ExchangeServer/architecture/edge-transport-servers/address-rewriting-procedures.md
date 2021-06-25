@@ -38,14 +38,14 @@ For more information about address rewriting, see [Address rewriting on Edge Tra
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Edge Transport servers" section in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
-- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
-- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](https://docs.microsoft.com/exchange/whatif-confirm-and-validateonly-switches-exchange-2013-help).
+- Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the _WhatIf_ parameter. For more information about the _WhatIf_ parameter, see [WhatIf and Confirm](../../../ExchangeServer2013/whatif-confirm-and-validateonly-switches-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Management Shell to enable or disable address rewriting
 
@@ -91,7 +91,7 @@ The following example displays the details of the address rewrite entry named Re
 Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
 ```
 
-For more information, see [Get-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/get-addressrewriteentry).
+For more information, see [Get-AddressRewriteEntry](/powershell/module/exchange/get-addressrewriteentry).
 
 ## Use the Exchange Management Shell to create address rewrite entries
 
@@ -149,7 +149,7 @@ This example is just like the previous example, except now messages sent from th
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
 ```
 
-For more information, see [New-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/new-addressrewriteentry).
+For more information, see [New-AddressRewriteEntry](/powershell/module/exchange/new-addressrewriteentry).
 
 ### How do you know this worked?
 
@@ -235,7 +235,7 @@ This example adds finanace.contoso.com and removes marketing.contoso.com from th
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
 ```
 
-For more information, see [Set-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/set-addressrewriteentry).
+For more information, see [Set-AddressRewriteEntry](/powershell/module/exchange/set-addressrewriteentry).
 
 ### How do you know this worked?
 
@@ -289,7 +289,7 @@ If you're satisfied with the result, run the command again without the _WhatIf_ 
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
 ```
 
-For more information, see [Remove-AddressRewriteEntry](https://docs.microsoft.com/powershell/module/exchange/remove-addressrewriteentry).
+For more information, see [Remove-AddressRewriteEntry](/powershell/module/exchange/remove-addressrewriteentry).
 
 ### How do you know this worked?
 

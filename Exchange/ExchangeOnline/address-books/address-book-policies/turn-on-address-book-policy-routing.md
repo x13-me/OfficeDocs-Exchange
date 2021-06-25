@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to turn on address book policy routing in Exchange Online to enable virtual organizations within an organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5627b8ac-0551-4558-b3b6-25c402698426
 ms.reviewer: 
 title: Turn on address book policy routing in Exchange Online
@@ -26,15 +26,15 @@ ABP routing creates the virtual organizations within a single Exchange Online or
 
 In Exchange Online, you can only turn on ABP routing in Exchange Online PowerShell.
 
-Looking for the Exchange Server version of this topic? See [Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-book-policies/abp-procedures#use-the-exchange-management-shell-to-install-and-configure-the-address-book-policy-routing-agent).
+Looking for the Exchange Server version of this topic? See [Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent](../../../ExchangeServer/email-addresses-and-address-books/address-book-policies/abp-procedures.md#use-the-exchange-management-shell-to-install-and-configure-the-address-book-policy-routing-agent).
 
 ## What do you need to know before you begin?
 
 - You need to be a member of the Organization Management role group in Exchange Online (or a global administrator) before you can perform the procedure in this topic.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use Exchange Online PowerShell to turn on ABP routing
 
@@ -44,7 +44,7 @@ To enable ABP routing in the Exchange Online organization, run the following com
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/set-transportconfig).
+For detailed syntax and parameter information, see [Set-TransportConfig](/powershell/module/exchange/set-transportconfig).
 
 ### How do you know this worked?
 

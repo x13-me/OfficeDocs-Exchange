@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.reviewer: 
 f1.keywords:
@@ -213,7 +213,7 @@ The following example creates a new English-language Policy Tip that will block 
 New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain restricted content and will not be delivered."
 ```
 
-For detailed syntax and parameter information, see [New-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/new-policytipconfig).
+For detailed syntax and parameter information, see [New-PolicyTipConfig](/powershell/module/exchange/new-policytipconfig).
 
 ### Use Exchange Online PowerShell to modify custom Policy Tip notification text
 
@@ -223,7 +223,7 @@ The following example modifies an existing English-language, notify-only Policy 
 Set-PolicyTipConfig en\NotifyOnly "Sending bank account numbers in email is not recommended."
 ```
 
-For detailed syntax and parameter information, see [Set-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/set-policytipconfig).
+For detailed syntax and parameter information, see [Set-PolicyTipConfig](/powershell/module/exchange/set-policytipconfig).
 
 ### How do you know this worked?
 
@@ -245,4 +245,4 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
-[Exchange 2010 MailTips](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd297974(v=exchg.141))
+[Exchange 2010 MailTips](/previous-versions/office/exchange-server-2010/dd297974(v=exchg.141))

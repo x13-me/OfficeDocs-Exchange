@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
 ms.reviewer: 
 title: Configure offline address book distribution properties
@@ -29,7 +29,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure. In Exchange Online, this feature is available only in the Address Lists role, and by default, the role isn't assigned to any role groups. To use this cmdlet, you need to add the Address Lists role to a role group (for example, to the Organization Management role group). For more information, see [Modify a role group in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/role-groups#modify-role-groups).
+- You need to be assigned permissions before you can perform this procedure. In Exchange Online, this feature is available only in the Address Lists role, and by default, the role isn't assigned to any role groups. To use this cmdlet, you need to add the Address Lists role to a role group (for example, to the Organization Management role group). For more information, see [Modify a role group in Exchange Online](../../permissions-exo/role-groups.md#modify-role-groups).
 
 - You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
 
@@ -52,7 +52,7 @@ This example sets the external distribution point to https://contoso.com/OAB for
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 
-For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory).
+For detailed syntax and parameter information, see [set-OabVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory).
 
 ## For More Information
 

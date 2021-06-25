@@ -52,4 +52,4 @@ This example restores the United States English contacts details template.
 Restore-DetailsTemplate -Identity "en-US\Contact"
 ```
 
-For detailed syntax and parameter information, see [Restore-DetailsTemplate](https://docs.microsoft.com/powershell/module/exchange/Restore-DetailsTemplate).
+For detailed syntax and parameter information, see [Restore-DetailsTemplate](/powershell/module/exchange/Restore-DetailsTemplate).

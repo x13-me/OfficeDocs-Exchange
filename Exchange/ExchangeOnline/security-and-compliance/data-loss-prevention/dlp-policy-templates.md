@@ -3,7 +3,7 @@ localization_priority: Normal
 description: In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
 ms.reviewer: 
 f1.keywords:
@@ -78,4 +78,4 @@ The following table lists the DLP policy templates in Exchange.
 
 [Create a DLP policy from a template](create-dlp-policy-from-template.md)
 
-[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
+[Sensitive information types in Exchange Server](../../../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md)

@@ -107,17 +107,17 @@ When you configure message encoding options for a mail contact or a mail user, t
 
 You need to use these parameters in the Exchange Management Shell to set the message encoding options for mail users and mail contacts. For more information, see the following topics:
 
-  - [Enable-MailContact](https://docs.microsoft.com/powershell/module/exchange/Enable-MailContact)
+  - [Enable-MailContact](/powershell/module/exchange/Enable-MailContact)
 
-  - [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/New-MailContact)
+  - [New-MailContact](/powershell/module/exchange/New-MailContact)
 
-  - [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/Set-MailContact)
+  - [Set-MailContact](/powershell/module/exchange/Set-MailContact)
 
-  - [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/Enable-MailUser)
+  - [Enable-MailUser](/powershell/module/exchange/Enable-MailUser)
 
-  - [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/New-MailUser)
+  - [New-MailUser](/powershell/module/exchange/New-MailUser)
 
-  - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/Set-MailUser)
+  - [Set-MailUser](/powershell/module/exchange/Set-MailUser)
 
 ## Message encoding options available in Outlook
 
@@ -382,10 +382,10 @@ The following table describes the order of precedence from lowest priority to hi
 
 [Remote domains](remote-domains-exchange-2013-help.md)
 
-[Remote domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)
+[Remote domains in Exchange Online](../ExchangeOnline/mail-flow-best-practices/remote-domains/remote-domains.md)
 
-[Manage mail users](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users)
+[Manage mail users](../ExchangeOnline/recipients-in-exchange-online/manage-mail-users.md)
 
-[Manage mail contacts](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts)
+[Manage mail contacts](../ExchangeOnline/recipients-in-exchange-online/manage-mail-contacts.md)
 
 [Change the message format in Outlook](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa)

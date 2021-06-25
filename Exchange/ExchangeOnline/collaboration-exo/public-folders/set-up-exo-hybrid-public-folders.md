@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: msdmaguire
@@ -25,16 +25,16 @@ title: Configure Exchange Online public folders for a hybrid deployment
 
 In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server on-premises environment. Similarly, Exchange Server users may need to access public folders in Microsoft 365, Office 365, or Exchange Online.
 
-This article describes how to enable users in your Exchange Server on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange Server public folders, see [Configure Exchange Server public folders for a hybrid deployment](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders).
+This article describes how to enable users in your Exchange Server on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange Server public folders, see [Configure Exchange Server public folders for a hybrid deployment](../../../ExchangeHybrid/hybrid-deployment/set-up-modern-hybrid-public-folders.md).
 
 > [!NOTE]
 > If you have Exchange 2010 public folders, see [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md).
 
 ## What do you need to know before you begin?
 
-1. These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard).
+1. These instructions assume that you have used the Hybrid Configuration Wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration Wizard](../../../ExchangeHybrid/hybrid-configuration-wizard.md).
 
-2. These instructions assume that Outlook Anywhere is enabled and functional on the on-premises Exchange server(s). For information on how to enable Outlook Anywhere, see [Outlook Anywhere](https://docs.microsoft.com/exchange/outlook-anywhere-exchange-2013-help).
+2. These instructions assume that Outlook Anywhere is enabled and functional on the on-premises Exchange server(s). For information on how to enable Outlook Anywhere, see [Outlook Anywhere](../../../ExchangeServer2013/outlook-anywhere-exchange-2013-help.md).
 
 3. Implementing public folder coexistence for a hybrid deployment of Exchange with Microsoft 365 or Office 365 may require you to fix conflicts during the import procedure. Conflicts can happen due to non-routable email address assigned to mail enabled public folders, conflicts with other users and groups in Microsoft 365 or Office 365, and other attributes.
 
@@ -65,7 +65,7 @@ This article describes how to enable users in your Exchange Server on-premises e
 
 ## Step 2: Configure directory synchronization
 
-Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange Server on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](https://docs.microsoft.com/exchange/exchange-hybrid).
+Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange Server on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](../../../ExchangeHybrid/exchange-hybrid.md).
 
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command.
@@ -105,7 +105,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
    ```
 
    > [!NOTE]
-   > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 30 minutes to complete. If you don't want to wait for the recurring synchronizations that occur every 30 minutes, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).
+   > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 30 minutes to complete. If you don't want to wait for the recurring synchronizations that occur every 30 minutes, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler).
 
 ## How do I know this worked?
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: If your organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see theMailbox Featuressection in Manage user mailboxes.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms.reviewer: 
 f1.keywords:
@@ -18,14 +18,13 @@ manager: serdars
 
 ---
 
-# Run a per-mailbox litigation hold report
+# Run a per-mailbox litigation hold report in Exchange Online
 
-If your organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see the "Mailbox Features" section in [Manage user mailboxes](../../recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
+If your Exchange Online organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see the "Mailbox Features" section in [Manage user mailboxes](../../recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
 
 Use the litigation hold report to keep track of the following types of changes made to a mailbox in a given time period:
 
 - Litigation hold was enabled.
-
 - Litigation hold was disabled.
 
 For each of these change types, the report includes the user who made the change and the time and date the change was made.
@@ -37,7 +36,7 @@ For each of these change types, the report includes the user who made the change
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) forum.
 
 ## Use the EAC to run a litigation hold report
 

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 and Office 365.
@@ -105,4 +105,4 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 
 [Ways to migrate email to Microsoft 365 or Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a cutover migration](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)
+[Use PowerShell to perform a cutover migration](/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)

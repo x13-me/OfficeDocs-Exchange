@@ -48,21 +48,24 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   - **Exchange 2013**: At least one instance of Mailbox and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
 
-  - **Exchange 2010**: At least instance of Mailbox, Hub Transport, and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
+  - **Exchange 2010**: At least one instance of Mailbox, Hub Transport, and Client Access server roles installed (separately or on one server; we strongly recommend on one server).
 
     Hybrid deployments also support Exchange servers running the Edge Transport server role. Edge Transport servers also need to be updated to the latest CU or RU. We strongly recommend that you deploy Edge Transport servers in a perimeter network. You can't deploy Mailbox or Client Access servers in a perimeter network.
 
+> [!NOTE]
+  > If you already started a migration process with Exchange 2010 Hybrid endpoints and do not plan to keep on-premises mailboxes, continue your migration as-is. If you plan to keep some mailboxes on-premises, we strongly recommend that you introduce Exchange 2016 Hybrid endpoints (because Exchange 2010 has reached its end of support lifecycle). Continue your migration of Exchange 2010 mailboxes to Office 365, and then move the mailboxes that will stay on-premises to Exchange 2016 servers. After you have removed all of your Exchange 2010 servers, you can then introduce Exchange 2019 servers as your new Hybrid endpoints and also move your remaining on-premises mailboxes to Exchange 2019 servers.
+ 
 - **Microsoft 365 or Office 365**: Hybrid deployments are supported in all Microsoft 365 and Office 365 plans that support Azure Active Directory synchronization. All Microsoft 365 Business Standard, Business Basic, Enterprise, Government, Academic and Midsize plans support hybrid deployments. Microsoft 365 Apps for business and Home plans don't support hybrid deployments.
 
   Learn more at [Microsoft 365](https://www.microsoft.com/microsoft-365).
 
 - **Custom domains**: Register any custom domains you want to use in your hybrid deployment with Microsoft 365 or Office 365. You can do this by using the Microsoft 365 portal, or by optionally configuring Active Directory Federation Services (AD FS) in your on-premises organization.
 
-  Learn more at [Add your domain to Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+  Learn more at [Add your domain to Microsoft 365 or Office 365](/microsoft-365/admin/setup/add-domain).
 
 - **Active Directory synchronization**: Deploy the Azure Active Directory Connect tool to enable Active Directory synchronization with your on-premises organization.
 
-  Learn more at [Azure AD Connect User Sign-on options](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin).
+  Learn more at [Azure AD Connect User Sign-on options](/azure/active-directory/hybrid/plan-connect-user-signin).
 
 - **Autodiscover DNS records**: Configure the Autodiscover record for your existing SMTP domains in your public DNS to point to your on-premises Exchange servers (an Exchange 2010/2013 Client Access server or an Exchange 2016/2019 Mailbox Server).
 
@@ -99,17 +102,17 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   - A traditional on-premises PBX or IP-PBX solution.
 
-    For more information, check out [Telephone system integration with UM in Exchange Online](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um), [Plan for Skype for Business Server and Exchange Server migration](https://docs.microsoft.com/SkypeForBusiness/hybrid/plan-um-migration), and [Set up Cloud Voicemail](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail).
+    For more information, check out [Telephone system integration with UM in Exchange Online](../ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um.md), [Plan for Skype for Business Server and Exchange Server migration](/SkypeForBusiness/hybrid/plan-um-migration), and [Set up Cloud Voicemail](/microsoftteams/set-up-phone-system-voicemail).
 
 ## Hybrid deployment protocols, ports, and endpoints
 
 You need to configure the following protocols, ports, and connection endpoints in the firewall that protects your on-premises organization as described in the following table.
 
   > [!IMPORTANT]
-  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges - Exchange Online](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#exchange-online) and identify the endpoints for each port listed here.
+  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see the sections _Exchange Online_ and _Microsoft 365 Common and Office Online_ in [Microsoft 365 and Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to identify the endpoints for each port listed here.
    
   > [!NOTE]
-  > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
+  > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](../ExchangeServer/plan-and-deploy/deployment-ref/network-ports.md).
   
 |**Source**|**Protocol/Port**|**Target**|**Comments**|
 |:-----|:-----|:-----|:-----|
@@ -130,6 +133,8 @@ The following table provides more detailed information about the involved on-pre
 |OAuth (Autodiscover and EWS)|TCP 443 (HTTPS)|Exchange 2019/2016 Mailbox <br/>or<br/> Exchange 2013/2010 CAS: <br/><br/> /ews/exchange.asmx/wssecurity <br/> /autodiscover/autodiscover.svc/wssecurity <br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
 |AD FS (Windows Server)|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server: /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 |AAD Connect|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server (AD FS): /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
+
+For even more detail about this information, see [Deep Dive: How Hybrid Authentication Really Works](https://techcommunity.microsoft.com/t5/exchange-team-blog/deep-dive-how-hybrid-authentication-really-works/ba-p/606780), [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838), [Transport routing in Exchange hybrid deployments](./transport-routing.md), [Configure mail flow using connectors](../ExchangeOnline/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md), and [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)](../ExchangeOnline/mail-flow-best-practices/manage-mail-flow-for-multiple-locations.md).
 
 ## Recommended tools and services
 

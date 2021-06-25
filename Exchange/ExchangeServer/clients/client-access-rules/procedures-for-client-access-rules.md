@@ -25,7 +25,10 @@ Client Access Rules allow or block Exchange admin center (EAC) or remote PowerSh
 
 - Estimated time to complete each procedure: less than 5 minutes.
 
-- The procedures in this topic are only available in the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) or [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+- The procedures in this topic are only available in the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell) or [Connect to Exchange servers using remote PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+
+- Client Access Rules support IPv4 and IPv6 addresses. For more information about IPv6 addresses and syntax, see this Exchange 2013 topic: [IPv6 address basics](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help#ipv6-address-basics).
+
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md).
 
@@ -58,7 +61,7 @@ This example returns only the specified properties for the same rule.
 Get-ClientAccessRule -Identity "Block Client Connections from 192.168.1.0/24" | Format-List Name,Priority,Enabled,Scope,Action
 ```
 
-For detailed syntax and parameter information, see [Get-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/get-clutter).
+For detailed syntax and parameter information, see [Get-ClientAccessRule](/powershell/module/exchange/get-clutter).
 
 ## Use the Exchange Management Shell to create Client Access Rules
 
@@ -77,9 +80,7 @@ New-ClientAccessRule -Name "Block PowerShell" -Action DenyAccess -AnyOfProtocols
  **Notes**:
 
 - As a best practice, create a Client Access Rule with the highest priority to preserve your administrator access to remote PowerShell. For example: `New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1`.
-
 - The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use the Exchange Management Shell to set the priority of Client Access Rules](#use-the-exchange-management-shell-to-set-the-priority-of-client-access-rules) section later in this topic.
-
 - The rule is enabled, because we didn't use the _Enabled_ parameter, and the default value is `$true`.
 
 This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
@@ -88,7 +89,7 @@ This example creates a new Client Access Rule named Restrict EAC Access that blo
 New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
-For detailed syntax and parameter information, see [New-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/new-clientaccessrule).
+For detailed syntax and parameter information, see [New-ClientAccessRule](/powershell/module/exchange/new-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -127,7 +128,6 @@ Set-ClientAccessRule -Identity "Allow EAC" -Enabled $false
 An important consideration when you modify Client Access Rules is modifying conditions or exceptions that accept multiple values:
 
 - The values that you specify will *replace* any existing values.
-
 - To add or remove values without affecting other existing values, use this syntax: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`
 
 This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow EAC without affecting the existing IP address values.
@@ -136,7 +136,7 @@ This example adds the IP address range 172.17.17.27/16 to the existing Client Ac
 Set-ClientAccessRule -Identity "Allow EAC" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
-For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/set-clientaccessrule).
+For detailed syntax and parameter information, see [Set-ClientAccessRule](/powershell/module/exchange/set-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -202,7 +202,7 @@ Remove-ClientAccessRule -Identity "Block EAC"
 
  **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet.
 
-For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/remove-clientaccessrule).
+For detailed syntax and parameter information, see [Remove-ClientAccessRule](/powershell/module/exchange/remove-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -223,17 +223,13 @@ Test-ClientAccessRule -User <MailboxIdentity> -AuthenticationType <Authenticatio
 This example returns the Client Access Rules that would match a client connection to Exchange that has these properties:
 
 - **Authentication type**: Basic
-
 - **Protocol**: `ExchangeAdminCenter`
-
 - **Remote address**: 172.17.17.26
-
 - **Remote port**: 443
-
 - **User**: julia@contoso.com
 
 ```powershell
 Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentication -Protocol ExchangeAdminCenter -RemoteAddress 172.17.17.26 -RemotePort 443
 ```
 
-For detailed syntax and parameter information, see [Test-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/test-clientaccessrule).
+For detailed syntax and parameter information, see [Test-ClientAccessRule](/powershell/module/exchange/test-clientaccessrule).

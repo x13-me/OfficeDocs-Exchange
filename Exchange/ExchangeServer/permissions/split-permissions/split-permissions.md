@@ -58,8 +58,8 @@ The following table shows the roles that enable the creation of security princip
 
 |**Management role**|**Role group**|
 |:-----|:-----|
-|[Mail Recipient Creation role](https://docs.microsoft.com/exchange/mail-recipient-creation-role-exchange-2013-help)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/><br/> [Recipient Management](https://docs.microsoft.com/exchange/recipient-management-exchange-2013-help)|
-|[Security Group Creation and Membership role](https://docs.microsoft.com/exchange/security-group-creation-and-membership-role-exchange-2013-help)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|[Mail Recipient Creation role](../../../ExchangeServer2013/mail-recipient-creation-role-exchange-2013-help.md)|[Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md) <br/><br/> [Recipient Management](../../../ExchangeServer2013/recipient-management-exchange-2013-help.md)|
+|[Security Group Creation and Membership role](../../../ExchangeServer2013/security-group-creation-and-membership-role-exchange-2013-help.md)|[Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md)|
 
 Only role groups, users, or USGs that are assigned the Mail Recipient Creation role can create security principals such as Active Directory users. By default, the Organization Management and Recipient Management role groups are assigned this role. Therefore members of these role groups can create security principals.
 
@@ -71,9 +71,9 @@ To enable the management of existing security principals in Exchange, the Mail R
 
 For more information about how to add roles to role groups, users, or USGs, see the following topics:
 
-- [Manage role groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)
+- [Manage role groups](../../../ExchangeServer2013/manage-role-groups-exchange-2013-help.md)
 
-- [Add a role to a user or USG](https://docs.microsoft.com/exchange/add-a-role-to-a-user-or-usg-exchange-2013-help)
+- [Add a role to a user or USG](../../../ExchangeServer2013/add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 If you switched to a split permissions model and want to change back to a shared permissions model, see [Configure Exchange Server for shared permissions](configure-exchange-for-shared-permissions.md).
 
@@ -120,8 +120,8 @@ Switching from shared permissions to RBAC split permissions is a manual process 
 
 |**Management role**|**Role group**|
 |:-----|:-----|
-|[Mail Recipient Creation role](https://docs.microsoft.com/exchange/mail-recipient-creation-role-exchange-2013-help)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/><br/> [Recipient Management](https://docs.microsoft.com/exchange/recipient-management-exchange-2013-help)|
-|[Security Group Creation and Membership role](https://docs.microsoft.com/exchange/security-group-creation-and-membership-role-exchange-2013-help)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help)|
+|[Mail Recipient Creation role](../../../ExchangeServer2013/mail-recipient-creation-role-exchange-2013-help.md)|[Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md) <br/><br/> [Recipient Management](../../../ExchangeServer2013/recipient-management-exchange-2013-help.md)|
+|[Security Group Creation and Membership role](../../../ExchangeServer2013/security-group-creation-and-membership-role-exchange-2013-help.md)|[Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md)|
 
 By default, members of the Organization Management and Recipient Management role groups can create security principals. You must transfer the ability to create security principals from the built-in role groups to a new role group that you create.
 

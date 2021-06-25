@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
 ms.reviewer: 
 f1.keywords:
@@ -21,13 +21,16 @@ manager: serdars
 
 # Use Exchange Online PowerShell to display Microsoft 365 or Office 365 mailbox information
 
+> [!IMPORTANT]
+> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+
 Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 
 To give you an idea of some of the things you can do with PowerShell in Microsoft 365 and Office 365, let's take a look at user mailboxes in Exchange Online PowerShell.
 
 ## Before you begin
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Display mailbox information with Exchange Online PowerShell
 
@@ -95,9 +98,9 @@ Some commonly used comparison operators are:
 
 - `lt` (less than)
 
-For a complete list of comparison operators, see [Where-Object](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object).
+For a complete list of comparison operators, see [Where-Object](/powershell/module/microsoft.powershell.core/where-object).
 
-Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and `$Null` don't require quotation marks around the value.
+Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values, and `$Null` don't require quotation marks around the value.
 
 Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is `"LitigationHoldEnabled -eq $True"`:
 

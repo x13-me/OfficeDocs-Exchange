@@ -16,9 +16,9 @@ description: Create and manage groups in the new Exchange admin center.
 
 # Create and manage groups in the new Exchange admin center
 
-Use the new Exchange admin center (EAC) to create, modify, export or remove groups in your Exchange Online organization.
+Use the new Exchange admin center (EAC) to create, modify, export, or remove groups in your Exchange Online organization.
 
-There are three types of groups that can be used to distribute messages:
+There are four types of groups that can be used to distribute messages:
 
 - **Microsoft 365 group** (formerly known as Office 365 groups), is used for collaboration between teams, both inside and outside your company; by giving them a group email and a shared workspace for conversations, files, and calendars.
 
@@ -27,9 +27,11 @@ There are three types of groups that can be used to distribute messages:
 
 - **Distribution list group** is used for sending emails/notifications to a group of people.
 
+- **Dynamic distribution list group** is used to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
+
 - **Mail-enabled security group** is used for granting access to resources such as OneDrive, SharePoint, and emailing notifications to those users.
 
-For more information see, [groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups).
+For more information see, [groups](/microsoft-365/admin/create-groups/compare-groups).
 
 ## Create a group
 
@@ -39,7 +41,7 @@ For more information see, [groups](https://docs.microsoft.com/microsoft-365/admi
 
 2. Click **Add a group** and follow the instructions in the details pane.
 
-   For more information see, [Create a group](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
+   For more information see, [Create a group](/microsoft-365/admin/create-groups/create-groups).
 
    - In **Finish** tab, under **Review and finish adding group**, verify all the details, and then click **Create group**.
 
@@ -125,6 +127,6 @@ You can upgrade a **Distribution list group** to **Microsoft 365 group**.
 
 See one of the following topics for managing groups in the Classic Exchange admin center:
 
-- [Create and manage distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Create and manage distribution groups](./manage-distribution-groups/manage-distribution-groups.md)
 
-- [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Manage mail-enabled security groups](./manage-mail-enabled-security-groups.md)

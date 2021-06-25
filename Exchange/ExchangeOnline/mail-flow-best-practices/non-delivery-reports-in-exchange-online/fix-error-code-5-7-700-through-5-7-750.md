@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: dansimp
 ms.reviewer: 
@@ -52,7 +52,7 @@ Common causes are compromised on-premises servers or compromised admin accounts 
 
 To remove this block, you need to understand and explain the cause to a support agent, as well as correct the underlying problem.
 
-In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire. For more information, please see ["Tenant has exceeded threshold" NDR when mail is sent from your organization](https://docs.microsoft.com/office365/troubleshoot/antispam/tenant-has-exceeded-threshold).
+In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire. For more information, please see ["Tenant has exceeded threshold" NDR when mail is sent from your organization](/office365/troubleshoot/antispam/tenant-has-exceeded-threshold).
 
 ### 5.7.708 Access denied, traffic not accepted from this IP
 
@@ -64,11 +64,11 @@ In most cases, the connectors are set up correctly, but email is being sent from
 
 To fix this error, you can:
 
-- **Most common solution**: Add and validate all domains in Microsoft 365 or Office 365 that you use to send email messages. For more information, see [Add a domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+- **Most common solution**: Add and validate all domains in Microsoft 365 or Office 365 that you use to send email messages. For more information, see [Add a domain](/microsoft-365/admin/setup/add-domain).
 
 - Use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Microsoft 365 or Office 365. For more information, see [Configure mail flow using connectors](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
-- Look for unusual connectors and compromised accounts. Attackers will often create new inbound connectors in your Microsoft 365 or Office 365 organization to send spam. For more information, see [Validate connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md), and [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+- Look for unusual connectors and compromised accounts. Attackers will often create new inbound connectors in your Microsoft 365 or Office 365 organization to send spam. For more information, see [Validate connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md), and [Responding to a compromised email account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 ## Still need help with error codes 5.7.700 through 5.7.750?
 
@@ -76,7 +76,7 @@ To fix this error, you can:
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

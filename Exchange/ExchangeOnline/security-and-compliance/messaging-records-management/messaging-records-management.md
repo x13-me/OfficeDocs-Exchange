@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.reviewer: 
 f1.keywords:
@@ -20,6 +20,11 @@ manager: serdars
 
 # Messaging records management
 
+> [!NOTE]
+> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
+> 
+> If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+
 Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations.
 
 Messaging records management (MRM) is the records management technology in Exchange Server and Exchange Online that helps organizations manage email lifecycle and reduce the legal risks associated with email. Deploying MRM can help your organization in several ways:
@@ -34,7 +39,7 @@ Messaging records management (MRM) is the records management technology in Excha
 
 MRM provides the flexibility to implement the records management policy that best meets your organization's requirements. With a good understanding of MRM, In-Place Archiving, and In-Place Hold, you can help meet your goals of managing mailbox storage and meeting regulatory retention requirements.
 
-Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+Looking for management tasks related to MRM? See [Messaging Records Management Procedures](/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## MRM in Exchange Server and Exchange Online
 
@@ -50,9 +55,9 @@ You can use retention policies to enforce basic message retention for an entire 
 
 **Move messages to archive mailboxes**: In this strategy, you implement MRM policies that move items to the user's archive mailbox. An archive mailbox provides additional storage for users to maintain old and infrequently accessed content. Retention tags that move items are also known as archive policies. Within the same retention policy, you can combine a DPT and personal tags to move items, and a DPT, RPTs, and personal tags to delete items. To learn more about archiving policies, see:
 
-- **Exchange Server 2016**: [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- **Exchange Server 2016**: [In-Place Archiving](/microsoft-365/compliance/enable-archive-mailboxes)
 
-- **Exchange Online**: [Archive Mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- **Exchange Online**: [Archive Mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes)
 
 > [!NOTE]
 > In an Exchange hybrid deployment, you can enable a cloud-based archive mailbox for an on-premises primary mailbox. If you assign an archive policy to an on-premises mailbox, items are moved to the cloud-based archive. If an item is moved to the archive mailbox, a copy of it isn't retained in the on-premises mailbox. If the on-premises mailbox is placed on hold, an archive policy will still move items to the cloud-based archive mailbox where they are preserved for the duration specified by the hold.
@@ -85,6 +90,6 @@ Optionally, you can use RPTs and personal tags to allow users to clean up their 
 
 ## For more information
 
-[Messaging Records Management Terminology in Exchange 2013](https://docs.microsoft.com/exchange/messaging-records-management-terminology-in-exchange-2013-exchange-2013-help)
+[Messaging Records Management Terminology in Exchange 2013](../../../ExchangeServer2013/messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md)
 
 [Retention tags and retention policies](retention-tags-and-policies.md)

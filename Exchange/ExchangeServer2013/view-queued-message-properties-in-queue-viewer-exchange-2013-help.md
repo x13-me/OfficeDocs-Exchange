@@ -118,4 +118,4 @@ You use the **Get-Message** cmdlet to view the properties of a message that is c
 Get-Message -IncludeRecipientInfo -Filter "Status -eq 'Retry'" | Format-Table FromAddress,Recipients,Subject,DateReceived
 ```
 
-For detailed syntax and parameter information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/Get-Message).
+For detailed syntax and parameter information, see [Get-Message](/powershell/module/exchange/Get-Message).

@@ -70,4 +70,4 @@ This example assigns the ABP ABP_EngineeringDepartment to all mailbox users whos
 Get-Mailbox -Filter "CustomAttribute11 -like 'Engineering Department'" | Set-Mailbox -AddressBookPolicy ABP_EngineeringDepartment
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox) and [Get-Mailbox](/powershell/module/exchange/get-mailbox).

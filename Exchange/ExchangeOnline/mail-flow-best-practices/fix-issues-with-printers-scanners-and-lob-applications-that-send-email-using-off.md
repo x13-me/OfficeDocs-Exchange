@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
 ms.reviewer: 
 title: Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365
@@ -84,11 +84,11 @@ Below are the three configuration options to help you identify which one is in u
 
    For example, if you entered login credentials for sales@contoso.com in your application settings, but the application tries to send emails from salesperson1@contoso.com, this is not supported. For this scenario, use Microsoft 365 or Office 365 SMTP relay instead.
 
-4. Test the user name and password by logging on to Outlook on the web, and try to send a test email to make sure the account is not blocked. If the user is blocked, you can find help in the article, [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
+4. Test the user name and password by logging on to Outlook on the web, and try to send a test email to make sure the account is not blocked. If the user is blocked, you can find help in the article, [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 5. Next, test that you can connect to Microsoft 365 or Office 365 from your network by doing the following:
 
-   1. Follow the instructions to [install the Telnet Client tool](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)) on a computer on the same network as the device or application.
+   1. Follow the instructions to [install the Telnet Client tool](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)) on a computer on the same network as the device or application.
 
    2. Run the tool from the command line by typing **telnet**.
 
@@ -102,7 +102,7 @@ Below are the three configuration options to help you identify which one is in u
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.2 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
-   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
+   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
 ### I receive an authentication error when my device tries to send email
 
@@ -114,6 +114,48 @@ This can be caused by a number of issues:
 
 3. Check that your device or application supports TLS version 1.2 or above. The best way to check is by upgrading the firmware on the device or updating the application you're sending email from to the latest version. Contact your device manufacturer to confirm that it supports TLS version 1.2 or above.
 
+### Error: Authentication unsuccessful
+
+If you are getting one of the following errors: 
+
+- 535 5.7.3 Authentication unsuccessful
+
+- 5.7.57 Client not authenticated to send mail
+
+There are a few things you should check:
+
+1. Enable Client SMTP submission on the licensed mailbox being used:
+
+      - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
+
+      - Go to the Mail tab.
+
+      - In the **Email apps** section, select **Manage email apps**.
+
+      - Verify that the **Authenticated SMTP** setting is checked (enabled).
+
+      - Select **Save changes**.
+   
+2. Disable Multi-Factor Authentication (MFA) on the licensed mailbox being used:
+
+      - In the Microsoft 365 admin center, in the left navigation menu, choose **Users** > **Active users**.
+
+      - On the Active users page, choose **Multi-Factor Authentication**.
+
+      - On the Multi-Factor Authentication page, select the user and disable the Multi-Factor Authentication status.
+   
+3. Disable the [Azure Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) by toggling the **Enable Security Defaults** to **No**:
+
+      - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+
+      - Browse to **Azure Active Directory** > **Properties**.
+
+      - Select **Manage security defaults**.
+
+      - Set the **Enable security defaults** toggle to **No**.
+
+      - Select **Save**.
+
 ### Error: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
 This error indicates that the device is trying to send an email from an address that doesn't match the logon credentials. An example would be if your entered login credentials for sales@contoso.com in your application settings but the application tries to send emails from salesperson1@contoso.com. If your application or printer behaves this way, use Microsoft 365 or Office 365 SMTP relay because SMTP client submission does not support this scenario.
@@ -124,7 +166,7 @@ This error indicates that your printer connects to the SMTP client submission en
 
 ### Error: 550 5.1.8 Bad outbound sender
 
-This error indicates that the device is trying to send an email from a Microsoft 365 or Office 365 mailbox that is on a spam block list. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
+This error indicates that the device is trying to send an email from a Microsoft 365 or Office 365 mailbox that is on a spam block list. For help, see [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ## Fix issues with direct send
 <a name="Troubleshootdirectsend"> </a>
@@ -133,9 +175,9 @@ This error indicates that the device is trying to send an email from a Microsoft
 
 This can be caused by a number of issues.
 
-1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Microsoft 365 and Office 365 use block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
+1. A common reason for issues with direct send is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Microsoft 365 and Office 365 use block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Microsoft 365 or Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Microsoft 365 or Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Microsoft 365 or Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](../../ExchangeServer/mail-flow/test-smtp-with-telnet.md). If you can't connect to Microsoft 365 or Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
@@ -159,13 +201,17 @@ For direct send, we recommend using a device that sends from a static IP address
 
 This can be caused by a number of issues.
 
-1. A common reason for issues with Microsoft 365 or Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Microsoft 365 and Office 365 use block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
+1. A common reason for issues with Microsoft 365 or Office 365 SMTP relay is a blocked IP address. If antispam tools detect outbound spam from your organization, your IP address can be blocked by a spam block list. Check whether your IP address is on a block list by using a third-party service, such as MXToolbox or WhatIsMyIPAddress. Follow up with the organization that added your IP address to their block list. Microsoft 365 and Office 365 use block lists to protect our service. For help, see [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
-2. To rule out a problem with your device, send a test email to check your connection to Microsoft 365 or Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](https://docs.microsoft.com/Exchange/mail-flow/test-smtp-with-telnet). If you can't connect to Microsoft 365 or Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
+2. To rule out a problem with your device, send a test email to check your connection to Microsoft 365 or Office 365. To send a test email, follow these steps in the article, [Use Telnet to Test SMTP Communication](../../ExchangeServer/mail-flow/test-smtp-with-telnet.md). If you can't connect to Microsoft 365 or Office 365, your network or ISP might have blocked communication using port 25. If you can't reverse this, use SMTP client submission instead.
 
 ### Emails are no longer being sent to external recipients
 
 Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) to edit your existing connector settings.
+
+### 5.7.64 TenantAttribution; Relay Access Denied or 4.4.62 Mail sent to the wrong Office 365 region
+
+This error indicates that email sent from your application or device is not correctly [attributed](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-message-attribution/ba-p/749143) to your tenant. A common cause of this issue is a change in your dedicated and static IP address or a change in the certificate used by your application or device. Update the inbound connector with the new IP address or new certificate information. 
 
 ### Emails from my device are marked as junk by Microsoft 365 or Office 365
 

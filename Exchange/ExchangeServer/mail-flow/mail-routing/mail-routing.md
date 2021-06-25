@@ -113,7 +113,7 @@ In Exchange 2010, each message recipient is associated with only one Active Dire
 
 ### Routing messages between Active Directory sites
 
-The way that Exchange routes messages between Active Directory sites is virtually the same as Exchange 2010. For more information, see [Route Mail Between Active Directory Sites](https://docs.microsoft.com/exchange/route-mail-between-active-directory-sites-exchange-2013-help).
+The way that Exchange routes messages between Active Directory sites is virtually the same as Exchange 2010. For more information, see [Route Mail Between Active Directory Sites](../../../ExchangeServer2013/route-mail-between-active-directory-sites-exchange-2013-help.md).
 
 ### Routing in the Front End Transport service on Mailbox servers
 

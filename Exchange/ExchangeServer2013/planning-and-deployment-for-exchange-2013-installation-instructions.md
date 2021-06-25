@@ -43,7 +43,7 @@ Use the following links to access information to help you plan the deployment of
 
 - [Anti-malware protection](anti-malware-protection-exchange-2013-help.md): Read this topic to understand anti-malware protection options for Exchange 2013.
 
-- [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid): Read this topic to help you with planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange 2013 organization.
+- [Exchange Server Hybrid Deployments](../ExchangeHybrid/exchange-hybrid.md): Read this topic to help you with planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange 2013 organization.
 
 - [Planning for high availability and site resilience](planning-for-high-availability-and-site-resilience-exchange-2013-help.md): Read this topic to help you with planning to achieve your high availability and business continuity requirements.
 
@@ -57,7 +57,7 @@ Use the following links to access information to help you plan the deployment of
 
 - [Multi-tenancy in Exchange 2013](multi-tenancy-in-exchange-2013-exchange-2013-help.md): Read this topic to learn more about how you can configure Exchange 2013 to host multiple and discrete organizations or business units that ordinarily don't share email, data, users, global address lists (GALs), or other commonly used Exchange objects.
 
-- [Exchange Development Technologies](https://docs.microsoft.com/exchange/client-developer/exchange-server-development): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
+- [Exchange Development Technologies](/exchange/client-developer/exchange-server-development): This topic contains important information about Application Programming Interfaces (APIs) that are available for applications that use Exchange 2013.
 
 ## Establish a test environment
 
@@ -67,7 +67,7 @@ The test environment will act as your "proof of concept" for your new Exchange 2
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Windows Server 2008 R2 or Windows Server 2012 Hyper-V technologies. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 
-For more detailed information about Hyper-V, see [Server Virtualization](https://docs.microsoft.com/windows-server/virtualization/virtualization). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+For more detailed information about Hyper-V, see [Server Virtualization](/windows-server/virtualization/virtualization). For information about Microsoft support of Exchange 2013 in production on hardware virtualization software, see "Hardware virtualization" in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
 ## Deploying an installation of Exchange 2013
 
@@ -93,7 +93,7 @@ Use the following links to access the information you need to help you with depl
 
 - [Deploying voice mail and UM](deploying-voice-mail-and-um-exchange-2013-help.md): Read this topic for information that will help you understand deploying Exchange 2013 Unified Messaging, whether a new deployment or an upgrade.
 
-- [Hybrid Deployment procedures](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-deployment): Read this topic for information that will help you deploy Exchange 2013 in an existing hybrid deployment.
+- [Hybrid Deployment procedures](../ExchangeHybrid/hybrid-deployment/hybrid-deployment.md): Read this topic for information that will help you deploy Exchange 2013 in an existing hybrid deployment.
 
 - [Exchange 2013 post-Installation tasks](exchange-2013-post-installation-tasks-exchange-2013-help.md): Learn about post-installation tasks to complete your Exchange 2013 installation.
 

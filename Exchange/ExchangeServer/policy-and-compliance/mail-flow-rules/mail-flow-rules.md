@@ -24,15 +24,15 @@ This article explains the [components](#mail-flow-rule-components) of mail flow 
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage mail flow rules. For instructions on how to manage mail flow rules, see [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
 
- For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](https://docs.microsoft.com/Exchange/test-transport-rules-exchange-2013-help) and [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).
+ For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](../../../ExchangeServer2013/test-transport-rules-exchange-2013-help.md) and [Policy Tips](../../../ExchangeServer2013/policy-tips-exchange-2013-help.md).
 
 For steps to implement specific messaging policies, see the following topics:
 
 - [Organization-wide disclaimers, signatures, footers, or headers in Exchange Server](signatures.md)
 
-- [Common message approval scenarios](https://docs.microsoft.com/Exchange/common-message-approval-scenarios-exchange-2013-help)
+- [Common message approval scenarios](../../../ExchangeServer2013/common-message-approval-scenarios-exchange-2013-help.md)
 
-- [Using mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
+- [Using mail flow rules to inspect message attachments](../../../ExchangeServer2013/use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
 ## Mail flow rule components
 
@@ -68,7 +68,8 @@ The following table describes the rule properties that are available in mail flo
 |**Property name in the EAC**|**Parameter name in the Exchange Management Shell**|**Description**|
 |:-----|:-----|:-----|
 |**Priority**|_Priority_|Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules), and higher priority rules are processed before lower priority rules. <br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the Exchange Management Shell, you set the priority number (0 is the highest priority). <br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules. <br/> For more information, see [Set the priority of mail flow rules](mail-flow-rule-procedures.md#set-the-priority-of-mail-flow-rules).|
-|**Mode**| _Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <br/> Policy Tips are similar to MailTips, and can be configured to present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).For more information about the modes, see [Test a mail flow rule](https://docs.microsoft.com/Exchange/test-transport-rules-exchange-2013-help).|
+|**Audit this rule with severity level**|_SetAuditSeverity_|Sets the severity level of the incident report and the corresponding entry that's written to the message tracking log when messages violate DLP policies. Valid values are DoNotAudit, Low, Medium, and High.|
+|**Mode**|_Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <br/> Policy Tips are similar to MailTips, and can be configured to present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](../../../ExchangeServer2013/policy-tips-exchange-2013-help.md).For more information about the modes, see [Test a mail flow rule](../../../ExchangeServer2013/test-transport-rules-exchange-2013-help.md).|
 |**Activate this rule on the following date** <br/> **Deactivate this rule on the following date**| _ActivationDate_ <br/> _ExpiryDate_|Specifies the date range when the rule is active.|
 |**On** check box selected or not selected|New rules: _Enabled_ parameter on the **New-TransportRule** cmdlet. <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets. <br/> The value is displayed in the **State** property of the rule.|You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings. For instructions, see [Enable or disable mail flow rules](mail-flow-rule-procedures.md#enable-or-disable-mail-flow-rules).|
 |**Defer the message if rule processing doesn't complete**| _RuleErrorAction_|You can specify how the message should be handled if the rule processing can't be completed. By default, the rule will be ignored, but you can choose to resubmit the message for processing.|
@@ -109,11 +110,11 @@ Mail flow rules that you create and configure on Mailbox servers are stored in A
 
  **Notes**:
 
-- Replication between domain controllers depends on factors that aren't controlled by Exchange (for example, the number of Active Directory sites, and the speed of network links). Therefore, you need to consider replication delays when you implement mail flow rules in your organization. For more information about Active Directory replication, see [Introduction to Active Directory Replication and Topology Management Using Windows PowerShell](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/powershell/introduction-to-active-directory-replication-and-topology-management-using-windows-powershell--level-100-).
+- Replication between domain controllers depends on factors that aren't controlled by Exchange (for example, the number of Active Directory sites, and the speed of network links). Therefore, you need to consider replication delays when you implement mail flow rules in your organization. For more information about Active Directory replication, see [Introduction to Active Directory Replication and Topology Management Using Windows PowerShell](/windows-server/identity/ad-ds/manage/powershell/introduction-to-active-directory-replication-and-topology-management-using-windows-powershell--level-100-).
 
 - Each Mailbox server caches expanded distribution groups to avoid repeated Active Directory queries to determine a group's membership. By default, entries in the expanded groups cache expire every four hours. Therefore, changes to the group's membership aren't detected by mail flow rules until the expanded groups cache is updated. To force an immediate update of the cache on a Mailbox server, restart the Microsoft Exchange Transport service. You need to restart the service on each Mailbox server where you want to forcibly update the cache.
 
-Mail flow rules that you create and configure on Edge Transport servers are stored in the local instance of AD LDS on the server. No automated replication of mail flow rules occurs on Edge Transport servers. Rules on the Edge Transport server apply only to messages that flow through the local server. If you need to apply the same set of mail flow rules on multiple Edge Transport servers, you can clone the Edge Transport server configuration, or export and import the mail flow rules. For more information, see [Edge Transport Server Cloned Configuration](https://docs.microsoft.com/exchange/edge-transport-server-cloned-configuration-exchange-2013-help) and [Import or export mail flow rule collections](mail-flow-rule-procedures.md#import-or-export-mail-flow-rule-collections).
+Mail flow rules that you create and configure on Edge Transport servers are stored in the local instance of AD LDS on the server. No automated replication of mail flow rules occurs on Edge Transport servers. Rules on the Edge Transport server apply only to messages that flow through the local server. If you need to apply the same set of mail flow rules on multiple Edge Transport servers, you can clone the Edge Transport server configuration, or export and import the mail flow rules. For more information, see [Edge Transport Server Cloned Configuration](../../../ExchangeServer2013/edge-transport-server-cloned-configuration-exchange-2013-help.md) and [Import or export mail flow rule collections](mail-flow-rule-procedures.md#import-or-export-mail-flow-rule-collections).
 
 Whenever the Transport service on a Mailbox server or Edge Transport server detects a modified mail flow rule, an event is logged in the Application log in the Event Viewer (Event ID 4002 on Mailbox servers, and Event ID 16028 on Edge Transport servers).
 
@@ -127,9 +128,9 @@ There are two mixed environment scenarios that are common:
 
   **Important**: Even though there is a substantial overlap between the conditions and actions that are available in Microsoft 365 or Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Microsoft 365 or Office 365, see the following topics:
 
-  [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  [Mail flow rule conditions and exceptions (predicates) in Exchange Online](../../../ExchangeOnline/security-and-compliance/mail-flow-rules/conditions-and-exceptions.md)
 
-  [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+  [Mail flow rule actions in Exchange Online](../../../ExchangeOnline/security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md)
 
 - **Coexistence with Exchange 2010**
 
