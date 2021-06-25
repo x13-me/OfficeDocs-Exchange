@@ -30,7 +30,7 @@ You can't enable plus addressing in the Exchange admin center (EAC); you can onl
 
 ## Enable plus addressing in your Exchange Online organization
 
-1. [Connect to Exchange Online PowerShell](https://powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. The command uses the following syntax:
 
