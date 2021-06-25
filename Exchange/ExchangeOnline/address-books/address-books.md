@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about the different methods that Exchange Online uses to organize and configure email addresses.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7c90d413-f978-4af5-8bc5-6b86d897edc3
 ms.reviewer: 
 title: Address books in Exchange Online
@@ -29,7 +29,7 @@ Exchange Online uses address books to organize and store email address informati
 |**Hierarchical address books**|The hierarchical address book (HAB) presents recipients in the GAL by using your organization's unique business structure (for example, seniority or management hierarchy), which provides an efficient method for locating internal recipients.|[Hierarchical address books](hierarchical-address-books/hierarchical-address-books.md)|
 |**Offline address books**|An offline address book (OAB) is a collection of address lists that can be downloaded and used in Outlook by users that are disconnected from the Exchange Online organization.|[Offline address books in Exchange Online](offline-address-books/offline-address-books.md)|
 
-**Note**: Email address policies are available in Exchange Online, but only for Microsoft 365 groups. For more information, see [Choose the domain to use when creating Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
+**Note**: Email address policies are available in Exchange Online, but only for Microsoft 365 groups. For more information, see [Choose the domain to use when creating Microsoft 365 Groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
 For help with everyday email tasks, such as organizing your contacts in Outlook, see [Microsoft 365 training](https://support.microsoft.com/training). You can find help including:
 

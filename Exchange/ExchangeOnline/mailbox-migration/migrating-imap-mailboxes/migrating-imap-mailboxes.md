@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 3fe19996-29bc-4879-aab9-5a622b2f1481
 ms.reviewer: 
 description: 'You can migrate the contents of user mailboxes from your source email system to Microsoft 365 or Office 365 using the Internet Message Access Protocol (IMAP).'
@@ -33,11 +33,13 @@ You can migrate the contents of user mailboxes from your source email system to 
 
 If this option won't work for you, see [Ways to migrate email to Microsoft 365 or Office 365](../mailbox-migration.md) for other options.
 
-For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
+For Windows PowerShell steps, see [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 ## Things to consider
 
 Here are a few limitations to be aware of:
+
+- Microsoft's data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
 - You can only migrate items in a user's inbox or other mail folders. This type of migration doesn't migrate contacts, calendar items, or tasks.
 
@@ -65,7 +67,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
 2. Prepare your IMAP source email system and get the information you need to migrate. If you plan to migrate your domain to Microsoft 365 or Office 365, verify that you own your domain with your domain registrar.
 
-    Depending on which type of email service you are migrating from, you might need to configure some settings or simply record the name of your email server or service to use later. You also need to verify your domain in your domain registry system if you have a custom domain.
+    Depending on which type of email service you are migrating from, you might need to configure some settings or record the name of your email server or service to use later. You also need to verify your domain in your domain registry system if you have a custom domain.
 
 3. Communicate changes to users.
 
@@ -77,7 +79,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
 5. If you are using the steps described in [Migrate Google Apps mailboxes to Microsoft 365 or Office 365](migrate-g-suite-mailboxes.md) or [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, usernames, and passwords for the mailboxes you want to migrate.
 
-    You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users it is easier to use a CSV file to enter all the information for the accounts.
+    You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com, or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users, it is easier to use a CSV file to enter all the information for the accounts.
 
 6. Connect Microsoft 365 or Office 365 to the source email system.
 
@@ -111,7 +113,7 @@ To finish an email migration successfully, it's a good idea to be comfortable do
 
 - You use step-by-step wizards in Microsoft 365 or Office 365 to configure and start the migration process.
 
-- After the mail has been migrated, you change your organization's MX record to point to Microsoft 365 or Office 365 when the migration is complete. Your MX record is how other mail systems find the location of your email system. Changing your MX record allows other mail systems to begin to send email directly to the new mailboxes in Microsoft 365 or Office 365. To learn how to update your MX record, see [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
+- After the mail has been migrated, you change your organization's MX record to point to Microsoft 365 or Office 365 when the migration is complete. Your MX record is how other mail systems find the location of your email system. Changing your MX record allows other mail systems to begin to send email directly to the new mailboxes in Microsoft 365 or Office 365. To learn how to update your MX record, see [Create DNS records at any DNS hosting provider](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) as well.
 
 If you're comfortable with what's involved in migrating mailboxes to Microsoft 365 or Office 365, you're ready to get started. The first step is to determine which source email system you're migrating from:
 
@@ -125,7 +127,7 @@ If you're comfortable with what's involved in migrating mailboxes to Microsoft 3
 
 - [IMAP migration in the Admin center](imap-migration-in-the-admin-center.md)
 
-- [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365)
+- [Use PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365)
 
 ## See also
 

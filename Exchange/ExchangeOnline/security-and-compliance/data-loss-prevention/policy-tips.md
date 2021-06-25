@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admin can learn about how policy tips can display compliance information to users as they compose email messages that contain sensitive content.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 ms.reviewer: 
 f1.keywords:
@@ -22,7 +22,7 @@ manager: serdars
 
 You can help to prevent your organization's Outlook, Outlook on the web (formerly known as Outlook Web App), and OWA for Devices email users from inappropriately sending sensitive information by creating data loss prevention (DLP) policies that include Policy Tip notification messages. Similar to MailTips that were introduced in Exchange Server 2010, Policy Tip notification messages are displayed to users in Outlook while they are composing an email message. Policy Tip notification messages only show up if something about the sender's email message seems to violate a DLP policy that you have in place and that policy includes a rule to notify the sender when the conditions that you establish are met. Watch this video to learn more.
 
-[!VIDEO](https://www.microsoft.com/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13?autoplay=false)
+[!VIDEO https://www.microsoft.com/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13?autoplay=false]
 
 In order to show Policy Tips to your email senders, your rules must include the **Notify the sender with a Policy Tip** action. You can add this in the rules editor from the Exchange admin center. For more information, see [Manage policy tips](manage-policy-tips.md).
 

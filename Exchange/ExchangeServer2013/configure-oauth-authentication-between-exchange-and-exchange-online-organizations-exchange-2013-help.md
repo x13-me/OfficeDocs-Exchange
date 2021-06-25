@@ -31,7 +31,7 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 >
 > - If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.
 >
-> - This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china).
+> - This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/services-in-china).
 
 ## What do you need to know before you begin?
 
@@ -39,7 +39,7 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- Completed configuration of your hybrid deployment using the Hybrid Deployment Wizard. For more information, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+- Completed configuration of your hybrid deployment using the Hybrid Deployment Wizard. For more information, see [Exchange Server Hybrid Deployments](../ExchangeHybrid/exchange-hybrid.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -55,17 +55,20 @@ For this procedure, you have to specify a verified domain for your Exchange Onli
 Run the following command in the Exchange Management Shell (Exchange PowerShell) in your on-premises Exchange organization:
 
 ```powershell
-New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
-New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"
+New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your tenant coexistence domain>/metadata/json/1"
+New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your tenant coexistence domain>/federationmetadata/2007-06/federationmetadata.xml"
 ```
 
 > [!NOTE]
 > If you are in the GCC High or DOD instance then you will need to use the following:
 >
 > ```Powershell  
-> New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/metadata/json/1"  
-> New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"  
+> New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://login.microsoftonline.us/<your tenant coexistence domain>/metadata/json/1"  
+> New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.microsoftonline.us/<your tenant coexistence domain>/federationmetadata/2007-06/federationmetadata.xml"  
 > ```  
+
+> [!NOTE]
+> The Tenant coexistence domain is of the form contoso.mail.onmicrosoft.com
 
 ### Step 2: Enable the partner application for your Exchange Online organization
 
@@ -162,7 +165,7 @@ Get-OABVirtualDirectory | FL server,*url*
    .\RegisterEndpoints.ps1
    ```
 
-3. To verify that all the records were added we need to run the following. We’re looking for https://namespace entries for all the URL’s, not 00000002-0000-0ff1-ce00-000000000000/namespace entries.
+3. To verify that all the records were added we need to run the following. We're looking for https://namespace entries for all the URL's, not 00000002-0000-0ff1-ce00-000000000000/namespace entries.
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
@@ -189,9 +192,9 @@ You must also define the external Autodiscover endpoint for your on-premises org
 - `https://<your primary SMTP domain>/autodiscover/autodiscover.svc>`
 
 > [!NOTE]
-> You can use the [Get-IntraOrganizationConfiguration](https://docs.microsoft.com/powershell/module/exchange/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Microsoft 365 or Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](https://docs.microsoft.com/powershell/module/exchange/New-IntraOrganizationConnector) cmdlet.
+> You can use the [Get-IntraOrganizationConfiguration](/powershell/module/exchange/Get-IntraOrganizationConfiguration) cmdlet in both your on-premises and Microsoft 365 or Office 365 tenants to determine the endpoint values needed by [New-IntraOrganizationConnector](/powershell/module/exchange/New-IntraOrganizationConnector) cmdlet.
 
-After you [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), replace \<your on-premises Autodiscover endpoint\> and \<your on-premises SMTP domain\> with your values and run the following command:
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), replace \<your on-premises Autodiscover endpoint\> and \<your on-premises SMTP domain\> with your values and run the following command:
 
 ```powershell
 New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
@@ -233,7 +236,7 @@ Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-prem
 
 ## How do you know this worked?
 
-You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
+You can verify that the OAuth configuration is correct by using the [Test-OAuthConnectivity](/powershell/module/exchange/Test-OAuthConnectivity) cmdlet. This cmdlet verifies that the on-premises Exchange and Exchange Online endpoints can successful authenticate requests from each other.
 
 To verify that your on-premises Exchange organization can successfully connect to Exchange Online, run the following command in Exchange PowerShell in your on-premises organization:
 
@@ -241,7 +244,7 @@ To verify that your on-premises Exchange organization can successfully connect t
 Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
-To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
+To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List

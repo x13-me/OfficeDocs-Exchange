@@ -58,7 +58,7 @@ See [Specify the administrators and users who can install and manage add-ins for
 
 If your end users are currently able to access add-ins and you want to remove that access, use the **Get-App** cmdlet in the Exchange Management Shell to see which add-ins each user has installed, and then use the **Remove-App** cmdlet to remove any add-ins from one or more users.
 
-For more information, go [here](https://docs.microsoft.com/powershell/module/exchange/Get-App).
+For more information, go [here](/powershell/module/exchange/Get-App).
 
 ## Allow administrators and users to install add-ins
 

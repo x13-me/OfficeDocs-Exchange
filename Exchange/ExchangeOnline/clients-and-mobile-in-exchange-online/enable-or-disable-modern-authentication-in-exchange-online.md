@@ -2,7 +2,7 @@
 localization_priority: Priority
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
@@ -30,9 +30,9 @@ manager: serdars
 
 # Enable or disable modern authentication for Outlook in Exchange Online
 
-Modern authentication in Exchange Online enables authentication features like multi-factor authentication (MFA), smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the [Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/azuread-dev/active-directory-authentication-libraries) (ADAL) and OAuth 2.0.
+Modern authentication in Exchange Online enables authentication features like multi-factor authentication (MFA), smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the [Active Directory Authentication Library](/azure/active-directory/azuread-dev/active-directory-authentication-libraries) (ADAL) and OAuth 2.0.
 
-When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication (Outlook 2013 or later) use modern authentication to connect to Exchange Online mailboxes. For more information, see [How modern authentication works for Office client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication (Outlook 2013 or later) use modern authentication to connect to Exchange Online mailboxes. For more information, see [How modern authentication works for Office client apps](/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
 When you disable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication use basic authentication to connect to Exchange Online mailboxes. They don't use modern authentication.
 
@@ -47,7 +47,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 - Enabling or disabling modern authentication in Exchange Online as described in this topic **does not** affect other email clients that support modern authentication (for example, Outlook Mobile, Outlook for Mac 2016, and Exchange ActiveSync in iOS 11 or later). These other email clients **always** use modern authentication to log in to Exchange Online mailboxes.
 
-- Enabling or disabling modern authentication has no effect on IMAP or POP3 clients. However, if you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
+- Enabling or disabling modern authentication has no effect on IMAP or POP3 clients. However, if you've enabled _security defaults_ in your organization, POP3 and IMAP4 are already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 
 - When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication will be prompted to log in again. Further, the Basic Auth login dialog box and the Modern Auth dialog box look very different. See the **Outlook and Basic Auth** section of the [Basic Auth and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282) blog post for details.
 
@@ -57,7 +57,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 ## Enable or disable modern authentication in Exchange Online for client connections in Outlook 2013 or later
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do one of these steps:
 
@@ -83,6 +83,6 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 ## See also
 
-[How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)
+[How modern authentication works for Office 2013 and Office 2016 client apps](/office365/enterprise/modern-auth-for-office-2013-and-2016)
 
-[Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
+[Set up multi-factor authentication](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)

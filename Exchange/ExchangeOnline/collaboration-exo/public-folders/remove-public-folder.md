@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.reviewer: 
 f1.keywords:
@@ -33,7 +33,7 @@ You may need to remove public folders that are no longer being used in your orga
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to remove a public folder
 
@@ -67,4 +67,4 @@ This example removes the public folder Marketing and all its subfolders because 
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder).
+For detailed syntax and parameter information, see [Remove-PublicFolder](/powershell/module/exchange/remove-publicfolder).

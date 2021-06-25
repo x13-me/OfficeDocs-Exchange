@@ -25,7 +25,7 @@ A federation trust establishes a trust relationship between a Microsoft Exchange
 For additional management tasks related to federation, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china).
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see [Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/services-in-china).
 
 ## What do you need to know before you begin?
 
@@ -187,7 +187,7 @@ For additional management tasks related to federation, see [Federation procedure
 
    Remember, any domain or subdomain that you add to the federation trust requires a proof of domain ownership TXT record,
 
-For detailed syntax and parameter information, see [New-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/New-ExchangeCertificate), [New-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/New-FederationTrust), [Get-FederatedDomainProof](https://docs.microsoft.com/powershell/module/exchange/Get-FederatedDomainProof), [Set-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Set-FederationTrust), [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/Set-FederatedOrganizationIdentifier), and [Add-FederatedDomain](https://docs.microsoft.com/powershell/module/exchange/Add-FederatedDomain).
+For detailed syntax and parameter information, see [New-ExchangeCertificate](/powershell/module/exchange/New-ExchangeCertificate), [New-FederationTrust](/powershell/module/exchange/New-FederationTrust), [Get-FederatedDomainProof](/powershell/module/exchange/Get-FederatedDomainProof), [Set-FederationTrust](/powershell/module/exchange/Set-FederationTrust), [Set-FederatedOrganizationIdentifier](/powershell/module/exchange/Set-FederatedOrganizationIdentifier), and [Add-FederatedDomain](/powershell/module/exchange/Add-FederatedDomain).
 
 ## How do you know this worked?
 
@@ -207,7 +207,7 @@ To further verify that you have successfully created and configured the federati
    Get-FederationInformation -DomainName <PrimarySharedDomain>
    ```
 
-For detailed syntax and parameter information, see [Get-FederationTrust](https://docs.microsoft.com/powershell/module/exchange/Get-FederationTrust) and [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/Get-FederationInformation).
+For detailed syntax and parameter information, see [Get-FederationTrust](/powershell/module/exchange/Get-FederationTrust) and [Get-FederationInformation](/powershell/module/exchange/Get-FederationInformation).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

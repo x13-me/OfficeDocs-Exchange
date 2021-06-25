@@ -3,7 +3,7 @@ localization_priority: Normal
 description: A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes.
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
 ms.reviewer: 
 title: Clients and mobile in Exchange Online

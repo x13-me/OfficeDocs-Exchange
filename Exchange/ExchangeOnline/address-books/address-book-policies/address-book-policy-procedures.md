@@ -3,7 +3,7 @@ localization_priority: Normal
 description: A list of links to the procedure topics for address book policies (ABPs) in Exchange Online
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 71e5dc2f-5de2-4089-8690-f2a0ed8ede0d
 ms.reviewer: 
 title: Address book policy procedures in Exchange Online

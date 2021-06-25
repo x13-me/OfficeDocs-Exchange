@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can configure a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've configured Voice Mail Preview partner settings, such as the Voice Mail Preview partner ID and Voice Mail Preview partner address, on a UM mailbox policy, the settings you configure will apply to all UM-enabled users who are linked with that mailbox policy.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 ms.reviewer: 
 f1.keywords:
@@ -75,6 +75,6 @@ If you want to configure the Voice Mail Preview partner service for some, but no
 
 - [Assign a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy.md)
 
-- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/set-ummailbox)
+- [Set-UMMailbox](/powershell/module/exchange/set-ummailbox)
 
 For more information about the Voice Mail Preview partner program, see [Voice Mail Preview advisor](voice-mail-preview-advisor.md).

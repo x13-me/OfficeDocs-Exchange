@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -68,7 +68,7 @@ To fix the problem, configure a dedicated outbound connector that uses smart hos
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
-This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
+This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
 ```powershell
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises
@@ -90,7 +90,7 @@ To fix the problem, configure a dedicated inbound connector that has the **Conne
 
    - **Scope**: Verify that **Accepted domains** is empty.
 
-For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing).
+For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](../../../ExchangeHybrid/transport-routing.md).
 
 ## Causes for NDR 5.4.14 and what does this error mean?
 
@@ -114,7 +114,7 @@ Here are some of the error codes that are related to mail routing loops or a bad
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

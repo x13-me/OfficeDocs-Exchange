@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Microsoft Exchange Unified Messaging (UM) includes a feature called Voice Mail Preview, which uses automatic speech recognition (ASR) to add a text version of the voice mail audio file to voice mail messages. ASR isn't entirely accurate, especially when it's used to record audio over a phone that contains unknown voices and noises. Some organizations require consistently error-free (or near-error-free) transcripts of voice messages. The Voice Mail Preview Partner program can help such organizations meet those requirements.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0957dd54-df6d-4b50-9db5-4757f548b899
 ms.reviewer: 
 f1.keywords:
@@ -67,4 +67,4 @@ After UM has been configured, it forwards voice messages with the audio to a ded
 
 Configuring VoIP gateways and IP PBXs for your organization is a difficult deployment task that must be completed correctly to successfully deploy Unified Messaging with a Voice Mail Preview partner. For information that can help you configure your VoIP gateways and IP PBXs, and for the most up-to-date information about how to configure them, see [Telephony advisor for Exchange 2013](../../voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013.md) or [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](../../voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways.md).
 
-Testing interoperability of Exchange UM with VoIP gateways has been integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](https://docs.microsoft.com/SkypeForBusiness/lync-cert/qualified-lync-apps).
+Testing interoperability of Exchange UM with VoIP gateways has been integrated with the Microsoft Unified Communications Open Interoperability Program. For more information, see [Microsoft Unified Communications Open Interoperability Program](/SkypeForBusiness/lync-cert/qualified-lync-apps).

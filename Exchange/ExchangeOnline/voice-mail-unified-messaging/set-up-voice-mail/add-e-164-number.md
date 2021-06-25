@@ -3,7 +3,7 @@ localization_priority: Normal
 description: When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains the E.164 number for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
 ms.reviewer: 
 f1.keywords:
