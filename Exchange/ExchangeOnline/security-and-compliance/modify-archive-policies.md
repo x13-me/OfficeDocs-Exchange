@@ -3,7 +3,7 @@ localization_priority: Normal
 description: In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.reviewer: 
 f1.keywords:
@@ -26,7 +26,7 @@ Exchange Setup creates a retention policy called **Default MRM Policy**. This po
 
 You can modify retention tags included in the default policy to meet your business requirements. For example, you can modify the archive DPT to move items to the archive after three years instead of two. You can also create additional personal tags and either add them to a retention policy, including the **Default MRM Policy**, or allow users to add personal tags to their mailboxes from Outlook on the web (formerly known as Outlook Web App) Options.
 
-For additional management tasks related to archives, see [Enable archive mailboxes in the Security & Compliance Center](/microsoft-365/compliance/enable-archive-mailboxes).
+For additional management tasks related to archives, see [Enable archive mailboxes in the Microsoft 365 compliance center](/microsoft-365/compliance/enable-archive-mailboxes).
 
 > [!NOTE]
 > In an Exchange hybrid deployment, you can enable a cloud-based archive mailbox for an on-premises primary mailbox. If you assign an archive policy to an on-premises mailbox, items are moved to the cloud-based archive. If an item is moved to the archive mailbox, a copy of it isn't retained in the on-premises mailbox. If the on-premises mailbox is placed on hold, an archive policy will still move items to the cloud-based archive mailbox where they are preserved for the duration specified by the hold.
@@ -52,15 +52,10 @@ For additional management tasks related to archives, see [Enable archive mailbox
    > You can click the **TYPE** column to sort retention tags by type. The default archive policy is displayed as type **Default** and has the **Archive** retention action. Alternatively, click **NAME** to sort retention tags by name.
 
 3. In **Retention Tag**, view or modify the following settings, and then click **Save**:
-
    - **Name**: Use this box at the top of the page to view or change the tag name.
-
    - **Retention tag type**: This read-only field displays the tag type.
-
    - **Retention action**: Don't modify this field for archive policies.
-
    - **Retention period**: Select one of the following options:
-
    - **Never**: Click this button to disable the tag. If the DPT is disabled, the tag is no longer applied to the mailbox.
 
      > [!IMPORTANT]

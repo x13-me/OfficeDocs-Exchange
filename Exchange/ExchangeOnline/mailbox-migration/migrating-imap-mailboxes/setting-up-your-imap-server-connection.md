@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.reviewer: 
 description: Learn how to find your IMAP server name is Outlook on the web (Outlook Web App).

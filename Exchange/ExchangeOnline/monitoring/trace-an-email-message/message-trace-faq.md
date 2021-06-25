@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Frequently asked questions about message trace.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.reviewer: 
 f1.keywords:
@@ -25,10 +25,12 @@ This article presents messaging questions that a user may have, along with possi
 ## How long does it take to see results when running a message trace?
 
 - In the classic Exchange admin center (classic EAC), the search results appear immediately for messages that are less than seven days old.
-
-- In the Security & Compliance center and the modern Exchange admin center (modern EAC), the search results appear immediately for messages that are less than 10 days old.
+- In the modern Exchange admin center (modern EAC), the search results appear immediately for messages that are less than 10 days old.
 
 When you run a message trace for older messages, the results are returned within a few hours as a downloadable CSV file.
+
+> [!NOTE]
+> The **Exchange message trace** link in the Microsoft 365 Defender portal opens message trace in the modern EAC.
 
 ## How long does it take for a sent message to appear in a message trace?
 
@@ -160,7 +162,7 @@ The events section will tell you why the message was not yet delivered. When vie
 
 ## Was a message marked as spam?
 
-Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](/office365/SecurityCompliance/anti-spam-and-anti-malware-protection).
+Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 To find out why a message was marked as spam:
 
@@ -170,7 +172,7 @@ When the content filter marks a message as spam, if it is sent to the Junk Email
 
 ## Was a message detected to contain malware?
 
-Messages are detected as malware when its properties, either in the message body or in an attachment, match a malware definition in of one of the anti-malware engines. For more detailed information about malware filtering, see [Anti-Malware protection](/office365/SecurityCompliance/anti-malware-protection).
+Messages are detected as malware when its properties, either in the message body or in an attachment, match a malware definition in of one of the anti-malware engines. For more detailed information about malware filtering, see [Anti-Malware protection](/microsoft-365/security/office-365-security/anti-malware-protection).
 
 To find out why a message was detected to contain malware, [run a message trace](run-a-message-trace-and-view-results.md#run-a-message-trace). Use as many search criteria as possible to narrow down the results. Set the delivery status to **Failed**.
 

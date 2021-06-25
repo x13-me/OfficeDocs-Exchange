@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can enable callers to transfer calls to users through an auto attendant, or prevent them from doing so. By default this option is enabled, and lets callers transfer calls to UM-enabled users in the Unified Messaging (UM) dial plan that's associated with the UM auto attendant.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: ca961cc8-cc24-4e05-b72d-79979c155cf9
 ms.reviewer: 
 f1.keywords:

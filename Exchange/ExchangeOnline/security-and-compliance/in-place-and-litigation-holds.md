@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-description: "When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:"
+description: "When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific article or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:"
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.reviewer: 
 f1.keywords:
@@ -22,15 +22,16 @@ manager: serdars
 # In-Place Hold and Litigation Hold
 
 > [!IMPORTANT]
->  As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place Holds. But you'll still be able to manage In-Place Holds in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place Holds. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place Holds in Exchange Server and Exchange hybrid deployments will still be supported. You will also still be able to place mailboxes on Litigation Hold. For more information about the retirement of In-Place Holds in Exchange Online, see [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement).
+> - Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+> - As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place Holds. But you'll still be able to manage In-Place Holds in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place Holds. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place Holds in Exchange Server and Exchange hybrid deployments will still be supported. You will also still be able to place mailboxes on Litigation Hold. For more information about the retirement of In-Place Holds in Exchange Online, see [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement).
 
-When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:
+When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific article or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:
 
 - End users may be asked to preserve email by not deleting any messages. However, users can still delete email knowingly or inadvertently.
 
 - Automated deletion mechanisms such as messaging records management (MRM) may be suspended. This could result in large volumes of email cluttering the user mailbox, and thus impacting user productivity. Suspending automated deletion also doesn't prevent users from manually deleting email.
 
-- Some organizations copy or move email to an archive to make sure it isn't deleted, altered, or tampered with. This increases costs due to the manual efforts required to copy or move messages to an archive, or third-party products used to collect and store email outside Exchange.
+- Some organizations copy or move email to an archive to make sure it isn't deleted, altered, or tampered with. This increase costs due to the manual efforts required to copy or move messages to an archive, or third-party products used to collect and store email outside Exchange.
 
 Failure to preserve email can expose an organization to legal and financial risks such as scrutiny of the organization's records retention and discovery processes, adverse legal judgments, sanctions, or fines.
 
@@ -68,7 +69,7 @@ Using this new model, In-Place Hold allows you to create granular hold policies 
 - **Query-based hold**: If your organization preserves items based on specified query parameters, you can use a query-based In-Place Hold. You can specify query parameters such as keywords, start and end dates, sender and recipient addresses, and message types. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved.
 
     > [!IMPORTANT]
-    > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more details about partially indexed items, see [Partially indexed items in Content Search](/office365/securitycompliance/partially-indexed-items-in-content-search).
+    > Items that are marked as unsearchable, generally because of failure to index an attachment, are also preserved because it can't be determined whether they match query parameters. For more information about partially indexed items, see [Partially indexed items in Content Search](/microsoft-365/compliance/partially-indexed-items-in-content-search).
 
 - **Time-based hold**: Both In-Place Hold and Litigation Hold allow you to specify a duration of time for which to hold items. The duration is calculated from the date a mailbox item is received or created.
 
@@ -123,6 +124,8 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 - **Versions** - When a user placed on In-Place Hold or Litigation Hold, mailbox items must be protected from tampering or modification by the user or a process. This is accomplished using a copy-on-write process. When a user or a process changes specific properties of a mailbox item, a copy of the original item is saved in the Versions folder before the change is committed. The process is repeated for subsequent changes. Items captured in the Versions folder are also indexed and returned in eDiscovery searches. After the hold is removed, copies in the Versions folder are removed by the Managed Folder Assistant.
 
+- **SubstrateHolds** - If In-Place Hold, Litigation Hold, or a Microsoft 365 or Office 365 Teams Chat retention policy is enabled, this subfolder contains the original copy of the Teams message if the message has been modified or deleted. A copy of the item before modification is saved. This folder isn't visible to end users.
+
 **Properties that trigger copy-on-write**
 
 | Item type | Properties that trigger copy-on-write |
@@ -144,13 +147,13 @@ Items in the Recoverable Items folder aren't calculated toward the user's mailbo
 
   > [!NOTE]
   > 
-  > - After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. For instructions, see Step 4 in [Increase the Recoverable Items quota for mailboxes on hold](/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings).
+  > - After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. For instructions, see Step 4 in [Increase the Recoverable Items quota for mailboxes on hold](/microsoft-365/compliance/increase-the-recoverable-quota-for-mailboxes-on-hold#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings).
   >
   > - Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this might happen after you enable the archive mailbox.
 
-- **Create a custom retention policy for mailboxes on hold** - In addition to enabling the archive mailbox and auto-expanding archiving for mailboxes on Litigation Hold or In-Place Hold, you might also want to create a custom MRM retention policy in Exchange Online for mailboxes on hold. This let's you apply a retention policy to mailboxes on hold that's different from the Default MRM Policy that's applied to mailboxes that aren't on hold. This lets you to apply retention tags that are specifically designed for mailboxes on hold. This includes creating a new retention tag for the Recoverable Items folder.
+- **Create a custom retention policy for mailboxes on hold** - In addition to enabling the archive mailbox and auto-expanding archiving for mailboxes on Litigation Hold or In-Place Hold, you might also want to create a custom MRM retention policy in Exchange Online for mailboxes on hold. This let's you apply a retention policy to mailboxes on hold that's different from the Default MRM Policy that's applied to mailboxes that aren't on hold. This lets you apply retention tags that are specifically designed for mailboxes on hold. This includes creating a new retention tag for the Recoverable Items folder.
 
-For more information, see [Increase the Recoverable Items quota for mailboxes on hold](/office365/securitycompliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
+For more information, see [Increase the Recoverable Items quota for mailboxes on hold](/microsoft-365/compliance/increase-the-recoverable-quota-for-mailboxes-on-hold).
 
 ## Holds and email forwarding
 
@@ -160,4 +163,4 @@ If email forwarding is set up for a mailbox and messages aren't copied to the or
 
 ## Deleting a mailbox on hold
 
-When you delete the corresponding Microsoft 365 or Office 365 account for a mailbox that's been placed on Litigation Hold or In-Place Hold, the mailbox is converted to an inactive mailbox, which is a type of soft-deleted mailbox. Inactive mailboxes are used to preserve the contents of a user's mailbox after they leave your organization. Items in an inactive mailbox are preserved for the duration of the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, or records managers to use the Content Search tool in the Microsoft 365 Compliance Center to access and search the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists. For more information, see [Overview of inactive mailboxes](/office365/securitycompliance/inactive-mailboxes-in-office-365).
+When you delete the corresponding Microsoft 365 or Office 365 account for a mailbox that's been placed on Litigation Hold or In-Place Hold, the mailbox is converted to an inactive mailbox, which is a type of soft-deleted mailbox. Inactive mailboxes are used to preserve the contents of a user's mailbox after they leave your organization. Items in an inactive mailbox are preserved during the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, or records managers to use the Content Search tool in the Microsoft 365 Compliance Center to access and search the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists. For more information, see [Overview of inactive mailboxes](/microsoft-365/compliance/inactive-mailboxes-in-office-365).

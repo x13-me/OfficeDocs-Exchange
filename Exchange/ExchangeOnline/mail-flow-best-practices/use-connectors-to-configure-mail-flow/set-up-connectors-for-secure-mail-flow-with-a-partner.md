@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.reviewer: 
 f1.keywords:
@@ -40,13 +40,11 @@ When you set up a connector, email messages are checked to make sure they meet t
 You can set up one or both of the following depending on your requirements:
 
 - [Set up a connector to apply security restrictions to mail sent from Microsoft 365 or Office 365 to your partner organization](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-microsoft-365-or-office-365-to-your-partner-organization)
-
 - [Set up a connector to apply security restrictions to mail sent from your partner organization to Microsoft 365 or Office 365](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-your-partner-organization-to-microsoft-365-or-office-365)
 
 Also in this article:
 
 - [Change a connector that Microsoft 365 or Office 365 is using for mail flow](#change-a-connector-that-microsoft-365-or-office-365-is-using-for-mail-flow)
-
 - [Example security restrictions you can apply to email sent from a partner organization](#example-security-restrictions-you-can-apply-to-email-sent-from-a-partner-organization)
 
 Review this section to help you determine the specific settings you need for your business.

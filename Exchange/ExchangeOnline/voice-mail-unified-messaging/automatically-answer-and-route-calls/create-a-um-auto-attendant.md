@@ -7,7 +7,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.CreateAutoAttendantWizardForm.CreateAutoAttendantWizardPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
 ms.reviewer: 
 title: Create a UM auto attendant in Exchange Online

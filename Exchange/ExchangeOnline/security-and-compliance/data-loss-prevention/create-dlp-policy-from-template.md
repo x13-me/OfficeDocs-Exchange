@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see DLP policy templates supplied in Exchange. Example DLP templates that are supplied can help you manage:'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.reviewer: 
 f1.keywords:
@@ -28,7 +28,7 @@ In Microsoft Exchange, you can use data loss prevention (DLP) policy templates t
 
 - United States Personally Identifiable Information (U.S. PII)
 
-You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of mail flow rules (also known as transport rules) that include new conditions or predicates and actions. DLP policies support the full range of traditional mail flow rules, and you can add the additional rules after a DLP policy has been established. For more information about policy templates, see [What the DLP policy templates include](/office365/securitycompliance/what-the-dlp-policy-templates-include). To learn more about mail flow rule capabilities, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md). Once you have started enforcing a policy, you can learn about how to observe the results by reviewing the Exchange Online: [View the reports for data loss prevention](/microsoft-365/compliance/view-the-dlp-reports).
+You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of mail flow rules (also known as transport rules) that include new conditions or predicates and actions. DLP policies support the full range of traditional mail flow rules, and you can add the additional rules after a DLP policy has been established. For more information about policy templates, see [What the DLP policy templates include](/microsoft-365/compliance/what-the-dlp-policy-templates-include). To learn more about mail flow rule capabilities, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md). Once you have started enforcing a policy, you can learn about how to observe the results by reviewing the Exchange Online: [View the reports for data loss prevention](/microsoft-365/compliance/view-the-dlp-reports).
 
 > [!CAUTION]
 > You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results.

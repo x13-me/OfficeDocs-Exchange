@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to enable mail flow for subdomains in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4033a30a-f506-481c-8ef0-fd9a0508ae38
 ms.reviewer: 
 title: Enable mail flow for subdomains in Exchange Online
@@ -26,6 +26,8 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > - If you have a limited number of subdomains, and know all the subdomain names, we recommend setting up each subdomain as an accepted domain in the Microsoft 365 admin center, instead of using the procedures in this topic. By setting up each subdomain separately, you can have finer control over mail flow and can include unique mail flow rules (also known transport rules) for each subdomain. For more information about adding a domain in the Microsoft 365 admin center, see [Add your domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 >
 > - In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md).
+> 
+> - In order to send email to public folders within your Exchange Online environment, you need to set the domain type to internal relay if the domain contains recipient addresses assigned to public folders. Directory-Based Edge Blocking cannot be used for public folders. 
 >
 > - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the outbound connector. For instructions, see [Use the EAC to add the domain to your outbound connector](enable-mail-flow-for-subdomains.md#use-the-eac-to-add-the-domain-to-your-outbound-connector).
 

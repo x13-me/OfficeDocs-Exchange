@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can configure the minimum PIN length for your Outlook Voice Access users who are enabled for Unified Messaging (UM). The PIN settings that you configure on a UM mailbox policy will apply to all UM-enabled users associated with the UM mailbox policy.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b2ecab54-42e6-45af-8322-615cc1f68dd9
 ms.reviewer: 
 f1.keywords:

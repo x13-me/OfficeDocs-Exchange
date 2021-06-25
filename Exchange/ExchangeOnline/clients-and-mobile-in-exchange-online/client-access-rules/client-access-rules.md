@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
 ms.reviewer: 
 title: Client Access Rules in Exchange Online
@@ -32,6 +32,9 @@ Client Access Rules help you control access to your Exchange Online organization
 - Block access to the Exchange admin center (EAC) for users in a specific country or region.
 
 For Client Access Rule procedures, see [Procedures for Client Access Rules in Exchange Online](procedures-for-client-access-rules.md).
+
+> [!NOTE]
+> Block service account access when using EWS impersonation is not supported with Client Access Rules.
 
 ## Client Access Rule components
 
