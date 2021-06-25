@@ -8,7 +8,7 @@ ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Configure email forwarding for a mailbox
+title: Configure email forwarding for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Configure email forwarding for a mailbox
+# Configure email forwarding for a mailbox in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Email forwarding lets you set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
 
