@@ -42,15 +42,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Add the sender to the group's existing allowed senders list
 
-**For New EAC**
+#### New EAC
 
-1.  Navigate to **Recipients** \> **Groups**.
+1. Go to **Recipients** \> **Groups**.
 
 2. Click the **Distribution list** tab.
 
 3. Select a group from the list and click it. The group properties screen appears.
 
-:::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
+   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
 
 4. Click the **Settings** tab.
 
@@ -58,19 +58,19 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 6. Under **Sender options**, choose the option **Only allow messages from people inside my organization**.
 
-:::image type="content" source="../../media/delivery-management-specific-senders.png" alt-text="The Delivery management screen on which specific internal members of the organization are chosen as senders":::
+   :::image type="content" source="../../media/delivery-management-specific-senders.png" alt-text="The Delivery management screen on which specific internal members of the organization are chosen as senders":::
 
 7. Under **Specified senders**, click on the text box. The list of senders is displayed.
    
-:::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a chosen sender is added to the group":::
+   :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a chosen sender is added to the group":::
 
-- Choose senders from the list. The chosen sender's name is displayed below the text box.
+   Choose senders from the list. The chosen sender's name is displayed below the text box.
 
-:::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
+   :::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
 
 8. Click **Save changes**.
 
-**For Classic EAC**
+#### Classic EAC
 
 1. In the Classic EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -93,15 +93,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 If you decide that you don't need to restrict the message senders to this group, you can remove the restrictions so anyone can send messages to this group:
 
-**For New EAC**
+#### New EAC
 
-1. Navigate to **Recipients** \> **Groups**.
+1. Go to **Recipients** \> **Groups**.
 
 2. Click the **Distribution list** tab.
 
 3. Select a group from the list and click it. The group properties screen appears.
 
-:::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
+   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
 
 4. Click the **Settings** tab.
 
@@ -109,11 +109,11 @@ If you decide that you don't need to restrict the message senders to this group,
 
 6. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
 
-:::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
+   :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
 
 7. Click **Save changes**.
 
-**For Classic EAC**
+#### Classic EAC
 
 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
