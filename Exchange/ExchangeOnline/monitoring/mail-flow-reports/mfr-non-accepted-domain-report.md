@@ -21,6 +21,8 @@ Microsoft 365 might throttle these messages if we have data to prove that the in
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 The overview section contains a chart that shows the number of messages sent per connector:
 
