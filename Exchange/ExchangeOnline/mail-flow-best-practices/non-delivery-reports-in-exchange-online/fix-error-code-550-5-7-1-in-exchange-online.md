@@ -47,19 +47,16 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
 - **If the recipient is external (outside of your organization)**: Contact the recipient (by phone, in person, etc.) and ask them to tell their email admin about your email delivery problem. Their email admin might need to reconfigure the recipient's mailbox so it accepts email from you.
 
-- **If the recipient is an internal group**: You might not have permission to send to the group or to one of its subgroups. In this case, the NDR will include the names of the restricted groups that you don't have permission to send to. Ask the owner of the restricted group to grant you permission to send messages. If you don't know the group's owner, you can find it in Outlook or Outlook on the web (formerly known as Outlook Web App) by doing the following steps:
+- **If the recipient is an internal group**: You might not have permission to send to the group or to one of its subgroups. In this case, the NDR will include the names of the restricted groups that you don't have permission to send to. Ask the owner of the restricted group to grant you permission to send messages to the group. If you don't know the group's owner, you can find it in Outlook or Outlook on the web (formerly known as Outlook Web App) by doing the following steps:
 
   - **Outlook**: Select the NDR, double-click the group name on the **To** line, and then choose **Contact**.
-
-    - **Outlook on the web**: Select the NDR, choose the group name on the **To** line, and then choose **Owner**.
+  - **Outlook on the web**: Select the NDR, choose the group name on the **To** line, and then choose **Owner**.
 
 - **If you're sending to a large distribution group**: Groups with more than 5,000 members have the following restrictions automatically applied to them:
-
   - Messages sent to the group require approval by a moderator.
-
   - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
-   To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
+  To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
 If none of the previous steps apply or solve your issue, contact the recipient's email administrator, and refer them to the [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue) section later in this topic.
 
@@ -68,17 +65,12 @@ If none of the previous steps apply or solve your issue, contact the recipient's
 If a message sender received this NDR when they attempted to send a message to your group, and you want them to successfully send messages to your group, try one of the following steps:
 
 - **Remove the sender restriction**: Change your group settings to unblock the sender in one of the following ways:
-
-  - Add the sender to the group's allowed senders list. Create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
-
+  - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
-
-  - If you've configured a mail flow rule (also known as a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
+  - If you've configured a mail flow rule (also known a a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
 
 - **Restrictions on large groups**: Groups with more than 5,000 members have the following restrictions automatically applied:
-
   - Messages sent to the group require approval by a moderator.
-
   - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
    To resolve the issue for the sender, approve their message, or add them to the group.
@@ -99,7 +91,7 @@ If only this recipient is having difficulty accepting messages from external sen
 
 When the recipient is a mail-enabled public folder in your Exchange Online organization, an external sender will receive an NDR with the following error code:
 
-  `Remote Server returned '<xxxxxxxx> #5.7.1 smtp;550 5.7.1 RESOLVER.RST.AuthRequired; authentication required [Stage: CreateMessage]'`
+`Remote Server returned '<xxxxxxxx> #5.7.1 smtp;550 5.7.1 RESOLVER.RST.AuthRequired; authentication required [Stage: CreateMessage]'`
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
@@ -118,24 +110,22 @@ To configure the public folder to accept messages from external senders, follow 
 5. Under **Message Delivery Restrictions** \> **Accept messages from**, perform the following tasks:
    - Clear the check box for **Require that all senders are authenticated**.
    - Select **All senders**.
-   
+
    :::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder":::
-    
+
 6. Click **Save**.
 
 #### Classic EAC
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](/Exchange/exchange-admin-center).
+1. Open the Exchange admin center (EAC). For more information, see [exchange admin center in exchange online](../../exchange-admin-center.md).
 
 2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
    ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
 3. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
-
-   - Clear the check box for **Require that all senders are authenticated**.
-
-   - Select **All senders**.
+    - Clear the check box for **Require that all senders are authenticated**.
+    - Select **All senders**.
 
    ![Public folder delivery restrictions to help fix DSN 5.7.135](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
 
@@ -176,7 +166,6 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 ### Hybrid configuration issues
 
 - If your domain is part of a hybrid deployment between on-premises Exchange and Exchange Online, the Hybrid Configuration Wizard should automatically configure the required connectors for mail flow. Even so, you can use the steps in this section to verify the connector settings.
-
   1. Open the Microsoft 365 admin center at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
 
   2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. Select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
