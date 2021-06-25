@@ -16,7 +16,7 @@ description: You use plus addressing to support dynamic, disposable recipient (n
 
 # Plus Addressing in Exchange Online
 
-From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is defined as a way to support dynamic, disposable recipient (not sender) email addresses for mailboxes.
+From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is a defined way to support dynamic, disposable recipient (not sender) email addresses for mailboxes.
 
 An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For example, sean@contoso.com. 
 
@@ -26,11 +26,11 @@ The original email address must be valid; the `+tag` value that you add is arbit
 
 Plus addressing is available in [Outlook](https://outlook.live.com/owa/). By default, plus addressing support is disabled in Exchange Online. Since Exchange Online has always supported regular email addresses that already contain the plus sign, if you enable plus addressing, these email addresses might stop working.
 
-You can’t enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell. If your organization’s emails are routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
+You can't enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell. If your organization's email is routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
 
 ## Enable plus addressing in your Exchange Online organization
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange Online PowerShell](https://powershell/exchange/connect-to-exchange-online-powershell).
 
 2. The command uses the following syntax:
 
@@ -48,14 +48,12 @@ You can’t enable plus addressing in the Exchange admin center (EAC); you can o
 
 You can create new plus addresses by adding a new tag. You can use plus addresses as unique addresses for services that you sign up for. 
 
->[!NOTE]
-> Some web forms don’t support plus signs in email addresses. If you have subscribed to some email list subscription services using an SMTP email address, and you need to unsubscribe from them, you nust use the email address that you subsribed with. You cannot unsubscribe by sending emails from plus address.
+> [!NOTE]
+>
+> Some web forms don't support plus signs in email addresses.
+>
+> If you need to unsubscribe from an email list subscription service, some subscription services require that use the original email address that you subsribed with. You can't unsubscribe by sending email from plus address.
 
-You also cannot unsubscribe from some email subscriptions using unsubscribe email messages with plus addresses if you have subscribed to them using 
-
-As plus addresses are not aliases that are configured on the mailbox, they don’t resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can’t use a plus address for a Microsoft service that needs to be associated with your mailbox.
+As plus addresses are not aliases that are configured on the mailbox, they don't resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can't use a plus address for a Microsoft service that needs to be associated with your mailbox.
 
 To automatically identify and filter email messages that are sent to plus addresses, use Inbox rules to act on those messages. Using the condition *Recipient address includes*, you can specify an action for messages sent to a particular plus address, such as moving the messages to a folder.
-
-
-
