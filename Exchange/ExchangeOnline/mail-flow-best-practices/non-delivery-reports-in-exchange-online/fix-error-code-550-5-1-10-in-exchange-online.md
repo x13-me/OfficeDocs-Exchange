@@ -190,19 +190,18 @@ Unlike Inbox rules that are associated with a user's mailbox, mail flow rules (a
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
-:::image type="content" source="../../media/microsoft-365-admin-center.png" alt-text="The Microsoft 365 Admin center home screen":::
+   :::image type="content" source="../../media/microsoft-365-admin-center.png" alt-text="The Microsoft 365 Admin center home screen":::
 
 2. In the Exchange admin center (EAC), that is, New EAC or Classic EAC, go to **Mail flow** \> **Rules**.
 
 3. Look for any redirect rules that might be forwarding the sender's message to another address. 
+    - An example of a redirect rule in New EAC is the following image.
 
-    - An example of a redirect rule in New EAC is the below image.
-   
     :::image type="content" source="../../media/redirect-rule-forwarding-sender-message.png" alt-text="The screen displaying a redirect rules that forwards sender's message to another address":::
-    
-    - An example of a redirect rule in Classic EAC is the below image.
 
-   ![Screenshot shows the Rules page of the Mail flow area in the Exchange admin center. The On check box is selected for the Rule to redirect user Allie Bellew's mail.](../../media/de24b162-f8bc-416b-8a1f-4ad58c9f52c2.png)
+    - An example of a redirect rule in Classic EAC is the following image.
+
+     ![Screenshot shows the Rules page of the Mail flow area in the Exchange admin center. The On check box is selected for the Rule to redirect user Allie Bellew's mail.](../../media/de24b162-f8bc-416b-8a1f-4ad58c9f52c2.png)
 
 4. Update, turn off, or delete any suspect forwarding rules.
 
@@ -211,18 +210,16 @@ Unlike Inbox rules that are associated with a user's mailbox, mail flow rules (a
 **Notes**:
 
 - Message routing (especially in hybrid configurations) can be complex. Even if changing the accepted domain setting fixes the bounce message problem, it might not be right solution for you. In some cases, changing the accepted domain type might cause other unanticipated problems. Review [Manage accepted domains in Exchange Online](../manage-accepted-domains/manage-accepted-domains.md) and then proceed with caution.
-
   - **If the accepted domain in Exchange Online is Authoritative**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, message delivery stops and the sender will receive this bounce message. On-premises users must be represented in the Exchange Online organization by mail contacts or mail users (created manually or by directory synchronization).
-
   - **If the accepted domain in Exchange Online is Internal Relay**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, the service relays the message to your on-premises Exchange Organization (assuming you've correctly set up the required connector to do so).
 
 - When setting an accepted domain to Internal Relay, you must set up a corresponding Microsoft 365 or Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 
-**To change the Accepted Domain from Authoritative to Internal Relay**
+**To change the Accepted Domain from Authoritative to Internal Relay**:
 
 If you have a hybrid configuration with a Microsoft 365 or Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
 
-**New Exchange admin center (EAC)**
+**New Exchange admin center (EAC)**:
 
 1. Open the New Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -230,17 +227,17 @@ If you have a hybrid configuration with a Microsoft 365 or Office 365 connector 
 
 3. Select a recipient's domain and double-click it.
 
-:::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen":::
+   :::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen":::
 
-The accepted's domain details screen appears.
+   The accepted's domain details screen appears.
 
 4. Click the radio button for **Internal Relay**.
 
-:::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay":::
+   :::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay":::
  
 5. Click **Save**.
 
-**Classic EAC**
+**Classic EAC**:
 
 1. Open the Classic EAC. For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
@@ -259,7 +256,6 @@ The accepted's domain details screen appears.
 If you have a hybrid configuration and the recipient is located in the on-premises Exchange organization, it's possible that the recipient's email address isn't properly synchronized with Microsoft 365 or Office 365. Follow these steps to synchronize directories manually:
 
 1. Log into the on-premises server that's running Azure AD Connect sync.
-
 2. Open Windows PowerShell on the server and run the following commands:
 
    ```powershell
