@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to create of global address lists (GALs) in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 ms.reviewer:
 title: Create a global address list in Exchange Online
@@ -32,7 +32,7 @@ For additional GAL management tasks, see [Address list procedures in Exchange On
 
 - By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
 
-- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For details about recipient filters in the Exchange Online PowerShell, see [Recipient filters for address lists in Exchange Online PowerShell](use-recipient-filters-to-create-an-address-list.md).
 
@@ -67,7 +67,7 @@ This example creates a GAL with a custom recipient filter:
 New-GlobalAddressList -Name "Agency A GAL" -RecipientFilter "CustomAttribute15 -like '*AgencyA*'"
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/new-globaladdresslist).
+For detailed syntax and parameter information, see [New-GlobalAddressList](/powershell/module/exchange/new-globaladdresslist).
 
 #### How do you know this worked?
 

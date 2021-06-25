@@ -26,7 +26,11 @@ To create a room mailbox, you need to be an administrator who's a member of eith
 
 If you want to grant someone access to a room mailbox so they can directly manage its calendar (for example, an assistant who needs to make room for an executive meeting), you can do so using the instructions in [Manage permissions for recipients](mailbox-permissions.md). After a user's been granted permissions to access a room mailbox, they can open the mailbox using the instructions in [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
-**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting, nor should room mailboxes be accessed directly by users in order to make changes to a meeting. Rooms should only be added to meetings in the Attendee or Location fields. Otherwise you will override the Resource Booking Assistant (RBA), which manages and processes all calendar items sent to the room mailbox, and unexpected errors may occur. If your organization has one or more users who need to manage a room and its mailbox, then assign users to the room as resource delegates for the room mailbox, as described later in this article. When a delegate is assigned, all items sent to the room's mailbox will be directed to the booking delegate, who can then accept or decline from their own Inbox. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
+**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting. Rooms should only be added to meetings by including them in the Attendee or Location fields.  
+
+It is also not recommended to use Full Access permissions to directly manage resource calendars’ response to a meeting invite. In cases where a user needs to manage a resource calendar, the calendar should be directly shared to the user as a shared calendar. The user can accept the sharing invitation to add the calendar to begin managing the room’s meetings. If the room calendar is shared with Delegate permissions, the user will also receive copies of all meeting invitations sent to the room in their own inbox.
+
+Sharing a room calendar to a user does not prevent a room from having the *Auto-accept* setting enabled. If the room calendar is shared and *Auto-accept* is enabled, requests will be accepted by default but the response can always be changed by any user with Editor or Delegate permissions to the room calendar. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
 
 If you want to learn about the types of recipients that are available in Exchange Server, check out [Recipients](recipients.md). For info about another type of resource mailbox, check out [Manage equipment mailboxes](equipment-mailboxes.md).
 
@@ -34,16 +38,17 @@ If you want to learn about the types of recipients that are available in Exchang
 
 - Estimated time to complete: 5 minutes.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
-- If you're using room or equipment mailboxes in Microsoft 365 or Office 365, see [Room and equipment mailboxes(https://docs.microsoft.com/microsoft-365/admin/manage/room-and-equipment-mailboxes) for more information.
+- If you're using room or equipment mailboxes in Microsoft 365 or Office 365, see [Room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes) for more information.
 
 > [!IMPORTANT]
-> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud. > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online should be created in the cloud.
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a room mailbox
 
@@ -66,7 +71,7 @@ If you want to learn about the types of recipients that are available in Exchang
 
 After you've created a room mailbox, you can [Change how a room mailbox handles meeting requests](#change-how-a-room-mailbox-handles-meeting-requests) (including whether it responds automatically or someone needs to decide what to do). By default, it'll automatically accept or decline requests depending on whether the requests conflict with any existing meetings on its calendar. It'll also allow meetings that repeat, and allow meetings up to 180 days from the current date (and decline any requests beyond that) that are up to 24 hours in duration. If you want to change other options, head down to [Change other room mailbox properties](#change-other-room-mailbox-properties).
 
-For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
+For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](/powershell/module/exchange/new-mailbox).
 
 ## Change how a room mailbox handles meeting requests
 
@@ -88,7 +93,7 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 - **Allow repeating meetings**: This setting allows or prevents repeating meetings for the room.
 
-- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room, which are, by default, 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox either by logging into the mailbox using Outlook on the web and going to the **Options** \> **Calendar** \> **Calendar appearance** page, or by using [Set-MailboxCalendarConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxcalendarconfiguration).
+- **Allow scheduling only during working hours**: This setting accepts or declines meeting requests that aren't during the working hours defined for the room, which are, by default, 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox either by logging into the mailbox using Outlook on the web and going to the **Options** \> **Calendar** \> **Calendar appearance** page, or by using [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration).
 
 - **Always decline if the end date is beyond this limit**: This setting controls the behavior of repeating meetings that extend beyond the date specified by the maximum booking lead time setting.
 
@@ -272,17 +277,17 @@ Use the following sets of cmdlets to view and change room mailbox properties: **
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Get-User](/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Set-User](/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
+- [Get-CalendarProcessing](/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
+- [Set-CalendarProcessing](/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using the Exchange Management Shell to change room mailbox properties.
 

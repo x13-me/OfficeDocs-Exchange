@@ -3,7 +3,7 @@ localization_priority: Normal
 description: If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
 ms.reviewer: 
 f1.keywords:
@@ -29,7 +29,7 @@ To learn more about the Discovery Management role group and role based access co
 
 Interested in scenarios where this procedure is used? See the following topics:
 
-- [Create an In-Place eDiscovery search](create-in-place-ediscovery-search.md)
+- [Create an In-Place eDiscovery search](/microsoft-365/compliance/content-search)
 
 - [Create or remove an In-Place Hold](../../security-and-compliance/create-or-remove-in-place-holds.md)
 
@@ -65,7 +65,7 @@ This example adds the user Bsuneja to the Discovery Management role group.
 Add-RoleGroupMember -Identity "Discovery Management" -Member Bsuneja
 ```
 
-For detailed syntax and parameter information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
+For detailed syntax and parameter information, see [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to create, view the membership of, update, modify, remove, and hide recipients from address lists in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
 ms.reviewer:
 title: Manage address lists in Exchange Online
@@ -24,7 +24,7 @@ An address list is a collection of mail-enabled recipient objects in Exchange On
 
 For additional management tasks related to manage address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
 
-Looking for the Exchange Server version of this topic? See [Create address lists](https://docs.microsoft.com/Exchange/email-addresses-and-address-books/address-lists/address-list-procedures#create-address-lists).
+Looking for the Exchange Server version of this topic? See [Create address lists](../../../ExchangeServer/email-addresses-and-address-books/address-lists/address-list-procedures.md#create-address-lists).
 
 ## What do you need to know before you begin?
 
@@ -32,10 +32,10 @@ Looking for the Exchange Server version of this topic? See [Create address lists
 
 - By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
 
-- You can only use Exchange Online PowerShell to perform virtually all of the procedures in this topic (everything except hiding recipients from address lists). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform virtually all of the procedures in this topic (everything except hiding recipients from address lists). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use Exchange Online PowerShell to create address lists
 
@@ -71,7 +71,7 @@ This example creates an address list with a custom recipient filter:
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter "(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/new-addresslist).
+For detailed syntax and parameter information, see [New-AddressList](/powershell/module/exchange/new-addresslist).
 
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
@@ -86,7 +86,7 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/new-addresslist).
+For detailed syntax and parameter information, see [New-AddressList](/powershell/module/exchange/new-addresslist).
 
 ### How do you know this worked?
 
@@ -160,9 +160,9 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 - Title, department and address properties require the **Get-User** and **Set-User** cmdlets. CustomAttribute1 through CustomAttribute15 properties require the **Get-Mailbox** and **Set-Mailbox** cmdlets. For more information about what properties are available on which cmdlet, see the following topics:
 
-   - [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+   - [Set-User](/powershell/module/exchange/set-user)
 
-   - [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+   - [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
 - If a only small number of users don't appear in the address list, you can modify the required property value for each user. For example:
 
@@ -204,7 +204,7 @@ This example modifies the existing address list named Southeast Offices by addin
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
-For detailed syntax and parameter information, see [Set-AddressList](https://docs.microsoft.com/powershell/module/exchange/set-addresslist).
+For detailed syntax and parameter information, see [Set-AddressList](/powershell/module/exchange/set-addresslist).
 
 ### How do you know this worked?
 
@@ -228,7 +228,7 @@ This example removes the address list Sales Department, which doesn't contain ch
 Remove-AddressList -Identity "Sales Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/remove-addresslist).
+For detailed syntax and parameter information, see [Remove-AddressList](/powershell/module/exchange/remove-addresslist).
 
 ### How do you know this worked?
 

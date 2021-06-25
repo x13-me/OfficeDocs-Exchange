@@ -27,7 +27,7 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 1. Log on to your SCOM server and open the SCOM console.
 
-2. Click **Monitoring** and then click **Windows Computers**.
+2. Click **Monitoring** and then click on **Windows Computers**.
 
 3. Make sure that all of your Exchange servers show **Healthy**.
 

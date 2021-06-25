@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.reviewer: 
 description: When you migrate on-premises Exchange mailboxes to Microsoft 365 or Office 365, certain permissions to access and, in some cases, modify those mailboxes, are required. The user account used to connect to your on-premises Exchange organization during the migration needs those permissions. Known as the migration administrator, the user account is used to create a migration endpoint to your on-premises organization.
@@ -133,9 +133,9 @@ Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxPermission)
+- [Add-MailboxPermission](/powershell/module/exchange/Add-MailboxPermission)
 
-- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
+- [Filterable Properties for the Filter Parameter](/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 
@@ -166,7 +166,7 @@ The following example shows how to use the Exchange Online PowerShell **Add-ADPe
 Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -ExtendedRights receive-as
 ```
 
-For detailed syntax and parameter information, see [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission).
+For detailed syntax and parameter information, see [Add-ADPermission](/powershell/module/exchange/Add-ADPermission).
 
 ### How do you know the assignment of permission worked?
 
@@ -215,9 +215,9 @@ Get-User -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" 
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
+- [Add-ADPermission](/powershell/module/exchange/Add-ADPermission)
 
-- [Filterable Properties for the Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties)
+- [Filterable Properties for the Filter Parameter](/powershell/exchange/filter-properties)
 
 ### How do you know the assignment of permission worked?
 

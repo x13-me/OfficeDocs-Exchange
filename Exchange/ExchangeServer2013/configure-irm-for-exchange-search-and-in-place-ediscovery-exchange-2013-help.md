@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, you can configure Information Rights Management (IRM) so that Exchange Search can index IRM-protected messages.
 
-When members of the Discovery Management role group perform an [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) search, IRM-protected messages are returned in the search results and copied to the Discovery mailbox specified in the search. Furthermore, members of the Discovery Management role group can use Outlook Web App to access the IRM-protected messages that were copied to the Discovery mailbox as a result of the discovery search.
+When members of the Discovery Management role group perform an [In-Place eDiscovery](../ExchangeOnline/security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) search, IRM-protected messages are returned in the search results and copied to the Discovery mailbox specified in the search. Furthermore, members of the Discovery Management role group can use Outlook Web App to access the IRM-protected messages that were copied to the Discovery mailbox as a result of the discovery search.
 
 > [!NOTE]
 > Members of the Discovery Management role group can't access IRM-protected messages exported from a Discovery mailbox to another mailbox or to a .pst file. IRM-protected messages in a Discovery mailbox can be accessed only by using Outlook Web App.
@@ -54,7 +54,7 @@ This example configures IRM to allow Exchange Search to index IRM-protected mess
 Set-IRMConfiguration -SearchEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to configure IRM for In-Place eDiscovery
 
@@ -67,8 +67,8 @@ This example enables members of the Discovery Management role group to access IR
 Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do you know this worked?
 
-To verify that you have successfully configured IRM for Exchange Search and In-Place eDiscovery, use the **Get-IRMConfigurtaion** cmdlet to retrieve the IRM configuration information. For an example of how to retrieve the IRM configuration, see [Examples](https://docs.microsoft.com/powershell/module/exchange/get-irmconfiguration#examples) in **Get-IRMConfiguration**.
+To verify that you have successfully configured IRM for Exchange Search and In-Place eDiscovery, use the **Get-IRMConfigurtaion** cmdlet to retrieve the IRM configuration information. For an example of how to retrieve the IRM configuration, see [Examples](/powershell/module/exchange/get-irmconfiguration#examples) in **Get-IRMConfiguration**.

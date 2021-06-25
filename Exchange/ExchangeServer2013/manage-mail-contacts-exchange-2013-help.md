@@ -145,13 +145,13 @@ Properties for a mail contact are stored in both Active Directory and Exchange. 
 
 For more information, see the following topics:
 
-- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
+- [Get-Contact](/powershell/module/exchange/get-contact)
 
-- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
+- [Set-Contact](/powershell/module/exchange/set-contact)
 
-- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
+- [Get-MailContact](/powershell/module/exchange/get-mailcontact)
 
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
+- [Set-MailContact](/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using the Shell to change mail contact properties.
 

@@ -37,9 +37,9 @@ After creating the target mail user, you can then run the **New-MoveRequest** or
 
 For more information about remote move requests, see the following topics:
 
-  - [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch)
+  - [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch)
 
-  - [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest)
+  - [New-MoveRequest](/powershell/module/exchange/New-MoveRequest)
 
 For more information about remote mailbox moves and remote legacy moves, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 

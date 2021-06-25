@@ -31,7 +31,7 @@ A public folder calendar is a good solution for people looking for only a shared
 
 Before you create your public folder calendar, follow the prerequisites.
 
-1. Ensure public folders are [deployed](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox) in Exchange Online.
+1. Ensure public folders are [deployed](./create-public-folder-mailbox.md) in Exchange Online.
 
 2. Use the following command to see a list of any public folder mailboxes present in the organization:
 
@@ -40,7 +40,7 @@ Before you create your public folder calendar, follow the prerequisites.
    Get-PublicFolder \
    ```
 
-3. If you don't see a list of the public folder mailboxes, then follow the steps to [create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
+3. If you don't see a list of the public folder mailboxes, then follow the steps to [create a public folder mailbox](./create-public-folder-mailbox.md).
 
 4. Verify that you have the necessary [access rights](https://support.microsoft.com/help/2573274/public-folder-permissions-for-exchange-server) to create the public folder.
 

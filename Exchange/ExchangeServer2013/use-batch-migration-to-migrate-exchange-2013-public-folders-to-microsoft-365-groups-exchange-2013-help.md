@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 **Summary:** How to move your Exchange 2013 public folders to Microsoft 365 Groups.
 
-Through a process known as *batch migration*, you can move some or all of your Exchange 2013 public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as *batch migration*, you can move some or all of your Exchange 2013 public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
 
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange 2013 public folders.
 
@@ -29,13 +29,13 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Microsoft 365, Office 365, or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-- In Exchange 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
+- In Exchange 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
-- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Microsoft 365 or Office 365 for those users who need access to Microsoft 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
+- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Microsoft 365 or Office 365 for those users who need access to Microsoft 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](../ExchangeOnline/mailbox-migration/mailbox-migration.md).
 
 - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md) for details.
 
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Only public folders of type calendar and mail can be migrated to Microsoft 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Microsoft 365 and Office 365 are expected to be created prior to the migration.
 
@@ -171,7 +171,7 @@ In this step, you gather information from your Exchange environment, and then yo
    Start-MigrationBatch PublicFolderToGroupMigration
    ```
 
-While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationBatch) and [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/Get-MigrationUser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Microsoft 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
+While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](/powershell/module/exchange/Get-MigrationBatch) and [Get-MigrationUser](/powershell/module/exchange/Get-MigrationUser) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Microsoft 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
 To view the mailbox migration page:
 

@@ -51,7 +51,7 @@ This example creates an ABP with the following settings:
 New-AddressBookPolicy -Name "All Fabrikam ABP" -AddressLists "\All Fabrikam","\All Fabrikam Mailboxes","\All Fabrikam DLs","\All Fabrikam Contacts" -OfflineAddressBook \Fabrikam-All-OAB -GlobalAddressList "\All Fabrikam" -RoomList "\All Fabrikam Rooms"
 ```
 
-For detailed syntax and parameter information, see [New-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/new-addressbookpolicy).
+For detailed syntax and parameter information, see [New-AddressBookPolicy](/powershell/module/exchange/new-addressbookpolicy).
 
 ## For more information
 

@@ -50,7 +50,7 @@ This example removes the **Enable-MailUser** cmdlet from the Seattle Server Admi
 Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRoleEntry).
+For detailed syntax and parameter information, see [Remove-ManagementRoleEntry](/powershell/module/exchange/Remove-ManagementRoleEntry).
 
 ## Remove multiple entire role entries from a role
 
@@ -74,7 +74,7 @@ When you run the command with the *WhatIf* switch, the cmdlet returns a list of 
 Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry) and [Remove-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRoleEntry).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](/powershell/module/exchange/Get-ManagementRoleEntry) and [Remove-ManagementRoleEntry](/powershell/module/exchange/Remove-ManagementRoleEntry).
 
 ## Remove parameters from a role entry on a role
 
@@ -92,4 +92,4 @@ This example removes the *MaxSafeSenders*, *MaxSendSize*, *SecondaryAddress*, an
 Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleEntry).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](/powershell/module/exchange/Set-ManagementRoleEntry).

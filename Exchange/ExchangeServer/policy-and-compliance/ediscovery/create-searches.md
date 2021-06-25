@@ -24,9 +24,9 @@ manager: serdars
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
 
-- To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Microsoft 365 or Office 365 organization, such as the tenant administrator account, that account must be assigned an Exchange Online license. For more information about the Microsoft 365 or Office 365 licensing requirements for in-place eDiscovery searches, see [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+- To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Microsoft 365 or Office 365 organization, such as the tenant administrator account, that account must be assigned an Exchange Online license. For more information about the Microsoft 365 or Office 365 licensing requirements for in-place eDiscovery searches, see [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
-- Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](https://docs.microsoft.com/Exchange/create-a-discovery-mailbox-exchange-2013-help).
+- Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](../../../ExchangeServer2013/create-a-discovery-mailbox-exchange-2013-help.md).
 
 - When you create a search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. You can also export the search results to a .pst file. For details, see:
 
@@ -36,7 +36,7 @@ manager: serdars
 
   - [Export eDiscovery search results to a PST file](export-results-to-pst.md)
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 ## Use the EAC to create a search
 
@@ -82,7 +82,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
 ## Use the Exchange Management Shell to create a search
 
-Here are four examples of using the Exchange Management Shell to search and place a hold on content in mailboxes and public folders. For detailed syntax and parameter information about using the Exchange Management Shell to create eDiscovery searches, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
+Here are four examples of using the Exchange Management Shell to search and place a hold on content in mailboxes and public folders. For detailed syntax and parameter information about using the Exchange Management Shell to create eDiscovery searches, see [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch)
 
 ### Example 1
 

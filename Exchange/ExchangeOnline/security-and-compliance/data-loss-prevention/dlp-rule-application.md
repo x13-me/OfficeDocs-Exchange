@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how data loss prevention (DLP) rules evaluate messages
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.reviewer: 
 f1.keywords:
@@ -102,7 +102,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://docs.microsoft.com/powershell/module/exchange/get-classificationrulecollection) cmdlet in Exchange Online PowerShell in the following manner:
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](/powershell/module/exchange/get-classificationrulecollection) cmdlet in Exchange Online PowerShell in the following manner:
 
 ```
 $rule_collection = Get-ClassificationRuleCollection
@@ -118,4 +118,4 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
-[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+[Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)

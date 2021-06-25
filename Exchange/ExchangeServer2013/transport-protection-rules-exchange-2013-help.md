@@ -25,7 +25,7 @@ For management tasks related to managing IRM, see [Information Rights Management
 
 ## Transport protection rules and AD RMS
 
-Transport protection rules allow you to use transport rules to IRM-protect messages by applying an [Active Directory Rights Management Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772403(v=ws.11)) (AD RMS) rights policy template.
+Transport protection rules allow you to use transport rules to IRM-protect messages by applying an [Active Directory Rights Management Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772403(v=ws.11)) (AD RMS) rights policy template.
 
 > [!NOTE]
 > AD&nbsp;RMS is an information protection technology that works with Rights Management Service (RMS)-enabled applications and clients to protect sensitive information online and offline. To use IRM protection in an on-premises Exchange deployment, Exchange 2013 requires an on-premises deployment of AD&nbsp;RMS running on Windows Server 2008 or later.
@@ -39,7 +39,7 @@ Additional RMS templates can be created in the on-premises AD RMS deployment to
 > [!IMPORTANT]
 > If a rights policy template is removed from the AD&nbsp;RMS server, you must modify any transport protection rules that use the removed template. If a transport protection rule continues to use a rights policy template that's been removed, the AD&nbsp;RMS server will fail to license the content to any of the recipients, and a non-delivery report (NDR) will be delivered to the sender.<BR>In Windows Server 2008 and later, rights policy templates can be archived instead of deleted. Archived templates can still be used to license content, but when you create or modify a transport protection rule, archived templates aren't included in the list of templates.
 
-For more information about creating AD RMS templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731070(v=ws.10)).
+For more information about creating AD RMS templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731070(v=ws.10)).
 
 ## Automatic protection using transport protection rules
 

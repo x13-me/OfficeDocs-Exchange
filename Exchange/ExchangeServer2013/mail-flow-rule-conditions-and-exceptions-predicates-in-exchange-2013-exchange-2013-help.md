@@ -23,7 +23,7 @@ Most conditions and exceptions have one property that requires one or more value
 
 For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](../ExchangeOnline/security-and-compliance/mail-flow-rules/conditions-and-exceptions.md).
 
 ## Conditions and exceptions for transport rules on Mailbox servers
 
@@ -167,7 +167,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>n/a</p></td>
-<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
+<td><p>Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see <a href="/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Data loss prevention</a>.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="odd">
@@ -458,7 +458,7 @@ For more information about how transport rules inspect message attachments, see 
 <td><p><em>AttachmentIsPasswordProtected</em></p>
 <p><em>ExceptIfAttachmentIsPasswordProtected</em></p></td>
 <td><p>n/a</p></td>
-<td><p>Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents and .zip files.</p></td>
+<td><p>Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .zip files, and .7z files.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 </tbody>
@@ -1072,7 +1072,7 @@ The property types that are used in conditions and exceptions are described in t
 <tr class="odd">
 <td><p><code>Patterns</code></p></td>
 <td><p>Array of regular expressions</p></td>
-<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio">Regular Expression Syntax</a>.</p>
+<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="/visualstudio/ide/using-regular-expressions-in-visual-studio">Regular Expression Syntax</a>.</p>
 <p>In the Exchange Management Shell, you specify multiple regular expressions separated by commas, and you enclose each regular expression in quotation marks (&quot;).</p></td>
 </tr>
 <tr class="even">
@@ -1169,4 +1169,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+[Mail flow rule conditions and exceptions (predicates) in Exchange Online](../ExchangeOnline/security-and-compliance/mail-flow-rules/conditions-and-exceptions.md)

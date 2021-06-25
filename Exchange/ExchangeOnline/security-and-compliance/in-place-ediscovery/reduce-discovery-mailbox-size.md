@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 ms.reviewer: 
 f1.keywords:
