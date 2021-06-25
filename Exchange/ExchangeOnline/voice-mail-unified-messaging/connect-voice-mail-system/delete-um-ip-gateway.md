@@ -3,7 +3,7 @@ localization_priority: Normal
 description: When you delete a Unified Messaging (UM) IP gateway, Exchange servers can no longer accept incoming calls from the Voice over IP (VoIP) gateway, Session Initiation Protocol (SIP)-enabled Private Branch eXchange (PBX), IP PBX, or session border controller (SBC) associated with the UM IP gateway.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 ms.reviewer: 
 f1.keywords:

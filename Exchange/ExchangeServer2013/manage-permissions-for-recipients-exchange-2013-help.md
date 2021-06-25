@@ -171,9 +171,9 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission)
+- [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission)
 
-- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxpermission)
+- [Remove-MailboxPermission](/powershell/module/exchange/remove-mailboxpermission)
 
 ### Manage the Send As permission for mailboxes
 
@@ -196,9 +196,9 @@ Remove-ADPermission -Identity "James Alvord" -User pilarp -ExtendedRights "Send 
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission)
+- [Add-ADPermission](/powershell/module/exchange/add-adpermission)
 
-- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/remove-adpermission)
+- [Remove-ADPermission](/powershell/module/exchange/remove-adpermission)
 
 ### Manage the Send on Behalf permission for mailboxes
 
@@ -216,7 +216,7 @@ This example removes the Send on Behalf permission on the Contoso Executives sha
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@contoso.com"}
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 
@@ -303,9 +303,9 @@ Remove-ADPermission -Identity "Corporate IT Admins" -User contoso\alans -Extende
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission)
+- [Add-ADPermission](/powershell/module/exchange/add-adpermission)
 
-- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/remove-adpermission)
+- [Remove-ADPermission](/powershell/module/exchange/remove-adpermission)
 
 ### Manage the Send on Behalf permission
 
@@ -331,9 +331,9 @@ Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{remove="admi
 
 For detailed syntax and parameter information, see:
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
+- [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](/powershell/module/exchange/set-dynamicdistributiongroup)
 
 ### How do you know this worked?
 

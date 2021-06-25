@@ -120,7 +120,7 @@ Search-AdminAuditLog -StartDate 05/01/2012 -EndDate 10/03/2012 -ObjectID contoso
 
 If your searches return many log entries, we recommend that you use the procedure provided in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
 
 ### View details of audit log entries
 
@@ -130,9 +130,9 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 This procedure uses the following concepts:
 
-- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+- [about_Arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+- [about_Variables](/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. Decide the criteria you want to search for, run the **Search-AdminAuditLog** cmdlet, and store the results in a variable using the following command.
 
@@ -191,4 +191,4 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, Proh
 
 For more information about the format of the XML file, see [Administrator audit log structure](administrator-audit-log-structure-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-adminauditlogsearch).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](/powershell/module/exchange/new-adminauditlogsearch).

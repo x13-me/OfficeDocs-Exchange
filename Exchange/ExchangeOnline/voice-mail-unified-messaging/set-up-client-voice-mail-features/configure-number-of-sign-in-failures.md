@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can specify the number of sequential unsuccessful sign-in attempts that are allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 ms.reviewer: 
 f1.keywords:

@@ -26,7 +26,7 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -74,7 +74,7 @@ This example creates an equipment mailbox with the following configuration:
 New-Mailbox -Database "Mailbox Database 1" -Name MotorVehicle2 -OrganizationalUnit Equipment -DisplayName "Motor Vehicle 2" -Equipment
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
+For detailed syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/new-mailbox).
 
 ### How do you know this worked?
 
@@ -228,17 +228,17 @@ Use the following sets of cmdlets to view and change equipment mailbox propertie
 
 For information about these cmdlets, see the following topics:
 
-- [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)
+- [Get-User](/powershell/module/exchange/get-user)
 
-- [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)
+- [Set-User](/powershell/module/exchange/set-user)
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
-- [Get-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/get-calendarprocessing)
+- [Get-CalendarProcessing](/powershell/module/exchange/get-calendarprocessing)
 
-- [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing)
+- [Set-CalendarProcessing](/powershell/module/exchange/set-calendarprocessing)
 
 Here are some examples of using the Exchange Management Shell to change equipment mailbox properties.
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online).
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
 ms.reviewer: 
 title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
@@ -37,11 +37,11 @@ In this scenario, your organization's mail flow setup looks like the following d
 
 #### Best practices
 
-1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to your third-party service. Follow their guidelines for configuring your MX record.
 
@@ -59,7 +59,7 @@ In this scenario, your organization's mail flow setup looks like the following d
 
 ### More information
 
-There are additional considerations in hybrid deployments between on-premise Exchange and Microsoft 365 or Office 365. For more information, see [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+There are additional considerations in hybrid deployments between on-premises Exchange and Microsoft 365 or Office 365. For more information, see [Exchange Server hybrid deployments](../../ExchangeHybrid/exchange-hybrid.md).
 
 ## See also
 

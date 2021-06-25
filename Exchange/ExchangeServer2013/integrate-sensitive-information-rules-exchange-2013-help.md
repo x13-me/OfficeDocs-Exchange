@@ -45,7 +45,7 @@ The rules can also be used in the exception part of a rule definition. Their use
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 
-[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
+[Sensitive information types in Exchange Server](../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md)
 
 [Transport protection rules](transport-protection-rules-exchange-2013-help.md)
 

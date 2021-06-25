@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Microsoft Exchange Server Setup creates a discovery mailbox by default. In Exchange Online, a discovery mailbox is also created by default. Discovery mailboxes are used as target mailboxes for In-Place eDiscovery searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
 ms.reviewer: 
 f1.keywords:
@@ -44,7 +44,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Create a discovery mailbox
 
@@ -57,7 +57,7 @@ New-Mailbox -Name SearchResults -Discovery
 > [!IMPORTANT]
 > The 'Name' parameter must not contain any spaces.
 
-For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
+For detailed syntax and parameter information, see [new-Mailbox](/powershell/module/exchange/new-mailbox).
 
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
@@ -65,7 +65,7 @@ To display a list of all discovery mailboxes in an Exchange organization, run th
 Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](/powershell/module/exchange/get-mailbox).
 
 ## Step 3: Assign permissions to a discovery mailbox
 
@@ -81,7 +81,7 @@ For example, the following command assigns the Full Access permission to the Lit
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
 ```
 
-For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
+For detailed syntax and parameter information, see [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission).
 
 ## More information
 

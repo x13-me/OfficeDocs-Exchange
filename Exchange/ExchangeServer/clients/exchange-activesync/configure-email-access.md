@@ -27,7 +27,7 @@ This article is about enabling users in your organization to access their Exchan
 - Exchange ActiveSync is enabled in your organization.
 
 > [!NOTE]
-> For device-specific information about setting up Exchange-based email on a phone or tablet, see [Set up Office apps and email on a mobile device](https://support.mcrosoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+> For device-specific information about setting up Exchange-based email on a phone or tablet, see [Set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Configure a mobile phone or device to use Exchange ActiveSync
 

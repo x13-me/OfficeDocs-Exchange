@@ -17,8 +17,8 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-[View performance counters for messaging records management](view-performance-counters-for-https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
+[Messaging records management in Exchange 2013](messaging-records-management-exchange-2013-help.md)
 
-[Performance counters for messaging records management](performance-counters-for-https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
+[Performance counters for messaging records management](performance-counters-for-messaging-records-management-exchange-2013-help.md)
 
 [Messaging records management errors and events](messaging-records-management-errors-and-events-exchange-2013-help.md)

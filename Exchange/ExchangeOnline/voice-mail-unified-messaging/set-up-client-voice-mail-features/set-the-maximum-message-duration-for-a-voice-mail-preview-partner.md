@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can set the maximum message duration for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum message duration, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 18f928ff-f4cc-4eed-a466-de13388780b3
 ms.reviewer: 
 f1.keywords:

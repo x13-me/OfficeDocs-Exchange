@@ -67,7 +67,7 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
    > 
    > - The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL.
    > 
-   > - You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
+   > - You can use the [Get-OrganizationRelationship](/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
    
 After you apply this setting, the users can continue using the current Outlook on the web URL to access their on-premises mailboxes. In the previous example, the value is <https://mail.contoso.com/owa>.
 
@@ -91,4 +91,4 @@ The authentication prompt experience that users can expect is described in the f
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
 > [!NOTE]
-> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in [KB2535227}(https://support.microsoft.com/help/2535227), and that AD FS is configured per the general Microsoft 365 or Office 365 guidance.
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in [KB2535227](https://support.microsoft.com/help/2535227), and that AD FS is configured per the general Microsoft 365 or Office 365 guidance.

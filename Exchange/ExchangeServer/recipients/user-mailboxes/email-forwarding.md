@@ -47,7 +47,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the Exchange Management Shell to set up mail forwarding
 
-Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) topics for more details on the cmdlets used here.
+Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](/powershell/exchange/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](/powershell/module/exchange/get-mailbox) and [Set-Mailbox](/powershell/module/exchange/set-mailbox) topics for more details on the cmdlets used here.
 
 This example delivers email to the mailbox of Douglas Kohn and also forwards all mail sent to Douglas Kohn to an external email address, douglaskohn.parents@fineartschool.net.
 
@@ -61,7 +61,7 @@ This example forwards all email sent to the mailbox of Ken Sanchez, an employee 
 Set-Mailbox -Identity "Ken Sanchez" -ForwardingAddress "pilarp@contoso.com"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
@@ -97,4 +97,4 @@ Check out the following topics on how to forward your email to another email add
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

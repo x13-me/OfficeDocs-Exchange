@@ -28,26 +28,20 @@ On Mailbox servers and Edge Transport servers in Exchange Server, you can export
 
 - To export messages from a delivery queue, the Submission queue, or the Unreachable queue, the messages need to be in the Suspended state. For active, healthy queues, you first suspend the queue so you can then suspend the messages. Messages in the poison message queue are already in the Suspended state. For more information, see [Suspend queues](queue-procedures.md#suspend-queues) and [Suspend messages in queues](message-procedures.md#suspend-messages-in-queues).
 
-- You can't use Queue Viewer in the Exchange Toolbox to export messages. However, you can use Queue Viewer to locate, identify, and suspend the messages before you export them using the Exchange Management Shell. For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- You can't use Queue Viewer in the Exchange Toolbox to export messages. However, you can use Queue Viewer to locate, identify, and suspend the messages before you export them using the Exchange Management Shell. For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - When you export messages from a queue, you don't remove the messages from the queue. If you resubmit the exported messages by using the Replay directory, you should remove the messages from the queue to avoid duplicate message delivery. For more information, see [Remove messages from queues](message-procedures.md#Remove).
 
 - Verify the following information about the target location for the exported message files:
-
   - The target folder needs to exist before you export any messages, and won't be created for you. If you don't specify the complete path, the files are written to the current Exchange Management Shell working directory.
-
   - The path can be local to the Exchange server, or it can be a UNC path to a share on a remote server (\\server\share).
-
   - Your account needs to have the **Write** permission in the target folder.
 
 - We use the message's **InternetMessageID** property value for the exported message file names to help ensure uniqueness. The procedures include steps to remove angled brackets (\> and \<), because they aren't allowed in file names. Also, we use the .eml file name extension so you can easily open the files in Outlook or resubmit the files by using the Replay directory.
 
 - For more information about identity and filters for queues and messages in queues, see the following topics:
-
   - [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md)
-
   - [Queue properties](queue-properties.md)
-
   - [Properties of messages in queues](message-properties.md)
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
@@ -94,9 +88,7 @@ Get-Message -Queue <QueueIdentity> -ResultSize Unlimited | ForEach-Object {$Temp
 This example takes the following actions on the server named Mailbox01:
 
 1. Suspends the contoso.com delivery queue.
-
 2. Suspends all messages in the queue.
-
 3. Exports copies of the messages to the local folder named D:\Contoso Export.
 
 ```powershell
@@ -122,9 +114,7 @@ Get-Message -Filter "<MessageFilter>" [-Server <ServerIdentity>] -ResultSize Unl
 This example takes the following actions on the server named Mailbox01:
 
 1. Suspends all queues on the server.
-
 2. Suspends all messages in all queues on the server from senders in the fabrikam.com domain.
-
 3. Exports copies of the messages to the local folder named D:\Fabrikam Export.
 
 ```powershell
@@ -150,9 +140,7 @@ Get-Message [-Server <ServerIdentity>] -ResultSize Unlimited | ForEach-Object {$
 This example takes the following actions on the server named Mailbox01:
 
 1. Suspends all queues on the server.
-
 2. Suspends all messages in all queues on the server.
-
 3. Exports copies of the messages to the local folder named D:\Mailbox01 Export.
 
 ```powershell

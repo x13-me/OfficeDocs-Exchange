@@ -35,10 +35,10 @@ If you want to use Active Directory split permissions, you need install Exchange
 
 For more information about split and shared permissions in Exchange 2013 or later, see the following topics:
 
-- [Understanding Split Permissions](https://docs.microsoft.com/exchange/understanding-split-permissions-exchange-2013-help)
+- [Understanding Split Permissions](../../../ExchangeServer2013/understanding-split-permissions-exchange-2013-help.md)
 
-- [Configure Exchange 2013 for Split Permissions](https://docs.microsoft.com/exchange/configure-exchange-2013-for-split-permissions-exchange-2013-help)
+- [Configure Exchange 2013 for Split Permissions](../../../ExchangeServer2013/configure-exchange-2013-for-split-permissions-exchange-2013-help.md)
 
-- [Configure Exchange 2013 for Shared Permissions](https://docs.microsoft.com/exchange/configure-exchange-2013-for-shared-permissions-exchange-2013-help)
+- [Configure Exchange 2013 for Shared Permissions](../../../ExchangeServer2013/configure-exchange-2013-for-shared-permissions-exchange-2013-help.md)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

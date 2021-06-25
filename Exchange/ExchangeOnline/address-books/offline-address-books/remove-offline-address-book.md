@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to remove offline address book (OAB) from Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
 ms.reviewer: 
 title: 'Remove an offline address book from Exchange '
@@ -28,7 +28,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
 
-- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -41,7 +41,7 @@ This example removes an OAB named My OAB.
 Remove-OfflineAddressBook -Identity "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Remove-OfflineAddressBook](https://docs.microsoft.com/powershell/module/exchange/remove-offlineaddressbook).
+For detailed syntax and parameter information, see [Remove-OfflineAddressBook](/powershell/module/exchange/remove-offlineaddressbook).
 
 
 ## How do you know this worked?

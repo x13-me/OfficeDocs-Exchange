@@ -39,11 +39,11 @@ For additional management tasks related to hybrid deployments, see [Hybrid Deplo
 
 - Estimated time to complete this task: Varies, depending on type of hybrid deployment issues
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/infrastructure-permissions) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](../../ExchangeServer/permissions/feature-permissions/infrastructure-permissions.md) topic.
 
 - The guidance in this topic applies to hybrid deployments configured using the Hybrid Configuration wizard. Hybrid deployments that have been manually configured are not supported.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../ExchangeOnline/accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -126,4 +126,8 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
 
   You should see the following entry listed for your Exchange servers: `{[::]:25, 0.0.0.0:25}`
 
-   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/set-receiveconnector).
+   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](/powershell/module/exchange/set-receiveconnector).
+   
+### Troubleshooting mail flow issues
+
+Refer to the following article: [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838).

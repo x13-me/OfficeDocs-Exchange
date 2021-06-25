@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer: 
 f1.keywords:
@@ -32,7 +32,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 - You need to have a journaling mailbox and an alternate journaling mailbox configured. For more information, see [Configure Journaling in Exchange Online](configure-journaling.md).
 
-- In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
+- In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -104,7 +104,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule -Identity "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](/powershell/module/exchange/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
 
 - Recipient
 
@@ -195,14 +195,14 @@ To verify that you have successfully removed the journal rule, do one of the fol
 
 ## For more information
 
-[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule)
+[New-JournalRule](/powershell/module/exchange/new-journalrule)
 
-[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/get-journalrule)
+[Get-JournalRule](/powershell/module/exchange/get-journalrule)
 
-[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule)
+[Set-JournalRule](/powershell/module/exchange/set-journalrule)
 
-[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/enable-journalrule)
+[Enable-JournalRule](/powershell/module/exchange/enable-journalrule)
 
-[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/disable-journalrule)
+[Disable-JournalRule](/powershell/module/exchange/disable-journalrule)
 
-[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule)
+[Remove-JournalRule](/powershell/module/exchange/remove-journalrule)
