@@ -24,7 +24,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 - Estimated time to complete each procedure: 10 minutes.
 
-- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
 
@@ -33,7 +33,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view or configure Outlook on the web virtual directory properties
 
@@ -61,7 +61,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **General** tab:
 
-     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is https:// _\<Server FQDN\>_/owa (for example, https://mailbox01.contoso.com/owa).
+     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is `https:// _<Server FQDN>_/owa` (for example, <https://mailbox01.contoso.com/owa>).
 
      - **External URL**: The URL that's used to access Outlook on the web from the Internet. The default value is blank.
 
@@ -249,7 +249,7 @@ Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-Li
 
  **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
 
-For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/get-owavirtualdirectory).
+For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](/powershell/module/exchange/get-owavirtualdirectory).
 
 ## Use the Exchange Management Shell to configure Outlook on the web virtual directory settings
 
@@ -276,4 +276,4 @@ This example enables configures direct file access in Outlook on the web to bloc
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-owavirtualdirectory).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](/powershell/module/exchange/set-owavirtualdirectory).

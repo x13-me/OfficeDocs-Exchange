@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: adad2c0d-7452-4392-a95e-058c4678c05e
 ms.reviewer: 
 manager: serdars
@@ -24,7 +24,7 @@ ms.service: exchange-online
 Exchange Online includes spam filtering capabilities that help protect your network from spam transferred through email. Administrators do not need to set up or maintain these filtering technologies, which are enabled by default. However, administrators can make company-specific filtering customizations in the Exchange admin center (EAC), all using a screen reader and keyboard shortcuts.
 
 > [!NOTE]
-> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in EOP](/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ## Get started
 
@@ -42,7 +42,7 @@ Many tasks in the EAC require the use of pop-up windows. In your browser, be sur
 
 Exchange Online is included in several different subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 

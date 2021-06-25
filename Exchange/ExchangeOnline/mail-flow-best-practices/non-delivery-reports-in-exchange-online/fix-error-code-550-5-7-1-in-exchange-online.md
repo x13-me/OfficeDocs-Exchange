@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 550 5.7.1 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -21,12 +21,14 @@ description: "Learn how to fix email issues for error code 5.7.1 (and also 5.7.0
 
 # Fix email delivery issues for error code 550 5.7.1 in Exchange Online
 
+> [!IMPORTANT]
+> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+
 It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 5.7.1 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). This information also applies to error codes 5.7.0 through 5.7.999.
 
 |||||
 |---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this)|
-|
 
 This information also applies to error codes 5.7.0 through 5.7.999 in Exchange Online and Microsoft 365 or Office 365. There can be several causes for dsn error code 5.7.1, for which solutions are provided later in this topic.
 
@@ -58,7 +60,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
+  - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
    To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
@@ -70,7 +72,7 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Remove the sender restriction**: Change your group settings to unblock the sender in one of the following ways:
 
-  - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
+  - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](../../recipients-in-exchange-online/manage-mail-contacts.md) or a [mail user](../../recipients-in-exchange-online/manage-mail-users.md) to represent the external sender in your organization.
 
   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
 
@@ -80,15 +82,15 @@ If a message sender received this NDR when they attempted to send a message to y
 
   - Messages sent to the group require approval by a moderator.
 
-  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
    To resolve the issue for the sender, approve their message, or add them to the group.
 
 - **Managing distribution groups**
 
-  - [Configure a moderated recipient in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/configure-a-moderated-recipient)
+  - [Configure moderated recipients in Exchange Online](../../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md)
 
-  - [Create and manage distribution groups in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+  - [Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 
 ## I'm an email admin. How can I fix this?
 
@@ -106,7 +108,7 @@ When the recipient is a mail-enabled public folder in your Exchange Online organ
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
-1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
 2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
@@ -128,7 +130,7 @@ In this cases, the NDR the sender receives would include information in the **Di
 
    `5.7.1 Service unavailable; Client host [xxx.xxx.xxx.xxx] blocked using Blocklist 1; To request removal from this list please forward this message to delist@messaging.microsoft.com`
 
-To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com.
+To remove the restriction on the sender's source email system, forward the NDR message to delist@messaging.microsoft.com. Also see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).
 
 ### Your domain isn't fully enrolled in Microsoft 365 or Office 365
 
@@ -136,7 +138,7 @@ If your domain isn't fully enrolled in Microsoft 365 or Office 365, try the foll
 
 - Verify your domain appears as **Healthy** in the [Microsoft 365 admin center](https://admin.microsoft.com) at **Settings** \> **Domains**.
 
-- For information about adding your domain to Microsoft 365 or Office 365, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+- For information about adding your domain to Microsoft 365 or Office 365, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 - To troubleshoot domain verification issues, see Microsoft Knowledge Base article [KB2515404](https://support.microsoft.com/help/2515404).
 
@@ -154,7 +156,7 @@ If you have an incorrect MX record, try the following steps:
 
 ### Your domain's SPF record has a problem
 
-The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
+The Sender Policy Framework (SPF) record for your domain might be incomplete, and might not include all email sources for your domain. For more information, see [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing).
 
 ### Hybrid configuration issues
 
@@ -190,7 +192,7 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Microsoft 36
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

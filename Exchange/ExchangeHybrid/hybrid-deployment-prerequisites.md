@@ -61,11 +61,11 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 - **Custom domains**: Register any custom domains you want to use in your hybrid deployment with Microsoft 365 or Office 365. You can do this by using the Microsoft 365 portal, or by optionally configuring Active Directory Federation Services (AD FS) in your on-premises organization.
 
-  Learn more at [Add your domain to Microsoft 365 or Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+  Learn more at [Add your domain to Microsoft 365 or Office 365](/microsoft-365/admin/setup/add-domain).
 
 - **Active Directory synchronization**: Deploy the Azure Active Directory Connect tool to enable Active Directory synchronization with your on-premises organization.
 
-  Learn more at [Azure AD Connect User Sign-on options](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin).
+  Learn more at [Azure AD Connect User Sign-on options](/azure/active-directory/hybrid/plan-connect-user-signin).
 
 - **Autodiscover DNS records**: Configure the Autodiscover record for your existing SMTP domains in your public DNS to point to your on-premises Exchange servers (an Exchange 2010/2013 Client Access server or an Exchange 2016/2019 Mailbox Server).
 
@@ -102,17 +102,17 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   - A traditional on-premises PBX or IP-PBX solution.
 
-    For more information, check out [Telephone system integration with UM in Exchange Online](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um), [Plan for Skype for Business Server and Exchange Server migration](https://docs.microsoft.com/SkypeForBusiness/hybrid/plan-um-migration), and [Set up Cloud Voicemail](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail).
+    For more information, check out [Telephone system integration with UM in Exchange Online](../ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um.md), [Plan for Skype for Business Server and Exchange Server migration](/SkypeForBusiness/hybrid/plan-um-migration), and [Set up Cloud Voicemail](/microsoftteams/set-up-phone-system-voicemail).
 
 ## Hybrid deployment protocols, ports, and endpoints
 
 You need to configure the following protocols, ports, and connection endpoints in the firewall that protects your on-premises organization as described in the following table.
 
   > [!IMPORTANT]
-  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see [Microsoft 365 and Office 365 URLs and IP address ranges - Exchange Online](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#exchange-online) and identify the endpoints for each port listed here.
+  > The related Microsoft 365 and Office 365 endpoints are vast, ever-changing, and aren't listed here. Instead, see the sections _Exchange Online_ and _Microsoft 365 Common and Office Online_ in [Microsoft 365 and Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to identify the endpoints for each port listed here.
    
   > [!NOTE]
-  > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deployment-ref/network-ports).
+  > The ports required for mail flow and client connectivity in your on-premises Exchange organization not related to the hybrid configuration are described in [Network ports for clients and mail flow in Exchange](../ExchangeServer/plan-and-deploy/deployment-ref/network-ports.md).
   
 |**Source**|**Protocol/Port**|**Target**|**Comments**|
 |:-----|:-----|:-----|:-----|
@@ -134,7 +134,7 @@ The following table provides more detailed information about the involved on-pre
 |AD FS (Windows Server)|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server: /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 |AAD Connect|TCP 443 (HTTPS)|Windows 2012 R2/2016 Server (AD FS): /adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
 
-For even more detail about this information, see [Deep Dive: How Hybrid Authentication Really Works](https://techcommunity.microsoft.com/t5/exchange-team-blog/deep-dive-how-hybrid-authentication-really-works/ba-p/606780), [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838), [Transport routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing), [Configure mail flow using connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow), and [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-for-multiple-locations).
+For even more detail about this information, see [Deep Dive: How Hybrid Authentication Really Works](https://techcommunity.microsoft.com/t5/exchange-team-blog/deep-dive-how-hybrid-authentication-really-works/ba-p/606780), [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838), [Transport routing in Exchange hybrid deployments](./transport-routing.md), [Configure mail flow using connectors](../ExchangeOnline/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md), and [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)](../ExchangeOnline/mail-flow-best-practices/manage-mail-flow-for-multiple-locations.md).
 
 ## Recommended tools and services
 

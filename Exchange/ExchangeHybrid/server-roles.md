@@ -38,11 +38,11 @@ Here is a quick overview of the Exchange 2013 server roles in a hybrid deploymen
 
 - **Client Access server role**: The Client Access server role continues to provide essentially the same functionality typically provided by Client Access servers in your Exchange 2013 organization with a few additions required to support a hybrid deployment. The Client Access server also handles all secure mail messages sent between the on-premises and the Exchange Online organizations, as well as handling transport rules, journaling policies, and message delivery to user mailboxes in a hybrid deployment. By default, a dedicated Receive connector is configured on the Client Access server to support secure hybrid mail transport. All client connectivity, including Outlook client access, Outlook Web App, and Outlook Anywhere goes through the Client Access server role. Organization relationship features between the on-premises and Exchange Online organizations, such as free/busy sharing, are also handled by the Client Access server role.
 
-    Learn more at [Client Access server](https://docs.microsoft.com/exchange/client-access-server-exchange-2013-help).
+    Learn more at [Client Access server](../ExchangeServer2013/client-access-server-exchange-2013-help.md).
 
 - **Mailbox server role**: The Mailbox server role hosts the on-premises recipient mailboxes and communicates with the Exchange Online organization by proxy via the on-premises Client Access server. By default, a dedicated Send connector is configured on the Mailbox server role to support secure hybrid mail transport.
 
-    Learn more at [Mailbox Server](https://docs.microsoft.com/exchange/mailbox-server-exchange-2013-help).
+    Learn more at [Mailbox Server](../ExchangeServer2013/mailbox-server-exchange-2013-help.md).
 
 Depending on the hybrid deployment configuration that you want, an Exchange 2013 server requires one or both of the server roles to be installed on it:
 
@@ -50,7 +50,7 @@ Depending on the hybrid deployment configuration that you want, an Exchange 2013
 
 - **More than one Exchange server**: If you choose to install more than one Exchange server in your on-premises organization, you can install the server roles on separate servers in your on-premises organization. For example, you could install one Exchange server that has the Mailbox and Client Access roles installed and also install another Exchange server that has only the Client Access server role installed. However, the best practice and recommended server configuration is to install both the Client Access and Mailbox server roles on each server deployed in your on-premises organization.
 
-Learn more about Exchange 2013 capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](https://docs.microsoft.com/exchange/exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md).
+Learn more about Exchange 2013 capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](../ExchangeServer2013/exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md).
 
 ## Exchange server functionality in hybrid deployments
 
@@ -58,11 +58,11 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Federation**: Exchange servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Microsoft 365 or Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
-    Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
+    Learn more at [Understanding Federation](../ExchangeServer2013/federation-exchange-2013-help.md).
 
 - **Organization relationships**: Exchange 2013 servers with the Client Access role and Exchange 2016 servers with the Mailbox role enable the creation of organization relationships between the on-premises and Exchange Online organizations. Organization relationships are required for many other services in a hybrid deployment, including calendar free/busy information sharing, message tracking, and mailbox moves between the on-premises and Exchange Online organizations.
 
-    Learn more at [Sharing](https://docs.microsoft.com/exchange/sharing-exchange-2013-help).
+    Learn more at [Sharing](../ExchangeServer2013/sharing-exchange-2013-help.md).
 
 - **Message transport**: Exchange servers with the Client Access and Mailbox server roles are responsible for message transport in a hybrid deployment. Using Send and Receive connectors, they serve as the connection endpoints for incoming external messages and also provide outbound message delivery to the Internet and the Exchange Online organization.
 
@@ -70,8 +70,8 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Message transport security**: Exchange servers with the Client Access and Mailbox server roles help to secure message communication between the on-premises and Exchange Online organizations by using the Domain Security functionality in Exchange. Security can be increased by using mutual transport layer security authentication and encryption for message communications.
 
-    Learn more at [Understanding Domain Security](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124392(v=exchg.141)).
+    Learn more at [Understanding Domain Security](/previous-versions/office/exchange-server-2010/bb124392(v=exchg.141)).
 
 - **Outlook on the web (known as Outlook Web App in Exchange 2013)**: Exchange 2013 servers with the Client Access role and Exchange 2016 servers with the Mailbox role support configuring a single URL endpoint for external connections to on-premises and Exchange Online mailboxes. For on-premises mailboxes, Exchange servers are configured to service Outlook on the web requests. For Exchange Online organization mailboxes, Exchange servers are configured to automatically display a link to the Outlook on the web endpoint on the Exchange Online organization.
 
-    Learn more at [Outlook Web App](https://docs.microsoft.com/exchange/outlook-web-app-exchange-2013-help) and [Outlook on the web in Exchange Server](https://docs.microsoft.com/exchange/clients/outlook-on-the-web/outlook-on-the-web).
+    Learn more at [Outlook Web App](../ExchangeServer2013/outlook-web-app-exchange-2013-help.md) and [Outlook on the web in Exchange Server](../ExchangeServer/clients/outlook-on-the-web/outlook-on-the-web.md).

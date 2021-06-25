@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
 f1.keywords:
@@ -43,11 +43,11 @@ The _modifiable_ settings that are available in mailbox plans by using the **Set
 
 |**Setting**|**Default value**|**Description**|
 |:-----|:-----|:-----|
-|_IssueWarningQuota_|Varies by license.|The user receives a warning message when their mailbox reaches the specified size. <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_MaxReceiveSize_|Varies by license.|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
-|_MaxSendSize_|Varies by license.|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
-|_ProhibitSendQuota_|Varies by license.|The user receives a warning message and they can't send messages when their mailbox reaches the specified size (which must be greater than the _IssueWarningQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_ProhibitSendReceiveQuota_|Varies by license.|The user receives a warning message and they can't send or receive messages when their mailbox reaches the specified size (which must be greater than the _ProhibitSendQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_IssueWarningQuota_|Varies by license.|The user receives a warning message when their mailbox reaches the specified size. <br/><br/> For more information, see [Capacity alerts](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_MaxReceiveSize_|Varies by license.|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_MaxSendSize_|Varies by license.|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_ProhibitSendQuota_|Varies by license.|The user receives a warning message and they can't send messages when their mailbox reaches the specified size (which must be greater than the _IssueWarningQuota_ value). <br/><br/> For more information, see [Capacity alerts](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_ProhibitSendReceiveQuota_|Varies by license.|The user receives a warning message and they can't send or receive messages when their mailbox reaches the specified size (which must be greater than the _ProhibitSendQuota_ value). <br/><br/> For more information, see [Capacity alerts](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
 |_RetainDeletedItemsFor_|`14.00:00:00` (14 days)|Depending on your subscription, you can change this value up to 30 days. For more information, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md).|
 |_RetentionPolicy_|Default MRM Policy|For more information, see [Retention tags and retention policies in Exchange Online](../../security-and-compliance/messaging-records-management/retention-tags-and-policies.md).|
 |_RoleAssignmentPolicy_|Default Role Assignment Policy|Grants users permissions to their own mailbox and distribution groups. For more information, see [Role assignment policies](../../permissions-exo/permissions-exo.md#role-assignment-policies).|
@@ -73,7 +73,7 @@ Modifying the settings of a mailbox plan won't update the settings of an existin
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -136,7 +136,7 @@ To return all mailboxes that had a specific mailbox plan applied:
    Get-Mailbox -ResultSize unlimited -Filter "MailboxPlan -eq 'CN=ExchangeOnline-93f46670-2ae7-4591-baa4-ee153e090945,OU=constoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR22B009,DC=PROD,DC=OUTLOOK,DC=COM'"
    ```
 
-For detailed syntax and parameter information, see [Get-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/get-mailboxplan) and [Get-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/get-casmailboxplan).
+For detailed syntax and parameter information, see [Get-MailboxPlan](/powershell/module/exchange/get-mailboxplan) and [Get-CasMailboxPlan](/powershell/module/exchange/get-casmailboxplan).
 
 ## Use Exchange Online PowerShell to specify the default mailbox plan
 
@@ -154,7 +154,7 @@ This example specifies the ExchangeOnline mailbox plan as the default.
 Set-MailboxPlan -Identity ExchangeOnline -IsDefault
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan).
+For detailed syntax and parameter information, see [Set-MailboxPlan](/powershell/module/exchange/set-mailboxplan).
 
 ## Use Exchange Online PowerShell to modify mailbox plans
 
@@ -180,6 +180,4 @@ This example disables Exchange ActiveSync, POP3, and IMAP4 access to mailboxes i
 Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $false -PopEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-mailboxplan) and [Set-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/set-casmailboxplan).
-
-
+For detailed syntax and parameter information, see [Set-MailboxPlan](/powershell/module/exchange/set-mailboxplan) and [Set-CasMailboxPlan](/powershell/module/exchange/set-casmailboxplan).

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Online.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.reviewer: 
 title: Address book policies in Exchange Online
@@ -50,7 +50,7 @@ To turn on ABP email routing in your Exchange Online organization, see [Turn on 
 
 To assign ABPs to users, see [Assign an address book policy to users in Exchange Online](assign-an-address-book-policy-to-mail-users.md).
 
-APBs take effect when a user connects to their Exchange Online Mailbox. If you change an ABP, the updated APB takes effect when a user restarts or reconnects their email client app.
+ABPs take effect when a user connects to their Exchange Online Mailbox. If you change an ABP, the updated ABP takes effect when a user restarts or reconnects their email client app.
 
 ## ABP example
 

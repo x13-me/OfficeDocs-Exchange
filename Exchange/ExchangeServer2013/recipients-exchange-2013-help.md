@@ -215,7 +215,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 </tbody>
 </table>
 
-If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Disable-Mailbox) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
+If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](/powershell/module/exchange/Disable-Mailbox) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
 ## Planning for mailboxes
 
@@ -237,7 +237,7 @@ Exchange supports the following types of distribution groups:
 - **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
 
   > [!NOTE]
-  > To convert a domain-local or a global group to a universal group, you can use the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-Group">Set-Group</A> cmdlet in the Shell.
+  > To convert a domain-local or a global group to a universal group, you can use the <A href="/powershell/module/exchange/Set-Group">Set-Group</A> cmdlet in the Shell.
 
 ## Dynamic distribution groups
 
@@ -260,7 +260,7 @@ To help you create recipient filters for dynamic distribution groups, you can us
 
 - Recipient container
 
-You can also specify conditions based on recipient properties other than those previously listed. To do this, you must use the Shell to create a custom query for the dynamic distribution group. Remember that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Shell. For an example of how to create a dynamic distribution group by using a custom query, see [Manage dynamic distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups).
+You can also specify conditions based on recipient properties other than those previously listed. To do this, you must use the Shell to create a custom query for the dynamic distribution group. Remember that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Shell. For an example of how to create a dynamic distribution group by using a custom query, see [Manage dynamic distribution groups](../ExchangeOnline/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md).
 
 ## Mail contacts
 
@@ -291,10 +291,10 @@ You can manage public folders by using either the EAC or the Shell. For more inf
 
 The Microsoft Exchange recipient is a special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender that was used for system-generated messages in earlier versions of Exchange.
 
-The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
+The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
 
 > [!NOTE]
-> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.
+> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="/powershell/module/exchange/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.
 
 ## Recipients documentation
 
@@ -317,7 +317,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to create user mailboxes using the Exchange admin center or the Exchange Management Shell.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p></td>
 <td><p>Learn how to create user mailboxes, change mailbox properties, and bulk-edit selected properties for multiple mailboxes.</p></td>
 </tr>
 <tr class="odd">
@@ -325,31 +325,31 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn about the requirements for linked mailboxes, how to create and link them to a master account, and change linked mailbox properties.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">Create and manage distribution groups</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">Create and manage distribution groups</a></p></td>
 <td><p>Learn how to create and manage distribution groups, and create a group naming policy for your organization.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Manage mail-enabled security groups</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Manage mail-enabled security groups</a></p></td>
 <td><p>Learn how to create and manage mail-enabled security groups.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">Manage dynamic distribution groups</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">Manage dynamic distribution groups</a></p></td>
 <td><p>Learn how to create dynamic distribution groups and manage dynamic distribution group properties, such as using custom attributes and other properties to determine group membership.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts">Manage mail contacts</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-mail-contacts">Manage mail contacts</a></p></td>
 <td><p>Learn how to create and manage mail contacts.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users">Manage mail users</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-mail-users">Manage mail users</a></p></td>
 <td><p>Learn how to create and manage mail users.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes">Create and manage room mailboxes</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-room-mailboxes">Create and manage room mailboxes</a></p></td>
 <td><p>Learn how to create room mailboxes and manage room mailbox properties, such as enabling recurring meetings and configuring booking and scheduling options.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">Manage equipment mailboxes</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">Manage equipment mailboxes</a></p></td>
 <td><p>Learn how to create equipment mailboxes, configure booking and scheduling options, and manage other mailbox properties.</p></td>
 </tr>
 <tr class="odd">
@@ -361,11 +361,11 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to add information about a recipient by using custom attributes.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/powershell/exchange/recipient-filters">Filters in recipient Shell commands</a></p></td>
+<td><p><a href="/powershell/exchange/recipient-filters">Filters in recipient Shell commands</a></p></td>
 <td><p>Learn how to use precanned or custom filters with commands to filter a set of recipients.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Manage permissions for recipients</a></p></td>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Manage permissions for recipients</a></p></td>
 <td><p>Learn how to use the EAC or the Shell to assign permissions to users and groups.</p></td>
 </tr>
 <tr class="odd">

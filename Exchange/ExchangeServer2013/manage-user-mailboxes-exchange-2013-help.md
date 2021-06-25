@@ -262,9 +262,9 @@ To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_A
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using the Shell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
+- [Get-Mailbox](/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+- [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 
 Here are some examples of using the Shell to change user mailbox properties.
 
@@ -368,4 +368,4 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Format-List Name,ArchiveDatabase,RetentionPolicy
   ```
 
-  For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
+  For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](/powershell/module/exchange/get-mailbox).

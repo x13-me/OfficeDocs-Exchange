@@ -57,52 +57,52 @@
     },
     {
       "source_path": "Exchange/ExchangeServer2013/exchange-server-supportability-matrix-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/plan-and-deploy/supportability-matrix",
+      "redirect_url": "/Exchange/plan-and-deploy/supportability-matrix",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
+      "redirect_url": "/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/outlook-for-ios-and-android-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/outlook-for-ios-and-android?view=exchserver-2019",
+      "redirect_url": "/Exchange/clients/outlook-for-ios-and-android/outlook-for-ios-and-android?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019",
+      "redirect_url": "/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-basic-auth?view=exchserver-2019",
+      "redirect_url": "/exchange/clients/outlook-for-ios-and-android/use-basic-auth?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/account-setup?view=exchserver-2019",
+      "redirect_url": "/exchange/clients/outlook-for-ios-and-android/account-setup?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/passwords-and-security?view=exchserver-2019",
+      "redirect_url": "/exchange/clients/outlook-for-ios-and-android/passwords-and-security?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/manage-devices?view=exchserver-2019",
+      "redirect_url": "/exchange/clients/outlook-for-ios-and-android/manage-devices?view=exchserver-2019",
       "redirect_document_id": false
     },
     {
       "source_path": "exchange/outlook/common/office/enterprise-includes/o365endpoints/office-365-worldwide-endpoints.md",
-      "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+      "redirect_url": "/office365/enterprise/urls-and-ip-address-ranges",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/exchange-online-and-exchange-online-protection-service-upgrade.md",
-      "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview",
+      "redirect_url": "/office365/securitycompliance/eop/exchange-online-protection-overview",
       "redirect_document_id": false
     },
     {
@@ -112,47 +112,47 @@
     },
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/diagnostic-log-collection-in-support-and-recovery-assistant.md",
-      "redirect_url": "https://docs.microsoft.com/office365/troubleshoot/administration/diagnostic-log-collection-in-support-and-recovery-assistant",
+      "redirect_url": "/office365/troubleshoot/administration/diagnostic-log-collection-in-support-and-recovery-assistant",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+      "redirect_url": "/exchange/troubleshoot/mail-delivery/email-delivery-issues",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues",
+      "redirect_url": "/exchange/troubleshoot/mail-delivery/email-delivery-issues",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
+      "redirect_url": "/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues",
       "redirect_document_id": false
     },
     {
       "source_path": "Outlook/cached-exchange-mode.md",
-      "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/cached-exchange-mode",
+      "redirect_url": "/outlook/troubleshoot/deployment/cached-exchange-mode",
       "redirect_document_id": false
     },
     {
       "source_path": "Outlook/kerberos-authentication-outlook-2016-for-mac.md",
-      "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/sign-in/set-delay-renew-kerberos-ticket",
+      "redirect_url": "/outlook/troubleshoot/sign-in/set-delay-renew-kerberos-ticket",
       "redirect_document_id": false
     },
     {
       "source_path": "Outlook/plan-outlook-2016-deployment.md",
-      "redirect_url": "https://docs.microsoft.com/outlook/troubleshoot/deployment/plan-outlook-2016-deployment",
+      "redirect_url": "/outlook/troubleshoot/deployment/plan-outlook-2016-deployment",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/mail-flow-best-practices/how-to-configure-iis-for-relay-with-office-365.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365",
+      "redirect_url": "/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer/policy-and-compliance/smime.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/policy-and-compliance/smime/smime",
+      "redirect_url": "/Exchange/policy-and-compliance/smime/smime",
       "redirect_document_id": false
     },
     {
@@ -162,12 +162,12 @@
     },
     {
       "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/change-address-book-generation-schedule.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/change-address-book-generation-schedule-exchange-2013-help",
+      "redirect_url": "/Exchange/change-address-book-generation-schedule-exchange-2013-help",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/address-books/offline-address-books/create-virtual-directory.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/create-virtual-directory-exchange-2013-help",
+      "redirect_url": "/Exchange/create-virtual-directory-exchange-2013-help",
       "redirect_document_id": false
     },
     {
@@ -353,6 +353,11 @@
     {
       "source_path": "Exchange/ExchangeOnline/security-and-compliance/in-place-ediscovery/index.md",
       "redirect_url": "in-place-ediscovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search.md",
+      "redirect_url": "/microsoft-365/compliance/content-search",
       "redirect_document_id": false
     },
     {
@@ -787,28 +792,48 @@
     },
     {
       "source_path": "Exchange/ExchangeServer2013/what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help",
+      "redirect_url": "/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help",
       "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeServer2013/organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md",
-      "redirect_url": "https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help",
+      "redirect_url": "/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help",
       "redirect_document_id": false
     },
     {
       "source_path": "exchange/ExchangeOnline/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups",
+      "redirect_url": "/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "exchange/exchangeonline/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders",
+      "redirect_url": "/exchange/hybrid-deployment/set-up-modern-hybrid-public-folders",
       "redirect_document_id": true
     },
     {
       "source_path": "exchange/exchangeonline/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders.md",
-      "redirect_url": "https://docs.microsoft.com/exchange/collaboration/public-folders/migrate-to-exchange-online",
+      "redirect_url": "/exchange/collaboration/public-folders/migrate-to-exchange-online",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/manage-message-approval.md",
+      "redirect_url": "/exchange/recipients-in-exchange-online/moderated-recipients-exo/moderated-recipients-exo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/recipients-in-exchange-online/configure-a-moderated-recipient.md",
+      "redirect_url": "/exchange/recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval.md",
+      "redirect_url": "/exchange/architecture/mailbox-servers/reassign-and-remove-arbitration-mailboxes-for-moderation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/enable-encryption-and-decryption.md",
+      "redirect_url": "/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email",
+      "redirect_document_id": false
     }
 ]
 }

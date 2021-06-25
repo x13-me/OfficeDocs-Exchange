@@ -1,5 +1,5 @@
 ---
-title: "Non-delivery details report in the modern EAC"
+title: "Non-delivery details report in the new EAC"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn how to use the Non-delivery details report in the modern Exchange admin center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
+description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
 ---
 
-# Non-delivery details report in the modern Exchange admin center
+# Non-delivery details report in the new Exchange admin center
 
-The **Non-delivery details report** in the modern Exchange admin center (modern EAC) shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
+The **Non-delivery details report** in the new Exchange admin center (new EAC) shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 ![Overview of the Non-delivery details report](../../media/mfr-non-delivery-details-report.png)
 
@@ -59,4 +61,4 @@ Click **Export** to export the displayed results to a .csv file.
 
 ## See also
 
-For more information about other mail flow reports, see [Mail flow reports in the modern EAC](mail-flow-reports.md).
+For more information about other mail flow reports, see [Mail flow reports in the new EAC](mail-flow-reports.md).

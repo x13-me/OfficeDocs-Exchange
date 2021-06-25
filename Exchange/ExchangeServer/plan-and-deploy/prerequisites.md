@@ -23,26 +23,26 @@ manager: serdars
 
 This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
 
-After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](../../ExchangeHybrid/exchange-hybrid.md).
 
 To actually install Exchange 2016 and Exchange 2019, see [Deploy new installations of Exchange](deploy-new-installations/deploy-new-installations.md).
 
 > [!TIP]
 >
-> - Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://docs.microsoft.com/exchange/exchange-2013-prerequisites-exchange-2013-help).
+> - Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](../../ExchangeServer2013/exchange-2013-prerequisites-exchange-2013-help.md).
 >
-> - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
+> - Remote Registry Service must be set to Automatic and cannot be Disabled. For recommended Security Guidelines, See [Security Guidelines regarding Remote Registry](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#remote-registry).
 >
 > - Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://assistants.microsoft.com/).
 
 ## What do you need to know before you begin?
 
 ::: moniker range="exchserver-2019"
-- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](/exchange/plan-and-deploy/system-requirements?preserve-view=true&view=exchserver-2019#network-and-directory-server-requirements-for-exchange-2019).
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
-- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#network-and-directory-servers).
+- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](/exchange/plan-and-deploy/system-requirements?preserve-view=true&view=exchserver-2016#network-and-directory-server-requirements-for-exchange-2016).
 
 - The full installation option of Windows Server 2012 and Windows Server 2012 R2 must be used for all servers running Exchange 2016 server roles or management tools.
 
@@ -52,7 +52,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
 ::: moniker-end
 
-- Verify the [Supported operating systems for Exchange 2019](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true#supported-operating-systems-for-exchange-2016).
+- Verify the [Supported operating systems for Exchange 2019](./system-requirements.md?preserve-view=true&view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](./system-requirements.md?preserve-view=true&view=exchserver-2016#supported-operating-systems-for-exchange-2016).
 
 ::: moniker range="exchserver-2019"
 > [!NOTE]
@@ -67,6 +67,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ::: moniker range="exchserver-2019"
+
 ## Exchange 2019 prerequisites for preparing Active Directory
 
 You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2019.
@@ -76,18 +77,17 @@ You can use any member of the Active Directory domain to prepare Active Director
    a. [.NET Framework 4.8](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe)
 
       > [!NOTE]
-      >
-      > - When installing on Windows Server Core, you must use key "/q" for install this package. Optionaly you can use "/log [PATH]" for logging.
+      > When installing on Windows Server Core, you must use key "/q" for install this package. Optionaly you can use "/log [PATH]" for logging.
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
       > [!NOTE]
       >
-      > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
+      > - The system requirements for the Visual C++ Redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
       >
       > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
       >
-      > - The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
+      > - The Visual C++ redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
 
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
@@ -103,7 +103,6 @@ You can use any member of the Active Directory domain to prepare Active Director
 The requirements to install Exchange 2019 on Windows Server 2019 computers are described in the following sections. We recommend either of the following methods to install the Windows prerequisites for Exchange 2019:
 
 - Use the /InstallWindowsComponents switch in unattended Setup mode.
-
 - Select the check box in the Exchange Setup Wizard to install Windows prerequisites.
 
 When you use one of these options, you don't need to restart the computer after the Windows components have been added.
@@ -122,7 +121,7 @@ When you use one of these options, you don't need to restart the computer after 
       >
       > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
       >
-      > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+      > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
 2. Add the required Lync Server or Skype for Business Server components:
 
@@ -134,8 +133,8 @@ When you use one of these options, you don't need to restart the computer after 
 
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
-   > [!NOTE]
-   > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
+      > [!NOTE]
+      > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
 
 3. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the one of the following commands in Windows PowerShell:
 
@@ -158,11 +157,12 @@ When you use one of these options, you don't need to restart the computer after 
    a. [.NET Framework 4.8](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe)
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
-   > [!NOTE]
-   >
-   > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
-   >
-   > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+
+      > [!NOTE]
+      >
+      > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
+      >
+      > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
@@ -185,9 +185,11 @@ When you use one of these options, you don't need to restart the computer after 
    ```PowerShell
    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
    ```
+
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
+
 ## Exchange 2016 prerequisites for preparing Active Directory
 
 You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2016.
@@ -198,11 +200,11 @@ You can use any member of the Active Directory domain to prepare Active Director
 
    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-   > [!NOTE]
-   >
-   > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
-   >
-   > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+      > [!NOTE]
+      >
+      > - The system requirements for the Visual C++ redistributable package do not mention support for Windows Server 2016 or Windows Server 2019, but the redistributable package is safe to install on these versions of Windows.
+      >
+      > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
@@ -355,4 +357,5 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
    ```PowerShell
    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
    ```
+
 ::: moniker-end

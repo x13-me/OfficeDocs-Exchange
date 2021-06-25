@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.reviewer: 
 f1.keywords:
@@ -20,20 +20,26 @@ manager: serdars
 
 # Use mail flow rules to automatically add meetings to calendars in Exchange Online
 
-With the Direct to Calendar feature in Exchange Online, administrators can configure mail flow rules (also known as transport rules) that allow designated users to add meetings to calendars. The benefits of Direct to Calendar are:
+> [!NOTE]
+> This article does not apply to standalone Exchange Online Protection (EOP) organizations.
+
+With the Direct to Calendar feature in Exchange Online, admins can configure mail flow rules (also known as transport rules) that allow designated users to add meetings to calendars. The benefits of Direct to Calendar are:
 
 - The event is automatically added to the recipient's calendar without any action from them. If the user received the meeting invitation, it's on their calendar.
-
 - The sender doesn't need to deal with Out of Office or other unwanted response messages that result from sending meeting invitations to a large number of recipients.
-
 - No meeting-related messages are seen by attendees unless the meeting is cancelled.
 
 Direct to Calendar requires two mail flow rules with specific conditions and actions. These rules are described in the following table:
 
-|**Rule description**|**Condition**|**Action**|**Comments**|
-|:-----|:-----|:-----|:-----|
-|This mail flow rule turns regular meeting invitations into Direct to Calendar meeting invitations.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter). <br/> This condition identifies the users who are authorized to send Direct to Calendar meeting invitations. Although you can use other conditions, restricting the invitations by sender helps prevent unauthorized use of Direct to Calendar meeting invitations.|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <br/> This action sets the **X-MS-Exchange-Organization-CalendarBooking-Response** header to the value `Accept`. Other valid values are `Tentative` and `Decline`.|We recommend that you use dedicated mailboxes (shared mailboxes are OK) for sending Direct to Calendar meeting invitations, because *any* meeting invitations from these senders will be automatically added to recipient calendars. <br/> The dedicated mailboxes require no special permissions to send Direct to Calendar meeting invitations.|
-|This mail flow rule prevents Direct to Calendar meeting invitations from appearing in the Inbox of recipients.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter).|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <br/> This action sets the **X-MS-Exchange-Organization-CalendarBooking-TriageAction** header to the value `MoveToDeletedItems`. The other valid value is `None`.|Technically, this rule is optional (without it, meetings are still automatically added to recipient calendars). <br/> Note that this rule doesn't prevent meeting cancellation messages for Direct to Calendar meetings from appearing in the Inbox of recipients.|
+<br>
+
+****
+
+|Rule description|Condition|Action|Comments|
+|---|---|---|---|
+|This mail flow rule turns regular meeting invitations into Direct to Calendar meeting invitations.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter). <p> This condition identifies the users who are authorized to send Direct to Calendar meeting invitations. Although you can use other conditions, restricting the invitations by sender helps prevent unauthorized use of Direct to Calendar meeting invitations.|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <p> This action sets the **X-MS-Exchange-Organization-CalendarBooking-Response** header to the value `Accept`. Other valid values are `Tentative` and `Decline`.|We recommend that you use dedicated mailboxes (shared mailboxes are OK) for sending Direct to Calendar meeting invitations, because *any* meeting invitations from these senders will be automatically added to recipient calendars. <p> The dedicated mailboxes require no special permissions to send Direct to Calendar meeting invitations.|
+|This mail flow rule prevents Direct to Calendar meeting invitations from appearing in the Inbox of recipients.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter).|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <p> This action sets the **X-MS-Exchange-Organization-CalendarBooking-TriageAction** header to the value `MoveToDeletedItems`. The other valid value is `None`.|Technically, this rule is optional (without it, meetings are still automatically added to recipient calendars). <p> Note that this rule doesn't prevent meeting cancellation messages for Direct to Calendar meetings from appearing in the Inbox of recipients.|
+|
 
 For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
@@ -41,18 +47,18 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 - Estimated time to complete: 10 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
 - The designated accounts for sending Direct to Calendar meeting invitations need to exist.
 
 - For more information about opening and using the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange admin center to create Direct to Calendar mail flow rules
 
@@ -65,15 +71,10 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
    ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 4. Configure these additional settings on the **New rule** page:
-
    - **Name**: Direct to Calendar response (or anything descriptive).
-
    - **Apply this rule if** \> **The sender** \> **is this person**: Select one or more users to send Direct to Calendar meeting invitations.
-
    - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
-
    - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-Response`
-
    - **to the value** `Accept`
 
    When you're finished, click **Save**.
@@ -87,15 +88,10 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
    ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 7. Configure these additional settings on the **New rule** page:
-
    - **Name**: Direct to Calendar triage action (or anything descriptive).
-
    - **Apply this rule if** \> **The sender** \> **is this person**: Select the same users as in step 3.
-
    - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
-
    - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-TriageAction`
-
    - **to the value** `MoveToDeletedItems`
 
    When you're finished, click **Save**.
@@ -128,7 +124,7 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
    New-TransportRule -Name "Direct to Calendar triage action" -From "Direct to Calendar invites" -SetHeaderName "X-MS-Exchange-Organization-CalendarBooking-TriageAction" -SetHeaderValue MoveToDeletedItems
    ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## How do you know this worked?
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: What's new in Exchange admin center
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid:
 ms.reviewer: 
 title: What's new in Exchange admin center
@@ -23,6 +23,74 @@ We're continuously adding new features to Exchange admin center (EAC), fixing is
 Exchange admin center now uses a new portal at [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com). This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall Microsoft 365 admin experience.
 
 For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
+
+## February 2021
+
+Here are some of the changes and new features we introduced in the modern EAC in February 2021.
+
+### Three more reasons to love the modern Exchange Admin Center (EAC)
+
+Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (https://admin.exchange.microsoft.com) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
+
+:::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC":::
+
+### One portal to meet all Exchange IT admin needs
+
+Having access to the tools we need without context switching is essential. The power of new features we've introduced in the modern EAC is tremendous and exciting.
+
+**1. Rules, Organization, and Public Folders**
+
+Rules, Organization, and Public Folders from the classic EAC are now available in the modern EAC. Admins can take actions on messages that flow through their Exchange Online organization through Rules. They can set up organization relationships to share calendar information with external business partners through Organization sharing. In addition, admins can collect, organize, and share information with other people in their workgroup or organization through Public Folders. 
+
+**2. Another user**
+
+The new, modern EAC now has a **View another mailbox** option, which adjusts Inbox rules and out-of-office messages on behalf of a user, without requiring that user to grant full admin access to their mailboxes.
+
+**3. Delegated admin support**
+
+A delegated admin now has access to the modern EAC portal. Currently, admins need to log in to https://partner.microsoft.com, where they will be directed to the classic EAC portal, and from there they can access the modern EAC.
+
+
+## December 2020
+
+Here are some of the changes and new features we introduced in the modern EAC in December 2020.
+
+### Groups – creation and management
+
+Admins can now create and manage four kinds of groups from the modern EAC: Microsoft 365 groups, distribution lists, mail-enabled security groups, and dynamic distribution lists. The groups experience has now reached parity with that of the classic EAC. The new group type that we recently introduced in the modern EAC is [dynamic distribution lists](#dynamic-distribution-lists).
+
+The pivot experience (different pivots for different group types) makes groups management even easier.
+
+:::image type="content" source="media/exo_whatsnew_dec20_1.png" alt-text="a dyamic distribution list in the modern EAC":::
+
+### Dynamic distribution lists
+
+Dynamic distribution lists are mail-enabled Active Directory group objects, created to expedite the mass sending of email messages and other information within an Exchange organization.
+
+The membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that are defined.
+
+:::image type="content" source="media/exo_whatsnew_dec20_2.png" alt-text="Assigning users in a dynamic distribution list in the modern EAC":::
+
+### Delivery management setting
+
+This setting allows admins to manage who can send email to any group. The user can define these settings once the group is created. This setting is available in all group types.
+
+:::image type="content" source="media/exo_whatsnew_dec20_3.png" alt-text="Delivery management setting in the modern EAC":::
+
+### Message approval setting
+
+Admins can use this setting to configure whether or not messages sent to a particular group need to be approved by a moderator. This setting also allows admins to define who the group moderators are, and it allows admins to define any message senders who do not require message approval. This setting is available in distribution groups, dynamic distribution groups, and mail-enabled security groups.
+
+### Membership approval setting in mail-enabled security groups
+
+For mail-enabled security groups, there is now a check box called **owner approval is required**. After this check box is selected, the owner of the mail-enabled security group needs to manually add or remove group members from that group.
+
+### Membership approval setting in distribution groups
+
+Admins can now manage the membership approval settings during or after the creation of a distribution group. It allows admins to configure the moderation settings for who can join the group, and for who can remove members from a group.
+
+:::image type="content" source="media/exo_whatsnew_dec20_4.png" alt-text="Membership approval setting in distribution groups":::
+
 
 ## September 2020
 
@@ -72,8 +140,7 @@ An educational video is now available on the very first tile, **Training and Gui
 
 ### Recipients – documentation updated
 
-As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online).
-
+As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](./recipients-in-exchange-online/recipients-in-exchange-online.md).
 
 ## July 2020
 
@@ -83,15 +150,15 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Exchange admins can now use the existing dashboard to choose from new variety of mail flow cards that personalize their experience for ease of use and better productivity. To access this dashboard, go to the Exchange Admin Center and select Add Card (+) to see the new cards.
 
-Discover and understand some more trends related to mail flow in your Microsoft 365 or Office 365 organization. The following report were already available in the Security & Compliance Center (SCC) portal but are now available in the EAC for added convenience.
+Discover and understand some more trends related to mail flow in your Microsoft 365 or Office 365 organization. The following report were already available in the Security & Compliance Center but are now available in the EAC for added convenience.
 
-Top domain mail-flow status report: To identify and troubleshoot domains with mail flow issues. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight).
+Top domain mail-flow status report: To identify and troubleshoot domains with mail flow issues. [Learn more](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight).
 
-Queued messages report: To check those messages that are queued for more than 1 hour and were sent through connectors from your Microsoft cloud org. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues).
+Queued messages report: To check those messages that are queued for more than 1 hour and were sent through connectors from your Microsoft cloud org. [Learn more](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues).
 
-SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
+SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
 
-:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of manager and direct reports":::
+:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of mail flow reports":::
 
 ## June 2020
 
@@ -109,9 +176,9 @@ Admins can include fifteen extension attributes that they can use to add informa
 
 :::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes":::
 
-### G-Suite automation
+### Google Workspace (formerly G Suite) automation
 
-Admins can migrate batches of users from G Suite to Microsoft 365. In order to move the mailboxes from G Suite to Microsoft 365, there is a series of steps that admins need to perform in G Suite in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
+Admins can migrate batches of users from Google Workspace to Microsoft 365. In order to move the mailboxes from Google Workspace to Microsoft 365, there is a series of steps that admins need to perform in Google Workspace in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
 
 :::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of G-suite automation":::
 
@@ -165,11 +232,11 @@ A very common request from our customers was to bring back the people picker for
 Exchange admins can now use a dashboard to choose from a wide variety of cards that personalize their experience for ease of use and better productivity. To access the dashboard, go to the Exchange admin center and select **Add Card (+)** to see the new cards:
 
 - **Migration report**: Learn about the status of the migration batches in your Exchange environment.
-- **Mail flow reports**: Discover and understand trends related to mail flow in your Microsoft 365 or Office 365 organization. These reports were already available in the Security & Compliance Center (SCC) portal, but are now available in the EAC for added convenience.
-  - **Auto-forwarded messages**: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as a personal email address. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
-  - **Inbound & outbound messages details**: Monitor message volume and TLS encryption for each connector. [Learn more](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
-  - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Microsoft 365 or Office 365. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-accepted-domain-report).
-  - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](https://docs.microsoft.com/office365/securitycompliance/mfi-non-delivery-report).
+- **Mail flow reports**: Discover and understand trends related to mail flow in your Microsoft 365 or Office 365 organization. These reports were already available in the Security & Compliance Center, but are now available in the EAC for added convenience.
+  - **Auto-forwarded messages**: Monitor for potential data leaks when people in your organization automatically forward email messages to an external domain, such as a personal email address. [Learn more](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report).
+  - **Inbound & outbound messages details**: Monitor message volume and TLS encryption for each connector. [Learn more](/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow).
+  - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Microsoft 365 or Office 365. [Learn more](/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report).
+  - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](/microsoft-365/security/office-365-security/mfi-non-delivery-report).
 
 ![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
 
@@ -195,9 +262,9 @@ Resources experience has been simplified for managing room and resource mailboxe
 
 Migration is now a first-class citizen under the Modern EAC and is no longer buried inside the Recipient tab as it was in the classic EAC. The major feature additions to the migration flow are:
 
-  - The Exchange and G-Suite migrations are now simple, wizard-based experiences.
-  - The G-Suite migration supports migrating Calendar and Contact data along with emails.
-  - For G-Suite migration, the 2GB per mailbox per day restriction has been removed.
+  - The Exchange and Google Workspace migrations are now simple, wizard-based experiences.
+  - The Google Workspace migration supports migrating Calendar and Contact data along with emails.
+  - For Google Workspace migration, the 2GB per mailbox per day restriction has been removed.
 
 ![Screen capture of what's new in migration](./media/whats-new-2020-03-migration.png)
 

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Delivery reports was a feature in Microsoft 365 and Office 365 that allowed users and administrators to discover and view delivery information about messages.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
 ms.reviewer: 
 f1.keywords:
@@ -29,15 +29,11 @@ Delivery reports in Microsoft 365 and Office 365 allowed users and administrator
 For more information, see these topics:
 
 - [Trace an email message](trace-an-email-message/trace-an-email-message.md)
-
-- [Message Trace in Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
-
 - [Message trace in the modern Exchange admin center](trace-an-email-message/message-trace-modern-eac.md)
-
 - [Run a message trace and view the results in the Exchange admin center](trace-an-email-message/run-a-message-trace-and-view-results.md)
 
 > [!NOTE]
 >
-> - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/track-messages-with-delivery-reports).
->
+> - The **Exchange message trace** link in the Microsoft 365 Defender portal opens message trace in the modern EAC.
+> - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](../../ExchangeServer/mail-flow/transport-logs/track-messages-with-delivery-reports.md).
 > - Read receipts and delivery notifications are separate from delivery reports and are still available in Microsoft 365 and Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.microsoft.com/office/add-and-request-read-receipts-and-delivery-notifications-a34bf70a-4c2c-4461-b2a1-12e4a7a92141).

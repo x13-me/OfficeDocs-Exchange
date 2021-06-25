@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to use connectors and mail flow rules to route mail in Exchange Online
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 82d105e2-e955-4e03-99c3-3314a5d21a4c
 ms.reviewer: 
 f1.keywords:
@@ -20,7 +20,7 @@ manager: serdars
 
 There might be times you need to route mail differently depending on who the mail is sent to or from, where it's being sent, the contents of the message, and so on. For example, if you have multiple sites around the world, you might want to route mail to a specific site. You can do this using connectors and mail flow rules (also known as transport rules).
 
-When the steps below are completed, a mail flow rule will redirect messages addressed to users whose City property is set to New Orleans to the IP address specified by the Outbound connector.
+When you complete the steps in this article, a mail flow rule will redirect messages addressed to users whose City property is set to New Orleans to the IP address specified by the Outbound connector.
 
 ## Step 1: Use the Exchange admin center to create the connector
 
@@ -67,7 +67,9 @@ Now that we've created a connector, we need to create a mail flow rule that'll s
    ![apply rule if](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
 
    > [!IMPORTANT]
-   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that outbound connector changes may take time to replicate.
+   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended.
+   >
+   > Note that outbound connector changes may take time to replicate.
 
 4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously.
 

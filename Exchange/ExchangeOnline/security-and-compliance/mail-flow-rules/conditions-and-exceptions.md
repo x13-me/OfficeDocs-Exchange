@@ -2,7 +2,7 @@
 audience: ITPro
 localization_priority: Normal
 description: Learn about the conditions and exceptions (predicates) that are available for mail flow rules in Exchange Online and Exchange Online Protection.
-ms.author: dmaguire
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: msdmaguire
@@ -73,6 +73,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -91,6 +93,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 |
 
 ### Recipients
+
+<br>
 
 ****
 
@@ -112,6 +116,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -125,6 +131,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 ### Attachments
 
 For more information about how mail flow rules inspect message attachments, see [Use mail flow rules to inspect message attachments in Exchange Online](inspect-message-attachments.md).
+
+<br>
 
 ****
 
@@ -152,6 +160,8 @@ Conversely, a recipient exception from this section *prevents* the rule action f
 
  **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
@@ -169,11 +179,13 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 - The recipient conditions in this section do not consider messages that are sent to recipient proxy addresses. They only match messages that are sent to the recipient's primary email address.
 - For more information about using Microsoft 365 groups with the recipient conditions in this section, see the Addresses entry in the [Property types](#property-types) section.
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
 |---|---|---|---|
-|**The message contains sensitive information** <p> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <p> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action. <p>**Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**The message contains sensitive information** <p> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <p> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action. <p>**Note**: This condition/exception isn't available in standalone EOP environments.|
 |**The To box contains** <p> **The message** \> **To box contains this person**|_AnyOfToHeader_ <br/> _ExceptIfAnyOfToHeader_|`Addresses`|Messages where the **To** field includes any of the specified recipients.|
 |**The To box contains a member of** <p> **The message** \> **To box contains a member of this group**|_AnyOfToHeaderMemberOf_ <br/> _ExceptIfAnyOfToHeaderMemberOf_|`Addresses`|Messages where the **To** field contains a recipient who is a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
 |**The Cc box contains** <p> **The message** \> **Cc box contains this person**|_AnyOfCcHeader_ <br/> _ExceptIfAnyOfCcHeader_|`Addresses`|Messages where the **Cc** field includes any of the specified recipients.|
@@ -185,6 +197,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 |
 
 ### Sender and recipient
+
+<br>
 
 ****
 
@@ -198,13 +212,15 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 ### Message properties
 
+<br>
+
 ****
 
 |Condition or exception in the EAC|Condition and exception parameters in Exchange Online PowerShell|Property type|Description|
 |---|---|---|---|
 |**The message type is** <p> **The message properties** \> **include the message type**|_MessageTypeMatches_ <br/> _ExceptIfMessageTypeMatches_|`MessageType`|Messages of the specified type. <br/> **Note**: When Outlook or Outlook on the web (formerly known as Outlook Web App) is configured to forward a message, the **ForwardingSmtpAddress** property is added to the message. The message type isn't changed to `AutoForward`.|
-|**The message is classified as** <p> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet. <p> **Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
-|**The message isn't marked with any classifications** <p> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification. <p> **Note**: This condition/exception isn't available in standalone Exchange Online Protection (EOP) environments.|
+|**The message is classified as** <p> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet. <p> **Note**: This condition/exception isn't available in standalone EOP environments.|
+|**The message isn't marked with any classifications** <p> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification. <p> **Note**: This condition/exception isn't available in standalone EOP environments.|
 |**The message importance is set to** <p> **The message properties** \> **include the importance level**|_WithImportance_ <br/> _ExceptIfWithImportance_|`Importance`|Messages that are marked with the specified Importance level.|
 |
 
@@ -212,6 +228,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
+
+<br>
 
 ****
 
@@ -227,6 +245,8 @@ The property types that are used in conditions and exceptions are described in t
 
 > [!NOTE]
 > If the property is a string, trailing spaces are not allowed.
+
+<br>
 
 ****
 
@@ -244,9 +264,9 @@ The property types that are used in conditions and exceptions are described in t
 |`MessageClassification`|Single message classification|In the EAC, you select from the list of message classifications that you've created. <p> In Exchange Online PowerShell, you use the **Get-MessageClassification** cmdlet to identify the message classification. <p> For example, use the following command to search for messages with the `Company Internal` classification and prepend the message subject with the value `CompanyInternal`: `New-TransportRule "Rule Name" -HasClassification @(Get-MessageClassification "Company Internal").Identity -PrependSubject "CompanyInternal"`|
 |`MessageHeaderField`|Single string|Specifies the name of the header field. The name of the header field is always paired with the value in the header field (word or text pattern match).The message header is a collection of required and optional header fields in the message. Examples of header fields are **To**, **From**, **Received**, and **Content-Type**. Official header fields are defined in RFC 5322. Unofficial header fields start with **X-** and are known as X-headers.|
 |`MessageType`|Single message type value|Specifies one of the following message types: <ul><li>**Automatic reply** (`OOF`)</li><li>**Auto-forward** (`AutoForward`)</li><li>**Encrypted**</li><li>**Calendaring**</li><li>**Permission controlled** (`PermissionControlled`)</li><li>**Voicemail**</li><li>**Signed**</li><li>**Approval request** (`ApprovalRequest`)</li><li>**Read receipt** (`ReadReceipt`)</li></ul> <p> **Note**: When Outlook or Outlook on the web is configured to forward a message, the **ForwardingSmtpAddress** property is added to the message. The message type isn't changed to `AutoForward`.|
-|`Patterns`|Array of regular expressions|Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see [Regular Expression Syntax](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio). <p> In Exchange Online PowerShell, you specify multiple regular expressions separated by commas, and you enclose each regular expression in quotation marks (").|
+|`Patterns`|Array of regular expressions|Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see [Regular Expression Syntax](/visualstudio/ide/using-regular-expressions-in-visual-studio). <p> In Exchange Online PowerShell, you specify multiple regular expressions separated by commas, and you enclose each regular expression in quotation marks (").|
 |`SCLValue`|One of the following values: <ul><li>**Bypass spam filtering** (`-1`)</li><li>Integers 0 through 9</li></ul>|Specifies the spam confidence level (SCL) that's assigned to a message. A higher SCL value indicates that a message is more likely to be spam.|
-|`SensitiveInformationTypes`|Array of sensitive information types|Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see [Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types). <p> In Exchange Online PowerShell, use the syntax `@{<SensitiveInformationType1>},@{<SensitiveInformationType2>},...`. For example, to look for content that contains at least two credit card numbers, and at least one ABA routing number, use the value `@{Name="Credit Card Number"; minCount="2"},@{Name="ABA Routing Number"; minCount="1"}`.|
+|`SensitiveInformationTypes`|Array of sensitive information types|Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see [Sensitive information types in Exchange Server](../../../ExchangeServer/policy-and-compliance/data-loss-prevention/sensitive-information-types.md). <p> In Exchange Online PowerShell, use the syntax `@{<SensitiveInformationType1>},@{<SensitiveInformationType2>},...`. For example, to look for content that contains at least two credit card numbers, and at least one ABA routing number, use the value `@{Name="Credit Card Number"; minCount="2"},@{Name="ABA Routing Number"; minCount="1"}`.|
 |`Size`|Single size value|Specifies the size of an attachment or the whole message. <p> In the EAC, you can only specify the size in kilobytes (KB). <p> In Exchange Online PowerShell, when you enter a value, qualify the value with one of the following units: <ul><li>`B` (bytes)</li><li>`KB` (kilobytes)</li><li>`MB` (megabytes)</li><li>`GB` (gigabytes)</li></ul> <p> For example, `20 MB`. Unqualified values are typically treated as bytes, but small values may be rounded up to the nearest kilobyte.|
 |`SupervisionList`|Single value of **Allow** or **Block**|Supervision policies were a feature in Live@edu that allowed you to control who could send mail to and receive mail from users in your organization (for example, the closed campus and anti-bullying policies). In Microsoft 365 and Office 365, you can't configure supervision list entries on mailboxes.|
 |`UserScopeFrom`|Single value of **Inside the organization** (`InOrganization`) or **Outside the organization** (`NotInOrganization`)|A sender is considered to be inside the organization if either of the following conditions is true: <ul><li>The sender is a mailbox, mail user, group, or mail-enabled public folder that exists inside the organization.</li><li>The sender's email address is in an accepted domain that's configured as an authoritative domain or an internal relay domain, **and** the message was sent or received over an authenticated connection. For more information about accepted domains, see [Manage accepted domains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md).</li></ul> <p> A sender is considered to be outside the organization if either of the following conditions is true: <ul><li>The sender's email address isn't in an accepted domain.</li><li>The sender's email address is in an accepted domain that's configured as an external relay domain.</li></ul> <p> **Note**: To determine whether mail contacts are considered to be inside or outside the organization, the sender's address is compared with the organization's accepted domains.|
@@ -262,4 +282,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
-[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)
+[New-TransportRule](/powershell/module/exchange/new-transportrule)

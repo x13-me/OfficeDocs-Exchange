@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.custom:
 - ms.exch.eac.EditOwaMailboxPolicy_LinkedIn
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 54d9b046-4f36-4f36-b88a-95b1da4e1b4c
 ms.reviewer: 
 f1.keywords:

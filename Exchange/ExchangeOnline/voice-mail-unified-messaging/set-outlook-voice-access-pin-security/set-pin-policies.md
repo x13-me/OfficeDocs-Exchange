@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can set PIN policies on a Unified Messaging (UM) mailbox policy. UM mailbox policies can be configured to increase the level of security for UM-enabled users that use Outlook Voice Access by requiring users to comply with the predefined PIN policies for your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
 ms.reviewer: 
 f1.keywords:

@@ -90,7 +90,7 @@ In rare cases, such as problems that are especially difficult to solve, Microsof
 
  **What This Feature Does**: If you choose to participate, the Customer Experience Improvement Program (CEIP) collects basic information about your hardware configuration and how you use Microsoft software and services in order to identify trends and usage patterns. CEIP also collects the type and number of errors you encounter, software and hardware performance, and the speed of services. Microsoft does not collect your name, address, or other contact information.
 
- **Information Collected, Processed, or Transmitted**: CEIP information is automatically sent to Microsoft when the feature is turned on. For more information about the information collected, processed, or transmitted by CEIP, see the [Privacy Statement for the Microsoft Customer Experience Improvement Program](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj618322(v=ws.11)).
+ **Information Collected, Processed, or Transmitted**: CEIP information is automatically sent to Microsoft when the feature is turned on. For more information about the information collected, processed, or transmitted by CEIP, see the [Privacy Statement for the Microsoft Customer Experience Improvement Program](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj618322(v=ws.11)).
 
  **Use of Information**: Microsoft uses this information to improve the quality, reliability, and performance of Microsoft software and services.
 

@@ -40,4 +40,4 @@ You use the **Set-OrganizationConfig** cmdlet to enable or disable MailTips in y
 Set-OrganizationConfig -MailTipsAllTipsEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig).
+For detailed syntax and parameter information, see [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig).

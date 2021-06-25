@@ -64,6 +64,6 @@ After you install Exchange 2013, verify that you can send email messages inside 
 
 ## For more information
 
-[Windows Server Group Policy](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11))
+[Windows Server Group Policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11))
 
 [Disjoint namespace scenarios](disjoint-namespace-scenarios-exchange-2013-help.md)

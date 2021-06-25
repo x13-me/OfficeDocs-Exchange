@@ -50,7 +50,8 @@ Looking for other management tasks related to backing up and restoring data? Che
 
    4. Find the **msExchInstallPath** attribute. This attribute stores the current installation path.
 
-- If you do not have the installation media for the Cumulative Update (CU) version that was installed on the server to be recovered, you can recover a server using the latest available Cumulative Update. Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
+- If you do not have the installation media for the Cumulative Update (CU) version that was installed on the server to be recovered, you can recover a server using the latest available Cumulative Update. Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md). 
+Once the upgrade is successful, AdminDisplayVersion in EMS or msExchVersion attribute on recovered server will show old build number and this is a cosmetic in nature. We can either run setup /m:upgrade /IAcceptEchangeServerLicenseTerms  or wait for next Cumulative Update release and perform the upgrade which will correct this.
 
 - The target server must use the same version of Windows Server as the lost server. For example, you can't recover a lost Exchange 2016 server that was running Windows 2012 R2 on a new server that's running Windows 2016, or vice-versa.
 
@@ -65,7 +66,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 ## Recover a Lost Exchange Server
 
-1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
+1. Reset the computer account for the lost server. For detailed steps, see [Reset a Computer Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753596(v=ws.11)).
 
 2. Install the proper operating system and name the new server with the same name as the lost server. Recovery won't succeed if the target Windows server doesn't have the same name as the lost Exchange server.
 
