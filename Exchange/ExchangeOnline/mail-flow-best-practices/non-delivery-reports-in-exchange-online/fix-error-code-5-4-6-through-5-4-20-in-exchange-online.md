@@ -60,7 +60,7 @@ This error can happen when the MX record for your hybrid domain points to Exchan
 
 To fix the problem, configure a dedicated connector to be used for hybrid. This connector will use smart host routing and will have your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
 
-**New EAC**
+##### New EAC
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first). The New EAC screen appears.
 
@@ -72,18 +72,18 @@ The connector properties screen appears.
 
 4. Under **Routing**, click **Edit routing**. The **Routing** screen appears.
 
-:::image type="content" source="../../media/connector-for-hybrid-new-eac.png" alt-text="Routing emails using hybrid connectors in New EAC":::
+   :::image type="content" source="../../media/connector-for-hybrid-new-eac.png" alt-text="Routing emails using hybrid connectors in New EAC":::
 
 5. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
-**Classic EAC**
+##### Classic EAC
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
 2. Click **Classic Exchange admin center** on the left pane of the New EAC screen.
 
 > [!NOTE]
-> You can navigate to the Classic EAC screen only from the New EAC screen.
+> You can go to the Classic EAC screen only from the New EAC screen.
 
 3. Click **mail flow** on the left pane. The **mail flow** home screen appears.
 
@@ -91,9 +91,9 @@ The connector properties screen appears.
 
 5. Select the connector that's used for hybrid, and click **Edit** ![Icon](../../media/ITPro_EAC_EditIcon.png).
 
-6. Navigate to **How do you want to route email messages** screen.
+6. Go to **How do you want to route email messages** screen.
 
-:::image type="content" source="../../media/routing-through-smart-hosts-old-eac.png" alt-text="Routing emails using hybrid connectors in Old EAC":::
+   :::image type="content" source="../../media/routing-through-smart-hosts-old-eac.png" alt-text="Routing emails using hybrid connectors in Old EAC":::
 
 7. Ensure that the correct IP address or FQDN is specified for the smart host in your on-premises Exchange organization.
 
@@ -108,7 +108,6 @@ Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMe
 In this configuration, the error is caused by either of the following issues on the connector from your on-premises Exchange organization to Exchange Online:
 
 - You don't have a connector (from Office 365 to your organization's email server) that has the **Connector Type** value **On-premises**.
-
 - The connector from Office 365 to your organization's email server is scoped to one or more accepted domains.
 
 To fix the problem, configure a dedicated connector (from Office 365 to your organization's email server) that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the connector (from Office 365 to your organization's email server) that is used for hybrid by following these steps:
@@ -118,9 +117,7 @@ To fix the problem, configure a dedicated connector (from Office 365 to your org
 2. In the EAC, click **Mail Flow** \> **Connectors**.
 
 3. Select the connector that's used for hybrid, and then click **Edit** ![Icon to edit](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
-
    - **General**: Verify that the **On-premises** option is selected.
-
    - **Scope**: Verify that the  **Accepted domains** option is empty with no data.
 
 For more information about mail routing in hybrid deployments, see [Transport routing in Exchange hybrid deployments](../../../ExchangeHybrid/transport-routing.md).
@@ -130,7 +127,6 @@ For more information about mail routing in hybrid deployments, see [Transport ro
 There are two likely possibilities:
 
 - Based on the domain in the recipient's email address, your Exchange Online organization accepted the message, but then couldn't correctly route the message to the recipient. This failure is likely caused by accepted domain configuration issues.
-
 - In hybrid environments, there are misconfigured connectors in your Exchange Online organization.
 
 ### Details about NDRs related to hop count exceeded
@@ -138,7 +134,6 @@ There are two likely possibilities:
 Here are some of the error codes that are related to mail routing loops or a bad mail routing configuration:
 
 - `554 5.4.6 Hop count exceeded - possible mail loop` (always generated by on-premises Exchange Servers)
-
 - `5.4.14 Hop count exceeded - possible mail loop ATTR34` (always generated by Exchange Online)
 
 ## Still need help?
