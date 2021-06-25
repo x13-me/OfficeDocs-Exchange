@@ -50,8 +50,8 @@ For more information about how admins can recover deleted items in Exchange Onli
 > - [High availability and business continuity](/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
 > - [Exchange Online service description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
 > - [In-place hold and litigation hold](security-and-compliance/in-place-and-litigation-holds.md)
-> - [Retention policies](/office365/securitycompliance/retention-policies)
-> - [Inactive mailboxes](/office365/securitycompliance/inactive-mailboxes-in-office-365)
+> - [Retention policies](/microsoft-365/compliance/retention)
+> - [Inactive mailboxes](/microsoft-365/compliance/inactive-mailboxes-in-office-365)
 
 ## How do users backup Outlook data?
 
@@ -61,15 +61,15 @@ However, if you need to provide additional storage for user emails, the best way
 
 For more information about Exchange Online Archiving, see:
 
-- [Enable archive mailboxes in the Microsoft 365 security and compliance centers](/office365/securitycompliance/enable-archive-mailboxes)
+- [Enable archive mailboxes in the Microsoft 365 security and compliance centers](/microsoft-365/compliance/enable-archive-mailboxes)
 
-- [Unlimited archiving in Office 365](/office365/securitycompliance/unlimited-archiving)
+- [Unlimited archiving in Office 365](/microsoft-365/compliance/unlimited-archiving)
 
 For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving service description](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
 
 ## How your data is protected
 
-To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](/Office365/securitycompliance/office-365-exchange-data-resiliency).
+To learn how the service is protected using Data Resiliency, see [Exchange Online Data Resiliency in Office 365](/compliance/assurance/assurance-exchange-data-resiliency).
 
 ## When Can I Restore Outlook data on a Microsoft 365 or Office 365 account without a license?
 
