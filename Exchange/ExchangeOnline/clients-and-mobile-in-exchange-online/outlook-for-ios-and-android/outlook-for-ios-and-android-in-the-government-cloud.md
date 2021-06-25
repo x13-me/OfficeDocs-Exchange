@@ -63,7 +63,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
     > [!IMPORTANT]
     > Setting *OutlookMobileGCCRestrictionsEnabled* to false allows submission of support, diagnostic, or crash data to be sent to Microsoft through in-app support or by using Collect Diagnostics. The data are uploaded to Microsoft systems that are outside of the Office 365 GCC compliance boundary, including the Office 365 FedRAMP boundary. Customers should update organizational training and policy materials to instruct users to avoid including any sensitive US government information as part of the in-app support submission.
 
-- **In-app feature requests**: Users are not able to submit in-app feature requests. Instead, users are directed to use [Outlook UserVoice](http://outlook.uservoice.com).
+- **In-app feature requests**: Users are not able to submit in-app feature requests.
 
 - **Multiple accounts**: Only the user's Office 365 GCC account and OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an Exchange ActiveSync client from another provider.
 
