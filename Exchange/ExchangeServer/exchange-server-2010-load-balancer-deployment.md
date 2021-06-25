@@ -42,7 +42,7 @@ Hardware or software load balancer vendors interested in participating in intero
 
 ## Hardware load balancers for Exchange Server 2010
 
-Listed below are hardware load balancers that have been tested by the vendor and reviewed by Microsoft to meet Exchange Server 2010 requirements. It is recommended that you visit the vendor's website for the latest information regarding product specifications, capacity, country support and documentation including release notes and known issues. Please contact the vendor for more information about these products.
+Listed below are hardware load balancers that have been tested by the vendor and reviewed by Microsoft to meet Exchange Server 2010 requirements. It's recommended that you visit the vendor's website for the latest information about product specifications, capacity, country support and documentation including release notes and known issues. Contact the vendor for more information about these products.
 
 |Vendor|Qualified Product|Software Version Tested|Vendor's Exchange Page|
 |---|---|---|---|
@@ -69,7 +69,7 @@ Listed below are hardware load balancers that have been tested by the vendor and
 
 ## Software load balancers for Exchange Server 2010
 
-Listed below are software load balancers that have been tested by the vendor and reviewed by Microsoft to meet Exchange Server 2010 requirements. It is recommended that you visit the vendor's web site for the latest information regarding product specifications, capacity, country support and documentation including release notes and known issues. Please contact the vendor for more information on these products.
+Listed below are software load balancers that have been tested by the vendor and reviewed by Microsoft to meet Exchange Server 2010 requirements. It's recommended that you visit the vendor's web site for the latest information about product specifications, capacity, country support and documentation including release notes and known issues. Contact the vendor for more information on these products.
 
 |Vendor|Qualified Product|Software Version Tested|Vendor's Exchange Page|
 |---------|---------|---------|---------|
@@ -93,6 +93,6 @@ Listed below are software load balancers that have been tested by the vendor and
 
 ## Additional resources
 
-[Understanding load balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141))
+[Understanding load balancing in Exchange 2010](/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141))
 
-[Load balancing requirements of Exchange protocols](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625248(v=exchg.141))
+[Load balancing requirements of Exchange protocols](/previous-versions/office/exchange-server-2010/ff625248(v=exchg.141))

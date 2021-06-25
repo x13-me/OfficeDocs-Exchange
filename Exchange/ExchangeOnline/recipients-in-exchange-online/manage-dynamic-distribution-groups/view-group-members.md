@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Dynamic distribution groups are distribution groups whose membership is based on specific recipient filters rather than a defined set of recipients. Microsoft Exchange provides precanned filters to make it easier to create recipient filters for dynamic distribution groups. A precanned filter is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can specify the recipient types you want to include in a dynamic distribution group. Additionally, you can also specify a list of conditions that the recipients must meet. You can use Exchange Online PowerShell to preview the list of recipients for a dynamic distribution group that uses precanned filters.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.reviewer: 
 f1.keywords:
@@ -51,7 +51,7 @@ This example displays the list of users and email addresses (more than 1000 mail
 ```PowerShell
 Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | Format-Table Name,Primary*
 ```
-For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup) and [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient).
+For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](/powershell/module/exchange/get-dynamicdistributiongroup) and [Get-Recipient](/powershell/module/exchange/get-recipient).
 
 > [!NOTE]
 > You can't view members of a dynamic distribution group by using the EAC.

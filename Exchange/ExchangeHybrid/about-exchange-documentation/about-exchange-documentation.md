@@ -26,11 +26,11 @@ Other information related to Exchange documentation is in [Third-party copyright
 
 ## Where to find Exchange documentation
 
-[Exchange documentation](https://docs.microsoft.com/exchange/) is your primary gateway to in-depth technical information about Microsoft Exchange.
+[Exchange documentation](../../Hub/index.yml) is your primary gateway to in-depth technical information about Microsoft Exchange.
 
 The [Exchange Team Blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/bg-p/Exchange) contains technical articles written by the Exchange Team, as well as product announcements and updates. The blog is an excellent way to interact with the Exchange Team. We read and respond to your feedback and comments.
 
-If you're an admin for an Exchange hybrid or Exchange Online deployment, you may also be interested in [Manage Microsoft 365 and Office 365](https://docs.microsoft.com/Office365/).
+If you're an admin for an Exchange hybrid or Exchange Online deployment, you may also be interested in [Manage Microsoft 365 and Office 365](/Office365/).
 
 ## Additional resources
 
@@ -38,7 +38,7 @@ Looking for more than just documentation? Check out these other Exchange resourc
 
 - [Exchange Server Forums](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) The forum provides a place to discuss Exchange with users and Exchange Team members.
 
-- [Exchange and Exchange Online development](https://docs.microsoft.com/exchange/client-developer/exchange-server-development) You'll find Exchange developer documentation here.
+- [Exchange and Exchange Online development](/exchange/client-developer/exchange-server-development) You'll find Exchange developer documentation here.
 
 - [Support for business](https://support.microsoft.com/supportforbusiness/productselection): Select **Servers** \> **Exchange Server** for support resources for multiple versions of Exchange.
 

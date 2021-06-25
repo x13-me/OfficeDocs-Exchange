@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
 ms.reviewer: 
 f1.keywords:
@@ -22,17 +22,17 @@ manager: serdars
 
 [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md)
 
-[Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online)
+[Use batch migration to migrate Exchange Server public folders to Exchange Online](../../../ExchangeServer/collaboration/public-folders/migrate-to-exchange-online.md)
 
 [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md)
 
-[Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
+[Configure Exchange Server public folders for a hybrid deployment](../../../ExchangeHybrid/hybrid-deployment/set-up-modern-hybrid-public-folders.md)
 
 [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
 
 [Set up public folders in a new organization](set-up-public-folders.md)
 
-[Accessing public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
+[Access public folders with Outlook 2016 for Mac](access-public-folders-with-outlook-2016-for-mac.md)
 
 [Create a public folder mailbox](create-public-folder-mailbox.md)
 
@@ -49,5 +49,7 @@ manager: serdars
 [Remove a public folder](remove-public-folder.md)
 
 [Restore a deleted public folder](restore-deleted-public-folder.md)
+
+[Restore deleted items from public folder](restore-deleted-items-from-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)

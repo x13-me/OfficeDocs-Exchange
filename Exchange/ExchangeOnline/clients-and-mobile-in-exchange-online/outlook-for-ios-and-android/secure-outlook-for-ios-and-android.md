@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
 title: Securing Outlook for iOS and Android in Exchange Online
 ms.collection: 
@@ -26,7 +26,7 @@ Protecting company or organizational data on users' mobile devices is extremely 
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management](#leveraging-mobile-device-management), and use the Mobile Device Management (MDM) for Microsoft 365 or Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Basic Mobility and Security for Microsoft 365](#leveraging-basic-mobility-and-security-for-microsoft-365), and use the Basic Mobility and Security capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 
@@ -37,9 +37,9 @@ If, on the other hand, you don't want to use Outlook for iOS and Android in your
 
 ## Setting up Outlook for iOS and Android
 
-For devices enrolled in a mobile device management (MDM) solution, users will utilize the MDM solution, like the Intune Company Portal, to install the required apps: Outlook for iOS and Android and Microsoft Authenticator.
+For devices enrolled in a unified endpoint management (UEM) solution, users will utilize the UEM solution, like the Intune Company Portal, to install the required apps: Outlook for iOS and Android and Microsoft Authenticator.
 
-For devices that are not enrolled in an MDM solution, users need to install:
+For devices that are not enrolled in an UEM solution, users need to install:
 
 - Outlook for iOS and Android via the Apple App Store or Google Play Store
 
@@ -56,12 +56,12 @@ Once the app is installed, users can follow these steps to add their corporate e
 - [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)
 
 > [!IMPORTANT]
-> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](/intune/app-based-conditional-access-intune).
 
 ## Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android
 
 > [!IMPORTANT]
-> The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
+> The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](/intune/app-based-conditional-access-intune).
 
 The richest and broadest protection capabilities for Microsoft 365 and Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
 
@@ -70,25 +70,29 @@ The richest and broadest protection capabilities for Microsoft 365 and Office 36
 
 ### Block all email apps except Outlook for iOS and Android using conditional access
 
-When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365 or Office 365" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365 or Office 365" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
-2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
-   The above policies leverage the grant control [Require app protection policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
+   The above policies leverage the grant control [Require app protection policy](/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
 
-3. Finally, follow [How to: Block legacy authentication to Azure AD with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication for other Exchange protocols on iOS and Android devices; this policy should target only Office 365 Exchange Online cloud app and iOS and Android device platforms. This ensures mobile apps using Exchange Web Services, IMAP4, or POP3 protocols with basic authentication cannot connect to Exchange Online.
+3. Finally, follow [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication for other Exchange protocols on iOS and Android devices; this policy should target only Office 365 Exchange Online cloud app and iOS and Android device platforms. This ensures mobile apps using Exchange Web Services, IMAP4, or POP3 protocols with basic authentication cannot connect to Exchange Online.
 
 > [!NOTE]
 > After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
 > 
-> When the user authenticates in Outlook for iOS and Android, if there are any Azure Active Directory conditional access policies applied, then mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped.
+> When the user authenticates in Outlook for iOS and Android, Exchange Online mobile device access rules (allow, block, or quarantine) are skipped if there are any Azure Active Directory conditional access policies applied to the user that include:
+> - Cloud app condition: Exchange Online or Office 365
+> - Device platform condition: iOS and/or Android
+> - Client apps condition: Mobile apps and desktop client
+> - One of the following Grant access controls: [Require device to be marked as compliant](/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 > 
-> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](/intune/app-based-conditional-access-intune).
 
 ### Protect corporate data in Outlook for iOS and Android using Intune app protection policies
 
@@ -100,9 +104,9 @@ The APP data protection framework is organized into three distinct configuration
 - **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data. 
 - **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data. 
 
-To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
+To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework). 
 
-Regardless of whether the device is enrolled in an MDM solution, an Intune app protection policy needs to be created for both iOS and Android apps, using the steps in [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). These policies, at a minimum, must meet the following conditions:
+Regardless of whether the device is enrolled in an UEM solution, an Intune app protection policy needs to be created for both iOS and Android apps, using the steps in [How to create and assign app protection policies](/intune/app-protection-policies). These policies, at a minimum, must meet the following conditions:
 
 1. They include all Microsoft mobile applications, such as Edge, OneDrive, Office, or Teams, as this will ensure that users can access and manipulate work or school data within any Microsoft app in a secure fashion.
 
@@ -110,31 +114,31 @@ Regardless of whether the device is enrolled in an MDM solution, an Intune app p
 
 3. Determine which framework level meets your requirements. Most organizations should implement the settings defined in **Enterprise enhanced data protection** (Level 2) as that enables data protection and access requirements controls. 
 
-For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
+For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](/intune/app-protection-policy-settings-ios).
 
 > [!IMPORTANT]
-> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/mem/intune/fundamentals/end-user-mam-apps-android).
+> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](/mem/intune/fundamentals/end-user-mam-apps-android).
 
-## Leveraging Mobile Device Management
+## Leveraging Basic Mobility and Security for Microsoft 365
 
-If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Mobile Device Management (MDM). This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
+If you don't plan to leverage the Enterprise Mobility + Security suite, you can use Basic Mobility and Security for Microsoft 365. This solution requires that mobile devices be enrolled. When a user attempts to access Exchange Online with a device that is not enrolled, the user is blocked from accessing the resource until they enroll the device.
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-A global admin must complete the following steps to activate and set up MDM. See [Set up Mobile Device Management (MDM) in Microsoft 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+A global admin must complete the following steps to activate and set up enrollment. See [Set up Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
-1. Activating MDM by following steps in the Microsoft 365 Security Center.
+1. Activating Basic Mobility and Security by following the steps in the Microsoft 365 Security Center.
 
-2. Setting up MDM by, for example, creating an APNs certificate to manage iOS devices.
+2. Setting up unified endpoint management by, for example, creating an APNs certificate to manage iOS devices.
 
 3. Creating device policies and apply them to groups of users. When you do this, your users will get an enrollment message on their device. And when they've completed enrollment, their devices will be restricted by the policies you've set up for them.
 
 > [!NOTE]
-> Policies and access rules created in MDM will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
+> Policies and access rules created in Basic Mobility and Security will override both Exchange mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security, any Exchange mobile device mailbox policy or device access rule that is applied to that device will be ignored.
 
 ## Leveraging Exchange Online mobile device policies
 
-If you don't plan on leveraging either the Enterprise Mobility + Security suite or the MDM functionality, you can implement Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
+If you don't plan on leveraging either the Enterprise Mobility + Security suite or the Basic Mobility and Security functionality, you can implement an Exchange mobile device mailbox policy to secure the device, and device access rules to limit device connectivity.
 
 ### Mobile device mailbox policy
 
@@ -142,9 +146,15 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
 
 - Device encryption enabled
 
-- Min password length
+- Min password length (only on Android)
 
 - Password enabled
+
+- Allow Bluetooth (used to manage the Outlook for Android wearable app)
+
+  - When AllowBluetooth is enabled (default behavior) or configured for HandsfreeOnly, wearable synchronization between Outlook on the Android device and Outlook on the wearable is allowed for the work or school account.
+
+  - When AllowBluetooth is disabled, Outlook for Android will disable synchronization between Outlook on the Android device and Outlook on the wearable for the specified work or school account (and delete any data previously synced for the account). Disabling the synchronization is controlled entirely within Outlook itself; Bluetooth is not disabled on the device or wearable nor is any other wearable app affected.
 
 For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
 
@@ -222,11 +232,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 **Additional resources**:
 
-- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/New-ActiveSyncDeviceAccessRule)
+- [New-ActiveSyncDeviceAccessRule](/powershell/module/exchange/New-ActiveSyncDeviceAccessRule)
 
-- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/Get-MobileDevice)
+- [Get-MobileDevice](/powershell/module/exchange/Get-MobileDevice)
 
-- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ActiveSyncOrganizationSettings)
+- [Set-ActiveSyncOrganizationSettings](/powershell/module/exchange/Set-ActiveSyncOrganizationSettings)
 
 ## Blocking Outlook for iOS and Android
 
@@ -244,7 +254,7 @@ Azure Active Directory conditional access does not provide a mechanism whereby y
 
 If you want to prevent mobile device access for all users, or a subset of users, using conditional access, follow these steps.
 
-Create conditional access policies, with each policy either targeting all users or a subset of users via a security group. Details are in [Azure Active Directory app-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
+Create conditional access policies, with each policy either targeting all users or a subset of users via a security group. Details are in [Azure Active Directory app-based conditional access](/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
 
 1. The first policy blocks Outlook for iOS and Android and other OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1 - Configure an Azure AD conditional access policy for Exchange Online," but for the fifth step, choose **Block access**.
 
@@ -252,7 +262,7 @@ Create conditional access policies, with each policy either targeting all users 
 
 #### Option B: Block mobile device access on a specific mobile device platform
 
-If you want to prevent a specific mobile device platform from connecting to Exchange Online, while allowing Outlook for iOS and Android to connect using that platform, create the following conditional access policies, with each policy targeting all users. Details are in [Azure Active Directory app-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
+If you want to prevent a specific mobile device platform from connecting to Exchange Online, while allowing Outlook for iOS and Android to connect using that platform, create the following conditional access policies, with each policy targeting all users. Details are in [Azure Active Directory app-based conditional access](/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
 
 1. The first policy allows Outlook for iOS and Android on the specific mobile device platform and blocks other OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1 - Configure an Azure AD conditional access policy for Exchange Online," but for step 4a, select only the desired mobile device platform (such as iOS) to which you want to allow access.
 
@@ -314,7 +324,7 @@ New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-i
 
 ## Exchange Online controls
 
-Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can manage the access that mobile devices have to information in your organization through various Exchange Online controls, as well as, whether to allow users access to add-ins within Outlook for iOS and Android.
+Beyond Microsoft Endpoint Manager, Basic Mobility and Security for Microsoft 365, and Exchange mobile device policies, you can manage the access that mobile devices have to information in your organization through various Exchange Online controls, as well as, whether to allow users access to add-ins within Outlook for iOS and Android.
 
 ### Exchange Web Services (EWS) application policies
 
@@ -344,4 +354,4 @@ If you want to stop your end users from accessing and installing Outlook add-ins
 - To prevent users from side loading add-ins, remove the My Custom Apps role from them.
 - To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
 
-For more information, please see [Add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) and how to [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins).
+For more information, please see [Add-ins for Outlook](../add-ins-for-outlook/add-ins-for-outlook.md) and how to [Manage deployment of add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).

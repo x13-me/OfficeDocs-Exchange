@@ -22,7 +22,7 @@ You can enable or disable POP3 for a user.
 > [!NOTE]
 > After you've enabled or disabled POP3 for a user, you must restart the Microsoft Exchange POP3 service and the Microsoft Exchange POP3 Backend service. For more information about how to restart the POP3 service, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A>.
 
-For additional information related to managing user mailboxes, see [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+For additional information related to managing user mailboxes, see [Manage user mailboxes](../ExchangeOnline/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
 
 For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
 

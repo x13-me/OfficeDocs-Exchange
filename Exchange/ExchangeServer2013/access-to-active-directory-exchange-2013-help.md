@@ -118,8 +118,8 @@ The following guidelines will help you minimize problems or issues when you reco
 
 ## For more information
 
-[Active Directory Recycle Bin Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10))
+[Active Directory Recycle Bin Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10))
 
-[Introduction to Active Directory Administrative Center Enhancements (Level 100)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-)
+[Introduction to Active Directory Administrative Center Enhancements (Level 100)](/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-)
 
-[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/adac/advanced-ad-ds-management-using-active-directory-administrative-center--level-200-)
+[Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](/windows-server/identity/ad-ds/get-started/adac/advanced-ad-ds-management-using-active-directory-administrative-center--level-200-)

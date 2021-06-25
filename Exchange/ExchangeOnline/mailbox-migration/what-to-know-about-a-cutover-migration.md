@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 and Office 365.
@@ -29,9 +29,9 @@ manager: serdars
 
 # What you need to know about a cutover email migration
 
-As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:
+As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Additionally, this migration method moves mail users, mail contacts, and mail-enabled groups with their membership. Choosing a cutover migration is suggested when:
 
-- Your current on-premises Exchange organization is Microsoft Exchange Server 2003, Microsoft Exchange Server 2007, Microsoft Exchange Server 2010, Microsoft Exchange Server 2013, or Exchange Server 2016.
+- Your current on-premises Exchange organization is Microsoft Exchange Server 2003 or later.
 
 - Your on-premises Exchange organization has fewer than 2,000 mailboxes.
 
@@ -105,4 +105,4 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 
 [Ways to migrate email to Microsoft 365 or Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a cutover migration](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)
+[Use PowerShell to perform a cutover migration](/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)

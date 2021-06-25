@@ -7,7 +7,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.exch.eac.EditOwaMailboxPolicy_Facebook
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 0f7e88eb-2b47-41ef-aedf-add22937c658
 ms.reviewer: 
 title: Manage Facebook contact sync in your organization

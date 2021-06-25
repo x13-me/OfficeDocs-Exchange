@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: This article describes how users of Outlook for iOS and Android can use third-party add-ins for online meetings'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 title: Using third-party add-ins for online meetings in Outlook for iOS and Android
 ms.custom: remotework 
 ms.reviewer: smithre4
@@ -20,7 +20,7 @@ manager: serdars
 Setting up an online meeting is a core experience for Outlook users. To meet the needs of an increasing number of remote workers and students, Outlook for iOS and Android has enabled add-ins to provide online meetings from third-party providers such as Zoom, BlueJeans, and Webex (among others). End-users in your organization will be able to use these add-ins to set up online meetings on third-party platforms.
 
 > [!NOTE]
-> Currently this functionality is only available in Outlook for Android. It will be available in Outlook for iOS soon.
+> Both Outlook for iOS and Android support joining meetings from third-party online meeting providers. In addition, Outlook for Android also supports creating meeting requests for third-party online meeting providers.
 
 ## How to enable third-party online meeting integration with Outlook for iOS and Android
 
@@ -31,9 +31,9 @@ Third-party online meeting integration is handled by add-ins that have enabled t
 
 The add-ins can be deployed using the following admin portals:
 
-- If all users are Microsoft 365 or Office 365 users, then use the [centralized deployment portal](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
+- If all users are Microsoft 365 or Office 365 users, then use the [centralized deployment portal](/office/dev/add-ins/publish/centralized-deployment). Centralized deployment provides the capability to install add-ins more granularly, such as to sub-groups within a given organization.
     
-- If a tenant has users' mailboxes in Exchange Server on premises, then use the ECP/EAC portal. More information is available [here](https://docs.microsoft.com/Exchange/install-or-remove-outlook-add-ins-2013-help).
+- If a tenant has users' mailboxes in Exchange Server on premises, then use the ECP/EAC portal. More information is available [here](../../../ExchangeServer2013/install-or-remove-outlook-add-ins-2013-help.md).
 
 
 ## Creating an online meeting with a third-party add-in
@@ -53,7 +53,7 @@ On a user's New Event screen, only a single meeting provider will be shown. If t
 
   - Priority 2: An online meeting add-in that was installed by an administrator.
 
-  - Default selection: If there are no admin-installed online Web conferencing add-ins, the default option of Teams and Skype will be shown, as described [in this article](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+  - Default selection: If there are no admin-installed online Web conferencing add-ins, the default option of Teams and Skype will be shown, as described [in this article](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 > [!NOTE]
 > Installing multiple add-in providers for online meetings on a user's device isn't supported and may result in unexpected behavior.
@@ -63,7 +63,7 @@ On a user's New Event screen, only a single meeting provider will be shown. If t
 
 Add-in developers need to add the MobileOnlineMeetingCommandSurface extension point in their add-in manifest. 
 
-Information for add-in developers is available in [Create an Outlook mobile add-in for an online-meeting provider](https://docs.microsoft.com/office/dev/add-ins/outlook/online-meeting).
+Information for add-in developers is available in [Create an Outlook mobile add-in for an online-meeting provider](/office/dev/add-ins/outlook/online-meeting).
 
 Capabilities exposed to online meeting add-ins include:
 
@@ -71,7 +71,7 @@ Capabilities exposed to online meeting add-ins include:
 
   - Display dialogue. Login flow can be handled using full-screen dialog.
 
-  - The specific APIs that are exposed are [listed here](https://docs.microsoft.com/office/dev/add-ins/outlook/online-meeting\#available-apis).
+  - The specific APIs that are exposed are [listed here](/office/dev/add-ins/outlook/online-meeting\#available-apis).
 
 
 ## How users join meetings

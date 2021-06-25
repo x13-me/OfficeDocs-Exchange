@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to modify address book policies (ABPs) in Exchange Online
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms.reviewer:
 title: Change the settings of an address book policy in Exchange Online
@@ -34,7 +34,7 @@ For additional management tasks related to ABPs, see [Address book policy proced
 
 - By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets or features that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
@@ -78,7 +78,7 @@ Set-AddressBookPolicy -Identity "<ABPName>" [-Name "<Unique Name>"] [-GlobalAddr
    Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
    ```
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/set-addressbookpolicy).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](/powershell/module/exchange/set-addressbookpolicy).
 
 ### How do you know this worked?
 

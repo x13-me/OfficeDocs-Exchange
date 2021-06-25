@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 7ddf1356-d4c0-41c7-a495-101633ae2f50
 ms.reviewer: 
 f1.keywords:
@@ -19,7 +19,7 @@ manager: serdars
 # Voice mail in Exchange Online: Unified Messaging
 
 > [!NOTE]
-> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Skype for Business Online voice users. For more information please check [Plan Cloud Voicemail service](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Skype for Business Online voice users. For more information please check [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization.
 
@@ -192,4 +192,4 @@ For more information about the EAC, see [Exchange admin center in Exchange Onlin
 
 Exchange Online PowerShell is a powerful command-line interface that enables automation of administrative tasks. Exchange Online PowerShell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's Exchange Online PowerShell that's doing the work behind the scenes.
 
-For more information about Exchange Online PowerShell, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+For more information about Exchange Online PowerShell, see [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).

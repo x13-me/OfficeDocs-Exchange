@@ -35,7 +35,7 @@ How you clean up the Recoverable Items folder in a user's mailbox depends on whe
 
 - If the mailbox is placed on In-Place Hold or Litigation Hold or has single item recovery enabled, it's important to preserve the mailbox data until the hold is removed or single item recovery is disabled. In this case, you need to perform more detailed steps to clean up the Recoverable Items folder.
 
-To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds). To learn more about single item recovery, see "Single Item Recovery" in [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
+To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Litigation Hold](../ExchangeOnline/security-and-compliance/in-place-and-litigation-holds.md). To learn more about single item recovery, see "Single Item Recovery" in [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
 To learn more about the Recoverable Items folder, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
@@ -45,7 +45,7 @@ To learn more about the Recoverable Items folder, see [Recoverable Items folder]
 
 - You need to be assigned the following management roles to use the **Search-Mailbox** cmdlet to search for and delete messages in a user's mailbox.
 
-  - **Mailbox Search**: This role allows you to search for messages across multiple mailboxes in your organization. Administrators aren't assigned this role by default. To assign yourself this role so that you can search mailboxes, add yourself as a member of the Discovery Management role group. See [Assign eDiscovery permissions in Exchange](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
+  - **Mailbox Search**: This role allows you to search for messages across multiple mailboxes in your organization. Administrators aren't assigned this role by default. To assign yourself this role so that you can search mailboxes, add yourself as a member of the Discovery Management role group. See [Assign eDiscovery permissions in Exchange](../ExchangeOnline/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions.md).
 
   - **Mailbox Import Export**: This role allows you to delete messages from a user's mailbox. By default, this role isn't assigned to any role group. To delete messages from users' mailboxes, you can add the Mailbox Import Export role to the Organization Management role group. For more information, see the "Add a role to a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md) .
 
@@ -68,7 +68,7 @@ Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Di
 > [!NOTE]
 > To delete items from the mailbox without copying them to another mailbox, use the preceding command without the <EM>TargetMailbox</EM> and <EM>TargetFolder</EM> parameters.
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox).
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/Search-Mailbox).
 
 ## Use the Shell to clean up the Recoverable Items folder for mailboxes that are placed on hold or have single item recovery enabled
 
@@ -162,7 +162,7 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
    ```
 
    > [!NOTE]
-   > It isn't required to copy items to the Discovery Search Mailbox. You can copy messages to any mailbox. However, to prevent access to potentially sensitive mailbox data, we recommend copying messages to a mailbox that has access restricted to authorized records managers. By default, access to the default Discovery Search Mailbox is restricted to members of the Discovery Management role group. For details, see <A href="https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">In-Place eDiscovery</A>.
+   > It isn't required to copy items to the Discovery Search Mailbox. You can copy messages to any mailbox. However, to prevent access to potentially sensitive mailbox data, we recommend copying messages to a mailbox that has access restricted to authorized records managers. By default, access to the default Discovery Search Mailbox is restricted to members of the Discovery Management role group. For details, see <A href="/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">In-Place eDiscovery</A>.
 
 10. If the mailbox was placed on Litigation Hold or had single item recovery enabled earlier, enable these features again.
 
@@ -209,25 +209,25 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
+- [Get-Mailbox](/powershell/module/exchange/Get-Mailbox)
 
-- [Get-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/Get-CASMailbox)
+- [Get-CASMailbox](/powershell/module/exchange/Get-CASMailbox)
 
-- [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics)
+- [Get-MailboxFolderStatistics](/powershell/module/exchange/Get-MailboxFolderStatistics)
 
-- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxServer)
+- [Get-MailboxServer](/powershell/module/exchange/Get-MailboxServer)
 
-- [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/Set-CASMailbox)
+- [Set-CASMailbox](/powershell/module/exchange/Set-CASMailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox)
+- [Set-Mailbox](/powershell/module/exchange/Set-Mailbox)
 
-- [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer)
+- [Set-MailboxServer](/powershell/module/exchange/Set-MailboxServer)
 
-- [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox)
+- [Search-Mailbox](/powershell/module/exchange/Search-Mailbox)
 
 ## How do you know this worked?
 
-To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics) cmdlet the check the size of the Recoverable Items folder.
+To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](/powershell/module/exchange/Get-MailboxFolderStatistics) cmdlet the check the size of the Recoverable Items folder.
 
 This example retrieves the size of the Recoverable Items folder and its subfolders and an item count in the folder and each subfolder.
 

@@ -52,4 +52,4 @@ Items in mailboxes placed on Retention Hold aren't removed until the hold is rem
 
 If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are removed from the Inbox but preserved in the Recoverable Items folder until the mailbox is removed from [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
 
-In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](https://docs.microsoft.com/exchange/export-and-import-retention-tags-exchange-2013-help) for more information.
+In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](../../../ExchangeServer2013/export-and-import-retention-tags-exchange-2013-help.md) for more information.

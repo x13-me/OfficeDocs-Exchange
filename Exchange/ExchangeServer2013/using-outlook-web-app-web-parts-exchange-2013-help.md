@@ -38,6 +38,9 @@ Depending on the security measures that have been applied to your network, you m
 
 The following table lists the parameters of a Web Part and examples of how they're used.
 
+> [!NOTE]
+> Exchange 2016, Exchange 2019, and Exchange Online no longer include support for Web Parts.
+
 ### Web Part parameters and how they're used
 
 <table>

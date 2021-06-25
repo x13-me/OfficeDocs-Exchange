@@ -101,7 +101,7 @@ For additional management tasks related to federation, see [Federation procedure
   Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationRelationship) and [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationRelationship).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](/powershell/module/exchange/Get-OrganizationRelationship) and [Set-OrganizationRelationship](/powershell/module/exchange/Set-OrganizationRelationship).
 
 ## How do you know this worked?
 

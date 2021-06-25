@@ -33,14 +33,15 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
 - Do you want to route inbound Internet mail for both your on-premises and Exchange Online mailboxes through Exchange Online or through your on-premises organization?
 
-    The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Microsoft 365 and Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
+  The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Microsoft 365 and Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
 
 - Do you want to route outbound mail to external recipients from your Exchange Online organization through your on-premises organization (centralized mail transport), or do you want to route it directly to the Internet?
 
-    With centralized mail transport, you can route all mail from mailboxes in the Exchange Online organization through the on-premises organization before they're delivered to the Internet. This approach is helpful in compliance scenarios where all mail to and from the Internet must be processed by on-premises servers. Alternately, you can configure Exchange Online to deliver messages for external recipients directly to the Internet.
+    With centralized mail transport, you can route all mail from mailboxes in the Exchange Online organization through the on-premises organization before they're delivered to the Internet. In the same way, incoming Internet messages will be routed to an on-premises organization before being delivered to any Exchange Online recipient. Possible scenarios are detailed in [Transport routing in Exchange hybrid deployments](/exchange/transport-routing).
+This approach is helpful in compliance scenarios where all mail to and from the Internet must be processed by on-premises servers. Alternately, you can configure Exchange Online to deliver messages for external recipients directly to the Internet.
 
     > [!NOTE]
-    > Centralized mail transport is only recommended for organizations with specific compliance-related transport needs. Our recommendation for typical Exchange organizations is not to enable centralized mail transport as it can significantly increase the amount of messages processed by your on-premises servers, increase the bandwidth used, and create an unnecessary dependency on your on-premises servers.
+    > Centralized mail transport is only recommended for organizations with specific compliance-related transport needs. Our recommendation for typical Exchange organizations is not to enable centralized mail transport as it can significantly increase the amount of messages processed by your on-premises servers, increase the bandwidth used, and create an unnecessary dependency on your on-premises servers.  
 
 - Do you want to deploy an Edge Transport server in your on-premises organization?
 
@@ -70,4 +71,4 @@ When using forced TLS transport, the sending and receiving servers examine the c
 
 In addition to using TLS, messages between the organizations are treated as "internal." This approach allows messages to bypass anti-spam settings and other services.
 
-Learn more about SSL certificates and domain security at [Certificate requirements for hybrid deployments](certificate-requirements.md) and [Understanding TLS Certificates](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998840(v=exchg.141)).
+Learn more about SSL certificates and domain security at [Certificate requirements for hybrid deployments](certificate-requirements.md) and [Understanding TLS Certificates](/previous-versions/office/exchange-server-2010/aa998840(v=exchg.141)).

@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
 ms.reviewer: 
 description: "As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
@@ -81,7 +81,7 @@ The main steps you perform for a cutover migration are shown in the following il
 
 8. The administrator completes post-migration tasks in Microsoft 365 or Office 365 (assigns licenses to users and creates an Autodiscover Domain Name System (DNS) record), and optionally decommissions the on-premises Exchange servers.
 
-9. The administrator sends a welcome letter to users to tell them about Microsoft 365 or Office 365 and to describe how to sign in to their new mailboxes.
+9. The administrator sends a welcome letter to users to tell them about Microsoft 365 or Office 365 and to describe how to sign in to their new mailboxes. (See [Overview of Outlook e-mail profile](https://support.microsoft.com/office/overview-of-outlook-e-mail-profiles-9073a8ac-c3d6-421d-b5b9-fcedff7642fc) for information on creating new Outlook profiles).
 
 ## Ready to run a cutover migration?
 
@@ -92,15 +92,15 @@ Expand the sections below and follow the steps.
 Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover migration, there are a few changes to your Exchange Server environment you must complete first.
 
 > [!NOTE]
-> If you have turned on directory synchronization, you need to turn it off before you can perform a cutover migration. You can do this by using PowerShell. For instructions, see [Turn off directory synchronization](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+> If you have turned on directory synchronization, you need to turn it off before you can perform a cutover migration. You can do this by using PowerShell. For instructions, see [Turn off directory synchronization](/office365/enterprise/turn-off-directory-synchronization).
 
 1. **Configure Outlook Anywhere on your on-premises Exchange Server**: The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. Outlook Anywhere is automatically configured for Exchange 2013. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following:
 
-   - [Exchange 2010: Enable Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb123542(v=exchg.141))
+   - [Exchange 2010: Enable Outlook Anywhere](/previous-versions/office/exchange-server-2010/bb123542(v=exchg.141))
 
-   - [Exchange 2007: How to Enable Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
+   - [Exchange 2007: How to Enable Outlook Anywhere](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-   - [How to configure Outlook Anywhere with Exchange 2003](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
+   - [How to configure Outlook Anywhere with Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
 2. You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration in order for Microsoft 365 or Office 365 to run a cutover migration. For cutover migration you will to add the Outlook Anywhere and Autodiscover services to your certificate. For instructions on how to set up certificates, see:
 
@@ -114,13 +114,12 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover m
 
    - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
 
-   - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://docs.microsoft.com/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
+   - Use the [Microsoft Exchange Remote Connectivity Analyzer](/connectivity-analyzer/exchange-remote-connectivity-analyzer-tool) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
 
    - Wait for the connection to automatically be tested when you connect Microsoft 365 or Office 365 to your email system later in this procedure.
 
-4. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you connect Microsoft 365 or Office 365 to your email system later in this procedure.
-
-5. To migrate the mailboxes, the admin must have one of the following permissions:
+4. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Microsoft 365 or Office 365. This user account is used when you connect Microsoft 365 or Office 365 to your email system later in this procedure. 
+To migrate the mailboxes, the admin must have one of the following permissions:
 
    - The migration administrator must be assigned the **FullAccess** permission for each on-premises mailbox.
 
@@ -129,12 +128,14 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover m
    - The migration administrator must be assigned the **Receive As** permission on the on-premises mailbox database that stores user mailboxes.
 
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365](assign-permissions-for-migration.md).
+    
+5. Verify that the mailboxes to be migrated are **not hidden from the address lists**.
 
-6. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. [Turn on Cloud Voicemail](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail) for your users after the migration is complete.
+6. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. [Turn on Cloud Voicemail](/microsoftteams/set-up-phone-system-voicemail) for your users after the migration is complete.
 
 7. **Create security groups and clean up delegates**: Because the email migration service can't detect whether on-premises Active Directory groups are security groups, it can't provision any migrated groups as security groups in Microsoft 365 or Office 365. If you want to have security groups in Microsoft 365 or Office 365, you must first provision an empty mail-enabled security group in Microsoft 365 or Office 365 before starting the cutover migration.
 
-   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
+   Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups with their membership. If any other Active Directory object, such as user mailbox that is not migrated to Microsoft 365 or Office 365 is assigned as a manager or delegate to an object being migrated, you must remove them from the object before migration.
 
 ## Step 1: Verify you own the domain
 
@@ -154,7 +155,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 6. Follow the instructions provided for your DNS hosting provider. The TXT record usually is chosen to verify ownership.
 
-   You can also find the instructions in [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+   You can also find the instructions in [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
    After you add your TXT or MX record, wait about 15 minutes before proceeding to the next step.
 
@@ -182,7 +183,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes:
 
-   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox.
+   - **Email address**: Type the *email address* of any user in the on-premises Exchange organization that will be migrated. Microsoft 365 or Office 365 will test the connectivity to this user's mailbox. Make sure that this mailbox is _not_ hidden from the address lists.
 
    - **Account with privileges**: Type the *username* (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Microsoft 365 or Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address.
 
@@ -206,7 +207,7 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 9. Choose **New** to create the migration endpoint.
 
-   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
+   To validate your Exchange Online is connected to the on-premises server, you can run the command in Example 4 of [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability).
 
 ## Step 3: Create the cutover migration batch
 
@@ -266,13 +267,13 @@ Most email systems ask for an update each hour if a short interval such as 3,600
 
 The place to change the TTL setting is on your email system's MX record. This lives on your public-facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 seconds or less.
 
-If you need some help configuring your DNS settings, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+If you need some help configuring your DNS settings, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## Step 5: Route your email directly to Microsoft 365 or Office 365
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Microsoft 365 or Office 365 is complete, it's time to point your MX record at Microsoft 365 or Office 365. This helps make sure that email is delivered to your Microsoft 365 or Office 365 mailboxes. Moving the MX record will also let you turn off your old email system when you're ready.
 
-For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) are provided as well.
+For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) are provided as well.
 
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: Delete the cutover migration batch.
 
@@ -299,7 +300,7 @@ When you delete a cutover migration batch, the migration service cleans up any r
 
 ## Step 7: Assign licenses to Microsoft 365 and Office 365 users
 
-**Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+**Activate user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
 ## Complete post migration tasks
 
@@ -319,17 +320,17 @@ After migrating mailboxes to Microsoft 365 or Office 365, there are post-migrati
 
    - **Target:** autodiscover.outlook.com
 
-   For more information, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+   For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 2. **Decommission on-premises Exchange Servers**: After you've verified that all email is being routed directly to the Microsoft 365 or Office 365 mailboxes, and no longer need to maintain your on-premises email organization or don't plan on implementing a single sign-on solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
 
    For more information, see the following topics:
 
-   - [Modify or Remove Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
+   - [Modify or Remove Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-   - [How to Remove an Exchange 2007 Organization](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
+   - [How to Remove an Exchange 2007 Organization](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
-   - [How to Uninstall Exchange Server 2003](https://docs.microsoft.com/previous-versions/tn-archive/bb125110(v=exchg.65))
+   - [How to Uninstall Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))
 
    > [!NOTE]
    > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support.

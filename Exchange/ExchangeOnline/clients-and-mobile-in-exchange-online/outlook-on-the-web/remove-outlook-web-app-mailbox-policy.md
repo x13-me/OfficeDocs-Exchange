@@ -3,7 +3,7 @@ localization_priority: Normal
 description: You can remove a Microsoft Outlook on the web mailbox policy from an Exchange organization by using either the EAC or Exchange Online PowerShell.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
 ms.reviewer: 
 title: Remove an Outlook on the web mailbox policy from Exchange Online
@@ -32,12 +32,12 @@ For additional management tasks related to Outlook on the web mailbox policies, 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to remove an Outlook on the web mailbox policy
 
@@ -59,7 +59,7 @@ This example removes the Outlook on the web mailbox policy named Sales Associate
 Remove-OwaMailboxPolicy -Identity "Sales Associates"
 ```
 
-For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-owamailboxpolicy).
+For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](/powershell/module/exchange/remove-owamailboxpolicy).
 
 ## How do you know this worked?
 

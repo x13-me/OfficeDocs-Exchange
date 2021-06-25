@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 ms.reviewer:
 title: Configure global address list properties in Exchange Online
@@ -34,12 +34,12 @@ The same settings to configure a GAL are available as when you created the GAL. 
 
 - You can't replace a custom recipient filter with a precanned recipient filter or vice-versa in an existing GAL.
 
-- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For details about recipient filters in the Exchange Online PowerShell, see [Recipient filters for address lists in Exchange Online PowerShell](use-recipient-filters-to-create-an-address-list.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the Exchange Online PowerShell to modify global address lists
 
@@ -57,7 +57,7 @@ This example modifies the existing GAL named Contoso GAL by adding the **Company
 Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/set-globaladdresslist).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](/powershell/module/exchange/set-globaladdresslist).
 
 #### How do you know this worked?
 

@@ -7,7 +7,6 @@ f1.keywords:
 - NOCSH
 audience: ITPro
 ms.topic: conceptual
-ms.prod: exchange-server-itpro
 localization_priority: Normal
 description: "A list of updates made to the Exchange Deployment Assistant"
 ---
@@ -18,7 +17,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
 **March 2019**
 
-- A new release of the Exchange Deployment assistant was launched at https://assistants.microsoft.com/.
+- A new release of the Exchange Deployment assistant was launched at <https://assistants.microsoft.com/>.
 
 **June 2016 (revision 3229)**
 

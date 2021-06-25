@@ -1,6 +1,6 @@
 ---
 title: "Fix email delivery issues for error code 550 5.4.1 in Exchange Online"
-ms.author: dmaguire
+ms.author: jhendr
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -82,9 +82,9 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 - Verify the configuration of the Send connectors and Receive connectors in your on-premises Exchange organization that are used for hybrid. These connectors are configured automatically by the Hybrid Configuration Wizard, and the wizard might need to be run again by your Exchange administrator.
 
-For more information, see [this topic](https://docs.microsoft.com/office365/troubleshoot/antispam/relay-access-denied-ndr).
+For more information, see [this topic](/office365/troubleshoot/antispam/relay-access-denied-ndr).
 
-For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
+For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](../../../ExchangeHybrid/transport-routing.md).
 
 ### Service issues in Exchange Online
 
@@ -118,7 +118,7 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 [![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://docs.microsoft.com/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

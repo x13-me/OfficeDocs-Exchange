@@ -2,7 +2,7 @@
 localization_priority: Normal
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: adad2c0d-7452-4392-a95e-058c4678c05e
 ms.reviewer: 
 manager: serdars
@@ -24,7 +24,7 @@ ms.service: exchange-online
 Exchange Online includes spam filtering capabilities that help protect your network from spam transferred through email. Administrators do not need to set up or maintain these filtering technologies, which are enabled by default. However, administrators can make company-specific filtering customizations in the Exchange admin center (EAC), all using a screen reader and keyboard shortcuts.
 
 > [!NOTE]
-> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+> To learn more about protecting your organization from spam in Exchange Online, go to [Anti-spam and anti-malware protection in EOP](/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
 
 ## Get started
 
@@ -42,7 +42,7 @@ Many tasks in the EAC require the use of pop-up windows. In your browser, be sur
 
 Exchange Online is included in several different subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) and [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 ### Open the EAC, and confirm your admin role
 
@@ -72,12 +72,12 @@ To complete the steps for spam filter customizations covered in this topic, move
 
 3. As the focus moves to the **Name** box in the content area of the **Spam filter policy** pop-up window that opens, you hear "Spam filter policy, Name, Edit..
 
-4. In the **Spam filter policy **pop-up window, specify new filter settings such as name, description, spam and bulk actions, block lists, allow lists, international spam, and advanced options.
+4. In the **Spam filter policy** pop-up window, specify new filter settings such as name, description, spam and bulk actions, block lists, allow lists, international spam, and advanced options.
 
     > [!TIP]
     > This page doesn't contain a navigation pane. To move the focus to each setting that's listed on the page, press the Tab key. As you select each setting, you hear information about the setting. To open menus, press Spacebar. To move between and select menu options, press the arrow keys. To choose an option, press Enter. You can also press the Spacebar to select or clear a check box selection.
 
-5. After you've pressed the Tab key to tab through all the settings on the page, the last two elements on the page are the **Save** button and the **Cancel **button. To activate either button, press Enter.
+5. After you've pressed the Tab key to tab through all the settings on the page, the last two elements on the page are the **Save** button and the **Cancel** button. To activate either button, press Enter.
 
 6. As the **Spam filter policy** pop-up window closes and the focus moves back to the **New** button in the **spam filter** content area, you hear "Spam filter, New button..
 

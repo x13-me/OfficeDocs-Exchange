@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer: 
 f1.keywords:
@@ -27,7 +27,7 @@ Public folders are designed for shared access and provide an easy and effective 
 By default, a public folder inherits the settings of its parent folder, including the permissions settings.
 
 > [!NOTE]
-> For more information about the storage quotas and limits for public folders in Exchange Online, see [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+> For more information about the storage quotas and limits for public folders in Exchange Online, see [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## What do you need to know before you begin?
 
@@ -71,7 +71,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 > [!IMPORTANT]
 > Don't use a backslash (\\) in the name when creating a public folder.
 
-For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/new-publicfolder).
+For detailed syntax and parameter information, see [New-PublicFolder](/powershell/module/exchange/new-publicfolder).
 
 ## How do you know this worked?
 

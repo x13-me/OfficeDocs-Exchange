@@ -21,9 +21,9 @@ The Exchange admin center (EAC) is the web-based management console in Microsoft
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop).
+Looking for the standalone Exchange Online Protection (EOP) version of this topic? See [Exchange admin center in EOP](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
 
 ## Accessing the EAC
 
@@ -33,7 +33,7 @@ Because the EAC is now a web-based management console, you'll need to use the EC
 
 - **External URL: `https://mail.contoso.com/ecp`**: The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
+To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](/powershell/module/exchange/Get-EcpVirtualDirectory) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
 
 If you're in a coexistence scenario, where you're running Exchange 2010 and Exchange 2013 in the same organization, and your mailbox is still housed on the Exchange 2010 Mailbox server, the browser will default to the Exchange 2010 ECP. You can access the EAC by adding the Exchange version to the URL. For example, to access the EAC whose virtual directory is hosted on the Client Access server CAS15-NA, use the following URL: `https://CAS15-NA/ecp/?ExchClientVer=15`. Conversely, if you want to access the Exchange 2010 ECP and your mailbox resides on an Exchange 2013 Mailbox server, use the following URL: `https://CAS14-NA/ecp/?ExchClientVer=14`.
 
@@ -45,7 +45,7 @@ The section describes the user interface elements that are common across the EAC
 
 ## Cross-premises navigation
 
-The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Microsoft 365 or Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Microsoft 365 or Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](../ExchangeHybrid/exchange-hybrid.md).
 
 ## Feature pane
 

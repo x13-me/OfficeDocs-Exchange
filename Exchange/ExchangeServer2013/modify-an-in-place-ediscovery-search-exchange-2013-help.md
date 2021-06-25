@@ -76,4 +76,4 @@ To verify that you have successfully modified an In-Place eDiscovery search, do 
 
 - Use the EAC to check properties of the search.
 
-- Use the **Get-MailboxSearch** cmdlet from the Shell to check the properties of the search. For examples of how to check the properties of a mailbox search, see the "Examples" section in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch).
+- Use the **Get-MailboxSearch** cmdlet from the Shell to check the properties of the search. For examples of how to check the properties of a mailbox search, see the "Examples" section in [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch).

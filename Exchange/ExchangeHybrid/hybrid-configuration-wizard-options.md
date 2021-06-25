@@ -52,7 +52,7 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 > [!NOTE]
 > Depending on the your topology and configuration, you may still need to publish Autodiscover records in external DNS or open TCP Port 25 inbound and outbound to your Exchange environments for other reasons, such as Exchange Active Sync Clients using the legacy mail client in Android or iOS (although we highly recommend Microsoft Outlook for iOS and Android as the mobile messaging application). Another reason might be using a feature like Exchange Server Hybrid Modern Authentication. Make sure to review the limitations of the hybrid agent and modern hybrid topology covered in the article [Microsoft Hybrid Agent](hybrid-deployment/hybrid-agent.md).
 
-[1] The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located [here](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
+[1] The Hybrid Configuration Wizard will provide the foundational components to prepare the environment for Hybrid Modern Authentication. The additional steps needed to complete the process for Hybrid Modern Authentication are located [here](/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
 
 ## Related topics
 
@@ -60,9 +60,9 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 
 - [Exchange Server hybrid deployments](exchange-hybrid.md)
 
-- [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
+- [Using hybrid Modern Authentication with Outlook for iOS and Android](../ExchangeServer/clients/outlook-for-ios-and-android/use-hybrid-modern-auth.md)
 
-- [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication)
+- [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication)
 
 - [Configure OAuth authentication between Exchange and Exchange Online organizations](../ExchangeServer2013/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md)
 
