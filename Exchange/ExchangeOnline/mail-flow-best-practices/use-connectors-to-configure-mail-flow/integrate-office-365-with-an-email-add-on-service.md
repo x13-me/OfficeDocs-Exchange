@@ -265,7 +265,7 @@ The **New connector** screen appears.
    - **From** **Your organization's email server**
    - **To** **Office 365**
 
-:::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured":::
+   :::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured":::
 
 3. When you're finished, click **Next**. The **Connector name** screen appears.
 
