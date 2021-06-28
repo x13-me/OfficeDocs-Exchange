@@ -66,13 +66,14 @@ The table in this section provides build numbers and general release dates for e
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
+|[Exchange Server 2019 CU10](https://www.microsoft.com/download/details.aspx?familyID=73f75f9e-e7fd-4cb0-a2fc-405cbb800f2d)|June 29, 2021|15.2.922.7|15.02.0922.007|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU9 May21SU](https://support.microsoft.com/help/5003435)|May 11, 2021|15.2.858.12|15.02.0858.012|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU9 Apr21SU](https://support.microsoft.com/help/5001779)|April 13, 2021|15.2.858.10|15.02.0858.010|
 |[Exchange Server 2019 CU9](https://www.microsoft.com/download/details.aspx?familyID=24b09ec4-48c7-4c1c-87d8-4c2c0f56bfb8)|March 16, 2021|15.2.858.5|15.02.0858.005|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU8 May21SU](https://support.microsoft.com/help/5003435)|May 11, 2021|15.2.792.15|15.02.0792.015|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU8 Apr21SU](https://support.microsoft.com/help/5001779)|April 13, 2021|15.2.792.13|15.02.0792.013|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU8 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.2.792.10|15.02.0792.010|
-|[Exchange Server 2019 CU8](https://support.microsoft.com/kb/KB4588885)|December 15, 2020|15.2.792.3|15.02.0792.003|
+|Exchange Server 2019 CU8|December 15, 2020|15.2.792.3|15.02.0792.003|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU7 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.2.721.13|15.02.0721.013|
 |Exchange Server 2019 CU7|September 15, 2020|15.2.721.2|15.02.0721.002|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU6 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.2.659.12|15.02.0659.012|
@@ -102,13 +103,14 @@ The table in this section provides build numbers and general release dates for e
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
+|[Exchange Server 2016 CU21](https://www.microsoft.com/download/details.aspx?familyID=7d5c319b-510b-4a2c-a77a-099c6f30ab54)|June 29, 2021|15.1.2308.8|15.01.2308.008|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU20 May21SU](https://support.microsoft.com/help/5003435)|May 11, 2021|15.1.2242.10|15.01.2242.010|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU20 Apr21SU](https://support.microsoft.com/help/5001779)|April 13, 2021|15.1.2242.8|15.01.2242.008|
 |[Exchange Server 2016 CU20](https://www.microsoft.com/download/details.aspx?familyID=64a4da8c-89f0-49ba-b122-c0e53ef095c5)|March 16, 2021|15.1.2242.4|15.01.2242.004|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU19 May21SU](https://support.microsoft.com/help/5003435)|May 11, 2021|15.1.2176.14|15.01.2176.014|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU19 Apr21SU](https://support.microsoft.com/help/5001779)|April 13, 2021|15.1.2176.12|15.01.2176.012|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU19 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.1.2176.9|15.01.2176.009|
-|[Exchange Server 2016 CU19](https://www.microsoft.com/download/details.aspx?familyID=2ef459a6-c8a5-417f-89a8-c8afa9ea00dd)|December 15, 2020|15.1.2176.2|15.01.2176.002|
+|Exchange Server 2016 CU19|December 15, 2020|15.1.2176.2|15.01.2176.002|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU18 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.1.2106.13|15.01.2106.013|
 |Exchange Server 2016 CU18|September 15, 2020|15.1.2106.2|15.01.2106.002|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU17 Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.1.2044.13|15.01.2044.013|
