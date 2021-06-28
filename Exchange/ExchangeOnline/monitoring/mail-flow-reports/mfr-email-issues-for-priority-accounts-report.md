@@ -19,7 +19,7 @@ description: "Admins can learn how to use the Email issues for priority accounts
 > [!NOTE]
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:
 >
-> - At least 10,000 licenses for one or more of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5. For example, 3,000 Office 365 E3 licenses and 8,500 Microsoft 365 E5 licenses.
+> - At least 5,000 licenses for one or more of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5. For example, 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5 licenses.
 > - At least 50 monthly active Exchange Online users.
 >
 > For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
@@ -57,6 +57,9 @@ For more advanced filters that you can also save and use later, click **Filter**
 Select an entry in the list to be taken to the [message trace](../../monitoring/trace-an-email-message/message-trace-modern-eac.md) search results for the message. Select the message trace entry to view details about the message and what happened to it.
 
 ![Message trace detail in message trace in the new EAC](../../media/mfr-priority-users-message-trace-detail.png)
+
+> [!NOTE]
+> For the following procedures, you need to be a Security Reader to see the alerts, and a Security Administrator to edit the policy.
 
 Click **Export** to export the displayed results to a .csv file.
 
