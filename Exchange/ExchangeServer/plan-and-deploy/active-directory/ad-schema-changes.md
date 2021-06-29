@@ -952,10 +952,10 @@ This section summarizes the changes that are made to the Active Directory schema
 |ms-Exch-Accepted-Domain-Name|replace: searchFlags|9|
 |ms-Exch-Archive-GUID|replace: searchFlags|9|
 |ms-Exch-Bypass-Audit|replace: searchFlags|19|
-|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
-|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprintms-Exch-Sync-Cookie|rangeUpper|1024|
-|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-ELC-Mailbox-Flags|replace: attributeSecurityGuid|F6SzsVXskUGzJ7cuM+OK8g==|
 |ms-Exch-Extension-Custom-Attribute-1|isMemberOfPartialAttributeSet:|TRUE|
 |ms-Exch-Extension-Custom-Attribute-2|isMemberOfPartialAttributeSet:|TRUE|
@@ -2677,10 +2677,10 @@ This section contains the attributes modified in Exchange 2016 RTM.
 |ms-Exch-Accepted-Domain-Name|replace: searchFlags|9|
 |ms-Exch-Archive-GUID|replace: searchFlags|9|
 |ms-Exch-Bypass-Audit|replace: searchFlags|19|
-|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
-|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprintms-Exch-Sync-Cookie|rangeUpper|1024|
-|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-ELC-Mailbox-Flags|replace: attributeSecurityGuid|F6SzsVXskUGzJ7cuM+OK8g==|
 |ms-Exch-Extension-Custom-Attribute-1|isMemberOfPartialAttributeSet:|TRUE|
 |ms-Exch-Extension-Custom-Attribute-2|isMemberOfPartialAttributeSet:|TRUE|
