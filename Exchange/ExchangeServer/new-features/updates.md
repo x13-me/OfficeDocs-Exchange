@@ -24,7 +24,7 @@ Critical product updates are packages that address a Microsoft-released security
 
 ::: moniker range="exchserver-2019"
 
-To get the latest version of Exchange 2019, download and install [Cumulative Update 10 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=73f75f9e-e7fd-4cb0-a2fc-405cbb800f2d). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
+To get the latest version of Exchange 2019, download and install [Cumulative Update 10 for Exchange Server 2019](https://www.microsoft.com/en-us/download/details.aspx?familyID=aa0d4c7c-526f-4a1a-924c-b534839f0001). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
 
@@ -47,7 +47,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 21 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=7d5c319b-510b-4a2c-a77a-099c6f30ab54). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 21 for Exchange Server 2016](https://www.microsoft.com/en-us/download/details.aspx?familyID=88e4107e-a9a6-4847-959d-98e6e5d46f4a). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
