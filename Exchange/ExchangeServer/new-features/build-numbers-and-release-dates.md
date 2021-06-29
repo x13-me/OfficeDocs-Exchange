@@ -18,7 +18,7 @@ manager: serdars
 
 # Exchange Server build numbers and release dates
 
-You can use the information in this article to verify the version of Exchange that is running in your organization.
+You can use the information in this article to verify the version of Microsoft Exchange Server that is running in your organization.
 
 This article is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), Security Update (SU), or Update Rollup (RU) of the specific Exchange release.
 
@@ -26,23 +26,23 @@ Links for the available downloads are also included.
 
 > [!NOTE]
 >
-> Starting with the March 2021 Security Update (SU), we will also include build numbers for Security Updates.
+> Starting in the March 2021 Security Update (SU), we also include build numbers for Security Updates.
 >
-> RTM stands for release to manufacturing (the first version of the product).
+> RTM stands for "release to manufacturing" (the first version of the product).
 
-## View the build number of an Exchange server you can run one of the following:
+## View the build number of an Exchange-based server
 
-This section describes the various methods that you can use to view the build number of Exchange servers.
+This section describes the various methods that you can use to view the build number of servers that are running Exchange Server.
 
-### Option 1 (Recommended)
+### Option 1 (recommended)
 
-Run the [HealthChecker script](https://aka.ms/exchangehealthchecker) and check the build number.
+Run the [HealthChecker script](https://aka.ms/exchangehealthchecker), and check the build number.
 
 ![Screenshot of the result of HealthChecker](../media/e95bdff4-0c0c-4186-9030-d4b7bfa9dd12.png)
 
 ### Option 2
 
-Open the Exchange Management Shell and run the following command:
+Open the Exchange Management Shell, and run the following command:
 
 ```powershell
 Get-Command Exsetup.exe | ForEach {$_.FileVersionInfo}
@@ -50,7 +50,7 @@ Get-Command Exsetup.exe | ForEach {$_.FileVersionInfo}
 
 ### Option 3
 
-Open the Exchange Management Shell and run the following command:
+Open the Exchange Management Shell, and run the following command:
 
 ```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
