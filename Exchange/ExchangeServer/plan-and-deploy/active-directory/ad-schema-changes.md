@@ -30,9 +30,24 @@ Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all
 | Current Exchange 2019 release installed | New Exchange 2019 release being installed | Are schema updates required? |
 |:-----|:-----|:-----|
 |Release to Manufacturing|Cumulative Update 4 <br> through <br> Cumulative Update 9|**Yes**, schema updates are required. <br> You need to apply the CU8 schema updates.|
+|Cumulative Update 8|Cumulative Update 9 <br> through <br> Cumulative Update 10|**Yes**, schema updates are required. <br> You need to apply the CU10 schema updates.|
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
+
+## Exchange 2019 CU10 Active Directory schema changes
+
+This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2019 CU10. This section includes the following subsections:
+
+- [Classes modified by Exchange 2019 CU10](#classes-modified-by-exchange-2019-cu10)
+
+### Classes modified by Exchange 2019 CU10
+
+This section contains the classes modified in Exchange 2019 CU10.
+
+| Class | Change | Attribute/Class |
+|:-----|:-----|:-----|
+|ms-Exch-Storage-Group|delete: possSuperiors|computer|
 
 ## Exchange 2019 CU9 Active Directory schema changes
 
@@ -937,10 +952,10 @@ This section summarizes the changes that are made to the Active Directory schema
 |ms-Exch-Accepted-Domain-Name|replace: searchFlags|9|
 |ms-Exch-Archive-GUID|replace: searchFlags|9|
 |ms-Exch-Bypass-Audit|replace: searchFlags|19|
-|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
-|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprintms-Exch-Sync-Cookie|rangeUpper|1024|
-|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-ELC-Mailbox-Flags|replace: attributeSecurityGuid|F6SzsVXskUGzJ7cuM+OK8g==|
 |ms-Exch-Extension-Custom-Attribute-1|isMemberOfPartialAttributeSet:|TRUE|
 |ms-Exch-Extension-Custom-Attribute-2|isMemberOfPartialAttributeSet:|TRUE|
@@ -1518,9 +1533,24 @@ The following table lists the extended rights that are added when you install Ex
 |Cumulative Update 6|Cumulative Update 7 <br> through <br> Cumulative Update 14|**Yes**, schema updates are required. <br> You need to apply the CU14 schema updates.|
 |Cumulative Update 7|Cumulative Update 8 <br> through <br> Cumulative Update 18|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU18.|
 |Cumulative Update 14|Cumulative Update 18 <br> through <br> Cumulative Update 20|**Yes**, schema updates are required. <br> You need to apply the CU19 schema updates.|
+|Cumulative Update 19|Cumulative Update 20 <br> through <br> Cumulative Update 21|**Yes**, schema updates are required. <br> You need to apply the CU21 schema updates.|
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
+
+## Exchange 2016 CU21 Active Directory schema changes
+
+This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU21. This section includes the following subsections:
+
+- [Classes modified by Exchange 2016 CU21](#classes-modified-by-exchange-2016-cu21)
+
+### Classes modified by Exchange 2016 CU21
+
+This section contains the classes modified in Exchange 2016 CU21.
+
+| Class | Change | Attribute/Class |
+|:-----|:-----|:-----|
+|ms-Exch-Storage-Group|delete: possSuperiors|computer|
 
 ## Exchange 2016 CU20 Active Directory schema changes
 
@@ -2647,10 +2677,10 @@ This section contains the attributes modified in Exchange 2016 RTM.
 |ms-Exch-Accepted-Domain-Name|replace: searchFlags|9|
 |ms-Exch-Archive-GUID|replace: searchFlags|9|
 |ms-Exch-Bypass-Audit|replace: searchFlags|19|
-|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
-|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-On-Premises-Smart-Host|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51992 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprint|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51991 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-Coexistence-Secure-Mail-Certificate-Thumbprintms-Exch-Sync-Cookie|rangeUpper|1024|
-|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalogue) searchFlags: 0 (no index)|
+|ms-Exch-Coexistence-Transport-Servers|ntdsSchemaAdd|attributeID: 1.2.840.113556.1.4.7000.102.51990 isMemberOfPartialAttributeSet: FALSE (not in global catalog) searchFlags: 0 (no index)|
 |ms-Exch-ELC-Mailbox-Flags|replace: attributeSecurityGuid|F6SzsVXskUGzJ7cuM+OK8g==|
 |ms-Exch-Extension-Custom-Attribute-1|isMemberOfPartialAttributeSet:|TRUE|
 |ms-Exch-Extension-Custom-Attribute-2|isMemberOfPartialAttributeSet:|TRUE|
