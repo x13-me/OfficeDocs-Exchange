@@ -22,7 +22,7 @@ You can use the information in this article to verify the version of Exchange th
 
 This article is organized in sections that correspond to the major releases of Exchange. Each section lists build numbers for each Service Pack (SP), Cumulative Update (CU), Security Update (SU), or Update Rollup (RU) of the specific Exchange release.
 
-Links for the avaialble downloads are also included.
+Links for the available downloads are also included.
 
 > [!NOTE]
 >
