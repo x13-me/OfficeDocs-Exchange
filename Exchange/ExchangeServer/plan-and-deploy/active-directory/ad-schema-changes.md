@@ -143,7 +143,7 @@ This section summarizes the changes that are made to the Active Directory schema
 
 ****
 
-|`Class`|`Change`|
+|Class|Change|
 |---|---|
 |`Exch-Mapi-Virtual-Directory`|`ntdsSchemaAdd`|
 |`Exch-Push-Notifications-App`|`ntdsSchemaAdd`|
@@ -968,7 +968,7 @@ The following attribute object IDs are added when you install Exchange 2019 RTM:
 
 ****
 
-|`Attribute`|`Search flag value`|
+|Attribute|Search flag value|
 |---|---|
 |`ms-DS-GeoCoordinates-Altitude`|1|
 |`ms-DS-GeoCoordinates-Latitude`|1|
@@ -1186,7 +1186,7 @@ This section contains the classes added in Exchange 2016 CU7.
 
 ****
 
-|`Class`|`Change`|
+|Class|Change|
 |---|---|
 |`ms-Exch-Http-Delivery-Connector`|`ntdsSchemaAdd`|
 |
@@ -1351,7 +1351,7 @@ This section contains the classes added in Exchange 2016 CU1.
 
 ****
 
-|`Class`|`Change`|
+|Class|Change|
 |---|---|
 |`ms-Exch-Mailbox-Policy`|`ntdsSchemaAdd`|
 |`ms-Exch-Auth-Policy`|`ntdsSchemaAdd`|
@@ -1393,7 +1393,7 @@ This section contains the indexed attributes added in Exchange 2016 CU1.
 
 ****
 
-|`Attribute`|`Search flag value`|
+|Attribute|Search flag value|
 |---|---|
 |`ms-Exch-Data-Encryption-Policy-Link`|1|
 |
@@ -1446,7 +1446,7 @@ This section contains the classes added in Exchange 2016 RTM.
 
 ****
 
-|`Class`|`Change`|
+|Class|Change|
 |---|---|
 |`Exch-Mapi-Virtual-Directory`|`ntdsSchemaAdd`|
 |`Exch-Push-Notifications-App`|`ntdsSchemaAdd`|
@@ -1968,7 +1968,7 @@ This section contains the attributes modified in Exchange 2016 RTM.
 
 ****
 
-|`Attribute`|`Change`|`Value`|
+|Attribute|Change|Value|
 |---|---|---|
 |`Exch-Configuration-Unit-Container`|`rangeUpper`|15254|
 |`Exch-Mailflow-Policy-Transport-Rules-Template-Xml`|`rangeUpper`|256000|
@@ -2235,7 +2235,7 @@ The following table lists the attributes that are added to the list of indexed a
 
 ****
 
-|`Attribute`|`Search flag value`|
+|Attribute|Search flag value|
 |---|---|
 |`ms-DS-GeoCoordinates-Altitude`|1|
 |`ms-DS-GeoCoordinates-Latitude`|1|
