@@ -25,7 +25,6 @@ This is done by assigning or removing management roles specific to add-ins. Ther
 ## Administrative roles
 
 - **Org Marketplace Apps**: Enables an administrator to install and manage add-ins that are available from the Office Store for their organization.
-
 - **Org Custom Apps**: Enables an administrator to install and manage custom add-ins for their organization.
 
 By default, all administrators who are in the **Organization Management** role group have both of the above administrative roles enabled.
@@ -33,9 +32,7 @@ By default, all administrators who are in the **Organization Management** role g
 ## User roles
 
 - **My Marketplace Apps**: Enables a user to install and manage Office Store add-ins for their own use.
-
 - **My Custom Apps**: Enables a user to install and manage custom add-ins for their own use.
-
 - **My ReadWriteMailbox Apps**: Enables a user to install and manage add-ins that request the `ReadWriteMailbox` permission level in their manifest.
 
  By default, all end users have all of the above user roles enabled.
@@ -65,24 +62,26 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md)
 
 ### Use the EAC to assign permissions to administrators
 
-You can use the Exchange Admin Center (EAC) to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
+You can use the Exchange admin center (EAC) to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
 
 ## Assign users the permissions required to install and manage add-ins for their own use
 
 ### Use the EAC to assign permissions to users
 
-You can use the Exchange Admin Center (EAC) to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
+You can use the EAC to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 ## Prevent add-in downloads by turning off the Office Store across Outlook
 
-The above steps will ensure that all end users with the default policy will no longer be able to install or manage Add-ins for Outlook.
+The following steps will ensure that all end users with the default policy will no longer be able to install or manage Add-ins for Outlook.
 
-1. Log in to the Exchange Admin Console as a global administrator.
-2. Navigate to **Permissions**, and then select **User Roles**. 
+1. Log in to the EAC as a global administrator.
+2. Go to **Permissions**, and then select **User Roles**. 
 3. Double-click **Default Role with Add-Ins Management** to open the edit window.
 4. Modify **Default Role Assignment Policy** by deselecting **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
 5. Click **Save**.
 
+> [!NOTE]
+> If a user is assigned a single admin role (for example, Security Reader), removing the user roles **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps** will not prevent add-in downloads for the user. Our recommendedation is to have a separate accounts for admin privileges and end-user day-to-day use. 
 
 ## How do you know this worked?
 
