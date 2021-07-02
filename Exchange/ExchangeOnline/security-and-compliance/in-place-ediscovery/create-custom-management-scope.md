@@ -112,7 +112,7 @@ Run this command to add the Ottawa Users eDiscovery Managers security group as a
 Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Users eDiscovery Managers"
 ```
 > [!NOTE]
-For Exchange on-premises, the discovery managers will have to be added directly to the distribution group used to create the management scope. Nested groups will not work.
+> For Exchange on-premises, the discovery managers will have to be added directly to the distribution group used to create the management scope. Nested groups will not work.
 
 You can also use the EAC to add members to a distribution group. For more information, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
 
