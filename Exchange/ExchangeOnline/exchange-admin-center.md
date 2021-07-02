@@ -22,7 +22,7 @@ The new Exchange admin center (EAC) is a modern, web-based management console fo
 
 ## Experience the new Exchange admin center
 
-Try the new Exchange adminn center using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your credentials. You can also continue to access the Classic Exchange admin center using the URL [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials.
+Try the new Exchange adminn center using the URL <https://admin.exchange.microsoft.com> and sign in using your credentials. You can also continue to access the Classic Exchange admin center using the URL [Classic Exchange admin center](https://outlook.office365.com/ecp) and sign in using your credentials.
 
 To experience some of the new Exchange admin center features, see the following:
 
@@ -67,11 +67,8 @@ To experience some of the new Exchange admin center features, see the following:
 See the following articles:
 
 - To understand the differences between Classic and new EAC, see [Classic and New Exchange admin center differences](/exchange/changes-in-exchange-admin-center).
-
 - To explore features in new EAC, see [New Exchange admin center](features-in-new-eac.md).
-
 - To explore features in Classic EAC, see [Classic Exchange admin center](features-in-classic-eac.md).
-
 - To get an update on the journey of the new EAC, see [What's new in Exchange admin center](/exchange/whats-new).
 
 ## Supported browsers
@@ -79,7 +76,6 @@ See the following articles:
 See the following articles:
 
 - [Microsoft 365 and Office resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources): lists supported browsers for Microsoft 365, Office 365, and the Exchange admin center.
-
 - [Supported Browsers for Outlook on the web](https://support.microsoft.com/office/c89774d6-0722-4c93-a547-ef45e693e006).
 
 ## Related articles
