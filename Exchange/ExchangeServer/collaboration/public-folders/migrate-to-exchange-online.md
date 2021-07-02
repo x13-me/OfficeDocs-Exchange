@@ -665,6 +665,8 @@ If you still want to migrate your public folders by using PST files, follow thes
 6. Set the permissions on the public folders using the EAC. For more information, follow [Step 3: Assign permissions to the public folder](new-organizations.md#step-3-assign-permissions-to-the-public-folder) in the [Set up public folders in a new organization](new-organizations.md) article.
 
 > [!CAUTION]
-> If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration.
-The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
-Option two is to [create a public folder mailbox in Exchange Server](create-public-folder-mailboxes.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.
+> If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
+> 
+> The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
+>
+> Option two is to [create a public folder mailbox in Exchange Server](create-public-folder-mailboxes.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.
