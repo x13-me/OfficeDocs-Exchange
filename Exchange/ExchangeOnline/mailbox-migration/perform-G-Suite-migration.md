@@ -16,7 +16,7 @@ ms.custom: seo-marvel-apr2020
 
 # Perform a Google Workspace (formerly G Suite) migration
 
-You can migrate batches of users from Google Workspace to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch.
+You can migrate batches of users from Google Workspace to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch. By default, we migrate Mail, Calendar, Contacts and Rules for all users listed in the batch. 
 
 All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information, see [Set up your domain (host-specific instructions)](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
@@ -56,7 +56,7 @@ Meanwhile, the forwarding address has been removed from the Microsoft 365 or Off
 
 ![After G Suite migration is complete](../media/gsuite-mig-after-migration.png)
 
-After all migration batches have been completed, all users can use their migrated mailboxes on Microsoft 365 or Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Microsoft 365 or Office 365 organization instead of the Google Workspace tenant. The routing domains and extra aliases can now be removed, as can the Google Workspace tenant. The migration of mail, calendar, and contacts from Google Workspace to Microsoft 365 or Office 365 is now complete.
+After all migration batches have been completed, all users can use their migrated mailboxes on Microsoft 365 or Office 365 as their primary mailbox. A manual MX record update for the primary domain "fabrikaminc.net" then points to the Microsoft 365 or Office 365 organization instead of the Google Workspace tenant. The routing domains and extra aliases can now be removed, as can the Google Workspace tenant. The migration of mail, calendar, contacts and rules from Google Workspace to Microsoft 365 or Office 365 is now complete.
 
 ## Migration limitations
 
@@ -69,7 +69,7 @@ Other migration limitations are described in the following table:
 
 |Data type|Limitations|
 |---|---|
-|Mail|Vacation settings, Automatic reply settings, Filters/Rules will not be migrated|
+|Mail|Vacation settings, Automatic reply settings|
 |Meeting rooms|Room bookings will not be migrated|
 |Calendar|Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated|
 |Contacts|A maximum of three email addresses per contact are migrated over|
@@ -77,6 +77,9 @@ Other migration limitations are described in the following table:
 
 > [!TIP]
 > If you will be [starting your migration batch with Exchange Online Powershell](#start-a-google-workspace-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
+
+> [!TIP]
+> If you wish to skip the migration of Gmail filters, you can use the `-SkipRules` parameter to prevent the migration of Outlook rules. For more information on using `-SkipRules`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch). 
 
 ## Create a Google Service Account
 
