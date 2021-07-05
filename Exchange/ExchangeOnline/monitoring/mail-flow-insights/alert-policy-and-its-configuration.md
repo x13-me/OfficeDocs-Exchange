@@ -20,7 +20,7 @@ An alert policy is the mechanism that enables you to track events related to mai
 ## Privileges for alert policy management
 
 > [!IMPORTANT]
-> **Security administrator** privileges are required to create and read/view an alert policy; **Security reader** privileges are required to read/view an alert policy.
+> **Security administrator** privileges are required to create and manage an alert policy; **Security reader** privileges are required to read/view an alert policy.
 
 ## Types of alert policies
 
@@ -34,16 +34,14 @@ There are two types of alert policies, namely **System** and **Custom**.
 System policy is created by the system, by default. A **System** policy automatically maps a newly newly created tenant to it.
 
 > [!IMPORTANT]
-> A user/tenant requires **security administrator** privileges to manage a **System** policy.
-
-Once the users have the **security administrator** privilege, they can edit a **System** policy.
+> A user/tenant requires **security administrator** privileges to edit a **System** policy. A user/tenant requires **security reader** privileges to view/read the **System** policy (see [Viewing/reading an alert policy](#viewingreading-an-alert-policy)).
 
 ### Custom policy
 
 Custom policy is the policy that can be manually created by the user/tenant.
 
 > [!IMPORTANT]
-> **Security administrator** privileges are required for creating an alert policy. For information on creating an alert policy, see [Creating an alert policy](#creating-an-alert-policy).
+> **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Creating an alert policy](#creating-an-alert-policy).
 
 In addition to creating an alert policy, a user with **security administrator** privileges can execute the following tasks:
 
@@ -51,12 +49,15 @@ In addition to creating an alert policy, a user with **security administrator** 
 - Disable the policy
 - Disbale the email notifications
 
+> [!IMPORTANT]
+> **Security reader** privileges are required for viewing/reading an alert policy. For more information, see [Viewing/reading an alert policy](#viewingreading-an-alert-policy).
+
 #### Creating an alert policy
 
 To create an alert policy, perform the following steps:
 
 1. Launch the URL https://admin.exchange.microsoft.com.
-2. In the left pane, navigate to **Mail flow > Alert policies**, and click **New alert policy**. 
+2. In the left pane, choose **Mail flow > Alert policies**, and click **New alert policy**. 
 3. Provide a name for your policy in the **Name** box and click **Next**.
 
 > [!NOTE]
@@ -88,3 +89,17 @@ A user/tenant can create an alert policy for the following mail flow-related ins
 - Slow transport rule
 - New users forwarding
 - New domains being forwarded
+
+#### Viewing/reading an alert policy
+
+An alert policy (**System** or **Custom**) is displayed on the **Alerts** screen. The users can view
+
+To view/read an alert policy , perform the following steps:
+
+1. Launch the URL https://admin.exchange.microsoft.com.
+2. In the left pane, choose **Mail flow > Alerts**.
+   The **Alerts** screen appears, displaying reports of the various alert policies created.
+3. Under the **Alert name** column, click the alert for which you want to view the details.
+   The alert policy details screen appears.
+4. Click **View details**.
+   The screen containing elaborate details of the alert policy appears.
