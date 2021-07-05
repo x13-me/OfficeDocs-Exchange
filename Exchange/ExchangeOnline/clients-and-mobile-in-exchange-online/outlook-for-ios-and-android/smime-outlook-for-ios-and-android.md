@@ -161,6 +161,21 @@ Once S/MIME is enabled and the S/MIME certificates are installed, users can view
 
 Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
+### LDAP support for certificate delivery
+
+Outlook for iOS and Android supports accessing public user certificate keys from secure LDAP directory endpoints. In order to utilize an LDAP endpoint, the following requirements must be met:
+
+- The LDAP protocol connection is secured through TLS as connections using unsecure LDAP is not supported.
+- The LDAP endpoint does not require authentication.
+- The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
+- The LDAP endpoint configuration is supported using the following formats:
+    - <ldaps://contoso.com>
+    - <ldaps://contoso.com:636>
+    - contoso.com
+    - contoso.com:636
+
+When Outlook for iOS and Android performs a certificate lookup, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
+
 ## Using S/MIME in Outlook for iOS and Android
 
 After the certificates have been deployed and S/MIME has been enabled in the app, users can consume S/MIME related content and compose content using S/MIME certificates. If the S/MIME setting is not enabled, then users will not be able to consume S/MIME content.

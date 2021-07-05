@@ -34,7 +34,6 @@ For more information, please see the Office 365 FedRAMP System Security plan loc
 This article covers how to:
 
 - Enable Outlook for iOS and Android for Office 365 GCC customers.
-
 - Unlock non-FedRAMP compliant features, if needed.
 
 ## Enabling Outlook for iOS and Android for Office 365 GCC customers
@@ -43,11 +42,11 @@ GCC (Moderate, High, and Department of Defense) customers can leverage Outlook f
 
 For Office 365 GCC customers who are not currently using Outlook for iOS and Android, enabling the app requires unblocking Outlook for iOS and Android in the organization, downloading the app on users' devices, and having end users add their account on their devices.
 
- **1. Unblock Outlook for iOS and Android**
+### 1. Unblock Outlook for iOS and Android
 
 Remove any restrictions placed within your Exchange environment that may be blocking Outlook for iOS and Android by updating your Exchange mobile device access rules or any relevant Azure Active Directory Conditional Access policies so that the app is no longer blocked. See [Securing Outlook for iOS and Android in Exchange Online](secure-outlook-for-ios-and-android.md) for information about enabling Outlook as the only mobile messaging client in an organization.
 
- **2. Download and install Outlook for iOS and Android**
+### 2. Download and install Outlook for iOS and Android
 
 End users need to install the app on their devices. How the installation happens depends on whether or not the devices are enrolled in a unified endpoint management (UEM) solution, such as Microsoft Intune. Users with enrolled devices can install the app through their UEM solution, like the Intune Company Portal. Users with devices that are not enrolled in an UEM solution can search for "Microsoft Outlook" in the Apple App Store or Google Play Store and download it from one of those locations.
 
@@ -63,7 +62,7 @@ By default, certain services and features of Outlook for iOS and Android are dis
     > [!IMPORTANT]
     > Setting *OutlookMobileGCCRestrictionsEnabled* to false allows submission of support, diagnostic, or crash data to be sent to Microsoft through in-app support or by using Collect Diagnostics. The data are uploaded to Microsoft systems that are outside of the Office 365 GCC compliance boundary, including the Office 365 FedRAMP boundary. Customers should update organizational training and policy materials to instruct users to avoid including any sensitive US government information as part of the in-app support submission.
 
-- **In-app feature requests**: Users are not able to submit in-app feature requests. Instead, users are directed to use [Outlook UserVoice](http://outlook.uservoice.com).
+- **In-app feature requests**: Users are not able to submit in-app feature requests.
 
 - **Multiple accounts**: Only the user's Office 365 GCC account and OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an Exchange ActiveSync client from another provider.
 
@@ -100,11 +99,8 @@ For more information on the cmdlet, see [Set-OrganizationConfig](/powershell/mod
 Certain services and features of Outlook for iOS and Android are not available for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
-
 - **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service.
-
 - **Play My Emails**: Play My Emails is not available for GCC accounts.
-
 - **To Do**: To Do is currently not available for GCC accounts.
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig).

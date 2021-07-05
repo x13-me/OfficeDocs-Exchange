@@ -80,7 +80,7 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 > [!NOTE]
 > Mailbox audit logging is not available in standalone EOP.
 
-As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
+As of January 2019, mailbox audit logging on by default is enabled for all Exchange Online organizations. For more information, see [Manage mailbox auditing](/microsoft-365/compliance/enable-mailbox-auditing).
 
 ## Give users access to Auditing reports
 

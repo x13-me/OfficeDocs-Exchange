@@ -42,9 +42,9 @@ Then, you need to tell your email admin that you think your account has been com
 
 The sending account might be compromised. You'll need to:
 
-- [Determine if the account is compromised](/office365/troubleshoot/sign-In/determine-account-is-compromised). If the account is compromised, follow the steps in [Responding to a Compromised Email Account in Exchange Online](/office365/securitycompliance/responding-to-a-compromised-email-account).
+- [Determine if the account is compromised](/office365/troubleshoot/sign-In/determine-account-is-compromised). If the account is compromised, follow the steps in [Responding to a Compromised Email Account in Exchange Online](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
-- Go to the **Restricted users** portal in the Security & Compliance Center at <https://protection.office.com/?hash=restrictedusers> to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
+- Go to the **Restricted users** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/restrictedusers> to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
 
 - To help prevent future account compromises, follow the recommendations in [Top 10 ways to secure Microsoft 365 for business plans](/microsoft-365/admin/security-and-compliance/secure-your-business-data).
 
