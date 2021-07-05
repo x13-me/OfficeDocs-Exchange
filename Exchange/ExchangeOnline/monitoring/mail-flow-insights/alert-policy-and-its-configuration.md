@@ -31,7 +31,7 @@ There are two types of alert policies, namely **System** and **Custom**.
 
 ### System policy
 
-System policy is created by the system, by default. A **System** policy automatically maps a newly newly created tenant to it.
+System policy is created by the system, by default. A **System** policy automatically maps a newly created tenant to it.
 
 > [!IMPORTANT]
 > A user/tenant requires **security administrator** privileges to edit a **System** policy. A user/tenant requires **security reader** privileges to view/read the **System** policy (see [Viewing/reading an alert policy](#viewingreading-an-alert-policy)).
@@ -47,7 +47,7 @@ In addition to creating an alert policy, a user with **security administrator** 
 
 - Edit the policy
 - Disable the policy
-- Disbale the email notifications
+- Disable the email notifications
 
 > [!IMPORTANT]
 > **Security reader** privileges are required for viewing/reading an alert policy. For more information, see [Viewing/reading an alert policy](#viewingreading-an-alert-policy).
@@ -72,7 +72,7 @@ To create an alert policy, perform the following steps:
 
 6. Click **Next**.
 7. Provide the name or email address of the alert notification recipients in the **Email recipients** box.
-8. From the **Daily notification limit** drop-down list, select daily-notification count.
+8. From the **Daily notification limit** drop-down list, select daily notification count.
 
 > [!NOTE] 
 > Choosing the daily-notification count value is optional.
@@ -94,7 +94,7 @@ A user/tenant can create an alert policy for the following mail flow-related ins
 
 An alert policy (**System** or **Custom**) is displayed on the **Alerts** screen. The users can view
 
-To view/read an alert policy , perform the following steps:
+To view/read an alert policy, perform the following steps:
 
 1. Launch the URL https://admin.exchange.microsoft.com.
 2. In the left pane, choose **Mail flow > Alerts**.
