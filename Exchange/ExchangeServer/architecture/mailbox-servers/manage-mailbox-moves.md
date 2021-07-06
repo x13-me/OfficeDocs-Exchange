@@ -67,7 +67,7 @@ To create new local move requests in the Exchange Management Shell, you only use
 
      **Note**: Even if you're only interested in moving a user's archive mailbox, you select the user's primary mailbox.
 
-     - Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one ore more mailboxes. When you're finished, click **OK**.
+     - Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one or more mailboxes. When you're finished, click **OK**.
 
      - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
 
