@@ -43,7 +43,7 @@ Custom policy is the policy that can be manually created by the user/tenant.
 > [!IMPORTANT]
 > **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Creating an alert policy](#creating-an-alert-policy).
 
-In addition to creating an alert policy, a user with **security administrator** privileges can execute the following tasks:
+In addition to creating an alert policy, a user with **security administrator** privileges can perform the following tasks:
 
 - Edit the policy
 - Disable the policy
@@ -57,7 +57,7 @@ In addition to creating an alert policy, a user with **security administrator** 
 To create an alert policy, perform the following steps:
 
 1. Launch the URL https://admin.exchange.microsoft.com.
-2. In the left pane, choose **Mail flow > Alert policies**, and click **New alert policy**. 
+2. In the left pane, select **Mail flow > Alert policies**, and click **New alert policy**. 
 3. Provide a name for your policy in the **Name** box and click **Next**.
 
 > [!NOTE]
@@ -97,7 +97,7 @@ An alert policy (**System** or **Custom**) is displayed on the **Alerts** screen
 To view/read an alert policy, perform the following steps:
 
 1. Launch the URL https://admin.exchange.microsoft.com.
-2. In the left pane, choose **Mail flow > Alerts**.
+2. In the left pane, select **Mail flow > Alerts**.
    The **Alerts** screen appears, displaying reports of the various alert policies created.
 3. Under the **Alert name** column, click the alert for which you want to view the details.
    The alert policy details screen appears.
