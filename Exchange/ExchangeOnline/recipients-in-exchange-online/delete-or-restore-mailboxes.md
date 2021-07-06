@@ -114,8 +114,7 @@ You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cm
    ```
 ### License removal
 
-When an Exchange Online license is removed from a user, Exchange Online data associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
-If you add the license back to the user during the grace period, this will restore access, and the mailbox will become fully active.
+When an Exchange Online license is removed from a user, Exchange Online data associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered. If you add the license back to the user during the grace period, this will restore access, and the mailbox will become fully active.
 
 > [!NOTE]
 > If the Microsoft 365 or Office 365 or Exchange Online license is removed from a user, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Content Search](/microsoft-365/compliance/content-search).
