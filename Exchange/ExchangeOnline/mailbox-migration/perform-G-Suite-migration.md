@@ -156,7 +156,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
     If the OAuth Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
 
-6. Click **Authorize**. Verify that the resulting list shows the expected four (4) OAuth scopes.
+6. Click **Authorize**. Verify that the resulting list shows the expected five (5) OAuth scopes.
 
    > [!Important]
    > It may take anywhere from 15 minutes to 24 hours for these settings to propogate.
