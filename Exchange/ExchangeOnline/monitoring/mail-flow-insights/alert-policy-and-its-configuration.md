@@ -90,6 +90,37 @@ A user/tenant can create an alert policy for the following mail flow-related ins
 - New users forwarding
 - New domains being forwarded
 
+#### Disable the policy
+
+To disable an alert policy, perform the following steps:
+
+1. In the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
+   The **Alert policies** screen appears.
+1. Select the alert policy you want to disable and click on it.
+   <include the image selecting-an-alert-policy-to-disable.png>
+   The alert policy details screen appears.
+1. Uncheck the **Enable this policy** check box.
+   <include the image disabling-alert-policy>
+1. Click **Save**.
+   The alert policy is disabled. The user will no longer receive any email notifications pertaning to this alert policy.
+
+#### Disable the email notifications
+
+A user has the option of disabling just the email notifications pertaining to an alert policy. This results in non-receipt of email notifications of the alert policy. However, the details of the alert policy can continue to be viewed on the **Alerts** screen.
+
+To disable the email notifications of an alert policy, perform the following steps:
+
+1. In the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
+   The **Alert policies** screen appears.
+1. Select the alert policy for which you to disbale email notifications.
+   <include the image selecting-an-alert-policy-to-disable.png>
+   The alert policy details screen appears.
+1. Click the **Settings** tab.
+1. Uncheck the **Send email notifications** check box.
+   <include the image disabling-email-notifications.png>
+   The email notifications for the alert policy are disabled, and the user will no longer receive email notifications pertaining to the alert policy.
+
+
 #### Viewing/reading an alert policy
 
 An alert policy (**System** or **Custom**) is displayed on the **Alerts** screen. The users can view
