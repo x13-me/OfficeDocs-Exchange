@@ -33,7 +33,6 @@ There are two sections to this report:
    - The number of hours a mailbox is at risk
    - The maximum number of messages they received per hour
    - The top sender
-   - The percentage of mail that was spam
 
 Changing the filters or searching for a mailbox will change both the heatmap and table.
 
