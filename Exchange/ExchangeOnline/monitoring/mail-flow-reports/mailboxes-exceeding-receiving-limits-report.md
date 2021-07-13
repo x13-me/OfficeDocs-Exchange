@@ -23,15 +23,23 @@ In the new Exchange Center (EAC), the Mailboxes exceeding receiving limits repor
 There are two sections to this report:
 
 1. A heatmap that indicates:
+
     - When a mailbox exceeded their receiving limit (see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (that is 1 hour after the threshold is exceeded).
+    
       1. Mailboxes won't receive any mail at all if the overall receiving limit is exceeded.
+      
       2. Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
+      
     - When a mailbox is at risk, which means they haven’t exceeded their limit but are receiving large volumes of messages regularly.
 
 2. A table that shows, in the selected time window:
+
    - The number of hours a mailbox has exceeded the limit
+   
    - The number of hours a mailbox is at risk
+   
    - The maximum number of messages they received per hour
+   
    - The top sender
 
 Changing the filters or searching for a mailbox will change both the heatmap and table.
