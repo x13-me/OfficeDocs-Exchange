@@ -38,4 +38,6 @@ Here's what MONTI does:
 
 Download the [MONTI application and accompanying documentation](https://www.microsoft.com/download/details.aspx?id=29567) from the Microsoft Download Center.
 
+Or click here if you want to directly download only the [MONTI application](https://download.microsoft.com/download/F/F/D/FFD6C34A-C9DB-4BE5-8504-2F912AB820C3/MONTI.exe.):  
+
 The documentation describes how to deploy, configure, and run the MONTI application in a customer's Domino environment.
