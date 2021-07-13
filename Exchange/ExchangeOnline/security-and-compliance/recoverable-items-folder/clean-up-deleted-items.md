@@ -35,7 +35,7 @@ To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Li
 
 ## What do you need to know before you begin?
 
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](/microsoft-365/compliance/assign-ediscovery-permissions).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Microsoft 365 compliance center](/microsoft-365/compliance/assign-ediscovery-permissions).
 
 - Because incorrectly cleaning up the Recoverable Items folder can result in data loss, it's important that you're familiar with the Recoverable Items folder and the impact of removing its contents. Before performing this procedure, we recommend that you review the information in [Recoverable Items folder in Exchange Online](recoverable-items-folder.md).
 
@@ -45,6 +45,7 @@ To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Li
 > Having problems? Ask for help in the Microsoft Tech Community. Visit it at [Microsoft Tech Community - Exchange](https://techcommunity.microsoft.com/t5/exchange/ct-p/Exchange).
 
 ## Use Security & Compliance Center PowerShell to delete items from the Recoverable Items folder for mailboxes that aren't placed on hold or don't have single item recovery enabled
+
 You can delete items in the Recoverable Items folder by using the [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) and [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) cmdlets in Security & Compliance Center PowerShell.
 
 To search for items that are located in the Recoverable Items folder, we recommend that you perform a *targeted collection*. This means you narrow the scope of your search only to items located in the Recoverable Items folder. You can do this by running the script in the [Use Content Search for targeted collections](/microsoft-365/compliance/use-content-search-for-targeted-collections) article. This script returns the value of the folder ID property for all the subfolders in the target Recoverable Items folder. Then you use the folder ID in a search query to return items located in that folder.
@@ -65,7 +66,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
    - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold. This subfolder isn't visible to end-users.
 
-3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content Search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
+3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content Search tool in the Microsoft 365 compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
 
    ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
@@ -94,7 +95,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
 ## Use Exchange Online and Security & Compliance Center PowerShell to clean up the Recoverable Items folder for mailboxes that are placed on hold or have single item recovery enabled
 
-This scenario is fully covered in the article [Delete items in the Recoverable Items folder of cloud mailbox's on hold](/office365/securitycompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
+This scenario is fully covered in the article [Delete items in the Recoverable Items folder of cloud mailbox's on hold](/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 ## How do you know this worked?
 

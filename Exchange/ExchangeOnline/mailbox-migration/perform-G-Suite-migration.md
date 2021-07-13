@@ -44,13 +44,18 @@ Throughput limitations for contacts and calendars completely depend on the quota
 
 Other migration limitations are described in the following table:
 
+<br>
+
+****
+
 |Data type|Limitations|
 |---|---|
-|Mail|Vacation settings, Automatic reply settings, Filters/Rules will not be migrated|
+|Mail|Vacation settings, Automatic reply settings|
 |Meeting rooms|Room bookings will not be migrated|
 |Calendar|Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated|
 |Contacts|A maximum of three email addresses per contact are migrated over|
 |Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
+|
 
 > [!TIP]
 > If you will be [starting your migration batch with Exchange Online Powershell](#start-a-google-workspace-migration-with-exchange-online-powershell), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
