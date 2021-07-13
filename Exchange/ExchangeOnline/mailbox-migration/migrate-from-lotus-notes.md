@@ -26,7 +26,7 @@ manager: serdars
 
 # Migrate from Lotus Notes to Microsoft 365 or Office 365
 
-When you are planning to migrate email from IBM Lotus Notes to Microsoft 365 or Office 365, use the Microsoft Online Notes Inspector (MONTI) application to evaluate how much data needs to be migrated from a customer's Lotus Notes environment to Microsoft 365 or Office 365.
+When planning to migrate email from IBM Lotus Notes to Microsoft 365 or Office 365, use the **Microsoft Online Notes Inspector (MONTI)** application. This tool will assist you in evaluating the amount data to be migrated from a customer's Lotus Notes environment to Microsoft 365 or Office 365.
 
 Here's what MONTI does:
 
@@ -38,6 +38,6 @@ Here's what MONTI does:
 
 Download the [MONTI application and accompanying documentation](https://www.microsoft.com/download/details.aspx?id=29567) from the Microsoft Download Center.
 
-Or click here if you want to directly download only the [MONTI application](https://download.microsoft.com/download/F/F/D/FFD6C34A-C9DB-4BE5-8504-2F912AB820C3/MONTI.exe.):  
+To directly download only the application:  [MONTI application](https://download.microsoft.com/download/F/F/D/FFD6C34A-C9DB-4BE5-8504-2F912AB820C3/MONTI.exe.) 
 
 The documentation describes how to deploy, configure, and run the MONTI application in a customer's Domino environment.
