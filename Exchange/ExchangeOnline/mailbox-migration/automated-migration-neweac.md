@@ -10,7 +10,7 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Instructions for migrating from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches.
+description: Instructions for automatically migrating from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches in new EAC.
 ms.custom: seo-marvel-jun2021
 ---
 

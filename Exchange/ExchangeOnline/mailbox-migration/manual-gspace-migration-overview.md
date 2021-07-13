@@ -16,5 +16,5 @@ ms.custom: seo-marvel-jun2021
 
 # Perform manual migration of Google Workspace
 
-You can perform manual migration of Google Workspace to Microsoft 365 or Office 365 in [new EAC](manual-gspace-migration-neweac.md) as well as [Classic EAC](manual-gspace-migration-classiceac.md).
+You can perform manual migration of Google Workspace to Microsoft 365 or Office 365 in [new EAC](manual-gspace-migration-neweac.md) and [Classic EAC](manual-gspace-migration-classiceac.md).
 

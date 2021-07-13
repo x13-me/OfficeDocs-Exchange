@@ -19,7 +19,7 @@ ms.custom: seo-marvel-jun2021
 In new EAC, when the migration batch has reached the state of **Synced**, it needs to be completed.
 
 > [!NOTE]
-    > When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license.
+>  When the batch starts, all the users to be migrated will be converted from MailUsers to Mailboxes. The Microsoft 365 or Office 365 Exchange license must be assigned only after this moment. You have 30 days to assign the license
 
 1. To complete the batch select the migration group.
 1. In the **Details** pane, select preferred option to complete the batch, and click **Save**.
