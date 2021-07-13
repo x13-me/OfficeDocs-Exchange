@@ -16,7 +16,7 @@ ms.custom: seo-marvel-jun2021
 
 # Completion of migration batch
 
-Based on whether you are using New EAC, Classic EAC, or Powershell cmdlets to perform the migration, the completion process differs.
+Based on whether you are using New EAC, Classic EAC, or PowerShell cmdlets to perform the migration, the completion process differs.
 
 ## Finalizing your migration
 
