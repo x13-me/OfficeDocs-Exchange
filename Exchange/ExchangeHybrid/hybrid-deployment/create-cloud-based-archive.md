@@ -83,7 +83,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 The following example creates a new primary **on-premises mailbox** and Active Directory user account for Pilar Pinilla with a cloud-based archive mailbox:
 
 ```PowerShell
-New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ArchiveDomain archive.contoso.com -RemoteArchive -FirstName Pilar -LastName Pinilla
+New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ArchiveDomain <tenant_domain>.mail.onmicrosoft.com -RemoteArchive -FirstName Pilar -LastName Pinilla
 ```
 
 For detailed syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/new-mailbox).
