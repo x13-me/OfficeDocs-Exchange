@@ -38,7 +38,7 @@ The following mail flow reports are available:
 
 - [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
 
-- [Mailboxes exceeding receiving limits report](mail-flow-reports/mailboxes-exceeding-receiving-limits-report.md)
+- [Mailboxes exceeding receiving limits report](mailboxes-exceeding-receiving-limits-report.md)
 
 ## Permissions required to view mail flow reports
 
