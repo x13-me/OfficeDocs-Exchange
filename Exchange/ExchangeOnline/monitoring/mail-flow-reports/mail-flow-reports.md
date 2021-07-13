@@ -29,6 +29,7 @@ The following mail flow reports are available:
 - [Queued messages report](mfr-queued-messages-report.md)
 - [SMTP AUTH clients report](mfr-smtp-auth-clients-report.md)
 - [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
+- [Mailboxes exceeding receiving limits report](mail-flow-reports/mailboxes-exceeding-receiving-limits-report.md)
 
 ## Permissions required to view mail flow reports
 
