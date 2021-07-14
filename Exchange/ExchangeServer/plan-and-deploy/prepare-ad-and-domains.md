@@ -100,7 +100,7 @@ When you prepare Active Directory for Exchange, the following requirements apply
 - Your account needs to be a member of the Enterprise Admins security group. If you skipped Step 1 because you want the _/PrepareAD_ command to extend the schema, the account also needs to be a member of the Schema Admins security group.
 - The computer needs to be a member of the same Active Directory domain and site as the schema master, and must be able to contact all of the domains in the forest on TCP port 389.
 - Wait until Active Directory has finished replicating the schema changes from Step 1 to all domain controllers before you try to prepare Active Directory.
-- You need to select a name for the Exchange organization. The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses.
+- If you install a new Exchange organization you need to select a name for the Exchange organization. The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses.
   - The organization name can't contain more than 64 characters, and can't be blank.
   - Valid characters are A to Z, a to z, 0 to 9, hyphen or dash (-), and space, but leading or trailing spaces aren't allowed.
   - You can't change the organization name after it's set.
@@ -108,7 +108,7 @@ When you prepare Active Directory for Exchange, the following requirements apply
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
 
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD  /OrganizationName:"<Organization name>"
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"<Organization name>"
 ```
 
 This example uses the Exchange installation files on drive E: and names the Exchange organization "Contoso Corporation".
@@ -119,6 +119,9 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Co
 
 > [!IMPORTANT]
 > If you have a hybrid deployment configured between your on-premises organization and Exchange Online, add the _/TenantOrganizationConfig_ switch to the command.
+
+> [!NOTE]
+> For existing environments you do not have to specify the parameters OrganizationName and TenantOrganizationConfig!
 
 As in Step 1, you'll need to wait while Active Directory replicates the changes from this step to all of your domain controllers before you proceed, and you can use the `repadmin` tool to check the progress of the replication.
 
