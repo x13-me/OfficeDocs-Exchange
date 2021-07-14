@@ -112,6 +112,13 @@ You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cm
    ```PowerShell
    Undo-SoftDeletedMailbox allieb@contoso.com -WindowsLiveID allieb@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
    ```
+### License removal
+
+When an Exchange Online license is removed from a user, Exchange Online data associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered. If you add the license back to the user during the grace period, this will restore access, and the mailbox will become fully active.
+
+> [!NOTE]
+> If the Microsoft 365 or Office 365 or Exchange Online license is removed from a user, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Feature reference for Content search](/microsoft-365/compliance/content-search-reference#searching-disconnected-or-de-licensed-mailboxes).
+
 ## Restoring a user in a hybrid deployment
 
 For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure AD user that was associated with the mailbox has been hard-deleted from Azure AD, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Microsoft 365 Groups with on-premises Exchange hybrid](../../ExchangeHybrid/hybrid-deployment/set-up-microsoft-365-groups.md) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user.
@@ -139,13 +146,6 @@ For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted an
    ```
 
 For other mailbox restoring scenarios related to hybrid infrastructures, refer to [Common mailbox recovery scenarios for hybrid environments](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Common-mailbox-recovery-scenarios-for-hybrid-environments/ba-p/604681).
-
-## License removal
-
-For info on removing a license from a user in Microsoft 365 or Office 365 and Exchange Online, see [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user).
-
-> [!NOTE]
-> If the Microsoft 365 or Office 365 or Exchange Online license is removed from a user, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Content Search](/microsoft-365/compliance/content-search).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
