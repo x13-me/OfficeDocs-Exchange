@@ -105,7 +105,7 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 This example connects a personal archive to the primary mailbox using the mailbox GUID stored in mailbox database DB01.
 
 ```PowerShell
-Connect-Mailbox -Identity "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -Archive -User "Megan Bown" -Database "DB01"
+Enable-Mailbox -Identity "Megan Bown" -ArchiveGUID "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -ArchiveDatabase "DB01" -Archive
 ```
 
 If you do not know the name of the personal archive, you can view it in the Exchange Management Shell by running the following command. This example returns all personal archive mailboxes in mailbox database DB01.
