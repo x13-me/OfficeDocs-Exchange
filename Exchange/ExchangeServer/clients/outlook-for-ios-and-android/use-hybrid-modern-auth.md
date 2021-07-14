@@ -221,14 +221,17 @@ The following features aren't supported for on-premises mailboxes using hybrid M
 - Shared calendar access and delegate calendar access
 - Shared and delegate mailbox data access
 - Cortana Time to Leave / Travel Time
-- Calendar attachments
 - Rich meeting locations
-- Task management with Microsoft To-Do
+- Task management with Microsoft To Do
 - Add-ins
 - Interesting Calendars
 - Play My Emails
 - Sensitivity labeling
 - S/MIME
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
+
+- Calendar attachments
 
 ## Connection Flow FAQ
 

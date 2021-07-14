@@ -77,8 +77,6 @@ The following features aren't support for on-premises mailboxes using basic auth
 
 - Cortana Time to Leave / Travel Time
 
-- Calendar attachments
-
 - Rich meeting locations
 
 - Task management with Microsoft To-Do
@@ -100,3 +98,7 @@ The following features aren't support for on-premises mailboxes using basic auth
 - Discover Feed
 
 - Privacy settings
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
+
+- Calendar attachments
