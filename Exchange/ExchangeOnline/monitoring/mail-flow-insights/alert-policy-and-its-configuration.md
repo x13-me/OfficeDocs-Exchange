@@ -38,10 +38,7 @@ Custom policy is the policy that can be manually created by the user/tenant.
 > [!NOTE]
 > For information on the tasks involved in the management of an alert policy, see [User tasks on alert policies](#user-tasks-on-alert-policies). 
 
-**Security reader** privileges are required to read/view an alert policy.
-
-> [!IMPORTANT]
-> **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Create alert policy](#create-alert-policy).
+**Security reader** privileges are sufficient to read/view an alert policy.
 
 **Insights for which an alert policy can be created**
 
@@ -61,9 +58,6 @@ A user with **security administrator** privileges - in addition to creating an a
 - **Disable**: A user can disable both the **system** and **custom** policies. For more information, see [Disable alert policy](#disable-alert-policy).  
 - **Disable email notifications of alert policies**: A user can disable the email notifications pertaining to both **system** and **custom** policies. For more information, see [Disable email notifications](#disable-email-notifications).
 - **View**: A user can view alert policies (system or custom) on the **Alerts** screen. For more information, see [View/read alert policy](#viewread-alert-policy).
-
-> [!IMPORTANT]
-> **Security reader** privileges are required for viewing/reading an alert policy.
 
 ### Create alert policy
 
