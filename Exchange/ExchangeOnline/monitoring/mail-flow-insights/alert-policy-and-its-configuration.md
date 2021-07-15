@@ -184,6 +184,7 @@ To disable the email notifications of an alert policy, perform the following ste
 1. Click the **Settings** tab.
 1. Uncheck the **Send email notifications** check box.
    :::image type="content" source="../../media/disabling-email-notifications.png" alt-text="The screen on which the email notifications for an alert policy are disabled":::
+
    The email notifications for the alert policy are disabled, and the user will no longer receive email notifications pertaining to the alert policy.
 
 ### View/read alert policy
