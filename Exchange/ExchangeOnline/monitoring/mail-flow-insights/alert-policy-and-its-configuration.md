@@ -17,11 +17,6 @@ ms.custom:
 
 An alert policy is the mechanism that enables you to track events related to mail flow in the new Exchange Admin Center (EAC).
 
-## Privileges for alert policy management
-
-> [!IMPORTANT]
-> **Security administrator** privileges are required to create and manage an alert policy; **Security reader** privileges are required to read/view an alert policy.
-
 ## Types of alert policies
 
 There are two types of alert policies, namely **System** and **Custom**.
@@ -40,6 +35,14 @@ System policy is created by the system, by default. A **System** policy automati
 
 Custom policy is the policy that can be manually created by the user/tenant.
 
+## Privileges for management of alert policy
+
+**Security administrator** privileges are required for the management of an alert policy. 
+> [!NOTE]
+> For information on the tasks involved in the management of an alert policy, see [User tasks on alert policies](#user-tasks-on-alert-policies). 
+
+**Security reader** privileges are required to read/view an alert policy.
+
 > [!IMPORTANT]
 > **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Creating an alert policy](#creating-an-alert-policy).
 
@@ -52,7 +55,20 @@ A user/tenant can create an alert policy for the following mail flow-related ins
 - New users forwarding
 - New domains being forwarded
 
-#### Creating an alert policy
+## User tasks on alert policies
+
+A user with **security administrator** privileges - in addition to creating an alert policy - can perform the following tasks on an alert policy:
+
+- **Creation**: A user with **security administrator** privileges can create an alert policy, which is a custom alert policy. For information on how to create an alert policy, see [Create alert policy](#create-alert-policy). 
+- **Edit**: A user can edit both the **system** and **custom** policies. For more information, see [Edit alert policy](#edit-alert-policy).
+- **Disable**: A user can disable both the **system** and **custom** policies. For more information, see [Disable alert policy](#disable-alert-policy).  
+- **Disable email notifications of alert policies**: A user can disable the email notifications pertaining to both **system** and **custom** policies. For more information, see [Disable email notifications](#disable-email-notifications).
+- **View**: A user can view alert policies (system or custom) on the **Alerts** screen. For more information, see [View/read alert policy](#viewread-alert-policy).
+
+> [!IMPORTANT]
+> **Security reader** privileges are required for viewing/reading an alert policy.
+
+### Create alert policy
 
 To create an alert policy, perform the following steps:
 
@@ -81,19 +97,7 @@ To create an alert policy, perform the following steps:
 10. Review the alert-policy settings and click **Create**.
     The alert policy is created.
 
-## Tasks on alert policies
-
-A user with **security administrator** privileges - in addition to creating an alert policy - can perform the following tasks on an alert policy:
-
-- **Editing**: A user can edit both the **system** and **custom** policies. For more information, see Edit the policy.
-- **Disabling**: A user can disable both the **system** and **custom**. For more information, see [Disable the policy](#disable-the-policy).  
-- **Disabling its email notifications**: A user can disable the email notifications pertaining to both **system** and **custom** policies. For more information, see [Disable the email notifications](#disable-the-email-notifications).
-- **Viewing**: A user can view alert policies (system or custom) on the **Alerts** screen.
-
-> [!IMPORTANT]
-> **Security reader** privileges are required for viewing/reading an alert policy. For more information, see [Viewing/reading an alert policy](#viewingreading-an-alert-policy).
-
-### Edit the policy
+### Edit alert policy
 
 A user can edit the following types of alerts:
 
@@ -111,7 +115,7 @@ The procedure to edit an alert policy is the same for all types of **custom** po
 - Messages for priority accounts are delayed or rejected
 - Messages for normal accounts have been delayed
 
-#### Editing a custom policy
+#### Edit custom policy
 
 To edit an alert of the type **domain loop**, perform the following steps:
 
@@ -126,16 +130,16 @@ To edit an alert of the type **domain loop**, perform the following steps:
     1. Daily notification limit
 1. Click **Save**.
 
-#### Editing system policies
+#### Edit system policy
 
 This section describes the procedure to edit the following types of system policies:
 
-- **Messages for priority accounts are delayed or rejected**: This type of system policy can be edited in two methods. For detailed information, see [Method 1](#method-1) and [Method 2 (1)](#method-2-1).
-- **Messages for normal accounts are delayed**: This type of system policy can be edited in the procedure identical to the one implemented for the type **Messages for priority accounts are delayed or rejected**. See [Method 1](#method-1).
+- **Messages for priority accounts are delayed or rejected**: This type of system policy can be edited in two methods. For detailed information, see [First method](#first-method) and [Second method](#second-method).
+- **Messages for normal accounts are delayed**: This type of system policy can be edited in the procedure identical to the one implemented for the type **Messages for priority accounts are delayed or rejected**. See [First method](#first-method).
 
 There are two methods by which a user can edit the alert type **Messages for priority accounts are delayed or rejected**.
 
-##### Method 1
+##### First method
 
 1. On the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
 1. Select the policy that you want to edit, and click on it.
@@ -148,7 +152,7 @@ There are two methods by which a user can edit the alert type **Messages for pri
     1. Threshold
 1. Click **Save**.
 
-##### Method 2
+##### Second method
 
 1. On the left navigation pane of the new EAC, select **Reports** > **Mail flow**.
 1. Select the radio button for **Email issues for priority accounts**.
@@ -161,11 +165,7 @@ There are two methods by which a user can edit the alert type **Messages for pri
     1. Threshold
 1. Click **Save**.
 
-#### Messages for normal accounts are delayed
-
-To edit the alert of the type **Messages for normal accounts are delayed**, follow the procedure specified in [Method 1](#method-1)
-
-### Disable the policy
+### Disable alert policy
 
 To disable an alert policy, perform the following steps:
 
@@ -179,7 +179,7 @@ To disable an alert policy, perform the following steps:
 1. Click **Save**.
    The alert policy is disabled. The user will no longer receive any email notifications pertaning to this alert policy.
 
-### Disable the email notifications
+### Disable email notifications
 
 A user has the option of disabling just the email notifications pertaining to an alert policy. This results in non-receipt of email notifications of the alert policy. However, the details of the alert policy can continue to be viewed on the **Alerts** screen.
 
@@ -195,8 +195,7 @@ To disable the email notifications of an alert policy, perform the following ste
    :::image type="content" source="../../media/disabling-email-notifications.png" alt-text="The screen on which the email notifications for an alert policy are disabled":::
    The email notifications for the alert policy are disabled, and the user will no longer receive email notifications pertaining to the alert policy.
 
-
-#### Viewing/reading an alert policy
+### View/read alert policy
 
 An alert policy (**System** or **Custom**) is displayed on the **Alerts** screen. The users can view
 
