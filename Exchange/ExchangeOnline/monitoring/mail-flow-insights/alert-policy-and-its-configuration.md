@@ -168,17 +168,17 @@ To disable an alert policy, perform the following steps:
 1. Uncheck the **Enable this policy** check box.
    :::image type="content" source="../../media/disabling-alert-policy.png" alt-text="The screen on which you disable an alert policy by unchecking the check box":::
 1. Click **Save**.
-   The alert policy is disabled. The user will no longer receive any email notifications pertaning to this alert policy.
+   The alert policy is disabled. The user will no longer receive any email notifications pertaining to this alert policy.
 
 ### Disable email notifications
 
-A user has the option of disabling just the email notifications pertaining to an alert policy. This results in non-receipt of email notifications of the alert policy. However, the details of the alert policy can continue to be viewed on the **Alerts** screen.
+A user has the option of disabling just the email notifications pertaining to an alert policy. This disabling results in non-receipt of email notifications of the alert policy. However, the details of the alert policy can continue to be viewed on the **Alerts** screen.
 
 To disable the email notifications of an alert policy, perform the following steps:
 
 1. In the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
    The **Alert policies** screen appears.
-1. Select the alert policy for which you to disbale email notifications.
+1. Select the alert policy for which you to disable email notifications.
    :::image type="content" source="../../media/selecting-an-alert-policy-to-disable.png" alt-text="The screen on which you select an alert policy for which email notifications are to be disabled":::
    The alert policy details screen appears.
 1. Click the **Settings** tab.
