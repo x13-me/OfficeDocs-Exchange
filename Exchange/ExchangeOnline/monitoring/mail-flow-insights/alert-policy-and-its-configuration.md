@@ -28,9 +28,6 @@ There are two types of alert policies, namely **System** and **Custom**.
 
 System policy is created by the system, by default. A **System** policy automatically maps a newly created tenant to it.
 
-> [!IMPORTANT]
-> A user/tenant requires **security administrator** privileges to edit a **System** policy. A user/tenant requires **security reader** privileges to view/read the **System** policy (see [Viewing/reading an alert policy](#viewingreading-an-alert-policy)).
-
 ### Custom policy
 
 Custom policy is the policy that can be manually created by the user/tenant.
@@ -44,7 +41,7 @@ Custom policy is the policy that can be manually created by the user/tenant.
 **Security reader** privileges are required to read/view an alert policy.
 
 > [!IMPORTANT]
-> **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Creating an alert policy](#creating-an-alert-policy).
+> **Security administrator** privileges are required for creating an alert policy (see). For information on creating an alert policy, see [Create alert policy](#create-alert-policy).
 
 **Insights for which an alert policy can be created**
 
@@ -108,7 +105,7 @@ A user can edit the following types of alerts:
 - Slow mailflow rules
 - New domains being forwarded emails
 
-The procedure to edit an alert policy is the same for all types of **custom** policies. For information on how to edit a custom policy, see [Editing a custom policy](#editing-a-custom-policy)
+The procedure to edit an alert policy is the same for all types of **custom** policies. For information on how to edit a custom policy, see [Edit custom policy](#edit-custom-policy).
 
 **Of system policies**
 
