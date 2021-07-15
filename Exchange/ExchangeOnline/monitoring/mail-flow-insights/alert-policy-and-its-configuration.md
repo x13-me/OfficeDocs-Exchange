@@ -97,11 +97,21 @@ A user with **security administrator** privileges - in addition to creating an a
 
 A user can edit the following types of alerts:
 
+**Of custom policies**
+
 - Domain loop
+- New users forwarding emails
+- Slow mailflow rules
+- New domains being forwarded emails
+
+The procedure to edit an alert policy is the same for all types of **custom** policies. For information on how to edit a custom policy, see [Editing a custom policy](#editing-a-custom-policy)
+
+**Of system policies**
+
 - Messages for priority accounts are delayed or rejected
 - Messages for normal accounts have been delayed
 
-#### Domain loop
+#### Editing a custom policy
 
 To edit an alert of the type **domain loop**, perform the following steps:
 
@@ -116,7 +126,12 @@ To edit an alert of the type **domain loop**, perform the following steps:
     1. Daily notification limit
 1. Click **Save**.
 
-#### Messages for priority accounts are delayed or rejected
+#### Editing system policies
+
+This section describes the procedure to edit the following types of system policies:
+
+- **Messages for priority accounts are delayed or rejected**: This type of system policy can be edited in two methods. For detailed information, see [Method 1](#method-1) and [Method 2 (1)](#method-2-1).
+- **Messages for normal accounts are delayed**: This type of system policy can be edited in the procedure identical to the one implemented for the type **Messages for priority accounts are delayed or rejected**. See [Method 1](#method-1).
 
 There are two methods by which a user can edit the alert type **Messages for priority accounts are delayed or rejected**.
 
