@@ -113,9 +113,13 @@ To edit an alert of the type **domain loop**, perform the following steps:
 1. On the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
 1. Select the policy that you want to edit, and click on it.
    The policy details screen appears.
+
    :::image type="content" source="../../media/domain-loop-alert-edit.png" alt-text="The screen displaying details of the alert policy":::
+
 1. Click the **Settings** tab.
+
    :::image type="content" source="../../media/settings-tab-domain-loop.png" alt-text="The screen displaying the settings parameters for the insight type of domain loop":::
+
 1. Edit the value in either or both of the following fields:
     1. Send email notifications to these users or groups.
     1. Daily notification limit
@@ -135,7 +139,9 @@ There are two methods by which a user can edit the alert type **Messages for pri
 1. On the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
 1. Select the policy that you want to edit, and click on it.
    The policy details screen appears.
+
    :::image type="content" source="../../media/priority-accounts-alert-type.png" alt-text="The screen displaying the details of alert policy that has the insight type of priority accounts":::
+
 1. Click the **Settings** tab.
 1. Edit the value in any or all of the following fields:
     1. Send email notifications to these users or groups.
@@ -149,7 +155,9 @@ There are two methods by which a user can edit the alert type **Messages for pri
 1. Select the radio button for **Email issues for priority accounts**.
 1. On the screen that appears, click **Edit policy**.
    The **Edit policy** screen appears.
+
    :::image type="content" source="../../media/priority-account-alert-type-2.png" alt-text="The screen on which you can edit the settings of an alert policy":::
+
 1. Edit the value in any or all of the following fields:
     1. Send email notifications to these users or groups.
     1. Daily notification limit
@@ -163,10 +171,14 @@ To disable an alert policy, perform the following steps:
 1. In the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
    The **Alert policies** screen appears.
 1. Select the alert policy you want to disable and click on it.
+
    :::image type="content" source="../../media/selecting-an-alert-policy-to-disable.png" alt-text="The screen on which you select an alert policy to disable it":::
+
    The alert policy details screen appears.
 1. Uncheck the **Enable this policy** check box.
+
    :::image type="content" source="../../media/disabling-alert-policy.png" alt-text="The screen on which you disable an alert policy by unchecking the check box":::
+
 1. Click **Save**.
    The alert policy is disabled. The user will no longer receive any email notifications pertaining to this alert policy.
 
@@ -179,10 +191,14 @@ To disable the email notifications of an alert policy, perform the following ste
 1. In the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
    The **Alert policies** screen appears.
 1. Select the alert policy for which you to disable email notifications.
+
    :::image type="content" source="../../media/selecting-an-alert-policy-to-disable.png" alt-text="The screen on which you select an alert policy for which email notifications are to be disabled":::
+
    The alert policy details screen appears.
+
 1. Click the **Settings** tab.
 1. Uncheck the **Send email notifications** check box.
+
    :::image type="content" source="../../media/disabling-email-notifications.png" alt-text="The screen on which the email notifications for an alert policy are disabled":::
 
    The email notifications for the alert policy are disabled, and the user will no longer receive email notifications pertaining to the alert policy.
