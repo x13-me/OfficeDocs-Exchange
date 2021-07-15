@@ -34,11 +34,11 @@ Custom policy is the policy that can be manually created by the user/tenant.
 
 ## Privileges for management of alert policy
 
-**Security administrator** privileges are required for the management of an alert policy. 
+- **Security administrator** privileges are required for the management of an alert policy. 
 > [!NOTE]
 > For information on the tasks involved in the management of an alert policy, see [User tasks on alert policies](#user-tasks-on-alert-policies). 
 
-**Security reader** privileges are sufficient to read/view an alert policy.
+- **Security reader** privileges are sufficient to read/view an alert policy.
 
 **Insights for which an alert policy can be created**
 
