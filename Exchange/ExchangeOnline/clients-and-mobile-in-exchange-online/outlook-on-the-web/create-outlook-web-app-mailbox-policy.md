@@ -85,11 +85,9 @@ The following list contains the features you can configure when you create an Ou
       - _Tasks_: if enabled, users can use Tasks in Outlook on the web.
       - _Reminders and notifications_: if enabled, users will receive new email notifications and task and calendar reminders.
 
-   - Select how users can view and access attachments from public or private computers.<br>
-     **Public or shared computer**:
-      - _Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.<br>
-     **Private computer or OWA for Devices**:
-      - _Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.
+   - **Select how users can view and access attachments from public or private computers**:
+      - _Public or shared computer - Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.
+      - _Private computer or OWA for Devices - Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.
 
 ## Use Exchange Online PowerShell to create an Outlook on the web mailbox policy
 
