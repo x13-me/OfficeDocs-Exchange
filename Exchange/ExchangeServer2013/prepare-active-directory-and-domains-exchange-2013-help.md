@@ -202,130 +202,28 @@ You can also check the Exchange setup log to verify that Active Directory prepar
 
 The following table shows you the Exchange 2013 objects in Active Directory that get updated each time you install a new version of Exchange 2013. You can compare the object versions you see with the values in the table below to verify that the version of Exchange 2013 you installed successfully updated Active Directory during installation.
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th> </th>
-<th>Exchange version</th>
-<th>rangeUpper</th>
-<th>objectVersion</th>
-<th>objectVersion</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Naming context</strong></p></td>
-<td><p> </p></td>
-<td><p>Schema</p></td>
-<td><p>Default</p></td>
-<td><p>Configuration</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Container</strong></p></td>
-<td><p> </p></td>
-<td><p>ms-Exch-Schema-Version-Pt</p></td>
-<td><p>Microsoft Exchange System Objects</p></td>
-<td><p>CN=&lt;<em>your organization</em>&gt;, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=&lt;<em>domain</em>&gt;</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Exchange 2013 CU23</p></td>
-<td><p>15312</p></td>
-<td><p>13237</p></td>
-<td><p>16133</p></td>
-</tr>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Exchange 2013 CU22</p></td>
-<td><p>15312</p></td>
-<td><p>13236</p></td>
-<td><p>16131</p></td>
-</tr>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Exchange 2013 CU10-CU21</p></td>
-<td><p>15312</p></td>
-<td><p>13236</p></td>
-<td><p>16130</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Exchange 2013 CU9</p></td>
-<td><p>15312</p></td>
-<td><p>13236</p></td>
-<td><p>15965</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Exchange 2013 CU8</p></td>
-<td><p>15312</p></td>
-<td><p>13236</p></td>
-<td><p>15965</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Exchange 2013 CU7</p></td>
-<td><p>15312</p></td>
-<td><p>13236</p></td>
-<td><p>15965</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Exchange 2013 CU6</p></td>
-<td><p>15303</p></td>
-<td><p>13236</p></td>
-<td><p>15965</p></td>
-</tr>
-<tr class="even">
-<td><p> </p></td>
-<td><p>Exchange 2013 CU5</p></td>
-<td><p>15300</p></td>
-<td><p>13236</p></td>
-<td><p>15870</p></td>
-</tr>
-<tr class="odd">
-<td><p> </p></td>
-<td><p>Exchange 2013 SP1</p></td>
-<td><p>15292</p></td>
-<td><p>13236</p></td>
-<td><p>15844</p></td>
-</tr>
-<tr class="even">
-<td><p> </p></td>
-<td><p>Exchange 2013 CU3</p></td>
-<td><p>15283</p></td>
-<td><p>13236</p></td>
-<td><p>15763</p></td>
-</tr>
-<tr class="odd">
-<td><p> </p></td>
-<td><p>Exchange 2013 CU2</p></td>
-<td><p>15281</p></td>
-<td><p>13236</p></td>
-<td><p>15688</p></td>
-</tr>
-<tr class="even">
-<td><p> </p></td>
-<td><p>Exchange 2013 CU1</p></td>
-<td><p>15254</p></td>
-<td><p>13236</p></td>
-<td><p>15614</p></td>
-</tr>
-<tr class="odd">
-<td><p> </p></td>
-<td><p>Exchange 2013 RTM</p></td>
-<td><p>15137</p></td>
-<td><p>13236</p></td>
-<td><p>15449</p></td>
-</tr>
-</tbody>
-</table>
+- **rangeUpper** is located in the **Schema** naming context in the properties of the **ms-Exch-Schema-Version-Pt** container.
+- **objectVersion (Default)** is the **objectVersion** attribute located in the **Default naming context** in the properties of the **Microsoft Exchange System Objects** container.
+- **objectVersion (Configuration)** is the **objectVersion** attribute located in the **Configuration** naming context in **Services** \> **Microsoft Exchange** in the properties of the **\<Your Exchange Organization Name\>** container.
+
+<br>
+
+****
+
+|Exchange 2013 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
+|---|:---:|:---:|:---:|
+|Exchange 2013 CU23 with KB5004778|15312|13237|16133|
+|Exchange 2013 CU23|15312|13237|16133|
+|Exchange 2013 CU22|15312|13236|16131|
+|Exchange 2013 CU10-CU21|15312|13236|16130|
+|Exchange 2013 CU9|15312|13236|15965|
+|Exchange 2013 CU8|15312|13236|15965|
+|Exchange 2013 CU7|15312|13236|15965|
+|Exchange 2013 CU6|15303|13236|15965|
+|Exchange 2013 CU5|15300|13236|15870|
+|Exchange 2013 SP1|15292|13236|15844|
+|Exchange 2013 CU3|15283|13236|15763|
+|Exchange 2013 CU2|15281|13236|15688|
+|Exchange 2013 CU1|15254|13236|15614|
+|Exchange 2013 RTM|15137|13236|15449|
+|
