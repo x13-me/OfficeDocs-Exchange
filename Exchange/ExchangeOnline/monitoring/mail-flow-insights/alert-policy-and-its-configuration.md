@@ -40,15 +40,6 @@ Custom policy is the policy that can be manually created by the user/tenant.
 
 - **Security reader** privileges are sufficient if the tenant wants to just read/view an alert policy.
 
-**Insights for which an alert policy can be created**
-
-A user/tenant can create an alert policy for the following mail flow-related insights:
-
-- Mail loop
-- Slow transport rule
-- New users forwarding
-- New domains being forwarded
-
 ## User tasks on alert policies
 
 A user with **security administrator** privileges - in addition to creating an alert policy - can perform the following tasks on an alert policy:
@@ -87,6 +78,15 @@ To create an alert policy, perform the following steps:
 9. Click **Next**.
 10. Review the alert-policy settings and click **Create**.
     The alert policy is created.
+
+#### Insights for which an alert policy can be created
+
+A user/tenant can create an alert policy for the following insights:
+
+- Mail loop
+- Slow transport rule
+- New users forwarding
+- New domains being forwarded
 
 ### Edit alert policy
 
