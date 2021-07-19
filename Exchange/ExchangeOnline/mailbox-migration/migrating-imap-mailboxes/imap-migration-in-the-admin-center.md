@@ -47,7 +47,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
 2. Navigate to **Setup** and choose **Migrations** under **Featured Collections**.
 
-    ![Data migration dashboard](../media/setup-migrations.png)
+    ![Data migration dashboard](../../media/setup-migrations.png)
 
 3. In the **Migrations** page, choose **Email**.
 4. In the **Migrate your email** page, click the **Get started** button.
