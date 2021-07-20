@@ -339,10 +339,11 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 	
 15.	In the **Schedule batch migration** page, select the desired options for reporting and start and end migration batch modes and then click **Save** , and then click **Done**.
 
-#### Verify that this task worked  (new EAC)
+### Step 4: Verify that this task worked  (new EAC)
 
-To check the migration status information for all users in a migration batch, see [Migration users status report](migration-users-status-report.md).
+- In the new Exchange admin center, navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under Migration details, click View details. For more information, see [Migration users status report](migration-users-status-report.md).
 
+- If this step task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
 #### Verify a successful mailbox migration to Microsoft 365 or Office 365
 
@@ -392,7 +393,7 @@ During the last task, you changed the MX record. Now it's time to verify that al
 
 When you delete the migration batch, the migration service cleans up any records related to the migration batch and removes it from the migration dashboard.
 
-#### Delete a migration batch
+#### Delete a migration batch (classic EAC)
 
 1. In the [Exchange admin center](../../exchange-admin-center.md), go to **Recipients** \> **Migration**.
 
@@ -400,9 +401,19 @@ When you delete the migration batch, the migration service cleans up any records
 
    ![Delete a migration batch](../media/354afa40-6e2d-4c75-94f5-a516e59ca87b.png)
 
-#### Confirm that the deletion worked
+#### Confirm that the deletion worked (classic EAC)
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the migration batch is no longer listed on the migration dashboard.
+
+#### Delete a migration batch (new EAC)
+
+1. In the [new Exchange admin center](../../exchange-admin-center.md), go to **Migration** \> **Batch**.
+
+2. On the migration dashboard, select the batch, and then click **Delete**.
+
+#### Confirm that the deletion worked (new EAC)
+
+- In the new Exchange admin center, go to **Migration** \> **Batch**. Verify that the migration batch is no longer listed on the migration dashboard.
 
 ## See also
 
