@@ -205,7 +205,7 @@ Here's an example of a migration file that contains the **UserRoot** attribute:
 
 ![A sample migration file for Courier IMAP](../media/0f837f06-1ba9-4065-ab65-9af0d10ba283.png)
 
-To continue the required steps using the new Exchange Admin Center, click here, otherwise if you want to use the classic Exchange Admin Center, continue reading.
+To continue the required steps using the new Exchange Admin Center, click [Step 3: Create a migration batch to migrate your mailboxes and connect Microsoft 365 or Office 365 to your email system (new EAC)](#step-3-create-a-migration-batch-to-migrate-your-mailboxes-and-connect-microsoft-365-or-office-365-to-your-email-system-new-eac), otherwise if you want to use the classic Exchange Admin Center, continue reading.
 
 ### Step 3: Connect Microsoft 365 or Office 365 to your email system (classic EAC)
 
@@ -341,7 +341,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 ### Step 4: Verify that this task worked  (new EAC)
 
-- In the new Exchange admin center, navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under Migration details, click View details. For more information, see [Migration users status report](migration-users-status-report.md).
+- In the new Exchange admin center, navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under Migration details, click View details. For more information, see [Migration users status report](../migration-users-status-report.md).
 
 - If this step task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
