@@ -64,5 +64,5 @@ The following table gives you a quick glance at each of the collaboration featur
 |**Supported clients**|Outlook 2010 or later <br/> Outlook on the web <br/>|Outlook 2010 or later <br/> Outlook on the web|Outlook 2010 or later <br/> Outlook on the web|
 
 > [!NOTE]
-> <sup>1</sup> Depending on workload, the ideal group size may be very small. If more than a few users need to access a Shared mailbox at the same time, consider one of the other options.
+> <sup>1</sup> Depending on workload, the ideal group size may be very small (not more than 25). If more than a few users need to access a Shared mailbox at the same time, consider one of the other options.
 
