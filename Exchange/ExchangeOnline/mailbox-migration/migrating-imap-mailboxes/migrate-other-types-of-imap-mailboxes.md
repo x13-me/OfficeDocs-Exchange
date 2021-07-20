@@ -295,7 +295,7 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
       ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
-#### Verify that this task worked  (classic EAC)
+#### Verify that this task worked (classic EAC)
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the **Status** is **Synced**.
 
