@@ -235,7 +235,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 8. Click **New** to create the migration endpoint.
 
-### Step 4: Create a migration batch and migrate your mailboxes  (classic EAC)
+### Step 4: Create a migration batch and migrate your mailboxes (classic EAC)
 
 You use a migration batch to migrate groups of email to Microsoft 365 or Office 365 mailboxes at the same time. The batch consists of the mailboxes that you listed in the migration file in the previous task.
 
@@ -339,7 +339,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 	
 15.	In the **Schedule batch migration** page, select the desired options for reporting and start and end migration batch modes and then click **Save** , and then click **Done**.
 
-### Step 4: Verify that this task worked  (new EAC)
+### Step 4: Verify that this task worked (new EAC)
 
 - In the new Exchange admin center, navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under Migration details, click View details. For more information, see [Migration users status report](../migration-users-status-report.md).
 
