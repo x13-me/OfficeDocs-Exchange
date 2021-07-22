@@ -28,7 +28,7 @@ For some error such as Send As or Mailbox Full, the issue won't correct itself w
 
 The new errors that will be seen if throttling is hit are:
 
- - 550 5.2.251 Sender throttled due to continuous mailbox full of errors.
+ - 550 5.2.251 Sender throttled due to continuous mailbox full errors.
 
  - 550 5.2.252 Sender throttled due to continuous send as denied errors.
 
