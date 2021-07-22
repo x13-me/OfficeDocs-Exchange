@@ -42,7 +42,7 @@ If Exchange Online sees too many errors during submissions for a mailbox related
 
 In many of these cases, customers will have failed to notice anything is wrong as forgotten applications have been attempting to send for some time. However, the mailbox could be configured to send out emails successfully with one application and misconfigured with another. And in that case, messages that were successfully sending will be blocked as well. Or the mailbox becomes full and a new error is ignored.
 
-It's up to administrators or users to test these applications to make sure they work when configured, but if these errors are hit, then they'll need to investigate the misconfiguration in cases such as **end As** denied or correct new issues such as a mailbox becoming full. Investigating this will be on the client side. These messages are not accepted by Microsoft 365 so **Message Trace** is of no help here.  
+It's up to administrators or users to test these applications to make sure they work when configured, but if these errors are hit, then they'll need to investigate the misconfiguration in cases such as **Send As** denied or correct new issues such as a mailbox becoming full. Investigating this will be on the client side. These messages are not accepted by Microsoft 365 so **Message Trace** is of no help here.  
 
 After correcting the issue, the mailbox will begin working again after the throttling period expires in the same way that hitting the Recipient Rate Limit for a mailbox requires waiting for that throttling to elapse.
 
