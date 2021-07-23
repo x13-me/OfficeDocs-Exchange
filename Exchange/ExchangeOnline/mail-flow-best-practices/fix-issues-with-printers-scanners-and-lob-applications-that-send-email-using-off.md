@@ -156,6 +156,16 @@ There are a few things you should check:
 
       - Select **Save**.
 
+4. Exclude the user from a [Conditional Access policy](active-directory/conditional-access/overview) that [blocks Legacy Authentication](azure/active-directory/conditional-access/block-legacy-authentication):
+
+      - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+
+      - Browse to **Azure Active Directory** > **Security** > **Conditional Access**
+
+      - In the policy that blocks Legacy Authentication, exclude the mailbox being used under **Users and Groups** > **Exclude**
+
+      - Select **Save**
+
 ### Error: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
 This error indicates that the device is trying to send an email from an address that doesn't match the logon credentials. An example would be if your entered login credentials for sales@contoso.com in your application settings but the application tries to send emails from salesperson1@contoso.com. If your application or printer behaves this way, use Microsoft 365 or Office 365 SMTP relay because SMTP client submission does not support this scenario.
