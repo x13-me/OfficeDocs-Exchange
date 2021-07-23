@@ -24,7 +24,7 @@ Every day, our service sees millions of requests coming in to send emails via sm
 
 Many of these requests that we receive, result in an error which if sent by a user from Outlook can result in the user seeing an error message that they could immediately take action on to unblock sending emails. However, many automated email applications aren't designed well to handle errors. On the contrary, they ignore errors and send continuously believing that the error will correct itself. 
 
-For some errors such as those involving involving **Send As** or **Mailbox Full**, the issue won't correct itself without human intervention. To protect our service from bombardment from these requests and to get the message to administrators that something is wrong with the mailbox or configuration, we're introducing continuous error throttling for SMTP AUTH.
+For some errors such as those involving **Send As** or **Mailbox Full**, the issue won't correct itself without human intervention. To protect our service from bombardment from these requests and to get the message to administrators that something is wrong with the mailbox or configuration, we're introducing continuous error throttling for SMTP AUTH.
 
 The new errors that will be seen if throttling is hit are:
 
