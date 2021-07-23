@@ -19,10 +19,7 @@ An alert policy is the mechanism that enables you to track events related to mai
 
 ## Types of alert policies
 
-There are two types of alert policies, namely **System** and **Custom**.
-
-1. **System** - See [System policy](#system-policy)
-2. **Custom** - See [Custom policy](#custom-policy)
+There are two types of alert policies, namely [System](#system-policy) and [Custom](#custom-policy).
 
 ### System policy
 
@@ -42,7 +39,7 @@ Custom policy is the policy that can be manually created by the user/tenant.
 
 ## User tasks on alert policies
 
-A user with **security administrator** privileges - in addition to creating an alert policy - can perform the following tasks on an alert policy:
+A user with **security administrator** privileges can perform the following tasks on an alert policy:
 
 - **Creation**: A user with **security administrator** privileges can create an alert policy, which is a custom alert policy. For information on how to create an alert policy, see [Create alert policy](#create-alert-policy). 
 - **Edit**: A user can edit both the **system** and **custom** policies. For more information, see [Edit alert policy](#edit-alert-policy).
@@ -64,9 +61,14 @@ To create an alert policy, perform the following steps:
 4. From the **Severity** drop-down list, select the severity level.
 
 > [!NOTE]
-> The **Category** drop-down list is disabled because **Mail flow** is the only category supported in the new EAC. Therefore, after Step 4, the next step is selection of the insight type.
+> The **Category** drop-down list is disabled because **Mail flow** is the only category supported in the new EAC.
 
-5. From the **Trigger an alert when the following insight is generated** drop-down list, select one of the four insight types.
+5. From the **Trigger an alert when the following insight is generated** drop-down list, select one from the following four types of insights:
+
+- Mail loop
+- Slow transport rule
+- New users forwarding
+- New domains being forwarded
 
 6. Click **Next**.
 7. Provide the name or email address of the alert notification recipients in the **Email recipients** box.
@@ -78,15 +80,6 @@ To create an alert policy, perform the following steps:
 9. Click **Next**.
 10. Review the alert-policy settings and click **Create**.
     The alert policy is created.
-
-#### Insights for which an alert policy can be created
-
-A user/tenant can create an alert policy for the following insights:
-
-- Mail loop
-- Slow transport rule
-- New users forwarding
-- New domains being forwarded
 
 ### Edit alert policy
 
@@ -108,7 +101,7 @@ The procedure to edit an alert policy is the same for all types of **custom** po
 
 #### Edit custom policy
 
-To edit an alert of the type **domain loop**, perform the following steps:
+To edit a policy of the **custom** alert type, perform the following steps:
 
 1. On the left navigation pane of the new EAC, select **Mail flow** > **Alert policies**.
 1. Select the policy that you want to edit, and click on it.
@@ -132,7 +125,7 @@ This section describes the procedure to edit the following types of system polic
 - **Messages for priority accounts are delayed or rejected**: This type of system policy can be edited in two methods. For detailed information, see [First method](#first-method) and [Second method](#second-method).
 - **Messages for normal accounts are delayed**: This type of system policy can be edited in the procedure identical to the one implemented for the type **Messages for priority accounts are delayed or rejected**. See [First method](#first-method).
 
-There are two methods by which a user can edit the alert type **Messages for priority accounts are delayed or rejected**.
+There are two methods by which a user can edit the policy for a **system** alert type.
 
 ##### First method
 
