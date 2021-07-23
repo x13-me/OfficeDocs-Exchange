@@ -311,7 +311,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 3. Click **Add migration batch**.
 
-4. On the **Add migration batch page**, type the name (no spaces or special characters) of the migration batch in the **Give migration batch a unique name** field, for example, Test5-migration
+4. On the **Add migration batch page**, type the name (no spaces or special characters) of the migration batch in the **Give migration batch a unique name** field, for example, Test5-migration.
 
 5.	Select **Migrate to Exchange Online** in the dropdown **Select the mailbox migration path**,  and then click **Next**.
 
