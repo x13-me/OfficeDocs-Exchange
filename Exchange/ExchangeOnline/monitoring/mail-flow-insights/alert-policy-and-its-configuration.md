@@ -125,7 +125,7 @@ This section describes the procedure to edit the following types of system polic
 - **Messages for priority accounts are delayed or rejected**: This type of system policy can be edited in two methods. For detailed information, see [First method](#first-method) and [Second method](#second-method).
 - **Messages for normal accounts are delayed**: This type of system policy can be edited in the procedure identical to the one implemented for the type **Messages for priority accounts are delayed or rejected**. See [First method](#first-method).
 
-There are two methods by which a user can edit the policy for a **system** alert type.
+There are two methods by which a user can edit the policy for the **system** alert type.
 
 ##### First method
 
