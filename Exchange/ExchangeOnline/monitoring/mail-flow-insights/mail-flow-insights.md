@@ -30,6 +30,8 @@ The following mail flow insights are available:
 
 - [Domain expiring soon insight](domain-expiry-notification-feature.md)
 
+- [Mailboxes exceeding receiving limits insight](mailboxes-exceeding-receiving-limits-insights.md)
+
 ## Permissions required to view and use mail flow insights
 
 To use the mail flow insights to take corrective action, you need to be a member of one of the following role groups:
