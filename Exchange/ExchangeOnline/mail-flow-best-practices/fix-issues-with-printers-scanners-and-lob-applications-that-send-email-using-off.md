@@ -160,11 +160,11 @@ There are a few things you should check:
 
       - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
 
-      - Browse to **Azure Active Directory** > **Security** > **Conditional Access**
+      - Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
 
-      - In the policy that blocks Legacy Authentication, exclude the mailbox being used under **Users and Groups** > **Exclude**
+      - In the policy that blocks Legacy Authentication, exclude the mailbox being used under **Users and Groups** > **Exclude**.
 
-      - Select **Save**
+      - Select **Save**.
 
 ### Error: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
