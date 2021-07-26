@@ -5,11 +5,11 @@ ms.topic: article
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
-ms.reviewer: 
+ms.reviewer:
 f1.keywords:
 - NOCSH
 title: Journaling in Exchange Online
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -38,23 +38,14 @@ Although journaling may not be required by a specific regulation, compliance may
 The following list shows some of the more well-known U.S. and international regulations where journaling may help form part of your compliance strategies:
 
 - Sarbanes-Oxley Act of 2002 (SOX)
-
 - Security Exchange Commission Rule 17a-4 (SEC Rule 17 A-4)
-
 - National Association of Securities Dealers 3010 & 3110 (NASD 3010 & 3110)
-
 - Gramm-Leach-Bliley Act (Financial Modernization Act)
-
 - Financial Institution Privacy Protection Act of 2001
-
 - Financial Institution Privacy Protection Act of 2003
-
 - Health Insurance Portability and Accountability Act of 1996 (HIPAA)
-
 - Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act of 2001 (Patriot Act)
-
 - European Union Data Protection Directive (EUDPD)
-
 - Japan's Personal Information Protection Act
 
 ## Journal rules
@@ -62,9 +53,7 @@ The following list shows some of the more well-known U.S. and international regu
 The following are key aspects of journal rules:
 
 - **Journal rule scope**: Defines which messages are journaled by the Journaling agent.
-
 - **Journal recipient**: Specifies the SMTP address of the recipient you want to journal.
-
 - **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
 
 In Exchange Online, there's a limit to the number of journal rules that you can create. For details, see [Journal, Transport, and Inbox rule limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits).
@@ -74,9 +63,7 @@ In Exchange Online, there's a limit to the number of journal rules that you can 
 You can use a journal rule to journal only internal messages, only external messages, or both. The following list describes these scopes:
 
 - **Internal messages only**: Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization.
-
 - **External messages only**: Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization.
-
 - **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
 
 ### Journal recipient
@@ -86,7 +73,7 @@ You can implement targeted journaling rules by specifying the SMTP address of th
 All messages sent to or from the journaling recipients you specify in a journaling rule are journaled. If you specify a distribution group as the journaling recipient, all messages sent to or from members of the distribution group are journaled. If you don't specify a journaling recipient, all messages sent to or from recipients that match the journal rule scope are journaled.
 
 > [!NOTE]
-> The SMTP address specified for the journaling recipient cannot contain a wildcard character. For example, the SMTP address cannot be listed as `*@contoso.com`. 
+> The SMTP address specified for the journaling recipient cannot contain a wildcard character. For example, the SMTP address cannot be listed as `*@contoso.com`.
 
 ### Journaling mailbox
 
@@ -133,21 +120,18 @@ When implementing journaling, you must consider journaling reports and IRM-prote
 When a message matches the scope of multiple journal rules, all matching rules will be triggered.
 
 - If the matching rules are configured with different journal mailboxes, a journal report will be sent to each journal mailbox.
-
 - If the matching rules are all configured with the same journal mailbox, only one journal report is sent to the journal mailbox.
 
 Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
 
 ### Duplicate journal report scenarios in a hybrid Exchange environment
+
 In a hybrid Exchange environment, the following scenarios are known to result in duplicate journal reports and these are considered by design:
 
 1. **Cloud to cloud**: Any situations where email is forked will lead to duplicate journaling, such as:
-
-- Transport chipping (too many recipients on the message).
-
-- Internal and external recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
-
-- Any future needs where the cloud needs to fork the message.
+   - Transport chipping (too many recipients on the message).
+   - Internal and external recipients exist on the same message – two forks are created for spam/phishing purposes (one in which internal recipients exist, and one in which external recipients exist).
+   - Any future needs where the cloud needs to fork the message.
 
 2. **On-premises to cloud**: Once when on-premises journals and once when the cloud journals. This can be prevented by implementing the PreventDupJournaling flight in a tenant.
 
