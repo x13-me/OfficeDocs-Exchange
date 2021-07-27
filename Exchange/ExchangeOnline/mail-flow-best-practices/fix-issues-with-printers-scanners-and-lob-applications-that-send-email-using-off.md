@@ -126,6 +126,12 @@ There are a few things you should check:
 
 1. Enable Client SMTP submission on the licensed mailbox being used:
 
+   Run the following Powershell command-
+
+      Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $false
+   
+   Or
+
       - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
 
       - Go to the Mail tab.
