@@ -101,4 +101,4 @@ The following features aren't support for on-premises mailboxes using basic auth
 
 The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
 
-- Calendar attachments
+- Calendar attachment
