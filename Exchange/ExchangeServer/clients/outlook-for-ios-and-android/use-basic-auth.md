@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: serdarsoysal
+ms.author: serdars
 title: Using Basic authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
