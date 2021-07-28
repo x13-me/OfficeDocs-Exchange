@@ -37,7 +37,7 @@ You will sync your mail-enabled public folders by using the following scripts, w
 - `SyncMailPublicFolders.strings.psd1`: This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script.
 
 > [!NOTE]
-> The `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an EXO account that supports basic authentication.
+> `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an Exchange Online account that supports basic authentication.
 
 
 When you complete this procedure, your on-premises and Microsoft 365 or Office 365 users will be able to access the same on-premises public folder infrastructure.
