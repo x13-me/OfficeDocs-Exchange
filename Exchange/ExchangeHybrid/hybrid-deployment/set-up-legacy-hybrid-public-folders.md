@@ -156,7 +156,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.  
 
-You can use following command to identify such mailboxes:
+You can use the following command to identify such mailboxes:
 
 ```PowerShell
 Get-Mailbox |?{$_.IsDirSynced -eq $false}
