@@ -103,7 +103,7 @@ Get-Mailbox |?{$_.IsDirSynced -eq $false}
 
 These users will keep getting credential prompts after public folder mailbox access is configured. Use one of the following solutions for such users before enabling public folder access:
 
-1) Link the EXO only mailboxes, listed in step above, to On-Premises users by using the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
+1. Link the Exchange Online only mailboxes listed in the previous step to on-premises users as described in [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
 
 2) Use steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users at On-Premises.
 
