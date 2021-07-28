@@ -25,7 +25,7 @@ description: "Summary: Use the steps in this article to synchronize public folde
 
 In a hybrid deployment, your users can be in Exchange Online , on-premises, or both, and your public folders are either in Exchange Online or on-premises. Public folders can reside in only one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
 
-This topic describes how to configure EXO mailboxes to access public folders at On-Premises. The topic also describes how to synchronize mail-enabled public folders if your users are in Microsoft 365 or Office 365 and your Exchange Server 2010 SP3 public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or modern on-premises public folders.
+This topic describes how to configure EXO mailboxes to access on-premises public folders. The topic also describes how to synchronize mail-enabled public folders if your users are in Microsoft 365 or Office 365 and your Exchange Server 2010 SP3 public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or modern on-premises public folders.
 
 > [!NOTE]
 > This topic refers to the Exchange Server 2010 SP3 servers as the legacy Exchange server.
