@@ -107,7 +107,6 @@ These users will keep getting credential prompts after public folder mailbox acc
 
 2. Use the steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users on-premises.
 
-
 The final step in this process is to configure the Exchange Online organization and to allow access to the Exchange Server public folders.
 
 Enable the Exchange Online organization to access the on-premises public folders. You will point to all of your on-premises public folder mailboxes.
