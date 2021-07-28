@@ -166,7 +166,7 @@ These users will keep getting credential prompts after public folder mailbox acc
 
 1. Link the Exchange Online mailboxes only listed in the previous step to on-premises users as described in [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
 
-2) Use steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users at On-Premises.
+2. Use the steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users on-premises.
 
 The final step in this procedure is to configure the Exchange Online organization and to allow access to the legacy on-premises public folders.
 
