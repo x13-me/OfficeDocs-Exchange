@@ -154,7 +154,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 
 ## Step 5: Configure Exchange Online users to access on-premises public folders
 
-A Microsoft 365 or Office 365 mailbox who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.  
+A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.  
 
 You can use following command to identify such mailboxes:
 
