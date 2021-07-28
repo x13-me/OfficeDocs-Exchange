@@ -120,7 +120,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 5. Repeat the preceding steps for every public folder server in your organization.
 
-## Step 3: Download the script to synchronize mail enabled public folders
+## Step 3: Download the script to synchronize mail-enabled public folders
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
