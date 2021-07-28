@@ -146,7 +146,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
    Where `Credential` is your Microsoft 365 or Office 365 user name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
 
 > [!NOTE]
-> The `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an EXO account that supports basic authentication.
+> `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an Exchange Online account that supports basic authentication.
 
 
 > [!NOTE]
