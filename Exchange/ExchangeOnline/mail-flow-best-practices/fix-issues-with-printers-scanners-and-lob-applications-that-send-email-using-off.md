@@ -162,7 +162,7 @@ There are a few things you should check:
 
       - Select **Save**.
 
-4. Exclude the user from a [Conditional Access policy](active-directory/conditional-access/overview) that [blocks Legacy Authentication](azure/active-directory/conditional-access/block-legacy-authentication):
+4. Exclude the user from a [Conditional Access policy](/active-directory/conditional-access/overview) that [blocks Legacy Authentication](/azure/active-directory/conditional-access/block-legacy-authentication):
 
       - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
 
