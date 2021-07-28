@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: serdarsoysal
+ms.author: serdars
 title: Using Basic authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -58,7 +58,7 @@ By default, Microsoft engineers have zero standing administrative privileges and
 [ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Microsoft 365 and Office 365 have implemented.
 
 ## Connectivity Requirements
-Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are included on your allow list:
+Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are included on your allowlist:
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Microsoft 365 and Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges).
 
@@ -76,8 +76,6 @@ The following features aren't support for on-premises mailboxes using basic auth
 - Shared and delegate mailbox data access
 
 - Cortana Time to Leave / Travel Time
-
-- Calendar attachments
 
 - Rich meeting locations
 
@@ -100,3 +98,7 @@ The following features aren't support for on-premises mailboxes using basic auth
 - Discover Feed
 
 - Privacy settings
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
+
+- Calendar attachments

@@ -121,7 +121,7 @@ This example creates a new mailbox export request with these settings:
 - **Priority**: `High`
 
 ```PowerShell
-New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority Hight
+New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority High
 ```
 
 For detailed syntax and parameter information, see [New-MailboxExportRequest](/powershell/module/exchange/new-mailboxexportrequest).

@@ -104,7 +104,7 @@ If you compare Contoso's existing organization configuration and the hybrid depl
 
 To configure a hybrid deployment for a multi-forest organization, you'll need to complete the basic steps below:
 
-1. Verify that you've met the hybrid deployment prerequisites. See the prerequisites listed earlier in this topic and [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). Typically, only one forest needs an Active Directory synchronization server installed. A server with Azure Active Directory Connect (Azure AD Connect) with Active Directory Federation Services (AD FS) must be installed in each forest to enable single sign-on if a two-way forest trust isn't configured between the forests.
+1. Verify that you've met the hybrid deployment prerequisites. See the prerequisites listed earlier in this topic and [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). Typically, only one forest needs an Active Directory synchronization server installed. For more information, see [Topologies for Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies).
 
 2. Obtain a third-party CA certificate for each Active Directory forest that meets the requirements listed previously in this topic.
 
