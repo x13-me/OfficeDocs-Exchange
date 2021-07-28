@@ -27,7 +27,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 ## What do you need to know before you begin?
 
-- Estimated time to complete: 60 minutes
+- Estimated time to complete: 180 minutes
 
 - The account that you'll use to install the CU requires membership in the Exchange Organization Management role group. If the CU requires Active Directory schema updates or domain preparation, the account will likely require additional permissions. For more information, see [Prepare Active Directory and domains for Exchange Server](prepare-ad-and-domains.md).
 
