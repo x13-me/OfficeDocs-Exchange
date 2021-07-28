@@ -128,7 +128,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
    - `SyncMailPublicFolders.strings.psd1`
 
-2. Save the files to Exchange On-Prmises server on which you'll be running the script. For example, C:\PFScripts.
+2. Save the files to the Exchange on-premises server on which you'll be running the script. For example, C:\PFScripts.
 
 ## Step 4: Configure directory synchronization
 
