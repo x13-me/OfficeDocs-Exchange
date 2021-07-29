@@ -72,6 +72,9 @@ How multiple rules with the same condition are evaluated, and how a rule with mu
 
 You can test how a specific client connection would be affected by Client Access Rules (which rules would match and therefore affect the connection). For more information, see [Use Exchange Online PowerShell to test Client Access Rules](procedures-for-client-access-rules.md#use-exchange-online-powershell-to-test-client-access-rules).
 
+> [!NOTE]
+> Client Access Rules are evaluated after authentication and cannot be used to block raw connection or authentication attempts..
+
 ### Important notes
 
 #### Client connections from your internal network
