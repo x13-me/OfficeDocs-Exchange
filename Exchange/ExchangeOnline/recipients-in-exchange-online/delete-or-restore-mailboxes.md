@@ -96,7 +96,7 @@ Remove-Mailbox -Identity "Walter Harp"
 When you delete a mailbox, Exchange Online retains the mailbox and all its contents until the deleted mailbox retention period expires, which is 30 days. After 30 days, the mailbox is permanently deleted and can't be recovered. The method for restoring a mailbox depends on whether the mailbox was deleted by deleting the user account or removing the Exchange Online license.
 
 > [!NOTE]
-> It is strongly recommended to perform restore from the same source (Azure AD or EXO) from where the User/Mailbox is deleted. Failing to do so result in failed restore operation.
+> We strongly recommend restoring the mailbox from the same source (Azure AD or Exchange Online) from where the user or mailbox was deleted. Failing to do so will result in a failed restore operation.
 
 ### Use the Microsoft 365 admin center to restore a user account
 
