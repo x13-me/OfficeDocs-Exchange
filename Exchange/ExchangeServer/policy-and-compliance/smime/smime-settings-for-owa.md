@@ -22,7 +22,7 @@ S/MIME in Outlook on the web in Exchange 2016 is only supported in Internet Expl
 ::: moniker-end
 
 ::: moniker range="exchserver-2019"
-S/MIME in Outlook on the web in Exchange 2019 is supported in Internet Explorer, Edge (non-Chromium version), and Google Chrome.
+S/MIME in Outlook on the web in Exchange 2019 is supported in Internet Explorer, Edge, Edge with Chromium, and Google Chrome.
 
 ## Considerations for Chrome
 
