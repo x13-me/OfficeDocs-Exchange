@@ -60,3 +60,6 @@ How you resolve this issue depends on whether you want to save the search result
    ```PowerShell
    Add-MailboxPermission "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -User "Discovery Management" -AccessRights FullAccess -InheritanceType all
    ```
+5. Run the following command to reset mailbox settings.
+   ```PowerShell
+   Set-Mailbox -Identity "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -HiddenFromAddressListsEnabled $true -ProhibitSendQuota 50GB -ProhibitSendReceiveQuota 50GB -RecoverableItemsQuota 50GB
