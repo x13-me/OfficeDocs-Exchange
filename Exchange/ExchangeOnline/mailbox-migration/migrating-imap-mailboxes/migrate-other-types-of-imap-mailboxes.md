@@ -205,9 +205,7 @@ Here's an example of a migration file that contains the **UserRoot** attribute:
 
 ![A sample migration file for Courier IMAP](../media/0f837f06-1ba9-4065-ab65-9af0d10ba283.png)
 
-To continue the required steps using the new Exchange Admin Center, click [Step 3: Create a migration batch to migrate your mailboxes and connect Microsoft 365 or Office 365 to your email system (new EAC)](#step-3-create-a-migration-batch-to-migrate-your-mailboxes-and-connect-microsoft-365-or-office-365-to-your-email-system-new-eac), otherwise if you want to use the classic Exchange Admin Center, continue reading.
-
-### Step 3: Connect Microsoft 365 or Office 365 to your email system (classic EAC)
+### Step 3: Connect Microsoft 365 or Office 365 to your email system (classic EAC only)
 
 To migrate email successfully, Microsoft 365 or Office 365 needs to connect and communicate with the source email system. To do this, Microsoft 365 or Office 365 uses a migration endpoint. This is a technical term that describes the settings that are used to create the connection. You create the migration endpoint in this task.
 
@@ -235,7 +233,9 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 8. Click **New** to create the migration endpoint.
 
-### Step 4: Create a migration batch and migrate your mailboxes (classic EAC)
+### Step 4: Create a migration batch and migrate your mailboxes
+
+#### Using classic EAC
 
 You use a migration batch to migrate groups of email to Microsoft 365 or Office 365 mailboxes at the same time. The batch consists of the mailboxes that you listed in the migration file in the previous task.
 
@@ -295,13 +295,13 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
       ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
-#### Verify that this task worked (classic EAC)
+##### Verify that this task worked (classic EAC)
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the **Status** is **Synced**.
 
     If this step task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
-### Step 3: Create a migration batch to migrate your mailboxes and connect Microsoft 365 or Office 365 to your email system (new EAC)
+#### Using new EAC
 
 To migrate email successfully, Microsoft 365 or Office 365 needs to connect and communicate with the source email system. To do this, Microsoft 365 or Office 365 uses a migration endpoint. This is a technical term that describes the settings that are used to create the connection. You create the migration endpoint and migration batch in this task.
 
@@ -339,7 +339,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 	
 15.	In the **Schedule batch migration** page, select the desired options for reporting and start and end migration batch modes and then click **Save** , and then click **Done**.
 
-### Step 4: Verify that this task worked (new EAC)
+##### Verify that this task worked (new EAC)
 
 - In the new Exchange admin center, navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under Migration details, click View details. For more information, see [Migration users status report](../migration-users-status-report.md).
 
@@ -393,7 +393,8 @@ During the last task, you changed the MX record. Now it's time to verify that al
 
 When you delete the migration batch, the migration service cleans up any records related to the migration batch and removes it from the migration dashboard.
 
-#### Delete a migration batch (classic EAC)
+#### Delete a migration batch
+##### Using classic EAC
 
 1. In the [Exchange admin center](../../exchange-admin-center.md), go to **Recipients** \> **Migration**.
 
@@ -401,17 +402,18 @@ When you delete the migration batch, the migration service cleans up any records
 
    ![Delete a migration batch](../media/354afa40-6e2d-4c75-94f5-a516e59ca87b.png)
 
-#### Confirm that the deletion worked (classic EAC)
-
-- In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the migration batch is no longer listed on the migration dashboard.
-
-#### Delete a migration batch (new EAC)
+##### Using new EAC
 
 1. In the [new Exchange admin center](../../exchange-admin-center.md), go to **Migration** \> **Batch**.
 
 2. On the migration dashboard, select the batch, and then click **Delete**.
 
-#### Confirm that the deletion worked (new EAC)
+#### Confirm that the deletion worked
+##### Using classic EAC
+
+- In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the migration batch is no longer listed on the migration dashboard.
+
+##### Using new EAC
 
 - In the new Exchange admin center, go to **Migration** \> **Batch**. Verify that the migration batch is no longer listed on the migration dashboard.
 
