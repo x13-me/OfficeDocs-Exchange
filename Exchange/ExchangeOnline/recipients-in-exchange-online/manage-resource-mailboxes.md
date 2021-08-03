@@ -196,7 +196,7 @@ Use the **General** section to view or change basic information about the resour
 
 - **\* Room name**: This name appears in the resource mailbox list in the Classic Exchange admin center and in your organization's address book. It can't exceed 64 characters if you change it.
 
-- **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#email-address) section.
+- **\* Email address**: This read-only box displays the email address for the room mailbox. You can change it in the **Email Address** section.
 
 - **Capacity**: Use this box to enter the maximum number of people who can safely occupy the room.
 
@@ -413,7 +413,7 @@ Use the **General** section to view or change basic information about the resour
 
 - **\* Equipment name**: This name appears in the resource mailbox list in the Classic Exchange admin center and in your organization's address book. It can't exceed 64 characters if you change it.
 
-- **\* Email address**: This read-only box displays the email address for the equipment mailbox. You can change it in the [Email Address](#email-address) section.
+- **\* Email address**: This read-only box displays the email address for the equipment mailbox. You can change it in the **Email Address** section.
 
 - **Capacity**: Use this box to enter the maximum number of people who can use this resource, if applicable, For example, if the equipment mailbox corresponds to a compact car, you could enter **4**.
 
