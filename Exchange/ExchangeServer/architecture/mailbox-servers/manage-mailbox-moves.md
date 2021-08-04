@@ -158,7 +158,7 @@ New-MoveRequest -Identity agruber@contoso.com -TargetDatabase "MBX 02" -ArchiveT
 This example uses similar settings, but only moves Angela's primary mailbox.
 
 ```PowerShell
-New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly-TargetDatabase "MBX 02" -BadItemLimit 10
+New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly -TargetDatabase "MBX 02" -BadItemLimit 10
 ```
 
 This example uses similar settings, but only moves Angela's archive mailbox.
