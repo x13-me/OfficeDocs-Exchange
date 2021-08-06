@@ -10,7 +10,7 @@ ms.custom:
 ms.author: jhendr
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
 ms.reviewer:
-title: Manage mail users
+title: Manage mail users in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -217,8 +217,8 @@ MailTips can include HTML tags, but scripts aren't allowed. The length of a cust
 
 When you bulk edit mail users in the EAC, you can change the following types of properties:
 
-- [Contact information](#contact-information)
-- [Organization](#organization)
+- Contact information
+- Organization
 
 1. In the Classic EAC, go to **Recipients** \> **Contacts**.
 

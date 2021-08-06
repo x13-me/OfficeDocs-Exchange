@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
 ms.reviewer:
-title: Recipients
+title: Recipients in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Recipients
+# Recipients in Exchange Server
 
 The people and resources that send and receive messages are the core of any messaging and collaboration system. In an Exchange organization, these people and resources are referred to as *recipients*. A recipient is any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages.
 
