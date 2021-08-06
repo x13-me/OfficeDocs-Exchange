@@ -63,7 +63,7 @@ When directory synchronization is enabled for a tenant and a user is synchronize
 
 ## Can third-party management tools be used?
 
-The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. The Exchange Management Console, the Exchange admin center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects. If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
+The question of whether a third-party management tool or ADSIEDIT can be used is often asked. The answer is you can use them, but they are not supported. **The Exchange Management Console, the Exchange admin center (EAC), and the Exchange Management Shell are the only supported tools that are available to manage Exchange recipients and objects.** If you decide to use third-party management tools, it would be at your own risk. Third-party management tools often work fine, but Microsoft does not validate these tools.
 
 ## Common scenarios
 
