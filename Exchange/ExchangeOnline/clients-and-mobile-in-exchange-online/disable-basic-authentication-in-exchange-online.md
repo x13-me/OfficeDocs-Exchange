@@ -24,7 +24,7 @@ title: Disable Basic authentication in Exchange Online
 > [!NOTE]
 > If you've enabled _security defaults_ in your organization, Basic authentication is already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
 > 
-> If you've reached this page becuase Basic authentication isn't working in your tenant, and you haven't set up security defaults or authentication policies, then we might have disabled Basic authentication in your tenant as part of our wider program to improve security accross Exchange Online. Please check your Message Center for any posts referring to Basic Authentication, and read [Basic Authentication and Exchange Online](https://aka.ms/EXOBasicAuthLatest) for the latest announcements concerning Basic authentication.
+> If you've reached this page because Basic authentication isn't working in your tenant, and you haven't set up security defaults or authentication policies, then we might have disabled Basic authentication in your tenant as part of our wider program to improve security across Exchange Online. Check your Message Center for any posts referring to Basic authentication, and read [Basic Authentication and Exchange Online](https://aka.ms/EXOBasicAuthLatest) for the latest announcements concerning Basic authentication.
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
 
