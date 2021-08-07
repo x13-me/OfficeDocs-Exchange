@@ -36,22 +36,19 @@ Dynamic distribution groups are distribution groups whose membership is based on
 ## Use Exchange Online PowerShell to preview the list of members of a dynamic distribution group
 <a name="Shell"> </a>
 
-This example returns the list of members for the dynamic distribution group named Full Time Employees. The first command stores the dynamic distribution group object in the variable `$FTE`. The second command uses the **Get-Recipient** cmdlet to list the recipients that match the criteria defined for the dynamic distribution group.
+This example returns the list of members for the dynamic distribution group named Full Time Employees.
 
 ```PowerShell
-$FTE = Get-DynamicDistributionGroup "Full Time Employees"
-```
-
-```PowerShell
-Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+Get-DynamicDistributionGroupMember -Identity "Full Time Employees"
 ```
 
 This example displays the list of users and email addresses (more than 1000 mailboxes).
 
 ```PowerShell
-Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | Format-Table Name,Primary*
+Get-DynamicDistributionGroupMember -Identity "Full Time Employees" -ResultSize Unlimited | Format-Table Name,Primary*
 ```
-For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](/powershell/module/exchange/get-dynamicdistributiongroup) and [Get-Recipient](/powershell/module/exchange/get-recipient).
+
+<!--- For detailed syntax and parameter information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember). --->
 
 > [!NOTE]
 > You can't view members of a dynamic distribution group by using the EAC.
