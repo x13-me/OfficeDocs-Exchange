@@ -20,7 +20,9 @@ manager: serdars
 
 # View members of a dynamic distribution group in Exchange Online
 
-Dynamic distribution groups are distribution groups whose membership is based on specific recipient filters rather than a defined set of recipients. Microsoft Exchange provides precanned filters to make it easier to create recipient filters for dynamic distribution groups. A precanned filter is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can specify the recipient types you want to include in a dynamic distribution group. Additionally, you can also specify a list of conditions that the recipients must meet. You can use Exchange Online PowerShell to preview the list of recipients for a dynamic distribution group that uses precanned filters.
+Dynamic distribution groups are distribution groups whose membership is periodically calculated based on specific recipient properties that are used as filters (precanned filters for custom filters). For more information, see [Manage dynamic distribution groups](manage-dynamic-distribution-groups.md).
+
+You can use Exchange Online PowerShell to view the list of recipients for a dynamic distribution group. You can't view members of a dynamic distribution in the Exchange admin center (EAC).
 
 ## What do you need to know before you begin?
 
@@ -48,13 +50,8 @@ This example displays the list of users and email addresses for the same group i
 Get-DynamicDistributionGroupMember -Identity "Full Time Employees" -ResultSize Unlimited | Format-Table Name,Primary*
 ```
 
-<!--- For detailed syntax and parameter information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember). --->
-
-> [!NOTE]
-> You can't view members of a dynamic distribution group by using the EAC.
+For detailed syntax and parameter information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember).
 
 ## How do you know this worked?
 
-To verify that you've successfully viewed the members of a dynamic distribution group, do the following:
-
-- In Exchange Online PowerShell, a list of members is returned after you run the previous command to preview a list of dynamic distribution group members. For example, if you created a new user mailbox with properties that match the recipient filter for the dynamic distribution group, this new user should be displayed in the list of group members.
+To verify that you've successfully viewed the members of a dynamic distribution group, run **Get-DynamicDistributionGroupMember** to view the list of group members. For example, if you created a new user mailbox with properties that match the recipient filter for the dynamic distribution group, this new mailbox should be displayed in the list of group members.
