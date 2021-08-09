@@ -42,7 +42,7 @@ This example returns the list of members for the dynamic distribution group name
 Get-DynamicDistributionGroupMember -Identity "Full Time Employees"
 ```
 
-This example displays the list of users and email addresses for the same group if it has more than 1000 mailboxes.
+This example displays the list of users and email addresses for the same group if it has more than 1,000 mailboxes.
 
 ```PowerShell
 Get-DynamicDistributionGroupMember -Identity "Full Time Employees" -ResultSize Unlimited | Format-Table Name,Primary*
