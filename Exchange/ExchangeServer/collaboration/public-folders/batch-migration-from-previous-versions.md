@@ -371,7 +371,7 @@ After you finalize the public folder migration, you should run the following tes
    ```
 
    > [!IMPORTANT]
-   > Don't use the _IsExcludedFromServingHierarchy_ parameter after initial migration validation is complete as this parameter is used by the automated storage management service for Exchange.
+   > Don't use the _IsExcludedFromServingHierarchy_ parameter after initial migration validation is complete as this parameter is used by the automated load-balancing service for Exchange.
 
 4. On the Exchange 2010 server, run the following command to indicate that the public folder migration is complete:
 
