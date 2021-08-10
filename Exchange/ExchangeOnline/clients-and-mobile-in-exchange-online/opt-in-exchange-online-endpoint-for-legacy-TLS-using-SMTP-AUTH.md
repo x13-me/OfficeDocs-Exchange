@@ -1,8 +1,8 @@
 ---
 localization_priority: Normal
-description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
+description: 'Learn how to opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH.'
 ms.topic: overview
-author: msdmaguire
+author: joannehendrickson
 ms.author: jhendr
 ms.reviewer: 
 title: "Opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH"
