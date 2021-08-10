@@ -25,6 +25,7 @@ In 2022, we plan to completely disable the older TLS versions to secure our cust
 ## Configuring the new endpoint
 
 If you have SMTP AUTH clients that only support older TLS versions, they need to be configured to use the new endpoint:
+
 - smtp-legacy.office365.com 
  
 To use any of these endpoints, admins need to enable the following setting:
