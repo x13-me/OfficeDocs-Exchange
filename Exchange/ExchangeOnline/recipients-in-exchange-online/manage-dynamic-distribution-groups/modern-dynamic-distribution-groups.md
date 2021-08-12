@@ -59,7 +59,7 @@ This PowerShell cmdlet returns the calculated list of members stored on the Dyna
 To learn more, see: [Get-DynamicDistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/get-dynamicdistributiongroupmember?view=exchange-ps#inputs). 
 
 >[!Note]
-> Do not follow the old procedures for viewing the members of a Dynamic Distribution Group at <View members of a dynamic distribution group | Microsoft Docs>. The instructions found in that article only evaluates the users in your organization that satisfy the filters specified in your Dynamic Distribution Group at that time.  It does not return the calculated list of members stored on the group object. 
+>Do not use the [old procedure](https://docs.microsoft.com/en-us/exchange/recipients/dynamic-distribution-groups/view-dynamic-distribution-group-members?view=exchserver-2019) for viewing members of a DDG as it only evaluates the users in your organization that satisfy the filters specified in your DDG at that time. It doesn't return the calculated list of members stored on the group object. 
 
 ## How to refresh a DDG’s membership list 
 
