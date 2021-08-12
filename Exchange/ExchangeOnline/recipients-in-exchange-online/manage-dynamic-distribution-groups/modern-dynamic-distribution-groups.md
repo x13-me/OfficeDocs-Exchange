@@ -29,7 +29,7 @@ manager: serdars
 Dynamic Distribution Groups (DDGs) are being modernized to bring a more reliable, predictable, and better performing experience. This change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message. 
 
 **What has changed?**
-The membership list is stored for each DDG and updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability. 
+The membership list is now stored for each DDG and updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability. 
 
 
 ## DDG behavior changes
