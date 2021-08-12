@@ -16,6 +16,9 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+robots: 
+- NOINDEX
+- NOFOLLOW
 manager: serdars
 
 ---
