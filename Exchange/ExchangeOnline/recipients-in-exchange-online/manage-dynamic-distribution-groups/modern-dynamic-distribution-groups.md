@@ -5,15 +5,9 @@ ms.topic: article
 author: JoanneHendrickson
 f1.keywords:
 - CSH
-ms.custom:
-- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
 ms.author: jhendr
-ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer: 
 title: Manage dynamic distribution group
-ms.collection: 
-- exchange-online
-- M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
 robots: 
