@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: None
 description: Learn about the changes to Modern Dynamic distribution groups.
 ms.topic: article
 author: JoanneHendrickson
