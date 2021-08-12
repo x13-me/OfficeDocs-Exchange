@@ -72,5 +72,5 @@ Set-DynamicDistributionGroup -Identity <DynamicDistributionGroupIdentity> -Force
  
 ## Support 
 
-If you further assistance, contact the [Modern DDG Support team](modernddgsupport@service.microsoft.com).
+If you need further assistance, contact the [Modern DDG Support team](modernddgsupport@service.microsoft.com).
 
