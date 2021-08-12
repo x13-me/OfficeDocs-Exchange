@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Create and manage public folders with one or more of these articles.'
 ms.topic: hub-page
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 ms.reviewer:
 title: Public folder procedures

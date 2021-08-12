@@ -1,7 +1,7 @@
 ---
 title: 'Faxing procedures: Exchange 2013 Help'
 TOCTitle: Faxing procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

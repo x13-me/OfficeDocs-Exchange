@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.'
 ms.topic: get-started-article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
 ms.reviewer: 
 title: Configure instant messaging integration with Outlook on the web in Exchange

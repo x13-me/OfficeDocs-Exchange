@@ -1,7 +1,7 @@
 ---
 title: 'Manage policy tips: Exchange 2013 Help'
 TOCTitle: Manage policy tips
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

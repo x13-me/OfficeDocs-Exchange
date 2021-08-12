@@ -6,7 +6,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.ForestLevelNotWin2003Native
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 45f45976-62ac-4b6c-889a-ebd449402009
 ms.reviewer: 
 title: Active Directory functional level isn't Windows Server 2003 or later [ForestLevelNotWin2003Native]

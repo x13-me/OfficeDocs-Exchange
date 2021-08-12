@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.mailbox
 ms:contentKeyID: 46628796
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

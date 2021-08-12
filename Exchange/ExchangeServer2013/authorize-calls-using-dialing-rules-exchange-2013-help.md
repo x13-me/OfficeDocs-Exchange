@@ -1,7 +1,7 @@
 ---
 title: 'Authorize calls using dialing rules: Exchange 2013 Help'
 TOCTitle: Authorize calls using dialing rules
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

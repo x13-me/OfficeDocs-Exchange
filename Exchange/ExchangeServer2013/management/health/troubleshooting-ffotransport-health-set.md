@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ffotransport(v=EX
 ms:contentKeyID: 49720881
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -1,7 +1,7 @@
 ---
 title: 'Create or remove an In-Place Hold: Exchange 2013 Help'
 TOCTitle: Create or remove an In-Place Hold
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

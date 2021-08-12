@@ -1,7 +1,7 @@
 ---
 description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests, Microsoft 365, or Office 365."
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about the clients and client access methods you can use to access your Exchange Server 2016 or Exchange Server 2019 mailbox, and the topics available to assist you.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
 ms.reviewer: 
 title: Clients and mobile in Exchange Server

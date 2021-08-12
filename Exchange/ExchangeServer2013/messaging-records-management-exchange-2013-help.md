@@ -1,7 +1,7 @@
 ---
 title: 'Messaging records management: Exchange 2013 Help'
 TOCTitle: Messaging records management
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

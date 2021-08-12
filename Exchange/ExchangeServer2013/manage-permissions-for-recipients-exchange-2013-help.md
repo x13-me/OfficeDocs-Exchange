@@ -1,7 +1,7 @@
 ---
 title: 'Manage permissions for recipients: Exchange 2013 Help'
 TOCTitle: Manage permissions for recipients
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

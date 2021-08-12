@@ -1,7 +1,7 @@
 ---
 title: 'Setting up Outlook Voice Access: Exchange 2013 Help'
 TOCTitle: Setting up Outlook Voice Access
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

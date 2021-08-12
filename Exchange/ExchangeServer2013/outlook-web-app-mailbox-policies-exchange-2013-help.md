@@ -1,7 +1,7 @@
 ---
 title: 'Outlook Web App mailbox policies: Exchange 2013 Help'
 TOCTitle: Outlook Web App mailbox policies
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
