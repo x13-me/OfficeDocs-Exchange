@@ -35,18 +35,18 @@ Previously,  DDGs were resolved only upon being sent, and as a result the actual
 By storing the calculated list of members on the Dynamic Distribution Group object, we can deliver messages more quickly and our service will have greatly improved reliability. 
 
 
-## Changes to DDG Behavior 
+## Changes to DDG behavior 
 
 |Change|Old behavior|New behavior|
 |:-----|:-----|:-----|
-|DDG creation|users can use DDGs instantly after creation since the filters are evaluated at runtime |•	With DDG v2, they will have to wait up to 2 hours for the initial membership calculation and for the links to be materialized |
-|DDG modification |Currently, users can use DDGs with the new modified filters instantly after creation since the filters are evaluated at runtime |With DDG v2, they will have to wait up to 2 hours for the membership list to be recalculated and for the links to be updated |
-|DDG membership list “freshness” |In the past, since DDG members were calculated each time a message is sent to the group, the list of members will be up-to-date in real-time.|WWith DDG v2, our SLA for freshness is at 24 hours. Our servicelet that expands DDGs worldwide and updates the links runs daily every 24 hours on each DDG. |
+|Creation|DDGs could be used instantly after creation since the filters were evaluated at runtime. | DDGs are not available for use for up to 2 hours for the initial membership calculation and for the links to be materialized. |
+Modification |DDGs with new modified filters could be used instantly after creation since the filters are evaluated at runtime. |Users will have to wait up to 2 hours for the membership list to be recalculated and for the links to be updated.|
+|Membership list “freshness” |The list of members was up-to-date in real-time.|The list of members for each DDG is refreshed every 24 hours. The servicelet that expands DDGs worldwide and updates the links runs every 24 hours for each DDG. |
 
 >[!Important]
->There may be a period where the list of members is stale. For example, if a member has left a department that was used as a filter for the DDG, they may still receive mail from the DDG for the next 24 hours. 
-
-This is also reflected in usage of ETRs (Exchange Transport Rules), where the membership list used for these ETRs would have a freshness SLA of 24 hours, i.e., the membership list used may be stale during the 24-hour refresh period 
+>There may be a period where the list of members is stale. For example, if a member has left a department that was used as a filter for the DDG, they may still receive mail from the DDG for the next 24 hours before the list is refreshed. 
+>
+> **Exchange Transport Rules** (ETRs) are also impacted by this change.  As the membership list used for ETRs will also be refreshed every 24 hours, the membership list used may be stale during the refresh period .
  
 ## How to view members of a DDG
 
