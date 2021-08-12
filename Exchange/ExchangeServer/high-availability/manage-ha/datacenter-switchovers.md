@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms.reviewer:
 title: Datacenter switchovers

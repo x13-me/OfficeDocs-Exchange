@@ -1,7 +1,7 @@
 ---
 title: 'Manage user access to add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Manage user access to add-ins for Outlook
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

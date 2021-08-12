@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 monikerRange: exchserver-2016
-ms.author: dmaguire
+ms.author: serdars
 manager: serdars
 ms.topic: article
 author: msdmaguire

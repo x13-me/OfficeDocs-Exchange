@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange

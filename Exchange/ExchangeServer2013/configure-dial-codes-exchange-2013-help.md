@@ -1,7 +1,7 @@
 ---
 title: 'Configure dial codes: Exchange 2013 Help'
 TOCTitle: Configure dial codes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

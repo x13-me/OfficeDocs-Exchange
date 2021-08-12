@@ -1,7 +1,7 @@
 ---
 title: 'About Exchange documentation: Exchange 2013 Help'
 TOCTitle: About Exchange documentation
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

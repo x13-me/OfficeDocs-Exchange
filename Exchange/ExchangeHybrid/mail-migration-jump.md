@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft 365 and Office 365 mail migration advisor"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
