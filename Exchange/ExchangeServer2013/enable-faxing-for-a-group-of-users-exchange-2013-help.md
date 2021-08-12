@@ -1,7 +1,7 @@
 ---
 title: 'Enable faxing for a group of users: Exchange 2013 Help'
 TOCTitle: Enable faxing for a group of users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

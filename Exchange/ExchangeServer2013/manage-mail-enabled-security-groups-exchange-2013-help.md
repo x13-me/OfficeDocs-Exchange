@@ -1,7 +1,7 @@
 ---
 title: 'Manage mail-enabled security groups: Exchange 2013 Help'
 TOCTitle: Manage mail-enabled security groups
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

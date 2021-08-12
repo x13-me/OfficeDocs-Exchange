@@ -3,7 +3,7 @@ localization_priority: Normal
 description: An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms.reviewer:
 title: Changes to high availability and site resilience over previous versions of Exchange Server

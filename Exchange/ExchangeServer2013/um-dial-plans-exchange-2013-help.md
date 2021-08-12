@@ -1,7 +1,7 @@
 ---
 title: 'UM dial plans [ONP]: Exchange 2013 Help'
 TOCTitle: UM dial plans [ONP]
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

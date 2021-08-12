@@ -1,7 +1,7 @@
 ---
 title: 'Set a business location: Exchange 2013 Help'
 TOCTitle: Set a business location
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

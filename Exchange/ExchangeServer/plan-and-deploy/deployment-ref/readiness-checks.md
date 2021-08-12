@@ -3,7 +3,7 @@ localization_priority: Normal
 description: This article is the home of the Exchange Server 2016 and Exchange Server 2016 readiness checks that you might come across during the installation of Exchange 2016 or Exchange 2019
 ms.topic: hub-page
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 3b232ad3-01b1-4cdb-88c9-006bdc660f72
 ms.reviewer: 
 title: Exchange Server readiness checks

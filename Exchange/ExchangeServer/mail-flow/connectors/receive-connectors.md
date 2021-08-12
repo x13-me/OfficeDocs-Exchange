@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
 ms.reviewer: 
 title: Receive connectors

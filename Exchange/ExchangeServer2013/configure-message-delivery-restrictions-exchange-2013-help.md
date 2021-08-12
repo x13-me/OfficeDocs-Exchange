@@ -1,7 +1,7 @@
 ---
 title: 'Configure message delivery restrictions for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure message delivery restrictions for a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

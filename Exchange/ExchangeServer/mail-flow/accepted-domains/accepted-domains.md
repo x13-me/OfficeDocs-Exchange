@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about the three types of accepted domains in Exchange Server 2016 or Exchange Server 2019: authoritative, internal relay, and external relay.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
 ms.reviewer: 
 title: Accepted domains in Exchange, Exchange acceepted domains, exchange authoritative domain, Internal relay domain, Exchange external relay, Exchange external relay domain

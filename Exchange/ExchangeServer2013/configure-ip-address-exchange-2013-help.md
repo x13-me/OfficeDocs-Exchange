@@ -1,7 +1,7 @@
 ---
 title: 'Configure the IP address: Exchange 2013 Help'
 TOCTitle: Configure the IP address
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

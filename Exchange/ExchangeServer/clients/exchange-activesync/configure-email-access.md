@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.reviewer: 
 title: Configure mobile phones to access email

@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Configuration wizard"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

@@ -1,6 +1,6 @@
 ---
 title: "Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 audience: ITPro

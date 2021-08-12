@@ -1,7 +1,7 @@
 ---
 title: 'Update offline address book: Exchange 2013 Help'
 TOCTitle: Update offline address book
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

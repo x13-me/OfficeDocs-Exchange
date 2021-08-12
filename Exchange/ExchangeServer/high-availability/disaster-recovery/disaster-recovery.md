@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: An overview of Exchange features you can use to protect your data.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
 ms.reviewer:
 title: Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery

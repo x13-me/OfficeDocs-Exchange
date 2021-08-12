@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Overview of the Client Access services on Mailbox servers in Exchange Server'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
 ms.reviewer: 
 title: Client Access services

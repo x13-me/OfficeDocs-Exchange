@@ -1,7 +1,7 @@
 ---
 title: 'Developing DLP policy template files: Exchange 2013 Help'
 TOCTitle: Developing DLP policy template files
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

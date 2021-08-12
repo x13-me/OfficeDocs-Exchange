@@ -1,7 +1,7 @@
 ---
 title: 'Set up public folders in a new organization: Exchange 2013 Help'
 TOCTitle: Set up public folders in a new organization
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
