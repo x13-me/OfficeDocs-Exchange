@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer:
 title: In-Place eDiscovery in Exchange Server

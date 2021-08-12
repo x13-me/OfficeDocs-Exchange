@@ -1,7 +1,7 @@
 ---
 title: 'Allow voice mail users to forward calls: Exchange 2013 Help'
 TOCTitle: Allow voice mail users to forward calls
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

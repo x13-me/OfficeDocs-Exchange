@@ -1,7 +1,7 @@
 ---
 title: 'Change the settings of an address book policy: Exchange 2013 Help'
 TOCTitle: Change the settings of an address book policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

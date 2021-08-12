@@ -1,6 +1,6 @@
 ---
 title: "Exchange ActiveSync device settings with Exchange hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

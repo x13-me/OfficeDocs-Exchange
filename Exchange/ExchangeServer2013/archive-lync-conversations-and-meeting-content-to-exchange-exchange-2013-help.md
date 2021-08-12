@@ -1,7 +1,7 @@
 ---
 title: 'Archive Lync conversations and meeting content to Exchange: Exchange 2013 Help'
 TOCTitle: Archive Lync conversations and meeting content to Exchange
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

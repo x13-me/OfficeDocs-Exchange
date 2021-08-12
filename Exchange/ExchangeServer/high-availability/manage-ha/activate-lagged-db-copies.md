@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms.reviewer:
 title: Activate a lagged mailbox database copy

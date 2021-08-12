@@ -1,7 +1,7 @@
 ---
 title: 'Remove a SIP address: Exchange 2013 Help'
 TOCTitle: Remove a SIP address
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

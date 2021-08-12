@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.Win7RpcHttpAssocCookieGuidUpdateNotInstalled
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d6734ca6-e443-4367-9eb7-0308aa87b9ff
 ms.reviewer:
 title: KB2619234 update not installed [Win7RpcHttpAssocCookieGuidUpdateNotInstalled]

@@ -1,7 +1,7 @@
 ---
 title: 'Enable an informational announcement: Exchange 2013 Help'
 TOCTitle: Enable an informational announcement
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

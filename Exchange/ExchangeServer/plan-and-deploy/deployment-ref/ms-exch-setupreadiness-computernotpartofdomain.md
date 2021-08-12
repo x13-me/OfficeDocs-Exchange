@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.ComputerNotPartofDomain
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: feb08845-6d44-4760-9932-6eca22f35eec
 ms.reviewer: 
 title: The local computer isn't joined to an Active Directory domain [ComputerNotPartofDomain]

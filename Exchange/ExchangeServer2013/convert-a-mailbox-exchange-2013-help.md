@@ -1,7 +1,7 @@
 ---
 title: 'Convert a mailbox: Exchange 2013 Help'
 TOCTitle: Convert a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

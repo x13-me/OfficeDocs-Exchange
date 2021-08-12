@@ -1,6 +1,6 @@
 ---
 title: "Exchange Deployment Assistant release notes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

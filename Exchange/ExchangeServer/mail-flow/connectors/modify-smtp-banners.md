@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server 2016 or 2019.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
 ms.reviewer: 
 title: Modify the SMTP banner on Receive connectors

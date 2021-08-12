@@ -1,7 +1,7 @@
 ---
 description: 'Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
-ms.author: dmaguire
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
