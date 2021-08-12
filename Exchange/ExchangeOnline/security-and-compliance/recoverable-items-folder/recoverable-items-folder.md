@@ -116,7 +116,7 @@ The following table lists the contents of and actions that can be performed in t
 
 |State of single item recovery|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
 |---|---|---|---|---|
-|Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days.|
+|Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
 |Disabled|Yes|No|Yes|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
 |
 
