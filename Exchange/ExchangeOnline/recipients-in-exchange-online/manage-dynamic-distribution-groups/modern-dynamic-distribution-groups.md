@@ -36,8 +36,8 @@ The membership list is now stored for each DDG and updated once every 24 hours. 
 
 |Area|Old behavior|New behavior|
 |:-----|:-----|:-----|
-|Creation|DDGs could be used immediately after creation since the filters were evaluated at runtime. |Users have to wait up to 2 hours for the initial membership list to be calculated |
-Modification |DDGs could be used immeidately after any changes were made|Users have to wait up to 2 hours for the membership list to be recalculated and links updated.|
+|Creation|DDGs could be used immediately after being created|Users have to wait up to 2 hours for the initial membership list to be calculated |
+Modification |DDGs could be used immediately after any changes were made|Users have to wait up to 2 hours for the membership list to be recalculated and links updated.|
 |Membership list “freshness” |The list of members was up to date in real time.|The list of members for each DDG is refreshed every 24 hours.|
 
 >[!Important]
