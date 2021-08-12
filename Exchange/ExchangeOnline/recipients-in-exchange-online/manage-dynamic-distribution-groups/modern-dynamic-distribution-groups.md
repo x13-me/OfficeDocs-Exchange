@@ -71,7 +71,7 @@ Set-DynamicDistributionGroup -Identity <DynamicDistributionGroupIdentity> -Force
 ``` 
 
 >[!Note]
-> This cmdlet can only be run after more than 1 hour has passed since the last membership refresh.
+> **Limitation:** This cmdlet can be run only after more than 1 hour has passed since the last membership refresh.
  
 ## Support 
 
