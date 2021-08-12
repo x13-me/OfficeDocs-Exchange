@@ -41,13 +41,15 @@ You can use Exchange Online PowerShell to view the list of recipients for a dyna
 This example returns the list of members for the dynamic distribution group named Full Time Employees.
 
 ```PowerShell
-Get-DynamicDistributionGroupMember -Identity "Full Time Employees"
+$FTE = Get-DynamicDistributionGroup "Full Time Employees"
+Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
 ```
 
-This example displays the list of users and email addresses for the same group if it has more than 1,000 mailboxes.
+This example displays the list of users and email addresses for the same group if it has more than 1,000 members.
 
 ```PowerShell
-Get-DynamicDistributionGroupMember -Identity "Full Time Employees" -ResultSize Unlimited | Format-Table Name,Primary*
+$FTE = Get-DynamicDistributionGroup "Full Time Employees"
+Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | Format-Table Name,Primary*
 ```
 
 For detailed syntax and parameter information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember).
