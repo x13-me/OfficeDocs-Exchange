@@ -26,12 +26,10 @@ manager: serdars
 
 ## Modern Dynamic Distribution Groups 
 
-Dynamic Distribution Groups (DDGs) are changing to bring a more reliable, predictable, and better performing experience. The new change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message. 
+Dynamic Distribution Groups (DDGs) are being modernized to bring a more reliable, predictable, and better performing experience. This change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message. 
 
 **What has changed?**
-Before, DDGs were resolved only when mail was sent, and as a result the actual recipient list was unknown to the sender. 
-
-Now the membership list will be stored for each DDG and the membership list will be updated every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues for our customers. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability. 
+The membership list is stored for each DDG and updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability. 
 
 
 ## DDG behavior changes
@@ -65,7 +63,7 @@ To learn more, see: [Get-DynamicDistributionGroupMember](https://docs.microsoft.
 
 ## How to refresh a DDG’s membership list 
 
-If your DDG membership list is not updated after the 24-hour refresh period, you can force a membership list refresh.  Use the following cmdlet, where *DynamicDistributionGroupIdentity* is the name, alias, or email address of the DDG.
+If your DDG membership list isn't updated after the 24-hour refresh period, you can force a membership list refresh.  Use the following cmdlet, where *DynamicDistributionGroupIdentity* is the name, alias, or email address of the DDG.
 
 ```PowerShell
 Set-DynamicDistributionGroup -Identity <DynamicDistributionGroupIdentity> -ForceMembershipRefresh 
