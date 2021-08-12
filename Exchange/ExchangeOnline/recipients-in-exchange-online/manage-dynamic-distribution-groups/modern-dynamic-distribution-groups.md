@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Modern Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 f1.keywords:
 - CSH
 ms.custom:
