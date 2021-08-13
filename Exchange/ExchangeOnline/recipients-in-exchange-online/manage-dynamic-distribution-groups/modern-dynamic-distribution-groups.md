@@ -7,11 +7,10 @@ f1.keywords:
 - CSH
 ms.author: jhendr
 ms.reviewer: 
-title: Manage dynamic distribution group
+title: Modern dynamic distribution groups
 audience: ITPro
 ms.service: exchange-online
-robots: NOINDEX
-robots: NOFOLLOW
+robots: NOINDEX, NOFOLLOW
 manager: serdars
 ---
 # Modern Dynamic Distribution Groups
