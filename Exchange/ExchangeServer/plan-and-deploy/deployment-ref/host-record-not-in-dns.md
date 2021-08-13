@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.HostRecordMissing
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms.reviewer: 
 title: The Host record for the local computer cannot be found in the DNS database [HostRecordMissing]

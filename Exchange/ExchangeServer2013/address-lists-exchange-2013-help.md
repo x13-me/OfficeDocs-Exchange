@@ -1,7 +1,7 @@
 ---
 title: 'Address lists: Exchange 2013 Help'
 TOCTitle: Address lists
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

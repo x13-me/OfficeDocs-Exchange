@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.reviewer:
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox

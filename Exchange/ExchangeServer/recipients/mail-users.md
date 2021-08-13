@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to create mail users and how to change mail user properties.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
 ms.reviewer:
 title: Manage mail users

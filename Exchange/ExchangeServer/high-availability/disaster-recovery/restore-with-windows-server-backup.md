@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Step-by-step guidance for restoring Exchange data from a previous back up.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 2d0f31dc-eb32-451a-8852-591269026506
 ms.reviewer:
 title: Use Windows Server Backup to restore a backup of Exchange

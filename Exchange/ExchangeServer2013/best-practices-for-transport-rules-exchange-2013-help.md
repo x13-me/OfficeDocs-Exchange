@@ -1,7 +1,7 @@
 ---
 title: 'Best practices for configuring transport rules: Exchange 2013 Help'
 TOCTitle: Best practices for configuring transport rules
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

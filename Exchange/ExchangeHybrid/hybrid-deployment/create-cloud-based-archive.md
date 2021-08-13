@@ -1,6 +1,6 @@
 ---
 title: "Create a cloud-based archive in an Exchange hybrid deployment"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

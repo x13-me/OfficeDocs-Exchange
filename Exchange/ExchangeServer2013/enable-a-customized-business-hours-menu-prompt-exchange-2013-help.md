@@ -1,7 +1,7 @@
 ---
 title: 'Enable a customized business hours menu prompt: Exchange 2013 Help'
 TOCTitle: Enable a customized business hours menu prompt
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

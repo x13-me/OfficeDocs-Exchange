@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms.reviewer:
 title: Configure mailbox database copy properties

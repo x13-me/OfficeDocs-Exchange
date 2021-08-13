@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.SchemaUpdateRequired
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
 ms.reviewer: 
 title: The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]

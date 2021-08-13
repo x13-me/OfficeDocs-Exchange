@@ -1,7 +1,7 @@
 ---
 title: 'Use favorite public folders in Outlook Web App: Exchange 2013 Help'
 TOCTitle: Use favorite public folders in Outlook Web App
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

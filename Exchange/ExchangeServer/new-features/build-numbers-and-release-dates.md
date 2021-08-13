@@ -3,7 +3,7 @@ localization_priority: Priority
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 ms.reviewer: 
 title: Exchange Server build numbers and release dates
