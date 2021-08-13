@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms.reviewer: 
 title: Administrator audit log structure

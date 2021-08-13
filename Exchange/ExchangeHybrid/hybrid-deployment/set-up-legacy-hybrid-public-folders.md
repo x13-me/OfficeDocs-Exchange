@@ -1,6 +1,6 @@
 ---
 title: "Configure legacy on-premises public folders for a hybrid deployment"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

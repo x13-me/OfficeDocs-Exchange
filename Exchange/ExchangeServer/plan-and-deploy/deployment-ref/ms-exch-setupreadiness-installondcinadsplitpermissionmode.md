@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.InstallOnDCInADSplitPermissionMode
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms.reviewer: 
 title: Installation on domain controllers is not supported with Active Directory split permissions [InstallOnDCInADSplitPermissionMode]

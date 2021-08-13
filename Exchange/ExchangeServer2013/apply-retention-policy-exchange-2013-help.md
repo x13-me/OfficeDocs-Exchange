@@ -1,7 +1,7 @@
 ---
 title: 'Apply a retention policy to mailboxes: Exchange 2013 Help'
 TOCTitle: Apply a retention policy to mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

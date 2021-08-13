@@ -1,7 +1,7 @@
 ---
 title: 'UM mailbox policies: Exchange 2013 Help'
 TOCTitle: UM mailbox policies
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

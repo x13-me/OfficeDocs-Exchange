@@ -1,7 +1,7 @@
 ---
 title: 'Provision recipients for offline address book downloads: Exchange 2013 Help'
 TOCTitle: Provision recipients for offline address book downloads
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: 'Voice mail-enabled user procedures: Exchange 2013 Help'
 TOCTitle: Voice mail-enabled user procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

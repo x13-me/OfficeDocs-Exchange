@@ -1,7 +1,7 @@
 ---
 title: 'Allow users in the same dial plan to receive faxes: Exchange 2013 Help'
 TOCTitle: Allow users in the same dial plan to receive faxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

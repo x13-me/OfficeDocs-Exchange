@@ -1,7 +1,7 @@
 ---
 title: 'Set the minimum PIN length for voice mail: Exchange 2013 Help'
 TOCTitle: Set the minimum PIN length for voice mail
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
