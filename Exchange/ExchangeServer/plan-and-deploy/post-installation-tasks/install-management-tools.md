@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.'
 ms.topic: get-started-article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 ms.reviewer: 
 title: Install the Exchange management tools

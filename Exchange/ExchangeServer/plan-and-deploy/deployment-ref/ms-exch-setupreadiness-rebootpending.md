@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.RebootPending
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d5c73280-4e54-473a-b328-9673af11e2c0
 ms.reviewer: 
 title: The computer needs to be restarted before Setup can continue [RebootPending]

@@ -1,7 +1,7 @@
 ---
 title: 'Configure business hours: Exchange 2013 Help'
 TOCTitle: Configure business hours
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

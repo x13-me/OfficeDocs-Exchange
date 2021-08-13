@@ -3,7 +3,7 @@ localization_priority: Critical
 description: 'Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's new in Exchange Server

@@ -1,7 +1,7 @@
 ---
 title: 'Import a custom DLP policy template from a file: Exchange 2013 Help'
 TOCTitle: Import a custom DLP policy template from a file
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
