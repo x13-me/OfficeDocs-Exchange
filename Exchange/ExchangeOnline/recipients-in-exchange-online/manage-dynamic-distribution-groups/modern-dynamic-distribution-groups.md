@@ -10,11 +10,9 @@ ms.reviewer:
 title: Manage dynamic distribution group
 audience: ITPro
 ms.service: exchange-online
-robots: 
-- NOINDEX
-- NOFOLLOW
+robots: NOINDEX
+robots: NOFOLLOW
 manager: serdars
-
 ---
 # Modern Dynamic Distribution Groups
 
@@ -53,10 +51,10 @@ Get-DynamicDistributionGroupMember -Identity <DynamicDistributionGroupIdentity>
 ```
 
 This PowerShell cmdlet returns the calculated list of members stored on the Dynamic Distribution Group object. 
-To learn more, see: [Get-DynamicDistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/get-dynamicdistributiongroupmember?view=exchange-ps#inputs). 
+To learn more, see: [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember). 
 
 >[!Note]
->Do not use the [old procedure](https://docs.microsoft.com/en-us/exchange/recipients/dynamic-distribution-groups/view-dynamic-distribution-group-members?view=exchserver-2019) for viewing members of a DDG as it only evaluates the users in your organization that satisfy the filters specified in your DDG at that time. It doesn't return the calculated list of members stored on the group object. 
+>Do not use the [old procedure](/exchange/recipients/dynamic-distribution-groups/view-dynamic-distribution-group-members) for viewing members of a DDG as it only evaluates the users in your organization that satisfy the filters specified in your DDG at that time. It doesn't return the calculated list of members stored on the group object. 
 
 ## How to refresh a DDG’s membership list 
 
@@ -72,5 +70,5 @@ Set-DynamicDistributionGroup -Identity <DynamicDistributionGroupIdentity> -Force
  
 ## Support 
 
-If you need further assistance, contact the [Modern DDG Support team](modernddgsupport@service.microsoft.com).
+If you need further assistance, contact the [Modern DDG Support team](mailto:modernddgsupport@service.microsoft.com).
 
