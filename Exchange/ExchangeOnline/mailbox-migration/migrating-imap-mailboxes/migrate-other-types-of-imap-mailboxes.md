@@ -211,7 +211,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 2. Go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
-   ![Migration endpoint name](../media/8e97d6aa-4ccc-4b8d-b33c-bdb8109f03d9.png)
+   ![Migration endpoint name menu access](../media/8e97d6aa-4ccc-4b8d-b33c-bdb8109f03d9.png)
 
 3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
 
@@ -227,7 +227,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 7. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 
-   ![Migration endpoint name](../media/0b8defdb-abe6-45e6-b143-a353012e1f08.png)
+   ![Migration endpoint name step 7](../media/0b8defdb-abe6-45e6-b143-a353012e1f08.png)
 
 8. Click **New** to create the migration endpoint.
 
@@ -270,7 +270,7 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
 7. On the **IMAP migration configuration** page, click **Next**.
 
-8. On this page, select the migration endpoint that you created in [Step 3: Connect Microsoft 365 or Office 365 to your email system](#step-3-connect-microsoft-365-or-office-365-to-your-email-system).
+8. On this page, select the migration endpoint that you created in [Step 3: Connect Microsoft 365 or Office 365 to your email system](#step-3-connect-microsoft-365-or-office-365-to-your-email-system-classic-eac-only).
 
 9. On the **Move configuration** page, type the *name (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
 
