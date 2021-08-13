@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server 2016.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
 ms.reviewer:
 title: Unified Messaging permissions in Exchange 2016

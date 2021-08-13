@@ -1,7 +1,7 @@
 ---
 title: 'Exchange auditing reports: Exchange 2013 Help'
 TOCTitle: Exchange auditing reports
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

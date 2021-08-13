@@ -1,7 +1,7 @@
 ---
 title: 'Remove an In-Place eDiscovery search: Exchange 2013 Help'
 TOCTitle: Remove an In-Place eDiscovery search
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

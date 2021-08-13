@@ -1,7 +1,7 @@
 ---
 title: 'UM reports procedures: Exchange 2013 Help'
 TOCTitle: UM reports procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

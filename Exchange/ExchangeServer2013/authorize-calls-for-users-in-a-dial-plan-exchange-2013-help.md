@@ -1,7 +1,7 @@
 ---
 title: 'Authorize calls for users in a dial plan: Exchange 2013 Help'
 TOCTitle: Authorize calls for users in a dial plan
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

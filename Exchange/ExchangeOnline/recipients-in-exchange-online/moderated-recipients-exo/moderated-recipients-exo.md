@@ -49,6 +49,9 @@ A message that's waiting for approval is temporarily stored in a system mailbox 
 
 - **Ignore or delete the approval message** An expiration message is sent to the sender. In Exchange Online, the approval request expires after two days.
 
+  > [!NOTE]
+  > The processing of expired moderated messages runs every seven days. This means that a moderated message can expire at any time between two and nine days.
+
 The message flow and result of a moderator's actions are described in the following diagram:
 
 ![Workflow showing options for approving a message](../../media/TA_ModerationWorkflow.png)

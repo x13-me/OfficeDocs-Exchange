@@ -1,6 +1,6 @@
 ---
 title: "Performance factors and best practices for hybrid migrations"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

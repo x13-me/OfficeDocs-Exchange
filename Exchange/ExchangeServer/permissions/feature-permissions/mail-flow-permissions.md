@@ -3,7 +3,7 @@ localization_priority: Normal
 description: The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run.
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: f49f4fb5-af75-43cb-900f-c5f7b8cfa143
 ms.reviewer:
 title: Mail flow permissions

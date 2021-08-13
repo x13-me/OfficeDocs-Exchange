@@ -1,7 +1,7 @@
 ---
 title: 'How retention age is calculated: Exchange 2013 Help'
 TOCTitle: How retention age is calculated
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

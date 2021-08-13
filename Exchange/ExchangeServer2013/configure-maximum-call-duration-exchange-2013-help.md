@@ -1,7 +1,7 @@
 ---
 title: 'Configure the maximum call duration: Exchange 2013 Help'
 TOCTitle: Configure the maximum call duration
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

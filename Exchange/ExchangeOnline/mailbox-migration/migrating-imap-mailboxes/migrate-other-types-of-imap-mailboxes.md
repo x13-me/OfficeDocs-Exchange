@@ -169,8 +169,6 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
 7. Save the file as a CSV file type, and then close Excel.
 
-   ![A completed sample migration file](../media/12813244-892f-4670-a29e-a21b9a228078.png)
-
 #### Format mailbox admin credentials for different IMAP servers
 
 In the migration file, each cell in the **UserName** column consists of two combined names: the username of the person whose email is being migrated, and the username of the mailbox admin account. The supported format for mailbox admin credentials is different depending on your source email system. Here are the formats for several types of source email systems.

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange Server.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms.reviewer:
 title: Manage on-premises mailbox moves in Exchange Server
@@ -158,7 +158,7 @@ New-MoveRequest -Identity agruber@contoso.com -TargetDatabase "MBX 02" -ArchiveT
 This example uses similar settings, but only moves Angela's primary mailbox.
 
 ```PowerShell
-New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly-TargetDatabase "MBX 02" -BadItemLimit 10
+New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly -TargetDatabase "MBX 02" -BadItemLimit 10
 ```
 
 This example uses similar settings, but only moves Angela's archive mailbox.

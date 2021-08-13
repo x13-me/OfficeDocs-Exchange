@@ -1,7 +1,7 @@
 ---
 title: 'Configure the time zone: Exchange 2013 Help'
 TOCTitle: Configure the time zone
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

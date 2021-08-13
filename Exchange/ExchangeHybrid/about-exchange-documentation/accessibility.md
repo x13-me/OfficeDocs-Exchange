@@ -1,6 +1,6 @@
 ---
 title: "Accessibility for people with disabilities"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

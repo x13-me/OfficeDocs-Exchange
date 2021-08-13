@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.ADAMDataPathExists
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: cf830dec-dd74-47b2-bee2-b8956f8023ce
 ms.reviewer: 
 title: AD LDS directory exists in default location [ADAMDataPathExists]

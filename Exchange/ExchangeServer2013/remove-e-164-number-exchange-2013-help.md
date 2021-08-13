@@ -1,7 +1,7 @@
 ---
 title: 'Remove an E.164 number: Exchange 2013 Help'
 TOCTitle: Remove an E.164 number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

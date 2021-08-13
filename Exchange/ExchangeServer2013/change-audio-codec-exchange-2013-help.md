@@ -1,7 +1,7 @@
 ---
 title: 'Change the audio codec: Exchange 2013 Help'
 TOCTitle: Change the audio codec
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

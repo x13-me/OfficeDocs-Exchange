@@ -111,7 +111,7 @@ This notification toast will automatically dismiss after 10 seconds. There are t
 - If the app has previously shown the notification in the last hour.
 - If the app has been installed in less than 24 hours.
 
-#### Save Contacts
+### Save Contacts
 
 The *Save Contacts* setting is a special case scenario because unlike the other settings, this setting requires user interaction: the user needs to grant Outlook permissions to access the native Contacts app and the data stored within. If the user does not grant access, then contact synchronization cannot be enabled.
 
@@ -142,7 +142,7 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
    > [!div class="mx-imgBorder"]
    > ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
 
-#### Calendar Sync
+### Calendar Sync
 
 > [!NOTE]
 > Calendar sync support will begin rolling out in October 2020.
@@ -376,7 +376,7 @@ The exact syntax of the key/value pair may differ based on the third-party UEM p
 
 <br>
 
-***
+****
 
 |Third-party UEM provider|Configuration Key|Value Type|Configuration Value|
 |---|---|---|---|
@@ -473,7 +473,7 @@ Outlook for iOS and Android offers administrators additional data protection cap
 
 <br>
 
-*****
+****
 
 |Key|Value|Device Enrollment Type|
 |---|---|---|

@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how to use retention policies to manage an email lifecycle in Exchange Server. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.reviewer:
 title: Create a retention policy in Exchange Server

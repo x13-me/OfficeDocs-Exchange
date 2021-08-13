@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.GlobalUpdateRequired
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 0530f3c6-6fa6-456b-a33a-f3d2f7eaa2ef
 ms.reviewer: 
 title: Global updates required [GlobalUpdateRequired]

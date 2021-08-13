@@ -1,7 +1,7 @@
 ---
 title: 'Enable calls from users who are not UM-enabled: Exchange 2013 Help'
 TOCTitle: Enable calls from users who aren't UM-enabled
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

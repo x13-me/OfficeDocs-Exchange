@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793981(v=EXCHG.150)
 ms:contentKeyID: 62632395
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

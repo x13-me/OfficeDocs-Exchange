@@ -75,7 +75,7 @@ Other migration limitations are described in the following table:
 |---|---|
 |Mail|Vacation settings, Automatic reply settings|
 |Meeting rooms|Room bookings will not be migrated|
-|Calendar|Shared calendars, cloud attachments, Google Hangout links, and event colors will not be migrated|
+|Calendar|Shared calendars, cloud attachments, and event colors will not be migrated|
 |Contacts|A maximum of three email addresses per contact are migrated over|
 |Contacts|Gmail tags, contact URLs, and custom tags will not be migrated|
 |
