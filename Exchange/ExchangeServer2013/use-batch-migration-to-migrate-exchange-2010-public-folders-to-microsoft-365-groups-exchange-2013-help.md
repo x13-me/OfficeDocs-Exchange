@@ -4,7 +4,7 @@ TOCTitle: Use batch migration to migrate Exchange 2010 public folders to Microso
 ms:assetid: d018558d-3075-4dd3-9ff7-91ce66b8d5fb
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/library/Mt843875(v=EXCHG.150)
 ms:contentKeyID: 74468674

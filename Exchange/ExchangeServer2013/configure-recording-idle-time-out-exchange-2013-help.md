@@ -1,7 +1,7 @@
 ---
 title: 'Configure the recording idle time-out value: Exchange 2013 Help'
 TOCTitle: Configure the recording idle time-out value
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

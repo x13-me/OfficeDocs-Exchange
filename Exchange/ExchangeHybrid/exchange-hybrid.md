@@ -1,6 +1,6 @@
 ---
 title: "Exchange Server hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

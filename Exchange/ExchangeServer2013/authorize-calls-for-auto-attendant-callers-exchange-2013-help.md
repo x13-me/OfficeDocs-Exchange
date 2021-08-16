@@ -1,7 +1,7 @@
 ---
 title: 'Authorize calls for auto attendant callers: Exchange 2013 Help'
 TOCTitle: Authorize calls for auto attendant callers
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

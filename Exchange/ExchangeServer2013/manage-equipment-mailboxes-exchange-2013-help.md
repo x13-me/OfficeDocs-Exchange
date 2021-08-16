@@ -1,7 +1,7 @@
 ---
 title: 'Manage equipment mailboxes: Exchange 2013 Help'
 TOCTitle: Manage equipment mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

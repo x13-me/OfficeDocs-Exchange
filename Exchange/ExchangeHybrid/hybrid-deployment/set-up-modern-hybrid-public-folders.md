@@ -1,6 +1,6 @@
 ---
 title: "Configure Exchange Server public folders for a hybrid deployment"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -92,6 +92,20 @@ Where `Credential` is your Microsoft 365 or Office 365 admin username and passwo
 Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
 
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
+
+A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.  
+
+You can use following command to identify such mailboxes:
+
+```PowerShell
+Get-Mailbox |?{$_.IsDirSynced -eq $false}
+```
+
+These users will keep getting credential prompts after public folder mailbox access is configured. Use one of the following solutions for such users before enabling public folder access:
+
+1. Link the Exchange Online only mailboxes listed in the previous step to on-premises users as described in [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
+
+2. Use the steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users on-premises.
 
 The final step in this process is to configure the Exchange Online organization and to allow access to the Exchange Server public folders.
 

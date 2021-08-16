@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.PowerShellExecutionPolicyCheckSet
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms.reviewer:
 title: ExecutionPolicy GPO is defined [PowerShellExecutionPolicyCheckSet]
@@ -33,7 +33,7 @@ Exchange Setup stops and disables the Windows Management Instrumentation (WMI) s
 To allow Setup to continue, you need to temporarily remove any definition of **MachinePolicy** or **UserPolicy** in the **ExecutionPolicy** GPO:
 
 ```PowerShell
-Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy –Value ""
+Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ""
 ```
 
 Having problems? Ask for help in the [Exchange forums](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver).

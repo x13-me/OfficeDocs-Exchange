@@ -1,7 +1,7 @@
 ---
 title: 'Create menu navigation: Exchange 2013 Help'
 TOCTitle: Create menu navigation
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

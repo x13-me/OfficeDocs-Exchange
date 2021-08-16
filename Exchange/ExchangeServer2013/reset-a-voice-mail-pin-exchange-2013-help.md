@@ -1,7 +1,7 @@
 ---
 title: 'Reset a voice mail PIN: Exchange 2013 Help'
 TOCTitle: Reset a voice mail PIN
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

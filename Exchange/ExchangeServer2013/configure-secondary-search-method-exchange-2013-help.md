@@ -1,7 +1,7 @@
 ---
 title: 'Configure the secondary way for Outlook Voice Access users to search: Exchange 2013 Help'
 TOCTitle: Configure the secondary way for Outlook Voice Access users to search
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

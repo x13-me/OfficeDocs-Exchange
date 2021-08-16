@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 4e1b9510-3188-43eb-9252-7c64cb2bc0e3
 ms.reviewer: 
 title: Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]

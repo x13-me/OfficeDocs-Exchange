@@ -1,7 +1,7 @@
 ---
 title: 'Enter a business name: Exchange 2013 Help'
 TOCTitle: Enter a business name
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: 'Play on Phone: Exchange 2013 Help'
 TOCTitle: Play on Phone
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
