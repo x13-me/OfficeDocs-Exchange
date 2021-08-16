@@ -27,7 +27,8 @@ Before you begin Google Workspace migration:
     1. Create a subdomain for mail routing to Microsoft 365 or Office 365
     1. Create a subdomain for mail routing to your Google Workspace domain
     1. Provision users in Microsoft 365 or Office 365
-    For more information, see [Prerequisites](googleworkspace-migration-prerequisites.md).
+    
+For more information, see [Prerequisites](googleworkspace-migration-prerequisites.md).
 
 ## Manual Google Workspace migration process
 The process to manually migrate Google Workspace involves following steps:
@@ -126,7 +127,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the domain [you created](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
+9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the [domain you created](googleworkspace-migration-prerequisites.md#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
