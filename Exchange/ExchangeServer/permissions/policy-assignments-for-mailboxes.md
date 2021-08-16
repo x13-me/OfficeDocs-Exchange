@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Change the assignment policy on a mailbox in Exchange Server
+# Exchange Server: Change the assignment policy on a mailbox
 
 When you change a mailbox's assignment policy, the change takes effect as soon as the user refreshes the connection, such as the next time they log into their mailbox or open the mailbox options page. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](../../ExchangeServer2013/understanding-management-role-assignment-policies-exchange-2013-help.md).
 
