@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# AutoReseed
+# About AutoReseed
 
 Automatic Reseed, or AutoReseed, is a feature that replaces standard actions administrators take in response to a disk failure, or a database corruption event, or another issue that needs a reseed of a database copy.
 
