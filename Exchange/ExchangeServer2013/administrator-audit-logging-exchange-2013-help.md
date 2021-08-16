@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Administrator audit logging
+# Administrator audit logging in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 
