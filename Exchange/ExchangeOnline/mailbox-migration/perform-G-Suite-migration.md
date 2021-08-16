@@ -72,5 +72,5 @@ Ensure you complete the following prerequisites before initiating either manual 
     1. Create a subdomain for mail routing to your Google Workspace domain
     1. Provision users in Microsoft 365 or Office 365
    
- For detailed information on these steps, see [Google Workspace migration prerequisites](googleworkspace-migration-prerequisites.md).
+     For detailed information on these steps, see [Google Workspace migration prerequisites](googleworkspace-migration-prerequisites.md).
  
