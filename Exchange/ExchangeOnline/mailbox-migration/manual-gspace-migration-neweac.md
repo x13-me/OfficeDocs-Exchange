@@ -42,10 +42,10 @@ For more information, see [Prerequisites](googleworkspace-migration-prerequisite
     1. From the **Select the migration type** drop-down list, select **Google Workspace (Gmail) migration** and click **Next**.
    ![Migration Onboarding](../media/migration-onboarding-selection.png)
     3. In **Prerequisites** section, perform the following procedures to manually configure G-Suite for migration:
-        1. [Create a Google Service Account](#create-a-google-service-account)
-        1. [Enable API Usage in your project](#enable-api-usage-in-your-project)
-        1. [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant)
-        For detailed information on the procedures, see [Manually configuring G-Suite for migration](manually-configuring-gsuite-for-migration.md).
+        1. [Create a Google Service Account](manually-configuring-gsuite-for-migration.md#create-a-google-service-account)
+        1. [Enable API Usage in your project](manually-configuring-gsuite-for-migration.md#enable-api-usage-in-your-project)
+        1. [Grant access to the service account for your Google tenant](manually-configuring-gsuite-for-migration.md#grant-access-to-the-service-account-for-your-google-tenant)
+        
     1. In **Set A migration endpoint** section, you can do one of the following:
         1. If you have already created an endpoint, select the migration endpoint from the drop-down list.
         1. If you are a first time user, then select **Create a new migration endpoint** and click **Next**.
