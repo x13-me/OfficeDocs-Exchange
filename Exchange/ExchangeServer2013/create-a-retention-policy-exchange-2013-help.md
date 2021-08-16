@@ -1,7 +1,7 @@
 ---
 title: 'Create a Retention Policy: Exchange 2013 Help'
 TOCTitle: Create a Retention Policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

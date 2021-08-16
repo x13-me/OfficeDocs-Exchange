@@ -1,7 +1,7 @@
 ---
 title: 'Enable a user to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable a user to receive faxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

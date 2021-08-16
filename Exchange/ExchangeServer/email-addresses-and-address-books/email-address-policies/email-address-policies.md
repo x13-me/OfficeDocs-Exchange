@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about email address policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
 ms.reviewer: 
 title: Email address policies in Exchange Server

@@ -1,7 +1,7 @@
 ---
 title: 'Manage voice mail settings for a user: Exchange 2013 Help'
 TOCTitle: Manage voice mail settings for a user
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

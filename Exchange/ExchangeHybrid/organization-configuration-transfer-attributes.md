@@ -1,6 +1,6 @@
 ---
 title: "Organization Configuration Transfer Attributes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

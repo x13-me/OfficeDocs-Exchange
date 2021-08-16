@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -139,7 +139,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 
 - Deploy the ASA credential to subsequent Exchange 2013 Client Access servers
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information and required permissions to run the script, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ## Deploy the ASA Credential to the first Exchange 2013 Client Access server
 

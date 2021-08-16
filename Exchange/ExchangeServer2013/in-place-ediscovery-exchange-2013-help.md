@@ -1,7 +1,7 @@
 ---
 title: 'In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: In-Place eDiscovery
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

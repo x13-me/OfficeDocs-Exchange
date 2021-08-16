@@ -70,26 +70,26 @@ For this scenario, your organization's mail flow setup looks like the following 
    For example:
 
    ```powershell
-   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
+   New-InboundConnector -Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToCertificate $true -TlsSenderCertificateName *.contoso.com -RequireTls $true
    ```
 
    or
 
    ```powershell
-   New-InboundConnector –Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
+   New-InboundConnector -Name "Reject mail not routed through MX (third-party service name)" -ConnectorType Partner -SenderDomains * -RestrictDomainsToIPAddresses $true -SenderIpAddresses <#static list of on-premises IPs or IP ranges of the third-party service>
    ```
 
    > [!NOTE]
-   > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems. 
+   > If you already have an **OnPremises** inbound connector for the same certificate or sender IP addresses, you still need to create the  **Partner** inbound connector (the *RestrictDomainsToCertificate* and *RestrictDomainsToIPAddresses* parameters are only applied to **Partner** connectors). The two connectors can coexist without problems.
 
 5. There are two options for this step:
 
-   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 Defender for Office 365 scanning on the messages.
 
      > [!NOTE]
      > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the On-Premises inbound connector.
 
-   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Microsoft 365 or Office 365 ATP controls and will therefore prevent a double anti-spam check.
+   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Defender for Office 365 controls and will therefore prevent a double anti-spam check.
 
      ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 

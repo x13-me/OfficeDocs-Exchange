@@ -1,7 +1,7 @@
 ---
 title: 'Manage message approval: Exchange 2013 Help'
 TOCTitle: Manage message approval
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

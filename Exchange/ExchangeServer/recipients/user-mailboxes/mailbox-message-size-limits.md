@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: How to use the Exchange admin center (EAC) and the Exchange Management Shell to set message size limits for a user mailbox.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms.reviewer:
 title: Configure message size limits for a mailbox

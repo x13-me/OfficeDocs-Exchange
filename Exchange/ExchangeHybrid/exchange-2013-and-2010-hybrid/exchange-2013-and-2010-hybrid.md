@@ -1,6 +1,6 @@
 ---
 title: "Hybrid deployments with Exchange 2013 and Exchange 2010"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:

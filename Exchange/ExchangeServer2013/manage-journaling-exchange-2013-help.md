@@ -1,7 +1,7 @@
 ---
 title: 'Manage journaling: Exchange 2013 Help'
 TOCTitle: Manage journaling
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

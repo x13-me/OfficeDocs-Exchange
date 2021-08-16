@@ -1,7 +1,7 @@
 ---
 title: 'Voice mail for users: Exchange 2013 Help'
 TOCTitle: Voice mail for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

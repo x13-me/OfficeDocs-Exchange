@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
 ms.reviewer: 
 title: Mail flow and the transport pipeline

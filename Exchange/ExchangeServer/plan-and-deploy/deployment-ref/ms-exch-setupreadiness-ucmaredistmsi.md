@@ -5,7 +5,7 @@ ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.UcmaRedistMsi
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b26b628b-116d-4f13-ab86-bac80e2a2e1f
 ms.reviewer: 
 title: UCMA 4.0, Core Runtime not installed [UcmaRedistMsi]

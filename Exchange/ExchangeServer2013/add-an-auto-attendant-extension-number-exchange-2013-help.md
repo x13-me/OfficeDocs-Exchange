@@ -1,7 +1,7 @@
 ---
 title: 'Add an auto attendant extension number: Exchange 2013 Help'
 TOCTitle: Add an auto attendant extension number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

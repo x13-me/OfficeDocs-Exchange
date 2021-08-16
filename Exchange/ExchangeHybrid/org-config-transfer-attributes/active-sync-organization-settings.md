@@ -1,6 +1,6 @@
 ---
 title: "ActiveSync organization settings attributes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: dstrome

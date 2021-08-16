@@ -2,7 +2,7 @@
 localization_priority: Normal
 description: Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android.
 ms.topic: article
-author: serdars
+author: serdarsoysal
 ms.author: serdars
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
 title: Using hybrid Modern Authentication with Outlook for iOS and Android
@@ -110,7 +110,7 @@ The hybrid Modern Authentication architecture has the following technical requir
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](../../../ExchangeHybrid/hybrid-deployment/hybrid-agent.md).
 
    - Requires a Microsoft 365 or Office 365 Enterprise, Business, or Education organization.
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter).
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online)) 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
    - AutoDiscover and Exchange ActiveSync namespaces must be accessible from the Internet and cannot be fronted by a pre-authentication solution.
    - Ensure SSL or TLS offloading isn't being used between the load balancer and your Exchange servers, as this will affect the use of the OAuth token. SSL and TLS bridging (termination and re-encryption) is supported.
@@ -221,14 +221,17 @@ The following features aren't supported for on-premises mailboxes using hybrid M
 - Shared calendar access and delegate calendar access
 - Shared and delegate mailbox data access
 - Cortana Time to Leave / Travel Time
-- Calendar attachments
 - Rich meeting locations
-- Task management with Microsoft To-Do
+- Task management with Microsoft To Do
 - Add-ins
 - Interesting Calendars
 - Play My Emails
 - Sensitivity labeling
 - S/MIME
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
+
+- Calendar attachments
 
 ## Connection Flow FAQ
 

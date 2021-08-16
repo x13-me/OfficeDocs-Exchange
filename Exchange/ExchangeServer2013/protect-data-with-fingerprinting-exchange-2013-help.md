@@ -1,7 +1,7 @@
 ---
 title: 'Protect form data with document fingerprinting: Exchange 2013 Help'
 TOCTitle: Protect form data with document fingerprinting
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

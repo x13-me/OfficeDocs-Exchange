@@ -3,7 +3,7 @@ localization_priority: Normal
 description: 'Summary: Learn how to move or recreate the message queue database in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms.reviewer: 
 title: Change the location of the queue database

@@ -521,6 +521,7 @@
 ### [Disable Basic authentication in Exchange Online](../clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online.md)
 ### [Disable SMTP AUTH in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md)
 ### [Enable or disable modern authentication for Outlook in Exchange Online](../clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online.md)
+### [Opt-in to Exchange Online endpoint for legacy TLS using SMTP AUTH](../clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-TLS-using-SMTP-AUTH.md)
 ## [Back up email](../back-up-email.md)
 ## [About Exchange documentation](../about-exchange-documentation.md)
 ## [Accessibility](../accessibility/accessibility.md)

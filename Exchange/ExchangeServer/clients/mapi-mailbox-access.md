@@ -3,7 +3,7 @@ localization_priority: Normal
 description: Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.reviewer:
 title: Enable or disable MAPI access to mailboxes in Exchange Server

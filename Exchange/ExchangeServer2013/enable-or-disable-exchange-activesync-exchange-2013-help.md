@@ -1,7 +1,7 @@
 ---
 title: 'Enable or disable Exchange ActiveSync for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable Exchange ActiveSync for a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

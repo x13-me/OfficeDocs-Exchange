@@ -1,7 +1,7 @@
 ---
 title: 'Enable or disable automatic speech recognition: Exchange 2013 Help'
 TOCTitle: Enable or disable automatic speech recognition
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

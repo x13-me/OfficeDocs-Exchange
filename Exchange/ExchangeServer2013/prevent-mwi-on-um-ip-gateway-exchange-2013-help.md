@@ -1,7 +1,7 @@
 ---
 title: 'Prevent Message Waiting Indicator (MWI) on a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Prevent Message Waiting Indicator (MWI) on a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

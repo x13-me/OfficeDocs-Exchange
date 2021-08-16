@@ -1,7 +1,7 @@
 ---
 title: 'MailTips: Exchange 2013 Help'
 TOCTitle: MailTips
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

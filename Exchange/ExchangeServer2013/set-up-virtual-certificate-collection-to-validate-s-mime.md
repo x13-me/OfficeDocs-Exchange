@@ -6,7 +6,7 @@ ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
