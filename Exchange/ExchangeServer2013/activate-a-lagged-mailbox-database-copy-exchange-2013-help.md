@@ -1,6 +1,6 @@
 ---
 title: 'Activate a lagged mailbox database copy: Exchange 2013 Help'
-TOCTitle: Activate a lagged mailbox database copy
+Title: How to activate lagged mailbox database copy
 ms:assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms:mtpsurl: https://technet.microsoft.com/library/Dd979786(v=EXCHG.150)
 ms:contentKeyID: 48385050
@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Activate a lagged mailbox database copy
+# Howt to activate lagged mailbox database copy
 
 _**Applies to:** Exchange Server 2013_
 
