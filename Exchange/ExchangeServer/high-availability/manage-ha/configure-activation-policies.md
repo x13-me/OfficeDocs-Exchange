@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure activation policy for a mailbox database copy
+# Configure activation policy for a mailbox database copy in Exchange Server
 
  *Activation* is the process of changing a mailbox database copy from a passive copy to an active copy. Activation can occur automatically (by the system as part of a database or server failover operation) or it can be performed manually (by an administrator as part of a database or server switchover operation). Blocking a database for activation prevents it from becoming the active copy during a database or server failover.
 
