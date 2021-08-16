@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Attachment filtering on Edge Transport servers
+# Attachment filtering on Edge Transport servers in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 
