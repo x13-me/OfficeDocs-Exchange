@@ -14,7 +14,7 @@ audience: ITPro
 ms.service: exchange-online
 f1.keywords:
 - NOCSH
-anager: serdars
+manager: serdars
 
 ---
 
