@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure AutoReseed for a database availability group
+# Configure AutoReseed for a database availability group in Exchange Server
 
 Use the steps in this topic to configure AutoReseed for a database availability group (DAG) in Exchange Server.
 
