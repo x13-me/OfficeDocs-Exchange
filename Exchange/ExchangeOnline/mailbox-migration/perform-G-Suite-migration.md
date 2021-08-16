@@ -59,3 +59,15 @@ Other migration limitations are described in the following table:
 
 > [!TIP]
 > If you will be [starting your migration batch with Exchange Online Powershell](perform-gspace-migration-powershell.md), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
+
+## Prerequisites
+
+Ensure you complete the following prerequisites before initiating either manual or automated Google Workspace migration:
+
+1. Ensure you have been assigned a project creator role and you are signed into Google Workspace with the project creator credentials.
+1. Ensure you complete the following procedures before initiating the migration process:
+    1. Create a subdomain for mail routing to Microsoft 365 or Office 365
+    1. Create a subdomain for mail routing to your Google Workspace domain
+    1. Provision users in Microsoft 365 or Office 365
+    For detailed information on these steps, see 
+ 

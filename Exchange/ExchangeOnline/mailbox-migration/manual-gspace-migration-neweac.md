@@ -18,162 +18,59 @@ ms.custom: seo-marvel-jun2021
 
 The migration process takes several steps and can take from several hours to a couple of days depending on the amount of data you are migrating.
 
-The process to manually migrate Google Workspace involves following steps:
+## Prerequisites:
 
-1. [Create a Google Service Account](#create-a-google-service-account)
-1. [Enable API Usage in your project](#enable-api-usage-in-your-project)
-1. [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant)
-1. [Create a subdomain for mail routing to Microsoft 365 or Office 365](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365)
-1. [Create a subdomain for mail routing to your Google Workspace domain](#create-a-subdomain-for-mail-routing-to-your-google-workspace-domain)
-1. [Provision users in Microsoft 365 or Office 365](#provision-users-in-microsoft-365-or-office-365)
-1. Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
+Before you begin Google Workspace migration:
 
-## Create a Google Service Account
-
-1. Using a Chrome browser, sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com). 
-1. In a new tab or window, navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
-1. Select **Create project**, name the project and choose **Create**. 
-1. Select **+ Create service account**, enter a name, choose **Create** and then **Done**. 
-1. Open the **Actions** menu, select **Edit**, and take note of the Unique ID. You’ll need this ID later in the process. 
-1. Open the **Show domain-wide delegation** section. 
-1. Select **Enable G Suite Domain-wide Delegation**, enter a product name for the consent screen, and choose **Save**.
-> [!NOTE]
-> The product name is not used by the migration process, but is needed to save in the dialog.
-8. Open the **Actions** menu again and select **Create key**. 
-1. Choose **JSON**, then **Create**. 
-   The private key is saved to the download folder on your device.
-1. Select **Close**. 
-
-## Enable API usage in your project
-
-If your project doesn't already have all of the required APIs enabled, you must enable them.
-
-1. Go to the [Developer page for API Library](https://console.developers.google.com/apis/library) and sign in as the Google user you used above in **Create a Google Service Account**.
-
-2. Select the project that you used above.
-
-3. Search for the following APIs; each one must be enabled. Select **Enable** to enable them for your project:
-
-   - Gmail API
-   - Google Calendar API
-   - Contacts API
-   - People API
-
-## Grant access to the service account for your Google tenant
-
-1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as Google Workspace admin for your tenant.
-
-2. Click **Security**, then click **API Controls**, and then click **Manage Domain Wide Delegation**.
-
-3. Next to the **API Clients** list, click **Add new**.
-
-4. In **Client ID**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
-
-   ![Add new API client](../media/add-a-new-client-id-im7.png)
-
-5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example: </br></br> `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing,https://www.googleapis.com/auth/contacts` 
-
-    If the OAuth Scopes are entered incorrectly, the resulting list won't match and the migration process will fail later, after you start the migration batch.
-
-6. Click **Authorize**. Verify that the resulting list shows the expected four (4) OAuth scopes.
-
-   > [!Important]
-   > It may take anywhere from 15 minutes to 24 hours for these settings to propogate.
-
-## Create a subdomain for mail routing to Microsoft 365 or Office 365
-
-1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
-
-2. Click **Domains**, then **Manage domains**, and then click **Add a domain**.
-
-   > [!NOTE]
-   > The option _Add a domain_ will not be available if using the legacy free edition of G Suite.
-
-3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](perform-gspace-migration-powershell.md#create-a-migration-batch-in-microsoft-365-or-office-365)..
-
-   > [!NOTE]
-   > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
-
-   ![Add domain](../media/add-a-new-domain-im8.png)
-
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
-
-   ![Verify domain](../media/verify-ownership-im9.png)
-
-5. Log into your DNS provider and update your DNS records so that you have an MX record at the domain you created above in step 3, pointing to Microsoft 365 or Office 365. Ensure that this domain that you created above is an accepted domain in Microsoft 365 or Office 365. Follow the instructions in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain) to add the Microsoft 365 or Office 365 routing domain ("o365.fabrikaminc.net") to your organization and to configure DNS to route mail to Microsoft 365 or Office 365.
-
-> [!NOTE]
-> The migration process won't be able to complete if a routing domain is used that is not verified as described above. Choosing the built-in "tenantname.onmicrosoft.com" domain for routing mail to Office 365 instead of a sub-domain of the primary Google Workspace domain occasionally causes issues that Microsoft is not able to assist with besides to recommend that the user manually verify the forwarding address or contact Google support.
-
-## Create a subdomain for mail routing to your Google Workspace domain
-
-1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
-
-2. Click **Domains**, then **Manage domains**, and then click **Add a domain alias**.
-
-3. Enter the domain that you will use for routing mails to Google Workspace, then click **Continue and verify domain ownership**. A subdomain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
-
-   ![Add domain alias](../media/add-a-new-domain-alias-im10.png)
-
-4. Follow any subsequent steps that are then required to verify your domain, making sure that the status is shown as **Active**. If you chose a subdomain of your primary domain in step 3 above, your new domain may have been verified automatically.
-
-   ![Verify domain](../media/verify-ownership-im9.png)
-
-5. Follow Google's instructions to [Set up MX records for Google Workspace Gmail](https://support.google.com/a/answer/140034) for this domain.
-
-   > [!NOTE]
-   > It may take up to 24 hours for Google to propagate this setting to all of the users in your organization.
-
-   > [!IMPORTANT]
-   > If you are using non-default Transport settings in your Microsoft 365 or Office 365 organization, you should check that mail flow will work from Office 365 to Google Workspace. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your Google Workspace routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
-
-## Provision users in Microsoft 365 or Office 365
-
-Once your Google Workspace environment has been properly configured, you can complete your migration in the Exchange admin center or through the Exchange Online PowerShell.
-
-Before proceeding with either method, make sure that Mail Users have been provisioned for every user in the organization who will be migrated (either now or eventually). If any users aren't provisioned, provision them using the instructions in [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md).
-
-For more advanced scenarios, you may be able to deploy Azure Active Directory (Azure AD) Connect to provision your Mail Users. See [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](/office365/enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) for an overview, and [Set up directory synchronization for Microsoft 365](/office365/enterprise/set-up-directory-synchronization) for setup instructions. Then, you need to deploy an Exchange server in your on-premises environment for user management, and mail-enable your users using this server. For more information, see [How and when to decommission your on-premises Exchange servers in a hybrid deployment](../../ExchangeHybrid/decommission-on-premises-exchange.md) and [Manage mail users](/Exchange/ExchangeServer/recipients/mail-users.md). Once the Mail Users have been created in Microsoft 365, the Azure AD Connect may need to be disabled in order to allow the migration process to convert these users into mailboxes - see [Turn off directory synchronization for Microsoft 365](/office365/enterprise/turn-off-directory-synchronization).
-
-We recommend that the primary address (sometimes referred to as the "User ID") for each user be at the primary domain (such as "will@fabrikaminc.net"). Typically, this means that the primary email address should match between Microsoft 365 or Office 365 and Google Workspace. If any user is provisioned with a different domain for their primary address, then that user should at least have a proxy address at the primary domain. Each user should have their `ExternalEmailAddress` point to the user in their Google Workspace routing domain ("will@gsuite.fabrikaminc.net"). The users should also have a proxy address that will be used for routing to their Microsoft 365 or Office 365 routing domain (such as "will@o365.fabrikaminc.net").
-
-> [!NOTE]
-> We recommend that the Default MRM Policy and Archive policies be disabled for these users until after their migration has been completed.  When such features remain enabled during migration, there is a chance that some messages will end up being considered "missing" during the content verification process.
+1. Ensure you are signed into Google Workspace as a project creator.
+1. You have completed the following procedures:
+    1. Create a subdomain for mail routing to Microsoft 365 or Office 365
+    1. Create a subdomain for mail routing to your Google Workspace domain
+    1. Provision users in Microsoft 365 or Office 365
+    
+For more information, see [Prerequisites](googleworkspace-migration-prerequisites.md).
 
 ## Start a Google Workspace migration batch with the new Exchange admin center (New EAC)
 
 > [!IMPORTANT]
 > Microsoft's data migration tool is currently unaware of tools enforcing messaging records management (MRM) or archival policies. Because of this, any messages that are deleted or moved to archive by these policies will result in the migration process flagging these items as "missing". The result is perceived data loss rather than actual data loss, which makes it much harder to identify actual data loss during any content verification checks. <br/><br/>Therefore, Microsoft strongly recommends disabling all MRM and archival policies before attempting any data migration to mailboxes.
 
-1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**.
+1. In the new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration**, and click **Add migration batch**.
 
-2. Click **New Migration batch** and follow the instructions in the details pane.
-
-3. Under **Migration Onboarding**:
-    1. Enter the batch name, select the mailbox migration path and click **Next**.
-    1. From the **Select the migration type** drop-down list, select **G Suite (Gmail) migration** and click **Next**.
+2. Under **Add migration batch**:
+    1. Enter the unique batch name, select the mailbox migration path and click **Next**.
+    1. From the **Select the migration type** drop-down list, select **Google Workspace (Gmail) migration** and click **Next**.
    ![Migration Onboarding](../media/migration-onboarding-selection.png)
-    3. In **Prerequisites** section, manually configure G-Suite for migration.
-    1. In **Set endpoint** section, select the migration endpoint from the drop-down list and click **Next**.
-    ![Set endpoint](../media/migration-endpoint-selection.png)
+    3. In **Prerequisites** section, perform the following procedures to manually configure G-Suite for migration:
+        1. [Create a Google Service Account](#create-a-google-service-account)
+        1. [Enable API Usage in your project](#enable-api-usage-in-your-project)
+        1. [Grant access to the service account for your Google tenant](#grant-access-to-the-service-account-for-your-google-tenant)
+        For detailed information on the procedures, see [Manually configuring G-Suite for migration](manually-configuring-gsuite-for-migration.md).
+    1. In **Set A migration endpoint** section, you can do one of the following:
+        1. If you have already created an endpoint, select the migration endpoint from the drop-down list.
+        1. If you are a first time user, then select **Create a new migration endpoint** and click **Next**.
+         ![Set endpoint](../media/migration-endpoint-selection.png)
 
-    > [!NOTE]
-    > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
+        > [!NOTE]
+        > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
+        1. Under **General Information**. provide a **Migration Endpoint Name**. The fields for **Maximum concurrent migrations** and **Maximum concurrent incremental syncs** have the default values. You can either retain them or change them as per your requirement. 
+        1. Click **Next**.
+        1. Under **Gmail migration configuration**, enter the **Email address**. This is the same email address that you signed in to the Google Workspace.
+        1. Click **Import JSON**, and select the downloaded JSON file, and then click **Next**.
+        Once the endpoint is successfully created, it will be listed under **Select migration endpoint** drop-down.
+        1. Select the endpoint from the drop-down list, and click **Next**.
+        1.  In **Add user mailboxes** section, click **Import CSV file** and navigate to the folder where you have saved the CSV file.
+        Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
-4. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
+            - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
 
-    - EmailAddress (required). Contains the primary email address for an existing Microsoft 365 or Office 365 mailbox.
+            - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
 
-    - Username (optional). Contains the Gmail primary email address, if it differs from EmailAddress.
-
-      ```CSV
-      EmailAddress
-      will@fabrikaminc.net
-      user123@fabrikaminc.net
-      ```
-
-5. In **Add user mailboxes** section, import the CSV file and click **Next**.
-
+              ```CSV
+              EmailAddress
+              will@fabrikaminc.net
+              user123@fabrikaminc.net
+              ```
 6. In **Move configuration** section, enter the details and click **Next**.
 
 7. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
@@ -187,3 +84,5 @@ To learn more about:
 - Completion of migration batch, see [Completion of migration batch in new EAC](completion-gspace-migration-batch-neweac.md).
 
 - How the migration happens in backend, see [Overview of the process](how-it-all-works-in-the-backend.md).
+
+
