@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Change the location of the queue database
+# Change the location of the queue database in Exchange Server
 
 Exchange Server uses an Extensible Storage Engine (ESE) database for queue message storage. All the different queues are stored in a single ESE database. Queues exist on Exchange Mailbox servers and Edge Transport servers. For more information about queues, see [Queues and messages in queues](queues.md).
 
