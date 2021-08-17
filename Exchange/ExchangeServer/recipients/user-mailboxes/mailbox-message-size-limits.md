@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure message size limits for a mailbox
+# Configure message size limits for a mailbox in Exchange Server
 
 Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages.
 
