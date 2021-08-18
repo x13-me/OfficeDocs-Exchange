@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure pipeline tracing
+# Exchange Server: Configure pipeline tracing
 
 Pipeline tracing captures copies of email messages as they move through the transport pipeline in the Transport service or the Mailbox Transport service on Mailbox server and on Edge Transport servers.
 
