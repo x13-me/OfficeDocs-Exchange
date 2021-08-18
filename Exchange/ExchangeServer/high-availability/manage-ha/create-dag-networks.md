@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Create a database availability group network
+# Create a database availability group network in Exchange Server
 
 You can use the EAC or the Exchange Management Shell to create a DAG network.
 
