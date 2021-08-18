@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Considerations when deploying public folders
+# Considerations when deploying Exchange public folders
 
 Although there are many advantages to using Exchange public folders, there are some things to consider before implementing them in your organization.
 
