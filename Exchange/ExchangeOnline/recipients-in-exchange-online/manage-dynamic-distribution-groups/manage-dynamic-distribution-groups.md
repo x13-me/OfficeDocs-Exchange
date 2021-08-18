@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# Manage dynamic distribution groups
+# Manage dynamic distribution groups in Exchange Server
 
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 
