@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage linked mailboxes
+# Manage linked mailboxes in Exchange Server
 
 Linked mailboxes may be necessary for organizations that deploy Exchange in a *resource forest*. The resource forest scenario lets an organization centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts that are located in one or more trusted forests (called *account forests*). The user account that accesses the linked mailbox doesn't exist in the forest where Exchange is deployed. Therefore, a disabled user account that exists in the same forest as Exchange is created and associated with the corresponding linked mailbox.
 
