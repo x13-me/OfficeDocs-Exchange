@@ -15,7 +15,7 @@ ms.prod: exchange-server-it-pro
 manager: serdars
 ---
 
-# Keyboard shortcuts in the Exchange admin center
+# Exchange admin center keyboard shortcuts
 
 Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about the keyboard shortcuts that make Exchange Server and other Microsoft products and services more accessible for people with disabilities.
 

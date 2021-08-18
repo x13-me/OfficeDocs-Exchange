@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Feature permissions
+# Feature permissions in Exchange Server
 
 Permissions in Microsoft Exchange Server are managed using the Role Based Access Control (RBAC) permissions model. The following topics identify the management role groups required to administer the features associated with each functional area in Exchange Server.
 
