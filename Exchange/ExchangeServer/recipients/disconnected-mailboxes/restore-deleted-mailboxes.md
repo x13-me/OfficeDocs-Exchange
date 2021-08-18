@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Connect or restore a deleted mailbox
+# Connect or restore a deleted mailbox in Exchange Server
 
 When you delete a mailbox, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. The associated Active Directory user account is also deleted. The mailbox is retained until the deleted mailbox retention period expires, which is 30 days by default, and then it's permanently deleted (or *purged*) from the mailbox database.
 
