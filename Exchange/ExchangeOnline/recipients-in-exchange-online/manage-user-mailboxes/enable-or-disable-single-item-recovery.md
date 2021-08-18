@@ -8,7 +8,7 @@ ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Enable or disable single item recovery for a mailbox
+title: Enable or disable single item recovery for a mailbox in Exchange Server
 ms.collection: 
 - exchange-online
 - M365-email-calendar
