@@ -15,6 +15,7 @@ mtps_version: v=EXCHG.150
 
 # Install of first Exchange server in the organization can't be delegated
 
+
 _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the logged-on user doesn't have the account permissions that are required to install the first Exchange 2013 server in the organization.

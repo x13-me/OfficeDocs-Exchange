@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Create a database availability group
+# Create a database availability group in Exchange Server
 
 A database availability group (DAG) is a set of up to 16 Microsoft Exchange Server Mailbox servers that provide automatic database-level recovery from a database, server, or network failure. When a Mailbox server is added to a DAG, it works with the other servers in the DAG to provide automatic, database-level recovery from database, server, and network failures.
 

@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Installation of first Exchange server in organization can't be delegated
+# Can't delegate installation of the first Exchange server in the organization
 
 _**Applies to:** Exchange Server 2013_
 
