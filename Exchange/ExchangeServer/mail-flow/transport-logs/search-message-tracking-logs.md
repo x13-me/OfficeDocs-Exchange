@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Search message tracking logs
+# Search message tracking logs in Exchange Server
 
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management Shell to search for entries in the message tracking log by using specific search criteria. For example:
 

@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Permanently delete a mailbox
+# Permanently delete a mailbox in Exchange Server
 
 When you permanently delete active mailboxes and disconnected mailboxes, all mailbox contents are purged from the Exchange mailbox database, and the data loss is permanent. When you permanently delete an active mailbox, the associated Active Directory user account is also deleted.
 
