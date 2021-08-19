@@ -19,7 +19,7 @@ manager: serdars
 
 ---
 
-# Migrate your public folders to Microsoft 365 Groups
+# Migrate your Exchange public folders to Microsoft 365 Groups
 
  **Summary**: Why you should or shouldn't migrate your Exchange public folders to Microsoft 365 Groups.
 
