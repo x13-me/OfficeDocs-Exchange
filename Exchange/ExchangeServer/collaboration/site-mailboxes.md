@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Site mailboxes
+# Site mailboxes in Exchange Server
 
 Email and documents are traditionally kept in two unique and separate data repositories. Most organizations collaborate using both mediums. The challenge is that both email and documents are accessed using different clients. This usually results in a reduction in user productivity and a degraded user experience.
 

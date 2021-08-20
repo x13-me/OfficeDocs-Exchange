@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Suspend or resume a mailbox database copy
+# Suspend or resume a mailbox database copy in Exchange Server
 
 You may need to suspend or resume a database copy for a variety of reasons, such as maintenance on the disk that contains the database copy. Or you may need to suspend an individual database copy from activation for disaster recovery purposes.
 

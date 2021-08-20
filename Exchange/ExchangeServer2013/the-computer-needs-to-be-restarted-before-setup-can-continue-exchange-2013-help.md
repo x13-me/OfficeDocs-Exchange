@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# The computer needs to be restarted before Setup can continue
+# The computer needs to be restarted before Setup can continue in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

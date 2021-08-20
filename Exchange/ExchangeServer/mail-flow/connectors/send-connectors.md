@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Send connectors
+# Send connectors in Exchange Server
 
 Exchange uses Send connectors for outbound SMTP connections from source Exchange servers to destination email servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
 
