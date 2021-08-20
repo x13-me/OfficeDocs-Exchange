@@ -25,7 +25,51 @@ If your organization has its own email server (also called on-premises server), 
 
 ## Validate and turn on connectors
 
-1. Sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the Exchange admin center. Select **Mail flow** and then **Connectors**.
+This section describes the procedures to validate and turn on connectors in both the New Exchange admin center (EAC) and Classic EAC.
+
+Before validating and turning on the connectors, sign in to Microsoft 365 or Office 365, choose **Admin**, and then select **Exchange** to go to the New EAC.
+
+> [!NOTE]
+> To navigate to Classic EAC, you need not seperately launch its URL. You can navigate from New EAC interface by clicking **Classic Exchange admin center** on the left-bottom.
+
+ **For New EAC**
+
+1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
+
+> [!NOTE]
+> Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This list includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
+
+2. Choose and click the connector you want to validate or turn on.
+
+:::image type="content" source="../../media/connector-chosen-in-new-eac.png" alt-text="The screen of New EAC on which the user chooses a connector for viewing its details":::
+
+3. Click the connector. The connector details screen appears.
+
+4. View the information.
+
+:::image type="content" source="../../media/display-of-validation-details.png" alt-text="The screen on which the validation history details for the connector is displayed":::
+
+When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screenshot.
+
+:::image type="content" source="../../media/connector-validation-link.png" alt-text="The screen on which the link that enables connector validation is displayed":::
+
+5. Under **Status**, if **Off** is displayed, click **Edit name or status**. The **Connector name** screen appears.
+
+6. Under **What do you want to do after connector is saved**, check the check box for **Turn it on**.
+
+7. Click **Next**. The **Validation email** screen appears.
+
+8. Enter an email address that is part of the active mailbox on your organization's email server.
+
+9. Click **+**, and then click **Validate**. The validation process starts.
+
+10. Once the validation process is completed, click **Save**.
+
+The connector is updated successfully from **being turned off** to **being turned on**.
+
+**For Classic EAC**
+
+1. Navigate to the Classic EAC portal by clicking **Classic Exchange admin center**. Select **mail flow** and then **connectors**.
 
    Any Microsoft 365 or Office 365 connectors that exist for your organization are listed on the **Connectors** page. This includes connectors that were created by using the Hybrid Configuration Wizard or PowerShell. You can validate any connector configured for mail flow from Microsoft 365 or Office 365 to your organization's email server, or to a partner organization.
 
@@ -44,10 +88,8 @@ If your organization has its own email server (also called on-premises server), 
 6. For each connector, check whether the connector is turned on. If a connector that you need for mail flow isn't turned on, under **Status** choose **Turn it on**.
 
 > [!NOTE]
-> If you continue to have mail flow issues after validating a connector, check whether you have set up multiple connectors that might apply in a single scenario. For example, problems can occur if you have more than one connector set up for mail flow from Microsoft 365 or Office 365 to your email server. If you need multiple connectors for mail flow from Microsoft 365 or Office 365 to your email server (or to a partner), make sure you validate and turn on each connector.
->
-> If you want to change a connector, Microsoft 365 or Office 365 uses the existing connector settings for mail flow until you save your changes. For more information, see [Change a connector that Microsoft 365 or Office 365 is using for mail flow](set-up-connectors-to-route-mail.md#change-a-connector-that-microsoft-365-or-office-365-is-using-for-mail-flow)
-
+> If you continue to have mail flow issues after validating a connector, check whether you have set up multiple connectors that might apply in a single scenario. For example, problems can occur if you have more than one connector set up for mail flow from Microsoft 365 or Office 365 to your email server. If you need multiple connectors for mail flow from Microsoft 365 or Office 365 to your email server (or to a partner), ensure you validate and turn on each connector. If you want to change a connector, Microsoft 365 or Office 365 uses the existing connector settings for mail flow until you save your changes. For more information, see [Change a connector that Microsoft 365 or Office 365 is using for mail flow](set-up-connectors-to-route-mail.md#change-a-connector-that-microsoft-365-or-office-365-is-using-for-mail-flow)
+ 
 ## See also
 
 [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](set-up-connectors-to-route-mail.md)

@@ -7,11 +7,13 @@ ms:contentKeyID: 62631020
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ms.custom: SaRA-Download_ExRCA
+description: Azure role in helping to identify issue with automatic checks
 ---
 
 # Azure: Help Identify My issue with Automatic Checks - DNS Records
@@ -38,17 +40,17 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 </tr>
 <tr class="even">
 <td><p>Domains</p></td>
-<td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365</p></td>
+<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365</p></td>
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Domains</p></td>
-<td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a CNAME record)</p></td>
+<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a CNAME record)</p></td>
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Domains</p></td>
-<td><p>My custom domain (e.g. contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a TXT record)</p></td>
+<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a TXT record)</p></td>
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
 </tr>
 <tr class="odd">
