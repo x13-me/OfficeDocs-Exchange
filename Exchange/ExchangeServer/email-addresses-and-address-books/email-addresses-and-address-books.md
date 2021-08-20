@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the different methods that Exchange Server 2016 and Exchange Server 2019 uses to organize and configure email addresses.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
 ms.reviewer:
 title: Email addresses and address books in Exchange Server

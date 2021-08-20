@@ -7,7 +7,7 @@ ms.reviewer:
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: MiniMaven
@@ -33,7 +33,7 @@ This error code is part of anti-spam filtering in Microsoft 365 or Office 365. Y
 
 This error response is called _IP throttling_, and it can help reduce the amount of spam that you receive.
 
-|||||
+|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |---|---|---|---|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this?](#im-an-email-admin-how-do-i-fix-this)|
 |fix-this)|

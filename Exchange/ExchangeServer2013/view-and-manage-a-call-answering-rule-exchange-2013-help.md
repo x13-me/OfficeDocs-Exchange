@@ -1,7 +1,7 @@
 ---
 title: 'View and manage a call answering rule: Exchange 2013 Help'
 TOCTitle: View and manage a call answering rule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

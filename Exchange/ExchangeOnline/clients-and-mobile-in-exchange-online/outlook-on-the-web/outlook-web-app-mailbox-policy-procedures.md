@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The list of Outlook on the web mailbox policy procedure topics in Exchange Online
 ms.topic: hub-page
 author: msdmaguire

@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
 ms.reviewer: 
-title: Add a mailbox database copy
+title: Add a mailbox database copy in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Add a mailbox database copy
+# Add a mailbox database copy  in Exchange Server
 
 When you add a copy of a mailbox database, continuous replication is automatically enabled between the existing database and the database copy. Database copies are automatically assigned an identity in the format of \< _DatabaseName_\>\\< _HostMailboxServerName_\>. For example, a copy of the database DB1 that's hosted on the server MBX3 would be DB1\MBX3.
 

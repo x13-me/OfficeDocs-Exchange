@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: Admins can learn how to use the mail flow insights dashboard in the new Exchange admin center to find and fix mail flow related issues.
 ms.custom:
@@ -29,6 +29,8 @@ The following mail flow insights are available:
 - [New users forwarding email insight](mfi-new-users-forwarding-email-insight.md)
 
 - [Domain expiring soon insight](domain-expiry-notification-feature.md)
+
+- [Mailboxes exceeding receiving limits insight](mailboxes-exceeding-receiving-limits-insights.md)
 
 ## Permissions required to view and use mail flow insights
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to set storage quotas on Exchange mailboxes.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.reviewer:
 title: Configure storage quotas for a mailbox
@@ -20,7 +20,7 @@ appliesto:
 - Exchange Server 2016
 ---
 
-# Configure storage quotas for a mailbox
+# Configure storage quotas for a mailbox in Exchange Server
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to customize the mailbox storage quotas for specific mailboxes. Storage quotas let you control the size of mailboxes and manage the growth of mailbox databases. When a mailbox reaches or exceeds a specified storage quota, Exchange sends a descriptive notification to the mailbox owner.
 

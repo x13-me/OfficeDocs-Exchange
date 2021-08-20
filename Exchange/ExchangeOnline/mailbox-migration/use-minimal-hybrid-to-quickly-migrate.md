@@ -1,6 +1,6 @@
 ---
-localization_priority: Normal
-ms.topic: get-started-article
+ms.localizationpriority: medium
+ms.topic: how-to
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef

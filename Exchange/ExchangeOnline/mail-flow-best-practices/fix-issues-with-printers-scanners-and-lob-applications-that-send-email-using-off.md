@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
 author: msdmaguire
@@ -126,6 +126,12 @@ There are a few things you should check:
 
 1. Enable Client SMTP submission on the licensed mailbox being used:
 
+   Run the following Powershell command-
+
+      Set-CASMailbox -Identity sean@contoso.com -SmtpClientAuthenticationDisabled $false
+   
+   Or
+
       - From Microsoft 365 Admin Center, go to **Active Users** and select the user.
 
       - Go to the Mail tab.
@@ -153,6 +159,16 @@ There are a few things you should check:
       - Select **Manage security defaults**.
 
       - Set the **Enable security defaults** toggle to **No**.
+
+      - Select **Save**.
+
+4. Exclude the user from a [Conditional Access policy](/azure/active-directory/conditional-access/overview) that [blocks Legacy Authentication](/azure/active-directory/conditional-access/block-legacy-authentication):
+
+      - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+
+      - Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+
+      - In the policy that blocks Legacy Authentication, exclude the mailbox being used under **Users and Groups** > **Exclude**.
 
       - Select **Save**.
 

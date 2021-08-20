@@ -1,6 +1,6 @@
 ---
-title: "Accessibility for people with disabilities"
-ms.author: dmaguire
+title: "Accessibility of Microsoft products for people with disabilities"
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -18,7 +18,7 @@ ms.reviewer:
 description: "Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:"
 ---
 
-# Accessibility for people with disabilities
+# Accessibility of Microsoft products for people with disabilities
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
 

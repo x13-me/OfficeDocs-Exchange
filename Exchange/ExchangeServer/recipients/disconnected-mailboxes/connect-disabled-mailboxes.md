@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how you can use the Exchange admin center(EAC) or the Exchange Management Shell in Exchange to connect a disabled mailbox to an Active Directory user account.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
 ms.reviewer:
 title: Connect a disabled mailbox
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Connect a disabled mailbox
+# Connect a disabled mailbox in Exchange Server
 
 When you disable a mailbox, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. The Exchange attributes are also removed from the corresponding Active Directory user account, but the user account is retained. The mailbox is retained until the deleted mailbox retention period expires, which is 30 days by default, before it's then deleted permanently (or *purged*) from the mailbox database.
 
@@ -105,7 +105,7 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 This example connects a personal archive to the primary mailbox using the mailbox GUID stored in mailbox database DB01.
 
 ```PowerShell
-Connect-Mailbox -Identity "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -Archive -User "Megan Bown" -Database "DB01"
+Enable-Mailbox -Identity "Megan Bown" -ArchiveGUID "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -ArchiveDatabase "DB01" -Archive
 ```
 
 If you do not know the name of the personal archive, you can view it in the Exchange Management Shell by running the following command. This example returns all personal archive mailboxes in mailbox database DB01.

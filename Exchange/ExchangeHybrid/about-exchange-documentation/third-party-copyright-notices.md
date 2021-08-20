@@ -1,6 +1,6 @@
 ---
-title: "Third-party copyright notices"
-ms.author: dmaguire
+title: "Copyright notices for third parties"
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: End User
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -18,7 +18,7 @@ ms.reviewer:
 description: "Outside In HTML Export © 1991, 2011 Oracle"
 ---
 
-# Third-party copyright notices
+# Copyright notices for third parties
 
 Outside In HTML Export © 1991, 2011 Oracle
 

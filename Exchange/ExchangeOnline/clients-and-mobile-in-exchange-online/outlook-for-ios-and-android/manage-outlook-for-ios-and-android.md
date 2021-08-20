@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: This article describes best practices for managing mobile devices with Outlook for iOS and Android in Exchange Online.'
 ms.topic: article
 author: msdmaguire

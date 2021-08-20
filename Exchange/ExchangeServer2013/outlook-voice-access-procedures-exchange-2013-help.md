@@ -1,7 +1,7 @@
 ---
 title: 'Outlook Voice Access procedures: Exchange 2013 Help'
 TOCTitle: Outlook Voice Access procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

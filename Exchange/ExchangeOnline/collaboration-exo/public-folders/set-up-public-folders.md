@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to set up public folders, including assigning permissions to them in the EAC.'
 ms.topic: article
 author: msdmaguire

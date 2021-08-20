@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to specify the default offline address book (OAB) in Exchange Online
 ms.topic: article
 author: msdmaguire

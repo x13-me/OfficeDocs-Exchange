@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
 ms.reviewer: 
 title: Using Windows Server Backup to back up and restore Exchange data

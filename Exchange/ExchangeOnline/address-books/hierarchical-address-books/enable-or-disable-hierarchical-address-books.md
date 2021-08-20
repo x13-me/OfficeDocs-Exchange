@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to enable and configure or disable a hierarchical address book in their Exchange Online organization.
 ms.topic: article
 author: msdmaguire

@@ -1,7 +1,7 @@
 ---
 title: 'View the administrator audit log: Exchange 2013 Help'
 TOCTitle: View the administrator audit log
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

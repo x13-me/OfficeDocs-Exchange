@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
 author: msdmaguire

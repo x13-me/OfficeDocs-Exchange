@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This topic describes the recipient filter options that admins can use in custom address lists and global address lists (GALs) in Exchange Online.
 ms.topic: article
 author: msdmaguire

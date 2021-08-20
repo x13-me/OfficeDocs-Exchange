@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the features in new EAC.
 ms.topic: overview
 author: Benny-54

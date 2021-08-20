@@ -1,7 +1,7 @@
 ---
 title: 'UM and voice mail terminology: Exchange 2013 Help'
 TOCTitle: UM and voice mail terminology
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

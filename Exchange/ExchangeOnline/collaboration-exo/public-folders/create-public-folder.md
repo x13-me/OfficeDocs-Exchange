@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 ms.topic: article
 author: msdmaguire
@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# Create a public folder
+# Create a public folder in Exchange Server
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can apply limits to messages in an Exchange Server 2016 or Exchange Server 2019 organization.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms.reviewer:
 title: Message size and recipient limits in Exchange Server

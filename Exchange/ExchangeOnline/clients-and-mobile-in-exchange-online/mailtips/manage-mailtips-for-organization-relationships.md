@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use Exchange Online PowerShell to configure custom settings for MailTips between various organizations.
 ms.topic: article
 author: msdmaguire

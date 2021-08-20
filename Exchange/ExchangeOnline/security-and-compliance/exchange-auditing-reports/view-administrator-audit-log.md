@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to view the admin audit log in Exchange Online
 ms.topic: article
 author: msdmaguire

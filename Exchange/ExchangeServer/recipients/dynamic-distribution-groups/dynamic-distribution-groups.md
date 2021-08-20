@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
 ms.topic: article
 author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer:
 title: Manage dynamic distribution groups

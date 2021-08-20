@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admin can learn how to configure the moderation settings on all recipient types in the Exchange admin center (EAC) and in PowerShell in Exchange Online.
 ms.topic: article
 author: msdmaguire
