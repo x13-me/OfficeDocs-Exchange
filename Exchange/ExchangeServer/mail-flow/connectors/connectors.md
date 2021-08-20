@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Connectors
+# Connectors on Exchange servers
 
 Exchange uses connectors to enable incoming and outgoing mail flow on Exchange servers, and also between services in the transport pipeline on the local Exchange server.
 

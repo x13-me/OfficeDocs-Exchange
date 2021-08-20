@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Copy eDiscovery search results to a discovery mailbox
+# Copy eDiscovery search results to a discovery mailbox in Exchange Server
 
 After you create an In-Place eDiscovery search in Exchange Server, you can use the Exchange admin center (EAC) to copy the results to a discovery mailbox. You can also use the Exchange Management Shell to start an eDiscovery search that was created using the **New-MailboxSearch** cmdlet, which will copy the results to the discovery mailbox that was specified when you created the search.
 

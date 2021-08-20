@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Deployment reference
+# Change Server deployment reference
 
 [Exchange Server readiness checks](readiness-checks.md)
 

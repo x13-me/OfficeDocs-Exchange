@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 ms.reviewer: 
-title: Active Manager
+title: Exchange Server Active Manager
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Active Manager
+# Exchange Server Active Manager
 
 Microsoft Exchange Server includes a component called *Active Manager* that manages the high availability platform that includes the database availability group (DAG) and mailbox database copies. Active Manager runs inside the Microsoft Exchange Replication service (MSExchangeRepl.exe) on all Mailbox servers. On Mailbox servers that aren't members of a DAG, there is a single Active Manager role: *Standalone Active Manager*.
 

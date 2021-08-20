@@ -8,7 +8,7 @@ ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Add or remove email addresses for a mailbox
+title: Add or remove email addresses for a mailbox Exchange Admin Center
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Add or remove email addresses for a mailbox
+# Add or remove email addresses for a mailbox in Exchange Admin Center
 
 > [!IMPORTANT]
 > Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!

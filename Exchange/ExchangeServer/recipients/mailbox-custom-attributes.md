@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Custom attributes
+# Custom attributes in Exchange Server
 
 Exchange Server includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 

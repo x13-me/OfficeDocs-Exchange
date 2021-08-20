@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Move a mailbox database using database portability
+# Move a mailbox database using database portability in Exchange Server
 
 Database portability can help reduce overall recovery times for some failure scenarios. By using database portability, reliability is improved by removing several error-prone, manual steps from the recovery processes. Note that Mailbox databases from previous versions of Exchange can't be moved to a Mailbox server running Exchange 2016 or Exchange 2019.
 

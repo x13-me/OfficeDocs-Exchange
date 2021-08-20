@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mobile devices
+# Mobile devices in Exchange Server
 
 There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Android phones and tablets, as well as the Apple iPhone, iPod, and iPad.
 

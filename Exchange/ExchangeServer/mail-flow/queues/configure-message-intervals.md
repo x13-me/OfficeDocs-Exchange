@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure message retry, resubmit, and expiration intervals
+# Configure message retry, resubmit, and expiration intervals in Exchange Server
 
 In Exchange Server, you can configure message retry, resubmit, and expiration intervals in the Transport service on Mailbox servers and Edge Transport servers. For detailed descriptions of these settings, see [Message retry, resubmit, and expiration intervals](message-intervals.md).
 

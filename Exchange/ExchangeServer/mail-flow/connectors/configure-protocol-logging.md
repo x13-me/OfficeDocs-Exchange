@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure protocol logging
+# Configure protocol logging in Exchange Server
 
 Protocol logging records the SMTP conversations that occur between messaging servers and between Exchange services in the transport pipeline as part of message delivery.
 

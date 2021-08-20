@@ -1,5 +1,5 @@
 ---
-title: "About Exchange documentation"
+title: "Exchange documentation"
 ms.author: serdars
 author: msdmaguire
 manager: serdars
@@ -18,7 +18,7 @@ ms.reviewer:
 description: "You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics."
 ---
 
-# About Exchange documentation
+# Exchange documentation
 
 You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
 

@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms.reviewer: 
-title: Address rewriting on Edge Transport servers
+title: "Exchange Server: Address rewriting on Edge Transport servers"
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Address rewriting on Edge Transport servers
+# Exchange Server: Address rewriting on Edge Transport servers
 
 Address rewriting in Exchange Server modifies the email addresses of senders and recipients in messages that enter or leave your organization through an Edge Transport server. Two transport agents on the Edge Transport server provide the rewriting functionality: the Address Rewriting Inbound Agent and the Address Rewriting Outbound Agent. The primary reason for address rewriting on outbound messages is to present a single, consistent email domain to external recipients. The primary reason for address rewriting on inbound messages is to deliver messages to the correct recipient.
 

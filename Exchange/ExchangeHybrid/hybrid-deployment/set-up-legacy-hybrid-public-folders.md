@@ -19,7 +19,7 @@ ms.reviewer:
 description: "Summary: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment."
 ---
 
-# Configure legacy on-premises public folders for a hybrid deployment
+# Configure legacy on-premises public folders for a hybrid deployment in Exchange Server
 
  **Summary**: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment.
 

@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create a recovery database
+# Create a recovery database in Exchange Server
 
 You can use the Exchange Management Shell to create a recovery database, a special kind of mailbox database that's used to mount and extract data from the restored database as part of a recovery operation. After you create a recovery database, you can move a recovered or restored mailbox database into the recovery database, and then use the [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest) cmdlet to extract data from the recovered database. After extraction, the data can then be exported to a folder or merged into an existing mailbox. Using recovery databases, you can recover data from a backup or copy of a database without disrupting user access to current data.
 

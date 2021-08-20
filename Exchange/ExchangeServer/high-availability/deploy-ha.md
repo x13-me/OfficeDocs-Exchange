@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Deploying high availability and site resilience
+# Deploying high availability and site resilience in Exchange Server
 
 Microsoft Exchange Server uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
 

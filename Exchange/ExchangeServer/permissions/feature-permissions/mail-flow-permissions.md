@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mail flow permissions
+# Mail flow permissions in Exchange Server
 
 The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run. For more information about transport features, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
 

@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef

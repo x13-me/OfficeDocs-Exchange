@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage database availability group membership
+# Manage database availability group membership in Exchange Server
 
 When you add a server to a DAG, the server works with the other DAG members to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, the server is no longer automatically protected from failures.
 

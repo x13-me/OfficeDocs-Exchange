@@ -19,7 +19,7 @@ ms.reviewer:
 description: "Summary: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online."
 ---
 
-# Configure Exchange Online public folders for a hybrid deployment
+# How to configure Exchange Online public folders for a hybrid deployment
 
  **Summary**: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online.
 

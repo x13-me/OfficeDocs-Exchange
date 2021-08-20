@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure Deleted Item retention and Recoverable Items quotas
+# Configure Deleted Item retention and Recoverable Items quotas in Exchange Server
 
 When a user deletes items from the Deleted Items default folder by using the Delete, Shift+Delete, or **Empty Deleted Items Folder** actions, the items are moved to the **Recoverable Items\Deletions** folder. The duration that deleted items remain in this folder is based on the deleted item retention settings configured for the mailbox database or the mailbox. By default, a mailbox database is configured to retain deleted items for 14 days, and the recoverable items warning quota and recoverable items quota are set to 20 gigabytes (GB) and 30 GB respectively.
 

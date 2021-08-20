@@ -19,7 +19,7 @@ title: Configure legacy on-premises public folders for a hybrid deployment
 
 ---
 
-# Configure legacy on-premises public folders for a hybrid deployment
+# Configure legacy on-premises public folders for a hybrid deployment of Exchange Server
 
 In a hybrid deployment, your users can be in Exchange Online, Exchange on-premises, or both, and your public folders are either in Exchange Online or Exchange on-premises. Public folders can only reside in one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
 

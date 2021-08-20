@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Dial tone portability
+# Dial tone portability in Exchange Server
 
 Dial tone portability is a feature of Exchange Server 2016 and Exchange Server 2019 that provides a limited business continuity solution for failures that affect a mailbox database, a server, or an entire site. A temporary mailbox maintains users' ability to send email, and this mailbox can be on the same Exchange Mailbox server or on any other Exchange Mailbox server in your organization, provided they contain databases with the same database schema version. This allows an alternative server to host the mailboxes of users who were previously on a server that is no longer available. Clients that support Autodiscover are automatically redirected to the new server without having to manually update the user's desktop profile. After the user's original mailbox data has been restored, an administrator can merge a user's recovered mailbox and the user's dial tone mailbox into a single, up-to-date mailbox.
 

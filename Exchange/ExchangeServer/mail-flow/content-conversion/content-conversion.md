@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Content conversion
+# Content conversion in Exchange Server
 
  *Content conversion* is the process of correctly formatting a message for each recipient. The decision to perform content conversion on a message depends on the destination and format of the message. They types of content conversion that occur in Exchange 2016 and Exchange 2019 are unchanged from Exchange 2013:
 

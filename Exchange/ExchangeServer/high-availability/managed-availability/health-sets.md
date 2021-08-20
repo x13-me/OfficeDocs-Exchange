@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage health sets and server health
+# Manage health sets and server health in Exchange Server
 
 You can use the built-in health reporting cmdlets to perform a variety of tasks related to managed availability, such as:
 

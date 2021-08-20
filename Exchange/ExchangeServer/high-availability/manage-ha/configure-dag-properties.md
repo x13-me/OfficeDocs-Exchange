@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure database availability group properties
+# Configure database availability group properties in Exchange Server
 
 The Exchange Management Shell enables you to configure DAG properties that aren't available in the EAC, such as alternate witness server and alternate witness directory information, the TCP port used for replication, and datacenter activation coordination (DAC) mode.
 

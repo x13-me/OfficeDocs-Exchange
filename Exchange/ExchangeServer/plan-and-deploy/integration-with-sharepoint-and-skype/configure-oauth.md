@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure OAuth authentication with SharePoint 2013 and Lync 2013
+# Exchange Server: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 
 Exchange 2016 supports partner applications such as SharePoint Server 2016 and Skype for Business Server 2015 by using OAuth configuration with the script, `Configure-EnterpriseApplication.ps1`. You can automate the task using the script to more easily configure authentication with partner applications and reduce configuration errors. The script performs the following tasks:
 

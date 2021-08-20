@@ -140,7 +140,7 @@ For detailed syntax and parameter information, see [Get-MailboxPlan](/powershell
 
 ## Use Exchange Online PowerShell to specify the default mailbox plan
 
-The default mailbox plan is used as the default template for new mailboxes that you create without a license (because the license specifies the mailbox plan).
+The default mailbox plan is used as the default template for new user mailboxes that you create without a license (because the license specifies the mailbox plan). For shared mailboxes, and resource mailboxes without a license, the ExchangeOnline mailbox plan is assigned, regardless of the default. For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 To specify the default mailbox plan, use the following syntax:
 
