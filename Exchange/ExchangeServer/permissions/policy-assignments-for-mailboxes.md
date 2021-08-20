@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to change the management role assignment policy assigned to a mailbox.'
 ms.topic: article
 author: msdmaguire

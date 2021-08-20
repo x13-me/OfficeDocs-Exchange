@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use hardware virtualization software with Exchange 2016 and Exchange 2019.'
 ms.topic: conceptual
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or Exchange Server 2019 organization.
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online.
 ms.topic: article
 author: msdmaguire

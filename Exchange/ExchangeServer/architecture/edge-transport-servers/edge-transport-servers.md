@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how Edge Transport servers provide Internet mail flow, antispam, and mail flow rules for your Exchange Server organization'
 ms.topic: reference
 author: msdmaguire

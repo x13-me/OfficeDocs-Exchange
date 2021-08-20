@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about public folders and how they work in Exchange 2016 and Exchange 2019.
 ms.topic: overview
 author: msdmaguire

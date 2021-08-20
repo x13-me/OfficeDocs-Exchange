@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A basic overview of Outlook on the web in Exchange Online.
 ms.topic: conceptual
 author: msdmaguire

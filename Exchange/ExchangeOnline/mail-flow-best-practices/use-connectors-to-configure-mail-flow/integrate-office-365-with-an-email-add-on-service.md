@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to integrate Microsoft 365 or Office 365 with a third-party service that affects mail flow.
 ms.topic: article
 author: msdmaguire

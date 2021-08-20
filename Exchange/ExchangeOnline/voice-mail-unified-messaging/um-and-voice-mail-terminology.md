@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This topic contains the terms and definitions that are used with Unified Messaging.
 ms.topic: article
 author: msdmaguire

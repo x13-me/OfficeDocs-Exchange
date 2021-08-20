@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder.'
 ms.topic: article
 author: msdmaguire

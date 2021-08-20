@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.'
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
 ms.topic: article
 author: msdmaguire

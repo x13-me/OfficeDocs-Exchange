@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are.'
 ms.topic: article
 author: msdmaguire

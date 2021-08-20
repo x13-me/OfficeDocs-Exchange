@@ -6,7 +6,7 @@ manager: serdars
 audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH

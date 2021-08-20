@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about managed availability and workload management in Exchange Server.'
 ms.topic: article
 author: msdmaguire

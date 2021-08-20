@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the default virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: msdmaguire

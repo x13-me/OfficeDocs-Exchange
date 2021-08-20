@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business Server.'
 ms.topic: article
 author: msdmaguire

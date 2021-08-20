@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or Exchange Server 2019"
 ms.topic: article
 author: msdmaguire

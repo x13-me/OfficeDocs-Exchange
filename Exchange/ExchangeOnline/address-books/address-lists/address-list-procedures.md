@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A list of topic links for the procedures that admins uses to manage address lists in Exchange Online.
 ms.topic: article
 author: msdmaguire

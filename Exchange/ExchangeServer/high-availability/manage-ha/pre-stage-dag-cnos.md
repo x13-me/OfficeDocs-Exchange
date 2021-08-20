@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Pre-stage and provision a cluster name object (CNO) for an Exchange Server database availability group (DAG).'
 ms.topic: article
 author: msdmaguire

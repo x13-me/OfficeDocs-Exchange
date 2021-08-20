@@ -7,7 +7,7 @@ audience: ITPro
 f1.keywords:
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 ms.custom:

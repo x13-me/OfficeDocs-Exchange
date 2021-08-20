@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: See a list of management role groups for managing Exchange 2016 or Exchange 2019 features'
 ms.topic: hub-page
 author: msdmaguire

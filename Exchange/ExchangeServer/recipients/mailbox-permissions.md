@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or Exchange Server 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.'
 ms.topic: article
 author: msdmaguire

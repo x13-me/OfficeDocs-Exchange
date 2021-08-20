@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how address rewriting on Edge Transport servers in Exchange Server can modify sender and recipient email addresses on email messages in transit.'
 ms.topic: overview
 author: msdmaguire

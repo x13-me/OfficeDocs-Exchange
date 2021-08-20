@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Review the voice mail calls in your organization
 ms.topic: article
 author: msdmaguire

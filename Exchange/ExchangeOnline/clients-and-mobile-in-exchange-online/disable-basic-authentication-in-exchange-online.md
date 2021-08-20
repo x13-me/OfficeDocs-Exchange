@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: jhendr
 f1.keywords:
 - NOCSH

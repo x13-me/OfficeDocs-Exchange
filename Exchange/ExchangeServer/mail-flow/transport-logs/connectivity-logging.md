@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

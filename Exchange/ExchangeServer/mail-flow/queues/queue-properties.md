@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about queue properties to use in filters in Exchange Server.
 ms.topic: article
 author: msdmaguire

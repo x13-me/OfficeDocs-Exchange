@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft 365 or Office 365 and Exchange Online provide several features that can help your end users easily collaborate in email.
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure a mobile phone to use Microsoft Exchange ActiveSync. You should perform this procedure on each mobile phone in your organization.
 ms.topic: article
 author: msdmaguire

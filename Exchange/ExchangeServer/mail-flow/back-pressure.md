@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages.'
 ms.topic: overview
 author: msdmaguire

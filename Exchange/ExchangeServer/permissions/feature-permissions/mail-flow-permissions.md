@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run.
 ms.topic: reference
 author: msdmaguire

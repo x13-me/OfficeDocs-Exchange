@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
 ms.topic: conceptual
 author: msdmaguire

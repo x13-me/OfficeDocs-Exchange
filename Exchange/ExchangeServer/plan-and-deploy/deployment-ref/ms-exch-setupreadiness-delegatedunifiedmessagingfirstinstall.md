@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange Server 2016 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization.
 ms.topic: reference
 author: msdmaguire

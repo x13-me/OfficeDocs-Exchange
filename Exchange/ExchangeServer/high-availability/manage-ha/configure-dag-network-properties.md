@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
 author: msdmaguire

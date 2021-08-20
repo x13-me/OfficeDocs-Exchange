@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes.
 ms.topic: conceptual
 author: msdmaguire

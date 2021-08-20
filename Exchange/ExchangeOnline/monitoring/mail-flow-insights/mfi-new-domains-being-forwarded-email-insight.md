@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the New domains being forwarded email insight in the new Exchange admin center to investigate when users in their organization are forwarding messages to external domains that have never been been forwarded to."
 ---

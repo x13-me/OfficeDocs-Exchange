@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange 2016 readiness checks
 ms.topic: hub-page
 author: msdmaguire

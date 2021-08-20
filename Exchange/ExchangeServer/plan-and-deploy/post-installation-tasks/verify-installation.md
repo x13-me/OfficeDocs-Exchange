@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to verify or troubleshoot your Exchange 2016 or Exchange 2019 installation.'
 ms.topic: get-started-article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019'
 ms.topic: article
 author: msdmaguire

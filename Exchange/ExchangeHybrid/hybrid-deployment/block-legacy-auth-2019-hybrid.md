@@ -7,7 +7,7 @@ ms.date:
 ms.audience: Developer
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid

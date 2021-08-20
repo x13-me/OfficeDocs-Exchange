@@ -7,7 +7,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: This alert policy allows you to track and manage your activities. 
 ms.custom:

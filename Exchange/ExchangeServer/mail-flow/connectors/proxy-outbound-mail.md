@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service.'
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

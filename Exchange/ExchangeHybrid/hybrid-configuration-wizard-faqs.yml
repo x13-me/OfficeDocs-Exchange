@@ -9,7 +9,7 @@ metadata:
   audience: ITPro
   ms.topic: overview
   ms.prod: exchange-server-it-pro
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - Hybrid
   - Ent_O365_Hybrid

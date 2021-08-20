@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to use mail flow rules (transport rules) for message approval scenarios that won't work with regular moderated recipients.
 ms.topic: overview
 author: msdmaguire

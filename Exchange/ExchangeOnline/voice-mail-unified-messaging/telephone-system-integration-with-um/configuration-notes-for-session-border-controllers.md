@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter.
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Create and manage public folders with one or more of these articles.'
 ms.topic: hub-page
 author: msdmaguire

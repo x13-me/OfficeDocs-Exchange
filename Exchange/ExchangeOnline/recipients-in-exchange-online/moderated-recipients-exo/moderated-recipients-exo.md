@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about message approval in Exchange Online
 ms.topic: overview
 author: msdmaguire

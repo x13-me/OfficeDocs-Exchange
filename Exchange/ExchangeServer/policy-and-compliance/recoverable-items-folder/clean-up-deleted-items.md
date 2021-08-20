@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

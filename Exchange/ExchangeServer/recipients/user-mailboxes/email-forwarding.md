@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Exchange admin center (EAC) to set up email forwarding.'
 ms.topic: article
 author: msdmaguire

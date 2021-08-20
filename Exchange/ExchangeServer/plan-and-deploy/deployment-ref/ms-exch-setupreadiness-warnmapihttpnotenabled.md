@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft Exchange Server 2016 Setup displayed this warning as the servers running Exchange 2016 or later in this organization and MAPI over HTTP aren't enabled.
 ms.topic: reference
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about the Exchange admin center, the web-based management console that's available in Exchange Server."
 ms.topic: overview
 author: msdmaguire

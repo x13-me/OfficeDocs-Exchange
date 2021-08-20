@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to enable, disable, and re-enable archive mailboxes in Exchange Server, and how to verify the archive mailbox settings for a user.'
 ms.topic: article
 author: msdmaguire

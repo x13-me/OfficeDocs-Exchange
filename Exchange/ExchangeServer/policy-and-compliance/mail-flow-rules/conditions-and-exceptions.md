@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire

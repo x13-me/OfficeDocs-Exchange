@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online.
 ms.topic: overview
 author: msdmaguire

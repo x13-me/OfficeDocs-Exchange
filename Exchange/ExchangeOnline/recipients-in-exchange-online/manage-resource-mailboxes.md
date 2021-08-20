@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create and modify resource mailboxes in Exchange Online.
 ms.topic: article
 author: msdmaguire

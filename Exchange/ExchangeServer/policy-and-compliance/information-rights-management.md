@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange Server 2016 and Exchange Server 2019 to help prevent the disclosure of sensitive information.'
 ms.topic: article
 author: msdmaguire

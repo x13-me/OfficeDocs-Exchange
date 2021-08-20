@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: About dial tone portability, which enables users to have a temporary mailbox for sending and receiving email while their original mailbox is being restored or repaired.'
 ms.topic: article
 author: msdmaguire

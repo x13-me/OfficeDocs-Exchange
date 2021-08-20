@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016 or Exchange Server 2019
 ms.topic: reference
 author: msdmaguire

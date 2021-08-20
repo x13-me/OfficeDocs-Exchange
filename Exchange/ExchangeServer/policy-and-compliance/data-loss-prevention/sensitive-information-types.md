@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange Server organization.'
 ms.topic: reference
 author: msdmaguire

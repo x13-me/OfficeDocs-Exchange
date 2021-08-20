@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how mail is routed between Exchange servers in an Exchange 2016 or Exchange 2019 organization.
 ms.topic: overview
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about how S/MIME in Exchange Server adds S/MIME-based security and lets you encrypt and digitally sign emails.'
 ms.topic: article
 author: msdmaguire
