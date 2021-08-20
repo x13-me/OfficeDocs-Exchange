@@ -28,7 +28,49 @@ For remote domain procedures, see [Manage remote domains in Exchange Online](man
 
 The following table describes the character sets that you can configure in remote domains.
 
-- In the Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
+## New Exchange admin center (EAC)
+
+1. Navigate to **Mail flow** > **Remote domains**. The **Remote domains** screen appears.
+
+2. Click **+ Add a remote domain**.
+
+The **Name the domain** screen appears.
+
+3. Provide a name for the domain and the remote domain in their respective text boxes.
+
+4. Click **Next**. The **Email reply types** screen appears.
+
+5. Configure the 'automatic email reply types' settings by choosing one of the following options:
+
+    - **None**
+    - **Allow only external out of office replies**
+    - **Allow internal out of office replies**
+
+6. Click **Next**. The **Message reporting** screen appears.
+
+7. Configure the message-reporting settings by choosing the following options:
+
+    - **Allow delivery options**
+    - **Allow non-delivery options**
+    - **Allow meeting forward notifications**
+    
+> [!NOTE]
+> You can choose one of more options.
+
+8. Click **Next**. The **Text and character set** screen appears.
+
+9. Configure the format and delivery method of email messages. Do this task by choosing any of the options in the following panes:
+
+    - **Use rich-text format**
+    - **Supported Character Set**
+
+10. Click **Next**. The **Review** screen appears.
+
+11. Review the settings configured and click **Save**. The new review domain is created successfully.
+
+## Classic EAC
+
+- Navigate to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
 
 - In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](/powershell/module/exchange/set-remotedomain) cmdlet.
 

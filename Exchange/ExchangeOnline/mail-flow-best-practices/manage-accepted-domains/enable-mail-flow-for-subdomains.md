@@ -29,7 +29,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > 
 > - In order to send email to public folders within your Exchange Online environment, you need to set the domain type to internal relay if the domain contains recipient addresses assigned to public folders. Directory-Based Edge Blocking cannot be used for public folders. 
 >
-> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that originates from Office 365 to your organization. For instructions, see [Use the EAC to add the domain to connector that originates from Office 365 to your organization](#use-the-eac-to-add-the-domain-to-connector-that-originates-from-office-365-to-your-organization).
+> - After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Microsoft 365 or Office 365), you must also change the connector that is used for transmitting messages from Office 365 to your organization's email server. For instructions, see [Use the EAC to add the domain to the connector used for transmitting messages from Office 365 to your organization's email server](#use-the-eac-to-add-the-domain-to-the-connector-used-for-transmitting-messages-from-office-365-to-your-organizations-email-server).
 
 ## What do you need to know before you begin?
 
@@ -44,7 +44,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the Exchange admin center (EAC) to set up match-subdomains on a domain
+## Use the Exchange admin center (EAC) to set up match subdomains on a domain
 
 ### New EAC
 
@@ -79,29 +79,60 @@ The domain details dialog box is displayed.
 
 :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
 
-## Use the EAC to add the domain to connector that originates from Office 365 to your organization
+## Use the EAC to add the domain to the connector used for transmitting messages from Office 365 to your organization's email server
 
 ### New EAC
 
 1. Navigate to **Mail Flow** \> **Connectors**.
 
-2. Select a connector that originates from Office 365 to your organization's email server, and click it.
+2. Select a connector that is used for transmitting messages from Office 365 to your organization's email server.
 
+3. Click the connector.
 The connector properties screen appears.
 
-3. Under **Use of connector**, click **Edit use**. The **Use of connector** screen appears.
+4. Under **Use of connector**, click **Edit use**. The **Use of connector** screen appears.
 
-4. Click the radio button for **Only when email messages are sent to these domains**.
+5. Click the radio button for **Only when email messages are sent to these domains**.
 
 :::image type="content" source="../../media/determining-timing-of-connector-new-eac.png" alt-text="The option on the New EAC screen to choose when the connector can be used":::
 
-5. In the text box, enter the name of the domain to which you want to apply the connector. For example, ***.contoso.com**.
+6. In the text box, enter the name of the domain to which you want to apply the connector. For example, ***.contoso.com**.
 
-6. Click **+**.
+7. Click **+**.
 
-7. Click **Next**. The **Validation email** screen appears.
+8. Click **Next**. The **Validation email** screen appears.
 
-8. In the text box, enter the email of an active mailbox on your organization's server.
+9. In the text box, enter the email of an active mailbox on your organization's server.
+
+10. Click **+**.
+
+11. Click **Validate**. The validation process starts.
+
+12. Once the validation process is completed, click **Save**.
+
+### Classic EAC
+
+1. Navigate to **Mail Flow** \> **Connectors**.
+
+2. Select a connector that is used for transmitting messages from Office 365 to your organization's email server.
+ 
+3. Click the "Edit" icon ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The **Edit Connector** screen appears.
+
+4. Click **Next**. The **When do you want to use this connector** section appears.
+
+5. Select the radio button for **Only when email messages are sent to these domains**.
+
+:::image type="content" source="../../media/determining-timing-of-connector-old-eac.png" alt-text="The option on the Classic EAC screen to choose when the connector can be used":::
+
+6. Click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
+
+7. In the text box, enter the name of the domain to which you want to apply the connector. For example, \*.contoso.com.
+
+8. Click **OK**. The **Edit Connector** screen reappears. The value *.contoso.com is listed in the text field.
+
+9. Click **Next** and navigate through the other screens in the wizard.
+
+10.  Click **Save** on the last screen.
 
 9. Click **+**.
 
@@ -147,5 +178,3 @@ This example sets up match subdomains for the contoso.com domain.
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
 For detailed syntax and parameter information, see [Set-AcceptedDomain](/powershell/module/exchange/set-accepteddomain).
-
-
