@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Public folders
+# Public folders in Exchange Server
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help make content in a deep hierarchy easier to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to find the content they're interested in.
 
