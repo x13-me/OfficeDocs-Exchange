@@ -134,9 +134,39 @@ The connector properties screen appears.
 
 10.  Click **Save** on the last screen.
 
-## Use Exchange Online PowerShell to set up match subdomains on a domain
+9. Click **+**.
 
-To add match subdomains to a domain that is set up as an internal relay, use this syntax:
+10. Click **Validate**. The validation process starts.
+
+11. Once the validation process is completed, click **Save**.
+
+### Classic EAC
+
+1. Navigate to **Mail Flow** \> **Connectors**.
+
+2. Select a connector that originates from Office 365 to your organization's email server.
+ 
+3. Click the "Edit" icon ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The **Edit Connector** screen appears.
+
+4. Click **Next**. The **When do you want to use this connector** section appears.
+
+5. Select the radio button for **Only when email messages are sent to these domains**.
+
+:::image type="content" source="../../media/determining-timing-of-connector-old-eac.png" alt-text="The option on the Classic EAC screen to choose when the connector can be used":::
+
+6. Click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
+
+7. In the text box, enter the name of the domain to which you want to apply the connector. For example, \*.contoso.com.
+
+8. Click **OK**. The **Edit Connector** screen reappears. The value *.contoso.com is listed in the text field.
+
+9. Click **Next** and navigate through the other screens in the wizard.
+
+10.  Click **Save** on the last screen.
+
+## Use Exchange Online PowerShell to set up match-subdomains on a domain
+
+To add the match subdomains to a domain that is set up as an internal relay, use this syntax:
 
 ```powershell
 Set-AcceptedDomain -Identity <Domain Name> -MatchSubdomains $true
