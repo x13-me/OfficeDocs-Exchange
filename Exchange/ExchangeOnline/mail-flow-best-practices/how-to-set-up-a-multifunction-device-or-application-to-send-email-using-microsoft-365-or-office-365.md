@@ -93,7 +93,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a username and password using OAuth to send email on the device or application. You also need to follow the steps in [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to allow your application to use OAuth in Microsoft 365 or Office 365. We do not recommend to use Basic Authentication as it will be disabled in Exchange Online. For more information, see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904).
+- **Authentication**: You must be able to configure a username and password using OAuth to send email on the device or application. You also need to follow the steps in [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to allow your application to use OAuth in Microsoft 365 or Office 365. We do not recommend to use Basic Authentication as it will be disabled in Exchange Online. For more information, see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904). If SMTP AUTH is disabled for the organization or the mailbox being used, you must use Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 
