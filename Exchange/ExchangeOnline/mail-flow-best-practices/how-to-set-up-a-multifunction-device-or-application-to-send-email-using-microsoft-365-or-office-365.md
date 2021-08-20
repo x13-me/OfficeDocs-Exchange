@@ -108,7 +108,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Limitations of SMTP AUTH client submission
 
-You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes. Microsoft 365 or Office 365 imposes some sending limits, see [Exchange Online limits - Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) for more information.
+You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes. Microsoft 365 or Office 365 imposes some sending limits. See [Exchange Online limits - Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) for more information.
 
 ## Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)
 
