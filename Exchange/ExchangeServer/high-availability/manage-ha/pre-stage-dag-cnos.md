@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Pre-stage the cluster name object for a database availability group
+# Pre-stage the cluster name object for a database availability group in Exchange Server
 
 In environments where computer account creation is restricted, or where computer accounts are created in a container other than the default computers container, you can pre-stage the cluster name object (CNO) and then provision the CNO by assigning permissions to it.
 
