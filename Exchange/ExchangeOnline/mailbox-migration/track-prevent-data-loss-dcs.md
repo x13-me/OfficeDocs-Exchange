@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Track and prevent migration data loss with DataConsistencyScore'
 ms.topic: overview
 author: msdmaguire

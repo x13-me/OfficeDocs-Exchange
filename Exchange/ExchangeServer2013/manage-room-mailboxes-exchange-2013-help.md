@@ -1,7 +1,7 @@
 ---
 title: 'Create and manage room mailboxes: Exchange 2013 Help'
 TOCTitle: Create and manage room mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

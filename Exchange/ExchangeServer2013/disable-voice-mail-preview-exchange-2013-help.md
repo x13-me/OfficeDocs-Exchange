@@ -1,7 +1,7 @@
 ---
 title: 'Disable Voice Mail Preview for users: Exchange 2013 Help'
 TOCTitle: Disable Voice Mail Preview for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: 'Reduce the size of a discovery mailbox in Exchange: Exchange 2013 Help'
 TOCTitle: Reduce the size of a discovery mailbox in Exchange
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

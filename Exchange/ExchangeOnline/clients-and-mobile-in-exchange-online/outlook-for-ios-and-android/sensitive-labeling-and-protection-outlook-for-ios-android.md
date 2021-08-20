@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
 author: msdmaguire

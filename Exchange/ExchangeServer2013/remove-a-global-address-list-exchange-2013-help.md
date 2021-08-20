@@ -1,7 +1,7 @@
 ---
 title: 'Remove a global address list: Exchange 2013 Help'
 TOCTitle: Remove a global address list
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

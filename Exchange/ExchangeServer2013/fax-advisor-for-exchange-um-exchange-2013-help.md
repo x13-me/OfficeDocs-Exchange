@@ -1,7 +1,7 @@
 ---
 title: 'Fax advisor for Exchange UM: Exchange 2013 Help'
 TOCTitle: Fax advisor for Exchange UM
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

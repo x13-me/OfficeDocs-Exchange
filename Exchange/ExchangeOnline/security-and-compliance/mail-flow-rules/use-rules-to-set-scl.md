@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
@@ -65,7 +65,7 @@ If you want to mark specific messages as spam before they're even scanned by spa
    - **Bypass spam filtering**: The messages will skip spam filtering.
 
      > [!CAUTION]
-     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365.md).
+     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
 
    - **0 to 4**: The message is sent through spam filtering for additional processing.
 

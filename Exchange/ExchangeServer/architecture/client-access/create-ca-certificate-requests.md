@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms.reviewer:
 title: Create an Exchange Server certificate request for a certification authority

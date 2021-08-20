@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results.
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms.reviewer: 
 title: Message properties and search operators for In-Place eDiscovery in Exchange Server
@@ -97,8 +97,8 @@ Here's a list of the unsupported characters for an In-Place eDiscovery search qu
 
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
-- You can use only prefix wildcard searches (for example, **cat\*** or **set\***). Suffix wildcard searches (\*cat) or substring wildcard searches (\*cat\*) aren't supported.
+- You can use only prefix wildcard searches (for example, **\*cat** or **\*set**). Suffix wildcard searches (cat\*) or substring wildcard searches (\*cat\*) aren't supported.
 
-- When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
+- When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
 
 - To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, **-from:"Sara Davis"** will exclude any messages sent by Sara Davis.

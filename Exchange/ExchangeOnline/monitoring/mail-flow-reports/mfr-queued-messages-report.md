@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor outbound messages that were sent over connectors from your organization that have been delayed for over an hour."
 ---
@@ -25,9 +25,10 @@ Microsoft 365 will continue to retry to delivery for 24 hours. After 24 hours, t
 If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:
 
 - The **Queued messages report** report in the new Exchange admin center (new EAC). For more information, see the [Queues](#queues) section in this topic.
-  
-- An alert is displayed on the **Alerts** page in the Microsoft 365 Defender portal (<https://security.microsoft.com> \> **Incidents & alerts** \> **Alerts** or <https://security.microsoft.com/alerts>).
 
+  For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
+
+- An alert is displayed on the **Alerts** page in the Microsoft 365 Defender portal (<https://security.microsoft.com> \> **Incidents & alerts** \> **Alerts** or <https://security.microsoft.com/alerts>).
 - Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
 
   For more information about alert policies, see [Alert policies in the Microsoft 365 compliance center](/microsoft-365/compliance/alert-policies).
@@ -46,7 +47,6 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
    - **Email recipients** and **Daily notification limit**: Click the **Edit** link or the **Edit policy** button to configure the settings as described in the next step.
 
 4. In the **Edit policy** flyout that appears, configure the following settings:
-
    - **Send email notifications**: The default value is **On** (selected).
    - **Email recipients**: The default value is **TenantAdmins**.
    - **Daily notification limit**: The default value is **No limit**.

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
 author: msdmaguire
@@ -41,7 +41,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 To set up hosted mail flow, we recommend using the Microsoft 365 setup wizard. To get to the Microsoft 365 setup wizard, go to **Setup** in the Microsoft 365 admin center.
 
-![Screenshot of the Setup option in the admin center navigation menu](../media/41bc173f-5a06-4325-b613-b307d3eb0873.png)
+:::image type="content" source="../media/ms-365-admin-center.png" alt-text="interface of Microsoft 365 Admin center":::
 
 The Microsoft 365 setup wizard walks you through the following steps.
 
@@ -49,7 +49,7 @@ The Microsoft 365 setup wizard walks you through the following steps.
 
 2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).)
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this task? Follow the instructions on [this page](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).)
 
    The following DNS records control mail flow:
 
@@ -57,7 +57,7 @@ The Microsoft 365 setup wizard walks you through the following steps.
 
    For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
 
-   - **SPF record** - This is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Microsoft 365 and Office 365 are sending all your messages, list only Microsoft 365 or Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
+   - **SPF record** - This record is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Microsoft 365 and Office 365 are sending all your messages, list only Microsoft 365 or Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
 
    ```text
    v=spf1 include:spf.protection.outlook.com -all

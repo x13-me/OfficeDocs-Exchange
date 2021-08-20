@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Outside In HTML Export © 1991, 2011 Oracle
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
 ms.reviewer: 
 title: Third-party copyright notices

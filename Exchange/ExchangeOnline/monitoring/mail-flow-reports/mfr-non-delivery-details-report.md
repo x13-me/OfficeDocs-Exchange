@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
 ---
@@ -19,6 +19,8 @@ The **Non-delivery details report** in the new Exchange admin center (new EAC) s
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 ![Overview of the Non-delivery details report](../../media/mfr-non-delivery-details-report.png)
 

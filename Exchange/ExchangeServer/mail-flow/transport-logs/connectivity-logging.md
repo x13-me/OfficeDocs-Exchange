@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
 ms.reviewer: 
 title: Connectivity logging in Exchange Server

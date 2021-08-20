@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
 ms.topic: article
 author: msdmaguire

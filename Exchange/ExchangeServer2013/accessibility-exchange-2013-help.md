@@ -1,7 +1,7 @@
 ---
 title: 'Accessibility for people with disabilities: Exchange 2013 Help'
 TOCTitle: Accessibility for people with disabilities
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

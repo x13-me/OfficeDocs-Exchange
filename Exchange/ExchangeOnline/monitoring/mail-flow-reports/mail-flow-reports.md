@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: Admins can learn about the mail flow reports that are available in the new Exchange admin center.
 ms.custom:
@@ -38,6 +38,8 @@ The following mail flow reports are available:
 
 - [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
 
+- [Mailboxes exceeding receiving limits report](mailboxes-exceeding-receiving-limits-report.md)
+
 ## Permissions required to view mail flow reports
 
 To view and use mail flow reports, you need to be a member of one of the following role groups in Exchange Online:
@@ -50,7 +52,7 @@ To view and use mail flow reports, you need to be a member of one of the followi
 
 For more information, see [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md) and [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
-<sup\>*</sup> You manage these role groups in the [Azure Active Directory admin center](https://aad.portal.azure.com).
+<sup\>*</sup> You manage these role groups in the Azure Active Directory admin center (<https://aad.portal.azure.com>).
 
 ## Where to find mail flow reports
 

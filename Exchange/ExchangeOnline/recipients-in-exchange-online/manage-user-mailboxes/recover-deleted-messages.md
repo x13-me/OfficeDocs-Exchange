@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Administrators can search for and recover deleted email messages in a user's mailbox.
 ms.topic: article
 author: msdmaguire

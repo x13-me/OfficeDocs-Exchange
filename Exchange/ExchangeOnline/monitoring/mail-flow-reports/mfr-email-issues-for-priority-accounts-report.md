@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
 description: "Admins can learn how to use the Email issues for priority accounts monitoring in the new Exchange admin center to see delayed and failed email messages that were sent to or from priority accounts."
@@ -19,9 +19,10 @@ description: "Admins can learn how to use the Email issues for priority accounts
 > [!NOTE]
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:
 >
-> - Microsoft 365 E3 or Microsoft 365 E5.
+> - At least 5,000 licenses for one or more of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5. For example, 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5 licenses.
+> - At least 50 monthly active Exchange Online users.
 >
-> - At least 10,000 licensed users and at least 50 monthly active Exchange Online users.
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 The **Email issues for priority accounts** report in the new Exchange admin center (new EAC) allows Exchange Admins and Global admins to view failed events from the last 15 minutes and delayed email messages from last 6 hours that were sent to or sent from priority accounts. If no issues are found, the report will be empty. Users can configure to receive email notifications for failed and delayed messages which will provide information at the time alert is fired.
 
@@ -57,6 +58,9 @@ Select an entry in the list to be taken to the [message trace](../../monitoring/
 
 ![Message trace detail in message trace in the new EAC](../../media/mfr-priority-users-message-trace-detail.png)
 
+> [!NOTE]
+> For the following procedures, you need to be a Security Reader to see the alerts, and a Security Administrator to edit the policy.
+
 Click **Export** to export the displayed results to a .csv file.
 
 Click **Manage priority accounts** to add or remove users from the priority accounts list.
@@ -66,7 +70,6 @@ Click **Edit policy** to configure email notifications related to priority accou
 - **Send email notification**: Select or clear this checkbox.
 - **Send email notifications to these users or groups**: Click in the box to find or enter a user or group to receive email notifications.
 - **Daily notification limit**: Select from the following values: **No limit**, 1 (default), 5, 10, 25, 50, 150, or 200.
- 
 - **Threshold**: An email notification is sent when the number of failed or delayed email messages for priority accounts exceeds the specified value. The default value is 100.
 
 You can see alerts for delayed and failed messages under **View Alerts**. Selecting the alert will provide details about the messages that were delayed or failed at the time alert is fired.

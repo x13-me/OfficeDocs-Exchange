@@ -1,7 +1,7 @@
 ---
 title: 'Change an extension number: Exchange 2013 Help'
 TOCTitle: Change an extension number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

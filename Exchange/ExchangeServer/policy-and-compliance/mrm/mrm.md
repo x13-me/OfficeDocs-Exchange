@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about Messaging records management in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.reviewer: 
 title: Messaging records management in Exchange Server

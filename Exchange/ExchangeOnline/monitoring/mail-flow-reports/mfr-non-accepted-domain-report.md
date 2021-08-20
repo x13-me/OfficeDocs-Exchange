@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Non-accepted domain report in the new Exchange admin center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
@@ -21,6 +21,8 @@ Microsoft 365 might throttle these messages if we have data to prove that the in
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 The overview section contains a chart that shows the number of messages sent per connector:
 

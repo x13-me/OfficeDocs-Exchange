@@ -1,7 +1,7 @@
 ---
 title: 'Disable a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Disable a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

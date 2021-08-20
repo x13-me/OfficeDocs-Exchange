@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of SMTP AUTH in Exchange Online.'
 ms.topic: conceptual
 author: msdmaguire

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Learn about the permission that are required for tasks in standalone Exchange Online Protection
 ms.technology: mdo

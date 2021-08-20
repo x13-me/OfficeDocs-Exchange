@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You can do this by creating a custom management scope. This custom management scope uses a recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties.
 ms.topic: article
 author: msdmaguire
@@ -111,6 +111,8 @@ Run this command to add the Ottawa Users eDiscovery Managers security group as a
 ```PowerShell
 Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Users eDiscovery Managers"
 ```
+> [!NOTE]
+> For Exchange on-premises, the discovery managers will have to be added directly to the distribution group used to create the management scope. Nested groups will not work.
 
 You can also use the EAC to add members to a distribution group. For more information, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
 

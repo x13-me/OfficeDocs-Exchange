@@ -7,7 +7,7 @@ ms.reviewer:
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: MiniMaven
@@ -28,7 +28,7 @@ It's frustrating when you get an error after sending an email message. This topi
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
 |
 
-## I got this bounce message. How do I fix it?
+## I got this bounce message. How do I fix this issue?
 
 Only the group owner or an email admin in the recipient's organization can fix this issue. Contact the group owner or email admin and refer them to this information so they can try to resolve the issue for you.
 
@@ -40,7 +40,29 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 ### Method 1: Allow all internal and external senders to send messages to this group
 
-1. 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+#### New Exchange admin center (EAC)
+
+1. Go to **Recipients** \> **Groups**.
+
+2. Select a group from the list and click it. The group properties screen appears.
+
+   :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
+
+3. Click the **Settings** tab.
+
+   :::image type="content" source="../../media/group-screen.png" alt-text="The screen on which group details are displayed":::
+
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
+ 
+5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
+ 
+   :::image type="content" source="../../media/adding-all-senders-to-group.png" alt-text="The screen on which all the senders are added to the senders group":::
+
+6. Click **Save changes**.
+
+#### Classic EAC
+
+1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 :::image type="content" source="../../media/navigation-to-groups-tab.png" alt-text="The screen that displays the groups option":::
 
@@ -66,12 +88,35 @@ Instead of allowing all external senders to send messages to this group, you can
 
 - The group's allowed senders list is different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
 
-To configure the group's allowed senders list, open the EAC do the following steps:
+To configure the group's allowed senders list, perform the following steps:
+
+#### New EAC
+
+1. Go to **Recipients** \> **Groups**.
+
+2. Select a group from the list and click it. The group properties screen appears.
+
+   :::image type="content" source="../../media/group-properties.png" alt-text="The screen displaying the properties of the chosen group":::
+
+3. Click the **Settings** tab.
+
+4. Under **Delivery management**, click **Edit delivery management**. The **Delivery management** screen appears.
+
+5. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
+
+6. Under **Specified senders**, click inside the text box. The list of senders (internal and external) is displayed.
+
+   :::image type="content" source="../../media/list-of-senders.png" alt-text="The screen that lists the internal and external senders who can be added to the senders list":::
+
+7. Choose the senders you want to add to the senders list, and click **Save changes**.
+
+   :::image type="content" source="../../media/choosing-profile-of-a-sender.png" alt-text="The screen on which a chosen sender is added to the senders group":::
+
+#### Classic EAC
 
 1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 2. In the group properties dialog box that opens, go to **Delivery management** and configure the following settings:
-
    - Select **Senders inside and outside of my organization**.
 
    - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.

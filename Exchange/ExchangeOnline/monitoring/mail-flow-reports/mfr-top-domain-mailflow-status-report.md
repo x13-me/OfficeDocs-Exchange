@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Top domain mailflow status report in the new Exchange admin center to identify and troubleshoot mail flow in your email domains."
 ---
@@ -19,6 +19,8 @@ The **Top domain mailflow status** report in the new Exchange admin center (new 
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days. If the report is empty, try changing the date range.
+>
+> For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
 This report shows the following information for each domain:
 
@@ -33,13 +35,9 @@ To quickly filter the results, click **Search** ![Search icon](../../media/moder
 For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 
 - **Name your filter**: Enter a unique name.
-
 - Click **Add new clause**. A clause contains the following elements that you need to enter:
-
   - **Field**: Select **Domain**, **Domain status**, **Previous MX record**, **Current MX record**, or **Email received (past 6 hours)**.
-
   - **Operator**: Select **starts with** or **is**.
-
   - **Value**: Enter the value you want to search for.
 
   You can click **Add new clause** as many times as you need. Multiple clauses use AND logic (\<Clause1\> AND \<Clause2\>...).
@@ -55,5 +53,4 @@ Click **Export** to export the displayed results to a .csv file.
 If you select a row, a details pane for the domain appears based on the value of **Domain status**:
 
 - **Healthy**: An explanation about MX records and the same information from the main report is displayed.
-
 - **Error**: Additional information about the the cause of the error and how to fix it are available in the **Reason** and **How to fix** sections.
