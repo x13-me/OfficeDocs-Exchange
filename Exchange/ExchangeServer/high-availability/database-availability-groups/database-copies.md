@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mailbox database copies
+# Mailbox database copies in Exchange Server
 
 Microsoft Exchange Server leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.
 

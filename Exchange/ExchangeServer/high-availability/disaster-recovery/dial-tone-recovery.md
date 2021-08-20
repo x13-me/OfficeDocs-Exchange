@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Perform a dial tone recovery
+# Perform dial tone recovery in Exchange Server
 
 The process for using dial tone portability is called a dial tone recovery, which involves creating an empty database on a Mailbox server to replace a failed database. To learn more, see [Dial tone portability](dial-tone-portability.md).
 
