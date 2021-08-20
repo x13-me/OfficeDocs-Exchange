@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Sharing and collaboration permissions
+# Sharing and collaboration permissions in Exchange Server
 
 The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](../../collaboration/collaboration.md) and [Sharing](../../../ExchangeServer2013/sharing-exchange-2013-help.md).
 

@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Server health and performance permissions
+# Server health and performance permissions in Exchange Server
 
 The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
 
