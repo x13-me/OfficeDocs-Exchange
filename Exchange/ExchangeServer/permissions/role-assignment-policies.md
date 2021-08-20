@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage role assignment policies
+# Manage role assignment policies in Exchange Server
 
 If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](../../ExchangeServer2013/understanding-management-role-assignment-policies-exchange-2013-help.md).
 

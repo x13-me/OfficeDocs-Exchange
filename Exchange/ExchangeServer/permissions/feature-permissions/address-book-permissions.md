@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Email address and address book permissions
+# Email address and address book permissions in Exchange Server
 
 The permissions required to configure email address and address book features vary depending on the procedure being performed or the cmdlet you want to run. For more information about email addresses and address books, see [Email addresses and address books in Exchange Server](../../email-addresses-and-address-books/email-addresses-and-address-books.md).
 
