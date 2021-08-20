@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Default settings for Exchange virtual directories
+# Default settings for Exchange virtual directories in Exchange Server
 
 Exchange Server 2016 and Exchange Server 2019 automatically configure multiple Internet Information Services (IIS) virtual directories during the server installation. The tables in the following sections show the settings for the Client Access (frontend) services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
 
