@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to move or recreate the message queue database in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms.reviewer: 
 title: Change the location of the queue database
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Change the location of the queue database
+# Change the location of the queue database in Exchange Server
 
 Exchange Server uses an Extensible Storage Engine (ESE) database for queue message storage. All the different queues are stored in a single ESE database. Queues exist on Exchange Mailbox servers and Edge Transport servers. For more information about queues, see [Queues and messages in queues](queues.md).
 

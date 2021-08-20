@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android.
 ms.topic: article
 author: serdars
@@ -89,19 +89,14 @@ The hybrid Modern Authentication architecture has the following technical requir
 > On-premises accounts leveraging hybrid Modern Authentication with Outlook mobile are not supported with Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants.
 
 1. **Exchange on-premises setup**:
-
    - Exchange Server 2019 Cumulative Update 1 (CU1) or later, Exchange Server 2016 Cumulative Update 8 (CU8) or later, or Exchange Server 2013 CU19 or later on all Exchange servers. In hybrid deployments (on-premises Exchange and Exchange Online) or in organizations that use Exchange Online Archiving (EOA) with their on-premises Exchange deployment, you need to deploy the most current CU or one CU prior to the most current.
 
    - All Exchange 2007 or Exchange 2010 servers must be removed from the environment. These versions of Exchange are out of mainstream support and won't work with Intune-managed Outlook for iOS and Android. In this architecture, Outlook for iOS and Android uses OAuth as the authentication mechanism. One of the on-premises configuration changes that occur enables the OAuth endpoint to the Microsoft Cloud as the default authorization endpoint. When this change is made, clients can start negotiating the use of OAuth. Because this change spans the whole organization, Exchange 2010 mailboxes fronted by either Exchange 2013 or 2016 will incorrectly think they can do OAuth and will end up in a disconnected state, since Exchange 2010 doesn't support OAuth as an authentication mechanism.
 
 2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises mail recipient directory with Azure Active Directory, via Azure AD Connect. If you have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, ensure that the following applications are selected:
-
    - Office 365 ProPlus
-
    - Exchange Online
-
    - Azure RMS
-
    - Intune
 
     If you don't have **Azure AD app and attribute filtering** enabled in Azure AD Connect configuration, all required applications are already selected by default.
@@ -110,18 +105,14 @@ The hybrid Modern Authentication architecture has the following technical requir
     > Outlook for iOS and Android uses the tenant's Exchange Online Global Address List for on-premises mailboxes that leverage hybrid Modern Authentication. If all mail recipients are not synchronized into Azure Active Directory, users will experience mail flow issues.
     
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
-
    - A hybrid Microsoft 365 or Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is set up as specified in the [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
        > [!NOTE]
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](../../../ExchangeHybrid/hybrid-deployment/hybrid-agent.md).
 
    - Requires a Microsoft 365 or Office 365 Enterprise, Business, or Education organization.
-
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter).
-
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online)) 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
-
    - AutoDiscover and Exchange ActiveSync namespaces must be accessible from the Internet and cannot be fronted by a pre-authentication solution.
 
    - Ensure SSL or TLS offloading isn't being used between the load balancer and your Exchange servers, as this set up will affect the use of the OAuth token. SSL and TLS bridging (termination and re-encryption) is supported.
@@ -129,17 +120,13 @@ The hybrid Modern Authentication architecture has the following technical requir
 4. **Intune setup**: Both Intune standalone and [Co-Management](/sccm/comanage/overview) deployments are supported (Basic Mobility and Security for Microsoft 365 isn't supported).
 
 5. **Microsoft 365 and Office 365 licensing**:
-
    - Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require a Microsoft 365 or Office 365 subscription that includes the Office desktop applications: Microsoft 365 Apps for Business, Microsoft 365 Business Standard, Microsoft 365 Apps for enterprise, Office 365 Enterprise E3, Office 365 Enterprise E5, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 A1, Microsoft 365 Business Basic, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you aren't licensed to use the app.
-
    - Use of advanced Exchange Online features (for example, [Service Encryption with Customer Key](/microsoft-365/compliance/customer-key-set-up) or [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 or Microsoft 365 subscription license within the Microsoft 365 Admin Center.
 
    For more information on how to assign a license, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
 6. **EMS licensing**: Each on-premises user must have one of the following licenses:
-
    - Intune standalone + Azure Active Directory Premium 1 or Azure Active Directory Premium 2
-
    - Enterprise Mobility + Security E3, Enterprise Mobility + Security E5
 
 ## Implementation steps
@@ -147,9 +134,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 Enabling support for hybrid Modern Authentication in your organization requires each of the following steps, which are detailed in the following sections:
 
 1. Create a conditional access policy
-
 2. Create an Intune app protection policy
-
 3. Enable hybrid Modern Authentication
 
 ### Create a conditional access policy
@@ -192,11 +177,8 @@ Create Intune app protection policies for both iOS and Android using the steps d
 1. They include all Microsoft mobile applications, such as Word, Excel, or PowerPoint, as this inclusion will ensure that users can access and manipulate corporate data within any Microsoft app in a secure fashion.
 
 2. They mimic the security features that Exchange provides for mobile devices, including:
-
    - Requiring a PIN for access (which includes Select Type, PIN length, Allow Simple PIN, Allow fingerprint)
-
    - Encrypting app data
-
    - Blocking managed apps from running on "jailbroken" and rooted devices
 
 3. They're assigned to all users. This wide assignation ensures that all users are protected, regardless of whether they use Outlook for iOS and Android.
@@ -229,11 +211,8 @@ In addition to the above minimum policy requirements, you should consider deploy
    > Once this rule is created, Outlook for iOS and Android with Basic authentication users will be blocked.
 
 3. Ensure your on-premises Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
-
    - Path: `%ExchangeInstallPath%\FrontEnd\HttpProxy\Sync\web.config`
-
    - Property: `maxRequestLength`
-
    - Value: set in KB size (10 MB is 10240, for example)
 
 ## Client features that aren't supported
@@ -241,28 +220,20 @@ In addition to the above minimum policy requirements, you should consider deploy
 The following features aren't supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
 
 - Draft folder and Draft messages synchronization
-
 - Shared calendar access and delegate calendar access
-
 - Shared and delegate mailbox data access
-
 - Cortana Time to Leave / Travel Time
+- Rich meeting locations
+- Task management with Microsoft To Do
+- Add-ins
+- Interesting Calendars
+- Play My Emails
+- Sensitivity labeling
+- S/MIME
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
 
 - Calendar attachments
-
-- Rich meeting locations
-
-- Task management with Microsoft To-Do
-
-- Add-ins
-
-- Interesting Calendars
-
-- Play My Emails
-
-- Sensitivity labeling
-
-- S/MIME
 
 ## Connection Flow FAQ
 
@@ -270,7 +241,7 @@ The following features aren't supported for on-premises mailboxes using hybrid M
 
 **A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a coexistence period with another third-party unified endpoint management (UEM) solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the UEM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are included on your allowlist:
 
-- All Exchange Online FQDNs and IP subnet ranges as defined in [Additional endpoints not included in the Microsoft 365 or Office 365 IP Address and URL Web service](/office365/enterprise/urls-and-ip-address-ranges).
+- All Exchange Online FQDNs and IP subnet ranges as defined in [More endpoints not included in the Microsoft 365 or Office 365 IP Address and URL Web service](/office365/enterprise/urls-and-ip-address-ranges).
 
 - The AutoDetect FQDNs and IP subnet ranges defined in [Additional endpoints not included in the Microsoft 365 or Office 365 IP Address and URL Web service](/office365/enterprise/additional-office365-ip-addresses-and-urls). These IP subnets and FQDNs are required because the AutoDetect service establishes connections to the on-premises infrastructure.
 
@@ -280,11 +251,9 @@ The following features aren't supported for on-premises mailboxes using hybrid M
 
 **A**: There are three potential solutions to resolving this issue:
 
-  1. Implement Exchange mobile device access rules to control which devices are approved to connect.
-
-  2. Some third-party UEM solutions integrate with Exchange mobile device access rules, blocking unapproved access, while adding approved devices in the user's ActiveSyncAllowedDeviceIDs property.
-
-  3. Implement IP restrictions on the Exchange ActiveSync namespace.
+1. Implement Exchange mobile device access rules to control which devices are approved to connect.
+2. Some third-party UEM solutions integrate with Exchange mobile device access rules, blocking unapproved access, while adding approved devices in the user's ActiveSyncAllowedDeviceIDs property.
+3. Implement IP restrictions on the Exchange ActiveSync namespace.
 
 **Q**: Can I use Azure ExpressRoute for managing traffic between the Microsoft Cloud and my on-premises environment?
 
@@ -312,9 +281,7 @@ With ExpressRoute, there's no private IP space for ExpressRoute connections, nor
 **A**: The following identity configurations with Azure Active Directory are supported with hybrid Modern Authentication:
 
 - Federated Identity with any on-premises identity provider that is supported by Azure Active Directory
-
 - Password Hash Synchronization via Azure Active Directory Connect
-
 - Pass-through Authentication via Azure Active Directory Connect
 
 **Q**: What authentication mechanism is used for Outlook for iOS and Android? Are credentials stored in Microsoft 365 or Office 365?
@@ -340,6 +307,10 @@ With ExpressRoute, there's no private IP space for ExpressRoute connections, nor
 ```powershell
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```
+
+**Q**: What happens when an organization moves from basic authentication with Outlook for iOS and Android to hybrid Modern authentication?
+
+**A**: After an organization enables hybrid modern authentication following the above [Implementation steps](#implementation-steps), end users need to delete their existing account profile in Outlook for iOS and Android as the profile uses basic authentication. End users can then create a new profile which will use hybrid Modern authentication.
 
 ## Troubleshooting
 
@@ -374,7 +345,7 @@ When you review the output from the script, you should be seeing the following o
 
 The on-premises ActiveSync endpoint should return the following response, where the WWW-Authenticate header includes an authorization_uri:
 
-```
+```console
 Content-Length →0
 Date →Mon, 29 Jan 2018 19:51:46 GMT
 Server →Microsoft-IIS/10.0 Microsoft-HTTPAPI/2.0
@@ -387,11 +358,8 @@ request-id →5ca2c827-5147-474c-8457-63c4e5099c6e
 If the AutoDiscover or ActiveSync responses aren't similar to the above examples, you can investigate the following causes to be the possible ones:
 
 1. If the AutoDiscover endpoint cannot be reached, then it's likely there's a firewall or load balancer configuration issue (for example, IP restrictions are configured and the required IP ranges aren't present). Also, there may be a device in front of Exchange requiring pre-authentication to access the AutoDiscover endpoint.
-
 2. If the AutoDiscover endpoint doesn't return the correct URL, then there's a configuration issue with the ActiveSync virtual directory's ExternalURL value.
-
 3. If the ActiveSync endpoint cannot be reached, then there's a firewall or load balancer configuration issue. Again, one example is IP restrictions are configured and the required IP ranges aren't present. Also, there may be a device in front of Exchange requiring pre-authentication to access the ActiveSync endpoint.
-
 4. If the ActiveSync endpoint doesn't contain an authorization_uri value, verify that the EvoSTS authentication server is configured as the default endpoint using Exchange Management Shell:
 
    ```powershell
@@ -405,12 +373,11 @@ If the AutoDiscover or ActiveSync responses aren't similar to the above examples
 There are a few scenarios that can result in data being stale in Outlook for iOS and Android. Typically, this data condition is due to an issue with the second access token (the token used by MRS in Exchange Online to synchronize the data with the on-premises environment). The two most common reasons for this issue are:
 
  - SSL/TLS offloading on-premises.
-
  - EvoSTS certificate metadata issues.
 
 With SSL/TLS offloading, tokens are issued for a specific uri and that value includes the protocol value ("https://"). When the load balancer offloads SSL/TLS, the request received by Exchange comes in via HTTP, resulting in a claim mismatch due to the protocol value being http://. The following example depicts a response header from a Fiddler trace:
 
-```
+```console
 Content-Length →0
 Date →Mon, 29 Jan 2018 19:51:46 GMT
 Server →Microsoft-IIS/10.0 Microsoft-HTTPAPI/2.0

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the support life cycle for Exchange
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.reviewer: 
 title: Exchange Server supportability matrix
 ms.collection: exchange-server
@@ -272,7 +272,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ****
 
-|.NET Framework version|CU9 to CU4|CU3, CU2|CU1, RTM|
+|.NET Framework version|CU10 to CU4|CU3, CU2|CU1, RTM|
 |---|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
@@ -284,7 +284,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ****
 
-|.NET Framework version|CU20 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
+|.NET Framework version|CU21 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|

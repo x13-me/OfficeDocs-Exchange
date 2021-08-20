@@ -1,7 +1,7 @@
 ---
 title: 'Default folders that support Retention Policy Tags: Exchange 2013 Help'
 TOCTitle: Default folders that support Retention Policy Tags
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Create a UM hunt group
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication.'
 ms.topic: conceptual
 author: serdars
@@ -78,8 +78,6 @@ The following features aren't support for on-premises mailboxes using basic auth
 
 - Cortana Time to Leave / Travel Time
 
-- Calendar attachments
-
 - Rich meeting locations
 
 - Task management with Microsoft To-Do
@@ -101,3 +99,7 @@ The following features aren't support for on-premises mailboxes using basic auth
 - Discover Feed
 
 - Privacy settings
+
+The following features are only supported when the on-premises infrastructure uses Exchange Server 2016 and later:
+
+- Calendar attachments

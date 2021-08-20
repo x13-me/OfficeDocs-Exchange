@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.reviewer: 
 title: Configure message tracking
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure message tracking
+# Configure message tracking in Exchange Server
 
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use message tracking logs for message forensics, mail flow analysis, reporting, and troubleshooting.
 

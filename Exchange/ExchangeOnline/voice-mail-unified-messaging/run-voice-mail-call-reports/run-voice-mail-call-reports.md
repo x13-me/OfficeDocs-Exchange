@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Unified Messaging (UM) call reports provide information about the calls forwarded to or placed by UM. Use these reports to monitor, troubleshoot, and report on UM for your organization. You can access Unified Messaging call statistic reports by using the Call Statistics tool and access call logs for UM-enabled users by using the User Call Logs tool.
 ms.topic: article
 author: msdmaguire

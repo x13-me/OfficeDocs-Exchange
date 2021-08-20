@@ -4,7 +4,7 @@ monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms.reviewer: 
 title: Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory
@@ -216,6 +216,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2019 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2019 CU10|17003|13241|16758|
 |Exchange 2019 CU9|17002|13240|16757|
 |Exchange 2019 CU8|17002|13239|16756|
 |Exchange 2019 CU7|17001|13238|16755|
@@ -241,6 +242,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2016 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2016 CU21|15334|13241|16221|
 |Exchange 2016 CU20|15333|13240|16220|
 |Exchange 2016 CU19|15333|13239|16219|
 |Exchange 2016 CU18|15332|13238|16218|

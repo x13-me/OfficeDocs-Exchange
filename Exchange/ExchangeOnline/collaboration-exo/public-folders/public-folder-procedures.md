@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
 ms.topic: article
 author: msdmaguire

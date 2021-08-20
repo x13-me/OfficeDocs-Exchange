@@ -1,7 +1,7 @@
 ---
 title: 'Policy templates from Microsoft partners: Exchange 2013 Help'
 TOCTitle: Policy templates from Microsoft partners
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

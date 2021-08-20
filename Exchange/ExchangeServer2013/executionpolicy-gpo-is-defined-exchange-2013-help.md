@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.powersh
 ms:contentKeyID: 61200286
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -19,9 +19,9 @@ _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the **ExecutionPolicy** Group Policy Object (GPO) defines one or both of the following policies:
 
-  - **MachinePolicy**
+- **MachinePolicy**
 
-  - **UserPolicy**
+- **UserPolicy**
 
 It doesn't matter how the policies have been defined. It only matters that they have been defined.
 
@@ -30,7 +30,7 @@ When you run Exchange 2013 Setup, Exchange stops and disables the Windows Manage
 To allow Setup to continue, you need to temporarily remove any definition of **MachinePolicy** or **UserPolicy** in the **ExecutionPolicy** GPO:
 
 ```PowerShell
-Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy –Value ""
+Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ""
 ```
 
 Having problems? Ask for help in the [Exchange forums](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver).

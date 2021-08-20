@@ -1,6 +1,6 @@
 ---
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
@@ -549,6 +549,9 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you t
    Get-MailPublicFolder -ResultSize Unlimited | Export-CliXML Cloud_MEPF.xml
    ```
 
+> [!NOTE]
+> Post-migration, if external emails fail mail-enabled public folders in Exchange Online with a 5.7.13 or 5.4.1 error, ensure that the public folder has _CreateItems_ permission enabled for anonymous users and [Domain Based Edge Blocking (DBEB)](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) is disabled for the email domain configured on the public folder.
+      
 ## Known issues
 
 The following are common public folder migration issues that you may encounter in your organization.
@@ -659,6 +662,8 @@ If you still want to migrate your public folders by using PST files, follow thes
 6. Set the permissions on the public folders using the EAC. For more information, follow [Step 3: Assign permissions to the public folder](new-organizations.md#step-3-assign-permissions-to-the-public-folder) in the [Set up public folders in a new organization](new-organizations.md) article.
 
 > [!CAUTION]
-> If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration.
-The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
-Option two is to [create a public folder mailbox in Exchange Server](create-public-folder-mailboxes.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.
+> If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
+> 
+> The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
+>
+> Option two is to [create a public folder mailbox in Exchange Server](create-public-folder-mailboxes.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.

@@ -1,7 +1,7 @@
 ---
 title: 'Investigate the audio quality of voice calls for a user: Exchange 2013 Help'
 TOCTitle: Investigate the audio quality of voice calls for a user
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

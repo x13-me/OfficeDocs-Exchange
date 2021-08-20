@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can create an Outlook on the web mailbox policy to apply a common set of policy settings. Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
 ms.topic: article
 author: msdmaguire
@@ -50,6 +50,44 @@ For more information about Outlook on the web mailbox policies, see [Outlook on 
    **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
 
 3. Click **Save** to save the policy.
+
+The following list contains the features you can configure when you create an Outlook on the web mailbox policy using the EAC:
+
+   - **Communication management**:
+      - _Instant messaging_: if enabled, users have access to instant messaging functionality such as the ability to send and receive instant messages, view presence information for other users, and change their own presence information.
+      - _Text messaging_: when enabled, users can send and receive text messages and create text message notification rules using Outlook on the web.
+      - _Exchange ActiveSync_: if enabled, users can manage their linked mobile devices using Options in Outlook on the web.
+      - _Contacts_: if Enabled, users can use Contacts in Outlook on the web.
+      - _LinkedIn contact sync_: if enabled, users will be able to add their LinkedIn connections to their mailbox as contacts. When a user's connection updates their information in LinkedIn, the contact will be automatically updated.
+      - _Mobile device contact sync_: if enabled, users have access to personal contacts on their devices outside of Outlook on the web.
+      - _All address lists_: if enabled, users can view all address lists. If it's set to Disabled, the user can only view the default global address list.
+
+   - **Information management**:
+      - _Journaling_: if enabled, the Journal folder will be visible in Outlook on the web.
+      - _Notes_: if enabled, the Notes folder will be visible in Outlook on the web.
+      - _Inbox Rules_: if enabled, a user can create and edit custom rules in Outlook on the web.
+      - _Recover deleted items_ if enabled, users can view items that have been deleted from the Deleted Items folder and choose whether to recover them to the Deleted Items folder or to delete them permanently using Outlook on the web.
+
+   - **Security**:
+      - _Change password_: if enabled, people can change their passwords by going to Options in Outlook on the web.
+
+   - **User experience**:
+      - _Themes_: if enabled, users can change the color scheme in Outlook on the web.
+      - _Premium client_: if enabled, users can use the standard version of Outlook on the web. If you clear the check box, users will be switched to the light version of Outlook on the web and get a simplified experience.
+      - _Email signature_: if enabled, users can create a custom signature and choose whether to automatically include it in messages they send.
+      - _Weather_: if enabled, users can see weather information on their calendar.
+      - _Places_: if enabled, users can see location suggestions for meetings.
+      - _Local events_: if enabled, users can see the events happening in their area.
+      - _Interesting calendars_: if enabled, users can browse and add interesting calendars.
+
+   - **Time management**:
+      - _Calendar_: if enabled, users can use the Calendar in Outlook on the web.
+      - _Tasks_: if enabled, users can use Tasks in Outlook on the web.
+      - _Reminders and notifications_: if enabled, users will receive new email notifications and task and calendar reminders.
+
+   - **Select how users can view and access attachments from public or private computers**:
+      - _Public or shared computer - Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.
+      - _Private computer or OWA for Devices - Direct file access_: if enabled, users will be able to open attachments by selecting them and then selecting Open.
 
 ## Use Exchange Online PowerShell to create an Outlook on the web mailbox policy
 

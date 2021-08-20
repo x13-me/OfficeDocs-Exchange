@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create address book policies (ABPs) in Exchange Online.
 ms.topic: article
 author: msdmaguire

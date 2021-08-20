@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Configure Voice Mail Preview partner services for users
 ms.topic: article
 author: msdmaguire

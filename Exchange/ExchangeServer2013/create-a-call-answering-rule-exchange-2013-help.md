@@ -1,7 +1,7 @@
 ---
 title: 'Create a call answering rule: Exchange 2013 Help'
 TOCTitle: Create a call answering rule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

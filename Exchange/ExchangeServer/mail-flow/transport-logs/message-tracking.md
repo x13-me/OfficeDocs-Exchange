@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms.reviewer:
 title: Message tracking

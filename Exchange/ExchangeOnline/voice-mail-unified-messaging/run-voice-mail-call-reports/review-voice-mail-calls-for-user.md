@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'User call logs are used to view the following information about specific Unified Messaging (UM) users:'
 ms.topic: article
 author: msdmaguire

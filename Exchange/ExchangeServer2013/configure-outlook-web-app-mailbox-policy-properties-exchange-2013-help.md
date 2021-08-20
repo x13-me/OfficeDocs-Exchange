@@ -1,7 +1,7 @@
 ---
 title: 'View or configure Outlook Web App mailbox policy properties: Exchange 2013 Help'
 TOCTitle: View or configure Outlook Web App mailbox policy properties
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

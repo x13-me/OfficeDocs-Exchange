@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about site mailboxes and how to use them.'
 ms.topic: overview
 author: serdars

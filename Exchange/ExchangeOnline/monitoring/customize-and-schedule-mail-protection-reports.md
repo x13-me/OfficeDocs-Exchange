@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: As an Exchange Online or Exchange Online Protection (EOP) admin, you probably want to keep an eye on your organization's mail flow, how much spam and malware is being detected, or how often your rules and policies are being matched. Read this article to get an overview of reports that are available
 ms.topic: article
 author: msdmaguire

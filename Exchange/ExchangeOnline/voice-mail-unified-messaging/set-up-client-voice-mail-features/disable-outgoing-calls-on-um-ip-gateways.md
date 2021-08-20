@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable or disable outgoing calls for a Unified Messaging (UM) IP gateway. When you clear the Allow outgoing calls through this UM IP gateway option on the properties for the UM IP gateway, you configure the UM IP gateway to not accept and send outgoing calls to a Voice over IP (VoIP) gateway, IP PBX, or session border controller (SBC). Although the Allow outgoing calls through this UM IP gateway setting controls whether the UM IP gateway is able to initiate outgoing calls for users, it doesn't affect call transfers or incoming calls from a VoIP gateway, IP PBX, or SBC.
 ms.topic: article
 author: msdmaguire

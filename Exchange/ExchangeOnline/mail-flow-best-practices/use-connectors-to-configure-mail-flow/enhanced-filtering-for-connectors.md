@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use Enhanced Filtering for Connectors (also known as skip listing) in Exchange Online if your organization sends mail to a third-party service or device before Microsoft 365 or Office 365.
 ms.topic: article
 author: msdmaguire
@@ -29,7 +29,7 @@ Mail routing in complex scenarios looks like this:
 
 As you can see, the message adopts the source IP of the service, appliance, or on-premises Exchange organization that sits in front of Microsoft 365. The message arrives in Microsoft 365 with a different source IP address. This behavior isn't a limitation of Microsoft 365; it's simply how SMTP works.
 
-In these scenarios, you can still get the most out of [Exchange Online Protection (EOP)](/microsoft-365/security/office-365-security/exchange-online-protection-overview) and [Office 365 Advanced Threat Protection (ATP)](/microsoft-365/security/office-365-security/office-365-atp) by using Enhanced Filtering for Connectors (also known as _skip listing_).
+In these scenarios, you can still get the most out of [Exchange Online Protection (EOP)](/microsoft-365/security/office-365-security/exchange-online-protection-overview) and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview) by using Enhanced Filtering for Connectors (also known as _skip listing_).
 
 After you enable Enhanced Filtering for Connectors, mail routing in complex routing scenarios looks like this:
 

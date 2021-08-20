@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange Server 2016 or Exchange Server 2019 DAG.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
 ms.reviewer:
 title: Perform a server switchover

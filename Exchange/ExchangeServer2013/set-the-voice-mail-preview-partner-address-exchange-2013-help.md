@@ -1,7 +1,7 @@
 ---
 title: 'Set the Voice Mail Preview partner address: Exchange 2013 Help'
 TOCTitle: Set the Voice Mail Preview partner address
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: 'Automatically answer and route incoming calls: Exchange 2013 Help'
 TOCTitle: Automatically answer and route incoming calls
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
