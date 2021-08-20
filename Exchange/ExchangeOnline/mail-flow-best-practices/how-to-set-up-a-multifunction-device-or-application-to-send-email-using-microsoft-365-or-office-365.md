@@ -202,7 +202,7 @@ You can configure your device to send email direct to Microsoft 365 or Office 36
 
 - Doesn't require your device to support TLS.
 
-Direct send has higher sending limits than SMTP client submission. Senders are not bound by the limits described in option 1.
+Direct send has higher sending limits than SMTP client submission. Senders are not bound by the limits described in Option 1.
 
 ### Requirements for direct send
 
@@ -325,7 +325,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - Microsoft 365 or Office 365 SMTP relay does not require the use of a licensed Microsoft 365 or Office 365 mailbox to send emails.
 
-- Microsoft 365 or Office 365 SMTP relay has higher sending limits than SMTP client submission. Senders are not subject to the limits described in option 1.
+- Microsoft 365 or Office 365 SMTP relay has higher sending limits than SMTP client submission. Senders are not subject to the limits described in Option 1.
 
 ### Requirements for Microsoft 365 or Office 365 SMTP relay
 
