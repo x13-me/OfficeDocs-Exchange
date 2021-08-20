@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about the different types of address lists that are available in Exchange Online.
 ms.topic: overview
 author: msdmaguire

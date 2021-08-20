@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync.'
 ms.topic: article
 author: msdmaguire

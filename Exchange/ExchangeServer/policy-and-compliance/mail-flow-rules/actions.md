@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire

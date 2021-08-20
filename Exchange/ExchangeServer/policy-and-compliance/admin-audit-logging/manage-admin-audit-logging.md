@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange Server, and how to view the admit audit log settings.'
 ms.topic: article
 author: msdmaguire

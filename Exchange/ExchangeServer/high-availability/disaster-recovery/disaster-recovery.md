@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of Exchange features you can use to protect your data.'
 ms.topic: overview
 author: msdmaguire

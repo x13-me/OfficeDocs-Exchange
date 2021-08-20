@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Enable or disable Outlook Voice Access for users
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to view, retry, resubmit, suspend, and resume queues in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: msdmaguire

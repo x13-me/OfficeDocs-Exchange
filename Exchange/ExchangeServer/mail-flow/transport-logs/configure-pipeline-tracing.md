@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about how to configure pipeline tracing in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: dariomws

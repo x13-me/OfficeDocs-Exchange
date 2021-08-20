@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Admins can learn how to assign or remove permissions in the Exchange admin center (EAC) in Exchange Online Protection.
 ms.technology: mdo

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Learn how to opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH.'
 ms.topic: overview
 author: joannehendrickson

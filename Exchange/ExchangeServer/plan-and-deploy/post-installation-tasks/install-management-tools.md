@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.'
 ms.topic: get-started-article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange 2019 Setup can't continue because the target computer isn't a member of an Active Directory domain.
 ms.topic: reference
 author: msdmaguire

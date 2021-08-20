@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to designate a passive copy of an Exchange Server 2016 or Exchange Server 2019 mailbox database as the new active copy.'
 ms.topic: article
 author: msdmaguire

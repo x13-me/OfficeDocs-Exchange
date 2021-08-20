@@ -1,6 +1,6 @@
 ---
 audience: ITPro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for restoring Exchange data from a previous back up.'
 ms.topic: article
 author: msdmaguire

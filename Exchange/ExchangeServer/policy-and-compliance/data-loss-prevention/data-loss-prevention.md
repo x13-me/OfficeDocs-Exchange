@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about DLP policies in on-premises Exchange Server 2016 and Exchange Server 2019, including what they contain and how to test them.'
 ms.topic: article
 author: msdmaguire

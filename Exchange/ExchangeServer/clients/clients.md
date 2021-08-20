@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the clients and client access methods you can use to access your Exchange Server 2016 or Exchange Server 2019 mailbox, and the topics available to assist you.'
 ms.topic: article
 author: msdmaguire

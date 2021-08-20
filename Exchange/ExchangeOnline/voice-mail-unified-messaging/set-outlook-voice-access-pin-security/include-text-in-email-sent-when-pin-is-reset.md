@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can include additional text in the email message that's sent to users when their Unified Messaging (UM) or voice mail PIN is reset. You do this by entering custom text in the When a user's Outlook Voice Access PIN is reset box on a UM mailbox policy. The customized text can include, for example, security-related information for UM-enabled users.
 ms.topic: article
 author: msdmaguire

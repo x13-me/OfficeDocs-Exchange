@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019."
 ms.topic: get-started-article
 author: msdmaguire

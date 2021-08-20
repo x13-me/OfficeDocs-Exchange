@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
 ms.topic: article
 author: msdmaguire

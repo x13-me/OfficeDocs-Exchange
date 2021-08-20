@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to export a certificate from an Exchange server 2016 or 2019.'
 ms.topic: article
 author: msdmaguire

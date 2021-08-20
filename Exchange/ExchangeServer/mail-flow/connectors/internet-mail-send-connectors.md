@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: msdmaguire

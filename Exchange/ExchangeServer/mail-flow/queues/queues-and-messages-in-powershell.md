@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

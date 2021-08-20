@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because Active directory doesn't exist or can't be contacted.
 ms.topic: reference
 author: msdmaguire

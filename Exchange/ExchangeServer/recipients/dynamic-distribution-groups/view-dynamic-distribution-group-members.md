@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Exchange Management Shell to view dynamic distribution group membership.'
 ms.topic: article
 author: msdmaguire

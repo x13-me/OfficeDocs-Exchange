@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of shared mailboxes.'
 ms.topic: overview
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Outside In HTML Export © 1991, 2011 Oracle
 ms.topic: reference
 author: msdmaguire

@@ -9,7 +9,7 @@ audience: ITPro
 ms.reviewer:
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Strat_EX_EXOBlocker

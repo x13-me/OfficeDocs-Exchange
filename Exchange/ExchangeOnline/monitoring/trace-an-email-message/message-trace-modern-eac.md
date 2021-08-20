@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
 description: "Admins can use message trace in the modern Exchange amdin center to find out what happened to messages."

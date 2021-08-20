@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire

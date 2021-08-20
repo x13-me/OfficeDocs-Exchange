@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about MailTips that are presented to users in Outlook and Outlook on the web.
 ms.topic: overview
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the languages that are supported for servers and clients in Exchange 2016 and Exchange 2019.
 ms.topic: reference
 author: msdmaguire

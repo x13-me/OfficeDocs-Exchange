@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Setup can't continue because the organization contains one or more Exchange 2013 servers that aren't running the minimum required version of Exchange.
 ms.topic: reference
 author: msdmaguire

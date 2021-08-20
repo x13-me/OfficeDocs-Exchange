@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to set storage quotas on Exchange mailboxes.'
 ms.topic: article
 author: msdmaguire

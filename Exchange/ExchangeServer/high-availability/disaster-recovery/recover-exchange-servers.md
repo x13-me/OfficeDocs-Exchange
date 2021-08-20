@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to recover a lost Exchange 2016 or Exchange 2019 server.'
 ms.topic: article
 author: msdmaguire

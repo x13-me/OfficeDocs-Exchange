@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
 ms.topic: article
 author: msdmaguire

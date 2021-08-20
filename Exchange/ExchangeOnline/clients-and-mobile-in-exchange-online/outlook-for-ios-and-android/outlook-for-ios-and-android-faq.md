@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Microsoft 365 or Office 365.
 ms.topic: conceptual
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create a public folder mailbox in Exchange 2016 or Exchange 2019.
 ms.topic: article
 author: msdmaguire

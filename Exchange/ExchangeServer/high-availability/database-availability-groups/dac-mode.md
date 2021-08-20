@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How DAC mode, a component of DAGs, works in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

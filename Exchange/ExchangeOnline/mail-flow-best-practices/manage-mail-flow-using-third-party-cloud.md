@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
 ms.topic: article
 author: msdmaguire

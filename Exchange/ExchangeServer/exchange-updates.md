@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: serdars
 manager: serdars
 ms.topic: get-started-article

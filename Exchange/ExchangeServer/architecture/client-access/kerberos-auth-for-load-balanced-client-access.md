@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services.'
 ms.topic: article
 author: msdmaguire

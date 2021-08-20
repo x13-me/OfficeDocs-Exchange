@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure the authenticated SMTP settings on an Exchange server 2016 or 2019 that are required by POP3 or IMAP4 clients to send email messages.'
 ms.topic: article
 author: msdmaguire

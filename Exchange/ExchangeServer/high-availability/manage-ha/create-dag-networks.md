@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Create additional networks, if needed, for use in a database availability group (DAG).'
 ms.topic: article
 author: msdmaguire

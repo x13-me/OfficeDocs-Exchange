@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the support life cycle for Exchange
 ms.topic: article
 author: msdmaguire

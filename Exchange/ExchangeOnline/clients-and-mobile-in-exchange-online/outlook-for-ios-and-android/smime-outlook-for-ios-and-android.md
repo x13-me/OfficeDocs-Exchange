@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Admins can learn how to configure the S/MIME infrastructure in Exchange Online for use with Outlook for iOS and Android.'
 ms.topic: article
 author: msdmaguire

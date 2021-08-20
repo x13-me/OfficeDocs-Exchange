@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: What you should know about mailbox database copies in Exchange Server 2016 and Exchange Server 2019, and your options when creating them.'
 ms.topic: article
 author: msdmaguire
