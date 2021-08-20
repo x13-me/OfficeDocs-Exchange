@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
 author: msdmaguire

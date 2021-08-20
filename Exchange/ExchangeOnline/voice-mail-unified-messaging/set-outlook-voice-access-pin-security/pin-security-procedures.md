@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Set Outlook Voice Access PIN policies
 ms.topic: article
 author: msdmaguire

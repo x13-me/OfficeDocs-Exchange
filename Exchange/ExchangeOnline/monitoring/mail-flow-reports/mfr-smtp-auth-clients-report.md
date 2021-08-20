@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the SMTP AUTH report in the new Exchange admin center to monitor email senders in your organization that use authenticated SMTP (SMTP AUTH) to send email messages."
 ---

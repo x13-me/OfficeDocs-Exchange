@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or Exchange Server 2019 for messages that can't be successfully delivered."
 ms.topic: article
 author: msdmaguire

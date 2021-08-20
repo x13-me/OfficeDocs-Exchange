@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Important considerations to read before you deploy public folders in your organization.'
 ms.topic: reference
 author: msdmaguire

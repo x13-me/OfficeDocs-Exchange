@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

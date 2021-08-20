@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority.'
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
 ms.topic: article
 author: msdmaguire

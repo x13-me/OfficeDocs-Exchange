@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to deploy Exchange Server 2016 or Exchange Server 2019 with high availability and site resilience.'
 ms.topic: article
 author: msdmaguire

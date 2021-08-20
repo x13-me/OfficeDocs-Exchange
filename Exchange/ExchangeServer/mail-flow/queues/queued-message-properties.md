@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: msdmaguire

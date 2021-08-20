@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the services that Exchange 2016 adds to a Windows server.
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server 2016.'
 ms.topic: reference
 author: msdmaguire

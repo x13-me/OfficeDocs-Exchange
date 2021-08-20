@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admin can learn about the different recipient types in Exchange Online.
 ms.topic: article
 author: msdmaguire

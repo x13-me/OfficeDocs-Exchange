@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure.'
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how Exchange Server selects connectors (Send connectors, Delivery Agent connectors, or Foreign connectors) to deliver messages to external recipients.'
 ms.topic: overview
 author: msdmaguire

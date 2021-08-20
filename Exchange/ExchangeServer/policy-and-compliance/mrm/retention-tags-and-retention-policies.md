@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and Exchange Server 2019 help manage the email life cycle.'
 ms.topic: article
 author: msdmaguire

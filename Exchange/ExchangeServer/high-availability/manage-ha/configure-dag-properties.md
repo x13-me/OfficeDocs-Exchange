@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: You can use the EAC or the Exchange Management Shell to configure the properties of a database availability group (DAG), including DAG IP address configuration, the witness server, and the witness directory.'
 ms.topic: article
 author: msdmaguire

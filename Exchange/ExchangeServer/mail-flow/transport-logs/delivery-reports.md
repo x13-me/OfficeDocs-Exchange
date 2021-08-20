@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can track delivery information about messages sent or received from any mailbox in the organization.'
 ms.topic: overview
 author: msdmaguire

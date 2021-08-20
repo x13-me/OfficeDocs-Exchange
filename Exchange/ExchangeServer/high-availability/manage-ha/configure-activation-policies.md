@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: About activation policies in Exchange Server, and how to configure them on mailbox database copies.'
 ms.topic: article
 author: msdmaguire

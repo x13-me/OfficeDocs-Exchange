@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use Exchange Online PowerShell to change the deleted item retention period for Exchange Online mailboxes.
 ms.topic: article
 author: msdmaguire

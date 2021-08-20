@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."
 ms.topic: article
 author: msdmaguire

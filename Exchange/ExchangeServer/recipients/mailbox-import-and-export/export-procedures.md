@@ -1,6 +1,6 @@
 ---
 description: 'Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server 2016 or Exchange Server 2019.'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: serdars
 ms.topic: article
 author: msdmaguire

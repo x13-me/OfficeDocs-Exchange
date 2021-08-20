@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to place delivery restrictions on one or more mailboxes with the Exchange admin center (EAC) or the Exchange Management Shell.'
 ms.topic: article
 author: msdmaguire

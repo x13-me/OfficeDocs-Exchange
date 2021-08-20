@@ -7,7 +7,7 @@ ms.reviewer:
 audience: Admin
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: MiniMaven

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android.
 ms.topic: article
 author: serdarsoysal

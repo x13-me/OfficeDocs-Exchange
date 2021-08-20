@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
 ms.topic: article
 author: msdmaguire

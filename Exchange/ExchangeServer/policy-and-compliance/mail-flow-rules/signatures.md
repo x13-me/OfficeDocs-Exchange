@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

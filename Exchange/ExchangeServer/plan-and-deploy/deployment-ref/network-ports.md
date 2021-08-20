@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the network ports that are used by Exchange 2016 and Exchange 2019 for client access and mail flow.'
 ms.topic: reference
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create or import email address rewriting in bulk in Exchange Server.'
 ms.topic: article
 author: msdmaguire

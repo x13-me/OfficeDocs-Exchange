@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
 author: msdmaguire

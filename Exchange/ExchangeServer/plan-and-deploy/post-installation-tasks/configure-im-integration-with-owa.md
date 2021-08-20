@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.'
 ms.topic: get-started-article
 author: msdmaguire

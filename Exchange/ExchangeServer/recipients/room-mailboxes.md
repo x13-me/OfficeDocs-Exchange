@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.'
 ms.topic: article
 author: msdmaguire

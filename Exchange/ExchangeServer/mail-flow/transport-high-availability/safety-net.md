@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages.
 ms.topic: article
 author: msdmaguire

@@ -7,7 +7,7 @@ ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms:assetid: 7d119977-b420-4b66-acf0-0a978b188cdd
 description: "Learn how to leave the split permissions model and configure your organization back to the shared permissions model in Exchange Server 2016 and Exchange Server 2019."
 ---

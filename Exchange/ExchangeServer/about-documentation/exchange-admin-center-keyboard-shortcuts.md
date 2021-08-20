@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange Server.'
 ms.topic: reference
 author: msdmaguire

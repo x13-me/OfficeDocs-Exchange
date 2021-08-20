@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to enable and configure POP3 on an Exchange server 2016 or 2019 for access by POP3 clients.'
 ms.topic: article
 author: msdmaguire

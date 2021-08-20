@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
 ms.topic: article
 author: msdmaguire

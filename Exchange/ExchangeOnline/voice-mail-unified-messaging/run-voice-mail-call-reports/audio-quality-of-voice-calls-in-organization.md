@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: If your organization is experiencing problems with the audio quality of Unified Messaging (UM) calls and voice mail messages, use the Call Statistics report to help you understand what's causing the problems.
 ms.topic: article
 author: msdmaguire

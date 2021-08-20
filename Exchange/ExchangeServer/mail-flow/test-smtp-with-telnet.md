@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
 ms.topic: article
 author: msdmaguire

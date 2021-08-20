@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about Active Manager in Exchange Server 2016 and Exchange Server 2019 and how best copy and server selection (BCSS) works.'
 ms.topic: article
 author: msdmaguire

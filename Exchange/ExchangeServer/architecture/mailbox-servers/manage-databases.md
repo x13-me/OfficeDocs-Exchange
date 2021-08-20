@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server.'
 ms.topic: article
 author: msdmaguire

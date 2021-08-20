@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the recommendations for mail flow rules in Exchange Online.
 ms.topic: article
 author: msdmaguire

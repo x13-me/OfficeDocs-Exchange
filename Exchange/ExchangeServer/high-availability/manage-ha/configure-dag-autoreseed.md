@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: AutoReseed is a feature for quickly restoring database redundancy after a disk failure. If a disk fails, the database copies stored on that disk are automatically reseeded to a preconfigured spare disk on the Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

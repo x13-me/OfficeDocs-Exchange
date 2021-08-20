@@ -7,7 +7,7 @@ f1.keywords:
 - NOCSH
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary:Customized step-by-step instructions to deploy Exchange Server."
 ---
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Overview of the Client Access services on Mailbox servers in Exchange Server'
 ms.topic: overview
 author: msdmaguire

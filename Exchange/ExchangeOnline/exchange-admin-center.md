@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You use the Exchange admin center to manage email settings for your organization.
 ms.topic: overview
 author: JoanneHendrickson

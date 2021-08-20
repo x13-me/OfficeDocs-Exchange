@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about different disconnected mailboxes and how to work with them.'
 ms.topic: article
 author: msdmaguire

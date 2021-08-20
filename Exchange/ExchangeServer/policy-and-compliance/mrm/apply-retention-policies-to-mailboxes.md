@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire

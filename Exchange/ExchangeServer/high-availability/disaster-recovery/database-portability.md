@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Database portability is a feature that enables an Exchange Server 2016 or Exchange 2019 mailbox database to be moved to or mounted on any other Mailbox server in the same organization running Exchange 2016 or Exchange 2019 respectively, provided the target Mailbox server has databases with the same database schema version.'
 ms.topic: article
 author: msdmaguire

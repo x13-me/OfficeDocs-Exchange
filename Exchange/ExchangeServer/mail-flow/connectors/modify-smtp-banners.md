@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server 2016 or 2019.
 ms.topic: article
 author: msdmaguire

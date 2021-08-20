@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the Mailbox server role in Exchange Server'
 ms.topic: overview
 author: msdmaguire

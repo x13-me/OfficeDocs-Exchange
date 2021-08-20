@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to assign address book policies (ABPs) to users in Exchange Online
 ms.topic: article
 author: msdmaguire

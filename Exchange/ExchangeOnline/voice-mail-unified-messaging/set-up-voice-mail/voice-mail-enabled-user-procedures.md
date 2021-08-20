@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Enable a user for voice mail
 ms.topic: article
 author: msdmaguire

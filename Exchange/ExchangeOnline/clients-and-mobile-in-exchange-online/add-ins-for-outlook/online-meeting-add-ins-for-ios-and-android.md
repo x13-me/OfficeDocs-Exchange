@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: This article describes how users of Outlook for iOS and Android can use third-party add-ins for online meetings'
 ms.topic: article
 author: msdmaguire

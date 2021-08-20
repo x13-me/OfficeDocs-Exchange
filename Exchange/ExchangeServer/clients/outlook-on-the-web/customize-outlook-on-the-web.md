@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
