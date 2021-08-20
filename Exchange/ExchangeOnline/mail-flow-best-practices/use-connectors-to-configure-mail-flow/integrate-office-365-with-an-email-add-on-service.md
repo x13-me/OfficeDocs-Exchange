@@ -20,7 +20,11 @@ manager: serdars
 
 Many third-party cloud service solutions provide add-on services for Microsoft 365 or Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Microsoft 365 or Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so that you can use the service.
 
-This topic describes the best practices for how your organization can use a third-party email add-on service by examining a fictional service named Contoso Signature Service. This fictional service runs in Azure and provides custom email signatures (note that the service could be deployed in a cloud environment other than Azure). The mail flow and a high-level summary of the service are shown in the following diagram.
+This topic describes the best practices for how your organization can use a third-party email add-on service by examining a fictional service named Contoso Signature Service. This fictional service runs in Azure and provides custom email signatures 
+> [!NOTE]
+> This service could be deployed in a cloud environment other than Azure.
+
+The mail flow and a high-level summary of the service are shown in the following diagram.
 
 ![Functional diagram for fictional Contoso Signature Service email add-on service](../../media/a38e832b-0b37-49d8-9074-c9dc6f7710b3.png)
 
@@ -56,7 +60,7 @@ The rest of this topic explains how to configure mail flow in Microsoft 365 or O
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Step 1: Create a connector from Office 365 to your organization's email server to route messages to the email add-on service
+## Step 1: Create a connector that routes messages from Office 365 to the email add-on service
 
 The important settings for the connector are:
 
@@ -66,46 +70,69 @@ The important settings for the connector are:
 
 - Uses TLS to encrypt the connection based on the domain name of the email add-on service (smart host).
 
-### Use the Exchange admin center (EAC) to create the connector from Office 365 to your organization's email server to the email add-on service
+### Use the EAC to create the connector that routes messages from Office 365 to the email add-on service
 
-From the New EAC, to create a connector from Office 365 to your organization's email server, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
+**New EAC**
 
-1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
+1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-2. Click **+Add a connector**.
+   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
 
-:::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which you can create a connector":::
+2. The new connector wizard opens. On the **Select your mail flow scenario** page, configure these settings:
 
-The **New connector** screen appears.
+   - **From**: **Office 365**
+   - **To**: **Your organization's email server**
 
-3. Under **Connection from**, choose **Office 365**.
+   :::image type="content" source="../../media/365-to-org.png" alt-text="The screen on which the path Office 365 to Your organization's email server is chosen":::
 
-4. Under **Connection to**, choose **Your organization's email server**.
+   When you're finished, click **Next**.
 
-:::image type="content" source="../../media/new-connector-configuration.png" alt-text="The screen on which the connector configuration is set":::
+3. On the next page, configure these settings:
 
-5. Click **Next**. The **Connector name** screen appears.
+   - **Name**: Enter a descriptive name (for example, Office 365 to Contoso Signature Service).
 
-6. Enter a descriptive name (for example, Office 365 to Contoso Signature Service) for the connector.
+   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
 
-7. Under **What do you want to do after connector is saved?**, perform the following tasks:
+   - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages).
 
-    - Choose **Turn it on**
-    - Choose **Retain internal Exchange email headers (recommended)**
+   - **Unchecked**: Removes internal headers from messages before they're sent to the email add-on service. If you select this value, the value of this setting on the inbound connector that you create in Step 4 is meaningless (by definition, there will be no internal Exchange headers to keep or remove in returning messages).
+ 
+   :::image type="content" source="../../media/connectors-name.png" alt-text="The screen on which you provide a name for the connector":::
 
+4. When you're finished, click **Next**.
 
-> [!NOTE]
-> > If **Retain internal Exchange email headers (recommended)** is chosen, it provides the following functionality:
-> 
-> Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the connector (from your organization's email server to Office 365) which you created in Step 4 of [Step 4: Create a connector from your organization's email server to Office 365 to receive messages from the email add-on service](#step-4-create-a-connector-from-your-organizations-email-server-to-office-365-to-receive-messages-from-the-email-add-on-service). Otherwise, the connector will remove the internal Exchange headers from the returning messages.
+5. On the **When do you want to use this connector?** page, select **Only when I have a transport rule set up that redirects messages to this connector**, and then click **Next**.
 
-:::image type="content" source="../../media/configuring-connector-name.png" alt-text="The screen on which further configurations for the connector are set":::
+   :::image type="content" source="../../media/screen-use-of-connector.png" alt-text="The screen displaying options that determine how you use your connector":::
 
-8. Click **Next**. The **Use of connector** screen appears.
+6. On the **How do you want to route email messages?** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add smart host** dialog that appears, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
 
-9. Choose **Only when i have a transport rule set up that redirects messages to this connector**.
+   :::image type="content" source="../../media/screen-routing.png" alt-text="The screen displaying options that determine how the connectors route the email messages":::
 
-:::image type="content" source="../../media/configuring-transport-rule.png" alt-text="Page on which the email transport rule is configured":::
+7. On the **How should Office 365 connect to your email server?** page, configure these settings:
+   - Verify **Always use Transport Layer Security (TLS) to secure the connection (recommended)** is selected.
+   - Verify **Issued by a trusted certificate authority (CA)** is selected.
+   - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, smtp.contososignatureservice.com).
+
+   :::image type="content" source="../../media/screen-security-restrictions.png" alt-text="The screen displaying options that determine how Office 365 connects to your organization's email server":::
+
+8. When you're finished, click **Next**. The **Validation email** screen appears.
+
+   :::image type="content" source="../../media/screen-validation-email.png" alt-text="The Validation email screen":::
+
+9. Enter an email address that is valid on the mailbox of your organization's email server.
+
+10. Click **+**. The email address is displayed below the text box, indicating it is ready to be validated.
+
+11. Click **Validate**. The validation process starts.
+
+12. Once the validation process is completed, click **Next**. The **Review connector** screen appears.
+
+    :::image type="content" source="../../media/screen-review-connector.png" alt-text="The screen on which you can review the settings of the connector":::
+
+13. Review the settings for the new connector and click Create connector. The connector is created.
+
+**Classic EAC**
 
 10. Click **Next**. The **Routing** screen appears.
 
@@ -218,14 +245,14 @@ The new connector wizard opens.
 
 ## Step 2: Create a mail flow rule to route unprocessed messages to the email add-on service
 
-The rule routes messages from internal senders to the connector (from Office 365 to your organization's email server). This routing happens if the messages haven't already been processed by the email add-on service (the custom header isn't stamped on the message).
+The rule routes messages from internal senders to the connector that you created in Step 1 if the messages haven't already been processed by the email add-on service (the custom header isn't stamped on the message).
 
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-To create a mail flow rule in the EAC, perform the following steps:
-
 > [!NOTE]
-> The below procedure is applicable for both New EAC and Classic EAC.
+> The mail flow rule creation is not supported in the new EAC. Hence, in this context, EAC refers to the Classic EAC.
+
+1. In the EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
 1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
@@ -269,71 +296,61 @@ When you're finished, click **Save**.
 
    ![The TXT proof of domain ownership record for the custom certificate domain.](../../media/fd0ab875-925d-46ea-96fd-00924e6f298f.png)
 
-For more information, see [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
+For more information, see [Add your domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-## Step 4: Create a connector from your organization's email server to Office 365 to receive messages from the email add-on service
+## Step 4: Create a connector that is used to receive messages from the email add-on service
 
 The important settings for the connector are:
 
 - From the email add-on service to Microsoft 365 or Office 365.
-
 - TLS encryption and certificate verification is based on the custom certificate domain name that you configured as an accepted domain in the previous step.
 
-### Use the EAC to create a connector from your organization's email server to Office 365 to receive messages from the email add-on service
+### Use the EAC to create a connector that is used to receive messages from the email add-on service
 
-From the New EAC, to create a connector that originates from your organization's email server to Office 365, navigate from the Microsoft 365 admin center to the new EAC by clicking **Exchange** under the **Admin centers** pane. You are now on the New EAC screen.
+**New EAC**
 
-1. Navigate to **Mail flow** \> **Connectors**. The **Connectors** screen appears.
+1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
-2. Click **+Add a new connector**.
-
-:::image type="content" source="../../media/add-connector-option.png" alt-text="The screen on which a connector is being created":::
+   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
 
 The **New connector** screen appears.
 
-3. Under **Connection from**, choose **Your organization's email server**.
+2. Configure these settings:
 
-> [!NOTE]
-> Once you choose **Your organization's email server** under **Connection from**, the **Office 365** option is then chosen by default.
+   - **From** **Your organization's email server**
+   - **To** **Office 365**
 
-:::image type="content" source="../../media/your-org-server-to-365.png" alt-text="SA screen on which the connector is configured from your organization's server to Office 365":::
+   :::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured":::
 
-4. Click **Next**. The **Connector name** screen appears.
+3. When you're finished, click **Next**. The **Connector name** screen appears.
 
-5. Enter a descriptive name (for example, Contoso Signature Service to Office 365) for the connector.
-   
-6. Check the check boxes for **Turn it on** and **Retain internal Exchange email headers (recommended)**.
-    
-> [!NOTE]
-> The **Retain internal Exchange email headers (recommended)** option provides the following functionality:
->  
-> **If checked**: Preserves internal headers in messages that are returning from the email add-on service. If you had selected this value on this setting for the connector (from Office 365 to your organization's email server) which you created in Step 1 of [Step 1: Create a connector from Office 365 to your organization's email server to route messages to the email add-on service](#step-1-create-a-connector-from-office-365-to-your-organizations-email-server-to-route-messages-to-the-email-add-on-service), you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
-> 
-> **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
-   
-:::image type="content" source="../../media/configuring-connector-name-to-365.png" alt-text="The screen on which connector configuration is set":::
-    
-7. Click **Next**. The **Authenticating sent email** screen appears.
+4. On the next page, configure these settings:
 
-8. Verify that **By verifying that the subject name of the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)** is chosen.
+   - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Microsoft 365 or Office 365).
 
-9. Enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+   - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
 
-:::image type="content" source="../../media/authenticate-sent-email.png" alt-text="The screen on sent mails are authenticated for eligibility of being transmitted":::
+   - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
 
-10. Click **Next**. The **Review connector** screen appears.
+   - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
 
-11. Verify the settings and click **Create connector**.
+   :::image type="content" source="../../media/screen-connector-name.png" alt-text="The screen on which you provide a name to the connector":::
 
-:::image type="content" source="../../media/review-a-connector.png" alt-text="The screen on which the connector settings are verified":::
+5. When you're finished, click **Next**. The **Authenticating sent email** screen appears.
 
-The connector from your organization's email server to Office 365 is created.
+6. Verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
-**From Classic EAC**
+   :::image type="content" source="../../media/authenticating-sent-email.png" alt-text="The authenticating sent email screen":::
 
-From the Classic EAC, to create a connector that originates from your organization's email server to Office 365, you need not launch the Classic EAC separately. You can navigate to it from the New EAC by clicking **Classic Exchange admin center** on the left-bottom of the screen.
+7. When you're finished, click **Next**. The **Review connector** screen appears.
 
-1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   :::image type="content" source="../../media/screen-review-connector-org-365.png" alt-text="The review connector screen":::
+
+8. Verify the settings, and then click **Create connector**. The new connector is created.
+
+**Classic EAC**
+
+1. Go to **mail flow** \> **connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
@@ -353,11 +370,11 @@ From the Classic EAC, to create a connector that originates from your organizati
 
    - **Retain internal Exchange email headers (recommended)**: Configure one of these values:
 
-   - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the connector (which you created in Step 1 of [Step 1: Create a connector from Office 365 to your organization's email server to route messages to the email add-on service](#step-1-create-a-connector-from-office-365-to-your-organizations-email-server-to-route-messages-to-the-email-add-on-service), you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
+   - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
 
    - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
 
-   ![A descriptive name for the connector.](../../media/945fa373-d19a-43b5-9b17-4763e21b2370.png)
+   ![In the new connector wizard, provide a descriptive name for the connector.](../../media/945fa373-d19a-43b5-9b17-4763e21b2370.png)
 
    When you're finished, click **Next**.
 
@@ -371,19 +388,46 @@ From the Classic EAC, to create a connector that originates from your organizati
 
    ![In the new connector wizard, verify the settings and click Save.](../../media/a9b67424-159d-45b8-9296-d103ca8eac87.png)
 
-### Use Exchange Online PowerShell to create the connector from Office 365 to your organization's email server to the email add-on service
+### Use Exchange Online PowerShell to create the outbound connector to the email add-on service
 
-To create the connector from Office 365 to your organization's email server to the email add-on service in Exchange Online PowerShell, use this syntax:
+To create the outbound connector to the email add-on service in Exchange Online PowerShell, use this syntax:
 
 ```powershell
 New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts <SmartHost> -TlsSettings DomainValidation -TlsDomain <SmartHost> [-CloudServicesMailEnabled $true]
 ```
-
-This example creates a connector from Office 365 to your organization's email server with these settings:
+This example creates an outbound connector with these settings:
 
 - **Name**: Office 365 to Contoso Signature Service
-
 - **Smart host destination of the email add-on service**: smtp.contososignatureservice.com
+- **TLS domain for domain validation**: smtp.contososignatureservice.com
+- Internal Exchange message headers that identify messages as internal are preserved in the outbound messages.
+
+```powershell
+New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
+```
+
+For detailed syntax and parameter information, see [New-OutboundConnector](/powershell/module/exchange/new-outboundconnector).
+
+### Use Exchange Online PowerShell to create a mail flow rule to route unprocessed messages to the email add-on service
+
+To create the mail flow rule in Exchange Online PowerShell, use this syntax:
+
+```powershell
+New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMessageOutboundConnector "<Connector Name>" -ExceptIfHeaderContainsMessageHeader <HeaderName> -ExceptIfHeaderContainsWords <HeaderValue> -StopRuleProcessing $true
+```
+This example creates the mail flow rule with these settings:
+
+- **Name**: Route email to Contoso Signature Service
+- **Outbound connector name**: Office 365 to Contoso Signature Service
+- **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
+
+```powershell
+New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
+```
+
+For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
+
+### Use Exchange Online PowerShell to create an inbound connector to receive messages from the email add-on service
 
 - **TLS domain for domain validation**: smtp.contososignatureservice.com
 
@@ -424,8 +468,7 @@ From the email add-on service in Exchange Online PowerShell, to create the conne
 ```powershell
 New-InboundConnector -Name "<Descriptive Name>" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName <CertificateDomainName> [-CloudServicesMailEnabled $true]
 ```
-
-This example creates a connector from your organization's email server to Office 365 with these settings:
+This example creates an inbound connector with these settings:
 
 - **Name**: Contoso Signature Service to Office 365
 
@@ -438,5 +481,3 @@ New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDoma
 ```
 
 For detailed syntax and parameter information, see [New-InboundConnector](/powershell/module/exchange/new-inboundconnector).
-
-
