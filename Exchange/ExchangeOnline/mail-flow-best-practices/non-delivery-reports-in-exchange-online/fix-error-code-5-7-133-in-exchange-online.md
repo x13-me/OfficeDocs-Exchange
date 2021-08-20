@@ -21,11 +21,11 @@ description: "Learn how to fix email issues for error code 5.7.133 in Exchange O
 
 # Fix email delivery issues for error code 5.7.133 in Exchange Online
 
-It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.133 in a non-delivery report also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a group that's configured to reject messages from external senders (senders from outside the organization).
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.133 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a group that's configured to reject messages from external senders, that is, senders from outside the organization.
 
 |Icon|Message|Icon|Message|
-|---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
+|-----|-----|-----|-----|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix this issue?
@@ -64,9 +64,13 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
+:::image type="content" source="../../media/navigation-to-groups-tab.png" alt-text="The screen that displays the groups option":::
+
    ![Finding groups in the Exchange admin center](../../media/8b57ae07-1a2c-4cb7-94a7-70f898be6276.png)
 
 2. In the group properties dialog box that opens, go to **Delivery management** \> select **Senders inside and outside of my organization**.
+
+:::image type="content" source="../../media/no-restriction-on-any-sender.png" alt-text="The Delivery Management screen to configure all senders to send mails":::
 
    ![Use the Exchange admin center to solve DSN 5.7.133 and allow senders](../../media/7223438f-9f43-4601-a457-2fa7dfc977cd.png)
 
@@ -114,11 +118,14 @@ To configure the group's allowed senders list, perform the following steps:
 
 2. In the group properties dialog box that opens, go to **Delivery management** and configure the following settings:
    - Select **Senders inside and outside of my organization**.
-   - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box that opens, select the external senders and the "all internal users" group. 
-   - Add the external senders and the "all internal users" group to the allowed sender's list.
-   - When you're finished, click **OK**.
 
-     ![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
+   - Click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Allowed Senders** dialog box, select and add the external senders and the "all internal users" group. When you're finished, click **OK**.
+   - 
+   :::image type="content" source="../../media/option-to-add-sender.png" alt-text="The screen on which the option to add a sender is displayed":::
+
+:::image type="content" source="../../media/add-sender.png" alt-text="The screen on which you can add a sender who is to be added into the":::
+
+![Add allowed external sender to a distribution group to help solve NDR 5.7.133](../../media/c736b5ad-39f0-4c7e-ba74-12518c61814f.png)
 
 3. Click **Save**.
 
