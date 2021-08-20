@@ -1,7 +1,7 @@
 ---
 title: 'Configure a DTMF fallback auto attendant: Exchange 2013 Help'
 TOCTitle: Configure a DTMF fallback auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

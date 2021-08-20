@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: This notification feature monitors the accepted domains per tenant and sends email notification to tenant admin when any of the accepted domains is approaching expiry. 
 ms.custom:

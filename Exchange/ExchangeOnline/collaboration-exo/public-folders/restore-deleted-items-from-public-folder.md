@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: v-bshilpa
 manager: serdars
 ms.topic: article

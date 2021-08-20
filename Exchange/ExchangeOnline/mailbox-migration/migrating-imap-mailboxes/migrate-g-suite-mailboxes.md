@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr

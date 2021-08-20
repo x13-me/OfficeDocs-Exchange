@@ -1,6 +1,6 @@
 ---
 audience: ITPro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the conditions and exceptions (predicates) that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.author: jhendr
 manager: serdars
@@ -65,11 +65,11 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
 - **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
-  - **The sender is**(_From_)
-  - **The sender is a member of**(_FromMemberOf_)
-  - **The sender address includes**(_FromAddressContainsWords_)
-  - **The sender address matches**(_FromAddressMatchesPatterns_)
-  - **The sender's domain is**(_SenderDomainIs_)
+  - **The sender is** (_From_)
+  - **The sender is a member of** (_FromMemberOf_)
+  - **The sender address includes** (_FromAddressContainsWords_)
+  - **The sender address matches** (_FromAddressMatchesPatterns_)
+  - **The sender's domain is** (_SenderDomainIs_)
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
@@ -93,6 +93,11 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 |
 
 ### Recipients
+
+For conditions and exceptions that examine the recipient's address, you can specify where rule looks for the recipient's address by using the _RecipientAddressType_ parameter in PowerShell. Valid values are:
+
+- Original: Only examine the recipient's primary SMTP email address.
+- Resolved: Examine the recipient's primary SMTP email address and all proxy addresses. This is the default value
 
 <br>
 

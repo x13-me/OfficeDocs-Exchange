@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange admin center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
 ms.topic: article
 author: msdmaguire

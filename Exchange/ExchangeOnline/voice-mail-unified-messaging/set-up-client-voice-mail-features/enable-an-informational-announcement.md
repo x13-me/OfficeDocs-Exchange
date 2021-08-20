@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable an informational announcement on a Unified Messaging (UM) dial plan. Informational announcements are used for general announcements that change more frequently than the welcome greeting does, or for announcements that are required by corporate compliance policies.
 ms.topic: article
 author: msdmaguire

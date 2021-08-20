@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to assign Full Access, Send As, and Send on Behalf permissions to mailboxes and groups in Exchange Online.
 ms.topic: article
 author: msdmaguire

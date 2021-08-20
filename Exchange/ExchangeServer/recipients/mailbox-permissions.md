@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or Exchange Server 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.reviewer:
 title: Manage permissions for recipients

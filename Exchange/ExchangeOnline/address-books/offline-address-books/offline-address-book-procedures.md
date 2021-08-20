@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The list of procedures related to offline address books (OABs).
 ms.topic: article
 author: msdmaguire

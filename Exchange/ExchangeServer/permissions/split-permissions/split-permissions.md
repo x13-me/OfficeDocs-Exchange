@@ -7,7 +7,7 @@ ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 description: "Learn about the split permissions model in Exchange Server 2016 and Exchange Server 2019."
 ---

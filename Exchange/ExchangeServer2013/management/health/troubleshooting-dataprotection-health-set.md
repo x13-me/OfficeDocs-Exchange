@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.dataprotection(v=
 ms:contentKeyID: 49720873
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

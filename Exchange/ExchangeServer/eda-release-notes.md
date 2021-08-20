@@ -1,13 +1,13 @@
 ---
 title: "Exchange Deployment Assistant release notes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
 - NOCSH
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "A list of updates made to the Exchange Deployment Assistant"
 ---
 

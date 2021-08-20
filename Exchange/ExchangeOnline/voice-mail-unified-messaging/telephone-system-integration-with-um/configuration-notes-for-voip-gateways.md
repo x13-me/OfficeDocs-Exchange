@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This page provides links to configuration notes that have been created and tested by Microsoft or a VoIP gateway partner. When Microsoft or a partner deploys Unified Messaging with a new VoIP gateway and PBX or IP PBX configuration, the prerequisites and configuration settings are documented. This information is used to create a configuration note.
 ms.topic: article
 author: msdmaguire

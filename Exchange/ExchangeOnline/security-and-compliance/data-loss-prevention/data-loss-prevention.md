@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 ms.topic: overview
 author: msdmaguire

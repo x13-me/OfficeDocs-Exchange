@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 ms.topic: article
 author: msdmaguire
@@ -19,6 +19,9 @@ manager: serdars
 ---
 
 # Clutter notifications in Outlook
+
+> [!TIP]
+> [Focused Inbox](/microsoft-365/admin/setup/configure-focused-inbox) is replacing Clutter. Learn more here: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
 
 Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 

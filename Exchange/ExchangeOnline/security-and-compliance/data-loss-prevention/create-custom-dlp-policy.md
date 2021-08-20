@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
 ms.topic: article
 author: msdmaguire
@@ -36,7 +36,7 @@ The rule conditions that are available to you in a single policy include all the
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!NOTE]
-> Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content matching definitions; e.g., defining Custom Classifications and/or Regular Expression patterns ("RegEx"). For custom content matching development, testing, and debugging, customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content matching development will fulfill the customer's requirements or obligations. As an example of the type of support which can be provided, sample regular expression patterns may be provided for testing purposes, or support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
+> Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content matching definitions; for example, defining Custom Classifications and/or Regular Expression patterns ("RegEx"). For custom content matching development, testing, and debugging, customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content matching development will fulfill the customer's requirements or obligations. As an example of the type of support which can be provided, sample regular expression patterns may be provided for testing purposes, or support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
 For additional information on the .NET regex engine which is used for processing the text, see /dotnet/standard/base-types/regular-expressions.
 
@@ -70,13 +70,13 @@ For additional information on the .NET regex engine which is used for processing
 
    Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
 
-   In order to avoid confusion, supply a unique name for each part of your policy or rule when you have the option to provide your own character string. There are several options additional options available to you:
+   In order to avoid confusion, supply a unique name for each part of your policy or rule. You can provide this unique name when you have the option to provide your own character string. There are more options available to you:
 
    1. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
 
    2. To remove a rule, highlight the rule and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
 
-   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add additional conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
+   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add more conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
 
 7. Click **Save** to finish modifying the policy and save your changes.
 

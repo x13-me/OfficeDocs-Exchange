@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms.reviewer: 
 title: View queued message properties in Queue Viewer

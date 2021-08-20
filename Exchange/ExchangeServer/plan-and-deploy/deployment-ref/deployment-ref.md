@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange 2016 readiness checks
 ms.topic: hub-page
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 1999c070-1441-4605-b36b-118a5d78defe
 ms.reviewer: 
 title: Deployment reference
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Deployment reference
+# Change Server deployment reference
 
 [Exchange Server readiness checks](readiness-checks.md)
 

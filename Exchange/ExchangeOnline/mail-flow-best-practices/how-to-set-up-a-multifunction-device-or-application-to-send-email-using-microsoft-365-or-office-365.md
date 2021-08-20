@@ -27,7 +27,7 @@ localization_priority: Priority
 > [!IMPORTANT]
 > Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
-Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
+Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans).
 
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Microsoft 365 or Office 365. For example:
 
@@ -35,15 +35,13 @@ This article explains how you can send email from devices and business applicati
 
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
-## Option 1 (recommended): Authenticate your device or application directly with a Microsoft 365 or Office 365 mailbox, and send mail using SMTP AUTH client submission
+## Option 1: Authenticate your device or application directly with a Microsoft 365 or Office 365 mailbox, and send mail using SMTP AUTH client submission
 
 > [!NOTE]
 >
-> This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+> This option, in conjunction with Basic Authentication, is not compatible with  [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). We recommend using Modern Authentication instead, as Basic Authentication will be disabled in Exchange Online. See [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) and [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more information.
 >
-> You must also verify that SMTP AUTH is enabled for the mailbox being used. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
->
-> See [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) for the latest announcements concerning this option..
+> You must also verify that SMTP AUTH is enabled for the organization and the mailbox being used. SMTP AUTH is disabled for organizations created after January 2020. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
 
@@ -95,7 +93,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a username and password to send email on the device. You cannot use [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a username and password using OAuth to send email on the device or application. You also need to follow the steps in [Authenticate an IMAP, POP, or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to allow your application to use OAuth in Microsoft 365 or Office 365. We do not recommend using Basic Authentication as it will be disabled in Exchange Online. For more information, see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904). If SMTP AUTH is disabled for the organization or the mailbox being used, you must use Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 
@@ -110,13 +108,13 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Limitations of SMTP AUTH client submission
 
-You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes. Microsoft 365 or Office 365 imposes a limit of 30 messages sent per minute, and a limit of 10,000 recipients per day.
+You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes. Microsoft 365 or Office 365 imposes some sending limits. See [Exchange Online limits - Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) for more information.
 
 ## Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)
 
 Choose this option when:
 
-- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
+- Your environment has SMTP AUTH disabled.
 
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device.
 
@@ -204,7 +202,7 @@ You can configure your device to send email direct to Microsoft 365 or Office 36
 
 - Doesn't require your device to support TLS.
 
-Direct send has higher sending limits than SMTP client submission. Senders are not bound by the 30 messages per minute or 10,000 recipients per day limit.
+Direct send has higher sending limits than SMTP client submission. Senders are not bound by the limits described in Option 1.
 
 ### Requirements for direct send
 
@@ -228,7 +226,7 @@ Direct send has higher sending limits than SMTP client submission. Senders are n
 
 This option is more difficult to implement than the others. Only choose this option when:
 
-- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
+- Your environment has SMTP AUTH disabled.
 
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device
 
@@ -350,7 +348,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - Microsoft 365 or Office 365 SMTP relay doesn't require the use of a licensed Microsoft 365 or Office 365 mailbox to send emails.
 
-- Microsoft 365 or Office 365 SMTP relay has higher sending limits than SMTP client submission; senders are not bound by the 30 messages per minute or 10,000 recipients per day limits.
+- Microsoft 365 or Office 365 SMTP relay has higher sending limits than SMTP client submission. Senders are not subject to the limits described in Option 1.
 
 ### Requirements for Microsoft 365 or Office 365 SMTP relay
 

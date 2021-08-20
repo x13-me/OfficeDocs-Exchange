@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You use the Set-CASMailbox cmdlet to configure the PO3 and IMAP4 options for each user. The configuration options are described in the following table.
 ms.topic: article
 author: msdmaguire

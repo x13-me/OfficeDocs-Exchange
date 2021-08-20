@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange Server.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms.reviewer:
 title: Manage on-premises mailbox moves in Exchange Server
@@ -67,7 +67,7 @@ To create new local move requests in the Exchange Management Shell, you only use
 
      **Note**: Even if you're only interested in moving a user's archive mailbox, you select the user's primary mailbox.
 
-     - Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one ore more mailboxes. When you're finished, click **OK**.
+     - Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one or more mailboxes. When you're finished, click **OK**.
 
      - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
 
@@ -158,7 +158,7 @@ New-MoveRequest -Identity agruber@contoso.com -TargetDatabase "MBX 02" -ArchiveT
 This example uses similar settings, but only moves Angela's primary mailbox.
 
 ```PowerShell
-New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly-TargetDatabase "MBX 02" -BadItemLimit 10
+New-MoveRequest -Identity agruber@contoso.com -PrimaryOnly -TargetDatabase "MBX 02" -BadItemLimit 10
 ```
 
 This example uses similar settings, but only moves Angela's archive mailbox.

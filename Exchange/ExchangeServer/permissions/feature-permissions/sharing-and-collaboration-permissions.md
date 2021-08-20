@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
 ms.reviewer:
 title: Sharing and collaboration permissions

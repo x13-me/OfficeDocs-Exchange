@@ -4,7 +4,7 @@ monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about what you need in your environment before you install Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid:
 ms.reviewer: 
 title: Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility
@@ -123,7 +123,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 |Exchange 2019 version|.NET Framework 4.8|.NET Framework 4.7.2|
 |---|:---:|:---:|
-|CU4 to CU9|Supported||
+|CU4 to CU10|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 |
@@ -255,7 +255,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 |Exchange 2016 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
 |---|:---:|:---:|:---:|:---:|
-|CU15 to CU20|Supported||||
+|CU15 to CU21|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||

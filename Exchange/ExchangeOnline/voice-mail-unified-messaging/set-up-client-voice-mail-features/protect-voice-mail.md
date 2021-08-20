@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Some Private Branch eXchange (PBX) and IP PBX telephony systems allow the caller to mark a voice mail message as private, blocking the intended recipient of the message from forwarding it to others. In integrated voice mail systems, a voice message can be accessed in multiple ways, which makes it more of a challenge to prevent voice messages marked private from being exposed to unintended listeners. Unified Messaging (UM) can be configured to protect voice messages for an organization. This feature is known as Protected Voice Mail.
 ms.topic: article
 author: msdmaguire

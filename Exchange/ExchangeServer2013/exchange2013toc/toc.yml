@@ -1295,10 +1295,10 @@
     - name: Manage mail-enabled security groups
       href: ../../ExchangeOnline/recipients-in-exchange-online/manage-mail-enabled-security-groups.md
     - name: Manage dynamic distribution groups
-      href: ../../ExchangeOnline/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md
+      href: ../../ExchangeServer/recipients/dynamic-distribution-groups/dynamic-distribution-groups.md
       items:
       - name: View members of a dynamic distribution group
-        href: ../../ExchangeOnline/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members.md
+        href: ../../ExchangeServer/recipients/dynamic-distribution-groups/view-dynamic-distribution-group-members.md
     - name: Manage mail contacts
       href: ../../ExchangeOnline/recipients-in-exchange-online/manage-mail-contacts.md
       items:

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Delivery reports was a feature in Microsoft 365 and Office 365 that allowed users and administrators to discover and view delivery information about messages.
 ms.topic: article
 author: msdmaguire

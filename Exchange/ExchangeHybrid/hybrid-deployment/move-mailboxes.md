@@ -1,6 +1,6 @@
 ---
 title: "Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 audience: ITPro
@@ -10,7 +10,7 @@ f1.keywords:
 ms.custom:
 - 'O365E_HRCMoveRequest_FL312271'
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid

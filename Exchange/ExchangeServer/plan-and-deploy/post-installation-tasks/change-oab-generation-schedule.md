@@ -1,10 +1,10 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: get-started-article
 author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
 ms.reviewer: 
 description: 'Summary: Learn how to configure the offline address book (OAB) update interval in Exchange Server 2016 or Exchange Server 2019.'

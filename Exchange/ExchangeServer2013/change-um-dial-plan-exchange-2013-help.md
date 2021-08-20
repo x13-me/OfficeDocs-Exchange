@@ -1,7 +1,7 @@
 ---
 title: 'Change the UM dial plan: Exchange 2013 Help'
 TOCTitle: Change the UM dial plan
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

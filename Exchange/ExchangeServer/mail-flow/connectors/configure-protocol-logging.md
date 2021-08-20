@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms.reviewer: 
 title: Configure protocol logging
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure protocol logging
+# Configure protocol logging in Exchange Server
 
 Protocol logging records the SMTP conversations that occur between messaging servers and between Exchange services in the transport pipeline as part of message delivery.
 

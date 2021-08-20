@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can customize the menu prompt to be used by a Unified Messaging (UM) auto attendant during business hours. After you create a UM auto attendant, a default system prompt (Welcome to Unified Messaging) is used as the menu prompt that callers hear after the business hours welcome greeting is played. Although the system prompt mustn't be replaced or changed, you can customize the greetings and menu prompts that are used with UM auto attendants. After you create a customized business hours menu prompt audio file, you must enable menu navigation entries on the UM auto attendant for business hours.
 ms.topic: article
 author: msdmaguire

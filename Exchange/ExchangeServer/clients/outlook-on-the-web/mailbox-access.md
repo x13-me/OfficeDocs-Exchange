@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how administrators can enable or disable Outlook on the web (formerly known as Outlook Web App) access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer:
 title: Enable or disable Outlook on the web access to mailboxes in Exchange Server

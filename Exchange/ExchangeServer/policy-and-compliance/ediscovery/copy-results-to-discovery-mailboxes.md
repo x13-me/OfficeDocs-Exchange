@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms.reviewer:
 title: Copy eDiscovery search results to a discovery mailbox
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Copy eDiscovery search results to a discovery mailbox
+# Copy eDiscovery search results to a discovery mailbox in Exchange Server
 
 After you create an In-Place eDiscovery search in Exchange Server, you can use the Exchange admin center (EAC) to copy the results to a discovery mailbox. You can also use the Exchange Management Shell to start an eDiscovery search that was created using the **New-MailboxSearch** cmdlet, which will copy the results to the discovery mailbox that was specified when you created the search.
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr
@@ -22,7 +22,7 @@ manager: serdars
 
 Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 
-|               |               |               |               |               |               |
+|&nbsp; |&nbsp; | &nbsp;|&nbsp;|&nbsp;|&nbsp;|
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | ![users-people](/office/media/icons/users-people_40x40.svg) | [End users - see Office help and training](https://support.office.com/) | ![key-permissions](/office/media/icons/key-permissions_40x40.svg) | [Assign admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) | ![document](/office/media/icons/document_40x40.svg) | [Learn about the Exchange admin center](./exchange-admin-center.md)
 

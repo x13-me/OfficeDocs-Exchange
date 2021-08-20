@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Configure Protected Voice Mail from authenticated callers
 ms.topic: article
 author: msdmaguire

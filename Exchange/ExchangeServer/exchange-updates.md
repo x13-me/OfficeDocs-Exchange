@@ -1,6 +1,6 @@
 ---
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 manager: serdars
 ms.topic: get-started-article
 author: msdmaguire

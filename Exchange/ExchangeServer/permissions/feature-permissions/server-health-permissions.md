@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms.reviewer:
 title: Server health and performance permissions

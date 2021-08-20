@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure the method to use for users with similar names on an auto attendant's Address book and operator access options, or you can leave the default setting on the auto attendant and configure this setting on the dial plan associated with the auto attendant. By default, an auto attendant can disambiguate between two or more users who have the same or similar names because the default setting on the auto attendant is Inherit from dial plan.
 ms.topic: article
 author: msdmaguire

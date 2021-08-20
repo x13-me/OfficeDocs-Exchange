@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to use connectors and mail flow rules to route mail in Exchange Online
 ms.topic: article
 author: msdmaguire
