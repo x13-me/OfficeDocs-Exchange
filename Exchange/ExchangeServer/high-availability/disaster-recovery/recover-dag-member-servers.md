@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Recover a database availability group member server
+# Recover a database availability group member server in Exchange Server
 
 If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can perform a server recovery operation.
 

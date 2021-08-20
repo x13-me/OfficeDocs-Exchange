@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Protocol logging
+# Protocol logging in Exchange Server
 
 Protocol logging records the SMTP conversations that occur between messaging servers and between Exchange services in the transport pipeline as part of message delivery. You can use protocol logging to diagnose mail flow problems. The SMTP conversations that can be recorded by protocol logging occur in the following locations:
 
