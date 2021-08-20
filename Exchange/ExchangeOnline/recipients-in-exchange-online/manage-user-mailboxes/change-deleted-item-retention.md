@@ -26,7 +26,7 @@ manager: serdars
 If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), the item is moved to a folder (**Recoverable Items** \> **Deletions**) and kept there for 14 days, by default. You can change how long items are kept, up to a maximum of 30 days.
 
 > [!NOTE]
-> You must use the new Exchange admin center (EAC) or Exchange Online PowerShell to make the change. Unfortunately, you can't currently do this directly in the Outlook or Outlook on the web.
+> You must use Exchange Online PowerShell to make the change. Unfortunately, you can't currently do this directly in Outlook or Outlook on the web.
 
 ## What do you need to know before you begin?
 
@@ -36,31 +36,12 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 
 - You need permissions before you can do this procedure or procedures. To see what permissions you need, see the "Recipients" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) article.
 
-- You can use either the new EAC or Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- You can use Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
-
-## Change how long permanently deleted items are kept using the new Exchange admin center
-
-1. In the new Exchange admin center (EAC), navigate to **Recipients > Mailboxes**.
-
-   The **Mailboxes** page is displayed.
-   
-2. Select the mailbox for which you want to edit the duration of the deleted item's retention. Click on the display name.
-
-   The properties page is displayed.
-
-3. Under **More actions**, click  **Recover deleted items** and perform the following actions:
-    1. To Choose the predefined time durations, select any of options from the **Time** drop-down list, except **Custom date range**
-    1. To customize the duration, select the **Custom date range**.
-    1. Select the time period from the **Start date** and **End date** fields.
-    1. Enter the subject of the deleted message in the **Subject line search**.
-  
-  >[!NOTE]
-  >This option is used if you want to retrieve a message through its subject.
 
 ## Change how long permanently deleted items are kept
 
