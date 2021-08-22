@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# View statistics for public folders and public folder items
+# Exchange Online: View statistics for public folders and public folder items
 
 This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
 
