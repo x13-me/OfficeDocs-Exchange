@@ -8,7 +8,7 @@ ms.custom:
 ms.author: serdars
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer:
-title: Create a public folder
+title: Create a public folder in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - CSH

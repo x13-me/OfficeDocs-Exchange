@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms.reviewer:
-title: Configure Deleted Item retention and Recoverable Items quotas
+title: Configure Deleted Item retention and Recoverable Items quotas in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH

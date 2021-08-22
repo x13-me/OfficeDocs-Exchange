@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.reviewer: 
-title: Configure mobile phones to access email
+title: Configure mobile phones to access email in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
