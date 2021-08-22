@@ -1,5 +1,5 @@
 ---
-title: "Configure legacy on-premises public folders for a hybrid deployment"
+title: "Configure legacy on-premises public folders for a hybrid deployment in Exchange Server"
 ms.author: serdars
 author: msdmaguire
 manager: serdars

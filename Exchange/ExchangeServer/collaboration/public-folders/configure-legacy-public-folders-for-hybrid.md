@@ -15,7 +15,7 @@ description: 'Summary: Use the steps in this article to synchronize public folde
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Configure legacy on-premises public folders for a hybrid deployment
+title: Configure legacy on-premises public folders for a hybrid deployment of Exchange Server
 
 ---
 
