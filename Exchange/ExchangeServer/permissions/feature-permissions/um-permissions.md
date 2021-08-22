@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Unified Messaging permissions
+# Unified Messaging permissions in Exchange Server
 
 The permissions required to manage Unified Messaging services and features on Exchange 2016 Mailbox servers vary depending on the procedure being performed or the cmdlet you want to run.
 
