@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Recovery databases
+# Recovery databases in Exchange Server
 
 A recovery database (RDB) is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest) cmdlet to extract data from an RDB. After extraction, the data can be exported to a folder or merged into an existing mailbox. RDBs enable you to recover data from a backup or copy of a database without disturbing user access to current data.
 

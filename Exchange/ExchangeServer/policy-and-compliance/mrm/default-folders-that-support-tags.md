@@ -15,7 +15,7 @@ manager: serdars
 
 ---
 
-# Retention tags and retention policies in Exchange Server
+# Exchange Server: Retention tags and retention policies
 
 Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with email and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 

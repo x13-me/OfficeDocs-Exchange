@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Receive connectors
+# Receive connectors in Exchange Server
 
 Exchange servers use Receive connectors to control inbound SMTP connections from:
 
