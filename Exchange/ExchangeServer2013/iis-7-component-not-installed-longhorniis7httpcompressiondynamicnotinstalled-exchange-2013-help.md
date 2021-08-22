@@ -1,5 +1,5 @@
 ---
-title: 'IIS 7 component not installed'
+title: 'Exchange Server: IIS 7 component not installed'
 TOCTitle: IIS 7 component not installed_LonghornIIS7HttpCompressionDynamicNotInstalled
 ms:assetid: d909e329-2436-43f9-af75-a5ee14e67ebf
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis7httpcompressiondynamicnotinstalled(v=EXCHG.150)
