@@ -8,7 +8,7 @@ ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: View statistics for public folders and public folder items
+title: 'Exchange Online: View statistics for public folders and public folder items'
 ms.collection: 
 - exchange-online
 - M365-email-calendar
