@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to search the admin audit logs to discover who made changes to your organization.
 ms.topic: article
 author: msdmaguire

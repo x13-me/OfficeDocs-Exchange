@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure database availability group network properties
+# Configure database availability group network properties in Exchange Server
 
 Configurable properties include the name of the DAG network, a description field for the DAG network, a list of subnets that are used by the DAG network, and whether the DAG network is enabled for replication.
 

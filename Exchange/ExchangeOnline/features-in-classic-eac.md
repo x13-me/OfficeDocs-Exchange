@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Explore features of Classic EAC.
 ms.topic: overview
 author: Benny-54

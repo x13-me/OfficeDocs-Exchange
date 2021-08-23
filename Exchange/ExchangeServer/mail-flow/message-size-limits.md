@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can apply limits to messages in an Exchange Server 2016 or Exchange Server 2019 organization.'
 ms.topic: overview
 author: msdmaguire

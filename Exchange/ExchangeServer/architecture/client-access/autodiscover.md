@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input.'
 ms.topic: article
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server.'
 ms.topic: overview
 author: msdmaguire

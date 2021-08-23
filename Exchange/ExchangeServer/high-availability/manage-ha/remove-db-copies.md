@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to remove a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Remove a mailbox database copy
+# Remove a mailbox database copy in Exchange Server
 
 You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#remove-a-mailbox-database) or [Remove-MailboxDatabase](/powershell/module/exchange/remove-mailboxdatabase).
 

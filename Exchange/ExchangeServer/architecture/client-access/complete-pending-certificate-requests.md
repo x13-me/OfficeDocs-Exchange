@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority.'
 ms.topic: article
 author: msdmaguire

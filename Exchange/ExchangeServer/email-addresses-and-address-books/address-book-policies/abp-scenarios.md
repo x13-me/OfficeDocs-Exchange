@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios.'
 ms.topic: article
 author: msdmaguire

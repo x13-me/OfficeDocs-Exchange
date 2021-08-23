@@ -1,5 +1,5 @@
 ---
-title: 'Configure the Availability service for cross-forest topologies'
+title: 'Configure the Availability service for cross-forest topologies in Exchange Server'
 TOCTitle: Configure the Availability service for cross-forest topologies
 ms:assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125182(v=EXCHG.150)

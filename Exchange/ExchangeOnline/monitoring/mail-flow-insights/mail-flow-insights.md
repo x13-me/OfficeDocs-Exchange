@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: Admins can learn how to use the mail flow insights dashboard in the new Exchange admin center to find and fix mail flow related issues.
 ms.custom:

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: Admins can learn about the the standalone Exchange Online Protection (EOP) that used to protect on-premises email environments (including hybrid environments).
 ms.technology: mdo

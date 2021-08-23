@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: exchserver-2016
 ms.author: serdars
 manager: serdars

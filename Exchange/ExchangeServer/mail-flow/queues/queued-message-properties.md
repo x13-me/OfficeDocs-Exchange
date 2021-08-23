@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: msdmaguire
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# View queued message properties in Queue Viewer
+# Exchange Server: View queued message properties in Queue Viewer
 
 You can use the Queue Viewer in the Exchange Toolbox to view queues and the properties of messages in queues. In Exchange Server 2016 and Exchange Server 2019, Queue Viewer is available on Mailbox servers and Edge Transport servers.
 

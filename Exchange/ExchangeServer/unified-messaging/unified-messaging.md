@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Administrators can learn about Unified Messaging in Exchange Server 2016.'
 ms.topic: overview
 author: msdmaguire

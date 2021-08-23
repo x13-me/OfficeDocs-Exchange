@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the benefits and requirements for MAPI over HTTP in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: conceptual
 author: msdmaguire

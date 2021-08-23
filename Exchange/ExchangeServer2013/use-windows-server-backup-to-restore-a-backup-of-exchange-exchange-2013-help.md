@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Use Windows Server Backup to restore a backup of Exchange
+# Exchange Server: Use Windows Server Backup to restore a backup of Exchange
 
 _**Applies to:** Exchange Server 2013_
 

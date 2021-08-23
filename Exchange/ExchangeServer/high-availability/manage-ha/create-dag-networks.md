@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Create additional networks, if needed, for use in a database availability group (DAG).'
 ms.topic: article
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Create a database availability group network
+# Create a database availability group network in Exchange Server
 
 You can use the EAC or the Exchange Management Shell to create a DAG network.
 

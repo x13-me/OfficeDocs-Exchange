@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
 description: "Admins can learn how to use the Email issues for priority accounts monitoring in the new Exchange admin center to see delayed and failed email messages that were sent to or from priority accounts."

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: exchserver-2016
 description: Exchange Server 2016 Setup can't continue because the Active Directory forest functional level isn't Windows Server 2003 native or later.
 ms.topic: reference

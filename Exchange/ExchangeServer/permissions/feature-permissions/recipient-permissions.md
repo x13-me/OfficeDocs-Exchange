@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Recipients Permissions
+# Recipients permissions in Exchange Server
 
 The permissions required to perform tasks to manage recipients vary depending on the procedure being performed or the cmdlet you want to run.
 

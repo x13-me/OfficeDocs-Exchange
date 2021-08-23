@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about the different methods that Exchange Online uses to organize and configure email addresses.
 ms.topic: article
 author: msdmaguire

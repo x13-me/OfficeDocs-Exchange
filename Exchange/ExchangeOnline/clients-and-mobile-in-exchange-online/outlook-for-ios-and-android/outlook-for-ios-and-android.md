@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android.'
 ms.topic: conceptual
 author: msdmaguire

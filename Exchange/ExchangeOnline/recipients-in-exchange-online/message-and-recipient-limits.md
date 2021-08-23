@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The content in this topic has been moved to another topic. Check out the new topic at Exchange Online Limits.
 ms.topic: article
 author: msdmaguire

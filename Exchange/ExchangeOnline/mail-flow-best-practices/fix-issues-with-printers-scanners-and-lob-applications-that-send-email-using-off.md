@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
 author: msdmaguire

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes.'
 ms.topic: article
 author: msdmaguire

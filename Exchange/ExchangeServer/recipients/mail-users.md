@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create mail users and how to change mail user properties.'
 ms.topic: article
 author: msdmaguire

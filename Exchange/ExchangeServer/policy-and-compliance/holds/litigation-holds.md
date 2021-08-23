@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items.
 ms.topic: article
 author: msdmaguire

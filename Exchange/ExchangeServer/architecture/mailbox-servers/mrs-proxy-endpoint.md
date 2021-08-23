@@ -1,6 +1,6 @@
 ---
 description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests, Microsoft 365, or Office 365."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: serdars
 ms.topic: article
 author: msdmaguire
@@ -16,7 +16,7 @@ title: Enable the MRS Proxy endpoint for remote moves
 
 ---
 
-# Enable the MRS Proxy endpoint for remote moves
+# Enable the MRS Proxy endpoint for remote moves in Exchange Server
 
 The Mailbox Replication service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Microsoft 365 or Office 365. You enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings in the Client Access (frontend) services on Exchange 2016 or Exchange 2019 Mailbox servers.
 

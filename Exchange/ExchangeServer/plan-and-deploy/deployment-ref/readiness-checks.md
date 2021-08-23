@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This article is the home of the Exchange Server 2016 and Exchange Server 2016 readiness checks that you might come across during the installation of Exchange 2016 or Exchange 2019
 ms.topic: hub-page
 author: msdmaguire

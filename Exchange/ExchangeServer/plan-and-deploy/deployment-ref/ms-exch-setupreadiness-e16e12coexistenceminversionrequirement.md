@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Setup can't continue because the organization contains one or more Exchange 2007 servers.
 ms.topic: reference
 author: msdmaguire

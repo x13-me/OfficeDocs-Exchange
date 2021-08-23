@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of the different collaboration methods available in Exchange 2016 and 2019: groups, site mailboxes, shared mailboxes, and public folders.'
 ms.topic: overview
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Collaboration
+# Collaboration features in Exchange Server
 
 Exchange Server provides the following rich features that can help your end users collaborate in email:
 

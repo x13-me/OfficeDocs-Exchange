@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: JoanneHendrickson
 ms.author: jhendr

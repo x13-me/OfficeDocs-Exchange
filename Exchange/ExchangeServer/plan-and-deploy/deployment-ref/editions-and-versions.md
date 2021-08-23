@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the different versions of Exchange 2016 and Exchange 2019.'
 ms.topic: reference
 author: msdmaguire

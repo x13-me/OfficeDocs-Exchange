@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Admins can learn about the auditing reports that are available in the Exchange admin center (EAC) in Exchange Online Protection (EOP)
 ms.technology: mdo

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to install or remove add-ins for Outlook for their Exchange Online organizations.
 ms.topic: article
 author: msdmaguire

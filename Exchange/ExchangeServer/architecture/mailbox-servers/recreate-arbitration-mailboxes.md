@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and Exchange 2019 and how to recreate them.'
 ms.topic: article
 author: msdmaguire

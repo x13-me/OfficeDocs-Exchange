@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn how to configure Exchange 2016 or Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange."
 ms.topic: get-started-article
 author: msdmaguire

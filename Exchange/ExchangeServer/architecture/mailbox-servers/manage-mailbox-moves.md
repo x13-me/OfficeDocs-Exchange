@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange Server.'
 ms.topic: article
 author: msdmaguire

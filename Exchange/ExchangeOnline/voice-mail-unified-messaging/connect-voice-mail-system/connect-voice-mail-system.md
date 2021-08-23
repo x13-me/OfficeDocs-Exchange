@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you've deployed all the required telephony equipment for your organization, including your VoIP gateways, IP PBXs, and SIP-enabled PBXs or Microsoft Lync Server, you need to create all the Unified Messaging (UM) components that will enable your telephony devices to communicate with servers in your organization.
 ms.topic: article
 author: msdmaguire

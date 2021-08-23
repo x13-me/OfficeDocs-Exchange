@@ -1,5 +1,5 @@
 ---
-title: 'Insufficient permissions to prepare Active Directory'
+title: 'Exchange Server: Insufficient permissions to prepare Active Directory'
 TOCTitle: Insufficient permissions to prepare Active Directory_ADUpdateRequired
 ms:assetid: 1412d8a1-605a-4b1e-bee3-0c97f2cc9e65
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adupdaterequired(v=EXCHG.150)

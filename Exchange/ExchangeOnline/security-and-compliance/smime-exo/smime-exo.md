@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Admins can learn about how S/MIME works in Exchange Online for message encryption and digitally signed messages.'
 ms.topic: article
 author: msdmaguire

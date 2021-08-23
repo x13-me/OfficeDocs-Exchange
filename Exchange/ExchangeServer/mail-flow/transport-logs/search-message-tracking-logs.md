@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Administrators can learn how to search the message tracking log in Exchange 2016 and Exchange 2019 by using the Get-MessageTrackingLog cmdlet in Exchange PowerShell.
 ms.topic: article
 author: msdmaguire
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Search message tracking logs
+# Exchange Server: Search message tracking logs
 
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management Shell to search for entries in the message tracking log by using specific search criteria. For example:
 

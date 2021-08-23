@@ -7,7 +7,7 @@ audience: ITPro
 f1.keywords:
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 ms.custom:
@@ -44,6 +44,9 @@ You can't enable plus addressing in the Exchange admin center (EAC); you can onl
    Set-OrganizationConfig -AllowPlusAddressInRecipients $true
    ```
 
+> [!NOTE]
+> This feature was rolled out behind a setting because, historically, customers have been able to use plusses in addresses for mailboxes in Exchange Online and on-premises servers. When this feature is enabled, Exchange Online will first check if the full address can resolve to a mailbox that the service is aware of. It is only when that resolution fails, that a plus is looked for and a second attempt to resolve the address without the plus and tag is done. This means that the feature is compatible with addresses containing plusses that Exchange Online knows about. If you relay messages to a mailbox on-premises that does not resolve in Exchange Online, message delivery will be affected. The messages will be parsed and addressed to the parsed address for example, sean@contoso.com instead of the full sean+newsletter@contoso.com, using the example above.  
+
 ## Using plus addresses
 
 You can create new plus addresses by adding a new tag. You can use plus addresses as unique addresses for services that you sign up for. 
@@ -54,6 +57,6 @@ You can create new plus addresses by adding a new tag. You can use plus addresse
 >
 > If you need to unsubscribe from an email list subscription service, some subscription services require that you use the original email address that you subscribed with. You can't unsubscribe by sending an email from a plus address.
 
-As plus addresses are not aliases that are configured on the mailbox, they don't resolve to a user's name in Outlook clients. This results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can't use a plus address for a Microsoft service that needs to be associated with your mailbox.
+As plus addresses are not aliases that are configured on the mailbox, they don't resolve to a user's name in Outlook clients. This limitation results in plus addresses being easily identifiable in the `To` or `CC` fields of messages. However, there might be scenarios where you can't use a plus address for a Microsoft service that needs to be associated with your mailbox.
 
 To automatically identify and filter email messages that are sent to plus addresses, use Inbox rules to act on those messages. Using the condition *Recipient address includes*, you can specify an action for messages sent to a particular plus address, such as moving the messages to a folder.

@@ -6,11 +6,11 @@ manager: serdars
 audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Instructions for migrating from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches.
+description: Migration instructions from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -23,7 +23,7 @@ You can migrate the following functionalities from Google Workspace to Microsoft
 
 You can migrate batches of users from Google Workspace to Microsoft 365 or Office 365, allowing a migration project to be done in stages. This migration requires that you provision all of your users who will be migrated as mail-enabled users outside of the migration process. You must specify a list of users to migrate for each batch.
 
-All of the procedures in this article assume that your Microsoft 365 or Office 365 domain has already been verified and your TXT records have been set up. For more information, see [Set up your domain (host-specific instructions)](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+All procedures in this article assume that your Microsoft 365 or Office 365 domain is verified and that your TXT records have been set up. For more information, see [Set up your domain (host-specific instructions)](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
    > [!NOTE]
    > Google Workspace migration is not currently available for Office 365 US Government GCC High or DoD.

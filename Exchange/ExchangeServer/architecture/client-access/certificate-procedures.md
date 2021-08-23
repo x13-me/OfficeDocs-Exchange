@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: A list of certificate management tasks in Exchange Server.'
 ms.topic: overview
 author: msdmaguire

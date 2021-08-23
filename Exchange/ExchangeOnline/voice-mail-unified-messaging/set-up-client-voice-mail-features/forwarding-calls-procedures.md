@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Call answering rules
 ms.topic: article
 author: msdmaguire

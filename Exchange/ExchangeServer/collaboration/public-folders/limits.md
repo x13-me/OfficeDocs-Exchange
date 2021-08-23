@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about supported limits for public folders in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Limits for public folders
+# Limits for public folders in Exchange Server
 
 In Exchange Server, public folders are based on a mailbox architecture that benefits from the resiliency of a Database Availability Group (DAG) and other mailbox enhancements. However, there are limits and performance considerations that you should take into account.
 

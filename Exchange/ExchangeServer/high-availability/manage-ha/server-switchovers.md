@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange Server 2016 or Exchange Server 2019 DAG.'
 ms.topic: article
 author: msdmaguire

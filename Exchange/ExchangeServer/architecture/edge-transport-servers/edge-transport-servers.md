@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how Edge Transport servers provide Internet mail flow, antispam, and mail flow rules for your Exchange Server organization'
 ms.topic: reference
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Edge Transport servers
+# Exchange Server: Edge Transport servers
 
 Edge Transport servers handle all inbound and outbound Internet mail flow by providing mail relay and smart host services for your Exchange organization. Agents running on the Edge Transport server provide additional layers of message protection and security. These agents provide protection against spam and apply mail flow rules (also known as transport rules) to control mail flow. All of these features work together to help minimize the exposure of your internal Exchange to threats on the Internet.
 

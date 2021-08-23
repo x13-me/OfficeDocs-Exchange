@@ -1,6 +1,6 @@
 ---
 description: 'Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and Exchange Server 2019.'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: serdars
 ms.topic: article
 author: msdmaguire

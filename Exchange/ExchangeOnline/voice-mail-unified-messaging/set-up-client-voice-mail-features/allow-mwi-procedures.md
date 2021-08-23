@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Allow Message Waiting Indicator (MWI) on a UM IP gateway
 ms.topic: article
 author: msdmaguire

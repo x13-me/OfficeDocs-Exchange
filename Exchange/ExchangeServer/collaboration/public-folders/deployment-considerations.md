@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Important considerations to read before you deploy public folders in your organization.'
 ms.topic: reference
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Considerations when deploying public folders
+# Considerations when deploying Exchange public folders
 
 Although there are many advantages to using Exchange public folders, there are some things to consider before implementing them in your organization.
 

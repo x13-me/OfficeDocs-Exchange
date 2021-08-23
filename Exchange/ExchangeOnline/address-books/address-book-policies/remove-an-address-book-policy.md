@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to remove address book policies (ABPs) from Exchange Online.
 ms.topic: article
 author: msdmaguire

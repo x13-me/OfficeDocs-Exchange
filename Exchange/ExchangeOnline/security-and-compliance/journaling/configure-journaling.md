@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the requirements for the journaling mailbox and the alternate journaling mailbox in Exchange Online.
 ms.topic: article
 author: msdmaguire

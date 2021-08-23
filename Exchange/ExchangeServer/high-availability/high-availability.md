@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# High availability and site resilience
+# High availability and site resilience in Exchange Server
 
 You can protect your Exchange Server mailbox databases and the data they contain by configuring your Exchange servers and databases for high availability and site resilience. Exchange Server minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.
 

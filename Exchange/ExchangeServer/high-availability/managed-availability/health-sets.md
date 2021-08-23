@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Exchange Management Shell cmdlets that can help you monitor the health of your Exchange organization.'
 ms.topic: article
 author: msdmaguire
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage health sets and server health
+# Manage health sets and server health in Exchange Server
 
 You can use the built-in health reporting cmdlets to perform a variety of tasks related to managed availability, such as:
 
