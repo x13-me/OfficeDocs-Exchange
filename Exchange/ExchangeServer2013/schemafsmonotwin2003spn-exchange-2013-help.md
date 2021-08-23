@@ -1,5 +1,5 @@
 ---
-title: 'Schema master is not running Windows Server 2003 Service Pack 1 or later'
+title: 'Exchange Server: Schema master is not running Windows Server 2003 Service Pack 1 or later'
 TOCTitle: The schema master is not running Windows Server 2003 Service Pack 1 or later_SchemaFSMONotWin2003SPn
 ms:assetid: 644a85ca-7b36-4ed0-bd21-c64f2742df70
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.schemafsmonotwin2003spn(v=EXCHG.150)
@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# The schema master is not running Windows Server 2003 Service Pack 1 or later\_SchemaFSMONotWin2003SPn
+# The schema master isno't running Windows Server 2003 Service Pack 1 or later\_SchemaFSMONotWin2003SPn
 
 _**Applies to:** Exchange Server 2013_
 
@@ -21,17 +21,17 @@ The content in this topic hasn't been updated for Microsoft Exchange Server 2013
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
-Microsoft Exchange Server 2007 setup cannot continue because the domain controller assigned the Active Directory directory service schema master role, also known as flexible single master operations (FSMO), is not running Microsoft Windows Server 2003 Service Pack 1 (SP1) or a later version.
+Microsoft Exchange Server 2007 setup can't continue because the domain controller assigned the Active Directory directory service schema master role, also known as flexible single master operations (FSMO), isn't running Microsoft Windows Server 2003 Service Pack 1 (SP1) or a later version.
 
 Exchange 2007 setup requires that the domain controller that serves as the schema FSMO run Windows Server 2003 SP1 or a later version.
 
 The FSMO controls all updates and modifications to the Active Directory schema.
 
-To resolve this issue, do one or more of the following:
+To resolve this issue, use one or more of the following methods:
 
   - Upgrade the FSMO domain controller to Windows Server 2003 SP1 or a later version and rerun Microsoft Exchange setup.
 
-  - If there is a FSMO domain controller running Microsoft Windows Server 2003 Service Pack 1 (SP1) or a later version in the Exchange organization, run Exchange 2007 setup with the /domaincontroller parameter pointing to that FSMO domain controller:
+  - If there's an FSMO domain controller running Microsoft Windows Server 2003 Service Pack 1 (SP1) or a later version in the Exchange organization, run Exchange 2007 setup with the /domaincontroller parameter pointing to that FSMO domain controller:
 
     \[*/DomainController*, or */dc* *\<FQDN of domain controller\>*\]
 
