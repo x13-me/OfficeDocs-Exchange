@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: serdars
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
-title: "Exchange Server: Retention tags and retention policies"
+title: Retention tags and retention policies in Exchange Server
 ms.collection: exchange-server
 ms.f1.keywords:
 - NOCSH
