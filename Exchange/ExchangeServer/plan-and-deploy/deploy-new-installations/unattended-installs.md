@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: 'Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line.'
 ms.topic: get-started-article
 author: msdmaguire
