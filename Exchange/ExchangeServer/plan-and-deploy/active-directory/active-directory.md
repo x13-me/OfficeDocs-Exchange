@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: 'Summary: Learn how Exchange 2016 and Exchange 2019 interact with Active Directory.'
 ms.topic: conceptual
 author: msdmaguire

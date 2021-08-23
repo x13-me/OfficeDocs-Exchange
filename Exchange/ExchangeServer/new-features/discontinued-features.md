@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
 author: msdmaguire

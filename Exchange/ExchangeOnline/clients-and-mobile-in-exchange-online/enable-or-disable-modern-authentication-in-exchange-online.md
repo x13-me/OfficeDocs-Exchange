@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr

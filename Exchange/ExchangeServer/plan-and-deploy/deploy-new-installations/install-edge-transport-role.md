@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: 'Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer.'
 ms.topic: get-started-article
 author: msdmaguire
