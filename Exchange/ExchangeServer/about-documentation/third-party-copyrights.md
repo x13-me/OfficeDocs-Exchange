@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
 ms.reviewer: 
-title: Third-party copyright notices
+title: 'Exchange Server: Third-party copyright notices'
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Third-party copyright notices
+# Exchange Server: Third-party copyright notices
 
 Outside In HTML Export © 1991, 2011 Oracle
 

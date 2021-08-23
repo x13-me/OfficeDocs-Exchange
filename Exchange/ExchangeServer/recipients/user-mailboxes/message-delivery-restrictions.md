@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: serdars
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.reviewer:
-title: Configure message delivery restrictions for a mailbox
+title: Configure message delivery restrictions for a mailbox in Exchanger Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH

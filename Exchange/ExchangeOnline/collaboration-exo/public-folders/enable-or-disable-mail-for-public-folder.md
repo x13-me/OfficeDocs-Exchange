@@ -8,7 +8,7 @@ ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Mail-enable or mail-disable a public folder
+title: Mail-enable or mail-disable a public folder in Exchange Server
 ms.collection: 
 - exchange-online
 - M365-email-calendar

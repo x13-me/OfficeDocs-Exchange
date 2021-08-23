@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Track messages with delivery reports
+# Exchange Server: Track messages with delivery reports
 
 Delivery Reports is a message tracking tool in the Exchange admin center (EAC) that you can use to search for delivery status on email messages that were sent to or from users in your organization's address book. You can track delivery information about messages sent by or received from any specific mailbox in your organization. The message's content isn't returned in the delivery report, but the subject line is displayed in the results. You can track messages for up to 14 days after they were sent or received.
 
