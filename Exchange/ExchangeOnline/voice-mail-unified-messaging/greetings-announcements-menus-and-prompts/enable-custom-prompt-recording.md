@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use Exchange Online PowerShell to enable the recording of custom prompts and greetings for Unified Messaging (UM) dial plans and auto attendants using the telephone user interface (TUI). This can be useful when you want to change a custom greeting or announcement by using the EAC or Exchange Online PowerShell, or when there's an emergency such as an organization closure because of severe weather. When you're changing a custom greeting or announcement on a UM auto attendant, you must enable TUI prompt recording on the dial plan that the UM auto attendant is linked to.
 ms.topic: article
 author: msdmaguire

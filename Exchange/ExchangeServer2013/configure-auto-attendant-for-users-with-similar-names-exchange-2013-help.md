@@ -1,7 +1,7 @@
 ---
 title: 'Configure an auto attendant for users who have similar names: Exchange 2013 Help'
 TOCTitle: Configure an auto attendant for users who have similar names
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

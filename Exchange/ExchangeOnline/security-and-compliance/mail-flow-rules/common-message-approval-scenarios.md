@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to use mail flow rules (transport rules) for message approval scenarios that won't work with regular moderated recipients.
 ms.topic: overview
 author: msdmaguire
@@ -72,7 +72,10 @@ To create this type of multiple-level approval, create one mail flow rule for ea
 - The first rule forwards the message to the first moderator. After the first moderator approves the message, a second rule forwards the message to the second rule, and so on.
 - If all moderators in the chain approve the message, the original message is sent to the intended recipients.
 - If any of the moderators in the chain reject the approval request, the sender receives a rejection message.
-- If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online), the sender receives an expiration message.
+- If any of the approval requests aren't approved within the expiration time (two days for Exchange Online), the sender receives an expiration message.
+
+  > [!NOTE]
+  > The processing of expired moderated messages runs every seven days. This means that a moderated message can expire at any time between two and nine days.
 
 The following example assumes that you have a customer named Blue Yonder Airlines, and you want both the customer relationship manager and the compliance officer to approve all messages that go to this customer.
 

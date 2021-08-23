@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Admins can learn how to configure the S/MIME infrastructure in Exchange Online for use with Outlook for iOS and Android.'
 ms.topic: article
 author: msdmaguire
@@ -169,10 +169,10 @@ Outlook for iOS and Android supports accessing public user certificate keys from
 - The LDAP endpoint does not require authentication.
 - The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
 - The LDAP endpoint configuration is supported using the following formats:
-    - <ldaps://contoso.com>
-    - <ldaps://contoso.com:636>
-    - contoso.com
-    - contoso.com:636
+    - `<ldaps://contoso.com>`
+    - `<ldaps://contoso.com:636>`
+    - `contoso.com`
+    - `contoso.com:636`
 
 When Outlook for iOS and Android performs a certificate lookup, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
 

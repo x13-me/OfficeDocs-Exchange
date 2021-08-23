@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the options that are available for message encoding in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms.reviewer:
 title: Message encoding options in Exchange Server

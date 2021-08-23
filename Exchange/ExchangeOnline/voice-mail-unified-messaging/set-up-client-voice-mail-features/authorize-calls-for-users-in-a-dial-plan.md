@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable dialing authorizations on a Unified Messaging (UM) dial plan. Dialing authorizations on a dial plan are used to prohibit unauthenticated Outlook Voice Access users from making in-country/region or international telephone calls, or outdialing. Outdialing happens when Unified Messaging places an outgoing call for a user after they've called in to an Outlook Voice Access phone number that is configured on a UM dial plan. When you configure a setting on a UM dial plan, that setting applies to all unauthenticated users that call in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire

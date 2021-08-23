@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: What's new in Exchange admin center
 ms.topic: overview
 author: msdmaguire

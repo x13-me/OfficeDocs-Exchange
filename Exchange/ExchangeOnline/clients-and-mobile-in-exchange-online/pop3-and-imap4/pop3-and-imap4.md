@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of POP3 and IMAP4 in Exchange Online, and the differences between them.'
 ms.topic: article
 author: msdmaguire

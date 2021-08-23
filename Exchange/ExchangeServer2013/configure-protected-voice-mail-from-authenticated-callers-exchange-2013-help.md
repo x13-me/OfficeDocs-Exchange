@@ -1,7 +1,7 @@
 ---
 title: 'Configure Protected Voice Mail from authenticated callers: Exchange 2013 Help'
 TOCTitle: Configure Protected Voice Mail from authenticated callers
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you create a Unified Messaging (UM) auto attendant, you can view or configure a variety of settings. For example, you can add, remove, and edit extension numbers associated with the auto attendant. You can also enable or disable Automatic Speech Recognition (ASR) for the auto attendant and change the greetings used for business and non-business hours.
 ms.topic: article
 author: msdmaguire

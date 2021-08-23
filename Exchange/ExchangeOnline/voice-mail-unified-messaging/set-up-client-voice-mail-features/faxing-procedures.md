@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Set the partner fax server URI to allow faxing
 ms.topic: article
 author: msdmaguire

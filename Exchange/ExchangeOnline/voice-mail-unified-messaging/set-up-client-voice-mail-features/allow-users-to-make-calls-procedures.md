@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Enable outgoing calls on UM IP gateways
 ms.topic: article
 author: msdmaguire

@@ -19,7 +19,7 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
-localization_priority: Priority
+ms.localizationpriority: high
 
 ---
 

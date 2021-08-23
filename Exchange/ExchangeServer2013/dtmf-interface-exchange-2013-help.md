@@ -1,7 +1,7 @@
 ---
 title: 'DTMF interface: Exchange 2013 Help'
 TOCTitle: DTMF interface
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

@@ -11,7 +11,7 @@ ms.topic: how-to
 
 ms.custom: 
   - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Admins can learn how to set up standalone Exchange Online Protection (EOP) to protect on-premises email environments.
 ms.technology: mdo

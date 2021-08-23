@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how data loss prevention (DLP) rules evaluate messages
 ms.topic: article
 author: msdmaguire

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: Admins can learn about the mail flow reports that are available in the new Exchange admin center.
 ms.custom:

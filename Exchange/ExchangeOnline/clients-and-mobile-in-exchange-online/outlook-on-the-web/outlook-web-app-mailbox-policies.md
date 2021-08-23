@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Use Microsoft Outlook on the web mailbox policies to create organization-level policies to manage access to features in Outlook on the web.
 ms.topic: overview
 author: msdmaguire

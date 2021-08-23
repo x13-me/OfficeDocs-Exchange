@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
@@ -17,7 +17,7 @@ manager: serdars
 
 ---
 
-# Turn off access to the Exchange admin center
+# Exchange Server: Turn off access to the Exchange admin center
 
 The Exchange admin center (EAC) is the primary management interface for Exchange 2013 or later. For more information, see [Exchange admin center in Exchange Server](exchange-admin-center.md). By default, access to the EAC isn't restricted, and access to Outlook on the web (formally known as Outlook Web App) on an on an Internet-facing Exchange server also gives access to the EAC. You still need valid credentials to sign in to the EAC, but organizations may want to restrict access to the EAC for client connections from the Internet.
 

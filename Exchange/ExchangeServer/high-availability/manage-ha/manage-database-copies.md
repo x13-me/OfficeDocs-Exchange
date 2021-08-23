@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms.reviewer:
 title: Manage mailbox database copies

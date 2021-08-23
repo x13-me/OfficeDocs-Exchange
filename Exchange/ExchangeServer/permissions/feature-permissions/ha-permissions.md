@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms.reviewer:
 title: High availability and site resilience permissions
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# High availability and site resilience permissions
+# High availability and site resilience permissions in Exchange Server
 
 The permissions required to configure high availability vary depending on the procedure being performed or the cmdlet you want to run. For more information about high availability, see [High availability and site resilience](../../high-availability/high-availability.md).
 

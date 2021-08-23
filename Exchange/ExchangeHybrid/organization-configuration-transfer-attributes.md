@@ -1,6 +1,6 @@
 ---
 title: "Organization Configuration Transfer Attributes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
@@ -9,7 +9,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-email-calendar

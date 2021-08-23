@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about how Exchange ActiveSync lets enabled mobile devices access a user's Microsoft Exchange mailbox data any time, anywhere."
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms.reviewer: 
 title: Mobile devices
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mobile devices
+# Mobile devices in Exchange Server
 
 There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Android phones and tablets, as well as the Apple iPhone, iPod, and iPad.
 

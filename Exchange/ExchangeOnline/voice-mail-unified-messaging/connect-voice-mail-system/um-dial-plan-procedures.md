@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Create a UM dial plan
 ms.topic: article
 author: msdmaguire

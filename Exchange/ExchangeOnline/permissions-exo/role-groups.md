@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view, create, copy, modify, and remove management role groups in Exchange Online.'
 ms.topic: article
 author: msdmaguire

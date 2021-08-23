@@ -1,7 +1,7 @@
 ---
 title: 'Manage user mailboxes: Exchange 2013 Help'
 TOCTitle: Manage user mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

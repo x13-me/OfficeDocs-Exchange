@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of Exchange features you can use to protect your data.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
 ms.reviewer:
 title: Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Backup, restore, and disaster recovery
+# Backup, restore, and disaster recovery in Exchange Server
 
 Data protection planning is a complex process that relies on many decisions that you make during the planning phase of your deployment. As part of your planning, it's important that you understand the ways in which data can be protected, and to determine which method best suits your organization's needs.
 

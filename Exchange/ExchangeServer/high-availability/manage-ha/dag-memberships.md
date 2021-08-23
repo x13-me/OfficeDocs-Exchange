@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Add Exchange Server 2016 or Exchange Server 2019 to, or remove them from, a database availability group (DAG).'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms.reviewer:
 title: Manage database availability group membership
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage database availability group membership
+# Manage database availability group membership in Exchange Server
 
 When you add a server to a DAG, the server works with the other DAG members to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, the server is no longer automatically protected from failures.
 

@@ -1,16 +1,18 @@
 ---
 title: 'Accessibility for people with disabilities: Exchange 2013 Help'
 TOCTitle: Accessibility for people with disabilities
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 manager: serdars
 ms.reviewer:
+ms.topic: article
 ms.collection: Ent_O365_Hybrid
 f1.keywords:
 - CSH
 ms.custom: httpsfix
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 mtps_version: v=EXCHG.150
+description: Making available Microsoft Products for people with disabilities
 ---
 
 # Accessibility for people with disabilities in Exchange 2013

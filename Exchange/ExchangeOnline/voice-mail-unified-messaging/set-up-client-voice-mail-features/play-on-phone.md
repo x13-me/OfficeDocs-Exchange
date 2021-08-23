@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After a voice mail message arrives, users can choose either to listen to the voice mail message through their computer speakers or headphones or to use the Play on Phone feature. The Play on Phone feature is included with Microsoft Outlook and Outlook on the web, and settings for Play on Phone are available in the Play on phone section under Voice mail options. This topic discusses how a Unified Messaging (UM)-enabled user can use the Play on Phone feature.
 ms.topic: article
 author: msdmaguire

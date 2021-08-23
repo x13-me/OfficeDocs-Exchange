@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to create, modify, and delete mail contacts in Exchange Online.
 ms.topic: article
 author: msdmaguire
@@ -10,7 +10,7 @@ ms.custom:
 ms.author: jhendr
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
 ms.reviewer: 
-title: Manage mail contacts
+title: Manage mail contacts in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

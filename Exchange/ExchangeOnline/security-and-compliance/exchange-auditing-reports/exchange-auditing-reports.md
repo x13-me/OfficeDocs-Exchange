@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the auditing reports that are available in the Exchange admin center (EAC) in Exchange Online.
 ms.topic: overview
 author: msdmaguire

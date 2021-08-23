@@ -1,7 +1,7 @@
 ---
 title: 'Manage user access to add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Manage user access to add-ins for Outlook
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -11,7 +11,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Manage user access to add-ins for Outlook in Exchange 2013
+# Manage user access to add-ins for Outlook in Exchange
 
 _**Applies to:** Exchange Server 2013_
 

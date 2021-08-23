@@ -6,14 +6,14 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Change the assignment policy on a mailbox
+# Change the assignment policy on a mailbox in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

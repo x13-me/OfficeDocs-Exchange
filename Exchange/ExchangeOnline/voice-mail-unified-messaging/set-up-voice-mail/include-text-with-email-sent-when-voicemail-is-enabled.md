@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system.
 ms.topic: article
 author: msdmaguire

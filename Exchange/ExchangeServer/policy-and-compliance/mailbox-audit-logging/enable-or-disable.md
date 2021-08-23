@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms.reviewer:
 title: Enable or disable mailbox audit logging for a mailbox
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Enable or disable mailbox audit logging for a mailbox
+# Enable or disable mailbox audit logging for a mailbox in Exchange Server
 
 With mailbox audit logging in Exchange Server, you can track logons to a mailbox as well as what actions are taken while the user is logged on. When you enable mailbox audit logging for a mailbox, some actions performed by administrators and delegates are logged by default. None of the actions performed by the mailbox owner are logged by default. To learn more about mailbox audit logging and what actions can be logged, see [Mailbox audit logging in Exchange Server](mailbox-audit-logging.md).
 

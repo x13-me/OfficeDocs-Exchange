@@ -1,6 +1,6 @@
 ---
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro

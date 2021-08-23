@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to export a certificate from an Exchange server 2016 or 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 7e4c4013-8a2b-4c25-a287-b367c65e48aa
 ms.reviewer:
 title: Export a certificate from an Exchange server

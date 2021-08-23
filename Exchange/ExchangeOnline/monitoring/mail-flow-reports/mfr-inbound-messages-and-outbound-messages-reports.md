@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Inbound messages report and the Outbound Messages report in the new Exchange admin center to monitor message volume and TLS encryption for messages to and from the internet and inbound and outbound messages over connectors."
 ---

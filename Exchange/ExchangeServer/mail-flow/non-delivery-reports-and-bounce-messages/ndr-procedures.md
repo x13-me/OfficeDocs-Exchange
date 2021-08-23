@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
 ms.reviewer:
 title: Procedures for DSNs and NDRs in Exchange Server
