@@ -1,5 +1,5 @@
 ---
-title: 'Domain Controller Override is set in the Registry'
+title: 'Exchange Server: Domain Controller Override is set in the Registry'
 TOCTitle: Domain Controller Override is set in the Registry_ConfigDCHostNameMismatch
 ms:assetid: 3aef5470-d510-4b59-a4b6-36d274a984ae
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.configdchostnamemismatch(v=EXCHG.150)
