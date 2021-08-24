@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["master" "release-.*"]
+{:allowed-branchname-matches ["master" "release-.*" "PubOps-repo-health"]
  :allowed-filename-matches ["Exchange/" "Outlook/"]
  
  :targets 
