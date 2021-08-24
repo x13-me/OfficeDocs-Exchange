@@ -1,5 +1,5 @@
 ---
-title: 'Local computer is responsible for expanding group membership'
+title: 'Exchange Server: Local computer is responsible for expanding group membership'
 TOCTitle: The local computer is responsible for expanding group membership_ServerIsDynamicGroupExpansionServer
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)

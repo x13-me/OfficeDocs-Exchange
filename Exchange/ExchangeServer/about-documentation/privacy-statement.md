@@ -1,5 +1,5 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: The privacy statement for Exchange Server 2016 and Exchange Server 2019.
 ms.topic: overview
 author: msdmaguire

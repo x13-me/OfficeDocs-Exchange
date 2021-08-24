@@ -8,7 +8,7 @@ ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Migrate your public folders to Microsoft 365 Groups
+title: Migrate your Exchange public folders to Microsoft 365 Groups
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online

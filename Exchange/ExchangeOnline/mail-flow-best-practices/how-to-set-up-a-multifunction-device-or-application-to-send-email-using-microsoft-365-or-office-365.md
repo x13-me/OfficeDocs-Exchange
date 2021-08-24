@@ -18,7 +18,7 @@ f1.keywords:
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: serdarsg
-localization_priority: Priority
+ms.localizationpriority: high
 
 ---
 

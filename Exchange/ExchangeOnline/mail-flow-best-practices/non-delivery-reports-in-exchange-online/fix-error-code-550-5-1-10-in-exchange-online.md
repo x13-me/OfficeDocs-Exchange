@@ -7,7 +7,7 @@ ms.reviewer:
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom: MiniMaven

@@ -1,5 +1,5 @@
 ---
-title: "Configure Exchange Online public folders for a hybrid deployment"
+title: "Exchange Online: Configure  public folders for a hybrid deployment"
 ms.author: serdars
 author: msdmaguire
 manager: serdars
