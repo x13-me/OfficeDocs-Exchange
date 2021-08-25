@@ -54,8 +54,6 @@ Open the Exchange Management Shell, and run the following command:
 
 ```PowerShell
 Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
-
-Note : Get-ExchangeServer will only show the build number of the CU and not the Exchange Server version for SU
 ```
 
 ## Exchange Server 2019
