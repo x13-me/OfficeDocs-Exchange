@@ -249,15 +249,10 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 3. Choose **IMAP migration** \> **Next**.
 
 4. On the **Select the users page**, click **Browse** to specify the migration file you created. After you select your migration file, Microsoft 365 or Office 365 checks it to make sure of the following:
-
    - It isn't empty.
-
    - It uses comma-separated formatting.
-
    - It doesn't contain more than 50,000 rows.
-
    - It includes the required attributes in the header row.
-
    - It contains rows with the same number of columns as the header row.
 
      If any one of these checks fails, you'll get an error that describes the reason for the failure. If you get an error, you have to fix the migration file and resubmit it to create a migration batch.
@@ -311,31 +306,29 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 4. On the **Add migration batch page**, type the name (no spaces or special characters) of the migration batch in the **Give migration batch a unique name** field, for example, Test5-migration.
 
-5.	Select **Migrate to Exchange Online** in the dropdown **Select the mailbox migration path**,  and then click **Next**.
+5. Select **Migrate to Exchange Online** in the dropdown **Select the mailbox migration path**,  and then click **Next**.
 
 6. In the **Select the migration type** page, select **IMAP migration** in the **Select the migration type** dropdown and then click **Next**.
 
-7.	In the **Prerequisites for IMAP migration** page, check to see if you completed all the prerequisites and then click **Next**.
+7. In the **Prerequisites for IMAP migration** page, check to see if you completed all the prerequisites and then click **Next**.
 
-8.	In the **Set a migration endpoint**, select **Create a new migration endpoint** and then click **Next**.
+8. In the **Set a migration endpoint**, select **Create a new migration endpoint** and then click **Next**.
 
-9.	In the **Migration endpoint name** page , type a Migration endpoint name, for example, Test5-endpoint. Leave the other two boxes as-is to use the default values and then click **Next**.
+9. In the **Migration endpoint name** page , type a Migration endpoint name, for example, Test5-endpoint. Leave the other two boxes as-is to use the default values and then click **Next**.
 
 10. In the **IMAP migration configuration** page:
-
     - IMAP server: Type the messaging server name (for example, imap.contoso.com) of the source email server.
-
     - Leave the remaining information as the default settings; these will work for most cases.
 
-11.	Click **Next**.
+11. Click **Next**.
 
-12.	In the **Check endpoint setup status**, verify that the new endpoint created message appears and then Click **Next**.
+12. In the **Check endpoint setup status**, verify that the new endpoint created message appears and then Click **Next**.
 
-13.	In the **Add user mailboxes** page, , click **Browse** to specify the migration file you created and then Click **Next**.
+13. In the **Add user mailboxes** page, , click **Browse** to specify the migration file you created and then Click **Next**.
 
-14.	In the **Select configuration settings** page, click **Next**.
-	
-15.	In the **Schedule batch migration** page, select the desired options for reporting and start and end migration batch modes and then click **Save** , and then click **Done**.
+14. In the **Select configuration settings** page, click **Next**.
+
+15. In the **Schedule batch migration** page, select the desired options for reporting and start and end migration batch modes and then click **Save** , and then click **Done**.
 
 ##### Verify that this task worked (new EAC)
 
@@ -392,7 +385,8 @@ During the last task, you changed the MX record. Now it's time to verify that al
 When you delete the migration batch, the migration service cleans up any records related to the migration batch and removes it from the migration dashboard.
 
 #### Delete a migration batch
-##### Using classic EAC
+
+##### Delete a migration batch using classic EAC
 
 1. In the [Exchange admin center](../../exchange-admin-center.md), go to **Recipients** \> **Migration**.
 
@@ -400,18 +394,19 @@ When you delete the migration batch, the migration service cleans up any records
 
    ![Delete a migration batch](../media/354afa40-6e2d-4c75-94f5-a516e59ca87b.png)
 
-##### Using new EAC
+##### Delete a migration batch using new EAC
 
 1. In the [new Exchange admin center](../../exchange-admin-center.md), go to **Migration** \> **Batch**.
 
 2. On the migration dashboard, select the batch, and then click **Delete**.
 
 #### Confirm that the deletion worked
-##### Using classic EAC
+
+##### Confirmed that the deletion worked using classic EAC
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the migration batch is no longer listed on the migration dashboard.
 
-##### Using new EAC
+##### Confirm that the deletion worked using new EAC
 
 - In the new Exchange admin center, go to **Migration** \> **Batch**. Verify that the migration batch is no longer listed on the migration dashboard.
 
