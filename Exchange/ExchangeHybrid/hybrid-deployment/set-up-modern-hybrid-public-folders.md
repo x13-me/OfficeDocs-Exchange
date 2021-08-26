@@ -21,7 +21,7 @@ description: "Summary: Instructions for enabling Exchange Online users to access
 
 # Configure Exchange Server public folders for a hybrid deployment
 
- **Summary**: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange 2013, Exchange 2016, or Exchange 2019 environment.
+**Summary**: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange 2013, Exchange 2016, or Exchange 2019 environment.
 
 In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server on-premises environment.
 
@@ -38,11 +38,11 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
    Here is an example of proper configuration in an on-premises environment:
 
-   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server":::   
+   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server":::
 
    Here is an example of proper configuration in Exchange Online:
 
-   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online":::  
+   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online":::
 
 2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
@@ -61,7 +61,6 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 1. Download the following files from [Exchange 2013/2016 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855):
 
    - `Sync-ModernMailPublicFolders.ps1`
-
    - `Sync-ModernMailPublicFolders.psd1`
 
     > [!NOTE]
@@ -93,7 +92,7 @@ Use the steps in [Troubleshooting mail enabled public folder synchronization fai
 
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
 
-A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.  
+A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.
 
 You can use following command to identify such mailboxes:
 

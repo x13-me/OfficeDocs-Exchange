@@ -44,7 +44,11 @@ A hybrid deployment is not for everyone; in fact there are usually better option
 
 Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../ExchangeOnline/mailbox-migration/mailbox-migration.md).)
 
-|**Existing organization**|**Number of mailboxes to migrate**|**Do you want to manage user accounts in your on-premises organization?**|**Migration type**|
+<br>
+
+****
+
+|Existing organization|Number of mailboxes to migrate|Do you want to manage user accounts in your on-premises organization?|Migration type|
 |:-----|:-----|:-----|:-----|
 |Exchange 2003 or later|Less than 2,000 mailboxes|No|Cutover Exchange migration|
 |Exchange 2007 or Exchange 2003|Less than 2,000 mailboxes|No|Staged Exchange migration|
@@ -52,6 +56,7 @@ Use the following table to decide what type of migration works for your organiza
 |Exchange 2010 or later|More than 2,000 mailboxes<sup>\*</sup>|Yes|Remote move migration in an Exchange hybrid deployment|
 |Exchange 2000 Server or earlier versions|No maximum|Yes|IMAP migration|
 |Non-Exchange on-premises messaging system|No maximum|Yes|IMAP migration|
+|
 
 <sup>\*</sup>Some organizations with fewer than 2,000 mailboxes may benefit from features and capabilities that are only available with a hybrid deployment. It's important to carefully consider the benefits of a hybrid deployment with the complexity that introduces. We strongly recommend that customers with fewer than 2,000 mailboxes consider cutover or staged migration before proceeding with a hybrid deployment.
 
@@ -265,7 +270,7 @@ The graphic below describes the actual end state:
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
-      
+
 > [!NOTE]
 > It's recommended that you leave the Exchange Hybrid Deployment feature enabled in Azure AD Connect.
 
@@ -273,4 +278,4 @@ The graphic below describes the actual end state:
 
 **Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
 
-**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint. Exchange-only services and features, such as public folders, will require you to either maintain your on-premises Exchange servers or migrate those services to Exchange Online.  Per scenarios one and two, if you maintain identity synchronization from Active Directory, you will need to continue to maintain at least one Exchange server on-premises.
+**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint. Exchange-only services and features, such as public folders, will require you to either maintain your on-premises Exchange servers or migrate those services to Exchange Online. Per scenarios one and two, if you maintain identity synchronization from Active Directory, you will need to continue to maintain at least one Exchange server on-premises.

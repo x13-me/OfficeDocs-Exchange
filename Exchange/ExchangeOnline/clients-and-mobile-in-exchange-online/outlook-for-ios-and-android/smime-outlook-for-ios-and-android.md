@@ -155,7 +155,7 @@ When the S/MIME setting is enabled, Outlook for iOS and Android will automatical
 
 ![Screenshot showing the Outlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
 
-Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate's details, including information like key usage and the validity period.
+Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security. Furthermore, users can tap on each individual S/MIME certificate and view the certificate's details, including information like key usage and the validity period.
 
 ![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
 
@@ -169,10 +169,10 @@ Outlook for iOS and Android supports accessing public user certificate keys from
 - The LDAP endpoint does not require authentication.
 - The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
 - The LDAP endpoint configuration is supported using the following formats:
-    - `<ldaps://contoso.com>`
-    - `<ldaps://contoso.com:636>`
-    - `contoso.com`
-    - `contoso.com:636`
+  - `<ldaps://contoso.com>`
+  - `<ldaps://contoso.com:636>`
+  - `contoso.com`
+  - `contoso.com:636`
 
 When Outlook for iOS and Android performs a certificate lookup, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
 
@@ -210,7 +210,6 @@ Outlook for iOS and Android can send S/MIME signed and encrypted messages to dis
 > [!IMPORTANT]
 >
 > - Outlook for iOS and Android only supports sending clear-signed messages.
->
 > - In order to compose an encrypted message, the target recipient's public certificate key must be available either in the Global Address List or stored on the local device. In order to compose a signed message, the sender's private certificate key must be available on the device.
 
 Here is how S/MIME options appear in Outlook for Android:
