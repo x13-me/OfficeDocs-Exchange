@@ -76,7 +76,7 @@ It is not simple to move from a hybrid configuration to the cloud. The process f
 
 Depending on your immediate goals, however, getting from a hybrid configuration to the cloud only can be a fairly straight-forward process, with some guidance. The following are three common hybrid scenarios along with our recommendation for how to properly achieve the end goal of the customer.
 
-Since the hybrid customer base is very diverse, trying to fit all of them into "common" scenarios is difficult. We attempted to provide some high-level scenarios for on-premises Exchange Server decommissioning below, so as you read through these scenarios and form a plan to decommission, you will need to determine the scenario that best fits your needs.
+Since the hybrid customer base is very diverse, trying to fit all of them into "common" scenarios is difficult. We attempted to provide some high-level scenarios for on-premises Exchange Server decommissioning below, so as you read through these scenarios and formulate a plan to decommission, you will need to determine the scenario that best fits your needs.
 
 ### Scenario one
 
@@ -136,7 +136,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
        ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
-6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, these steps can be skipped because only a small subset of our customers have OAuth configured.
+6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, you can skip these steps sbecause only a small number of customers have OAuth configured.
 
    To disable the on-premises configuration:
 
@@ -166,7 +166,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 ### Scenario two
 
- **Issue**: My organization has been running in a hybrid configuration for about a year now and have finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes. (This scenario would apply to any customer that is planning on keeping directory synchronization).
+ **Issue**: My organization has been running in a hybrid configuration for about a year now and hass finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes. (This scenario would apply to any customer that is planning on keeping directory synchronization).
 
  **Solution**: Since the customer is planning on keeping AD FS, they will also have to keep directory synchronization since it is a prerequisite. Because of that, they cannot fully remove the Exchange servers from the on-premises environment. However, they can decommission most of the Exchange servers, but leave a couple of servers behind for user management. Keep in mind that the servers that are left running can be run on virtual machines since the workload is almost completely shifted to Exchange Online.
 
@@ -193,7 +193,7 @@ The graphic below describes the actual end state:
    > [!IMPORTANT]
    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.
 
-2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [External Domain Name System records for Office 365](/office365/enterprise/external-domain-name-system-records).
+2. After you have moved all of the mailboxes to Exchange Online, the first step in decommissioning most of your Exchange servers is to point the MX and Autodiscover DNS records to Exchange Online instead of to your on-premises email organization. For more information, see [External Domain Name System records for Office 365](/office365/enterprise/external-domain-name-system-records).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.
@@ -223,7 +223,7 @@ The graphic below describes the actual end state:
 
 5. Remove all Exchange servers with the exception of the servers you will retain for user management and creation. Two servers should be sufficient for user management, although you could possibly get by with one server. In addition, there is no need to have a Database Availability Group or any other high availability options.
 
-6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, these steps can be skipped because only a small subset of our customers have OAuth configured.
+6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, you can skip these steps because only a small number of customers have OAuth configured.
 
    To disable the on-premises configuration:
 
