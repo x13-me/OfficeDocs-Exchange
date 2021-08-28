@@ -38,7 +38,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 ## Use the EAC to Create a Receive Connector to Receive Messages from a Messaging Appliance
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a Receive connector.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a Receive connector.
 
 2. On the **New receive connector** page, specify a name for the Receive connector and then select **Hub Transport** for the **Role**. In this case, you want your Mailbox server running the Transport service to receive messages from the appliance.
 

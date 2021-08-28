@@ -110,11 +110,11 @@ If you want to create a sharing policy specifically for Internet calendar publis
 
 1. Navigate to **Organization**\> **Sharing**.
 
-2. In the list view, under **Individual Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In **Sharing Policy**, type a friendly name for the sharing policy in the **Policy name** field (for example, **Internet**).
 
-4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to define the sharing rules for the sharing policy.
+4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to define the sharing rules for the sharing policy.
 
 5. In **Sharing Rule**, click **Sharing with a specific domain**, and then type **Anonymous** in the corresponding box.
 
@@ -168,9 +168,9 @@ If you want to configure the default sharing policy for Internet calendar publis
 
 1. Navigate to **Organization** \> **Sharing**.
 
-2. In the list view, under **Individual Sharing**, select the Default Sharing Policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, under **Individual Sharing**, select the Default Sharing Policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In **Sharing Policy**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a sharing rule to the policy.
+3. In **Sharing Policy**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a sharing rule to the policy.
 
 4. In **Sharing Rule**, click **Sharing with a specific domain**, and then and then type **Anonymous** in the corresponding box.
 

@@ -23,7 +23,7 @@ This topic provides information about how the Exchange Server 2013 Management Pa
 
 In Exchange Server 2013, several architectural changes were made. One of the key changes is the *Managed Availability* feature where all Exchange 2013 components have built-in monitors that detect problems and attempt to recover the service availability. The Exchange 2013 Management Pack relies on this feature. Any issues that can't be recovered automatically are escalated to the Exchange 2013 Management Pack as an alert. Each component in Exchange 2013 monitors itself using three basic components called probes, monitors and responders.
 
-![Managed availability](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
+![Managed availability.](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
 
 - **Probes**: These are sets of data collectors that measure various components. There are three distinct types of probes:
 

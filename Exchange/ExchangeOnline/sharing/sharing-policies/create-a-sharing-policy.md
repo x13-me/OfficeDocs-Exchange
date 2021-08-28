@@ -36,11 +36,11 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 2. Go to **organization** \> **sharing**.
 
-3. In the list view, under **Individual Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box.
 
-5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
+5. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
 
 6. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 

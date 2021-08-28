@@ -76,11 +76,11 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
 2. Create the rule by using one of the following options:
 
-   - To create a rule from a template, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and select a template.
+   - To create a rule from a template, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and select a template.
 
-   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](images/ITPro_EAC_CopyIcon.gif).
+   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon.](images/ITPro_EAC_CopyIcon.gif).
 
-   - To create a new rule from scratch, **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+   - To create a new rule from scratch, **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule:
 
@@ -291,7 +291,7 @@ To verify that you have successfully enabled or disabled a transport rule, do th
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
-2. Select the rule you want to remove and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+2. Select the rule you want to remove and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 ### Use the Exchange Management Shell to remove a transport rule
 

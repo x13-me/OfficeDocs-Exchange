@@ -49,10 +49,10 @@ For additional information on the .NET regex engine which is used for processing
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**. Any existing policies that you have configured are shown in a list.
 
-2. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon, and select **New custom policy**.
+2. Click the arrow that is beside the **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) icon, and select **New custom policy**.
 
    > [!IMPORTANT]
-   > If you click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon instead of the arrow, you will create a new policy based on a template. For more information about using templates, see [Create a DLP policy from a template](create-dlp-policy-from-template.md).
+   > If you click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) icon instead of the arrow, you will create a new policy based on a template. For more information about using templates, see [Create a DLP policy from a template](create-dlp-policy-from-template.md).
 
 3. On the **New custom policy** page, complete the following fields:
 
@@ -64,19 +64,19 @@ For additional information on the .NET regex engine which is used for processing
 
 4. Click **Save** to finish creating the new policy reference information. The policy is added to the list of all policies that you have configured, although there are not yet any rules or actions associated with this new custom policy.
 
-5. Double-click the policy that you just created or select it and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+5. Double-click the policy that you just created or select it and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 6. On the **Edit DLP policy** page, click **Rules**.
 
-   Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
+   Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to add a new blank rule. You can establish conditions using all the traditional mail flow rules in addition to the sensitive information types.
 
    In order to avoid confusion, supply a unique name for each part of your policy or rule. You can provide this unique name when you have the option to provide your own character string. There are more options available to you:
 
-   1. Click the arrow that is beside the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
+   1. Click the arrow that is beside the **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) icon to add a rule about sender notification or allowing overrides.
 
-   2. To remove a rule, highlight the rule and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+   2. To remove a rule, highlight the rule and click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
-   3. Click **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add more conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
+   3. Click **More options** ![More Options Icon.](../../media/ITPro_EAC_MoreOptionsIcon.gif) to add more conditions and actions for this rule including time-bound limits of enforcement or effects on other rules in this policy.
 
 7. Click **Save** to finish modifying the policy and save your changes.
 

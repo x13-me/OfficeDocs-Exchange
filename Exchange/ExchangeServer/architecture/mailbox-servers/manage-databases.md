@@ -81,7 +81,7 @@ To verify that you have successfully retrieved your mailbox database information
 
 2. Select **Databases**, and then click to select the mailbox database you want to configure.
 
-3. Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to configure the attributes of a mailbox database.
+3. Click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) to configure the attributes of a mailbox database.
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
@@ -210,7 +210,7 @@ To verify that you have successfully dismounted the database, implement the foll
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
-2. Click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png) to remove the mailbox database.
+2. Click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png) to remove the mailbox database.
 
 ### Use the Exchange Management Shell to remove a mailbox database
 

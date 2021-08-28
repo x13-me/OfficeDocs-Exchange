@@ -38,7 +38,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
 2. Click to expand **Users**, then select **Active Users**.
 
-3. Select **Add** ![Add](../../media/ITPro_EAC_AddIcon.png) to add a user. The **Create a new user account** dialog will open.
+3. Select **Add** ![Add.](../../media/ITPro_EAC_AddIcon.png) to add a user. The **Create a new user account** dialog will open.
 
 4. In the **Create a new user account** dialog, enter a **Display name** and a **username**. The display name will appear in the Sender field for all Clutter notifications sent to your users. A new temporary password is generated for the new user account. Click **Create** to create the account.
 
@@ -50,7 +50,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
 8. Under **Mailbox** settings \> **Email addresses**, click **Manage email address types**. 
 
-9. In the **Manage email address types** display pane, click ![Add](../../media/ITPro_EAC_AddIcon.png) **Add email address type**  to add an email address to the new user account.
+9. In the **Manage email address types** display pane, click ![Add.](../../media/ITPro_EAC_AddIcon.png) **Add email address type**  to add an email address to the new user account.
 
 10. In the **new email address** dialog, select SMTP as the email address type, and then, in the **Email address:\*** box, type the following: **7a694ec2-b7c9-41eb-b562-08fd2b277ae0@[your default domain]**, where [your default domain] is the domain that your organization uses. For most organizations, this would be **[your domain name].onmicrosoft.com**. When finished, click **OK**.
 
@@ -70,7 +70,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
 2. Click to expand **Users**, then select **Active Users**.
 
-3. Select **Add** ![Add](../../media/ITPro_EAC_AddIcon.png) to add a user. The **Create a new user account** dialog will open.
+3. Select **Add** ![Add.](../../media/ITPro_EAC_AddIcon.png) to add a user. The **Create a new user account** dialog will open.
 
 4. In the **Create a new user account** dialog, enter a **Display name** and a **username**. The display name will appear in the Sender field for all Clutter notifications sent to your users. A new temporary password is generated for the new user account. Click **Create** to create the account.
 
@@ -82,7 +82,7 @@ To begin, you will need to sign in to Microsoft 365 or Office 365 with your work
 
    ![Picture of the Exchange admin center when creating your branding mailbox for Clutter.](../../media/98be1aee-ae96-4406-bf47-91336c62b5c7.png)
 
-8. In the user account dialog, click **Email address**, and then click **Add** ![Add](../../media/ITPro_EAC_AddIcon.png) to add an email address to the new user account.
+8. In the user account dialog, click **Email address**, and then click **Add** ![Add.](../../media/ITPro_EAC_AddIcon.png) to add an email address to the new user account.
 
    ![Picture of the user dialog box, which is used to add a new email address to the user account.](../../media/1bfb758a-c1a5-4314-aa0f-f34655bb501f.png)
 

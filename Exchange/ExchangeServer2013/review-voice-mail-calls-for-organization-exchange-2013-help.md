@@ -26,7 +26,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## How do I get call statistics for UM?
 
-1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Choose the information you want to include in the report. The report automatically updates as you select any of the following options:
 

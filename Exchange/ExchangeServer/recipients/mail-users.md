@@ -136,7 +136,7 @@ The estimated time to complete this task will vary based on the number of proper
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, click the mail user that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of contacts, click the mail user that you want to change the properties for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the mail user properties page, click one of the following sections to view or change properties.
 
@@ -174,7 +174,7 @@ Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the mail user account. You have to use Active Directory Users and Computers to move the account to a different OU.
 
-- **Custom attributes**: This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes**: This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
 
 #### Contact Information
 
@@ -201,7 +201,7 @@ Use the **Organization** section to record detailed information about the user's
 
 Use the **Email Addresses** section to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, after the mail user is created, the primary SMTP address and the external email address are the same.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -229,7 +229,7 @@ Use the **Mail Flow Settings** section to view or change the following settings:
 
   - **All senders**: Select this option to specify that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This option is selected by default. This option includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
 
-  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png).
+  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png).
 
   - **Require that all senders are authenticated**: Select this option to prevent anonymous users from sending messages to the user.
 
@@ -237,7 +237,7 @@ Use the **Mail Flow Settings** section to view or change the following settings:
 
   - **No senders**: Select this option to specify that the mailbox won't reject messages from any senders in the Exchange organization. This option is selected by default.
 
-  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png).
+  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png).
 
 #### Member Of
 
@@ -296,7 +296,7 @@ For detailed syntax and parameter information, see [Set-MailUser](/powershell/mo
 
 To verify that you've successfully changed properties for mail users, do the following:
 
-- In the EAC, select the mail user and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the property that you changed.
+- In the EAC, select the mail user and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) to view the property that you changed.
 
 - In the Exchange Management Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts.
 
@@ -342,7 +342,7 @@ When you bulk edit mail users, you can change the following property areas:
 
 To verify that you've successfully bulk edited mail users, do one of the following:
 
-- In the EAC, select each of the mail users that you bulk edited and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
+- In the EAC, select each of the mail users that you bulk edited and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
 
 - In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell:
 

@@ -36,7 +36,7 @@ By default, IMAP4 client connectivity isn't enabled in Exchange. To enable IMAP4
 
    To allow **external** IMAP4 clients to connect to mailboxes, you need to configure the IMAP4 server FQDN, TCP port, and encryption method for external connections. This step causes the external IMAP4 settings to be displayed in Outlook on the web (formerly known as Outlook Web App) at **Settings** \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**.
 
-   ![IMAP settings in Outlook on the web](../../media/2fc6813d-0b2e-4813-8bbc-bc3dfaf4c261.png)
+   ![IMAP settings in Outlook on the web.](../../media/2fc6813d-0b2e-4813-8bbc-bc3dfaf4c261.png)
 
 3. Restart the IMAP4 services to save the changes.
 
@@ -203,11 +203,11 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 
 1. Open a mailbox in Outlook on the web, and then click **Settings** \> **Options**.
 
-   ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
+   ![Options menu location in Outlook on the web.](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
 
 2. Click **Mail** \> **Accounts** \> **POP and IMAP** and verify the correct IMAP4 settings are displayed.
 
-   ![IMAP settings in Outlook on the web](../../media/2fc6813d-0b2e-4813-8bbc-bc3dfaf4c261.png)
+   ![IMAP settings in Outlook on the web.](../../media/2fc6813d-0b2e-4813-8bbc-bc3dfaf4c261.png)
 
    **Note**: If you configured 993/SSL **and** 143/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-ImapSettings** cmdlet, only the 993/SSL value is displayed in Outlook on the web. Also, if the external IMAP4 settings that you configured don't appear as expected in Outlook on the web after you restart the IMAP4 services, run the commands `net stop w3svc /y` and `net start w3svc` to restart Internet Information Services (IIS).
 

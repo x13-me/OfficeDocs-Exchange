@@ -262,7 +262,7 @@ You can't use the EAC to hide Microsoft 365 groups from address lists.
 
    - **Public folders** \> **Public folders**: Mail-enabled public folders.
 
-2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 3. The recipient properties window opens. What you do next depends on the recipient type:
 
@@ -318,7 +318,7 @@ Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
 
 You can verify that you've successfully hidden a recipient from address lists by using any of the following procedures:
 
-- In the EAC, select the recipient, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
+- In the EAC, select the recipient, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
 
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
 

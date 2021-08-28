@@ -59,11 +59,11 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Use the EAC to create a dialing rule
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
+3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
 
 4. On the **New Dialing Rule** page, enter the following information:
 

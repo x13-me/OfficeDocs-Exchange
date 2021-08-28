@@ -39,7 +39,7 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the result pane, select the user for which you want to enable or disable POP3, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the result pane, select the user for which you want to enable or disable POP3, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 

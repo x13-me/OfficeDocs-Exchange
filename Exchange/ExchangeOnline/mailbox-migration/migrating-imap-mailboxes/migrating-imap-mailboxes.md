@@ -59,7 +59,7 @@ If you can't access user mailboxes, you'll have to reset the passwords. This let
 
 The main steps you perform for an IMAP email migration are shown in the following illustration.
 
-![Process for an IMAP email migration](../media/9520806b-91a5-4a1a-ac9c-9cd1a3964ebc.png)
+![Process for an IMAP email migration.](../media/9520806b-91a5-4a1a-ac9c-9cd1a3964ebc.png)
 
 These general steps apply whether you are migrating from Gmail or another IMAP system.
 

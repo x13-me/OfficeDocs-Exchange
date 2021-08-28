@@ -25,7 +25,7 @@ The following three scenarios describe possible deployment solutions for three d
 
 This scenario is applicable to government agencies, divisions, or departments that share infrastructure, but no reporting chain and have no common employees. In addition, the divisions don't have any special security or privacy concerns. In this scenario, two address book policies (ABPs) are created where employees can only see members of the same organization when the view the GAL or look at membership of other distribution groups. In addition, no users will be members of distribution groups that span the entire organization.
 
-![Address Book Policies with two separate companies](images/JJ657455.b4fc82da-a659-4ade-ba33-d55d90dcf204(EXCHG.150).gif "Address Book Policies with two separate companies")
+![Address Book Policies with two separate companies.](images/JJ657455.b4fc82da-a659-4ade-ba33-d55d90dcf204(EXCHG.150).gif "Address Book Policies with two separate companies")
 
 The Contoso and Humungous Insurance ABPs were created using the following address lists, global address lists, room lists, and OABs, which were created using a recipient filter that grouped the objects with a filter such as Custom Attribute. Because the two companies are separate without any interaction between the two, there aren't any address lists in common.
 
@@ -82,7 +82,7 @@ In this scenario, Fabrikam and Tailspin Toys share the same Exchange organizatio
 
 - Three ABPs are created: **Fab**, **Tail**, and **CEO**.
 
-![Two Companies One CEO](images/JJ657455.c87a5654-d456-4688-acb2-0be15ba1cda6(EXCHG.150).gif "Two Companies One CEO")
+![Two Companies One CEO.](images/JJ657455.c87a5654-d456-4688-acb2-0be15ba1cda6(EXCHG.150).gif "Two Companies One CEO")
 
 <table>
 <colgroup>
@@ -144,7 +144,7 @@ This scenario is applicable to schools or universities where a division of class
 
 - Distribution groups are created for each class's parents and the faculty.
 
-![Address Book Policies Education Scenario](images/JJ657455.435f3b1a-9752-4c61-ab8a-80115c643d12(EXCHG.150).gif "Address Book Policies Education Scenario")
+![Address Book Policies Education Scenario.](images/JJ657455.435f3b1a-9752-4c61-ab8a-80115c643d12(EXCHG.150).gif "Address Book Policies Education Scenario")
 
 <table>
 <colgroup>

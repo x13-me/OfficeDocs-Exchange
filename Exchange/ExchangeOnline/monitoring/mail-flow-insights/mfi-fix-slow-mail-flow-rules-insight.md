@@ -23,11 +23,11 @@ Inefficient mail flow rules (also known as transport rules) can lead to mail flo
 
 The **Fix slow mail flow rules** insight in the Insights dashboard in the new Exchange admin center (new EAC) will notify you when a mail flow rule is taking too long to complete. You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
-![Fix slow mail flow rules insight in the Insights dashboard](../../media/mfi-fix-slow-mail-flow-rules-insight.png)
+![Fix slow mail flow rules insight in the Insights dashboard.](../../media/mfi-fix-slow-mail-flow-rules-insight.png)
 
 When you click **View details**, a flyout appears where you can review the rule by clicking **View rules**. You can also click **View sample messages** to see what kind of messages are impacted by the rule.
 
-![Details flyout that appears after clicking View details in the Fix slow mail flow rules insight](../../media/mfi-fix-slow-mail-flow-rules-insight-details.png)
+![Details flyout that appears after clicking View details in the Fix slow mail flow rules insight.](../../media/mfi-fix-slow-mail-flow-rules-insight-details.png)
 
 For more information about conditions and exceptions in mail flow rules in Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](../../security-and-compliance/mail-flow-rules/conditions-and-exceptions.md).
 
