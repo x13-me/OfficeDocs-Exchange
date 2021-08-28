@@ -35,7 +35,7 @@ Here's a summary of the major transport high availability improvements in Exchan
 
 The following diagram provides a high-level overview of how transport high availability works in Exchange 2013.
 
-![Transport high availability overview](images/JJ657506.88f2284d-8afe-4c8f-94a6-cd4c097a55d8(EXCHG.150).gif "Transport high availability overview")
+![Transport high availability overview.](images/JJ657506.88f2284d-8afe-4c8f-94a6-cd4c097a55d8(EXCHG.150).gif "Transport high availability overview")
 
 1. An Exchange 2013 Mailbox server named Mailbox01 receives a message from an SMTP server that's outside the transport high availability boundary. The *transport high availability boundary* is a DAG or an Active Directory site in non-DAG environments. The message could come from a third-party SMTP server, from an Internet SMTP server proxied through a Client Access server, or from another Exchange 2013 server.
 

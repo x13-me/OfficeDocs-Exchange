@@ -69,13 +69,13 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 2. Select **Google apps** \> **My Account**.
 
-   ![Choose Goolge apps and  then My Account](../media/9f193437-3e31-46b3-8844-ed30d8f950fa.PNG)
+   ![Choose Goolge apps and  then My Account.](../media/9f193437-3e31-46b3-8844-ed30d8f950fa.PNG)
 
 3. On the **My Account** page choose **Sign-in &amp; security**.
 
 4. Under the **Password &amp; sign-in method**, choose the arrow next to the **2-Step verification**, and provide your password if asked.
 
-   ![Choose 2-step verification Off to start turning it on](../media/9c75b26b-e987-483b-af0a-82443801a428.PNG)
+   ![Choose 2-step verification Off to start turning it on.](../media/9c75b26b-e987-483b-af0a-82443801a428.PNG)
 
    > [!NOTE]
    > If you have a google apps account and you can't see this setting, your admin has to first turn it on. For instructions (for admin), see [Enable 2-step verification for your Google Workspace users](enable-2-step-verification-for-google-apps.md).
@@ -98,7 +98,7 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 5. On the **App passwords** page, in the **Select app** drop-down choose **Other (custom name)**.
 
-   ![Choose Other (Custom name) in the Select app drop-down](../media/af7e9293-61a3-4c02-9507-68d529085db5.png)
+   ![Choose Other (Custom name) in the Select app drop-down.](../media/af7e9293-61a3-4c02-9507-68d529085db5.png)
 
 6. Type in a name, for example Myconnection \> **GENERATE**.
 

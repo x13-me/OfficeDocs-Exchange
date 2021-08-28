@@ -37,7 +37,7 @@ Sharing policies control how your users share their calendars with people outsid
 
 2. Go to **recipients** \> **mailboxes**.
 
-3. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. In **User Mailbox**, click **mailbox features**.
 
@@ -89,7 +89,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 To verify that you have successfully applied the sharing policy to a user mailbox, do one of the following:
 
-- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
+- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
 
 - Run the following command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the _SharingPolicy_ parameter.
 

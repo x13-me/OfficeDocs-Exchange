@@ -28,7 +28,7 @@ An *address list* is a collection of mail-enabled recipient objects from Active 
 
 Users in your organization use address lists and the GAL to find recipients for email messages. Here's an example of what address lists look like in Outlook 2016:
 
-![Global Address List (GAL)](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
+![Global Address List (GAL).](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
 
 For procedures related to address lists, see [Procedures for address lists in Exchange Server](address-list-procedures.md).
 

@@ -55,11 +55,11 @@ For additional management tasks related to user access to mailboxes, see these t
 
    - Scroll through the list of mailboxes.
 
-   - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
+   - Click **Search** ![Search icon.](../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
+   - Click **More options** ![More Options icon.](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
 
-     Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+     Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page that opens, click **Mailbox features**.
 
@@ -69,7 +69,7 @@ For additional management tasks related to user access to mailboxes, see these t
 
    - If you see **MAPI: Disabled**, click **Enable** to enable it.
 
-     ![Protocol access settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Email connectivity](../media/8c2d9cda-aa53-4b6e-b83a-0f55b4b3fd3d.png)
+     ![Protocol access settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Email connectivity.](../media/8c2d9cda-aa53-4b6e-b83a-0f55b4b3fd3d.png)
 
      When you're finished, click **Save**.
 
@@ -105,9 +105,9 @@ For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/
 
    - Scroll through the list of mailboxes.
 
-   - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
+   - Click **Search** ![Search icon.](../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
+   - Click **More options** ![More Options icon.](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
 
 3. In the list of mailboxes, select multiple mailboxes of the same type (for example, **User**) from the list. For example:
 
@@ -119,7 +119,7 @@ For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/
 
 4. In the details pane, scroll down to **MAPI**, click **Enable** or **Disable**, and then click **OK** in the warning message that appears.
 
-   ![Bulk select mailboxes in the EAC to enable or disable MAPI](../media/4bd368a0-cd9e-4eb7-97b6-001cad02bc2d.png)
+   ![Bulk select mailboxes in the EAC to enable or disable MAPI.](../media/4bd368a0-cd9e-4eb7-97b6-001cad02bc2d.png)
 
 ### Use the Exchange Management Shell to enable or disable MAPI access to multiple mailboxes
 
@@ -157,9 +157,9 @@ For detailed syntax and parameter information, see [Get-Mailbox](/powershell/mod
 
 To verify that you've successfully enabled or disabled MAPI access to a mailbox, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** and verify the **MAPI** value in the **Email Connectivity** section.
+- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** and verify the **MAPI** value in the **Email Connectivity** section.
 
-  ![Protocol access settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Email connectivity](../media/8c2d9cda-aa53-4b6e-b83a-0f55b4b3fd3d.png)
+  ![Protocol access settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Email connectivity.](../media/8c2d9cda-aa53-4b6e-b83a-0f55b4b3fd3d.png)
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 

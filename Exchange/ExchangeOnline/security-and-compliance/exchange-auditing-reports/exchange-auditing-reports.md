@@ -95,13 +95,13 @@ The easiest way to give users access to the reports is to add them to the **Reco
 
 1. Go to **Permissions** \> **Admin Roles**.
 
-2. In the list of role groups, click **Records Management**, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of role groups, click **Records Management**, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. Under **Members**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Under **Members**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
-4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings.
+4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search** ![Search icon.](../../media/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings.
 
-5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page.
+5. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page.
 
 6. Click **Save** to save the change to the role group.
 

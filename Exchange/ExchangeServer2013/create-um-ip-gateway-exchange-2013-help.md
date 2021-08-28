@@ -36,7 +36,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to create a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM IP gateway** page, enter the following information:
 

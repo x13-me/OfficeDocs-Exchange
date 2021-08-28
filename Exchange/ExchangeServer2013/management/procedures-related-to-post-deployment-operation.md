@@ -67,7 +67,7 @@ To disable this alert in the SCOM console:
 
 3. Select a destination management pack to store the override, and click **OK**.
 
-![Disabling an alert in SCOM console](images/Dn198286.1c4f15b5-4978-4442-b26b-cc65ba577c9c(EXCHG.150).png "Disabling an alert in SCOM console")
+![Disabling an alert in SCOM console.](images/Dn198286.1c4f15b5-4978-4442-b26b-cc65ba577c9c(EXCHG.150).png "Disabling an alert in SCOM console")
 
 ## Enable or disable a health set using the Shell
 

@@ -23,7 +23,7 @@ To control messages to a large distribution group, you can require that a modera
 
 In this example, all messages to the All Employees group must be approved, except if the senders are members of the distribution group named Legal Team.
 
-![Message approval settings for a distribution group](images/TA_Mod_Scenario1_AllEmployes.png)
+![Message approval settings for a distribution group.](images/TA_Mod_Scenario1_AllEmployes.png)
 
 To require that messages to a specific distribution group be approved, in the Exchange admin center (EAC), go to **Recipients** \> **Groups**, edit the distribution group, and then select **Message approval**.
 
@@ -43,13 +43,13 @@ Here are some common types of messages for which you might want to require manag
 
 To require that a message be sent for approval, first, create a rule using the **Send messages to a moderator** template, and select that the messages should go to the sender's manager, as shown in the following screenshots.
 
-![Use a template to create the new rule](images/TA_Mod_Scenario2_Template.png)
+![Use a template to create the new rule.](images/TA_Mod_Scenario2_Template.png)
 
 Then, define which messages need approval.
 
 Here's an example where all messages sent out by a trainee, Garth Fort, to recipients outside the organization requires a manager's approval.
 
-![Rule that forwards messages to the user's manager](images/TA_Mod_Scenario2_rule.png)
+![Rule that forwards messages to the user's manager.](images/TA_Mod_Scenario2_rule.png)
 
 To get started, go to EAC \> **Mail flow** \> **Rules**, and create a new rule using the **Send messages to a moderator** template.
 
@@ -72,15 +72,15 @@ To create this type of multiple-level approval, create one transport rule for ea
 
 The following example assumes that you have a customer called Blue Yonder Airlines, and you want both the customer relationship manager and the compliance officer to approve all messages that go to this customer. You create two rules, one for each approver. The first rule goes to the first-level approver. The second rule goes to the second-level approver.
 
-![Two rules used for two levels of approval](images/TA_Mod_Scenario3_2rules.png)
+![Two rules used for two levels of approval.](images/TA_Mod_Scenario3_2rules.png)
 
 The first rule identifies all messages with the company name Blue Yonder Airlines in the subject or message, and it sends these messages to the internal customer relationship manager for Blue Yonder Airlines, Garret Vargas.
 
-![Rule for first-level approver](images/TA_Mod_Scenario3_Rule1.png)
+![Rule for first-level approver.](images/TA_Mod_Scenario3_Rule1.png)
 
 The second rule sends these messages to the compliance officer, Tony Krijnen.
 
-![Second-level approval rule, with same criteria](images/TA_Mod_Scenario3_Rule2.png)
+![Second-level approval rule, with same criteria.](images/TA_Mod_Scenario3_Rule2.png)
 
 ## Example 4: Forward messages that match one of several criteria
 
@@ -92,7 +92,7 @@ Be careful when you create multiple rules with "OR" conditions so you don't end 
 
 For example, a single rule can't check whether a message has "sales quote" in either the subject or in the attachment title. To avoid the message being sent multiple times to the approver, if the first rule checks for "sales quote" in the subject or body of the message, the second rule that checks for "sales quote" in attachment content needs an exception that contains the first rule's criteria.
 
-![Use an exception for the second rule](images/TA_Mod_Scenario4.png)
+![Use an exception for the second rule.](images/TA_Mod_Scenario4.png)
 
 > [!NOTE]
 > Exceptions are hidden by default in the **New rule** page. To see all the conditions and actions, select **More options**.
@@ -103,7 +103,7 @@ If you have the [Data loss prevention](data-loss-prevention-exchange-2013-help.m
 
 Here's an example where messages with sensitive information require approval. In this example, messages that contain a credit card number require approval.
 
-![Rule that forwards mail with sensitive information](images/TA_Mod_Scenario5.png)
+![Rule that forwards mail with sensitive information.](images/TA_Mod_Scenario5.png)
 
 ## See also
 

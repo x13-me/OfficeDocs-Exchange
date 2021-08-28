@@ -38,11 +38,11 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
    Here is an example of proper configuration in an on-premises environment:
 
-   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server":::
+   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server.":::
 
    Here is an example of proper configuration in Exchange Online:
 
-   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online":::
+   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online.":::
 
 2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 

@@ -41,7 +41,7 @@ For additional management tasks related to public folders in Exchange Online, se
 
 ## Use the EAC to create a public folder mailbox
 
-1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. In **Public Folder Mailbox**, provide a name for the public folder mailbox.
 

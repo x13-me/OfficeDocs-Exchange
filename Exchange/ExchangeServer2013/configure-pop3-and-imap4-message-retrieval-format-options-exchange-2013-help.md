@@ -38,7 +38,7 @@ For more information on POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server 2
 
 1. In the EAC, navigate to **Servers** > **Servers**.
 
-2. In the list of servers, select the Client Access server, and then select **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then select **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, select **POP3**.
 
@@ -135,7 +135,7 @@ To verify that you've successfully set POP3 message retrieval settings on a serv
 
 1. In the EAC, navigate to **Servers** > **Servers**.
 
-2. In the list of servers, select the Client Access server, and then select **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then select **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, select **IMAP4**.
 

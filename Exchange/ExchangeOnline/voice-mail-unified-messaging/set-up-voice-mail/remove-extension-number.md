@@ -53,9 +53,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox from which you want to remove an extension number, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox from which you want to remove an extension number, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, select the extension number that you want to remove from the list, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or extension number is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the extension number that you want to remove from the list, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or extension number is listed in bold letters and numbers.
 
 4. Click **Save**.
 
@@ -67,7 +67,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
 
-4. On the **Other extensions** page, in the **Extension number** box, select the extension number you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+4. On the **Other extensions** page, in the **Extension number** box, select the extension number you want to remove, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 5. Click **Save**.
 

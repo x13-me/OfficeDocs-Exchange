@@ -28,7 +28,7 @@ This scenario applies to companies or divisions that share the same Exchange env
 
 In this scenario, Contoso and Humongous Insurance are two separate companies that share the same Exchange environment. An ABP for each company lets employees in one company see only members of the same company in the global address list (GAL) in Outlook and Outlook on the web (formerly known as Outlook Web App). All distribution groups belong to one company or the other, and no distribution group contains members from both companies.
 
-![Two companies and one Exchange organization](../../media/ITPro_Mailbox_ABPTwoCompanies.png)
+![Two companies and one Exchange organization.](../../media/ITPro_Mailbox_ABPTwoCompanies.png)
 
 The GAL, offline address book (OAB), room list, and address lists that are required inn the ABPs for this scenario are described in the this table:
 
@@ -55,7 +55,7 @@ In this scenario, Fabrikam and Tailspin Toys are separate companies in the same 
 
 - The names of the three ABPs are: ABP_FAB, ABP_TAIL, and ABP_CEO.
 
-![Two Companies One CEO](../../media/ITPro_.png)
+![Two Companies One CEO.](../../media/ITPro_.png)
 
 The GAL, OAB, room list, and address lists that are required in the ABPs for this scenario are described in the this table:
 
@@ -81,7 +81,7 @@ This scenario is applicable to schools or universities where a division of class
 
 - Distribution groups are created for the parents and faculty that are associated with each class.
 
-![Address Book Policies Education Scenario](../../media/ITPro_Mailbox_ABPEducation.png)
+![Address Book Policies Education Scenario.](../../media/ITPro_Mailbox_ABPEducation.png)
 
 The GAL, OAB, room list, and address lists that are required in the ABPs for this scenario are described in the this table:
 

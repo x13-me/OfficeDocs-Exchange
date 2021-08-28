@@ -36,9 +36,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to delete a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to delete. On the toolbar, click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif). On the **Warning** page, click **Yes**.
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to delete. On the toolbar, click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif). On the **Warning** page, click **Yes**.
 
 ## Use the Shell to delete a UM auto attendant
 

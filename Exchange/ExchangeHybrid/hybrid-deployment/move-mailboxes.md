@@ -62,7 +62,7 @@ If the MRSProxy service isn't already enabled for your on-premises Exchange serv
 
 1. Open the EAC, and then navigate to **Servers** \> **Virtual Directories**.
 
-2. Select the Client Access server, and then select the **EWS** virtual directory and click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. Select the Client Access server, and then select the **EWS** virtual directory and click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.gif).
 
 3. Select the **MRS Proxy enabled** check box, and then click **Save**.
 
@@ -78,11 +78,11 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
 
 1. In the EAC, go to **Office 365** \> **Recipients** \> **Migration**.
 
-2. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate to Exchange Online**.
+2. Click **Add** ![Add Icon.](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate to Exchange Online**.
 
 3. On the **Select a migration type** page, select **Remote move migration** and then click **Next**.
 
-4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Microsoft 365 or Office 365 and click **Add** and then click **OK**. Click **Next**.
+4. On the **Select the users** page, click **Add** ![Add Icon.](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Microsoft 365 or Office 365 and click **Add** and then click **OK**. Click **Next**.
 
    > [!NOTE]
    > If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Microsoft 365 or Office 365 by using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Microsoft 365 admin center and you will be able to select them from the user list.```
@@ -97,7 +97,7 @@ You can use the remote move migration wizard in the EAC in the on-premises Excha
     > [!NOTE]
     > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](../../ExchangeServer/mail-flow/message-rate-limits.md).
 
-7. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Use the down arrow ![Down Arrow Icon](../media/ITPro_EAC_DownArrowIcon.gif) to select the **Target delivery domain for the mailboxes that are migrating to Office 365**. In most hybrid deployments, this is the primary SMTP domain used for the Exchange Online organization mailboxes. For example, contoso.mail.onmicrosoft.com. Verify that the **Move primary mailbox along with archive mailbox** option is selected, and then click **Next**.
+7. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Use the down arrow ![Down Arrow Icon.](../media/ITPro_EAC_DownArrowIcon.gif) to select the **Target delivery domain for the mailboxes that are migrating to Office 365**. In most hybrid deployments, this is the primary SMTP domain used for the Exchange Online organization mailboxes. For example, contoso.mail.onmicrosoft.com. Verify that the **Move primary mailbox along with archive mailbox** option is selected, and then click **Next**.
 
 8. On the **Start the batch** page, select at least one recipient to receive the batch complete report. Verify that the **Automatically start the batch** option is selected, and then select the **Automatically complete the migration batch** check box. Click **New**.
 
@@ -111,11 +111,11 @@ You can use the remote move migration wizard in the EAC in Exchange Online to mo
 
 1. In the EAC, go to **Office 365** \> **Recipients** \> **Migration**.
 
-2. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate from Exchange Online**.
+2. Click **Add** ![Add Icon.](../media/ITPro_EAC_AddIcon.gif), and then select **Migrate from Exchange Online**.
 
 3. On the **Select the users** page, select **Select the users that you want to move** and then click **Next**.
 
-4. On the **Select the users** page, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) and then select the Exchange Online users to move to the on-premises organization, click **Add** and then click **OK**. Click **Next**.
+4. On the **Select the users** page, click **Add** ![Add Icon.](../media/ITPro_EAC_AddIcon.gif) and then select the Exchange Online users to move to the on-premises organization, click **Add** and then click **OK**. Click **Next**.
 
 5. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
 
@@ -137,7 +137,7 @@ To remove a completed migration batch:
 
 1. Open the EAC and navigate to **Office 365** \> **Recipients** \> **Migrations**.
 
-2. Click a completed migration batch, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
+2. Click a completed migration batch, and then click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.gif).
 
 3. On the deletion warning confirmation dialog, click **Yes**.
 

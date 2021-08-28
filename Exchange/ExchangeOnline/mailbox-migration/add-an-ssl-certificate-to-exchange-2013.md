@@ -51,7 +51,7 @@ Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 
 2. Enter your username and password by using the domain\username format for username, and choose **Sign in**.
 
-3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then choose **New** ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then choose **New** ![Add icon.](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
 
 4. In the **New Exchange certificate** wizard, select **Create a request for a certificate from a certification authority** and then choose **Next**.
 
@@ -93,7 +93,7 @@ After you receive the certificate from the CA, complete the following steps.
 
 3. On the complete pending request page, specify the path to the SSL certificate file \> **OK**.
 
-4. Select the new certificate you just added, and then choose **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+4. Select the new certificate you just added, and then choose **Edit** ![Edit icon.](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 5. On the certificate page, choose **Services**.
 

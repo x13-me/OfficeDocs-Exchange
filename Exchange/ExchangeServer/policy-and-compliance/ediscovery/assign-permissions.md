@@ -45,9 +45,9 @@ If you want users to be able to use Exchange Server In-Place eDiscovery, you fir
 
 ## Use the EAC to add a user to the Discovery Management role group
 
-1. In the EAC, go to **Permissions** \> **Admin roles**, select the **Discovery Management** role group, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, go to **Permissions** \> **Admin roles**, select the **Discovery Management** role group, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
-2. On the resulting **Role Group** page, in the **Members** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+2. On the resulting **Role Group** page, in the **Members** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 3. In the resulting **Select Members** dialog, select an available user or group, and then click **Add**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
