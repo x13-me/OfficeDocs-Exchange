@@ -38,7 +38,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
 2. In the list view, select an eDiscovery search.
 
-3. Click **Search** ![Search icon](../../media/ITPro_EAC_.png), and then click **Copy search results** from the drop-down list.
+3. Click **Search** ![Search icon.](../../media/ITPro_EAC_.png), and then click **Copy search results** from the drop-down list.
 
 4. In **Copy Search Results**, select from the following options:
 
@@ -52,11 +52,11 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
    - **Copy results to this discovery mailbox**: Click **Browse** to select the discovery mailbox where you want the search results copied to.
 
-     ![Copy Search Results](../../media/TA_MRM_CopySearchResults.gif)
+     ![Copy Search Results.](../../media/TA_MRM_CopySearchResults.gif)
 
 5. Click **Copy** to start the process to copy the search results to the specified discovery mailbox.
 
-6. Click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the copying status that is displayed in the details pane.
+6. Click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the copying status that is displayed in the details pane.
 
 7. When copying is complete, click **Open** to open the discovery mailbox to view the search results.
 

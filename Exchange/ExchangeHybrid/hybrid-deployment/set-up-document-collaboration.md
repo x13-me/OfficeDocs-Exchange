@@ -31,11 +31,11 @@ Traditionally, a user would send a file to others by attaching it to a message. 
 
 Before the Exchange 2016 environment is properly configured for document collaboration, an Outlook on the web user's default attachments dialog will look similar to this:
 
-![traditional attachment dialog](../media/f8c74d70-42f9-48c6-b263-ce6cef8591a8.png)
+![traditional attachment dialog.](../media/f8c74d70-42f9-48c6-b263-ce6cef8591a8.png)
 
 After configuring your environment with the instructions below, Outlook on the web attachment dialogs will look similar to this:
 
-![attachment dialog with modern attachments enabled](../media/89eeae65-ce3a-4c47-b57e-db734a1de95b.png)
+![attachment dialog with modern attachments enabled.](../media/89eeae65-ce3a-4c47-b57e-db734a1de95b.png)
 
 Users in your organization with on-premises mailboxes and who have a OneDrive for Business account in Microsoft 365 or Office 365 are eligible to use the modern attachment method, which would allow them to share a document stored in OneDrive for Business with multiple recipients. The location of the recipients (online versus on-premises) won't matter.
 
@@ -109,4 +109,4 @@ Perform the following steps:
 
 Once configured, Outlook on the web users will be offered a choice for the type of attachment they'd like to apply to their messages: traditional or modern.
 
-![attachment options dialog, Share with OneDrive or Send as attachment](../media/7d2f27c2-3638-479a-a577-029ac61e7d95.png)
+![attachment options dialog, Share with OneDrive or Send as attachment.](../media/7d2f27c2-3638-479a-a577-029ac61e7d95.png)

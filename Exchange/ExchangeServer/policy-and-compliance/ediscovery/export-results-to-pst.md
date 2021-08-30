@@ -48,7 +48,7 @@ manager: serdars
 
 2. In the list view, select the eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-   ![Export to a PST File](../../media/ExportToPSTFile.gif)
+   ![Export to a PST File.](../../media/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 

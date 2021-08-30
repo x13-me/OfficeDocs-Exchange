@@ -54,7 +54,7 @@ The following examples are scenarios in which your Exchange organization may hav
 
 ### Use the Exchange admin center to create an authoritative domain
 
-1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain contoso.com could have a display name of Contoso Local Accepted Domain.
 
@@ -96,9 +96,9 @@ To change the primary (reply to) email address assigned to recipients and keep t
 
 #### Use the EAC to change the existing primary email address
 
-1. In the EAC, navigate to **Mail flow** \> **Email address policies**. Select the email address policy you want to modify, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Mail flow** \> **Email address policies**. Select the email address policy you want to modify, and click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **Email Address Policy** page, click the **Email address format** tab. In the **Email address format** section, click **Add**![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **Email Address Policy** page, click the **Email address format** tab. In the **Email address format** section, click **Add**![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. On the **Email Address Format** page that appears, make the following selections:
 
@@ -153,13 +153,13 @@ Also, email address policies that apply to specific users should have a higher p
 
 To create additional email addresses that will be used as the primary email address for a filtered set of recipients, follow these steps.
 
-1. In the EAC, navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **Email Address Policy** page, complete the following fields:
 
    1. **Policy name**: Enter a unique, descriptive name.
 
-   2. **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
+   2. **Email address format**: Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
 
       - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
 

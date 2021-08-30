@@ -37,7 +37,7 @@ Looking for other management tasks related to permissions? Check out [Permission
 
 1. In the Exchange admin center (EAC), navigate to **Recipients** \> **Mailboxes**.
 
-2. Select the user or resource mailbox you want to change the assignment policy on and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the user or resource mailbox you want to change the assignment policy on and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. Select **Mailbox Features**.
 

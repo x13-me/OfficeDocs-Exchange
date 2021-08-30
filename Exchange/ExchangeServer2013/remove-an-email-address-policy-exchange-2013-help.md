@@ -42,7 +42,7 @@ For additional management tasks related to e-mail address policies, see [Email a
 
 1. Navigate to **Mail flow** \> **Email address policies**.
 
-2. In the list view, select the email address policy that you want to delete and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list view, select the email address policy that you want to delete and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. In the warning, click **Yes** to remove the policy.
 

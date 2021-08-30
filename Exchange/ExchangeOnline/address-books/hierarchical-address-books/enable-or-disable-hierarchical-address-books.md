@@ -223,7 +223,7 @@ To verify that you've successfully enabled and configured a hierarchical address
 
 - Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. The HAB is displayed on the **Organization** tab, similar to the following figure.
 
-   ![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
+   ![Hierarchical Address Book dialog.](../../media/ITPro_Mailbox_HABDisplay.gif)
 
 - In Exchange Online PowerShell, run the following commands to verify the property values:
 

@@ -67,7 +67,7 @@ After your on-premises and Microsoft 365 or Office 365 organizations are set up 
 
 The main steps you perform for a cutover migration are shown in the following illustration.
 
-![Process for performing a cutover email migration to Microsoft 365 or Office 365](media/a607954b-1ab6-40e6-becc-d61ad5a35d69.png)
+![Process for performing a cutover email migration to Microsoft 365 or Office 365.](media/a607954b-1ab6-40e6-becc-d61ad5a35d69.png)
 
 1. The administrator communicates upcoming changes to users and verifies domain ownership with the domain registrar.
 

@@ -64,11 +64,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 1. In the EAC, go to **Mail flow** \> **rules**.
 
-2. Click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)), and then select **Create a new rule**.
+2. Click **New** ( ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif)), and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, click **More options**.
 
-   ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
+   ![In the new mail flow rule window, click More options.](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 4. Configure these additional settings on the **New rule** page:
    - **Name**: Direct to Calendar response (or anything descriptive).
@@ -81,11 +81,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
    ![Settings for the Direct to Calendar capture mail flow rule.](../../media/52f4cb2c-5a86-46e7-a31b-231ae89931ab.png)
 
-5. Back at **Mail flow** \> **Rules**, click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
+5. Back at **Mail flow** \> **Rules**, click **New** ( ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
 
 6. In the **New rule** page that opens, click **More options**.
 
-   ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
+   ![In the new mail flow rule window, click More options.](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 7. Configure these additional settings on the **New rule** page:
    - **Name**: Direct to Calendar triage action (or anything descriptive).

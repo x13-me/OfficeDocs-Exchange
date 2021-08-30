@@ -135,7 +135,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
    - Open IIS Manager, select the server, and in the **Actions** pane, click **Restart**.
 
-     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+     ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
    - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
 

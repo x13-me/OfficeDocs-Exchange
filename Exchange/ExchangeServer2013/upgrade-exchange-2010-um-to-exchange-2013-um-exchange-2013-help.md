@@ -142,15 +142,15 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
 
   Create an Exchange self-signed certificate by using the EAC, as follows:
 
-  1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
   2. On the **New Exchange certificate** page, choose **Create a self-signed certificate**, and then select **Next**.
 
   3. Enter a friendly name for the certificate, and then select **Next**.
 
-  4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
+  4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
 
-  5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
   6. Verify that the domains you included are correct, and then select **Finish**.
 
@@ -172,7 +172,7 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
 
   Enable the UM service and UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
-  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
   2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
 
@@ -200,7 +200,7 @@ Configure the UM startup mode on an Exchange 2013 Client Access server by using 
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
@@ -228,7 +228,7 @@ Configure the UM startup mode on an Exchange 2013 Mailbox server by using the EA
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
@@ -256,7 +256,7 @@ UM dial plans are used in Unified Messaging to make sure that user telephone ext
 
 If required, you can create a UM dial plan by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New UM Dial Plan** page, complete the following boxes:
 
@@ -303,7 +303,7 @@ If required, you can configure an existing UM dial plan by using the EAC, as fol
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **UM Dial Plan** page, click **Configure**. Use the configuration options to view specific dial plan settings and to enable or disable features.
 
@@ -325,7 +325,7 @@ The combination of the UM IP gateway and a UM hunt group establishes a link betw
 
 If required, you can create a UM IP gateway by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New UM IP Gateway** page, enter the following information:
 
@@ -349,7 +349,7 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 To configure an existing UM IP gateway by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. On the **UM IP gateway** page, click **Configure**. Use the configure options to view specific UM IP gateway settings and to enable or disable features.
 
@@ -367,9 +367,9 @@ You need to have at least one UM hunt group for every IP PBX or PBX hunt group. 
 
 If required, you can To create a UM hunt group by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. On the **New UM Hunt Group** page, enter the following information:
 
@@ -398,9 +398,9 @@ In smaller deployments you may only want to deploy UM so that callers can leave 
 
 If required, you can create a UM auto attendant by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. Select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. Select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Auto Attendants**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **UM dial plan** page, under **UM Auto Attendants**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. On the **New UM Auto Attendant** page, complete the following boxes:
 
@@ -426,9 +426,9 @@ New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdent
 
 If required, you can configure an existing auto attendant by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant that you want to view or configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific auto attendant settings and to enable or disable features.
+2. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant that you want to view or configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific auto attendant settings and to enable or disable features.
 
 If required, you can configure an existing auto attendant by running the following command in the Shell.
 
@@ -442,9 +442,9 @@ Depending on your existing Exchange 2010 deployment, you may be required to crea
 
 If required, you can create a UM mailbox policy by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, click **Add** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, click **Add** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **New UM Mailbox Policy** page, in the **Name** box, enter the name of the new UM mailbox policy.
 
@@ -464,9 +464,9 @@ New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 
 If required, you can configure an existing UM mailbox policy by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to view or configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific UM mailbox policy settings and to enable or disable features.
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to view or configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific UM mailbox policy settings and to enable or disable features.
 
 If required, you can configure an existing UM mailbox policy by running the following command in the Shell.
 
@@ -492,7 +492,7 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 To move an Exchange 2010 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
-1. In the EAC, click **Recipients** \> **Migration**, and then click **Add** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, click **Recipients** \> **Migration**, and then click **Add** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. In the **New local mailbox move** wizard, select the user you want to move, click **OK**, and then click **Next**.
 
@@ -564,9 +564,9 @@ If required, you can configure a user that's been enabled for UM by using the EA
 
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
 
-      - To add an extension number, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
+      - To add an extension number, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
 
-      - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon").
+      - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon").
 
 6. If you make any changes, click **Save**.
 

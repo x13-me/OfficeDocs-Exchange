@@ -72,7 +72,7 @@ For a full listing of hybrid deployment prerequisites, see [Hybrid deployment pr
 
 Take a look at the following scenario. It's an example topology that provides an overview of a typical Exchange 2013 deployment. Contoso, Ltd. is a multi-forest, multi-domain organization with two Active Directory forests. Forest A contains the contoso.com domain and Forest B contains the sale.contoso.com domain. Each contains domain controllers in each forest, one Exchange 2013 server with the Client Access role installed, and one Exchange 2013 server with the Mailbox server role installed. Remote Contoso users use Outlook Web App to connect to Exchange 2013 over the Internet to check their mailboxes and access their Outlook calendar.
 
-![Before hybrid deployment with multiple forests](../media/JJ878063.af1f2a4b-8fe5-4e42-85d2-ef65b880b366.png)
+![Before hybrid deployment with multiple forests.](../media/JJ878063.af1f2a4b-8fe5-4e42-85d2-ef65b880b366.png)
 
 Let's say that you're the network administrator for Contoso and you're interested in configuring a hybrid deployment. You deploy and configure a required Active Directory Synchronization server in Forest A and you also decide to deploy an Active Directory Federation Services (AD FS) server as an option to minimize the number of prompts for account credentials for Contoso users and administrators accessing Microsoft 365 or Office 365 services in Forest A. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
 
@@ -86,7 +86,7 @@ Let's say that you're the network administrator for Contoso and you're intereste
 
 - On-premises and Exchange Online users use the same URL to connect to their mailboxes over the Internet.
 
-![After hybrid deployment with multiple forests](../media/JJ878063.f53f4ec2-82ac-4f7e-9799-6f2a0d4ec143.png)
+![After hybrid deployment with multiple forests.](../media/JJ878063.f53f4ec2-82ac-4f7e-9799-6f2a0d4ec143.png)
 
 If you compare Contoso's existing organization configuration and the hybrid deployment configuration, you'll see that configuring a hybrid deployment has added servers and services that support additional communication and features that are shared between the on-premises and Exchange Online organizations. Here's an overview of the changes that a hybrid deployment has made from the initial on-premises Exchange organization.
 

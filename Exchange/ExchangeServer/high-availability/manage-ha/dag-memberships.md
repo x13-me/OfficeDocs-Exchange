@@ -47,9 +47,9 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure, and then click ![Manage DAG members](../../media/ITPro_EAC_ManageDagMembersIcon.png).
+2. Select the DAG you want to configure, and then click ![Manage DAG members.](../../media/ITPro_EAC_ManageDagMembersIcon.png).
 
-   - To add one or more Mailbox servers to the DAG, click ![Add icon](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
+   - To add one or more Mailbox servers to the DAG, click ![Add icon.](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
 
    - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
 

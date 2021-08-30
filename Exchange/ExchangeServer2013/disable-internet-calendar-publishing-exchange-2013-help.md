@@ -47,13 +47,13 @@ To learn more about Internet calendar publishing and sharing policies, see [Shar
 
 2. In the list view, under **Individual Sharing**, perform one of the following steps:
 
-   - If you created a sharing policy specifically for Internet calendar publishing, select that policy, and then either clear the check box in the **On** column to disable the sharing policy or click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to delete it.
+   - If you created a sharing policy specifically for Internet calendar publishing, select that policy, and then either clear the check box in the **On** column to disable the sharing policy or click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to delete it.
 
    - If you configured Internet calendar publishing as a sharing rule in the default sharing policy, perform the following steps:
 
-     1. Select the default sharing policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+     1. Select the default sharing policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-     2. In **sharing policy**, select the **Anonymous** sharing rule, and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the sharing rule.
+     2. In **sharing policy**, select the **Anonymous** sharing rule, and then click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the sharing rule.
 
      3. Click **Save**.
 

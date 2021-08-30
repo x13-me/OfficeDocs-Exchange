@@ -48,17 +48,17 @@ This procedure results in an informational Policy Tip being shown to an email se
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
-2. Double-click one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Double-click one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **Edit DLP policy** page, select **Rules**.
 
-4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-   To add a new blank rule that you can fully customize, select **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+   To add a new blank rule that you can fully customize, select **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 5. In **Apply this rule if**, select, **The message contains sensitive information**. This condition is required.
 
-6. Select ![Add Icon](images/ITPro_EAC_AddIcon.gif), select the sensitive information types, select **Add**, select **OK**, and then select **OK**.
+6. Select ![Add Icon.](images/ITPro_EAC_AddIcon.gif), select the sensitive information types, select **Add**, select **OK**, and then select **OK**.
 
 7. In the **Do the following** box, select **Notify the sender with a Policy Tip**, and select an option in the **Choose whether the message is blocked or can be sent** drop-down list, and then select **OK**.
 
@@ -96,7 +96,7 @@ To verify that you have successfully created a Policy Tip that will only notify 
 
 2. Select the policy that you expect to contain a notification message.
 
-3. Select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
+3. Select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
 
 4. Select the specific rule that you expect to contain a notification message.
 
@@ -110,13 +110,13 @@ This procedure results in a Policy Tip being shown to an email sender that indic
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
-2. Double-click one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Double-click one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **Edit DLP policy** page, select **Rules**.
 
-4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-5. To add a new blank rule that you can fully customize, select **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+5. To add a new blank rule that you can fully customize, select **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 6. To add an action that will reveal a Policy Tip, select **More options...** and then select the **Add action** button.
 
@@ -132,7 +132,7 @@ To verify that you have successfully created a reject message Policy Tip, do the
 
 2. Select one time to highlight the policy that you expect to contain a notification message.
 
-3. Select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
+3. Select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
 
 4. Select one time to highlight the specific rule that you expect to contain a notification message.
 
@@ -146,13 +146,13 @@ There are four options for Policy Tips that can reject messages or prevent messa
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
-2. Double-select one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Double-select one of the policies that appear in your list of policies or highlight one item and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **edit DLP policy** page, select **Rules**.
 
-4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. To add Policy Tips to an existing rule, highlight the rule and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-    To add a new blank rule that you can fully customize, select **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then select **More options...**.
+    To add a new blank rule that you can fully customize, select **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then select **More options...**.
 
 5. To add the action that will reveal a Policy Tip, Select the **Add action** button.
 
@@ -168,7 +168,7 @@ To verify that you have successfully created a reject unless override Policy Tip
 
 2. Select one time to highlight the policy that you expect to contain a notification message.
 
-3. Select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
+3. Select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) and then select **Rules**.
 
 4. Select one time to highlight the specific rule that you expect to contain a notification message.
 
@@ -182,13 +182,13 @@ This optional procedure will help you to customize the Policy Tip notification t
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
-2. Select **Policy Tip settings** ![Policy Tip Settings](images/ITPro_EAC_DlpPolicyTipSettingsIcon.gif).
+2. Select **Policy Tip settings** ![Policy Tip Settings.](images/ITPro_EAC_DlpPolicyTipSettingsIcon.gif).
 
-3. To add a new Policy Tip with your own customized message, select **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). For more information about the action choices available, see [Policy Tips](policy-tips-exchange-2013-help.md).
+3. To add a new Policy Tip with your own customized message, select **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). For more information about the action choices available, see [Policy Tips](policy-tips-exchange-2013-help.md).
 
-   To modify an existing Policy Tip, highlight the tip and select **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+   To modify an existing Policy Tip, highlight the tip and select **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-   To delete an existing Policy Tip, highlight it and select **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif) and then confirm your action.
+   To delete an existing Policy Tip, highlight it and select **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif) and then confirm your action.
 
 4. Select **Save** to finish modifying the Policy Tip and save your changes.
 
@@ -220,9 +220,9 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 1. In the EAC, go to **Compliance management** \> **Data loss prevention**.
 
-2. Select **Policy Tip settings** ![Policy Tip Settings](images/ITPro_EAC_DlpPolicyTipSettingsIcon.gif).
+2. Select **Policy Tip settings** ![Policy Tip Settings.](images/ITPro_EAC_DlpPolicyTipSettingsIcon.gif).
 
-3. Select **Refresh** ![Refresh Icon](images/ITPro_EAC_RefreshIcon.gif).
+3. Select **Refresh** ![Refresh Icon.](images/ITPro_EAC_RefreshIcon.gif).
 
 4. Confirm that your action, locale and text for that locale appear in the list.
 

@@ -58,13 +58,13 @@ Microsoft 365 or Office 365 needs the name of the source email server to migrate
 
 1. Open your mailbox in Outlook on the web.
 
-2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
+2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button.](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
 
 3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and IMAP**.
 
 4. In **POP and IMAP settings**, your IMAP server name is listed in the **IMAP setting** section.
 
-   ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
+   ![Shows the link for POP or IMAP access settings.](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
 
 For more information about IMAP connections in Microsoft 365 or Office 365, see [POP and IMAP account settings](https://support.microsoft.com/office/cb41d2b8-98cb-4ab2-ad60-218349f37e2e).
 
@@ -94,7 +94,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
 3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the admin center open, too.
 
-   ![username column in the Microsoft 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+   ![username column in the Microsoft 365 admin center.](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
 4. Start Excel.
 
@@ -106,7 +106,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    - **Password** in cell C1.
 
-   ![Cell headings in the Excel migration file](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
+   ![Cell headings in the Excel migration file.](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
 
 6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row:
 
@@ -119,7 +119,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    - **Column C** is the password for the user's mailbox.
 
-     ![A completed sample migration file](../media/12813244-892f-4670-a29e-a21b9a228078.png)
+     ![A completed sample migration file.](../media/12813244-892f-4670-a29e-a21b9a228078.png)
 
      If you don't know the users' passwords, you'll need to reset them to passwords that you do know, and then enter those passwords in the migration file. This is inconvenient for users, but there's no way around this unless your source email system supports using superuser credentials.
 
@@ -129,7 +129,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
 8. Save the file as a CSV file type, and close Excel.
 
-   ![Shows the Save As CSV option in Excel](../media/025d3a52-bffc-4924-88cb-31fa7a259533.png)
+   ![Shows the Save As CSV option in Excel.](../media/025d3a52-bffc-4924-88cb-31fa7a259533.png)
 
 #### Create a list of user mailboxes using admin credentials to access them
 
@@ -145,7 +145,7 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
 3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center page open, too.
 
-   ![username column in the admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+   ![username column in the admin center.](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
 4. Start Excel.
 
@@ -157,7 +157,7 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
    - **Password** in cell C1.
 
-   ![Cell headings in the Excel migration file](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
+   ![Cell headings in the Excel migration file.](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
 
 6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row.
 
@@ -179,19 +179,19 @@ If you're migrating email from the IMAP implementation for Exchange, use the for
 
 Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P\@ssw0rd**. Here's what your migration file would look like:
 
-![A sample migration file for Exchange](../media/5fbddcd8-1404-46e1-9493-a9b371e90de6.png)
+![A sample migration file for Exchange.](../media/5fbddcd8-1404-46e1-9493-a9b371e90de6.png)
 
 #### Dovecot
 
 Source email systems such as a Dovecot IMAP server that support Simple Authentication and Security Layer (SASL), use the format **User_UserName\*Admin_UserName**. Let's say you're migrating email from a Dovecot IMAP server using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
-![A sample migration file for Dovecot](../media/aae617c6-0a00-4c84-80ca-3f6e3b7cabc4.JPG)
+![A sample migration file for Dovecot.](../media/aae617c6-0a00-4c84-80ca-3f6e3b7cabc4.JPG)
 
 #### Mirapoint
 
 If you're migrating email from Mirapoint Message Server, use the format **#user\@domain#Admin_UserName#**. Let's say you're migrating email using the mailbox admin credentials **mailadmin** and **P\@ssw0rd**. Here's what your migration file would look like:
 
-![A sample migration file for Mirapoint](../media/1a59d14c-ea5f-4f5d-9bf1-647faef6a153.png)
+![A sample migration file for Mirapoint.](../media/1a59d14c-ea5f-4f5d-9bf1-647faef6a153.png)
 
 #### Courier IMAP and Oracle IMAP
 
@@ -201,7 +201,7 @@ To migrate mailboxes after you set up virtual shared folders on your source emai
 
 Here's an example of a migration file that contains the **UserRoot** attribute:
 
-![A sample migration file for Courier IMAP](../media/0f837f06-1ba9-4065-ab65-9af0d10ba283.png)
+![A sample migration file for Courier IMAP.](../media/0f837f06-1ba9-4065-ab65-9af0d10ba283.png)
 
 ### Step 3: Connect Microsoft 365 or Office 365 to your email system (classic EAC only)
 
@@ -209,11 +209,11 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 1. Open the [Exchange admin center](../../exchange-admin-center.md).
 
-2. Go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+2. Go to **Recipients** \> **Migration** \> **More** ![More icon.](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
-   ![Migration endpoint name menu access](../media/8e97d6aa-4ccc-4b8d-b33c-bdb8109f03d9.png)
+   ![Migration endpoint name menu access.](../media/8e97d6aa-4ccc-4b8d-b33c-bdb8109f03d9.png)
 
-3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
+3. Click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
 
 4. On the **Select the migration endpoint type** page, choose **IMAP**.
 
@@ -227,7 +227,7 @@ To migrate email successfully, Microsoft 365 or Office 365 needs to connect and 
 
 7. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
 
-   ![Migration endpoint name step 7](../media/0b8defdb-abe6-45e6-b143-a353012e1f08.png)
+   ![Migration endpoint name step 7.](../media/0b8defdb-abe6-45e6-b143-a353012e1f08.png)
 
 8. Click **New** to create the migration endpoint.
 
@@ -242,9 +242,9 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
 1. In the [Exchange admin center](../../exchange-admin-center.md), go to **Recipients** \> **Migration**.
 
-2. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
 
-   ![Select Migrate to Exchange Online](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
+   ![Select Migrate to Exchange Online.](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
 
 3. Choose **IMAP migration** \> **Next**.
 
@@ -259,7 +259,7 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
 5. After Microsoft 365 or Office 365 validates the migration file, it displays the number of users listed in the file as the number of mailboxes to migrate.
 
-   ![New migration batch with CSV file](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
+   ![New migration batch with CSV file.](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
 
 6. Click **Next**.
 
@@ -271,12 +271,12 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
    The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
 
-   You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name.
+   You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name.
 
    > [!IMPORTANT]
    > If you're migrating email from Microsoft Exchange Server, we recommend that you exclude public folders from the migration. If you don't, the contents of the public folders are copied to the Microsoft 365 or Office 365 mailbox of every user in the migration file.
 
-   ![Move configuration dialog](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
+   ![Move configuration dialog.](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
 
 10. Click **Next**.
 
@@ -286,7 +286,7 @@ You use a migration batch to migrate groups of email to Microsoft 365 or Office 
 
     - Choose **Automatically start the batch**. The migration starts as soon as you save the new migration batch. The batch status is first **Created** and changes to **Syncing** after the migration starts.
 
-      ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+      ![Migration batch is syncing.](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 ##### Verify that this task worked (classic EAC)
 
@@ -392,7 +392,7 @@ When you delete the migration batch, the migration service cleans up any records
 
 2. On the migration dashboard, select the batch, and then click **Delete**.
 
-   ![Delete a migration batch](../media/354afa40-6e2d-4c75-94f5-a516e59ca87b.png)
+   ![Delete a migration batch.](../media/354afa40-6e2d-4c75-94f5-a516e59ca87b.png)
 
 ##### Delete a migration batch using new EAC
 

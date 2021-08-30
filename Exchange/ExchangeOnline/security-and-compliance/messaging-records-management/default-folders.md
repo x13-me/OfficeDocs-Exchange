@@ -29,7 +29,7 @@ You can use [Retention tags and retention policies](retention-tags-and-policies.
 
 A Retention Policy Tag (RPT) is a type of retention tag that you can apply to default folders in a mailbox, such as **Inbox** and **Deleted Items**.
 
-![Create a Retention Policy Tag (RPT)](../../media/EXO_Retention_DefaultFolders_CreateRPT.png)
+![Create a Retention Policy Tag (RPT).](../../media/EXO_Retention_DefaultFolders_CreateRPT.png)
 
 ## Supported default folders
 

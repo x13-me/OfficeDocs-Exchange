@@ -42,7 +42,7 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 ## Use the EAC to delete a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

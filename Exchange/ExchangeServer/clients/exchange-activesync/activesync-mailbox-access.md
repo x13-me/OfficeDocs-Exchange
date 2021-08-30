@@ -63,11 +63,11 @@ For additional management tasks related to user access to mailboxes, see these t
 
    - Scroll through the list of mailboxes.
 
-   - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
+   - Click **Search** ![Search icon.](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
+   - Click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
 
-     Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+     Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page that opens, click **Mailbox features**.
 
@@ -77,7 +77,7 @@ For additional management tasks related to user access to mailboxes, see these t
 
    - If ActiveSync is disabled on the mailbox, you'll see a **Enable Exchange ActiveSync** link. Click the link to enable ActiveSync.
 
-     ![Mobile device settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Mobile Devices](../../media/52364427-9557-443e-8366-35a1339a0f15.png)
+     ![Mobile device settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Mobile Devices.](../../media/52364427-9557-443e-8366-35a1339a0f15.png)
 
      When you're finished, click **Save**.
 
@@ -113,9 +113,9 @@ For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/
 
    - Scroll through the list of mailboxes.
 
-   - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
+   - Click **Search** ![Search icon.](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
+   - Click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
 
 3. In the list of mailboxes, select multiple mailboxes of the same type (for example, **User**) from the list. For example:
 
@@ -165,13 +165,13 @@ For detailed syntax and parameter information, see [Get-Mailbox](/powershell/mod
 
 To verify that you've successfully enabled or disabled Exchange ActiveSync access to a mailbox, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** \> and verify the Exchange ActiveSync value in the **Mobile Devices** section.
+- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** \> and verify the Exchange ActiveSync value in the **Mobile Devices** section.
 
   - If ActiveSync access is enabled for the mailbox, you'll see **Disable Exchange ActiveSync**.
 
   - If ActiveSync access is disabled for the mailbox, you'll see **Enable Exchange ActiveSync**.
 
-  ![Mobile device settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Mobile Devices](../../media/52364427-9557-443e-8366-35a1339a0f15.png)
+  ![Mobile device settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Mobile Devices.](../../media/52364427-9557-443e-8366-35a1339a0f15.png)
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 

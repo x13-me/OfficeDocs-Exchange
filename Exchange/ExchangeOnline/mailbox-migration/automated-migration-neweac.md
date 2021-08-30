@@ -38,7 +38,7 @@ With the new Exchange Admin Center (EAC), the migration of mails, contacts, and 
 
 3. On the **Select the migration type** page, select **Google Workspace (Gmail) migration**, and then click **Next**
 
-   :::image type="content" source="../media/migration-onboarding-selection_new.png" alt-text="Select Migration Type":::
+   :::image type="content" source="../media/migration-onboarding-selection_new.png" alt-text="Select Migration Type.":::
 
 4. On the **Prerequisites for Google Workspace migration** page, verify that the **Automate the configuration of your Google Workspace for migration** section is expanded, and then click **Start** in that section to automate the four required prerequisite steps.
 
@@ -52,7 +52,7 @@ With the new Exchange Admin Center (EAC), the migration of mails, contacts, and 
    - **Select the migration endpoint**: Select the existing migration endpoint from the drop down list.
    - **Create a new migration endpoint**: Select this option if you're a first-time user.
 
-   ![Set endpoint](../media/migration-endpoint-selection.png)
+   ![Set endpoint.](../media/migration-endpoint-selection.png)
 
    > [!NOTE]
    > To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to connect and communicate with Gmail. To do this, Microsoft 365 or Office 365 uses a migration endpoint. Migration endpoint is a technical term that describes the settings that are used to create the connection so you can migrate the mailboxes.
@@ -94,7 +94,7 @@ With the new Exchange Admin Center (EAC), the migration of mails, contacts, and 
 
 9. On the **Schedule batch migration** page, verify all the details, click **Save**, and then click **Done**.
 
-    ![Schedule batch migration](../media/schedule-batch1-migration.png)
+    ![Schedule batch migration.](../media/schedule-batch1-migration.png)
 
     Once the batch status changes from **Syncing** to **Synced**, you need to complete the batch.
 
