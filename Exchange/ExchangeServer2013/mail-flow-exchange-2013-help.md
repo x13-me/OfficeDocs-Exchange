@@ -39,7 +39,7 @@ The following figure shows the relationships among the components in the Exchang
 
 **Overview of the transport pipeline in Exchange 2013.**
 
-![Transport pipeline overview diagram](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
+![Transport pipeline overview diagram.](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
 
 ## Messages from external senders
 

@@ -25,7 +25,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix it?
@@ -62,7 +62,7 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. Select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties screen appears.
+2. Select the mailbox from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties screen appears.
 
 3. Go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **message delivery restrictions** screen appears.
 
@@ -88,7 +88,7 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 ##### Groups in the classic EAC
 
-1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The group properties screen appears.
+1. Go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The group properties screen appears.
 
 2. On the left pane, click **Delivery management**.
 
@@ -103,7 +103,7 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 1. Go to **Recipients** \> **Contacts**.
 
-2. Select the mail user from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mail user properties screen appears.
+2. Select the mail user from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mail user properties screen appears.
 
 3. Go to **Mailbox flow settings** \> **Message Delivery Restrictions** and click **View details**. The **Message delivery restrictions** screen appears.
 
@@ -131,7 +131,7 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. Select a shared mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The shared mailbox properties screen appears.
+2. Select a shared mailbox from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The shared mailbox properties screen appears.
 
 3. Go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **Message delivery restrictions** screen appears.
 
@@ -170,12 +170,12 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
    - Choose the radio button for **Selected senders**.
    - Click **+ Add sender**.
 
-     :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set":::
+     :::image type="content" source="../../media/specifying-senders.png" alt-text="The screen on which specific external senders can be set.":::
 
    - In the **Accept messages from** screen, select the external senders and the "all internal users" group.
    - Add the external senders and the "all internal users" group to the list of the allowed senders of the recipient.
 
-     :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen":::
+     :::image type="content" source="../../media/confirming-the-specified-users.png" alt-text="The screen on which the specific senders are chosen.":::
 
 6. When you're finished, click **Confirm**.
 
@@ -185,27 +185,27 @@ To configure the recipient's allowed senders list, open the EAC and use one of t
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. Select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties screen appears.
+2. Select the mailbox from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The mailbox properties screen appears.
 
 3. Go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**. The **message delivery restrictions** screen appears.
 
 4. Configure the following settings in the **Accept messages from** section:
    - Clear the check box for **Require that all senders are authenticated**.
-   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select external senders and the "all internal users" group. 
+   - Select **Only senders in the following list**, and then click **Add** ![Add icon.](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select external senders and the "all internal users" group. 
    - Add the external senders and the "all internal users" group to the list of the allowed senders of the recipient.
    - When you're finished, click **OK**.
 
-     ![Add an allowed sender in the Admin center to help solve DSN 5.7.136](../../media/7306dda2-69dc-4d47-9d40-0fffaea881d6.png)
+     ![Add an allowed sender in the Admin center to help solve DSN 5.7.136.](../../media/7306dda2-69dc-4d47-9d40-0fffaea881d6.png)
 
 5. Click **OK**, and then click **Save**.
 
 ## Still need help with error code 550 5.7.12?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

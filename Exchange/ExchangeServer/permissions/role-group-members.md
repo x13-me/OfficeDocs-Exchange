@@ -44,9 +44,9 @@ To give a user the permissions that are granted by a role group, you need to add
 
 1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to add members to, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to add members to, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
-3. In the **Members** section, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+3. In the **Members** section, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png).
 
 4. Select the users, USGs, or other role groups you want to add to the role group, click **Add**, and then click **OK**.
 
@@ -77,9 +77,9 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove members from, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to remove members from, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
-3. In the **Members** section, select the members you want to remove, click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png), and then click **Save**.
+3. In the **Members** section, select the members you want to remove, click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png), and then click **Save**.
 
 ### Use the Exchange Management Shell to remove members from a role group
 

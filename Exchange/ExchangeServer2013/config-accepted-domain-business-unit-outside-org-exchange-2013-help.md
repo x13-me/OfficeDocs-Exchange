@@ -36,7 +36,7 @@ In some instances, you may want to configure an accepted domain for a business u
 
 ## Use the EAC to configure an accepted domain as an internal relay domain
 
-1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain Contoso.com could have a display name of Contoso Local Accepted Domain.
 

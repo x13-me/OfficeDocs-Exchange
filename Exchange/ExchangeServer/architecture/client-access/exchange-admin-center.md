@@ -80,7 +80,7 @@ In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the
 
 The section describes the user interface elements that are common across the EAC.
 
-![Exchange admin center](../../media/ExchangeAdministrationCenter.png)
+![Exchange admin center.](../../media/ExchangeAdministrationCenter.png)
 
 ### 1: Cross-premises navigation
 
@@ -194,15 +194,15 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 |**Icon**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Add icon](../../media/ITPro_EAC_AddIcon.png)|Add, New|Create a new object.  <br/>  Some of these icons have an associated down arrow you can click to show additional objects you can create. For example, in **Recipients** \> **Mailboxes**, clicking the down arrow displays **User mailbox** and **Linked mailbox** as additional options.|
-|![Edit icon](../../media/ITPro_EAC_EditIcon.png)|Edit|Edit an object.|
-|![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
-|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects.|
-|![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)|Refresh|Refresh the list view.|
-|![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Disable**, **Add/Remove columns**, **Export data to a CSV file**, **Connect a mailbox**, and **Advanced search**.|
-|![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.png)           <br/> ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)|Up arrow and down arrow|Move an object up or down in the list, when the order is important.  <br/> For example, in **Mail flow** \> **Email address policies** click the up arrow to move the policy higher in the list, which increases the priority of the policy by specifying which policy is applied first.  <br/> You can also use these arrows to navigate the public folder hierarchy and to move rules up or down in the list view.|
-|![Copy icon](../../media/ITPro_EAC_CopyIcon.png)|Copy|Copy an object so you can make changes to it without changing the original object.  <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
-|![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)|Remove|Remove an item from a list.  <br/>  For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
+|![Add icon.](../../media/ITPro_EAC_AddIcon.png)|Add, New|Create a new object.  <br/>  Some of these icons have an associated down arrow you can click to show additional objects you can create. For example, in **Recipients** \> **Mailboxes**, clicking the down arrow displays **User mailbox** and **Linked mailbox** as additional options.|
+|![Edit icon.](../../media/ITPro_EAC_EditIcon.png)|Edit|Edit an object.|
+|![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
+|![Search icon.](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects.|
+|![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png)|Refresh|Refresh the list view.|
+|![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Disable**, **Add/Remove columns**, **Export data to a CSV file**, **Connect a mailbox**, and **Advanced search**.|
+|![Up Arrow Icon.](../../media/ITPro_EAC_UpArrowIcon.png)           <br/> ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)|Up arrow and down arrow|Move an object up or down in the list, when the order is important.  <br/> For example, in **Mail flow** \> **Email address policies** click the up arrow to move the policy higher in the list, which increases the priority of the policy by specifying which policy is applied first.  <br/> You can also use these arrows to navigate the public folder hierarchy and to move rules up or down in the list view.|
+|![Copy icon.](../../media/ITPro_EAC_CopyIcon.png)|Copy|Copy an object so you can make changes to it without changing the original object.  <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
+|![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)|Remove|Remove an item from a list.  <br/>  For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
 
 ### 5: List view
 
@@ -214,7 +214,7 @@ When you select an object from the list view, more information about that object
 
 Some object types also allow you to bulk edit multiple objects in the details pane. You can select multiple objects in the list view by selecting an object, holding the Shift key, and selecting an object farther down in the list, or by holding down the CTRL key as you select each object. If bulk edit is available for the object types that you selected, you'll see the available options in the details pane. For example, at **Recipients** \> **Mailboxes**, when you select multiple mailboxes of the same type, the title of the details pane changes to **Bulk Edit**, and you can update contact and organization information, custom attributes, mailbox quotas, Outlook on the web settings, and more.
 
-![Bulk select mailboxes in the EAC](../../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
+![Bulk select mailboxes in the EAC.](../../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
 
 ### 7: Notifications
 
@@ -226,7 +226,7 @@ The EAC includes a notification viewer that displays information about:
 
 - Exporting mailbox content to .pst files.
 
-To show or hide the notification viewer, click the icon (![Notifications icon](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png)).
+To show or hide the notification viewer, click the icon (![Notifications icon.](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png)).
 
 Notifications are alerts that are sent to the arbitration mailbox named `FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042`. The EAC checks this mailbox for alerts every 30 seconds. Notifications remain in the arbitration mailbox until they are removed by the component that sent them, or until they expire (they should be removed by the Managed Folder Assistant after 30 days).
 
@@ -236,7 +236,7 @@ You can also use the **Get-Notification** cmdlet in the Exchange Management Shel
 
 The *Me tile* allows you to sign out of the EAC and sign in as a different user by clicking on the drop-down menu that's next to your account name.
 
-Click the help icon (![Help icon](../../media/ITPro_EAC_HelpIcon.png)) to view the help content for the tab that you're currently on. If you click on the drop-down menu that's next to the help icon, you can perform the following additional actions:
+Click the help icon (![Help icon.](../../media/ITPro_EAC_HelpIcon.png)) to view the help content for the tab that you're currently on. If you click on the drop-down menu that's next to the help icon, you can perform the following additional actions:
 
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit objects in the EAC. From here, you can globally turn off or turn on the Help bubble for all fields in the EAC.
 

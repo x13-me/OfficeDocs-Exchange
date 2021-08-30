@@ -30,7 +30,7 @@ If you need help with NDRs in Microsoft 365, Office 365, or Exchange Online, see
 
 This is an example of an NDR:
 
-![NDR showing user and Diagnostic information for administrators sections](../../media/e7e607e8-599d-475c-a257-05e94815f6f8.png)
+![NDR showing user and Diagnostic information for administrators sections.](../../media/e7e607e8-599d-475c-a257-05e94815f6f8.png)
 
 The information in an NDR is separated into two sections:
 

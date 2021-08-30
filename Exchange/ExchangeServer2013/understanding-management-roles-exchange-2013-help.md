@@ -107,7 +107,7 @@ Each management role is given a role type that can't be changed. The role type d
 
 **Management role hierarchy**
 
-![RBAC management role hierarchical diagram](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
+![RBAC management role hierarchical diagram.](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
 
 The preceding figure illustrates the hierarchical relationship of several management roles. The Mail Recipients and Help Desk roles are built-in roles. All of the child roles derived from these roles inherit the role type of each built-in role. For example, all child roles derived either directly or indirectly from the Mail Recipients role inherit the `MailRecipients` role type.
 

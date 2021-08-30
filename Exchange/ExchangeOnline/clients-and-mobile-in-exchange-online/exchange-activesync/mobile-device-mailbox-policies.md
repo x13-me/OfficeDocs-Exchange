@@ -147,11 +147,11 @@ Mobile device mailbox policies can be created, modified, or deleted in the Excha
 > [!NOTE]
 > You can only set a subset of mobile device mailbox policy settings in the EAC. To set all the mobile device mailbox policy settings, you need to use the Exchange Online PowerShell.
 
-1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Use the various check boxes and drop-down lists to configure the settings for the mobile device mailbox policy.
 
-   ![New mobile device mailbox policy](../../media/EAC-new-mobile-device-mailbox-policies.png)
+   ![New mobile device mailbox policy.](../../media/EAC-new-mobile-device-mailbox-policies.png)
 
     > [!WARNING]
     > Select **This is the default policy** to make the new mobile mailbox policy the default mobile mailbox policy. After you make a mobile mailbox policy the default policy, all new users will be assigned this policy automatically when they are created.
@@ -189,13 +189,13 @@ For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](/pow
 
 1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**.
 
-2. Select a policy from the List view and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select a policy from the List view and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. Use the **General** and **Security** tabs to edit the mobile device mailbox policy settings.
 
-   ![Edit mobile device mailbox policy - General tab](../../media/EAC-edit-mobile-device-mailbox-policies-general.png)
+   ![Edit mobile device mailbox policy - General tab.](../../media/EAC-edit-mobile-device-mailbox-policies-general.png)
      
-   ![Edit mobile device mailbox policy - Security tab](../../media/EAC-edit-mobile-device-mailbox-policies-security.png)
+   ![Edit mobile device mailbox policy - Security tab.](../../media/EAC-edit-mobile-device-mailbox-policies-security.png)
 
 4. Click **Save** to update the policy.
 

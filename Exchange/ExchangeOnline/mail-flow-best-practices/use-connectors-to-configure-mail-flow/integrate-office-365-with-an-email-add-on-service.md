@@ -27,7 +27,7 @@ This topic describes the best practices for how your organization can use a thir
 
 The mail flow and a high-level summary of the service are shown in the following diagram.
 
-![Functional diagram for fictional Contoso Signature Service email add-on service](../../media/a38e832b-0b37-49d8-9074-c9dc6f7710b3.png)
+![Functional diagram for fictional Contoso Signature Service email add-on service.](../../media/a38e832b-0b37-49d8-9074-c9dc6f7710b3.png)
 
 1. When a user in your Exchange Online organization composes and sends a message, the message is diverted to Contoso Signature Service by using a connector and a mail flow rule (also known as a transport rule) that you create.
 
@@ -71,9 +71,9 @@ The important settings for the connector are:
 
 ### Create the outbound connector in the new EAC
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **Add a connector** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **Add a connector** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
-   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
+   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen.":::
 
 2. The new connector wizard opens. On the first page, configure these settings:
    - **Connection from**: Select **Office 365**.
@@ -92,17 +92,17 @@ The important settings for the connector are:
        - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages).
        - **Unchecked**: Removes internal headers from messages before they're sent to the email add-on service. If you select this value, the value of this setting on the inbound connector that you create in Step 4 is meaningless (by definition, there will be no internal Exchange headers to keep or remove in returning messages).
 
-   :::image type="content" source="../../media/connectors-name.png" alt-text="The screen on which you provide a name for the connector":::
+   :::image type="content" source="../../media/connectors-name.png" alt-text="The screen on which you provide a name for the connector.":::
 
    When you're finished, click **Next**.
 
 4. On the **Use of connector** page, select **Only when I have a transport rule set up that redirects messages to this connector**, and then click **Next**.
 
-   :::image type="content" source="../../media/screen-use-of-connector.png" alt-text="The screen displaying options that determine how you use your connector":::
+   :::image type="content" source="../../media/screen-use-of-connector.png" alt-text="The screen displaying options that determine how you use your connector.":::
 
-5. On the **Routing** page, enter the smart host value click or the email add-on service (for example, smtp.contososignatureservice.com), click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Next**.
+5. On the **Routing** page, enter the smart host value click or the email add-on service (for example, smtp.contososignatureservice.com), click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then click **Next**.
 
-   :::image type="content" source="../../media/screen-routing.png" alt-text="The screen displaying options that determine how the connectors route the email messages":::
+   :::image type="content" source="../../media/screen-routing.png" alt-text="The screen displaying options that determine how the connectors route the email messages.":::
 
 6. On the **Security restrictions** page, configure these settings:
    - Verify **Always use Transport Layer Security (TLS) to secure the connection (recommended)** is selected.
@@ -114,22 +114,22 @@ The important settings for the connector are:
    When you're finished, click **Next**.
 
 7. On the **Validation email** page, do these steps:
-   1. Enter a valid email address on your organization's email server, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   1. Enter a valid email address on your organization's email server, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
    2. Click **Validate** to start the validation process.
 
    After the validation process is complete, click **Next**.
 
-   :::image type="content" source="../../media/screen-validation-email.png" alt-text="The Validation email screen":::
+   :::image type="content" source="../../media/screen-validation-email.png" alt-text="The Validation email screen.":::
 
 8. On the **Review connector** page, review the settings for the new connector. You can click **Edit** in the specific section to edit those settings.
 
    When you're finished, click **Create connector**.
 
-    :::image type="content" source="../../media/screen-review-connector.png" alt-text="The screen on which you can review the settings of the connector":::
+    :::image type="content" source="../../media/screen-review-connector.png" alt-text="The screen on which you can review the settings of the connector.":::
 
 ### Create the outbound connector in the classic EAC
 
-1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
    ![The Connectors page in the Exchange admin center.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 
@@ -160,7 +160,7 @@ The important settings for the connector are:
 
    ![In the new connector wizard, select the option to only use the connector for messages redirected by a mail flow rule.](../../media/c02fc961-6227-4c23-ba54-9cce05e6689e.png)
 
-5. On the **How do you want to route email messages?** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add smart host** dialog that appears, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
+5. On the **How do you want to route email messages?** page, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). In the **Add smart host** dialog that appears, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
 
    ![In the new connector wizard, enter the smart host destination for the connector.](../../media/d24e4a9f-bab4-4300-9a8c-c17432fedb5c.png)
 
@@ -169,7 +169,7 @@ The important settings for the connector are:
    - Verify **Issued by a trusted certificate authority (CA)** is selected.
    - Select **And the subject name or subject alternative name (SAN) matches this domain name**, and enter the smart host that you used in the previous step (for example, smtp.contososignatureservice.com).
 
-   ![In the new connector wizard, use TLS and identify the certificate domain name for connections to Exchange Online](../../media/2ce67ff7-c6d1-49ae-9790-28c27396ab18.png)
+   ![In the new connector wizard, use TLS and identify the certificate domain name for connections to Exchange Online.](../../media/2ce67ff7-c6d1-49ae-9790-28c27396ab18.png)
 
    When you're finished, click **Next**.
 
@@ -179,7 +179,7 @@ The important settings for the connector are:
 
    ![In the new connector wizard, verify the settings.](../../media/58bf30f3-456b-4671-a9bf-cca682d7dfda.png)
 
-8. On the **Validate this connector** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Exchange Online to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
+8. On the **Validate this connector** page, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Exchange Online to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
 
    ![In the new connector wizard, enter an email address to validate the connector.](../../media/8bf14376-b2dd-4b7c-a379-4274fd042dae.png)
 
@@ -230,9 +230,9 @@ The rule routes messages from internal senders to the connector that you created
 > [!NOTE]
 > Mail flow rule creation in the new EAC is exactly the same as in the classic EAC.
 
-1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
+1. Go to **Mail flow** \> **Rules**, and click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
 
-   ![In the Exchange admin center, click Mail flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
+   ![In the Exchange admin center, click Mail flow \> Rules to add a new rule.](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
 
 2. In the **New rule** page that opens, click **More options** near the bottom of the page.
 
@@ -244,7 +244,7 @@ The rule routes messages from internal senders to the connector that you created
    - **Do the following**: Select **Redirect the message to** \> **The following connector** \> Select the connector you created in Step 1, and then click **OK**.
    - **Except if**: Click **Add exception** \> Select **A message header** \> **Includes and of these words**.
    - Click **Enter text**, enter the name of the custom header field that's applied by the email add-on service (for example, SignatureContoso), and then click **OK**.
-   - Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
+   - Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
    - Near the bottom of the page, select **Stop processing more rules**.
 
    ![On the new rule page, configure the settings to route messages to the email add-on service.](../../media/97e895ea-fbf5-437b-a23c-13adf8db93ac.png)
@@ -275,7 +275,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 To verify that you've successfully created a mail flow rule to route unprocessed messages to the email add-on service, use either of these procedures:
 
-- In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
+- In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
 
 - In Exchange Online PowerShell, replace _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values:
 
@@ -322,16 +322,16 @@ The important settings for the connector are:
 
 #### Create the inbound connector in the new EAC
 
-1. Go to **Mail flow** \> **Connectors**, and then click  ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add a connector**.
+1. Go to **Mail flow** \> **Connectors**, and then click  ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add a connector**.
 
-   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen":::
+   :::image type="content" source="../../media/connectors-screen.png" alt-text="The connectors screen.":::
 
 2. The new connector wizard opens. On the first page, configure these settings:
 
    - **Connection from**: Select **Your organization's email server**.
    - **Connection to**: Verify that **Office 365** is selected.
 
-   :::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured":::
+   :::image type="content" source="../../media/org-to-365.png" alt-text="The screen on which connector settings are configured.":::
 
 3. When you're finished, click **Next**.
 
@@ -344,23 +344,23 @@ The important settings for the connector are:
        - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages.
        - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service.
 
-   :::image type="content" source="../../media/screen-connector-name.png" alt-text="The screen on which you provide a name to the connector":::
+   :::image type="content" source="../../media/screen-connector-name.png" alt-text="The screen on which you provide a name to the connector.":::
 
    When you're finished, click **Next**.
 
 5. On the **Authenticating sent email** page, verify that the first option is selected (verify by certificate), and enter the certificate domain that the email add-on service gave to you when you enrolled in the service (for example, S5HG3DCG14.smtp.contososignatureservice.com).
 
-   :::image type="content" source="../../media/authenticating-sent-email.png" alt-text="The authenticating sent email screen":::
+   :::image type="content" source="../../media/authenticating-sent-email.png" alt-text="The authenticating sent email screen.":::
 
    When you're finished, click **Next**.
 
 6. On the **Review connector** page, verify the settings. You can click **Edit** in the appropriate section to make changes. When you're finished, click **Create connector***.
 
-   :::image type="content" source="../../media/screen-review-connector-org-365.png" alt-text="The review connector screen":::
+   :::image type="content" source="../../media/screen-review-connector-org-365.png" alt-text="The review connector screen.":::
 
 #### Create the inbound connector in the classic EAC
 
-1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
    ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
 

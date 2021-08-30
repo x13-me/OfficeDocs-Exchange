@@ -39,7 +39,7 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
 
 ## Use the EAC to enable a UM IP gateway
 
-1. In the EAC, navigate to \> **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to enable, and then click the **Up arrow** ![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.gif).
+1. In the EAC, navigate to \> **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to enable, and then click the **Up arrow** ![Up Arrow Icon.](../../media/ITPro_EAC_UpArrowIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

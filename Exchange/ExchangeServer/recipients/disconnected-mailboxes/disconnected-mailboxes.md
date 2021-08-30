@@ -22,7 +22,7 @@ Each Microsoft Exchange mailbox consists of an Active Directory user account and
 
 **Mailbox components**
 
-![Parts that make up a mailbox](../../media/RecipientsConceptual_MailboxParts.gif)
+![Parts that make up a mailbox.](../../media/RecipientsConceptual_MailboxParts.gif)
 
 A *disconnected mailbox* is a mailbox object in the mailbox database that isn't associated with an Active Directory user account. There are two types of disconnected mailboxes:
 

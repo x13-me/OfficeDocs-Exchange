@@ -55,13 +55,13 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
    - To only display EWS virtual directories, select **EWS** in the **Select type** drop-down list.
 
-   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory.](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
 
 3. On the properties page that opens, on the **General** tab, select the **Enable MRS Proxy endpoint** check box, and then click **Save**.
 
-   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
+   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint.](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
 
 ## Use the Exchange Management Shell to enable the MRS Proxy endpoint
 

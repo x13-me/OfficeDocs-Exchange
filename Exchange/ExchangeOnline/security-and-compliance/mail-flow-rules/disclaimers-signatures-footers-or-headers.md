@@ -49,9 +49,9 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 
 1. Open the EAC and go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
+2. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
 
-   ![In the Exchange admin center, click Mal flow \> Rules \> Add to create a rule](../../media/ee818b31-f5a5-40cc-9fe5-6c04f4120716.png)
+   ![In the Exchange admin center, click Mal flow \> Rules \> Add to create a rule.](../../media/ee818b31-f5a5-40cc-9fe5-6c04f4120716.png)
 
 3. In the **New rule** window that appears, enter a unique name the rule.
 

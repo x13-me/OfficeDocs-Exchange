@@ -80,7 +80,7 @@ To verify that you've successfully created the Regular throttling policy, do the
    Get-ThrottlingPolicy | select *
    ```
 
-   ![Details On Throttling Policy](images/DetailsOnThrottlingPolicy.png)
+   ![Details On Throttling Policy.](images/DetailsOnThrottlingPolicy.png)
 
 4. Verify that the properties for the new Regular policy match the value or values you configured.
 

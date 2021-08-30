@@ -41,7 +41,7 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to change the message size limits for, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of user mailboxes, click the mailbox that you want to change the message size limits for, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -69,7 +69,7 @@ To verify that you've successfully configured message size limits for a mailbox,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to verify the message size limits for, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of user mailboxes, click the mailbox that you want to verify the message size limits for, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox properties page, click **Mailbox Features**.
 

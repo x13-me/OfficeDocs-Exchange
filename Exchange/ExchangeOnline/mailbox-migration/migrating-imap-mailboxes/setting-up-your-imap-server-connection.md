@@ -38,13 +38,13 @@ Microsoft 365 or Office 365 needs the name of the source email server to migrate
 
 1. Open your mailbox in Outlook on the web.
 
-2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
+2. On the toolbar, choose **Settings** ![Microsoft 365 or Office 365 Settings button.](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png).
 
 3. In the **Search all settings** box, start typing "pop", and in the results, select **POP and IMAP**.
 
 4. In **POP and IMAP settings**, your IMAP server name is listed in the **IMAP setting** section.
 
-   ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
+   ![Shows the link for POP or IMAP access settings.](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
 
    **Note**: The IMAP server for Gmail is: **imap.gmail.com**.
 

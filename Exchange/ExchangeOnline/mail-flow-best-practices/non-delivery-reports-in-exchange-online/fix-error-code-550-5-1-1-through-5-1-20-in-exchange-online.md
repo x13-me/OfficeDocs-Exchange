@@ -28,7 +28,7 @@ It's frustrating when you get an error after sending an email message. This arti
 
 |||||
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. What can I do to fix this?](#im-an-email-admin-what-can-i-do-to-fix-this)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. What can I do to fix this?](#im-an-email-admin-what-can-i-do-to-fix-this)|
 
 ## I got this bounce message. How do I fix it?
 
@@ -72,7 +72,7 @@ You can only clear your Auto-Complete list in the light version of Outlook on th
 
 - Configure your Outlook on the web settings to only use the light version of Outlook on the web (the change takes effect the next time you open the mailbox):
 
-   1. In Outlook on the web, click **Settings** ![Settings icon](../../media/f4b2e798-fff1-4a14-931f-5677a4543b58.png).
+   1. In Outlook on the web, click **Settings** ![Settings icon.](../../media/f4b2e798-fff1-4a14-931f-5677a4543b58.png).
 
    2. In the **Search all settings** box, type **light** and select **Outlook on the web version** in the results.
 
@@ -167,11 +167,11 @@ For more information, see [Configure email forwarding for a mailbox](../../recip
 
 ## Still need help with error code 5.1.1 to 5.1.20?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

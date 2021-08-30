@@ -39,7 +39,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 1. In the EAC, go to **Servers** \> **Virtual directories**.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. Select the Outlook on the web virtual directory you want to view or configure.
 
@@ -57,7 +57,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **External URL**: The default value is blank (not configured).
 
-3. To see more properties, or to modify the settings that aren't read only, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). The following tabs and settings are available:
+3. To see more properties, or to modify the settings that aren't read only, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). The following tabs and settings are available:
 
    - **General** tab:
 
@@ -161,17 +161,17 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 ## Use the EAC to configure the external URL for Outlook on the web
 
-1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Configure** (![Configure icon](../../media/ITPro_EAC_ConfigureIcon.png)).
+1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Configure** (![Configure icon.](../../media/ITPro_EAC_ConfigureIcon.png)).
 
    - You can use the **Select server** drop down list to filter the Exchange servers by name.
 
    - To only display Outlook on the web virtual directories, select **OWA** in the **Select type** drop down list.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. In the **Configure external access domain** page that opens, configure the following settings:
 
-   - **Select the servers to use with the external URL**: Click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) and select one or more Exchange servers that external clients will use to connect to Outlook on the web (don't select internal only servers).
+   - **Select the servers to use with the external URL**: Click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) and select one or more Exchange servers that external clients will use to connect to Outlook on the web (don't select internal only servers).
 
    - **Enter the domain name you will use with your external servers**: Enter the FQDN that external clients will use to connect to Outlook on the web (for example, mail.contoso.com). Note that this value needs to be configured and resolvable in your organization's public DNS.
 
@@ -183,13 +183,13 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 If an Outlook on the web virtual directory isn't working the way you expect, you can reset it. The virtual directory is deleted and recreated with the default settings. Although any customized settings are lost, you're forced to select a location for a text document to backup the current settings.
 
-1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Reset** (![Reset Icon](../../media/e9c2258e-90e2-4026-865a-1545de0f5e6a.png)).
+1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Reset** (![Reset Icon.](../../media/e9c2258e-90e2-4026-865a-1545de0f5e6a.png)).
 
    - You can use the **Select server** drop down list to filter the Exchange servers by name.
 
    - To only display Outlook on the web virtual directories, select **OWA** in the **Select type** drop down list.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. In the **Warning** page that opens, specify the UNC path of the file to save the current virtual directory settings (for example, \\ _\<Server\>_\ _\<Share\>_\owavdir.txt or \\ _\<LocalServerName_\>\c$\owavdir.txt).
 
@@ -207,7 +207,7 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
 
      3. In the **Actions** pane, click **Restart**.
 
-     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+     ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
    - Command prompt:
 

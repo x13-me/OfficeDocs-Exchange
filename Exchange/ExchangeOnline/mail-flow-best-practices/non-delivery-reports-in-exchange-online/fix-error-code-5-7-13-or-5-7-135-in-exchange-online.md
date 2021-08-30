@@ -25,7 +25,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix this issue?
@@ -44,9 +44,9 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 1. Navigate to **Public folders** \> **Public folders**.
  
-2. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties screen appears.
+2. Choose a public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties screen appears.
 
-:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited.":::
 
 3. Click **Mail flow settings**.
 
@@ -56,15 +56,15 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
     - Select **All senders**.
     
-:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the user can configure all external senders to send messages to the public folder":::
+:::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the user can configure all external senders to send messages to the public folder.":::
     
 5. Click **Save**.
 
 **In Classic EAC** 
 
-1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
+1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
-   ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
+   ![View public folders to help fix DSN 5.7.135.](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
 2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
@@ -72,7 +72,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
     - Select **All senders**.
 
-   ![Public folder delivery restrictions to help fix DSN 5.7.135](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
+   ![Public folder delivery restrictions to help fix DSN 5.7.135.](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
 
 3. Click **Save**.
 
@@ -94,23 +94,23 @@ To configure the public folder's allowed senders list, open the EAC do the follo
 
 1. Navigate to **Public folders** \> **Public folders**.
 
-2. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties screen appears.
+2. Choose a public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). The public folder properties screen appears.
 
-:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+:::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited.":::
 
 3. Under **Message delivery Restrictions** \> **Accept messages from**, perform the following tasks:
 
 - Clear the check box for **Require that all senders are authenticated**.
 - Select **Only senders in the following list**, and then click **+**.
    
- :::image type="content" source="../../media/configuring-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the user can configure restriction on senders":::
+ :::image type="content" source="../../media/configuring-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the user can configure restriction on senders.":::
 
 The **Select members** screen appears.
 
 - Check the check boxes of the specific external senders and the all-internal-users group you want to add to the senders list.
 - Click **add**.
  
-:::image type="content" source="../../media/adding-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the specific senders can be added":::
+:::image type="content" source="../../media/adding-specific-senders-to-public-folders-new-eac.png" alt-text="The screen on which the specific senders can be added.":::
    
 - When you're finished, click **OK**.
 
@@ -118,29 +118,29 @@ The **Select members** screen appears.
  
 **In Classic EAC** 
 
-1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
+1. In the Classic EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
-   ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
+   ![View public folders to help fix DSN 5.7.135.](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
 2. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
 
    - Clear the check box for **Require that all senders are authenticated**.
 
-   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group.
+   - Select **Only senders in the following list**, and then click **Add** ![Add icon.](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select the external senders and the "all internal users" group.
    - Add the external senders and the "all internal users" group to the allowed senders list.
    - When you're finished, click **OK**.
 
-     ![Custom allowed sender list for a public folder to help fix DSN 5.7.135](../../media/792bf991-356e-48e8-b356-c669cc9b084e.png)
+     ![Custom allowed sender list for a public folder to help fix DSN 5.7.135.](../../media/792bf991-356e-48e8-b356-c669cc9b084e.png)
 
 3. Click **Save**.
 
 ## Still need help with error code 550 5.7.13 or 550 5.7.135?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

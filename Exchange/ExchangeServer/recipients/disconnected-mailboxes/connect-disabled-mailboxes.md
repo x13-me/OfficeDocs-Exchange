@@ -64,7 +64,7 @@ The following procedure shows how to connect a disabled user mailbox. You can al
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. Click **More** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and then click **Connect a mailbox**.
+2. Click **More** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and then click **Connect a mailbox**.
 
     A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
 
@@ -123,7 +123,7 @@ For detailed syntax and parameter information, see [Connect-Mailbox](/powershell
 
 To verify that you've successfully connected a disabled mailbox to a user account, do one of the following:
 
-- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you reconnected, click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png), and verify that the mailbox is listed.
+- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you reconnected, click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png), and verify that the mailbox is listed.
 
 - In Active Directory Users and Computers, right-click the user account whose mailbox you disabled, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the reconnected mailbox.
 

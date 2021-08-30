@@ -57,7 +57,7 @@ The following figure shows the relationship between users, role groups, and role
 
  **Roles, role groups, and role group members**
 
-![Role, role group and member relationship](../media/ITPro_Security_RBAC_SimplifiedRoleGroupRelationship.gif)
+![Role, role group and member relationship.](../media/ITPro_Security_RBAC_SimplifiedRoleGroupRelationship.gif)
 
 Exchange Server includes several built-in role groups, each one providing permissions to manage specific areas in Exchange Server. Some role groups may overlap with others. The following table lists each role group with a description of its use. If you want to see the roles assigned to each role group, click the name of the role group in the "Role group" column, and then open the "Management Roles Assigned to This Role Group" section.
 
@@ -105,7 +105,7 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
  **Roles, role assignment policies, and mailboxes**
 
-![Role, role assignment policy, mailbox relationship](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
+![Role, role assignment policy, mailbox relationship.](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
 
 The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
@@ -115,7 +115,7 @@ To manage your permissions using role groups in Exchange Server, we recommend th
 
 ### New role group dialog box in the EAC
 
-![New role group dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
+![New role group dialog box in the EAC.](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
 
 If none of the role groups included with Exchange Server have the permissions you need, you can use the EAC to create a role group and add the roles that have the permissions you need. For your new role group, you'll need to:
 
@@ -142,7 +142,7 @@ To manage the permissions that you grant end users to manage their own mailbox i
 
 ### Role assignment policy dialog box in the EAC
 
-![Role assignment policy dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
+![Role assignment policy dialog box in the EAC.](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
 
 Exchange Server includes a role assignment policy named Default Role Assignment Policy. This role assignment policy enables users whose mailboxes are associated with it to do the following:
 

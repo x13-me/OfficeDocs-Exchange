@@ -34,7 +34,7 @@ In Microsoft Exchange Server 2013, you can use In-Place eDiscovery to search mai
 
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2. In the list view, select the In-Place eDiscovery search you want to remove, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+2. In the list view, select the In-Place eDiscovery search you want to remove, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 ## Use the Shell to remove an In-Place eDiscovery search
 

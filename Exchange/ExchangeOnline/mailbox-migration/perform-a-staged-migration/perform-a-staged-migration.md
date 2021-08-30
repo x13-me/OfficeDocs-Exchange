@@ -109,7 +109,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 2. Choose **Setup** \> **Domains**.
 
-3. On the **Manage domains** page, click **Add domain** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to start the domain wizard.
+3. On the **Manage domains** page, click **Add domain** ![Add icon.](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to start the domain wizard.
 
 4. On the **Add a domain to Microsoft 365 or Office 365** page, choose **Specify a domain name and confirm ownership**.
 
@@ -186,11 +186,11 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
-3. Choose **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+3. Choose **More** ![More icon.](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
    ![Select Migration endpoint.](../media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
 
-4. On the **Migration endpoints** page, choose **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. On the **Migration endpoints** page, choose **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
 5. On the **Select the migration endpoint type** page, choose **Outlook Anywhere** \> **Next**.
 
@@ -239,7 +239,7 @@ You create and then run a migration batch to migrate mailboxes to Microsoft 365 
 
 4. Select the migration type as **Staged migration** from the drop-down list and click **Next**.
 
-   ![Migration Onboarding](../media/migration-onbording-selection1.png)
+   ![Migration Onboarding.](../media/migration-onbording-selection1.png)
    
 5. In **Prerequisites** section, read the following and click **Next**. 
     
@@ -249,7 +249,7 @@ You create and then run a migration batch to migrate mailboxes to Microsoft 365 
     
     b. Select the migration endpoint from the drop-down list and click **Next**.
     
-    ![Set endpoint](../media/migration-endpoint-selection.png)
+    ![Set endpoint.](../media/migration-endpoint-selection.png)
     
 7. Select and upload a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
@@ -268,7 +268,7 @@ You create and then run a migration batch to migrate mailboxes to Microsoft 365 
 
 10. In **Schedule batch migration** section, verify all the details, click **Save**, and then click **Done**.
 
-    ![Schedule batch migration](../media/schedule-batch1-migration.png)
+    ![Schedule batch migration.](../media/schedule-batch1-migration.png)
     
     The batch status changes from **Syncing** to **Synced**, you can complete the batch. 
     
@@ -286,9 +286,9 @@ For a staged migration, you migrate mailboxes in batches: one batch for each CSV
 
 1. In the Classic Exchange admin center, go to Recipients > Migration.
 
-2. Choose **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Choose **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
 
-   ![Select Migrate to Exchange Online](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
+   ![Select Migrate to Exchange Online.](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
 
 3. On the **Select a migration type** page, choose **Staged migration** \> **next**.
 
@@ -338,7 +338,7 @@ In Classic Exchange admin center, if you created a migration batch and configure
 
 3. If a migration batch starts successfully, its status on the migration dashboard changes to **Syncing**.
 
-   ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+   ![Micgration batch is syncing.](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 **Verify the migration step worked**:
 

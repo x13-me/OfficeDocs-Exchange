@@ -65,7 +65,7 @@ After you create an accepted domain, you can't change the domain value (for exam
 
 ### Use the EAC to create accepted domains
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**, and then click **Add** (![Edit icon](../../media/ITPro_EAC_AddIcon.png)).
+1. In the EAC, go to **Mail flow** \> **Accepted domains**, and then click **Add** (![Edit icon.](../../media/ITPro_EAC_AddIcon.png)).
 
 2. In the **New accepted domain** window that opens, configure the following settings:
 
@@ -115,7 +115,7 @@ To verify that you've successfully created an accepted domain, use either of the
 
 ### Use the EAC to modify accepted domains
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**, select the accepted domain from the list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. In the EAC, go to **Mail flow** \> **Accepted domains**, select the accepted domain from the list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 2. In the properties window that opens, you can configure the following settings:
 
@@ -157,7 +157,7 @@ To verify that you've successfully modified an accepted domain, use either of th
 
   **Notes**:
 
-  - To verify that the accepted domain is the default domain, you need to select the accepted domain from the list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). If **Make this the default domain** is selected, it's the default domain.
+  - To verify that the accepted domain is the default domain, you need to select the accepted domain from the list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). If **Make this the default domain** is selected, it's the default domain.
 
   - You can't use the EAC to verify that Recipient Lookup is enabled or disabled for the accepted domain. You need to use the Exchange Management Shell.
 
@@ -181,7 +181,7 @@ To verify that you've successfully modified an accepted domain, use either of th
 
 ### Use the EAC to remove accepted domains
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**, select the accepted domain from the list, and then click **Remove** (![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)).
+1. In the EAC, go to **Mail flow** \> **Accepted domains**, select the accepted domain from the list, and then click **Remove** (![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)).
 
 2. In the **Warning** dialog that appears, click **Yes** to confirm.
 

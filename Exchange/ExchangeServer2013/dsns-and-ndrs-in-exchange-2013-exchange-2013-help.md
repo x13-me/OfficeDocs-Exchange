@@ -261,7 +261,7 @@ The information in each section is targeted to the readers of that section. The 
 
 **NDR Sections**
 
-![NDR showing User and Administrator Diagnostic Info](images/Bb232118.96245455-5fb9-4669-a931-5563ddd3ab35(EXCHG.150).png "NDR showing User and Administrator Diagnostic Info")
+![NDR showing User and Administrator Diagnostic Info.](images/Bb232118.96245455-5fb9-4669-a931-5563ddd3ab35(EXCHG.150).png "NDR showing User and Administrator Diagnostic Info")
 
 ## User information section
 
@@ -301,7 +301,7 @@ The following example shows what happens when a remote email organization accept
 
 **NDR generated and message rejected by the same server**
 
-![NDR showing same generating and rejecting server](images/Bb232118.c9a7cd2d-f35f-4d77-8225-c29585fa3ccd(EXCHG.150).gif "NDR showing same generating and rejecting server")
+![NDR showing same generating and rejecting server.](images/Bb232118.c9a7cd2d-f35f-4d77-8225-c29585fa3ccd(EXCHG.150).gif "NDR showing same generating and rejecting server")
 
 Also, messages that are rejected when they are sent to recipients that are part of the same Exchange organization are typically rejected by the same email server that generates the NDR message. Messages sent to local recipients can be rejected for various reasons, such as mailboxes that have exceeded their quota, lack of authorization to send messages to the recipient address, or hardware failures that result in an extended loss of connectivity to other servers in the organization.
 
@@ -313,7 +313,7 @@ The following example shows what happens when a remote email organization reject
 
 **NDR generated and message rejected by different servers**
 
-![NDR showing different generating/sending servers](images/Bb232118.adfb8d5a-9c1d-4cd9-8a71-ce14224434f8(EXCHG.150).gif "NDR showing different generating/sending servers")
+![NDR showing different generating/sending servers.](images/Bb232118.adfb8d5a-9c1d-4cd9-8a71-ce14224434f8(EXCHG.150).gif "NDR showing different generating/sending servers")
 
 ## See Also
 
