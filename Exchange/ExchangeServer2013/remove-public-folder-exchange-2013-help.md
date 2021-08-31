@@ -36,9 +36,9 @@ You may need to remove public folders that are no longer being used in your orga
 
 2. In the list view, select the public folder you want to delete. Note that clicking on the folder name will display sub-folders within that folder, if there are any. At that point you can click to select a specific sub-folder to remove.
 
-     To delete a folder or sub-folder, click anywhere on the folder's row except the underlined name of the folder, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif). If you click the underlined name of the folder, the **Delete** option will not be available to select.
+     To delete a folder or sub-folder, click anywhere on the folder's row except the underlined name of the folder, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif). If you click the underlined name of the folder, the **Delete** option will not be available to select.
 
-    ![Selecting a public folder to remove](images/8666290d-3f19-4c70-afe3-45569762718b.png)
+    ![Selecting a public folder to remove.](images/8666290d-3f19-4c70-afe3-45569762718b.png)
 
 3. A warning box displays asking if you're sure you want to delete the public folder. Click **Yes** to continue.
 

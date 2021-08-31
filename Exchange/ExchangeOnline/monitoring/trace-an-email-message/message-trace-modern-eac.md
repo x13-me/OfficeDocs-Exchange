@@ -71,11 +71,11 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
 - By default, you select the time range in **Slider** view using a time line.
 
-  ![A Slider time range in a new message trace in the modern EAC](../../media/message-trace-time-slider-modern-eac.png)
+  ![A Slider time range in a new message trace in the modern EAC.](../../media/message-trace-time-slider-modern-eac.png)
 
   But, you can also switch to **Custom time range** view where you can specify the **Start date** and **End date** values (including times), and you can also select the **Time zone** for the date/time range. Note that the **Time zone** setting applies to both your query inputs and your query results.
 
-  ![A Custom time range in a new message trace in the modern EAC](../../media/message-trace-time-range-modern-eac.png)
+  ![A Custom time range in a new message trace in the modern EAC.](../../media/message-trace-time-range-modern-eac.png)
 
   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
@@ -191,7 +191,7 @@ For more information about the Message ID, see the Message ID section earlier in
 
 In the summary report output, you can view details about a message by select the row (click anywhere in the row except the check box).
 
-![Details after clicking a row in the summary report message trace results in the modern EAC](../../media/message-trace-message-details-full-modern-eac.png)
+![Details after clicking a row in the summary report message trace results in the modern EAC.](../../media/message-trace-message-details-full-modern-eac.png)
 
 The message trace details contain the following additional information that's not present in the summary report:
 

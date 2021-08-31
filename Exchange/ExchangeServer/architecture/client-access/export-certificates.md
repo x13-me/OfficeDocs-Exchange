@@ -41,7 +41,7 @@ You can export a certificate from an Exchange server as a backup or to import th
 
 1. Open the EAC and navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the Exchange server that contains the certificate, click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Export Exchange certificate**.
+2. In the **Select server** list, select the Exchange server that contains the certificate, click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Export Exchange certificate**.
 
 3. On the **Export Exchange certificate** page that opens, enter the following information:
 

@@ -43,7 +43,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 ### Use the classic EAC to create a journal rule
 
-1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. In **Journal rule**, provide a name for the journal rule and then compete the following fields:
 
@@ -171,7 +171,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
-2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 ### Use Exchange Online PowerShell to remove a journal rule
 

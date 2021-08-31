@@ -58,7 +58,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -81,7 +81,7 @@ To verify that you've successfully configured email forwarding, do one of the fo
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click or tap **Mailbox Features**.
 

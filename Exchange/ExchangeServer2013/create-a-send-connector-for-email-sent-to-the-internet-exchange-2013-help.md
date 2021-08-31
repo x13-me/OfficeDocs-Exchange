@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 By default, Microsoft Exchange Server 2013 doesn't allow you to send mail outside of your domain. To send mail outside your domain, you need to create a Send connector. The following graphic illustrates mail flow when you create a Send connector to send mail to the Internet.
 
-![connector\_send\_onprem\_internet](images/JJ657457.e8963e4f-7dce-461f-bbcf-660278cefa35(EXCHG.150).gif "connector_send_onprem_internet")
+![connector\_send\_onprem\_internet.](images/JJ657457.e8963e4f-7dce-461f-bbcf-660278cefa35(EXCHG.150).gif "connector_send_onprem_internet")
 
 Interested in scenarios where this procedure is used? See the following topics:
 
@@ -40,13 +40,13 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 ## Use the EAC to create a send connector for email sent to the Internet
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New send connector** wizard, specify a name for the send connector and then select **Internet** for the **Type**. Click **Next**.
 
 3. Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
 
-4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \*, which indicates that this send connector applies to messages addressed to any domain. Click **Save**.
+4. Under **Address space**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \*, which indicates that this send connector applies to messages addressed to any domain. Click **Save**.
 
 5. Make sure **Scoped send connector** is not selected and then click **Next**.
 

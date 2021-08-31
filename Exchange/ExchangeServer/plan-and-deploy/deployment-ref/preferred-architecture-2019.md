@@ -77,7 +77,7 @@ One caution we have for customers is to ensure you assign a low TTL (time to liv
 
 Data center affinity is required for the Office Online Server farms, thus a namespace is deployed per datacenter with the load balancer utilizing layer 7, and maintaining session affinity via cookie-based persistence.
 
-![Example Exchange 2019 Org Architecture Layout](../../media/PrefArc-2019-Layout.png)
+![Example Exchange 2019 Org Architecture Layout.](../../media/PrefArc-2019-Layout.png)
 
 If you have multiple site resilient datacenter pairs in your environment, you'll need to decide if you want to have a single worldwide namespace, or if you want to control the traffic to each specific datacenter by using regional namespaces. Your decision depends on your network topology and the associated cost with using an unbound model; for example, if you have datacenters located in North America and South Africa, the network link between these regions might not only be costly, but it might also have high latency, which can introduce user pain and operational issues. In that case, it makes sense to deploy a bound model with a separate namespace for each region. However, options like geographical DNS offer you the ability to deploy a single unified namespace, even when you have costly network links; geo-DNS allows you to have your users directed to the closest datacenter based on their client's IP address.
 
@@ -161,7 +161,7 @@ For example, if a customer were to deploy a system capable of holding 20 drives 
 
 This can be visualized as the following;
 
-![Example Exchange 2019 Mailbox Server disk layout](../../media/PrefArc-2019-DiskLayoutExample.PNG)
+![Example Exchange 2019 Mailbox Server disk layout.](../../media/PrefArc-2019-DiskLayoutExample.PNG)
 
 In the example above, we have 120 TB of Exchange database storage and 7.68 TB of MCDB storage that is roughly 6.4% the traditional database storage space. With this amount of MCBD storage, we're perfectly aligned within the guidance of 5-10%. Each of the 10 TB drives will hold four database copies and each MCDB drive would hold 12 MCDBs.
 

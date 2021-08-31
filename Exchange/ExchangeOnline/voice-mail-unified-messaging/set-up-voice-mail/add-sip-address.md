@@ -53,9 +53,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox for which you want to add a SIP address, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox for which you want to add a SIP address, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. On the **New email address** page, select **EUM** and, in the **Address/Extension** box, enter the new SIP address for the user.
 

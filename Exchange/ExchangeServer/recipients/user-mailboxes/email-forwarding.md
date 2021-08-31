@@ -30,7 +30,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you want to set up mail forwarding for, and then click or tap **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of user mailboxes, click or tap the mailbox that you want to set up mail forwarding for, and then click or tap **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -69,7 +69,7 @@ To make sure that you've successfully set up email forwarding, do one of the fol
 
 1. In the Exchange admin center, go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page, click or tap **Mailbox Features**.
 

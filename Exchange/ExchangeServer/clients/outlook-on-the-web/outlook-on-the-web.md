@@ -24,7 +24,7 @@ When you install Exchange Server, Outlook on the web is automatically available 
 
  In an Outlook 2010 or later installation that's connected to an Exchange mailbox, you can typically see the Outlook on the web URL at **File** \> **Info** \> **Account Information** in the **Account Settings** section.
 
-![The Account Information page in Outlook 2016](../../media/1329d53d-0627-4377-8085-9eb63dcc7f97.png)
+![The Account Information page in Outlook 2016.](../../media/1329d53d-0627-4377-8085-9eb63dcc7f97.png)
 
 Outlook on the web is provided by the Client Access (frontend) services on Mailbox servers. In Exchange Server, Client Access services are part of the Mailbox server, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. For more information, see [Client access protocol architecture](../../architecture/architecture.md#ClientAccessProtocol).
 

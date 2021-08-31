@@ -87,7 +87,7 @@ The following table contains the NDR codes (also called enhanced status codes) f
 
 Exchange NDRs are designed to be easy to read and understand by email users and administrators. There are a couple of different formats for NDRs. The newest style NDR contains a problem description in everyday language, along with steps to fix it. The following figure shows the format for this type of NDR.
 
-![Newest format for delivery status notification (DSN) in Exchange Online](../../media/291e82e8-c02b-4dca-a890-5a46eb9c0a5a.png)
+![Newest format for delivery status notification (DSN) in Exchange Online.](../../media/291e82e8-c02b-4dca-a890-5a46eb9c0a5a.png)
 
 Information provided in the newest style NDRs is designed to help the typical email user solve their problem immediately. When that isn't possible, the NDR provides details for administrators and also a link to more help on the web. The following fields appear in the newest Office 365 NDRs.
 
@@ -102,7 +102,7 @@ Information provided in the newest style NDRs is designed to help the typical em
 
 For NDRs that don't have the latest format, the information might be separated into two sections: User information, and Diagnostic information for administrators. The following figure shows the format for one type of Exchange Online NDR.
 
-![NDR showing User and Administrator Diagnostic Info](../../media/e4826e34-3111-48f0-8856-1d28129015fb.png)
+![NDR showing User and Administrator Diagnostic Info.](../../media/e4826e34-3111-48f0-8856-1d28129015fb.png)
 
 ### User information
 
@@ -165,8 +165,8 @@ Although the **Original message headers** are omitted from this example due to t
 
 ## Still need help with NDRs or other status notifications?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)

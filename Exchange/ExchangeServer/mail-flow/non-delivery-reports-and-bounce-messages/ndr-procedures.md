@@ -264,15 +264,15 @@ For more information about the EAC, see [Exchange admin center in Exchange Serve
 
 1. In the EAC, go to **Mail flow** \> **Receive connectors**.
 
-2. Click **More options** (![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)) and select **Organization transport settings**.
+2. Click **More options** (![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png)) and select **Organization transport settings**.
 
 3. In the **Organization transport settings** window that opens, click the **Delivery** tab. In the **DSN codes** section, do one or more of these steps:
 
-   - To add entries, type the enhanced status code that you want to monitor (4. _\<y.z\>_ or 5. _\<y.z\>_), and then click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)). Repeat this step as many times as you need to.
+   - To add entries, type the enhanced status code that you want to monitor (4. _\<y.z\>_ or 5. _\<y.z\>_), and then click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)). Repeat this step as many times as you need to.
 
-   - To modify an existing entry, select it click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)), and then modify it inline.
+   - To modify an existing entry, select it click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)), and then modify it inline.
 
-   - To remove an existing entry, select it and then click **Remove** (![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)).
+   - To remove an existing entry, select it and then click **Remove** (![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)).
 
    When you're finished, click **Save**.
 

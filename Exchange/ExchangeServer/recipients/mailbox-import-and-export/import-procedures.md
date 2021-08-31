@@ -54,7 +54,7 @@ This topic shows you how to:
 
 ### Use the EAC to create a mailbox import request
 
-1. In the EAC, go to **Recipients** \> **Mailboxes** \> click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import PST**.
+1. In the EAC, go to **Recipients** \> **Mailboxes** \> click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import PST**.
 
     ![In the EAC, select Recipients, Mailboxes, and then select More Options.](../../media/59554fa9-92e2-46c0-a171-f57927eac3c7.png)
 
@@ -130,7 +130,7 @@ For detailed syntax and parameter information, see [New-MailboxImportRequest](/p
 
 To verify that you've successfully created a mailbox import request, do any of these steps:
 
-- In the EAC, click the notification viewer ![Notifications icon](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
+- In the EAC, click the notification viewer ![Notifications icon.](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
 
 - If you created the mailbox import request in the EAC, and selected the option to send notification email messages, check the notification messages. The sender is Microsoft Exchange. The first message has the subject `Your Import PST request has been received`. If the import request completed successfully, you'll receive another message with the subject `Import PST has finished`.
 

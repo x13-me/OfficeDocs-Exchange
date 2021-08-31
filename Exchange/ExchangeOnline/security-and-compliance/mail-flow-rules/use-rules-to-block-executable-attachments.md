@@ -49,7 +49,7 @@ For example, following a malware outbreak, a company could apply this rule with 
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add** ![Add icon.](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, configure the following settings:
 
@@ -95,7 +95,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 To verify that you've successfully create a mail flow rule to block messages that contain executable attachments, do any of the following steps:
 
-- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
+- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
 
 - In PowerShell, run the following command to verify the settings:
 

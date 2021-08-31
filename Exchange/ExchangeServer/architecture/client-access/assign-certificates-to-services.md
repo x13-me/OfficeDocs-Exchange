@@ -58,7 +58,7 @@ The available Exchange services are described in the following table.
 
 2. In the **Select server** list, select the Exchange server that holds the certificate.
 
-3. Select the certificate that you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The certificate needs to have the **Status** value **Valid**.
+3. Select the certificate that you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). The certificate needs to have the **Status** value **Valid**.
 
 4. On the **Services** tab, in the **Specify the services you want to assign this certificate to** section, select the services. Remember, you can add services, but you can't remove them. When you're finished, click **Save**.
 

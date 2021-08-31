@@ -35,7 +35,7 @@ For additional tasks related to call statistics see [UM reports procedures](um-r
 
 ## Use the EAC to get audio quality statistics for your organization
 
-1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Choose the call statistics to include in the report. The report automatically updates as you select any of the following options.
 

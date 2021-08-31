@@ -74,7 +74,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 2. In the list of contacts, select the mail contact that you want to modify.
 
-3. In the details pane, click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's contact details.
+3. In the details pane, click ![edit-icon.](../media/edit-tooltip.png) to view or edit the user's contact details.
 
    When you're finished, click **Save**.
 
@@ -121,7 +121,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 1. In the Classic EAC, go to **Recipients** \> **Contacts**
 
-2. Click **New** ![New icon](../media/ITPro_EAC_AddIcon.png) and then select **Mail contact**.
+2. Click **New** ![New icon.](../media/ITPro_EAC_AddIcon.png) and then select **Mail contact**.
 
 3. In the **New mail contact** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
 
@@ -143,7 +143,7 @@ You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Ex
 
 1. In the Classic EAC, go to **Recipients** \> **Contacts**.
 
-2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit image](../media/ITPro_EAC_AddIcon.png).
+2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit image.](../media/ITPro_EAC_AddIcon.png).
 
 3. On the mail contact properties page that opens, click one of the following tabs to view or change properties.
 
@@ -246,7 +246,7 @@ When you bulk edit mail contacts in the EAC, you can change the following types 
 
 1. In the Classic EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail contact that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+2. Select the mail contact that you want to remove, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.gif).
 
 ## Use PowerShell to manage mail contacts
 
@@ -320,9 +320,9 @@ For detailed syntax and parameter information, see [Remove-MailContact](/powersh
 
 To verify that you've successfully created, modified, or removed mail contacts, do any of the following steps:
 
-- In the new EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **MailContact**. Select the mail contact from the list, and click ![edit-icon](../media/edit-tooltip.png) to view or edit the user's details.
+- In the new EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **MailContact**. Select the mail contact from the list, and click ![edit-icon.](../media/edit-tooltip.png) to view or edit the user's details.
 
-- In the Classic EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click **Edit** ![Edit tooltip](../media/ITPro_EAC_EditIcon.png) to view the properties.
+- In the Classic EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is listed (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click **Edit** ![Edit tooltip.](../media/ITPro_EAC_EditIcon.png) to view the properties.
 
 - In Exchange Online PowerShell, replace \<MailContactIdentity\> with the name, email address, or alias of the mail contact, and run the following command to verify that the mail contact is listed (or not listed).
 

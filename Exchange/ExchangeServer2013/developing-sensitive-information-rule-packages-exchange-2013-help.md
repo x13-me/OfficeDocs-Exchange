@@ -107,7 +107,7 @@ Entity rules contain optional patternsProximity attribute (default = 300) which 
 
 If any of the Pattern elements return "true," the Pattern is satisfied. The count for the Entity element equals the sum of all detected Pattern counts.
 
-![Mathematical formula for entity count](images/ITPro_MRM_.gif)
+![Mathematical formula for entity count.](images/ITPro_MRM_.gif)
 
 where k is the number of Pattern elements for the Entity.
 
@@ -146,11 +146,11 @@ The Entity Id element, represented in the previous XML by "..." should be a GUID
 
 Entity holds optional patternsProximity attribute value (integer, default = 300) used to find the Patterns. For each pattern, the attribute value defines the distance (in Unicode characters) from the IdMatch location for all other Matches specified for that Pattern. The proximity window is anchored by the IdMatch location, with the window extending to the left and right of the IdMatch.
 
-![Text pattern with matching elements called out](images/ITPro_MRM_DlpPatternProximityMatch.gif)
+![Text pattern with matching elements called out.](images/ITPro_MRM_DlpPatternProximityMatch.gif)
 
 The example below illustrates how the proximity window affects the matching algorithm where the SSN IdMatch element requires at least one of address, name, or date corroborating matches. Only SSN1 and SSN4 match because for SSN2 and SSN3, either no or only partial corroborating evidence is found within the proximity window.
 
-![Proximity rule match and non-match examples](images/ITPro_MRM_DlpProximityRuleConfidenceMatch.gif)
+![Proximity rule match and non-match examples.](images/ITPro_MRM_DlpProximityRuleConfidenceMatch.gif)
 
 The message body and each attachment are treated as independent items. This condition means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside within each.
 
@@ -158,7 +158,7 @@ The message body and each attachment are treated as independent items. This cond
 
 Entity element's confidence level is the combination of all the satisfied Pattern's confidence levels. They are combined using the following equation:
 
-![Mathematical formula for entity confidence level](images/ITPro_MRM_DlpEntityConfidenceFormula.gif)
+![Mathematical formula for entity confidence level.](images/ITPro_MRM_DlpEntityConfidenceFormula.gif)
 
 where k is the number of Pattern elements for the Entity and a Pattern that does not match returns a confidence level of 0.
 
@@ -221,13 +221,13 @@ Evidence elements have one or more of Match or Any child elements. If all child 
 
 The proximity window for Affinity is calculated differently than for Entity patterns. Affinity proximity follows a sliding window model. The affinity proximity algorithm attempts to find the maximum number of matching evidences in the given window. Evidences in the proximity window must have a confidence level greater than the threshold defined for the Affinity rule to be found.
 
-![Text in proximity of an affinity rule match](images/ITPro_MRM_DlpAffinityProximityMatch.gif)
+![Text in proximity of an affinity rule match.](images/ITPro_MRM_DlpAffinityProximityMatch.gif)
 
 #### Affinity confidence level
 
 Confidence level for the Affinity equals the combination of found Evidences within the proximity window for the Affinity rule. While similar to the confidence level of Entity rule, the key difference is the application of proximity window. Similar to the Entity rules, Affinity element's confidence level is the combination of all the satisfied Evidence confidence levels, but for Affinity rule it only represents the highest combination of Evidence elements found within the proximity window. The Evidence confidence levels are combined using the following equation:
 
-![Mathematical formula for affinity rule confidence](images/ITPro_MRM_DlpAffinityConfidenceFormula.gif)
+![Mathematical formula for affinity rule confidence.](images/ITPro_MRM_DlpAffinityConfidenceFormula.gif)
 
 where k is the number of Evidence elements for the Affinity matched within the proximity window.
 
@@ -241,7 +241,7 @@ CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Eviden
 
 = 85.6%
 
-![Affinity rule match example with high confidence](images/ITPro_MRM_DlpHighConfidenceAffinityRuleMatches.gif)
+![Affinity rule match example with high confidence.](images/ITPro_MRM_DlpHighConfidenceAffinityRuleMatches.gif)
 
 Using the same example rule definition, if only the first evidence matches because the second Evidence is outside of the proximity window, the highest Affinity confidence level is 60% based on the calculation below and the Affinity rule does not match since the threshold of 65 was not met.
 
@@ -253,13 +253,13 @@ CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Eviden
 
 = 60%
 
-![Affinity rule match example with low confidence](images/ITPro_MRM_DlpAffinityRuleConfidenceMatch.gif)
+![Affinity rule match example with low confidence.](images/ITPro_MRM_DlpAffinityRuleConfidenceMatch.gif)
 
 ### Tuning confidence levels
 
 One of the key aspects of the rule authoring process is the tuning of confidence levels for both Entity and Affinity rules. After creating the rule definitions, run the rule against the representative content and collect the accuracy data. Compare the returned results for each pattern or evidence against the expected results for the test documents.
 
-![Table with rule match evidence comparison](images/ITPro_MRM_DlpPatternEvidenceTuningTable.gif)
+![Table with rule match evidence comparison.](images/ITPro_MRM_DlpPatternEvidenceTuningTable.gif)
 
 If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (for example, 75%), the match expression is complete and it can be moved to the next step.
 

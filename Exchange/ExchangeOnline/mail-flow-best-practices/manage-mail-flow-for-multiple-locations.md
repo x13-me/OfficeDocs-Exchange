@@ -83,9 +83,9 @@ Most customers who need a hybrid mail flow setup should allow Microsoft 365 or O
 
      To create the connector, choose the first option in the connector creation wizard on the **How should Office 365 identify email for your email server** screen, as shown in the below two screenshots, for New EAC and Classic EAC, respectively.
   
-:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations":::
+:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations.":::
 
-![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png) 
+![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange.](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png) 
 
 This configuration enables Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more information, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
   
@@ -146,7 +146,7 @@ As an alternative to Scenario 2, you can point your domain's MX record to your o
 
 For this scenario, your organization's mail flow setup looks like the following diagram.
 
-![Diagram showing mail flow when your MX record points to your on-premises servers instead of Microsoft 365 or Office 365. Mail goes from the internet to your organization's servers and then to Microsoft 365 or Office 365. Mail goes from Microsoft 365 or Office 365 to your on-premises servers to internet](../media/500e199e-ad94-42e7-ac04-d4f46b59fee2.png)
+![Diagram showing mail flow when your MX record points to your on-premises servers instead of Microsoft 365 or Office 365. Mail goes from the internet to your organization's servers and then to Microsoft 365 or Office 365. Mail goes from Microsoft 365 or Office 365 to your on-premises servers to internet.](../media/500e199e-ad94-42e7-ac04-d4f46b59fee2.png)
 
 #### Best practices
 
@@ -216,9 +216,9 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
      To create the connector, choose the first option in the connector creation wizard on the **How should Microsoft 365 or Office 365 identify email for your email server** screen, as shown in the below two screenshots, for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations":::
+:::image type="content" source="../media/connector-to-manage-mfml.png" alt-text="The screen on which a connector is created to manage mail flow in multiple locations.":::
 
-![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
+![Screenshot showing the New Connector screen of the Hybrid Connection Wizard for Exchange.](../media/0b3ced5f-3f0e-4cc3-aff4-f95e651189e0.png)
 
 This option allows Microsoft 365 or Office 365 to identify your email server by using the certificate. In this scenario, the certificate CN or Subject Alternative Name (SAN) contains the domain that belongs to your organization. For more information, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)). For connector configuration details see, [Part 2: Configure mail to flow from your email server to Microsoft 365 or Office 365](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md#part-2-configure-mail-to-flow-from-your-email-server-to-microsoft-365-or-office-365).
 

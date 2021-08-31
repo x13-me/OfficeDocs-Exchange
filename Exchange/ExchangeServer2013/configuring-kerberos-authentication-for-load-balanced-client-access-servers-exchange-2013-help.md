@@ -103,7 +103,7 @@ In each of these scenarios, assume that the load-balanced, fully-qualified domai
 
 If you have a single Active Directory site, your environment may resemble the one in the following figure:
 
-![CAS Array with Single AD and Kerberos auth](images/Ff808312.97a1a926-f4ac-4498-bc6b-32e7fb1b70f1(EXCHG.150).jpg "CAS Array with Single AD and Kerberos auth")
+![CAS Array with Single AD and Kerberos auth.](images/Ff808312.97a1a926-f4ac-4498-bc6b-32e7fb1b70f1(EXCHG.150).jpg "CAS Array with Single AD and Kerberos auth")
 
 Based on the FQDNs that are used by the internal Outlook clients in the preceding figure, you need to associate the following SPNs with the ASA credential:
 
@@ -115,7 +115,7 @@ Based on the FQDNs that are used by the internal Outlook clients in the precedin
 
 If you have multiple Active Directory sites, your environment may resemble the one in the following figure:
 
-![CAS array with multiple AD sites and Kerberos auth](images/Ff808312.95b52bd8-7074-4055-8bd2-e6bf1f112b42(EXCHG.150).jpg "CAS array with multiple AD sites and Kerberos auth")
+![CAS array with multiple AD sites and Kerberos auth.](images/Ff808312.95b52bd8-7074-4055-8bd2-e6bf1f112b42(EXCHG.150).jpg "CAS array with multiple AD sites and Kerberos auth")
 
 Based on the FQDNs that are used by the Outlook clients in the preceding figure, you would need to associate the following SPNs with the ASA credential that is used by the Client Access servers in ADSite 1:
 

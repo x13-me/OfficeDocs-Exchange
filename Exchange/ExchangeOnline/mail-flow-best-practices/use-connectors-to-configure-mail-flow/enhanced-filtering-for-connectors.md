@@ -25,7 +25,7 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 Mail routing in complex scenarios looks like this:
 
-![Mail flow diagram for complex routing scenarios](../../media/enhanced-filtering-for-connectors-before.png)
+![Mail flow diagram for complex routing scenarios.](../../media/enhanced-filtering-for-connectors-before.png)
 
 As you can see, the message adopts the source IP of the service, appliance, or on-premises Exchange organization that sits in front of Microsoft 365. The message arrives in Microsoft 365 with a different source IP address. This behavior isn't a limitation of Microsoft 365; it's simply how SMTP works.
 
@@ -33,7 +33,7 @@ In these scenarios, you can still get the most out of [Exchange Online Protectio
 
 After you enable Enhanced Filtering for Connectors, mail routing in complex routing scenarios looks like this:
 
-![Mail flow diagram for complex routing scenarios after Enhance Filtering for Connectors is enabled](../../media/enhanced-filtering-for-connectors-after.png)
+![Mail flow diagram for complex routing scenarios after Enhance Filtering for Connectors is enabled.](../../media/enhanced-filtering-for-connectors-after.png)
 
 As you can see, Enhanced Filtering for connectors allows IP address and sender information to be preserved, which has the following benefits:
 

@@ -41,9 +41,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to view or configure UM auto attendant settings
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to view or configure, and then on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to view or configure, and then on the toolbar, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page, click **General** to view display-only information about the UM auto attendant and to perform management tasks on the UM auto attendant, as follows:
 
@@ -57,7 +57,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      The number of digits in the extension numbers or access numbers you provide must match the number of digits for an extension number configured on the UM dial plan associated with the UM auto attendant. You can also add a Session Initiation Protocol (SIP) address to this box. A SIP address is used by some IP Private Branch eXchanges (PBXs), SIP-enabled PBXs, and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server.
 
-     You can create a new auto attendant without listing an extension number or access number. To add an extension number, type the number in this box, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). You can associate more than one number with an auto attendant. You can also edit or remove an existing access number. To edit an existing number, select it and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove an existing extension number from the list, select it and click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+     You can create a new auto attendant without listing an extension number or access number. To add an extension number, type the number in this box, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). You can associate more than one number with an auto attendant. You can also edit or remove an existing access number. To edit an existing number, select it and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove an existing extension number from the list, select it and click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
    - **Set the auto attendant to respond to voice commands**: Select this check box to enable callers to respond verbally to auto attendant prompts to navigate the menu system. By default, when an auto attendant is created, it isn't speech-enabled.
 
@@ -105,7 +105,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
    - **Holiday schedule**: Use this to define days, from 00:00 through 23:59 (12:00 A.M. through 11:59 P.M.), on which your organization will be closed for a holiday. Callers who reach the auto attendant during the times that you specify on the **New holiday** page hear a custom holiday greeting audio file that you define. When you configure the holiday schedule, you must define the holiday name, the audio file for the recorded holiday greeting, and the **Start date** and **End date**. The greetings must already have been recorded as .wav or .wma files.
 
-6. Use **Menu navigation** to specify the menu options that are offered to callers during business and non-business hours. If you want to enable menu navigation, you must do it separately for business and non-business hours. For example, if you want to enable business hours navigation, you must add a menu prompt custom audio recording, select the **Enable business hours menu navigation** check box, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then set the options on the **New menu navigation entry** page.
+6. Use **Menu navigation** to specify the menu options that are offered to callers during business and non-business hours. If you want to enable menu navigation, you must do it separately for business and non-business hours. For example, if you want to enable business hours navigation, you must add a menu prompt custom audio recording, select the **Enable business hours menu navigation** check box, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then set the options on the **New menu navigation entry** page.
 
    - **Business hours menu navigation**: This is the list of options that callers hear during the business hours that are defined on the **Business hours** page. For example, "For technical support, press or say 1. For corporate offices and administration, press or say 2. For sales, press or say 3."
 
@@ -115,7 +115,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      2. **Enable business hours menu navigation**: Select this check box to enable options for menu navigation that will be used during business hours. When you enable business hours menu navigation, you can add new menu navigation entries for business hours.
 
-     3. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
+     3. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 
    - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
 
@@ -151,7 +151,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      2. **Enable non-business hours menu navigation**: Select this check box to enable options for menu navigation that will be used during non-business hours. When you enable non-business hours menu navigation, you can add new menu navigation entries for non-business hours.
 
-     3. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
+     3. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 
    - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
 

@@ -335,13 +335,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the EAC to assign an offline address book to a mailbox database
 
-1. Open the EAC, and go to **Servers** \> **Databases**. Select the database from the list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. Open the EAC, and go to **Servers** \> **Databases**. Select the database from the list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
-   ![In the EAC, go to Servers \> Databases, select the database, and click Edit](../../media/ddc3e195-76da-4474-b153-f5c7ef1f5fd4.png)
+   ![In the EAC, go to Servers \> Databases, select the database, and click Edit.](../../media/ddc3e195-76da-4474-b153-f5c7ef1f5fd4.png)
 
 2. The **Mailbox Database** window opens. Click the **Client settings** tab, and then click **Browse** next to **Offline address book**.
 
-   ![In the properties of the database, select Client Settings, and then click Browse](../../media/f04b40db-44a4-4dd6-a411-583cda128fee.png)
+   ![In the properties of the database, select Client Settings, and then click Browse.](../../media/f04b40db-44a4-4dd6-a411-583cda128fee.png)
 
 3. In the **Select Offline Address Book** window that opens, select the OAB from the list, and click **OK**.
 
@@ -365,7 +365,7 @@ Set-MailboxDatabase -Identity "MBX DB02" -OfflineAddressBook "Contoso Executives
 
 To verify that you've successfully assigned an OAB to a mailbox database, use either of the following procedures:
 
-- In the EAC, go to **Servers** \> **Databases**. Select the database from the list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). In the **Mailbox database** window opens, click the **Client settings** tab, and verify that the OAB is listed in **Offline address book**.
+- In the EAC, go to **Servers** \> **Databases**. Select the database from the list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). In the **Mailbox database** window opens, click the **Client settings** tab, and verify that the OAB is listed in **Offline address book**.
 
 - In the Exchange Management Shell, run the following command:
 

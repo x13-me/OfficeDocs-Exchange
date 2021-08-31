@@ -36,7 +36,7 @@ By default, POP3 client connectivity isn't enabled in Exchange. To enable POP3 c
 
    To allow **external** POP3 clients to connect to mailboxes, you need to configure the POP3 server FQDN, TCP port, and encryption method for external connections. This step causes the external POP3 settings to be displayed in Outlook on the web (formerly known as Outlook Web App) at **Settings** \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**.
 
-   ![POP settings in Outlook on the web](../../media/8c89500e-90ad-4fb5-9334-7013de6607a2.png)
+   ![POP settings in Outlook on the web.](../../media/8c89500e-90ad-4fb5-9334-7013de6607a2.png)
 
 3. Restart the POP3 services to save the changes.
 
@@ -204,11 +204,11 @@ To verify that you have enabled and configured POP3 on the Exchange server, perf
 1. Open a mailbox in Outlook on the web, and then click **Settings** \> **Options**.
 
 
-    ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
+    ![Options menu location in Outlook on the web.](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
 
 2. Click **Mail** \> **Accounts** \> **POP and IMAP** and verify the correct POP3 settings are displayed.
 
-    ![POP settings in Outlook on the web](../../media/8c89500e-90ad-4fb5-9334-7013de6607a2.png)
+    ![POP settings in Outlook on the web.](../../media/8c89500e-90ad-4fb5-9334-7013de6607a2.png)
 
     **Note**: If you configured 995/SSL **and** 110/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-PopSettings** cmdlet, only the 995/SSL value is displayed in Outlook on the web. Also, if the external POP3 settings that you configured don't appear as expected in Outlook on the web after you restart the POP3 services, run the commands `net stop w3svc /y` and `net start w3svc` to restart Internet Information Services (IIS).
 
