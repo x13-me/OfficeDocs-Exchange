@@ -37,7 +37,7 @@ To learn more about organization relationships, see [Organization relationships 
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 4. In the warning that appears, click **yes**.
 

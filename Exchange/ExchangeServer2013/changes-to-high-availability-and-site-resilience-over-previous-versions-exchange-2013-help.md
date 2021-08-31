@@ -105,7 +105,7 @@ An example of a configuration that uses multiple databases per volume is illustr
 
 **Configuration that uses multiple databases per volume**
 
-![Multiple databases per volume](images/Dn789066.c5e7d6c8-3e77-4f72-a873-5e9aaded9aa3(EXCHG.150).gif "Multiple databases per volume")
+![Multiple databases per volume.](images/Dn789066.c5e7d6c8-3e77-4f72-a873-5e9aaded9aa3(EXCHG.150).gif "Multiple databases per volume")
 
 The above configuration provides a symmetrical design. All four servers have the same four databases all hosted on a single disk per server. The key is that the number of copies of each database that you have should be equal to the number of database copies per disk. In the above example, there are four copies of each database: one active copy, two passive copies, and one lagged copy. Because there are four copies of each database, the proper configuration is one that has four copies per volume. In addition, activation preference is configured so that it's balanced across the DAG and across each server. For example, the active copy will have an activation preference value of 1, the first passive copy will have an activation preference value of 2, the second passive copy will have an activation preference value of 3, and the lagged copy will have an activation preference value of 4.
 

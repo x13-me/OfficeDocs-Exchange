@@ -84,7 +84,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
  **Solution**: Since all of the users will be managed in Microsoft 365 or Office 365, and there are no additional directory synchronization requirements, you can safely disable directory synchronization and remove Exchange from the on-premises environment.
 
-![Remove Exchange from the on-premises environment](media/f9c2a2cb-4c16-4ca3-8244-b89c1cdf0744.jpg)
+![Remove Exchange from the on-premises environment.](media/f9c2a2cb-4c16-4ca3-8244-b89c1cdf0744.jpg)
 
 ### To disable directory synchronization and uninstall Exchange hybrid
 
@@ -122,7 +122,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
-       ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
+       ![Hybrid Configuration Wizard creates connectors with unique namespace.](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
 
 5. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
@@ -134,7 +134,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard.](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
 6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, you can skip these steps sbecause only a small number of customers have OAuth configured.
 
@@ -172,11 +172,11 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 The graphic below describes the desired end state:
 
-![Decommission Exchange servers with some remaining](media/d7734579-6999-45b2-9a0f-a23f18353a49.jpg)
+![Decommission Exchange servers with some remaining.](media/d7734579-6999-45b2-9a0f-a23f18353a49.jpg)
 
 The graphic below describes the actual end state:
 
-![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
+![State before decommissioning Exchange servers.](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
 > [!TIP]
 > If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently:
@@ -257,7 +257,7 @@ The graphic below describes the actual end state:
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
-      ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
+      ![Hybrid Configuration Wizard creates connectors with unique namespace.](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
 
 8. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
@@ -269,7 +269,7 @@ The graphic below describes the actual end state:
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard.](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
 > [!NOTE]
 > It's recommended that you leave the Exchange Hybrid Deployment feature enabled in Azure AD Connect.

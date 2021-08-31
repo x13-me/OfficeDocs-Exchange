@@ -65,7 +65,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 4. In **Client ID**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
 
-   ![Add new API client](../media/add-a-new-client-id-im7.png)
+   ![Add new API client.](../media/add-a-new-client-id-im7.png)
 
 5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example:
 

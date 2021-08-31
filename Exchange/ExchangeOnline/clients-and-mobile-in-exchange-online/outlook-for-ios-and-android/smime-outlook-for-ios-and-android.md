@@ -191,7 +191,7 @@ In the message view, users can view messages that are S/MIME signed or encrypted
 
 Users can install a sender's public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user's device, specifically in the Microsoft publisher [keychain in iOS](https://support.apple.com/guide/security/welcome/web) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
 
-![Screenshots of Outlook for Android public key installation](../../media/sensitive-android-key-install.png)
+![Screenshots of Outlook for Android public key installation.](../../media/sensitive-android-key-install.png)
 
 If there are certificate errors, Outlook for iOS and Android will warn the user. The user can tap the S/MIME status bar notification to view more information about the certificate error, such as in the following example.
 

@@ -19,11 +19,11 @@ It's suspicious when new user accounts in your organization suddenly start forwa
 
 The **New users fowarding email** insight in the Insights dashboard in the new Exchange admin center (new EAC) notifies you when new users accounts in your organization are forwarding messages to external domains.
 
-![New domains being forwarded email insight in the Insights dashboard](../../media/mfi-new-users-forwarding-email-insight.png)
+![New domains being forwarded email insight in the Insights dashboard.](../../media/mfi-new-users-forwarding-email-insight.png)
 
 When you click **View details**, a flyout appears where you can find more details about the forwarded messages, including a link to the [Auto forwarded messages report](../mail-flow-reports/mfr-auto-forwarded-messages-report.md) for more information.
 
-![Details flyout that appears after clicking View details in the New domains being forwarded email insight](../../media/mfi-new-users-forwarding-email-insight-details.png)
+![Details flyout that appears after clicking View details in the New domains being forwarded email insight.](../../media/mfi-new-users-forwarding-email-insight-details.png)
 
 If you suspect the accounts have been compromised, see [Responding to a compromised email account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 

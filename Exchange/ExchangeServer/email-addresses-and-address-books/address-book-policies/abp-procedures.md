@@ -208,17 +208,17 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
    - Scroll through the list of mailboxes.
 
-   - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
+   - Click **Search** ![Search icon.](../../media/ITPro_EAC_.png) and enter part of the user's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
+   - Click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the mailbox.
 
-    Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+    Once you've found the mailbox that you want to modify, select it, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page that opens, click **Mailbox features**.
 
 4. Click the drop-down arrow in **Address book policy**, and select the ADP that you want to apply.
 
-   ![Address book policy settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features](../../media/2b219961-4664-40b3-873c-5892f1fcf2b6.png)
+   ![Address book policy settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features.](../../media/2b219961-4664-40b3-873c-5892f1fcf2b6.png)
 
     When you're finished, click **Save**.
 
@@ -248,7 +248,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 2. In the list of mailboxes, find the mailboxes that you want to modify. For example:
 
-   1. Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search**.
+   1. Click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search**.
 
    2. In the **Advanced search** window that opens, select **Recipient types** and verify the default value **User mailbox**.
 
@@ -258,7 +258,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
    5. In the **Specify words or phrases** dialog that appears, enter the value that you want to search for, and then click **OK**.
 
-   6. Back on the **Advanced search** window, click **OK**. In the EAC at **Recipients** \> **Mailboxes**, click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find user mailboxes.
+   6. Back on the **Advanced search** window, click **OK**. In the EAC at **Recipients** \> **Mailboxes**, click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find user mailboxes.
 
 3. In the list of mailboxes, select multiple mailboxes of the same type (for example, **User**) from the list. For example:
 
@@ -270,7 +270,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 4. In the details pane, scroll down and click **More options**, scroll down to **Address Book Policy**, and then click **Update**.
 
-   ![Bulk select mailboxes in the EAC to assign an address book policy](../../media/6319f0ec-686d-48e2-9061-2337e30116d5.png)
+   ![Bulk select mailboxes in the EAC to assign an address book policy.](../../media/6319f0ec-686d-48e2-9061-2337e30116d5.png)
 
 5. In the **Bulk assign address book policy** window that opens, select the ABP by clicking the drop-down arrow in **Select Address Book Policy**, and then click **Save**.
 
@@ -302,9 +302,9 @@ For detailed syntax and parameter information, see [Get-Mailbox](/powershell/mod
 
 To verify that you've successfully assigned an ABP to a mailbox, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** and verify the **Address Book Policy** value.
+- In the EAC, go to **Recipients** \> **Mailboxes** \> select the mailbox \> click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** and verify the **Address Book Policy** value.
 
-  ![Address book policy settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features](../../media/2b219961-4664-40b3-873c-5892f1fcf2b6.png)
+  ![Address book policy settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features.](../../media/2b219961-4664-40b3-873c-5892f1fcf2b6.png)
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 

@@ -81,7 +81,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 4. In **Client ID**, type the ClientId for the service account you created in the [Create a Google Service Account](#create-a-google-service-account) section above.
 
-   ![Add new API client](../media/add-a-new-client-id-im7.png)
+   ![Add new API client.](../media/add-a-new-client-id-im7.png)
 
 5. In **OAuth Scopes**, add the required scopes in comma-separated format, with no spaces in between. For example: </br></br> `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing,https://www.googleapis.com/auth/contacts`
 
@@ -96,11 +96,11 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. In the Exchange Admin center, click **recipients**, and then click **migration**.
 
-2. Click "New"  ![New](../media/ITPro_EAC_AddIcon.gif) to create a new migration batch, and then click **Migrate to Exchange Online**.
+2. Click "New"  ![New.](../media/ITPro_EAC_AddIcon.gif) to create a new migration batch, and then click **Migrate to Exchange Online**.
 
 3. In the New Migration Batch window, select **G Suite (Gmail) migration**, and then click **Next**.
 
-   ![Choose Gsuite](../media/gsuite-mig-13-eac-choose-gsuite.png)
+   ![Choose Gsuite.](../media/gsuite-mig-13-eac-choose-gsuite.png)
 
 4. Create a CSV file containing the set of all of the users you want to migrate. You will need its filename below. The allowed headers are:
 
@@ -116,7 +116,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 5. Under **Select the users**, click **Choose File** and navigate to the CSV file of all the users you are migrating in this batch. If your CSV file contains more columns besides the two mentioned above, click to select **Allow unknown columns in the CSV file**.
 
-   ![Csv file](../media/gsuite-mig-14-eac-csv.png)
+   ![Csv file.](../media/gsuite-mig-14-eac-csv.png)
 
 6. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
@@ -124,14 +124,14 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 8. Under **Specify the service account credentials using the JSON key file**, click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
-   ![user email address](../media/gsuite-mig-15-eac-user.png)
+   ![user email address.](../media/gsuite-mig-15-eac-user.png)
 
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
 9. In the fields under **Move configuration**, name your migration batch, and enter the target delivery domain, which is the [domain you created](googleworkspace-migration-prerequisites.md#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365) for routing mail to the Microsoft 365 or Office 365 target organization from the Google Workspace source organization. Optionally, you can also specify any folders that should be excluded from the migration. When done, click **Next**.
 
-   ![batch name](../media/gsuite-mig-16-eac-batch.png)
+   ![batch name.](../media/gsuite-mig-16-eac-batch.png)
 
    > [!NOTE]
    > The target delivery domain you will want to use will not automatically show up in the dropdown - instead you should click within the text box and type it in. The target delivery domain must be different from the primary domain of the users in Google Workspace.

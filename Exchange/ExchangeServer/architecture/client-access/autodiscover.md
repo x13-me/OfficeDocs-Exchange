@@ -39,7 +39,7 @@ Exchange stores in Active Directory the configuration of Exchange servers in the
 
 Exchange automatically creates at installation the virtual directory `autodiscover` in IIS, the frontend Client Access services web site that clients connect to. This allows Outlook to discover the Exchange mailbox settings so that users don't have to deal with manually configuring advanced settings.
 
-![Autodiscover functional process](../../media/AutodiscoverProcess.png)
+![Autodiscover functional process.](../../media/AutodiscoverProcess.png)
 
 The SCP object is also created in Active Directory at the same time as the Autodiscover service virtual directory. The SCP stores and provides authoritative URLs of the Autodiscover service for domain-joined computers.
 

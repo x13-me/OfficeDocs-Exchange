@@ -59,7 +59,7 @@ As illustrated in the following drawing, managed availability includes three mai
 
  **Managed Availability Components**
 
-![The components of Managed Availability in Exchange Server](../../media/ITPro_Mailbox_MAArchitecture.png)
+![The components of Managed Availability in Exchange Server.](../../media/ITPro_Mailbox_MAArchitecture.png)
 
  **Probes**
 

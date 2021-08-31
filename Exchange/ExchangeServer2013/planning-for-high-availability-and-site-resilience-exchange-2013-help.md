@@ -101,7 +101,7 @@ The following figure illustrates a DAG where all nodes in the DAG have the MAPI 
 
 **DAG with MAPI network on same subnet**
 
-![DAG on single subnet](images/Dd638104.bcb7ef68-6d18-4516-a736-b936991c82cb(EXCHG.150).gif "DAG on single subnet")
+![DAG on single subnet.](images/Dd638104.bcb7ef68-6d18-4516-a736-b936991c82cb(EXCHG.150).gif "DAG on single subnet")
 
 In this example, the MAPI network in each DAG member is on the 172.19.18.*x* subnet. As a result, the DAG requires a single IP address on that subnet.
 
@@ -109,7 +109,7 @@ The next figure illustrates a DAG that has a MAPI network that extends across tw
 
 **DAG with MAPI network on multiple subnets**
 
-![DAG extended across multiple subnets](images/Dd638104.ffb57c64-3cb1-435c-8148-1b7154d1575c(EXCHG.150).gif "DAG extended across multiple subnets")
+![DAG extended across multiple subnets.](images/Dd638104.ffb57c64-3cb1-435c-8148-1b7154d1575c(EXCHG.150).gif "DAG extended across multiple subnets")
 
 In this example, the MAPI network in each DAG member is on a separate subnet. As a result, the DAG requires two IP addresses, one for each subnet on the MAPI network.
 

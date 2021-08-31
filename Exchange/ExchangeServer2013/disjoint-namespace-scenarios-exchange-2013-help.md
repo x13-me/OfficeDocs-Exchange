@@ -73,7 +73,7 @@ In this scenario, the NetBIOS domain name of the domain controller isn't the sam
 
 **NetBIOS domain name doesn't match DNS domain name**
 
-![NetBIOS domain name does not match DNS domain name](images/Bb676377.1ee18cb6-0296-4875-b572-0ddf33f65f7c(EXCHG.150).gif "NetBIOS domain name does not match DNS domain name")
+![NetBIOS domain name does not match DNS domain name.](images/Bb676377.1ee18cb6-0296-4875-b572-0ddf33f65f7c(EXCHG.150).gif "NetBIOS domain name does not match DNS domain name")
 
 ## Allow Exchange 2013 servers to access domain controllers that are disjoint
 

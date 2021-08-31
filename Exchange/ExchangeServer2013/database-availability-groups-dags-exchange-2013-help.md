@@ -110,7 +110,7 @@ To illustrate how a DAG can provide high availability for your mailbox databases
 
 **DAG with five members**
 
-![Database Availability Group (DAG)](images/Dd979799.21fcbf7b-cb10-49c0-8e32-bdf3c03f825d(EXCHG.150).gif "Database Availability Group (DAG)")
+![Database Availability Group (DAG).](images/Dd979799.21fcbf7b-cb10-49c0-8e32-bdf3c03f825d(EXCHG.150).gif "Database Availability Group (DAG)")
 
 In the preceding figure, the green databases are active mailbox database copies and the blue databases are passive mailbox database copies. In this example, the database copies aren't mirrored across each server, but rather spread across multiple servers. This ensures that no two servers in the DAG have the same set of database copies, providing the DAG with greater resilience to failures, including failures that occur while other components are unavailable as a result of regular maintenance.
 
@@ -120,25 +120,25 @@ Initially, all databases and servers are healthy. You need to install some opera
 
 **DAG with a server offline for maintenance**
 
-![Database Availability Group (DAG) with a Server Offline](images/Dd979799.f48f0e77-80e1-4f14-8c36-112393895bdc(EXCHG.150).gif "Database Availability Group  (DAG) with a Server Offline")
+![Database Availability Group (DAG) with a Server Offline.](images/Dd979799.f48f0e77-80e1-4f14-8c36-112393895bdc(EXCHG.150).gif "Database Availability Group  (DAG) with a Server Offline")
 
 While you perform maintenance on EX2, EX3 experiences a catastrophic hardware failure and goes offline. Prior to going offline, EX3 hosted the active copy of DB2. To recover from the failure, the system automatically activates the copy of DB2 that's hosted on EX1 within 30 seconds. This is illustrated in the following figure.
 
 **DAG with a server offline for maintenance and a failed server**
 
-![DAG with a server offline and a failed server](images/Dd979799.9bbfd9e7-3881-4957-ae8d-32318cbc208b(EXCHG.150).gif "DAG with a server offline and a failed server")
+![DAG with a server offline and a failed server.](images/Dd979799.9bbfd9e7-3881-4957-ae8d-32318cbc208b(EXCHG.150).gif "DAG with a server offline and a failed server")
 
 After the scheduled maintenance is completed for EX2, you bring the server online and take it out of maintenance mode. As soon as EX2 is available, the other members of the DAG are notified, and the copies of DB1, DB4, and DB5 hosted on EX2 are automatically synchronized with the active copy of each database. This is illustrated in the following figure.
 
 **DAG with a restored server synchronizing its database copies**
 
-![DAG with restored server resynchronizing databases](images/Dd979799.58601531-e078-41d3-9287-e8e470ef7f41(EXCHG.150).gif "DAG with restored server resynchronizing databases")
+![DAG with restored server resynchronizing databases.](images/Dd979799.58601531-e078-41d3-9287-e8e470ef7f41(EXCHG.150).gif "DAG with restored server resynchronizing databases")
 
 After the failed hardware component in EX3 is replaced with a new component, EX3 is brought online. After EX3 is available, the other members of the DAG are notified, and the copies of DB2, DB3, and DB4 hosted on EX3 are automatically synchronized with the active copy of each database. This is illustrated in the following figure.
 
 **DAG with a repaired server synchronizing its database copies**
 
-![DAG with Member Resynchronizing Database Copies](images/Dd979799.56259671-e840-4cf0-9ea2-3657dc36c035(EXCHG.150).gif "DAG with Member Resynchronizing Database Copies")
+![DAG with Member Resynchronizing Database Copies.](images/Dd979799.56259671-e840-4cf0-9ea2-3657dc36c035(EXCHG.150).gif "DAG with Member Resynchronizing Database Copies")
 
 ## Using a database availability group (DAG) for site resilience
 
@@ -146,7 +146,7 @@ In addition to providing high availability within a datacenter, a DAG can also b
 
 **DAG extended across two Active Directory sites**
 
-![DAG extended across two Active Directory sites](images/Dd979799.28e96e9d-d7d6-451a-b7b8-c06122c81dc9(EXCHG.150).gif "DAG extended across two Active Directory sites")
+![DAG extended across two Active Directory sites.](images/Dd979799.28e96e9d-d7d6-451a-b7b8-c06122c81dc9(EXCHG.150).gif "DAG extended across two Active Directory sites")
 
 In this example, a passive copy of each active database in the Redmond datacenter is configured on EX6 in the Dublin datacenter. However, there are many other examples of DAG configurations that provide site resilience. For example:
 

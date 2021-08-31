@@ -34,7 +34,7 @@ After you create an In-Place eDiscovery search, you can modify it to change the 
 
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2. In the list view, select the In-Place eDiscovery search you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the In-Place eDiscovery search you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. In **In-Place eDiscovery & Hold**, you can modify the following settings:
 

@@ -41,9 +41,9 @@ For additional tasks related to UM hunt groups, see [UM hunt group procedures](u
 
 ## Use the EAC to delete a UM hunt group
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, click the UM dial plan you want to change, and on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, click the UM dial plan you want to change, and on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, select the hunt group you want to delete, and on the toolbar, click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, select the hunt group you want to delete, and on the toolbar, click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 3. On the **Warning** page, click **Yes**.
 

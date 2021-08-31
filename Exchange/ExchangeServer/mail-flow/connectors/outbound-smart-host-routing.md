@@ -37,7 +37,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
 
 ## Use the EAC to create a Send connector that uses smart host routing
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
 
 2. On the first page, enter the following information:
 
@@ -47,7 +47,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
 
    When you're finished, click **Next**.
 
-3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the smart host by using one of the following values:
+3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the smart host by using one of the following values:
 
    - **IP address**: For example, 192.168.3.2.
 
@@ -69,7 +69,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
 
    When you're finished, click **Next**.
 
-6. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
+6. On the next page, in the **Address space** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
 
    - **Type**: Verify SMTP is entered.
 
@@ -87,7 +87,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
 
    When you're finished, click **Next**.
 
-8. On the next page, in the **Source server** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outbound mail to the smart host. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the smart host. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
+8. On the next page, in the **Source server** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outbound mail to the smart host. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the smart host. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
 
 After you create the Send connector, it appears in the Send connector list.
 

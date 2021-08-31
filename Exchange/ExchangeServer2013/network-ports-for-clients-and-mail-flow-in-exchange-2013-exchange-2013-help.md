@@ -37,7 +37,7 @@ The network ports that are required for email clients to access mailboxes and ot
 
 - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
-![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png)
+![Network ports required for clients and services.](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png)
 
 <table>
 <colgroup>
@@ -122,7 +122,7 @@ How mail is delivered to and from your Exchange organization depends on your Exc
 
 The network ports that are required for mail flow in an Exchange organization that has only Client Access servers and Mailbox servers are described in the following diagram and table. Although the diagram shows separate Mailbox and Client Access servers, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
-![Network ports required for mail flow (no Edge Transport servers)](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
+![Network ports required for mail flow (no Edge Transport servers).](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
 
 <table>
 <colgroup>
@@ -187,7 +187,7 @@ For more information, see [Mail flow](mail-flow-exchange-2013-help.md).
 
 The network ports that are required for mail flow in Exchange organizations that have Edge Transport servers are described in the following diagram and table. Unless otherwise noted, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
-![Network ports required for mail flow with Edge Transport servers](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
+![Network ports required for mail flow with Edge Transport servers.](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
 
 <table>
 <colgroup>
