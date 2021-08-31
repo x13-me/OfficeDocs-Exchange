@@ -21,7 +21,7 @@ manager: serdars
 Edge Subscriptions are used to populate the Active Directory Lightweight Directory Services (AD LDS) instance on the Edge Transport server with Active Directory data. Although creating an Edge Subscription is optional, subscribing an Edge Transport server to the Exchange organization provides a simpler management experience and enhances antispam features. You need to create an Edge Subscription if you plan to use recipient lookup or safelist aggregation, or if you plan to help secure SMTP communications with partner domains by using Mutual Transport Layer Security (MTLS).
 
 > [!NOTE]
-> The Edge Subscription is mandatory if Edge Transport should handle hybrid mail flow. Organization headers are only promoted between Edge Transport and Mailbox Servers through the Direct Trust Authentication (aka Mutual TLS) and Edge Subscription is required to achieve this authentication method.
+> The Edge Subscription is mandatory if Edge Transport should handle hybrid mail flow. Organization headers are only promoted between Edge Transport and Mailbox servers through the Direct Trust Authentication (aka Mutual TLS) and Edge Subscription is required to achieve this authentication method.
 
 ## Edge Subscription process
 
