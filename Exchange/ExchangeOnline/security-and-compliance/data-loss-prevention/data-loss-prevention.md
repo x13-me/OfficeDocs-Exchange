@@ -20,6 +20,9 @@ manager: serdars
 
 # Data loss prevention
 
+> [!NOTE]
+> Legacy Data loss prevention in Exchange Admin Center is going to be deprecated soon. It is recommended to create Data Loss Prevention policies in the Microsoft 365 Admin center. [Learn more about DLP in the M365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp)
+
 Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 
 Data loss prevention (DLP) is an important issue for enterprise message systems because of the extensive use of email for business critical communication that includes sensitive data. In order to enforce compliance requirements for such data, and manage its use in email, without hindering the productivity of workers, DLP features make managing sensitive data easier than ever before. For a conceptual overview of DLP, watch the following video.
