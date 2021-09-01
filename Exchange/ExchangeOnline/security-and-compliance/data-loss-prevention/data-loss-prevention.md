@@ -18,7 +18,10 @@ manager: serdars
 
 ---
 
-# Data loss prevention
+# Data loss prevention in Exchange Online
+
+> [!NOTE]
+> Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated. We recommend that you create DLP policies in the Microsoft 365 compliance center. For more information about this DLP, see [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 
 Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 
@@ -31,9 +34,8 @@ DLP policies are simple packages that contain sets of conditions, which are made
 In addition to the customizable DLP policies themselves, you can also inform email senders that they may be about to violate one of your policies, even before they send an offending message. You can accomplish this by configuring Policy Tips. Policy Tips are similar to MailTips, and can be configured to present a brief note in the Microsoft Outlook 2013 client that provides information about possible policy violations to a person creating a message. In Exchange Online, Policy Tips are also displayed in Outlook on the web (formerly known as Outlook Web App) and OWA for Devices. For more information, see [Policy Tips](policy-tips.md).
 
 > [!NOTE]
-> Data Loss Prevention is a premium feature. For more information, see [Exchange Online Licensing](https://products.office.com/exchange/compare-microsoft-exchange-online-plans), [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description), and [Exchange Online Protection Service Description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
-
-> [!NOTE]
+> Exchange Online DLP is a premium feature. For more information, see [Exchange Online Licensing](https://products.office.com/exchange/compare-microsoft-exchange-online-plans), [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description), and [Exchange Online Protection Service Description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+>
 > Messages sent between on-premises users in a hybrid deployment do not have Exchange Online DLP policies applied because the messages do not leave the on-premises infrastructure.
 
 ## Establish policies to protect sensitive data
