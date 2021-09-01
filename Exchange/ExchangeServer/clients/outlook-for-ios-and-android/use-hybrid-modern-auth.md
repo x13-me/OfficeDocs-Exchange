@@ -220,6 +220,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 The following features aren't supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
 
 - Draft folder and Draft messages synchronization
+- Viewing more than four weeks of email by using the "Load More Messages" link at the bottom of the message list
 - Shared calendar access and delegate calendar access
 - Shared and delegate mailbox data access
 - Cortana Time to Leave / Travel Time
