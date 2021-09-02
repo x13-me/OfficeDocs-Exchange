@@ -21,7 +21,9 @@ manager: serdars
 # Data loss prevention in Exchange Online
 
 > [!NOTE]
-> Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated. We recommend that you create DLP policies in the Microsoft 365 compliance center. For more information about this DLP, see [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+> Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated. We recommend that you create DLP policies in the Microsoft 365 compliance center. For more information about this DLP, see [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
+>
+> You can easily migrate your legacy Exchange Online DLP policies using the migration wizard. For more information, see [Migrate Exchange Online data loss prevention policies to the Microsoft 365 compliance center](/microsoft-365/compliance/dlp-migrate-exo-policy-to-unified-dlp).
 
 Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 
