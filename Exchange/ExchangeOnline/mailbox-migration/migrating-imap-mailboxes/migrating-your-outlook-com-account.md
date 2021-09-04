@@ -75,4 +75,4 @@ After you have setup two-step verification, you can also obtain an app password 
 
 10. Choose **Next**.
 
-Once you finish turning on two-step verification and creating an app password, continue here [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md).
+Once you have turned on two-step verification and created an app password, continue with the [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md).
