@@ -10,11 +10,11 @@ metadata:
   ms.topic: landing-page # Required
   ms.collection: exchange-server # Optional; Remove if no collection is used.
   author: msdmaguire #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
+  ms.author: serdars #Required; microsoft alias of author; optional team alias.
   manager: serdars
   ms.date: 07/08/2020 #Required; mm/dd/yyyy format.
   ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
-  localization_priority: Normal
+  ms.localizationpriority: medium
   audience: ITPro
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

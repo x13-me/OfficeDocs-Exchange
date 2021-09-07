@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you enable a user for UM and link them to a telephone extension dial plan, an EUM proxy address is created for the user that contains the user's extension number. You must define at least one extension number for UM to use so voice mail can be sent to the user's mailbox. The extension number is also used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
@@ -55,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, **Phone and Voice Features**, under **Unified Messaging**, click **View details**.
 
-4. On the **UM Mailbox** page, click **Other Extensions**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+4. On the **UM Mailbox** page, click **Other Extensions**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 5. On the **Other extensions** page, next to the **UM dial plan** box, click **Browse** and locate the dial plan for the user.
 
@@ -67,9 +67,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox to which you want to add an extension number, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox to which you want to add an extension number, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. On the **New email address** page, select **EUM** and, in the **Address/Extension** box, enter the extension number for the user.
 

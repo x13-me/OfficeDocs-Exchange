@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: hub-page
 author: msdmaguire
 ms.author: jhendr

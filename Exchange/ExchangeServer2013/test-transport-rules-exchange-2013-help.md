@@ -1,7 +1,7 @@
 ---
 title: 'Test a transport rule: Exchange 2013 Help'
 TOCTitle: Test a transport rule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -30,7 +30,7 @@ You can evaluate the conditions for a rule without taking any actions that impac
 
 Here's what you'll see when a rule is matched if you include the incident report action:
 
-![Message sent when rule is detected](images/TA_EX_Rule_Detected.png)
+![Message sent when rule is detected.](images/TA_EX_Rule_Detected.png)
 
 ### Use a test mode with an incident report action
 

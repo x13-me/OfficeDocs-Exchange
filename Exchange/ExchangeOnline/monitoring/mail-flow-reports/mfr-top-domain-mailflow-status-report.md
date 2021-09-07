@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Top domain mailflow status report in the new Exchange admin center to identify and troubleshoot mail flow in your email domains."
 ---
@@ -30,9 +30,9 @@ This report shows the following information for each domain:
 - **Current MX record**
 - **Email received (past 6 hours)**
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon.](../../media/modern-eac-search-icon.png) and start typing a value.
 
-For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
+For more advanced filters that you can also save and use later, click **Filter** ![Filter icon.](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 
 - **Name your filter**: Enter a unique name.
 - Click **Add new clause**. A clause contains the following elements that you need to enter:
@@ -42,11 +42,11 @@ For more advanced filters that you can also save and use later, click **Filter**
 
   You can click **Add new clause** as many times as you need. Multiple clauses use AND logic (\<Clause1\> AND \<Clause2\>...).
 
-  To remove a clause, click **Remove** ![Remove icon](../../media/modern-eac-remove-icon.png)
+  To remove a clause, click **Remove** ![Remove icon.](../../media/modern-eac-remove-icon.png)
 
   When you're finished, click **Save**. The new filter is automatically loaded, and the results are changed based on the filter. This is the same result as clicking **Filter** and selecting the customer filter from the list.
 
-  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
+  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon.](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
 
 Click **Export** to export the displayed results to a .csv file.
 

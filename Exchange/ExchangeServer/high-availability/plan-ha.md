@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or Exchange Server 2019 deployment plan.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms.reviewer: 
 title: Plan for high availability and site resilience
@@ -103,7 +103,7 @@ The following figure illustrates a DAG where all nodes in the DAG have the MAPI 
 
  **DAG with MAPI network on same subnet**
 
-![DAG on single subnet](../media/ITPro_Mailbox_DAGSingleSubnet.gif)
+![DAG on single subnet.](../media/ITPro_Mailbox_DAGSingleSubnet.gif)
 
 In this example, the MAPI network in each DAG member is on the 172.19.18. _x_ subnet. As a result, the DAG requires a single IP address on that subnet.
 
@@ -111,7 +111,7 @@ The next figure illustrates a DAG that has a MAPI network that extends across tw
 
  **DAG with MAPI network on multiple subnets**
 
-![DAG extended across multiple subnets](../media/ITPro_Mailbox_DAGMultiSubnet.gif)
+![DAG extended across multiple subnets.](../media/ITPro_Mailbox_DAGMultiSubnet.gif)
 
 In this example, the MAPI network in each DAG member is on a separate subnet. As a result, the DAG requires two IP addresses, one for each subnet on the MAPI network.
 

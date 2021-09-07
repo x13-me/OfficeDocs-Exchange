@@ -1,7 +1,7 @@
 ---
 description: 'Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server 2016 or Exchange Server 2019.'
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
@@ -54,7 +54,7 @@ This topic shows you how to:
 
 ### Use the EAC to create a mailbox export request
 
-1. In the EAC, go to **Recipients** \> **Mailboxes** \> click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Export to a PST file**.
+1. In the EAC, go to **Recipients** \> **Mailboxes** \> click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Export to a PST file**.
 
     ![In the EAC, select Recipients, Mailboxes, and then select More Options.](../../media/59554fa9-92e2-46c0-a171-f57927eac3c7.png)
 
@@ -121,7 +121,7 @@ This example creates a new mailbox export request with these settings:
 - **Priority**: `High`
 
 ```PowerShell
-New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority Hight
+New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority High
 ```
 
 For detailed syntax and parameter information, see [New-MailboxExportRequest](/powershell/module/exchange/new-mailboxexportrequest).
@@ -130,7 +130,7 @@ For detailed syntax and parameter information, see [New-MailboxExportRequest](/p
 
 To verify that you've successfully created a mailbox export request, do any of these steps:
 
-- In the EAC, click the notification viewer ![Notifications icon](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
+- In the EAC, click the notification viewer ![Notifications icon.](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
 
 - If you created the mailbox export request in the EAC, and selected the option to send notification email messages, check the notification messages. The sender is Microsoft Exchange. The first message has the subject `Your Export PST request has been received`. If the export request completed successfully, you'll receive another message with the subject `Export PST has finished`.
 

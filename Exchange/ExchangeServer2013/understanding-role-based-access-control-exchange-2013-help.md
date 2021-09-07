@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd298183(v=EXCHG.150)
 ms:contentKeyID: 49289479
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -100,7 +100,7 @@ The following figure shows the components in RBAC and how they fit together:
 
 **RBAC overview**
 
-![RBAC component relationships](images/Dd298183.1dee60cc-1d58-4d36-b34e-639f091e7a56(EXCHG.150).jpg "RBAC component relationships")
+![RBAC component relationships.](images/Dd298183.1dee60cc-1d58-4d36-b34e-639f091e7a56(EXCHG.150).jpg "RBAC component relationships")
 
 As shown in the preceding figure, many components in RBAC are related to each other. It's how each component is put together that defines the permissions applied to each administrator or user. The following examples provide some additional context about how role groups and role assignment policies are used in an organization.
 

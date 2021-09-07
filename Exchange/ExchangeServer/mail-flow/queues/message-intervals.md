@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or Exchange Server 2019 for messages that can't be successfully delivered."
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms.reviewer: 
 title: Message retry, resubmit, and expiration intervals
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Message retry, resubmit, and expiration intervals
+# Message retry, resubmit, and expiration intervals in Exchange Server
 
 In Exchange Server, messages that can't be successfully delivered are subject to various retry, resubmit, and expiration deadlines based on the message's source and destination. *Retry* is a renewed connection attempt with the destination. *Resubmit* is the act of sending messages back to the Submission queue for the categorizer to reprocess. The message *expires* after all delivery efforts have failed over a specified period of time. After a message expires, the sender is notified of the delivery failure, and the message is deleted from the queue.
 
@@ -57,9 +57,9 @@ The automatic message retry interval settings that are available in the Exchange
 |Automatic message retry setting|Default value|Exchange Management Shell configuration|Exchange admin center configuration on Mailbox servers|
 |:-----|:-----|:-----|:-----|
 |**Message retry interval**: The retry interval for individual messages that have a status of Retry.|15 minutes (`00:15:00`) <p> We recommend that you don't modify the default value unless you're directed to do so by Microsoft Customer Service and Support, or specific product documentation.|Cmdlet: **Set-TransportService** cmdlet <p> Parameter: _MessageRetryInterval_|n/a|
-|**Outbound connection failure retry interval**: The retry interval for outbound connection attempts that have previously failed. The previously failed connection attempts are controlled by the transient failure retry count and interval values.|Transport service on Mailbox servers: 10 minutes (`00:10:00`) <p> Edge Transport Servers: 30 minutes (`00:30:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _OutboundConnectionFailureRetryInterval_|**Servers** \> select server \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retry** section \> **Outbound connection failure retry interval (seconds)**|
-|**Transient failure retry count**: The number of connection attempts that are tried after the queue glitch retry count and interval values have failed. These failures can be caused by server restarts or cached DNS lookup failures. <p> A valid value is an integer from 0 through 15. The value 0 means the next connection attempt is controlled by the outbound connection failure retry interval.|6|Cmdlet: **Set-TransportService** <p> Parameter: _TransientFailureRetryCount_|**Servers** \> select server \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retries** section \> **Transient failure retry attempts**|
-|**Transient failure retry interval**: The connection interval between each connection attempt that's specified by the transient failure retry count value.|Transport service on Mailbox servers: 5 minutes (`00:05:00`) <p> Edge Transport servers: 10 minutes (`00:10:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _TransientFailureRetryInterval_|**Servers** \> select server \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retries** section \> **Transient failure retry interval (minutes)**|
+|**Outbound connection failure retry interval**: The retry interval for outbound connection attempts that have previously failed. The previously failed connection attempts are controlled by the transient failure retry count and interval values.|Transport service on Mailbox servers: 10 minutes (`00:10:00`) <p> Edge Transport Servers: 30 minutes (`00:30:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _OutboundConnectionFailureRetryInterval_|**Servers** \> select server \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retry** section \> **Outbound connection failure retry interval (seconds)**|
+|**Transient failure retry count**: The number of connection attempts that are tried after the queue glitch retry count and interval values have failed. These failures can be caused by server restarts or cached DNS lookup failures. <p> A valid value is an integer from 0 through 15. The value 0 means the next connection attempt is controlled by the outbound connection failure retry interval.|6|Cmdlet: **Set-TransportService** <p> Parameter: _TransientFailureRetryCount_|**Servers** \> select server \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retries** section \> **Transient failure retry attempts**|
+|**Transient failure retry interval**: The connection interval between each connection attempt that's specified by the transient failure retry count value.|Transport service on Mailbox servers: 5 minutes (`00:05:00`) <p> Edge Transport servers: 10 minutes (`00:10:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _TransientFailureRetryInterval_|**Servers** \> select server \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Retries** section \> **Transient failure retry interval (minutes)**|
 |
 
 ### Configuration options for manual message retry
@@ -78,7 +78,7 @@ The configuration options that are available for delay DSN notification messages
 
 |Delay DSN setting|Default value|Exchange Management Shell configuration|Exchange admin center configuration on Mailbox servers|
 |---|---|---|---|
-|**Delay notification timeout**: How long the server waits before it sends a delay DSN message to the sender. <p> This value should always be greater than the transient failure retry count multiplied by the transient failure retry interval (the default total is 30 minutes on a Mailbox server, and one hour on an Edge Transport server).|4 hours (`4:00:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _DelayNotificationTimeOut_|**Servers** \> select server \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Notifications** section \> **Notify sender when message is delayed after (hours)**|
+|**Delay notification timeout**: How long the server waits before it sends a delay DSN message to the sender. <p> This value should always be greater than the transient failure retry count multiplied by the transient failure retry interval (the default total is 30 minutes on a Mailbox server, and one hour on an Edge Transport server).|4 hours (`4:00:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _DelayNotificationTimeOut_|**Servers** \> select server \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Notifications** section \> **Notify sender when message is delayed after (hours)**|
 |**External delay DSN enabled**: Specifies whether delay DSN messages can be sent to external message senders (senders who are outside the Exchange organization). <p> _ExternalDelayDSNEnabled_|`$true`|Cmdlet: **Set-TransportConfig** <p> Parameter: _ExternalDelayDSNEnabled_|Not available|
 |**Internal delay DSN enabled**: Specifies whether delay DSN messages can be sent to internal message senders (message senders who are inside the Exchange organization).|`$true`|Cmdlet: **Set-TransportConfig** <p> Parameter: _InternalDelayDSNEnabled_|Not available|
 |
@@ -116,7 +116,7 @@ The message expiration timeout interval is described in the following table.
 
 |Default value|Exchange Management Shell configuration|Exchange admin center configuration on Mailbox servers|
 |---|---|---|
-|2 days (`2.00:00:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _MessageExpirationTimeOut_|**Servers** \> select server \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Message expiration** section \> **Maximum time since submission (days)**|
+|2 days (`2.00:00:00`)|Cmdlet: **Set-TransportService** <p> Parameter: _MessageExpirationTimeOut_|**Servers** \> select server \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Transport limits** \> **Message expiration** section \> **Maximum time since submission (days)**|
 |
 
 ### Manual Message Expiration

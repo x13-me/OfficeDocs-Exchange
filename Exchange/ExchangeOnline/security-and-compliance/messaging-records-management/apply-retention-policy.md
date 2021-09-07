@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
 ms.topic: article
 author: msdmaguire
@@ -47,7 +47,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. In **User Mailbox**, click **Mailbox features**.
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to remove a database availability group (DAG) in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 ms.reviewer: 
 title: Remove a database availability group
@@ -39,7 +39,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. Navigate to **Servers** \> **Database availability groups**.
 
-2. Select the DAG you want to remove and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select the DAG you want to remove and click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. Click **Yes** to confirm the warning and remove the DAG.
 

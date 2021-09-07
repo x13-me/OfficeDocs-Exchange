@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.'
 ms.topic: article
 author: msdmaguire
@@ -57,12 +57,12 @@ For modern authentication, which is used by all Microsoft 365 or Office 365 acco
 The following images show an example of account configuration via AutoDetect:
 
 > [!div class="mx-imgBorder"]
-> ![Outlook for iOS and Android onboarding](../../media/67c22e0d-ba01-4923-bdb9-375f26ec90fb.png)
+> ![Outlook for iOS and Android onboarding.](../../media/67c22e0d-ba01-4923-bdb9-375f26ec90fb.png)
 
 If AutoDetect fails for a user, the following images show an alternative account configuration path using manual configuration:
 
 > [!div class="mx-imgBorder"]
-> ![Manaul account setup for Outlook for iOS and Android](../../media/fdb9b8e8-499d-4702-b362-4fe9a2e9c978.png)
+> ![Manaul account setup for Outlook for iOS and Android.](../../media/fdb9b8e8-499d-4702-b362-4fe9a2e9c978.png)
 
 ## Single sign-on
 
@@ -81,12 +81,12 @@ If a user is already signed in to another Microsoft app on their device, like Wo
 The following images show an example of account configuration via single sign-on for a first-time user:
 
 > [!div class="mx-imgBorder"]
-> ![Single sign-on in Outlook for iOS and Android](../../media/d11691ca-49e9-4282-80f0-c73547ccc98e.png)
+> ![Single sign-on in Outlook for iOS and Android.](../../media/d11691ca-49e9-4282-80f0-c73547ccc98e.png)
 
 If a user already has Outlook for iOS and Android, such as for a personal account, but a Microsoft 365 or Office 365 account is detected because they recently enrolled, the single-sign on path will look as follows:
 
 > [!div class="mx-imgBorder"]
-> ![Alternative single-sign on path for Outlook for iOS and Android](../../media/e24efc89-10e1-4a11-b80c-bbfc08033334.png)
+> ![Alternative single-sign on path for Outlook for iOS and Android.](../../media/e24efc89-10e1-4a11-b80c-bbfc08033334.png)
 
 ## Account setup configuration via enterprise mobility management
 

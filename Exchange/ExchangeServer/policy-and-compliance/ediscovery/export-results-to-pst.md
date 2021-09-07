@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.reviewer: 
-title: Export eDiscovery search results to a PST file
+title: "Exchange Server: Export eDiscovery search results to a PST file"
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -48,7 +48,7 @@ manager: serdars
 
 2. In the list view, select the eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-   ![Export to a PST File](../../media/ExportToPSTFile.gif)
+   ![Export to a PST File.](../../media/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 

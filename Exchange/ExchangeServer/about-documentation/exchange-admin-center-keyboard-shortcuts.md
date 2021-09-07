@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange Server.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
 ms.reviewer: 
-title: Keyboard shortcuts in the Exchange admin center
+title: "Exchange Server: Keyboard shortcuts in the Exchange admin center"
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -15,7 +15,7 @@ ms.prod: exchange-server-it-pro
 manager: serdars
 ---
 
-# Keyboard shortcuts in the Exchange admin center
+# Exchange admin center keyboard shortcuts
 
 Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about the keyboard shortcuts that make Exchange Server and other Microsoft products and services more accessible for people with disabilities.
 

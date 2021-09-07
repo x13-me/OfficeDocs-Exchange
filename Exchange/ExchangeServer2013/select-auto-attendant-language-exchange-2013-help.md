@@ -1,7 +1,7 @@
 ---
 title: 'Select the language for an auto attendant: Exchange 2013 Help'
 TOCTitle: Select the language for an auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -38,9 +38,9 @@ Each auto attendant you create will initially use English (en-US) as the default
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+3. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 4. On the **General** page, under **Language for automated voice interface**, select the required language from the drop-down list.
 

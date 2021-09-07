@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997604(v=EXCHG.150)
 ms:contentKeyID: 50395396
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -36,7 +36,7 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **POP3**.
 
@@ -76,7 +76,7 @@ To verify that you've successfully set connection limits, do one of the followin
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **POP3**.
 

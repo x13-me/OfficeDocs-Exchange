@@ -1,7 +1,7 @@
 ---
 title: 'UM IP gateways: Exchange 2013 Help'
 TOCTitle: UM IP gateways
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

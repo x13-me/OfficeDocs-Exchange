@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: By default, when a Unified Messaging (UM) IP gateway is created, its status is set to enabled. However, you might need to disable the UM IP gateway to take it offline and not allow it to take incoming or outgoing calls. After you create a UM IP gateway, you can control its operation and functionality by setting its status variable to enabled or disabled.
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
 
 ## Use the EAC to enable a UM IP gateway
 
-1. In the EAC, navigate to \> **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to enable, and then click the **Up arrow** ![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.gif).
+1. In the EAC, navigate to \> **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to enable, and then click the **Up arrow** ![Up Arrow Icon.](../../media/ITPro_EAC_UpArrowIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

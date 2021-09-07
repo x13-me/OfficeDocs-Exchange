@@ -1,7 +1,7 @@
 ---
 title: 'Create non-business hours navigation menus: Exchange 2013 Help'
 TOCTitle: Create non-business hours navigation menus
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -38,11 +38,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable non-business hours key mappings on a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a non-business hours navigation menu. On the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a non-business hours navigation menu. On the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page, click **Menu navigation**, under **Non-business hours menu navigation**, select **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page, click **Menu navigation**, under **Non-business hours menu navigation**, select **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 

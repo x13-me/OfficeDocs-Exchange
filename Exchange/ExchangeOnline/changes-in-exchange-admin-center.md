@@ -7,7 +7,7 @@ audience: ITPro
 f1.keywords:
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 ms.custom:
@@ -20,9 +20,9 @@ The following are the differences between the Classic Exchange admin center (Cla
 
 **User mailbox and Shared mailbox**
 
- - In Classic EAC, they are available as separate tabs, **Mailboxes**, and **Shared**. ![Classic EAC mailbox tab](media/classic-eac.png)
+ - In Classic EAC, they are available as separate tabs, **Mailboxes**, and **Shared**. ![Classic EAC mailbox tab.](media/classic-eac.png)
  
- - In new EAC, they're merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes](media/um-sm.png)
+ - In new EAC, they're merged together under **Mailboxes**. In **Mailboxes** page, you can select **Filter > User mailbox/Shared mailbox** to view them. You can also sort them by clicking **Recipient type**. ![Mailboxes.](media/um-sm.png)
 
 For more information, see [Manage user mailboxes](./recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
  
@@ -30,7 +30,7 @@ For more information, see [Manage user mailboxes](./recipients-in-exchange-onlin
 
  - In Classic EAC, it is available. 
  
-   ![Compliance Management tab](media/compliance-management-tab.png)
+   ![Compliance Management tab.](media/compliance-management-tab.png)
  
  - In new EAC, it is not available and is now a part of [**Microsoft 365 compliance center**](https://df.compliance.microsoft.com/homepage).
  
@@ -38,7 +38,7 @@ For more information, see [Manage user mailboxes](./recipients-in-exchange-onlin
 
  - In Classic EAC, it is available. 
  
-   ![Protection tab](media/protection-tab.png)
+   ![Protection tab.](media/protection-tab.png)
  
  - In new EAC, it is not available and is now a part of [**Microsoft 365 security center**](https://df.security.microsoft.com/homepage).
 

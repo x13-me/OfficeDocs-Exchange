@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure the number of sign-in failures allowed before an Outlook Voice Access user is locked out of their mailbox. The number of sign-in failures allowed before a voice mail user is locked out is configured on a Unified Messaging (UM) mailbox policy, and applies to all UM-enabled users associated with the UM mailbox policy. By default it is set to 15.
 ms.topic: article
 author: msdmaguire
@@ -43,9 +43,9 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. Click **PIN policies**, and next to **Number of sign-in failures before lockout**, enter a value between 1 and 999.
 

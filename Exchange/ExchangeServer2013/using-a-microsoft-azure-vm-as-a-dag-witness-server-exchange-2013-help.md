@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn903504(v=EXCHG.150)
 ms:contentKeyID: 63886642
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -45,7 +45,7 @@ The following diagram is an overview of using a Microsoft Azure file server VM a
 
 ### DAG witness server on Microsoft Azure
 
-![Exchange DAG witness on Azure overview](images/Dn903504.7cbda882-bbae-4be7-b0ea-60947b8aa4ef(EXCHG.150).png "Exchange DAG witness on Azure overview")
+![Exchange DAG witness on Azure overview.](images/Dn903504.7cbda882-bbae-4be7-b0ea-60947b8aa4ef(EXCHG.150).png "Exchange DAG witness on Azure overview")
 
 The first thing you need to do in order to use a Microsoft Azure VM for your DAG witness is to get a subscription. See [How to buy Azure](https://azure.microsoft.com/pricing/purchase-options/) for the best way to acquire an Azure subscription.
 

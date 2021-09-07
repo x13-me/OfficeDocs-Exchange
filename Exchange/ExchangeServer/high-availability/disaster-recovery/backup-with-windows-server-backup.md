@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Use Windows Server Backup to back up Exchange
+# Use Windows Server Backup to back up Exchange Server
 
 You can use Windows Server Backup to back up and restore Exchange databases. Exchange includes a plug-in for Windows Server Backup that allows you to make Volume Shadow Copy Service (VSS)-based backups of Exchange data.
 

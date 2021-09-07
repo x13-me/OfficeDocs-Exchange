@@ -1,7 +1,7 @@
 ---
 title: 'Configure a DTMF fallback auto attendant: Exchange 2013 Help'
 TOCTitle: Configure a DTMF fallback auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -38,9 +38,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to configure a speech-enabled auto attendant with a DTMF fallback auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a DTMF fallback auto attendant. On the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a DTMF fallback auto attendant. On the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page \> **General**, select the check box next to **Use this auto attendant when voice commands don't work correctly**, and then click **Browse**.
 

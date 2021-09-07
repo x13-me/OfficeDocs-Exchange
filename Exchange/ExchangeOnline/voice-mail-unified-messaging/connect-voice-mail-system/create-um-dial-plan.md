@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A Unified Messaging (UM) dial plan contains configuration information related to your telephony network. A UM dial plan establishes a link from the telephone extension number of a user enabled for voice mail to their mailbox. When you create a UM dial plan, you can configure the number of digits in the extension numbers, the Uniform Resource Identifier (URI) type, and the Voice over IP (VoIP) security setting for the dial plan.
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## Use the EAC to create a UM dial plan
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM dial plan** page, complete the following boxes:
 

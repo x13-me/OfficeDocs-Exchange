@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection.
 ms.topic: article
 author: msdmaguire
@@ -87,7 +87,7 @@ Connectors enable mail flow in both directions (to and from Microsoft 365 or Off
 
 The diagram below shows how connectors in Exchange Online or EOP work with your own email servers.
 
-![Connectors between Microsoft 365 or Office 365 and your e-mail server](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
+![Connectors between Microsoft 365 or Office 365 and your e-mail server.](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
 
 In this example, John and Bob are both employees at your company. John has a mailbox on an email server that you manage, and Bob has a mailbox in Exchange Online. John and Bob both exchange mail with Sun, a customer with an internet email account:
 
@@ -110,7 +110,7 @@ You can create connectors to add additional security restrictions for email sent
 
 The diagram below shows an example where ContosoBank.com is a business partner that you share financial details with via email. Because you are sharing financial information, you want to protect the integrity of the mail flow between your businesses. Connectors with TLS encryption enable a secure and trusted channel for communicating with ContosoBank.com. In this example, two connectors are created in Microsoft 365 or Office 365. TLS is required for mail flow in both directions, so ContosoBank.com must have a valid encryption certificate. A certificate from a commercial certification authority (CA)that's automatically trusted by both parties is recommended.
 
-![Connectors between Microsoft 365 or Office 365 and a partner organization](../../media/0f9319ae-84bb-4b05-a79f-12fb988f1d10.png)
+![Connectors between Microsoft 365 or Office 365 and a partner organization.](../../media/0f9319ae-84bb-4b05-a79f-12fb988f1d10.png)
 
 ### Additional partner organization connector options: specify a domain or IP address ranges
 

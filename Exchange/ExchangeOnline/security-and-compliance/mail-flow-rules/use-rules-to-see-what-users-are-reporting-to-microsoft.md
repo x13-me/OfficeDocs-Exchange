@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
@@ -50,7 +50,7 @@ You can create the mail flow rule in the Exchange admin center (EAC) and PowerSh
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add** ![Add icon.](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, configure the following settings:
 
@@ -58,14 +58,14 @@ You can create the mail flow rule in the Exchange admin center (EAC) and PowerSh
 
    - Click **More Options**.
 
-   - **Apply this rule if**: Select **The recipient** \> **address includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
+   - **Apply this rule if**: Select **The recipient** \> **address includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
      - `not_junk@office365.microsoft.com`
 
-     To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
+     To edit an entry, select it and click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
      When you're finished, click **OK**.
 
@@ -89,7 +89,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 To verify that you've configured a mail flow rules to receive copies of reported messages, do any of the following steps:
 
-- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
+- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
 
 - In PowerShell, run the following command to verify the settings:
 

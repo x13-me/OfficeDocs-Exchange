@@ -1,7 +1,7 @@
 ---
 title: 'Disable faxing for a group of users: Exchange 2013 Help'
 TOCTitle: Disable faxing for a group of users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,9 +36,9 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 ## Use the EAC to disable inbound faxing
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the mailbox policy you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the mailbox policy you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM mailbox policy** page \> **General**, clear the check box next to **Allow inbound faxes**.
 

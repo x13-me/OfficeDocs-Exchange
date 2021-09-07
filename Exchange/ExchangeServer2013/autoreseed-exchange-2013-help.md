@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn789209(v=EXCHG.150)
 ms:contentKeyID: 62523707
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -45,7 +45,7 @@ An example AutoReseed configuration is illustrated below.
 
 **Example AutoReseed configuration**
 
-![Example Automatic Reseed Configuration](images/Dn789209.e3af7306-f5b4-4ec4-9ccf-222ec452699b(EXCHG.150).gif "Example Automatic Reseed Configuration")
+![Example Automatic Reseed Configuration.](images/Dn789209.e3af7306-f5b4-4ec4-9ccf-222ec452699b(EXCHG.150).gif "Example Automatic Reseed Configuration")
 
 In this example, there are three volumes, two of which will contain databases (VOL1 and VOL2), and one of which is a blank, formatted spare (VOL3).
 

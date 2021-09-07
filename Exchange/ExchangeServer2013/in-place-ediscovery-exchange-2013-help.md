@@ -1,7 +1,7 @@
 ---
 title: 'In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: In-Place eDiscovery
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -34,7 +34,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results** After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](images/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](images/TA_Discovery_EstimatePreview.gif)
 
 ## Exchange Search
 
@@ -145,7 +145,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 The following screenshot shows an example of a search query in the EAC.
 
-![Configure eDiscovery Search Query](images/TA_MRM_SearchQuery.png)
+![Configure eDiscovery Search Query.](images/TA_MRM_SearchQuery.png)
 
 When using In-Place eDiscovery, also consider the following:
 
@@ -193,7 +193,7 @@ For more information, see [Copy eDiscovery search results to a discovery mailbox
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](images/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](images/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-search-results-exchange-2013-help.md).
 

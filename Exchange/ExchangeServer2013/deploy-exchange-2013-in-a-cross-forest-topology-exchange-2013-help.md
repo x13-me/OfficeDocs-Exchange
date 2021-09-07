@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998597(v=EXCHG.150)
 ms:contentKeyID: 50406264
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ The following figure illustrates user synchronization between two Exchange 2013 
 
 **Example of Exchange 2013 cross-forest synchronization**
 
-![Example of Exchange 2010 multiple forest](images/Aa998597.df0ba5dd-cb96-4542-98bd-2a425defe317(EXCHG.150).gif "Example of Exchange 2010 multiple forest")
+![Example of Exchange 2010 multiple forest.](images/Aa998597.df0ba5dd-cb96-4542-98bd-2a425defe317(EXCHG.150).gif "Example of Exchange 2010 multiple forest")
 
 This topic does *not* describe how to deploy Exchange 2013 in a dedicated Exchange forest (or resource forest) topology. For more information about how to deploy Exchange 2013 in a resource forest topology, see [Deploy Exchange 2013 in an Exchange resource forest topology](deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help.md).
 
@@ -75,7 +75,7 @@ To perform the following procedure in Exchange 2013, confirm the following:
 
    **Provision GalSync Management Agent for Exchange 2013**
 
-   ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
+   ![Management Agent Exchange 2010 provisioning.](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
 
 4. Create an SMTP Send connector in each of the forests. For detailed steps, see [Configure a cross-forest Send connector](configure-a-cross-forest-send-connector-exchange-2013-help.md).
 

@@ -6,14 +6,14 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124399(v=EXCHG.150)
 ms:contentKeyID: 61200298
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Attachment filtering on Edge Transport servers
+# Attachment filtering on Edge Transport servers in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

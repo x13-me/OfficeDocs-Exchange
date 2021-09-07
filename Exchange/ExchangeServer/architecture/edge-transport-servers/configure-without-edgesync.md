@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms.reviewer:
 title: Configure internet mail flow through Edge Transport servers without using EdgeSync
@@ -189,7 +189,7 @@ This Send connector requires the following configuration:
 
 #### Use the EAC to create a Send connector to send outgoing messages to the Edge Transport server
 
-1. In the EAC, go to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
+1. In the EAC, go to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
 
 2. On the first page, configure these settings:
 
@@ -199,7 +199,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
+3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
 
    - **IP address**: For example, 10.1.1.2.
 
@@ -215,7 +215,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
+5. On the next page, in the **Address space** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
 
    - **Type**: Verify SMTP is selected.
 
@@ -233,7 +233,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-7. On the next page, in the **Source server** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outgoing mail through the Edge Transport server. Select a Mailbox server and click **Add -\>** (repeat as many times a necessary), click **OK**, and then click **Finish**.
+7. On the next page, in the **Source server** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outgoing mail through the Edge Transport server. Select a Mailbox server and click **Add -\>** (repeat as many times a necessary), click **OK**, and then click **Finish**.
 
 #### Use the Exchange Management Shell to create a Send connector to send outgoing messages to the Edge Transport server
 
@@ -249,7 +249,7 @@ For detailed syntax and parameter information, see [New-SendConnector](/powershe
 
 To verify that you've successfully created a Send connector to send outgoing messages to the Edge Transport server, use either of these steps:
 
-- In the EAC, go to **Mail flow** \> **Send connectors**, select the Send connector named To Edge \> click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png), and verify the property values.
+- In the EAC, go to **Mail flow** \> **Send connectors**, select the Send connector named To Edge \> click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png), and verify the property values.
 
 - In the Exchange Management Shell, run this command on a Mailbox server to verify the property values:
 

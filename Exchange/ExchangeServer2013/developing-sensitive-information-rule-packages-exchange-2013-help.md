@@ -1,14 +1,16 @@
 ---
 title: 'Developing sensitive information rule packages: Exchange 2013 Help'
 TOCTitle: Developing sensitive information rule packages
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 manager: serdars
+ms.topic: article
 ms.reviewer: 
 ms.assetid: c4ab8707-0839-4855-9390-3dbcb43475a7
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Development of sensitive information rule packages
 ---
 
 # Developing sensitive information rule packages in Exchange 2013
@@ -21,9 +23,9 @@ The XML schema and guidance in this topic will help you get started creating you
 
 The rule authoring process is made up of the following general steps.
 
-1. Prepare a set of test documents representative of their target environment. Key characteristics to consider for the set of test documents include: A subset of the documents contain the entity or affinity for which the rule is being authored, and a subset of the documents do not contain the entity or affinity for which the rule is being authored.
+1. Prepare a set of test documents representative of their target environment. Key characteristics to consider for the set of test documents include: A subset of the documents contains the entity or affinity for which the rule is being authored, and a subset of the documents do not contain the entity or affinity for which the rule is being authored.
 
-2. Identify the rules that meet acceptance requirements (precision and recall) to identify qualifying content. This may require the development of multiple conditions within a rule, bound with Boolean logic, which together satisfy the minimum match requirements to identify target documents.
+2. Identify the rules that meet acceptance requirements (precision and recall) to identify qualifying content. This identification effort may require the development of multiple conditions within a rule, bound with Boolean logic, which together satisfy the minimum match requirements to identify target documents.
 
 3. Establish the recommended confidence level for the rules based on the acceptance requirements (precision and recall). The recommended confidence element can be thought of as the default confidence level for the rule.
 
@@ -45,7 +47,7 @@ The Rule definition is constructed from three main components:
 
 3. **Localized Strings** localization for rule names and their descriptions
 
-Three additional supporting elements are used that define the details of the processing and referenced within the main components: Keyword, Regex, and Function. By using references, a single definition of the supporting elements, like a social security number, can be used to in multiple Entity or Affinity rules. The basic rule structure in XML format can be seen as follows.
+Three other supporting elements are used that define the details of the processing and referenced within the main components: Keyword, Regex, and Function. By using references, a single definition of the supporting elements, like a social security number, can be used to in multiple Entity or Affinity rules. The basic rule structure in XML format can be seen as follows.
 
 ```powershell
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,11 +95,11 @@ Three additional supporting elements are used that define the details of the pro
 
 ### Entity rules
 
-Entity Rules are targeted towards well defined identifiers, such as Social Security Number, and are represented by a collection of countable patterns. Entity Rules returns a count and the confidence level of a match, where Count is the total number of instances of the entity that were found and the Confidence Level is the probability that the given entity exists in the given document. Entity contains the "id" attribute as its unique identifier. The identifier is used for localization, versioning, and querying. The Entity id must be a GUID and should not be duplicated in other entities or affinities. It is referenced in the localized strings section.
+Entity Rules are targeted towards well-defined identifiers, such as Social Security Number, and are represented by a collection of countable patterns. Entity Rules returns a count and the confidence level of a match, where Count is the total number of instances of the entity that were found and the Confidence Level is the probability that the given entity exists in the given document. Entity contains the "Id" attribute as its unique identifier. The identifier is used for localization, versioning, and querying. The Entity ID must be a GUID. The Entity ID must not be duplicated in other entities or affinities. It is referenced in the localized strings section.
 
-Entity rules contains optional patternsProximity attribute (default = 300) which is used when applying Boolean logic to specify the adjacency of multiple patterns required to satisfy the match condition. Entity element contains 1 or more child Pattern elements, where each pattern is a distinct representation of the Entity like Credit Card Entity or Driver's License Entity. The Pattern element has a required attribute of confidenceLevel which represents the pattern's precision based on sample dataset. Pattern element can have three child elements:
+Entity rules contain optional patternsProximity attribute (default = 300) which is used when applying Boolean logic to specify the adjacency of multiple patterns required to satisfy the match condition. Entity element contains one or more child Pattern elements, where each pattern is a distinct representation of the Entity like Credit Card Entity or Driver's License Entity. The Pattern element has a required attribute of confidenceLevel that represents the pattern's precision based on sample dataset. Pattern element can have three child elements:
 
-1. IdMatch - This is required.
+1. IdMatch - This element is required.
 
 2. Match
 
@@ -105,15 +107,15 @@ Entity rules contains optional patternsProximity attribute (default = 300) which
 
 If any of the Pattern elements return "true," the Pattern is satisfied. The count for the Entity element equals the sum of all detected Pattern counts.
 
-![Mathematical formula for entity count](images/ITPro_MRM_.gif)
+![Mathematical formula for entity count.](images/ITPro_MRM_.gif)
 
 where k is the number of Pattern elements for the Entity.
 
 A Pattern element must have exactly one IdMatch element. IdMatch represents the identifier that the Pattern is to match, for example a credit card number or ITIN number. The Count for a pattern is the number of IdMatches matched with the Pattern element. IdMatch element anchors the proximity window for the Match elements.
 
-Another optional sub-element of the Pattern element is the Match element which represents corroborative evidence that is required to be matched to support finding the IdMatch element. For example, the higher confidence rule may require that, in addition to finding a credit card number, additional artifacts exist in the document, within a proximity window of the credit card, like address and name. These additional artifacts would be represented through the Match element or Any element (these are described in detail in Matching Methods and Techniques section). Multiple Match elements can be included in a Pattern definition which can be included directly in the Pattern element or combined using the Any element to define matching semantics. It returns true if a match is found in the proximity window anchored around the IdMatch content.
+Another optional subelement of the Pattern element is the Match element that represents corroborative evidence that is required to be matched to support finding the IdMatch element. For example, the higher confidence rule may require that, in addition to finding a credit card number, extra artifacts exist in the document, within a proximity window of the credit card, like address and name. These extra artifacts would be represented through the Match element or Any element (described in detail in Matching Methods and Techniques section). Multiple Match elements can be included in a Pattern definition, which can be included directly in the Pattern element or combined using the Any element to define matching semantics. It returns true if a match is found in the proximity window anchored around the IdMatch content.
 
-Both the IdMatch and Match elements do not define the details of what content needs to be matched but instead reference it through the idRef attribute. This promotes reusability of definitions in multiple Pattern constructs.
+Both the IdMatch and Match elements do not define the details of what content needs to be matched but instead reference it through the idRef attribute. This referencing promotes reusability of definitions in multiple Pattern constructs.
 
 ```powershell
 <Entity id="..." patternsProximity="300" >
@@ -138,25 +140,25 @@ Both the IdMatch and Match elements do not define the details of what content ne
 </Entity>
 ```
 
-The Entity id element, represented in the previous XML by "..." should be a GUID and it is referenced in the Localized Strings section.
+The Entity Id element, represented in the previous XML by "..." should be a GUID and it is referenced in the Localized Strings section.
 
 #### Entity pattern proximity window
 
-Entity holds optional patternsProximity attribute value (integer, default = 300) used to find the Patterns. For each pattern the attribute value defines the distance (in Unicode characters) from the IdMatch location for all other Matches specified for that Pattern. The proximity window is anchored by the IdMatch location, with the window extending to the left and right of the IdMatch.
+Entity holds optional patternsProximity attribute value (integer, default = 300) used to find the Patterns. For each pattern, the attribute value defines the distance (in Unicode characters) from the IdMatch location for all other Matches specified for that Pattern. The proximity window is anchored by the IdMatch location, with the window extending to the left and right of the IdMatch.
 
-![Text pattern with matching elements called out](images/ITPro_MRM_DlpPatternProximityMatch.gif)
+![Text pattern with matching elements called out.](images/ITPro_MRM_DlpPatternProximityMatch.gif)
 
-The example below illustrates how the proximity window affects the matching algorithm where the SSN IdMatch element requires at least 1 of address, name or date corroborating matches. Only SSN1 and SSN4 match because for SSN2 and SSN3, either no or only partial corroborating evidence is found within the proximity window.
+The example below illustrates how the proximity window affects the matching algorithm where the SSN IdMatch element requires at least one of address, name, or date corroborating matches. Only SSN1 and SSN4 match because for SSN2 and SSN3, either no or only partial corroborating evidence is found within the proximity window.
 
-![Proximity rule match and non-match examples](images/ITPro_MRM_DlpProximityRuleConfidenceMatch.gif)
+![Proximity rule match and non-match examples.](images/ITPro_MRM_DlpProximityRuleConfidenceMatch.gif)
 
-Note that the message body and each attachment are treated as independent items. This means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside within each.
+The message body and each attachment are treated as independent items. This condition means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside within each.
 
 #### Entity confidence level
 
 Entity element's confidence level is the combination of all the satisfied Pattern's confidence levels. They are combined using the following equation:
 
-![Mathematical formula for entity confidence level](images/ITPro_MRM_DlpEntityConfidenceFormula.gif)
+![Mathematical formula for entity confidence level.](images/ITPro_MRM_DlpEntityConfidenceFormula.gif)
 
 where k is the number of Pattern elements for the Entity and a Pattern that does not match returns a confidence level of 0.
 
@@ -184,11 +186,11 @@ These confidence values are assigned in the rules for individual patterns based 
 
 ### Affinity rules
 
-Affinity rules are targeted towards content without well-defined identifiers, for example Sarbanes-Oxley or corporate financial content. For this content no single consistent identifier can be found and instead the analysis requires determining if a collection of evidence is present. Affinity rules do not return a count, instead they return if found and the associated confidence level. Affinity content is represented as a collection of independent evidences. Evidence is an aggregation of required matches within certain proximity. For Affinity rule, the proximity is defined by the evidencesProximity attribute (default is 600) and the minimum confidence level by the thresholdConfidenceLevel attribute.
+Affinity rules are targeted towards content without well-defined identifiers, for example Sarbanes-Oxley or corporate financial content. For this content, no single consistent identifier can be found and instead the analysis requires determining if a collection of evidence is present. Affinity rules do not return a count, instead they return if found and the associated confidence level. Affinity content is represented as a collection of independent evidences. Evidence is an aggregation of required matches within certain proximity. For Affinity rule, the proximity is defined by the evidencesProximity attribute (default is 600) and the minimum confidence level by the thresholdConfidenceLevel attribute.
 
-Affinity rules contains the id attribute for its unique identifier that is used for localization, versioning and querying. Unlike Entity rules, because Affinity rules do not rely on well-defined identifiers, they do not contain the IdMatch element.
+Affinity rules contain the Id attribute for its unique identifier that is used for localization, versioning and querying. Unlike Entity rules, because Affinity rules do not rely on well-defined identifiers, they do not contain the IdMatch element.
 
-Each Affinity rule contains one or more child Evidence elements which define the evidence that is to be found and the level of confidence contributing to the Affinity rule. The affinity is not considered found if the resulting confidence level is below the threshold level. Each Evidence logically represents corroborative evidence for this "type" of document and the confidenceLevel attribute is the precision for that Evidence on the test dataset.
+Each Affinity rule contains one or more child Evidence elements that define the evidence that is to be found and the level of confidence contributing to the Affinity rule. The affinity is not considered found if the resulting confidence level is below the threshold level. Each Evidence logically represents corroborative evidence for this "type" of document and the confidenceLevel attribute is the precision for that Evidence on the test dataset.
 
 Evidence elements have one or more of Match or Any child elements. If all child Match and Any elements match, the Evidence is found and the confidence level is contributed to the rules confidence level calculation. The same description applies to the Match or Any elements for Affinity rules as for Entity rules.
 
@@ -219,17 +221,17 @@ Evidence elements have one or more of Match or Any child elements. If all child 
 
 The proximity window for Affinity is calculated differently than for Entity patterns. Affinity proximity follows a sliding window model. The affinity proximity algorithm attempts to find the maximum number of matching evidences in the given window. Evidences in the proximity window must have a confidence level greater than the threshold defined for the Affinity rule to be found.
 
-![Text in proximity of an affinity rule match](images/ITPro_MRM_DlpAffinityProximityMatch.gif)
+![Text in proximity of an affinity rule match.](images/ITPro_MRM_DlpAffinityProximityMatch.gif)
 
 #### Affinity confidence level
 
 Confidence level for the Affinity equals the combination of found Evidences within the proximity window for the Affinity rule. While similar to the confidence level of Entity rule, the key difference is the application of proximity window. Similar to the Entity rules, Affinity element's confidence level is the combination of all the satisfied Evidence confidence levels, but for Affinity rule it only represents the highest combination of Evidence elements found within the proximity window. The Evidence confidence levels are combined using the following equation:
 
-![Mathematical formula for affinity rule confidence](images/ITPro_MRM_DlpAffinityConfidenceFormula.gif)
+![Mathematical formula for affinity rule confidence.](images/ITPro_MRM_DlpAffinityConfidenceFormula.gif)
 
 where k is the number of Evidence elements for the Affinity matched within the proximity window.
 
-Referring back to Figure 4 Example Affinity rule structure, if all three evidences are matched within the proximity sliding window, the affinity confidence level is 85.6% based on the calculation below. This exceeds the Affinity rule threshold of 65 which results in the rule matching.
+Referring back to Figure 4 Example Affinity rule structure, if all three evidences are matched within the proximity sliding window, the affinity confidence level is 85.6% based on the calculation below. This value exceeds the Affinity rule threshold of 65, which results in the rule matching.
 
 CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Evidence 2</sub>) X (1 - CL<sub>Evidence 2</sub>)]
 
@@ -239,7 +241,7 @@ CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Eviden
 
 = 85.6%
 
-![Affinity rule match example with high confidence](images/ITPro_MRM_DlpHighConfidenceAffinityRuleMatches.gif)
+![Affinity rule match example with high confidence.](images/ITPro_MRM_DlpHighConfidenceAffinityRuleMatches.gif)
 
 Using the same example rule definition, if only the first evidence matches because the second Evidence is outside of the proximity window, the highest Affinity confidence level is 60% based on the calculation below and the Affinity rule does not match since the threshold of 65 was not met.
 
@@ -251,17 +253,17 @@ CL<sub>Affinity</sub> = 1 - [(1 - CL <sub>Evidence 1</sub>) X (1 - CL<sub>Eviden
 
 = 60%
 
-![Affinity rule match example with low confidence](images/ITPro_MRM_DlpAffinityRuleConfidenceMatch.gif)
+![Affinity rule match example with low confidence.](images/ITPro_MRM_DlpAffinityRuleConfidenceMatch.gif)
 
 ### Tuning confidence levels
 
 One of the key aspects of the rule authoring process is the tuning of confidence levels for both Entity and Affinity rules. After creating the rule definitions, run the rule against the representative content and collect the accuracy data. Compare the returned results for each pattern or evidence against the expected results for the test documents.
 
-![Table with rule match evidence comparison](images/ITPro_MRM_DlpPatternEvidenceTuningTable.gif)
+![Table with rule match evidence comparison.](images/ITPro_MRM_DlpPatternEvidenceTuningTable.gif)
 
-If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (e.g. 75%), the match expression is complete and it can be moved to the next step.
+If the rules meet acceptance requirements, that is, the Pattern or Evidence has a confidence rate above an established threshold (for example, 75%), the match expression is complete and it can be moved to the next step.
 
-If the Pattern or Evidence do not meet the confidence level, then re-author it (e.g. add more corroborative evidence; remove or add additional Patterns/Evidences; etc.) and repeat this step.
+If the Pattern or Evidence does not meet the confidence level, then reauthor it (for example, add more corroborative evidence; remove or add extra Patterns/Evidences; etc.) and repeat this step.
 
 Next, tune the confidence level for each Pattern or Evidence in your rules based on the results from the previous step. For each Pattern or Evidence, aggregate the number of True Positives (TP), subset of the documents that contain the entity or affinity for which the rule is being authored and that resulted in a match and the number of False Positives (FP), a subset of documents that do not contain the entity or affinity for which the rule is being authored and that also returned a match. Set confidence level for each Pattern/Evidence using the following calculation:
 
@@ -275,7 +277,7 @@ Confidence Level = True Positives / (True Positives + False Positives)
 
 ## Using local languages in your XML file
 
-The rule schema supports storing of localized name and description for each of Entity and Affinity elements. Each Entity and Affinity element must contain a corresponding element in the LocalizedStrings section. To localize each element, include a Resource element as a child of the LocalizedStrings element to store name and descriptions for multiple locales for each element. The Resource element includes a required idRef attribute which matches the corresponding idRef attribute for each element that is being localized. The Locale child elements of the Resource element contains the localized name and descriptions for each specified locale.
+The rule schema supports storing of localized name and description for each of Entity and Affinity elements. Each Entity and Affinity element must contain a corresponding element in the LocalizedStrings section. To localize each element, include a Resource element as a child of the LocalizedStrings element to store name and descriptions for multiple locales for each element. The Resource element includes a required idRef attribute that matches the corresponding idRef attribute for each element that is being localized. The Locale child elements of the Resource element contain the localized name and descriptions for each specified locale.
 
 ```powershell
 <LocalizedStrings>

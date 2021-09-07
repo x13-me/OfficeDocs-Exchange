@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your mailbox.
 ms.topic: article
 author: msdmaguire

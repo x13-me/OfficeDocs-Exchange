@@ -1,7 +1,7 @@
 ---
 title: 'Manage user access to add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Manage user access to add-ins for Outlook
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -11,7 +11,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Manage user access to add-ins for Outlook in Exchange 2013
+# Manage user access to add-ins for Outlook in Exchange
 
 _**Applies to:** Exchange Server 2013_
 
@@ -44,7 +44,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-e
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
-2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. If you don't want your users to use the add-in, clear the **Make this add-in available to users in your organization** check box, and then click **Save**.
 

@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd297985(v=EXCHG.150)
 ms:contentKeyID: 48385082
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -44,7 +44,7 @@ You can use the EAC or the Shell to configure the properties of a database avail
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure and click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the DAG you want to configure and click ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. Use the **General** page to view DAG membership and operational status, and to configure the DAG's witness server, witness directory, and automatic network configuration:
 
@@ -58,11 +58,11 @@ You can use the EAC or the Shell to configure the properties of a database avail
 
 4. Use the **IP Addresses** page to view and modify the IP addresses assigned to the DAG:
 
-   - Select an existing IP address and click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it.
+   - Select an existing IP address and click ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it.
 
    - Select an existing IP address and click the minus icon (delete) to remove it.
 
-   - Enter an IP address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it to the DAG.
+   - Enter an IP address and click ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it to the DAG.
 
 5. Click **Save** to save any changes that were made.
 

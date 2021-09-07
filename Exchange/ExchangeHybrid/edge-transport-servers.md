@@ -1,6 +1,6 @@
 ---
 title: "Edge Transport servers with hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -54,7 +54,7 @@ Messages sent from the Exchange Online organization to recipients in the on-prem
 
 **Mail flow in a hybrid deployment without an Edge Transport server deployed**
 
-![Hybrid mail flow without an Edge Transport server](media/a95b4d1e-fd4a-4952-b891-22f84c9e71a3.png)
+![Hybrid mail flow without an Edge Transport server.](media/a95b4d1e-fd4a-4952-b891-22f84c9e71a3.png)
 
 ### Mail flow with an Edge Transport server
 
@@ -75,6 +75,6 @@ Messages sent from the Exchange Online organization to recipients in the on-prem
 
 **Mail flow in a hybrid deployment with an Edge Transport server deployed**
 
-![Hybrid mail flow with an Edge Transport server](media/821fe099-56f5-4501-8e1a-e184ba07a653.png)
+![Hybrid mail flow with an Edge Transport server.](media/821fe099-56f5-4501-8e1a-e184ba07a653.png)
 
 [Exchange Server Deployment Assistant](https://assistants.microsoft.com/)

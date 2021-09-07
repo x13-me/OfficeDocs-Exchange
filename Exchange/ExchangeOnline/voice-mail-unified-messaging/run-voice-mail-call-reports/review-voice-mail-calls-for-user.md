@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'User call logs are used to view the following information about specific Unified Messaging (UM) users:'
 ms.topic: article
 author: msdmaguire
@@ -28,7 +28,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## How do I get call logs for a UM-enabled user?
 
-1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
+1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon.](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
 
 2. Click **Select a user**, and then select the user you want data for.
 

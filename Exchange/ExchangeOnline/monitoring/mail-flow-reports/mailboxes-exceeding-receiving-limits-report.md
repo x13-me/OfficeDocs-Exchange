@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: This article is about mailboxes that receive large volumes of messages.
 ms.custom:
@@ -49,7 +49,7 @@ Changing the filters or searching for a mailbox will change both the heatmap and
 >
 > The chart is limited to showing the top 10 mailboxes. If you'd like to see more mailboxes, you'll have to filter/search differently.
 
-![Report](../../media/heatmap-sample.png)
+![Report.](../../media/heatmap-sample.png)
 
 1. Click **Export** to download the data as a csv.
 2. Click **Share** to share the details with others.

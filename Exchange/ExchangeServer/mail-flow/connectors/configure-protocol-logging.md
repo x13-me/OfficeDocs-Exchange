@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms.reviewer: 
 title: Configure protocol logging
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure protocol logging
+# Configure protocol logging in Exchange Server
 
 Protocol logging records the SMTP conversations that occur between messaging servers and between Exchange services in the transport pipeline as part of message delivery.
 
@@ -84,7 +84,7 @@ Use this procedure to enable or disable protocol logging on a Send connector or 
 
    - **Mail flow** \> **Receive connectors**.
 
-2. Select the connector you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the connector you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the **General** tab in the **Protocol logging level** section, select one of the following options:
 
@@ -100,7 +100,7 @@ Use this procedure to configure the location of the protocol logs for all Send c
 
 1. Open the EAC and navigate to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the server properties page, click **Transport logs**. In the **Protocol log** section, change the following settings:
 

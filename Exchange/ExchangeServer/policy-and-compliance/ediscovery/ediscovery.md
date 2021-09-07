@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer:
 title: In-Place eDiscovery in Exchange Server
@@ -37,7 +37,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results** - After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](../../media/TA_Discovery_EstimatePreview.gif)
 
 In-Place eDiscovery uses Keyword Query Language (KQL). Users familiar with KQL can construct powerful search queries to search content indexes. For more information about KQL, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
@@ -87,7 +87,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 The following screenshot shows an example of a search query in the EAC.
 
-![Configure an eDiscovery search query](../../media/TA_MRM_SearchQuery.png)
+![Configure an eDiscovery search query.](../../media/TA_MRM_SearchQuery.png)
 
 When using In-Place eDiscovery, also consider the following:
 
@@ -140,7 +140,7 @@ For more information, see [Copy eDiscovery search results to a discovery mailbox
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](../../media/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](../../media/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-results-to-pst.md).
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Create a new Sharing Policy to change how people in your organization share calendars with individual business associates, friends, or family members. Sharing policies control how your users share their calendars with people outside your organization. By default, all users can invite anyone with an email address to view their calendar. After you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. To apply a specific sharing policy to users, see Apply a sharing policy to mailboxes in Exchange Online.
 ms.topic: article
 author: msdmaguire
@@ -36,11 +36,11 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 2. Go to **organization** \> **sharing**.
 
-3. In the list view, under **Individual Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box.
 
-5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
+5. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
 
 6. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 

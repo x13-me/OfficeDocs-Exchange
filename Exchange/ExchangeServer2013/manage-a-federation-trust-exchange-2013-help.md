@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673036(v=EXCHG.150)
 ms:contentKeyID: 49289152
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -55,9 +55,9 @@ For additional management tasks related to Federation, see [Federation procedure
 
 3. In **Sharing-Enabled Domains**, skip **Step 1** because the primary sharing domain isn't changing.
 
-4. In **Step 2**, select the **service.contoso.com** domain and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the domain from the federated trust.
+4. In **Step 2**, select the **service.contoso.com** domain and then click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the domain from the federated trust.
 
-5. In **Step 2**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+5. In **Step 2**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 6. In **Select Accepted Domains**, select **marketing.contoso.com** from the list of accepted domains, and then click **OK** to add the domain to the federated trust.
 

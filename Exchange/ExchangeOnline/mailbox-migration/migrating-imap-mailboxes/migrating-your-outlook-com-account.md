@@ -1,6 +1,6 @@
 ---
-localization_priority: Normal
-ms.topic: get-started-article
+ms.localizationpriority: medium
+ms.topic: how-to
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
@@ -54,7 +54,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 5. On the **Set up your smart phone with an app password** page, under the **Update your Windows Phone 8 (or earlier) with an app password** list, note the 16-digit app password in the list:
 
-    ![Note the app password in step 4](../media/07b49868-71a5-48c4-856c-85ad7bff6625.png)
+    ![Note the app password in step 4.](../media/07b49868-71a5-48c4-856c-85ad7bff6625.png)
 
     > [!IMPORTANT]
     > Even though the page indicates this is for Windows Phone 8 (or earlier), **this list contains the app password your admin needs** to migrate you hotmail.com or outlook.com email to Office 365 for business. You will need this app password even if you set up two-step verification by using an Android or iPhone.

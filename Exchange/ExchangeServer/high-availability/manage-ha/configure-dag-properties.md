@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: You can use the EAC or the Exchange Management Shell to configure the properties of a database availability group (DAG), including DAG IP address configuration, the witness server, and the witness directory.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 50daeac5-a16f-4362-a325-19e0fe25d59d
 ms.reviewer:
 title: Configure database availability group properties
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure database availability group properties
+# Configure database availability group properties in Exchange Server
 
 The Exchange Management Shell enables you to configure DAG properties that aren't available in the EAC, such as alternate witness server and alternate witness directory information, the TCP port used for replication, and datacenter activation coordination (DAC) mode.
 
@@ -45,7 +45,7 @@ The Exchange Management Shell enables you to configure DAG properties that aren'
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure and click ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the DAG you want to configure and click ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. Use the **General** page to view DAG membership and operational status, and to configure the DAG's witness server, witness directory, and automatic network configuration:
 
@@ -59,11 +59,11 @@ The Exchange Management Shell enables you to configure DAG properties that aren'
 
 4. Use the **IP addresses** page to view and modify the IP addresses assigned to the DAG:
 
-   - Select an existing IP address and click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to modify it.
+   - Select an existing IP address and click ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) to modify it.
 
    - Select an existing IP address and click the minus icon (delete) to remove it.
 
-   - Enter an IP address and click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add it to the DAG.
+   - Enter an IP address and click ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to add it to the DAG.
 
 5. Click **Save** to save any changes that were made.
 

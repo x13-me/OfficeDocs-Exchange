@@ -1,7 +1,7 @@
 ---
 title: 'Assign a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Assign a UM mailbox policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -55,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
 
-4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 5. On the **UM Mailbox** page \> next to **UM mailbox policy**, click **Browse** to locate the UM mailbox policy for the user.
 

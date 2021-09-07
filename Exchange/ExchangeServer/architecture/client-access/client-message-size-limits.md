@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms.reviewer: 
 title: Configure client-specific message size limits
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure client-specific message size limits
+# Configure client-specific message size limits in Exchange Server
 
 In Exchange Server, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size and recipient limits in Exchange Server](../../mail-flow/message-size-limits.md).
 
@@ -135,7 +135,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
    - Open IIS Manager, select the server, and in the **Actions** pane, click **Restart**.
 
-     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+     ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
    - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
 

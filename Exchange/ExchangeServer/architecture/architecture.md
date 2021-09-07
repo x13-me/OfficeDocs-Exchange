@@ -3,7 +3,7 @@ localization_priority: Critical
 description: 'Summary: Learn about the architecture of Exchange Server 2016 and Exchange Server 2019'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms.reviewer: 
 title: Exchange Server architecture
@@ -20,7 +20,7 @@ manager: serdars
 
 Exchange use a single building block architecture that provides email services for deployments at all sizes, from small organizations to the largest multi-national corporations. This architecture is describe in the following diagram.
 
-![Exchange architecture](../media/72f56401-0a52-43d0-9d3d-03e84f2f93ba.png)
+![Exchange architecture.](../media/72f56401-0a52-43d0-9d3d-03e84f2f93ba.png)
 
 Individual components are described in the following sections.
 
@@ -39,7 +39,7 @@ Communication between Exchange servers and past and future versions of Exchange 
 
 Protocol layer communication between Exchange servers is shown in the following diagram.
 
-![Communication between Exchange servers](../media/975fd991-b08f-42bf-b72a-e3b7a8c31754.png)
+![Communication between Exchange servers.](../media/975fd991-b08f-42bf-b72a-e3b7a8c31754.png)
 
 ## Server role architecture
 <a name="ServerRole"> </a>
@@ -99,7 +99,7 @@ For more information, see [Transport high availability](../mail-flow/transport-h
 
 The Client Access services on Exchange Mailbox servers are responsible for accepting all forms of client connections. The Client Access (frontend) services proxy these connections to the backend services on the destination Mailbox server (the local server or a remote Mailbox server that holds the active copy of the user's mailbox). Clients don't directly connect to the backend services. This communication is shown in the following diagram.
 
-![How clients communicate with Exchange servers](../media/e29469bb-da37-4bc9-8896-043960646758.png)
+![How clients communicate with Exchange servers.](../media/e29469bb-da37-4bc9-8896-043960646758.png)
 
 The protocol that's used by a client determines the protocol that's used to proxy the request to the backend services on the destination Mailbox server. For example, if the client connected using HTTP, the Mailbox server uses HTTP to proxy the request to the destination Mailbox server (secured via SSL using a self-signed certificate). If the client used IMAP or POP, then the protocol that's used is IMAP or POP.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Retrieve voice mail PIN information: Exchange 2013 Help'
 TOCTitle: Retrieve voice mail PIN information
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

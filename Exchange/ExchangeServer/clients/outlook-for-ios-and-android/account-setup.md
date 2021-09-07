@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
 title: Account setup in Outlook for iOS and Android using Basic authentication
 ms.collection: exchange-server
@@ -26,7 +26,7 @@ Once an account configuration has been created and the user enrolls their device
 
 The following images show an example of the end-user setup process after Outlook for iOS and Android has been configured in Intune in the Azure Portal.
 
-![Account setup for Outlook for iOS and Android on-premises](../../media/77f0906c-0d62-48a4-9a93-534e29dae7e0.png)
+![Account setup for Outlook for iOS and Android on-premises.](../../media/77f0906c-0d62-48a4-9a93-534e29dae7e0.png)
 
 ## Create an app configuration policy for Outlook for iOS and Android using Microsoft Intune
 

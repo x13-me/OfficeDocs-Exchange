@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr
@@ -38,7 +38,7 @@ You can also use Exchange Online PowerShell to display migration user statistics
 
 To access the migration users report for a migration batch, go to new [Exchange Admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**, select the migration batch and then in the details pane, under **Migration details**, click **View details**.
 
-![Migration user report](../media/migration-user-report.png)
+![Migration user report.](../media/migration-user-report.png)
 
 The name of the migration batch and the following commands are displayed at the top of the window.
 
@@ -75,14 +75,14 @@ To view status information (also called migration user statistics) for a specifi
 
 To access the migration users report for a migration batch, select **Recipients** \> **Migration**, select the migration batch, and then in the details pane, under **Mailbox status**, click **View details**.
 
-![Migration user statistics](media/d9ce61ac-40ad-4f2d-bcb3-5894601c2224.jpg)
+![Migration user statistics.](media/d9ce61ac-40ad-4f2d-bcb3-5894601c2224.jpg)
 
 The name of the migration batch and the following commands are displayed at the top of the window.
 
 |**Command**|**Description**|
 |:-----|:-----|
-|**Delete** ![Delete icon](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete the selected user from the list of migration users.|
-|**Refresh** ![Refresh icon](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
+|**Delete** ![Delete icon.](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete the selected user from the list of migration users.|
+|**Refresh** ![Refresh icon.](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
 
 ### Columns in the list of migration users
 

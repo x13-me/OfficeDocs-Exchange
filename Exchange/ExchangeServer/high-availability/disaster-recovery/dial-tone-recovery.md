@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to perform a dial tone recovery in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms.reviewer:
 title: Perform a dial tone recovery
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Perform a dial tone recovery
+# Perform dial tone recovery in Exchange Server
 
 The process for using dial tone portability is called a dial tone recovery, which involves creating an empty database on a Mailbox server to replace a failed database. To learn more, see [Dial tone portability](dial-tone-portability.md).
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you install Unified Messaging (UM), a common set of default audio files used for the voice mail system and for menu prompts, greetings, and informational announcements is installed. Although you can create a fully functional UM auto attendant or dial plan that uses only the default audio prompts, these prompts are too generic to serve as an acceptable public interface for many companies. This topic discusses the system and menu prompts, greetings, and informational announcements that are used by UM dial plans and auto attendants and how they're used when callers access the voice mail system.
 ms.topic: article
 author: msdmaguire

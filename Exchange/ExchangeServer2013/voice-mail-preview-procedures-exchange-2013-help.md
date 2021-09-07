@@ -1,7 +1,7 @@
 ---
 title: 'Voice Mail Preview procedures: Exchange 2013 Help'
 TOCTitle: Voice Mail Preview procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable non-business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the non-business hours main menu prompt greeting that callers hear after the non-business hours welcome greeting is played. The default non-business hours main menu prompt says,Welcome to the Microsoft Exchange after hours auto attendant.Because no key mappings are defined by default, no menu options are available to callers and they hear only the default non-business hours main menu prompt.
 ms.topic: article
 author: msdmaguire
@@ -41,11 +41,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable non-business hours key mappings on a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a non-business hours navigation menu. On the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a non-business hours navigation menu. On the toolbar, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page, click **Menu navigation**, under **Non-business hours menu navigation**, select **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page, click **Menu navigation**, under **Non-business hours menu navigation**, select **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 

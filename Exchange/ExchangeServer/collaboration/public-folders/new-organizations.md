@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to get public folders configured and running in Exchange Server 2016 or Exchange Server 2019 for a new organization or in an organization that has never previously had public folders.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer:
 title: Set up public folders in a new organization
@@ -56,7 +56,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 3. In the details pane, under **Folder permissions**, click **Manage**.
 
-4. In **Public Folder Permissions**, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+4. In **Public Folder Permissions**, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 5. Click **Browse** to select a user.
 
@@ -64,7 +64,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 7. Click **Save**.
 
-8. You can add multiple users by clicking **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
+8. You can add multiple users by clicking **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
 
 For information about how to use the Exchange Management Shell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission).
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 ms.reviewer: 
 title: Exchange Server build numbers and release dates
@@ -38,7 +38,7 @@ This section describes the various methods that you can use to view the build nu
 
 Run the [HealthChecker script](https://aka.ms/exchangehealthchecker), and check the build number.
 
-![Screenshot of the result of HealthChecker](../media/e95bdff4-0c0c-4186-9030-d4b7bfa9dd12.png)
+![Screenshot of the result of HealthChecker.](../media/e95bdff4-0c0c-4186-9030-d4b7bfa9dd12.png)
 
 ### Option 2
 

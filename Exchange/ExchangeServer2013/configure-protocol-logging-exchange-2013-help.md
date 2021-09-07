@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124531(v=EXCHG.150)
 ms:contentKeyID: 49289407
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -42,7 +42,7 @@ To use the EAC to enable or disable protocol logging on a Send connector or a Re
 
 1. In the EAC, navigate to **Mail flow** \> **Send connectors** or **Mail flow** \> **Receive connectors**.
 
-2. Select the connector you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the connector you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **General** tab in the **Protocol logging level** section, select one of the following options:
 
@@ -56,7 +56,7 @@ To use the EAC to configure the protocol log paths for the Send connectors and R
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **Transport logs**.
 

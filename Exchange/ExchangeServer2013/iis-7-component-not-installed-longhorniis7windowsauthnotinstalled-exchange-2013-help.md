@@ -1,12 +1,12 @@
 ---
-title: 'IIS 7 component not installed'
+title: 'Exchange Server: IIS 7 component not installed'
 TOCTitle: IIS 7 component not installed_LonghornIIS7WindowsAuthNotInstalled
 ms:assetid: f0e75196-5d0d-4e6d-8931-e6c576f55caa
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis7windowsauthnotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629169
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

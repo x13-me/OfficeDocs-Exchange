@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: msdmaguire
 ms.author: jhendr
@@ -63,7 +63,7 @@ Here are a few items to be aware of:
 
 The main steps you perform for a staged migration, and the results for your users, are shown in the following illustration.
 
-![Process for performing a staged email migration](media/fcf22570-1d36-49d4-bfed-6ccddec7205f.png)
+![Process for performing a staged email migration.](media/fcf22570-1d36-49d4-bfed-6ccddec7205f.png)
 
 Here's a description of the staged migration shown in the illustration.
 

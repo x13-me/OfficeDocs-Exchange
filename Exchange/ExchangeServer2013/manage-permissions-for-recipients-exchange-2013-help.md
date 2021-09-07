@@ -1,7 +1,7 @@
 ---
 title: 'Manage permissions for recipients: Exchange 2013 Help'
 TOCTitle: Manage permissions for recipients
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -55,13 +55,13 @@ The following procedure shows how to assign permissions to a user mailbox. You f
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of mailboxes, click the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Delegation**.
 
-4. To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-    To remove a permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+    To remove a permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 5. Click **Save** to save your changes.
 
@@ -75,9 +75,9 @@ Use the following steps to bulk assign permissions.
 
 3. Click or tap **More options** in the right pane, and under **Mailbox Delegation** choose, **Add**.
 
-4. On the **bulk add delegation** page, click or tap **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**.
+4. On the **bulk add delegation** page, click or tap **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**.
 
-   To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+   To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 ### Use the EAC to assign a user permission to send email from another user's mailbox
 
@@ -85,11 +85,11 @@ The following procedure shows how to assign a user permission to send email from
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of mailboxes, click the mailbox that you want to assign send as permissions for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign send as permissions for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Delegation**.
 
-4. To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
    The **Send As** permission allows the delegate to send email from this mailbox.
 
@@ -106,11 +106,11 @@ The following procedure shows how to assign a user permission to send email from
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, click the group that you want to assign send as permissions for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the group that you want to assign send as permissions for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the group properties page, click **Group Delegation**.
 
-4. To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
    The **Send As** permission allows the delegate to send email from this group.
 
@@ -124,11 +124,11 @@ The following procedure shows how to assign full access permissions to a user ma
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of mailboxes, click the mailbox that you want to assign full access permissions for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign full access permissions for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Delegation**.
 
-4. To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Full Access** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Full Access** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
    The **Full Access** permission allows a delegate to open a user's mailbox and access the contents of the mailbox.
 
@@ -224,7 +224,7 @@ To verify that you've successfully assigned permissions to a mailbox or a shared
 
 - In the EAC:
 
-1. Navigate to **Recipients** \> **Mailbox** or **Shared**, click the mailbox, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. Navigate to **Recipients** \> **Mailbox** or **Shared**, click the mailbox, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the mailbox properties page, click **Mailbox Delegation**.
 
@@ -268,13 +268,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, click the group that you want to assign permissions for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the group that you want to assign permissions for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the group properties page, click **Group Delegation**.
 
-4. To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
-    To remove permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+    To remove permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 5. Click **Save** to save your changes.
 
@@ -341,7 +341,7 @@ To verify that you've successfully assigned permissions to a group, do one of th
 
 - In the EAC:
 
-1. Navigate to **Recipients** \> **Groups**, click the group, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. Navigate to **Recipients** \> **Groups**, click the group, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the group properties page, click **Group Delegation**.
 

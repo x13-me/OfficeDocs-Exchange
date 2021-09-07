@@ -1,7 +1,7 @@
 ---
 title: 'Create a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Create a UM auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,9 +36,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to create a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM auto attendant** page, enter the following information:
 
@@ -56,11 +56,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      For callers to use a speech-enabled auto attendant, you must install the appropriate UM language pack that contains Automatic Speech Recognition (ASR) support and configure the properties of the auto attendant to use this language.
 
-   - **Access numbers**: Use this box to enter the extension numbers or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants.
+   - **Access numbers**: Use this box to enter the extension numbers or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants.
 
      The number of extension numbers or telephone numbers entered is unlimited. However, you may create the new auto attendant without an extension number listed. An extension number or telephone number isn't required.
 
-     You can edit or remove an existing extension number or telephone number. To edit an existing extension number or telephone number, click **Edit** ![Add Icon](images/ITPro_EAC_AddIcon.gif). To remove an existing extension number or telephone number from the list, click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+     You can edit or remove an existing extension number or telephone number. To edit an existing extension number or telephone number, click **Edit** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To remove an existing extension number or telephone number from the list, click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
 4. Click **Save**.
 

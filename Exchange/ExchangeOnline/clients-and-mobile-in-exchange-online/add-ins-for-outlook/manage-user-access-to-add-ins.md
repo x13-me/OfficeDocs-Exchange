@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to manage user access to add-ins for Outlook in Exchange Online.
 ms.topic: article
 author: msdmaguire

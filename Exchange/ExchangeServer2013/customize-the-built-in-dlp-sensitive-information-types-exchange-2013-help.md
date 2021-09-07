@@ -1,7 +1,7 @@
 ---
 title: 'Customize the built-in DLP sensitive information types: Exchange 2013 Help'
 TOCTitle: Customize the built-in DLP sensitive information types
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

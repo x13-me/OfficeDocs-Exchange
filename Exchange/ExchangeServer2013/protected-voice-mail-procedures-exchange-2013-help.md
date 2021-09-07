@@ -1,7 +1,7 @@
 ---
 title: 'Protected Voice Mail procedures: Exchange 2013 Help'
 TOCTitle: Protected Voice Mail procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

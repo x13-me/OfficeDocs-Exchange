@@ -6,11 +6,13 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150480(v=EXCHG.150)
 ms:contentKeyID: 47559934
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: Features that sync with SharePoint and Lync
 ---
 
 # Integration with SharePoint and Lync
@@ -21,21 +23,21 @@ Microsoft Exchange Server 2013 includes many features that integrate with Micro
 
 ## Archiving, hold, and eDiscovery
 
-Archiving of email and documents, preserving them for the duration required to meet regulatory compliance and business requirements, and ability to search them quickly to fulfill eDiscovery requests is critical in most organizations. Exchange 2013, SharePoint 2013 and Lync Server 2013 together provide integrated archiving, hold and eDiscovery functionality, allowing you to preserve important data in-place across Exchange mailboxes, SharePoint documents and web sites, and archived Lync content. The eDiscovery Center in SharePoint 2013 allows authorized discovery managers to perform an eDiscovery search for content across these stores, preview search results, and export the data for legal review.
+Archiving of email and documents, preserving them for the duration required to meet regulatory compliance and business requirements, and ability to search them quickly to fulfill eDiscovery requests is critical in most organizations. Exchange 2013, SharePoint 2013, and Lync Server 2013 together provide integrated archiving, hold and eDiscovery functionality, allowing you to preserve important data in-place across Exchange mailboxes, SharePoint documents and web sites, and archived Lync content. The eDiscovery Center in SharePoint 2013 allows authorized discovery managers to perform an eDiscovery search for content across these stores, preview search results, and export the data for legal review.
 
 ## Archive Lync Server 2013 content in Exchange 2013
 
-With Lync Server 2013 deployed in an organization with Exchange 2013, you can configure Lync to archive instant messaging and on-line meeting content such as shared presentations or documents in the user's Exchange 2013 mailbox. Archiving Lync data in Exchange 2013 allows you to apply retention policies to it. Archived Lync content also surfaces in any eDiscovery searches. For more details about Lync Archiving and how to deploy it, see the following topics:
+With Lync Server 2013 deployed in an organization with Exchange 2013, you can configure Lync to archive instant messaging and on-line meeting content such as shared presentations or documents in the user's Exchange 2013 mailbox. Archiving Lync data in Exchange 2013 allows you to apply retention policies to it. Archived Lync content also surfaces in any eDiscovery searches. For more information about Lync Archiving and how to deploy it, see the following topics:
 
 - [Planning for Archiving](/lyncserver/lync-server-2013-planning-for-archiving)
 
 - [Deploying Archiving](/lyncserver/lync-server-2013-deploying-archiving)
 
-## Search Exchange, SharePoint and Lync data using the SharePoint 2013 eDiscovery Center
+## Search Exchange, SharePoint, and Lync data using the SharePoint 2013 eDiscovery Center
 
-Exchange 2013 allows SharePoint 2013 to search Exchange mailbox content using Federated search API. SharePoint 2013 provides an eDiscovery Center to allow authorized personnel to perform eDiscovery. Microsoft Search Foundation provides a common indexing and search infrastructure to both Exchange 2013 and SharePoint 2013 and allows you to use the same query syntax across both applications. This ensures an eDiscovery search performed in SharePoint 2013 will return the same Exchange 2013 content as the same search performed using In-Place eDiscovery in Exchange 2013. SharePoint 2013 eDiscovery Center also allows you to export content returned in an eDiscovery search, including export of Exchange 2013 content to a PST file.
+Exchange 2013 allows SharePoint 2013 to search Exchange mailbox content using Federated search API. SharePoint 2013 provides an eDiscovery Center to allow authorized personnel to perform eDiscovery. Microsoft Search Foundation provides a common indexing and search infrastructure to both Exchange 2013 and SharePoint 2013 and allows you to use the same query syntax across both applications. This flexibility ensures that an eDiscovery search performed in SharePoint 2013 will return the same Exchange 2013 content as the same search performed using In-Place eDiscovery in Exchange 2013. SharePoint 2013 eDiscovery Center also allows you to export content returned in an eDiscovery search, including export of Exchange 2013 content to a PST file.
 
-For more details, see the following topics:
+For more information, see the following topics:
 
 - [In-Place eDiscovery](../ExchangeOnline/security-and-compliance/in-place-ediscovery/in-place-ediscovery.md)
 
@@ -49,11 +51,11 @@ For more details, see the following topics:
 
 ## Site mailboxes
 
-In many organizations, information resides in two different stores - email in Microsoft Exchange and documents in SharePoint, with two different interfaces to access them. This causes a disjointed user experience and impedes effective collaboration. Site mailboxes allow users to collaborate effectively by bringing together Exchange emails and SharePoint documents. For users, a site mailbox serves as a central filing cabinet, providing a place to file project emails and documents that can only be accessed and edited by site members. Site mailboxes are surfaced in Outlook 2013 and give users easy access to the email and documents for the projects they care about. Additionally, the same set of content can be accessed directly from the SharePoint site itself.
+In many organizations, information resides in two different stores - email in Microsoft Exchange and documents in SharePoint, with two different interfaces to access them. This dual location causes a disjointed user experience and impedes effective collaboration. Site mailboxes allow users to collaborate effectively by bringing together Exchange emails and SharePoint documents. For users, a site mailbox serves as a central filing cabinet, providing a place to file project emails and documents that can only be accessed and edited by site members. Site mailboxes are surfaced in Outlook 2013 and give users easy access to the email and documents for the projects they care about. Additionally, the same set of content can be accessed directly from the SharePoint site itself.
 
-Under the covers of a site mailbox, the content is kept where it belongs. Exchange stores the email, providing users with the same message view for email conversations that they use every day for their own mailboxes. SharePoint stores the documents, bringing document coauthoring and versioning to the table. Exchange synchronizes just enough metadata from SharePoint to create the document view in Outlook (e.g. document title, last modified date, last modified author, size).
+Under the covers of a site mailbox, the content is kept where it belongs. Exchange stores the email, providing users with the same message view for email conversations that they use every day for their own mailboxes. SharePoint stores the documents, bringing document coauthoring and versioning to the table. Exchange synchronizes enough metadata from SharePoint to create the document view in Outlook (for example, document title, last modified date, last modified author, size).
 
-Site mailboxes are provisioned and managed from SharePoint 2013. For more details, see the following topics:.
+Site mailboxes are provisioned and managed from SharePoint 2013. For more information, see the following topics:.
 
 - [Site mailboxes](site-mailboxes-exchange-2013-help.md)
 
@@ -67,7 +69,7 @@ After Lync Server 2013 is installed in an environment with Exchange 2013 and you
 
 ## User photos
 
-User photos is a feature that allows you to store high resolution user photos in Exchange 2013 that can be accessed by client applications, including Outlook, Outlook Web App, SharePoint 2013, Lync 2013, and mobile email clients. A low-resolution photo is also stored in Active Directory. As with Unified contact stores, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos using Outlook Web App, SharePoint 2013 or Lync 2013. For detail about managing photos on Outlook Web App, see [Update your photo and account information in Outlook Web App](https://support.office.microsoft.com/client/82a97f4b-f87a-4ea0-bab1-d67592924392).
+User photos is a feature that allows you to store high-resolution user photos in Exchange 2013 that can be accessed by client applications, including Outlook, Outlook Web App, SharePoint 2013, Lync 2013, and mobile email clients. A low-resolution photo is also stored in Active Directory. As with Unified contact stores, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos using Outlook Web App, SharePoint 2013 or Lync 2013. For detail about managing photos on Outlook Web App, see [Update your photo and account information in Outlook Web App](https://support.office.microsoft.com/client/82a97f4b-f87a-4ea0-bab1-d67592924392).
 
 ## Lync presence in Outlook Web App
 
@@ -75,13 +77,13 @@ In Exchange 2013 environments with Lync Server 2013 installed, you can configure
 
 ## OAuth authentication
 
-Exchange 2013, SharePoint 2013 and Lync Server 2013 provide the rich cross-product functionality described above using OAuth authorization protocol for server-to-server authentication. Using the same authentication protocol allows these applications to seamlessly and securely authenticate to each other. The authentication mechanism supports authentication as an application using the context of a linked account and user impersonation where the access request is made in the user context.
+Exchange 2013, SharePoint 2013, and Lync Server 2013 provide the rich cross-product functionality described above using OAuth authorization protocol for server-to-server authentication. Using the same authentication protocol allows these applications to seamlessly and securely authenticate to each other. The authentication mechanism supports authentication as an application using the context of a linked account and user impersonation where the access request is made in the user context.
 
-OAuth is a standard authorization protocol used by many web sites and web services. It allows clients to access resources provided by a resource server without having to provide a username and password. Authentication is performed by an authorization server trusted by the resource owner, which provides the client with an access token. The token grants access to a specific set of resources for a specified period. For more details about Exchange 2013's implementation of OAuth, see [\[MS-XOAUTH\]: OAuth 2.0 Authorization Protocol Extensions](/openspecs/exchange_server_protocols/ms-xoauth/0b717658-4ceb-4401-9da9-7860c9ca2f2f).
+OAuth is a standard authorization protocol used by many web sites and web services. It allows clients to access resources provided by a resource server without having to provide a username and password. Authentication is performed by an authorization server trusted by the resource owner, which provides the client with an access token. The token grants access to a specific set of resources for a specified period. For more information about Exchange 2013's implementation of OAuth, see [\[MS-XOAUTH\]: OAuth 2.0 Authorization Protocol Extensions](/openspecs/exchange_server_protocols/ms-xoauth/0b717658-4ceb-4401-9da9-7860c9ca2f2f).
 
 **OAuth in on-premises deployments**
 
-Within an on-premises deployment, Exchange 2013, SharePoint 2013 and Lync Server 2013 do not require an authorization server to issue tokens. Each of these applications issue self-signed tokens to access resources provided by other application. The application that provides access to resources, for example Exchange 2013, must trust the self-signed tokens presented by the calling application. Trust is established by creating a *partner application* configuration for the calling application, which includes the calling application's ApplicationID, certificate, and AuthMetadataUrl. Exchange 2013, SharePoint 2013 and Lync Server 2013 publish their auth metadata document in a well-known URL.
+Within an on-premises deployment, Exchange 2013, SharePoint 2013, and Lync Server 2013 do not require an authorization server to issue tokens. Each of these applications issues self-signed tokens to access resources provided by other application. The application that provides access to resources, for example Exchange 2013, must trust the self-signed tokens presented by the calling application. Trust is established by creating a *partner application* configuration for the calling application, which includes the calling application's ApplicationID, certificate, and AuthMetadataUrl. Exchange 2013, SharePoint 2013, and Lync Server 2013 publish their auth metadata document in a well-known URL.
 
 <table>
 <colgroup>
@@ -115,12 +117,12 @@ Exchange 2013 Setup creates a self-signed certificate with the friendly name Mic
 > [!IMPORTANT]
 > The default Server Auth Certificate created by Exchange 2013 is valid for five years. You must ensure the authorization configuration includes a current certificate.
 
-When Exchange 2013 receives an access request from a partner application via Exchange Web Services (EWS), it parses the `www-authenticate` header of the https request, which contains the access token signed by the calling server using its private key. The auth module validates the access token using the partner application configuration. It then grants access to resources based on the RBAC permissions granted to the application. If the access token is on behalf of a user, the RBAC permissions granted to the user are checked. For example, if a user performs an eDiscovery search using the eDiscovery Center in SharePoint 2013, Exchange checks whether the user is a member of the Discovery Management role group or has the Mailbox Search role assigned and the mailboxes being searched are within the scope of the RBAC role assignment. For more details, see [Permissions](permissions-exchange-2013-help.md).
+When Exchange 2013 receives an access request from a partner application via Exchange Web Services (EWS), it parses the `www-authenticate` header of the https request, which contains the access token signed by the calling server using its private key. The auth module validates the access token using the partner application configuration. It then grants access to resources based on the RBAC permissions granted to the application. If the access token is on behalf of a user, the RBAC permissions granted to the user are checked. For example, if a user performs an eDiscovery search using the eDiscovery Center in SharePoint 2013, Exchange checks whether the user is a member of the Discovery Management role group or has the Mailbox Search role assigned and the mailboxes being searched are within the scope of the RBAC role assignment. For more information, see [Permissions](permissions-exchange-2013-help.md).
 
 ## Managing OAuth Authentication
 
 In Exchange 2013, there are two configuration objects you must manage for OAuth authentication with partner applications:
 
-  - **AuthConfig**: The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
+  - **AuthConfig**: The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this expiration happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
 
   - **Partner applications**: To enable partner applications to request access tokens from Exchange 2013, you must create a partner application configuration. Exchange 2013 provides the `Configure-EnterprisePartnerApplication.ps1` script, which allows you to quickly and easily create partner application configurations and minimize configuration errors. For details, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).

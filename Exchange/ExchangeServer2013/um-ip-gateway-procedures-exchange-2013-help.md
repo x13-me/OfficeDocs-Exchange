@@ -1,7 +1,7 @@
 ---
 title: 'UM IP gateway procedures: Exchange 2013 Help'
 TOCTitle: UM IP gateway procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

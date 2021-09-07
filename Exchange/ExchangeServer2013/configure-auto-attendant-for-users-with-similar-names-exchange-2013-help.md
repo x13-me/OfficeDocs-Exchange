@@ -1,7 +1,7 @@
 ---
 title: 'Configure an auto attendant for users who have similar names: Exchange 2013 Help'
 TOCTitle: Configure an auto attendant for users who have similar names
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -39,9 +39,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to configure a UM auto attendant for users with similar names
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to configure, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to configure, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page, click **Address book and operator access**, and under **Information to include for users with the same name**, select one of the following:
 

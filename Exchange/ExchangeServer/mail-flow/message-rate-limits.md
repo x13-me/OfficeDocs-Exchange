@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms.reviewer:
 title: Message rate limits and throttling
@@ -43,8 +43,8 @@ The following table shows the message throttling options that are available on M
 |**Maximum concurrent mailbox deliveries**: The maximum number of delivery threads that the Transport service and the Mailbox Transport Delivery service can have open at the same time to deliver message to mailboxes.|20 <br/> We recommend that you don't modify this value unless you're directed to do so by Microsoft Customer Service and Support.|Cmdlet: **Set-TransportService** and **Set-MailboxTransportService** <br/> Parameter: _MaxConcurrentMailboxDeliveries_|Not available|
 |**Maximum concurrent mailbox submissions**: The maximum number of submission threads that the Transport service and the Mailbox Transport Submission service can have open at the same time to send messages from mailboxes.|20 <br/> We recommend that you don't modify this value unless you're directed to do so by Microsoft Customer Service and Support.|Cmdlet: **Set-TransportService** and **Set-MailboxTransportService** <br/> Parameter: _MaxConcurrentMailboxSubmissions_|Not available|
 |**Maximum connection rate per minute**: The maximum rate that connections are allowed to be opened with the Transport service.|1200|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxConnectionRatePerMinute_|Not available|
-|**Maximum concurrent connections**: The maximum number of outbound connections that the Transport service can have open at a time.|1000 <br/> This value must be greater than or equal to the _MaxPerDomainOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
-|**Maximum concurrent connections per domain**: The maximum number of outbound connections that the Transport service can have open to a single domain at a time.|20 <br/> This value must be less than or equal to the _MaxOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxPerDomainOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections per domain**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
+|**Maximum concurrent connections**: The maximum number of outbound connections that the Transport service can have open at a time.|1000 <br/> This value must be greater than or equal to the _MaxPerDomainOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
+|**Maximum concurrent connections per domain**: The maximum number of outbound connections that the Transport service can have open to a single domain at a time.|20 <br/> This value must be less than or equal to the _MaxOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxPerDomainOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections per domain**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
 
 To see the values of these server message throttling settings, run the following command in the Exchange Management Shell:
 

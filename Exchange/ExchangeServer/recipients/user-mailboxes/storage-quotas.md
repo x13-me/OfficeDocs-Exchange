@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to set storage quotas on Exchange mailboxes.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms.reviewer:
 title: Configure storage quotas for a mailbox
@@ -20,7 +20,7 @@ appliesto:
 - Exchange Server 2016
 ---
 
-# Configure storage quotas for a mailbox
+# Configure storage quotas for a mailbox in Exchange Server
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to customize the mailbox storage quotas for specific mailboxes. Storage quotas let you control the size of mailboxes and manage the growth of mailbox databases. When a mailbox reaches or exceeds a specified storage quota, Exchange sends a descriptive notification to the mailbox owner.
 
@@ -43,7 +43,7 @@ This topic shows you how to customize storage settings for a specific mailbox in
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to change the storage quotas for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of user mailboxes, click the mailbox that you want to change the storage quotas for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page, click **Mailbox Usage**, and then click **More options**.
 
@@ -85,7 +85,7 @@ To verify that you've successfully set the storage quotas for a mailbox, do one 
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to verify the storage quotas for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of user mailboxes, click the mailbox that you want to verify the storage quotas for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page, click **Mailbox Usage**, and then click **More options**.
 

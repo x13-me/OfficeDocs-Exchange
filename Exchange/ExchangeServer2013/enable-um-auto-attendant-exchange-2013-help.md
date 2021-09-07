@@ -1,7 +1,7 @@
 ---
 title: 'Enable a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Enable a UM auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,9 +36,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to enable. On the toolbar, click the **Up arrow** ![Up Arrow Icon](images/ITPro_EAC_UpArrowIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to enable. On the toolbar, click the **Up arrow** ![Up Arrow Icon.](images/ITPro_EAC_UpArrowIcon.gif).
 
 3. On the **Warning** page, click **Yes**.
 

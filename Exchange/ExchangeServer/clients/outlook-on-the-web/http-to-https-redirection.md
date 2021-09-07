@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure redirection for Outlook on the web in Exchange Server 2016 or Exchange Server 2019 so http requests are automatically redirected to https.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
 ms.reviewer: 
 title: Configure http to https redirection for Outlook on the web in Exchange Server
@@ -59,7 +59,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 
 4. In the **IIS** section, double-click **SSL Settings**.
 
-    ![In IIS Manager, select the default website, and then select SSL Settings](../../media/e7a2016d-b4a0-4b5c-a807-71bb362dd2ee.png)
+    ![In IIS Manager, select the default website, and then select SSL Settings.](../../media/e7a2016d-b4a0-4b5c-a807-71bb362dd2ee.png)
 
 5. On the **SSL Settings** page, clear the **Require SSL** check box, and in the **Actions** pane, click **Apply**.
 
@@ -83,7 +83,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 3. In the **IIS** section, double-click **SSL Settings**.
 
-    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select SSL Settings](../../media/32a0f32f-8db2-4e23-b145-7253caf565a7.png)
+    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select SSL Settings.](../../media/32a0f32f-8db2-4e23-b145-7253caf565a7.png)
 
 4. On the **SSL Settings** page, select the **Require SSL** check box, and in the **Actions** pane, click **Apply**.
 
@@ -105,7 +105,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 3. In the **IIS** section, double-click **HTTP Redirect**.
 
-    ![In IIS Manager, select the default website, and then select HTTP Redirect](../../media/2d799c1b-1b95-4b2f-8947-54cf534e9864.png)
+    ![In IIS Manager, select the default website, and then select HTTP Redirect.](../../media/2d799c1b-1b95-4b2f-8947-54cf534e9864.png)
 
 4. On the **HTTP Redirect** page, configure the following settings:
 
@@ -117,7 +117,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
    When you're finished, click **Apply** in the **Actions** pane.
 
-    ![In IIS Manager, select the default web site, and then double-click HTTP Redirect](../../media/0d849f12-0310-4f09-9a12-18d5953c4856.png)
+    ![In IIS Manager, select the default web site, and then double-click HTTP Redirect.](../../media/0d849f12-0310-4f09-9a12-18d5953c4856.png)
 
 **Note**: To perform this procedure on the command line, replace _\<OWAUrl\>_ with the URL of the OWA virtual directory, open an elevated command prompt and run the following command:
 
@@ -137,7 +137,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 3. In the **IIS** section, double-click **HTTP Redirect**.
 
-    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select HTTP Redirect](../../media/45dcd4ba-f0bd-463e-891c-edf2571f0611.png)
+    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select HTTP Redirect.](../../media/45dcd4ba-f0bd-463e-891c-edf2571f0611.png)
 
 4. On the **HTTP Redirect** page, change the following settings:
 
@@ -147,7 +147,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 7. In the **Actions** pane, click **Apply**.
 
-    ![In IIS Manager, expand the default web site, select a virtual directory, and then double-click HTTP Redirect](../../media/6cba00fe-2dde-4d55-8075-82184a5f765e.png)
+    ![In IIS Manager, expand the default web site, select a virtual directory, and then double-click HTTP Redirect.](../../media/6cba00fe-2dde-4d55-8075-82184a5f765e.png)
 
 8. Repeat the previous steps on each virtual directory in the default website.
 
@@ -163,7 +163,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 2. In the **Actions** pane, click **Restart**.
 
-    ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+    ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 

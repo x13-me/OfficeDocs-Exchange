@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about the different types of address lists that are available in Exchange Online.
 ms.topic: overview
 author: msdmaguire
@@ -30,7 +30,7 @@ An address list is a collection of mail-enabled recipient objects in Exchange On
 
 Users in your organization use address lists and the GAL to find recipients for email messages. Here's an example of what address lists look like in Outlook 2016:
 
-![Global Address List (GAL)](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
+![Global Address List (GAL).](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
 
 For procedures related to address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
 

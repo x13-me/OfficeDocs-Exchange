@@ -1,6 +1,6 @@
 ---
-title: "Configure legacy on-premises public folders for a hybrid deployment"
-ms.author: dmaguire
+title: "Configure legacy on-premises public folders for a hybrid deployment in Exchange Server"
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
@@ -16,16 +16,16 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms.reviewer:
-description: "Summary: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment."
+description: "Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment."
 ---
 
-# Configure legacy on-premises public folders for a hybrid deployment
+# Configure legacy on-premises public folders for a hybrid deployment in Exchange Server
 
- **Summary**: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment.
+**Summary**: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment.
 
 In a hybrid deployment, your users can be in Exchange Online , on-premises, or both, and your public folders are either in Exchange Online or on-premises. Public folders can reside in only one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
 
-This topic describes how to synchronize mail-enabled public folders if your users are in Microsoft 365 or Office 365 and your Exchange Server 2010 SP3 public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or modern on-premises public folders.
+This topic describes how to configure Exchange Online mailboxes to access on-premises public folders. The topic also describes how to synchronize mail-enabled public folders if your users are in Microsoft 365 or Office 365 and your Exchange Server 2010 SP3 public folders are on-premises. However, a Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or modern on-premises public folders.
 
 > [!NOTE]
 > This topic refers to the Exchange Server 2010 SP3 servers as the legacy Exchange server.
@@ -36,11 +36,16 @@ You will sync your mail-enabled public folders by using the following scripts, w
 
 - `SyncMailPublicFolders.strings.psd1`: This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script.
 
+> [!NOTE]
+> `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an Exchange Online account that supports basic authentication.
+
 When you complete this procedure, your on-premises and Microsoft 365 or Office 365 users will be able to access the same on-premises public folder infrastructure.
 
 ## What hybrid versions of Exchange will work with public folders?
 
 The following table describes the version and location combinations of user mailboxes and public folders that are supported. "Hybrid not applicable" is still a supported scenario, but is not considered a hybrid scenario since both the public folders and the users are residing in the same location.
+
+<br>
 
 ****
 
@@ -116,15 +121,13 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
 5. Repeat the preceding steps for every public folder server in your organization.
 
-## Step 3: Download the scripts
+## Step 3: Download the script to synchronize mail-enabled public folders
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
-
    - `Sync-MailPublicFolders.ps1`
-
    - `SyncMailPublicFolders.strings.psd1`
 
-2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
+2. Save the files to the Exchange on-premises server on which you'll be running the script. For example, C:\PFScripts.
 
 ## Step 4: Configure directory synchronization
 
@@ -142,9 +145,25 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
    Where `Credential` is your Microsoft 365 or Office 365 user name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
 
 > [!NOTE]
+> `Sync-MailPublicFolders.ps1` does not support modern authentication and works only with basic authentication. You must use an Exchange Online account that supports basic authentication.
+>
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. <br/> We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
 ## Step 5: Configure Exchange Online users to access on-premises public folders
+
+A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.
+
+You can use the following command to identify such mailboxes:
+
+```PowerShell
+Get-Mailbox |?{$_.IsDirSynced -eq $false}
+```
+
+These users will keep getting credential prompts after public folder mailbox access is configured. Use one of the following solutions for such users before enabling public folder access:
+
+1. Link the Exchange Online mailboxes only listed in the previous step to on-premises users as described in [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
+
+2. Use the steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users on-premises.
 
 The final step in this procedure is to configure the Exchange Online organization and to allow access to the legacy on-premises public folders.
 
@@ -158,17 +177,11 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 
 You must wait until Active Directory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Azure AD Connect sync: Scheduler](/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler). Microsoft 365 and Office 365 randomly select one of the public folder mailboxes that's supplied in this command.
 
-> [!IMPORTANT]
-> A Microsoft 365 or Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2013 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618) for a solution.
-
 ## How do I know this worked?
 
 Log on to Outlook for a user who is in Exchange Online, and then run the following public folder tests:
 
 - View the hierarchy.
-
 - Check permissions.
-
 - Create and delete public folders.
-
 - Post content to and delete content from a public folder.

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
 author: msdmaguire
@@ -40,7 +40,7 @@ Each configuration scenario highlights its specific requirements. For example, w
 > [!NOTE]
 > With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
-![Flowchart of the process](../../media/acp_flowchart.png)
+![Flowchart of the process.](../../media/acp_flowchart.png)
 
 ## Account configuration scenarios
 
@@ -104,7 +104,7 @@ The following conditions describe Outlook's behavior when implementing various a
 Users are alerted to configuration changes via a notification toast in the app:
 
 > [!div class="mx-imgBorder"]
-> ![notification toast in the app](../../media/outlook_mobile_Intune_1.png)
+> ![notification toast in the app.](../../media/outlook_mobile_Intune_1.png)
 
 This notification toast will automatically dismiss after 10 seconds. There are two scenarios where this notification toast will not appear:
 
@@ -125,22 +125,22 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 1. The user is notified that the administrator has enabled contact synchronization. In Outlook for iOS, the notification occurs within the app, whereas in Outlook for Android, a persistent notification is delivered via the Android notification center.
 
    > [!div class="mx-imgBorder"]
-   > ![Contact sync notification](../../media/outlook_mobile_intune_2.png)
+   > ![Contact sync notification.](../../media/outlook_mobile_intune_2.png)
 
 2. If the user taps on the notification, the user is prompted to grant access:
 
    > [!div class="mx-imgBorder"]
-   > ![user is prompted for access to contacts](../../media/outlook_mobile_intune_3.png)
+   > ![user is prompted for access to contacts.](../../media/outlook_mobile_intune_3.png)
 
 3. If the user allows Outlook to access the native Contacts app, access is granted and contact synchronization is enabled. If the user denies Outlook access to the native Contacts app, then the user is prompted to go into the OS settings and enable contact synchronization:
 
    > [!div class="mx-imgBorder"]
-   > ![user is prompted to allow Outlook to access the native Contacts app](../../media/outlook_mobile_intune_4.png)
+   > ![user is prompted to allow Outlook to access the native Contacts app.](../../media/outlook_mobile_intune_4.png)
 
 4. In the event the user denies Outlook access to the native Contacts app and dismisses the previous prompt, the user may later enable access by navigating to the account configuration within Outlook and tapping **Open Settings**:
 
    > [!div class="mx-imgBorder"]
-   > ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
+   > ![Outlook account settings.](../../media/outlook_mobile_intune_5.png)
 
 ### Calendar Sync
 

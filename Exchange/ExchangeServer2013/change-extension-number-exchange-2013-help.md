@@ -1,7 +1,7 @@
 ---
 title: 'Change an extension number: Exchange 2013 Help'
 TOCTitle: Change an extension number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -48,9 +48,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox for which you want to change an extension number, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox for which you want to change an extension number, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, select the extension number you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). The primary extension number is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the extension number you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif). The primary extension number is listed in bold letters and numbers.
 
 4. On the **Email address** page, in the **Address/Extension** box, enter the new extension number for the user. If you need to select a new UM dial plan, you can click **Browse**.
 

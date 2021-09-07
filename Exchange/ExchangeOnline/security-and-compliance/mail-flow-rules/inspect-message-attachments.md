@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to configure mail flow rules to inspect message attachments in Exchange Online.
 ms.topic: article
 author: msdmaguire
@@ -35,7 +35,7 @@ In Exchange Online organizations or standalone Exchange Online Protection (EOP) 
 
 Exchange Online admins can create mail flow rules in the Exchange admin center (EAC) at **Mail flow** \> **Rules**. You need permissions to do this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
 
-![List of conditions for attachments](../../media/c8ab24df-dbb6-4760-bfb0-b62938bfb447.png)
+![List of conditions for attachments.](../../media/c8ab24df-dbb6-4760-bfb0-b62938bfb447.png)
 
  For more information about mail flow rules, including the full range of conditions and actions that you can choose, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the mail flow rules best practices provided in [Best Practices for Configuring EOP](/microsoft-365/security/office-365-security/best-practices-for-configuring-eop). If you're ready to start creating rules, see [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md).
 

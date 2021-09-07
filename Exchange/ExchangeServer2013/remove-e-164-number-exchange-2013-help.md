@@ -1,7 +1,7 @@
 ---
 title: 'Remove an E.164 number: Exchange 2013 Help'
 TOCTitle: Remove an E.164 number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -50,9 +50,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox from which you want to remove an E.164 number, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox from which you want to remove an E.164 number, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, select the E.164 number that you want to remove from the list, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or E.164 number is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the E.164 number that you want to remove from the list, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or E.164 number is listed in bold letters and numbers.
 
 4. Click **Save**.
 

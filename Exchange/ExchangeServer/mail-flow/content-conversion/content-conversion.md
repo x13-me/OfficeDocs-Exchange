@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
 ms.reviewer:
 title: Content conversion
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Content conversion
+# Content conversion in Exchange Server
 
  *Content conversion* is the process of correctly formatting a message for each recipient. The decision to perform content conversion on a message depends on the destination and format of the message. They types of content conversion that occur in Exchange 2016 and Exchange 2019 are unchanged from Exchange 2013:
 

@@ -6,14 +6,14 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.e15e14c
 ms:contentKeyID: 47899865
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Exchange 2010 servers must be upgraded to Service Pack 3
+# Exchange Server: Exchange 2010 servers must be upgraded to Service Pack 3
 
 _**Applies to:** Exchange Server 2013_
 

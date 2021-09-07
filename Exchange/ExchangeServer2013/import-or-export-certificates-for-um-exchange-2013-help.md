@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn205143(v=EXCHG.150)
 ms:contentKeyID: 53908380
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -52,7 +52,7 @@ For additional management tasks related to managing certificates for Unified Mes
 
 ## Use the EAC to export a certificate
 
-1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Export Exchange certificate**.
+1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Export Exchange certificate**.
 
 2. On the **Export Exchange certificate** page, in the **File to export to** box, enter the name of the certificate file.
 
@@ -84,7 +84,7 @@ This example does the following:
 
 ## Use the EAC to import a certificate
 
-1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Import Exchange certificate**.
+1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Import Exchange certificate**.
 
 2. On the **Import Exchange certificate** page, in the **File to import from** box, enter the shared folder path and the name of the certificate file. If the certificate is protected with a password, enter the password in the **Password** box, and then click **Next**.
 

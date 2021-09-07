@@ -1,7 +1,7 @@
 ---
 title: 'Configure dial codes: Exchange 2013 Help'
 TOCTitle: Configure dial codes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -38,7 +38,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. Select the UM dial plan you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Select the UM dial plan you want to manage, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Dial Plan** page, click **Configure**.
 
@@ -58,7 +58,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
    - **International number format**
 
-   - **Number formats for incoming calls within the same dial plan**: To add a number format, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+   - **Number formats for incoming calls within the same dial plan**: To add a number format, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 6. Click **Save** to save your changes.
 

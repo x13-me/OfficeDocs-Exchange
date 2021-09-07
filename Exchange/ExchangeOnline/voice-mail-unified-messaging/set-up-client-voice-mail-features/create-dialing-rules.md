@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:'
 ms.topic: article
 author: msdmaguire
@@ -59,11 +59,11 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Use the EAC to create a dialing rule
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
+3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
 
 4. On the **New Dialing Rule** page, enter the following information:
 

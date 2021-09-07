@@ -1,7 +1,7 @@
 ---
 title: 'Add an E.164 number: Exchange 2013 Help'
 TOCTitle: Add an E.164 number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -48,9 +48,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox for which you want to add an E.164 number, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox for which you want to add an E.164 number, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New email address** page, select **EUM** and, in the **Address/Extension** box, enter the new E.164 number for the user.
 

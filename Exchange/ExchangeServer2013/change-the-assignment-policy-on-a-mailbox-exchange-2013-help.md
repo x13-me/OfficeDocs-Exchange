@@ -6,14 +6,14 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Change the assignment policy on a mailbox
+# Change the assignment policy on a mailbox in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 
@@ -36,7 +36,7 @@ Looking for other management tasks related to permissions? Check out [Permission
 
 1. In the Exchange admin center (EAC), navigate to **Recipients** \> **Mailboxes**.
 
-2. Select the user or resource mailbox you want to change the assignment policy on and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the user or resource mailbox you want to change the assignment policy on and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. Select **Mailbox Features**.
 

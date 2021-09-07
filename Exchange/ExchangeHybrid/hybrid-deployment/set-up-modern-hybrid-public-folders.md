@@ -1,6 +1,6 @@
 ---
 title: "Configure Exchange Server public folders for a hybrid deployment"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
@@ -21,7 +21,7 @@ description: "Summary: Instructions for enabling Exchange Online users to access
 
 # Configure Exchange Server public folders for a hybrid deployment
 
- **Summary**: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange 2013, Exchange 2016, or Exchange 2019 environment.
+**Summary**: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange 2013, Exchange 2016, or Exchange 2019 environment.
 
 In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server on-premises environment.
 
@@ -38,11 +38,11 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 
    Here is an example of proper configuration in an on-premises environment:
 
-   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server":::   
+   :::image type="content" source="../media/hybrid-pfs-on-prem-config.png" alt-text="public folder synchronization in Exchange Server.":::
 
    Here is an example of proper configuration in Exchange Online:
 
-   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online":::  
+   :::image type="content" source="../media/hybrid-pfs-exo-config.png" alt-text="Public folder synchronization in Exchange Online.":::
 
 2. These instructions assume that you have used the Hybrid Configuration wizard to configure and synchronize your on-premises and Exchange Online environments and that the DNS records used for most users' AutoDiscover references an on-premises end-point. For more information, see [Hybrid Configuration wizard](../hybrid-configuration-wizard.md).
 
@@ -61,7 +61,6 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
 1. Download the following files from [Exchange 2013/2016 Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=54855):
 
    - `Sync-ModernMailPublicFolders.ps1`
-
    - `Sync-ModernMailPublicFolders.psd1`
 
     > [!NOTE]
@@ -92,6 +91,20 @@ Where `Credential` is your Microsoft 365 or Office 365 admin username and passwo
 Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
 
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
+
+A Microsoft 365 or Office 365 mailbox that is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access on-premises public folders.
+
+You can use following command to identify such mailboxes:
+
+```PowerShell
+Get-Mailbox |?{$_.IsDirSynced -eq $false}
+```
+
+These users will keep getting credential prompts after public folder mailbox access is configured. Use one of the following solutions for such users before enabling public folder access:
+
+1. Link the Exchange Online only mailboxes listed in the previous step to on-premises users as described in [Exchange Online users can't access legacy on-premises public folders](https://support.microsoft.com/help/3106618).
+
+2. Use the steps provided in [Controlled Connections to Public Folders](https://aka.ms/ControlPF) to enable public folder access only to mailboxes that have linked users on-premises.
 
 The final step in this process is to configure the Exchange Online organization and to allow access to the Exchange Server public folders.
 

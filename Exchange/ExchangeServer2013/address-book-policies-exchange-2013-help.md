@@ -1,7 +1,7 @@
 ---
 title: 'Address book policies: Exchange 2013 Help'
 TOCTitle: Address book policies
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,7 +36,7 @@ ABPs contain the following lists:
 
 In the following figure, Address Book Policy A consists of a subset of the various address objects that exist in the organization (shown in the bottom half of the figure). The resulting scope of an ABP is equal to that of the GAL contained in the policy, in this case GAL1. When the ABP is created and assigned to a user, the address objects in the ABP become the scope of the objects the user is able to view.
 
-![Overview of Address Book Policies](images/ITPro_Mailbox_ABPOverall.gif)
+![Overview of Address Book Policies.](images/ITPro_Mailbox_ABPOverall.gif)
 
  You can use the following methods to assign ABPs to individual mailbox users:
 
@@ -63,7 +63,7 @@ For details about how to turn on the ABP Routing agent in Exchange Server, see [
 
 In the following diagram, Fabrikam and Tailspin Toys share the same Exchange organization and the same CEO. The CEO is the only employee common to both companies.
 
-![Two Companies One CEO](images/ITPro_.gif)
+![Two Companies One CEO.](images/ITPro_.gif)
 
 This configuration contains three ABPs:
 

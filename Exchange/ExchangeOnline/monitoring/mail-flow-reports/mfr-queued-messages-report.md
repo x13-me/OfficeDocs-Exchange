@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor outbound messages that were sent over connectors from your organization that have been delayed for over an hour."
 ---
@@ -41,7 +41,7 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 
 3. In the **Message have been delayed** flyout that appears, you can turn the alert on or off and configure the notification settings.
 
-   ![Messages have been delayed alert policy details the Microsoft 365 Defender portal](../../media/mfr-queued-messages-alert-policy.png)
+   ![Messages have been delayed alert policy details the Microsoft 365 Defender portal.](../../media/mfr-queued-messages-alert-policy.png)
 
    - **Status**: You can toggle the alert on or off.
    - **Email recipients** and **Daily notification limit**: Click the **Edit** link or the **Edit policy** button to configure the settings as described in the next step.
@@ -52,7 +52,7 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
    - **Daily notification limit**: The default value is **No limit**.
    - **Threshold**: The default value is 2000.
 
-   ![Notification settings in the Messages have been delayed alert policy details](../../media/mfr-queued-messages-alert-policy-notification-settings.png)
+   ![Notification settings in the Messages have been delayed alert policy details.](../../media/mfr-queued-messages-alert-policy-notification-settings.png)
 
 5. When you're finished, click **Save** and **Close**.
 
@@ -60,7 +60,7 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 
 Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queued messages report** in the new EAC to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.
 
-![Queued messages report in the new EAC](../../media/mfr-queued-messages-report.png)
+![Queued messages report in the new EAC.](../../media/mfr-queued-messages-report.png)
 
 The same information and fix option is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.
 

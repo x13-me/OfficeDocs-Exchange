@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.reviewer:
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
@@ -51,9 +51,9 @@ The procedures in this section describe how to create a new mailbox and the asso
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New** (![Add icon](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
+2. Click **New** (![Add icon.](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
 
-   ![In the EAC, click Recipients, Mailboxes, New, keywords: Exchange create mailbox](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
+   ![In the EAC, click Recipients, Mailboxes, New, keywords: Exchange create mailbox.](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
 
    **Note**: A linked mailbox is a local mailbox that's associated with a user account in a different (trusted) Active Directory forest. For more information, see [Manage linked mailboxes](linked-mailboxes.md).
 
@@ -151,9 +151,9 @@ When you mailbox-enable a user account, you can only select existing Active Dire
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New** (![Add icon](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
+2. Click **New** (![Add icon.](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
 
-   ![In the EAC, click Recipients, Mailboxes, New, keywords: create Exchange mailbox, Exchange Server create mailbox](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
+   ![In the EAC, click Recipients, Mailboxes, New, keywords: create Exchange mailbox, Exchange Server create mailbox.](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
 
 3. On the **New user mailbox** page, configure the following settings.
 

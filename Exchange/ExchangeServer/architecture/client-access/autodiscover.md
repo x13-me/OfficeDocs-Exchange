@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms.reviewer:
 title: Autodiscover service in Exchange Server
@@ -39,7 +39,7 @@ Exchange stores in Active Directory the configuration of Exchange servers in the
 
 Exchange automatically creates at installation the virtual directory `autodiscover` in IIS, the frontend Client Access services web site that clients connect to. This allows Outlook to discover the Exchange mailbox settings so that users don't have to deal with manually configuring advanced settings.
 
-![Autodiscover functional process](../../media/AutodiscoverProcess.png)
+![Autodiscover functional process.](../../media/AutodiscoverProcess.png)
 
 The SCP object is also created in Active Directory at the same time as the Autodiscover service virtual directory. The SCP stores and provides authoritative URLs of the Autodiscover service for domain-joined computers.
 

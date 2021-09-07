@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb232022(v=EXCHG.150)
 ms:contentKeyID: 49315404
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -68,13 +68,13 @@ The traditional fax method requires at least a single telephone line on the send
 
 **Traditional and computer-based faxing**
 
-![Traditional Faxing](images/Bb232022.7bdc1cab-9504-4314-a6e0-eccdfe2a9cd6(EXCHG.150).gif "Traditional Faxing")
+![Traditional Faxing.](images/Bb232022.7bdc1cab-9504-4314-a6e0-eccdfe2a9cd6(EXCHG.150).gif "Traditional Faxing")
 
 **Fax servers or gateways and Internet fax services**: There are several ways to send and receive faxes over the Internet. These include using a software application on a computer or using an email client to receive faxes. In most cases, this kind of faxing involves using a fax server or fax gateway to convert between faxes and email. This method has become increasingly popular because it enables organizations to remove or avoid purchasing additional fax machines. It also eliminates the need to install additional telephone lines. This kind of faxing involves creating a document, including a fax cover page with the correct identifying information, and then sending the document to a traditional fax machine. For example, the user uses a software application such as Microsoft Word or Microsoft Outlook to create and send the fax to the fax server or gateway. The fax server or gateway receives the fax and then sends it by using a traditional telephone line to a fax machine or a fax modem that's installed on a computer.
 
 **Faxing by using fax servers or gateways**
 
-![Faxing with fax servers/gateways](images/Bb232022.d6fa2402-b4ca-4313-956c-62e5fe7731ad(EXCHG.150).gif "Faxing with fax servers/gateways")
+![Faxing with fax servers/gateways.](images/Bb232022.d6fa2402-b4ca-4313-956c-62e5fe7731ad(EXCHG.150).gif "Faxing with fax servers/gateways")
 
 Internet fax services let a user send faxes from a computer by using the Internet. A software application such as Word or Outlook can be used to create and send the fax to an Internet fax service. Many companies offer Internet fax services on a subscription basis or by charging for each fax message that's sent. Internet fax services offer the following advantages:
 
@@ -94,7 +94,7 @@ The following figure shows how Internet fax services can be used to send and rec
 
 **Internet fax services**
 
-![Internet Fax Services](images/Bb232022.5d0fb3d6-95f4-4fbf-80e5-64f5de553e65(EXCHG.150).gif "Internet Fax Services")
+![Internet Fax Services.](images/Bb232022.5d0fb3d6-95f4-4fbf-80e5-64f5de553e65(EXCHG.150).gif "Internet Fax Services")
 
 **Faxing by using an email client application**: Faxes can be sent and received by a fax machine over the Internet and then received by an email client such as Outlook.
 
@@ -102,7 +102,7 @@ The T.37 protocol was designed to enable a fax machine to send fax messages over
 
 **Faxing with email**
 
-![Faxing with email](images/Bb232022.086f086b-dc39-4439-a694-7a98e03e65d1(EXCHG.150).gif "Faxing with email")
+![Faxing with email.](images/Bb232022.086f086b-dc39-4439-a694-7a98e03e65d1(EXCHG.150).gif "Faxing with email")
 
 **Faxing by using a VoIP network**: VoIP is a technology that provides hardware and software that enables people to use an IP-based network as the transmission medium for telephone calls. On a VoIP network, voice and fax data is sent in packets by using IP instead of traditional circuit transmissions or the circuit-switched telephone lines of the PSTN. A VoIP gateway that you connect to your IP network uses VoIP to send voice data packets between a Client Access server running the Microsoft Exchange Unified Messaging Call Router service and a Mailbox server running the Microsoft Exchange Unified Messaging service and a Private Branch eXchange (PBX) system. You can also use an IP PBX to perform the functions of both a VoIP gateway and a PBX.
 

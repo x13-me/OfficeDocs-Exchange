@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer:
 title: Apply a retention policy to mailboxes in Exchange Server
@@ -33,7 +33,7 @@ You can use retention policies to group one or more retention tags and apply the
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. In **User Mailbox**, click **Mailbox features**.
 

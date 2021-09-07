@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use the New menu navigation entry page to create single or multiple key mappings for business or non-business hours main menu prompts for auto attendants. You can define the action that will be performed when a key on the telephone keypad is pressed, for example, transferring the call to an extension number or another auto attendant.
 ms.topic: article
 author: msdmaguire
@@ -41,11 +41,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to configure UM auto attendant navigation menus
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create menu navigation. On the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create menu navigation. On the toolbar, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page, click **Menu navigation**, select either **Enable business hours menu navigation** or **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page, click **Menu navigation**, select either **Enable business hours menu navigation** or **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. On the **New menu navigation entry** page, configure the following:
 

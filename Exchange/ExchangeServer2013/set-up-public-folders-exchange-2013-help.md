@@ -1,7 +1,7 @@
 ---
 title: 'Set up public folders in a new organization: Exchange 2013 Help'
 TOCTitle: Set up public folders in a new organization
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -53,7 +53,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 3. In the details pane, under **Folder permissions**, click **Manage**.
 
-4. In **Public Folder Permissions**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+4. In **Public Folder Permissions**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 5. Click **Browse** to select a user.
 
@@ -61,7 +61,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 7. Click **Save**.
 
-8. You can add multiple users by clicking **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
+8. You can add multiple users by clicking **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
 
 For information about how to use the Shell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission).
 

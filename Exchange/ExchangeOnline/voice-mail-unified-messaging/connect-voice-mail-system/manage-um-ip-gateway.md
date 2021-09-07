@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 ms.topic: article
 author: msdmaguire
@@ -41,7 +41,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to view or configure UM IP gateway properties
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**. In the list view, select the UM IP gateway that you want to manage, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**. In the list view, select the UM IP gateway that you want to manage, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. Use the **UM IP Gateway** page to view and configure settings for the UM IP gateway. You can view or configure the following settings:
 
