@@ -57,7 +57,7 @@ These are the types of certificate files that you can import on an Exchange serv
 
 1. Open the EAC and navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the Exchange server where you want to install the certificate, click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import Exchange certificate**.
+2. In the **Select server** list, select the Exchange server where you want to install the certificate, click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import Exchange certificate**.
 
 3. The **Import Exchange certificate** wizard opens. On the **This wizard will import a certificate from a file** page, enter the following information:
 
@@ -67,7 +67,7 @@ These are the types of certificate files that you can import on an Exchange serv
 
    When you're finished, click **Next**.
 
-4. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png)
+4. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png)
 
    On the **Select a server** page that opens, select the Exchange server where you want to install the certificate, and click **Add - \>**. Repeat this step as many times as necessary. When you're finished selecting servers, click **OK**.
 

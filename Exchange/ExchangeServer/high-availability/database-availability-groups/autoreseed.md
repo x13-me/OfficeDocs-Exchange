@@ -46,7 +46,7 @@ An example AutoReseed configuration is illustrated below.
 
  **Example AutoReseed configuration**
 
-![Example Automatic Reseed Configuration](../../media/ITPro_Mailbox_AutoReseed.gif)
+![Example Automatic Reseed Configuration.](../../media/ITPro_Mailbox_AutoReseed.gif)
 
 In this example, there are three volumes, two of which will contain databases (VOL1 and VOL2), and one of which is a blank, formatted spare (VOL3).
 

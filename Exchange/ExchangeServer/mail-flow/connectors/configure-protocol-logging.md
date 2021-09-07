@@ -84,7 +84,7 @@ Use this procedure to enable or disable protocol logging on a Send connector or 
 
    - **Mail flow** \> **Receive connectors**.
 
-2. Select the connector you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the connector you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the **General** tab in the **Protocol logging level** section, select one of the following options:
 
@@ -100,7 +100,7 @@ Use this procedure to configure the location of the protocol logs for all Send c
 
 1. Open the EAC and navigate to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the server properties page, click **Transport logs**. In the **Protocol log** section, change the following settings:
 

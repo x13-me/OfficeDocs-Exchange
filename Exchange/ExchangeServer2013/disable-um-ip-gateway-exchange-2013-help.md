@@ -36,7 +36,7 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
 
 ## Use the EAC to disable a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to disable, and then click the **Down arrow** ![Down Arrow Icon](images/ITPro_EAC_DownArrowIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to disable, and then click the **Down arrow** ![Down Arrow Icon.](images/ITPro_EAC_DownArrowIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

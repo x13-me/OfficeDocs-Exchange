@@ -171,7 +171,7 @@ To assign a mailbox to the Exchange recipient, perform the following steps:
 
 ## Use the EAC to specify the DSN codes
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
 
 2. In the **DNS codes** section, type the DSN codes you want to monitor using the format *\<x.y.z\>*, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Select an existing entry and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it, or click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. When you are finished, click **Save**.
 

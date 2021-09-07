@@ -56,7 +56,7 @@ Each location contains the infrastructure elements that are necessary to operate
 
 The following figure illustrates the Contoso configuration.
 
-![Database availability group extended to two sites, keywords: Exchange high availability, Exchange site resilience](../media/ITPro_Mailbox_DAGTwoSites.png)
+![Database availability group extended to two sites, keywords: Exchange high availability, Exchange site resilience.](../media/ITPro_Mailbox_DAGTwoSites.png)
 
 ### Network configuration
 
@@ -153,7 +153,7 @@ As shown in the following figure, Contoso is taking a balanced approach to their
 
  **Database copy layout for Contoso, Ltd**
 
-![Database Copy Layout for Contoso, Ltd, keywords: Exchange DAG high availability](../media/ITPro_Mailbox_DeployExampleDBLayout.png)
+![Database Copy Layout for Contoso, Ltd, keywords: Exchange DAG high availability.](../media/ITPro_Mailbox_DeployExampleDBLayout.png)
 
 Each Mailbox server hosts an active mailbox database copy, two non-lagged passive database copies, and one lagged passive database copy. The lagged copy of each active mailbox database is hosted on a Mailbox server in the other site.
 

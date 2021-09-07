@@ -46,13 +46,13 @@ The subsequent two procedures are for creating connectors from Office 365 to you
 
 7. Check the check box for **Turn it on** under **What do you want to do after connector is saved?**
 
-:::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on":::
+:::image type="content" source="../../media/providing-a-connector-name-and-turning-on.png" alt-text="The screen on which a name is given to the connector that is then turned on.":::
 
 8. Click **Next**. The **Use of connector** screen appears.
 
 9. Choose **Only when I have a transport rule set up that redirects messages to this connector**.
 
-:::image type="content" source="../../media/configuring-transport-rule.png" alt-text="A screen on which the transport rule is chosen as a condition":::
+:::image type="content" source="../../media/configuring-transport-rule.png" alt-text="A screen on which the transport rule is chosen as a condition.":::
 
 10. Click **Next**. The **Routing** screen appears.
 
@@ -63,7 +63,7 @@ The subsequent two procedures are for creating connectors from Office 365 to you
 
 12. Click **+**. The smart host value is displayed under the text box.
 
-:::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined":::
+:::image type="content" source="../../media/specifying-smart-host.png" alt-text="The screen on which the smart host address is defined.":::
 
 > [!NOTE]
 > It is mandatory to click **+** after entering the smart host name to navigate to the next screen.
@@ -72,7 +72,7 @@ The subsequent two procedures are for creating connectors from Office 365 to you
 
 14. Check the check box for **Always use Transport Layer Security (TLS) to secure the connection (recommended)**.
 
-:::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined":::
+:::image type="content" source="../../media/define-tls-settings.png" alt-text="The screen on which TLS settings are defined.":::
 
 15. Click **Next**. The **Validation email** screen appears.
 
@@ -88,29 +88,29 @@ The subsequent two procedures are for creating connectors from Office 365 to you
 
 ### Classic EAC
 
-1. Go to **Mail flow** \> **Connectors** and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
+1. Go to **Mail flow** \> **Connectors** and click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
 
 2. In the **From:** drop-down box, choose **Office 365**.
 
 3. In the **To:** drop-down box, choose either Your organization's email server or Partner organization if you want to connect to a server other than your organizations.
 
-   ![route to and from options](../../media/eaa1aabd-31fa-4598-921b-7803182f7b5f.png)
+   ![route to and from options.](../../media/eaa1aabd-31fa-4598-921b-7803182f7b5f.png)
 
 4. Name the connector and add a description. If you want to turn on the connector immediately, check **Turn it on**. Click **Next**.
 
-   ![name connector](../../media/f4b47d74-3251-4d04-83aa-7978ba5cd0e4.png)
+   ![name connector.](../../media/f4b47d74-3251-4d04-83aa-7978ba5cd0e4.png)
 
 5. Choose **Only when I have a transport rule...** and click **Next**.
 
-   ![transport rule option](../../media/5aab8ee0-7244-41ea-b504-71ff3e5d1f18.png)
+   ![transport rule option.](../../media/5aab8ee0-7244-41ea-b504-71ff3e5d1f18.png)
 
 6. Specify one or more smart hosts to which Microsoft 365 or Office 365 will deliver email messages.
 
-   ![add host](../../media/d41ef961-224c-4c7e-8ac8-756b785a73fc.png)
+   ![add host.](../../media/d41ef961-224c-4c7e-8ac8-756b785a73fc.png)
 
 7. Define your Transport Layer Security (TLS) settings depending on your security needs.
 
-   ![define TLS settings](../../media/728b161e-7780-4686-a169-df37a7f96531.png)
+   ![define TLS settings.](../../media/728b161e-7780-4686-a169-df37a7f96531.png)
 
 8. Review your new connector configurations and click **Next** to validate the connector.
 
@@ -123,15 +123,15 @@ To create a mail flow rule in EAC, perform the following steps:
 > [!NOTE]
 > The below procedure is applicable for New and Classic EACs.
 
-1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
+1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 
 2. In the **New rule** window, name the rule. To see all the options available for the rule, click **More options...** at the bottom of the page.
 
-   ![click more options](../../media/96c2ca71-32b2-423c-99f6-1ee35c63af5c.png)
+   ![click more options.](../../media/96c2ca71-32b2-423c-99f6-1ee35c63af5c.png)
 
-3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:** choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box.
+3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:** choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box.
 
-   ![apply rule if](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
+   ![apply rule if.](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
 
    > [!IMPORTANT]
    > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that changes made in the connector from Office 365 to your organization's email server take time to replicate.

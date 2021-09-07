@@ -25,7 +25,7 @@ Properly configured inbound connectors are a trusted source of incoming mail to 
 
 Mail routing in complex scenarios looks like this:
 
-![Mail flow diagram for complex routing scenarios](../../media/enhanced-filtering-for-connectors-before.png)
+![Mail flow diagram for complex routing scenarios.](../../media/enhanced-filtering-for-connectors-before.png)
 
 As you can see, the message adopts the source IP of the service, appliance, or on-premises Exchange organization that sits in front of Microsoft 365. The message arrives in Microsoft 365 with a different source IP address. This behavior isn't a limitation of Microsoft 365; it's simply how SMTP works.
 
@@ -33,7 +33,7 @@ In these scenarios, you can still get the most out of [Exchange Online Protectio
 
 After you enable Enhanced Filtering for Connectors, mail routing in complex routing scenarios looks like this:
 
-![Mail flow diagram for complex routing scenarios after Enhance Filtering for Connectors is enabled](../../media/enhanced-filtering-for-connectors-after.png)
+![Mail flow diagram for complex routing scenarios after Enhance Filtering for Connectors is enabled.](../../media/enhanced-filtering-for-connectors-after.png)
 
 As you can see, Enhanced Filtering for connectors allows IP address and sender information to be preserved, which has the following benefits:
 
@@ -51,10 +51,8 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
 > [!NOTE]
 >
 > - We always recommend that you point your MX record to Microsoft 365 or Office 365 in order to reduce complexity. For example, some hosts might invalidate DKIM signatures, causing false positives. When two systems are responsible for email protection, determining which one acted on the message is more complicated.
->
 > - The most common scenarios that Enhanced Filtering is designed for are Hybrid environments; however, the mail destined for on-premises mailboxes (outbound mail) will still not be filtered by EOP. The only way to get full EOP scanning on all mailboxes is to [move your MX record to Microsoft 365 or Office 365](/exchange/standalone-eop/set-up-your-eop-service#step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop).
->
-> - Do not put another scanning service or host _after_ EOP. Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization. When the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](../../../ExchangeHybrid/transport-options.md) should not be used to introduce non-Exchange servers into the mail flow path.  
+> - Do not put another scanning service or host _after_ EOP. Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization. When the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](../../../ExchangeHybrid/transport-options.md) should not be used to introduce non-Exchange servers into the mail flow path.
 
 ## Configure Enhanced Filtering for Connectors
 

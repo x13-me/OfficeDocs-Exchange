@@ -67,7 +67,7 @@ Each mailbox consists of an Active Directory user and the mailbox data that's st
 > [!IMPORTANT]
 > When you create a mailbox for a new or existing user, the Exchange attributes required for a mailbox are added to the user object in Active Directory. The associated mailbox data isn't created until the mailbox either receives a message or the user signs in to it.
 
-![Parts that make up a mailbox](../media/RecipientsConceptual_MailboxParts.gif)
+![Parts that make up a mailbox.](../media/RecipientsConceptual_MailboxParts.gif)
 
 > [!CAUTION]
 > If you remove a mailbox, the mailbox data stored in the Exchange mailbox database is marked for deletion and the associated user account is also deleted from Active Directory. To retain the user account and delete only the mailbox data, you must disable the mailbox.
@@ -84,7 +84,7 @@ Exchange supports the following mailbox types:
 
     **Linked mailbox**
 
-    ![Complex Exchange organization with resource forest](../media/ExPlanningArchitect_ComplexOrg_01.gif)
+    ![Complex Exchange organization with resource forest.](../media/ExPlanningArchitect_ComplexOrg_01.gif)
 
 - **Microsoft 365 or Office 365 mailboxes**: When you create a Microsoft 365 or Office 365 mailbox in Exchange Online in a hybrid deployment, the mail user is created in Active Directory on-premises. Directory synchronization, if it's configured, automatically synchronizes this new user object to Microsoft 365 or Office 365, where it's converted to a cloud mailbox in Exchange Online. You can create Microsoft 365 or Office 365 mailboxes as regular user mailboxes, resource mailboxes for meeting rooms and equipment, and shared mailboxes.
 

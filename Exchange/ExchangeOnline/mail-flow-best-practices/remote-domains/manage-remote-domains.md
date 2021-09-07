@@ -101,7 +101,7 @@ The new remote domain is created and added to the list.
 1. Go to **Mail flow** \> **Remote domains**.
 
 2. To create a new domain:
-   1. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.png).
    2. In the **Name** box, enter a descriptive name for the domain.
    3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
 
@@ -132,7 +132,7 @@ The new remote domain is created and added to the list.
 
 1. Go to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
 
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select a remote domain, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, click **Confirm**. The remote domain is deleted.
 
@@ -140,7 +140,7 @@ The new remote domain is created and added to the list.
 
 1. Go to **Mail flow** \> **Remote domains**.
 
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select a remote domain, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, select **Yes**.
 

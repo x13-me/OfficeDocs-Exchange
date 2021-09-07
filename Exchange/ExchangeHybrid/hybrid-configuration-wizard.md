@@ -108,4 +108,4 @@ When updating an existing hybrid deployment, the Hybrid Configuration Engine per
 
 The following figure shows a summary of how the Hybrid Configuration Engine retrieves and modifies on-premises Exchange server and Exchange Online configuration settings during the hybrid deployment process.
 
-![Hybrid Configuration Engine flow](media/HybridConfigurationEngine.gif)
+![Hybrid Configuration Engine flow.](media/HybridConfigurationEngine.gif)

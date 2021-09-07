@@ -32,7 +32,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
 
 1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2. Click **New** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+2. Click **New** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 3. On the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
 
@@ -45,7 +45,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
      > [!NOTE]
      > As previously explained, if you select the **Search all mailboxes**option, you won't be able to enable an In-Place Hold for the search.
 
-   ![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
+   ![Use In-Place eDiscovery to search and place a hold on public folders.](../../media/TA_MRM_SearchPublicFolders.gif)
 
 5. On the **Search query** page, complete the following fields:
 
@@ -61,7 +61,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
 
 7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search or placed on hold based on the criteria you specified.
 
-   Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
+   Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
 
 ## Use the Exchange Management Shell to search and place a hold on public folders
 

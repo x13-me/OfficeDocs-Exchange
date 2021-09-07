@@ -44,7 +44,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select a mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select a mailbox, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following:
 
@@ -56,7 +56,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
    - **Don't permanently delete items until the database is backed up**: Check this box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
-   ![default retention settings](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
+   ![default retention settings.](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
 
 ## Configure deleted item retention for a mailbox database
 
@@ -64,7 +64,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Servers** \> **Databases**.
 
-2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox database property page, click **Limits**, and then select one of the following:
 

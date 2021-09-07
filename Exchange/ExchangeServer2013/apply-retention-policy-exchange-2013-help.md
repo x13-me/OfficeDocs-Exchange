@@ -37,7 +37,7 @@ For additional management tasks related to messaging records management (MRM), s
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox to which you want to apply the retention policy, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. In **User Mailbox**, click **Mailbox features**.
 

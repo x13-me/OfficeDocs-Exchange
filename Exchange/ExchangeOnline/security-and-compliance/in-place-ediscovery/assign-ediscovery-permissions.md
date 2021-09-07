@@ -49,9 +49,9 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 1. Go to **Permissions** \> **Admin roles**.
 
-2. In the list view, select **Discovery Management** and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif)
+2. In the list view, select **Discovery Management** and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif)
 
-3. In **Role Group**, under **Members**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In **Role Group**, under **Members**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **Select Members**, select one or more users, click **Add**, and then click **OK**.
 

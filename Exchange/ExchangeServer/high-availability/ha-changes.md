@@ -126,7 +126,7 @@ An example of a configuration that uses multiple databases per volume is illustr
 
  **Configuration that uses multiple databases per volume**
 
-![Multiple databases per volume](../media/ITPro_Mailbox_MultipleDBPerVolume.gif)
+![Multiple databases per volume.](../media/ITPro_Mailbox_MultipleDBPerVolume.gif)
 
 The configuration in the diagram provides a symmetrical design. All four servers have the same four databases all hosted on a single disk per server. The key is that the number of copies of each database that you have should be equal to the number of database copies per disk.
 

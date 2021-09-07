@@ -27,13 +27,13 @@ The Client Access server in Exchange 2013 is a stateless thin server designed to
 
 You can access the Exchange Certificate Management UI through the EAC by selecting **Servers** and then **Certificates**. Using the management UI you can perform the following actions:
 
-  - **Create a new certificate**: Selecting **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") launches the New Exchange Certificate wizard.
+  - **Create a new certificate**: Selecting **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") launches the New Exchange Certificate wizard.
 
-  - **Edit an existing certificate**: Selecting **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") on a valid certificate allows you to see the certificate's property page.
+  - **Edit an existing certificate**: Selecting **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") on a valid certificate allows you to see the certificate's property page.
 
-  - **Delete a certificate**: Selecting **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") when a certificate is selected launches the delete confirmation dialog box.
+  - **Delete a certificate**: Selecting **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") when a certificate is selected launches the delete confirmation dialog box.
 
-  - **Perform additional actions**: Selecting **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") allows you to export or import a certificate. If you want to export a certificate, the certificate must be valid.
+  - **Perform additional actions**: Selecting **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") allows you to export or import a certificate. If you want to export a certificate, the certificate must be valid.
 
 ## Certificate expiration
 

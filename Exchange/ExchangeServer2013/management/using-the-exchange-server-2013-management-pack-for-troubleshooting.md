@@ -21,11 +21,11 @@ _**Applies to:** Exchange Server 2013_
 
 Rob Fielder is an Exchange administrator at Contoso. He opens the SCOM Console and click on the **Server Health** in the Exchange Server 2013 dashboard to check the status of his Exchange servers. He notices a critical state for the **Service Components** on one of his CAS servers.
 
-![Failed CAS server](images/Dn195913.32a265d9-68e0-4d8c-9f83-1d10cdda1f84(EXCHG.150).png "Failed CAS server")
+![Failed CAS server.](images/Dn195913.32a265d9-68e0-4d8c-9f83-1d10cdda1f84(EXCHG.150).png "Failed CAS server")
 
 Rob double-clicks on the server which opens the **Health Explorer** window. In this window he can see that the service component that is in an unhealthy state is the OWA.Proxy health set. He click on it to see the relevant information for this health set.
 
-![Failed CAS server healthset details](images/Dn195913.8e4d05a6-9128-40d8-b262-e60e9affc973(EXCHG.150).png "Failed CAS server healthset details")
+![Failed CAS server healthset details.](images/Dn195913.8e4d05a6-9128-40d8-b262-e60e9affc973(EXCHG.150).png "Failed CAS server healthset details")
 
 The link provided under External Knowledge Resources takes Rob to the [Troubleshooting OWA.Proxy Health Set](/exchange/management/health/troubleshooting-owa-proxy-health-set) topic. In this article, Rob sees that the first thing to do is to verify that the issue still exists. Following the instructions, he runs the following command to verify the current state of the OWA.Proxy health set in the Shell:
 
@@ -79,6 +79,6 @@ Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Pr
 
 He goes back to the SCOM console and verifies that the issue is resolved.
 
-![Server Health](images/Dn195908.c863be83-fc4b-4daf-a18b-27b1aae15b1d(EXCHG.150).png "Server Health")
+![Server Health.](images/Dn195908.c863be83-fc4b-4daf-a18b-27b1aae15b1d(EXCHG.150).png "Server Health")
 
 The scenario covered above is a simple demonstration of the troubleshooting workflow when you see an alert in the SCOM console. Even though the details will vary, you will generally follow a similar troubleshooting workflow for each problem reported in the console.

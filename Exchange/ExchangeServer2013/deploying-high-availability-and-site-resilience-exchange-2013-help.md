@@ -57,7 +57,7 @@ The following figure illustrates the Contoso configuration.
 
 **Database availability group extended across two sites**
 
-![Database availability group extended to two sites](images/Dd638129.1c326fd4-3c7b-4416-a63d-fbfdd0cc6b18(EXCHG.150).gif "Database availability group extended to two sites")
+![Database availability group extended to two sites.](images/Dd638129.1c326fd4-3c7b-4416-a63d-fbfdd0cc6b18(EXCHG.150).gif "Database availability group extended to two sites")
 
 ## Network configuration
 
@@ -209,7 +209,7 @@ As shown in the following figure, Contoso is taking a balanced approach to their
 
 **Database copy layout for Contoso, Ltd**
 
-![Database Copy Layout for Contoso, Ltd](images/Dd638129.41d0c78e-ccaf-4b67-8bab-6fb344668ead(EXCHG.150).gif "Database Copy Layout for Contoso, Ltd")
+![Database Copy Layout for Contoso, Ltd.](images/Dd638129.41d0c78e-ccaf-4b67-8bab-6fb344668ead(EXCHG.150).gif "Database Copy Layout for Contoso, Ltd")
 
 Each Mailbox server hosts an active mailbox database copy, two non-lagged passive database copies, and one lagged passive database copy. The lagged copy of each active mailbox database is hosted on a Mailbox server in the other site.
 

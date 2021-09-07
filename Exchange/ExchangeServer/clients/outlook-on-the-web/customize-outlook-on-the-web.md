@@ -53,7 +53,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the Web sign-in page with element call-outs](../../media/04da354c-d1fd-43fb-9fd3-6114cdb64314.png)
+   ![Outlook on the Web sign-in page with element call-outs.](../../media/04da354c-d1fd-43fb-9fd3-6114cdb64314.png)
 
 ## Customize the color of the Outlook on the web error page
 
@@ -63,7 +63,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the web error page with element call-outs](../../media/fcf95834-6c41-42f4-915d-a6593bccd9f6.png)
+   ![Outlook on the web error page with element call-outs.](../../media/fcf95834-6c41-42f4-915d-a6593bccd9f6.png)
 
 ## Customize the color of the Outlook on the web language selection page
 
@@ -73,7 +73,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the web language selection page with element call-outs](../../media/6876eb09-a53b-441c-ad76-01bfb9676c53.png)
+   ![Outlook on the web language selection page with element call-outs.](../../media/6876eb09-a53b-441c-ad76-01bfb9676c53.png)
 
 ## Customize the images on the Outlook on the web sign-in, language selection, and error pages
 

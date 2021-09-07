@@ -58,7 +58,7 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 ## Use the EAC to create the Receive connector
 
-1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the first page of the **New Receive connector** wizard, enter the following values
 

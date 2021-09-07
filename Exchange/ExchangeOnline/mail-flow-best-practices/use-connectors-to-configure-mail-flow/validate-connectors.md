@@ -41,17 +41,17 @@ Before validating and turning on the connectors, sign in to Microsoft 365 or Off
 
 2. Choose and click the connector you want to validate or turn on.
 
-:::image type="content" source="../../media/connector-chosen-in-new-eac.png" alt-text="The screen of New EAC on which the user chooses a connector for viewing its details":::
+:::image type="content" source="../../media/connector-chosen-in-new-eac.png" alt-text="The screen of New EAC on which the user chooses a connector for viewing its details.":::
 
 3. Click the connector. The connector details screen appears.
 
 4. View the information.
 
-:::image type="content" source="../../media/display-of-validation-details.png" alt-text="The screen on which the validation history details for the connector is displayed":::
+:::image type="content" source="../../media/display-of-validation-details.png" alt-text="The screen on which the validation history details for the connector is displayed.":::
 
 When you select a connector for mail flow that originates in Microsoft 365 or Office 365, you can choose the **Validate this connector** link. You can also see whether the connector was validated previously as shown in the following screenshot.
 
-:::image type="content" source="../../media/connector-validation-link.png" alt-text="The screen on which the link that enables connector validation is displayed":::
+:::image type="content" source="../../media/connector-validation-link.png" alt-text="The screen on which the link that enables connector validation is displayed.":::
 
 5. Under **Status**, if **Off** is displayed, click **Edit name or status**. The **Connector name** screen appears.
 

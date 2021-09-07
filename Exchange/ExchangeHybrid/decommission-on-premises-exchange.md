@@ -44,7 +44,11 @@ A hybrid deployment is not for everyone; in fact there are usually better option
 
 Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../ExchangeOnline/mailbox-migration/mailbox-migration.md).)
 
-|**Existing organization**|**Number of mailboxes to migrate**|**Do you want to manage user accounts in your on-premises organization?**|**Migration type**|
+<br>
+
+****
+
+|Existing organization|Number of mailboxes to migrate|Do you want to manage user accounts in your on-premises organization?|Migration type|
 |:-----|:-----|:-----|:-----|
 |Exchange 2003 or later|Less than 2,000 mailboxes|No|Cutover Exchange migration|
 |Exchange 2007 or Exchange 2003|Less than 2,000 mailboxes|No|Staged Exchange migration|
@@ -52,6 +56,7 @@ Use the following table to decide what type of migration works for your organiza
 |Exchange 2010 or later|More than 2,000 mailboxes<sup>\*</sup>|Yes|Remote move migration in an Exchange hybrid deployment|
 |Exchange 2000 Server or earlier versions|No maximum|Yes|IMAP migration|
 |Non-Exchange on-premises messaging system|No maximum|Yes|IMAP migration|
+|
 
 <sup>\*</sup>Some organizations with fewer than 2,000 mailboxes may benefit from features and capabilities that are only available with a hybrid deployment. It's important to carefully consider the benefits of a hybrid deployment with the complexity that introduces. We strongly recommend that customers with fewer than 2,000 mailboxes consider cutover or staged migration before proceeding with a hybrid deployment.
 
@@ -71,7 +76,7 @@ It is not simple to move from a hybrid configuration to the cloud. The process f
 
 Depending on your immediate goals, however, getting from a hybrid configuration to the cloud only can be a fairly straight-forward process, with some guidance. The following are three common hybrid scenarios along with our recommendation for how to properly achieve the end goal of the customer.
 
-Since the hybrid customer base is very diverse, trying to fit all of them into "common" scenarios is difficult. We attempted to provide some high-level scenarios for on-premises Exchange Server decommissioning below, so as you read through these scenarios and form a plan to decommission, you will need to determine the scenario that best fits your needs.
+Since the hybrid customer base is very diverse, trying to fit all of them into "common" scenarios is difficult. We attempted to provide some high-level scenarios for on-premises Exchange Server decommissioning below, so as you read through these scenarios and formulate a plan to decommission, you will need to determine the scenario that best fits your needs.
 
 ### Scenario one
 
@@ -79,7 +84,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
  **Solution**: Since all of the users will be managed in Microsoft 365 or Office 365, and there are no additional directory synchronization requirements, you can safely disable directory synchronization and remove Exchange from the on-premises environment.
 
-![Remove Exchange from the on-premises environment](media/f9c2a2cb-4c16-4ca3-8244-b89c1cdf0744.jpg)
+![Remove Exchange from the on-premises environment.](media/f9c2a2cb-4c16-4ca3-8244-b89c1cdf0744.jpg)
 
 ### To disable directory synchronization and uninstall Exchange hybrid
 
@@ -117,7 +122,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
-       ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
+       ![Hybrid Configuration Wizard creates connectors with unique namespace.](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
 
 5. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
@@ -129,9 +134,9 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard.](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
-6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, these steps can be skipped because only a small subset of our customers have OAuth configured.
+6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, you can skip these steps sbecause only a small number of customers have OAuth configured.
 
    To disable the on-premises configuration:
 
@@ -161,17 +166,17 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 ### Scenario two
 
- **Issue**: My organization has been running in a hybrid configuration for about a year now and have finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes. (This scenario would apply to any customer that is planning on keeping directory synchronization).
+ **Issue**: My organization has been running in a hybrid configuration for about a year now and hass finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes. (This scenario would apply to any customer that is planning on keeping directory synchronization).
 
  **Solution**: Since the customer is planning on keeping AD FS, they will also have to keep directory synchronization since it is a prerequisite. Because of that, they cannot fully remove the Exchange servers from the on-premises environment. However, they can decommission most of the Exchange servers, but leave a couple of servers behind for user management. Keep in mind that the servers that are left running can be run on virtual machines since the workload is almost completely shifted to Exchange Online.
 
 The graphic below describes the desired end state:
 
-![Decommission Exchange servers with some remaining](media/d7734579-6999-45b2-9a0f-a23f18353a49.jpg)
+![Decommission Exchange servers with some remaining.](media/d7734579-6999-45b2-9a0f-a23f18353a49.jpg)
 
 The graphic below describes the actual end state:
 
-![State before decommissioning Exchange servers](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
+![State before decommissioning Exchange servers.](media/c692f0af-6536-4bc9-950d-58a1e486525f.jpg)
 
 > [!TIP]
 > If you choose to remove ADFS from your infrastructure, Azure AD Connect will synchronize your on-premises credentials with the cloud. Each service will authenticate users independently:
@@ -188,7 +193,7 @@ The graphic below describes the actual end state:
    > [!IMPORTANT]
    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.
 
-2. After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [External Domain Name System records for Office 365](/office365/enterprise/external-domain-name-system-records).
+2. After you have moved all of the mailboxes to Exchange Online, the first step in decommissioning most of your Exchange servers is to point the MX and Autodiscover DNS records to Exchange Online instead of to your on-premises email organization. For more information, see [External Domain Name System records for Office 365](/office365/enterprise/external-domain-name-system-records).
 
    > [!IMPORTANT]
    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.
@@ -218,7 +223,7 @@ The graphic below describes the actual end state:
 
 5. Remove all Exchange servers with the exception of the servers you will retain for user management and creation. Two servers should be sufficient for user management, although you could possibly get by with one server. In addition, there is no need to have a Database Availability Group or any other high availability options.
 
-6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, these steps can be skipped because only a small subset of our customers have OAuth configured.
+6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Microsoft 365 or Office 365. In most environments, you can skip these steps because only a small number of customers have OAuth configured.
 
    To disable the on-premises configuration:
 
@@ -252,7 +257,7 @@ The graphic below describes the actual end state:
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below.
 
-      ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
+      ![Hybrid Configuration Wizard creates connectors with unique namespace.](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
 
 8. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
@@ -264,8 +269,8 @@ The graphic below describes the actual end state:
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below.
 
-      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
-      
+      ![Remove the Organization Relationship created by the Hybrid Configuration Wizard.](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+
 > [!NOTE]
 > It's recommended that you leave the Exchange Hybrid Deployment feature enabled in Azure AD Connect.
 
@@ -273,4 +278,4 @@ The graphic below describes the actual end state:
 
 **Issue**: I want to remove my Exchange servers on-premises after moving all of my mailboxes to Exchange Online. However, we discovered that they are using Exchange for other purposes, such as for a Simple Mail Transfer Protocol (SMTP) relay for an application or for access to public folders. If you have a need for Exchange servers on-premises to meet the current needs of your organization, it may not be in your best interest to remove the on-premises servers.
 
-**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint. Exchange-only services and features, such as public folders, will require you to either maintain your on-premises Exchange servers or migrate those services to Exchange Online.  Per scenarios one and two, if you maintain identity synchronization from Active Directory, you will need to continue to maintain at least one Exchange server on-premises.
+**Solution**: We recommend against removing Exchange and the hybrid configuration at this point. If you were to even start the process by pointing the Autodiscover Records to Exchange Online, you would immediately break some features like hybrid public folder access. You could change the MX record to point to Exchange Online Protection if it is not already, you could even remove some of the on-premises Exchange servers. However, you would need to keep enough in place to handle the remaining hybrid functions. Usually, this would lead to a very small on-premises footprint. Exchange-only services and features, such as public folders, will require you to either maintain your on-premises Exchange servers or migrate those services to Exchange Online. Per scenarios one and two, if you maintain identity synchronization from Active Directory, you will need to continue to maintain at least one Exchange server on-premises.

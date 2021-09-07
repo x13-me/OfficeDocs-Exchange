@@ -26,7 +26,7 @@ Once an account configuration has been created and the user enrolls their device
 
 The following images show an example of the end-user setup process after Outlook for iOS and Android has been configured in Intune in the Azure Portal.
 
-![Account setup for Outlook for iOS and Android on-premises](../../media/77f0906c-0d62-48a4-9a93-534e29dae7e0.png)
+![Account setup for Outlook for iOS and Android on-premises.](../../media/77f0906c-0d62-48a4-9a93-534e29dae7e0.png)
 
 ## Create an app configuration policy for Outlook for iOS and Android using Microsoft Intune
 

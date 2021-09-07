@@ -47,9 +47,9 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 ## Use the EAC to create a UM hunt group
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM hunt group** page, enter the following information:
 
