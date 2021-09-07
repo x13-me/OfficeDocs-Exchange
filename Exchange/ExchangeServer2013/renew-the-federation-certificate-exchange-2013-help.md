@@ -21,7 +21,8 @@ This topic explains how to update the self-signed federation certificate that's 
 
 - If the federation certificate has already expired, follow the steps in the Replace an expired federation certificate section.
 
-**Note:** by design, after renewing the certificate, the expired certificate associated with the Federation trust cannot be removed from the Federation trust object. 
+> [!NOTE]
+> By design, after renewing the certificate, the expired certificate associated with the federation trust cannot be removed from the federation trust object. 
 
 For more information about federation trusts and federation, see [Federation](federation-exchange-2013-help.md).
 
