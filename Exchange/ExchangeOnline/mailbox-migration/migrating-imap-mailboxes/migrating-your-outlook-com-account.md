@@ -74,3 +74,5 @@ After you have setup two-step verification, you can also obtain an app password 
 9. You'll get a message that two-step verification is turned on. Print your new *recovery code* (this isn't your app password). If you ever need to recover, access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place.
 
 10. Choose **Next**.
+
+After you turn on two-step verification and create an app password, continue with the [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md).
