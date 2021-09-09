@@ -445,6 +445,40 @@ This example changes the user-created distribution group Dog Lovers to require t
 Set-DistributionGroup -Identity "Dog Lovers" -MemberJoinRestriction 'ApprovalRequired' -BypassSecurityGroupManagerCheck
 ```
 
+This example exports the members of a distribution group to a .csv file named DLGroupMembers.csv. 
+
+```PowerShell
+$Groups = Get-DistributionGroup -ResultSize Unlimited
+$Groups | ForEach-Object {
+$group = $_
+Get-DistributionGroupMember -Identity $group.Name -ResultSize Unlimited | ForEach-Object {
+    New-Object -TypeName PSObject -Property @{
+        Group = $group.DisplayName
+        Member = $_.Name
+        EmailAddress = $_.PrimarySMTPAddress
+        RecipientType= $_.RecipientType
+        }
+    }
+} | Export-CSV ".\DLGroupMembers.csv" -NoTypeInformation -Encoding UTF8
+```
+
+This example exports the members of a dynamic distribution group to a .csv file named DDLGroupMembers.csv. 
+
+```PowerShell
+$Groups = Get-DynamicDistributionGroup -ResultSize Unlimited
+$Groups | ForEach-Object {
+$group = $_
+Get-DynamicDistributionGroupMember -Identity $group.Name -ResultSize Unlimited | ForEach-Object {
+    New-Object -TypeName PSObject -Property @{
+        Group = $group.DisplayName
+        Member = $_.Name
+        EmailAddress = $_.PrimarySMTPAddress
+        RecipientType= $_.RecipientType
+        }
+    }
+} | Export-CSV ".\DDLGroupMembers.csv" -NoTypeInformation -Encoding UTF8
+```
+
 ## How do you know these procedures worked?
 
 To verify that you've successfully created, modified, or removed a distribution list group, do any of the following steps:

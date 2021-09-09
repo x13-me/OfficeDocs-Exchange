@@ -98,7 +98,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 
 13. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
     - **SCEP**: Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](/intune/protect/certificates-scep-configure).
-    - **PKCS imported certificates**: Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](/mem/intune/protect/certficates-pfx-configure).
+    - **PKCS imported certificates**: Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device that corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](/mem/intune/protect/certficates-pfx-configure).
     - **Derived credentials**: Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
 
 14. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
@@ -161,20 +161,22 @@ Once S/MIME is enabled and the S/MIME certificates are installed, users can view
 
 Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
-### LDAP support for certificate delivery
+### LDAP support for certificate lookup
 
-Outlook for iOS and Android supports accessing public user certificate keys from secure LDAP directory endpoints. In order to utilize an LDAP endpoint, the following requirements must be met:
+Outlook for iOS and Android supports accessing public user certificate keys from secure LDAP directory endpoints during recipient resolution. In order to utilize an LDAP endpoint, the following requirements must be met:
 
-- The LDAP protocol connection is secured through TLS as connections using unsecure LDAP is not supported.
 - The LDAP endpoint does not require authentication.
 - The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
 - The LDAP endpoint configuration is supported using the following formats:
-  - `<ldaps://contoso.com>`
-  - `<ldaps://contoso.com:636>`
+  - `ldaps://contoso.com`
+  - `ldap://contoso.com`
+  - `ldap://contoso.com:389`
+  - `ldaps://contoso.com:636`
   - `contoso.com`
+  - `contoso.com:389`
   - `contoso.com:636`
 
-When Outlook for iOS and Android performs a certificate lookup, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
+When Outlook for iOS and Android performs a certificate lookup for a recipient, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
 
 ## Using S/MIME in Outlook for iOS and Android
 
