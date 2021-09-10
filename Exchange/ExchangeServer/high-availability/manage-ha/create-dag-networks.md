@@ -41,7 +41,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure, and then click ![Add DAG network](../../media/ITPro_EAC_AddDagNetwork.png).
+2. Select the DAG you want to configure, and then click ![Add DAG network.](../../media/ITPro_EAC_AddDagNetwork.png).
 
 3. On the **new database availability group network** page, provide the following information:
 
@@ -49,7 +49,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
    - **Description**: Use this field to provide a text description of the DAG network.
 
-   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
+   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
 
 4. Click **Save** to create the DAG network.
 

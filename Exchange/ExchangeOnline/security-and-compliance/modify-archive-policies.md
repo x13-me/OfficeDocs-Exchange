@@ -46,7 +46,7 @@ For additional management tasks related to archives, see [Enable archive mailbox
 
 1. Navigate to **Compliance management** \> **Retention tags** and then.
 
-2. In the list view, select the tag **Default 2 year move to archive** and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the tag **Default 2 year move to archive** and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.gif).
 
    > [!TIP]
    > You can click the **TYPE** column to sort retention tags by type. The default archive policy is displayed as type **Default** and has the **Archive** retention action. Alternatively, click **NAME** to sort retention tags by name.

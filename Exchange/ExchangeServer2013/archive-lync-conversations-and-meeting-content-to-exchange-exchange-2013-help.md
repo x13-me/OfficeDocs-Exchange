@@ -19,7 +19,7 @@ In on-premises deployments, you can archive Lync 2013 content to Exchange 2013 m
 
 When you place a mailbox on Litigation Hold, all content types, including Lync items, are preserved. By default, this is also the case when you create an In-Place Hold. However, if you want to use an In-Place Hold to preserve only Lync items, you can use the **select message types** option from the **In-Place eDiscovery & Hold** wizard to select **Lync items**, as shown in the screenshot below.
 
-![Place Lync items on hold](images/ITPro_Compliance_HoldLyncItems.jpg)
+![Place Lync items on hold.](images/ITPro_Compliance_HoldLyncItems.jpg)
 
 > [!NOTE]
 > You can also configure an In-Place Hold to exclude Lync items. For example, organizations may prefer to preserve instant message and voice mail items for a shorter period of time than other types of content. To implement this type of hold policy, you would create an In-Place Hold to preserve content for a long period of time (for example, 7 years) and exclude Lync items from this hold. Then you would create another In-Place Hold with a shorter hold duration that preserves only Lync items. You can also specify how long the content should be preserved. For more information about creating a hold with a specific duration, see [In-Place Hold and Litigation Hold](in-place-and-litigation-holds-exchange-2013-help.md).

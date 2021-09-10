@@ -79,7 +79,7 @@ The Recoverable Items folder contains the following subfolders:
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 
-![Recoverable Items folder](images/Ee364755.a1a08afc-3617-4adb-83ab-a6904516954e(EXCHG.150).gif "Recoverable Items folder")
+![Recoverable Items folder.](images/Ee364755.a1a08afc-3617-4adb-83ab-a6904516954e(EXCHG.150).gif "Recoverable Items folder")
 
 ## Deleted item retention
 

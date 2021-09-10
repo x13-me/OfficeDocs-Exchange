@@ -171,6 +171,6 @@ Notice that Fred and Martin are accessible by both exclusive scopes. This is bec
 
 **Interaction between exclusive scopes and regular scopes**
 
-![Exclusive and regular scope interaction](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
+![Exclusive and regular scope interaction.](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
 
 For more information about management scopes, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).

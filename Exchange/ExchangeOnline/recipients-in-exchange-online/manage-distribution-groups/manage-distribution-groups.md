@@ -196,9 +196,9 @@ It's important to note the terminology differences between Active Directory and 
 
 ### Use the Classic EAC to create distribution list groups
 
-![New Try Microsoft 365 Groups](../../media/3ea82c95-9dda-450f-823b-cd0772249d81.png)
+![New Try Microsoft 365 Groups.](../../media/3ea82c95-9dda-450f-823b-cd0772249d81.png)
 
-You can now create a Microsoft 365 group instead of a distribution group, if you have a Microsoft 365 or Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, and have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Microsoft 365 group** to get started and see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+You can now create a Microsoft 365 group instead of a distribution group, if you have a Microsoft 365 or Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, and have a library for storing and working on group files and folders. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) \> **Microsoft 365 group** to get started and see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 If you have existing distribution groups that you want to migrate to Microsoft 365 groups, see [Upgrade distribution lists to Microsoft 365 Groups in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists).
 
@@ -206,7 +206,7 @@ If you still want to create distribution list groups, use the following steps:
 
 1. In the Classic EAC, go to **Recipients** \> **Groups**.
 
-2. Click **New** ![New distribution group icon](../../media/ITPro_EAC_NewDGIcon.png), and then select **Distribution group**.
+2. Click **New** ![New distribution group icon.](../../media/ITPro_EAC_NewDGIcon.png), and then select **Distribution group**.
 
 3. In the **New distribution group** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
 
@@ -220,17 +220,17 @@ If you still want to create distribution list groups, use the following steps:
 
    - <sup>\*</sup>**Owners**: A group owner can add members to the group, approve or reject requests to join or leave the group, and approve or reject messages sent to the group. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
-     To add owners, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+     To add owners, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove an owner, select the owner, and then click **Remove** ![Remove](../../media/ITPro_EAC_RemoveIcon.png).
+     To remove an owner, select the owner, and then click **Remove** ![Remove.](../../media/ITPro_EAC_RemoveIcon.png).
 
    - **Members**: Add and remove group members and specify whether approval is required for people to join or leave the group.
 
      Use **Add group owners as members** to add or remove the owners as members (this setting is selected by default).
 
-     To add members, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+     To add members, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove a member, select the member, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
+     To remove a member, select the member, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png).
 
    - **Choose whether owner approval is required to join the group**: Specify whether approval is required for people to join the group. Select one of the following settings:
 
@@ -258,7 +258,7 @@ If you still want to create distribution list groups, use the following steps:
 
 1. In the Classic EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution list group that you want to modify, and then click **Edit** ![Edit tooltip](../../media/ITPro_EAC_AddIcon.png).
+2. In the list of groups, select the distribution list group that you want to modify, and then click **Edit** ![Edit tooltip.](../../media/ITPro_EAC_AddIcon.png).
 
 3. On the distribution group properties page that opens, click one of the following tabs to view or change properties.
 
@@ -284,17 +284,17 @@ If you still want to create distribution list groups, use the following steps:
 
    Use this tab to assign group owners. The group owner can add members to the group, approve or reject requests to join or leave the group, and approve or reject messages sent to the group. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
-   To add owners, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+   To add owners, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-   To remove an owner, select the owner, and then click **Remove** ![Remove tooltip](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove an owner, select the owner, and then click **Remove** ![Remove tooltip.](../../media/ITPro_EAC_RemoveIcon.png).
 
    #### Membership
 
    Use this tab to add or remove group members. Group owners don't need to be members of the group.
 
-   To add members, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+   To add members, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-   To remove a member, select the member, and then click **Remove** ![Remove image](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove a member, select the member, and then click **Remove** ![Remove image.](../../media/ITPro_EAC_RemoveIcon.png).
 
    #### Membership approval
 
@@ -324,9 +324,9 @@ If you still want to create distribution list groups, use the following steps:
 
       You can configure the group to accept messages only from specific senders.
   
-      To add senders, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+      To add senders, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-      To remove a sender from the list, select the sender, and then click **Remove** ![Remove image1](../../media/ITPro_EAC_RemoveIcon.png).
+      To remove a sender from the list, select the sender, and then click **Remove** ![Remove image1.](../../media/ITPro_EAC_RemoveIcon.png).
   
       > [!IMPORTANT]
       > Mail contacts are always considered external users. So, if you configure the group to only accept messages from internal senders and you add mail contacts to the list of allowed senders, messages from those mail contacts are still rejected.
@@ -337,17 +337,17 @@ If you still want to create distribution list groups, use the following steps:
 
    - **Messages sent to this group need to be approved by a moderator**: When you enable moderation for the group, messages sent to the group require approval by a specified moderator or a group owner before the message is delivered to the group members. This setting is disabled by default.
 
-   - **Group moderators**: To add moderators, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+   - **Group moderators**: To add moderators, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove a moderator, select the moderator, and then click **Remove** ![Remove image2](../../media/ITPro_EAC_RemoveIcon.png).
+     To remove a moderator, select the moderator, and then click **Remove** ![Remove image2.](../../media/ITPro_EAC_RemoveIcon.png).
 
      If you enable moderation for the group but don't specify any moderators, group owners are responsible for approving messages that are sent to the group.
 
    - **Senders who don't require message approval**: Messages sent to the group by the specified senders don't require approval from a moderator.
 
-     To add senders, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+     To add senders, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove senders, select the senders, and then click **Remove** ![Remove image3](../../media/ITPro_EAC_RemoveIcon.png).
+     To remove senders, select the senders, and then click **Remove** ![Remove image3.](../../media/ITPro_EAC_RemoveIcon.png).
 
    - **Select moderation notifications**: Configure the sender notification options for message approval:
 
@@ -361,7 +361,7 @@ If you still want to create distribution list groups, use the following steps:
 
    Use the **Email addresses** tab to view or change the email addresses associated with the group. This includes the group's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-   - **Add**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
+   - **Add**: Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **New email address** page that appears, configure the following settings:
 
      - **Email address type**: Verify **SMTP** is selected.
      
@@ -371,7 +371,7 @@ If you still want to create distribution list groups, use the following steps:
 
      When you're finished, click **OK**.
 
-   - **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon2](../../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
+   - **Edit**: Select the email address that you want to modify, and then click **Edit** ![Edit icon2.](../../media/ITPro_EAC_EditIcon.png). In the **Email address** page that appears, configure the following settings:
 
      - **Email address**: Modify the existing email address.
      
@@ -379,7 +379,7 @@ If you still want to create distribution list groups, use the following steps:
 
      When you're finished, click **OK**.
 
-   - **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon3](../../media/ITPro_EAC_RemoveIcon.gif). You can't remove the reply address.
+   - **Remove**: Select the email address that you want to remove, and then click **Remove** ![Remove icon3.](../../media/ITPro_EAC_RemoveIcon.gif). You can't remove the reply address.
 
    #### MailTip
 
@@ -395,15 +395,15 @@ If you still want to create distribution list groups, use the following steps:
 
     - **Send on Behalf**: Allows the delegate to send messages from the group. The From address of these messages clearly shows that the message was sent by the delegate ("_\<Delegate\>_ on behalf of _\<Group\>_"). However, replies to these messages are sent to the group, not to the delegate. After this permission is assigned, the delegate has the option to add the group in the From: line.
 
-   To add senders, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+   To add senders, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the dialog that appears, find, and select a sender or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-   To remove a sender from the list, select the sender, and then click **Remove** ![Remove icon4](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove a sender from the list, select the sender, and then click **Remove** ![Remove icon4.](../../media/ITPro_EAC_RemoveIcon.png).
 
 ### Use the Classic EAC to remove distribution list groups
 
 1. In the Classic EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution list groups that you want to remove, and then click **Remove** ![Remove icon5](../../media/ITPro_EAC_RemoveIcon.gif).
+2. In the list of groups, select the distribution list groups that you want to remove, and then click **Remove** ![Remove icon5.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 ## Use PowerShell to manage distribution list groups
 
@@ -445,13 +445,47 @@ This example changes the user-created distribution group Dog Lovers to require t
 Set-DistributionGroup -Identity "Dog Lovers" -MemberJoinRestriction 'ApprovalRequired' -BypassSecurityGroupManagerCheck
 ```
 
+This example exports the members of a distribution group to a .csv file named DLGroupMembers.csv. 
+
+```PowerShell
+$Groups = Get-DistributionGroup -ResultSize Unlimited
+$Groups | ForEach-Object {
+$group = $_
+Get-DistributionGroupMember -Identity $group.Name -ResultSize Unlimited | ForEach-Object {
+    New-Object -TypeName PSObject -Property @{
+        Group = $group.DisplayName
+        Member = $_.Name
+        EmailAddress = $_.PrimarySMTPAddress
+        RecipientType= $_.RecipientType
+        }
+    }
+} | Export-CSV ".\DLGroupMembers.csv" -NoTypeInformation -Encoding UTF8
+```
+
+This example exports the members of a dynamic distribution group to a .csv file named DDLGroupMembers.csv. 
+
+```PowerShell
+$Groups = Get-DynamicDistributionGroup -ResultSize Unlimited
+$Groups | ForEach-Object {
+$group = $_
+Get-DynamicDistributionGroupMember -Identity $group.Name -ResultSize Unlimited | ForEach-Object {
+    New-Object -TypeName PSObject -Property @{
+        Group = $group.DisplayName
+        Member = $_.Name
+        EmailAddress = $_.PrimarySMTPAddress
+        RecipientType= $_.RecipientType
+        }
+    }
+} | Export-CSV ".\DDLGroupMembers.csv" -NoTypeInformation -Encoding UTF8
+```
+
 ## How do you know these procedures worked?
 
 To verify that you've successfully created, modified, or removed a distribution list group, do any of the following steps:
 
 - In the new EAC, select the group to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
 
-- In the Classic EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed). The **Group Type** is **Distribution group**. Select the group and click **Edit** ![Edit icon6](../../media/ITPro_EAC_EditIcon.png) to verify the property settings.
+- In the Classic EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed). The **Group Type** is **Distribution group**. Select the group and click **Edit** ![Edit icon6.](../../media/ITPro_EAC_EditIcon.png) to verify the property settings.
 
 - In Exchange Online PowerShell, replace \<GroupIdentity\> with the name, alias, or email address of the distribution list group, and run the following command to verify the settings:
 

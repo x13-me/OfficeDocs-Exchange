@@ -216,7 +216,7 @@ The following figure shows how the size of the audio file depends on the duratio
 
 **Audio file size**
 
-![UM\_Message\_Sizing](images/Aa998670.76ca4891-450f-4ffd-9493-aac8d0d23a5d(EXCHG.150).gif "UM_Message_Sizing")
+![UM\_Message\_Sizing.](images/Aa998670.76ca4891-450f-4ffd-9493-aac8d0d23a5d(EXCHG.150).gif "UM_Message_Sizing")
 
 ## MP3
 

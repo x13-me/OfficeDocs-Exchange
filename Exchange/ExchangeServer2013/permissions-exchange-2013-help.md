@@ -59,7 +59,7 @@ The following figure shows the relationship between users, role groups, and role
 
 **Roles, role groups, and role group members**
 
-![Role, role group and member relationship](images/Dd351175.3fb0b47d-333a-4953-ae38-d710d327bde0(EXCHG.150).gif "Role, role group and member relationship")
+![Role, role group and member relationship.](images/Dd351175.3fb0b47d-333a-4953-ae38-d710d327bde0(EXCHG.150).gif "Role, role group and member relationship")
 
 Exchange 2013 includes several built-in role groups, each one providing permissions to manage specific areas in Exchange 2013. Some role groups may overlap with others. The following table lists each role group with a description of its use. If you want to see the roles assigned to each role group, click the name of the role group in the "Role group" column, and then open the "Management Roles Assigned to This Role Group" section.
 
@@ -157,7 +157,7 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
 **Roles, role assignment policies, and mailboxes**
 
-![Role, role assignment policy, mailbox relationship](images/Dd351175.82e07b3d-da59-465b-b349-e0bfde369ace(EXCHG.150).gif "Role, role assignment policy, mailbox relationship")
+![Role, role assignment policy, mailbox relationship.](images/Dd351175.82e07b3d-da59-465b-b349-e0bfde369ace(EXCHG.150).gif "Role, role assignment policy, mailbox relationship")
 
 The Default Role Assignment Policy role assignment policy is included with Exchange 2013. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see Work with Role Assignment Policies later in this topic.
 
@@ -167,7 +167,7 @@ To manage your permissions using role groups in Exchange 2013, we recommend that
 
 **New role group dialog box in the EAC**
 
-![New role group dialog box in the EAC](images/Dd351175.e0577090-73e6-4671-ae98-78a8064fde87(EXCHG.150).jpg "New role group dialog box in the EAC")
+![New role group dialog box in the EAC.](images/Dd351175.e0577090-73e6-4671-ae98-78a8064fde87(EXCHG.150).jpg "New role group dialog box in the EAC")
 
 Exchange 2013 includes several role groups that separate permissions into specific administrative areas. If these existing role groups provide the permissions your administrators need to manage your Exchange 2013 organization, you need only add your administrators as members of the appropriate role groups. After you add administrators to a role group, they can administer the features that relate to that role group. To add or remove members to or from a role group, open the role group in the EAC, and then add or remove members from the membership list. For a list of built-in role groups, see [Built-in role groups](built-in-role-groups-exchange-2013-help.md).
 
@@ -199,7 +199,7 @@ To manage the permissions that you grant end users to manage their own mailbox i
 
 **Role assignment policy dialog box in the EAC**
 
-![Role assignment policy dialog box in the EAC](images/Dd351175.ecdf3cd4-d50e-4014-95f8-1bd5dafacaff(EXCHG.150).jpg "Role assignment policy dialog box in the EAC")
+![Role assignment policy dialog box in the EAC.](images/Dd351175.ecdf3cd4-d50e-4014-95f8-1bd5dafacaff(EXCHG.150).jpg "Role assignment policy dialog box in the EAC")
 
 Exchange 2013 includes a role assignment policy named Default Role Assignment Policy. This role assignment policy enables users whose mailboxes are associated with it to do the following:
 

@@ -61,7 +61,7 @@ After you create a theme, you may also want to customize elements that are commo
 
 You can inspect the built-in themes by opening a mailbox in Outlook on the web, selecting **Settings**, and then selecting **Change theme**.
 
-![Change theme menu location in Outlook on the web](../../media/a1b88a8c-2143-44c1-89dc-73b2acb944e8.png)
+![Change theme menu location in Outlook on the web.](../../media/a1b88a8c-2143-44c1-89dc-73b2acb944e8.png)
 
 You can use the information in the [Default Outlook on the web themes in Exchange Server](#default-outlook-on-the-web-themes-in-exchange-server) section at the end of this topic to match the display name of the theme in Outlook on the web to the name of the theme folder on the Exchange server.
 
@@ -183,7 +183,7 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 
 3. In the **Actions** pane, click **Restart**.
 
-   ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+   ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 

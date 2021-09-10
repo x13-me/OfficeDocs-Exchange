@@ -38,7 +38,7 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page, click **Mailbox features**.
 
@@ -107,7 +107,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
   1. Go to **Recipients** \> **Mailboxes**.
 
-  2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+  2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
   3. On the mailbox properties page, click **Mailbox features**.
 
@@ -137,7 +137,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
   The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-  ![Recoverable Items folder](../../media/ITPro_RecoverableItems.gif)
+  ![Recoverable Items folder.](../../media/ITPro_RecoverableItems.gif)
 
   > [!NOTE]
   > If an In-Place Hold is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved for the hold duration for the In-Place Hold.

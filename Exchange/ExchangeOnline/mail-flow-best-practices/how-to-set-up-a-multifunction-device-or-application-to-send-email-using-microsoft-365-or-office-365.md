@@ -163,7 +163,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 4. Make a note of the data of **Points to address or value** for the MX record, which we refer to as your MX endpoint.
 
-   :::image type="content" source="../media/mx-record-ms-365-admin-center.png" alt-text="The screen displaying the MX record value for the chosen domain":::
+   :::image type="content" source="../media/mx-record-ms-365-admin-center.png" alt-text="The screen displaying the MX record value for the chosen domain.":::
 
 5. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 4.
 
@@ -275,7 +275,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 4. Make a note of data of **Points to address or value** for the MX record, which we refer to as your MX endpoint.
 
-   :::image type="content" source="../media/mx-record-ms-365-admin-center.png" alt-text="The screen displaying the MX record value for the chosen domain":::
+   :::image type="content" source="../media/mx-record-ms-365-admin-center.png" alt-text="The screen displaying the MX record value for the chosen domain.":::
 
 5. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
 
@@ -286,9 +286,9 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 6. In the Exchange admin center (EAC), go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the subsequent two images below, for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
+:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center.":::
 
-:::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed":::
+:::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed.":::
 
 8. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
 
@@ -296,7 +296,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 a. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
-![Choose from your organization's email server to Microsoft 365 or Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
+![Choose from your organization's email server to Microsoft 365 or Office 365.](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
 
 b. Click **Next**, and give the connector a name.
 
@@ -310,7 +310,7 @@ a. To start the wizard, click **+ Add a connector**. The **New connector** scree
 
 b. Choose the options that are depicted in the following screenshot:
    
-:::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
+:::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server.":::
 
 c. Click **Next**. The **Connector name** screen appears.
 

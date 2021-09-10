@@ -17,7 +17,7 @@ The Exchange Deployment Assistant is a web-based tool that asks you a few questi
 
 Looking for help with migrating your Exchange organization to Microsoft 365, Office 365, or Exchange Online? Check out [Use the Microsoft 365 and Office 365 mail migration advisor](../ExchangeHybrid/mail-migration-jump.md).
 
-[![Launch Deployment Assistant](media/ExchangeDeploymentAssistant.png)](https://assistants.microsoft.com/)
+[![Launch Deployment Assistant.](media/ExchangeDeploymentAssistant.png)](https://assistants.microsoft.com/)
 
 <br>
 

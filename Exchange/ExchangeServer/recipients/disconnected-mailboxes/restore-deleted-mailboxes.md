@@ -69,7 +69,7 @@ The following procedure shows how to connect a deleted user mailbox to a user ac
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. Click **More** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and then click **Connect a mailbox**.
+2. Click **More** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and then click **Connect a mailbox**.
 
    A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
 
@@ -135,7 +135,7 @@ For detailed syntax and parameter information, see [Connect-Mailbox](/powershell
 
 To verify that you've successfully connected a deleted mailbox to a user account, do one of the following steps:
 
-- In the EAC, click **Recipients**, go to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png), and verify that the mailbox is listed.
+- In the EAC, click **Recipients**, go to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png), and verify that the mailbox is listed.
 
 - In Active Directory Users and Computers, right-click the user account that you connected to the mailbox, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the connected mailbox.
 

@@ -48,7 +48,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 2. If you want to create this public folder as a child of an existing public folder, click the existing public folder in the list view. If you want to create a top-level public folder, skip this step.
 
-3. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **Public Folder**, type the name of the public folder.
 

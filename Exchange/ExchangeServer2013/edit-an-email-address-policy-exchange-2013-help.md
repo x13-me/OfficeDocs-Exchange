@@ -42,7 +42,7 @@ For additional management tasks related to email address policies, see [Email ad
 
 1. Navigate to **Mail flow** \> **Email address policies**.
 
-2. In the list view, select the email address policy you want to change, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the email address policy you want to change, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **Email Address Policy**, click **Apply to** and modify the settings.
 

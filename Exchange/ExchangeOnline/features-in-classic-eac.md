@@ -31,7 +31,7 @@ You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/a
 
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-    ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
+    ![Get to the Exchange admin center.](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
 
 You can also get to the Classic Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
 
@@ -42,7 +42,7 @@ You can also get to the Classic Exchange admin center directly by using a URL. T
 
 Here's what the Classic Exchange admin center looks like.
 
-![Common User Interface Elements of the EAC](media/ITPro_EXO_EAC_EACwCallouts.png)
+![Common User Interface Elements of the EAC.](media/ITPro_EXO_EAC_EACwCallouts.png)
 
 ### Feature pane
 
@@ -83,9 +83,9 @@ When you select an item from the list view, information about that object is dis
 
 ### Centers, Me tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the Classic Exchange admin center and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
+The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the Classic Exchange admin center and sign in as a different user. From the Help ![Help Icon.](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions:
 
-- **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
+- **Help**: Click ![Help Icon.](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
 
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been   disabled.
 
