@@ -48,17 +48,17 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 1. Navigate to **Mail Flow** \> **Accepted domains**. The **Accepted domains** screen appears.
 
-   :::image type="content" source="../../media/accepted-domains.png" alt-text="The screen displaying accepted domains":::
+   :::image type="content" source="../../media/accepted-domains.png" alt-text="The screen displaying accepted domains.":::
 
 2. Select an accepted domain and click it. The accepted domain's details screen appears.
 
 3. Verify that **Internal Relay** is selected. If **Authoritative** is selected, change it to **Internal Relay**.
 
-   :::image type="content" source="../../media/setting-internal-relay.png" alt-text="The screen on which the INTERNAL RELAY option is chosen":::
+   :::image type="content" source="../../media/setting-internal-relay.png" alt-text="The screen on which the INTERNAL RELAY option is chosen.":::
 
 4. Check the check box for **Accept mail for all subdomains**.
 
-   :::image type="content" source="../../media/setting-email-acceptance-for-all-subdomains.png" alt-text="The screen on which the user configures acceptance of emails from all subdomains":::
+   :::image type="content" source="../../media/setting-email-acceptance-for-all-subdomains.png" alt-text="The screen on which the user configures acceptance of emails from all subdomains.":::
 
 5. Click **Save**.
 
@@ -71,11 +71,11 @@ The domain details dialog box is displayed.
 
 2. In the Details pane, Verify that **Internal Relay** is selected.
 
-   :::image type="content" source="../../media/choosing-internal-relay-old-eac.png" alt-text="The screen on which it is ensured that Internal Relay type is chosen":::
+   :::image type="content" source="../../media/choosing-internal-relay-old-eac.png" alt-text="The screen on which it is ensured that Internal Relay type is chosen.":::
 
 3. Select **Accept mail for all subdomains**.
 
-   :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails":::
+   :::image type="content" source="../../media/configuring-subdomains-to-send-receive-mails.png" alt-text="The screen on which all subdomains are set such that they can send and receive emails.":::
 
 ## Use the EAC to add the domain to the connector used for transmitting messages from Office 365 to your organization's email server
 
@@ -91,7 +91,7 @@ The domain details dialog box is displayed.
 
 5. In the **Use of connector** screen that appears, select **Only when email messages are sent to these domains**.
 
-   :::image type="content" source="../../media/determining-timing-of-connector-new-eac.png" alt-text="The option on the New EAC screen to choose when the connector can be used":::
+   :::image type="content" source="../../media/determining-timing-of-connector-new-eac.png" alt-text="The option on the New EAC screen to choose when the connector can be used.":::
 
 6. In the text box, enter the name of the domain to which you want to apply the connector. For example, **\*.contoso.com**.
 
@@ -109,15 +109,15 @@ The domain details dialog box is displayed.
 
 2. Select a connector that is used for transmitting messages from Office 365 to your organization's email server.
 
-3. Click the "Edit" icon ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The **Edit Connector** screen appears.
+3. Click the "Edit" icon ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). The **Edit Connector** screen appears.
 
 4. Click **Next**. The **When do you want to use this connector** section appears.
 
 5. Select the radio button for **Only when email messages are sent to these domains**.
 
-   :::image type="content" source="../../media/determining-timing-of-connector-old-eac.png" alt-text="The option on the Classic EAC screen to choose when the connector can be used":::
+   :::image type="content" source="../../media/determining-timing-of-connector-old-eac.png" alt-text="The option on the Classic EAC screen to choose when the connector can be used.":::
 
-6. Click the "Add" icon ![Add Icon](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
+6. Click the "Add" icon ![Add Icon.](../../media/ITPro_EAC_AddIcon.png). The **add domain** screen appears.
 
 7. In the text box, enter the name of the domain to which you want to apply the connector. For example, **\*.contoso.com**.
 

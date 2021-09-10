@@ -34,7 +34,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the Exchange admin center (EAC) to create a retention tag**
 
-1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Select one of the following options:
 
@@ -115,13 +115,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the EAC to create a retention policy**
 
-1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In **New Retention Policy**, complete the following fields:
 
    - **Name**: Enter a name for the retention policy.
 
-   - **Retention tags**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
+   - **Retention tags**: Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
 
      A retention policy can contain the following tags:
 

@@ -39,7 +39,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## Use the EAC to create a UM dial plan
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM dial plan** page, complete the following boxes:
 

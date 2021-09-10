@@ -23,7 +23,7 @@ The following figure shows an Exchange organization with a resource forest.
 
 **Example of an Exchange organization with an Exchange resource forest**
 
-![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
+![Complex Exchange organization with resource forest.](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
 
 ## What do you need to know before you begin?
 

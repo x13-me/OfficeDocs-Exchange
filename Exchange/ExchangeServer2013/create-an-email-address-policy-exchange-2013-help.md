@@ -114,7 +114,7 @@ For detailed instructions about how to create an email address policy, see the f
 
 ## Use the EAC to create an email address policy
 
-1. Navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. Navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In **Email Address Policy**, complete the following fields:
 

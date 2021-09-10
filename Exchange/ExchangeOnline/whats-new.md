@@ -32,7 +32,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (<https://admin.exchange.microsoft.com>) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
 
-:::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC":::
+:::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC.":::
 
 ### One portal to meet all Exchange IT admin needs
 
@@ -63,7 +63,7 @@ Admins can now create and manage four kinds of groups from the modern EAC: Micro
 
 The pivot experience (different pivots for different group types) makes groups management even easier.
 
-:::image type="content" source="media/exo_whatsnew_dec20_1.png" alt-text="a dynamic distribution list in the modern EAC":::
+:::image type="content" source="media/exo_whatsnew_dec20_1.png" alt-text="a dynamic distribution list in the modern EAC.":::
 
 ### Dynamic distribution lists
 
@@ -71,13 +71,13 @@ Dynamic distribution lists are mail-enabled Active Directory group objects, crea
 
 The membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that are defined.
 
-:::image type="content" source="media/exo_whatsnew_dec20_2.png" alt-text="Assigning users in a dynamic distribution list in the modern EAC":::
+:::image type="content" source="media/exo_whatsnew_dec20_2.png" alt-text="Assigning users in a dynamic distribution list in the modern EAC.":::
 
 ### Delivery management setting
 
 This setting allows admins to manage who can send email to any group. The user can define these settings once the group is created. This setting is available in all group types.
 
-:::image type="content" source="media/exo_whatsnew_dec20_3.png" alt-text="Delivery management setting in the modern EAC":::
+:::image type="content" source="media/exo_whatsnew_dec20_3.png" alt-text="Delivery management setting in the modern EAC.":::
 
 ### Message approval setting
 
@@ -91,7 +91,7 @@ For mail-enabled security groups, there is now a check box called **owner approv
 
 Admins can now manage the membership approval settings during or after the creation of a distribution group. It allows admins to configure the moderation settings for who can join the group, and for who can remove members from a group.
 
-:::image type="content" source="media/exo_whatsnew_dec20_4.png" alt-text="Membership approval setting in distribution groups":::
+:::image type="content" source="media/exo_whatsnew_dec20_4.png" alt-text="Membership approval setting in distribution groups.":::
 
 ## September 2020
 
@@ -101,7 +101,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Admins can now create groups from the modern EAC. Currently, they can create and manage M365 groups, distribution groups, and mail-enabled security groups.
 
-:::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog":::
+:::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog.":::
 
 The three types of groups that M365 administrators can now create and manage are:
 
@@ -121,7 +121,7 @@ Administrators now have command over the group naming policy. They can now add p
 
 Administrators can now upgrade their distribution groups into the recommended Microsoft 365 groups (previously Office 365 groups) with a few clicks, as shown below:
 
-:::image type="content" source="media/exo_whatsnew_sept20_2.png" alt-text="Ready to upgrade dialog":::
+:::image type="content" source="media/exo_whatsnew_sept20_2.png" alt-text="Ready to upgrade dialog.":::
 
 ### Opt-in/out
 
@@ -131,7 +131,7 @@ End-users now have a single-click opt-in toggle button, available in both the cl
 
 The admins can now get their queries resolved without going anywhere else. The support assistant feature allows users to resolve the queries without leaving the EAC window. In case the user is not satisfied with the provided solution, the user can even raise a ticket and register their issues.
 
-:::image type="content" source="media/exo_whatsnew_sept20_3.png" alt-text="Support Assistant in the new EAC":::
+:::image type="content" source="media/exo_whatsnew_sept20_3.png" alt-text="Support Assistant in the new EAC.":::
 
 ### Educational navigation video
 
@@ -157,7 +157,7 @@ Queued messages report: To check those messages that are queued for more than 1 
 
 SMTP AUTH clients report: To check for unusual activity and TLS used by clients or devices using SMTP AUTH. SMTP AUTH client submission protocol only offers basic authentication and is a less-secure protocol used by devices, such as printers, to send email messages. [Learn more](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report).
 
-:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of mail flow reports":::
+:::image type="content" source="media/whats-new-2020-07-mail-flow-reports.png" alt-text="Screen capture of mail flow reports.":::
 
 ## June 2020
 
@@ -167,19 +167,19 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Microsoft 365 administrators can now add **Manager** and **Direct reports** for individual mailboxes. Admins can manage this organizational information in the **Accounts** tab in the **Detail** panel.
 
-:::image type="content" source="media/whats-new-2020-06-1-directs.png" alt-text="Screen capture of manager and direct reports":::
+:::image type="content" source="media/whats-new-2020-06-1-directs.png" alt-text="Screen capture of manager and direct reports.":::
 
 ### Custom attributes
 
 Admins can include fifteen extension attributes that they can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 
-:::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes":::
+:::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes.":::
 
 ### Google Workspace (formerly G Suite) automation
 
 Admins can migrate batches of users from Google Workspace to Microsoft 365. In order to move the mailboxes from Google Workspace to Microsoft 365, there is a series of steps that admins need to perform in Google Workspace in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
 
-:::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of G-suite automation":::
+:::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of G-suite automation.":::
 
 ## May 2020
 
@@ -189,19 +189,19 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 In the modern EAC, Microsoft 365 administrators can now delete an already existing shared mailbox. Admins can also select multiple shared mailboxes and choose the **Delete** button in the command bar to bulk delete them.
 
-:::image type="content" source="media/whats-new-2020-05-1-delete-shared.png" alt-text="Screen capture of deleting shared mailboxes":::
+:::image type="content" source="media/whats-new-2020-05-1-delete-shared.png" alt-text="Screen capture of deleting shared mailboxes.":::
 
 ### Set default message size restriction
 
 Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages. However, admins can use this control to set a default limit. This limit will be applied to any new mailboxes created in the Exchange environment.
 
-:::image type="content" source="media/whats-new-2020-05-2-msgsize-restriction.png" alt-text="Screen shot of setting message size restrictions":::
+:::image type="content" source="media/whats-new-2020-05-2-msgsize-restriction.png" alt-text="Screen shot of setting message size restrictions.":::
 
 ### Export to .csv
 
 Admins can now click on the **Export** button in the command bar to prepare a .csv file lists all of the mailboxes residing in Exchange Online.
 
-:::image type="content" source="media/whats-new-2020-05-3-export-csv.png" alt-text="Screen capture of exporting a csv file":::
+:::image type="content" source="media/whats-new-2020-05-3-export-csv.png" alt-text="Screen capture of exporting a csv file.":::
 
 ## April 2020
 
@@ -211,19 +211,19 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 Admins now have a new experience when managing contacts for people outside the organization. Admins can create and manage mail contacts and mail users with external email addresses.
 
-![Screen capture of contacts](./media/whats-new-2020-04--1-contacts.png)
+![Screen capture of contacts.](./media/whats-new-2020-04--1-contacts.png)
 
 ### Column chooser
 
 Admins can now customize the columns that appear in the EAC.
 
-![Screen capture of column chooser](./media/whats-new-2020-04--2-column-chooser.png)
+![Screen capture of column chooser.](./media/whats-new-2020-04--2-column-chooser.png)
 
 ### People picker for remote migration
 
 A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange online.
 
-![Screen capture of people picker for remote migration](./media/whats-new-2020-04--3-people-picker.png)
+![Screen capture of people picker for remote migration.](./media/whats-new-2020-04--3-people-picker.png)
 
 ### Personalized Dashboard and Reports
 
@@ -236,13 +236,13 @@ Exchange admins can now use a dashboard to choose from a wide variety of cards t
   - **Non-accepted domain**: Display messages from your on-premises organization where the sender's email domain isn't configured as an accepted domain in Microsoft 365 or Office 365. [Learn more](/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report).
   - **Non-delivery report**: Display the most commonly encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for your message senders. [Learn more](/microsoft-365/security/office-365-security/mfi-non-delivery-report).
 
-![Screen capture of dashboard](./media/whats-new-2020-04--4-dashboard.png)
+![Screen capture of dashboard.](./media/whats-new-2020-04--4-dashboard.png)
 
 ### Recoverable Items
 
 Admins now have a new experience for finding recoverable items. With this feature, items that were deleted from a user's mailbox can be recovered back to the inbox.
 
-![Screen capture of what's new in dashboard](./media/whats-new-2020-04--5-recoverable-items.png)
+![Screen capture of what's new in dashboard.](./media/whats-new-2020-04--5-recoverable-items.png)
 
 ## March 2020
 
@@ -254,7 +254,7 @@ In the modern EAC, the user and shared mailbox management experiences are now me
 
 Resources experience has been simplified for managing room and resource mailboxes.
 
-![Screen capture of what's new in recipients](./media/whats-new-2020-03-recipients.png)
+![Screen capture of what's new in recipients.](./media/whats-new-2020-03-recipients.png)
 
 #### Migration
 
@@ -264,7 +264,7 @@ Migration is now a first-class citizen under the Modern EAC and is no longer bur
 - The Google Workspace migration supports migrating Calendar and Contact data along with emails.
 - For Google Workspace migration, the 2GB per mailbox per day restriction has been removed.
 
-![Screen capture of what's new in migration](./media/whats-new-2020-03-migration.png)
+![Screen capture of what's new in migration.](./media/whats-new-2020-03-migration.png)
 
 #### Mail flow
 
@@ -274,7 +274,7 @@ The Mail flow Experience, which was a part of the Security and compliance portal
 - Remote domains
 - Connectors
 
-![Screen capture of what's new in mail flow](./media/whats-new-2020-03-mailflow.png)
+![Screen capture of what's new in mail flow.](./media/whats-new-2020-03-mailflow.png)
 
 #### Want to access more features?
 
@@ -282,7 +282,7 @@ As the modern experience is being developed, we are providing deep links from th
 
 To access familiar features that were in the classic Exchange admin center, click on the "More features" tab on the left nav and select the feature to open it in a new tab.
 
-![Screen capture of more features](./media/whats-new-2020-03-morefeatures.png)
+![Screen capture of more features.](./media/whats-new-2020-03-morefeatures.png)
 
 ## What's next?
 

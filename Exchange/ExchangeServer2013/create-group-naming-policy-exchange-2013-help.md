@@ -74,7 +74,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 ## Use the EAC to create a group naming policy
 
-1. In the EAC, select **Groups** \> **More** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
+1. In the EAC, select **Groups** \> **More** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
@@ -92,11 +92,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
-6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 7. Click **Blocked Words** to add or remove blocked words.
 
-   - To add a word to the list, type the word to block and click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+   - To add a word to the list, type the word to block and click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
    - To remove a word from the list, select it and click **Remove**.
 

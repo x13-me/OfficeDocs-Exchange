@@ -29,4 +29,4 @@ You can choose to either schedule mail protection reports to be sent to your inb
 To get started customizing and downloading reports, see the following articles:
 
 - [View email security reports in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/view-email-security-reports)
-- [View Defender for Office 365 reports in the Microsoft 365 Defender portal](//microsoft-365/security/office-365-security/view-reports-for-mdo)
+- [View Defender for Office 365 reports in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/view-reports-for-mdo)

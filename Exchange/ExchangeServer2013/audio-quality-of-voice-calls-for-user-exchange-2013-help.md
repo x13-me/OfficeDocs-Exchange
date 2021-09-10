@@ -35,7 +35,7 @@ For additional tasks related to UM reports, see [UM reports procedures](um-repor
 
 ## Use the EAC to get call logs for a UM-enabled user
 
-1. In the EAC, navigate to **Unified Messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
+1. In the EAC, navigate to **Unified Messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
 
 2. Click **Select a user**, and then select the user you want data for.
 

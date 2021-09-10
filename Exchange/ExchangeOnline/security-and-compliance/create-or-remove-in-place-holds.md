@@ -45,11 +45,11 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
 1. Navigate to **Compliance management** \> **In-Place eDiscovery & hold**.
 
-2. In the list view, select the In-Place Hold you want to remove and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the In-Place Hold you want to remove and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.gif).
 
 3. In **In-Place eDiscovery & Hold** properties, on the **In-Place Hold** page, clear the **Place content matching the search query in selected mailboxes on hold**, and then click **Save**.
 
-4. Select the In-Place Hold again from the list view, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
+4. Select the In-Place Hold again from the list view, and then click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.gif).
 
 5. In warning, click **Yes** to remove the search.
 

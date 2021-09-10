@@ -66,9 +66,9 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 1. Go to **Mail flow** \> **Rules**.
 
 2. Create the rule by using one of the following options:
-   - To create a rule from a template, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template.
-   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
-   - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+   - To create a rule from a template, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and select a template.
+   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon.](../../media/ITPro_EAC_CopyIcon.gif).
+   - To create a new rule from scratch, **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule:
    1. In **Apply this rule if...**, select the condition you want from the list of available conditions.
@@ -259,7 +259,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
 ### Use the EAC to remove a mail flow rule
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
-2. Select the rule you want to remove and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. Select the rule you want to remove and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 ### Use Exchange Online PowerShell to remove a mail flow rule
 

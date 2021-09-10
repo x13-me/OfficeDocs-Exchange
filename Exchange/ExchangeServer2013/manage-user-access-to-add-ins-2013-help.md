@@ -46,7 +46,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
-2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. If you don't want your users to use the add-in, clear the **Make this add-in available to users in your organization** check box, and then click **Save**.
 

@@ -19,13 +19,13 @@ _**Applies to:** Exchange Server 2013_
 
 Enabling push notifications for OWA for Devices (OWA for iPhone and OWA for iPad) for an on-premises deployment of Microsoft Exchange 2013 lets a user receive updates on the Outlook Web App icon on his or her OWA for iPhone and OWA for iPad indicating the number of unseen messages in the user's inbox. If push notifications aren't configured and enabled, a user with OWA for Devices has no way of knowing that unseen messages are in the inbox without launching the app. When a new message is available, the OWA for Devices badge is updated on the user's device and looks like the following badge.
 
-![OWA for Devices Badge](images/Dn511017.f399ba74-5395-4d24-ae7d-d16bf0ac7b35(EXCHG.150).png "OWA for Devices Badge")
+![OWA for Devices Badge.](images/Dn511017.f399ba74-5395-4d24-ae7d-d16bf0ac7b35(EXCHG.150).png "OWA for Devices Badge")
 
 ## How do I enable push notifications?
 
 In order to enable push notifications, the on-premises Exchange 2013 servers must connect to the Microsoft 365 or Office 365 Push Notification Service to send push notifications to iPhones and iPads. Exchange 2013 on-premises servers route their update notifications through the Microsoft 365 or Office 365 notification services to remove the need for enrolling developer accounts with third-party push notification services. The following diagram shows the process of how iPhone and iPad users can get badge updates for unseen messages.
 
-![Process for Push Notifications](images/Dn511017.36764ce6-7351-492f-a17e-c42b781e2781(EXCHG.150).jpg "Process for Push Notifications")
+![Process for Push Notifications.](images/Dn511017.36764ce6-7351-492f-a17e-c42b781e2781(EXCHG.150).jpg "Process for Push Notifications")
 
 To enable push notifications, the admin must:
 

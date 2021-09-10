@@ -42,7 +42,7 @@ The third-party online meeting provider will appear on the event creation screen
 
 Users cannot save the meeting until the online meeting details have been retrieved.
 
-:::image type="content" source="../../media/android-meeting-creation.png" alt-text="creating a meeting with a third-party add-in on Outlook for Android":::
+:::image type="content" source="../../media/android-meeting-creation.png" alt-text="creating a meeting with a third-party add-in on Outlook for Android.":::
 
 
 ## Meeting providers displayed in the New Event screen
@@ -80,4 +80,4 @@ Support for third-party remote meeting add-ins includes making it easy for users
 
 Note that recipients of meeting invitations don't need to have the add-in for the corresponding third-party meeting provider installed on their devices in order to join the meeting.
 
-:::image type="content" source="../../media/android-join.png" alt-text="Joining a meeting with a third-party meeting provider in Outlook for Android":::
+:::image type="content" source="../../media/android-join.png" alt-text="Joining a meeting with a third-party meeting provider in Outlook for Android.":::

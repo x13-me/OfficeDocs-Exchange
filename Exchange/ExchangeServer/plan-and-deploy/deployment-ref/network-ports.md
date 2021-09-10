@@ -38,7 +38,7 @@ The network ports that are required for email clients to access mailboxes and ot
 
 - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
-![Network ports required for clients and services](../../media/f5ba3439-f001-43c8-848e-0e3fd0fce931.png)
+![Network ports required for clients and services.](../../media/f5ba3439-f001-43c8-848e-0e3fd0fce931.png)
 
 |**Purpose**|**Ports**|**Comments**|
 |:-----|:-----|:-----|
@@ -56,7 +56,7 @@ How mail is delivered to and from your Exchange organization depends on your Exc
 
 The network ports that are required for mail flow in an Exchange organization that has only Mailbox servers are described in the following diagram and table.
 
-![Network ports required for mail flow (no Edge Transport servers)](../../media/af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0.png)
+![Network ports required for mail flow (no Edge Transport servers).](../../media/af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0.png)
 
 |**Purpose**|**Ports**|**Source**|**Destination**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -81,7 +81,7 @@ For more information, see [Mail flow and the transport pipeline](../../mail-flow
 
 The network ports that are required for mail flow in Exchange organizations that have Edge Transport servers are described in the following diagram and table.
 
-![Network ports required for mail flow with Edge Transport servers](../../media/110c79b3-dbd9-4cb5-bba1-02048363ee1c.png)
+![Network ports required for mail flow with Edge Transport servers.](../../media/110c79b3-dbd9-4cb5-bba1-02048363ee1c.png)
 
 |**Purpose**|**Ports**|**Source**|**Destination**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|

@@ -48,7 +48,7 @@ For additional management tasks related to public folders in Exchange Server, se
 
 ## Use the EAC to create a public folder mailbox
 
-1. In the EAC, go to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, go to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New public folder mailbox** page that opens, enter the following information:
 

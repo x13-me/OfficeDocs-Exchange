@@ -26,7 +26,7 @@ Outlook for iOS and Android is a cloud-backed application. This characteristic i
 
 For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud, providing customers more benefits such as security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
 
-![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
+![Hybrid modern authentication in Outlook for iOS and Android.](../../media/outlook_mobile_hybrid_modern_auth.png)
 
 Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android uses the native Microsoft sync technology for data synchronization that is protected by a TLS-secured connection end-to-end, between Microsoft 365 or Office 365 and the app.
 
@@ -63,7 +63,7 @@ By default, Microsoft engineers have zero standing administrative privileges and
 
 When Outlook for iOS and Android is enabled with hybrid Modern Authentication, the connection flow is as follows.
 
-![Authentication flow in hybrid modern authentication](../../media/d4262a39-bf40-4bbb-b63e-c06306fd70e3.PNG)
+![Authentication flow in hybrid modern authentication.](../../media/d4262a39-bf40-4bbb-b63e-c06306fd70e3.PNG)
 
 1. After the user enters their email address, Outlook for iOS and Android connects to the AutoDetect service. AutoDetect determines the mailbox type by starting an AutoDiscover query to Exchange Online. Exchange Online determines that the user's mailbox is on-premises and returns a 302-redirect to AutoDetect with the on-premises Autodiscover URL. AutoDetect starts a query against the on-premises AutoDiscover service to determine the ActiveSync endpoint for the email address. The URL attempted on-premises is similar to this example: `<https://autodiscover.contoso.com/autodiscover/autodiscover.json?Email=test%40contoso.com&Protocol=activesync&RedirectCount=3>`.
 
@@ -111,7 +111,7 @@ The hybrid Modern Authentication architecture has the following technical requir
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](../../../ExchangeHybrid/hybrid-deployment/hybrid-agent.md).
 
    - Requires a Microsoft 365 or Office 365 Enterprise, Business, or Education organization.
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online)) 
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online). 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
    - AutoDiscover and Exchange ActiveSync namespaces must be accessible from the Internet and cannot be fronted by a pre-authentication solution.
 
@@ -220,6 +220,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 The following features aren't supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
 
 - Draft folder and Draft messages synchronization
+- Viewing more than four weeks of email by using the "Load More Messages" link at the bottom of the message list
 - Shared calendar access and delegate calendar access
 - Shared and delegate mailbox data access
 - Cortana Time to Leave / Travel Time
@@ -272,7 +273,7 @@ With ExpressRoute, there's no private IP space for ExpressRoute connections, nor
 
 **A**: On-premises mailboxes that are added via hybrid Modern Authentication are labeled as **Exchange (Hybrid)** in the account settings in Outlook for iOS and Android, similar to the following example:
 
-![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
+![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication.](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
 
 ## Authentication FAQ
 
@@ -320,17 +321,17 @@ Below are the most common issues or errors with on-premises mailboxes using hybr
 
 During profile creation, the user should be presented a Modern Authentication dialog similar to the one in the following screenshot:
 
-![Dialogs users should see during successful setup of hybrid Modern Authentication](../../media/90aa32ce-2053-43c4-a28b-5f122271aa63.png)
+![Dialogs users should see during successful setup of hybrid Modern Authentication.](../../media/90aa32ce-2053-43c4-a28b-5f122271aa63.png)
 
 If, instead, the user is presented with one of the following dialogs, then there's an issue with either the Autodiscover or ActiveSync on-premises endpoints.
 
 Here's an example of a user being presented with the legacy Basic authentication Exchange ActiveSync experience:
 
-![A dialog indicating a user is being presented with the legacy Basic authentication Exchange ActiveSync experience](../../media/c7791441-33fd-4db4-b654-daac3aa71f8b.png)
+![A dialog indicating a user is being presented with the legacy Basic authentication Exchange ActiveSync experience.](../../media/c7791441-33fd-4db4-b654-daac3aa71f8b.png)
 
 And here's an example of what users see when AutoDetect isn't able to discover the configuration for users' on-premises mailboxes.
 
-![A dialog that users see when AutoDetect is not able to discover the configuration of their on-premises mailboxes](../../media/035bb20d-c67b-4b7f-a5f9-fd15ffc29d3e.png)
+![A dialog that users see when AutoDetect is not able to discover the configuration of their on-premises mailboxes.](../../media/035bb20d-c67b-4b7f-a5f9-fd15ffc29d3e.png)
 
 In either scenario, verify that your on-premises environment is correctly configured. To do this task: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://aka.ms/OLHMAScript).
 

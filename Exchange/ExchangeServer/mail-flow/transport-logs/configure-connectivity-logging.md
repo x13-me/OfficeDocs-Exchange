@@ -47,7 +47,7 @@ Connectivity logging records outbound connection activity (source, destination, 
 
 1. In the EAC, go to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the server properties page that opens, click **Transport Logs**.
 

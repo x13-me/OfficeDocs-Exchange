@@ -39,7 +39,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. Navigate to **Servers** \> **Database availability groups**.
 
-2. Select the DAG you want to remove and click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select the DAG you want to remove and click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. Click **Yes** to confirm the warning and remove the DAG.
 

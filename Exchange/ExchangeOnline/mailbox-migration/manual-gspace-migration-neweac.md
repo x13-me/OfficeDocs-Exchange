@@ -45,7 +45,7 @@ For more information, see [Prerequisites](googleworkspace-migration-prerequisite
 
 3. On the **Select the migration type** page, select **Google Workspace (Gmail) migration**, and then click **Next**
 
-   :::image type="content" source="../media/migration-onboarding-selection_new.png" alt-text="Select Migration Type":::
+   :::image type="content" source="../media/migration-onboarding-selection_new.png" alt-text="Select Migration Type.":::
 
 4. On the **Prerequisites for Google Workspace migration** page, expand the **Manually configure your Google Workspace for migration**. As described in the section, configure the following steps:
    1. [Create a Google Service Account](manually-configuring-gsuite-for-migration.md#create-a-google-service-account)
@@ -97,7 +97,7 @@ For more information, see [Prerequisites](googleworkspace-migration-prerequisite
 
 8. On the **Schedule batch migration** page, verify all the details, click **Save**, and then click **Done**.
 
-    ![Schedule batch migration](../media/schedule-batch1-migration.png)
+    ![Schedule batch migration.](../media/schedule-batch1-migration.png)
 
     Once the batch status changes from **Syncing** to **Synced**, you need to complete the batch.
 

@@ -68,7 +68,7 @@ The steps in cloud authentication are described in the following diagram:
 
 The steps in federated authentication are described in the following diagram:
 
-![Basic steps for federated authentication, and where Basic authentication is blocked](../media/fd76db16-4e28-4720-81dd-faaabbf2f30a.png)
+![Basic steps for federated authentication, and where Basic authentication is blocked.](../media/fd76db16-4e28-4720-81dd-faaabbf2f30a.png)
 
 1. The email client sends the username and password to Exchange Online.
 

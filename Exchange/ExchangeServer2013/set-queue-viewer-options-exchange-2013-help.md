@@ -49,7 +49,7 @@ You can set options in Queue Viewer to adjust the number of items that are displ
 
    **Queue Viewer**
 
-   ![Queue Viewer with more items than item limit](images/Aa995934.e82196e6-002a-4e9e-823d-b244b0bd25e2(EXCHG.150).gif "Queue Viewer with more items than item limit")
+   ![Queue Viewer with more items than item limit.](images/Aa995934.e82196e6-002a-4e9e-823d-b244b0bd25e2(EXCHG.150).gif "Queue Viewer with more items than item limit")
 
 ## How do you know this worked?
 

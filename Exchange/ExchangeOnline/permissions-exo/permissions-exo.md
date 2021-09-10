@@ -67,7 +67,7 @@ To make it easier to assign multiple roles to an administrator, Exchange Online 
 
 The following figure shows the relationship between users, role groups, and roles.
 
-![Role, role group and member relationship](../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
+![Role, role group and member relationship.](../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
 Exchange Online includes several built-in role groups, each one providing permissions to manage specific areas in Exchange Online. Some role groups may overlap with other role groups. The following table lists each role group with a description of its use.
 
@@ -110,7 +110,7 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
 - After a mailbox is associated with a role assignment policy, the end-user roles are applied to that mailbox. The permissions granted by the roles are granted to the user of the mailbox.
 
-![Role, role assignment policy, mailbox relationship](../media/ITPro_Security_RBAC_EXO_SimplifiedRAPRelationship.png)
+![Role, role assignment policy, mailbox relationship.](../media/ITPro_Security_RBAC_EXO_SimplifiedRAPRelationship.png)
 
 The Default Role Assignment Policy role assignment policy is included with Exchange Online. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
@@ -141,7 +141,7 @@ Users can be granted administrative rights in Exchange Online without adding the
 
 To manage your permissions using role groups in Exchange Online, we recommend that you use the EAC. When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **Add role group** dialog box, shown in the following figure, to perform these tasks.
 
-![New role group dialog box in the EAC](../media/add-role-group.png)
+![New role group dialog box in the EAC.](../media/add-role-group.png)
 
 Exchange Online includes several role groups that separate permissions into specific administrative areas. If these existing role groups provide the permissions your administrators need to manage your Exchange Online organization, you need only add your administrators as members of the appropriate role groups. After you add administrators to a role group, they can administer the features that relate to that role group. To add or remove members to or from a role group, open the role group in the EAC, and then add or remove members from the membership list. For a list of built-in role groups, see the table "Built-in role groups" in [Role groups](#role-groups).
 
@@ -171,7 +171,7 @@ Existing role groups can also be modified. You can add and remove roles from exi
 
 To manage the permissions that you grant end users to manage their own mailbox in Exchange Online, we recommend that you use the EAC. When you use the EAC to manage end-user permissions, you can add roles, remove roles, and create role assignment policies with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **role assignment policy** dialog box, shown in the following figure, to perform these tasks.
 
-![Role assignment policy dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
+![Role assignment policy dialog box in the EAC.](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
 
 Exchange Online includes a role assignment policy named Default Role Assignment Policy. This role assignment policy enables users whose mailboxes are associated with it to do the following:
 
