@@ -20,7 +20,7 @@ description: "Admins can learn how to use the Email issues for priority accounts
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:
 >
 > - At least 5,000 licenses for one or more of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5. For example, 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5 licenses.
-> - At least 50 monthly active Exchange Online users.
+> - Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, One Drive for Business, SharePoint Online, Exchange Online and Office apps
 >
 > For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
