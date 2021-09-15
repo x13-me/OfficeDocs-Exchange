@@ -1,14 +1,14 @@
 ---
 ms.localizationpriority: medium
 monikerRange: exchserver-2016
-description: IIS URL Rewrite Module not installed 
+description: Update for Universal C Runtime in Windows (KB2999226) not installed  
 ms.topic: reference
 author: joannehendrickson
 ms.custom:
 - ms-exch-setupreadiness-KB2999226NotInstalled
 ms.author: jhendr
 ms.reviewer: 
-title: IIS URL Rewrite Module not installed 
+title: Update for Universal C Runtime in Windows (KB2999226) not installed   
 ms.collection: exchange-server
 f1.keywords:
 - CSH
@@ -17,7 +17,7 @@ ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
-## Update for Universal C Runtime in Windows (KB2999226) not installed  
+# Update for Universal C Runtime in Windows (KB2999226) not installed  
 
 Microsoft Exchange Server 2016 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2019 (2016) Setup can continue. 
 
