@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-monikerRange: exchserver-2016
+monikerRange: exchserver-2016 || exchserver-2019
 description: IIS URL Rewrite Module not installed 
 ms.topic: reference
 author: joannehendrickson
@@ -19,13 +19,27 @@ manager: serdars
 ---
 # IIS URL Rewrite Module not installed  
 
-Microsoft Exchange Server 2016 Setup can't continue because the local computer requires an additional software. You'll need to install this software before Exchange 2019 (2016) Setup can continue. 
+::: moniker range="exchserver-2016"
 
-The Setup of Exchange 2019 CU11 (2016 CU22) and above requires IIS URL Rewrite Module 2.1 to be installed on the computer before installation can continue. 
+Microsoft Exchange Server 2016 (CU22) setup can't continue because the local computer requires additional software. You must install this software before Exchange 2016 setup can continue. 
 
-Download and install the URL Rewrite Module version 2.1 (use x64 installer of desired language from the following URL), and then click retry on the Readiness Checks page. 
+Exchange 2016 (CU22) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
 
-IIS URL Rewrite Module 
+::: moniker-end
+
+
+::: moniker range="exchserver-2019"
+
+Microsoft Exchange Server 2019 (CU11) setup can't continue because the local computer requires additional software. You must install this software before Exchange 2019 setup can continue. 
+
+Exchange 2019 (CU11) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
+
+
+::: moniker-end
+
+1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite).
+2. Select **retry** on the **Readiness Checks page**. 
+
 
 >[!Note]
 >If this update requires a reboot to complete installation, you'll need to exit the Exchange 2016 setup, reboot, and then start Setup again. 
