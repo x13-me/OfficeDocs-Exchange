@@ -19,9 +19,9 @@ manager: serdars
 ---
 # Update for Universal C Runtime in Windows (KB2999226) not installed  
 
-Microsoft Exchange Server 2016 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2019 (2016) Setup can continue. 
+Microsoft Exchange Server 2016 setup can't continue because the local computer requires a software update. You need to install this update before Exchange 2019 (2016) setup can continue. 
 
-The Setup of Exchange 2016 CU22 and above requires an Update for Universal C Runtime in Windows (KB2999226) to be installed on the computer before installation can continue. 
+Exchange 2016 CU22 and above requires the **Update for Universal C Runtime in Windows (KB2999226)** to be installed on the computer before installation can continue. 
 
 1. Download and install: [Universal C Runtime in Windows (KB2999226)](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)  
 2. Select **retry** on the **Readiness Checks page**.
