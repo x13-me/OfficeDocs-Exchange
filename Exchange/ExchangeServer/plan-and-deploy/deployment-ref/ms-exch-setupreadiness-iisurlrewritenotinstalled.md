@@ -1,6 +1,5 @@
 ---
 ms.localizationpriority: medium
-monikerRange: exchserver-2016 || exchserver-2019
 description: IIS URL Rewrite Module not installed 
 ms.topic: reference
 author: joannehendrickson
