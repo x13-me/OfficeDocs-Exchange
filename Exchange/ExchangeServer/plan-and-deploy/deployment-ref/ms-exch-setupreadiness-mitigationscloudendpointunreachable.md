@@ -15,7 +15,7 @@ audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 ---
-#  Mitigations loud endpoint is not reachable
+#  Mitigations Cloud endpoint is not reachable
 
 ::: moniker range="exchserver-2016"
 
