@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online.
 ms.topic: article
 author: msdmaguire
@@ -84,7 +84,7 @@ The available end-user roles that you can assign to mailbox plans are described 
 
 1. In the EAC, go to **Permissions** \> **User roles**, and select the role assignment policy.
 
-2. The roles that are assigned to the policy are displayed in the details pane. You can also click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png) to see the roles, including the available roles that aren't assigned to the policy.
+2. The roles that are assigned to the policy are displayed in the details pane. You can also click **Edit** ![Edit button.](../media/ITPro_EAC_EditIcon.png) to see the roles, including the available roles that aren't assigned to the policy.
 
 ### Use Exchange Online PowerShell to view roles assigned to a role assignment policy
 
@@ -112,7 +112,7 @@ Get-ManagementRole | Where {$_.IsEndUserRole -eq $true} | Format-Table Name,Pare
 
 ### Use the EAC to add or remove roles from a role assignment policy
 
-1. In the EAC, go to **Permissions** \> **User roles**, select the role assignment policy, and then click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, go to **Permissions** \> **User roles**, select the role assignment policy, and then click **Edit** ![Edit button.](../media/ITPro_EAC_EditIcon.png).
 
 2. In the policy properties window that opens, do one of the following steps:
 
@@ -165,7 +165,7 @@ For detailed syntax and parameter information, see [Remove-ManagementRoleAssignm
 
 ### Use the EAC to create role assignment policies
 
-1. In the EAC, go to **Permissions** \> **User roles** and click **New** ![New button](../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, go to **Permissions** \> **User roles** and click **New** ![New button.](../media/ITPro_EAC_AddIcon.png).
 
 2. In the new role assignment policy window that opens, configure the following settings:
 
@@ -227,7 +227,7 @@ You can't remove a role assignment policy that's assigned to mailboxes. Use the 
 
 ### Use the EAC to remove role assignment policies
 
-1. In the EAC, go to **Permissions** \> **User roles**, select the policy that you want to delete, and then click **Delete** ![Delete button](../media/ITPro_EAC_DeleteIcon.png).
+1. In the EAC, go to **Permissions** \> **User roles**, select the policy that you want to delete, and then click **Delete** ![Delete button.](../media/ITPro_EAC_DeleteIcon.png).
 
 2. In the warning dialog box that appears, click **Yes**.
 
@@ -251,7 +251,7 @@ For detailed syntax and parameter information, see [Remove-RoleAssignmentPolicy]
 
 ### Use the EAC to view role assignment policy assignments on mailboxes
 
-1. In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click **Edit** ![Edit button.](../media/ITPro_EAC_EditIcon.png).
 
 2. In the mailbox properties window that opens, click **Mailbox features**. The role assignment policy is shown in the **Role assignment policy** field.
 
@@ -299,7 +299,7 @@ A mailbox can have only one role assignment policy assigned. The role assignment
 
 In the EAC, go to **Recipients** \> **Mailboxes**, and do one of the following steps:
 
-- **Individual mailboxes**: Select the mailbox \> click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png) \> click **Mailbox features** in the window that opens \> click the dropdown next to **Role assignment policy** \> select a new role assignment policy \> click **Save**.
+- **Individual mailboxes**: Select the mailbox \> click **Edit** ![Edit button.](../media/ITPro_EAC_EditIcon.png) \> click **Mailbox features** in the window that opens \> click the dropdown next to **Role assignment policy** \> select a new role assignment policy \> click **Save**.
 
 - **Multiple mailboxes**: Select multiple mailboxes of the same type (for example, **User**) by selecting a mailbox, holding down the Shift key, and select another mailbox farther down in the list or by holding down the CTRL key as you select each mailbox. In the details pane (that's now titled **Bulk Edit**): click **More options** \> click **Update** under **Role Assignment Policy** \> select the role assignment policy in the window that appears \> click **Save**.
 

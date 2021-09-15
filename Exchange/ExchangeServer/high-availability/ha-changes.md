@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms.reviewer:
 title: Changes to high availability and site resilience over previous versions of Exchange Server
@@ -126,7 +126,7 @@ An example of a configuration that uses multiple databases per volume is illustr
 
  **Configuration that uses multiple databases per volume**
 
-![Multiple databases per volume](../media/ITPro_Mailbox_MultipleDBPerVolume.gif)
+![Multiple databases per volume.](../media/ITPro_Mailbox_MultipleDBPerVolume.gif)
 
 The configuration in the diagram provides a symmetrical design. All four servers have the same four databases all hosted on a single disk per server. The key is that the number of copies of each database that you have should be equal to the number of database copies per disk.
 

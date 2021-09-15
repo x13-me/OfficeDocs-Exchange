@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ218640(v=EXCHG.150)
 ms:contentKeyID: 48385058
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -54,17 +54,17 @@ Before you can send mail to the Internet, you need to create a Send connector on
 
 2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
-3. Go to **Mail flow** \> **Send connectors**. On the **Send connectors** page, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+3. Go to **Mail flow** \> **Send connectors**. On the **Send connectors** page, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 4. In the **New send connector** wizard, specify a name for the Send connector and then select **Internet**. Click **Next**.
 
 5. Verify that **MX record associated with recipient domain** is selected. Click **Next**.
 
-6. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure **SMTP** is selected in the **Type** field. In the **Fully Qualified Domain Name (FQDN)** field, enter **\***. Click **Save**.
+6. Under **Address space**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure **SMTP** is selected in the **Type** field. In the **Fully Qualified Domain Name (FQDN)** field, enter **\***. Click **Save**.
 
 7. Make sure **Scoped send connector** isn't selected and then click **Next**.
 
-8. Under **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a Server** window, select a Mailbox server. After you've selected the server, click **Add** and then click **OK**.
+8. Under **Source server**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a Server** window, select a Mailbox server. After you've selected the server, click **Add** and then click **OK**.
 
 9. Click **Finish**.
 
@@ -92,7 +92,7 @@ By default, when you deploy a new Exchange 2013 organization in an Active Direct
 
 2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
-3. Go to **Mail flow** \> **Accepted domains**. On the **Accepted domains** page, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+3. Go to **Mail flow** \> **Accepted domains**. On the **Accepted domains** page, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 4. In the **New accepted domain** wizard, specify a name for the accepted domain.
 
@@ -114,11 +114,11 @@ If you added an accepted domain in the previous step and you want that domain to
 
 2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
-3. Go to **Mail flow** \> **Email address policies**. On the **Email address policies** page, select **Default Policy** and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. Go to **Mail flow** \> **Email address policies**. On the **Email address policies** page, select **Default Policy** and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. On the **Default Policy Email Address Policy** page, click **Email Address Format**.
 
-5. Under **Email address format**, click the SMTP address you want to change and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+5. Under **Email address format**, click the SMTP address you want to change and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 6. On the **Email address format** page in the **Email address parameters** field, specify the SMTP recipient domain you want to apply to all recipients in the Exchange organization. This domain must match the accepted domain you added in the previous step. For example, @contoso.com. Click **Save**.
 
@@ -139,7 +139,7 @@ To verify that you have successfully configured the default email address policy
 
 3. Optionally, create a new mailbox and verify the mailbox is given an email address with the new accepted domain by doing the following:
 
-   1. Go to **Recipients** \> **Mailboxes**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") and then select **User mailbox**.
+   1. Go to **Recipients** \> **Mailboxes**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") and then select **User mailbox**.
 
    2. On the new user mailbox page, provide the information required to create a new mailbox. Click **Save**.
 
@@ -155,7 +155,7 @@ Before clients can connect to your new server from the Internet, you need to con
 
 2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
-3. Go to **Servers** \> **Servers**, select the name of the Internet-facing Client Access server and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. Go to **Servers** \> **Servers**, select the name of the Internet-facing Client Access server and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. Click **Outlook Anywhere**.
 
@@ -165,9 +165,9 @@ Before clients can connect to your new server from the Internet, you need to con
 
 7. Click **Save**.
 
-8. Go to **Servers** \> **Virtual directories** and then click **Configure external access domain** ![Configure icon](images/JJ218640.a9c33f23-3d44-44e7-a5d0-8446200c746e(EXCHG.150).gif "Configure icon").
+8. Go to **Servers** \> **Virtual directories** and then click **Configure external access domain** ![Configure icon.](images/JJ218640.a9c33f23-3d44-44e7-a5d0-8446200c746e(EXCHG.150).gif "Configure icon").
 
-9. Under **Select the Client Access servers to use with the external URL**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon")
+9. Under **Select the Client Access servers to use with the external URL**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon")
 
 10. Select the Client Access servers you want to configure and then click **Add**. After you've added all of the Client Access servers you want to configure, click **OK**.
 
@@ -370,7 +370,7 @@ To verify that you have successfully configured the internal URL on the Client A
 
 2. In the **Select server** field, select the Internet-facing Client Access server.
 
-3. Select a virtual directory and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. Select a virtual directory and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. Verify that the **Internal URL** field is populated with the correct FQDN and service as shown below:
 
@@ -433,7 +433,7 @@ To verify that you have successfully configured your private DNS records, do the
 
 3. In the **Select server** field, select the Internet-facing Client Access server.
 
-4. Select the virtual directory you want to change and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+4. Select the virtual directory you want to change and click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 5. In **Internal URL**, replace the host name between **https://** and the first forward slash (**/** ) with the new FQDN you want to use. For example, if you want to change the EWS virtual directory FQDN from Ex2013CAS.corp.contoso.com to internal.contoso.com, change the internal URL from https://Ex2013CAS.corp.contoso.com/ews/exchange.asmx to https://internal.contoso.com/ews/exchange.asmx.
 
@@ -482,7 +482,7 @@ To verify that you have successfully configured the internal URL on the Client A
 
 2. In the **Select server** field, select the Internet-facing Client Access server.
 
-3. Select a virtual directory and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. Select a virtual directory and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. Verify that the **Internal URL** field is populated with the correct FQDN. For example, you may have set the internal URLs to use internal.contoso.com.
 
@@ -547,7 +547,7 @@ Some services, such as Outlook Anywhere and Exchange ActiveSync, require certifi
 
 2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
-3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 4. In the **New Exchange certificate** wizard, select **Create a request for a certificate from a certification authority** and then click **Next**.
 
@@ -581,7 +581,7 @@ After you've saved the certificate request, submit the request to your certifica
 
 3. On the complete pending request page, specify the path to the SSL certificate file and then click **OK**.
 
-4. Select the new certificate you just added, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+4. Select the new certificate you just added, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 5. On the certificate page, click **Services**.
 

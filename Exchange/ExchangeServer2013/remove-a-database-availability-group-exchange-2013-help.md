@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd335069(v=EXCHG.150)
 ms:contentKeyID: 48384792
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,7 +38,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 1. Navigate to **Servers** \> **Database availability groups**.
 
-2. Select the DAG you want to remove and click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. Select the DAG you want to remove and click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. Click **Yes** to confirm the warning and remove the DAG.
 

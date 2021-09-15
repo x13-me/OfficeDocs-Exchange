@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Server.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.reviewer: 
 title: Address book policies in Exchange Server
@@ -42,7 +42,7 @@ For procedures involving ABPs, see [Procedures for address book policies in Exch
 
 The following diagram shows how ABPs work. The user is assigned Address Book Policy A that contains a subset of address lists that are available in the organization. When the ABP is created and assigned to the user, the ABP becomes the scope of the address lists that the user is able to view.
 
-![Overview of Address Book Policies](../../media/ITPro_Mailbox_ABPOverall.gif)
+![Overview of Address Book Policies.](../../media/ITPro_Mailbox_ABPOverall.gif)
 
 APBs take effect when a user connects to the Client Access (frontend) services on a Mailbox server. If you change an ABP, the updated APB takes effect when a user restarts or reconnects their client app, or you restart the Mailbox server (specifically, the Microsoft Exchange RPC Client Access service in the backend services).
 
@@ -62,7 +62,7 @@ For details about how to turn on the ABP Routing agent, see [Use the Exchange Ma
 
 In the following diagram, Fabrikam and Tailspin Toys share the same Exchange organization and the same CEO. The CEO is the only employee common to both companies.
 
-![Two Companies One CEO](../../media/ITPro_.png)
+![Two Companies One CEO.](../../media/ITPro_.png)
 
 The suggested configuration includes three ABPs:
 

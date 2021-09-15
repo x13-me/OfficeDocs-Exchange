@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Unified Messaging can use one of four codecs for creating voice mail messages: MP3, Windows Media Audio (WMA), Group System Mobile (GSM) 06.10, and G.711 Pulse Code Modulation (PCM) Linear. By default, when you create a Unified Messaging (UM) dial plan, the UM dial plan uses the MP3 audio codec to record voice messages. The MP3 audio format is a popular audio format that is used across multiple operating systems, email clients, and MP3 players. After the UM dial plan is created, you can configure the UM dial plan to use one of the other audio formats including the WMA, GSM 06.10, or G.711 PCM Linear audio codecs. To listen to the voice message, a mobile phone or computer must have a compatible audio software application installed.'
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ For additional tasks related to UM dial plans, see [UM dial plan procedures in E
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

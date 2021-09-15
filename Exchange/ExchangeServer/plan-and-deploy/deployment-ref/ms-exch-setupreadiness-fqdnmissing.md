@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the primary DNS suffix hasn't been configured on the target server.
 ms.topic: reference
 author: msdmaguire
 ms.custom:
 - ms.exch.setupreadiness.FqdnMissing
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 ms.reviewer: 
 title: Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]

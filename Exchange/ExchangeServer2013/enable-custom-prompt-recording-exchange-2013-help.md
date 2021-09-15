@@ -1,7 +1,7 @@
 ---
 title: 'Enable custom prompt recording using the telephone user interface: Exchange 2013 Help'
 TOCTitle: Enable custom prompt recording using the telephone user interface
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

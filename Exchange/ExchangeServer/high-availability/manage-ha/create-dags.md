@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to create a DAG in Exchange Server, through the Exchange admin center (EAC) or the Exchange Management Shell.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
 ms.reviewer:
 title: Create a database availability group
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Create a database availability group
+# Create a database availability group in Exchange Server
 
 A database availability group (DAG) is a set of up to 16 Microsoft Exchange Server Mailbox servers that provide automatic database-level recovery from a database, server, or network failure. When a Mailbox server is added to a DAG, it works with the other servers in the DAG to provide automatic, database-level recovery from database, server, and network failures.
 
@@ -58,7 +58,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to create a DAG.
+2. Click ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to create a DAG.
 
 3. On the **new database availability group** page, provide the following information for the DAG:
 
@@ -70,7 +70,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
    - **Witness directory**: Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\DAGFileShareWitnesses\\<DAG FQDN\>) will be created on the witness server.
 
-   - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
+   - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
 
 4. Click **Save** to create the DAG.
 

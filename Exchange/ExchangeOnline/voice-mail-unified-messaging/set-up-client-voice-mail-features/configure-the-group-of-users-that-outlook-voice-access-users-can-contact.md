@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can specify which users can receive transferred calls or voice mail messages from Outlook Voice Access users. By default, the In this dial plan only option is selected. You can change this setting to allow Outlook Voice Access users to transfer calls or send voice messages to users located in the entire organization, to an existing UM auto attendant, or to a specific extension number.
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ For additional tasks related to UM dial plans, see  [UM dial plan procedures in 
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

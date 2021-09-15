@@ -1,7 +1,7 @@
 ---
 description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests, Microsoft 365, or Office 365."
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
@@ -16,7 +16,7 @@ title: Enable the MRS Proxy endpoint for remote moves
 
 ---
 
-# Enable the MRS Proxy endpoint for remote moves
+# Enable the MRS Proxy endpoint for remote moves in Exchange Server
 
 The Mailbox Replication service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Microsoft 365 or Office 365. You enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings in the Client Access (frontend) services on Exchange 2016 or Exchange 2019 Mailbox servers.
 
@@ -55,13 +55,13 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
    - To only display EWS virtual directories, select **EWS** in the **Select type** drop-down list.
 
-   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory.](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
 
 3. On the properties page that opens, on the **General** tab, select the **Enable MRS Proxy endpoint** check box, and then click **Save**.
 
-   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
+   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint.](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
 
 ## Use the Exchange Management Shell to enable the MRS Proxy endpoint
 

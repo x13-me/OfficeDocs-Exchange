@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
@@ -91,7 +91,7 @@ You can restore a public calendar folder using the same procedure as any other p
 
 When deleting a public calendar folder, a user sees the following options:
 
-![Delete calendar dialog box](../../media/delete-public-calendar-folder.png)
+![Delete calendar dialog box.](../../media/delete-public-calendar-folder.png)
 
 If the user selected "Yes", the items were deleted. In this case, you can restore the public folder, but the items cannot be recovered.
 

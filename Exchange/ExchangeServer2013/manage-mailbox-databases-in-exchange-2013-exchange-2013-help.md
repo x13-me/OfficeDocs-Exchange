@@ -1,6 +1,6 @@
 ---
 title: 'Manage mailbox databases in Exchange 2013: Exchange 2013 Help'
-description: 'Summary: This article describes the management of mailbox databases in Exchange 2013.'
+description: 'Summary: This article describes management of mailbox databases in Exchange 2013.'
 TOCTitle: Manage mailbox databases in Exchange 2013
 ms:assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150580(v=EXCHG.150)
@@ -10,9 +10,9 @@ manager: serdars
 ms.author: serdars
 author: serdars
 audience: ITPro
-ms.topic: article
 f1.keywords:
 - NOCSH
+ms.topic: article
 mtps_version: v=EXCHG.150
 ---
 
@@ -83,7 +83,7 @@ From the Shell, verify that all your mailbox database information is represented
 
 2. Select **Databases**, and then click to select the mailbox database you want to configure.
 
-3. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")to configure the attributes of a mailbox database.
+3. Click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")to configure the attributes of a mailbox database.
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
@@ -118,7 +118,7 @@ From the Shell, verify that all your mailbox database information is represented
 
    - *Don't mount this database at startup*: Select this check box to prevent Exchange from mounting this mailbox database when it starts.
 
-   - *This database can be overwritten by a restore*: Select this check box to allow the mailbox database to be overwritten during a restore process.
+   - **This database can be overwritten by a restore**: Select this check box to allow the mailbox database to be overwritten during a restore process.
 
    - *Enable circular logging*: Select this check box to enable circular logging.
 
@@ -144,7 +144,7 @@ From the Shell, verify that all your mailbox database information is represented
 
 For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](/powershell/module/exchange/Set-MailboxDatabase).
 
-## How do you know that this process has worked?
+## How do you know this process has worked?
 
 To verify that you have successfully set the attributes, implement the following tasks:
 
@@ -164,7 +164,7 @@ For detailed syntax and parameter information, see [Move-DatabasePath](/powershe
 
 For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](/powershell/module/exchange/Move-DatabasePath).
 
-## How do you know if this process worked?
+## How do you know whether this process worked?
 
 To verify that you have successfully moved the database path, implement the following steps:
 
@@ -180,7 +180,7 @@ For detailed syntax and parameter information, see [Mount-Database](/powershell/
 
 For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](/powershell/module/exchange/Mount-Database).
 
-## How do you know if this process has worked?
+## How do you know whether this process has worked?
 
 From the Shell, run the following command to retrieve mailbox database properties for all mailbox databases.
 
@@ -196,7 +196,7 @@ For detailed syntax and parameter information, see [Dismount-Database](/powershe
 
 For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](/powershell/module/exchange/Dismount-Database).
 
-## How do you know whether this process worked?
+## How do you know if this process worked?
 
 To verify that you have successfully dismounted the database, implement the following steps:
 
@@ -210,7 +210,7 @@ To verify that you have successfully dismounted the database, implement the foll
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
-2. Click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon")to remove the mailbox database.
+2. Click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon")to remove the mailbox database.
 
 ## Use the Shell to remove a mailbox database
 
@@ -226,10 +226,9 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](/pow
 
 3. When the dialog box appears stating that the database was removed successfully, note the location of the Exchange 2013 database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
 
-## How do you know whether this process has worked?
+## How do you know if this process has worked?
 
 To verify that you have successfully removed the mailbox database, implement the following tasks:
 
 - From the EAC, select **Servers** \> **Databases**.
-
 - Verify that the mailbox database has been removed.

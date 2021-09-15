@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you enable a user for UM and link them to a SIP URI dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains a SIP address for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
@@ -53,9 +53,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox from which you want to remove a SIP address, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox from which you want to remove a SIP address, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, select the SIP address that you want to remove from the list, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or SIP address is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the SIP address that you want to remove from the list, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or SIP address is listed in bold letters and numbers.
 
 4. Click **Save**.
 

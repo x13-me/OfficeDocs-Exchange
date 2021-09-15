@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: An organization relationship lets users in your Microsoft 365 or Office 365 organization share calendar free/busy information with other Microsoft 365 or Office 365 or on-premises Exchange organizations. You can remove an organization relationship to disable calendar sharing with the other organization.
 ms.topic: article
 author: msdmaguire
@@ -37,7 +37,7 @@ To learn more about organization relationships, see [Organization relationships 
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 4. In the warning that appears, click **yes**.
 

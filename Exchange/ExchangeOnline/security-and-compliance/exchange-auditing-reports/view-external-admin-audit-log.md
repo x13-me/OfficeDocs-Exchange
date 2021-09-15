@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to run the external admin audit log report in the Exchange admin center (EAC) and in PowerShell.
 ms.topic: article
 author: msdmaguire

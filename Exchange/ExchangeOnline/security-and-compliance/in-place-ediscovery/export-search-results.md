@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Administrators can distribute the results of the search to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications. This topic shows you how to do this, as well as troubleshoot any issues you might have.
 ms.topic: article
 author: msdmaguire
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Export eDiscovery search results to a PST file
+# Export eDiscovery search results to a PST file in the Exchange admin center
 
 You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Administrators can distribute the results of the search to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications. This topic shows you how to do this, as well as troubleshoot any issues you might have.
 
@@ -65,7 +65,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 2. In the list view, select the In-Place eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-    ![Export to a PST File](../../media/ExportToPSTFile.gif)
+    ![Export to a PST File.](../../media/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "You can view or set the Unified Messaging (UM) and voice mail features and configuration settings for a user that's been enabled for UM and voice mail. For example, you can do the following:"
 ms.topic: article
 author: msdmaguire
@@ -74,9 +74,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
 
-   - To add an extension number, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
+   - To add an extension number, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
 
-   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 6. If you make any changes, click **Save**.
 

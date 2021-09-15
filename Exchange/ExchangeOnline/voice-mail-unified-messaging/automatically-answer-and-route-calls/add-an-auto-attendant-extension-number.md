@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure an extension number or multiple extension numbers on a Unified Messaging (UM) auto attendant. When you add an extension number to a UM auto attendant, that number can be used by callers to call into the auto attendant. Also, you may have to add extension numbers because there is more than one extension number that callers can use to access an auto attendant. By default, no extension numbers are configured when you create an auto attendant.
 ms.topic: article
 author: msdmaguire
@@ -44,13 +44,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to add an extension or phone numbers for a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to add extension or phone numbers to.
 
-3. On the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the toolbar, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-4. On the **UM Auto Attendant** page \> **General**, under **Access numbers**, in the text box, enter the extension or phone number that you want to use and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+4. On the **UM Auto Attendant** page \> **General**, under **Access numbers**, in the text box, enter the extension or phone number that you want to use and click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 5. Click **Save** to add the number.
 

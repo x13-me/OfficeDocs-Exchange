@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create and remove an In-Place Hold in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.reviewer:
 title: Create or remove an In-Place Hold
@@ -42,7 +42,7 @@ You can create In-Place holds in the Exchange admin center (EAC) or in the Excha
 
 ### Use the EAC to create an In-Place Hold
 
-1. Go to **Compliance management** \> **In-Place eDiscovery & Hold**, and then click **New** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **In-Place eDiscovery & Hold**, and then click **New** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New In-Place eDiscovery & Hold** window, on the **Name and description** page, type a name for the hold and an optional description, and then click **Next**.
 
@@ -54,7 +54,7 @@ You can create In-Place holds in the Exchange admin center (EAC) or in the Excha
 
    - To place public folders on hold, click **Search all public folders**.
 
-   ![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
+   ![Use In-Place eDiscovery to search and place a hold on public folders.](../../media/TA_MRM_SearchPublicFolders.gif)
 
    > [!IMPORTANT]
    > You can't select the **Search all mailboxes** option when creating an In-Place Hold. To create an In-Place Hold, you must select the specific mailboxes you want to place on hold.
@@ -127,11 +127,11 @@ In Exchange Server, eDiscovery searches are used to hold and search for content 
 
 1. Go to **Compliance management** \> **In-Place eDiscovery & Hold**.
 
-2. In the list view, select the In-Place Hold you want to remove, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select the In-Place Hold you want to remove, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. In **In-Place eDiscovery & Hold** properties, on the **In-Place Hold** page, clear the **Place content matching the search query in selected sources on hold** check box, and then click **Save**.
 
-4. Select the In-Place Hold again from the list view and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+4. Select the In-Place Hold again from the list view and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 5. In warning, click **Yes** to remove the search.
 
@@ -161,7 +161,7 @@ When an In-Place Hold is placed on a mailbox or public folder, purged items are 
 
 The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-![Recoverable Items folder](../../media/ITPro_RecoverableItems.gif)
+![Recoverable Items folder.](../../media/ITPro_RecoverableItems.gif)
 
 > [!NOTE]
 > If a mailbox is place on Litigation Hold, purged items are moved to the Purges subfolder and preserved for the hold duration configured for the Litigation Hold.

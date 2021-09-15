@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 monikerRange: exchserver-2016 || exchserver-2019
 title: Turn off access to the Exchange admin center
@@ -17,7 +17,7 @@ manager: serdars
 
 ---
 
-# Turn off access to the Exchange admin center
+# Exchange Server: Turn off access to the Exchange admin center
 
 The Exchange admin center (EAC) is the primary management interface for Exchange 2013 or later. For more information, see [Exchange admin center in Exchange Server](exchange-admin-center.md). By default, access to the EAC isn't restricted, and access to Outlook on the web (formally known as Outlook Web App) on an on an Internet-facing Exchange server also gives access to the EAC. You still need valid credentials to sign in to the EAC, but organizations may want to restrict access to the EAC for client connections from the Internet.
 
@@ -28,7 +28,7 @@ In Exchange Server 2019, you can use Client Access Rules to block client access 
 ::: moniker range="exchserver-2016"
 The EAC virtual directory is named ECP, and is managed by the \*- **ECPVirtualDirectory** cmdlets. When you set the _AdminEnabled_ parameter to the value `$false` on the EAC virtual directory, you disable access to the EAC for internal and external client connections, without affecting access to the **Settings** \> **Options** page in Outlook on the web.
 
-![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
+![Options menu location in Outlook on the web.](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
 
 But, this configuration introduces a new problem: access to the EAC is completely disabled on the server, even for administrators on the internal network. To fix this issue, you have two choices:
 
@@ -122,7 +122,7 @@ The steps to assign a second IP address to the existing network adapter are desc
 
    b. Right-click on the network adapter, and then choose **Properties**.
 
-   ![Properties of the network adapter in Windows](../../media/98864995-a130-4c7c-89c8-ffa05953721a.png)
+   ![Properties of the network adapter in Windows.](../../media/98864995-a130-4c7c-89c8-ffa05953721a.png)
 
 2. In the properties of the network adapter, select **Internet Protocol Version 4 (TCP/IPv4)**, and then click **Properties**.
 
@@ -130,11 +130,11 @@ The steps to assign a second IP address to the existing network adapter are desc
 
 4. In the **Advanced TCP/IP Settings** window that opens, on the **IP Settings** tab, in the **IP addresses** section, click **Add** and enter the IP address.
 
-   ![Advanced TCP/IP Settings window of the network adapter properties](../../media/68ecb9d6-5fda-4a9c-bffc-e514186ddf47.png)
+   ![Advanced TCP/IP Settings window of the network adapter properties.](../../media/68ecb9d6-5fda-4a9c-bffc-e514186ddf47.png)
 
    **Note**: If you add a second network adapter, in the **Advanced TCP/IP Settings** window, on the **DNS** tab, un-check **Register this connection's address in DNS**.
 
-   ![DNS tab on Advanced TCP/IP Settings window](../../media/38024c13-ddcb-44fa-a751-b7c812037a6b.png)
+   ![DNS tab on Advanced TCP/IP Settings window.](../../media/38024c13-ddcb-44fa-a751-b7c812037a6b.png)
 
 #### Step 2b: Create a new web site in IIS that uses the second IP address, and assign file and folder permissions
 
@@ -142,7 +142,7 @@ The steps to assign a second IP address to the existing network adapter are desc
 
 2. In the **Connections** pane, expand the server, select **Sites**, and in the **Actions** pane, click **Add Website**.
 
-   ![In IIS Manager, expand the server, and select Sites](../../media/f74f0bf6-50a2-4870-afda-4a6d49321f52.png)
+   ![In IIS Manager, expand the server, and select Sites.](../../media/f74f0bf6-50a2-4870-afda-4a6d49321f52.png)
 
 3. In the **Add Website** window that appears, configure the following settings:
 
@@ -162,13 +162,13 @@ The steps to assign a second IP address to the existing network adapter are desc
 
    When you're finished, click **OK**.
 
-   ![Website properites for the secondary EAC web site](../../media/a9e7f729-ae71-44ed-b491-3b6197b29cea.png)
+   ![Website properites for the secondary EAC web site.](../../media/a9e7f729-ae71-44ed-b491-3b6197b29cea.png)
 
 4. Create `ecp` and `owa` folders in `C:\inetpub\EAC_Secondary`.
 
    a. In IIS Manager, select the `EAC_Secondary` web site, and in the **Actions** pane, click **Explore**.
 
-   ![In IIS Manager, select the new EAC web site in the Sites pane](../../media/a70abb44-ae70-4c9b-b2d9-27de49c063e5.png)
+   ![In IIS Manager, select the new EAC web site in the Sites pane.](../../media/a70abb44-ae70-4c9b-b2d9-27de49c063e5.png)
 
    b. In the File Explorer window that opens, create the following folders in `C:\inetpub\EAC_Secondary`:
 
@@ -192,7 +192,7 @@ The steps to assign a second IP address to the existing network adapter are desc
 
       ii. In the **Enter the object names to select** field, type IIS_IUSRS, click **Check Names**, and then click **OK**.
 
-      ![Add permissions](../../media/b8787b85-5caa-4c23-b167-088bab11baa7.png)
+      ![Add permissions.](../../media/b8787b85-5caa-4c23-b167-088bab11baa7.png)
 
    e. Back on the **Permissions for EAC_Secondary** window, select **IIS_IUSRS**, and in the **Allow** column, select **Read & Execute** (which automatically selects the **List Folder Contents** and **Read** permissions), and then click **OK** twice.
 

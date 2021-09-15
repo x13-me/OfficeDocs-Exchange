@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
 ms.reviewer:
 title: Sharing and collaboration permissions
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Sharing and collaboration permissions
+# Sharing and collaboration permissions in Exchange Server
 
 The permissions required to configure sharing and collaboration features vary depending on the procedure being performed or the cmdlet you want to run. For more information about sharing and collaboration, see [Collaboration](../../collaboration/collaboration.md) and [Sharing](../../../ExchangeServer2013/sharing-exchange-2013-help.md).
 

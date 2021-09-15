@@ -1,7 +1,7 @@
 ---
 title: 'Create a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Create a UM mailbox policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -38,9 +38,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to create a UM mailbox policy
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM mailbox policy** page, in the **Name** box, enter the name of the new UM mailbox policy.
 

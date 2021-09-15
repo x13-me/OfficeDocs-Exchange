@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable a customized non-business hours greeting for a Unified Messaging (UM) auto attendant. The non-business hours greeting is the first thing callers hear when a UM auto attendant answers their call during non-business hours. You'll probably want to customize the greeting.
 ms.topic: article
 author: msdmaguire
@@ -45,9 +45,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable a customized non-business hours greeting
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized non-business hours greeting, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized non-business hours greeting, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page, \> **Greetings**, under **Non-business hours greeting**, click **Change**, and then click **Browse** to locate the customized non-business hours greeting file you created before you started this procedure.
 

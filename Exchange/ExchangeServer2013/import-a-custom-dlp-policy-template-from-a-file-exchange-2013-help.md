@@ -1,7 +1,7 @@
 ---
 title: 'Import a custom DLP policy template from a file: Exchange 2013 Help'
 TOCTitle: Import a custom DLP policy template from a file
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -37,7 +37,7 @@ Use the following procedure to import a custom DLP policy template from a file. 
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
-2. Click the arrow that is next to the **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) icon, then click **Import policy**.
+2. Click the arrow that is next to the **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) icon, then click **Import policy**.
 
 3. On the **Import policy** page, complete the following fields:
 

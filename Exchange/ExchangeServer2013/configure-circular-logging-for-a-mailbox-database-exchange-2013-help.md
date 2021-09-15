@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn756374(v=EXCHG.150)
 ms:contentKeyID: 62524835
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -35,15 +35,15 @@ For more information about circular logging and CRCL, see [Exchange Native Data 
 
 1. In the EAC, go to **Servers** \> **databases**.
 
-2. Select the mailbox database you want to configure and click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the mailbox database you want to configure and click ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. Check or uncheck the **Enable circular logging** checkbox, and then click **save**.
 
 4. If a dismount and mount operation are required, a warning message will appear. Click **OK** to close the warning message.
 
-    1. To dismount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Dismount**. Click **yes** when the warning message appears.
+    1. To dismount the database, click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Dismount**. Click **yes** when the warning message appears.
 
-    2. To mount the database, click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Mount**. Click **yes** when the warning message appears.
+    2. To mount the database, click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Mount**. Click **yes** when the warning message appears.
 
 ## Use the Shell to configure circular logging for a database
 

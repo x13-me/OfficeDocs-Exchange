@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996598(v=EXCHG.150)
 ms:contentKeyID: 50382995
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -47,7 +47,7 @@ As previously stated, when you disable email for a mail user, the Exchange attri
 
 2. In the list of contacts, click the mail user you want to disable email for.
 
-3. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
+3. Click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
 4. A warning will appear asking if you're sure you want to disable the selected mail user. Click **Yes** to disable it.
 

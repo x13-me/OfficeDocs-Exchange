@@ -1,7 +1,7 @@
 ---
 title: 'Manage user mailboxes: Exchange 2013 Help'
 TOCTitle: Manage user mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,7 +36,7 @@ After you create a user mailbox, you can make changes and set additional propert
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, you can change any of the following properties.
 
@@ -140,7 +140,7 @@ Use the **Organization** section to record detailed information about the user's
 
 Use the **Email Address** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -225,7 +225,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **All senders**: Select this option to specify that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This option is selected by default. This option includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
 
-  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
   - **Require that all senders are authenticated**: Select this option to prevent anonymous users from sending messages to the user.
 
@@ -233,7 +233,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **No senders** Select this option to specify that the mailbox won't reject messages from any senders in the Exchange organization. This option is selected by default.
 
-  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
 ### Member Of
 
@@ -256,7 +256,7 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
 
 - **Full Access**: This permission allows a delegate to sign in to the user's mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can't send messages from the mailbox. To allow a delegate to send email from the user's mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
 
-To assign permissions to delegates, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+To assign permissions to delegates, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
 
 ### Use the Shell to change user mailbox properties
 
@@ -302,7 +302,7 @@ Set-Mailbox john@contoso.com -MailTipTranslations ("FR: C'est la langue françai
 
 To verify that you've successfully changed properties for a user mailbox, do the following:
 
-- In the EAC, select the mailbox and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
+- In the EAC, select the mailbox and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
 
 - In the Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. In the example above where the recipient limit was changed, run the following command to verify the new value.
 
@@ -360,7 +360,7 @@ Here's a list of the user mailbox properties and features that can be bulk edite
 
 To verify that you've successfully bulk edited user mailboxes, do one of the following:
 
-- In the EAC, select each of the mailboxes that you bulk edited and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed.
+- In the EAC, select each of the mailboxes that you bulk edited and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed.
 
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. For example, say you used the bulk edit feature in the EAC to enable the archive mailbox and assign a retention policy to all users in your organization. To verify these changes, you could run the following command:
 

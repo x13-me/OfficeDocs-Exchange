@@ -1,6 +1,6 @@
 ---
 title: "Transport options in Exchange hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -41,7 +41,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 This approach is helpful in compliance scenarios where all mail to and from the Internet must be processed by on-premises servers. Alternately, you can configure Exchange Online to deliver messages for external recipients directly to the Internet.
 
     > [!NOTE]
-    > Centralized mail transport is only recommended for organizations with specific compliance-related transport needs. Our recommendation for typical Exchange organizations is not to enable centralized mail transport as it can significantly increase the amount of messages processed by your on-premises servers, increase the bandwidth used, and create an unnecessary dependency on your on-premises servers.  
+    > Centralized mail transport is only recommended for organizations with specific compliance-related transport needs. Our recommendation for typical Exchange organizations is not to enable centralized mail transport as it can significantly increase the amount of messages processed by your on-premises servers, increase the bandwidth used, and create an unnecessary dependency on your on-premises servers.
 
 - Do you want to deploy an Edge Transport server in your on-premises organization?
 

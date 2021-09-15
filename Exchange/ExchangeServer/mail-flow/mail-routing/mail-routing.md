@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how mail is routed between Exchange servers in an Exchange 2016 or Exchange 2019 organization.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
 ms.reviewer:
 title: Mail routing in Exchange Server

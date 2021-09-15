@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'MailTips are informative messages displayed to users in the InfoBar in Outlook on the web and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:'
 ms.topic: article
 author: msdmaguire
@@ -71,7 +71,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
    - **Shared**
 
-3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. In the recipient properties page that appears, click **MailTips**.
 

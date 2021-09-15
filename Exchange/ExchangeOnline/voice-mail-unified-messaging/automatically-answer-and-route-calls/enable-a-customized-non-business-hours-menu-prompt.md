@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can customize the menu prompt to be used by a Unified Messaging (UM) auto attendant outside business hours. After you create a UM auto attendant, a default system prompt (Welcome to Unified Messaging) is used as the menu prompt that callers hear after the non-business hours welcome greeting is played. Although the system prompt mustn't be replaced or changed, you can customize the greetings and menu prompts that are used with UM auto attendants. After you create a customized non-business hours menu prompt audio file, you must enable menu navigation entries on the UM auto attendant for non-business hours.
 ms.topic: article
 author: msdmaguire
@@ -46,9 +46,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable a customized non-business hours menu prompt
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized non-business hours menu prompt, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized non-business hours menu prompt, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page \> **Menu navigation**, under **Non-business hours menu navigation**, click **Change**, and then click **Browse** to locate the customized non-business hours menu prompt file.
 

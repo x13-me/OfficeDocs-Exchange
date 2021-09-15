@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ945053(v=EXCHG.150)
 ms:contentKeyID: 51423387
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -46,18 +46,18 @@ You must create a user account in each forest to use for Basic authentication. C
 
 Establish cross-forest mail flow using Basic authentication.
 
-1. In the EAC, navigate to **mail flow** \> **send connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **mail flow** \> **send connectors**. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **new send connector** wizard, specify a name for the send connector and then select **Internal** for the **Type**. Click **next**.
 
-3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **add smart host** window, specify the IP address of the target server in the second forest, such as 64.4.6.100. Click **save** and then **next**.
+3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **add smart host** window, specify the IP address of the target server in the second forest, such as 64.4.6.100. Click **save** and then **next**.
 
     For **Smart host authentication**, choose **Basic authentication** and provide a username and password. Here you can choose **Offer basic authentication only after starting TLS** for secure communication over TLS.
 
     > [!NOTE]
     > If you use Basic authentication over TLS, the target server must be configured to use an X.509 certificate.
 
-4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the receiving domain, such as fourthcoffee.com. Click **save** and then **next**.
+4. Under **Address space**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the receiving domain, such as fourthcoffee.com. Click **save** and then **next**.
 
 5. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, choose the server to use and click **add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **ok**.
 

@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: This article describes the delays due to mailboxes exceeding their limits.
 ms.custom:
@@ -33,11 +33,11 @@ The insight will only appear if:
 
 The insight will appear in the dashboard:
 
-![Insight](../../media/mailbox-exceeding-insight.png)
+![Insight.](../../media/mailbox-exceeding-insight.png)
 
 When you click on **View details**, the following flyout will appear:
 
-![Detailed insight](../../media/mailboxes-exceeding-limit-insight.png)
+![Detailed insight.](../../media/mailboxes-exceeding-limit-insight.png)
 
 1. Select **Learn more about receiving limits** to view documentation about Exchange's limits.
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure journaling in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer:
 title: Journaling procedures in Exchange Server
@@ -46,7 +46,7 @@ Standard journaling records all messages that are sent to and received by all ma
 
 1. In the EAC, go to **Servers** \> **Databases**.
 
-2. Select the mailbox database, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. Select the mailbox database, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 3. In the mailbox database properties window that opens, click the **Maintenance** tab, and then perform one of the following procedures:
 
@@ -54,7 +54,7 @@ Standard journaling records all messages that are sent to and received by all ma
 
    - **Disable journaling**: Click **Remove X** next to the value in **Journal recipient** field.
 
-     ![remove journal rule](../../media/e0f3cce1-60c2-4dba-9911-b5c9c6aa2d9c.png)
+     ![remove journal rule.](../../media/e0f3cce1-60c2-4dba-9911-b5c9c6aa2d9c.png)
 
    When you're finished, click **Save**.
 
@@ -94,7 +94,7 @@ Get-MailboxDatabase | Set-MailboxDatabase -JournalRecipient $null
 
 To verify that you've successfully enabled or disabled journaling on a mailbox database, use any of the following procedures:
 
-- In the EAC, go to **Servers** \> **Databases** \> select the database \> **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Maintenance**, and verify the **Journal recipient** field is populated (journaling is enabled), or empty (journaling is disabled).
+- In the EAC, go to **Servers** \> **Databases** \> select the database \> **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Maintenance**, and verify the **Journal recipient** field is populated (journaling is enabled), or empty (journaling is disabled).
 
 - In the Exchange Management Shell, run the following command to verify the value of the **JournalRecipient** property on all mailbox databases in your organization:
 
@@ -120,7 +120,7 @@ The basic components of a journal rule are:
 
 #### Use the EAC to create journal rules
 
-1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)).
+1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)).
 
 2. In **New journal rule** window that opens, configure the following settings:
 
@@ -144,7 +144,7 @@ The basic components of a journal rule are:
 
    When you're finished, click **Save**.
 
-![new journal rule](../../media/fb96ba0e-473a-46d3-ab98-ffb4e34424ba.png)
+![new journal rule.](../../media/fb96ba0e-473a-46d3-ab98-ffb4e34424ba.png)
 
 #### Use the Exchange Management Shell to create journal rules
 
@@ -239,7 +239,7 @@ To verify that you've successfully enabled or disabled a journal rule, use any o
 
 No additional settings are available when you modify a journal rule. They're the same settings that were available when you created the rule:
 
-- **EAC**: Go to **Compliance management** \> **Journal rules**, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). The available settings are the same as when you created the rule. For more information, see the [Use the EAC to create journal rules](#use-the-eac-to-create-journal-rules) section.
+- **EAC**: Go to **Compliance management** \> **Journal rules**, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). The available settings are the same as when you created the rule. For more information, see the [Use the EAC to create journal rules](#use-the-eac-to-create-journal-rules) section.
 
 - **Exchange Management Shell**: The syntax to modify a journal rule is:
 
@@ -257,7 +257,7 @@ No additional settings are available when you modify a journal rule. They're the
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
-2. In the list view, select the rule or rules that you want to remove, and then click **Delete** (![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)).
+2. In the list view, select the rule or rules that you want to remove, and then click **Delete** (![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)).
 
 #### Use the Exchange Management Shell to remove journal rules
 

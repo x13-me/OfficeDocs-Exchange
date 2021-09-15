@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom: 
   - seo-marvel-apr2020
@@ -34,7 +34,7 @@ Changing business requirements can sometimes require splitting one organization 
 
 In the following example, Contoso, Ltd. has merged with Contoso Suites. The following image shows the process of moving domains, mail users and groups, and settings from the source standalone EOP organization (contoso.onmicrosoft.com) to the target standalone EOP organization (contososuites.onmicrosoft.com):
 
-![Move EOP domains and settings](../media/EOP-Move-domains-and-settings.jpg)
+![Move EOP domains and settings.](../media/EOP-Move-domains-and-settings.jpg)
 
 The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.
 

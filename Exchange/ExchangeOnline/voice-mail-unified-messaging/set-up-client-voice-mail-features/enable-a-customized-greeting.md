@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: By default, each Unified Messaging (UM) dial plan uses a standard .wav file for the welcome greeting that's played to callers, including Outlook Voice Access users who dial in to an Outlook Voice Access number that's been configured. However, you can create a .wav or .wma file for the welcome greeting, and then enable it on the UM dial plan.
 ms.topic: article
 author: msdmaguire
@@ -43,7 +43,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

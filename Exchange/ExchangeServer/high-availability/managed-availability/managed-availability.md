@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about monitoring your Exchange Server 2016 or Exchange Server 2019 organization to quickly resolve issues for greater availability and reliability.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 ms.reviewer:
 title: Managed availability
@@ -59,7 +59,7 @@ As illustrated in the following drawing, managed availability includes three mai
 
  **Managed Availability Components**
 
-![The components of Managed Availability in Exchange Server](../../media/ITPro_Mailbox_MAArchitecture.png)
+![The components of Managed Availability in Exchange Server.](../../media/ITPro_Mailbox_MAArchitecture.png)
 
  **Probes**
 

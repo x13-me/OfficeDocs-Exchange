@@ -1,7 +1,7 @@
 ---
 title: 'Create and manage room mailboxes: Exchange 2013 Help'
 TOCTitle: Create and manage room mailboxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -39,7 +39,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
-2. To create a room mailbox, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) \> **Room mailbox**.
+2. To create a room mailbox, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) \> **Room mailbox**.
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
@@ -124,7 +124,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
-2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the room mailbox properties page, click one of the following sections to view or change properties.
 
@@ -156,7 +156,7 @@ Click **More options** to view or change these additional properties:
 
   In the drop-down list, select the policy that you want associated with this mailbox.
 
-- **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
 
 ### Delegates
 
@@ -168,7 +168,7 @@ Use this section to view or change how the room mailbox handles reservation requ
 
   - **Select delegates who can accept or decline booking requests**: Resource delegates are responsible for accepting or declining meeting requests that are sent to the room mailbox. If you assign more than one resource delegate, only one of them has to act on a specific meeting request.
 
-- **Delegates**: If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
+- **Delegates**: If you selected the option requiring that booking requests be sent to delegates, the specified delegates are listed. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif) to add or remove delegates from this list.
 
 ### Booking Options
 
@@ -203,7 +203,7 @@ Use the **Contact Information** section to view or change the contact informatio
 
 Use the **Email Address** section to view or change the email addresses associated with the room mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add** Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add** Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -271,7 +271,7 @@ Get-User -ResultSize unlimited -Filter "(RecipientTypeDetails -eq 'RoomMailbox')
 
 To verify that you've successfully changed properties for a room mailbox, do the following:
 
-- In the Exchange admin center, select the mailbox and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
+- In the Exchange admin center, select the mailbox and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
 
 - In Exchange PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 

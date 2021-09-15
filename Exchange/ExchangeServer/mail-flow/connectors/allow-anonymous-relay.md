@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
@@ -74,7 +74,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 ### Use the EAC to create a dedicated Receive connector for anonymous relay
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Receive connector** wizard.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Receive connector** wizard.
 
 2. On the first page, enter the following information:
 
@@ -92,7 +92,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
    - If the Exchange server has an internal network adapter and an external network adapter, and segregates internal and external network traffic by using different subnets, you can further enhance security for the connector by limiting the use of the connector to requests that originate on the internal network adapter. To do this:
 
-     1. Select the existing **(All available IPv4)** entry, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+     1. Select the existing **(All available IPv4)** entry, click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
 
      2. In the resulting **Network Adapter Bindings** dialog, select **Specify an IPv4 address or an IPv6 address**, and enter a valid and available IP address that's configured on the internal network adapter, and then click **Save**.
 
@@ -100,7 +100,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 4. On the next page, in the **Remote network settings** section, do the following steps:
 
-   1. Select the existing **0.0.0.0-255.255.255.255** entry, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Select the existing **0.0.0.0-255.255.255.255** entry, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
 
    2. In the resulting **Remote Address Settings** dialog, enter an IP address or IP address range that identifies the network hosts that are allowed use this connector, and then click **Save**. You can repeat this step to add multiple IP addresses or IP address ranges. Err on the side of being too specific instead of too general to clearly identify the network hosts that are allowed to use this connector.
 
@@ -164,7 +164,7 @@ Run the following commands in the Exchange Management Shell:
 
 ### Configure the connections as externally secured
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, select the Anonymous Relay connector, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, select the Anonymous Relay connector, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. In the properties of the connector, click **Security** and make the following selections:
 

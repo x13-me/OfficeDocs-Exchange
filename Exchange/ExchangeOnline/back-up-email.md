@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data.
 ms.topic: article
 author: msdmaguire

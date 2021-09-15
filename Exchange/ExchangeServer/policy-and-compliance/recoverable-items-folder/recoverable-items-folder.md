@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.reviewer:
 title: Recoverable Items folder in Exchange Server
@@ -82,7 +82,7 @@ The Recoverable Items folder contains the following subfolders:
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 
-![Recoverable Items folder](../../media/ITPro_RecoverableItems.gif)
+![Recoverable Items folder.](../../media/ITPro_RecoverableItems.gif)
 
 ### Deleted item retention
 <a name="retention"> </a>

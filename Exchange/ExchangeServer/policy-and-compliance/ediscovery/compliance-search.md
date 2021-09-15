@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to run a script to create an In-Place eDiscovery search that uses the list of source mailboxes and search query from a Compliance Search.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 9f0f4a3d-de9a-4d8a-9172-2edf4288d766
 ms.reviewer:
 title: Use Compliance Search to search all mailboxes in Exchange Server
@@ -201,9 +201,9 @@ The script that you run in Step 3 creates a new In-Place eDiscovery search, but 
 
 2. In the list view, select the In-Place eDiscovery search that you created in Step 3.
 
-3. Click **Search** (![Search icon](../../media/ITPro_EAC_.png)) \> **Estimate search results** to start the search and return an estimate of the total size and number of items returned by the search.
+3. Click **Search** (![Search icon.](../../media/ITPro_EAC_.png)) \> **Estimate search results** to start the search and return an estimate of the total size and number of items returned by the search.
 
-   The estimates are displayed in the details pane. Click **Refresh** (![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)) to update the information displayed in the details pane.
+   The estimates are displayed in the details pane. Click **Refresh** (![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png)) to update the information displayed in the details pane.
 
 4. To preview the results after the search is completed, click **Preview search results** in the details pane.
 
@@ -218,7 +218,7 @@ After you create and start the In-Place eDiscovery search that was created by th
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery & Hold**.
 
-2. In the list view, select the In-Place eDiscovery search that you created in Step 3, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. In the list view, select the In-Place eDiscovery search that you created in Step 3, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 3. On the **In-Place Hold** page, select the **Place content matching the search query in selected mailboxes on hold** check box and then select one of the following options:
 
@@ -234,7 +234,7 @@ After you create and start the In-Place eDiscovery search that was created by th
 
 2. In the list view, select the In-Place eDiscovery search that you created in Step 3.
 
-3. Click **Search** (![Search icon](../../media/ITPro_EAC_.png)), and then click **Copy search results** from the drop-down list.
+3. Click **Search** (![Search icon.](../../media/ITPro_EAC_.png)), and then click **Copy search results** from the drop-down list.
 
 4. In **Copy Search Results**, select from the following options:
 
@@ -250,7 +250,7 @@ After you create and start the In-Place eDiscovery search that was created by th
 
 5. Click **Copy** to start the process to copy the search results to the specified discovery mailbox.
 
-6. Click **Refresh** (![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)) to update the information about the copying status that is displayed in the details pane.
+6. Click **Refresh** (![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png)) to update the information about the copying status that is displayed in the details pane.
 
 7. When copying is complete, click **Open** to open the discovery mailbox to view the search results.
 

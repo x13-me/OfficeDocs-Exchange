@@ -1,7 +1,7 @@
 ---
 title: 'Delete a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Delete a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -39,7 +39,7 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 ## Use the EAC to delete a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

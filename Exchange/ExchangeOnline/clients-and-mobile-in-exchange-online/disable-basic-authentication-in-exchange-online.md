@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: jhendr
 f1.keywords:
 - NOCSH
@@ -23,7 +23,8 @@ title: Disable Basic authentication in Exchange Online
 
 > [!NOTE]
 > If you've enabled _security defaults_ in your organization, Basic authentication is already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
-> Please see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-july-update/ba-p/1530163) for the latest announcements concerning Basic authentication.
+> 
+> If you've reached this page because Basic authentication isn't working in your tenant, and you haven't set up security defaults or authentication policies, then we might have disabled Basic authentication in your tenant as part of our wider program to improve security across Exchange Online. Check your Message Center for any posts referring to Basic authentication, and read [Basic Authentication and Exchange Online](https://aka.ms/EXOBasicAuthLatest) for the latest announcements concerning Basic authentication.
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
 
@@ -67,7 +68,7 @@ The steps in cloud authentication are described in the following diagram:
 
 The steps in federated authentication are described in the following diagram:
 
-![Basic steps for federated authentication, and where Basic authentication is blocked](../media/fd76db16-4e28-4720-81dd-faaabbf2f30a.png)
+![Basic steps for federated authentication, and where Basic authentication is blocked.](../media/fd76db16-4e28-4720-81dd-faaabbf2f30a.png)
 
 1. The email client sends the username and password to Exchange Online.
 
@@ -388,6 +389,25 @@ Content-Length: 0
 
 In the Microsoft 365 Admin Center, under **Settings** > **Org Settings** > **Modern Authentication** you can designate the protocols in your tenant that no longer require Basic Authentication to be enabled.
 Behind the scenes, these options utilize Authentication Policies. If Authentication Policies were created in the past, modifying any of these selections will automatically create the first new Authentication Policy. This policy is visible only through PowerShell. For advanced customers that may already be utilizing Authentication Policies, changes within the Microsoft 365 Admin Center will modify their existing default policy. Look through [Azure AD Sign-in logs](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication#identify-legacy-authentication-use) to get a good idea of which protocols clients are using before making any changes.
+
+This option does not disable the two following legacy services. These options can only be disabled via PowerShell.
+AllowBasicAuthOutlookService
+AllowBasicAuthReportingWebServices
+
+```PowerShell
+Set-AuthenticationPolicy -AllowBasicAuthReportingWebServices:$false -AllowBasicAuthOutlookService:$false
+```
+
+Additionally, this option does not implement the policy on the existing mailboxes. The policy is set as the default policy and it will be enabled for new mailboxes going forward. To apply the policy to existing mailboxes, use the following PowerShell commands to discovery the policy name, and then apply it to all existing mailboxes.
+
+```PowerShell
+Get-AuthenticationPolicy
+```
+After you get the Authentication Policy Name, run this to apply to all existing mailboxes.
+
+```PowerShell
+get-mailbox | foreach {set-user -Identity $_.ExchangeObjectID.tostring() -AuthenticationPolicy <AuthenticationPolicyName>}
+```
 
 ## Filter on-premises Active Directory user accounts that are synchronized to Exchange Online
 

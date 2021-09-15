@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable outgoing calls for a Unified Messaging (UM) IP gateway if outgoing calls have been disabled. When you select the Allow outgoing calls through this UM IP gateway option on the properties for the UM IP gateway, you configure the UM IP gateway to accept and send outgoing calls to a Voice over IP (VoIP) gateway, Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), IP PBX, or session border controller (SBC). Although the Allow outgoing calls through this UM IP gateway setting controls whether the UM IP gateway is able to initiate outgoing calls for users, it doesn't affect call transfers or incoming calls from a VoIP gateway, PBX enabled for SIP, IP PBX, or SBC.
 ms.topic: article
 author: msdmaguire
@@ -49,7 +49,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to enable outgoing calls for a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP Gateway** page, select the check box next to **Allow outgoing calls through this UM IP gateway**.
 

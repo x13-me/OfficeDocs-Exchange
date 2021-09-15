@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 ms.topic: article
 author: msdmaguire
@@ -8,7 +8,7 @@ ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Add or remove email addresses for a mailbox
+title: Add or remove email addresses for a mailbox Exchange Admin Center
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Add or remove email addresses for a mailbox
+# Add or remove email addresses for a mailbox in Exchange Admin Center
 
 > [!IMPORTANT]
 > Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
@@ -56,7 +56,7 @@ The procedures in this article show how to add or remove email addresses for a u
     > [!NOTE]
     > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-5. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox. 
+5. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox. 
     > [!NOTE]
     > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
 
@@ -73,14 +73,14 @@ The procedures in this article show how to add or remove email addresses for a u
 
 1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to add an email address to, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to add an email address to, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Email Address**.
 
     > [!NOTE]
     > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-4. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
+4. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
 
     > [!NOTE]
     > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
@@ -134,11 +134,11 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to remove an email address from, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to remove an email address from, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Email Address**.
 
-4. In the list of email addresses, select the address you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+4. In the list of email addresses, select the address you want to remove, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 5. Click **Save** to save the change.
 

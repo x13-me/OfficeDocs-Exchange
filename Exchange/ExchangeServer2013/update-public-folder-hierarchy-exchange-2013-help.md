@@ -1,7 +1,7 @@
 ---
 title: 'Update the public folder hierarchy: Exchange 2013 Help'
 TOCTitle: Update the public folder hierarchy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

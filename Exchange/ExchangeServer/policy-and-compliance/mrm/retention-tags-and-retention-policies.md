@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and Exchange Server 2019 help manage the email life cycle.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer:
-title: Retention tags and retention policies in Exchange Server
+title: "Exchange Server: Retention tags and retention policies"
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -35,14 +35,14 @@ MRM in Exchange Server is accomplished by using *retention tags* and *retention 
 
 The following figure illustrates the tasks involved in implementing this strategy.
 
-![Using Retention Policies for Messaging Retention](../../media/ITPro_MRM_RetentionPolicyConcept.png)
+![Using Retention Policies for Messaging Retention.](../../media/ITPro_MRM_RetentionPolicyConcept.png)
 
 ## Retention tags
 <a name="RT"> </a>
 
 As you can see, retention tags are used to apply retention settings to folders and individual items such as email messages and voice mail. These settings specify how long a message remains in a mailbox and the action to take when the message reaches the specified retention age. When a message reaches its retention age, it's moved to the user's In-Place Archive or deleted.
 
-![Settings in a retention tag](../../media/EXO_Retention_DPT_RetentionTags.png)
+![Settings in a retention tag.](../../media/EXO_Retention_DPT_RetentionTags.png)
 
 Retention tags allow users to tag their own mailbox folders and individual items for retention. Users no longer have to file items in managed folders provisioned by an administrator based on message retention requirements.
 
@@ -60,7 +60,7 @@ Retention tags are classified into the following three types based on who can ap
 
 Personal tags are available to Outlook and Outlook on the web users as part of their retention policy. In Outlook and Outlook on the web, personal tags with the **Move to Archive** action appear as **Archive Policy**, and personal tags with the **Delete and Allow Recovery** or **Permanently Delete** actions appear as **Retention Policy**, as shown here:
 
-![Personal tags in Outlook and Outlook on the web](../../media/ITPro_MRM_ArchiveAndRetentionPolicy.png)
+![Personal tags in Outlook and Outlook on the web.](../../media/ITPro_MRM_ArchiveAndRetentionPolicy.png)
 
 Users can apply personal tags to folders they create or to individual items. Messages that have a personal tag applied are always processed based on the personal tag's settings. Users can apply a personal tag to a message so that it's moved or deleted sooner or later than the settings specified in the DPT or RPTs applied to that user's mailbox. You can also create personal tags with retention disabled. This allows users to tag items so they're never moved to an archive or never expire.
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can configure the minimum PIN length for your Outlook Voice Access users who are enabled for Unified Messaging (UM). The PIN settings that you configure on a UM mailbox policy will apply to all UM-enabled users associated with the UM mailbox policy.
 ms.topic: article
 author: msdmaguire
@@ -46,9 +46,9 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. Click **PIN policies**, and next to **Minimum PIN length**, enter a value between 4 and 24.
 

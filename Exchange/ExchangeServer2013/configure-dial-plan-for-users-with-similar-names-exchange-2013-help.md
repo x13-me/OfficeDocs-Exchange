@@ -1,7 +1,7 @@
 ---
 title: 'Configure a dial plan for users who have similar names: Exchange 2013 Help'
 TOCTitle: Configure a dial plan for users who have similar names
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -39,7 +39,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## Use the EAC to configure a UM dial plan for users with similar names
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM dial plan** page, click **Configure** \> **Transfer & search**, and under **Information to include for users with the same name**, select one of the following options:
 

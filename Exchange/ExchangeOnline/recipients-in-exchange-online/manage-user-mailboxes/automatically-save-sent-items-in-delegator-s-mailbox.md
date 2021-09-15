@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
 ms.topic: article
 author: msdmaguire

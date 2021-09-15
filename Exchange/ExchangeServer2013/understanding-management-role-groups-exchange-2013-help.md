@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638105(v=EXCHG.150)
 ms:contentKeyID: 49289206
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -42,7 +42,7 @@ The following figure shows each of the role group layers in the preceding list a
 
 **Management role group layers**
 
-![Management role group layers](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
+![Management role group layers.](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
 
 For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 

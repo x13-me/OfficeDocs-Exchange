@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657501(v=EXCHG.150)
 ms:contentKeyID: 49289435
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -35,7 +35,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 1. Navigate to **recipients** \> **mailboxes**.
 
-2. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **User Mailbox**, click **mailbox features**.
 
@@ -83,7 +83,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 To verify that you have successfully applied the sharing policy to a user mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), click **mailbox features**, and then confirm that the correct sharing policy appears in the **Sharing policy** list.
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), click **mailbox features**, and then confirm that the correct sharing policy appears in the **Sharing policy** list.
 
 - Run the following Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed in the *SharingPolicy* parameter.
 

@@ -4,7 +4,7 @@ monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools.'
 ms.topic: conceptual
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid:
 ms.reviewer: 
 title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
@@ -134,6 +134,8 @@ When you use one of these options, you don't need to restart the computer after 
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
       > [!NOTE]
+      > Make sure to use the Unified Communications Managed API 4.0 until something else is communicated by the Exchange team.
+      >
       > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
 
 3. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the one of the following commands in Windows PowerShell:

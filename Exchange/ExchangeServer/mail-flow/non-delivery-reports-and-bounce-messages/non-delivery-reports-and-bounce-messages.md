@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms.reviewer:
 title: DSNs and NDRs in Exchange Server
@@ -30,7 +30,7 @@ If you need help with NDRs in Microsoft 365, Office 365, or Exchange Online, see
 
 This is an example of an NDR:
 
-![NDR showing user and Diagnostic information for administrators sections](../../media/e7e607e8-599d-475c-a257-05e94815f6f8.png)
+![NDR showing user and Diagnostic information for administrators sections.](../../media/e7e607e8-599d-475c-a257-05e94815f6f8.png)
 
 The information in an NDR is separated into two sections:
 

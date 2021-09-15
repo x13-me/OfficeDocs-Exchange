@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system.
 ms.topic: article
 author: msdmaguire
@@ -44,9 +44,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to customize the text sent when a mailbox is enabled for Unified Messaging
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Mailbox Policy** page \> **Message text**, in the text box for **When a user is enabled for Unified Messaging**, enter the text you want to include in the email message that's sent when users are enabled for Unified Messaging voice mail.
 

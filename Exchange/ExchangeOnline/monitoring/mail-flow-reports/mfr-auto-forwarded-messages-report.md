@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Auto forwarded messages report in the new Exchange admin center to see the internal senders and external recipients of forwarded messages from your organization."
 ---
@@ -33,7 +33,7 @@ The overview section contains the following charts:
 
 If you hover over a specific color in the chart, you'll see the associated numbers for that specific forwarding type, recipient domain, or forwarding user.
 
-![Overview of the Auto forwarded messages report](../../media/mfr-auto-forwarded-messages-report.png)
+![Overview of the Auto forwarded messages report.](../../media/mfr-auto-forwarded-messages-report.png)
 
 The **Auto forwarded message details** section shows the following information about each specific forwarder (the user account that's doing the forwarding):
 

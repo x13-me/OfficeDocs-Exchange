@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: ""
 ms.topic: article
 author: msdmaguire
@@ -39,21 +39,21 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 ## Use the EAC to enable dialing authorizations on a UM mailbox policy for in-country/region dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy for which you want to create a dialing authorization, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy for which you want to create a dialing authorization, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Mailbox Policy** page \> **Dialing authorization**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
+3. On the **UM Mailbox Policy** page \> **Dialing authorization**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
 ## Use the EAC to enable dialing authorizations on a UM mailbox policy for international dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy for which you want to create a dialing authorization, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy for which you want to create a dialing authorization, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Mailbox Policy** page \> **Dialing authorization**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
+3. On the **UM Mailbox Policy** page \> **Dialing authorization**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 

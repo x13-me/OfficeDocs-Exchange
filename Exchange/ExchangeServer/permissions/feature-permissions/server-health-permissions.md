@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms.reviewer:
 title: Server health and performance permissions
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Server health and performance permissions
+# Server health and performance permissions in Exchange Server
 
 The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
 

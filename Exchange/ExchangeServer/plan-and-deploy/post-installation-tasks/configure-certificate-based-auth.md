@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
 ms.reviewer:
 title: Configure certificate based authentication in Exchange 2016
@@ -67,11 +67,11 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](/pow
 
 3. In the **IIS** section, double-click **Authentication**.
 
-    ![In IIS, select the Server, then select Authentication](../../media/5847bc3c-c461-4929-87e8-00265bec1030.png)
+    ![In IIS, select the Server, then select Authentication.](../../media/5847bc3c-c461-4929-87e8-00265bec1030.png)
 
 4. On the **Authentication** page that opens, select **Active Directory Client Certificate Authentication** from the list, and in the **Actions** pane, click **Enable**.
 
-    ![Authentication page of the server in IIS](../../media/03acd98e-ad2b-4b6d-b8b0-196d5f36ea9a.png)
+    ![Authentication page of the server in IIS.](../../media/03acd98e-ad2b-4b6d-b8b0-196d5f36ea9a.png)
 
     You'll see a warning that SSL must be enabled to use Active Directory Client Certificate Mapping.
 
@@ -89,7 +89,7 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](/pow
 
 5. In the **Actions** pane, click **Apply**.
 
-    ![In IIS, in the SSL settings of the virtual directory, select Require under Client certificates](../../media/56869b49-abc4-4506-a287-79e9e21cef86.png)
+    ![In IIS, in the SSL settings of the virtual directory, select Require under Client certificates.](../../media/56869b49-abc4-4506-a287-79e9e21cef86.png)
 
 6. Select the **Microsoft-Server-ActiveSync** virtual directory.
 
@@ -156,11 +156,11 @@ After you require client certificates for authentication, you need to disable al
 
 4. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **system.webServer** \> **security** \> **authentication** \> **clientCertificateMappingAuthentication**.
 
-    ![Select clientCertificateMappingAuthentication in Configuration Manager in IIS for the owa virtual directory](../../media/fc0266d4-fe7b-4415-9880-733603190b09.png)
+    ![Select clientCertificateMappingAuthentication in Configuration Manager in IIS for the owa virtual directory.](../../media/fc0266d4-fe7b-4415-9880-733603190b09.png)
 
 5. Set the **enabled** value to **True**, and in the **Actions** pane, click **Apply**.
 
-    ![Enable clientCertificateMappingAuthentication value in Configuration Editor in IIS for the owa virtual directory](../../media/bc39a8e8-a314-41c4-93c9-1a50ab8d8301.png)
+    ![Enable clientCertificateMappingAuthentication value in Configuration Editor in IIS for the owa virtual directory.](../../media/bc39a8e8-a314-41c4-93c9-1a50ab8d8301.png)
 
 6. Select the **ecp** virtual directory.
 
@@ -218,11 +218,11 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
 
 4. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **systemwebServer** \> **serverRuntime**.
 
-    ![Select serverRuntime in Configuration Editor in IIS for the owa virtual directory](../../media/3db4cef0-ae03-4c14-ad7e-4269ace1bdec.png)
+    ![Select serverRuntime in Configuration Editor in IIS for the owa virtual directory.](../../media/3db4cef0-ae03-4c14-ad7e-4269ace1bdec.png)
 
 5. Set the **uploadReadAheadSize** value to 49152, and in the **Actions** pane, click **Apply**.
 
-    ![Change the uploadReadAheadSize value in Configuration Editor in IIS for the owa virtual directory](../../media/ec3521fa-6e15-401d-8c72-7810e72cfef1.png)
+    ![Change the uploadReadAheadSize value in Configuration Editor in IIS for the owa virtual directory.](../../media/ec3521fa-6e15-401d-8c72-7810e72cfef1.png)
 
 6. Select the **ecp** virtual directory.
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Before you can create a public folder, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information plus the content for public folders. The first public folder mailbox you create will be the primary hierarchy mailbox, which contains the only writable copy of the hierarchy. Any additional public folder mailboxes you create will be secondary mailboxes, which contain a read-only copy of the hierarchy.
 ms.topic: article
 author: msdmaguire
@@ -41,7 +41,7 @@ For additional management tasks related to public folders in Exchange Online, se
 
 ## Use the EAC to create a public folder mailbox
 
-1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. In **Public Folder Mailbox**, provide a name for the public folder mailbox.
 

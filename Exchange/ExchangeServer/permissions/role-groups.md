@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms.reviewer:
 title: Manage role groups
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage role groups
+# Manage role groups in Exchange Server
 
 A management role group is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Exchange Server. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. For more information about role groups in Exchange Server, see [Understanding Management Role Groups](../../ExchangeServer2013/understanding-management-role-groups-exchange-2013-help.md).
 
@@ -41,7 +41,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 ### Use the EAC to create a role group
 
-1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New role group** window, provide a name for the new role group.
 
@@ -76,7 +76,7 @@ If you have a role group that contains the permissions you want to grant to user
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to copy and then click **Copy** ![Copy icon](../media/ITPro_EAC_CopyIcon.png).
+2. Select the role group you want to copy and then click **Copy** ![Copy icon.](../media/ITPro_EAC_CopyIcon.png).
 
 3. In the **New role group** window, provide a name for the new role group.
 
@@ -185,7 +185,7 @@ If you no longer need a role group you created, you can remove it. When you remo
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.png).
+2. Select the role group you want to remove and then click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.png).
 
 3. Verify that you want to remove the selected role group, and if so, respond **Yes** to the warning.
 
@@ -218,7 +218,7 @@ Adding a management role to a role group is the best and simplest way to grant p
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to add a role to, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to add a role to, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. In the **Roles** section, select the roles you want to add to the role group.
 
@@ -360,7 +360,7 @@ Removing a role from a management role group is the best and simplest way to rev
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove a role from, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to remove a role from, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. In the **Roles** section, select the roles you want to remove from the role group.
 
@@ -417,7 +417,7 @@ When you use the EAC to change the scope on a role group, you're actually changi
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to change the scope on, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to change the scope on, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. Select one of the two following **Write scope** options:
 

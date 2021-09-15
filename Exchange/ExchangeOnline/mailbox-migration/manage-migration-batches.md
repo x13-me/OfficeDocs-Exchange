@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr
@@ -32,7 +32,7 @@ You can use the Migration dashboard in the Microsoft 365 or Office 365 Exchange 
 
 To access the Migration dashboard in the new EAC, go to new [Exchange admin center](https://admin.exchange.microsoft.com/#/), navigate to **Migration** > **Batch**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
 
-![Migration dashboard part1](../media/migration-dashboard-part1.png)
+![Migration dashboard part1.](../media/migration-dashboard-part1.png)
 
 ### Migration batches
 
@@ -67,7 +67,7 @@ The Migration dashboard contains a set of commands that you can use to manage mi
 
 The details pane in the Migration dashboard displays the following information about the selected migration batch.
 
-![Migration dashboard part2](../media/migration-dashboard-partt2.png)
+![Migration dashboard part2.](../media/migration-dashboard-partt2.png)
 
 |**Field**|**Description**|
 |:-----|:-----|
@@ -90,7 +90,7 @@ The details pane in the Migration dashboard displays the following information a
 
 To access the Migration dashboard in the Classic EAC, select **Recipients** \> **Migration**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
 
-![Migration dashboard](media/f06294d1-1152-45ac-90a1-b711be9a4484.jpg)
+![Migration dashboard.](media/f06294d1-1152-45ac-90a1-b711be9a4484.jpg)
 
 ### Overall migration statistics
 <a name="bkOverall"> </a>
@@ -125,14 +125,14 @@ The Migration dashboard contains a set of commands that you can use to manage mi
 
 |**Command**|**Description**|
 |:-----|:-----|
-|**New** ![Add Icon](media/851ff9ef-92b1-46a2-be75-9133416ec68a.gif)|Create a new migration batch. Use this command to migrate on-premises mailboxes to Microsoft 365 or Office 365 (also called onboarding) or to migrate Microsoft 365 or Office 365 mailboxes back to your on-premises Exchange organization in a hybrid deployment.|
-|**Edit** ![Edit icon](media/f59a1c95-c8d2-4dff-997d-b074a59a2375.gif)|Edit an existing migration batch. You can change the finalization semantics of batches that support finalization. You can also change the migration endpoint used for the migration batch.|
-|**Start** ![Start icon](media/4cde6714-e0af-4665-b492-a5101bf616d0.gif)|Start a migration batch that's been created. After the batch is started, the status is changed to **Syncing**.|
-|**Resume** ![Start icon](media/4cde6714-e0af-4665-b492-a5101bf616d0.gif)|Resume the running of a migration batch that was paused and has a status of **Stopped**. If there are errors for a migration batch, you can restart it with this command, and Microsoft 365 or Office 365 will attempt to migrate the mailboxes that failed.|
-|**Pause** ![Stop icon](media/fb3c1f91-0ab2-45f3-8a29-f49c3738b243.gif)|Stop a migration batch that's currently running or that's been started but has a status of **Queued**. You can also stop a migration batch that's completed the initiation synchronization phase and has a status of **Synced**. This will stop incremental synchronizations. You can resume incremental synchronizations by selecting the migration batch and clicking **Resume**.|
-|**Delete** ![Delete icon](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete a migration batch after you verify that all mailboxes in the migration batch have been successfully migrated. Verify also that mail is being routed directly to cloud-based mailboxes after you've configured your MX record to point to Microsoft 365 or Office 365. When you delete a migration batch, Microsoft 365 or Office 365 cleans up any records related to the migration batch and removes it from the list.|
-|**More** ![More options icon](media/1c30e33f-05c5-4275-8929-441d73a32c91.gif)|Click this command, and then click **Migration endpoints** to create new migration endpoints or view and edit existing migration endpoints.|
-|**Refresh** ![Refresh icon](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the Migration dashboard to update the information displayed for the overall migration statistics, the list of migration batches, and the statistics for the selected migration batch.|
+|**New** ![Add Icon.](media/851ff9ef-92b1-46a2-be75-9133416ec68a.gif)|Create a new migration batch. Use this command to migrate on-premises mailboxes to Microsoft 365 or Office 365 (also called onboarding) or to migrate Microsoft 365 or Office 365 mailboxes back to your on-premises Exchange organization in a hybrid deployment.|
+|**Edit** ![Edit icon.](media/f59a1c95-c8d2-4dff-997d-b074a59a2375.gif)|Edit an existing migration batch. You can change the finalization semantics of batches that support finalization. You can also change the migration endpoint used for the migration batch.|
+|**Start** ![Start icon.](media/4cde6714-e0af-4665-b492-a5101bf616d0.gif)|Start a migration batch that's been created. After the batch is started, the status is changed to **Syncing**.|
+|**Resume** ![Start icon.](media/4cde6714-e0af-4665-b492-a5101bf616d0.gif)|Resume the running of a migration batch that was paused and has a status of **Stopped**. If there are errors for a migration batch, you can restart it with this command, and Microsoft 365 or Office 365 will attempt to migrate the mailboxes that failed.|
+|**Pause** ![Stop icon.](media/fb3c1f91-0ab2-45f3-8a29-f49c3738b243.gif)|Stop a migration batch that's currently running or that's been started but has a status of **Queued**. You can also stop a migration batch that's completed the initiation synchronization phase and has a status of **Synced**. This will stop incremental synchronizations. You can resume incremental synchronizations by selecting the migration batch and clicking **Resume**.|
+|**Delete** ![Delete icon.](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete a migration batch after you verify that all mailboxes in the migration batch have been successfully migrated. Verify also that mail is being routed directly to cloud-based mailboxes after you've configured your MX record to point to Microsoft 365 or Office 365. When you delete a migration batch, Microsoft 365 or Office 365 cleans up any records related to the migration batch and removes it from the list.|
+|**More** ![More options icon.](media/1c30e33f-05c5-4275-8929-441d73a32c91.gif)|Click this command, and then click **Migration endpoints** to create new migration endpoints or view and edit existing migration endpoints.|
+|**Refresh** ![Refresh icon.](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the Migration dashboard to update the information displayed for the overall migration statistics, the list of migration batches, and the statistics for the selected migration batch.|
 
 ### Migration batch statistics
 <a name="bkstats"> </a>

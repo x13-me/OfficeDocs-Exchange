@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to enable or disable MAPI over HTTP in your Exchange 2016 or Exchange 2019 organization.'
 ms.topic: get-started-article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 2c07b1e6-8d07-4e73-8800-b306e2266c7d
 ms.reviewer:
 title: Configure MAPI over HTTP in Exchange Server

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use Retention tags and retention policies to manage email lifecycle. Retention Policies contain Retention Tags, which are settings you can use to specify when a message should be automatically moved to the archive or when it should be deleted.
 ms.topic: overview
 author: msdmaguire
@@ -29,7 +29,7 @@ You can use [Retention tags and retention policies](retention-tags-and-policies.
 
 A Retention Policy Tag (RPT) is a type of retention tag that you can apply to default folders in a mailbox, such as **Inbox** and **Deleted Items**.
 
-![Create a Retention Policy Tag (RPT)](../../media/EXO_Retention_DefaultFolders_CreateRPT.png)
+![Create a Retention Policy Tag (RPT).](../../media/EXO_Retention_DefaultFolders_CreateRPT.png)
 
 ## Supported default folders
 

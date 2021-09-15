@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A Unified Messaging (UM) hunt group is a logical representation of a Private Branch eXchange (PBX) or IP PBX hunt group. A UM hunt group acts as a connection or link between a UM IP gateway and a UM dial plan.
 ms.topic: article
 author: msdmaguire
@@ -47,9 +47,9 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 ## Use the EAC to create a UM hunt group
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM hunt group** page, enter the following information:
 

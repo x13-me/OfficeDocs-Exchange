@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 ms.topic: overview
 author: msdmaguire
@@ -42,7 +42,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results**: After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](../../media/TA_Discovery_EstimatePreview.gif)
 
 ## Exchange Search
 <a name="search"> </a>
@@ -133,7 +133,7 @@ After you're satisfied with the quantity and quality of search results, you can 
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](../../media/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](../../media/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-search-results.md).
 

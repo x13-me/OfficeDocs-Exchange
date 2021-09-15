@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms.reviewer:
 title: Create an Exchange Server certificate request for a certification authority
@@ -47,7 +47,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
 1. Open the EAC and navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the Exchange server where you want to install the certificate, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+2. In the **Select server** list, select the Exchange server where you want to install the certificate, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 3. The **New Exchange certificate** wizard opens. On the **This wizard will create a new certificate or a certificate request file** page, verify that **Create a request for a certificate from a certification authority** is selected, and then click **Next**.
 
@@ -85,7 +85,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
    - Outlook Anywhere
 
-     If you enter a value for each service based on the location (internal or external), the wizard determines the host names that are required in the certificate, and the information is displayed on the next page. To modify a value for a service, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and enter the host name value that you want to use (or delete the value). When you're finished, click **Next**.
+     If you enter a value for each service based on the location (internal or external), the wizard determines the host names that are required in the certificate, and the information is displayed on the next page. To modify a value for a service, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) and enter the host name value that you want to use (or delete the value). When you're finished, click **Next**.
 
      If you've already determined the host name values that you need in the certificate, you don't need to fill out the information on this page. Instead, click **Next** to manually enter the host names on the next page.
 
@@ -93,7 +93,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
    - If you want a SAN certificate, the **Subject** field still requires one common name (CN) value. To select the host name for the certificate's **Subject** field, select the value and click **Set as common name** (check mark). The value should now appear bold.
 
-   - If you want a certificate for a single host name, select the other values one at a time and click **Remove** (![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)).
+   - If you want a certificate for a single host name, select the other values one at a time and click **Remove** (![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)).
 
      **Notes:**
 

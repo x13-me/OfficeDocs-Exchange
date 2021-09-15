@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or Exchange Server 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.reviewer:
 title: Manage permissions for recipients
@@ -58,7 +58,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
    - **Shared**: Shared mailboxes.
 
-2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions:
 
@@ -68,9 +68,9 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
    - **Full Access**: The delegate can open the mailbox and do anything except send messages.
 
-   To assign permissions to delegates, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
+   To assign permissions to delegates, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
 
-   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 4. When you're finished, click **Save**.
 
@@ -80,21 +80,21 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. Select the mailboxes that you want to assign permissions for. Use click + Shift key + click to select a range of mailboxes, or Ctrl key + click to select multiple individual mailboxes. The title of the details pane changes to **Bulk Edit** as shown in the following diagram.
 
-   ![Bulk select mailboxes in the EAC](../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
+   ![Bulk select mailboxes in the EAC.](../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
 
    Note that the mailboxes that you select need to be the same type. For example, if you select both user mailboxes and linked mailboxes, you'll get a warning in the details pane that says bulk edit won't work.
 
 3. At the bottom of the details pane, click **More options**. Under the **Mailbox Delegation** option that appears, choose **Add** or **Remove**. Depending on your selection, do one of the following steps:
 
-   - **Add**: In the **Bulk Add Delegation** dialog box that appears, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to add as delegates, click **Save**.
+   - **Add**: In the **Bulk Add Delegation** dialog box that appears, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to add as delegates, click **Save**.
 
-   - **Remove**: In the **Bulk Remove Delegation** dialog box that appears, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to remove from the existing delegates, click **Save**.
+   - **Remove**: In the **Bulk Remove Delegation** dialog box that appears, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to remove from the existing delegates, click **Save**.
 
 ## Use the EAC to assign permissions to groups
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions:
 
@@ -102,9 +102,9 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
    - **Send on Behalf**: Messages sent by a delegate have " _\<Delegate\>_ on behalf of _\<Group\>_" in the From address.
 
-4. To assign permissions to delegates, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
+4. To assign permissions to delegates, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
 
-   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 5. When you're finished, click **Save**.
 

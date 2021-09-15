@@ -1,6 +1,6 @@
 ---
 title: "Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-email-calendar

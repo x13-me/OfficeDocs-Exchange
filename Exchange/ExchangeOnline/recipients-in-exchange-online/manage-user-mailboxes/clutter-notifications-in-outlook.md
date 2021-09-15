@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on the most important messages in their Inbox by moving lower priority messages into a new Clutter folder.
 ms.topic: article
 author: msdmaguire
@@ -56,7 +56,7 @@ To determine whether or not a user receives an invitation to enable Clutter, the
 
 An example of the invitation notification is as follows:
 
-![Let's clean up notification sent by Clutter](../../media/d08cb435-4305-4a15-9ffd-eb6e268ae930.png)
+![Let's clean up notification sent by Clutter.](../../media/d08cb435-4305-4a15-9ffd-eb6e268ae930.png)
 
 Around the time that an invitation is sent, a new folder called **Clutter** is created and added to their Favorites. The same invitation message will appear as the first message inside the **Clutter** folder.
 
@@ -66,10 +66,10 @@ To make sure the user understands that the new feature is on, Clutter will send 
 
  If the user finds that Clutter isn't what they need, this notification also provides a link for turning Clutter off. In newer clients, there are specific controls to control Clutter, but these are unavailable in older clients.
 
-![Picture of the Meet your new cleaner inbox notification sent by Clutter](../../media/29398c38-47f9-4595-a784-aaf8e1d0395c.png)
+![Picture of the Meet your new cleaner inbox notification sent by Clutter.](../../media/29398c38-47f9-4595-a784-aaf8e1d0395c.png)
 
 ## Hard at work
 
 During the first three weeks of Clutter usage, the following notification is sent periodically for two reasons. First, it reminds the user to inspect the **Clutter** folder and make sure that Clutter is filtering messages correctly. Second, this notification provides a way for the user to provide feedback on Clutter. Additionally, there are links that provide more information about the feature and that turn Clutter off.
 
-![Picture of notification sent by Clutter that asks users for feedback](../../media/d47e91a3-d60f-4f81-8c2c-14d9bc9bfa7d.png)
+![Picture of notification sent by Clutter that asks users for feedback.](../../media/d47e91a3-d60f-4f81-8c2c-14d9bc9bfa7d.png)

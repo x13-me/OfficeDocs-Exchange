@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you enable a user for UM and link them to a SIP URI dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains a SIP address for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
@@ -53,9 +53,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox for which you want to change a SIP address, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox for which you want to change a SIP address, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, select the SIP address you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). The primary SIP address is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the SIP address you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif). The primary SIP address is listed in bold letters and numbers.
 
 4. On the **Email address** page, in the **Address/Extension** box, enter the new SIP address for the user, and then click **OK**. If you need to select a new UM dial plan, you can click **Browse**.
 

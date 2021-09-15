@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you create a Unified Messaging (UM) IP gateway, you enable Exchange servers to connect to a new Voice over IP (VoIP) gateway, a Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), an IP PBX, or a session border controller (SBC). Immediately after you create a UM IP gateway, you should create a new UM hunt group and then associate the UM hunt group with the UM IP gateway. You can associate the UM IP gateway with one or more UM dial plans by creating one or more UM hunt groups.
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to create a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM IP gateway** page, enter the following information:
 

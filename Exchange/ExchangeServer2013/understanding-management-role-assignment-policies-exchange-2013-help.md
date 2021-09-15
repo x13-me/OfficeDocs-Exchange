@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638100(v=EXCHG.150)
 ms:contentKeyID: 49289200
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -42,7 +42,7 @@ The following figure shows each of the role assignment policy layers in the prec
 
 **Management role assignment policy model**
 
-![Role Assignment Model Relationships](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
+![Role Assignment Model Relationships.](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
 
 For more information about management roles, role assignments, and scopes, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 

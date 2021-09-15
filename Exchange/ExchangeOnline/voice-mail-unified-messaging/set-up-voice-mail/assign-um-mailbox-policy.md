@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you enable a user for Unified Messaging (UM) and voice mail, you must select the UM mailbox policy that will be associated with the user's mailbox. You can change the UM mailbox policy associated with the user's mailbox after the user has been enabled for UM.
 ms.topic: article
 author: msdmaguire
@@ -58,7 +58,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
 
-4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 5. On the **UM Mailbox** page \> next to **UM mailbox policy**, click **Browse** to locate the UM mailbox policy for the user.
 

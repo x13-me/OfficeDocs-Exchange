@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ The following figure illustrates the relationship between the linked user accoun
 
 **Linked mailboxes**
 
-![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
+![Complex Exchange organization with resource forest.](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
 
 > [!NOTE]
 > A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see <A href="/previous-versions/exchange-server/exchange-150/jj156983(v=exchg.150)">Learn more about setting up a forest trust to support linked mailboxes</A>.
@@ -131,7 +131,7 @@ You can also change properties for multiple linked mailboxes at the same time. F
 
 1. In the EAC, navigate to **Recipients**  \> **Mailboxes**.
 
-2. In the list of mailboxes, click the linked mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of mailboxes, click the linked mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox properties page, click one of the following sections to view or change properties.
 
@@ -175,7 +175,7 @@ Click **More options** to view or change these additional properties:
 
 - **First name**, **Initials**, **Last name**
 
-- **Custom attributes**: This section displays the custom attributes defined for the linked mailbox. To specify custom attribute values, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes**: This section displays the custom attributes defined for the linked mailbox. To specify custom attribute values, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). You can specify up to 15 custom attributes for the recipient.
 
 ## Mailbox Usage
 
@@ -210,7 +210,7 @@ Click **More options** to view or change the mailbox storage quota and the delet
 
 Use the **Email address** section to view or change the email addresses associated with the linked mailbox. This includes the user's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**  Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a new email address for this mailbox. Select one of following address types:
+- **Add**  Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this radio button and then type the new SMTP address in the **\* Email address** box.
 

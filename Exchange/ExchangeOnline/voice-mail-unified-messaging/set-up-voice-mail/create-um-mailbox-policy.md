@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can create a Unified Messaging (UM) mailbox policy to apply a common set of UM policy settings, such as PIN policy settings or dialing restrictions, to a collection of UM-enabled mailboxes. UM mailbox policies link a UM-enabled user with a UM dial plan and apply a common set of policies or security settings to a collection of UM-enabled mailboxes. UM mailbox policies are useful for applying and standardizing UM configuration settings for UM-enabled users.
 ms.topic: article
 author: msdmaguire
@@ -41,9 +41,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to create a UM mailbox policy
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM mailbox policy** page, in the **Name** box, enter the name of the new UM mailbox policy.
 

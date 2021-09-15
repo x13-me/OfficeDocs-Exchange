@@ -1,7 +1,7 @@
 ---
 title: 'Override the distribution group naming policy: Exchange 2013 Help'
 TOCTitle: Override the distribution group naming policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:

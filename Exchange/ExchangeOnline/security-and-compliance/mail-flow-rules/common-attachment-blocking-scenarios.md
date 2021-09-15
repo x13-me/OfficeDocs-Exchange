@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
 ms.topic: article
 author: msdmaguire
@@ -32,7 +32,7 @@ To get started using mail flow rules to block certain message types, do the foll
 
 1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
 2. Go to **Mail flow** \> **Rules**.
-3. Click **New** (![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
+3. Click **New** (![Add Icon.](../../media/ITPro_EAC_AddIcon.gif)) and then select **Create a new rule**.
 4. In the **Name** box, specify a name for the rule, and then click **More options**.
 5. Select the conditions and actions you want.
 
@@ -47,7 +47,7 @@ If you don't want certain people in your organization to send or receive attachm
 
 In this example, all messages sent to or from the organization with attachments greater than 10 Megabytes are blocked.
 
-![Rule that blocks all attachments](../../media/38094183-166f-4ba5-a9cf-242e7d0f4e04.png)
+![Rule that blocks all attachments.](../../media/38094183-166f-4ba5-a9cf-242e7d0f4e04.png)
 
 If all you want to do is block the message, you might want to stop rule processing once this rule is matched. Scroll down the rule dialog box, and select the **Stop processing more rules** check box.
 
@@ -73,7 +73,7 @@ You can include placeholders in the notification message so that it includes inf
 
 In this example, all messages that contain attachments and are sent to people inside your organization are blocked, and the recipient is notified.
 
-![Rule that notifies recipients when an inbound message is blocked](../../media/f9a14733-d68a-4528-a736-206325881c47.png)
+![Rule that notifies recipients when an inbound message is blocked.](../../media/f9a14733-d68a-4528-a736-206325881c47.png)
 
 ## Example 3: Modify the subject line for notifications
 
@@ -88,17 +88,17 @@ When a notification is sent to the recipient, the subject line is the subject of
 
 Here's what the first rule would look like if you want to add "undeliverable" to the subject:
 
-![Rule that prepends Undeliverable to messages with attachments](../../media/2552b0bd-c69d-48b4-9e69-267fcaf20e70.png)
+![Rule that prepends Undeliverable to messages with attachments.](../../media/2552b0bd-c69d-48b4-9e69-267fcaf20e70.png)
 
 And the second rule does the blocking and notification (the same rule from Example 2):
 
-![Rule that notifies recipients when an inbound message is blocked](../../media/f9a14733-d68a-4528-a736-206325881c47.png)
+![Rule that notifies recipients when an inbound message is blocked.](../../media/f9a14733-d68a-4528-a736-206325881c47.png)
 
 ## Example 4: Apply a rule with a time limit
 
 If you have a malware outbreak, you might want to apply a rule with a time limit so that you temporarily block attachments. For example, the following rule has both a start and stop day and time:
 
-![Rule showing a time limit](../../media/bdc8c4d8-72fa-4c5b-97f2-5fe76d50e643.png)
+![Rule showing a time limit.](../../media/bdc8c4d8-72fa-4c5b-97f2-5fe76d50e643.png)
 
 ## See also
 

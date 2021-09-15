@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can enable dialing authorizations on a Unified Messaging (UM) dial plan. Dialing authorizations on a dial plan are used to prohibit unauthenticated Outlook Voice Access users from making in-country/region or international telephone calls, or outdialing. Outdialing happens when Unified Messaging places an outgoing call for a user after they've called in to an Outlook Voice Access phone number that is configured on a UM dial plan. When you configure a setting on a UM dial plan, that setting applies to all unauthenticated users that call in to an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
@@ -39,21 +39,21 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 ## Use the EAC to enable dialing authorizations on a UM dial plan for in-country/region dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
+3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
 ## Use the EAC to enable dialing authorizations on a UM dial plan for international dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
+3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 

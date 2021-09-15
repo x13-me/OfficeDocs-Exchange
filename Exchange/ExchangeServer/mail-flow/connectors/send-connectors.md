@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 ms.reviewer:
 title: Send connectors in Exchange Server
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Send connectors
+# Send connectors in Exchange Server
 
 Exchange uses Send connectors for outbound SMTP connections from source Exchange servers to destination email servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
 
@@ -100,7 +100,7 @@ Every Send connector needs to be configured with one of these options:
 
 When you select DNS resolution to deliver mail, the source Exchange server for the Send connector must be able to resolve the MX records for the address spaces that are configured on the connector. Depending on the nature of the connector, and how many network adapters are in the server, the Send connector could require access to an internal DNS server, or an external (public) DNS server. You can configure the server to use specific DNS servers for internal and external DNS lookups:
 
-- In the EAC at **Servers** \> **Server** \> select the server and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **DNS lookups** tab.
+- In the EAC at **Servers** \> **Server** \> select the server and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) \> **DNS lookups** tab.
 
 - In the Exchange Management Shell, you use the _ExternalDNS\*_ and _InternalDNS\*_ parameters on the **Set-TransportService** cmdlet.
 

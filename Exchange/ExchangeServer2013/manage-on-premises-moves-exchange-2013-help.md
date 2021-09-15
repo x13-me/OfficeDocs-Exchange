@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150487(v=EXCHG.150)
 ms:contentKeyID: 47559947
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -58,7 +58,7 @@ For detailed syntax and parameter information, see [New-MigrationBatch](/powersh
 
 To create a local move request, log in to the EAC and perform the following steps:
 
-1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New local mailbox move** wizard, select the user you want to move click **OK** and then click **Next**.
 
@@ -90,7 +90,7 @@ For more information, see [Get-MigrationUserStatistics](/powershell/module/excha
 
 Log in to the EAC and perform the following steps:
 
-1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New local mailbox move** wizard, select the users you want to move, click **OK** and then click **Next**.
 
@@ -138,7 +138,7 @@ For an example of how to use the Shell to display a migration batch, see Example
 
 ## Use the EAC to move only a user's primary mailbox
 
-1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK** and then click **next**.
 
@@ -205,7 +205,7 @@ For more information, see [Get-MigrationUserStatistics](/powershell/module/excha
 
 ## Use the EAC to move only an archive mailbox
 
-1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New local mailbox move** wizard, select the user whose archive mailbox you want to move, click **OK** and then click **Next**.
 
@@ -259,13 +259,13 @@ For more information, see [Get-MigrationUserStatistics](/powershell/module/excha
 
 ## Use the EAC to move a user's primary mailbox and allow a large bad item limit
 
-1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK**, and then click **Next**.
 
 3. On the **Move configuration** page, specify a name for the new batch. Select **Move primary mailbox only**, and then select which options you want for the mailbox database location.
 
-4. Click **More Options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), enter the bad item limit, and then click **OK**.
+4. Click **More Options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), enter the bad item limit, and then click **OK**.
 
 ## Use the Shell to move a user's primary mailbox and allow a large bad item limit
 

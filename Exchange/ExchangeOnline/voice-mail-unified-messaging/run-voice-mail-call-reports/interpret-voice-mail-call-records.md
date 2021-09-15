@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization.
 ms.topic: article
 author: msdmaguire
@@ -24,7 +24,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## Use the EAC to export daily UM call records
 
-1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon.](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Under **Show**, click **Daily (90 days)**, and then choose the UM dial plan or UM IP gateway, or both, if you want. The report automatically updates as you choose options.
 

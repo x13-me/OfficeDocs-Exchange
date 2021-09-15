@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms.reviewer: 
-title: Administrator audit log structure
+title: Administrator audit log structure  in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Administrator audit log structure
+# Administrator audit log structure in Exchange Server
 
 Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange admin center (EAC). They're created on-demand when you run the admin audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Exchange Management Shell. For more information about audit logs, see [Administrator audit logging in Exchange Server](admin-audit-logging.md).
 

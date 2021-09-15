@@ -1,7 +1,7 @@
 ---
 title: 'Configure the VoIP security setting: Exchange 2013 Help'
 TOCTitle: Configure the VoIP security setting
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -39,7 +39,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## Use the EAC to configure VoIP security on a UM dial plan
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM Dial Plans**, select the UM dial plan on which you want to change the VoIP security, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM Dial Plans**, select the UM dial plan on which you want to change the VoIP security, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 

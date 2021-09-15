@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: When you delete a Unified Messaging (UM) IP gateway, Exchange servers can no longer accept incoming calls from the Voice over IP (VoIP) gateway, Session Initiation Protocol (SIP)-enabled Private Branch eXchange (PBX), IP PBX, or session border controller (SBC) associated with the UM IP gateway.
 ms.topic: article
 author: msdmaguire
@@ -42,7 +42,7 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 ## Use the EAC to delete a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you've connected your telephony network or integrated Microsoft Lync Server with Exchange Unified Messaging (UM) and created and configured the required UM components, you'll need to set up voice mail for your users.
 ms.topic: article
 author: msdmaguire

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
@@ -50,7 +50,7 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add** ![Add icon.](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, configure the following settings:
 

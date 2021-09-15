@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee861124(v=EXCHG.150)
 ms:contentKeyID: 49360517
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -76,7 +76,7 @@ For more information about preparing for cross-forest moves, including descripti
 
    **Create Management Agent page**
 
-   ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
+   ![Management Agent Exchange 2010 provisioning.](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
 
 6. On the ILM Identity Manager Console on the **Create Management Agent** pane, open the **Properties** for the Source Forest Management Agent. Select the **Configure Directory Partitions** wizard, and then click **Containers** to select the container that will contain the mailboxes you will be moving to the target forest. Clear the selections for all other containers, that is, scope the management agent to only manage this one container. Similarly, for the target forest MA, select the container to which mail-enabled users will be provisioned, that is, the TargetOU specified in step 2.
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms.reviewer: 
 title: Shadow redundancy in Exchange Server
@@ -83,7 +83,7 @@ Shadow redundancy never tracks shadow messages across a transport high availabil
 
 When the Transport service on a Mailbox server receives a message from outside the transport high availability boundary, the Mailbox server isn't concerned about the support or lack of support for shadow redundancy by the sending server. As long as shadow redundancy is enabled, the Mailbox server that receives the message makes a redundant copy of the message on another Mailbox server within the transport high availability boundary before acknowledging receipt of the message back to the sending server. Here's an example of how the process works:
 
-![Shadow message creation](../../media/ITPro_Transport_ShadowMessagingOverview.gif)
+![Shadow message creation.](../../media/ITPro_Transport_ShadowMessagingOverview.gif)
 
 1. A messaging server transmits a message to the Transport service on a Mailbox server. The Mailbox server is the primary server, and the message is the primary message.
 

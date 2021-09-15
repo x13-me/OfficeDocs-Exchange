@@ -1,7 +1,7 @@
 ---
 title: 'View statistics for public folders and public folder items: Exchange 2013 Help'
 TOCTitle: View statistics for public folders and public folder items
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -18,7 +18,7 @@ _**Applies to:** Exchange Server 2013_
 This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
 
 > [!NOTE]
-> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use the Shell to view public folder statistics.
+> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use the Shell to view public folder statistics.
 
 ## What do you need to know before you begin?
 

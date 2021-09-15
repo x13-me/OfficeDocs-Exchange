@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
 ms.reviewer: 
 title: Exchange dev/test environment in Azure
@@ -23,7 +23,7 @@ manager: serdars
 
 This topic steps you through creating an Exchange 2016 or Exchange 2019 dev/test deployment in Microsoft Azure. Here is the resulting configuration.
 
-![The completed Exchange dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
+![The completed Exchange dev/test environment in Azure infrastructure services.](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
 
 This configuration consists of a single Exchange server and a Windows Server Active Directory (AD) domain controller in a subnet of an Azure virtual network. This provides a basis and common starting point from which you can demonstrate Exchange and develop Exchange Server applications. This configuration is only for internal email and application testing on the Exchange server. No external email flow is configured.
 
@@ -204,7 +204,7 @@ After adVM restarts, reconnect to the adVM virtual machine.
 
 Here is the result of Phase 1.
 
-![Phase 1 of the Exchange dev/test environment in Azure infrastructure services](../../media/aed39f2c-76b4-4b2a-8f49-89d3999c3061.png)
+![Phase 1 of the Exchange dev/test environment in Azure infrastructure services.](../../media/aed39f2c-76b4-4b2a-8f49-89d3999c3061.png)
 
 ## Phase 2: Create the Exchange virtual machine
 
@@ -276,7 +276,7 @@ Note that you must supply domain account credentials after entering the **Add-Co
 
 Here is the result of Phase 2.
 
-![The completed Exchange dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
+![The completed Exchange dev/test environment in Azure infrastructure services.](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
 
 ## Phase 3: Configure Exchange
 

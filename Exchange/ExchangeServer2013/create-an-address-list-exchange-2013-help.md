@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb125036(v=EXCHG.150)
 ms:contentKeyID: 49289446
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - CSH
@@ -36,7 +36,7 @@ For other management tasks related to address lists, see [Address list procedure
 
 ## Use the EAC to create an address list
 
-1. Navigate to **Organization** \> **Address lists**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. Navigate to **Organization** \> **Address lists**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In **Address List**, type a name and specify the types of recipients to include in the list.
 
@@ -47,7 +47,7 @@ For other management tasks related to address lists, see [Address list procedure
 
 4. In the list, select a filtering option (for example, **Custom attribute 1**).
 
-5. In **Specify words or phrases**, type words or phrases to filter by, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), and then click **OK**.
+5. In **Specify words or phrases**, type words or phrases to filter by, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), and then click **OK**.
 
     You can continue to add several phrases or words by repeating Step 4. The filter is a Boolean **OR** statement. For example, you can create a filter that will apply the address list to users whose Custom 1 attribute equals **Oregon**, **Idaho**, or **Washington**.
 

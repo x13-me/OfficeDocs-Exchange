@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how retention age is calculated in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 ms.reviewer:
 title: How retention age is calculated in Exchange Server

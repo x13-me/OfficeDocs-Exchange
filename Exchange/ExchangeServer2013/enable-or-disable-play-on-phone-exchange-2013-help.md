@@ -1,7 +1,7 @@
 ---
 title: 'Enable or disable Play on Phone for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Enable or disable Play on Phone for Outlook Voice Access users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -36,9 +36,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to enable or disable Play on Phone
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Mailbox Policy** page, select or clear the check box next to **Allow Play on Phone for voice mail**.
 

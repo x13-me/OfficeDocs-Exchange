@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Frequently asked questions about message trace.
 ms.topic: article
 author: msdmaguire

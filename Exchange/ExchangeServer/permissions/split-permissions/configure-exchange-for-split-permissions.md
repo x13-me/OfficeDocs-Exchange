@@ -7,7 +7,7 @@ ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms:assetid: 8c74f893-a6f3-4869-8571-3bc0f662cc87
 description: "Learn how to configure your organization for the split permissions model in Exchange Server 2016 and Exchange Server2019."
 ---

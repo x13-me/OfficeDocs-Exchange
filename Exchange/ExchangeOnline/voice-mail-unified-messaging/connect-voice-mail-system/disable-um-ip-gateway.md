@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: By default, when you create a Unified Messaging (UM) IP gateway, the status of the UM IP gateway is enabled. After the UM IP gateway is created, you can disable the operation of the gateway by setting its status to disabled. After you disable the UM IP gateway, the Voice over IP (VoIP) gateway, IP Private Branch eXchange (PBX), or session border controller (SBC) that it's configured to use can no longer process incoming Unified Messaging calls.
 ms.topic: article
 author: msdmaguire
@@ -39,7 +39,7 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
 
 ## Use the EAC to disable a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to disable, and then click the **Down arrow** ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to disable, and then click the **Down arrow** ![Down Arrow Icon.](../../media/ITPro_EAC_DownArrowIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

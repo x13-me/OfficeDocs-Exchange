@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Some Private Branch eXchange (PBX) and IP PBX telephony systems allow the caller to mark a voice mail message as private, blocking the intended recipient of the message from forwarding it to others. In integrated voice mail systems, a voice message can be accessed in multiple ways, which makes it more of a challenge to prevent voice messages marked private from being exposed to unintended listeners. Unified Messaging (UM) can be configured to protect voice messages for an organization. This feature is known as Protected Voice Mail.
 ms.topic: article
 author: msdmaguire
@@ -80,7 +80,7 @@ There are two situations in which protected voice messages can be created:
 
    **Create a Protected Voice Mail message using Call Answering**
 
-![Create protected voice mail using call answering](../../media/ITPro_CallAnswering_PVM.jpg)
+![Create protected voice mail using call answering.](../../media/ITPro_CallAnswering_PVM.jpg)
 
 - **Outlook Voice Access**: Outlook Voice Access lets UM-enabled users access their mailbox using analog, digital, or cellular telephones by dialing their Outlook Voice Access number. There are two Unified Messaging user interfaces available to UM-enabled users: the telephone user interface (TUI) and the voice user interface (VUI).
 
@@ -91,11 +91,11 @@ There are two situations in which protected voice messages can be created:
 
    **Create a Protected Voice Mail message using the voice user interface**
 
-![Create protected voice mail using voice interface](../../media/ITPro_OVA_PVM.jpg)
+![Create protected voice mail using voice interface.](../../media/ITPro_OVA_PVM.jpg)
 
    **Create a Protected Voice Mail message using the telephone user interface**
 
-![Create protected voice mail using touchtone input](../../media/ITPro_OVA_PVM_TUI.jpg)
+![Create protected voice mail using touchtone input.](../../media/ITPro_OVA_PVM_TUI.jpg)
 
 ## UM mailbox policies
 <a name="policies"> </a>

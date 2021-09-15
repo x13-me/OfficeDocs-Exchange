@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
 ms.reviewer: 
 title: Mobile device mailbox policies
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mobile device mailbox policies
+# Mobile device mailbox policies in Exchange Server
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 

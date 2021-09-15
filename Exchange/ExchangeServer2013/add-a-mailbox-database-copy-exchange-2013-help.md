@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd298080(v=EXCHG.150)
 ms:contentKeyID: 48385258
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -46,7 +46,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 1. In the EAC, go to **Servers** \> **Databases**.
 
-2. Select the database that you want to copy, and then click ![Add database copy](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
+2. Select the database that you want to copy, and then click ![Add database copy.](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
 
 3. On the **add mailbox database copy** page, click **browse...**, select the Mailbox server that will host the database copy, and then click **OK**.
 

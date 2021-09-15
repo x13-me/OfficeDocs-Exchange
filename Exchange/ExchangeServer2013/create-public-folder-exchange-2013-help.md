@@ -1,7 +1,7 @@
 ---
 title: 'Create a public folder: Exchange 2013 Help'
 TOCTitle: Create a public folder
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
@@ -42,7 +42,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 2. If you want to create this public folder as a child of an existing public folder, click the existing public folder in the list view. If you want to create a top-level public folder, skip this step.
 
-3. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. In **Public Folder**, type the name of the public folder.
 
