@@ -1,0 +1,52 @@
+---
+ms.localizationpriority: medium
+monikerRange: exchserver-2016 || exchserver-2019
+description: IIS URL Rewrite Module not installed 
+ms.topic: reference
+author: joannehendrickson
+ms.custom:
+- ms.exch.setupreadiness.ForestLevelNotWin2003Native
+ms.author: jhendr
+ms.reviewer: 
+title: IIS URL Rewrite Module not installed 
+ms.collection: exchange-server
+f1.keywords:
+- CSH
+audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
+---
+# IIS URL Rewrite Module not installed  
+
+::: moniker range="exchserver-2016"
+
+Microsoft Exchange Server 2016 (CU22) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2016 setup. 
+
+Exchange 2016 (CU22) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
+
+::: moniker-end
+
+
+::: moniker range="exchserver-2019"
+
+Microsoft Exchange Server 2019 (CU11) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2019 setup. 
+
+Exchange 2019 (CU11) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
+
+
+::: moniker-end
+
+1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite).
+2. Select **retry** on the **Readiness Checks page**. 
+
+
+>[!Note]
+>If this update requires a reboot to complete installation, you'll need to exit the Exchange 2016 setup, reboot, and then start Setup again. 
+
+ 
+>[!Important]
+>After the Setup is complete, if the URL Rewrite Module is uninstalled it may lead to unresponsive ECP/OWA. 
+
+#### Having problems?
+Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver). 
