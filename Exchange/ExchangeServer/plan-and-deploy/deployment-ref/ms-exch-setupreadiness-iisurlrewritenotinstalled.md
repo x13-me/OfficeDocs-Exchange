@@ -21,7 +21,7 @@ manager: serdars
 
 ::: moniker range="exchserver-2016"
 
-Microsoft Exchange Server 2016 (CU22) setup can't continue because the local computer requires additional software. You must install this software before Exchange 2016 setup can continue. 
+Microsoft Exchange Server 2016 (CU22) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2016 setup. 
 
 Exchange 2016 (CU22) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
 
@@ -30,7 +30,7 @@ Exchange 2016 (CU22) and higher setup requires **IIS URL Rewrite Module 2.1** to
 
 ::: moniker range="exchserver-2019"
 
-Microsoft Exchange Server 2019 (CU11) setup can't continue because the local computer requires additional software. You must install this software before Exchange 2019 setup can continue. 
+Microsoft Exchange Server 2019 (CU11) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2019 setup. 
 
 Exchange 2019 (CU11) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
 
