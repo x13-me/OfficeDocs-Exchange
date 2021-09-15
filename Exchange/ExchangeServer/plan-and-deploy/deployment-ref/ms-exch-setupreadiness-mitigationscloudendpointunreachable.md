@@ -1,5 +1,6 @@
 ---
 ms.localizationpriority: medium
+monikerRange: exchserver-2016 || exchserver-2019
 description:  Mitigations Cloud endpoint is not reachable
 ms.topic: reference
 author: joannehendrickson
