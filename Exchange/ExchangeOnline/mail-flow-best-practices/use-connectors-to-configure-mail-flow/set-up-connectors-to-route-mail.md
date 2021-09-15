@@ -22,8 +22,8 @@ This topic helps you set up the connectors you need for the following two scenar
 
 - You have your own email servers (also called on-premises servers), and you subscribe to Exchange Online Protection (EOP) for email protection services.
 - You have (or intend to have) mailboxes in two places; some of your mailboxes are in Microsoft 365 or Office 365, and some of your mailboxes are on your organization email servers (also called on-premises servers).
-> [!NOTE]
-> Before you get started, make sure you check on your specific scenario in [I have my own email servers](use-connectors-to-configure-mail-flow.md#i-have-my-own-email-servers). If you apply the steps described in this page to partner email services, you may have any unintended consequences such as Email delivery failure. For more information about partner scenario, see [Set up connectors for secure mail flow with a partner organization](./set-up-connectors-for-secure-mail-flow-with-a-partner.md).
+>[!Important]
+> Before you get started, make sure to check on your specific scenario in [**I have my own email servers**](use-connectors-to-configure-mail-flow.md#i-have-my-own-email-servers). </br></br>If you apply the steps described in this article to **partner email services**, you may have unintended consequences including *email delivery failure*. To learn more about partner scenarios, see [Set up connectors for secure mail flow with a partner organization](./set-up-connectors-for-secure-mail-flow-with-a-partner.md).
 
 ## How do connectors work with my on-premises email servers?
 
