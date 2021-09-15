@@ -1,6 +1,5 @@
 ---
 ms.localizationpriority: medium
-monikerRange: exchserver-2016 || exchserver-2019
 description:  Mitigations Cloud endpoint is not reachable
 ms.topic: reference
 author: joannehendrickson
@@ -33,7 +32,7 @@ Exchange 2019 (CU11) setup installs the Exchange Emergency Mitigation (EM) Servi
 
 ::: moniker-end
 
-The functionality to check and download mitigations needs outbound connectivity to the Mitigation Service Cloud endpoint. Without this connectivity, the EM service can’t function, which can pose a security risk. We recommend enabling connectivity with the Mitigation Service Cloud endpoint from the computer on which Exchange Server is installed for the EM service to function correctly. 
+The functionality to check and download mitigations requires outbound connectivity to the Mitigation Service Cloud endpoint. Without this connectivity, the EM service can’t function, which can pose a security risk. Enable connectivity with the Mitigation Service Cloud endpoint from the computer on which Exchange Server is installed for the EM service to function correctly. 
 
 
 |Required|Address|Port|

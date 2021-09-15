@@ -46,7 +46,7 @@ Exchange 2019 (CU11) and higher setup requires **IIS URL Rewrite Module 2.1** to
 
  
 >[!Important]
->After the Setup is complete, if the URL Rewrite Module is uninstalled it may lead to unresponsive ECP/OWA. 
+>If the URL Rewrite Module is uninstalled after setup, it may lead to unresponsive ECP/OWA. 
 
 #### Having problems?
 Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver). 
