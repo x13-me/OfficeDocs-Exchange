@@ -18,10 +18,10 @@ manager: serdars
 
 # Exchange Emergency Mitigation Service (EEMS)
 
-Like any other Exchange Service, Exchange Emergency Mitigation Service (EEMS) runs as a Windows service on Exchange Server. When you install the September 2021 (or later) CU of Exchange Server 2016 or Exchange Server 2019, EEMS will be installed automatically on servers with the Mailbox role.  EEMS will not be installed on Edge Transport servers. 
-
 What is it?
 EEMS works using the cloud-based Mitigation Service Endpoint to provide mitigation against security threats. The use of EEMS is optional for customers who want to safeguard their Exchange Servers by automatically applying mitigations to their servers. If your organization doesn't want to use EM, an admin can disable it.
+
+Like any other Exchange Service, Exchange Emergency Mitigation Service (EEMS) runs as a Windows service on Exchange Server. When you install the September 2021 (or later) CU of Exchange Server 2016 or Exchange Server 2019, EEMS will be installed automatically on servers with the Mailbox role.  EEMS will not be installed on Edge Transport servers. 
 
 Once installed through Exchange Setup, EM service checks the Mitigation Service Cloud Endpoint for available mitigations every hour. 
 
@@ -32,7 +32,7 @@ The work performed by the EM service is a temporary, interim mitigation for cust
 
 ## Prerequisites
 
-The EM Service needs following prerequisites. If these prerequisites are not already on the Windows Server where Exchange is installed or to be installed, the setup will prompt the admin to install these prerequisites during readiness check as errors.
+The Exchange EM Service needs following prerequisites. If these prerequisites are not already on the Windows Server where Exchange is installed or to be installed, the setup will prompt the admin to install these prerequisites during readiness check as errors.
 
 - IIS URL Rewrite Module
 - Universal C Runtime in Windows (KB2999226)
@@ -40,7 +40,10 @@ The EM Service needs following prerequisites. If these prerequisites are not alr
 
 ## Connectivity
 
-The EM Service needs outbound connectivity to the Mitigation Service Cloud Endpoint to provide protection against security threats through mitigations. If the outbound connectivity to the Mitigation Service Cloud Endpoint is not available during installation of Exchange Server, the setup would give a warning during readiness check. EM service can be installed without connectivity, but to perform the function of downloading & applying the latest mitigations it needs outbound connectivity. Following endpoint should be reachable from the machine on which Exchange Server is installed for EM service to function properly.
+The Exchange EM Service needs outbound connectivity to the Mitigation Service Cloud Endpoint to provide protection against security threats through mitigations. If the outbound connectivity to the Mitigation Service Cloud Endpoint is not available during installation of Exchange Server, the setup would give a warning during readiness check. 
+
+The EM service can be installed without connectivity, but to perform the function of downloading & applying the latest mitigations it needs outbound connectivity. Following endpoint should be reachable from the machine on which Exchange Server is installed for EM service to function properly.
+
 FQDN- officeclient.microsoft.com/*
 Port- TCP: 443
 
@@ -49,13 +52,19 @@ Port- TCP: 443
 Admins can verify that an Exchange server has connectivity to the Mitigation Service Cloud Endpoint using the Test-MitigationServiceConnectivity.ps1 script (available in the Scripts folder) from the Exchange server.
 If the server has connectivity, the output will be as follows:
 
-`Result: Success.` 
-`Message: The Mitigation Service endpoint is accessible from this computer.`
+```powershell 
+
+Result: Success.
+Message: The Mitigation Service endpoint is accessible from this computer.
+```
 
 If the server doesn’t have connectivity, the output will be as follows:
 
-`Result: Failed.`
-`Message: Unable to connect to the Mitigation Service endpoint from this computer. To learn about connectivity requirements, see https://aka.ms/HelpConnectivityEEMS.`
+```powershell 
+Result: Failed.
+Message: Unable to connect to the Mitigation Service endpoint from this computer. To learn about connectivity requirements, see https://aka.ms/HelpConnectivityEEMS.
+
+```
 
 ## Disabling auto apply of Mitigations through EM Service
 The functioning of EM service includes download of mitigations from Mitigation Service Cloud Endpoint and automatically apply them on Exchange Server. If your organization has an alternate means of mitigating a known threat periodically, you may choose to disable auto apply of mitigations via EM Service. An admin can enable and disable auto-apply functionality of EM Service at an organizational level or at the Exchange server level.
@@ -80,38 +89,54 @@ Server Setting	True or False
 
 
 ## 	Mitigations
-A mitigation is an action or set of actions that are taken automatically to secure an Exchange server from a known threat that is being actively exploited in the wild. This means that to protect your organization and mitigate risk, the EM service may automatically disable features or functionality on an Exchange server. The EM service can apply 3 types of mitigations, including:
-i.	IIS Rewrite rule mitigation is essentially a rule that blocks specific pattern of malicious http request that can endanger Exchange Server.
-ii.	Exchange service mitigation disables any vulnerable service on the Exchange Server.
-iii.	App Pool mitigation disables any app pool that is vulnerable.
-As an admin, you have visibility and control over mitigation already applied using cmdlets and PowerShell scripts. For example, you can find details on applied mitigations and their status using scripts included with EM, and you can find details of mitigations blocked by an admin in the Windows Event Log.
-2.5.1	Viewing Applied Mitigations
+A mitigation is an action or set of actions that are taken automatically to secure an Exchange server from a known threat that is being actively exploited in the wild. This means that to protect your organization and mitigate risk, the EM service may automatically disable features or functionality on an Exchange server. 
+
+The EM service can apply 3 types of mitigations, including:
+
+- IIS Rewrite rule mitigation is essentially a rule that blocks specific pattern of malicious http request that can endanger Exchange Server.
+- Exchange service mitigation disables any vulnerable service on the Exchange Server.
+- App Pool mitigation disables any app pool that is vulnerable.
+
+As an admin, you have visibility and control over mitigation already applied using cmdlets and PowerShell scripts. In the Windows Event log, you can find details on applied mitigations and their status using scripts included with EM, and details of mitigations blocked by an admin.
+
+### Viewing Applied Mitigations
+
 Once mitigations are applied to a server, an admin can view the applied mitigations using following cmdlet. 
+
+```powershell
 Get-ExchangeServer -Identity <ServerName> | fl name, MitigationsApplied
 Name				: Server1
 MitigationsApplied	: {M01.1, M01.2, M01.3}
+```
+
 
 The same cmdlet can also be used to see the list of applied mitigations across your environment as shown below
 
+```powershell
 Get-ExchangeServer | fl name, MitigationsApplied
-
+```
 Name				:	Server1
 MitigationsApplied	: 	{M01.1, M01.2, M01.3}
 
-
 Name				:	Server2
 MitigationsApplied	:	{M01.1, M01.2, M01.3}
+
 
 ## Reapplying a Mitigation
 In case of accidental reversal of mitigation by admin, the EM service will reapply the mitigation when it performs its hourly check for new mitigations. Admins can manually reapply a mitigation without waiting for the EM service to check for mitigations by stopping and then restarting the EM service. After restart of EM service, the first run to check and apply mitigation occurs after 10 minutes.
 2.5.3	Blocking Mitigations and reversing the Mitigation
 In case a particular mitigation is critically impacting the functioning of Exchange Server for any organization, the admins have an option of blocking these mitigations and then reversing the effect manually. 
 To block any mitigation, admins need to add the Mitigation ID in the MitigationsBlocked parameter which is shown below:
+
+```powershell
 Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @(“M1”)
+```
+
 In case there are more than one mitigation to be blocked, please use the following:
 
+```powershell
 Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @(“M1”, “M2”)
-
+```
 The above operation would block M1 mitigation, which would ensure EM service will not reapply this mitigation in next hourly cycle.
 
 After this based on mitigation type, admins can reverse the effect of Mitigation. To reverse IIS rewrite rule mitigation, admins can delete the rule in IIS. For reversing the Service and App Pool mitigation, admins can just start these service or app pool manually.
@@ -120,7 +145,8 @@ Admins can also remove one or multiple mitigation from the block list by removin
 Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @()
 After the mitigation is removed from block list, the mitigation would be reapplied by EM service in its next run. Admins can manually reapply a mitigation without waiting for the EM service’s next run by stopping and then restarting the EM service. After restart of EM service, the first run to check and apply mitigation occurs after 10 minutes.
 
-Important: Admins should refrain from making any changes to MitigationsApplied parameter, as it is used by EM service to store and track Mitigation Status.
+>!Important]
+>Admins should refrain from making any changes to the **MitigationsApplied** parameter, as it is used by EM service to store and track Mitigation Status.
 
 
 ## Viewing Applied and Blocked Mitigations
@@ -128,7 +154,9 @@ Admins can view both mitigations applied as well as blocked for a server or all 
 
 For viewing list of applied and blocked mitigations for all the servers, admins can use the cmdlet in following way:
 
+```powershell
 Get-ExchangeServer | fl name, MitigationsApplied, MitigationsBlocked
+```
 
 Name				:	Server1
 MitigationsApplied	: 	{M01.1, M01.3}
@@ -148,9 +176,9 @@ MitigationsBlocked	: 	{M01.2}
 ## Get-Mitigation Script
 Admins should use the Get-Mitigations.ps1 script supplied through the Exchange setup to analyze and keep track of all the mitigations provided by Microsoft. This script is available in the Scripts folder “\V15\Scripts” of the Exchange Server installation directory. This script shows the Mitigation ID, Type and Description of each mitigation. And in addition to showing the list of applied and blocked mitigations it also shows the mitigations that failed to apply through the field state which can be “Applied”, “Blocked” and “Failed”.
 This script can be used as shown below. If no parameter is supplied to the script, this will show the status for all the servers in the organization. To view the details of specific server, admins should provide server name in Identity field like “.\Get-Mitigation.ps1 -Identity <Server>”
+
 E.g.:
 
- 
 Admins can export the list of applied mitigations and their descriptions to a CSV file by using the ExportCSV argument of Get-Mitigation.ps1 script as shown below.
 .\Get-Mitigation.ps1 -Identity <Server> -ExportCSV “C:\temp\CSVReport.csv”
 Important: Get mitigation script needs PowerShell version 4.0 and above to function as designed.
@@ -162,6 +190,7 @@ After an SU or a CU has been installed, an admin must remove any mitigations tha
 
 Any mitigations blocked by an admin will be logged in the Windows Event Log. In addition to logging blocked mitigations, the EM service will also log details about service startup, shutdown, and termination (like all services running on Windows), as well as details of its actions and any errors encountered by the EM service. For example, events 1005 and 1006 with a source of MSExchange Mitigation Service will be logged for successful actions such as when a mitigation is applied, and event 1008 with the same source will be logged for any errors that are encountered, such as when the EM service cannot reach the Mitigation Service Cloud Endpoint.
 Admins can use Search-AdminAuditLog to review actions taken by an admin, including enabling and disabling automatic mitigations.
+
 The EM service also maintains a separate log file in the MitigationService folder under the Exchange Server installation directory. This log details the tasks performed by the EM service, including fetching mitigations, parsing mitigations, and applying mitigations, as well as details about the information sent to the Mitigation Service Cloud Endpoint if sending diagnostic data is enabled.
 
 
