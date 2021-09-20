@@ -81,13 +81,13 @@ To enable sending optional data to Microsoft, use the following cmdlet:
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$true  
 ```
  
-
+```Powershell
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$false  
-
+```
  
 
-To enable sending optional data to Microsoft, use the following cmdlet: 
+To enable sending optional data to Microsoft, use the following cmdlet:  
 
- 
-
+```Powershell
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$true  
+```
