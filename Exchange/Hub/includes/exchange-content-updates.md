@@ -2,6 +2,20 @@
 
 
 
+## Week of September 13, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/14/2021 | [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) | modified |
+| 9/15/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | added |
+| 9/15/2021 | [Update for Universal C Runtime in Windows (KB2999226) not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-kb2999226notinstalled?view=exchserver-2016) | added |
+| 9/15/2021 | [Mitigations Cloud endpoint is not reachable](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-mitigationscloudendpointunreachable?view=exchserver-2016) | added |
+| 9/15/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | modified |
+| 9/15/2021 | [Update for Universal C Runtime in Windows (KB2999226) not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-kb2999226notinstalled?view=exchserver-2016) | modified |
+| 9/15/2021 | [Mitigations Cloud endpoint is not reachable](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-mitigationscloudendpointunreachable?view=exchserver-2016) | modified |
+
+
 ## Week of September 06, 2021
 
 
