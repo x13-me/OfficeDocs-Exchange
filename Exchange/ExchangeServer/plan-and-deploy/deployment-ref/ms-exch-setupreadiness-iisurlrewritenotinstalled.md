@@ -20,23 +20,23 @@ manager: serdars
 
 ::: moniker range="exchserver-2016"
 
-Microsoft Exchange Server 2016 (CU22) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2016 setup. 
+Microsoft Exchange Server 2016 setup can't continue because the local computer requires additional software to be installed. 
 
-Exchange 2016 (CU22) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
+Exchange 2016 setup (for September 2021 CU and later versions) requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
 
 ::: moniker-end
 
 
 ::: moniker range="exchserver-2019"
 
-Microsoft Exchange Server 2019 (CU11) setup can't continue because the local computer requires more software. Install this software to continue the Exchange 2019 setup. 
+Microsoft Exchange Server 2019 setup can't continue because the local computer requires additional software to be installed.
 
-Exchange 2019 (CU11) and higher setup requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
+Exchange 2019 setup (for September 2021 CU and later versions) requires **IIS URL Rewrite Module 2.1** to be installed on the computer before installation can continue. 
 
 
 ::: moniker-end
 
-1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite).
+1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite). Choose the x64 installed of any language.
 2. Select **retry** on the **Readiness Checks page**. 
 
 
