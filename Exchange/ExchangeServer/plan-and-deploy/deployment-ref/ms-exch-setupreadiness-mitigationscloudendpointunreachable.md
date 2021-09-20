@@ -21,18 +21,20 @@ manager: serdars
 
 Microsoft Exchange Server 2016 setup displayed this warning because the setup failed to connect to the Mitigation Service Cloud endpoint from the local computer. 
 
-Exchange 2016 (CU22) setup installs the Exchange Emergency Mitigation (EM) Service. The EM Service checks for available mitigations every hour before downloading and applying them. 
+Exchange 2016 setup (for September 2021 CU and later versions) installs the Exchange Emergency Mitigation (EM) Service. The EM Service checks for available mitigations every hour before downloading and applying them. 
 
 ::: moniker-end
 
 ::: moniker range="exchserver-2019"
 Microsoft Exchange Server 2019 setup displayed this warning because the setup failed to connect to the Mitigation Service Cloud endpoint from the local computer. 
 
-Exchange 2019 (CU11) setup installs the Exchange Emergency Mitigation (EM) Service. The EM Service checks for available mitigations every hour before downloading and applying them. 
+Exchange 2019 setup (for September 2021 CU and later versions) installs the Exchange Emergency Mitigation (EM) Service. The EM Service checks for available mitigations every hour before downloading and applying them. 
 
 ::: moniker-end
 
-The functionality to check and download mitigations requires outbound connectivity to the Mitigation Service Cloud endpoint. Without this connectivity, the EM service can’t function, which can pose a security risk. Enable connectivity with the Mitigation Service Cloud endpoint from the computer on which Exchange Server is installed for the EM service to function correctly. 
+The functionality to check and download mitigations requires outbound connectivity to the Mitigation Service Cloud endpoint. Without this connectivity, the EM service can’t function, which can pose a security risk. 
+
+For the EM service to function correctly, admins needs to enable connectivity with the following endpoint from the computer on which Exchange Server is installed.
 
 
 |Required|Address|Port|
