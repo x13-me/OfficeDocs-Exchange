@@ -74,7 +74,6 @@ To disable sending optional data to Microsoft:
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$false  
 ```
  
-
 To enable sending optional data to Microsoft, use the following cmdlet: 
 
 ```Powershell
