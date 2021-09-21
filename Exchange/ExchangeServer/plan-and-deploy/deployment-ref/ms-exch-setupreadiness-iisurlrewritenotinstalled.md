@@ -36,7 +36,7 @@ Exchange 2019 setup (for September 2021 CU and later versions) requires **IIS UR
 
 ::: moniker-end
 
-1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite). Choose the x64 installed of any language.
+1. Download and install:  [URL Rewrite Module version 2.1](https://www.iis.net/downloads/microsoft/url-rewrite). Choose the x64 installer of any language.
 2. Select **retry** on the **Readiness Checks page**. 
 
 
