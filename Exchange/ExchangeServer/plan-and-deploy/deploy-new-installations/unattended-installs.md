@@ -34,8 +34,8 @@ The primary (top-level, scenario-defining) command line switches that are availa
 
 |**Switch**|**Description**|
 |:-----|:-----|
-|_/IAcceptExchangeServerLicenseTerms_|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms). </br></br> **Note:** This switch is no longer available in setup of Exchange 2016 and Exchange 2019 September 2021 CUs and later versions.|
-|/IAcceptExchangeServerLicenseTerms_DiagnosticDataON</br>/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms).</br>To accept the license terms and send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataON*.</br>To accept the license terms but not send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataOFF*.</br></br>**Note:** These switches are available in setup of Exchange 2016 and Exchange 2019 September 2021 CUs and later versions.|
+|_/IAcceptExchangeServerLicenseTerms_|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms). </br></br> **Note:** Beginning with the September 2021 Cumulative Updates, this switch is no longer available in Exchange Server 2016 or Exchange Server 2019.|
+|/IAcceptExchangeServerLicenseTerms_DiagnosticDataON</br>/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms).</br>To accept the license terms and send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataON*.</br>To accept the license terms but not send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataOFF*.</br></br>**Note:** These switches are available beginning with the September 2021 Cumulative Updates for Exchange Server 2016 and Exchange Server 2019.|
 |_/Mode:\<InstallationMode\>_ <br/> (or _/m:\<InstallationMode\>_)|Valid values are: <br/>• **Install**: Installs Exchange on a new server using the Exchange server roles specified by the _/Roles_ switch. This is the default value if the command doesn't use the _/Mode_ switch. <br/>• **Uninstall**: Uninstalls Exchange from a working server. <br/>• **Upgrade**: Installs a Cumulative Update (CU) on an Exchange server. <br/>• **RecoverServer**: Recovers an Exchange server using the existing Exchange server object in Active Directory after a catastrophic hardware or software failure on the server. For instructions, see [Recover Exchange servers](../../high-availability/disaster-recovery/recover-exchange-servers.md).|
 |_/Roles:\<ServerRole\>_ <br/> (or _/Role:\<ServerRole\>_ or _/r:\<ServerRole\>_)|This switch is required in `/Mode:Install` commands. Valid values are: <br/>• **Mailbox (or mb)**: Installs the Mailbox server role and the Exchange management tools on the local server. This is the default value. You can't use this value with **EdgeTransport**. <br/>• **EdgeTransport (or et)**: Installs the Edge Transport server role and the Exchange management tools on the local server. You can't use this value with **Mailbox**. <br/>• **ManagementTools (or mt or t)**: Installs the Exchange management tools on clients or other Windows servers that aren't running Exchange.|
 |_/PrepareAD_ (or _/p_) <br/> _/PrepareSchema_ (or _/ps_) <br/> _/PrepareDomain:\<DomainFQDN\>_ (or _/pd:\<DomainFQDN\>_) <br/> _/PrepareAllDomains_ (or _/pad_)|Use these switches to extend the Active Directory schema for Exchange, prepare Active Directory for Exchange, and prepare some or all Active Directory domains for Exchange. For more information, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md)|
@@ -121,7 +121,7 @@ The optional (supporting) command line switches that are available in unattended
 3. In the Command Prompt window, use the following syntax:
 
    ```console
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms [Switches]
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON [Switches]
    ```
 
    Setup copies the setup files to the local computer.
@@ -139,7 +139,7 @@ The optional (supporting) command line switches that are available in unattended
 This example configures "Fabrikam Ltd" as the Exchange organization name in Active Directory and prepares Active Directory for the version of Exchange that's being installed.
 
 ```console
-Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Fabrikam Ltd"
+Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /OrganizationName:"Fabrikam Ltd"
 ```
 
 For more information, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md).
@@ -149,37 +149,37 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 - This example installs the first Exchange server (Mailbox server) in the organization, configures "Contoso Corporation" as the Exchange organization name in Active Directory, and installs the Exchange management tools on the local server.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Roles:Mailbox /on:"Contoso Corporation"
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Install /Roles:Mailbox /on:"Contoso Corporation"
    ```
 
 - This example installs the Mailbox server role and the management tools in the default folder on the local server in an organization where Active Directory has already been prepared for the version of Exchange that's being installed.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:MB
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /mode:Install /r:MB
    ```
 
 - This example installs the Mailbox server role and the management tools in the "C:\Exchange Server" folder on the local server.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Role:Mailbox /TargetDir:"C:\Exchange Server"
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Install /Role:Mailbox /TargetDir:"C:\Exchange Server"
    ```
 
 - This example installs the Mailbox server role on the local server by using the settings in the ExchangeConfig.txt file.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /AnswerFile:c:\ExchangeConfig.txt
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /mode:Install /role:Mailbox /AnswerFile:c:\ExchangeConfig.txt
    ```
 
 - This example uses the domain controller named DC01 to read from and write to Active Directory while installing the Mailbox server role and the management tools on the local server.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /DomainController:DC01
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /mode:Install /role:Mailbox /DomainController:DC01
    ```
 
 - This example updates Exchange Setup with patches from the specified folder, and then installs the Mailbox server role and the management tools on the local server. In Exchange 2016 only, if any UM language packs are located in this folder, the language packs are automatically installed.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /role:Mailbox /UpdatesDir:"C:\ExchangeServer\New Patches"
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /role:Mailbox /UpdatesDir:"C:\ExchangeServer\New Patches"
    ```
 
 ### Install Edge Transport servers in unattended mode
@@ -201,7 +201,7 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 This example completely removes Exchange from the local server and removes the server's Exchange configuration from Active Directory.
 
 ```console
-Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
+Setup.exe /mode:Uninstall
 ```
 
 ### Remove provisioned Exchange server objects from Active Directory in unattended mode
@@ -209,7 +209,7 @@ Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
 This example removes the provisioned Exchange server object named Exchange03 from Active Directory _before_ Exchange is installed on the server (if Exchange is already installed on the server, the command won't work).
 
 ```console
-Setup.exe /IAcceptExchangeServerLicenseTerms /rprs:Exchange03
+Setup.exe /rprs:Exchange03
 ```
 
 For more information, see [Delegate the installation of Exchange servers](delegate-installations.md).
@@ -222,13 +222,13 @@ For more information, see [Delegate the installation of Exchange servers](delega
 - This example installs the Russian and Spain Spanish language packs on the local Exchange 2016 Mailbox server from the specified folder.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /AddUmLanguagePack:ru-RU,es-ES /SourceDir:"D:\UM Language Packs"
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /AddUmLanguagePack:ru-RU,es-ES /SourceDir:"D:\UM Language Packs"
    ```
 
 - This example uninstalls the Korean UM language pack from the local Exchange 2016 Mailbox server.
 
    ```console
-   Setup.exe /IAcceptExchangeServerLicenseTerms /RemoveUmLanguagePack:ko-KR
+   Setup.exe  /RemoveUmLanguagePack:ko-KR
    ```
 
 ## Next steps
