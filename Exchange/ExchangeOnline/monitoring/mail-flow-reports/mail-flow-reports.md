@@ -58,4 +58,4 @@ For more information, see [Permissions in Exchange Online](../../permissions-exo
 
 Open the new EAC at <https://admin.exchange.microsoft.com>, expand **Reports**, and then select **Mail flow**.
 
-To go directly to the mail flow reports, open <https://admin.exchange.microsoft.com/#/reports/vipmailflowdetails>
+To go directly to the mail flow reports, open <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>
