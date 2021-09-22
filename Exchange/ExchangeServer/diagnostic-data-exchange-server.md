@@ -25,7 +25,7 @@ When using the GUI version of the Exchange setup, a new License Agreement 
 
 Instead of two options, will be three options to select from.
 
-![New Exchange server license agreement](../../media/exchange-license-acceptance-new.png)
+![New exchange license agreement](media/exchange-license-acceptance-new.png)
 
 
 Choose one of the following:  
