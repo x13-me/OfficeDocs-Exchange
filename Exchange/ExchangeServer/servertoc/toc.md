@@ -382,6 +382,8 @@
 #### [Configure overrides](../high-availability/managed-availability/configure-overrides.md)
 ## [Server health](../server-health/server-health.md)
 ### [Workload management](../server-health/workload-management.md)
+## [Emergency Mitigation Service](exchange-emergency-mitigation-service.md)
+## [Diagnostic Data](diagnostic-data-exchange-server.md)
 ## [Antispam and antimalware](../antispam-and-antimalware/antispam-and-antimalware.md)
 ### [Antispam protection](../antispam-and-antimalware/antispam-protection/antispam-protection.md)
 #### [Antispam on Mailbox servers](../antispam-and-antimalware/antispam-protection/antispam-on-mailbox-servers.md)
