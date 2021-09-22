@@ -21,7 +21,9 @@ Microsoft collects diagnostic data to keep Exchange Server secure and up to date
 
 ## Change in License Term acceptance process 
 
-When using the GUI version of the Exchange setup, a new License Agreement screen, as shown below. 
+When using the GUI version of the Exchange setup, a new License Agreement screen will appear, as shown below. 
+
+Instead of two options, will be three options to select from.
 
 ![New Exchange server license agreement](../../media/exchange-license-acceptance-new.png)
 
@@ -34,8 +36,11 @@ Choose one of the following: 
 |**I accept the license agreement, but I’m not ready to share diagnostic data with Microsoft**| This option accepts the license agreement but disables sending data to Microsoft.| 
 |**I do not accept the license agreement**|If you don’t accept the EULA, you cannot install the CU.|
 
+<br></br>
 
-These options are also available via an unattended command-line setup using the new setup switches:  
+### Unattended Setup of Exchange Server
+
+Similar options are also available via an unattended command-line setup using the new setup switches:  
 
 |Option|Explanation|
 |:-----|:-----|
@@ -75,17 +80,6 @@ Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$false 
 ```
  
 To enable sending optional data to Microsoft, use the following cmdlet: 
-
-```Powershell
-Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$true  
-```
- 
-```Powershell
-Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$false  
-```
- 
-
-To enable sending optional data to Microsoft, use the following cmdlet:  
 
 ```Powershell
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$true  
