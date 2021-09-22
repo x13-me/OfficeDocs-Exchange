@@ -17,13 +17,13 @@ manager: serdars
 ---
 # Diagnostic Data collected for Exchange Server
 
-Microsoft collects diagnostic data to keep Exchange Server secure and up to date, find and fix problems, and identify and mitigate threats. When Exchange Server 2016 or 2019 September 2021 (or a later) CU is installed, the Server will have the ability to send diagnostic data related to Exchange Security to Office Config Service in cloud. There is a change to the License Agreement acceptance process to allow you to choose whether to share diagnostic data with Microsoft.  
+Microsoft collects diagnostic data to keep Exchange Server secure and up to date, find and fix problems, and identify and mitigate threats. When the September 2021 (or later) CU is installed on a Mailbox server, Exchange Server 2016 or Exchange Server 2019 will have the ability to send diagnostic data from each Exchange server to the Office Config Service (OCS) in the Microsoft cloud. There is a change to the License Agreement acceptance process to allow you to choose whether to share diagnostic data with Microsoft.
 
 ## Change in License Term acceptance process 
 
-When using the GUI version of the Exchange setup, a new License Agreement screen will appear, as shown below. 
+When using the GUI version of Exchange Setup, a new License Agreement screen will appear, as shown below. 
 
-Instead of two options, will be three options to select from.
+Instead of two options, there are now three options.
 
 ![New exchange license agreement](media/exchange-license-acceptance-new.png)
 
@@ -40,12 +40,12 @@ Choose one of the following: 
 
 ### Unattended Setup of Exchange Server
 
-Similar options are also available via an unattended command-line setup using the new setup switches:  
+The acceptance options are also available via an unattended command-line setup using the new Setup switches:  
 
 |Option|Explanation|
 |:-----|:-----|
 |**/IAcceptExchangeServerLicenseTerms_DiagnosticDataON**|Use this switch to accept the license terms and send optional data to Microsoft when the EM service requests mitigations.|  
-|**/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF**|**Use this new Setup switch to accept the license terms and disable sending optional data to Microsoft.|  
+|**/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF**|Use this new Setup switch to accept the license terms and disable sending optional data to Microsoft.|  
 
  
 
@@ -56,21 +56,22 @@ Similar options are also available via an unattended command-line setup using 
 
 ## Diagnostic Data collected 
 
-When diagnostic data collection is enabled, your Exchange server sends the following information to the Office Config Service: 
+When diagnostic data collection is enabled, your Exchange server sends the following information hourly to the Office Config Service: 
 
 |Data|Explanation|
 |:-----|:-----|
-|Exchange build number|The server version (CU and SU build information)|  
-|Emergency Mitigation service state|Information about the admin-configured behavior of the EM service (for example, whether to send data and/or automatically mitigate). | 
-|Immutable Device ID|Unique identification for the Server |
-|Immutable Org ID|Unique identification for each Exchange organization|
-|Applied mitigations|A list of all mitigations that were applied| 
+|Exchange build number|The server version (CU and SU build information).|  
+|Emergency Mitigation service state|Information about the admin-configured behavior of the EM service (for example, whether to send data and/or automatically mitigate).| 
+|Immutable Device ID|Unique identification for the Server.|
+|Immutable Org ID|Unique identification for each Exchange organization.|
+|Applied mitigations|A list of all mitigations that were applied.| 
 |Blocked mitigations|A list of all mitigations that were blocked by an admin.|  
+|OS Version|The version of Windows running on the Exchange server.|
 
  
 ## How to configure the Diagnostic Data setting after installation is complete 
 
-After the setup has completed, you can enable and disable sending the diagnostic data to the OCS on any Exchange server using **Set-ExchangeServer** cmdlet. 
+After Setup has completed, you can enable and disable sending the diagnostic data to the OCS on any Exchange server using the **Set-ExchangeServer** cmdlet. 
 
 
 To disable sending optional data to Microsoft: 
@@ -79,7 +80,7 @@ To disable sending optional data to Microsoft:
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$false  
 ```
  
-To enable sending optional data to Microsoft, use the following cmdlet: 
+To enable sending optional data to Microsoft:
 
 ```Powershell
 Set-ExchangeServer -Identity <ServerName> -DataCollectionEnabled:$true  
