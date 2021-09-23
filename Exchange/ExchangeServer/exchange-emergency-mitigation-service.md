@@ -50,7 +50,7 @@ The following is the respository of all released mitigations.
 
 |Serial number|Mitigation ID|Description|Lowest version applicable|Highest version applicable|Rollback procedure|
 |:-----|:-----|:-----|:-----|:-----|:-----|
- 1|PING1|EEMS heartbeat probe.  Does not modify any Exchange settings.|Exchange 2019: September 2021 CU</br></br>Exchange 2016: September 2021 CU| - |No rollback required.|
+ 1|PING1|EEMS heartbeat probe. Does not modify any Exchange settings.|Exchange 2019: September 2021 CU</br></br>Exchange 2016: September 2021 CU| - |No rollback required.|
 
 
 ## Prerequisites
