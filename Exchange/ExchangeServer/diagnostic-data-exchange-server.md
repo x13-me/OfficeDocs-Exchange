@@ -66,7 +66,7 @@ When diagnostic data collection is enabled, your Exchange server sends the follo
 |Immutable Org ID|Unique identification for each Exchange organization.|
 |Applied mitigations|A list of all mitigations that were applied.| 
 |Blocked mitigations|A list of all mitigations that were blocked by an admin.|  
-|OS Version|The version of Windows running on the Exchange server.|
+
 
  
 ## How to configure the Diagnostic Data setting after installation is complete 
