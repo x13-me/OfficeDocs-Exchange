@@ -57,8 +57,8 @@ The following is the respository of all released mitigations.
 
 If these prerequisites are not already on the Windows Server where Exchange is installed or to be installed, Setup will prompt you to install these prerequisites during the readiness check:
 
-- IIS URL Rewrite Module
-- Universal C Runtime in Windows (KB2999226)
+- [IIS URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite)
+- [Universal C Runtime in Windows (KB2999226)](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
 
 ## Connectivity
@@ -69,7 +69,7 @@ While the EM service can be installed without connectivity to the OCS, it must h
 
 |Endpoint|Address|Port|Description|
 |:-----|:-----|:-----|:-----|
-|Office Config Service|officeclient.microsoft.com/*|TCP: 443|Required endpoint for the Exchange EM service|
+|Office Config Service|officeclient.microsoft.com/*| 443|Required endpoint for the Exchange EM service|
 
 If a network proxy is deployed in the environment for outbound connectivity, admins need to configure the InternetWebProxy parameter using Set-ExchangeServer.
 
@@ -85,8 +85,8 @@ You can verify that an Exchange server has connectivity to the OCS by using the 
 If the server has connectivity, the output is:
 
 ```Powershell
-*Result: Success.
-Message: The Mitigation Service endpoint is accessible from this computer.*
+Result: Success.
+Message: The Mitigation Service endpoint is accessible from this computer.
 ```
 
 If the server doesn’t have connectivity, the output is:
@@ -134,8 +134,8 @@ Get-ExchangeServer -Identity <ServerName> | fl name, MitigationsApplied
 ```
 
 ```Powershell
-  Name				: Server1
-MitigationsApplied	: {M01.1, M01.2, M01.3} 
+Name			:	Server1
+MitigationsApplied	:	{M01.1, M01.2, M01.3} 
 ```
 
 The same cmdlet can also be used to see the list of applied mitigations across your environment as shown below.
@@ -145,10 +145,10 @@ Get-ExchangeServer | fl name, MitigationsApplied
 ```
 
 ```powershell
-Name				:	Server1
-MitigationsApplied	: 	{M01.1, M01.2, M01.3}
+Name			:	Server1
+MitigationsApplied	:	{M01.1, M01.2, M01.3}
 
-Name				:	Server2
+Name			:	Server2
 MitigationsApplied	:	{M01.1, M01.2, M01.3}
 ```
 
@@ -196,15 +196,15 @@ To view the list of applied and blocked mitigations for all the servers:
 Get-ExchangeServer | fl name, MitigationsApplied, MitigationsBlocked
 ```
 
-**Results:**
-Name				:	Server1
-MitigationsApplied	: 	{M01.1, M01.3}
-MitigationsBlocked	: 	{M01.2}
+```powershell
+Name			:	Server1
+MitigationsApplied	:	{M01.1, M01.3}
+MitigationsBlocked	:	{M01.2}
 
-Name				:	Server2
+Name			:	Server2
 MitigationsApplied	:	{M01.1, M01.2}
-MitigationsBlocked	: {M01.3}
-
+MitigationsBlocked	:	{M01.3}
+```
 
 To view the list of applied and blocked mitigations on a per-server basis:
 
@@ -212,12 +212,13 @@ To view the list of applied and blocked mitigations on a per-server basis:
 ```powershell
 Get-ExchangeServer -Identity <ServerName> | fl name, *Mitigations*
 ```
-**Results:**
-Name				:	Server1
-MitigationsEnabled	:	True
-MitigationsApplied	: {M01.1, M01.3}
-MitigationsBlocked	: {M01.2}
 
+```powershell
+Name			:	Server1
+MitigationsEnabled	:	True
+MitigationsApplied	:	{M01.1, M01.3}
+MitigationsBlocked	:	{M01.2}
+```
 
 
 ## Get-Mitigation Script
