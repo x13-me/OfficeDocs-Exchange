@@ -390,6 +390,25 @@ Content-Length: 0
 In the Microsoft 365 Admin Center, under **Settings** > **Org Settings** > **Modern Authentication** you can designate the protocols in your tenant that no longer require Basic Authentication to be enabled.
 Behind the scenes, these options utilize Authentication Policies. If Authentication Policies were created in the past, modifying any of these selections will automatically create the first new Authentication Policy. This policy is visible only through PowerShell. For advanced customers that may already be utilizing Authentication Policies, changes within the Microsoft 365 Admin Center will modify their existing default policy. Look through [Azure AD Sign-in logs](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication#identify-legacy-authentication-use) to get a good idea of which protocols clients are using before making any changes.
 
+This option does not disable the two following legacy services. These options can only be disabled via PowerShell.
+AllowBasicAuthOutlookService
+AllowBasicAuthReportingWebServices
+
+```PowerShell
+Set-AuthenticationPolicy -AllowBasicAuthReportingWebServices:$false -AllowBasicAuthOutlookService:$false
+```
+
+Additionally, this option does not implement the policy on the existing mailboxes. The policy is set as the default policy and it will be enabled for new mailboxes going forward. To apply the policy to existing mailboxes, use the following PowerShell commands to discovery the policy name, and then apply it to all existing mailboxes.
+
+```PowerShell
+Get-AuthenticationPolicy
+```
+After you get the Authentication Policy Name, run this to apply to all existing mailboxes.
+
+```PowerShell
+get-mailbox | foreach {set-user -Identity $_.ExchangeObjectID.tostring() -AuthenticationPolicy <AuthenticationPolicyName>}
+```
+
 ## Filter on-premises Active Directory user accounts that are synchronized to Exchange Online
 
 This method uses one specific attribute as a filter for on-premises Active Directory group members that will be synchronized with Exchange Online. This method allows you to disable legacy protocols for specific groups without affecting the entire organization.
