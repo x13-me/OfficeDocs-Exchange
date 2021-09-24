@@ -28,7 +28,7 @@ Instead of two options, there are now three options.
 ![New exchange license agreement](media/exchange-license-acceptance-new.png)
 
 
-Choose one of the following options:  
+Choose one of the following options:
 
 |Selection|Description|
 |:-----|:-----|
@@ -40,7 +40,8 @@ Choose one of the following options: 
 
 ### Unattended Setup of Exchange Server
 
-The acceptance options are also available via an unattended command-line setup using the new Setup switches:  
+The acceptance options are also available via an unattended command-line setup using the new Setup switches:
+
 
 |Selection|Description|
 |:-----|:-----|
@@ -57,6 +58,7 @@ The acceptance options are also available via an unattended command-line setup
 ## Diagnostic Data collected 
 
 When diagnostic data collection is enabled, your Exchange server sends the following information hourly to the Office Config Service: 
+
 
 |Data|Description|
 |:-----|:-----|
