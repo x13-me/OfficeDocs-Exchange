@@ -45,12 +45,12 @@ The acceptance options are also available via an unattended command-line setup
 |Selection|Description|
 |:-----|:-----|
 |**/IAcceptExchangeServerLicenseTerms_DiagnosticDataON**|Use this switch to accept the license terms and send optional data to Microsoft when the EM service requests mitigations.|  
-|**/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF**|Use this new Setup switch to accept the license terms and disable sending optional data to Microsoft.|  
+|**/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF**|Use this new setup switch to accept the license terms and disable sending optional data to Microsoft.|  
 
  
 
 >[!Important]
->**/IAcceptExchangeServerLicenseTerms** has been removed from Exchange server command-line Setup and replaced with the two new setup switches shown above.  
+>**/IAcceptExchangeServerLicenseTerms** has been removed from Exchange server command-line Setup and replaced with the two new Setup switches shown above.  
 
  
 
@@ -71,7 +71,7 @@ When diagnostic data collection is enabled, your Exchange server sends the follo
  
 ## How to configure the Diagnostic Data setting after installation is complete 
 
-After Setup has completed, you can enable and disable sending the diagnostic data to the OCS on any Exchange server using the **Set-ExchangeServer** cmdlet. 
+After the Setup has completed, you can enable and disable sending the diagnostic data to the OCS on any Exchange server using the **Set-ExchangeServer** cmdlet. 
 
 
 To disable sending optional data to Microsoft: 
