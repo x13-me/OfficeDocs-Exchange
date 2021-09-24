@@ -34,7 +34,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |Version|Blog post|
 |---|---|
-|Exchange 2019 CU11|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/xxxxxxxx)|
+|Exchange 2019 CU11|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/2779883)|
 |Exchange 2019 CU10|[Released: June 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2021-quarterly-exchange-updates/ba-p/2459826)|
 |Exchange 2019 CU9|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2019 CU8|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
@@ -63,7 +63,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |Version|Blog post|
 |---|---|
-|Exchange 2016 CU22|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/xxxxxxx)|
+|Exchange 2016 CU22|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/2779883)|
 |Exchange 2016 CU21|[Released: June 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2021-quarterly-exchange-updates/ba-p/2459826)|
 |Exchange 2016 CU20|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2016 CU19|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
