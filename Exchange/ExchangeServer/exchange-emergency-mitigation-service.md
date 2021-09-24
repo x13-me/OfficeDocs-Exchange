@@ -6,7 +6,6 @@ author: joannehendrickson
 ms.author: jhendr
 ms.reviewer: 
 title: Exchange Emergency Mitigation Service (Exchange EM Service)
-ms.topic: overview
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
@@ -226,7 +225,7 @@ You can use the **Get-Mitigations.ps1** script to analyze and track the mitigati
 
 The script displays the ID, type, description, and status of each mitigation. The list includes any applied, blocked, or failed mitigations.
 
-To view the details of a specific server, provide server name in the Identity field such as “.\Get-Mitigations.ps1 -Identity <Server>”.  To view the status of all the servers in your organization, simply omit the Identity parameter.
+To view the details of a specific server, provide server name in the Identity field such as <span><span>“.\Get-Mitigations.ps1 -Identity <<span><span>Server<span><span>>”.  To view the status of all the servers in your organization, simply omit the Identity parameter.
 
 **Example:** Export the list of applied mitigations and their descriptions to a CSV file by using the ExportCSV parameter:
 
