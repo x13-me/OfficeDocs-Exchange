@@ -28,11 +28,11 @@ Instead of two options, there are now three options.
 ![New exchange license agreement](media/exchange-license-acceptance-new.png)
 
 
-Choose one of the following:  
+Choose one of the following options:  
 
 |Selection|Description|
 |:-----|:-----|
-|**I accept the license agreement and will share diagnostic data with Microsoft**|This is the default option which accepts the license agreement and enables sending data to Microsoft.|  
+|**I accept the license agreement and will share diagnostic data with Microsoft**|This is the default option that accepts the license agreement and enables sending data to Microsoft.|  
 |**I accept the license agreement, but I’m not ready to share diagnostic data with Microsoft**| This option accepts the license agreement but disables sending data to Microsoft.| 
 |**I do not accept the license agreement**|If you don’t accept the EULA, you cannot install the CU.|
 
