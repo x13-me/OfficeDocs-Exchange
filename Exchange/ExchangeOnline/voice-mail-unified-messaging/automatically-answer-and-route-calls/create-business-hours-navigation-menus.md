@@ -18,6 +18,9 @@ manager: serdars
 
 # Create business hours navigation menus in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You can enable business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the business hours main menu prompt greeting that callers hear after the business hours welcome greeting is played. The default business hours main menu prompt says, "Welcome to the Microsoft Exchange auto attendant." Because no key mappings are defined by default, no menu options are available to callers, and they hear only the default main menu prompt.
 
 When you configure key mappings, you define the options and the operations that will be performed if a caller speaks a phrase while they're using a speech-enabled auto attendant or presses a key on the telephone keypad while they're using an auto attendant that isn't speech-enabled.
