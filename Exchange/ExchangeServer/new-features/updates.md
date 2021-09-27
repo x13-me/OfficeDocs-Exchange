@@ -44,7 +44,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2019 CU4|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2019 CU3|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2019 CU2|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
-|Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)||
+|Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)|
 |Exchange 2019 RTM|[Exchange Server 2019 Now Available](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Exchange-Server-2019-Now-Available/ba-p/608610)|
 |
 
