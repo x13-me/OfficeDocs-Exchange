@@ -18,6 +18,9 @@ manager: serdars
 
 # DTMF interface in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 In Unified Messaging (UM), callers can use dual tone multi-frequency (DTMF), also referred to as touchtone, and voice inputs to interact with the system. The methods that callers can use depend on how the UM dial plans and auto attendants are configured.
 
 The DTMF interface enables callers to use the telephone keypad to locate users and navigate the UM voice mail menu system when they call an Outlook Voice Access number configured on a dial plan or when they call a telephone number configured on an auto attendant. This topic discusses the DTMF interface and how it's used by callers to locate users and to navigate the UM voice mail menu system.

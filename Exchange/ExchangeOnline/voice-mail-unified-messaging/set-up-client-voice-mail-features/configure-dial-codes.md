@@ -18,6 +18,9 @@ manager: serdars
 
 # Configure dial codes in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You can configure dial codes, number prefixes, and number formats that are used by Unified Messaging to dial incoming and outgoing calls for users who are enabled for UM. In most cases, you'll configure a dial plan with the dial codes, prefixes, and number formats currently configured on your telephony network.
 
 Dial codes and number prefixes are used to determine the correct number to dial for an outgoing call that's placed by a UM-enabled user. Outdialing is the term used to describe the process by which a user in a UM dial plan initiates an outgoing call. Number formats are used for incoming calls within a country or region, international calls, or calls that are placed within a dial plan. You can configure a dial plan to match the incoming call number format for both in-country/region and international numbers. When you configure the in-country/region and international number formats, you can restrict incoming calls for users linked with a dial plan.

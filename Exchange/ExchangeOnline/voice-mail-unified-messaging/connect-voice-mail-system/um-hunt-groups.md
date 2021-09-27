@@ -18,6 +18,9 @@ manager: serdars
 
 # UM hunt groups in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
  A telephony hunt group provides a way to distribute telephone calls from a single number to multiple extensions or telephone numbers. In Unified Messaging (UM), a UM hunt group is a logical representation of a telephony hunt group, and it links a UM IP gateway to a UM dial plan.
 
 Looking for management tasks related to Unified Messaging hunt groups? See [UM hunt group procedures](um-hunt-group-procedures.md).

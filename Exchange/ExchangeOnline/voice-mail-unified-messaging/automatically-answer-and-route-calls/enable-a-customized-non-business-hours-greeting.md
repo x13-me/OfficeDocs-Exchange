@@ -18,6 +18,9 @@ manager: serdars
 
 # Enable a customized non-business hours greeting in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You can enable a customized non-business hours greeting for a Unified Messaging (UM) auto attendant. The non-business hours greeting is the first thing callers hear when a UM auto attendant answers their call during non-business hours. You'll probably want to customize the greeting.
 
 Unified Messaging includes a default system prompt for use during non-business hours. Although the default system prompt mustn't be replaced or changed, you may want to provide an customized greeting. You can create a customized greeting in the .wav or .wma file format to be used when callers call in to a UM auto attendant during non-business hours. For example, "You've reached Woodgrove Bank after hours."

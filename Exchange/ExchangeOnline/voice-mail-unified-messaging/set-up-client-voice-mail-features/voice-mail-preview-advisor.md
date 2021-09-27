@@ -18,6 +18,9 @@ manager: serdars
 
 # Voice Mail Preview advisor in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 Microsoft Exchange Unified Messaging (UM) includes a feature called Voice Mail Preview, which uses automatic speech recognition (ASR) to add a text version of the voice mail audio file to voice mail messages. ASR isn't entirely accurate, especially when it's used to record audio over a phone that contains unknown voices and noises. Some organizations require consistently error-free (or near-error-free) transcripts of voice messages. The Voice Mail Preview Partner program can help such organizations meet those requirements.
 
 Voice Mail Preview uses Microsoft speech technologies to provide a text version of audio recordings. The voice mail text is displayed in email messages within Outlook on the web (formerly known as Outlook Web App), Outlook 2010 or later versions, and other email programs.
