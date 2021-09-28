@@ -24,7 +24,7 @@ Critical product updates are packages that address a Microsoft-released security
 
 ::: moniker range="exchserver-2019"
 
-To get the latest version of Exchange 2019, download and install [Cumulative Update 10 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=aa0d4c7c-526f-4a1a-924c-b534839f0001). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
+To get the latest version of Exchange 2019, download and install [Cumulative Update 11 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=a7d608a2-d81b-46af-8753-8c3c2ea1f783). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
 
@@ -34,6 +34,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |Version|Blog post|
 |---|---|
+|Exchange 2019 CU11|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/2779883)|
 |Exchange 2019 CU10|[Released: June 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2021-quarterly-exchange-updates/ba-p/2459826)|
 |Exchange 2019 CU9|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2019 CU8|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|
@@ -43,7 +44,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2019 CU4|[Released: December 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-December-2019-Quarterly-Exchange-Updates/ba-p/1068848)|
 |Exchange 2019 CU3|[Released: September 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-September-2019-Quarterly-Exchange-Updates/ba-p/853699)|
 |Exchange 2019 CU2|[Released: June 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2019-Quarterly-Exchange-Updates/ba-p/698398)|
-|Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)||
+|Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-February-2019-Quarterly-Exchange-Updates/ba-p/609061)|
 |Exchange 2019 RTM|[Exchange Server 2019 Now Available](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Exchange-Server-2019-Now-Available/ba-p/608610)|
 |
 
@@ -52,7 +53,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 21 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=88e4107e-a9a6-4847-959d-98e6e5d46f4a). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 22 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=a7d608a2-d81b-46af-8753-8c3c2ea1f783). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
@@ -62,6 +63,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |Version|Blog post|
 |---|---|
+|Exchange 2016 CU22|[Released: September 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2021-quarterly-exchange-updates/ba-p/2779883)|
 |Exchange 2016 CU21|[Released: June 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2021-quarterly-exchange-updates/ba-p/2459826)|
 |Exchange 2016 CU20|[Released: March 2021 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-quarterly-exchange-updates/ba-p/2205283)|
 |Exchange 2016 CU19|[Released: December 2020 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2020-quarterly-exchange-updates/ba-p/1976527)|

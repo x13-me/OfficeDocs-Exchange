@@ -216,6 +216,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2019 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2019 CU11|17003|13242|16759|
 |Exchange 2019 CU10|17003|13241|16758|
 |Exchange 2019 CU9|17002|13240|16757|
 |Exchange 2019 CU8|17002|13239|16756|
@@ -242,6 +243,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2016 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2016 CU22|15334|13242|16222|
 |Exchange 2016 CU21|15334|13241|16221|
 |Exchange 2016 CU20|15333|13240|16220|
 |Exchange 2016 CU19|15333|13239|16219|
