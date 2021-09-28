@@ -37,7 +37,7 @@ For more information about collaboration features in Exchange Server, see [Colla
 
 When one project member files mail or documents using the site mailbox, any project member can then access the content. Site mailboxes are surfaced in Outlook 2013 or later and give users easy access to the email and documents for the projects they care about. Additionally, the same set of content can be accessed directly from the SharePoint site itself. With site mailboxes, the content is kept where it belongs. Exchange stores the email, providing users with the same message view for email conversations that they use every day for their own mailboxes. Meanwhile, SharePoint stores the documents, bringing document coauthoring and versioning to the table. Exchange synchronizes enough metadata from SharePoint to create the document view in Outlook (for example, document title, last modified date, last modified author, size).
 
-![Site mailboxes storage and usage diagram](../media/ITPro_SiteMailbox_DataFlow.png)
+![Site mailboxes storage and usage diagram.](../media/ITPro_SiteMailbox_DataFlow.png)
 
 ## Site mailbox provisioning policies
 <a name="policies"> </a>

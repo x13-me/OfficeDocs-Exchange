@@ -51,7 +51,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 3. On the **Domains-** page, click **Add domain** to start the domain wizard.
 
-    ![Choose Add domain](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
+    ![Choose Add domain.](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
 
 4. On the **Add a domain** page, type in the domain name (for example, Contoso.com) you use for your on-premises Exchange organization, and then choose **Next**.
 
@@ -78,11 +78,11 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
 1. In the Microsoft 365 Admin center, go to **Setup** \> **Data migration**.
 
-    ![Go to Users \> Data migration in the admin center](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
+    ![Go to Users \> Data migration in the admin center.](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
 
 2. **Migration** page, under **Select your data service**, choose **Exchange**.
 
-    ![On the Migration page select Exchange as your data service](media/f8fe6289-9aa6-4bbe-9a8f-0f424405c0e6.png)
+    ![On the Migration page select Exchange as your data service.](media/f8fe6289-9aa6-4bbe-9a8f-0f424405c0e6.png)
 
 3. On the first **Hybrid Configuration Wizard** page, choose **next** and on the **On-premises Exchange Server Organization** page, accept the default values and choose **next**.
 
@@ -92,7 +92,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
 5. On the **Hybrid Features** page, select **Minimal Hybrid Configuration** \> **next**.
 
-    ![On the Hybrid Features page select Minimal Hybrid Configuration](media/40e3c3b9-5a95-4226-835f-eb99a23f9c18.png)
+    ![On the Hybrid Features page select Minimal Hybrid Configuration.](media/40e3c3b9-5a95-4226-835f-eb99a23f9c18.png)
 
 6. On the **Ready for Update** page, choose **update** to prepare the on-premises mailboxes for migration.
 
@@ -109,7 +109,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
 
     After the one-time synchronization is done, directory synchronization is turned off for your Microsoft 365 or Office 365 organization.
 
-![On the User Provisioning page select Synchronize my users and passwords one time](media/8595f8d4-70d1-48f9-8e20-5106936dc148.png)
+![On the User Provisioning page select Synchronize my users and passwords one time.](media/8595f8d4-70d1-48f9-8e20-5106936dc148.png)
 
 ## Step 4: Give Microsoft 365 or Office 365 licences to your users
 <a name="licences"> </a>
@@ -120,7 +120,7 @@ The status on the **Data migration** page indicates that a license is needed as 
 
 In the Admin center, go to **Users** \> **Active users** and follow these instructions to [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).
 
-![User status on the Data migration page indicate if a user needs a license](media/f0f211f2-be43-493e-bf6b-e9279c76d03e.png)
+![User status on the Data migration page indicate if a user needs a license.](media/f0f211f2-be43-493e-bf6b-e9279c76d03e.png)
 
 ## Step 5: Start migrating user mailbox data
 <a name="migrate"> </a>
@@ -135,7 +135,7 @@ After you assign licences to your users you can go to the Data migration page to
 
     The Data migration page will display the migration status as it progresses. For a full list, see [Migration users status report](migration-users-status-report.md), which you can also view in the Exchange admin center.
 
-![The Data migration page displays migrations status for each user](media/e4433e1f-b071-4868-9b18-1ebca0d7c21e.png)
+![The Data migration page displays migrations status for each user.](media/e4433e1f-b071-4868-9b18-1ebca0d7c21e.png)
 
 ## Step 6: Update DNS records
 <a name="DNS"> </a>

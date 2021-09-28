@@ -60,13 +60,13 @@ Not all mailbox permissions are fully supported in an Exchange hybrid environmen
 
   1. Go to **File** > **Account Settings** > **Delegate Access**
 
-     ![Delegate Access setting in Outlook](media/Private_Item_Menu1.png)
+     ![Delegate Access setting in Outlook.](media/Private_Item_Menu1.png)
 
   2. On the next window, click on **Add**. A new menu appears to list the people in your organization. Select a delegate and click **OK**.
 
   3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 
-     ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
+     ![Delegate can see my private items setting in Outlook.](media/Private_Item_Menu2.png)
      
 For more information, see [Overview of delegation in an Office 365 hybrid environment](/exchange/troubleshoot/delegates/overview-delegation-office-365-hybrid).
 

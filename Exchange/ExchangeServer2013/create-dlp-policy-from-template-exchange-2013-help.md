@@ -52,10 +52,10 @@ Once you have started enforcing a policy, you can learn about how to observe the
 
 ## Use the EAC to configure a DLP policy from a template
 
-1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
     > [!NOTE]
-    > You can also select this action if you click the arrow next to the **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) icon and select **New DLP policy from template** from the drop down menu.
+    > You can also select this action if you click the arrow next to the **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) icon and select **New DLP policy from template** from the drop down menu.
 
 2. On the **Create a new DLP policy from a template** page, complete the following fields:
 

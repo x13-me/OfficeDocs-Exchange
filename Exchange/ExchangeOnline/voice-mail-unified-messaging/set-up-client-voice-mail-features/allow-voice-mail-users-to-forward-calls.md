@@ -18,6 +18,9 @@ manager: serdars
 
 # Allow voice mail users to forward calls in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 The Call Answering Rules feature was first introduced in Exchange 2010. Using this feature, users who are enabled for voice mail can control how their incoming calls should be handled. Call answering rules are applied to incoming calls similar to the way Inbox rules are applied to incoming email messages.
 
 Call answering rules are created and configured by a voice mail-enabled user using Outlook or Outlook on the web (formerly known as Outlook Web App). The rules are stored along with other voice settings in the user's mailbox. A total of nine call answering rules can be set up for each UM-enabled mailbox. These rules are independent of the Inbox rules that are set up by users, and don't take up part of the Inbox rules storage quota for the user.

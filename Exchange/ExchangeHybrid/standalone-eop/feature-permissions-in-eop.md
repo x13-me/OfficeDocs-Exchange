@@ -36,7 +36,7 @@ To make it easier to assign roles to users, standalone EOP uses role groups. Man
 
 The following figure shows the relationship between users, role groups, and roles.
 
-![Role, role group and member relationship](../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
+![Role, role group and member relationship.](../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
 The available role groups in standalone EOP are described in the following table.
 
@@ -148,7 +148,7 @@ Users can be granted administrative rights in EOP without adding them to Microso
 
 To verify that you've successfully copied a role group, do either of the following steps:
 
-- In the EAC, go to **Permissions** \> **Admin Roles**, and verify the role group is listed (or not listed). Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png) to verify the settings.
+- In the EAC, go to **Permissions** \> **Admin Roles**, and verify the role group is listed (or not listed). Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon.](../media/ITPro-EAC-EditIcon.png) to verify the settings.
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the role group exists (or doesn't exist) and verify the settings:
 

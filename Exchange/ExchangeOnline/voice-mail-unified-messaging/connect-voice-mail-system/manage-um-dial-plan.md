@@ -20,6 +20,9 @@ manager: serdars
 
 # Manage a UM dial plan in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
 
 For additional management tasks related to UM dial plans, see [UM dial plan procedures in Exchange Online](um-dial-plan-procedures.md).
@@ -41,7 +44,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Dial Plan** page, click **Configure**. Use the configuration options to view specific dial plan settings and to enable or disable features as described in the following steps.
 
@@ -103,7 +106,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
    - **Number formats for incoming calls within the same dial plan**: Use this field to add or remove a number format for incoming calls that are placed between users in the same dial plan. This field accepts both numbers and the letter "x" as a wild card character. No other letters can be used in this field.
 
-     For incoming calls within the same dial plan add a number format. For example, to add a number format for 5-digit extensions, enter, 142570xxxxx and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a number format, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+     For incoming calls within the same dial plan add a number format. For example, to add a number format for 5-digit extensions, enter, 142570xxxxx and click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). To remove a number format, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
 6. **Outlook Voice Access**: Use this page to configure Outlook Voice Access settings for the UM dial plan. Outlook Voice Access enables users to access their individual mailboxes to retrieve email, voice messages, contacts, and calendaring information using a telephone. You can view or configure the following:
 
@@ -127,7 +130,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
      When you configure this number on the dial plan, this number will be displayed in Microsoft Office Outlook 2007 or later versions and Outlook on the web (formerly known as Outlook Web App) for voice mail options.
 
-     To add a new Outlook Voice Access number, enter the number in the box and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove an Outlook Voice Access number, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+     To add a new Outlook Voice Access number, enter the number in the box and click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). To remove an Outlook Voice Access number, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
 7. **Settings**: Use this page to configure dial plan settings for Unified Messaging. When you configure settings on this page, you can control how Outlook Voice Access users and external callers calling into an auto attendant linked to the dial plan locate users in your organization, the audio codec that is used for voice mail messages, the number of sign-in failures, and time-out values. You can configure the following:
 
@@ -226,7 +229,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 8. **Dialing rules**: Use this page to specify dialing rules for in-country/region and international calls placed by UM-enabled users. Each entry defined on the dialing rule determines the types of calls that users within a specific dialing rule group can make. After you use the **Dialing rules** page to configure dialing rules, you must configure the UM dial plan, a UM mailbox policy, or a UM auto attendant to use the appropriate dialing rule. After you configure the UM mailbox policy to use a dialing rule group, the dialing restrictions configured apply to all UM-enabled users who are associated with the UM mailbox policy. For example, you can configure a dialing rule group that doesn't require users who are associated with the dial plan to dial an outside line access code when they place a call to an in-country/region telephone number. You can configure the following:
 
-   - **In-country/region dialing rules**: Use this box to add, remove, or edit in-country/region dialing rule groups used by UM mailbox policies. To create a dialing rule, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To edit an existing dialing rule, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove a dialing rule, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). When you create a dialing rule, add the following information on the **New dialing rule** page:
+   - **In-country/region dialing rules**: Use this box to add, remove, or edit in-country/region dialing rule groups used by UM mailbox policies. To create a dialing rule, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). To edit an existing dialing rule, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove a dialing rule, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). When you create a dialing rule, add the following information on the **New dialing rule** page:
 
    - **Dialing rule name**: Use this text box to enter the name for the dialing rule you are creating. You can use the same name to collect several rules in a group and then enable or disable them under **Dialing authorization**. The name can be up to 32 characters long.
 

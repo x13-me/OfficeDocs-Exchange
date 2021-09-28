@@ -61,7 +61,7 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. Click **New** ![New icon](../media/ITPro-EAC-AddIcon.png), and then select one of the following options:
+2. Click **New** ![New icon.](../media/ITPro-EAC-AddIcon.png), and then select one of the following options:
 
    - **Distribution group**
 
@@ -79,15 +79,15 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 
    - <sup>\*</sup>**Owners**: A group owner can manage group membership. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
-     To add owners, click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+     To add owners, click **Add** ![Add icon.](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove an owner, select the owner, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+     To remove an owner, select the owner, and then click **Remove** ![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif).
 
    - **Members**: Add and remove group members.
 
-     To add members, click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+     To add members, click **Add** ![Add icon.](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-     To remove a member, select the member, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+     To remove a member, select the member, and then click **Remove** ![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif).
 
 4. When you're finished, click **Save** to create the distribution group.
 
@@ -95,7 +95,7 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution group or mail-enabled security group that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png).
+2. In the list of groups, select the distribution group or mail-enabled security group that you want to modify, and then click **Edit** ![Edit icon.](../media/ITPro-EAC-AddIcon.png).
 
 3. On the distribution group properties page that opens, click one of the following tabs to view or change properties.
 
@@ -119,23 +119,23 @@ Use this tab to view or change basic information about the group.
 
 Use this tab to assign group owners. A group owner can manage group membership. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
-To add owners, click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+To add owners, click **Add** ![Add icon.](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-To remove an owner, select the owner, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+To remove an owner, select the owner, and then click **Remove** ![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif).
 
 #### Membership
 
 Use this tab to add or remove group members. Group owners don't need to be members of the group.
 
-To add members, click **Add** ![Add icon](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
+To add members, click **Add** ![Add icon.](../media/ITPro-EAC-AddIcon.png). In the dialog that appears, find and select a recipient or group, and then click **add ->**. Repeat this step as many times as necessary. When you're finished, click **OK**.
 
-To remove a member, select the member, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+To remove a member, select the member, and then click **Remove** ![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif).
 
 ### Use the EAC to remove groups
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the distribution group that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+2. In the list of groups, select the distribution group that you want to remove, and then click **Remove** ![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif).
 
 ## Use PowerShell to manage groups
 
@@ -229,7 +229,7 @@ For detailed syntax and parameter information, see [Remove-EOPDistributionGroup]
 
 To verify that you've successfully created, modified, or removed a distribution group or a mail-enabled security group, do any of the following steps:
 
-- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed), and verify the **Group Type** value. Select the group and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png) to view the settings.
+- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed), and verify the **Group Type** value. Select the group and view the information in the Details pane, or click **Edit** ![Edit icon.](../media/ITPro-EAC-AddIcon.png) to view the settings.
 
 - In standalone EOP PowerShell, run the following command to verify the group is listed (or isn't listed):
 

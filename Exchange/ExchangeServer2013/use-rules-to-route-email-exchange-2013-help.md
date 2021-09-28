@@ -25,7 +25,7 @@ If your list of words or phrases is short, you can create a rule using the Excha
 
 This example blocks messages with common typos.
 
-![Rule showing blocking a message based on text patterns](images/a8489cbb-be59-4890-ae30-1431703eeb88.png)
+![Rule showing blocking a message based on text patterns.](images/a8489cbb-be59-4890-ae30-1431703eeb88.png)
 
 ## Example 2: Use a long list of unacceptable words
 <a name="longlist"> </a>

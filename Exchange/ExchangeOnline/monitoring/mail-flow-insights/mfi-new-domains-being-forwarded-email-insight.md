@@ -19,11 +19,11 @@ Although you might have valid business reasons to forward email messages to exte
 
 The **New domains being forwarded email** insight in the Insights dashboard in the new Exchange admin center (new EAC) notifies you when users in your organization are forwarding messages to new domains.
 
-![New domains being forwarded email insight in the Insights dashboard](../../media/mfi-new-domains-being-forwarded-email-insight.png)
+![New domains being forwarded email insight in the Insights dashboard.](../../media/mfi-new-domains-being-forwarded-email-insight.png)
 
 When you click **View details**, a flyout appears where you can find more details about the forwarded messages, including a link to the [Auto forwarded messages report](../mail-flow-reports/mfr-auto-forwarded-messages-report.md) for more information.
 
-![Details flyout that appears after clicking View details in the New domains being forwarded email insight](../../media/mfi-new-domains-being-forwarded-email-insight-details.png)
+![Details flyout that appears after clicking View details in the New domains being forwarded email insight.](../../media/mfi-new-domains-being-forwarded-email-insight-details.png)
 
 To prevent automatic message forwarding to external domains, configure a remote domain for some or all external domains. For more information, see [Manage remote domains in Exchange Online](../../mail-flow-best-practices/remote-domains/manage-remote-domains.md).
 

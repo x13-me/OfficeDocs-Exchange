@@ -18,6 +18,9 @@ manager: serdars
 
 # Create dialing rules for users in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 Dialing rule groups consist of dialing rule entries. Dialing rules are used to modify a phone number before sending it to an on-premises telephone system (PBX) or IP PBX for outgoing calls. Dialing rules serve two purposes:
 
 - They specify the numbers that can be dialed for outgoing calls. When you create a dialing rule, you specify the number formats that can be dialed. Any number that doesn't match one of the formats you specified is rejected. If you don't set any dialing rules, callers can place calls within your organization but can't make any outgoing calls.
@@ -59,11 +62,11 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Use the EAC to create a dialing rule
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
+3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
 
 4. On the **New Dialing Rule** page, enter the following information:
 

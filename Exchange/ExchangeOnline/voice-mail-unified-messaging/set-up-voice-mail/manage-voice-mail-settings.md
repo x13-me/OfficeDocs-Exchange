@@ -18,6 +18,9 @@ manager: serdars
 
 # Manage voice mail settings for a user in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You can view or set the Unified Messaging (UM) and voice mail features and configuration settings for a user that's been enabled for UM and voice mail. For example, you can do the following:
 
 - Reset their Outlook Voice Access PIN.
@@ -74,9 +77,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
 
-   - To add an extension number, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
+   - To add an extension number, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
 
-   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 6. If you make any changes, click **Save**.
 

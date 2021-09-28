@@ -100,7 +100,7 @@ Every Send connector needs to be configured with one of these options:
 
 When you select DNS resolution to deliver mail, the source Exchange server for the Send connector must be able to resolve the MX records for the address spaces that are configured on the connector. Depending on the nature of the connector, and how many network adapters are in the server, the Send connector could require access to an internal DNS server, or an external (public) DNS server. You can configure the server to use specific DNS servers for internal and external DNS lookups:
 
-- In the EAC at **Servers** \> **Server** \> select the server and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **DNS lookups** tab.
+- In the EAC at **Servers** \> **Server** \> select the server and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) \> **DNS lookups** tab.
 
 - In the Exchange Management Shell, you use the _ExternalDNS\*_ and _InternalDNS\*_ parameters on the **Set-TransportService** cmdlet.
 

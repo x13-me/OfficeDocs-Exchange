@@ -134,6 +134,8 @@ When you use one of these options, you don't need to restart the computer after 
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
       > [!NOTE]
+      > Make sure to use the Unified Communications Managed API 4.0 until something else is communicated by the Exchange team.
+      >
       > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
 
 3. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the one of the following commands in Windows PowerShell:

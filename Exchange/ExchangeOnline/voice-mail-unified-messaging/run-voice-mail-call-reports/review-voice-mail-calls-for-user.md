@@ -18,6 +18,9 @@ manager: serdars
 
 # Review the voice mail calls for a user in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 User call logs are used to view the following information about specific Unified Messaging (UM) users:
 
 - Details about the UM calls for a user over the last 90 days.
@@ -28,7 +31,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## How do I get call logs for a UM-enabled user?
 
-1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
+1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon.](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
 
 2. Click **Select a user**, and then select the user you want data for.
 

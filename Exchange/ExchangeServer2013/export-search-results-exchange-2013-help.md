@@ -60,7 +60,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 2. In the list view, select the In-Place eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-    ![Export to a PST File](images/ExportToPSTFile.gif)
+    ![Export to a PST File.](images/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 

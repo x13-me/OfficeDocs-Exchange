@@ -20,7 +20,7 @@ description: "Admins can learn how to use the Email issues for priority accounts
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:
 >
 > - At least 5,000 licenses for one or more of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5. For example, 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5 licenses.
-> - At least 50 monthly active Exchange Online users.
+> - Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, One Drive for Business, SharePoint Online, Exchange Online and Office apps
 >
 > For permissions that are required to use this report, see [Permissions required to view mail flow reports](mail-flow-reports.md#permissions-required-to-view-mail-flow-reports).
 
@@ -36,9 +36,9 @@ The **Unhealthy email status** section shows the following information about mes
 - **Subject**
 - **Status**: The value is **Failed** or **Delayed**.
 
-To quickly filter the results by recipient, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing the recipient's email address.
+To quickly filter the results by recipient, click **Search** ![Search icon.](../../media/modern-eac-search-icon.png) and start typing the recipient's email address.
 
-For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
+For more advanced filters that you can also save and use later, click **Filter** ![Filter icon.](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 
 - **Name your filter**: Enter a unique name.
 - Click **Add new clause**. A clause contains the following elements that you need to enter:
@@ -48,15 +48,15 @@ For more advanced filters that you can also save and use later, click **Filter**
 
   You can click **Add new clause** as many times as you need. Multiple clauses use AND logic (\<Clause1\> AND \<Clause2\>...).
 
-  To remove a clause, click **Remove** ![Remove icon](../../media/modern-eac-remove-icon.png)
+  To remove a clause, click **Remove** ![Remove icon.](../../media/modern-eac-remove-icon.png)
 
   When you're finished, click **Save**. The new filter is automatically loaded, and the results are changed based on the filter. This is the same result as clicking **Filter** and selecting the customer filter from the list.
 
-  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
+  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon.](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
 
 Select an entry in the list to be taken to the [message trace](../../monitoring/trace-an-email-message/message-trace-modern-eac.md) search results for the message. Select the message trace entry to view details about the message and what happened to it.
 
-![Message trace detail in message trace in the new EAC](../../media/mfr-priority-users-message-trace-detail.png)
+![Message trace detail in message trace in the new EAC.](../../media/mfr-priority-users-message-trace-detail.png)
 
 > [!NOTE]
 > For the following procedures, you need to be a Security Reader to see the alerts, and a Security Administrator to edit the policy.

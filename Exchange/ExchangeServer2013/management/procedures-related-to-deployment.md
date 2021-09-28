@@ -31,7 +31,7 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 3. Make sure that all of your Exchange servers show **Healthy**.
 
-   ![Healthy agents in SCOM console](images/Dn195909.7d1ff0bb-419e-40dc-babf-5fa2fb7229a8(EXCHG.150).png "Healthy agents in SCOM console")
+   ![Healthy agents in SCOM console.](images/Dn195909.7d1ff0bb-419e-40dc-babf-5fa2fb7229a8(EXCHG.150).png "Healthy agents in SCOM console")
 
 ## Verify agent proxy configuration
 

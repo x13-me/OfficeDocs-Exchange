@@ -18,6 +18,9 @@ manager: serdars
 
 # Voice mail for users in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 With Unified Messaging (UM), users in an Exchange organization can receive all their email and voice messages in one mailbox. The Unified Messaging functionality and voice mail features increase user productivity and enable more flexible messaging throughout an organization.
 
 When you're adding a user to your organization, you're given the option of creating a mailbox or connecting the user to an existing mailbox. After the mailbox is created for the user or the user is connected to an existing mailbox, you can enable the mailbox for Unified Messaging so the user can use the voice mail system and the features included with voice mail. After the user is enabled for Unified Messaging, all email, voice mail, and fax messages will be delivered to the user's mailbox. By using Microsoft Office Outlook 2007 or later versions, Outlook Web App, a mobile phone enabled for Microsoft Exchange ActiveSync, or a regular or mobile phone, users can access their email, voice messages, personal contacts, and calendaring information.

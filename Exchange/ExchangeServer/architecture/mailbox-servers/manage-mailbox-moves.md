@@ -58,7 +58,7 @@ To create new local move requests in the Exchange Management Shell, you only use
 
 ### Use the EAC to create a local move request
 
-1. In the EAC, go to **Recipients** \> **Migration** \> click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), and then select **Move to a different database**.
+1. In the EAC, go to **Recipients** \> **Migration** \> click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png), and then select **Move to a different database**.
 
 2. The **New local mailbox move** wizard opens. On the **Select users** page, configure one of these options:
 
@@ -66,9 +66,9 @@ To create new local move requests in the Exchange Management Shell, you only use
 
      **Note**: Even if you're only interested in moving a user's archive mailbox, you select the user's primary mailbox.
 
-     - Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one or more mailboxes. When you're finished, click **OK**.
+     - Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select Mailbox** dialog box that appears, select one or more mailboxes. When you're finished, click **OK**.
 
-     - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
+     - To remove mailboxes from the list, select the mailbox, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png).
 
    - **Specify the users with a CSV file**: Click **Browse** and go to the location of the comma-separated value (CSV) file that specifies the mailboxes to move. For more information about the CSV file requirements for local move requests, see [CSV Files for Mailbox Migration](../../../ExchangeServer2013/csv-files-for-mailbox-migration-exchange-2013-help.md).
 
@@ -239,13 +239,13 @@ New-MigrationBatch -Local -AutoStart -AutoComplete -Name "LocalMove 01" -CSVData
 
 To verify that you've successfully created a local move request, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Migration** and verify the status of the move request (note that you might need to click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)). You can select the move request, and see more information in the details pane, or by clicking **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+- In the EAC, go to **Recipients** \> **Migration** and verify the status of the move request (note that you might need to click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png)). You can select the move request, and see more information in the details pane, or by clicking **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
 - In the EAC, go to **Recipients** \> **Migration** and click **Status For All Batches**.
 
 - Check the notification message. The sender is Microsoft Outlook. When the move request is complete, you'll get a message with the subject `Migration batch <MigrationBatchName> has completed successfully`.
 
-- In the EAC, click the notification viewer ![Notifications icon](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
+- In the EAC, click the notification viewer ![Notifications icon.](../../media/6f2591b8-d0dc-4665-ab0b-b91a549e5b37.png) to view the status of the request.
 
 - In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the name, email address, or alias of the mailbox, and run this command to verify the basic property values:
 

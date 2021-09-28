@@ -36,7 +36,7 @@ Standard journaling is configured on a mailbox database. It enables the Journali
 
 ### Use the EAC to create a journal rule
 
-1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. In **Journal rule**, provide a name for the journal rule and then compete the following fields:
 
@@ -164,7 +164,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
-2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 ### Use the Shell to remove a journal rule
 

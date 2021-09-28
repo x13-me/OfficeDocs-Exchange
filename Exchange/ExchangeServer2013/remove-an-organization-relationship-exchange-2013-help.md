@@ -33,7 +33,7 @@ Before you can share calendars with another organization, you have to set up an 
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to remove organization relationship.
+2. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to remove organization relationship.
 
 3. In the warning that appears, click **yes**.
 

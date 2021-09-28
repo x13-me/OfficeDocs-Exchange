@@ -113,7 +113,7 @@ The following procedure shows how to disable a user mailbox. Use the same proced
 
 2. In the list of user mailboxes, click the mailbox that you want to disable.
 
-3. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
+3. Click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
 4. A warning appears asking if you're sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
 
@@ -181,7 +181,7 @@ The following procedure shows how to delete a user mailbox. Use the same procedu
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. A warning appears asking if you're sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
 
