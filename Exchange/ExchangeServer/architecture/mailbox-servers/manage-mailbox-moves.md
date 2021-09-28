@@ -20,10 +20,9 @@ manager: serdars
 
 In Exchange Server, users' primary mailboxes and archive mailboxes can reside on different databases. A *move request* is the process of moving a mailbox from one mailbox database to another. A *local move request* is a mailbox move that occurs within a single Active Directory forest (as opposed to a remote move request that occurs between Active Directory forests). You use the procedures in this topic for local move requests of primary mailboxes, archive mailboxes, or both in on-premises. Using the move request functionality, you can move the primary mailbox and the associated archive to the same database or to separate ones.
 
-The following two components process your move request to move mailboxes:
+The following components process your move request to move mailboxes:
 
 - Microsoft Exchange Mailbox Replication Service (MRS)
-
 - Mailbox Replication Service Proxy (MRS Proxy)
 
 The procedures in this topic will help you with on-premises mailbox moves. You can use the Exchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
