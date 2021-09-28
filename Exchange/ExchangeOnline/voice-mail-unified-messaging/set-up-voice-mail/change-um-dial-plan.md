@@ -18,6 +18,9 @@ manager: serdars
 
 # Change the UM dial plan in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You may need to move a user who is enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan that's associated with the user. For example, you might want to move a UM-enabled user from a Telephone Extension dial plan to a SIP URI dial plan.
 
 To change the UM dial plan, you'll have to disable the user for Unified Messaging and then enable the user for Unified Messaging on the new UM dial plan. This is because different dial plans may have different settings and requirements, such as different extension lengths or different URI types. For example, SIP URI dial plans require a SIP Resource Identifier to be assigned to each UM-enabled mailbox, but Telephone Extension dial plans don't. Also, each UM mailbox contains references to both the UM dial plan and the UM mailbox policy. The UM mailbox policy, in turn, contains references to the UM dial plan. If you change the primary proxy address for a UM-enabled user to point to a different dial plan, the UM mailbox is in an inconsistent state.

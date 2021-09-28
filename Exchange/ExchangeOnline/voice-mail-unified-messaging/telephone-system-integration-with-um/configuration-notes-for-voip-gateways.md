@@ -18,6 +18,9 @@ manager: serdars
 
 # Configuration notes for supported VoIP gateways, IP PBXs, and PBXs in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 This page provides links to configuration notes that have been created and tested by Microsoft or a VoIP gateway partner. When Microsoft or a partner deploys Unified Messaging with a new VoIP gateway and PBX or IP PBX configuration, the prerequisites and configuration settings are documented. This information is used to create a configuration note.
 
 Each PBX configuration note contains information about how to deploy Unified Messaging with a specific telephony configuration, and includes the manufacturer, model, and firmware version for the VoIP gateways, IP PBXs, or PBXs. In addition, each PBX configuration note includes other information, such as:
