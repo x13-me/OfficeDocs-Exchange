@@ -61,8 +61,8 @@ The following table lists the SMTP events in order of occurrence and the agents 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -136,8 +136,8 @@ The agent log stores each agent transaction on a single line in the log. The inf
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
