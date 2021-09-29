@@ -18,6 +18,9 @@ manager: serdars
 
 # Configuration notes for supported session border controllers in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter.
 
 SBCs require the use of digital certificates to encrypt all traffic between your on-premises organization and the Microsoft datacenter. You must obtain a digital certificate for the network border element, such as a session border controller, that you're using to communicate with Exchange hybrid and online deployments. Digital certificates establish trust between your on-premises organization and the Microsoft datacenter and enable mutual Transport Layer Security (mutual TLS). After this trust is established, the network border elements at your on-premises organization and at the Microsoft datacenter exchange session keys, and use these keys to encrypt the next data traffic.

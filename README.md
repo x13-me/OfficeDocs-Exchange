@@ -1,63 +1,72 @@
 # Overview
-A repository to hold the help content for Exchange Server, Exchange Online, and Outlook. The expert knowledge around Exchange is distributed amongst customers, MVPs, partners, product teams, support, and other community members. This open repo is designed to provide a mechanism for those that wish to contribute their knowledge back into the docs so others can benefit.
 
-## Learn How To Contribute
-Anyone who is interested can contribute to the topics. When you contribute your work will go directly into the content set after being merged. It will then show up on docs.microsoft.com and you will be listed as a contributor at: https://github.com/MicrosoftDocs/OfficeDocs-Exchange/graphs/contributors
+## Learn how to contribute
 
-### Contribute using the GitHub website
+Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then show up on docs.microsoft.com and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/OfficeDocs-Exchange/graphs/contributors>.
 
-**NOTE: The following guidance is for Office PowerShell but the same process applies for any Markdown document on GitHub.**
+### Quickly update an article using GitHub.com
 
-[![Image of Quick Start video.](README-media/edit_video_capture.jpg)](https://support.office.com/article/edit-powershell-cmdlet-in-github-dcd20227-3764-48ce-ad6e-763af8b48daf)
+Contributors who only make infrequent or small updates can edit the file directly on GitHub.com without having to install any additional software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
 
-1. Open your browser, login to GitHub, and then navigate to https://github.com/microsoftdocs/office-docs-powershell
-2. Browse to the file you want to edit. In this example we will edit https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/teams/teams-ps/teams/New-Team.md and add a link in the Related Links section.
-3. Click the Edit icon which looks like a pencil in the upper right corner. 
-![Image of Edit button on Github.](README-media/edit_icon.png)
+1. Make sure you're signed in to GitHub.com with your GitHub account.
+2. Go to the page you want to edit on docs.microsoft.com.
+3. On the right-hand side of the page, click **Edit** (pencil icon).
 
-4. Your browser will then open the file in an edit window. We want to add a link so we scroll down to the Related Links section and add the link in the correct format.
-![Image of Edit button on Github.](README-media/add_related_link.png)
+   ![Edit button on docs.microsoft.com.](README-media/quick-update-edit.png)
 
-**Note** Since you are likely not a maintainer of the Git repository GitHub will automatically 'Fork' the project into your personal GitHub account. A fork is just an exact copy of the repository in your own account so that you have total access to make edits. You are now 'editing' a copy of the project in your own GitHub account. You can always find it again by looking at your GitHub Repositories in your GitHub Profile (drop-down from your name in top right).
-![Image of Automatic Fork message on Github.](README-media/auto_fork.png)
+   > [!NOTE]
+   > If the **Edit** button isn't available, then public contributions to the topics in that content set are not allowed.
 
-5. You can click the Preview changes link to see what the changes will look like.
+4. The corresponding topic file on GitHub opens, where you need to click the **Edit this file** pencil icon.
 
-6. Once you are satisfied with your work, go to the **Propose file change** area at the bottom of the topic. Enter a title and other description information and then click **Propose file change**.
-![Image of Propose file change on Github.](README-media/propose_file_change.png)
+   ![Edit button on github.com.](README-media/quick-update-github.png)
 
-7. On the next screen, click **Create pull request**.
+5. The topic opens in a line-numbered editing page where you can make changes to the file. Files in GitHub are written and edited using Markdown language. For help on using Markdown, see [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Select the **Preview changes** tab to view your changes as you go.
 
+6. When you're finished making changes, go to the **Propose file change** section at the bottom of the page:
+
+   - A brief title is required. By default, the title is the name of the file, but you can change it.
+   - Optionally, you can enter more details in the **Add an optional extended description** box.
+
+   When you're ready, click the green **Propose file change** button.
+
+   ![Propose file change section.](README-media/propose-file-change.png)
+
+7. On the **Comparing changes** page that appears, click the green **Create pull request** button.
+
+   ![Comparing changes page.](README-media/comparing-changes-page.png)
+
+8. On the **Open a pull request** page that appears, click the green **Create pull request** button.
+
+   ![Open a pull request page.](README-media/open-a-pull-request-page.png)
+
+> [!NOTE]
+> Your permissions in the repo determine what you see in the last several steps. People with no special privileges will see the **Propose file change** section and subsequent confirmation pages as described. People with permissions to create and approve their own pull requests will see a similar **Commit changes** section with extra options for creating a new branch and fewer confirmation pages.
+>
+> The point is: click any green buttons that are presented to you until there are no more.
+
+The writer identified in the metadata of the topic will be notified and will eventually review and approve your changes so the topic will be updated on docs.microsoft.com. If there are questions or issues with the updates, the writer will contact you.
 
 ## Microsoft Open Source Code of Conduct
 
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
 ### Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit <https://cla.microsoft.com>.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g, label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
 
 ### Legal Notices
 
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the [LICENSE-CODE](LICENSE-CODE) file.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/.
+The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks. Microsoft's general trademark guidelines can be found at <https://go.microsoft.com/fwlink/?LinkID=254653>.
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Privacy information can be found at <https://privacy.microsoft.com/>
+
+Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel or otherwise.
