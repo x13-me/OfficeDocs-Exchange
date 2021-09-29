@@ -4,6 +4,7 @@ TOCTitle: Administrator audit log structure
 ms:assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms:mtpsurl: https://technet.microsoft.com/library/Ff459251(v=EXCHG.150)
 ms:contentKeyID: 50117644
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -27,9 +28,9 @@ Looking for management tasks related to Administrator audit logs? See [Manage ad
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

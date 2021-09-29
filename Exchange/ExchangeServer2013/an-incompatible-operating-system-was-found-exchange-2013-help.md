@@ -4,6 +4,7 @@ TOCTitle: An incompatible operating system was found
 ms:assetid: a3a948d9-4991-4088-9013-0a4c944295e4
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.validosversion(v=EXCHG.150)
 ms:contentKeyID: 49090988
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -26,8 +27,8 @@ Microsoft Exchange Server 2013 Setup can't continue because it detected an incom
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
