@@ -20,6 +20,11 @@ manager: serdars
 
 # Auditing reports in the Exchange admin center in Exchange Online
 
+> [!NOTE]
+> Classic Exchange admin center is in the process of being deprecated in the worldwide deployment. We recommend that you search the audit log in the Microsoft 365 compliance center. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358) and [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+
+Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated.
+
 Use audit logging to troubleshoot configuration issues by tracking specific changes made by admins and to help you meet regulatory, compliance, and litigation requirements. Exchange Online or standalone Exchange Online Protection (EOP) without Exchange Online mailboxes provides two types of audit logging:
 
 - **Admin audit logging**: Records any action, based on an Exchange Online PowerShell or standalone Exchange Online Protection PowerShell cmdlet, performed by an admin. These records can help you troubleshoot configuration issues or identify the cause of security-related or compliance-related problems. Actions performed by Microsoft datacenter administrators and delegated admins, are also recorded in Exchange Online.
