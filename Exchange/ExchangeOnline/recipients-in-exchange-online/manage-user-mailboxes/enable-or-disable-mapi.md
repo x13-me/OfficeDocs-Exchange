@@ -76,7 +76,7 @@ For additional management tasks related to managing email client access to a mai
 
 5. Click **Save** to save your change.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
 
@@ -102,7 +102,7 @@ Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
 
