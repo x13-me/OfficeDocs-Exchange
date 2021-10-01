@@ -210,8 +210,6 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
-<br>
-
 
 |Log Information|Description|
 |---|---|
