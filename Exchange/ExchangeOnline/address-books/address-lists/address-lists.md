@@ -48,7 +48,7 @@ By default, a new Exchange Online organization has a GAL named Default Global Ad
 
 - You can only use the Exchange Online PowerShell to create, modify, remove, and update GALs.
 
-- Users can only see a GAL that they belong to (the recipient filter of the GAL includes them). If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
+- If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
   - The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Online](../address-book-policies/address-book-policies.md).
   - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
   - Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Create an offline address book in Exchange Online](../offline-address-books/create-offline-address-book.md).
