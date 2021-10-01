@@ -53,7 +53,7 @@ This example installs a fictitious transport agent named Contoso Transport Agent
 Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully installed the transport agent, run the command `Get-TransportAgent` and confirm the transport agent is listed.
 
@@ -71,7 +71,7 @@ This example enables the transport agent named Contoso Transport Agent in the Tr
 Enable-TransportAgent "Contoso Transport Agent"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully enabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and confirm the transport agent is enabled.
 
@@ -89,7 +89,7 @@ This example disables the transport agent named Fabrikam Transport Agent in the 
 Disable-TransportAgent "Fabrikam Transport Agent"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully disabled a transport agent, run the command `Get-TransportAgent | Format-List Name,Enabled` and confirm the transport agent is disabled.
 
@@ -129,7 +129,7 @@ This example sets the priority agent value of 3 for the existing transport agent
 Set-TransportAgent "Contoso Transport Agent" -Priority 3
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured the priority of a transport agent, run the command `Get-TransportAgent | Format-List Name,Priority` and confirm the priority value of the transport agent.
 
@@ -149,6 +149,6 @@ This example uninstalls the transport agent named Fabrikam Transport Agent from 
 Uninstall-TransportAgent "Fabrikam Transport Agent"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully uninstalled the transport agent, run the command `Get-TransportAgent` and verify the transport agent isn't listed.
