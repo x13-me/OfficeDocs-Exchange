@@ -1972,7 +1972,6 @@ The following global catalog attributes are added by Exchange 2016 RTM:
 
 This section contains the attributes modified in Exchange 2016 RTM.
 
-
 |Attribute|Change|Value|
 |---|---|---|
 |`Exch-Configuration-Unit-Container`|`rangeUpper`|15254|

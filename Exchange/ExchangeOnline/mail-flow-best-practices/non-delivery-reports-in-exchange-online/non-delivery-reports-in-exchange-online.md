@@ -125,6 +125,7 @@ Original message headers
 <message header fields>
 ```
 
+
 |Field|Description|
 |:-----|:-----|
 |**Generating server**|This field indicates the name of the SMTP mail server that created the NDR. If no remote server is listed below the sender's email address, the generating server is also the server that rejected the original email message. When the remote mail server acknowledges and accepts the message, but later rejects the message, for example, because of content restrictions, the remote server generates the NDR. If the remote mail server never acknowledges and never accepts the message, the sending server in Exchange Online generates the NDR.|
