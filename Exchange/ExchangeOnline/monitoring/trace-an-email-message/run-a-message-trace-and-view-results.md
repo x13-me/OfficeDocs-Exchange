@@ -212,7 +212,6 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 
 <br>
 
-****
 
 |Log Information|Description|
 |---|---|

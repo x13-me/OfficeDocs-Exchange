@@ -2009,7 +2009,7 @@ This section contains the attributes modified in Exchange 2016 RTM.
 |`ms-Exch-Smtp-Receive-Tls-Certificate-Name`|Replace: `rangeUpper`|1024|
 |`ms-Exch-Smtp-TLS-Certificate`|replace: `rangeUpper`|1024|
 |`ms-Exch-Sync-Cookie`|`rangeUpper`|262144|
-|
+
 
 ### Object IDs added by Exchange 2016 RTM
 

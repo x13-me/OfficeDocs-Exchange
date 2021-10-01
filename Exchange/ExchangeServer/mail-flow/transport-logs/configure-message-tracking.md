@@ -101,7 +101,7 @@ This example disables message tracking on the Mailbox server named Mailbox01:
 Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 
