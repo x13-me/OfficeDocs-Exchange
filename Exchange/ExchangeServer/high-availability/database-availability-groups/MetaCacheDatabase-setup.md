@@ -139,11 +139,11 @@ This command sets the local state on each DAG member to allow/disallow MCDB popu
 **Examples**:
 
 ```
-Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $true -ServerName "exhs-5046"
+Manage-MCDB -DagName TestDag1 -ServerAllowMCDB:$true -ServerName "exhs-5046"
 ```
 
 ```
-Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $false -ServerName "exhs-5046" -ForceFailover $true
+Manage-MCDB -DagName TestDag1 -ServerAllowMCDB:$false -ServerName "exhs-5046" -ForceFailover $true
 ```
 
 ![MCDB run ServerAllowMCDB](../../media/mcdb2.png)
