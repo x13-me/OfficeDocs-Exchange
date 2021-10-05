@@ -37,7 +37,7 @@ The EM service can apply 3 types of mitigations:
 You have visibility and control over any applied mitigation by using PowerShell cmdlets and scripts.
 
 ### How does it work
-If Microsoft learns about a security threat, we may create and release a mitigation for the issue. In that event, the mitigation would besend from the OCS to the EM service as a signed XML file containing the configuration settings used to apply the mitigation. 
+If Microsoft learns about a security threat, we may create and release a mitigation for the issue. In that event, the mitigation would be sent from the OCS to the EM service as a signed XML file containing the configuration settings used to apply the mitigation. 
 
 After the EM service has been installed, it checks the OCS for available mitigations every hour. The EM service subsequently downloads the XML and validates the signature to verify that the XML was not tampered with by checking the issuer, the Extended Key Usage, and the certificate chain. After successful validation, the EM service applies the mitigation.
 
