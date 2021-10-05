@@ -1,12 +1,13 @@
 ---
 title: 'UM auto attendant procedures: Exchange 2013 Help'
 TOCTitle: UM auto attendant procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

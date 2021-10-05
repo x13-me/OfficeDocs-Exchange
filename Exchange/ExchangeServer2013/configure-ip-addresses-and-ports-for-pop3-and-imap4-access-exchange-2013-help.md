@@ -2,13 +2,14 @@
 title: 'Configure IP addresses and ports for POP3 and IMAP4 access: Exchange 2013 Help'
 TOCTitle: Configure IP addresses and ports for POP3 and IMAP4 access
 ms:assetid: 8292747b-6626-4d7f-ba73-1e17f5d99fa4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123530(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb123530(v=EXCHG.150)
 ms:contentKeyID: 50395401
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -32,7 +33,7 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Configure IP addresses and ports for POP3
 
@@ -40,11 +41,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **POP3**.
 
-4. Under **TLS or unencrypted connections**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **TLS or unencrypted connections**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 5. On the **Add IP address** page, under **IP address**, choose one of the following:
 
@@ -76,7 +77,7 @@ Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
 
 After you've set the IP address and port settings for POP3, you must restart the POP3 service for the settings to take effect. For information about how to restart the POP3 service, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/en-us/library/aa997154\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-PopSettings](/powershell/module/exchange/Set-PopSettings).
 
 ## How do you know this worked?
 
@@ -96,7 +97,7 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **IMAP4**.
 
@@ -132,7 +133,7 @@ Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port
 
 After you've set the IP address and port settings for IMAP4, you must restart the IMAP4 service for the settings to take effect. For information about how to restart the IMAP4 service, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/en-us/library/aa998252\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-ImapSettings](/powershell/module/exchange/Set-ImapSettings).
 
 ## How do you know this worked?
 

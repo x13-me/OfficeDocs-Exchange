@@ -2,15 +2,16 @@
 title: 'Manage DSN messages: Exchange 2013 Help'
 TOCTitle: Manage DSN messages
 ms:assetid: 23c9d844-6fc7-44c9-a308-587338281611
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996803(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996803(v=EXCHG.150)
 ms:contentKeyID: 49315373
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
-f1_keywords:
+ms.custom:
 - change system message
 - change rejection message
 - change quota message
@@ -34,7 +35,7 @@ Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provi
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the Shell to view built-in and custom DSN messages
 
@@ -170,7 +171,7 @@ To assign a mailbox to the Exchange recipient, perform the following steps:
 
 ## Use the EAC to specify the DSN codes
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
 
 2. In the **DNS codes** section, type the DSN codes you want to monitor using the format *\<x.y.z\>*, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Select an existing entry and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it, or click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. When you are finished, click **Save**.
 

@@ -2,13 +2,14 @@
 title: 'Understanding management role assignment policies: Exchange 2013 Help'
 TOCTitle: Understanding management role assignment policies
 ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638100(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638100(v=EXCHG.150)
 ms:contentKeyID: 49289200
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -41,7 +42,7 @@ The following figure shows each of the role assignment policy layers in the prec
 
 **Management role assignment policy model**
 
-![Role Assignment Model Relationships](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
+![Role Assignment Model Relationships.](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
 
 For more information about management roles, role assignments, and scopes, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
@@ -93,7 +94,7 @@ The following table lists the role assignment policy layer and the procedural to
 <tbody>
 <tr class="odd">
 <td><p>Mailbox</p></td>
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p>
+<td><p><a href="/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Manage user mailboxes</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Change the assignment policy on a mailbox</a></p></td>
 </tr>
 <tr class="even">

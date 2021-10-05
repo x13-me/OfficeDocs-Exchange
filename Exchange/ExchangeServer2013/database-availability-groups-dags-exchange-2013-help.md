@@ -2,13 +2,14 @@
 title: 'Database availability groups (DAGs): Exchange 2013 Help'
 TOCTitle: Database availability groups (DAGs)
 ms:assetid: ab9b88ce-2f44-4334-96ad-a666b95888a0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979799(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd979799(v=EXCHG.150)
 ms:contentKeyID: 48385432
-ms.date: 06/06/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ DAGs leverage the concept of *incremental deployment*, which is the ability to d
 > [!NOTE]
 > It's supported to create a DAG that contains a combination of physical Mailbox servers and virtualized Mailbox servers, provided that the servers and solution comply with the <A href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 system requirements</A> and the requirements set forth in <A href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 virtualization</A>. As with all Exchange high availability configurations, you must ensure that all Mailbox servers in the DAG are sized appropriately to handle the necessary workload during scheduled and unscheduled outages.
 
-A DAG is created by using the [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351107\(v=exchg.150\)) cmdlet. A DAG is initially created as an empty object in Active Directory. This directory object is used to store relevant information about the DAG, such as server membership information and some DAG configuration settings. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. This failover cluster is used exclusively by the DAG, and the cluster must be dedicated to the DAG. Use of the cluster for any other purpose isn't supported.
+A DAG is created by using the [New-DatabaseAvailabilityGroup](/powershell/module/exchange/New-DatabaseAvailabilityGroup) cmdlet. A DAG is initially created as an empty object in Active Directory. This directory object is used to store relevant information about the DAG, such as server membership information and some DAG configuration settings. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. This failover cluster is used exclusively by the DAG, and the cluster must be dedicated to the DAG. Use of the cluster for any other purpose isn't supported.
 
 In addition to a failover cluster being created, the infrastructure that monitors the servers for network or server failures is initiated. The failover cluster heartbeat mechanism and cluster database are then used to track and manage information about the DAG that can change quickly, such as database mount status, replication status, and last mounted location.
 
@@ -71,11 +72,11 @@ Then, EX2 is added, and the **Add-DatabaseAvailabilityGroupServer** cmdlet again
 
 Then, EX3 is added, and the **Add-DatabaseAvailabilityGroupServer** cmdlet again retrieves the IP addresses configured for the DAG. Because a subnet matching 192.168.0.5 is present on EX3, the 192.168.0.5 address is added as an IP address resource in the cluster group. In addition, an **OR** dependency for the Network Name resource for each IP address resource is automatically configured. The 192.168.0.5 address will be used by the cluster when the cluster core resource group moves to EX3.
 
-For DAGs with cluster administrative access points, Windows failover clustering registers the IP addresses for the cluster in the Domain Name System (DNS) when the Network Name resource is brought online. In addition, when EX1 is added to the cluster, a cluster name object (CNO) is created in Active Directory. The network name, IP address(es), and CNO for the cluster are not used for DAG functions. Administrators and end users don't need to interface with or connect to the cluster/DAG name or IP address for any reason. Some third party applications connect to the cluster administrative access point to perform management tasks, such as backup or monitoring. If you do not use any third party applications that require a cluster administrative access point, and your DAG is running Exchange 2013 SP1 or later on Windows Server 2012 R2, then we recommend creating a DAG without an administrative access point. This simplifies DAG configuration, eliminates the need for one or more IP addresses, and reduces the attack surface of a DAG.
+For DAGs with cluster administrative access points, Windows failover clustering registers the IP addresses for the cluster in the Domain Name System (DNS) when the Network Name resource is brought online. In addition, when EX1 is added to the cluster, a cluster name object (CNO) is created in Active Directory. The network name, IP address(es), and CNO for the cluster are not used for DAG functions. Administrators and end users don't need to interface with or connect to the cluster/DAG name or IP address for any reason. Some third-party applications connect to the cluster administrative access point to perform management tasks, such as backup or monitoring. If you do not use any third-party applications that require a cluster administrative access point, and your DAG is running Exchange 2013 SP1 or later on Windows Server 2012 R2, then we recommend creating a DAG without an administrative access point. This simplifies DAG configuration, eliminates the need for one or more IP addresses, and reduces the attack surface of a DAG.
 
 DAGs are also configured to use a witness server and a witness directory. The witness server and witness directory are either automatically configured by the system, or they can be manually configured by the administrator. In the examples above, EX4 (a server that is not and will not be a member of the DAG) is being manually configured as the DAG's witness server.
 
-By default, a DAG is designed to use the built-in continuous replication feature to replicate mailbox databases among servers in the DAG. If you're using third-party data replication that supports the Third Party Replication API in Exchange 2013, you must create the DAG in third-party replication mode by using the [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351107\(v=exchg.150\)) cmdlet with the *ThirdPartyReplication* parameter. After this mode is enabled, it can't be disabled.
+By default, a DAG is designed to use the built-in continuous replication feature to replicate mailbox databases among servers in the DAG. If you're using third-party data replication that supports the Third Party Replication API in Exchange 2013, you must create the DAG in third-party replication mode by using the [New-DatabaseAvailabilityGroup](/powershell/module/exchange/New-DatabaseAvailabilityGroup) cmdlet with the *ThirdPartyReplication* parameter. After this mode is enabled, it can't be disabled.
 
 After the DAG is created, Mailbox servers can be added to the DAG. When the first server is added to the DAG, a cluster is formed for use by the DAG. DAGs make use of Windows failover clustering technology, such as the cluster heartbeat, cluster networks, and the cluster database (for storing data that changes, such as database state changes from active to passive or vice versa, or from mounted to dismounted and vice versa). As each subsequent server is added to the DAG, it's joined to the underlying cluster, the cluster's quorum model is automatically adjusted by Exchange, and the server is added to the DAG object in Active Directory.
 
@@ -109,7 +110,7 @@ To illustrate how a DAG can provide high availability for your mailbox databases
 
 **DAG with five members**
 
-![Database Availability Group (DAG)](images/Dd979799.21fcbf7b-cb10-49c0-8e32-bdf3c03f825d(EXCHG.150).gif "Database Availability Group (DAG)")
+![Database Availability Group (DAG).](images/Dd979799.21fcbf7b-cb10-49c0-8e32-bdf3c03f825d(EXCHG.150).gif "Database Availability Group (DAG)")
 
 In the preceding figure, the green databases are active mailbox database copies and the blue databases are passive mailbox database copies. In this example, the database copies aren't mirrored across each server, but rather spread across multiple servers. This ensures that no two servers in the DAG have the same set of database copies, providing the DAG with greater resilience to failures, including failures that occur while other components are unavailable as a result of regular maintenance.
 
@@ -119,25 +120,25 @@ Initially, all databases and servers are healthy. You need to install some opera
 
 **DAG with a server offline for maintenance**
 
-![Database Availability Group (DAG) with a Server Offline](images/Dd979799.f48f0e77-80e1-4f14-8c36-112393895bdc(EXCHG.150).gif "Database Availability Group  (DAG) with a Server Offline")
+![Database Availability Group (DAG) with a Server Offline.](images/Dd979799.f48f0e77-80e1-4f14-8c36-112393895bdc(EXCHG.150).gif "Database Availability Group  (DAG) with a Server Offline")
 
 While you perform maintenance on EX2, EX3 experiences a catastrophic hardware failure and goes offline. Prior to going offline, EX3 hosted the active copy of DB2. To recover from the failure, the system automatically activates the copy of DB2 that's hosted on EX1 within 30 seconds. This is illustrated in the following figure.
 
 **DAG with a server offline for maintenance and a failed server**
 
-![DAG with a server offline and a failed server](images/Dd979799.9bbfd9e7-3881-4957-ae8d-32318cbc208b(EXCHG.150).gif "DAG with a server offline and a failed server")
+![DAG with a server offline and a failed server.](images/Dd979799.9bbfd9e7-3881-4957-ae8d-32318cbc208b(EXCHG.150).gif "DAG with a server offline and a failed server")
 
 After the scheduled maintenance is completed for EX2, you bring the server online and take it out of maintenance mode. As soon as EX2 is available, the other members of the DAG are notified, and the copies of DB1, DB4, and DB5 hosted on EX2 are automatically synchronized with the active copy of each database. This is illustrated in the following figure.
 
 **DAG with a restored server synchronizing its database copies**
 
-![DAG with restored server resynchronizing databases](images/Dd979799.58601531-e078-41d3-9287-e8e470ef7f41(EXCHG.150).gif "DAG with restored server resynchronizing databases")
+![DAG with restored server resynchronizing databases.](images/Dd979799.58601531-e078-41d3-9287-e8e470ef7f41(EXCHG.150).gif "DAG with restored server resynchronizing databases")
 
 After the failed hardware component in EX3 is replaced with a new component, EX3 is brought online. After EX3 is available, the other members of the DAG are notified, and the copies of DB2, DB3, and DB4 hosted on EX3 are automatically synchronized with the active copy of each database. This is illustrated in the following figure.
 
 **DAG with a repaired server synchronizing its database copies**
 
-![DAG with Member Resynchronizing Database Copies](images/Dd979799.56259671-e840-4cf0-9ea2-3657dc36c035(EXCHG.150).gif "DAG with Member Resynchronizing Database Copies")
+![DAG with Member Resynchronizing Database Copies.](images/Dd979799.56259671-e840-4cf0-9ea2-3657dc36c035(EXCHG.150).gif "DAG with Member Resynchronizing Database Copies")
 
 ## Using a database availability group (DAG) for site resilience
 
@@ -145,7 +146,7 @@ In addition to providing high availability within a datacenter, a DAG can also b
 
 **DAG extended across two Active Directory sites**
 
-![DAG extended across two Active Directory sites](images/Dd979799.28e96e9d-d7d6-451a-b7b8-c06122c81dc9(EXCHG.150).gif "DAG extended across two Active Directory sites")
+![DAG extended across two Active Directory sites.](images/Dd979799.28e96e9d-d7d6-451a-b7b8-c06122c81dc9(EXCHG.150).gif "DAG extended across two Active Directory sites")
 
 In this example, a passive copy of each active database in the Redmond datacenter is configured on EX6 in the Dublin datacenter. However, there are many other examples of DAG configurations that provide site resilience. For example:
 

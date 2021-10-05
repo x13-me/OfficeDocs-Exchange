@@ -1,12 +1,13 @@
 ---
 title: 'Common attachment blocking scenarios for transport rules: Exchange 2013 Help'
 TOCTitle: Common attachment blocking scenarios for transport rules
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -16,9 +17,9 @@ _**Applies to:** Exchange Server 2013_
 
 Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using transport rules in Exchange.
 
-For additional examples showing how to block specific attachments, see [Using transport rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx).
+For additional examples showing how to block specific attachments, see [Use transport rules to inspect message attachments](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
-The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add filters.
+The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to add filters.
 
 To get started implementing any of these scenarios to block certain message types:
 
@@ -26,29 +27,23 @@ To get started implementing any of these scenarios to block certain message type
 
 2. Go to **Mail flow** \> **Rules**.
 
-3. Click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+3. Click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 4. In the **Name** box, specify a name for the rule, and then click **More options**.
 
 5. Select the conditions and actions you want.
 
-   **Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
-
-   Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
-
-   ```powershell
-   Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
-   ```
-
-After you adjust the attachment size to 1 byte, the value that's displayed for the rule in the EAC is **0.00 KB**.
+> [!NOTE]
+> In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](/powershell/exchange/open-the-exchange-management-shell).
+> The embedded images are treated as attachments (for example, messages with a picture in the signature); for this reason, we do not recommend using a very small value since unexpected messages will be blocked.
 
 ## Example 1: Block messages with attachments, and notify the sender
 
-If you don't want people in your organization to send or receive attachments, you can set up a transport rule to block all messages with attachments.
+If you don't want certain people in your organization to send or receive attachments greater than 10 Megabytes, you can set up a mail flow rule to block messages with attachments of this size.
 
-In this example, all messages sent to or from the organization with attachments are blocked.
+In this example, all messages sent to or from the organization with attachments greater than 10 Megabytes are blocked.
 
-![Rule that blocks all attachments](images/38094183-166f-4ba5-a9cf-242e7d0f4e04.png)
+![Rule that blocks all attachments.](images/38094183-166f-4ba5-a9cf-242e7d0f4e04.png)
 
 If all you want to do is block the message, you might want to stop rule processing once this rule is matched. Scroll down the rule dialog box, and select the **Stop processing more rules** check box.
 
@@ -69,7 +64,7 @@ You can include placeholders in the notification message so that it includes inf
 
 In this example, all messages that contain attachments and are sent to people inside your organization are blocked, and the recipient is notified.
 
-![Rule that notifies recipients when an inbound message is blocked](images/f9a14733-d68a-4528-a736-206325881c47.png)
+![Rule that notifies recipients when an inbound message is blocked.](images/f9a14733-d68a-4528-a736-206325881c47.png)
 
 ## Example 3: Modify the subject line for notifications
 
@@ -84,17 +79,17 @@ When a notification is sent to the recipient, the subject line is the subject of
 
 Here's what the first rule would look like if you want to add "undeliverable" to the subject:
 
-![Rule that prepends Undeliverable to messages with attachments](images/2552b0bd-c69d-48b4-9e69-267fcaf20e70.png)
+![Rule that prepends Undeliverable to messages with attachments.](images/2552b0bd-c69d-48b4-9e69-267fcaf20e70.png)
 
 And the second rule does the blocking and notification (the same rule from Example 2):
 
-![Rule that notifies recipients when an inbound message is blocked](images/f9a14733-d68a-4528-a736-206325881c47.png)
+![Rule that notifies recipients when an inbound message is blocked.](images/f9a14733-d68a-4528-a736-206325881c47.png)
 
 ## Example 4: Apply a rule with a time limit
 
 If you have a malware outbreak, you might want to apply a rule with a time limit so that you temporarily block attachments. For example, the following rule has both a start and stop day and time:
 
-![Rule showing a time limit](images/bdc8c4d8-72fa-4c5b-97f2-5fe76d50e643.png)
+![Rule showing a time limit.](images/bdc8c4d8-72fa-4c5b-97f2-5fe76d50e643.png)
 
 ## See also
 

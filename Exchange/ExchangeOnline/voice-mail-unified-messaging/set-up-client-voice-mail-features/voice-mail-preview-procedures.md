@@ -1,12 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Configure Voice Mail Preview partner services for users
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 3154be11-1a9d-4e51-a2d0-592ddbcca7b1
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Voice Mail Preview procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -16,6 +17,9 @@ manager: serdars
 ---
 
 # Voice Mail Preview procedures in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 [Configure Voice Mail Preview partner services for users](configure-voice-mail-preview-partner-services.md)
 

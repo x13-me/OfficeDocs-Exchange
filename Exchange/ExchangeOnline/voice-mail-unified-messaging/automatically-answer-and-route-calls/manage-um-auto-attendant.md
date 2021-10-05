@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you create a Unified Messaging (UM) auto attendant, you can view or configure a variety of settings. For example, you can add, remove, and edit extension numbers associated with the auto attendant. You can also enable or disable Automatic Speech Recognition (ASR) for the auto attendant and change the greetings used for business and non-business hours.
 ms.topic: article
 author: msdmaguire
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantGeneralPropertyPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 4809ff56-ae34-4ce6-8e39-9193311c3f83
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- CSH
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantGeneralPropertyPage
 title: Manage a UM auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -19,6 +20,9 @@ manager: serdars
 
 # Manage a UM auto attendant in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 After you create a Unified Messaging (UM) auto attendant, you can view or configure a variety of settings. For example, you can add, remove, and edit extension numbers associated with the auto attendant. You can also enable or disable Automatic Speech Recognition (ASR) for the auto attendant and change the greetings used for business and non-business hours.
 
 For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](um-auto-attendant-procedures.md).
@@ -27,7 +31,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM auto attendants" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
@@ -36,13 +40,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view or configure UM auto attendant settings
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to view or configure, and then on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to view or configure, and then on the toolbar, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page, click **General** to view display-only information about the UM auto attendant and to perform management tasks on the UM auto attendant, as follows:
 
@@ -56,7 +60,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      The number of digits in the extension numbers or access numbers you provide must match the number of digits for an extension number configured on the UM dial plan associated with the UM auto attendant. You can also add a Session Initiation Protocol (SIP) address to this box. A SIP address is used by some IP Private Branch eXchanges (PBXs), SIP-enabled PBXs, and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server.
 
-     You can create a new auto attendant without listing an extension number or access number. To add an extension number, type the number in this box, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). You can associate more than one number with an auto attendant. You can also edit or remove an existing access number. To edit an existing number, select it and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove an existing extension number from the list, select it and click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+     You can create a new auto attendant without listing an extension number or access number. To add an extension number, type the number in this box, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). You can associate more than one number with an auto attendant. You can also edit or remove an existing access number. To edit an existing number, select it and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). To remove an existing extension number from the list, select it and click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
    - **Set the auto attendant to respond to voice commands**: Select this check box to enable callers to respond verbally to auto attendant prompts to navigate the menu system. By default, when an auto attendant is created, it isn't speech-enabled.
 
@@ -70,7 +74,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      Although not required, we recommend that you configure the DTMF fallback auto attendant to have the same configuration as the speech-enabled auto attendant. The DTMF fallback auto attendant shouldn't be speech-enabled.
 
-   - **Language for automated voice interface**: Use this list to select the language that callers hear when they reach the auto attendant. The default language is determined when you install Microsoft Exchange. For on-premises and hybrid deployments, by default, U.S. English is used because the auto attendant uses the language setting on the UM dial plan. To have other language options available, you must install the UM language packs for the languages you want to include. For more information about how to install a UM language pack, see [Install a Unified Messaging Language Pack](https://technet.microsoft.com/library/ed14ffa5-c9b0-4367-b5da-564024b360ff.aspx). For UM in Office 365, it's not required that you install any additional UM language packs.
+   - **Language for automated voice interface**: Use this list to select the language that callers hear when they reach the auto attendant. For UM in Microsoft 365 or Office 365, you don't need to install UM language packs.
 
      Although you can select a language other than the language selected on the UM dial plan associated with the auto attendant, we recommend that the language settings on the dial plan and the auto attendant match. If language settings don't match, when callers call an extension number defined on the dial plan, they will be presented with prompts in one language, and when they dial an extension number associated with an auto attendant, they will be presented with prompts in a different language.
 
@@ -104,7 +108,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
    - **Holiday schedule**: Use this to define days, from 00:00 through 23:59 (12:00 A.M. through 11:59 P.M.), on which your organization will be closed for a holiday. Callers who reach the auto attendant during the times that you specify on the **New holiday** page hear a custom holiday greeting audio file that you define. When you configure the holiday schedule, you must define the holiday name, the audio file for the recorded holiday greeting, and the **Start date** and **End date**. The greetings must already have been recorded as .wav or .wma files.
 
-6. Use **Menu navigation** to specify the menu options that are offered to callers during business and non-business hours. If you want to enable menu navigation, you must do it separately for business and non-business hours. For example, if you want to enable business hours navigation, you must add a menu prompt custom audio recording, select the **Enable business hours menu navigation** check box, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then set the options on the **New menu navigation entry** page.
+6. Use **Menu navigation** to specify the menu options that are offered to callers during business and non-business hours. If you want to enable menu navigation, you must do it separately for business and non-business hours. For example, if you want to enable business hours navigation, you must add a menu prompt custom audio recording, select the **Enable business hours menu navigation** check box, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then set the options on the **New menu navigation entry** page.
 
    - **Business hours menu navigation**: This is the list of options that callers hear during the business hours that are defined on the **Business hours** page. For example, "For technical support, press or say 1. For corporate offices and administration, press or say 2. For sales, press or say 3."
 
@@ -114,7 +118,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      2. **Enable business hours menu navigation**: Select this check box to enable options for menu navigation that will be used during business hours. When you enable business hours menu navigation, you can add new menu navigation entries for business hours.
 
-     3. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
+     3. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 
    - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
 
@@ -150,7 +154,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
      2. **Enable non-business hours menu navigation**: Select this check box to enable options for menu navigation that will be used during non-business hours. When you enable non-business hours menu navigation, you can add new menu navigation entries for non-business hours.
 
-     3. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
+     3. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to create a new menu navigation entry. On the **New menu navigation entry** page, use the following options to create a new menu navigation entry:
 
    - **Prompt**: Use this box to type the name of the new navigation menu. The navigation menu name is used for display purposes only. This is a required field.
 
@@ -275,13 +279,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 This example configures a UM auto attendant named `MySpeechEnabledAA` to fall back to the `MyDTMFAA` auto attendant, sets the operator's extension to 50100, and enables transfers to this extension number after business hours.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true
 ```
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` that has: Business hours configured as 10:45 to 13:15 (10:45 A.M. to 1:15 P.M.) on Sunday, 09:00 to 17:00 (9:00 A.M. to 5:00 P.M.) on Monday, and 09:00 to 16:30 (9:00 A.M. to 4:30 P.M.) on Saturday; holiday times and their associated greetings configured as "New Year" on January 2, 2013; and "Building Closed for Construction" configured from April 24 through April 28, 2013.
 
-```
+```PowerShell
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30 -HolidaySchedule "New Year,newyrgrt.wav,1/2/2013","Building Closed for Construction,construction.wav,4/24/2013,4/28/2013"
 ```
 
@@ -289,12 +293,12 @@ Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0
 
 This example returns a formatted list of all UM auto attendants.
 
-```
+```PowerShell
 Get-UMAutoAttendant | Format-List
 ```
 
 This example displays the properties of a UM auto attendant named MyUMAutoAttendant.
 
-```
+```PowerShell
 Get-UMAutoAttendant -Identity MyUMAutoAttendant
 ```

@@ -2,13 +2,14 @@
 title: 'Configure Kerberos authentication for load-balanced Client Access servers'
 TOCTitle: Configuring Kerberos authentication for load-balanced Client Access servers
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808312(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -78,11 +79,11 @@ When you set up the ASA credential, keep these guidelines in mind:
 
     Where *EXCH2013ASA* is the name of the account and the attribute to be modified is *msDS-SupportedEncryptionTypes* with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://technet.microsoft.com/library/hh849725.aspx) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](/powershell/module/activedirectory/new-adcomputer).
 
 ## Cross-forest scenarios
 
-If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you need to configure forest trust relationships between the forests. Also, for each forest in the deployment, you need to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Managing forest trusts](https://technet.microsoft.com/library/cc772440.aspx).
+If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you need to configure forest trust relationships between the forests. Also, for each forest in the deployment, you need to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
 
 ## Identify the Service Principal Names to associate with the ASA credential
 
@@ -102,7 +103,7 @@ In each of these scenarios, assume that the load-balanced, fully-qualified domai
 
 If you have a single Active Directory site, your environment may resemble the one in the following figure:
 
-![CAS Array with Single AD and Kerberos auth](images/Ff808312.97a1a926-f4ac-4498-bc6b-32e7fb1b70f1(EXCHG.150).jpg "CAS Array with Single AD and Kerberos auth")
+![CAS Array with Single AD and Kerberos auth.](images/Ff808312.97a1a926-f4ac-4498-bc6b-32e7fb1b70f1(EXCHG.150).jpg "CAS Array with Single AD and Kerberos auth")
 
 Based on the FQDNs that are used by the internal Outlook clients in the preceding figure, you need to associate the following SPNs with the ASA credential:
 
@@ -114,7 +115,7 @@ Based on the FQDNs that are used by the internal Outlook clients in the precedin
 
 If you have multiple Active Directory sites, your environment may resemble the one in the following figure:
 
-![CAS array with multiple AD sites and Kerberos auth](images/Ff808312.95b52bd8-7074-4055-8bd2-e6bf1f112b42(EXCHG.150).jpg "CAS array with multiple AD sites and Kerberos auth")
+![CAS array with multiple AD sites and Kerberos auth.](images/Ff808312.95b52bd8-7074-4055-8bd2-e6bf1f112b42(EXCHG.150).jpg "CAS array with multiple AD sites and Kerberos auth")
 
 Based on the FQDNs that are used by the Outlook clients in the preceding figure, you would need to associate the following SPNs with the ASA credential that is used by the Client Access servers in ADSite 1:
 
@@ -138,7 +139,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 
 - Deploy the ASA credential to subsequent Exchange 2013 Client Access servers
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information and required permissions to run the script, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ## Deploy the ASA Credential to the first Exchange 2013 Client Access server
 

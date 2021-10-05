@@ -1,12 +1,13 @@
 ---
 title: 'Developing DLP policy template files: Exchange 2013 Help'
 TOCTitle: Developing DLP policy template files
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: 4b263547-aef4-4ee8-aa4f-fa64a5863189
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,7 +23,7 @@ In order to make data loss prevention solutions easy to adopt and manage, a conc
 
 DLP policy templates are typically influenced from multiple sources such as server-based processing directives, client computer policies, or other policy constructs as shown in the following image:
 
-![Factors that influence policy templates](images/ITPro_MRM_DlpPolicy_TempInputs.gif)
+![Factors that influence policy templates.](images/ITPro_MRM_DlpPolicy_TempInputs.gif)
 
 Simple management operations are available for DLP policy templates though both the Exchange Management Shell and Internet-based interfaces, such as the Exchange admin center, which include Import, Export, Deletion and Query capabilities. A DLP policy is created by referencing a DLP policy template as part of the creation process. These referenced DLP policy templates may be references to ones installed in the system, which are stored in active directory domain services, or be provided as input directly from externally supplied policies.
 

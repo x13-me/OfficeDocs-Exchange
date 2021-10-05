@@ -2,13 +2,14 @@
 title: 'Create a Send connector to send email to a partner, with Transport Layer Security applied'
 TOCTitle: Create a Send connector to send email to a partner, with Transport Layer Security (TLS) applied
 ms:assetid: ff2abefc-dd3e-4431-b947-df942fbf82d9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657514(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657514(v=EXCHG.150)
 ms:contentKeyID: 49289478
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,19 +34,19 @@ Interested in scenarios where this procedure is used? See the following topics:
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to create a Send connector to send email to a partner, with TLS applied
 
 To create a Send connector for this scenario, log in to the EAC and perform the following steps:
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New send connector** wizard, specify a name for the send connector and then select **Partner** for the **Type**. When you select **Partner**, the connector is configured to allow connections only to servers that authenticate with TLS certificates. Click **Next**.
 
 3. Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
 
-4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the name of your partner domain. Click **Save**.
+4. Under **Address space**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the name of your partner domain. Click **Save**.
 
 5. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, select a Mailbox server that will be used to send mail to the Internet via the Client Access server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). After you've selected the server, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
 

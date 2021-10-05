@@ -1,16 +1,17 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Summary: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019."
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
-ms.date: 7/27/2016
 ms.reviewer: 
 title: Exchange Server post-installation tasks
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -40,4 +41,4 @@ If you've enabled the Scripting Agent in your Exchange organization, and you kee
 
 - The default name of the file on a new Exchange server is %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml.sample. As part of enabling the Scripting Agent in your organization, you need to rename this file to ScriptingAgentConfig.xml and customize it or replace it with your existing ScriptingAgentConfig.xml file.
 
-For more information about the Scripting Agent in Exchange 2013 (which still applies to Exchange 2016 and 2019), see [Scripting Agent](https://docs.microsoft.com/en-us/Exchange/cmdlet-extension-agents-exchange-2013-help#scripting-agent).
+For more information about the Scripting Agent in Exchange 2013 (which still applies to Exchange 2016 and 2019), see [Scripting Agent](../../../ExchangeServer2013/cmdlet-extension-agents-exchange-2013-help.md#scripting-agent).

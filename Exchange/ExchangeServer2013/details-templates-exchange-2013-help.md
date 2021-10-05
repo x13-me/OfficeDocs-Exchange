@@ -2,13 +2,14 @@
 title: 'Details templates: Exchange 2013 Help'
 TOCTitle: Details templates
 ms:assetid: 26f02e47-1540-4840-afe0-600c97368cac
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673049(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ673049(v=EXCHG.150)
 ms:contentKeyID: 49289204
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -20,7 +21,7 @@ Details templates control the appearance of the object properties that are acces
 
 **Default details template as viewed from Outlook 2013**
 
-![Default details template in Outlook 2007](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
+![Default details template in Outlook 2007.](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
 
 You can use the default details template or you can customize the template to better suit the needs of your users. The objects can be customized by changing field sizes, adding or removing fields, adding or removing tabs, and rearranging fields. The layout of these templates may vary by language. Use the Details Templates Editor to customize the following Outlook objects:
 

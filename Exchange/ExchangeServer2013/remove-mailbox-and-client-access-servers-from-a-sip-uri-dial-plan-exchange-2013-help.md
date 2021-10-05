@@ -2,13 +2,14 @@
 title: 'Remove Mailbox and Client Access servers from a SIP URI dial plan: Exchange 2013 Help'
 TOCTitle: Remove Mailbox and Client Access servers from a SIP URI dial plan
 ms:assetid: 367441e1-1a0f-42c8-9fa8-8abe80b3d015
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997238(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa997238(v=EXCHG.150)
 ms:contentKeyID: 53401614
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -26,22 +27,22 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-- Before you perform these procedures, confirm that a SIP URI dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+- Before you perform these procedures, confirm that a SIP URI dial plan has been created. For detailed steps, see [Create a UM dial plan](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to remove a Mailbox server from a SIP URI dial plan
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4. Under **UM Service settings** \> **Associated dial plans**, locate the SIP URI dial plan to remove, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**. If you want to remove more than one SIP URI dial plan, press and hold the CTRL key, select the dial plans you want to remove, and then click **Save**.
+4. Under **UM Service settings** \> **Associated dial plans**, locate the SIP URI dial plan to remove, click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**. If you want to remove more than one SIP URI dial plan, press and hold the CTRL key, select the dial plans you want to remove, and then click **Save**.
 
 ## Use the Shell to remove a Mailbox server from a SIP URI dial plan
 
@@ -76,11 +77,11 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4. Under **UM Call Router settings** \> **Associated dial plans**, locate the SIP URI dial plan to remove, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**. If you want to remove more than one SIP URI dial plan, press and hold the CTRL key, select the dial plans you want to remove, and then click **Save**.
+4. Under **UM Call Router settings** \> **Associated dial plans**, locate the SIP URI dial plan to remove, click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**. If you want to remove more than one SIP URI dial plan, press and hold the CTRL key, select the dial plans you want to remove, and then click **Save**.
 
 ## Use the Shell to remove a Client Access server from a SIP URI dial plan
 

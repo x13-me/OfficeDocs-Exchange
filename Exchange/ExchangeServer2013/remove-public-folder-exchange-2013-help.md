@@ -1,12 +1,13 @@
 ---
 title: 'Remove a public folder: Exchange 2013 Help'
 TOCTitle: Remove a public folder
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -20,14 +21,14 @@ You may need to remove public folders that are no longer being used in your orga
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
 - You can't delete a mail-enabled public folder. Before you can delete it, you must first disable email for the public folder. For more information, see [Mail-enable or mail-disable a public folder](enable-or-disable-mail-for-public-folder-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to remove a public folder
 
@@ -35,9 +36,9 @@ You may need to remove public folders that are no longer being used in your orga
 
 2. In the list view, select the public folder you want to delete. Note that clicking on the folder name will display sub-folders within that folder, if there are any. At that point you can click to select a specific sub-folder to remove.
 
-     To delete a folder or sub-folder, click anywhere on the folder's row except the underlined name of the folder, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif). If you click the underlined name of the folder, the **Delete** option will not be available to select.
+     To delete a folder or sub-folder, click anywhere on the folder's row except the underlined name of the folder, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif). If you click the underlined name of the folder, the **Delete** option will not be available to select.
 
-    ![Selecting a public folder to remove](images/8666290d-3f19-4c70-afe3-45569762718b.png)
+    ![Selecting a public folder to remove.](images/8666290d-3f19-4c70-afe3-45569762718b.png)
 
 3. A warning box displays asking if you're sure you want to delete the public folder. Click **Yes** to continue.
 
@@ -61,4 +62,4 @@ This example removes the public folder Marketing and all its subfolders because 
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx).
+For detailed syntax and parameter information, see [Remove-PublicFolder](/powershell/module/exchange/remove-publicfolder).

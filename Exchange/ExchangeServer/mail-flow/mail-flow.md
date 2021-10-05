@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Mail flow and the transport pipeline
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -44,7 +45,7 @@ The following diagram shows the relationships among the components in the Exchan
 > [!NOTE]
 > Although the diagrams in this topic show the components on a single Exchange server, communication also occurs between those components on different Exchange servers. The only communication that always occurs on the local Exchange server is between the Mailbox Transport service and the local mailbox database.
 
-![Transport pipeline overview diagram](../media/Transport_PipelineOverview.png)
+![Transport pipeline overview diagram.](../media/Transport_PipelineOverview.png)
 
 ### How messages from external senders enter the transport pipeline
 
@@ -54,7 +55,7 @@ The way messages from outside the Exchange organization enter the transport pipe
 
 The following diagram and list describe inbound mail flow with only Exchange Mailbox servers.
 
-![Inbound mail flow in the transport pipleline (no Edge Transport servers)](../media/45f8e675-43b1-4e3f-ba14-5c9a0d1551bf.png)
+![Inbound mail flow in the transport pipleline (no Edge Transport servers).](../media/45f8e675-43b1-4e3f-ba14-5c9a0d1551bf.png)
 
 1. A message from outside the organization enters the transport pipeline through the default Receive connector named "Default Frontend _\<Mailbox server name\>_" in the Front End Transport service.
 
@@ -68,7 +69,7 @@ The following diagram and list describe inbound mail flow with only Exchange Mai
 
 The following diagram and list describe inbound mail flow with an Edge Transport server installed in the perimeter network
 
-![Inbound mail flow in the transport pipleline with Edge Transport servers](../media/e0983c92-784c-4c17-8483-8e2cb07cf097.png)
+![Inbound mail flow in the transport pipleline with Edge Transport servers.](../media/e0983c92-784c-4c17-8483-8e2cb07cf097.png)
 
 1. A message from outside the Exchange organization enters the transport pipeline through the default Receive connector named "Default internal Receive connector _\<Edge Transport server name\>_" in the Transport service on the Edge Transport server.
 
@@ -87,11 +88,8 @@ The following diagram and list describe inbound mail flow with an Edge Transport
 SMTP messages from inside the organization enter the transport pipeline through the Transport service on a Mailbox server in one of the following ways:
 
 - Through a Receive connector.
-
 - From the Pickup directory or the Replay directory.
-
 - From the Mailbox Transport Submission service.
-
 - Through agent submission.
 
 The message is routed based on the routing destination or delivery group.
@@ -100,7 +98,7 @@ The message is routed based on the routing destination or delivery group.
 
 By default, in a new Exchange Server organization, there's no Send connector that's configured to send messages to the Internet. You need to create the Send connector yourself. After you do that, Outbound mail flow occurs as described in the following diagram and list.
 
-![Outbound mail flow in the transport pipleline (no Edge Transport servers)](../media/a672122e-435c-4e81-bd03-8f1643829e59.png)
+![Outbound mail flow in the transport pipleline (no Edge Transport servers).](../media/a672122e-435c-4e81-bd03-8f1643829e59.png)
 
 1. The Mailbox Transport Submission service uses RPC to retrieve the outbound message from the local mailbox database.
 
@@ -118,7 +116,7 @@ By default, in a new Exchange Server organization, there's no Send connector tha
 
 If you have an Edge Transport server installed in the perimeter network, outbound mail never flows through the Front End Transport service. Outbound mail flow with an Edge Transport server is described in the following diagram and list.
 
-![Outbound mail flow in the transport pipleline with Edge Transport servers](../media/2d0d3b5a-cc06-4dfa-8846-1a6885fdb19d.png)
+![Outbound mail flow in the transport pipleline with Edge Transport servers.](../media/2d0d3b5a-cc06-4dfa-8846-1a6885fdb19d.png)
 
 1. The Mailbox Transport Submission service uses RPC to retrieve the outbound message from the local mailbox database.
 
@@ -141,40 +139,26 @@ The Transport service on a Mailbox server consists of the following components a
 - **SMTP Receive**: When messages are received by the Transport service, message content inspection is performed and antispam inspection is performed if is enabled. The SMTP session has a series of events that work together in a specific order to validate the contents of a message before it's accepted. After a message has passed completely through SMTP Receive and isn't rejected by receive events, or by an antispam agent, it's put in the Submission queue.
 
 - **Submission**: Submission is the process of putting messages into the Submission queue. The categorizer picks up one message at a time for categorization. Submission happens in three ways:
-
   - From SMTP Receive through a Receive connector.
-
   - Through the Pickup directory or the Replay directory. These directories exist on Mailbox servers and Edge Transport servers. Correctly formatted message files that are copied into the Pickup directory or the Replay directory are put directly into the Submission queue.
-
   - Through a transport agent.
 
 - **Categorizer**: The categorizer picks up one message at a time from the Submission queue. The categorizer completes the following steps:
-
   - Recipient resolution, which includes top-level addressing, distribution group expansion, and message bifurcation.
-
   - Routing resolution.
-
   - Content conversion.
 
     Additionally, mail flow rules that the organization defined are applied. After messages have been categorized, they're put into a delivery queue that's based on the destination of the message. Messages are queued by the destination mailbox database, DAG, Active Directory site, Active Directory forest, or external domain.
 
 - **SMTP Send**: How messages are routed from the Transport service depends on the location of the message recipients relative to the Mailbox server where categorization occurred. The message could be routed to one of the following locations:
-
   - To the Mailbox Transport Delivery service on the same Mailbox server.
-
   - To the Mailbox Transport Delivery service on a different Mailbox server that's part of the same DAG.
-
   - To the Transport service on a Mailbox server in a different DAG, Active Directory site, or Active Directory forest.
-
   - For delivery to the Internet through:
-
-  - A Send connector on the same Mailbox server.
-
-  - The Transport service on a different Mailbox server.
-
-  - The Front End Transport service on the same Mailbox server or a different Mailbox server (if outbound proxy is configured).
-
-  - The Transport service on an Edge Transport server in the perimeter network.
+    - A Send connector on the same Mailbox server.
+    - The Transport service on a different Mailbox server.
+    - The Front End Transport service on the same Mailbox server or a different Mailbox server (if outbound proxy is configured).
+    - The Transport service on an Edge Transport server in the perimeter network.
 
 ## Understanding the Transport service on Edge Transport servers
 

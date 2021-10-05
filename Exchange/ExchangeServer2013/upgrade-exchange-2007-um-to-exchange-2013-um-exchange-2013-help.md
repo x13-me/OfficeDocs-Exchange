@@ -2,13 +2,14 @@
 title: 'Upgrade Exchange 2007 UM to Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: Upgrade Exchange 2007 UM to Exchange 2013 UM
 ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169227(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn169227(v=EXCHG.150)
 ms:contentKeyID: 53382781
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +32,7 @@ When you're upgrading a Microsoft Exchange 2007 organization with Unified Messag
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Download and install the required UM language packs
 
@@ -42,7 +43,7 @@ By default, when you install an Exchange 2013 Mailbox server, the U.S. English (
 > [!NOTE]
 > If U.S. English is the only language that you want to provide for your dial plan, you can skip this step and go to step 2.
 
-You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+You can add UM language packs by using the setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). For more information, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 This example uses setup.exe to install the Japanese (ja-JP) UM language pack.
 
@@ -101,15 +102,15 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
 
 - Create an Exchange self-signed certificate in the EAC:
 
-  1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
   2. On the **New Exchange certificate** page, choose **Create a self-signed certificate**, and then select **Next**.
 
   3. Enter a friendly name for the certificate, and then select **Next**.
 
-  4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
+  4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
 
-  5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
   6. Verify that the domains you included are correct, and then select **Finish**.
 
@@ -131,7 +132,7 @@ To enable UM to encrypt data that's sent between your Exchange 2013 servers and 
 
   Enable the UM service and the UM Call Router service on all Exchange 2013 servers to use the Exchange self-signed certificate by using the EAC, as follows:
 
-  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+  1. In the EAC, navigate to **Servers** \> **Certificates**, select the certificate you want to enable services on, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
   2. On the **Procedure** page, select **Services**, select **Unified Messaging**, and then select **Unified Messaging call router**.
 
@@ -159,7 +160,7 @@ Configure the UM startup mode on an Exchange 2013 Client Access server by using 
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
@@ -187,7 +188,7 @@ Configure the UM startup mode on an Exchange 2013 Mailbox server by using the EA
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
@@ -211,11 +212,11 @@ Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -
 
 Depending on your existing Exchange 2007 deployment, you may be required to create new UM dial plans or configure your existing dial plans. A UM dial plan represents a set of traditional or SIP-enabled Private Branch eXchanges (PBXs), IP PBXs, or SIP-enabled PBXs that share common user extension numbers. All users' extensions hosted on traditional or SIP-enabled PBXs or IP PBXs within a dial plan contain the same number of digits. Users can dial one another's telephone extensions without appending a special number to the extension or dialing a full telephone number.
 
-UM dial plans are used in Unified Messaging to make sure that user telephone extensions are unique. In some telephony networks, multiple IP PBXs, traditional PBXs, or SIP-enabled PBXs exist. In these telephony networks, there could be two users who have the same telephone extension number. UM dial plans resolve this situation. Putting the two users into two separate UM dial plans makes their extensions unique. For more information, see [UM dial plans](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans).
+UM dial plans are used in Unified Messaging to make sure that user telephone extensions are unique. In some telephony networks, multiple IP PBXs, traditional PBXs, or SIP-enabled PBXs exist. In these telephony networks, there could be two users who have the same telephone extension number. UM dial plans resolve this situation. Putting the two users into two separate UM dial plans makes their extensions unique. For more information, see [UM dial plans](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans.md).
 
 If required, you can create a UM dial plan by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New UM Dial Plan** page, complete the following:
 
@@ -262,7 +263,7 @@ If required, you can configure an existing UM dial plan by using the EAC:
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **UM Dial Plan** page, click **Configure**. Use the configuration options to view specific dial plan settings and to enable or disable features.
 
@@ -280,11 +281,11 @@ Depending on your existing Exchange 2007 deployment, you may be required to crea
 
 A UM IP gateway represents a physical Voice over IP (VoIP) gateway, IP PBX, or SIP-enabled PBX. Before a VoIP gateway, IP PBX, or SIP-enabled PBX can be used to answer incoming calls and send outgoing calls for voice mail users, a UM IP gateway must be created in the directory service.
 
-The combination of the UM IP gateway and a UM hunt group establishes a link between a VoIP gateway, IP PBX, or SIP-enabled PBX and a UM dial plan. By creating multiple UM hunt groups, you can associate a single UM IP gateway with multiple UM dial plans. For more information, see [UM IP gateways](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways).
+The combination of the UM IP gateway and a UM hunt group establishes a link between a VoIP gateway, IP PBX, or SIP-enabled PBX and a UM dial plan. By creating multiple UM hunt groups, you can associate a single UM IP gateway with multiple UM dial plans. For more information, see [UM IP gateways](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways.md).
 
 If required, you can create a UM IP gateway by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New UM IP Gateway** page, enter the following information:
 
@@ -308,7 +309,7 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 If required, you can configure an existing UM IP gateway by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. On the **UM IP gateway** page, click **Configure**. Use the configure options to view specific UM IP gateway settings and to enable or disable features.
 
@@ -322,13 +323,13 @@ Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -I
 
 Depending on your existing Exchange 2007 deployment, you may be required to create new UM hunt groups. A telephony hunt group provides a way to distribute telephone calls from a single number to multiple extensions or telephone numbers. In Unified Messaging, a UM hunt group is a logical representation of a telephony hunt group, and it links a UM IP gateway to a UM dial plan.
 
-You need to have at least one UM hunt group for every IP PBX or PBX hunt group. When you complete the following procedure, one UM hunt group is created by default. If you have more than one IP PBX or PBX hunt group, you need to create additional UM hunt groups. To learn more about UM hunt groups, see [UM hunt groups](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups).
+You need to have at least one UM hunt group for every IP PBX or PBX hunt group. When you complete the following procedure, one UM hunt group is created by default. If you have more than one IP PBX or PBX hunt group, you need to create additional UM hunt groups. To learn more about UM hunt groups, see [UM hunt groups](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups.md).
 
 If required, you can create a UM hunt group by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. On the **New UM Hunt Group** page, enter the following information:
 
@@ -351,15 +352,15 @@ New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan M
 
 ## Step 9: Create or configure UM auto attendants
 
-Depending on your existing Exchange 2007 deployment, you may be required to create new UM auto attendants. You can use UM auto attendants to create a voice menu system that lets external and internal callers use the UM auto attendant menu system to locate people and place or transfer calls to company users or departments in an organization. For more information, see [Automatically answer and route incoming calls](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls).
+Depending on your existing Exchange 2007 deployment, you may be required to create new UM auto attendants. You can use UM auto attendants to create a voice menu system that lets external and internal callers use the UM auto attendant menu system to locate people and place or transfer calls to company users or departments in an organization. For more information, see [Automatically answer and route incoming calls](../ExchangeOnline/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls.md).
 
 In smaller deployments, you may only want to deploy UM so that callers can leave voice mail for users. In these deployments, creating an auto attendant isn't required. However, in most cases, using auto attendants is very useful for external callers when they call in to your organization.
 
 If required, you can create a UM auto attendant by using the EAC, as follows:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. Select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. Select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Auto Attendants**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. On the **UM dial plan** page, under **UM Auto Attendants**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. On the **New UM Auto Attendant** page, complete the following boxes:
 
@@ -385,9 +386,9 @@ New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdent
 
 If required, you can configure an existing auto attendant by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant that you want to view or configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific auto attendant settings and to enable or disable features.
+2. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant that you want to view or configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific auto attendant settings and to enable or disable features.
 
 If required, you can configure an existing auto attendant by running the following command in the Shell.
 
@@ -397,13 +398,13 @@ Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTM
 
 ## Step 10: Create or configure UM mailbox policies
 
-Depending on your existing Exchange 2007 deployment, you may be required to create new UM mailbox policies or configure existing UM mailbox policies. UM mailbox policies are required when you enable users for Unified Messaging. The mailbox of each UM-enabled user must be linked to a single UM mailbox policy. After you create a UM mailbox policy, you link one or more UM-enabled mailboxes to the UM mailbox policy. This lets you control PIN security settings such as the minimum number of digits in a PIN or the maximum number of logon attempts for the UM-enabled users who are linked to the UM mailbox policy. For more information, see [UM mailbox policies](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies).
+Depending on your existing Exchange 2007 deployment, you may be required to create new UM mailbox policies or configure existing UM mailbox policies. UM mailbox policies are required when you enable users for Unified Messaging. The mailbox of each UM-enabled user must be linked to a single UM mailbox policy. After you create a UM mailbox policy, you link one or more UM-enabled mailboxes to the UM mailbox policy. This lets you control PIN security settings such as the minimum number of digits in a PIN or the maximum number of logon attempts for the UM-enabled users who are linked to the UM mailbox policy. For more information, see [UM mailbox policies](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies.md).
 
 If required, you can create a UM mailbox policy by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, click **Add** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, click **Add** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **New UM Mailbox Policy** page, in the **Name** box, enter the name of the new UM mailbox policy.
 
@@ -423,9 +424,9 @@ New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 
 If required, you can configure an existing UM mailbox policy by using the EAC:
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to view or configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific UM mailbox policy settings and to enable or disable features.
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to view or configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"). Use the configuration options to view specific UM mailbox policy settings and to enable or disable features.
 
 If required, you can configure an existing UM mailbox policy by running the following command in the Shell.
 
@@ -435,7 +436,7 @@ Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -
 
 ## Step 11: Move existing UM-enabled mailboxes to Exchange 2013
 
-In Exchange 2007 Unified Messaging, after you've enabled users within the organization to use voice mail, a default set of UM properties is applied to the user so they can use UM features. For more information, see [Voice mail for users](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users).
+In Exchange 2007 Unified Messaging, after you've enabled users within the organization to use voice mail, a default set of UM properties is applied to the user so they can use UM features. For more information, see [Voice mail for users](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users.md).
 
 During the process of upgrading, there will be a period of time during which you'll have mailboxes that are UM enabled both on Exchange 2007 Mailbox servers and on Exchange 2013 Mailbox servers. However, if you're moving all UM-enabled users over to Exchange 2013 Mailbox servers, you must use the EAC or the **New-MoveRequest** cmdlet in the Shell from an Exchange 2013 server to retain all of the properties and settings, including the user's PIN.
 
@@ -443,15 +444,15 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-- [New-MoveRequest](https://technet.microsoft.com/en-us/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](/powershell/module/exchange/New-MoveRequest)
 
-- [New-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch)
 
-- [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
+- [Moving Mailboxes](/previous-versions/office/exchange-server-2007/bb124797(v=exchg.80))
 
 To move an Exchange 2007 mailbox to an Exchange 2013 Mailbox server by using the EAC:
 
-1. In the EAC, click **Recipients** \> **Migration**, and then click **Add** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, click **Recipients** \> **Migration**, and then click **Add** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. In the **New local mailbox move** wizard, select the user you want to move, click **OK**, and then click **Next**.
 
@@ -465,9 +466,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 ## Step 12: Enable new users for UM or configure settings for an existing UM-enabled user
 
-A user must have a mailbox before they can be enabled for Unified Messaging. But, by default, a user who has a mailbox isn't enabled for UM. After the user is UM-enabled, you can manage, modify, and configure the UM properties and voice mail features for them. You can enable a user for UM by using the EAC or the Shell. Learn more at [Voice mail for users](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users).
+A user must have a mailbox before they can be enabled for Unified Messaging. But, by default, a user who has a mailbox isn't enabled for UM. After the user is UM-enabled, you can manage, modify, and configure the UM properties and voice mail features for them. You can enable a user for UM by using the EAC or the Shell. Learn more at [Voice mail for users](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users.md).
 
-When you enable a user for UM, you must define at least one extension number that UM will use when voice mail is submitted to the user's mailbox and to allow the user to use Outlook Voice Access. After you enable the user for UM, you can add secondary extension numbers to the user's mailbox, modify or remove them by configuring the Exchange Unified Messaging (EUM) proxy address on the user's mailbox, or add or remove additional or secondary extensions for the user in the EAC. To add, modify, or remove extension numbers, E.164 numbers, or SIP addresses, see [Voice mail-enabled user procedures](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures).
+When you enable a user for UM, you must define at least one extension number that UM will use when voice mail is submitted to the user's mailbox and to allow the user to use Outlook Voice Access. After you enable the user for UM, you can add secondary extension numbers to the user's mailbox, modify or remove them by configuring the Exchange Unified Messaging (EUM) proxy address on the user's mailbox, or add or remove additional or secondary extensions for the user in the EAC. To add, modify, or remove extension numbers, E.164 numbers, or SIP addresses, see [Voice mail-enabled user procedures](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures.md).
 
 To enable a user for Unified Messaging by using the EAC:
 
@@ -523,9 +524,9 @@ If required, you can configure a user that's been enabled for UM by using the EA
 
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
 
-   - To add an extension number, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
+   - To add an extension number, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
 
-   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon").
+   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon").
 
 6. If you make any changes, click **Save**.
 
@@ -547,9 +548,9 @@ The last step in the process of upgrading to Exchange 2013 UM is to configure th
 
 - [UM services](um-services-exchange-2013-help.md)
 
-- [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
+- [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](../ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways.md)
 
-- [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
+- [Telephony advisor for Exchange 2013](../ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013.md)
 
 ## Step 14: Disable call answering on an Exchange 2007 Unified Messaging server
 

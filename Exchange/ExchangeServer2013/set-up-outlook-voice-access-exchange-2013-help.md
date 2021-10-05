@@ -1,12 +1,13 @@
 ---
 title: 'Setting up Outlook Voice Access: Exchange 2013 Help'
 TOCTitle: Setting up Outlook Voice Access
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

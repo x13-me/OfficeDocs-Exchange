@@ -2,13 +2,14 @@
 title: 'Configure an accepted domain for an independent business unit'
 TOCTitle: Configure an accepted domain for an independent business unit
 ms:assetid: bc95dbdc-3669-4c06-ab94-90093bc0dbfd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657491(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657491(v=EXCHG.150)
 ms:contentKeyID: 49289397
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,13 +34,13 @@ In some situations you may want to configure an accepted domain for an independe
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to configure the an accepted domain as an external relay domain
 
 You may want to configure an accepted domain for a business unit with email servers outside your Exchange organization.
 
-1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, select the domain you wish to configure, and click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name. This may be different than the accepted domain. For example, the domain Contoso.com could have a display name of Contoso Local Accepted Domain.
 

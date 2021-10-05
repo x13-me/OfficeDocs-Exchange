@@ -1,15 +1,16 @@
 ---
 description: 'Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange Server 2016 and Exchange Server 2019.'
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms.collection: exchange-server
-ms.date: 7/5/2018
 ms.reviewer: 
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Mailbox imports and exports in Exchange Server
 

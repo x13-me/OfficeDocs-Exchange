@@ -1,12 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see Microsoft Speech Technologies.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: c5192e05-905c-440f-beec-1f697edc15b3
-ms.date: 12/9/2016
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Allow users to see a voice mail transcript in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -16,6 +17,9 @@ manager: serdars
 ---
 
 # Allow users to see a voice mail transcript in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook 2010 or later, Outlook on the web, and in other supported email programs.
 
@@ -59,7 +63,7 @@ Voice Mail Preview text is available in the following languages:
 
 - Spanish (Spain) (es-ES)
 
-If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=266542).
+If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35368).
 
 If you have an on-premises or hybrid deployment, after you install a UM language pack, the dial plans and auto attendants can be configured to use the language you've chosen. For online customers, you don't have to install any UM language packs. Many companies have only one UM dial plan. UM will try to create a voice mail preview in the default dial plan language, but will only be successful if the default language supports Voice Mail Preview. A UM dial plan can only be configured to create voice mail previews in one language at a time.
 

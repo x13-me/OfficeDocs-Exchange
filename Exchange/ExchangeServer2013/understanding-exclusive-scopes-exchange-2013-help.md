@@ -2,13 +2,14 @@
 title: 'Understanding exclusive scopes: Exchange 2013 Help'
 TOCTitle: Understanding exclusive scopes
 ms:assetid: 32492622-3b01-4e3b-8288-ed39525eea75
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638110(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638110(v=EXCHG.150)
 ms:contentKeyID: 49289222
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -170,6 +171,6 @@ Notice that Fred and Martin are accessible by both exclusive scopes. This is bec
 
 **Interaction between exclusive scopes and regular scopes**
 
-![Exclusive and regular scope interaction](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
+![Exclusive and regular scope interaction.](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
 
 For more information about management scopes, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).

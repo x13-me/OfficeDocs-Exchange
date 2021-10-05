@@ -1,12 +1,14 @@
 ---
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: serdars
 manager: serdars
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.collection: exchange-server
 description: 'Summary: Updates to Exchange Server and Exchange Online content.'
+f1.keywords:
+- NOCSH
 audience: ITPro
 title: Exchange content updates
 

@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -58,14 +59,14 @@ Ultimately, you need to decide on the approach that best fits the needs of your 
 
 - Estimated time to complete this task: 10 minutes.
 
-- Some of these procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- Some of these procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Create a dedicated Receive connector for anonymous relay
 
@@ -73,7 +74,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 ### Use the EAC to create a dedicated Receive connector for anonymous relay
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Receive connector** wizard.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Receive connector** wizard.
 
 2. On the first page, enter the following information:
 
@@ -91,7 +92,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
    - If the Exchange server has an internal network adapter and an external network adapter, and segregates internal and external network traffic by using different subnets, you can further enhance security for the connector by limiting the use of the connector to requests that originate on the internal network adapter. To do this:
 
-     1. Select the existing **(All available IPv4)** entry, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+     1. Select the existing **(All available IPv4)** entry, click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
 
      2. In the resulting **Network Adapter Bindings** dialog, select **Specify an IPv4 address or an IPv6 address**, and enter a valid and available IP address that's configured on the internal network adapter, and then click **Save**.
 
@@ -99,7 +100,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 4. On the next page, in the **Remote network settings** section, do the following steps:
 
-   1. Select the existing **0.0.0.0-255.255.255.255** entry, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Select the existing **0.0.0.0-255.255.255.255** entry, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png), and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
 
    2. In the resulting **Remote Address Settings** dialog, enter an IP address or IP address range that identifies the network hosts that are allowed use this connector, and then click **Save**. You can repeat this step to add multiple IP addresses or IP address ranges. Err on the side of being too specific instead of too general to clearly identify the network hosts that are allowed to use this connector.
 
@@ -109,7 +110,7 @@ You can create the Receive connector in the EAC or in the Exchange Management Sh
 
 To create the same Receive connector in the Exchange Management Shell, use the following syntax:
 
-```
+```PowerShell
 New-ReceiveConnector -Name <ConnectorName> -TransportRole FrontendTransport -Custom -Bindings <LocalIPAddresses>:25 -RemoteIpRanges <RemoteIPAddresses>
 ```
 
@@ -125,7 +126,7 @@ This example creates a new Receive connector with the following configuration op
 
 - **Remote IP addresses that are allowed to use this connector**: 192.168.5.10 and 192.168.5.11
 
-```
+```PowerShell
 New-ReceiveConnector -Name "Anonymous Relay" -TransportRole FrontendTransport -Custom -Bindings 0.0.0.0:25 -RemoteIpRanges 192.168.5.10,192.168.5.11
 ```
 
@@ -151,19 +152,19 @@ Run the following commands in the Exchange Management Shell:
 
 1.
 
-  ```
+  ```PowerShell
   Set-ReceiveConnector "Anonymous Relay" -PermissionGroups AnonymousUsers
   ```
 
 2.
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector "Anonymous Relay" | Add-ADPermission -User "NT AUTHORITY\ANONYMOUS LOGON" -ExtendedRights "Ms-Exch-SMTP-Accept-Any-Recipient"
   ```
 
 ### Configure the connections as externally secured
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, select the Anonymous Relay connector, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**, select the Anonymous Relay connector, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. In the properties of the connector, click **Security** and make the following selections:
 
@@ -175,7 +176,7 @@ Run the following commands in the Exchange Management Shell:
 
 To perform these same steps in the Exchange Management Shell, run the following command:
 
-```
+```PowerShell
 Set-ReceiveConnector "Anonymous Relay" -AuthMechanism ExternalAuthoritative -PermissionGroups ExchangeServers
 ```
 
@@ -185,23 +186,23 @@ To verify that you've successfully configured anonymous relay, do the following 
 
 - Verify the configuration of the dedicated Receive connector.
 
-  ```
+  ```PowerShell
   Get-ReceiveConnector "Anonymous Relay" | Format-List Enabled,TransportRole,Bindings,RemoteIPRanges
   ```
 
 - Verify the permissions on the dedicated Receive connector.
 
-  ```
+  ```PowerShell
   Get-ADPermission "Anonymous Relay" -User "NT AUTHORITY\ANONYMOUS LOGON" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 
   Or
 
-  ```
+  ```PowerShell
   Get-ADPermission "Anonymous Relay" -User "MS Exchange\Externally Secured Servers" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
   ```
 
-- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](https://go.microsoft.com/fwlink/p/?linkId=179054).
+- Use Telnet to test if one or more of the specified network hosts can connect to the dedicated Receive connector, and can anonymously relay mail through the connector. By default, the Telnet Client isn't installed in most client or server versions of Microsoft Windows. To install it, see [Install Telnet Client](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)).
 
   For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
 

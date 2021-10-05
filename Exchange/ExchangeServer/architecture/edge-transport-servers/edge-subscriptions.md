@@ -1,23 +1,27 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about subscribing an Edge Transport server to your internal Exchange Server 2016 or Exchange Server 2019 organization, which provides end-to-end mail flow, recipient look-up, and safelist aggregation.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
-ms.date: 7/9/2018
 ms.reviewer: 
 title: Edge Subscriptions
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Edge Subscriptions
+# Edge Subscriptions in Exchange Server
 
 Edge Subscriptions are used to populate the Active Directory Lightweight Directory Services (AD LDS) instance on the Edge Transport server with Active Directory data. Although creating an Edge Subscription is optional, subscribing an Edge Transport server to the Exchange organization provides a simpler management experience and enhances antispam features. You need to create an Edge Subscription if you plan to use recipient lookup or safelist aggregation, or if you plan to help secure SMTP communications with partner domains by using Mutual Transport Layer Security (MTLS).
+
+> [!NOTE]
+> The Edge Subscription is mandatory if Edge Transport should handle hybrid mail flow. Organization headers are only promoted between Edge Transport and Mailbox servers through the Direct Trust Authentication (aka Mutual TLS) and Edge Subscription is required to achieve this authentication method.
 
 ## Edge Subscription process
 
@@ -104,7 +108,7 @@ When you create an Edge Subscription file by running the **New-EdgeSubscription*
 
 This example creates and exports the Edge Subscription file on the Edge Transport server.
 
-```
+```PowerShell
 New-EdgeSubscription -FileName "C:\Data\EdgeSubscriptionInfo.xml"
 ```
 
@@ -143,7 +147,7 @@ When you import the Edge Subscription file to the Active Directory site by runni
 
 This example subscribes an Edge Transport server to the specified site and automatically creates the Internet Send connector and the Send connector from the Edge Transport server to the Mailbox servers.
 
-```
+```PowerShell
 New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
 ```
 

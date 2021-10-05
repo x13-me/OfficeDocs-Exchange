@@ -2,13 +2,14 @@
 title: 'Prepare mailboxes for cross-forest moves using sample code: Exchange 2013 Help'
 TOCTitle: Prepare mailboxes for cross-forest moves using sample code
 ms:assetid: f35ac7a5-bb84-4653-b6d0-65906e93627b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861124(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee861124(v=EXCHG.150)
 ms:contentKeyID: 49360517
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -24,9 +25,9 @@ For more information about preparing for cross-forest moves, including descripti
 
 ## What do you need to know before you begin?
 
-- Download the sample code from the [Prepare for Online Mailbox Move](https://go.microsoft.com/fwlink/p/?linkid=177882) page in the Microsoft Download Center.
+- Download the sample code from the [Prepare for Online Mailbox Move](https://www.microsoft.com/download/details.aspx?id=17741) page in the Microsoft Download Center.
 
-- To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1). To download the feature pack, see Microsoft Knowledge Base article 977791, [Service Pack 1 (build 3.3.1139.2) is available for Identity Lifecycle Manager 2007 Feature Pack 1](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
+- To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1).
 
 - You also need the following:
 
@@ -39,7 +40,7 @@ For more information about preparing for cross-forest moves, including descripti
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Install the ILM sample code
 
@@ -75,7 +76,7 @@ For more information about preparing for cross-forest moves, including descripti
 
    **Create Management Agent page**
 
-   ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
+   ![Management Agent Exchange 2010 provisioning.](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
 
 6. On the ILM Identity Manager Console on the **Create Management Agent** pane, open the **Properties** for the Source Forest Management Agent. Select the **Configure Directory Partitions** wizard, and then click **Containers** to select the container that will contain the mailboxes you will be moving to the target forest. Clear the selections for all other containers, that is, scope the management agent to only manage this one container. Similarly, for the target forest MA, select the container to which mail-enabled users will be provisioned, that is, the TargetOU specified in step 2.
 

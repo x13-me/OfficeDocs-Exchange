@@ -2,13 +2,14 @@
 title: 'Add a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Add a mailbox database copy
 ms:assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298080(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298080(v=EXCHG.150)
 ms:contentKeyID: 48385258
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,13 +40,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to add a mailbox database copy
 
 1. In the EAC, go to **Servers** \> **Databases**.
 
-2. Select the database that you want to copy, and then click ![Add database copy](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
+2. Select the database that you want to copy, and then click ![Add database copy.](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
 
 3. On the **add mailbox database copy** page, click **browse...**, select the Mailbox server that will host the database copy, and then click **OK**.
 

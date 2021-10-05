@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure redirection for Outlook on the web in Exchange Server 2016 or Exchange Server 2019 so http requests are automatically redirected to https.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Configure http to https redirection for Outlook on the web in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -17,9 +18,9 @@ manager: serdars
 
 # Configure http to https redirection for Outlook on the web in Exchange Server
 
-By default in Exchange Server, the URL https://*\<ServerName\>* redirects users to https://*\<ServerName\>*/owa. But, if anyone tries to access Outlook on the web (formerly known as Outlook Web App) by using http://*\<ServerName\>* or http://*\<ServerName\>*/owa, they'll get an error.
+By default in Exchange Server, the URL `https://*<ServerName>*` redirects users to `https://*<ServerName>*/owa`. But, if anyone tries to access Outlook on the web (formerly known as Outlook Web App) by using `http://*<ServerName>*` or `http://*<ServerName>*/owa`, they'll get an error.
 
-You can configure http redirection for Outlook on the web so that requests for http://*\<ServerName\>* or http://*\<ServerName\>*/owa are automatically redirected to https://*\<ServerName\>*/owa. This requires the following configuration steps in Internet Information Services (IIS):
+You can configure http redirection for Outlook on the web so that requests for `http://*<ServerName>*` or `http://*<ServerName>*/owa` are automatically redirected to `https://*<ServerName>*/owa`. This requires the following configuration steps in Internet Information Services (IIS):
 
 1. Remove the **Require SSL** setting from the default website.
 
@@ -46,7 +47,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Use IIS Manager to remove the Require SSL setting from the default website
 
@@ -58,7 +59,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 
 4. In the **IIS** section, double-click **SSL Settings**.
 
-    ![In IIS Manager, select the default website, and then select SSL Settings](../../media/e7a2016d-b4a0-4b5c-a807-71bb362dd2ee.png)
+    ![In IIS Manager, select the default website, and then select SSL Settings.](../../media/e7a2016d-b4a0-4b5c-a807-71bb362dd2ee.png)
 
 5. On the **SSL Settings** page, clear the **Require SSL** check box, and in the **Actions** pane, click **Apply**.
 
@@ -66,7 +67,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:access -sslFlags:None -commit:APPHOST
 ```
 
@@ -82,7 +83,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 3. In the **IIS** section, double-click **SSL Settings**.
 
-    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select SSL Settings](../../media/32a0f32f-8db2-4e23-b145-7253caf565a7.png)
+    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select SSL Settings.](../../media/32a0f32f-8db2-4e23-b145-7253caf565a7.png)
 
 4. On the **SSL Settings** page, select the **Require SSL** check box, and in the **Actions** pane, click **Apply**.
 
@@ -92,7 +93,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 **Note**: To perform these procedures on the command line, replace _\<VirtualDirectory\>_ with the name of the virtual directory, and run the following command in an elevated command prompt:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/<VirtualDirectory>" -section:Access -sslFlags:Ssl,Ssl128 -commit:APPHOST
 ```
 
@@ -104,11 +105,11 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 3. In the **IIS** section, double-click **HTTP Redirect**.
 
-    ![In IIS Manager, select the default website, and then select HTTP Redirect](../../media/2d799c1b-1b95-4b2f-8947-54cf534e9864.png)
+    ![In IIS Manager, select the default website, and then select HTTP Redirect.](../../media/2d799c1b-1b95-4b2f-8947-54cf534e9864.png)
 
 4. On the **HTTP Redirect** page, configure the following settings:
 
-5. Select the **Redirect requests to this destination** check box, and enter the value /owa.
+5. Select the **Redirect requests to this destination** check box, and enter the value `https://*<OWAUrl>*/owa` (For example, <https://webmail.contoso.com/owa>).
 
 6. In the **Redirect Behavior** section, select the **Only redirect requests to content in this directory (not subdirectories)** check box.
 
@@ -116,12 +117,12 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
    When you're finished, click **Apply** in the **Actions** pane.
 
-    ![In IIS Manager, select the default web site, and then double-click HTTP Redirect](../../media/0d849f12-0310-4f09-9a12-18d5953c4856.png)
+    ![In IIS Manager, select the default web site, and then double-click HTTP Redirect.](../../media/0d849f12-0310-4f09-9a12-18d5953c4856.png)
 
-**Note**: To perform this procedure on the command line, open an elevated command prompt and run the following command:
+**Note**: To perform this procedure on the command line, replace _\<OWAUrl\>_ with the URL of the OWA virtual directory, open an elevated command prompt and run the following command:
 
-```
-%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:httpredirect -enabled:true -destination:"/owa" -childOnly:true
+```console
+%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:httpredirect -enabled:true -destination:"https://<OWAUrl>/owa" -childOnly:true
 ```
 
 ## Step 4: Use IIS Manager to remove http redirection from all virtual directories in the default website
@@ -136,7 +137,7 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 3. In the **IIS** section, double-click **HTTP Redirect**.
 
-    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select HTTP Redirect](../../media/45dcd4ba-f0bd-463e-891c-edf2571f0611.png)
+    ![In IIS Manager, expand the Default Web Site, select the virtual directory, and then select HTTP Redirect.](../../media/45dcd4ba-f0bd-463e-891c-edf2571f0611.png)
 
 4. On the **HTTP Redirect** page, change the following settings:
 
@@ -146,13 +147,13 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 7. In the **Actions** pane, click **Apply**.
 
-    ![In IIS Manager, expand the default web site, select a virtual directory, and then double-click HTTP Redirect](../../media/6cba00fe-2dde-4d55-8075-82184a5f765e.png)
+    ![In IIS Manager, expand the default web site, select a virtual directory, and then double-click HTTP Redirect.](../../media/6cba00fe-2dde-4d55-8075-82184a5f765e.png)
 
 8. Repeat the previous steps on each virtual directory in the default website.
 
  **Note**: To perform these procedures on the command line, replace _\<VirtualDirectory\>_ with the name of the virtual directory, and run the following command in an elevated command prompt:
 
-```
+```console
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/<VirtualDirectory>" -section:httpredirect -enabled:false -destination:"" -childOnly:false
 ```
 
@@ -162,15 +163,15 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
 2. In the **Actions** pane, click **Restart**.
 
-    ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+    ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following commands:
 
-```
-net stop was /y
+```console
+net stop w3svc /y
 ```
 
-```
+```console
 net start w3svc
 ```
 

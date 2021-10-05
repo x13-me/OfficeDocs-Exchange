@@ -1,11 +1,10 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online.
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
-ms.date: 
 ms.reviewer: 
 title: Hierarchical address books in Exchange Online
 ms.collection: 
@@ -13,6 +12,8 @@ ms.collection:
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
+f1.keywords:
+- NOCSH
 manager: serdars
 
 ---
@@ -31,7 +32,7 @@ In an HAB, your root organization (for example, Contoso, Ltd) is used as the top
 
 - The third-level child tiers represent departments within the Corporate Office division: Human Resources, Accounting Group, and Administration Group.
 
-![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
+![Hierarchical Address Book dialog.](../../media/ITPro_Mailbox_HABDisplay.gif)
 
 You can provide an additional level of hierarchical structure by using the _SeniorityIndex_ parameter. When creating an HAB, use the _SeniorityIndex_ parameter to rank individual recipients or organizational groups by seniority within these organizational tiers. This ranking specifies the order in which the recipients or groups are displayed in the HAB. For example, in the preceding example, the _SeniorityIndex_ parameter for the recipients in the Corporate Office division is set to the following:
 

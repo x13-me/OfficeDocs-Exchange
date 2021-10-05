@@ -1,21 +1,22 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or Exchange Server 2019 organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Track messages with delivery reports
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Track messages with delivery reports
+# Exchange Server: Track messages with delivery reports
 
 Delivery Reports is a message tracking tool in the Exchange admin center (EAC) that you can use to search for delivery status on email messages that were sent to or from users in your organization's address book. You can track delivery information about messages sent by or received from any specific mailbox in your organization. The message's content isn't returned in the delivery report, but the subject line is displayed in the results. You can track messages for up to 14 days after they were sent or received.
 
@@ -30,7 +31,7 @@ Delivery Reports is a message tracking tool in the Exchange admin center (EAC) t
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to track messages
 
@@ -52,7 +53,7 @@ Delivery Reports is a message tracking tool in the Exchange admin center (EAC) t
 
 ## Use the EAC to review a delivery report
 
-To view delivery information, select a message in the **Search results** pane and click **Details** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+To view delivery information, select a message in the **Search results** pane and click **Details** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 The delivery report shows delivery status and detailed delivery information for the message you have selected from the **Search results** pane. At the top of the report, you'll see the following fields:
 
@@ -70,7 +71,7 @@ This section appears in the delivery report if a message was sent to more than o
 
 - **Summary to date**: Displays total number of recipients, and if there are messages **Pending**, **Delivered**, or **Unsuccessful**. Click the hyperlinks to sort by status.
 
-- **Search box**: The search box is useful if you sent the message to a group of more than 30 recipients. In the search box, type an email address that you want to get delivery information about and click the magnifying glass ![Search icon](../../media/ITPro_EAC_.png).
+- **Search box**: The search box is useful if you sent the message to a group of more than 30 recipients. In the search box, type an email address that you want to get delivery information about and click the magnifying glass ![Search icon.](../../media/ITPro_EAC_.png).
 
 - **To**: Shows the email address of the recipient.
 
@@ -102,4 +103,4 @@ When you're done reviewing the report, click **Close**. Delivery reports aren't 
 
 ## How do you know this worked?
 
-If your search was successful, messages that fit the search criteria are listed in the **Search results** pane. To view the delivery information for a specific message, select it and then click **Details** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). If no messages are displayed in the **Search results** pane, change the search criteria and then re-run the search.
+If your search was successful, messages that fit the search criteria are listed in the **Search results** pane. To view the delivery information for a specific message, select it and then click **Details** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). If no messages are displayed in the **Search results** pane, change the search criteria and then re-run the search.

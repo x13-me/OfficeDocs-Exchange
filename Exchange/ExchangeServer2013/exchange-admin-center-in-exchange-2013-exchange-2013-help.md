@@ -2,13 +2,14 @@
 title: 'Exchange admin center in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Exchange admin center in Exchange 2013
 ms:assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150562(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150562(v=EXCHG.150)
 ms:contentKeyID: 47560086
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -20,17 +21,9 @@ The Exchange admin center (EAC) is the web-based management console in Microsoft
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://technet.microsoft.com/en-us/library/jj200743\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
-Looking for the Exchange Online Protection version of this topic? See [Exchange admin center in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj723141\(v=exchg.150\)).
-
-Contents
-
-Accessing the EAC
-
-Common user interface elements in the EAC
-
-Supported browsers
+Looking for the standalone Exchange Online Protection (EOP) version of this topic? See [Exchange admin center in EOP](/microsoft-365/security/office-365-security/exchange-admin-center-eop).
 
 ## Accessing the EAC
 
@@ -40,7 +33,7 @@ Because the EAC is now a web-based management console, you'll need to use the EC
 
 - **External URL: `https://mail.contoso.com/ecp`**: The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
-To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](https://technet.microsoft.com/en-us/library/dd351058\(v=exchg.150\)) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
+To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](/powershell/module/exchange/Get-EcpVirtualDirectory) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
 
 If you're in a coexistence scenario, where you're running Exchange 2010 and Exchange 2013 in the same organization, and your mailbox is still housed on the Exchange 2010 Mailbox server, the browser will default to the Exchange 2010 ECP. You can access the EAC by adding the Exchange version to the URL. For example, to access the EAC whose virtual directory is hosted on the Client Access server CAS15-NA, use the following URL: `https://CAS15-NA/ecp/?ExchClientVer=15`. Conversely, if you want to access the Exchange 2010 ECP and your mailbox resides on an Exchange 2013 Mailbox server, use the following URL: `https://CAS14-NA/ecp/?ExchClientVer=14`.
 
@@ -48,11 +41,11 @@ If you're in a coexistence scenario, where you're running Exchange 2010 and Exch
 
 The section describes the user interface elements that are common across the EAC.
 
-![Exchange admin center](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange admin center")
+![Exchange admin center.](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange admin center")
 
 ## Cross-premises navigation
 
-The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/en-us/library/jj200581\(v=exchg.150\)).
+The cross-premises navigation allows you to easily switch between your Exchange Online and on-premises Exchange deployments. If you don't have an Exchange Online organization, the link will direct you to the Microsoft 365 or Office 365 sign-up page. To learn more, see [Exchange Server Hybrid Deployments](../ExchangeHybrid/exchange-hybrid.md).
 
 ## Feature pane
 
@@ -120,7 +113,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 <tr class="even">
 <td><p><img src="images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif" title="Search icon" alt="Search icon" /></p></td>
 <td><p>Search</p></td>
-<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find. Check out <a href="https://technet.microsoft.com/en-us/library/jj156853(v=exchg.150)">[Recipients &gt; ] Advanced search</a> for more search options.</p></td>
+<td><p>Use this icon to open a search box in which you can type the search phrase for an object you want to find.</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="Refresh Icon" alt="Refresh Icon" /></p></td>
@@ -164,9 +157,9 @@ The EAC includes a notification viewer that displays the status of long-running 
 
 ## Me tile and Help
 
-The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
+The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon.](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
 
-- **Help**: Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
+- **Help**: Click ![Help Icon.](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
 
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 

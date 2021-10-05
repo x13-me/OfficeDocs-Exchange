@@ -2,13 +2,14 @@
 title: 'Configure an accepted domain within your Exchange organization as authoritative'
 TOCTitle: Configure an accepted domain within your Exchange organization as authoritative
 ms:assetid: e182d54f-e58a-47ba-a5c1-28c0dfa86eed
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657734(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657734(v=EXCHG.150)
 ms:contentKeyID: 49300733
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,13 +34,13 @@ If a domain belonging to your organization hosts mailboxes for all the recipient
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to configure an accepted domain as authoritative
 
 If an accepted domain for your Exchange organization hosts all the mailboxes for recipients within that domain's SMTP namespace, you may want to configure it as an authoritative domain.
 
-1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **Name** field, enter the display name for the accepted domain. Each accepted domain for your organization must have a unique display name This may be different than the accepted domain. For example, the domain contoso.com could have a display name of Contoso Local Accepted Domain.
 

@@ -1,23 +1,24 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Receive connectors
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Receive connectors
+# Receive connectors in Exchange Server
 
 Exchange servers use Receive connectors to control inbound SMTP connections from:
 
@@ -253,36 +254,36 @@ The available Receive connector permissions are described in the following table
 
   - `ms-Exch-SMTP-Send-XMessageContext-FastIndex`
 
-- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://technet.microsoft.com/library/bb232136.aspx).
+- Permissions names that contain `ms-Exch-Accept-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](../../../ExchangeServer2013/header-firewall-exchange-2013-help.md).
 
 ### Receive connector permission procedures
 
 To see the permissions that are assigned to security principals on a Receive connector, use the following syntax in the Exchange Management Shell:
 
-```
+```PowerShell
 Get-ADPermission -Identity <ReceiveConnector> [-User <SecurityPrincipal>] | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 For example, to see the permissions that are assigned to all security principals on the Receive connector named Client Frontend Mailbox01, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "Client Frontend Mailbox01" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To see the permissions that are assigned only to the security principal `NT AUTHORITY\Authenticated Users` on the Receive connector named Default Mailbox01, run the following command:
 
-```
+```PowerShell
 Get-ADPermission -Identity "Default Mailbox01" -User "NT AUTHORITY\Authenticated Users" | where {($_.Deny -eq $false) -and ($_.IsInherited -eq $false)} | Format-Table User,ExtendedRights
 ```
 
 To add permissions to a security principal on a Receive connector, use the following syntax:
 
-```
+```PowerShell
 Add-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
 
 To remove permissions from a security principal on a Receive connector, use the following syntax:
 
-```
+```PowerShell
 Remove-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```

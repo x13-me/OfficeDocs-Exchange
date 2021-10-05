@@ -1,14 +1,15 @@
 ---
-title: 'Configure message retry, resubmit, and expiration intervals'
+title: 'Configure message retry, resubmit, and expiration intervals in Exchange Server'
 TOCTitle: Configure message retry, resubmit, and expiration intervals
 ms:assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998043(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998043(v=EXCHG.150)
 ms:contentKeyID: 50646232
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -29,7 +30,7 @@ In Microsoft Exchange Server 2013, you can configure message retry, resubmit, an
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use EdgeTransport.exe.config to configure the queue glitch retry count, the queue glitch retry interval, the mailbox delivery queue retry interval, and the maximum idle time before resubmit interval.
 
@@ -77,7 +78,7 @@ The outbound connection failure retry interval specifies the retry interval for 
 
 ## Use the EAC to configure the transient failure retry attempts, the transient failure retry interval, or the outbound connection failure retry interval
 
-1. In the Exchange admin center (EAC), click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the Exchange admin center (EAC), click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Retries** section, enter a value for **Outbound connection failure retry interval (seconds)**, the **Transient failure retry interval (minutes)**, or the **Transient failure retry attempts**.
 
@@ -131,7 +132,7 @@ You can use the EAC or the Shell to configure the delay DSN notification timeout
 
 ## Use the EAC to configure the delay DSN message notification timeout interval
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Notifications** section, enter a value for **Notify sender when message is delayed after (hours)**.
 
@@ -175,7 +176,7 @@ Set-TransportConfig -InternalDelayDSNEnabled $false
 
 ## Use the EAC to configure the message expiration timeout interval
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Message expiration** section, enter a value for **Maximum time since submission (days)**.
 

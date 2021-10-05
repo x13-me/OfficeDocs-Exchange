@@ -2,13 +2,14 @@
 title: 'Modify, disable, or remove a sharing policy: Exchange 2013 Help'
 TOCTitle: Modify, disable, or remove a sharing policy
 ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657460(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,15 +32,15 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to modify a sharing policy
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In **sharing policy**, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. In **sharing policy**, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. In **sharing rule**, modify the sharing rules accordingly. You can change settings such as the domain you want to share information with and the sharing level for calendar appointments. When finished, click **rave** to close the **sharing rules** dialog box.
 
@@ -49,7 +50,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **sharing policy**, select the **Make this policy my default sharing policy** check box.
 
@@ -70,7 +71,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. In the warning, click **yes** to delete the sharing policy.
 
@@ -110,4 +111,4 @@ For details about how to create a sharing policy, see [Create a sharing policy](
   Remove-SharingPolicy -Identity Contoso -Confirm
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/en-us/library/dd297931\(v=exchg.150\)) and [Remove-SharingPolicy](https://technet.microsoft.com/en-us/library/dd351071\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-SharingPolicy](/powershell/module/exchange/Set-SharingPolicy) and [Remove-SharingPolicy](/powershell/module/exchange/Remove-SharingPolicy).

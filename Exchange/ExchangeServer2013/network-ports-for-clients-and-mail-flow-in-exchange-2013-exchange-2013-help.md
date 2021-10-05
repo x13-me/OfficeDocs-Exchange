@@ -2,13 +2,14 @@
 title: 'Network ports for clients and mail flow in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Network ports for clients and mail flow in Exchange 2013
 ms:assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb331973(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb331973(v=EXCHG.150)
 ms:contentKeyID: 64916714
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -36,7 +37,7 @@ The network ports that are required for email clients to access mailboxes and ot
 
 - Edge Transport servers have no involvement in the network traffic that's associated with these clients and services.
 
-![Network ports required for clients and services](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png)
+![Network ports required for clients and services.](images/Bb331973.f5ba3439-f001-43c8-848e-0e3fd0fce931(EXCHG.150).png)
 
 <table>
 <colgroup>
@@ -68,7 +69,7 @@ The network ports that are required for email clients to access mailboxes and ot
 <ul>
 <li><p><a href="autodiscover-service-for-exchange-2013.md">Autodiscover service</a></p></li>
 <li><p><a href="exchange-activesync-exchange-2013-help.md">Exchange ActiveSync</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/?linkid=529544">EWS reference for Exchange</a></p></li>
+<li><p><a href="/exchange/client-developer/web-service-reference/ews-reference-for-exchange">EWS reference for Exchange</a></p></li>
 <li><p><a href="offline-address-books-exchange-2013-help.md">Offline address books</a></p></li>
 <li><p><a href="outlook-anywhere-exchange-2013-help.md">Outlook Anywhere</a></p></li>
 <li><p><a href="mapi-over-http-exchange-2013-help.md">MAPI over HTTP</a></p></li>
@@ -121,7 +122,7 @@ How mail is delivered to and from your Exchange organization depends on your Exc
 
 The network ports that are required for mail flow in an Exchange organization that has only Client Access servers and Mailbox servers are described in the following diagram and table. Although the diagram shows separate Mailbox and Client Access servers, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
-![Network ports required for mail flow (no Edge Transport servers)](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
+![Network ports required for mail flow (no Edge Transport servers).](images/Bb331973.af54dfd3-fe6b-4b6e-bb8e-b00df94a0be0(EXCHG.150).png "Network ports required for mail flow (no Edge Transport servers)")
 
 <table>
 <colgroup>
@@ -186,7 +187,7 @@ For more information, see [Mail flow](mail-flow-exchange-2013-help.md).
 
 The network ports that are required for mail flow in Exchange organizations that have Edge Transport servers are described in the following diagram and table. Unless otherwise noted, the concepts are the same whether the Client Access server and the Mailbox server are installed on the same computer or on separate computers.
 
-![Network ports required for mail flow with Edge Transport servers](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
+![Network ports required for mail flow with Edge Transport servers.](images/Bb331973.110c79b3-dbd9-4cb5-bba1-02048363ee1c(EXCHG.150).png "Network ports required for mail flow with Edge Transport servers")
 
 <table>
 <colgroup>
@@ -271,7 +272,7 @@ DNS resolution of the next mail hop is a fundamental part of mail flow in any Ex
 
 ## Network ports required for hybrid deployments
 
-The network ports that are required for an organization that uses both Exchange 2013 and Microsoft Office 365 are covered in the "Hybrid deployment protocols, port and endpoints" section in [Hybrid deployment prerequisites](https://technet.microsoft.com/en-us/library/hh534377\(v=exchg.150\)).
+The network ports that are required for an organization that uses both Exchange 2013 and Microsoft 365 or Office 365 are covered in the "Hybrid deployment protocols, port and endpoints" section in [Hybrid deployment prerequisites](../ExchangeHybrid/hybrid-deployment-prerequisites.md).
 
 ## Network ports required for Unified Messaging
 
@@ -279,4 +280,4 @@ The network ports that are required for Unified Messaging are covered in the fol
 
 - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
-- [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
+- [Exchange Server 2013 SP1 Architecture Poster](https://www.microsoft.com/download/details.aspx?id=42542)

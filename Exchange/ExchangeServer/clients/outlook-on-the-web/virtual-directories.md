@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-ms.date: 7/6/2018
 ms.reviewer:
 title: View or configure Outlook on the web virtual directories in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -23,7 +24,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 - Estimated time to complete each procedure: 10 minutes.
 
-- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
 
@@ -32,13 +33,13 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view or configure Outlook on the web virtual directory properties
 
 1. In the EAC, go to **Servers** \> **Virtual directories**.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. Select the Outlook on the web virtual directory you want to view or configure.
 
@@ -56,11 +57,11 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
    - **External URL**: The default value is blank (not configured).
 
-3. To see more properties, or to modify the settings that aren't read only, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). The following tabs and settings are available:
+3. To see more properties, or to modify the settings that aren't read only, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). The following tabs and settings are available:
 
    - **General** tab:
 
-     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is https:// _\<Server FQDN\>_/owa (for example, https://mailbox01.contoso.com/owa).
+     - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is `https:// _<Server FQDN>_/owa` (for example, <https://mailbox01.contoso.com/owa>).
 
      - **External URL**: The URL that's used to access Outlook on the web from the Internet. The default value is blank.
 
@@ -88,13 +89,13 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
        - **User principal name (UPN)** For example, vbarrios@contoso.com. Note that if the UPN doesn't match the email address, users can't access Outlook on the web by using this method.
 
-       - **User name only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and user name when they sign in.
+       - **Username only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and username when they sign in.
 
        ![The Authentication tab in the properties of the Outlook on the web virtual directory in the EAC.](../../media/044c1a98-8109-4745-9827-f256303fcd46.png)
 
    - **Features** tab:
 
-     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [Outlook Web App Mailbox Policies](https://technet.microsoft.com/library/213b8b7a-1c29-49ee-8c98-d0364ddf4f9d.aspx).
+     These settings affect all users who connect to the Outlook on the web virtual directory. You can configure custom Outlook on the web settings for specific users or groups of users by using Outlook on the web mailbox policies. For more information, see [View or configure Outlook on the web mailbox policy properties](../../clients/outlook-on-the-web/mailbox-policies.md).
 
      - **Communication management**
 
@@ -160,17 +161,17 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 ## Use the EAC to configure the external URL for Outlook on the web
 
-1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Configure** (![Configure icon](../../media/ITPro_EAC_ConfigureIcon.png)).
+1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Configure** (![Configure icon.](../../media/ITPro_EAC_ConfigureIcon.png)).
 
    - You can use the **Select server** drop down list to filter the Exchange servers by name.
 
    - To only display Outlook on the web virtual directories, select **OWA** in the **Select type** drop down list.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. In the **Configure external access domain** page that opens, configure the following settings:
 
-   - **Select the servers to use with the external URL**: Click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) and select one or more Exchange servers that external clients will use to connect to Outlook on the web (don't select internal only servers).
+   - **Select the servers to use with the external URL**: Click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) and select one or more Exchange servers that external clients will use to connect to Outlook on the web (don't select internal only servers).
 
    - **Enter the domain name you will use with your external servers**: Enter the FQDN that external clients will use to connect to Outlook on the web (for example, mail.contoso.com). Note that this value needs to be configured and resolvable in your organization's public DNS.
 
@@ -182,13 +183,13 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 If an Outlook on the web virtual directory isn't working the way you expect, you can reset it. The virtual directory is deleted and recreated with the default settings. Although any customized settings are lost, you're forced to select a location for a text document to backup the current settings.
 
-1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Reset** (![Reset Icon](../../media/e9c2258e-90e2-4026-865a-1545de0f5e6a.png)).
+1. In the EAC, go to **Servers** \> **Virtual directories**, select the Outlook on the web virtual directory you want to view or configure, and then click **Reset** (![Reset Icon.](../../media/e9c2258e-90e2-4026-865a-1545de0f5e6a.png)).
 
    - You can use the **Select server** drop down list to filter the Exchange servers by name.
 
    - To only display Outlook on the web virtual directories, select **OWA** in the **Select type** drop down list.
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the OWA virtual directory.](../../media/e0ede2ac-7777-4aed-b3b4-8bfba68bc48e.png)
 
 2. In the **Warning** page that opens, specify the UNC path of the file to save the current virtual directory settings (for example, \\ _\<Server\>_\ _\<Share\>_\owavdir.txt or \\ _\<LocalServerName_\>\c$\owavdir.txt).
 
@@ -206,17 +207,17 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
 
      3. In the **Actions** pane, click **Restart**.
 
-     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+     ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
    - Command prompt:
 
     Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
-     ```
-     net stop was /y
+     ```console
+     net stop w3svc /y
      ```
 
-     ```
+     ```console
      net start w3svc
      ```
 
@@ -224,31 +225,31 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
 
 To use the Exchange Management Shell to view the properties of Outlook on the web virtual directories, use the following syntax:
 
-```
+```powershell
 Get-OWAVirtualDirectory [-Identity "<ExchangeServer>\owa <Website>"]
 ```
 
 This example returns a summary list of all Outlook on the web virtual directories on all Exchange servers in the organization.
 
-```
+```powershell
 Get-OWAVirtualDirectory
 ```
 
 This example returns detailed information for the Outlook on the web virtual directory in the default website on the Exchange server named Mailbox01.
 
-```
+```powershell
 Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-List
 ```
 
 This example returns the authentication methods and settings for the same virtual directory:
 
-```
+```powershell
 Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-List *Authentication*
 ```
 
  **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
 
-For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://technet.microsoft.com/library/63c48908-1116-4bab-8e5a-6c4dccbf3574.aspx).
+For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](/powershell/module/exchange/get-owavirtualdirectory).
 
 ## Use the Exchange Management Shell to configure Outlook on the web virtual directory settings
 
@@ -265,14 +266,14 @@ There are many more configuration settings available for Outlook on the web virt
 
 To use the Exchange Management Shell to configure the properties of Outlook on the web virtual directories, use the following syntax:
 
-```
+```powershell
 Set-OWAVirtualDirectory -Identity "<ExchangeServer>\owa <Website>" <Settings>
 ```
 
 This example enables configures direct file access in Outlook on the web to block file types that aren't specifically defined in the Allow list (the default action is allow).
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](/powershell/module/exchange/set-owavirtualdirectory).

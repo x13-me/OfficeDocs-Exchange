@@ -1,21 +1,22 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Configure message tracking
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Configure message tracking
+# Configure message tracking in Exchange Server
 
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use message tracking logs for message forensics, mail flow analysis, reporting, and troubleshooting.
 
@@ -40,18 +41,18 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 - Estimated time to complete: 5 minutes
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service" entries in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to configure message tracking on Mailbox servers
 
-1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. On the server properties page, click **Transport Logs**. In the **Message tracking log** section, change any of the following settings:
 
@@ -65,7 +66,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 As previously explained, you can use the **Set-TransportService** cmdlet to perform all message tracking configuration tasks on Mailbox servers and Edge Transport servers. To configure message tracking in the Exchange Management Shell, use the following syntax:
 
-```
+```powershell
 Set-TransportService [<ServerIdentity>] -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true | $false>
 ```
 
@@ -81,7 +82,7 @@ This example configures the following message tracking log settings on the serve
 
 - Sets the maximum age of a message tracking log file to 45 days.
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
 ```
 
@@ -90,21 +91,21 @@ Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Message Tracking Log"
 
 This example disables message subject logging in the message tracking log on the server named Mailbox01:
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
 ```
 
 This example disables message tracking on the Mailbox server named Mailbox01:
 
-```
+```powershell
 Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 
-```
+```powershell
 Get-TransportService [<ServerIdentity>] | Format-List MessageTrackingLog*
 ```
 

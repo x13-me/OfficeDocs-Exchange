@@ -2,13 +2,14 @@
 title: 'Remove an organization relationship: Exchange 2013 Help'
 TOCTitle: Remove an organization relationship
 ms:assetid: ff211394-f58b-4da7-bb3a-df6abcb5950e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657513(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657513(v=EXCHG.150)
 ms:contentKeyID: 49289477
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -32,7 +33,7 @@ Before you can share calendars with another organization, you have to set up an 
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to remove organization relationship.
+2. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") to remove organization relationship.
 
 3. In the warning that appears, click **yes**.
 
@@ -44,7 +45,7 @@ This example removes the organization relationship Contoso from the Exchange org
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332362\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](/powershell/module/exchange/Remove-OrganizationRelationship).
 
 ## How do you know this worked?
 
@@ -59,4 +60,4 @@ To verify that you have successfully removed the organization relationship, do o
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

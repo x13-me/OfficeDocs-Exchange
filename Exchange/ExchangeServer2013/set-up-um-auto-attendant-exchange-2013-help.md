@@ -1,12 +1,13 @@
 ---
 title: 'Set up a UM auto attendant: Exchange 2013 Help'
 TOCTitle: Set up a UM auto attendant
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 3/9/2015
 ms.reviewer: 
 ms.assetid: 0a3492f8-8aba-4904-96fd-6e023175012a
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

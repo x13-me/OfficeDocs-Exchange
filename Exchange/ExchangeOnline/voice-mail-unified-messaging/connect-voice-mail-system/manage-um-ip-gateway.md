@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 ms.topic: article
 author: msdmaguire
-f1_keywords:
-- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 387e540f-8c59-42d2-a423-99fcf97e00aa
-ms.date: 11/17/2014
 ms.reviewer: 
+ms.custom:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMIPGatewayGeneralPropertyPageControl
+f1.keywords:
+- CSH
 title: Manage a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -19,6 +20,9 @@ manager: serdars
 
 # Manage a UM IP gateway in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 After you create a Unified Messaging (UM) IP gateway, you can view or configure a variety of settings. For example, you can configure the IP address or a fully qualified domain name (FQDN), configure outgoing call settings, and enable or disable Message Waiting Indicator.
 
 For additional management tasks related to UM IP gateways, see [UM IP gateway procedures](um-ip-gateway-procedures.md).
@@ -27,7 +31,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM IP gateways" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan.md).
 
@@ -36,11 +40,11 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to view or configure UM IP gateway properties
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**. In the list view, select the UM IP gateway that you want to manage, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**. In the list view, select the UM IP gateway that you want to manage, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 2. Use the **UM IP Gateway** page to view and configure settings for the UM IP gateway. You can view or configure the following settings:
 
@@ -66,19 +70,19 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 This example modifies the IP address of a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.1
 ```
 
 This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com -Status 2 -OutcallsAllowed $false
 ```
 
 This example enables the UM IP gateway to function as a VoIP gateway simulator and can be used with the **Test-UMConnectivity** cmdlet.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 ```
 
@@ -87,7 +91,7 @@ Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
 This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses.
 
-```
+```PowerShell
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
@@ -95,18 +99,18 @@ Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -I
 
 This example displays a formatted list of all the UM IP gateways in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMIPGateway |Format-List
 ```
 
 This example displays the properties for a UM IP gateway named `MyUMIPGateway`.
 
-```
+```PowerShell
 Get-UMIPGateway -Identity MyUMIPGateway
 ```
 
 This example displays all the UM IP gateways including VoIP gateway simulators in the Active Directory forest.
 
-```
+```PowerShell
 Get-UMIPGateway -IncludeSimulator $true
 ```

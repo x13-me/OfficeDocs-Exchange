@@ -1,12 +1,13 @@
 ---
 title: 'Assign a UM mailbox policy: Exchange 2013 Help'
 TOCTitle: Assign a UM mailbox policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer:
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,7 +34,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan-exchange-2013-help.md).
 
@@ -44,7 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to change the UM mailbox policy assigned to a UM-enabled user
 
@@ -54,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
 
-4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 5. On the **UM Mailbox** page \> next to **UM mailbox policy**, click **Browse** to locate the UM mailbox policy for the user.
 

@@ -1,12 +1,13 @@
 ---
 title: 'Create a distribution group naming policy: Exchange 2013 Help'
 TOCTitle: Create a distribution group naming policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -56,7 +57,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - The maximum length for a group name is 64 characters. This includes the combined number of characters in the prefix, the group name provided by the user, and the suffix.
 
@@ -69,11 +70,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to create a group naming policy
 
-1. In the EAC, select **Groups** \> **More** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
+1. In the EAC, select **Groups** \> **More** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
@@ -91,11 +92,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
-6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 7. Click **Blocked Words** to add or remove blocked words.
 
-   - To add a word to the list, type the word to block and click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+   - To add a word to the list, type the word to block and click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
    - To remove a word from the list, select it and click **Remove**.
 

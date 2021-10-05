@@ -1,12 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you've deployed all the required telephony equipment for your organization, including your VoIP gateways, IP PBXs, and SIP-enabled PBXs or Microsoft Lync Server, you need to create all the Unified Messaging (UM) components that will enable your telephony devices to communicate with servers in your organization.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: b606b49d-5bd3-4321-ae77-99fa4604c875
-ms.date: 11/17/2014
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Connect your voice mail system to your telephone network in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -16,6 +17,9 @@ manager: serdars
 ---
 
 # Connect your voice mail system to your telephone network in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 After you've deployed all the required telephony equipment for your organization, including your VoIP gateways, IP PBXs, and SIP-enabled PBXs or Microsoft Lync Server, you need to create all the Unified Messaging (UM) components that will enable your telephony devices to communicate with servers in your organization.
 

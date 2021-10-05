@@ -2,13 +2,14 @@
 title: 'Create certificates for UM: Exchange 2013 Help'
 TOCTitle: Create certificates for UM
 ms:assetid: 66807ee7-3d3f-482d-a3ac-d4e9baca3271
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn205141(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn205141(v=EXCHG.150)
 ms:contentKeyID: 53908379
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -34,11 +35,11 @@ For additional management tasks related to managing certificates for Unified Mes
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to create a certificate request for UM
 
-1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New Exchange certificate** page, select **Create a request for a certificate from a certification authority**, and then click **Next**.
 
@@ -50,7 +51,7 @@ For additional management tasks related to managing certificates for Unified Mes
 
 6. If you requested a wildcard certificate, skip to step 9.
 
-7. If you didn't request a wildcard certificate, you'll need to specify the domains you want to be included in your certificate. If you want to edit a domain, click **Edit**![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Next**.
+7. If you didn't request a wildcard certificate, you'll need to specify the domains you want to be included in your certificate. If you want to edit a domain, click **Edit**![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Next**.
 
 8. Under **Based on your selections, the following domains will be included in your certificate. You can add additional domains here, or make changes**, you can add, edit, remove, or check the name of domains that are listed under **Domain**. Then click **Next**.
 
@@ -78,15 +79,15 @@ New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExpor
 
 ## Use the EAC to create a self-signed certificate for UM
 
-1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Servers** \> **Certificates**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the **New Exchange certificate** page, choose **Create a self-signed certificate**, and then select **Next**.
 
 3. Enter a friendly name for the certificate, and then select **Next**.
 
-4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
+4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the Exchange servers that you want to apply this certificate to, and then select **Next**.
 
-5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+5. Specify the domains that you want to be included in your certificate, and then select **Next**. If you want to add a domain for a service, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 6. Verify that the domains you included are correct, and then select **Finish**.
 

@@ -2,13 +2,14 @@
 title: 'Understanding management role groups: Exchange 2013 Help'
 TOCTitle: Understanding management role groups
 ms:assetid: 2a92e06c-523e-4fd4-a937-152562b7741d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638105(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd638105(v=EXCHG.150)
 ms:contentKeyID: 49289206
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -41,7 +42,7 @@ The following figure shows each of the role group layers in the preceding list a
 
 **Management role group layers**
 
-![Management role group layers](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
+![Management role group layers.](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
 
 For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 

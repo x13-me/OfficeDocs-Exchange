@@ -2,13 +2,14 @@
 title: 'Create a database availability group: Exchange 2013 Help'
 TOCTitle: Create a database availability group
 ms:assetid: d6b98299-e203-488b-af73-50753fe152c8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351172(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351172(v=EXCHG.150)
 ms:contentKeyID: 48385609
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -48,13 +49,13 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to create a database availability group
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a DAG.
+2. Click ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a DAG.
 
 3. On the **new database availability group** page, provide the following information for the DAG:
 
@@ -67,7 +68,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
    - **Witness directory**: Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) will be created on the witness server.
 
-   - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
+   - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
 
 4. Click **Save** to create the DAG.
 
@@ -121,10 +122,10 @@ To verify that you've successfully created a DAG, do one of the following:
 
 [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md)
 
-[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd297934\(v=exchg.150\))
+[Set-DatabaseAvailabilityGroup](/powershell/module/exchange/Set-DatabaseAvailabilityGroup)
 
-[New-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351107\(v=exchg.150\))
+[New-DatabaseAvailabilityGroup](/powershell/module/exchange/New-DatabaseAvailabilityGroup)
 
-[New-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd335225\(v=exchg.150\))
+[New-DatabaseAvailabilityGroupNetwork](/powershell/module/exchange/New-DatabaseAvailabilityGroupNetwork)
 
-[Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd298049\(v=exchg.150\))
+[Add-DatabaseAvailabilityGroupServer](/powershell/module/exchange/Add-DatabaseAvailabilityGroupServer)

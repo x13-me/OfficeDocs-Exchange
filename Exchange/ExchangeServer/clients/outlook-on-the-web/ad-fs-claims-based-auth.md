@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
-ms.date: 7/10/2018
 ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -39,7 +40,7 @@ Setting up AD FS claims-based authentication for Outlook on the web and the EAC 
 
 - Optionally, a Windows Server 2012 R2 or later Web Application Proxy server (Remote Access server role, Web Application Proxy role service).
 
-  - Web Application Proxy is a reverse proxy server for web applications that are inside the corporate network. Web Application Proxy allows users on many devices to access published web applications from outside the corporate network. For more information, see [Installing and Configuring Web Application Proxy for Publishing Internal Applications](https://go.microsoft.com/fwlink/p/?LinkId=392705).
+  - Web Application Proxy is a reverse proxy server for web applications that are inside the corporate network. Web Application Proxy allows users on many devices to access published web applications from outside the corporate network. For more information, see [Installing and Configuring Web Application Proxy for Publishing Internal Applications](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)).
 
   - Although Web Application Proxy is typically recommended when AD FS is accessible to external clients, offline access in Outlook on the web isn't supported when using AD FS authentication through Web Application Proxy.
 
@@ -60,7 +61,7 @@ Setting up AD FS claims-based authentication for Outlook on the web and the EAC 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Review the certificate requirements for AD FS
 
@@ -70,19 +71,22 @@ AD FS requires two basic types of certificates:
 
 - A token-signing certificate for encrypted communication and authentication between the AD FS server, Active Directory domain controllers, and Exchange servers. We recommend that you use the default self-signed AD FS token signing certificate.
 
-For more information about creating and importing SSL certificates in Windows, see [Server Certificates](https://go.microsoft.com/fwlink/p/?LinkId=392703).
+For more information about creating and importing SSL certificates in Windows, see [Server Certificates](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831637(v=ws.11)).
 
 Here's a summary of the certificates that we'll be using in this scenario:
 
+<br>
+
 ****
 
-|**Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)**|**Type**|**Required on servers**|**Comments**|
-|:-----|:-----|:-----|:-----|
-|`adfs.contoso.com`|Issued by a CA|AD FS server <br/><br/> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
-|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <br/><br/> Exchange servers <br/><br/> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <br/><br/> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <br/><br/> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](https://go.microsoft.com/fwlink/p/?linkid=838466). <br/><br/> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
-| `mail.contoso.com`|Issued by a CA|Exchange servers <br/><br/> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
+|Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)|Type|Required on servers|Comments|
+|---|---|---|---|
+|`adfs.contoso.com`|Issued by a CA|AD FS server <p> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
+|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <p> Exchange servers <p> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <p> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <p> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](/powershell/module/adfs/set-adfsproperties). <p> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
+| `mail.contoso.com`|Issued by a CA|Exchange servers <p> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
+|
 
-For more information, see the "Certificate requirements" section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/p/?LinkId=392699).
+For more information, see the "Certificate requirements" section in [AD FS Requirements](/windows-server/identity/ad-fs/overview/ad-fs-requirements).
 
 > [!NOTE]
 > Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
@@ -95,19 +99,19 @@ To use Server Manager to install AD FS, follow these steps:
 
 1. On the target server, open **Server Manager**, click **Manage**, and then select **Add Roles and Features**.
 
-   ![In Server Manager, click Manage to get to Add Roles and Features](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
+   ![In Server Manager, click Manage to get to Add Roles and Features.](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
 
 2. The **Add Roles and Features Wizard** opens. You'll start on the **Before you begin** page unless you previously selected **Skip this page by default**. Click **Next**.
 
-   ![The 'Before you begin' page in the Add Roles and Features Wizard](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
+   ![The 'Before you begin' page in the Add Roles and Features Wizard.](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
 
 3. On the **Select installation type** page, verify that **Role-based or feature-based installation** is selected, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 4. On the **Select destination server** page, verify the server selection, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 5. On the **Select server roles** page, select **Active Directory Federation Services** from the list, and then click **Next**.
 
@@ -133,13 +137,13 @@ To use Server Manager to install AD FS, follow these steps:
 
 To use Windows PowerShell to install AD FS, run the following command:
 
-```
+```powershell
 Install-WindowsFeature ADFS-Federation -IncludeManagementTools
 ```
 
 ## Step 3: Configure and test the AD FS server
 
-You can also refer to this checklist to help you configure AD FS: [Checklist: Setting Up a Federation Server](https://go.microsoft.com/fwlink/p/?LinkId=392700).
+You can also refer to this checklist to help you configure AD FS: [Checklist: Setting Up a Federation Server](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dd807086(v=ws.11)).
 
 ### Step 3a: Create a gMSA on a domain controller
 
@@ -147,7 +151,7 @@ Before you configure the AD FS server, you need to create a group Managed Servic
 
 1. Run the following command:
 
-   ```
+   ```powershell
    Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
    ```
 
@@ -157,13 +161,13 @@ Before you configure the AD FS server, you need to create a group Managed Servic
 
 2. To create a new gMSA account for the AD FS server, use the following syntax:
 
-   ```
+   ```powershell
    New-ADServiceAccount -Name <AccountName> -DnsHostName <FederationServiceName> -ServicePrincipalNames http/<FederationServiceName>
    ```
 
    This example creates a new gMSA account named FSgMSA for the Federation Service named adfs.contoso.com. The Federation Service name is the value that's visible to clients.
 
-   ```
+   ```powershell
    New-ADServiceAccount -Name FSgMSA -DnsHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
    ```
 
@@ -183,11 +187,11 @@ To use Server Manager, following these steps:
 
 2. The **Active Directory Federation Services Wizard** opens. On the **Welcome** page, verify **Create the first federation server in a federation server farm** is selected, and then click **Next**.
 
-   ![The Welcome page in the Active Directory Federation Services Configuration Wizard](../../media/652518d2-52a2-474a-9b21-fdd6db0b1515.png)
+   ![The Welcome page in the Active Directory Federation Services Configuration Wizard.](../../media/652518d2-52a2-474a-9b21-fdd6db0b1515.png)
 
 3. On the **Connect to Active Directory Federation Services** page, select a domain administrator account in the domain where the AD FS server resides (your current credentials are selected by default). If you need to select a different user, click **Change**. When you're finished, click **Next**.
 
-   ![The Connect to AD DS page in the Active Directory Federation Services Configuration Wizard](../../media/d2490de9-d3fd-4ef5-af3d-c239158bf7bb.png)
+   ![The Connect to AD DS page in the Active Directory Federation Services Configuration Wizard.](../../media/d2490de9-d3fd-4ef5-af3d-c239158bf7bb.png)
 
 4. On the **Specify Service Properties** page, configure the following settings:
 
@@ -209,7 +213,7 @@ To use Server Manager, following these steps:
 
    When you're finished, click **Next**.
 
-   ![The Specify Service Properties page in the Active Directory Federation Services Configuration Wizard](../../media/c2cce27c-4ea3-47e5-9385-fe96b573af14.png)
+   ![The Specify Service Properties page in the Active Directory Federation Services Configuration Wizard.](../../media/c2cce27c-4ea3-47e5-9385-fe96b573af14.png)
 
 5. On the **Specify Service Account** page, configure the following settings:
 
@@ -219,41 +223,41 @@ To use Server Manager, following these steps:
 
    When you're finished, click **Next**.
 
-   ![The Specify Service Account page in the Active Directory Federation Services Configuration Wizard](../../media/0d10c20d-382b-4534-9e68-3f801b811e7d.png)
+   ![The Specify Service Account page in the Active Directory Federation Services Configuration Wizard.](../../media/0d10c20d-382b-4534-9e68-3f801b811e7d.png)
 
 6. On the **Specify Configuration Database** page, verify that **Create a database on this server using Windows Internal Database** is selected, and then click **Next**.
 
-   ![The Specify Configuration Database page in the Active Directory Federation Services Configuration Wizard](../../media/d3709617-5377-40b5-bb83-3995587c251f.png)
+   ![The Specify Configuration Database page in the Active Directory Federation Services Configuration Wizard.](../../media/d3709617-5377-40b5-bb83-3995587c251f.png)
 
 7. On the **Review Options** page, verify your selections. You can click **View Script** button to copy the Windows PowerShell equivalent of the selections that you made for future use. When you're finished, click **Next**.
 
-   ![The Review Options page in the Active Directory Federation Services Configuration Wizard](../../media/a8978201-1d88-4200-a726-5705f1c6c152.png)
+   ![The Review Options page in the Active Directory Federation Services Configuration Wizard.](../../media/a8978201-1d88-4200-a726-5705f1c6c152.png)
 
 8. On the **Pre-requisite Checks** page, verify that all the prerequisite checks were successfully completed, and then click **Configure**.
 
-   ![The Pre-requisite Check page in the Active Directory Federation Services Configuration Wizard](../../media/55892765-8350-4a19-9d98-8566a04b586f.png)
+   ![The Pre-requisite Check page in the Active Directory Federation Services Configuration Wizard.](../../media/55892765-8350-4a19-9d98-8566a04b586f.png)
 
 9. On the **Results** page, review the results, verify that the configuration completed successfully. You can click **Next steps required for completing your federation service deployment** if you want to read about the next steps (for example, configuring DNS). When you're finished, click **Close**.
 
-   ![The Results page in the Active Directory Federation Services Configuration Wizard](../../media/0a291de0-ff4e-45a2-830d-20054e56947c.png)
+   ![The Results page in the Active Directory Federation Services Configuration Wizard.](../../media/0a291de0-ff4e-45a2-830d-20054e56947c.png)
 
 To use Windows PowerShell to configure AD FS, follow these steps:
 
 1. Run the following command on the AD FS server to find the thumbprint value of the installed certificate that contains `adfs.contoso.com`:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 3. Use the following syntax:
 
-   ```
+   ```powershell
    Install-AdfsFarm -CertificateThumbprint <ThumbprintValue> -FederationServiceName <FederationServiceName> -FederationServiceDisplayName <FederationServiceDisplayName> -GroupServiceAccountIdentifier <gMSA>
    ```
 
@@ -267,7 +271,7 @@ This example configures AD FS with the following settings:
 
 - **Federation gMSA SAM account name and domain**: For example, for the gMSA account named `FSgMSA` in the `contoso.com` domain, the required value is `contoso\FSgMSA$`.
 
-```
+```powershell
 Install-AdfsFarm -CertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609 -FederationServiceName adfs.contoso.com -FederationServiceDisplayName "Contoso, Ltd." -GroupServiceAccountIdentifier "contoso\FSgMSA`$"
 ```
 
@@ -277,7 +281,7 @@ Install-AdfsFarm -CertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609
 
 - The escape character (```) is required for the `$` in the **SamAccountName**.
 
-For details and syntax, see [Install-AdfsFarm](https://go.microsoft.com/fwlink/p/?LinkId=392704).
+For details and syntax, see [Install-AdfsFarm](/powershell/module/adfs/install-adfsfarm).
 
 ### Step 3c: Test the AD FS server
 
@@ -301,7 +305,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 1. In **Server Manager**, click **Tools**, and then select **AD FS Management**.
 
-   ![In Server Manager, select Tools \> AD FS Management](../../media/3139998a-422a-4aab-9f52-10a1ba7fa547.png)
+   ![In Server Manager, select Tools \> AD FS Management.](../../media/3139998a-422a-4aab-9f52-10a1ba7fa547.png)
 
 2. In the AD FS Management console, expand **Trust Relationships** and then select **Relying Party Trusts**. In the **Actions** pane, select **Add Relying Party Trust**.
 
@@ -321,7 +325,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
    - **Display Name**: Type Outlook on the web.
 
-   - **Notes**: Enter a description. For example, This is a trust for https://mail.contoso.com/owa/.
+   - **Notes**: Enter a description. For example, This is a trust for <https://mail.contoso.com/owa/>.
 
      ![The Specify Display Name page in the Add Relying Party Trust Wizard.](../../media/589b606e-7a25-4ca2-8d94-a7874a3904af.png)
 
@@ -329,7 +333,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
    - **Display Name**: Type EAC.
 
-   - **Notes**: Enter a description. For example, This is a trust for https://mail.contoso.com/ecp/.
+   - **Notes**: Enter a description. For example, This is a trust for <https://mail.contoso.com/ecp/>.
 
    ![Details for the EAC in the Select Data Source page in the Add Relying Party Trust Wizard.](../../media/b4c2461d-db39-45ac-869d-d70fb9581adc.png)
 
@@ -337,7 +341,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 6. On the **Choose Profile** page, verify **AD FS profile** is selected, and then click **Next**.
 
-   ![The Choose Profile page in the Add Relying Party Trust Wizard](../../media/d82f8346-19f7-472e-916c-838fe399b1f0.png)
+   ![The Choose Profile page in the Add Relying Party Trust Wizard.](../../media/d82f8346-19f7-472e-916c-838fe399b1f0.png)
 
 7. On the **Configure Certificate** page, click **Next** (don't specify an optional token encryption certificate).
 
@@ -345,11 +349,11 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 8. On the **Configure URL** page, select **Enable support for the WS-Federation Passive protocol**, and in **Relying party WS-Federation Passive protocol URL**, enter the following information:
 
-   - **Outlook on the web**: Type your external Outlook on the web URL (for example, https://mail.contoso.com/owa/).
+   - **Outlook on the web**: Type your external Outlook on the web URL (for example, <https://mail.contoso.com/owa/>).
 
      ![The settings for Outlook on the web on the Configure URL page in the Add Relying Party Trust Wizard.](../../media/71783750-5070-4719-8c17-bbc515fcb135.png)
 
-   - **EAC**: Type your external EAC URL (for example, https://mail.contoso.com/ecp/).
+   - **EAC**: Type your external EAC URL (for example, <https://mail.contoso.com/ecp/>).
 
    When you're finished, click **Next**.
 
@@ -379,41 +383,35 @@ To use Windows PowerShell prompt to create the relying party trusts, follow thes
 
 1. In an elevated Windows PowerShell window, run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Add-AdfsRelyingPartyTrust -Name <"Outlook on the web" | EAC> -Notes "This is a trust for <OotwURL | EACURL>" -Identifier <OotwURL | EACURL> -WSFedEndpoint <OotwURL | EACURL> -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
    ```
 
 This example creates a relying party trust for Outlook on the web using the following values:
 
 - **Name**: Outlook on the web
+- **Notes**: This is a trust for <https://mail.contoso.com/owa/>
+- **Identifier**: <https://mail.contoso.com/owa/>
+- **WSFedEndpoint**: <https://mail.contoso.com/owa/>
 
-- **Notes**: This is a trust for https://mail.contoso.com/owa/
-
-- **Identifier**: https://mail.contoso.com/owa/
-
-- **WSFedEndpoint**: https://mail.contoso.com/owa/
-
-```
+```powershell
 Add-AdfsRelyingPartyTrust -Name "Outlook on the web" -Notes "This is a trust for https://mail.contoso.com/owa/" -Identifier https://mail.contoso.com/owa/ -WSFedEndpoint https://mail.contoso.com/owa/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
 ```
 
 This example creates a relying party trust for the EAC using the following values:
 
 - **Name**: EAC
+- **Notes**: This is a trust for <https://mail.contoso.com/ecp/>
+- **Identifier**: <https://mail.contoso.com/ecp/>
+- **WSFedEndpoint**: <https://mail.contoso.com/ecp/>
 
-- **Notes**: This is a trust for https://mail.contoso.com/ecp/
-
-- **Identifier**: https://mail.contoso.com/ecp/
-
-- **WSFedEndpoint**: https://mail.contoso.com/ecp/
-
-```
+```powershell
 Add-AdfsRelyingPartyTrust -Name EAC -Notes "This is a trust for https://mail.contoso.com/ecp/" -Identifier https://mail.contoso.com/ecp/ -WSFedEndpoint https://mail.contoso.com/ecp/ -IssuanceAuthorizationRules '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");' -IssueOAuthRefreshTokensTo NoDevice
 ```
 
@@ -439,7 +437,7 @@ To add the required claims rules:
 
 2. In the **Edit Claim Rules for \<RuleName\>** window that opens, verify that the **Issuance Transform Rules** tab is selected, and then click **Add Rule**.
 
-   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
+   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab.](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
 
 3. The **Add Transform Claim Rule Wizard** opens. On the **Select Rule Template** page, click the **Claim rule template** drop down, and then select **Send Claims Using a Custom Rule**. When you're finished, click **Next**.
 
@@ -461,7 +459,7 @@ To add the required claims rules:
 
 5. Back on the **Edit Claim Rules for \<RuleName\>** window, verify that the **Issuance Transform Rules** tab is selected, and then click **Add Rule**.
 
-   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
+   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab.](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
 
 6. The **Add Transform Claim Rule Wizard** opens. On the **Select Rule Template** page, click the **Claim rule template** drop down, and then select **Send Claims Using a Custom Rule**. When you're finished, click **Next**.
 
@@ -473,7 +471,7 @@ To add the required claims rules:
 
    - **Custom rule**: Copy and paste the following text:
 
-     ```
+     ```text
      c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
      ```
 
@@ -489,25 +487,25 @@ To use Windows PowerShell to create the custom claim rules, follow these steps:
 
 1. Open an elevated Windows PowerShell window, and run the following command:
 
-   ```
+   ```powershell
    Import-Module ADFS
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Set-AdfsRelyingPartyTrust -TargetName <OotwRelyingPartyTrust | EACRelyingPartyTrust> -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
    ```
 
 To create the custom claim rules in the existing relying party trust named Outlook on the web, run the following command:
 
-```
+```powershell
 Set-AdfsRelyingPartyTrust -TargetName "Outlook on the web" -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
 ```
 
 To create the custom claim rules in the existing relying party trust named EAC, run the following command:
 
-```
+```powershell
 Set-AdfsRelyingPartyTrust -TargetName EAC -IssuanceTransformRules '@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);'
 ```
 
@@ -527,19 +525,19 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 1. On the target server, open **Server Manager**, click **Manage**, and then select **Add Roles and Features**.
 
-   ![In Server Manager, click Manage to get to Add Roles and Features](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
+   ![In Server Manager, click Manage to get to Add Roles and Features.](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
 
 2. The **Add Roles and Features Wizard** opens. You'll start on the **Before you begin** page unless you previously selected **Skip this page by default**. Click **Next**.
 
-   ![The 'Before you begin' page in the Add Roles and Features Wizard](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
+   ![The 'Before you begin' page in the Add Roles and Features Wizard.](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
 
 3. On the **Select installation type** page, verify that **Role-based or feature-based installation** is selected, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 4. On the **Select destination server** page, verify the server selection, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 5. On the **Select server roles** page, select **Remote Access** in the list of roles, and then click **Next**.
 
@@ -555,13 +553,13 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 8. On the **Select role services** page, select **Web Application Proxy**. In the add features dialog box that opens, click **Add Features** to accept the default values and close the dialog box. Back on the **Select role services** page, click **Next**.
 
-   ![After you select Web Application Proxy, the 'Add features that are required for Web Applicaiton Proxy?' dialog appears](../../media/2764ce5c-a450-4638-9141-4f0f0fa5f84a.png)
+   ![After you select Web Application Proxy, the 'Add features that are required for Web Applicaiton Proxy?' dialog appears.](../../media/2764ce5c-a450-4638-9141-4f0f0fa5f84a.png)
 
-   ![Select Web Application Proxy on the 'Select role services' page](../../media/88cf5938-eb42-4405-9f3b-5789c95cec6c.png)
+   ![Select Web Application Proxy on the 'Select role services' page.](../../media/88cf5938-eb42-4405-9f3b-5789c95cec6c.png)
 
 9. On the **Confirm installation selections** page, click **Install**.
 
-   ![x](../../media/a9944299-8ea8-4157-9531-0697f6597757.png)
+   ![x.](../../media/a9944299-8ea8-4157-9531-0697f6597757.png)
 
 10. On the **Installation progress** page, watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Open the Web Application Proxy Wizard** in the next step (5b).
 
@@ -569,7 +567,7 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 To use Windows PowerShell to install Web Application Proxy, run the following command:
 
-```
+```powershell
 Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 ```
 
@@ -597,7 +595,7 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
 2. The **Web Application Proxy Configuration Wizard** opens. On the **Welcome** page, click **Next**.
 
-   ![The Welcome page in the Web Application Proxy Configuration Wizard](../../media/68ea0e1b-f71b-407f-92f3-410654442e49.png)
+   ![The Welcome page in the Web Application Proxy Configuration Wizard.](../../media/68ea0e1b-f71b-407f-92f3-410654442e49.png)
 
 3. On the **Federation Server** page, enter the following information:
 
@@ -607,37 +605,37 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
    When you're finished, click **Next**.
 
-   ![Enter the credentials for the AD FS server on the Federation Server  page in the Web Application Proxy Configuration Wizard](../../media/75b3c62a-986d-453d-ada1-68a23a50acac.png)
+   ![Enter the credentials for the AD FS server on the Federation Server  page in the Web Application Proxy Configuration Wizard.](../../media/75b3c62a-986d-453d-ada1-68a23a50acac.png)
 
 4. On the **AD FS Proxy Certificate** page, select an installed certificate that contains the federation service name (for example `adfs.contoso.com`). You can select a certificate in the drop down list, and then click **View** \> **Details** to see more information about the certificate. When you're finished, click **Next**.
 
-   ![Select the AD FS proxy certificate on the AD FS Proxy Certificate page in the AD FS Proxy Configuration Wizard](../../media/c2a5ef5e-2f70-413a-9589-d0f8776de0f9.png)
+   ![Select the AD FS proxy certificate on the AD FS Proxy Certificate page in the AD FS Proxy Configuration Wizard.](../../media/c2a5ef5e-2f70-413a-9589-d0f8776de0f9.png)
 
 5. On the **Confirmation** page, review the settings. You can copy the Windows PowerShell command to automate additional installations (in particular, the certificate thumbprint value). When you're finished, click **Configure**.
 
-   ![The Confirmation page in the Web Application Proxy Configuration Wizard](../../media/a7da27b0-f289-44ca-b0bb-6815561d8bd4.png)
+   ![The Confirmation page in the Web Application Proxy Configuration Wizard.](../../media/a7da27b0-f289-44ca-b0bb-6815561d8bd4.png)
 
 6. On the **Results** page, verify that the configuration was successful, and then click **Close**.
 
-   ![The Results page in the Web Application Proxy Configuration Wizard](../../media/8b146267-0063-425d-a8c3-f5d0440f9bbc.png)
+   ![The Results page in the Web Application Proxy Configuration Wizard.](../../media/8b146267-0063-425d-a8c3-f5d0440f9bbc.png)
 
 To use Windows PowerShell to configure Web Application Proxy, follow these steps:
 
 1. Run the following command on the Web Application Proxy server to find the thumbprint value of the installed certificate that contains `adfs.contoso.com`:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Run the following command, and enter the username and password of a local administrator account on the AD FS server.
 
-   ```
+   ```powershell
    $ADFSServerCred = Get-Credential
    ```
 
 3. Use the following syntax:
 
-   ```
+   ```powershell
    Install-WebApplicationProxy -FederationServiceName <FederationServiceName> -FederationServiceTrustCredential $ADFSServerCred -CertificateThumprint <ADFSCertThumbprint>
    ```
 
@@ -647,7 +645,7 @@ To use Windows PowerShell to configure Web Application Proxy, follow these steps
 
    - **AD FS SSL certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
 
-   ```
+   ```powershell
    Install-WebApplicationProxy -FederationServiceName adfs.contoso.com -FederationServiceTrustCredential $ADFSServerCred -CertificateThumprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609
    ```
 
@@ -663,7 +661,7 @@ To use the Remote Access Management console, follow these steps:
 
 2. In the Remote Access Management console, under **Configuration**, click **Web Application Proxy**, and then in the **Tasks** pane, click **Publish**.
 
-   ![Select Publish in the Tasks pane in the Remote Access Management Console](../../media/b2c6bd81-b5af-4f02-a985-9e16c0352a7e.png)
+   ![Select Publish in the Tasks pane in the Remote Access Management Console.](../../media/b2c6bd81-b5af-4f02-a985-9e16c0352a7e.png)
 
 3. The **Publish New Application Wizard** opens. On the **Welcome** page, click **Next**.
 
@@ -701,7 +699,7 @@ To use the Remote Access Management console, follow these steps:
 
      - **Name**: For example, `EAC`. This name is only visible in the Remote Access Management console.
 
-     - **External URL**: The external URL for the EAC. For example, https://mail.contoso.com/ecp/.
+     - **External URL**: The external URL for the EAC. For example, <https://mail.contoso.com/ecp/>.
 
      - **External certificate**: Select an installed certificate that contains the host name of the external URL for the EAC (for example, `mail.contoso.com`). The certificate is likely a wildcard certificate or SAN certificate. You can select a certificate in the drop down list, and then click **View** \> **Details** to see more information about the certificate.
 
@@ -723,43 +721,36 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
 1. Run the following command on the Web Application Proxy server to find the thumbprint of the installed certificate that contains the host name of the Outlook on the web and EAC URLs (for example, `mail.contoso.com`):
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\My; Get-ChildItem | Format-List FriendlyName,Subject,Thumbprint
    ```
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName <OotwRelyingParty | EACRelyingParty> -Name "<Outlook on the web  | EAC>" -ExternalUrl <OotwURL | EACURL> -ExternalCertificateThumbprint <Thumbprint> -BackendServerUrl <OotwURL | EACURL>
    ```
 
    This example publishes Outlook on the web in Web Application Proxy with the following settings:
 
    - **AD FS relying party**: Outlook on the web
-
    - **Name**: Outlook on the web
-
-   - **External URL**: https://mail.contoso.com/owa/
-
+   - **External URL**: <https://mail.contoso.com/owa/>
    - **External certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
+   - **Backend server URL**: <https://mail.contoso.com/owa/>
 
-   - **Backend server URL**: https://mail.contoso.com/owa/
-
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName "Outlook on the web" -Name "Outlook on the web" -ExternalUrl https://mail.contoso.com/owa/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE056093 -BackendServerUrl https://mail.contoso.com/owa/
    ```
 
    This example publishes the EAC in Web Application Proxy with the following settings:
 
    - **Name**: EAC
-
-   - **External URL**: https://external.contoso.com/ecp/
-
+   - **External URL**: <https://external.contoso.com/ecp/>
    - **External certificate thumbprint**: The `*.contoso.com` certificate that has the thumbprint value `5AE82C737900B29C2BAC3AB6D8C44D249EE05609`.
+   - **Backend server URL**: <https://mail.contoso.com/ecp/>
 
-   - **Backend server URL**: https://mail.contoso.com/ecp/
-
-   ```
+   ```powershell
    Add-WebApplicationProxyApplication -ExternalPreAuthentication ADFS -ADFSRelyingPartyName EAC -Name EAC -ExternalUrl https://external.contoso.com/ecp/ -ExternalCertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609 -BackendServerUrl https://mail.contoso.com/ecp/
    ```
 
@@ -767,11 +758,11 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
 ## Step 6: Configure the Exchange organization to use AD FS authentication
 
-To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 1. Run the following command to find the thumbprint value of the imported AD FS token signing certificate:
 
-   ```
+   ```powershell
    Set-Location Cert:\LocalMachine\Root; Get-ChildItem | Sort-Object Subject
    ```
 
@@ -781,7 +772,7 @@ To configure the Exchange organization to use AD FS authentication, you need to 
 
 2. Use the following syntax:
 
-   ```
+   ```powershell
    Set-OrganizationConfig -AdfsIssuer https://<FederationServiceName>/adfs/ls/ -AdfsAudienceUris "<OotwURL>","<EACURL>" -AdfsSignCertificateThumbprint "<Thumbprint>"
    ```
 
@@ -795,7 +786,7 @@ To configure the Exchange organization to use AD FS authentication, you need to 
 
    - **AD FS token-signing certificate thumbprint**: The `ADFS Signing - adfs.contoso.com` certificate that has the thumbprint value `88970C64278A15D642934DC2961D9CCA5E28DA6B`.
 
-   ```
+   ```powershell
    Set-OrganizationConfig -AdfsIssuer https://adfs.contoso.com/adfs/ls/ -AdfsAudienceUris "https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/" -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
    ```
 
@@ -813,29 +804,29 @@ For the Outlook on the web and EAC virtual directories, you need to configure AD
 
 To use the Exchange Management Shell to configure an EAC or Outlook on the web virtual directory to only accept AD FS authentication, use the following syntax:
 
-```
+```powershell
 Set-EcpVirtualDirectory -Identity <VirtualDirectoryIdentity> -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
 This example configures the EAC virtual directory in the default web site on the server named Mailbox01:
 
-```
+```powershell
 Set-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
 This example configures the Outlook on the web virtual directory in the default we site on the server named Mailbox01:
 
-```
+```powershell
 Set-OwaVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
  **Note**: To configure all EAC and Outlook on the web virtual directories on every Exchange server in your organization, run the following commands:
 
-```
+```powershell
 Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
-```
+```powershell
 Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -OAuthAuthentication $false -WindowsAuthentication $false
 ```
 
@@ -847,15 +838,15 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 
 3. In the **Actions** pane, click **Restart**.
 
-   ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+   ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 
-```
-net stop was /y
+```console
+net stop w3svc /y
 ```
 
-```
+```console
 net start w3svc
 ```
 
@@ -863,21 +854,21 @@ net start w3svc
 
 To test the AD FS claims for Outlook on the web:
 
-1. In a web browser, open Outlook on the web (for example, https://mail.contoso.com/owa).
+1. In a web browser, open Outlook on the web (for example, <https://mail.contoso.com/owa>).
 
 2. If you get a certificate error in the web browser, just continue on to the Outlook on the web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. Outlook on the web will load in the window.
 
 To test the AD FS claims for EAC:
 
-1. In a web browser, open EAC (for example, https://mail.contoso.com/ecp).
+1. In a web browser, open EAC (for example, <https://mail.contoso.com/ecp>).
 
 2. If you get a certificate error in the web browser, just continue on to the EAC web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. EAC will load in the window.
 
@@ -895,9 +886,9 @@ Deploying and configuring AD FS for claims-based authentication allows Outlook o
 
 For example, a password and a security code that's sent to a mobile phone, or a PIN and a fingerprint.
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392707) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn280946(v=ws.11)).
 
-On the AD FS server, the federation service functions as a security token service, and provides the security tokens that are used with claims. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://go.microsoft.com/fwlink/p/?LinkId=392709).
+On the AD FS server, the federation service functions as a security token service, and provides the security tokens that are used with claims. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](/windows-server/identity/ad-fs/technical-reference/the-role-of-claims).
 
 ### Co-existence with other versions of Exchange
 

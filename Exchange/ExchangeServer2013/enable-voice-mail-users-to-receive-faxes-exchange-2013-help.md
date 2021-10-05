@@ -2,13 +2,14 @@
 title: 'Enable voice mail users to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable voice mail users to receive faxes
 ms:assetid: 451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232022(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232022(v=EXCHG.150)
 ms:contentKeyID: 49315404
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -67,13 +68,13 @@ The traditional fax method requires at least a single telephone line on the send
 
 **Traditional and computer-based faxing**
 
-![Traditional Faxing](images/Bb232022.7bdc1cab-9504-4314-a6e0-eccdfe2a9cd6(EXCHG.150).gif "Traditional Faxing")
+![Traditional Faxing.](images/Bb232022.7bdc1cab-9504-4314-a6e0-eccdfe2a9cd6(EXCHG.150).gif "Traditional Faxing")
 
 **Fax servers or gateways and Internet fax services**: There are several ways to send and receive faxes over the Internet. These include using a software application on a computer or using an email client to receive faxes. In most cases, this kind of faxing involves using a fax server or fax gateway to convert between faxes and email. This method has become increasingly popular because it enables organizations to remove or avoid purchasing additional fax machines. It also eliminates the need to install additional telephone lines. This kind of faxing involves creating a document, including a fax cover page with the correct identifying information, and then sending the document to a traditional fax machine. For example, the user uses a software application such as Microsoft Word or Microsoft Outlook to create and send the fax to the fax server or gateway. The fax server or gateway receives the fax and then sends it by using a traditional telephone line to a fax machine or a fax modem that's installed on a computer.
 
 **Faxing by using fax servers or gateways**
 
-![Faxing with fax servers/gateways](images/Bb232022.d6fa2402-b4ca-4313-956c-62e5fe7731ad(EXCHG.150).gif "Faxing with fax servers/gateways")
+![Faxing with fax servers/gateways.](images/Bb232022.d6fa2402-b4ca-4313-956c-62e5fe7731ad(EXCHG.150).gif "Faxing with fax servers/gateways")
 
 Internet fax services let a user send faxes from a computer by using the Internet. A software application such as Word or Outlook can be used to create and send the fax to an Internet fax service. Many companies offer Internet fax services on a subscription basis or by charging for each fax message that's sent. Internet fax services offer the following advantages:
 
@@ -93,7 +94,7 @@ The following figure shows how Internet fax services can be used to send and rec
 
 **Internet fax services**
 
-![Internet Fax Services](images/Bb232022.5d0fb3d6-95f4-4fbf-80e5-64f5de553e65(EXCHG.150).gif "Internet Fax Services")
+![Internet Fax Services.](images/Bb232022.5d0fb3d6-95f4-4fbf-80e5-64f5de553e65(EXCHG.150).gif "Internet Fax Services")
 
 **Faxing by using an email client application**: Faxes can be sent and received by a fax machine over the Internet and then received by an email client such as Outlook.
 
@@ -101,7 +102,7 @@ The T.37 protocol was designed to enable a fax machine to send fax messages over
 
 **Faxing with email**
 
-![Faxing with email](images/Bb232022.086f086b-dc39-4439-a694-7a98e03e65d1(EXCHG.150).gif "Faxing with email")
+![Faxing with email.](images/Bb232022.086f086b-dc39-4439-a694-7a98e03e65d1(EXCHG.150).gif "Faxing with email")
 
 **Faxing by using a VoIP network**: VoIP is a technology that provides hardware and software that enables people to use an IP-based network as the transmission medium for telephone calls. On a VoIP network, voice and fax data is sent in packets by using IP instead of traditional circuit transmissions or the circuit-switched telephone lines of the PSTN. A VoIP gateway that you connect to your IP network uses VoIP to send voice data packets between a Client Access server running the Microsoft Exchange Unified Messaging Call Router service and a Mailbox server running the Microsoft Exchange Unified Messaging service and a Private Branch eXchange (PBX) system. You can also use an IP PBX to perform the functions of both a VoIP gateway and a PBX.
 
@@ -208,7 +209,7 @@ An incoming call to a UM pilot number is directed to UM as an INVITE with a voic
 
 ## Configuring faxing
 
-By default, when you install the Mailbox server, the server isn't configured to allow incoming fax calls to be processed or delivered to a UM-enabled user. To configure UM with a fax partner server, you must configure the UM mailbox policy and configure authentication between the Mailbox server and the fax partner server. For more information, see [Setting up incoming faxing](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing).
+By default, when you install the Mailbox server, the server isn't configured to allow incoming fax calls to be processed or delivered to a UM-enabled user. To configure UM with a fax partner server, you must configure the UM mailbox policy and configure authentication between the Mailbox server and the fax partner server. For more information, see [Setting up incoming faxing](../ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing.md).
 
 ## Telephone numbers and faxing
 
@@ -222,7 +223,7 @@ Exchange Unified Messaging offers the following options when you're configuring 
 
 ## A single DID telephone number
 
-When you enable a user for Unified Messaging by using the **Enable UM mailbox** page or the **Enable-UMMailbox** cmdlet, you must specify at least a single extension number for the user. This extension number is enabled on a per-user basis and must be unique within a given dial plan. The extension is used by Unified Messaging to locate the correct user and to deliver voice and fax messages to the user's mailbox. For more information, see [Enable-UMMailbox](https://technet.microsoft.com/en-us/library/aa998033\(v=exchg.150\)).
+When you enable a user for Unified Messaging by using the **Enable UM mailbox** page or the **Enable-UMMailbox** cmdlet, you must specify at least a single extension number for the user. This extension number is enabled on a per-user basis and must be unique within a given dial plan. The extension is used by Unified Messaging to locate the correct user and to deliver voice and fax messages to the user's mailbox. For more information, see [Enable-UMMailbox](/powershell/module/exchange/Enable-UMMailbox).
 
 Using a single DID number, you can configure faxing so that a user uses a single DID number for both voice and fax. This configuration is easy to administer and doesn't waste additional DID numbers. If the user is away or on the phone when a fax call arrives, UM answers the call, detects the fax tone, creates the fax message, and sends it to the user.
 
@@ -238,7 +239,7 @@ In summary, using a single DID number requires the user to perform additional ac
 
 ## Multiple DID telephone numbers
 
-When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange admin center (EAC). For more information, see [Add an extension number](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
+When you enable a user for Unified Messaging, you must enter at least a single extension number for that user. You can add multiple extension numbers for a UM-enabled user by using the Exchange admin center (EAC). For more information, see [Add an extension number](../ExchangeOnline/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number.md).
 
 Adding multiple extension numbers is useful when a UM-enabled user:
 
@@ -250,9 +251,9 @@ Adding multiple extension numbers is useful when a UM-enabled user:
 
 Adding multiple extensions is more complex than using a single extension and may require additional configuration settings on a PBX or an IP PBX. To configure multiple extension numbers for a UM-enabled user, you must have DID extension numbers available that aren't being used in your organization. It isn't a good idea to use multiple numbers for a UM-enabled user if your organization has a limited number of DID extension numbers available.
 
-The benefit of using multiple DID extension numbers is that a UM-enabled user receives voice calls on one DID extension number and fax calls on the another DID extension number. Using separate DID numbers for voice mail and fax calls is easier for the user.
+The benefit of using multiple DID extension numbers is that a UM-enabled user receives voice calls on one DID extension number and fax calls on another DID extension number. Using separate DID numbers for voice mail and fax calls is easier for the user.
 
-If you configure two DID extension numbers for a specific user, the DID extension numbers can come from separate UM dial plans. To use two DID numbers, you can create a dial plan and use a Mailbox server as a dedicated server that will receive fax calls and forward fax messages to users. For more information, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
+If you configure two DID extension numbers for a specific user, the DID extension numbers can come from separate UM dial plans. To use two DID numbers, you can create a dial plan and use a Mailbox server as a dedicated server that will receive fax calls and forward fax messages to users. For more information, see [Create a UM dial plan](../ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
 You have the following options when you're configuring multiple DID extension numbers for UM-enabled users:
 

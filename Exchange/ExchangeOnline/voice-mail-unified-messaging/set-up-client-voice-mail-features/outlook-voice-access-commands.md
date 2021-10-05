@@ -1,12 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Outlook Voice Access lets Unified Messaging (UM)-enabled users access their mailbox using analog, digital, or mobile telephones. Using the menu system found in Outlook Voice Access, UM-enabled users can read email, listen to voice messages, interact with their Outlook calendar, access their personal contacts, and manage personal options such as configuring their Outlook Voice Access PIN or recording their voice mail messages. This topic contains a list of the Outlook Voice Access commands and how users can use them when they access their mailbox by calling an Outlook Voice Access number.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b
-ms.date: 3/9/2015
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Outlook Voice Access commands in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -16,6 +17,9 @@ manager: serdars
 ---
 
 # Outlook Voice Access commands in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 Outlook Voice Access lets Unified Messaging (UM)-enabled users access their mailbox using analog, digital, or mobile telephones. Using the menu system found in Outlook Voice Access, UM-enabled users can read email, listen to voice messages, interact with their Outlook calendar, access their personal contacts, and manage personal options such as configuring their Outlook Voice Access PIN or recording their voice mail messages. This topic contains a list of the Outlook Voice Access commands and how users can use them when they access their mailbox by calling an Outlook Voice Access number.
 
@@ -137,5 +141,3 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 ## For more information
 
 [Setting up Outlook Voice Access](set-up-outlook-voice-access.md)
-
-[Set Up Client Voice Mail Features](https://technet.microsoft.com/library/5e661cfd-d34e-4caa-91a5-967bbecb75eb.aspx)

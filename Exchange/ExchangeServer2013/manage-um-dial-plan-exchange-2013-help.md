@@ -1,14 +1,15 @@
 ---
 title: 'Manage a UM dial plan: Exchange 2013 Help'
 TOCTitle: Manage a UM dial plan
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 4/26/2018
 ms.reviewer:
-f1_keywords:
+ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage'
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
+f1.keywords:
+- CSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,26 +19,26 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
 
-For additional management tasks related to UM dial plans, see [UM Dial Plan Procedures](https://technet.microsoft.com/library/1bda77c8-c4e2-4ae0-a001-76ae029bf843.aspx).
+For additional management tasks related to UM dial plans, see [UM dial plan procedures in Exchange Server](um-dial-plan-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to view or configure UM dial plan settings
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Dial Plan** page, click **Configure**. Use the configuration options to view specific dial plan settings and to enable or disable features as described in the following steps.
 
@@ -99,7 +100,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
    - **Number formats for incoming calls within the same dial plan**: Use this field to add or remove a number format for incoming calls that are placed between users in the same dial plan. This field accepts both numbers and the letter "x" as a wild card character. No other letters can be used in this field.
 
-     For incoming calls within the same dial plan add a number format. For example, to add a number format for 5-digit extensions, enter, 142570xxxxx and click ![Add Icon](images/ITPro_EAC_AddIcon.gif). To remove a number format, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+     For incoming calls within the same dial plan add a number format. For example, to add a number format for 5-digit extensions, enter, 142570xxxxx and click ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To remove a number format, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
 6. **Outlook Voice Access**: Use this page to configure Outlook Voice Access settings for the UM dial plan. Outlook Voice Access enables users to access their individual mailboxes to retrieve email, voice messages, contacts, and calendaring information using a telephone. You can view or configure the following:
 
@@ -123,7 +124,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
      When you configure this number on the dial plan, this number will be displayed in Microsoft Office Outlook 2007 or later versions and Outlook Web App for voice mail options.
 
-     To add a new Outlook Voice Access number, enter the number in the box and click ![Add Icon](images/ITPro_EAC_AddIcon.gif). To remove an Outlook Voice Access number, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+     To add a new Outlook Voice Access number, enter the number in the box and click ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To remove an Outlook Voice Access number, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
 7. **Settings**: Use this page to configure dial plan settings for Unified Messaging. When you configure settings on this page, you can control how Outlook Voice Access users and external callers calling into an auto attendant linked to the dial plan locate users in your organization, the audio codec that is used for voice mail messages, the number of sign-in failures, and time-out values. You can configure the following:
 
@@ -219,7 +220,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 8. **Dialing rules**: Use this page to specify dialing rules for in-country/region and international calls placed by UM-enabled users. Each entry defined on the dialing rule determines the types of calls that users within a specific dialing rule group can make. After you use the **Dialing rules** page to configure dialing rules, you must configure the UM dial plan, a UM mailbox policy, or a UM auto attendant to use the appropriate dialing rule. After you configure the UM mailbox policy to use a dialing rule group, the dialing restrictions configured apply to all UM-enabled users who are associated with the UM mailbox policy. For example, you can configure a dialing rule group that doesn't require users who are associated with the dial plan to dial an outside line access code when they place a call to an in-country/region telephone number. You can configure the following:
 
-   - **In-country/region dialing rules**: Use this box to add, remove, or edit in-country/region dialing rule groups used by UM mailbox policies. To create a dialing rule, click ![Add Icon](images/ITPro_EAC_AddIcon.gif). To edit an existing dialing rule, click ![Edit icon](images/ITPro_EAC_EditIcon.gif). To remove a dialing rule, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif). When you create a dialing rule, add the following information on the **New dialing rule** page:
+   - **In-country/region dialing rules**: Use this box to add, remove, or edit in-country/region dialing rule groups used by UM mailbox policies. To create a dialing rule, click ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To edit an existing dialing rule, click ![Edit icon](images/ITPro_EAC_EditIcon.gif). To remove a dialing rule, click ![Remove icon](images/ITPro_EAC_RemoveIcon.gif). When you create a dialing rule, add the following information on the **New dialing rule** page:
 
    - **Dialing rule name**: Use this text box to enter the name for the dialing rule you are creating. You can use the same name to collect several rules in a group and then enable or disable them under **Dialing authorization**. The name can be up to 32 characters long.
 
@@ -254,7 +255,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
    - **Allow calls to any extension**: When this setting is disabled, users who call in to an Outlook Voice Access number on the dial plan can't place calls to users who aren't UM-enabled or to other extension numbers not associated with a UM-enabled user. However, they can place a call or transfer a call to extension numbers associated with UM-enabled users. This is because the **Calls in the same UM dial plan** setting is enabled by default. The **Allow calls to any extension** setting is disabled by default.
 
      > [!NOTE]
-     > To avoid attempted fraud and other potential threats to your UM environment, follow the guidance in the blog post [Is your Exchange Unified Messaging protected against telecommunication fraud?](https://blogs.msdn.microsoft.com/mahmoud_badran/2017/02/15/is-your-exchange-unified-messaging-protected-against-telecommunication-fraud/)
+     > To avoid attempted fraud and other potential threats to your UM environment, follow the guidance in the blog post [Is your Exchange Unified Messaging protected against telecommunication fraud?](/archive/blogs/mahmoud_badran/is-your-exchange-unified-messaging-protected-against-telecommunication-fraud)
 
      When this setting is enabled, users who call in to an Outlook Voice Access number configured on the dial plan can place calls to users who aren't UM-enabled, to other extension numbers not associated with a UM-enabled user, and to UM-enabled users. This is because the **Calls in the same UM dial plan** setting is enabled by default.
 

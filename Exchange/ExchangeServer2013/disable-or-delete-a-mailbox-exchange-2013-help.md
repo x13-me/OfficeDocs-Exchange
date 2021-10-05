@@ -2,13 +2,14 @@
 title: 'Disable or delete a mailbox: Exchange 2013 Help'
 TOCTitle: Disable or delete a mailbox
 ms:assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863434(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ863434(v=EXCHG.150)
 ms:contentKeyID: 50387714
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -18,7 +19,7 @@ _**Applies to:** Exchange Server 2013 SP1_
 
 You can use the EAC or the Shell to disable or delete a mailbox in Exchange 2013. When a mailbox is disabled or deleted, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. Disabled and deleted mailboxes are retained in the mailbox database until the deleted mailbox retention period expires, which is 30 days by default. After the retention period expires, the mailbox is permanently deleted or *purged*.
 
-If you need to delete a mailbox in Exchange Online, see [Delete or restore user mailboxes in Exchange Online](https://technet.microsoft.com/en-us/library/dn186233\(v=exchg.150\)).
+If you need to delete a mailbox in Exchange Online, see [Delete or restore user mailboxes in Exchange Online](../ExchangeOnline/recipients-in-exchange-online/delete-or-restore-mailboxes.md).
 
 > [!NOTE]
 > Disabled or deleted mailboxes are referred to as <EM>disconnected mailboxes</EM>.
@@ -98,7 +99,7 @@ For additional management tasks related to disconnected mailboxes, see the follo
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Disable a mailbox
 
@@ -112,7 +113,7 @@ The following procedure shows how to disable a user mailbox. Use the same proced
 
 2. In the list of user mailboxes, click the mailbox that you want to disable.
 
-3. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
+3. Click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
 4. A warning appears asking if you're sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
 
@@ -180,7 +181,7 @@ The following procedure shows how to delete a user mailbox. Use the same procedu
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. A warning appears asking if you're sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
 

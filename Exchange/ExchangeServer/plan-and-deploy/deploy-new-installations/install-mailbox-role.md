@@ -1,18 +1,19 @@
 ---
 localization_priority: Critical
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
-f1_keywords:
+ms.custom:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
-ms.date: 7/27/2018
 ms.reviewer: 
 description: 'Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Mailbox server role on a computer.'
 title: Install Exchange Mailbox servers using the Setup wizard
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- CSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -64,19 +65,19 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 
    - **Don't check for updates right now**
 
-   ![Exchange Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
+   ![Exchange Setup, Check for Updates page.](../../media/exchange-install-checkupdates-no.jpg)
 
 4. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
 
-   ![Exchange Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
+   ![Exchange Setup, Copying Files page.](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
 
 5. On the **Introduction** page, we recommend that you visit the Exchange Server deployment planning links if you haven't already reviewed them. Click **Next** to continue.
 
-   ![Exchange Setup, Introduction page](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
+   ![Exchange Setup, Introduction page.](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
 
 6. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
 
-   ![Exchange Setup, License Agreement page](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
+   ![Exchange Setup, License Agreement page.](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
 
 7. On the **Recommended Settings** page, choose one of the following settings:
 
@@ -86,7 +87,7 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 
    Click **Next** to continue.
 
-   ![Exchange Setup, Recommended Settings page](../../media/26af58f0-52ab-4482-8710-9a7cd2e7a6c3.png)
+   ![Exchange Setup, Recommended Settings page.](../../media/26af58f0-52ab-4482-8710-9a7cd2e7a6c3.png)
 
 8. On the **Server Role Selection** page, configure the following options:
 
@@ -98,11 +99,11 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 
    Click **Next** to continue.
 
-   ![Exchange Setup, Server Role Selection page, Mailbox role selection](../../media/483b4804-4609-4653-956f-03711ea4234c.png)
+   ![Exchange Setup, Server Role Selection page, Mailbox role selection.](../../media/483b4804-4609-4653-956f-03711ea4234c.png)
 
 9. On the **Installation Space and Location** page, either accept the default installation location (`C:\Program Files\Microsoft\Exchange Server\V15`), or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install Exchange. Click **Next** to continue.
 
-   ![Exchange Setup, Installation Space and Location page](../../media/7ae7f248-3cdc-4453-9d7d-e99edc300d16.png)
+   ![Exchange Setup, Installation Space and Location page.](../../media/7ae7f248-3cdc-4453-9d7d-e99edc300d16.png)
 
 10. If this is the first Exchange 2016 or Exchange 2019 server in your organization and you haven't already done the steps in [Prepare Active Directory and domains for Exchange](../../plan-and-deploy/prepare-ad-and-domains.md), you arrive on the **Exchange Organization** page. On this page, configure the following settings:
 
@@ -118,29 +119,29 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 
     Click **Next** to continue.
 
-    ![Exchange Setup, Exchange Organization page](../../media/acdba072-f4bb-4fb8-acae-c6b43cb32044.png)
+    ![Exchange Setup, Exchange Organization page.](../../media/acdba072-f4bb-4fb8-acae-c6b43cb32044.png)
 
 11. On the **Malware Protection Settings** page, choose whether you want disable malware scanning. Malware scanning is enabled by default (the value **No** is selected). If you disable malware scanning, you can enable it in the future. Click **Next** to continue.
 
-    ![Exchange setup, Malware Protection Settings page](../../media/8ff0c0de-c6c7-4abb-a125-182bfb9fb800.png)
+    ![Exchange setup, Malware Protection Settings page.](../../media/8ff0c0de-c6c7-4abb-a125-182bfb9fb800.png)
 
 12. On the **Readiness Checks** page, verify that the organization and server role prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
 
-    ![Exchange Setup, Readiness Check page with errors detected](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
+    ![Exchange Setup, Readiness Check page with errors detected.](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
 
     After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 1.
 
     When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange.
 
-    ![Exchange Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
+    ![Exchange Setup, Readiness Check page with errors resolved.](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
 
 13. On the **Setup Progress** page, a progress bar indicates how the installation is proceeding.
 
-    ![Exchange Setup, Setup Progress page](../../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
+    ![Exchange Setup, Setup Progress page.](../../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
 
 14. On the **Setup Completed** page, click **Finish**, and then restart the computer.
 
-    ![Exchange Setup, Setup Completed page](../../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
+    ![Exchange Setup, Setup Completed page.](../../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
 
 ## Next steps
 
@@ -148,4 +149,4 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 
 - Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
 
-- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

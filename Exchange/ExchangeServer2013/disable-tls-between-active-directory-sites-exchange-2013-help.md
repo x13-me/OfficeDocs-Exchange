@@ -2,13 +2,14 @@
 title: 'Disable TLS between Active Directory sites: Exchange 2013 Help'
 TOCTitle: Disable TLS between Active Directory sites
 ms:assetid: 1e1a0acf-24e7-4f94-9b33-603a4e0a812c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876856(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd876856(v=EXCHG.150)
 ms:contentKeyID: 50934212
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -37,7 +38,7 @@ This topic provides step-by-step instructions on how to configure the Transport 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Step 1: Use the Shell to configure the Transport service on the Mailbox server to use downgraded Exchange Server authentication
 
@@ -57,7 +58,7 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 ## Use the EAC to create the Receive connector
 
-1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the first page of the **New Receive connector** wizard, enter the following values
 

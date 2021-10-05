@@ -1,23 +1,24 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Outside In HTML Export © 1991, 2011 Oracle
 ms.topic: reference
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
-ms.date: 4/19/2018
 ms.reviewer: 
-title: Third-party copyright notices
+title: 'Exchange Server: Third-party copyright notices'
 ms.collection:
 - Ent_O365_Hybrid
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Third-party copyright notices
+# Exchange Server: Third-party copyright notices
 
 Outside In HTML Export © 1991, 2011 Oracle
 

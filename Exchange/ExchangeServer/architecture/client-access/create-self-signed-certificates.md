@@ -1,16 +1,17 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-ms.date: 7/5/2018
 ms.reviewer:
 title: Create a new Exchange Server self-signed certificate
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -31,20 +32,20 @@ You can create self-signed certificates certificate in the Exchange admin center
 
 - When you create a new self-signed certificate by using the **New-ExchangeCertificate** cmdlet, you can assign the certificate to Exchange services during the creation of the certificate. For more information about the Exchange services, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access services security" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Use the EAC to create a new Exchange self-signed certificate
 
 1. Open the EAC and navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the Exchange server where you want to install the certificate, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+2. In the **Select server** list, select the Exchange server where you want to install the certificate, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 3. The **New Exchange certificate** wizard opens. On the **This wizard will create a new certificate or a certificate request file** page, select **Create a self-signed certificate**, and then click **Next**.
 
@@ -52,7 +53,7 @@ You can create self-signed certificates certificate in the Exchange admin center
 
 4. On the **Friendly name for this certificate** page, enter a friendly name for the certificate, and then click **Next**.
 
-5. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png)
+5. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png)
 
    On the **Select a server** page that opens, select the Exchange server where you want to install the certificate, and click **Add - \>**. Repeat this step as many times as necessary. When you're finished selecting servers, click **OK**.
 
@@ -76,7 +77,7 @@ You can create self-signed certificates certificate in the Exchange admin center
 
    - Outlook Anywhere
 
-     If you enter a value for each service based on the location (internal or external), the wizard determines the host names that are required in the certificate, and the information is displayed on the next page. To modify a value for a service, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and enter the host name value that you want to use (or delete the value). When you're finished, click **Next**.
+     If you enter a value for each service based on the location (internal or external), the wizard determines the host names that are required in the certificate, and the information is displayed on the next page. To modify a value for a service, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) and enter the host name value that you want to use (or delete the value). When you're finished, click **Next**.
 
      If you've already determined the host name values that you need in the certificate, you don't need to fill out the information on this page. Instead, click **Next** to manually enter the host names on the next page.
 
@@ -84,7 +85,7 @@ You can create self-signed certificates certificate in the Exchange admin center
 
    - If you want a SAN certificate, the **Subject** field still requires one common name (CN) value. To select the host name for the certificate's **Subject** field, select the value and click **Set as common name** (check mark). The value should now appear bold.
 
-   - If you want a certificate for a single host name, select the other values one at a time and click **Remove** (![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)).
+   - If you want a certificate for a single host name, select the other values one at a time and click **Remove** (![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)).
 
      When you're finished on this page, click **Finish**.
 
@@ -98,7 +99,7 @@ You can create self-signed certificates certificate in the Exchange admin center
 
 To create a new Exchange self-signed certificate, use the following syntax:
 
-```
+```PowerShell
 New-ExchangeCertificate [-FriendlyName <DescriptiveName>] [-SubjectName [C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>],CN=<HostNameOrFQDN>]] [-DomainName <Host1>,<Host2>...] [-Services <None | IIS | IMAP | POP | SMTP | UM | UMCallRouter> [-PrivateKeyExportable < $true | $false>] [-Server <ServerIdentity>] -[Force]
 ```
 
@@ -112,7 +113,7 @@ This example creates a self-signed certificate on the local Exchange server with
 
 - **Services**: POP, IMAP, SMTP.
 
-```
+```PowerShell
 New-ExchangeCertificate
 ```
 
@@ -136,7 +137,7 @@ This example creates a creates a self-signed certificate on the local Exchange s
 
 - The private key is exportable. This allows you to export the certificate from the server (and import it on other servers).
 
-```
+```PowerShell
 New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectName CN=Exchange01 -DomainName mail.contoso.com,autodiscover.contoso.com,Exchange01.contoso.com,Exchange02.contoso.com -Services SMTP,IIS -PrivateKeyExportable $true
 ```
 
@@ -146,7 +147,7 @@ New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectNam
 
 - Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
 
-- For more information, see [New-ExchangeCertificate](https://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
+- For more information, see [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
 
 ## How do you know this worked?
 
@@ -156,6 +157,6 @@ To verify that you have successfully created an Exchange self-signed certificate
 
 - In the Exchange Management Shell on the server where you created the self-signed certificate, run the following command and verify the properties:
 
-  ```
+  ```PowerShell
   Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
   ```

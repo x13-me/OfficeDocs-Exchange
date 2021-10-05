@@ -1,12 +1,13 @@
 ---
 title: 'Default Retention Policy in Exchange: Exchange 2013 Help'
 TOCTitle: Default Retention Policy in Exchange
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 
 ms.reviewer: 
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

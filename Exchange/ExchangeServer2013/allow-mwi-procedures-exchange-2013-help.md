@@ -1,12 +1,13 @@
 ---
 title: 'Allow Message Waiting Indicator procedures: Exchange 2013 Help'
 TOCTitle: Allow Message Waiting Indicator procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 608082bc-015e-45ef-8ebc-f77465080381
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

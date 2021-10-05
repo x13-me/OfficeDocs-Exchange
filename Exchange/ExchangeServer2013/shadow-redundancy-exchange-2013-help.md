@@ -2,13 +2,14 @@
 title: 'Shadow redundancy: Exchange 2013 Help'
 TOCTitle: Shadow redundancy
 ms:assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351027(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd351027(v=EXCHG.150)
 ms:contentKeyID: 49289359
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -172,7 +173,7 @@ Shadow redundancy never tracks shadow messages across a transport high availabil
 
 When the Transport service on an Exchange 2013 Mailbox server receives a message from outside the transport high availability boundary, the Mailbox server isn't concerned about the support or lack of support for shadow redundancy by the sending server. As long as shadow redundancy is enabled, the Mailbox server that receives the message makes a redundant copy of the message on another Mailbox server within the transport high availability boundary before acknowledging receipt of the message back to the sending server. Here's an example of how the process works:
 
-![Shadow message creation](images/Dd351027.a97d383b-6ae4-458d-af3a-1ac0a41cd52b(EXCHG.150).gif "Shadow message creation")
+![Shadow message creation.](images/Dd351027.a97d383b-6ae4-458d-af3a-1ac0a41cd52b(EXCHG.150).gif "Shadow message creation")
 
 1. An SMTP server transmits a message to the Transport service on a Mailbox server. The Mailbox server is the primary server, and the message is the primary message.
 

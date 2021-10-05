@@ -1,10 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
-ms.date: 8/16/2018
 ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
 title: Add an SSL certificate to Exchange 2013
@@ -18,6 +17,8 @@ search.appverid:
 - GPA150
 - BCS160
 audience: Admin
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.service: exchange-online
 manager: serdars
@@ -26,11 +27,11 @@ manager: serdars
 
 # Add an SSL certificate to Exchange 2013
 
-Some services, such as Outlook Anywhere, Cutover migration to Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2013 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
+Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2013 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 
 ## What permissions do you need?
 
-In order to add certificates, you need to be assigned the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=614988) role group on the Exchange Server 2013.
+In order to add certificates, you need to be assigned the [Organization Management](../../ExchangeServer2013/organization-management-exchange-2013-help.md) role group on the Exchange Server 2013.
 
 ## Tasks for adding an SSL certificate
 
@@ -50,7 +51,7 @@ Adding an SSL certificate to Exchange Server 2013 is a three-step process.
 
 2. Enter your username and password by using the domain\username format for username, and choose **Sign in**.
 
-3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then choose **New** ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then choose **New** ![Add icon.](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
 
 4. In the **New Exchange certificate** wizard, select **Create a request for a certificate from a certification authority** and then choose **Next**.
 
@@ -92,7 +93,7 @@ After you receive the certificate from the CA, complete the following steps.
 
 3. On the complete pending request page, specify the path to the SSL certificate file \> **OK**.
 
-4. Select the new certificate you just added, and then choose **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+4. Select the new certificate you just added, and then choose **Edit** ![Edit icon.](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 5. On the certificate page, choose **Services**.
 

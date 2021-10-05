@@ -2,13 +2,14 @@
 title: 'Understanding management roles: Exchange 2013 Help'
 TOCTitle: Understanding management roles
 ms:assetid: 887b0a64-84b1-4b8c-9547-e456ea6f5dbd
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298116(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dd298116(v=EXCHG.150)
 ms:contentKeyID: 49289340
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -106,7 +107,7 @@ Each management role is given a role type that can't be changed. The role type d
 
 **Management role hierarchy**
 
-![RBAC management role hierarchical diagram](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
+![RBAC management role hierarchical diagram.](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
 
 The preceding figure illustrates the hierarchical relationship of several management roles. The Mail Recipients and Help Desk roles are built-in roles. All of the child roles derived from these roles inherit the role type of each built-in role. For example, all child roles derived either directly or indirectly from the Mail Recipients role inherit the `MailRecipients` role type.
 
@@ -746,16 +747,16 @@ The following table lists all of the user-focused management role types and thei
 
 ## For more information
 
-[New-ManagementRole](https://technet.microsoft.com/en-us/library/dd298073\(v=exchg.150\))
+[New-ManagementRole](/powershell/module/exchange/New-ManagementRole)
 
-[New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\))
+[New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335173\(v=exchg.150\))
+[Set-ManagementRoleAssignment](/powershell/module/exchange/Set-ManagementRoleAssignment)
 
-[New-ManagementScope](https://technet.microsoft.com/en-us/library/dd335137\(v=exchg.150\))
+[New-ManagementScope](/powershell/module/exchange/New-ManagementScope)
 
-[Set-ManagementScope](https://technet.microsoft.com/en-us/library/dd297996\(v=exchg.150\))
+[Set-ManagementScope](/powershell/module/exchange/Set-ManagementScope)
 
-[New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\))
+[New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335173\(v=exchg.150\))
+[Set-ManagementRoleAssignment](/powershell/module/exchange/Set-ManagementRoleAssignment)

@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure the authenticated SMTP settings on an Exchange server 2016 or 2019 that are required by POP3 or IMAP4 clients to send email messages.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
-ms.date: 7/5/2018
 ms.reviewer:
 title: Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -37,7 +38,7 @@ To configure the authenticated SMTP settings that are used by POP3 and IMAP4 cli
 
 3. Configure Outlook on the web (formerly known as Outlook Web App) to display the SMTP settings for authenticated SMTP clients at **Settings** \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**.
 
-   ![SMTP settings in Outlook on the web](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
+   ![SMTP settings in Outlook on the web.](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
 
 For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
 
@@ -54,7 +55,7 @@ For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Serve
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Step 1: Configure the FQDN on the "Client Frontend \<Server name\>" Receive connector
 
@@ -68,25 +69,25 @@ Regardless of the FQDN value, if you want external POP3 or IMAP4 clients to use 
 
 1. In the EAC, go to **Mail flow** \> **Receive connectors**.
 
-2. In the list of Receive connectors, select **Client Frontend \<Server name\>**, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. In the list of Receive connectors, select **Client Frontend \<Server name\>**, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 3. In the **Exchange Receive Connector** page that opens, click **Scoping**.
 
 4. In the **FQDN** field, enter the SMTP server FQDN that you want to use for authenticated SMTP client connections (for example, mail.contoso.com) and then click **Save**.
 
-   ![Scoping tab for the Client Frontend Receive Connector](../../media/48ada6ca-7944-4fa8-ad96-7192b0ad987a.png)
+   ![Scoping tab for the Client Frontend Receive Connector.](../../media/48ada6ca-7944-4fa8-ad96-7192b0ad987a.png)
 
 ### Use the Exchange Management Shell to configure the FQDN for authenticated SMTP clients
 
 To configure the FQDN for authenticated SMTP clients, use the following syntax:
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -Fqdn <FQDN>
 ```
 
 This example configures the FQDN value mail.contoso.com.
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -Fqdn mail.contoso.com
 ```
 
@@ -94,11 +95,11 @@ Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -Fqdn m
 
 To verify that you've successfully the FQDN on the "Client Frontend *\<Server name\>* " Receive connector, use either of the following procedures:
 
-- the EAC, go to **Mail flow** \> **Receive connectors** \> select **Client Frontend \<Server name\>**, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) \> **Scoping**, and verify the value in the **FQDN** field.
+- the EAC, go to **Mail flow** \> **Receive connectors** \> select **Client Frontend \<Server name\>**, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) \> **Scoping**, and verify the value in the **FQDN** field.
 
 - In the Exchange Management Shell, run the following command:
 
-  ```
+  ```powershell
   Get-ReceiveConnector -Identity "Client Frontend*" | Format-List Name,Fqdn
   ```
 
@@ -110,29 +111,29 @@ Also, you need to assign the certificate to the Exchange SMTP service. For more 
 
 To specify the certificate that's used for authenticated SMTP client connections, use the following syntax:
 
-```
+```powershell
 $TLSCert = Get-ExchangeCertificate -Thumbprint <ThumbprintValue>
 ```
 
-```
+```powershell
 $TLSCertName = "<I>$($TLSCert.Issuer)<S>$($TLSCert.Subject)"
 ```
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -TlsCertificateName $TLSCertName
 ```
 
 This example uses the certificate that has the thumbprint value 434AC224C8459924B26521298CE8834C514856AB.
 
-```
+```powershell
 $TLSCert = Get-ExchangeCertificate -Thumbprint 434AC224C8459924B26521298CE8834C514856AB
 ```
 
-```
+```powershell
 $TLSCertName = "<I>$($TLSCert.Issuer)<S>$($TLSCert.Subject)"
 ```
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -TlsCertificateName $TLSCertName
 ```
 
@@ -142,13 +143,13 @@ To verify that you've specified the certificate that's used to encrypt authentic
 
 1. Run the following command in the Exchange Management Shell:
 
-   ```
+   ```powershell
    Get-ReceiveConnector -Identity "Client Frontend*" | Format-List Name,Fqdn,TlsCertificateName
    ```
 
 2. Run the following command in the Exchange Management Shell:
 
-   ```
+   ```powershell
    Get-ExchangeCertificate | Format-List Thumbprint,Issuer,Subject,CertificateDomains,Services
    ```
 
@@ -158,7 +159,7 @@ To verify that you've specified the certificate that's used to encrypt authentic
 
 To configure Outlook on the web to display the SMTP settings server for authenticated SMTP clients, run the following command:
 
-```
+```powershell
 Get-ReceiveConnector -Identity "Client Frontend*" | Set-ReceiveConnector -AdvertiseClientSettings $true
 ```
 
@@ -170,19 +171,19 @@ To verify that you've configured Outlook on the web to display the SMTP settings
 
 1. Open a mailbox in Outlook on the web, and then click **Settings** \> **Options**.
 
-   ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
+   ![Options menu location in Outlook on the web.](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
 
 2. Click **Mail** \> **Accounts** \> **POP and IMAP** and verify the correct SMTP settings are displayed.
 
-   ![SMTP settings in Outlook on the web](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
+   ![SMTP settings in Outlook on the web.](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
 
-   **Note**: If the SMTP settings that you configured don't appear as expected in Outlook on the web, run the commands `net stop was /y` and `net start w3svc`to restart Internet Information Services (IIS).
+   **Note**: If the SMTP settings that you configured don't appear as expected in Outlook on the web, run the commands `net stop w3svc /y` and `net start w3svc`to restart Internet Information Services (IIS).
 
 ## How do you know this task worked?
 
 To verify that you've configured the authenticated SMTP settings on the Exchange server, perform one or more following procedures:
 
-- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](https://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx) and [Test-ImapConnectivity](https://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
+- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](/powershell/module/exchange/test-popconnectivity) and [Test-ImapConnectivity](/powershell/module/exchange/test-imapconnectivity).
 
 - Enable protocol logging on the "Client Frontend _\<Server name\>_" Receive connector, configure a POP3 or IMAP4 client to connect to a mailbox, send a test message from an internal network connection and/or an external Internet connection, and view the results in the protocol log. For more information, see [Protocol logging](../../mail-flow/connectors/protocol-logging.md).
 

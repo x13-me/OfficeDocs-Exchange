@@ -2,13 +2,14 @@
 title: 'Mail flow: Exchange 2013 Help'
 TOCTitle: Mail flow
 ms:assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996349(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa996349(v=EXCHG.150)
 ms:contentKeyID: 48384840
-ms.date: 07/14/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -38,7 +39,7 @@ The following figure shows the relationships among the components in the Exchang
 
 **Overview of the transport pipeline in Exchange 2013.**
 
-![Transport pipeline overview diagram](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
+![Transport pipeline overview diagram.](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
 
 ## Messages from external senders
 
@@ -160,7 +161,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Transport logs record what happens to messages as they flow through the transport pipeline.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Manage message approval</a></p></td>
+<td><p><a href="/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Manage message approval</a></p></td>
 <td><p>Moderated transport requires approval for messages sent to specific recipients.</p></td>
 </tr>
 <tr class="even">

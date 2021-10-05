@@ -2,13 +2,14 @@
 title: 'Deploy Exchange 2013 in a cross-forest topology: Exchange 2013 Help'
 TOCTitle: Deploy Exchange 2013 in a cross-forest topology
 ms:assetid: 65be650f-d435-4f60-9ff0-5cb88a726abb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998597(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Aa998597(v=EXCHG.150)
 ms:contentKeyID: 50406264
-ms.date: 12/09/2016
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,7 +23,7 @@ The following figure illustrates user synchronization between two Exchange 2013 
 
 **Example of Exchange 2013 cross-forest synchronization**
 
-![Example of Exchange 2010 multiple forest](images/Aa998597.df0ba5dd-cb96-4542-98bd-2a425defe317(EXCHG.150).gif "Example of Exchange 2010 multiple forest")
+![Example of Exchange 2010 multiple forest.](images/Aa998597.df0ba5dd-cb96-4542-98bd-2a425defe317(EXCHG.150).gif "Example of Exchange 2010 multiple forest")
 
 This topic does *not* describe how to deploy Exchange 2013 in a dedicated Exchange forest (or resource forest) topology. For more information about how to deploy Exchange 2013 in a resource forest topology, see [Deploy Exchange 2013 in an Exchange resource forest topology](deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help.md).
 
@@ -36,14 +37,14 @@ To perform the following procedure in Exchange 2013, confirm the following:
 
 - Ensure that Windows Remote Management has not been installed by Windows Update.
 
-- Install Windows PowerShell and Windows Remote Management. For details, see Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- Install Windows PowerShell and Windows Remote Management. For details, see Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](https://support.microsoft.com/help/968930).
 
-- Download Forefront Identity Manager 2010 R2 SP1. See [Download of Microsoft Forefront Identity Manager 2010 R2 SP1](https://go.microsoft.com/fwlink/p/?linkid=279868).
+- Download Forefront Identity Manager 2010 R2 SP1. See [Download of Microsoft Forefront Identity Manager 2010 R2 SP1](https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016/).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Deploy Exchange 2013 in a cross-forest topology with Forefront Identity Manager 2010 R2 SP1
 
@@ -60,11 +61,9 @@ To perform the following procedure in Exchange 2013, confirm the following:
 
 3. Create a GALSync management agent for each forest by using Forefront Identify Manager. This allows you to synchronize the users in each forest and create a common GAL. For detailed steps, see the following resources:
 
-   - [Configuring Global Address List (GAL) Synchronization with Forefront Identity Manager (FIM) 2010](https://go.microsoft.com/fwlink/p/?linkid=279869)
+   - [Work with Management Agents](/previous-versions/mim/jj590280(v=ws.10))
 
-   - [Work with Management Agents](https://go.microsoft.com/fwlink/p/?linkid=279870)
-
-   - [Forefront Identity Manager 2010 R2 Documentation Roadmap](https://go.microsoft.com/fwlink/p/?linkid=279871)
+   - [Forefront Identity Manager 2010 R2 Documentation Roadmap](/previous-versions/mim/jj156035(v=ws.10))
 
    > [!IMPORTANT]
    > While the resources discuss Exchange 2010, Exchange 2013 is supported for FIM 2010 R2 SP1. Make sure that you configure <STRONG>Extensions</STRONG> in FIM 2010 R2 SP1 for Exchange 2013.
@@ -76,7 +75,7 @@ To perform the following procedure in Exchange 2013, confirm the following:
 
    **Provision GalSync Management Agent for Exchange 2013**
 
-   ![Management Agent Exchange 2010 provisioning](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
+   ![Management Agent Exchange 2010 provisioning.](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "Management Agent Exchange 2010  provisioning")
 
 4. Create an SMTP Send connector in each of the forests. For detailed steps, see [Configure a cross-forest Send connector](configure-a-cross-forest-send-connector-exchange-2013-help.md).
 

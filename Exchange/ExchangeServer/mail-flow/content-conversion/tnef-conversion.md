@@ -1,21 +1,22 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
-ms.date: 7/6/2018
 ms.reviewer:
 title: TNEF conversion options
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# TNEF conversion options
+# Exchange Server: TNEF conversion options
 
 TNEF, also known as the Transport Neutral Encapsulation Format, Outlook Rich Text Format, or Exchange Rich Text Format, is a Microsoft-specific format for encapsulating MAPI message properties. All versions of Outlook fully support TNEF. Outlook on the web (formerly known as Outlook Web App) translates TNEF into MAPI and displays the formatted messages. Other email clients that don't support TNEF typically display TNEF formatted messages as plain text messages with Winmail.dat or Win.dat attachments. For more information about TNEF, see [Exchange and Outlook message formats](content-conversion.md#Exchange).
 
@@ -40,11 +41,11 @@ For more information about other content conversion in Exchange, see [Content co
 ## TNEF conversion options for remote domains
 <a name="RemoteDomains"> </a>
 
-Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+Remote domains specify settings for messages sent to domains that are external to your Exchange organization. For more information, see [Remote Domains](../../../ExchangeServer2013/remote-domains-exchange-2013-help.md).
 
 When you configure TNEF conversion options for a remote domain, the settings are applied to all messages sent to recipients in that domain. You can use the Exchange admin center (EAC) or the Exchange Management Shell to configure these options:
 
-- In the EAC, go to **Mail flow** \> **Remote domains** \> **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), or select an existing remote domain, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Use rich-text format** section.
+- In the EAC, go to **Mail flow** \> **Remote domains** \> **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png), or select an existing remote domain, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Use rich-text format** section.
 
 - In the Exchange Management Shell, use the _TnefEnabled_ parameter on the **Set-RemoteDomain** cmdlet.
 
@@ -92,7 +93,7 @@ Senders in Outlook 2010 or earlier can also control the default TNEF message con
 
 - **Send using Outlook Rich Text format**: Any TNEF messages sent to remote recipients remain TNEF messages.
 
-To configure the TNEF conversion settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://go.microsoft.com/fwlink/p/?linkid=397890).
+To configure the TNEF conversion settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 ## Order of precedence for TNEF conversion options
 <a name="Order"> </a>

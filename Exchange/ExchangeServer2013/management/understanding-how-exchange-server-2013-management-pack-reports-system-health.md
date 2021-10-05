@@ -2,13 +2,14 @@
 title: Understanding how Exchange Server 2013 Management Pack reports system health
 TOCTitle: Understanding how Exchange Server 2013 Management Pack reports system health
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195910(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53181786
-ms.date: 
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,7 +23,7 @@ This topic provides information about how the Exchange Server 2013 Management Pa
 
 In Exchange Server 2013, several architectural changes were made. One of the key changes is the *Managed Availability* feature where all Exchange 2013 components have built-in monitors that detect problems and attempt to recover the service availability. The Exchange 2013 Management Pack relies on this feature. Any issues that can't be recovered automatically are escalated to the Exchange 2013 Management Pack as an alert. Each component in Exchange 2013 monitors itself using three basic components called probes, monitors and responders.
 
-![Managed availability](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
+![Managed availability.](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
 
 - **Probes**: These are sets of data collectors that measure various components. There are three distinct types of probes:
 
@@ -50,7 +51,7 @@ The health sets in Exchange are organized into the following four categories tha
 
 For a complete list of Exchange health sets, see [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md).
 
-To learn more about Managed Availability, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
+To learn more about Managed Availability, see [Server health and performance](../server-health-and-performance-exchange-2013-help.md).
 
 ## How health rolls up
 

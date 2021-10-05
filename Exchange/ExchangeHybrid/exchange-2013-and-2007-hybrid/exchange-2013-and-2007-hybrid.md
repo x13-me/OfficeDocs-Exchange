@@ -1,12 +1,14 @@
 ---
 title: "Hybrid deployments with Exchange 2013 and Exchange 2007"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid

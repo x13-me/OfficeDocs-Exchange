@@ -2,13 +2,14 @@
 title: 'Configure protocol logging: Exchange 2013 Help'
 TOCTitle: Configure protocol logging
 ms:assetid: c81cac9c-b990-492a-b899-5be8d08a6068
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124531(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb124531(v=EXCHG.150)
 ms:contentKeyID: 49289407
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,7 +34,7 @@ Protocol logging records the SMTP conversations that occur on Send Connectors an
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Use the EAC to configure protocol logging
 
@@ -41,7 +42,7 @@ To use the EAC to enable or disable protocol logging on a Send connector or a Re
 
 1. In the EAC, navigate to **Mail flow** \> **Send connectors** or **Mail flow** \> **Receive connectors**.
 
-2. Select the connector you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the connector you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **General** tab in the **Protocol logging level** section, select one of the following options:
 
@@ -55,7 +56,7 @@ To use the EAC to configure the protocol log paths for the Send connectors and R
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **Transport logs**.
 

@@ -1,12 +1,13 @@
 ---
 title: 'Voice mail for users: Exchange 2013 Help'
 TOCTitle: Voice mail for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 6/24/2018
 ms.reviewer: 
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 

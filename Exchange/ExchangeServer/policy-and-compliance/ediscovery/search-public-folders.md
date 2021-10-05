@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use In-Place eDiscovery to search for content in public folders and place content in public folders on In-Place Hold. Like content in user mailboxes, content in public folders might be relevant if your organization has to respond to legal requests such as lawsuits or regulatory investigations.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 1845e557-be01-4921-8aa1-88da2b59c2ba
-ms.date: 6/8/2018
 ms.reviewer: 
 title: Search and place a hold on public folders using In-Place eDiscovery
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -31,7 +32,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
 
 1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2. Click **New** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+2. Click **New** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 3. On the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
 
@@ -44,7 +45,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
      > [!NOTE]
      > As previously explained, if you select the **Search all mailboxes**option, you won't be able to enable an In-Place Hold for the search.
 
-   ![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
+   ![Use In-Place eDiscovery to search and place a hold on public folders.](../../media/TA_MRM_SearchPublicFolders.gif)
 
 5. On the **Search query** page, complete the following fields:
 
@@ -60,7 +61,7 @@ You can use In-Place eDiscovery to search for content in public folders and plac
 
 7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search or placed on hold based on the criteria you specified.
 
-   Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
+   Estimates are displayed in the details pane on the **In-Place eDiscovery & Hold** page. Select a search and then click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png) to update the information about the search that's displayed in the details pane.
 
 ## Use the Exchange Management Shell to search and place a hold on public folders
 
@@ -70,11 +71,11 @@ Here are three examples of using the Exchange Management Shell to search and pla
 
 This example creates an estimate-only search that searches all public folders in the organization for items sent between January 1, 2015 and June 30, 2015 and that contain the phrase "patent infringement". The search doesn't include any mailboxes. The **Start-MailboxSearch** cmdlet is used to start the estimate-only search.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Northwind Subpoena-All PFs" -AllPublicFolderSources $true -AllSourceMailboxes $false -SearchQuery "patent infringement" -StartDate "01/01/2015" -EndDate "06/30/2015" -TargetMailbox "Discovery Search Mailbox" -EstimateOnly
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Northwind Subpoena-All PFs"
 ```
 
@@ -82,11 +83,11 @@ Start-MailboxSearch "Northwind Subpoena-All PFs"
 
 This example places all content in all public folders on In-Place hold, with an unlimited hold duration. The **Start-MailboxSearch** cmdlet is use to run the search and place the content on hold.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Hold for all PFs" -AllPublicFolderSources $true -AllSourceMailboxes $false -EstimateOnly -InPlaceHoldEnabled $true
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Hold for all PFs"
 ```
 
@@ -94,11 +95,11 @@ Start-MailboxSearch "Hold for all PFs"
 
 This example searches all mailboxes and public folders for any content that contains the words "price list" and "Contoso" and that was sent after January 1, 2015. The **Start-MailboxSearch** cmdlet is use to run the search and copy the search results to the discovery mailbox.
 
-```
+```PowerShell
 New-MailboxSearch -Name "Contoso Litigation" -AllSourceMailboxes $true -AllPublicFolderSources $true -SearchQuery '"price list" AND "contoso"' -StartDate "01/01/2015" -TargetMailbox "Discovery Search Mailbox"
 ```
 
-```
+```PowerShell
 Start-MailboxSearch "Contoso Litigation"
 ```
 

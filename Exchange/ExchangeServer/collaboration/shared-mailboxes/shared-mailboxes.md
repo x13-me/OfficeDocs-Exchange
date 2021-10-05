@@ -1,21 +1,22 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: An overview of shared mailboxes.'
 ms.topic: overview
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: fbd93b77-637b-4237-a824-8e95166cde11
-ms.date: 7/6/2018
 ms.reviewer: 
 title: Shared mailboxes
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Shared mailboxes
+# Shared mailboxes in Exchange Server
 
 A shared mailbox is a mailbox that multiple users can use to read and send email messages. Shared mailboxes can also be used to provide a common calendar, allowing multiple users to schedule and view vacation time or work shifts.
 
@@ -29,7 +30,7 @@ A shared mailbox is a mailbox that multiple users can use to read and send email
 
 ## What are shared mailboxes?
 
-A shared mailbox is a type of user mailbox that doesn't have its own user name and password. As a result, users can't log into them directly. To access a shared mailbox, users must first be granted Send As or Full Access permissions to the mailbox. Once that's done, users sign into their own mailboxes and then access the shared mailbox by adding it to their Outlook profile. In Exchange 2003 and earlier, shared mailboxes were just a regular mailbox to which an administrator could grant delegate access. Beginning in Exchange 2007, shared mailboxes became their own recipient type:
+A shared mailbox is a type of user mailbox that doesn't have its own username and password. As a result, users can't log into them directly. To access a shared mailbox, users must first be granted Send As or Full Access permissions to the mailbox. Once that's done, users sign into their own mailboxes and then access the shared mailbox by adding it to their Outlook profile. In Exchange 2003 and earlier, shared mailboxes were just a regular mailbox to which an administrator could grant delegate access. Beginning in Exchange 2007, shared mailboxes became their own recipient type:
 
 - **RecipientType**: UserMailbox
 

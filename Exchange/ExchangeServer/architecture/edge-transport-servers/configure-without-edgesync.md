@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
-ms.date:
 ms.reviewer:
 title: Configure internet mail flow through Edge Transport servers without using EdgeSync
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -57,7 +58,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 
 - On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors.
 
-   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
    For information about opening and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
@@ -66,7 +67,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Edge Transport Server Procedures
 
@@ -84,11 +85,11 @@ This Send connector requires the following configuration:
 
 To create a Send connector that's configured to send messages to the internet, run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/new-sendconnector).
 
 ### Step 2: Create a dedicated Send connector to only send messages to the Exchange organization
 
@@ -110,11 +111,11 @@ This Send connector requires the following configuration:
 
 To create a Send connector configured to send messages to the Exchange organization, replace the smart host values with the Mailbox servers in your organization, and run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces "--" -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/new-sendconnector).
 
 ### Step 3: Modify the default Receive connector to only accept messages from the internet
 
@@ -126,11 +127,11 @@ Make the following configuration changes to the default Receive connector:
 
 To modify the default Receive connector to only accept messages from the internet, replace \< _ServerName\>_ and bindings ith the name of your Edge Transport server and external network adapter configuration, and run this command:
 
-```
+```PowerShell
 Set-ReceiveConnector -Identity "Default internal Receive connector ServerName>" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](/powershell/module/exchange/set-receiveconnector).
 
 ### Step 4: Create a dedicated Receive connector to only accept messages from the Exchange organization
 
@@ -148,17 +149,17 @@ This Receive connector requires the following configuration:
 
 To create a Receive connector configured to only accept messages from the Exchange organization, replace the bindings and remote IP ranges with your values, and run this command.
 
-```
+```PowerShell
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/eb527447-ed68-4a55-943b-aad8c8a94d01.aspx).
+For detailed syntax and parameter information, see [New-ReceiveConnector](/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
 To verify that you have successfully configured the required Send connectors and Receive connectors on the Edge Transport server, run this command on the Edge Transport server and verify the property values:
 
-```
+```PowerShell
 Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism; Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
 ```
 
@@ -188,7 +189,7 @@ This Send connector requires the following configuration:
 
 #### Use the EAC to create a Send connector to send outgoing messages to the Edge Transport server
 
-1. In the EAC, go to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
+1. In the EAC, go to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
 
 2. On the first page, configure these settings:
 
@@ -198,7 +199,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
+3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
 
    - **IP address**: For example, 10.1.1.2.
 
@@ -214,7 +215,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
+5. On the next page, in the **Address space** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
 
    - **Type**: Verify SMTP is selected.
 
@@ -232,26 +233,26 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-7. On the next page, in the **Source server** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outgoing mail through the Edge Transport server. Select a Mailbox server and click **Add -\>** (repeat as many times a necessary), click **OK**, and then click **Finish**.
+7. On the next page, in the **Source server** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send outgoing mail through the Edge Transport server. Select a Mailbox server and click **Add -\>** (repeat as many times a necessary), click **OK**, and then click **Finish**.
 
 #### Use the Exchange Management Shell to create a Send connector to send outgoing messages to the Edge Transport server
 
 To create a Send connector to send outgoing messages to the Edge Transport server, replace the smart hosts and source Mailbox servers with your values, and run this command:
 
-```
+```PowerShell
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+For detailed syntax and parameter information, see [New-SendConnector](/powershell/module/exchange/new-sendconnector).
 
 #### How do you know this worked?
 
 To verify that you've successfully created a Send connector to send outgoing messages to the Edge Transport server, use either of these steps:
 
-- In the EAC, go to **Mail flow** \> **Send connectors**, select the Send connector named To Edge \> click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png), and verify the property values.
+- In the EAC, go to **Mail flow** \> **Send connectors**, select the Send connector named To Edge \> click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png), and verify the property values.
 
 - In the Exchange Management Shell, run this command on a Mailbox server to verify the property values:
 
-   ```
+   ```PowerShell
    Get-SendConnector -Identity "To Edge" | Format-List Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
    ```

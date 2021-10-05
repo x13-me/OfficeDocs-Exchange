@@ -1,16 +1,17 @@
 ---
 localization_priority: Critical
 description: 'Summary: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios.'
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 681835cf-79fe-4aa7-8a28-4a39944d0efc
-ms.date: 7/26/2018
 ms.reviewer: 
 title: Deploy new installations of Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars

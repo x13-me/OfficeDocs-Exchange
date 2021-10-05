@@ -1,32 +1,33 @@
 ---
-title: 'Add-ins for Outlook in Exchange 2013'
+title: 'Add-ins for Outlook in Exchange Server'
 TOCTitle: Add-ins for Outlook
 ms:assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms:mtpsurl:
 ms:contentKeyID:
-ms.date:
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Add-ins for Outlook in Exchange 2013
+# Add-ins for Outlook in Exchange Server
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:** Exchange Server 2013 and 2016_
 
 Add-ins for Outlook are applications that extend the usefulness of Outlook clients by adding information or tools that your users can use without having to leave Outlook. Add-ins are built by third-party developers and can be installed either from a file or URL or from the Office Store. By default, all users can install add-ins. Exchange administrators can use Roles to control users' ability to install add-ins.
 
 > [!TIP]
-> For information about add-ins for Outlook from an end-user perspective, check out the Help topic [Installed add-ins](https://go.microsoft.com/fwlink/p/?LinkId=282387) at Office.com. That topic provides an overview of the add-ins and also shows you some of the add-ins for Outlook that may be installed by default.
+> For information about add-ins for Outlook from an end-user perspective, check out [Installed add-ins](https://support.microsoft.com/office/a61762b7-7a82-47bd-b14e-bbc15eaeb70f). The topic provides an overview of the add-ins and also shows you some of the add-ins for Outlook that may be installed by default.
 
 ## Office Store add-ins and custom add-ins
 
 Outlook clients supports a variety of add-ins that are available through the Office Store. Outlook also supports custom add-ins that you can create and distribute to users in your organization.
 
 > [!NOTE]
-> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon](../ExchangeOnline/media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon.](../ExchangeOnline/media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
 
 > [!NOTE]
 > Some add-ins for Outlook are installed by default. Default add-ins for Outlook only activate on English language content. For example, German postal addresses in the message body won't activate the Bing Maps add-in.
@@ -57,7 +58,7 @@ See [Specify the administrators and users who can install and manage add-ins for
 
 If your end users are currently able to access add-ins and you want to remove that access, use the **Get-App** cmdlet in the Exchange Management Shell to see which add-ins each user has installed, and then use the **Remove-App** cmdlet to remove any add-ins from one or more users.
 
-For more information, go [here](https://go.microsoft.com/fwlink/p/?linkid=844721).
+For more information, go [here](/powershell/module/exchange/Get-App).
 
 ## Allow administrators and users to install add-ins
 

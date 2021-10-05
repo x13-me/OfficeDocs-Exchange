@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
-ms.date: 7/6/2018
 ms.reviewer:
 title: Create a Send connector in Exchange Server to send mail to the internet
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -30,7 +31,7 @@ When install your first Exchange Server 2016 or Exchange 2019 server, the server
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
 ## Create a Send connector to send mail to the internet
 
@@ -40,7 +41,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
 ### Use the EAC to create an internet Send connector
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
 
 2. On the first page, enter the following information:
 
@@ -56,7 +57,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
 4. On the next page, enter the following information:
 
-   - In the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, in **Fully Qualified Domain Name (FQDN)**, enter an asterisk (\*), and then click **Save**. This value indicates that the Send connector applies to messages addressed to all external domains.
+   - In the **Address space** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, in **Fully Qualified Domain Name (FQDN)**, enter an asterisk (\*), and then click **Save**. This value indicates that the Send connector applies to messages addressed to all external domains.
 
    - The **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites:
 
@@ -66,17 +67,17 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
    When you're finished, click **Next**.
 
-5. On the next page, in the **Source server** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send mail to the internet. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the internet. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
+5. On the next page, in the **Source server** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send mail to the internet. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the internet. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
 
 After you create the Send connector, it appears in the Send connector list. To configure the Send connector to proxy outbound mail through the Front End Transport service, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).
 
 #### Use the Exchange Management Shell to create an internet Send connector
 
-1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+1. Open the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 2. Use the following syntax:
 
-   ```
+   ```PowerShell
    New-SendConnector -Name <Name> -AddressSpaces * -Internet [-SourceTransportServer <fqdn1>,<fqdn2>...]
    ```
 
@@ -92,11 +93,11 @@ After you create the Send connector, it appears in the Send connector list. To c
 
    - The Send connector isn't scoped to the local Active Directory site. We aren't using the _IsScopedConnector_ parameter, and the default value is `$false`.
 
-   ```
+   ```PowerShell
    New-SendConnector -Name "To internet" -AddressSpaces * -Internet
    ```
 
-   For information about other options, see [New-SendConnector](https://technet.microsoft.com/library/7b315ab0-8778-4835-a252-fb94129d7a8e.aspx).
+   For information about other options, see [New-SendConnector](/powershell/module/exchange/new-sendconnector).
 
 > [!NOTE]
 > To configure the Send connector to proxy outbound mail through the Front End Transport service, add `-FrontEndProxyEnabled $true` to the command. For more information, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).

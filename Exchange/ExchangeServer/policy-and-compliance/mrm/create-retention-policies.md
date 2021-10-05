@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use retention policies to manage an email lifecycle in Exchange Server. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
-ms.date: 6/8/2018
 ms.reviewer:
 title: Create a retention policy in Exchange Server
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -33,7 +34,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the Exchange admin center (EAC) to create a retention tag**
 
-1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Select one of the following options:
 
@@ -80,31 +81,31 @@ Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different o
 
 This example creates a DPT to delete all messages in the mailbox after 7 years (2,556 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Delete" -Type All -AgeLimitForRetention 2556 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a DPT to move all messages to the In-Place Archive in 2 years (730 days).
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Move" -Type All -AgeLimitForRetention 730 -RetentionAction MoveToArchive
 ```
 
 This example creates a DPT to delete voice mail messages after 20 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "DPT-Corp-Voicemail" -Type All -MessageClass Voicemail -AgeLimitForRetention 20 -RetentionAction DeleteAndAllowRecovery
 ```
 
 This example creates a RPT to permanently delete messages in the Junk EMail folder after 30 days.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "RPT-Corp-JunkMail" -Type JunkEmail -AgeLimitForRetention 30 -RetentionAction PermanentlyDelete
 ```
 
 This example creates a personal tag to never delete a message.
 
-```
+```PowerShell
 New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction DeleteAndAllowRecovery -RetentionEnabled $false
 ```
 
@@ -114,25 +115,25 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the EAC to create a retention policy**
 
-1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In **New Retention Policy**, complete the following fields:
 
    - **Name**: Enter a name for the retention policy.
 
-   - **Retention tags**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
+   - **Retention tags**: Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
 
      A retention policy can contain the following tags:
 
      - One DPT with the **Move to Archive** action
 
-    - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions
+     - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions
 
-    - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions
+     - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions
 
-    - One RPT per default folder such as **Inbox** to delete items
+     - One RPT per default folder such as **Inbox** to delete items
 
-    - Any number of personal tags
+     - Any number of personal tags
 
       > [!NOTE]
       > Although you can add any number of personal tags to a retention policy, having many personal tags with different retention settings can confuse users. We recommend linking no more than ten personal tags to a retention policy.
@@ -143,11 +144,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy.
 
-```
+```PowerShell
 New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://technet.microsoft.com/library/4cdd6f20-5bca-4269-ac21-0a4cde0d54d6.aspx).
+For detailed syntax and parameter information, see [New-RetentionPolicy](/powershell/module/exchange/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 
@@ -161,7 +162,7 @@ To verify that you have applied the retention policy, do the following:
 
 1. Run the following Exchange Management Shell command to run the MRM assistant manually against a single mailbox.
 
-   ```
+   ```PowerShell
    Start-ManagedFolderAssistant -Identity <mailbox identity>
    ```
 

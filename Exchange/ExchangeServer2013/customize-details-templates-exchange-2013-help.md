@@ -2,13 +2,14 @@
 title: 'Customize details templates: Exchange 2013 Help'
 TOCTitle: Customize details templates
 ms:assetid: b4beeedd-e46f-442e-844a-e8575f95dca0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.toolbox.detailstemplate(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.toolbox.detailstemplate(v=EXCHG.150)
 ms:contentKeyID: 49090993
-ms.date: 05/13/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -48,7 +49,7 @@ Use the Details Templates Editor to customize the client-side graphical user int
 
    **Default details template as viewed from Outlook 2013**
 
-   ![Default details template in Outlook 2007](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
+   ![Default details template in Outlook 2007.](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
 
 4. After you click **Edit**, there are several tasks you can perform to customize a details template:
 

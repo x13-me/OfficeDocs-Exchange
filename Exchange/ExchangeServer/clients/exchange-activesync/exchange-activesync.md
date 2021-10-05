@@ -1,21 +1,22 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
-ms.date: 7/5/2018
 ms.reviewer: 
 title: Exchange ActiveSync
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
 
-# Exchange ActiveSync
+# Exchange ActiveSync in Exchange Server
 
 Exchange ActiveSync is an Exchange synchronization protocol that's optimized to work together with high-latency and low-bandwidth networks. The protocol, based on HTTP and XML, lets mobile phones access an organization's information on a server that's running Microsoft Exchange.
 
@@ -90,12 +91,7 @@ In addition to the ability to configure security options for communications betw
 
 - **Remote wipe**: If a mobile device is lost, stolen, or otherwise compromised, you can issue a remote wipe command from the Exchange Server computer or from any Web browser by using Outlook Web App. This command erases all data from the mobile device.
 
-- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords.
-
-    > [!CAUTION]
-    > The iOS fingerprint reader technology cannot be used as a device password. If you choose to use the iOS fingerprint reader, you'll still need to create and enter a device password if the mobile device mailbox policy for your organization requires a device password.
-
-    The device password options include the following:
+- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords. The device password options include the following:
 
   - **Minimum password length (characters)**: This option specifies the length of the password for the mobile device. The default length is 4 characters, but as many as 18 can be included.
 

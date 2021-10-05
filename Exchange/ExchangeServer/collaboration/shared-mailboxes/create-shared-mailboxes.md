@@ -1,14 +1,15 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: serdars
 ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
-ms.date: 6/8/2018
 ms.reviewer:
 title: Create shared mailboxes in the Exchange admin center
 ms.collection: exchange-server
+f1.keywords:
+- NOCSH
 audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
@@ -17,15 +18,15 @@ manager: serdars
 
 # Create shared mailboxes in the Exchange admin center
 
-If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
+If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. The Exchange admin center (EAC) is the single unified management console that allows for managing both your on-premises and Exchange Online organizations and allows you to connect and configure features for both organizations. For more information, see [Hybrid management in Exchange hybrid deployments](../../../ExchangeHybrid/hybrid-management.md).
 
 ## Use the EAC to create a shared mailbox
 
-For information on limitations, automapping, and getting your users set up, see [Create a shared mailbox](https://support.office.com/article/871a246d-3acd-4bba-948e-5de8be0544c9).
+For information on limitations, automapping, and getting your users set up, see [Create a shared mailbox](/microsoft-365/admin/email/create-a-shared-mailbox).
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
-1. Go to **Recipients** \> **Shared** \> **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Recipients** \> **Shared** \> **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Fill-in the required fields:
 
@@ -33,7 +34,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Email address**
 
-3. To grant Full Access or Send As permissions, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
+3. To grant Full Access or Send As permissions, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permissions should you use?](#which-permissions-should-you-use) later in this topic.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -42,11 +43,11 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. Go to **Recipients** \> **Shared** \> **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. Go to **Recipients** \> **Shared** \> **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. Click **Mailbox delegation**
 
-3. To grant or remove Full Access and Send As permissions, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png) and then select the users you want to grant permissions to.
+3. To grant or remove Full Access and Send As permissions, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png) and then select the users you want to grant permissions to.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -60,11 +61,11 @@ This example creates the shared mailbox Sales Department and grants Full Access 
 > [!NOTE]
 > This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See [Manage mail-enabled security groups in Exchange Server](../../recipients/mail-enabled-security-groups.md).
 
-```
+```PowerShell
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
 ```
 
-For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/new-mailbox).
 
 ## Which permissions should you use?
 
@@ -81,4 +82,4 @@ You can use the following permissions with a shared mailbox.
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](/answers/topics/office-exchange-server-itpro.html), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).

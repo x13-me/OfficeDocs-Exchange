@@ -2,13 +2,14 @@
 title: 'Create a sharing policy: Exchange 2013 Help'
 TOCTitle: Create a sharing policy
 ms:assetid: cae8cab0-6265-448b-8add-5202cdb20678
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657494(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ657494(v=EXCHG.150)
 ms:contentKeyID: 49289410
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -57,11 +58,11 @@ For additional management tasks related to federation, see [Federation procedure
 
 1. Navigate to **organization**\> **sharing**.
 
-2. In the list view, under **Individual Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box.
 
-4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to specify the sharing rules for the sharing policy.
+4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to specify the sharing rules for the sharing policy.
 
 5. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 
@@ -91,9 +92,9 @@ You can edit the default sharing policy to allow all of your users to share full
 
 1. Navigate to **organization**\> **sharing**.
 
-2. In the list view, under **Individual Sharing**, select **the Default Sharing Policy**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, under **Individual Sharing**, select **the Default Sharing Policy**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In the **Sharing Policy** dialog box, select **Sharing with all domains**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. In the **Sharing Policy** dialog box, select **Sharing with all domains**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. In the **Sharing Rule** dialog box, under **Specify what information you want to share**, select **All calendar appointment information, including time, subject, location and title**, and then click **save**.
 
@@ -135,11 +136,11 @@ You can edit the default sharing policy to allow all of your users to share full
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\))
+- [New-SharingPolicy](/powershell/module/exchange/New-SharingPolicy)
 
-- [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\))
+- [Set-ExchangeServer](/powershell/module/exchange/Set-ExchangeServer)
 
-- [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\))
+- [Set-OwaVirtualDirectory](/powershell/module/exchange/Set-OwaVirtualDirectory)
 
 ## How do you know this worked?
 
@@ -150,4 +151,4 @@ Get-SharingPolicy <policy name> | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).

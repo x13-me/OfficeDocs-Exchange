@@ -1,12 +1,13 @@
 ---
 title: 'Manage mail-enabled security groups: Exchange 2013 Help'
 TOCTitle: Manage mail-enabled security groups
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.reviewer:
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -14,18 +15,18 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Recipients](recipients-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
 ## Create a mail-enabled security group
 
@@ -33,7 +34,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. Click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) \> **Security group**.
+2. Click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) \> **Security group**.
 
 3. On the **New security group** page, complete the following fields:
 
@@ -56,7 +57,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 
      Group owners don't have to be members of the group. Use **Add group owners as members** to add or remove the owners as members.
 
-     To add members to the group, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). When you've finished adding members, click **OK** to return to the **New security group** page.
+     To add members to the group, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). When you've finished adding members, click **OK** to return to the **New security group** page.
 
      Select the **Owner approval is required** check box if you want the group owners to receive user requests to join the group. If you select this option, members can only be removed by the group owners.
 
@@ -73,7 +74,7 @@ This example creates a security group with an alias fsadmin and the name File Se
 New-DistributionGroup -Name "File Server Managers" -Alias fsadmin -Type security
 ```
 
-For more information about using the Shell to create mail-enabled security groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
+For more information about using the Shell to create mail-enabled security groups, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
 ### How do you know this worked?
 
@@ -93,7 +94,7 @@ To verify that you've successfully created a mail-enabled security group, do one
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, click the security group that you want to view or change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the security group that you want to view or change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the group properties page, click one of the following sections to view or change properties.
 
@@ -118,11 +119,11 @@ Use this section to view or change basic information about the group.
 
 Use this section to assign group owners. The group owner can add members to the group, and approve or reject requests to join the group. By default, the person who creates a group is the owner. All groups must have at least one owner.
 
-You can add owners by clicking **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). You can remove an owner by selecting the owner and then clicking **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+You can add owners by clicking **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). You can remove an owner by selecting the owner and then clicking **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 ### Membership
 
-Use this section to add or remove members. Group owners don't have to be members of the group. Under **Members**, you can add members by clicking **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). You can remove a member by selecting a user in the member list and then clicking **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+Use this section to add or remove members. Group owners don't have to be members of the group. Under **Members**, you can add members by clicking **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). You can remove a member by selecting a user in the member list and then clicking **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 ### Membership approval
 
@@ -139,7 +140,7 @@ Use this section to manage who can send email to this group.
 
 - **Senders inside and outside of my organization** Select this option to allow anyone to send messages to the group.
 
-   You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+   You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
 
    To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
@@ -152,9 +153,9 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 - **Messages sent to this group have to be approved by a moderator** This check box isn't selected by default. If you select this check box, incoming messages will be reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
 
-- **Group moderators** To add group moderators, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group will be sent to the group owners for approval.
+- **Group moderators** To add group moderators, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group will be sent to the group owners for approval.
 
-- **Senders who don't require message approval** To add people or groups that can bypass moderation for this group, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+- **Senders who don't require message approval** To add people or groups that can bypass moderation for this group, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
 
 - **Select moderation notifications** Use this section to set how users are notified about message approval.
 
@@ -168,7 +169,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add** Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add** Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP** This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -180,7 +181,7 @@ Use this section to view or change the email addresses associated with the group
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
-- **Edit** To change an email address associated with the group, select it in the list, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- **Edit** To change an email address associated with the group, select it in the list, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
   > [!NOTE]
    > To make an existing address the primary SMTP address for the group, select the **Make this the reply address** check box. As previously mentioned, this check box is displayed only when the **Automatically update email addresses based on the email address policy applied to this recipient** check box isn't selected.
@@ -204,22 +205,22 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 - **Send on Behalf** This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group in the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
-To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif).
+To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon.](images/ITPro_EAC_.gif).
 
 ### Use the Shell to change security group properties
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following topics:
 
-- [Get-DistributionGroup](https://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
+- [Get-DistributionGroup](/powershell/module/exchange/get-distributiongroup)
 
-- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](/powershell/module/exchange/set-distributiongroup)
 
 Here are some examples of using the Shell to change security group properties.
 
 This example displays a list of all security groups in the organization.
 
 ```powershell
-Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')}
+Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'"
 ```
 
 This example changes the primary SMTP address (also called the reply address) for the Seattle Administrators security group from admins@contoso.com to seattle.admins@contoso.com. The previous reply address will be kept as a proxy address.
@@ -231,17 +232,17 @@ Set-DistributionGroup "Seattle Employees" -EmailAddresses SMTP:sea.admins@contos
 This example hides all security groups in the organization from the address book.
 
 ```powershell
-Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Set-DistributionGroup -HiddenFromAddressListsEnabled $true
+Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Set-DistributionGroup -HiddenFromAddressListsEnabled $true
 ```
 
 ### How do you know this worked?
 
 To verify that you've successfully changed properties for a security group, do the following:
 
-- In the EAC, select the group and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group.
+- In the EAC, select the group and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group.
 
 - In the Shell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
   ```powershell
-  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Format-List Name,HiddenFromAddressListsEnabled
+  Get-DistributionGroup -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'MailUniversalSecurityGroup'" | Format-List Name,HiddenFromAddressListsEnabled
   ```

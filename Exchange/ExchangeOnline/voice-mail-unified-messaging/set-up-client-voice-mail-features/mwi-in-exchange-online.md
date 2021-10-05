@@ -1,12 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Message Waiting Indicator (MWI) is a feature that's found in most voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
 ms.topic: article
 author: msdmaguire
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 467f344c-64b0-4efb-96eb-8904379cce1e
-ms.date: 6/24/2018
 ms.reviewer: 
+f1.keywords:
+- NOCSH
 title: Message Waiting Indicator in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
@@ -16,6 +17,9 @@ manager: serdars
 ---
 
 # Message Waiting Indicator in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
 
 Message Waiting Indicator (MWI) is a feature that's found in most voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
 
@@ -36,7 +40,7 @@ MWI notifications can include any mechanism that indicates the existence of a ne
 
   - Lync 2010 and 2013 desktop clients
 
-  - Lync Mobile client app for Windows Phone, Microsoft Surface. and iOS devices
+  - Lync Mobile client app for Microsoft Surface and iOS devices
 
 - A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
 
@@ -69,7 +73,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
 
 - [Disable Message Waiting Indicator (MWI) for users](disable-mwi-for-users.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](/powershell/module/exchange/set-ummailboxpolicy)
 
 ### UM IP gateways and MWI
 
@@ -91,7 +95,7 @@ For more information about how to manage MWI settings, see the following topics:
 
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](prevent-mwi-on-um-ip-gateway.md)
 
-- [Set-UMIPGateway](https://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
+- [Set-UMIPGateway](/powershell/module/exchange/set-umipgateway)
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 <a name="SMS"> </a>
@@ -117,7 +121,7 @@ For more information about how to manage text message notification settings on a
 
 - [Manage voice mail settings for a user](../../voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings.md)
 
-- [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
+- [Set-UMMailbox](/powershell/module/exchange/set-ummailbox)
 
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
@@ -131,7 +135,7 @@ For more information about how to manage text message notification settings, see
 
 - [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md)
 
-- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](/powershell/module/exchange/set-ummailboxpolicy)
 
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks:
 
@@ -139,7 +143,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 2. On the UM mailbox policy that's linked to the user, verify that the _AllowSMSNotification_ parameter is set to `$true`. To set the parameter to `$true`, run the following command:
 
-    ```
+    ```PowerShell
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowSMSNotification $true
     ```
 
@@ -147,7 +151,7 @@ For text message notifications for voice mail and missed calls to work correctly
 
 4. Because the default setting is `None`, you must run the following command in Exchange Online PowerShell and set the text message notification option to either `VoiceMailAndMissedCalls` or `VoiceMail`. For example:
 
-    ```
+    ```PowerShell
     Set-UMMailbox -Identity MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls
     ```
 

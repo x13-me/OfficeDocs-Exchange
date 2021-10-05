@@ -2,13 +2,14 @@
 title: 'Disconnected mailboxes: Exchange 2013 Help'
 TOCTitle: Disconnected mailboxes
 ms:assetid: 508ebe2b-387d-4867-bdb0-028ef351ce56
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232039(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/Bb232039(v=EXCHG.150)
 ms:contentKeyID: 50387716
-ms.date: 06/04/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -20,7 +21,7 @@ Each Microsoft Exchange mailbox consists of an Active Directory user account and
 
 **Mailbox components**
 
-![Parts that make up a mailbox](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "Parts that make up a mailbox")
+![Parts that make up a mailbox.](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "Parts that make up a mailbox")
 
 A *disconnected mailbox* is a mailbox object in the mailbox database that isn't associated with an Active Directory user account. There are two types of disconnected mailboxes:
 
@@ -65,7 +66,7 @@ Here are scenarios in which you may want to connect or restore a disabled mailbo
 
 - You disabled a mailbox and now want to reconnect the mailbox to the same Active Directory user account.
 
-- You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://technet.microsoft.com/en-us/library/aa995948\(v=exchg.150\)) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
+- You deleted a mailbox by using the EAC or the [Remove-Mailbox](/powershell/module/exchange/Remove-Mailbox) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
 
 - You deleted a mailbox and now want to restore the mailbox to an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user's disabled mailbox to their new mailbox.
 

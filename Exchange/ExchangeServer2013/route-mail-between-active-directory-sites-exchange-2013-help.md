@@ -2,13 +2,14 @@
 title: 'Route mail between Active Directory sites: Exchange 2013 Help'
 TOCTitle: Route mail between Active Directory sites
 ms:assetid: 86b423e3-7bec-4430-9a5a-4f84ce9d82ea
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ916681(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ916681(v=EXCHG.150)
 ms:contentKeyID: 50934220
-ms.date: 12/09/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -84,13 +85,13 @@ In the following figure, four Active Directory sites are configured in the fores
 
 **Full mesh topology with a single IP site link**
 
-![Full mesh topology with a single IP site link](images/JJ916681.af38d41d-e768-4221-ab4b-b782aa388b73(EXCHG.150).gif "Full mesh topology with a single IP site link")
+![Full mesh topology with a single IP site link.](images/JJ916681.af38d41d-e768-4221-ab4b-b782aa388b73(EXCHG.150).gif "Full mesh topology with a single IP site link")
 
 In the following figure, four Active Directory sites are configured in the forest. In this topology, the administrator has configured IP site links to create a *hub-and-spoke topology* of Active Directory sites. Each spoke site can communicate directly with the central site, and the spoke sites can communicate with one another by using the transitive IP site links.
 
 **Hub-and-spoke topology of Active Directory IP site links**
 
-![Hub and spoke topology of IP site links](images/JJ916681.eca6cd51-8c2e-4996-81ea-070cd9766ef8(EXCHG.150).gif "Hub and spoke topology of IP site links")
+![Hub and spoke topology of IP site links.](images/JJ916681.eca6cd51-8c2e-4996-81ea-070cd9766ef8(EXCHG.150).gif "Hub and spoke topology of IP site links")
 
 It's important to note that Exchange uses site links when determining the least-cost path, but will always try to deliver messages directly to the destination Exchange server. For example, if a user in Site B in the topology shown in the preceding figure sends a message to another user in Site C, the Mailbox server in Site B will connect directly to the Mailbox server in Site C. If you want to force messages to go through Site A, you must enable that site as a hub site. For more information about hub sites, see "Implementing Hub Sites" later in this topic.
 
@@ -98,7 +99,7 @@ An Active Directory administrator implements the topology that best represents t
 
 The default cost for a site link is 100. A valid site link cost can be any number from 1 through 99,999. If you specify redundant links, the link with the lowest cost assignment is always preferred. An Exchange organization administrator can assign an Exchange-specific cost to an IP site link. If an Exchange cost is assigned to an IP site link, it will be used by Exchange. Otherwise, the Active Directory cost is used. For more information about how to set an Exchange cost on an IP site link, see "Controlling IP Site Link Costs" later in this topic. An administrator who has membership in the Enterprise Administrators group can create additional IP site links.
 
-For more information about Active Directory site configuration, see [Designing the Site Topology](https://go.microsoft.com/fwlink/p/?linkid=33551).
+For more information about Active Directory site configuration, see [Designing the Site Topology](/previous-versions/windows/it-pro/windows-server-2003/cc787284(v=ws.10)).
 
 ## Controlling IP site link costs
 
@@ -110,7 +111,7 @@ Adjusting IP site link costs can be useful when the message routing topology has
 
 **Topology with Exchange costs configured on IP site links**
 
-![Topology with Exchange costs on IP site links](images/JJ916681.56ac2bab-99de-4ddf-b968-80cd34ab8c21(EXCHG.150).gif "Topology with Exchange costs on IP site links")
+![Topology with Exchange costs on IP site links.](images/JJ916681.56ac2bab-99de-4ddf-b968-80cd34ab8c21(EXCHG.150).gif "Topology with Exchange costs on IP site links")
 
 In the preceding figure, the network connection between Site C and Site D is a low bandwidth connection that's only used for Active Directory replication and shouldn't be used for message routing. However, the Active Directory IP site link costs cause that link to be included in the least-cost routing path from any other Active Directory site to Site D. Therefore, messages are delivered to the Site D queue in Site C. The Exchange administrator prefers that the least-cost routing path include Site B instead so that if Site D is unavailable, the messages will queue at Site B. Configuring a high Exchange cost on the IP site link between Site C and Site D prevents that IP site link from being included in the least-cost routing path to Site D.
 
@@ -128,13 +129,13 @@ This variation to direct relay routing only is in effect when the hub site is lo
 
 **Message delivery with a hub site**
 
-![Message delivery with a hub site](images/JJ916681.93238bcb-6bbc-4a48-aeb0-09342a421b5b(EXCHG.150).gif "Message delivery with a hub site")
+![Message delivery with a hub site.](images/JJ916681.93238bcb-6bbc-4a48-aeb0-09342a421b5b(EXCHG.150).gif "Message delivery with a hub site")
 
 The following figure shows how IP site link costs affect routing to a hub site. In this scenario, Site B has been designated as a hub site. However, Site B doesn't exist along the least-cost routing path between any other sites. Therefore, messages that are relayed from Site A to Site D are never relayed through Site B. An Active Directory site is never used as a hub site if it isn't on the least-cost routing path between two other sites.
 
 **Misconfigured hub site**
 
-![Misconfigured hub site](images/JJ916681.c010d4d8-5cd3-4b79-b7db-0367ba3cc287(EXCHG.150).gif "Misconfigured hub site")
+![Misconfigured hub site.](images/JJ916681.c010d4d8-5cd3-4b79-b7db-0367ba3cc287(EXCHG.150).gif "Misconfigured hub site")
 
 You can configure any Active Directory site as a hub site. However, for this configuration to work correctly, you must have at least one Mailbox server in the hub site.
 

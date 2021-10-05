@@ -2,13 +2,14 @@
 title: 'Mailbox server: Exchange 2013 Help'
 TOCTitle: Mailbox server
 ms:assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150491(v=EXCHG.150)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ150491(v=EXCHG.150)
 ms:contentKeyID: 47559954
-ms.date: 06/02/2016
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
@@ -34,7 +35,7 @@ In Exchange 2013, the Mailbox server role interacts directly with Active Directo
 
 **Mailbox and Client Access server interaction and architecture**
 
-![Client Access and Mailbox server interaction](images/JJ150491.d14577bf-14f9-40fa-bd49-a92932eb003a(EXCHG.150).gif "Client Access and Mailbox server interaction")
+![Client Access and Mailbox server interaction.](images/JJ150491.d14577bf-14f9-40fa-bd49-a92932eb003a(EXCHG.150).gif "Client Access and Mailbox server interaction")
 
 For more details, see the "Exchange 2013 architecture" section in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 

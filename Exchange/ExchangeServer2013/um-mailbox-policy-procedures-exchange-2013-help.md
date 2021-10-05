@@ -1,12 +1,13 @@
 ---
 title: 'UM mailbox policy procedures: Exchange 2013 Help'
 TOCTitle: UM mailbox policy procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.date: 11/17/2014
 ms.reviewer: 
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
+f1.keywords:
+- NOCSH
 mtps_version: v=EXCHG.150
 ---
 
