@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage

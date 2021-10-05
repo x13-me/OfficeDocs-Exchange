@@ -1,6 +1,6 @@
 ---
 localization_priority: Critical
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.custom:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage

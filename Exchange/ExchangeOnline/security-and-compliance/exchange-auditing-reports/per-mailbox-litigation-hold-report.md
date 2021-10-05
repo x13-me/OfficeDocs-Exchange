@@ -38,7 +38,7 @@ For each of these change types, the report includes the user who made the change
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) forum.
 
-## Use the EAC to run a litigation hold report
+## Use the classic EAC to run a litigation hold report
 
 1. In the EAC, navigate to **Compliance Management** \> **Auditing**.
 
