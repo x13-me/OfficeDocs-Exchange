@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to enable Outlook Web App users to view POP3, IMAP4, and SMTP server settings 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
