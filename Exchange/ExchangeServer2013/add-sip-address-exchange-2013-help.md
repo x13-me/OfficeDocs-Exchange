@@ -4,6 +4,7 @@ TOCTitle: Add a SIP address
 ms.author: serdars
 ms.topic: article
 author: msdmaguire
+description:  How to add a SIP address in Exchange Server
 manager: serdars
 ms.reviewer:
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3
