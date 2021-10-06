@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article 
 manager: serdars
 ms.author: serdars
+description: How to resolve the issue when an AD LDS directory exists in the default location
 author: msdmaguire
 f1.keywords:
 - NOCSH
