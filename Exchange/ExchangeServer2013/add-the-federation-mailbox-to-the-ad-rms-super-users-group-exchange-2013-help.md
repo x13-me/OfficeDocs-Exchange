@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article
 manager: serdars
 ms.author: serdars
+description: How to add the Federation Mailbox to the AD RMS Super Users Group
 author: msdmaguire
 f1.keywords:
 - NOCSH
