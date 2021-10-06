@@ -4,7 +4,9 @@ TOCTitle: Allow or prevent call answering on a Client Access server
 ms:assetid: 8287bb78-2621-4b80-a128-8f2ccd67923a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123529(v=EXCHG.150)
 ms:contentKeyID: 49315455
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire

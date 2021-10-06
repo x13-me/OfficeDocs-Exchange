@@ -63,7 +63,7 @@ In the Shell, run the following command.
 Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 
@@ -106,7 +106,7 @@ Get-Mailbox | where {$_.CustomAttribute1 -match "Manager"} | Set-CASMailbox -act
 > [!NOTE]
 > You can substitute <CODE>CustomAttribute1</CODE> for any of the properties on the <STRONG>Get-Mailbox</STRONG> object. To view the full list, type: <CODE>Get-Mailbox username |fl</CODE>.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 

@@ -4,6 +4,7 @@ TOCTitle: Allow Message Waiting Indicator (MWI) on a UM IP gateway
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: 5667e37c-48c6-4659-9dc9-94b1dd8ba232
 f1.keywords:

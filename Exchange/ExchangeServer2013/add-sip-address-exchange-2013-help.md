@@ -2,6 +2,7 @@
 title: 'Add a SIP address: Exchange 2013 Help'
 TOCTitle: Add a SIP address
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 manager: serdars
 ms.reviewer:
