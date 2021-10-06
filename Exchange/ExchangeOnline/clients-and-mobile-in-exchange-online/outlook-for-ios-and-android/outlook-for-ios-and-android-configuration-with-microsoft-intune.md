@@ -38,7 +38,7 @@ App configuration can be delivered either through the mobile device management O
 Each configuration scenario highlights its specific requirements. For example, whether the configuration scenario requires device enrollment, and thus works with any UEM provider, or requires Intune App Protection Policies. The following flow chart outlines which channel needs to be used for the above configuration scenarios:
 
 > [!NOTE]
-> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
+> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy (APP) channel is referred to as a **Managed Apps** App Configuration Policy.
 
 ![Flowchart of the process.](../../media/acp-flowchart-v2.png)
 
