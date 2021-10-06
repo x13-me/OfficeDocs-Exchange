@@ -4,6 +4,7 @@ TOCTitle: Add an extension number
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to add an extension number in Exchange Server
 ms.topic: article
 ms.reviewer:
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031

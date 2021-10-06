@@ -3,6 +3,7 @@ title: 'Add an auto attendant extension number: Exchange 2013 Help'
 TOCTitle: Add an auto attendant extension number
 ms.author: serdars
 author: msdmaguire
+description: How to add an auto attendant extension number in Exchange Server
 manager: serdars
 ms.topic: article 
 ms.reviewer:

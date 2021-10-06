@@ -7,6 +7,7 @@ ms:contentKeyID: 46628912
 ms.reviewer:
 ms.topic: article 
 manager: serdars
+description: How to resolve the problem when Active Directory doesn't exist or can't be contacted.
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

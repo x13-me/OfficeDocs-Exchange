@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article 
 manager: serdars
 ms.author: serdars
+description: "How to resolve the issue when your Active Directory domain is mixed mode\_LocalDomainModeMixed."
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -17,8 +18,6 @@ mtps_version: v=EXCHG.150
 # Active Directory domain is mixed mode\_LocalDomainModeMixed
 
 _**Applies to:** Exchange Server 2013_
-
-The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
