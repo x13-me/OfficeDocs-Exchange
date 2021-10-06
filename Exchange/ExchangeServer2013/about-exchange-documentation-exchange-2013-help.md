@@ -2,6 +2,7 @@
 title: 'About Exchange documentation: Exchange 2013 Help'
 TOCTitle: About Exchange documentation
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
