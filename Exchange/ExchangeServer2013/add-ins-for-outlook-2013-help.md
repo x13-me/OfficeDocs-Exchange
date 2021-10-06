@@ -5,6 +5,7 @@ ms:assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer: 
+description: About add-ins available for Outlook in Exchange Server
 ms.topic: article
 manager: serdars
 ms.author: serdars
