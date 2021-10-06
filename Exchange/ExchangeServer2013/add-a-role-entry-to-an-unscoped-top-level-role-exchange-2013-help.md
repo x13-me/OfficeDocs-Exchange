@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd979789(v=EXCHG.150)
 ms:contentKeyID: 49289252
 ms.reviewer: 
 ms.topic: article
+description: How to add a role entry to an unscoped top-level role.
 manager: serdars
 ms.author: serdars
 author: msdmaguire
