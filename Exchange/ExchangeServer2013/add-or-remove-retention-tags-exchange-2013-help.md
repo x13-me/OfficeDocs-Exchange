@@ -5,6 +5,7 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.topic: article
+description: How to add or remove retention tags from a retention policy in Exchange
 ms.reviewer:
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 f1.keywords:
