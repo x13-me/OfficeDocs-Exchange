@@ -5,6 +5,8 @@ ms:assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364750(v=EXCHG.150)
 ms:contentKeyID: 48385619
 ms.reviewer: 
+ms.topic: article
+description: How to activate a mailbox database copy.
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -13,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Activate a mailbox database copy
+# Exchange Server 2013: Activate a mailbox database copy
 
 _**Applies to:** Exchange Server 2013_
 
