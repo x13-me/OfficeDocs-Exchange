@@ -37,7 +37,7 @@ The EM service can apply 3 types of mitigations:
 You have visibility and control over any applied mitigation by using PowerShell cmdlets and scripts.
 
 ### How does it work
-If Microsoft learns about a security threat, we may create and release a mitigation for the issue. In that event, the mitigation would besend from the OCS to the EM service as a signed XML file containing the configuration settings used to apply the mitigation. 
+If Microsoft learns about a security threat, we may create and release a mitigation for the issue. In that event, the mitigation would be sent from the OCS to the EM service as a signed XML file containing the configuration settings used to apply the mitigation. 
 
 After the EM service has been installed, it checks the OCS for available mitigations every hour. The EM service subsequently downloads the XML and validates the signature to verify that the XML was not tampered with by checking the issuer, the Extended Key Usage, and the certificate chain. After successful validation, the EM service applies the mitigation.
 
@@ -57,7 +57,7 @@ The following is the respository of all released mitigations.
 If these prerequisites are not already on the Windows Server where Exchange is installed or to be installed, Setup will prompt you to install these prerequisites during the readiness check:
 
 - [IIS URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite)
-- [Universal C Runtime in Windows (KB2999226)](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+- [Universal C Runtime in Windows (KB2999226)](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c) for Windows Server 2012 and Windows Server 2012 R2
 
 
 ## Connectivity
@@ -160,14 +160,14 @@ If a mitigation critically affects the functioning of your Exchange server, you 
 To block any mitigation, add the Mitigation ID in the **MitigationsBlocked** parameter:
 
 ```powershell
-Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @(“M1”)
+Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @("M1")
 ```
 The above operation would block M1 mitigation, which would ensure EM service will not reapply this mitigation in next hourly cycle.
 
 If there is more than one mitigation to be blocked, please use the following:
 
 ```powershell
-Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @(“M1”, “M2”)
+Set-ExchangeServer -Identity <Servername> -MitigationsBlocked @("M1", "M2")
 ```
 
 Blocking a mitigation does not automatically remove it, but after blocking a mitigation, an admin can manually remove it. How a mitigation is removed depends on the type of mitigation. For example, to remove an IIS rewrite rule mitigation, delete the rule in IIS Manager. To remove a service or app pool mitigation, start the service or app pool manually.
@@ -221,16 +221,16 @@ MitigationsBlocked	:	{M01.2}
 
 
 ## Get-Mitigation Script
-You can use the **Get-Mitigations.ps1** script to analyze and track the mitigations provided by Microsoft. This script is available in the “\V15\Scripts” folder under the Exchange Server installation directory. 
+You can use the **Get-Mitigations.ps1** script to analyze and track the mitigations provided by Microsoft. This script is available in the "\V15\Scripts" folder under the Exchange Server installation directory. 
 
 The script displays the ID, type, description, and status of each mitigation. The list includes any applied, blocked, or failed mitigations.
 
-To view the details of a specific server, provide server name in the Identity field such as <span><span>“.\Get-Mitigations.ps1 -Identity <<span><span>Server<span><span>>”.  To view the status of all the servers in your organization, simply omit the Identity parameter.
+To view the details of a specific server, provide server name in the Identity field such as <span><span>".\Get-Mitigations.ps1 -Identity <<span><span>Server<span><span>>".  To view the status of all the servers in your organization, simply omit the Identity parameter.
 
 **Example:** Export the list of applied mitigations and their descriptions to a CSV file by using the ExportCSV parameter:
 
 ```powershell
-.\Get-Mitigations.ps1 -Identity <Server> -ExportCSV “C:\temp\CSVReport.csv”
+.\Get-Mitigations.ps1 -Identity <Server> -ExportCSV "C:\temp\CSVReport.csv"
 ```
 
 >[!Important]

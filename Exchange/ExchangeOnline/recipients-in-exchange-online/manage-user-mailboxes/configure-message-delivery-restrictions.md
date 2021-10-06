@@ -103,7 +103,7 @@ For additional management tasks related to recipients, see the following topics:
 
 5. Click **OK** to close the **Message Delivery Restrictions** page, and then click **Save** to save your changes.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully configured message delivery restrictions for a user mailbox, do one the following:
 
@@ -167,7 +167,7 @@ For detailed syntax and parameter information related to configuring delivery re
 
 - [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully configured message delivery restrictions for a user mailbox using powershell, do one the following:
 

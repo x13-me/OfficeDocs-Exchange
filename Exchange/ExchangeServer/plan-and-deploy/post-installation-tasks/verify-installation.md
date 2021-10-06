@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 description: 'Summary: Learn how to verify or troubleshoot your Exchange 2016 or Exchange 2019 installation.'
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.author: serdars
 ms.assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
