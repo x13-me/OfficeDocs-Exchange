@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article 
 manager: serdars
 ms.author: serdars
+description: Links to Address list procedure articles
 author: msdmaguire
 f1.keywords:
 - NOCSH
