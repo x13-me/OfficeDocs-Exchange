@@ -86,13 +86,15 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md).
 
 8. Click **S/MIME** to display the **Outlook S/MIME settings**.
-    ![Screenshot showing Outlook S/MIME settings.](../../media/outlook-mobile-smime-settings-v2.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/outlook-mobile-smime-settings-v3.png)
 
 9. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 10. Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 11. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
+1. If needed, deploy a **LDAP URL** for recipient certificate lookup. For more information on the URL format, see [LDAP support for certificate lookup](#ldap-support-for-certificate-lookup).
 
 12. Set **Deploy S/MIME certificates from Intune** to **Yes**.
 
