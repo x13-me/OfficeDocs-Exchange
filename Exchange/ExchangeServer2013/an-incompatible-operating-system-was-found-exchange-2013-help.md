@@ -5,6 +5,7 @@ ms:assetid: a3a948d9-4991-4088-9013-0a4c944295e4
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.validosversion(v=EXCHG.150)
 ms:contentKeyID: 49090988
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire

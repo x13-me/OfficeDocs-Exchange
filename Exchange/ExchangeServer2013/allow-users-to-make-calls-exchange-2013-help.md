@@ -2,6 +2,7 @@
 title: 'Allow users to make calls: Exchange 2013 Help'
 TOCTitle: Allow users to make calls
 ms.author: serdars
+ms.topic: article 
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
