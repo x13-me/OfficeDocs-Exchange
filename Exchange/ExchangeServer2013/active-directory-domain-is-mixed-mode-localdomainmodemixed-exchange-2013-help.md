@@ -5,7 +5,6 @@ ms:assetid: a6affcfe-7264-455b-8e5c-683fa87383f1
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.localdomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629068
 ms.reviewer:
-description: 
 ms.topic: article 
 manager: serdars
 ms.author: serdars
