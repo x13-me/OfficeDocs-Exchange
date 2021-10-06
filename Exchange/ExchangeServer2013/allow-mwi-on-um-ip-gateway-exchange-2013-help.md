@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer:
+description: How to allow or prevent voice mail notifications to users for calls received by a Unified Messaging IP gateway in Exchange
 ms.assetid: 5667e37c-48c6-4659-9dc9-94b1dd8ba232
 f1.keywords:
 - NOCSH
