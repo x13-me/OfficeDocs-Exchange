@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article
 manager: serdars
 ms.author: serdars
+description:  Description of the Address Lists role in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
