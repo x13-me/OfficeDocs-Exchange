@@ -5,9 +5,11 @@ ms:assetid: 4ca8e395-c074-4165-b788-16fae3e2ccab
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997929(v=EXCHG.150)
 ms:contentKeyID: 49318497
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to add or remove users from a mobile mailbox policy in Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
