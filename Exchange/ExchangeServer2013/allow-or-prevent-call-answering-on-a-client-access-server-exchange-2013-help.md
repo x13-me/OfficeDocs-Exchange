@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article 
 manager: serdars
 ms.author: serdars
+descripton: How to allow or prevent call answering on a Client Access server in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
