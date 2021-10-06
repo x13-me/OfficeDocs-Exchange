@@ -5,7 +5,6 @@ ms:assetid: 56adb6fe-ecb8-4a7f-b440-89aa401c28b7
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.cannotaccessad(v=EXCHG.150)
 ms:contentKeyID: 46628912
 ms.reviewer:
-description: 
 ms.topic: article 
 manager: serdars
 description: How to resolve the problem when Active Directory doesn't exist or can't be contacted.
