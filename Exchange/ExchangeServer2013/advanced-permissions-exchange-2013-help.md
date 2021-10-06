@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure advanced permissions models for your organization in Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
