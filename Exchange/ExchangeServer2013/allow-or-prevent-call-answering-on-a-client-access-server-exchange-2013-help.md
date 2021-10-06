@@ -6,7 +6,6 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123529(v=EXCHG.150)
 ms:contentKeyID: 49315455
 ms.reviewer:
 ms.topic: article 
-ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
