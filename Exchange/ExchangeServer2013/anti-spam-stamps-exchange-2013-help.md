@@ -4,6 +4,7 @@ TOCTitle: Anti-spam stamps
 ms:assetid: 28d3a5c2-8509-4b25-9876-763536e77c27
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996878(v=EXCHG.150)
 ms:contentKeyID: 49248677
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -45,8 +46,8 @@ The following table describes the filter information that can appear in an anti-
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
