@@ -4,6 +4,7 @@ TOCTitle: Add an E.164 number
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to add an E.164 number in Exchange Server
 ms.reviewer:
 ms.topic: article
 ms.assetid: fab86207-be03-40ef-9fea-045a50f3d122
