@@ -40,7 +40,7 @@ Each configuration scenario highlights its specific requirements. For example, w
 > [!NOTE]
 > With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
-![Flowchart of the process.](../../media/acp_flowchart.png)
+![Flowchart of the process.](../../media/acp-flowchart-v2.png)
 
 ## Account configuration scenarios
 
