@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123715(v=EXCHG.150)
 ms:contentKeyID: 49289336
 ms.reviewer: 
 ms.topic: article
+description: About Active Directory in Exchange.
 manager: serdars
 ms.author: serdars
 author: msdmaguire
