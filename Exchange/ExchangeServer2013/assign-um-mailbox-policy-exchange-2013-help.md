@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer:
+description: When you enable a user for Unified Messaging and voice mail, you must select the UM mailbox policy that will be associated with the user's mailbox.
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 f1.keywords:
 - NOCSH
