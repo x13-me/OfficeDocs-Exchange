@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer:
+description: Use the Call Statistics report to assess the audio quality of voice calls in Exchange Server.
 ms.assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5
 f1.keywords:
 - NOCSH
