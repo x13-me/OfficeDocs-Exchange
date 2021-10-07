@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article
 manager: serdars
 ms.author: serdars
+description: Configure Exchange to use automatic mailbox distribution
 author: msdmaguire
 f1.keywords:
 - NOCSH
