@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: The Exchange Availability service makes free/busy information available to Microsoft Outlook and Outlook Web App clients.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
