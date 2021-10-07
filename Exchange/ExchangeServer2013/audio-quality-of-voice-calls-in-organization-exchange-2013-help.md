@@ -4,6 +4,7 @@ TOCTitle: Investigate the audio quality of voice calls in your organization
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5
 f1.keywords:

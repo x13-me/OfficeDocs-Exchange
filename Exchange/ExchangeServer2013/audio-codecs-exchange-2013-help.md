@@ -5,6 +5,7 @@ ms:assetid: 6c39d65c-c2d3-4128-aae9-8596602819c3
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998670(v=EXCHG.150)
 ms:contentKeyID: 49315434
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -62,9 +63,9 @@ A Client Access or Mailbox server and a supported VoIP gateway or IP PBX can off
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -99,9 +100,9 @@ When you plan for UM, you must balance the size and the relative quality of the 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

@@ -4,6 +4,7 @@ TOCTitle: Authorize calls for a group of users
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
 f1.keywords:

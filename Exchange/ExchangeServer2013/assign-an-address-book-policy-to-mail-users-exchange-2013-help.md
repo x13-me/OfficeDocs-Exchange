@@ -5,6 +5,7 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 f1.keywords:
 - NOCSH

@@ -4,7 +4,8 @@ TOCTitle: Autodiscover service
 ms:assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124251(v=EXCHG.150)
 ms:contentKeyID: 50396327
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

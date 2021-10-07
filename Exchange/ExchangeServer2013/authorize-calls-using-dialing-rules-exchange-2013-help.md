@@ -4,6 +4,7 @@ TOCTitle: Authorize calls using dialing rules
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer: 
 ms.assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
 f1.keywords:

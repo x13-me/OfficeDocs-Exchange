@@ -4,6 +4,7 @@ TOCTitle: Assign a UM mailbox policy
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 f1.keywords:

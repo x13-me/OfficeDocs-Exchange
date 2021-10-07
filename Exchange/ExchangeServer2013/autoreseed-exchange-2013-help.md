@@ -5,6 +5,7 @@ ms:assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
 ms:mtpsurl: https://technet.microsoft.com/library/Dn789209(v=EXCHG.150)
 ms:contentKeyID: 62523707
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -75,8 +76,8 @@ In addition to the above conditions, the Disk Reclaimer will only attempt to for
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
