@@ -5,6 +5,7 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.topic: article
+description: How to authorize dialing authorizations on a Unified Messaging (UM) mailbox policy
 ms.reviewer:
 ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
 f1.keywords:
