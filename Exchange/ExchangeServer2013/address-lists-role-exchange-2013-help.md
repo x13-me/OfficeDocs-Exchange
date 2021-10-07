@@ -4,8 +4,8 @@ TOCTitle: Address Lists role
 ms:assetid: 31143e30-16f5-45f5-b9a6-a39e6aa831d9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876867(v=EXCHG.150)
 ms:contentKeyID: 49289217
-ms.reviewer: 
 ms.topic: article
+ms.reviewer: 
 manager: serdars
 ms.author: serdars
 description:  Description of the Address Lists role in Exchange
@@ -39,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table>
+<table >
 <colgroup>
-<col>
-<col>
-<col>
-<col>
-<col>
-<col>
-<col>
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
