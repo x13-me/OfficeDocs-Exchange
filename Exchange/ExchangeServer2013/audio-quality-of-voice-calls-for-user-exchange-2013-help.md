@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article 
 ms.reviewer:
+description: Use the User Call Logs report to troubleshoot audio quality problems with Unified Messaging calls
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 f1.keywords:
 - NOCSH
