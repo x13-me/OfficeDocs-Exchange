@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876870(v=EXCHG.150)
 ms:contentKeyID: 49289231
 ms.reviewer: 
 ms.topic: article
+description: 'The `Audit Logs` management role enables administrators to configure the administrator audit log in an organization.'
 manager: serdars
 ms.author: serdars
 author: msdmaguire
