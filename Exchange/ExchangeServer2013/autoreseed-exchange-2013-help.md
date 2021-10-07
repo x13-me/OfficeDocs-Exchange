@@ -7,6 +7,7 @@ ms:contentKeyID: 62523707
 ms.reviewer: 
 ms.topic: article
 manager: serdars
+description: AutoReseed automatically restores database redundancy after a disk failure by using spare disks that have been provisioned on the system.
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
