@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article
 manager: serdars
 ms.author: serdars
+description: How to assign a certificate to the UM and UM Call Router services in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
