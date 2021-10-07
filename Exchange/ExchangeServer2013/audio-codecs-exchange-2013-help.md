@@ -5,6 +5,7 @@ ms:assetid: 6c39d65c-c2d3-4128-aae9-8596602819c3
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998670(v=EXCHG.150)
 ms:contentKeyID: 49315434
 ms.reviewer: 
+description: About Unified Messaging audio codecs in Exchange Server
 ms.topic: article
 manager: serdars
 ms.author: serdars
