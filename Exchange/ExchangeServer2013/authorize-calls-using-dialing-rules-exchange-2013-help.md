@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer: 
+description: Authorize outgoing calls by using dialing rules in Exchange Server
 ms.assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
 f1.keywords:
 - NOCSH
