@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876867(v=EXCHG.150)
 ms:contentKeyID: 49289217
 ms.topic: article
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
+description:  Description of the Address Lists role in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
