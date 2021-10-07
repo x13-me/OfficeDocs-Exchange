@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.topic: article
+description: How to enable dialing authorizations on a Unified Messaging auto-attendant
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716
 f1.keywords:
 - NOCSH
