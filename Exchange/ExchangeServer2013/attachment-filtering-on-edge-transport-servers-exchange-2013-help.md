@@ -5,6 +5,7 @@ ms:assetid: be39a181-c82e-41f5-8846-085bf1f84164
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124399(v=EXCHG.150)
 ms:contentKeyID: 61200298
 ms.reviewer:
+description: In Exchange Server, you can use attachment filtering on Edge Transport servers to control the attachments that users receive in email messages.
 ms.topic: article 
 manager: serdars
 ms.author: serdars
