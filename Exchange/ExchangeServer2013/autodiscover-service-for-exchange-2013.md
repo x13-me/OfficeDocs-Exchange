@@ -7,6 +7,7 @@ ms:contentKeyID: 50396327
 ms.reviewer:
 ms.topic: article 
 manager: serdars
+description: Learn about the Exchange Autodiscover service for Microsoft Exchange.
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
