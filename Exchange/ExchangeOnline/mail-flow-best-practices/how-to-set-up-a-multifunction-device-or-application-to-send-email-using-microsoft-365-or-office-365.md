@@ -236,7 +236,7 @@ SMTP relay lets Microsoft 365 or Office 365 relay emails on your behalf by using
 |Server/smart host|Your MX endpoint, for example, _yourdomain_-com.mail.protection.outlook.com|
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
-|Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|\
+|Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|
 |
 
 If you already have a connector that's configured to deliver messages from your on-premises organization to Microsoft 365 or Office 365 (for example, a hybrid environment), you probably don't need to create a dedicated connector for Microsoft 365 or Office 365 SMTP relay. If you need to create a connector, use the following settings to support this scenario:
