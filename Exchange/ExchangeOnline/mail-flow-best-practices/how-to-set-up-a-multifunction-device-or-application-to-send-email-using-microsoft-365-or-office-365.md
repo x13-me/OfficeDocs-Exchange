@@ -32,21 +32,19 @@ Prerequisites: Office 365 or Microsoft 365 subscription, [Exchange Online Plan](
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Microsoft 365 or Office 365. For example:
 
 - You have a scanner, and you want to email scanned documents to yourself or someone else.
-
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
 ## Option 1: Authenticate your device or application directly with a Microsoft 365 or Office 365 mailbox, and send mail using SMTP AUTH client submission
 
 > [!NOTE]
 >
-> This option, in conjunction with Basic Authentication, is not compatible with  [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). We recommend using Modern Authentication instead, as Basic Authentication will be disabled in Exchange Online. See [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) and [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more information.
+> This option, in conjunction with Basic Authentication, is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). We recommend using Modern Authentication instead, as Basic Authentication will be disabled in Exchange Online. See [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904) and [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more information.
 >
 > You must also verify that SMTP AUTH is enabled for the organization and the mailbox being used. SMTP AUTH is disabled for organizations created after January 2020. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
 
-This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
+This option supports most usage scenarios and is the easiest to set up. Choose this option when:
 
 - You want to send email from a third-party hosted application, service, or device.
-
 - You want to send email to people inside and outside your organization.
 
 To configure your device or application, connect directly to Microsoft 365 or Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
@@ -57,6 +55,8 @@ Each device or application must be able to authenticate with Microsoft 365 or Of
 
 Enter the following settings directly on your device or in the application **as their guide instructs** (it might use different terminology than this article). As long as your scenario meets the requirements for SMTP AUTH client submission, the following settings will enable you to send email from your device or application.
 
+<br>
+
 ****
 
 |Device or Application setting|Value|
@@ -65,14 +65,16 @@ Enter the following settings directly on your device or in the application **as 
 |Port|Port 587 (recommended) or port 25|
 |TLS/StartTLS|Enabled|
 |Username/email address and password|Enter the sign-in credentials of the hosted mailbox being used|
+|
 
 #### TLS and other encryption options
 
-Determine what version of TLS your device supports by checking the device guide or with the vendor. If your device or application doesn't support TLS 1.2 or above:
+Determine what version of TLS your device supports by checking the device guide or with the vendor. If your device or application doesn't support TLS 1.2 or above, you have the following alternatives:
 
-- Use direct send (Option 2) or Microsoft 365 or Office 365 SMTP relay (Option 3) for sending mail instead (depending on your requirements).
+- Depending on your requirements, use [direct send (Option 2)](#option-2-send-mail-directly-from-your-printer-or-application-to-microsoft-365-or-office-365-direct-send) or [Microsoft 365 or Office 365 SMTP relay (Option 3)](#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) instead.
+- Use an on-premises email server (Exchange Server or any other SMTP server) to relay mail if your device is unable to meet the previous requirements for connecting to Microsoft 365 or Office 365. In fact, you might find it easier to configure and manage an on-premises SMTP server to relay messages from your devices and applications, especially if you have many devices and applications that send email.
 
-- Use an on-premises Exchange server (or another SMTP email server) if your device is unable to meet the previous requirements for connecting to Microsoft 365 or Office 365. In fact, you might find it easier to manage multiple devices and applications that send email messages in an on-premises Exchange server instead of connecting them all to Microsoft 365 or Office 365 directly. The Exchange server would relay messages in the same way that a device would use Microsoft 365 or Office 365 to relay messages using Option 3 below. You can find out more about configuring your own email server to send emails to Microsoft 365 or Office 365 here: [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
+To find out more about configuring your own email server to send mail to Microsoft 365 or Office 365, see [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
 
 > [!NOTE]
 > If your device recommends or defaults to port 465, it doesn't support SMTP AUTH client submission.
@@ -86,21 +88,15 @@ The following diagram gives you a conceptual overview of what your environment w
 #### Features of SMTP AUTH client submission
 
 - SMTP AUTH client submission allows you to send email to people in your organization and outside your company.
-
-- This method bypasses most spam checks for email sent to people in your organization. This bypassing can help protect your company IP addresses from being blocked by a spam list.
-
+- This method bypasses most spam checks for email sent to people in your organization. This bypass can help protect your company IP addresses from being blocked by a spam list.
 - With this method, you can send email from any location or IP address, including your (on-premises) organization's network, or a third-party cloud hosting service, like Microsoft Azure.
 
 #### Requirements for SMTP AUTH client submission
 
 - **Authentication**: You must be able to configure a username and password using OAuth to send email on the device or application. You also need to follow the steps in [Authenticate an IMAP, POP, or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to allow your application to use OAuth in Microsoft 365 or Office 365. We do not recommend using Basic Authentication as it will be disabled in Exchange Online. For more information, see [Basic Authentication and Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-february-2021-update/ba-p/2111904). If SMTP AUTH is disabled for the organization or the mailbox being used, you must use Option 2 or 3 below.
-
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
-
 - **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.2 and above.
-
-- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25.
-
+- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25, because that's the port that email servers use to send mail.
 - **DNS**: Use the DNS name smtp.office365.com. Do not use an IP address for the Microsoft 365 or Office 365 server, as IP Addresses are not supported.
 
 > [!NOTE]
@@ -108,16 +104,15 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Limitations of SMTP AUTH client submission
 
-You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes. Microsoft 365 or Office 365 imposes some sending limits. See [Exchange Online limits - Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) for more information.
+- You can only send from one email address unless your device can store login credentials for multiple Microsoft 365 or Office 365 mailboxes.
+- Microsoft 365 or Office 365 imposes some sending limits. See [Exchange Online limits - Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) for more information.
 
 ## Option 2: Send mail directly from your printer or application to Microsoft 365 or Office 365 (direct send)
 
 Choose this option when:
 
 - Your environment has SMTP AUTH disabled.
-
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device.
-
 - You only need to send messages to recipients in your own organization who have mailboxes in Microsoft 365 or Office 365; you don't need to send email to people outside of your organization.
 
 Other scenarios when direct send may be your best choice:
@@ -134,6 +129,8 @@ Other scenarios when direct send may be your best choice:
 
 Enter the following settings on the device or in the application directly.
 
+<br>
+
 ****
 
 |Device or application setting|Value|
@@ -142,14 +139,18 @@ Enter the following settings on the device or in the application directly.
 |Port|Port 25|
 |TLS/StartTLS|Optional|
 |Email address|Any email address for one of your Microsoft 365 or Office 365 accepted domains. This email address does not need to have a mailbox.|
+|
 
 We recommend adding an SPF record to avoid having messages flagged as spam. If you are sending from a static IP address, add it to your SPF record in your domain registrar's DNS settings as follows:
+
+<br>
 
 ****
 
 |DNS entry|Value|
 |---|---|
 |SPF|`v=spf1 ip4:<Static IP Address> include:spf.protection.outlook.com ~all`|
+|
 
 ### Step-by-step instructions for direct send
 
@@ -165,7 +166,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
    :::image type="content" source="../media/mx-record-ms-365-admin-center.png" alt-text="The screen displaying the MX record value for the chosen domain.":::
 
-5. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 4.
+5. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **Points to address or value** you recorded in step 4.
 
    > [!NOTE]
    > Do NOT use an IP address for the Microsoft 365 or Office 365 server connection, as IP addresses are not supported.
@@ -177,7 +178,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
    where 10.5.3.2 is your public IP address.
 
    > [!NOTE]
-   > Skipping this step might cause email to be sent to recipients' junk mail folders.
+   > Skipping this step might cause email to be sent to recipient Junk Email folders.
 
 7. To test the configuration, send a test email from your device or application, and confirm that the recipient received it.
 
@@ -195,11 +196,8 @@ You can configure your device to send email direct to Microsoft 365 or Office 36
 ### Features of direct send
 
 - Uses Microsoft 365 or Office 365 to send emails, but does not require a dedicated Microsoft 365 or Office 365 mailbox.
-
 - Doesn't require your device or application to have a static IP address. However, it is recommended for your device or application to have a static IP address, if possible.
-
 - Doesn't work with a connector; never configure a device to use a connector with direct send because such a configuration can cause problems.
-
 - Doesn't require your device to support TLS.
 
 Direct send has higher sending limits than SMTP client submission. Senders are not bound by the limits described in Option 1.
@@ -207,19 +205,14 @@ Direct send has higher sending limits than SMTP client submission. Senders are n
 ### Requirements for direct send
 
 - **Port**: Port 25 is required and must be unblocked on your network.
-
 - **Static IP address is recommended**: A static IP address is recommended so that an SPF record can be created for your domain. The SPF record helps avoid your messages being flagged as spam.
-
 - Does not require a Microsoft 365 or Office 365 mailbox with a license.
 
 ### Limitations of direct send
 
 - Direct send cannot be used to deliver email to external recipients, for example, recipients with Yahoo or Gmail addresses.
-
 - Your messages will be subject to antispam checks.
-
 - Sent mail might be disrupted if your IP addresses are blocked by a spam list.
-
 - Microsoft 365 and Office 365 use throttling policies to protect the performance of the service.
 
 ## Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay
@@ -227,14 +220,14 @@ Direct send has higher sending limits than SMTP client submission. Senders are n
 This option is more difficult to implement than the others. Only choose this option when:
 
 - Your environment has SMTP AUTH disabled.
-
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device
-
 - You can't use direct send (Option 2) because you must send email to external recipients.
 
 SMTP relay lets Microsoft 365 or Office 365 relay emails on your behalf by using a connector that's configured with your public IP address or a TLS certificate. Setting up a connector makes this option more complicated.
 
 ### Settings for Microsoft 365 or Office 365 SMTP relay
+
+<br>
 
 ****
 
@@ -243,9 +236,12 @@ SMTP relay lets Microsoft 365 or Office 365 relay emails on your behalf by using
 |Server/smart host|Your MX endpoint, for example, _yourdomain_-com.mail.protection.outlook.com|
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
-|Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|
+|Email address|Any email address in one of your Microsoft 365 or Office 365 verified domains. This email address does not need a mailbox.|\
+|
 
 If you already have a connector that's configured to deliver messages from your on-premises organization to Microsoft 365 or Office 365 (for example, a hybrid environment), you probably don't need to create a dedicated connector for Microsoft 365 or Office 365 SMTP relay. If you need to create a connector, use the following settings to support this scenario:
+
+<br>
 
 ****
 
@@ -254,14 +250,18 @@ If you already have a connector that's configured to deliver messages from your 
 |From|Your organization's email server|
 |To|Microsoft 365 or Office 365|
 |Domain restrictions: IP address/range|Your on-premises IP address or address range that the device or application will use to connect to Microsoft 365 or Office 365|
+|
 
 We recommend adding an SPF record to avoid having messages flagged as spam. If you are sending from a static IP address, add it to your SPF record in your domain registrar's DNS settings as follows:
+
+<br>
 
 ****
 
 |DNS entry|Value|
 |---|---|
 |SPF|`v=spf1 ip4:<Static IP Address> include:spf.protection.outlook.com ~all`|
+|
 
 ### Step-by-step configuration instructions for SMTP relay
 
@@ -279,48 +279,45 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 5. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
 
-5. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the new Exchange admin center.
+6. In Microsoft 365 or Office 365, select **Admin** and then **Exchange** to go to the new Exchange admin center.
 
-> [!NOTE]
-> On clicking **Exchange**, the new Exchange admin center is launched. If you want to navigate to the Classic Exchange admin center, click **Classic Exchange admin center** on the left pane of the new Exchange admin center home page.
+   > [!NOTE]
+   > On clicking **Exchange**, the new Exchange admin center is launched. If you want to navigate to the Classic Exchange admin center, click **Classic Exchange admin center** on the left pane of the new Exchange admin center home page.
 
-6. In the Exchange admin center (EAC), go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the subsequent two images below, for New EAC and Classic EAC, respectively.
+7. In the Exchange admin center (EAC), go to **Mail flow** \> **Connectors**. The **Connectors** screen is depicted in the subsequent two images below, for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center.":::
+   :::image type="content" source="../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center.":::
 
-:::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed.":::
+   :::image type="content" source="../media/connectors-screen-in-old-eac.png" alt-text="The screen of Old EAC in which the list of connectors are displayed.":::
 
-8. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create one:
+8. Check the list of connectors set up for your organization. If there is no connector listed from your organization's email server to Microsoft 365 or Office 365, create a connector in the Exchange admin center (EAC):
 
-**In Classic Exchange admin center (EAC)**
+   - **Classic EAC**:
+     1. Open the EAC at <https://admin.protection.outlook.com/ecp/> and go to **Mail flow** \> **Connectors**, and then click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the wizard that opens, choose the options that are depicted in the following screenshot on the first screen:
 
-a. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
+        ![Choose from your organization's email server to Microsoft 365 or Office 365.](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
 
-![Choose from your organization's email server to Microsoft 365 or Office 365.](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
+     2. Click **Next**, and give the connector a name.
 
-b. Click **Next**, and give the connector a name.
+     3. On the next screen, choose **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from Step 1.
 
-c. On the next screen, choose **By verifying that the IP address of the sending server matches one of these IP addresses that belong to your organization**, and add the IP address from Step-1.
+     4. Leave all the other fields with their default values, and select **Save**.
 
-d. Leave all the other fields with their default values, and select **Save**.
+   - **New EAC**:
+     1. Open the EAC at <https://admin.protection.outlook.com/ecp/> and go to **Mail flow** \> **Connectors**. Or, to go directly to the **Connectors** page, use <https://admin.exchange.microsoft.com/#/connectors>.
+     2. Click **Add a connector** ![Add a connector icon.](../media/ITPro_EAC_AddIcon.png). In the wizard that opens, choose the options that are depicted in the following screenshot on the first screen:
 
-**In New EAC**
+        :::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server.":::
 
-a. To start the wizard, click **+ Add a connector**. The **New connector** screen appears.
+     3. Click **Next**. The **Connector name** screen appears.
 
-b. Choose the options that are depicted in the following screenshot:
-   
-:::image type="content" source="../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server.":::
+     4. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
 
-c. Click **Next**. The **Connector name** screen appears.
+     5. Choose **By verifying that the IP address of the sending server matches one of these IP addresses which belong exclusively to your organization**, and add the IP address from Step 1 of **Step-by-step configuration instructions for SMTP relay** section.
 
-d. Provide a name for the connector and click **Next**. The **Authenticating sent email** screen appears.
+     6. Click **Save**.
 
-e. Choose **By verifying that the IP address of the sending server matches one of these IP addresses which belong exclusively to your organization**, and add the IP address from Step 1 of **Step-by-step configuration instructions for SMTP relay** section.
-
-f. Click **Save**.
-
-9. Now that you are done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipients' junk mail folders.
+9. Now that you're done with configuring your Microsoft 365 or Office 365 settings, go to your domain registrar's website to update your DNS records. Edit your SPF record. Include the IP address that you noted in step 1. The finished string should look similar to this `v=spf1 ip4:10.5.3.2 include:spf.protection.outlook.com ~all`, where 10.5.3.2 is your public IP address. Skipping this step can cause email to be sent to recipient Junk Email folders.
 
 10. Now, go back to the device, and in the settings, find the entry for Server or Smart Host, and enter the MX record **POINTS TO ADDRESS** value that you recorded in step 3.
 
@@ -347,30 +344,28 @@ In the following diagram, the application or device in your organization's netwo
 ### Features of Microsoft 365 or Office 365 SMTP relay
 
 - Microsoft 365 or Office 365 SMTP relay doesn't require the use of a licensed Microsoft 365 or Office 365 mailbox to send emails.
-
 - Microsoft 365 or Office 365 SMTP relay has higher sending limits than SMTP client submission. Senders are not subject to the limits described in Option 1.
 
 ### Requirements for Microsoft 365 or Office 365 SMTP relay
 
 - **Static IP address or address range**: Most devices or applications are unable to use a certificate for authentication. To authenticate your device or application, use one or more static IP addresses that are not shared with another organization.
-
 - **Connector**: Set up a connector in Exchange Online for email sent from your device or application.
-
 - **Port**: Port 25 is required. Ensure this port is not blocked on your network or by your ISP.
-
 - **Licensing**: SMTP relay doesn't use a specific Microsoft 365 or Office 365 mailbox to send email. Therefore, the users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Microsoft 365 or Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This license is the least expensive and it allows you to send email via Microsoft 365 or Office 365.
 
 ### Limitations of Microsoft 365 or Office 365 SMTP relay
 
 - Sent mail can be disrupted if your IP addresses are blocked by a spam list.
-
 - Reasonable limits are imposed for sending. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).
-
 - Requires static unshared IP addresses (unless a certificate is used).
 
 ## Compare the options
 
 Here's a comparison of each configuration option and the features they support.
+
+<br>
+
+****
 
 |Features|SMTP client submission|Direct send|SMTP relay|
 |---|---|---|---|
@@ -383,19 +378,24 @@ Here's a comparison of each configuration option and the features they support.
 |Open network port|Port 587 or port 25|Port 25|Port 25|
 |Device or application server must support TLS|Required|Optional|Optional|
 |Requires authentication|Microsoft 365 or Office 365 username and password required|None|One or more static IP addresses. Your printer or the server running your LOB app must have a static IP address to use for authentication with Microsoft 365 or Office 365.|
+|
+
+Here are the limitations of each configuration option:
+
+<br>
 
 ****
 
 |Limitations|SMTP client submission|Direct send|SMTP relay|
 |---|---|---|---|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Microsoft 365 or Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
+|
 
 ## Use your own email server to send email from multifunction devices and applications
 
 If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Microsoft 365 or Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this configuration depends on your on-premises email server. For Exchange Server, see the following articles:
 
 - [Allow anonymous relay on Exchange servers](../../ExchangeServer/mail-flow/connectors/allow-anonymous-relay.md)
-
 - [Receive messages from a server, service, or device that doesn't use Exchange](../../ExchangeServer/mail-flow/connectors/custom-receive-connectors.md#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
 
 ## Related articles
