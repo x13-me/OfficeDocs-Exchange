@@ -2,6 +2,30 @@
 
 
 
+## Week of October 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/5/2021 | [Exchange Online auditing reports](/Exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports) | modified |
+| 10/5/2021 | [Export mailbox audit logs](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | modified |
+| 10/5/2021 | [Run a non-owner mailbox access report in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | modified |
+| 10/5/2021 | [Run a per-mailbox litigation hold report](/Exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | modified |
+| 10/5/2021 | [Search the role group changes or admin audit logs in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes) | modified |
+| 10/5/2021 | [View the admin audit log](/Exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log) | modified |
+| 10/5/2021 | [View and export the external admin audit log](/Exchange/security-and-compliance/exchange-auditing-reports/view-external-admin-audit-log) | modified |
+| 10/5/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | modified |
+| 10/6/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
+| 10/6/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
+| 10/6/2021 | [S/MIME for Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android) | modified |
+| 10/6/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
+| 10/7/2021 | [Modern dynamic distribution groups](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/modern-dynamic-distribution-groups) | modified |
+| 10/8/2021 | [Shared free/busy in Exchange hybrid deployments](/Exchange/shared-free-busy) | modified |
+| 10/8/2021 | [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off) | modified |
+| 10/8/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 10/8/2021 | [Configure mail flow using connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
+
+
 ## Week of September 27, 2021
 
 
