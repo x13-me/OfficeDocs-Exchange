@@ -6,8 +6,8 @@ ms.author: jhendr
 ms.assetid: fab999d3-2c8d-481d-be3a-d684c6402768
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to identify your admin role in the Exchange admin center
+description: Admins can learn how to use a screen reader to view admin role groups in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to identify your admin role in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to identify your admin role in the Exchange admin center
+# Use a screen reader to identify your admin role in the Classic Exchange admin center in Exchange Online
 
-To complete administrative tasks in the Exchange admin center (EAC) in Exchange Online, you need the appropriate administrative permissions, which are grouped and assigned by role. By using a screen reader and keyboard shortcuts, you can identify your admin role, in addition to the role you must be assigned to complete particular tasks.
+To complete administrative tasks in the Classic Exchange admin center (Classic EAC) in Exchange Online, you need the appropriate administrative permissions, which are grouped and assigned by role. By using a screen reader and keyboard shortcuts, you can identify your admin role, in addition to the role you must be assigned to complete particular tasks.
 
 > [!NOTE]
 > To learn how to open the EAC, refer to [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md). To learn more admin role groups, go to [Manage role groups in Exchange Online](../permissions-exo/role-groups.md).

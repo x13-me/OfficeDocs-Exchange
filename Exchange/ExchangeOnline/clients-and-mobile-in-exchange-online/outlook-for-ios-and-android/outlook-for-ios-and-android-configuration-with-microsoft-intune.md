@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
-title: Deploying Outlook for iOS and Android app configuration settings
+title: Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 mms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Deploying Outlook for iOS and Android app configuration settings
+# Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 
  **Summary**: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.
 

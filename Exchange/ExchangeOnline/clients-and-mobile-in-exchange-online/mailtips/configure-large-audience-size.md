@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 ms.reviewer: 
-title: Configure the large audience size for your organization
+title: Configure the large audience size for your organization in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure the large audience size for your organization
+# Configure the large audience size for your organization in Exchange Online
 
 You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization.
 
