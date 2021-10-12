@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.reviewer: 
-title: Offline address book procedures
+title: Offline address book procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Offline address book procedures
+# Offline address book procedures in Exchange Online
 
 [Create an offline address book](create-offline-address-book.md)
 
