@@ -14,11 +14,11 @@ description: 'Summary: Use these procedures to move your Exchange 2010 public fo
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
+title: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365
 
 ---
 
-# Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
+# Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365
 
  **Summary**: Use these procedures to move your Exchange 2010 public folders to Microsoft 365 or Office 365.
 
@@ -26,7 +26,7 @@ This topic describes how to migrate your public folders in a cutover or staged m
 
 This topic refers to the Exchange 2010 SP3 RU8 server as the legacy Exchange server. Also, the steps in this topic apply to both Exchange Online and Microsoft 365 or Office 365. The terms may be used interchangeably in this topic.
 
-We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 or Exchange Online. Microsoft 365, Office 365, and Exchange online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that you use the cmdlet-based instructions in this document to migrate public folders to Microsoft 365, Office 365, or Exchange Online. However, if you elect to migrate public folders using PST export, see the [Migrate Public Folders to Microsoft 365 or Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export) section later in this topic.
+We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 or Exchange Online. Microsoft 365, Office 365, and Exchange Online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that you use the cmdlet-based instructions in this document to migrate public folders to Microsoft 365, Office 365, or Exchange Online. However, if you elect to migrate public folders using PST export, see the [Migrate Public Folders to Microsoft 365 or Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export) section later in this topic.
 
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts:
 

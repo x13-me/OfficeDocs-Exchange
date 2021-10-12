@@ -14,11 +14,11 @@ description: 'Summary: This article describes how to recover a public folder mai
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Recover a deleted public folder mailbox
+title: Recover a deleted public folder mailbox in Exchange Online
 
 ---
 
-# Recover a deleted public folder mailbox
+# Recover a deleted public folder mailbox in Exchange Online
 
  **Summary**: This article describes how to recover a public folder mailbox in Microsoft 365 or Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.
 

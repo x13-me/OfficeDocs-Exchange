@@ -11,7 +11,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online
 - M365-email-calendar
-description: 'Summary: How to move your Exchange Online public folders to Microsoft 365 Groups.'
+description: How to move your Exchange Online public folders to Microsoft 365 Groups.
 audience: ITPro
 f1.keywords:
 - NOCSH
