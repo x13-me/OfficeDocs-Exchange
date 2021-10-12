@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Change the settings of an address book policy
+# Change the settings of an address book policy in Exchange Online
 
 Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Online](address-book-policies.md).
 

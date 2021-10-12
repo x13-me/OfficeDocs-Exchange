@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
 ms.reviewer: 
-title: 'Remove an offline address book from Exchange '
+title: Remove an offline address book from Exchange in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Remove an offline address book
+# Remove an offline address book in Exchange Online
 
 This topic explains how to remove an offline address book (OAB) from Exchange Online. If you remove the default OAB, you must assign a different OAB as the default OAB. For instructions about how to change the default OAB, see [Change the default offline address book](change-default-offline-address-book.md).
 
