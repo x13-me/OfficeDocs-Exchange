@@ -96,4 +96,4 @@ Although address lists are useful tools for users, poorly planned address lists 
 - Avoid creating so many address lists that users can't tell which list to use.
 - Use a naming convention and location hierarchy for your address lists so users can immediately tell what the list is for (which recipients are included in the list). If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating address lists in Exchange Server, see [Address list procedures in Exchange Online](address-list-procedures.md).
+For detailed instructions about creating address lists in Exchange Online, see [Address list procedures in Exchange Online](address-list-procedures.md).
