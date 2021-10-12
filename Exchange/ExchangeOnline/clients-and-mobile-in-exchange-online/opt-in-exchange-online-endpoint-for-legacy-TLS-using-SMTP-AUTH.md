@@ -21,7 +21,7 @@ manager: serdars
 
 Exchange Online no longer supports use of TLS1.0 and TLS1.1 in the service as of October 2020. This is due to security and compliance requirements for our service. While no longer supported, our servers still allow clients to use those older versions of TLS when connecting to the SMTP AUTH endpoint (smtp.office365.com).
 
-In 2022, we plan to completely disable those older TLS versions to secure our customers and meet those security and compliance requirements. However, due to significant usage, we've created an opt-in endpoint that legacy clients can use with TLS1.0 and TLS1.1.
+In 2022, we plan to completely disable those older TLS versions to secure our customers and meet those security and compliance requirements. However, due to significant usage, we've created an opt-in endpoint that legacy clients can use with TLS1.0 and TLS1.1. Note that this is not available in GCC, GCC-High, or DoD environments which have legacy TLS permanently turned off.
 
 ## Configuring the new endpoint
 
