@@ -6,7 +6,7 @@ author: Benny-54
 ms.author: v-bshilpa
 ms.assetid:
 ms.reviewer:
-title: New EAC - Get to new EAC and Features
+title: New EAC in Exchange Online - Get to new EAC and Features
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# New Exchange admin center
+# New Exchange admin center in Exchange Online
 
 The new Exchange admin center is simple and accessible, and it enables you to perform tasks like restoring mailboxes, migrating data, and much more.
 

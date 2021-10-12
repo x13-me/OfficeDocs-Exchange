@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid:
 ms.reviewer:
-title: What's new in Exchange admin center
+title: What's new in the Exchange admin center in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -16,7 +16,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# What's new in Exchange admin center
+# What's new in the Exchange admin center in Exchange Online
 
 We're continuously adding new features to Exchange admin center (EAC), fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
