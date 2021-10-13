@@ -8,7 +8,7 @@ ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Update the public folder hierarchy
+title: Update the public folder hierarchy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Update the public folder hierarchy
+# Update the public folder hierarchy in Exchange Online
 
 You only need to update the public folder hierarchy if you want to manually invoke the hierarchy synchronizer and the mailbox assistant. Both these are invoked at least once every 24 hours for each public folder mailbox in the organization. The hierarchy synchronizer is invoked every 15 minutes if any users are logged on to a secondary mailbox through Microsoft Outlook or a Microsoft Exchange Web Services client.
 

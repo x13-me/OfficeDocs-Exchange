@@ -15,11 +15,11 @@ description: 'Summary: Use the steps in this article to synchronize public folde
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Configure legacy on-premises public folders for a hybrid deployment
+title: Configure legacy on-premises public folders for a hybrid deployment in Exchange Online
 
 ---
 
-# Configure legacy on-premises public folders for a hybrid deployment
+# Configure legacy on-premises public folders for a hybrid deployment in Exchange Online
 
  **Summary**: Use the steps in this article to synchronize public folders between Microsoft 365 or Office 365 and your Exchange Server 2010 on-premises deployment.
 

@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-description: You can remove a Microsoft Outlook on the web mailbox policy from an Exchange organization by using either the EAC or Exchange Online PowerShell.
+description: Admins can learn how to remove an Outlook on the web mailbox policy from an Exchange Online organization by using either the EAC or Exchange Online PowerShell.
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr
