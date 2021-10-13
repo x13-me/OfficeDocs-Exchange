@@ -8,7 +8,7 @@ ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer:
 f1.keywords:
 - NOCSH
-title: Manage resource mailboxes
+title: Manage resource mailboxes in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Managing resource mailboxes in new Exchange admin center
+# Manage resource mailboxes in Exchange Online
 
 Use the new Exchange admin center (EAC) to create, modify, and manage your resources through email/delegation in your Exchange Online organization.
 

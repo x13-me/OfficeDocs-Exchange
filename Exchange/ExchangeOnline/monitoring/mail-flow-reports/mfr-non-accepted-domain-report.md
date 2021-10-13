@@ -1,5 +1,5 @@
 ---
-title: "Non-accepted domain report in the new EAC"
+title: "Non-accepted domain report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Non-accepted domain report in the new Exchange admin center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
 
-# Non-accepted domain report in the new Exchange admin center
+# Non-accepted domain report in the new Exchange admin center in Exchange Online
 
 The **Non-accepted domain** report in the new Exchange admin center (new EAC) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
 

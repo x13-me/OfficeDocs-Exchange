@@ -1,5 +1,5 @@
 ---
-title: "New domains being forwarded email insight in the new EAC"
+title: "New domains being forwarded email insight in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the New domains being forwarded email insight in the new Exchange admin center to investigate when users in their organization are forwarding messages to external domains that have never been been forwarded to."
 ---
 
-# New domains being forwarded email insight in the new EAC
+# New domains being forwarded email insight in the new EAC in Exchange Online
 
 Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains (new domains).
 

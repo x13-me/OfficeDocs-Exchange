@@ -1,5 +1,5 @@
 ---
-title: "Queued messages report in the new EAC"
+title: "Queued messages report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor outbound messages that were sent over connectors from your organization that have been delayed for over an hour."
 ---
 
-# Queued messages report in the new Exchange admin center
+# Queued messages report in the new Exchange admin center in Exchange Online
 
 When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365. Common examples that cause this condition are:
 

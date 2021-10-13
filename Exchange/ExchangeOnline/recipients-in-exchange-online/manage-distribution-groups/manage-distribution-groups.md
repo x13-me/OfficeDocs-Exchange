@@ -10,7 +10,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDistributionGroupWizardForm.CreateDistributionGroupIntroductionWizardPage
-title: Create and manage distribution groups
+title: Create and manage distribution groups in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -23,7 +23,7 @@ manager: serdars
 # Create and manage distribution list groups in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 Use the Exchange admin center (EAC) or Exchange Online PowerShell to create, modify, or remove distribution list groups in your Exchange Online organization.
 
