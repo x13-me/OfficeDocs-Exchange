@@ -7,7 +7,7 @@ f1.keywords:
 - CSH
 ms.author: jhendr
 ms.reviewer:
-title: Modern dynamic distribution groups
+title: Modern dynamic distribution groups in Exchange Online
 audience: ITPro
 ms.service: exchange-online
 robots: NOINDEX, NOFOLLOW
