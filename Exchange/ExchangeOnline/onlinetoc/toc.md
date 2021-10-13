@@ -180,7 +180,7 @@
 #### [Enable 2-step verification for Google apps](../mailbox-migration/migrating-imap-mailboxes/enable-2-step-verification-for-google-apps.md)
 ### [Perform a Google Workspace migration](../mailbox-migration/perform-G-Suite-migration.md)
 #### [Google Workspace migration prerequisites](../mailbox-migration/googleworkspace-migration-prerequisites.md)
-#### [Perform automated Google Workspace migration through new Exchange Admin Center](../mailbox-migration/automated-migration-neweac.md)
+#### [Perform automated Google Workspace migration through new Exchange admin center](../mailbox-migration/automated-migration-neweac.md)
 #### [Perform manual migration of Google Workspace](../mailbox-migration/manual-gspace-migration-overview.md)
 ##### [Perform Google Workspace Migration to Microsoft 365 or Office 365 in new EAC](../mailbox-migration/manual-gspace-migration-neweac.md)
 ##### [Perform Google Workspace Migration to Microsoft 365 or Office 365 in Classic EAC](../mailbox-migration/manual-gspace-migration-classiceac.md)
