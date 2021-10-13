@@ -1,5 +1,5 @@
 ---
-title: "Perform automated Google Workspace migration through New Exchange Admin Center"
+title: Perform an automated Google Workspace migration to Microsoft 365 or Office 365 in the new EAC in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Instructions for automatically migrating from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches in new EAC.
+description: "Instructions for automatically migrating from Google Workspace to Microsoft 365 or Office 365 in stages by migrating users in batches in new EAC."
 ms.custom: seo-marvel-jun2021
 ---
 
-# Perform an automated Google Workspace migration to Microsoft 365 or Office 365 in the new EAC
+# Perform an automated Google Workspace migration to Microsoft 365 or Office 365 in the new EAC in Exchange Online
 
-With the new Exchange Admin Center (EAC), the migration of mails, contacts, and calendar from Google Workspace to Microsoft 365 or Office 365 has been automated. The process has been now simplified to the extent that several of the manual steps that a user had to perform manually are no longer required.
+With the new Exchange admin center (EAC), the migration of mails, contacts, and calendar from Google Workspace to Microsoft 365 or Office 365 has been automated. The process has been now simplified to the extent that several of the manual steps that a user had to perform manually are no longer required.
 
 > [!NOTE]
 > The new EAC continues to offer manual migration of Google Workspace to Microsoft 365 or Office 365.
@@ -73,7 +73,6 @@ With the new Exchange Admin Center (EAC), the migration of mails, contacts, and 
       Once the endpoint is successfully created, it will be listed under **Select migration endpoint** drop-down.
 
       Select the endpoint from the drop-down list, and click **Next**.
-
 
 7. On the **Add user mailboxes** page, click **Import CSV file** and navigate to the folder where you have saved the CSV file.
 

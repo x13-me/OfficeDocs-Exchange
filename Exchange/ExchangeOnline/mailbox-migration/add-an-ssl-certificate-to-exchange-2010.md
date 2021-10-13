@@ -6,7 +6,7 @@ ms.author: jhendr
 ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
 ms.reviewer: 
 description: Steps to add an SSL certificate to Exchange 2010.
-title: Add an SSL certificate to Exchange 2010
+title: Add an SSL certificate to Exchange 2010 for migration to Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,7 +25,7 @@ manager: serdars
 
 ---
 
-# Add an SSL certificate to Exchange 2010
+# Add an SSL certificate to Exchange 2010 for migration to Exchange Online
 
 Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2010 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 

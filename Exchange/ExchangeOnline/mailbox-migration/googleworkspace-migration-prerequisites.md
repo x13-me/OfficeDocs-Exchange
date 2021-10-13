@@ -1,5 +1,5 @@
 ---
-title: "Google Workspace migration prerequisites"
+title: Google Workspace migration prerequisites in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Procedures that must be performed prior to initiating manual or aut
 ms.custom: seo-marvel-jun2021
 ---
 
-# Google Workspace migration prerequisites
+# Google Workspace migration prerequisites in Exchange Online
 
 The following procedures must be performed before you start the process of Google Workspace migration in the order mentioned:
 
