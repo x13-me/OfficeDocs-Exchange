@@ -358,7 +358,7 @@ Most third-party tools for Microsoft 365 or Office 365 migrations are client ini
 
 **Solution and practice**:
 
-To improve migration performance when using a migration server, apply the same best practices as the ones described in the [Factor 1: Data source](#factor-1-data-source) section.
+To improve migration performance when using a migration server, apply the same best practices as the ones described in the [Factor 1: Data source for third-party tool migrations](#factor-1-data-source-for-third-party-tool-migrations) section.
 
 ### Factor 3: Migration engine for third-party tool migrations
 
