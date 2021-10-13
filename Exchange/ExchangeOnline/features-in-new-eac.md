@@ -6,7 +6,7 @@ author: Benny-54
 ms.author: v-bshilpa
 ms.assetid:
 ms.reviewer:
-title: New EAC in Exchange Online - Get to new EAC and Features
+title: New EAC in Exchange Online - Get to new EAC and Features in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection:

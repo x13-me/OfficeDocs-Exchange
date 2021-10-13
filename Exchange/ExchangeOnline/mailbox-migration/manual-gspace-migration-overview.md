@@ -1,5 +1,5 @@
 ---
-title: "Perform manual Google Workspace migration"
+title: Perform manual Google Workspace migration in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,6 @@ description: Instructions for manually migrating from Google Workspace to Micros
 ms.custom: seo-marvel-jun2021
 ---
 
-# Perform manual migration of Google Workspace
+# Perform manual migration of Google Workspace in Exchange Online
 
 You can perform manual migration of Google Workspace to Microsoft 365 or Office 365 in [new EAC](manual-gspace-migration-neweac.md) and [Classic EAC](manual-gspace-migration-classiceac.md).
-

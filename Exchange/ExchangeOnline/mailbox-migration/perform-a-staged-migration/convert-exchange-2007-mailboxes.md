@@ -6,7 +6,7 @@ ms.author: jhendr
 ms.assetid: a1f79f3c-4967-4a15-8b3a-f4933aac0c34
 ms.reviewer: 
 description: Convert Exchange 2007 mailboxes to mail enabled users
-title: Convert Exchange 2007 mailboxes to mail-enabled users
+title: Convert Exchange 2007 mailboxes to mail-enabled users in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -27,7 +27,7 @@ manager: serdars
 
 ---
 
-# Convert Exchange 2007 mailboxes to mail-enabled users
+# Convert Exchange 2007 mailboxes to mail-enabled users in Exchange Online
 
 After you have completed a staged migration, convert the mailboxes to mail-enabled users so that the mailboxes can automatically connect to the cloud mailbox.
 

@@ -14,11 +14,11 @@ f1.keywords:
 - NOCSH
 description: Admins can learn about the mail flow troubleshooting options in Microsoft 365 or Office 365.
 audience: ITPro
-title: Troubleshoot mail flow
+title: Troubleshoot mail flow in Exchange Online
 
 ---
 
-# Troubleshoot mail flow
+# Troubleshoot mail flow in Exchange Online
 
 Can't send or receive email? Microsoft 365 and Office 365 for business offer admins several ways to troubleshoot. We recommend using the automated solutions because they are typically easier and faster than manual troubleshooting.
 
