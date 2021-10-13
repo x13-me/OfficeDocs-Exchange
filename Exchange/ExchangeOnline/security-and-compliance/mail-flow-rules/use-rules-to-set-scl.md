@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to the SCL in messages
+title: Use mail flow rules to the SCL in messages in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda

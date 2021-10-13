@@ -8,7 +8,7 @@ ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Manage policy tips
+title: Manage policy tips in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Manage policy tips
+# Manage policy tips in Exchange Online
 
 Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more.
 

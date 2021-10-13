@@ -8,7 +8,7 @@ ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Delete and re-create the default discovery mailbox in Exchange
+title: Delete and re-create the default discovery mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,7 +19,7 @@ manager: serdars
 
 ---
 
-# Delete and re-create the default discovery mailbox in Exchange
+# Delete and re-create the default discovery mailbox in Exchange Online
 
 You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
 
@@ -29,10 +29,15 @@ In Exchange Online, the maximum size of the default discovery mailbox is 50 GB. 
 
 How you resolve this issue depends on whether you want to save the search results from a default discovery mailbox that's exceeded 50 GB.
 
-|**Do you want to save the search results?**|**Do this**|
-|:-----|:-----|
+<br>
+
+****
+
+|Do you want to save the search results?|Do this|
+|---|---|
 |No|Follow the steps in this topic to delete, and then re-create the default discovery mailbox.|
 |Yes|Follow the steps in [Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md).|
+|
 
 ## Use Exchange Online PowerShell to delete and re-create the default discovery mailbox
 

@@ -8,7 +8,7 @@ ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Add retention tags to or remove retention tags from a retention policy
+title: Add retention tags to or remove retention tags from a retention policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Add retention tags to or remove retention tags from a retention policy
+# Add retention tags to or remove retention tags from a retention policy in Exchange Online
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.

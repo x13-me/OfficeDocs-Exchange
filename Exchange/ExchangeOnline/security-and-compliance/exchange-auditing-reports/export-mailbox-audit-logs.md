@@ -8,7 +8,7 @@ ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Export mailbox audit logs
+title: Export mailbox audit logs in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
