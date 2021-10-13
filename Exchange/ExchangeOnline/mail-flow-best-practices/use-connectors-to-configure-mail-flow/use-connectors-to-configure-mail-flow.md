@@ -117,7 +117,7 @@ When you create a connector, you can also specify the domain or IP address range
 
 This scenario applies only to organizations that have all their mailboxes in Exchange Online (no on-premises email servers) and allows an application or device to send mail (technically, _relay_ mail) through Microsoft 365 or Office 365. For example, if you want a printer to send notifications when a print job is ready, or you want your scanner to email documents to recipients, you can use a connector to relay mail through Microsoft 365 or Office 365 on behalf of the application or device.
 
-Keep in mind that there are other options that don't require connectors. For details about all of the available options, see see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md).
+Keep in mind that there are other options that don't require connectors. For details about all of the available options, see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md).
 
 ## How do I set up connectors?
 
