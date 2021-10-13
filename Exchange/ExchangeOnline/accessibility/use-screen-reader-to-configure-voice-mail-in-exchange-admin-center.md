@@ -78,8 +78,8 @@ After you've configured your UM dial plan, you can enable voice features for ind
 
 11. Press Enter. The focus returns to the **Enable UM Mailbox** dialog box, which shows the selected policy in the **UM mailbox policy** text box.
 
-   > [!TIP]
-   > Depending on the UM dial plan reflected in your selected UM mailbox policy, some of the options in the following steps might be different.
+    > [!TIP]
+    > Depending on the UM dial plan reflected in your selected UM mailbox policy, some of the options in the following steps might be different.
 
 12. Tab to the **Next** button and press Enter. The next page opens, in which you can specify an extension number and PIN settings for the selected user to access the mailbox in Outlook Voice Access.
 
