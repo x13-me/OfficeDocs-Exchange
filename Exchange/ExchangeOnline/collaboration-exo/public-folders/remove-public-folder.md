@@ -8,7 +8,7 @@ ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Remove a public folder
+title: Remove a public folder in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Remove a public folder
+# Remove a public folder in Exchange Online
 
 You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see [View statistics for public folders and public folder items](view-public-folder-statistics.md).
 

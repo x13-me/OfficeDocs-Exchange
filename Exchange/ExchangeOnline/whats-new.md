@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid:
 ms.reviewer:
-title: What's new in Exchange admin center
+title: What's new in the Exchange admin center in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -16,7 +16,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# What's new in Exchange admin center
+# What's new in the Exchange admin center in Exchange Online
 
 We're continuously adding new features to Exchange admin center (EAC), fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
@@ -28,9 +28,9 @@ For now, it is possible to switch back to the existing EAC (often called the "cl
 
 Here are some of the changes and new features we introduced in the modern EAC in February 2021.
 
-### Three more reasons to love the modern Exchange Admin Center (EAC)
+### Three more reasons to love the modern Exchange admin center (EAC)
 
-Exchange Admin Center, the digital workspace for IT admins, is where work gets done. The new EAC portal (<https://admin.exchange.microsoft.com>) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
+Exchange admin center, the digital workspace for IT admins, is where work gets done. The new EAC portal (<https://admin.exchange.microsoft.com>) now brings together more features, such as Rules, Organization, and Public Folders. Also new to the modern EAC are the Another User feature (which has been a major Help desk admin demand) and support for flow for all of our delegated admins.
 
 :::image type="content" source="media/exo-whatsnew-feb21-1.png" alt-text="Three new features in the modern EAC.":::
 
@@ -125,7 +125,7 @@ Administrators can now upgrade their distribution groups into the recommended Mi
 
 ### Opt-in/out
 
-End-users now have a single-click opt-in toggle button, available in both the classic Exchange Admin Center and in the new EAC. This button provides easy navigation between the two portals, allowing users to switch to and explore the new portal seamlessly.
+End-users now have a single-click opt-in toggle button, available in both the classic Exchange admin center and in the new EAC. This button provides easy navigation between the two portals, allowing users to switch to and explore the new portal seamlessly.
 
 ### Support Assistant
 
@@ -139,7 +139,7 @@ An educational video is now available on the very first tile, **Training and Gui
 
 ### Recipients – documentation updated
 
-As part of Microsoft's efforts to help users familiarize themselves with the new Exchange Admin Center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](./recipients-in-exchange-online/recipients-in-exchange-online.md).
+As part of Microsoft's efforts to help users familiarize themselves with the new Exchange admin center (EAC) portal, the Exchange Online documentation has been updated for the highest-trafficked articles under [**Recipients**](./recipients-in-exchange-online/recipients-in-exchange-online.md).
 
 ## July 2020
 
@@ -147,7 +147,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 ### Mail flow Reports
 
-Exchange admins can now use the existing dashboard to choose from new variety of mail flow cards that personalize their experience for ease of use and better productivity. To access this dashboard, go to the Exchange Admin Center and select Add Card (+) to see the new cards.
+Exchange admins can now use the existing dashboard to choose from new variety of mail flow cards that personalize their experience for ease of use and better productivity. To access this dashboard, go to the Exchange admin center and select Add Card (+) to see the new cards.
 
 Discover and understand some more trends related to mail flow in your Microsoft 365 or Office 365 organization. The following report were already available in the Security & Compliance Center but are now available in the EAC for added convenience.
 
@@ -221,7 +221,7 @@ Admins can now customize the columns that appear in the EAC.
 
 ### People picker for remote migration
 
-A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange online.
+A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange Online.
 
 ![Screen capture of people picker for remote migration.](./media/whats-new-2020-04--3-people-picker.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Configure S/MIME
+title: Configure S/MIME in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda

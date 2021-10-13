@@ -1,5 +1,5 @@
 ---
-title: "Mail flow insights in the new EAC"
+title: "Mail flow insights in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,22 +14,17 @@ description: Admins can learn how to use the mail flow insights dashboard in the
 ms.custom:
 ---
 
-# Mail flow insights in the new Exchange admin center
+# Mail flow insights in the new Exchange admin center in Exchange Online
 
 Admins can use the insights dashboard in the new Exchange admin center (new EAC) to discover issues with mail flow and take corrective action. If an item appears in the mail flow insights dashboard, you need to investigate and likely fix the issue.
 
 The following mail flow insights are available:
 
 - [Fix possible mail loop insight](mfi-fix-possible-mail-loop-insight.md)
-
 - [Fix slow mail flow rules insight](mfi-fix-slow-mail-flow-rules-insight.md)
-
 - [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email-insight.md)
-
 - [New users forwarding email insight](mfi-new-users-forwarding-email-insight.md)
-
 - [Domain expiring soon insight](domain-expiry-notification-feature.md)
-
 - [Mailboxes exceeding receiving limits insight](mailboxes-exceeding-receiving-limits-insights.md)
 
 ## Permissions required to view and use mail flow insights

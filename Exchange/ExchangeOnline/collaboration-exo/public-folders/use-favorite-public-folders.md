@@ -8,7 +8,7 @@ ms.assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Use favorite public folders in Outlook on the web
+title: Use favorite public folders in Outlook on the web in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Use favorite public folders in Outlook on the web
+# Use favorite public folders in Outlook on the web in Exchange Online
 
 In the Outlook client, users in your organization can add public folders to their **Favorites** folders. Then, depending on your organization's policies, they can use Outlook on the web to add those same public folders to their Favorites and perform certain functions in Outlook on the web that they use in the Outlook client.
 

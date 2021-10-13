@@ -1,5 +1,5 @@
 ---
-title: "Completion of migration batch"
+title: Completion of migration batch in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Overview to completion of migration batch
 ms.custom: seo-marvel-jun2021
 ---
 
-# Completion of migration batch
+# Completion of migration batch in Exchange Online
 
 Based on whether you are using New EAC, Classic EAC, or PowerShell cmdlets to perform the migration, the completion process differs.
 

@@ -10,7 +10,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.exch.eac.ConnectorSelection
-title: Configure mail flow using connectors
+title: Configure mail flow using connectors in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure mail flow using connectors
+# Configure mail flow using connectors in Exchange Online
 
 Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Actually, most Microsoft 365 and Office 365 organizations don't need connectors for regular mail flow. This article describes the mail flow scenarios that require connectors.
 

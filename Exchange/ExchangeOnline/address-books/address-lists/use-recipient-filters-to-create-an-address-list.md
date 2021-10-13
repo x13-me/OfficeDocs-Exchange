@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 ms.reviewer: 
-title: Recipient filters for address lists in Exchange Online PowerShell
+title: Recipient filters for address lists in Exchange Online PowerShell in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

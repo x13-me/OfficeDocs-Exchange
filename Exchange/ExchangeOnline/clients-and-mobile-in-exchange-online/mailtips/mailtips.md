@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 ms.reviewer: 
-title: MailTips
+title: MailTips in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,7 +19,7 @@ manager: serdars
 
 ---
 
-# MailTips
+# MailTips in Exchange Online
 
 MailTips are informative messages displayed to users while they're composing a message. While a new message is open and being composed, Exchange analyzes the message (including recipients). If a potential problem is detected, the user is notified with a MailTip prior to sending the message. Using the information in the MailTip, the user can adjust the message to avoid undesirable situations or non-delivery reports (also known as NDRs or bounce messages).
 

@@ -446,6 +446,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Exchange/ExchangeOnline/accessibility/use-a-screen-reader-to-manage-anti-spam-protection.md",
+      "redirect_url": "/exchange/accessibility/accessibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Exchange/ExchangeOnline/accessibility/use-screen-reader-to-manage-anti-malware-protection-in-exchange-admin-center.md",
+      "redirect_url": "/exchange/accessibility/accessibility",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "Exchange/ExchangeOnline/accessibility/use-screen-reader-to-configure-voice-mail-in-exchange-admin-center.md",
+      "redirect_url": "/exchange/accessibility/accessibility",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Exchange/ExchangeServer/about-documentation/index.md",
       "redirect_url": "about-documentation",
       "redirect_document_id": false

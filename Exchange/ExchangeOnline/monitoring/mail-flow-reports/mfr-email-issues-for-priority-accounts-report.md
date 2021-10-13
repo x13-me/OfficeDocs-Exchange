@@ -1,5 +1,5 @@
 ---
-title: "Email issues for priority accounts report in the new EAC"
+title: "Email issues for priority accounts report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ ms.custom:
 description: "Admins can learn how to use the Email issues for priority accounts monitoring in the new Exchange admin center to see delayed and failed email messages that were sent to or from priority accounts."
 ---
 
-# Email issues for priority accounts report in the new EAC
+# Email issues for priority accounts report in the new EAC in Exchange Online
 
 > [!NOTE]
 > The priority accounts report that's described in this topic is available only to organizations that meet both of the following requirements:

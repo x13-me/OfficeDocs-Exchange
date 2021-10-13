@@ -8,7 +8,7 @@ ms.assetid:
 ms.reviewer:
 f1.keywords:
 - NOCSH
-title: Enhanced filtering for connectors
+title: Enhanced filtering for connectors in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
