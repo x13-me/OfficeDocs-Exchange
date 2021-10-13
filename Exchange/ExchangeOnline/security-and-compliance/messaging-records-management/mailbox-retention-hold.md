@@ -8,7 +8,7 @@ ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Place a mailbox on retention hold
+title: Place a mailbox on retention hold in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Place a mailbox on retention hold
+# Place a mailbox on retention hold in Exchange Online
 
 Placing a mailbox on retention hold suspends the processing of an MRM retention policy by the Managed Folder Assistant for that mailbox. Retention hold is designed for situations such as a user being on vacation or away temporarily.
 

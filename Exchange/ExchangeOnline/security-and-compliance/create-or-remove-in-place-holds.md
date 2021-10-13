@@ -8,7 +8,7 @@ ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Remove an In-Place Hold
+title: Remove an In-Place Hold in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -17,7 +17,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# Remove an In-Place Hold
+# Remove an In-Place Hold in Exchange Online
 
 > [!IMPORTANT]
 >  As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place Holds. But you'll still be able to manage In-Place Holds in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place Holds. You'll only be remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place Holds in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place Holds in Exchange Online, see [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement).
