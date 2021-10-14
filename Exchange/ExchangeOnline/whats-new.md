@@ -225,13 +225,13 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 ### Group creation and management
 
-Admins can now create groups from the modern EAC. Currently, they can create and manage M365 groups, distribution groups, and mail-enabled security groups.
+Admins can now create groups from the modern EAC. Currently, they can create and manage Microsoft 365 groups, distribution groups, and mail-enabled security groups.
 
 :::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog.":::
 
-The three types of groups that M365 administrators can now create and manage are:
+The three types of groups that Microsoft 365 administrators can now create and manage are:
 
-- **M365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
+- **Microsoft 365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
 - **Distribution groups** – These are the most commonly used group type, and they allow you to send email to all members of the distribution list.
 - **Mail-enabled security groups** – These groups give members access to various resources like OneDrive, SharePoint, and various admin roles.
 
