@@ -34,7 +34,7 @@ The new Exchange admin center (EAC) is a modern, accessible, web-based managemen
 #### Announcement of ECP Deprecation
 With the new EAC providing the majority of admin capabilities, we are now at the next stage of our journey, and we have announced the retirement of the classic EAC in our WW deployment. The new EAC will be fully deprecated by **September 2022**.
 
->[!Important
+>[!Important]
 > This change is for Worldwide (WW) only. It does not affect GCC, GCC-High, DoD, or other Sovereign Clouds.
 
 The Classic EAC deprecation timeline is planned as follows:
