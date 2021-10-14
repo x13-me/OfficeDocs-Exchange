@@ -1,5 +1,5 @@
 ---
-title: "New users forwarding email insight in the new EAC"
+title: "New users forwarding email insight in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the New users forwarding email insight in the new Exchange admin center to investigate when users in their organization are forwarding messages to new domains."
 ---
 
-# New users forwarding email insight in the new EAC
+# New users forwarding email insight in the new EAC in Exchange Online
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 

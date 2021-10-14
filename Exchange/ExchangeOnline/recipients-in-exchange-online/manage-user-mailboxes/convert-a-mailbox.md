@@ -8,7 +8,7 @@ ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Convert a mailbox
+title: Convert a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

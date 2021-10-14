@@ -6,8 +6,8 @@ ms.author: jhendr
 ms.assetid: 775bb2a2-5ada-489b-944f-422d56d94fbf
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to enable or disable mailbox archiving in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to archive mailbox items in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to enable or disable mailbox archiving in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to archive mailbox items in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to archive mailbox items in the Exchange admin center in Exchange Online
+# Use a screen reader to archive mailbox items in the Classic Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes).
+You can use your screen reader in the Classic Exchange admin center (Classic EAC) to enable or disable archiving of items in an Exchange Online mailbox. You can also use your screen reader in the EAC to apply retention policies to mailboxes. Learn more about the [archive mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Get started
 

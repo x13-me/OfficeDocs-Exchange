@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to see what your users are reporting to Microsoft
+title: Use mail flow rules to see what your users are reporting to Microsoft in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda

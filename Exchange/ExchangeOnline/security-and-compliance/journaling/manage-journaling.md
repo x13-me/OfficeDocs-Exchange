@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Manage journaling
+# Manage journaling in Exchange Online
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. For more information about journaling, see [Journaling in Exchange Online](journaling.md).
 

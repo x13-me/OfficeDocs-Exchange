@@ -1,5 +1,5 @@
 ---
-title: "Fix possible mail loop insight in the new EAC"
+title: "Fix possible mail loop insight in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Fix possible mail loop insight in the new Exchange admin center to identify and fix mail loops in their organization."
 ---
 
-# Fix possible mail loop insight in the new EAC
+# Fix possible mail loop insight in the new EAC in Exchange Online
 
 A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.
 

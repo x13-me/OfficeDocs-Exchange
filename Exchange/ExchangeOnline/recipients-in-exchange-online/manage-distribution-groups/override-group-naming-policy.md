@@ -8,7 +8,7 @@ ms.assetid: 9eb23fc9-3f59-4d09-9077-85c89a051ee0
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Override the distribution group naming policy
+title: Override the distribution group naming policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Override the distribution group naming policy
+# Override the distribution group naming policy in Exchange Online
 
 The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange admin center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
 

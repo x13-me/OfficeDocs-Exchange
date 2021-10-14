@@ -8,7 +8,7 @@ ms.assetid: abdd0474-db84-49b1-a915-f5710f206a58
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Clutter notifications in Outlook
+title: Clutter notifications in Outlook in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Clutter notifications in Outlook
+# Clutter notifications in Outlook in Exchange Online
 
 > [!TIP]
 > [Focused Inbox](/microsoft-365/admin/setup/configure-focused-inbox) is replacing Clutter. Learn more here: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).

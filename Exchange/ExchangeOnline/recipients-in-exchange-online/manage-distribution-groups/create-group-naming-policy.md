@@ -8,7 +8,7 @@ ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create a distribution group naming policy
+title: Create a distribution group naming policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create a distribution group naming policy
+# Create a distribution group naming policy in Exchange Online
 
 A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can add specific prefix and suffix to the name of a distribution group when it's created. And you can also block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 

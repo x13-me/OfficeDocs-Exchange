@@ -8,7 +8,7 @@ ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create a DLP policy from a template
+title: Create a DLP policy from a template in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create a DLP policy from a template
+# Create a DLP policy from a template in Exchange Online
 
 In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see [DLP policy templates supplied in Exchange](dlp-policy-templates.md). Example DLP templates that are supplied can help you manage:
 

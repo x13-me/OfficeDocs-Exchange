@@ -8,7 +8,7 @@ ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Exchange Online auditing reports
+title: Auditing reports in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

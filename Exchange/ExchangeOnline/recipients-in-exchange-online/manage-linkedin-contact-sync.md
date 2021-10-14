@@ -10,7 +10,7 @@ ms.assetid: 54d9b046-4f36-4f36-b88a-95b1da4e1b4c
 ms.reviewer: 
 f1.keywords:
 - CSH
-title: Manage LinkedIn contact sync in your organization
+title: Manage LinkedIn contact sync in your organization in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# Manage LinkedIn contact sync in your organization
+# Manage LinkedIn contact sync in your organization in Exchange Online
 
 LinkedIn contact synchronization lets people set up a connection between their LinkedIn account and their Microsoft 365 or Office 365 account by using Outlook on the web (formerly known as Outlook Web App). After they set up LinkedIn contact sync, all their LinkedIn connections are listed as contacts in People in Microsoft 365 or Office 365. They can then interact with their LinkedIn connections as they do with other contacts. LinkedIn contact sync is turned on by default if the feature is available for your region.
 
