@@ -2,9 +2,8 @@
 ms.localizationpriority: medium
 description: What's new in Exchange admin center
 ms.topic: overview
-author: msdmaguire
+author: joannehendrickson
 ms.author: jhendr
-ms.assetid:
 ms.reviewer:
 title: What's new in the Exchange admin center in Exchange Online
 f1.keywords:
@@ -18,11 +17,138 @@ manager: serdars
 
 # What's new in the Exchange admin center in Exchange Online
 
-We're continuously adding new features to Exchange admin center (EAC), fixing issues as we learn about them, and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
+We're continuously adding new features to the Exchange admin center (EAC); fixing issues as we learn about them and making changes based on your feedback. On this page, you can find highlights of all the recent changes we've made. Some features get rolled out at different times to our customers, so if you are not seeing a new feature yet, keep checking back.
 
-Exchange admin center now uses a new portal at <https://admin.exchange.microsoft.com>. This is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall Microsoft 365 admin experience.
+The Exchange admin center now uses a new portal at <https://admin.exchange.microsoft.com>. The new EAC is a modern, web-based management console for managing Exchange, designed to provide an experience that is more aligned with the overall Microsoft 365 admin experience.
 
-For now, it is possible to switch back to the existing EAC (often called the "classic" EAC), but at a future date, the classic EAC will be retired.
+For now, it is possible to switch back to the existing EAC (often called the "classic" EAC).  However, the classic EAC will be fully deprecated by September 2022.
+
+## September 2021
+
+Here are some of the changes and new features we introduced in the modern EAC in September 2021.
+
+**New EAC is now Generally Available in GCC-H**
+
+The new Exchange admin center (EAC) is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. The new EAC was made generally available to our worldwide (WW) users in April 2021 and our GCC customers in June 2021. Today, we are excited to announce that the new EAC is now generally available for our GCC-H customers. The EAC URL for GCC-H customers is https://admin.exchange.office365.us
+
+**Announcement of ECP Deprecation**
+With the new EAC providing the majority of admin capabilities, we are now at the next stage of our journey, and we have announced the retirement of the classic EAC in our WW deployment. The new EAC will be fully deprecated by **September 2022**.
+
+>[!Important
+> This change is for Worldwide (WW) only. It does not affect GCC, GCC-High, DoD, or other Sovereign Clouds.
+
+The Classic EAC deprecation timeline is planned as follows:
+
+![timeline for the deprecation of the class eac](media/eac-classic-deprecation-timeline.png)
+
+You can read more about the Classic EAC deprecation here: Deprecation of the classic Exchange admin center in WW service - Microsoft Tech Community
+
+## August 2021
+
+Here are some of the changes and new features we introduced in the modern EAC in August 2021.
+
+**Customizable Settings: Normal/Compact list view**
+
+In our efforts to provide customizable settings to admins, the new EAC has introduced a feature, 'Settings', located in the left navigation panel.
+
+![customizeable list view](media/eac-list-view-preference.png)
+
+Currently, it has one customizable setting for admins; 'List view preference'. This setting allows users to select the normal view or compact view as the preferred list view for the entire EAC portal. Once the user selects either of the views, it is applied to all the list pages in the new EAC.
+
+![eac settings panel for preferences](media/eac-settings-pane.png)
+
+**Hide from GAL feature in resources**
+
+The Hide from GAL [Global Address List] feature in resources is now available. Click on any of the resource mailboxes, and this feature setting can be found under General settings.
+
+![eac hide from gal feature in resources](media/eac-hide-from-gal-feature.png)
+
+
+
+## July 2021
+Here are some of the changes and new features we introduced in the modern EAC in July 2021.
+
+**Dynamic distribution list [DDL] created through PowerShell can now be seen in new EAC**
+
+The admins could always create a Dynamic distribution list/group from PowerShell. If the user creates a DDL with different recipient filters, this PowerShell-created DDL can now be viewed in new EAC by admins.
+
+
+![creating a DDL using powershell](media/eac-ddl-via-powershell.png)
+
+Reflection of the created DDL in new EAC:
+
+![how DDL is created in the new EAC](media/eac-ddg-panel.png)
+
+The recipient filter setting is non-editable from the new EAC. The admin will have to use PowerShell to edit the member setting.
+
+**Hide from GAL feature in mailbox & groups**
+
+Hide from GAL [Global Address List] was a long-awaited feature and is now live for use.
+User and Shared Mailboxes: Click on any user/shared mailbox for which you want to check the 'Hide from GAL' setting, click on 'Account' and then click on 'Manage contact information' to edit the setting.
+ 
+![hid from GAL feature in mailbox](media/eac-groups-hide-from-gal-panel-flyout.png)
+ 
+Groups: Hide from GAL functionality is also now available in all 4 types of Groups [Microsoft 365 group, Distribution list, Mail-enabled security group and Dynamic distribution list]. The setting is available under Settings tab of the groups.
+
+![hide from gal groups](media/eac-groups-hide-from-gal.png)
+
+## June 2021
+
+Here are some of the changes and new features we introduced in the modern EAC in June 2021.
+
+**New EAC is now Generally Available in GCC**
+
+The new Exchange admin center (EAC) https://admin.exchange.microsoft.com is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. The new EAC was made generally available to our WW users in April 2021. Today, we are excited to announce that the new EAC is generally available for our GCC customers.
+The GCC customers now have access to a new dashboard, new usability features, and several intelligent reports to help them be more productive in their work.
+
+**UX Enhancement in new EAC: Coherence with Microsoft 365 admin center**
+
+To provide a more coherent experience, the new EAC team made efforts to enhance the UX to become close to the Microsoft 365 admin center experience. The command bars and the detail panels now have similar control and navigation experiences in both the portals.
+
+
+## May 2021
+Here are some of the changes and new features we introduced in the modern EAC in May 2021.
+
+**Custom Attributes in Mailboxes**
+
+![custom attributes in mailboxes](media/eac-custom-attributes-mailboxes.png)
+
+![customer attributes in mailboxes editing panel](media/eac-customer-attributes-flyout-panel.png)
+
+The new EAC now includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute. You can use the EAC to manage the attributes, and you don't need to build custom controls or write scripts to populate and display these attributes.
+
+**Missing "Member of" attribute in mailboxes view**
+
+![member of attribute in mailboxes view](media/eac-member-of-attribute-mailbox-view.png)
+
+![group membership view](media/eac-group-membership-view.png)
+
+
+New EAC now offers a view of the Groups that a particular mailbox is a part of.
+
+**Easier role group creation for new tenants**
+
+Our new customers were facing an issue while creating a new role group. The users ended up with a warning text that they would have to Enable-OrganizationCustomization at their end by using PowerShell. This issue has been fixed now, and all our users can create Role groups without any extra step.
+
+
+## April 2021
+
+**New EAC is now Generally Available in Worldwide (WW)**
+
+The new Exchange admin center (EAC) [https://admin.exchange.microsoft.com] is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. Since entering Public Preview in June 2020, over half a million admins worldwide have used it.
+Today, we are excited to announce that the new EAC is generally available for customers in 10 languages. With this announcement, we are also releasing a new dashboard, new usability features, and several intelligent reports to help admins be more productive in their work.
+
+Here are some highlights:
+
+- **Personalized Dashboard, Reports, Insights** – The New EAC offers actionable insights and includes mail flow, migration, and priority monitoring reports.
+ 
+https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX
+ 
+- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.
+ 
+https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn
+You can read more about it here: Announcing General Availability of the new Exchange admin center - Microsoft Tech Community
+
 
 ## February 2021
 
@@ -99,13 +225,13 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 ### Group creation and management
 
-Admins can now create groups from the modern EAC. Currently, they can create and manage M365 groups, distribution groups, and mail-enabled security groups.
+Admins can now create groups from the modern EAC. Currently, they can create and manage Microsoft 365 groups, distribution groups, and mail-enabled security groups.
 
 :::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog.":::
 
-The three types of groups that M365 administrators can now create and manage are:
+The three types of groups that Microsoft 365 administrators can now create and manage are:
 
-- **M365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
+- **Microsoft 365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
 - **Distribution groups** – These are the most commonly used group type, and they allow you to send email to all members of the distribution list.
 - **Mail-enabled security groups** – These groups give members access to various resources like OneDrive, SharePoint, and various admin roles.
 
