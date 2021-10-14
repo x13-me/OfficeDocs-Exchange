@@ -15,7 +15,7 @@ description: 'Summary: Instructions for enabling on-premises Exchange Server use
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Configure Exchange Online public folders for a hybrid deployment
+title: Configure Exchange Online public folders for a hybrid deployment in Exchange Online
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Completion of migration batch in Classic EAC"
+title: "Completion of migration batch in Classic EAC in Exchange Online"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for completion of migration batch in Classic EAC.
 ms.custom: seo-marvel-jun2021
 ---
 
-# Completion of migration batch in Classic EAC
+# Completion of migration batch in Classic EAC in Exchange Online
 
 In Classic EAC, when the migration batch has reached the state of **Synced**, it needs to be completed.
 

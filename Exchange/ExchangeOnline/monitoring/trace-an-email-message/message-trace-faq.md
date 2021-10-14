@@ -8,7 +8,7 @@ ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Message Trace FAQ
+title: Message Trace FAQ in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Message Trace FAQ
+# Message Trace FAQ in Exchange Online
 
 This article presents messaging questions that a user may have, along with possible answers. It also describes how to use the message trace tool in order to get those answers and troubleshoot specific mail delivery issues.
 

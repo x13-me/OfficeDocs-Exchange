@@ -4,7 +4,7 @@ description: 'Admins can learn how to configure the S/MIME infrastructure in Exc
 ms.topic: article
 author: msdmaguire
 ms.author: jhendr
-title: S/MIME for Outlook for iOS and Android
+title: S/MIME for Outlook for iOS and Android in Exchange Online
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
@@ -14,7 +14,7 @@ manager: serdars
 
 ---
 
-# S/MIME for Outlook for iOS and Android
+# S/MIME for Outlook for iOS and Android in Exchange Online
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages. For more information, see [S/MIME for message signing and encryption in Exchange Online](../../security-and-compliance/smime-exo/smime-exo.md).
 

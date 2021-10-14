@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
 ms.reviewer: 
-title: POP3 and IMAP4
+title: POP3 and IMAP4 in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

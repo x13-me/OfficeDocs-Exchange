@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-description: 'Learn how to opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH.'
+description: Learn how to opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH.
 ms.topic: overview
 author: joannehendrickson
 ms.author: jhendr
 ms.reviewer:
-title: "Opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH"
+title: Opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar

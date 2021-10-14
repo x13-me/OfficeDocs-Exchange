@@ -22,7 +22,7 @@ description: "Learn how to fix email issues for error code 5.1.1 through 5.1.20 
 # Fix email delivery issues for error code 550 5.1.1 through 5.1.20 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+> Mail flow rules are now available in the new Exchange admin center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
 It's frustrating when you get an error after sending an email message. This article describes what you can do if you see error codes 550 5.1.1 through 5.1.20 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 

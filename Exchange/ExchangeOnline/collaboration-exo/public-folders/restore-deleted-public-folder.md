@@ -12,11 +12,11 @@ description: 'Summary: This article describes how to restore a public folder tha
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Restore a deleted public folder
+title: Restore a deleted public folder in Exchange Online
 
 ---
 
-# Restore a deleted public folder
+# Restore a deleted public folder in Exchange Online
 
 In some cases, you can restore a public folder that has been deleted.
 

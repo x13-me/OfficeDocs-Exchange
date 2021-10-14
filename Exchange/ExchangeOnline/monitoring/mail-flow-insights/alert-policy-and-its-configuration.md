@@ -1,5 +1,5 @@
 ---
-title: "Alert policy and its configuration"
+title: Alert policies in Exchange Online
 f1.keywords:
 ms.author: v-smandalika
 author: v-smandalika
@@ -13,9 +13,9 @@ description: This alert policy allows you to track and manage your activities.
 ms.custom:
 ---
 
-# Alert policy
+# Alert policies in Exchange Online
 
-An alert policy is the mechanism that enables you to track events related to mail flow in the new Exchange Admin Center (EAC).
+An alert policy is the mechanism that enables you to track events related to mail flow in the new Exchange admin center (EAC).
 
 ## Types of alert policies
 

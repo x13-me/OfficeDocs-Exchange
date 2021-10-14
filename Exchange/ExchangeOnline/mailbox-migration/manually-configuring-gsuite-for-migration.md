@@ -1,5 +1,5 @@
 ---
-title: "Manually configuring G-Suite for migration"
+title: Manually configuring G-Suite for migration to Microsoft 365 or Office 365
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions to manually configure G-Suite for migration
 ms.custom: seo-marvel-jun2021
 ---
 
-# Manually configuring G-Suite for migration
+# Manually configuring G-Suite for migration to Microsoft 365 or Office 365
 
 Following procedures are to be performed, if you are attempting manual migration of Google Workspace with either Classic or New EAC:
 
