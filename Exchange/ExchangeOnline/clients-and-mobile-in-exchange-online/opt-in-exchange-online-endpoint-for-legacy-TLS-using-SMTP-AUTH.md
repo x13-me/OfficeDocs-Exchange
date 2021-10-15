@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-description: 'Learn how to opt in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH.'
+description: "Learn how to opt in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH."
 ms.topic: overview
 author: joannehendrickson
 ms.author: jhendr
 ms.reviewer:
-title: "Opt in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH"
+title: "Opt in to the Exchange Online endpoint for legacy TLS clients using SMTP AUTH"
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -17,7 +17,7 @@ manager: serdars
 
 ---
 
-# Opt in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH
+# Opt in to the Exchange Online endpoint for legacy TLS clients using SMTP AUTH
 
 Exchange Online no longer supports use of TLS1.0 and TLS1.1 in the service as of October 2020. This change is due to security and compliance requirements for our service. While no longer supported, our servers still allow clients to use those older versions of TLS when connecting to the SMTP AUTH endpoint (smtp.office365.com).
 

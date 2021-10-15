@@ -8,7 +8,7 @@ ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Run a per-mailbox litigation hold report
+title: Run a per-mailbox litigation hold report in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

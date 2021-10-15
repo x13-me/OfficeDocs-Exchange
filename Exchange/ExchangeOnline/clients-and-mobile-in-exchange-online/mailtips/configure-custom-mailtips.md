@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms.reviewer: 
-title: Configure custom MailTips for recipients
+title: Configure custom MailTips for recipients in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure custom MailTips for recipients
+# Configure custom MailTips for recipients in Exchange Online
 
 MailTips are informative messages displayed to users in the InfoBar in Outlook on the web (formerly known as Outlook Web App) and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:
 

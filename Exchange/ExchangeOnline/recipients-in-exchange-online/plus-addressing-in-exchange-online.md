@@ -1,5 +1,5 @@
 ---
-title: "Plus Addressing in Exchange Online"
+title: Plus Addressing in Exchange Online
 ms.author: v-bshilpa
 author: Benny-54
 manager: Serdars

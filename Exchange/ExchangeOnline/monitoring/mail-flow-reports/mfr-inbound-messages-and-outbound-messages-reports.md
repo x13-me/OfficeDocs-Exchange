@@ -1,5 +1,5 @@
 ---
-title: "Inbound messages and Outbound messages reports in the new EAC"
+title: "Inbound messages and Outbound messages reports in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Inbound messages report and the Outbound Messages report in the new Exchange admin center to monitor message volume and TLS encryption for messages to and from the internet and inbound and outbound messages over connectors."
 ---
 
-# Inbound messages and Outbound messages reports in the new EAC
+# Inbound messages and Outbound messages reports in the new EAC in Exchange Online
 
 The **Inbound messages report** and the **Outbound messages report** in the new Exchange admin center (new EAC) display information about email entering and leaving your organization. Specifically, the **Inbound messages report** shows information about email coming into your organization from the internet and over connectors. The **Outbound messages report** displays information about email leaving your organization to the internet and over connectors. Both reports also show the TLS encryption level that's being used.
 

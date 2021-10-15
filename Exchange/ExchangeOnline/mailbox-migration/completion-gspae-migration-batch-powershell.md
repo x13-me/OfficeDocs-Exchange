@@ -1,5 +1,5 @@
 ---
-title: "Completion of migration batch in PowerShell"
+title: Completion of migration batch in Exchange Online PowerShell
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for completion of migration batch in PowerShell.
 ms.custom: seo-marvel-jun2021
 ---
 
-# Completion of migration batch in PowerShell
+# Completion of migration batch in Exchange Online PowerShell
 
 In PowerShell, when the migration batch has reached the state of **Synced**, it needs to be completed by running the `Complete-MigrationBatch` cmdlet.
 

@@ -6,7 +6,7 @@ ms.author: jhendr
 ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.reviewer: 
 description: Learn how to find your IMAP server name is Outlook on the web (Outlook Web App).
-title: Learn more about setting up your IMAP server connection
+title: Learn more about setting up your IMAP server connection in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -26,7 +26,7 @@ manager: serdars
 
 ---
 
-# Learn more about setting up your IMAP server connection
+# Learn more about setting up your IMAP server connection in Exchange Online
 
 To migrate your email by using Internet Message Access Protocol (IMAP) migration, Microsoft 365 or Office 365 needs to know the name and connection settings of your IMAP server.
 

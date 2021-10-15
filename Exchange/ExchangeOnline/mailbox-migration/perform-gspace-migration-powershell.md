@@ -1,5 +1,5 @@
 ---
-title: "Perform Google Workspace migration using PowerShell"
+title: Perform Google Workspace migration to Microsoft 365 or Office 365 using Exchange Online PowerShell
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for migrating from Google Workspace to Microsoft 365 o
 ms.custom: seo-marvel-jun2021
 ---
 
-# Perform Google Workspace migration with Exchange Online PowerShell
+# Perform Google Workspace migration to Microsoft 365 or Office 365 using Exchange Online PowerShell
 
 ## Create a migration endpoint in Microsoft 365 or Office 365
 
