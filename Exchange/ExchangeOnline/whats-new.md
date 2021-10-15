@@ -41,7 +41,7 @@ The Classic EAC deprecation timeline is planned as follows:
 
 ![timeline for the deprecation of the class eac](media/eac-classic-deprecation-timeline.png)
 
-You can read more about the Classic EAC deprecation here: Deprecation of the classic Exchange admin center in WW service - Microsoft Tech Community
+You can read more about the Classic EAC deprecation here: [Deprecation of the classic Exchange admin center in WW service - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/bc-p/2747313/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufEtUSjVFUktPUjZDWDNMfDI3NDczMTN8U1VCU0NSSVBUSU9OU3xoSw#M31200)
 
 ## August 2021
 
@@ -84,11 +84,15 @@ The recipient filter setting is non-editable from the new EAC. The admin will ha
 #### Hide from GAL feature in mailbox & groups
 
 Hide from GAL [Global Address List] was a long-awaited feature and is now live for use.
-User and Shared Mailboxes: Click on any user/shared mailbox for which you want to check the 'Hide from GAL' setting, click on 'Account' and then click on 'Manage contact information' to edit the setting.
+
+**User and Shared Mailboxes:**
+ Click on any user/shared mailbox for which you want to check the 'Hide from GAL' setting, click on 'Account' and then click on 'Manage contact information' to edit the setting.
  
-![hid from GAL feature in mailbox](media/eac-groups-hide-from-gal-panel-flyout.png)
+![hide from GAL feature in mailbox](media/eac-groups-hide-from-gal-panel-flyout.png)
  
-Groups: Hide from GAL functionality is also now available in all 4 types of Groups [Microsoft 365 group, Distribution list, Mail-enabled security group and Dynamic distribution list]. The setting is available under Settings tab of the groups.
+**Groups: Hide from GAL functionality is available for all groups**
+
+Hide from GAL functionality is availalbe in all four types of groups: Microsoft 365 groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists. The setting is available under the Settings tab of the groups.
 
 ![hide from gal groups](media/eac-groups-hide-from-gal.png)
 
@@ -135,19 +139,22 @@ Our new customers were facing an issue while creating a new role group. The user
 
 #### New EAC is now Generally Available in Worldwide (WW)
 
-The new Exchange admin center (EAC) [https://admin.exchange.microsoft.com] is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. Since entering Public Preview in June 2020, over half a million admins worldwide have used it.
+The new [Exchange admin center (EAC)](https://admin.exchange.microsoft.com) is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. Since entering Public Preview in June 2020, over half a million admins worldwide have used it.
+
 Today, we are excited to announce that the new EAC is generally available for customers in 10 languages. With this announcement, we are also releasing a new dashboard, new usability features, and several intelligent reports to help admins be more productive in their work.
 
 Here are some highlights:
 
 - **Personalized Dashboard, Reports, Insights** – The New EAC offers actionable insights and includes mail flow, migration, and priority monitoring reports.
  
-https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX
+  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
  
 - **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.
  
-https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn
-You can read more about it here: Announcing General Availability of the new Exchange admin center - Microsoft Tech Community
+  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]
+
+
+You can read more about it here: [Announcing General Availability of the new Exchange admin center - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-general-availability-of-the-new-exchange-admin-center/ba-p/2283004)
 
 
 ## February 2021
