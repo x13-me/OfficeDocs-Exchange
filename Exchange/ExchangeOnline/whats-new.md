@@ -139,7 +139,8 @@ Our new customers were facing an issue while creating a new role group. The user
 
 #### New EAC is now Generally Available in Worldwide (WW)
 
-The new Exchange admin center (EAC) [https://admin.exchange.microsoft.com] is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. Since entering Public Preview in June 2020, over half a million admins worldwide have used it.
+The new [Exchange admin center (EAC)](https://admin.exchange.microsoft.com) is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. Since entering Public Preview in June 2020, over half a million admins worldwide have used it.
+
 Today, we are excited to announce that the new EAC is generally available for customers in 10 languages. With this announcement, we are also releasing a new dashboard, new usability features, and several intelligent reports to help admins be more productive in their work.
 
 Here are some highlights:
