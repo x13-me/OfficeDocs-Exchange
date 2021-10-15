@@ -1,5 +1,5 @@
 ---
-title: "Mailboxes exceeding receiving limits insight in the new EAC"
+title: "Mailboxes exceeding receiving limits insight in the new EAC in Exchange Online"
 f1.keywords:
 ms.author: v-bshilpa
 author: Benny-54
@@ -13,10 +13,10 @@ description: This article describes the delays due to mailboxes exceeding their 
 ms.custom:
 ---
 
-# Mailboxes exceeding receiving limits insight in the new EAC
+# Mailboxes exceeding receiving limits insight in the new EAC in Exchange Online
 
 Mailboxes that receive large volumes of messages in a short amount of time can lead to mail flow delays for those mailboxes, and other mailboxes in your organization.
-The mailboxes exceeding receiving limits insight in the Insights dashboard in the new Exchange Admin Center (new EAC) highlights:
+The mailboxes exceeding receiving limits insight in the Insights dashboard in the new Exchange admin center (new EAC) highlights:
 
 1. Mailboxes that have exceeded their receiving limit (For more information, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)), which means they can no longer receive mail until the limit is reset (which is 1 hour after the threshold is exceeded).
 

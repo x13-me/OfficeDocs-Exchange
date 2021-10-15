@@ -145,5 +145,3 @@ Set-AcceptedDomain -Identity contoso.com -DomainType InternalRelay
 ```
 
 For detailed syntax and parameter information, see [Set-AcceptedDomain](/powershell/module/exchange/set-accepteddomain).
-
-

@@ -24,7 +24,7 @@ manager: serdars
 
 For most organizations, we recommend using hosted mail flow because it's the simplest configuration, in which Microsoft 365 or Office 365 manages all mailboxes and filtering. This simple configuration makes it easy to set up and manage mail flow.
 
-## Manage all mailboxes and mail flow using Microsoft 365 or Office 365 (recommended).
+## Manage all mailboxes and mail flow using Microsoft 365 or Office 365 (recommended)
 <a name="BKMK_HostedMailFlow"> </a>
 
 ### Hosted mail flow scenarios

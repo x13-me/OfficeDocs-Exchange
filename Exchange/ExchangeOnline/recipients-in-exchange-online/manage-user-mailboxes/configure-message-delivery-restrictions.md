@@ -8,7 +8,7 @@ ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Configure message delivery restrictions for a mailbox
+title: Configure message delivery restrictions for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure message delivery restrictions for a mailbox in Exchange Server
+# Configure message delivery restrictions for a mailbox in Exchange Online
 
 You can use the new EAC, the classic EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 

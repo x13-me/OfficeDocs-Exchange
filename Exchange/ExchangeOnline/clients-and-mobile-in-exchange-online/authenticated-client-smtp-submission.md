@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid:
 ms.reviewer:
-title: Enable or disable SMTP AUTH
+title: Enable or disable SMTP AUTH in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar

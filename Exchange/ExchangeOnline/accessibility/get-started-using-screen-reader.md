@@ -6,8 +6,8 @@ ms.author: jhendr
 ms.assetid: 0c8f04f0-e184-4ca7-b63b-0e7218086779
 ms.reviewer: 
 manager: serdars
-description: Learn about using screen readers to do admin tasks in the Exchange admin center (EAC) in Exchange Online
-title: Get started using a screen reader in the Exchange admin center in Exchange Online
+description: Learn about using screen readers to do admin tasks in the Classic Exchange admin center (Classic EAC) in Exchange Online
+title: Get started using a screen reader in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Get started using a screen reader in the Exchange admin center in Exchange Online
+# Get started using a screen reader in the Classic Exchange admin center in Exchange Online
 
-You can use a screen reader with the Exchange admin center (EAC) in Exchange Online to carry out administrative tasks. The EAC works with Narrator, the built-in screen reader in Windows, or JAWS, a third-party screen reader. These screen readers convert text to speech to read the contents of the EAC window.
+You can use a screen reader with the Classic Exchange admin center (Classic EAC) in Exchange Online to carry out administrative tasks. The EAC works with Narrator, the built-in screen reader in Windows, or JAWS, a third-party screen reader. These screen readers convert text to speech to read the contents of the EAC window.
 
 ## Get started
 
@@ -96,10 +96,6 @@ Explore specific tasks that use the screen reader to work in the EAC.
 - [Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online](use-screen-reader-to-configure-transport-rules-in-exchange-admin-center.md)
 
 - [Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center 2016](use-screen-reader-to-define-rules-that-encrypt-or-decrypt-email-in-exchange-admi.md)
-
-- [Use a screen reader to manage anti-spam protection in Exchange Online](use-a-screen-reader-to-manage-anti-spam-protection.md)
-
-- [Use a screen reader to manage anti-malware protection in the Exchange admin center in Exchange Online](use-screen-reader-to-manage-anti-malware-protection-in-exchange-admin-center.md)
 
 - [Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online](use-screen-reader-to-work-with-mobile-clients-in-exchange-admin-center.md)
 

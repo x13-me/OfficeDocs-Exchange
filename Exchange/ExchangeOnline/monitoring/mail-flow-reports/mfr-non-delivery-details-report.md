@@ -1,5 +1,5 @@
 ---
-title: "Non-delivery details report in the new EAC"
+title: "Non-delivery details report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Non-delivery details report in the new Exchange admin center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
 ---
 
-# Non-delivery details report in the new Exchange admin center
+# Non-delivery details report in the new Exchange admin center in Exchange Online
 
 The **Non-delivery details report** in the new Exchange admin center (new EAC) shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
 

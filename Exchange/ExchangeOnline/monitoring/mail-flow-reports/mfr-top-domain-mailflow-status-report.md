@@ -1,5 +1,5 @@
 ---
-title: "Top domain mailflow status report in the new EAC"
+title: "Top domain mailflow status report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Top domain mailflow status report in the new Exchange admin center to identify and troubleshoot mail flow in your email domains."
 ---
 
-# Top domain mailflow status report in the new Exchange admin center
+# Top domain mailflow status report in the new Exchange admin center in Exchange Online
 
 The **Top domain mailflow status** report in the new Exchange admin center (new EAC) returns information about whether your email domains are receiving or aren't receiving messages. Typically, these types of issues are related to MX record problems for the domain.
 

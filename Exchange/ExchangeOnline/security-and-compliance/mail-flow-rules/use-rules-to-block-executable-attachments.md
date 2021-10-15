@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to block messages with executable attachments
+title: Use mail flow rules to block messages with executable attachments in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
