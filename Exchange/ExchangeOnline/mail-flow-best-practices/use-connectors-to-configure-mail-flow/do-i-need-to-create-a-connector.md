@@ -10,7 +10,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.exch.eac.ConnectorIsConnectorNeeded
-title: Do I need to create a connector in Exchange Online?
+title: Do I need to create a connector in Exchange Online? in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online

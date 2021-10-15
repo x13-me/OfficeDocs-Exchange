@@ -1,5 +1,5 @@
 ---
-title: "Message trace in the modern EAC"
+title: Message trace in the modern EAC in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ ms.custom:
 description: "Admins can use message trace in the modern Exchange amdin center to find out what happened to messages."
 ---
 
-# Message trace in the modern Exchange admin center
+# Message trace in the modern Exchange admin center in Exchange Online
 
 Message trace in the modern Exchange admin center (modern EAC) follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 

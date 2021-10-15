@@ -63,12 +63,6 @@ The Disability Answer Desk support team is trained in using many popular assisti
 
 - [Use a screen reader to add members to a distribution group in the Exchange admin center in Exchange Online](use-screen-reader-to-add-members-to-a-distribution-group-in-exchange-admin-cente.md)
 
-### Protect against spam and malware
-
-- [Use a screen reader to manage anti-malware protection in the Exchange admin center in Exchange Online](use-screen-reader-to-manage-anti-malware-protection-in-exchange-admin-center.md)
-
-- [Use a screen reader to manage anti-spam protection in Exchange Online](use-a-screen-reader-to-manage-anti-spam-protection.md)
-
 ### Configure features
 
 - [Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online](use-screen-reader-to-add-mail-contact-in-exchange-admin-center.md)

@@ -7,7 +7,7 @@ ms.author: jhendr
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
 f1.keywords:
 - NOCSH
-title: Exchange Online recipients
+title: Recipients in Exchange Online
 ms.reviewer:
 ms.collection:
 - exchange-online

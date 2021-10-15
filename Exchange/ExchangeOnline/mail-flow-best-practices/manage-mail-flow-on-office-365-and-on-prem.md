@@ -6,7 +6,7 @@ author: msdmaguire
 ms.author: jhendr
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
 ms.reviewer: 
-title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
+title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

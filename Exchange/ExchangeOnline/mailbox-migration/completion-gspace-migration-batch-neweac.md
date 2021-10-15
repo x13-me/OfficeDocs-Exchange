@@ -1,5 +1,5 @@
 ---
-title: "Completion of migration batch in New EAC"
+title: "Completion of migration batch in New EAC in Exchange Online"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for completion of migration batch in New EAC.
 ms.custom: seo-marvel-jun2021
 ---
 
-# Completion of migration batch in new EAC
+# Completion of migration batch in new EAC in Exchange Online
 
 In new EAC, when the migration batch has reached the state of **Synced**, it needs to be completed.
 

@@ -8,7 +8,7 @@ ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Messaging records management
+title: Messaging records management in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Messaging records management
+# Messaging records management in Exchange Online
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.

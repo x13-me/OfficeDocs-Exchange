@@ -1,5 +1,5 @@
 ---
-title: "Perform manual Google Workspace migration in new Exchange Admin Center"
+title: Perform manual Google Workspace migration in the new Exchange admin center in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for manually migrating from Google Workspace to Micros
 ms.custom: seo-marvel-jun2021
 ---
 
-# Perform a manual Google Workspace Migration to Microsoft 365 or Office 365 in new EAC
+# Perform a manual Google Workspace Migration to Microsoft 365 or Office 365 in the new EAC
 
 The migration process takes several steps and can take from several hours to a couple of days depending on the amount of data you are migrating.
 

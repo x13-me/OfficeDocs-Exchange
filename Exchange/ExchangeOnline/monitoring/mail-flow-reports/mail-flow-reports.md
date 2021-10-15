@@ -1,5 +1,5 @@
 ---
-title: "Mail flow reports in the new EAC"
+title: "Mail flow reports in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,30 +14,21 @@ description: Admins can learn about the mail flow reports that are available in 
 ms.custom:
 ---
 
-# Mail flow reports in the new Exchange admin center
+# Mail flow reports in the new Exchange admin center in Exchange Online
 
 Admins can use mail flow reports in the new Exchange admin center (new EAC) to establish baselines and discover trends to fix issues related to mail flow in their organization.
 
 The following mail flow reports are available:
 
 - [Auto forwarded messages report](mfr-auto-forwarded-messages-report.md)
-
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
-
 - [Inbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
-
 - [Non-accepted domain report](mfr-non-accepted-domain-report.md)
-
 - [Non-delivery details report](mfr-non-delivery-details-report.md)
-
 - [Outbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
-
 - [Queued messages report](mfr-queued-messages-report.md)
-
 - [SMTP AUTH clients report](mfr-smtp-auth-clients-report.md)
-
 - [Top domain mailflow status report](mfr-top-domain-mailflow-status-report.md)
-
 - [Mailboxes exceeding receiving limits report](mailboxes-exceeding-receiving-limits-report.md)
 
 ## Permissions required to view mail flow reports

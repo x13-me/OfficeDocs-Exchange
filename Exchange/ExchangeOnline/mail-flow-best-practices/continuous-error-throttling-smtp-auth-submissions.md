@@ -4,7 +4,7 @@ author: Benny-54
 ms.author: v-bshilpa
 ms.reviewer: 
 description: 'Learn how handle errors in for LOB applications and services that customers have configured to send out automated emails.'
-title: Continuous error throttling for SMTP AUTH submissions 
+title: Continuous error throttling for SMTP AUTH submissions  in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ localization_priority: Priority
 
 ---
 
-# Continuous error throttling for SMTP AUTH submissions
+# Continuous error throttling for SMTP AUTH submissions in Exchange Online
 
 Every day, our service sees millions of requests coming in to send emails via smtp.office365.com using the SMTP AUTH protocol. Many of these are for Line-of-Business (LOB) applications and services that customers have configured to send out automated emails.
 
