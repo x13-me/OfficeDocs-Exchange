@@ -153,7 +153,7 @@ Here are some highlights:
 
 </br>
  
-- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.
+- **Azure Cloud Shell**  -  Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style. </br>
 
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]
 
