@@ -37,8 +37,7 @@ This article explains how you can send email from devices and business applicati
 ## Option 1: Authenticate your device or application directly with a Microsoft 365 or Office 365 mailbox, and send mail using SMTP AUTH client submission
 
 > [!NOTE]
->
-> This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). We recommend using Modern Authentication when connecting with our service,  most devices and clients have not been designed to use OAuth that SMTP AUTH now supports. As a result, there are no plans to disable Basic Authentication for SMTP AUTH clients at this time. To find out more about OAuth, see [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
+> This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). We recommend using Modern Authentication when connecting with our service. Although SMTP AUTH now supports OAuth, most devices and clients have not been designed to use OAuth with SMTP AUTH. As a result, there are no plans to disable Basic Authentication for SMTP AUTH clients at this time. To find out more about OAuth, see [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
 >
 > You must also verify that SMTP AUTH is enabled for the organization and the mailbox being used. SMTP AUTH is disabled for organizations created after January 2020. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
 
@@ -93,7 +92,7 @@ The following diagram gives you a conceptual overview of what your environment w
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: If you are able to, we recommend using Modern Authentication in the form of OAuth. Otherwise you will have to use Basic Authentication which is simply a  username and password to send email from the device or application. To find out more about OAuth, see [Authenticate an IMAP, POP, or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth). If SMTP AUTH is intentionally disabled for the organization or the mailbox being used, you must use Option 2 or 3 below.
+- **Authentication**: If possible, we recommend using Modern Authentication in the form of OAuth. Otherwise, you'll need to use Basic Authentication (which is simply a username and password) to send email from the device or application. To find out more about OAuth, see [Authenticate an IMAP, POP, or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth). If SMTP AUTH is intentionally disabled for the organization or the mailbox being used, you must use Option 2 or 3 below.
 - **Mailbox**: You must have a licensed Microsoft 365 or Office 365 mailbox to send email from.
 - **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.2 and above.
 - **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25, because that's the port that email servers use to send mail.
