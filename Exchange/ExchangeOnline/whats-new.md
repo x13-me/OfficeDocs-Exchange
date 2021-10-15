@@ -85,13 +85,14 @@ The recipient filter setting is non-editable from the new EAC. The admin will ha
 
 Hide from GAL [Global Address List] was a long-awaited feature and is now live for use.
 
-**User and Shared Mailboxes:**
+- **User and Shared Mailboxes:**
  Click on any user/shared mailbox for which you want to check the 'Hide from GAL' setting, click on 'Account' and then click on 'Manage contact information' to edit the setting.
  
 ![hide from GAL feature in mailbox](media/eac-groups-hide-from-gal-panel-flyout.png)
- 
-**Groups: Hide from GAL functionality is available for all groups**
 
+</br>
+ 
+- **Groups: Hide from GAL functionality is available for all groups**
 Hide from GAL functionality is availalbe in all four types of groups: Microsoft 365 groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists. The setting is available under the Settings tab of the groups.
 
 ![hide from gal groups](media/eac-groups-hide-from-gal.png)
@@ -145,14 +146,17 @@ Today, we are excited to announce that the new EAC is generally available for cu
 
 Here are some highlights:
 
-- **Personalized Dashboard, Reports, Insights** – The New EAC offers actionable insights and includes mail flow, migration, and priority monitoring reports.
+- **Personalized Dashboard, Reports, Insights** – The New EAC offers actionable insights and includes mail flow, migration, and priority monitoring reports. </br>
  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuGX]  
+
+</br>
  
-- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.
+- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.</br>
  
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]
 
+</br>
 
 You can read more about it here: [Announcing General Availability of the new Exchange admin center - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-general-availability-of-the-new-exchange-admin-center/ba-p/2283004)
 
