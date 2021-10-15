@@ -32,7 +32,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 The new Exchange admin center (EAC) is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. The new EAC was made generally available to our worldwide (WW) users in April 2021 and our GCC customers in June 2021. Today, we are excited to announce that the new EAC is now generally available for our GCC-H customers. The EAC URL for GCC-H customers is https://admin.exchange.office365.us
 
 #### Announcement of ECP Deprecation
-With the new EAC providing the majority of admin capabilities, we are now at the next stage of our journey, and we have announced the retirement of the classic EAC in our WW deployment. The new EAC will be fully deprecated by **September 2022**.
+With the new EAC providing most admin capabilities, we are now at the next stage of our journey, and we have announced the retirement of the classic EAC in our WW deployment. The new EAC will be fully deprecated by **September 2022**.
 
 >[!Important]
 > This change is for Worldwide (WW) only. It does not affect GCC, GCC-High, DoD, or other Sovereign Clouds.
@@ -93,7 +93,7 @@ Hide from GAL [Global Address List] was a long-awaited feature and is now live f
 </br>
  
 - **Groups: Hide from GAL functionality is available for all groups**
-Hide from GAL functionality is availalbe in all four types of groups: Microsoft 365 groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists. The setting is available under the Settings tab of the groups.
+Hide from GAL functionality is available in all four types of groups: Microsoft 365 Groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists. The setting is available under the Settings tab of the groups.
 
 ![hide from gal groups](media/eac-groups-hide-from-gal.png)
 
@@ -104,6 +104,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 #### New EAC is now Generally Available in GCC
 
 The new Exchange admin center (EAC) https://admin.exchange.microsoft.com is a modern, accessible, web-based management portal for managing Exchange Online based on the Microsoft 365 admin center experience. The new EAC was made generally available to our WW users in April 2021. Today, we are excited to announce that the new EAC is generally available for our GCC customers.
+
 The GCC customers now have access to a new dashboard, new usability features, and several intelligent reports to help them be more productive in their work.
 
 #### UX Enhancement in new EAC: Coherence with Microsoft 365 admin center
@@ -188,7 +189,7 @@ The new, modern EAC now has a **View another mailbox** option, which adjusts Inb
 
 ##### 3. Delegated admin support
 
-A delegated admin now has access to the modern EAC portal. Currently, admins need to log in to <https://partner.microsoft.com>, where they will be directed to the classic EAC portal, and from there they can access the modern EAC.
+A delegated admin now has access to the modern EAC portal. Currently, admins need to sign in to <https://partner.microsoft.com>, where they will be directed to the classic EAC portal, and from there they can access the modern EAC.
 
 ## December 2020
 
@@ -196,7 +197,7 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 #### Groups – creation and management
 
-Admins can now create and manage four kinds of groups from the modern EAC: Microsoft 365 groups, distribution lists, mail-enabled security groups, and dynamic distribution lists. The groups experience has now reached parity with that of the classic EAC. The new group type that we recently introduced in the modern EAC is [dynamic distribution lists](#dynamic-distribution-lists).
+Admins can now create and manage four kinds of groups from the modern EAC: Microsoft 365 Groups, distribution lists, mail-enabled security groups, and dynamic distribution lists. The groups experience has now reached parity with that of the classic EAC. The new group type that we recently introduced in the modern EAC is [dynamic distribution lists](#dynamic-distribution-lists).
 
 The pivot experience (different pivots for different group types) makes groups management even easier.
 
@@ -236,13 +237,13 @@ Here are some of the changes and new features we introduced in the modern EAC in
 
 #### Group creation and management
 
-Admins can now create groups from the modern EAC. Currently, they can create and manage Microsoft 365 groups, distribution groups, and mail-enabled security groups.
+Admins can now create groups from the modern EAC. Currently, they can create and manage Microsoft 365 Groups, distribution groups, and mail-enabled security groups.
 
 :::image type="content" source="media/exo_whatsnew_sept20_1.png" alt-text="Choose a group type dialog.":::
 
 The three types of groups that Microsoft 365 administrators can now create and manage are:
 
-- **Microsoft 365 groups** – These are the recommended group type, and they allow for effective collaboration by providing group members a shared email and a shared workplace.
+- **Microsoft 365 groups** – Microsoft 365 groups are the recommended group type. They allow for effective collaboration by providing group members a shared email and a shared workplace.
 - **Distribution groups** – These are the most commonly used group type, and they allow you to send email to all members of the distribution list.
 - **Mail-enabled security groups** – These groups give members access to various resources like OneDrive, SharePoint, and various admin roles.
 
@@ -256,7 +257,7 @@ Administrators now have command over the group naming policy. They can now add p
 
 #### Upgrade distribution groups
 
-Administrators can now upgrade their distribution groups into the recommended Microsoft 365 groups (previously Office 365 groups) with a few clicks, as shown below:
+Administrators can now upgrade their distribution groups into the recommended Microsoft 365 Groups (previously Microsoft 365 Groups) with a few clicks, as shown below:
 
 :::image type="content" source="media/exo_whatsnew_sept20_2.png" alt-text="Ready to upgrade dialog.":::
 
@@ -272,7 +273,7 @@ The admins can now get their queries resolved without going anywhere else. The s
 
 #### Educational navigation video
 
-An educational video is now available on the very first tile, **Training and Guide**, in the new EAC portal. The video walks users through the basic navigation of the new portal. You can also access the video [here](https://www.microsoft.com/videoplayer/embed/RE4FqDa).
+An educational video is now available on the first tile, **Training and Guide**, in the new EAC portal. The video walks users through the basic navigation of the new portal. You can also access the video [here](https://www.microsoft.com/videoplayer/embed/RE4FqDa).
 
 #### Recipients – documentation updated
 
@@ -308,7 +309,7 @@ Microsoft 365 administrators can now add **Manager** and **Direct reports** for 
 
 #### Custom attributes
 
-Admins can include fifteen extension attributes that they can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
+Admins can include 15 extension attributes that they can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 
 :::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes.":::
 
@@ -358,7 +359,7 @@ Admins can now customize the columns that appear in the EAC.
 
 #### People picker for remote migration
 
-A very common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange Online.
+A common request from our customers was to bring back the people picker for a remote migration scenario. This helps admins to move the selected mailboxes to Exchange Online.
 
 ![Screen capture of people picker for remote migration.](./media/whats-new-2020-04--3-people-picker.png)
 
@@ -399,7 +400,7 @@ Migration is now a first-class citizen under the Modern EAC and is no longer bur
 
 - The Exchange and Google Workspace migrations are now simple, wizard-based experiences.
 - The Google Workspace migration supports migrating Calendar and Contact data along with emails.
-- For Google Workspace migration, the 2GB per mailbox per day restriction has been removed.
+- For Google Workspace migration, the 2 GB per mailbox per day restriction has been removed.
 
 ![Screen capture of what's new in migration.](./media/whats-new-2020-03-migration.png)
 
@@ -435,7 +436,7 @@ We are working hard to create modern experiences for Exchange admins. Here are s
   - Tenant switcher
   - Search
 
-Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange admin center, as well as other Exchange Online improvements that we announced at Microsoft Ignite 2019.
+Check out our [Ignite blog entry](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-admin-improvements-announced-at-microsoft-ignite-2019/ba-p/982121) where we detail the changes to the Exchange admin center, and other Exchange Online improvements that we announced at Microsoft Ignite 2019.
 
 ## Feedback and wishlist
 
