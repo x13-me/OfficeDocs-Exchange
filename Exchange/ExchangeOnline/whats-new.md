@@ -153,11 +153,13 @@ Here are some highlights:
 
 </br>
  
-- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.</br>
- 
+- **Azure Cloud Shell** – Cloud Shell is a browser-accessible shell that provides a command-line experience built with Azure management tasks in mind. It enables admins to choose a shell experience that best suits their work style.
+
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBuFn]
 
 </br>
+
+
 
 You can read more about it here: [Announcing General Availability of the new Exchange admin center - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-general-availability-of-the-new-exchange-admin-center/ba-p/2283004)
 
