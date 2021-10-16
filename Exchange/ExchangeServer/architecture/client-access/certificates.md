@@ -202,6 +202,6 @@ Further details about the default self-signed certificates that are visible in W
 |**Basic constraints**|`Subject Type=End Entity` <p> `Path Length Constraint=None`|`Subject Type=End Entity` <p> `Path Length Constraint=None`|n/a|
 |**Thumbprint algorithm**|sha256<sup>1</sup>|sha256<sup>1</sup>|sha256<sup>1</sup>|
 
-<sup>1</sup> Applies to new deployments of Exchange 2016 Cumulative Update 22 or later and Exchange 2019 Cumulative Update 11 or later. For more information, see [Exchange Server 2019 and 2016 certificates created during setup use SHA-1 hash](https://support.microsoft.com/topic/exchange-server-2019-and-2016-certificates-created-during-setup-use-sha-1-hash-kb5006983-83282c37-1cbf-4a9d-b6a6-8390fac42eeb).
+<sup>1</sup> Applies to fresh installations of Exchange 2016 Cumulative Update 22 or later and Exchange 2019 Cumulative Update 11 or later. For more information, see [Exchange Server 2019 and 2016 certificates created during setup use SHA-1 hash](https://support.microsoft.com/topic/exchange-server-2019-and-2016-certificates-created-during-setup-use-sha-1-hash-kb5006983-83282c37-1cbf-4a9d-b6a6-8390fac42eeb).
 
 Typically, you don't use Windows Certificate Manger to manage Exchange certificates (use the Exchange admin center or the Exchange Management Shell). Note that the WMSVC certificate isn't an Exchange certificate.
