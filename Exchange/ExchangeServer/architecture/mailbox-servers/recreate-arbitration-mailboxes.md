@@ -56,6 +56,11 @@ If you need to re-create one of more of these arbitration mailboxes, use the ins
 
 - For more information about running Exchange Setup in unattended mode, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
 ## Re-create an arbitration mailbox
 
 Use the following instructions to re-create a particular type of arbitration mailbox.
@@ -67,13 +72,13 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -89,13 +94,13 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:
@@ -117,13 +122,13 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -139,13 +144,13 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -173,13 +178,13 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:
@@ -201,13 +206,13 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 1. If the mailboxes are missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:
