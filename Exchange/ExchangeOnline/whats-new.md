@@ -91,9 +91,11 @@ Hide from GAL [Global Address List] was a long-awaited feature and is now live f
 ![hide from GAL feature in mailbox](media/eac-groups-hide-from-gal-panel-flyout.png)
 
 </br>
- 
+
 - **Groups: Hide from GAL functionality is available for all groups**
 Hide from GAL functionality is available in all four types of groups: Microsoft 365 Groups, Distribution lists, Mail-enabled security groups, and Dynamic distribution lists. The setting is available under the Settings tab of the groups.
+
+
 
 ![hide from gal groups](media/eac-groups-hide-from-gal.png)
 

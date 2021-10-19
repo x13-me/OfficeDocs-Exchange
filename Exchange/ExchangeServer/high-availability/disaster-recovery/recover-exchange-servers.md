@@ -84,20 +84,25 @@ Once the upgrade is successful, AdminDisplayVersion in EMS or msExchVersion attr
 
 7. In the Command Prompt window, use the following syntax:
 
+    > [!NOTE]
+    > - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the Exchange Server 2016 and Exchange Server 2019 September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+    >
+    > - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
     ```console
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
     ```
 
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
     ```powershell
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:RecoverServer
     ```
 
     This is the same example, but a custom location for the Exchange program files is required to match the location on the lost server.
 
     ```powershell
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
     For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
