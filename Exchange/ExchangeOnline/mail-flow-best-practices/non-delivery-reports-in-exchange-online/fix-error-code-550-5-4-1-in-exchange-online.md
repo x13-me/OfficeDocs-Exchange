@@ -124,4 +124,4 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Use Directory-Based Edge Blocking to reject messages sent to invalid recipients in Exchange Online](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
+[Use Directory-Based Edge Blocking to reject messages sent to invalid recipients in Exchange Online](./use-directory-based-edge-blocking.md)
