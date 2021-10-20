@@ -25,7 +25,9 @@ This article is organized in sections that correspond to the major releases of E
 Links for the available downloads are also included.
 
 > [!NOTE]
->
+> 
+> Releases are listed from newest to oldest.
+> 
 > Starting in the March 2021 Security Update (SU), we also include build numbers for Security Updates.
 >
 > RTM stands for "release to manufacturing" (the first version of the product).
