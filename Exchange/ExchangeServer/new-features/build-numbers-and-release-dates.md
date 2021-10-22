@@ -26,7 +26,7 @@ Links for the available downloads are also included.
 
 > [!NOTE]
 > 
-> Releases are listed from newest to oldest.
+> Releases are listed from the latest release to the earliest release.
 > 
 > Starting in the March 2021 Security Update (SU), we also include build numbers for Security Updates.
 >
