@@ -140,8 +140,13 @@ To switch from Active Directory split permissions to shared permissions, do the 
 
 3. In the Command Prompt window, run the following command:
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the Exchange Server 2016 and Exchange Server 2019 September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
    ```powershell
-   Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /ActiveDirectorySplitPermissions:false
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /ActiveDirectorySplitPermissions:false
    ```
 
 4. In the Exchange Management Shell, run the following commands to add regular role assignments between the Mail Recipient Creation role and Security Group Creation and Management role and the Organization Management and Recipient Management role groups.
