@@ -2,6 +2,26 @@
 
 
 
+## Week of October 18, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/18/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 10/18/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
+| 10/18/2021 | [Recreate missing arbitration mailboxes](/Exchange/architecture/mailbox-servers/recreate-arbitration-mailboxes?view=exchserver-2016) | modified |
+| 10/18/2021 | [Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery](/Exchange/high-availability/disaster-recovery/recover-exchange-servers?view=exchserver-2016) | modified |
+| 10/18/2021 | [Configure Exchange Server for shared permissions](/Exchange/permissions/split-permissions/configure-exchange-for-shared-permissions?view=exchserver-2016) | modified |
+| 10/18/2021 | [Configure Exchange Server for split permissions](/Exchange/permissions/split-permissions/configure-exchange-for-split-permissions?view=exchserver-2016) | modified |
+| 10/18/2021 | [Exchange dev/test environment in Azure](/Exchange/plan-and-deploy/deploy-new-installations/create-azure-test-environments?view=exchserver-2016) | modified |
+| 10/18/2021 | [Delegate the installation of Exchange servers](/Exchange/plan-and-deploy/deploy-new-installations/delegate-installations?view=exchserver-2016) | modified |
+| 10/18/2021 | [Upgrade Exchange to the latest Cumulative Update](/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2016) | modified |
+| 10/18/2021 | [Install the Exchange management tools](/Exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2016) | modified |
+| 10/18/2021 | [Release notes for Exchange Server](/Exchange/release-notes?view=exchserver-2016) | modified |
+| 10/22/2021 | [Digital certificates and encryption in Exchange Server](/Exchange/architecture/client-access/certificates?view=exchserver-2016) | modified |
+| 10/22/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | modified |
+
+
 ## Week of October 11, 2021
 
 
@@ -596,17 +616,3 @@
 | 9/24/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | added |
 | 9/24/2021 | [Use unattended mode in Exchange Setup](/Exchange/plan-and-deploy/deploy-new-installations/unattended-installs?view=exchserver-2016) | modified |
 | 9/24/2021 | [Overview of Exchange services on Exchange servers](/Exchange/plan-and-deploy/deployment-ref/services-overview?view=exchserver-2016) | modified |
-
-
-## Week of September 13, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/14/2021 | [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) | modified |
-| 9/15/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | added |
-| 9/15/2021 | [Update for Universal C Runtime in Windows (KB2999226) not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-kb2999226notinstalled?view=exchserver-2016) | added |
-| 9/15/2021 | [Mitigations Cloud endpoint is not reachable](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-mitigationscloudendpointunreachable?view=exchserver-2016) | added |
-| 9/15/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | modified |
-| 9/15/2021 | [Update for Universal C Runtime in Windows (KB2999226) not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-kb2999226notinstalled?view=exchserver-2016) | modified |
-| 9/15/2021 | [Mitigations Cloud endpoint is not reachable](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-mitigationscloudendpointunreachable?view=exchserver-2016) | modified |
