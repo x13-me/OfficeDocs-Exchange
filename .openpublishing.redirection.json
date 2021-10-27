@@ -850,7 +850,7 @@
       "redirect_url": "/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email",
       "redirect_document_id": false
     }
-   {
+    {
       "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/enable-encryption-and-decryption.md",
       "redirect_url": "/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email",
       "redirect_document_id": false
@@ -858,6 +858,111 @@
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/greetings-announcements-menus-and-prompts.md",
       "redirect_url": "/microsoftteams/what-is-phone-system-in-office-365",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language.md",
+      "redirect_url": "/microsoftteams/create-a-phone-system-auto-attendant",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording.md",
+      "redirect_url": "/microsoftteams/what-is-phone-system-in-office-365",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plan-procedures.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans ",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting.md ",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans ",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan.md",
+      "redirect_url": "/microsoftteams/create-and-manage-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures.md",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
       "redirect_document_id": false
     }
 ]
