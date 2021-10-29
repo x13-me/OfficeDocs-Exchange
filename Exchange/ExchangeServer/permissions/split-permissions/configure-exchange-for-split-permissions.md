@@ -89,8 +89,13 @@ To configure RBAC split permissions, do the following steps:
 
    3. In the Command Prompt window, run the following command to disable Active Directory split permissions:
 
+      > [!NOTE]
+      > - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the Exchange Server 2016 and Exchange Server 2019 September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+      >
+      > - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
       ```
-      Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /ActiveDirectorySplitPermissions:false
+      Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /ActiveDirectorySplitPermissions:false
       ```
 
    4. Restart all Exchange servers in your organization or wait for the Active Directory access token to replicate to all of your Exchange servers.
@@ -222,10 +227,15 @@ To switch from shared or RBAC split permissions to Active Directory split permis
 
 2. In a Windows Command Prompt window, run the following command to enable Active Directory split permissions:
 
+   > [!NOTE]
+   > - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the Exchange Server 2016 and Exchange Server 2019 September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+   >
+   > - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
    ```
-   Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /ActiveDirectorySplitPermissions:true
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /ActiveDirectorySplitPermissions:true
    ```
 
-3. If you have multiple Active Directory domains in your organization, you must either run `Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain` in each child domain that contains Exchange servers or objects or run `Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains` from a site that has an Active Directory server from every domain.
+3. If you have multiple Active Directory domains in your organization, you must either run `Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareDomain` in each child domain that contains Exchange servers or objects or run `Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAllDomains` from a site that has an Active Directory server from every domain.
 
-4. Restart all Exchange servers in your organization or wait for the Active Directory access token to replicate to all of you Exchange 2013 servers.
+4. Restart all Exchange servers in your organization or wait for the Active Directory access token to replicate to all of you Exchange servers.

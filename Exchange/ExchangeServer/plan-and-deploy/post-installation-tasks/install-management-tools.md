@@ -124,14 +124,19 @@ For more information about the Exchange Management Shell, see [Exchange Server P
 
 2. To install the Exchange management tools from the command line, use the following syntax in elevated command prompt (a Command Prompt window you opened by selecting **Run as administrator**):
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
    ```console
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Role:ManagementTools [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
    ```
 
    This example uses the Exchange Setup files on drive E: to install the management tools on the local server
 
    ```console
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Role:ManagementTools
    ```
 
 For more information, see [Install Exchange using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
