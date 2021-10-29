@@ -12,7 +12,6 @@ ms.assetid:
 ms.reviewer: 
 ms.collection: exchange-online
 search.appverid:
-ms.collection:
 ms.custom:
 description: Cloud Voicemail replaces Exchange Unified Messaging (UM) in providing voice messaging functionality. 
 ---
