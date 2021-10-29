@@ -1503,7 +1503,7 @@
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript.md",
       "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor.md",
@@ -1558,12 +1558,12 @@
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-procedures.md",
       "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway.md",
       "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway.md",
@@ -1673,7 +1673,7 @@
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-in-the-same-dial-plan-to-receive-faxes.md",
       "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes.md",
