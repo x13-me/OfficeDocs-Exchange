@@ -169,9 +169,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 - **By default, when an email is sent from an on-premises mailbox to an Outlook group that the user is a member of, the user doesn't receive a copy of that email in their Inbox**: The Exchange Online tenant admin can use the following Exchange Online shell command to ensure the on-premises mailbox user can receive a copy of the email in their Inbox:
 
   ```PowerShell
-  
   Get-MailUser <MEU for On-Premises mailbox> | Set-MailboxMessageConfiguration -EchoGroupMessageBackToSubscribedSender $true
-  
   ```
 - **On-premises users can't send mail as a group**: An on-premises user who tries to send a message as a Microsoft 365 group will receive a permission denied error even if they're given Send As permissions on the group. Send As permissions on a group work only for Exchange Online mailbox users.
 
@@ -179,13 +177,15 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 
 - **Selecting a group from Outlook's left navigation pane doesn't open the group's mailbox for an Exchange Online user**: Outlook uses the AutoDiscover URL to open a group mailbox. If a group's primary email address is in a domain that doesn't point to the Microsoft 365 or Office 365 AutoDiscover URL (autodiscover.outlook.com), Outlook won't be able to open the group's mailbox. To fix this issue, groups can be provisioned with a primary address in a domain that points to the Microsoft 365 or Office 365 AutoDiscover URL. You can configure an email address policy to add a primary email address on each group mailbox that points to that AutoDiscover URL. Check out [Choose the domain to use when creating Microsoft 365 groups](/microsoft-365/admin/create-groups/choose-domain-to-create-groups) for more details.
 
-- **Follow in Inbox**: Typically, a Microsoft 365 group member can select wheter to receive emails sent to group in there Inbox by selecting [Follow in Inbox](https://support.microsoft.com/en-us/office/follow-a-group-in-outlook-e147fc19-f548-4cd2-834f-80c6235b7c36) option in Group settings. However, the users with mailbox still On-Premises cannot access the group setting to select follow in Inbox option. Hence, On-Premises users added to Microsoft 365 group are configured to receive group email and calendars in Inbox, regardless of the related setting configured on the group. A tenant admin can turn off the subscription for such users using following EXO PowerShell command:
+- **Follow in Inbox**: Typically, a Microsoft 365 group member can select wheter to receive email sent to the group in their Inbox by selecting [Follow in Inbox](https://support.microsoft.com/office/follow-a-group-in-outlook-e147fc19-f548-4cd2-834f-80c6235b7c36) option in the settings of the group. However, users with on-premises mailboxes don't have access to the group setting to select the **Follow in Inbox** option. So, on-premises users that are added to Microsoft 365 group are already configured to receive group email and calendars in their Inbox, regardless of the related setting on the group. Admins can turn off the subscription for on-premises users by running following command in Exchange Online PowerShell:
 
   ```PowerShell
-  
-  Remove-UnifiedGroupLinks -Links <username> -LinkType Subscribers -Identity <Name_Of_the_Group>
-  
+  Remove-UnifiedGroupLinks -Identity <GroupIdentity> -LinkType Subscribers -Links <UserIdentity>
   ```
   
-  Example:
+  For example:
+  
+  ```PowerShell
   Remove-UnifiedGroupLinks -Identity Dynamic2 -LinkType Subscribers -Links JohnR
+  ```
+  
