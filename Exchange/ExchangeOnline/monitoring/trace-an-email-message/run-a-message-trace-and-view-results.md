@@ -8,7 +8,7 @@ ms.assetid: 74a9fc59-7e0e-4832-baf9-2a86418b0079
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Run a message trace and view the results in the Exchange admin center
+title: Run a message trace and view the results in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Run a message trace in the classic EAC
+# Run a message trace in the classic EAC in Exchange Online
 
 > [!NOTE]
 > Message trace is available in the modern Exchange admin center. For more information, see [Message trace in the modern Exchange admin center](message-trace-modern-eac.md). The **Exchange message trace** link in the Microsoft 365 Defender portal opens message trace in the modern EAC.
@@ -210,11 +210,7 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
-<br>
-
-****
-
-|Log Information|Description|
+|Log information|Description|
 |---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
 |SFV=SPM|The message was marked as spam by the content filter.|

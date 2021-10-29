@@ -1,5 +1,5 @@
 ---
-title: "Fix slow mail flow rules insight in the new EAC"
+title: "Fix slow mail flow rules insight in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Fix slow mail flow rules insight in the new Exchange admin center to identify and fix inefficient or broken mail flow rules (also known as transport rules) in their organization."
 ---
 
-# Fix slow mail flow rules insight in the new EAC
+# Fix slow mail flow rules insight in the new EAC in Exchange Online
 
 Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization. This insight reports mail flow rules that have an impact on your organization's mail flow. Examples of these types of rules are:
 

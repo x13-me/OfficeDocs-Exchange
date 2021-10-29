@@ -18,6 +18,9 @@ manager: serdars
 
 # Protected Voice Mail procedures in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 [Configure Protected Voice Mail from authenticated callers](configure-protected-voice-mail-from-authenticated-callers.md)
 
 [Configure Protected Voice Mail from unauthenticated callers](configure-protected-voice-mail-from-unauthenticated-callers.md)

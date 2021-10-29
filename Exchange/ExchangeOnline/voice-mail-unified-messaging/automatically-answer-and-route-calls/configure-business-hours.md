@@ -18,6 +18,9 @@ manager: serdars
 
 # Configure business hours in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 When you configure business hours for a Unified Messaging (UM) auto attendant, you define the hours of the day that your organization is open, and the business hours greetings and menu prompts callers will hear when they call an extension number that's configured on the auto attendant. If a caller reaches the auto attendant during hours that are outside the business hours you define, the caller will hear the non-business hours prompts and greetings.
 
 Several default schedule options are available in the EAC. For example, most businesses are open from 8:00 A.M. to 5:00 P.M., Monday through Friday. Sometimes the default options won't fit your needs and you'll want to customize the schedule. If your business hours vary from the schedules defined by the system, you can define a customized schedule for the auto attendant.

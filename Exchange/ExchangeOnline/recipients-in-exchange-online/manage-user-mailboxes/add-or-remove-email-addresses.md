@@ -5,11 +5,11 @@ ms.topic: article
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
-ms.reviewer: 
+ms.reviewer:
 f1.keywords:
 - NOCSH
-title: Add or remove email addresses for a mailbox Exchange Admin Center
-ms.collection: 
+title: Add or remove email addresses for a mailbox in Exchange Online
+ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Add or remove email addresses for a mailbox in Exchange Admin Center
+# Add or remove email addresses for a mailbox in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 
@@ -44,7 +44,8 @@ The procedures in this article show how to add or remove email addresses for a u
 > You can use similar procedures to add or remove email addresses that use plus addressing. For more information about plus addressing, see [Plus Addressing](../../recipients-in-exchange-online/plus-addressing-in-exchange-online.md).
 
 ## Add an email address to a user mailbox
-### Use the new Exchange Admin Center (EAC) to add an email address
+
+### Use the new Exchange admin center (EAC) to add an email address
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -52,22 +53,22 @@ The procedures in this article show how to add or remove email addresses for a u
 
 3. Under **Mailbox** settings \> **Email addresses**, click the **Manage email address types** link.
 
-4. The **Manage email address types** display pane is shown. You can view all the email addresses associated with this user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold. 
+4. The **Manage email address types** display pane is shown. You can view all the email addresses associated with this user mailbox. Each email address type has one default reply address. The default reply address is displayed in bold.
+
     > [!NOTE]
     > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-5. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox. 
-    > [!NOTE]
-    > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
+5. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add email address type**, and then click **SMTP** to add an SMTP email address to this mailbox.
+
+   SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
 
 6. Type the new SMTP address in the **Email address:\*** box, and then click **OK**.
-     The new address is displayed in the list of email addresses for the selected mailbox.
-     
-    > [!NOTE]
-    > You can select the **Make this the reply address** check box if you wish to make this address as the reply address.
+
+   The new address is displayed in the list of email addresses for the selected mailbox.
+
+   You can select the **Make this the reply address** check box if you wish to make this address as the reply address.
 
 7. Click **Save** to save the change.
-
 
 ### Use the Classic EAC to add an email address
 
@@ -82,8 +83,7 @@ The procedures in this article show how to add or remove email addresses for a u
 
 4. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
 
-    > [!NOTE]
-    > SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
+   SMTP is the default email address type. You can also add custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes.md) topic.
 
 5. Type the new SMTP address in the **Email address** box, and then click **OK**.
 
@@ -115,9 +115,13 @@ This example shows another way to add email addresses to a mailbox by specifying
 Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northamerica.contoso.com,danj@tailspintoys.com
 ```
 
+> [!IMPORTANT]
+> Do not make frequent and multiple changes using the _EmailAddress_ parameter. Otherwise, the changes might be lost due to a race condition within the Exchange Online sync infrastructure. As described in the previous example, we recommend adding multiple _EmailAddress_ values in one command. Do not use multiple successive commands to add one _EmailAddress_ value per command.
+
 For detailed syntax and parameter information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## Remove an email address from a user mailbox
+
 ### Use the new EAC to remove an email address
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.

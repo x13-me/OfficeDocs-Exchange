@@ -263,7 +263,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 8. Take DAG member servers out of [maintenance mode](../high-availability/manage-ha/manage-dags.md#performing-maintenance-on-dag-members) by replacing \<ServerName\> with the name of the server and running the following command in the Exchange Management Shell:
 
    ```powershell
-   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active - Requester Maintenance
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
    ```
 
 ### Exchange 2019
@@ -272,7 +272,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ****
 
-|.NET Framework version|CU10 to CU4|CU3, CU2|CU1, RTM|
+|.NET Framework version|CU11 to CU4|CU3, CU2|CU1, RTM|
 |---|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
@@ -284,7 +284,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ****
 
-|.NET Framework version|CU21 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
+|.NET Framework version|CU22 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|

@@ -8,7 +8,7 @@ ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Enable or disable MAPI for a mailbox
+title: Enable or disable MAPI for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Enable or disable MAPI for a mailbox
+# Enable or disable MAPI for a mailbox in Exchange Online
 
 You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook on the web (formerly known as Outlook Web App), a POP email client, or an IMAP client.
 
@@ -76,7 +76,7 @@ For additional management tasks related to managing email client access to a mai
 
 5. Click **Save** to save your change.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
 
@@ -102,7 +102,7 @@ Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
 

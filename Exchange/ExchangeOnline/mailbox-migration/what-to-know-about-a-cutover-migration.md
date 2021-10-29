@@ -6,7 +6,7 @@ ms.author: jhendr
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Microsoft 365 and Office 365.
-title: What you need to know about a cutover email migration
+title: What you need to know about a cutover email migration in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -27,7 +27,7 @@ manager: serdars
 
 ---
 
-# What you need to know about a cutover email migration
+# What you need to know about a cutover email migration in Exchange Online
 
 As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Additionally, this migration method moves mail users, mail contacts, and mail-enabled groups with their membership. Choosing a cutover migration is suggested when:
 

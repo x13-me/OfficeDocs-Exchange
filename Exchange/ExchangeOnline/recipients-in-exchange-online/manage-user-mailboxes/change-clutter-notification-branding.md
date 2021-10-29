@@ -8,7 +8,7 @@ ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Change the branding of Clutter notifications
+title: Change the branding of Clutter notifications in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Change the branding of Clutter notifications
+# Change the branding of Clutter notifications in Exchange Online
 
 > [!TIP]
 > [Focused Inbox](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/admin/setup/configure-focused-inbox.md) is going to replace Clutter. Learn more: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).

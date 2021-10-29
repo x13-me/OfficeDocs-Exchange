@@ -1,5 +1,5 @@
 ---
-title: Configure S/MIME
+title: Configure S/MIME in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -91,7 +91,7 @@ Before anyone can send S/MIME-protected messages in Exchange Online, you need to
 
 S/MIME in Outlook on the web in the Chromium-based [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) or in Google Chrome requires specific policy settings that are configured by an admin.
 
-Specifically, you need to set and configure the policy named **ExtensionInstallForcelist** to install the S/MIME extension in the browser. The policy value is `gamjhjfeblghkihfjdpmbpajhlpmobbp;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`. Applying this policy requires domain-joined or Azure AD-joined devices, so using S/MIME in Edge or Chrome effectively requires domain-joined or Azure AD-joined devices.
+Specifically, you need to set and configure the policy named **ExtensionInstallForcelist** to install the S/MIME extension in the browser. The policy value is `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`. Applying this policy requires domain-joined or Azure AD-joined devices, so using S/MIME in Edge or Chrome effectively requires domain-joined or Azure AD-joined devices.
 
 For details about the policies, see the following topics:
 

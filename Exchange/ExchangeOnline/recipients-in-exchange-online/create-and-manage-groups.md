@@ -1,5 +1,5 @@
 ---
-title: "Create and manage groups in the new Exchange admin center"
+title: Create and manage groups in the new Exchange admin center in Exchange Online
 ms.author: v-bshilpa
 author: Benny
 manager: Serdars
@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 ms.custom:
-description: Create and manage groups in the new Exchange admin center.
+description: "Create and manage groups in the new Exchange admin center."
 ---
 
-# Create and manage groups in the new Exchange admin center
+# Create and manage groups in the new Exchange admin center in Exchange Online
 
 Use the new Exchange admin center (EAC) to create, modify, export, or remove groups in your Exchange Online organization.
 

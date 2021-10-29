@@ -59,6 +59,11 @@ For details about what's happening when Active Directory is being prepared for E
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
 ## Step 1: Extend the Active Directory schema
 
 > [!TIP]
@@ -77,13 +82,13 @@ When you extend the Active Directory schema for Exchange, the following requirem
 To extend the schema for Exchange, run the following command in a Windows Command Prompt window:
 
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareSchema
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareSchema
 ```
 
 > [!NOTE]
@@ -108,13 +113,13 @@ When you prepare Active Directory for Exchange, the following requirements apply
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
 
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD  /OrganizationName:"<Organization name>"
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD  /OrganizationName:"<Organization name>"
 ```
 
 This example uses the Exchange installation files on drive E: and names the Exchange organization "Contoso Corporation".
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Contoso Corporation"
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /OrganizationName:"Contoso Corporation"
 ```
 
 > [!IMPORTANT]
@@ -143,13 +148,13 @@ When you prepare all domains in the Active Directory forest for Exchange, your a
 To prepare all domains in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAllDomains
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAllDomains
 ```
 
 ### Choose the Active Directory domains to prepare
@@ -167,7 +172,7 @@ When you prepare specific domains in your Active Directory forest, the following
 To prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareDomain[:<DomainFQDN>]
 ```
 
 > [!NOTE]
@@ -179,13 +184,13 @@ To prepare a specific domain in your Active Directory forest, run the following 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain:engineering.corp.contoso.com
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareDomain:engineering.corp.contoso.com
 ```
 
 This is the same example, but run on a computer that's a member of the engineering.corp.contoso.com domain:
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareDomain
 ```
 
 ## How do you know this worked?
@@ -216,6 +221,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2019 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2019 CU11|17003|13242|16759|
 |Exchange 2019 CU10|17003|13241|16758|
 |Exchange 2019 CU9|17002|13240|16757|
 |Exchange 2019 CU8|17002|13239|16756|
@@ -242,6 +248,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |Exchange 2016 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
+|Exchange 2016 CU22|15334|13242|16222|
 |Exchange 2016 CU21|15334|13241|16221|
 |Exchange 2016 CU20|15333|13240|16220|
 |Exchange 2016 CU19|15333|13239|16219|

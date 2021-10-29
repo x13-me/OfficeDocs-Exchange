@@ -16,6 +16,10 @@ title: Review the voice mail calls in your organization in Exchange Online
 ---
 
 # Review the voice mail calls in your organization in Exchange Online
+
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 You can use the Call Statistics report to view information about the type and status of incoming calls handled by the Exchange servers in your organization. The report provides statistical information about the calls forwarded to or placed by Unified Messaging (UM) for your organization. You can use this information to track usage for capacity planning, monitor and troubleshoot the availability and audio quality of UM, and to troubleshoot failed calls.
 
 For additional tasks related to UM reporting, see [UM reports procedures](um-reports-procedures.md).

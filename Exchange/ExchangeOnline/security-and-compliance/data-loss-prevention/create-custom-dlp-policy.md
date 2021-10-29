@@ -8,7 +8,7 @@ ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create a custom DLP policy
+title: Create a custom DLP policy in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar

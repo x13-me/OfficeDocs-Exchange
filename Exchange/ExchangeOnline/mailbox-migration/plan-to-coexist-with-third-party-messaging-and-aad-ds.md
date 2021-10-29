@@ -4,8 +4,8 @@ ms.topic: conceptual
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: 3bce1321-0bff-40dc-92e1-52c5b955cdf5
-description: "Admins can lear about cross-premises email with an on-premises email system other than Exchange and Exchange Online."
-title: Plan to coexist with a third-party messaging system using Active Directory Domain Services
+description: "Admins can learn about cross-premises email with an on-premises email system other than Exchange and Exchange Online."
+title: Plan for third-party email coexistence with Microsoft 365 or Office 365 and Azure Active Directory
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -207,4 +207,4 @@ Here are some third-party migration tools and partners that can assist with Exch
 
 If you've already deployed a cross-premises mail routing environment as described in this topic, the users that you've created in the cloud with directory synchronization are mail-enabled users.
 
-To provision mailboxes for these users, license them for Exchange Online in the Microsoft 365 admin console. For more information, see [Sync with existing users in Azure AD](/azure/active-directory/hybrid/how-to-connect-install-existing-tenant#sync-with-existing-users-in-azure-ad)
+To provision mailboxes for these users, license them for Exchange Online in the Microsoft 365 admin console. For more information, see [Sync with existing users in Azure AD](/azure/active-directory/hybrid/how-to-connect-install-existing-tenant#sync-with-existing-users-in-azure-ad).

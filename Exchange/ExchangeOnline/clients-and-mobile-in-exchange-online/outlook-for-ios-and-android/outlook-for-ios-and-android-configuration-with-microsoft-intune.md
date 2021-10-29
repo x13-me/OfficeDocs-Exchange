@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
-title: Deploying Outlook for iOS and Android app configuration settings
+title: Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 mms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Deploying Outlook for iOS and Android app configuration settings
+# Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 
  **Summary**: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.
 
@@ -38,9 +38,9 @@ App configuration can be delivered either through the mobile device management O
 Each configuration scenario highlights its specific requirements. For example, whether the configuration scenario requires device enrollment, and thus works with any UEM provider, or requires Intune App Protection Policies. The following flow chart outlines which channel needs to be used for the above configuration scenarios:
 
 > [!NOTE]
-> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
+> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy (APP) channel is referred to as a **Managed Apps** App Configuration Policy.
 
-![Flowchart of the process.](../../media/acp_flowchart.png)
+![Flowchart of the process.](../../media/acp-flowchart-v2.png)
 
 ## Account configuration scenarios
 
@@ -348,6 +348,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
     - Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - If needed, deploy a **LDAP URL** for recipient certificate lookup. For more information on the URL format, see [LDAP support for certificate lookup](smime-outlook-for-ios-and-android.md#ldap-support-for-certificate-lookup).
 
 11. When you are finished configuring the settings, choose **Next**.
 
@@ -464,7 +465,7 @@ Outlook for iOS offers administrators the ability to customize the default S/MIM
 |com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: true <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail|This key specifies whether S/MIME signing is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: false <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: true <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.SMIMEEnabled.LDAPHostName|This key specifies the LDAP directory endpoint to query for certificates.<p> **Value type**: String <p> **Accepted values**: ldaps://domainname:protocol, domainname:protocol <p> **Default if not specified**: N/A <p> **Required**: No <p> **Example**: `ldaps://contoso.com` <p> contoso.com <p> `ldaps://contoso.com:636` <p> contoso.com:636|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.LDAPHostName|This key specifies the LDAP directory endpoint to query for certificates.<p> **Value type**: String <p> **Accepted values**: ldap://domainname:protocol, ldaps://domainname:protocol, domainname:protocol <p> **Default if not specified**: N/A <p> **Required**: No <p> **Example**: ldap://contoso.com <p> ldaps://contoso.com <p> contoso.com <p> ldaps://contoso.com:636 <p> contoso.com:636|Managed Devices, Managed Apps|
 |
 
 ### Data protection settings

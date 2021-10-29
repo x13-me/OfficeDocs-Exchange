@@ -14,11 +14,11 @@ description: 'Summary: Use these procedures to move your Exchange 2010 public fo
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
+title: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365
 
 ---
 
-# Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
+# Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365
 
  **Summary**: Use these procedures to move your Exchange 2010 public folders to Microsoft 365 or Office 365.
 
@@ -26,7 +26,7 @@ This topic describes how to migrate your public folders in a cutover or staged m
 
 This topic refers to the Exchange 2010 SP3 RU8 server as the legacy Exchange server. Also, the steps in this topic apply to both Exchange Online and Microsoft 365 or Office 365. The terms may be used interchangeably in this topic.
 
-We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 or Exchange Online. Microsoft 365, Office 365, and Exchange online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that you use the cmdlet-based instructions in this document to migrate public folders to Microsoft 365, Office 365, or Exchange Online. However, if you elect to migrate public folders using PST export, see the [Migrate Public Folders to Microsoft 365 or Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export) section later in this topic.
+We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365 or Office 365 or Exchange Online. Microsoft 365, Office 365, and Exchange Online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that you use the cmdlet-based instructions in this document to migrate public folders to Microsoft 365, Office 365, or Exchange Online. However, if you elect to migrate public folders using PST export, see the [Migrate Public Folders to Microsoft 365 or Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export) section later in this topic.
 
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts:
 
@@ -86,7 +86,7 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
-- Please verify if the DefaultPublicFolderAgeLimit is configured on the organization level (Get-OrganizationConfig | fl DefaultPublicFolderAgeLimit) or if you have any AgeLimit (Get-PublicFolder <FolderPath> | fl AgeLimit) configured for the individual Public Folders, so that automatic deletions of the content to be prevented.
+- Please verify if the DefaultPublicFolderAgeLimit is configured on the organization level (`Get-OrganizationConfig | Format-List DefaultPublicFolderAgeLimit`) or if you have any AgeLimit (`Get-PublicFolder <FolderPath> | Format-List AgeLimit`) configured for the individual Public Folders, so that automatic deletions of the content to be prevented.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
@@ -100,7 +100,6 @@ If you use a firewall and access control lists (ACLs), ensure that the [IP range
 3. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
 
     - `Sync-MailPublicFolders.ps1`
-
     - `SyncMailPublicFolders.strings.psd1`
 
 4. Download the source side validation script from https://www.microsoft.com/download/confirmation.aspx?id=100414
@@ -117,9 +116,7 @@ Perform the following prerequisite steps before you begin the migration.
 ### General prerequisite steps
 
 - Make sure that there are no orphaned public folder mail objects in Active Directory, meaning objects in Active Directory without a corresponding Exchange object.
-
 - Confirm that SMTP email address configured for public folders in Active Directory match the SMTP email addresses on the Exchange objects.
-
 - Make sure that there are no duplicate public folder objects in Active Directory, to avoid a situation where two or more Active Directory objects are pointing to the same mail-enabled public folder.
 
 ### Prerequisite steps on the legacy Exchange server
@@ -138,6 +135,7 @@ Perform the following prerequisite steps before you begin the migration.
    ```PowerShell
    New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName 'contoso.mail.onmicrosoft.com' -DomainType InternalRelay
    ```
+
    If the accepted domain already exists in your on-premises environment, rename it to PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 and leave the other attributes intact.
 
    To check if the accepted domain is already present in your on-premises environment, run the following:
@@ -145,12 +143,13 @@ Perform the following prerequisite steps before you begin the migration.
    ```PowerShell
    Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
    ```
+
    To rename the accepted domain to PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99, run the following:
 
    ```PowerShell
    Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
    ```
-    
+
    If you're expecting your mail-enabled public folders in Exchange Online to receive external emails from the Internet, you have to disable Directory Based Edge Blocking (DBEB) in Exchange Online and Exchange Online Protection (EOP). See [Use Directory Based Edge Blocking](../../mail-flow-best-practices/use-directory-based-edge-blocking.md) to reject messages sent to invalid recipients for more information.
 
    If the name of a public folder contains a backslash ( **\\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name.
@@ -210,11 +209,11 @@ Perform the following prerequisite steps before you begin the migration.
 
    1. On an on-premises computer, open Microsoft Azure Active Directory Connect, and then select **Configure**.
 
-   1. On the **Additional tasks** screen, select **Customize synchronization options**, and then click **Next**.
+   2. On the **Additional tasks** screen, select **Customize synchronization options**, and then click **Next**.
 
-   1. On the **Connect to Azure AD** screen, enter the appropriate credentials, and then click **Next**. Once connected, keep clicking **Next** until you are on the **Optional Features** screen.
+   3. On the **Connect to Azure AD** screen, enter the appropriate credentials, and then click **Next**. Once connected, keep clicking **Next** until you are on the **Optional Features** screen.
 
-   1. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can continue to the next section, *Prerequisite steps in Microsoft 365, Office 365, or Exchange Online*. If it is selected, click to clear the check box, and then click **Next**.
+   4. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can continue to the next section, *Prerequisite steps in Microsoft 365, Office 365, or Exchange Online*. If it is selected, click to clear the check box, and then click **Next**.
 
       > [!NOTE]
       > If you don't see **Exchange Mail Public Folders** as an option on the **Optional Features** screen, you can exit Microsoft Azure Active Directory Connect and proceed to the next section, *Prerequisite steps in Microsoft 365, Office 365, or Exchange Online*.
@@ -224,19 +223,12 @@ Perform the following prerequisite steps before you begin the migration.
 For detailed syntax and parameter information, see the following topics:
 
 - [New-AcceptedDomain](/powershell/module/exchange/new-accepteddomain)
-
 - [Get-PublicFolder](/powershell/module/exchange/get-publicfolder)
-
 - [Get-PublicFolderDatabase](/powershell/module/exchange/get-publicfolderdatabase)
-
 - [Set-PublicFolder](/powershell/module/exchange/set-publicfolder)
-
 - [Get-PublicFolderStatistics](/powershell/module/exchange/get-publicfolderstatistics)
-
 - [Get-PublicFolderClientPermission](/powershell/module/exchange/get-publicfolderclientpermission)
-
 - [Get-OrganizationConfig](/powershell/module/exchange/Get-OrganizationConfig)
-
 - [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps in Microsoft 365, Office 365, or Exchange Online
@@ -296,21 +288,13 @@ Get-Mailbox -PublicFolder:$true | Where-Object {$_.ExchangeGuid -eq $hierarchyMa
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch)
-
 - [Get-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
-
 - [Remove-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
-
 - [Get-Mailbox](/powershell/module/exchange/get-mailbox)
-
 - [Get-PublicFolder](/powershell/module/exchange/get-publicfolder)
-
 - [get-MailPublicFolder](/powershell/module/exchange/get-mailpublicfolder)
-
 - [Disable-MailPublicFolder](/powershell/module/exchange/disable-mailpublicfolder)
-
 - [remove-PublicFolder](/powershell/module/exchange/remove-publicfolder)
-
 - [Remove-Mailbox](/powershell/module/exchange/remove-mailbox)
 
 ## Step 3: Generate the .csv files
@@ -371,6 +355,7 @@ Run the following command to create the target public folder mailboxes. The scri
 ```PowerShell
 .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
 ```
+
 _Mapping.csv_ is the file generated by the `PublicFoldertoMailboxMapGenerator.ps1` script in Step 3. The estimated number of simultaneous user connections browsing a public folder hierarchy is usually less than the total number of users in an organization.
 
 > [!NOTE]
@@ -450,9 +435,9 @@ _Mapping.csv_ is the file generated by the `PublicFoldertoMailboxMapGenerator.ps
    ```
 
    Where the \<_folder_mapping.csv_\> file is the file that was generated in [Step 3: Generate the .csv files](#step-3-generate-the-csv-files).
-   
+
       > [!NOTE]
-You may notice the above command failing with the error "Cannot find a recipient that has mailbox GUID" error, with the GUID mentioned of public folder mailbox in EXO. This can happen because of AD replication latency. In such case, wait for an hour and retry the command again.
+      > You may notice the above command failing with the error "Cannot find a recipient that has mailbox GUID" error, with the GUID mentioned of public folder mailbox in EXO. This can happen because of AD replication latency. In such case, wait for an hour and retry the command again.
 
 5. Start the migration using the following command:
 
@@ -489,15 +474,19 @@ For detailed syntax and parameter information, see the following topics:
 Until this point in the migration process, users have been able to access public folders. The next steps will log users off from the legacy public folders and lock the folders while the migration completes its final synchronization. Users won't be able to access public folders during this process. Also, any mail sent to mail-enabled public folders will be queued and won't be delivered until the public folder migration is complete.
 
 > [!NOTE]
->The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion. It is recommended to plan for miniumum of 48 hours of downtime for the final sync to complete
+>The final sync may take substantial amount of time, depending on the changes made on the source environment, size of public folder deployment, server capacity etc. If the folder hierarchy had lots of corrupt ACLs and those were not cleaned up before starting migration, this can cause significant delay in the completion. It is recommended to plan for a minimum of 48 hours of downtime for the final sync to complete.
 
 Ensure the migration batch and individual migration requests have successfully synced.
 
-Run the following command in EXO PowerShell to get the details:
+Run the following commands in Exchange Online PowerShell to get the details:
 
-`Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | ft *last*sync*`
+```powershell
+Get-MigrationBatch |?{$_.MigrationType -like "*PublicFolder*"} | Format-Table *last*sync*
+```
 
-`Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics |ft targetmailbox,*last*sync*`
+```powershell
+Get-PublicFolderMailboxMigrationRequest | Get-PublicFolderMailboxMigrationRequestStatistics | Format-Table targetmailbox,*last*sync*
+```
 
 The LastSyncedDate (on migration batch) and LastSuccessfulSyncTimestamp (on individual jobs) should be within last 7 days. If it is too far off, like older than a month or so, you may want to take a look at public folder migration requests and ensure all the requests were synced recently.
 
@@ -518,6 +507,7 @@ To complete the public folder migration, run the following command:
 ```PowerShell
 Complete-MigrationBatch PublicFolderMigration
 ```
+
 > [!IMPORTANT]
 > After a migration batch is completed, no additional data can be synchornized from Exchange servers on-premises and Exchange Online.
 
@@ -540,13 +530,9 @@ After you finalize the public folder migration, you should run the following tes
    ```
 
 2. Log on to Outlook 2010 or later with the test user identified in the previous step, and then perform the following public folder tests:
-
    - View the hierarchy.
-
    - Check permissions.
-
    - Create and delete public folders.
-
    - Post content to and delete content from a public folder.
 
 3. If you run into any issues, see [Roll back the migration](#roll-back-the-migration) later in this article. If the public folder content and hierarchy is acceptable and functions as expected, continue to the next step.

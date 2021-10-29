@@ -18,6 +18,9 @@ manager: serdars
 
 # Navigating menus with Outlook Voice Access in Exchange Online
 
+> [!NOTE]
+> Cloud Voicemail takes the place of Exchange Unified Messaging (UM) in providing voice messaging functionality for Skype for Business 2019 voice users who have mailboxes on Exchange Server 2019 or Exchange Online, and for Microsoft Teams or Skype for Business Online voice users. For more information, see [Plan Cloud Voicemail service](/skypeforbusiness/hybrid/plan-cloud-voicemail) and [Retiring Unified Messaging in Exchange Online](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Retiring-Unified-Messaging-in-Exchange-Online/ba-p/608991).
+
 Outlook Voice Access is a feature in Unified Messaging (UM) that enables users to retrieve email and voice mail messages and manage their calendar and personal contacts by using an analog, digital, or mobile telephone. They can interact with their mailbox using their telephone keypad or voice commands, but must use the keypad on their telephone to search for a user in the directory for your organization.
 
 When UM-enabled users call in to an Outlook Voice Access number, they can sign in to their mailbox using a telephone and are presented with a series of voice prompts. These voice prompts help them navigate the voice mail system menus and enable them to access their mailbox. Outlook Voice Access lets users do the following:

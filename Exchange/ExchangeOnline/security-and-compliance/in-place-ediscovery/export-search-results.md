@@ -8,7 +8,7 @@ ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Export eDiscovery search results to a PST file
+title: Export eDiscovery search results to a PST file in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Export eDiscovery search results to a PST file in the Exchange admin center
+# Export eDiscovery search results to a PST file in the Exchange admin center in Exchange Online
 
 You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Administrators can distribute the results of the search to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications. This topic shows you how to do this, as well as troubleshoot any issues you might have.
 
@@ -29,30 +29,21 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - The computer you use to export search results to a PST file must meet the following system requirements:
-
   - 32- or 64-bit versions of Windows 7 and later versions
-
   - Microsoft .NET Framework 4.7
-
   - A supported browser:
-
-  - Internet Explorer 10 and later versions
+    - Internet Explorer 10 and later versions
 
     OR
 
-  - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/firefox/search/?q=ClickOnce&cat=1%2C0&appver=&platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
+    - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/firefox/search/?q=ClickOnce&cat=1%2C0&appver=&platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
 
 - You need an active mailbox attached to the account you wish to export.
-
-- Ensure that the local Intranet settings are setup correctly in Internet Explorer. Make sure that https://\*.outlook.com is added to the Local intranet zone.
-
+- Ensure that the local Intranet settings are setup correctly in Internet Explorer. Make sure that `https://*.outlook.com` is added to the Local intranet zone.
 - Make sure the following URLS are not listed in the Trusted sites zone:
-
-  - https://\*.outlook.com
-
-  - https://r4.res.outlook.com
-
-  - https://\*.res.outlook.com
+  - `https://*.outlook.com`
+  - `https://r4.res.outlook.com`
+  - `https://*.res.outlook.com`
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -105,8 +96,13 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 ## Troubleshooting
 
-|**Symptom**|**Possible cause**|
-|:-----|:-----|
-|Cannot export to a PST file.| There is no active mailbox attached to the account. To export the PST, you must have an active account. <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser. <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](/microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log).|
+<br>
+
+****
+
+|Symptom|Possible cause|
+|---|---|
+|Cannot export to a PST file.| There is no active mailbox attached to the account. To export the PST, you must have an active account. <p>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser. <p>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](/microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log).|
 |Unable to export search results on a specific machine. Export works as expected on a different machine.|The wrong Windows credentials were saved in the **Credential Manager**. Clear your credentials and log in again.|
-|eDiscovery PST Export Tool won't start.|Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites. <br/> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/windows/security-zones-adding-removing-websites#1TC=windows-7).|
+|eDiscovery PST Export Tool won't start.|Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites. <p> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/windows/security-zones-adding-removing-websites#1TC=windows-7).|
+|

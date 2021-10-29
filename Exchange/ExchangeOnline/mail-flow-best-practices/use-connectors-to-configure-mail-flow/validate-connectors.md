@@ -8,7 +8,7 @@ ms.assetid: 7805c2f9-302d-4409-a57f-2b4d8296cd5e
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Validate connectors
+title: Validate connectors in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Validate connectors
+# Validate connectors in Exchange Online
 
 If your organization has its own email server (also called on-premises server), you must set up connectors to enable mail flow between Microsoft 365 or Office 365 and your email server. For mail flow to work correctly, your connectors must be validated and turned on. Connector validation runs as part of the connector setup process. This article helps if you want to validate your connectors at a different time, or if you want to understand more about the process. Use built-in connector validation to test whether a connector is set up correctly and fix any mail flow issues before you turn the connector on.
 

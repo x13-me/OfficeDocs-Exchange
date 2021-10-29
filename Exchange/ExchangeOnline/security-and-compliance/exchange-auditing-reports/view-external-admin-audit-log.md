@@ -8,7 +8,7 @@ ms.assetid: 31892014-c921-45fd-9775-7a1ef40e3517
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: View and export the external admin audit log
+title: View and export the external admin audit log in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,10 @@ manager: serdars
 
 ---
 
-# View and export the external admin audit log
+# View and export the external admin audit log in Exchange Online
+
+> [!NOTE]
+> Classic Exchange admin center is in the process of being deprecated in worldwide deployment. We recommend that you search the audit log in the Microsoft 365 compliance center. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358) and [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 In Exchange Online, actions performed by Microsoft and delegated administrators are logged in the admin audit log. You can use the Exchange admin center (EAC) or Exchange Online PowerShell to search for and view audit log entries to determine if external administrators performed any actions on or changed the configuration of your Exchange Online organization. You can also use Exchange Online PowerShell to export these audit log entries.
 

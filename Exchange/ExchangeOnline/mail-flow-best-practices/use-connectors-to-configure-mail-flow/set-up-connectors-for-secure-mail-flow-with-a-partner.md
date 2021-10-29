@@ -8,7 +8,7 @@ ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Set up connectors for secure mail flow with a partner organization
+title: Set up connectors for secure mail flow with a partner organization in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Set up connectors for secure mail flow with a partner organization
+# Set up connectors for secure mail flow with a partner organization in Exchange Online
 
 You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
 
