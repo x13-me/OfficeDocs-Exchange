@@ -851,11 +851,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Exchange/ExchangeOnline/security-and-compliance/mail-flow-rules/enable-encryption-and-decryption.md",
-      "redirect_url": "/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/greetings-announcements-menus-and-prompts.md",
       "redirect_url": "/microsoftteams/what-is-phone-system-in-office-365",
       "redirect_document_id": false
