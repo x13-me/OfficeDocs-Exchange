@@ -1625,5 +1625,190 @@
       "redirect_url": "/microsoftteams/what-are-dial-plans",
       "redirect_document_id": false
     }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-dialing-rules.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-auto-attendant-callers.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users.md",
+      "redirect_url": "/microsoftteams/what-are-dial-plans",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/fax-advisor-for-exchange-um.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/faxing-procedures.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    } 
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-partner-fax-server-uri-to-allow-faxing.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/include-text-with-the-email-sent-when-a-fax-message-is-received.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-in-the-same-dial-plan-to-receive-faxes.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-faxing-for-a-group-of-users.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-faxing-for-a-group-of-users.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-user-to-receive-faxes.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-policies.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/reset-a-voice-mail-pin.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/retrieve-voice-mail-pin-information.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/include-text-in-email-sent-when-pin-is-reset.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-minimum-pin-length.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-lifetime.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-previous-pins-to-recycle.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/disable-common-pin-patterns.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/enable-common-pin-patterns.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-pin-reset.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-lock-out.md",
+      "redirect_url": "https://support.microsoft.com/office/set-up-your-voice-mail-b0d849d3-dd36-46b2-b845-ab1f1a72c647",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-organization.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records.md",
+      "redirect_url": "/microsoftteams/set-up-call-analytics",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/um-and-voice-mail-terminology.md",
+      "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
+      "redirect_document_id": true
+    }
 ]
 }
