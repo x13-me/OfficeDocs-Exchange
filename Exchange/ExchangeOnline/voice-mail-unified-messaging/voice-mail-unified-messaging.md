@@ -1,19 +1,22 @@
 ---
-ms.localizationpriority: medium
-description: Cloud Voicemail replaces Exchange Unified Messaging (UM) in providing voice messaging functionality. 
-ms.topic: article
-author: JoanneHendrickson
+title: Voice mail in Exchange Online Unified Messaging
 ms.author: jhendr
+author: JoanneHendrickson
+manager: Serdars
+audience: ITPro
+f1.keywords:
+ms.topic: article
+ms.service: exchange-online
+ms.localizationpriority: medium
 ms.assetid: 7ddf1356-d4c0-41c7-a495-101633ae2f50
 ms.reviewer: 
 f1.keywords:s
 - NOCSH
-title: Voice mail in Exchange Online Unified Messaging
 ms.collection: exchange-online
-audience: ITPro
-ms.service: exchange-online
-manager: serdars
-
+search.appverid:
+ms.collection:
+ms.custom:
+description: Cloud Voicemail replaces Exchange Unified Messaging (UM) in providing voice messaging functionality. 
 ---
 
 # Voice mail in Exchange Online: Unified Messaging
