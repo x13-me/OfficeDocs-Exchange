@@ -972,7 +972,7 @@
     },
     {
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/microsoftteams/pstn-connectivity",
+      "redirect_url": "/microsoftteams/pstn-connectivity",
       "redirect_document_id": false
     },
     {
