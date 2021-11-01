@@ -157,8 +157,13 @@ For more information about how mail flow rules inspect message attachments, see 
 
 ### Any recipients
 
-> [!NOTE]
-> In Exchange Online, the **Any recipient address** conditions and exceptions behave exactly the same as the corresponding **Recipient address** conditions and exceptions as described [earlier in this article](#recipients).
+The conditions and exceptions in this section provide a unique capability that affects *all* recipients when the message contains at least one of the specified recipients. For example, let's say you have a rule that rejects messages. If you use a recipient condition from the [Recipients](#recipients) section, the message is only rejected for those specified recipients. For example, if the rule finds the specified recipient in a message, but the message contains five other recipients. The message is rejected for that one recipient, and is delivered to the five other recipients.
+
+If you add a recipient condition from this section, that same message is rejected for the detected recipient and the five other recipients.
+
+Conversely, a recipient exception from this section *prevents* the rule action from being applied to *all* recipients of the message, not just for the detected recipients.
+
+ **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address. Also, This condition is applied to all recipients on the current fork only. If the message was bifurcated by any other action such as Anti-malware or preceding mail flow rule, mail flow actions will be applied on the matching fork only. 
 
 <br>
 
