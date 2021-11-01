@@ -263,7 +263,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 8. Take DAG member servers out of [maintenance mode](../high-availability/manage-ha/manage-dags.md#performing-maintenance-on-dag-members) by replacing \<ServerName\> with the name of the server and running the following command in the Exchange Management Shell:
 
    ```powershell
-   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active - Requester Maintenance
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
    ```
 
 ### Exchange 2019
