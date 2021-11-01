@@ -2,6 +2,19 @@
 
 
 
+## Week of October 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/26/2021 | [Fix email delivery issues for error code 550 5.4.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-4-1-in-exchange-online) | modified |
+| 10/26/2021 | [Turn off access to the Exchange admin center](/Exchange/architecture/client-access/disable-exchange-admin-center-access?view=exchserver-2016) | modified |
+| 10/26/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
+| 10/28/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
+| 10/28/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 10/28/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
+
+
 ## Week of October 18, 2021
 
 
@@ -597,22 +610,3 @@
 | 10/1/2021 | [Verify Exchange Server installations](/Exchange/plan-and-deploy/post-installation-tasks/verify-installation?view=exchserver-2016) | modified |
 | 10/1/2021 | [S/MIME settings in Outlook on the web](/Exchange/policy-and-compliance/smime/smime-settings-for-owa?view=exchserver-2016) | modified |
 | 10/1/2021 | [Release notes for Exchange Server](/Exchange/release-notes?view=exchserver-2016) | modified |
-
-
-## Week of September 20, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/20/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | modified |
-| 9/20/2021 | [Update for Universal C Runtime in Windows (KB2999226) not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-kb2999226notinstalled?view=exchserver-2016) | modified |
-| 9/20/2021 | [Mitigations Cloud endpoint is not reachable](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-mitigationscloudendpointunreachable?view=exchserver-2016) | modified |
-| 9/21/2021 | [Add a SIP address in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address) | modified |
-| 9/22/2021 | [Mail flow reports in the new EAC](/Exchange/monitoring/mail-flow-reports/mail-flow-reports) | modified |
-| 9/22/2021 | [Auto forwarded messages report in the new EAC](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
-| 9/22/2021 | [IIS URL Rewrite Module not installed](/Exchange/plan-and-deploy/deployment-ref/ms-exch-setupreadiness-iisurlrewritenotinstalled?view=exchserver-2016) | modified |
-| 9/23/2021 | [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) | modified |
-| 9/24/2021 | [Diagnostic Data collected for Exchange Server](/Exchange/diagnostic-data-exchange-server?view=exchserver-2016) | added |
-| 9/24/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | added |
-| 9/24/2021 | [Use unattended mode in Exchange Setup](/Exchange/plan-and-deploy/deploy-new-installations/unattended-installs?view=exchserver-2016) | modified |
-| 9/24/2021 | [Overview of Exchange services on Exchange servers](/Exchange/plan-and-deploy/deployment-ref/services-overview?view=exchserver-2016) | modified |
