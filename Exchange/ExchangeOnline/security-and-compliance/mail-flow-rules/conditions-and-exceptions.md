@@ -163,7 +163,10 @@ If you add a recipient condition from this section, that same message is rejecte
 
 Conversely, a recipient exception from this section *prevents* the rule action from being applied to *all* recipients of the message, not just for the detected recipients.
 
- **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address. Also, This condition is applied to all recipients on the current fork only. If the message was bifurcated by any other action such as Anti-malware or preceding mail flow rule, mail flow actions will be applied on the matching fork only. 
+> [!NOTE]
+> These conditions don't consider messages that are sent to recipient proxy addresses. They only match messages that are sent to the recipient's primary email address.
+>
+> These conditions are applied to all recipients in the current fork of the message only. If the message was bifurcated by any other action (for example, anti-malware or an erlier mail flow rule), the action will be applied on the matching fork only. 
 
 <br>
 
