@@ -59,4 +59,4 @@ For each of these change types, the report includes the user who made the change
 To verify that you've successfully run a litigation hold report, mailboxes that had litigation hold changes within the date range are displayed in the search results pane. If there are no results, then no changes to litigation hold have taken place within the date range or recent changes haven't taken effect yet.
 
 > [!NOTE]
-> When a mailbox is put on litigation hold, it can take up to 60 minutes for the hold to take effect.
+> When a mailbox is put on litigation hold, it can take up to 240 minutes for the hold to take effect.
