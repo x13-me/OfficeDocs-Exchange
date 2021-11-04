@@ -28,9 +28,9 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

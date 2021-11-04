@@ -4,6 +4,7 @@ TOCTitle: Can't install Exchange 2013 in a forest containing Exchange 2000 or Ex
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)
 ms:contentKeyID: 49090987
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

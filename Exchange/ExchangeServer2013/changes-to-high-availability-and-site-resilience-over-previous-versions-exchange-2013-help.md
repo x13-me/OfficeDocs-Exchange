@@ -4,6 +4,7 @@ TOCTitle: Changes to high availability and site resilience over previous version
 ms:assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms:mtpsurl: https://technet.microsoft.com/library/Dn789066(v=EXCHG.150)
 ms:contentKeyID: 62523708
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -139,10 +140,10 @@ Even in JBOD environments, storage array controllers can have issues, such as cr
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -178,10 +179,10 @@ Exchange 2013 enhances server and storage resilience by including new behaviors 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
