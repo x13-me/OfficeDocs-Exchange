@@ -206,9 +206,7 @@ The settings allow organizations to control the contact fields that synchronize 
 
 ### Configure Calendar Sync availability with Outlook for Android
 
-Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account.
-
-Organizations have several controls for managing *Sync Calendars* with the work or school account:
+Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account:
 
 - With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Block**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account and their associated App Configuration Policy settings are ignored.
 - When the Intune App Protection Policy setting **Sync policy managed app data with native apps** is set to **Allow**, organizations can also choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
