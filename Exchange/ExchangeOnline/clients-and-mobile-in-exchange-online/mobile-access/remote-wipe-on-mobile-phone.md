@@ -59,7 +59,7 @@ Since Outlook for iOS and Android appears as a single mobile device association 
 > [!NOTE]
 > The classic EAC will be fully deprecated by September 2022. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358).
 > 
-> This setting is not available on the modern EAC. If the classic EAC was deprecated, you must use [Exchange Online PowerShell](#use-exchange-online-powershell-to-wipe-a-users-phone).
+> This setting is not available on the new EAC. If the classic EAC was deprecated, you must use [Exchange Online PowerShell](#use-exchange-online-powershell-to-wipe-a-users-phone).
 
 You can use the classic EAC to wipe a user's phone or cancel a remote wipe that has not yet completed.
 
