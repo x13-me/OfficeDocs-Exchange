@@ -24,8 +24,8 @@ The path you need to follow to install Exchange 2013 in your organization depend
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
