@@ -4,6 +4,7 @@ TOCTitle: Change the location of the queue database
 ms:assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125177(v=EXCHG.150)
 ms:contentKeyID: 50646241
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -25,8 +26,8 @@ The location of the queue database and the queue database transaction logs is co
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -4,6 +4,7 @@ TOCTitle: 'Checklist: Upgrade from Exchange 2010'
 ms:assetid: 06c1045a-5fcf-4e24-a901-1a979302fb8d
 ms:mtpsurl: https://technet.microsoft.com/library/Ee332309(v=EXCHG.150)
 ms:contentKeyID: 50873999
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -32,9 +33,9 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
