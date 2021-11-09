@@ -4,7 +4,8 @@ TOCTitle: Configure an accepted domain within your Exchange organization as auth
 ms:assetid: e182d54f-e58a-47ba-a5c1-28c0dfa86eed
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657734(v=EXCHG.150)
 ms:contentKeyID: 49300733
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150572(v=EXCHG.150)
 ms:contentKeyID: 47560112
 ms.reviewer: 
 manager: serdars
+ms.topic: article
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -27,8 +28,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col="width: 50%" />
+<col="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">

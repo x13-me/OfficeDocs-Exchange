@@ -7,6 +7,7 @@ ms:contentKeyID: 50117637
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -59,10 +60,10 @@ The configuration for agents is stored at the organization level. When you enabl
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -152,9 +153,9 @@ The `Scripting agent` configuration file contains all the scripts that you want 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

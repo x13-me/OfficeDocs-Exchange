@@ -7,6 +7,7 @@ ms:contentKeyID: 49352361
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -33,8 +34,8 @@ All cmdlets in the Shell are presented in verb-noun pairs. The verb-noun pair is
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

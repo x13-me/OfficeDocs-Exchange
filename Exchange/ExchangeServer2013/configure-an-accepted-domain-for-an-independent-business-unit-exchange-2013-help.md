@@ -4,7 +4,8 @@ TOCTitle: Configure an accepted domain for an independent business unit
 ms:assetid: bc95dbdc-3669-4c06-ab94-90093bc0dbfd
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657491(v=EXCHG.150)
 ms:contentKeyID: 49289397
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

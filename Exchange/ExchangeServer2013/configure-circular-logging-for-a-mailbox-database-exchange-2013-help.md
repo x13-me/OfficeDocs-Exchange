@@ -7,6 +7,7 @@ ms:contentKeyID: 62524835
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH

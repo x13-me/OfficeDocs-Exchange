@@ -2,6 +2,7 @@
 title: 'Configuration notes for supported VoIP gateways, IP PBXs, and PBXs: Exchange 2013 Help'
 TOCTitle: Configuration notes for supported VoIP gateways, IP PBXs, and PBXs
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 manager: serdars
 ms.reviewer: 

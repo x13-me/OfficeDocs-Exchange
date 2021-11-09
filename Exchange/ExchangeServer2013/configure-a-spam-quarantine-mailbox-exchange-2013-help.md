@@ -7,6 +7,7 @@ ms:contentKeyID: 49300568
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -81,7 +82,7 @@ This example sends all messages that exceed the spam quarantine threshold to spa
 Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully specified the spam quarantine mailbox, do the following:
 
