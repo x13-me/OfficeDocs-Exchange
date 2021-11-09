@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure an accepted domain for an independent business unit with email servers outside your Exchange organization.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

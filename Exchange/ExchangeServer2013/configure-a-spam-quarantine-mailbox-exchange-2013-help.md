@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 ms.topic: article
+description: How to configure a spam quarantine mailbox in Exchange Server.
 author: msdmaguire
 f1.keywords:
 - NOCSH

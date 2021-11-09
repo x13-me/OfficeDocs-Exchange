@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure a federation trust between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

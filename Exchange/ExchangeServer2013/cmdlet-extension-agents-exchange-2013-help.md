@@ -9,6 +9,7 @@ manager: serdars
 ms.author: serdars
 ms.topic: article
 author: msdmaguire
+description: Description and use of cmdlet extension agents.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

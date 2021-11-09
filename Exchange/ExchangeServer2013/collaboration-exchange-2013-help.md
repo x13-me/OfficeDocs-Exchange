@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: About Exchange Server features that help your end users easily collaborate in email.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

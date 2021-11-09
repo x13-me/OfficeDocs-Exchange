@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer:
+description: Attachment blocking scenarios for transport rules in Exchange 2013.
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 f1.keywords:
 - NOCSH

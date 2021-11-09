@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article
 manager: serdars
 ms.author: serdars
+description: The Compliance Management management role group in Exchange Server.
 author: msdmaguire
 f1.keywords:
 - NOCSH

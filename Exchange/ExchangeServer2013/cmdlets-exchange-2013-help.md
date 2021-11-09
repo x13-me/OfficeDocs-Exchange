@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 ms.topic: article
+description: Use of cmdlets in Exchange Management Shell.
 author: msdmaguire
 f1.keywords:
 - NOCSH

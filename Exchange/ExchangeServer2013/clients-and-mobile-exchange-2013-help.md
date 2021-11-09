@@ -9,6 +9,7 @@ manager: serdars
 ms.topic: article
 ms.author: serdars
 author: msdmaguire
+description: Clients and client access methods that can be used to access an Exchange 2013 mailbox
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -28,8 +29,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col="width: 50%" />
-<col="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

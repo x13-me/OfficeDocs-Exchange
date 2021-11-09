@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: Coexistence of Exchange Unified Messaging (UM) with Office Communications Server 2007 R2 and Lync Server.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

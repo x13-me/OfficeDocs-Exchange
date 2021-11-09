@@ -9,6 +9,7 @@ manager: serdars
 ms.topic: article
 ms.author: serdars
 author: msdmaguire
+description: How to configure activation policy for a mailbox database copy.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
