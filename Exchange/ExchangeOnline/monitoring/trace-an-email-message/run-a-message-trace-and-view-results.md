@@ -131,7 +131,7 @@ In the events section, the following fields provide information about the events
   - **DEFER**: The message delivery was postponed and may be re-attempted later.
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
   - **DLP rule**: The message had a DLP rule match in this message.
-  - **Sensitivity label:** A server side labeling event occurred. For example, a label automatically added to a message that includes an action to encrypt or added via the web or mobile client. This action is completed by the Exchange server and logged. A label added via Outlook will not be included in the event field.
+  - **Sensitivity label:** A server-side labeling event occurred. For example, a label was automatically added to a message that includes an action to encrypt or was added via the web or mobile client. This action is completed by the Exchange server and logged. A label added via Outlook will not be included in the event field.
 
     > [!TIP]
     > Additional events may appear. For more information about these events, see [Event types in the message tracking log](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#event-types-in-the-message-tracking-log).
