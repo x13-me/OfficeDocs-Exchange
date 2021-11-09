@@ -29,7 +29,7 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Application</p></td>
 <td><p>Symptom</p></td>
 <td><p>Check</p></td>
