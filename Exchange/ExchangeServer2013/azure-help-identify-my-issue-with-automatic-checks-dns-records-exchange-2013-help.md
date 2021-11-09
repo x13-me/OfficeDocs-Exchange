@@ -28,11 +28,6 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 ## DNS Records Checks
 
 <table>
-<colgroup>
-<col  >
-<col  >
-<col  >
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><p>Application</p></td>
