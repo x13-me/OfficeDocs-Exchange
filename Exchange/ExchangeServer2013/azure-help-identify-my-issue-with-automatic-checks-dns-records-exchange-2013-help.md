@@ -24,6 +24,7 @@ One of the most common configuration setup issues is incorrectly configuring DNS
 
 If you already have a user account, select Sign In. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of *username*\@*yourFQDN* and your password.
 
+
 ## DNS Records Checks
 
 <table>
