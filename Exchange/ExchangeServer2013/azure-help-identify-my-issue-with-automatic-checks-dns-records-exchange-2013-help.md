@@ -71,3 +71,13 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 </tr>
 </tbody>
 </table>
+
+|Application|Symptom|Check|
+|--- |--- |--- |
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365|Microsoft Support and Recovery Assistant|
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a CNAME record)|Microsoft Support and Recovery Assistant|
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a TXT record)|Microsoft Support and Recovery Assistant|
+|Instant Messaging|My users are having trouble getting their Lync client to work|Microsoft Support and Recovery Assistant|
+|Instant Messaging|My users are having trouble getting their Lync client to work with other organizations|Microsoft Support and Recovery Assistant|
+|Mail|I can't get Outlook to automatically configure with Microsoft 365 or Office 365|Microsoft Support and Recovery Assistant|
+|Mail|My email doesn't seem to be routing to Microsoft 365 or Office 365|Microsoft Support and Recovery Assistant|
