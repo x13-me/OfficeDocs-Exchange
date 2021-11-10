@@ -1,5 +1,5 @@
 ---
-title: Deprecation of Basic Authentication in Exchange Online 
+title: Deprecation of Basic authentication in Exchange Online 
 ms.localizationpriority: medium
 ms.author: jhendr
 f1.keywords:
@@ -13,11 +13,11 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 search.appverid: MET150
-description: Learn about deprecation of Basic Authentication in Exchange Online
+description: Learn about deprecation of Basic authentication in Exchange Online
 audience: Admin
 ---
 
-# Deprecation of basic authentication in Exchange Online 
+# Deprecation of Basic authentication in Exchange Online 
 
 For many years, applications have used Basic authentication (also known as Legacy authentication) to connect to servers, services, and API endpoints. Basic authentication simply means the application sends a username and password with every request, and those credentials are also often stored or saved on the device. Traditionally, Basic authentication is enabled by default on most servers or services, and is simple to set up. 
 
@@ -99,12 +99,17 @@ There are several ways to determine if you’re using Basic authentication or Mo
 
 A simple way to tell if a client app (for example, Outlook) is using Basic authentication or Modern authentication is to observe the dialog that’s presented when the user logs in. 
 
-Modern authentication presents a web-based login page, while Basic authentication presents a dialog credential modal box as illustrated in the following screenshot. 
-
-![Modern sign in is web based screen](../../media/modern-sign-in.png)
+Modern authentication displays a web-based login page:  
 
 
-![Basic authentication dialog credential modal box](../../media/basic-auth-credentials.png)
+![Modern sign in is web based screen](../media/modern-sign-in.png)
+
+</br>
+
+Basic authentication presents a dialog credential modal box:
+
+
+![Basic authentication dialog credential modal box](../media/basic-auth-credentials.png)
 
  
 
@@ -112,15 +117,17 @@ On a mobile device, you’ll see a similar web-based page when you authenticate 
 
 You can also check the connection status dialog box, by CTRL + right-clicking the Outlook icon in the system tray, and choosing Connection Status. 
 
-When using Basic authentication, the Authn column in the Outlook Connection Status dialog shows the value Clear*. 
+When using Basic authentication, the **Authn** column in the **Outlook Connection Status** dialog shows the value **Clear**. 
 
-undefined 
 
- 
+![Outlook connection status clear](../media/outlook-connection-status.png)
+
 
 Once you switch to Modern authentication, the Authn column in in the Outlook Connection Status dialog shows the value Bearer*. 
 
-undefined 
+![Outlook connection status bearer](../media/outlook-connection-status-modern-bearer.png)
+
+
 
 ### Check the Message Center 
 
