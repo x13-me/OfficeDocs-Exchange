@@ -170,7 +170,7 @@ Some of the options available for each of the impacted protocols are listed belo
 
  
 
-## What if I want to block basic auth now? 
+## What if I want to block Basic authentication now? 
 
 Here’s a table summarizing the options for proactively disabling basic authentication 
 
