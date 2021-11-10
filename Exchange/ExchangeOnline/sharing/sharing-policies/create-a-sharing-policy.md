@@ -69,7 +69,7 @@ Create a new Sharing Policy to change how people in your organization share cale
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
 
   ```PowerShell
-  New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+  New-SharingPolicy -Name "Contoso" -Domains 'contoso.com: CalendarSharingFreeBusyDetail'
   ```
 
 - This example creates the sharing policy ContosoWoodgrove for two different domains (contoso.com and woodgrovebank.com) with different sharing settings configured for each domain. The policy is disabled.
