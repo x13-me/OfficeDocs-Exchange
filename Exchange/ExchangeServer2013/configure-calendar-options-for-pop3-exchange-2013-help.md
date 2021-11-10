@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description:  How to configure calendar options for POP3 in Exchange Server
 ms.topic: article
 f1.keywords:
 - NOCSH

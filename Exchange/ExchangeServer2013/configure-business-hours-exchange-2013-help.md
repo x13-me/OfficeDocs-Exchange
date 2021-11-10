@@ -7,6 +7,7 @@ manager: serdars
 ms.topic: article
 ms.reviewer:
 ms.assetid: 96b4be99-af94-4fa4-959a-48413387a044
+description:  How to configure business hours in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

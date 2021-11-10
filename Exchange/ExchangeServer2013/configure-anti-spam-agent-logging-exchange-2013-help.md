@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure anti-spam agent logging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

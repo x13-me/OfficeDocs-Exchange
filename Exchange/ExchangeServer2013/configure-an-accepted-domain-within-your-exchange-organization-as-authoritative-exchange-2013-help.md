@@ -8,6 +8,7 @@ ms.reviewer:
 ms.topic: article 
 manager: serdars
 ms.author: serdars
+description: Configure an accepted domain within your Exchange organization as authoritative
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -9,6 +9,7 @@ manager: serdars
 ms.author: serdars
 author: msdmaguire
 ms.topic: article
+description:  How to configure calendar options for IMAP4 in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
