@@ -23,7 +23,7 @@ For many years, applications have used Basic authentication (also known as Legac
 
 Simplicity isn’t at all bad, but Basic authentication makes it easier for attackers to capture user credentials (particularly if the credentials are not protected by TLS), which increases the risk of those stolen credentials being reused against other endpoints or services. Furthermore, the enforcement of multifactor authentication (MFA) is not simple or in some cases, possible when Basic authentication remains enabled. 
 
-Basic authentication is an outdated industry standard, and the threats posed by it have only increased since we originally announced that we were going to turn it off. Today, there are better and more effective user authentication alternatives. We actively recommend that customers adopt security strategies such as Zero Trust (Never Trust, Always Verify), or apply real-time assessment policies when users and devices access corporate information. These alternatives allow for intelligent decisions about who is trying to access what from where on which device rather than simply trusting an authentication credential that could be a bad actor impersonating a user. 
+Basic authentication is an outdated industry standard. Thhreats posed by it have only increased since we originally announced that we were going to turn it off. There are better and more effective user authentication alternatives. We actively recommend that customers adopt security strategies such as Zero Trust (Never Trust, Always Verify), or apply real-time assessment policies when users and devices access corporate information. These alternatives allow for intelligent decisions about who is trying to access what from where on which device rather than simply trusting an authentication credential that could be a bad actor impersonating a user. 
 
 With these threats and risks in mind, we’re taking steps to improve data security in Exchange Online. 
 
@@ -117,13 +117,13 @@ On a mobile device, you’ll see a similar web-based page when you authenticate 
 
 You can also check the connection status dialog box, by CTRL + right-clicking the Outlook icon in the system tray, and choosing Connection Status. 
 
-When using Basic authentication, the **Authn** column in the **Outlook Connection Status** dialog shows the value **Clear**. 
+When using Basic authentication, the **Authn** column in the **Outlook Connection Status** dialog shows the value of **Clear**. 
 
 
 ![Outlook connection status clear](../media/outlook-connection-status.png)
 
 
-Once you switch to Modern authentication, the Authn column in in the Outlook Connection Status dialog shows the value Bearer*. 
+Once you switch to Modern authentication, the **Authn**column in in the Outlook Connection Status dialog shows the value of **Bearer**. 
 
 ![Outlook connection status bearer](../media/outlook-connection-status-modern-bearer.png)
 
@@ -139,21 +139,26 @@ If you did get a summary of usage, you’ll know how many unique users we saw us
 
 Early in 2022, we plan on updating Microsoft Admin Center to make it easier to see summary usage and enable/disable protocols. We’ll publish more information on this when it becomes available. 
 
-Check the Azure Active Directory Sign-in Report 
+Check the Azure Active Directory Sign-in report 
 
-The best place to get the most up-to-date picture of Basic authentication usage by tenants is by using the Azure AD Sign-In report.  More information can be found here: New tools to block legacy authentication in your organization - Microsoft Tech Community 
+The best place to get the most up-to-date picture of Basic authentication usage by tenants is by using the Azure AD Sign-In report. To learn more, see: [New tools to block legacy authentication in your organization - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302). 
 
 
 ## Client options  
 
-Here’s a table summarizing some of the options available for each of the impacted protocols: 
+Here’s a table summarizing some of the options available for each of the impacted protocols
+
+>[!Important]
+>**Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exchange ActiveSync (EAS)** protocols:
+>
+>**If you have written your own code using these protocols**, update your code to use **OAuth 2.0** instead of Basic Authentication, or migrate to a newer protocol (Graph API).</br></br> **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that’s built using OAuth 2.0.  
 
 |Key Protocol Service|Impacted Clients|Client Specific Recommendation |Protocol Recommendation |Protocol Info / Notes |
 |:-----|:-----|:-----|:-----|:-----|
-|Outlook |All versions of Outlook for Windows and Mac |- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the registry key |||
+|Outlook |All versions of Outlook for Windows and Mac |- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication?view=o365-worldwide) |||
 |Exchange Web Services (EWS) |3rd party applications not supporting OAuth  |Modify app to use modern auth.  Migrate app to use Graph API and modern auth |**If you have written your own code using these protocols**, you will need to update your code to use OAuth 2.0 instead of Basic Authentication, or migrate to a newer protocol (Graph API)</br></br> **If you or your users are using a 3rd party application**, which uses these protocols, you will either need to reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication -or- assist your users to switch to an application that’s built using OAuth 2.0.  | No EWS feature updates starting July 2018| 
-|Remote PowerShell (RPS)|Exchange Administrators AOBO administrators Automated management tools |Use the PowerShell V2 Module or PowerShell within Azure Cloud Shell. ||Automation and cert auth support for Remote PowerShell MFA details here. |
-|POP and IMAP |3rd party mobile clients such as Thunderbird 1st party clients configured to use POP or IMAP |Recommend to move away from these protocols as they don’t enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it ||IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.  |
+|Remote PowerShell (RPS)|Exchange Administrators AOBO administrators Automated management tools |Use the [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) or [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269). ||Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps). |
+|POP and IMAP |3rd party mobile clients such as Thunderbird 1st party clients configured to use POP or IMAP |Recommend moving away from these protocols as they don’t enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it ||IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.  |
 |Exchange ActiveSync (EAS) |Mobile email clients from Apple, Samsung etc.| Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic (remove and re-add the account) Switch to Outlook on the web or another mobile browser app that supports modern auth ||Mobile devices that use native app to connects to Exchange Online generally use this protocol.| 
 
  
@@ -176,7 +181,7 @@ The changes described in this article can affect your ability to connect to Exch
 
 It’s recommended that you first investigate the impact on your tenant and users. Look out for Message Center posts that either summarize your usage or report you don’t have any.  
 
-If you have usage, or are unsure, take a look at the Azure AD Sign-In report.  More information can be found here: New tools to block legacy authentication in your organization - Microsoft Tech Community. The report can help you track down and identify clients and devices using Basic authentication.  
+If you have usage, or are unsure, take a look at the Azure AD Sign-In report.  More information can be found here: [New tools to block legacy authentication in your organization - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302). The report can help you track down and identify clients and devices using Basic authentication.  
 
 Once you have an idea of the users and clients you know are using Basic authentication, come up with a remediation plan. That might mean upgrading client software, reconfiguring apps, updating scripts, or reaching out to third party app developers to get updated code or apps.  
 
