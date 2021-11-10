@@ -156,7 +156,7 @@ The best place to get the most up-to-date picture of Basic authentication usage 
 Some of the options available for each of the impacted protocols are listed below.
 
 >[!Note]
->Protocol recommendation for **Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exchange ActiveSync (EAS)** protocols:
+>**Protocol recommendation** for Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exchange ActiveSync (EAS):
 >
 >**If you have written your own code using these protocols**, update your code to use **OAuth 2.0** instead of Basic Authentication, or migrate to a newer protocol (Graph API).</br></br> **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that’s built using OAuth 2.0.  
 
