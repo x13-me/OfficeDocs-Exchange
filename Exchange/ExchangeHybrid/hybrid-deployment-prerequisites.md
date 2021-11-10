@@ -93,7 +93,7 @@ The following prerequisites are required for configuring a hybrid deployment:
 
   Learn more at [Edge Transport servers with hybrid deployments](edge-transport-servers.md).
 
-- **Microsoft .NET Framework**: To verify the versions that can be used with your specific version of Exchange, see [Exchange Server supportability matrix - ](./Exchange/ExchangeServer/plan-and-deploy/supportability-matrix.md#microsoft-net-framework).
+- **Microsoft .NET Framework**: To verify the versions that can be used with your specific version of Exchange, see [Exchange Server supportability matrix - Microsoft .NET Framework](./Exchange/ExchangeServer/plan-and-deploy/supportability-matrix.md#microsoft-net-framework).
 
 - **Unified Messaging-enabled (UM) mailboxes**: If you have UM-enabled mailboxes and you want to move them to Microsoft 365 or Office 365, you need to meet the following requirements **before** you move them:
 
