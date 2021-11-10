@@ -29,11 +29,11 @@ With these threats and risks in mind, we’re taking steps to improve data secur
 
 ## What we are changing 
 
-We’re removing the ability to use Basic authentication in Exchange Online for Exchange ActiveSync (EAS), POP, IMAP, Remote PowerShell, Exchange Web Services (EWS), Offline Address Book (OAB), Outlook for Windows and Mac.  
+We’re removing the ability to use Basic authentication in Exchange Online for Exchange ActiveSync (EAS), POP, IMAP, Remote PowerShell, Exchange Web Services (EWS), Offline Address Book (OAB), Outlook for Windows, and Mac.  
 
 We’re also disabling SMTP AUTH in all tenants in which it’s not being used.  
 
-This decision will require customers to move from apps that use Basic authentication to apps that use Modern authentication. Modern authentication (OAuth 2.0 token-based authorization) has many benefits and improvements that help mitigate the issues in Basic authentication. For example, OAuth access tokens have a limited usable lifetime, and are specific to the applications and resources for which they are issued, so they cannot be reused. Enabling and enforcing multifactor authentication (MFA) is also simple with Modern authentication. 
+This decision requires customers to move from apps that use basic authentication to apps that use Modern authentication. Modern authentication (OAuth 2.0 token-based authorization) has many benefits and improvements that help mitigate the issues in basic authentication. For example, OAuth access tokens have a limited usable lifetime, and are specific to the applications and resources for which they are issued, so they cannot be reused. Enabling and enforcing multifactor authentication (MFA) is also simple with Modern authentication. 
 
 ## When will this change take place? 
 
@@ -41,7 +41,7 @@ We’ve already started making this change. New Microsoft 365 tenants are create
 
 Beginning in early 2021, we started to disable Basic authentication for existing tenants with no reported usage. We always provide Message Center notifications to any customer prior to Basic authentication being disabled in their tenant. 
 
-In September 2021, we announced that effective October 1, 2022, we will begin disabling Basic Authentication for Outlook, EWS, RPS, POP, IMAP, and EAS protocols in Exchange Online. SMTP Auth will also be disabled if it is not being used. 
+In September 2021, we announced that effective October 1, 2022, we will begin disabling Basic authentication for Outlook, EWS, RPS, POP, IMAP, and EAS protocols in Exchange Online. SMTP Auth will also be disabled if it is not being used. 
 
 ## Impact to messaging protocols and existing applications 
 
@@ -49,7 +49,7 @@ This change affects the applications and scripts you might use in different ways
 
 ### POP, IMAP, and SMTP AUTH 
 
-During 2020, we released OAuth 2.0 support for POP, IMAP, and SMTP AUTH. Some client apps have been updated to support these authentication types (for example, Thunderbird), so users with up-to-date versions can change their configuration to use OAuth. There is no plan for Outlook clients to support OAuth for POP and IMAP, but Outlook can connect use MAPI/HTTP (Windows clients) and EWS (Outlook for Mac).  
+In 2020, we released OAuth 2.0 support for POP, IMAP, and SMTP AUTH. Updates to some client apps have been updated to support these authentication types (for example, Thunderbird), so users with up-to-date versions can change their configuration to use OAuth. There is no plan for Outlook clients to support OAuth for POP and IMAP, but Outlook can connect use MAPI/HTTP (Windows clients) and EWS (Outlook for Mac).  
 
 Application developers who have built apps that send, read, or otherwise process email using these protocols will be able to keep the same protocol, but need to implement secure, Modern authentication experiences for their users. This functionality is built on top of Microsoft Identity platform (v2.0) and supports access to Microsoft 365 email accounts. 
 
@@ -101,10 +101,10 @@ A simple way to tell if a client app (for example, Outlook) is using Basic authe
 
 Modern authentication presents a web-based login page, while Basic authentication presents a dialog credential modal box as illustrated in the following screenshot. 
 
+![Modern sign in is web based screen](../../media/modern-sign-in.png)
 
-MApost1 
 
-MApost2 
+![Basic authentication dialog credential modal box](../../media/basic-auth-credentials.png)
 
  
 
