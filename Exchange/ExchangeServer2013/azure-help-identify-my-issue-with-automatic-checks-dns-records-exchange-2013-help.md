@@ -27,52 +27,12 @@ If you already have a user account, select Sign In. You don't need an Azure ID a
 
 ## DNS Records Checks
 
-<table>
-<colgroup>
-<col  >
-<col  >
-<col  >
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Application</p></td>
-<td><p>Symptom</p></td>
-<td><p>Check</p></td>
-</tr>
-<tr class="even">
-<td><p>Domains</p></td>
-<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Domains</p></td>
-<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a CNAME record)</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Domains</p></td>
-<td><p>My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a TXT record)</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Instant Messaging</p></td>
-<td><p>My users are having trouble getting their Lync client to work</p></td>
-<<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Instant Messaging</p></td>
-<td><p>My users are having trouble getting their Lync client to work with other organizations</p></td>
-<<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Mail</p></td>
-<td><p>I can't get Outlook to automatically configure with Microsoft 365 or Office 365</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Mail</p></td>
-<td><p>My email doesn't seem to be routing to Microsoft 365 or Office 365</p></td>
-<td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant</a></p></td>
-</tr>
-</tbody>
-</table>
+|Application |Symptom |Check |
+|--- |--- |--- |
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a CNAME record)|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Domains|My custom domain (for example, contoso.com) doesn't seem to be configured with Microsoft 365 or Office 365 (I used a TXT record)|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Instant Messaging|My users are having trouble getting their Lync client to work|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Instant Messaging|My users are having trouble getting their Lync client to work with other organizations|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Mail|I can't get Outlook to automatically configure with Microsoft 365 or Office 365|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
+|Mail|My email doesn't seem to be routing to Microsoft 365 or Office 365|[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA-Download_ExRCA)|
