@@ -154,12 +154,6 @@ Like *Save Contacts*, the *Sync Calendars* setting is another special case scena
 > [!NOTE]
 > With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CALENDAR and WRITE\_CALENDAR within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data. <p> When enabling Outlook for Android's Sync Calendar within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Calendar app within the work profile context; this provides a clear separation between work and personal profile data.
 
-Organizations have several controls for managing *Sync Calendars* with the work or school account:
-
-- With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Blocked**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account.
-- Independent of the Intune App Protection Policy setting **Sync policy managed app data with native apps**, organizations can choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
-- Finally, if organizations allow the availability of *Sync Calendars*, through an App Configuration Policy, organizations can define the default sync state of the setting. This setting removes the need for the user to enable calendar synchronization.
-
 ## S/MIME scenarios
 
 On enrolled devices, Outlook for iOS and Android supports automated certificate delivery. Outlook for iOS and Android also supports app configuration settings that enable or disable S/MIME in the app, as well as the user's ability to change the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Understanding S/MIME](sensitive-labeling-and-protection-outlook-for-ios-android.md#understanding-smime). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
@@ -212,7 +206,11 @@ The settings allow organizations to control the contact fields that synchronize 
 
 ### Configure Calendar Sync availability with Outlook for Android
 
-Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account.
+Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account:
+
+- With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Block**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account and their associated App Configuration Policy settings are ignored.
+- When the Intune App Protection Policy setting **Sync policy managed app data with native apps** is set to **Allow**, organizations can also choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
+- Finally, if organizations allow the availability of *Sync Calendars*, through an App Configuration Policy, organizations can define the default sync state of the setting. This setting removes the need for the user to enable calendar synchronization manually.
 
 ## Deploying configuration scenarios with Microsoft Endpoint Manager for enrolled devices
 

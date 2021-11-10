@@ -39,7 +39,7 @@ This article explains how you can send email from devices and business applicati
 > [!NOTE]
 > This option is not compatible with [Microsoft Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). We recommend using Modern Authentication when connecting with our service. Although SMTP AUTH now supports OAuth, most devices and clients have not been designed to use OAuth with SMTP AUTH. As a result, there are no plans to disable Basic Authentication for SMTP AUTH clients at this time. To find out more about OAuth, see [Authenticate an IMAP, POP or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
 >
-> You must also verify that SMTP AUTH is enabled for the organization and the mailbox being used. SMTP AUTH is disabled for organizations created after January 2020. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
+> You must also verify that SMTP AUTH is enabled for the mailbox being used. SMTP AUTH is disabled for organizations created after January 2020 but can be enabled per-mailbox. For more information, see [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md).
 
 This option supports most usage scenarios and is the easiest to set up. Choose this option when:
 
