@@ -205,7 +205,7 @@ To learn more on how how to block Basic authentication, check out the following 
 
 **Azure AD Conditional Access**
 - [Conditional Access: Block Legacy Authentication (Simple)](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-- [How to: Block Legacy Authentication to Azure AD with Conditional Access (Detailed)](/azure/active-directory/conditional-access/block-legacy-authentication#block-legacy-authentication)
+- [How to: Block Legacy Authentication to Azure AD with Conditional Access (Detailed)](/azure/active-directory/conditional-access/block-legacy-authentication)
 
 
 
