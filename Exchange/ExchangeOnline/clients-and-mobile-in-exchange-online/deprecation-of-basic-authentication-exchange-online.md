@@ -193,7 +193,7 @@ Here’s a table summarizing the options for proactively disabling basic authent
 
 ### Resources
 
-To learn more on how how to block Basic authentication, check out the following articles:
+To learn more on how to block Basic authentication, check out the following articles:
 
 **Security Defaults**
 - [What are Security Defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
