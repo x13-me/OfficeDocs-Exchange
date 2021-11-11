@@ -191,6 +191,24 @@ Here’s a table summarizing the options for proactively disabling basic authent
 
  
 
+### Resources
+
+To learn more on how how to block Basic authentication, check out the following articles:
+
+**Security Defaults**
+- [What are Security Defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+- [Enabling Security Defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults)
+
+**Exchange Online Authentication Policies**
+- [Manage Basic Authentication in the Microsoft 365 Admin Center (Simple)](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online#manage-basic-authentication-in-the-microsoft-365-admin-center)
+- [Authentication Policy Procedures in Exchange Online (Advanced)](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online#authentication-policy-procedures-in-exchange-online)
+
+**Azure AD Conditional Access**
+- [Conditional Access: Block Legacy Authentication (Simple)](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [How to: Block Legacy Authentication to Azure AD with Conditional Access (Detailed)](/azure/active-directory/conditional-access/block-legacy-authentication#block-legacy-authentication)
+
+
+
 ## Summary and next steps 
 
 The changes described in this article can affect your ability to connect to Exchange Online, and so you should take steps to understand if you are impacted and determine the steps you need to take to ensure you can continue to connect once they roll out.  
