@@ -136,7 +136,7 @@ When using Basic authentication, the **Authn** column in the **Outlook Connectio
 ![Outlook connection status clear](../media/outlook-connection-status.png)
 
 
-Once you switch to Modern authentication, the **Authn**column in the Outlook Connection Status dialog shows the value of **Bearer**. 
+Once you switch to Modern authentication, the **Authn** column in the Outlook Connection Status dialog shows the value of **Bearer**. 
 
 ![Outlook connection status bearer](../media/outlook-connection-status-modern-bearer.png)
 
