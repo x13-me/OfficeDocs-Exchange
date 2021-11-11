@@ -136,7 +136,7 @@ When using Basic authentication, the **Authn** column in the **Outlook Connectio
 ![Outlook connection status clear](../media/outlook-connection-status.png)
 
 
-Once you switch to Modern authentication, the **Authn**column in the Outlook Connection Status dialog shows the value of **Bearer**. 
+Once you switch to Modern authentication, the **Authn** column in the Outlook Connection Status dialog shows the value of **Bearer**. 
 
 ![Outlook connection status bearer](../media/outlook-connection-status-modern-bearer.png)
 
@@ -193,7 +193,7 @@ Here’s a table summarizing the options for proactively disabling basic authent
 
 ### Resources
 
-To learn more on how how to block Basic authentication, check out the following articles:
+To learn more on how to block Basic authentication, check out the following articles:
 
 **Security Defaults**
 - [What are Security Defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
@@ -205,7 +205,7 @@ To learn more on how how to block Basic authentication, check out the following 
 
 **Azure AD Conditional Access**
 - [Conditional Access: Block Legacy Authentication (Simple)](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-- [How to: Block Legacy Authentication to Azure AD with Conditional Access (Detailed)](/azure/active-directory/conditional-access/block-legacy-authentication#block-legacy-authentication)
+- [How to: Block Legacy Authentication to Azure AD with Conditional Access (Detailed)](/azure/active-directory/conditional-access/block-legacy-authentication)
 
 
 
