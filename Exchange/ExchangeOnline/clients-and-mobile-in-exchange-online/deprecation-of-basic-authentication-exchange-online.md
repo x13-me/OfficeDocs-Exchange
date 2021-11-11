@@ -168,7 +168,8 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 - **If you have written your own code using these protocols**, update your code to use **OAuth 2.0** instead of Basic Authentication, or migrate to a newer protocol (Graph API).</br></br>
 - **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that’s built using OAuth 2.0.  
 
-|Key Protocol Service|Impacted Clients|Client specific Recommendation |Protocol Info / Notes |
+
+|Key Protocol Service|Impacted Clients|Client specific Recommendation|Protocol Info / Notes |
 |:-----|:-----|:-----|:-----|
 |Outlook |All versions of Outlook for Windows and Mac |- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication) ||
 |Exchange Web Services (EWS) |Third-party applications not supporting OAuth  |Modify app to use modern auth.  Migrate app to use Graph API and modern auth |No EWS feature updates starting July 2018| 
