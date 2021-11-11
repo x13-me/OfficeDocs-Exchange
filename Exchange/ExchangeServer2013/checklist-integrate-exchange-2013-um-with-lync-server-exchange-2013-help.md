@@ -5,6 +5,7 @@ ms:assetid: 3b82e86f-9f30-4445-96ad-744082abeaeb
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638120(v=EXCHG.150)
 ms:contentKeyID: 49315388
 ms.topic: article
+ms.description: Use this checklist to install and deploy Unified Messaging (UM) and Microsoft Lync Server 2013.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

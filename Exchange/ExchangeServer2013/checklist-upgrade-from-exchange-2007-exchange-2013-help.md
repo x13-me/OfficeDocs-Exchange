@@ -5,6 +5,7 @@ ms:assetid: 53aaa370-4562-43e4-9b75-7a705400c5a5
 ms:mtpsurl: https://technet.microsoft.com/library/Ff805032(v=EXCHG.150)
 ms:contentKeyID: 50874004
 ms.topic: article
+ms.description: Use this checklist to upgrade from Microsoft Exchange Server 2007 to Exchange Server 2013.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

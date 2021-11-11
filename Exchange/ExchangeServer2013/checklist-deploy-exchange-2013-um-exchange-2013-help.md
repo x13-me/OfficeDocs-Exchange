@@ -5,6 +5,7 @@ ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673520(v=EXCHG.150)
 ms:contentKeyID: 49315398
 ms.topic: article
+ms.description: Checklist to help you install and deploy Unified Messaging (UM) in your organization.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
