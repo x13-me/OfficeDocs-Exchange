@@ -39,7 +39,7 @@ This decision requires customers to move from apps that use basic authentication
 
 ## When will this change take place? 
 
-We’ve already started making this change. New Microsoft 365 tenants are created with Basic authentication already turned off as they have [Security defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) enabled. 
+We’ve already started making this change. New Microsoft 365 tenants are created with Basic authentication already turned off as they have [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) enabled. 
 
 Beginning in early 2021, we started to disable Basic authentication for existing tenants with no reported usage. We always provide Message Center notifications to any customer prior to Basic authentication being disabled in their tenant. 
 
@@ -53,13 +53,13 @@ This change affects the applications and scripts you might use in different ways
 
 In 2020, we released OAuth 2.0 support for POP, IMAP, and SMTP AUTH. Updates to some client apps have been updated to support these authentication types (for example, Thunderbird), so users with up-to-date versions can change their configuration to use OAuth. There is no plan for Outlook clients to support OAuth for POP and IMAP, but Outlook can connect use MAPI/HTTP (Windows clients) and EWS (Outlook for Mac).  
 
-Application developers who have built apps that send, read, or otherwise process email using these protocols will be able to keep the same protocol, but need to implement secure, Modern authentication experiences for their users. This functionality is built on top of [Microsoft Identity platform v2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) and supports access to Microsoft 365 email accounts. 
+Application developers who have built apps that send, read, or otherwise process email using these protocols will be able to keep the same protocol, but need to implement secure, Modern authentication experiences for their users. This functionality is built on top of [Microsoft Identity platform v2.0](/azure/active-directory/develop/v2-overview) and supports access to Microsoft 365 email accounts. 
 
 If your in-house application needs to access IMAP, POP and SMTP AUTH protocols in Exchange Online, follow these step-by-step instructions to implement OAuth 2.0 authentication:  [Authenticate an IMAP, POP, or SMTP connection using OAuth](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth). 
 
 Work with your vendor to update any apps or clients that you use that could be impacted.
 
-SMTP AUTH will still be available when Basic authentication is permanently disabled on October 1, 2022. The reason SMTP will still be available is that many multi-function devices such as printers and scanners can’t be updated to use modern authentication. However, we strongly encourage customers to move away from using Basic authentication with SMTP AUTH when possible. Other options for sending authenticated mail include using alternative protocols, such as the [Microsoft Graph API](/graph/api/user-sendmail?view=graph-rest-beta). 
+SMTP AUTH will still be available when Basic authentication is permanently disabled on October 1, 2022. The reason SMTP will still be available is that many multi-function devices such as printers and scanners can’t be updated to use modern authentication. However, we strongly encourage customers to move away from using Basic authentication with SMTP AUTH when possible. Other options for sending authenticated mail include using alternative protocols, such as the [Microsoft Graph API](/graph/api/user-sendmail). 
 
 ### Exchange ActiveSync (EAS) 
 
@@ -73,7 +73,7 @@ There are other mobile device email apps that support Modern authentication. The
 
 Since the release of the Exchange Online V2 PowerShell module (abbreviated as the EXO V2 module) it’s been easy to manage your Exchange Online settings and protection settings from the command line using Modern authentication. The EXO V2 module uses Modern authentication and works with multifactor authentication (MFA) for connecting to all Exchange-related PowerShell environments in Microsoft 365: Exchange Online PowerShell, Security & Compliance PowerShell, and standalone Exchange Online Protection (EOP) PowerShell. 
 
-The EXO V2 module can also be used non-interactively, which enables running unattended scripts. Certificate-based authentication provides admins the ability to run scripts without the need to create service-accounts or store credentials locally. To learn more, see: [App-only authentication for unattended scripts in the EXO V2 module](https://docs.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps). 
+The EXO V2 module can also be used non-interactively, which enables running unattended scripts. Certificate-based authentication provides admins the ability to run scripts without the need to create service-accounts or store credentials locally. To learn more, see: [App-only authentication for unattended scripts in the EXO V2 module](/powershell/exchange/app-only-auth-powershell-v2). 
 
 Administrators who still use the old remote PowerShell connection method or the older Exchange Online Remote PowerShell Module (V1), are encouraged to begin using the EXO V2 module as soon as possible. These older connection methods will eventually be retired, either through Basic authentication disablement or the end of support. 
 
@@ -102,7 +102,7 @@ Outlook 2007 or Outlook 2010 cannot use Modern authentication, and will eventual
 
 Outlook for Mac supports Modern Authentication.  
 
-For more information about Modern authentication support in Office, see [How modern authentication works for Office client apps](https://docs.microsoft.com/en-us/office365/enterprise/modern-auth-for-office-2013-and-2016). 
+For more information about Modern authentication support in Office, see [How modern authentication works for Office client apps](/office365/enterprise/modern-auth-for-office-2013-and-2016). 
 
 ## How do you know if your users will be impacted? 
 
@@ -169,10 +169,10 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 - **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that’s built using OAuth 2.0.  
 
 |Key Protocol Service|Impacted Clients|Client specific Recommendation |Protocol Info / Notes |
-|:-----|:-----|:-----|:-----|:-----|
-|Outlook |All versions of Outlook for Windows and Mac |- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication?view=o365-worldwide) ||
+|:-----|:-----|:-----|:-----|
+|Outlook |All versions of Outlook for Windows and Mac |- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication) ||
 |Exchange Web Services (EWS) |Third-party applications not supporting OAuth  |Modify app to use modern auth.  Migrate app to use Graph API and modern auth |No EWS feature updates starting July 2018| 
-|Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools |Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269) ||Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps). |
+|Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools |Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269) ||Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2). |
 |POP and IMAP |Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP |Recommend moving away from these protocols as they don’t enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it |IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.  |
 |Exchange ActiveSync (EAS) |Mobile email clients from Apple, Samsung etc.| Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic (remove and readd the account) Switch to Outlook on the web or another mobile browser app that supports modern auth |Mobile devices that use a native app to connect to Exchange Online generally use this protocol.| 
 
