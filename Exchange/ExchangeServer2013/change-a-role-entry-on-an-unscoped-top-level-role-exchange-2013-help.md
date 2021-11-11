@@ -4,6 +4,7 @@ TOCTitle: Change a role entry on an unscoped top-level role
 ms:assetid: 65c0bfb3-aafd-4c64-8429-7616c57adf1c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876896(v=EXCHG.150)
 ms:contentKeyID: 49289281
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
