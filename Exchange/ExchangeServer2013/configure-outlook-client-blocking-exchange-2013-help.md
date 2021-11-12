@@ -5,9 +5,13 @@ ms:assetid: 3a579c83-8bc7-4adc-a25c-8eb6eed7220c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335207(v=EXCHG.150)
 ms:contentKeyID: 50873794
 ms.reviewer: 
+ms.topic: article
+description: How to configure Outlook client blocking in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure Outlook client blocking in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -31,8 +35,8 @@ The following table lists the MRM features available in various client applicati
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -66,8 +70,8 @@ The following table shows version numbers for Outlook.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,7 +122,7 @@ After you perform these procedures, be aware that when users are blocked from ac
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -4,6 +4,8 @@ TOCTitle: Configure the listening port
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure the listening port in Exchange Server 
 ms.reviewer:
 ms.assetid: 200ecbd8-18c3-4594-9cc8-924b3ab4eca1
 f1.keywords:
