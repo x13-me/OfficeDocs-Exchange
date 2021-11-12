@@ -5,7 +5,7 @@ ms:assetid: 99b1a081-4052-4516-b63c-77622cbdf962
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169229(v=EXCHG.150)
 ms:contentKeyID: 53382780
 ms.topic: article
-ms.description: Use this checklist to help you upgrade Exchange 2007 Unified Messaging (UM) to Exchange 2013 UM.
+description: Use this checklist to help you upgrade Exchange 2007 Unified Messaging (UM) to Exchange 2013 UM.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

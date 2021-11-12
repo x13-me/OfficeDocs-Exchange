@@ -5,7 +5,7 @@ ms:assetid: 06c1045a-5fcf-4e24-a901-1a979302fb8d
 ms:mtpsurl: https://technet.microsoft.com/library/Ee332309(v=EXCHG.150)
 ms:contentKeyID: 50873999
 ms.topic: article
-ms.description: Use this checklist to upgrade from Microsoft Exchange 2010 to Exchange 2013.
+description: Use this checklist to upgrade from Microsoft Exchange 2010 to Exchange 2013.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

@@ -5,7 +5,7 @@ ms:assetid: 799bd1b1-a918-4bd8-911e-e6ca08bd7b52
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169228(v=EXCHG.150)
 ms:contentKeyID: 53382782
 ms.topic: article
-ms.description: Use this checklist to help you upgrade Exchange 2010 Unified Messaging (UM) to Exchange 2013 UM.
+description: Use this checklist to help you upgrade Exchange 2010 Unified Messaging (UM) to Exchange 2013 UM.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

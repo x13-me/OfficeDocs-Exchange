@@ -5,7 +5,7 @@ ms:assetid: b5bfc6af-9c55-46c0-a293-6078b64e87dd
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)
 ms:contentKeyID: 46629089
 ms.topic: article
-ms.description: The Client Access role not detected in local site_ClientAccessRoleNotPresentInSite.
+description: The Client Access role not detected in local site_ClientAccessRoleNotPresentInSite.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

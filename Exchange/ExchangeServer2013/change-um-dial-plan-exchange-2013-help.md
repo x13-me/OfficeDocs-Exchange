@@ -6,7 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.topic: article
-ms.description: Move a user enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan associated with the user.
+description: Move a user enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan associated with the user.
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
 f1.keywords:
 - NOCSH

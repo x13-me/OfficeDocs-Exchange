@@ -5,7 +5,7 @@ ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
 ms.topic: article
-ms.description: Control how resources are consumed by individual users in your Exchange organization by changing the default throttling settings.
+description: Control how resources are consumed by individual users in your Exchange organization by changing the default throttling settings.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
