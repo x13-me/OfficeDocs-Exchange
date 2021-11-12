@@ -331,6 +331,7 @@
 ### [Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules.md)
 #### [Procedures for Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules.md)
 ### [Disable Basic authentication in Exchange Online](../clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online.md)
+### [Deprecation of Basic authentication in Exchange Online](../clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online.md)
 ### [Disable SMTP AUTH in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md)
 ### [Enable or disable modern authentication for Outlook in Exchange Online](../clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online.md)
 ## [Back up email](../back-up-email.md)
