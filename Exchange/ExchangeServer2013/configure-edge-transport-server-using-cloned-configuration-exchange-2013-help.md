@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure Edge Transport server using cloned configuration
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -62,7 +64,7 @@ Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
    ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
    ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 You'll know you successfully exported the source configuration data to a file when the confirmation message, "Edge configuration data is exported successfully to: \<output file path\>" appears.
 
@@ -86,7 +88,7 @@ You'll know you successfully exported the source configuration data to a file wh
 
 4. Open the answer file and modify any settings that are invalid for the target server. If no modifications are required, the answer file will have no entries. Save your changes.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 You'll know you successfully validated the configuration file and created an answer file when the confirmation message, "Answer file is successfully created" appears.
 
@@ -104,6 +106,6 @@ For example, to import the configuration file C:\\CloneConfigData.xml by using t
 ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 You'll know you successfully imported the configuration file on the target server when the confirmation message, "Importing Edge configuration information succeeded" appears.

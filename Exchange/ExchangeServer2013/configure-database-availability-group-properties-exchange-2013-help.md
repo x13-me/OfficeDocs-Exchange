@@ -7,7 +7,9 @@ ms:contentKeyID: 48385082
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure database availability group properties in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

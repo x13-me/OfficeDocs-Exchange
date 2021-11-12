@@ -4,8 +4,10 @@ TOCTitle: Configure a DTMF fallback auto attendant
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: a82d85f7-de30-40db-8ee6-b091ac14da9d
+description: How to configure a DTMF fallback auto attendant in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

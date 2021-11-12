@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb738158(v=EXCHG.150)
 ms:contentKeyID: 61200301
 ms.reviewer: 
 manager: serdars
+description: How to configure internet mail flow through a subscribed Edge Transport server in Exchange
+ms.topic: article
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
