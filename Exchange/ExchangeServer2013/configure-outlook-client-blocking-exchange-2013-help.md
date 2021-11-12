@@ -10,8 +10,6 @@ description: How to configure Outlook client blocking in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
-ms.topic: article
-description: How to configure Outlook client blocking in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
