@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
 description: How to configure Edge Transport server using cloned configuration
 f1.keywords:
 - NOCSH

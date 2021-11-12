@@ -7,6 +7,8 @@ ms:contentKeyID: 50874000
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: how to configure Exchange to accept mail for multiple authoritative domains
 author: msdmaguire
 f1.keywords:
 - NOCSH

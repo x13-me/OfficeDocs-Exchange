@@ -7,7 +7,9 @@ ms:contentKeyID: 49318502
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to configure group metrics in Exchange Server
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
