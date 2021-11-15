@@ -150,6 +150,17 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
 
+2. In Exchange Management Shell, run the following:
+
+    ```powershell
+    Enable-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}"
+    ```
+3. In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+
+    ```powershell
+    Get-Mailbox "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration | Set-Mailbox -Arbitration -UMDataStorage:$true -Force
+    ```
+
 ## Re-create the Microsoft Exchange organization mailbox for OABs
 
 To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}:
