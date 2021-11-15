@@ -117,7 +117,7 @@ The location of the queue database and the queue database transaction logs is co
    net stop MSExchangeTransport && net start MSExchangeTransport
    ```
 
-## How do you know this worked?
+## How do you know that this worked?
 
 To verify that you successfully created a new queue database and new transaction logs at a new location, do the following:
 
