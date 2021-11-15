@@ -7,6 +7,8 @@ ms:contentKeyID: 49289407
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure protocol logging in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -68,7 +70,7 @@ To use the EAC to configure the protocol log paths for the Send connectors and R
 
    When you are finished, click **Save**.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully used the EAC to configure the protocol log settings, do the following:
 
@@ -90,7 +92,7 @@ This example enables protocol logging for the Receive connector named Connection
 Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled protocol logging, do the following:
 
@@ -116,7 +118,7 @@ This example enables protocol logging on the intra-organization Send connector i
 Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled protocol logging on the intra-org Send connector, do the following:
 
@@ -142,7 +144,7 @@ This example enables protocol logging on the mailbox delivery Receive connector 
 Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled protocol logging on the mailbox delivery connector, do the following:
 
@@ -185,7 +187,7 @@ Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log"
 > <LI>
 > <P>Setting the <EM>ReceiveProtocolLogMaxAge</EM> or <EM>SendProtocolLogMaxAge</EM> parameters to the value <CODE>00:00:00</CODE> prevents the automatic removal of protocol log files because of their age.</P></LI></UL>
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the protocol log settings, do the following:
 
