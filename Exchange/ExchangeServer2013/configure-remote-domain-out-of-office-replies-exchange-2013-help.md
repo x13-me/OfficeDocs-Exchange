@@ -7,6 +7,8 @@ ms:contentKeyID: 49300434
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure remote domain out of office replies in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

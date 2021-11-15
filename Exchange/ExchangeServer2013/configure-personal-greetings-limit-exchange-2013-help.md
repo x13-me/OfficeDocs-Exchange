@@ -4,6 +4,8 @@ TOCTitle: Configure the limit on personal greetings for Outlook Voice Access use
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article 
+description: How to configure the personal greetings limit for Outlook Voice Access users in Exchange Server
 ms.reviewer:
 ms.assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf
 f1.keywords:

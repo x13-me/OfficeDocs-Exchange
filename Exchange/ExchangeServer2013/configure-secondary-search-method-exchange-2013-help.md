@@ -4,6 +4,8 @@ TOCTitle: Configure the secondary way for Outlook Voice Access users to search
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure the secondary way for Outlook Voice Access users to search in Exchange Server
 ms.reviewer:
 ms.assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72
 f1.keywords:
