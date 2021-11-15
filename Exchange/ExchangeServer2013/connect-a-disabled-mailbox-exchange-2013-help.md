@@ -7,6 +7,8 @@ ms:contentKeyID: 50387720
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to connect a disabled mailbox to an Active Directory user account in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

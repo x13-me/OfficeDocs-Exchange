@@ -6,6 +6,8 @@ ms:assetid: b513755c-5d3e-44fa-a6cb-771d48b544ac
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
 ms:contentKeyID: 61200295
 ms.reviewer: 
+ms.topic: article
+description: How to configure connection filtering on Edge Transport Servers in Exchange Server
 manager: serdars
 ms.author: serdars
 author: serdars
@@ -16,7 +18,7 @@ ms.topic: article
 mtps_version: v=EXCHG.150
 ---
 
-# Connection Filtering on Edge Transport Servers
+# Connection filtering on Edge Transport Servers
 
 _**Applies to:** Exchange Server 2013_
 
@@ -76,8 +78,8 @@ For bitmask data types, the IP Blocklist provider service returns a status code 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -107,8 +109,8 @@ For absolute value types, the IP Blocklist provider returns explicit responses t
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
