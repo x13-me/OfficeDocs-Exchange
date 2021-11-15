@@ -19,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-You can use the Exchange Management Shell to configure the way emails are sent and received through remote domains. The following demonstrates how to use the Exchange Management Shell to configure the way Exchange handles out of office replies.
+You can use the Exchange Management Shell to configure the way emails are sent and received through remote domains. The following information demonstrates how to use the Exchange Management Shell to configure the way Exchange handles out of office replies.
 
 ## What do you need to know before you begin?
 
