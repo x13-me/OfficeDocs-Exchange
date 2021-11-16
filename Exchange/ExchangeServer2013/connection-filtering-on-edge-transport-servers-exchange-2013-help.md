@@ -8,6 +8,7 @@ ms:contentKeyID: 61200295
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: serdars
 audience: ITPro
 f1.keywords:
