@@ -7,6 +7,8 @@ ms:contentKeyID: 49315511
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to connect Unified Messaging to a supported VoIP gateway in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
