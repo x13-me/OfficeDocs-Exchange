@@ -7,6 +7,8 @@ ms:contentKeyID: 49315443
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure the startup mode on a Client Access server in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
