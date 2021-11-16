@@ -6,15 +6,13 @@ ms:assetid: b513755c-5d3e-44fa-a6cb-771d48b544ac
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124320(v=EXCHG.150)
 ms:contentKeyID: 61200295
 ms.reviewer: 
-ms.topic: article
-description: How to configure connection filtering on Edge Transport Servers in Exchange Server
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: serdars
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
 mtps_version: v=EXCHG.150
 ---
 
