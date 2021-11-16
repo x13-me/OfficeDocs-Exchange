@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a call answering rule in Exchange Server
 ms.assetid: 0976f8f2-3449-44f1-b0d1-20c91622e827
 f1.keywords:
 - NOCSH

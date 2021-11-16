@@ -5,6 +5,8 @@ ms:assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863438(v=EXCHG.150)
 ms:contentKeyID: 50387719
 ms.reviewer: 
+ms.topic: article
+description: How to connect or restore a deleted mailbox in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -129,7 +131,7 @@ Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printe
 
 For detailed syntax and parameter information, see [Connect-Mailbox](/powershell/module/exchange/Connect-Mailbox).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully connected a deleted mailbox to a user account, do one of the following:
 
@@ -225,7 +227,7 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
 
    As in Step 2, the `Identity` parameter will accept GUID, Display Name, or LegacyExchangeDN values for the public folder mailbox.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully restored a deleted public folder mailbox, run the **Get-PublicFolder -GetChildren -\<public folder mailbox GUID\>** cmdlet. If the restore was successful, this cmdlet will work.
 
