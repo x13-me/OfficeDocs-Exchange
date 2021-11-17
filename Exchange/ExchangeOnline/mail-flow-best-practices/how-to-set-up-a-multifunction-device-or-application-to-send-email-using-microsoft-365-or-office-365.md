@@ -350,7 +350,6 @@ In the following diagram, the application or device in your organization's netwo
 - **Static IP address or address range**: Most devices or applications are unable to use a certificate for authentication. To authenticate your device or application, use one or more static IP addresses that are not shared with another organization.
 - **Connector**: Set up a connector in Exchange Online for email sent from your device or application.
 - **Port**: Port 25 is required. Ensure this port is not blocked on your network or by your ISP.
-- **Licensing**: SMTP relay doesn't use a specific Microsoft 365 or Office 365 mailbox to send email. Therefore, the users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Microsoft 365 or Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This license is the least expensive and it allows you to send email via Microsoft 365 or Office 365.
 
 ### Limitations of Microsoft 365 or Office 365 SMTP relay
 
