@@ -69,7 +69,7 @@ A common scenario in many Exchange deployments is that of creating an e-mail add
 If the recipients in a particular OU don't share any common properties that you can filter by, such as department or location, you can populate one of the custom attributes with a common value, as shown in this example.
 
 ```PowerShell
-Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox -CustomAttribute1 "SalesOU"
 ```
 
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.
