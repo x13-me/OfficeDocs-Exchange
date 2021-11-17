@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create an Email Address Policy in Exchange Server
 f1.keywords:
 - CSH
 mtps_version: v=EXCHG.150
@@ -31,8 +33,8 @@ When creating an email address policy, you can use the following email address t
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col>
+    <col>
     </colgroup>
     <thead>
     <tr class="header">
