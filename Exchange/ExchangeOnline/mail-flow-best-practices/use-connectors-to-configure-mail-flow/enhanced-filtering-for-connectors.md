@@ -71,6 +71,8 @@ Use the procedures in this article to enable Enhanced Filtering for Connectors o
   - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center).
   - **Organization Management** in [Exchange Online](../../permissions-exo/permissions-exo.md#role-groups).
 
+- Enhanced Filtering for Connectors is not supported in hybrid environments that use [Centralized Mail Transport](/exchange/transport-options).
+
 ### Use the Microsoft 365 Defender portal to configure Enhanced Filtering for Connectors on an inbound connector
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **Enhanced filtering**.
