@@ -18,7 +18,7 @@ ms.custom: seo-marvel-apr2020
 
 You can migrate the following functionalities from Google Workspace to Microsoft 365 or Office 365:
 
-- Mail
+- Mail & Rules
 - Calendar
 - Contacts
 
@@ -60,9 +60,11 @@ Other migration limitations are described in the following table:
 |
 
 > [!TIP]
-> If you will be [starting your migration batch with Exchange Online Powershell](perform-gspace-migration-powershell.md), as described later in this article, you can use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This will reduce the amount of data in your migration, as well as the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
-
-> If you wish to skip the migration of Gmail filters, you can use the `-SkipRules` parameter to prevent the migration of Outlook rules. For more information on using `-SkipRules`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch). 
+>Rules will be migrated and remain turned off by default. We advise users to verify the rules on Outlook before enabling them.
+>
+>If you will be [starting your migration batch with Exchange Online Powershell](perform-gspace-migration-powershell.md), as described later in this article, use the `-ExcludeFolder` parameter to prevent certain folders from being migrated. This reduces the amount of data in your migration, and the size of a user's new Exchange Online mailbox. You can identify folders you don't want to migrate by name, and you can also identify Gmail labels that apply to multiple messages in order to exclude those messages from the migration. For more information on using `-ExcludeFolder`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch).
+>
+> To skip the migration of Gmail filters, use the `-SkipRules` parameter to prevent the migration of Outlook rules. For more information on using `-SkipRules`, see [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch). 
 
 ## Prerequisites
 
