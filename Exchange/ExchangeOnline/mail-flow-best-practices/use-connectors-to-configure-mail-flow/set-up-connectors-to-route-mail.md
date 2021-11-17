@@ -128,7 +128,7 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 > [!NOTE]
 > Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
 
-- **For New EAC**
+#### For New EAC
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
  
