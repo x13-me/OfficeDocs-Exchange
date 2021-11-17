@@ -303,7 +303,7 @@ The following table describes the supported attributes for a CSV file for a stag
 <td><p>This password is set on the user account when the corresponding mail-enabled user in Exchange Online is converted to a mailbox during the migration.</p></td>
 </tr>
 <tr class="odd">
-<tc>[CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)<p>ForceChangePassword</p></td>
+<td>[CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)<p>ForceChangePassword</p></td>
 <td><p>Optional</p></td>
 <td><p><code>True</code> or <code>False</code></p></td>
 <td><p>Specifies whether a user must change the password the first time they sign in to their Exchange Online mailbox.</p>
