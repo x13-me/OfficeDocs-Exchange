@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create or modify a mobile device mailbox policy in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -67,7 +69,7 @@ You create a new mobile device mailbox policy using the New-MobileDeviceMailboxP
    New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
    ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mobile device mailbox policy, use one of the following options:
 
@@ -113,7 +115,7 @@ In the Shell, run the following command.
 Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully edited a mobile device mailbox policy, do one of the following:
 
