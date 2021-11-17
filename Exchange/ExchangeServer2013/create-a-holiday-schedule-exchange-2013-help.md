@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a holiday schedule in Exchange Server
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96
 f1.keywords:
 - NOCSH

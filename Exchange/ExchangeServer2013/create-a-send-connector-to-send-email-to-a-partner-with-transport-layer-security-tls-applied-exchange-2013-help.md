@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Create a Send connector to send email to a partner with TLS applied in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

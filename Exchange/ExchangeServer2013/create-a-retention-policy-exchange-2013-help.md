@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a Retention Policy in Exchange Server
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 f1.keywords:
 - NOCSH
