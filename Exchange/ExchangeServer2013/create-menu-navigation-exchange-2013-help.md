@@ -5,6 +5,10 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+descripion: How to create menu navigation in Exchange Server
+ms.topic: article
+description: How to ceate menu navigation in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl'
 ms.assetid: 3cfc9a01-0a61-4d15-9561-621568dc30d9
@@ -13,7 +17,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Create menu navigation in Exchange Server
+# Create menu navigation mapping in Exchange Server
 
 _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
