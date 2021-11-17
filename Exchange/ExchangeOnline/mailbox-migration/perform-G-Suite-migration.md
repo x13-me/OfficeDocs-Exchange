@@ -1,7 +1,7 @@
 ---
 title: Perform a Google Workspace migration to Microsoft 365 or Office 365
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 audience: Admin
 ms.topic: conceptual
