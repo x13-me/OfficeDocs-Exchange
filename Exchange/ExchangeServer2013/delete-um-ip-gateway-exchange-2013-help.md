@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a Unified Messaging IP gateway in Exchange Server
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 f1.keywords:
 - NOCSH

@@ -7,6 +7,8 @@ ms:contentKeyID: 50646520
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About delivery reports for administrators in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

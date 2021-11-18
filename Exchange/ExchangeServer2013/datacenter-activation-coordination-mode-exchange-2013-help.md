@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About the Datacenter Activation Coordination mode in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
