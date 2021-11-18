@@ -23,20 +23,17 @@ title: Disable Basic authentication in Exchange Online
 
 > [!NOTE]
 > If you've enabled _security defaults_ in your organization, Basic authentication is already disabled in Exchange Online. For more information, see [What are security defaults?](/azure/active-directory/conditional-access/concept-conditional-access-security-defaults).
-> 
+>
 > If you've reached this page because Basic authentication isn't working in your tenant, and you haven't set up security defaults or authentication policies, then we might have disabled Basic authentication in your tenant as part of our wider program to improve security across Exchange Online. Check your Message Center for any posts referring to Basic authentication, and read [Basic Authentication and Exchange Online](https://aka.ms/EXOBasicAuthLatest) for the latest announcements concerning Basic authentication.
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
 
-- Outlook 2013 or later (Outlook 2013 requires a registry key change. See [Enable Modern Authentication for Office 2013 on Windows devices](/microsoft-365/admin/security-and-compliance/enable-modern-authentication) for more information.)
-
+- Outlook 2013 or later (Outlook 2013 requires a registry key change. For more information, see [Enable Modern Authentication for Office 2013 on Windows devices](/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 - Outlook 2016 for Mac or later
-
 - Outlook for iOS and Android
-
 - Mail for iOS 11.3.1 or later
 
-If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using modern authentication with Office clients](/office365/enterprise/modern-auth-for-office-2013-and-2016).
+If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests. Disabling Basic authentication forces all client access requests to use modern authentication. For more information about modern authentication, see [Using modern authentication with Office clients](/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
 This topic explains how Basic authentication is used and blocked in Exchange Online, and the corresponding procedures for authentication policies.
 
@@ -45,7 +42,6 @@ This topic explains how Basic authentication is used and blocked in Exchange Onl
 Basic authentication is also known as _proxy authentication_ because the email client transmits the username and password to Exchange Online, and Exchange Online forwards or _proxies_ the credentials to an authoritative identity provider (IdP) on behalf of the email client or app. The IdP depends your organization's authentication model:
 
 - **Cloud authentication**: The IdP is Azure Active Directory.
-
 - **Federated authentication**: The IdP is an on-premises solution like Active Directory Federation Services (AD FS).
 
 These authentication models are described in the following sections. For more information, see [Choose the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn).
@@ -106,8 +102,12 @@ In an Exchange hybrid deployment, authentication for your on-premises mailboxes 
 
 You manage all aspects of authentication policies in Exchange Online PowerShell. The protocols and services in Exchange Online that you can block Basic authentication for are described in the following table.
 
-|**Protocol or service**|**Description**|**Parameter name**|
-|:-----|:-----|:-----|
+<br>
+
+****
+
+|Protocol or service|Description|Parameter name|
+|---|---|---|
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*AllowBasicAuthActiveSync*|
 |Autodiscover|Used by Outlook and EAS clients to find and connect to mailboxes in Exchange Online|*AllowBasicAuthAutodiscover*|
 |IMAP4|Used by IMAP email clients.|*AllowBasicAuthImap*|
@@ -120,18 +120,24 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Authenticated SMTP|Used by POP and IMAP clients to send email messages.|*AllowBasicAuthSmtp*|
 |Exchange Web Services (EWS)|A programming interface that's used by Outlook, Outlook for Mac, and third-party apps.|*AllowBasicAuthWebServices*|
 |PowerShell|Used to connect to Exchange Online with remote PowerShell. If you block Basic authentication for Exchange Online PowerShell, you need to use the Exchange Online V2 module to connect. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).|*AllowBasicAuthPowerShell*|
+|
 
 Typically, when you block Basic authentication for a user, we recommend that you block Basic authentication for all protocols. However, you can use the *AllowBasicAuth\** parameters (switches) on the **New-AuthenticationPolicy** and **Set-AuthenticationPolicy** cmdlets to selectively allow or block Basic authentication for specific protocols.
 
 For email clients and apps that don't support modern authentication, you need to allow Basic authentication for the protocols and services that they require. These protocols and services are described in the following table:
 
-|**Client**|**Protocols and services**|
+<br>
+
+****
+
+|Client|Protocols and services|
 |:-----|:-----|
-|Older EWS clients|• Autodiscover <br/>• EWS|
-|Older ActiveSync clients|• Autodiscover <br/>• ActiveSync|
-|POP clients|• POP3 <br/>• Authenticated SMTP|
-|IMAP clients|• IMAP4 <br/>• Authenticated SMTP|
-|Outlook 2010|• Autodiscover <br/>• MAPI over HTTP<br/>• Offline Address Book<br/>• Outlook Anywhere (RPC over HTTP)<br/>• Exchange Web Services (EWS)|
+|Older EWS clients|<ul><li>Autodiscover</li><li>EWS</li></ul>|
+|Older ActiveSync clients|<ul><li>Autodiscover</li><li>ActiveSync</li></ul>|
+|POP clients|<ul><li>POP3</li><li>Authenticated SMTP</li></ul>|
+|IMAP clients|<ul><li>IMAP4</li><li>Authenticated SMTP</li></ul>|
+|Outlook 2010|<ul><li>Autodiscover</li><li>MAPI over HTTP</li><li>Offline Address Book</li><li>Outlook Anywhere (RPC over HTTP)</li><li>Exchange Web Services (EWS)</li></ul>|
+|
 
 > [!NOTE]
 > Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).
@@ -385,29 +391,37 @@ Date: Wed, 31 Jan 2018 05:15:08 GMT
 Content-Length: 0
 ```
 
-## Manage Basic authentication in the Microsoft 365 Admin Center
+## Manage Basic authentication in the Microsoft 365 admin center
 
-In the Microsoft 365 Admin Center, under **Settings** > **Org Settings** > **Modern Authentication** you can designate the protocols in your tenant that no longer require Basic Authentication to be enabled.
-Behind the scenes, these options utilize Authentication Policies. If Authentication Policies were created in the past, modifying any of these selections will automatically create the first new Authentication Policy. This policy is visible only through PowerShell. For advanced customers that may already be utilizing Authentication Policies, changes within the Microsoft 365 Admin Center will modify their existing default policy. Look through [Azure AD Sign-in logs](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication#identify-legacy-authentication-use) to get a good idea of which protocols clients are using before making any changes.
+In the Microsoft 365 admin center at <https://admin.microsoft.com>, go **Settings** \> **Org Settings** \> **Modern Authentication**. In the **Modern authentication flyout** that appears, you can identify the protocols that no longer require Basic authentication.
 
-This option does not disable the two following legacy services. These options can only be disabled via PowerShell.
-AllowBasicAuthOutlookService
-AllowBasicAuthReportingWebServices
+Behind the scenes, these settings use authentication policies. If authentication policies were created in the past, modifying any of these selections will automatically create the first new authentication policy. This policy is visible only through PowerShell. For advanced customers that may already be using authentication policies, changes in the Microsoft 365 admin center will modify their existing default policy. Look through [Azure AD Sign-in logs](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication#identify-legacy-authentication-use) to see which protocols that clients are using before making any changes.
 
-```PowerShell
-Set-AuthenticationPolicy -AllowBasicAuthReportingWebServices:$false -AllowBasicAuthOutlookService:$false
-```
+Turning off Basic authentication in the Microsoft 365 admin center does not turn off the following legacy services:
 
-Additionally, this option does not implement the policy on the existing mailboxes. The policy is set as the default policy and it will be enabled for new mailboxes going forward. To apply the policy to existing mailboxes, use the following PowerShell commands to discovery the policy name, and then apply it to all existing mailboxes.
+- AllowBasicAuthOutlookService
+- AllowBasicAuthReportingWebServices
 
-```PowerShell
-Get-AuthenticationPolicy
-```
-After you get the Authentication Policy Name, run this to apply to all existing mailboxes.
+You can only turn off these settings in Exchange Online PowerShell.
 
-```PowerShell
-get-mailbox | foreach {set-user -Identity $_.ExchangeObjectID.tostring() -AuthenticationPolicy <AuthenticationPolicyName>}
-```
+1. Run the following command to find the name of the existing authentication policy:
+
+   ```PowerShell
+   Get-AuthenticationPolicy
+   ```
+
+2. Replace \<AuthenticationPolicyName\> with the value from the previous step, and then run the following command:
+
+   ```PowerShell
+   Set-AuthenticationPolicy -Identity "<AuthenticationPolicyName>" -AllowBasicAuthReportingWebServices:$false -AllowBasicAuthOutlookService:$false
+   ```
+
+3. The previous command affects any new mailboxes that you'll create, but not existing mailboxes. To apply the policy to existing mailboxes, use the \<AuthenticationPolicyName\> value in the following command:
+
+   ```powershell
+   $mbx = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited
+   $mbx | foreach {Set-User -Identity $_.ExchangeObjectID.tostring() -AuthenticationPolicy <AuthenticationPolicyName>}
+   ```
 
 ## Filter on-premises Active Directory user accounts that are synchronized to Exchange Online
 
