@@ -55,9 +55,9 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 ## Configure MailTips for recipients
 
-### Use the EAC to configure MailTips for recipients
+### Use the classic EAC to configure MailTips for recipients
 
-1. In the EAC, navigate to **Recipients**.
+1. In the classic EAC, navigate to **Recipients**.
 
 2. Select any of the following recipient tabs based on the recipient type:
 
