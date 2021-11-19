@@ -76,25 +76,27 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 On a computer that is domain joined to your on-premises organization, sign in to your Microsoft 365 or Office 365 account by using your global admin credentials, and start the Exchange Hybrid Configuration Wizard on the **Data migration** page of the Microsoft 365 admin center.
 
-1. In the Microsoft 365 Admin center, go to **Setup** \> **Data migration**.
+1. In the Microsoft 365 Admin center, go to **Setup** \> **Migrations**.
 
-    ![Go to Users \> Data migration in the admin center.](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
+2. On the **Migrations** page, choose **Email**.
 
-2. **Migration** page, under **Select your data service**, choose **Exchange**.
+3. On the **Migrate your email** page, choose **Get started**.
+ 
+4. On the **Email sources** page, choose **Download the Hybrid Configuration Wizard**.
 
-    ![On the Migration page select Exchange as your data service.](media/f8fe6289-9aa6-4bbe-9a8f-0f424405c0e6.png)
+5. On the Download and run the **Office 365 Hybrid Configuration Wizard** page, choose **Download application**
 
-3. On the first **Hybrid Configuration Wizard** page, choose **next** and on the **On-premises Exchange Server Organization** page, accept the default values and choose **next**.
+6. On the first **Hybrid Configuration Wizard** page, choose **next** and on the **On-premises Exchange Server Organization** page, accept the default values and choose **next**.
 
     By default the wizard connects to the Exchange server running the latest version.
 
-4. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Microsoft 365 or Office 365 organization choose **next**, and then choose **next** again once the connections and credentials have validated.
+7. On the Credentials page, choose **Use current Windows credentials** for on-premises Exchange server, and enter admin credentials for it and your Microsoft 365 or Office 365 organization choose **next**, and then choose **next** again once the connections and credentials have validated.
 
-5. On the **Hybrid Features** page, select **Minimal Hybrid Configuration** \> **next**.
+8. On the **Hybrid Features** page, select **Minimal Hybrid Configuration** \> **next**.
 
     ![On the Hybrid Features page select Minimal Hybrid Configuration.](media/40e3c3b9-5a95-4226-835f-eb99a23f9c18.png)
 
-6. On the **Ready for Update** page, choose **update** to prepare the on-premises mailboxes for migration.
+9. On the **Ready for Update** page, choose **update** to prepare the on-premises mailboxes for migration.
 
 ## Step 3: Run directory synchronization to create users in Microsoft 365 or Office 365
 <a name="dirsync"> </a>
