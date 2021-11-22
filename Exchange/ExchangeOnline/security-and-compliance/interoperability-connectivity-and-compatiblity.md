@@ -54,4 +54,4 @@ Exchange Online can be used as an SMTP delivery service to relay email messages 
   
 ## Feature availability
 
-To view feature availability across plans, standalone options, and on-premises solutions, see [Exchange Online service description](exchange-online-service-description.md).
+To view feature availability across plans, standalone options, and on-premises solutions, see [Exchange Online service description](exchange-online-service-description/exchange-online-service-description.md).
