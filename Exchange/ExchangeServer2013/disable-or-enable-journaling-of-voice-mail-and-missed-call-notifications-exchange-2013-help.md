@@ -7,6 +7,8 @@ ms:contentKeyID: 49354854
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Disable/enable voice mail and missed call journaling notifications in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH
