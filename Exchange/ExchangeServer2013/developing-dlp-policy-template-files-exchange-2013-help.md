@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to develop data loss prevention policy template files in Exchange Server 
 ms.assetid: 4b263547-aef4-4ee8-aa4f-fa64a5863189
 f1.keywords:
 - NOCSH
