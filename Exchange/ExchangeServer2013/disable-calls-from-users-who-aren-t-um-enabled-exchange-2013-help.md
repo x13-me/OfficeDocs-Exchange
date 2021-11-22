@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Disable calls from non-Unified Messaging-enabled users in Exchange Server
 ms.assetid: 272ff4ab-b4d9-4647-98e2-7c171f9dfc3f
 f1.keywords:
 - NOCSH
