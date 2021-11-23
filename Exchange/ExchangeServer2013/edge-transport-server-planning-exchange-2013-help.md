@@ -6,7 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn641596(v=EXCHG.150)
 ms:contentKeyID: 62221565
 ms.reviewer: 
 manager: serdars
-ms.author: serdars
+ms.author: serdarsms.topic: article
+description: Edge Transport server planning in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,10 +39,10 @@ When you're planning to deploy Edge Transport servers, you should consider the f
 
     <table>
     <colgroup>
-    <col style="width: 25%" />
-    <col style="width: 25%" />
-    <col style="width: 25%" />
-    <col style="width: 25%" />
+    <col />
+    <col />
+    <col />
+    <col />
     </colgroup>
     <thead>
     <tr class="header">
