@@ -6,7 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn641596(v=EXCHG.150)
 ms:contentKeyID: 62221565
 ms.reviewer: 
 manager: serdars
-ms.author: serdarsms.topic: article
+ms.author: serdars
+ms.topic: article
 description: Edge Transport server planning in Exchange Server 
 author: msdmaguire
 f1.keywords:
