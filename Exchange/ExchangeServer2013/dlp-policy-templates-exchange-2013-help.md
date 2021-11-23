@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: You can use data loss prevention (DLP) policy templates to get started with your DLP solution in Microsoft Exchange 2013.
 ms.assetid: c7b1a8e4-30d9-4409-85c5-f85ae023737d
 f1.keywords:
 - NOCSH
