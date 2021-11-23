@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable Exchange ActiveSync for a mailbox in Exchange Server
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 f1.keywords:
 - NOCSH

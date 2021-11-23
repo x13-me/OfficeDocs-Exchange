@@ -5,8 +5,12 @@ ms:assetid: ca47441f-1aa4-4958-aba5-18d51e59837e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124552(v=EXCHG.150)
 ms:contentKeyID: 50383001
 ms.reviewer: 
+ms.topic: article
+description: How to enable or disable email for a mail contact in Exchange Server
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or disable email for a mail contact
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -60,7 +64,7 @@ Disable-MailContact -Identity "Neil Black"
 
 For detailed syntax and parameter information, see [Disable-MailContact](/powershell/module/exchange/Disable-MailContact).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully disabled email for a mail contact, do one of the following:
 
@@ -138,7 +142,7 @@ When you're mail-enabling contacts in bulk, you first export the list of contact
 
     The command results display information about the new mail-enabled contacts.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully mail-enabled Active Directory contacts, do one of the following:
 
