@@ -30,12 +30,6 @@ On-premises Lync Server 2010 and Lync Server 2013 can interoperate with Exchange
     
 For more information about how to configure Skype for Business Server 2015 with Exchange Online, see [Configuring On-premises Skype for Business Server 2015 Integration with Exchange Online](/skypeforbusiness/deploy/integrate-with-exchange-server/outlook-web-app). For hybrid configurations, see [Supported Skype for Business Server 2015 hybrid configurations](/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
   
-### Microsoft SharePoint
-
-For customers who have deployed Microsoft SharePoint Server or SharePoint Online as part of an subscription plan, SharePoint can connect to Exchange Online for integrated services.
-  
-For more information about connecting SharePoint to Exchange Online, see [Use SharePoint Online on a custom domain together with other services](https://go.microsoft.com/fwlink/?LinkId=271805).
-  
 ## Features for external connectivity
 
 Exchange Online offers the following features for connecting with external applications and devices:
