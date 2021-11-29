@@ -7,6 +7,8 @@ ms:contentKeyID: 49319900
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or disable Journal Report Decryption in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

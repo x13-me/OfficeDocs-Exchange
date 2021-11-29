@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable single item recovery for a mailbox in Exchange Server
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 f1.keywords:
 - NOCSH
