@@ -89,6 +89,7 @@
 ### [S/MIME](../security-and-compliance/smime-exo/smime-exo.md)
 #### [Configure S/MIME](../security-and-compliance/smime-exo/configure-smime-exo.md)
 #### [Configure S/MIME for Outlook for iOS and Android](../clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android.md)
+## [Interoperability, connectivity, and compatibility](../security-and-compliance/interoperability-connectivity-and-compatiblity.md)
 ## [Mail flow rules](../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 ### [Conditions and exceptions](../security-and-compliance/mail-flow-rules/conditions-and-exceptions.md)
 ### [Mail flow rule actions](../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md)
