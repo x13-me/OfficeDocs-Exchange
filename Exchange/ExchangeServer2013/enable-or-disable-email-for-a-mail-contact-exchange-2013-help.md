@@ -9,8 +9,6 @@ ms.topic: article
 description: How to enable or disable email for a mail contact in Exchange Server
 manager: serdars
 ms.author: serdars
-ms.topic: article
-description: How to enable or disable email for a mail contact
 author: msdmaguire
 f1.keywords:
 - NOCSH
