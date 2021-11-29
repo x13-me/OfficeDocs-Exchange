@@ -21,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 Enabling journal report decryption allows the Journaling agent to attach a decrypted copy of a rights-protected message to the journal report. Before you enable journal report decryption, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)) server.
 
-For additional management tasks related to Information Rights Management (IRM), see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
+For other management tasks related to Information Rights Management (IRM), see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -29,7 +29,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-- Members of the super users group are granted an owner use license when they request a license from the AD RMS cluster. This allows them to decrypt all RMS-protected content created by that AD RMS cluster.
+- Members of the super users group are granted an owner use license when they request a license from the AD RMS cluster. This behavior allows them to decrypt all RMS-protected content created by that AD RMS cluster.
 
 - An AD RMS cluster must be installed in the Active Directory forest.
 
