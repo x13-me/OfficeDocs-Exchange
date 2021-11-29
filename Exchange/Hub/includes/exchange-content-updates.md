@@ -2,6 +2,14 @@
 
 
 
+## Week of November 22, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/24/2021 | [Interoperability, connectivity, and compatibility](/Exchange/security-and-compliance/interoperability-connectivity-and-compatiblity) | added |
+
+
 ## Week of November 15, 2021
 
 
@@ -28,23 +36,3 @@
 | 10/28/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
 | 10/28/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
 | 10/28/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
-
-
-## Week of October 18, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/18/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 10/18/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
-| 10/18/2021 | [Recreate missing arbitration mailboxes](/Exchange/architecture/mailbox-servers/recreate-arbitration-mailboxes?view=exchserver-2016) | modified |
-| 10/18/2021 | [Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery](/Exchange/high-availability/disaster-recovery/recover-exchange-servers?view=exchserver-2016) | modified |
-| 10/18/2021 | [Configure Exchange Server for shared permissions](/Exchange/permissions/split-permissions/configure-exchange-for-shared-permissions?view=exchserver-2016) | modified |
-| 10/18/2021 | [Configure Exchange Server for split permissions](/Exchange/permissions/split-permissions/configure-exchange-for-split-permissions?view=exchserver-2016) | modified |
-| 10/18/2021 | [Exchange dev/test environment in Azure](/Exchange/plan-and-deploy/deploy-new-installations/create-azure-test-environments?view=exchserver-2016) | modified |
-| 10/18/2021 | [Delegate the installation of Exchange servers](/Exchange/plan-and-deploy/deploy-new-installations/delegate-installations?view=exchserver-2016) | modified |
-| 10/18/2021 | [Upgrade Exchange to the latest Cumulative Update](/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2016) | modified |
-| 10/18/2021 | [Install the Exchange management tools](/Exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2016) | modified |
-| 10/18/2021 | [Release notes for Exchange Server](/Exchange/release-notes?view=exchserver-2016) | modified |
-| 10/22/2021 | [Digital certificates and encryption in Exchange Server](/Exchange/architecture/client-access/certificates?view=exchserver-2016) | modified |
-| 10/22/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | modified |
