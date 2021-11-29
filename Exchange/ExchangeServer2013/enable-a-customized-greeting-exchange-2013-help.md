@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Enable a customized greeting for Outlook Voice Access users in Exchange Server
 ms.assetid: abd418ec-2c65-4720-859d-c11a2698dc06
 f1.keywords:
 - NOCSH
