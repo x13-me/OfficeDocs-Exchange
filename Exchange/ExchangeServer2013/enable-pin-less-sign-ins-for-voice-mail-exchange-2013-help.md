@@ -7,13 +7,15 @@ ms:contentKeyID: 49315417
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Enable Unified Messaging voice mail PIN-less sign-ins in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Enable PIN-less sign-Ins for voice mail in Exchange Server
+# Enable PIN-less sign-ins for voice mail in Exchange Server
 
 _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
