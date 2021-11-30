@@ -4,6 +4,8 @@ TOCTitle: Enable or disable Outlook Voice Access for users
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to enable or disable Outlook Voice Access for users in Exchange Server
 ms.reviewer:
 ms.assetid: c0c244a0-ad2f-4adf-bc1f-1d55fd7ea2d5
 f1.keywords:

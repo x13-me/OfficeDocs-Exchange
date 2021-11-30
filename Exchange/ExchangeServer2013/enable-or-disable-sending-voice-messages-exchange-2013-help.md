@@ -4,6 +4,8 @@ TOCTitle: Enable or disable sending voice messages from Outlook Voice Access
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Enable or disable sending voice messages from Outlook Voice Access in Exchange Server
 ms.reviewer:
 ms.assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
 f1.keywords:
