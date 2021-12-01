@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Recommendations for Exchange 2013 sizing and configuration  
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -51,10 +53,10 @@ In Exchange Server 2013 Service Pack 1 or later, you can enable SSL offloading t
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

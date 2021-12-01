@@ -7,7 +7,8 @@ ms:contentKeyID: 48385357
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: msdmaguire\ms.topic: article
+description: Exchange Server enhanced language support
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
