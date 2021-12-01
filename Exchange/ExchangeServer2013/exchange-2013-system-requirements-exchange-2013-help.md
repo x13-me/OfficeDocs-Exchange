@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Learn about the Exchange 2013 requirements that you need before you install Exchange 2013.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
