@@ -5,6 +5,8 @@ ms:assetid: f318c947-81a8-4c18-975a-0f1e7868042a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.bridgeheadrolenotpresentinsite(v=EXCHG.150)
 ms:contentKeyID: 46629198
 ms.reviewer: 
+ms.topic: article
+description: Hub Transport role not detected in local site\_BridgeheadRoleNotPresentInSite
 manager: serdars
 ms.author: serdars
 author: msdmaguire

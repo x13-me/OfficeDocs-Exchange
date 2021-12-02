@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Using Log Parser Studio to analyze IIS logs of Exchange connections 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,6 +5,8 @@ ms:assetid: 742dfc32-353c-46a2-830e-68aed6a68ce0
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.iis32bitmode(v=EXCHG.150)
 ms:contentKeyID: 46628968
 ms.reviewer: 
+ms.topic: article
+description: Exchange Server install can't finish if IIS is running in 32-bit mode
 manager: serdars
 ms.author: serdars
 author: msdmaguire
