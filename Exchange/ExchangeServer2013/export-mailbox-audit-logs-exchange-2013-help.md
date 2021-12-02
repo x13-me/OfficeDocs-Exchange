@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Export mailbox audit logs in Exchange Server 
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 f1.keywords:
 - NOCSH
