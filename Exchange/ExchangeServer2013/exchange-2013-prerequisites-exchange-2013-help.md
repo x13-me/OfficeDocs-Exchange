@@ -145,7 +145,7 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
 
 The prerequisites that are needed to install Exchange 2013 on a Windows Server 2008 R2 SP1 computer depends on which Exchange roles you want to install. Read the section below that matches the roles you want to install.
 
-## Mailbox or Client Access server roles
+## Client Access or Mailbox server roles
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2008 R2 SP1 computers where you want to do one of the following:
 

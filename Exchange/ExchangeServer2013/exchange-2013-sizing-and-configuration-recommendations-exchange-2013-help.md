@@ -27,7 +27,7 @@ Correctly sizing Exchange 2013 is one of the most effective ways of preventing p
 
 It's important to start with the calculator prior to purchasing and deploying your hardware; you should first determine your overall resource requirements based on the calculator results. You can use the calculator to input your organization's demands, and use the results for guidance on how to scale your hardware. The calculator doesn't tell you how many servers to use, but it will allow you to estimate the impact of an Exchange workload on a given set of servers. You should experiment with different configurations to see how it affects performance, in order to meet the hardware and business needs specific to your environment.
 
-To simplify deployments and get the best use of hardware, the Exchange product group recommends multi-role servers. Using multi-role severs gives you better availability at the Client Access server (CAS) layer, as there are more Client Access servers available to handle requests during a failure scenario. The key design consideration for Exchange 2013 is to utilize "smaller" commodity type servers (scaling out instead of scaling up). Design and testing was done with two socket computers containing up to twenty processor cores, with up to 96 gigabytes (GB) of RAM. If your hardware is larger than this, you should consider other options, such as using that hardware for other needs and buying smaller servers for your Exchange 2013 environment, or virtualizing.
+To simplify deployments and get the best use of hardware, the Exchange product group recommends multi-role servers. Using multi-role severs gives you better availability at the Client Access server (CAS) layer, as there are more Client Access servers available to handle requests during a failure scenario. The key design consideration for Exchange 2013 is to utilize "smaller" commodity type servers (scaling out instead of scaling up). Design and testing were done with two socket computers containing up to twenty processor cores, with up to 96 gigabytes (GB) of RAM. If your hardware is larger than this, you should consider other options, such as using that hardware for other needs and buying smaller servers for your Exchange 2013 environment, or virtualizing.
 
 It is preferable to build more servers (scaling out) than it is to add resources to existing, larger servers (scaling up). Scaling out allows your environment to take advantage of the built-in high availability features in Exchange 2013. To understand why this configuration is recommended, please review in detail the posts [The Preferred Architecture](https://techcommunity.microsoft.com/t5/exchange-team-blog/the-preferred-architecture/ba-p/586755) and [Site Resilience Impact on Availability](https://techcommunity.microsoft.com/t5/exchange-team-blog/site-resilience-impact-on-availability/ba-p/586180).
 
@@ -88,7 +88,7 @@ In Exchange Server 2013 Service Pack 1 or later, you can enable SSL offloading t
 </tbody>
 </table>
 
-1 .NET Framework 4.6.1 requires post-release fixes if you want to install it on a server running Exchange 2013 CU13. For more information. see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
+1 .NET Framework 4.6.1 requires post-release fixes if you want to install it on a server running Exchange 2013 CU13. For more information. See [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
 2If you're upgrading to Exchange 2013 CU13, CU14, or CU15 from Exchange 2013 CU12 or earlier, we strongly recommend that you install Exchange 2013 CU13 before .NET Framework 4.6.1 and its related post-release fixes.
 
@@ -118,7 +118,7 @@ The Exchange performance team recommends installing all of the following perform
 
 - [Message routing latency if IPv6 is enabled in Exchange Server 2013](https://support.microsoft.com/help/2963590)
 
-- [High CPU usage by an application that depends on a Microsoft LDAP client in WIndows Server 2008 R2 SP1](https://support.microsoft.com/help/3004383)
+- [High CPU usage by an application that depends on a Microsoft LDAP client in Windows Server 2008 R2 SP1](https://support.microsoft.com/help/3004383)
 
 - [CPU usage is high when you use RPC over HTTP protocol in Windows 8.1 or Windows Server 2012 R2](https://support.microsoft.com/help/3041832)
 

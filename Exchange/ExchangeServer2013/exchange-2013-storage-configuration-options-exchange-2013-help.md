@@ -91,7 +91,7 @@ The following table provides a list of supported physical disk types and provide
 <tbody>
 <tr class="odd">
 <td><p>Serial ATA (SATA)</p></td>
-<td><p>SATA is a serial interface for ATA and integrated device electronics (IDE) disks. SATA disks are available in a variety of form factors, speeds, and capacities.</p>
+<td><p>SATA is a serial interface for ATA and integrated device electronics (IDE) disks. SATA disks are available in a various form factors, speeds, and capacities.</p>
 <p>In general, choose SATA disks for Exchange 2013 mailbox storage when you have the following design requirements:</p>
 <ul>
 <li><p>High capacity</p></li>
@@ -332,7 +332,7 @@ From a performance perspective, using large, slower disks for Exchange storage i
 
 This section provides best practice information about supported disk and array controller configurations.
 
-Redundant Array of Independent Disks (RAID) is often used to both improve the performance characteristics of individual disks (by striping data across several disks) as well as to provide protection from individual disk failures. With the advancements in Exchange 2013 high availability, RAID is not a required component for Exchange 2013 storage design. However, RAID is still an essential component of Exchange 2013 storage design for standalone servers as well as solutions that require storage fault tolerance.
+Redundant Array of Independent Disks (RAID) is often used to both improve the performance characteristics of individual disks (by striping data across several disks) and to provide protection from individual disk failures. With the advancements in Exchange 2013 high availability, RAID is not a required component for Exchange 2013 storage design. However, RAID is still an essential component of Exchange 2013 storage design for standalone servers and solutions that require storage fault tolerance.
 
 **Operating System, System, or Pagefile Volume**
 
@@ -677,7 +677,7 @@ The following table provides guidance on volume configurations.
 <td><p>Windows BitLocker (volume encryption)</p></td>
 <td><p>Windows BitLocker is a data protection feature in Windows Server 2008. BitLocker protects against data theft or exposure on computers that are lost or stolen, and it offers more secure data deletion when computers are decommissioned.</p></td>
 <td><p>Supported: All Exchange database and log files.</p></td>
-<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1. Exchange volumes with Bitlocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
+<td><p>Supported: All Exchange database and log files. Windows failover clusters require Windows Server 2008 R2 or Windows Server 2008 R2 SP1. Exchange volumes with BitLocker enabled are not supported on Windows failover clusters running earlier versions of Windows.</p>
 <p>For more information about Windows 7 BitLocker encryption, see <a href="/previous-versions/windows/it-pro/windows-7/ee449438(v=ws.10)">BitLocker Drive Encryption in Windows 7: Frequently Asked Questions</a>.</p></td>
 </tr>
 <tr class="odd">
