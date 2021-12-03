@@ -7,6 +7,8 @@ ms:contentKeyID: 46629098
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Installation of the first Exchange server in the organization can't be delegated
 author: msdmaguire
 f1.keywords:
 - NOCSH
