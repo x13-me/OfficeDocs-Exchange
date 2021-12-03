@@ -7,6 +7,8 @@ manager: serdars
 ms.topic: article
 description: Disable a UM auto attendant in Exchange Server
 ms.reviewer:
+ms.topic: article
+description: How to disable a UM auto attendant in Exchange Server
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae
 f1.keywords:
 - NOCSH

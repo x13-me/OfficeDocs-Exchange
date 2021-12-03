@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable a user for voice mail in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.EnableUnifiedMessagingWizardForm.EnableUnifiedMessagingWizardPage'
 ms.assetid: ad027767-5e14-4cb1-9f8a-0791d9188db5

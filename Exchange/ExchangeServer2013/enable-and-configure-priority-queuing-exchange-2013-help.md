@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to enable and configure priority queuing in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -17,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-*Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the message priority that's configured by the sender in Microsoft Outlook or Outlook Web App to influence the processing of the message by the Transport service on the Mailbox server. When priority queuing is enabled, High priority messages are transmitted to their destinations before Normal priority messages, and Normal priority messages are transmitted to their destinations before Low priority messages. For more information, see [Priority queuing](priority-queuing-exchange-2013-help.md).
+*Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the message priority that's configured by the sender in Microsoft Outlook or Outlook Web App to influence the processing of the message by the Transport service on the Mailbox server. When priority queuing is enabled, High priority messages are transmitted to their destinations before Normal priority messages, and Normal priority messages are transmitted to their destinations before Low-priority messages. For more information, see [Priority queuing](priority-queuing-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -29,7 +31,7 @@ _**Applies to:** Exchange Server 2013_
 
 - When you restart the Microsoft Exchange Transport service, mail flow on the server is temporarily interrupted.
 
-- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily reconfigure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

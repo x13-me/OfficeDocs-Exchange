@@ -5,6 +5,8 @@ ms:assetid: d909e329-2436-43f9-af75-a5ee14e67ebf
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis7httpcompressiondynamicnotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629153
 ms.reviewer: 
+ms.topic: article
+description: Exchange Server Setup unable to finish without IIS 7 component installed
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,7 +29,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -87,7 +89,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
