@@ -4,6 +4,8 @@ TOCTitle: Include text with the email message sent when a PIN Is reset
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to add text to the email sent when a PIN is reset in Exchange Server
 ms.reviewer:
 ms.assetid: f7a4d775-a588-412f-ac2c-11ab1a5c67eb
 f1.keywords:

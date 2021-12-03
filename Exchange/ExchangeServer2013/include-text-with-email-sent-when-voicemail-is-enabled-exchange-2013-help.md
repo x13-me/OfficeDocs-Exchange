@@ -4,6 +4,8 @@ TOCTitle: Include text with the email message sent when a user Is enabled for vo
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Modify the email a user gets when enabled for voice mail in Exchange Server
 ms.reviewer:
 ms.assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63
 f1.keywords:

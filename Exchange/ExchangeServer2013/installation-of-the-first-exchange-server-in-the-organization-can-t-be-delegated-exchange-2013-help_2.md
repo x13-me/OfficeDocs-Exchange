@@ -5,7 +5,10 @@ ms:assetid: 4cf9f1a1-aeac-455b-a5c3-efcd4185a467
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegatedclientaccessfirstinstall(v=EXCHG.150)
 ms:contentKeyID: 46628932
 ms.reviewer: 
-manager: serdars
+manager:
+ms.topic: article
+description: Installation of first Exchange server in the organization can't be delegated  
+serdars
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
