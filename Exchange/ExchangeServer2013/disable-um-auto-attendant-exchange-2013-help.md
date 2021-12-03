@@ -4,8 +4,6 @@ TOCTitle: Disable a UM auto attendant
 ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.topic: article
-description: Disable a UM auto attendant in Exchange Server
 ms.reviewer:
 ms.topic: article
 description: How to disable a UM auto attendant in Exchange Server

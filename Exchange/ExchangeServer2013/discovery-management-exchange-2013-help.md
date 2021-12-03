@@ -82,7 +82,7 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table >
 <colgroup>
 <col  />
 <col  />
