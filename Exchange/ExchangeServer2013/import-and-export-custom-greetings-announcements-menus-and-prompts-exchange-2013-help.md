@@ -5,6 +5,8 @@ ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/library/Ee681667(v=EXCHG.150)
 ms:contentKeyID: 53366393
 ms.reviewer: 
+ms.topic: article
+description: Import export custom greetings, announcements, menus, and prompts in Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
