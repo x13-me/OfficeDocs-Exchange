@@ -9,7 +9,6 @@ manager: serdars
 ms.author: serdars
 author: serdars
 ms.topic: article
-ms.topic: article
 description: Exchange integration with SharePoint and Lync 
 f1.keywords:
 - NOCSH
