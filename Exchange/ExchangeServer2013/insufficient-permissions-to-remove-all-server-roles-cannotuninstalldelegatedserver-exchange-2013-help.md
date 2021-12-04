@@ -7,6 +7,8 @@ ms:contentKeyID: 46628832
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange Server setup failed because uninstalling all server roles failed
 author: msdmaguire
 f1.keywords:
 - NOCSH

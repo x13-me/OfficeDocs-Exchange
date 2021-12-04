@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to use Exchange Server Setup to install the Mailbox and Client Access roles
 f1.keywords:
 - CSH
 mtps_version: v=EXCHG.150
