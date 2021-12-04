@@ -11,9 +11,6 @@ author: serdars
 ms.topic: article
 description: Exchange integration with SharePoint and Lync 
 f1.keywords:
-- NOCSH
-mtps_version: v=EXCHG.150
-description: Features that sync with SharePoint and Lync
 ---
 
 # Integration with SharePoint and Lync
