@@ -5,8 +5,12 @@ ms:assetid: c063e2bd-2444-480d-8b35-73f31064a31b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876936(v=EXCHG.150)
 ms:contentKeyID: 49319930
 ms.reviewer: 
+ms.topic: article
+description: How to 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Journal report decryption in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

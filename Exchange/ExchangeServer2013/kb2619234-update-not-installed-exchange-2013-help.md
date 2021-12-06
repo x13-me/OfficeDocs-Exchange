@@ -7,6 +7,8 @@ ms:contentKeyID: 46629145
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange Setup can't continue because update KB2619234 isn't installed
 author: msdmaguire
 f1.keywords:
 - NOCSH
