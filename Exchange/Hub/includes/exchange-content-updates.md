@@ -2,6 +2,18 @@
 
 
 
+## Week of November 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/29/2021 | [How and when to decommission your on-premises Exchange servers in a hybrid deployment](/Exchange/decommission-on-premises-exchange) | modified |
+| 11/29/2021 | [Manage dynamic distribution group in Exchange Online](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) | modified |
+| 11/29/2021 | [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync?view=exchserver-2016) | modified |
+| 11/30/2021 | [Track and Prevent Migration Data Loss in Exchange Online](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
+| 12/1/2021 | [Exchange Server: Address rewriting on Edge Transport servers](/Exchange/architecture/edge-transport-servers/address-rewriting?view=exchserver-2016) | modified |
+
+
 ## Week of November 22, 2021
 
 
@@ -23,16 +35,3 @@
 | 11/17/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
 | 11/19/2021 | [Configure custom MailTips for recipients in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/configure-custom-mailtips) | modified |
 | 11/19/2021 | [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate) | modified |
-
-
-## Week of October 25, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/26/2021 | [Fix email delivery issues for error code 550 5.4.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-4-1-in-exchange-online) | modified |
-| 10/26/2021 | [Turn off access to the Exchange admin center](/Exchange/architecture/client-access/disable-exchange-admin-center-access?view=exchserver-2016) | modified |
-| 10/26/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 10/28/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
-| 10/28/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 10/28/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
