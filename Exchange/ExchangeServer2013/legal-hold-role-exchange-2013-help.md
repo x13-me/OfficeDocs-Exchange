@@ -9,8 +9,6 @@ manager: serdars
 ms.author: serdars
 author: msdmaguire
 ms.topic: article
-description: The Legal Hold role in Exchange
-description: How to 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
