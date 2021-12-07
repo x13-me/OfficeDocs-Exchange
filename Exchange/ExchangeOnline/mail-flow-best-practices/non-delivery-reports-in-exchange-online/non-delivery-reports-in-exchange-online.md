@@ -22,6 +22,17 @@ description: "Admins can learn about non-delivery reports (also known as NDRs or
 
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. Non-delivery can be caused by something as simple as a typo in an email address. NDRs include an error code that indicates why your email wasn't delivered, solutions to help you get your email delivered, a link to more help on the web, and technical details for administrators. Find out [What's included in an NDR?](#whats-included-in-an-ndr).
 
+## Run Non-delivery report (NDR) diagnostics
+
+You can run an automated diagnostic to know more about the decription of the NDR, possible cause and solution by running the following NDR diagnostic. Please find the NDR code or Status code from the Undeliverable/Non-Delivery Report. 
+
+To run the diagnostic check, click the button below. 
+
+> [!div class="nextstepaction"]
+> [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
+
+A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or eror message and and click **Run Tests**.
+
 ## Find my NDR code and get help delivering my email
 
 The following table contains the NDR codes (also called enhanced status codes) for the most common bounce messages and NDRs that you might encounter in Exchange Online.
