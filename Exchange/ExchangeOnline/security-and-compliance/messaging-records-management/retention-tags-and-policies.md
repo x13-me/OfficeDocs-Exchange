@@ -200,8 +200,8 @@ You can run an automated diagnostic check on a user's mailbox to check and valid
 To run the diagnostic check, click the button below. 
 
 > [!div class="nextstepaction"]
-> [Run Tests: Archive Mailbox](https://aka.ms/PillarRetentionPolicy)
-
-![Run diagnostics on retention policy settings.](https://user-images.githubusercontent.com/40893023/145092381-465d8490-5676-443b-ba07-84c09ef39d4b.png)
+> [Run Tests: Retention Policy](https://aka.ms/PillarRetentionPolicy)
 
 A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
+
+![Run diagnostics on retention policy settings.](https://user-images.githubusercontent.com/40893023/145092381-465d8490-5676-443b-ba07-84c09ef39d4b.png)
