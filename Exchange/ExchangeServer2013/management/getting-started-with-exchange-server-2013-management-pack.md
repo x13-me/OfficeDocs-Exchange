@@ -29,7 +29,7 @@ The **Active Alerts** view shows you all the alerts that are raised and are curr
 
 ## Organization Health - What is the impact?
 
-If you see an alert for in the Active Alerts view, the first thing you want to do is check the **Organization Health** view. This is the primary source of information for the overall health of your organization. It gives you specifically what is impacted in your organization like Active Directory Sites and Database Availability Groups.
+If you see an alert for in the Active Alerts view, the first thing you want to do is check the **Organization Health** view. This view is the primary source of information for the overall health of your organization. It gives you specifically what is impacted in your organization like Active Directory Sites and Database Availability Groups.
 
 ![Organization Health.](images/Dn195908.603c920b-7b88-4956-87d9-09d93fa6cba3(EXCHG.150).png "Organization Health")
 
@@ -41,11 +41,11 @@ The **Server Health** view provides details about individual servers in your org
 
 ## Monitoring Categories
 
-While going through the three views in the Exchange Server 2013 dashboard, you may have noticed that in addition to the **State** column, you have four additional health indicators.
+While going through the three views in the Exchange Server 2013 dashboard, you may have noticed that in addition to the **State** column, you have four more health indicators.
 
 ![Exchange health indicators.](images/Dn195908.dd10ed0b-abe5-41aa-8d43-b4fb10133984(EXCHG.150).png "Exchange health indicators")
 
-Each of these health indicators give you an overview of specific aspects of your Exchange deployment.
+Each of these health indicators gives you an overview of specific aspects of your Exchange deployment.
 
 - **Customer Touch Points**: This shows you what your users are experiencing. If this indicator is healthy, it means that the problem is probably not impacting your users. For example, assume that a DAG member is having problems, but the database failed over successfully. In this case, you will see unhealthy indicators for that particular DAG, but the customer touch points indicator will show healthy because the users are not experiencing any service interruption.
 
