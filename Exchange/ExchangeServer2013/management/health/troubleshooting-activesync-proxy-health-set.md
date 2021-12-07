@@ -19,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The ActiveSync.Proxy health set monitors the health of the Exchange ActiveSync infrastructure on your Client Access servers (CAS). If you receive an alert that specifies that the ActiveSync.Proxy health set is unhealthy, this altert indicates an issue that may affect the Exchange ActiveSync components on the CAS indicated in the alert.
+The ActiveSync.Proxy health set monitors the health of the Exchange ActiveSync infrastructure on your Client Access servers (CAS). If you receive an alert that specifies that the ActiveSync.Proxy health set is unhealthy, this alert indicates an issue that may affect the Exchange ActiveSync components on the CAS indicated in the alert.
 
 ## Explanation
 
