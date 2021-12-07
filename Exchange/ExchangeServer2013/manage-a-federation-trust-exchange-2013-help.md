@@ -7,6 +7,8 @@ ms:contentKeyID: 49289152
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage a federation trust in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
