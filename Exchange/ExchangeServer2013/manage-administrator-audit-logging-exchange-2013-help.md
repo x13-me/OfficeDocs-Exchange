@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd335109(v=EXCHG.150)
 ms:contentKeyID: 50117640
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to Manage administrator audit logging in Microsoft Exchange 2013 
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
