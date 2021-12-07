@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to manage dynamic distribution groups in Exchange 2013
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage'
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca

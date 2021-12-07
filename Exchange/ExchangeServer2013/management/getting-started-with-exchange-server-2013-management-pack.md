@@ -5,6 +5,8 @@ ms:assetid: 72d1609f-ab32-44d8-aa40-b1de587442d2
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195908(v=EXCHG.150)
 ms:contentKeyID: 53181782
 ms.reviewer: 
+ms.topic: article
+description: How to get started with Exchange Server 2013 Management Pack
 manager: serdars
 ms.author: serdars
 author: msdmaguire

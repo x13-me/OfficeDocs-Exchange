@@ -5,8 +5,11 @@ ms:assetid: 5e3d40c1-9230-467e-be80-633407078468
 ms:mtpsurl: https://technet.microsoft.com/library/Ee758046(v=EXCHG.150)
 ms:contentKeyID: 53181776
 ms.reviewer: 
+ms.topic: article
+description: Microsoft Exchange Server 2013 Management Pack Guide
 manager: serdars
 ms.author: serdars
+
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -47,8 +50,8 @@ The following sections of this guide provide detailed information about the mana
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

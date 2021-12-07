@@ -4,6 +4,8 @@ TOCTitle: Manage mail-enabled security groups
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage mail-enabled security groups in Microsoft Exchange 2013
 ms.reviewer:
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 f1.keywords:

@@ -5,9 +5,12 @@ ms:assetid: 3a12acb0-a6b7-4452-9306-a3d000c94a50
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195892(v=EXCHG.150)
 ms:contentKeyID: 53181763
 ms.reviewer: 
+ms.topic: article
+description: About Microsoft Exchange 2013 Management Pack Health Sets
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

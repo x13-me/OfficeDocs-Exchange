@@ -4,6 +4,8 @@ TOCTitle: Manage equipment mailboxes
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage equipment mailboxes in Exchange 2013
 ms.reviewer:
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 f1.keywords:

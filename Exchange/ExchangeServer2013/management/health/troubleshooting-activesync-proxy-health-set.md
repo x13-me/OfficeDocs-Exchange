@@ -5,6 +5,8 @@ ms:assetid: f10acbb8-4d2e-43fb-b3a5-6dbb7a529e04
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.activesync.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720912
 ms.reviewer: 
+ms.topic: article
+description: How to troubleshoot the ActiveSync.Proxy health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
