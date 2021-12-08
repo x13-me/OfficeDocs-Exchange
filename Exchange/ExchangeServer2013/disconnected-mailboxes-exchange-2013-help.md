@@ -4,6 +4,8 @@ TOCTitle: Disconnected mailboxes
 ms:assetid: 508ebe2b-387d-4867-bdb0-028ef351ce56
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232039(v=EXCHG.150)
 ms:contentKeyID: 50387716
+ms.topic: article
+description: Understanding disconnected mailboxes
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -123,11 +125,11 @@ The following table summarizes the information about disconnected mailboxes, inc
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -194,8 +196,8 @@ The following table contains links to topics that will help you manage disconnec
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

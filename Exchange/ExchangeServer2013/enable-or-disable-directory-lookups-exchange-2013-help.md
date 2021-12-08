@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable directory lookups in Exchange Server
 ms.assetid: c0768815-8578-4385-8d4c-7d1e40304cec
 f1.keywords:
 - NOCSH

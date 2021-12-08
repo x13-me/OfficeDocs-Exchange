@@ -7,6 +7,8 @@ ms:contentKeyID: 46628796
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Disaster Recovery setup fails due to missing Mailbox database drive spec
 author: msdmaguire
 f1.keywords:
 - NOCSH

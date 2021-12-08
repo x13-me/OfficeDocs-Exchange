@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Common message approval scenarios in Exchange Server.
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
 f1.keywords:
 - NOCSH

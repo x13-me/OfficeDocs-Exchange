@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to add or remove an In-Place Hold in Exchange Server
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 f1.keywords:
 - NOCSH

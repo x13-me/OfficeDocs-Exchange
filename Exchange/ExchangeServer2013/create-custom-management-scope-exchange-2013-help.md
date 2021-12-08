@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+descripton: How to create a custom management scope for In-Place eDiscovery in Exchange Server
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 f1.keywords:
 - NOCSH

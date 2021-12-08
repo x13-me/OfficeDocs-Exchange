@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure Voice Mail Preview partner services for users in Exchange Server
 ms.assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 f1.keywords:
 - NOCSH

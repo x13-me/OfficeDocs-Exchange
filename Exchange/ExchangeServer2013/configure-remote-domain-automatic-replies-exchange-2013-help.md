@@ -7,13 +7,15 @@ ms:contentKeyID: 49300519
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure remote domain automatic replies
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Configure remote domain automatic replies
+# C
 
 _**Applies to:** Exchange Server 2013_
 

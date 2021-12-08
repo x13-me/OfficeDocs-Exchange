@@ -7,6 +7,8 @@ ms:contentKeyID: 48385058
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure mail flow and client access in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -193,9 +195,9 @@ After you've configured the external URL on the Client Access server virtual dir
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -240,8 +242,8 @@ To verify that you have successfully configured the external URL on the Client A
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col/>
+    <col/>
     </colgroup>
     <thead>
     <tr class="header">
@@ -337,9 +339,9 @@ After you've configured the internal URL on the Client Access server virtual dir
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -376,8 +378,8 @@ To verify that you have successfully configured the internal URL on the Client A
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col/>
+    <col/>
     </colgroup>
     <thead>
     <tr class="header">
@@ -454,9 +456,9 @@ After you've configured the internal URL on the Client Access server virtual dir
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -488,8 +490,8 @@ To verify that you have successfully configured the internal URL on the Client A
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col/>
+    <col/>
     </colgroup>
     <thead>
     <tr class="header">

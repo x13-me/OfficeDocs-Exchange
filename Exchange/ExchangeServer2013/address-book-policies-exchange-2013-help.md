@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: HOw to segment your global address list into groups to create customized GALs in Outlook and Outlook Web App
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 f1.keywords:
 - NOCSH

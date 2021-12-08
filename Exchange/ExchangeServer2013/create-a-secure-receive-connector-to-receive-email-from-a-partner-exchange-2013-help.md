@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create a secure Receive connector to receive email from a partner in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

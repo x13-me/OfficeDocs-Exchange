@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Setup can't finish without IIS 7 component installed
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -27,7 +29,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -87,7 +89,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

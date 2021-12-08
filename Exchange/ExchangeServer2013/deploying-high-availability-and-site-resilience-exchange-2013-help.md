@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638129(v=EXCHG.150)
 ms:contentKeyID: 48385062
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to deploy high availability and site resilience in Exchange Server
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -67,10 +69,10 @@ The settings for each network adapter in each node are detailed in the following
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

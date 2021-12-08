@@ -7,6 +7,8 @@ ms:contentKeyID: 49315404
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable voice mail users to receive faxes in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

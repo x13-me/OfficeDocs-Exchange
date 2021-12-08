@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a Unified Messaging mailbox policy in Exchange Server 
 ms.assetid: c8758464-3c52-4dd3-b2a6-142a99bb0628
 f1.keywords:
 - NOCSH

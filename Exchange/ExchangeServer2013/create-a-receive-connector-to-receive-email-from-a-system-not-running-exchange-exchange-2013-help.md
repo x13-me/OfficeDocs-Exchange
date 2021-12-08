@@ -7,6 +7,8 @@ ms:contentKeyID: 49289337
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create a Receive connector to receive email from a system that doesn't run Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: For Exchange Server 2013 setup Exchange 2007 servers must be upgraded to SP 3 Rollup 10
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Enable calls from users who are not Unified Messaging-enabled in Exchange Server
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 f1.keywords:
 - NOCSH

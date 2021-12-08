@@ -7,6 +7,8 @@ ms:contentKeyID: 49315464
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to connect Unified Messaging to your telephone system in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

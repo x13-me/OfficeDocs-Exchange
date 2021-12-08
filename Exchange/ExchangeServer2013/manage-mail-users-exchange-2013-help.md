@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to manage mail users in Exchange 2013
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage'
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f

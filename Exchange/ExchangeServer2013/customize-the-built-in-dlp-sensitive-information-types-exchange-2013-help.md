@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to customize built-in DLP sensitive information types in Exchange Server
 ms.assetid: 3f8bf141-2e7c-4ea7-b102-dfd6c41539da
 f1.keywords:
 - NOCSH

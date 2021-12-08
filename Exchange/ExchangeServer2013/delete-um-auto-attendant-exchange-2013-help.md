@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a Unified Messaging auto attendant in Exchange Server
 ms.assetid: 92846bbc-e6b9-45fc-8702-ef5c92eeb08f
 f1.keywords:
 - NOCSH

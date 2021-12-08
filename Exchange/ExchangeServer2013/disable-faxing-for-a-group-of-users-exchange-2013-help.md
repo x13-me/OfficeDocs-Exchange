@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable faxing for a group of users in Exchange Server
 ms.assetid: 1c57c3ba-2b0e-43dd-9b28-43bada1592c5
 f1.keywords:
 - NOCSH

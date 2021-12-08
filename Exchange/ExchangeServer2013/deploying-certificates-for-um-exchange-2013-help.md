@@ -7,6 +7,8 @@ ms:contentKeyID: 51439481
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to deploy certificates for Unified Messaging in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

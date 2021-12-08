@@ -7,6 +7,8 @@ ms:contentKeyID: 51541779
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage certificates in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

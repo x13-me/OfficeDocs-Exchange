@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to import a custom DLP policy template from a file in Exchange Server
 ms.assetid: 83f49dbd-f9b1-498e-b548-1529c5e1ccdb
 f1.keywords:
 - NOCSH

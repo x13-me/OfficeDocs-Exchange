@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable missed call notifications for a user in Exchange Server
 ms.assetid: aa0cbb60-5422-474f-af16-621aade31c1f
 f1.keywords:
 - NOCSH

@@ -7,6 +7,8 @@ ms:contentKeyID: 49289439
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage linked role groups in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

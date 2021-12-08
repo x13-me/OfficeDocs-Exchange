@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the maximum call duration in Exchange Server
 ms.assetid: 01aa40d2-f918-472b-bace-158222143484
 f1.keywords:
 - NOCSH

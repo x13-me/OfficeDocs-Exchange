@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create an In-Place eDiscovery search in Exchange Server
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 f1.keywords:
 - NOCSH
