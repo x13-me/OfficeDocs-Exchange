@@ -7,14 +7,12 @@ ms:contentKeyID: 59888992
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-ms.topic: article
 description: Managed availability in Microsoft Exchange 2013
 author: serdars
 ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
-description: The manner in which administrators ensure availability of Exchange Server 2013 organization
 ---
 
 # Managed Availability
