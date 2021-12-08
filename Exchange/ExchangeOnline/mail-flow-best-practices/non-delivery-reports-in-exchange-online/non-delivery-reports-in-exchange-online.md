@@ -31,7 +31,7 @@ To run the diagnostic check, click the button below.
 > [!div class="nextstepaction"]
 > [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
 
-A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or eror message and and click **Run Tests**.
+A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or error message and select **Run Tests**.
 
 ## Find my NDR code and get help delivering my email
 
