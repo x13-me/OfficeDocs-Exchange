@@ -26,7 +26,7 @@ When there's a problem delivering an email message that you sent, Microsoft 365 
 
 You can run an automated diagnostic to know more about the decription of the NDR, possible cause and solution by running the following NDR diagnostic. Please find the NDR code or Status code from the Undeliverable/Non-Delivery Report. 
 
-To run the diagnostic check, click the button below. 
+To run the diagnostic check, select the following button: 
 
 > [!div class="nextstepaction"]
 > [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
