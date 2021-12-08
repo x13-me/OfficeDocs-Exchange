@@ -1,4 +1,3 @@
-are not
 ---
 title: 'AutoReseed: Exchange 2013 Help'
 TOCTitle: AutoReseed
