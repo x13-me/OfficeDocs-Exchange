@@ -4,6 +4,8 @@ TOCTitle: Domains
 ms:assetid: 11748c2d-2e32-43a4-b77d-e0c17db6200b
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673041(v=EXCHG.150)
 ms:contentKeyID: 49289175
+ms.topic: article
+description: Learn about Domains in Exchange 2013.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

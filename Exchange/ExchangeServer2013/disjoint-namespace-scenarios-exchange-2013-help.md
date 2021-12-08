@@ -4,6 +4,8 @@ TOCTitle: Disjoint namespace scenarios
 ms:assetid: 90101d49-6f45-44be-8a93-eeb2c8283e3b
 ms:mtpsurl: https://technet.microsoft.com/library/Bb676377(v=EXCHG.150)
 ms:contentKeyID: 49289351
+ms.topic: article
+description: Learn about disjoint namespaces and the supported scenarios for deploying Microsoft Exchange 2013 in a domain that has a disjoint namespace.
 ms.reviewer:
 manager: serdars
 ms.author: serdars
