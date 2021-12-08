@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to modify the email notice of a fax received in Exchange Server
 ms.assetid: 48244e58-b7d6-4f0e-bbae-d22bf0fc11ff
 f1.keywords:
 - NOCSH

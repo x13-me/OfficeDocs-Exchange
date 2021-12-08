@@ -7,6 +7,8 @@ ms:contentKeyID: 62613984
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About Managed Store information store processes in Exchange 2013
 author: serdars
 ms.topic: article
 f1.keywords:
