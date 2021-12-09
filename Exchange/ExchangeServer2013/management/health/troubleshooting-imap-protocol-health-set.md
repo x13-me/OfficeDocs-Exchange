@@ -7,6 +7,8 @@ ms:contentKeyID: 49720845
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the IMAP.Protocol health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

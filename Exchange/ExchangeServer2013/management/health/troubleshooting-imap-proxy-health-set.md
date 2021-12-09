@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap.proxy(v=EXCH
 ms:contentKeyID: 49720728
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the IMAP.Proxy health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.fips(v=EXCHG.150)
 ms:contentKeyID: 49720857
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the FIPS health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -26,9 +28,9 @@ The **FIPS** service is monitored using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
