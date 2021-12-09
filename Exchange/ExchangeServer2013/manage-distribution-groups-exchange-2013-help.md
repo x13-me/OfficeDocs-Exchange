@@ -4,6 +4,8 @@ TOCTitle: Create and manage distribution groups
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to create and manage distribution groups in Microsoft Exchange 2013
 ms.reviewer:
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDistributionGroupWizardForm.CreateDistributionGroupIntroductionWizardPage'

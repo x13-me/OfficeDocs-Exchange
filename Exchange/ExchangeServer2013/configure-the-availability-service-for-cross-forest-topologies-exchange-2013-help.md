@@ -7,6 +7,8 @@ ms:contentKeyID: 51588094
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure the Availability service for cross-forest topologies in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -70,7 +72,7 @@ If you choose to configure cross-forest availability with trust, and also choose
 
 This example configures trusted cross-forest availability with a service account.
 
-Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "\<Remote Forest Domain>\Exchange servers"
 
 For detailed information about syntax and parameters, see the following topics:
 

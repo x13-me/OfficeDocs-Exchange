@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure deleted item retention and recoverable items quotas in Exchange Server
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

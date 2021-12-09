@@ -7,6 +7,8 @@ ms:contentKeyID: 49361077
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: In Exchange, transport rules specify what to do with certain messages
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -39,11 +41,11 @@ The actions that are available in transport rules on Mailbox servers are describ
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,11 +283,11 @@ A small subset of actions that are available on Mailbox servers are also availab
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -419,9 +421,9 @@ The property values that are used for actions in transport rules are described i
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

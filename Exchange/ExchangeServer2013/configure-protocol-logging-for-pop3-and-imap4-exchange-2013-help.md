@@ -7,6 +7,8 @@ ms:contentKeyID: 50395397
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Learn to configure protocol logging for POP3 and IMAP4 in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

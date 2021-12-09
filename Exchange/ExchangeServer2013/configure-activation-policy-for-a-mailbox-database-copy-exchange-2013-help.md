@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd298046(v=EXCHG.150)
 ms:contentKeyID: 48385199
 ms.reviewer: 
 manager: serdars
+ms.topic: article
 ms.author: serdars
 author: msdmaguire
+description: How to configure activation policy for a mailbox database copy.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

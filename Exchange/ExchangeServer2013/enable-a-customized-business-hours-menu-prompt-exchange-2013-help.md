@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable a customized business hours menu prompt in Exchange Server
 ms.assetid: 89053e84-3490-4dc6-ade3-9b6c5dbf4020
 f1.keywords:
 - NOCSH

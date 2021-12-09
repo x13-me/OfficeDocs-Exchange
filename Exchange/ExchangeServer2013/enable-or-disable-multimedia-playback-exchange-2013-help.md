@@ -4,6 +4,8 @@ TOCTitle: Enable or disable multimedia playback of protected voice messages
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Enable protected voice message multimedia playback in Exchange Server 
 ms.reviewer:
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
 f1.keywords:

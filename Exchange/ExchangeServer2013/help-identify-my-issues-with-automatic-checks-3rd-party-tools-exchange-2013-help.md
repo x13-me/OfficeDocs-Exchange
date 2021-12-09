@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use automatic checks to find Exchange configuration third-party tool issues
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -30,9 +32,9 @@ We'll check to see if you have the necessary pre-requisites on your Windows 7 x6
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

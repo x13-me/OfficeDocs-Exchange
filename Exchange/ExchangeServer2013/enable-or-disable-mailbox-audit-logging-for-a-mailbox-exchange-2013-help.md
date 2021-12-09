@@ -7,6 +7,8 @@ ms:contentKeyID: 49300697
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Enable or disable mailbox audit logging for a mailbox in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

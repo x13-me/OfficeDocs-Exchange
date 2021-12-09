@@ -7,6 +7,8 @@ ms:contentKeyID: 49289446
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create an address list in Exchange Server
 author: msdmaguire
 f1.keywords:
 - CSH

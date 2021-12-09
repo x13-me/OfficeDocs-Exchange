@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Gg588319(v=EXCHG.150)
 ms:contentKeyID: 49319934
 ms.reviewer: 
 manager: serdars
-ms.author: serdars
+ms.author: serdars 
+ms.topic: article
+description: How to configure Information Rights Management for Exchange Search and In-Place eDiscover in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

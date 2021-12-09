@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable MAPI for a mailbox in Exchange Server
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 f1.keywords:
 - NOCSH

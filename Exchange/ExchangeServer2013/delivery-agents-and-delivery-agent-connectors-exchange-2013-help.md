@@ -7,6 +7,8 @@ ms:contentKeyID: 49300477
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About Delivery Agents and Delivery Agent connectors in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

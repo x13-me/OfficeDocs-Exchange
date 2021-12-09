@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Using import and export retention tags in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -70,7 +72,7 @@ For additional management tasks related to Messaging Records Management, see [Me
    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
    ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully exported retention tags and retention policies, do the following:
 
@@ -95,7 +97,7 @@ To verify that you have successfully exported retention tags and retention polic
    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
    ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully imported retention tags and retention policies, do the following:
 

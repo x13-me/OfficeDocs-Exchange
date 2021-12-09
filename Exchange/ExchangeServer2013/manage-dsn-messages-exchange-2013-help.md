@@ -7,6 +7,8 @@ ms:contentKeyID: 49315373
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage delivery status notifications in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - CSH
@@ -83,7 +85,7 @@ This example creates a custom HTML DSN message for the DSN code 5.1.2 that's sen
 New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a custom DNS message, do the following:
 
@@ -111,7 +113,7 @@ This example changes the text assigned to the custom DSN message for DSN code 5.
 Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully changed the text of a custom DNS message, do the following:
 
@@ -137,7 +139,7 @@ This example removes the custom DSN message for the DSN code 5.1.2 that's sent t
 Remove-SystemMessage En\Internal\5.1.2
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed a custom DNS message, do the following:
 
@@ -201,6 +203,6 @@ This example adds the DSN code 5.7.5 and removes the DSN code 5.7.1 from the exi
 Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured copies of DNS messages to be sent to the mailbox of the Exchange recipient, monitor the mailbox that's associated with the Exchange recipient, and verify the DSN messages contain the DSN codes you specified.

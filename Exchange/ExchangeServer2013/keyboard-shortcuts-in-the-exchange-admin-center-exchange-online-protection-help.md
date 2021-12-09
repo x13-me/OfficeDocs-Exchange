@@ -7,6 +7,8 @@ ms:contentKeyID: 47559942
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange admin center keyboard shortcuts 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,8 +29,8 @@ By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
