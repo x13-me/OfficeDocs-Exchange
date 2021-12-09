@@ -18,11 +18,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The IMAP.Proxy health set monitors the availability of the IMAP4 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies that the IMAP.Proxy health set is unhealthy, this indicates an issue that affects the IMAP components on the CAS that's indicated in the alert.
+The IMAP.Proxy health set monitors the availability of the IMAP4 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies the IMAP.Proxy health set is unhealthy, this alert indicates an issue that affects the IMAP components on the CAS that the alert indicates.
 
 ## Explanation
 
-The IMAP.Proxy health set works in conjunction with the IMAP health set.
+The IMAP.Proxy health set works with the IMAP health set.
 
 ## User Action
 
