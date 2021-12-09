@@ -25,7 +25,7 @@ The IMAP health set monitors the availability of the IMAP4 proxy infrastructure 
 
 [Troubleshooting IMAP.Proxy Health Set](troubleshooting-imap-proxy-health-set.md)
 
-If you receive an alert that specifies that IMAP is unhealthy, this indicates an issue that may prevent your users from accessing their mailboxes by using IMAP.
+If you receive an alert that specifies that IMAP is unhealthy, this alert indicates an issue that may prevent your users from accessing their mailboxes by using IMAP.
 
 ## Explanation
 
