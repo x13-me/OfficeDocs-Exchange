@@ -7,6 +7,8 @@ ms:contentKeyID: 49319932
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Enable Information Rights Management on Client Access Servers in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

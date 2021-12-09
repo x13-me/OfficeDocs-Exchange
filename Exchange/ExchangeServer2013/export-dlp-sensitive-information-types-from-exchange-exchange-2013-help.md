@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Exporting DLP sensitive information types from Exchange Server
 ms.assetid: 8f02fbc2-dd1c-4276-be1a-517a43fe39b2
 f1.keywords:
 - NOCSH

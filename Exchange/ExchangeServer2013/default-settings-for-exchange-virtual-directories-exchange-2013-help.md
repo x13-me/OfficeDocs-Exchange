@@ -7,6 +7,8 @@ ms:contentKeyID: 50934224
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Default settings for Exchange virtual directories
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,10 +29,10 @@ The following table lists the default settings on a stand-alone Exchange 2013 Cl
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,10 +174,10 @@ The following table lists the default settings on a stand-alone Exchange 2013 Ma
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

@@ -7,6 +7,8 @@ ms:contentKeyID: 50873816
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Dial tone portability in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

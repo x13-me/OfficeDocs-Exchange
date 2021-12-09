@@ -4,6 +4,7 @@ TOCTitle: Basic concepts in Exchange Management Shell
 ms:assetid: 87289884-7526-4f12-bf36-b252f4eff97e
 ms:mtpsurl: https://technet.microsoft.com/library/Dn659284(v=EXCHG.150)
 ms:contentKeyID: 62222299
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

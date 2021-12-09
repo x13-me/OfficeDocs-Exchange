@@ -5,6 +5,8 @@ ms:assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
 ms:mtpsurl: https://technet.microsoft.com/library/Ff459237(v=EXCHG.150)
 ms:contentKeyID: 49300455
 ms.reviewer: 
+ms.topic: article
+description: About Mailbox audit logging in Exchange 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -45,11 +47,11 @@ The following table lists the actions logged by mailbox audit logging, including
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -167,8 +169,8 @@ The following table describes the fields logged in a mailbox audit log entry.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

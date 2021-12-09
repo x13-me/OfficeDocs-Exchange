@@ -4,6 +4,8 @@ TOCTitle: Create a UM hunt group
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to create a Unified Messaging hunt group in Exchange Server 
 ms.reviewer:
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMHuntGroupWizardForm.CreateUMHuntGroupWizardPage1'

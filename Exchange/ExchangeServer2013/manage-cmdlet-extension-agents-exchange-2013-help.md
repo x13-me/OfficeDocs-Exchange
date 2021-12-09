@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to manage cmdlet extension agents in Microsoft Exchange Server 2013 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

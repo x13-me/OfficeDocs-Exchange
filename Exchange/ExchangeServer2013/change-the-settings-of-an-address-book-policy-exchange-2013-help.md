@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Change the settings of an address book policy.
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 f1.keywords:
 - NOCSH

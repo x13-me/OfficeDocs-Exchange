@@ -5,6 +5,8 @@ ms:assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232090(v=EXCHG.150)
 ms:contentKeyID: 49289303
 ms.reviewer: 
+ms.topic: article
+description: Install the Exchange Server management tools to manage your org remotely
 manager: serdars
 ms.author: serdars
 author: msdmaguire

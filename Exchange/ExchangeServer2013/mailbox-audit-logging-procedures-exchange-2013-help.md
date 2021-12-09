@@ -7,6 +7,8 @@ ms:contentKeyID: 49300728
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Mailbox audit logging procedures in Exchange 
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -7,6 +7,8 @@ ms:contentKeyID: 49720829
 ms.reviewer:
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the EWS.Protocol health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,10 +39,10 @@ The EwsSelfTestProbe does not depend on the Information Store. However, the EwsD
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

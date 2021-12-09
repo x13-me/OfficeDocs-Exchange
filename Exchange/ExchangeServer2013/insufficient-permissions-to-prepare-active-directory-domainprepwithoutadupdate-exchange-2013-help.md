@@ -7,6 +7,8 @@ ms:contentKeyID: 46628878
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange Setup fails due to insufficient permissions to prepare Active Directory  
 author: msdmaguire
 f1.keywords:
 - NOCSH

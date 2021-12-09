@@ -4,6 +4,8 @@ TOCTitle: Configure a fully qualified domain name
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to configure a fully qualified domain name in Exchange Server
+ms.topic: article
 ms.reviewer:
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
 f1.keywords:

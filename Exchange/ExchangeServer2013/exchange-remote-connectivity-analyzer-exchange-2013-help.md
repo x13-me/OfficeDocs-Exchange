@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Using the Exchange Remote Connectivity Analyzer in Exchange Server connectivity
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

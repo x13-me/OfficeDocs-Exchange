@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the VoIP security setting in Exchange Server
 ms.assetid: b5335654-c766-4f3f-883c-f31263e1d9c1
 f1.keywords:
 - NOCSH

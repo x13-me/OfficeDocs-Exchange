@@ -7,6 +7,8 @@ ms:contentKeyID: 49289320
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: The Edge Subscriptions role in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

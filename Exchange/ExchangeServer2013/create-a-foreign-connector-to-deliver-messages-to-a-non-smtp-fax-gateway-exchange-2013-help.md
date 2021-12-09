@@ -7,6 +7,8 @@ ms:contentKeyID: 49369578
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Create a Foreign connector to deliver messages to a non-SMTP fax gateway in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

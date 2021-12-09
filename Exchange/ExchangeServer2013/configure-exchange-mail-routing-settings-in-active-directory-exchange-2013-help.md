@@ -7,7 +7,9 @@ ms:contentKeyID: 49351085
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to configure Exchange mail routing settings in Active Directory
 author: msdmaguire
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -54,7 +56,7 @@ This example clears the Exchange cost from the IP site link named IPSiteLinkAB.
 Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully set an Exchange cost on an Active Directory site link, do the following:
 
@@ -88,7 +90,7 @@ This example removes the hub site attribute from the Active Directory site named
 Set-AdSite "Site B" -HubSiteEnabled $false
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured an Active Directory site as a hub site, do the following:
 

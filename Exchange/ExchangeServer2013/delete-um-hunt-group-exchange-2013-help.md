@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a Unified Messaging hunt group in Exchange Server
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d
 f1.keywords:
 - NOCSH

@@ -61,7 +61,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
    - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization. Note that resource mailboxes are also included.
 
      - **Mail users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 

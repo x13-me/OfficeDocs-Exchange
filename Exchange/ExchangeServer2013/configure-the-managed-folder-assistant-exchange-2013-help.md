@@ -7,6 +7,8 @@ ms:contentKeyID: 49318583
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure the Managed Folder Assistant in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

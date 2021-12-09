@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the time zone in Exchange Server
 ms.assetid: 30d769e1-3657-4622-bc9a-643c63cf46d9
 f1.keywords:
 - NOCSH

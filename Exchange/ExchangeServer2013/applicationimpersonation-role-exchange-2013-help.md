@@ -4,6 +4,7 @@ TOCTitle: ApplicationImpersonation role
 ms:assetid: d6e43a2f-9b1f-463e-8c56-ca38d9127a5a
 ms:mtpsurl: https://technet.microsoft.com/library/Dd776119(v=EXCHG.150)
 ms:contentKeyID: 49289425
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -51,15 +52,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
