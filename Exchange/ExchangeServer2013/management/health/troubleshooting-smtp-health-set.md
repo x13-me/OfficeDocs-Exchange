@@ -5,6 +5,8 @@ ms:assetid: e8233533-88f2-4291-9a90-722517b382c8
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.smtp(v=EXCHG.150)
 ms:contentKeyID: 49720905
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the SMTP health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
