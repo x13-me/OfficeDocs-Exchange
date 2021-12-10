@@ -5,6 +5,8 @@ ms:assetid: ea634068-aa8c-4421-a3fc-d8695ea73b80
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720910
 ms.reviewer: 
+ms.topic: article
+description: How to troubleshoot the POP.Proxy health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

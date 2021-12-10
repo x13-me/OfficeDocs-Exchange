@@ -5,6 +5,8 @@ ms:assetid: a5058323-5d86-438a-ad4a-fa4292310e98
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.rps.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720858
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the RPS.Proxy health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,10 +29,10 @@ The RPS service is monitored using the following probes and monitors:
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

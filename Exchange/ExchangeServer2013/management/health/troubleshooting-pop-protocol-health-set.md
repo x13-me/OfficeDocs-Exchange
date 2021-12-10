@@ -5,6 +5,8 @@ ms:assetid: 4a205a83-153a-4e93-a7af-43d2ab815809
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720774
 ms.reviewer: 
+ms.topic: article
+description: How to troubleshoot the POP.Protocol health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
