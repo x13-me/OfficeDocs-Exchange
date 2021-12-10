@@ -19,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The POP.Protocol health set monitors the Microsoft Exchange POP3 protocol on the Mailbox server. If you receive an alert that specifies that the POP.Protocol health set is unhealthy, this altert indicates an issue that affects the POP3 protocol on the Mailbox server that the alert indicates.
+The POP.Protocol health set monitors the Microsoft Exchange POP3 protocol on the Mailbox server. If you receive an alert that specifies that the POP.Protocol health set is unhealthy, this alert indicates an issue that affects the POP3 protocol on the Mailbox server that the alert indicates.
 
 ## Explanation
 
