@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a UM dial plan in Exchange Server
 ms.assetid: c9b32ef6-432c-45ca-b94c-31bbcc973128
 f1.keywords:
 - NOCSH

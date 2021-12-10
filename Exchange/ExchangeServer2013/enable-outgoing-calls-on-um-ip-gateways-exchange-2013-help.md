@@ -4,6 +4,8 @@ TOCTitle: Enable outgoing calls on UM IP gateways
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Enable outgoing calls on Unified Messaging IP gateways in Exchange Server
 ms.reviewer:
 ms.assetid: c3ad8e53-d37e-499e-b1f1-defb0ba1bd12
 f1.keywords:

@@ -7,6 +7,8 @@ ms:contentKeyID: 49248674
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage content filtering in Microsoft Exchange Server 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -51,7 +53,7 @@ Set-ContentFilterConfig -Enabled $true
 > [!NOTE]
 > When you disable content filtering, the underlying Content Filter agent is still enabled. To disable the Content Filter agent, run the command: <CODE>Disable-TransportAgent "Content Filter Agent"</CODE>.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled content filtering, do the following:
 
@@ -79,7 +81,7 @@ To enable content filtering for external messages, run the following command:
 Set-ContentFilterConfig -ExternalMailEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled content filtering for external messages, do the following:
 
@@ -107,7 +109,7 @@ To disable content filtering for internal messages, run the following command:
 Set-ContentFilterConfig -InternalMailEnabled $false
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled content filtering for internal messages, do the following:
 
@@ -159,7 +161,7 @@ This example configures the following exceptions in content filtering:
 Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the recipient and sender exceptions, do the following:
 
@@ -203,7 +205,7 @@ This example removes the phrase "stock tip":
 Remove-ContentFilterPhrase -Phrase "stock tip"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the allowed and block phrases, do the following:
 
@@ -238,7 +240,7 @@ This example configures the following values for the SCL thresholds:
 Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the SCL thresholds, do the following:
 
@@ -266,7 +268,7 @@ This example configures the Content Filter agent to send a customized rejection 
 Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the rejection response, do the following:
 
@@ -294,7 +296,7 @@ To enable Outlook Email Postmarking, run the following command:
 Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured Outlook Email Postmarking, do the following:
 

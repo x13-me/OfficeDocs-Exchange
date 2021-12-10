@@ -7,6 +7,8 @@ ms:contentKeyID: 51407274
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: File formats that Exchange Search indexes 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -41,8 +43,8 @@ The following table lists the default search filters installed on an Exchange 20
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -164,8 +166,8 @@ The following table lists the search filters that are disabled for indexing by d
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

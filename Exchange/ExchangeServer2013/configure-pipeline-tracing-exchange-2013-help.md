@@ -7,6 +7,8 @@ ms:contentKeyID: 50934211
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure pipeline tracing in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -93,7 +95,7 @@ This example enables pipeline tracing in the Transport service on the Mailbox se
 Set-TransportService Mailbox01 -PipelineTracingEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured pipeline tracing, do the following:
 
@@ -123,7 +125,7 @@ This example disables pipeline tracing in the Transport service on the Mailbox s
 Set-TransportService Mailbox01 -PipelineTracingEnabled $false
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully disabled pipeline tracing, do the following:
 

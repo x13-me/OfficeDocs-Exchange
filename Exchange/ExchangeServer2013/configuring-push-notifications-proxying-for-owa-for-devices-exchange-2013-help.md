@@ -5,6 +5,8 @@ ms:assetid: c0f4912d-8bd3-4a54-9097-03619c645c6a
 ms:mtpsurl: https://technet.microsoft.com/library/Dn511017(v=EXCHG.150)
 ms:contentKeyID: 59954036
 ms.reviewer: 
+ms.topic: article
+description: How to configure push notification proxying for OWA for Devices in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire

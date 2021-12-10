@@ -7,6 +7,8 @@ ms:contentKeyID: 49289411
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to edit an email address policy ni Exchange Server
 author: msdmaguire
 f1.keywords:
 - CSH

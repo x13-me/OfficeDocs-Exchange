@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How DLP rules are applied to evaluate messages in Exchange 2013
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 f1.keywords:
 - NOCSH

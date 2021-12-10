@@ -7,7 +7,9 @@ ms:contentKeyID: 49288901
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure connectivity logging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

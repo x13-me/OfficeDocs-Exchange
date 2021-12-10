@@ -4,6 +4,8 @@ TOCTitle: View or configure Outlook Web App mailbox policy properties
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure Outlook Web App mailbox policy properties in Exchange Server
 ms.reviewer:
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 f1.keywords:

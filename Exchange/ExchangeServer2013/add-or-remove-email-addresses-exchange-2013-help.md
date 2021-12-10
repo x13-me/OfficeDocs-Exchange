@@ -3,7 +3,9 @@ title: 'Add or remove email addresses for a mailbox: Exchange 2013 Help'
 TOCTitle: Add or remove email addresses for a mailbox
 ms.author: serdars
 author: msdmaguire
+description: How to add or remove email addresses for a mailbox in Exchange Server
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 f1.keywords:

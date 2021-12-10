@@ -7,6 +7,8 @@ ms:contentKeyID: 61200285
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Using Edge Subscriptions in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -147,8 +149,8 @@ By default, when you run the **New-EdgeSubscription** cmdlet on the Mailbox serv
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -196,8 +198,8 @@ By default, when you run the **New-EdgeSubscription** cmdlet on the Mailbox serv
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,9 +314,9 @@ The following table lists the EdgeSync properties related to locking and leasing
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

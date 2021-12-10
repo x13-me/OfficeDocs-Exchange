@@ -6,7 +6,8 @@ author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
-
+ms.topic: article
+description: About MailTips in Microsoft Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

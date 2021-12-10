@@ -7,6 +7,8 @@ ms:contentKeyID: 50643913
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enter your Exchange 2013 product key 
 author: msdmaguire
 f1.keywords:
 - CSH

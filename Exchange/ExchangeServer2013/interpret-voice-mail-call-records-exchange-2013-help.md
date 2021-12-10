@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to interpret voice mail call records in Exchange Server
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
 f1.keywords:
 - NOCSH

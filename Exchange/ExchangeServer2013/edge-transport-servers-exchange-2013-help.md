@@ -7,6 +7,8 @@ ms:contentKeyID: 61200300
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Edge Transport servers in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

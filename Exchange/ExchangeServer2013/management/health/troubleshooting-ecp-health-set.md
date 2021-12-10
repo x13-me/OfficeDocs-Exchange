@@ -7,6 +7,8 @@ ms:contentKeyID: 49720722
 ms.reviewer:
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the ECP health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -29,10 +31,10 @@ The EAC service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

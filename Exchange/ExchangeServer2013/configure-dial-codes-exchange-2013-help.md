@@ -5,7 +5,9 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
 ms.assetid: e5b5efee-b734-4f70-8357-11be07b23bd0
+description: How to configure dial codes in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

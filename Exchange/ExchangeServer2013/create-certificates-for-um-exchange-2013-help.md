@@ -7,6 +7,8 @@ ms:contentKeyID: 53908379
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create certificates for Unified Messaging in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

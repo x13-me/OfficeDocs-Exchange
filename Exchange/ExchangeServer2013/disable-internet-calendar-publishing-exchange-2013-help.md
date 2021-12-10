@@ -8,12 +8,14 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to disable internet calendar publishing in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Disable Internet calendar publishing
+# Disable internet calendar publishing
 
 _**Applies to:** Exchange Server 2013_
 

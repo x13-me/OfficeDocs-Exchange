@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable common PIN patterns for voice mail in Exchange Server
 ms.assetid: 9940a8c2-f576-4089-ab96-8b318ad3da0f
 f1.keywords:
 - NOCSH
