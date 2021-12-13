@@ -5,6 +5,8 @@ ms:assetid: c9672dad-1e67-4f07-bad9-539a67f2ac70
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195913(v=EXCHG.150)
 ms:contentKeyID: 53181780
 ms.reviewer: 
+ms.topic: article
+description: How to use the Exchange Server 2013 Management Pack for troubleshooting
 manager: serdars
 ms.author: serdars
 author: msdmaguire

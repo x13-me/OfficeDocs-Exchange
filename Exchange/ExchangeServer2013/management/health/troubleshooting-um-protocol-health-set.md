@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.um.protocol(v=EXC
 ms:contentKeyID: 49720834
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to troubleshoot the UM.Protocol health set
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -31,10 +33,10 @@ The UM.Protocol service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

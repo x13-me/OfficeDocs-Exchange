@@ -7,6 +7,8 @@ ms:contentKeyID: 53496601
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Post-deployment operations procedures in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

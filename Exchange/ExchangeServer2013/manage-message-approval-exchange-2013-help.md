@@ -4,6 +4,8 @@ TOCTitle: Manage message approval
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage message approval in Exchange 2013
 ms.reviewer:
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 f1.keywords:

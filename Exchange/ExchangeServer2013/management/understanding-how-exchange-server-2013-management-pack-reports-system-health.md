@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How Exchange Server 2013 Management Pack reports on system health
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -59,8 +61,8 @@ This topic provides information about how the Exchange Server 2013 Management Pa
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -110,8 +112,8 @@ The Management Pack agent detects and processes this event. Using this event, Ma
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
