@@ -27,7 +27,7 @@ Rob double-clicks on the server that opens the **Health Explorer** window. In th
 
 ![Failed CAS server healthset details.](images/Dn195913.8e4d05a6-9128-40d8-b262-e60e9affc973(EXCHG.150).png "Failed CAS server healthset details")
 
-The link provided under External Knowledge Resources takes Rob to the [Troubleshooting OWA.Proxy Health Set](/exchange/management/health/troubleshooting-owa-proxy-health-set) topic. In this article, Rob sees that the first thing to do is to verify that the issue still exists. Following the instructions, he runs the following command to verify the current state of the OWA.Proxy health set in the Shell:
+The link provided under External Knowledge Resources takes Rob to the [Troubleshooting OWA.Proxy Health Set](/exchange/management/health/troubleshooting-owa-proxy-health-set) topic. In this article, Rob sees that the first thing to do is to verify the issue still exists. Following the instructions, he runs the following command to verify the current state of the OWA.Proxy health set in the Shell:
 
 ```powershell
 Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
@@ -43,7 +43,7 @@ Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Pr
 Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
 ```
 
-Rob sees that the problem lies within the OWA Application Pool. The next step is to rerun the associated probe for the monitor that is in unhealthy state. Using the table in the "Troubleshooting OWA.Proxy Health Set" topic, he determines that the probe that he needs to rerun is OWAProxyTestProbe. He runs the following command:
+Rob sees that the problem is in the OWA Application Pool. The next step is to rerun the associated probe for the monitor that is in unhealthy state. Using the table in the "Troubleshooting OWA.Proxy Health Set" topic, he determines the probe that he needs to rerun is OWAProxyTestProbe. He runs the following command:
 
 ```powershell
 Invoke-MonitoringProbe OWA.Proxy\OWAProxyTestProbe -Server Server1.contoso.com | Format-List
@@ -55,7 +55,7 @@ He scans the output for the ResultType value and sees that the probe failed:
 ResultType : Failed
 ```
 
-He proceeds to the "OWAProxyTestMonitor Recovery Actions" section of the article. He connects to Server1 using IIS Manager to see if the MSExchangeOWAAppPool is running on the IIS Server. Once he verifies that it's running, the next step instructs him to recycle the MSExchangeOWAAppPool:
+He goes to the "OWAProxyTestMonitor Recovery Actions" section of the article. He connects to Server1 using IIS Manager to see if the MSExchangeOWAAppPool is running on the IIS Server. Once he verifies that it's running, the next step instructs him to recycle the MSExchangeOWAAppPool:
 
 ```powershell
 C:\Windows\System32\Inetsrv\Appcmd recycle APPPOOL MSExchangeOWAAppPool
