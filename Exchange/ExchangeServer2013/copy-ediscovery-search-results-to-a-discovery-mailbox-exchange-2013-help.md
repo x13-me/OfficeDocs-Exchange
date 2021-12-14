@@ -7,6 +7,8 @@ ms:contentKeyID: 61200239
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to copy eDiscovery search results to a discovery mailbox in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to configure Exchange to automatically answer and route incoming calls.
 ms.assetid: d3dcd488-bd57-44cc-bdd4-ddee42a69dde
 f1.keywords:
 - NOCSH

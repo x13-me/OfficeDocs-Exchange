@@ -7,6 +7,8 @@ ms:contentKeyID: 61200287
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure SSL offloading in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

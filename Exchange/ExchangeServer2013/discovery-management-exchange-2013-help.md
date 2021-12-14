@@ -4,6 +4,8 @@ TOCTitle: Discovery Management
 ms:assetid: b8bc5922-a8c9-4707-906d-fa38bb87da8f
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351080(v=EXCHG.150)
 ms:contentKeyID: 49289385
+ms.topic: article
+description: The Discovery Management management role group is a built-in role group in the Role Based Access Control permissions model.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -80,15 +82,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

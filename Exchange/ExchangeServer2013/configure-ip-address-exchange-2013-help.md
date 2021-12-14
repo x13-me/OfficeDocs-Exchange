@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the IP address in Exchange Server
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
 f1.keywords:
 - NOCSH

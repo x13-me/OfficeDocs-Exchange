@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable Outlook Web App for a mailbox in Exchange Server
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 f1.keywords:
 - NOCSH

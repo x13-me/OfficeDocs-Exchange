@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Management Shell quick reference for Exchange 2013 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -36,8 +38,8 @@ The following verbs are supported by most cmdlets and are associated with a spec
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -75,8 +77,8 @@ The following parameters help you control how your commands run and indicate exa
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -105,8 +107,8 @@ The following commands are associated with various tasks that you can use when a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -140,8 +142,8 @@ The following commands are associated with various tasks that you can use when a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -194,8 +196,8 @@ The following commands are associated with various tasks that you can use when a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

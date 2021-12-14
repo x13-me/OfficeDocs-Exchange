@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Server 2013 deployment security checklist 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -35,8 +37,8 @@ Before installing Exchange 2013, perform the following procedures.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

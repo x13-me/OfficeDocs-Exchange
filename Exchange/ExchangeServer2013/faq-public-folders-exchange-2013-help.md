@@ -7,6 +7,8 @@ ms:contentKeyID: 48679371
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Frequently asked questions about public folders in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH

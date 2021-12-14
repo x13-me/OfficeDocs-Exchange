@@ -4,6 +4,8 @@ TOCTitle: Add-ins for Outlook
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: About available add-ins for Outlook in Exchange Server
+ms.topic: article
 ms.reviewer:
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 f1.keywords:

@@ -5,6 +5,8 @@ ms:assetid: f730c520-4ba5-4a15-8846-132bff500bb8
 ms:mtpsurl: https://technet.microsoft.com/library/Dn505733(v=EXCHG.150)
 ms:contentKeyID: 59603968
 ms.reviewer: 
+description: How to configure Get-QueueDigest in Exchange Server
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire

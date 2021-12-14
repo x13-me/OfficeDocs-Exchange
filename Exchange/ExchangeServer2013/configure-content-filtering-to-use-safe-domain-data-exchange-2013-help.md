@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure Content Filtering to Use Safe Domain Data in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

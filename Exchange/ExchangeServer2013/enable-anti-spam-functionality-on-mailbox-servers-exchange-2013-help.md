@@ -5,6 +5,8 @@ ms:assetid: 59d22c5e-64bc-4879-8ad1-364862b6ba11
 ms:mtpsurl: https://technet.microsoft.com/library/Bb201691(v=EXCHG.150)
 ms:contentKeyID: 49248681
 ms.reviewer: 
+ms.topic: article
+description:  Enable anti-spam functionality on Mailbox servers in Exchange 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

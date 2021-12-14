@@ -4,6 +4,8 @@ TOCTitle: Configure message delivery restrictions for a mailbox
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure message delivery restrictions for a mailbox in Exchange Server
 ms.reviewer:
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 f1.keywords:

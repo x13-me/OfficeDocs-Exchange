@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create non-business hours navigation menu mappings in Exchange Server
 ms.assetid: bfe81ed6-9648-4882-8baf-ac93ea30a8ca
 f1.keywords:
 - NOCSH

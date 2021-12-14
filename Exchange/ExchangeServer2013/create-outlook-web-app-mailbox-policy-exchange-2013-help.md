@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to ceate an Outlook Web App mailbox policy in Exchange Server
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 f1.keywords:
 - NOCSH

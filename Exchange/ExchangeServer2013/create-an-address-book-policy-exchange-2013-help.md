@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create an address book policy in Exchange Server
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
 f1.keywords:
 - NOCSH

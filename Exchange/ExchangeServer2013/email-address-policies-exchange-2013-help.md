@@ -7,6 +7,8 @@ ms:contentKeyID: 49289383
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Email address policies in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -51,8 +53,8 @@ When creating an email address policy, you can use the following email address t
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col/>
+    <col/>
     </colgroup>
     <thead>
     <tr class="header">

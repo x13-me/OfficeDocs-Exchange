@@ -7,6 +7,8 @@ ms:contentKeyID: 49300496
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create a mailbox audit log search in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

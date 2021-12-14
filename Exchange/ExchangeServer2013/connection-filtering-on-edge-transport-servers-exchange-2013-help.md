@@ -8,15 +8,15 @@ ms:contentKeyID: 61200295
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: serdars
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
 mtps_version: v=EXCHG.150
 ---
 
-# Connection Filtering on Edge Transport Servers
+# Connection filtering on Edge Transport Servers
 
 _**Applies to:** Exchange Server 2013_
 
@@ -76,8 +76,8 @@ For bitmask data types, the IP Blocklist provider service returns a status code 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -107,8 +107,8 @@ For absolute value types, the IP Blocklist provider returns explicit responses t
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

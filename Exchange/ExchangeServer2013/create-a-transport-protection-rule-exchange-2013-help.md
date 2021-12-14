@@ -7,6 +7,7 @@ ms:contentKeyID: 49319907
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to create a Transport Protection Rule in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

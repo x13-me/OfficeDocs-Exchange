@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: After you create an address book policy, you must assign it to mailbox users in Exchange Server.
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 f1.keywords:
 - NOCSH

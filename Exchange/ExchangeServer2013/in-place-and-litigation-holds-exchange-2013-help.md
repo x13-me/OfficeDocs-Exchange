@@ -4,6 +4,8 @@ TOCTitle: In-Place Hold and Litigation Hold
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: In-Place Hold and Litigation Hold in Exchange Server
 ms.reviewer:
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 f1.keywords:
