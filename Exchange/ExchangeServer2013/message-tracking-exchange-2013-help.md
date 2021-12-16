@@ -15,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Message tracking
+# Message tracking in Exchange
 
 _**Applies to:** Exchange Server 2013_
 
