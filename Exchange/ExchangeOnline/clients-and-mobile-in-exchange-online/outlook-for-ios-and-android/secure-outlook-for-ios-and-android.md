@@ -184,12 +184,6 @@ You can define a default block rule and then configure an allow rule for Outlook
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Allow
    ```
 
-3. **Optional**: Create rules that allow Outlook on Windows devices for Exchange ActiveSync connectivity (WindowsMail refers to the Mail app included in Windows 10):
-
-   ```PowerShell
-   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
-   ```
-
 #### Option 2: Block native Exchange ActiveSync apps on Android and iOS devices
 
 Alternatively, you can block native Exchange ActiveSync apps on specific Android and iOS devices or other types of devices.
