@@ -125,7 +125,7 @@ There are a few things you should check:
    Get-CASMailbox -Identity <EmailAddress> | Format-List SmtpClientAuthenticationDisabled
    ```
 
-   If the value is False, replace \<EmailAddress\> with the email address and run the following command to enable it:
+   If the value is True, replace \<EmailAddress\> with the email address and run the following command to enable it:
 
    ```powershell
    Set-CASMailbox -Identity <EmailAddress> -SmtpClientAuthenticationDisabled $false
