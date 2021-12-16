@@ -105,7 +105,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
    - **Synced**
 
-    When the status is **Synced** the IMAP migration will continue to synchronize with the source email periodically (once a day) until you choose **Stop Migration**.
+    When the status is **Synced**, the IMAP migration continues to periodically synchronize with the source email (once a day) until you select **Stop Migration**.
 
 10. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
