@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'feature-availability-for-exchange-server'
-ms.service: o365-administration
+ms.prod: exchange-server-it-pro
 ms.localizationpriority: medium
 ms.custom: Adm_ServiceDesc
 ms.assetid: cdfe686d-a059-4f4d-bb8d-9c2c0ebfa423
