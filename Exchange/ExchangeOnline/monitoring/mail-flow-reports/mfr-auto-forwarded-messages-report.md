@@ -41,7 +41,7 @@ The **Auto forwarded message details** section shows the following information a
 - **Forwarding type**
 - **Recipient name**
 - **Recipient domain**
-- **Details**
+- **Details**: If the message was auto-forwarded by a mail flow rule, the ID of the rule is shown. Otherwise, this value is blank.
 - **Forward count**
 - **First forward date**
 
