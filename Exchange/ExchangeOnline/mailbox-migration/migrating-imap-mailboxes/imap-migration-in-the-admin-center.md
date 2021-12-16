@@ -111,7 +111,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
    
-11. Let the migration batch run for at least 72 hours before you choose **Stop Migration**. When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
+11. Let the migration batch run for at least 72 hours before you select **Stop Migration**. When you finish, select **Close Connection**. After you do this, you can start a new migration if you want to also migrate emails from other providers.
 
 ## Related Topics
 
