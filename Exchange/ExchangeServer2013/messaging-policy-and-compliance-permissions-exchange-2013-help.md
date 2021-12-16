@@ -5,6 +5,8 @@ ms:assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638205(v=EXCHG.150)
 ms:contentKeyID: 48385692
 ms.reviewer: 
+ms.topic: article
+description: Messaging policy and compliance permissions in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -43,8 +45,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -5,6 +5,8 @@ ms:assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124375(v=EXCHG.150)
 ms:contentKeyID: 50646522
 ms.reviewer: 
+ms.topic: article
+description: About the message tracking log in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -93,8 +95,8 @@ The message tracking log stores each message event on a single line in the log. 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -234,8 +236,8 @@ Various event types in the **event-id** field are used to classify the message e
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -421,8 +423,8 @@ The values in the **source** field in the message tracking log indicate the tran
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
