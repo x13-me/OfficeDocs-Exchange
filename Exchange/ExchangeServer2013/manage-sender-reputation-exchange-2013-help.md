@@ -140,8 +140,8 @@ You may need to perform additional steps to allow sender reputation to traverse 
 
 <table>
 <colgroup>
-<col ="width: 50%" />
-<col ="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
