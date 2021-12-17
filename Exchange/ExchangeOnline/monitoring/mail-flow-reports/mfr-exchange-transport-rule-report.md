@@ -29,8 +29,8 @@ To view the report in the new EAC at <https://admin.exchange.microsoft.com>, go 
 By default, **Chart breakdown by Severity** is selected, and the follow charts are shown:
 
 - A line graph that shows the number of inbound and outbound messages per day that were affected by mail flow rules.<sup>\*</sup>
-- **Message volume by direction**: A doughnut graph that shows the total number and percentages of **Outbound** and **Inbound** messages that were affected by mail flow rules.<sup>\*\*</sup>
-- **Message volume by severity** A doughnut graph that shows the total number and percentages of messages that were affected by **High severity**, **Medium severity**, and **Low severity** mail flow rules.<sup>\*\*</sup>
+- **Message volume by direction**: A doughnut graph that shows the total number of message and portion of **Outbound** and **Inbound** messages that were affected by mail flow rules.*<sup>\*\*</sup>
+- **Message volume by severity** A doughnut graph that shows the total number of message and portion of messages that were affected by **High severity**, **Medium severity**, and **Low severity** mail flow rules.<sup>\*\*</sup>
 
 <sup>\*</sup> If you hover over the line on the chart for a specific day, you'll see the number of messages for that day.
 
