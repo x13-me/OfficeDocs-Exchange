@@ -3,7 +3,7 @@
 ## [What's new in Exchange Server](../new-features/new-features.md)
 ### [What's discontinued in Exchange Server](../new-features/discontinued-features.md)
 ### [Updates for Exchange Server](../new-features/updates.md)
-### [Feature availability for Exchange Server](../new-features/feature-availability-for-exchange-server.md)
+### [Feature availability for Exchange Server](../new-features/feature-availability.md)
 ### [Exchange Server build numbers and release dates](../new-features/build-numbers-and-release-dates.md)
 ## [Exchange Server release notes](../release-notes.md)
 ## [Architecture](../architecture/architecture.md)
