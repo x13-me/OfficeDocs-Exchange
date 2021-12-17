@@ -105,13 +105,13 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
    - **Synced**
 
-    When the status is **Synced** the IMAP migration will continue to synchronize with the source email periodically until you choose **Stop Migration**.
-
-    When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
+    When the status is **Synced**, the IMAP migration continues to periodically synchronize with the source email (once a day) until you select **Stop Migration**.
 
 10. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
+   
+11. Let the migration batch run for at least 72 hours before you select **Stop Migration**. When you finish, select **Close Connection**. After you do this, you can start a new migration if you want to also migrate emails from other providers.
 
 ## Related Topics
 
