@@ -37,8 +37,8 @@ manager: serdars
 
 # Prepare your Gmail or Google Workspace (formerly G Suite) account for connecting to Outlook and Microsoft 365 or Office 365
 
-    > [!IMPORTANT]
-    > The ability to add new accounts to Outlook on the web using the Connected accounts feature was removed in September 2018.
+> [!IMPORTANT]
+> The ability to add new accounts to Outlook on the web using the Connected accounts feature was removed in September 2018.
     
 Before you [connect to your Gmail](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d) account from Outlook on the web, or [add a Gmail](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 
