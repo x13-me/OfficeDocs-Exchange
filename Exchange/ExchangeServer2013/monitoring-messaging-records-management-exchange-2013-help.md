@@ -5,6 +5,8 @@ ms:assetid: bb5aa00a-e2b8-4abe-9943-eccab5a116db
 ms:mtpsurl: https://technet.microsoft.com/library/Bb310793(v=EXCHG.150)
 ms:contentKeyID: 50873809
 ms.reviewer: 
+ms.topic: article
+description: How to monitor message records management in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

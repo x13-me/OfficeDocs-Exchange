@@ -5,6 +5,8 @@ ms:assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351258(v=EXCHG.150)
 ms:contentKeyID: 48385720
 ms.reviewer: 
+ms.topic: article
+description: How to monitor database availability groups in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,8 +29,8 @@ You can use the [Get-MailboxDatabaseCopyStatus](/powershell/module/exchange/Get-
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -140,8 +142,8 @@ The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring o
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -293,8 +295,8 @@ The script supports parameters that allow you to customize the script's behavior
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -394,8 +396,8 @@ The CollectReplicationMetrics.ps1 script supports parameters that allow you to c
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
