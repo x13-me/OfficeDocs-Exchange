@@ -5,6 +5,8 @@ ms:assetid: dc2c1062-ad79-404b-8da3-5b5798dbb73b
 ms:mtpsurl: https://technet.microsoft.com/library/Bb684908(v=EXCHG.150)
 ms:contentKeyID: 49289431
 ms.reviewer: 
+ms.topic: article
+description: How to modify multivalued properties in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -65,8 +67,8 @@ Modifying multivalued properties is similar to modifying single-valued propertie
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
