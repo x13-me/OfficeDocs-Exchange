@@ -10,7 +10,7 @@ description: How to monitor database availability groups in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
-f1.keywords:style
+f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
