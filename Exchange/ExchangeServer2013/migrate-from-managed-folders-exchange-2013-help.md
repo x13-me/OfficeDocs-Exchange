@@ -5,13 +5,15 @@ ms:assetid: 6796a79d-501e-4216-9370-77965bc5835d
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298032(v=EXCHG.150)
 ms:contentKeyID: 51439480
 ms.reviewer: 
+ms.topic: article
+description: How to migrate from managed folders in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
----
+--
 
 # Migrate from managed folders
 
@@ -44,9 +46,9 @@ The following table compares the MRM functionality available when using retentio
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -152,11 +154,11 @@ For the following procedures, Contoso mailboxes have a managed folder mailbox po
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
