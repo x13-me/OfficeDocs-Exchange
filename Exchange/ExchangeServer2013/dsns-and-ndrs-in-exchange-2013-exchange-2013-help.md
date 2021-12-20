@@ -4,6 +4,7 @@ TOCTitle: DSNs and NDRs in Exchange 2013
 ms:assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232118(v=EXCHG.150)
 ms:contentKeyID: 49286851
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -28,10 +29,10 @@ The following table contains a list of the enhanced status codes that are return
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style= />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">

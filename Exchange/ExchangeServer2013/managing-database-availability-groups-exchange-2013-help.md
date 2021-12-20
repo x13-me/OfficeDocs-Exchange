@@ -4,6 +4,7 @@ TOCTitle: Managing database availability groups
 ms:assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298065(v=EXCHG.150)
 ms:contentKeyID: 48385234
+ms.topic: article
 ms.reviewer:
 manager: serdars
 ms.author: serdars
@@ -68,8 +69,8 @@ The following table lists general witness server placement recommendations for d
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -138,7 +139,7 @@ If Windows Firewall is enabled on the witness server before the DAG is created, 
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col style= />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -151,7 +152,7 @@ If you specify a witness server and witness directory, you receive the following
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col style= />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -164,7 +165,7 @@ If Windows Firewall is enabled on the witness server after the DAG is created bu
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col style= />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -278,8 +279,8 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -317,8 +318,8 @@ As with network encryption, network compression is also a property of the DAG an
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -392,9 +393,9 @@ For example, consider DAG1, a two-member DAG where each member has two network a
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -433,11 +434,11 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col style= />
+<col style= />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -486,9 +487,9 @@ For example, consider DAG2, a two-member DAG where each member has two network a
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -527,11 +528,11 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col style= />
+<col style= />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -588,11 +589,11 @@ Mailbox servers that are members of a DAG have some properties specific to high 
 
 The *AutoDatabaseMountDial* parameter specifies the automatic database mount behavior after a database failover. You can use the [Set-MailboxServer](/powershell/module/exchange/Set-MailboxServer) cmdlet to configure the *AutoDatabaseMountDial* parameter with any of the following values:
 
-- `BestAvailability`: If you specify this value, the database automatically mounts immediately after a failover if the copy queue length is less than or equal to 12. The copy queue length is the number of logs recognized by the passive copy that needs to be replicated. If the copy queue length is more than 12, the database doesn't automatically mount. When the copy queue length is less than or equal to 12, Exchange attempts to replicate the remaining logs to the passive copy and mounts the database.
+- `BestAvailability`: If you specify this value, the database automatically mounts immediately after a failover if the copy queue length is less than or equal to 12. The copy queue length is the number of logs recognized by the passive copy that needs to be replicated. If the copy queue length is more than 12, the database doesn't automatically mount. When the copy queue length is less than or equal to 12, Exchange attempts to replicate the remaining logs to the passive copy and mounts the database.
 
-- `GoodAvailability`: If you specify this value, the database automatically mounts immediately after a failover if the copy queue length is less than or equal to six. The copy queue length is the number of logs recognized by the passive copy that needs to be replicated. If the copy queue length is more than six, the database doesn't automatically mount. When the copy queue length is less than or equal to six, Exchange attempts to replicate the remaining logs to the passive copy and mounts the database.
+- `GoodAvailability`: If you specify this value, the database automatically mounts immediately after a failover if the copy queue length is less than or equal to six. The copy queue length is the number of logs recognized by the passive copy that needs to be replicated. If the copy queue length is more than six, the database doesn't automatically mount. When the copy queue length is less than or equal to six, Exchange attempts to replicate the remaining logs to the passive copy and mounts the database.
 
-- `Lossless`: If you specify this value, the database doesn't automatically mount until all logs generated on the active copy have been copied to the passive copy. This setting also causes the Active Manager best copy selection algorithm to sort potential candidates for activation based on the database copy's activation preference value and not its copy queue length.
+- `Lossless`: If you specify this value, the database doesn't automatically mount until all logs generated on the active copy have been copied to the passive copy. This setting also causes the Active Manager best copy selection algorithm to sort potential candidates for activation based on the database copy's activation preference value and not its copy queue length.
 
 The default value is `GoodAvailability`. If you specify either `BestAvailability` or `GoodAvailability`, and all the logs from the active copy can't be copied to the passive copy being activated, you may lose some mailbox data. However, the Safety Net feature (which is enabled by default) helps protect against most data loss by resubmitting messages that are in the Safety Net queue.
 

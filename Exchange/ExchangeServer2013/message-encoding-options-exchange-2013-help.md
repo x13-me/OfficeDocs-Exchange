@@ -4,6 +4,7 @@ TOCTitle: Message encoding options
 ms:assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms:mtpsurl: https://technet.microsoft.com/library/Bb310794(v=EXCHG.150)
 ms:contentKeyID: 49318586
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -53,9 +54,9 @@ When you configure message encoding options for a remote domain, the specific se
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -159,9 +160,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -212,9 +213,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">
@@ -295,9 +296,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style= />
+<col style= />
+<col style= />
 </colgroup>
 <thead>
 <tr class="header">

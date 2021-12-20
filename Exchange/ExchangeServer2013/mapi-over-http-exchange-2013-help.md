@@ -4,6 +4,7 @@ TOCTitle: MAPI over HTTP
 ms:assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
 ms:mtpsurl: https://technet.microsoft.com/library/Dn635177(v=EXCHG.150)
 ms:contentKeyID: 61218727
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
