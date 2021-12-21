@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Use Outlook Voice Access to nagivate menus in Exchange Server
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b
 f1.keywords:
 - NOCSH
