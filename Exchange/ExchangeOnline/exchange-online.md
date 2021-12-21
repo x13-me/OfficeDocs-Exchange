@@ -11,6 +11,7 @@ f1.keywords:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
+ms.custom: intro-overview
 description: Exchange Online is part of the Microsoft 365 and Office 365 suite of products.
 audience: ITPro
 ms.service: exchange-online
