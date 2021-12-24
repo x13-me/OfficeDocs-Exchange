@@ -5,6 +5,8 @@ ms:assetid: 6a09ac9e-67a6-44db-94f0-aa8c89e94468
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.msfilterpackv2notinstalled(v=EXCHG.150)
 ms:contentKeyID: 47899800
 ms.reviewer: 
+ms.topic: article
+description: 'Exchange Setup can't continue: Office 2010 Filter Pack is not installed'
 manager: serdars
 ms.author: serdars
 author: msdmaguire
