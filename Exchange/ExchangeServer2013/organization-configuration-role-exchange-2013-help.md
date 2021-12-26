@@ -9,7 +9,7 @@ ms.topic: article
 description: About the organization Configuration role in Exchange 2013
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
