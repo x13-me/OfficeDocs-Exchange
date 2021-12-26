@@ -6,10 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.msfilte
 ms:contentKeyID: 47899718
 ms.reviewer: 
 ms.topic: article
-description: 'Exchange Setup can't continue: Office 2010 Filter Pack SP1 isn't installed'
+description: "Exchange Setup can't continue: Office 2010 Filter Pack SP1 isn't installed"
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: JoanneHendrickson
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
