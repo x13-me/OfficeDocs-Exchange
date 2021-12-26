@@ -1,15 +1,15 @@
 ---
-title: 'Move the mailbox database path for a mailbox database copy: Exchange 2013 Help'
+title: "Move the mailbox database path for a mailbox database copy - Exchange 2013 Help"
 TOCTitle: Move the mailbox database path for a mailbox database copy
 ms:assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
 ms:mtpsurl: https://technet.microsoft.com/library/Dd979782(v=EXCHG.150)
 ms:contentKeyID: 48384952
 ms.reviewer:
 ms.topic: article
-description: Move the mailbox database path for a mailbox database copy 
+description: Move the mailbox database path for a mailbox database copy in Exchange 2013
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
