@@ -9,7 +9,7 @@ ms.topic: article
 description: Move the mailbox database path for a mailbox database copy in Exchange 2013
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
