@@ -9,7 +9,7 @@ ms.topic: article
 description: "Exchange Setup can't continue: Office 2010 Filter Pack SP1 isn't installed"
 manager: serdars
 ms.author: serdars
-author: JoanneHendrickson
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
