@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.notinsc
 ms:contentKeyID: 46628868
 ms.reviewer: 
 ms.topic: article
-description: 'Exchange Setup can't finish: Computer not in schema master site/domain'
+description: "Exchange Setup can't finish: Computer not in schema master site/domain"
 manager: serdars
 ms.author: serdars
 author: msdmaguire
