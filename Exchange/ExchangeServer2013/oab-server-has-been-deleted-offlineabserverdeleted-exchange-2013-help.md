@@ -9,7 +9,7 @@ ms.topic: article
 description: 'Exchange Setup can't finish: OAB server has been deleted'  
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
