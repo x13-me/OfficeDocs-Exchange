@@ -1,5 +1,5 @@
 ---
-title: 'OAB server has been deleted_OffLineABServerDeleted: Exchange 2013 Help'
+title: "OAB server has been deleted_OffLineABServerDeleted: Exchange 2013 Help"
 TOCTitle: OAB server has been deleted_OffLineABServerDeleted
 ms:assetid: 38b5dacf-ef65-4b25-97f6-d8dec956d7d5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.offlineabserverdeleted(v=EXCHG.150)
