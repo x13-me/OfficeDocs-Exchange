@@ -1,5 +1,5 @@
 ---
-title: "Older database files present_FirstSGFilesExist: Exchange 2013 Help"
+title: "Older database files present_FirstSGFilesExist - Exchange 2013 Help"
 TOCTitle: Older database files present_FirstSGFilesExist
 ms:assetid: 907faeb8-1c6d-49fc-95a1-417f415a9d79
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.firstsgfilesexist(v=EXCHG.150)
