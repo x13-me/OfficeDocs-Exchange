@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adcfoun
 ms:contentKeyID: 46629070
 ms.reviewer: 
 ms.topic: article
-description: 'Exchange Setup can't continue: Active Directory Connector servers found'
+description: "Exchange Setup can't continue: Active Directory Connector servers found"
 manager: serdars
 ms.author: serdars
 author: msdmaguire
