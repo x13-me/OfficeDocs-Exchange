@@ -91,9 +91,9 @@ For more information, see [Overview of delegation in an Office 365 hybrid enviro
   > [!NOTE]
   > Send As permission is also needed to comply with the on-premises Exchange server and AAD Connect requirements in the next two sections.
 
-**Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup. (Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group.)
+- **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup. (Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group.)
 
-**Folder permissions**: Grants access to the contents of a particular folder.
+- **Folder permissions**: Grants access to the contents of a particular folder.
 
 Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/help/3064053.
 
