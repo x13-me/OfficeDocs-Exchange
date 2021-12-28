@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.topic: article
+description: Use transport rules to look for specific conditions on messages.
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 f1.keywords:
 - NOCSH

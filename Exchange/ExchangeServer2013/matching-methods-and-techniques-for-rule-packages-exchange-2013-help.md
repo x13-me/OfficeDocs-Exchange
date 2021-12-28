@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer: 
 ms.topic: article
+description: Topic describes techniques for matching pattern and evidence elements in a DLP XML file.
 ms.assetid: 09fe9278-d077-452c-b7e5-729b3dc70b1b
 f1.keywords:
 - NOCSH
@@ -20,7 +21,7 @@ This topic describes techniques for matching pattern and evidence elements withi
 
 ## The Match element
 
-The `Match` element is used within the `Pattern` and `Evidence` elements to represents the underlying keyword, regex or function that is to be matched. The definition of the match itself is stored outside of the `Rule` element and is referenced through the `idRef` required attribute. Multiple `Match` elements can be included in a Pattern definition which can be included directly in the `Pattern` element or combined using the `Any` element to define matching semantics.
+The `Match` element is used within the `Pattern` and `Evidence` elements to represent the underlying keyword, regex or function that is to be matched. The definition of the match itself is stored outside of the `Rule` element and is referenced through the `idRef` required attribute. Multiple `Match` elements can be included in a Pattern definition which can be included directly in the `Pattern` element or combined using the `Any` element to define matching semantics.
 
 ```powershell
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,7 +44,7 @@ The `Match` element is used within the `Pattern` and `Evidence` elements to repr
 
 ## Defining keyword-based matches
 
-A common Rule requirement is to match based on well-known keyword string expressions. This is accomplished by using the `Keyword` element. The Keyword element has an "id" attribute that is used as a reference in the corresponding Entity or Affinity rules. A single Keyword element can be referenced in multiple Entity and Affinity rules.
+A common Rule requirement is to match based on well-known keyword string expressions. This is accomplished by using the `Keyword` element. The Keyword element has an `id` attribute that is used as a reference in the corresponding Entity or Affinity rules. A single Keyword element can be referenced in multiple Entity and Affinity rules.
 
 The matching can be performed using either an exact match or word match based algorithms. Exact match uses a case-sensitive algorithm that searches for the text in the specified language. Word match applies a matching algorithm based on word boundaries. The terms to be matched can be included inline in the Keyword definition by using the Term sub-element.
 
@@ -111,7 +112,7 @@ Another common method of matching is based on regular expressions. The flexibili
 |\ *m*|Escape *m*, where *m* is one of the meta characters described above: ^, ., $, \|, (), [], \*, +, ?, \, or /.|
 |
 
-The Regex element has an "id" attribute that is used as a reference in the corresponding Entity or Affinity rules. A single Regex element can be referenced in multiple Entity and Affinity rules. The Regex expression is defined as the value of the Regex element.
+The Regex element has an `id` attribute that is used as a reference in the corresponding Entity or Affinity rules. A single Regex element can be referenced in multiple Entity and Affinity rules. The Regex expression is defined as the value of the Regex element.
 
 ```xml
 <Regex id="CCRegex">

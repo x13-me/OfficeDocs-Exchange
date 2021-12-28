@@ -5,6 +5,7 @@ ms:assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232118(v=EXCHG.150)
 ms:contentKeyID: 49286851
 ms.topic: article
+description: Learn about DSNs and NDRs in Exchange 2013
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
