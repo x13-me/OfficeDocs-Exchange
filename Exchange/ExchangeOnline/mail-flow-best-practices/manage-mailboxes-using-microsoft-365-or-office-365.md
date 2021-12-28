@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.reviewer: 

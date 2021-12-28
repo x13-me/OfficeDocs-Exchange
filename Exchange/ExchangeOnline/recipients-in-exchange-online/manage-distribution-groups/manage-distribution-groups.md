@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Use the Exchange admin center (EAC) or Exchange Online PowerShell to create a new distribution group in your Exchange Online organization or to mail-enable an existing group.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c4c43493-55e1-46d2-bd4b-d6f6cecd747f
 ms.reviewer: 

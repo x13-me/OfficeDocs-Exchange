@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to manage user access to add-ins for Outlook in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
 ms.reviewer: 

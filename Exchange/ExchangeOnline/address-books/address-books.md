@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about the different methods that Exchange Online uses to organize and configure email addresses.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7c90d413-f978-4af5-8bc5-6b86d897edc3
 ms.reviewer: 

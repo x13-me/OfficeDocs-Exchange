@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use Microsoft 365 or Office 365 protection reports for malware, spam, and mail flow rule detections.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
 ms.reviewer: 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Admins can learn about how S/MIME works in Exchange Online for message encryption and digitally signed messages.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 title: S/MIME in Exchange Online
 ms.reviewer: smithre4
