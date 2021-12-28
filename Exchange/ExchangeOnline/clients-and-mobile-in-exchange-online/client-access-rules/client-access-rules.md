@@ -125,9 +125,6 @@ Conditions and exceptions in Client Access Rules identify the client connections
 
 This table describes the conditions and exceptions that are available in Client Access Rules:
 
-> [!NOTE]
-> Microsoft sync technology that's used in Outlook for iOS and Android and Windows Mail isn't available in Client Access Rules.
-
 |Condition parameter in Exchange Online PowerShell|Exception parameter in Exchange Online PowerShell|Description|
 |---|---|---|
 |_AnyOfAuthenticationTypes_|_ExceptAnyOfAuthenticationTypes_|Valid values are: <ul><li>`AdfsAuthentication`</li><li>`BasicAuthentication`</li><li>`CertificateBasedAuthentication`</li><li>`NonBasicAuthentication`</li><li>`OAuthAuthentication`</li></ul> <p> You can specify multiple values separated by commas. You can use quotation marks around each individual value ("_value1_","_value2_"), but not around all values (don't use "_value1_,_value2_"). <br/> **Note**: If specifying `ExceptAnyOfAuthenticationTypes`, `AnyOfAuthenticationTypes` must also be specified.|
