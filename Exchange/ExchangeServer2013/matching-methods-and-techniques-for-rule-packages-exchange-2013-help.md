@@ -90,7 +90,7 @@ Another common method of matching is based on regular expressions. The flexibili
 |^|Match the beginning of a line.|
 |.|Match any character that isn't a new line.|
 |$|Match the end of a line.|
-|||Logical OR between expressions.|
+|\||Logical OR between expressions.|
 |()|Group sub-expressions.|
 |[]|Define a character class.|
 |\*|Match the preceding expression zero or more times.|
