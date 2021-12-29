@@ -123,11 +123,11 @@ This monitor alert is typically issued on Mailbox servers.
 
 3. If the probe still fails, failover the databases that are hosted on the Mailbox server by using the following command:
 
-   Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
+   Set-MailboxServer -Identity \<ServerName\> -DatabaseCopyActivationDisabledAndMoveNow $true
 
 4. After all the databases are removed from the Mailbox server, you must verify that the databases have been moved successfully. To do this, run the following command:
 
-   Get-MailboxDatabaseCopyStatus -Server <ServerName> | group status
+   Get-MailboxDatabaseCopyStatus -Server \<ServerName\> | group status
 
 5. Make sure that the server does not host any active copies of the database. Then, restart the server.
 
@@ -135,7 +135,7 @@ This monitor alert is typically issued on Mailbox servers.
 
 7. If the probe succeeds, failover the databases by running the following command:
 
-   Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $false
+   Set-MailboxServer -Identity \<ServerName\> -DatabaseCopyActivationDisabledAndMoveNow $false
 
 8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
