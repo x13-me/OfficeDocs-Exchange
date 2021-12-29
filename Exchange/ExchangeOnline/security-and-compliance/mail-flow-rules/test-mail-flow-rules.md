@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to test mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 ms.reviewer: 

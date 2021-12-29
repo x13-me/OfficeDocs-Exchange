@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4c70c606-5e95-4cf7-abce-cf85f1ac4179
 ms.reviewer: 

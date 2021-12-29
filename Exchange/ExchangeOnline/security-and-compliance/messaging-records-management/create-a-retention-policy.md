@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.reviewer: 
