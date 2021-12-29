@@ -5,7 +5,7 @@ ms:assetid: fe2908e7-df8b-4f35-946a-cfbf8521e93a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.secondsgfilesexist(v=EXCHG.150)
 ms:contentKeyID: 46629214
 ms.reviewer: 
-description: 'Exchange Setup can't continue: Older database files are present'
+description: "Exchange Setup can't continue - Older database files are present"
 manager: serdars
 ms.author: serdars
 author: serdars
