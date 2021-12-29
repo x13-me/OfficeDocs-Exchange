@@ -1,7 +1,7 @@
 ---
 title: How to use Outlook Web App or Outlook on the web to remotely wipe an ActiveSync device in Microsoft 365
 description: Describes how to use Outlook Web App to remotely wipe an ActiveSync device in Microsoft 365.
-author: msdmaguire   
+author: JoanneHendrickson   
 ms.author: jhendr
 manager: serdars
 audience: ITPro

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: This article describes how users of Outlook for iOS and Android can use third-party add-ins for online meetings'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 title: Using third-party add-ins for online in Exchange Online meetings in Outlook for iOS and Android in Exchange Online
 ms.custom: remotework

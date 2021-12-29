@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Microsoft 365 or Office 365.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
 title: "Outlook for iOS and Android in Exchange Online: FAQ"

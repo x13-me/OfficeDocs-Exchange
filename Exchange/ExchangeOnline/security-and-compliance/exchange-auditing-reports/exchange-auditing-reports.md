@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about the auditing reports that are available in the Exchange admin center (EAC) in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 ms.reviewer: 

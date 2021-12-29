@@ -5,6 +5,8 @@ ms:assetid: db947791-63ce-45dd-8634-1dfa5f55e2c2
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.um(v=EXCHG.150)
 ms:contentKeyID: 49720901
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the UM health set
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -31,10 +33,10 @@ The UM service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

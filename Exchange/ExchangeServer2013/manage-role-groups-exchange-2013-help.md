@@ -5,6 +5,8 @@ ms:assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657480(v=EXCHG.150)
 ms:contentKeyID: 49289369
 ms.reviewer: 
+ms.topic: article
+description: How to manage role groups in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -52,7 +54,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 To create a role group, see the [Examples](/powershell/module/exchange/New-RoleGroup#examples) section in [New-RoleGroup](/powershell/module/exchange/New-RoleGroup).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully created a role group, do the following:
 
@@ -164,7 +166,7 @@ After the new role group is created, you can add or remove roles, change the sco
 
 For detailed syntax and parameter information, see [Get-RoleGroup](/powershell/module/exchange/Get-RoleGroup) and [New-RoleGroup](/powershell/module/exchange/New-RoleGroup).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully copied a role group, do the following:
 
@@ -335,7 +337,7 @@ New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Ma
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](/powershell/module/exchange/New-ManagementRoleAssignment).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully added roles to a role group, do the following:
 
@@ -385,7 +387,7 @@ Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -R
 
 For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](/powershell/module/exchange/Remove-ManagementRoleAssignment).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully removed roles from a role group, do the following:
 
@@ -495,7 +497,7 @@ For more information about changing management role assignments, see [Change a r
 
 For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](/powershell/module/exchange/Set-ManagementRoleAssignment).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully changed the scope of a role assignment on a role group, do the following:
 
@@ -599,7 +601,7 @@ Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
 
 For detailed syntax and parameter information, see [Set-RoleGroup](/powershell/module/exchange/Set-RoleGroup).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully changed the delegate list on a role group, do the following:
 

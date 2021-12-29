@@ -7,6 +7,8 @@ ms:contentKeyID: 49720900
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the HubTransport health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,9 +29,9 @@ The **HubTransport** service is monitored using the following probes and monitor
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

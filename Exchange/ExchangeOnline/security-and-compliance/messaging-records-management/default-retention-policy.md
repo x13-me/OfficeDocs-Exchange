@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange creates the retention policy Default MRM Policy in your Exchange Online and on-premises Exchange organization. The policy is automatically applied to new users in Exchange Online. In on-premises organizations, the policy is applied when you create an archive for the mailbox. You can change the retention policy applied to a user at any time.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms.reviewer: 
