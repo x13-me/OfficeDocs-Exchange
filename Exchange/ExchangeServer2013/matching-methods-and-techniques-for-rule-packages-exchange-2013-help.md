@@ -110,7 +110,7 @@ Another common method of matching is based on regular expressions. The flexibili
 |\r|Carriage return.|
 |\f|Form feed.|
 |\ *m*|Escape *m*, where *m* is one of the meta characters described above: ^, ., $, \|, (), [], \*, +, ?, \, or /.|
-|
+|||
 
 The Regex element has an `id` attribute that is used as a reference in the corresponding Entity or Affinity rules. A single Regex element can be referenced in multiple Entity and Affinity rules. The Regex expression is defined as the value of the Regex element.
 

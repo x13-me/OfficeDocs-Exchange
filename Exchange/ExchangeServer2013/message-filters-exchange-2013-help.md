@@ -33,9 +33,9 @@ You can use message properties to create a filter and locate messages that meet 
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

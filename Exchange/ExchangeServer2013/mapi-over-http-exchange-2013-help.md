@@ -5,6 +5,7 @@ ms:assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
 ms:mtpsurl: https://technet.microsoft.com/library/Dn635177(v=EXCHG.150)
 ms:contentKeyID: 61218727
 ms.topic: article
+description: Learn what MAPI over HTTP is.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -18,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Messaging Application Programming Interface (MAPI) over HTTP is a new transport protocol implemented in Microsoft Exchange Server 2013 Service Pack 1 (SP1). MAPI over HTTP improves the reliability and stability of the Outlook and Exchange connections by moving the transport layer to the industry-standard HTTP model. This allows a higher level of visibility of transport errors and enhanced recoverability. Additional functionality includes support for an explicit pause-and-resume function. This enables supported clients to change networks or resume from hibernation while maintaining the same server context.
+Messaging Application Programming Interface (MAPI) over HTTP is a new transport protocol implemented in Microsoft Exchange Server 2013 Service Pack 1 (SP1). MAPI over HTTP improves the reliability and stability of the Outlook and Exchange connections by moving the transport layer to the industry-standard HTTP model. This allows a higher level of visibility of transport errors and enhanced recoverability. Additional functionality includes support for an explicit pause-and-resume function. This enables supported clients to change networks or resume from hibernation while maintaining the same server context.
 
 Implementing MAPI over HTTP does not mean that it is the only protocol that can be used for Outlook to access Exchange. Outlook clients that are not MAPI over HTTP capable can still use Outlook Anywhere (RPC over HTTP) to access Exchange through a MAPI-enabled Client Access server.
 
@@ -52,11 +53,11 @@ Use the following matrix to verify that your clients and servers support MAPI ov
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

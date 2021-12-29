@@ -70,8 +70,8 @@ The following table lists general witness server placement recommendations for d
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -140,7 +140,7 @@ If Windows Firewall is enabled on the witness server before the DAG is created, 
 
 <table>
 <colgroup>
-<col style= />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -153,7 +153,7 @@ If you specify a witness server and witness directory, you receive the following
 
 <table>
 <colgroup>
-<col style= />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -166,7 +166,7 @@ If Windows Firewall is enabled on the witness server after the DAG is created bu
 
 <table>
 <colgroup>
-<col style= />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -280,8 +280,8 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -319,8 +319,8 @@ As with network encryption, network compression is also a property of the DAG an
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -394,9 +394,9 @@ For example, consider DAG1, a two-member DAG where each member has two network a
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -435,11 +435,11 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -488,9 +488,9 @@ For example, consider DAG2, a two-member DAG where each member has two network a
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -529,11 +529,11 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

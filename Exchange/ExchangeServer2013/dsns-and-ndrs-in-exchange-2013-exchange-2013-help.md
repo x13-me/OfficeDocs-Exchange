@@ -30,10 +30,10 @@ The following table contains a list of the enhanced status codes that are return
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

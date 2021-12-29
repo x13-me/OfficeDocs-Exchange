@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.topic: article
+description: Configure user mailboxes.
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage'
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566

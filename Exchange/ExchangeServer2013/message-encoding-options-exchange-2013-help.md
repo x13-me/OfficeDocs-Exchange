@@ -55,9 +55,9 @@ When you configure message encoding options for a remote domain, the specific se
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -66,8 +66,8 @@ When you configure message encoding options for a remote domain, the specific se
 <td><p><strong>Available in the Shell</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MIME character set</strong>   The character set that you specify will only be used for MIME messages that don't have their own character set specified. Setting this parameter won't overwrite character sets that are already specified in the outgoing mail.</p>
-<p><strong>Non-MIME character set</strong>   This setting is used if either of the following conditions are true:</p>
+<td><p><strong>MIME character set</strong>: The character set that you specify will only be used for MIME messages that don't have their own character set specified. Setting this parameter won't overwrite character sets that are already specified in the outgoing mail.</p>
+<p><strong>Non-MIME character set</strong>: This setting is used if either of the following conditions are true:</p>
 <ul>
 <li><p>Incoming messages from a remote domain are missing the value of the <em>charset=</em> setting in the MIME Content-Type: header field.</p></li>
 <li><p>Outgoing messages to a remote domain are missing the value of the MIME character set.</p></li>
@@ -77,17 +77,17 @@ When you configure message encoding options for a remote domain, the specific se
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Content type</strong>   You can specify the content type for MIME messages sent to the recipients in the remote domain. You can use of the following settings:</p>
+<td><p><strong>Content type</strong>: You can specify the content type for MIME messages sent to the recipients in the remote domain. You can use of the following settings:</p>
 <ul>
-<li><p><strong>MimeHtmlText</strong>   All messages are converted to MIME messages that use HTML formatting, unless the original message is a text message. If the original message is a text message, the outgoing message will be a MIME message that uses text formatting. This is the default setting.</p></li>
-<li><p><strong>MimeText</strong>   All messages are converted to MIME messages that use text formatting.</p></li>
-<li><p><strong>MimeHtml</strong>   All messages are converted to MIME messages that use HTML formatting.</p></li>
+<li><p><strong>MimeHtmlText</strong>: All messages are converted to MIME messages that use HTML formatting, unless the original message is a text message. If the original message is a text message, the outgoing message will be a MIME message that uses text formatting. This is the default setting.</p></li>
+<li><p><strong>MimeText</strong>: All messages are converted to MIME messages that use text formatting.</p></li>
+<li><p><strong>MimeHtml</strong>: All messages are converted to MIME messages that use HTML formatting.</p></li>
 </ul></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Line wrap size</strong>   You can specify the maximum number of characters that can exist on a single line of text in the body of the e-mail message. Older email client applications may prefer 78 characters per line. This option is only available by using the Shell.</p>
+<td><p><strong>Line wrap size</strong>: You can specify the maximum number of characters that can exist on a single line of text in the body of the e-mail message. Older email client applications may prefer 78 characters per line. This option is only available by using the Shell.</p>
 <p></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
@@ -161,9 +161,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -214,9 +214,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -297,9 +297,9 @@ The following table describes the order of precedence from lowest priority to hi
 
 <table>
 <colgroup>
-<col style= />
-<col style= />
-<col style= />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
