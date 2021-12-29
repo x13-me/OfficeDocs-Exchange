@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.firstsg
 ms:contentKeyID: 46629029
 ms.reviewer: 
 ms.topic: article
-description: 'Exchange Setup can't continue: Old database files are present'
+description: "Exchange Setup can't continue - Old database files are present"
 manager: serdars
 ms.author: serdars
 author: serdars
