@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.clussvc
 ms:contentKeyID: 46628894
 ms.reviewer: 
 ms.topic: article
-description: "Exchange Setup: Only the Mailbox role can be installed on a cluster server'
+description: "Exchange Setup - Only the Mailbox role can be installed on a cluster server"
 manager: serdars
 ms.author: serdars
 author: msdmaguire
