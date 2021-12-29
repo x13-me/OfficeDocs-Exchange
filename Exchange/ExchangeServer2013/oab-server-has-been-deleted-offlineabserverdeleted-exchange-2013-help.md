@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.offline
 ms:contentKeyID: 46628863
 ms.reviewer:
 ms.topic: article
-description: Exchange Setup can't finish--OAB server has been deleted  
+description: "Exchange Setup can't finish - OAB server has been deleted" 
 manager: serdars
 ms.author: serdars
 author: serdars
