@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Configure user access to add-ins for Outlook.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

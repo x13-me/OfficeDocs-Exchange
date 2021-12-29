@@ -5,6 +5,8 @@ ms:assetid: 381f582c-15ec-43bc-b674-5399fad72c97
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997269(v=EXCHG.150)
 ms:contentKeyID: 61200283
 ms.reviewer: 
+ms.topic: article
+description: Modify Active Directory Lightweight Directory Services configuration in Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -28,8 +30,8 @@ The parameters in the following table are available for the **ConfigureAdam.ps1*
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

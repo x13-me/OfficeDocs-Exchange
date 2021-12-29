@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1efe7737-b573-4f36-a0f2-27714d2ebdb0
 title: Account setup with modern authentication in Exchange Online

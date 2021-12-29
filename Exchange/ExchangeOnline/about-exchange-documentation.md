@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about Exchange Online documentation.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b
 ms.reviewer: 

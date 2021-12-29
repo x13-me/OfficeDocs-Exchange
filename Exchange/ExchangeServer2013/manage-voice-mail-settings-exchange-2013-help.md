@@ -6,6 +6,8 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
+ms.topic: article
+description: Configure voice mail settings for a user.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,6 +5,8 @@ ms:assetid: cb4cc165-6c09-44ab-a95f-167ae8ed2485
 ms:mtpsurl: https://technet.microsoft.com/library/Dn606261(v=EXCHG.150)
 ms:contentKeyID: 61200302
 ms.reviewer: 
+ms.topic: article
+description: How to manually configure Edge Transport server mail flow in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

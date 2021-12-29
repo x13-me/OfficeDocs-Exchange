@@ -5,6 +5,8 @@ ms:assetid: de3e3503-6de3-4666-aeb9-cd877efb93bb
 ms:mtpsurl: https://technet.microsoft.com/library/Bb408414(v=EXCHG.150)
 ms:contentKeyID: 49289434
 ms.reviewer: 
+ms.topic: article
+description: About messaging records management terminology in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

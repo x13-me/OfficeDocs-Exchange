@@ -5,6 +5,8 @@ ms:assetid: febb73fb-3a0b-4c67-b53b-9566d7c32cd2
 ms:mtpsurl: https://technet.microsoft.com/library/Mt793556(v=EXCHG.150)
 ms:contentKeyID: 74418060
 ms.reviewer: 
+ms.topic: article
+description: About the My ReadWriteMailbox Apps role in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -35,15 +37,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

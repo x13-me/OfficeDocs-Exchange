@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Admins can learn how to configure the S/MIME infrastructure in Exchange Online for use with Outlook for iOS and Android.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 title: S/MIME for Outlook for iOS and Android in Exchange Online
 ms.reviewer: smithre4

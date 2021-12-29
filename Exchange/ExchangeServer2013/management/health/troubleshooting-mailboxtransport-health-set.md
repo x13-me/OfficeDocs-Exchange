@@ -7,6 +7,8 @@ ms:contentKeyID: 49720714
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the MailboxTransport health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,9 +29,9 @@ The **MailboxTransport** service is monitored using the following probes and mon
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

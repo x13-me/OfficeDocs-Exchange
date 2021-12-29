@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to use message trace in the classic Exchange admin center to find out what happened to email messages.
 ms.topic: troubleshooting
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 74a9fc59-7e0e-4832-baf9-2a86418b0079
 ms.reviewer: 

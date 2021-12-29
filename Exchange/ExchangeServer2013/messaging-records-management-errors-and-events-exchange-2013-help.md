@@ -5,6 +5,8 @@ ms:assetid: 8bc3f5ae-403b-45af-86c1-b2fccab34e63
 ms:mtpsurl: https://technet.microsoft.com/library/Bb310783(v=EXCHG.150)
 ms:contentKeyID: 50873803
 ms.reviewer: 
+ms.topic: article
+description: Messaging records management errors and events in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -37,11 +39,11 @@ The following tables provide lists of events that you can use to troubleshoot MR
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -116,11 +118,11 @@ The following tables provide lists of events that you can use to troubleshoot MR
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

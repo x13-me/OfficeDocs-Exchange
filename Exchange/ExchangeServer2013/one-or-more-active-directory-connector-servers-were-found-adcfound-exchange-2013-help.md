@@ -5,6 +5,8 @@ ms:assetid: a874f51f-09a2-4a76-9695-d61fb1ee6c1c
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adcfound(v=EXCHG.150)
 ms:contentKeyID: 46629070
 ms.reviewer: 
+ms.topic: article
+description: "Exchange Setup can't continue: Active Directory Connector servers found"
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -31,7 +33,7 @@ To resolve this issue, remove all ADC components, and rerun Exchange 2007 or Ex
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
