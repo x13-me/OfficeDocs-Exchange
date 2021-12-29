@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.msfilte
 ms:contentKeyID: 47899800
 ms.reviewer: 
 ms.topic: article
-description: 'Exchange Setup can't continue: Office 2010 Filter Pack is not installed'
+description: "Exchange Setup can't continue - Office 2010 Filter Pack is not installed"
 manager: serdars
 ms.author: serdars
 author: serdars
