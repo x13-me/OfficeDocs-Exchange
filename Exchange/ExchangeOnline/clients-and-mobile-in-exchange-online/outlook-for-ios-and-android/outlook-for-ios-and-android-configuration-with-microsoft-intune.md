@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
 title: Deploying Outlook for iOS and Android app configuration settings in Exchange Online

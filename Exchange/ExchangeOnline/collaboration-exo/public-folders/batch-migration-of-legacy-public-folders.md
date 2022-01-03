@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms.collection:

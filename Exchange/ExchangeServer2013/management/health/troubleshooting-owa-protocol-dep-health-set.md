@@ -5,6 +5,8 @@ ms:assetid: f39c63d5-f161-4eee-9415-05f3355e7cc7
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa.protocol.dep(v=EXCHG.150)
 ms:contentKeyID: 49720914
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the OWA.Protocol.Dep health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,9 +29,9 @@ The **OWA.Protocol.DEP** service is monitored using the following probes and mon
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

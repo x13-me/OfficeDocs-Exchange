@@ -2,6 +2,25 @@
 
 
 
+## Week of December 13, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/13/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 12/14/2021 | [Disable Basic authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) | modified |
+| 12/14/2021 | [Mailbox plans in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans) | modified |
+| 12/16/2021 | [Enhanced filtering for connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 12/16/2021 | [Auto forwarded messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
+| 12/16/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
+| 12/16/2021 | [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off) | modified |
+| 12/16/2021 | [IMAP migration in the Microsoft 365 admin center](/Exchange/mailbox-migration/migrating-imap-mailboxes/imap-migration-in-the-admin-center) | modified |
+| 12/16/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
+| 12/17/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
+| 12/17/2021 | [Auto forwarded messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
+| 12/17/2021 | [Feature availability for Exchange Server](/Exchange/new-features/feature-availability?view=exchserver-2016) | added |
+
+
 ## Week of December 06, 2021
 
 

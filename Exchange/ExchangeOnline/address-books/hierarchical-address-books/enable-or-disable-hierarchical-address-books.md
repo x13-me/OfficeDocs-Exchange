@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to enable and configure or disable a hierarchical address book in their Exchange Online organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
 ms.reviewer: 

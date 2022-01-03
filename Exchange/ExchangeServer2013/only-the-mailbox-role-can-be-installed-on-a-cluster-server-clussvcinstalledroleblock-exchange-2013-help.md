@@ -1,10 +1,12 @@
 ---
-title: 'Only the Mailbox role can be installed on a cluster server'
+title: "Only the Mailbox role can be installed on a cluster server"
 TOCTitle: Only the Mailbox role can be installed on a cluster server_ClusSvcInstalledRoleBlock
 ms:assetid: 3e20f408-2b8d-47c2-a402-07232ab9f234
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.clussvcinstalledroleblock(v=EXCHG.150)
 ms:contentKeyID: 46628894
 ms.reviewer: 
+ms.topic: article
+description: "Exchange Setup - Only the Mailbox role can be installed on a cluster server"
 manager: serdars
 ms.author: serdars
 author: msdmaguire

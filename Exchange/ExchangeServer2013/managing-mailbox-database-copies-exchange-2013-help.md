@@ -5,6 +5,8 @@ ms:assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335158(v=EXCHG.150)
 ms:contentKeyID: 48384912
 ms.reviewer: 
+ms.topic: article
+description: How to manage mailbox database copies in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -236,9 +238,9 @@ Enabling loose truncation and configuring loose truncation parameters is perform
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -316,9 +318,9 @@ When the Data Guarantee API is executed to evaluate the health of the database c
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -365,8 +367,8 @@ Before moving large numbers of mailboxes to or from replication databases within
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -409,14 +411,14 @@ Due to the inherent nature of DAGs, as the result of database switchovers and fa
 
 ### DAG with unbalanced active copy distribution
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -480,14 +482,14 @@ After running the script with the first option, the preceding unbalanced DAG bec
 
 ### DAG with balanced active copy distribution
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -543,8 +545,8 @@ The following table lists the available parameters for the RedistributeActiveDat
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

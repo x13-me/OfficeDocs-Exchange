@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to manage queues in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -131,7 +133,7 @@ This example resumes the suspended delivery queue named contoso.com on the serve
 Resume-Queue -Identity Mailbox01\contoso.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully resumed a queue, do the following:
 
@@ -183,7 +185,7 @@ This example retries the queue named contoso.com that's in the `Retry` state on 
 Retry-Queue -Identity Mailbox01\contoso.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully retried a queue, do the following:
 
@@ -262,7 +264,7 @@ To resubmit a message from the poison message queue, perform the following steps
     Resume-Message 222
     ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully resubmitted a message from the poison message queue, do the following:
 
@@ -308,7 +310,7 @@ This example suspends the queue named contoso.com on the server named Mailbox01.
 Suspend-Queue -Identity Mailbox01\contoso.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully suspended a queue, do the following:
 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 

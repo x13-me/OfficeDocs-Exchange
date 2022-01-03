@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.reviewer: 
