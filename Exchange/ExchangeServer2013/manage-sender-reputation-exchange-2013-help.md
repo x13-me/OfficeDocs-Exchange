@@ -5,6 +5,8 @@ ms:assetid: f2716bd9-e3ac-46d9-9264-4e3dabfa0f38
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125186(v=EXCHG.150)
 ms:contentKeyID: 49248691
 ms.reviewer: 
+ms.topic: article
+description: How to manage sender reputation in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -50,7 +52,7 @@ This example enables sender reputation.
 Set-SenderReputationConfig -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled sender reputation, do the following:
 
@@ -94,7 +96,7 @@ To enable sender reputation for internal messages, run the following command:
 Set-SenderReputationConfig -InternalMailEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled sender reputation for internal and external messages, do the following:
 
@@ -120,7 +122,7 @@ This example sets the sender reputation level (SRL) block threshold to 6 and con
 Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the sender reputation properties, do the following:
 
@@ -138,8 +140,8 @@ You may need to perform additional steps to allow sender reputation to traverse 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -175,7 +177,7 @@ This example configures sender reputation to use the open proxy server named SER
 Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured outbound access for detection of open proxy servers, do the following:
 

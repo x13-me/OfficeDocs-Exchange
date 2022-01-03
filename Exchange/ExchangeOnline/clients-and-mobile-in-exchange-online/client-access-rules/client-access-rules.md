@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
 ms.reviewer: 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
 ms.reviewer: 

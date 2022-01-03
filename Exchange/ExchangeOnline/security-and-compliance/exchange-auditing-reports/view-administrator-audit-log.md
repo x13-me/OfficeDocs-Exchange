@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to view the admin audit log in Exchange Online
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.reviewer: 

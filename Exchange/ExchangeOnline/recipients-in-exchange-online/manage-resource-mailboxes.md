@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to create and modify resource mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer:

@@ -5,6 +5,8 @@ ms:assetid: f2d0041f-2872-4669-95ec-443233f4956d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125187(v=EXCHG.150)
 ms:contentKeyID: 49287411
 ms.reviewer: 
+ms.topic: article
+description: Manage recipient filtering on Edge Transport servers in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -62,7 +64,7 @@ Set-RecipientFilterConfig -Enabled $true
 > [!NOTE]
 > When you disable recipient filtering, the underlying Recipient Filter agent is still enabled. To disable the Recipient Filter agent, run the command: <CODE>Disable-TransportAgent "Recipient Filter Agent"</CODE>.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled recipient filtering, do the following:
 
@@ -88,7 +90,7 @@ This example enables the Recipient Block list:
 Set-RecipientFilterConfig -BlockListEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled the Recipient Block list, do the following:
 
@@ -126,7 +128,7 @@ This example adds chris@contoso.com to the list of recipients, and removes miche
 Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the Recipient Block list, do the following:
 
@@ -152,7 +154,7 @@ To block messages to recipients that don't exist in your organization, run the f
 Set-RecipientFilterConfig -RecipientValidationEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled Recipient Lookup, do the following:
 

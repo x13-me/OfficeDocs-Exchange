@@ -4,6 +4,8 @@ TOCTitle: Run a non-owner mailbox access report
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to run a non-owner mailbox access report in Exchange 2013
 ms.reviewer:
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 f1.keywords:

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
 ms.reviewer: 

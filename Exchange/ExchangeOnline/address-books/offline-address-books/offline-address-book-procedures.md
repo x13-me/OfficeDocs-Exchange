@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: The list of procedures related to offline address books (OABs).
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.reviewer: 
