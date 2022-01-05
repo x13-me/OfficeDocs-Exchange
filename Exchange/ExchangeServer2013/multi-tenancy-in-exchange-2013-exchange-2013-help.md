@@ -5,6 +5,8 @@ ms:assetid: df09257d-dd98-4f59-b830-1818cedda15c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ862352(v=EXCHG.150)
 ms:contentKeyID: 50182057
 ms.reviewer: 
+ms.topic: article
+description: About multi-tenancy in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

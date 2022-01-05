@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3bce1321-0bff-40dc-92e1-52c5b955cdf5
 description: "Admins can learn about cross-premises email with an on-premises email system other than Exchange and Exchange Online."

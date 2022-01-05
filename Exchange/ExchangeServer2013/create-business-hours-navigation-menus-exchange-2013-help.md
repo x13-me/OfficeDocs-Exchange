@@ -4,6 +4,8 @@ TOCTitle: Create business hours navigation menus
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to create business hours navigation menus in Exchange Server
 ms.reviewer:
 ms.assetid: f76472fd-aa1a-4cd8-8e26-cc674421d375
 f1.keywords:

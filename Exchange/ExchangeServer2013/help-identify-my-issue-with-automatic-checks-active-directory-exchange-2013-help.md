@@ -7,6 +7,8 @@ ms:contentKeyID: 62632393
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Use automatic checks to identify Active Directory issues in Exchange 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -26,9 +28,9 @@ If you already have an user account, select **Sign In**. You don't need an Azure
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -5,6 +5,8 @@ ms:assetid: 8acb3d8e-df63-443a-b0f7-ea14e7755e01
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.network(v=EXCHG.150)
 ms:contentKeyID: 49720833
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the Network health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

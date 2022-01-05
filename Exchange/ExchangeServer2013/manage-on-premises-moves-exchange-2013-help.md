@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150487(v=EXCHG.150)
 ms:contentKeyID: 47559947
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to manage on-premises moves in Exchange 2013
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -68,7 +70,7 @@ To create a local move request, log in to the EAC and perform the following step
 
 For an example of how to create a local move request, see Example 2 in [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -116,7 +118,7 @@ For detailed syntax and parameter information, see [New-MigrationBatch](/powersh
 > [!NOTE]
 > All mailboxes that are specified in the CSV file will be migrated, even if they are outside of the RBAC scope (for example, an OU) that gives the admin permissions to migrate mailboxes.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -154,7 +156,7 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase
 
 For detailed syntax and parameter information, see [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -189,7 +191,7 @@ For more information about preparing your forest for cross-forest moves, see the
 
 For detailed syntax and parameter information, see [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) and [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -221,7 +223,7 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetD
 
 For detailed syntax and parameter information, see [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) and [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -243,7 +245,7 @@ New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -Ar
 
 For detailed syntax and parameter information, see [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) and [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 
@@ -277,7 +279,7 @@ New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLim
 
 For detailed syntax and parameter information, see [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) and [New-MoveRequest](/powershell/module/exchange/New-MoveRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully completed your migration, do the following:
 

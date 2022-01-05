@@ -7,6 +7,8 @@ ms:contentKeyID: 48385609
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create a database availability group in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

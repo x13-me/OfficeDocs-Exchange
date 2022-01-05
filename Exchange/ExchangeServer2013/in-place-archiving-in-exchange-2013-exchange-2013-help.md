@@ -7,6 +7,8 @@ ms:contentKeyID: 48385465
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description:  In-Place Archiving lets users store email in a mailbox accessible in Outlook
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -45,8 +47,8 @@ The following table lists the client applications that can be used to access arc
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -120,9 +122,9 @@ Exchange 2013 Setup creates a default archive and retention policy named **Defau
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -187,14 +189,14 @@ To help with this control, you can configure archive mailboxes with an *archive 
 
 The following table lists the events logged and warning messages sent when the archive warning quota and archive quota are met.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

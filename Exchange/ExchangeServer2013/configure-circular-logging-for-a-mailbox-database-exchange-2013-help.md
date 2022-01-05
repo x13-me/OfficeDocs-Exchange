@@ -7,6 +7,8 @@ ms:contentKeyID: 62524835
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description:  How to configure circular logging for a mailbox database in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

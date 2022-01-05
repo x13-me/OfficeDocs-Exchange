@@ -5,6 +5,8 @@ ms:assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
 ms.reviewer: 
+ms.topic: article
+description: How to manage linked mailboxes in Microsoft Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -106,7 +108,7 @@ New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMaste
 
 For syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/New-Mailbox).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a linked mailbox, do one of the following:
 
@@ -359,7 +361,7 @@ This example changes the linked master account in the fabrikam.com account fores
 Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully changed properties for a linked mailbox, do the following:
 

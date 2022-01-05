@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
@@ -94,6 +94,10 @@ Remove-Mailbox -Identity "Walter Harp"
 ## Restore a user mailbox
 
 When you delete a mailbox, Exchange Online retains the mailbox and all its contents until the deleted mailbox retention period expires, which is 30 days. After 30 days, the mailbox is permanently deleted and can't be recovered. The method for restoring a mailbox depends on whether the mailbox was deleted by deleting the user account or removing the Exchange Online license.
+
+### To help understand the current status of a deleted mailbox
+
+To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in Microsoft 365 admin center. To launch the diagnostics, either type **Run Tests: Deleted Mailbox** when in the admin center Help panel or click [on this link](https://aka.ms/PillarDeletedMailBox) (this will take you directly to the Microsoft 365 admin center Help panel).
 
 > [!NOTE]
 > We strongly recommend restoring the mailbox from the same source (Azure AD or Exchange Online) from where the user or mailbox was deleted. Failing to do so will result in a failed restore operation.

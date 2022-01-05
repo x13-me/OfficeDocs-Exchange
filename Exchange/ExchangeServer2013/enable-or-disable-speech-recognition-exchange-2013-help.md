@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable automatic speech recognition in Exchange Server
 ms.assetid: 92b3b679-b503-4068-8e88-25ec0f4537ab
 f1.keywords:
 - NOCSH

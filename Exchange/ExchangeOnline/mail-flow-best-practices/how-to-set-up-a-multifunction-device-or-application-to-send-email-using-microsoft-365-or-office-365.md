@@ -1,6 +1,6 @@
 ---
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.reviewer: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Microsoft 365 or Office 365.'

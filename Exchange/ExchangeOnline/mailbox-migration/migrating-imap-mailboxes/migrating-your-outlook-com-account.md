@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: how-to
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.reviewer: 

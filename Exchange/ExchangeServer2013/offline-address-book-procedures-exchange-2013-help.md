@@ -4,7 +4,9 @@ TOCTitle: Offline address book procedures
 ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: About offline address book procedures in Exchange 2013 
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 f1.keywords:
 - NOCSH

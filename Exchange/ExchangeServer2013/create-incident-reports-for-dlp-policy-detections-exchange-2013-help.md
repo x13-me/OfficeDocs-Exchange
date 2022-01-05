@@ -7,6 +7,8 @@ ms:contentKeyID: 47560050
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create incident reports for DLP policy detections in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,11 +29,11 @@ The following is a complete list of the line names in the incident report templa
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col>
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

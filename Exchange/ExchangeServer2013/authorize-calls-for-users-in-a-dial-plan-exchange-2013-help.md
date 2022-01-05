@@ -4,7 +4,9 @@ TOCTitle: Authorize calls for users in a dial plan
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: How to enable dialing authorizations on a Unified Messaging dial plan
 ms.assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc
 f1.keywords:
 - NOCSH

@@ -4,6 +4,8 @@ TOCTitle: Enable a UM IP gateway
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to enable a Unified Messaging IP gateway in Exchange Server
 ms.reviewer:
 ms.assetid: 2706ae06-c45d-41b7-abbe-378a9fca104a
 f1.keywords:

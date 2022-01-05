@@ -9,10 +9,8 @@ manager: serdars
 ms.author: serdars
 author: serdars
 ms.topic: article
+description: Exchange integration with SharePoint and Lync 
 f1.keywords:
-- NOCSH
-mtps_version: v=EXCHG.150
-description: Features that sync with SharePoint and Lync
 ---
 
 # Integration with SharePoint and Lync
@@ -87,8 +85,8 @@ Within an on-premises deployment, Exchange 2013, SharePoint 2013, and Lync Serve
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

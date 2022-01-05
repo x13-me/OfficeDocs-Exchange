@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about add-ins for Outlook in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms.reviewer: 

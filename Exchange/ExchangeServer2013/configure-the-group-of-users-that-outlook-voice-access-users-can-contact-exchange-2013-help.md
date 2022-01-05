@@ -4,6 +4,8 @@ TOCTitle: Configure the group of users that Outlook Voice Access users can conta
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure the group of users that Outlook Voice Access users can contact in Exchange Server
 ms.reviewer:
 ms.assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
 f1.keywords:

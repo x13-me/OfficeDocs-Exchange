@@ -5,6 +5,8 @@ ms:assetid: dc929928-61b8-448b-9ae5-d3fa73a18ee9
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195914(v=EXCHG.150)
 ms:contentKeyID: 53181787
 ms.reviewer: 
+ms.topic: article
+description: How to import the Exchange Server 2013 Management Pack
 manager: serdars
 ms.author: serdars
 author: msdmaguire

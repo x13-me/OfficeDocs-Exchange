@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the maximum recording duration in Exchange Server
 ms.assetid: 18eeb567-1048-4c82-93cf-612cb12ec5e3
 f1.keywords:
 - NOCSH

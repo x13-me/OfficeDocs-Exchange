@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to export eDiscovery search results to a PST file in Exchange Server
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 f1.keywords:
 - NOCSH

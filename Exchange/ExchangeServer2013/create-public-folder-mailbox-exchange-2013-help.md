@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a public folder mailbox in Exchange Server
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 f1.keywords:
 - NOCSH

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Track and prevent migration data loss with DataConsistencyScore'
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 

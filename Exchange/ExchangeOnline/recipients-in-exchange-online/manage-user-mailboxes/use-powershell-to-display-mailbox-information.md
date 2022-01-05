@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
 ms.reviewer: 

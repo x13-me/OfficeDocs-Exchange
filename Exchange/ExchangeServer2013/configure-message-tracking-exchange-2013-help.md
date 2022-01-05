@@ -7,6 +7,8 @@ ms:contentKeyID: 50646521
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure message tracking in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

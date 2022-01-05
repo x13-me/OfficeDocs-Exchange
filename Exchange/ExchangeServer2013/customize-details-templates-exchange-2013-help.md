@@ -7,6 +7,8 @@ ms:contentKeyID: 49090993
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to customize details templates in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

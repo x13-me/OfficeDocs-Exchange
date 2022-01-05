@@ -7,6 +7,8 @@ ms:contentKeyID: 48157381
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Introduction to Exchange Server 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

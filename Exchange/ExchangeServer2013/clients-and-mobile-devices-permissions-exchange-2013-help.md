@@ -4,6 +4,8 @@ TOCTitle: Clients and mobile devices permissions
 ms:assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638131(v=EXCHG.150)
 ms:contentKeyID: 48385114
+ms.topic: article
+description: Permissions required to perform tasks for clients and mobile devices vary depending on the procedure or cmdlet.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -43,8 +45,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -102,8 +104,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,8 +164,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -196,8 +198,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -228,8 +230,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -254,8 +256,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -289,8 +291,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -328,8 +330,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -391,8 +393,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -436,8 +438,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -465,8 +467,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

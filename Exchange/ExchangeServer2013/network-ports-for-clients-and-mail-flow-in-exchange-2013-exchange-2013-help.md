@@ -5,6 +5,8 @@ ms:assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb331973(v=EXCHG.150)
 ms:contentKeyID: 64916714
 ms.reviewer: 
+ms.topic: article
+description: Network ports for clients and mail flow in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -41,9 +43,9 @@ The network ports that are required for email clients to access mailboxes and ot
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -126,11 +128,11 @@ The network ports that are required for mail flow in an Exchange organization th
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -191,11 +193,11 @@ The network ports that are required for mail flow in Exchange organizations that
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

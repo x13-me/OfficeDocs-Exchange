@@ -7,6 +7,8 @@ ms:contentKeyID: 53957627
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to customize Outlook Web App sign-In, language selection, and error pages
 author: msdmaguire
 f1.keywords:
 - NOCSH

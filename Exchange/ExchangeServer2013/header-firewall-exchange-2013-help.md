@@ -5,9 +5,12 @@ ms:assetid: 9b148f7b-47a9-4379-a55b-8d5310c1772f
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232136(v=EXCHG.150)
 ms:contentKeyID: 50934222
 ms.reviewer: 
+ms.topic: article
+description: In Exchange Server, header firewall removes specific header fields from messages
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+
 f1.keywords:
 - CSH
 mtps_version: v=EXCHG.150
@@ -64,9 +67,9 @@ The following table describes the permissions on Send connectors and Receive con
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -115,10 +118,10 @@ The following table describes the default application of the header firewall per
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -215,9 +218,9 @@ The following table describes the default application of the header firewall per
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -352,8 +355,8 @@ Organization X-headers start with **X-MS-Exchange-Organization-**. Forest X-head
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

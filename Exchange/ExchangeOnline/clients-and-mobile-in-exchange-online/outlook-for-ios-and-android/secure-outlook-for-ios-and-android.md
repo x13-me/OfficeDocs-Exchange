@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
 title: Securing Outlook for iOS and Android in Exchange Online
@@ -182,12 +182,6 @@ You can define a default block rule and then configure an allow rule for Outlook
 
    ```PowerShell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Allow
-   ```
-
-3. **Optional**: Create rules that allow Outlook on Windows devices for Exchange ActiveSync connectivity (WindowsMail refers to the Mail app included in Windows 10):
-
-   ```PowerShell
-   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
    ```
 
 #### Option 2: Block native Exchange ActiveSync apps on Android and iOS devices

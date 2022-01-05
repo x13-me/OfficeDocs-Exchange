@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how administrators can use Client Access Rules to allow or block different types of client connections to Exchange Online.'
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3792312e-882c-40b5-add4-a7bc17af4c58
 ms.reviewer: 
@@ -124,9 +124,6 @@ Not all authentication types are supported for all protocols in Client Access Ru
 Conditions and exceptions in Client Access Rules identify the client connections that the rule is applied to or not applied to. For example, if the rule blocks access by Exchange ActiveSync clients, you can configure the rule to allow Exchange ActiveSync connections from a specific range of IP addresses. The syntax is the same for a condition and the corresponding exception. The only difference is conditions specify client connections to include, while exceptions specify client connections to exclude.
 
 This table describes the conditions and exceptions that are available in Client Access Rules:
-
-> [!NOTE]
-> Microsoft sync technology that's used in Outlook for iOS and Android and Windows Mail isn't available in Client Access Rules.
 
 |Condition parameter in Exchange Online PowerShell|Exception parameter in Exchange Online PowerShell|Description|
 |---|---|---|

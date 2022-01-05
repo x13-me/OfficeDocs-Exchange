@@ -7,6 +7,8 @@ ms:contentKeyID: 50395398
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure POP3 and IMAP4 message retrieval format options in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -74,8 +76,8 @@ You can choose from the following settings. You can specify the value for the *M
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -171,8 +173,8 @@ You can choose from the following settings. You can specify the value for the *M
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -240,8 +242,8 @@ You can choose from the following settings. You can specify the value for the *P
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -309,8 +311,8 @@ You can specify the value for the *ImapMessagesRetrievalMimeFormat* parameter by
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

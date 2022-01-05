@@ -5,6 +5,8 @@ ms:assetid: 36a7d375-76f8-441c-9da1-8a50dbd062f1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876870(v=EXCHG.150)
 ms:contentKeyID: 49289231
 ms.reviewer: 
+ms.topic: article
+description: 'The `Audit Logs` management role enables administrators to configure the administrator audit log in an organization.'
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

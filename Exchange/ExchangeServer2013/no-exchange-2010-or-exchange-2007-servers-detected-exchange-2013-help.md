@@ -5,6 +5,8 @@ ms:assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.noe14serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628970
 ms.reviewer: 
+ms.topic: article
+description: No Exchange 2010 or Exchange 2007 servers detected by Exchange 2013 Setup
 manager: serdars
 ms.author: serdars
 author: msdmaguire

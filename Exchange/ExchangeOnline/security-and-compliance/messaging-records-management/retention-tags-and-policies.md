@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer: 
@@ -193,5 +193,15 @@ If your organization has never implemented MRM, and your users aren't familiar w
 
 For details about how to place a mailbox on retention hold, see [Place a mailbox on retention hold](mailbox-retention-hold.md).
 
-This test will check and validate the retention policy settings configured for the user;
-	[Run Tests: Retention Policy](https://aka.ms/PillarRetentionPolicy)
+## Run diagnostics to check retention policy settings
+
+You can run an automated diagnostic check on a user's mailbox to check and validate the retention policy settings configured for the user.
+
+To run the diagnostic check, click the button below. 
+
+> [!div class="nextstepaction"]
+> [Run Tests: Retention Policy](https://aka.ms/PillarRetentionPolicy)
+
+A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
+
+![Run diagnostics on retention policy settings.](https://user-images.githubusercontent.com/40893023/145092381-465d8490-5676-443b-ba07-84c09ef39d4b.png)
