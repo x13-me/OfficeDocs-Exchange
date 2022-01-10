@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
 ms.reviewer:
@@ -125,7 +125,7 @@ There are a few things you should check:
    Get-CASMailbox -Identity <EmailAddress> | Format-List SmtpClientAuthenticationDisabled
    ```
 
-   If the value is False, replace \<EmailAddress\> with the email address and run the following command to enable it:
+   If the value is True, replace \<EmailAddress\> with the email address and run the following command to enable it:
 
    ```powershell
    Set-CASMailbox -Identity <EmailAddress> -SmtpClientAuthenticationDisabled $false

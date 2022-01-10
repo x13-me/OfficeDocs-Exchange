@@ -4,7 +4,9 @@ TOCTitle: MyTextMessaging role
 ms:assetid: 0e030bdb-8a72-4925-bb77-eaca249c36fc
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633454(v=EXCHG.150)
 ms:contentKeyID: 49289167
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: About the MyTextMessaging role in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

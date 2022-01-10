@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Track and prevent migration data loss with DataConsistencyScore'
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
@@ -95,4 +95,4 @@ Through March 2021, the [BadItemLimit and LargeItemLimit parameters](/powershell
 If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter is specified, or if the boxes in the classic Exchange admin center wizard are left blank, then the new migration method and DataConsistencyScore are used.
 
 > [!NOTE]
-> The BadItemLimit and LargeItemLimit parameters will be completely replaced by DataConsistencyScore in January 2021.
+> The BadItemLimit and LargeItemLimit parameters will be completely replaced by DataConsistencyScore in January 2022.

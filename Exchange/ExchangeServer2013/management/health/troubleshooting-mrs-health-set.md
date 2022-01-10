@@ -5,6 +5,8 @@ ms:assetid: 21947ed6-1584-4db9-9cd6-f6c1de22e352
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mrs(v=EXCHG.150)
 ms:contentKeyID: 49720741
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the MRS health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -25,10 +27,10 @@ The MRS service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

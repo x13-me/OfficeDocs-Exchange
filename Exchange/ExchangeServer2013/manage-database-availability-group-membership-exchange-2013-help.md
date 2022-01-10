@@ -7,6 +7,8 @@ ms:contentKeyID: 48385730
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to manage database availability group membership in Microsoft Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

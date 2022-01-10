@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn155787(v=EXCHG.150)
 ms:contentKeyID: 53903965
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to enable the MRS Proxy endpoint for remote moves in Exchange Server 
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

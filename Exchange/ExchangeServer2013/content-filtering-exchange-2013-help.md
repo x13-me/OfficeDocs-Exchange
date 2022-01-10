@@ -7,13 +7,15 @@ ms:contentKeyID: 49248690
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Content filtering in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Content filtering
+# Content filtering in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Enable custom prompt recording via the telephone user interface in Exchange Server
 ms.assetid: f2e5c636-2be9-4d48-b5e7-37913ded62d1
 f1.keywords:
 - NOCSH

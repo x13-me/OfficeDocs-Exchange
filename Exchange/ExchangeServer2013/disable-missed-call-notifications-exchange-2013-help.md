@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable missed call notification for users in Exchange Server
 ms.assetid: e54937d5-3074-454f-b561-e601fecfc6ad
 f1.keywords:
 - NOCSH

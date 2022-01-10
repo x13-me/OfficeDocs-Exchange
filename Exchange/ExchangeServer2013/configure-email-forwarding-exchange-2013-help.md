@@ -4,6 +4,8 @@ TOCTitle: Configure email forwarding for a mailbox
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure email forwarding for a mailbox in Exchange Server
 ms.reviewer:
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 f1.keywords:

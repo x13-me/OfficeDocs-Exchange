@@ -74,7 +74,7 @@ Address rewriting changes an email address by rewriting specific fields in the m
 |**MAIL FROM**|Message envelope|Rewritten|Not rewritten|
 |**RCPT TO**|Message envelope|Not rewritten|Rewritten|
 |**To**|Message header|Not Rewritten|Rewritten|
-|**Cc**|Message header|Not Rewritten|Rewritten|
+|**Cc**|Message header|Rewritten|Rewritten|
 |**From**|Message header|Rewritten|Not rewritten|
 |**Sender**|Message header|Rewritten|Not rewritten|
 |**Reply-To**|Message header|Rewritten|Not rewritten|

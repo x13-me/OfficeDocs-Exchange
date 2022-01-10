@@ -5,6 +5,8 @@ ms:assetid: d78d0032-29af-476b-82e3-69364ca7f12f
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461938(v=EXCHG.150)
 ms:contentKeyID: 49289426
 ms.reviewer: 
+ms.topic: article
+description: About the MyDisplayName role in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

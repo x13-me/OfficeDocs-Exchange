@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Fax advisor for Exchange Server Unified Messaging
 ms.assetid: 928a466d-cc0c-4160-bd4c-f0fc76b038d4
 f1.keywords:
 - NOCSH

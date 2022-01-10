@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to view and modify accepted domains in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 0fc0ecc0-e133-48fa-9d72-cb4793a73960
 ms.reviewer: 

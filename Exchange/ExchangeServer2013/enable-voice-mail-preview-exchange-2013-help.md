@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable Voice Mail Preview for users in Exchange Server
 ms.assetid: 206a5d2b-27c9-4e9b-a29a-6ddffaa07109
 f1.keywords:
 - NOCSH

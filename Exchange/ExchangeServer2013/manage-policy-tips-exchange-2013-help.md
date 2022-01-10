@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Policy Tips are informative notices that display to email senders while composing a message.
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
 f1.keywords:
 - NOCSH

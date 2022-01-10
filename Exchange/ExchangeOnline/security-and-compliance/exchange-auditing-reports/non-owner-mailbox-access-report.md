@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use the Exchange admin center (EAC) to run a non-owner mailbox access report in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms.reviewer: 

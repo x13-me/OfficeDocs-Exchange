@@ -2,611 +2,729 @@
 
 
 
-## Week of October 25, 2021
+## Week of December 13, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/26/2021 | [Fix email delivery issues for error code 550 5.4.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-4-1-in-exchange-online) | modified |
-| 10/26/2021 | [Turn off access to the Exchange admin center](/Exchange/architecture/client-access/disable-exchange-admin-center-access?view=exchserver-2016) | modified |
-| 10/26/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 10/28/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
-| 10/28/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 10/28/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
+| 12/13/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
+| 12/14/2021 | [Disable Basic authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) | modified |
+| 12/14/2021 | [Mailbox plans in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/mailbox-plans) | modified |
+| 12/16/2021 | [Enhanced filtering for connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
+| 12/16/2021 | [Auto forwarded messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
+| 12/16/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
+| 12/16/2021 | [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off) | modified |
+| 12/16/2021 | [IMAP migration in the Microsoft 365 admin center](/Exchange/mailbox-migration/migrating-imap-mailboxes/imap-migration-in-the-admin-center) | modified |
+| 12/16/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
+| 12/17/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
+| 12/17/2021 | [Auto forwarded messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
+| 12/17/2021 | [Feature availability for Exchange Server](/Exchange/new-features/feature-availability?view=exchserver-2016) | added |
 
 
-## Week of October 18, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/18/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 10/18/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
-| 10/18/2021 | [Recreate missing arbitration mailboxes](/Exchange/architecture/mailbox-servers/recreate-arbitration-mailboxes?view=exchserver-2016) | modified |
-| 10/18/2021 | [Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery](/Exchange/high-availability/disaster-recovery/recover-exchange-servers?view=exchserver-2016) | modified |
-| 10/18/2021 | [Configure Exchange Server for shared permissions](/Exchange/permissions/split-permissions/configure-exchange-for-shared-permissions?view=exchserver-2016) | modified |
-| 10/18/2021 | [Configure Exchange Server for split permissions](/Exchange/permissions/split-permissions/configure-exchange-for-split-permissions?view=exchserver-2016) | modified |
-| 10/18/2021 | [Exchange dev/test environment in Azure](/Exchange/plan-and-deploy/deploy-new-installations/create-azure-test-environments?view=exchserver-2016) | modified |
-| 10/18/2021 | [Delegate the installation of Exchange servers](/Exchange/plan-and-deploy/deploy-new-installations/delegate-installations?view=exchserver-2016) | modified |
-| 10/18/2021 | [Upgrade Exchange to the latest Cumulative Update](/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2016) | modified |
-| 10/18/2021 | [Install the Exchange management tools](/Exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2016) | modified |
-| 10/18/2021 | [Release notes for Exchange Server](/Exchange/release-notes?view=exchserver-2016) | modified |
-| 10/22/2021 | [Digital certificates and encryption in Exchange Server](/Exchange/architecture/client-access/certificates?view=exchserver-2016) | modified |
-| 10/22/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | modified |
-
-
-## Week of October 11, 2021
+## Week of December 06, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/12/2021 | [Configure mail flow using connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
-| 10/12/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 10/12/2021 | [MetaCacheDatabase (MCDB) setup](/Exchange/high-availability/database-availability-groups/metacachedatabase-setup?view=exchserver-2019) | modified |
-| 10/13/2021 | [About Exchange Online documentation in Exchange Online](/Exchange/about-exchange-documentation) | modified |
-| 10/13/2021 | [Accessibility in the Exchange admin center in Exchange Online](/Exchange/accessibility/accessibility-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Accessibility in Exchange Online](/Exchange/accessibility/accessibility) | modified |
-| 10/13/2021 | [Get started using a screen reader in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/get-started-using-screen-reader) | modified |
-| 10/13/2021 | [Keyboard shortcuts for the Exchange admin center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center) | modified |
-| 10/13/2021 | Use a screen reader to manage anti-spam protection in Exchange Online | removed |
-| 10/13/2021 | [Use a screen reader to add a new equipment mailbox in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-add-equipment-mailbox-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to add a new mail contact in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-add-mail-contact-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to add members to a distribution group in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-add-members-to-a-distribution-group-in-exchange-admin-cente) | modified |
-| 10/13/2021 | [Use a screen reader to add a new room mailbox in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-add-room-mailbox-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to add a new shared mailbox in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-add-shared-mailbox-in-exchange-admin-center-2016) | modified |
-| 10/13/2021 | [Use a screen reader to archive mailbox items in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-archive-mailbox-items-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to configure collaboration in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-configure-collaboration-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to configure mail flow rules in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-configure-transport-rules-in-exchange-admin-center) | modified |
-| 10/13/2021 | Use a screen reader to configure voice mail in the Exchange admin center in Exchange Online | removed |
-| 10/13/2021 | [Use a screen reader to create a new distribution group in the Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-create-distribution-group-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to define rules that encrypt or decrypt email messages in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-define-rules-that-encrypt-or-decrypt-email-in-exchange-admi) | modified |
-| 10/13/2021 | [Use a screen reader to edit the mailbox display name in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-edit-mailbox-display-name-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to export and review audit logs in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-export-and-review-audit-logs-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to identify your admin role in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-identify-admin-role-in-exchange-admin-center) | modified |
-| 10/13/2021 | Use a screen reader to manage anti-malware protection in the Exchange admin center in Exchange Online | removed |
-| 10/13/2021 | [Use a screen reader to open the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-open-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to run an audit report in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-run-audit-report-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to trace an email message in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-trace-an-email-message-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Use a screen reader to work with mobile clients in the Classic Exchange admin center in Exchange Online](/Exchange/accessibility/use-screen-reader-to-work-with-mobile-clients-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Assign an address book policy to users in Exchange Online](/Exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users) | modified |
-| 10/13/2021 | [Change the settings of an address book policy in Exchange Online](/Exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy) | modified |
-| 10/13/2021 | [Create an address book policy in Exchange Online](/Exchange/address-books/address-book-policies/create-an-address-book-policy) | modified |
-| 10/13/2021 | [Remove an address book policy in Exchange Online](/Exchange/address-books/address-book-policies/remove-an-address-book-policy) | modified |
-| 10/13/2021 | [Turn on address book policy routing in Exchange Online](/Exchange/address-books/address-book-policies/turn-on-address-book-policy-routing) | modified |
-| 10/13/2021 | [Address books in Exchange Online](/Exchange/address-books/address-books) | modified |
-| 10/13/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
-| 10/13/2021 | [Configure global address list properties in Exchange Online](/Exchange/address-books/address-lists/configure-global-address-list-properties) | modified |
-| 10/13/2021 | [Create a global address list in Exchange Online](/Exchange/address-books/address-lists/create-global-address-list) | modified |
-| 10/13/2021 | [Manage address lists in Exchange Online](/Exchange/address-books/address-lists/manage-address-lists) | modified |
-| 10/13/2021 | [Remove a global address list in Exchange Online](/Exchange/address-books/address-lists/remove-a-global-address-list) | modified |
-| 10/13/2021 | [Recipient filters for address lists in Exchange Online PowerShell in Exchange Online](/Exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list) | modified |
-| 10/13/2021 | [Add an address list to or remove an address list from an offline address book in Exchange Online](/Exchange/address-books/offline-address-books/add-or-remove-an-address-list) | modified |
-| 10/13/2021 | [Change the default offline address book in Exchange Online](/Exchange/address-books/offline-address-books/change-default-offline-address-book) | modified |
-| 10/13/2021 | [Configure offline address book distribution properties in Exchange Online](/Exchange/address-books/offline-address-books/configure-distribution-properties) | modified |
-| 10/13/2021 | [Create an offline address book in Exchange Online](/Exchange/address-books/offline-address-books/create-offline-address-book) | modified |
-| 10/13/2021 | [Offline address book procedures in Exchange Online](/Exchange/address-books/offline-address-books/offline-address-book-procedures) | modified |
-| 10/13/2021 | [Remove an offline address book from Exchange in Exchange Online](/Exchange/address-books/offline-address-books/remove-offline-address-book) | modified |
-| 10/13/2021 | [Back up email in Exchange Online](/Exchange/back-up-email) | modified |
-| 10/13/2021 | [Differences between the Classic admin center (Classic EAC) to the new admin center (new EAC) in Exchange Online](/Exchange/changes-in-exchange-admin-center) | modified |
-| 10/13/2021 | [Add-ins for Outlook in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) | modified |
-| 10/13/2021 | [Install or remove add-ins for Outlook for your Exchange Online organization in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins) | modified |
-| 10/13/2021 | [Manage user access to add-ins for Outlook in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins) | modified |
-| 10/13/2021 | [Using third-party add-ins for online in Exchange Online meetings in Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/online-meeting-add-ins-for-ios-and-android) | modified |
-| 10/13/2021 | [Specify the administrators and users who can install and manage add-ins for Outlook in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins) | modified |
-| 10/13/2021 | [Enable or disable SMTP AUTH in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) | modified |
-| 10/13/2021 | [Enable or disable modern authentication for Outlook in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) | modified |
-| 10/13/2021 | [Mobile device mailbox policies in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies) | modified |
-| 10/13/2021 | [Configure custom MailTips for recipients in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/configure-custom-mailtips) | modified |
-| 10/13/2021 | [Configure the large audience size for your organization in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size) | modified |
-| 10/13/2021 | [MailTips over organization relationships in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships) | modified |
-| 10/13/2021 | [MailTips in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips) | modified |
-| 10/13/2021 | [Manage MailTips for organization relationships in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships) | modified |
-| 10/13/2021 | [Configure mobile phones to access email in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mobile-access/configure-email-on-mobile-phone) | modified |
-| 10/13/2021 | [Perform a remote wipe on a mobile phone in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mobile-access/remote-wipe-on-mobile-phone) | modified |
-| 10/13/2021 | [Opt-in to Exchange Online endpoint for legacy TLS clients using SMTP AUTH in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth) | modified |
-| 10/13/2021 | [Managing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/manage-outlook-for-ios-and-android) | modified |
-| 10/13/2021 | [Deploying Outlook for iOS and Android app configuration settings in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
-| 10/13/2021 | [Outlook for iOS and Android in Exchange Online: FAQ](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq) | modified |
-| 10/13/2021 | [Using Outlook for iOS and Android in the Government Community Cloud in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud) | modified |
-| 10/13/2021 | [Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android) | modified |
-| 10/13/2021 | [Securing Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android) | modified |
-| 10/13/2021 | [Sensitivity labeling and protection in Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) | modified |
-| 10/13/2021 | [S/MIME for Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android) | modified |
-| 10/13/2021 | [Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/apply-or-remove-outlook-web-app-mailbox-policy) | modified |
-| 10/13/2021 | [View or configure Outlook on the web mailbox policy properties in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) | modified |
-| 10/13/2021 | [Modify the space used by Inbox rules in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/increase-the-space-used-by-inbox-rules) | modified |
-| 10/13/2021 | [Public attachment handling in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/public-attachment-handling) | modified |
-| 10/13/2021 | [How to use Outlook Web App or Outlook on the web to remotely wipe an ActiveSync device in Microsoft 365](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/remote-wipe-outlook-onweb) | modified |
-| 10/13/2021 | [Remove an Outlook on the web mailbox policy from Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy) | modified |
-| 10/13/2021 | [Enable or Disable POP3 or IMAP4 access for a user in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access) | modified |
-| 10/13/2021 | [POP3 and IMAP4 in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4) | modified |
-| 10/13/2021 | [Set POP3 or IMAP4 settings for a user in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-or-imap4-settings) | modified |
-| 10/13/2021 | [Collaboration in Exchange Online](/Exchange/collaboration-exo/collaboration-exo) | modified |
-| 10/13/2021 | [Accessing public folders with Outlook 2016 for Mac in Exchange Online](/Exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac) | modified |
-| 10/13/2021 | [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders in Exchange Online](/Exchange/collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs) | modified |
-| 10/13/2021 | [Use batch migration to migrate Exchange Online public folders to Microsoft 365 Groups](/Exchange/collaboration-exo/public-folders/batch-migration-of-exchange-online-public-folders) | modified |
-| 10/13/2021 | [Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365](/Exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) | modified |
-| 10/13/2021 | [Create a public folder mailbox in Exchange Online](/Exchange/collaboration-exo/public-folders/create-public-folder-mailbox) | modified |
-| 10/13/2021 | [Create a public folder in Exchange Online](/Exchange/collaboration-exo/public-folders/create-public-folder) | modified |
-| 10/13/2021 | [Mail-enable or mail-disable a public folder in Exchange Online](/Exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder) | modified |
-| 10/13/2021 | [Migrate your public folders to Microsoft 365 Groups in Exchange Online](/Exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-microsoft-365-groups) | modified |
-| 10/13/2021 | [Public folder procedures in Microsoft 365, Office 365, and Exchange Online](/Exchange/collaboration-exo/public-folders/public-folder-procedures) | modified |
-| 10/13/2021 | [Create a public folder calendar in Exchange Online](/Exchange/collaboration-exo/public-folders/public-folders-calendar) | modified |
-| 10/13/2021 | [Public folders in Microsoft 365, Office 365, and Exchange Online](/Exchange/collaboration-exo/public-folders/public-folders) | modified |
-| 10/13/2021 | [Recover a deleted public folder mailbox in Exchange Online](/Exchange/collaboration-exo/public-folders/recover-deleted-public-folder-mailbox) | modified |
-| 10/13/2021 | [Remove a public folder in Exchange Online](/Exchange/collaboration-exo/public-folders/remove-public-folder) | modified |
-| 10/13/2021 | [Restore deleted items from public folder in Exchange Online](/Exchange/collaboration-exo/public-folders/restore-deleted-items-from-public-folder) | modified |
-| 10/13/2021 | [Restore a deleted public folder in Exchange Online](/Exchange/collaboration-exo/public-folders/restore-deleted-public-folder) | modified |
-| 10/13/2021 | [Configure Exchange Online public folders for a hybrid deployment in Exchange Online](/Exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders) | modified |
-| 10/13/2021 | [Configure legacy on-premises public folders for a hybrid deployment in Exchange Online](/Exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders) | modified |
-| 10/13/2021 | [Set up public folders in a new organization in Exchange Online](/Exchange/collaboration-exo/public-folders/set-up-public-folders) | modified |
-| 10/13/2021 | [Update the public folder hierarchy in Exchange Online](/Exchange/collaboration-exo/public-folders/update-public-folder-hierarchy) | modified |
-| 10/13/2021 | [Use favorite public folders in Outlook on the web in Exchange Online](/Exchange/collaboration-exo/public-folders/use-favorite-public-folders) | modified |
-| 10/13/2021 | [View statistics for public folders and public folder items in Exchange Online' in Exchange Online](/Exchange/collaboration-exo/public-folders/view-public-folder-statistics) | modified |
-| 10/13/2021 | [Classic EAC in Exchange Online - Get to classic and features in Exchange Online](/Exchange/features-in-classic-eac) | modified |
-| 10/13/2021 | [New EAC in Exchange Online - Get to new EAC and Features in Exchange Online](/Exchange/features-in-new-eac) | modified |
-| 10/13/2021 | [Configure the external postmaster address in Exchange Online](/Exchange/mail-flow-best-practices/configure-external-postmaster-address) | modified |
-| 10/13/2021 | [Continuous error throttling for SMTP AUTH submissions  in Exchange Online](/Exchange/mail-flow-best-practices/continuous-error-throttling-smtp-auth-submissions) | modified |
-| 10/13/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 10/13/2021 | [Mail flow best practices for Exchange Online, Microsoft 365, and Office 365 (overview)](/Exchange/mail-flow-best-practices/mail-flow-best-practices) | modified |
-| 10/13/2021 | [Manage accepted domains in Exchange Online](/Exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) | modified |
-| 10/13/2021 | [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises Exchange) in Exchange Online](/Exchange/mail-flow-best-practices/manage-mail-flow-for-multiple-locations) | modified |
-| 10/13/2021 | [Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes in Exchange Online](/Exchange/mail-flow-best-practices/manage-mail-flow-on-office-365-and-on-prem) | modified |
-| 10/13/2021 | [Manage all mailboxes and mail flow using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/manage-mailboxes-using-microsoft-365-or-office-365) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-451-4-7-500-699-asxxx-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 5.1.8 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-4-6-through-5-4-20-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 5.7.13 or 5.7.135 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-13-or-5-7-135-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 5.7.57 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-57-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 5.7.64 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-64-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 4.4.7 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-4-4-7-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.1.0 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-0-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.1.1 through 5.1.20 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-1-through-5-1-20-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.1.10 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-10-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.4.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-4-1-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.6.11 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-6-11-in-exchange-online) | modified |
-| 10/13/2021 | [Fix email delivery issues for error code 550 5.7.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-7-1-in-exchange-online) | modified |
-| 10/13/2021 | [Fix 'sender's submission quota exceeded' errors in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-for-submission-quota-exceeded-in-exchange-online) | modified |
-| 10/13/2021 | [Remote domains in Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/remote-domains) | modified |
-| 10/13/2021 | [Supported character sets for remote domains in Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/supported-character-sets) | modified |
-| 10/13/2021 | [Test mail flow by validating your connectors in Exchange Online](/Exchange/mail-flow-best-practices/test-mail-flow) | modified |
-| 10/13/2021 | [Troubleshoot mail flow in Exchange Online](/Exchange/mail-flow-best-practices/troubleshoot-mail-flow) | modified |
-| 10/13/2021 | [Do I need to create a connector in Exchange Online? in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/do-i-need-to-create-a-connector) | modified |
-| 10/13/2021 | [Enhanced filtering for connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) | modified |
-| 10/13/2021 | [Set up connectors for secure mail flow with a partner organization in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner) | modified |
-| 10/13/2021 | [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) | modified |
-| 10/13/2021 | [Configure mail flow using connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
-| 10/13/2021 | [Validate connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) | modified |
-| 10/13/2021 | [Use Directory-Based Edge Blocking to reject messages sent to invalid recipients in Exchange Online](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking) | modified |
-| 10/13/2021 | [Add an SSL certificate to Exchange 2007 for migration to Exchange Online](/Exchange/mailbox-migration/add-an-ssl-certificate-to-exchange-2007) | modified |
-| 10/13/2021 | [Add an SSL certificate to Exchange 2010 for migration to Exchange Online](/Exchange/mailbox-migration/add-an-ssl-certificate-to-exchange-2010) | modified |
-| 10/13/2021 | [Add an SSL certificate to Exchange 2013 for migration to Exchange Online](/Exchange/mailbox-migration/add-an-ssl-certificate-to-exchange-2013) | modified |
-| 10/13/2021 | [Assign Exchange permissions to migrate mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/assign-permissions-for-migration) | modified |
-| 10/13/2021 | [Perform an automated Google Workspace migration to Microsoft 365 or Office 365 in the new EAC in Exchange Online](/Exchange/mailbox-migration/automated-migration-neweac) | modified |
-| 10/13/2021 | [Completion of migration batch in Classic EAC in Exchange Online](/Exchange/mailbox-migration/completion-gspace-migration-batch-classiceac) | modified |
-| 10/13/2021 | [Completion of migration batch in New EAC in Exchange Online](/Exchange/mailbox-migration/completion-gspace-migration-batch-neweac) | modified |
-| 10/13/2021 | [Completion of migration batch in Exchange Online](/Exchange/mailbox-migration/completion-gspace-migration-batch) | modified |
-| 10/13/2021 | [Completion of migration batch in Exchange Online PowerShell](/Exchange/mailbox-migration/completion-gspae-migration-batch-powershell) | modified |
-| 10/13/2021 | [CSV files for mailbox migration in Exchange Online](/Exchange/mailbox-migration/csv-files-for-migration) | modified |
-| 10/13/2021 | [Migrate email to Exchange Online using the Exchange cutover method in Exchange Online](/Exchange/mailbox-migration/cutover-migration-to-office-365) | modified |
-| 10/13/2021 | [Decide on a migration path in Exchange Online](/Exchange/mailbox-migration/decide-on-a-migration-path) | modified |
-| 10/13/2021 | [Enable your Gmail account for IMAP in Exchange Online](/Exchange/mailbox-migration/enable-gmail-accounts-for-imap) | modified |
-| 10/13/2021 | [Google Workspace migration prerequisites in Exchange Online](/Exchange/mailbox-migration/googleworkspace-migration-prerequisites) | modified |
-| 10/13/2021 | [Overview of the G Suite migration process in Exchange Online](/Exchange/mailbox-migration/how-it-all-works-in-the-backend) | modified |
-| 10/13/2021 | [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](/Exchange/mailbox-migration/mailbox-migration) | modified |
-| 10/13/2021 | [Manage migration batches in Exchange Online](/Exchange/mailbox-migration/manage-migration-batches) | modified |
-| 10/13/2021 | [Perform manual Google Workspace migration in Classic Exchange admin center in Exchange Online](/Exchange/mailbox-migration/manual-gspace-migration-classiceac) | modified |
-| 10/13/2021 | [Perform manual Google Workspace migration in the new Exchange admin center in Exchange Online](/Exchange/mailbox-migration/manual-gspace-migration-neweac) | modified |
-| 10/13/2021 | [Perform manual Google Workspace migration in Exchange Online](/Exchange/mailbox-migration/manual-gspace-migration-overview) | modified |
-| 10/13/2021 | [Manually configuring G-Suite for migration to Microsoft 365 or Office 365](/Exchange/mailbox-migration/manually-configuring-gsuite-for-migration) | modified |
-| 10/13/2021 | [How to migrate mailboxes from one Microsoft 365 or Office 365 organization to another](/Exchange/mailbox-migration/migrate-mailboxes-across-tenants) | modified |
-| 10/13/2021 | [CSV files for IMAP migration batches in Exchange Online](/Exchange/mailbox-migration/migrating-imap-mailboxes/csv-files-for-imap-migrations) | modified |
-| 10/13/2021 | [Enable 2-step verification for your Google apps users in Exchange Online](/Exchange/mailbox-migration/migrating-imap-mailboxes/enable-2-step-verification-for-google-apps) | modified |
-| 10/13/2021 | [Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes) | modified |
-| 10/13/2021 | [What you need to know about migrating your IMAP mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes) | modified |
-| 10/13/2021 | [Tips for optimizing IMAP migrations in Exchange Online](/Exchange/mailbox-migration/migrating-imap-mailboxes/optimizing-imap-migrations) | modified |
-| 10/13/2021 | [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts) | modified |
-| 10/13/2021 | [Learn more about setting up your IMAP server connection in Exchange Online](/Exchange/mailbox-migration/migrating-imap-mailboxes/setting-up-your-imap-server-connection) | modified |
-| 10/13/2021 | [Migration users status report in Exchange Online](/Exchange/mailbox-migration/migration-users-status-report) | modified |
-| 10/13/2021 | [Microsoft 365 and Office 365 migration performance and best practices](/Exchange/mailbox-migration/office-365-migration-best-practices) | modified |
-| 10/13/2021 | [Perform a Google Workspace migration to Microsoft 365 or Office 365](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
-| 10/13/2021 | [Convert Exchange 2003 mailboxes to mail-enabled users in Exchange Online](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2003-mailboxes) | modified |
-| 10/13/2021 | [Convert Exchange 2007 mailboxes to mail-enabled users in Exchange Online](/Exchange/mailbox-migration/perform-a-staged-migration/convert-exchange-2007-mailboxes) | modified |
-| 10/13/2021 | [Perform a staged migration of email in Exchange Online](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration) | modified |
-| 10/13/2021 | [Perform Google Workspace migration to Microsoft 365 or Office 365 using Exchange Online PowerShell](/Exchange/mailbox-migration/perform-gspace-migration-powershell) | modified |
-| 10/13/2021 | [Plan for third-party email coexistence with Microsoft 365 or Office 365 and Azure Active Directory](/Exchange/mailbox-migration/plan-to-coexist-with-third-party-messaging-and-aad-ds) | modified |
-| 10/13/2021 | [Track and Prevent Migration Data Loss in Exchange Online](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
-| 10/13/2021 | [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate) | modified |
-| 10/13/2021 | [What you need to know about a cutover email migration in Exchange Online](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration) | modified |
-| 10/13/2021 | [What you need to know about a staged email migration in Exchange Online](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration) | modified |
-| 10/13/2021 | [Customize and schedule mail protection reports to be automatically sent to your inbox in Exchange Online](/Exchange/monitoring/customize-and-schedule-mail-protection-reports) | modified |
-| 10/13/2021 | [Alert policies in Exchange Online](/Exchange/monitoring/mail-flow-insights/alert-policy-and-its-configuration) | modified |
-| 10/13/2021 | [Domain expiring soon insight in the new Exchange admin center (new EAC) in Exchange Online](/Exchange/monitoring/mail-flow-insights/domain-expiry-notification-feature) | modified |
-| 10/13/2021 | [Mail flow insights in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mail-flow-insights) | modified |
-| 10/13/2021 | [Mailboxes exceeding receiving limits insight in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mailboxes-exceeding-receiving-limits-insights) | modified |
-| 10/13/2021 | [Fix possible mail loop insight in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight) | modified |
-| 10/13/2021 | [Fix slow mail flow rules insight in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mfi-fix-slow-mail-flow-rules-insight) | modified |
-| 10/13/2021 | [New domains being forwarded email insight in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mfi-new-domains-being-forwarded-email-insight) | modified |
-| 10/13/2021 | [New users forwarding email insight in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight) | modified |
-| 10/13/2021 | [Mail flow reports in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mail-flow-reports) | modified |
-| 10/13/2021 | [Mailboxes exceeding receiving limits report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mailboxes-exceeding-receiving-limits-report) | modified |
-| 10/13/2021 | [Auto forwarded messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) | modified |
-| 10/13/2021 | [Email issues for priority accounts report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) | modified |
-| 10/13/2021 | [Inbound messages and Outbound messages reports in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) | modified |
-| 10/13/2021 | [Non-accepted domain report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-non-accepted-domain-report) | modified |
-| 10/13/2021 | [Non-delivery details report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-non-delivery-details-report) | modified |
-| 10/13/2021 | [Queued messages report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-queued-messages-report) | modified |
-| 10/13/2021 | [SMTP AUTH clients report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report) | modified |
-| 10/13/2021 | [Top domain mailflow status report in the new EAC in Exchange Online](/Exchange/monitoring/mail-flow-reports/mfr-top-domain-mailflow-status-report) | modified |
-| 10/13/2021 | [Message Trace FAQ in Exchange Online](/Exchange/monitoring/trace-an-email-message/message-trace-faq) | modified |
-| 10/13/2021 | [Message trace in the modern EAC in Exchange Online](/Exchange/monitoring/trace-an-email-message/message-trace-modern-eac) | modified |
-| 10/13/2021 | [Run a message trace and view the results in the Exchange admin center in Exchange Online](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
-| 10/13/2021 | [Trace an email message in Exchange Online](/Exchange/monitoring/trace-an-email-message/trace-an-email-message) | modified |
-| 10/13/2021 | [Use mail protection reports to view data about malware, spam, and rule detections in Exchange Online](/Exchange/monitoring/use-mail-protection-reports) | modified |
-| 10/13/2021 | [What happened to delivery reports? in Exchange Online](/Exchange/monitoring/what-happened-to-delivery-reports-in-office-365) | modified |
-| 10/13/2021 | [Permissions in Exchange Online](/Exchange/permissions-exo/permissions-exo) | modified |
-| 10/13/2021 | [Role assignment policies in Exchange Online](/Exchange/permissions-exo/role-assignment-policies) | modified |
-| 10/13/2021 | [Create and manage groups in the new Exchange admin center in Exchange Online](/Exchange/recipients-in-exchange-online/create-and-manage-groups) | modified |
-| 10/13/2021 | [Create user mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/create-user-mailboxes) | modified |
-| 10/13/2021 | [Delete or restore user mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) | modified |
-| 10/13/2021 | [Create a distribution group naming policy in Exchange Online](/Exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy) | modified |
-| 10/13/2021 | [Create and manage distribution groups in Exchange Online](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) | modified |
-| 10/13/2021 | [Override the distribution group naming policy in Exchange Online](/Exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy) | modified |
-| 10/13/2021 | [Manage dynamic distribution group in Exchange Online](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) | modified |
-| 10/13/2021 | [Modern dynamic distribution groups in Exchange Online](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/modern-dynamic-distribution-groups) | modified |
-| 10/13/2021 | [Manage Facebook contact sync in your organization in Exchange Online](/Exchange/recipients-in-exchange-online/manage-facebook-contact-sync) | modified |
-| 10/13/2021 | [Manage guest access to Microsoft 365 groups in Exchange Online](/Exchange/recipients-in-exchange-online/manage-group-access-to-microsoft-365-groups) | modified |
-| 10/13/2021 | [Manage LinkedIn contact sync in your organization in Exchange Online](/Exchange/recipients-in-exchange-online/manage-linkedin-contact-sync) | modified |
-| 10/13/2021 | [Manage mail contacts in Exchange Online](/Exchange/recipients-in-exchange-online/manage-mail-contacts) | modified |
-| 10/13/2021 | [Manage mail-enabled security groups in Exchange Online](/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) | modified |
-| 10/13/2021 | [Manage permissions for recipients in Exchange Online](/Exchange/recipients-in-exchange-online/manage-permissions-for-recipients) | modified |
-| 10/13/2021 | [Manage resource mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/manage-resource-mailboxes) | modified |
-| 10/13/2021 | [Add or remove email addresses for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
-| 10/13/2021 | [Automatically save sent items in delegator's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) | modified |
-| 10/13/2021 | [Change the branding of Clutter notifications in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-clutter-notification-branding) | modified |
-| 10/13/2021 | [Change how long permanently deleted items are kept for an Exchange Online mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention) | modified |
-| 10/13/2021 | [Clutter notifications in Outlook in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/clutter-notifications-in-outlook) | modified |
-| 10/13/2021 | [Configure message delivery restrictions for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions) | modified |
-| 10/13/2021 | [Convert a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox) | modified |
-| 10/13/2021 | [Enable or disable Exchange ActiveSync for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync) | modified |
-| 10/13/2021 | [Enable or disable MAPI for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi) | modified |
-| 10/13/2021 | [Enable or disable Outlook on the web for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) | modified |
-| 10/13/2021 | [Enable or disable single item recovery for a mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) | modified |
-| 10/13/2021 | [Recover deleted messages in a user's mailbox in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) | modified |
-| 10/13/2021 | [Use Exchange Online PowerShell to display mailbox information in Exchange Online](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information) | modified |
-| 10/13/2021 | [Message and recipient limits in Exchange Online](/Exchange/recipients-in-exchange-online/message-and-recipient-limits) | modified |
-| 10/13/2021 | [Plus Addressing in Exchange Online](/Exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online) | modified |
-| 10/13/2021 | [Recipients in Exchange Online](/Exchange/recipients-in-exchange-online/recipients-in-exchange-online) | modified |
-| 10/13/2021 | [Remove an In-Place Hold in Exchange Online](/Exchange/security-and-compliance/create-or-remove-in-place-holds) | modified |
-| 10/13/2021 | [Create a custom DLP policy in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy) | modified |
-| 10/13/2021 | [Create a DLP policy from a template in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template) | modified |
-| 10/13/2021 | [Data loss prevention in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) | modified |
-| 10/13/2021 | [DLP policy templates supplied in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/dlp-policy-templates) | modified |
-| 10/13/2021 | [How DLP rules are applied to evaluate messages in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/dlp-rule-application) | modified |
-| 10/13/2021 | [Manage policy tips in Exchange Online](/Exchange/security-and-compliance/data-loss-prevention/manage-policy-tips) | modified |
-| 10/13/2021 | [Auditing reports in the Exchange admin center in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports) | modified |
-| 10/13/2021 | [Export mailbox audit logs in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | modified |
-| 10/13/2021 | [Run a per-mailbox litigation hold report in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | modified |
-| 10/13/2021 | [View the admin audit log in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log) | modified |
-| 10/13/2021 | [View and export the external admin audit log in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/view-external-admin-audit-log) | modified |
-| 10/13/2021 | [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds) | modified |
-| 10/13/2021 | [Assign eDiscovery permissions in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions) | modified |
-| 10/13/2021 | [Create a discovery mailbox in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox) | modified |
-| 10/13/2021 | [Create a custom management scope for In-Place eDiscovery searches in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope) | modified |
-| 10/13/2021 | [Delete and re-create the default discovery mailbox in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox) | modified |
-| 10/13/2021 | [Export eDiscovery search results to a PST file in the Exchange admin center in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/export-search-results) | modified |
-| 10/13/2021 | [In-Place eDiscovery in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) | modified |
-| 10/13/2021 | [Message properties and search operators for In-Place eDiscovery in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators) | modified |
-| 10/13/2021 | [Reduce the size of a discovery mailbox in Exchange Online](/Exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size) | modified |
-| 10/13/2021 | [Enable or disable journaling of voice mail and missed call notifications in Exchange Online](/Exchange/security-and-compliance/journaling/disable-enable-voicemail-missed-call-notifications) | modified |
-| 10/13/2021 | [Journaling in Exchange Online](/Exchange/security-and-compliance/journaling/journaling) | modified |
-| 10/13/2021 | [Manage journaling in Exchange Online](/Exchange/security-and-compliance/journaling/manage-journaling) | modified |
-| 10/13/2021 | [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) | modified |
-| 10/13/2021 | [Use mail flow rules to block messages with executable attachments in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments) | modified |
-| 10/13/2021 | [Use mail flow rules to filter bulk email in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail) | modified |
-| 10/13/2021 | [Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email) | modified |
-| 10/13/2021 | [Use mail flow rules to see what your users are reporting to Microsoft in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft) | modified |
-| 10/13/2021 | [Use mail flow rules to the SCL in messages in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) | modified |
-| 10/13/2021 | [Add retention tags to or remove retention tags from a retention policy in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags) | modified |
-| 10/13/2021 | [Apply a retention policy to mailboxes in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/apply-retention-policy) | modified |
-| 10/13/2021 | [Create a Retention Policy in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/create-a-retention-policy) | modified |
-| 10/13/2021 | [Default folders that support Retention Policy Tags in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/default-folders) | modified |
-| 10/13/2021 | [Default Retention Policy in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/default-retention-policy) | modified |
-| 10/13/2021 | [Place a mailbox on retention hold in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold) | modified |
-| 10/13/2021 | [Messaging records management in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/messaging-records-management) | modified |
-| 10/13/2021 | [How retention age is calculated in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/retention-age) | modified |
-| 10/13/2021 | [Retention tags and retention policies in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
-| 10/13/2021 | [Modify archive policies in Exchange Online](/Exchange/security-and-compliance/modify-archive-policies) | modified |
-| 10/13/2021 | [Clean up or delete items from the Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/clean-up-deleted-items) | modified |
-| 10/13/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
-| 10/13/2021 | [Security and compliance for Exchange Online](/Exchange/security-and-compliance/security-and-compliance) | modified |
-| 10/13/2021 | [Configure S/MIME in Exchange Online](/Exchange/security-and-compliance/smime-exo/configure-smime-exo) | modified |
-| 10/13/2021 | [Modify an organization relationship in Exchange Online](/Exchange/sharing/organization-relationships/modify-an-organization-relationship) | modified |
-| 10/13/2021 | [Remove an organization relationship in Exchange Online](/Exchange/sharing/organization-relationships/remove-an-organization-relationship) | modified |
-| 10/13/2021 | [Apply a sharing policy to mailboxes in Exchange Online](/Exchange/sharing/sharing-policies/apply-a-sharing-policy) | modified |
-| 10/13/2021 | [Create a sharing policy in Exchange Online](/Exchange/sharing/sharing-policies/create-a-sharing-policy) | modified |
-| 10/13/2021 | [Modify, disable, or remove a sharing policy in Exchange Online](/Exchange/sharing/sharing-policies/modify-a-sharing-policy) | modified |
-| 10/13/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
-| 10/14/2021 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
-| 10/14/2021 | [Transport options in Exchange hybrid deployments](/Exchange/transport-options) | modified |
-| 10/14/2021 | [Autodiscover service in Exchange Server](/Exchange/architecture/client-access/autodiscover?view=exchserver-2016) | modified |
-| 10/14/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
-| 10/15/2021 | [What's new in the Exchange admin center in Exchange Online](/Exchange/whats-new) | modified |
-| 10/15/2021 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
-| 10/15/2021 | [Opt in to the Exchange Online endpoint for legacy TLS clients using SMTP AUTH](/Exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth) | modified |
-| 10/15/2021 | [S/MIME for Outlook for iOS and Android in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android) | modified |
+| 12/6/2021 | [Retention tags and retention policies in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+| 12/7/2021 | [Retention tags and retention policies in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) | modified |
+| 12/8/2021 | [Delete or restore user mailboxes in Exchange Online](/Exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) | modified |
+| 12/8/2021 | [Manage dynamic distribution group in Exchange Online](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) | modified |
+| 12/8/2021 | [Add retention tags to or remove retention tags from a retention policy in Exchange Online](/Exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags) | modified |
+| 12/8/2021 | [Configure the number of input failures before Outlook Voice Access users are disconnected: Exchange 2013 Help](/Exchange/configure-number-of-input-failures-exchange-2013-help) | modified |
+| 12/8/2021 | [Access control list (ACL) inheritance is blocked](/Exchange/access-control-list-acl-inheritance-is-blocked-inhblockpublicfoldertree-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: How to activate a lagged mailbox database copy](/Exchange/activate-a-lagged-mailbox-database-copy-exchange-2013-help) | modified |
+| 12/8/2021 | [Activate a mailbox database copy: Exchange 2013 Help](/Exchange/activate-a-mailbox-database-copy-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory does not exist or cannot be contacted: Exchange 2013 Help](/Exchange/active-directory-does-not-exist-or-cannot-be-contacted-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory domain is mixed mode_LocalDomainModeMixed: Exchange 2013 Help](/Exchange/active-directory-domain-is-mixed-mode-localdomainmodemixed-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory domain is mixed mode](/Exchange/active-directory-domain-is-mixed-mode-preparedomainmodemixed-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory domain is mixed mode_RootDomainModeMixed: Exchange 2013 Help](/Exchange/active-directory-domain-is-mixed-mode-rootdomainmodemixed-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory: Exchange 2013 Help](/Exchange/active-directory-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory functional level isn't Windows Server 2003 or later](/Exchange/active-directory-functional-level-isn-t-windows-server-2003-or-later-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Directory Permissions role: Exchange 2013 Help](/Exchange/active-directory-permissions-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Active Manager: Exchange 2013 Help](/Exchange/active-manager-exchange-2013-help) | modified |
+| 12/8/2021 | [AD LDS directory exists in default location: Exchange 2013 Help](/Exchange/ad-lds-directory-exists-in-default-location-exchange-2013-help) | modified |
+| 12/8/2021 | [Add a mailbox database copy: Exchange 2013 Help](/Exchange/add-a-mailbox-database-copy-exchange-2013-help) | modified |
+| 12/8/2021 | [Add a role entry to a role: Exchange 2013 Help](/Exchange/add-a-role-entry-to-a-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Add a role entry to an unscoped top-level role: Exchange 2013 Help](/Exchange/add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Add a role to a user or USG: Exchange 2013 Help](/Exchange/add-a-role-to-a-user-or-usg-exchange-2013-help) | modified |
+| 12/8/2021 | [Add an auto attendant extension number: Exchange 2013 Help](/Exchange/add-an-auto-attendant-extension-number-exchange-2013-help) | modified |
+| 12/8/2021 | [Add an E.164 number: Exchange 2013 Help](/Exchange/add-e-164-number-exchange-2013-help) | modified |
+| 12/8/2021 | [Add an extension number: Exchange 2013 Help](/Exchange/add-extension-number-exchange-2013-help) | modified |
+| 12/8/2021 | [Add-ins for Outlook in Exchange Server](/Exchange/add-ins-for-outlook-2013-help) | modified |
+| 12/8/2021 | [Add-ins for Outlook: Exchange 2013 Help](/Exchange/add-ins-for-outlook-exchange-2013-help) | modified |
+| 12/8/2021 | [Add Mailbox and Client Access servers to a SIP URI dial plan: Exchange 2013 Help](/Exchange/add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help) | modified |
+| 12/8/2021 | [Add an address list to or remove an address list from an offline address book: Exchange 2013 Help](/Exchange/add-or-remove-an-address-list-exchange-2013-help) | modified |
+| 12/8/2021 | [Add or remove email addresses for a mailbox: Exchange 2013 Help](/Exchange/add-or-remove-email-addresses-exchange-2013-help) | modified |
+| 12/8/2021 | [Add retention tags to or remove retention tags from a retention policy: Exchange 2013 Help](/Exchange/add-or-remove-retention-tags-exchange-2013-help) | modified |
+| 12/8/2021 | [Add or remove users from a mobile mailbox policy: Exchange 2013 Help](/Exchange/add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Add a SIP address: Exchange 2013 Help](/Exchange/add-sip-address-exchange-2013-help) | modified |
+| 12/8/2021 | [Add the Federation Mailbox to the AD RMS Super Users Group: Exchange 2013 Help](/Exchange/add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help) | modified |
+| 12/8/2021 | [Address book policies: Exchange 2013 Help](/Exchange/address-book-policies-exchange-2013-help) | modified |
+| 12/8/2021 | [Address book policy procedures: Exchange 2013 Help](/Exchange/address-book-policy-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Address list procedures: Exchange 2013 Help](/Exchange/address-list-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Address Lists role: Exchange 2013 Help](/Exchange/address-lists-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Address rewriting on Edge Transport servers: Exchange 2013 Help](/Exchange/address-rewriting-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Administrator audit log structure: Exchange 2013 Help](/Exchange/administrator-audit-log-structure-exchange-2013-help) | modified |
+| 12/8/2021 | [Administrator audit logging: Exchange 2013 Help](/Exchange/administrator-audit-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Advanced permissions: Exchange 2013 Help](/Exchange/advanced-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow callers without a caller ID to leave a voice message: Exchange 2013 Help](/Exchange/allow-callers-without-caller-id-to-leave-voice-message-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow Message Waiting Indicator: Exchange 2013 Help](/Exchange/allow-message-waiting-indicator-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow Message Waiting Indicator (MWI) on a UM IP gateway: Exchange 2013 Help](/Exchange/allow-mwi-on-um-ip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow Message Waiting Indicator procedures: Exchange 2013 Help](/Exchange/allow-mwi-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow or prevent call answering on a Client Access server: Exchange 2013 Help](/Exchange/allow-or-prevent-call-answering-on-a-client-access-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow POP3, IMAP4, and SMTP server settings to be viewed by end users in Outlook Web App](/Exchange/allow-pop3-imap4-and-smtp-server-settings-to-be-viewed-by-end-users-in-outlook-web-app-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow users in the same dial plan to receive faxes: Exchange 2013 Help](/Exchange/allow-users-in-the-same-dial-plan-to-receive-faxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow users to make calls: Exchange 2013 Help](/Exchange/allow-users-to-make-calls-exchange-2013-help) | modified |
+| 12/8/2021 | [Allowing users to make calls procedures: Exchange 2013 Help](/Exchange/allow-users-to-make-calls-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Allow users to see a voice mail transcript: Exchange 2013 Help](/Exchange/allow-users-to-see-a-voice-mail-transcript-exchange-2013-help) | modified |
+| 12/8/2021 | [An incompatible operating system was found: Exchange 2013 Help](/Exchange/an-incompatible-operating-system-was-found-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-malware FAQ: Exchange 2013 Help](/Exchange/anti-malware-faq-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-malware protection: Exchange 2013 Help](/Exchange/anti-malware-protection-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-spam agent logging: Exchange 2013 Help](/Exchange/anti-spam-agent-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-spam and anti-malware permissions: Exchange 2013 Help](/Exchange/anti-spam-and-anti-malware-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-spam and anti-malware protection: Exchange 2013 Help](/Exchange/anti-spam-and-anti-malware-protection-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-spam protection: Exchange 2013 Help](/Exchange/anti-spam-protection-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-spam stamps: Exchange 2013 Help](/Exchange/anti-spam-stamps-exchange-2013-help) | modified |
+| 12/8/2021 | [Anti-virus software in the operating system on Exchange servers](/Exchange/anti-virus-software-in-the-operating-system-on-exchange-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [ApplicationImpersonation role: Exchange 2013 Help](/Exchange/applicationimpersonation-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Apply a sharing policy to mailboxes: Exchange 2013 Help](/Exchange/apply-a-sharing-policy-to-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Apply a retention policy to mailboxes: Exchange 2013 Help](/Exchange/apply-retention-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Archive Lync conversations and meeting content to Exchange: Exchange 2013 Help](/Exchange/archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help) | modified |
+| 12/8/2021 | [ArchiveApplication role: Exchange 2013 Help](/Exchange/archiveapplication-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Assign a certificate to the UM and UM Call Router services: Exchange 2013 Help](/Exchange/assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help) | modified |
+| 12/8/2021 | [Assign an address book policy to mail users: Exchange 2013 Help](/Exchange/assign-an-address-book-policy-to-mail-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Assign eDiscovery permissions in Exchange: Exchange 2013 Help](/Exchange/assign-ediscovery-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Assign a UM mailbox policy: Exchange 2013 Help](/Exchange/assign-um-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange: Attachment filtering on Edge Transport servers in Exchange](/Exchange/attachment-filtering-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Unified Messaging audio codecs: Exchange 2013 Help](/Exchange/audio-codecs-exchange-2013-help) | modified |
+| 12/8/2021 | [Investigate the audio quality of voice calls for a user: Exchange 2013 Help](/Exchange/audio-quality-of-voice-calls-for-user-exchange-2013-help) | modified |
+| 12/8/2021 | [Investigate the audio quality of voice calls in your organization: Exchange 2013 Help](/Exchange/audio-quality-of-voice-calls-in-organization-exchange-2013-help) | modified |
+| 12/8/2021 | [Audit Logs role: Exchange 2013 Help](/Exchange/audit-logs-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Authorize calls for a group of users: Exchange 2013 Help](/Exchange/authorize-calls-for-a-group-of-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Authorize calls for auto attendant callers: Exchange 2013 Help](/Exchange/authorize-calls-for-auto-attendant-callers-exchange-2013-help) | modified |
+| 12/8/2021 | [Authorize calls for users in a dial plan: Exchange 2013 Help](/Exchange/authorize-calls-for-users-in-a-dial-plan-exchange-2013-help) | modified |
+| 12/8/2021 | [Authorize calls using dialing rules: Exchange 2013 Help](/Exchange/authorize-calls-using-dialing-rules-exchange-2013-help) | modified |
+| 12/8/2021 | [Autodiscover service for Exchange 2013](/Exchange/autodiscover-service-for-exchange-2013) | modified |
+| 12/8/2021 | [Automatic mailbox distribution: Exchange 2013 Help](/Exchange/automatic-mailbox-distribution-exchange-2013-help) | modified |
+| 12/8/2021 | [Automatically answer and route incoming calls: Exchange 2013 Help](/Exchange/automatically-answer-and-route-calls-exchange-2013-help) | modified |
+| 12/8/2021 | [AutoReseed: Exchange 2013 Help](/Exchange/autoreseed-exchange-2013-help) | modified |
+| 12/8/2021 | [Availability service in Exchange 2013: Exchange 2013 Help](/Exchange/availability-service-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Azure: help identify issue with automatic checks - DNS Records](/Exchange/azure-help-identify-my-issue-with-automatic-checks-dns-records-exchange-2013-help) | modified |
+| 12/8/2021 | [Back pressure: Exchange 2013 Help](/Exchange/back-pressure-exchange-2013-help) | modified |
+| 12/8/2021 | [Backup, restore, and disaster recovery: Exchange 2013 Help](/Exchange/backup-restore-and-disaster-recovery-exchange-2013-help) | modified |
+| 12/8/2021 | [Basic concepts in Exchange Management Shell: Exchange 2013 Help](/Exchange/basic-concepts-in-exchange-management-shell-exchange-2013-help) | modified |
+| 12/8/2021 | [Benefits of anti-spam features in Exchange Online Protection over Exchange Server 2013](/Exchange/benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Best practices for configuring transport rules: Exchange 2013 Help](/Exchange/best-practices-for-transport-rules-exchange-2013-help) | modified |
+| 12/8/2021 | [DLP policy templates supplied in Exchange: Exchange 2013 Help](/Exchange/built-in-dlp-policy-templates-exchange-2013-help) | modified |
+| 12/8/2021 | [Built-in management roles: Exchange 2013 Help](/Exchange/built-in-management-roles-exchange-2013-help) | modified |
+| 12/8/2021 | [Built-in role groups: Exchange 2013 Help](/Exchange/built-in-role-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Bypass a user account from mailbox audit logging: Exchange 2013 Help](/Exchange/bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Call answering rules: Exchange 2013 Help](/Exchange/call-answering-rules-exchange-2013-help) | modified |
+| 12/8/2021 | [Call answering rules in the same mailbox policy: Exchange 2013 Help](/Exchange/call-answering-rules-in-the-same-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Can't install Exchange 2013 in a forest containing Exchange 2000 or Exchange 2003 servers](/Exchange/can-t-install-exchange-2013-in-a-forest-containing-exchange-2000-or-exchange-2003-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Can't determine the name of the Active Directory site](/Exchange/cannot-determine-the-name-of-the-active-directory-site-invalidadsite-exchange-2013-help) | modified |
+| 12/8/2021 | [Cannot find a recipient update service_RUSMissing: Exchange 2013 Help](/Exchange/cannot-find-a-recipient-update-service-rusmissing-exchange-2013-help) | modified |
+| 12/8/2021 | [Cannot remove mailbox database: Exchange 2013 Help](/Exchange/cannot-remove-mailbox-database-exchange-2013-help) | modified |
+| 12/8/2021 | [Cannot write to the Exchange organization container: Exchange 2013 Help](/Exchange/cannot-write-to-the-exchange-organization-container-exchange-2013-help) | modified |
+| 12/8/2021 | [Change a role assignment: Exchange 2013 Help](/Exchange/change-a-role-assignment-exchange-2013-help) | modified |
+| 12/8/2021 | [Change a role entry: Exchange 2013 Help](/Exchange/change-a-role-entry-exchange-2013-help) | modified |
+| 12/8/2021 | [Change a role entry on an unscoped top-level role: Exchange 2013 Help](/Exchange/change-a-role-entry-on-an-unscoped-top-level-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Change a role scope: Exchange 2013 Help](/Exchange/change-a-role-scope-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the offline address book generation schedule: Exchange 2013 Help](/Exchange/change-address-book-generation-schedule-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the audio codec: Exchange 2013 Help](/Exchange/change-audio-codec-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the default offline address book: Exchange 2013 Help](/Exchange/change-default-offline-address-book-exchange-2013-help) | modified |
+| 12/8/2021 | [Change an E.164 number: Exchange 2013 Help](/Exchange/change-e-164-number-exchange-2013-help) | modified |
+| 12/8/2021 | [Change an extension number: Exchange 2013 Help](/Exchange/change-extension-number-exchange-2013-help) | modified |
+| 12/8/2021 | [Change a SIP address: Exchange 2013 Help](/Exchange/change-sip-address-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the assignment policy on a mailbox: Exchange 2013 Help](/Exchange/change-the-assignment-policy-on-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the location of the queue database: Exchange 2013 Help](/Exchange/change-the-location-of-the-queue-database-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the settings of an address book policy: Exchange 2013 Help](/Exchange/change-the-settings-of-an-address-book-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Change the UM dial plan: Exchange 2013 Help](/Exchange/change-um-dial-plan-exchange-2013-help) | modified |
+| 12/8/2021 | [Change user throttling settings for all users in your organization](/Exchange/change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help) | modified |
+| 12/8/2021 | [Change user throttling settings for specific users: Exchange 2013 Help](/Exchange/change-user-throttling-settings-for-specific-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Changes to high availability and site resilience over previous versions](/Exchange/changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Deploy Exchange 2013 UM: Exchange 2013 Help](/Exchange/checklist-deploy-exchange-2013-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Integrate Exchange 2013 UM with Lync Server: Exchange 2013 Help](/Exchange/checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Perform a new installation of Exchange 2013: Exchange 2013 Help](/Exchange/checklist-perform-a-new-installation-of-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Upgrade Exchange 2007 UM to Exchange 2013 UM: Exchange 2013 Help](/Exchange/checklist-upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM: Exchange 2013 Help](/Exchange/checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Upgrade from Exchange 2007: Exchange 2013 Help](/Exchange/checklist-upgrade-from-exchange-2007-exchange-2013-help) | modified |
+| 12/8/2021 | [Checklist: Upgrade from Exchange 2010: Exchange 2013 Help](/Exchange/checklist-upgrade-from-exchange-2010-exchange-2013-help) | modified |
+| 12/8/2021 | [Clean up the Recoverable Items folder: Exchange 2013 Help](/Exchange/clean-up-the-recoverable-items-folder-exchange-2013-help) | modified |
+| 12/8/2021 | [Client Access role not detected in local site](/Exchange/client-access-role-not-detected-in-local-site-clientaccessrolenotpresentinsite-exchange-2013-help) | modified |
+| 12/8/2021 | [Client Access server: Exchange 2013 Help](/Exchange/client-access-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Client Access server role is already installed: Exchange 2013 Help](/Exchange/client-access-server-role-is-already-installed-exchange-2013-help) | modified |
+| 12/8/2021 | [Client protocol management: Exchange 2013 Help](/Exchange/client-protocol-management-exchange-2013-help) | modified |
+| 12/8/2021 | [Clients and mobile devices permissions: Exchange 2013 Help](/Exchange/clients-and-mobile-devices-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Clients and mobile: Exchange 2013 Help](/Exchange/clients-and-mobile-exchange-2013-help) | modified |
+| 12/8/2021 | [Cmdlet extension agents: Exchange 2013 Help](/Exchange/cmdlet-extension-agents-exchange-2013-help) | modified |
+| 12/8/2021 | [Cmdlets: Exchange 2013 Help](/Exchange/cmdlets-exchange-2013-help) | modified |
+| 12/8/2021 | [Coexistence with Office Communications Server 2007 R2 and Lync Server](/Exchange/coexistence-with-office-communications-server-2007-r2-and-lync-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Collaboration: Exchange 2013 Help](/Exchange/collaboration-exchange-2013-help) | modified |
+| 12/8/2021 | [Common attachment blocking scenarios for transport rules: Exchange 2013 Help](/Exchange/common-attachment-blocking-scenarios-exchange-2013-help) | modified |
+| 12/8/2021 | [Common message approval scenarios: Exchange 2013 Help](/Exchange/common-message-approval-scenarios-exchange-2013-help) | modified |
+| 12/8/2021 | [Compliance Management: Exchange 2013 Help](/Exchange/compliance-management-exchange-2013-help) | modified |
+| 12/8/2021 | [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs: Exchange 2013 Help](/Exchange/configuration-notes-for-voip-gateways-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a cross-forest Send connector: Exchange 2013 Help](/Exchange/configure-a-cross-forest-send-connector-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a federation trust: Exchange 2013 Help](/Exchange/configure-a-federation-trust-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a spam quarantine mailbox: Exchange 2013 Help](/Exchange/configure-a-spam-quarantine-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure activation policy for a mailbox database copy: Exchange 2013 Help](/Exchange/configure-activation-policy-for-a-mailbox-database-copy-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure an accepted domain for an independent business unit](/Exchange/configure-an-accepted-domain-for-an-independent-business-unit-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure an accepted domain within your Exchange organization as authoritative](/Exchange/configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure anti-malware policies: Exchange 2013 Help](/Exchange/configure-anti-malware-policies-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure anti-spam agent logging: Exchange 2013 Help](/Exchange/configure-anti-spam-agent-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Anti-Spam Settings on Mailboxes: Exchange 2013 Help](/Exchange/configure-anti-spam-settings-on-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure archive quotas for an In-Place Archive in Exchange 2013](/Exchange/configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure AutoReseed for a database availability group: Exchange 2013 Help](/Exchange/configure-autoreseed-for-a-database-availability-group-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure business hours: Exchange 2013 Help](/Exchange/configure-business-hours-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure calendar options for IMAP4: Exchange 2013 Help](/Exchange/configure-calendar-options-for-imap4-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure calendar options for POP3: Exchange 2013 Help](/Exchange/configure-calendar-options-for-pop3-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure circular logging for a mailbox database: Exchange 2013 Help](/Exchange/configure-circular-logging-for-a-mailbox-database-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure client-specific message size limits: Exchange 2013 Help](/Exchange/configure-client-specific-message-size-limits-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure connectivity logging: Exchange 2013 Help](/Exchange/configure-connectivity-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Content Filtering to Use Safe Domain Data: Exchange 2013 Help](/Exchange/configure-content-filtering-to-use-safe-domain-data-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure content transfer encoding: Exchange 2013 Help](/Exchange/configure-content-transfer-encoding-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure database availability group properties: Exchange 2013 Help](/Exchange/configure-database-availability-group-properties-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Deleted Item retention and Recoverable Items quotas](/Exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure dial codes: Exchange 2013 Help](/Exchange/configure-dial-codes-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a dial plan for users who have similar names: Exchange 2013 Help](/Exchange/configure-dial-plan-for-users-with-similar-names-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure offline address book distribution properties: Exchange 2013 Help](/Exchange/configure-distribution-properties-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a DTMF fallback auto attendant: Exchange 2013 Help](/Exchange/configure-dtmf-fallback-auto-attendant-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Edge Transport server using cloned configuration: Exchange 2013 Help](/Exchange/configure-edge-transport-server-using-cloned-configuration-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure email forwarding for a mailbox: Exchange 2013 Help](/Exchange/configure-email-forwarding-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure mobile phones to access email: Exchange 2013 Help](/Exchange/configure-email-on-mobile-phone-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Exchange 2013 for shared permissions: Exchange 2013 Help](/Exchange/configure-exchange-2013-for-shared-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Exchange 2013 for split permissions: Exchange 2013 Help](/Exchange/configure-exchange-2013-for-split-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Exchange for SharePoint eDiscovery Center: Exchange 2013 Help](/Exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Exchange mail routing settings in Active Directory](/Exchange/configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Exchange to accept mail for multiple authoritative domains](/Exchange/configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure federated sharing: Exchange 2013 Help](/Exchange/configure-federated-sharing-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure a fully qualified domain name: Exchange 2013 Help](/Exchange/configure-fully-qualified-domain-name-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Get-QueueDigest: Exchange 2013 Help](/Exchange/configure-get-queuedigest-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure global address list properties: Exchange 2013 Help](/Exchange/configure-global-address-list-properties-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure group metrics: Exchange 2013 Help](/Exchange/configure-group-metrics-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure internet mail flow through a subscribed Edge Transport server](/Exchange/configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure internet mail flow through an Edge Transport server without using EdgeSync](/Exchange/configure-internet-mail-flow-through-an-edge-transport-server-without-using-edgesync-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the IP address: Exchange 2013 Help](/Exchange/configure-ip-address-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure IP addresses and ports for POP3 and IMAP4 access: Exchange 2013 Help](/Exchange/configure-ip-addresses-and-ports-for-pop3-and-imap4-access-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure IRM for Exchange Search and In-Place eDiscovery: Exchange 2013 Help](/Exchange/configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the large audience size for your organization: Exchange 2013 Help](/Exchange/configure-large-audience-size-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure legacy public folders when user mailboxes are on Exchange 2013 servers](/Exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the listening port: Exchange 2013 Help](/Exchange/configure-listening-port-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure mail flow and client access: Exchange 2013 Help](/Exchange/configure-mail-flow-and-client-access-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure mailbox database copy properties: Exchange 2013 Help](/Exchange/configure-mailbox-database-copy-properties-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure managed availability overrides: Exchange 2013 Help](/Exchange/configure-managed-availability-overrides-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the maximum call duration: Exchange 2013 Help](/Exchange/configure-maximum-call-duration-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the maximum recording duration: Exchange 2013 Help](/Exchange/configure-maximum-recording-duration-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure message delivery restrictions for a mailbox: Exchange 2013 Help](/Exchange/configure-message-delivery-restrictions-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure message retry, resubmit, and expiration intervals in Exchange Server](/Exchange/configure-message-retry-resubmit-and-expiration-intervals-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure message size limits for a mailbox: Exchange 2013 Help](/Exchange/configure-message-size-limits-for-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure message tracking: Exchange 2013 Help](/Exchange/configure-message-tracking-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the number of sign-in failures before Outlook Voice Access users are disconnected: Exchange 2013 Help](/Exchange/configure-number-of-sign-in-failures-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure OAuth authentication between Exchange and Exchange Online](/Exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: Configure OAuth authentication with SharePoint 2013 and Lync 2013](/Exchange/configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Outlook client blocking: Exchange 2013 Help](/Exchange/configure-outlook-client-blocking-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Outlook to show the original sender in the quarantine mailbox](/Exchange/configure-outlook-to-show-the-original-sender-in-the-quarantine-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure an Outlook Voice Access number: Exchange 2013 Help](/Exchange/configure-outlook-voice-access-number-exchange-2013-help) | modified |
+| 12/8/2021 | [View or configure Outlook Web App mailbox policy properties: Exchange 2013 Help](/Exchange/configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the limit on personal greetings for Outlook Voice Access users: Exchange 2013 Help](/Exchange/configure-personal-greetings-limit-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure pipeline tracing: Exchange 2013 Help](/Exchange/configure-pipeline-tracing-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure POP3 and IMAP4 message retrieval format options: Exchange 2013 Help](/Exchange/configure-pop3-and-imap4-message-retrieval-format-options-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the primary way for Outlook Voice Access users to search: Exchange 2013 Help](/Exchange/configure-primary-search-method-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Protected Voice Mail from authenticated callers: Exchange 2013 Help](/Exchange/configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Protected Voice Mail from unauthenticated callers: Exchange 2013 Help](/Exchange/configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure protocol logging: Exchange 2013 Help](/Exchange/configure-protocol-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure protocol logging for POP3 and IMAP4: Exchange 2013 Help](/Exchange/configure-protocol-logging-for-pop3-and-imap4-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the recording idle time-out value: Exchange 2013 Help](/Exchange/configure-recording-idle-time-out-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure remote domain automatic replies: Exchange 2013 Help](/Exchange/configure-remote-domain-automatic-replies-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure remote domain message reporting: Exchange 2013 Help](/Exchange/configure-remote-domain-message-reporting-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure remote domain out of office replies: Exchange 2013 Help](/Exchange/configure-remote-domain-out-of-office-replies-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure routing table logging: Exchange 2013 Help](/Exchange/configure-routing-table-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure S/MIME settings for Outlook Web App in Exchange 2013](/Exchange/configure-s-mime-settings-for-outlook-web-app) | modified |
+| 12/8/2021 | [Configure the secondary way for Outlook Voice Access users to search: Exchange 2013 Help](/Exchange/configure-secondary-search-method-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure storage quotas for a mailbox: Exchange 2013 Help](/Exchange/configure-storage-quotas-for-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the Availability service for cross-forest topologies in Exchange Server](/Exchange/configure-the-availability-service-for-cross-forest-topologies-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the DNS suffix search list for a disjoint namespace](/Exchange/configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the external postmaster address: Exchange 2013 Help](/Exchange/configure-the-external-postmaster-address-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the group of users that Outlook Voice Access users can contact: Exchange 2013 Help](/Exchange/configure-the-group-of-users-that-outlook-voice-access-users-can-contact-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the Managed Folder Assistant: Exchange 2013 Help](/Exchange/configure-the-managed-folder-assistant-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the number of incoming calls on a Mailbox server: Exchange 2013 Help](/Exchange/configure-the-number-of-incoming-calls-on-a-mailbox-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the Pickup directory and the Replay directory: Exchange 2013 Help](/Exchange/configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the startup mode on a Client Access server: Exchange 2013 Help](/Exchange/configure-the-startup-mode-on-a-client-access-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the startup mode on a Mailbox server: Exchange 2013 Help](/Exchange/configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the time zone: Exchange 2013 Help](/Exchange/configure-the-time-zone-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure UM to work with Lync Server: Exchange 2013 Help](/Exchange/configure-um-to-work-with-lync-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the group of users that can be contacted: Exchange 2013 Help](/Exchange/configure-users-that-can-be-contacted-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Voice Mail Preview partner services for users: Exchange 2013 Help](/Exchange/configure-voice-mail-preview-partner-services-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure the VoIP security setting: Exchange 2013 Help](/Exchange/configure-voip-security-setting-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure federated sharing between Exchange organizations](/Exchange/configuring-federated-sharing-between-exchange-organizations-exchange-2013-help) | modified |
+| 12/8/2021 | [Configure Kerberos authentication for load-balanced Client Access servers](/Exchange/configuring-kerberos-authentication-for-load-balanced-client-access-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Configuring push notifications proxying for OWA for Device](/Exchange/configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help) | modified |
+| 12/8/2021 | [Configuring SSL offloading in Exchange 2013: Exchange 2013 Help](/Exchange/configuring-ssl-offloading-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect a disabled mailbox: Exchange 2013 Help](/Exchange/connect-a-disabled-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect a VoIP gateway, IP PBX, or session border controller to UM: Exchange 2013 Help](/Exchange/connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect a VoIP gateway to communicate with a PBX: Exchange 2013 Help](/Exchange/connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect or restore a deleted mailbox: Exchange 2013 Help](/Exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect to a server in Queue Viewer: Exchange 2013 Help](/Exchange/connect-to-a-server-in-queue-viewer-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect UM to a supported VoIP gateway: Exchange 2013 Help](/Exchange/connect-um-to-a-supported-voip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect UM to your telephone system: Exchange 2013 Help](/Exchange/connect-um-to-your-telephone-system-exchange-2013-help) | modified |
+| 12/8/2021 | [Connect your voice mail system to your telephone network: Exchange 2013 Help](/Exchange/connect-voice-mail-system-exchange-2013-help) | modified |
+| 12/8/2021 | [Connection Filtering on Edge Transport Servers: Exchange 2013 Help](/Exchange/connection-filtering-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Connectivity logging: Exchange 2013 Help](/Exchange/connectivity-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Connectors: Exchange 2013 Help](/Exchange/connectors-exchange-2013-help) | modified |
+| 12/8/2021 | [Considerations when deploying public folders: Exchange 2013 Help](/Exchange/considerations-when-deploying-public-folders-exchange-2013-help) | modified |
+| 12/8/2021 | [Content conversion: Exchange 2013 Help](/Exchange/content-conversion-exchange-2013-help) | modified |
+| 12/8/2021 | [Content conversion tracing: Exchange 2013 Help](/Exchange/content-conversion-tracing-exchange-2013-help) | modified |
+| 12/8/2021 | [Content filtering: Exchange 2013 Help](/Exchange/content-filtering-exchange-2013-help) | modified |
+| 12/8/2021 | [Control automatic mailbox distribution using database scopes](/Exchange/control-automatic-mailbox-distribution-using-database-scopes-exchange-2013-help) | modified |
+| 12/8/2021 | [Convert a mailbox: Exchange 2013 Help](/Exchange/convert-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Copy eDiscovery search results to a discovery mailbox: Exchange 2013 Help](/Exchange/copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a call answering rule: Exchange 2013 Help](/Exchange/create-a-call-answering-rule-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a database availability group: Exchange 2013 Help](/Exchange/create-a-database-availability-group-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a database availability group network: Exchange 2013 Help](/Exchange/create-a-database-availability-group-network-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a digital certificate request: Exchange 2013 Help](/Exchange/create-a-digital-certificate-request-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a discovery mailbox: Exchange 2013 Help](/Exchange/create-a-discovery-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Foreign connector to deliver messages to a non-SMTP fax gateway](/Exchange/create-a-foreign-connector-to-deliver-messages-to-a-non-smtp-fax-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a holiday schedule: Exchange 2013 Help](/Exchange/create-a-holiday-schedule-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a mailbox audit log search: Exchange 2013 Help](/Exchange/create-a-mailbox-audit-log-search-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Receive connector to receive email from a system not running Exchange](/Exchange/create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Receive connector to receive messages from an internal Exchange server](/Exchange/create-a-receive-connector-to-receive-messages-from-an-internal-exchange-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a recovery database: Exchange 2013 Help](/Exchange/create-a-recovery-database-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a regular or exclusive scope: Exchange 2013 Help](/Exchange/create-a-regular-or-exclusive-scope-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Retention Policy: Exchange 2013 Help](/Exchange/create-a-retention-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a role: Exchange 2013 Help](/Exchange/create-a-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a secure Receive connector to receive email from a partner](/Exchange/create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Send connector for email sent to the Internet: Exchange 2013 Help](/Exchange/create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Send connector to route outbound email through a smart host](/Exchange/create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Send connector to send email to a partner, with Transport Layer Security applied](/Exchange/create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a shared mailbox: Exchange 2013 Help](/Exchange/create-a-shared-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a sharing policy: Exchange 2013 Help](/Exchange/create-a-sharing-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a theme for Outlook Web App: Exchange 2013 Help](/Exchange/create-a-theme-for-outlook-web-app-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a Transport Protection Rule: Exchange 2013 Help](/Exchange/create-a-transport-protection-rule-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a UM auto attendant: Exchange 2013 Help](/Exchange/create-a-um-auto-attendant-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an address book policy: Exchange 2013 Help](/Exchange/create-an-address-book-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an address list: Exchange 2013 Help](/Exchange/create-an-address-list-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an email address policy by using recipient filters: Exchange 2013 Help](/Exchange/create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an Email Address Policy: Exchange 2013 Help](/Exchange/create-an-email-address-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an organization relationship: Exchange 2013 Help](/Exchange/create-an-organization-relationship-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an Outlook Protection Rule: Exchange 2013 Help](/Exchange/create-an-outlook-protection-rule-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an unscoped role: Exchange 2013 Help](/Exchange/create-an-unscoped-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Create business hours navigation menus: Exchange 2013 Help](/Exchange/create-business-hours-navigation-menus-exchange-2013-help) | modified |
+| 12/8/2021 | [Create certificates for UM: Exchange 2013 Help](/Exchange/create-certificates-for-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a custom DLP policy: Exchange 2013 Help](/Exchange/create-custom-dlp-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a custom management scope for In-Place eDiscovery searches: Exchange 2013 Help](/Exchange/create-custom-management-scope-exchange-2013-help) | modified |
+| 12/8/2021 | [Create dialing rules for users: Exchange 2013 Help](/Exchange/create-dialing-rules-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a DLP policy from a template: Exchange 2013 Help](/Exchange/create-dlp-policy-from-template-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a global address list: Exchange 2013 Help](/Exchange/create-global-address-list-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a distribution group naming policy: Exchange 2013 Help](/Exchange/create-group-naming-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an In-Place eDiscovery search: Exchange 2013 Help](/Exchange/create-in-place-ediscovery-search-exchange-2013-help) | modified |
+| 12/8/2021 | [Create incident reports for DLP policy detections: Exchange 2013 Help](/Exchange/create-incident-reports-for-dlp-policy-detections-exchange-2013-help) | modified |
+| 12/8/2021 | [Create linked role groups that mirror built-in role groups: Exchange 2013 Help](/Exchange/create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Create menu navigation: Exchange 2013 Help](/Exchange/create-menu-navigation-exchange-2013-help) | modified |
+| 12/8/2021 | [Create non-business hours navigation menus: Exchange 2013 Help](/Exchange/create-non-business-hours-navigation-menus-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an offline address book: Exchange 2013 Help](/Exchange/create-offline-address-book-exchange-2013-help) | modified |
+| 12/8/2021 | [Create or modify a mobile device mailbox policy: Exchange 2013 Help](/Exchange/create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create or remove an In-Place Hold: Exchange 2013 Help](/Exchange/create-or-remove-in-place-holds-exchange-2013-help) | modified |
+| 12/8/2021 | [Create an Outlook Web App mailbox policy: Exchange 2013 Help](/Exchange/create-outlook-web-app-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a public folder: Exchange 2013 Help](/Exchange/create-public-folder-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a public folder mailbox: Exchange 2013 Help](/Exchange/create-public-folder-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a UM dial plan: Exchange 2013 Help](/Exchange/create-um-dial-plan-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a UM hunt group: Exchange 2013 Help](/Exchange/create-um-hunt-group-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a UM IP gateway: Exchange 2013 Help](/Exchange/create-um-ip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Create a UM mailbox policy: Exchange 2013 Help](/Exchange/create-um-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Create user mailboxes: Exchange 2013 Help](/Exchange/create-user-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [CSV files for mailbox migration: Exchange 2013 Help](/Exchange/csv-files-for-mailbox-migration-exchange-2013-help) | modified |
+| 12/8/2021 | [Custom attributes: Exchange 2013 Help](/Exchange/custom-attributes-exchange-2013-help) | modified |
+| 12/8/2021 | [Customize details templates: Exchange 2013 Help](/Exchange/customize-details-templates-exchange-2013-help) | modified |
+| 12/8/2021 | [Customize the built-in DLP sensitive information types: Exchange 2013 Help](/Exchange/customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help) | modified |
+| 12/8/2021 | [Customize the Outlook Web App sign-In, language selection, and error pages](/Exchange/customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help) | modified |
+| 12/8/2021 | [Data loss prevention: Exchange 2013 Help](/Exchange/data-loss-prevention-exchange-2013-help) | modified |
+| 12/8/2021 | [Data Loss Prevention role: Exchange 2013 Help](/Exchange/data-loss-prevention-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Database availability groups (DAGs): Exchange 2013 Help](/Exchange/database-availability-groups-dags-exchange-2013-help) | modified |
+| 12/8/2021 | [Database Copies role: Exchange 2013 Help](/Exchange/database-copies-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Database portability: Exchange 2013 Help](/Exchange/database-portability-exchange-2013-help) | modified |
+| 12/8/2021 | [Databases role: Exchange 2013 Help](/Exchange/databases-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Datacenter Activation Coordination mode: Exchange 2013 Help](/Exchange/datacenter-activation-coordination-mode-exchange-2013-help) | modified |
+| 12/8/2021 | [Datacenter Switchovers: Exchange 2013 Help](/Exchange/datacenter-switchovers-exchange-2013-help) | modified |
+| 12/8/2021 | [Default folders that support Retention Policy Tags: Exchange 2013 Help](/Exchange/default-folders-exchange-2013-help) | modified |
+| 12/8/2021 | [Default Retention Policy in Exchange: Exchange 2013 Help](/Exchange/default-retention-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Default settings for Exchange virtual directories: Exchange 2013 Help](/Exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) | modified |
+| 12/8/2021 | [Define your own DLP templates and information types: Exchange 2013 Help](/Exchange/define-your-own-dlp-templates-and-information-types-exchange-2013-help) | modified |
+| 12/8/2021 | [Delegate role assignments: Exchange 2013 Help](/Exchange/delegate-role-assignments-exchange-2013-help) | modified |
+| 12/8/2021 | [Delegate the installation of an Exchange 2013 server: Exchange 2013 Help](/Exchange/delegate-the-installation-of-an-exchange-2013-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Delegated Setup: Exchange 2013 Help](/Exchange/delegated-setup-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete and re-create the default discovery mailbox in Exchange: Exchange 2013 Help](/Exchange/delete-and-re-create-default-discovery-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete a UM auto attendant: Exchange 2013 Help](/Exchange/delete-um-auto-attendant-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete a UM dial plan: Exchange 2013 Help](/Exchange/delete-um-dial-plan-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete a UM hunt group: Exchange 2013 Help](/Exchange/delete-um-hunt-group-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete a UM IP gateway: Exchange 2013 Help](/Exchange/delete-um-ip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Delete a UM mailbox policy: Exchange 2013 Help](/Exchange/delete-um-mailbox-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Delivery agents and Delivery Agent connectors: Exchange 2013 Help](/Exchange/delivery-agents-and-delivery-agent-connectors-exchange-2013-help) | modified |
+| 12/8/2021 | [Delivery reports for administrators: Exchange 2013 Help](/Exchange/delivery-reports-for-administrators-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploy a new installation of Exchange 2013: Exchange 2013 Help](/Exchange/deploy-a-new-installation-of-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploy Exchange 2013 in a cross-forest topology: Exchange 2013 Help](/Exchange/deploy-exchange-2013-in-a-cross-forest-topology-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploy Exchange 2013 in an Exchange resource forest topology](/Exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploy Exchange 2013 UM: Exchange 2013 Help](/Exchange/deploy-exchange-2013-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploy multiple forest topologies for Exchange 2013: Exchange 2013 Help](/Exchange/deploy-multiple-forest-topologies-for-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploying certificates for UM: Exchange 2013 Help](/Exchange/deploying-certificates-for-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploying certificates for UM procedures: Exchange 2013 Help](/Exchange/deploying-certificates-for-um-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploying Exchange 2013 UM and Lync Server overview: Exchange 2013 Help](/Exchange/deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploying high availability and site resilience: Exchange 2013 Help](/Exchange/deploying-high-availability-and-site-resilience-exchange-2013-help) | modified |
+| 12/8/2021 | [Deploying voice mail and UM: Exchange 2013 Help](/Exchange/deploying-voice-mail-and-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Deployment reference: Exchange 2013 Help](/Exchange/deployment-reference-exchange-2013-help) | modified |
+| 12/8/2021 | [Deployment security checklist: Exchange 2013 Help](/Exchange/deployment-security-checklist-exchange-2013-help) | modified |
+| 12/8/2021 | [Details templates: Exchange 2013 Help](/Exchange/details-templates-exchange-2013-help) | modified |
+| 12/8/2021 | [Developing DLP policy template files: Exchange 2013 Help](/Exchange/developing-dlp-policy-template-files-exchange-2013-help) | modified |
+| 12/8/2021 | [Diagnose Exchange Search issues: Exchange 2013 Help](/Exchange/diagnose-exchange-search-issues-exchange-2013-help) | modified |
+| 12/8/2021 | [Dial codes, number prefixes, and number formats: Exchange 2013 Help](/Exchange/dial-codes-number-prefixes-number-formats-exchange-2013-help) | modified |
+| 12/8/2021 | [Dial tone portability: Exchange 2013 Help](/Exchange/dial-tone-portability-exchange-2013-help) | modified |
+| 12/8/2021 | [Digital certificates and SSL: Exchange 2013 Help](/Exchange/digital-certificates-and-ssl-exchange-2013-help) | modified |
+| 12/8/2021 | [Direct Push: Exchange 2013 Help](/Exchange/direct-push-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable calls from users who are not UM-enabled: Exchange 2013 Help](/Exchange/disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable common PIN patterns for voice mail: Exchange 2013 Help](/Exchange/disable-common-pin-patterns-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable faxing for a group of users: Exchange 2013 Help](/Exchange/disable-faxing-for-a-group-of-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable Internet calendar publishing: Exchange 2013 Help](/Exchange/disable-internet-calendar-publishing-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable missed call notifications for a user: Exchange 2013 Help](/Exchange/disable-missed-call-notifications-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable Message Waiting Indicator (MWI) for users: Exchange 2013 Help](/Exchange/disable-mwi-for-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable or bypass anti-malware scanning: Exchange 2013 Help](/Exchange/disable-or-bypass-anti-malware-scanning-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable or delete a mailbox: Exchange 2013 Help](/Exchange/disable-or-delete-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable or enable Exchange Search: Exchange 2013 Help](/Exchange/disable-or-enable-exchange-search-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable or enable journaling of voice mail and missed call notifications](/Exchange/disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable or re-enable federated sharing for your Exchange organization](/Exchange/disable-or-re-enable-federated-sharing-for-your-exchange-organization-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable outgoing calls on UM IP gateways: Exchange 2013 Help](/Exchange/disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable selected features for Outlook Voice Access users: Exchange 2013 Help](/Exchange/disable-selected-features-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable TLS between Active Directory sites: Exchange 2013 Help](/Exchange/disable-tls-between-active-directory-sites-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable a UM auto attendant: Exchange 2013 Help](/Exchange/disable-um-auto-attendant-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable a UM IP gateway: Exchange 2013 Help](/Exchange/disable-um-ip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable voice mail for a user: Exchange 2013 Help](/Exchange/disable-voice-mail-exchange-2013-help) | modified |
+| 12/8/2021 | [Disable Voice Mail Preview for users: Exchange 2013 Help](/Exchange/disable-voice-mail-preview-exchange-2013-help) | modified |
+| 12/8/2021 | [Disaster Recovery role: Exchange 2013 Help](/Exchange/disaster-recovery-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Disconnected mailboxes: Exchange 2013 Help](/Exchange/disconnected-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Discovery Management: Exchange 2013 Help](/Exchange/discovery-management-exchange-2013-help) | modified |
+| 12/8/2021 | [Disjoint namespace scenarios: Exchange 2013 Help](/Exchange/disjoint-namespace-scenarios-exchange-2013-help) | modified |
+| 12/8/2021 | [Distribution Groups role: Exchange 2013 Help](/Exchange/distribution-groups-role-exchange-2013-help) | modified |
+| 12/8/2021 | [DLP policy templates: Exchange 2013 Help](/Exchange/dlp-policy-templates-exchange-2013-help) | modified |
+| 12/8/2021 | [DLP procedures: Exchange 2013 Help](/Exchange/dlp-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [How DLP rules are applied to evaluate messages: Exchange 2013 Help](/Exchange/dlp-rule-application-exchange-2013-help) | modified |
+| 12/8/2021 | [DNS query failure sensitivity: Exchange 2013 Help](/Exchange/dns-query-failure-sensitivity-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: Domain Controller Override is set in the Registry](/Exchange/domain-controller-override-is-set-in-the-registry-configdchostnamemismatch-exchange-2013-help) | modified |
+| 12/8/2021 | [Domain preparation required_DomainPrepRequired: Exchange 2013 Help](/Exchange/domain-preparation-required-domainpreprequired-exchange-2013-help) | modified |
+| 12/8/2021 | [Schema master is not running Windows Server 2003 Service Pack 1 or later](/Exchange/domaincontrollerisoutofsite-exchange-2013-help) | modified |
+| 12/8/2021 | [Domains: Exchange 2013 Help](/Exchange/domains-exchange-2013-help) | modified |
+| 12/8/2021 | [Download engine and definition updates: Exchange 2013 Help](/Exchange/download-engine-and-definition-updates-exchange-2013-help) | modified |
+| 12/8/2021 | [DSN message identity: Exchange 2013 Help](/Exchange/dsn-message-identity-exchange-2013-help) | modified |
+| 12/8/2021 | [DSN message text: Exchange 2013 Help](/Exchange/dsn-message-text-exchange-2013-help) | modified |
+| 12/8/2021 | [E-Mail Address Policies role: Exchange 2013 Help](/Exchange/e-mail-address-policies-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Edge Subscriptions: Exchange 2013 Help](/Exchange/edge-subscriptions-exchange-2013-help) | modified |
+| 12/8/2021 | [Edge Subscriptions role: Exchange 2013 Help](/Exchange/edge-subscriptions-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Edge Transport server cloned configuration: Exchange 2013 Help](/Exchange/edge-transport-server-cloned-configuration-exchange-2013-help) | modified |
+| 12/8/2021 | [Edge Transport server planning: Exchange 2013 Help](/Exchange/edge-transport-server-planning-exchange-2013-help) | modified |
+| 12/8/2021 | [Edge Transport servers: Exchange 2013 Help](/Exchange/edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [EdgeSync replication data: Exchange 2013 Help](/Exchange/edgesync-replication-data-exchange-2013-help) | modified |
+| 12/8/2021 | [Edit an email address policy: Exchange 2013 Help](/Exchange/edit-an-email-address-policy-exchange-2013-help) | modified |
+| 12/8/2021 | [Email address and address book permissions: Exchange 2013 Help](/Exchange/email-address-and-address-book-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Email address policies: Exchange 2013 Help](/Exchange/email-address-policies-exchange-2013-help) | modified |
+| 12/8/2021 | [Email address policy procedures: Exchange 2013 Help](/Exchange/email-address-policy-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Email addresses and address books: Exchange 2013 Help](/Exchange/email-addresses-and-address-books-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a customized business hours greeting: Exchange 2013 Help](/Exchange/enable-a-customized-business-hours-greeting-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a customized business hours menu prompt: Exchange 2013 Help](/Exchange/enable-a-customized-business-hours-menu-prompt-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a customized greeting for Outlook Voice Access users: Exchange 2013 Help](/Exchange/enable-a-customized-greeting-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a customized non-business hours greeting: Exchange 2013 Help](/Exchange/enable-a-customized-non-business-hours-greeting-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a customized non-business hours menu prompt: Exchange 2013 Help](/Exchange/enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a user for voice mail: Exchange 2013 Help](/Exchange/enable-a-user-for-voice-mail-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a user to receive faxes: Exchange 2013 Help](/Exchange/enable-a-user-to-receive-faxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable an informational announcement: Exchange 2013 Help](/Exchange/enable-an-informational-announcement-0-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable and configure priority queuing: Exchange 2013 Help](/Exchange/enable-and-configure-priority-queuing-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable anti-spam functionality on Mailbox servers: Exchange 2013 Help](/Exchange/enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable calls from users who are not UM-enabled: Exchange 2013 Help](/Exchange/enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable common PIN patterns for voice mail: Exchange 2013 Help](/Exchange/enable-common-pin-patterns-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable custom prompt recording using the telephone user interface: Exchange 2013 Help](/Exchange/enable-custom-prompt-recording-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable faxing for a group of users: Exchange 2013 Help](/Exchange/enable-faxing-for-a-group-of-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable IMAP4 in Exchange 2013: Exchange 2013 Help](/Exchange/enable-imap4-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable missed call notifications for a user: Exchange 2013 Help](/Exchange/enable-missed-call-notifications-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable Message Waiting Indicator (MWI) for users: Exchange 2013 Help](/Exchange/enable-mwi-for-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable a call answering rule for a user: Exchange 2013 Help](/Exchange/enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable automatic speech recognition for an Outlook Voice Access user: Exchange 2013 Help](/Exchange/enable-or-disable-automatic-speech-recognition-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable directory lookups: Exchange 2013 Help](/Exchange/enable-or-disable-directory-lookups-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable email for a mail contact: Exchange 2013 Help](/Exchange/enable-or-disable-email-for-a-mail-contact-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable Exchange ActiveSync for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-exchange-activesync-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable hierarchical address books in Exchange Server](/Exchange/enable-or-disable-hierarchical-address-books-exchange-2013) | modified |
+| 12/8/2021 | [Enable or disable IMAP4 access for a user: Exchange 2013 Help](/Exchange/enable-or-disable-imap4-access-for-a-user-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or Disable Information Rights Management Logging: Exchange 2013 Help](/Exchange/enable-or-disable-information-rights-management-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable Information Rights Management on Client Access servers](/Exchange/enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or Disable IRM for Internal Messages: Exchange 2013 Help](/Exchange/enable-or-disable-irm-for-internal-messages-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or Disable Journal Report Decryption: Exchange 2013 Help](/Exchange/enable-or-disable-journal-report-decryption-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail-enable or mail-disable a public folder: Exchange 2013 Help](/Exchange/enable-or-disable-mail-for-public-folder-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable mailbox audit logging for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable MailTips: Exchange 2013 Help](/Exchange/enable-or-disable-mailtips-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable MAPI for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-mapi-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable multimedia playback of protected voice messages: Exchange 2013 Help](/Exchange/enable-or-disable-multimedia-playback-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable Outlook Voice Access for users: Exchange 2013 Help](/Exchange/enable-or-disable-outlook-voice-access-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable Outlook Web App for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-outlook-web-app-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable Play on Phone for Outlook Voice Access users: Exchange 2013 Help](/Exchange/enable-or-disable-play-on-phone-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable POP3 access for a user: Exchange 2013 Help](/Exchange/enable-or-disable-pop3-access-for-a-user-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable sending voice messages to users: Exchange 2013 Help](/Exchange/enable-or-disable-sending-voice-messages-0-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable sending voice messages from Outlook Voice Access: Exchange 2013 Help](/Exchange/enable-or-disable-sending-voice-messages-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable single item recovery for a mailbox: Exchange 2013 Help](/Exchange/enable-or-disable-single-item-recovery-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or disable automatic speech recognition: Exchange 2013 Help](/Exchange/enable-or-disable-speech-recognition-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or Disable Transport Decryption: Exchange 2013 Help](/Exchange/enable-or-disable-transport-decryption-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or prevent transferring calls from an auto attendant: Exchange 2013 Help](/Exchange/enable-or-prevent-transferring-calls-0-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable or prevent transferring calls from Outlook Voice Access: Exchange 2013 Help](/Exchange/enable-or-prevent-transferring-calls-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable outgoing calls on UM IP gateways: Exchange 2013 Help](/Exchange/enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable PIN-less sign-Ins for voice mail: Exchange 2013 Help](/Exchange/enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable POP3 in Exchange 2013: Exchange 2013 Help](/Exchange/enable-pop3-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable support for legacy transport agents: Exchange 2013 Help](/Exchange/enable-support-for-legacy-transport-agents-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable the MRS Proxy endpoint for remote moves: Exchange 2013 Help](/Exchange/enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a UM auto attendant: Exchange 2013 Help](/Exchange/enable-um-auto-attendant-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable a UM IP gateway: Exchange 2013 Help](/Exchange/enable-um-ip-gateway-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable Voice Mail Preview for users: Exchange 2013 Help](/Exchange/enable-voice-mail-preview-exchange-2013-help) | modified |
+| 12/8/2021 | [Enable voice mail users to receive faxes: Exchange 2013 Help](/Exchange/enable-voice-mail-users-to-receive-faxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Enter a business name: Exchange 2013 Help](/Exchange/enter-a-business-name-exchange-2013-help) | modified |
+| 12/8/2021 | [Enter your Exchange 2013 product key: Exchange 2013 Help](/Exchange/enter-your-exchange-2013-product-key-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2007 servers must be upgraded to Service Pack 3, Update Rollup 10](/Exchange/exchange-2007-servers-must-be-upgraded-to-service-pack-3-update-rollup-10-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2010 servers must be upgraded to Service Pack 3: Exchange 2013 Help](/Exchange/exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: Exchange 2010 servers must be upgraded to Service Pack 3: Exchange 2013 Help](/Exchange/exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help_1) | modified |
+| 12/8/2021 | [Exchange 2013 Active Directory schema changes: Exchange 2013 Help](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 certificate management UI: Exchange 2013 Help](/Exchange/exchange-2013-certificate-management-ui-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 Client Access server configuration: Exchange 2013 Help](/Exchange/exchange-2013-client-access-server-configuration-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 deployment permissions reference: Exchange 2013 Help](/Exchange/exchange-2013-deployment-permissions-reference-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013: editions and versions: Exchange 2013 Help](/Exchange/exchange-2013-editions-and-versions-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 language support: Exchange 2013 Help](/Exchange/exchange-2013-language-support-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 Performance Counters: Exchange 2013 Help](/Exchange/exchange-2013-performance-counters-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 post-Installation tasks: Exchange 2013 Help](/Exchange/exchange-2013-post-installation-tasks-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 prerequisites: Exchange 2013 Help](/Exchange/exchange-2013-prerequisites-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 readiness checks: Exchange 2013 Help](/Exchange/exchange-2013-readiness-checks-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 sizing and capacity planning: Exchange 2013 Help](/Exchange/exchange-2013-sizing-and-capacity-planning-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 Sizing and Configuration Recommendations: Exchange 2013 Help](/Exchange/exchange-2013-sizing-and-configuration-recommendations-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 storage configuration options: Exchange 2013 Help](/Exchange/exchange-2013-storage-configuration-options-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 system requirements: Exchange 2013 Help](/Exchange/exchange-2013-system-requirements-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange 2013 virtualization: Exchange 2013 Help](/Exchange/exchange-2013-virtualization-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange ActiveSync: Exchange 2013 Help](/Exchange/exchange-activesync-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange ActiveSync virtual directory management tasks: Exchange 2013 Help](/Exchange/exchange-activesync-virtual-directory-management-tasks-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange admin center in Exchange 2013: Exchange 2013 Help](/Exchange/exchange-admin-center-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange and Shell infrastructure permissions: Exchange 2013 Help](/Exchange/exchange-and-shell-infrastructure-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange auditing reports: Exchange 2013 Help](/Exchange/exchange-auditing-reports-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Connectors role: Exchange 2013 Help](/Exchange/exchange-connectors-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Management Shell quick reference for Exchange 2013](/Exchange/exchange-management-shell-quick-reference-for-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Remote Connectivity Analyzer: Exchange 2013 Help](/Exchange/exchange-remote-connectivity-analyzer-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Search: Exchange 2013 Help](/Exchange/exchange-search-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Search procedures: Exchange 2013 Help](/Exchange/exchange-search-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server 2013: Exchange 2013 Help](/Exchange/exchange-server-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server 2013 Performance Recommendations: Exchange 2013 Help](/Exchange/exchange-server-2013-performance-recommendations-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server Certificates role: Exchange 2013 Help](/Exchange/exchange-server-certificates-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server Deployment Assistant: Exchange 2013 Help](/Exchange/exchange-server-deployment-assistant-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Servers role: Exchange 2013 Help](/Exchange/exchange-servers-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Virtual Directories role: Exchange 2013 Help](/Exchange/exchange-virtual-directories-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange workload management: Exchange 2013 Help](/Exchange/exchange-workload-management-exchange-2013-help) | modified |
+| 12/8/2021 | [ExecutionPolicy GPO is defined: Exchange 2013 Help](/Exchange/executionpolicy-gpo-is-defined-exchange-2013-help) | modified |
+| 12/8/2021 | [Export and import retention tags: Exchange 2013 Help](/Exchange/export-and-import-retention-tags-exchange-2013-help) | modified |
+| 12/8/2021 | [Export DLP sensitive information types from Exchange: Exchange 2013 Help](/Exchange/export-dlp-sensitive-information-types-from-exchange-exchange-2013-help) | modified |
+| 12/8/2021 | [Export lists from Queue Viewer: Exchange 2013 Help](/Exchange/export-lists-from-queue-viewer-exchange-2013-help) | modified |
+| 12/8/2021 | [Export mailbox audit logs: Exchange 2013 Help](/Exchange/export-mailbox-audit-logs-exchange-2013-help) | modified |
+| 12/8/2021 | [Export messages from queues: Exchange 2013 Help](/Exchange/export-messages-from-queues-exchange-2013-help) | modified |
+| 12/8/2021 | [Export eDiscovery search results to a PST file: Exchange 2013 Help](/Exchange/export-search-results-exchange-2013-help) | modified |
+| 12/8/2021 | [Failover Cluster Command Interface Windows feature not installed](/Exchange/failover-cluster-command-interface-windows-feature-not-installed-exchange-2013-help) | modified |
+| 12/8/2021 | [FAQ: Exchange admin center: Exchange 2013 Help](/Exchange/faq-exchange-admin-center-exchange-2013-help) | modified |
+| 12/8/2021 | [FAQ: Public folders: Exchange 2013 Help](/Exchange/faq-public-folders-exchange-2013-help) | modified |
+| 12/8/2021 | [Fax advisor for Exchange UM: Exchange 2013 Help](/Exchange/fax-advisor-for-exchange-um-exchange-2013-help) | modified |
+| 12/8/2021 | [Faxing procedures: Exchange 2013 Help](/Exchange/faxing-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Feature permissions: Exchange 2013 Help](/Exchange/feature-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Federated Sharing role: Exchange 2013 Help](/Exchange/federated-sharing-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Federation: Exchange 2013 Help](/Exchange/federation-exchange-2013-help) | modified |
+| 12/8/2021 | [File formats indexed by Exchange Search: Exchange 2013 Help](/Exchange/file-formats-indexed-by-exchange-search-exchange-2013-help) | modified |
+| 12/8/2021 | [Filterable properties for the -ContentFilter parameter](/Exchange/filterable-properties-for-the-contentfilter-parameter) | modified |
+| 12/8/2021 | [Find internal and external URLs for the Exchange admin center](/Exchange/find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help) | modified |
+| 12/8/2021 | [Foreign connectors: Exchange 2013 Help](/Exchange/foreign-connectors-exchange-2013-help) | modified |
+| 12/8/2021 | [Forwarding calls procedures: Exchange 2013 Help](/Exchange/forwarding-calls-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Get Recoverable Items folder statistics: Exchange 2013 Help](/Exchange/get-recoverable-items-folder-statistics-exchange-2013-help) | modified |
+| 12/8/2021 | [Global updates required: Exchange 2013 Help](/Exchange/global-updates-required-exchange-2013-help) | modified |
+| 12/8/2021 | [Group metrics and MailTips: Exchange 2013 Help](/Exchange/group-metrics-and-mailtips-exchange-2013-help) | modified |
+| 12/8/2021 | [Header firewall: Exchange 2013 Help](/Exchange/header-firewall-exchange-2013-help) | modified |
+| 12/8/2021 | [Help Desk: Exchange 2013 Help](/Exchange/help-desk-exchange-2013-help) | modified |
+| 12/8/2021 | [Help idenfity issue with automatic checks - adding domains](/Exchange/help-idenfity-my-issue-with-automatic-checks-adding-domains-exchange-2013-help) | modified |
+| 12/8/2021 | [Identify issue with Automatic Checks - Active Directory](/Exchange/help-identify-my-issue-with-automatic-checks-active-directory-exchange-2013-help) | modified |
+| 12/8/2021 | [Help identify issue with automatic checks - deploying Office](/Exchange/help-identify-my-issue-with-automatic-checks-deploying-office-exchange-2013-help) | modified |
+| 12/8/2021 | [Help identify issue with automatic checks -directory synchronization](/Exchange/help-identify-my-issue-with-automatic-checks-directory-synchronization-exchange-2013-help) | modified |
+| 12/8/2021 | [Help Identify My Issue with Automatic Checks - Migration: Exchange 2013 Help](/Exchange/help-identify-my-issue-with-automatic-checks-migration-exchange-2013-help) | modified |
+| 12/8/2021 | [Help Identify My Issue with Automatic Checks - Quota: Exchange 2013 Help](/Exchange/help-identify-my-issue-with-automatic-checks-quota-exchange-2013-help) | modified |
+| 12/8/2021 | [Help Identify My Issue with Automatic Checks - SSO: Exchange 2013 Help](/Exchange/help-identify-my-issue-with-automatic-checks-sso-exchange-2013-help) | modified |
+| 12/8/2021 | [Help identify issue with sending/receiving email in Outlook - automatic checks](/Exchange/help-identify-my-issue-with-sending-receiving-email-in-office-outlook-automatic-checks-exchange-2013-help) | modified |
+| 12/8/2021 | [Can't send or receive email on my mobile device (automatic checks)](/Exchange/help-identify-my-issue-with-sending-receiving-email-on-a-mobile-device-automatic-checks-exchange-2013-help) | modified |
+| 12/8/2021 | [Help identify issues with automatic checks - 3rd Party Tools](/Exchange/help-identify-my-issues-with-automatic-checks-3rd-party-tools-exchange-2013-help) | modified |
+| 12/8/2021 | [Hierarchical address books in Exchange Server](/Exchange/hierarchical-address-books-exchange-2013) | modified |
+| 12/8/2021 | [High availability and site resilience: Exchange 2013 Help](/Exchange/high-availability-and-site-resilience-exchange-2013-help) | modified |
+| 12/8/2021 | [High availability and site resilience permissions: Exchange 2013 Help](/Exchange/high-availability-and-site-resilience-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Hub Transport role not detected in local site](/Exchange/hub-transport-role-not-detected-in-local-site-bridgeheadrolenotpresentinsite-exchange-2013-help) | modified |
+| 12/8/2021 | [Hygiene Management: Exchange 2013 Help](/Exchange/hygiene-management-exchange-2013-help) | modified |
+| 12/8/2021 | [Identity: Exchange 2013 Help](/Exchange/identity-exchange-2013-help) | modified |
+| 12/8/2021 | [IIS 6 Compatibility components not installed](/Exchange/iis-6-compatibility-components-not-installed-longhorniis6metabasenotinstalled-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: IIS 6 Compatibility components not installed](/Exchange/iis-6-compatibility-components-not-installed-longhorniis6mgmtconsolenotinstalled-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server - IIS 7 component not installed](/Exchange/iis-7-component-not-installed-longhorniis7basicauthnotinstalled-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server - IIS 7 component isn't installed](/Exchange/iis-7-component-not-installed-longhorniis7httpcompressiondynamicnotinstalled-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: IIS 7 component not installed](/Exchange/iis-7-component-not-installed-longhorniis7windowsauthnotinstalled-exchange-2013-help) | modified |
+| 12/8/2021 | [IIS 7 .NET Extensibility component is required](/Exchange/iis-7-net-extensibility-component-is-required-longhorniis7netext-exchange-2013-help) | modified |
+| 12/8/2021 | [IIS is in 32-bit compatibility mode_IIS32BitMode: Exchange 2013 Help](/Exchange/iis-is-in-32-bit-compatibility-mode-iis32bitmode-exchange-2013-help) | modified |
+| 12/8/2021 | [IIS Logs and Log Parser Studio Reports: Exchange 2013 Help](/Exchange/iis-logs-and-log-parser-studio-reports-exchange-2013-help) | modified |
+| 12/8/2021 | [Import a custom DLP policy template from a file: Exchange 2013 Help](/Exchange/import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help) | modified |
+| 12/8/2021 | [Import address rewrite entries on Edge Transport servers: Exchange 2013 Help](/Exchange/import-address-rewrite-entries-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Import and export custom greetings, announcements, menus, and prompts: Exchange 2013 Help](/Exchange/import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help) | modified |
+| 12/8/2021 | [Import and export files in the Exchange Management Shell: Exchange 2013 Help](/Exchange/import-and-export-files-in-the-exchange-management-shell-exchange-2013-help) | modified |
+| 12/8/2021 | [Import custom prompts from Exchange 2007 to Exchange 2013: Exchange 2013 Help](/Exchange/import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [In-Place Hold and Litigation Hold: Exchange 2013 Help](/Exchange/in-place-and-litigation-holds-exchange-2013-help) | modified |
+| 12/8/2021 | [In-Place Archiving in Exchange 2013: Exchange 2013 Help](/Exchange/in-place-archiving-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Include text with the email message sent when a PIN Is reset: Exchange 2013 Help](/Exchange/include-text-in-email-sent-when-pin-is-reset-exchange-2013-help) | modified |
+| 12/8/2021 | [Include text with the email message sent when a voice message Is received: Exchange 2013 Help](/Exchange/include-text-with-email-sent-when-voice-message-is-received-exchange-2013-help) | modified |
+| 12/8/2021 | [Include text with the email message sent when a user Is enabled for voice mail: Exchange 2013 Help](/Exchange/include-text-with-email-sent-when-voicemail-is-enabled-exchange-2013-help) | modified |
+| 12/8/2021 | [Include text with the email message sent when a fax message is received: Exchange 2013 Help](/Exchange/include-text-with-the-email-sent-when-a-fax-message-is-received-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management: Exchange 2013 Help](/Exchange/information-rights-management-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management in Exchange ActiveSync: Exchange 2013 Help](/Exchange/information-rights-management-in-exchange-activesync-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management in Outlook Web App: Exchange 2013 Help](/Exchange/information-rights-management-in-outlook-web-app-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management logging: Exchange 2013 Help](/Exchange/information-rights-management-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management procedures: Exchange 2013 Help](/Exchange/information-rights-management-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Information Rights Management role: Exchange 2013 Help](/Exchange/information-rights-management-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Install a UM language pack: Exchange 2013 Help](/Exchange/install-a-um-language-pack-exchange-2013-help) | modified |
+| 12/8/2021 | [Install and configure the Address Book Policy Routing agent](/Exchange/install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help) | modified |
+| 12/8/2021 | [Install Exchange 2013 using the Setup wizard: Exchange 2013 Help](/Exchange/install-exchange-2013-using-the-setup-wizard-exchange-2013-help) | modified |
+| 12/8/2021 | [Install or remove add-ins for Outlook for your Exchange 2013 organization](/Exchange/install-or-remove-outlook-add-ins-2013-help) | modified |
+| 12/8/2021 | [Install or remove add-ins for Outlook for your organization: Exchange 2013 Help](/Exchange/install-or-remove-outlook-add-ins-exchange-2013-help) | modified |
+| 12/8/2021 | [Use the Setup wizard to install the Exchange 2013 Edge Transport role](/Exchange/install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help) | modified |
+| 12/8/2021 | [Install the Exchange 2013 management tools: Exchange 2013 Help](/Exchange/install-the-exchange-2013-management-tools-exchange-2013-help) | modified |
+| 12/8/2021 | [Install the Exchange UM Troubleshooting Tool: Exchange 2013 Help](/Exchange/install-the-exchange-um-troubleshooting-tool-exchange-2013-help) | modified |
+| 12/8/2021 | [Install of first Exchange server in an organization can't be delegated](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help) | modified |
+| 12/8/2021 | [Installation of the first Exchange server in an organization can't be delegated](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_1) | modified |
+| 12/8/2021 | [Installation of the first Exchange server in the organization can't be delegated](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_2) | modified |
+| 12/8/2021 | [Install of the first Exchange server in the organization can't be delegated](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_3) | modified |
+| 12/8/2021 | [Can't delegate installation of the first Exchange server in the organization](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_4) | modified |
+| 12/8/2021 | [Install of first Exchange server in the organization can't be delegated](/Exchange/installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_5) | modified |
+| 12/8/2021 | [Installation on domain controllers is not supported with Active Directory split permissions](/Exchange/installation-on-domain-controllers-is-not-supported-with-active-directory-split-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Installing Exchange on a domain controller is not recommended](/Exchange/installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help) | modified |
+| 12/8/2021 | [Exchange Server: Insufficient permissions to prepare Active Directory](/Exchange/insufficient-permissions-to-prepare-active-directory-adupdaterequired-exchange-2013-help) | modified |
+| 12/8/2021 | [Insufficient permissions to prepare Active Directory](/Exchange/insufficient-permissions-to-prepare-active-directory-domainprepwithoutadupdate-exchange-2013-help) | modified |
+| 12/8/2021 | [Insufficient permissions to remove all server roles](/Exchange/insufficient-permissions-to-remove-all-server-roles-cannotuninstalldelegatedserver-exchange-2013-help) | modified |
+| 12/8/2021 | [Insufficient permissions to run /PrepareDomain](/Exchange/insufficient-permissions-to-run-preparedomain-preparedomainnotadmin-exchange-2013-help) | modified |
+| 12/8/2021 | [Integrate Outlook Web App with Lync Server: Exchange 2013 Help](/Exchange/integrate-outlook-web-app-with-lync-server-exchange-2013-help) | modified |
+| 12/8/2021 | [Integrating sensitive information rules with transport rules: Exchange 2013 Help](/Exchange/integrate-sensitive-information-rules-exchange-2013-help) | modified |
+| 12/8/2021 | [Integration with SharePoint and Lync: Exchange 2013 Help](/Exchange/integration-with-sharepoint-and-lync-exchange-2013-help) | modified |
+| 12/8/2021 | [Interpret voice mail call records: Exchange 2013 Help](/Exchange/interpret-voice-mail-call-records-exchange-2013-help) | modified |
+| 12/8/2021 | [IPv6 support in Exchange 2013: Exchange 2013 Help](/Exchange/ipv6-support-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Journal report decryption: Exchange 2013 Help](/Exchange/journal-report-decryption-exchange-2013-help) | modified |
+| 12/8/2021 | [Journaling: Exchange 2013 Help](/Exchange/journaling-exchange-2013-help) | modified |
+| 12/8/2021 | [Journaling  role: Exchange 2013 Help](/Exchange/journaling-role-exchange-2013-help) | modified |
+| 12/8/2021 | [KB2619234 update not installed: Exchange 2013 Help](/Exchange/kb2619234-update-not-installed-exchange-2013-help) | modified |
+| 12/8/2021 | [Keyboard shortcuts in the Exchange admin center in Exchange 2013](/Exchange/keyboard-shortcuts-in-the-exchange-admin-center-2013-help) | modified |
+| 12/8/2021 | [Keyboard shortcuts in the Exchange admin center](/Exchange/keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help) | modified |
+| 12/8/2021 | [Learn about the Exchange UM Troubleshooting Tool: Exchange 2013 Help](/Exchange/learn-about-the-exchange-um-troubleshooting-tool-exchange-2013-help) | modified |
+| 12/8/2021 | [Legal Hold role: Exchange 2013 Help](/Exchange/legal-hold-role-exchange-2013-help) | modified |
+| 12/8/2021 | [LegalHoldApplication role: Exchange 2013 Help](/Exchange/legalholdapplication-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Limits for public folders: Exchange 2013 Help](/Exchange/limits-for-public-folders-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail Enabled Public Folders role: Exchange 2013 Help](/Exchange/mail-enabled-public-folders-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail flow: Exchange 2013 Help](/Exchange/mail-flow-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail flow permissions: Exchange 2013 Help](/Exchange/mail-flow-permissions-exchange-2013-help) | modified |
+| 12/8/2021 | [Transport rule actions in Exchange 2013: Exchange 2013 Help](/Exchange/mail-flow-rule-actions-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Transport rule conditions and exceptions (predicates) in Exchange 2013](/Exchange/mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Transport rules in Exchange 2013: Exchange 2013 Help](/Exchange/mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail Recipient Creation role: Exchange 2013 Help](/Exchange/mail-recipient-creation-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail routing: Exchange 2013 Help](/Exchange/mail-routing-exchange-2013-help) | modified |
+| 12/8/2021 | [Mail Tips role: Exchange 2013 Help](/Exchange/mail-tips-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox and Client Access servers: Exchange 2013 Help](/Exchange/mailbox-and-client-access-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox audit logging: Exchange 2013 Help](/Exchange/mailbox-audit-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox audit logging procedures: Exchange 2013 Help](/Exchange/mailbox-audit-logging-procedures-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox database drive specification is missing](/Exchange/mailbox-database-drive-specification-is-missing-mailboxedbdrivedoesnotexist-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox import and export requests: Exchange 2013 Help](/Exchange/mailbox-import-and-export-requests-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox moves in Exchange 2013: Exchange 2013 Help](/Exchange/mailbox-moves-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Place a mailbox on retention hold: Exchange 2013 Help](/Exchange/mailbox-retention-hold-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox Search role: Exchange 2013 Help](/Exchange/mailbox-search-role-exchange-2013-help) | modified |
+| 12/8/2021 | [Mailbox server: Exchange 2013 Help](/Exchange/mailbox-server-exchange-2013-help) | modified |
+| 12/8/2021 | [MailboxSearchApplication role: Exchange 2013 Help](/Exchange/mailboxsearchapplication-role-exchange-2013-help) | modified |
+| 12/8/2021 | [MailTips: Exchange 2013 Help](/Exchange/mailtips-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage a federation trust: Exchange 2013 Help](/Exchange/manage-a-federation-trust-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage address rewriting on Edge Transport servers: Exchange 2013 Help](/Exchange/manage-address-rewriting-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage administrator audit logging: Exchange 2013 Help](/Exchange/manage-administrator-audit-logging-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage attachment filtering on Edge Transport servers: Exchange 2013 Help](/Exchange/manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage cmdlet extension agents: Exchange 2013 Help](/Exchange/manage-cmdlet-extension-agents-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage Connection Filtering on Edge Transport Servers: Exchange 2013 Help](/Exchange/manage-connection-filtering-on-edge-transport-servers-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage content filtering: Exchange 2013 Help](/Exchange/manage-content-filtering-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage database availability group membership: Exchange 2013 Help](/Exchange/manage-database-availability-group-membership-exchange-2013-help) | modified |
+| 12/8/2021 | [Create and manage distribution groups: Exchange 2013 Help](/Exchange/manage-distribution-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage DLP policies: Exchange 2013 Help](/Exchange/manage-dlp-policies-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage DSN messages: Exchange 2013 Help](/Exchange/manage-dsn-messages-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage dynamic distribution groups: Exchange 2013 Help](/Exchange/manage-dynamic-distribution-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage Edge Subscriptions: Exchange 2013 Help](/Exchange/manage-edge-subscriptions-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage equipment mailboxes: Exchange 2013 Help](/Exchange/manage-equipment-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage health sets and server health: Exchange 2013 Help](/Exchange/manage-health-sets-and-server-health-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage In-Place Archives in Exchange 2013: Exchange 2013 Help](/Exchange/manage-in-place-archives-in-exchange-2013-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage journaling: Exchange 2013 Help](/Exchange/manage-journaling-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage linked mailboxes: Exchange 2013 Help](/Exchange/manage-linked-mailboxes-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage linked role groups: Exchange 2013 Help](/Exchange/manage-linked-role-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage mail contacts: Exchange 2013 Help](/Exchange/manage-mail-contacts-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage mail-enabled security groups: Exchange 2013 Help](/Exchange/manage-mail-enabled-security-groups-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage mail users: Exchange 2013 Help](/Exchange/manage-mail-users-exchange-2013-help) | modified |
+| 12/8/2021 | [Manage mailbox restore requests: Exchange 2013 Help](/Exchange/manage-mailbox-restore-requests-exchange-2013-help) | modified |
+| 12/8/2021 | [Managed Availability: Exchange 2013 Help](/Exchange/managed-availability-exchange-2013-help) | modified |
+| 12/8/2021 | [Managed Store: Exchange 2013 Help](/Exchange/managed-store-exchange-2013-help) | modified |
+| 12/8/2021 | [Managed Store Limits: Exchange 2013 Help](/Exchange/managed-store-limits-exchange-2013-help) | modified |
+| 12/8/2021 | [Appendix A: Exchange health sets](/Exchange/management/appendix-a-exchange-health-sets) | modified |
+| 12/8/2021 | [Appendix B: Additional resources](/Exchange/management/appendix-b-additional-resources) | modified |
+| 12/8/2021 | [Exchange Server 2013 Management Pack Guide](/Exchange/management/exchange-server-2013-management-pack-guide) | modified |
+| 12/8/2021 | [Getting started with Exchange Server 2013 Management Pack](/Exchange/management/getting-started-with-exchange-server-2013-management-pack) | modified |
+| 12/8/2021 | [Exchange 2013 Management Pack Health Sets](/Exchange/management/health/exchange-2013-management-pack-health-sets) | modified |
+| 12/8/2021 | [Troubleshooting ActiveSync Health Set](/Exchange/management/health/troubleshooting-activesync-health-set) | modified |
+| 12/8/2021 | [Troubleshooting ActiveSync.Protocol Health Set](/Exchange/management/health/troubleshooting-activesync-protocol-health-set) | modified |
+| 12/8/2021 | [Troubleshooting ActiveSync.Proxy Health Set](/Exchange/management/health/troubleshooting-activesync-proxy-health-set) | modified |
+| 12/8/2021 | [Troubleshooting AD Health Set](/Exchange/management/health/troubleshooting-ad-health-set) | modified |
+| 12/8/2021 | [Troubleshooting Antimalware Health Set](/Exchange/management/health/troubleshooting-antimalware-health-set) | modified |
+| 12/8/2021 | [Troubleshooting AntiSpam Health Set](/Exchange/management/health/troubleshooting-antispam-health-set) | modified |
+| 12/8/2021 | [Troubleshooting Autodiscover Health Set](/Exchange/management/health/troubleshooting-autodiscover-health-set) | modified |
+| 12/8/2021 | [Troubleshooting Autodiscover.Protocol Health Set](/Exchange/management/health/troubleshooting-autodiscover-protocol-health-set) | modified |
+| 12/8/2021 | [Troubleshooting Autodiscover.Proxy Health Set](/Exchange/management/health/troubleshooting-autodiscover-proxy-health-set) | modified |
+| 12/8/2021 | [Troubleshooting Classification Health Set](/Exchange/management/health/troubleshooting-classification-health-set) | modified |
+| 12/8/2021 | [Troubleshooting ClientAccess.Proxy Health Set](/Exchange/management/health/troubleshooting-clientaccess-proxy-health-set) | modified |
+| 12/8/2021 | [Troubleshooting DataProtection Health Set](/Exchange/management/health/troubleshooting-dataprotection-health-set) | modified |
+| 12/8/2021 | [Troubleshooting DiskSpace Health Set](/Exchange/management/health/troubleshooting-diskspace-health-set) | modified |
+| 12/8/2021 | [Troubleshooting ECP Health Set](/Exchange/management/health/troubleshooting-ecp-health-set) | modified |
+| 12/8/2021 | [Troubleshooting ECP.Proxy Health Set](/Exchange/management/health/troubleshooting-ecp-proxy-health-set) | modified |
+| 12/8/2021 | [Troubleshooting EDS Health Set](/Exchange/management/health/troubleshooting-eds-health-set) | modified |
+| 12/8/2021 | [Troubleshooting EventAssistants Health Set](/Exchange/management/health/troubleshooting-eventassistants-health-set) | modified |
+| 12/8/2021 | [Troubleshooting EWS Health Set](/Exchange/management/health/troubleshooting-ews-health-set) | modified |
+| 12/8/2021 | [Troubleshooting EWS.Protocol Health Set](/Exchange/management/health/troubleshooting-ews-protocol-health-set) | modified |
+| 12/8/2021 | [Troubleshooting EWS.Proxy Health Set](/Exchange/management/health/troubleshooting-ews-proxy-health-set) | modified |
+| 12/8/2021 | [Troubleshooting FfoQuarantine Health Set](/Exchange/management/health/troubleshooting-ffoquarantine-health-set) | modified |
+| 12/8/2021 | [Troubleshooting FfoTransport Health Set](/Exchange/management/health/troubleshooting-ffotransport-health-set) | modified |
+| 12/8/2021 | [Troubleshooting FfoUmc Health Set](/Exchange/management/health/troubleshooting-ffoumc-health-set) | modified |
+| 12/10/2021 | [Manage role groups](/Exchange/permissions/role-groups?view=exchserver-2016) | modified |
 
 
-## Week of October 04, 2021
+## Week of November 29, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/5/2021 | [Exchange Online auditing reports](/Exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports) | modified |
-| 10/5/2021 | [Export mailbox audit logs](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | modified |
-| 10/5/2021 | [Run a non-owner mailbox access report in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | modified |
-| 10/5/2021 | [Run a per-mailbox litigation hold report](/Exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | modified |
-| 10/5/2021 | [Search the role group changes or admin audit logs in Exchange Online](/Exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes) | modified |
-| 10/5/2021 | [View the admin audit log](/Exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log) | modified |
-| 10/5/2021 | [View and export the external admin audit log](/Exchange/security-and-compliance/exchange-auditing-reports/view-external-admin-audit-log) | modified |
-| 10/5/2021 | [Exchange Emergency Mitigation Service (Exchange EM Service)](/Exchange/exchange-emergency-mitigation-service?view=exchserver-2016) | modified |
-| 10/6/2021 | [Address lists in Exchange Online](/Exchange/address-books/address-lists/address-lists) | modified |
-| 10/6/2021 | [Deploying Outlook for iOS and Android app configuration settings](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) | modified |
-| 10/6/2021 | [S/MIME for Outlook for iOS and Android](/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android) | modified |
-| 10/6/2021 | [Recoverable Items folder in Exchange Online](/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) | modified |
-| 10/7/2021 | [Modern dynamic distribution groups](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/modern-dynamic-distribution-groups) | modified |
-| 10/8/2021 | [Shared free/busy in Exchange hybrid deployments](/Exchange/shared-free-busy) | modified |
-| 10/8/2021 | [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off) | modified |
-| 10/8/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
-| 10/8/2021 | [Configure mail flow using connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) | modified |
+| 11/29/2021 | [How and when to decommission your on-premises Exchange servers in a hybrid deployment](/Exchange/decommission-on-premises-exchange) | modified |
+| 11/29/2021 | [Manage dynamic distribution group in Exchange Online](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) | modified |
+| 11/29/2021 | [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync?view=exchserver-2016) | modified |
+| 11/30/2021 | [Track and Prevent Migration Data Loss in Exchange Online](/Exchange/mailbox-migration/track-prevent-data-loss-dcs) | modified |
+| 12/1/2021 | [Exchange Server: Address rewriting on Edge Transport servers](/Exchange/architecture/edge-transport-servers/address-rewriting?view=exchserver-2016) | modified |
 
 
-## Week of September 27, 2021
+## Week of November 22, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/27/2021 | [Add an auto attendant extension number in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/add-an-auto-attendant-extension-number) | modified |
-| 9/27/2021 | [Automatically answer and route incoming calls in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls) | modified |
-| 9/27/2021 | [Configure an auto attendant for users who have similar names in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-auto-attendant-for-users-with-similar-names) | modified |
-| 9/27/2021 | [Configure business hours in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-business-hours) | modified |
-| 9/27/2021 | [Configure a DTMF fallback auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-dtmf-fallback-auto-attendant) | modified |
-| 9/27/2021 | [Configure the time zone in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-the-time-zone) | modified |
-| 9/27/2021 | [Configure the group of users that can be contacted in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-users-that-can-be-contacted) | modified |
-| 9/27/2021 | [Create a holiday schedule in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule) | modified |
-| 9/27/2021 | [Create a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant) | modified |
-| 9/27/2021 | [Create business hours navigation menus in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-business-hours-navigation-menus) | modified |
-| 9/27/2021 | [Create menu navigation in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-menu-navigation) | modified |
-| 9/27/2021 | [Create non-business hours navigation menus in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-non-business-hours-navigation-menus) | modified |
-| 9/27/2021 | [Delete a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/delete-um-auto-attendant) | modified |
-| 9/27/2021 | [Disable a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/disable-um-auto-attendant) | modified |
-| 9/27/2021 | [DTMF interface in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/dtmf-interface) | modified |
-| 9/27/2021 | [Enable a customized business hours greeting in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-greeting) | modified |
-| 9/27/2021 | [Enable a customized business hours menu prompt in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-menu-prompt) | modified |
-| 9/27/2021 | [Enable a customized non-business hours greeting in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-greeting) | modified |
-| 9/27/2021 | [Enable a customized non-business hours menu prompt in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-menu-prompt) | modified |
-| 9/27/2021 | [Enable an informational announcement in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-an-informational-announcement) | modified |
-| 9/27/2021 | [Enable or disable directory lookups in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-directory-lookups) | modified |
-| 9/27/2021 | [Enable or disable sending voice messages to users in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-sending-voice-messages) | modified |
-| 9/27/2021 | [Enable or disable automatic speech recognition in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-speech-recognition) | modified |
-| 9/27/2021 | [Enable or prevent transferring calls from an auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-prevent-transferring-calls) | modified |
-| 9/27/2021 | [Enable a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-um-auto-attendant) | modified |
-| 9/27/2021 | [Enter a business name in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name) | modified |
-| 9/27/2021 | [Manage a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant) | modified |
-| 9/27/2021 | [Set a business location in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-a-business-location) | modified |
-| 9/27/2021 | [Set up a UM auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant) | modified |
-| 9/27/2021 | [UM auto attendant procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures) | modified |
-| 9/27/2021 | [Change the audio codec in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec) | modified |
-| 9/27/2021 | [Configure a dial plan for users who have similar names in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names) | modified |
-| 9/27/2021 | [Configure a fully qualified domain name in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-fully-qualified-domain-name) | modified |
-| 9/27/2021 | [Configure the IP address in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address) | modified |
-| 9/27/2021 | [Configure the listening port in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port) | modified |
-| 9/27/2021 | [Configure the maximum call duration in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration) | modified |
-| 9/27/2021 | [Configure the maximum recording duration in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration) | modified |
-| 9/27/2021 | [Configure the recording idle time-out value in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out) | modified |
-| 9/27/2021 | [Configure the VoIP security setting in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting) | modified |
-| 9/27/2021 | [Connect your voice mail system to your telephone network in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system) | modified |
-| 9/27/2021 | [Create a UM dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan) | modified |
-| 9/27/2021 | [Create a UM hunt group in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group) | modified |
-| 9/27/2021 | [Create a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway) | modified |
-| 9/27/2021 | [Delete a UM dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan) | modified |
-| 9/27/2021 | [Delete a UM hunt group in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-hunt-group) | modified |
-| 9/27/2021 | [Delete a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway) | modified |
-| 9/27/2021 | [Disable a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway) | modified |
-| 9/27/2021 | [Enable a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway) | modified |
-| 9/27/2021 | [Manage a UM dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan) | modified |
-| 9/27/2021 | [Manage a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway) | modified |
-| 9/27/2021 | [UM dial plan procedures [EXO] in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plan-procedures) | modified |
-| 9/27/2021 | [UM dial plans [ONP] in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans) | modified |
-| 9/27/2021 | [UM hunt group procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-group-procedures) | modified |
-| 9/27/2021 | [UM hunt groups in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups) | modified |
-| 9/27/2021 | [UM IP gateway procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures) | modified |
-| 9/27/2021 | [UM IP gateways in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways) | modified |
-| 9/27/2021 | [View a UM hunt group in Exchange Online](/Exchange/voice-mail-unified-messaging/connect-voice-mail-system/view-um-hunt-group) | modified |
-| 9/27/2021 | [Enable custom prompt recording using the telephone user interface in Exchange Online](/Exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording) | modified |
-| 9/27/2021 | [Voice mail greetings, announcements, menus, and prompts in Exchange Online](/Exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/greetings-announcements-menus-and-prompts) | modified |
-| 9/27/2021 | [Select the language for an auto attendant in Exchange Online](/Exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language) | modified |
-| 9/27/2021 | [Set the default language on a dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language) | modified |
-| 9/27/2021 | [Investigate the audio quality of voice calls for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user) | modified |
-| 9/27/2021 | [Investigate the audio quality of voice calls in your organization in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization) | modified |
-| 9/27/2021 | [Interpret voice mail call records in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records) | modified |
-| 9/27/2021 | [Review the voice mail calls in your organization in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-organization) | modified |
-| 9/27/2021 | [Review the voice mail calls for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user) | modified |
-| 9/27/2021 | [Run reports for voice mail calls in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports) | modified |
-| 9/27/2021 | [UM reports procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures) | modified |
-| 9/27/2021 | [Disable common PIN patterns for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/disable-common-pin-patterns) | modified |
-| 9/27/2021 | [Enable common PIN patterns for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/enable-common-pin-patterns) | modified |
-| 9/27/2021 | [Include text with the email message sent when a PIN Is reset in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/include-text-in-email-sent-when-pin-is-reset) | modified |
-| 9/27/2021 | [PIN security procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures) | modified |
-| 9/27/2021 | [Reset a voice mail PIN in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/reset-a-voice-mail-pin) | modified |
-| 9/27/2021 | [Retrieve voice mail PIN information in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/retrieve-voice-mail-pin-information) | modified |
-| 9/27/2021 | [Set the minimum PIN length for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-minimum-pin-length) | modified |
-| 9/27/2021 | [Set the number of previous voice mail PINs to recycle in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-previous-pins-to-recycle) | modified |
-| 9/27/2021 | [Set the number of sign-in failures before a voice mail user Is locked out in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-lock-out) | modified |
-| 9/27/2021 | [Set the number of sign-in failures before a voice mail PIN is reset in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-pin-reset) | modified |
-| 9/27/2021 | [Set Outlook Voice Access PIN security in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security) | modified |
-| 9/27/2021 | [Set the PIN lifetime for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-lifetime) | modified |
-| 9/27/2021 | [Set Outlook Voice Access PIN policies in Exchange Online](/Exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-policies) | modified |
-| 9/27/2021 | [Allow Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway) | modified |
-| 9/27/2021 | [Allow Message Waiting Indicator procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-procedures) | modified |
-| 9/27/2021 | [Allow users in the same dial plan to receive faxes in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-in-the-same-dial-plan-to-receive-faxes) | modified |
-| 9/27/2021 | [Allowing users to make calls procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls-procedures) | modified |
-| 9/27/2021 | [Allow users to make calls in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls) | modified |
-| 9/27/2021 | [Allow users to see a voice mail transcript in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript) | modified |
-| 9/27/2021 | [Allow voice mail users to forward calls in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls) | modified |
-| 9/27/2021 | [Authorize calls for a group of users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users) | modified |
-| 9/27/2021 | [Authorize calls for auto attendant callers in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-auto-attendant-callers) | modified |
-| 9/27/2021 | [Authorize calls for users in a dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan) | modified |
-| 9/27/2021 | [Authorize calls using dialing rules in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules) | modified |
-| 9/27/2021 | [Call answering rules in the same mailbox policy in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules-in-the-same-mailbox-policy) | modified |
-| 9/27/2021 | [Call answering rules in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules) | modified |
-| 9/27/2021 | [Configure dial codes in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-dial-codes) | modified |
-| 9/27/2021 | [Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-input-failures) | modified |
-| 9/27/2021 | [Configure the number of sign-in failures before Outlook Voice Access users are disconnected in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-sign-in-failures) | modified |
-| 9/27/2021 | [Configure an Outlook Voice Access number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-outlook-voice-access-number) | modified |
-| 9/27/2021 | [Configure the limit on personal greetings for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-personal-greetings-limit) | modified |
-| 9/27/2021 | [Configure the primary way for Outlook Voice Access users to search in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-primary-search-method) | modified |
-| 9/27/2021 | [Configure Protected Voice Mail from authenticated callers in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-authenticated-callers) | modified |
-| 9/27/2021 | [Configure Protected Voice Mail from unauthenticated callers in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-unauthenticated-callers) | modified |
-| 9/27/2021 | [Configure the secondary way for Outlook Voice Access users to search in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-secondary-search-method) | modified |
-| 9/27/2021 | [Configure the group of users that Outlook Voice Access users can contact in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-the-group-of-users-that-outlook-voice-access-users-can-contact) | modified |
-| 9/27/2021 | [Configure Voice Mail Preview partner services for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-voice-mail-preview-partner-services) | modified |
-| 9/27/2021 | [Create a call answering rule in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-a-call-answering-rule) | modified |
-| 9/27/2021 | [Create dialing rules for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-dialing-rules) | modified |
-| 9/27/2021 | [Dial codes, number prefixes, and number formats in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/dial-codes-number-prefixes-number-formats) | modified |
-| 9/27/2021 | [Disable faxing for a group of users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-faxing-for-a-group-of-users) | modified |
-| 9/27/2021 | [Disable missed call notifications for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-missed-call-notifications) | modified |
-| 9/27/2021 | [Disable Message Waiting Indicator (MWI) for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users) | modified |
-| 9/27/2021 | [Disable outgoing calls on UM IP gateways in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways) | modified |
-| 9/27/2021 | [Disable selected features for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-selected-features) | modified |
-| 9/27/2021 | [Disable Voice Mail Preview for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-voice-mail-preview) | modified |
-| 9/27/2021 | [Enable a customized greeting for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-customized-greeting) | modified |
-| 9/27/2021 | [Enable a user to receive faxes in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-user-to-receive-faxes) | modified |
-| 9/27/2021 | [Enable an informational announcement for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-an-informational-announcement) | modified |
-| 9/27/2021 | [Enable faxing for a group of users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-faxing-for-a-group-of-users) | modified |
-| 9/27/2021 | [Enable missed call notifications for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-missed-call-notifications) | modified |
-| 9/27/2021 | [Enable Message Waiting Indicator (MWI) for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users) | modified |
-| 9/27/2021 | [Enable or disable a call answering rule for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-a-call-answering-rule-for-a-user) | modified |
-| 9/27/2021 | [Enable or disable automatic speech recognition for an Outlook Voice Access user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-automatic-speech-recognition) | modified |
-| 9/27/2021 | [Enable or disable multimedia playback of protected voice messages in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-multimedia-playback) | modified |
-| 9/27/2021 | [Enable or disable Outlook Voice Access for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-outlook-voice-access) | modified |
-| 9/27/2021 | [Enable or disable Play on Phone for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-play-on-phone) | modified |
-| 9/27/2021 | [Enable or disable sending voice messages from Outlook Voice Access in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-sending-voice-messages) | modified |
-| 9/27/2021 | [Enable or prevent transferring calls from Outlook Voice Access in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-prevent-transferring-calls) | modified |
-| 9/27/2021 | [Enable outgoing calls on UM IP gateways in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-outgoing-calls-on-um-ip-gateways) | modified |
-| 9/27/2021 | [Enable Voice Mail Preview for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-voice-mail-preview) | modified |
-| 9/27/2021 | [Fax advisor for Unified Messaging in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/fax-advisor-for-exchange-um) | modified |
-| 9/27/2021 | [Faxing procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/faxing-procedures) | modified |
-| 9/27/2021 | [Forwarding calls procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/forwarding-calls-procedures) | modified |
-| 9/27/2021 | [Include text with the email message sent when a fax message is received in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/include-text-with-the-email-sent-when-a-fax-message-is-received) | modified |
-| 9/27/2021 | [Message Waiting Indicator in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/mwi-in-exchange-online) | modified |
-| 9/27/2021 | [Navigating menus with Outlook Voice Access in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/navigating-menus-with-outlook-voice-access) | modified |
-| 9/27/2021 | [Outlook Voice Access commands in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/outlook-voice-access-commands) | modified |
-| 9/27/2021 | [Outlook Voice Access procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/outlook-voice-access-procedures) | modified |
-| 9/27/2021 | [Play on Phone in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/play-on-phone) | modified |
-| 9/27/2021 | [Prevent a user from receiving faxes in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes) | modified |
-| 9/27/2021 | [Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway) | modified |
-| 9/27/2021 | [Prevent users in the same dial plan from receiving faxes in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes) | modified |
-| 9/27/2021 | [Protect voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protect-voice-mail) | modified |
-| 9/27/2021 | [Protected Voice Mail procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) | modified |
-| 9/27/2021 | [Remove a call answering rule for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/remove-a-call-answering-rule-for-a-user) | modified |
-| 9/27/2021 | [Set mailbox features for an Outlook Voice Access user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-a-user) | modified |
-| 9/27/2021 | [Set mailbox features for Outlook Voice Access users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-users) | modified |
-| 9/27/2021 | [Set the maximum delivery delay for a Voice Mail Preview partner in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner) | modified |
-| 9/27/2021 | [Set the maximum message duration for a Voice Mail Preview partner in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-message-duration-for-a-voice-mail-preview-partner) | modified |
-| 9/27/2021 | [Set the partner fax server URI to allow faxing in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-partner-fax-server-uri-to-allow-faxing) | modified |
-| 9/27/2021 | [Set the Voice Mail Preview partner address in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-voice-mail-preview-partner-address) | modified |
-| 9/27/2021 | [Set the Voice Mail Preview partner ID in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-voice-mail-preview-partner-id) | modified |
-| 9/27/2021 | [Set up client voice mail features in Exchange](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-client-voice-mail-features) | modified |
-| 9/27/2021 | [Setting up incoming faxing in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing) | modified |
-| 9/27/2021 | [Setting up Outlook Voice Access in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access) | modified |
-| 9/27/2021 | [Specify the text to display for email clients that don't support Windows Rights Management in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management) | modified |
-| 9/27/2021 | [View and manage a call answering rule in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/view-and-manage-a-call-answering-rule) | modified |
-| 9/27/2021 | [Voice Mail Preview advisor in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor) | modified |
-| 9/27/2021 | [Voice Mail Preview procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-procedures) | modified |
-| 9/27/2021 | [Add an E.164 number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number) | modified |
-| 9/27/2021 | [Add an extension number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number) | modified |
-| 9/27/2021 | [Add a SIP address in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address) | modified |
-| 9/27/2021 | [Allow callers without a caller ID to leave a voice message in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/allow-callers-without-caller-id-to-leave-voice-message) | modified |
-| 9/27/2021 | [Assign a UM mailbox policy in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy) | modified |
-| 9/27/2021 | [Change an E.164 number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number) | modified |
-| 9/27/2021 | [Change an extension number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number) | modified |
-| 9/27/2021 | [Change a SIP address in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address) | modified |
-| 9/27/2021 | [Change the UM dial plan in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/change-um-dial-plan) | modified |
-| 9/27/2021 | [Create a UM mailbox policy in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy) | modified |
-| 9/27/2021 | [Delete a UM mailbox policy in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/delete-um-mailbox-policy) | modified |
-| 9/27/2021 | [Disable calls from users who aren't UM-enabled in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-calls-from-users-who-aren-t-um-enabled) | modified |
-| 9/27/2021 | [Disable voice mail for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-voice-mail) | modified |
-| 9/27/2021 | [Enable a user for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail) | modified |
-| 9/27/2021 | [Enable calls from users who aren't UM-enabled in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-calls-from-users-who-aren-t-um-enabled) | modified |
-| 9/27/2021 | [Include text with the email message sent when a voice message Is received in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voice-message-is-received) | modified |
-| 9/27/2021 | [Include text with the email message sent when a user Is enabled for voice mail in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voicemail-is-enabled) | modified |
-| 9/27/2021 | [Manage a UM mailbox policy in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy) | modified |
-| 9/27/2021 | [Manage voice mail settings for a user in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings) | modified |
-| 9/27/2021 | [Prevent callers without a caller ID from leaving a voice message in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/prevent-callers-without-caller-id-from-leaving-voice-message) | modified |
-| 9/27/2021 | [Remove an E.164 number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number) | modified |
-| 9/27/2021 | [Remove an extension number in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number) | modified |
-| 9/27/2021 | [Remove a SIP address in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address) | modified |
-| 9/27/2021 | [Set up voice mail for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail) | modified |
-| 9/27/2021 | [UM mailbox policies in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies) | modified |
-| 9/27/2021 | [UM mailbox policy procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures) | modified |
-| 9/27/2021 | [Voice mail-enabled user procedures in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures) | modified |
-| 9/27/2021 | [Voice mail for users in Exchange Online](/Exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users) | modified |
-| 9/27/2021 | [Configuration notes for supported session border controllers in Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | modified |
-| 9/27/2021 | [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs in Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) | modified |
-| 9/27/2021 | [Telephone system integration with UM in Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um) | modified |
-| 9/27/2021 | [Telephony advisor for Exchange Online](/Exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) | modified |
-| 9/27/2021 | [UM and voice mail terminology in Exchange Online](/Exchange/voice-mail-unified-messaging/um-and-voice-mail-terminology) | modified |
-| 9/27/2021 | [Voice mail in Exchange Online Unified Messaging](/Exchange/voice-mail-unified-messaging/voice-mail-unified-messaging) | modified |
-| 9/28/2021 | [Exchange Server build numbers and release dates](/Exchange/new-features/build-numbers-and-release-dates?view=exchserver-2016) | modified |
-| 9/28/2021 | [Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016](/Exchange/new-features/updates?view=exchserver-2016) | modified |
-| 9/28/2021 | [Active Directory schema changes in Exchange Server](/Exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016) | modified |
-| 9/28/2021 | [Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory](/Exchange/plan-and-deploy/prepare-ad-and-domains?view=exchserver-2016) | modified |
-| 9/28/2021 | [Exchange Server supportability matrix](/Exchange/plan-and-deploy/supportability-matrix?view=exchserver-2016) | modified |
-| 9/28/2021 | [Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016) | modified |
-| 9/28/2021 | [Manage on-premises mailbox moves in Exchange Server](/Exchange/architecture/mailbox-servers/manage-mailbox-moves?view=exchserver-2016) | modified |
-| 9/28/2021 | [Enable the MRS Proxy endpoint for remote moves](/Exchange/architecture/mailbox-servers/mrs-proxy-endpoint?view=exchserver-2016) | modified |
-| 9/28/2021 | [Mailbox moves in Exchange Server](/Exchange/recipients/mailbox-moves?view=exchserver-2016) | modified |
-| 9/28/2021 | [Configure S/MIME](/Exchange/security-and-compliance/smime-exo/configure-smime-exo) | modified |
-| 9/29/2021 | [Create a cloud-based archive in an Exchange hybrid deployment](/Exchange/hybrid-deployment/create-cloud-based-archive) | modified |
-| 9/29/2021 | [Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements](/Exchange/plan-and-deploy/prerequisites?view=exchserver-2016) | modified |
-| 9/29/2021 | [Run a per-mailbox litigation hold report](/Exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | modified |
-| 9/30/2021 | [Add or remove email addresses for a mailbox Exchange Admin Center](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 5.7.23 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-23-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 5.7.57 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-57-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 5.7.64 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-64-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-0-350-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 550 5.1.0 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-0-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 550 5.1.1 through 5.1.20 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-1-1-through-5-1-20-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 550 5.4.1 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-4-1-in-exchange-online) | modified |
-| 10/1/2021 | [Fix email delivery issues for error code 550 5.6.11 in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-550-5-6-11-in-exchange-online) | modified |
-| 10/1/2021 | [Fix 'sender's submission quota exceeded' errors in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-for-submission-quota-exceeded-in-exchange-online) | modified |
-| 10/1/2021 | [Email non-delivery reports in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) | modified |
-| 10/1/2021 | [Run a message trace and view the results in the Exchange admin center](/Exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) | modified |
-| 10/1/2021 | [Manage permissions for recipients in Exchange Online](/Exchange/recipients-in-exchange-online/manage-permissions-for-recipients) | modified |
-| 10/1/2021 | [Configure message delivery restrictions for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions) | modified |
-| 10/1/2021 | [Enable or disable MAPI for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi) | modified |
-| 10/1/2021 | [Configure MAPI over HTTP in Exchange Server](/Exchange/clients/mapi-over-http/configure-mapi-over-http?view=exchserver-2016) | modified |
-| 10/1/2021 | [Exchange content updates](/Exchange/exchange-updates?view=exchserver-2016) | modified |
-| 10/1/2021 | [Manage transport agents in Exchange Server](/Exchange/mail-flow/transport-agents/manage-transport-agents?view=exchserver-2016) | modified |
-| 10/1/2021 | [Configure message tracking](/Exchange/mail-flow/transport-logs/configure-message-tracking?view=exchserver-2016) | modified |
-| 10/1/2021 | [Configure pipeline tracing](/Exchange/mail-flow/transport-logs/configure-pipeline-tracing?view=exchserver-2016) | modified |
-| 10/1/2021 | [Active Directory schema changes in Exchange Server](/Exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016) | modified |
-| 10/1/2021 | [Delegate the installation of Exchange servers](/Exchange/plan-and-deploy/deploy-new-installations/delegate-installations?view=exchserver-2016) | modified |
-| 10/1/2021 | [Deploy new installations of Exchange](/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2016) | modified |
-| 10/1/2021 | [Install Exchange Edge Transport servers using the Setup wizard](/Exchange/plan-and-deploy/deploy-new-installations/install-edge-transport-role?view=exchserver-2016) | modified |
-| 10/1/2021 | [Install Exchange Mailbox servers using the Setup wizard](/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role?view=exchserver-2016) | modified |
-| 10/1/2021 | [Upgrade Exchange to the latest Cumulative Update](/Exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2016) | modified |
-| 10/1/2021 | [Install Office Online Server in an Exchange organization](/Exchange/plan-and-deploy/install-office-online-server?view=exchserver-2016) | modified |
-| 10/1/2021 | [Change the offline address book generation schedule in Exchange](/Exchange/plan-and-deploy/post-installation-tasks/change-oab-generation-schedule?view=exchserver-2016) | modified |
-| 10/1/2021 | [Configure instant messaging integration with Outlook on the web in Exchange](/Exchange/plan-and-deploy/post-installation-tasks/configure-im-integration-with-owa?view=exchserver-2016) | modified |
-| 10/1/2021 | [Configure mail flow and client access on Exchange servers](/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016) | modified |
-| 10/1/2021 | [Enter your Exchange Server product key](/Exchange/plan-and-deploy/post-installation-tasks/enter-product-key?view=exchserver-2016) | modified |
-| 10/1/2021 | [Install the Exchange management tools](/Exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2016) | modified |
-| 10/1/2021 | [Exchange Server post-installation tasks](/Exchange/plan-and-deploy/post-installation-tasks/post-installation-tasks?view=exchserver-2016) | modified |
-| 10/1/2021 | [Verify Exchange Server installations](/Exchange/plan-and-deploy/post-installation-tasks/verify-installation?view=exchserver-2016) | modified |
-| 10/1/2021 | [S/MIME settings in Outlook on the web](/Exchange/policy-and-compliance/smime/smime-settings-for-owa?view=exchserver-2016) | modified |
-| 10/1/2021 | [Release notes for Exchange Server](/Exchange/release-notes?view=exchserver-2016) | modified |
+| 11/24/2021 | [Interoperability, connectivity, and compatibility](/Exchange/security-and-compliance/interoperability-connectivity-and-compatiblity) | added |
+
+
+## Week of November 15, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/16/2021 | [Hybrid deployment prerequisites](/Exchange/hybrid-deployment-prerequisites) | modified |
+| 11/17/2021 | [MailTips in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips) | modified |
+| 11/17/2021 | [Set up connectors to route mail between Microsoft 365 or Office 365 and your own email servers](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) | modified |
+| 11/17/2021 | [Perform a Google Workspace migration to Microsoft 365 or Office 365](/Exchange/mailbox-migration/perform-g-suite-migration) | modified |
+| 11/17/2021 | [Custom attributes](/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2016) | modified |
+| 11/17/2021 | [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) | modified |
+| 11/19/2021 | [Configure custom MailTips for recipients in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/mailtips/configure-custom-mailtips) | modified |
+| 11/19/2021 | [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365 or Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate) | modified |

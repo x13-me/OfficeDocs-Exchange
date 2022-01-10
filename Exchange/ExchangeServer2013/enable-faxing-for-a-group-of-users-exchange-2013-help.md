@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable faxing for a group of users in Exchange Server
 ms.assetid: b8d9f54d-ff06-4942-83e1-fc6c4ad02178
 f1.keywords:
 - NOCSH

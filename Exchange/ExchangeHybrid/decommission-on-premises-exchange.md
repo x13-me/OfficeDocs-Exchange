@@ -166,7 +166,10 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
 ### Scenario two
 
- **Issue**: My organization has been running in a hybrid configuration for about a year now and has finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes. (This scenario would apply to any customer that is planning on keeping directory synchronization).
+ **Issue**: My organization has been running in a hybrid configuration for about a year now and has finally moved my last mailbox to the cloud. I plan to keep Active Directory Federation Services (AD FS) for user authentication of my Exchange Online mailboxes.
+ 
+> [!IMPORTANT]
+> This scenario applies to any customer who is planning to keep directory synchronization.
 
  **Solution**: Since the customer is planning on keeping AD FS, they will also have to keep directory synchronization since it is a prerequisite. Because of that, they cannot fully remove the Exchange servers from the on-premises environment. However, they can decommission most of the Exchange servers, but leave a couple of servers behind for user management. Keep in mind that the servers that are left running can be run on virtual machines since the workload is almost completely shifted to Exchange Online.
 

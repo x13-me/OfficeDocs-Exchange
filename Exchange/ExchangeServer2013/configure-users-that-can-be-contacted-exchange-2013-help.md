@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the group of users that can be contacted in Exchange Server
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 f1.keywords:
 - NOCSH

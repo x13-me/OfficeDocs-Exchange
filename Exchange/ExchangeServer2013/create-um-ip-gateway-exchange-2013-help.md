@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a Unified Messaging IP gateway in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage'
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7

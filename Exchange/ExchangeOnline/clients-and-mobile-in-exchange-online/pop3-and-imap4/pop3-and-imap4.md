@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: An overview of POP3 and IMAP4 in Exchange Online, and the differences between them.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
 ms.reviewer: 

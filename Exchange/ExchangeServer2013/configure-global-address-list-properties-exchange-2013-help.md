@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+description: How to configure global address list properties in Exchange Server
+ms.topic: article
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 f1.keywords:
 - NOCSH

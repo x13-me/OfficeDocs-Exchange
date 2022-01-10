@@ -4,6 +4,8 @@ TOCTitle: Change the assignment policy on a mailbox
 ms:assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
+ms.topic: article
+description: You can change the management role assignment policy assigned to a mailbox.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

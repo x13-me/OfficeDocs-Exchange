@@ -4,6 +4,7 @@ TOCTitle: Anti-spam agent logging
 ms:assetid: dbd478d2-7993-4931-80db-5b2f7d4269bd
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124795(v=EXCHG.150)
 ms:contentKeyID: 49287005
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -60,8 +61,8 @@ The following table lists the SMTP events in order of occurrence and the agents 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -135,8 +136,8 @@ The agent log stores each agent transaction on a single line in the log. The inf
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

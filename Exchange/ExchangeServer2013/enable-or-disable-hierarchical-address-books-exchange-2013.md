@@ -7,6 +7,8 @@ ms:contentKeyID:
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or disable hierarchical address books in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

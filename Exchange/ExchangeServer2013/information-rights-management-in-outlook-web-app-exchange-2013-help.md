@@ -7,6 +7,8 @@ ms:contentKeyID: 49319918
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Information Rights Management for Outlook Web App users in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

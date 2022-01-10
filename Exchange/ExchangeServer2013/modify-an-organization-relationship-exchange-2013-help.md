@@ -5,6 +5,8 @@ ms:assetid: 3713ef83-f01a-41bb-b127-62ca242dd7a4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673055(v=EXCHG.150)
 ms:contentKeyID: 49289228
 ms.reviewer: 
+ms.topic: article
+description: How to modify an organization relationship in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

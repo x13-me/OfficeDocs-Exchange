@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150572(v=EXCHG.150)
 ms:contentKeyID: 47560112
 ms.reviewer: 
 manager: serdars
+ms.topic: article
 ms.author: serdars
 author: msdmaguire
+description: Clients and client access methods that can be used to access an Exchange 2013 mailbox
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -27,8 +29,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Default folders that support Retention Policy Tags in Exchange Server
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 f1.keywords:
 - NOCSH

@@ -4,7 +4,9 @@ TOCTitle: MyVoiceMail role
 ms:assetid: 5c7310e9-742c-4bdf-90b6-0a0d17c3bda1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876890(v=EXCHG.150)
 ms:contentKeyID: 49289264
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: About the MyVoiceMail role in Exchange 2013 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
