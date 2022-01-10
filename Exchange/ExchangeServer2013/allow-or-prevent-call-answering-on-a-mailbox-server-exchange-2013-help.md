@@ -7,6 +7,7 @@ ms:contentKeyID: 49315413
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to allow or prevent call answering on a Mailbox server in Exchange Server
 ms.topic: article
 author: msdmaguire
 f1.keywords:
