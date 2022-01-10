@@ -95,7 +95,7 @@ The following table describes the filter information that can appear in an anti-
 <p>The PCL value can range from 1 through 8. A PCL rating from 1 through 3 returns a status of <code>Neutral</code>. This means that the message's content isn't likely to be phishing. A PCL rating from 4 through 8 returns a status of <code>Suspicious</code>. This means that the message is likely to be phishing.</p>
 <p>The values are used to determine what action Outlook takes on messages. Outlook uses the PCL stamp to block the content of suspicious messages.</p>
 <p>The PCL stamp is displayed as an X-header in the message envelope as follows:</p>
-<code>X-MS-Exchange-Organization-PCL:\<status\></code>
+<code>X-MS-Exchange-Organization-PCL:<status\></code>
 </td>
 </tr>
 <tr class="even">

@@ -5,6 +5,7 @@ ms:assetid: 534bbd32-a0db-4d50-9579-4933b156d7b3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657447(v=EXCHG.150)
 ms:contentKeyID: 49289253
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire

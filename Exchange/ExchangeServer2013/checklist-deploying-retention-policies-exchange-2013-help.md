@@ -5,6 +5,7 @@ ms:assetid: 59e299fd-b6a8-48f5-88ae-dc20dbe32e90
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364743(v=EXCHG.150)
 ms:contentKeyID: 49318577
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,9 +28,9 @@ Use this checklist to deploy retention policies in your Microsoft Exchange Serv
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
