@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657447(v=EXCHG.150)
 ms:contentKeyID: 49289253
 ms.reviewer: 
 ms.topic: article
+description: How to create a receive connector to receive email from the internet in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -14,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Create a Receive connector to receive email from the Internet
+# Create a Receive connector to receive email from the internet
 
 _**Applies to:** Exchange Server 2013_
 
