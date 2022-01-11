@@ -29,7 +29,7 @@ Client Access Rules help you control access to your Exchange Online organization
 - Block access to an offline address book (OAB) for specific users based on their usernames.
 - Prevent client access using federated authentication.
 - Prevent client access using Exchange Online PowerShell.
-- Block access to the Exchange admin center (EAC) for users in a specific country or region.
+- Block access to the classic Exchange admin center (EAC) for users in a specific country or region.
 
 For Client Access Rule procedures, see [Procedures for Client Access Rules in Exchange Online](procedures-for-client-access-rules.md).
 
