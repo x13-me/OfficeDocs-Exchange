@@ -257,12 +257,26 @@ In Exchange Online PowerShell, do the following steps:
 4. After the public folders are removed, run the following commands to remove all public folder mailboxes:
 
    ```PowerShell
-   $hierarchyMailboxGuid = $(Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid
-   Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -ne $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
-   Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -eq $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
-   Get-Mailbox -PublicFolder -SoftDeletedMailbox | % {Remove-Mailbox -PublicFolder $_.PrimarySmtpAddress -PermanentlyDelete:$true -force}
+$hierarchyMailboxGuid = $(Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid
+Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -ne $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
+Get-Mailbox -PublicFolder | Where-Object {$_.ExchangeGuid -eq $hierarchyMailboxGuid} | Remove-Mailbox -PublicFolder -Confirm:$false -Force
+Get-Mailbox -PublicFolder -SoftDeletedMailbox | % {Remove-Mailbox -PublicFolder $_.PrimarySmtpAddress -PermanentlyDelete:$true -force -Confirm:$false}  
+$soft=Get-Mailbox -PublicFolder -SoftDeletedMailbox; foreach ($mbx in $soft){if ($mbx.Name -like "*CNF:*" -or $mbx.identity -like "*CNF:*") {Remove-Mailbox -PublicFolder $mbx.ExchangeGUID.GUID -RemoveCNFPublicFolderMailboxPermanently -Force -Confirm:$false}}
    ```
 
+Repeat the above command block for couple of times, at interval of 5-10 minutes to ensure the SoftDeletedMailboxes are cleared up and there are no CNF objects left behind.
+    
+> [!NOTE]
+> The above command block may return error like "The operation couldn't be performed because object <mailboxname> couldn't be found on", which can be safely ignored because of AD replication latency.
+    
+5. Run following command again to ensure there are no SoftDeleted or CNF mailboxes left behind.
+
+    ```PowerShell
+Get-Mailbox -PublicFolder -SoftDeletedMailbox
+    ```
+If you see list of soft deleted mailboxes, repeat the command block from step 4, else proceed to the next step
+    
+    
 ## Step 3: Generate the .csv files
 
 Use the previously downloaded scripts to generate the .csv files that will be used in the migration.
@@ -669,3 +683,12 @@ If you still want to migrate your public folders by using PST files, follow thes
 > The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
 >
 > Option two is to [create a public folder mailbox in Exchange Server](create-public-folder-mailboxes.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.
+
+    
+## Troubleshoot public folder migrations
+Select the following button for common issues during public folder migration:
+
+> [!div class="nextstepaction"]
+> [Run Tests: Troubleshoot public folder migration](https://aka.ms/PFMGTE)
+
+A flyout page opens in the Microsoft 365 admin center, login with your tenant admin account and select appropriate option
