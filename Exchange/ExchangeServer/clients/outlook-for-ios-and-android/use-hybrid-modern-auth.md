@@ -157,14 +157,14 @@ When an organization decides to standardize how users access Exchange data, usin
 
 To block other mobile device clients (such as the native mail client included in the mobile operating system) from connecting to your on-premises environment (which authenticate via basic authentication against on-premises Active Directory):
 
-1. You can use the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following command in the Exchange Management Shell:
+You can use the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following command in the Exchange Management Shell:
 
-   ```powershell
-   Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
-   ```
+```powershell
+Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+```
 
-   > [!NOTE]
-   > When implementing the above on-premises cmdlet, be aware that it may impact users connecting to Exchange on-premises with their mobile devices.
+> [!NOTE]
+> When implementing the above on-premises cmdlet, be aware that it may impact users connecting to Exchange on-premises with their mobile devices.
 
 ### Create an Intune app protection policy
 
