@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996598(v=EXCHG.150)
 ms:contentKeyID: 50382995
 ms.reviewer: 
 ms.topic: article
+description: How to enable or disable email for a mail user in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
