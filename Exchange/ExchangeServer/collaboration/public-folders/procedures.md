@@ -8,6 +8,7 @@ ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 ms.reviewer:
 title: Public folder procedures
 ms.collection: exchange-server
+description: How to set up and manage your public folder infrastructure in Microsoft Exchange
 f1.keywords:
 - NOCSH
 audience: ITPro
@@ -16,7 +17,7 @@ manager: serdars
 
 ---
 
-# Public folder procedures
+# Public folder procedures in Microsoft Exchange
 
 Use one or more of the procedures listed below to get your public folder infrastructure up and running, and to perform other necessary tasks for managing public folders.
 

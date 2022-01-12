@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Specify the administrators and users who can install and manage add-ins for Outlook in Exchange 2013
+# Specify administrators/users who can manage Outlook add-in in Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 

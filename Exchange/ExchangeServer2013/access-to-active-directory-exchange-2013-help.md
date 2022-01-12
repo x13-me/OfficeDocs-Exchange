@@ -8,6 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.topic: article
 ms.author: serdars
+description: About access to Active Directory in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -5,6 +5,7 @@ ms:assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adiniterrorrule(v=EXCHG.150)
 ms:contentKeyID: 46629118
 ms.reviewer: 
+ms.topic: article 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

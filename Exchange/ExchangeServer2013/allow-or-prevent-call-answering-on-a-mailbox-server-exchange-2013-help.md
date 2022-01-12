@@ -9,6 +9,7 @@ manager: serdars
 ms.author: serdars
 ms.topic: article
 author: msdmaguire
+description: How to allow or prevent call answering on a Mailbox server in Microsoft Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

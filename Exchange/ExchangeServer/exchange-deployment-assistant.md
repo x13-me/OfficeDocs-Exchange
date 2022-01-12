@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-description: "Summary:Customized step-by-step instructions to deploy Exchange Server."
+description: "Customized step-by-step instructions to deploy Exchange Server."
 ---
 
 # Exchange Deployment Assistant

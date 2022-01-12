@@ -6,6 +6,7 @@ author: joannehendrickson
 ms.author: jhendr
 ms.reviewer: 
 title: Diagnostic Data collected for Exchange Server
+description: About diagnostic data collected for Microsoft Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
