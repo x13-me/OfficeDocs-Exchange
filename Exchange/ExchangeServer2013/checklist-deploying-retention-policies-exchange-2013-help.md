@@ -5,6 +5,7 @@ ms:assetid: 59e299fd-b6a8-48f5-88ae-dc20dbe32e90
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364743(v=EXCHG.150)
 ms:contentKeyID: 49318577
 ms.reviewer: 
+description:  Checklist for deploying retention policies in Microsoft Exchange
 ms.topic: article
 manager: serdars
 ms.author: serdars

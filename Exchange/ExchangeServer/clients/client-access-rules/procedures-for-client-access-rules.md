@@ -30,7 +30,6 @@ Client Access Rules allow or block Exchange admin center (EAC) or remote PowerSh
 
 - Client Access Rules support IPv4 and IPv6 addresses. For more information about IPv6 addresses and syntax, see this Exchange 2013 topic: [IPv6 address basics](/exchange/ipv6-support-in-exchange-2013-exchange-2013-help#ipv6-address-basics).
 
-
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md).
 
 > [!TIP]

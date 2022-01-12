@@ -9,6 +9,7 @@ ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: About accepted domains in Microsoft Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

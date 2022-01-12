@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.topic: article
 ms.reviewer:
+description: How to allow users to see a voice mail transcript in Exchange Server
 ms.assetid: c5192e05-905c-440f-beec-1f697edc15b3
 f1.keywords:
 - NOCSH

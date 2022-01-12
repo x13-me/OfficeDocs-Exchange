@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876857(v=EXCHG.150)
 ms:contentKeyID: 49289191
 ms.reviewer: 
 ms.topic: article
+description: About the Cmdlet Extension Agents role in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire

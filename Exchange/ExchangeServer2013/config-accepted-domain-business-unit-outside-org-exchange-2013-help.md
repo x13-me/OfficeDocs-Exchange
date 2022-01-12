@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657737(v=EXCHG.150)
 ms:contentKeyID: 49300759
 ms.reviewer:
 ms.topic: article 
+description: How to configure an accepted domain for a business unit with mailboxes outside your Exchange organization
 manager: serdars
 ms.author: serdars
 author: msdmaguire
