@@ -100,7 +100,7 @@ When you delete a mailbox, Exchange Online retains the mailbox and all its conte
 > [!NOTE]
 > This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
 
-To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in the Microsoft 365 admin center. To launch the diagnostics, select button below.
+To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in the Microsoft 365 admin center. To launch the diagnostics, select the following button:
 
 >[!div class="nextstepaction"]
 >[Run Tests: Deleted Mailbox](https://aka.ms/PillarDeletedMailBox)
