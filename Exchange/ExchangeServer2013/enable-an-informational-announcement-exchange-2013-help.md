@@ -3,6 +3,7 @@ title: 'Enable an informational announcement for Outlook Voice Access users: Exc
 TOCTitle: Enable an informational announcement for Outlook Voice Access users
 ms.author: serdars
 author: msdmaguire
+description: How to enable an informational announcement for Outlook Voice Access users in Microsoft Exchange Server
 manager: serdars
 ms.reviewer:
 ms.topic: article
