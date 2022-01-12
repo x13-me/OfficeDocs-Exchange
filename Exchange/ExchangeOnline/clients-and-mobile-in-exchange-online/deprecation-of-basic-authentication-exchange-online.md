@@ -156,6 +156,11 @@ Early in 2022, we plan on updating the Microsoft Admin Center to make it easier 
 
 The best place to get the most up-to-date picture of Basic authentication usage by tenants is by using the Azure AD Sign-In report. To learn more, see: [New tools to block legacy authentication in your organization - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302). 
 
+Exporting logs for analysis requires a premium license for your Azure AD tenant. If you have a premium license, you can use the following methods to export logs:
+
+- **Azure Event Hubs, Azure Storage, or Azure Monitor (best methods)**: All of these export pathways are capable of handling the load from even large customers with hundreds of thousands of users. For more information, see [Stream Azure Active Directory logs to Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics).
+- **Graph APIs**: We recommend that you use MS Graph paging logic to ensure you can pull in all of the logs. For more information, see [Access Azure AD logs with the Microsoft Graph API](azure/active-directory/reports-monitoring/quickstart-access-log-with-graph-api).
+- **Direct download from web browser**: For large customers, the amount of data can cause browser timeouts. 
 
 ## Client options  
 
