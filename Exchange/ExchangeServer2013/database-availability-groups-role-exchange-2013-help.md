@@ -7,6 +7,7 @@ ms:contentKeyID: 49289157
 ms.reviewer: 
 ms.topic: article
 manager: serdars
+description: About the Database Availability Groups management role in Microsoft Exchange
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
