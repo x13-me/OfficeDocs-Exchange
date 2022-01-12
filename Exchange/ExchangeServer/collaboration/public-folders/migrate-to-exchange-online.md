@@ -5,7 +5,6 @@ ms.topic: article
 manager: serdars
 author: msdmaguire
 ms.prod: exchange-server-it-pro
-description: Using batch migration to migrate Exchange Server public folders to Exchange Online
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
