@@ -8,7 +8,7 @@ ms.reviewer:
 manager: serdars
 ms.topic: article
 ms.author: serdars
-description: Exchange 2013 needs access to Active Directory.
+description: About access to Active Directory for Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH
