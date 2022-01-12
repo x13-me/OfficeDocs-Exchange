@@ -65,7 +65,7 @@ Disable-MailUser -Identity "Yan Li"
 
 For detailed syntax and parameter information, see [Disable-MailUser](/powershell/module/exchange/Disable-MailUser).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully disabled email for a mail user, do one of the following:
 
@@ -157,7 +157,7 @@ When you're mail-enabling users in bulk, you first export the list of users that
 
     The command results display information about the new mail-enabled users.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully mail-enabled Active Directory users, do one of the following:
 
