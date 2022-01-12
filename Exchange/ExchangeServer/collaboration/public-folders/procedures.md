@@ -8,7 +8,6 @@ ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 ms.reviewer:
 title: Public folder procedures
 ms.collection: exchange-server
-description: How to set up and manage your public folder infrastructure in Microsoft Exchange
 f1.keywords:
 - NOCSH
 audience: ITPro
