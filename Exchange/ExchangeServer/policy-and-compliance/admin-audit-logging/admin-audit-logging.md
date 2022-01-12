@@ -8,7 +8,6 @@ ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms.reviewer:
 title: Administrator audit logging in Exchange Server
 ms.collection: exchange-server
-description: How to use administrator audit logging in Exchange Server
 f1.keywords:
 - NOCSH
 audience: ITPro
