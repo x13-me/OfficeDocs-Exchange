@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb266959(v=EXCHG.150)
 ms:contentKeyID: 61200277
 ms.reviewer: 
 ms.topic: article
+description: About Edge Subscription credentials in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
