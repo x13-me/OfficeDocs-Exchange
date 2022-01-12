@@ -158,7 +158,7 @@ The best place to get the most up-to-date picture of Basic authentication usage 
 
 Exporting logs for analysis requires a premium license for your Azure AD tenant. If you have a premium license, you can use the following methods to export logs:
 
-- **Azure Event Hubs, Azure Storage, or Azure Monitor (best method)**: All of these export pathways are capable of handling the load from even very large customers with hundreds of thousands of users. For more information, see [Stream Azure Active Directory logs to Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics).
+- **Azure Event Hubs, Azure Storage, or Azure Monitor (best methods)**: All of these export pathways are capable of handling the load from even large customers with hundreds of thousands of users. For more information, see [Stream Azure Active Directory logs to Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics).
 - **Graph APIs**: We recommend that you use MS Graph paging logic to ensure you can pull in all of the logs. For more information, see [Access Azure AD logs with the Microsoft Graph API](azure/active-directory/reports-monitoring/quickstart-access-log-with-graph-api).
 - **Direct download from web browser**: For large customers, the amount of data can cause browser timeouts. 
 
