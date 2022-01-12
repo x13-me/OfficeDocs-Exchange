@@ -21,10 +21,6 @@ Looking for help with migrating your Exchange organization to Microsoft 365, Off
 
 <br>
 
-<html>
-<head>
-</head>
-<body>
 <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
