@@ -4,6 +4,7 @@ TOCTitle: Create an offline address book virtual directory
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to create an offline address book virtual directory in Microsfot Exchange
 ms.reviewer:
 ms.topic: article
 ms.assetid: 2c70e21f-2b12-414a-9e8c-65634a767c72
