@@ -4,7 +4,6 @@ description: 'Summary: Learn how to view, create, modify, delete, and test Clien
 ms.topic: article
 author: msdmaguire
 ms.author: serdars
-description: About using Client Access Rules in Exchange
 monikerRange: exchserver-2019
 title: Procedures for Client Access Rules in Exchange 2019
 ms.collection: exchange-server
