@@ -2,6 +2,7 @@
 title: 'DTMF interface: Exchange 2013 Help'
 TOCTitle: DTMF interface
 ms.author: serdars
+description: About the DTMF interface in Microsoft Exchange Server
 author: msdmaguire
 manager: serdars
 ms.reviewer:
