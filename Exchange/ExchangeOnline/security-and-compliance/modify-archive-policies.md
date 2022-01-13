@@ -42,9 +42,9 @@ For additional management tasks related to archives, see [Enable archive mailbox
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to modify the default archive policy
+## Use the classic EAC to modify the default archive policy
 
-1. Navigate to **Compliance management** \> **Retention tags** and then.
+1. Navigate to **Compliance management** \> **Retention tags**.
 
 2. In the list view, select the tag **Default 2 year move to archive** and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.gif).
 
