@@ -369,7 +369,7 @@ The public folder mailbox GUID mentioned in the previous command must be obtaine
    ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
    $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
-   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart -NotificationEmails <email addresses for migration notifications>
+   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -NotificationEmails <email addresses for migration notifications>
    ```
 
    Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
@@ -455,8 +455,7 @@ You need to check the following items before you can complete your public folder
    .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
    ```
 
-3. If your environment has multiple active directory domains, ensure the steps in the following article are followed before initiating completing.
-https://docs.microsoft.com/exchange/troubleshoot/public-folders/migrationbatch-fails-no-public-folder-mailboxes
+3. If your environment has multiple active directory domains, ensure the steps in ["No active public folder mailboxes were found" error and migration batch fails at Complete-MigrationBatch command](/exchange/troubleshoot/public-folders/migrationbatch-fails-no-public-folder-mailboxes) are followed before initiating completing.
 
 4. To complete the public folder migration, run the following command in Exchange Online PowerShell:
 

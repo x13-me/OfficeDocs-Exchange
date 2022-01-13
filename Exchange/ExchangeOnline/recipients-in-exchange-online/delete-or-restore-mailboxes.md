@@ -97,10 +97,13 @@ When you delete a mailbox, Exchange Online retains the mailbox and all its conte
 
 ### To help understand the current status of a deleted mailbox
 
-To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in the Microsoft 365 admin center. To launch the diagnostics, select **Diag: Deleted Mailbox**. 
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in the Microsoft 365 admin center. To launch the diagnostics, select the following button:
 
 >[!div class="nextstepaction"]
->[Diag: Deleted Mailbox](https://aka.ms/PillarDeletedMailBox)
+>[Run Tests: Deleted Mailbox](https://aka.ms/PillarDeletedMailBox)
 
 > [!NOTE]
 > We strongly recommend restoring the mailbox from the same source (Azure AD or Exchange Online) from where the user or mailbox was deleted. Failing to do so will result in a failed restore operation.
