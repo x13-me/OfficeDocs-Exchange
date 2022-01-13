@@ -369,7 +369,7 @@ The public folder mailbox GUID mentioned in the previous command must be obtaine
    ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
    $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
-   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -AutoStart -NotificationEmails <email addresses for migration notifications>
+   New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -SourcePfPrimaryMailboxGuid <guid you noted from previous step> -NotificationEmails <email addresses for migration notifications>
    ```
 
    Where `folder_mapping.csv` is the map file that was generated in *Step 3: Generate the .csv files* and `HierarchyMailboxGUID` is the output you noted in the previous step. Be sure to provide the full file path to `folder_mapping.csv`. If the map file was moved for any reason, be sure to use the new location.
