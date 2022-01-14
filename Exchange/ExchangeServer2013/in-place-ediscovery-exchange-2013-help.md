@@ -4,6 +4,8 @@ TOCTitle: In-Place eDiscovery
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Using In-Place eDiscovery for to search for content within mailboxes in Microsoft Exchange
 ms.reviewer:
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 f1.keywords:
