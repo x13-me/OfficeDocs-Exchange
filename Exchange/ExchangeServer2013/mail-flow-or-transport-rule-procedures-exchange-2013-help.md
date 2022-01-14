@@ -25,7 +25,7 @@ You can begin using transport rules by using the following procedures. To learn 
 
 [Use transport rules to route email based on a list of words, phrases, or patterns](../ExchangeOnline/security-and-compliance/mail-flow-rules/use-rules-to-route-email.md): Information to help you comply with your organization's email policies.
 
-[Register Filter Pack IFilters with Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md): Information to help you register additional file types for attachments so that transport rules that apply to attachments can scan these file types.
+[Register Filter Pack IFilters with Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md): Information to help you register more file types for attachments so that transport rules that apply to attachments can scan these file types.
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md): Information to help you create, view, modify, enable, disable, or remove a transport rule, and information about importing and exporting transport rule collections.
 
