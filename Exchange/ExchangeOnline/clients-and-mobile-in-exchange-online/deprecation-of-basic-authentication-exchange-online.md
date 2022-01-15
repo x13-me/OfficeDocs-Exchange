@@ -69,7 +69,7 @@ We recommend using [Outlook for iOS and Android](https://products.office.com/out
 
 There are other mobile device email apps that support Modern authentication. The built-in email apps for all popular platforms typically support Modern authentication, so sometimes the solution is to verify that your device is running the latest version of the app. If the email app is current, but is still using Basic authentication, you might need to remove the account from the device and then add it back. 
 
-If you're using [Microsoft Intune](mem/intune/), you might be able to change the authentication type using the email profile you push or deploy to your devices. If you are using iOS devices (iPhones and iPads) you should take a look at [Add e-mail settings for iOS and iPadOS devices in Microsoft Intune](/mem/intune/configuration/email-settings-ios)
+If you're using [Microsoft Intune](/mem/intune/), you might be able to change the authentication type using the email profile you push or deploy to your devices. If you are using iOS devices (iPhones and iPads) you should take a look at [Add e-mail settings for iOS and iPadOS devices in Microsoft Intune](/mem/intune/configuration/email-settings-ios)
 
 ### Exchange Online PowerShell 
 
