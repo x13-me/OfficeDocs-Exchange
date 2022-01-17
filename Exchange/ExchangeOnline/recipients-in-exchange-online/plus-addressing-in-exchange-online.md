@@ -30,7 +30,7 @@ If your organization's email is routed through Exchange Online to your on-premis
 
 ## Use the new Exchange admin center to enable plus addressing
 
-1. In the new [EAC](https://admin.exchange.microsoft.com), go to **Settings** \> **Mail flow**.
+1. In the new [Exchange admin center](https://admin.exchange.microsoft.com), go to **Settings** \> **Mail flow**.
 
 2. Select **Turn on plus addressing for your organization** and then click **Save**.
 
