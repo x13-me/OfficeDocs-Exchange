@@ -3,6 +3,7 @@ ms.localizationpriority: medium
 ms.author: serdars
 ms.topic: article
 author: msdmaguire
+manager: serdars
 ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker
@@ -56,12 +57,12 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - We recommend that you don't use Outlook's PST export feature to migrate public folders to Microsoft 365, Office 365, or Exchange Online. Public folder mailbox growth in Exchange Online is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders, and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that instead you use the cmdlet-based instructions in this article to migrate your public folders. If you still decide to migrate public folders using PST export, see [Migrate Public Folders to Office 365 by using Outlook PST export](#migrate-public-folders-to-microsoft-365-or-office-365-by-using-outlook-pst-export)  later in this article.
 
-- Please verify if the DefaultPublicFolderAgeLimit is configured on the organization level (Get-OrganizationConfig | fl DefaultPublicFolderAgeLimit) or if you have any AgeLimit (Get-PublicFolder <FolderPath> | fl AgeLimit) configured for the individual Public Folders, so that automatic deletions of the content to be prevented.
+- Please verify if the DefaultPublicFolderAgeLimit is configured on the organization level (`Get-OrganizationConfig | Format-List DefaultPublicFolderAgeLimit`) or if you have any AgeLimit (`Get-PublicFolder <FolderPath> | Format-List AgeLimit`) configured for the individual Public Folders, so that automatic deletions of the content to be prevented.
 
 - Before you begin, please read this article in its entirety. For some steps there is downtime required. During this downtime, public folders will not be accessible by anyone. Please also review the list of [known issues](#known-issues). Also, read [best practices for public folder migration](https://aka.ms/pfmb) to plan your migration.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver), [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange), or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver) or [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange).
 
 ## Step 1: Download the migration scripts
 
