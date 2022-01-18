@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: If your organization is involved in a legal action, you may have to take steps to preserve relevant data.
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 f1.keywords:
 - NOCSH

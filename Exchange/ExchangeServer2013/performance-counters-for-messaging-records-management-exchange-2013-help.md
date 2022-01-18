@@ -4,6 +4,8 @@ TOCTitle: Performance counters for messaging records management
 ms:assetid: b59def6f-4249-4e0c-8057-8ae6eb7c5676
 ms:mtpsurl: https://technet.microsoft.com/library/Bb310790(v=EXCHG.150)
 ms:contentKeyID: 50873808
+ms.topic: article
+description: Performance counters for messaging records management.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -29,9 +31,9 @@ The following table describes performance counters for MRM.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
