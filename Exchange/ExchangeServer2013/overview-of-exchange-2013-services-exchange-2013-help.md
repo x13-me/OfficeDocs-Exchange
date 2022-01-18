@@ -29,15 +29,15 @@ The sections in this topic describe the various services that are installed by E
 
 The following table describes the Exchange services that are installed on Mailbox servers.
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -282,15 +282,15 @@ The following table describes the Exchange services that are installed on Mailbo
 
 The following table describes the Exchange services that are installed on Client Access servers.
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -396,15 +396,15 @@ The following table describes the Exchange services that are installed on Client
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
