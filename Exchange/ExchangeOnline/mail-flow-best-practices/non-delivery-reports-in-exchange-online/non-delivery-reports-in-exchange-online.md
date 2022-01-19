@@ -24,6 +24,9 @@ When there's a problem delivering an email message that you sent, Microsoft 365 
 
 ## Run non-delivery report diagnostics
 
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
 To learn more about the description of the non-delivery report (NDR), possible cause, and solution by running the following NDR diagnostic, you can run an automated diagnostic. Make sure you get the NDR code or status code from the undeliverable/non-delivery report. 
 
 To run the diagnostic check, select the following button: 

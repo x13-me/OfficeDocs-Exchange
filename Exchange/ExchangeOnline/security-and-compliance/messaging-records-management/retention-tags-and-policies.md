@@ -195,6 +195,9 @@ For details about how to place a mailbox on retention hold, see [Place a mailbox
 
 ## Run diagnostics to check retention policy settings
 
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
 You can run an automated diagnostic check on a user's mailbox to check and validate the retention policy settings configured for the user.
 
 To run the diagnostic check, click the button below. 
