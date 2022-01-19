@@ -84,7 +84,7 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
      ```
 ### Using the Microsoft 365 admin center
 
-In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Settings** \> **Org Settings** \> **Modern Authentication**. In the **Modern authentication flyout** that appears, click to enable or disable **Turn on modern authentication for Outlook 2013 for Windows and later (recommended)**.
+In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Settings** \> **Org Settings** \> **Modern Authentication**. In the **Modern authentication** flyout that appears, click to enable or disable **Turn on modern authentication for Outlook 2013 for Windows and later (recommended)**.
 
 
 ## See also
