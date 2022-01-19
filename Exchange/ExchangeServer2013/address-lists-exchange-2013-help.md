@@ -5,8 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.topic: article
-description: About address lists in Exchange 2013
 ms.reviewer:
+description: About address lists in Microsoft Exchange
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 f1.keywords:
 - NOCSH
