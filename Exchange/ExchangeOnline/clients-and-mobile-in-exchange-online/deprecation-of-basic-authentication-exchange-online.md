@@ -69,6 +69,8 @@ We recommend using [Outlook for iOS and Android](https://products.office.com/out
 
 There are other mobile device email apps that support Modern authentication. The built-in email apps for all popular platforms typically support Modern authentication, so sometimes the solution is to verify that your device is running the latest version of the app. If the email app is current, but is still using Basic authentication, you might need to remove the account from the device and then add it back. 
 
+If you're using [Microsoft Intune](/mem/intune/), you might be able to change the authentication type using the email profile you push or deploy to your devices. If you are using iOS devices (iPhones and iPads) you should take a look at [Add e-mail settings for iOS and iPadOS devices in Microsoft Intune](/mem/intune/configuration/email-settings-ios)
+
 ### Exchange Online PowerShell 
 
 Since the release of the Exchange Online V2 PowerShell module (abbreviated as the EXO V2 module) it’s been easy to manage your Exchange Online settings and protection settings from the command line using Modern authentication. The EXO V2 module uses Modern authentication and works with multifactor authentication (MFA) for connecting to all Exchange-related PowerShell environments in Microsoft 365: Exchange Online PowerShell, Security & Compliance PowerShell, and standalone Exchange Online Protection (EOP) PowerShell. 
@@ -156,6 +158,11 @@ Early in 2022, we plan on updating the Microsoft Admin Center to make it easier 
 
 The best place to get the most up-to-date picture of Basic authentication usage by tenants is by using the Azure AD Sign-In report. To learn more, see: [New tools to block legacy authentication in your organization - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302). 
 
+Exporting logs for analysis requires a premium license for your Azure AD tenant. If you have a premium license, you can use the following methods to export logs:
+
+- **Azure Event Hubs, Azure Storage, or Azure Monitor (best methods)**: All of these export pathways are capable of handling the load from even large customers with hundreds of thousands of users. For more information, see [Stream Azure Active Directory logs to Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics).
+- **Graph APIs**: We recommend that you use MS Graph paging logic to ensure you can pull in all of the logs. For more information, see [Access Azure AD logs with the Microsoft Graph API](/azure/active-directory/reports-monitoring/quickstart-access-log-with-graph-api).
+- **Direct download from web browser**: For large customers, the amount of data can cause browser timeouts. 
 
 ## Client options  
 
