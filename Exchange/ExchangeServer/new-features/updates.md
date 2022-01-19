@@ -24,7 +24,7 @@ Critical product updates are packages that address a Microsoft-released security
 
 ::: moniker range="exchserver-2019"
 
-To get the latest version of Exchange 2019, download and install [Cumulative Update 11 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=a7d608a2-d81b-46af-8753-8c3c2ea1f783). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
+To get the latest version of Exchange 2019, download and install [Cumulative Update 11 for Exchange Server 2019](https://support.microsoft.com/en-gb/topic/cumulative-update-11-for-exchange-server-2019-kb5005334-93fc6a41-faa4-424e-9dcb-27081360872b). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
 
