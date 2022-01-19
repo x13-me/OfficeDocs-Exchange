@@ -5,9 +5,11 @@ ms:assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998636(v=EXCHG.150)
 ms:contentKeyID: 48385187
 ms.reviewer: 
+ms.topic: article
+description: Plan and deploy Microsoft Exchange Server 2013 
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: msdmaguir
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

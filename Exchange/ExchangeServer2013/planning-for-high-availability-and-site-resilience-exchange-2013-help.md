@@ -5,6 +5,8 @@ ms:assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638104(v=EXCHG.150)
 ms:contentKeyID: 48384921
 ms.reviewer: 
+ms.topic: article
+description: How to plan for high availability and site resilience in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: serdars
@@ -130,8 +132,8 @@ A network adapter intended for use by a MAPI network should be configured as des
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -187,8 +189,8 @@ A network adapter intended for use by a Replication network should be configured
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
