@@ -4,7 +4,6 @@ ms.author: serdars
 ms.topic: article
 manager: serdars
 author: msdmaguire
-manager: serdars
 ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker
