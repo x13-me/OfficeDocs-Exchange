@@ -5,6 +5,8 @@ ms:assetid: e7780499-9a6f-48b1-aea8-df88ecd8b18a
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125018(v=EXCHG.150)
 ms:contentKeyID: 50934225
 ms.reviewer: 
+ms.topic: article
+description: About Pipeline tracing in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire

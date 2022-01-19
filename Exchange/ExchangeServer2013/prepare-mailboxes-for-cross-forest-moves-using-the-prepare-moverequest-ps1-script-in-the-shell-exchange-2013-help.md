@@ -5,6 +5,8 @@ ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/library/Ee861103(v=EXCHG.150)
 ms:contentKeyID: 49360509
 ms.reviewer: 
+ms.topic: article
+description: How to prepare mailboxes in Exchange 2013 for cross-forest moves by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -72,9 +74,9 @@ The following table describes the parameter set for the script.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
