@@ -6,11 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638104(v=EXCHG.150)
 ms:contentKeyID: 48384921
 ms.reviewer: 
 ms.topic: article
-description: How to plan for high availability and site resilience in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: serdars
-ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
