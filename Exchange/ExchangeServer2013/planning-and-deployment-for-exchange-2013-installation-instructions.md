@@ -9,7 +9,7 @@ ms.topic: article
 description: Plan and deploy Microsoft Exchange Server 2013 
 manager: serdars
 ms.author: serdars
-author: msdmaguir
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
