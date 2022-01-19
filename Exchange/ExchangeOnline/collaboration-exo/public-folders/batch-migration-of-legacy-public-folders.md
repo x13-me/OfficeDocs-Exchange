@@ -648,4 +648,4 @@ Select the following button for common issues during public folder migration:
 > [!div class="nextstepaction"]
 > [Run Tests: Troubleshoot public folder migration](https://aka.ms/PFMGTE)
 
-A flyout page opens in the Microsoft 365 admin center, login with your tenant admin account and select appropriate option
+A flyout page opens in the Microsoft 365 admin center, login with your tenant admin account and select appropriate option.
