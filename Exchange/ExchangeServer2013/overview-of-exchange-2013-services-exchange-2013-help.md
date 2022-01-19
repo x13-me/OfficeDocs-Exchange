@@ -7,6 +7,8 @@ ms:contentKeyID: 74479247
 ms.topic: article
 description: Learn about Exchange 2013 services.
 ms.reviewer: 
+ms.topic: article
+description: Description of services in Microsoft Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -29,15 +31,15 @@ The sections in this topic describe the various services that are installed by E
 
 The following table describes the Exchange services that are installed on Mailbox servers.
 
-<table >
+<table>
 <colgroup>
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -282,15 +284,15 @@ The following table describes the Exchange services that are installed on Mailbo
 
 The following table describes the Exchange services that are installed on Client Access servers.
 
-<table >
+<table>
 <colgroup>
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -396,15 +398,15 @@ The following table describes the Exchange services that are installed on Client
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
 
-<table >
+<table>
 <colgroup>
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
