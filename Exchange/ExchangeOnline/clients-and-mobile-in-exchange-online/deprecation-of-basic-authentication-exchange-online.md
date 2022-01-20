@@ -79,10 +79,10 @@ The EXO V2 module can also be used non-interactively, which enables running unat
 
 Administrators who still use the old remote PowerShell connection method or the older Exchange Online Remote PowerShell Module (V1), are encouraged to begin using the EXO V2 module as soon as possible. These older connection methods will eventually be retired, either through Basic authentication disablement or the end of support.
 
->[!Important]
-> Do not confuse the fact that PowerShell requires Basic authentication enabled for WinRM (on the local machine where the session is run from). See: [Prerequisites for the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module)
+> [!IMPORTANT]
+> Do not confuse the fact that PowerShell requires Basic authentication enabled for WinRM (on the local machine where the session is run from). See: [Prerequisites for the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#prerequisites-for-the-exo-v2-module)
 >
->The username/password isn't sent to the service using Basic, but the Basic Auth header is required to send the session's OAuth token, because the WinRM client doesn't support OAuth. We are working on this problem and will have more to announce in the future. Just know that enabling Basic on WinRM *is not* using Basic to authenticate to the service.
+> The username/password isn't sent to the service using Basic, but the Basic Auth header is required to send the session's OAuth token, because the WinRM client doesn't support OAuth. We are working on this problem and will have more to announce in the future. Just know that enabling Basic on WinRM *is not* using Basic to authenticate to the service.
 
 ### Exchange Web Services (EWS)
 
@@ -161,20 +161,25 @@ Exporting logs for analysis requires a premium license for your Azure AD tenant.
 
 Some of the options available for each of the impacted protocols are listed below.
 
-#### Protocol recommendation
+### Protocol recommendation
 
 For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exchange ActiveSync (EAS):</br>
 
 - **If you have written your own code using these protocols**, update your code to use **OAuth 2.0** instead of Basic Authentication, or migrate to a newer protocol (Graph API).
 - **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that's built using OAuth 2.0.
 
+<br>
+
+****
+
 |Key Protocol Service|Impacted Clients|Client specific Recommendation|Protocol Info / Notes|
 |---|---|---|---|
 |Outlook|All versions of Outlook for Windows and Mac|- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication)||
 |Exchange Web Services (EWS)|Third-party applications not supporting OAuth|Modify app to use modern auth.  Migrate app to use Graph API and modern auth|No EWS feature updates starting July 2018|
-|Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools|Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269)||Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2).|
+|Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools|Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269)|Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2).|
 |POP and IMAP|Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP|Recommend moving away from these protocols as they don't enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it|IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.|
 |Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic (remove and readd the account) Switch to Outlook on the web or another mobile browser app that supports modern auth|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
+|
 
 ## What if I want to block Basic authentication now?
 

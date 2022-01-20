@@ -173,7 +173,7 @@ Whether Traditional or Solid-State, all disks that house an Exchange data are fo
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
-[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
+[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
 
 ## Database availability group design
 
