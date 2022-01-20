@@ -33,13 +33,13 @@ For more information about hybrid deployments, see [Exchange Server hybrid deplo
 
 Multi-forest hybrid deployment prerequisites are almost identical to the hybrid deployment prerequisites for a single-forest organization, with the following exceptions:
 
-- **Autodiscover**: Each Exchange forest must be authoritative for at least one SMTP namespace and the corresponding Autodiscover namespace. If there are shared domains across multiple Exchange forests, both mail routing and Autodiscover endpoints need to be configured and working properly between the Exchange forests before configuring your multi-forest hybrid deployment. The Office 365 service must be able to query the Autodiscover service in each Exchange forest.
+- **Autodiscover**: Each Exchange forest must be authoritative for at least one SMTP namespace and the corresponding Autodiscover namespace. If there are shared domains across multiple Exchange forests, both mail routing and Autodiscover endpoints need to be configured and working properly between the Exchange forests before configuring your multi-forest hybrid deployment. The Office 365 service must be able to query the Autodiscover service in each Exchange forest.
 
-- **Certificates**: All hybrid deployments require a digital certificate issued by trusted third-party certificate authority (CA). For a multi-forest hybrid deployment, a single digital certificate can't be used for multiple Active Directory forests. Each forest must use a dedicated CA-issued certificate for secure mail transport to function correctly in a hybrid deployment. The certificate used for hybrid deployment features for each forest in a multi-forest organization must differ in at least one of the following properties:
+- **Certificates**: All hybrid deployments require a digital certificate issued by trusted third-party certificate authority (CA). For a multi-forest hybrid deployment, a single digital certificate can't be used for multiple Active Directory forests. Each forest must use a dedicated CA-issued certificate for secure mail transport to function correctly in a hybrid deployment. The certificate used for hybrid deployment features for each forest in a multi-forest organization must differ in at least one of the following properties:
 
-  - **Common Name**: The common name (CN) of the digital certificate is part of the certificate subject. This must match the host being authenticated and is typically the external hostname for the Client Access server in the Active Directory forest. For example, mail.contoso.com. We recommend using the CN as the differentiating property between Active Directory certificates used in multi-forest hybrid deployments.
+  - **Common Name**: The common name (CN) of the digital certificate is part of the certificate subject. This must match the host being authenticated and is typically the external hostname for the Client Access server in the Active Directory forest. For example, mail.contoso.com. We recommend using the CN as the differentiating property between Active Directory certificates used in multi-forest hybrid deployments.
 
-  - **Issuer**: The third-party CA that verified the organization information and issued the certificate. For example, VeriSign or Go Daddy. As an example in a multi-forest hybrid deployment, one forest would have a certificate issued by VeriSign and one forest would have a certificate issued by Go Daddy.
+  - **Issuer**: The third-party CA that verified the organization information and issued the certificate. For example, VeriSign or Go Daddy. As an example in a multi-forest hybrid deployment, one forest would have a certificate issued by VeriSign and one forest would have a certificate issued by Go Daddy.
 
   > [!IMPORTANT]
   > The certificate installed on the Mailbox and Client Access (and Edge Transport, if deployed) servers in each Active Directory forest used for mail transport in the hybrid deployment must all be issued by the same CA and have the same common name.
@@ -90,8 +90,12 @@ Let's say that you're the network administrator for Contoso and you're intereste
 
 If you compare Contoso's existing organization configuration and the hybrid deployment configuration, you'll see that configuring a hybrid deployment has added servers and services that support additional communication and features that are shared between the on-premises and Exchange Online organizations. Here's an overview of the changes that a hybrid deployment has made from the initial on-premises Exchange organization.
 
-|**Configuration**|**Before hybrid deployment**|**After hybrid deployment**|
-|:-----|:-----|:-----|
+<br>
+
+****
+
+|Configuration|Before hybrid deployment|After hybrid deployment|
+|---|---|---|
 |Mailbox location|Mailboxes on-premises only.|Mailboxes on-premises and in Exchange Online.|
 |Message transport|On-premises Client Access servers handle all inbound and outbound message routing.|On-premises Client Access server handles internal message routing between the on-premises and Exchange Online organization.|
 |Outlook Web App|On-premises Client Access server receives all Outlook Web App requests and displays mailbox information.|On-premises Client Access server redirects Outlook Web App requests to either the on-premises Exchange 2013 Mailbox server or provides a link to log on to the Exchange Online organization.|
@@ -99,6 +103,7 @@ If you compare Contoso's existing organization configuration and the hybrid depl
 |Single-sign on used for both organizations|Not applicable; single organization only.|On-premises Active Directory Federation Services (AD FS) server supports using single-sign on credentials for mailboxes located either on-premises or in the Microsoft 365 or Office 365 organization.|
 |Organization relationship established and a federation trust with Azure AD authentication system|Trust relationship with the Azure AD authentication system and organization relationships with other federated Exchange organizations may be configured.|Trust relationship with the Azure AD authentication system is required. Organization relationships are established between the on-premises and Exchange Online organization.|
 |Free/busy sharing|Free/busy sharing between on-premises users only.|Free/busy sharing between both on-premises and Exchange Online users.|
+|
 
 ## Configuring hybrid deployments in multi-forest organizations
 
