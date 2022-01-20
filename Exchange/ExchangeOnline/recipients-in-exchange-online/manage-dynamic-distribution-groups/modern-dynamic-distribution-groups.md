@@ -10,13 +10,12 @@ ms.reviewer:
 title: Modern dynamic distribution groups in Exchange Online
 audience: ITPro
 ms.service: exchange-online
-robots: NOINDEX, NOFOLLOW
 manager: serdars
 ---
 # Modern Dynamic Distribution Groups in Exchange Online
 
 > [!IMPORTANT]
-> This is feature is currently in Private Preview, isn't available to everyone, and is subject to change.
+> This feature will be fully released to all users in March, 2022.
 
 Dynamic distribution groups (DDGs) in Exchange Online are being modernized to bring a more reliable, predictable, and better performing experience. This change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message.
 
