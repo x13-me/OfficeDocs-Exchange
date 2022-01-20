@@ -90,6 +90,6 @@ If the migration fails with a grade of **Poor**, you cannot force the migration 
 
 ## How to opt in or opt out of using DataConsistencyScore
 
-The [BadItemLimit and LargeItemLimit parameters](/powershell/module/exchange/new-moverequest) are still currently available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC UI. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
+The [BadItemLimit and LargeItemLimit parameters](/powershell/module/exchange/new-moverequest) are still currently available as options. You can specify a value for the *BadItemLimit* and *LargeItemLimit* parameters when using cmdlets or you can fill in the BadItemLimit or LargeItemLimit box in the EAC. When you specify a BadItemLimit or LargeItemLimit, the old migration method is used and the DataConsistencyScore is not calculated.
 
-If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter is specified, or if the boxes in the classic Exchange admin center wizard are left blank, then the new migration method and DataConsistencyScore are used.
+If neither the *BadItemLimit* parameter nor the *LargeItemLimit* parameter is specified, or if the boxes in the classic EAC wizard are left blank, then the new migration method and DataConsistencyScore are used.
